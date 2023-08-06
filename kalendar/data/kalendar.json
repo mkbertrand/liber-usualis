@@ -1,0 +1,189 @@
+[
+	{
+		"date":"08-01",
+		"day":"S. Petri ad Vincula",
+		"tag":["petrus-ad-vincula","greater-double"]
+	},
+	{
+		"date":"08-01",
+		"day":"Ss. Machabæorum Mm.",
+		"tag":["machabaei","martyrs","commemoration"]
+	},
+	{
+		"date":"08-02",
+		"day":"S. Alphonsi Mariæ de Ligorio Ep., Conf. et Eccl. Doct.",
+		"tag":["alphonsus-liguori","double","doctor","confessor-bishop"]
+	},
+	{
+		"date":"08-03",
+		"day":"Inventio S. Stephani Protomartyris",
+		"tags":["inventio-stepheni","semidouble","martyr"]
+	},
+	{
+		"date":"08-04",
+		"day":"S. Dominici Conf.",
+		"tags":["dominicus","greater-double","confessor"]
+	},
+	{
+		"date":"08-05",
+		"day":"Dedicatio S. Mariæ ad Nives",
+		"tags":["maria-ad-nives","greater-double","mary"]
+	},
+	{
+		"date":"08-06",
+		"day":"Transfiguratio D.N.J.C.",
+		"tags":["transfiguratio","greater-double"]
+	},
+	{
+		"date":"08-06",
+		"day":"Ss. Xysti II. Papæ, Felicissimi et Agapiti Martyrum",
+		"tags":["xystus-ii-felicissimus-agapitus","martyrs","commemoration"]
+	},
+	{
+		"date":"08-07",
+		"day":"S. Cajetani Conf.",
+		"tags":["cajetanus","double","confessor"]
+	},
+	{
+		"date":"08-07",
+		"day":"S. Donati Episc. et Mart.",
+		"tags":["donatus","commemoration","martyr-bishop"]
+	},
+	{
+		"date":"08-08",
+		"day":"Ss. Cyriaci, Largi, et Smaragdi Mm.",
+		"tags":["cyriacus-largus-smaragdus","martyrs","semidouble"]
+	},
+	{
+		"date":"08-09",
+		"day":"Vigilia S. Laurentii Mart.",
+		"tags":["vigilia-laurentius","vigil","penitential","ferial"]
+	},
+	{
+		"date":"08-10",
+		"day":"S. Laurentii Mart.",
+		"octaval-day-name":"Laurentii",
+		"tags":["laurentius","martyr","double-ii-class","octave"]
+	},
+	{
+		"date":"08-11",
+		"day":"Ss. Tibertius et Susannæ Mm.",
+		"tags":["tibertius-susanna","commemoration","martyrs"]
+	},
+	{
+		"date":"08-12",
+		"day":"S. Claræ Virg.",
+		"tags":["clara","virgin","double"]
+	},
+	{
+		"date":"08-13",
+		"day":"Ss. Hippolyti et Cassiani Mm.",
+		"tags":["hippolytus-cassianus","commemoration","martyrs"]
+	},
+	{
+		"date":"08-14",
+		"day":"Vigilia Assumptionis B.M.V.",
+		"tags":["vigilia-assumptionis","vigil","penitential","ferial"]
+	},
+	{
+		"date":"08-14",
+		"day":"S. Eusebii Conf.",
+		"tags":["eusebius","commemoration","confessor"]
+	},
+	{
+		"date":"08-15",
+		"day":"Assumptio B.M.V.",
+		"octaval-day-name":"Assumptionis",
+		"tags":["assumptio","double-i-class","mary","octave"]
+	},
+	{
+		"date":"08-16",
+		"day":"S. Hyacinthi Conf.",
+		"tags":["hyacinthus","confessor","double"]
+	},
+	{
+		"date":"08-18",
+		"day":"S. Agapiti Martyris",
+		"tags":["agapitus","martyr","commemoration"]
+	},
+	{
+		"date":"08-20",
+		"day":"S. Bernardi Abb., Conf. et Eccl. Doct.",
+		"tags":["bernardus","abbot","doctor","double"]
+	},
+	{
+		"date":"08-21",
+		"day":"S. Joannæ Franciscæ Fremiot de Chantal Vid.",
+		"tags":["joanna-francisca","widow","double"]
+	},
+	{
+		"date":"08-22",
+		"day":"Ss. Timothei et Soc. Mm.",
+		"tags":["timotheus-etc","martyrs","commemoration"]
+	},
+	{
+		"date":"08-23",
+		"day":"S. Philippi Benitii Conf.",
+		"tags":["philippus-benitius","confessor","double"]
+	},
+	{
+		"date":"08-23",
+		"day":"Vigilia S. Bartholomæi Apost.",
+		"tags":["vigilia-Bartholomaei","vigil","ferial","penitential"]
+	},
+	{
+		"date":"08-24",
+		"day":"S. Bartholomaei Apost.",
+		"tags":["bartholomaeus","double-ii-class","apostle"]
+	},
+	{
+		"date":"08-25",
+		"day":"S. Ludovici Regis Conf.",
+		"tags":["ludovicus","semidouble","confessor"]
+	},
+	{
+		"date":"08-26",
+		"day":"S. Zephyrini Papæ et Mart.",
+		"tags":["zephyrinus","pope-martyr","simple"]
+	},
+	{
+		"date":"08-27",
+		"day":"S. Josephi Calasanctii Conf.",
+		"tags":["josephus-calasanctius","confessor","double"]
+	},
+	{
+		"date":"08-28",
+		"day":"S. Augustini Episc., Conf. et Eccl. Doct.",
+		"tags":["augustinus","double","confessor-bishop","doctor"]
+	},
+	{
+		"date":"08-28",
+		"day":"S. Hermetis Martyris",
+		"tags":["hermis","martyr","commemoration"]
+	},
+	{
+		"date":"08-29",
+		"day":"Decollatio S. Joannis Bapt.",
+		"tags":["decollatio-joannis","greater-double","martyr"]
+	},
+	{
+		"date":"08-29",
+		"day":"S. Sabinæ Mart.",
+		"tags":["sabina","commemoration","martyr"]
+	},
+	{
+		"date":"08-30",
+		"day":"S. Rosæ Limanæ Virg.",
+		"tags":["rosa","double","virgin"]
+	},
+	{
+		"date":"08-30",
+		"day":"Ss. Felicis et Adaucti Mm.",
+		"tags":["felix-adauctus","martyrs","commemoration"]
+	},
+	{
+		"date":"08-31",
+		"day":"S. Raymundi Nonnati Cf.",
+		"tags":["raymundus-nonnatus","confessor","double"]
+	}
+]

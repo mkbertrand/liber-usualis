@@ -1,0 +1,954 @@
+[
+	{
+		"date":"01-05",
+		"day":"S. Telesphori Papæ et Martyris",
+		"rank":"Commemoration",
+		"tags":["telesphorus","pope","martyr"]
+	},
+	{
+		"date":"01-14",
+		"day":"S. Hilarii, Ep. Conf. & Eccl. Doct.",
+		"rank":"Double",
+		"tags":["hilarius","bishop","confessor","doctor"]
+	},
+	{
+		"date":"01-14",
+		"day":"S. Felicis, Presb. & Mart.",
+		"rank":"Commemoration",
+		"tags":["felix","priest","martyr"]
+	},
+	{
+		"date":"01-15",
+		"day":"S. Pauli primi Eremitæ, Conf.",
+		"rank":"Double",
+		"tags":["paulus-eremita","hermit","confessor"]
+	},
+	{
+		"date":"01-15",
+		"day":"S. Mauri, Abbatis",
+		"rank":"Double",
+		"tags":["Abbot"]
+	},
+	{
+		"date":"01-16",
+		"day":"S. Marcelli I, Papæ & Mart.",
+		"rank":"Semidouble",
+		"tags":["Pope","Martyr"]
+	},
+	{
+		"date":"01-17",
+		"day":"S. Antonii, Abbatis",
+		"rank":"Double",
+		"tags":["Abbot"]
+	},
+	{
+		"date":"01-18",
+		"day":"Cathedra S. Petri Romæ",
+		"rank":"Greater Double",
+		"tags":["Dedication","Apostle"]
+	},
+	{
+		"date":"01-18",
+		"day":"S. Priscæ, Virg. & Mart.",
+		"rank":"Commemoration",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "01-19",
+		"day": "Canuti, Regis & Mart.",
+		"rank": "Semidouble",
+		"tags":["King","Martyr"]
+	},
+	{
+		"date": "01-19",
+		"day": "Ss. Marii & Soc., Mm.",
+		"rank": "Optional Commemoration",
+		"tags":["Martyrs"]
+	},
+	{
+		"date": "01-20",
+		"day": "Ss. Fabiani Papæ & Sebastiani, Mm.",
+		"rank": "Double",
+		"tags":["Pope","Martyr"]
+	},
+	{
+		"date": "01-21",
+		"day": "S. Agnetis, Virg. & Mart.",
+		"rank": "Double",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "01-22",
+		"day": "Ss. Vincentii & Anastasii, Mm.",
+		"rank": "Semidouble",
+		"tags":["Martyrs"]
+	},
+	{
+		"date": "01-23",
+		"day": "S. Raymundi de Peñafort, Conf.",
+		"rank": "Semidouble",
+		"tags":["Confessor"]
+	},
+	{
+		"date": "01-23",
+		"day": "S. Emerentianæ, Virg. & Mart.",
+		"rank": "Commemoration",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "01-24",
+		"day": "S. Timothei, Ep. & Mart.",
+		"rank": "Double",
+		"tags":["Bishop","Martyr"]
+	},
+	{
+		"date": "01-25",
+		"day": "Conversio S. Pauli Ap.",
+		"rank": "Greater Double",
+		"tags":["Apostle","Martyr"]
+	},
+	{
+		"date": "01-26",
+		"day": "S. Polycarpi, Ep. & Mart.",
+		"rank": "Double",
+		"tags":["Bishop","Martyr"]
+	},
+	{
+		"date": "01-27",
+		"day": "S. Joannis Chrysostomi, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double",
+		"tags":["Bishop","Confessor","Doctor"]
+	},
+	{
+		"date": "01-28",
+		"day": "S. Agnetis Secundo",
+		"rank": "Simple",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "01-29",
+		"day": "S. S. Francisci Salesii, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double",
+		"tags":["Bishop","Confessor","Doctor"]
+	},
+	{
+		"date": "01-30",
+		"day": "S. Martinæ, Virg. & Mart.",
+		"rank": "Semidouble",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "01-31",
+		"day": "S. Petri Nolasco, Conf.",
+		"rank": "Double",
+		"tags":["Confessor"]
+	},
+	{
+		"date": "02-01",
+		"day": "S. Ignatii, Ep. & Mart.",
+		"rank": "Double",
+		"tags":["Bishop","Martyr"]
+	},
+	{
+		"date": "02-02",
+		"day": "Purificatio B.M.V.",
+		"rank": "Double II Class",
+		"tags":["Mary"]
+	},
+	{
+		"date": "02-03",
+		"day": "S. Blasii, Ep. & Mart.",
+		"rank": "Simple",
+		"tags":["Bishop","Martyr"]
+	},
+	{
+		"date": "02-04",
+		"day": "S. Andreæ Corsini, Ep. & Conf.",
+		"rank": "Double",
+		"tags":["Bishop","Confessor"]
+	},
+	{
+		"date": "02-05",
+		"day": "S. Agathæ, Virg. & Mart.",
+		"rank": "Double",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "02-06",
+		"day": "S. Titi, Ep. & Conf.",
+		"rank": "Double",
+		"tags":["Bishop","Confessor"]
+	},
+	{
+		"date": "02-06",
+		"day": "S. Dorotheæ, Virg. & Mart.",
+		"rank": "Commemoration",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "02-07",
+		"day": "S. Romualdi, Abbatis",
+		"rank": "Double",
+		"tags":["Abbot"]
+	},
+	{
+		"date": "02-08",
+		"day": "S. Joannis de Matha, Conf.",
+		"rank": "Double",
+		"tags":["Confessor"]
+	},
+	{
+		"date": "02-09",
+		"day": "S. Cyrilli Ep. Alexandrini, Conf. Ep. & Eccl. Doct.",
+		"rank": "Double",
+		"tags":["Confessor","Bishop","Doctor"]
+	},
+	{
+		"date": "02-09",
+		"day": "S. Apolloniæ, Virg. & Mart.",
+		"rank": "Commemoration",
+		"tags":["Virgin","Martyr"]
+	},
+	{
+		"date": "02-10",
+		"day": "S. Scholasticæ, Virg.",
+		"rank": "Double",
+		"tags":["Virgin"]
+	},
+	{
+		"date": "02-14",
+		"day": "S. Valentini, Presb. & Mart.",
+		"rank": "Simple",
+		"tags":["Martyr"]
+	},
+	{
+		"date": "02-15",
+		"day": "Ss. Faustini & Jovitæ, Mm.",
+		"rank": "Simple",
+		"tags":["Martyrs"]
+	},
+	{
+		"date": "02-18",
+		"day": "S. Simeonis, Ep. & Mart.",
+		"rank": "Simple",
+	},
+	{
+		"date": "02-22",
+		"day": "Cathedra S. Petri Antiochiæ",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "02-23",
+		"day": "S. Petri Damiani, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "02-23",
+		"day": "Vigilia S. Mathiæ ",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "02-24",
+		"day": "S. Mathiæ, Apost.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "03-04",
+		"day": "S. Casimiri, Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "03-04",
+		"day": "S. Lucii I, Papæ & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "03-07",
+		"day": "S. Thomæ de Aquino, Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "03-07",
+		"day": "Ss. Perpetuæ & Felicitatis, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "03-08",
+		"day": "S. Joannis de Deo, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "03-09",
+		"day": "S. Franciscæ Romanæ, Vid.",
+		"rank": "Double"
+	},
+	{
+		"date": "03-10",
+		"day": "Ss. Quadraginta, Mm.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "03-12",
+		"day": "S. Gregorii I, Papæ Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "03-17",
+		"day": "S. Patritii, Ep. & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "03-18",
+		"day": "S. Cyrilii Ep. Hierosolymitani, Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "03-19",
+		"day": "S. Joseph Conf., Sponsi B.M.V.",
+		"rank": "Double I Class"
+	},
+	{
+		"date": "03-20",
+		"day": "S. Benedicti, Abbatis",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "03-25",
+		"day": "Annuntiatio B.M.V.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "04-02",
+		"day": "S. Francisci de Paula, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-04",
+		"day": "S. Isodori, Ep. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-05",
+		"day": "S. Vincentii Ferrerii, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-11",
+		"day": "S. Leonis I, Papæ Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-13",
+		"day": "S. Hermenegildi, Mart.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "04-14",
+		"day": "S. Justini, Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-14",
+		"day": "Ss. Tiburtii, Valeriani & Maximi, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "04-17",
+		"day": "S. Aniceti, Papæ & Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "04-21",
+		"day": "S. Anselmi, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-22",
+		"day": "Ss. Soteris & Caji, Pont. & Mm.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "04-23",
+		"day": "S. Georgii, Mart.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "04-24",
+		"day": "S. Fidelis a Sigmaringa, Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-25",
+		"day": "S. Marci, Evang.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "04-26",
+		"day": "Ss. Cleti & Marcellini, Pont. & Mm.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "04-28",
+		"day": "S. Pauli a Cruce, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-28",
+		"day": "S. Vitalis, Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "04-29",
+		"day": "S. Petri, Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "04-30",
+		"day": "S. Cathatinæ Senensis, Virg.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-01",
+		"day": "Ss. Philippi & Jacobi, Apost.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "05-02",
+		"day": "S. Athanasii, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-03",
+		"day": "Inventio S. Crucis",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "05-03",
+		"day": "Ss. Alexandrini I Papæ & Soc., Mm.; S. Juvenalis, Ep. & Conf.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "05-04",
+		"day": "S. Monicæ, Vid.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-05",
+		"day": "S. Pii V, Papæ & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-06",
+		"day": "S. Joannis ante portam Latinam",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "05-07",
+		"day": "S. Stanislai, Ep. & Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-08",
+		"day": "Apparitio S. Michaëlis Archangeli",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "05-09",
+		"day": "S. Gregorii Nazianzeni, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-10",
+		"day": "S. Antonini, Ep. & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-10",
+		"day": "Ss. Gordiani & Epimachi, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "05-12",
+		"day": "Ss. Nerci, Achillei & Domitillæ, Virg.; atque Pancratii, Mm.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "05-14",
+		"day": "S. Bonifacii, Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "05-16",
+		"day": "S. Ubaldi, Ep. & Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "05-17",
+		"day": "S. Paschalis Baylon, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-18",
+		"day": "S. Venantii, Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-19",
+		"day": "S. Petri Cœlestini, Papæ & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-19",
+		"day": "S. Pudentianæ, Virg.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "05-20",
+		"day": "S. Bernadini Senensis, Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "05-25",
+		"day": "S. Gregorii VII, Papæ & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-25",
+		"day": "S. Urbani I, Papæ & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "05-26",
+		"day": "S. Philippi Nerii, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-26",
+		"day": "S. Elcuthcrii, Papæ & Conf.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "05-27",
+		"day": "S. Mariæ Magdalenæ de Pazzis, Virg.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "05-27",
+		"day": "S. Joannis, Papæ & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "05-28",
+		"day": "S. Augustini, Ep. & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-30",
+		"day": "S. Felicis I, Papæ & Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "05-31",
+		"day": "S. Angelæ Mericiæ, Virg.",
+		"rank": "Double"
+	},
+	{
+		"date": "05-31",
+		"day": "S. Petronillæ, Virg.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "06-02",
+		"day": "S. Marcellini, Petri, atque Erasmi, Mm.",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-04",
+		"day": "S. Francisci Caracciolo, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-05",
+		"day": "S. Bonifacii, Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-06",
+		"day": "S. Norberti, Ep. & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-09",
+		"day": "Ss. Primi & Feliciani, Mm.",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-10",
+		"day": "S. Margaritæ Reginæ Scotiæ, Vid.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "06-11",
+		"day": "S. Barnabæ, Apost.",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "06-12",
+		"day": "S. Joannis a S. Facundo, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-13",
+		"day": "S. Antonii de Padua, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-14",
+		"day": "S. Basilii Magni, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-15",
+		"day": "Ss. Viti, Modesti, atque Crescentiæ, Mm.",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-18",
+		"day": "Ss. Marci & Marcelliani, Mm.",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-19",
+		"day": "S. Julianæ de Falconeriis, Virg.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-19",
+		"day": "Ss. Gervasii & Protasii, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "06-20",
+		"day": "S. Silverii, Papæ & Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-21",
+		"day": "S. Aloysii Gonzagæ, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-22",
+		"day": "S. Paulini, Ep. & Conf.",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-23",
+		"day": "Vigilia Nativitatis S. Joannis Baptistæ",
+		"rank": "Simple"
+	},
+	{
+		"date": "06-24",
+		"day": "Nativitatis S. Joannis Baptistæ",
+		"rank": "Double I Class",
+		"tags":["Octave"]
+	},
+	{
+		"date": "06-25",
+		"day": "Gulielmi, Abbatis",
+		"rank": "Double"
+	},
+	{
+		"date": "06-26",
+		"day": "Ss. Joannis & Pauli, Mm.",
+		"rank": "Double"
+	},
+	{
+		"date": "06-28",
+		"day": "S. Leonis II, Papæ & Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "06-28",
+		"day": "Vigilia S. Petri & Pauli, Apost.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "06-29",
+		"day": "Ss. Petri & Pauli, Apost.",
+		"rank": "Double I Class",
+		"tags":["Octave","Apostles","Martyrs"]
+	},
+	{
+		"date": "06-30",
+		"day": "Commemoratio S. Pauli, Apost.",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "07-02",
+		"day": "Visitatio B.M.V.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "07-02",
+		"day": "Ss. Mart. Processi & Martiniani",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-05",
+		"day": "Ss. Cyrilli & Methodii, Pont. & Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "07-08",
+		"day": "S. Elisabeth Reginæ Portugalliæ Viduæ",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-10",
+		"day": "Ss. Septem Fratrum Martyrum & Ss. Rufinæ ac Secundæ, Virg. & Mm.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-11",
+		"day": "S. Pii I, Papæ & Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "07-12",
+		"day": "S. Joannis Gualberti, Abbatis",
+		"rank": "Double"
+	},
+	{
+		"date": "07-12",
+		"day": "Ss. Naboris & Felicis, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-13",
+		"day": "S. Anacleti, Papæ & Mart.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-14",
+		"day": "S. Bonaventuræ, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "07-15",
+		"day": "S. Henrici Imperat., Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-16",
+		"day": "B.M.V. de Monte Carmelo",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "07-17",
+		"day": "S. Alexiis, Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-18",
+		"day": "S. Camilli de Lellis, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "07-18",
+		"day": "Ss. Symphorosæ & Septem Filiorum ejus, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-19",
+		"day": "S. Vincentii a Paulo, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "07-20",
+		"day": "S. Hieronymi Æmiliani, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "07-20",
+		"day": "S. Margaritæ, Virg. & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-21",
+		"day": "S. Praxedis, Virg.",
+		"rank": "Simple"
+	},
+	{
+		"date": "07-22",
+		"day": "S. Mariæ Magdalenæ Pœnitentiæ",
+		"rank": "Double"
+	},
+	{
+		"date": "07-23",
+		"day": "S. Apollinaris, Ep. & Mart.",
+		"rank": "Double"
+	},
+	{
+		"date": "07-24",
+		"day": "Vigilia S. Jacobi, Apost.",
+		"rank": "Simple"
+	},
+	{
+		"date": "07-24",
+		"day": "S. Christinæ, Virg. & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-25",
+		"day": "S. Jacobi, Apost.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "07-25",
+		"day": "S. Christophori, Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-26",
+		"day": "S. Annæ Matris B.M.V.",
+		"rank": "Double II Class"
+	},
+	{
+		"date": "07-27",
+		"day": "S. Pantalconis, Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "07-28",
+		"day": "Ss. Nazarii, Celsi, Victoris I, Papæ & Mm., ac Innocentii I, Papæ & Conf.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-29",
+		"day": "S. Marthæ, Virg.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "07-29",
+		"day": "Ss. Felicis II, Papæ, et Simplicii, Faustini, et Beatricis, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "07-30",
+		"day": "Ss. Abdon & Sennon, Mm.",
+		"rank": "Simple"
+	},
+	{
+		"date": "07-31",
+		"day": "S. Ignatii de Lojola, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "08-01",
+		"day": "S. Petri ad Vincula",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "08-01",
+		"day": "S. Pauli, Apost.",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "08-01",
+		"day": "Ss. Machabæorum, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-02",
+		"day": "S. Alphonsi Mariæ de Ligorio, Ep. Conf. & Eccl. Doct.",
+		"rank": "Double"
+	},
+	{
+		"date": "08-02",
+		"day": "S. Stephani I, Papæ & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-03",
+		"day": "Inventio S. Stephani Protomartyris",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "08-04",
+		"day": "S. Dominici Conf.",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "08-05",
+		"day": "Dedicatio S. Mariæ ad Nives",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "08-06",
+		"day": "Tranfiguratio D.N.J.C.",
+		"rank": "Greater Double"
+	},
+	{
+		"date": "08-06",
+		"day": "Ss. Xysti II, Papæ, Felicissimi & Agapiti, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-07",
+		"day": "S. Cajetani, Conf.",
+		"rank": "Double"
+	},
+	{
+		"date": "08-07",
+		"day": "S. Donati, Ep. & Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-08",
+		"day": "Ss. Cyriaci, Largi & Smaragdi, Mm.",
+		"rank": "Semidouble"
+	},
+	{
+		"date": "08-09",
+		"day": "Vigilia S. Laurentii, Mart.",
+		"rank": "Simple"
+	},
+	{
+		"date": "08-09",
+		"day": "S. Romani, Mart.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-10",
+		"day": "S. Laurentii, Mart.",
+		"rank": "Double II Class",
+		"tags":["Octave","Martyr"]
+	},
+	{
+		"date": "08-11",
+		"day": "Ss. Tiburtii & Susannæ, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-12",
+		"day": "S. Claræ, Virg.",
+		"rank": "Double"
+	},
+	{
+		"date": "08-13",
+		"day": "Ss. Hippolyti & Cassiani, Mm.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-14",
+		"day": "S. Eusebii, Conf.",
+		"rank": "Commemoration"
+	},
+	{
+		"date": "08-15",
+		"day": "Assumptionis B.M.V.",
+		"rank": "Double I Class",
+		"tags":["Octave","Mary"]
+	}
+]

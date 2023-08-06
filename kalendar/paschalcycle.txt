@@ -1,0 +1,280 @@
+-63 SD2 Dominica Septuagesima
+-62 SM0 Feria II infra Hebdomadam Septuagesimæ
+-61 SM0 Feria III infra Hebdomadam Septuagesimæ
+-60 SM0 Feria IV infra Hebdomadam Septuagesimæ
+-59 SM0 Feria V infra Hebdomadam Septuagesimæ
+-58 SM0 Feria VI infra Hebdomadam Septuagesimæ
+-57 SM0 Sabbato infra Hebdomadam Septuagesimæ
+-56 SD2 Dominica Sexagesima
+-55 SM0 Feria II infra Hebdomadam Sexagesimæ
+-54 SM0 Feria III infra Hebdomadam Sexagesimæ
+-53 SM0 Feria IV infra Hebdomadam Sexagesimæ
+-52 SM0 Feria V infra Hebdomadam Sexagesimæ
+-51 SM0 Feria VI infra Hebdomadam Sexagesimæ
+-50 SM0 Sabbato infra Hebdomadam Sexagesimæ
+-49 SD2 Dominica Quinquasesima
+-48 SM0 Feria II infra Hebdomadam Quinquasesimæ
+-47 SM0 Feria III infra Hebdomadam Quinquasesimæ
+-46 FRP Feria IV Cinerum
+-45 FRP Feria V post Cineres
+-44 SM0 Feria VI post Cineres
+-43 SM0 Sabbato post Cineres
+-42 SD1 Dominica I in Quadragesima
+-41 SM0 Feria II infra Hebdomadam I in Quadragesima
+-40 SM0 Feria III infra Hebdomadam I in Quadragesima
+-39 SM0 Feria IV infra Hebdomadam I in Quadragesima
+-38 SM0 Feria V infra Hebdomadam I in Quadragesima
+-37 SM0 Feria VI infra Hebdomadam I in Quadragesima
+-36 SM0 Sabbato infra Hebdomadam I in Quadragesima
+-35 SD1 Dominica II in Quadragesima
+-34 SM0 Feria II infra Hebdomadam II in Quadragesima
+-33 SM0 Feria III infra Hebdomadam II in Quadragesima
+-32 SM0 Feria IV infra Hebdomadam II in Quadragesima
+-31 SM0 Feria V infra Hebdomadam II in Quadragesima
+-30 SM0 Feria VI infra Hebdomadam II in Quadragesima
+-29 SM0 Sabbato infra Hebdomadam II in Quadragesima
+-28 SD1 Dominica III in Quadragesima
+-27 SM0 Feria II infra Hebdomadam III in Quadragesima
+-26 SM0 Feria III infra Hebdomadam III in Quadragesima
+-25 SM0 Feria IV infra Hebdomadam III in Quadragesima
+-24 SM0 Feria V infra Hebdomadam III in Quadragesima
+-23 SM0 Feria VI infra Hebdomadam III in Quadragesima
+-22 SM0 Sabbato infra Hebdomadam III in Quadragesima
+-21 SD1 Dominica IV in Quadragesima
+-20 SM0 Feria II infra Hebdomadam IV in Quadragesima
+-19 SM0 Feria III infra Hebdomadam IV in Quadragesima
+-18 SM0 Feria IV infra Hebdomadam IV in Quadragesima
+-17 SM0 Feria V infra Hebdomadam IV in Quadragesima
+-16 SM0 Feria VI infra Hebdomadam IV in Quadragesima
+-15 SM0 Sabbato infra Hebdomadam IV in Quadragesima
+-14 SD1 Dominica de Passione
+-13 FRM Feria II infra Hebdomadam Passionis
+-12 FRM Feria III infra Hebdomadam Passionis
+-11 FRM Feria IV infra Hebdomadam Passionis
+-10 FRM Feria V infra Hebdomadam Passionis
+-9 FRM Feria VI infra Hebdomadam Passionis
+-8 FRM Sabbato infra Hebdomadam Passionis
+-7 SD1 Dominica in Palmis
+-6 FRP Feria II Majoris Hebdomadæ
+-5 FRP Feria III Majoris Hebdomadæ
+-4 FRP Feria IV Majoris Hebdomadæ
+-3 FRP Feria V in Cena Domini
+-2 FRP Feria VI in Parasceve
+-1 FRP Sabbato Sancto
+0 DB1 Dominica Resurrectionis[NC]
+1 DB1 Die II infra Octavam Paschæ[NC]
+2 DB1 Die III infra Octavam Paschæ[NC]
+3 SD0 Die IV infra Octavam Paschæ[NF]
+4 SD0 Die V infra Octavam Paschæ[NF]
+5 SD0 Die VI infra Octavam Paschæ[NF]
+6 SD0 Sabbato in Albis[NF]
+7 DB1 Dominica in Albis in Octava Paschæ[NC]
+8 FR0 Feria II infra Hebdomadam I post Octavam Paschæ
+9 FR0 Feria III infra Hebdomadam I post Octavam Paschæ
+10 FR0 Feria IV infra Hebdomadam I post Octavam Paschæ
+11 FR0 Feria V infra Hebdomadam I post Octavam Paschæ
+12 FR0 Feria VI infra Hebdomadam I post Octavam Paschæ
+13 FR0 Sabbato infra Hebdomadam I post Octavam Paschæ
+14 DMm Dominica II post Octavam Paschæ
+15 FR0 Feria II infra Hebdomadam II post Octavam Paschæ
+16 FR0 Feria III infra Hebdomadam II post Octavam Paschæ
+17 FR0 Feria IV infra Hebdomadam II post Octavam Paschæ
+18 FR0 Feria V infra Hebdomadam II post Octavam Paschæ
+19 FR0 Feria VI infra Hebdomadam II post Octavam Paschæ
+20 FR0 Sabbato infra Hebdomadam II post Octavam Paschæ
+21 DMm Dominica III post Octavam Paschæ
+22 FR0 Feria II infra Hebdomadam III post Octavam Paschæ
+23 FR0 Feria III infra Hebdomadam III post Octavam Paschæ
+24 FR0 Feria IV infra Hebdomadam III post Octavam Paschæ
+25 FR0 Feria V infra Hebdomadam III post Octavam Paschæ
+26 FR0 Feria VI infra Hebdomadam III post Octavam Paschæ
+27 FR0 Sabbato infra Hebdomadam III post Octavam Paschæ
+28 DMm Dominica IV post Octavam Paschæ
+29 FR0 Feria II infra Hebdomadam IV post Octavam Paschæ
+30 FR0 Feria III infra Hebdomadam IV post Octavam Paschæ
+31 FR0 Feria IV infra Hebdomadam IV post Octavam Paschæ
+32 FR0 Feria V infra Hebdomadam IV post Octavam Paschæ
+33 FR0 Feria VI infra Hebdomadam IV post Octavam Paschæ
+34 FR0 Sabbato infra Hebdomadam IV post Octavam Paschæ
+35 DMm Dominica V post Octavam Paschæ
+36 FR0 Feria II infra Hebdomadam V post Octavam Paschæ
+37 FR0 Feria III infra Hebdomadam V post Octavam Paschæ
+38 FR0 Feria IV infra Hebdomadam V post Octavam Paschæ
+39 DB1 In Ascensione Domini
+40 SD0 Feria VI infra Octavam Ascensionis
+41 SD0 Sabbato infra Octavam Ascensionis
+42 DMm Dominica infra Octavam Ascensionis
+43 SD0 Feria II infra Octavam Ascensionis
+44 SD0 Feria III infra Octavam Ascensionis
+45 SD0 Feria IV infra Octavam Ascensionis
+46 DBM Octavæ Ascensionis
+47 SD0 Feria VI post Octavam Ascensionis
+48 FRP Sabbato in Vigilia Pentecostes
+49 DB1 Dominica Pentecostes[NC]
+50 DB1 Die II infra Octavam Pentecostes[NC]
+51 DB1 Die III infra Octavam Pentecostes[NC]
+52 SD0 Feria IV infra Octavam Pentecostes[NF]
+53 SD0 Feria V infra Octavam Pentecostes[NF]
+54 SD0 Feria VI infra Octavam Pentecostes[NF]
+55 SD0 Sabbato infra Octavam Pentecostes[NF]
+56 DB1 Octavæ Pentecostes[NF]
+57 FR0 Feria II infra Hebdomadam I post Octavam Pentecostes
+58 FR0 Feria III infra Hebdomadam I post Octavam Pentecostes
+59 FR0 Feria IV infra Hebdomadam I post Octavam Pentecostes
+60 FR0 Feria V infra Hebdomadam I post Octavam Pentecostes
+61 FR0 Feria VI infra Hebdomadam I post Octavam Pentecostes
+62 FR0 Sabbato infra Hebdomadam I post Octavam Pentecostes
+63 DMm Dominica II post Octavam Pentecostes
+64 FR0 Feria II infra Hebdomadam II post Octavam Pentecostes
+65 FR0 Feria III infra Hebdomadam II post Octavam Pentecostes
+66 FR0 Feria IV infra Hebdomadam II post Octavam Pentecostes
+67 FR0 Feria V infra Hebdomadam II post Octavam Pentecostes
+68 FR0 Feria VI infra Hebdomadam II post Octavam Pentecostes
+69 FR0 Sabbato infra Hebdomadam II post Octavam Pentecostes
+70 DMm Dominica III post Octavam Pentecostes
+71 FR0 Feria II infra Hebdomadam III post Octavam Pentecostes
+72 FR0 Feria III infra Hebdomadam III post Octavam Pentecostes
+73 FR0 Feria IV infra Hebdomadam III post Octavam Pentecostes
+74 FR0 Feria V infra Hebdomadam III post Octavam Pentecostes
+75 FR0 Feria VI infra Hebdomadam III post Octavam Pentecostes
+76 FR0 Sabbato infra Hebdomadam III post Octavam Pentecostes
+77 DMm Dominica IV post Octavam Pentecostes
+78 FR0 Feria II infra Hebdomadam IV post Octavam Pentecostes
+79 FR0 Feria III infra Hebdomadam IV post Octavam Pentecostes
+80 FR0 Feria IV infra Hebdomadam IV post Octavam Pentecostes
+81 FR0 Feria V infra Hebdomadam IV post Octavam Pentecostes
+82 FR0 Feria VI infra Hebdomadam IV post Octavam Pentecostes
+83 FR0 Sabbato infra Hebdomadam IV post Octavam Pentecostes
+84 DMm Dominica V post Octavam Pentecostes
+85 FR0 Feria II infra Hebdomadam V post Octavam Pentecostes
+86 FR0 Feria III infra Hebdomadam V post Octavam Pentecostes
+87 FR0 Feria IV infra Hebdomadam V post Octavam Pentecostes
+88 FR0 Feria V infra Hebdomadam V post Octavam Pentecostes
+89 FR0 Feria VI infra Hebdomadam V post Octavam Pentecostes
+90 FR0 Sabbato infra Hebdomadam V post Octavam Pentecostes
+91 DMm Dominica VI post Octavam Pentecostes
+92 FR0 Feria II infra Hebdomadam VI post Octavam Pentecostes
+93 FR0 Feria III infra Hebdomadam VI post Octavam Pentecostes
+94 FR0 Feria IV infra Hebdomadam VI post Octavam Pentecostes
+95 FR0 Feria V infra Hebdomadam VI post Octavam Pentecostes
+96 FR0 Feria VI infra Hebdomadam VI post Octavam Pentecostes
+97 FR0 Sabbato infra Hebdomadam VI post Octavam Pentecostes
+98 DMm Dominica VII post Octavam Pentecostes
+99 FR0 Feria II infra Hebdomadam VII post Octavam Pentecostes
+100 FR0 Feria III infra Hebdomadam VII post Octavam Pentecostes
+101 FR0 Feria IV infra Hebdomadam VII post Octavam Pentecostes
+102 FR0 Feria V infra Hebdomadam VII post Octavam Pentecostes
+103 FR0 Feria VI infra Hebdomadam VII post Octavam Pentecostes
+104 FR0 Sabbato infra Hebdomadam VII post Octavam Pentecostes
+105 DMm Dominica VIII post Octavam Pentecostes
+106 FR0 Feria II infra Hebdomadam VIII post Octavam Pentecostes
+107 FR0 Feria III infra Hebdomadam VIII post Octavam Pentecostes
+108 FR0 Feria IV infra Hebdomadam VIII post Octavam Pentecostes
+109 FR0 Feria V infra Hebdomadam VIII post Octavam Pentecostes
+110 FR0 Feria VI infra Hebdomadam VIII post Octavam Pentecostes
+111 FR0 Sabbato infra Hebdomadam VIII post Octavam Pentecostes
+112 DMm Dominica IX post Octavam Pentecostes
+113 FR0 Feria II infra Hebdomadam IX post Octavam Pentecostes
+114 FR0 Feria III infra Hebdomadam IX post Octavam Pentecostes
+115 FR0 Feria IV infra Hebdomadam IX post Octavam Pentecostes
+116 FR0 Feria V infra Hebdomadam IX post Octavam Pentecostes
+117 FR0 Feria VI infra Hebdomadam IX post Octavam Pentecostes
+118 FR0 Sabbato infra Hebdomadam IX post Octavam Pentecostes
+119 DMm Dominica X post Octavam Pentecostes
+120 FR0 Feria II infra Hebdomadam X post Octavam Pentecostes
+121 FR0 Feria III infra Hebdomadam X post Octavam Pentecostes
+122 FR0 Feria IV infra Hebdomadam X post Octavam Pentecostes
+123 FR0 Feria V infra Hebdomadam X post Octavam Pentecostes
+124 FR0 Feria VI infra Hebdomadam X post Octavam Pentecostes
+125 FR0 Sabbato infra Hebdomadam X post Octavam Pentecostes
+126 DMm Dominica XI post Octavam Pentecostes
+127 FR0 Feria II infra Hebdomadam XI post Octavam Pentecostes
+128 FR0 Feria III infra Hebdomadam XI post Octavam Pentecostes
+129 FR0 Feria IV infra Hebdomadam XI post Octavam Pentecostes
+130 FR0 Feria V infra Hebdomadam XI post Octavam Pentecostes
+131 FR0 Feria VI infra Hebdomadam XI post Octavam Pentecostes
+132 FR0 Sabbato infra Hebdomadam XI post Octavam Pentecostes
+133 DMm Dominica XII post Octavam Pentecostes
+134 FR0 Feria II infra Hebdomadam XII post Octavam Pentecostes
+135 FR0 Feria III infra Hebdomadam XII post Octavam Pentecostes
+136 FR0 Feria IV infra Hebdomadam XII post Octavam Pentecostes
+137 FR0 Feria V infra Hebdomadam XII post Octavam Pentecostes
+138 FR0 Feria VI infra Hebdomadam XII post Octavam Pentecostes
+139 FR0 Sabbato infra Hebdomadam XII post Octavam Pentecostes
+140 DMm Dominica XIII post Octavam Pentecostes
+141 FR0 Feria II infra Hebdomadam XIII post Octavam Pentecostes
+142 FR0 Feria III infra Hebdomadam XIII post Octavam Pentecostes
+143 FR0 Feria IV infra Hebdomadam XIII post Octavam Pentecostes
+144 FR0 Feria V infra Hebdomadam XIII post Octavam Pentecostes
+145 FR0 Feria VI infra Hebdomadam XIII post Octavam Pentecostes
+146 FR0 Sabbato infra Hebdomadam XIII post Octavam Pentecostes
+147 DMm Dominica XIV post Octavam Pentecostes
+148 FR0 Feria II infra Hebdomadam XIV post Octavam Pentecostes
+149 FR0 Feria III infra Hebdomadam XIV post Octavam Pentecostes
+150 FR0 Feria IV infra Hebdomadam XIV post Octavam Pentecostes
+151 FR0 Feria V infra Hebdomadam XIV post Octavam Pentecostes
+152 FR0 Feria VI infra Hebdomadam XIV post Octavam Pentecostes
+153 FR0 Sabbato infra Hebdomadam XIV post Octavam Pentecostes
+154 DMm Dominica XV post Octavam Pentecostes
+155 FR0 Feria II infra Hebdomadam XV post Octavam Pentecostes
+156 FR0 Feria III infra Hebdomadam XV post Octavam Pentecostes
+157 FR0 Feria IV infra Hebdomadam XV post Octavam Pentecostes
+158 FR0 Feria V infra Hebdomadam XV post Octavam Pentecostes
+159 FR0 Feria VI infra Hebdomadam XV post Octavam Pentecostes
+160 FR0 Sabbato infra Hebdomadam XV post Octavam Pentecostes
+161 DMm Dominica XVI post Octavam Pentecostes
+162 FR0 Feria II infra Hebdomadam XVI post Octavam Pentecostes
+163 FR0 Feria III infra Hebdomadam XVI post Octavam Pentecostes
+164 FR0 Feria IV infra Hebdomadam XVI post Octavam Pentecostes
+165 FR0 Feria V infra Hebdomadam XVI post Octavam Pentecostes
+166 FR0 Feria VI infra Hebdomadam XVI post Octavam Pentecostes
+167 FR0 Sabbato infra Hebdomadam XVI post Octavam Pentecostes
+168 DMm Dominica XVII post Octavam Pentecostes
+169 FR0 Feria II infra Hebdomadam XVII post Octavam Pentecostes
+170 FR0 Feria III infra Hebdomadam XVII post Octavam Pentecostes
+171 FR0 Feria IV infra Hebdomadam XVII post Octavam Pentecostes
+172 FR0 Feria V infra Hebdomadam XVII post Octavam Pentecostes
+173 FR0 Feria VI infra Hebdomadam XVII post Octavam Pentecostes
+174 FR0 Sabbato infra Hebdomadam XVII post Octavam Pentecostes
+175 DMm Dominica XVIII post Octavam Pentecostes
+176 FR0 Feria II infra Hebdomadam XVIII post Octavam Pentecostes
+177 FR0 Feria III infra Hebdomadam XVIII post Octavam Pentecostes
+178 FR0 Feria IV infra Hebdomadam XVIII post Octavam Pentecostes
+179 FR0 Feria V infra Hebdomadam XVIII post Octavam Pentecostes
+180 FR0 Feria VI infra Hebdomadam XVIII post Octavam Pentecostes
+181 FR0 Sabbato infra Hebdomadam XVIII post Octavam Pentecostes
+182 DMm Dominica XIX post Octavam Pentecostes
+183 FR0 Feria II infra Hebdomadam XIX post Octavam Pentecostes
+184 FR0 Feria III infra Hebdomadam XIX post Octavam Pentecostes
+185 FR0 Feria IV infra Hebdomadam XIX post Octavam Pentecostes
+186 FR0 Feria V infra Hebdomadam XIX post Octavam Pentecostes
+187 FR0 Feria VI infra Hebdomadam XIX post Octavam Pentecostes
+188 FR0 Sabbato infra Hebdomadam XIX post Octavam Pentecostes
+189 DMm Dominica XX post Octavam Pentecostes
+190 FR0 Feria II infra Hebdomadam XX post Octavam Pentecostes
+191 FR0 Feria III infra Hebdomadam XX post Octavam Pentecostes
+192 FR0 Feria IV infra Hebdomadam XX post Octavam Pentecostes
+193 FR0 Feria V infra Hebdomadam XX post Octavam Pentecostes
+194 FR0 Feria VI infra Hebdomadam XX post Octavam Pentecostes
+195 FR0 Sabbato infra Hebdomadam XX post Octavam Pentecostes
+196 DMm Dominica XXI post Octavam Pentecostes
+197 FR0 Feria II infra Hebdomadam XXI post Octavam Pentecostes
+198 FR0 Feria III infra Hebdomadam XXI post Octavam Pentecostes
+199 FR0 Feria IV infra Hebdomadam XXI post Octavam Pentecostes
+200 FR0 Feria V infra Hebdomadam XXI post Octavam Pentecostes
+201 FR0 Feria VI infra Hebdomadam XXI post Octavam Pentecostes
+202 FR0 Sabbato infra Hebdomadam XXI post Octavam Pentecostes
+203 DMm Dominica XXII post Octavam Pentecostes
+204 FR0 Feria II infra Hebdomadam XXII post Octavam Pentecostes
+205 FR0 Feria III infra Hebdomadam XXII post Octavam Pentecostes
+206 FR0 Feria IV infra Hebdomadam XXII post Octavam Pentecostes
+207 FR0 Feria V infra Hebdomadam XXII post Octavam Pentecostes
+208 FR0 Feria VI infra Hebdomadam XXII post Octavam Pentecostes
+209 FR0 Sabbato infra Hebdomadam XXII post Octavam Pentecostes
+210 DMm Dominica XXIII post Octavam Pentecostes
+211 FR0 Feria II infra Hebdomadam XXIII post Octavam Pentecostes
+212 FR0 Feria III infra Hebdomadam XXIII post Octavam Pentecostes
+213 FR0 Feria IV infra Hebdomadam XXIII post Octavam Pentecostes
+214 FR0 Feria V infra Hebdomadam XXIII post Octavam Pentecostes
+215 FR0 Feria VI infra Hebdomadam XXIII post Octavam Pentecostes
+216 FR0 Sabbato infra Hebdomadam XXIII post Octavam Pentecostes

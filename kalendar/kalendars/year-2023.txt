@@ -1,0 +1,863 @@
+01-01 DB2 Circumcisio Domini[NC]
+01-02 DB0 Octava S. Stephani
+01-02 DB2 Sanctissimi Nominis Jesu
+01-03 DB0 Octava S. Joannis Apostoli et Evangelistæ[AP,EV]
+01-04 DB0 Octava Ss. Innocentium
+01-05 SD0 Vigilia Epiphaniæ
+01-05 CM1 S. Telesphori Papæ et Martyris[PA,MR]
+01-06 DB1 Epiphania Domini
+01-07 FR0 Dies II infra Octavam Epiphaniæ
+01-08 DMm Dominica I post Epiphaniam
+01-08 FR0 Dies III infra Octavam Epiphaniæ
+01-09 FR0 Feria II infra Hebdomadam I post Epiphaniam
+01-09 FR0 Dies IV infra Octavam Epiphaniæ
+01-10 FR0 Feria III infra Hebdomadam I post Epiphaniam
+01-10 FR0 Dies V infra Octavam Epiphaniæ
+01-11 FR0 Feria IV infra Hebdomadam I post Epiphaniam
+01-11 FR0 Dies VI infra Octavam Epiphaniæ
+01-12 FR0 Feria V infra Hebdomadam I post Epiphaniam
+01-12 FR0 Dies VII infra Octavam Epiphaniæ
+01-13 FR0 Feria VI infra Hebdomadam I post Epiphaniam
+01-13 DB0 Octava Epiphaniæ
+01-14 FR0 Sabbato infra Hebdomadam I post Epiphaniam
+01-14 DB0 S. Hilarii, Ep. Conf. & Eccl. Doct.
+01-14 CM1 S. Felicis, Presb. & Mart.
+01-15 DMm Dominica II post Epiphaniam
+01-15 DB0 S. Pauli primi Eremitæ, Conf.
+01-15 CM1 S. Mauri, Abbatis
+01-16 FR0 Feria II infra Hebdomadam II post Epiphaniam
+01-16 SD0 S. Marcelli I, Papæ & Mart.
+01-17 FR0 Feria III infra Hebdomadam II post Epiphaniam
+01-17 DB0 S. Antonii, Abbatis
+01-18 FR0 Feria IV infra Hebdomadam II post Epiphaniam
+01-18 DBM Cathedra S. Petri Romæ
+01-18 CM1 S. Priscæ, Virg. & Mart.
+01-19 FR0 Feria V infra Hebdomadam II post Epiphaniam
+01-19 SD0 Canuti, Regis & Mart.
+01-19 CM0 Ss. Marii & Soc., Mm.
+01-20 FR0 Feria VI infra Hebdomadam II post Epiphaniam
+01-20 DB0 Ss. Fabiani Papæ & Sebastiani, Mm.
+01-21 FR0 Sabbato infra Hebdomadam II post Epiphaniam
+01-21 DB0 S. Agnetis, Virg. & Mart.
+01-22 DMm Dominica III post Epiphaniam
+01-22 SD0 Ss. Vincentii & Anastasii, Mm.
+01-23 FR0 Feria II infra Hebdomadam III post Epiphaniam
+01-23 SD0 S. Raymundi de Peñafort, Conf.
+01-23 CM1 S. Emerentianæ, Virg. & Mart.
+01-24 FR0 Feria III infra Hebdomadam III post Epiphaniam
+01-24 DB0 S. Timothei, Ep. & Mart.
+01-25 FR0 Feria IV infra Hebdomadam III post Epiphaniam
+01-25 DBM Conversio S. Pauli Ap.
+01-26 FR0 Feria V infra Hebdomadam III post Epiphaniam
+01-26 DB0 S. Polycarpi, Ep. & Mart.
+01-27 FR0 Feria VI infra Hebdomadam III post Epiphaniam
+01-27 DB0 S. Joannis Chrysostomi, Ep. Conf. & Eccl. Doct.
+01-28 FR0 Sabbato infra Hebdomadam III post Epiphaniam
+01-28 SM0 S. Agnetis Secundo
+01-29 DMm Dominica IV post Epiphaniam
+01-29 DB0 S. S. Francisci Salesii, Ep. Conf. & Eccl. Doct.
+01-30 FR0 Feria II infra Hebdomadam IV post Epiphaniam
+01-30 SD0 S. Martinæ, Virg. & Mart.
+01-31 FR0 Feria III infra Hebdomadam IV post Epiphaniam
+01-31 DB0 S. Petri Nolasco, Conf.
+02-01 FR0 Feria IV infra Hebdomadam IV post Epiphaniam
+02-01 DB0 S. Ignatii, Ep. & Mart.
+02-02 FR0 Feria V infra Hebdomadam IV post Epiphaniam
+02-02 DB2 Purificatio B.M.V.
+02-03 FR0 Feria VI infra Hebdomadam IV post Epiphaniam
+02-03 SM0 S. Blasii, Ep. & Mart.
+02-04 FR0 Sabbato infra Hebdomadam IV post Epiphaniam
+02-04 DB0 S. Andreæ Corsini, Ep. & Conf.
+02-05 { ' d i f f e r e n c e ' :   - 6 3 ,   ' d a y ' :   ' D o m i n i c a   S e p t u a g e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I I   C l a s s ' ] }
+02-05 DMm Dominica ERROR post Epiphaniam
+02-05 DB0 S. Agathæ, Virg. & Mart.
+02-06 { ' d i f f e r e n c e ' :   - 6 2 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   S e p t u a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-06 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+02-06 DB0 S. Titi, Ep. & Conf.
+02-06 CM1 S. Dorotheæ, Virg. & Mart.
+02-07 { ' d i f f e r e n c e ' :   - 6 1 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   S e p t u a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-07 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+02-07 DB0 S. Romualdi, Abbatis
+02-08 { ' d i f f e r e n c e ' :   - 6 0 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   S e p t u a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-08 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+02-08 DB0 S. Joannis de Matha, Conf.
+02-09 { ' d i f f e r e n c e ' :   - 5 9 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   S e p t u a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-09 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+02-09 DB0 S. Cyrilli Ep. Alexandrini, Conf. & Eccl. Doct.
+02-09 CM1 S. Apolloniæ, Virg. & Mart.
+02-10 { ' d i f f e r e n c e ' :   - 5 8 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   S e p t u a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-10 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+02-10 DB0 S. Scholasticæ, Virg.
+02-11 { ' d i f f e r e n c e ' :   - 5 7 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   S e p t u a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-11 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+02-12 { ' d i f f e r e n c e ' :   - 5 6 ,   ' d a y ' :   ' D o m i n i c a   S e x a g e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I I   C l a s s ' ] }
+02-12 DMm Dominica ERROR post Epiphaniam
+02-13 { ' d i f f e r e n c e ' :   - 5 5 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   S e x a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-13 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+02-14 { ' d i f f e r e n c e ' :   - 5 4 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   S e x a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-14 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+02-14 SM0 S. Valentini, Presb. & Mart.
+02-15 { ' d i f f e r e n c e ' :   - 5 3 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   S e x a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-15 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+02-15 SM0 Ss. Faustini & Jovitæ, Mm.
+02-16 { ' d i f f e r e n c e ' :   - 5 2 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   S e x a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-16 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+02-17 { ' d i f f e r e n c e ' :   - 5 1 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   S e x a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-17 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+02-18 { ' d i f f e r e n c e ' :   - 5 0 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   S e x a g e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-18 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+02-18 SM0 S. Simeonis, Ep. & Mart.
+02-19 { ' d i f f e r e n c e ' :   - 4 9 ,   ' d a y ' :   ' D o m i n i c a   Q u i n q u a s e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I I   C l a s s ' ] }
+02-19 DMm Dominica ERROR post Epiphaniam
+02-20 { ' d i f f e r e n c e ' :   - 4 8 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   Q u i n q u a s e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-20 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+02-21 { ' d i f f e r e n c e ' :   - 4 7 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   Q u i n q u a s e s i m æ ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-21 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+02-22 { ' d i f f e r e n c e ' :   - 4 6 ,   ' d a y ' :   ' F e r i a   I V   C i n e r u m ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-22 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+02-22 DBM Cathedra S. Petri Antiochiæ
+02-23 { ' d i f f e r e n c e ' :   - 4 5 ,   ' d a y ' :   ' F e r i a   V   p o s t   C i n e r e s ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-23 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+02-23 DB0 S. Petri Damiani, Ep. Conf. & Eccl. Doct.
+02-23 CM1 Vigilia S. Mathiæ 
+02-24 { ' d i f f e r e n c e ' :   - 4 4 ,   ' d a y ' :   ' F e r i a   V I   p o s t   C i n e r e s ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-24 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+02-24 DB2 S. Mathiæ, Apost.
+02-25 { ' d i f f e r e n c e ' :   - 4 3 ,   ' d a y ' :   ' S a b b a t o   p o s t   C i n e r e s ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-25 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+02-26 { ' d i f f e r e n c e ' :   - 4 2 ,   ' d a y ' :   ' D o m i n i c a   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+02-26 DMm Dominica ERROR post Epiphaniam
+02-27 { ' d i f f e r e n c e ' :   - 4 1 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-27 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+02-28 { ' d i f f e r e n c e ' :   - 4 0 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+02-28 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+03-01 { ' d i f f e r e n c e ' :   - 3 9 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-01 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+03-02 { ' d i f f e r e n c e ' :   - 3 8 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-02 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+03-03 { ' d i f f e r e n c e ' :   - 3 7 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-03 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+03-04 { ' d i f f e r e n c e ' :   - 3 6 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-04 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+03-04 SD0 S. Casimiri, Conf.
+03-04 CM1 S. Lucii I, Papæ & Mart.
+03-05 { ' d i f f e r e n c e ' :   - 3 5 ,   ' d a y ' :   ' D o m i n i c a   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I I   C l a s s ' ] }
+03-05 DMm Dominica ERROR post Epiphaniam
+03-06 { ' d i f f e r e n c e ' :   - 3 4 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-06 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+03-07 { ' d i f f e r e n c e ' :   - 3 3 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-07 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+03-07 DB0 S. Thomæ de Aquino, Conf. & Eccl. Doct.
+03-07 CM1 Ss. Perpetuæ & Felicitatis, Mm.
+03-08 { ' d i f f e r e n c e ' :   - 3 2 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-08 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+03-08 DB0 S. Joannis de Deo, Conf.
+03-09 { ' d i f f e r e n c e ' :   - 3 1 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-09 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+03-09 DB0 S. Franciscæ Romanæ, Vid.
+03-10 { ' d i f f e r e n c e ' :   - 3 0 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-10 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+03-10 SD0 Ss. Quadraginta, Mm.
+03-11 { ' d i f f e r e n c e ' :   - 2 9 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-11 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+03-12 { ' d i f f e r e n c e ' :   - 2 8 ,   ' d a y ' :   ' D o m i n i c a   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I I   C l a s s ' ] }
+03-12 DMm Dominica ERROR post Epiphaniam
+03-12 DB0 S. Gregorii I, Papæ Conf. & Eccl. Doct.
+03-13 { ' d i f f e r e n c e ' :   - 2 7 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-13 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+03-14 { ' d i f f e r e n c e ' :   - 2 6 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-14 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+03-15 { ' d i f f e r e n c e ' :   - 2 5 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-15 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+03-16 { ' d i f f e r e n c e ' :   - 2 4 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-16 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+03-17 { ' d i f f e r e n c e ' :   - 2 3 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-17 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+03-17 DB0 S. Patritii, Ep. & Conf.
+03-18 { ' d i f f e r e n c e ' :   - 2 2 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I I I   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-18 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+03-18 DB0 S. Cyrilii Ep. Hierosolymitani, Conf. & Eccl. Doct.
+03-19 { ' d i f f e r e n c e ' :   - 2 1 ,   ' d a y ' :   ' D o m i n i c a   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I I   C l a s s ' ] }
+03-19 DMm Dominica ERROR post Epiphaniam
+03-19 DB1 S. Joseph Conf., Sponsi B.M.V.
+03-20 { ' d i f f e r e n c e ' :   - 2 0 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-20 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+03-20 DBM S. Benedicti, Abbatis
+03-21 { ' d i f f e r e n c e ' :   - 1 9 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-21 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+03-22 { ' d i f f e r e n c e ' :   - 1 8 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-22 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+03-23 { ' d i f f e r e n c e ' :   - 1 7 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-23 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+03-24 { ' d i f f e r e n c e ' :   - 1 6 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-24 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+03-25 { ' d i f f e r e n c e ' :   - 1 5 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I V   i n   Q u a d r a g e s i m a ' ,   ' r a n k ' :   ' S i m p l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-25 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+03-25 DB2 Annuntiatio B.M.V.
+03-26 { ' d i f f e r e n c e ' :   - 1 4 ,   ' d a y ' :   ' D o m i n i c a   d e   P a s s i o n e ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+03-26 DMm Dominica ERROR post Epiphaniam
+03-27 { ' d i f f e r e n c e ' :   - 1 3 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   P a s s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-27 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+03-28 { ' d i f f e r e n c e ' :   - 1 2 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   P a s s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-28 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+03-29 { ' d i f f e r e n c e ' :   - 1 1 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   P a s s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-29 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+03-30 { ' d i f f e r e n c e ' :   - 1 0 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   P a s s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-30 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+03-31 { ' d i f f e r e n c e ' :   - 9 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   P a s s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+03-31 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+04-01 { ' d i f f e r e n c e ' :   - 8 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   P a s s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-01 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+04-02 { ' d i f f e r e n c e ' :   - 7 ,   ' d a y ' :   ' D o m i n i c a   i n   P a l m i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+04-02 DMm Dominica ERROR post Epiphaniam
+04-02 DB0 S. Francisci de Paula, Conf.
+04-03 { ' d i f f e r e n c e ' :   - 6 ,   ' d a y ' :   ' F e r i a   I I   M a j o r i s   H e b d o m a d æ ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-03 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+04-04 { ' d i f f e r e n c e ' :   - 5 ,   ' d a y ' :   ' F e r i a   I I I   M a j o r i s   H e b d o m a d æ ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-04 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+04-04 DB0 S. Isodori, Ep. & Eccl. Doct.
+04-05 { ' d i f f e r e n c e ' :   - 4 ,   ' d a y ' :   ' F e r i a   I V   M a j o r i s   H e b d o m a d æ ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-05 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+04-05 DB0 S. Vincentii Ferrerii, Conf.
+04-06 { ' d i f f e r e n c e ' :   - 3 ,   ' d a y ' :   ' F e r i a   V   i n   C e n a   D o m i n i ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-06 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+04-07 { ' d i f f e r e n c e ' :   - 2 ,   ' d a y ' :   ' F e r i a   V I   i n   P a r a s c e v e ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-07 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+04-08 { ' d i f f e r e n c e ' :   - 1 ,   ' d a y ' :   ' S a b b a t o   S a n c t o ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-08 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+04-09 { ' d i f f e r e n c e ' :   0 ,   ' d a y ' :   ' D o m i n i c a   R e s u r r e c t i o n i s [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+04-09 DMm Dominica ERROR post Epiphaniam
+04-10 { ' d i f f e r e n c e ' :   1 ,   ' d a y ' :   ' D i e   I I   i n f r a   O c t a v a m   P a s c h æ [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-10 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+04-11 { ' d i f f e r e n c e ' :   2 ,   ' d a y ' :   ' D i e   I I I   i n f r a   O c t a v a m   P a s c h æ [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-11 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+04-11 DB0 S. Leonis I, Papæ Conf. & Eccl. Doct.
+04-12 { ' d i f f e r e n c e ' :   3 ,   ' d a y ' :   ' D i e   I V   i n f r a   O c t a v a m   P a s c h æ [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-12 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+04-13 { ' d i f f e r e n c e ' :   4 ,   ' d a y ' :   ' D i e   V   i n f r a   O c t a v a m   P a s c h æ [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-13 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+04-13 SD0 S. Hermenegildi, Mart.
+04-14 { ' d i f f e r e n c e ' :   5 ,   ' d a y ' :   ' D i e   V I   i n f r a   O c t a v a m   P a s c h æ [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-14 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+04-14 DB0 S. Justini, Mart.
+04-14 CM1 Ss. Tiburtii, Valeriani & Maximi, Mm.
+04-15 { ' d i f f e r e n c e ' :   6 ,   ' d a y ' :   ' S a b b a t o   i n   A l b i s [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-15 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+04-16 { ' d i f f e r e n c e ' :   7 ,   ' d a y ' :   ' D o m i n i c a   i n   A l b i s   i n   O c t a v a   P a s c h æ [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+04-16 DMm Dominica ERROR post Epiphaniam
+04-17 { ' d i f f e r e n c e ' :   8 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-17 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+04-17 SM0 S. Aniceti, Papæ & Mart.
+04-18 { ' d i f f e r e n c e ' :   9 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-18 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+04-19 { ' d i f f e r e n c e ' :   1 0 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-19 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+04-20 { ' d i f f e r e n c e ' :   1 1 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-20 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+04-21 { ' d i f f e r e n c e ' :   1 2 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-21 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+04-21 DB0 S. Anselmi, Ep. Conf. & Eccl. Doct.
+04-22 { ' d i f f e r e n c e ' :   1 3 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-22 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+04-22 SD0 Ss. Soteris & Caji, Pont. & Mm.
+04-23 { ' d i f f e r e n c e ' :   1 4 ,   ' d a y ' :   ' D o m i n i c a   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+04-23 DMm Dominica ERROR post Epiphaniam
+04-23 SD0 S. Georgii, Mart.
+04-24 { ' d i f f e r e n c e ' :   1 5 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-24 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+04-24 DB0 S. Fidelis a Sigmaringa, Mart.
+04-25 { ' d i f f e r e n c e ' :   1 6 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-25 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+04-25 DB2 S. Marci, Evang.
+04-26 { ' d i f f e r e n c e ' :   1 7 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-26 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+04-26 SD0 Ss. Cleti & Marcellini, Pont. & Mm.
+04-27 { ' d i f f e r e n c e ' :   1 8 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-27 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+04-28 { ' d i f f e r e n c e ' :   1 9 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-28 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+04-28 DB0 S. Pauli a Cruce, Conf.
+04-28 CM1 S. Vitalis, Mart.
+04-29 { ' d i f f e r e n c e ' :   2 0 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+04-29 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+04-29 DB0 S. Petri, Mart.
+04-30 { ' d i f f e r e n c e ' :   2 1 ,   ' d a y ' :   ' D o m i n i c a   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+04-30 DMm Dominica ERROR post Epiphaniam
+04-30 DB0 S. Cathatinæ Senensis, Virg.
+05-01 { ' d i f f e r e n c e ' :   2 2 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-01 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+05-01 DB2 Ss. Philippi & Jacobi, Apost.
+05-02 { ' d i f f e r e n c e ' :   2 3 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-02 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+05-02 DB0 S. Athanasii, Ep. Conf. & Eccl. Doct.
+05-03 { ' d i f f e r e n c e ' :   2 4 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-03 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+05-03 DB2 Inventio S. Crucis
+05-03 CM1 Ss. Alexandrini I Papæ & Soc., Mm.; S. Juvenalis, Ep. & Conf.
+05-04 { ' d i f f e r e n c e ' :   2 5 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-04 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+05-04 DB0 S. Monicæ, Vid.
+05-05 { ' d i f f e r e n c e ' :   2 6 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-05 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+05-05 DB0 S. Pii V, Papæ & Conf.
+05-06 { ' d i f f e r e n c e ' :   2 7 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-06 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+05-06 DBM S. Joannis ante portam Latinam
+05-07 { ' d i f f e r e n c e ' :   2 8 ,   ' d a y ' :   ' D o m i n i c a   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+05-07 DMm Dominica ERROR post Epiphaniam
+05-07 DB0 S. Stanislai, Ep. & Mart.
+05-08 { ' d i f f e r e n c e ' :   2 9 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-08 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+05-08 DBM Apparitio S. Michaëlis Archangeli
+05-09 { ' d i f f e r e n c e ' :   3 0 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-09 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+05-09 DB0 S. Gregorii Nazianzeni, Ep. Conf. & Eccl. Doct.
+05-10 { ' d i f f e r e n c e ' :   3 1 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-10 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+05-10 DB0 S. Antonini, Ep. & Conf.
+05-10 CM1 Ss. Gordiani & Epimachi, Mm.
+05-11 { ' d i f f e r e n c e ' :   3 2 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-11 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+05-12 { ' d i f f e r e n c e ' :   3 3 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-12 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+05-12 SD0 Ss. Nerci, Achillei & Domitillæ, Virg.; atque Pancratii, Mm.
+05-13 { ' d i f f e r e n c e ' :   3 4 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-13 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+05-14 { ' d i f f e r e n c e ' :   3 5 ,   ' d a y ' :   ' D o m i n i c a   V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+05-14 DMm Dominica ERROR post Epiphaniam
+05-14 SM0 S. Bonifacii, Mart.
+05-15 { ' d i f f e r e n c e ' :   3 6 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-15 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+05-16 { ' d i f f e r e n c e ' :   3 7 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-16 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+05-16 SD0 S. Ubaldi, Ep. & Conf.
+05-17 { ' d i f f e r e n c e ' :   3 8 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P a s c h æ ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-17 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+05-17 DB0 S. Paschalis Baylon, Conf.
+05-18 { ' d i f f e r e n c e ' :   3 9 ,   ' d a y ' :   ' I n   A s c e n s i o n e   D o m i n i ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-18 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+05-18 DB0 S. Venantii, Mart.
+05-19 { ' d i f f e r e n c e ' :   4 0 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-19 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+05-19 DB0 S. Petri Cœlestini, Papæ & Conf.
+05-19 CM1 S. Pudentianæ, Virg.
+05-20 { ' d i f f e r e n c e ' :   4 1 ,   ' d a y ' :   ' S a b b a t o   i n f r a   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-20 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+05-20 SD0 S. Bernadini Senensis, Conf.
+05-21 { ' d i f f e r e n c e ' :   4 2 ,   ' d a y ' :   ' D o m i n i c a   i n f r a   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+05-21 DMm Dominica ERROR post Epiphaniam
+05-22 { ' d i f f e r e n c e ' :   4 3 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-22 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+05-23 { ' d i f f e r e n c e ' :   4 4 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-23 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+05-24 { ' d i f f e r e n c e ' :   4 5 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-24 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+05-25 { ' d i f f e r e n c e ' :   4 6 ,   ' d a y ' :   ' O c t a v æ   A s c e n s i o n i s ' ,   ' r a n k ' :   ' G r e a t e r   D o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-25 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+05-25 DB0 S. Gregorii VII, Papæ & Conf.
+05-25 CM1 S. Urbani I, Papæ & Mart.
+05-26 { ' d i f f e r e n c e ' :   4 7 ,   ' d a y ' :   ' F e r i a   V I   p o s t   O c t a v a m   A s c e n s i o n i s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-26 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+05-26 DB0 S. Philippi Nerii, Conf.
+05-26 CM1 S. Elcuthcrii, Papæ & Conf.
+05-27 { ' d i f f e r e n c e ' :   4 8 ,   ' d a y ' :   ' S a b b a t o   i n   V i g i l i a   P e n t e c o s t e s ' ,   ' r a n k ' :   ' P r i v i l e g e d   F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-27 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+05-27 SD0 S. Mariæ Magdalenæ de Pazzis, Virg.
+05-27 CM1 S. Joannis, Papæ & Mart.
+05-28 { ' d i f f e r e n c e ' :   4 9 ,   ' d a y ' :   ' D o m i n i c a   P e n t e c o s t e s [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+05-28 DMm Dominica ERROR post Epiphaniam
+05-28 DB0 S. Augustini, Ep. & Conf.
+05-29 { ' d i f f e r e n c e ' :   5 0 ,   ' d a y ' :   ' D i e   I I   i n f r a   O c t a v a m   P e n t e c o s t e s [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-29 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+05-30 { ' d i f f e r e n c e ' :   5 1 ,   ' d a y ' :   ' D i e   I I I   i n f r a   O c t a v a m   P e n t e c o s t e s [ N C ] ' ,   ' r a n k ' :   ' D o u b l e   I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-30 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+05-30 SM0 S. Felicis I, Papæ & Mart.
+05-31 { ' d i f f e r e n c e ' :   5 2 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   O c t a v a m   P e n t e c o s t e s [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+05-31 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+05-31 DB0 S. Angelæ Mericiæ, Virg.
+05-31 CM1 S. Petronillæ, Virg.
+06-01 { ' d i f f e r e n c e ' :   5 3 ,   ' d a y ' :   ' F e r i a   V   i n f r a   O c t a v a m   P e n t e c o s t e s [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-01 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+06-02 { ' d i f f e r e n c e ' :   5 4 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   O c t a v a m   P e n t e c o s t e s [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-02 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+06-02 SM0 S. Marcellini, Petri, atque Erasmi, Mm.
+06-03 { ' d i f f e r e n c e ' :   5 5 ,   ' d a y ' :   ' S a b b a t o   i n f r a   O c t a v a m   P e n t e c o s t e s [ N F ] ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-03 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+06-04 { ' d i f f e r e n c e ' :   5 6 ,   ' d a y ' :   ' D o m i n i c a   T r i n i t a t i s [ N F ] ' ,   ' r a n k ' :   ' D o u b l e   I I   C l a s s ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ,   ' S u n d a y   I   C l a s s ' ] }
+06-04 DMm Dominica ERROR post Epiphaniam
+06-04 DB0 S. Francisci Caracciolo, Conf.
+06-05 { ' d i f f e r e n c e ' :   5 7 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-05 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+06-05 DB0 S. Bonifacii, Mart.
+06-06 { ' d i f f e r e n c e ' :   5 8 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-06 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+06-06 DB0 S. Norberti, Ep. & Conf.
+06-07 { ' d i f f e r e n c e ' :   5 9 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-07 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+06-08 { ' d i f f e r e n c e ' :   6 0 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-08 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+06-09 { ' d i f f e r e n c e ' :   6 1 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-09 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+06-09 SM0 Ss. Primi & Feliciani, Mm.
+06-10 { ' d i f f e r e n c e ' :   6 2 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-10 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+06-10 SD0 S. Margaritæ Reginæ Scotiæ, Vid.
+06-11 { ' d i f f e r e n c e ' :   6 3 ,   ' d a y ' :   ' D o m i n i c a   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+06-11 DMm Dominica ERROR post Epiphaniam
+06-11 DBM S. Barnabæ, Apost.
+06-12 { ' d i f f e r e n c e ' :   6 4 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-12 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+06-12 DB0 S. Joannis a S. Facundo, Conf.
+06-13 { ' d i f f e r e n c e ' :   6 5 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-13 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+06-13 DB0 S. Antonii de Padua, Conf.
+06-14 { ' d i f f e r e n c e ' :   6 6 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-14 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+06-14 DB0 S. Basilii Magni, Ep. Conf. & Eccl. Doct.
+06-15 { ' d i f f e r e n c e ' :   6 7 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-15 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+06-15 SM0 Ss. Viti, Modesti, atque Crescentiæ, Mm.
+06-16 { ' d i f f e r e n c e ' :   6 8 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-16 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+06-17 { ' d i f f e r e n c e ' :   6 9 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-17 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+06-18 { ' d i f f e r e n c e ' :   7 0 ,   ' d a y ' :   ' D o m i n i c a   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+06-18 DMm Dominica ERROR post Epiphaniam
+06-18 SM0 Ss. Marci & Marcelliani, Mm.
+06-19 { ' d i f f e r e n c e ' :   7 1 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-19 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+06-19 DB0 S. Julianæ de Falconeriis, Virg.
+06-19 CM1 Ss. Gervasii & Protasii, Mm.
+06-20 { ' d i f f e r e n c e ' :   7 2 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-20 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+06-20 SM0 S. Silverii, Papæ & Mart.
+06-21 { ' d i f f e r e n c e ' :   7 3 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-21 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+06-21 DB0 S. Aloysii Gonzagæ, Conf.
+06-22 { ' d i f f e r e n c e ' :   7 4 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-22 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+06-22 SM0 S. Paulini, Ep. & Conf.
+06-23 { ' d i f f e r e n c e ' :   7 5 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-23 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+06-23 SM0 Vigilia Nativitatis S. Joannis Baptistæ
+06-24 { ' d i f f e r e n c e ' :   7 6 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-24 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+06-24 DB1 Nativitatis S. Joannis Baptistæ[OC]
+06-25 { ' d i f f e r e n c e ' :   7 7 ,   ' d a y ' :   ' D o m i n i c a   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+06-25 DMm Dominica ERROR post Epiphaniam
+06-25 SD0 Dies II infra Octavam Nativitatis S. Joannis Baptistæ
+06-25 DB0 Gulielmi, Abbatis
+06-26 { ' d i f f e r e n c e ' :   7 8 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-26 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+06-26 SD0 Dies III infra Octavam Nativitatis S. Joannis Baptistæ
+06-26 DB0 Ss. Joannis & Pauli, Mm.
+06-27 { ' d i f f e r e n c e ' :   7 9 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-27 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+06-27 SD0 Dies IV infra Octavam Nativitatis S. Joannis Baptistæ
+06-28 { ' d i f f e r e n c e ' :   8 0 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-28 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+06-28 SD0 Dies V infra Octavam Nativitatis S. Joannis Baptistæ
+06-28 SD0 S. Leonis II, Papæ & Conf.
+06-28 CM1 Vigilia S. Petri & Pauli, Apost.
+06-29 { ' d i f f e r e n c e ' :   8 1 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-29 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+06-29 SD0 Dies VI infra Octavam Nativitatis S. Joannis Baptistæ
+06-29 DB1 Ss. Petri & Pauli, Apost.[OC]
+06-30 { ' d i f f e r e n c e ' :   8 2 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+06-30 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+06-30 SD0 Dies VII infra Octavam Nativitatis S. Joannis Baptistæ
+06-30 SD0 Dies II infra Octavam Ss. Petri & Pauli, Apost.
+06-30 DBM Commemoratio S. Pauli, Apost.
+07-01 { ' d i f f e r e n c e ' :   8 3 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-01 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+07-01 DB0 Octava Nativitatis S. Joannis Baptistæ
+07-01 SD0 Dies III infra Octavam Ss. Petri & Pauli, Apost.
+07-02 { ' d i f f e r e n c e ' :   8 4 ,   ' d a y ' :   ' D o m i n i c a   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+07-02 DMm Dominica ERROR post Epiphaniam
+07-02 SD0 Dies IV infra Octavam Ss. Petri & Pauli, Apost.
+07-02 DB2 Visitatio B.M.V.
+07-02 CM1 Ss. Mart. Processi & Martiniani
+07-03 { ' d i f f e r e n c e ' :   8 5 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-03 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+07-03 SD0 Dies V infra Octavam Ss. Petri & Pauli, Apost.
+07-04 { ' d i f f e r e n c e ' :   8 6 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-04 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+07-04 SD0 Dies VI infra Octavam Ss. Petri & Pauli, Apost.
+07-05 { ' d i f f e r e n c e ' :   8 7 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-05 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+07-05 SD0 Dies VII infra Octavam Ss. Petri & Pauli, Apost.
+07-05 DB0 Ss. Cyrilli & Methodii, Pont. & Conf.
+07-06 { ' d i f f e r e n c e ' :   8 8 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-06 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+07-06 DB0 Octava Ss. Petri & Pauli, Apost.
+07-07 { ' d i f f e r e n c e ' :   8 9 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-07 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+07-08 { ' d i f f e r e n c e ' :   9 0 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-08 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+07-08 SD0 S. Elisabeth Reginæ Portugalliæ Viduæ
+07-09 { ' d i f f e r e n c e ' :   9 1 ,   ' d a y ' :   ' D o m i n i c a   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+07-09 DMm Dominica ERROR post Epiphaniam
+07-10 { ' d i f f e r e n c e ' :   9 2 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-10 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+07-10 SD0 Ss. Septem Fratrum Martyrum & Ss. Rufinæ ac Secundæ, Virg. & Mm.
+07-11 { ' d i f f e r e n c e ' :   9 3 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-11 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+07-11 SM0 S. Pii I, Papæ & Mart.
+07-12 { ' d i f f e r e n c e ' :   9 4 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-12 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+07-12 DB0 S. Joannis Gualberti, Abbatis
+07-12 CM1 Ss. Naboris & Felicis, Mm.
+07-13 { ' d i f f e r e n c e ' :   9 5 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-13 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+07-13 SD0 S. Anacleti, Papæ & Mart.
+07-14 { ' d i f f e r e n c e ' :   9 6 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-14 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+07-14 DB0 S. Bonaventuræ, Ep. Conf. & Eccl. Doct.
+07-15 { ' d i f f e r e n c e ' :   9 7 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-15 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+07-15 SD0 S. Henrici Imperat., Conf.
+07-16 { ' d i f f e r e n c e ' :   9 8 ,   ' d a y ' :   ' D o m i n i c a   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+07-16 DMm Dominica ERROR post Epiphaniam
+07-16 DBM B.M.V. de Monte Carmelo
+07-17 { ' d i f f e r e n c e ' :   9 9 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-17 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+07-17 SD0 S. Alexiis, Conf.
+07-18 { ' d i f f e r e n c e ' :   1 0 0 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-18 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+07-18 DB0 S. Camilli de Lellis, Conf.
+07-18 CM1 Ss. Symphorosæ & Septem Filiorum ejus, Mm.
+07-19 { ' d i f f e r e n c e ' :   1 0 1 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-19 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+07-19 DB0 S. Vincentii a Paulo, Conf.
+07-20 { ' d i f f e r e n c e ' :   1 0 2 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-20 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+07-20 DB0 S. Hieronymi Æmiliani, Conf.
+07-20 CM1 S. Margaritæ, Virg. & Mart.
+07-21 { ' d i f f e r e n c e ' :   1 0 3 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-21 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+07-21 SM0 S. Praxedis, Virg.
+07-22 { ' d i f f e r e n c e ' :   1 0 4 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-22 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+07-22 DB0 S. Mariæ Magdalenæ Pœnitentiæ
+07-23 { ' d i f f e r e n c e ' :   1 0 5 ,   ' d a y ' :   ' D o m i n i c a   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+07-23 DMm Dominica ERROR post Epiphaniam
+07-23 DB0 S. Apollinaris, Ep. & Mart.
+07-24 { ' d i f f e r e n c e ' :   1 0 6 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-24 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+07-24 SM0 Vigilia S. Jacobi, Apost.
+07-24 CM1 S. Christinæ, Virg. & Mart.
+07-25 { ' d i f f e r e n c e ' :   1 0 7 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-25 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+07-25 DB2 S. Jacobi, Apost.
+07-25 CM1 S. Christophori, Mart.
+07-26 { ' d i f f e r e n c e ' :   1 0 8 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-26 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+07-26 DB2 S. Annæ Matris B.M.V.
+07-27 { ' d i f f e r e n c e ' :   1 0 9 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-27 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+07-27 SM0 S. Pantalconis, Mart.
+07-28 { ' d i f f e r e n c e ' :   1 1 0 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-28 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+07-28 SD0 Ss. Nazarii, Celsi, Victoris I, Papæ & Mm., ac Innocentii I, Papæ & Conf.
+07-29 { ' d i f f e r e n c e ' :   1 1 1 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-29 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+07-29 SD0 S. Marthæ, Virg.
+07-29 CM1 Ss. Felicis II, Papæ, et Simplicii, Faustini, et Beatricis, Mm.
+07-30 { ' d i f f e r e n c e ' :   1 1 2 ,   ' d a y ' :   ' D o m i n i c a   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+07-30 DMm Dominica ERROR post Epiphaniam
+07-30 SM0 Ss. Abdon & Sennon, Mm.
+07-31 { ' d i f f e r e n c e ' :   1 1 3 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+07-31 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+07-31 DB0 S. Ignatii de Lojola, Conf.
+08-01 { ' d i f f e r e n c e ' :   1 1 4 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-01 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+08-01 DBM S. Petri ad Vincula
+08-01 DBM S. Pauli, Apost.
+08-01 CM1 Ss. Machabæorum, Mm.
+08-02 { ' d i f f e r e n c e ' :   1 1 5 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-02 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+08-02 DB0 S. Alphonsi Mariæ de Ligorio, Ep. Conf. & Eccl. Doct.
+08-02 CM1 S. Stephani I, Papæ & Mart.
+08-03 { ' d i f f e r e n c e ' :   1 1 6 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-03 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+08-03 SD0 Inventio S. Stephani Protomartyris
+08-04 { ' d i f f e r e n c e ' :   1 1 7 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-04 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+08-04 DBM S. Dominici Conf.
+08-05 { ' d i f f e r e n c e ' :   1 1 8 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-05 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+08-05 DBM Dedicatio S. Mariæ ad Nives
+08-06 { ' d i f f e r e n c e ' :   1 1 9 ,   ' d a y ' :   ' D o m i n i c a   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+08-06 DMm Dominica ERROR post Epiphaniam
+08-06 DBM Tranfiguratio D.N.J.C.
+08-06 CM1 Ss. Xysti II, Papæ, Felicissimi & Agapiti, Mm.
+08-07 { ' d i f f e r e n c e ' :   1 2 0 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-07 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+08-07 DB0 S. Cajetani, Conf.
+08-07 CM1 S. Donati, Ep. & Mart.
+08-08 { ' d i f f e r e n c e ' :   1 2 1 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-08 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+08-08 SD0 Ss. Cyriaci, Largi & Smaragdi, Mm.
+08-09 { ' d i f f e r e n c e ' :   1 2 2 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-09 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+08-09 SM0 Vigilia S. Laurentii, Mart.
+08-09 CM1 S. Romani, Mart.
+08-10 { ' d i f f e r e n c e ' :   1 2 3 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-10 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+08-10 DB2 S. Laurentii, Mart.[OC,MR]
+08-11 { ' d i f f e r e n c e ' :   1 2 4 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-11 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+08-11 SD0 Dies II infra Octavam S. Laurentii, Mart.[MR]
+08-11 CM1 Ss. Tiburtii & Susannæ, Mm.
+08-12 { ' d i f f e r e n c e ' :   1 2 5 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-12 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+08-12 SD0 Dies III infra Octavam S. Laurentii, Mart.[MR]
+08-12 DB0 S. Claræ, Virg.
+08-13 { ' d i f f e r e n c e ' :   1 2 6 ,   ' d a y ' :   ' D o m i n i c a   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+08-13 DMm Dominica ERROR post Epiphaniam
+08-13 SD0 Dies IV infra Octavam S. Laurentii, Mart.[MR]
+08-13 CM1 Ss. Hippolyti & Cassiani, Mm.
+08-14 { ' d i f f e r e n c e ' :   1 2 7 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-14 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+08-14 SD0 Dies V infra Octavam S. Laurentii, Mart.[MR]
+08-14 CM1 S. Eusebii, Conf.
+08-15 { ' d i f f e r e n c e ' :   1 2 8 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-15 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+08-15 SD0 Dies VI infra Octavam S. Laurentii, Mart.[MR]
+08-15 DB1 Assumptionis B.M.V.[OC]
+08-16 { ' d i f f e r e n c e ' :   1 2 9 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-16 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+08-16 SD0 Dies VII infra Octavam S. Laurentii, Mart.[MR]
+08-16 SD0 Dies II infra Octavam Assumptionis B.M.V.
+08-17 { ' d i f f e r e n c e ' :   1 3 0 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-17 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+08-17 DB0 Octava S. Laurentii, Mart.[MR]
+08-17 SD0 Dies III infra Octavam Assumptionis B.M.V.
+08-18 { ' d i f f e r e n c e ' :   1 3 1 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-18 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+08-18 SD0 Dies IV infra Octavam Assumptionis B.M.V.
+08-19 { ' d i f f e r e n c e ' :   1 3 2 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-19 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+08-19 SD0 Dies V infra Octavam Assumptionis B.M.V.
+08-20 { ' d i f f e r e n c e ' :   1 3 3 ,   ' d a y ' :   ' D o m i n i c a   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+08-20 DMm Dominica ERROR post Epiphaniam
+08-20 SD0 Dies VI infra Octavam Assumptionis B.M.V.
+08-21 { ' d i f f e r e n c e ' :   1 3 4 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-21 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+08-21 SD0 Dies VII infra Octavam Assumptionis B.M.V.
+08-22 { ' d i f f e r e n c e ' :   1 3 5 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-22 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+08-22 DB0 Octava Assumptionis B.M.V.
+08-23 { ' d i f f e r e n c e ' :   1 3 6 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-23 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+08-24 { ' d i f f e r e n c e ' :   1 3 7 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-24 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+08-25 { ' d i f f e r e n c e ' :   1 3 8 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-25 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+08-26 { ' d i f f e r e n c e ' :   1 3 9 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-26 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+08-27 { ' d i f f e r e n c e ' :   1 4 0 ,   ' d a y ' :   ' D o m i n i c a   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+08-27 DMm Dominica ERROR post Epiphaniam
+08-28 { ' d i f f e r e n c e ' :   1 4 1 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-28 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+08-29 { ' d i f f e r e n c e ' :   1 4 2 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-29 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+08-30 { ' d i f f e r e n c e ' :   1 4 3 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-30 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+08-31 { ' d i f f e r e n c e ' :   1 4 4 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+08-31 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+09-01 { ' d i f f e r e n c e ' :   1 4 5 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-01 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+09-02 { ' d i f f e r e n c e ' :   1 4 6 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-02 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+09-03 { ' d i f f e r e n c e ' :   1 4 7 ,   ' d a y ' :   ' D o m i n i c a   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+09-03 DMm Dominica ERROR post Epiphaniam
+09-04 { ' d i f f e r e n c e ' :   1 4 8 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-04 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+09-05 { ' d i f f e r e n c e ' :   1 4 9 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-05 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+09-06 { ' d i f f e r e n c e ' :   1 5 0 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-06 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+09-07 { ' d i f f e r e n c e ' :   1 5 1 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-07 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+09-08 { ' d i f f e r e n c e ' :   1 5 2 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-08 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+09-09 { ' d i f f e r e n c e ' :   1 5 3 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X I V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-09 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+09-10 { ' d i f f e r e n c e ' :   1 5 4 ,   ' d a y ' :   ' D o m i n i c a   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+09-10 DMm Dominica ERROR post Epiphaniam
+09-11 { ' d i f f e r e n c e ' :   1 5 5 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-11 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+09-12 { ' d i f f e r e n c e ' :   1 5 6 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-12 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+09-13 { ' d i f f e r e n c e ' :   1 5 7 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-13 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+09-14 { ' d i f f e r e n c e ' :   1 5 8 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-14 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+09-15 { ' d i f f e r e n c e ' :   1 5 9 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-15 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+09-16 { ' d i f f e r e n c e ' :   1 6 0 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X V   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-16 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+09-17 { ' d i f f e r e n c e ' :   1 6 1 ,   ' d a y ' :   ' D o m i n i c a   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+09-17 DMm Dominica ERROR post Epiphaniam
+09-18 { ' d i f f e r e n c e ' :   1 6 2 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-18 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+09-19 { ' d i f f e r e n c e ' :   1 6 3 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-19 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+09-20 { ' d i f f e r e n c e ' :   1 6 4 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-20 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+09-21 { ' d i f f e r e n c e ' :   1 6 5 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-21 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+09-22 { ' d i f f e r e n c e ' :   1 6 6 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-22 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+09-23 { ' d i f f e r e n c e ' :   1 6 7 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X V I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-23 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+09-24 { ' d i f f e r e n c e ' :   1 6 8 ,   ' d a y ' :   ' D o m i n i c a   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+09-24 DMm Dominica ERROR post Epiphaniam
+09-25 { ' d i f f e r e n c e ' :   1 6 9 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-25 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+09-26 { ' d i f f e r e n c e ' :   1 7 0 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-26 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+09-27 { ' d i f f e r e n c e ' :   1 7 1 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-27 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+09-28 { ' d i f f e r e n c e ' :   1 7 2 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-28 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+09-29 { ' d i f f e r e n c e ' :   1 7 3 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-29 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+09-30 { ' d i f f e r e n c e ' :   1 7 4 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X V I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+09-30 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+10-01 { ' d i f f e r e n c e ' :   1 7 5 ,   ' d a y ' :   ' D o m i n i c a   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+10-01 DMm Dominica ERROR post Epiphaniam
+10-02 { ' d i f f e r e n c e ' :   1 7 6 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-02 FR0 Feria II infra Hebdomadam ERROR post Epiphaniam
+10-03 { ' d i f f e r e n c e ' :   1 7 7 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-03 FR0 Feria III infra Hebdomadam ERROR post Epiphaniam
+10-04 { ' d i f f e r e n c e ' :   1 7 8 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-04 FR0 Feria IV infra Hebdomadam ERROR post Epiphaniam
+10-05 { ' d i f f e r e n c e ' :   1 7 9 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-05 FR0 Feria V infra Hebdomadam ERROR post Epiphaniam
+10-06 { ' d i f f e r e n c e ' :   1 8 0 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-06 FR0 Feria VI infra Hebdomadam ERROR post Epiphaniam
+10-07 { ' d i f f e r e n c e ' :   1 8 1 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X V I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-07 FR0 Sabbato infra Hebdomadam ERROR post Epiphaniam
+10-08 { ' d i f f e r e n c e ' :   1 8 2 ,   ' d a y ' :   ' D o m i n i c a   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+10-08 DMm Dominica  post Epiphaniam
+10-09 { ' d i f f e r e n c e ' :   1 8 3 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-09 FR0 Feria II infra Hebdomadam  post Epiphaniam
+10-10 { ' d i f f e r e n c e ' :   1 8 4 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-10 FR0 Feria III infra Hebdomadam  post Epiphaniam
+10-11 { ' d i f f e r e n c e ' :   1 8 5 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-11 FR0 Feria IV infra Hebdomadam  post Epiphaniam
+10-12 { ' d i f f e r e n c e ' :   1 8 6 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-12 FR0 Feria V infra Hebdomadam  post Epiphaniam
+10-13 { ' d i f f e r e n c e ' :   1 8 7 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-13 FR0 Feria VI infra Hebdomadam  post Epiphaniam
+10-14 { ' d i f f e r e n c e ' :   1 8 8 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X I X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-14 FR0 Sabbato infra Hebdomadam  post Epiphaniam
+10-15 { ' d i f f e r e n c e ' :   1 8 9 ,   ' d a y ' :   ' D o m i n i c a   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+10-15 DMm Dominica I post Epiphaniam
+10-16 { ' d i f f e r e n c e ' :   1 9 0 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-16 FR0 Feria II infra Hebdomadam I post Epiphaniam
+10-17 { ' d i f f e r e n c e ' :   1 9 1 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-17 FR0 Feria III infra Hebdomadam I post Epiphaniam
+10-18 { ' d i f f e r e n c e ' :   1 9 2 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-18 FR0 Feria IV infra Hebdomadam I post Epiphaniam
+10-19 { ' d i f f e r e n c e ' :   1 9 3 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-19 FR0 Feria V infra Hebdomadam I post Epiphaniam
+10-20 { ' d i f f e r e n c e ' :   1 9 4 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-20 FR0 Feria VI infra Hebdomadam I post Epiphaniam
+10-21 { ' d i f f e r e n c e ' :   1 9 5 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X X   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-21 FR0 Sabbato infra Hebdomadam I post Epiphaniam
+10-22 { ' d i f f e r e n c e ' :   1 9 6 ,   ' d a y ' :   ' D o m i n i c a   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+10-22 DMm Dominica II post Epiphaniam
+10-23 { ' d i f f e r e n c e ' :   1 9 7 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-23 FR0 Feria II infra Hebdomadam II post Epiphaniam
+10-24 { ' d i f f e r e n c e ' :   1 9 8 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-24 FR0 Feria III infra Hebdomadam II post Epiphaniam
+10-25 { ' d i f f e r e n c e ' :   1 9 9 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-25 FR0 Feria IV infra Hebdomadam II post Epiphaniam
+10-26 { ' d i f f e r e n c e ' :   2 0 0 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-26 FR0 Feria V infra Hebdomadam II post Epiphaniam
+10-27 { ' d i f f e r e n c e ' :   2 0 1 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-27 FR0 Feria VI infra Hebdomadam II post Epiphaniam
+10-28 { ' d i f f e r e n c e ' :   2 0 2 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X X I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-28 FR0 Sabbato infra Hebdomadam II post Epiphaniam
+10-29 { ' d i f f e r e n c e ' :   2 0 3 ,   ' d a y ' :   ' D o m i n i c a   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+10-29 DMm Dominica III post Epiphaniam
+10-30 { ' d i f f e r e n c e ' :   2 0 4 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-30 FR0 Feria II infra Hebdomadam III post Epiphaniam
+10-31 { ' d i f f e r e n c e ' :   2 0 5 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+10-31 FR0 Feria III infra Hebdomadam III post Epiphaniam
+11-01 { ' d i f f e r e n c e ' :   2 0 6 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-01 FR0 Feria IV infra Hebdomadam III post Epiphaniam
+11-02 { ' d i f f e r e n c e ' :   2 0 7 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-02 FR0 Feria V infra Hebdomadam III post Epiphaniam
+11-03 { ' d i f f e r e n c e ' :   2 0 8 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-03 FR0 Feria VI infra Hebdomadam III post Epiphaniam
+11-04 { ' d i f f e r e n c e ' :   2 0 9 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X X I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-04 FR0 Sabbato infra Hebdomadam III post Epiphaniam
+11-05 { ' d i f f e r e n c e ' :   2 1 0 ,   ' d a y ' :   ' D o m i n i c a   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' S e m i d o u b l e ' ,   ' a t t r i b u t e s ' :   [ ' S u n d a y ' ] }
+11-05 DMm Dominica IV post Epiphaniam
+11-06 { ' d i f f e r e n c e ' :   2 1 1 ,   ' d a y ' :   ' F e r i a   I I   i n f r a   H e b d o m a d a m   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-06 FR0 Feria II infra Hebdomadam IV post Epiphaniam
+11-07 { ' d i f f e r e n c e ' :   2 1 2 ,   ' d a y ' :   ' F e r i a   I I I   i n f r a   H e b d o m a d a m   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-07 FR0 Feria III infra Hebdomadam IV post Epiphaniam
+11-08 { ' d i f f e r e n c e ' :   2 1 3 ,   ' d a y ' :   ' F e r i a   I V   i n f r a   H e b d o m a d a m   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-08 FR0 Feria IV infra Hebdomadam IV post Epiphaniam
+11-09 { ' d i f f e r e n c e ' :   2 1 4 ,   ' d a y ' :   ' F e r i a   V   i n f r a   H e b d o m a d a m   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-09 FR0 Feria V infra Hebdomadam IV post Epiphaniam
+11-10 { ' d i f f e r e n c e ' :   2 1 5 ,   ' d a y ' :   ' F e r i a   V I   i n f r a   H e b d o m a d a m   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-10 FR0 Feria VI infra Hebdomadam IV post Epiphaniam
+11-11 { ' d i f f e r e n c e ' :   2 1 6 ,   ' d a y ' :   ' S a b b a t o   i n f r a   H e b d o m a d a m   X X I I I   p o s t   O c t a v a m   P e n t e c o s t e s ' ,   ' r a n k ' :   ' F e r i a ' ,   ' a t t r i b u t e s ' :   [ ] }
+11-11 FR0 Sabbato infra Hebdomadam IV post Epiphaniam
+11-12 DMm Dominica V post Epiphaniam
+11-13 FR0 Feria II infra Hebdomadam V post Epiphaniam
+11-14 FR0 Feria III infra Hebdomadam V post Epiphaniam
+11-15 FR0 Feria IV infra Hebdomadam V post Epiphaniam
+11-16 FR0 Feria V infra Hebdomadam V post Epiphaniam
+11-17 FR0 Feria VI infra Hebdomadam V post Epiphaniam
+11-18 FR0 Sabbato infra Hebdomadam V post Epiphaniam
+11-19 DMm Dominica VI post Epiphaniam
+11-20 FR0 Feria II infra Hebdomadam VI post Epiphaniam
+11-21 FR0 Feria III infra Hebdomadam VI post Epiphaniam
+11-22 FR0 Feria IV infra Hebdomadam VI post Epiphaniam
+11-23 FR0 Feria V infra Hebdomadam VI post Epiphaniam
+11-24 FR0 Feria VI infra Hebdomadam VI post Epiphaniam
+11-25 FR0 Sabbato infra Hebdomadam VI post Epiphaniam
+11-26 DMm Dominica XXIV post Octavam Pentecostes
+11-27 FR0 Feria II infra Hebdomadam XXIV post Octavam Pentecostes
+11-28 FR0 Feria III infra Hebdomadam XXIV post Octavam Pentecostes
+11-29 FR0 Feria IV infra Hebdomadam XXIV post Octavam Pentecostes
+11-30 FR0 Feria V infra Hebdomadam XXIV post Octavam Pentecostes
+12-01 FR0 Feria VI infra Hebdomadam XXIV post Octavam Pentecostes
+12-02 FR0 Sabbato infra Hebdomadam XXIV post Octavam Pentecostes
+12-03 SD1 Dominica I Adventus
+12-04 SM0 Feria II infra Hebdomadam I Adventus
+12-05 SM0 Feria III infra Hebdomadam I Adventus
+12-06 SM0 Feria IV infra Hebdomadam I Adventus
+12-07 SM0 Feria V infra Hebdomadam I Adventus
+12-08 SM0 Feria VI infra Hebdomadam I Adventus
+12-09 SM0 Sabbato infra Hebdomadam I Adventus
+12-10 SD2 Dominica II Adventus
+12-11 SM0 Feria II infra Hebdomadam II Adventus
+12-12 SM0 Feria III infra Hebdomadam II Adventus
+12-13 SM0 Feria IV infra Hebdomadam II Adventus
+12-14 SM0 Feria V infra Hebdomadam II Adventus
+12-15 SM0 Feria VI infra Hebdomadam II Adventus
+12-16 SM0 Sabbato infra Hebdomadam II Adventus
+12-17 SD2 Dominica III Adventus
+12-18 SM0 Feria II infra Hebdomadam III Adventus
+12-19 SM0 Feria III infra Hebdomadam III Adventus
+12-20 SM0 Feria IV infra Hebdomadam III Adventus
+12-21 SM0 Feria V infra Hebdomadam III Adventus
+12-22 SM0 Feria VI infra Hebdomadam III Adventus
+12-23 SM0 Sabbato infra Hebdomadam III Adventus
+12-24 DB1 Vigilia Nativitatis D.N.J.Chr.[NT]
+12-25 DB1 Nativitas D.N.J.Chr.[NC]
+12-26 DB2 S. Stephani Protomart.[OC]
+12-27 DB2 S. Joannis Apostoli et Evangelistæ[AP,EV,OC]
+12-28 DB2 SS. Innocentium Mart.[OC]
+12-29 FR0 Die V infra Octavam Nativitatis
+12-30 FR0 Die VI infra Octavam Nativitatis
+12-31 FR0 Die VII infra Octavam Nativitatis
+12-31 SD0 Dominica infra Octavam Nativitatis
