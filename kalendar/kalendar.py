@@ -25,21 +25,9 @@ def kalendar(year):
     
     def sundayafter(date0):
         return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=6)
-    def todate(text):
-        return date(year, int(text[:2]), int(text[3:]))
+    def todate(text, year0):
+        return date(year0, int(text[:2]), int(text[3:]))
     def addentry(date0, entry):
-        if "octave" in entry["tags"] and not "special-octave" in entry["tags"]:
-            for k in range(1,7):
-                entrystripped = copy.deepcopy(entry)
-                entrystripped["tags"].remove("octave")
-                if ("double-i-class" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("double-i-class")
-                elif ("double-ii-class" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("double-ii-class")
-                entrystripped["tags"].append("semidouble")
-                entrystripped["tags"].append("day-" + str(k+1))
-                print(entrystripped)
-                addentry(date0 + timedelta(days=k), entrystripped)
         if (date0 in kal):
             kal[date0].append(entry)
         else:
@@ -94,7 +82,7 @@ def kalendar(year):
 
     #Nativity & Epiphany
     for i in nativitycycle:
-        addentry(todate(i["date"]), i)
+        addentry(todate(i["date"], year), i)
     if (christmas.weekday() < 3):
         addentry(christmas + timedelta(days=6-christmas.weekday()), movables["nativity-sunday"])
     else:
@@ -123,8 +111,49 @@ def kalendar(year):
     
     #Saints
     for i in sanctoral:
-        addentry(todate(i["date"]), i)
-        
+        addentry(todate(i["date"], year), i)
+    
+    buffer = {}
+    def addbufferentry(date0, entry):
+        if (date0 in buffer):
+            buffer[date0].append(entry)
+        else:
+            buffer[date0] = [entry]
+    
+    #Octave Processing
+    for i in kal:
+        for j in kal[i]:
+            if "octave" in j["tags"] and not "special-octave" in j["tags"]:
+                for k in range(1,7):
+                    entrystripped = copy.deepcopy(j)
+                    entrystripped["tags"].remove("octave")
+                    if ("double-i-class" in entrystripped["tags"]):
+                        entrystripped["tags"].remove("double-i-class")
+                    elif ("double-ii-class" in entrystripped["tags"]):
+                        entrystripped["tags"].remove("double-ii-class")
+                    entrystripped["tags"].append("semidouble")
+                    entrystripped["tags"].append("day-" + str(k+1))
+                    entrystripped["date"] = datestring(i + timedelta(days=k))
+                    numerals = ['II','III','IV','V','VI','VII']
+                    entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["octaval-day-name"]
+                    del entrystripped["octaval-day-name"]
+                    addbufferentry(i + timedelta(days=k), entrystripped)
+                entrystripped = copy.deepcopy(j)
+                entrystripped["tags"].remove("octave")
+                if ("double-i-class" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("double-i-class")
+                elif ("double-ii-class" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("double-ii-class")
+                entrystripped["tags"].append("double")
+                entrystripped["tags"].append("octave-day")
+                entrystripped["date"] = datestring(i + timedelta(days=7))
+                entrystripped["day"] = "In Octava " + entrystripped["octaval-day-name"]
+                del entrystripped["octaval-day-name"]
+                addbufferentry(i + timedelta(days=7), entrystripped)
+    for i in buffer:
+        for j in buffer[i]:
+            addentry(i, j)
+
     return dict(sorted(kal.items()))
 
 year = 2023
