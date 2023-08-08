@@ -8,27 +8,6 @@ import json
 import copy
 import pascha
 
-def getnumerals(num):
-    res = ''
-    while (num >= 10):
-        res += 'X'
-        num -= 10
-    
-    return res + { 0:'', 1:'I', 2:'II', 3:'III', 4:'IV', 5:'V', 6:'VI', 7:'VII', 8:'VIII', 9:'IX' }.get(num, 'ERROR')
-
-def abmnumber(num):
-    return { 3:'tertio', 4:'quarto', 5:'quinto', 6:'sexto', 7:'septimo', 8:'octavo', 9:'nono', 10:'decimo', 11:'undecimo', 12:'duodecimo', 13:'tertiodecimo', 14: 'quarto decimo', 15:'quinto decimo', 16:'sexto decimo', 17:'decimo septimo', 18:'decimo octavo', 19:'decimo nono'}.get(num, 'ERROR')  
-
-def abfnumber(num):
-    return { 1:'prima', 2:'secunda', 3:'tertia', 4:'quarta', 5:'quinta', 6:'sexta', 7:'septima', 8:'octava', 9:'nona', 10:'decima', 11:'undecima', 12:'duodecima', 13:'tertiadecima', 14: 'quarta decima', 15:'quinta decima', 16:'sexta decima', 17:'decima septima', 18:'duodevicesima', 19:'undevicesima', 20:'vicesima', 21:'vicesima prima', 22:'vicesima secunda', 23:'vicesima tertia', 24:'vicesima quarta', 25:'vicesima quinta', 26:'vicesima sexta', 27:'vicesima septima', 28:'vicesima octava', 29:'vicesima nona', 30:'tricesima'}.get(num, 'ERROR')  
-
-def get_wide_ordinal(char):
-    if len(char) != 2:
-        return ord(char)
-    return 0x10000 + (ord(char[0]) - 0xD800) * 0x400 + (ord(char[1]) - 0xDC00)
-
-table = {get_wide_ordinal(v): '&{}'.format(k) for k, v in html.entities.html5.items()}
-
 epiphanycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\epiphany.json', 'r', encoding = ' utf-8').readlines()))
 paschalcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\paschal.json', 'r', encoding = ' utf-8').readlines()))
 adventcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\advent.json', 'r', encoding = ' utf-8').readlines()))
