@@ -6,6 +6,7 @@ import pathlib
 import html.entities
 import json
 import copy
+import pascha
 
 def getnumerals(num):
     res = ''
@@ -36,64 +37,6 @@ movables = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute())
 months = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\summer-autumn.json', 'r', encoding = ' utf-8').readlines()))
 sanctoral = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\kalendar.json', 'r', encoding = ' utf-8').readlines()))
 
-#1 lower than golden number, April date (0 for 30 March and -1 for 31 March)
-paschatable = [14, 3, 22, 11, 0, 19, 8, 27, 16, 5, 24, 13, 2, 21, 10, -1, 18, 7, 26] 
-
-#Corrects the Pascha table for leap years and other corrections
-def correctedpaschatable(year):
-    correction = 0
-    for i in range(0, int((year - 2000) / 100)):
-        yr = i * 100 + 2000
-        if (yr % 400 != 0):
-            correction -= 1
-        if ((yr % 2500) in [200, 500, 800, 1100, 1400, 1800, 2100, 2400]):
-            correction += 1
-    newpaschatable = paschatable
-    while (correction > 0):
-        correction -= 1
-        for i in range(0, 19):
-            newpaschatable[i] += 1
-            if (newpaschatable[i] == 28):
-                newpaschatable[i] = -1
-    while (correction < 0):
-        correction += 1
-        for i in range(0, 19):
-            newpaschatable[i] -= 1
-            if (newpaschatable[i] == -2):
-                newpaschatable[i] = 27
-                
-    return newpaschatable
-
-#If the date number is negative or zero, create a date in the previous month
-def safenegdatecreate(year, month, date0):
-    if (date0 < 1):
-        return date(year, month, 1) - timedelta(days = 1 - date0)
-    else:
-        return date(year, month, date0)
-          
-def geteaster(year):
-    goldennumber = (year + 1) % 19
-    if (goldennumber == 0):
-        goldennumber = 19
-    ptable = correctedpaschatable(year)
-    adjbbound = 18 if 18 in ptable and 19 in ptable else 19
-    date0 = ptable[goldennumber - 1]
-    group = ""
-    if (date0 < adjbbound):
-        matcheddate = safenegdatecreate(year, 4, date0)
-        return matcheddate + timedelta(days = (7 if matcheddate.weekday() == 6 else 6 - matcheddate.weekday())) 
-    elif (date0 < 20):
-        matcheddate = safenegdatecreate(year, 4, date0)
-        return matcheddate + timedelta(days = (6 - matcheddate.weekday())) 
-    else:
-        matcheddate = safenegdatecreate(year, 3, date0)
-        if (matcheddate.weekday() == 5):
-            return matcheddate + timedelta(days = 8)
-        elif (matcheddate.weekday() == 6):
-            return matcheddate + timedelta(days = 7)
-        else:
-            return matcheddate + timedelta(days = (6 - matcheddate.weekday()))      
-            
 def datestring(date0):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
 
@@ -105,36 +48,28 @@ def kalendar(year):
         return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=6)
     def todate(text):
         return date(year, int(text[:2]), int(text[3:]))
-    def addentry(date0, entry, *tags):
-    
-    
+    def addentry(date0, entry):
         if "octave" in entry["tags"] and not "special-octave" in entry["tags"]:
-            entrystripped = entry
-            entrystripped["tags"].remove("octave")
             for k in range(1,7):
                 entrystripped = copy.deepcopy(entry)
                 entrystripped["tags"].remove("octave")
-                entrystripped["tags"].remove("double-i-class")
-                entrystripped["tags"].remove("double-ii-class")
+                if ("double-i-class" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("double-i-class")
+                elif ("double-ii-class" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("double-ii-class")
                 entrystripped["tags"].append("semidouble")
+                entrystripped["tags"].append("day-" + str(k+1))
                 print(entrystripped)
-                addentry(date0 + timedelta(days=k), entrystripped, "day-" + str(k+1))
-        if (tags):
-            if (type(tags) == list):
-                entry["tags"].extend(tags)
-            else:
-                entry["tags"].append(tags)
+                addentry(date0 + timedelta(days=k), entrystripped)
         if (date0 in kal):
             kal[date0].append(entry)
         else:
             kal[date0] = [entry]
-    def entry(date0):
-        return kal[date0]
     
-    pascha = geteaster(year)
+    easter = pascha.geteaster(year)
     christmas = date(year, 12, 25)
     adventstart = christmas - timedelta(days = 22 + christmas.weekday())
-    xxiiipentecost = pascha + timedelta(days=210)
+    xxiiipentecost = easter + timedelta(days=210)
     xxivpentecost = adventstart - timedelta(days=7)
     
     epiphanysunday = sundayafter(date(year, 1, 6))
@@ -156,7 +91,7 @@ def kalendar(year):
     #Paschal Cycle
     for i in paschalcycle:
         entry = i
-        date0 = pascha + timedelta(days=i["difference"])
+        date0 = easter + timedelta(days=i["difference"])
         if (date0 == xxivpentecost):
             psundayomission = True
             break
@@ -166,7 +101,7 @@ def kalendar(year):
     
     #Epiphany Sundays 
     epiphanyweek = 0
-    while epiphanysunday + timedelta(days=epiphanyweek * 7) != pascha - timedelta(days=63):
+    while epiphanysunday + timedelta(days=epiphanyweek * 7) != easter - timedelta(days=63):
         for i in range(0,7):
             addentry(epiphanysunday + timedelta(days=epiphanyweek * 7 + i), epiphanycycle[epiphanyweek][i])
         epiphanyweek += 1
@@ -210,11 +145,7 @@ def kalendar(year):
     #Saints
     for i in sanctoral:
         addentry(todate(i["date"]), i)
-    
-    #Octave processing
-    
-    #TODO Implement transfers AFTER Sanctorals for Pentecost & Epiphany
-    
+        
     return dict(sorted(kal.items()))
 
 year = 2023
