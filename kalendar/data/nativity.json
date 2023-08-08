@@ -14,25 +14,127 @@
 	{
 		"date":"12-26",
 		"day":"S. Stephani Protomart.",
-		"octaval-day-name":"S. Stephani",
-		"tags":["double-ii-class","stephanus","martyr","octave"]
+		"tags":["double-ii-class","stephanus","martyr","octave","special-octave"]
 	},
 	{
 		"date":"12-27",
 		"day":"S. Joannis Apostoli et Evangelistæ",
-		"octaval-day-name":"S. Joannis",
-		"tags":["double-ii-class","joannes-apostolus","apostle","evangelist","octave"]
+		"tags":["joannes-apostolus","double-ii-class","apostle","evangelist","octave","special-octave"]
+	},
+	{
+		"date":"12-27",
+		"day":"Dies II infra Octavam S. Stephani",
+		"tags":["stephanus","commemoration","martyr","day-2"]
 	},
 	{
 		"date":"12-28",
 		"day":"Ss. Innocentium Mart.",
-		"octaval-day-name":"Ss. Innocentium",
-		"tags":["double-ii-class","innocentes","martyrs","octave"]
+		"tags":["innocentes","double-ii-class","martyrs","octave","special-octave"]
+	},
+	{
+		"date":"12-28",
+		"day":"Dies III infra Octavam S. Stephani",
+		"tags":["stephanus","commemoration","martyr","day-3"]
+	},
+	{
+		"date":"12-28",
+		"day":"Dies II infra Octavam S. Joannis",
+		"tags":["joannes-apostolus","commemoration","apostle","evangelist","day-2"]
+	},
+	{
+		"date":"12-29",
+		"day":"Dies IV infra Octavam S. Stephani",
+		"tags":["stephanus","commemoration","martyr","day-4"]
+	},
+	{
+		"date":"12-29",
+		"day":"Dies III infra Octavam S. Joannis",
+		"tags":["joannes-apostolus","commemoration","apostle","evangelist","day-3"]
+	},
+	{
+		"date":"12-29",
+		"day":"Dies II infra Octavam Ss. Innocentium",
+		"tags":["innocentes","commemoration","martyrs","day-2"]
+	},
+	{
+		"date":"12-30",
+		"day":"Dies V infra Octavam S. Stephani",
+		"tags":["stephanus","commemoration","martyr","day-5"]
+	},
+	{
+		"date":"12-30",
+		"day":"Dies IV infra Octavam S. Joannis",
+		"tags":["joannes-apostolus","commemoration","apostle","evangelist","day-4"]
+	},
+	{
+		"date":"12-30",
+		"day":"Dies III infra Octavam Ss. Innocentium",
+		"tags":["innocentes","commemoration","martyrs","day-3"]
+	},
+	{
+		"date":"12-31",
+		"day":"Dies VI infra Octavam S. Stephani",
+		"tags":["stephanus","commemoration","martyr","day-6"]
+	},
+	{
+		"date":"12-31",
+		"day":"Dies V infra Octavam S. Joannis",
+		"tags":["joannes-apostolus","commemoration","apostle","evangelist","day-5"]
+	},
+	{
+		"date":"12-31",
+		"day":"Dies IV infra Octavam Ss. Innocentium",
+		"tags":["innocentes","commemoration","martyrs","day-4"]
 	},
 	{
 		"date":"01-01",
 		"day":"Circumcisio Domini",
 		"tags":["double-ii-class","circumcisio","no-commemoration","octave-day"]
+	},
+	{
+		"date":"01-01",
+		"day":"Dies VII infra Octavam S. Stephani",
+		"tags":["stephanus","commemoration","martyr","day-7"]
+	},
+	{
+		"date":"01-01",
+		"day":"Dies VI infra Octavam S. Joannis",
+		"tags":["joannes-apostolus","commemoration","apostle","evangelist","day-6"]
+	},
+	{
+		"date":"01-01",
+		"day":"Dies V infra Octavam Ss. Innocentium",
+		"tags":["innocentes","commemoration","martyrs","day-5"]
+	},
+	{
+		"date":"01-02",
+		"day":"In Octava S. Stephani",
+		"tags":["stephanus","double","martyr","octave-day"]
+	},
+	{
+		"date":"01-02",
+		"day":"Dies VII infra Octavam S. Joannis",
+		"tags":["joannes-apostolus","commemoration","apostle","evangelist","day-7"]
+	},
+	{
+		"date":"01-02",
+		"day":"Dies VI infra Octavam Ss. Innocentium",
+		"tags":["innocentes","commemoration","martyrs","day-6"]
+	},
+	{
+		"date":"01-03",
+		"day":"In Octava S. Joannis",
+		"tags":["joannes-apostolus","double","apostle","evangelist","octave-day"]
+	},
+	{
+		"date":"01-03",
+		"day":"Dies VII infra Octavam Ss. Innocentium",
+		"tags":["innocentes","commemoration","martyrs","day-7"]
+	},
+	{
+		"date":"01-04",
+		"day":"In Octava Ss. Innocentium",
+		"tags":["innocentes","double","martyrs","octave-day"]
 	},
 	{
 		"date":"01-05",
