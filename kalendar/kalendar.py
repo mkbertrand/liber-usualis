@@ -6,7 +6,7 @@ import pathlib
 import html.entities
 import json
 import copy
-import pascha
+from kalendar import pascha
 
 epiphanycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/epiphany.json', 'r', encoding = ' utf-8').readlines()))
 paschalcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/paschal.json', 'r', encoding = ' utf-8').readlines()))
@@ -193,15 +193,3 @@ def kalendar(year):
     #todo Translation Processing
     
     return dict(sorted(kal.items()))
-
-year = 1943
-ret = kalendar(year)
-ret0 = {}
-
-for i in ret:
-    ret0[datestring(i)] = ret[i]
-
-outputfilename = 'year-' + str(year) + '.json'
-with open('kalendars/' + outputfilename, 'w') as fp:
-    fp.write(json.dumps(ret0))
-print(outputfilename)
