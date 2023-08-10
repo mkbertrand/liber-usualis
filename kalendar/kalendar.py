@@ -8,13 +8,13 @@ import json
 import copy
 import pascha
 
-epiphanycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\epiphany.json', 'r', encoding = ' utf-8').readlines()))
-paschalcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\paschal.json', 'r', encoding = ' utf-8').readlines()))
-adventcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\advent.json', 'r', encoding = ' utf-8').readlines()))
-nativitycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\nativity.json', 'r', encoding = ' utf-8').readlines()))
-movables = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\movables.json', 'r', encoding = ' utf-8').readlines()))
-months = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\summer-autumn.json', 'r', encoding = ' utf-8').readlines()))
-sanctoral = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '\\data\\kalendar.json', 'r', encoding = ' utf-8').readlines()))
+epiphanycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/epiphany.json', 'r', encoding = ' utf-8').readlines()))
+paschalcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/paschal.json', 'r', encoding = ' utf-8').readlines()))
+adventcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/advent.json', 'r', encoding = ' utf-8').readlines()))
+nativitycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/nativity.json', 'r', encoding = ' utf-8').readlines()))
+movables = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/movables.json', 'r', encoding = ' utf-8').readlines()))
+months = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/summer-autumn.json', 'r', encoding = ' utf-8').readlines()))
+sanctoral = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/kalendar.json', 'r', encoding = ' utf-8').readlines()))
 
 def datestring(date0):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
@@ -153,7 +153,11 @@ def kalendar(year):
     for i in buffer:
         for j in buffer[i]:
             addentry(i, j)
-
+    
+    #todo Finish kalendar.json, pascha.json
+    #todo Translation Processing
+    #todo Rank Resolution
+    
     return dict(sorted(kal.items()))
 
 year = 2023
@@ -164,6 +168,6 @@ for i in ret:
     ret0[datestring(i)] = ret[i]
 
 outputfilename = 'year-' + str(year) + '.json'
-with open('kalendars\\' + outputfilename, 'w') as fp:
+with open('kalendars/' + outputfilename, 'w') as fp:
     fp.write(json.dumps(ret0))
 print(outputfilename)
