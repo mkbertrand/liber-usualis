@@ -16,6 +16,8 @@ movables = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute())
 months = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/summer-autumn.json', 'r', encoding = ' utf-8').readlines()))
 sanctoral = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/kalendar.json', 'r', encoding = ' utf-8').readlines()))
 
+ranks = ["ferial","simple","semidouble","double","greater-double","double-ii-class","double-i-class"]
+
 def datestring(date0):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
 
@@ -125,20 +127,13 @@ def kalendar(year):
             buffer[date0] = [entry]
     
     #Octave and Vigil Processing
+    octavevigiltags = ["has-octave","has-special-octave","has-vigil","has-special-vigil"]
     for i in kal:
         for j in kal[i]:
             if "has-octave" in j["tags"] and not "has-special-octave" in j["tags"]:
                 for k in range(1,7):
                     entrystripped = copy.deepcopy(j)
-                    entrystripped["tags"].remove("has-octave")
-                    if ("double-i-class" in entrystripped["tags"]):
-                        entrystripped["tags"].remove("double-i-class")
-                    elif ("double-ii-class" in entrystripped["tags"]):
-                        entrystripped["tags"].remove("double-ii-class")
-                    if ("has-vigil" in entrystripped["tags"]):
-                        entrystripped["tags"].remove("has-vigil")
-                    if ("has-special-vigil" in entrystripped["tags"]):
-                        entrystripped["tags"].remove("has-special-vigil")
+                    entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                     entrystripped["tags"].append("semidouble")
                     entrystripped["tags"].append("day-" + str(k+1))
                     entrystripped["date"] = datestring(i + timedelta(days=k))
@@ -147,15 +142,7 @@ def kalendar(year):
                     del entrystripped["genitive-day"]
                     addbufferentry(i + timedelta(days=k), entrystripped)
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"].remove("has-octave")
-                if ("double-i-class" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("double-i-class")
-                elif ("double-ii-class" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("double-ii-class")
-                if ("has-vigil" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("has-vigil")
-                if ("has-special-vigil" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("has-special-vigil")
+                entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                 entrystripped["tags"].append("double")
                 entrystripped["tags"].append("octave-day")
                 entrystripped["date"] = datestring(i + timedelta(days=7))
@@ -164,11 +151,7 @@ def kalendar(year):
                 addbufferentry(i + timedelta(days=7), entrystripped)
             if "has-vigil" in j["tags"] and not "has-special-vigil" in j["tags"]:
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"].remove("has-vigil")
-                if ("double-i-class" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("double-i-class")
-                elif ("double-ii-class" in entrystripped["tags"]):
-                    entrystripped["tags"].remove("double-ii-class")
+                entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                 entrystripped["tags"].extend(["vigil","penitential","ferial"])
                 entrystripped["date"] = datestring(i - timedelta(days=1))
                 numerals = ['II','III','IV','V','VI','VII']
