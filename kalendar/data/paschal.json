@@ -366,8 +366,8 @@
 	},
 	{
 		"difference": 7,
-		"day": "Dominica in Albis in Octava Paschæ[NC]",
-		"tags": ["sunday-in-white","sunday","sunday-i-class","octave-day","week-i-easter"]
+		"day": "Dominica in Albis in Octava Paschæ",
+		"tags": ["sunday-in-white","sunday","double","sunday-i-class","octave-day","week-i-easter"]
 	},
 	{
 		"difference": 8,
@@ -402,227 +402,183 @@
 	{
 		"difference": 14,
 		"day": "Dominica II post Octavam Paschæ",
-		"tags": [
-			"sunday"
-		]
+		"tags": ["week-ii-easter","sunday","semidouble"]
 	},
 	{
 		"difference": 15,
 		"day": "Feria II infra Hebdomadam II post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-ii-easter","monday","ferial"]
 	},
 	{
 		"difference": 16,
 		"day": "Feria III infra Hebdomadam II post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-ii-easter","tuesday","ferial"]
 	},
 	{
 		"difference": 17,
 		"day": "Feria IV infra Hebdomadam II post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-ii-easter","wednesday","ferial"]
 	},
 	{
 		"difference": 18,
 		"day": "Feria V infra Hebdomadam II post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-ii-easter","thursday","ferial"]
 	},
 	{
 		"difference": 19,
 		"day": "Feria VI infra Hebdomadam II post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-ii-easter","friday","ferial"]
 	},
 	{
 		"difference": 20,
 		"day": "Sabbato infra Hebdomadam II post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-ii-easter","saturday","ferial"]
 	},
 	{
 		"difference": 21,
 		"day": "Dominica III post Octavam Paschæ",
-		"tags": [
-			"sunday"
-		]
+		"tags": ["week-iii-easter","sunday","semidouble"]
 	},
 	{
 		"difference": 22,
 		"day": "Feria II infra Hebdomadam III post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iii-easter","monday","ferial"]
 	},
 	{
 		"difference": 23,
 		"day": "Feria III infra Hebdomadam III post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iii-easter","tuesday","ferial"]
 	},
 	{
 		"difference": 24,
 		"day": "Feria IV infra Hebdomadam III post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iii-easter","wednesday","ferial"]
 	},
 	{
 		"difference": 25,
 		"day": "Feria V infra Hebdomadam III post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iii-easter","thursday","ferial"]
 	},
 	{
 		"difference": 26,
 		"day": "Feria VI infra Hebdomadam III post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iii-easter","friday","ferial"]
 	},
 	{
 		"difference": 27,
 		"day": "Sabbato infra Hebdomadam III post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iii-easter","saturday","ferial"]
 	},
 	{
 		"difference": 28,
 		"day": "Dominica IV post Octavam Paschæ",
-		"tags": [
-			"sunday"
-		]
+		"tags": ["week-iv-easter","sunday","semidouble"]
 	},
 	{
 		"difference": 29,
 		"day": "Feria II infra Hebdomadam IV post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iv-easter","monday","ferial"]
 	},
 	{
 		"difference": 30,
 		"day": "Feria III infra Hebdomadam IV post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iv-easter","tuesday","ferial"]
 	},
 	{
 		"difference": 31,
 		"day": "Feria IV infra Hebdomadam IV post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iv-easter","wednesday","ferial"]
 	},
 	{
 		"difference": 32,
 		"day": "Feria V infra Hebdomadam IV post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iv-easter","thursday","ferial"]
 	},
 	{
 		"difference": 33,
 		"day": "Feria VI infra Hebdomadam IV post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iv-easter","friday","ferial"]
 	},
 	{
 		"difference": 34,
 		"day": "Sabbato infra Hebdomadam IV post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-iv-easter","saturday","ferial"]
 	},
 	{
 		"difference": 35,
 		"day": "Dominica V post Octavam Paschæ",
-		"tags": [
-			"sunday"
-		]
+		"tags": ["week-v-easter","sunday","semidouble"]
 	},
 	{
 		"difference": 36,
 		"day": "Feria II infra Hebdomadam V post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-v-easter","monday","ferial"]
 	},
 	{
 		"difference": 37,
 		"day": "Feria III infra Hebdomadam V post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-v-easter","tuesday","ferial"]
 	},
 	{
 		"difference": 38,
 		"day": "Feria IV infra Hebdomadam V post Octavam Paschæ",
-		"tags": []
+		"tags": ["week-v-easter","wednesday","ferial"]
 	},
 	{
 		"difference": 39,
 		"day": "In Ascensione Domini",
-		"tags": []
-	},
-	{
-		"difference": 40,
-		"day": "Feria VI infra Octavam Ascensionis",
-		"tags": []
-	},
-	{
-		"difference": 41,
-		"day": "Sabbato infra Octavam Ascensionis",
-		"tags": []
-	},
-	{
-		"difference": 42,
-		"day": "Dominica infra Octavam Ascensionis",
-		"tags": [
-			"sunday"
-		]
-	},
-	{
-		"difference": 43,
-		"day": "Feria II infra Octavam Ascensionis",
-		"tags": []
-	},
-	{
-		"difference": 44,
-		"day": "Feria III infra Octavam Ascensionis",
-		"tags": []
-	},
-	{
-		"difference": 45,
-		"day": "Feria IV infra Octavam Ascensionis",
-		"tags": []
-	},
-	{
-		"difference": 46,
-		"day": "Octavæ Ascensionis",
-		"tags": []
+		"genitive-day":"Ascensionis",
+		"tags": ["ascension","double-i-class","has-octave","has-vigil","has-special-vigil"]
 	},
 	{
 		"difference": 47,
 		"day": "Feria VI post Octavam Ascensionis",
-		"tags": []
+		"tags": ["post-ascension","friday","semidouble"]
 	},
 	{
 		"difference": 48,
 		"day": "Sabbato in Vigilia Pentecostes",
-		"tags": []
+		"tags": ["vigilia-pentecostes","semidouble","saturday","post-ascension"]
 	},
 	{
 		"difference": 49,
-		"day": "Dominica Pentecostes[NC]",
-		"tags": ["sunday", "sunday-i-class"]
+		"day": "Dominica Pentecostes",
+		"tags": ["pentecost","double-i-class","sunday", "sunday-i-class","has-vigil","has-special-vigil","has-octave","has-special-octave"]
 	},
 	{
 		"difference": 50,
-		"day": "Die II infra Octavam Pentecostes[NC]",
-		"tags": []
+		"day": "Die II infra Octavam Pentecostes",
+		"tags": ["pentecost","double-i-class","monday","day-2"]
 	},
 	{
 		"difference": 51,
-		"day": "Die III infra Octavam Pentecostes[NC]",
-		"tags": []
+		"day": "Die III infra Octavam Pentecostes",
+		"tags": ["pentecost","double-i-class","tuesday","day-3"]
 	},
 	{
 		"difference": 52,
-		"day": "Feria IV infra Octavam Pentecostes[NF]",
-		"tags": []
+		"day": "Feria IV infra Octavam Pentecostes",
+		"tags": ["pentecost","semidouble","wednesday","day-4"]
 	},
 	{
 		"difference": 53,
-		"day": "Feria V infra Octavam Pentecostes[NF]",
-		"tags": []
+		"day": "Feria V infra Octavam Pentecostes",
+		"tags": ["pentecost","semidouble","thursday","day-5"]
 	},
 	{
 		"difference": 54,
-		"day": "Feria VI infra Octavam Pentecostes[NF]",
-		"tags": []
+		"day": "Feria VI infra Octavam Pentecostes",
+		"tags": ["pentecost","semidouble","friday","day-6"]
 	},
 	{
 		"difference": 55,
-		"day": "Sabbato infra Octavam Pentecostes[NF]",
-		"tags": []
+		"day": "Sabbato infra Octavam Pentecostes",
+		"tags": ["pentecost","semidouble","saturday","day-7"]
 	},
 	{
 		"difference": 56,
-		"day": "Dominica Trinitatis[NF]",
-		"tags": ["sunday", "sunday-i-class"]
+		"day": "Dominica Trinitatis",
+		"tags": ["trinity","double-ii-class","sunday", "sunday-i-class","octave-day"]
 	},
 	{
 		"difference": 57,
