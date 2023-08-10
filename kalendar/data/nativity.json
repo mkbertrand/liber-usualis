@@ -3,18 +3,18 @@
 	{
 		"date":"12-24",
 		"day":"Vigilia Nativitatis D.N.J.Chr.",
-		"tags":["vigilia-nativitatis","double","vigil","penitential","non-transferable"]
+		"tags":["vigilia-nativitatis","double","vigil","penitential","no-transfer"]
 	},
 	{
 		"date":"12-25",
 		"day":"Nativitas D.N.J.Chr.",
-		"octaval-day-name":"Nativitatis",
-		"tags":["nativitas","double-i-class","octave","special-octave"]
+		"genitive-day":"Nativitatis",
+		"tags":["nativitas","double-i-class","has-octave","special-octave","has-vigil","has-special-vigil"]
 	},
 	{
 		"date":"12-26",
 		"day":"S. Stephani Protomart.",
-		"tags":["stephanus","double-ii-class","martyr","octave","special-octave"]
+		"tags":["stephanus","double-ii-class","martyr","has-octave","has-special-octave"]
 	},
 	{
 		"date":"12-26",
@@ -29,7 +29,7 @@
 	{
 		"date":"12-27",
 		"day":"S. Joannis Apostoli et Evangelistæ",
-		"tags":["joannes-apostolus","double-ii-class","apostle","evangelist","octave","special-octave"]
+		"tags":["joannes-apostolus","double-ii-class","apostle","evangelist","has-octave","has-special-octave"]
 	},
 	{
 		"date":"12-27",
@@ -44,7 +44,7 @@
 	{
 		"date":"12-28",
 		"day":"Ss. Innocentium Mart.",
-		"tags":["innocentes","double-ii-class","martyrs","octave","special-octave"]
+		"tags":["innocentes","double-ii-class","martyrs","has-octave","has-special-octave"]
 	},
 	{
 		"date":"12-28",
@@ -174,7 +174,7 @@
 	{
 		"date":"01-06",
 		"day":"Epiphania Domini",
-		"octaval-day-name":"Epiphaniæ",
-		"tags":["epiphania","double-i-class","octave"]
+		"genitive-day":"Epiphaniæ",
+		"tags":["epiphania","double-i-class","has-octave","has-vigil","has-special-vigil"]
 	}
 ]

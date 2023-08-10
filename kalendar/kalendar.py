@@ -120,39 +120,63 @@ def kalendar(year):
         else:
             buffer[date0] = [entry]
     
-    #Octave Processing
+    #Octave and Vigil Processing
     for i in kal:
         for j in kal[i]:
-            if "octave" in j["tags"] and not "special-octave" in j["tags"]:
+            if "has-octave" in j["tags"] and not "has-special-octave" in j["tags"]:
                 for k in range(1,7):
                     entrystripped = copy.deepcopy(j)
-                    entrystripped["tags"].remove("octave")
+                    entrystripped["tags"].remove("has-octave")
                     if ("double-i-class" in entrystripped["tags"]):
                         entrystripped["tags"].remove("double-i-class")
                     elif ("double-ii-class" in entrystripped["tags"]):
                         entrystripped["tags"].remove("double-ii-class")
+                    if ("has-vigil" in entrystripped["tags"]):
+                        entrystripped["tags"].remove("has-vigil")
+                    if ("has-special-vigil" in entrystripped["tags"]):
+                        entrystripped["tags"].remove("has-special-vigil")
                     entrystripped["tags"].append("semidouble")
                     entrystripped["tags"].append("day-" + str(k+1))
                     entrystripped["date"] = datestring(i + timedelta(days=k))
                     numerals = ['II','III','IV','V','VI','VII']
-                    entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["octaval-day-name"]
-                    del entrystripped["octaval-day-name"]
+                    entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
+                    del entrystripped["genitive-day"]
                     addbufferentry(i + timedelta(days=k), entrystripped)
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"].remove("octave")
+                entrystripped["tags"].remove("has-octave")
                 if ("double-i-class" in entrystripped["tags"]):
                     entrystripped["tags"].remove("double-i-class")
                 elif ("double-ii-class" in entrystripped["tags"]):
                     entrystripped["tags"].remove("double-ii-class")
+                if ("has-vigil" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("has-vigil")
+                if ("has-special-vigil" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("has-special-vigil")
                 entrystripped["tags"].append("double")
                 entrystripped["tags"].append("octave-day")
                 entrystripped["date"] = datestring(i + timedelta(days=7))
-                entrystripped["day"] = "In Octava " + entrystripped["octaval-day-name"]
-                del entrystripped["octaval-day-name"]
+                entrystripped["day"] = "In Octava " + entrystripped["genitive-day"]
+                del entrystripped["genitive-day"]
                 addbufferentry(i + timedelta(days=7), entrystripped)
+            if "has-vigil" in j["tags"] and not "has-special-vigil" in j["tags"]:
+                entrystripped = copy.deepcopy(j)
+                entrystripped["tags"].remove("has-vigil")
+                if ("double-i-class" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("double-i-class")
+                elif ("double-ii-class" in entrystripped["tags"]):
+                    entrystripped["tags"].remove("double-ii-class")
+                entrystripped["tags"].extend(["vigil","penitential","ferial"])
+                entrystripped["date"] = datestring(i - timedelta(days=1))
+                numerals = ['II','III','IV','V','VI','VII']
+                entrystripped["day"] = "Vigilia " + entrystripped["genitive-day"]
+                del entrystripped["genitive-day"]
+                addbufferentry(i - timedelta(days=1), entrystripped)
+    
     for i in buffer:
         for j in buffer[i]:
             addentry(i, j)
+    
+    
     
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing

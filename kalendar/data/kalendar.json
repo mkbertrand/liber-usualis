@@ -55,15 +55,10 @@
 		"tags":["cyriacus-largus-smaragdus","martyrs","semidouble"]
 	},
 	{
-		"date":"08-09",
-		"day":"Vigilia S. Laurentii Mart.",
-		"tags":["vigilia-laurentius","vigil","penitential","ferial"]
-	},
-	{
 		"date":"08-10",
 		"day":"S. Laurentii Mart.",
-		"octaval-day-name":"Laurentii",
-		"tags":["laurentius","martyr","double-ii-class","octave"]
+		"genitive-day":"S. Laurentii",
+		"tags":["laurentius","martyr","double-ii-class","has-octave","has-vigil"]
 	},
 	{
 		"date":"08-11",
@@ -82,19 +77,14 @@
 	},
 	{
 		"date":"08-14",
-		"day":"Vigilia Assumptionis B.M.V.",
-		"tags":["vigilia-assumptionis","vigil","penitential","ferial"]
-	},
-	{
-		"date":"08-14",
 		"day":"S. Eusebii Conf.",
 		"tags":["eusebius","commemoration","confessor"]
 	},
 	{
 		"date":"08-15",
 		"day":"Assumptio B.M.V.",
-		"octaval-day-name":"Assumptionis",
-		"tags":["assumptio","double-i-class","mary","octave"]
+		"genitive-day":"Assumptionis",
+		"tags":["assumptio","double-i-class","mary","has-octave","has-vigil"]
 	},
 	{
 		"date":"08-16",
@@ -127,14 +117,10 @@
 		"tags":["philippus-benitius","confessor","double"]
 	},
 	{
-		"date":"08-23",
-		"day":"Vigilia S. Bartholomæi Apost.",
-		"tags":["vigilia-Bartholomaei","vigil","ferial","penitential"]
-	},
-	{
 		"date":"08-24",
 		"day":"S. Bartholomaei Apost.",
-		"tags":["bartholomaeus","double-ii-class","apostle"]
+		"genitive-day":"S. Bartholomaei",
+		"tags":["bartholomaeus","double-ii-class","apostle","has-vigil"]
 	},
 	{
 		"date":"08-25",
