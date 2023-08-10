@@ -42,7 +42,9 @@ def kalendar(year):
     epiphanysunday = sundayafter(date(year, 1, 6))
     
     psundayomission = False
+    xxiiipentecostentry = {}
     esundayomission = False
+    omittedepiphanyentry = {}
     
     #Advent Cycle
     for i in adventcycle:
@@ -59,10 +61,11 @@ def kalendar(year):
     for i in paschalcycle:
         entry = i
         date0 = easter + timedelta(days=i["difference"])
+        del entry["difference"]
         if (date0 == xxivpentecost):
             psundayomission = True
+            xxiiipentecostentry = entry
             break
-        del entry["difference"]
         #entry["date"] = datestring(date0)
         addentry(date0, entry)
     
@@ -79,6 +82,7 @@ def kalendar(year):
                 addentry(sunday + timedelta(days=j), epiphanycycle[5 - i][j])
         else:
             esundayomission = True
+            omittedepiphanyentry = epiphanycycle[5 - i][j]
 
     #Nativity & Epiphany
     for i in nativitycycle:
@@ -176,15 +180,53 @@ def kalendar(year):
         for j in buffer[i]:
             addentry(i, j)
     
+    def hasmajorfeast(date0):
+        for i in kal[date0]:
+            if ("semidouble" in i["tags"]):
+                return True
+            elif ("double" in i["tags"]):
+                return True
+            elif ("greater-double" in i["tags"]):
+                return True
+            elif ("double-ii-class" in i["tags"]):
+                return True
+            elif ("double-i-class" in i["tags"]):
+                return True
+        return False
     
-    
+    #23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
+    if psundayomission:
+        xxiiipentecostentry["tags"].append("transfer")
+        i = 1
+        while i < 7:
+            if (not hasmajorfeast(xxivpentecost - timedelta(days=i))):
+                addentry(xxivpentecost - timedelta(days=i), xxiiipentecostentry)
+                break
+            else:
+                i += 1
+        if (i == 7):
+            xxiiipentecostentry["tags"].append("commemoration")
+            addentry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
+    if esundayomission:
+        omittedepiphanyentry["tags"].append("transfer")
+        septuagesima = easter - timedelta(days=63)
+        i = 1
+        while i < 7:
+            if (not hasmajorfeast(septuagesima - timedelta(days=i))):
+                addentry(septuagesima - timedelta(days=i), omittedepiphanyentry)
+                break
+            else:
+                i += 1
+        if (i == 7):
+            omittedepiphanyentry["tags"].append("commemoration")
+            addentry(septuagesima - timedelta(days=1), omittedepiphanyentry)
+            
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing
-    #todo Rank Resolution
     
     return dict(sorted(kal.items()))
 
-year = 2023
+year = 1943
 ret = kalendar(year)
 ret0 = {}
 
