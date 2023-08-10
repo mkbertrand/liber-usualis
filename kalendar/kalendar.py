@@ -128,6 +128,7 @@ def kalendar(year):
     
     #Octave and Vigil Processing
     octavevigiltags = ["has-octave","has-special-octave","has-vigil","has-special-vigil"]
+    numerals = ['II','III','IV','V','VI','VII']
     for i in kal:
         for j in kal[i]:
             if "has-octave" in j["tags"] and not "has-special-octave" in j["tags"]:
@@ -137,7 +138,6 @@ def kalendar(year):
                     entrystripped["tags"].append("semidouble")
                     entrystripped["tags"].append("day-" + str(k+1))
                     entrystripped["date"] = datestring(i + timedelta(days=k))
-                    numerals = ['II','III','IV','V','VI','VII']
                     entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
                     del entrystripped["genitive-day"]
                     addbufferentry(i + timedelta(days=k), entrystripped)
@@ -154,7 +154,6 @@ def kalendar(year):
                 entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                 entrystripped["tags"].extend(["vigil","penitential","ferial"])
                 entrystripped["date"] = datestring(i - timedelta(days=1))
-                numerals = ['II','III','IV','V','VI','VII']
                 entrystripped["day"] = "Vigilia " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
                 addbufferentry(i - timedelta(days=1), entrystripped)
@@ -163,26 +162,12 @@ def kalendar(year):
         for j in buffer[i]:
             addentry(i, j)
     
-    def hasmajorfeast(date0):
-        for i in kal[date0]:
-            if ("semidouble" in i["tags"]):
-                return True
-            elif ("double" in i["tags"]):
-                return True
-            elif ("greater-double" in i["tags"]):
-                return True
-            elif ("double-ii-class" in i["tags"]):
-                return True
-            elif ("double-i-class" in i["tags"]):
-                return True
-        return False
-    
     #23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if psundayomission:
         xxiiipentecostentry["tags"].append("transfer")
         i = 1
         while i < 7:
-            if (not hasmajorfeast(xxivpentecost - timedelta(days=i))):
+            if (not any(any(j in i["tags"] for j in ranks[2:]) for i in kal[xxivpentecost - timedelta(days=i)])):
                 addentry(xxivpentecost - timedelta(days=i), xxiiipentecostentry)
                 break
             else:
@@ -195,7 +180,7 @@ def kalendar(year):
         septuagesima = easter - timedelta(days=63)
         i = 1
         while i < 7:
-            if (not hasmajorfeast(septuagesima - timedelta(days=i))):
+            if (not any(any(j in i["tags"] for j in ranks[2:]) for i in kal[septuagesima - timedelta(days=i)])):
                 addentry(septuagesima - timedelta(days=i), omittedepiphanyentry)
                 break
             else:
