@@ -1,5 +1,127 @@
 [
 	{
+		"date":"06-02",
+		"day":"Ss. Marcellini, Petri, atque Erasmi Martyrum",
+		"tags":["marcellinus-petrus-erasmus","simple","martyrs"]
+	},
+	{
+		"date":"06-04",
+		"day":"S. Francisci Caracciolo Cf.",
+		"tags":["franciscus-caracciolo","double","confessor"]
+	},
+	{
+		"date":"06-05",
+		"day":"S. Bonifacii Ep. et Mart.",
+		"tags":["bonifacius","double","martyr-bishop"]
+	},
+	{
+		"date":"06-06",
+		"day":"S. Norberti Ep. et Conf.",
+		"tags":["norbertus","double","confessor-bishop"]
+	},
+	{
+		"date":"06-09",
+		"day":"Ss. Primi et Feliciani Mm.",
+		"tags":["primus-felicianus","simple","martyrs"]
+	},
+	{
+		"date":"06-10",
+		"day":"S. Margaritæ Reginæ Scotiæ Viduæ",
+		"tags":["margarita","semidouble","widow"]
+	},
+	{
+		"date":"06-11",
+		"day":"S. Barnabæ Apost.",
+		"tags":["barnabas","greater-double","apostle","martyr"]
+	},
+	{
+		"date":"06-12",
+		"day":"S. Joannis a S. Facundo Cf.",
+		"tags":["joannis-facundo","double","confessor"]
+	},
+	{
+		"date":"06-12",
+		"day":"Ss. Basilidis et Soc. Mm.",
+		"tags":["basilides","commemoration","martyrs"]
+	},
+	{
+		"date":"06-13",
+		"day":"S. Antonii de Padua Conf.",
+		"tags":["antonius-padua","double","confessor"]
+	},
+	{
+		"date":"06-14",
+		"day":"S. Basilii Magni Ep., Cf. et Eccl. Doct.",
+		"tags":["basilius-magnus","double","confessor-bishop","doctor"]
+	},
+	{
+		"date":"06-15",
+		"day":"Ss. Viti, Modesti, atque Crescentiæ Martyrum",
+		"tags":["vitus-modestus-crescentia","simple","martyrs"]
+	},
+	{
+		"date":"06-18",
+		"day":"Ss. Marci et Marcelliani Mm.",
+		"tags":["marcus-marcellianus","simple","martyrs"]
+	},
+	{
+		"date":"06-19",
+		"day":"S. Julianæ de Falconeriis Virg.",
+		"tags":["juliana-falconeriis","double","virgin"]
+	},
+	{
+		"date":"06-19",
+		"day":"Ss. Gervasii et Protasii Martyrum",
+		"tags":["gervasius-protasius","commemoration","martyrs"]
+	},
+	{
+		"date":"06-20",
+		"day":"S. Silverii Papæ et Mart.",
+		"tags":["silverius","simple","pope","martyr-bishop"]
+	},
+	{
+		"date":"06-21",
+		"day":"S. Aloysii Gonzagæ Conf.",
+		"tags":["aloysius","double","confessor"]
+	},
+	{
+		"date":"06-22",
+		"day":"S. Paulinus Episc. et Conf.",
+		"tags":["paulinus","simple","confessor-bishop"]
+	},
+	{
+		"date":"06-24",
+		"day":"Nativitas S. Joannis Baptistæ",
+		"genitive-day":"Nativitatis S. Joannis Baptistæ",
+		"tags":["nativitas-joannis-baptistae","double-i-class","has-octave","has-vigil"]
+	},
+	{
+		"date":"06-25",
+		"day":"S. Gulielmi Abbatis",
+		"tags":["gulielmus","double","abbot"]
+	},
+	{
+		"date":"06-26",
+		"day":"Ss. Joannis et Pauli Mm.",
+		"tags":["joannes-paulus","double","martyrs"]
+	},
+	{
+		"date":"06-28",
+		"day":"S. Leonis II Papæ et Conf.",
+		"tags":["leo-ii","semidouble","confessor-bishop","pope"]
+	},
+	{
+		"date":"06-29",
+		"day":"Ss. Petri et Pauli Ap.",
+		"genitive-day":"Ss. Petri et Pauli",
+		"tags":["petrus-paulus","double-i-class,","apostles","has-octave","has-vigil","martyrs"]
+	},
+	{
+		"date":"06-30",
+		"day":"Commemoratio S. Pauli Apost.",
+		"tags":["commemoratio-pauli","greater-double","martyr","apostle"]
+	},
+	{
 		"date":"08-01",
 		"day":"S. Petri ad Vincula",
 		"tags":["petrus-ad-vincula","greater-double"]
@@ -130,7 +252,7 @@
 	{
 		"date":"08-26",
 		"day":"S. Zephyrini Papæ et Mart.",
-		"tags":["zephyrinus","pope-martyr","simple"]
+		"tags":["zephyrinus","pope","martyr-bishop","simple"]
 	},
 	{
 		"date":"08-27",
@@ -150,7 +272,7 @@
 	{
 		"date":"08-29",
 		"day":"Decollatio S. Joannis Bapt.",
-		"tags":["decollatio-joannis","greater-double","martyr"]
+		"tags":["decollatio-joannis-baptistae","greater-double","martyr"]
 	},
 	{
 		"date":"08-29",
