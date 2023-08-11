@@ -1,9 +1,7 @@
 from datetime import datetime
 from datetime import date
 from datetime import timedelta
-import math
 import pathlib
-import html.entities
 import json
 import copy
 from kalendar import pascha
