@@ -47,287 +47,272 @@
 	{
 		"difference": -54,
 		"day": "Feria III infra Hebdomadam Sexagesimæ",
-		"tags": []
+		"tags": ["ferial","tuesday","week-sexagesima","penitential"]
 	},
 	{
 		"difference": -53,
 		"day": "Feria IV infra Hebdomadam Sexagesimæ",
-		"tags": []
+		"tags": ["ferial","wednesday","week-sexagesima","penitential"]
 	},
 	{
 		"difference": -52,
 		"day": "Feria V infra Hebdomadam Sexagesimæ",
-		"tags": []
+		"tags": ["ferial","thursday","week-sexagesima","penitential"]
 	},
 	{
 		"difference": -51,
 		"day": "Feria VI infra Hebdomadam Sexagesimæ",
-		"tags": []
+		"tags": ["ferial","friday","week-sexagesima","penitential"]
 	},
 	{
 		"difference": -50,
 		"day": "Sabbato infra Hebdomadam Sexagesimæ",
-		"tags": []
+		"tags": ["ferial","saturday","week-sexagesima","penitential"]
 	},
 	{
 		"difference": -49,
 		"day": "Dominica Quinquasesima",
-		"tags": [
-			"sunday",
-			"sunday-ii-class"
-		]
+		"tags": ["semidouble","sunday","sunday-ii-class","week-quinquagesima","penitential"]
 	},
 	{
 		"difference": -48,
 		"day": "Feria II infra Hebdomadam Quinquasesimæ",
-		"tags": []
+		"tags": ["ferial","monday","week-quinquagesima","penitential"]
 	},
 	{
 		"difference": -47,
 		"day": "Feria III infra Hebdomadam Quinquasesimæ",
-		"tags": []
+		"tags": ["ferial","tuesday","week-quinquagesima","penitential"]
 	},
 	{
 		"difference": -46,
 		"day": "Feria IV Cinerum",
-		"tags": []
+		"tags": ["cinerum","ferial","wednesday","no-concurrence","penitential","no-transfer"]
 	},
 	{
 		"difference": -45,
 		"day": "Feria V post Cineres",
-		"tags": []
+		"tags": ["cinerum","ferial","thursday","penitential"]
 	},
 	{
 		"difference": -44,
 		"day": "Feria VI post Cineres",
-		"tags": []
+		"tags": ["cinerum","ferial","friday","penitential"]
 	},
 	{
 		"difference": -43,
 		"day": "Sabbato post Cineres",
-		"tags": []
+		"tags": ["cinerum","ferial","saturday","penitential"]
 	},
 	{
 		"difference": -42,
 		"day": "Dominica I in Quadragesima",
-		"tags": [
-			"sunday",
-			"sunday-i-class"
-		]
+		"tags": ["week-i-lent","sunday","sunday-i-class","semidouble","penitential"]
 	},
 	{
 		"difference": -41,
 		"day": "Feria II infra Hebdomadam I in Quadragesima",
-		"tags": []
+		"tags": ["week-i-lent","monday","ferial","penitential"]
 	},
 	{
 		"difference": -40,
 		"day": "Feria III infra Hebdomadam I in Quadragesima",
-		"tags": []
+		"tags": ["week-i-lent","tuesday","ferial","penitential"]
 	},
 	{
 		"difference": -39,
 		"day": "Feria IV infra Hebdomadam I in Quadragesima",
-		"tags": []
+		"tags": ["week-i-lent","wednesday","ferial","penitential"]
 	},
 	{
 		"difference": -38,
 		"day": "Feria V infra Hebdomadam I in Quadragesima",
-		"tags": []
+		"tags": ["week-i-lent","thursday","ferial","penitential"]
 	},
 	{
 		"difference": -37,
 		"day": "Feria VI infra Hebdomadam I in Quadragesima",
-		"tags": []
+		"tags": ["week-i-lent","friday","ferial","penitential"]
 	},
 	{
 		"difference": -36,
 		"day": "Sabbato infra Hebdomadam I in Quadragesima",
-		"tags": []
+		"tags": ["week-i-lent","saturday","ferial","penitential"]
 	},
 	{
 		"difference": -35,
 		"day": "Dominica II in Quadragesima",
-		"tags": [
-			"sunday",
-			"sunday-ii-class"
-		]
+		"tags": ["week-ii-lent","sunday","sunday-ii-class","semidouble","penitential"]
 	},
 	{
 		"difference": -34,
 		"day": "Feria II infra Hebdomadam II in Quadragesima",
-		"tags": []
+		"tags": ["week-ii-lent","monday","ferial","penitential"]
 	},
 	{
 		"difference": -33,
 		"day": "Feria III infra Hebdomadam II in Quadragesima",
-		"tags": []
+		"tags": ["week-ii-lent","tuesday","ferial","penitential"]
 	},
 	{
 		"difference": -32,
 		"day": "Feria IV infra Hebdomadam II in Quadragesima",
-		"tags": []
+		"tags": ["week-ii-lent","wednesday","ferial","penitential"]
 	},
 	{
 		"difference": -31,
 		"day": "Feria V infra Hebdomadam II in Quadragesima",
-		"tags": []
+		"tags": ["week-ii-lent","thursday","ferial","penitential"]
 	},
 	{
 		"difference": -30,
 		"day": "Feria VI infra Hebdomadam II in Quadragesima",
-		"tags": []
+		"tags": ["week-ii-lent","friday","ferial","penitential"]
 	},
 	{
 		"difference": -29,
 		"day": "Sabbato infra Hebdomadam II in Quadragesima",
-		"tags": []
+		"tags": ["week-ii-lent","saturday","ferial","penitential"]
 	},
 	{
 		"difference": -28,
 		"day": "Dominica III in Quadragesima",
-		"tags": [
-			"sunday",
-			"sunday-ii-class"
-		]
+		"tags": ["week-iii-lent","sunday","sunday-ii-class","semidouble","penitential"]
 	},
 	{
 		"difference": -27,
 		"day": "Feria II infra Hebdomadam III in Quadragesima",
-		"tags": []
+		"tags": ["week-iii-lent","monday","ferial","penitential"]
 	},
 	{
 		"difference": -26,
 		"day": "Feria III infra Hebdomadam III in Quadragesima",
-		"tags": []
+		"tags": ["week-iii-lent","tuesday","ferial","penitential"]
 	},
 	{
 		"difference": -25,
 		"day": "Feria IV infra Hebdomadam III in Quadragesima",
-		"tags": []
+		"tags": ["week-iii-lent","wednesday","ferial","penitential"]
 	},
 	{
 		"difference": -24,
 		"day": "Feria V infra Hebdomadam III in Quadragesima",
-		"tags": []
+		"tags": ["week-iii-lent","thursday","ferial","penitential"]
 	},
 	{
 		"difference": -23,
 		"day": "Feria VI infra Hebdomadam III in Quadragesima",
-		"tags": []
+		"tags": ["week-iii-lent","friday","ferial","penitential"]
 	},
 	{
 		"difference": -22,
 		"day": "Sabbato infra Hebdomadam III in Quadragesima",
-		"tags": []
+		"tags": ["week-iii-lent","saturday","ferial","penitential"]
 	},
 	{
 		"difference": -21,
 		"day": "Dominica IV in Quadragesima",
-		"tags": [
-			"sunday",
-			"sunday-ii-class"
-		]
+		"tags": ["week-iv-lent","sunday","sunday-ii-class","semidouble","penitential"]
 	},
 	{
 		"difference": -20,
 		"day": "Feria II infra Hebdomadam IV in Quadragesima",
-		"tags": []
+		"tags": ["week-iv-lent","monday","ferial","penitential"]
 	},
 	{
 		"difference": -19,
 		"day": "Feria III infra Hebdomadam IV in Quadragesima",
-		"tags": []
+		"tags": ["week-iv-lent","tuesday","ferial","penitential"]
 	},
 	{
 		"difference": -18,
 		"day": "Feria IV infra Hebdomadam IV in Quadragesima",
-		"tags": []
+		"tags": ["week-iv-lent","wednesday","ferial","penitential"]
 	},
 	{
 		"difference": -17,
 		"day": "Feria V infra Hebdomadam IV in Quadragesima",
-		"tags": []
+		"tags": ["week-iv-lent","thursday","ferial","penitential"]
 	},
 	{
 		"difference": -16,
 		"day": "Feria VI infra Hebdomadam IV in Quadragesima",
-		"tags": []
+		"tags": ["week-iv-lent","friday","ferial","penitential"]
 	},
 	{
 		"difference": -15,
 		"day": "Sabbato infra Hebdomadam IV in Quadragesima",
-		"tags": []
+		"tags": ["week-iv-lent","saturday","ferial","penitential"]
 	},
 	{
 		"difference": -14,
 		"day": "Dominica de Passione",
-		"tags": ["passion-week","sunday","semidouble","sunday-i-class"]
+		"tags": ["passion-week","sunday","semidouble","sunday-i-class","penitential"]
 	},
 	{
 		"difference": -13,
 		"day": "Feria II infra Hebdomadam Passionis",
-		"tags": ["passion-week","monday","ferial"]
+		"tags": ["passion-week","monday","ferial","penitential"]
 	},
 	{
 		"difference": -12,
 		"day": "Feria III infra Hebdomadam Passionis",
-		"tags": ["passion-week","tuesday","ferial"]
+		"tags": ["passion-week","tuesday","ferial","penitential"]
 	},
 	{
 		"difference": -11,
 		"day": "Feria IV infra Hebdomadam Passionis",
-		"tags": ["passion-week","wednesday","ferial"]
+		"tags": ["passion-week","wednesday","ferial","penitential"]
 	},
 	{
 		"difference": -10,
 		"day": "Feria V infra Hebdomadam Passionis",
-		"tags": ["passion-week","thursday","ferial"]
+		"tags": ["passion-week","thursday","ferial","penitential"]
 	},
 	{
 		"difference": -9,
 		"day": "Feria VI infra Hebdomadam Passionis",
-		"tags": ["passion-week","friday","ferial"]
+		"tags": ["passion-week","friday","ferial","penitential"]
 	},
 	{
 		"difference": -8,
 		"day": "Sabbato infra Hebdomadam Passionis",
-		"tags": ["passion-week","saturday","ferial"]
+		"tags": ["passion-week","saturday","ferial","penitential"]
 	},
 	{
 		"difference": -7,
 		"day": "Dominica in Palmis",
-		"tags": ["palm-sunday","holy-week","sunday","semidouble","sunday-i-class"]
+		"tags": ["palm-sunday","holy-week","sunday","semidouble","sunday-i-class","penitential"]
 	},
 	{
 		"difference": -6,
 		"day": "Feria II Majoris Hebdomadæ",
-		"tags": ["holy-week","monday","ferial","no-concurrence"]
+		"tags": ["holy-week","monday","ferial","no-concurrence","penitential"]
 	},
 	{
 		"difference": -5,
 		"day": "Feria III Majoris Hebdomadæ",
-		"tags": ["holy-week","tuesday","ferial","no-concurrence"]
+		"tags": ["holy-week","tuesday","ferial","no-concurrence","penitential"]
 	},
 	{
 		"difference": -4,
 		"day": "Feria IV Majoris Hebdomadæ",
-		"tags": ["holy-week","wednesday","ferial","no-concurrence"]
+		"tags": ["holy-week","wednesday","ferial","no-concurrence","penitential"]
 	},
 	{
 		"difference": -3,
 		"day": "Feria V in Cena Domini",
-		"tags": ["holy-week","triduum","last-supper","thursday","ferial","no-concurrence"]
+		"tags": ["holy-week","triduum","last-supper","thursday","ferial","no-concurrence","penitential"]
 	},
 	{
 		"difference": -2,
 		"day": "Feria VI in Parasceve",
-		"tags": ["holy-week","triduum","good-friday","friday","ferial","no-concurrence"]
+		"tags": ["holy-week","triduum","good-friday","friday","ferial","no-concurrence","penitential"]
 	},
 	{
 		"difference": -1,
 		"day": "Sabbato Sancto",
-		"tags": ["holy-week","triduum","holy-saturday","saturday","ferial","vigil","no-concurrence"]
+		"tags": ["holy-week","triduum","holy-saturday","saturday","ferial","vigil","no-concurrence","penitential"]
 	},
 	{
 		"difference": 0,
