@@ -23,7 +23,7 @@ class SearchResult:
         self.date = date
         self.feast = feast
     def __str__(self):
-        return self.date + ":" + self.feast
+        return str(self.date) + ":" + str(self.feast)
 
 def datestring(date0):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
@@ -67,17 +67,19 @@ def kalendar(year):
     #Will not work as intended if multiple matches are found for the tags
     #If match is False there will be no mention that there was a feast in the original pre-tranfer date
     def transfer(tags, target, mention):
-        match = all_tags(kal,tags)
-        feast = match.values()[0]
-        feast["tags"].append("transfer")
-        addentry(target, feast)
-        for i in range(0,len(kal[match.keys()[0]])):
-            if kal[match.keys()[0]][i] == match.values()[0]:
+        match = unique_search(kal,tags)
+        newfeast = copy.deepcopy(match.feast)
+        newfeast["tags"].append("transfer")
+        addentry(target, newfeast)
+        for i in range(0,len(kal[match.date])):
+            if all(j in kal[match.date][i]["tags"] for j in tags):
                 if (mention):
-                    kal[match.keys()[0]][i]["tags"].append("transfer-original")
-                    kal[match.keys()[0]][i]["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), kal[match.keys()[0]][i]["tags"]))
+                    oldfeast = copy.deepcopy(kal[match.date][i])
+                    oldfeast["tags"].append("transfer-original")
+                    oldfeast["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), oldfeast["tags"]))
+                    kal[match.date] = oldfeast
                 else:
-                    kal[match.keys()[0]].remove(i)
+                    kal[match.date].remove(i)
                 break
                 
         
@@ -241,7 +243,14 @@ def kalendar(year):
         if (i == 7):
             omittedepiphanyentry["tags"].append("commemoration")
             addentry(septuagesima - timedelta(days=1), omittedepiphanyentry)
-            
+    
+    #Transfers
+    sjb = unique_search(kal, ["nativitas-joannis-baptistae","double-i-class"])
+    corpuschristi = unique_search(kal, ["corpus-christi","double-i-class"])
+    #N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
+    if sjb.date == corpuschristi.date:
+        transfer(["nativitas-joannis-baptistae","double-i-class"], date(year, 6, 25), True)
+        
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing
     
