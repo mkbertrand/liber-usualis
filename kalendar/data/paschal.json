@@ -528,12 +528,12 @@
 		"difference": 39,
 		"day": "In Ascensione Domini",
 		"genitive-day":"Ascensionis",
-		"tags": ["ascension","double-i-class","has-octave","has-vigil","has-special-vigil"]
+		"tags": ["ascensio","double-i-class","has-octave","has-vigil","has-special-vigil"]
 	},
 	{
 		"difference": 47,
 		"day": "Feria VI post Octavam Ascensionis",
-		"tags": ["post-ascension","friday","semidouble"]
+		"tags": ["post-ascensione","friday","semidouble"]
 	},
 	{
 		"difference": 48,
@@ -543,42 +543,42 @@
 	{
 		"difference": 49,
 		"day": "Dominica Pentecostes",
-		"tags": ["pentecost","double-i-class","sunday", "sunday-i-class","has-vigil","has-special-vigil","has-octave","has-special-octave"]
+		"tags": ["pentecostes","double-i-class","sunday", "sunday-i-class","has-vigil","has-special-vigil","has-octave","has-special-octave"]
 	},
 	{
 		"difference": 50,
 		"day": "Die II infra Octavam Pentecostes",
-		"tags": ["pentecost","double-i-class","monday","day-2","no-concurrence"]
+		"tags": ["pentecostes","double-i-class","monday","day-2","no-concurrence"]
 	},
 	{
 		"difference": 51,
 		"day": "Die III infra Octavam Pentecostes",
-		"tags": ["pentecost","double-i-class","tuesday","day-3","no-concurrence"]
+		"tags": ["pentecostes","double-i-class","tuesday","day-3","no-concurrence"]
 	},
 	{
 		"difference": 52,
 		"day": "Feria IV infra Octavam Pentecostes",
-		"tags": ["pentecost","semidouble","wednesday","day-4","no-concurrence"]
+		"tags": ["pentecostes","semidouble","wednesday","day-4","no-concurrence"]
 	},
 	{
 		"difference": 53,
 		"day": "Feria V infra Octavam Pentecostes",
-		"tags": ["pentecost","semidouble","thursday","day-5","no-concurrence"]
+		"tags": ["pentecostes","semidouble","thursday","day-5","no-concurrence"]
 	},
 	{
 		"difference": 54,
 		"day": "Feria VI infra Octavam Pentecostes",
-		"tags": ["pentecost","semidouble","friday","day-6","no-concurrence"]
+		"tags": ["pentecostes","semidouble","friday","day-6","no-concurrence"]
 	},
 	{
 		"difference": 55,
 		"day": "Sabbato infra Octavam Pentecostes",
-		"tags": ["pentecost","semidouble","saturday","day-7","no-concurrence"]
+		"tags": ["pentecostes","semidouble","saturday","day-7","no-concurrence"]
 	},
 	{
 		"difference": 56,
 		"day": "Dominica Trinitatis",
-		"tags": ["trinity","double-ii-class","sunday","sunday-i-class","octave-day"]
+		"tags": ["trinitas","double-ii-class","sunday","sunday-i-class","octave-day"]
 	},
 	{
 		"difference": 57,
