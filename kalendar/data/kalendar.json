@@ -47,7 +47,7 @@
 	{
 		"date":"02-09",
 		"day":"S. Cyrilli Episc. Alexandrini, Cf. et Eccl. Doct.",
-		"tags":["cyrillus","double","confessor-bishop","doctor"]
+		"tags":["cyrillus-alexandrini","double","confessor-bishop","doctor"]
 	},
 	{
 		"date":"02-09",
@@ -89,6 +89,71 @@
 		"day":"S. Mathiæ Apostoli",
 		"genitive-day":"S. Mathiæ",
 		"tags":["mathia","double-ii-class","has-vigil","apostle"]
+	},
+	{
+		"date":"03-04",
+		"day":"S. Casmiri Conf.",
+		"tags":["casmirus","semidouble","confessor"]
+	},
+	{
+		"date":"03-04",
+		"day":"S. Lucii I. Papæ et Mart.",
+		"tags":["lucius","commemoration","pope","martyr-bishop"]
+	},
+	{
+		"date":"03-07",
+		"day":"S. Thomæ de Aquino Conf. et Eccl. Doct.",
+		"tags":["thomas-aquino","double","confessor","doctor"]
+	},
+	{
+		"date":"03-07",
+		"day":"Ss. Perpetuæ et Felicitatis Mm.",
+		"tags":["perpetua-felicitas","commemoration","martyrs"]
+	},
+	{
+		"date":"03-08",
+		"day":"S. Joannis de Deo Conf.",
+		"tags":["joannes-deo","double","confessor"]
+	},
+	{
+		"date":"03-09",
+		"day":"S. Franciscæ Romanæ Vid.",
+		"tags":["francisca-romanae","double","widow"]
+	},
+	{
+		"date":"03-10",
+		"day":"Ss. Quadraginta Mm.",
+		"tags":["quadraginta","semidouble","martyrs"]
+	},
+	{
+		"date":"03-12",
+		"day":"S. Gregorii I. Papæ, Conf. et Eccl. Doct.",
+		"tags":["gregorius","double","bishop-confessor","pope","doctor"]
+	},
+	{
+		"date":"03-17",
+		"day":"S. Patritii Ep. et Conf.",
+		"tags":["patritius","double","confessor-bishop"]
+	},
+	{
+		"date":"03-18",
+		"day":"S. Cyrilli Episc. Hierosolymitani, Conf. et Eccl. Doct.",
+		"tags":["cyrillus-hierosolymitani","double","confessor-bishop","doctor"]
+	},
+	{
+		"date":"03-19",
+		"day":"S. Joseph Conf., Sponsi B.M.V.",
+		"tags":["joseph-sponsus","double-i-class"]
+	},
+	{
+		"date":"03-20",
+		"day":"S. Benedicti Abbatis",
+		"tags":["benedictus","greater-double","abbot"]
+	},
+	{
+		"date":"03-25",
+		"day":"Annuntiatio B.M.V.",
+		"tags":["annuntiatio","double-ii-class","mary"]
 	},
 	{
 		"date":"06-02",
