@@ -254,4 +254,4 @@ def kalendar(year):
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing
     
-    return dict(sorted(kal.items()))
+    return kal.items()
