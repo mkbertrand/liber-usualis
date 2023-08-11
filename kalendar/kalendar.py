@@ -18,8 +18,38 @@ sanctoral = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()
 
 ranks = ["ferial","simple","semidouble","double","greater-double","double-ii-class","double-i-class"]
 
+class SearchResult:
+    def __init__(self, date, feast):
+        self.date = date
+        self.feast = feast
+    def __str__(self):
+        return self.date + ":" + self.feast
+
 def datestring(date0):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
+
+def matches(kal, condition):
+    ret = []
+    for i in kal:
+        for j in kal[i]:
+            if condition(j["tags"]):
+                ret.append(SearchResult(i, j))
+    return ret
+
+def all_tags(kal,tags):
+    ret = []
+    for i in kal:
+        for j in kal[i]:
+            if all(k in j["tags"] for k in tags):
+                ret.append(SearchResult(i, j))
+    return ret
+
+def unique_search(kal,tags):
+    for i in kal:
+        for j in kal[i]:
+            if all(k in j["tags"] for k in tags):
+                return SearchResult(i, j)
+    return None
 
 def kalendar(year):
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
@@ -34,6 +64,23 @@ def kalendar(year):
             kal[date0].append(entry)
         else:
             kal[date0] = [entry]
+    #Will not work as intended if multiple matches are found for the tags
+    #If match is False there will be no mention that there was a feast in the original pre-tranfer date
+    def transfer(tags, target, mention):
+        match = all_tags(kal,tags)
+        feast = match.values()[0]
+        feast["tags"].append("transfer")
+        addentry(target, feast)
+        for i in range(0,len(kal[match.keys()[0]])):
+            if kal[match.keys()[0]][i] == match.values()[0]:
+                if (mention):
+                    kal[match.keys()[0]][i]["tags"].append("transfer-original")
+                    kal[match.keys()[0]][i]["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), kal[match.keys()[0]][i]["tags"]))
+                else:
+                    kal[match.keys()[0]].remove(i)
+                break
+                
+        
     
     easter = pascha.geteaster(year)
     christmas = date(year, 12, 25)
@@ -125,6 +172,12 @@ def kalendar(year):
             buffer[date0].append(entry)
         else:
             buffer[date0] = [entry]
+    
+    #Movable feasts with occurrence attribute
+    for i in movables:
+        if "occurrence" in movables[i].keys():
+            match = unique_search(kal, movables[i]["occurrence"])
+            addentry(match.date,movables[i])
     
     #Octave and Vigil Processing
     octavevigiltags = ["has-octave","has-special-octave","has-vigil","has-special-vigil"]

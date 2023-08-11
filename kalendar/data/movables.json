@@ -10,11 +10,22 @@
 	},
 	"nomen-jesus":{
 		"day":"Ss. Nominis Jesus",
-		"occurrence":"Dominica II post Epiphaniam",
+		"occurrence":["sunday","week-ii-epiphany"],
 		"tags":["nomen-jesus","double-ii-class"]
 	},
 	"joachim":{
 		"day":"S. Joachim Conf.",
 		"tags":["joachim","double-ii-class","confessor"]
+	},
+	"corpus-christi":{
+		"day":"Festum Corporis Christi",
+		"occurrence":["thursday","week-i-pentecost"],
+		"genitive-day":"Corporis Christi",
+		"tags":["corpus-christi","double-i-class","has-octave"]
+	},
+	"cor-jesus":{
+		"day":"Festum Ss. Cordis D.N.J.C.",
+		"occurrence":["friday","week-ii-pentecost"],
+		"tags":["cor-jesus","greater-double"]
 	}
 }
