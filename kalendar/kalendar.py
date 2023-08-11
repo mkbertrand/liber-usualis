@@ -62,6 +62,7 @@ def kalendar(year):
             kal[date0].append(entry)
         else:
             kal[date0] = [entry]
+            
     #Will not work as intended if multiple matches are found for the tags
     #If match is False there will be no mention that there was a feast in the original pre-tranfer date
     def transfer(tags, target, mention):
@@ -79,7 +80,30 @@ def kalendar(year):
                 else:
                     kal[match.date].remove(i)
                 break
-                
+    #Automatically decide the suitable date whither the feast should be transferred
+    def autotransfer(tags, mention, obstacles):
+        match = unique_search(kal,tags)
+        newfeast = copy.deepcopy(match.feast)
+        newfeast["tags"].append("transfer")
+        newdate = match.date
+        def issuitable(date0):
+            for i in kal[date0]:
+                if any(j in i["tags"] for j in obstacles):
+                    return False
+            return True
+        while not issuitable(newdate):
+            newdate = newdate + timedelta(days=1)  
+        addentry(newdate, newfeast)
+        for i in range(0,len(kal[match.date])):
+            if all(j in kal[match.date][i]["tags"] for j in tags):
+                if (mention):
+                    oldfeast = copy.deepcopy(kal[match.date][i])
+                    oldfeast["tags"].append("transfer-original")
+                    oldfeast["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), oldfeast["tags"]))
+                    kal[match.date][i] = oldfeast
+                else:
+                    kal[match.date].remove(i)
+                break
         
     
     easter = pascha.geteaster(year)
@@ -255,13 +279,40 @@ def kalendar(year):
     corpuschristi = unique_search(kal, ["corpus-christi","double-i-class"])
     #Although Candlemas does not have an Octave, I added the "double-ii-class" search tag in case a local Kalendar were to assign it an Octave.
     candlemas = unique_search(kal, ["purificatio","double-ii-class"])
-    sundaysiiclass = all_tags(kal, ["sunday-ii-class"])
     #N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
     if sjb.date == corpuschristi.date:
         transfer(["nativitas-joannis-baptistae","double-i-class"], date(year, 6, 25), True)
-    #Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday.
+    #Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
     if candlemas.date in (i.date for i in all_tags(kal, ["sunday-ii-class"])):
         transfer(["purificatio","double-ii-class"], candlemas.date + timedelta(days=1), True)
+        
+    excepted = ["sunday-i-class","sunday-ii-class","pascha","pentecostes","ascensio","corpus-christi","purificatio","no-transfer"]
+    
+    obstacles = ["sunday-i-class","sunday-ii-class","no-concurrence"]
+    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["double-i-class"]))):
+        for j in kal[i.date]:
+            if any(k in j["tags"] for k in obstacles):
+                autotransfer(i.feast["tags"], True, obstacles)
+    
+    obstacles.append("double-i-class")
+    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["double-ii-class"]))):
+        for j in kal[i.date]:
+            if any(k in j["tags"] for k in obstacles):
+                autotransfer(i.feast["tags"], True, obstacles)
+    
+    obstacles.extend(["double-ii-class","octave-day"])
+    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["greater-double"]))):
+        for j in kal[i.date]:
+            if any(k in j["tags"] for k in obstacles):
+                autotransfer(i.feast["tags"], True, obstacles)
+    
+    obstacles.append("greater-double")
+    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["doctor","double"]))):
+        for j in kal[i.date]:
+            if any(k in j["tags"] for k in obstacles):
+                autotransfer(i.feast["tags"], True, obstacles)
+    
+    
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing
     
