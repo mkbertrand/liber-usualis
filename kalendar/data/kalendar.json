@@ -1,5 +1,96 @@
 [
 	{
+		"date":"02-01",
+		"day":"S. Ignatii Episc. et Mart.",
+		"tags":["ignatius","double","martyr-bishop"]
+	},
+	{
+		"date":"02-02",
+		"day":"Purificatio B. Mariæ V.",
+		"tags":["purificatio","double-ii-class","mary"]
+	},
+	{
+		"date":"02-03",
+		"day":"S. Blasii, Episc et Mart.",
+		"tags":["blasius","simple","martyr-bishop"]
+	},
+	{
+		"date":"02-04",
+		"day":"S. Andreæ Corsini Ep. Cf.",
+		"tags":["andrea-corsinus","double","confessor-bishop"]
+	},
+	{
+		"date":"02-05",
+		"day":"S. Agathæ Virg. et Mart.",
+		"tags":["agatha","double","virgin","martyr"]
+	},
+	{
+		"date":"02-06",
+		"day":"S. Titi Episc. et Conf.",
+		"tags":["titus","double","confessor-bishop"]
+	},
+	{
+		"date":"02-06",
+		"day":"S. Dorotheæ Virg. et Mart.",
+		"tags":["dorothea","commemoration","virgin","martyr"]
+	},
+	{
+		"date":"02-07",
+		"day":"S. Romualdi Abbatis",
+		"tags":["romualdus","abbot"]
+	},
+	{
+		"date":"02-08",
+		"day":"S. Joannis de Matha Conf.",
+		"tags":["joannes-matha","double","confessor"]
+	},
+	{
+		"date":"02-09",
+		"day":"S. Cyrilli Episc. Alexandrini, Cf. et Eccl. Doct.",
+		"tags":["cyrillus","double","confessor-bishop","doctor"]
+	},
+	{
+		"date":"02-09",
+		"day":"S. Apolloniæ Virg. et Mart.",
+		"tags":["apollonia","commemoration","virgin","martyr"]
+	},
+	{
+		"date":"02-10",
+		"day":"S. Scholasticæ Virg.",
+		"tags":["scholastica","double","virgin"]
+	},
+	{
+		"date":"02-14",
+		"day":"S. Valentini Presb. et Mart.",
+		"tags":["valentinus","simple","priest","martyr"]
+	},
+	{
+		"date":"02-15",
+		"day":"Ss. Faustini et Jovitæ Mm.",
+		"tags":["faustinus-jovita","simple","martyrs"]
+	},
+	{
+		"date":"02-18",
+		"day":"S. Simeonis Episc. et Mart.",
+		"tags":["simeon","simple","martyr-bishop"]
+	},
+	{
+		"date":"02-22",
+		"day":"Cathedra S. Petri Antiochiæ",
+		"tags":["cathedra-petri-antiochiae","greater-double"]
+	},
+	{
+		"date":"02-23",
+		"day":"S. Petri Damiani Episc. Conf. et Eccl. Doct.",
+		"tags":["petrus-damianus","confessor-bishop","doctor"]
+	},
+	{
+		"date":"02-24",
+		"day":"S. Mathiæ Apostoli",
+		"genitive-day":"S. Mathiæ",
+		"tags":["mathia","double-ii-class","has-vigil","apostle"]
+	},
+	{
 		"date":"06-02",
 		"day":"Ss. Marcellini, Petri, atque Erasmi Martyrum",
 		"tags":["marcellinus-petrus-erasmus","simple","martyrs"]

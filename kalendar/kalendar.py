@@ -77,7 +77,7 @@ def kalendar(year):
                     oldfeast = copy.deepcopy(kal[match.date][i])
                     oldfeast["tags"].append("transfer-original")
                     oldfeast["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), oldfeast["tags"]))
-                    kal[match.date] = oldfeast
+                    kal[match.date][i] = oldfeast
                 else:
                     kal[match.date].remove(i)
                 break
@@ -162,11 +162,19 @@ def kalendar(year):
         while kalends + timedelta(days=j*7) != nextkalends:
             for k in range(0,7):
                 addentry(kalends + timedelta(days=j*7+k), month[j][k])
-            j+=1
+            j += 1
     
-    #Saints
-    for i in sanctoral:
-        addentry(todate(i["date"], year), i)
+    #Saints, and also handles leap years
+    if leapyear:
+        for i in sanctoral:
+            date0 = todate(i["date"], year)
+            if date0.month == 2 and date0.day > 23:
+                addentry(date0 + timedelta(days=1), i)
+            else:
+                addentry(date0, i)
+    else:
+        for i in sanctoral:
+            addentry(todate(i["date"], year), i)
     
     buffer = {}
     def addbufferentry(date0, entry):
@@ -247,10 +255,15 @@ def kalendar(year):
     #Transfers
     sjb = unique_search(kal, ["nativitas-joannis-baptistae","double-i-class"])
     corpuschristi = unique_search(kal, ["corpus-christi","double-i-class"])
+    #Although Candlemas does not have an Octave, I added the "double-ii-class" search tag in case a local Kalendar were to assign it an Octave.
+    candlemas = unique_search(kal, ["purificatio","double-ii-class"])
+    sundaysiiclass = all_tags(kal, ["sunday-ii-class"])
     #N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
     if sjb.date == corpuschristi.date:
         transfer(["nativitas-joannis-baptistae","double-i-class"], date(year, 6, 25), True)
-        
+    #Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday.
+    if candlemas.date in (i.date for i in all_tags(kal, ["sunday-ii-class"])):
+        transfer(["purificatio","double-ii-class"], candlemas.date + timedelta(days=1), True)
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing
     
