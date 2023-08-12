@@ -322,32 +322,32 @@
 	{
 		"difference": 1,
 		"day": "Die II infra Octavam Paschæ",
-		"tags": ["pascha","double-i-class","monday","day-2","no-concurrence"]
+		"tags": ["pascha","double-i-class","monday","in-octave","day-2","no-concurrence"]
 	},
 	{
 		"difference": 2,
 		"day": "Die III infra Octavam Paschæ",
-		"tags": ["pascha","double-i-class","tuesday","day-3","no-concurrence"]
+		"tags": ["pascha","double-i-class","tuesday","in-octave","day-3","no-concurrence"]
 	},
 	{
 		"difference": 3,
 		"day": "Die IV infra Octavam Paschæ",
-		"tags": ["pascha","semidouble","wednesday","day-4","no-concurrence"]
+		"tags": ["pascha","semidouble","wednesday","in-octave","day-4","no-concurrence"]
 	},
 	{
 		"difference": 4,
 		"day": "Die V infra Octavam Paschæ",
-		"tags": ["pascha","semidouble","thursday","day-5","no-concurrence"]
+		"tags": ["pascha","semidouble","thursday","in-octave","day-5","no-concurrence"]
 	},
 	{
 		"difference": 5,
 		"day": "Die VI infra Octavam Paschæ",
-		"tags": ["pascha","semidouble","friday","day-6","no-concurrence"]
+		"tags": ["pascha","semidouble","friday","in-octave","day-6","no-concurrence"]
 	},
 	{
 		"difference": 6,
 		"day": "Sabbato in Albis",
-		"tags": ["pascha","semidouble","saturday","day-7","no-concurrence"]
+		"tags": ["pascha","semidouble","saturday","in-octave","day-7","no-concurrence"]
 	},
 	{
 		"difference": 7,
@@ -533,32 +533,32 @@
 	{
 		"difference": 50,
 		"day": "Die II infra Octavam Pentecostes",
-		"tags": ["pentecostes","double-i-class","monday","day-2","no-concurrence"]
+		"tags": ["pentecostes","double-i-class","monday","in-octave","day-2","no-concurrence"]
 	},
 	{
 		"difference": 51,
 		"day": "Die III infra Octavam Pentecostes",
-		"tags": ["pentecostes","double-i-class","tuesday","day-3","no-concurrence"]
+		"tags": ["pentecostes","double-i-class","tuesday","in-octave","day-3","no-concurrence"]
 	},
 	{
 		"difference": 52,
 		"day": "Feria IV infra Octavam Pentecostes",
-		"tags": ["pentecostes","semidouble","wednesday","day-4","no-concurrence"]
+		"tags": ["pentecostes","semidouble","wednesday","in-octave","day-4","no-concurrence"]
 	},
 	{
 		"difference": 53,
 		"day": "Feria V infra Octavam Pentecostes",
-		"tags": ["pentecostes","semidouble","thursday","day-5","no-concurrence"]
+		"tags": ["pentecostes","semidouble","thursday","in-octave","day-5","no-concurrence"]
 	},
 	{
 		"difference": 54,
 		"day": "Feria VI infra Octavam Pentecostes",
-		"tags": ["pentecostes","semidouble","friday","day-6","no-concurrence"]
+		"tags": ["pentecostes","semidouble","friday","in-octave","day-6","no-concurrence"]
 	},
 	{
 		"difference": 55,
 		"day": "Sabbato infra Octavam Pentecostes",
-		"tags": ["pentecostes","semidouble","saturday","day-7","no-concurrence"]
+		"tags": ["pentecostes","semidouble","saturday","in-octave","day-7","no-concurrence"]
 	},
 	{
 		"difference": 56,

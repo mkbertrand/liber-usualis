@@ -220,8 +220,7 @@ def kalendar(year):
                 for k in range(1,7):
                     entrystripped = copy.deepcopy(j)
                     entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
-                    entrystripped["tags"].append("semidouble")
-                    entrystripped["tags"].append("day-" + str(k+1))
+                    entrystripped["tags"].extend(["semidouble","in-octave","day-" + str(k+1)])
                     entrystripped["date"] = datestring(i + timedelta(days=k))
                     entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
                     del entrystripped["genitive-day"]
@@ -312,6 +311,10 @@ def kalendar(year):
             if any(k in j["tags"] for k in obstacles):
                 autotransfer(i.feast["tags"], True, obstacles)
     
+    for i in list(filter(lambda i:not "no-transfer" in i["tags"], all_tags(kal, ["vigil"]))):
+        for j in kal[i.date]:
+            if "sunday" in j["tags"]):
+                transfer(i.feast["tags"], i.date - timedelta(days=1), True)
     
     #todo Finish kalendar.json, pascha.json
     #todo Translation Processing
