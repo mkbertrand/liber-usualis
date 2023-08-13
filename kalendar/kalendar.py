@@ -155,7 +155,7 @@ def kalendar(year):
                 addentry(sunday + timedelta(days=j), epiphanycycle[5 - i][j])
         else:
             esundayomission = True
-            omittedepiphanyentry = epiphanycycle[5 - i][j]
+            omittedepiphanyentry = epiphanycycle[5 - i][0]
 
     #Nativity & Epiphany
     for i in nativitycycle:
@@ -211,6 +211,13 @@ def kalendar(year):
             match = unique_search(kal, movables[i]["occurrence"])
             addentry(match.date,movables[i])
     
+    #Irregular movables
+    assumption = date(year, 8, 15)
+    if assumption.weekday() == 6:
+        addentry(assumption + timedelta(days=1), movables["joachim"])
+    else:
+        addentry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"])
+        
     #Octave and Vigil Processing
     octavevigiltags = ["has-octave","has-special-octave","has-vigil","has-special-vigil"]
     numerals = ['II','III','IV','V','VI','VII']
@@ -233,6 +240,7 @@ def kalendar(year):
                 entrystripped["day"] = "In Octava " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
                 addbufferentry(i + timedelta(days=7), entrystripped)
+                entrystripped = copy.deepcopy(j)
             if "has-vigil" in j["tags"] and not "has-special-vigil" in j["tags"]:
                 entrystripped = copy.deepcopy(j)
                 entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
@@ -285,35 +293,26 @@ def kalendar(year):
     if candlemas.date in (i.date for i in all_tags(kal, ["sunday-ii-class"])):
         transfer(["purificatio","double-ii-class"], candlemas.date + timedelta(days=1), True)
         
-    excepted = ["sunday-i-class","sunday-ii-class","pascha","pentecostes","ascensio","corpus-christi","purificatio","no-transfer"]
+    excepted = ["sunday-i-class","sunday-ii-class","pascha","pentecostes","ascensio","corpus-christi","purificatio","no-transfer","octave-day"]
     
+    def transfer_all(target, obstacles):
+        for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, target))):
+            for j in kal[i.date]:
+                if any(k in j["tags"] for k in obstacles):
+                    autotransfer(i.feast["tags"], True, obstacles)
     obstacles = ["sunday-i-class","sunday-ii-class","no-concurrence"]
-    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["double-i-class"]))):
-        for j in kal[i.date]:
-            if any(k in j["tags"] for k in obstacles):
-                autotransfer(i.feast["tags"], True, obstacles)
     
+    transfer_all(["double-i-class"], obstacles)
     obstacles.append("double-i-class")
-    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["double-ii-class"]))):
-        for j in kal[i.date]:
-            if any(k in j["tags"] for k in obstacles):
-                autotransfer(i.feast["tags"], True, obstacles)
-    
+    transfer_all(["double-ii-class"], obstacles)
     obstacles.extend(["double-ii-class","octave-day"])
-    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["greater-double"]))):
-        for j in kal[i.date]:
-            if any(k in j["tags"] for k in obstacles):
-                autotransfer(i.feast["tags"], True, obstacles)
-    
+    transfer_all(["greater-double"], obstacles)
     obstacles.append("greater-double")
-    for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, ["doctor","double"]))):
-        for j in kal[i.date]:
-            if any(k in j["tags"] for k in obstacles):
-                autotransfer(i.feast["tags"], True, obstacles)
+    transfer_all(["doctor","double"], obstacles)
     
-    for i in list(filter(lambda i:not "no-transfer" in i["tags"], all_tags(kal, ["vigil"]))):
+    for i in list(filter(lambda i:not "no-transfer" in i.feast["tags"], all_tags(kal, ["vigil"]))):
         for j in kal[i.date]:
-            if "sunday" in j["tags"]):
+            if "sunday" in j["tags"]:
                 transfer(i.feast["tags"], i.date - timedelta(days=1), True)
     
     #todo Finish kalendar.json, pascha.json
