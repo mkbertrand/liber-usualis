@@ -1,4 +1,36 @@
 {
+	"bmv-sabbato":{
+		"day":"BMV Sabbato",
+		"occurrence":["saturday"],
+		"excluded":["penitential", "in-octave"],
+		"tags":["bmv-sabbato","saturday","simple","mary"]
+	},
+	"nomen-jesus":{
+		"day":"Ss. Nominis Jesus",
+		"occurrence":["sunday","week-ii-epiphany"],
+		"tags":["nomen-jesus","double-ii-class"]
+	},
+	"septem-dolorum":{
+		"day":"Septem Dolorum B.M.V.",
+		"occurrence":["friday","passion-week"],
+		"tags":["septem-dolorum","greater-double","mary"]
+	},
+	"patrocinius-joseph":{
+		"day":"Patrocinii S. Joseph Conf., Sponsi B.M.V.",
+		"occurrence":["sunday","week-iii-easter"],
+		"tags":["patrocinius-joseph","double-ii-class"]
+	},
+	"corpus-christi":{
+		"day":"Ss. Corporis Christi",
+		"occurrence":["thursday","week-i-pentecost"],
+		"genitive-day":"Corporis Christi",
+		"tags":["corpus-christi","double-i-class","has-octave"]
+	},
+	"cor-jesus":{
+		"day":"Ss. Cordis D.N.J.C.",
+		"occurrence":["friday","week-ii-pentecost"],
+		"tags":["cor-jesus","greater-double"]
+	},
 	"nativity-sunday":{
 		"day":"Dominica infra Octavam Nativitatis",
 		"tags":["sunday","semidouble","nativity-sunday","nativity"]
@@ -8,24 +40,12 @@
 		"day":"S. Thomae, Episc. et Mart.",
 		"tags":["thomas-becket","semidouble","bishop","martyr"]
 	},
-	"nomen-jesus":{
-		"day":"Ss. Nominis Jesus",
-		"occurrence":["sunday","week-ii-epiphany"],
-		"tags":["nomen-jesus","double-ii-class"]
+	"pretiosissimi-sanguinis":{
+		"day":"Pretiosissimi Sanguinis D.N.J.C.",
+		"tags":["pretiosissimi-sanguinis","double-ii-class"]
 	},
 	"joachim":{
 		"day":"S. Joachim Conf.",
 		"tags":["joachim","double-ii-class","confessor"]
-	},
-	"corpus-christi":{
-		"day":"Festum Corporis Christi",
-		"occurrence":["thursday","week-i-pentecost"],
-		"genitive-day":"Corporis Christi",
-		"tags":["corpus-christi","double-i-class","has-octave"]
-	},
-	"cor-jesus":{
-		"day":"Festum Ss. Cordis D.N.J.C.",
-		"occurrence":["friday","week-ii-pentecost"],
-		"tags":["cor-jesus","greater-double"]
 	}
 }

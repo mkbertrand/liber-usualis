@@ -168,14 +168,14 @@ def kalendar(year):
         addentry(date(year, 12, 30), movables["thomas-becket"])
     else:
         addentry(date(year, 12, 29), movables["thomas-becket"])
-     
+    
     #Autumnal Weeks
     def nearsunday(kalends):
         if(kalends.weekday() < 3):
             return kalends - timedelta(days=1+kalends.weekday())
         else:
             return kalends + timedelta(days=6-kalends.weekday())
-    for i in range(8, 12):
+    for i in range(8, 11):
         kalends = nearsunday(date(year, i, 1))
         #Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
         nextkalends = nearsunday(date(year, i + 1, 1))
@@ -185,7 +185,14 @@ def kalendar(year):
             for k in range(0,7):
                 addentry(kalends + timedelta(days=j*7+k), month[j][k])
             j += 1
-    
+    kalends = nearsunday(date(year, 11, 1))
+    #Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
+    j = 0
+    while kalends + timedelta(days=j*7) != adventstart:
+        for k in range(0,7):
+            addentry(kalends + timedelta(days=j*7+k), months["november"][j][k])
+        j += 1
+            
     #Saints, and also handles leap years
     if leapyear:
         for i in sanctoral:
@@ -208,8 +215,13 @@ def kalendar(year):
     #Movable feasts with occurrence attribute
     for i in movables:
         if "occurrence" in movables[i].keys():
-            match = unique_search(kal, movables[i]["occurrence"])
-            addentry(match.date,movables[i])
+            matches = all_tags(kal, movables[i]["occurrence"])
+            if "excluded" in movables[i].keys():
+                excluded = movables[i].pop("excluded")
+                matches = filter(lambda j:not any(k in j.feast["tags"] for k in excluded), matches)
+            movables[i].pop("occurrence")
+            for j in matches:
+                addentry(j.date,movables[i])
     
     #Irregular movables
     assumption = date(year, 8, 15)
