@@ -82,7 +82,7 @@ def kalendar(year):
                 break
     #Automatically decide the suitable date whither the feast should be transferred
     def autotransfer(tags, mention, obstacles):
-        match = unique_search(kal,tags)
+        match = unique_search(kal, tags)
         newfeast = copy.deepcopy(match.feast)
         newfeast["tags"].append("transfer")
         newdate = match.date
@@ -92,7 +92,8 @@ def kalendar(year):
                     return False
             return True
         while not issuitable(newdate):
-            newdate = newdate + timedelta(days=1)  
+            newdate = newdate + timedelta(days=1)
+
         addentry(newdate, newfeast)
         for i in range(0,len(kal[match.date])):
             if all(j in kal[match.date][i]["tags"] for j in tags):
@@ -160,14 +161,7 @@ def kalendar(year):
     #Nativity & Epiphany
     for i in nativitycycle:
         addentry(todate(i["date"], year), i)
-    if (christmas.weekday() < 3):
-        addentry(christmas + timedelta(days=6-christmas.weekday()), movables["nativity-sunday"])
-    else:
-        addentry(date(year, 12, 30), movables["nativity-sunday"])
-    if (christmas.weekday() == 2):
-        addentry(date(year, 12, 30), movables["thomas-becket"])
-    else:
-        addentry(date(year, 12, 29), movables["thomas-becket"])
+    addentry(christmas + timedelta(days=6-christmas.weekday()), movables["nativity-sunday"])
     
     #Autumnal Weeks
     def nearsunday(kalends):
@@ -314,6 +308,11 @@ def kalendar(year):
                     autotransfer(i.feast["tags"], True, obstacles)
     obstacles = ["sunday-i-class","sunday-ii-class","no-concurrence"]
     
+    if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
+        #All days of Christmas Octave (or any Octave for that matter) are semidouble which is why I used the thomas-becket tag specifically
+        autotransfer(["nativity","sunday-octave"], True, ["double-i-class","double-ii-class","thomas-becket"])
+    else:
+        transfer("thomas-becket", date(year, 12, 29), True)
     transfer_all(["double-i-class"], obstacles)
     obstacles.append("double-i-class")
     transfer_all(["double-ii-class"], obstacles)
