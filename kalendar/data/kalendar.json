@@ -128,7 +128,7 @@
 	{
 		"date":"03-12",
 		"day":"S. Gregorii I. Papæ, Conf. et Eccl. Doct.",
-		"tags":["gregorius","double","bishop-confessor","pope","doctor"]
+		"tags":["gregorius","double","confessor-bishop","pope","doctor"]
 	},
 	{
 		"date":"03-17",
@@ -163,7 +163,7 @@
 	{
 		"date":"04-04",
 		"day":"S. Isidori Episc., Conf. et Eccl. Doct.",
-		"tags":["isidorus","double","bishop-confessor","doctor"]
+		"tags":["isidorus","double","confessor-bishop","doctor"]
 	},
 	{
 		"date":"04-05",
@@ -173,7 +173,7 @@
 	{
 		"date":"04-11",
 		"day":"S. Leonis I. Papæ, Conf. et Eccl. Doct.",
-		"tags":["leo-i","double","pope","bishop-confessor","doctor"]
+		"tags":["leo-i","double","pope","confessor-bishop","doctor"]
 	},
 	{
 		"date":"04-13",
@@ -203,7 +203,7 @@
 	{
 		"date":"04-22",
 		"day":"Ss. Soteris et Caji Pont. et Mm.",
-		"tags":["soter-cajus","semidouble","bishop-martyrs"]
+		"tags":["soter-cajus","semidouble","martyr-bishops"]
 	},
 	{
 		"date":"04-23",
@@ -246,6 +246,156 @@
 		"tags":["catharina-senensis","double","virgin"]
 	},
 	{
+		"date":"05-01",
+		"day":"Ss. Philippi et Jacobi Ap.",
+		"tags":["philippus-jacobus","double-ii-class","apostles"]
+	},
+	{
+		"date":"05-02",
+		"day":"S. Athanasii Episc., Conf. et Eccl. Doct.",
+		"tags":["athanasius","double","confessor-bishop","doctor"]
+	},
+	{
+		"date":"05-03",
+		"day":"Inventio S. Crucis",
+		"tags":["inventio-crucis","double-ii-class"]
+	},
+	{
+		"date":"05-03",
+		"day":"Ss. Alexandri I. Papæ et Soc. Mm., ac S. Juvenalis Episc. et Conf.",
+		"tags":["alexandrus-i-soc","commemoration","pope","martyrs","confessor-bishop"]
+	},
+	{
+		"date":"05-04",
+		"day":"S. Monicæ Viduæ",
+		"tags":["monica","double","widow"]
+	},
+	{
+		"date":"05-05",
+		"day":"S. Pii V. Papæ et Conf.",
+		"tags":["pius-v","double","pope","confessor-bishop"]
+	},
+	{
+		"date":"05-06",
+		"day":"S. Joannis ante portam Latinam",
+		"tags":["joannes-portam-latinam","greater-double"]
+	},
+	{
+		"date":"05-07",
+		"day":"S. Stanislai Episc. et Mart.",
+		"tags":["double","martyr-bishop"]
+	},
+	{
+		"date":"05-08",
+		"day":"Apparitio S. Michaëlis Archang.",
+		"tags":["apparitio-michaelis","greater-double"]
+	},
+	{
+		"date":"05-09",
+		"day":"S. Gregorii Nazianzeni Ep., Conf. et Eccl. Doct.",
+		"tags":["gregorius-nazianzenus","double","confessor-bishop","doctor"]
+	},
+	{
+		"date":"05-10",
+		"day":"S. Antonini Episc. et Conf.",
+		"tags":["antoninus","double","confessor-bishop"]
+	},
+	{
+		"date":"05-10",
+		"day":"Ss. Gordiani et Epimachi Mm.",
+		"tags":["gordianus-epimachus","commemoration","martyrs"]
+	},
+	{
+		"date":"05-12",
+		"day":"Ss. Nerei, Achillei, et Domitillæ Vg. atque Paneratii Mm.",
+		"tags":["nereus-achilleus-domitilla-paneratius","semidouble","virgin","martyrs"]
+	},
+	{
+		"date":"05-14",
+		"day":"S. Bonifacii Mart.",
+		"tags":["bonifacius","simple","martyr"]
+	},
+	{
+		"date":"05-16",
+		"day":"S. Ubaldi Episc. et Conf.",
+		"tags":["ubaldus","semidouble","confessor-bishop"]
+	},
+	{
+		"date":"05-17",
+		"day":"S. Paschalis Baylon Conf.",
+		"tags":["paschalis-baylon","double","confessor"]
+	},
+	{
+		"date":"05-18",
+		"day":"S. Venantii Mart.",
+		"tags":["venantius","double","martyr"]
+	},
+	{
+		"date":"05-19",
+		"day":"S. Petri Cœlestini Papæ et Conf.",
+		"tags":["petrus-coelestinus","double","confessor-bishop","pope"]
+	},
+	{
+		"date":"05-19",
+		"day":"S. Pudentianæ Virg",
+		"tags":["pudentiana","commemoration","virgin"]
+	},
+	{
+		"date":"05-20",
+		"day":"S. Bernardini Senensis Cf.",
+		"tags":["bernardinus-senensis","semidouble","confessor"]
+	},
+	{
+		"date":"05-25",
+		"day":"S. Gregorii VII. Papæ et Cf.",
+		"tags":["gregorius-vii","double","confessor-bishop","pope"]
+	},
+	{
+		"date":"05-25",
+		"day":"S. Urbani I. Pp. et Mart.",
+		"tags":["urbanus-i","commemoration","martyr-bishop","pope"]
+	},
+	{
+		"date":"05-26",
+		"day":"S. Philippi Nerii Cf.",
+		"tags":["philippus-nerius","double","confessor"]
+	},
+	{
+		"date":"05-26",
+		"day":"S. Eleutherii Papæ et Mart.",
+		"tags":["eleutherius","commemoration","martyr-bishop","pope"]
+	},
+	{
+		"date":"05-27",
+		"day":"S. Mariæ Magdalenæ de Pazzis Virg.",
+		"tags":["maria-magdalena-pazzis","semidouble","virgin"]
+	},
+	{
+		"date":"05-27",
+		"day":"S. Joannis Papæ et Mart.",
+		"tags":["joannes-i","commemoration","martyr-bishop","pope"]
+	},
+	{
+		"date":"05-28",
+		"day":"S. Augustini Ep. et Conf.",
+		"tags":["augustinus-episcopus","double","confessor-bishop"]
+	},
+	{
+		"date":"05-30",
+		"day":"S. Felicis I. Papæ et Mart.",
+		"tags":["felix-i","simple","martyr-bishop","pope"]
+	},
+	{
+		"date":"05-31",
+		"day":"S. Angelæ Mariciæ Virg.",
+		"tags":["angela-maricia","double","virgin"]
+	},
+	{
+		"date":"05-31",
+		"day":"S. Petronillæ Virg.",
+		"tags":["petronilla","commemoration","virgin"]
+	},
+	{
 		"date":"06-02",
 		"day":"Ss. Marcellini, Petri, atque Erasmi Martyrum",
 		"tags":["marcellinus-petrus-erasmus","simple","martyrs"]
@@ -258,7 +408,7 @@
 	{
 		"date":"06-05",
 		"day":"S. Bonifacii Ep. et Mart.",
-		"tags":["bonifacius","double","martyr-bishop"]
+		"tags":["bonifacius-episcopus","double","martyr-bishop"]
 	},
 	{
 		"date":"06-06",
