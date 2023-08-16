@@ -5,10 +5,40 @@
 		"excluded":["penitential", "in-octave"],
 		"tags":["bmv-sabbato","saturday","simple","mary"]
 	},
+	"feria-iv-quattuor-temporum-adventus":{
+		"day":"Feria IV Quattuor Temporum Adventus",
+		"occurrence":["week-iii-advent","wednesday"],
+		"tags":["quattuor-temporum-adventus","wednesday","ferial","penitential"]
+	},
+	"feria-vi-quattuor-temporum-adventus":{
+		"day":"Feria IV Quattuor Temporum Adventus",
+		"occurrence":["week-iii-advent","friday"],
+		"tags":["quattuor-temporum-adventus","friday","ferial","penitential"]
+	},
+	"sabbato-quattuor-temporum-adventus":{
+		"day":"Feria IV Quattuor Temporum Adventus",
+		"occurrence":["week-iii-advent","saturday"],
+		"tags":["quattuor-temporum-adventus","saturday","ferial","penitential"]
+	},
 	"nomen-jesus":{
 		"day":"Ss. Nominis Jesus",
 		"occurrence":["sunday","week-ii-epiphany"],
 		"tags":["nomen-jesus","double-ii-class"]
+	},
+	"feria-iv-quattuor-temporum-quadragesimae":{
+		"day":"Feria IV Quattuor Temporum Quadragesimæ",
+		"occurrence":["week-i-lent","wednesday"],
+		"tags":["quattuor-temporum-quadragesimae","wednesday","ferial","penitential"]
+	},
+	"feria-vi-quattuor-temporum-quadragesimae":{
+		"day":"Feria IV Quattuor Temporum Quadragesimæ",
+		"occurrence":["week-i-lent","friday"],
+		"tags":["quattuor-temporum-quadragesimae","friday","ferial","penitential"]
+	},
+	"sabbato-quattuor-temporum-quadragesimae":{
+		"day":"Feria IV Quattuor Temporum Quadragesimæ",
+		"occurrence":["week-i-lent","saturday"],
+		"tags":["quattuor-temporum-quadragesimae","saturday","ferial","penitential"]
 	},
 	"septem-dolorum":{
 		"day":"Septem Dolorum B.M.V.",
@@ -20,6 +50,21 @@
 		"occurrence":["sunday","week-iii-easter"],
 		"tags":["patrocinius-joseph","double-ii-class"]
 	},
+	"feria-iv-quattuor-temporum-pentecostes":{
+		"day":"Feria IV Quattuor Temporum Pentecostes",
+		"occurrence":["pentecostes","wednesday"],
+		"tags":["quattuor-temporum-pentecostes","wednesday","ferial","penitential"]
+	},
+	"feria-vi-quattuor-temporum-pentecostes":{
+		"day":"Feria IV Quattuor Temporum Pentecostes",
+		"occurrence":["pentecostes","friday"],
+		"tags":["quattuor-temporum-pentecostes","friday","ferial","penitential"]
+	},
+	"sabbato-quattuor-temporum-pentecostes":{
+		"day":"Feria IV Quattuor Temporum Pentecostes",
+		"occurrence":["pentecostes","saturday"],
+		"tags":["quattuor-temporum-pentecostes","saturday","ferial","penitential"]
+	},
 	"corpus-christi":{
 		"day":"Ss. Corporis Christi",
 		"occurrence":["thursday","week-i-pentecost"],
@@ -30,6 +75,21 @@
 		"day":"Ss. Cordis D.N.J.C.",
 		"occurrence":["friday","week-ii-pentecost"],
 		"tags":["cor-jesus","greater-double"]
+	},
+	"feria-iv-quattuor-temporum-septembris":{
+		"day":"Feria IV Quattuor Temporum Septembris",
+		"occurrence":["week-iii-september","wednesday"],
+		"tags":["quattuor-temporum-septembris","wednesday","ferial","penitential"]
+	},
+	"feria-vi-quattuor-temporum-septembris":{
+		"day":"Feria IV Quattuor Temporum Septembris",
+		"occurrence":["week-iii-september","friday"],
+		"tags":["quattuor-temporum-septembris","friday","ferial","penitential"]
+	},
+	"sabbato-quattuor-temporum-septembris":{
+		"day":"Feria IV Quattuor Temporum Septembris",
+		"occurrence":["week-iii-september","saturday"],
+		"tags":["quattuor-temporum-septembris","saturday","ferial","penitential"]
 	},
 	"nativity-sunday":{
 		"day":"Dominica infra Octavam Nativitatis",
