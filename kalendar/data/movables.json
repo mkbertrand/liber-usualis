@@ -50,6 +50,21 @@
 		"occurrence":["sunday","week-iii-easter"],
 		"tags":["patrocinius-joseph","double-ii-class"]
 	},
+	"feria-ii-rogationis":{
+		"day":"Feria II in Rogationibus",
+		"occurrence":["monday","week-v-easter"],
+		"tags":["feria-ii-rogationis","monday","ferial","penitential"]
+	},
+	"feria-iii-rogationis":{
+		"day":"Feria III in Rogationibus",
+		"occurrence":["tuesday","week-v-easter"],
+		"tags":["feria-iii-rogationis","tuesday","ferial","penitential"]
+	},
+	"feria-iv-rogationis":{
+		"day":"Feria IV in Rogationibus",
+		"occurrence":["wednesday","week-v-easter"],
+		"tags":["feria-iv-rogationis","wednesday","ferial","penitential"]
+	},
 	"feria-iv-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","wednesday"],
