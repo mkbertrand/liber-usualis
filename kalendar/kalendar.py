@@ -6,13 +6,19 @@ import json
 import copy
 from kalendar import pascha
 
-epiphanycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/epiphany.json', 'r', encoding = ' utf-8').readlines()))
-paschalcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/paschal.json', 'r', encoding = ' utf-8').readlines()))
-adventcycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/advent.json', 'r', encoding = ' utf-8').readlines()))
-nativitycycle = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/nativity.json', 'r', encoding = ' utf-8').readlines()))
-movables = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/movables.json', 'r', encoding = ' utf-8').readlines()))
-months = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/summer-autumn.json', 'r', encoding = ' utf-8').readlines()))
-sanctoral = json.loads(''.join(open(str(pathlib.Path(__file__).parent.absolute()) + '/data/kalendar.json', 'r', encoding = ' utf-8').readlines()))
+
+data_root = pathlib.Path(__file__).parent.joinpath("data")
+
+def load_data(p):
+    return json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
+
+epiphanycycle = load_data('epiphany.json')
+paschalcycle = load_data('paschal.json')
+adventcycle = load_data('advent.json')
+nativitycycle = load_data('nativity.json')
+movables = load_data('movables.json')
+months = load_data('summer-autumn.json')
+sanctoral = load_data('kalendar.json')
 
 ranks = ["ferial","simple","semidouble","double","greater-double","double-ii-class","double-i-class"]
 
