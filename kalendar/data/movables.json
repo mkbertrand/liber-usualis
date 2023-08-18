@@ -2,23 +2,23 @@
 	"bmv-sabbato":{
 		"day":"BMV Sabbato",
 		"occurrence":["sabbatum"],
-		"excluded":["penitential", "in-octave"],
+		"excluded":["poenitentialis", "in-octave"],
 		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
 	},
 	"feria-iv-quattuor-temporum-adventus":{
 		"day":"Feria IV Quattuor Temporum Adventus",
 		"occurrence":["hebdomada-iii-advent","feria-iv"],
-		"tags":["quattuor-temporum-adventus","feria-iv","feria","penitential"]
+		"tags":["quattuor-temporum-adventus","feria-iv","feria","poenitentialis"]
 	},
 	"feria-vi-quattuor-temporum-adventus":{
 		"day":"Feria IV Quattuor Temporum Adventus",
 		"occurrence":["hebdomada-iii-advent","feria-vi"],
-		"tags":["quattuor-temporum-adventus","feria-vi","feria","penitential"]
+		"tags":["quattuor-temporum-adventus","feria-vi","feria","poenitentialis"]
 	},
 	"sabbato-quattuor-temporum-adventus":{
 		"day":"Feria IV Quattuor Temporum Adventus",
 		"occurrence":["hebdomada-iii-advent","sabbatum"],
-		"tags":["quattuor-temporum-adventus","sabbatum","feria","penitential"]
+		"tags":["quattuor-temporum-adventus","sabbatum","feria","poenitentialis"]
 	},
 	"nomen-jesus":{
 		"day":"Ss. Nominis Jesus",
@@ -28,22 +28,22 @@
 	"feria-iv-quattuor-temporum-quadragesimae":{
 		"day":"Feria IV Quattuor Temporum Quadragesimæ",
 		"occurrence":["hebdomada-i-quadragesimae","feria-iv"],
-		"tags":["quattuor-temporum-quadragesimae","feria-iv","feria","penitential"]
+		"tags":["quattuor-temporum-quadragesimae","feria-iv","feria","poenitentialis"]
 	},
 	"feria-vi-quattuor-temporum-quadragesimae":{
 		"day":"Feria IV Quattuor Temporum Quadragesimæ",
 		"occurrence":["hebdomada-i-quadragesimae","feria-vi"],
-		"tags":["quattuor-temporum-quadragesimae","feria-vi","feria","penitential"]
+		"tags":["quattuor-temporum-quadragesimae","feria-vi","feria","poenitentialis"]
 	},
 	"sabbato-quattuor-temporum-quadragesimae":{
 		"day":"Feria IV Quattuor Temporum Quadragesimæ",
 		"occurrence":["hebdomada-i-quadragesimae","sabbatum"],
-		"tags":["quattuor-temporum-quadragesimae","sabbatum","feria","penitential"]
+		"tags":["quattuor-temporum-quadragesimae","sabbatum","feria","poenitentialis"]
 	},
 	"septem-dolorum":{
 		"day":"Septem Dolorum B.M.V.",
 		"occurrence":["feria-vi","hebdomada-passionis"],
-		"tags":["septem-dolorum","duplex-majus","marianum"]
+		"tags":["septem-dolorum","duplex-majus","marianum","poenitentialis"]
 	},
 	"patrocinius-joseph":{
 		"day":"Patrocinii S. Joseph Conf., Sponsi B.M.V.",
@@ -53,32 +53,32 @@
 	"feria-ii-rogationis":{
 		"day":"Feria II in Rogationibus",
 		"occurrence":["feria-ii","hebdomada-v-paschae"],
-		"tags":["feria-ii-rogationis","feria-ii","feria","penitential"]
+		"tags":["feria-ii-rogationis","feria-ii","feria","poenitentialis"]
 	},
 	"feria-iii-rogationis":{
 		"day":"Feria III in Rogationibus",
 		"occurrence":["feria-iii","hebdomada-v-paschae"],
-		"tags":["feria-iii-rogationis","feria-iii","feria","penitential"]
+		"tags":["feria-iii-rogationis","feria-iii","feria","poenitentialis"]
 	},
 	"feria-iv-rogationis":{
 		"day":"Feria IV in Rogationibus",
 		"occurrence":["feria-iv","hebdomada-v-paschae"],
-		"tags":["feria-iv-rogationis","feria-iv","feria","penitential"]
+		"tags":["feria-iv-rogationis","feria-iv","feria","poenitentialis"]
 	},
 	"feria-iv-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","feria-iv"],
-		"tags":["quattuor-temporum-pentecostes","feria-iv","feria","penitential"]
+		"tags":["quattuor-temporum-pentecostes","feria-iv","feria","poenitentialis"]
 	},
 	"feria-vi-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","feria-vi"],
-		"tags":["quattuor-temporum-pentecostes","feria-vi","feria","penitential"]
+		"tags":["quattuor-temporum-pentecostes","feria-vi","feria","poenitentialis"]
 	},
 	"sabbato-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","sabbatum"],
-		"tags":["quattuor-temporum-pentecostes","sabbatum","feria","penitential"]
+		"tags":["quattuor-temporum-pentecostes","sabbatum","feria","poenitentialis"]
 	},
 	"corpus-christi":{
 		"day":"Ss. Corporis Christi",
@@ -91,20 +91,25 @@
 		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
 		"tags":["cor-jesus","duplex-majus"]
 	},
+	"septem-dolorum-septembris":{
+		"day":"Septem Dolorum B.M.V.",
+		"occurrence":["dominica","hebdomada-iii-septembris"],
+		"tags":["septem-dolorum","duplex-majus","marianum"]
+	},
 	"feria-iv-quattuor-temporum-septembris":{
 		"day":"Feria IV Quattuor Temporum Septembris",
 		"occurrence":["hebdomada-iii-septembris","feria-iv"],
-		"tags":["quattuor-temporum-septembris","feria-iv","feria","penitential"]
+		"tags":["quattuor-temporum-septembris","feria-iv","feria","poenitentialis"]
 	},
 	"feria-vi-quattuor-temporum-septembris":{
 		"day":"Feria IV Quattuor Temporum Septembris",
 		"occurrence":["hebdomada-iii-septembris","feria-vi"],
-		"tags":["quattuor-temporum-septembris","feria-vi","feria","penitential"]
+		"tags":["quattuor-temporum-septembris","feria-vi","feria","poenitentialis"]
 	},
 	"sabbato-quattuor-temporum-septembris":{
 		"day":"Feria IV Quattuor Temporum Septembris",
 		"occurrence":["hebdomada-iii-septembris","sabbatum"],
-		"tags":["quattuor-temporum-septembris","sabbatum","feria","penitential"]
+		"tags":["quattuor-temporum-septembris","sabbatum","feria","poenitentialis"]
 	},
 	"dominica-nativitatis":{
 		"day":"Dominica infra Octavam Nativitatis",
@@ -117,5 +122,9 @@
 	"joachim":{
 		"day":"S. Joachim Conf.",
 		"tags":["joachim","duplex-ii-classis","confessor"]
+	},
+	"nominis-bmv":{
+		"day":"Ss. Nominis B.M.V.",
+		"tags":["nomen-bmv","duplex-majus","marianum"]
 	}
 }

@@ -343,7 +343,7 @@
 	{
 		"date":"04-25",
 		"day":"S. Marci Evang.",
-		"tags":["marcus","duplex-ii-classis","martyr","evangelist","apostolus","penitential"]
+		"tags":["marcus","duplex-ii-classis","martyr","evangelista","apostolus","poenitentialis"]
 	},
 	{
 		"date":"04-26",
@@ -760,7 +760,7 @@
 	{
 		"date":"07-25",
 		"day":"S. Jacobi Apost.",
-		"genitive-day":"Jacobi",
+		"genitive-day":"S. Jacobi",
 		"tags":["jacobus","duplex-ii-classis","apostolus","habens-vigiliam","martyr"]
 	},
 	{
@@ -975,6 +975,148 @@
 		"date":"08-31",
 		"day":"S. Raymundi Nonnati Cf.",
 		"tags":["raymundus-nonnatus","confessor","duplex"]
+	},
+	{
+		"date":"09-01",
+		"day":"S. Ægidii Abbatis",
+		"tags":["aegidius","simplex","abbas"]
+	},
+	{
+		"date":"09-01",
+		"day":"Ss. duodecim Fratrum Mm.",
+		"tags":["duodecim-fratrum","commemoratio","martyres"]
+	},
+	{
+		"date":"09-02",
+		"day":"S. Stephani Hungariæ Reg., Conf.",
+		"tags":["stephanus-hungariae","semiduplex","confessor"]
+	},
+	{
+		"date":"09-05",
+		"day":"S. Laurentii Justiniani Episc. et Conf.",
+		"tags":["laurentius-justinianus","semiduplex","episcopus-confessor"]
+	},
+	{
+		"date":"09-08",
+		"day":"Nativitas B.M.V.",
+		"genitive-day":"Nativitatis B.M.V.",
+		"tags":["nativitas-bmv","duplex-ii-classis","marianum","habens-octavam"]
+	},
+	{
+		"date":"09-08",
+		"day":"S. Adriani Mart.",
+		"tags":["adrianus","commemoratio","martyr"]
+	},
+	{
+		"date":"09-09",
+		"day":"S. Gorgonii Mart.",
+		"tags":["gorgonius","commemoratio","martyr"]
+	},
+	{
+		"date":"09-10",
+		"day":"S. Nicolai de Tolentino Cf.",
+		"tags":["nicolaus-tolentino","duplex","confessor"]
+	},
+	{
+		"date":"09-11",
+		"day":"Ss. Proti et Hyacinthi Mm.",
+		"tags":["protus-hyacinthus","commemoratio","martyres"]
+	},
+	{
+		"date":"09-14",
+		"day":"Exaltatio S. Crucis",
+		"tags":["exaltatio-crucis","duplex-majus"]
+	},
+	{
+		"date":"09-15",
+		"day":"S. Nicomedis Mart.",
+		"tags":["nicomedes","commemoratio","martyr"]
+	},
+	{
+		"date":"09-16",
+		"day":"Ss. Cornelii et Cypriani Pont. Mart.",
+		"tags":["cornelius-cyprianus","semiduplex","episcopi-martyres"]
+	},
+	{
+		"date":"09-16",
+		"day":"Ss. Euphemiæ et Sociorum Mm.",
+		"tags":["euphemia-et-soc","commemoratio","martyres"]
+	},
+	{
+		"date":"09-17",
+		"day":"Impressio Sacrorum Stigmatum S. Francisci Conf.",
+		"tags":["impressio-stigmatum","duplex"]
+	},
+	{
+		"date":"09-18",
+		"day":"S. Josephi a Cupertino Cf.",
+		"tags":["josephus-cupertino","duplex","confessor"]
+	},
+	{
+		"date":"09-19",
+		"day":"Ss. Januarii Episc. et Socior. Mm.",
+		"tags":["januarius-et-soc","duplex","episcopus-martyr","martyres"]
+	},
+	{
+		"date":"09-20",
+		"day":"Ss. Eustachii et Sociorum Mm.",
+		"tags":["eustachii-et-soc","duplex","martyres"]
+	},
+	{
+		"date":"09-21",
+		"day":"S. Matthæi Apost. et Evang.",
+		"genitive-day":"S. Matthæi",
+		"tags":["matthaeus","duplex-ii-classis","apostolus","evangelista","habens-vigiliam"]
+	},
+	{
+		"date":"09-22",
+		"day":"S. Thomæ de Villanova Episc. et Conf.",
+		"tags":["thomas-villanova","duplex","episcopus-confessor"]
+	},
+	{
+		"date":"09-22",
+		"day":"Ss. Mauritii et Soc. Martyrum",
+		"tags":["mauritius-et-soc","commemoratio","martyres"]
+	},
+	{
+		"date":"09-23",
+		"day":"S. Lini Papæ et Mart.",
+		"tags":["linus","semiduplex","papa","martyr"]
+	},
+	{
+		"date":"09-23",
+		"day":"S. Theclæ Virg. et Mart.",
+		"tags":["thecla","commemoratio","virgo","martyr"]
+	},
+	{
+		"date":"09-24",
+		"day":"B.M.V. de Mercede",
+		"tags":["bmv-mercede","duplex-majus","marianum"]
+	},
+	{
+		"date":"09-26",
+		"day":"Ss. Cypriani et Justinæ Virg. Mm.",
+		"tags":["cyprianus-justina","virgo","martyres"]
+	},
+	{
+		"date":"09-27",
+		"day":"Ss. Cosmæ et Damiani Martyrum",
+		"tags":["cosmas-damianus","semiduplex","martyres"]
+	},
+	{
+		"date":"09-28",
+		"day":"S. Wenceslai Ducis Mart.",
+		"tags":["wenceslaus","semiduplex","martyr"]
+	},
+	{
+		"date":"09-29",
+		"day":"Dedicatio S. Michaëlis Archang.",
+		"tags":["dedicatio-michaelis","duplex-ii-classis"]
+	},
+	{
+		"date":"09-30",
+		"day":"S. Hieronymi Presbyt., Conf. et Eccl. Doct.",
+		"tags":["hieronymus","duplex","confessor","doctor"]
 	},
 	{
 		"date":"12-29",

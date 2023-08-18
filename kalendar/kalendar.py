@@ -234,7 +234,12 @@ def kalendar(year):
         addentry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"])
     #First Sunday of July
     addentry(nearsunday(date(year,7,1)), movables["pretiosissimi-sanguinis"])
-    
+    assumption = date(year, 9, 8)
+    if assumption.weekday() == 6:
+        addentry(assumption + timedelta(days=1), movables["nominis-bmv"])
+    else:
+        addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"])
+        
     #Octave and Vigil Processing
     octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"]
     numerals = ['II','III','IV','V','VI','VII']
