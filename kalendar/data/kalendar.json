@@ -1,5 +1,130 @@
 [
 	{
+		"date":"01-05",
+		"day":"S. Telesphori Pap. et Mart.",
+		"tags":["telesphorus","commemoratio","papa","martyr"]
+	},
+	{
+		"date":"01-13",
+		"day":"S. Hygini Papæ et Mart.",
+		"tags":["hyginus","commemoratio","papa","martyr"]
+	},
+	{
+		"date":"01-14",
+		"day":"S. Hilarii Ep. Conf. et Eccl. Doct.",
+		"tags":["hilarius","duplex","episcopus-confessor","doctor"]
+	},
+	{
+		"date":"01-14",
+		"day":"S. Felicis Presbyteri et Mart.",
+		"tags":["felix","commemoratio","martyr"]
+	},
+	{
+		"date":"01-15",
+		"day":"S. Pauli primi Eremitæ Confess.",
+		"tags":["paulus-eremita","duplex","confessor"]
+	},
+	{
+		"date":"01-15",
+		"day":"S. Mauri Abbatis",
+		"tags":["maurus","commemoratio","abbas"]
+	},
+	{
+		"date":"01-16",
+		"day":"S. Marcelli I. Papæ et Mart.",
+		"tags":["marcellus-i","semiduplex","papa","martyr"]
+	},
+	{
+		"date":"01-17",
+		"day":"S. Antonii Abbatis",
+		"tags":["antonius","duplex","abbas"]
+	},
+	{
+		"date":"01-18",
+		"day":"Cathedra S. Petri Romæ",
+		"tags":["cathedra-petri","duplex-majus"]
+	},
+	{
+		"date":"01-18",
+		"day":"S. Priscæ Virg. et Mart.",
+		"tags":["prisca","commemoratio","virgo","martyr"]
+	},
+	{
+		"date":"01-19",
+		"day":"Canuti Regis Mart.",
+		"tags":["canutus","semiduplex","martyr"]
+	},
+	{
+		"date":"01-19",
+		"day":"Ss. Marii et Soc. Mm.",
+		"tags":["marius-et-soc","commemoratio","martyres"]
+	},
+	{
+		"date":"01-20",
+		"day":"Ss. Fabiani Papæ et Sebastiani Mm.",
+		"tags":["fabianus-sebastianus","duplex","martyres","papa"]
+	},
+	{
+		"date":"01-21",
+		"day":"S. Agnetis Virg. et Mart.",
+		"tags":["agnes","duplex","virgo","martyr"]
+	},
+	{
+		"date":"01-22",
+		"day":"Ss. Vincentii et Anastasii Mm.",
+		"tags":["vincentius-anastasius","semiduplex","martyres"]
+	},
+	{
+		"date":"01-23",
+		"day":"S. Raymundi de Peñafort Conf.",
+		"tags":["raymundus-penafort","semiduplex","confessor"]
+	},
+	{
+		"date":"01-23",
+		"day":"S. Emerentianæ Virg. et Mart.",
+		"tags":["emerantiana","commemoratio","virgo","martyr"]
+	},
+	{
+		"date":"01-24",
+		"day":"S. Timothei Ep. et Mart.",
+		"tags":["timotheus","duplex","episcopus-martyr"]
+	},
+	{
+		"date":"01-25",
+		"day":"Conversio S. Pauli Ap.",
+		"tags":["conversio","duplex-majus","apostolus"]
+	},
+	{
+		"date":"01-26",
+		"day":"S. Polycarpi Ep. et Mart.",
+		"tags":["polycarpus","duplex","episcopus-martyr"]
+	},
+	{
+		"date":"01-27",
+		"day":"S. Joannis Chrysostomi Ep. Conf. et Eccl. Doct.",
+		"tags":["joannes-chrysostomus","episcopus-confessor","doctor"]
+	},
+	{
+		"date":"01-28",
+		"day":"S. Agnetis Secundo",
+		"tags":["agnes-secundo","simplex","virgo","martyr"]
+	},
+	{
+		"date":"01-29",
+		"day":"S. Francisci Salesii Ep. Conf. et Eccl. Doct.",
+		"tags":["franciscus-salesius","duplex","episcopus-confessor","doctor"]
+	},
+	{
+		"date":"01-30",
+		"day":"S. Martinæ Virg. et Mart.",
+		"tags":["martina","semiduplex","virgo","martyr"]
+	},
+	{
+		"date":"01-31",
+		"day":"S. Petri Nolasco Conf.",
+		"tags":["petrus-nolasco","duplex","confessor"]
+	},
+	{
 		"date":"02-01",
 		"day":"S. Ignatii Episc. et Mart.",
 		"tags":["ignatius","duplex","episcopus-martyr"]
@@ -263,7 +388,7 @@
 	{
 		"date":"05-03",
 		"day":"Ss. Alexandri I. Papæ et Soc. Mm., ac S. Juvenalis Episc. et Conf.",
-		"tags":["alexandrus-i-soc","commemoratio","papa","martyres","episcopus-confessor"]
+		"tags":["alexandrus-i-et-soc","commemoratio","papa","martyres","episcopus-confessor"]
 	},
 	{
 		"date":"05-04",
