@@ -164,7 +164,9 @@ def kalendar(year):
 
     #Nativity & Epiphany
     for i in nativitycycle:
-        addentry(todate(i["date"], year), i)
+        date0 = todate(i["date"], year)
+        del i["date"]
+        addentry(date0, i)
     addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"])
     
     #Autumnal Weeks
@@ -195,14 +197,17 @@ def kalendar(year):
     if leapyear:
         for i in sanctoral:
             date0 = todate(i["date"], year)
+            del i["date"]
             if date0.month == 2 and date0.day > 23:
                 addentry(date0 + timedelta(days=1), i)
             else:
                 addentry(date0, i)
     else:
         for i in sanctoral:
-            addentry(todate(i["date"], year), i)
-    
+            date0 = todate(i["date"], year)
+            del i["date"]
+            addentry(date0, i)
+        
     buffer = {}
     def addbufferentry(date0, entry):
         if (date0 in buffer):
@@ -231,7 +236,7 @@ def kalendar(year):
     addentry(nearsunday(date(year,7,1)), movables["pretiosissimi-sanguinis"])
     
     #Octave and Vigil Processing
-    octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta"]
+    octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"]
     numerals = ['II','III','IV','V','VI','VII']
     for i in kal:
         for j in kal[i]:
@@ -240,7 +245,6 @@ def kalendar(year):
                     entrystripped = copy.deepcopy(j)
                     entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                     entrystripped["tags"].extend(["semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()])
-                    entrystripped["date"] = datestring(i + timedelta(days=k))
                     entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
                     del entrystripped["genitive-day"]
                     addbufferentry(i + timedelta(days=k), entrystripped)
@@ -248,16 +252,13 @@ def kalendar(year):
                 entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                 entrystripped["tags"].append("duplex")
                 entrystripped["tags"].append("dies-octava")
-                entrystripped["date"] = datestring(i + timedelta(days=7))
                 entrystripped["day"] = "In Octava " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
                 addbufferentry(i + timedelta(days=7), entrystripped)
-                entrystripped = copy.deepcopy(j)
             if "habens-vigiliam" in j["tags"] and not "vigilia-excepta" in j["tags"]:
                 entrystripped = copy.deepcopy(j)
                 entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
                 entrystripped["tags"].extend(["vigilia","poenitentialis","feria"])
-                entrystripped["date"] = datestring(i - timedelta(days=1))
                 entrystripped["day"] = "Vigilia " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
                 addbufferentry(i - timedelta(days=1), entrystripped)
