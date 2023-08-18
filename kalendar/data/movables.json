@@ -1,121 +1,121 @@
 {
 	"bmv-sabbato":{
 		"day":"BMV Sabbato",
-		"occurrence":["saturday"],
+		"occurrence":["sabbatum"],
 		"excluded":["penitential", "in-octave"],
-		"tags":["bmv-sabbato","saturday","simple","mary"]
+		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
 	},
 	"feria-iv-quattuor-temporum-adventus":{
 		"day":"Feria IV Quattuor Temporum Adventus",
-		"occurrence":["week-iii-advent","wednesday"],
-		"tags":["quattuor-temporum-adventus","wednesday","ferial","penitential"]
+		"occurrence":["hebdomada-iii-advent","feria-iv"],
+		"tags":["quattuor-temporum-adventus","feria-iv","feria","penitential"]
 	},
 	"feria-vi-quattuor-temporum-adventus":{
 		"day":"Feria IV Quattuor Temporum Adventus",
-		"occurrence":["week-iii-advent","friday"],
-		"tags":["quattuor-temporum-adventus","friday","ferial","penitential"]
+		"occurrence":["hebdomada-iii-advent","feria-vi"],
+		"tags":["quattuor-temporum-adventus","feria-vi","feria","penitential"]
 	},
 	"sabbato-quattuor-temporum-adventus":{
 		"day":"Feria IV Quattuor Temporum Adventus",
-		"occurrence":["week-iii-advent","saturday"],
-		"tags":["quattuor-temporum-adventus","saturday","ferial","penitential"]
+		"occurrence":["hebdomada-iii-advent","sabbatum"],
+		"tags":["quattuor-temporum-adventus","sabbatum","feria","penitential"]
 	},
 	"nomen-jesus":{
 		"day":"Ss. Nominis Jesus",
-		"occurrence":["sunday","week-ii-epiphany"],
-		"tags":["nomen-jesus","double-ii-class"]
+		"occurrence":["dominica","hebdomada-ii-epiphaniae"],
+		"tags":["nomen-jesus","duplex-ii-classis"]
 	},
 	"feria-iv-quattuor-temporum-quadragesimae":{
 		"day":"Feria IV Quattuor Temporum Quadragesimæ",
-		"occurrence":["week-i-lent","wednesday"],
-		"tags":["quattuor-temporum-quadragesimae","wednesday","ferial","penitential"]
+		"occurrence":["hebdomada-i-quadragesimae","feria-iv"],
+		"tags":["quattuor-temporum-quadragesimae","feria-iv","feria","penitential"]
 	},
 	"feria-vi-quattuor-temporum-quadragesimae":{
 		"day":"Feria IV Quattuor Temporum Quadragesimæ",
-		"occurrence":["week-i-lent","friday"],
-		"tags":["quattuor-temporum-quadragesimae","friday","ferial","penitential"]
+		"occurrence":["hebdomada-i-quadragesimae","feria-vi"],
+		"tags":["quattuor-temporum-quadragesimae","feria-vi","feria","penitential"]
 	},
 	"sabbato-quattuor-temporum-quadragesimae":{
 		"day":"Feria IV Quattuor Temporum Quadragesimæ",
-		"occurrence":["week-i-lent","saturday"],
-		"tags":["quattuor-temporum-quadragesimae","saturday","ferial","penitential"]
+		"occurrence":["hebdomada-i-quadragesimae","sabbatum"],
+		"tags":["quattuor-temporum-quadragesimae","sabbatum","feria","penitential"]
 	},
 	"septem-dolorum":{
 		"day":"Septem Dolorum B.M.V.",
-		"occurrence":["friday","passion-week"],
-		"tags":["septem-dolorum","greater-double","mary"]
+		"occurrence":["feria-vi","hebdomada-passionis"],
+		"tags":["septem-dolorum","duplex-major","marianum"]
 	},
 	"patrocinius-joseph":{
 		"day":"Patrocinii S. Joseph Conf., Sponsi B.M.V.",
-		"occurrence":["sunday","week-iii-easter"],
-		"tags":["patrocinius-joseph","double-ii-class"]
+		"occurrence":["dominica","hebdomada-iii-paschae"],
+		"tags":["patrocinius-joseph","duplex-ii-classis"]
 	},
 	"feria-ii-rogationis":{
 		"day":"Feria II in Rogationibus",
-		"occurrence":["monday","week-v-easter"],
-		"tags":["feria-ii-rogationis","monday","ferial","penitential"]
+		"occurrence":["feria-ii","hebdomada-v-paschae"],
+		"tags":["feria-ii-rogationis","feria-ii","feria","penitential"]
 	},
 	"feria-iii-rogationis":{
 		"day":"Feria III in Rogationibus",
-		"occurrence":["tuesday","week-v-easter"],
-		"tags":["feria-iii-rogationis","tuesday","ferial","penitential"]
+		"occurrence":["feria-iii","hebdomada-v-paschae"],
+		"tags":["feria-iii-rogationis","feria-iii","feria","penitential"]
 	},
 	"feria-iv-rogationis":{
 		"day":"Feria IV in Rogationibus",
-		"occurrence":["wednesday","week-v-easter"],
-		"tags":["feria-iv-rogationis","wednesday","ferial","penitential"]
+		"occurrence":["feria-iv","hebdomada-v-paschae"],
+		"tags":["feria-iv-rogationis","feria-iv","feria","penitential"]
 	},
 	"feria-iv-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
-		"occurrence":["pentecostes","wednesday"],
-		"tags":["quattuor-temporum-pentecostes","wednesday","ferial","penitential"]
+		"occurrence":["pentecostes","feria-iv"],
+		"tags":["quattuor-temporum-pentecostes","feria-iv","feria","penitential"]
 	},
 	"feria-vi-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
-		"occurrence":["pentecostes","friday"],
-		"tags":["quattuor-temporum-pentecostes","friday","ferial","penitential"]
+		"occurrence":["pentecostes","feria-vi"],
+		"tags":["quattuor-temporum-pentecostes","feria-vi","feria","penitential"]
 	},
 	"sabbato-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",
-		"occurrence":["pentecostes","saturday"],
-		"tags":["quattuor-temporum-pentecostes","saturday","ferial","penitential"]
+		"occurrence":["pentecostes","sabbatum"],
+		"tags":["quattuor-temporum-pentecostes","sabbatum","feria","penitential"]
 	},
 	"corpus-christi":{
 		"day":"Ss. Corporis Christi",
-		"occurrence":["thursday","week-i-pentecost"],
+		"occurrence":["feria-v","hebdomada-i-pentecostes"],
 		"genitive-day":"Corporis Christi",
-		"tags":["corpus-christi","double-i-class","has-octave"]
+		"tags":["corpus-christi","duplex-i-classis","has-octave"]
 	},
 	"cor-jesus":{
 		"day":"Ss. Cordis D.N.J.C.",
-		"occurrence":["friday","week-ii-pentecost"],
-		"tags":["cor-jesus","greater-double"]
+		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
+		"tags":["cor-jesus","duplex-major"]
 	},
 	"feria-iv-quattuor-temporum-septembris":{
 		"day":"Feria IV Quattuor Temporum Septembris",
-		"occurrence":["week-iii-september","wednesday"],
-		"tags":["quattuor-temporum-septembris","wednesday","ferial","penitential"]
+		"occurrence":["hebdomada-iii-septembris","feria-iv"],
+		"tags":["quattuor-temporum-septembris","feria-iv","feria","penitential"]
 	},
 	"feria-vi-quattuor-temporum-septembris":{
 		"day":"Feria IV Quattuor Temporum Septembris",
-		"occurrence":["week-iii-september","friday"],
-		"tags":["quattuor-temporum-septembris","friday","ferial","penitential"]
+		"occurrence":["hebdomada-iii-septembris","feria-vi"],
+		"tags":["quattuor-temporum-septembris","feria-vi","feria","penitential"]
 	},
 	"sabbato-quattuor-temporum-septembris":{
 		"day":"Feria IV Quattuor Temporum Septembris",
-		"occurrence":["week-iii-september","saturday"],
-		"tags":["quattuor-temporum-septembris","saturday","ferial","penitential"]
+		"occurrence":["hebdomada-iii-septembris","sabbatum"],
+		"tags":["quattuor-temporum-septembris","sabbatum","feria","penitential"]
 	},
-	"nativity-sunday":{
+	"dominica-nativitatis":{
 		"day":"Dominica infra Octavam Nativitatis",
-		"tags":["nativity","sunday","semidouble","sunday-octave"]
+		"tags":["nativitas","dominica","semiduplex","dominica-infra-octavam"]
 	},
 	"pretiosissimi-sanguinis":{
 		"day":"Pretiosissimi Sanguinis D.N.J.C.",
-		"tags":["pretiosissimi-sanguinis","double-ii-class"]
+		"tags":["pretiosissimi-sanguinis","duplex-ii-classis"]
 	},
 	"joachim":{
 		"day":"S. Joachim Conf.",
-		"tags":["joachim","double-ii-class","confessor"]
+		"tags":["joachim","duplex-ii-classis","confessor"]
 	}
 }

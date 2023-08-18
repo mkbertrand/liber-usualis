@@ -2,178 +2,178 @@
 	{
 		"date":"12-24",
 		"day":"Vigilia Nativitatis D.N.J.Chr.",
-		"tags":["vigilia-nativitatis","double","vigil","penitential","no-transfer"]
+		"tags":["nativitas","duplex","vigilia","poenitentialis","non-translandus"]
 	},
 	{
 		"date":"12-25",
 		"day":"Nativitas D.N.J.Chr.",
 		"genitive-day":"Nativitatis",
-		"tags":["nativitas","double-i-class","has-octave","special-octave","has-vigil","has-special-vigil"]
+		"tags":["nativitas","duplex-i-classis","habens-octavam","octava-excepta","habens-vigiliam","vigilia-excepta"]
 	},
 	{
 		"date":"12-26",
 		"day":"S. Stephani Protomart.",
-		"tags":["stephanus","double-ii-class","martyr","has-octave","has-special-octave"]
+		"tags":["stephanus","duplex-ii-classis","martyr","habens-octavam","octava-excepta"]
 	},
 	{
 		"date":"12-26",
 		"day":"Dies II infra Octavam Nativitatis",
-		"tags":["nativitas","semidouble","in-octave","day-2"]
+		"tags":["nativitas","semiduplex","infra-octavam","dies-ii"]
 	},
 	{
 		"date":"12-27",
 		"day":"Dies III infra Octavam Nativitatis",
-		"tags":["nativitas","semidouble","in-octave","day-3"]
+		"tags":["nativitas","semiduplex","infra-octavam","dies-iii"]
 	},
 	{
 		"date":"12-27",
 		"day":"S. Joannis Apostoli et Evangelistæ",
-		"tags":["joannes-apostolus","double-ii-class","apostle","evangelist","has-octave","has-special-octave"]
+		"tags":["joannes-apostolus","duplex-ii-classis","apostolus","evangelista","habens-octavam","octava-excepta"]
 	},
 	{
 		"date":"12-27",
 		"day":"Dies II infra Octavam S. Stephani",
-		"tags":["stephanus","semidouble","martyr","in-octave","day-2"]
+		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-ii"]
 	},
 	{
 		"date":"12-28",
 		"day":"Dies IV infra Octavam Nativitatis",
-		"tags":["nativitas","semidouble","in-octave","day-4"]
+		"tags":["nativitas","semiduplex","infra-octavam","dies-iv"]
 	},
 	{
 		"date":"12-28",
 		"day":"Ss. Innocentium Mart.",
-		"tags":["innocentes","double-ii-class","martyrs","has-octave","has-special-octave"]
+		"tags":["innocentes","duplex-ii-classis","martyres","habens-octavam","octava-excepta"]
 	},
 	{
 		"date":"12-28",
 		"day":"Dies III infra Octavam S. Stephani",
-		"tags":["stephanus","semidouble","martyr","in-octave","day-3"]
+		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-iii"]
 	},
 	{
 		"date":"12-28",
 		"day":"Dies II infra Octavam S. Joannis",
-		"tags":["joannes-apostolus","semidouble","apostle","evangelist","in-octave","day-2"]
+		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-ii"]
 	},
 	{
 		"date":"12-29",
 		"day":"Dies V infra Octavam Nativitatis",
-		"tags":["nativitas","semidouble","in-octave","day-5"]
+		"tags":["nativitas","semiduplex","infra-octavam","dies-v"]
 	},
 	{
 		"date":"12-29",
 		"day":"Dies IV infra Octavam S. Stephani",
-		"tags":["stephanus","semidouble","martyr","in-octave","day-4"]
+		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-iv"]
 	},
 	{
 		"date":"12-29",
 		"day":"Dies III infra Octavam S. Joannis",
-		"tags":["joannes-apostolus","semidouble","apostle","evangelist","in-octave","day-3"]
+		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iii"]
 	},
 	{
 		"date":"12-29",
 		"day":"Dies II infra Octavam Ss. Innocentium",
-		"tags":["innocentes","semidouble","martyrs","in-octave","day-2"]
+		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-ii"]
 	},
 	{
 		"date":"12-30",
 		"day":"Dies VI infra Octavam Nativitatis",
-		"tags":["nativitas","semidouble","in-octave","day-6"]
+		"tags":["nativitas","semiduplex","infra-octavam","dies-vi"]
 	},
 	{
 		"date":"12-30",
 		"day":"Dies V infra Octavam S. Stephani",
-		"tags":["stephanus","semidouble","martyr","in-octave","day-5"]
+		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-v"]
 	},
 	{
 		"date":"12-30",
 		"day":"Dies IV infra Octavam S. Joannis",
-		"tags":["joannes-apostolus","semidouble","apostle","evangelist","in-octave","day-4"]
+		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iv"]
 	},
 	{
 		"date":"12-30",
 		"day":"Dies III infra Octavam Ss. Innocentium",
-		"tags":["innocentes","semidouble","martyrs","in-octave","day-3"]
+		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-iii"]
 	},
 	{
 		"date":"12-31",
 		"day":"Dies VII infra Octavam Nativitatis",
-		"tags":["nativitas","semidouble","in-octave","day-7"]
+		"tags":["nativitas","semiduplex","infra-octavam","dies-vii"]
 	},
 	{
 		"date":"12-31",
 		"day":"Dies VI infra Octavam S. Stephani",
-		"tags":["stephanus","semidouble","martyr","in-octave","day-6"]
+		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-vi"]
 	},
 	{
 		"date":"12-31",
 		"day":"Dies V infra Octavam S. Joannis",
-		"tags":["joannes-apostolus","semidouble","apostle","evangelist","in-octave","day-5"]
+		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-v"]
 	},
 	{
 		"date":"12-31",
 		"day":"Dies IV infra Octavam Ss. Innocentium",
-		"tags":["innocentes","semidouble","martyrs","in-octave","day-4"]
+		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-iv"]
 	},
 	{
 		"date":"01-01",
 		"day":"Circumcisio Domini",
-		"tags":["circumcisio","double-ii-class","octave-day"]
+		"tags":["circumcisio","duplex-ii-classis","dies-octava"]
 	},
 	{
 		"date":"01-01",
 		"day":"Dies VII infra Octavam S. Stephani",
-		"tags":["stephanus","semidouble","martyr","in-octave","day-7"]
+		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-vii"]
 	},
 	{
 		"date":"01-01",
 		"day":"Dies VI infra Octavam S. Joannis",
-		"tags":["joannes-apostolus","semidouble","apostle","evangelist","in-octave","day-6"]
+		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vi"]
 	},
 	{
 		"date":"01-01",
 		"day":"Dies V infra Octavam Ss. Innocentium",
-		"tags":["innocentes","semidouble","martyrs","in-octave","day-5"]
+		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-v"]
 	},
 	{
 		"date":"01-02",
 		"day":"In Octava S. Stephani",
-		"tags":["stephanus","double","martyr","octave-day"]
+		"tags":["stephanus","duplex","martyr","dies-octava"]
 	},
 	{
 		"date":"01-02",
 		"day":"Dies VII infra Octavam S. Joannis",
-		"tags":["joannes-apostolus","semidouble","apostle","evangelist","in-octave","day-7"]
+		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vii"]
 	},
 	{
 		"date":"01-02",
 		"day":"Dies VI infra Octavam Ss. Innocentium",
-		"tags":["innocentes","semidouble","martyrs","in-octave","day-6"]
+		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-vi"]
 	},
 	{
 		"date":"01-03",
 		"day":"In Octava S. Joannis",
-		"tags":["joannes-apostolus","double","apostle","evangelist","octave-day"]
+		"tags":["joannes-apostolus","duplex","apostolus","evangelista","dies-octava"]
 	},
 	{
 		"date":"01-03",
 		"day":"Dies VII infra Octavam Ss. Innocentium",
-		"tags":["innocentes","semidouble","martyrs","in-octave","day-7"]
+		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-vii"]
 	},
 	{
 		"date":"01-04",
 		"day":"In Octava Ss. Innocentium",
-		"tags":["innocentes","double","martyrs","octave-day"]
+		"tags":["innocentes","duplex","martyres","dies-octava"]
 	},
 	{
 		"date":"01-05",
 		"day":"Vigilia Epiphaniæ",
-		"tags":["vigilia-epiphaniae","semidouble","vigil","penitential","no-transfer"]
+		"tags":["epiphania","semiduplex","vigilia","poenitentialis","non-translandus"]
 	},
 	{
 		"date":"01-06",
 		"day":"Epiphania Domini",
 		"genitive-day":"Epiphaniæ",
-		"tags":["epiphania","double-i-class","has-octave","has-vigil","has-special-vigil"]
+		"tags":["epiphania","duplex-i-classis","habens-octavam","habens-vigiliam","vigilia-excepta"]
 	}
 ]
