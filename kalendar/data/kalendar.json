@@ -77,7 +77,7 @@
 	{
 		"date":"02-22",
 		"day":"Cathedra S. Petri Antiochiæ",
-		"tags":["cathedra-petri-antiochiae","duplex-major"]
+		"tags":["cathedra-petri-antiochiae","duplex-majus"]
 	},
 	{
 		"date":"02-23",
@@ -148,7 +148,7 @@
 	{
 		"date":"03-20",
 		"day":"S. Benedicti Abbatis",
-		"tags":["benedictus","duplex-major","abbas"]
+		"tags":["benedictus","duplex-majus","abbas"]
 	},
 	{
 		"date":"03-25",
@@ -278,7 +278,7 @@
 	{
 		"date":"05-06",
 		"day":"S. Joannis ante portam Latinam",
-		"tags":["joannes-portam-latinam","duplex-major"]
+		"tags":["joannes-portam-latinam","duplex-majus"]
 	},
 	{
 		"date":"05-07",
@@ -288,7 +288,7 @@
 	{
 		"date":"05-08",
 		"day":"Apparitio S. Michaëlis Archang.",
-		"tags":["apparitio-michaelis","duplex-major"]
+		"tags":["apparitio-michaelis","duplex-majus"]
 	},
 	{
 		"date":"05-09",
@@ -423,12 +423,12 @@
 	{
 		"date":"06-10",
 		"day":"S. Margaritæ Reginæ Scotiæ Viduæ",
-		"tags":["margarita","semiduplex","vidua"]
+		"tags":["margarita-scotiae","semiduplex","vidua"]
 	},
 	{
 		"date":"06-11",
 		"day":"S. Barnabæ Apost.",
-		"tags":["barnabas","duplex-major","apostolus","martyr"]
+		"tags":["barnabas","duplex-majus","apostolus","martyr"]
 	},
 	{
 		"date":"06-12",
@@ -515,12 +515,173 @@
 	{
 		"date":"06-30",
 		"day":"Commemoratio S. Pauli Apost.",
-		"tags":["commemoratio-pauli","duplex-major","martyr","apostolus"]
+		"tags":["commemoratio-pauli","duplex-majus","martyr","apostolus"]
+	},
+	{
+		"date":"07-02",
+		"day":"Visitatio B.M.V.",
+		"tags":["visitatio","duplex-ii-classis","marianum"]
+	},
+	{
+		"date":"07-02",
+		"day":"Ss. Mart. Processi et Martiniani",
+		"tags":["processus-martinianus","commemoratio","martyres"]
+	},
+	{
+		"date":"07-05",
+		"day":"Ss. Cyrilli et Methodii Pont. et Conf.",
+		"tags":["cyrillus-methodius","duplex","episcopi-confessores"]
+	},
+	{
+		"date":"07-08",
+		"day":"S. Elisabeth Reginæ Portugalliæ",
+		"tags":["elisabeth-portugalliae","semiduplex","vidua"]
+	},
+	{
+		"date":"07-10",
+		"day":"Ss. Septem Fratrum Martyrum et Ss. Rufinæ ac Secundæ Virg. et Mm.",
+		"tags":["septem-fratres","semiduplex","martyres"]
+	},
+	{
+		"date":"07-11",
+		"day":"S. Pii I. Papæ et Mart.",
+		"tags":["pius-i","simplex","martyr","papa"]
+	},
+	{
+		"date":"07-12",
+		"day":"S. Joannis Gualberti Abb.",
+		"tags":["joannes-gualbertus","duplex","abbas"]
+	},
+	{
+		"date":"07-12",
+		"day":"Ss. Naboris et Felicis Mm.",
+		"tags":["nabor-felix","commemoratio","martyres"]
+	},
+	{
+		"date":"07-13",
+		"day":"S. Anacleti Papæ et Mart.",
+		"tags":["anacletus","semiduplex","papa","martyr"]
+	},
+	{
+		"date":"07-14",
+		"day":"S. Bonaventuræ Ep., Cf. et Eccl. Doct.",
+		"tags":["bonaventura","duplex","episcopus-confessor","doctor"]
+	},
+	{
+		"date":"07-15",
+		"day":"S. Henrici Imperat. Conf.",
+		"tags":["henricus","semiduplex","confessor"]
+	},
+	{
+		"date":"07-16",
+		"day":"B.M.V. de Monte Carmelo",
+		"tags":["bmv-carmelo","duplex-majus","marianum"]
+	},
+	{
+		"date":"07-17",
+		"day":"S. Alexii Conf.",
+		"tags":["alexius","semiduplex","confessor"]
+	},
+	{
+		"date":"07-18",
+		"day":"S. Camilli de Lellis Conf.",
+		"tags":["camillus-lellis","duplex","confessor"]
+	},
+	{
+		"date":"07-18",
+		"day":"Ss. Symphorosæ et septem Filiorum ejus Mm.",
+		"tags":["symphorosa-filii","commemoratio","martyres"]
+	},
+	{
+		"date":"07-19",
+		"day":"S. Vincentii a Paulo Conf.",
+		"tags":["vincentius-paulo","duplex","confessor"]
+	},
+	{
+		"date":"07-20",
+		"day":"S. Hieronymi Æmiliani Cf.",
+		"tags":["hieronymus-aemilianus","duplex","confessor"]
+	},
+	{
+		"date":"07-20",
+		"day":"S. Margaritæ Virg. et M.",
+		"tags":["margarita","commemoratio","virgo","martyr"]
+	},
+	{
+		"date":"07-21",
+		"day":"S. Praxedis Virginis",
+		"tags":["praxedes","simplex","virgo"]
+	},
+	{
+		"date":"07-22",
+		"day":"S. Mariæ Magdalenæ Pœnitent.",
+		"tags":["maria-magdalena-poenitentia","duplex"]
+	},
+	{
+		"date":"07-23",
+		"day":"S. Apollinaris Ep. et Mart.",
+		"tags":["apollinaris","duplex","episcopus-martyr"]
+	},
+	{
+		"date":"07-23",
+		"day":"S. Liborii Ep. Conf.",
+		"tags":["liborius","commemoratio","episcopus-confessor"]
+	},
+	{
+		"date":"07-24",
+		"day":"S. Christianæ Virg. et Mart.",
+		"tags":["christiana","commemoratio","virgo","martyr"]
+	},
+	{
+		"date":"07-25",
+		"day":"S. Jacobi Apost.",
+		"genitive-day":"Jacobi",
+		"tags":["jacobus","duplex-ii-classis","apostolus","habens-vigiliam","martyr"]
+	},
+	{
+		"date":"07-25",
+		"day":"S. Christophori Mart.",
+		"tags":["christophorus","commemoratio","martyr"]
+	},
+	{
+		"date":"07-26",
+		"day":"S. Annæ Matris B.M.V.",
+		"tags":["anna","duplex-ii-classis","vidua"]
+	},
+	{
+		"date":"07-27",
+		"day":"S. Pantaleonis Mart.",
+		"tags":["pantaleon","simplex","martyr"]
+	},
+	{
+		"date":"07-28",
+		"day":"Ss. Nazarii, Celsi, Victoris I. Pap. Mm., ac Innocentii I. Papæ et Conf.",
+		"tags":["nazarius-celsus,victor-i","papae","martyres"]
+	},
+	{
+		"date":"07-29",
+		"day":"S. Marthæ Virg.",
+		"tags":["martha","semiduplex","virgo"]
+	},
+	{
+		"date":"07-29",
+		"day":"Ss. Felicis II. Papæ, et Simplicii, Faustini et Beatricis Mm.",
+		"tags":["felix-ii-simplicius-faustinus-beatrix","commemoratio","papa","martyres"]
+	},
+	{
+		"date":"07-30",
+		"day":"Ss. Abdon et Sennen Mm",
+		"tags":["abdon-sennen","simplex","martyres"]
+	},
+	{
+		"date":"07-31",
+		"day":"S. Ignatii de Lojola Conf.",
+		"tags":["ignatius-lojola","duplex","confessor"]
 	},
 	{
 		"date":"08-01",
 		"day":"S. Petri ad Vincula",
-		"tags":["petrus-ad-vincula","duplex-major"]
+		"tags":["petrus-ad-vincula","duplex-majus"]
 	},
 	{
 		"date":"08-01",
@@ -540,17 +701,17 @@
 	{
 		"date":"08-04",
 		"day":"S. Dominici Conf.",
-		"tags":["dominicus","duplex-major","confessor"]
+		"tags":["dominicus","duplex-majus","confessor"]
 	},
 	{
 		"date":"08-05",
 		"day":"Dedicatio S. Mariæ ad Nives",
-		"tags":["maria-ad-nives","duplex-major","marianum"]
+		"tags":["maria-ad-nives","duplex-majus","marianum"]
 	},
 	{
 		"date":"08-06",
 		"day":"Transfiguratio D.N.J.C.",
-		"tags":["transfiguratio","duplex-major"]
+		"tags":["transfiguratio","duplex-majus"]
 	},
 	{
 		"date":"08-06",
@@ -668,7 +829,7 @@
 	{
 		"date":"08-29",
 		"day":"Decollatio S. Joannis Bapt.",
-		"tags":["decollatio-joannis-baptistae","duplex-major","martyr"]
+		"tags":["decollatio-joannis-baptistae","duplex-majus","martyr"]
 	},
 	{
 		"date":"08-29",

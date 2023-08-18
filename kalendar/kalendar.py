@@ -20,7 +20,7 @@ movables = load_data('movables.json')
 months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 
-ranks = ["feria","simplex","semiduplex","duplex","duplex-major","duplex-ii-classis","duplex-i-classis"]
+ranks = ["feria","simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"]
 
 class SearchResult:
     def __init__(self, date, feast):
@@ -134,7 +134,6 @@ def kalendar(year):
         if (date0 == christmas):
             break
         del entry["difference"]
-        #entry["date"] = datestring(date0)
         addentry(date0, entry)
     
     #Paschal Cycle
@@ -146,7 +145,6 @@ def kalendar(year):
             psundayomission = True
             xxiiipentecostentry = entry
             break
-        #entry["date"] = datestring(date0)
         addentry(date0, entry)
     
     #Epiphany Sundays 
@@ -323,8 +321,8 @@ def kalendar(year):
     obstacles.append("duplex-i-classis")
     transfer_all(["duplex-ii-classis"], obstacles)
     obstacles.extend(["duplex-ii-classis","dies-octava"])
-    transfer_all(["duplex-major"], obstacles)
-    obstacles.append("duplex-major")
+    transfer_all(["duplex-majus"], obstacles)
+    obstacles.append("duplex-majus")
     transfer_all(["doctor","duplex"], obstacles)
     
     for i in list(filter(lambda i:not "non-translandus" in i.feast["tags"], all_tags(kal, ["vigilia"]))):
