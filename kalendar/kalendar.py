@@ -83,7 +83,7 @@ def kalendar(year):
                 if (mention):
                     oldfeast = copy.deepcopy(kal[match.date][i])
                     oldfeast["tags"].append("translatus-originalis")
-                    oldfeast["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), oldfeast["tags"]))
+                    oldfeast["tags"] = [item for item in oldfeast["tags"] if not item in ranks and not item in octavevigiltags]
                     kal[match.date][i] = oldfeast
                 else:
                     kal[match.date].remove(i)
@@ -108,7 +108,7 @@ def kalendar(year):
                 if (mention):
                     oldfeast = copy.deepcopy(kal[match.date][i])
                     oldfeast["tags"].append("translatus-originalis")
-                    oldfeast["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), oldfeast["tags"]))
+                    oldfeast["tags"] = [item for item in oldfeast["tags"] if not item in ranks and not item in octavevigiltags]
                     kal[match.date][i] = oldfeast
                 else:
                     kal[match.date].remove(i)
@@ -223,7 +223,7 @@ def kalendar(year):
             matches = all_tags(kal, movables[i]["occurrence"])
             if "excluded" in movables[i].keys():
                 excluded = movables[i].pop("excluded")
-                matches = filter(lambda j:not any(k in j.feast["tags"] for k in excluded), matches)
+                matches = (j for j in matches if not any(k in j.feast["tags"] for k in excluded))
             movables[i].pop("occurrence")
             for j in matches:
                 addentry(j.date,movables[i])
@@ -250,13 +250,13 @@ def kalendar(year):
             if "habens-octavam" in j["tags"] and not "octava-excepta" in j["tags"]:
                 for k in range(1,7):
                     entrystripped = copy.deepcopy(j)
-                    entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
+                    entrystripped["tags"] = [item for item in entrystripped["tags"] if not item in ranks and not item in octavevigiltags]
                     entrystripped["tags"].extend(["semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()])
                     entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
                     del entrystripped["genitive-day"]
                     addbufferentry(i + timedelta(days=k), entrystripped)
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
+                entrystripped["tags"] = [item for item in entrystripped["tags"] if not item in ranks and not item in octavevigiltags]
                 entrystripped["tags"].append("duplex")
                 entrystripped["tags"].append("dies-octava")
                 entrystripped["day"] = "In Octava " + entrystripped["genitive-day"]
@@ -264,7 +264,7 @@ def kalendar(year):
                 addbufferentry(i + timedelta(days=7), entrystripped)
             if "habens-vigiliam" in j["tags"] and not "vigilia-excepta" in j["tags"]:
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"] = list(filter(lambda item:(not item in ranks and not item in octavevigiltags), entrystripped["tags"]))
+                entrystripped["tags"] = [item for item in entrystripped["tags"] if not item in ranks and not item in octavevigiltags]
                 entrystripped["tags"].extend(["vigilia","poenitentialis","feria"])
                 entrystripped["day"] = "Vigilia " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
@@ -316,7 +316,9 @@ def kalendar(year):
     excepted = ["dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava"]
     
     def transfer_all(target, obstacles):
-        for i in list(filter(lambda i:not any(j in i.feast["tags"] for j in excepted), all_tags(kal, target))):
+        for i in all_tags(kal, target):
+            if any(j in i.feast["tags"] for j in excepted):
+                continue
             for j in kal[i.date]:
                 if any(k in j["tags"] for k in obstacles):
                     autotransfer(i.feast["tags"], True, obstacles)
@@ -335,7 +337,9 @@ def kalendar(year):
     obstacles.append("duplex-majus")
     transfer_all(["doctor","duplex"], obstacles)
     
-    for i in list(filter(lambda i:not "non-translandus" in i.feast["tags"], all_tags(kal, ["vigilia"]))):
+    for i in all_tags(kal, ["vigilia"]):
+        if "non-translandus" in i.feast["tags"]:
+            continue
         for j in kal[i.date]:
             if "dominica" in j["tags"]:
                 transfer(i.feast["tags"], i.date - timedelta(days=1), True)
