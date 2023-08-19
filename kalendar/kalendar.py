@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from datetime import datetime
 from datetime import date
 from datetime import timedelta
@@ -342,3 +344,39 @@ def kalendar(year):
     #todo Translation Processing
     
     return kal
+
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description="Liturgical calendar generator",
+    )
+
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=argparse.FileType("w"),
+        default="-",
+        help="Output filename",
+    )
+
+    parser.add_argument(
+        "-y",
+        "--year",
+        type=int,
+        default=datetime.now().year,
+        help="Year to generate",
+    )
+
+    args = parser.parse_args()
+
+    # Generate kalendar
+    ret = kalendar(args.year)
+
+    # Convert datestrings to strings
+    ret = {str(k): v for k, v in ret.items()}
+
+    # Write JSON output
+    args.output.write(json.dumps(ret) + "\n")
