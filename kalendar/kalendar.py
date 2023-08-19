@@ -344,8 +344,9 @@ def kalendar(year):
             if "dominica" in j["tags"]:
                 transfer(i.feast["tags"], i.date - timedelta(days=1), True)
     
-    #todo Finish kalendar.json, pascha.json
-    #todo Translation Processing
+    fidelesdefuncti = unique_search(kal, ["fideles-defuncti"])
+    if any("dominica" in i["tags"] for i in kal[fidelesdefuncti.date]):
+        transfer(["fideles-defuncti"], fidelesdefuncti.date + timedelta(days=1), True)
     
     return kal
 
