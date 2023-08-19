@@ -1119,6 +1119,128 @@
 		"tags":["hieronymus","duplex","confessor","doctor"]
 	},
 	{
+		"date":"10-01",
+		"day":"S. Remigii Ep. et Conf.",
+		"tags":["remigius","semiduplex","episcopus-confessor"]
+	},
+	{
+		"date":"10-02",
+		"day":"Ss. Angelorum Custodum",
+		"tags":["angeli-custodes","duplex-majus"]
+	},
+	{
+		"date":"10-04",
+		"day":"S. Francisci Conf.",
+		"tags":["franciscus","duplex-majus","confessor"]
+	},
+	{
+		"date":"10-05",
+		"day":"Ss. Placidi et Sociorum Mm.",
+		"tags":["placidus-et-soc","simplex","martyres"]
+	},
+	{
+		"date":"10-06",
+		"day":"S. Brunonis Conf.",
+		"tags":["bruno","duplex","confessor"]
+	},
+	{
+		"date":"10-07",
+		"day":"S. Marci Papæ et Conf.",
+		"tags":["marcus-ii","simplex","papa","confessor"]
+	},
+	{
+		"date":"10-07",
+		"day":"Ss. Sergii et Soc. Mm.",
+		"tags":["sergius-et-soc","commemoratio","martyres"]
+	},
+	{
+		"date":"10-08",
+		"day":"S. Birgittæ Viduæ",
+		"tags":["birgitta","duplex","vidua"]
+	},
+	{
+		"date":"10-09",
+		"day":"Ss. Dionysii Ep., Rustici et Eleutherii Mm.",
+		"tags":["dionysius-rusticus-eleutherius","semiduplex","martyres"]
+	},
+	{
+		"date":"10-10",
+		"day":"S. Francisci Borgiæ Conf.",
+		"tags":["franciscus-borgiae","semiduplex","confessor"]
+	},
+	{
+		"date":"10-13",
+		"day":"S. Eduardi Regis Conf.",
+		"tags":["eduardus","semiduplex","confessor"]
+	},
+	{
+		"date":"10-14",
+		"day":"S. Callisti I. Papæ et Mart.",
+		"tags":["callistus-i","duplex","papa","martyr"]
+	},
+	{
+		"date":"10-15",
+		"day":"S. Teresiæ Virginis",
+		"tags":["teresia","duplex","virgo"]
+	},
+	{
+		"date":"10-17",
+		"day":"S. Hedwigis Viduæ",
+		"tags":["hedwigis","semiduplex","vidua"]
+	},
+	{
+		"date":"10-18",
+		"day":"S. Lucæ Evangelistæ",
+		"tags":["lucas","duplex-ii-classis","apostolus","evangelista"]
+	},
+	{
+		"date":"10-19",
+		"day":"S. Petri de Alcantara Conf.",
+		"tags":["petrus-alcantara","duplex","confessor"]
+	},
+	{
+		"date":"10-20",
+		"day":"S. Joannis Cantii Conf.",
+		"tags":["joannes-cantius","duplex","confessor"]
+	},
+	{
+		"date":"10-21",
+		"day":"S. Hilarionis Abbatis",
+		"tags":["hilarion","simplex","abbas"]
+	},
+	{
+		"date":"10-21",
+		"day":"Ss. Ursulæ et Soc. Virg. et Mm.",
+		"tags":["ursula-et-soc","virgines","martyres"]
+	},
+	{
+		"date":"10-25",
+		"day":"Ss. Chrysanthi et Dariæ Mm.",
+		"tags":["chrysanthus-et-daria","simplex","martyres"]
+	},
+	{
+		"date":"10-26",
+		"day":"S. Evaristi Papæ et Mart.",
+		"tags":["evaristus","simplex","papa","martyr"]
+	},
+	{
+		"date":"10-28",
+		"day":"Ss. Simonis et Judæ Apostolor.",
+		"genitive-day":"Ss. Simonis et Judæ",
+		"tags":["simon-et-judas","duplex-ii-classis","apostoli","habens-vigiliam"]
+	},
+	{
+		"date":"11-01",
+		"day":"Omnium Sanctorum",
+		"genitive-day":"Omnium Sanctorum",
+		"tags":["omnes-sanctes","duplex-i-classis","habens-vigiliam","habens-octavam"]
+	},
+	{
+		"date":"11-02",
+		"day":"Commem. Omnium Fidelium Defunctorum",
+		"tags":["fideles-defuncti","commemoratio","duplex"]
+	},
+	{
 		"date":"12-29",
 		"day":"S. Thomae, Episc. et Mart.",
 		"tags":["thomas-becket","semiduplex","episcopus-martyr"]
