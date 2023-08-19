@@ -23,6 +23,7 @@ months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 
 ranks = ["feria","simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"]
+octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"]
 
 class SearchResult:
     def __init__(self, date, feast):
@@ -66,6 +67,7 @@ def kalendar(year):
     def todate(text, year0):
         return date(year0, int(text[:2]), int(text[3:]))
     def addentry(date0, entry):
+        entry["tags"] = set(entry["tags"])
         if (date0 in kal):
             kal[date0].append(entry)
         else:
@@ -76,13 +78,14 @@ def kalendar(year):
     def transfer(tags, target, mention):
         match = unique_search(kal,tags)
         newfeast = copy.deepcopy(match.feast)
-        newfeast["tags"].append("translatus")
+        newfeast["tags"].add("translatus")
         addentry(target, newfeast)
         for i in range(0,len(kal[match.date])):
             if all(j in kal[match.date][i]["tags"] for j in tags):
                 if (mention):
                     oldfeast = copy.deepcopy(kal[match.date][i])
-                    oldfeast["tags"].append("translatus-originalis")
+                    oldfeast["tags"].add("translatus-originalis")
+                    
                     oldfeast["tags"] = [item for item in oldfeast["tags"] if not item in ranks and not item in octavevigiltags]
                     kal[match.date][i] = oldfeast
                 else:
@@ -92,7 +95,7 @@ def kalendar(year):
     def autotransfer(tags, mention, obstacles):
         match = unique_search(kal, tags)
         newfeast = copy.deepcopy(match.feast)
-        newfeast["tags"].append("translatus")
+        newfeast["tags"].add("translatus")
         newdate = match.date
         def issuitable(date0):
             for i in kal[date0]:
@@ -107,8 +110,11 @@ def kalendar(year):
             if all(j in kal[match.date][i]["tags"] for j in tags):
                 if (mention):
                     oldfeast = copy.deepcopy(kal[match.date][i])
-                    oldfeast["tags"].append("translatus-originalis")
-                    oldfeast["tags"] = [item for item in oldfeast["tags"] if not item in ranks and not item in octavevigiltags]
+                    oldfeast["tags"].add("translatus-originalis")
+                    for j in ranks:
+                        oldfeast["tags"].discard(j)
+                    for j in octavevigiltags:
+                        oldfeast["tags"].discard(j)
                     kal[match.date][i] = oldfeast
                 else:
                     kal[match.date].remove(i)
@@ -146,6 +152,7 @@ def kalendar(year):
         if (date0 == xxivpentecost):
             psundayomission = True
             xxiiipentecostentry = entry
+            xxiiipentecostentry["tags"] = set(xxiiipentecostentry["tags"])
             break
         addentry(date0, entry)
     
@@ -163,6 +170,7 @@ def kalendar(year):
         else:
             esundayomission = True
             omittedepiphanyentry = epiphanycycle[5 - i][0]
+            omittedepiphanyentry["tags"] = set(omittedepiphanyentry["tags"])
 
     #Nativity & Epiphany
     for i in nativitycycle:
@@ -243,29 +251,38 @@ def kalendar(year):
         addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"])
         
     #Octave and Vigil Processing
-    octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"]
+    
     numerals = ['II','III','IV','V','VI','VII']
     for i in kal:
         for j in kal[i]:
             if "habens-octavam" in j["tags"] and not "octava-excepta" in j["tags"]:
                 for k in range(1,7):
                     entrystripped = copy.deepcopy(j)
-                    entrystripped["tags"] = [item for item in entrystripped["tags"] if not item in ranks and not item in octavevigiltags]
-                    entrystripped["tags"].extend(["semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()])
+                    for l in octavevigiltags:
+                        entrystripped["tags"].discard(l)
+                    for l in ranks:
+                        entrystripped["tags"].discard(l)
+                    entrystripped["tags"].update(["semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()])
                     entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
                     del entrystripped["genitive-day"]
                     addbufferentry(i + timedelta(days=k), entrystripped)
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"] = [item for item in entrystripped["tags"] if not item in ranks and not item in octavevigiltags]
-                entrystripped["tags"].append("duplex")
-                entrystripped["tags"].append("dies-octava")
+                for l in octavevigiltags:
+                    entrystripped["tags"].discard(l)
+                for l in ranks:
+                    entrystripped["tags"].discard(l)
+                entrystripped["tags"].add("duplex")
+                entrystripped["tags"].add("dies-octava")
                 entrystripped["day"] = "In Octava " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
                 addbufferentry(i + timedelta(days=7), entrystripped)
             if "habens-vigiliam" in j["tags"] and not "vigilia-excepta" in j["tags"]:
                 entrystripped = copy.deepcopy(j)
-                entrystripped["tags"] = [item for item in entrystripped["tags"] if not item in ranks and not item in octavevigiltags]
-                entrystripped["tags"].extend(["vigilia","poenitentialis","feria"])
+                for l in octavevigiltags:
+                    entrystripped["tags"].discard(l)
+                for l in ranks:
+                    entrystripped["tags"].discard(l)
+                entrystripped["tags"].update(["vigilia","poenitentialis","feria"])
                 entrystripped["day"] = "Vigilia " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
                 addbufferentry(i - timedelta(days=1), entrystripped)
@@ -276,7 +293,7 @@ def kalendar(year):
     
     #23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if psundayomission:
-        xxiiipentecostentry["tags"].append("transfer")
+        xxiiipentecostentry["tags"].add("transfer")
         i = 1
         while i < 7:
             if (not any(any(j in i["tags"] for j in ranks[2:]) for i in kal[xxivpentecost - timedelta(days=i)])):
@@ -285,10 +302,11 @@ def kalendar(year):
             else:
                 i += 1
         if (i == 7):
-            xxiiipentecostentry["tags"].append("commemoratio")
+            xxiiipentecostentry["tags"].add("commemoratio")
+            xxiiipentecostentry["tags"].add("translatus")
             addentry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if esundayomission:
-        omittedepiphanyentry["tags"].append("translatus")
+        omittedepiphanyentry["tags"].add("translatus")
         septuagesima = easter - timedelta(days=63)
         i = 1
         while i < 7:
@@ -298,7 +316,8 @@ def kalendar(year):
             else:
                 i += 1
         if (i == 7):
-            omittedepiphanyentry["tags"].append("commemoratio")
+            omittedepiphanyentry["tags"].add("commemoratio")
+            omittedepiphanyentry["tags"].add("translatus")
             addentry(septuagesima - timedelta(days=1), omittedepiphanyentry)
     
     #Transfers
@@ -382,6 +401,9 @@ if __name__ == "__main__":
 
     # Convert datestrings to strings
     ret = {str(k): v for k, v in ret.items()}
-
+    # Convert tag set into list
+    for i in ret:
+        for j in ret[i]:
+            j["tags"] = list(j["tags"])
     # Write JSON output
     args.output.write(json.dumps(ret) + "\n")
