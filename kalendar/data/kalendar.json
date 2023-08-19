@@ -1387,8 +1387,80 @@
 		"tags":["andrea","duplex-ii-classis","apostolus","habens-vigiliam"]
 	},
 	{
+		"date":"12-02",
+		"day":"S. Bibianæ Virg. et Mart.",
+		"tags":["bibiana","semiduplex","virgo","martyr"]
+	},
+	{
+		"date":"12-03",
+		"day":"S. Francisci Xaverii Conf.",
+		"tags":["franciscus-xaverius","duplex","confessor"]
+	},
+	{
+		"date":"12-04",
+		"day":"S. Petri Chrysologi Episc., Conf. et Eccl. Doct.",
+		"tags":["petrus-chrysologus","duplex","episcopus-confessor","doctor"]
+	},
+	{
+		"date":"12-04",
+		"day":"S. Barbaræ Virg. et Mart.",
+		"tags":["barbara","commemoratio","virgo","martyr"]
+	},
+	{
+		"date":"12-05",
+		"day":"S. Sabbæ Abbatis",
+		"tags":["sabbas","commemoratio","abbas"]
+	},
+	{
+		"date":"12-06",
+		"day":"S. Nicolai Episc. et Conf.",
+		"tags":["nicolaus","duplex","episcopus-confessor"]
+	},
+	{
+		"date":"12-07",
+		"day":"S. Ambrosii Episc., Conf. et Eccl. Doct.",
+		"tags":["ambrosius","duplex","episcopus-confessor","doctor"]
+	},
+	{
+		"date":"12-08",
+		"day":"Immaculata Conceptio B.M.V.",
+		"genitive-day":"Immaculatæ Conceptionis",
+		"tags":["immaculata-conceptio-bmv","duplex-i-classis","marianum","habens-vigiliam","habens-octavam"]
+	},
+	{
+		"date":"12-10",
+		"day":"S. Melchiadis Papæ et Martyris",
+		"tags":["melchiades","commemoratio","papa","episcopus-martyr"]
+	},
+	{
+		"date":"12-11",
+		"day":"S. Damasi I. Papæ et Cf.",
+		"tags":["damasus-i","semiduplex","papa","episcopus-confessor"]
+	},
+	{
+		"date":"12-13",
+		"day":"S. Luciæ Virg. et Mart.",
+		"tags":["lucia","duplex","virgo","martyr"]
+	},
+	{
+		"date":"12-17",
+		"day":"S. Eusebii Episc. et Mart.",
+		"tags":["eusebius-martyr","semiduplex","episcopus-martyr"]
+	},
+	{
+		"date":"12-21",
+		"day":"S. Thomæ Apost.",
+		"genitive-day":"S. Thomæ",
+		"tags":["thomas","duplex-ii-classis","apostolus","habens-vigiliam"]
+	},
+	{
 		"date":"12-29",
-		"day":"S. Thomae, Episc. et Mart.",
+		"day":"S. Thomæ, Episc. et Mart.",
 		"tags":["thomas-becket","semiduplex","episcopus-martyr"]
+	},
+	{
+		"date":"12-31",
+		"day":"S. Silvestri I. Papæ et Cf.",
+		"tags":["silvestrus-i","duplex","papa","episcopus-confessor"]
 	}
 ]
