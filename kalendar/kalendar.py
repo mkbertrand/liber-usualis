@@ -127,16 +127,18 @@ def kalendar(year):
         newfeast = copy.deepcopy(match.feast)
         newfeast.add("translatus")
         kal.add_entry(target, newfeast)
-        for i in range(0,len(kal[match.date])):
-            if kal[match.date][i] >= tags:
+
+        entries = kal[match.date]
+        for i in range(0,len(entries)):
+            if entries[i] >= tags:
                 if mention:
-                    oldfeast = copy.deepcopy(kal[match.date][i])
+                    oldfeast = copy.deepcopy(entries[i])
                     oldfeast.add("translatus-originalis")
                     oldfeast -= ranks
                     oldfeast -= octavevigiltags
-                    kal[match.date][i] = oldfeast
+                    entries[i] = oldfeast
                 else:
-                    kal[match.date].remove(i)
+                    entries.remove(i)
                 break
     # Automatically decide the suitable date whither the feast should be transferred
     def autotransfer(tags, mention, obstacles):
@@ -146,18 +148,19 @@ def kalendar(year):
         newdate = match.date
         while not kal.tagsindate(newdate).isdisjoint(obstacles):
             newdate = newdate + timedelta(days=1)
-
         kal.add_entry(newdate, newfeast)
-        for i in range(0,len(kal[match.date])):
-            if kal[match.date][i] >= tags:
+
+        entries = kal[match.date]
+        for i in range(0,len(entries)):
+            if entries[i] >= tags:
                 if mention:
-                    oldfeast = copy.deepcopy(kal[match.date][i])
+                    oldfeast = copy.deepcopy(entries[i])
                     oldfeast.add("translatus-originalis")
                     oldfeast -= ranks
                     oldfeast -= octavevigiltags
-                    kal[match.date][i] = oldfeast
+                    entries[i] = oldfeast
                 else:
-                    kal[match.date].remove(i)
+                    entries.remove(i)
                 break
 
 
@@ -251,24 +254,21 @@ def kalendar(year):
 
     # Saints, and also handles leap years
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
-    for i in sanctoral:
-        date0 = todate(i, year)
+    for date0, entries in sanctoral.items():
+        date0 = todate(date0, year)
         if leapyear and date0.month == 2 and date0.day > 23:
             date0 = date0 + timedelta(days=1)
-        for j in sanctoral[i]:
-            kal.add_entry(date0, j)
+        for entry in entries:
+            kal.add_entry(date0, entry)
 
     # List of inferred feasts that get merged in later
     buffer = Kalendar(year=year)
 
     # Movable feasts with occurrence attribute
-    for i, movable in movables.items():
+    for name, movable in movables.items():
         movable = copy.deepcopy(movable)
         if "occurrence" in movable:
-            matches = kal.match(movable.pop("occurrence"))
-            if "excluded" in movable:
-                excluded = movable.pop("excluded")
-                matches = (j for j in matches if j.feast.isdisjoint(excluded))
+            matches = kal.match(movable.pop("occurrence"), movable.pop("excluded", set()))
             for match in matches:
                 buffer.add_entry(match.date, movable["tags"])
 
@@ -290,11 +290,11 @@ def kalendar(year):
         kal.add_entry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"]["tags"])
 
     # Octave and Vigil Processing
-    for i, entries in kal.items():
+    for ent_date, entries in kal.items():
         for entry in entries:
             if "habens-octavam" in entry and not "octava-excepta" in entry:
                 for k in range(1,7):
-                    date0 = i + timedelta(days=k)
+                    date0 = ent_date + timedelta(days=k)
                     if "quadragesima" in kal.tagsindate(date0):
                         break
                     entrystripped = copy.deepcopy(entry)
@@ -304,7 +304,7 @@ def kalendar(year):
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_unique(entrystripped, none_ok=True) is None:
                         buffer.add_entry(date0, entrystripped)
-                date0 = i + timedelta(days=7)
+                date0 = ent_date + timedelta(days=7)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
                 entrystripped = copy.deepcopy(entry)
@@ -319,7 +319,7 @@ def kalendar(year):
                 entrystripped -= octavevigiltags
                 entrystripped -= ranks
                 entrystripped |= {"vigilia","poenitentialis","feria"}
-                buffer.add_entry(i - timedelta(days=1), entrystripped)
+                buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
     kal |= buffer
     buffer.kal.clear()
@@ -362,18 +362,16 @@ def kalendar(year):
     if sjb.date == corpuschristi.date:
         transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, date(year, 6, 25), True)
     # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    if candlemas.date in (i.date for i in kal.match({"dominica-ii-classis"})):
+    if candlemas.date in (match.date for match in kal.match({"dominica-ii-classis"})):
         transfer({"purificatio","duplex-ii-classis"}, candlemas.date + timedelta(days=1), True)
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
     def transfer_all(target, obstacles):
-        for i in kal.match(target):
-            if not i.feast.isdisjoint(excepted):
-                continue
-            for j in kal[i.date]:
-                if not j.isdisjoint(obstacles):
-                    autotransfer(i.feast, True, obstacles)
+        for match in kal.match(target, excepted):
+            for entry in kal[match.date]:
+                if not entry.isdisjoint(obstacles):
+                    autotransfer(match.feast, True, obstacles)
     obstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
@@ -389,11 +387,11 @@ def kalendar(year):
     obstacles |= {"duplex-majus"}
     transfer_all({"doctor","duplex"}, obstacles)
 
-    for i in kal.match({"vigilia"}):
-        if "non-translandus" in i.feast:
+    for match in kal.match({"vigilia"}):
+        if "non-translandus" in match.feast:
             continue
-        if "dominica" in kal.tagsindate(i.date):
-            transfer(i.feast, i.date - timedelta(days=1), True)
+        if "dominica" in kal.tagsindate(match.date):
+            transfer(match.feast, match.date - timedelta(days=1), True)
 
     fidelesdefuncti = kal.match_unique({"fideles-defuncti"})
     if "dominica" in kal.tagsindate(fidelesdefuncti.date):
