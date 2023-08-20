@@ -177,7 +177,9 @@ def kalendar(year):
         del i["date"]
         addentry(date0, i)
     addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"])
-    
+    if date(year, 1, 6).weekday() == 6:
+        transfer(["epiphania","dominica"], date(year, 1, 12), True)
+        
     # Autumnal Weeks
     def nearsunday(kalends):
         if(kalends.weekday() < 3):
@@ -250,7 +252,6 @@ def kalendar(year):
         addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"])
         
     # Octave and Vigil Processing
-    
     numerals = ['II','III','IV','V','VI','VII']
     for i in kal:
         for j in kal[i]:
@@ -298,7 +299,7 @@ def kalendar(year):
     
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if psundayomission:
-        xxiiipentecostentry["tags"].add("transfer")
+        xxiiipentecostentry["tags"].add("translatus")
         i = 1
         while i < 7:
             if (not any(any(j in i["tags"] for j in ranks[3:]) for i in kal[xxivpentecost - timedelta(days=i)])):
@@ -337,7 +338,7 @@ def kalendar(year):
     if candlemas.date in (i.date for i in all_tags(["dominica-ii-classis"])):
         transfer(["purificatio","duplex-ii-classis"], candlemas.date + timedelta(days=1), True)
         
-    excepted = ["dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava"]
+    excepted = ["dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"]
     
     def transfer_all(target, obstacles):
         for i in all_tags(target):
@@ -346,7 +347,7 @@ def kalendar(year):
             for j in kal[i.date]:
                 if any(k in j["tags"] for k in obstacles):
                     autotransfer(i.feast["tags"], True, obstacles)
-    obstacles = ["dominica-i-classis","dominica-ii-classis","non-concurrentia"]
+    obstacles = ["dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"]
     
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
         # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
