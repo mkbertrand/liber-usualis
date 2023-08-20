@@ -53,7 +53,7 @@ def kalendar(year):
                     return SearchResult(i, j)
         return None
     
-    def datetags(date0):
+    def tagsindate(date0):
         ret = set()
         if not date0 in kal:
             return ret
@@ -257,7 +257,7 @@ def kalendar(year):
             if "habens-octavam" in j["tags"] and not "octava-excepta" in j["tags"]:
                 for k in range(1,7):
                     date0 = i + timedelta(days=k)
-                    if "quadragesima" in datetags(date0):
+                    if "quadragesima" in tagsindate(date0):
                         break
                     entrystripped = copy.deepcopy(j)
                     for l in octavevigiltags:
@@ -269,7 +269,7 @@ def kalendar(year):
                     del entrystripped["genitive-day"]
                     addbufferentry(date0, entrystripped)
                 date0 = i + timedelta(days=7)
-                if "quadragesima" in datetags(date0):
+                if "quadragesima" in tagsindate(date0):
                     continue
                 entrystripped = copy.deepcopy(j)
                 for l in octavevigiltags:
@@ -364,12 +364,11 @@ def kalendar(year):
     for i in all_tags(["vigilia"]):
         if "non-translandus" in i.feast["tags"]:
             continue
-        for j in kal[i.date]:
-            if "dominica" in j["tags"]:
-                transfer(i.feast["tags"], i.date - timedelta(days=1), True)
+        if "dominica" in tagsindate(i.date):
+            transfer(i.feast["tags"], i.date - timedelta(days=1), True)
     
     fidelesdefuncti = unique_search(["fideles-defuncti"])
-    if any("dominica" in i["tags"] for i in kal[fidelesdefuncti.date]):
+    if "dominica" in tagsindate(fidelesdefuncti.date):
         transfer(["fideles-defuncti"], fidelesdefuncti.date + timedelta(days=1), True)
     
     return kal
