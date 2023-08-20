@@ -304,8 +304,8 @@ def kalendar(year):
                     entrystripped -= octavevigiltags
                     entrystripped -= ranks
                     entrystripped |= {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
-                    #If a certain day within an Octave is manually entered, do not create one automatically
-                    if kal.match_unique(entrystripped, none_ok=True) == None:
+                    # If a certain day within an Octave is manually entered, do not create one automatically
+                    if kal.match_unique(entrystripped, none_ok=True) is None:
                         buffer.add_entry(date0, entrystripped)
                 date0 = i + timedelta(days=7)
                 if "quadragesima" in kal.tagsindate(date0):
@@ -314,8 +314,8 @@ def kalendar(year):
                 entrystripped -= octavevigiltags
                 entrystripped -= ranks
                 entrystripped |= {"duplex", "dies-octava"}
-                #If a certain day within an Octave is manually entered, do not create one automatically
-                if kal.match_unique(entrystripped, none_ok=True) == None:
+                # If a certain day within an Octave is manually entered, do not create one automatically
+                if kal.match_unique(entrystripped, none_ok=True) is None:
                     buffer.add_entry(date0, entrystripped)
             if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
                 entrystripped = copy.deepcopy(entry)
