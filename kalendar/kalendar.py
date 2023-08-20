@@ -35,32 +35,23 @@ class SearchResult:
 def datestring(date0):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
 
-def matches(kal, condition):
-    ret = []
-    for i in kal:
-        for j in kal[i]:
-            if condition(j["tags"]):
-                ret.append(SearchResult(i, j))
-    return ret
-
-def all_tags(kal,tags):
-    ret = []
-    for i in kal:
-        for j in kal[i]:
-            if all(k in j["tags"] for k in tags):
-                ret.append(SearchResult(i, j))
-    return ret
-
-def unique_search(kal,tags):
-    for i in kal:
-        for j in kal[i]:
-            if all(k in j["tags"] for k in tags):
-                return SearchResult(i, j)
-    return None
-
 def kalendar(year):
-    leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
     kal = {}
+
+    def all_tags(tags):
+        ret = []
+        for i in kal:
+            for j in kal[i]:
+                if all(k in j["tags"] for k in tags):
+                    ret.append(SearchResult(i, j))
+        return ret
+
+    def unique_search(tags):
+        for i in kal:
+            for j in kal[i]:
+                if all(k in j["tags"] for k in tags):
+                    return SearchResult(i, j)
+        return None
     
     def sundayafter(date0):
         return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=6)
@@ -72,11 +63,11 @@ def kalendar(year):
             kal[date0].append(entry)
         else:
             kal[date0] = [entry]
-            
-    #Will not work as intended if multiple matches are found for the tags
-    #If match is False there will be no mention that there was a feast in the original pre-tranfer date
+
+    # Will not work as intended if multiple matches are found for the tags
+    # If match is False there will be no mention that there was a feast in the original pre-tranfer date
     def transfer(tags, target, mention):
-        match = unique_search(kal,tags)
+        match = unique_search(tags)
         newfeast = copy.deepcopy(match.feast)
         newfeast["tags"].add("translatus")
         addentry(target, newfeast)
@@ -91,9 +82,9 @@ def kalendar(year):
                 else:
                     kal[match.date].remove(i)
                 break
-    #Automatically decide the suitable date whither the feast should be transferred
+    # Automatically decide the suitable date whither the feast should be transferred
     def autotransfer(tags, mention, obstacles):
-        match = unique_search(kal, tags)
+        match = unique_search(tags)
         newfeast = copy.deepcopy(match.feast)
         newfeast["tags"].add("translatus")
         newdate = match.date
@@ -134,17 +125,17 @@ def kalendar(year):
     esundayomission = False
     omittedepiphanyentry = {}
     
-    #Advent Cycle
+    # Advent Cycle
     for i in adventcycle:
         entry = i
         date0 = adventstart + timedelta(days=i["difference"])
-        #Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
+        # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
         if (date0 == christmas):
             break
         del entry["difference"]
         addentry(date0, entry)
     
-    #Paschal Cycle
+    # Paschal Cycle
     for i in paschalcycle:
         entry = i
         date0 = easter + timedelta(days=i["difference"])
@@ -156,7 +147,7 @@ def kalendar(year):
             break
         addentry(date0, entry)
     
-    #Epiphany Sundays 
+    # Epiphany Sundays 
     epiphanyweek = 0
     while epiphanysunday + timedelta(days=epiphanyweek * 7) != easter - timedelta(days=63):
         for i in range(0,7):
@@ -172,14 +163,14 @@ def kalendar(year):
             omittedepiphanyentry = epiphanycycle[5 - i][0]
             omittedepiphanyentry["tags"] = set(omittedepiphanyentry["tags"])
 
-    #Nativity & Epiphany
+    # Nativity & Epiphany
     for i in nativitycycle:
         date0 = todate(i["date"], year)
         del i["date"]
         addentry(date0, i)
     addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"])
     
-    #Autumnal Weeks
+    # Autumnal Weeks
     def nearsunday(kalends):
         if(kalends.weekday() < 3):
             return kalends - timedelta(days=1+kalends.weekday())
@@ -187,7 +178,7 @@ def kalendar(year):
             return kalends + timedelta(days=6-kalends.weekday())
     for i in range(8, 11):
         kalends = nearsunday(date(year, i, 1))
-        #Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
+        # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
         nextkalends = nearsunday(date(year, i + 1, 1))
         month = months[["augustus","september","october","november"][i - 8]]
         j = 0
@@ -196,15 +187,15 @@ def kalendar(year):
                 addentry(kalends + timedelta(days=j*7+k), month[j][k])
             j += 1
     kalends = nearsunday(date(year, 11, 1))
-    #Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
+    # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
     j = 0
     while kalends + timedelta(days=j*7) != adventstart:
         for k in range(0,7):
             addentry(kalends + timedelta(days=j*7+k), months["november"][j][k])
         j += 1
             
-    #Saints, and also handles leap years
-    if leapyear:
+    # Saints, and also handles leap years
+    if year % 4 == 0 and (year % 400 == 0 or year % 100 != 0):
         for i in sanctoral:
             date0 = todate(i["date"], year)
             del i["date"]
@@ -225,10 +216,10 @@ def kalendar(year):
         else:
             buffer[date0] = [entry]
     
-    #Movable feasts with occurrence attribute
+    # Movable feasts with occurrence attribute
     for i in movables:
         if "occurrence" in movables[i].keys():
-            matches = all_tags(kal, movables[i]["occurrence"])
+            matches = all_tags(movables[i]["occurrence"])
             if "excluded" in movables[i].keys():
                 excluded = movables[i].pop("excluded")
                 matches = (j for j in matches if not any(k in j.feast["tags"] for k in excluded))
@@ -236,13 +227,13 @@ def kalendar(year):
             for j in matches:
                 addentry(j.date,movables[i])
     
-    #Irregular movables
+    # Irregular movables
     assumption = date(year, 8, 15)
     if assumption.weekday() == 6:
         addentry(assumption + timedelta(days=1), movables["joachim"])
     else:
         addentry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"])
-    #First Sunday of July
+    # First Sunday of July
     addentry(nearsunday(date(year,7,1)), movables["pretiosissimi-sanguinis"])
     assumption = date(year, 9, 8)
     if assumption.weekday() == 6:
@@ -250,7 +241,7 @@ def kalendar(year):
     else:
         addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"])
         
-    #Octave and Vigil Processing
+    # Octave and Vigil Processing
     
     numerals = ['II','III','IV','V','VI','VII']
     for i in kal:
@@ -291,7 +282,7 @@ def kalendar(year):
         for j in buffer[i]:
             addentry(i, j)
     
-    #23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
+    # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if psundayomission:
         xxiiipentecostentry["tags"].add("transfer")
         i = 1
@@ -320,22 +311,22 @@ def kalendar(year):
             omittedepiphanyentry["tags"].add("translatus")
             addentry(septuagesima - timedelta(days=1), omittedepiphanyentry)
     
-    #Transfers
-    sjb = unique_search(kal, ["nativitas-joannis-baptistae","duplex-i-classis"])
-    corpuschristi = unique_search(kal, ["corpus-christi","duplex-i-classis"])
-    #Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
-    candlemas = unique_search(kal, ["purificatio","duplex-ii-classis"])
-    #N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
+    # Transfers
+    sjb = unique_search(["nativitas-joannis-baptistae","duplex-i-classis"])
+    corpuschristi = unique_search(["corpus-christi","duplex-i-classis"])
+    # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
+    candlemas = unique_search(["purificatio","duplex-ii-classis"])
+    # N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
     if sjb.date == corpuschristi.date:
         transfer(["nativitas-joannis-baptistae","duplex-i-classis"], date(year, 6, 25), True)
-    #Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    if candlemas.date in (i.date for i in all_tags(kal, ["dominica-ii-classis"])):
+    # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
+    if candlemas.date in (i.date for i in all_tags(["dominica-ii-classis"])):
         transfer(["purificatio","duplex-ii-classis"], candlemas.date + timedelta(days=1), True)
         
     excepted = ["dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava"]
     
     def transfer_all(target, obstacles):
-        for i in all_tags(kal, target):
+        for i in all_tags(target):
             if any(j in i.feast["tags"] for j in excepted):
                 continue
             for j in kal[i.date]:
@@ -344,7 +335,7 @@ def kalendar(year):
     obstacles = ["dominica-i-classis","dominica-ii-classis","non-concurrentia"]
     
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
-        #All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
+        # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
         autotransfer(["nativitas","dominica-infra-octavam"], True, ["duplex-i-classis","duplex-ii-classis","thomas-becket"])
     else:
         transfer("thomas-becket", date(year, 12, 29), True)
@@ -356,14 +347,14 @@ def kalendar(year):
     obstacles.append("duplex-majus")
     transfer_all(["doctor","duplex"], obstacles)
     
-    for i in all_tags(kal, ["vigilia"]):
+    for i in all_tags(["vigilia"]):
         if "non-translandus" in i.feast["tags"]:
             continue
         for j in kal[i.date]:
             if "dominica" in j["tags"]:
                 transfer(i.feast["tags"], i.date - timedelta(days=1), True)
     
-    fidelesdefuncti = unique_search(kal, ["fideles-defuncti"])
+    fidelesdefuncti = unique_search(["fideles-defuncti"])
     if any("dominica" in i["tags"] for i in kal[fidelesdefuncti.date]):
         transfer(["fideles-defuncti"], fidelesdefuncti.date + timedelta(days=1), True)
     

@@ -811,7 +811,7 @@
 	{
 		"date":"08-01",
 		"day":"Ss. Machabæorum Mm.",
-		"tags":["machabaei","martyres","commemoratio"]
+		"tags":["machabaei","commemoratio","martyres"]
 	},
 	{
 		"date":"08-02",
@@ -841,7 +841,7 @@
 	{
 		"date":"08-06",
 		"day":"Ss. Xysti II. Papæ, Felicissimi et Agapiti Martyrum",
-		"tags":["xystus-ii-felicissimus-agapitus","martyres","commemoratio"]
+		"tags":["xystus-ii-felicissimus-agapitus","commemoratio","martyres"]
 	},
 	{
 		"date":"08-07",
@@ -856,13 +856,13 @@
 	{
 		"date":"08-08",
 		"day":"Ss. Cyriaci, Largi, et Smaragdi Mm.",
-		"tags":["cyriacus-largus-smaragdus","martyres","semiduplex"]
+		"tags":["cyriacus-largus-smaragdus","semiduplex","martyres"]
 	},
 	{
 		"date":"08-10",
 		"day":"S. Laurentii Mart.",
 		"genitive-day":"S. Laurentii",
-		"tags":["laurentius","martyr","duplex-ii-classis","habens-octavam","habens-vigiliam"]
+		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam","habens-vigiliam"]
 	},
 	{
 		"date":"08-11",
@@ -872,7 +872,7 @@
 	{
 		"date":"08-12",
 		"day":"S. Claræ Virg.",
-		"tags":["clara","virgo","duplex"]
+		"tags":["clara","duplex","virgo"]
 	},
 	{
 		"date":"08-13",
@@ -893,32 +893,32 @@
 	{
 		"date":"08-16",
 		"day":"S. Hyacinthi Conf.",
-		"tags":["hyacinthus","confessor","duplex"]
+		"tags":["hyacinthus","duplex","confessor"]
 	},
 	{
 		"date":"08-18",
 		"day":"S. Agapiti Martyris",
-		"tags":["agapitus","martyr","commemoratio"]
+		"tags":["agapitus","commemoratio","martyr"]
 	},
 	{
 		"date":"08-20",
 		"day":"S. Bernardi Abb., Conf. et Eccl. Doct.",
-		"tags":["bernardus","abbas","doctor","duplex"]
+		"tags":["bernardus","duplex","abbas","doctor"]
 	},
 	{
 		"date":"08-21",
 		"day":"S. Joannæ Franciscæ Fremiot de Chantal Vid.",
-		"tags":["joanna-francisca","vidua","duplex"]
+		"tags":["joanna-francisca","duplex","vidua"]
 	},
 	{
 		"date":"08-22",
 		"day":"Ss. Timothei et Soc. Mm.",
-		"tags":["timotheus-etc","martyres","commemoratio"]
+		"tags":["timotheus-etc","commemoratio","martyres"]
 	},
 	{
 		"date":"08-23",
 		"day":"S. Philippi Benitii Conf.",
-		"tags":["philippus-benitius","confessor","duplex"]
+		"tags":["philippus-benitius","duplex","confessor"]
 	},
 	{
 		"date":"08-24",
@@ -934,12 +934,12 @@
 	{
 		"date":"08-26",
 		"day":"S. Zephyrini Papæ et Mart.",
-		"tags":["zephyrinus","papa","episcopus-martyr","simplex"]
+		"tags":["zephyrinus","simplex","papa","episcopus-martyr"]
 	},
 	{
 		"date":"08-27",
 		"day":"S. Josephi Calasanctii Conf.",
-		"tags":["josephus-calasanctius","confessor","duplex"]
+		"tags":["josephus-calasanctius","duplex","confessor"]
 	},
 	{
 		"date":"08-28",
@@ -949,7 +949,7 @@
 	{
 		"date":"08-28",
 		"day":"S. Hermetis Martyris",
-		"tags":["hermis","martyr","commemoratio"]
+		"tags":["hermis","commemoratio","martyr"]
 	},
 	{
 		"date":"08-29",
@@ -969,12 +969,12 @@
 	{
 		"date":"08-30",
 		"day":"Ss. Felicis et Adaucti Mm.",
-		"tags":["felix-adauctus","martyres","commemoratio"]
+		"tags":["felix-adauctus","commemoratio","martyres"]
 	},
 	{
 		"date":"08-31",
 		"day":"S. Raymundi Nonnati Cf.",
-		"tags":["raymundus-nonnatus","confessor","duplex"]
+		"tags":["raymundus-nonnatus","duplex","confessor"]
 	},
 	{
 		"date":"09-01",
