@@ -24,6 +24,7 @@ sanctoral = load_data('kalendar.json')
 
 ranks = ["feria","commemoratio","simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"]
 octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"]
+numerals = ['II','III','IV','V','VI','VII']
 
 class SearchResult:
     def __init__(self, date, feast):
@@ -163,7 +164,7 @@ def kalendar(year):
         epiphanyweek += 1
     for i in range(0, 6 - epiphanyweek):
         sunday = xxivpentecost - timedelta(days=7 * (i + 1))
-        if (sunday != xxiiipentecost):
+        if sunday != xxiiipentecost:
             for j in range(0,7):
                 addentry(sunday + timedelta(days=j), epiphanycycle[5 - i][j])
         else:
@@ -179,10 +180,17 @@ def kalendar(year):
     addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"])
     if date(year, 1, 6).weekday() == 6:
         transfer(["epiphania","dominica"], date(year, 1, 12), True)
-        
+        epiphanysunday = date(year, 1, 12)
+    
+    currday = 2
+    for i in range(0, 6):
+        if not date(year, 1, 7 + i) == epiphanysunday:
+            addentry(date(year, 1, 7 + i), {"day":"Dies " + numerals[currday - 2] + " infra Octavam Epiphaniæ","tags":{"epiphania","semiduplex","infra-octavam","dies-" + numerals[currday - 2].lower()}})
+            currday += 1
+    addentry(date(year, 1, 13), {"day":"Octava Epiphaniæ","tags":{"epiphania","dies-octava","duplex"}})
     # Autumnal Weeks
     def nearsunday(kalends):
-        if(kalends.weekday() < 3):
+        if kalends.weekday() < 3:
             return kalends - timedelta(days=1+kalends.weekday())
         else:
             return kalends + timedelta(days=6-kalends.weekday())
@@ -252,7 +260,7 @@ def kalendar(year):
         addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"])
         
     # Octave and Vigil Processing
-    numerals = ['II','III','IV','V','VI','VII']
+    
     for i in kal:
         for j in kal[i]:
             if "habens-octavam" in j["tags"] and not "octava-excepta" in j["tags"]:
@@ -402,7 +410,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Generate kalendar
-    ret = kalendar(args.year)
+    ret = dict(sorted(kalendar(args.year).items()))
 
     # Convert datestrings to strings
     ret = {str(k): v for k, v in ret.items()}
