@@ -62,7 +62,7 @@ def kalendar(year):
         return ret
 
     def sundayafter(date0):
-        return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=6)
+        return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=7)
     def todate(text, year0):
         return date(year0, int(text[:2]), int(text[3:]))
     def addentry(date0, entry):
@@ -353,7 +353,7 @@ def kalendar(year):
         # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
         autotransfer(["nativitas","dominica-infra-octavam"], True, ["duplex-i-classis","duplex-ii-classis","thomas-becket"])
     else:
-        transfer("thomas-becket", date(year, 12, 29), True)
+        transfer(["thomas-becket"], date(year, 12, 29), True)
     transfer_all(["duplex-i-classis"], obstacles)
     obstacles.append("duplex-i-classis")
     transfer_all(["duplex-ii-classis"], obstacles)
