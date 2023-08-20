@@ -2,7 +2,7 @@
 	{
 		"difference": -63,
 		"day": "Dominica Septuagesima",
-		"tags": ["semiduplex","dominica","dominica-ii-classis","hebdomada-septuagesima","poenitentialis"]
+		"tags": ["semiduplex","dominica","dominica-ii-classis","hebdomada-septuagesima","poenitentialis","incipit-libri"]
 	},
 	{
 		"difference": -62,
@@ -247,7 +247,7 @@
 	{
 		"difference": -14,
 		"day": "Dominica de Passione",
-		"tags": ["hebdomada-passionis","dominica","semiduplex","dominica-i-classis","poenitentialis"]
+		"tags": ["hebdomada-passionis","dominica","semiduplex","dominica-i-classis","poenitentialis","incipit-libri"]
 	},
 	{
 		"difference": -13,
@@ -302,7 +302,7 @@
 	{
 		"difference": -3,
 		"day": "Feria V in Cena Domini",
-		"tags": ["hebdomada-sancta","quadragesima","triduum","cena-domini","feria-v","feria","non-concurrentia","poenitentialis"]
+		"tags": ["hebdomada-sancta","quadragesima","triduum","cena-domini","feria-v","feria","non-concurrentia","poenitentialis","incipit-libri"]
 	},
 	{
 		"difference": -2,
@@ -357,7 +357,7 @@
 	{
 		"difference": 8,
 		"day": "Feria II infra Hebdomadam I post Octavam Paschæ",
-		"tags": ["hebdomada-i-paschae","paschalis","feria-ii","feria"]
+		"tags": ["hebdomada-i-paschae","paschalis","feria-ii","feria","incipit-libri"]
 	},
 	{
 		"difference": 9,
@@ -422,7 +422,7 @@
 	{
 		"difference": 21,
 		"day": "Dominica III post Octavam Paschæ",
-		"tags": ["hebdomada-iii-paschae","paschalis","dominica","semiduplex"]
+		"tags": ["hebdomada-iii-paschae","paschalis","dominica","semiduplex","incipit-libri"]
 	},
 	{
 		"difference": 22,
@@ -457,7 +457,7 @@
 	{
 		"difference": 28,
 		"day": "Dominica IV post Octavam Paschæ",
-		"tags": ["hebdomada-iv-paschae","paschalis","dominica","semiduplex"]
+		"tags": ["hebdomada-iv-paschae","paschalis","dominica","semiduplex","incipit-libri"]
 	},
 	{
 		"difference": 29,
@@ -492,7 +492,7 @@
 	{
 		"difference": 35,
 		"day": "Dominica V post Octavam Paschæ",
-		"tags": ["hebdomada-v-paschae","paschalis","dominica","semiduplex"]
+		"tags": ["hebdomada-v-paschae","paschalis","dominica","semiduplex","incipit-libri"]
 	},
 	{
 		"difference": 36,
@@ -512,18 +512,32 @@
 	{
 		"difference": 39,
 		"day": "In Ascensione Domini",
-		"genitive-day":"Ascensionis",
-		"tags": ["ascensio","paschalis","duplex-i-classis","habens-octavam","habens-vigiliam","vigilia-excepta"]
+		"tags": ["ascensio","paschalis","duplex-i-classis","habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"]
+	},
+	{
+		"difference": 40,
+		"day": "Dies II infra Octavam Ascensionis",
+		"tags": ["ascensio","paschalis","semiduplex","dies-ii","infra-octavam","incipit-libri"]
+	},
+	{
+		"difference": 42,
+		"day": "Dominica infra Octavam Ascensionis",
+		"tags": ["ascensio","paschalis","semiduplex","dies-iv","infra-octavam","dominica-infra-octavam","incipit-libri"]
+	},
+	{
+		"difference":45,
+		"day":"Dies VII infra Octavam Ascensionis",
+		"tags":["ascensio","paschalis","semiduplex","dies-vii","infra-octavam","incipit-libri"]
 	},
 	{
 		"difference": 47,
 		"day": "Feria VI post Octavam Ascensionis",
-		"tags": ["post-ascensione","paschalis","feria-vi","semiduplex"]
+		"tags": ["post-ascensionem","paschalis","feria-vi","semiduplex","incipit-libri"]
 	},
 	{
 		"difference": 48,
 		"day": "Sabbato in Vigilia Pentecostes",
-		"tags": ["vigilia-pentecostes","paschalis","semiduplex","sabbatum","post-ascension"]
+		"tags": ["vigilia-pentecostes","paschalis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
 	},
 	{
 		"difference": 49,
@@ -568,7 +582,7 @@
 	{
 		"difference": 57,
 		"day": "Feria II infra Hebdomadam I post Octavam Pentecostes",
-		"tags": ["feria","feria-ii","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
+		"tags": ["feria","feria-ii","hebdomada-i-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
 		"difference": 58,
@@ -703,7 +717,7 @@
 	{
 		"difference": 84,
 		"day": "Dominica V post Pentecosten",
-		"tags": ["semiduplex","dominica","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
+		"tags": ["semiduplex","dominica","hebdomada-v-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
 		"difference": 85,
@@ -773,7 +787,7 @@
 	{
 		"difference": 98,
 		"day": "Dominica VII post Pentecosten",
-		"tags": ["semiduplex","dominica","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
+		"tags": ["semiduplex","dominica","hebdomada-vii-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
 		"difference": 99,
@@ -843,7 +857,7 @@
 	{
 		"difference": 112,
 		"day": "Dominica IX post Pentecosten",
-		"tags": ["semiduplex","dominica","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
+		"tags": ["semiduplex","dominica","hebdomada-ix-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
 		"difference": 113,

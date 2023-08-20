@@ -1,7 +1,7 @@
 {
 	"bmv-sabbato":{
 		"day":"BMV Sabbato",
-		"occurrence":["sabbatum"],
+		"occurrence":["sabbatum","feria"],
 		"excluded":["poenitentialis", "in-octave"],
 		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
 	},
@@ -63,7 +63,7 @@
 	"feria-iv-rogationis":{
 		"day":"Feria IV in Rogationibus",
 		"occurrence":["feria-iv","hebdomada-v-paschae"],
-		"tags":["feria-iv-rogationis","feria-iv","feria","poenitentialis"]
+		"tags":["ascensio","feria-iv-rogationis","feria-iv","feria","poenitentialis","vigilia"]
 	},
 	"feria-iv-quattuor-temporum-pentecostes":{
 		"day":"Feria IV Quattuor Temporum Pentecostes",

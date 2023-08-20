@@ -44,7 +44,7 @@ sanctoral = load_data('kalendar.json')
 
 threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 ranks = {"feria","commemoratio","simplex"} | threenocturnes
-octavevigiltags = {"habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta"}
+octavevigiltags = {"habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","incipit-libri"}
 numerals = ['II','III','IV','V','VI','VII']
 
 
@@ -75,8 +75,7 @@ def kalendar(year):
         it = all_tags(tags)
         match = next(it, None)
         if match is None:
-            # Warn if zero matches
-            logging.warning(f"{year}: unique_search({tags!r}) got no matches!")
+            return None
         else:
             # Warn if multiple matches
             try:
@@ -296,7 +295,9 @@ def kalendar(year):
                     entrystripped -= octavevigiltags
                     entrystripped -= ranks
                     entrystripped |= {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
-                    addbufferentry(date0, entrystripped)
+                    #If a certain day within an Octave is manually entered, do not create one automatically
+                    if unique_search(entrystripped) == None:
+                        addbufferentry(date0, entrystripped)
                 date0 = i + timedelta(days=7)
                 if "quadragesima" in tagsindate(date0):
                     continue
@@ -304,7 +305,9 @@ def kalendar(year):
                 entrystripped -= octavevigiltags
                 entrystripped -= ranks
                 entrystripped |= {"duplex", "dies-octava"}
-                addbufferentry(date0, entrystripped)
+                #If a certain day within an Octave is manually entered, do not create one automatically
+                if unique_search(entrystripped) == None:
+                    addbufferentry(date0, entrystripped)
             if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
                 entrystripped = copy.deepcopy(entry)
                 entrystripped -= octavevigiltags
