@@ -21,13 +21,10 @@ def load_data(p):
     def recurse(obj):
         match obj:
             case dict():
-                obj2 = {}
-                for k, v in obj.items():
-                    if type(v) == list and all(type(x) == str for x in v):
-                        v = set(v)
-                    obj2[k] = recurse(v)
-                return obj2
+                return {k: recurse(v) for k, v in obj.items()}
             case list():
+                if all(type(x) == str for x in obj):
+                    return set(obj)
                 return [recurse(v) for v in obj]
             case _:
                 return obj
@@ -259,7 +256,7 @@ def kalendar(year):
         if leapyear and date0.month == 2 and date0.day > 23:
             date0 = date0 + timedelta(days=1)
         for j in sanctoral[i]:
-            kal.add_entry(date0, set(j))
+            kal.add_entry(date0, j)
 
     # List of inferred feasts that get merged in later
     buffer = Kalendar(year=year)
