@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from collections import defaultdict
 from datetime import datetime
 from datetime import date
 from datetime import timedelta
@@ -41,7 +42,7 @@ def datestring(date0):
 
 
 def kalendar(year):
-    kal = {}
+    kal = defaultdict(list)
 
     def all_tags(tags):
         ret = []
@@ -72,10 +73,7 @@ def kalendar(year):
         return date(year0, int(text[:2]), int(text[3:]))
     def addentry(date0, entry):
         entry["tags"] = set(entry["tags"])
-        if date0 in kal:
-            kal[date0].append(entry)
-        else:
-            kal[date0] = [entry]
+        kal[date0].append(entry)
 
     # Will not work as intended if multiple matches are found for the tags
     # If match is False there will be no mention that there was a feast in the original pre-tranfer date
@@ -232,12 +230,9 @@ def kalendar(year):
             del i["date"]
             addentry(date0, i)
 
-    buffer = {}
+    buffer = defaultdict(list)
     def addbufferentry(date0, entry):
-        if date0 in buffer:
-            buffer[date0].append(entry)
-        else:
-            buffer[date0] = [entry]
+        buffer[date0].append(entry)
 
     # Movable feasts with occurrence attribute
     for i in movables:
@@ -305,9 +300,8 @@ def kalendar(year):
                 del entrystripped["genitive-day"]
                 addbufferentry(i - timedelta(days=1), entrystripped)
 
-    for i in buffer:
-        for j in buffer[i]:
-            addentry(i, j)
+    for date0, entries in buffer.items():
+        kal[date0] += entries
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if psundayomission:
