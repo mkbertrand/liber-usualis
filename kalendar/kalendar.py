@@ -83,21 +83,21 @@ class Kalendar:
     def __getitem__(self, key):
         return self.kal[key]
 
-    def match(self, tags=set()):
+    def match(self, include=set(), exclude=set()):
         for date0, entries in self.kal.items():
             for entry in entries:
-                if entry >= tags:
+                if entry >= include and entry.isdisjoint(exclude):
                     yield SearchResult(date0, entry)
 
-    def match_unique(self, tags=set(), none_ok=False):
+    def match_unique(self, include=set(), exclude=set(), none_ok=False):
         # Get the first match from kal.match
-        it = self.match(tags)
+        it = self.match(include, exclude)
         match = next(it, None)
         if match is None:
             if none_ok:
                 return None
             # Fail if zero matches
-            raise RuntimeError(f"{self.year}: match_unique({tags!r}) got no matches!")
+            raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got no matches!")
         else:
             # Fail if multiple matches
             try:
@@ -105,7 +105,7 @@ class Kalendar:
             except StopIteration:
                 pass
             else:
-                raise RuntimeError(f"{self.year}: match_unique({tags!r}) got more than one match!")
+                raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got more than one match!")
         return match
 
     def tagsindate(self, date):
