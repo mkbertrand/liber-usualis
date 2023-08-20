@@ -4,6 +4,7 @@ from collections import defaultdict
 from datetime import datetime
 from datetime import date
 from datetime import timedelta
+import logging
 import pathlib
 import json
 import copy
@@ -70,8 +71,21 @@ def kalendar(year):
                     yield SearchResult(date0, entry)
 
     def unique_search(tags):
-        # Just return the first match from all_tags
-        return next(all_tags(tags), None)
+        # Get the first match from all_tags
+        it = all_tags(tags)
+        match = next(it, None)
+        if match is None:
+            # Warn if zero matches
+            logging.warning(f"{year}: unique_search({tags!r}) got no matches!")
+        else:
+            # Warn if multiple matches
+            try:
+                next(it)
+            except StopIteration:
+                pass
+            else:
+                logging.warning(f"{year}: unique_search({tags!r}) got more than one match!")
+        return match
 
     def tagsindate(date0):
         ret = set()
