@@ -150,17 +150,17 @@ def kalendar(year):
 
     # Advent Cycle
     for entry in adventcycle:
-        date0 = adventstart + timedelta(days=entry["difference"])
+        entry = copy.deepcopy(entry)
+        date0 = adventstart + timedelta(days=entry.pop("difference"))
         # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
         if date0 == christmas:
             break
-        del entry["difference"]
         addentry(date0, entry)
 
     # Paschal Cycle
     for entry in paschalcycle:
-        date0 = easter + timedelta(days=entry["difference"])
-        del entry["difference"]
+        entry = copy.deepcopy(entry)
+        date0 = easter + timedelta(days=entry.pop("difference"))
         if date0 == xxivpentecost:
             psundayomission = True
             xxiiipentecostentry = entry
@@ -186,8 +186,8 @@ def kalendar(year):
 
     # Nativity & Epiphany
     for entry in nativitycycle:
-        date0 = todate(entry["date"], year)
-        del entry["date"]
+        entry = copy.deepcopy(entry)
+        date0 = todate(entry.pop("date"), year)
         addentry(date0, entry)
     addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"])
     if date(year, 1, 6).weekday() == 6:
@@ -228,16 +228,16 @@ def kalendar(year):
     # Saints, and also handles leap years
     if year % 4 == 0 and (year % 400 == 0 or year % 100 != 0):
         for entry in sanctoral:
-            date0 = todate(entry["date"], year)
-            del entry["date"]
+            entry = copy.deepcopy(entry)
+            date0 = todate(entry.pop("date"), year)
             if date0.month == 2 and date0.day > 23:
                 addentry(date0 + timedelta(days=1), entry)
             else:
                 addentry(date0, entry)
     else:
         for entry in sanctoral:
-            date0 = todate(entry["date"], year)
-            del entry["date"]
+            entry = copy.deepcopy(entry)
+            date0 = todate(entry.pop("date"), year)
             addentry(date0, entry)
 
     # List of inferred feasts that get merged in later
@@ -253,12 +253,12 @@ def kalendar(year):
 
     # Movable feasts with occurrence attribute
     for i, movable in movables.items():
+        movable = copy.deepcopy(movable)
         if "occurrence" in movable:
-            matches = all_tags(movable["occurrence"])
+            matches = all_tags(movable.pop("occurrence"))
             if "excluded" in movable:
                 excluded = movable.pop("excluded")
                 matches = (j for j in matches if j.feast["tags"].isdisjoint(excluded))
-            del movables[i]["occurrence"]
             for match in matches:
                 addbufferentry(match.date, movable)
 
