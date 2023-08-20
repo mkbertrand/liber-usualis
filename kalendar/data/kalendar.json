@@ -1,1466 +1,774 @@
-[
-	{
-		"date":"01-05",
-		"day":"S. Telesphori Pap. et Mart.",
-		"tags":["telesphorus","commemoratio","papa","martyr"]
-	},
-	{
-		"date":"01-13",
-		"day":"S. Hygini Papæ et Mart.",
-		"tags":["hyginus","commemoratio","papa","martyr"]
-	},
-	{
-		"date":"01-14",
-		"day":"S. Hilarii Ep. Conf. et Eccl. Doct.",
-		"tags":["hilarius","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"01-14",
-		"day":"S. Felicis Presbyteri et Mart.",
-		"tags":["felix","commemoratio","martyr"]
-	},
-	{
-		"date":"01-15",
-		"day":"S. Pauli primi Eremitæ Confess.",
-		"tags":["paulus-eremita","duplex","confessor"]
-	},
-	{
-		"date":"01-15",
-		"day":"S. Mauri Abbatis",
-		"tags":["maurus","commemoratio","abbas"]
-	},
-	{
-		"date":"01-16",
-		"day":"S. Marcelli I. Papæ et Mart.",
-		"tags":["marcellus-i","semiduplex","papa","martyr"]
-	},
-	{
-		"date":"01-17",
-		"day":"S. Antonii Abbatis",
-		"tags":["antonius","duplex","abbas"]
-	},
-	{
-		"date":"01-18",
-		"day":"Cathedra S. Petri Romæ",
-		"tags":["cathedra-petri","duplex-majus"]
-	},
-	{
-		"date":"01-18",
-		"day":"S. Priscæ Virg. et Mart.",
-		"tags":["prisca","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"01-19",
-		"day":"Canuti Regis Mart.",
-		"tags":["canutus","semiduplex","martyr"]
-	},
-	{
-		"date":"01-19",
-		"day":"Ss. Marii et Soc. Mm.",
-		"tags":["marius-et-soc","commemoratio","martyres"]
-	},
-	{
-		"date":"01-20",
-		"day":"Ss. Fabiani Papæ et Sebastiani Mm.",
-		"tags":["fabianus-sebastianus","duplex","martyres","papa"]
-	},
-	{
-		"date":"01-21",
-		"day":"S. Agnetis Virg. et Mart.",
-		"tags":["agnes","duplex","virgo","martyr"]
-	},
-	{
-		"date":"01-22",
-		"day":"Ss. Vincentii et Anastasii Mm.",
-		"tags":["vincentius-anastasius","semiduplex","martyres"]
-	},
-	{
-		"date":"01-23",
-		"day":"S. Raymundi de Peñafort Conf.",
-		"tags":["raymundus-penafort","semiduplex","confessor"]
-	},
-	{
-		"date":"01-23",
-		"day":"S. Emerentianæ Virg. et Mart.",
-		"tags":["emerantiana","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"01-24",
-		"day":"S. Timothei Ep. et Mart.",
-		"tags":["timotheus","duplex","episcopus-martyr"]
-	},
-	{
-		"date":"01-25",
-		"day":"Conversio S. Pauli Ap.",
-		"tags":["conversio","duplex-majus","apostolus"]
-	},
-	{
-		"date":"01-26",
-		"day":"S. Polycarpi Ep. et Mart.",
-		"tags":["polycarpus","duplex","episcopus-martyr"]
-	},
-	{
-		"date":"01-27",
-		"day":"S. Joannis Chrysostomi Ep. Conf. et Eccl. Doct.",
-		"tags":["joannes-chrysostomus","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"01-28",
-		"day":"S. Agnetis Secundo",
-		"tags":["agnes-secundo","simplex","virgo","martyr"]
-	},
-	{
-		"date":"01-29",
-		"day":"S. Francisci Salesii Ep. Conf. et Eccl. Doct.",
-		"tags":["franciscus-salesius","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"01-30",
-		"day":"S. Martinæ Virg. et Mart.",
-		"tags":["martina","semiduplex","virgo","martyr"]
-	},
-	{
-		"date":"01-31",
-		"day":"S. Petri Nolasco Conf.",
-		"tags":["petrus-nolasco","duplex","confessor"]
-	},
-	{
-		"date":"02-01",
-		"day":"S. Ignatii Episc. et Mart.",
-		"tags":["ignatius","duplex","episcopus-martyr"]
-	},
-	{
-		"date":"02-02",
-		"day":"Purificatio B. Mariæ V.",
-		"tags":["purificatio","duplex-ii-classis","marianum"]
-	},
-	{
-		"date":"02-03",
-		"day":"S. Blasii, Episc et Mart.",
-		"tags":["blasius","simplex","episcopus-martyr"]
-	},
-	{
-		"date":"02-04",
-		"day":"S. Andreæ Corsini Ep. Cf.",
-		"tags":["andrea-corsinus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"02-05",
-		"day":"S. Agathæ Virg. et Mart.",
-		"tags":["agatha","duplex","virgo","martyr"]
-	},
-	{
-		"date":"02-06",
-		"day":"S. Titi Episc. et Conf.",
-		"tags":["titus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"02-06",
-		"day":"S. Dorotheæ Virg. et Mart.",
-		"tags":["dorothea","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"02-07",
-		"day":"S. Romualdi Abbatis",
-		"tags":["romualdus","abbas"]
-	},
-	{
-		"date":"02-08",
-		"day":"S. Joannis de Matha Conf.",
-		"tags":["joannes-matha","duplex","confessor"]
-	},
-	{
-		"date":"02-09",
-		"day":"S. Cyrilli Episc. Alexandrini, Cf. et Eccl. Doct.",
-		"tags":["cyrillus-alexandrini","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"02-09",
-		"day":"S. Apolloniæ Virg. et Mart.",
-		"tags":["apollonia","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"02-10",
-		"day":"S. Scholasticæ Virg.",
-		"tags":["scholastica","duplex","virgo"]
-	},
-	{
-		"date":"02-14",
-		"day":"S. Valentini Presb. et Mart.",
-		"tags":["valentinus","simplex","priest","martyr"]
-	},
-	{
-		"date":"02-15",
-		"day":"Ss. Faustini et Jovitæ Mm.",
-		"tags":["faustinus-jovita","simplex","martyres"]
-	},
-	{
-		"date":"02-18",
-		"day":"S. Simeonis Episc. et Mart.",
-		"tags":["simeon","simplex","episcopus-martyr"]
-	},
-	{
-		"date":"02-22",
-		"day":"Cathedra S. Petri Antiochiæ",
-		"tags":["cathedra-petri-antiochiae","duplex-majus"]
-	},
-	{
-		"date":"02-23",
-		"day":"S. Petri Damiani Episc. Conf. et Eccl. Doct.",
-		"tags":["petrus-damianus","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"02-24",
-		"day":"S. Mathiæ Apostoli",
-		"genitive-day":"S. Mathiæ",
-		"tags":["mathia","duplex-ii-classis","habens-vigiliam","apostolus"]
-	},
-	{
-		"date":"03-04",
-		"day":"S. Casmiri Conf.",
-		"tags":["casmirus","semiduplex","confessor"]
-	},
-	{
-		"date":"03-04",
-		"day":"S. Lucii I. Papæ et Mart.",
-		"tags":["lucius","commemoratio","papa","episcopus-martyr"]
-	},
-	{
-		"date":"03-07",
-		"day":"S. Thomæ de Aquino Conf. et Eccl. Doct.",
-		"tags":["thomas-aquino","duplex","confessor","doctor"]
-	},
-	{
-		"date":"03-07",
-		"day":"Ss. Perpetuæ et Felicitatis Mm.",
-		"tags":["perpetua-felicitas","commemoratio","martyres"]
-	},
-	{
-		"date":"03-08",
-		"day":"S. Joannis de Deo Conf.",
-		"tags":["joannes-deo","duplex","confessor"]
-	},
-	{
-		"date":"03-09",
-		"day":"S. Franciscæ Romanæ Vid.",
-		"tags":["francisca-romanae","duplex","vidua"]
-	},
-	{
-		"date":"03-10",
-		"day":"Ss. Quadraginta Mm.",
-		"tags":["quadraginta","semiduplex","martyres"]
-	},
-	{
-		"date":"03-12",
-		"day":"S. Gregorii I. Papæ, Conf. et Eccl. Doct.",
-		"tags":["gregorius","duplex","episcopus-confessor","papa","doctor"]
-	},
-	{
-		"date":"03-17",
-		"day":"S. Patritii Ep. et Conf.",
-		"tags":["patritius","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"03-18",
-		"day":"S. Cyrilli Episc. Hierosolymitani, Conf. et Eccl. Doct.",
-		"tags":["cyrillus-hierosolymitani","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"03-19",
-		"day":"S. Joseph Conf., Sponsi B.M.V.",
-		"tags":["joseph-sponsus","duplex-i-classis"]
-	},
-	{
-		"date":"03-20",
-		"day":"S. Benedicti Abbatis",
-		"tags":["benedictus","duplex-majus","abbas"]
-	},
-	{
-		"date":"03-25",
-		"day":"Annuntiatio B.M.V.",
-		"tags":["annuntiatio","duplex-ii-classis","marianum"]
-	},
-	{
-		"date":"04-02",
-		"day":"S. Francisci de Paula Conf.",
-		"tags":["franciscus-paula","duplex","confessor"]
-	},
-	{
-		"date":"04-04",
-		"day":"S. Isidori Episc., Conf. et Eccl. Doct.",
-		"tags":["isidorus","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"04-05",
-		"day":"S. Vincentii Ferrerii Conf.",
-		"tags":["vincentius-ferrerius","duplex","confessor"]
-	},
-	{
-		"date":"04-11",
-		"day":"S. Leonis I. Papæ, Conf. et Eccl. Doct.",
-		"tags":["leo-i","duplex","papa","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"04-13",
-		"day":"S. Hermenegildi Mart.",
-		"tags":["hermenegildus","semiduplex","martyr"]
-	},
-	{
-		"date":"04-14",
-		"day":"S. Justini Mart.",
-		"tags":["justinus","duplex","martyr"]
-	},
-	{
-		"date":"04-14",
-		"day":"Ss. Tiburtii, Valeriani et Maximi Mm.",
-		"tags":["tiburtius-valerianus-maximus","commemoratio","martyres"]
-	},
-	{
-		"date":"04-17",
-		"day":"S. Aniceti Papæ et Mart.",
-		"tags":["anicetus","simplex","papa","episcopus-martyr"]
-	},
-	{
-		"date":"04-21",
-		"day":"S. Anselmi Episc., Conf. et Eccl. Doct.",
-		"tags":["anselmus","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"04-22",
-		"day":"Ss. Soteris et Caji Pont. et Mm.",
-		"tags":["soter-cajus","semiduplex","episcopi-martyres"]
-	},
-	{
-		"date":"04-23",
-		"day":"S. Georgii Mart.",
-		"tags":["georgius","semiduplex","martyr"]
-	},
-	{
-		"date":"04-24",
-		"day":"S. Fidelis a Sigmaringa Martyris",
-		"tags":["fidelis","duplex","martyr"]
-	},
-	{
-		"date":"04-25",
-		"day":"S. Marci Evang.",
-		"tags":["marcus","duplex-ii-classis","martyr","evangelista","apostolus","poenitentialis"]
-	},
-	{
-		"date":"04-26",
-		"day":"Ss. Cleti et Marcellini Pont. et Mm.",
-		"tags":["cletus-marcellinus","semiduplex","episcopi-martyres","papae"]
-	},
-	{
-		"date":"04-28",
-		"day":"S. Pauli a Cruce Conf.",
-		"tags":["paulus-cruce","duplex","confessor"]
-	},
-	{
-		"date":"04-28",
-		"day":"S. Vitalis Martyris",
-		"tags":["vitalis","commemoratio","martyr"]
-	},
-	{
-		"date":"04-29",
-		"day":"S. Petri Mart.",
-		"tags":["petrus","duplex","martyr"]
-	},
-	{
-		"date":"04-30",
-		"day":"S. Catharinæ Senensis Virginis",
-		"tags":["catharina-senensis","duplex","virgo"]
-	},
-	{
-		"date":"05-01",
-		"day":"Ss. Philippi et Jacobi Ap.",
-		"tags":["philippus-jacobus","duplex-ii-classis","apostoli"]
-	},
-	{
-		"date":"05-02",
-		"day":"S. Athanasii Episc., Conf. et Eccl. Doct.",
-		"tags":["athanasius","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"05-03",
-		"day":"Inventio S. Crucis",
-		"tags":["inventio-crucis","duplex-ii-classis"]
-	},
-	{
-		"date":"05-03",
-		"day":"Ss. Alexandri I. Papæ et Soc. Mm., ac S. Juvenalis Episc. et Conf.",
-		"tags":["alexandrus-i-et-soc","commemoratio","papa","martyres","episcopus-confessor"]
-	},
-	{
-		"date":"05-04",
-		"day":"S. Monicæ Viduæ",
-		"tags":["monica","duplex","vidua"]
-	},
-	{
-		"date":"05-05",
-		"day":"S. Pii V. Papæ et Conf.",
-		"tags":["pius-v","duplex","papa","episcopus-confessor"]
-	},
-	{
-		"date":"05-06",
-		"day":"S. Joannis ante portam Latinam",
-		"tags":["joannes-portam-latinam","duplex-majus"]
-	},
-	{
-		"date":"05-07",
-		"day":"S. Stanislai Episc. et Mart.",
-		"tags":["duplex","episcopus-martyr"]
-	},
-	{
-		"date":"05-08",
-		"day":"Apparitio S. Michaëlis Archang.",
-		"tags":["apparitio-michaelis","duplex-majus"]
-	},
-	{
-		"date":"05-09",
-		"day":"S. Gregorii Nazianzeni Ep., Conf. et Eccl. Doct.",
-		"tags":["gregorius-nazianzenus","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"05-10",
-		"day":"S. Antonini Episc. et Conf.",
-		"tags":["antoninus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"05-10",
-		"day":"Ss. Gordiani et Epimachi Mm.",
-		"tags":["gordianus-epimachus","commemoratio","martyres"]
-	},
-	{
-		"date":"05-12",
-		"day":"Ss. Nerei, Achillei, et Domitillæ Vg. atque Paneratii Mm.",
-		"tags":["nereus-achilleus-domitilla-paneratius","semiduplex","virgo","martyres"]
-	},
-	{
-		"date":"05-14",
-		"day":"S. Bonifacii Mart.",
-		"tags":["bonifacius","simplex","martyr"]
-	},
-	{
-		"date":"05-16",
-		"day":"S. Ubaldi Episc. et Conf.",
-		"tags":["ubaldus","semiduplex","episcopus-confessor"]
-	},
-	{
-		"date":"05-17",
-		"day":"S. Paschalis Baylon Conf.",
-		"tags":["paschalis-baylon","duplex","confessor"]
-	},
-	{
-		"date":"05-18",
-		"day":"S. Venantii Mart.",
-		"tags":["venantius","duplex","martyr"]
-	},
-	{
-		"date":"05-19",
-		"day":"S. Petri Cœlestini Papæ et Conf.",
-		"tags":["petrus-coelestinus","duplex","episcopus-confessor","papa"]
-	},
-	{
-		"date":"05-19",
-		"day":"S. Pudentianæ Virg",
-		"tags":["pudentiana","commemoratio","virgo"]
-	},
-	{
-		"date":"05-20",
-		"day":"S. Bernardini Senensis Cf.",
-		"tags":["bernardinus-senensis","semiduplex","confessor"]
-	},
-	{
-		"date":"05-25",
-		"day":"S. Gregorii VII. Papæ et Cf.",
-		"tags":["gregorius-vii","duplex","episcopus-confessor","papa"]
-	},
-	{
-		"date":"05-25",
-		"day":"S. Urbani I. Pp. et Mart.",
-		"tags":["urbanus-i","commemoratio","episcopus-martyr","papa"]
-	},
-	{
-		"date":"05-26",
-		"day":"S. Philippi Nerii Cf.",
-		"tags":["philippus-nerius","duplex","confessor"]
-	},
-	{
-		"date":"05-26",
-		"day":"S. Eleutherii Papæ et Mart.",
-		"tags":["eleutherius","commemoratio","episcopus-martyr","papa"]
-	},
-	{
-		"date":"05-27",
-		"day":"S. Mariæ Magdalenæ de Pazzis Virg.",
-		"tags":["maria-magdalena-pazzis","semiduplex","virgo"]
-	},
-	{
-		"date":"05-27",
-		"day":"S. Joannis Papæ et Mart.",
-		"tags":["joannes-i","commemoratio","episcopus-martyr","papa"]
-	},
-	{
-		"date":"05-28",
-		"day":"S. Augustini Ep. et Conf.",
-		"tags":["augustinus-episcopus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"05-30",
-		"day":"S. Felicis I. Papæ et Mart.",
-		"tags":["felix-i","simplex","episcopus-martyr","papa"]
-	},
-	{
-		"date":"05-31",
-		"day":"S. Angelæ Mariciæ Virg.",
-		"tags":["angela-maricia","duplex","virgo"]
-	},
-	{
-		"date":"05-31",
-		"day":"S. Petronillæ Virg.",
-		"tags":["petronilla","commemoratio","virgo"]
-	},
-	{
-		"date":"06-02",
-		"day":"Ss. Marcellini, Petri, atque Erasmi Martyrum",
-		"tags":["marcellinus-petrus-erasmus","simplex","martyres"]
-	},
-	{
-		"date":"06-04",
-		"day":"S. Francisci Caracciolo Cf.",
-		"tags":["franciscus-caracciolo","duplex","confessor"]
-	},
-	{
-		"date":"06-05",
-		"day":"S. Bonifacii Ep. et Mart.",
-		"tags":["bonifacius-episcopus","duplex","episcopus-martyr"]
-	},
-	{
-		"date":"06-06",
-		"day":"S. Norberti Ep. et Conf.",
-		"tags":["norbertus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"06-09",
-		"day":"Ss. Primi et Feliciani Mm.",
-		"tags":["primus-felicianus","simplex","martyres"]
-	},
-	{
-		"date":"06-10",
-		"day":"S. Margaritæ Reginæ Scotiæ Viduæ",
-		"tags":["margarita-scotiae","semiduplex","vidua"]
-	},
-	{
-		"date":"06-11",
-		"day":"S. Barnabæ Apost.",
-		"tags":["barnabas","duplex-majus","apostolus","martyr"]
-	},
-	{
-		"date":"06-12",
-		"day":"S. Joannis a S. Facundo Cf.",
-		"tags":["joannis-facundo","duplex","confessor"]
-	},
-	{
-		"date":"06-12",
-		"day":"Ss. Basilidis et Soc. Mm.",
-		"tags":["basilides","commemoratio","martyres"]
-	},
-	{
-		"date":"06-13",
-		"day":"S. Antonii de Padua Conf.",
-		"tags":["antonius-padua","duplex","confessor"]
-	},
-	{
-		"date":"06-14",
-		"day":"S. Basilii Magni Ep., Cf. et Eccl. Doct.",
-		"tags":["basilius-magnus","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"06-15",
-		"day":"Ss. Viti, Modesti, atque Crescentiæ Martyrum",
-		"tags":["vitus-modestus-crescentia","simplex","martyres"]
-	},
-	{
-		"date":"06-18",
-		"day":"Ss. Marci et Marcelliani Mm.",
-		"tags":["marcus-marcellianus","simplex","martyres"]
-	},
-	{
-		"date":"06-19",
-		"day":"S. Julianæ de Falconeriis Virg.",
-		"tags":["juliana-falconeriis","duplex","virgo"]
-	},
-	{
-		"date":"06-19",
-		"day":"Ss. Gervasii et Protasii Martyrum",
-		"tags":["gervasius-protasius","commemoratio","martyres"]
-	},
-	{
-		"date":"06-20",
-		"day":"S. Silverii Papæ et Mart.",
-		"tags":["silverius","simplex","papa","episcopus-martyr"]
-	},
-	{
-		"date":"06-21",
-		"day":"S. Aloysii Gonzagæ Conf.",
-		"tags":["aloysius","duplex","confessor"]
-	},
-	{
-		"date":"06-22",
-		"day":"S. Paulinus Episc. et Conf.",
-		"tags":["paulinus","simplex","episcopus-confessor"]
-	},
-	{
-		"date":"06-24",
-		"day":"Nativitas S. Joannis Baptistæ",
-		"genitive-day":"Nativitatis S. Joannis Baptistæ",
-		"tags":["nativitas-joannis-baptistae","duplex-i-classis","habens-octavam","habens-vigiliam"]
-	},
-	{
-		"date":"06-25",
-		"day":"S. Gulielmi Abbatis",
-		"tags":["gulielmus","duplex","abbas"]
-	},
-	{
-		"date":"06-26",
-		"day":"Ss. Joannis et Pauli Mm.",
-		"tags":["joannes-paulus","duplex","martyres"]
-	},
-	{
-		"date":"06-28",
-		"day":"S. Leonis II Papæ et Conf.",
-		"tags":["leo-ii","semiduplex","episcopus-confessor","papa"]
-	},
-	{
-		"date":"06-29",
-		"day":"Ss. Petri et Pauli Ap.",
-		"genitive-day":"Ss. Petri et Pauli",
-		"tags":["petrus-paulus","duplex-i-classis,","apostoli","habens-octavam","habens-vigiliam","martyres"]
-	},
-	{
-		"date":"06-30",
-		"day":"Commemoratio S. Pauli Apost.",
-		"tags":["commemoratio-pauli","duplex-majus","martyr","apostolus"]
-	},
-	{
-		"date":"07-02",
-		"day":"Visitatio B.M.V.",
-		"tags":["visitatio","duplex-ii-classis","marianum"]
-	},
-	{
-		"date":"07-02",
-		"day":"Ss. Mart. Processi et Martiniani",
-		"tags":["processus-martinianus","commemoratio","martyres"]
-	},
-	{
-		"date":"07-05",
-		"day":"Ss. Cyrilli et Methodii Pont. et Conf.",
-		"tags":["cyrillus-methodius","duplex","episcopi-confessores"]
-	},
-	{
-		"date":"07-08",
-		"day":"S. Elisabeth Reginæ Portugalliæ",
-		"tags":["elisabeth-portugalliae","semiduplex","vidua"]
-	},
-	{
-		"date":"07-10",
-		"day":"Ss. Septem Fratrum Martyrum et Ss. Rufinæ ac Secundæ Virg. et Mm.",
-		"tags":["septem-fratres","semiduplex","martyres"]
-	},
-	{
-		"date":"07-11",
-		"day":"S. Pii I. Papæ et Mart.",
-		"tags":["pius-i","simplex","martyr","papa"]
-	},
-	{
-		"date":"07-12",
-		"day":"S. Joannis Gualberti Abb.",
-		"tags":["joannes-gualbertus","duplex","abbas"]
-	},
-	{
-		"date":"07-12",
-		"day":"Ss. Naboris et Felicis Mm.",
-		"tags":["nabor-felix","commemoratio","martyres"]
-	},
-	{
-		"date":"07-13",
-		"day":"S. Anacleti Papæ et Mart.",
-		"tags":["anacletus","semiduplex","papa","martyr"]
-	},
-	{
-		"date":"07-14",
-		"day":"S. Bonaventuræ Ep., Cf. et Eccl. Doct.",
-		"tags":["bonaventura","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"07-15",
-		"day":"S. Henrici Imperat. Conf.",
-		"tags":["henricus","semiduplex","confessor"]
-	},
-	{
-		"date":"07-16",
-		"day":"B.M.V. de Monte Carmelo",
-		"tags":["bmv-carmelo","duplex-majus","marianum"]
-	},
-	{
-		"date":"07-17",
-		"day":"S. Alexii Conf.",
-		"tags":["alexius","semiduplex","confessor"]
-	},
-	{
-		"date":"07-18",
-		"day":"S. Camilli de Lellis Conf.",
-		"tags":["camillus-lellis","duplex","confessor"]
-	},
-	{
-		"date":"07-18",
-		"day":"Ss. Symphorosæ et septem Filiorum ejus Mm.",
-		"tags":["symphorosa-filii","commemoratio","martyres"]
-	},
-	{
-		"date":"07-19",
-		"day":"S. Vincentii a Paulo Conf.",
-		"tags":["vincentius-paulo","duplex","confessor"]
-	},
-	{
-		"date":"07-20",
-		"day":"S. Hieronymi Æmiliani Cf.",
-		"tags":["hieronymus-aemilianus","duplex","confessor"]
-	},
-	{
-		"date":"07-20",
-		"day":"S. Margaritæ Virg. et M.",
-		"tags":["margarita","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"07-21",
-		"day":"S. Praxedis Virginis",
-		"tags":["praxedes","simplex","virgo"]
-	},
-	{
-		"date":"07-22",
-		"day":"S. Mariæ Magdalenæ Pœnitent.",
-		"tags":["maria-magdalena-poenitentia","duplex"]
-	},
-	{
-		"date":"07-23",
-		"day":"S. Apollinaris Ep. et Mart.",
-		"tags":["apollinaris","duplex","episcopus-martyr"]
-	},
-	{
-		"date":"07-23",
-		"day":"S. Liborii Ep. Conf.",
-		"tags":["liborius","commemoratio","episcopus-confessor"]
-	},
-	{
-		"date":"07-24",
-		"day":"S. Christianæ Virg. et Mart.",
-		"tags":["christiana","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"07-25",
-		"day":"S. Jacobi Apost.",
-		"genitive-day":"S. Jacobi",
-		"tags":["jacobus","duplex-ii-classis","apostolus","habens-vigiliam","martyr"]
-	},
-	{
-		"date":"07-25",
-		"day":"S. Christophori Mart.",
-		"tags":["christophorus","commemoratio","martyr"]
-	},
-	{
-		"date":"07-26",
-		"day":"S. Annæ Matris B.M.V.",
-		"tags":["anna","duplex-ii-classis","vidua"]
-	},
-	{
-		"date":"07-27",
-		"day":"S. Pantaleonis Mart.",
-		"tags":["pantaleon","simplex","martyr"]
-	},
-	{
-		"date":"07-28",
-		"day":"Ss. Nazarii, Celsi, Victoris I. Pap. Mm., ac Innocentii I. Papæ et Conf.",
-		"tags":["nazarius-celsus,victor-i","papae","martyres"]
-	},
-	{
-		"date":"07-29",
-		"day":"S. Marthæ Virg.",
-		"tags":["martha","semiduplex","virgo"]
-	},
-	{
-		"date":"07-29",
-		"day":"Ss. Felicis II. Papæ, et Simplicii, Faustini et Beatricis Mm.",
-		"tags":["felix-ii-simplicius-faustinus-beatrix","commemoratio","papa","martyres"]
-	},
-	{
-		"date":"07-30",
-		"day":"Ss. Abdon et Sennen Mm",
-		"tags":["abdon-sennen","simplex","martyres"]
-	},
-	{
-		"date":"07-31",
-		"day":"S. Ignatii de Lojola Conf.",
-		"tags":["ignatius-lojola","duplex","confessor"]
-	},
-	{
-		"date":"08-01",
-		"day":"S. Petri ad Vincula",
-		"tags":["petrus-ad-vincula","duplex-majus"]
-	},
-	{
-		"date":"08-01",
-		"day":"Ss. Machabæorum Mm.",
-		"tags":["machabaei","commemoratio","martyres"]
-	},
-	{
-		"date":"08-02",
-		"day":"S. Alphonsi Mariæ de Ligorio Ep., Conf. et Eccl. Doct.",
-		"tags":["alphonsus-liguori","duplex","doctor","episcopus-confessor"]
-	},
-	{
-		"date":"08-03",
-		"day":"Inventio S. Stephani Protomartyris",
-		"tags":["inventio-stepheni","semiduplex","martyr"]
-	},
-	{
-		"date":"08-04",
-		"day":"S. Dominici Conf.",
-		"tags":["dominicus","duplex-majus","confessor"]
-	},
-	{
-		"date":"08-05",
-		"day":"Dedicatio S. Mariæ ad Nives",
-		"tags":["maria-ad-nives","duplex-majus","marianum"]
-	},
-	{
-		"date":"08-06",
-		"day":"Transfiguratio D.N.J.C.",
-		"tags":["transfiguratio","duplex-majus"]
-	},
-	{
-		"date":"08-06",
-		"day":"Ss. Xysti II. Papæ, Felicissimi et Agapiti Martyrum",
-		"tags":["xystus-ii-felicissimus-agapitus","commemoratio","martyres"]
-	},
-	{
-		"date":"08-07",
-		"day":"S. Cajetani Conf.",
-		"tags":["cajetanus","duplex","confessor"]
-	},
-	{
-		"date":"08-07",
-		"day":"S. Donati Episc. et Mart.",
-		"tags":["donatus","commemoratio","episcopus-martyr"]
-	},
-	{
-		"date":"08-08",
-		"day":"Ss. Cyriaci, Largi, et Smaragdi Mm.",
-		"tags":["cyriacus-largus-smaragdus","semiduplex","martyres"]
-	},
-	{
-		"date":"08-10",
-		"day":"S. Laurentii Mart.",
-		"genitive-day":"S. Laurentii",
-		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam","habens-vigiliam"]
-	},
-	{
-		"date":"08-11",
-		"day":"Ss. Tibertius et Susannæ Mm.",
-		"tags":["tibertius-susanna","commemoratio","martyres"]
-	},
-	{
-		"date":"08-12",
-		"day":"S. Claræ Virg.",
-		"tags":["clara","duplex","virgo"]
-	},
-	{
-		"date":"08-13",
-		"day":"Ss. Hippolyti et Cassiani Mm.",
-		"tags":["hippolytus-cassianus","commemoratio","martyres"]
-	},
-	{
-		"date":"08-14",
-		"day":"S. Eusebii Conf.",
-		"tags":["eusebius","commemoratio","confessor"]
-	},
-	{
-		"date":"08-15",
-		"day":"Assumptio B.M.V.",
-		"genitive-day":"Assumptionis",
-		"tags":["assumptio","duplex-i-classis","marianum","habens-octavam","habens-vigiliam"]
-	},
-	{
-		"date":"08-16",
-		"day":"S. Hyacinthi Conf.",
-		"tags":["hyacinthus","duplex","confessor"]
-	},
-	{
-		"date":"08-18",
-		"day":"S. Agapiti Martyris",
-		"tags":["agapitus","commemoratio","martyr"]
-	},
-	{
-		"date":"08-20",
-		"day":"S. Bernardi Abb., Conf. et Eccl. Doct.",
-		"tags":["bernardus","duplex","abbas","doctor"]
-	},
-	{
-		"date":"08-21",
-		"day":"S. Joannæ Franciscæ Fremiot de Chantal Vid.",
-		"tags":["joanna-francisca","duplex","vidua"]
-	},
-	{
-		"date":"08-22",
-		"day":"Ss. Timothei et Soc. Mm.",
-		"tags":["timotheus-etc","commemoratio","martyres"]
-	},
-	{
-		"date":"08-23",
-		"day":"S. Philippi Benitii Conf.",
-		"tags":["philippus-benitius","duplex","confessor"]
-	},
-	{
-		"date":"08-24",
-		"day":"S. Bartholomaei Apost.",
-		"genitive-day":"S. Bartholomaei",
-		"tags":["bartholomaeus","duplex-ii-classis","apostolus","habens-vigiliam"]
-	},
-	{
-		"date":"08-25",
-		"day":"S. Ludovici Regis Conf.",
-		"tags":["ludovicus","semiduplex","confessor"]
-	},
-	{
-		"date":"08-26",
-		"day":"S. Zephyrini Papæ et Mart.",
-		"tags":["zephyrinus","simplex","papa","episcopus-martyr"]
-	},
-	{
-		"date":"08-27",
-		"day":"S. Josephi Calasanctii Conf.",
-		"tags":["josephus-calasanctius","duplex","confessor"]
-	},
-	{
-		"date":"08-28",
-		"day":"S. Augustini Episc., Conf. et Eccl. Doct.",
-		"tags":["augustinus","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"08-28",
-		"day":"S. Hermetis Martyris",
-		"tags":["hermis","commemoratio","martyr"]
-	},
-	{
-		"date":"08-29",
-		"day":"Decollatio S. Joannis Bapt.",
-		"tags":["decollatio-joannis-baptistae","duplex-majus","martyr"]
-	},
-	{
-		"date":"08-29",
-		"day":"S. Sabinæ Mart.",
-		"tags":["sabina","commemoratio","martyr"]
-	},
-	{
-		"date":"08-30",
-		"day":"S. Rosæ Limanæ Virg.",
-		"tags":["rosa","duplex","virgo"]
-	},
-	{
-		"date":"08-30",
-		"day":"Ss. Felicis et Adaucti Mm.",
-		"tags":["felix-adauctus","commemoratio","martyres"]
-	},
-	{
-		"date":"08-31",
-		"day":"S. Raymundi Nonnati Cf.",
-		"tags":["raymundus-nonnatus","duplex","confessor"]
-	},
-	{
-		"date":"09-01",
-		"day":"S. Ægidii Abbatis",
-		"tags":["aegidius","simplex","abbas"]
-	},
-	{
-		"date":"09-01",
-		"day":"Ss. duodecim Fratrum Mm.",
-		"tags":["duodecim-fratrum","commemoratio","martyres"]
-	},
-	{
-		"date":"09-02",
-		"day":"S. Stephani Hungariæ Reg., Conf.",
-		"tags":["stephanus-hungariae","semiduplex","confessor"]
-	},
-	{
-		"date":"09-05",
-		"day":"S. Laurentii Justiniani Episc. et Conf.",
-		"tags":["laurentius-justinianus","semiduplex","episcopus-confessor"]
-	},
-	{
-		"date":"09-08",
-		"day":"Nativitas B.M.V.",
-		"genitive-day":"Nativitatis B.M.V.",
-		"tags":["nativitas-bmv","duplex-ii-classis","marianum","habens-octavam"]
-	},
-	{
-		"date":"09-08",
-		"day":"S. Adriani Mart.",
-		"tags":["adrianus","commemoratio","martyr"]
-	},
-	{
-		"date":"09-09",
-		"day":"S. Gorgonii Mart.",
-		"tags":["gorgonius","commemoratio","martyr"]
-	},
-	{
-		"date":"09-10",
-		"day":"S. Nicolai de Tolentino Cf.",
-		"tags":["nicolaus-tolentino","duplex","confessor"]
-	},
-	{
-		"date":"09-11",
-		"day":"Ss. Proti et Hyacinthi Mm.",
-		"tags":["protus-hyacinthus","commemoratio","martyres"]
-	},
-	{
-		"date":"09-14",
-		"day":"Exaltatio S. Crucis",
-		"tags":["exaltatio-crucis","duplex-majus"]
-	},
-	{
-		"date":"09-15",
-		"day":"S. Nicomedis Mart.",
-		"tags":["nicomedes","commemoratio","martyr"]
-	},
-	{
-		"date":"09-16",
-		"day":"Ss. Cornelii et Cypriani Pont. Mart.",
-		"tags":["cornelius-cyprianus","semiduplex","episcopi-martyres"]
-	},
-	{
-		"date":"09-16",
-		"day":"Ss. Euphemiæ et Sociorum Mm.",
-		"tags":["euphemia-et-soc","commemoratio","martyres"]
-	},
-	{
-		"date":"09-17",
-		"day":"Impressio Sacrorum Stigmatum S. Francisci Conf.",
-		"tags":["impressio-stigmatum","duplex"]
-	},
-	{
-		"date":"09-18",
-		"day":"S. Josephi a Cupertino Cf.",
-		"tags":["josephus-cupertino","duplex","confessor"]
-	},
-	{
-		"date":"09-19",
-		"day":"Ss. Januarii Episc. et Socior. Mm.",
-		"tags":["januarius-et-soc","duplex","episcopus-martyr","martyres"]
-	},
-	{
-		"date":"09-20",
-		"day":"Ss. Eustachii et Sociorum Mm.",
-		"tags":["eustachii-et-soc","duplex","martyres"]
-	},
-	{
-		"date":"09-21",
-		"day":"S. Matthæi Apost. et Evang.",
-		"genitive-day":"S. Matthæi",
-		"tags":["matthaeus","duplex-ii-classis","apostolus","evangelista","habens-vigiliam"]
-	},
-	{
-		"date":"09-22",
-		"day":"S. Thomæ de Villanova Episc. et Conf.",
-		"tags":["thomas-villanova","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"09-22",
-		"day":"Ss. Mauritii et Soc. Martyrum",
-		"tags":["mauritius-et-soc","commemoratio","martyres"]
-	},
-	{
-		"date":"09-23",
-		"day":"S. Lini Papæ et Mart.",
-		"tags":["linus","semiduplex","papa","martyr"]
-	},
-	{
-		"date":"09-23",
-		"day":"S. Theclæ Virg. et Mart.",
-		"tags":["thecla","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"09-24",
-		"day":"B.M.V. de Mercede",
-		"tags":["bmv-mercede","duplex-majus","marianum"]
-	},
-	{
-		"date":"09-26",
-		"day":"Ss. Cypriani et Justinæ Virg. Mm.",
-		"tags":["cyprianus-justina","virgo","martyres"]
-	},
-	{
-		"date":"09-27",
-		"day":"Ss. Cosmæ et Damiani Martyrum",
-		"tags":["cosmas-damianus","semiduplex","martyres"]
-	},
-	{
-		"date":"09-28",
-		"day":"S. Wenceslai Ducis Mart.",
-		"tags":["wenceslaus","semiduplex","martyr"]
-	},
-	{
-		"date":"09-29",
-		"day":"Dedicatio S. Michaëlis Archang.",
-		"tags":["dedicatio-michaelis","duplex-ii-classis"]
-	},
-	{
-		"date":"09-30",
-		"day":"S. Hieronymi Presbyt., Conf. et Eccl. Doct.",
-		"tags":["hieronymus","duplex","confessor","doctor"]
-	},
-	{
-		"date":"10-01",
-		"day":"S. Remigii Ep. et Conf.",
-		"tags":["remigius","semiduplex","episcopus-confessor"]
-	},
-	{
-		"date":"10-02",
-		"day":"Ss. Angelorum Custodum",
-		"tags":["angeli-custodes","duplex-majus"]
-	},
-	{
-		"date":"10-04",
-		"day":"S. Francisci Conf.",
-		"tags":["franciscus","duplex-majus","confessor"]
-	},
-	{
-		"date":"10-05",
-		"day":"Ss. Placidi et Sociorum Mm.",
-		"tags":["placidus-et-soc","simplex","martyres"]
-	},
-	{
-		"date":"10-06",
-		"day":"S. Brunonis Conf.",
-		"tags":["bruno","duplex","confessor"]
-	},
-	{
-		"date":"10-07",
-		"day":"S. Marci Papæ et Conf.",
-		"tags":["marcus-ii","simplex","papa","confessor"]
-	},
-	{
-		"date":"10-07",
-		"day":"Ss. Sergii et Soc. Mm.",
-		"tags":["sergius-et-soc","commemoratio","martyres"]
-	},
-	{
-		"date":"10-08",
-		"day":"S. Birgittæ Viduæ",
-		"tags":["birgitta","duplex","vidua"]
-	},
-	{
-		"date":"10-09",
-		"day":"Ss. Dionysii Ep., Rustici et Eleutherii Mm.",
-		"tags":["dionysius-rusticus-eleutherius","semiduplex","martyres"]
-	},
-	{
-		"date":"10-10",
-		"day":"S. Francisci Borgiæ Conf.",
-		"tags":["franciscus-borgiae","semiduplex","confessor"]
-	},
-	{
-		"date":"10-13",
-		"day":"S. Eduardi Regis Conf.",
-		"tags":["eduardus","semiduplex","confessor"]
-	},
-	{
-		"date":"10-14",
-		"day":"S. Callisti I. Papæ et Mart.",
-		"tags":["callistus-i","duplex","papa","martyr"]
-	},
-	{
-		"date":"10-15",
-		"day":"S. Teresiæ Virginis",
-		"tags":["teresia","duplex","virgo"]
-	},
-	{
-		"date":"10-17",
-		"day":"S. Hedwigis Viduæ",
-		"tags":["hedwigis","semiduplex","vidua"]
-	},
-	{
-		"date":"10-18",
-		"day":"S. Lucæ Evangelistæ",
-		"tags":["lucas","duplex-ii-classis","apostolus","evangelista"]
-	},
-	{
-		"date":"10-19",
-		"day":"S. Petri de Alcantara Conf.",
-		"tags":["petrus-alcantara","duplex","confessor"]
-	},
-	{
-		"date":"10-20",
-		"day":"S. Joannis Cantii Conf.",
-		"tags":["joannes-cantius","duplex","confessor"]
-	},
-	{
-		"date":"10-21",
-		"day":"S. Hilarionis Abbatis",
-		"tags":["hilarion","simplex","abbas"]
-	},
-	{
-		"date":"10-21",
-		"day":"Ss. Ursulæ et Soc. Virg. et Mm.",
-		"tags":["ursula-et-soc","virgines","martyres"]
-	},
-	{
-		"date":"10-25",
-		"day":"Ss. Chrysanthi et Dariæ Mm.",
-		"tags":["chrysanthus-et-daria","simplex","martyres"]
-	},
-	{
-		"date":"10-26",
-		"day":"S. Evaristi Papæ et Mart.",
-		"tags":["evaristus","simplex","papa","martyr"]
-	},
-	{
-		"date":"10-28",
-		"day":"Ss. Simonis et Judæ Apostolor.",
-		"genitive-day":"Ss. Simonis et Judæ",
-		"tags":["simon-et-judas","duplex-ii-classis","apostoli","habens-vigiliam"]
-	},
-	{
-		"date":"11-01",
-		"day":"Omnium Sanctorum",
-		"genitive-day":"Omnium Sanctorum",
-		"tags":["omnes-sanctes","duplex-i-classis","habens-vigiliam","habens-octavam"]
-	},
-	{
-		"date":"11-02",
-		"day":"Commem. Omnium Fidelium Defunctorum",
-		"tags":["fideles-defuncti","commemoratio","duplex"]
-	},
-	{
-		"date":"11-05",
-		"day":"S. Caroli Ep. Conf.",
-		"tags":["carolus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"11-05",
-		"day":"Ss. Vitalis et Agricolæ Martyrum",
-		"tags":["vitalis-agricola","commemoratio","martyres"]
-	},
-	{
-		"date":"11-08",
-		"day":"Ss. Quatuor Coronatorum Martyrum",
-		"tags":["quatuor-coronati","commemoratio","martyres"]
-	},
-	{
-		"date":"11-09",
-		"day":"Dedicatio Basilicæ Ss. Salvatoris",
-		"tags":["dedicatio-salvatoris","duplex","dedicatio"]
-	},
-	{
-		"date":"11-09",
-		"day":"S. Theodori Mart.",
-		"tags":["theodorus","commemoratio","martyr"]
-	},
-	{
-		"date":"11-09",
-		"day":"Omnium Sanctorum",
-		"tags":["omnes-sanctes","commemoratio"]
-	},
-	{
-		"date":"11-10",
-		"day":"S. Andreæ Avellini Conf.",
-		"tags":["andrea-avellini","duplex","confessor"]
-	},
-	{
-		"date":"11-10",
-		"day":"Ss. Tryphonis et Soc. Martyrum",
-		"tags":["tryphon-et-soc","commemoratio","martyres"]
-	},
-	{
-		"date":"11-11",
-		"day":"S. Martini Episc. et Conf.",
-		"tags":["martinus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"11-11",
-		"day":"S. Mennæ Mart.",
-		"tags":["mennas","commemoratio","martyr"]
-	},
-	{
-		"date":"11-12",
-		"day":"S. Martini I. Pap. et Mart.",
-		"tags":["martinus-i","semiduplex","papa","episcopus-martyr"]
-	},
-	{
-		"date":"11-13",
-		"day":"S. Didaci Conf.",
-		"tags":["didacus","semiduplex","confessor"]
-	},
-	{
-		"date":"11-14",
-		"day":"S. Josaphat Episc. et Mart.",
-		"tags":["josaphat","duplex","episcopus-martyr"]
-	},
-	{
-		"date":"11-15",
-		"day":"S. Gertrudis Virg.",
-		"tags":["gertrudis","duplex","virgo"]
-	},
-	{
-		"date":"11-17",
-		"day":"S. Gregorii Thaumaturgi Ep. et Conf.",
-		"tags":["gregorius-thaumaturgus","semiduplex","episcopus-confessor"]
-	},
-	{
-		"date":"11-18",
-		"day":"Dedicatio Basilicarum Ss. Petri et Pauli Apost.",
-		"tags":["dedicatio-petri-pauli","duplex","dedicatio"]
-	},
-	{
-		"date":"11-19",
-		"day":"S. Elisabeth Viduæ",
-		"tags":["elisabeth","duplex","vidua"]
-	},
-	{
-		"date":"11-19",
-		"day":"S. Pontiani Papæ et Mart.",
-		"tags":["pontianus","commemoratio","papa","martyr"]
-	},
-	{
-		"date":"11-20",
-		"day":"S. Felicis de Valois Conf.",
-		"tags":["felix-valois","duplex","confessor"]
-	},
-	{
-		"date":"11-21",
-		"day":"Præsentatio B.M.V.",
-		"tags":["praesentatio-bmv","duplex-majus","marianum"]
-	},
-	{
-		"date":"11-22",
-		"day":"S. Cæciliæ Virg. et Mart.",
-		"tags":["caecilia","duplex","virgo","martyr"]
-	},
-	{
-		"date":"11-23",
-		"day":"S. Clementis I. Pap. et Mart.",
-		"tags":["clemens-i","duplex","papa","episcopus-martyr"]
-	},
-	{
-		"date":"11-23",
-		"day":"S. Felicitatis Mart.",
-		"tags":["felicitas","commemoratio","martyr"]
-	},
-	{
-		"date":"11-24",
-		"day":"S. Joannis a Cruce Conf.",
-		"tags":["joannes-cruce","duplex","confessor"]
-	},
-	{
-		"date":"11-24",
-		"day":"S. Chrysogoni Mart.",
-		"tags":["chrysogonus","commemoratio","martyr"]
-	},
-	{
-		"date":"11-25",
-		"day":"S. Catharinæ Virg. et Mart.",
-		"tags":["catharina","duplex","virgo","martyr"]
-	},
-	{
-		"date":"11-26",
-		"day":"S. Petri Alexandrini Ep. et Mart.",
-		"tags":["petrus-alexandrinus","simplex","episcopus-martyr"]
-	},
-	{
-		"date":"11-29",
-		"day":"S. Saturnini Martyris",
-		"tags":["saturninus","commemoratio","martyr"]
-	},
-	{
-		"date":"11-30",
-		"day":"S. Andreæ Apost.",
-		"genitive-day":"S. Andreæ",
-		"tags":["andrea","duplex-ii-classis","apostolus","habens-vigiliam"]
-	},
-	{
-		"date":"12-02",
-		"day":"S. Bibianæ Virg. et Mart.",
-		"tags":["bibiana","semiduplex","virgo","martyr"]
-	},
-	{
-		"date":"12-03",
-		"day":"S. Francisci Xaverii Conf.",
-		"tags":["franciscus-xaverius","duplex","confessor"]
-	},
-	{
-		"date":"12-04",
-		"day":"S. Petri Chrysologi Episc., Conf. et Eccl. Doct.",
-		"tags":["petrus-chrysologus","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"12-04",
-		"day":"S. Barbaræ Virg. et Mart.",
-		"tags":["barbara","commemoratio","virgo","martyr"]
-	},
-	{
-		"date":"12-05",
-		"day":"S. Sabbæ Abbatis",
-		"tags":["sabbas","commemoratio","abbas"]
-	},
-	{
-		"date":"12-06",
-		"day":"S. Nicolai Episc. et Conf.",
-		"tags":["nicolaus","duplex","episcopus-confessor"]
-	},
-	{
-		"date":"12-07",
-		"day":"S. Ambrosii Episc., Conf. et Eccl. Doct.",
-		"tags":["ambrosius","duplex","episcopus-confessor","doctor"]
-	},
-	{
-		"date":"12-08",
-		"day":"Immaculata Conceptio B.M.V.",
-		"genitive-day":"Immaculatæ Conceptionis",
-		"tags":["immaculata-conceptio-bmv","duplex-i-classis","marianum","habens-vigiliam","habens-octavam"]
-	},
-	{
-		"date":"12-10",
-		"day":"S. Melchiadis Papæ et Martyris",
-		"tags":["melchiades","commemoratio","papa","episcopus-martyr"]
-	},
-	{
-		"date":"12-11",
-		"day":"S. Damasi I. Papæ et Cf.",
-		"tags":["damasus-i","semiduplex","papa","episcopus-confessor"]
-	},
-	{
-		"date":"12-13",
-		"day":"S. Luciæ Virg. et Mart.",
-		"tags":["lucia","duplex","virgo","martyr"]
-	},
-	{
-		"date":"12-17",
-		"day":"S. Eusebii Episc. et Mart.",
-		"tags":["eusebius-martyr","semiduplex","episcopus-martyr"]
-	},
-	{
-		"date":"12-21",
-		"day":"S. Thomæ Apost.",
-		"genitive-day":"S. Thomæ",
-		"tags":["thomas","duplex-ii-classis","apostolus","habens-vigiliam"]
-	},
-	{
-		"date":"12-29",
-		"day":"S. Thomæ, Episc. et Mart.",
-		"tags":["thomas-becket","semiduplex","episcopus-martyr"]
-	},
-	{
-		"date":"12-31",
-		"day":"S. Silvestri I. Papæ et Cf.",
-		"tags":["silvestrus-i","duplex","papa","episcopus-confessor"]
-	}
-]
+{
+	"01-05": [
+		["telesphorus", "commemoratio", "papa", "martyr"]
+	],
+	"01-13": [
+		["hyginus", "commemoratio", "papa", "martyr"]
+	],
+	"01-14": [
+		["hilarius", "duplex", "episcopus-confessor", "doctor"],
+		["felix", "commemoratio", "martyr"]
+	],
+	"01-15": [
+		["paulus-eremita", "duplex", "confessor"],
+		["maurus", "commemoratio", "abbas"]
+	],
+	"01-16": [
+		["marcellus-i", "semiduplex", "papa", "martyr"]
+	],
+	"01-17": [
+		["antonius", "duplex", "abbas"]
+	],
+	"01-18": [
+		["cathedra-petri", "duplex-majus"],
+		["prisca", "commemoratio", "virgo", "martyr"]
+	],
+	"01-19": [
+		["canutus", "semiduplex", "martyr"],
+		["marius-et-soc", "commemoratio", "martyres"]
+	],
+	"01-20": [
+		["fabianus-sebastianus", "duplex", "martyres", "papa"]
+	],
+	"01-21": [
+		["agnes", "duplex", "virgo", "martyr"]
+	],
+	"01-22": [
+		["vincentius-anastasius", "semiduplex", "martyres"]
+	],
+	"01-23": [
+		["raymundus-penafort", "semiduplex", "confessor"],
+		["emerantiana", "commemoratio", "virgo", "martyr"]
+	],
+	"01-24": [
+		["timotheus", "duplex", "episcopus-martyr"]
+	],
+	"01-25": [
+		["conversio", "duplex-majus", "apostolus"]
+	],
+	"01-26": [
+		["polycarpus", "duplex", "episcopus-martyr"]
+	],
+	"01-27": [
+		["joannes-chrysostomus", "episcopus-confessor", "doctor"]
+	],
+	"01-28": [
+		["agnes-secundo", "simplex", "virgo", "martyr"]
+	],
+	"01-29": [
+		["franciscus-salesius", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"01-30": [
+		["martina", "semiduplex", "virgo", "martyr"]
+	],
+	"01-31": [
+		["petrus-nolasco", "duplex", "confessor"]
+	],
+	"02-01": [
+		["ignatius", "duplex", "episcopus-martyr"]
+	],
+	"02-02": [
+		["purificatio", "duplex-ii-classis", "marianum"]
+	],
+	"02-03": [
+		["blasius", "simplex", "episcopus-martyr"]
+	],
+	"02-04": [
+		["andrea-corsinus", "duplex", "episcopus-confessor"]
+	],
+	"02-05": [
+		["agatha", "duplex", "virgo", "martyr"]
+	],
+	"02-06": [
+		["titus", "duplex", "episcopus-confessor"],
+		["dorothea", "commemoratio", "virgo", "martyr"]
+	],
+	"02-07": [
+		["romualdus", "abbas"]
+	],
+	"02-08": [
+		["joannes-matha", "duplex", "confessor"]
+	],
+	"02-09": [
+		["cyrillus-alexandrini", "duplex", "episcopus-confessor", "doctor"],
+		["apollonia", "commemoratio", "virgo", "martyr"]
+	],
+	"02-10": [
+		["scholastica", "duplex", "virgo"]
+	],
+	"02-14": [
+		["valentinus", "simplex", "priest", "martyr"]
+	],
+	"02-15": [
+		["faustinus-jovita", "simplex", "martyres"]
+	],
+	"02-18": [
+		["simeon", "simplex", "episcopus-martyr"]
+	],
+	"02-22": [
+		["cathedra-petri-antiochiae", "duplex-majus"]
+	],
+	"02-23": [
+		["petrus-damianus", "episcopus-confessor", "doctor"]
+	],
+	"02-24": [
+		["mathia", "duplex-ii-classis", "habens-vigiliam", "apostolus"]
+	],
+	"03-04": [
+		["casmirus", "semiduplex", "confessor"],
+		["lucius", "commemoratio", "papa", "episcopus-martyr"]
+	],
+	"03-07": [
+		["thomas-aquino", "duplex", "confessor", "doctor"],
+		["perpetua-felicitas", "commemoratio", "martyres"]
+	],
+	"03-08": [
+		["joannes-deo", "duplex", "confessor"]
+	],
+	"03-09": [
+		["francisca-romanae", "duplex", "vidua"]
+	],
+	"03-10": [
+		["quadraginta", "semiduplex", "martyres"]
+	],
+	"03-12": [
+		["gregorius", "duplex", "episcopus-confessor", "papa", "doctor"]
+	],
+	"03-17": [
+		["patritius", "duplex", "episcopus-confessor"]
+	],
+	"03-18": [
+		["cyrillus-hierosolymitani", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"03-19": [
+		["joseph-sponsus", "duplex-i-classis"]
+	],
+	"03-20": [
+		["benedictus", "duplex-majus", "abbas"]
+	],
+	"03-25": [
+		["annuntiatio", "duplex-ii-classis", "marianum"]
+	],
+	"04-02": [
+		["franciscus-paula", "duplex", "confessor"]
+	],
+	"04-04": [
+		["isidorus", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"04-05": [
+		["vincentius-ferrerius", "duplex", "confessor"]
+	],
+	"04-11": [
+		["leo-i", "duplex", "papa", "episcopus-confessor", "doctor"]
+	],
+	"04-13": [
+		["hermenegildus", "semiduplex", "martyr"]
+	],
+	"04-14": [
+		["justinus", "duplex", "martyr"],
+		["tiburtius-valerianus-maximus", "commemoratio", "martyres"]
+	],
+	"04-17": [
+		["anicetus", "simplex", "papa", "episcopus-martyr"]
+	],
+	"04-21": [
+		["anselmus", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"04-22": [
+		["soter-cajus", "semiduplex", "episcopi-martyres"]
+	],
+	"04-23": [
+		["georgius", "semiduplex", "martyr"]
+	],
+	"04-24": [
+		["fidelis", "duplex", "martyr"]
+	],
+	"04-25": [
+		["marcus", "duplex-ii-classis", "martyr", "evangelista", "apostolus", "poenitentialis"]
+	],
+	"04-26": [
+		["cletus-marcellinus", "semiduplex", "episcopi-martyres", "papae"]
+	],
+	"04-28": [
+		["paulus-cruce", "duplex", "confessor"],
+		["vitalis", "commemoratio", "martyr"]
+	],
+	"04-29": [
+		["petrus", "duplex", "martyr"]
+	],
+	"04-30": [
+		["catharina-senensis", "duplex", "virgo"]
+	],
+	"05-01": [
+		["philippus-jacobus", "duplex-ii-classis", "apostoli"]
+	],
+	"05-02": [
+		["athanasius", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"05-03": [
+		["inventio-crucis", "duplex-ii-classis"],
+		["alexandrus-i-et-soc", "commemoratio", "papa", "martyres", "episcopus-confessor"]
+	],
+	"05-04": [
+		["monica", "duplex", "vidua"]
+	],
+	"05-05": [
+		["pius-v", "duplex", "papa", "episcopus-confessor"]
+	],
+	"05-06": [
+		["joannes-portam-latinam", "duplex-majus"]
+	],
+	"05-07": [
+		["duplex", "episcopus-martyr"]
+	],
+	"05-08": [
+		["apparitio-michaelis", "duplex-majus"]
+	],
+	"05-09": [
+		["gregorius-nazianzenus", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"05-10": [
+		["antoninus", "duplex", "episcopus-confessor"],
+		["gordianus-epimachus", "commemoratio", "martyres"]
+	],
+	"05-12": [
+		["nereus-achilleus-domitilla-paneratius", "semiduplex", "virgo", "martyres"]
+	],
+	"05-14": [
+		["bonifacius", "simplex", "martyr"]
+	],
+	"05-16": [
+		["ubaldus", "semiduplex", "episcopus-confessor"]
+	],
+	"05-17": [
+		["paschalis-baylon", "duplex", "confessor"]
+	],
+	"05-18": [
+		["venantius", "duplex", "martyr"]
+	],
+	"05-19": [
+		["petrus-coelestinus", "duplex", "episcopus-confessor", "papa"],
+		["pudentiana", "commemoratio", "virgo"]
+	],
+	"05-20": [
+		["bernardinus-senensis", "semiduplex", "confessor"]
+	],
+	"05-25": [
+		["gregorius-vii", "duplex", "episcopus-confessor", "papa"],
+		["urbanus-i", "commemoratio", "episcopus-martyr", "papa"]
+	],
+	"05-26": [
+		["philippus-nerius", "duplex", "confessor"],
+		["eleutherius", "commemoratio", "episcopus-martyr", "papa"]
+	],
+	"05-27": [
+		["maria-magdalena-pazzis", "semiduplex", "virgo"],
+		["joannes-i", "commemoratio", "episcopus-martyr", "papa"]
+	],
+	"05-28": [
+		["augustinus-episcopus", "duplex", "episcopus-confessor"]
+	],
+	"05-30": [
+		["felix-i", "simplex", "episcopus-martyr", "papa"]
+	],
+	"05-31": [
+		["angela-maricia", "duplex", "virgo"],
+		["petronilla", "commemoratio", "virgo"]
+	],
+	"06-02": [
+		["marcellinus-petrus-erasmus", "simplex", "martyres"]
+	],
+	"06-04": [
+		["franciscus-caracciolo", "duplex", "confessor"]
+	],
+	"06-05": [
+		["bonifacius-episcopus", "duplex", "episcopus-martyr"]
+	],
+	"06-06": [
+		["norbertus", "duplex", "episcopus-confessor"]
+	],
+	"06-09": [
+		["primus-felicianus", "simplex", "martyres"]
+	],
+	"06-10": [
+		["margarita-scotiae", "semiduplex", "vidua"]
+	],
+	"06-11": [
+		["barnabas", "duplex-majus", "apostolus", "martyr"]
+	],
+	"06-12": [
+		["joannis-facundo", "duplex", "confessor"],
+		["basilides", "commemoratio", "martyres"]
+	],
+	"06-13": [
+		["antonius-padua", "duplex", "confessor"]
+	],
+	"06-14": [
+		["basilius-magnus", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"06-15": [
+		["vitus-modestus-crescentia", "simplex", "martyres"]
+	],
+	"06-18": [
+		["marcus-marcellianus", "simplex", "martyres"]
+	],
+	"06-19": [
+		["juliana-falconeriis", "duplex", "virgo"],
+		["gervasius-protasius", "commemoratio", "martyres"]
+	],
+	"06-20": [
+		["silverius", "simplex", "papa", "episcopus-martyr"]
+	],
+	"06-21": [
+		["aloysius", "duplex", "confessor"]
+	],
+	"06-22": [
+		["paulinus", "simplex", "episcopus-confessor"]
+	],
+	"06-24": [
+		["nativitas-joannis-baptistae", "duplex-i-classis", "habens-octavam", "habens-vigiliam"]
+	],
+	"06-25": [
+		["gulielmus", "duplex", "abbas"]
+	],
+	"06-26": [
+		["joannes-paulus", "duplex", "martyres"]
+	],
+	"06-28": [
+		["leo-ii", "semiduplex", "episcopus-confessor", "papa"]
+	],
+	"06-29": [
+		["petrus-paulus", "duplex-i-classis,", "apostoli", "habens-octavam", "habens-vigiliam", "martyres"]
+	],
+	"06-30": [
+		["commemoratio-pauli", "duplex-majus", "martyr", "apostolus"]
+	],
+	"07-02": [
+		["visitatio", "duplex-ii-classis", "marianum"],
+		["processus-martinianus", "commemoratio", "martyres"]
+	],
+	"07-05": [
+		["cyrillus-methodius", "duplex", "episcopi-confessores"]
+	],
+	"07-08": [
+		["elisabeth-portugalliae", "semiduplex", "vidua"]
+	],
+	"07-10": [
+		["septem-fratres", "semiduplex", "martyres"]
+	],
+	"07-11": [
+		["pius-i", "simplex", "martyr", "papa"]
+	],
+	"07-12": [
+		["joannes-gualbertus", "duplex", "abbas"],
+		["nabor-felix", "commemoratio", "martyres"]
+	],
+	"07-13": [
+		["anacletus", "semiduplex", "papa", "martyr"]
+	],
+	"07-14": [
+		["bonaventura", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"07-15": [
+		["henricus", "semiduplex", "confessor"]
+	],
+	"07-16": [
+		["bmv-carmelo", "duplex-majus", "marianum"]
+	],
+	"07-17": [
+		["alexius", "semiduplex", "confessor"]
+	],
+	"07-18": [
+		["camillus-lellis", "duplex", "confessor"],
+		["symphorosa-filii", "commemoratio", "martyres"]
+	],
+	"07-19": [
+		["vincentius-paulo", "duplex", "confessor"]
+	],
+	"07-20": [
+		["hieronymus-aemilianus", "duplex", "confessor"],
+		["margarita", "commemoratio", "virgo", "martyr"]
+	],
+	"07-21": [
+		["praxedes", "simplex", "virgo"]
+	],
+	"07-22": [
+		["maria-magdalena-poenitentia", "duplex"]
+	],
+	"07-23": [
+		["apollinaris", "duplex", "episcopus-martyr"],
+		["liborius", "commemoratio", "episcopus-confessor"]
+	],
+	"07-24": [
+		["christiana", "commemoratio", "virgo", "martyr"]
+	],
+	"07-25": [
+		["jacobus", "duplex-ii-classis", "apostolus", "habens-vigiliam", "martyr"],
+		["christophorus", "commemoratio", "martyr"]
+	],
+	"07-26": [
+		["anna", "duplex-ii-classis", "vidua"]
+	],
+	"07-27": [
+		["pantaleon", "simplex", "martyr"]
+	],
+	"07-28": [
+		["nazarius-celsus,victor-i", "papae", "martyres"]
+	],
+	"07-29": [
+		["martha", "semiduplex", "virgo"],
+		["felix-ii-simplicius-faustinus-beatrix", "commemoratio", "papa", "martyres"]
+	],
+	"07-30": [
+		["abdon-sennen", "simplex", "martyres"]
+	],
+	"07-31": [
+		["ignatius-lojola", "duplex", "confessor"]
+	],
+	"08-01": [
+		["petrus-ad-vincula", "duplex-majus"],
+		["machabaei", "commemoratio", "martyres"]
+	],
+	"08-02": [
+		["alphonsus-liguori", "duplex", "doctor", "episcopus-confessor"]
+	],
+	"08-03": [
+		["inventio-stepheni", "semiduplex", "martyr"]
+	],
+	"08-04": [
+		["dominicus", "duplex-majus", "confessor"]
+	],
+	"08-05": [
+		["maria-ad-nives", "duplex-majus", "marianum"]
+	],
+	"08-06": [
+		["transfiguratio", "duplex-majus"],
+		["xystus-ii-felicissimus-agapitus", "commemoratio", "martyres"]
+	],
+	"08-07": [
+		["cajetanus", "duplex", "confessor"],
+		["donatus", "commemoratio", "episcopus-martyr"]
+	],
+	"08-08": [
+		["cyriacus-largus-smaragdus", "semiduplex", "martyres"]
+	],
+	"08-10": [
+		["laurentius", "duplex-ii-classis", "martyr", "habens-octavam", "habens-vigiliam"]
+	],
+	"08-11": [
+		["tibertius-susanna", "commemoratio", "martyres"]
+	],
+	"08-12": [
+		["clara", "duplex", "virgo"]
+	],
+	"08-13": [
+		["hippolytus-cassianus", "commemoratio", "martyres"]
+	],
+	"08-14": [
+		["eusebius", "commemoratio", "confessor"]
+	],
+	"08-15": [
+		["assumptio", "duplex-i-classis", "marianum", "habens-octavam", "habens-vigiliam"]
+	],
+	"08-16": [
+		["hyacinthus", "duplex", "confessor"]
+	],
+	"08-18": [
+		["agapitus", "commemoratio", "martyr"]
+	],
+	"08-20": [
+		["bernardus", "duplex", "abbas", "doctor"]
+	],
+	"08-21": [
+		["joanna-francisca", "duplex", "vidua"]
+	],
+	"08-22": [
+		["timotheus-etc", "commemoratio", "martyres"]
+	],
+	"08-23": [
+		["philippus-benitius", "duplex", "confessor"]
+	],
+	"08-24": [
+		["bartholomaeus", "duplex-ii-classis", "apostolus", "habens-vigiliam"]
+	],
+	"08-25": [
+		["ludovicus", "semiduplex", "confessor"]
+	],
+	"08-26": [
+		["zephyrinus", "simplex", "papa", "episcopus-martyr"]
+	],
+	"08-27": [
+		["josephus-calasanctius", "duplex", "confessor"]
+	],
+	"08-28": [
+		["augustinus", "duplex", "episcopus-confessor", "doctor"],
+		["hermis", "commemoratio", "martyr"]
+	],
+	"08-29": [
+		["decollatio-joannis-baptistae", "duplex-majus", "martyr"],
+		["sabina", "commemoratio", "martyr"]
+	],
+	"08-30": [
+		["rosa", "duplex", "virgo"],
+		["felix-adauctus", "commemoratio", "martyres"]
+	],
+	"08-31": [
+		["raymundus-nonnatus", "duplex", "confessor"]
+	],
+	"09-01": [
+		["aegidius", "simplex", "abbas"],
+		["duodecim-fratrum", "commemoratio", "martyres"]
+	],
+	"09-02": [
+		["stephanus-hungariae", "semiduplex", "confessor"]
+	],
+	"09-05": [
+		["laurentius-justinianus", "semiduplex", "episcopus-confessor"]
+	],
+	"09-08": [
+		["nativitas-bmv", "duplex-ii-classis", "marianum", "habens-octavam"],
+		["adrianus", "commemoratio", "martyr"]
+	],
+	"09-09": [
+		["gorgonius", "commemoratio", "martyr"]
+	],
+	"09-10": [
+		["nicolaus-tolentino", "duplex", "confessor"]
+	],
+	"09-11": [
+		["protus-hyacinthus", "commemoratio", "martyres"]
+	],
+	"09-14": [
+		["exaltatio-crucis", "duplex-majus"]
+	],
+	"09-15": [
+		["nicomedes", "commemoratio", "martyr"]
+	],
+	"09-16": [
+		["cornelius-cyprianus", "semiduplex", "episcopi-martyres"],
+		["euphemia-et-soc", "commemoratio", "martyres"]
+	],
+	"09-17": [
+		["impressio-stigmatum", "duplex"]
+	],
+	"09-18": [
+		["josephus-cupertino", "duplex", "confessor"]
+	],
+	"09-19": [
+		["januarius-et-soc", "duplex", "episcopus-martyr", "martyres"]
+	],
+	"09-20": [
+		["eustachii-et-soc", "duplex", "martyres"]
+	],
+	"09-21": [
+		["matthaeus", "duplex-ii-classis", "apostolus", "evangelista", "habens-vigiliam"]
+	],
+	"09-22": [
+		["thomas-villanova", "duplex", "episcopus-confessor"],
+		["mauritius-et-soc", "commemoratio", "martyres"]
+	],
+	"09-23": [
+		["linus", "semiduplex", "papa", "martyr"],
+		["thecla", "commemoratio", "virgo", "martyr"]
+	],
+	"09-24": [
+		["bmv-mercede", "duplex-majus", "marianum"]
+	],
+	"09-26": [
+		["cyprianus-justina", "virgo", "martyres"]
+	],
+	"09-27": [
+		["cosmas-damianus", "semiduplex", "martyres"]
+	],
+	"09-28": [
+		["wenceslaus", "semiduplex", "martyr"]
+	],
+	"09-29": [
+		["dedicatio-michaelis", "duplex-ii-classis"]
+	],
+	"09-30": [
+		["hieronymus", "duplex", "confessor", "doctor"]
+	],
+	"10-01": [
+		["remigius", "semiduplex", "episcopus-confessor"]
+	],
+	"10-02": [
+		["angeli-custodes", "duplex-majus"]
+	],
+	"10-04": [
+		["franciscus", "duplex-majus", "confessor"]
+	],
+	"10-05": [
+		["placidus-et-soc", "simplex", "martyres"]
+	],
+	"10-06": [
+		["bruno", "duplex", "confessor"]
+	],
+	"10-07": [
+		["marcus-ii", "simplex", "papa", "confessor"],
+		["sergius-et-soc", "commemoratio", "martyres"]
+	],
+	"10-08": [
+		["birgitta", "duplex", "vidua"]
+	],
+	"10-09": [
+		["dionysius-rusticus-eleutherius", "semiduplex", "martyres"]
+	],
+	"10-10": [
+		["franciscus-borgiae", "semiduplex", "confessor"]
+	],
+	"10-13": [
+		["eduardus", "semiduplex", "confessor"]
+	],
+	"10-14": [
+		["callistus-i", "duplex", "papa", "martyr"]
+	],
+	"10-15": [
+		["teresia", "duplex", "virgo"]
+	],
+	"10-17": [
+		["hedwigis", "semiduplex", "vidua"]
+	],
+	"10-18": [
+		["lucas", "duplex-ii-classis", "apostolus", "evangelista"]
+	],
+	"10-19": [
+		["petrus-alcantara", "duplex", "confessor"]
+	],
+	"10-20": [
+		["joannes-cantius", "duplex", "confessor"]
+	],
+	"10-21": [
+		["hilarion", "simplex", "abbas"],
+		["ursula-et-soc", "virgines", "martyres"]
+	],
+	"10-25": [
+		["chrysanthus-et-daria", "simplex", "martyres"]
+	],
+	"10-26": [
+		["evaristus", "simplex", "papa", "martyr"]
+	],
+	"10-28": [
+		["simon-et-judas", "duplex-ii-classis", "apostoli", "habens-vigiliam"]
+	],
+	"11-01": [
+		["omnes-sanctes", "duplex-i-classis", "habens-vigiliam", "habens-octavam"]
+	],
+	"11-02": [
+		["fideles-defuncti", "commemoratio", "duplex"]
+	],
+	"11-05": [
+		["carolus", "duplex", "episcopus-confessor"],
+		["vitalis-agricola", "commemoratio", "martyres"]
+	],
+	"11-08": [
+		["quatuor-coronati", "commemoratio", "martyres"]
+	],
+	"11-09": [
+		["dedicatio-salvatoris", "duplex", "dedicatio"],
+		["theodorus", "commemoratio", "martyr"],
+		["omnes-sanctes", "commemoratio"]
+	],
+	"11-10": [
+		["andrea-avellini", "duplex", "confessor"],
+		["tryphon-et-soc", "commemoratio", "martyres"]
+	],
+	"11-11": [
+		["martinus", "duplex", "episcopus-confessor"],
+		["mennas", "commemoratio", "martyr"]
+	],
+	"11-12": [
+		["martinus-i", "semiduplex", "papa", "episcopus-martyr"]
+	],
+	"11-13": [
+		["didacus", "semiduplex", "confessor"]
+	],
+	"11-14": [
+		["josaphat", "duplex", "episcopus-martyr"]
+	],
+	"11-15": [
+		["gertrudis", "duplex", "virgo"]
+	],
+	"11-17": [
+		["gregorius-thaumaturgus", "semiduplex", "episcopus-confessor"]
+	],
+	"11-18": [
+		["dedicatio-petri-pauli", "duplex", "dedicatio"]
+	],
+	"11-19": [
+		["elisabeth", "duplex", "vidua"],
+		["pontianus", "commemoratio", "papa", "martyr"]
+	],
+	"11-20": [
+		["felix-valois", "duplex", "confessor"]
+	],
+	"11-21": [
+		["praesentatio-bmv", "duplex-majus", "marianum"]
+	],
+	"11-22": [
+		["caecilia", "duplex", "virgo", "martyr"]
+	],
+	"11-23": [
+		["clemens-i", "duplex", "papa", "episcopus-martyr"],
+		["felicitas", "commemoratio", "martyr"]
+	],
+	"11-24": [
+		["joannes-cruce", "duplex", "confessor"],
+		["chrysogonus", "commemoratio", "martyr"]
+	],
+	"11-25": [
+		["catharina", "duplex", "virgo", "martyr"]
+	],
+	"11-26": [
+		["petrus-alexandrinus", "simplex", "episcopus-martyr"]
+	],
+	"11-29": [
+		["saturninus", "commemoratio", "martyr"]
+	],
+	"11-30": [
+		["andrea", "duplex-ii-classis", "apostolus", "habens-vigiliam"]
+	],
+	"12-02": [
+		["bibiana", "semiduplex", "virgo", "martyr"]
+	],
+	"12-03": [
+		["franciscus-xaverius", "duplex", "confessor"]
+	],
+	"12-04": [
+		["petrus-chrysologus", "duplex", "episcopus-confessor", "doctor"],
+		["barbara", "commemoratio", "virgo", "martyr"]
+	],
+	"12-05": [
+		["sabbas", "commemoratio", "abbas"]
+	],
+	"12-06": [
+		["nicolaus", "duplex", "episcopus-confessor"]
+	],
+	"12-07": [
+		["ambrosius", "duplex", "episcopus-confessor", "doctor"]
+	],
+	"12-08": [
+		["immaculata-conceptio-bmv", "duplex-i-classis", "marianum", "habens-vigiliam", "habens-octavam"]
+	],
+	"12-10": [
+		["melchiades", "commemoratio", "papa", "episcopus-martyr"]
+	],
+	"12-11": [
+		["damasus-i", "semiduplex", "papa", "episcopus-confessor"]
+	],
+	"12-13": [
+		["lucia", "duplex", "virgo", "martyr"]
+	],
+	"12-17": [
+		["eusebius-martyr", "semiduplex", "episcopus-martyr"]
+	],
+	"12-21": [
+		["thomas", "duplex-ii-classis", "apostolus", "habens-vigiliam"]
+	],
+	"12-29": [
+		["thomas-becket", "semiduplex", "episcopus-martyr"]
+	],
+	"12-31": [
+		["silvestrus-i", "duplex", "papa", "episcopus-confessor"]
+	]
+}

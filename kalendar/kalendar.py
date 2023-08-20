@@ -42,9 +42,9 @@ movables = load_data('movables.json')
 months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 
-duplexes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
-ranks = {"feria","commemoratio","simplex"} | duplexes
-octavevigiltags = {"habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"}
+threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
+ranks = {"feria","commemoratio","simplex"} | threenocturnes
+octavevigiltags = {"habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta"}
 numerals = ['II','III','IV','V','VI','VII']
 
 
@@ -67,7 +67,7 @@ def kalendar(year):
     def all_tags(tags):
         for date0, entries in kal.items():
             for entry in entries:
-                if entry["tags"] >= tags:
+                if entry >= tags:
                     yield SearchResult(date0, entry)
 
     def unique_search(tags):
@@ -92,7 +92,7 @@ def kalendar(year):
         if not date0 in kal:
             return ret
         for entry in kal[date0]:
-            ret |= entry["tags"]
+            ret |= entry
         return ret
 
     def sundayafter(date0):
@@ -100,7 +100,7 @@ def kalendar(year):
     def todate(text, year0):
         return date(year0, int(text[:2]), int(text[3:]))
     def addentry(date0, entry):
-        assert type(entry["tags"]) == set
+        assert type(entry) == set
         kal[date0].append(entry)
 
     # Will not work as intended if multiple matches are found for the tags
@@ -108,15 +108,15 @@ def kalendar(year):
     def transfer(tags, target, mention):
         match = unique_search(tags)
         newfeast = copy.deepcopy(match.feast)
-        newfeast["tags"].add("translatus")
+        newfeast.add("translatus")
         addentry(target, newfeast)
         for i in range(0,len(kal[match.date])):
-            if kal[match.date][i]["tags"] >= tags:
+            if kal[match.date][i] >= tags:
                 if mention:
                     oldfeast = copy.deepcopy(kal[match.date][i])
-                    oldfeast["tags"].add("translatus-originalis")
-
-                    oldfeast["tags"] = {item for item in oldfeast["tags"] if not item in ranks and not item in octavevigiltags}
+                    oldfeast.add("translatus-originalis")
+                    oldfeast -= ranks
+                    oldfeast -= octavevigiltags
                     kal[match.date][i] = oldfeast
                 else:
                     kal[match.date].remove(i)
@@ -125,11 +125,11 @@ def kalendar(year):
     def autotransfer(tags, mention, obstacles):
         match = unique_search(tags)
         newfeast = copy.deepcopy(match.feast)
-        newfeast["tags"].add("translatus")
+        newfeast.add("translatus")
         newdate = match.date
         def issuitable(date0):
             for entry in kal[date0]:
-                if not entry["tags"].isdisjoint(obstacles):
+                if not entry.isdisjoint(obstacles):
                     return False
             return True
         while not issuitable(newdate):
@@ -137,12 +137,12 @@ def kalendar(year):
 
         addentry(newdate, newfeast)
         for i in range(0,len(kal[match.date])):
-            if kal[match.date][i]["tags"] >= tags:
+            if kal[match.date][i] >= tags:
                 if mention:
                     oldfeast = copy.deepcopy(kal[match.date][i])
-                    oldfeast["tags"].add("translatus-originalis")
-                    oldfeast["tags"] -= ranks
-                    oldfeast["tags"] -= octavevigiltags
+                    oldfeast.add("translatus-originalis")
+                    oldfeast -= ranks
+                    oldfeast -= octavevigiltags
                     kal[match.date][i] = oldfeast
                 else:
                     kal[match.date].remove(i)
@@ -158,9 +158,9 @@ def kalendar(year):
     epiphanysunday = sundayafter(date(year, 1, 6))
 
     psundayomission = False
-    xxiiipentecostentry = {}
+    xxiiipentecostentry = set()
     esundayomission = False
-    omittedepiphanyentry = {}
+    omittedepiphanyentry = set()
 
     # Advent Cycle
     for entry in adventcycle:
@@ -169,7 +169,7 @@ def kalendar(year):
         # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
         if date0 == christmas:
             break
-        addentry(date0, entry)
+        addentry(date0, entry["tags"])
 
     # Paschal Cycle
     for entry in paschalcycle:
@@ -177,33 +177,31 @@ def kalendar(year):
         date0 = easter + timedelta(days=entry.pop("difference"))
         if date0 == xxivpentecost:
             psundayomission = True
-            xxiiipentecostentry = entry
-            xxiiipentecostentry["tags"] = xxiiipentecostentry["tags"]
+            xxiiipentecostentry = entry["tags"]
             break
-        addentry(date0, entry)
+        addentry(date0, entry["tags"])
 
     # Epiphany Sundays
     epiphanyweek = 0
     while epiphanysunday + timedelta(days=epiphanyweek * 7) != easter - timedelta(days=63):
         for i in range(0,7):
-            addentry(epiphanysunday + timedelta(days=epiphanyweek * 7 + i), epiphanycycle[epiphanyweek][i])
+            addentry(epiphanysunday + timedelta(days=epiphanyweek * 7 + i), epiphanycycle[epiphanyweek][i]["tags"])
         epiphanyweek += 1
     for i in range(0, 6 - epiphanyweek):
         sunday = xxivpentecost - timedelta(days=7 * (i + 1))
         if sunday != xxiiipentecost:
             for j in range(0,7):
-                addentry(sunday + timedelta(days=j), epiphanycycle[5 - i][j])
+                addentry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]["tags"])
         else:
             esundayomission = True
-            omittedepiphanyentry = epiphanycycle[5 - i][0]
-            omittedepiphanyentry["tags"] = omittedepiphanyentry["tags"]
+            omittedepiphanyentry = epiphanycycle[5 - i][0]["tags"]
 
     # Nativity & Epiphany
     for entry in nativitycycle:
         entry = copy.deepcopy(entry)
         date0 = todate(entry.pop("date"), year)
-        addentry(date0, entry)
-    addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"])
+        addentry(date0, entry["tags"])
+    addentry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"]["tags"])
     if date(year, 1, 6).weekday() == 6:
         transfer({"epiphania","dominica"}, date(year, 1, 12), True)
         epiphanysunday = date(year, 1, 12)
@@ -211,9 +209,9 @@ def kalendar(year):
     currday = 2
     for i in range(0, 6):
         if not date(year, 1, 7 + i) == epiphanysunday:
-            addentry(date(year, 1, 7 + i), {"day":"Dies " + numerals[currday - 2] + " infra Octavam Epiphaniæ","tags":{"epiphania","semiduplex","infra-octavam","dies-" + numerals[currday - 2].lower()}})
+            addentry(date(year, 1, 7 + i), {"epiphania","semiduplex","infra-octavam","dies-" + numerals[currday - 2].lower()})
             currday += 1
-    addentry(date(year, 1, 13), {"day":"Octava Epiphaniæ","tags":{"epiphania","dies-octava","duplex"}})
+    addentry(date(year, 1, 13), {"epiphania","dies-octava","duplex"})
 
     # Autumnal Weeks
     def nearsunday(kalends):
@@ -229,35 +227,29 @@ def kalendar(year):
         j = 0
         while kalends + timedelta(days=j*7) != nextkalends:
             for k in range(0,7):
-                addentry(kalends + timedelta(days=j*7+k), month[j][k])
+                addentry(kalends + timedelta(days=j*7+k), month[j][k]["tags"])
             j += 1
     kalends = nearsunday(date(year, 11, 1))
     # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
     j = 0
     while kalends + timedelta(days=j*7) != adventstart:
         for k in range(0,7):
-            addentry(kalends + timedelta(days=j*7+k), months["november"][j][k])
+            addentry(kalends + timedelta(days=j*7+k), months["november"][j][k]["tags"])
         j += 1
 
     # Saints, and also handles leap years
-    if year % 4 == 0 and (year % 400 == 0 or year % 100 != 0):
-        for entry in sanctoral:
-            entry = copy.deepcopy(entry)
-            date0 = todate(entry.pop("date"), year)
-            if date0.month == 2 and date0.day > 23:
-                addentry(date0 + timedelta(days=1), entry)
-            else:
-                addentry(date0, entry)
-    else:
-        for entry in sanctoral:
-            entry = copy.deepcopy(entry)
-            date0 = todate(entry.pop("date"), year)
-            addentry(date0, entry)
+    leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
+    for i in sanctoral:
+        date0 = todate(i, year)
+        if leapyear and date0.month == 2 and date0.day > 23:
+            date0 = date0 + timedelta(days=1)
+        for j in sanctoral[i]:
+            addentry(date0, set(j))
 
     # List of inferred feasts that get merged in later
     buffer = defaultdict(list)
     def addbufferentry(date0, entry):
-        assert type(entry["tags"]) == set
+        assert type(entry) == set
         buffer[date0].append(entry)
 
     def merge_buffer():
@@ -272,86 +264,83 @@ def kalendar(year):
             matches = all_tags(movable.pop("occurrence"))
             if "excluded" in movable:
                 excluded = movable.pop("excluded")
-                matches = (j for j in matches if j.feast["tags"].isdisjoint(excluded))
+                matches = (j for j in matches if j.feast.isdisjoint(excluded))
             for match in matches:
-                addbufferentry(match.date, movable)
+                addbufferentry(match.date, movable["tags"])
 
     merge_buffer()
 
     # Irregular movables
     assumption = date(year, 8, 15)
     if assumption.weekday() == 6:
-        addentry(assumption + timedelta(days=1), movables["joachim"])
+        addentry(assumption + timedelta(days=1), movables["joachim"]["tags"])
     else:
-        addentry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"])
+        addentry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"]["tags"])
     # First Sunday of July
-    addentry(nearsunday(date(year,7,1)), movables["pretiosissimi-sanguinis"])
+    addentry(nearsunday(date(year,7,1)), movables["pretiosissimi-sanguinis"]["tags"])
     assumption = date(year, 9, 8)
     if assumption.weekday() == 6:
-        addentry(assumption + timedelta(days=1), movables["nominis-bmv"])
+        addentry(assumption + timedelta(days=1), movables["nominis-bmv"]["tags"])
     else:
-        addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"])
+        addentry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"]["tags"])
 
     # Octave and Vigil Processing
     for i, entries in kal.items():
         for entry in entries:
-            if "habens-octavam" in entry["tags"] and not "octava-excepta" in entry["tags"]:
+            if "habens-octavam" in entry and not "octava-excepta" in entry:
                 for k in range(1,7):
                     date0 = i + timedelta(days=k)
                     if "quadragesima" in tagsindate(date0):
                         break
                     entrystripped = copy.deepcopy(entry)
-                    entrystripped["tags"] -= octavevigiltags
-                    entrystripped["tags"] -= ranks
-                    entrystripped["tags"] |= {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
-                    entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped.pop("genitive-day")
+                    entrystripped -= octavevigiltags
+                    entrystripped -= ranks
+                    entrystripped |= {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
                     addbufferentry(date0, entrystripped)
                 date0 = i + timedelta(days=7)
                 if "quadragesima" in tagsindate(date0):
                     continue
                 entrystripped = copy.deepcopy(entry)
-                entrystripped["tags"] -= octavevigiltags
-                entrystripped["tags"] -= ranks
-                entrystripped["tags"] |= {"duplex", "dies-octava"}
-                entrystripped["day"] = "In Octava " + entrystripped.pop("genitive-day")
+                entrystripped -= octavevigiltags
+                entrystripped -= ranks
+                entrystripped |= {"duplex", "dies-octava"}
                 addbufferentry(date0, entrystripped)
-            if "habens-vigiliam" in entry["tags"] and not "vigilia-excepta" in entry["tags"]:
+            if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
                 entrystripped = copy.deepcopy(entry)
-                entrystripped["tags"] -= octavevigiltags
-                entrystripped["tags"] -= ranks
-                entrystripped["tags"] |= {"vigilia","poenitentialis","feria"}
-                entrystripped["day"] = "Vigilia " + entrystripped.pop("genitive-day")
+                entrystripped -= octavevigiltags
+                entrystripped -= ranks
+                entrystripped |= {"vigilia","poenitentialis","feria"}
                 addbufferentry(i - timedelta(days=1), entrystripped)
 
     merge_buffer()
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if psundayomission:
-        xxiiipentecostentry["tags"].add("translatus")
+        xxiiipentecostentry.add("translatus")
         i = 1
         while i < 7:
-            if not any(not i["tags"].isdisjoint(duplexes) for i in kal[xxivpentecost - timedelta(days=i)]):
+            if tagsindate(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
                 addentry(xxivpentecost - timedelta(days=i), xxiiipentecostentry)
                 break
             else:
                 i += 1
         if i == 7:
-            xxiiipentecostentry["tags"].add("commemoratio")
-            xxiiipentecostentry["tags"].add("translatus")
+            xxiiipentecostentry.add("commemoratio")
+            xxiiipentecost.discard("semiduplex")
             addentry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if esundayomission:
-        omittedepiphanyentry["tags"].add("translatus")
+        omittedepiphanyentry.add("translatus")
         septuagesima = easter - timedelta(days=63)
         i = 1
         while i < 7:
-            if not any(not i["tags"].isdisjoint(duplexes) for i in kal[septuagesima - timedelta(days=i)]):
+            if tagsindate(septuagesima - timedelta(days=i)).isdisjoint(threenocturnes):
                 addentry(septuagesima - timedelta(days=i), omittedepiphanyentry)
                 break
             else:
                 i += 1
         if i == 7:
-            omittedepiphanyentry["tags"].add("commemoratio")
-            omittedepiphanyentry["tags"].add("translatus")
+            omittedepiphanyentry.add("commemoratio")
+            omittedepiphanyentry.discard("semiduplex")
             addentry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
     # Transfers
@@ -370,11 +359,11 @@ def kalendar(year):
 
     def transfer_all(target, obstacles):
         for i in all_tags(target):
-            if not i.feast["tags"].isdisjoint(excepted):
+            if not i.feast.isdisjoint(excepted):
                 continue
             for j in kal[i.date]:
-                if not j["tags"].isdisjoint(obstacles):
-                    autotransfer(i.feast["tags"], True, obstacles)
+                if not j.isdisjoint(obstacles):
+                    autotransfer(i.feast, True, obstacles)
     obstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
@@ -391,10 +380,10 @@ def kalendar(year):
     transfer_all({"doctor","duplex"}, obstacles)
 
     for i in all_tags({"vigilia"}):
-        if "non-translandus" in i.feast["tags"]:
+        if "non-translandus" in i.feast:
             continue
         if "dominica" in tagsindate(i.date):
-            transfer(i.feast["tags"], i.date - timedelta(days=1), True)
+            transfer(i.feast, i.date - timedelta(days=1), True)
 
     fidelesdefuncti = unique_search({"fideles-defuncti"})
     if "dominica" in tagsindate(fidelesdefuncti.date):
@@ -432,11 +421,7 @@ if __name__ == "__main__":
     # Generate kalendar
     ret = dict(sorted(kalendar(args.year).items()))
 
-    # Convert datestrings to strings
-    ret = {str(k): v for k, v in ret.items()}
-    # Convert tag set into list
-    for i in ret:
-        for j in ret[i]:
-            j["tags"] = list(j["tags"])
+    # Convert datestrings to strings and sets into list
+    ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
     # Write JSON output
     args.output.write(json.dumps(ret) + "\n")
