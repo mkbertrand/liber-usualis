@@ -53,6 +53,14 @@ def kalendar(year):
                     return SearchResult(i, j)
         return None
     
+    def datetags(date0):
+        ret = set()
+        if not date0 in kal:
+            return ret
+        for i in kal[date0]:
+            ret.update(i["tags"])
+        return ret
+
     def sundayafter(date0):
         return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=6)
     def todate(text, year0):
@@ -248,6 +256,10 @@ def kalendar(year):
         for j in kal[i]:
             if "habens-octavam" in j["tags"] and not "octava-excepta" in j["tags"]:
                 for k in range(1,7):
+                    date0 = i + timedelta(days=k)
+                    print(datetags(date0))
+                    if "quadragesima" in datetags(date0):
+                        break
                     entrystripped = copy.deepcopy(j)
                     for l in octavevigiltags:
                         entrystripped["tags"].discard(l)
@@ -256,7 +268,10 @@ def kalendar(year):
                     entrystripped["tags"].update(["semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()])
                     entrystripped["day"] = "Dies " + numerals[k - 1] + " infra Octavam " + entrystripped["genitive-day"]
                     del entrystripped["genitive-day"]
-                    addbufferentry(i + timedelta(days=k), entrystripped)
+                    addbufferentry(date0, entrystripped)
+                date0 = i + timedelta(days=7)
+                if "quadragesima" in datetags(date0):
+                    continue
                 entrystripped = copy.deepcopy(j)
                 for l in octavevigiltags:
                     entrystripped["tags"].discard(l)
@@ -266,7 +281,7 @@ def kalendar(year):
                 entrystripped["tags"].add("dies-octava")
                 entrystripped["day"] = "In Octava " + entrystripped["genitive-day"]
                 del entrystripped["genitive-day"]
-                addbufferentry(i + timedelta(days=7), entrystripped)
+                addbufferentry(date0, entrystripped)
             if "habens-vigiliam" in j["tags"] and not "vigilia-excepta" in j["tags"]:
                 entrystripped = copy.deepcopy(j)
                 for l in octavevigiltags:
