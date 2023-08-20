@@ -257,7 +257,6 @@ def kalendar(year):
             if "habens-octavam" in j["tags"] and not "octava-excepta" in j["tags"]:
                 for k in range(1,7):
                     date0 = i + timedelta(days=k)
-                    print(datetags(date0))
                     if "quadragesima" in datetags(date0):
                         break
                     entrystripped = copy.deepcopy(j)
