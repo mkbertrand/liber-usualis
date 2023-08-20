@@ -22,7 +22,7 @@ movables = load_data('movables.json')
 months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 
-ranks = ["feria","simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"]
+ranks = ["feria","commemoratio","simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"]
 octavevigiltags = ["habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","date"]
 
 class SearchResult:
@@ -296,7 +296,7 @@ def kalendar(year):
         xxiiipentecostentry["tags"].add("transfer")
         i = 1
         while i < 7:
-            if (not any(any(j in i["tags"] for j in ranks[2:]) for i in kal[xxivpentecost - timedelta(days=i)])):
+            if (not any(any(j in i["tags"] for j in ranks[3:]) for i in kal[xxivpentecost - timedelta(days=i)])):
                 addentry(xxivpentecost - timedelta(days=i), xxiiipentecostentry)
                 break
             else:
@@ -310,7 +310,7 @@ def kalendar(year):
         septuagesima = easter - timedelta(days=63)
         i = 1
         while i < 7:
-            if (not any(any(j in i["tags"] for j in ranks[2:]) for i in kal[septuagesima - timedelta(days=i)])):
+            if (not any(any(j in i["tags"] for j in ranks[3:]) for i in kal[septuagesima - timedelta(days=i)])):
                 addentry(septuagesima - timedelta(days=i), omittedepiphanyentry)
                 break
             else:
