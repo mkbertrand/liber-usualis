@@ -111,30 +111,21 @@ class Kalendar:
             ret |= entry
         return ret
 
-
-def kalendar(year):
-    kal = Kalendar(year=year)
-
-    def sundayafter(date0):
-        return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=7)
-    def todate(text, year0):
-        return date(year0, int(text[:2]), int(text[3:]))
-
     # Will not work as intended if multiple matches are found for the tags
     # Automatically decide the suitable date whither the feast should be transferred
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
-    def transfer(tags, *, target=None, obstacles=None, mention=True):
-        match = kal.match_unique(tags)
+    def transfer(self, tags, *, target=None, obstacles=None, mention=True):
+        match = self.match_unique(tags)
         newfeast = copy.deepcopy(match.feast)
         newfeast.add("translatus")
 
         if target is None:
             target = match.date
         if obstacles is not None:
-            while not kal.tagsindate(target).isdisjoint(obstacles):
+            while not self.tagsindate(target).isdisjoint(obstacles):
                 target = target + timedelta(days=1)
 
-        entries = kal[match.date]
+        entries = self[match.date]
         if mention:
             # Modify matching entries
             entries[:] = [
@@ -147,7 +138,16 @@ def kalendar(year):
             # Keep all but matching entries
             entries[:] = [entry for entry in entries if entry < tags]
 
-        kal.add_entry(target, newfeast)
+        self.add_entry(target, newfeast)
+
+
+def kalendar(year):
+    kal = Kalendar(year=year)
+
+    def sundayafter(date0):
+        return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=7)
+    def todate(text, year0):
+        return date(year0, int(text[:2]), int(text[3:]))
 
 
     easter = pascha.geteaster(year)
@@ -201,7 +201,7 @@ def kalendar(year):
     kal.add_entry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"]["tags"])
     if date(year, 1, 6).weekday() == 6:
         epiphanysunday = date(year, 1, 12)
-        transfer({"epiphania","dominica"}, target=epiphanysunday)
+        kal.transfer({"epiphania","dominica"}, target=epiphanysunday)
 
     currday = 2
     for i in range(0, 6):
@@ -342,10 +342,10 @@ def kalendar(year):
     candlemas = kal.match_unique({"purificatio","duplex-ii-classis"})
     # N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
     if sjb.date == corpuschristi.date:
-        transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, target=date(year, 6, 25))
+        kal.transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, target=date(year, 6, 25))
     # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
     if candlemas.date in (match.date for match in kal.match({"dominica-ii-classis"})):
-        transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
+        kal.transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
@@ -353,14 +353,14 @@ def kalendar(year):
         for match in kal.match(target, excepted):
             for entry in kal[match.date]:
                 if not entry.isdisjoint(obstacles):
-                    transfer(match.feast, obstacles=obstacles)
+                    kal.transfer(match.feast, obstacles=obstacles)
     obstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
         # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
-        transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-becket"})
+        kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-becket"})
     else:
-        transfer({"thomas-becket"}, target=date(year, 12, 29))
+        kal.transfer({"thomas-becket"}, target=date(year, 12, 29))
     transfer_all({"duplex-i-classis"}, obstacles)
     obstacles |= {"duplex-i-classis"}
     transfer_all({"duplex-ii-classis"}, obstacles)
@@ -373,11 +373,11 @@ def kalendar(year):
         if "non-translandus" in match.feast:
             continue
         if "dominica" in kal.tagsindate(match.date):
-            transfer(match.feast, target=match.date - timedelta(days=1))
+            kal.transfer(match.feast, target=match.date - timedelta(days=1))
 
     fidelesdefuncti = kal.match_unique({"fideles-defuncti"})
     if "dominica" in kal.tagsindate(fidelesdefuncti.date):
-        transfer({"fideles-defuncti"}, target=fidelesdefuncti.date + timedelta(days=1))
+        kal.transfer({"fideles-defuncti"}, target=fidelesdefuncti.date + timedelta(days=1))
 
     return kal
 
