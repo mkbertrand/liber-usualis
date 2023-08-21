@@ -349,12 +349,10 @@ def kalendar(year):
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
-    def transfer_all(target, obstacles0):
+    def transfer_all(target, obstacles0, exceptions):
         for match in kal.match(target, excepted):
-            for entry in kal[match.date]:
-                if not entry.isdisjoint(obstacles0):
-                    kal.transfer(match.feast, obstacles=obstacles0)
-                    break
+            if not kal.tagsindate(match.date).isdisjoint(obstacles0):
+                kal.transfer(match.feast, obstacles=obstacles0)
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
@@ -362,13 +360,18 @@ def kalendar(year):
         kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-becket"})
     else:
         kal.transfer({"thomas-becket"}, target=date(year, 12, 29))
-    transfer_all({"duplex-i-classis"}, standardobstacles)
-    standardobstacles |= {"duplex-i-classis"}
-    transfer_all({"duplex-ii-classis"}, standardobstacles)
+
+    transfer_all({"duplex-i-classis"}, standardobstacles, excepted)
+    standardobstacles |= {"duplex-i-classis", "marcus"}
+    stmarks = kal.match_unique({"marcus", "duplex-ii-classis"}, none_ok=False)
+    if "pascha" in kal.tagsindate(stmarks.date):
+        kal.transfer(stmarks.feast, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}, none_ok=False).date)
+    excepted.add("marcus")
+    transfer_all({"duplex-ii-classis"}, standardobstacles, excepted)
     standardobstacles |= {"duplex-ii-classis","dies-octava"}
-    transfer_all({"duplex-majus"}, standardobstacles)
+    transfer_all({"duplex-majus"}, standardobstacles, excepted)
     standardobstacles |= {"duplex-majus"}
-    transfer_all({"doctor","duplex"}, standardobstacles)
+    transfer_all({"doctor","duplex"}, standardobstacles, excepted)
 
     for match in kal.match({"vigilia"}):
         if "non-translandus" in match.feast:
