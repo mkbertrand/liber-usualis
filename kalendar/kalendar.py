@@ -134,20 +134,20 @@ def kalendar(year):
             while not kal.tagsindate(target).isdisjoint(obstacles):
                 target = target + timedelta(days=1)
 
-        kal.add_entry(target, newfeast)
-
         entries = kal[match.date]
-        for i in range(0,len(entries)):
-            if entries[i] >= tags:
-                if mention:
-                    oldfeast = copy.deepcopy(entries[i])
-                    oldfeast.add("translatus-originalis")
-                    oldfeast -= ranks
-                    oldfeast -= octavevigiltags
-                    entries[i] = oldfeast
-                else:
-                    entries.remove(i)
-                break
+        if mention:
+            # Modify matching entries
+            entries[:] = [
+                entry - ranks - octavevigiltags | {"translatus-originalis"}
+                if entry >= tags
+                else entry
+                for entry in entries
+            ]
+        else:
+            # Keep all but matching entries
+            entries[:] = [entry for entry in entries if entry < tags]
+
+        kal.add_entry(target, newfeast)
 
 
     easter = pascha.geteaster(year)
