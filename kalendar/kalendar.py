@@ -349,25 +349,26 @@ def kalendar(year):
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
-    def transfer_all(target, obstacles):
+    def transfer_all(target, obstacles0):
         for match in kal.match(target, excepted):
             for entry in kal[match.date]:
-                if not entry.isdisjoint(obstacles):
-                    kal.transfer(match.feast, obstacles=obstacles)
-    obstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
+                if not entry.isdisjoint(obstacles0):
+                    kal.transfer(match.feast, obstacles=obstacles0)
+                    break
+    standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
         # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
         kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-becket"})
     else:
         kal.transfer({"thomas-becket"}, target=date(year, 12, 29))
-    transfer_all({"duplex-i-classis"}, obstacles)
-    obstacles |= {"duplex-i-classis"}
-    transfer_all({"duplex-ii-classis"}, obstacles)
-    obstacles |= {"duplex-ii-classis","dies-octava"}
-    transfer_all({"duplex-majus"}, obstacles)
-    obstacles |= {"duplex-majus"}
-    transfer_all({"doctor","duplex"}, obstacles)
+    transfer_all({"duplex-i-classis"}, standardobstacles)
+    standardobstacles |= {"duplex-i-classis"}
+    transfer_all({"duplex-ii-classis"}, standardobstacles)
+    standardobstacles |= {"duplex-ii-classis","dies-octava"}
+    transfer_all({"duplex-majus"}, standardobstacles)
+    standardobstacles |= {"duplex-majus"}
+    transfer_all({"doctor","duplex"}, standardobstacles)
 
     for match in kal.match({"vigilia"}):
         if "non-translandus" in match.feast:
