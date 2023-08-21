@@ -158,10 +158,8 @@ def kalendar(year):
 
     epiphanysunday = sundayafter(date(year, 1, 6))
 
-    psundayomission = False
-    xxiiipentecostentry = set()
-    esundayomission = False
-    omittedepiphanyentry = set()
+    xxiiipentecostentry = None
+    omittedepiphanyentry = None
 
     # Advent Cycle
     for entry in adventcycle:
@@ -177,7 +175,6 @@ def kalendar(year):
         entry = copy.deepcopy(entry)
         date0 = easter + timedelta(days=entry.pop("difference"))
         if date0 == xxivpentecost:
-            psundayomission = True
             xxiiipentecostentry = entry["tags"]
             break
         kal.add_entry(date0, entry["tags"])
@@ -194,7 +191,6 @@ def kalendar(year):
             for j in range(0,7):
                 kal.add_entry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]["tags"])
         else:
-            esundayomission = True
             omittedepiphanyentry = epiphanycycle[5 - i][0]["tags"]
 
     # Nativity & Epiphany
@@ -311,7 +307,7 @@ def kalendar(year):
     buffer.kal.clear()
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
-    if psundayomission:
+    if xxiiipentecostentry:
         xxiiipentecostentry.add("translatus")
         i = 1
         while i < 7:
@@ -324,7 +320,7 @@ def kalendar(year):
             xxiiipentecostentry.add("commemoratio")
             xxiiipentecost.discard("semiduplex")
             kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
-    if esundayomission:
+    if omittedepiphanyentry:
         omittedepiphanyentry.add("translatus")
         septuagesima = easter - timedelta(days=63)
         i = 1
