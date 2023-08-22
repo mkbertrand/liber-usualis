@@ -395,6 +395,18 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "-v",
+        "--verbosity",
+        metavar="LEVEL",
+        type=lambda s: s.upper(),
+        choices=logging.getLevelNamesMapping().keys(),
+        default=logging.getLevelName(logging.getLogger().getEffectiveLevel()),
+        const="debug",
+        nargs="?",
+        help="Verbosity",
+    )
+
+    parser.add_argument(
         "-o",
         "--output",
         type=argparse.FileType("w"),
@@ -411,6 +423,9 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+
+    if args.verbosity:
+        logging.getLogger().setLevel(args.verbosity)
 
     # Generate kalendar
     ret = dict(sorted(kalendar(args.year).items()))
