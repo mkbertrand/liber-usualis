@@ -274,33 +274,25 @@ def kalendar(year):
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
+            entry_base = entry - octavevigiltags - ranks
             if "habens-octavam" in entry and not "octava-excepta" in entry:
                 for k in range(1,7):
                     date0 = ent_date + timedelta(days=k)
                     if "quadragesima" in kal.tagsindate(date0):
                         break
-                    entrystripped = copy.deepcopy(entry)
-                    entrystripped -= octavevigiltags
-                    entrystripped -= ranks
-                    entrystripped |= {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
+                    entrystripped = entry_base | {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_unique(entrystripped, none_ok=True) is None:
                         buffer.add_entry(date0, entrystripped)
                 date0 = ent_date + timedelta(days=7)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
-                entrystripped = copy.deepcopy(entry)
-                entrystripped -= octavevigiltags
-                entrystripped -= ranks
-                entrystripped |= {"duplex", "dies-octava"}
+                entrystripped = entry_base | {"duplex", "dies-octava"}
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_unique(entrystripped, none_ok=True) is None:
                     buffer.add_entry(date0, entrystripped)
             if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
-                entrystripped = copy.deepcopy(entry)
-                entrystripped -= octavevigiltags
-                entrystripped -= ranks
-                entrystripped |= {"vigilia","poenitentialis","feria"}
+                entrystripped = entry_base | {"vigilia","poenitentialis","feria"}
                 buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
     kal |= buffer
