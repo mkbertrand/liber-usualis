@@ -120,11 +120,13 @@ class Kalendar:
         newfeast = copy.deepcopy(entry)
         newfeast.add("translatus")
 
+        # Compute date
         if target is None:
             target = match_date
+        newdate = target
         if obstacles is not None:
-            while not self.tagsindate(target).isdisjoint(obstacles):
-                target = target + timedelta(days=1)
+            while not self.tagsindate(newdate).isdisjoint(obstacles):
+                newdate = newdate + timedelta(days=1)
 
         entries = self[match_date]
         if mention:
@@ -139,7 +141,7 @@ class Kalendar:
             # Keep all but matching entries
             entries[:] = [e for e in entries if e is not entry]
 
-        self.add_entry(target, newfeast)
+        self.add_entry(newdate, newfeast)
 
 
 def kalendar(year: int) -> Kalendar:
