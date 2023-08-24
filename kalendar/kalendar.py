@@ -86,13 +86,15 @@ class Kalendar:
                 if entry >= include and entry.isdisjoint(exclude):
                     yield SearchResult(date0, entry)
 
-    def match_unique(self, include: Set[str] = set(), exclude: Set[str] = set(), none_ok=False):
+    def match_any(self, include: Set[str] = set(), exclude: Set[str] = set()) -> Optional[SearchResult]:
+        # Check whether kal.match returns any matches
+        return next(self.match(include, exclude), None)
+
+    def match_unique(self, include: Set[str] = set(), exclude: Set[str] = set()) -> SearchResult:
         # Get the first match from kal.match
         it = self.match(include, exclude)
         match = next(it, None)
         if match is None:
-            if none_ok:
-                return None
             # Fail if zero matches
             raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got no matches!")
         else:
@@ -297,14 +299,14 @@ def kalendar(year: int) -> Kalendar:
                         break
                     entrystripped = entry_base | {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
                     # If a certain day within an Octave is manually entered, do not create one automatically
-                    if kal.match_unique(entrystripped, none_ok=True) is None:
+                    if kal.match_any(entrystripped) is None:
                         buffer.add_entry(date0, entrystripped)
                 date0 = ent_date + timedelta(days=7)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
                 entrystripped = entry_base | {"duplex", "dies-octava"}
                 # If a certain day within an Octave is manually entered, do not create one automatically
-                if kal.match_unique(entrystripped, none_ok=True) is None:
+                if kal.match_any(entrystripped) is None:
                     buffer.add_entry(date0, entrystripped)
             if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
                 entrystripped = entry_base | {"vigilia","poenitentialis","feria"}
@@ -370,9 +372,9 @@ def kalendar(year: int) -> Kalendar:
 
     transfer_all({"duplex-i-classis"}, standardobstacles, excepted)
     standardobstacles |= {"duplex-i-classis", "marcus"}
-    stmarks = kal.match_unique({"marcus", "duplex-ii-classis"}, none_ok=False)
+    stmarks = kal.match_unique({"marcus", "duplex-ii-classis"})
     if "pascha" in kal.tagsindate(stmarks.date):
-        kal.transfer(stmarks.feast, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}, none_ok=False).date)
+        kal.transfer(stmarks.feast, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}).date)
     excepted.add("marcus")
     transfer_all({"duplex-ii-classis"}, standardobstacles, excepted)
     standardobstacles |= {"duplex-ii-classis","dies-octava"}
