@@ -349,10 +349,10 @@ def kalendar(year):
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
-    def transfer_all(target, obstacles0, exceptions):
+    def transfer_all(target, obstacles, exceptions):
         for match in kal.match(target, exceptions):
-            if not kal.tagsindate(match.date).isdisjoint(obstacles0):
-                kal.transfer(match.feast, obstacles=obstacles0)
+            if not kal.tagsindate(match.date).isdisjoint(obstacles):
+                kal.transfer(match.feast, obstacles=obstacles)
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
