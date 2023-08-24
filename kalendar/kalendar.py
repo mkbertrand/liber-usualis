@@ -81,6 +81,7 @@ class Kalendar:
         return self.kal[key]
 
     def match(self, include: Set[str] = set(), exclude: Set[str] = set()):
+        assert include.isdisjoint(exclude), f"{include!r} and {exclude!r} must be disjoint"
         for date0, entries in self.kal.items():
             for entry in entries:
                 if entry >= include and entry.isdisjoint(exclude):
