@@ -115,8 +115,9 @@ class Kalendar:
     # Will not work as intended if multiple matches are found for the tags
     # Automatically decide the suitable date whither the feast should be transferred
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
-    def transfer(self, tags, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> None:
-        match_date, entry = self.match_unique(tags)
+    def transfer(self, tags, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
+        match = self.match_unique(tags)
+        match_date, entry = match
         newfeast = copy.deepcopy(entry)
         newfeast.add("translatus")
 
@@ -127,6 +128,11 @@ class Kalendar:
         if obstacles is not None:
             while not self.tagsindate(newdate).isdisjoint(obstacles):
                 newdate = newdate + timedelta(days=1)
+
+        # Skip transfer if it's to the same day
+        if newdate == match_date:
+            logging.debug(f"{self.year}: {entry!r} already on {newdate}")
+            return match
 
         entries = self[match_date]
         if mention:
@@ -142,6 +148,10 @@ class Kalendar:
             entries[:] = [e for e in entries if e is not entry]
 
         self.add_entry(newdate, newfeast)
+
+        logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
+
+        return SearchResult(newdate, newfeast)
 
 
 def kalendar(year: int) -> Kalendar:
