@@ -41,7 +41,7 @@ sanctoral = load_data('kalendar.json')
 
 threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 ranks = {"feria","commemoratio","simplex"} | threenocturnes
-octavevigiltags = {"habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","incipit-libri"}
+octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
 numerals = ['II','III','IV','V','VI','VII']
 
 
