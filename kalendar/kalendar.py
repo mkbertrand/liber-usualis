@@ -129,14 +129,14 @@ class Kalendar:
         if mention:
             # Modify matching entries
             entries[:] = [
-                entry - ranks - octavevigiltags | {"translatus-originalis"}
-                if entry >= tags
-                else entry
-                for entry in entries
+                e - ranks - octavevigiltags | {"translatus-originalis"}
+                if e is entry
+                else e
+                for e in entries
             ]
         else:
             # Keep all but matching entries
-            entries[:] = [entry for entry in entries if entry < tags]
+            entries[:] = [e for e in entries if e is not entry]
 
         self.add_entry(target, newfeast)
 
