@@ -61,18 +61,37 @@ class Kalendar:
         super().__init__(*args, **kwargs)
 
         self.kal: defaultdict = defaultdict(list)
+        self.pending: defaultdict = defaultdict(list)
         self.year = year
+        self.hold = 0
 
     def add_entry(self, date: date, entry: set | frozenset) -> SearchResult:
         if type(entry) == frozenset:
             entry = set(entry)
         assert type(entry) == set
-        self.kal[date].append(entry)
+        if self.hold > 0:
+            self.pending[date].append(entry)
+        else:
+            self.kal[date].append(entry)
         return SearchResult(date, entry)
 
+    def hold_pending(self) -> None:
+        assert self.hold >= 0
+        if self.hold == 0:
+            assert len(self.pending) == 0
+        self.hold = self.hold + 1
+
+    def merge_pending(self) -> None:
+        assert self.hold > 0, "Haven't been holding any changes"
+        self.hold = self.hold - 1
+        if self.hold == 0:
+            for day, entries in self.pending.items():
+                self.kal[day] += entries
+            self.pending.clear()
+
     def __ior__(self, other) -> Self:
-        for date0, entries in other.kal.items():
-            self.kal[date0] += entries
+        for day, entries in other.kal.items():
+            self.kal[day] += entries
         return self
 
     def keys(self):
@@ -314,18 +333,12 @@ def kalendar(year: int) -> Kalendar:
         for entry in entries:
             kal.add_entry(date0, entry)
 
-    # List of inferred feasts that get merged in later
-    buffer = Kalendar(year=year)
-
     # Movable feasts with occurrence attribute
     for name, movable in movables.items():
         if "occurrence" in movable:
             matches = kal.match(movable["occurrence"], movable.get("excluded", set()))
             for match_date, entry in matches:
                 kal.add_entry(match_date, movable["tags"])
-
-    kal |= buffer
-    buffer.kal.clear()
 
     # Irregular movables
     assumption = date(year, 8, 15)
@@ -340,6 +353,8 @@ def kalendar(year: int) -> Kalendar:
     else:
         kal.add_entry(nextsunday(nominis_bmv), movables["nominis-bmv"]["tags"])
 
+    kal.hold_pending()
+
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
@@ -352,20 +367,19 @@ def kalendar(year: int) -> Kalendar:
                     entrystripped = entry_base | {'semiduplex',"infra-octavam","dies-" + numerals[k - 1].lower()}
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_any(entrystripped) is None:
-                        buffer.add_entry(date0, entrystripped)
+                        kal.add_entry(date0, entrystripped)
                 date0 = ent_date + timedelta(weeks=1)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
                 entrystripped = entry_base | {'duplex', "dies-octava"}
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_any(entrystripped) is None:
-                    buffer.add_entry(date0, entrystripped)
+                    kal.add_entry(date0, entrystripped)
             if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
                 entrystripped = entry_base | {"vigilia","poenitentialis","feria"}
-                buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
+                kal.add_entry(ent_date - timedelta(days=1), entrystripped)
 
-    kal |= buffer
-    buffer.kal.clear()
+    kal.merge_pending()
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if xxiiipentecostentry:
