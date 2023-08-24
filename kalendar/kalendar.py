@@ -8,6 +8,7 @@ import logging
 import pathlib
 import json
 import copy
+from typing import NamedTuple, Set
 from kalendar import pascha
 
 
@@ -45,10 +46,9 @@ octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit
 numerals = ['II','III','IV','V','VI','VII']
 
 
-class SearchResult:
-    def __init__(self, date, feast):
-        self.date = date
-        self.feast = feast
+class SearchResult(NamedTuple):
+    date: date
+    feast: Set[str]
 
     def __str__(self):
         return str(self.date) + ":" + str(self.feast)
@@ -115,17 +115,17 @@ class Kalendar:
     # Automatically decide the suitable date whither the feast should be transferred
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
     def transfer(self, tags, *, target=None, obstacles=None, mention=True):
-        match = self.match_unique(tags)
-        newfeast = copy.deepcopy(match.feast)
+        match_date, entry = self.match_unique(tags)
+        newfeast = copy.deepcopy(entry)
         newfeast.add("translatus")
 
         if target is None:
-            target = match.date
+            target = match_date
         if obstacles is not None:
             while not self.tagsindate(target).isdisjoint(obstacles):
                 target = target + timedelta(days=1)
 
-        entries = self[match.date]
+        entries = self[match_date]
         if mention:
             # Modify matching entries
             entries[:] = [
@@ -251,8 +251,8 @@ def kalendar(year):
         movable = copy.deepcopy(movable)
         if "occurrence" in movable:
             matches = kal.match(movable.pop("occurrence"), movable.pop("excluded", set()))
-            for match in matches:
-                buffer.add_entry(match.date, movable["tags"])
+            for match_date, entry in matches:
+                kal.add_entry(match_date, movable["tags"])
 
     kal |= buffer
     buffer.kal.clear()
@@ -336,15 +336,15 @@ def kalendar(year):
     if sjb.date == corpuschristi.date:
         kal.transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, target=date(year, 6, 25))
     # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    if candlemas.date in (match.date for match in kal.match({"dominica-ii-classis"})):
+    if candlemas.date in (date for date, _ in kal.match({"dominica-ii-classis"})):
         kal.transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
     def transfer_all(target, obstacles, exceptions):
-        for match in kal.match(target, exceptions):
-            if not kal.tagsindate(match.date).isdisjoint(obstacles):
-                kal.transfer(match.feast, obstacles=obstacles)
+        for match_date, entry in kal.match(target, exceptions):
+            if not kal.tagsindate(match_date).isdisjoint(obstacles):
+                kal.transfer(entry, obstacles=obstacles)
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
@@ -365,11 +365,11 @@ def kalendar(year):
     standardobstacles |= {"duplex-majus"}
     transfer_all({"doctor","duplex"}, standardobstacles, excepted)
 
-    for match in kal.match({"vigilia"}):
-        if "non-translandus" in match.feast:
+    for match_date, entry in kal.match({"vigilia"}):
+        if "non-translandus" in entry:
             continue
-        if "dominica" in kal.tagsindate(match.date):
-            kal.transfer(match.feast, target=match.date - timedelta(days=1))
+        if "dominica" in kal.tagsindate(match_date):
+            kal.transfer(entry, target=match_date - timedelta(days=1))
 
     fidelesdefuncti = kal.match_unique({"fideles-defuncti"})
     if "dominica" in kal.tagsindate(fidelesdefuncti.date):
