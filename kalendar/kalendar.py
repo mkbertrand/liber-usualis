@@ -135,6 +135,8 @@ class Kalendar:
             return match
 
         entries = self[match_date]
+        assert entry in entries
+
         if mention:
             # Modify matching entries
             entries[:] = [
@@ -150,6 +152,7 @@ class Kalendar:
         self.add_entry(newdate, newfeast)
 
         logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
+        assert match_date - timedelta(days=1) == newdate or match_date < newdate
 
         return SearchResult(newdate, newfeast)
 
