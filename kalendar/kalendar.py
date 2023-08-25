@@ -114,11 +114,9 @@ class Kalendar:
             ret |= entry
         return ret
 
-    # Will not work as intended if multiple matches are found for the tags
-    # Automatically decide the suitable date whither the feast should be transferred
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
-    def transfer(self, tags, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
-        match = self.match_unique(tags)
+    # The given entry must occur on match_date.
+    def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
         match_date, entry = match
         newfeast = copy.deepcopy(entry)
         newfeast.add("translatus")
@@ -157,6 +155,17 @@ class Kalendar:
         assert match_date - timedelta(days=1) == newdate or match_date < newdate
 
         return SearchResult(newdate, newfeast)
+
+    # Automatically decide the suitable date whither the feast should be transferred
+    # Fails if not exactly one feast matches
+    def transfer(self, tags, *, exclude: Set[str] = set(), target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
+        match = self.match_unique(tags, exclude)
+        return self.transfer_entry(match, target=target, obstacles=obstacles, mention=mention)
+
+    # Transfer multiple feasts
+    def transfer_all(self, tags, *, exclude: Set[str] = set(), obstacles: Optional[Set[str]] = None, mention: bool = True) -> None:
+        for match in list(self.match(tags, exclude)):
+            self.transfer_entry(match, obstacles=obstacles, mention=mention)
 
 
 def kalendar(year: int) -> Kalendar:
@@ -359,10 +368,6 @@ def kalendar(year: int) -> Kalendar:
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
-    def transfer_all(target, obstacles, exceptions) -> None:
-        for match_date, entry in kal.match(target, exceptions):
-            if not kal.tagsindate(match_date).isdisjoint(obstacles):
-                kal.transfer(entry, obstacles=obstacles)
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
@@ -371,17 +376,17 @@ def kalendar(year: int) -> Kalendar:
     else:
         kal.transfer({"thomas-becket"}, target=date(year, 12, 29))
 
-    transfer_all({"duplex-i-classis"}, standardobstacles, excepted)
+    kal.transfer_all({"duplex-i-classis"}, obstacles=standardobstacles, exclude=excepted)
     standardobstacles |= {"duplex-i-classis", "marcus"}
     stmarks = kal.match_unique({"marcus", "duplex-ii-classis"})
     if "pascha" in kal.tagsindate(stmarks.date):
         kal.transfer(stmarks.feast, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}).date)
     excepted.add("marcus")
-    transfer_all({"duplex-ii-classis"}, standardobstacles, excepted)
+    kal.transfer_all({"duplex-ii-classis"}, obstacles=standardobstacles, exclude=excepted)
     standardobstacles |= {"duplex-ii-classis","dies-octava"}
-    transfer_all({"duplex-majus"}, standardobstacles, excepted)
+    kal.transfer_all({"duplex-majus"}, obstacles=standardobstacles, exclude=excepted)
     standardobstacles |= {"duplex-majus"}
-    transfer_all({"doctor","duplex"}, standardobstacles, excepted)
+    kal.transfer_all({"doctor","duplex"}, obstacles=standardobstacles, exclude=excepted)
 
     for match_date, entry in kal.match({"vigilia"}):
         if "non-translandus" in entry:
