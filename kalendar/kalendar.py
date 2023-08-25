@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 
 from collections import defaultdict
-from datetime import datetime
-from datetime import date
-from datetime import timedelta
+import copy
+from datetime import date, datetime, timedelta
+import json
 import logging
 import pathlib
-import json
-import copy
 from typing import NamedTuple, Optional, Self, Set
+
 from kalendar import pascha
 
 
