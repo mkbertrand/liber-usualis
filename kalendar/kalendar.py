@@ -5,9 +5,10 @@ from datetime import date, datetime, timedelta
 import json
 import logging
 import pathlib
+import re
 from typing import NamedTuple, Optional, Self, Set
 
-from kalendar import pascha
+from kalendar.pascha import geteaster, nextsunday
 
 
 data_root = pathlib.Path(__file__).parent.joinpath("data")
@@ -52,11 +53,8 @@ class SearchResult(NamedTuple):
     date: date
     feast: Set[str]
 
-    def __str__(self):
-        return str(self.date) + ":" + str(self.feast)
-
-def datestring(date0: date):
-    return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
+    def __str__(self) -> str:
+        return self.date.strftime("%a %Y-%m-%d") + ":" + str(self.feast)
 
 class Kalendar:
     def __init__(self, year: int, *args, **kwargs):
@@ -184,15 +182,16 @@ class Kalendar:
 def kalendar(year: int) -> Kalendar:
     kal = Kalendar(year=year)
 
-    def sundayafter(date0: date):
-        return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=7)
-    def sundaynear(date0: date):
-        if date0.weekday() < 3:
-            return date0 - timedelta(days=1+date0.weekday())
+    def sundaynear(kalends: date):
+        if kalends.isoweekday() < 4:
+            return nextsunday(kalends, weeks=-1)
         else:
-            return date0 + timedelta(days=6-date0.weekday())
-    def todate(text: str, year0: int):
-        return date(year0, int(text[:2]), int(text[3:]))
+            return nextsunday(kalends, weeks=0)
+    def todate(text: str, year0: int) -> date:
+        m = re.match(r"(\d+)-(\d+)", text)
+        if m is None:
+            raise ValueError(f"Invalid date: {text}")
+        return date(year0, int(m.group(1)), int(m.group(2)))
 
     i = date(year, 1, 1)
     while not i == date(year + 1, 1, 1):
@@ -208,12 +207,12 @@ def kalendar(year: int) -> Kalendar:
         else:
             nextkalends = sundaynear(date(year, i + 1, 1))
         j = 0
-        while kalends + timedelta(days=j*7) != nextkalends:
+        while kalends + timedelta(weeks=j) != nextkalends:
             for k in range(0,7):
-                if not (kalends + timedelta(days=j*7 + k)).year == year:
+                if not (kalends + timedelta(weeks=j, days=k)).year == year:
                     continue
-                kal[kalends + timedelta(days=j*7 + k)][0].add(feriae[k])
-                kal[kalends + timedelta(days=j*7 + k)][0].add(f'hebdomada-{lowernumerals[j]}-{mensum[(i - 1) % 12]}')
+                kal[kalends + timedelta(weeks=j, days=k)][0].add(feriae[k])
+                kal[kalends + timedelta(weeks=j, days=k)][0].add(f'hebdomada-{lowernumerals[j]}-{mensum[(i - 1) % 12]}')
             j += 1
         if i == 12 and nextkalends.year == year:
             for j in range(0,7):
@@ -222,13 +221,13 @@ def kalendar(year: int) -> Kalendar:
                 kal[nextkalends + timedelta(days=j)][0].add(feriae[j])
                 kal[nextkalends + timedelta(days=j)][0].add('hebdomada-i-januarii')
 
-    easter = pascha.geteaster(year)
+    easter = geteaster(year)
     christmas = date(year, 12, 25)
-    adventstart = christmas - timedelta(days = 22 + christmas.weekday())
-    xxiiipentecost = easter + timedelta(days=210)
-    xxivpentecost = adventstart - timedelta(days=7)
+    adventstart = nextsunday(christmas, weeks=-4)
+    xxiiipentecost = easter + timedelta(weeks=30)
+    xxivpentecost = adventstart - timedelta(weeks=1)
 
-    epiphanysunday = sundayafter(date(year, 1, 6))
+    epiphanysunday = nextsunday(date(year, 1, 7))
 
     xxiiipentecostentry: Optional[Set[str]] = None
     omittedepiphanyentry: Optional[Set[str]] = None
@@ -251,12 +250,12 @@ def kalendar(year: int) -> Kalendar:
 
     # Epiphany Sundays
     epiphanyweek = 0
-    while epiphanysunday + timedelta(days=epiphanyweek * 7) != easter - timedelta(days=63):
+    while epiphanysunday + timedelta(weeks=epiphanyweek) != easter - timedelta(weeks=9):
         for i in range(0,7):
-            kal.add_entry(epiphanysunday + timedelta(days=epiphanyweek * 7 + i), epiphanycycle[epiphanyweek][i]["tags"])
+            kal.add_entry(epiphanysunday + timedelta(weeks=epiphanyweek, days=i), epiphanycycle[epiphanyweek][i]["tags"])
         epiphanyweek += 1
     for i in range(0, 6 - epiphanyweek):
-        sunday = xxivpentecost - timedelta(days=7 * (i + 1))
+        sunday = xxivpentecost - timedelta(weeks=i + 1)
         if sunday != xxiiipentecost:
             for j in range(0,7):
                 kal.add_entry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]["tags"])
@@ -267,8 +266,8 @@ def kalendar(year: int) -> Kalendar:
     for entry in nativitycycle:
         date0 = todate(entry["date"], year)
         kal.add_entry(date0, entry["tags"])
-    kal.add_entry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"]["tags"])
-    if date(year, 1, 6).weekday() == 6:
+    kal.add_entry(nextsunday(christmas), movables["dominica-nativitatis"]["tags"])
+    if date(year, 1, 6).isoweekday() == 7:
         epiphanysunday = date(year, 1, 12)
         kal.transfer({"epiphania","dominica"}, target=epiphanysunday)
 
@@ -280,27 +279,22 @@ def kalendar(year: int) -> Kalendar:
     kal.add_entry(date(year, 1, 13), {"epiphania","dies-octava","duplex"})
 
     """# Autumnal Weeks
-    def nearsunday(kalends: date):
-        if kalends.weekday() < 3:
-            return kalends - timedelta(days=1+kalends.weekday())
-        else:
-            return kalends + timedelta(days=6-kalends.weekday())
     for i in range(8, 11):
-        kalends = nearsunday(date(year, i, 1))
+        kalends = sundaynear(date(year, i, 1))
         # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
-        nextkalends = nearsunday(date(year, i + 1, 1))
+        nextkalends = sundaynear(date(year, i + 1, 1))
         month = months[["augustus","september","october","november"][i - 8]]
         j = 0
-        while kalends + timedelta(days=j*7) != nextkalends:
+        while kalends + timedelta(weeks=j) != nextkalends:
             for k in range(0,7):
-                kal.add_entry(kalends + timedelta(days=j*7+k), month[j][k]["tags"])
+                kal.add_entry(kalends + timedelta(weeks=j, days=k), month[j][k]["tags"])
             j += 1
-    kalends = nearsunday(date(year, 11, 1))
+    kalends = sundaynear(date(year, 11, 1))
     # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
     j = 0
-    while kalends + timedelta(days=j*7) != adventstart:
+    while kalends + timedelta(weeks=j) != adventstart:
         for k in range(0,7):
-            kal.add_entry(kalends + timedelta(days=j*7+k), months["november"][j][k]["tags"])
+            kal.add_entry(kalends + timedelta(weeks=j, days=k), months["november"][j][k]["tags"])
         j += 1
     """
 
@@ -308,7 +302,7 @@ def kalendar(year: int) -> Kalendar:
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
     for date0, entries in sanctoral.items():
         date0 = todate(str(date0), year)
-        if leapyear and date0.month == 2 and date0.day > 23:
+        if leapyear and date0.month == 2 and date0.day >= 24:
             date0 = date0 + timedelta(days=1)
         for entry in entries:
             kal.add_entry(date0, entry)
@@ -328,17 +322,17 @@ def kalendar(year: int) -> Kalendar:
 
     # Irregular movables
     assumption = date(year, 8, 15)
-    if assumption.weekday() == 6:
+    if assumption.isoweekday() == 7:
         kal.add_entry(assumption + timedelta(days=1), movables["joachim"]["tags"])
     else:
-        kal.add_entry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"]["tags"])
+        kal.add_entry(nextsunday(assumption), movables["joachim"]["tags"])
     # First Sunday of July
 
     nominis_bmv = date(year, 9, 8)
-    if nominis_bmv.weekday() == 6:
+    if nominis_bmv.isoweekday() == 7:
         kal.add_entry(nominis_bmv + timedelta(days=1), movables["nominis-bmv"]["tags"])
     else:
-        kal.add_entry(nominis_bmv + timedelta(days=6-nominis_bmv.weekday()), movables["nominis-bmv"]["tags"])
+        kal.add_entry(nextsunday(nominis_bmv), movables["nominis-bmv"]["tags"])
 
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
@@ -353,7 +347,7 @@ def kalendar(year: int) -> Kalendar:
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_any(entrystripped) is None:
                         buffer.add_entry(date0, entrystripped)
-                date0 = ent_date + timedelta(days=7)
+                date0 = ent_date + timedelta(weeks=1)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
                 entrystripped = entry_base | {"duplex", "dies-octava"}
@@ -385,7 +379,7 @@ def kalendar(year: int) -> Kalendar:
     if omittedepiphanyentry:
         omittedepiphanyentry = set(omittedepiphanyentry)
         omittedepiphanyentry.add("translatus")
-        septuagesima = easter - timedelta(days=63)
+        septuagesima = easter - timedelta(weeks=9)
         i = 1
         while i < 7:
             if kal.tagsindate(septuagesima - timedelta(days=i)).isdisjoint(threenocturnes):
