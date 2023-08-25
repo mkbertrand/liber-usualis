@@ -232,21 +232,30 @@ def kalendar(year: int) -> Kalendar:
     xxiiipentecostentry: Optional[Set[str]] = None
     omittedepiphanyentry: Optional[Set[str]] = None
 
+    def do_cycle(cycle, origin: Optional[date] = None, end: Optional[date] = None) -> Optional[Set[str]]:
+        for i, entry in enumerate(cycle):
+            match entry:
+                case {"difference": _, "date": _}:
+                    raise AssertionError("Overspecified!") # TODO: Find cleaner way
+                case {"difference": difference}:
+                    assert origin is not None
+                    target = origin + timedelta(days=entry["difference"])
+                case {"date": date}:
+                    target = todate(date, year)
+                case _:
+                    raise AssertionError("Unknown entry!")
+            tags = entry["tags"]
+            if end is not None and target == end:
+                return tags
+            kal.add_entry(target, tags)
+        return None
+
     # Advent Cycle
-    for entry in adventcycle:
-        date0 = adventstart + timedelta(days=entry["difference"])
-        # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
-        if date0 == christmas:
-            break
-        kal.add_entry(date0, entry["tags"])
+    # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
+    do_cycle(adventcycle, adventstart, christmas)
 
     # Paschal Cycle
-    for entry in paschalcycle:
-        date0 = easter + timedelta(days=entry["difference"])
-        if date0 == xxivpentecost:
-            xxiiipentecostentry = entry["tags"]
-            break
-        kal.add_entry(date0, entry["tags"])
+    xxiiipentecostentry = do_cycle(paschalcycle, easter, xxivpentecost)
 
     # Epiphany Sundays
     epiphanyweek = 0
@@ -263,9 +272,7 @@ def kalendar(year: int) -> Kalendar:
             omittedepiphanyentry = epiphanycycle[5 - i][0]["tags"]
 
     # Nativity & Epiphany
-    for entry in nativitycycle:
-        date0 = todate(entry["date"], year)
-        kal.add_entry(date0, entry["tags"])
+    do_cycle(nativitycycle)
     kal.add_entry(nextsunday(christmas), movables["dominica-nativitatis"]["tags"])
     if date(year, 1, 6).isoweekday() == 7:
         epiphanysunday = date(year, 1, 12)
