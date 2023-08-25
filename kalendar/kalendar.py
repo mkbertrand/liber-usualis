@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 
 from collections import defaultdict
-from datetime import datetime
-from datetime import date
-from datetime import timedelta
+import copy
+from datetime import date, datetime, timedelta
+import json
 import logging
 import pathlib
-import json
-import copy
+from typing import NamedTuple, Optional, Self, Set
+
 from kalendar import pascha
 
 
 data_root = pathlib.Path(__file__).parent.joinpath("data")
 
-def load_data(p):
+def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
 
     # JSON doesn't support sets. Recursively find and replace anything that
@@ -41,35 +41,34 @@ sanctoral = load_data('kalendar.json')
 
 threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 ranks = {"feria","commemoratio","simplex"} | threenocturnes
-octavevigiltags = {"habens-octavam","has-special-octave","habens-vigiliam","vigilia-excepta","incipit-libri"}
+octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
 numerals = ['II','III','IV','V','VI','VII']
 
 
-class SearchResult:
-    def __init__(self, date, feast):
-        self.date = date
-        self.feast = feast
+class SearchResult(NamedTuple):
+    date: date
+    feast: Set[str]
 
     def __str__(self):
         return str(self.date) + ":" + str(self.feast)
 
 
-def datestring(date0):
+def datestring(date0: date):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
 
 
 class Kalendar:
-    def __init__(self, year, *args, **kwargs):
+    def __init__(self, year: int, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.kal = defaultdict(list)
+        self.kal: defaultdict = defaultdict(list)
         self.year = year
 
-    def add_entry(self, date, entry):
+    def add_entry(self, date: date, entry: set) -> None:
         assert type(entry) == set
         self.kal[date].append(entry)
 
-    def __ior__(self, other):
+    def __ior__(self, other) -> Self:
         for date0, entries in other.kal.items():
             self.kal[date0] += entries
         return self
@@ -77,16 +76,17 @@ class Kalendar:
     def items(self):
         return self.kal.items()
 
-    def __getitem__(self, key):
+    def __getitem__(self, key: date):
         return self.kal[key]
 
-    def match(self, include=set(), exclude=set()):
+    def match(self, include: Set[str] = set(), exclude: Set[str] = set()):
+        assert include.isdisjoint(exclude), f"{include!r} and {exclude!r} must be disjoint"
         for date0, entries in self.kal.items():
             for entry in entries:
                 if entry >= include and entry.isdisjoint(exclude):
                     yield SearchResult(date0, entry)
 
-    def match_unique(self, include=set(), exclude=set(), none_ok=False):
+    def match_unique(self, include: Set[str] = set(), exclude: Set[str] = set(), none_ok=False):
         # Get the first match from kal.match
         it = self.match(include, exclude)
         match = next(it, None)
@@ -105,8 +105,8 @@ class Kalendar:
                 raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got more than one match!")
         return match
 
-    def tagsindate(self, date):
-        ret = set()
+    def tagsindate(self, date: date) -> set:
+        ret: Set[str] = set()
         for entry in self.kal.get(date, []):
             ret |= entry
         return ret
@@ -114,39 +114,54 @@ class Kalendar:
     # Will not work as intended if multiple matches are found for the tags
     # Automatically decide the suitable date whither the feast should be transferred
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
-    def transfer(self, tags, *, target=None, obstacles=None, mention=True):
+    def transfer(self, tags, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
         match = self.match_unique(tags)
-        newfeast = copy.deepcopy(match.feast)
+        match_date, entry = match
+        newfeast = copy.deepcopy(entry)
         newfeast.add("translatus")
 
+        # Compute date
         if target is None:
-            target = match.date
+            target = match_date
+        newdate = target
         if obstacles is not None:
-            while not self.tagsindate(target).isdisjoint(obstacles):
-                target = target + timedelta(days=1)
+            while not self.tagsindate(newdate).isdisjoint(obstacles):
+                newdate = newdate + timedelta(days=1)
 
-        entries = self[match.date]
+        # Skip transfer if it's to the same day
+        if newdate == match_date:
+            logging.debug(f"{self.year}: {entry!r} already on {newdate}")
+            return match
+
+        entries = self[match_date]
+        assert entry in entries
+
         if mention:
             # Modify matching entries
             entries[:] = [
-                entry - ranks - octavevigiltags | {"translatus-originalis"}
-                if entry >= tags
-                else entry
-                for entry in entries
+                e - ranks - octavevigiltags | {"translatus-originalis"}
+                if e is entry
+                else e
+                for e in entries
             ]
         else:
             # Keep all but matching entries
-            entries[:] = [entry for entry in entries if entry < tags]
+            entries[:] = [e for e in entries if e is not entry]
 
-        self.add_entry(target, newfeast)
+        self.add_entry(newdate, newfeast)
+
+        logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
+        assert match_date - timedelta(days=1) == newdate or match_date < newdate
+
+        return SearchResult(newdate, newfeast)
 
 
-def kalendar(year):
+def kalendar(year: int) -> Kalendar:
     kal = Kalendar(year=year)
 
-    def sundayafter(date0):
+    def sundayafter(date0: date):
         return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=7)
-    def todate(text, year0):
+    def todate(text: str, year0: int):
         return date(year0, int(text[:2]), int(text[3:]))
 
 
@@ -158,8 +173,8 @@ def kalendar(year):
 
     epiphanysunday = sundayafter(date(year, 1, 6))
 
-    xxiiipentecostentry = None
-    omittedepiphanyentry = None
+    xxiiipentecostentry: Optional[Set[str]] = None
+    omittedepiphanyentry: Optional[Set[str]] = None
 
     # Advent Cycle
     for entry in adventcycle:
@@ -211,7 +226,7 @@ def kalendar(year):
     kal.add_entry(date(year, 1, 13), {"epiphania","dies-octava","duplex"})
 
     # Autumnal Weeks
-    def nearsunday(kalends):
+    def nearsunday(kalends: date):
         if kalends.weekday() < 3:
             return kalends - timedelta(days=1+kalends.weekday())
         else:
@@ -237,7 +252,7 @@ def kalendar(year):
     # Saints, and also handles leap years
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
     for date0, entries in sanctoral.items():
-        date0 = todate(date0, year)
+        date0 = todate(str(date0), year)
         if leapyear and date0.month == 2 and date0.day > 23:
             date0 = date0 + timedelta(days=1)
         for entry in entries:
@@ -251,8 +266,8 @@ def kalendar(year):
         movable = copy.deepcopy(movable)
         if "occurrence" in movable:
             matches = kal.match(movable.pop("occurrence"), movable.pop("excluded", set()))
-            for match in matches:
-                buffer.add_entry(match.date, movable["tags"])
+            for match_date, entry in matches:
+                kal.add_entry(match_date, movable["tags"])
 
     kal |= buffer
     buffer.kal.clear()
@@ -274,33 +289,25 @@ def kalendar(year):
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
+            entry_base = entry - octavevigiltags - ranks
             if "habens-octavam" in entry and not "octava-excepta" in entry:
                 for k in range(1,7):
                     date0 = ent_date + timedelta(days=k)
                     if "quadragesima" in kal.tagsindate(date0):
                         break
-                    entrystripped = copy.deepcopy(entry)
-                    entrystripped -= octavevigiltags
-                    entrystripped -= ranks
-                    entrystripped |= {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
+                    entrystripped = entry_base | {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_unique(entrystripped, none_ok=True) is None:
                         buffer.add_entry(date0, entrystripped)
                 date0 = ent_date + timedelta(days=7)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
-                entrystripped = copy.deepcopy(entry)
-                entrystripped -= octavevigiltags
-                entrystripped -= ranks
-                entrystripped |= {"duplex", "dies-octava"}
+                entrystripped = entry_base | {"duplex", "dies-octava"}
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_unique(entrystripped, none_ok=True) is None:
                     buffer.add_entry(date0, entrystripped)
             if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
-                entrystripped = copy.deepcopy(entry)
-                entrystripped -= octavevigiltags
-                entrystripped -= ranks
-                entrystripped |= {"vigilia","poenitentialis","feria"}
+                entrystripped = entry_base | {"vigilia","poenitentialis","feria"}
                 buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
     kal |= buffer
@@ -344,15 +351,15 @@ def kalendar(year):
     if sjb.date == corpuschristi.date:
         kal.transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, target=date(year, 6, 25))
     # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    if candlemas.date in (match.date for match in kal.match({"dominica-ii-classis"})):
+    if candlemas.date in (date for date, _ in kal.match({"dominica-ii-classis"})):
         kal.transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
 
-    def transfer_all(target, obstacles0, exceptions):
-        for match in kal.match(target, exceptions):
-            if not kal.tagsindate(match.date).isdisjoint(obstacles0):
-                kal.transfer(match.feast, obstacles=obstacles0)
+    def transfer_all(target, obstacles, exceptions) -> None:
+        for match_date, entry in kal.match(target, exceptions):
+            if not kal.tagsindate(match_date).isdisjoint(obstacles):
+                kal.transfer(entry, obstacles=obstacles)
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
@@ -373,11 +380,11 @@ def kalendar(year):
     standardobstacles |= {"duplex-majus"}
     transfer_all({"doctor","duplex"}, standardobstacles, excepted)
 
-    for match in kal.match({"vigilia"}):
-        if "non-translandus" in match.feast:
+    for match_date, entry in kal.match({"vigilia"}):
+        if "non-translandus" in entry:
             continue
-        if "dominica" in kal.tagsindate(match.date):
-            kal.transfer(match.feast, target=match.date - timedelta(days=1))
+        if "dominica" in kal.tagsindate(match_date):
+            kal.transfer(entry, target=match_date - timedelta(days=1))
 
     fidelesdefuncti = kal.match_unique({"fideles-defuncti"})
     if "dominica" in kal.tagsindate(fidelesdefuncti.date):
@@ -392,6 +399,18 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         description="Liturgical calendar generator",
+    )
+
+    parser.add_argument(
+        "-v",
+        "--verbosity",
+        metavar="LEVEL",
+        type=lambda s: s.upper(),
+        choices=logging.getLevelNamesMapping().keys(),
+        default=logging.getLevelName(logging.getLogger().getEffectiveLevel()),
+        const="debug",
+        nargs="?",
+        help="Verbosity",
     )
 
     parser.add_argument(
@@ -411,6 +430,9 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+
+    if args.verbosity:
+        logging.getLogger().setLevel(args.verbosity)
 
     # Generate kalendar
     ret = dict(sorted(kalendar(args.year).items()))
