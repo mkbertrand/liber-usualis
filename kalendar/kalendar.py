@@ -93,10 +93,11 @@ class Kalendar:
     def match_unique(self, include: Set[str] = set(), exclude: Set[str] = set()) -> SearchResult:
         # Get the first match from kal.match
         it = self.match(include, exclude)
-        match = next(it, None)
-        if match is None:
+        try:
+            match = next(it)
+        except StopIteration as e:
             # Fail if zero matches
-            raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got no matches!")
+            raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got no matches!") from e
         else:
             # Fail if multiple matches
             try:
