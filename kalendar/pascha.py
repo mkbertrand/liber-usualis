@@ -1,10 +1,11 @@
 from datetime import date, timedelta
+from typing import List
 
 # Zero-indexed golden number, April date (-1 for 30 March and 0 for 31 March)
 paschatable = [14, 3, 22, 11, 0, 19, 8, 27, 16, 5, 24, 13, 2, 21, 10, -1, 18, 7, 26]
 
 # Correct the Pascha table for leap years and other corrections
-def correctedpaschatable(year):
+def correctedpaschatable(year: int) -> List[int]:
     correction = 0
     for i in range(0, int((year - 2000) / 100)):
         yr = i * 100 + 2000
@@ -17,10 +18,10 @@ def correctedpaschatable(year):
     return [(e+correction + 30) % 29 - 1 for e in paschatable]
 
 # If the date number is negative or zero, create a date in the previous month
-def safenegdatecreate(year, month, date0):
+def safenegdatecreate(year: int, month: int, date0: int) -> date:
     return date(year, month, 1) + timedelta(days = date0 - 1)
 
-def geteaster(year):
+def geteaster(year: int) -> date:
     # Zero-indexed golden number
     goldennumber = year % 19
     ptable = correctedpaschatable(year)
