@@ -7,8 +7,7 @@ paschatable = [14, 3, 22, 11, 0, 19, 8, 27, 16, 5, 24, 13, 2, 21, 10, -1, 18, 7,
 # Correct the Pascha table for leap years and other corrections
 def correctedpaschatable(year: int) -> List[int]:
     correction = 0
-    for i in range(0, int((year - 2000) / 100)):
-        yr = i * 100 + 2000
+    for yr in range(2000, year - 99, 100):
         # Solar correction
         if yr % 400 != 0:
             correction -= 1
