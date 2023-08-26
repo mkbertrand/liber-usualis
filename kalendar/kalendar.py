@@ -359,14 +359,13 @@ def kalendar(year: int) -> Kalendar:
     
     sjb = kal.match_unique({"nativitas-joannis-baptistae","duplex-i-classis"})
     corpuschristi = kal.match_unique({"corpus-christi","duplex-i-classis"})
-    # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
-    candlemas = kal.match_unique({"purificatio","duplex-ii-classis"})
     # N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
     if sjb.date == corpuschristi.date:
-        kal.transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, target=date(year, 6, 25))
+        kal.transfer_entry(sjb, target=date(year, 6, 25))
+
     # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    if candlemas.date in (date for date, _ in kal.match({"dominica-ii-classis"})):
-        kal.transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
+    # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
+    kal.transfer({"purificatio","duplex-ii-classis"}, obstacles={"dominica-ii-classis"})
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandum","dies-octava","epiphania"}
 
@@ -382,7 +381,7 @@ def kalendar(year: int) -> Kalendar:
     standardobstacles |= {"duplex-i-classis", "marcus"}
     stmarks = kal.match_unique({"marcus", "duplex-ii-classis"})
     if "pascha" in kal.tagsindate(stmarks.date):
-        kal.transfer(stmarks.feast, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}).date)
+        kal.transfer_entry(stmarks, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}).date)
     excepted.add("marcus")
     kal.transfer_all({"duplex-ii-classis"}, obstacles=standardobstacles, exclude=excepted)
     standardobstacles |= {"duplex-ii-classis","dies-octava"}
@@ -390,15 +389,11 @@ def kalendar(year: int) -> Kalendar:
     standardobstacles |= {"duplex-majus"}
     kal.transfer_all({"doctor","duplex"}, obstacles=standardobstacles, exclude=excepted)
 
-    for match_date, entry in kal.match({"vigilia"}):
-        if "non-translandum" in entry:
-            continue
+    for match_date, entry in kal.match({"vigilia"}, {"non-translandum"}):
         if "dominica" in kal.tagsindate(match_date):
             kal.transfer(entry, target=match_date - timedelta(days=1))
 
-    fidelesdefuncti = kal.match_unique({"fideles-defuncti"})
-    if "dominica" in kal.tagsindate(fidelesdefuncti.date):
-        kal.transfer({"fideles-defuncti"}, target=fidelesdefuncti.date + timedelta(days=1))
+    kal.transfer({"fideles-defuncti"}, obstacles={"dominica"})
 
     return kal
 
