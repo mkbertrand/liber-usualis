@@ -81,6 +81,9 @@ class Kalendar:
     def __getitem__(self, key: date):
         return self.kal[key]
 
+    def __repr__(self) -> str:
+        return f"Kalendar(year={self.year!r})"
+
     def match(self, include: Set[str] = set(), exclude: Set[str] = set()):
         assert include.isdisjoint(exclude), f"{include!r} and {exclude!r} must be disjoint"
         for date0, entries in self.kal.items():
