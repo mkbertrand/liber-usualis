@@ -64,9 +64,10 @@ class Kalendar:
         self.kal: defaultdict = defaultdict(list)
         self.year = year
 
-    def add_entry(self, date: date, entry: set) -> None:
+    def add_entry(self, date: date, entry: set) -> SearchResult:
         assert type(entry) == set
         self.kal[date].append(entry)
+        return SearchResult(date, entry)
 
     def __ior__(self, other) -> Self:
         for date0, entries in other.kal.items():
@@ -149,12 +150,12 @@ class Kalendar:
             # Keep all but matching entries
             entries[:] = [e for e in entries if e is not entry]
 
-        self.add_entry(newdate, newfeast)
+        match = self.add_entry(newdate, newfeast)
 
         logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
         assert match_date - timedelta(days=1) == newdate or match_date < newdate
 
-        return SearchResult(newdate, newfeast)
+        return match
 
     # Automatically decide the suitable date whither the feast should be transferred
     # Fails if not exactly one feast matches
