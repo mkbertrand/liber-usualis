@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from collections import defaultdict
-import copy
 from datetime import date, datetime, timedelta
 import json
 import logging
@@ -24,7 +23,7 @@ def load_data(p: str):
                 return {k: recurse(v) for k, v in obj.items()}
             case list():
                 if all(type(x) == str for x in obj):
-                    return set(obj)
+                    return frozenset(obj)
                 return [recurse(v) for v in obj]
             case _:
                 return obj
@@ -64,7 +63,9 @@ class Kalendar:
         self.kal: defaultdict = defaultdict(list)
         self.year = year
 
-    def add_entry(self, date: date, entry: set) -> SearchResult:
+    def add_entry(self, date: date, entry: set | frozenset) -> SearchResult:
+        if type(entry) == frozenset:
+            entry = set(entry)
         assert type(entry) == set
         self.kal[date].append(entry)
         return SearchResult(date, entry)
@@ -119,8 +120,7 @@ class Kalendar:
     # The given entry must occur on match_date.
     def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
         match_date, entry = match
-        newfeast = copy.deepcopy(entry)
-        newfeast.add("translatus")
+        newfeast = entry | {"translatus"}
 
         # Compute date
         if target is None:
@@ -191,8 +191,7 @@ def kalendar(year: int) -> Kalendar:
 
     # Advent Cycle
     for entry in adventcycle:
-        entry = copy.deepcopy(entry)
-        date0 = adventstart + timedelta(days=entry.pop("difference"))
+        date0 = adventstart + timedelta(days=entry["difference"])
         # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
         if date0 == christmas:
             break
@@ -200,8 +199,7 @@ def kalendar(year: int) -> Kalendar:
 
     # Paschal Cycle
     for entry in paschalcycle:
-        entry = copy.deepcopy(entry)
-        date0 = easter + timedelta(days=entry.pop("difference"))
+        date0 = easter + timedelta(days=entry["difference"])
         if date0 == xxivpentecost:
             xxiiipentecostentry = entry["tags"]
             break
@@ -223,8 +221,7 @@ def kalendar(year: int) -> Kalendar:
 
     # Nativity & Epiphany
     for entry in nativitycycle:
-        entry = copy.deepcopy(entry)
-        date0 = todate(entry.pop("date"), year)
+        date0 = todate(entry["date"], year)
         kal.add_entry(date0, entry["tags"])
     kal.add_entry(christmas + timedelta(days=6-christmas.weekday()), movables["dominica-nativitatis"]["tags"])
     if date(year, 1, 6).weekday() == 6:
@@ -276,9 +273,8 @@ def kalendar(year: int) -> Kalendar:
 
     # Movable feasts with occurrence attribute
     for name, movable in movables.items():
-        movable = copy.deepcopy(movable)
         if "occurrence" in movable:
-            matches = kal.match(movable.pop("occurrence"), movable.pop("excluded", set()))
+            matches = kal.match(movable["occurrence"], movable.get("excluded", set()))
             for match_date, entry in matches:
                 kal.add_entry(match_date, movable["tags"])
 
@@ -328,6 +324,7 @@ def kalendar(year: int) -> Kalendar:
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if xxiiipentecostentry:
+        xxiiipentecostentry = set(xxiiipentecostentry)
         xxiiipentecostentry.add("translatus")
         i = 1
         while i < 7:
@@ -341,6 +338,7 @@ def kalendar(year: int) -> Kalendar:
             xxiiipentecost.discard("semiduplex")
             kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if omittedepiphanyentry:
+        omittedepiphanyentry = set(omittedepiphanyentry)
         omittedepiphanyentry.add("translatus")
         septuagesima = easter - timedelta(days=63)
         i = 1
