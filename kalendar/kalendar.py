@@ -333,11 +333,11 @@ def kalendar(year: int) -> Kalendar:
     else:
         kal.add_entry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"]["tags"])
     # First Sunday of July
-    assumption = date(year, 9, 8)
-    if assumption.weekday() == 6:
-        kal.add_entry(assumption + timedelta(days=1), movables["nominis-bmv"]["tags"])
+    nominis_bmv = date(year, 9, 8)
+    if nominis_bmv.weekday() == 6:
+        kal.add_entry(nominis_bmv + timedelta(days=1), movables["nominis-bmv"]["tags"])
     else:
-        kal.add_entry(assumption + timedelta(days=6-assumption.weekday()), movables["nominis-bmv"]["tags"])
+        kal.add_entry(nominis_bmv + timedelta(days=6-nominis_bmv.weekday()), movables["nominis-bmv"]["tags"])
 
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
