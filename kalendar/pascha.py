@@ -1,38 +1,85 @@
 from datetime import date, timedelta
 from typing import List
 
-# Zero-indexed golden number, April date (-1 for 30 March and 0 for 31 March)
-paschatable = [14, 3, 22, 11, 0, 19, 8, 27, 16, 5, 24, 13, 2, 21, 10, -1, 18, 7, 26]
 
-# Correct the Pascha table for leap years and other corrections
-def correctedpaschatable(year: int) -> List[int]:
-    correction = 0
-    for yr in range(2000, year - 99, 100):
-        # Solar correction
-        if yr % 400 != 0:
-            correction -= 1
-        # Lunar correction
-        if (yr % 2500) in [200, 500, 800, 1100, 1400, 1800, 2100, 2400]:
-            correction += 1
-    return [(e+correction + 30) % 29 - 1 for e in paschatable]
+def nextsunday(date0: date, *, weeks: int = 0) -> date:
+    """
+    Return the Sunday on or after the given date, +/- the given number of weeks
+    """
+    return date0 + timedelta(weeks=weeks + 1, days=-date0.isoweekday())
 
-# If the date number is negative or zero, create a date in the previous month
-def safenegdatecreate(year: int, month: int, date0: int) -> date:
-    return date(year, month, 1) + timedelta(days = date0 - 1)
 
-def geteaster(year: int) -> date:
-    # Zero-indexed golden number
+def geteaster_bede(year: int) -> date:
+    """
+    Mostly as described at https://www.calendarbede.com/book/calculation-gregorian-easter-sunday
+    """
     goldennumber = year % 19
-    ptable = correctedpaschatable(year)
-    adjbbound = 18 if 18 in ptable and 19 in ptable else 19
-    date0 = ptable[goldennumber]
-    if date0 < adjbbound:
-        matcheddate = safenegdatecreate(year, 4, date0+1)
-    elif date0 < 20:
-        matcheddate = safenegdatecreate(year, 4, date0)
+    century = year // 100 + 1
+    correction_lunar = 8*(century - 15) // 25
+    correction_solar = 3*(century - 16) // 4
+    epact = (11 * goldennumber + 11 + (correction_lunar - correction_solar - 10)) % 30
+    if 0 <= epact <= 23:
+        full_moon_march = 44 - epact
+    elif epact == 24:
+        full_moon_march = 49
+    elif epact == 25 and goldennumber < 11:
+        full_moon_march = 49
+    elif epact == 25 and goldennumber >= 11:
+        full_moon_march = 48
+    elif 26 <= epact <= 29:
+        full_moon_march = 74 - epact
     else:
-        matcheddate = safenegdatecreate(year, 3, date0+2)
-    return matcheddate + timedelta(days = 7 - matcheddate.isoweekday())
+        raise AssertionError(f"Invalid: epact={epact}, goldennumber={goldennumber}")
+
+    # Actual date of the full moon
+    full_moon_date = date(year, 3, 1) + timedelta(days=full_moon_march - 1)
+    # Sunday after the full moon
+    return nextsunday(full_moon_date + timedelta(days=1))
+
+
+def geteaster_gauss(year: int) -> date:
+    """
+    Literal translation of https://en.wikipedia.org/wiki/Date_of_Easter#Gauss's_Easter_algorithm
+    """
+    a = year % 19
+    b = year % 4
+    c = year % 7
+    k = year // 100
+    p = (13 + 8 * k) // 25
+    q = k // 4
+    M = (15 - p + k - q) % 30
+    N = (4 + k - q) % 7
+    d = (19 * a + M) % 30
+    e = (2 * b + 4 * c + 6 * d + N) % 7
+    m30 = (11 * M + 11) % 30
+    if d == 28 and e == 6 and m30 < 19:
+        return date(year, 4, 18)
+    elif d == 29 and e == 6:
+        return date(year, 4, 19)
+    else:
+        return date(year, 3, 1) + timedelta(days=22 + d + e - 1)
+
+
+def geteaster_assert(year: int) -> date:
+    """
+    Call each function and make sure they all agree and return something reasonable
+    """
+    easter_bede = geteaster_bede(year)
+    easter_gauss = geteaster_gauss(year)
+    easter = easter_bede
+
+    assert easter == easter_bede
+    assert easter == easter_gauss
+
+    # Ensure Easter falls on a reasonable date
+    assert easter.isoweekday() == 7, "Easter must fall on a Sunday!"
+    assert date(year, 3, 22) <= easter <= date(year, 4, 25)
+
+    return easter
+
+
+# Default geteaster implementation
+geteaster = geteaster_bede
 
 
 if __name__ == "__main__":
