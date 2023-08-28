@@ -33,3 +33,35 @@ def geteaster(year: int) -> date:
     else:
         matcheddate = safenegdatecreate(year, 3, date0+2)
     return matcheddate + timedelta(days = 7 - matcheddate.isoweekday())
+
+
+if __name__ == "__main__":
+    import argparse
+    from datetime import datetime
+    import sys
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description="Easter calculator",
+    )
+
+    parser.add_argument(
+        "-f",
+        "--format",
+        default="%Y-%m-%d",
+        help="Output format (strftime)",
+    )
+
+    parser.add_argument(
+        "-y",
+        "--year",
+        type=int,
+        default=datetime.now().year,
+        help="Year to generate",
+    )
+
+    args = parser.parse_args()
+
+    easter = geteaster(args.year)
+
+    sys.stdout.write(easter.strftime(args.format) + "\n")
