@@ -448,6 +448,11 @@ def kalendar(year: int) -> KalendarRange:
     return kal_def.gen(year)
 
 
+kalendars = {
+    "1888": Kalendar1888,
+}
+
+
 if __name__ == "__main__":
     import argparse
 
@@ -477,6 +482,14 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "-k",
+        "--kalendar",
+        choices=kalendars.keys(),
+        default="1888",
+        help="Kalendar version",
+    )
+
+    parser.add_argument(
         "-y",
         "--year",
         type=int,
@@ -490,7 +503,7 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(args.verbosity)
 
     # Load kalendar definition
-    kal_def = Kalendar1888()
+    kal_def = kalendars[args.kalendar]()
 
     # Generate kalendar
     ret = dict(sorted(kal_def.gen(args.year).items()))
