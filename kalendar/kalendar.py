@@ -11,44 +11,6 @@ from typing import NamedTuple, Optional, Self, Set
 from kalendar.pascha import geteaster, nextsunday
 
 
-data_root = pathlib.Path(__file__).parent.joinpath("data")
-
-def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
-
-    # JSON doesn't support sets. Recursively find and replace anything that
-    # looks like a list of tags with a set of tags.
-    def recurse(obj):
-        match obj:
-            case dict():
-                return {k: recurse(v) for k, v in obj.items()}
-            case list():
-                if all(type(x) == str for x in obj):
-                    return frozenset(obj)
-                return [recurse(v) for v in obj]
-            case _:
-                return obj
-
-    return recurse(data)
-
-epiphanycycle = load_data('epiphany.json')
-paschalcycle = load_data('paschal.json')
-adventcycle = load_data('advent.json')
-nativitycycle = load_data('nativity.json')
-movables = load_data('movables.json')
-months = load_data('summer-autumn.json')
-sanctoral = load_data('kalendar.json')
-coincidence = load_data('coincidence.json')
-
-threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
-ranks = {"feria","commemoratio","simplex"} | threenocturnes
-octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
-lowernumerals = ['i','ii','iii','iv','v']
-numerals = ['II','III','IV','V','VI','VII']
-menses = ['januarius','februarius','martius','aprilis','majus','junius','julius','augustus','september','october','november','december']
-mensum = ['januarii','februarii','martii','aprilis','maji','junii','julii','augusti','septembris','octobris','novembris','decembris']
-feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
-
 class SearchResult(NamedTuple):
     date: date
     feast: Set[str]
@@ -196,6 +158,45 @@ class Kalendar:
     def transfer_all(self, tags, *, exclude: Set[str] = set(), obstacles: Optional[Set[str]] = None, mention: bool = True) -> None:
         for match in list(self.match(tags, exclude)):
             self.transfer_entry(match, obstacles=obstacles, mention=mention)
+
+
+data_root = pathlib.Path(__file__).parent.joinpath("data")
+
+def load_data(p: str):
+    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
+
+    # JSON doesn't support sets. Recursively find and replace anything that
+    # looks like a list of tags with a set of tags.
+    def recurse(obj):
+        match obj:
+            case dict():
+                return {k: recurse(v) for k, v in obj.items()}
+            case list():
+                if all(type(x) == str for x in obj):
+                    return frozenset(obj)
+                return [recurse(v) for v in obj]
+            case _:
+                return obj
+
+    return recurse(data)
+
+epiphanycycle = load_data('epiphany.json')
+paschalcycle = load_data('paschal.json')
+adventcycle = load_data('advent.json')
+nativitycycle = load_data('nativity.json')
+movables = load_data('movables.json')
+months = load_data('summer-autumn.json')
+sanctoral = load_data('kalendar.json')
+coincidence = load_data('coincidence.json')
+
+threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
+ranks = {"feria","commemoratio","simplex"} | threenocturnes
+octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
+lowernumerals = ['i','ii','iii','iv','v']
+numerals = ['II','III','IV','V','VI','VII']
+menses = ['januarius','februarius','martius','aprilis','majus','junius','julius','augustus','september','october','november','december']
+mensum = ['januarii','februarii','martii','aprilis','maji','junii','julii','augusti','septembris','octobris','novembris','decembris']
+feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
 
 
 def kalendar(year: int) -> Kalendar:
