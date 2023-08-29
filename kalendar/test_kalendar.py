@@ -1,3 +1,4 @@
+import pickle
 import datetime
 import json
 import pathlib
@@ -10,24 +11,25 @@ from kalendar import kalendar
 @pytest.mark.parametrize("year", random.sample(range(1582, 3000), k=10))
 def test_repeatable(year: int) -> None:
     """
-    Make sure results are repeatable
-    (i.e. we don't damage the database during a run)
-    TODO: Since we can't really guarantee that this test runs first, we need to do it on
-          a fresh copy of the data files, which should live in their own object.
-    TODO: Randomness seems somewhat ugly, at least as it's done here
+    Make sure results are repeatable (i.e. we don't damage the database during a run)
     """
-    kal = kalendar.kalendar(year)
-    kal3 = kalendar.kalendar(random.choice(range(1582, 3000)))
-    kal2 = kalendar.kalendar(year)
-    assert kal.kal == kal2.kal
+    # TODO: Fixture for kal_def, but make sure we get a new one!
+    kal_def = kalendar.Kalendar1888()
+    kal_def_pickle = pickle.dumps(kal_def)
+    kal = kal_def.gen(year)
+    assert pickle.dumps(kal_def) == kal_def_pickle, "Kalendar def changed after use!"
 
 
 class TestKalendar:
-    @pytest.fixture(scope="class", params=range(1900, 2200))
-    def kal(self, request) -> kalendar.Kalendar:
-        return kalendar.kalendar(request.param)
+    @pytest.fixture(scope="class")
+    def kal_def(self, request) -> kalendar.Kalendar:
+        return kalendar.Kalendar1888()
 
-    def test_structure(self, kal: kalendar.Kalendar) -> None:
+    @pytest.fixture(scope="class", params=range(1900, 2200))
+    def kal(self, kal_def: kalendar.Kalendar, request) -> kalendar.KalendarRange:
+        return kal_def.gen(request.param)
+
+    def test_structure(self, kal: kalendar.KalendarRange) -> None:
         """Make sure the structure is correct"""
         for date, entries in kal.items():
             assert type(date) == datetime.date
@@ -40,7 +42,7 @@ class TestKalendar:
                 for tag in entry:
                     assert type(tag) == str
 
-    def test_alldates(self, kal: kalendar.Kalendar) -> None:
+    def test_alldates(self, kal: kalendar.KalendarRange) -> None:
         """Make sure every day of the year has at least one entry"""
         date = datetime.date(kal.year, 1, 1)
         while date.year == kal.year:
@@ -48,7 +50,7 @@ class TestKalendar:
 
             date = date + datetime.timedelta(days=1)
 
-    def test_transfers(self, kal: kalendar.Kalendar) -> None:
+    def test_transfers(self, kal: kalendar.KalendarRange) -> None:
         """Make sure translations are sane"""
         assert not kal.match_any({"translatus", "translatus-originalis"})
         for match1 in kal.match({"translatus-originalis"}):
@@ -58,7 +60,7 @@ class TestKalendar:
             ):
                 assert match1.date != match2.date, f"Transfer to self: {match1!s} => {match2!s}"
 
-    def test_compare(self, kal: kalendar.Kalendar) -> None:
+    def test_compare(self, kal: kalendar.KalendarRange) -> None:
         """Compare to known-good output"""
         try:
             ref = json.loads(pathlib.Path(f"kalendar/testdata/year-{kal.year}.json").read_text())
