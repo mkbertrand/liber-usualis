@@ -8,22 +8,23 @@ import random
 from kalendar import kalendar
 
 
+@pytest.mark.parametrize("kal_name", kalendar.kalendars.keys())
 @pytest.mark.parametrize("year", random.sample(range(1582, 3000), k=10))
-def test_repeatable(year: int) -> None:
+def test_repeatable(kal_name: str, year: int) -> None:
     """
     Make sure results are repeatable (i.e. we don't damage the database during a run)
     """
     # TODO: Fixture for kal_def, but make sure we get a new one!
-    kal_def = kalendar.Kalendar1888()
+    kal_def = kalendar.kalendars[kal_name]()
     kal_def_pickle = pickle.dumps(kal_def)
     kal = kal_def.gen(year)
     assert pickle.dumps(kal_def) == kal_def_pickle, "Kalendar def changed after use!"
 
 
 class TestKalendar:
-    @pytest.fixture(scope="class")
+    @pytest.fixture(scope="class", params=kalendar.kalendars.keys())
     def kal_def(self, request) -> kalendar.Kalendar:
-        return kalendar.Kalendar1888()
+        return kalendar.kalendars[request.param]()
 
     @pytest.fixture(scope="class", params=range(1900, 2200))
     def kal(self, kal_def: kalendar.Kalendar, request) -> kalendar.KalendarRange:
