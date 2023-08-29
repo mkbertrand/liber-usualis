@@ -12,7 +12,7 @@ def test_repeatable(year: int) -> None:
     """
     Make sure results are repeatable
     (i.e. we don't damage the database during a run)
-    TODO: Since we can't really that this test runs first, we need to do it on
+    TODO: Since we can't really guarantee that this test runs first, we need to do it on
           a fresh copy of the data files, which should live in their own object.
     TODO: Randomness seems somewhat ugly, at least as it's done here
     """

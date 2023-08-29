@@ -119,6 +119,7 @@ class Kalendar:
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
     # The given entry must occur on match_date.
     def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
+        assert not (target is None and obstacles is None), "Useless call to transfer!"
         match_date, entry = match
         newfeast = entry | {"translatus"}
 
@@ -154,6 +155,8 @@ class Kalendar:
 
         logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
         assert match_date - timedelta(days=1) == newdate or match_date < newdate
+
+        assert not (target is None and obstacles is None)
 
         return match
 
@@ -298,7 +301,7 @@ def kalendar(year: int) -> Kalendar:
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
-            entry_base = entry - octavevigiltags - ranks
+            entry_base = entry - ranks - octavevigiltags
             if "habens-octavam" in entry and not "octava-excepta" in entry:
                 for k in range(1,7):
                     date0 = ent_date + timedelta(days=k)
@@ -335,7 +338,7 @@ def kalendar(year: int) -> Kalendar:
                 i += 1
         if i == 7:
             xxiiipentecostentry.add("commemoratio")
-            xxiiipentecost.discard("semiduplex")
+            xxiiipentecostentry.discard("semiduplex")
             kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if omittedepiphanyentry:
         omittedepiphanyentry = set(omittedepiphanyentry)
@@ -364,7 +367,7 @@ def kalendar(year: int) -> Kalendar:
         kal.transfer_entry(sjb, target=date(year, 6, 25))
 
     # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
+    # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local kalendar were to assign it an Octave.
     kal.transfer({"purificatio","duplex-ii-classis"}, obstacles={"dominica-ii-classis"})
 
     excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandum","dies-octava","epiphania"}
@@ -442,7 +445,7 @@ if __name__ == "__main__":
     # Generate kalendar
     ret = dict(sorted(kalendar(args.year).items()))
 
-    # Convert datestrings to strings and sets into list
+    # Convert datestrings to strings and sets into lists
     ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
     # Write JSON output
     args.output.write(json.dumps(ret) + "\n")
