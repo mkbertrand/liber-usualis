@@ -368,15 +368,15 @@ def kalendar(year: int) -> Kalendar:
     if candlemas.date in (date for date, _ in kal.match({"dominica-ii-classis"})):
         kal.transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
 
-    excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandus","dies-octava","epiphania"}
+    excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandum","dies-octava","epiphania"}
 
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
         # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
-        kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-becket"})
+        kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-cantuariensis"})
     else:
-        kal.transfer({"thomas-becket"}, target=date(year, 12, 29))
+        kal.transfer({"thomas-cantuariensis"}, target=date(year, 12, 30))
 
     kal.transfer_all({"duplex-i-classis"}, obstacles=standardobstacles, exclude=excepted)
     standardobstacles |= {"duplex-i-classis", "marcus"}
@@ -391,7 +391,7 @@ def kalendar(year: int) -> Kalendar:
     kal.transfer_all({"doctor","duplex"}, obstacles=standardobstacles, exclude=excepted)
 
     for match_date, entry in kal.match({"vigilia"}):
-        if "non-translandus" in entry:
+        if "non-translandum" in entry:
             continue
         if "dominica" in kal.tagsindate(match_date):
             kal.transfer(entry, target=match_date - timedelta(days=1))

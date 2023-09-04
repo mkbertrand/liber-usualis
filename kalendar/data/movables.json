@@ -2,7 +2,11 @@
 	"bmv-sabbato":{
 		"day":"BMV Sabbato",
 		"occurrence":["sabbatum","feria","per-annum"],
-		"excluded":["poenitentialis", "infra-octavam"],
+		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
+	},
+	"bmv-sabbato-paschae":{
+		"day":"BMV Sabbato",
+		"occurrence":["sabbatum","feria","paschalis"],
 		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
 	},
 	"feria-iv-quattuor-temporum-adventus":{

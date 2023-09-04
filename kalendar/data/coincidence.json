@@ -1,0 +1,30 @@
+{
+	"dominica-i-classis":[
+		[["duplex-i-classis"],"translandus"],
+		[["duplex-ii-classis"],"translandus"],
+		[["duplex-majus"],"translandus"],
+		[["doctor"],"translandus"]
+	],
+	"non-concurrentia":{
+		"sollemnitas-localis":"translandus",
+		"duplex-i-classis":"translandus",
+		"duplex-ii-classis":"translandus",
+		"duplex-majus":"translandus",
+		"doctor":"translandus"
+	},
+	"dominica-ii-classis":{
+		"sollemnitas-localis":"commemoraturus",
+		"duplex-i-classis":"translandus",
+		"duplex-ii-classis":"translandus",
+		"duplex-majus":"translandus",
+		"doctor":"translandus"
+	},
+	"corpus-christi":{
+		"nativitas-joannis-baptistae":"translandus"
+	},
+	"duplex-i-classis":{
+		"duplex-ii-classis":"translandus",
+		"duplex-majus":"translandus",
+		"doctor":"translandus"
+	}
+}
