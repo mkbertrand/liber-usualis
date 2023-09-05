@@ -1,30 +1,274 @@
 {
-	"dominica-i-classis":[
-		[["duplex-i-classis"],"translandus"],
-		[["duplex-ii-classis"],"translandus"],
-		[["duplex-majus"],"translandus"],
-		[["doctor"],"translandus"]
-	],
-	"non-concurrentia":{
-		"sollemnitas-localis":"translandus",
-		"duplex-i-classis":"translandus",
-		"duplex-ii-classis":"translandus",
-		"duplex-majus":"translandus",
-		"doctor":"translandus"
+	"bmv-sabbatum simplex":{
+		"duplex-i-classis":"omissurum",
+		"duplex-ii-classis":"omissurum",
+		"duplex-majus":"omissurum",
+		"duplex":"omissurum",
+		"semiduplex":"omissurum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum"
+	},
+	"pascha duplex-i-classis":{
+		"doctor":"translandum +n",
+		"duplex":"omittendum",
+		"semiduplex":"omittendum",
+		"simplex":"omittendum",
+		"commemoratio":"omittendum"
+	},
+	"pascha":{
+		"duplex-i-classis":"translandum +n",
+		"marcus duplex-ii-classis":"translandum feria-iii hebdomada-i-paschae",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"vigilia":"omittendum"
+	},
+	"pentecostes duplex-i-classis":{
+		"doctor":"translandum +n",
+		"duplex":"omittendum",
+		"semiduplex":"omittendum",
+		"simplex":"omittendum",
+		"commemoratio":"omittendum"
+	},
+	"quattuor-temporum-pentecostes":{
+		"pentecostes":"incorporatorum"
+	},
+	"pentecostes":{
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"vigilia":"omittendum"
+	},
+	"cinerum feria-iv":{
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"vigilia":"omittendum"
+	},
+	"triduum":{
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"omittendum",
+		"semiduplex":"omittendum",
+		"simplex":"omittendum",
+		"commemoratio":"omittendum",
+		"vigilia":"omittendum"
+	},
+	"hebdomada-sancta":{
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"vigilia":"omittendum"
+	},
+	"marcus duplex-ii-classis":{
+		"philippus-jacobus duplex-ii-classis":"translandum +n"
+	},
+	"corpus-christi duplex-i-classis":{
+		"nativitas-joannis-baptistae duplex-i-classis":"translandum +1"
+	},
+	"purificatio duplex-ii-classis":{
+		"dominica-ii-classis":"translaturum +1"
+	},
+	"quadragesima":{
+		"dies-octava":"omittendum",
+		"infra-octavam":"omittendum"
+	},
+	"cinerum":{
+		"dies-octava":"omittendum",
+		"infra-octavam":"omittendum"
+	},
+	"nativitas vigilia":{
+		"dominica":"incorporandum",
+		"feria":"incorporandum"
+	},
+	"epiphania vigilia":{
+		"dominica":"incorporandum",
+		"feria":"incorporandum"
+	},
+	"vigilia":{
+		"dominica":"translaturum -1",
+		"feria":"incorporandum"
+	},
+	"fideles-defuncti":{
+		"dominica":"translaturum +1",
+	},
+	"quadragesima dominica":{
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum"
+	},
+	"dominica-i-classis":{
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum"
 	},
 	"dominica-ii-classis":{
-		"sollemnitas-localis":"commemoraturus",
-		"duplex-i-classis":"translandus",
-		"duplex-ii-classis":"translandus",
-		"duplex-majus":"translandus",
-		"doctor":"translandus"
+		"sollemnitas-localis":"commemoraturum",
+		"duplex-i-classis":"translandum +n",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum"
 	},
-	"corpus-christi":{
-		"nativitas-joannis-baptistae":"translandus"
+	"nativitas dominica-infra-octavam":{
+		"duplex-ii-classis":"translaturum 12-30",
+		"thomas-cantuariensis":"translandum +1"
+	},
+	"corpus-christi infra-octavam":{
+		"nativitas-joannis-baptistae infra-octavam":"commemorandum",
+		"duplex-i-classis":"commemoraturum",
+		"duplex-majus translatum":"translandum +n",
+		"doctor translatum":"translandum +n",
+		"semiduplex":"commemorandum"
+	},
+	"nativitas infra-octavam":{
+		"duplex-i-classis":"commemoraturum",
+		"duplex-ii-classis":"commemoraturum",
+		"infra-octavam":"commemorandum"
+	},
+	"epiphania infra-octavam":{
+		"duplex-i-classis":"commemoraturum",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"omittendum",
+		"dominica":"commemorandum",
+		"semiduplex":"omittendum",
+		"simplex":"omittendum",
+		"commemoratio":"omittendum",
+		"feria":"omittendum"
 	},
 	"duplex-i-classis":{
-		"duplex-ii-classis":"translandus",
-		"duplex-majus":"translandus",
-		"doctor":"translandus"
+		"sollemnitas-localis":"translaturum +n",
+		"duplex-i-classis":"errora",
+		"duplex-ii-classis":"translandum +n",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"omittendum",
+		"dominica":"commemorandum",
+		"semiduplex":"omittendum",
+		"simplex":"omittendum",
+		"commemoratio":"omittendum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	},
+	"duplex-ii-classis":{
+		"duplex-ii-classis":"errora",
+		"duplex-majus":"translandum +n",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"infra-octavam":"omittendum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	},
+	"duplex-majus":{
+		"duplex-majus":"errora",
+		"doctor":"translandum +n",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	},
+	"corpus-christi dies-octava":{
+		"nativitas-joannis-baptistae dies-octava":"commemorandum"
+	},
+	"dies-octava":{
+		"dies-octava":"errora",
+		"doctor":"translandum",
+		"duplex":"commemorandum"
+	},
+	"doctor":{
+		"doctor":"errora",
+		"duplex":"commemorandum",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	},
+	"duplex":{
+		"duplex":"errora",
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	},
+	"dominica":{
+		"semiduplex":"commemorandum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum"
+	},
+	"nativitas-joannis-baptistae infra-octavam":{
+		"petrus-paulus infra-octavam":"commemoraturum"
+	},
+	"laurentius infra-octavam":{
+		"assumptio infra-octavam":"commemoraturum"
+	},
+	"nativitas infra-octavam":{
+		"infra-octavam":"commemorandum"
+	},
+	"infra-octavam":{
+		"dominica":"commemoraturum",
+		"infra-octavam":"errora",
+		"semiduplex":"commemoraturum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	}
+	"semiduplex":{
+		"semiduplex":"errora",
+		"simplex":"commemorandum",
+		"feria-major":"commemorandum",
+		"feria":"omittendum"
+	},
+	"feria-major":{
+		"bmv-sabbatum":"omittendum",
+		"simplex":"commemorandum",
+		"commemoratio":"commemorandum",
+		"feria":"omittendum"
+	},
+	"simplex":{
+		"feria":"omittendum"
 	}
 }
