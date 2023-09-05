@@ -13,7 +13,7 @@ from kalendar import pascha
 data_root = pathlib.Path(__file__).parent.joinpath("data")
 
 def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
+    data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
@@ -37,6 +37,7 @@ nativitycycle = load_data('nativity.json')
 movables = load_data('movables.json')
 months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
+coincidence = json.loads(data_root.joinpath('coincidence.json').read_text(encoding='utf-8'))
 
 threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 ranks = {"feria","commemoratio","simplex"} | threenocturnes
@@ -357,6 +358,9 @@ def kalendar(year: int) -> Kalendar:
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
     # Transfers
+    
+    print(coincidence)
+    
     sjb = kal.match_unique({"nativitas-joannis-baptistae","duplex-i-classis"})
     corpuschristi = kal.match_unique({"corpus-christi","duplex-i-classis"})
     # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
