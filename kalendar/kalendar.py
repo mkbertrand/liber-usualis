@@ -375,7 +375,7 @@ def kalendar(year: int) -> Kalendar:
     standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
 
     if date(year, 12, 29).isoweekday() != 7:
-        # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
+        # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-cantuariensis tag specifically
         kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-cantuariensis"})
     else:
         kal.transfer({"thomas-cantuariensis"}, target=date(year, 12, 30))
