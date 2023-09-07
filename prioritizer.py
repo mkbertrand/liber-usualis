@@ -27,19 +27,16 @@ def load_data(p):
 
     return recurse(data)
 
-def hasfile(year):
-    return os.path.isfile("kalendars/1888-" + str(year) + ".json")
-
 def tofile(kal):
-    file = open("kalendars/1888-" + str(list(kal.kal.keys())[0].year) + ".json", "w")
+    file = open(f"kalendars/1888-{list(kal.kal.keys())[0].year!s}.json", "w")
     file.write(json.dumps({str(k): [list(ent) for ent in v] for k, v in kal.items()}))
     file.close()
 
 def getyear(year):
-    if hasfile(year):
-        return load_data("1888-" + str(year) + ".json")
-    else:
-        warnings.warn("Year " + str(year) + " not found in database.  Generating file...")
+    try:
+        return load_data(f"1888-{year!s}.json")
+    except FileNotFoundError:
+        warnings.warn(f"Year {year!s} not found in database.  Generating file...")
         kal = kalendar.kalendar(year)
         tofile(kal)
         return kal
@@ -64,7 +61,7 @@ def prioritize(day):
     tagged = taggedentry(daytags, {"pascha", "duplex-i-classis"})
     if tagged:
         return tagged.add("ordinarium")
-        
+
     print(daytags)
-    
+
 prioritize(date(2021, 1,1))
