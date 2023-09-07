@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from kalendar import kalendar
 import os.path
 import json
@@ -132,8 +133,8 @@ def vesperscoincider(day):
                                                 raise RuntimeError(f'Unexpected response: {j["response"]}')
                                             return True
             return False
-        while cycle() == True:
-            ''
+        while cycle():
+            pass
         return vesperal
 
 def prioritize(day):
