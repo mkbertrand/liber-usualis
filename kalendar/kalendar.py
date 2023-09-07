@@ -14,7 +14,7 @@ from kalendar.pascha import geteaster, nextsunday
 data_root = pathlib.Path(__file__).parent.joinpath("data")
 
 def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
