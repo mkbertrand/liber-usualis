@@ -357,9 +357,6 @@ def kalendar(year: int) -> Kalendar:
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
     # Transfers
-    
-    print(coincidence)
-    
     sjb = kal.match_unique({"nativitas-joannis-baptistae","duplex-i-classis"})
     corpuschristi = kal.match_unique({"corpus-christi","duplex-i-classis"})
     # N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
