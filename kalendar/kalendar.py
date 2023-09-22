@@ -5,6 +5,7 @@ from datetime import date, datetime, timedelta
 import json
 import logging
 import pathlib
+import copy
 from typing import NamedTuple, Optional, Self, Set
 
 from kalendar import pascha
@@ -37,13 +38,16 @@ nativitycycle = load_data('nativity.json')
 movables = load_data('movables.json')
 months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
-coincidence = json.loads(data_root.joinpath('coincidence.json').read_text(encoding='utf-8'))
+coincidence = load_data('coincidence.json')
 
 threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 ranks = {"feria","commemoratio","simplex"} | threenocturnes
 octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
+lowernumerals = ['i','ii','iii','iv','v']
 numerals = ['II','III','IV','V','VI','VII']
-
+menses = ['januarius','februarius','martius','aprilis','majus','junius','julius','augustus','september','october','november','december']
+mensum = ['januarii','februarii','martii','aprilis','maji','junii','julii','augusti','septembris','octobris','novembris','decembris']
+feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
 
 class SearchResult(NamedTuple):
     date: date
@@ -52,10 +56,8 @@ class SearchResult(NamedTuple):
     def __str__(self):
         return str(self.date) + ":" + str(self.feast)
 
-
 def datestring(date0: date):
     return str(date0.month).zfill(2) + '-' + str(date0.day).zfill(2)
-
 
 class Kalendar:
     def __init__(self, year: int, *args, **kwargs):
@@ -75,7 +77,10 @@ class Kalendar:
         for date0, entries in other.kal.items():
             self.kal[date0] += entries
         return self
-
+    
+    def keys(self):
+        return self.kal.keys()
+    
     def items(self):
         return self.kal.items()
 
@@ -88,9 +93,10 @@ class Kalendar:
     def match(self, include: Set[str] = set(), exclude: Set[str] = set()):
         assert include.isdisjoint(exclude), f"{include!r} and {exclude!r} must be disjoint"
         for date0, entries in self.kal.items():
-            for entry in entries:
-                if entry >= include and entry.isdisjoint(exclude):
-                    yield SearchResult(date0, entry)
+            if set().union(*entries).isdisjoint(exclude):
+                for entry in entries:
+                    if entry >= include:
+                        yield SearchResult(date0, entry)
 
     def match_any(self, include: Set[str] = set(), exclude: Set[str] = set()) -> Optional[SearchResult]:
         # Check whether kal.match returns any matches
@@ -178,11 +184,45 @@ def kalendar(year: int) -> Kalendar:
 
     def sundayafter(date0: date):
         return date0 + timedelta(days=6-date0.weekday()) if date0.weekday() != 6 else date0 + timedelta(days=7)
+    def sundaynear(date0: date):
+        if date0.weekday() < 3:
+            return date0 - timedelta(days=1+date0.weekday())
+        else:
+            return date0 + timedelta(days=6-date0.weekday())
     def todate(text: str, year0: int):
         return date(year0, int(text[:2]), int(text[3:]))
 
+    i = date(year, 1, 1)
+    while not i == date(year + 1, 1, 1):
+        kal.add_entry(i, {'temporalis', menses[i.month - 1], str(i.day)})
+        i = i + timedelta(days=1)
+    for i in range(0, 13):
+        kalends = None
+        if i == 0:
+            kalends = sundaynear(date(year - 1, 12, 1))
+        else:
+            kalends = sundaynear(date(year, i, 1))
+        nextkalends = None
+        if i == 12:
+            nextkalends = sundaynear(date(year + 1, 1, 1))
+        else:
+            nextkalends = sundaynear(date(year, i + 1, 1))
+        j = 0
+        while kalends + timedelta(days=j*7) != nextkalends:
+            for k in range(0,7):
+                if not (kalends + timedelta(days=j*7 + k)).year == year:
+                    continue
+                kal[kalends + timedelta(days=j*7 + k)][0].add(feriae[k])
+                kal[kalends + timedelta(days=j*7 + k)][0].add(f'hebdomada-{lowernumerals[j]}-{mensum[(i - 1) % 12]}')
+            j += 1
+        if i == 12 and nextkalends.year == year:
+            for j in range(0,7):
+                if (nextkalends + timedelta(days=j)).year == year + 1:
+                    break
+                kal[nextkalends + timedelta(days=j)][0].add(feriae[j])
+                kal[nextkalends + timedelta(days=j)][0].add('hebdomada-i-januarii')
 
-    easter = pascha.geteaster(year)
+    easter = pascha.geteaster(year)    
     christmas = date(year, 12, 25)
     adventstart = christmas - timedelta(days = 22 + christmas.weekday())
     xxiiipentecost = easter + timedelta(days=210)
@@ -239,7 +279,7 @@ def kalendar(year: int) -> Kalendar:
             currday += 1
     kal.add_entry(date(year, 1, 13), {"epiphania","dies-octava","duplex"})
 
-    # Autumnal Weeks
+    """# Autumnal Weeks
     def nearsunday(kalends: date):
         if kalends.weekday() < 3:
             return kalends - timedelta(days=1+kalends.weekday())
@@ -262,7 +302,8 @@ def kalendar(year: int) -> Kalendar:
         for k in range(0,7):
             kal.add_entry(kalends + timedelta(days=j*7+k), months["november"][j][k]["tags"])
         j += 1
-
+    """
+    
     # Saints, and also handles leap years
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
     for date0, entries in sanctoral.items():
@@ -292,7 +333,7 @@ def kalendar(year: int) -> Kalendar:
     else:
         kal.add_entry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"]["tags"])
     # First Sunday of July
-    kal.add_entry(nearsunday(date(year,7,1)), movables["pretiosissimi-sanguinis"]["tags"])
+
     assumption = date(year, 9, 8)
     if assumption.weekday() == 6:
         kal.add_entry(assumption + timedelta(days=1), movables["nominis-bmv"]["tags"])
@@ -358,54 +399,61 @@ def kalendar(year: int) -> Kalendar:
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
     # Transfers
+    def perform_action(instruction, day, target):
+        if instruction['response'] == 'omittendum':
+            kal[day].remove(target)
+            return [day]
+        elif instruction['response'] == 'commemorandum':
+            target.add('commemoratum')
+            return [day]
+        elif instruction['response'] == 'translandum':
+            if instruction['movement'] == '+n' or instruction['movement'] == '+1':
+                target.add('translatum')
+                kal[day + timedelta(days=1)].append(target)
+                kal[day].remove(target)
+                return [day, day + timedelta(days=1)]
+            elif instruction['movement'] == '-n' or instruction['movement'] == '-1':
+                target.add('translatum')
+                kal[day - timedelta(days=1)].append(target)
+                kal[day].remove(target)
+                return [day, day + timedelta(days=1)]
+            else:
+                transtarget = kal.match_unique(instruction['movement']).date
+                target.add('translatum')
+                kal[transtarget].add(target)
+                kal[day].remove(target)
+                return [day, transtarget]
+        elif instruction['response'] == 'temporalis-faciendam':
+            target.add('temporalis')
+            return [day]
+        elif instruction['response'] == 'errora':
+            raise RuntimeError(f'Unexpected coincidence on day {day}')
+        else:
+            raise RuntimeError(f'Unexpected response: {instruction["response"]}')
     
-    print(coincidence)
+    def resolve0(day, coinc):
+        for i in kal[day]:
+            if coinc['indices'].issubset(i) and not 'commemoratum' in i and not 'temporalis' in i:
+                otheroccasions = copy.deepcopy(kal[day])
+                otheroccasions.remove(i)
+                for j in kal[day]:
+                    if not 'commemoratum' in j and not j == i and not 'temporalis' in j:
+                        if type(coinc['response']) == list:
+                            for k in coinc['response']:
+                                if k['indices'].issubset(j):
+                                    for modifiedday in perform_action(k, day, i if k['target'] == 'a' else j):
+                                        resolve(modifiedday)
+                                    return
+                        else:
+                            perform_action(coinc, day, i)
+    def resolve(day):
+        for i in coincidence:
+            resolve0(day, i)    
     
-    sjb = kal.match_unique({"nativitas-joannis-baptistae","duplex-i-classis"})
-    corpuschristi = kal.match_unique({"corpus-christi","duplex-i-classis"})
-    # Although Candlemas does not have an Octave, I added the "duplex-ii-classis" search tag in case a local Kalendar were to assign it an Octave.
-    candlemas = kal.match_unique({"purificatio","duplex-ii-classis"})
-    # N.B. Despite the Feast of the Nativity of S.J.B. being translated, its Octave is not adjusted with it, but still is based off the 24th of June.
-    if sjb.date == corpuschristi.date:
-        kal.transfer({"nativitas-joannis-baptistae","duplex-i-classis"}, target=date(year, 6, 25))
-    # Candlemas is granted the special privilege of being transferred to the next Monday if impeded by a Sunday II Class, regardless of the feast which falls on that Monday. It is thus included in the exceptions list.
-    if candlemas.date in (date for date, _ in kal.match({"dominica-ii-classis"})):
-        kal.transfer({"purificatio","duplex-ii-classis"}, target=candlemas.date + timedelta(days=1))
-
-    excepted = {"dominica-i-classis","dominica-ii-classis","pascha","pentecostes","ascensio","corpus-christi","purificatio","non-translandum","dies-octava","epiphania"}
-
-    standardobstacles = {"dominica-i-classis","dominica-ii-classis","non-concurrentia","epiphania"}
-
-    if christmas + timedelta(days=6-christmas.weekday()) != date(year, 12, 29):
-        # All days of Christmas Octave (or any Octave for that matter) are semiduplex which is why I used the thomas-becket tag specifically
-        kal.transfer({"nativitas","dominica-infra-octavam"}, obstacles={"duplex-i-classis","duplex-ii-classis","thomas-cantuariensis"})
-    else:
-        kal.transfer({"thomas-cantuariensis"}, target=date(year, 12, 30))
-
-    kal.transfer_all({"duplex-i-classis"}, obstacles=standardobstacles, exclude=excepted)
-    standardobstacles |= {"duplex-i-classis", "marcus"}
-    stmarks = kal.match_unique({"marcus", "duplex-ii-classis"})
-    if "pascha" in kal.tagsindate(stmarks.date):
-        kal.transfer(stmarks.feast, target=kal.match_unique({"feria-iii","hebdomada-i-paschae"}).date)
-    excepted.add("marcus")
-    kal.transfer_all({"duplex-ii-classis"}, obstacles=standardobstacles, exclude=excepted)
-    standardobstacles |= {"duplex-ii-classis","dies-octava"}
-    kal.transfer_all({"duplex-majus"}, obstacles=standardobstacles, exclude=excepted)
-    standardobstacles |= {"duplex-majus"}
-    kal.transfer_all({"doctor","duplex"}, obstacles=standardobstacles, exclude=excepted)
-
-    for match_date, entry in kal.match({"vigilia"}):
-        if "non-translandum" in entry:
-            continue
-        if "dominica" in kal.tagsindate(match_date):
-            kal.transfer(entry, target=match_date - timedelta(days=1))
-
-    fidelesdefuncti = kal.match_unique({"fideles-defuncti"})
-    if "dominica" in kal.tagsindate(fidelesdefuncti.date):
-        kal.transfer({"fideles-defuncti"}, target=fidelesdefuncti.date + timedelta(days=1))
-
+    for i in kal.keys():
+        resolve(i)
+    
     return kal
-
 
 if __name__ == "__main__":
     import argparse

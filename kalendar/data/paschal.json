@@ -317,42 +317,42 @@
 	{
 		"difference": 0,
 		"day": "Dominica Resurrectionis",
-		"tags": ["pascha","duplex-i-classis","dominica", "dominica-i-classis","habens-vigiliam","vigilia-excepta","habens-octavam","octava-excepta"]
+		"tags": ["pascha","duplex-i-classis","paschalis","dominica", "dominica-i-classis","habens-vigiliam","vigilia-excepta","habens-octavam","octava-excepta"]
 	},
 	{
 		"difference": 1,
 		"day": "Die II infra Octavam Paschæ",
-		"tags": ["pascha","duplex-i-classis","feria-ii","infra-octavam","dies-ii","non-concurrentia"]
+		"tags": ["pascha","duplex-i-classis","paschalis","feria-ii","infra-octavam","dies-ii","non-concurrentia"]
 	},
 	{
 		"difference": 2,
 		"day": "Die III infra Octavam Paschæ",
-		"tags": ["pascha","duplex-i-classis","feria-iii","infra-octavam","dies-iii","non-concurrentia"]
+		"tags": ["pascha","duplex-i-classis","paschalis","feria-iii","infra-octavam","dies-iii","non-concurrentia"]
 	},
 	{
 		"difference": 3,
 		"day": "Die IV infra Octavam Paschæ",
-		"tags": ["pascha","semiduplex","feria-iv","infra-octavam","dies-iv","non-concurrentia"]
+		"tags": ["pascha","semiduplex","paschalis","feria-iv","infra-octavam","dies-iv","non-concurrentia"]
 	},
 	{
 		"difference": 4,
 		"day": "Die V infra Octavam Paschæ",
-		"tags": ["pascha","semiduplex","feria-v","infra-octavam","dies-v","non-concurrentia"]
+		"tags": ["pascha","semiduplex","paschalis","feria-v","infra-octavam","dies-v","non-concurrentia"]
 	},
 	{
 		"difference": 5,
 		"day": "Die VI infra Octavam Paschæ",
-		"tags": ["pascha","semiduplex","feria-vi","infra-octavam","dies-vi","non-concurrentia"]
+		"tags": ["pascha","semiduplex","paschalis","feria-vi","infra-octavam","dies-vi","non-concurrentia"]
 	},
 	{
 		"difference": 6,
 		"day": "Sabbato in Albis",
-		"tags": ["pascha","semiduplex","sabbatum","infra-octavam","dies-vii","non-concurrentia"]
+		"tags": ["pascha","semiduplex","paschalis","sabbatum","infra-octavam","dies-vii","non-concurrentia"]
 	},
 	{
 		"difference": 7,
 		"day": "Dominica in Albis in Octava Paschæ",
-		"tags": ["dominica-in-albis","dominica","duplex","dominica-i-classis","dies-octava","hebdomada-i-paschae"]
+		"tags": ["dominica-in-albis","paschalis","dominica","duplex","dominica-i-classis","dies-octava","hebdomada-i-paschae"]
 	},
 	{
 		"difference": 8,
@@ -537,7 +537,7 @@
 	{
 		"difference": 48,
 		"day": "Sabbato in Vigilia Pentecostes",
-		"tags": ["vigilia-pentecostes","paschalis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
+		"tags": ["vigilia","pentecostes","paschalis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
 	},
 	{
 		"difference": 49,
@@ -577,7 +577,7 @@
 	{
 		"difference": 56,
 		"day": "Dominica Trinitatis",
-		"tags": ["trinitas","pentecostes","duplex-ii-classis","dominica","dominica-i-classis","dies-octava"]
+		"tags": ["trinitas","pentecostes","duplex-ii-classis","post-pentecosten","per-annum","dominica","dominica-i-classis","dies-octava"]
 	},
 	{
 		"difference": 57,
