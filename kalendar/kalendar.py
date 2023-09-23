@@ -5,7 +5,6 @@ from datetime import date, datetime, timedelta
 import json
 import logging
 import pathlib
-import copy
 from typing import NamedTuple, Optional, Self, Set
 
 from kalendar import pascha
@@ -14,7 +13,7 @@ from kalendar import pascha
 data_root = pathlib.Path(__file__).parent.joinpath("data")
 
 def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
@@ -77,10 +76,10 @@ class Kalendar:
         for date0, entries in other.kal.items():
             self.kal[date0] += entries
         return self
-    
+
     def keys(self):
         return self.kal.keys()
-    
+
     def items(self):
         return self.kal.items()
 
@@ -129,6 +128,7 @@ class Kalendar:
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
     # The given entry must occur on match_date.
     def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
+        assert not (target is None and obstacles is None), "Useless call to transfer!"
         match_date, entry = match
         newfeast = entry | {"translatum"}
 
@@ -165,6 +165,8 @@ class Kalendar:
         logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
         assert match_date - timedelta(days=1) == newdate or match_date < newdate
 
+        assert not (target is None and obstacles is None)
+
         return match
 
     # Automatically decide the suitable date whither the feast should be transferred
@@ -197,12 +199,10 @@ def kalendar(year: int) -> Kalendar:
         kal.add_entry(i, {'fixum', menses[i.month - 1], str(i.day)})
         i = i + timedelta(days=1)
     for i in range(0, 13):
-        kalends = None
         if i == 0:
             kalends = sundaynear(date(year - 1, 12, 1))
         else:
             kalends = sundaynear(date(year, i, 1))
-        nextkalends = None
         if i == 12:
             nextkalends = sundaynear(date(year + 1, 1, 1))
         else:
@@ -222,7 +222,7 @@ def kalendar(year: int) -> Kalendar:
                 kal[nextkalends + timedelta(days=j)][0].add(feriae[j])
                 kal[nextkalends + timedelta(days=j)][0].add('hebdomada-i-januarii')
 
-    easter = pascha.geteaster(year)    
+    easter = pascha.geteaster(year)
     christmas = date(year, 12, 25)
     adventstart = christmas - timedelta(days = 22 + christmas.weekday())
     xxiiipentecost = easter + timedelta(days=210)
@@ -303,7 +303,7 @@ def kalendar(year: int) -> Kalendar:
             kal.add_entry(kalends + timedelta(days=j*7+k), months["november"][j][k]["tags"])
         j += 1
     """
-    
+
     # Saints, and also handles leap years
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
     for date0, entries in sanctoral.items():
@@ -333,7 +333,6 @@ def kalendar(year: int) -> Kalendar:
     else:
         kal.add_entry(assumption + timedelta(days=6-assumption.weekday()), movables["joachim"]["tags"])
     # First Sunday of July
-
     assumption = date(year, 9, 8)
     if assumption.weekday() == 6:
         kal.add_entry(assumption + timedelta(days=1), movables["nominis-bmv"]["tags"])
@@ -343,7 +342,7 @@ def kalendar(year: int) -> Kalendar:
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
-            entry_base = entry - octavevigiltags - ranks
+            entry_base = entry - ranks - octavevigiltags
             if "habens-octavam" in entry and not "octava-excepta" in entry:
                 for k in range(1,7):
                     date0 = ent_date + timedelta(days=k)
@@ -380,7 +379,7 @@ def kalendar(year: int) -> Kalendar:
                 i += 1
         if i == 7:
             xxiiipentecostentry.add("simplex")
-            xxiiipentecost.discard("semiduplex")
+            xxiiipentecostentry.discard("semiduplex")
             kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if omittedepiphanyentry:
         omittedepiphanyentry = set(omittedepiphanyentry)
@@ -434,15 +433,13 @@ def kalendar(year: int) -> Kalendar:
             raise RuntimeError(f'Unexpected coincidence on day {day}')
         else:
             raise RuntimeError(f'Unexpected response: {instruction["response"]}')
-    
+
     def resolvecoincidence(day, coincidence):
         for i in kal[day]:
             if coincidence['indices'].issubset(i) and i.isdisjoint({'commemoratum','temporale','fixum'}):
                 if not type(coincidence['response']) == list:
                     perform_action(coincidence, day, i)
                 else:
-                    otheroccasions = copy.deepcopy(kal[day])
-                    otheroccasions.remove(i)
                     for j in kal[day]:
                         if not j == i and j.isdisjoint({'commemoratum','temporale','fixum'}):
                             for k in coincidence['response']:
@@ -454,11 +451,11 @@ def kalendar(year: int) -> Kalendar:
                                     return
     def resolve(day):
         for coincidence in coincidencetable:
-            resolvecoincidence(day, coincidence)    
-    
+            resolvecoincidence(day, coincidence)
+
     for i in kal.keys():
         resolve(i)
-    
+
     return kal
 
 if __name__ == "__main__":
@@ -505,7 +502,7 @@ if __name__ == "__main__":
     # Generate kalendar
     ret = dict(sorted(kalendar(args.year).items()))
 
-    # Convert datestrings to strings and sets into list
+    # Convert datestrings to strings and sets into lists
     ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
     # Write JSON output
     args.output.write(json.dumps(ret) + "\n")
