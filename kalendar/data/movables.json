@@ -82,9 +82,9 @@
 		"occurrence":["hebdomada-i-quadragesimae","sabbatum"],
 		"tags":["quattuor-temporum-quadragesimae","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"septem-dolorum":{
+	"septem-dolores":{
 		"occurrence":["feria-vi","hebdomada-passionis"],
-		"tags":["septem-dolorum","duplex-majus","marianum","poenitentialis"]
+		"tags":["septem-dolores","duplex-majus","marianum","poenitentialis"]
 	},
 	"patrocinius-joseph":{
 		"occurrence":["dominica","hebdomada-iii-paschae"],
@@ -95,38 +95,31 @@
 		"tags":["feria-ii-rogationis","feria-ii","feria-major","feria","poenitentialis"]
 	},
 	"feria-iii-rogationis":{
-		"day":"Feria III in Rogationibus",
 		"occurrence":["feria-iii","hebdomada-v-paschae"],
 		"tags":["feria-iii-rogationis","feria-iii","feria","poenitentialis"]
 	},
 	"feria-iv-rogationis":{
-		"day":"Feria IV in Rogationibus",
 		"occurrence":["feria-iv","hebdomada-v-paschae"],
 		"tags":["ascensio","feria-iv-rogationis","feria-iv","feria","poenitentialis","vigilia"]
 	},
 	"feria-iv-quattuor-temporum-pentecostes":{
-		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","feria-iv"],
 		"tags":["quattuor-temporum-pentecostes","feria-iv","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
 	"feria-vi-quattuor-temporum-pentecostes":{
-		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","feria-vi"],
 		"tags":["quattuor-temporum-pentecostes","feria-vi","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
 	"sabbato-quattuor-temporum-pentecostes":{
-		"day":"Feria IV Quattuor Temporum Pentecostes",
 		"occurrence":["pentecostes","sabbatum"],
 		"tags":["quattuor-temporum-pentecostes","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
 	"corpus-christi":{
-		"day":"Ss. Corporis Christi",
 		"occurrence":["feria-v","hebdomada-i-pentecostes"],
 		"genitive-day":"Corporis Christi",
 		"tags":["corpus-christi","duplex-i-classis","habens-octavam"]
 	},
 	"cor-jesus":{
-		"day":"Ss. Cordis D.N.J.C.",
 		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
 		"tags":["cor-jesus","duplex-majus"]
 	},
@@ -136,40 +129,32 @@
 		"tags":["pretiosissimus-sanguis","duplex-ii-classis"]
 	},
 	"septem-dolores-septembris":{
-		"day":"Septem Dolorum B.M.V.",
 		"occurrence":["dominica","hebdomada-iii-septembris"],
 		"tags":["septem-dolores","september","duplex-majus","marianum"]
 	},
 	"feria-iv-quattuor-temporum-septembris":{
-		"day":"Feria IV Quattuor Temporum Septembris",
 		"occurrence":["hebdomada-iii-septembris","feria-iv"],
 		"tags":["quattuor-temporum-septembris","feria-iv","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
 	"feria-vi-quattuor-temporum-septembris":{
-		"day":"Feria IV Quattuor Temporum Septembris",
 		"occurrence":["hebdomada-iii-septembris","feria-vi"],
 		"tags":["quattuor-temporum-septembris","feria-vi","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
 	"sabbato-quattuor-temporum-septembris":{
-		"day":"Feria IV Quattuor Temporum Septembris",
 		"occurrence":["hebdomada-iii-septembris","sabbatum"],
 		"tags":["quattuor-temporum-septembris","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
 	"rosarium-bmv":{
-		"day":"Solemnitas Ss. Rosarii B.M.V.",
 		"occurrence":["dominica","hebdomada-i-octobris"],
 		"tags":["rosarium-bmv","duplex-ii-classis","marianum"]
 	},
 	"dominica-nativitatis":{
-		"day":"Dominica infra Octavam Nativitatis",
 		"tags":["nativitas","dominica","semiduplex","dominica-infra-octavam"]
 	},
 	"joachim":{
-		"day":"S. Joachim Conf.",
 		"tags":["joachim","duplex-ii-classis","confessor"]
 	},
 	"nominis-bmv":{
-		"day":"Ss. Nominis B.M.V.",
 		"tags":["nomen-bmv","duplex-majus","marianum"]
 	}
 }
