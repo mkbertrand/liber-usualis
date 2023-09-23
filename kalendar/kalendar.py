@@ -420,7 +420,7 @@ def kalendar(year: int) -> Kalendar:
             else:
                 transtarget = kal.match_unique(instruction['movement']).date
                 target.add('translatum')
-                kal[transtarget].add(target)
+                kal[transtarget].append(target)
                 kal[day].remove(target)
                 return [day, transtarget]
         elif instruction['response'] == 'temporalis-faciendam':
@@ -441,6 +441,8 @@ def kalendar(year: int) -> Kalendar:
                         if type(coinc['response']) == list:
                             for k in coinc['response']:
                                 if k['indices'].issubset(j):
+                                    if k['response'] == 'errora':
+                                        raise RuntimeError('Unexpected coincidence:\n' + str(kal[day]))
                                     for modifiedday in perform_action(k, day, i if k['target'] == 'a' else j):
                                         resolve(modifiedday)
                                     return
