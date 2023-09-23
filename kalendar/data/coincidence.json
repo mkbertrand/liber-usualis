@@ -267,7 +267,8 @@
 	{
 		"indices":["septem-dolores","september"],
 		"response":[
-			{"indices":["exaltatio-crucis"],"response":"translandum","target":"a","movement":["dominica","hebdomada-iv-septembris"]}
+			{"indices":["exaltatio-crucis"],"response":"translandum","target":"a","movement":["dominica","hebdomada-iv-septembris"]},
+			{"indices":["nomen-bmv"],"response":"translandum","target":"a","movement":["dominica","hebdomada-iv-septembris"]}
 		]
 	},
 	{
@@ -294,15 +295,20 @@
 		]
 	},
 	{
-		"indices":["pretiosissimus-sanguis"],
+		"indices":["inventio-crucis"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"a","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"a","movement":"+n"}
+			{"indices":["philippus-jacobus"],"response":"translandum","target":"a","movement":"+n"},
+			{"indices":["marcus"],"response":"translandum","target":"a","movement":"+n"}
 		]
 	},
 	{
 		"indices":["duplex-ii-classis"],
 		"response":[
+			{"indices":["patrocinius-joseph"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["exaltatio-crucis"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["inventio-crucis"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["pretiosissimus-sanguis"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["rosarium-bmv"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex-ii-classis"],"response":"errora"},
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
@@ -316,8 +322,15 @@
 		]
 	},
 	{
+		"indices":["septem-dolores","poenitentialis"],
+		"response":[
+			{"indices":["benedictus"],"response":"translandum","target":"b","movement":"+n"}
+		]
+	},
+	{
 		"indices":["duplex-majus"],
 		"response":[
+			{"indices":["cor-jesus"],"response":"translandum","target":"a","movement":"+n"},
 			{"indices":["duplex-majus"],"response":"errora"},
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex"],"response":"commemorandum","target":"b"},
@@ -331,7 +344,7 @@
 	{
 		"indices":["corpus-christi","dies-octava"],
 		"response":[
-			{"indices":["nativitas-joannis-baptistae dies-octava"],"response":"commemorandum","target":"b"}
+			{"indices":["nativitas-joannis-baptistae","dies-octava"],"response":"commemorandum","target":"b"}
 		]
 	},
 	{
@@ -343,9 +356,28 @@
 		]
 	},
 	{
+		"indices":["isidorus"],
+		"response":[
+			{"indices":["cyrillus-hierosolymitani"],"response":"translandum","target":"a","movement":"+n"},
+			{"indices":["leo-i"],"response":"translandum","target":"b","movement":"+n"}
+		]
+	},
+	{
 		"indices":["leo-i"],
 		"response":[
-			{"indices":["isidorus"],"response":"translandum","target":"a","movement":"+n"}
+			{"indices":["anselmus"],"response":"translandum","target":"b","movement":"+n"}
+		]
+	},
+	{
+		"indices":["anselmus"],
+		"response":[
+			{"indices":["athanasius"],"response":"translandum","target":"b","movement":"+n"}
+		]
+	},
+	{
+		"indices":["athanasius"],
+		"response":[
+			{"indices":["gregorius-nazianzenus"],"response":"translandum","target":"b","movement":"+n"}
 		]
 	},
 	{
@@ -402,6 +434,16 @@
 		"response":[
 			{"indices":["dominica"],"response":"commemorandum","target":"a"},
 			{"indices":["infra-octavam"],"response":"errora"},
+			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
+			{"indices":["simplex"],"response":"commemorandum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
+			{"indices":["feria"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["post-ascensionem"],
+		"response":[
 			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
