@@ -399,40 +399,40 @@ def kalendar(year: int) -> Kalendar:
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
     def perform_action(instruction, day, target):
-        if instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
-            target.add('commemoratum')
-            target.add('temporale')
-            return [day]
-        elif instruction['response'] == 'omittendum':
-            kal[day].remove(target)
-            return [day]
-        elif instruction['response'] == 'commemorandum':
-            target.add('commemoratum')
-            return [day]
-        elif instruction['response'] == 'translandum':
-            if instruction['movement'] == '+n' or instruction['movement'] == '+1':
+        match instruction:
+            case {'response': response} if response == {'commemorandum', 'temporale-faciendum'}:
+                target.add('commemoratum')
+                target.add('temporale')
+                return [day]
+            case {'response': 'omittendum'}:
+                kal[day].remove(target)
+                return [day]
+            case {'response': 'commemorandum'}:
+                target.add('commemoratum')
+                return [day]
+            case {'response': 'translandum', 'movement': '+n'} | {'response': 'translandum', 'movement': '+1'}:
                 target.add('translatum')
                 kal[day + timedelta(days=1)].append(target)
                 kal[day].remove(target)
                 return [day, day + timedelta(days=1)]
-            elif instruction['movement'] == '-n' or instruction['movement'] == '-1':
+            case {'response': 'translandum', 'movement': '-n'} | {'response': 'translandum', 'movement': '-1'}:
                 target.add('translatum')
                 kal[day - timedelta(days=1)].append(target)
                 kal[day].remove(target)
                 return [day, day - timedelta(days=1)]
-            else:
-                transtarget = kal.match_unique(instruction['movement']).date
+            case {'response': 'translandum', 'movement': movement}:
+                transtarget = kal.match_unique(movement).date
                 target.add('translatum')
                 kal[transtarget].append(target)
                 kal[day].remove(target)
                 return [day, transtarget]
-        elif instruction['response'] == 'temporale-faciendum':
-            target.add('temporale')
-            return [day]
-        elif instruction['response'] == 'errora':
-            raise RuntimeError(f'Unexpected coincidence on day {day}')
-        else:
-            raise RuntimeError(f'Unexpected response: {instruction["response"]}')
+            case {'response': 'temporale-faciendum'}:
+                target.add('temporale')
+                return [day]
+            case {'response': 'errora'}:
+                raise RuntimeError(f'Unexpected coincidence on day {day}')
+            case {'response': unknown}:
+                raise RuntimeError(f'Unknown response: {unknown!s}')
 
     def resolvecoincidence(day, coincidence):
         for i in kal[day]:
