@@ -48,6 +48,14 @@ class TestKalendar:
 
             date = date + datetime.timedelta(days=1)
 
+    def test_singleprimaryday(self, kal: kalendar.Kalendar) -> None:
+        """Make sure each day of the year has only one entry which is not either a commemoration, part of the temporale, or a fixed reference"""
+        date = datetime.date(kal.year, 1, 1)
+        while date.year == kal.year:
+            assert len(list(filter(lambda entry: entry.isdisjoint({"fixum","temporale","commemoratum"}), kal[date]))) == 1
+            
+            date = date + datetime.timedelta(days=1)
+
     def test_transfers(self, kal: kalendar.Kalendar) -> None:
         """Make sure translations are sane"""
         assert not kal.match_any({"translatus", "translatus-originalis"})

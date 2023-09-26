@@ -38,7 +38,7 @@ nativitycycle = load_data('nativity.json')
 movables = load_data('movables.json')
 months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
-coincidence = load_data('coincidence.json')
+coincidencetable = load_data('coincidence.json')
 
 threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 ranks = {"feria","commemoratio","simplex"} | threenocturnes
@@ -130,7 +130,7 @@ class Kalendar:
     # The given entry must occur on match_date.
     def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
         match_date, entry = match
-        newfeast = entry | {"translatus"}
+        newfeast = entry | {"translatum"}
 
         # Compute date
         if target is None:
@@ -194,7 +194,7 @@ def kalendar(year: int) -> Kalendar:
 
     i = date(year, 1, 1)
     while not i == date(year + 1, 1, 1):
-        kal.add_entry(i, {'temporalis', menses[i.month - 1], str(i.day)})
+        kal.add_entry(i, {'fixum', menses[i.month - 1], str(i.day)})
         i = i + timedelta(days=1)
     for i in range(0, 13):
         kalends = None
@@ -370,7 +370,7 @@ def kalendar(year: int) -> Kalendar:
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if xxiiipentecostentry:
         xxiiipentecostentry = set(xxiiipentecostentry)
-        xxiiipentecostentry.add("translatus")
+        xxiiipentecostentry.add("translatum")
         i = 1
         while i < 7:
             if kal.tagsindate(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
@@ -379,12 +379,12 @@ def kalendar(year: int) -> Kalendar:
             else:
                 i += 1
         if i == 7:
-            xxiiipentecostentry.add("commemoratio")
+            xxiiipentecostentry.add("simplex")
             xxiiipentecost.discard("semiduplex")
             kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if omittedepiphanyentry:
         omittedepiphanyentry = set(omittedepiphanyentry)
-        omittedepiphanyentry.add("translatus")
+        omittedepiphanyentry.add("translatum")
         septuagesima = easter - timedelta(days=63)
         i = 1
         while i < 7:
@@ -394,13 +394,17 @@ def kalendar(year: int) -> Kalendar:
             else:
                 i += 1
         if i == 7:
-            omittedepiphanyentry.add("commemoratio")
+            omittedepiphanyentry.add("simplex")
             omittedepiphanyentry.discard("semiduplex")
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
     # Transfers
     def perform_action(instruction, day, target):
-        if instruction['response'] == 'omittendum':
+        if instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
+            target.add('commemoratum')
+            target.add('temporale')
+            return [day]
+        elif instruction['response'] == 'omittendum':
             kal[day].remove(target)
             return [day]
         elif instruction['response'] == 'commemorandum':
@@ -416,41 +420,41 @@ def kalendar(year: int) -> Kalendar:
                 target.add('translatum')
                 kal[day - timedelta(days=1)].append(target)
                 kal[day].remove(target)
-                return [day, day + timedelta(days=1)]
+                return [day, day - timedelta(days=1)]
             else:
                 transtarget = kal.match_unique(instruction['movement']).date
                 target.add('translatum')
                 kal[transtarget].append(target)
                 kal[day].remove(target)
                 return [day, transtarget]
-        elif instruction['response'] == 'temporalis-faciendam':
-            target.add('temporalis')
+        elif instruction['response'] == 'temporale-faciendum':
+            target.add('temporale')
             return [day]
         elif instruction['response'] == 'errora':
             raise RuntimeError(f'Unexpected coincidence on day {day}')
         else:
             raise RuntimeError(f'Unexpected response: {instruction["response"]}')
     
-    def resolve0(day, coinc):
+    def resolvecoincidence(day, coincidence):
         for i in kal[day]:
-            if coinc['indices'].issubset(i) and not 'commemoratum' in i and not 'temporalis' in i:
-                otheroccasions = copy.deepcopy(kal[day])
-                otheroccasions.remove(i)
-                for j in kal[day]:
-                    if not 'commemoratum' in j and not j == i and not 'temporalis' in j:
-                        if type(coinc['response']) == list:
-                            for k in coinc['response']:
+            if coincidence['indices'].issubset(i) and i.isdisjoint({'commemoratum','temporale','fixum'}):
+                if not type(coincidence['response']) == list:
+                    perform_action(coincidence, day, i)
+                else:
+                    otheroccasions = copy.deepcopy(kal[day])
+                    otheroccasions.remove(i)
+                    for j in kal[day]:
+                        if not j == i and j.isdisjoint({'commemoratum','temporale','fixum'}):
+                            for k in coincidence['response']:
                                 if k['indices'].issubset(j):
                                     if k['response'] == 'errora':
                                         raise RuntimeError('Unexpected coincidence:\n' + str(kal[day]))
                                     for modifiedday in perform_action(k, day, i if k['target'] == 'a' else j):
                                         resolve(modifiedday)
                                     return
-                        else:
-                            perform_action(coinc, day, i)
     def resolve(day):
-        for i in coincidence:
-            resolve0(day, i)    
+        for coincidence in coincidencetable:
+            resolvecoincidence(day, coincidence)    
     
     for i in kal.keys():
         resolve(i)

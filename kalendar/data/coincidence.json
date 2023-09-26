@@ -1,19 +1,19 @@
 [
 	{
 		"indices":["alma-redemptoris"],
-		"response":"temporalis-faciendam","target":"a"
+		"response":"temporale-faciendum","target":"a"
 	},
 	{
 		"indices":["ave-regina-coelorum"],
-		"response":"temporalis-faciendam","target":"a"
+		"response":"temporale-faciendum","target":"a"
 	},
 	{
 		"indices":["regina-coeli"],
-		"response":"temporalis-faciendam","target":"a"
+		"response":"temporale-faciendum","target":"a"
 	},
 	{
 		"indices":["salve-regina"],
-		"response":"temporalis-faciendam","target":"a"
+		"response":"temporale-faciendum","target":"a"
 	},
 	{
 		"indices":["pascha","duplex-i-classis"],
@@ -54,7 +54,7 @@
 	{
 		"indices":["quattuor-temporum-pentecostes"],
 		"response":[
-			{"indices":["pentecostes"],"response":"temporalis-faciendam","target":"b"}
+			{"indices":["pentecostes"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -80,6 +80,9 @@
 			{"indices":["duplex-majus"],"response":"omittendum","target":"a"},
 			{"indices":["duplex"],"response":"omittendum","target":"a"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"a"},
+			{"indices":["feria-major"],"response":"omittendum","target":"a"},
+			{"indices":["vigilia"],"response":"omittendum","target":"a"},
+			{"indices":["dominica"],"response":"omittendum","target":"a"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"}
 		]
@@ -160,22 +163,23 @@
 	{
 		"indices":["nativitas","vigilia"],
 		"response":[
-			{"indices":["dominica"],"response":"temporalis-faciendam","target":"b"},
-			{"indices":["feria"],"response":"temporalis-faciendam","target":"b"}
+			{"indices":["dominica"],"response":"temporale-faciendum","target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
 		"indices":["epiphania","vigilia"],
 		"response":[
-			{"indices":["dominica"],"response":"temporalis-faciendam","target":"b"},
-			{"indices":["feria"],"response":"temporalis-faciendam","target":"b"}
+			{"indices":["dominica"],"response":"temporale-faciendum","target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
 		"indices":["vigilia"],
 		"response":[
 			{"indices":["dominica"],"response":"translandum","target":"a","movement":"-1"},
-			{"indices":["feria"],"response":"temporalis-faciendam","target":"b"}
+			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -213,7 +217,7 @@
 	{
 		"indices":["dominica-ii-classis"],
 		"response":[
-			{"indices":["sollemnitas-localis"],"response":"commemorandum","target":"a"},
+			{"indices":["sollemnitas-localis"],"response":["commemorandum","temporale-faciendum"],"target":"a"},
 			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
@@ -257,11 +261,11 @@
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex"],"response":"omittendum","target":"b"},
-			{"indices":["dominica"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
 			{"indices":["commemoratio"],"response":"omittendum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -286,12 +290,12 @@
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex"],"response":"omittendum","target":"b"},
-			{"indices":["dominica"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
 			{"indices":["commemoratio"],"response":"omittendum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -313,12 +317,13 @@
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
 			{"indices":["infra-octavam"],"response":"omittendum","target":"b"},
 			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -334,11 +339,12 @@
 			{"indices":["duplex-majus"],"response":"errora"},
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
 			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -385,22 +391,24 @@
 		"response":[
 			{"indices":["doctor"],"response":"errora"},
 			{"indices":["duplex"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
 			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
 		"indices":["duplex"],
 		"response":[
 			{"indices":["duplex"],"response":"errora"},
+			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
 			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -432,13 +440,12 @@
 	{
 		"indices":["infra-octavam"],
 		"response":[
-			{"indices":["dominica"],"response":"commemorandum","target":"a"},
 			{"indices":["infra-octavam"],"response":"errora"},
 			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -447,8 +454,8 @@
 			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -456,8 +463,9 @@
 		"response":[
 			{"indices":["semiduplex"],"response":"errora"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
@@ -466,13 +474,20 @@
 			{"indices":["bmv-sabbatum"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	},
 	{
 		"indices":["simplex"],
 		"response":[
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+		]
+	},
+	{
+		"indices":["rogatio"],
+		"response":[
+			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
 	}
 ]
