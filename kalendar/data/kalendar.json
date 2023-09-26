@@ -84,7 +84,7 @@
 		["dorothea", "commemoratio", "virgo", "martyr"]
 	],
 	"02-07": [
-		["romualdus", "abbas"]
+		["romualdus", "abbas", "duplex"]
 	],
 	"02-08": [
 		["joannes-matha", "duplex", "confessor"]
@@ -338,7 +338,7 @@
 		["leo-ii", "semiduplex", "episcopus-confessor", "papa"]
 	],
 	"06-29": [
-		["petrus-paulus", "duplex-i-classis,", "apostoli", "habens-octavam", "habens-vigiliam", "martyres"]
+		["petrus-paulus", "duplex-i-classis", "apostoli", "habens-octavam", "habens-vigiliam", "martyres"]
 	],
 	"06-30": [
 		["commemoratio-pauli", "duplex-majus", "martyr", "apostolus"]
@@ -413,7 +413,7 @@
 		["pantaleon", "simplex", "martyr"]
 	],
 	"07-28": [
-		["nazarius-celsus,victor-i", "papae", "martyres"]
+		["nazarius-celsus-victor-i-innocentius-i", "semiduplex", "papae", "martyres"]
 	],
 	"07-29": [
 		["martha", "semiduplex", "virgo"],
@@ -575,7 +575,7 @@
 		["bmv-mercede", "duplex-majus", "marianum"]
 	],
 	"09-26": [
-		["cyprianus-justina", "virgo", "martyres"]
+		["cyprianus-justina", "simplex", "virgo", "martyres"]
 	],
 	"09-27": [
 		["cosmas-damianus", "semiduplex", "martyres"]
@@ -640,7 +640,7 @@
 	],
 	"10-21": [
 		["hilarion", "simplex", "abbas"],
-		["ursula-et-soc", "virgines", "martyres"]
+		["ursula-et-soc", "commemoratio", "virgines", "martyres"]
 	],
 	"10-25": [
 		["chrysanthus-et-daria", "simplex", "martyres"]
