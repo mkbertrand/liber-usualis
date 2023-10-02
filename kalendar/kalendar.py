@@ -40,8 +40,8 @@ months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 coincidencetable = load_data('coincidence.json')
 
-threenocturnes = {"semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
-ranks = {"feria","commemoratio","simplex"} | threenocturnes
+threenocturnes = {'semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis'}
+ranks = {"feria","commemoratio",'simplex'} | threenocturnes
 octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
 lowernumerals = ['i','ii','iii','iv','v']
 numerals = ['II','III','IV','V','VI','VII']
@@ -128,7 +128,7 @@ class Kalendar:
     def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
         assert not (target is None and obstacles is None), "Useless call to transfer!"
         match_date, entry = match
-        newfeast = entry | {"translatum"}
+        newfeast = entry | {'translatum'}
 
         # Compute date
         if target is None:
@@ -274,9 +274,9 @@ def kalendar(year: int) -> Kalendar:
     currday = 2
     for i in range(0, 6):
         if not date(year, 1, 7 + i) == epiphanysunday:
-            kal.add_entry(date(year, 1, 7 + i), {"epiphania","semiduplex","infra-octavam","dies-" + numerals[currday - 2].lower()})
+            kal.add_entry(date(year, 1, 7 + i), {"epiphania",'semiduplex',"infra-octavam","dies-" + numerals[currday - 2].lower()})
             currday += 1
-    kal.add_entry(date(year, 1, 13), {"epiphania","dies-octava","duplex"})
+    kal.add_entry(date(year, 1, 13), {"epiphania","dies-octava",'duplex'})
 
     """# Autumnal Weeks
     for i in range(8, 11):
@@ -342,14 +342,14 @@ def kalendar(year: int) -> Kalendar:
                     date0 = ent_date + timedelta(days=k)
                     if "quadragesima" in kal.tagsindate(date0):
                         break
-                    entrystripped = entry_base | {"semiduplex","infra-octavam","dies-" + numerals[k - 1].lower()}
+                    entrystripped = entry_base | {'semiduplex',"infra-octavam","dies-" + numerals[k - 1].lower()}
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_any(entrystripped) is None:
                         buffer.add_entry(date0, entrystripped)
                 date0 = ent_date + timedelta(weeks=1)
                 if "quadragesima" in kal.tagsindate(date0):
                     continue
-                entrystripped = entry_base | {"duplex", "dies-octava"}
+                entrystripped = entry_base | {'duplex', "dies-octava"}
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_any(entrystripped) is None:
                     buffer.add_entry(date0, entrystripped)
@@ -363,7 +363,7 @@ def kalendar(year: int) -> Kalendar:
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if xxiiipentecostentry:
         xxiiipentecostentry = set(xxiiipentecostentry)
-        xxiiipentecostentry.add("translatum")
+        xxiiipentecostentry.add('translatum')
         i = 1
         while i < 7:
             if kal.tagsindate(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
@@ -372,12 +372,12 @@ def kalendar(year: int) -> Kalendar:
             else:
                 i += 1
         if i == 7:
-            xxiiipentecostentry.add("simplex")
-            xxiiipentecostentry.discard("semiduplex")
+            xxiiipentecostentry.add('simplex')
+            xxiiipentecostentry.discard('semiduplex')
             kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
     if omittedepiphanyentry:
         omittedepiphanyentry = set(omittedepiphanyentry)
-        omittedepiphanyentry.add("translatum")
+        omittedepiphanyentry.add('translatum')
         septuagesima = easter - timedelta(weeks=9)
         i = 1
         while i < 7:
@@ -387,11 +387,10 @@ def kalendar(year: int) -> Kalendar:
             else:
                 i += 1
         if i == 7:
-            omittedepiphanyentry.add("simplex")
-            omittedepiphanyentry.discard("semiduplex")
+            omittedepiphanyentry.add('simplex')
+            omittedepiphanyentry.discard('semiduplex')
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
-    # Transfers
     def perform_action(instruction, day, target):
         if instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
             target.add('commemoratum')
