@@ -329,7 +329,8 @@
 	{
 		"indices":["septem-dolores","poenitentialis"],
 		"response":[
-			{"indices":["benedictus"],"response":"translandum","target":"b","movement":"+n"}
+			{"indices":["duplex-majus"],"response":"translandum","target":"a","movement":"+n"},
+			{"indices":["dominica-in-palmis"],"response":"omittendum","target":"a"}
 		]
 	},
 	{
