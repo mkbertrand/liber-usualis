@@ -433,15 +433,16 @@ def kalendar(year: int) -> Kalendar:
                 if not type(coincidence['response']) == list:
                     perform_action(coincidence, day, i)
                 else:
-                    for j in kal[day]:
-                        if not j == i and j.isdisjoint({'commemoratum','temporale','fixum'}):
-                            for k in coincidence['response']:
-                                if k['indices'].issubset(j):
-                                    if k['response'] == 'errora':
-                                        raise RuntimeError('Unexpected coincidence:\n' + str(kal[day]))
-                                    for modifiedday in perform_action(k, day, i if k['target'] == 'a' else j):
+                    for j in coincidence['response']:
+                        for k in kal[day]:
+                            if not k == i and k.isdisjoint({'commemoratum','temporale','fixum'}) and j['indices'].issubset(k):
+                                target = i
+                                if 'target' in j and j['target'] == 'b':
+                                    target = k
+                                for modifiedday in perform_action(j, day, target):
                                         resolve(modifiedday)
-                                    return
+                                return
+                                
     def resolve(day):
         for coincidence in coincidencetable:
             resolvecoincidence(day, coincidence)
