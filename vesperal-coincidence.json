@@ -1,122 +1,257 @@
 [
 	{
-		"indices":["duplex-i-classis"],
+		"indices":["infra-octavam","dies-vii","ii-vesperae"],
 		"response":[
-			{"indices":["dominica-i-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"errora"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-majus"],"response":"omittendum","target":"b"},
-			{"indices":["duplex"],"response":"omittendum","target":"b"},
-			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["dies-octava","i-vesperae"],"response":"omittendum","target":"a"}
 		]
 	},
 	{
-		"indices":["sollemnitas-localis"],
+		"indices":["septem-dolores","primarium"],
 		"response":[
-			{"indices":["dominica-i-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"errora"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-majus"],"response":"omittendum","target":"b"},
-			{"indices":["duplex"],"response":"omittendum","target":"b"},
-			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["benedictus","primarium"],"response":"commemorandum","target":"a"}
 		]
 	},
 	{
-		"indices":["duplex-ii-classis"],
+		"indices":["patrocinius-joseph","primarium"],
 		"response":[
-			{"indices":["dominica-i-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["sollemnitas-localis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"errora"},
-			{"indices":["duplex-majus"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["duplex-ii-classis","primarium"],"response":"commemorandum","target":"a"}
 		]
 	},
 	{
-		"indices":["duplex-majus"],
+		"indices":["apparitio-michaelis","primarium"],
 		"response":[
-			{"indices":["dominica-i-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-majus"],"response":"errora"},
-			{"indices":["duplex"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["joannes-portam-latinam","primarium"],"response":"commemorandum","target":"b"}
 		]
 	},
 	{
-		"indices":["duplex"],
+		"indices":["marcus","primarium"],
 		"response":[
-			{"indices":["dominica-i-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica-ii-classis"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex"],"response":"psalmi","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-majus"],"response":"commemorandum","target":"a"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["philippus-jacobus","primarium"],"response":"commemorandum","target":"b"}
 		]
 	},
 	{
-		"indices":["dominica"],
+		"indices":["inventio-crucis","primarium"],
 		"response":[
-			{"indices":["semiduplex"],"response":"psalmi","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-majus"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex"],"response":"commemorandum","target":"a"}
+			{"indices":["philippus-jacobus","primarium"],"response":"commemorandum","target":"b"},
+			{"indices":["marcus","primarium"],"response":"commemorandum","target":"b"}
 		]
 	},
 	{
-		"indices":["semiduplex"],
+		"indices":["duplex-i-classis","nativitas-joannis-baptistae","i-vesperae","primarium"],
 		"response":[
-			{"indices":["semiduplex"],"response":"psalmi","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-majus"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex"],"response":"commemorandum","target":"a"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"b"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"omittendum","target":"b"}
+			{"indices":["duplex-i-classis","corpus-christi","ii-vesperae","primarium"],"response":"commemorandum","target":"a"}
 		]
 	},
 	{
-		"indices":["bmv-sabbatum"],
+		"indices":["duplex-i-classis","i-vesperae","primarium"],
 		"response":[
-			{"indices":["infra-octavam"],"response":"omittendum","target":"a"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"a"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"a"}
+			{"indices":["duplex-i-classis","ii-vesperae","primarium"],"response":"errora"}
 		]
 	},
 	{
-		"indices":["simplex"],
+		"indices":["duplex-majus","cor-jesus","primarium"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"omittendum","target":"a"},
-			{"indices":["sollemnitas-localis"],"response":"omittendum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-majus"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex"],"response":"commemorandum","target":"a"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
-			{"indices":["feria-major"],"response":"commemorandum","target":"a"},
-			{"indices":["vigilia"],"response":"commemorandum","target":"a"},
-			{"indices":["feria"],"response":"psalmi","target":"b"}
+			{"indices":["duplex-majus","primarium"],"response":"commemorandum","target":"b"}
+		]
+	},
+	{
+		"indices":["visitatio","primarium"],
+		"response":[
+			{"indices":["pretiosissimus-sanguis","primarium"],"response":"commemorandum","target":"b"}
+		]
+	},
+	{
+		"indices":["i-vesperae","anna","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","jacobus","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["i-vesperae","maria-ad-nives","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","dominicus","primarium"],"response":"commemorandum","target":"b"}
+		]
+	},
+	{
+		"indices":["i-vesperae","transfiguratio","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","maria-ad-nives","primarium"],"response":"commemorandum","target":"b"}
+		]
+	},
+	{
+		"indices":["i-vesperae","anna","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","jacobus","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["i-vesperae","septem-dolores","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","exaltatio-crucis","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["nomen-bmv","primarium"],
+		"response":[
+			{"indices":["exaltatio-crucis","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["rosarium-bmv","primarium"],
+		"response":[
+			{"indices":["dedicatio-michaelis","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["franciscus","primarium"],
+		"response":[
+			{"indices":["angeli-custodes","primarium"],"response":"commemorandum","target":"b"}
+		]
+	},
+	{
+		"indices":["i-vesperae","joannes-apostolus","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","stephanus","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["i-vesperae","innocentes","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","joannes-apostolus","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["duplex-i-classis","i-vesperae"],
+		"response":[
+			{"indices":["dominica-i-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["duplex","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["sollemnitas-localis","i-vesperae","primarium"],
+		"response":[
+			{"indices":["duplex-i-classis","ii-vesperae","primarium"],"response":"errora"}
+		]
+	},
+	{
+		"indices":["sollemnitas-localis","i-vesperae"],
+		"response":[
+			{"indices":["dominica-i-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["duplex","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex-ii-classis","i-vesperae","primarium"],
+		"response":[
+			{"indices":["duplex-ii-classis","ii-vesperae","primarium"],"response":"errora"}
+		]
+	},
+	{
+		"indices":["duplex-ii-classis","i-vesperae"],
+		"response":[
+			{"indices":["dominica-i-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["sollemnitas-localis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex-majus","i-vesperae","primarium"],
+		"response":[
+			{"indices":["duplex-majus","ii-vesperae","primarium"],"response":"errora"}
+		]
+	},
+	{
+		"indices":["duplex-majus","i-vesperae"],
+		"response":[
+			{"indices":["dominica-i-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex","i-vesperae"],
+		"response":[
+			{"indices":["dominica-i-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["dominica-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex","ii-vesperae"],"response":"psalmi","target":"b"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["dominica","i-vesperae"],
+		"response":[
+			{"indices":["semiduplex","ii-vesperae"],"response":"psalmi","target":"b"},
+			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex","ii-vesperae"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["semiduplex","i-vesperae"],
+		"response":[
+			{"indices":["semiduplex","ii-vesperae"],"response":"psalmi","target":"b"},
+			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["bmv-sabbatum","i-vesperae"],
+		"response":[
+			{"indices":["infra-octavam","ii-vesperae"],"response":"omittendum","target":"a"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["simplex","i-vesperae"],
+		"response":[
+			{"indices":["duplex-i-classis","ii-vesperae"],"response":"omittendum","target":"a"},
+			{"indices":["sollemnitas-localis","ii-vesperae"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria","ii-vesperae"],"response":"psalmi","target":"b"}
 		]
 	}
 ]
