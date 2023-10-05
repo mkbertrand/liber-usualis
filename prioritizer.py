@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 from kalendar import kalendar
-import os.path
 import json
 import pathlib
 from datetime import date, datetime, timedelta
-import warnings
+import functools
 import re
 
 data_root = pathlib.Path(__file__).parent
@@ -28,42 +27,9 @@ def load_data(p: str):
 
     return recurse(data)
 
-def hasfile(year):
-    return os.path.isfile("kalendars/1888-" + str(year) + ".json")
-
-def tofile(kal):
-    file = open("kalendars/1888-" + str(list(kal.kal.keys())[0].year) + ".json", "w")
-    file.write(json.dumps({str(k): [list(ent) for ent in v] for k, v in kal.items()}))
-    file.close()
-
-year_buffer_max_len = 16
-year_buffer = {}
-
-for i in range(datetime.now().year + year_buffer_max_len, datetime.now().year - 3, -1):
-    year_buffer[i] = kalendar.kalendar(i)
-print(year_buffer.keys())
+@functools.lru_cache(maxsize=16)
 def getyear(year):
-    if year in year_buffer:
-        if not list(year_buffer.keys())[year_buffer_max_len - 1] == year:
-            kal = year_buffer.pop(year)
-            year_buffer[year] = kal
-            return kal
-        else:
-            return year_buffer[year]
-    elif hasfile(year):
-        kal = load_data("kalendars/1888-" + str(year) + ".json")
-        year_buffer.pop(list(year_buffer.keys())[0])
-        year_buffer[year] = kal
-        print(year_buffer.keys())
-        return kal
-    else:
-        warnings.warn("Year " + str(year) + " not found in database.  Generating file...")
-        kal = kalendar.kalendar(year)
-        tofile(kal)
-        year_buffer.pop(list(year_buffer.keys())[0])
-        year_buffer[year] = kal
-        print(year_buffer.keys())
-        return kal
+    return kalendar.kalendar(year)
 
 def getdate(day):
     year = getyear(day.year)
