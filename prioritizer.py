@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
 from kalendar import kalendar
+import breviarum
+import os.path
 import json
 import pathlib
 from datetime import date, datetime, timedelta
-import functools
 import re
 
 data_root = pathlib.Path(__file__).parent
@@ -27,14 +27,6 @@ def load_data(p: str):
 
     return recurse(data)
 
-@functools.lru_cache(maxsize=16)
-def getyear(year):
-    return kalendar.kalendar(year)
-
-def getdate(day):
-    year = getyear(day.year)
-    return year[day]
-
 def taggedentry(day, tags):
     for i in day:
         if i >= tags:
@@ -45,8 +37,8 @@ hasivespers = {"simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis
 hasiivespers = {"feria","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 
 def vesperscoincider(day):
-    currday = getdate(day)
-    nextday = getdate(day + timedelta(days=1))
+    currday = breviarum.getdate(day)
+    nextday = breviarum.getdate(day + timedelta(days=1))
     ivespers = [i.union({'i-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasivespers) and not 'infra-octavam' in occ, nextday)]
     iivespers = [i.union({'ii-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasiivespers), currday)]
     ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint({'commemoratum','temporale','fixum'}), ivespers))
@@ -103,18 +95,25 @@ def vesperscoincider(day):
             pass
         return vesperal
 
-def prioritize(day):
-    diurnal = getdate(day)
-    vesperal = list(filter(lambda occ: occ.isdisjoint(noiivespers), diurnal))
-    for i in getdate(day + timedelta(days=1)):
-        if not i.isdisjoint(hasivespers) and not "infra-octavam" in i:
-            vesperal.append(i | {"i-vesperae"})
-    tagged = taggedentry(diurnal, {"pascha", "duplex-i-classis"})
-    if tagged:
-        return tagged.add("ordinarium")
-    print(diurnal)
-    prioritizevespers(vesperal)
+if __name__ == "__main__":
+    import argparse
 
-for i in range(1500, 2200):
-    for j in range(0,366):
-        vesperscoincider(date(i, 1, 1) + timedelta(days=j))
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description="Daily Vespers specification generator",
+    )
+
+    parser.add_argument(
+        "-d",
+        "--date",
+        type=str,
+        default=str(date.today()),
+        help="Date to generate",
+    )
+
+    args = parser.parse_args()
+
+    # Generate kalendar
+    ret = vesperscoincider(datetime.strptime(args.date, "%Y-%m-%d").date())
+
+    print(ret)
