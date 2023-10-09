@@ -2,42 +2,157 @@
 	{
 		"tags":["psalmus-iv"],
 		"datum":[
-			{
-				"tags":["versus-ii"],
-				"datum":"Cum invocárem exaudívit me Deus justítiæ meæ: * in tribulatióne dilatásti mihi./Miserére mei, * et exáudi oratiónem meam."
-			},
-			{
-				"tags":["versus-iii"],
-				"datum":"Fílii hóminum, úsquequo gravi corde? * ut quid dilígitis vanitátem, et quǽritis mendácium?"
-			},
-			{
-				"tags":["versus-iv"],
-				"datum":"Et scitóte quóniam mirificávit Dóminus sanctum suum: * Dóminus exáudiet me cum clamávero ad eum."
-			},
-			{
-				"tags":["versus-v"],
-				"datum":"Irascímini, et nolíte peccáre: * quæ dícitis in córdibus vestris, in cubílibus vestris compungímini."
-			},
-			{
-				"tags":["versus-vi"],
-				"datum":"Sacrificáte sacrifícium justítiæ, et speráte in Dómino. * Multi dicunt: Quis osténdit nobis bona?"
-			},
-			{
-				"tags":["versus-vii"],
-				"datum":"Signátum est super nos lumen vultus tui, Dómine: * dedísti lætítiam in corde meo."
-			},
-			{
-				"tags":["versus-viii"],
-				"datum":"A fructu fruménti, vini, et ólei sui * multiplicáti sunt."
-			},
-			{
-				"tags":["versus-ix"],
-				"datum":"In pace in idípsum * dórmiam, et requiéscam;"
-			},
-			{
-				"tags":["versus-x"],
-				"datum":"Quóniam tu, Dómine, singuláriter in spe * constituísti me."
-			}
+			{"from-tags":["psalmus-iv","versus-ii"]},{"from-tags":["psalmus-iv","versus-iii"]},{"from-tags":["psalmus-iv","versus-iv"]},{"from-tags":["psalmus-iv","versus-v"]},{"from-tags":["psalmus-iv","versus-vi"]},{"from-tags":["psalmus-iv","versus-vii"]},{"from-tags":["psalmus-iv","versus-viii"]},{"from-tags":["psalmus-iv","versus-ix"]},{"from-tags":["psalmus-iv","versus-x"]}
 		]
+	},
+	{
+		"tags":["psalmus-iv","versus-ii"],
+		"datum":"Cum invocárem exaudívit me Deus justítiæ meæ: * in tribulatióne dilatásti mihi./Miserére mei, * et exáudi oratiónem meam."
+	},
+	{
+		"tags":["psalmus-iv","versus-iii"],
+		"datum":"Fílii hóminum, úsquequo gravi corde? * ut quid dilígitis vanitátem, et quǽritis mendácium?"
+	},
+	{
+		"tags":["psalmus-iv","versus-iv"],
+		"datum":"Et scitóte quóniam mirificávit Dóminus sanctum suum: * Dóminus exáudiet me cum clamávero ad eum."
+	},
+	{
+		"tags":["psalmus-iv","versus-v"],
+		"datum":"Irascímini, et nolíte peccáre: * quæ dícitis in córdibus vestris, in cubílibus vestris compungímini."
+	},
+	{
+		"tags":["psalmus-iv","versus-vi"],
+		"datum":"Sacrificáte sacrifícium justítiæ, et speráte in Dómino. * Multi dicunt: Quis osténdit nobis bona?"
+	},
+	{
+		"tags":["psalmus-iv","versus-vii"],
+		"datum":"Signátum est super nos lumen vultus tui, Dómine: * dedísti lætítiam in corde meo."
+	},
+	{
+		"tags":["psalmus-iv","versus-viii"],
+		"datum":"A fructu fruménti, vini, et ólei sui * multiplicáti sunt."
+	},
+	{
+		"tags":["psalmus-iv","versus-ix"],
+		"datum":"In pace in idípsum * dórmiam, et requiéscam;"
+	},
+	{
+		"tags":["psalmus-iv","versus-x"],
+		"datum":"Quóniam tu, Dómine, singuláriter in spe * constituísti me."
+	},
+	{
+		"tags":["psalmus-xxx"],
+		"datum":[
+			{"from-tags":["psalmus-xxx","versus-ii"]},{"from-tags":["psalmus-xxx","versus-iii"]},{"from-tags":["psalmus-xxx","versus-iv"]},{"from-tags":["psalmus-xxx","versus-v"]},{"from-tags":["psalmus-xxx","versus-vi"]},{"from-tags":["psalmus-xxx","versus-vii"]},{"from-tags":["psalmus-xxx","versus-viii"]},{"from-tags":["psalmus-xxx","versus-ix"]},{"from-tags":["psalmus-xxx","versus-x"]},{"from-tags":["psalmus-xxx","versus-xi"]},{"from-tags":["psalmus-xxx","versus-xii"]},{"from-tags":["psalmus-xxx","versus-xiii"]},{"from-tags":["psalmus-xxx","versus-xiv"]},{"from-tags":["psalmus-xxx","versus-xv"]},{"from-tags":["psalmus-xxx","versus-xvi"]},{"from-tags":["psalmus-xxx","versus-xvii"]},{"from-tags":["psalmus-xxx","versus-xviii"]},{"from-tags":["psalmus-xxx","versus-xix"]},{"from-tags":["psalmus-xxx","versus-xx"]},{"from-tags":["psalmus-xxx","versus-xxi"]},{"from-tags":["psalmus-xxx","versus-xxii"]},{"from-tags":["psalmus-xxx","versus-xxiii"]},{"from-tags":["psalmus-xxx","versus-xxiv"]},{"from-tags":["psalmus-xxx","versus-xxv"]}
+		]
+	},
+	{
+		"tags":["psalmus-xxx","versus-ii"],
+		"datum":"In te Dómine sperávi, non confúndar in ætérnum: * in justítia tua líbera me."
+	},
+	{
+		"tags":["psalmus-xxx","versus-iii"],
+		"datum":["Inclína ad me aurem tuam, * accélera ut éruas me.","Esto mihi in Deum protectórem: et in domum refúgii, * ut salvum me fácias."]
+	},
+	{
+		"tags":["psalmus-xxx","versus-iv"],
+		"datum":"Quóniam fortitúdo mea, et refúgium meum es tu: * et propter nomen tuum dedúces me, et enútries me."
+	},
+	{
+		"tags":["psalmus-xxx","versus-v"],
+		"datum":"Edúces me de láqueo hoc quem abscondérunt mihi: quóniam tu es protéctor meus."
+	},
+	{
+		"tags":["psalmus-xxx","versus-vi"],
+		"datum":["In manus tuas comméndo spíritum meum: * redemísti me Dómine Deus veritátis."]
+	},
+	{
+		"tags":["psalmus-xc"],
+		"datum":[
+			{"from-tags":["psalmus-xc","versus-i"]},{"from-tags":["psalmus-xc","versus-ii"]},{"from-tags":["psalmus-xc","versus-iii"]},{"from-tags":["psalmus-xc","versus-iv"]},{"from-tags":["psalmus-xc","versus-v"]},{"from-tags":["psalmus-xc","versus-vi"]},{"from-tags":["psalmus-xc","versus-vii"]},{"from-tags":["psalmus-xc","versus-viii"]},{"from-tags":["psalmus-xc","versus-ix"]},{"from-tags":["psalmus-xc","versus-x"]},{"from-tags":["psalmus-xc","versus-xi"]},{"from-tags":["psalmus-xc","versus-xii"]},{"from-tags":["psalmus-xc","versus-xiii"]},{"from-tags":["psalmus-xc","versus-xiv"]},{"from-tags":["psalmus-xc","versus-xv"]},{"from-tags":["psalmus-xc","versus-xvi"]}
+		]
+	},
+	{
+		"tags":["psalmus-xc","versus-i"],
+		"datum":"Qui hábitat in adjutório Altíssimi, * in protectióne Dei cœli commorábitur."
+	},
+	{
+		"tags":["psalmus-xc","versus-ii"],
+		"datum":"Dicet Dómino: Suscéptor meus es tu, et refúgium meum: * Deus meus sperábo in eum."
+	},
+	{
+		"tags":["psalmus-xc","versus-iii"],
+		"datum":"Quóniam ipse liberávit me de láqueo venantium, * et a verbo áspero."
+	},
+	{
+		"tags":["psalmus-xc","versus-iv"],
+		"datum":"Scápulis suis obumbrábit tibi: * et sub pennis ejus sperábis."
+	},
+	{
+		"tags":["psalmus-xc","versus-v"],
+		"datum":"Scuto circumdábit te véritas ejus: * non timébis a timóre noctúrno,"
+	},
+	{
+		"tags":["psalmus-xc","versus-vi"],
+		"datum":"A sagítta volánte in die, a negótio perambulánte in ténebris: * ab incúrso, et dæmónio meridiáno."
+	},
+	{
+		"tags":["psalmus-xc","versus-vii"],
+		"datum":"Cadent a látere tuo mille, et decem míllia a dextris tuis: * ad te autem non appropinquábit."
+	},
+	{
+		"tags":["psalmus-xc","versus-viii"],
+		"datum":"Verúmtamen óculis tuis considerábis: * et retributiónem peccatórum vidébis."
+	},
+	{
+		"tags":["psalmus-xc","versus-ix"],
+		"datum":"Quóniam tu es Dómine spes mea: * Altíssimum posuísti refúgium tuum."
+	},
+	{
+		"tags":["psalmus-xc","versus-x"],
+		"datum":"Non accédet ad te malum: * et flagéllum non appropinquábit tabernáculo tuo."
+	},
+	{
+		"tags":["psalmus-xc","versus-xi"],
+		"datum":"Quóniam Angelis suis mandávit de te: * ut custódiant te in ómnibus viis tuis."
+	},
+	{
+		"tags":["psalmus-xc","versus-xii"],
+		"datum":"In mánibus portábunt te: * ne forte offéndas ad lápidem pedem tuum."
+	},
+	{
+		"tags":["psalmus-xc","versus-xiii"],
+		"datum":"Super áspidem, et basilíscum ambulábis: * et conculcábis leónem et dracónem."
+	},
+	{
+		"tags":["psalmus-xc","versus-xiv"],
+		"datum":"Quóniam in me sperávit, liberábo eum: * prótegam eum, quóniam cognóvit nomen meum."
+	},
+	{
+		"tags":["psalmus-xc","versus-xv"],
+		"datum":"Clamábit ad me, et ego exaúdiam eum: * cum ipso sum in tribulatióne: erípiam eum et glorificábo eum."
+	},
+	{
+		"tags":["psalmus-xc","versus-xvi"],
+		"datum":"Longitúdine diérum replébo eum: * et osténdam illi salutáre meum."
+	},
+	{
+		"tags":["psalmus-cxxxiii"],
+		"datum":[
+			{"from-tags":["psalmus-cxxxiii","versus-i"]},{"from-tags":["psalmus-cxxxiii","versus-ii"]},{"from-tags":["psalmus-cxxxiii","versus-iii"]}
+		]
+	},
+	{
+		"tags":["psalmus-cxxxiii","versus-i"],
+		"datum":["Ecce nunc benedícite Dóminum, * omnes servi Dómini:","Qui statis in domo Dómini, * in átriis domus Dei nostri,"]
+	},
+	{
+		"tags":["psalmus-cxxxiii","versus-ii"],
+		"datum":"In nóctibus extóllite manus vestras in sancta, * et benedícite Dóminum."
+	},
+	{
+		"tags":["psalmus-cxxxiii","versus-iii"],
+		"datum":"Benedícat te Dóminus ex Sion, * qui fecit cœlum et terram."
 	}
 ]
