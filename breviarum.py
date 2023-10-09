@@ -14,12 +14,12 @@ def load_data(p: str):
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
-    def recurse(obj):
+    def recurse(obj, key=None):
         match obj:
             case dict():
-                return {k: recurse(v) for k, v in obj.items()}
+                return {k: recurse(v, key=k) for k, v in obj.items()}
             case list():
-                if all(type(x) == str for x in obj):
+                if all(type(x) == str for x in obj) and not key == 'datum':
                     return frozenset(obj)
                 return [recurse(v) for v in obj]
             case _:
@@ -43,22 +43,68 @@ defaultpile = copy.deepcopy(psalterium)
 defaultpile.extend(formulae)
 defaultpile.extend(psalmi)    
 
-def searchpile(query, pile):
+def anysearch(query, pile):
     for i in pile:
         if i['tags'].issubset(query):
             yield i
 
-def singlesearchpile(query, pile):
-    result = list(searchpile(query, pile))
-    assert len(result) == 1
-    return result[0]
+def exactsearch(query, pile):
+    def exactsearchyield():
+        for i in pile:
+            if i['tags'] == query:
+                yield i
+    result = list(exactsearchyield())
+    if not len(result) == 1:
+        raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
+    else:
+        return result[0]
+
+def singlesearch(query, pile):
+    result = list(anysearch(query, pile))
+    if not len(result) == 1:
+        raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
+    else:
+        return result[0]
+
+def search(query, pile):
+    result = list(anysearch(query, pile))
+    if len(result) == 1:
+        return result[0]
+    else:
+        return sorted(result, key=lambda a: len(a['tags']))[-1]
+
+def process(item, withtags, pile):
+    if type(item) == set:
+        item = search(item.union(withtags), pile)
+    if 'from-tags' in item:
+        return process(search(item['from-tags'].union(withtags), pile), item['with-tags'] if 'with-tags' in item else {}, pile)
+    elif type(item['datum']) == list:
+        ret = []
+        for i in item['datum']:
+            if type(i) == str:
+                ret.append(i)
+            else:
+                iprocessed = process(i, withtags, pile)
+                if type(iprocessed) == list:
+                    ret.extend(iprocessed)
+                else:
+                    ret.append(iprocessed)
+        return ret if len(ret) != 1 else ret[0]
+    else:
+        return item['datum']
+        
+
+def template(template, passed):
+    return 
 
 def hour(hour: str):
     elementpile = copy.deepcopy(defaultpile)
     
-    hourtemplate = singlesearchpile({hour}, elementpile)
-    print(hourtemplate)
+    hourtemplate = singlesearch({hour}, elementpile)
+    for i in hourtemplate['datum']:
+        if 'from-tags' in i:
+            i = exactsearch(i['from-tags'], elementpile)
     
-    
-    
-print(hour('completorium'))
+    return hourtemplate
+
+print(list(process({'collecta-primaria'},{'completorium','per-dominum'}, defaultpile)))

@@ -1,0 +1,34 @@
+[
+	{
+		"tags":["hebdomada-i-adventus","dominica","nomen"],
+		"datum":"Dominica I Adventus"
+	},
+	{
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","capitulum"],
+		"datum":"Fratres: Hora est jam nos de somno súrgere. + Nunc enim próprior est nostra salus, * quam cum credídimus."
+	},
+	{
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","hymnus"],
+		"datum":[
+			"Creátor alme síderum,/Ætérna lux credéntium,/Jesu Redémptor ómnium,/Inténde votis súpplicum.",
+			"Qui dǽmonis ne fraúdibus/Períret orbis ímpetu/Amóris actus, lánguidi/Mundi medéla factus es.",
+			"Commúne qui mundi nefas/Ut expiáres; ad crucem/E Vírginis sacrário/Intácta prodis víctima.",
+			"Cujus potéstas glóriæ,/Noménque cum primum sonat;/Et cœlites et ínferi/Treménte curvántur genu.",
+			"Te deprecámur últimæ/Magnum diéi Júdicem,/Armis supérnæ grátiæ/Defénde nos ab hóstibus.",
+			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sæcula.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","versiculum"],
+		"datum":["Roráte cœli désuper, et nubes pluant justum.","Aperiátur terra, et gérminet Salvatórem."
+	},
+	{
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","magnificat"],
+		"datum":"Ecce nomen Dómini * venit de longínquo, et cláritas ejus replet orbem terrárum."
+	},
+	{
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","collecta"],
+		"datum":["Excita, quǽsumus Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:",{"from-tags":["qui-vivis"]}]
+	}
+]
