@@ -45,6 +45,31 @@
 		
 	},
 	{
+		"tags":["terminatio","hymnus","praesta-pater"],
+		"datum":["Præsta, Pater piísime,/Patríque compar Únice,/Cum Spíritu Paráclito/Regnans per omne sǽculum.","Amen."]
+	},
+	{
+		"tags":["gloria-psalmi"],
+		"datum":[
+			"Glória Patri, et Fílio, * et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen."
+		]
+	},
+	{
+		"tags":["responsorium-breve"],
+		"datum":[
+			{"from-tags":["responsorium"]},
+			{"from-tags":["responsorium","responsum"]},
+			{"from-tags":["responsorium"]},
+			{"from-tags":["responsorium","responsum"]},
+			{"from-tags":["responsorium","versum"]},
+			{"from-tags":["responsorium","responsum"]},
+			{"tags":["responsorium","gloria"],"datum":"Glória Patri, et Fílio, et Spirítui Sancto."},
+			{"from-tags":["responsorium"]},
+			{"from-tags":["responsorium","responsum"]}
+		]
+	},
+	{
 		"tags":["adjutorium-nostrum"],
 		"datum":["V. Adjutórium nóstrum ✠ in nómine Dómini.","R. Qui fecit cœlum et terram."]
 	},

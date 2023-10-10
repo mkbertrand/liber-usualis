@@ -1,0 +1,24 @@
+[
+	{
+		"tags":["nunc-dimittis"],
+		"datum":[
+			{"from-tags":["nunc-dimittis","versus-xxix"]},{"from-tags":["nunc-dimittis","versus-xxx"]},{"from-tags":["nunc-dimittis","versus-xxxi"]},{"from-tags":["nunc-dimittis","versus-xxxii"]}
+		]
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxix"],
+		"datum":"Nunc dimíttis serum tuum Dómine, * secúndum verbum tuum in pace:"
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxx"],
+		"datum":"Quia vidérunt óculi mei * salutáre tuum."
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxxi"],
+		"datum":"Quod parásti * ante fáciem ómnium populórum:"
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxxii"],
+		"datum":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Israël."
+	}
+]

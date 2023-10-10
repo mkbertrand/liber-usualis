@@ -38,10 +38,12 @@ def getdate(day):
 psalterium = load_data('breviarum/psalterium.json')
 formulae = load_data('breviarum/formulae.json')
 psalmi = load_data('breviarum/psalmi.json')
+cantica = load_data('breviarum/cantica.json')
 
 defaultpile = copy.deepcopy(psalterium)
 defaultpile.extend(formulae)
 defaultpile.extend(psalmi)    
+defaultpile.extend(cantica)    
 
 def anysearch(query, pile):
     for i in pile:
@@ -70,6 +72,8 @@ def search(query, pile):
     result = list(anysearch(query, pile))
     if len(result) == 1:
         return result[0]
+    elif len(result) == 0:
+        raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
     else:
         return sorted(result, key=lambda a: len(a['tags']))[-1]
 
@@ -89,9 +93,10 @@ def process(item, withtags, pile):
                     ret.extend(iprocessed)
                 else:
                     ret.append(iprocessed)
-        return ret if len(ret) != 1 else ret[0]
+        item['datum'] = ret if len(ret) != 1 else ret[0]
+        return item
     else:
-        return item['datum']
+        return item
         
 
 def template(template, passed):
@@ -107,4 +112,4 @@ def hour(hour: str):
     
     return hourtemplate
 
-print(list(process({'collecta-primaria'},{'completorium','per-dominum'}, defaultpile)))
+print(process({'completorium'},{}, defaultpile))
