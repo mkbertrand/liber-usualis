@@ -1,9 +1,10 @@
 import pathlib
 import json
 import copy
-import os
 from datetime import date, datetime, timedelta
 import functools
+import prioritizer
+import datamanage
 
 from kalendar import kalendar
 
@@ -26,24 +27,6 @@ def load_data(p: str):
                 return obj
 
     return recurse(data)
-
-@functools.lru_cache(maxsize=16)
-def getyear(year):
-    return kalendar.kalendar(year)
-
-def getdate(day):
-    year = getyear(day.year)
-    return year[day]
-
-psalterium = load_data('breviarum/psalterium.json')
-formulae = load_data('breviarum/formulae.json')
-psalmi = load_data('breviarum/psalmi.json')
-cantica = load_data('breviarum/cantica.json')
-
-defaultpile = copy.deepcopy(psalterium)
-defaultpile.extend(formulae)
-defaultpile.extend(psalmi)    
-defaultpile.extend(cantica)    
 
 def anysearch(query, pile):
     for i in pile:
@@ -69,6 +52,7 @@ def singlesearch(query, pile):
         return result[0]
 
 def search(query, pile):
+    print(query)
     result = list(anysearch(query, pile))
     if len(result) == 1:
         return result[0]
@@ -102,14 +86,18 @@ def process(item, withtags, pile):
 def template(template, passed):
     return 
 
-def hour(hour: str):
-    elementpile = copy.deepcopy(defaultpile)
-    
-    hourtemplate = singlesearch({hour}, elementpile)
-    for i in hourtemplate['datum']:
-        if 'from-tags' in i:
-            i = exactsearch(i['from-tags'], elementpile)
-    
-    return hourtemplate
+defaultpile = {'psalterium','formulae','psalmi','cantica'}
 
-print(process({'completorium'},{}, defaultpile))
+def hour(hour: str, day):
+
+    daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
+    flatday = set()
+    print(daytags)
+    for i in daytags:
+        flatday |= i
+    
+    pile = datamanage.getbreviarumfiles(defaultpile | flatday)
+    print(pile)
+    return process({hour},{}, pile)
+
+print(hour('completorium',date.today()))

@@ -1,5 +1,5 @@
 from kalendar import kalendar
-import breviarum
+import datamanage
 import os.path
 import json
 import pathlib
@@ -36,9 +36,9 @@ coincidencetable = load_data('vesperal-coincidence.json')
 hasivespers = {"simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 hasiivespers = {"feria","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
 
-def vesperscoincider(day):
-    currday = breviarum.getdate(day)
-    nextday = breviarum.getdate(day + timedelta(days=1))
+def getvespers(day):
+    currday = datamanage.getdate(day)
+    nextday = datamanage.getdate(day + timedelta(days=1))
     ivespers = [i.union({'i-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasivespers) and not 'infra-octavam' in occ, nextday)]
     iivespers = [i.union({'ii-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasiivespers), currday)]
     ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint({'commemoratum','temporale','fixum'}), ivespers))
