@@ -28,7 +28,27 @@ def load_data(p: str):
 
     return recurse(data)
 
+def dump_data(j):
+
+    # JSON doesn't support sets. Recursively find and replace anything that
+    # looks like a list of tags with a set of tags.
+    def recurse(obj, key=None):
+        match obj:
+            case dict():
+                return {k: recurse(v, key=k) for k, v in obj.items()}
+            case list():
+                return [recurse(v) for v in obj]
+            case set() | frozenset():
+                if all(type(x) == str for x in obj):
+                    return list(obj)
+                return [recurse(v) for v in obj]
+            case _:
+                return obj
+
+    return json.dumps(recurse(j))
+
 def anysearch(query, pile):
+    print(query)
     for i in pile:
         if i['tags'].issubset(query):
             yield i
@@ -52,7 +72,6 @@ def singlesearch(query, pile):
         return result[0]
 
 def search(query, pile):
-    print(query)
     result = list(anysearch(query, pile))
     if len(result) == 1:
         return result[0]
@@ -66,6 +85,8 @@ def process(item, withtags, pile):
         item = search(item.union(withtags), pile)
     if 'from-tags' in item:
         return process(search(item['from-tags'].union(withtags), pile), item['with-tags'] if 'with-tags' in item else {}, pile)
+    elif 'forwards-to' in item:
+        return process(search(item['forwards-to'].union(withtags), pile), {}, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
@@ -86,18 +107,17 @@ def process(item, withtags, pile):
 def template(template, passed):
     return 
 
-defaultpile = {'psalterium','formulae','psalmi','cantica'}
+defaultpile = {'horae','psalterium','formulae','psalmi','cantica'}
 
 def hour(hour: str, day):
 
     daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
     flatday = set()
-    print(daytags)
     for i in daytags:
         flatday |= i
     
     pile = datamanage.getbreviarumfiles(defaultpile | flatday)
-    print(pile)
-    return process({hour},{}, pile)
+    
+    return process({hour, 'hora'},{}, pile)
 
-print(hour('completorium',date.today()))
+print(dump_data(hour('completorium',date.today())))

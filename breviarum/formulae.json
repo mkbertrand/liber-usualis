@@ -18,11 +18,47 @@
 		]
 	},
 	{
+		"tags":["ante-officium"],
+		"datum":[
+			"Aperi Dómine os meum ad benedicéndum nomen sanctum tuum: munda quoque cor meum ab ómnibus vanis, pervérsis et aliénis cogitatiónibus: intelléctum illúmina, afféctum inflámma, ut digne, atténte ac devóte hoc Offícium recitáre váleam, et exaudíri mérear ante conspéctum divínæ Majestátis tuæ. Per Christum Dóminum nostrum. Amen.",
+			"Dómine in unióne illíus divínæ intentiónis, qua ipse in terris laudes Deo persolvísti, has tibi Horas persólvo."
+		]
+	},
+	{
+		"tags":["post-officium"],
+		"datum":[
+			"Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi humanitáti, beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ fœcúndæ integritáti, et ómnium Sanctórum universitáti sit sempitérna laus, honor, virtus et glória ab omni creatúra, nobísque remíssio ómnium peccatórum, per infiníta sǽcula sæculórum. Amen.",
+			"V. Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium.",
+			"R. Et beáti úbera, quæ lactavérunt Christum Dóminum.",
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["ave-maria-secreta"]}
+		]
+	},
+	{
+		"tags":["pater-noster-secreta"],
+		"datum":"Pater noster, qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen."
+	},
+	{
+		"tags":["ave-maria-secreta"],
+		"datum":"Ave María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen."
+	},
+	{
+		"tags":["credo-secreta"],
+		"datum":"Credo in Deum, Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cœlos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen."
+	},
+	{
+		"tags":["prex-duplex"],
+		"datum":[
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["ave-maria-secreta"]}
+		]
+	},
+	{
 		"tags":["prex-triplex"],
 		"datum":[
-			"Pater noster, qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen.",
-			"Ave María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen.",
-			"Credo in Deum, Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cœlos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen."
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["ave-maria-secreta"]},
+			{"from-tags":["credo-secreta"]}
 		]
 	},
 	{
@@ -79,7 +115,7 @@
 	},
 	{
 		"tags":["collecta-primaria"],
-		"datum":[{"from-tags":["dominus-vobiscum"]},"Orémus",{"from-tags":["collecta"]},{"from-tags":["terminatio"]}]
+		"datum":[{"from-tags":["dominus-vobiscum"]},"Orémus",{"from-tags":["collecta"]},{"from-tags":["collecta","terminatio"]}]
 	},
 	{
 		"tags":["terminatio","per-dominum"],

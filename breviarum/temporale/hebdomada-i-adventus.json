@@ -24,11 +24,15 @@
 		"datum":["Roráte cœli désuper, et nubes pluant justum.","Aperiátur terra, et gérminet Salvatórem."]
 	},
 	{
-		"tags":["hebdomada-i-adventus","dominica","i-vesperae","magnificat"],
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","antiphona-magnificat"],
 		"datum":"Ecce nomen Dómini * venit de longínquo, et cláritas ejus replet orbem terrárum."
 	},
 	{
-		"tags":["hebdomada-i-adventus","dominica","i-vesperae","collecta"],
-		"datum":["Excita, quǽsumus Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:",{"from-tags":["qui-vivis"]}]
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","vesperae","collecta"],
+		"datum":"Excita, quǽsumus Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:"
+	},
+	{
+		"tags":["hebdomada-i-adventus","dominica","i-vesperae","collecta","terminatio"],
+		"forwards-to":["terminatio","qui-vivis"]
 	}
 ]
