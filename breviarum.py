@@ -5,6 +5,7 @@ from datetime import date, datetime, timedelta
 import functools
 import prioritizer
 import datamanage
+import warnings
 
 from kalendar import kalendar
 
@@ -48,7 +49,6 @@ def dump_data(j):
     return json.dumps(recurse(j))
 
 def anysearch(query, pile):
-    print(query)
     for i in pile:
         if i['tags'].issubset(query):
             yield i
@@ -59,29 +59,42 @@ def exactsearch(query, pile):
             if i['tags'] == query:
                 yield i
     result = list(exactsearchyield())
-    if not len(result) == 1:
+    if len(result) == 0:
+        warnings.warn(f'0 tags found for query {query}')
+        return None
+    elif not len(result) == 1:
         raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
     else:
         return result[0]
 
 def singlesearch(query, pile):
     result = list(anysearch(query, pile))
-    if not len(result) == 1:
+    if len(result) == 0:
+        warnings.warn(f'0 tags found for query {query}')
+        return None
+    elif not len(result) == 1:
         raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
     else:
         return result[0]
 
 def search(query, pile):
-    result = list(anysearch(query, pile))
-    if len(result) == 1:
+    result = list(sorted(list(anysearch(query, pile)), key=lambda a: len(a['tags'])))
+    if len(result) == 0:
+        warnings.warn(f'0 tags found for query {query}')
+        return None
+    elif len(result) == 1:
         return result[0]
-    elif len(result) == 0:
-        raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
+    elif len(result[-1]['tags']) == len(result[-2]['tags']):
+        raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]} , {result[-2]}')
     else:
-        return sorted(result, key=lambda a: len(a['tags']))[-1]
+        return result[-1]
 
+# None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, withtags, pile):
-    if type(item) == set:
+    # None can sometimes be the result of a search and is expected, but should obviously just process to None
+    if item == None:
+        return None
+    elif type(item) == set:
         item = search(item.union(withtags), pile)
     if 'from-tags' in item:
         return process(search(item['from-tags'].union(withtags), pile), item['with-tags'] if 'with-tags' in item else {}, pile)
@@ -94,7 +107,9 @@ def process(item, withtags, pile):
                 ret.append(i)
             else:
                 iprocessed = process(i, withtags, pile)
-                if type(iprocessed) == list:
+                if iprocessed == None:
+                    pass
+                elif type(iprocessed) == list:
                     ret.extend(iprocessed)
                 else:
                     ret.append(iprocessed)
