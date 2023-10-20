@@ -133,6 +133,12 @@ def hour(hour: str, day):
     
     pile = datamanage.getbreviarumfiles(defaultpile | flatday)
     
-    return process({hour, 'hora'},{}, pile)
+    primary = None
+    for i in daytags:
+        if 'primarium' in i:
+            primary = i
+            break
+    print(primary)
+    return process({hour, 'hora'} | primary, primary, pile)
 
 print(dump_data(hour('completorium',date.today())))
