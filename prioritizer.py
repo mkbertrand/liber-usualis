@@ -9,14 +9,14 @@ import re
 data_root = pathlib.Path(__file__).parent
 
 def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
+    data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
     def recurse(obj):
         match obj:
             case dict():
-                return {datetime.strptime(k, "%Y-%m-%d").date() if not re.search('^\d{4}-\d{2}-\d{2}$',k) == None else k: recurse(v) for k, v in obj.items()}
+                return {datetime.strptime(k, '%Y-%m-%d').date() if not re.search('^\d{4}-\d{2}-\d{2}$',k) == None else k: recurse(v) for k, v in obj.items()}
                 return {k: recurse(v) for k, v in obj.items()}
             case list():
                 if all(type(x) == str for x in obj):
@@ -33,8 +33,8 @@ def taggedentry(day, tags):
             return i
 
 coincidencetable = load_data('vesperal-coincidence.json')
-hasivespers = {"simplex","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
-hasiivespers = {"feria","semiduplex","duplex","duplex-majus","duplex-ii-classis","duplex-i-classis"}
+hasivespers = {'simplex','semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv'}
+hasiivespers = {'feria','semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
 def getvespers(day):
     currday = datamanage.getdate(day)
@@ -95,25 +95,25 @@ def getvespers(day):
             pass
         return vesperal
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-        description="Daily Vespers specification generator",
+        description='Daily Vespers specification generator',
     )
 
     parser.add_argument(
-        "-d",
-        "--date",
+        '-d',
+        '--date',
         type=str,
         default=str(date.today()),
-        help="Date to generate",
+        help='Date to generate',
     )
 
     args = parser.parse_args()
 
     # Generate kalendar
-    ret = vesperscoincider(datetime.strptime(args.date, "%Y-%m-%d").date())
+    ret = getvespers(datetime.strptime(args.date, '%Y-%m-%d').date())
 
     print(ret)
