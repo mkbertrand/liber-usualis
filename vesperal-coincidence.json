@@ -237,7 +237,11 @@
 		"response":[
 			{"indices":["infra-octavam","ii-vesperae"],"response":"omittendum","target":"a"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"a"},
-			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"a"}
+			{"indices":["vigilia","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-majus","ii-vesperae"],"response":"omittendum","target":"a"},
+			{"indices":["duplex","ii-vesperae"],"response":"omittendum","target":"a"},
+			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"a"}
 		]
 	},
 	{
