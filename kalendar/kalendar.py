@@ -450,6 +450,12 @@ def kalendar(year: int) -> Kalendar:
     for i in kal.keys():
         resolve(i)
 
+    for date0, entries in kal.items():
+        for i in entries:
+            if i.isdisjoint({"fixum","temporale","commemoratum"}):
+                i.add('primarium')
+                continue
+
     return kal
 
 if __name__ == "__main__":
