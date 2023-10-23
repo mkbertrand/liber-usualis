@@ -3,6 +3,7 @@ import json
 import functools
 import os
 import copy
+import logging
 
 from kalendar import kalendar
 
@@ -36,6 +37,7 @@ def getdate(day):
 
 @functools.lru_cache(maxsize=32)
 def getbreviarumfile(query):
+    logging.debug(f'Loading {query}')
     return load_data(query)
 
 #No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
