@@ -2,6 +2,7 @@ import pathlib
 import json
 import functools
 import os
+import copy
 
 from kalendar import kalendar
 
@@ -18,7 +19,7 @@ def load_data(p: str):
                 return {k: recurse(v, key=k) for k, v in obj.items()}
             case list():
                 if all(type(x) == str for x in obj) and not key == 'datum':
-                    return frozenset(obj)
+                    return set(obj)
                 return [recurse(v) for v in obj]
             case _:
                 return obj
@@ -43,5 +44,17 @@ def getbreviarumfiles(queries):
     for (root,dirs,files) in os.walk(data_root.joinpath('breviarum')):
         for i in files:
             if i[:-5] in queries:
-                ret.extend(getbreviarumfile(data_root.joinpath('breviarum').joinpath(root).joinpath(i)))
+                got = getbreviarumfile(data_root.joinpath('breviarum').joinpath(root).joinpath(i))
+                added = []
+                for i in got:
+                    if 'antiphona' in i['tags']:
+                        icopy = copy.deepcopy(i)
+                        icopy['tags'].add('intonata')
+                        icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
+                        if not icopy['datum'][-1] in ['.',',','?','!',':',';']:
+                            icopy['datum'] += '.'
+                        added.append(icopy)
+                ret.extend(got)
+                ret.extend(added)
+                
     return ret
