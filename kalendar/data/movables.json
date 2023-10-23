@@ -17,42 +17,42 @@
 	},
 	"alma-redemptoris-adventus":{
 		"occurrence":["adventus"],
-		"tags":["alma-redemptoris","ante-nativitatem"]
+		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"]
 	},
 	"alma-redemptoris-nativitatis":{
 		"occurrence":["nativitas"],
-		"tags":["alma-redemptoris","post-nativitatem"]
+		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	"alma-redemptoris-januarii":{
 		"occurrence":["januarius"],
-		"tags":["alma-redemptoris","post-nativitatem"]
+		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	"alma-redemptoris-februarii":{
 		"occurrence":["februarius","1"],
-		"tags":["alma-redemptoris","post-nativitatem"]
+		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	"ave-regina-coelorum-februarii":{
 		"occurrence":["februarius"],
 		"excluded":["alma-redemptoris"],
-		"tags":["ave-regina-coelorum"]
+		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},
 	"ave-regina-coelorum-martii":{
 		"occurrence":["martius"],
 		"excluded":["paschalis"],
-		"tags":["ave-regina-coelorum"]
+		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},
 	"ave-regina-coelorum-quadragesimae":{
 		"occurrence":["quadragesima"],
-		"tags":["ave-regina-coelorum"]
+		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},
 	"regina-coeli":{
 		"occurrence":["paschalis"],
-		"tags":["regina-coeli"]
+		"tags":["antiphona-bmv","regina-coeli"]
 	},
 	"salve-regina":{
 		"occurrence":["per-annum"],
 		"excluded":["alma-redemptoris","ave-regina-coelorum"],
-		"tags":["salve-regina"]
+		"tags":["antiphona-bmv","salve-regina"]
 	},
 	"feria-iv-quattuor-temporum-adventus":{
 		"occurrence":["hebdomada-iii-advent","feria-iv"],
