@@ -85,19 +85,20 @@ def search(query, pile):
     elif len(result) == 1:
         return result[0]
     elif len(result[-1]['tags']) == len(result[-2]['tags']):
-        raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]} , {result[-2]}')
+        raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]}\n{result[-2]}')
     else:
         return result[-1]
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, withtags, pile):
-    # None can sometimes be the result of a search and is expected, but should obviously just process to None
+    # None can sometimes be the result of a search and is expected, but indicates an absent item
     if item == None:
-        return None
+        return 'Absens'
     elif type(item) == set:
         item = search(item.union(withtags), pile)
     if 'from-tags' in item:
-        return process(search(item['from-tags'].union(withtags), pile), item['with-tags'] if 'with-tags' in item else {}, pile)
+        response = process(search(item['from-tags'].union(withtags), pile), item['with-tags'].union(withtags) if 'with-tags' in item else withtags, pile)
+        return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
         return process(search(item['forwards-to'].union(withtags), pile), {}, pile)
     elif type(item['datum']) == list:
@@ -108,7 +109,7 @@ def process(item, withtags, pile):
             else:
                 iprocessed = process(i, withtags, pile)
                 if iprocessed == None:
-                    pass
+                    ret.append('Absens')
                 elif type(iprocessed) == list:
                     ret.extend(iprocessed)
                 else:
@@ -117,12 +118,26 @@ def process(item, withtags, pile):
         return item
     else:
         return item
-        
 
-def template(template, passed):
-    return 
+def replacetagrecurse(datum, target, item):
+    if type(datum) == str:
+        return datum
+    elif target.issubset(datum['tags']):
+        datum['datum'] = item
+    elif type(datum['datum']) == list:
+        for i in range(0, len(datum['datum'])):
+            ret = replacetagrecurse(datum['datum'][i], target, item)
+            if not datum['datum'][i] == ret:
+                datum['datum'][i] = ret
+                return datum
+    return datum
 
 defaultpile = {'horae','psalterium','formulae','psalmi','cantica'}
+
+def getbytags(daytags, query):
+    for i in daytags:
+        if query in i:
+            return i
 
 def hour(hour: str, day):
 
@@ -133,12 +148,10 @@ def hour(hour: str, day):
     
     pile = datamanage.getbreviarumfiles(defaultpile | flatday)
     
-    primary = None
-    for i in daytags:
-        if 'primarium' in i:
-            primary = i
-            break
-    print(primary)
-    return process({hour, 'hora'} | primary, primary, pile)
+    primary = getbytags(daytags, 'primarium')
+    withtagprimary = primary | getbytags(daytags, 'antiphona-bmv')
+    withtagprimary -= {'i-vesperae','antiphona-bmv'}
+    primarydatum = process({hour, 'hora'} | primary, withtagprimary, pile)
+    return primarydatum
 
-print(dump_data(hour('completorium',date.today())))
+print(dump_data(hour('vesperae', date.today() - timedelta(days=1))))

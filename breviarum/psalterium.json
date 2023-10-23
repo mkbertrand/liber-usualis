@@ -1,10 +1,68 @@
 [
 	{
-		"datum":["Benedicámus Dómino.","Deo grátias"],
-		"tags":["benedicamus-domino","horae-minores"]
+		"tags":["dominica","antiphona-i","antiphona","vesperae","ii-vesperae"],
+		"datum":"Dixit Dóminus * Dómino meo: Sede a dextris meis."
 	},
 	{
-		"tags":["antiphona-bmv","solemnis"],
-		"datum":["Salve, Regína, * mater misericórdiæ;/vita, dulcédo et spes nóstra, salve./Ad te clamámus éxsules fílii Hevæ./Ad te suspirámus geméntes et flentes/In hac lacrimárum valle./Eja ergo, advocáta nostra,/illos tuos misericórdes óculos ad nos convérte./Et Jesum, benedíctum fructum ventris tui,/nobis post hoc exsílium osténde./O clemens, o pia, o dulcis Virgo María.","Ora pro nobis, sancta Dei Génitrix.","Ut digni efficiámur promissiónibus Christi.","Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: + da, ut, cujus commemoratióne lætámur, * ejus pia intercessióne, ab instántibus malis et a morte perpétua liberémur.","Per eumdem Christum."]
+		"tags":["dominica","i-psalmus"],
+		"forwards-to":["psalmus-cix"]
+	},
+	{
+		"tags":["dominica","antiphona-ii","antiphona","vesperae","ii-vesperae"],
+		"datum":"Fidélia * ómnia mandáta ejus: confirmáta in sǽculum sǽculi."
+	},
+	{
+		"tags":["dominica","ii-psalmus"],
+		"forwards-to":["psalmus-cx"]
+	},
+	{
+		"tags":["dominica","antiphona-iii","antiphona","vesperae","ii-vesperae"],
+		"datum":"In mandátis * ejus cupit nimis."
+	},
+	{
+		"tags":["dominica","iii-psalmus"],
+		"forwards-to":["psalmus-cxi"]
+	},
+	{
+		"tags":["dominica","antiphona-iv","antiphona","vesperae","ii-vesperae"],
+		"datum":"Sit nomen Dómini * benedíctum in sǽcula."
+	},
+	{
+		"tags":["dominica","iv-psalmus"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["dominica","antiphona-v","antiphona","vesperae","ii-vesperae"],
+		"datum":"Nos qui vívimus, * benedícimus Dómino."
+	},
+	{
+		"tags":["dominica","v-psalmus"],
+		"forwards-to":["psalmus-cxiii"]
+	},
+	{
+		"tags":["capitulum","vesperae"],
+		"datum":"Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus tótius consolatiónis, qui consolátur nos in omni tribulatióne nostra."
+	},
+	{
+		"tags":["dominica","hymnus","vesperae","ii-vesperae"],
+		"datum":[
+			"Lucis Creátor óptime/Lucem diérum próferens,/Primórdiis lucis novæ,/Mundi parans oríginem:",
+			"Qui mane junctum vésperi/Diem vocári prǽcipis:/Illábitur tetrum chaos,/Audi preces cum flétibus.",
+			"Ne mens graváta crímine,/Vitæ sit exsul múnere,/Dum nil perénne cógitat,/Seséque culpis ílligat.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["versiculus","vesperae"],
+		"datum":["Dirigátur Dómine orátio mea.","Sicut incénsum in conspecto tuo."]
+	},
+	{
+		"tags":["antiphona-bmv","salve-regina"],
+		"datum":[
+			"Salve, Regína, * mater misericórdiæ;/vita, dulcédo et spes nóstra, salve./Ad te clamámus éxsules fílii Hevæ./Ad te suspirámus geméntes et flentes/In hac lacrimárum valle./Eja ergo, advocáta nostra,/illos tuos misericórdes óculos ad nos convérte./Et Jesum, benedíctum fructum ventris tui,/nobis post hoc exsílium osténde./O clemens, o pia, o dulcis Virgo María.","Ora pro nobis, sancta Dei Génitrix.","Ut digni efficiámur promissiónibus Christi.",
+			"Orémus.",
+			"Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: + da, ut, cujus commemoratióne lætámur, * ejus pia intercessióne, ab instántibus malis et a morte perpétua liberémur.",
+			{"from-tags":["terminatio","per-eumdem-christum"]}
+		]
 	}
 ]

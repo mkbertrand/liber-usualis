@@ -20,5 +20,51 @@
 	{
 		"tags":["nunc-dimittis","versus-xxxii"],
 		"datum":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Israël."
+	},
+	{
+		"tags":["magnificat"],
+		"datum":[
+			{"from-tags":["magnificat","versus-xlvi"]},{"from-tags":["magnificat","versus-xlvii"]},{"from-tags":["magnificat","versus-xlviii"]},{"from-tags":["magnificat","versus-il"]},{"from-tags":["magnificat","versus-l"]},{"from-tags":["magnificat","versus-li"]},{"from-tags":["magnificat","versus-lii"]},{"from-tags":["magnificat","versus-liii"]},{"from-tags":["magnificat","versus-liv"]},{"from-tags":["magnificat","versus-lv"]}
+		]
+	},
+	{
+		"tags":["magnificat","versus-xlvi"],
+		"datum":"Magníficat * anima mea Dóminum:"
+	},
+	{
+		"tags":["magnificat","versus-xlvii"],
+		"datum":"Et exsultávit spíritus meus * in Deo salutári meo."
+	},
+	{
+		"tags":["magnificat","versus-xlviii"],
+		"datum":"Quia respéxit humilitátem ancíllæ suæ: * ecce enim ex hoc beátam me dicent omnes generatiónes."
+	},
+	{
+		"tags":["magnificat","versus-il"],
+		"datum":"Quia fecit mihi magna qui potens est: * et sanctum nomen ejus."
+	},
+	{
+		"tags":["magnificat","versus-l"],
+		"datum":"Et misericórdia ejus a progénie in progénies * timéntibus eum."
+	},
+	{
+		"tags":["magnificat","versus-li"],
+		"datum":"Fecit poténtiam in bráchio sui: * dispérsit supérbos mente cordis sui."
+	},
+	{
+		"tags":["magnificat","versus-lii"],
+		"datum":"Depósuit poténtes de sede, * et exaltávit húmiles."
+	},
+	{
+		"tags":["magnificat","versus-liii"],
+		"datum":"Esuriéntes implévit bonis: * et dívites dimísit inánes."
+	},
+	{
+		"tags":["magnificat","versus-liv"],
+		"datum":"Suscépit Israël púerum suum, * recordátus misericórdiæ suæ."
+	},
+	{
+		"tags":["magnificat","versus-lv"],
+		"datum":"Sicut locútus est ad patres nostros, * Abraham, et sémini ejus in sǽcula."
 	}
 ]

@@ -8,36 +8,36 @@
 			{
 				"tags":["vesperae","psalmodia"],
 				"datum":[
-					{"from-tags":["antiphona-i"]},
-					{"from-tags":["psalmus-i"]},
-					{"from-tags":["antiphona-i"]},
-					{"from-tags":["antiphona-ii"]},
-					{"from-tags":["psalmus-ii"]},
-					{"from-tags":["antiphona-ii"]},
-					{"from-tags":["antiphona-iii"]},
-					{"from-tags":["psalmus-iii"]},
-					{"from-tags":["antiphona-iii"]},
-					{"from-tags":["antiphona-iv"]},
-					{"from-tags":["psalmus-iv"]},
-					{"from-tags":["antiphona-iv"]},
-					{"from-tags":["antiphona-v"]},
-					{"from-tags":["psalmus-v"]},
-					{"from-tags":["antiphona-v"]}
+					{"from-tags":["vesperae","antiphona","antiphona-i"]},
+					{"from-tags":["vesperae","i-psalmus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-i"]},
+					{"from-tags":["vesperae","antiphona","antiphona-ii"]},
+					{"from-tags":["vesperae","ii-psalmus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-ii"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iii"]},
+					{"from-tags":["vesperae","iii-psalmus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iii"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iv"]},
+					{"from-tags":["vesperae","iv-psalmus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iv"]},
+					{"from-tags":["vesperae","antiphona","antiphona-v"]},
+					{"from-tags":["vesperae","v-psalmus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-v"]}
 				]
 			},
 			{
 				"tags":["vesperae","ab-capitulo"],
 				"datum":[
-					{"from-tags":["capitulum"]},
+					{"from-tags":["vesperae","capitulum"]},
 					{
 						"datum":"Deo grátias.",
 						"tags":["completorium","deo-gratias"]
 					},
-					{"from-tags":["hymnus"]},
-					{"from-tags":["versiculum"]},
-					{"from-tags":["antiphona-magnificat"]},
+					{"from-tags":["vesperae","hymnus"]},
+					{"from-tags":["vesperae","versiculus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-magnificat","intonata"]},
 					{"from-tags":["magnificat"]},
-					{"from-tags":["antiphona-magnificat"]}
+					{"from-tags":["vesperae","antiphona","antiphona-magnificat"]}
 				]
 			},
 			{
@@ -70,10 +70,7 @@
 				"tags":["converte-nos","completorium"]
 			},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
-			{
-				"from-tags":["completorium","antiphona"],
-				"modification":"intoned"
-			},
+			{"from-tags":["completorium","antiphona","intonata"]},
 			{"from-tags":["psalmus-iv"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["psalmus-xxx","versus-ii"]},
@@ -88,23 +85,16 @@
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["completorium","antiphona"]},
 			{"from-tags":["completorium","hymnus","feria"]},
-			{"from-tags":["completorium","capitulum"]
-			},
-			{
-				"datum":"Deo grátias.",
-				"tags":["completorium","deo-gratias"]
-			},
+			{"from-tags":["completorium","capitulum"]},
+			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
 				"with-tags":["completorium"]
 			},
 			{"from-tags":["completorium","versiculus"]},
-			{
-				"from-tags":["completorium","antiphona-nunc-dimittis"],
-				"modification":"intoned"
-			},
+			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis","intonata"]},
 			{"from-tags":["nunc-dimittis"]},
-			{"from-tags":["completorium","antiphona-nunc-dimittis"]},
+			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis"]},
 			{"from-tags":["completorium","preces"]},
 			{
 				"from-tags":["collecta-primaria"],
@@ -120,7 +110,7 @@
 				"tags":["completorium","benedictio-finalis"]
 			},
 			{
-				"from-tags":["antiphona-bmv","solemnis"],
+				"from-tags":["antiphona-bmv"],
 				"tags":["completorium","antiphona-mariana"]
 			},
 			{"from-tags":["prex-triplex"]},
@@ -166,7 +156,7 @@
 		"datum":["Custódi nos Dómine ut pupíllam óculi.","Sub umbra alárum tuárum prótege nos."]
 	},
 	{
-		"tags":["completorium","antiphona-nunc-dimittis"],
+		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
 		"datum":"Salva nos * Dómine vigilántes, custódi nos dormiéntes: ut vigilémus cum Christo, et requiescámus in pace."
 	},
 	{
