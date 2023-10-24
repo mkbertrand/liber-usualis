@@ -48,6 +48,19 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
+def aestheticdisplay(j):
+    def recurse(obj):
+        match obj:
+            case dict():
+                return {k: recurse(v) for k, v in obj.items()}
+            case list():
+                return [recurse(v) for v in obj]
+            case set() | frozenset():
+                pass
+            case str():
+                print(obj)
+    recurse(j)
+
 def anysearch(query, pile):
     for i in pile:
         if i['tags'].issubset(query):
@@ -77,7 +90,7 @@ def singlesearch(query, pile):
     else:
         return result[0]
 
-def search(query, pile):
+def search(query, pile, multipleresults = False, multipleresultssort = None):
     result = list(sorted(list(anysearch(query, pile)), key=lambda a: len(a['tags'])))
     if len(result) == 0:
         warnings.warn(f'0 tags found for query {query}')
@@ -85,7 +98,10 @@ def search(query, pile):
     elif len(result) == 1:
         return result[0]
     elif len(result[-1]['tags']) == len(result[-2]['tags']):
-        raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]}\n{result[-2]}')
+        if not multipleresults:
+            raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]}\n{result[-2]}')
+        else:
+            return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result),multipleresultsort))
     else:
         return result[-1]
 
@@ -100,7 +116,7 @@ def process(item, withtags, pile):
         response = process(search(item['from-tags'].union(withtags), pile), item['with-tags'].union(withtags) if 'with-tags' in item else withtags, pile)
         return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
-        return process(search(item['forwards-to'].union(withtags), pile), {}, pile)
+        return process(search(item['forwards-to'].union(withtags), pile), withtags, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
@@ -154,4 +170,4 @@ def hour(hour: str, day):
     primarydatum = process({hour, 'hora'} | primary, withtagprimary, pile)
     return primarydatum
 
-print(dump_data(hour('vesperae', date.today() - timedelta(days=1))))
+aestheticdisplay(hour('nona', date.today() - timedelta(days=0)))
