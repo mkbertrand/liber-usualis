@@ -73,16 +73,16 @@
 				"datum":"Jube, domne, benedícere.",
 				"tags":["lectio-brevis","jube-domne"]
 			},
-			{
-				"from-tags":["lectio-brevis","benedictio"]
-			},
+			{"from-tags":["lectio-brevis","benedictio"]},
 			"R. Amen.",
-			{
-				"from-tags":["lectio-brevis","lectio"]
-			},
+			{"from-tags":["lectio-brevis","lectio"]},
 			"Tu autem, Dómine, miserére nobis.",
 			"R. Deo grátias."
 		]
+	},
+	{
+		"tags":["terminatio","hymnus","deo-patri"],
+		"datum":["Deo Patri sit glória,/Ejúsque soli Fílio,/Cum Spíritu Paráclito,/Nunc, et per omne sǽculum.","Amen."]
 	},
 	{
 		"tags":["terminatio","hymnus","praesta-pater"],
@@ -90,6 +90,13 @@
 	},
 	{
 		"tags":["gloria-psalmi"],
+		"datum":[
+			"Glória Patri, et Fílio, * et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen."
+		]
+	},
+	{
+		"tags":["gloria-versorum"],
 		"datum":[
 			"Glória Patri, et Fílio, * et Spirítui sancto.",
 			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen."
@@ -119,7 +126,7 @@
 	},
 	{
 		"tags":["collecta-primaria"],
-		"datum":[{"from-tags":["dominus-vobiscum"]},"Orémus",{"from-tags":["collecta"]},{"from-tags":["collecta","terminatio"]}]
+		"datum":[{"from-tags":["dominus-vobiscum"]},"Orémus.",{"from-tags":["collecta"]},{"from-tags":["collecta","terminatio"]}]
 	},
 	{
 		"tags":["terminatio","per-dominum"],
@@ -134,15 +141,23 @@
 		"datum":"Per eúmdem Christum Dóminum nostrum. R. Amen."
 	},
 	{
-		"tags":["benedicamus-domino","horae-minores"],
+		"tags":["commemoratio","laudes"],
+		"datum":[{"from-tags":["antiphona","antiphona-benedictus"]},{"from-tags":["laudes","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
+	},
+	{
+		"tags":["commemoratio","vesperae"],
+		"datum":[{"from-tags":["antiphona","antiphona-magnificat"]},{"from-tags":["vesperae","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
+	},
+	{
+		"tags":["benedicamus-domino","hora-minor"],
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["benedicamus-domino","dominica"],
+		"tags":["benedicamus-domino","hora-major","dominica"],
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["benedicamus-domino","feria"],
+		"tags":["benedicamus-domino","hora-major","feria"],
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
