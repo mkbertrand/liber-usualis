@@ -1,25 +1,169 @@
 [
 	{
-		"tags":["nunc-dimittis"],
+		"tags":["quicumque"],
 		"datum":[
-			{"from-tags":["nunc-dimittis","versus-xxix"]},{"from-tags":["nunc-dimittis","versus-xxx"]},{"from-tags":["nunc-dimittis","versus-xxxi"]},{"from-tags":["nunc-dimittis","versus-xxxii"]}
+			{"from-tags":["quicumque","versus-i"]},{"from-tags":["quicumque","versus-ii"]},{"from-tags":["quicumque","versus-iii"]},{"from-tags":["quicumque","versus-iv"]},{"from-tags":["quicumque","versus-v"]},{"from-tags":["quicumque","versus-vi"]},{"from-tags":["quicumque","versus-vii"]},{"from-tags":["quicumque","versus-viii"]},{"from-tags":["quicumque","versus-ix"]},{"from-tags":["quicumque","versus-x"]},{"from-tags":["quicumque","versus-xi"]},{"from-tags":["quicumque","versus-xii"]},{"from-tags":["quicumque","versus-xiii"]},{"from-tags":["quicumque","versus-xiv"]},{"from-tags":["quicumque","versus-xv"]},{"from-tags":["quicumque","versus-xvi"]},{"from-tags":["quicumque","versus-xvii"]},{"from-tags":["quicumque","versus-xviii"]},{"from-tags":["quicumque","versus-xix"]},{"from-tags":["quicumque","versus-xx"]},{"from-tags":["quicumque","versus-xxi"]},{"from-tags":["quicumque","versus-xxii"]},{"from-tags":["quicumque","versus-xxiii"]},{"from-tags":["quicumque","versus-xxiv"]},{"from-tags":["quicumque","versus-xxv"]},{"from-tags":["quicumque","versus-xxvi"]},{"from-tags":["quicumque","versus-xxvii"]},{"from-tags":["quicumque","versus-xxviii"]},{"from-tags":["quicumque","versus-xxix"]},{"from-tags":["quicumque","versus-xxx"]},{"from-tags":["quicumque","versus-xxxi"]},{"from-tags":["quicumque","versus-xxxii"]},{"from-tags":["quicumque","versus-xxxiii"]},{"from-tags":["quicumque","versus-xxxiv"]},{"from-tags":["quicumque","versus-xxxv"]},{"from-tags":["quicumque","versus-xxxvi"]},{"from-tags":["quicumque","versus-xxxvii"]},{"from-tags":["quicumque","versus-xxxviii"]},{"from-tags":["quicumque","versus-xxxix"]},{"from-tags":["quicumque","versus-xl"]}
 		]
 	},
 	{
-		"tags":["nunc-dimittis","versus-xxix"],
-		"datum":"Nunc dimíttis serum tuum Dómine, * secúndum verbum tuum in pace:"
+		"tags":["quicumque","versus-i"],
+		"datum":"Quicúmque vult salvus esse, * ante ómnia opus est, ut téneat cathólicam fidem."
 	},
 	{
-		"tags":["nunc-dimittis","versus-xxx"],
-		"datum":"Quia vidérunt óculi mei * salutáre tuum."
+		"tags":["quicumque","versus-ii"],
+		"datum":"Quam nisi quisque íntegram inviolatámque serváverit, * absque dúbio in ætérnum períbit."
 	},
 	{
-		"tags":["nunc-dimittis","versus-xxxi"],
-		"datum":"Quod parásti * ante fáciem ómnium populórum:"
+		"tags":["quicumque","versus-iii"],
+		"datum":"Fides autem cathólica hæc est: * ut unum Deum in Trinitáte, et Trinitátem in unitáte venerémur."
 	},
 	{
-		"tags":["nunc-dimittis","versus-xxxii"],
-		"datum":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Israël."
+		"tags":["quicumque","versus-iv"],
+		"datum":"Neque confundéntes persónas, * neque substántiam separántes."
+	},
+	{
+		"tags":["quicumque","versus-v"],
+		"datum":"Ália est enim persóna Patris, ália Fílii, * ália Spíritus sancti:"
+	},
+	{
+		"tags":["quicumque","versus-vi"],
+		"datum":"Sed Patris, et Fílii, et Spíritus sancti una est divínitas, * æquális glória, coætérna majéstas."
+	},
+	{
+		"tags":["quicumque","versus-vii"],
+		"datum":"Qualis Pater, talis Fílius, * talis Spíritus sanctus."
+	},
+	{
+		"tags":["quicumque","versus-viii"],
+		"datum":"Increátus Pater, increátus Fílius, * increátus Spíritus sanctus."
+	},
+	{
+		"tags":["quicumque","versus-ix"],
+		"datum":"Imménsus Pater, imménsus Fílius, * imménsus Spíritus sanctus."
+	},
+	{
+		"tags":["quicumque","versus-x"],
+		"datum":"Ætérnus Pater, ætérnus Fílius, ætérnus Spíritus sanctus."
+	},
+	{
+		"tags":["quicumque","versus-xi"],
+		"datum":"Et tamen non tres ætérni, * sed unus ætérnus."
+	},
+	{
+		"tags":["quicumque","versus-xii"],
+		"datum":"Sicut non tres increáti, nec tres imménsi, * sed unus increátus, et unus imménsus."
+	},
+	{
+		"tags":["quicumque","versus-xiii"],
+		"datum":"Simíliter omnípotens Pater, omnípotens Fílius, * omnípotens Spíritus sanctus."
+	},
+	{
+		"tags":["quicumque","versus-xiv"],
+		"datum":"Et tamen non tres omnipoténtes, sed unus omnípotens."
+	},
+	{
+		"tags":["quicumque","versus-xv"],
+		"datum":"Ita Deus Pater, Deus Fílius, * Deus Spíritus sanctus"
+	},
+	{
+		"tags":["quicumque","versus-xvi"],
+		"datum":"Et tamen non tres Dii: * sed unus est Deus."
+	},
+	{
+		"tags":["quicumque","versus-xvii"],
+		"datum":"Ita Dóminus Pater, Dóminus Fílius, * Dóminus Spíritus sanctus."
+	},
+	{
+		"tags":["quicumque","versus-xviii"],
+		"datum":"Et tamen non tres Dómini: sed unus est Dóminus."
+	},
+	{
+		"tags":["quicumque","versus-xix"],
+		"datum":"Quia, sicut singillátim unamquámque persónam Deum ac Dóminum confitéri christiána veritáte compéllimur: * ita tres Deos aut Dóminos dícere cathólica religióne prohibémur."
+	},
+	{
+		"tags":["quicumque","versus-xx"],
+		"datum":"Pater a nullo est factus: * nec creátus, nec génitus."
+	},
+	{
+		"tags":["quicumque","versus-xxi"],
+		"datum":"Fílius a Patre solo est: * non factus, nec creátus, sed génitus."
+	},
+	{
+		"tags":["quicumque","versus-xxii"],
+		"datum":"Spíritus sanctus a Patre et Fílio: * non factus, nec creátus, nec génitus, sed procédens."
+	},
+	{
+		"tags":["quicumque","versus-xxiii"],
+		"datum":"Unus ergo Pater, non tres Patres: unus Fílius, non tres Fílii: * unus Spíritus sanctus, non tres Spíritus sancti."
+	},
+	{
+		"tags":["quicumque","versus-xxiv"],
+		"datum":"Et in hac Trinitáte nihil prius aut postérius, nihil majus aut minus: * sed totæ tres persónæ coætérnæ sibi sunt et coæquáles."
+	},
+	{
+		"tags":["quicumque","versus-xxv"],
+		"datum":"Ita ut per ómnia, sicut jam supra dictum est, * et únitas in Trinitáte, et Trínitas in unitáte veneránda sit."
+	},
+	{
+		"tags":["quicumque","versus-xxvi"],
+		"datum":"Qui vult ergo salvus esse, * ita de Trinitáte séntiat."
+	},
+	{
+		"tags":["quicumque","versus-xxvii"],
+		"datum":"Sed necessárium est ad ætérnam salútem, * ut Incarnatiónem quoque Dómini nostri Jesu Christi fidéliter credat."
+	},
+	{
+		"tags":["quicumque","versus-xxviii"],
+		"datum":"Est ergo fides recta, ut credámus et confiteámur, * quia Dóminus noster Jesus Christus Dei Fílius, Deus et homo est."
+	},
+	{
+		"tags":["quicumque","versus-xxix"],
+		"datum":"Deus est ex substántia Patris ante sǽcula génitas: * et homo est ex substántia matris in sǽculo natus."
+	},
+	{
+		"tags":["quicumque","versus-xxx"],
+		"datum":"Perféctus Deus, perféctus homo: * ex ánima rationáli, et humána carne subsístens."
+	},
+	{
+		"tags":["quicumque","versus-xxxi"],
+		"datum":"Æquális Patri secúndum divinitátem: * minor Patre secúndum humanitátem."
+	},
+	{
+		"tags":["quicumque","versus-xxxii"],
+		"datum":"Qui, licet Deus sit et homo, * non duo tamen, sed unus est Christus."
+	},
+	{
+		"tags":["quicumque","versus-xxxiii"],
+		"datum":"Unus autem non conversióne divinitátis in carnem; * sed assumptióne humanitátis in Deum."
+	},
+	{
+		"tags":["quicumque","versus-xxxiv"],
+		"datum":"Unus omníno, non confusióne substántiæ, * sed unitáte persónæ."
+	},
+	{
+		"tags":["quicumque","versus-xxxv"],
+		"datum":"Nam sicut ánima rationális et caro unus est homo: * ita Deus et homo unus est Christus."
+	},
+	{
+		"tags":["quicumque","versus-xxxvi"],
+		"datum":"Qui passus est pro salúte nostra: descéndit ad ínferos: * tértia die resurréxit a mórtuis."
+	},
+	{
+		"tags":["quicumque","versus-xxxvii"],
+		"datum":"Ascéndit ad cœlos, sedet ad déxteram Dei Patris omnipoténtis: * inde ventúrus est judicáre vivos et mórtuos."
+	},
+	{
+		"tags":["quicumque","versus-xxxviii"],
+		"datum":"Ad cujus advéntum omnes hómines resúrgere habent cum corpóribus suis: * et redditúri sunt de factis própriis ratiónem."
+	},
+	{
+		"tags":["quicumque","versus-xxxix"],
+		"datum":"Et qui bona egérunt, ibunt in vitam ætérnam: * qui vero mala, in ignem ætérnum."
+	},
+	{
+		"tags":["quicumque","versus-xl"],
+		"datum":"Hæc est fides cathólica, * quam nisi quisque fidéliter firmitérque credíderit, salvus esse non póterit."
 	},
 	{
 		"tags":["magnificat"],
@@ -66,5 +210,27 @@
 	{
 		"tags":["magnificat","versus-lv"],
 		"datum":"Sicut locútus est ad patres nostros, * Abraham, et sémini ejus in sǽcula."
+	},
+	{
+		"tags":["nunc-dimittis"],
+		"datum":[
+			{"from-tags":["nunc-dimittis","versus-xxix"]},{"from-tags":["nunc-dimittis","versus-xxx"]},{"from-tags":["nunc-dimittis","versus-xxxi"]},{"from-tags":["nunc-dimittis","versus-xxxii"]}
+		]
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxix"],
+		"datum":"Nunc dimíttis serum tuum Dómine, * secúndum verbum tuum in pace:"
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxx"],
+		"datum":"Quia vidérunt óculi mei * salutáre tuum."
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxxi"],
+		"datum":"Quod parásti * ante fáciem ómnium populórum:"
+	},
+	{
+		"tags":["nunc-dimittis","versus-xxxii"],
+		"datum":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Israël."
 	}
 ]
