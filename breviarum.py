@@ -6,6 +6,8 @@ import functools
 import prioritizer
 import datamanage
 import warnings
+import logging
+import sys
 
 from kalendar import kalendar
 
@@ -156,7 +158,7 @@ def getbytags(daytags, query):
             return i
 
 def hour(hour: str, day):
-
+    assert not type(day) == datetime
     daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
     flatday = set()
     for i in daytags:
@@ -170,4 +172,78 @@ def hour(hour: str, day):
     primarydatum = process({hour, 'hora'} | primary, withtagprimary, pile)
     return primarydatum
 
-aestheticdisplay(hour('nona', date.today() - timedelta(days=0)))
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description="Divine Office Hours",
+    )
+
+    parser.add_argument(
+        "-v",
+        "--verbosity",
+        metavar="LEVEL",
+        type=lambda s: s.upper(),
+        choices=logging.getLevelNamesMapping().keys(),
+        default=logging.getLevelName(logging.getLogger().getEffectiveLevel()),
+        const="debug",
+        nargs="?",
+        help="Verbosity",
+    )
+
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=argparse.FileType("w"),
+        default="-",
+        help="Output filename",
+    )
+
+    parser.add_argument(
+        '-d',
+        '--date',
+        type=str,
+        default=str(date.today()),
+        help='Date to generate',
+    )
+    
+    defaulthour = None
+    
+    match datetime.now().hour:
+        case 0 | 2 | 3 | 4 | 5:
+            defaulthour = 'matutinum'
+        case 6 | 7:
+            defaulthour = 'prima'
+        case 8 | 9 | 10:
+            defaulthour = 'tertia'
+        case 11 | 12 | 13:
+            defaulthour = 'sexta'
+        case 14 | 15:
+            defaulthour = 'nona'
+        case 16 | 17 | 18 | 19:
+            defaulthour = 'vesperae'
+        case 20 | 21 | 22 | 23:
+            defaulthour = 'completorium'
+
+    parser.add_argument(
+        '-hr',
+        '--hour',
+        type=str,
+        default=str(defaulthour),
+        help='Liturgical hour to generate',
+    )
+
+    args = parser.parse_args()
+
+    if args.verbosity:
+        logging.getLogger().setLevel(args.verbosity)
+
+    # Generate kalendar
+    ret = hour(args.hour, datetime.strptime(args.date, '%Y-%m-%d').date())
+
+    if args.output == sys.stdout:
+        print(aestheticdisplay(ret))
+    else:
+        # Write JSON output
+        args.output.write(dump_data(ret) + "\n")

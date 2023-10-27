@@ -37,6 +37,7 @@ hasivespers = {'simplex','semiduplex','duplex','duplex-majus','duplex-ii-classis
 hasiivespers = {'feria','semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
 def getvespers(day):
+    assert not type(day) == datetime
     currday = datamanage.getdate(day)
     nextday = datamanage.getdate(day + timedelta(days=1))
     ivespers = [i.union({'i-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasivespers) and not 'infra-octavam' in occ, nextday)]
