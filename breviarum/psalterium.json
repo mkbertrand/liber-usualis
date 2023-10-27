@@ -688,6 +688,121 @@
 		"datum":"Fac Deus * poténtiam in bráchio tuo: dispérde supérbos, et exálta húmiles."
 	},
 	{
+		"tags":["feria-vi","vesperae","antiphona-i","antiphona"],
+		"datum":"In conspéctu * Angelórum psallam tibi Deus meus."
+	},
+	{
+		"tags":["feria-vi","vesperae","i-psalmus"],
+		"forwards-to":["psalmus-cxxxvii"]
+	},
+	{
+		"tags":["feria-vi","vesperae","antiphona-ii","antiphona"],
+		"datum":"Dómine * probásti me, et cognovísti me."
+	},
+	{
+		"tags":["feria-vi","vesperae","ii-psalmus"],
+		"forwards-to":["psalmus-cxxxviii"]
+	},
+	{
+		"tags":["feria-vi","vesperae","antiphona-iii","antiphona"],
+		"datum":"A viro iníquo * líbera me Dómine."
+	},
+	{
+		"tags":["feria-vi","vesperae","iii-psalmus"],
+		"forwards-to":["psalmus-cxxxix"]
+	},
+	{
+		"tags":["feria-vi","vesperae","antiphona-iv","antiphona"],
+		"datum":"Dómine * clamávi ad te, exaúdi me."
+	},
+	{
+		"tags":["feria-vi","vesperae","iv-psalmus"],
+		"forwards-to":["psalmus-cxl"]
+	},
+	{
+		"tags":["feria-vi","vesperae","antiphona-v","antiphona"],
+		"datum":"Pórtio mea * Dómine sit in terra vivéntium."
+	},
+	{
+		"tags":["feria-vi","vesperae","v-psalmus"],
+		"forwards-to":["psalmus-cxli"]
+	},
+	{
+		"tags":["feria-vi","vesperae","hymnus"],
+		"datum":[
+			"Hóminis supérne Cónditor,/Qui cuncta solus órdinans,/Humum jubes prodúcere/Reptántis et feræ genus:",
+			"Et magna rerum córpora,/Dictu jubéntis vívida,/Per témporum certas vices/Obtemperáre sérvulis:",
+			"Repélle, quod cupídinis/Ciénte vi nos ímpetit,/Aut móribus se súggerit,/Aut áctibus se intérserit.",
+			"Da gaudiórum prǽmia,/Da gratiárum múnera:/Dissólve litis víncula:/Astrínge pacis fœdera.",
+			{"from-tags":["terminatio","hymnus","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["feria-vi","vesperae","antiphona-magnificat","antiphona"],
+		"datum":"Depósuit * poténtes, sanctos persequéntes: et exaltávit húmiles, Christum confiténtes."
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","antiphona-i","antiphona"],
+		"datum":"Benedíctus * Dóminus Deus meus."
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","i-psalmus"],
+		"forwards-to":["psalmus-cxliii"]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","antiphona-ii","antiphona"],
+		"datum":"Per síngulos dies * bendicam te Dómine."
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","ii-psalmus"],
+		"forwards-to":["psalmus-cxliv"]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","antiphona-iii","antiphona"],
+		"datum":"Laudábo * Deum meum in vita mea."
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","iii-psalmus"],
+		"forwards-to":["psalmus-cxlv"]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","antiphona-iv","antiphona"],
+		"datum":"Deo nostro * jucúnda sit laudátio."
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","iv-psalmus"],
+		"forwards-to":["psalmus-cxlvi"]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","antiphona-v","antiphona"],
+		"datum":"Lauda * Jerúsalem Dóminum."
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","v-psalmus"],
+		"forwards-to":["psalmus-cxlvii"]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","capitulum"],
+		"datum":"O altitúdo divitiárum sapiéntiæ et sciéntiæ Dei: quam incomprehensibília sunt judícia ejus, et investigábiles viæ ejus!"
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","hymnus"],
+		"datum":[
+			"Jam sol recédit ígneus:/Tu lux perénnis Unitas,/Nostris, beáta Trínitas,/Infúnde lumen córdibus.",
+			"Te mane laudum cármine,/Te deprecámur véspere;/Dignéris ut te súpplices/Laudémus inter cœlites.",
+			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","versiculus"],
+		"datum":["V. Dirigátur Dómine orátio mea.","R. Sicut incénsum in conspecto tuo."]
+	},
+	{
+		"tags":["dominica","i-vesperae","vesperae","antiphona-magnificat","antiphona"],
+		"datum":"Suscépit * Deus Israël púerum suum: sicut locútus est ad Abraham, et semen ejus: exaltáre húmiles usque in sǽculum."
+	},
+	{
 		"tags":["completorium","lectio-brevis","benedictio"],
 		"datum":"Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens."
 	},
