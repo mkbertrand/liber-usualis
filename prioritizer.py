@@ -16,10 +16,10 @@ def load_data(p: str):
     def recurse(obj):
         match obj:
             case dict():
-                return {datetime.strptime(k, '%Y-%m-%d').date() if not re.search('^\d{4}-\d{2}-\d{2}$',k) == None else k: recurse(v) for k, v in obj.items()}
+                return {datetime.strptime(k, '%Y-%m-%d').date() if re.search('^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
                 return {k: recurse(v) for k, v in obj.items()}
             case list():
-                if all(type(x) == str for x in obj):
+                if all(type(x) is str for x in obj):
                     return set(obj)
                 return [recurse(v) for v in obj]
             case _:
@@ -37,10 +37,10 @@ hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-c
 hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
 def getvespers(day):
-    assert not type(day) == datetime
+    assert type(day) is not datetime
     currday = datamanage.getdate(day)
     nextday = datamanage.getdate(day + timedelta(days=1))
-    ivespers = [i.union({'i-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasivespers) and not 'infra-octavam' in occ, nextday)]
+    ivespers = [i.union({'i-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasivespers) and 'infra-octavam' not in occ, nextday)]
     iivespers = [i.union({'ii-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasiivespers), currday)]
     ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint({'commemoratum','temporale','fixum'}), ivespers))
     iivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint({'commemoratum','temporale','fixum'}), iivespers))
@@ -54,7 +54,7 @@ def getvespers(day):
         for i in iivespers:
             if i == iivespersprimarycandidates[0]:
                 i.add('primarium')
-    if not len(ivespersprimarycandidates) == 0:
+    if len(ivespersprimarycandidates) != 0:
         for i in ivespers:
             if i == ivespersprimarycandidates[0]:
                 i.add('primarium')
@@ -64,12 +64,12 @@ def getvespers(day):
         for coincidence in coincidencetable:
             for i in vesperal:
                 if coincidence['indices'].issubset(i) and i.isdisjoint({'fixum'}):
-                    if not type(coincidence['response']) == list:
+                    if type(coincidence['response']) is not list:
                         perform_action(coincidence, day, i)
                     else:
                         for j in coincidence['response']:
                             for k in vesperal:
-                                if not k == i and not 'fixum' in k and j['indices'].issubset(k):
+                                if k != i and 'fixum' not in k and j['indices'].issubset(k):
                                     target = i
                                     if 'target' in j and j['target'] == 'b':
                                         target = k

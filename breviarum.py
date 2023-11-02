@@ -28,7 +28,7 @@ def load_data(p: str):
             case dict():
                 return {k: recurse(v, key=k) for k, v in obj.items()}
             case list():
-                if all(type(x) == str for x in obj) and not key == 'datum':
+                if all(type(x) is str for x in obj) and key != 'datum':
                     return frozenset(obj)
                 return [recurse(v) for v in obj]
             case _:
@@ -47,7 +47,7 @@ def dump_data(j):
             case list():
                 return [recurse(v) for v in obj]
             case set() | frozenset():
-                if all(type(x) == str for x in obj):
+                if all(type(x) is str for x in obj):
                     return list(obj)
                 return [recurse(v) for v in obj]
             case _:
@@ -107,9 +107,9 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
         return None
     elif len(result) == 1:
         return result[0]
-    elif not len(result[-1]['tags']) == len(result[-2]['tags']):
+    elif len(result[-1]['tags']) != len(result[-2]['tags']):
         return result[-1]
-    elif not priortags == None:
+    elif priortags is not None:
         logging.debug(f'Search differentiation used priortag to rank {result}' )
         strippedresult = [a['tags'] & priortags for a in result]
         if not len(strippedresult[-1]) == len(strippedresult[-2]):
@@ -118,10 +118,10 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
         raise RuntimeError(f'Multiple equiprobable results for queries {queries}:\n{result[-1]}\n{result[-2]}')
     else:
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
-    
+
 def pickcascades(search, cascades):
     ret = []
-    if cascades == None:
+    if cascades is None:
         return [search]
     else:
         for cascade in cascades:
@@ -134,7 +134,7 @@ def pickcascades(search, cascades):
         return ret
 
 def unioncascades(item, cascades):
-    if cascades == None:
+    if cascades is None:
         yield item
     else:
         for cascade in cascades:
@@ -144,9 +144,9 @@ def unioncascades(item, cascades):
 def process(item, cascades, pile):
 
      # None can sometimes be the result of a search and is expected, but indicates an absent item
-    if item == None:
+    if item is None:
         return 'Absens'
-    elif type(item) == set:
+    elif type(item) is set:
         item = search(pickcascades(item, cascades), pile, priortags = item)
 
     # Next cascade (not to be used for the current search, but only for deeper searches
@@ -154,7 +154,7 @@ def process(item, cascades, pile):
 
     if 'from-tags' in item:
         response = process(search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
-        if ('tags' in item):
+        if 'tags' in item:
             return {'tags':item['tags'], 'datum':response}
         else:
             return response
@@ -164,16 +164,16 @@ def process(item, cascades, pile):
         probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist(pickcascades(item['forwards-to'], cascades)))
         return process(search(pickcascades(item['forwards-to'], cascades), probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
 
-    elif type(item['datum']) == list:
+    elif type(item['datum']) is list:
         ret = []
         for i in item['datum']:
-            if type(i) == str:
+            if type(i) is str:
                 ret.append(i)
             else:
                 iprocessed = process(i, cascades, pile)
-                if iprocessed == None:
+                if iprocessed is None:
                     ret.append('Absens')
-                elif type(iprocessed) == list:
+                elif type(iprocessed) is list:
                     ret.extend(iprocessed)
                 else:
                     ret.append(iprocessed)
@@ -182,14 +182,14 @@ def process(item, cascades, pile):
     return item
 
 def replacetagrecurse(datum, target, item):
-    if type(datum) == str:
+    if type(datum) is str:
         return datum
     elif target.issubset(datum['tags']):
         datum['datum'] = item
-    elif type(datum['datum']) == list:
+    elif type(datum['datum']) is list:
         for i in range(0, len(datum['datum'])):
             ret = replacetagrecurse(datum['datum'][i], target, item)
-            if not datum['datum'][i] == ret:
+            if datum['datum'][i] != ret:
                 datum['datum'][i] = ret
                 return datum
     return datum
@@ -200,7 +200,7 @@ def getbytags(daytags, query):
             return i
 
 def hour(hour: str, day):
-    assert not type(day) == datetime
+    assert type(day) is not datetime
     daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
     for i in daytags:
         for j in implicationtable:
@@ -208,7 +208,7 @@ def hour(hour: str, day):
                 i |= j['implies']
 
     pile = datamanage.getbreviarumfiles(defaultpile | flattensetlist(daytags) | {hour})
-    
+
     primary = getbytags(daytags, 'primarium')
     primarydatum = process({hour, 'hora'} | primary, [(primary | {hour}), (getbytags(daytags, 'antiphona-bmv'))], pile)
     return primarydatum
@@ -248,9 +248,9 @@ if __name__ == "__main__":
         default=str(date.today()),
         help='Date to generate',
     )
-    
+
     defaulthour = None
-    
+
     match datetime.now().hour:
         case 0 | 2 | 3 | 4 | 5:
             defaulthour = 'matutinum laudes'

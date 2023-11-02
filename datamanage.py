@@ -19,7 +19,7 @@ def load_data(p: str):
             case dict():
                 return {k: recurse(v, key=k) for k, v in obj.items()}
             case list():
-                if all(type(x) == str for x in obj) and not key == 'datum':
+                if all(type(x) is str for x in obj) and key != 'datum':
                     return set(obj)
                 return [recurse(v) for v in obj]
             case _:
@@ -40,10 +40,10 @@ def getbreviarumfile(query):
     logging.debug(f'Loading {query}')
     return load_data(query)
 
-#No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
+# No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
 def getbreviarumfiles(queries):
     ret = []
-    for (root,dirs,files) in os.walk(data_root.joinpath('breviarum')):
+    for root,dirs,files in os.walk(data_root.joinpath('breviarum')):
         for i in files:
             if i[:-5] in queries:
                 got = getbreviarumfile(data_root.joinpath('breviarum').joinpath(root).joinpath(i))
@@ -58,7 +58,7 @@ def getbreviarumfiles(queries):
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('intonata')
                         icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
-                        if not icopy['datum'][-1] in ['.',',','?','!',':',';']:
+                        if icopy['datum'][-1] not in ['.',',','?','!',':',';']:
                             icopy['datum'] += '.'
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('repetita')
@@ -66,5 +66,5 @@ def getbreviarumfiles(queries):
                         added.append(icopy)
                 ret.extend(got)
                 ret.extend(added)
-                
+
     return ret
