@@ -215,6 +215,7 @@
 					{"from-tags":["vesperae","versiculus"]},
 					{"from-tags":["vesperae","antiphona","antiphona-magnificat","intonata"]},
 					{"from-tags":["magnificat"]},
+					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-magnificat"]}
 				]
 			},
@@ -257,7 +258,7 @@
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["completorium","antiphona"]},
 			{"from-tags":["completorium","hymnus"]},
-			{"from-tags":["completorium","capitulum"]},
+			{"from-tags":["completorium","capitulum","ordinarium"]},
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
@@ -266,6 +267,7 @@
 			{"from-tags":["completorium","versiculus"]},
 			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis","intonata"]},
 			{"from-tags":["nunc-dimittis"]},
+			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis"]},
 			{"from-tags":["completorium","preces"]},
 			{"from-tags":["collecta-primaria"]},

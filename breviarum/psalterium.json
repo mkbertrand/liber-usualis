@@ -45,7 +45,7 @@
 	},
 	{
 		"tags":["prima","capitulum"],
-		"datum":"Regi sæculórum immortáli et invisíbili, soli Deo honor et glória in sǽcula sæculórum. Amen."
+		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
 		"tags":["prima","responsorium"],
@@ -235,7 +235,7 @@
 	},
 	{
 		"tags":["prima","feria","capitulum"],
-		"datum":"Pacem et veritátem dilígite, ait Dóminus omnípotens."
+		"datum":"Pacem et veritátem dilígite, * ait Dóminus omnípotens."
 	},
 	{
 		"tags":["tertia","semiduplex","hymnus"],
@@ -454,8 +454,8 @@
 		"forwards-to":["psalmus-cxiii"]
 	},
 	{
-		"tags":["vesperae","capitulum"],
-		"datum":"Benedíctus Deus, et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus tótius consolatiónis, qui consolátur nos in omni tribulatióne nostra."
+		"tags":["vesperae","capitulum","temporale"],
+		"datum":"Benedíctus Deus, et Pater Dómini nostri Jesu Christi,  + Pater misericordiárum, et Deus tótius consolatiónis, * qui consolátur nos in omni tribulatióne nostra."
 	},
 	{
 		"tags":["dominica","ii-vesperae","vesperae","hymnus"],
@@ -783,7 +783,7 @@
 	},
 	{
 		"tags":["dominica","i-vesperae","vesperae","capitulum"],
-		"datum":"O altitúdo divitiárum sapiéntiæ et sciéntiæ Dei: quam incomprehensibília sunt judícia ejus, et investigábiles viæ ejus!"
+		"datum":"O altitúdo divitiárum sapiéntiæ et sciéntiæ Dei: + quam incomprehensibília sunt judícia ejus, * et investigábiles viæ ejus!"
 	},
 	{
 		"tags":["dominica","i-vesperae","vesperae","hymnus"],
@@ -820,7 +820,7 @@
 		"datum":["Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.","Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",{"from-tags":["terminatio","hymnus","praesta-pater"]}]
 	},
 	{
-		"tags":["completorium","capitulum"],
+		"tags":["completorium","capitulum","ordinarium"],
 		"datum":"Tu autem in nobis es, Dómine, + et nomen sanctum tuum invocátum est super nos: * ne derelínquas nos, Dómine, Deus noster."
 	},
 	{
