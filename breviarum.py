@@ -167,8 +167,7 @@ def hour(hour: str, day):
     pile = datamanage.getbreviarumfiles(defaultpile | flatday)
     
     primary = getbytags(daytags, 'primarium')
-    withtagprimary = primary | getbytags(daytags, 'antiphona-bmv')
-    withtagprimary -= {'i-vesperae','antiphona-bmv'}
+    withtagprimary = primary | (getbytags(daytags, 'antiphona-bmv') - {'i-vesperae','antiphona-bmv', 'temporale'})
     primarydatum = process({hour, 'hora'} | primary, withtagprimary, pile)
     return primarydatum
 
