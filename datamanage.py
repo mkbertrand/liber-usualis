@@ -49,6 +49,11 @@ def getbreviarumfiles(queries):
                 got = getbreviarumfile(data_root.joinpath('breviarum').joinpath(root).joinpath(i))
                 added = []
                 for i in got:
+                    if 'antiphona-invitatorium' in i['tags']:
+                        icopy = copy.deepcopy(i)
+                        icopy['tags'].add('pars')
+                        icopy['datum'] = icopy['datum'].split('*')[1].lstrip()
+                        added.append(icopy)
                     if 'antiphona' in i['tags']:
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('intonata')
