@@ -12,6 +12,7 @@ import sys
 from kalendar import kalendar
 
 data_root = pathlib.Path(__file__).parent
+defaultpile = {'horae','psalterium','formulae','psalmi','cantica'}
 
 def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
@@ -50,7 +51,7 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-def aestheticdisplay(j):
+def prettyprint(j):
     def recurse(obj):
         match obj:
             case dict():
@@ -67,30 +68,6 @@ def anysearch(query, pile):
     for i in pile:
         if i['tags'].issubset(query):
             yield i
-
-def exactsearch(query, pile):
-    def exactsearchyield():
-        for i in pile:
-            if i['tags'] == query:
-                yield i
-    result = list(exactsearchyield())
-    if len(result) == 0:
-        warnings.warn(f'0 tags found for query {query}')
-        return None
-    elif not len(result) == 1:
-        raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
-    else:
-        return result[0]
-
-def singlesearch(query, pile):
-    result = list(anysearch(query, pile))
-    if len(result) == 0:
-        warnings.warn(f'0 tags found for query {query}')
-        return None
-    elif not len(result) == 1:
-        raise RuntimeError(f'{len(result)} tags found for query {query}:\n{result}')
-    else:
-        return result[0]
 
 def search(query, pile, multipleresults = False, multipleresultssort = None):
     result = list(sorted(list(anysearch(query, pile)), key=lambda a: len(a['tags'])))
@@ -113,12 +90,12 @@ def process(item, withtags, pile):
     if item == None:
         return 'Absens'
     elif type(item) == set:
-        item = search(item.union(withtags), pile)
+        item = search(item | withtags, pile)
     if 'from-tags' in item:
-        response = process(search(item['from-tags'].union(withtags), pile), item['with-tags'].union(withtags) if 'with-tags' in item else withtags, pile)
+        response = process(search(item['from-tags'] | withtags, pile), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
         return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
-        return process(search(item['forwards-to'].union(withtags), pile), withtags, pile)
+        return process(search(item['forwards-to'], datamanage.getbreviarumfiles(defaultpile | item['forwards-to'])), withtags, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
@@ -150,8 +127,6 @@ def replacetagrecurse(datum, target, item):
                 return datum
     return datum
 
-defaultpile = {'horae','psalterium','formulae','psalmi','cantica'}
-
 def getbytags(daytags, query):
     for i in daytags:
         if query in i:
@@ -167,7 +142,7 @@ def hour(hour: str, day):
     pile = datamanage.getbreviarumfiles(defaultpile | flatday)
     
     primary = getbytags(daytags, 'primarium')
-    withtagprimary = primary | (getbytags(daytags, 'antiphona-bmv') - {'i-vesperae','antiphona-bmv', 'temporale'})
+    withtagprimary = primary | (getbytags(daytags, 'antiphona-bmv') - {'i-vesperae','antiphona-bmv', 'temporale'}) | {hour}
     primarydatum = process({hour, 'hora'} | primary, withtagprimary, pile)
     return primarydatum
 
@@ -242,7 +217,7 @@ if __name__ == "__main__":
     ret = hour(args.hour, datetime.strptime(args.date, '%Y-%m-%d').date())
 
     if args.output == sys.stdout:
-        print(aestheticdisplay(ret))
+        print(prettyprint(ret))
     else:
         # Write JSON output
         args.output.write(dump_data(ret) + "\n")
