@@ -1,12 +1,12 @@
 [
 	{
 		"tags":["deus-in-adjutorium","ferialis"],
-		"src":"deus-in-adjutorium.gabc",
+		"src":"https://gregobase.selapa.net/chant.php?id=15354",
 		"datum":["V. Deus in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui Sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."]
 	},
 	{
 		"tags":["deus-in-adjutorium","festalis"],
-		"src":"deus-in-adjutorium.gabc",
+		"src":"https://gregobase.selapa.net/chant.php?id=7417",
 		"datum":["V. Deus in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui Sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."]
 	},
 	{
@@ -81,11 +81,11 @@
 		]
 	},
 	{
-		"tags":["terminatio","hymnus","deo-patri"],
+		"tags":["terminatio","deo-patri"],
 		"datum":["Deo Patri sit glória,/Ejúsque soli Fílio,/Cum Spíritu Paráclito,/Nunc, et per omne sǽculum.","Amen."]
 	},
 	{
-		"tags":["terminatio","hymnus","praesta-pater"],
+		"tags":["terminatio","praesta-pater"],
 		"datum":["Præsta, Pater piísime,/Patríque compar Únice,/Cum Spíritu Paráclito/Regnans per omne sǽculum.","Amen."]
 	},
 	{

@@ -270,7 +270,10 @@
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis"]},
 			{"from-tags":["completorium","preces"]},
-			{"from-tags":["collecta-primaria"]},
+			{
+				"from-tags":["collecta-primaria"],
+				"with-tags":["completorium"]
+			},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["completorium","dominus-vobiscum"]

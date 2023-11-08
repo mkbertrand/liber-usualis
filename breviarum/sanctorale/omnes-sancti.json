@@ -1,0 +1,392 @@
+[
+	{
+		"tags":["omnes-sancti","vigilia","collecta"],
+		"datum":"Dómine Deus noster, multíplica super nos grátiam tuam: et quorum prævenímus gloriósa solémnia, tríbue súbsequi in sancta professióne lætítiam."
+	},
+	{
+		"tags":["omnes-sancti","vigilia","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["omnes-sancti","antiphona-i","antiphona"],
+		"datum":"Vidi turbam magnam, * quam dinumeráre nemo póterat, ex ómnibus géntibus, stantes ante thronum."
+	},
+	{
+		"tags":["omnes-sancti","vesperae","psalmus-i"],
+		"forwards-to":["psalmus-cix"]
+	},
+	{
+		"tags":["omnes-sancti","antiphona-ii","antiphona"],
+		"datum":"Et omnes Ángeli * stabant in circúitu throni, et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum."
+	},
+	{
+		"tags":["omnes-sancti","vesperae","psalmus-ii"],
+		"forwards-to":["psalmus-cx"]
+	},
+	{
+		"tags":["omnes-sancti","antiphona-iii","antiphona"],
+		"datum":"Redemísti nos * Dómine Deus in sánguine tuo ex omni tribu, et linqua, et pópulo, et natióne, et fecísti nos Deo nostro regnum."
+	},
+	{
+		"tags":["omnes-sancti","vesperae","psalmus-iii"],
+		"forwards-to":["psalmus-cxi"]
+	},
+	{
+		"tags":["omnes-sancti","antiphona-iv","antiphona"],
+		"datum":"Benedícite Dóminum * omnes elécti ejus: ágite lætítiæ, et confitémini illi."
+	},
+	{
+		"tags":["omnes-sancti","vesperae","psalmus-iv"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["omnes-sancti","antiphona-v","antiphona"],
+		"datum":"Hymnus ómnibus Sanctis ejus: * fíliis Israël, pópulo appropinquánti sibi: glória hæc est ómnibus Sanctis ejus."
+	},
+	{
+		"tags":["omnes-sancti","vesperae","i-vesperae","psalmus-iv"],
+		"forwards-to":["psalmus-cxvi"]
+	},
+	{
+		"tags":["omnes-sancti","capitulum"],
+		"datum":"Ecce ego Joánnes vidi álterum Ángelum ascendéntem ab ortu solis, habéntem signum Dei vivi: et clamávit voce magna quátuor Ángelis, quibus datum est nocére terræ et mari, dicens: Nolíte nocére terræ et mari, neque arbóribus, quadúsque signémus servos Dei nostri in fróntibus eórum."
+	},
+	{
+		"tags":["omnes-sancti","vesperae","hymnus"],
+		"datum":[
+			"Placáre, Christe, sérvulis,/Quibus Patris cleméntiam/Tuæ ad tribúnal grátiæ/Patróna Virgo pósulat.",
+			"Et vos beáta, per novem/Distíncta gyros ágmina,/Antíqua cum præséntibus,/Futúra damna péllite.",
+			"Apóstoli cum Vátibus,/Apud sevérum Júdicem,/Veris reórum flétibus/Expóscite indulgéntiam.",
+			"Vos purpuráti Mártyres,/Vos candidáti prǽmio/Confessiónis, éxsules/Vocáte nos in pátriam.",
+			"Choréa casta Vírginum,/Et quos erémus íncolas/Transmísit astris, cœlitum/Locáte nos in sédibus.",
+			"Auférte gentem pérfidam/Credéntium de fínibus,/Ut unus omnes únicum/Ovíle nos pastor regat.",
+			"Deo Patri sit glória,/Natóque Patris único,Sancto simul Paráclito,In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["omnes-sancti","vesperae","i-vesperae","versiculus"],
+		"datum":["V. Lætámini in Dómino, et exsultáte justi.","R. Et gloriámini omnes recti corde."]
+	},
+	{
+		"tags":["omnes-sancti","vesperae","i-vesperae","antiphona-magnificat","antiphona"],
+		"datum":"Ángeli, * Archángeli, Throni et Dominatiónes, Principátus et Potestátes, Virtútes cœlórum, Chérubim atque Séraphim, Patriárchæ et Prophétæ, sancti legis Doctóres, Apóstoli, omnes Christi Mártyres, sancti Confessóres, Vírgines Dómini, Anachorítæ, Sanctíque omnes intercédite pro nobis."
+	},
+	{
+		"tags":["omnes-sancti","collecta"],
+		"datum":"Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus largiáris."
+	},
+	{
+		"tags":["omnes-sancti","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-invitatorium","antiphona"],
+		"datum":"Regem regum Dóminum veníte adorémus: * Quia ipse est coróna Sanctórum ómnium."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","hymnus"],
+		"forwards-to":["omnes-sancti","vesperae","hymnus"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-i","antiphona"],
+		"datum":"Novit Dóminus * viam justórum, qui in lege ejus meditántur die ac nocte."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-i"],
+		"forwards-to":["psalmus-i"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-ii","antiphona"],
+		"datum":"Mirificávit Dóminus * Sanctos suos, et exaudívit eos clamántes ad se."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-ii"],
+		"forwards-to":["psalmus-iv"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-iii","antiphona"],
+		"datum":"Admirábile est * nomen tuum Dómine: quia glória et honóre coronásti Sanctos tuos, et constituísti eos super ópera mánuum tuárum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-iii"],
+		"forwards-to":["psalmus-viii"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Ex libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"Et ecce sedes pósita erat in cœlo, et supra sedem sedens. Et qui sedébat símilis erat aspéctui lápidis jáspidis, et sárdinis: et iris erat in circúitu sedis símilis visiónis smarágdinæ. Et in circúitu sedis sedília vigínti quátuor: et super thronos vigínti quátuor senióres sedéntes, circumamícti vestiméntis albis, et in capítibus eórum corónæ aúræ. Et de throno procedébant fúlgura, et voces, et tonítrua: et septem lámpades ardéntes ante thronum, qui sunt septem spíritus Dei. Et in conspéctu sedis tamquam mare vítreum símile crystállo: et in médio sedis, et in circúitu sedis, quátuor animália plena óculis ante et retro. Et ánimal primum símile leóni, et secúndum ánimal símile vítulo, et tértium ánimal habens fáciem quasi hóminis, et quartum ánimal símile áquilæ volánti. Et quátuor animália, síngula eórum habébant alas senas: et in circúitu, et intus plena sunt óculis: et réquiem non habébant die ac nocte, dicéntia: Sanctus, Sanctus, Sanctus Dóminus Deus omnípotens, qui erat, et qui est, et qui ventúrus est."
+		]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-i"],
+		"datum":"Vidi Dóminum sedéntem super sólium excélsum et elevátum: et plena erat omnis terra majestáte ejus:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-i","responsum"],
+		"datum":"Et ea quæ sub ipso erant, replébant templum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-i","versum"],
+		"datum":"Séraphim stabant super illud: sex alæ uni, et sex alæ álteri."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-ii"],
+		"datum":"Et vidi in déxtera sedéntis supra thronum, librum scriptum intus et foris, signátum sigíllis septem. Et vidi Ángelum fortem, prædicántem voce magna: Quis est dignus aperíre librum, et sólvere signácula ejus? Et nemo póterat neque in cœlo, neque in terra, neque subtus terram, aperíre librum, neque respícere illum. Et ego flebam multum, quóniam nemo dignus invéntus est aperíre librum, nec vidére eum. Et unus de senióribus dixit mihi: Ne fléveris: ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus. Et vidi: et ecce in médio throni et quátuor animálium, et in médio seniórum, Agnum stantem, tamquam occísum, habéntem córnua septem et óculos septem: qui sunt septem spíritus Dei, missi in omnem terram. Et venit: et accépit de déxtera sedéntis in throno librum. Et cum aperuísset librum, quátuor animália et vigínti quátuor senióres cecidérunt coram Agno, habéntes sínguli cítharas, et phíalas aúreas plenas odoramentórum, quæ sunt oratiónes sanctórum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-ii"],
+		"datum":"Beáta es Virgo María, Dei Génetrix, quæ credidísti Dómino: perfécta sunt in te quæ dicta sunt tibi: ecce exaltáta es super choros Angelórum:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-ii","responsum"],
+		"datum":"Intercéde pro nobis ad Dóminum Deum nostrum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-ii","versum"],
+		"datum":"Ave María, grátia plena, Dóminus tecum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-iii"],
+		"datum":"Et cantábant cánticum novum, dicéntes: Dignus es Dómine accípere librum, et aperíre signácula ejus: quóniam occísus es, et redemísti nos Deo in sánguine tuo ex omni tribu, et lingua, et pópulo, et natióne: et fecísti nos Deo nostro regnum, et sacerdótes: et regnábimus super terram. Et vidi, et audívi vocem Angelórum multórum in circúitu throni, et animálium, et seniórum: et erat númerus eórum míllia míllium, dicéntium voce magna: Dignus est Agnus qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem. Et omnem creatúram quæ in cœlo est, et super terram, et sub terra, et quæ sunt in mari et quæ in eo: omnes audívi dicéntes: Sedénti in throno, et Agno: benedíctio, et honor, et glória, et potéstas in sǽcula sæculórum. Et quátuor animália dicébant: Amen. Et vigínti quátuor senióres cecidérunt in fácies suas: et adoravérunt vivéntem in sǽcula sæculórum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-iii"],
+		"datum":"In conspéctu Angelórum psallam tibi:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-iii","responsum"],
+		"datum":"Et adorábo ad templum sanctum tuum, et confitébor nómini tuo Dómine."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-iii","versum"],
+		"datum":"Super misericórdia tua et veritáte tua, quóniam magnificásti super nos nomen sanctum tuum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-iv","antiphona"],
+		"datum":"Dómine, * qui operáti sunt justítiam, habitábunt in tabernáculo tuo, et requiéscent in monte sancto tuo."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-iv"],
+		"forwards-to":["psalmus-xiv"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-v","antiphona"],
+		"datum":"Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-v"],
+		"forwards-to":["psalmus-xxiii"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-vi","antiphona"],
+		"datum":"Lætámini in Dómino, * et exsultáte justi, et gloriámini omnes recti corde."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-vi"],
+		"forwards-to":["psalmus-xxxi"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-iv"],
+		"datum":[
+			"Sermo venerábilis Bedæ Presbýteri.",
+			"Hódie, dilectíssimi, ómnium Sanctórum sub una solemnitátis lætítia celebrámus festivitátem: quorum societáte cœlum exsúltat, quorum patrocíniis terra lætátur, triúmphis Ecclésia sancta coronátur, quorum conféssio quanto in passióne fórtior, tanto est clárior in honóre: quia, dum crevit pugna, crevit et pugnántium glória, et martýrii triúmphus multíplici passiónum génere adornátur: perque gravióra torménta, gravióra fuére et prǽmia: dum cathólica mater Ecclésia, quæ per totum orbem longe latéque diffúsa est, in ispo cápite suo Christo Jesu edócta est, contumélias, cruces et mortem non timére; magis magísque roboráta, non resisténdo, sed perferéndo, univérsis, quos ágmine ínclyto carcer pœnális inclúsit, pari et símili calóre virtútis ad geréndum certámen, glóriam triumphálem inspirávit."
+		]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-iv"],
+		"datum":"Præcúrsor Dómini venit, de quo ipse testátur:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-iv","responsum"],
+		"datum":"Nullus major inter natos mulíerem Joánne Baptísta."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-iv","versum"],
+		"datum":"Hic est prophéta, et plus quam prophéta, de quo Salvátor ait."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-v"],
+		"datum":"O vere beáta mater Ecclésia, quam sic honor divínæ dignatiónis illúminat, quam vincéntium gloriósus Mártyrum sanguis exórnat, quam inviolátæ confessiónis cándida índuit virgínitas! Flóribus ejus nec rosæ nec lília desunt. Certent nunc caríssimi, sínguli, ut ad utrósque honóres amplíssimam accípiant dignitátem, corónas, vel de virginitáte cándidas, vel de passióne purpúreas. In cœléstibus castris pax et ácies habent flores suos, quibus mílites Christi coronántur."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-v"],
+		"datum":"Isti sunt qui vivéntes in carne, plantavérunt Ecclésiam sánguine suo:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-v","responsum"],
+		"datum":"Cálicem Dómini bibérunt, et amíci Dei facti sunt."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-v","versum"],
+		"datum":"In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-vi"],
+		"datum":"Dei enim ineffábilis et imménsa bónitas étiam hoc provídit, ut labórum quidem tempus et agónis non exténderet, nec longum fáceret, aut ætérnum, sed breve, et ut ita dicam, momentáneum: ut in hac brevi et exígua vita agónes essent et labóres; in illa vero quæ ætérna est, corónæ et prǽmia meritórum: ut labóres quidem cito finiréntur, meritórum vero prǽmia sine fine durárent: ut post hujus mundi ténebras visúri essent candidíssimam lucem, et acceptúri majórem passiónum cunctárum acerbitátibus beatitúdinem, testánte hoc idem Apóstolo, ubi ait: Non sunt condígnæ passiónes hujus témporis ad superventúram glóriam, quæ revelábitur in nobis."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-vi"],
+		"datum":"Sancti mei, qui in carne pósiti, certámen habuístis:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-vi","responsum"],
+		"datum":"Mercédem labóris ego reddam vobis."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-vi","versum"],
+		"datum":"Veníte benedícti Patris mei, percípite regnum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-vii","antiphona"],
+		"datum":"Timéte Dóminum * omnes Sancti ejus, quóniam nihil deest timéntibus eum: ecce óculi Dómini super justos, et aures ejus ad preces eórum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-vii"],
+		"forwards-to":["psalmus-xxxiii"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-viii","antiphona"],
+		"datum":"Dómine * spes Sanctórum, et turris fortitúdinis eórum dedísti hæreditátem timéntibus nomen tuum, et habitábunt in tabernáculo tuo in sǽcula."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-viii"],
+		"forwards-to":["psalmus-lx"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","antiphona-ix","antiphona"],
+		"datum":"Qui dilígitis Dóminum, * lætámini in Dómino, et confitémini memóriæ sanctitátis ejus."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","psalmus-ix"],
+		"forwards-to":["psalmus-xcvi"]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-vii"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Videns Jesus turbas, ascéndit in montem, et cum sedísset, accessérunt ad eum discípuli ejus. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Si quǽritur quid signíficet mons, bene intellígitur significáre majóra præcépta justítiæ, quia minóra erant, quæ Judǽis data sunt. Unus tamen Deus per sanctos prophétas et fámulos suos, secúndum ordinatíssimam distributiónem témporum, dedit minóra præcépta pópulo, quem adhuc timóre alligári oportébat: et per Fílium suum majóra pópulo, quem caritáte jam liberári convénerat. Cum autem minóra minóribus, majóra majóribus dantur, ab eo dantur, qui solus novit congruéntem suis tempóribus géneri humáno exhibére medicínam."
+		]
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-vii"],
+		"datum":"Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-vii","responsum"],
+		"datum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-vii","versum"],
+		"datum":"Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-viii"],
+		"datum":"Nec mirum est, quod dantur præcépta majóra propter regnum cœlórum, et minóra data sunt propter regnum terrénum, ab eódem uno Deo, qui fecit cœlum et terram. De hac ergo justítia, quæ major est, per prophétam dícitur: Justítia tua sicut montes Dei: et hoc bene signíficat, quod ab uno magístro, solo docéndis tantis rebus idóneo, docétur in monte. Sedens autem docet, quod pértinet ad dignitátem magistérii. Et accédunt ad eum discípuli ejus, ut audiéndis illíus verbis hi essent étiam córpore vicinióres, qui præcéptis adimpléndis étiam ánimo propinquábant. Et apériens os suum docébat eos, dicens. Ista circumlocútio, qua scríbitur, Et apériens os suum, fortássis ipsa mora comméndat aliquánto longiórem futúrum esse sermónem. Nisi forte non vacet, quod nunc eum dictum est aperuísse os suum, quod ipse in lege véteri aperíre soléret ora prophetárum."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-viii"],
+		"datum":"Média nocte clamor factus est:"
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-viii","responsum"],
+		"datum":"Ecce sponsus venit, exíte óbviam ei."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","responsorium","responsorium-viii","versum"],
+		"datum":"Prudéntes Vírgines, aptáte vestras lámpades."
+	},
+	{
+		"tags":["omnes-sancti","matutinum","lectio","lectio-ix"],
+		"datum":"Quid ergo dicit? Beáti paúperes spíritu: quóniam ipsórum est regnum cœlórum. Légimus scriptum de appetitióne rerum temporálium: Omnia vánitas, et præsúmptio spíritus. Præsúmptio autem spíritus, audáciam et supérbiam signíficat. Vulgo étiam magnos spíritus supérbi habére dicúntur: et recte, quandóquidem spíritus étiam ventus vocátur. Unde scriptum est: Ignis, grando, nix, glácies, spíritus procellárum. Quis vero nésciat supérbos inflátos dici, tampquam vento disténtos? Unde est étiam illud Apóstoli: Sciéntia inflat, cáritas vero ædíficat. Quaprópter recte hic intelligúntur paúperes spíritu, húmiles et timéntes Deum, id est, non habéntes inflántem spíritum."
+	},
+	{
+		"tags":["omnes-sancti","laudes","hymnus"],
+		"datum":[
+			"Salútis ætérnæ dator,/Jesu redémptis súbveni:/Virgo parens cleméntiæ/Dona salútem sérvulis.",
+			"Vos Angelórum míllia,/Patrúmque cœtus, ágmina/Canóra Vatum: vos reis/Precámini indulgéntiam.",
+			"Baptísta Christi prǽvius,/Summíque cœli Cláviger,/Cum céteris Apóstolis/Nexus resólvant críminum.",
+			"Cohors triúmphans Mártyrum,/Almus Sacerdótum chorus,/Et virginális cástitas/Nostros reátus ábluant.",
+			"Quicúmque in alta síderum/Regnátis aula príncipes,/Favéte votis súpplicum,/Qui dona cœli flágitant.",
+			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["omnes-sancti","laudes","versiculus"],
+		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
+	},
+	{
+		"tags":["omnes-sancti","laudes","antiphona-benedictus","antiphona"],
+		"datum":"Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confiténtur unánimes, beáta Trínitas, unus Deus."
+	},
+	{
+		"tags":["omnes-sancti","tertia","responsorium"],
+		"datum":"Lætámini in Dómino,"
+	},
+	{
+		"tags":["omnes-sancti","tertia","responsorium","responsum"],
+		"datum":"Et exsultáte justi."
+	},
+	{
+		"tags":["omnes-sancti","tertia","responsorium","versum"],
+		"datum":"Et gloriámini omnes recti corde."
+	},
+	{
+		"tags":["omnes-sancti","tertia","versiculus"],
+		"datum":["V. Exsúltent justi in conspéctu Dei.","R. Et delecténtur in lætítia."]
+	},
+	{
+		"tags":["omnes-sancti","sexta","capitulum"],
+		"datum":"Post hæc vidi turbam magnam, quam dinumeráre nemo póterat ex ómnibus géntibus, et tríbubus, et pópulis, et linguis, stantes ante thronum Dei, in conspéctu Agni, amícti stolis albis, et palmæ in mánibus eórum."
+	},
+	{
+		"tags":["omnes-sancti","sexta","responsorium"],
+		"datum":"Exsúltent justi"
+	},
+	{
+		"tags":["omnes-sancti","sexta","responsorium","responsum"],
+		"datum":"In conspéctu Dei."
+	},
+	{
+		"tags":["omnes-sancti","sexta","responsorium","versum"],
+		"datum":"Et delecténtur in lætítia."
+	},
+	{
+		"tags":["omnes-sancti","sexta","versiculus"],
+		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
+	},
+	{
+		"tags":["omnes-sancti","nona","capitulum"],
+		"datum":"Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro, in sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":["omnes-sancti","nona","responsorium"],
+		"datum":"Justi autem"
+	},
+	{
+		"tags":["omnes-sancti","nona","responsorium","responsum"],
+		"datum":"In perpétuum vivent."
+	},
+	{
+		"tags":["omnes-sancti","nona","responsorium","versum"],
+		"datum":"Et apud Dóminum est merces eórum."
+	},
+	{
+		"tags":["omnes-sancti","nona","versiculus"],
+		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
+	},
+	{
+		"tags":["omnes-sancti","vesperae","ii-vesperae","psalmus-vii"],
+		"forwards-to":["psalmus-cxv"]
+	},
+	{
+		"tags":["omnes-sancti","vesperae","ii-vesperae","versiculus"],
+		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
+	},
+	{
+		"tags":["omnes-sancti","laudes","antiphona-magnificat","antiphona"],
+		"datum":"O quam gloriósum * est regnum in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit."
+	}
+]

@@ -1,4 +1,60 @@
 [
 	{"tags":["prima","preces","duplex"],"datum":""},
+	{
+		"tags":["vesperae","hora","duplex"],
+		"datum":[
+			{"from-tags":["ante-officium"]},
+			{"from-tags":["prex-duplex"]},
+			{"from-tags":["deus-in-adjutorium","festalis"]},
+			{
+				"tags":["vesperae","psalmodia"],
+				"datum":[
+					{"from-tags":["vesperae","antiphona","antiphona-i"]},
+					{"from-tags":["vesperae","i-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["vesperae","antiphona","antiphona-i"]},
+					{"from-tags":["vesperae","antiphona","antiphona-ii"]},
+					{"from-tags":["vesperae","ii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["vesperae","antiphona","antiphona-ii"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iii"]},
+					{"from-tags":["vesperae","iii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iii"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iv"]},
+					{"from-tags":["vesperae","iv-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["vesperae","antiphona","antiphona-iv"]},
+					{"from-tags":["vesperae","antiphona","antiphona-v"]},
+					{"from-tags":["vesperae","v-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["vesperae","antiphona","antiphona-v"]}
+				]
+			},
+			{
+				"tags":["vesperae","ab-capitulo"],
+				"datum":[
+					{"from-tags":["vesperae","capitulum"]},
+					"Deo grátias.",
+					{"from-tags":["vesperae","hymnus"]},
+					{"from-tags":["vesperae","versiculus"]},
+					{"from-tags":["vesperae","antiphona","antiphona-magnificat"]},
+					{"from-tags":["magnificat"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["vesperae","antiphona","antiphona-magnificat"]}
+				]
+			},
+			{
+				"from-tags":["collecta-primaria"],
+				"with-tags":["vesperae"]
+			},
+			{"from-tags":["dominus-vobiscum"]},
+			{"from-tags":["hora-major","benedicamus-domino"]},
+			{"from-tags":["fidelium-animae"]},
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["post-officium"]}
+		]
+	},
+	{"tags":["completorium","hymnus","duplex"],"forwards-to":["completorium","hymnus","semiduplex"]},
 	{"tags":["completorium","preces","duplex"],"datum":""}
 ]
