@@ -1,5 +1,9 @@
 [
+	{"tags":["prima","hymnus","duplex"],"forwards-to":["prima","hymnus","semiduplex"]},
 	{"tags":["prima","preces","duplex"],"datum":""},
+	{"tags":["tertia","hymnus","duplex"],"forwards-to":["tertia","hymnus","semiduplex"]},
+	{"tags":["sexta","hymnus","duplex"],"forwards-to":["sexta","hymnus","semiduplex"]},
+	{"tags":["nona","hymnus","duplex"],"forwards-to":["nona","hymnus","semiduplex"]},
 	{
 		"tags":["vesperae","hora","duplex"],
 		"datum":[
