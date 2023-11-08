@@ -61,7 +61,13 @@ def prettyprint(j):
             case set() | frozenset():
                 pass
             case str():
-                print(obj)
+                if (obj.startswith('https')):
+                    print(obj)
+                else:
+                    pieces = obj.split('/')
+                    print(pieces[0])
+                    for i in pieces[1:]:
+                        print(' ' + i)
     recurse(j)
 
 def anysearch(query, pile):
