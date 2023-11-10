@@ -109,7 +109,7 @@
 			{"from-tags":["responsorium","responsum"]},
 			{"from-tags":["responsorium"]},
 			{"from-tags":["responsorium","responsum"]},
-			{"from-tags":["responsorium","versum"]},
+			{"from-tags":["responsorium","versus"]},
 			{"from-tags":["responsorium","responsum"]},
 			{"tags":["responsorium","gloria"],"datum":"Glória Patri, et Fílio, et Spirítui Sancto."},
 			{"from-tags":["responsorium"]},
@@ -141,28 +141,96 @@
 		"datum":"Per eúmdem Christum Dóminum nostrum. R. Amen."
 	},
 	{
-		"tags":["commemoratio","laudes"],
+		"tags":["laudes","commemoratio"],
 		"datum":[{"from-tags":["antiphona","antiphona-benedictus"]},{"from-tags":["laudes","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
 	},
 	{
-		"tags":["commemoratio","vesperae"],
+		"tags":["vesperae","commemoratio"],
 		"datum":[{"from-tags":["antiphona","antiphona-magnificat"]},{"from-tags":["vesperae","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
 	},
 	{
-		"tags":["benedicamus-domino","hora-minor"],
+		"tags":[
+			["duplex-i-classis","i-vesperae","vesperae","benedicamus-domino"],
+			["duplex-ii-classis","i-vesperae","vesperae","benedicamus-domino"],
+			["duplex-majus","i-vesperae","vesperae","benedicamus-domino"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=4567",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":[
+			["duplex-i-classis","laudes","benedicamus-domino"],
+			["duplex-ii-classis","laudes","benedicamus-domino"],
+			["duplex-majus","laudes","benedicamus-domino"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=10336",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":[
+			["duplex-i-classis","ii-vesperae","vesperae","benedicamus-domino"],
+			["duplex-ii-classis","ii-vesperae","vesperae","benedicamus-domino"],
+			["duplex-majus","ii-vesperae","vesperae","benedicamus-domino"]
+		],	
+		"src":"https://gregobase.selapa.net/chant.php?id=4568",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":[
+			["duplex-i-classis","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
+			["duplex-ii-classis","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
+			["duplex-majus","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=7522",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["duplex","i-vesperae","vesperae","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=7866",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["duplex","laudes","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=10336",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["duplex","ii-vesperae","vesperae","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=8245",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["semiduplex","dominica","hora-major","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=16976",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["semiduplex","laudes","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=10172",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["semiduplex","vesperae","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=15698",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["simplex","hora-major","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=15743",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["feria","hora-major","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=15741",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["hora-minor","benedicamus-domino"],
 		"src":"https://gregobase.selapa.net/chant.php?id=18844",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["benedicamus-domino","hora-major","dominica"],
-		"datum":["Benedicámus Dómino.","Deo grátias."]
-	},
-	{
-		"tags":["benedicamus-domino","hora-major","feria"],
-		"datum":["Benedicámus Dómino.","Deo grátias."]
-	},
-	{
 		"tags":["fidelium-animae"],
-		"datum":["Fidélium ánimæ per misericórdiam Dei requiéscant in pace.","Amen."]
+		"datum":["Fidélium ánimæ per misericórdiam Dei requiéscant in pace.","R. Amen."]
 	}
 ]

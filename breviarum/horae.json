@@ -6,10 +6,10 @@
 			{"from-tags":["prex-triplex"]},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
 			{"from-tags":["prima","hymnus"]},
-			{"from-tags":["prima","antiphona-i","antiphona","intonata"]},
+			{"from-tags":["prima","antiphona","antiphona-i","intonata"]},
 			{"from-tags":["prima","psalmodia"]},
-			{"from-tags":["prima","antiphona-i","antiphona"]},
-			{"from-tags":["prima","capitulum"]},
+			{"from-tags":["prima","antiphona","antiphona-i"]},
+			{"from-tags":["ordinarium","prima","capitulum"]},
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
@@ -17,7 +17,10 @@
 			},
 			{"from-tags":["prima","versiculus"]},
 			{"from-tags":["prima","preces"]},
-			{"from-tags":["collecta-primaria"]},
+			{
+				"from-tags":["collecta-primaria"],
+				"with-tags":["ordinarium","prima"]
+			},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["prima","dominus-vobiscum"]
@@ -74,7 +77,7 @@
 			{"from-tags":["prex-duplex"]},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
 			{"from-tags":["tertia","hymnus"]},
-			{"from-tags":["tertia","antiphona-ii","antiphona","intonata"]},
+			{"from-tags":["tertia","antiphona","antiphona-ii","intonata"]},
 			{"from-tags":["psalmus-cxviii-v"]},
 			{"from-tags":["psalmus-cxviii-vi"]},
 			{"from-tags":["gloria-psalmi"]},
@@ -84,7 +87,7 @@
 			{"from-tags":["psalmus-cxviii-ix"]},
 			{"from-tags":["psalmus-cxviii-x"]},
 			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["tertia","antiphona-ii","antiphona"]},
+			{"from-tags":["tertia","antiphona","antiphona-ii"]},
 			{"from-tags":["tertia","capitulum"]},
 			"Deo grátias.",
 			{
@@ -110,7 +113,7 @@
 			{"from-tags":["prex-duplex"]},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
 			{"from-tags":["sexta","hymnus"]},
-			{"from-tags":["sexta","antiphona-iii","antiphona","intonata"]},
+			{"from-tags":["sexta","antiphona","antiphona-iii","intonata"]},
 			{"from-tags":["psalmus-cxviii-xi"]},
 			{"from-tags":["psalmus-cxviii-xii"]},
 			{"from-tags":["gloria-psalmi"]},
@@ -120,7 +123,7 @@
 			{"from-tags":["psalmus-cxviii-xv"]},
 			{"from-tags":["psalmus-cxviii-xvi"]},
 			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["sexta","antiphona-iii","antiphona"]},
+			{"from-tags":["sexta","antiphona","antiphona-iii"]},
 			{"from-tags":["sexta","capitulum"]},
 			"Deo grátias.",
 			{
@@ -146,7 +149,7 @@
 			{"from-tags":["prex-duplex"]},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
 			{"from-tags":["nona","hymnus"]},
-			{"from-tags":["nona","antiphona-v","antiphona","intonata"]},
+			{"from-tags":["nona","antiphona","antiphona-v","intonata"]},
 			{"from-tags":["psalmus-cxviii-xvii"]},
 			{"from-tags":["psalmus-cxviii-xviii"]},
 			{"from-tags":["gloria-psalmi"]},
@@ -156,7 +159,7 @@
 			{"from-tags":["psalmus-cxviii-xxi"]},
 			{"from-tags":["psalmus-cxviii-xxii"]},
 			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["nona","antiphona-v","antiphona"]},
+			{"from-tags":["nona","antiphona","antiphona-v"]},
 			{"from-tags":["nona","capitulum"]},
 			"Deo grátias.",
 			{
@@ -224,7 +227,7 @@
 				"with-tags":["vesperae"]
 			},
 			{"from-tags":["dominus-vobiscum"]},
-			{"from-tags":["hora-major","benedicamus-domino"]},
+			{"from-tags":["hora-major","vesperae","benedicamus-domino"]},
 			{"from-tags":["fidelium-animae"]},
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["post-officium"]}
@@ -258,7 +261,7 @@
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["completorium","antiphona"]},
 			{"from-tags":["completorium","hymnus"]},
-			{"from-tags":["completorium","capitulum","ordinarium"]},
+			{"from-tags":["ordinarium","completorium","capitulum"]},
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
@@ -272,7 +275,7 @@
 			{"from-tags":["completorium","preces"]},
 			{
 				"from-tags":["collecta-primaria"],
-				"with-tags":["completorium"]
+				"with-tags":["ordinarium","completorium"]
 			},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],

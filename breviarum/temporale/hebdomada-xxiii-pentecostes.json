@@ -1,0 +1,35 @@
+[
+	{
+		"tags":["hebdomada-xxiii-pentecostes","collecta"],
+		"datum":"Absólve, quǽsumus Dómine, tuórum delícta populórum: ut a peccatórum néxibus, quæ pro nostra fragilitáte contráximus, tua benignitáte liberémur."
+	},
+	{
+		"tags":["hebdomada-xxiii-pentecostes","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-vii"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Loquénte Jesu ad turbas. ecce princeps unus accéssit, et adorábat eum, dicens: Dómine, fília mea modo defúncta est. Et réliqua.",
+			"Homília Sancti Hierónymi Presbýteri.",
+			"Octávum signum est, in quo princeps suscitári póstulat fíliam suam, nolens de mystério veræ circumcisiónis exclúdi: sed subíntrat múlier sánguine fluens, et octávo sanátur loco: ut príncipis fília de hoc exclúsa número, véniat ad nonum, juxta illud quod in Psalmis dícitur: Æthiópia prævéniet manus ejus Deo: et, Cum intráverit plenitúdo Géntium, tunc omnis Israël salvus fiet."
+		]
+	},
+	{
+		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-viii"],
+		"datum":"Et ecce múlier, quæ sánguinis fluxum patiebátur duódecim annis, accéssit retro, et tétigit fímbriam vestiménti ejus. In Evangélio secúndum Lucam scríbitur, quod príncipis fília duódecim annos habéret ætátis. Nota ergo, quod eo témpore hæc múlier, id est, Géntium pópulus cœperit ægrotáre, quo genus Judæórum credíderat. Nisi enim ex comparatióne virtútum, vítium non osténditur."
+	},
+	{
+		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-ix"],
+		"datum":"Hæc autem múlier sánguine fluens, non in domo, non in urbe accédit ad Dóminum, quia juxta legem úrbibus excludebátur: sed in itínere ambulánte Dómino; ut dum pergit ad áliam, ália curarétur. Unde dicunt et Apóstoli: Vobis quidem oportébat prædicári verbum Dei: sed quóniam vos judicástis indígnos salúte, transgrédimur ad Gentes."
+	},
+	{
+		"tags":["hebdomada-xxiii-pentecostes","dominica","laudes","antiphona-benedictus"],
+		"datum":"Dicébat enim * intra se: Si tetígero fímbriam vestiménti ejus tantum, salva ero."
+	},
+	{
+		"tags":["hebdomada-xxiii-pentecostes","dominica","ii-vesperae","vesperae","antiphona-magnificat"],
+		"datum":"At Jesus convérsus, * et videns eam, dixit: Confíde fília, fides tua te salvam fecit, allelúja."
+	}
+]

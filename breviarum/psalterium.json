@@ -44,7 +44,7 @@
 		]
 	},
 	{
-		"tags":["prima","capitulum"],
+		"tags":["ordinarium","prima","capitulum"],
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
@@ -56,7 +56,7 @@
 		"datum":"Miserére nobis."
 	},
 	{
-		"tags":["prima","responsorium","versum"],
+		"tags":["prima","responsorium","versus"],
 		"datum":"Qui sedes ad dexteram Patris."
 	},
 	{
@@ -129,11 +129,11 @@
 		]
 	},
 	{
-		"tags":["prima","collecta"],
+		"tags":["ordinarium","prima","collecta"],
 		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera."
 	},
 	{
-		"tags":["prima","collecta","terminatio"],
+		"tags":["ordinarium","prima","collecta","terminatio"],
 		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
@@ -141,8 +141,12 @@
 		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
 	},
 	{
-		"tags":["prima","lectio-brevis","lectio"],
+		"tags":["prima","temporale","lectio-brevis","lectio"],
 		"datum":"Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
+	},
+	{
+		"tags":["prima","lectio-brevis","lectio"],
+		"forwards-to":["nona","capitulum"]
 	},
 	{
 		"tags":["prima","feria","hymnus"],
@@ -262,7 +266,7 @@
 		"datum":"In testimónia tua."
 	},
 	{
-		"tags":["tertia","dominica","responsorium","versum"],
+		"tags":["tertia","dominica","responsorium","versus"],
 		"datum":"Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me."
 	},
 	{
@@ -294,7 +298,7 @@
 		"datum":"Quia peccávi tibi."
 	},
 	{
-		"tags":["tertia","feria","responsorium","versum"],
+		"tags":["tertia","feria","responsorium","versus"],
 		"datum":"Ego dixi, Dómine miserére mei."
 	},
 	{
@@ -327,7 +331,7 @@
 		"datum":"Pérmanet verbum tuum."
 	},
 	{
-		"tags":["sexta","dominica","responsorium","versum"],
+		"tags":["sexta","dominica","responsorium","versus"],
 		"datum":"In sǽculum sǽculi véritas tua."
 	},
 	{
@@ -356,7 +360,7 @@
 		"datum":"In omni témpore."
 	},
 	{
-		"tags":["sexta","feria","responsorium","versum"],
+		"tags":["sexta","feria","responsorium","versus"],
 		"datum":"Semper laus ejus in ore meo."
 	},
 	{
@@ -384,7 +388,7 @@
 		"datum":"Exaúdi me Dómine."
 	},
 	{
-		"tags":["nona","dominica","responsorium","versum"],
+		"tags":["nona","dominica","responsorium","versus"],
 		"datum":"Justificatiónes tuas requíram."
 	},
 	{
@@ -412,7 +416,7 @@
 		"datum":"Et miserére mei."
 	},
 	{
-		"tags":["nona","feria","responsorium","versum"],
+		"tags":["nona","feria","responsorium","versus"],
 		"datum":"Pes enim meus stetit in via recta."
 	},
 	{
@@ -839,7 +843,7 @@
 		"datum":"Comméndo spíritum meum."
 	},
 	{
-		"tags":["completorium","responsorium","versum"],
+		"tags":["completorium","responsorium","versus"],
 		"datum":"Redemísti nos Dómine Deus veritátis."
 	},
 	{
@@ -905,11 +909,11 @@
 		]
 	},
 	{
-		"tags":["completorium","collecta"],
+		"tags":["ordinarium","completorium","collecta"],
 		"datum":"Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: Angeli tui sancti hábitent in ea, qui nos in pace custódiant, et benedíctio tua sit super nos semper."
 	},
 	{
-		"tags":["completorium","collecta","terminatio"],
+		"tags":["ordinarium","completorium","collecta","terminatio"],
 		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
