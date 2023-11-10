@@ -65,30 +65,42 @@ def prettyprint(j):
                     print(obj)
                 else:
                     pieces = obj.split('/')
-                    print(pieces[0])
+                    if not len(pieces[0]) == 0:
+                        print(pieces[0])
                     for i in pieces[1:]:
                         print(' ' + i)
     recurse(j)
 
 def anysearch(query, pile):
     for i in pile:
-        if i['tags'].issubset(query):
+        if type(i['tags']) == list:
+            for j in i['tags']:
+                if j.issubset(query):
+                    ret = copy.deepcopy(i)
+                    ret['tags'] = j
+                    yield ret
+        elif i['tags'].issubset(query):
             yield i
 
-def search(query, pile, multipleresults = False, multipleresultssort = None):
+def search(query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
     result = list(sorted(list(anysearch(query, pile)), key=lambda a: len(a['tags'])))
     if len(result) == 0:
         warnings.warn(f'0 tags found for query {query}')
         return None
     elif len(result) == 1:
         return result[0]
-    elif len(result[-1]['tags']) == len(result[-2]['tags']):
-        if not multipleresults:
-            raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]}\n{result[-2]}')
-        else:
-            return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result),multipleresultsort))
-    else:
+    elif not len(result[-1]['tags']) == len(result[-2]['tags']):
         return result[-1]
+    elif not priortags == None:
+        logging.debug(f'Search differentiation required priortag to rank {result}' )
+        strippedresult = [a['tags'] & priortags for a in result]
+        print(strippedresult)
+        if not len(strippedresult[-1]) == len(strippedresult[-2]):
+            return result[-1]
+    if not multipleresults:
+        raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]}\n{result[-2]}')
+    else:
+        return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, withtags, pile):
@@ -96,12 +108,12 @@ def process(item, withtags, pile):
     if item == None:
         return 'Absens'
     elif type(item) == set:
-        item = search(item | withtags, pile)
+        item = search(item | withtags, pile, priortags = item)
     if 'from-tags' in item:
-        response = process(search(item['from-tags'] | withtags, pile), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
+        response = process(search(item['from-tags'] | withtags, pile, priortags = item['from-tags']), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
         return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
-        return process(search(item['forwards-to'], datamanage.getbreviarumfiles(defaultpile | item['forwards-to'])), withtags, pile)
+        return process(search(item['forwards-to'] | withtags, datamanage.getbreviarumfiles(defaultpile | item['forwards-to'] | withtags), priortags = item['forwards-to']), withtags, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
@@ -223,7 +235,7 @@ if __name__ == "__main__":
     ret = hour(args.hour, datetime.strptime(args.date, '%Y-%m-%d').date())
 
     if args.output == sys.stdout:
-        print(prettyprint(ret))
+        prettyprint(ret)
     else:
         # Write JSON output
         args.output.write(dump_data(ret) + "\n")
