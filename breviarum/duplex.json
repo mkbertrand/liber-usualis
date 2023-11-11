@@ -1,11 +1,11 @@
 [
-	{"tags":["prima","hymnus","duplex"],"forwards-to":["prima","hymnus","semiduplex"]},
-	{"tags":["prima","preces","duplex"],"datum":""},
-	{"tags":["tertia","hymnus","duplex"],"forwards-to":["tertia","hymnus","semiduplex"]},
-	{"tags":["sexta","hymnus","duplex"],"forwards-to":["sexta","hymnus","semiduplex"]},
-	{"tags":["nona","hymnus","duplex"],"forwards-to":["nona","hymnus","semiduplex"]},
+	{"tags":["prima","hymnus","duplex-minus"],"forwards-to":["prima","hymnus","semiduplex"]},
+	{"tags":["prima","preces","duplex-minus"],"datum":""},
+	{"tags":["tertia","hymnus","duplex-minus"],"forwards-to":["tertia","hymnus","semiduplex"]},
+	{"tags":["sexta","hymnus","duplex-minus"],"forwards-to":["sexta","hymnus","semiduplex"]},
+	{"tags":["nona","hymnus","duplex-minus"],"forwards-to":["nona","hymnus","semiduplex"]},
 	{
-		"tags":["vesperae","hora","duplex"],
+		"tags":["vesperae","hora","duplex-minus"],
 		"datum":[
 			{"from-tags":["ante-officium"]},
 			{"from-tags":["prex-duplex"]},
@@ -59,6 +59,6 @@
 			{"from-tags":["post-officium"]}
 		]
 	},
-	{"tags":["completorium","hymnus","duplex"],"forwards-to":["completorium","hymnus","semiduplex"]},
-	{"tags":["completorium","preces","duplex"],"datum":""}
+	{"tags":["completorium","hymnus","duplex-minus"],"forwards-to":["completorium","hymnus","semiduplex"]},
+	{"tags":["completorium","preces","duplex-minus"],"datum":""}
 ]

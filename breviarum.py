@@ -113,7 +113,7 @@ def process(item, withtags, pile):
         response = process(search(item['from-tags'] | withtags, pile, priortags = item['from-tags']), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
         return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
-        return process(search(item['forwards-to'] | withtags, datamanage.getbreviarumfiles(defaultpile | item['forwards-to'] | withtags), priortags = item['forwards-to']), withtags, pile)
+        return process(search(item['forwards-to'] | withtags, datamanage.getbreviarumfiles(defaultpile | item['forwards-to'] | withtags), priortags = item['forwards-to']), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:

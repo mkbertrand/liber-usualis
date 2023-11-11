@@ -33,8 +33,8 @@ def taggedentry(day, tags):
             return i
 
 coincidencetable = load_data('vesperal-coincidence.json')
-hasivespers = {'simplex','semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv'}
-hasiivespers = {'feria','semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis'}
+hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv'}
+hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
 def getvespers(day):
     assert not type(day) == datetime

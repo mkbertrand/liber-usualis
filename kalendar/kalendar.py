@@ -40,9 +40,9 @@ months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 coincidencetable = load_data('coincidence.json')
 
-threenocturnes = {'semiduplex','duplex','duplex-majus','duplex-ii-classis','duplex-i-classis'}
-ranks = {"feria","commemoratio",'simplex'} | threenocturnes
-octavevigiltags = {"habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"}
+threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
+ranks = {'feria','commemoratio','simplex'} | threenocturnes
+octavevigiltags = {'habens-octavam','habens-vigiliam','vigilia-excepta','incipit-libri'}
 lowernumerals = ['i','ii','iii','iv','v']
 numerals = ['II','III','IV','V','VI','VII']
 menses = ['januarius','februarius','martius','aprilis','majus','junius','julius','augustus','september','october','november','december']
@@ -54,7 +54,7 @@ class SearchResult(NamedTuple):
     feast: Set[str]
 
     def __str__(self) -> str:
-        return self.date.strftime("%a %Y-%m-%d") + ":" + str(self.feast)
+        return self.date.strftime("%a %Y-%m-%d") + ':' + str(self.feast)
 
 class Kalendar:
     def __init__(self, year: int, *args, **kwargs):
@@ -126,7 +126,7 @@ class Kalendar:
     # If mention is False there will be no mention that there was a feast in the original pre-tranfer date
     # The given entry must occur on match_date.
     def transfer_entry(self, match: SearchResult, *, target: Optional[date] = None, obstacles: Optional[Set[str]] = None, mention: bool = True) -> SearchResult:
-        assert not (target is None and obstacles is None), "Useless call to transfer!"
+        assert not (target is None and obstacles is None), 'Useless call to transfer!'
         match_date, entry = match
         newfeast = entry | {'translatum'}
 
@@ -234,49 +234,49 @@ def kalendar(year: int) -> Kalendar:
 
     # Advent Cycle
     for entry in adventcycle:
-        date0 = adventstart + timedelta(days=entry["difference"])
+        date0 = adventstart + timedelta(days=entry['difference'])
         # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
         if date0 == christmas:
             break
-        kal.add_entry(date0, entry["tags"])
+        kal.add_entry(date0, entry['tags'])
 
     # Paschal Cycle
     for entry in paschalcycle:
-        date0 = easter + timedelta(days=entry["difference"])
+        date0 = easter + timedelta(days=entry['difference'])
         if date0 == xxivpentecost:
-            xxiiipentecostentry = entry["tags"]
+            xxiiipentecostentry = entry['tags']
             break
-        kal.add_entry(date0, entry["tags"])
+        kal.add_entry(date0, entry['tags'])
 
     # Epiphany Sundays
     epiphanyweek = 0
     while epiphanysunday + timedelta(weeks=epiphanyweek) != easter - timedelta(weeks=9):
         for i in range(0,7):
-            kal.add_entry(epiphanysunday + timedelta(weeks=epiphanyweek, days=i), epiphanycycle[epiphanyweek][i]["tags"])
+            kal.add_entry(epiphanysunday + timedelta(weeks=epiphanyweek, days=i), epiphanycycle[epiphanyweek][i]['tags'])
         epiphanyweek += 1
     for i in range(0, 6 - epiphanyweek):
         sunday = xxivpentecost - timedelta(weeks=i + 1)
         if sunday != xxiiipentecost:
             for j in range(0,7):
-                kal.add_entry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]["tags"])
+                kal.add_entry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]['tags'])
         else:
-            omittedepiphanyentry = epiphanycycle[5 - i][0]["tags"]
+            omittedepiphanyentry = epiphanycycle[5 - i][0]['tags']
 
     # Nativity & Epiphany
     for entry in nativitycycle:
-        date0 = todate(entry["date"], year)
-        kal.add_entry(date0, entry["tags"])
-    kal.add_entry(nextsunday(christmas), movables["dominica-nativitatis"]["tags"])
+        date0 = todate(entry['date'], year)
+        kal.add_entry(date0, entry['tags'])
+    kal.add_entry(nextsunday(christmas), movables['dominica-nativitatis']['tags'])
     if date(year, 1, 6).isoweekday() == 7:
         epiphanysunday = date(year, 1, 12)
-        kal.transfer({"epiphania","dominica"}, target=epiphanysunday)
+        kal.transfer({'epiphania','dominica'}, target=epiphanysunday)
 
     currday = 2
     for i in range(0, 6):
         if not date(year, 1, 7 + i) == epiphanysunday:
-            kal.add_entry(date(year, 1, 7 + i), {"epiphania",'semiduplex',"infra-octavam","dies-" + numerals[currday - 2].lower()})
+            kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 2].lower()})
             currday += 1
-    kal.add_entry(date(year, 1, 13), {"epiphania","dies-octava",'duplex'})
+    kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus'})
 
     """# Autumnal Weeks
     for i in range(8, 11):
@@ -287,14 +287,14 @@ def kalendar(year: int) -> Kalendar:
         j = 0
         while kalends + timedelta(weeks=j) != nextkalends:
             for k in range(0,7):
-                kal.add_entry(kalends + timedelta(weeks=j, days=k), month[j][k]["tags"])
+                kal.add_entry(kalends + timedelta(weeks=j, days=k), month[j][k]['tags'])
             j += 1
     kalends = sundaynear(date(year, 11, 1))
     # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
     j = 0
     while kalends + timedelta(weeks=j) != adventstart:
         for k in range(0,7):
-            kal.add_entry(kalends + timedelta(weeks=j, days=k), months["november"][j][k]["tags"])
+            kal.add_entry(kalends + timedelta(weeks=j, days=k), months["november"][j][k]['tags'])
         j += 1
     """
 
@@ -312,10 +312,10 @@ def kalendar(year: int) -> Kalendar:
 
     # Movable feasts with occurrence attribute
     for name, movable in movables.items():
-        if "occurrence" in movable:
-            matches = kal.match(movable["occurrence"], movable.get("excluded", set()))
+        if 'occurrence' in movable:
+            matches = kal.match(movable['occurrence'], movable.get('excluded', set()))
             for match_date, entry in matches:
-                kal.add_entry(match_date, movable["tags"])
+                kal.add_entry(match_date, movable['tags'])
 
     kal |= buffer
     buffer.kal.clear()
@@ -323,38 +323,38 @@ def kalendar(year: int) -> Kalendar:
     # Irregular movables
     assumption = date(year, 8, 15)
     if assumption.isoweekday() == 7:
-        kal.add_entry(assumption + timedelta(days=1), movables["joachim"]["tags"])
+        kal.add_entry(assumption + timedelta(days=1), movables['joachim']['tags'])
     else:
-        kal.add_entry(nextsunday(assumption), movables["joachim"]["tags"])
+        kal.add_entry(nextsunday(assumption), movables['joachim']['tags'])
     # First Sunday of July
     nominis_bmv = date(year, 9, 8)
     if nominis_bmv.isoweekday() == 7:
-        kal.add_entry(nominis_bmv + timedelta(days=1), movables["nominis-bmv"]["tags"])
+        kal.add_entry(nominis_bmv + timedelta(days=1), movables['nominis-bmv']['tags'])
     else:
-        kal.add_entry(nextsunday(nominis_bmv), movables["nominis-bmv"]["tags"])
+        kal.add_entry(nextsunday(nominis_bmv), movables['nominis-bmv']['tags'])
 
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
             entry_base = entry - ranks - octavevigiltags
-            if "habens-octavam" in entry and not "octava-excepta" in entry:
+            if 'habens-octavam' in entry and not 'octava-excepta' in entry:
                 for k in range(1,7):
                     date0 = ent_date + timedelta(days=k)
-                    if "quadragesima" in kal.tagsindate(date0):
+                    if 'quadragesima' in kal.tagsindate(date0):
                         break
-                    entrystripped = entry_base | {'semiduplex',"infra-octavam","dies-" + numerals[k - 1].lower()}
+                    entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k - 1].lower()}
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_any(entrystripped) is None:
                         buffer.add_entry(date0, entrystripped)
                 date0 = ent_date + timedelta(weeks=1)
-                if "quadragesima" in kal.tagsindate(date0):
+                if 'quadragesima' in kal.tagsindate(date0):
                     continue
-                entrystripped = entry_base | {'duplex', "dies-octava"}
+                entrystripped = entry_base | {'duplex-minus', 'dies-octava'}
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_any(entrystripped) is None:
                     buffer.add_entry(date0, entrystripped)
-            if "habens-vigiliam" in entry and not "vigilia-excepta" in entry:
-                entrystripped = entry_base | {"vigilia","poenitentialis","feria"}
+            if 'habens-vigiliam' in entry and not 'vigilia-excepta' in entry:
+                entrystripped = entry_base | {'vigilia','poenitentialis','feria'}
                 buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
     kal |= buffer
@@ -452,7 +452,7 @@ def kalendar(year: int) -> Kalendar:
 
     for date0, entries in kal.items():
         for i in entries:
-            if i.isdisjoint({"fixum","temporale","commemoratum"}):
+            if i.isdisjoint({'fixum','temporale','commemoratum'}):
                 i.add('primarium')
                 continue
 
