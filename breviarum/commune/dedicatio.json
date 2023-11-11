@@ -96,211 +96,211 @@
 		"datum":"Domum Dei decet sanctitúdo: * Sponsum ejus Christum adorémus in ea."
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-i"],
+		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN1A1/",
 		"datum":"Tóllite * portas príncipes vestras, et elevámini portæ æternáles."
 	},
 	{
-		"tags":["dedicatio","matutinum","i-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-i","i-psalmus"],
 		"forwards-to":["psalmus-xxiii"]
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-ii"],
+		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN1A2/",
 		"datum":"Erit mihi * Dóminus in Deum, et lapis iste vocábitur domus Dei."
 	},
 	{
-		"tags":["dedicatio","matutinum","ii-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-i","ii-psalmus"],
 		"forwards-to":["psalmus-xlv"]
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-iii"],
+		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-iii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN1A3/",
 		"datum":"Ædificávit * Móyses altáre Dómino Deo."
 	},
 	{
-		"tags":["dedicatio","matutinum","iii-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-i","iii-psalmus"],
 		"forwards-to":["psalmus-xlvii"]
 	},
 	{
 		"tags":[
-			["dedicatio","matutinum","versiculus","versiculus-i"],
+			["dedicatio","matutinum","nocturna-i","versiculus"],
 			["dedicatio","ii-vesperae","vesperae","versiculus"]
 		],
 		"datum":["V. Domum tuam Dómine decet sanctitúdo.","R. In longitúdinem diérum."]
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-i"],
+		"tags":["dedicatio","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De libro secúndo Paralipómenon.",
 			"Cum complésset Sálomon fundens preces, ignis descéndit de cœlo, et devorávit holocaústa et víctimas: et majéstas Dómini implévit domum. Nec póterant sacerdótes íngredi templum Dómini, eo quod implésset majéstas Dómini templum Dómini. Sed et omnes fílii Israël vidébant descendéntem ignem, et glóriam Dómini super domum: et corruéntes proni in terram super paviméntum stratum lápide, adoravérunt et laudavérunt Dóminum: Quóniam bonus, quóniam in sǽculum misericórdia ejus. Rex autem, et omnis pópulus immolábant víctimas coram Dómino. Mactávit ígitur rex Sálomon hóstias, boum vigínti duo míllia, aríetum centum vigínti míllia: et dedicávit domum Dei rex, et univérsus pópulus."
 		]
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-i"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN1R1/",
 		"datum":"In dedicatióne templi decantábat pópulus laudem:"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-i","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-i","responsum"],
 		"datum":"Et in ore eórum dulcis resonábat sonus."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-i","versus"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-i","versus"],
 		"datum":"Fundáta est domus Dómini supra vérticem móntium, et vénient ad eam omnes Gentes."
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-ii"],
+		"tags":["dedicatio","matutinum","nocturna-i","lectio","lectio-ii"],
 		"datum":"Sacerdótes autem stabant in offíciis suis: et Levítæ in órganis cárminum Dómini, quæ fecit David rex ad laudándum Dóminum: Quóniam in ætérnum misericórdia ejus, hymnos David canéntes per manus suas: porro sacerdótes canébant tubis ante eos, cunctúsque Israël stabat. Sanctificávit quoque Sálomon médium átrii ante templum Dómini: obtúlerat enim ibi holocaústa, et ádipes pacificórum: quia altáre ǽneum, quod fécerat, non póterat sustinére holocaústa et sacrifícia et ádipes. Fecit ergo Sálomon solemnitátem in témpore illo septem diébus, et omnis Israël cum eo, ecclésia magna valde, ab intróitu Emath usque ad Torréntem Ægýpti. Fecítque die octávo colléctam, eo quod dedicásset altáre septem diébus, et solemnitátem celebrásset diébus septem."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-ii"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN1R2/",
 		"datum":"Fundáta est domus Dómini supra vérticem móntium, et exaltáta est super omnes colles:"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-ii","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii","responsum"],
 		"datum":"Et vénient ad eam omnes Gentes, et dicent: Glória tibi Dómine."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-ii","versus"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii","versus"],
 		"datum":"Veniéntes autem autem vénient cum exsultatióne, portántes manípulos suos."
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-iii"],
+		"tags":["dedicatio","matutinum","nocturna-i","lectio","lectio-iii"],
 		"datum":"Complevítque Sálomon domum Dómini, et domum regis, et ómnia quæ disposúerat in corde suo, ut fáceret in domo Dómini, et in domo sua, et prosperátus est. Appáruit autem ei Dóminus nocte, et ait: Audívi oratiónem tuam, et elégi locum istum mihi in domum sacrifícii. Si claúsero cœlum, et plúvia non flúxerit, et mandávero et præcépero locústæ, ut dévoret terram, et mísero pestiléntiam in pópulum meum: convérsus autem pópulus meus, super quos invocátum est nomen meum, deprecátus me fúerit, et exquisíerit fáciem meam, et égerit pœniténtiam a viis suis péssimis: et ego exaúdiam de cœlo, et propítius ero peccátis eórum, et sanábo terram eórum. Óculi quoque mei erunt apérti, et aures meæ eréctæ ad oratiónem ejus qui in loco isto oráverit. Elégi enim, et sanctificávi locum istum, ut sit nomen meum ibi in sempitérnum, et permáneant óculi mei et cor meum ibi cunctis diébus."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-ii"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN1R3/",
 		"datum":"Bénedic Dómine domum istam, quam ædificávi nómini tuo veniéntium in loco isto,"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-ii","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii","responsum"],
 		"datum":"Exaúdi preces in excélso sólio glóriæ tuæ."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-ii","versus"],
+		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii","versus"],
 		"datum":"Dómine, si convérsus fúerit pópulus tuus, et oráverit ad sanctuárium tuum."
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-iv"],
+		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN2A1/",
 		"datum":"Non est hic áliud, * nisi domus Dei, et porta cœli."
 	},
 	{
-		"tags":["dedicatio","matutinum","iv-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-ii","i-psalmus"],
 		"forwards-to":["psalmus-lxxxiii"]
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-v"],
+		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN2A2/",
 		"datum":"Vidit Jacob scalam, * súmmitas ejus cœlos tangébat, et descendéntes Ángelos, et dixit: Vere locus iste sanctus est."
 	},
 	{
-		"tags":["dedicatio","matutinum","v-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-ii","ii-psalmus"],
 		"forwards-to":["psalmus-lxxxvi"]
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-vi"],
+		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN2A3/",
 		"datum":"Eréxit Jacob * lápidem in títulum, fundens óleum désuper."
 	},
 	{
-		"tags":["dedicatio","matutinum","vi-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-ii","iii-psalmus"],
 		"forwards-to":["psalmus-lxxxvii"]
 	},
 	{
-		"tags":["dedicatio","matutinum","versiculus","versiculus-ii"],
+		"tags":["dedicatio","matutinum","nocturna-ii","versiculus"],
 		"datum":["V. Domus mea.","R. Domus oratiónis vocábitur."]
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-iv"],
+		"tags":["dedicatio","matutinum","nocturna-ii","lectio","lectio-i"],
 		"datum":[
 			"Sermo sancti Augustíni Epíscopi.",
 			"Quotiescúmque, fratres caríssimi, altáris vel templi festivitátem cólimus, si fidéliter ac diligénter atténdimus, et sancte ac juste vívimus, quidquid in templis manufáctis ágitur, totum in nobis spiritáli ædificatióne complétur. Non enim mentítus est ille, qui dixit: Templum enim Dei sanctum est, quod estis vos; et íterum: Nescítis, quia córpora vestra templum sunt Spíritus sancti, qui in vobis est? Et ídeo, fratres caríssimi, quia nullis præcedéntibus méritis per grátiam Dei merúimus fíeri templum Dei, quantum póssumus cum ipsíus adjutório laborémus, ne Dóminus noster in templo suo, hoc est, in nobis ipsis invéniat quod óculos suæ majestátis offéndat."
 		]
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-iv"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN2R1/",
 		"datum":"Orántibus in loco isto,"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-iv","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-i","responsum"],
 		"datum":"Dimítte peccáta pópuli tui Deus, et osténde eis viam bonam, per quam ámbulent, et da glóriam in loco isto."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-iv","versus"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-i","versus"],
 		"datum":"Qui regis Israël inténde, qui dedúcis velut ovem Joseph, qui sedes super Chérubim."
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-v"],
+		"tags":["dedicatio","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Sed habitáculum cordis nostri evacuétur vítiis, et virtútibus repleátur: claudátur diábolo, et aperiátur Christo: et ita laborémus, ut nobis bonórum óperum clávibus jánuam regni cœléstis aperíre possímus. Sicut enim malis opéribus, quasi quibúsdam seris ac véctibus, vitæ nobis jánua claúditur: ita absque dúbio bonis opéribus aperítur. Et ídeo, fratres caríssimi, unusquísque consíderet consciéntiam suam, et quando se áliquo crímine vulnerátum esse cognóverit, prius oratiónibus, jejúniis, vel eleemósynis stúdeat mundáre consciéntiam suam; et sic Eucharístiam præsúmat accípere."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-v"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN2R2/",
 		"datum":"O quam metuéndus est locus iste:"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-v","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-ii","responsum"],
 		"datum":"Vere non est hic áliud, nisi domus Dei, et porta cœli."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-v","versus"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-ii","versus"],
 		"datum":"Hæc est domus Dómini fírmiter ædificáta, bene fundáta est supra firmam petram."
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-vi"],
+		"tags":["dedicatio","matutinum","nocturna-ii","lectio","lectio-iii"],
 		"datum":"Si enim agnóscens reátum suum, ipse se a divíno altári subtráxerit, cito ad indulgéntiam divínæ misericórdiæ pervéniet. Quia sicut, qui se exáltat, humiliábitur; ita e contrário, qui se humíliat, exaltábitur. Qui enim, sicut dixi, agnóscens reátum suum, ipse se humíliter ab altári Ecclésiæ pro emendatióne vitæ removére volúerit, ab ætérno illo et cœlésti convívio excommunicári pénitus non timébit."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-vi"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN2R3/",
 		"datum":"Mane surgens Jacob erigébat lápidem in títulum, fundens óleum désuper, votum vovit Dómino:"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-vi","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-iii","responsum"],
 		"datum":"Vere locus iste sanctus est, et ego nesciébam."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-vi","versus"],
+		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-iii","versus"],
 		"datum":"Cumque evigilásset Jacob de somno, ait."
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-vii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN3A1/",
 		"datum":"Qui hábitat in adjutório Altíssimi, * in protectióne Dei cœli commorábitur."
 	},
 	{
-		"tags":["dedicatio","matutinum","vii-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-iii","i-psalmus"],
 		"forwards-to":["psalmus-xc"]
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-viii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN3A2/",
 		"datum":"Templum Dómini * sanctum est, Dei structúra est, Dei ædificátio est."
 	},
 	{
-		"tags":["dedicatio","matutinum","viii-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-iii","ii-psalmus"],
 		"forwards-to":["psalmus-xcv"]
 	},
 	{
-		"tags":["dedicatio","matutinum","antiphona","antiphona-ix"],
+		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN3A3/",
 		"datum":"Benedícta * glória Dómini, de loco sancto suo, allelúja."
 	},
 	{
-		"tags":["dedicatio","matutinum","ix-psalmus"],
+		"tags":["dedicatio","matutinum","nocturna-iii","iii-psalmus"],
 		"forwards-to":["psalmus-xcviii"]
 	},
 	{
-		"tags":["dedicatio","matutinum","versiculus","versiculus-iii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","versiculus"],
 		"datum":["V. Hæc est domus Dómini fírmiter ædificáta.","R. Bene fundáta est supra firmam petram."]
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-vii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Lucam.",
 			"In illo témpore: Ingréssus Jesus perambulábat Jéricho. Et ecce vir nómine Zachǽus: et hic princeps erat publicanórum, et ipse dives. Et réliqua.",
@@ -309,37 +309,37 @@
 		]
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-vii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-i"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN3R1/",
 		"datum":"Domus mea, domus oratiónis vocábitur, dicit Dóminus: in ea omnis qui petit, áccipit; et qui quærit, ínvenit:"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-vii","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-i","responsum"],
 		"datum":"Et pulsánti aperiétur."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-vii","versus"],
+		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-i","versus"],
 		"datum":"Pétite, et accipiétis: quǽeite, et inveniétis."
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-viii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Et bene ascéndit in árborem, ut arbor bona bonos fructus fáceret: ac naturáli excísus oleástro, et contra natúram insértus in bonam olívam, fructum posset legis afférre. Radix enim sancta, etsi rami inútiles: quorum infructuósam glóriam plebs Géntium fide resurrectiónis, quasi quadam córporis elevatióne transcéndit. Zachǽus ergo in sycómoro, cæcus in via: quorum álterum Dóminus miseratúrus expéctat, álterum mansiónis suæ claritáte nobílitat: álterum sanatúrus intérrogat, apud álterum se non invitátus invítat. Sciébat enim úberem hospítii sui esse mercédem. Sed tamen, etsi nondum vocem invitántis audíerat, jam víderat afféctum."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-viii"],
+		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"src":"https://nocturnale.marteo.fr/chant/CDEDN3R2/",
 		"datum":"Lápides pretiósi omnes muri tui:"
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-viii","responsum"],
+		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-ii","responsum"],
 		"datum":"Et turres Jerúsalem gemmis ædificabúntur."
 	},
 	{
-		"tags":["dedicatio","matutinum","responsorium","responsorium-viii","versus"],
+		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-ii","versus"],
 		"datum":"Portæ Jerúsalem ex sapphíro et smarágdo ædificabúntur, et ex lápide pretióso omnis circúitus muri ejus."
 	},
 	{
-		"tags":["dedicatio","matutinum","lectio","lectio-ix"],
+		"tags":["dedicatio","matutinum","nocturna-iii","lectio","lectio-iii"],
 		"datum":"Verum ne cæcum illum tamquam fastidiósi paúperum cito reliquísse videámur, et transísse ad dívitem, exspectémus eum, quia exspectávit et Dóminus: interrogémus eum, quia interrogávit et Christus. Nos interrogémus, quia nescímus: ille quia nóverat. Nos interrogémus, ut sciámus unde iste curátus sit: ille interrogávit, ut in uno plures discerémus, unde Dóminum vidére mereámur. Interrogávit enim, ut crederémus, néminem nisi confiténtem posse salvári."
 	},
 	{
