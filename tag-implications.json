@@ -1,0 +1,22 @@
+[
+	{
+		"tags":["duplex-i-classis"],
+		"implies":["novem-lectiones","duplex","sollemnitas"]
+	},
+	{
+		"tags":["duplex-ii-classis"],
+		"implies":["novem-lectiones","duplex","sollemnitas"]
+	},
+	{
+		"tags":["duplex-majus"],
+		"implies":["novem-lectiones","duplex","sollemnitas"]
+	},
+	{
+		"tags":["duplex-minus"],
+		"implies":["novem-lectiones","duplex"]
+	},
+	{
+		"tags":["semiduplex"],
+		"implies":["novem-lectiones"]
+	}
+]

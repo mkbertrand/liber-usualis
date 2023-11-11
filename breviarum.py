@@ -51,6 +51,8 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
+implicationtable = load_data('tag-implications.json')
+
 def prettyprint(j):
     def recurse(obj):
         match obj:
@@ -153,6 +155,11 @@ def getbytags(daytags, query):
 def hour(hour: str, day):
     assert not type(day) == datetime
     daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
+    for i in daytags:
+        for j in implicationtable:
+            if j['tags'].issubset(i):
+                i |= j['implies']
+    
     flatday = set()
     for i in daytags:
         flatday |= i
