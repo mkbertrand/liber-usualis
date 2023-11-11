@@ -32,7 +32,7 @@ def taggedentry(day, tags):
         if i >= tags:
             return i
 
-coincidencetable = load_data('vesperal-coincidence.json')
+coincidencetable = load_data('kalendar/data/vesperal-coincidence.json')
 hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv'}
 hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
