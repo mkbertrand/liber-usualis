@@ -1,0 +1,35 @@
+[
+	{
+		"tags":["hebdomada-v-epiphaniae","collecta"],
+		"datum":"Famíliam tuam, quǽsumus Dómine, contínua pietáte custódi: ut quæ in sola spe grátiæ cœléstis innítitur, tua semper protectióne muniátur."
+	},
+	{
+		"tags":["hebdomada-v-epiphaniae","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["hebdomada-v-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum secúndum Matthǽum.",
+			"In illo témpore: Dixit Jesus turbis parábolam hanc: Símile factum est regnum cœlórum hómini qui seminávit bonum semen in agro suo. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Cum negligéntius ágerent præpósiti Ecclésiæ, aut cum dormitiónem mortis accíperent Apóstoli, venit diábolus, et superseminávit eos, quos malos fílios Dóminus interpretátur. Sed quǽritur, utrum hærétici sint, an male vivéntes cathólici. Possunt enim dici fílii mali étiam hærétici, quia ex eódem Evangélii sémine, et Christi nómine procreáti, pravis opiniónibus ad falsa dógmata convertúntur."
+		]
+	},
+	{
+		"tags":["hebdomada-v-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Sed quod dicit eos in médio trítici seminátos, quasi vidéntur illi significári, qui uníus communiónis sunt. Verúmtamen quóniam Dóminus agrum ipsum, non Ecclésiam, sed hunc mundum interpretátus est: bene intelligúntur hærétici, quia non societáte uníus Ecclésiæ, vel uníus fídei, sed societáte solíus nóminis christiáni in hoc mundo permiscéntur bonis. At illi qui in eádem fide mali sunt, pálea pótius quam zizánia reputántur: quia pálea étiam fundaméntum ipsum habet cum fruménto, radicémque commúnem."
+	},
+	{
+		"tags":["hebdomada-v-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"In illa plane sagéna qua concludúntur et mali et boni pisces, non absúrde mali cathólici intelligúntur. Áliud est enim mare, quod magis mundum istum signíficat: áliud sagéna, quæ uníus fídei, vel uníus Ecclésiæ communiónem vidétur osténdere. Inter hæréticos et malos cathólicos hoc ínterest, quod hærétici falsa credunt: illi autem vera credéntes, non vivunt ita ut credunt."
+	},
+	{
+		"tags":["hebdomada-v-epiphaniae","dominica","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Dómine, * nonne bonum semen seminásti in agro tuo? unde ergo habet zizánia? Et ait illis: Hoc fecit inimícus homo."
+	},
+	{
+		"tags":["hebdomada-v-epiphaniae","dominica","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Collígite primum zizánia, * et alligáte ea in fascículos ad comburéndum: tríticum autem congregáte in hórreum meum, dicit Dóminus."
+	}
+]
