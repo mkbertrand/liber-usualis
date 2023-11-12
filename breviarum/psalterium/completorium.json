@@ -1,0 +1,65 @@
+[
+	{
+		"tags":["completorium", "hora"],
+		"datum":[
+			{"from-tags":["ante-officium"]},
+			{
+				"from-tags":["formula","lectio"],
+				"with-tags":["completorium"]
+			},
+			{"from-tags":["adjutorium-nostrum"]},
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["confiteor"]},
+			"V. Convérte nos Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
+			{"from-tags":["deus-in-adjutorium","ferialis"]},
+			{"from-tags":["completorium","antiphona","intonata"]},
+			{"from-tags":["psalmus-iv"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xxx","versus-ii"]},
+			{"from-tags":["psalmus-xxx","versus-iii"]},
+			{"from-tags":["psalmus-xxx","versus-iv"]},
+			{"from-tags":["psalmus-xxx","versus-v"]},
+			{"from-tags":["psalmus-xxx","versus-vi"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xc"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxxxiii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["completorium","antiphona"]},
+			{"from-tags":["completorium","hymnus"]},
+			{"from-tags":["ordinarium","completorium","capitulum"]},
+			"Deo grátias.",
+			{
+				"from-tags":["responsorium-breve"],
+				"with-tags":["completorium"]
+			},
+			{"from-tags":["completorium","versiculus"]},
+			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis","intonata"]},
+			{"from-tags":["nunc-dimittis"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis"]},
+			{"from-tags":["completorium","preces"]},
+			{
+				"from-tags":["collecta-primaria"],
+				"with-tags":["ordinarium","completorium"]
+			},
+			{
+				"from-tags":["dominus-vobiscum","ferialis-a"],
+				"tags":["completorium","dominus-vobiscum"]
+			},
+			{"from-tags":["benedicamus-domino","hora-minor"]},
+			{
+				"tags":["completorium","benedictio-finalis"],
+				"datum":[
+					"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
+					"R. Amen."
+				]
+			},
+			{"from-tags":["antiphona-bmv"]},
+			"Divínum auxílium máneat semper nobíscum.",
+			"R. Amen.",
+			{"from-tags":["prex-triplex"]},
+			{"from-tags":["post-officium"]}
+		]
+	}
+]

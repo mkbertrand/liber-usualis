@@ -1,0 +1,38 @@
+[
+	{
+		"tags":["nona", "hora"],
+		"datum":[
+			{"from-tags":["ante-officium"]},
+			{"from-tags":["prex-duplex"]},
+			{"from-tags":["deus-in-adjutorium","ferialis"]},
+			{"from-tags":["nona","hymnus"]},
+			{"from-tags":["nona","antiphona","antiphona-v","intonata"]},
+			{"from-tags":["psalmus-cxviii-xvii"]},
+			{"from-tags":["psalmus-cxviii-xviii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-xix"]},
+			{"from-tags":["psalmus-cxviii-xx"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-xxi"]},
+			{"from-tags":["psalmus-cxviii-xxii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["nona","antiphona","antiphona-v"]},
+			{"from-tags":["nona","capitulum"]},
+			"Deo grátias.",
+			{
+				"from-tags":["responsorium-breve"],
+				"with-tags":["nona"]
+			},
+			{"from-tags":["nona","versiculus"]},
+			{"from-tags":["collecta-primaria"]},
+			{
+				"from-tags":["dominus-vobiscum","ferialis-a"],
+				"tags":["nona","dominus-vobiscum"]
+			},
+			{"from-tags":["benedicamus-domino","hora-minor"]},
+			{"from-tags":["fidelium-animae"]},
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["post-officium"]}
+		]
+	}
+]

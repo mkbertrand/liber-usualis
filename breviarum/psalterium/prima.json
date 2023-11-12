@@ -1,0 +1,73 @@
+[
+	{
+		"tags":["prima", "hora"],
+		"datum":[
+			{"from-tags":["ante-officium"]},
+			{"from-tags":["prex-triplex"]},
+			{"from-tags":["deus-in-adjutorium","ferialis"]},
+			{"from-tags":["prima","hymnus"]},
+			{"from-tags":["prima","antiphona","antiphona-i","intonata"]},
+			{"from-tags":["prima","psalmodia"]},
+			{"from-tags":["prima","antiphona","antiphona-i"]},
+			{"from-tags":["ordinarium","prima","capitulum"]},
+			"Deo grátias.",
+			{
+				"from-tags":["responsorium-breve"],
+				"with-tags":["prima"]
+			},
+			{"from-tags":["prima","versiculus"]},
+			{"from-tags":["prima","preces"]},
+			{
+				"from-tags":["collecta-primaria"],
+				"with-tags":["ordinarium","prima"]
+			},
+			{
+				"from-tags":["dominus-vobiscum","ferialis-a"],
+				"tags":["prima","dominus-vobiscum"]
+			},
+			{"from-tags":["benedicamus-domino","hora-minor"]},
+			{"from-tags":["martyrologium"]},
+			"V. Pretiósa in conspéctu Dómini.",
+			"R. Mors sanctórum ejus.",
+			"Sancta María, et omnes Sancti indercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.",
+			"R. Amen.",
+			"V. Deus in adjutórium meum inténde.",
+			"R. Dómine ad adjuvándum me festína.",
+			"V. Deus in adjutórium meum inténde.",
+			"R. Dómine ad adjuvándum me festína.",
+			"V. Deus in adjutórium meum inténde.",
+			"R. Dómine ad adjuvándum me festína.",
+			{"from-tags":["gloria-versorum"]},
+			{
+				"tags":["prima","capitulare","kyrie"],
+				"datum":"Kýrie eléison. Christe eléison. Kýrie eléison."
+			},
+			{
+				"datum":"Pater noster.",
+				"tags":["prima","capitulare","pater-noster-incipit"]
+			},
+			{
+				"datum":"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+				"tags":["prima","capitulare","pater-noster"]
+			},
+			{
+				"datum":["V. Et ne nos indúcas in tentatiónem.","R. Sed líbera nos a malo."],
+				"tags":["prima","capitulare","et-ne-nos"]
+			},
+			"V. Réspice in servos tuos Dómine, et in ópera tua, * et dírige fílios eórum.",
+			"R. Et sit splendor Dómini Dei nostri super nos, + et ópera mánuum nostrárum dírige super nos, * et opus mánuum nostrárum dírige.",
+			{"from-tags":["gloria-versorum"]},
+			"Orémus.",
+			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.",
+			"Amen.",
+			{"from-tags":["formula","lectio"],"with-tags":["prima"]},
+			{"from-tags":["adjutorium-nostrum"]},
+			"V. Benedícite.",
+			"R. Deus.",
+			"Dóminus nos benedícat, et ab omni malo deféndat, et ad vitam perdúcat ætérnam: et fidélium ánimæ per misericórdiam Dei requiéscant in pace.",
+			"Amen.",
+			{"from-tags":["pater-noster-secreta"]},
+			{"from-tags":["post-officium"]}
+		]
+	}
+]

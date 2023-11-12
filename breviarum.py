@@ -12,7 +12,7 @@ import sys
 from kalendar import kalendar
 
 data_root = pathlib.Path(__file__).parent
-defaultpile = {'horae','psalterium','formulae','psalmi','cantica'}
+defaultpile = {'psalterium','formulae','psalmi','cantica'}
 
 def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
@@ -164,7 +164,7 @@ def hour(hour: str, day):
     for i in daytags:
         flatday |= i
     
-    pile = datamanage.getbreviarumfiles(defaultpile | flatday)
+    pile = datamanage.getbreviarumfiles(defaultpile | flatday | {hour})
     
     primary = getbytags(daytags, 'primarium')
     withtagprimary = primary | (getbytags(daytags, 'antiphona-bmv') - {'i-vesperae','antiphona-bmv', 'temporale'}) | {hour}

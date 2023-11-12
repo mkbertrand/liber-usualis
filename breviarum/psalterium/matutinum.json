@@ -1,0 +1,315 @@
+[
+	{
+		"tags":["matutinum","hora"],
+		"datum":[
+			{"from-tags":["ante-officium"]},
+			{"from-tags":["prex-triplex"]},
+			"V. Dómine, +︎ lábia mea apéries.",
+			"R. Et os meum annuntiábit laudem tuam.",
+			{"from-tags":["deus-in-adjutorium","festalis"]},
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium"]},
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium"]},
+			"Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium"]},
+			"Quóniam Deus magnus Dóminus, et Rex magnus super omnes deos: quóniam non repéllet Dóminus plebem suam, quia in manu ejus sunt omes fines terræ, et altitúdines móntium ipse cónspicit.",
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium", "pars"]},
+			"Quóniam ipsíus est mare, et ipse fecit illud, et áridam fundavérunt manus ejus: veníte adorémus, et procidámus ante Deum: plorémus coram Dómino, qui fecit nos, quia ipse est Dóminus Deus noster: nos autem pópulus ejus, et oves páscuæ ejus.",
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium"]},
+			"Hódie si vocem ejus audiéritis, nolíte obduráre corda vestra, sicut in exacerbatióne secúndum diem tentatiónis in desérto: ubi tentavérunt me patres vestri, probavérunt et vidérunt ópera mea.",
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium","pars"]},
+			"Quadragínta annis próximus fui generatióni huic, et dixi, Semper hi errant corde: ipsi vero non cognovérunt vias meas, quibus jurávi in ira mea, si introíbunt in réquiem meam.",
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium"]},
+			"Glória Patri, et Fílio, et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: et in sǽcula sæculórum. Amen.",
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium","pars"]},
+			{"from-tags":["matutinum","antiphona","antiphona-invitatorium"]},
+			{"from-tags":["matutinum","hymnus"]},
+			{"from-tags":["matutinum","nocturnae"]}
+		]
+	},
+	{
+		"tags":["matutinum","nocturnae","feria"],
+		"with-tags":["nocturna-i"],
+		"forwards-to":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]
+	},
+	{
+		"tags":["matutinum","nocturnae","simplex"],
+		"with-tags":["nocturna-i"],
+		"forwards-to":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae","te-deum"]
+	},
+	{
+		"tags":["matutinum","nocturnae","semiduplex","dominica"],
+		"datum":[
+			{
+				"from-tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
+				"with-tags":["nocturna-i"]
+			},
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+				"with-tags":["nocturna-ii"]
+			},
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae","te-deum"],
+				"with-tags":["nocturna-iii"]
+			}
+		]
+	},
+	{
+		"tags":["matutinum","nocturnae","novem-lectiones"],
+		"datum":[
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+				"with-tags":["nocturna-i"]
+			},
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+				"with-tags":["nocturna-ii"]
+			},
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae","te-deum"],
+				"with-tags":["nocturna-iii"]
+			}
+		]
+	},
+	{
+		"tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
+		"datum":[
+			{
+				"tags":["matutinum","psalmodia"],
+				"datum":[
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-i"]},
+					{"from-tags":["matutinum","i-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","ii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","iii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","iv-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-ii"]},
+					{"from-tags":["matutinum","v-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","vi-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","vii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","viii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-iii"]},
+					{"from-tags":["matutinum","ix-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","x-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","xi-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","xii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii"]}
+				]
+			},
+			{"from-tags":["matutinum","versiculus"]},
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
+			"R. Amen.",
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-i"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-i"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-iii"]},
+			{"from-tags":["formula","responsorium","gloria"],"with-tags":["matutinum","responsorium-iii"]}
+		]
+	},
+	{
+		"tags":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"],
+		"datum":[
+			{
+				"tags":["matutinum","psalmodia"],
+				"datum":[
+					{"from-tags":["matutinum","antiphona","antiphona-i","intonata"]},
+					{"from-tags":["matutinum","i-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","ii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-i"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii","intonata"]},
+					{"from-tags":["matutinum","iii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","iv-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii","intonata"]},
+					{"from-tags":["matutinum","v-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","vi-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iv","intonata"]},
+					{"from-tags":["matutinum","vii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","viii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iv"]},
+					{"from-tags":["matutinum","antiphona","antiphona-v","intonata"]},
+					{"from-tags":["matutinum","ix-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","x-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-v"]},
+					{"from-tags":["matutinum","antiphona","antiphona-vi","intonata"]},
+					{"from-tags":["matutinum","xi-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","xii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-vi"]}
+				]
+			},
+			{"from-tags":["matutinum","versiculus"]},
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
+			"R. Amen.",
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-i"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-i"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-iii"]},
+			{"from-tags":["formula","responsorium","gloria"],"with-tags":["matutinum","responsorium-iii"]}
+		]
+	},
+	{
+		"tags":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae","te-deum"],
+		"datum":[
+			{
+				"tags":["matutinum","psalmodia"],
+				"datum":[
+					{"from-tags":["matutinum","antiphona","antiphona-i","intonata"]},
+					{"from-tags":["matutinum","i-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","ii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-i"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii","intonata"]},
+					{"from-tags":["matutinum","iii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","iv-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii","intonata"]},
+					{"from-tags":["matutinum","v-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","vi-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iv","intonata"]},
+					{"from-tags":["matutinum","vii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","viii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iv"]},
+					{"from-tags":["matutinum","antiphona","antiphona-v","intonata"]},
+					{"from-tags":["matutinum","ix-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","x-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-v"]},
+					{"from-tags":["matutinum","antiphona","antiphona-vi","intonata"]},
+					{"from-tags":["matutinum","xi-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","xii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-vi"]}
+				]
+			},
+			{"from-tags":["matutinum","versiculus"]},
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
+			"R. Amen.",
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-i"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-i"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-iii"]},
+			{"from-tags":["hymnus","te-deum"]}
+		]
+	},
+	{
+		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+		"datum":[
+			{
+				"tags":["matutinum","psalmodia"],
+				"datum":[
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-i"]},
+					{"from-tags":["matutinum","i-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-ii"]},
+					{"from-tags":["matutinum","ii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-iii"]},
+					{"from-tags":["matutinum","iii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii"]}
+				]
+			},
+			{"from-tags":["matutinum","versiculus"]},
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
+			"R. Amen.",
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-i"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-i"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-iii"]},
+			{"from-tags":["formula","responsorium","gloria"],"with-tags":["matutinum","responsorium-iii"]}
+		]
+	},
+	{
+		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae","te-deum"],
+		"datum":[
+			{
+				"tags":["matutinum","psalmodia"],
+				"datum":[
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-i"]},
+					{"from-tags":["matutinum","i-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-ii"]},
+					{"from-tags":["matutinum","ii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-iii"]},
+					{"from-tags":["matutinum","iii-psalmus"]},
+					{"from-tags":["gloria-psalmi"]},
+					{"from-tags":["matutinum","antiphona","antiphona-iii"]}
+				]
+			},
+			{"from-tags":["matutinum","versiculus"]},
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
+			"R. Amen.",
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-i"]},
+			{"from-tags":["formula","responsorium"],"with-tags":["matutinum","responsorium-i"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-ii"]},
+			{"from-tags":["formula","responsorium","gloria"],"with-tags":["matutinum","responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"with-tags":["matutinum","lectio-iii"]},
+			{"from-tags":["hymnus","te-deum"]}
+		]
+	}
+]
