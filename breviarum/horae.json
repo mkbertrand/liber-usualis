@@ -55,7 +55,7 @@
 		]
 	},
 	{
-		"tags":["matutinum","nocturnae","semiduplex"],
+		"tags":["matutinum","nocturnae","novem-lectiones"],
 		"datum":[
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
@@ -77,7 +77,7 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["matutinum","antiphona","antiphona-i","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-i"]},
 					{"from-tags":["matutinum","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","ii-psalmus"]},
@@ -87,7 +87,7 @@
 					{"from-tags":["matutinum","iv-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-i"]},
-					{"from-tags":["matutinum","antiphona","antiphona-ii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-ii"]},
 					{"from-tags":["matutinum","v-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","vi-psalmus"]},
@@ -97,7 +97,7 @@
 					{"from-tags":["matutinum","viii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
-					{"from-tags":["matutinum","antiphona","antiphona-iii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-iii"]},
 					{"from-tags":["matutinum","ix-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","x-psalmus"]},
@@ -248,15 +248,15 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["matutinum","antiphona","antiphona-i","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-i"]},
 					{"from-tags":["matutinum","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-i"]},
-					{"from-tags":["matutinum","antiphona","antiphona-ii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-ii"]},
 					{"from-tags":["matutinum","ii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
-					{"from-tags":["matutinum","antiphona","antiphona-iii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-iii"]},
 					{"from-tags":["matutinum","iii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-iii"]}
@@ -283,15 +283,15 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["matutinum","antiphona","antiphona-i","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-i"]},
 					{"from-tags":["matutinum","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-i"]},
-					{"from-tags":["matutinum","antiphona","antiphona-ii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-ii"]},
 					{"from-tags":["matutinum","ii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-ii"]},
-					{"from-tags":["matutinum","antiphona","antiphona-iii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["matutinum","antiphona-iii"]},
 					{"from-tags":["matutinum","iii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-iii"]}
@@ -316,24 +316,24 @@
 		"tags":["laudes","hora"],
 		"datum":[
 			{"from-tags":["deus-in-adjutorium","festalis"]},
-			{"from-tags":["laudes","antiphona","antiphona-i","intonata"]},
+			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-i"]},
 			{"from-tags":["laudes","i-psalmus"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-i"]},
-			{"from-tags":["laudes","antiphona","antiphona-ii","intonata"]},
+			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-ii"]},
 			{"from-tags":["laudes","ii-psalmus"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-ii"]},
-			{"from-tags":["laudes","antiphona","antiphona-iii","intonata"]},
+			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-iii"]},
 			{"from-tags":["psalmus-lxii"]},
 			{"from-tags":["psalmus-lxvi"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-iii"]},
-			{"from-tags":["laudes","antiphona","antiphona-iv","intonata"]},
+			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-iv"]},
 			{"from-tags":["laudes","canticum"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-iv"]},
-			{"from-tags":["laudes","antiphona","antiphona-v","intonata"]},
+			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-v"]},
 			{"from-tags":["psalmus-cxlviii"]},
 			{"from-tags":["psalmus-cxlix"]},
 			{"from-tags":["psalmus-cxl"]},
@@ -343,7 +343,7 @@
 			"Deo grátias.",
 			{"from-tags":["laudes","hymnus"]},
 			{"from-tags":["laudes","versiculus"]},
-			{"from-tags":["laudes","antiphona","antiphona-benedictus","intonata"]},
+			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-benedictus"]},
 			{"from-tags":["benedictus"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-benedictus"]},
@@ -360,10 +360,6 @@
 			{"from-tags":["post-officium"]}
 		]
 	},
-	
-	
-	
-	
 	{
 		"tags":["prima", "hora"],
 		"datum":[
@@ -552,23 +548,23 @@
 			{
 				"tags":["vesperae","psalmodia"],
 				"datum":[
-					{"from-tags":["vesperae","antiphona","antiphona-i","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-i"]},
 					{"from-tags":["vesperae","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-i"]},
-					{"from-tags":["vesperae","antiphona","antiphona-ii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-ii"]},
 					{"from-tags":["vesperae","ii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-ii"]},
-					{"from-tags":["vesperae","antiphona","antiphona-iii","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-iii"]},
 					{"from-tags":["vesperae","iii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-iii"]},
-					{"from-tags":["vesperae","antiphona","antiphona-iv","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-iv"]},
 					{"from-tags":["vesperae","iv-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-iv"]},
-					{"from-tags":["vesperae","antiphona","antiphona-v","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-v"]},
 					{"from-tags":["vesperae","v-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-v"]}
@@ -581,7 +577,7 @@
 					"Deo grátias.",
 					{"from-tags":["vesperae","hymnus"]},
 					{"from-tags":["vesperae","versiculus"]},
-					{"from-tags":["vesperae","antiphona","antiphona-magnificat","intonata"]},
+					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-magnificat"]},
 					{"from-tags":["magnificat"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-magnificat"]}

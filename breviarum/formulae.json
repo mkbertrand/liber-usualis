@@ -72,6 +72,14 @@
 		]
 	},
 	{
+		"tags":["formula","antiphona-prior"],
+		"forwards-to":["antiphona","intonata"]
+	},
+	{
+		"tags":["formula","antiphona-prior","duplex"],
+		"forwards-to":["antiphona"]
+	},
+	{
 		"tags":["hymnus","te-deum"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2305",
 		"datum":[
