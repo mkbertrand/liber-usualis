@@ -73,6 +73,12 @@ def prettyprint(j):
                         print(' ' + i)
     recurse(j)
 
+def flattensetlist(sets):
+    ret = set()
+    for i in sets:
+        ret |= i
+    return ret
+
 def anysearch(query, pile):
     for i in pile:
         if type(i['tags']) == list:
@@ -84,10 +90,16 @@ def anysearch(query, pile):
         elif i['tags'].issubset(query):
             yield i
 
-def search(query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
-    result = list(sorted(list(anysearch(query, pile)), key=lambda a: len(a['tags'])))
+def anysearchmultiple(queries, pile):
+    ret = []
+    for i in queries:
+        ret.extend(list(anysearch(i, pile)))
+    return ret
+
+def search(queries, pile, multipleresults = False, multipleresultssort = None, priortags = None):
+    result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: len(a['tags'])))
     if len(result) == 0:
-        warnings.warn(f'0 tags found for query {query}')
+        warnings.warn(f'0 tags found for queries {list(queries)}')
         return None
     elif len(result) == 1:
         return result[0]
@@ -96,33 +108,47 @@ def search(query, pile, multipleresults = False, multipleresultssort = None, pri
     elif not priortags == None:
         logging.debug(f'Search differentiation required priortag to rank {result}' )
         strippedresult = [a['tags'] & priortags for a in result]
-        print(strippedresult)
         if not len(strippedresult[-1]) == len(strippedresult[-2]):
             return result[-1]
     if not multipleresults:
-        raise RuntimeError(f'Multiple equiprobable results for query {query}:\n{result[-1]}\n{result[-2]}')
+        raise RuntimeError(f'Multiple equiprobable results for queries {queries}:\n{result[-1]}\n{result[-2]}')
     else:
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
+def pickcascades(search, cascades):
+    for cascade in cascades:
+        if not search.isdisjoint(cascade) or 'primarium' in cascade:
+            yield search | cascade
+
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
-def process(item, cascade, pile):
-    # None can sometimes be the result of a search and is expected, but indicates an absent item
+def process(item, cascades, pile):
+    
+     # None can sometimes be the result of a search and is expected, but indicates an absent item
     if item == None:
         return 'Absens'
     elif type(item) == set:
-        item = search(item | cascade, pile, priortags = item)
+        item = search(list(pickcascades(item, cascades)), pile, priortags = item)
+    
+    # Next cascade (not to be used for the current search, but only for deeper searches
+    nextcascades = list(pickcascades(item['cascade'], cascades)) if 'cascade' in item else cascades
+
     if 'from-tags' in item:
-        response = process(search(item['from-tags'] | cascade, pile, priortags = item['from-tags']), item['cascade'] | cascade if 'cascade' in item else cascade, pile)
+    
+        response = process(search(list(pickcascades(item['from-tags'], cascades)), pile, priortags = item['from-tags']), nextcascades, pile)
+        
         return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
-        return process(search(item['forwards-to'] | cascade, datamanage.getbreviarumfiles(defaultpile | item['forwards-to'] | cascade), priortags = item['forwards-to']), item['cascade'] | cascade if 'cascade' in item else cascade, pile)
+        # Since items in the Breviary may reference seemingly unrelated feasts, the provided pile may be insufficient so it is better to simply search a pile made from the specific relevant files
+        probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist(list(pickcascades(item['forwards-to'], cascades))))
+        
+        return process(search(list(pickcascades(item['forwards-to'], cascades)), probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
             if type(i) == str:
                 ret.append(i)
             else:
-                iprocessed = process(i, cascade, pile)
+                iprocessed = process(i, cascades, pile)
                 if iprocessed == None:
                     ret.append('Absens')
                 elif type(iprocessed) == list:
@@ -159,16 +185,11 @@ def hour(hour: str, day):
         for j in implicationtable:
             if j['tags'].issubset(i):
                 i |= j['implies']
-    
-    flatday = set()
-    for i in daytags:
-        flatday |= i
-    
-    pile = datamanage.getbreviarumfiles(defaultpile | flatday | {hour})
+
+    pile = datamanage.getbreviarumfiles(defaultpile | flattensetlist(daytags) | {hour})
     
     primary = getbytags(daytags, 'primarium')
-    withtagprimary = primary | (getbytags(daytags, 'antiphona-bmv') - {'i-vesperae','antiphona-bmv', 'temporale'}) | {hour}
-    primarydatum = process({hour, 'hora'} | primary, withtagprimary, pile)
+    primarydatum = process({hour, 'hora'} | primary, [(primary | {hour}), (getbytags(daytags, 'antiphona-bmv'))], pile)
     return primarydatum
 
 if __name__ == "__main__":
