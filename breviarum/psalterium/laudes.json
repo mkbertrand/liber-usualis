@@ -39,14 +39,28 @@
 			{"from-tags":["laudes","antiphona","antiphona-i"]},
 			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-ii"]},
 			{"from-tags":["trium-puerorum"]},
-			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-ii"]},
 			{"from-tags":["formula","antiphona-prior"],"with-tags":["laudes","antiphona-iii"]},
 			{"from-tags":["psalmus-cxlviii"]},
 			{"from-tags":["psalmus-cxlix"]},
-			{"from-tags":["psalmus-cxl"]},
+			{"from-tags":["psalmus-cl"]},
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["laudes","antiphona","antiphona-iii"]}
 		]
+	},
+	{
+		"tags":["laudes","dominica","antiphona","antiphona-i"],
+		"src":"https://gregobase.selapa.net/chant.php?id=18321",
+		"datum":"Allelúja, * allelúja."
+	},
+	{
+		"tags":["laudes","dominica","antiphona","antiphona-ii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=13305",
+		"datum":"Tres púeri * jussu regis in fornácem missi sunt, non timéntes flammam ignis, dicéntes: Benedíctus Deus."
+	},
+	{
+		"tags":["laudes","dominica","antiphona","antiphona-iii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=18322",
+		"datum":"Allelúja, * allelúja, allelúja."
 	}
 ]

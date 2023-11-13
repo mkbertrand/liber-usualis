@@ -12,7 +12,7 @@ import sys
 from kalendar import kalendar
 
 data_root = pathlib.Path(__file__).parent
-defaultpile = {'psalterium','formulae','psalmi','cantica'}
+defaultpile = {'formulae','psalmi','cantica'}
 
 def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
