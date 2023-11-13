@@ -3,10 +3,7 @@
 		"tags":["completorium", "hora"],
 		"datum":[
 			{"from-tags":["ante-officium"]},
-			{
-				"from-tags":["formula","lectio"],
-				"with-tags":["completorium"]
-			},
+			{"from-tags":["formula","lectio"],"with-tags":["completorium"]},
 			{"from-tags":["adjutorium-nostrum"]},
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["confiteor"]},
@@ -27,7 +24,7 @@
 			{"from-tags":["gloria-psalmi"]},
 			{"from-tags":["completorium","antiphona"]},
 			{"from-tags":["completorium","hymnus"]},
-			{"from-tags":["ordinarium","completorium","capitulum"]},
+			{"from-tags":["completorium","ordinarium","capitulum"]},
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
@@ -56,7 +53,7 @@
 				]
 			},
 			{"from-tags":["antiphona-bmv"]},
-			"Divínum auxílium máneat semper nobíscum.",
+			"Divínum auxílium ✠ máneat semper nobíscum.",
 			"R. Amen.",
 			{"from-tags":["prex-triplex"]},
 			{"from-tags":["post-officium"]}
@@ -76,7 +73,7 @@
 		"datum":"Miserére * mihi, Dómine, et exáudi oratiónem meam."
 	},
 	{
-		"tags":["completorium","hymnus","semiduplex"],
+		"tags":["completorium","semiduplex","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=1843",
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
@@ -85,7 +82,7 @@
 		]
 	},
 	{
-		"tags":["completorium","capitulum","ordinarium"],
+		"tags":["completorium","ordinarium","capitulum"],
 		"datum":"Tu autem in nobis es, Dómine, + et nomen sanctum tuum invocátum est super nos: * ne derelínquas nos, Dómine, Deus noster."
 	},
 	{
@@ -112,66 +109,41 @@
 	{
 		"tags":["completorium","preces"],
 		"datum":[
-			{
-				"datum":"Kýrie eléison. Christe eléison. Kýrie eléison.",
-				"tags":["completorium","preces","kyrie"]
-			},
-			{
-				"datum":"Pater noster.",
-				"tags":["completorium","preces","pater-noster-incipit"]
-			},
-			{
-				"datum":"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
-				"tags":["completorium","preces","pater-noster"]
-			},
-			{
-				"datum":["V. Et ne nos indúcas in tentatiónem.","R. Sed líbera nos a malo."],
-				"tags":["completorium","preces","et-ne-nos"]
-			},
-			{
-				"datum":"Credo in Deum.",
-				"tags":["completorium","preces","credo-incipit"]
-			},
-			{
-				"datum":"Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cœlos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum.",
-				"tags":["completorium","preces","credo"]
-			},
-			{
-				"datum":["V. Carnis resurrectiónem.","R. Vitam ætérnam. Amen."],
-				"tags":["completorium","preces","carnis-resurrectionem"]
-			},
-			{
-				"tags":["completorium","preces","versi"],
-				"datum":[
-					"V. Benedíctus es Dómine Deus patrum nostrórum.",
-					"R. Et laudábilis et gloriósus in sǽcula.",
-					"V. Benedicámus Patrem et Fílium cum sancto Spíritu.",
-					"R. Laudémus, et superexaltémus eum in sǽcula.",
-					"V. Benedíctus es Dómine in firmamento cœli.",
-					"R. Et laudábilis, et gloriósus, et superexaltátus in sǽcula.",
-					"V. Benedícat et custódiat nos omnípotens et miséricors Dóminus.",
-					"R. Amen.",
-					"V. Dignáre Dómine nocte ista.",
-					"R. Sine peccáto nos custodíre.",
-					"V. Miserére nostri Dómine.",
-					"R. Miserére nostri.",
-					"V. Fiat misericórdia tua Dómine super nos.",
-					"R. Quemádmodum sperávimus in te.",
-					"V. Dómine exaúdi oratiónem meam.",
-					"R. Et clamor meus ad te véniat."]
-			}
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.","R. Sed líbera nos a malo.",
+			"Credo in Deum.",
+			"Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cœlos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum.",
+			"V. Carnis resurrectiónem.","R. Vitam ætérnam. Amen.",
+			"V. Benedíctus es Dómine Deus patrum nostrórum.",
+			"R. Et laudábilis et gloriósus in sǽcula.",
+			"V. Benedicámus Patrem et Fílium cum sancto Spíritu.",
+			"R. Laudémus, et superexaltémus eum in sǽcula.",
+			"V. Benedíctus es Dómine in firmamento cœli.",
+			"R. Et laudábilis, et gloriósus, et superexaltátus in sǽcula.",
+			"V. Benedícat et custódiat nos omnípotens et miséricors Dóminus.",
+			"R. Amen.",
+			"V. Dignáre Dómine nocte ista.",
+			"R. Sine peccáto nos custodíre.",
+			"V. Miserére nostri Dómine.",
+			"R. Miserére nostri.",
+			"V. Fiat misericórdia tua Dómine super nos.",
+			"R. Quemádmodum sperávimus in te.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat."
 		]
 	},
 	{
-		"tags":["ordinarium","completorium","collecta"],
+		"tags":["completorium","ordinarium","collecta"],
 		"datum":"Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: Angeli tui sancti hábitent in ea, qui nos in pace custódiant, et benedíctio tua sit super nos semper."
 	},
 	{
-		"tags":["ordinarium","completorium","collecta","terminatio"],
+		"tags":["completorium","ordinarium","collecta","terminatio"],
 		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
-		"tags":["completorium","hymnus","feria"],
+		"tags":["completorium","feria","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=13354",
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",

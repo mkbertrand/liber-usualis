@@ -20,7 +20,7 @@
 			"V. Dóminus det nobis suam pacem.",
 			"R. Et vitam ætérnam. Amen.",
 			{"from-tags":["antiphona-bmv"]},
-			"Divínum auxílium máneat semper nobíscum.",
+			"Divínum auxílium ✠ máneat semper nobíscum.",
 			"R. Amen.",
 			{"from-tags":["post-officium"]}
 		]
@@ -62,5 +62,9 @@
 		"tags":["laudes","dominica","antiphona","antiphona-iii"],
 		"src":"https://gregobase.selapa.net/chant.php?id=18322",
 		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["laudes","dominica","capitulum"],
+		"datum":"Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, + honor, et virtus, et fortitúdo Deo nostro * in sǽcula sæculórum. Amen."
 	}
 ]
