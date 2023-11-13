@@ -34,5 +34,61 @@
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["post-officium"]}
 		]
+	},
+	{
+		"tags":["nona","semiduplex","hymnus"],
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["nona","dominica","antiphona"],
+		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["nona","capitulum"],
+		"datum":"Empti enim estis prétio magno. * Glorificáte et portáte Deum in córpore vestro."
+	},
+	{
+		"tags":["nona","dominica","responsorium"],
+		"datum":"Clamávi in toto corde meo,"
+	},
+	{
+		"tags":["nona","dominica","responsorium","responsum"],
+		"datum":"Exaúdi me Dómine."
+	},
+	{
+		"tags":["nona","dominica","responsorium","versus"],
+		"datum":"Justificatiónes tuas requíram."
+	},
+	{
+		"tags":["nona","versiculus"],
+		"datum":["V. Ab occúltis meis munda me Dómine.","R. Et ab aliénis parce servo tuo."]
+	},
+	{
+		"tags":["nona","feria","hymnus"],
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["nona","feria","antiphona"],
+		"datum":"Aspice in me, * et miserére mei Dómine."
+	},
+	{
+		"tags":["nona","feria","responsorium"],
+		"datum":"Rédime me Dómine,"
+	},
+	{
+		"tags":["nona","feria","responsorium","responsum"],
+		"datum":"Et miserére mei."
+	},
+	{
+		"tags":["nona","feria","responsorium","versus"],
+		"datum":"Pes enim meus stetit in via recta."
 	}
 ]

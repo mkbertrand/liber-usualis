@@ -34,5 +34,63 @@
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["post-officium"]}
 		]
+	},
+	{
+		"tags":["sexta","semiduplex","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=12355",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus meríridem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["sexta","dominica","antiphona"],
+		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["sexta","capitulum"],
+		"datum":"Alter altérius ónera portáte, * et sic adimplébitis legem Christi."
+	},
+	{
+		"tags":["sexta","dominica","responsorium"],
+		"datum":"In ætérnum Dómine"
+	},
+	{
+		"tags":["sexta","dominica","responsorium","responsum"],
+		"datum":"Pérmanet verbum tuum."
+	},
+	{
+		"tags":["sexta","dominica","responsorium","versus"],
+		"datum":"In sǽculum sǽculi véritas tua."
+	},
+	{
+		"tags":["sexta","versiculus"],
+		"datum":["V. Dóminus regit me, et nihil mihi déerit.","R. In loco páscuæ ibi me collocávit."]
+	},
+	{
+		"tags":["sexta","feria","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=11789",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus meríridem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["sexta","feria","antiphona"],
+		"datum":"Adjúva me, * et salvus ero Dómine."
+	},
+	{
+		"tags":["sexta","feria","responsorium"],
+		"datum":"Benedícam Dóminum"
+	},
+	{
+		"tags":["sexta","feria","responsorium","responsum"],
+		"datum":"In omni témpore."
+	},
+	{
+		"tags":["sexta","feria","responsorium","versus"],
+		"datum":"Semper laus ejus in ore meo."
 	}
 ]

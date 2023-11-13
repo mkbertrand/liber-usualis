@@ -53,5 +53,394 @@
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["post-officium"]}
 		]
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","antiphona-i","antiphona"],
+		"datum":"Dixit Dóminus * Dómino meo: Sede a dextris meis."
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","i-psalmus"],
+		"forwards-to":["psalmus-cix"]
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","antiphona-ii","antiphona"],
+		"datum":"Fidélia * ómnia mandáta ejus: confirmáta in sǽculum sǽculi."
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","ii-psalmus"],
+		"forwards-to":["psalmus-cx"]
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","antiphona-iii","antiphona"],
+		"datum":"In mandátis * ejus cupit nimis."
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","iii-psalmus"],
+		"forwards-to":["psalmus-cxi"]
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","antiphona-iv","antiphona"],
+		"datum":"Sit nomen Dómini * benedíctum in sǽcula."
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","iv-psalmus"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","antiphona-v","antiphona"],
+		"datum":"Nos qui vívimus, * benedícimus Dómino."
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","v-psalmus"],
+		"forwards-to":["psalmus-cxiii"]
+	},
+	{
+		"tags":["vesperae","capitulum","temporale"],
+		"datum":"Benedíctus Deus, et Pater Dómini nostri Jesu Christi,  + Pater misericordiárum, et Deus tótius consolatiónis, * qui consolátur nos in omni tribulatióne nostra."
+	},
+	{
+		"tags":["vesperae","dominica","ii-vesperae","hymnus"],
+		"datum":[
+			"Lucis Creátor óptime/Lucem diérum próferens,/Primórdiis lucis novæ,/Mundi parans oríginem:",
+			"Qui mane junctum vésperi/Diem vocári prǽcipis:/Illábitur tetrum chaos,/Audi preces cum flétibus.",
+			"Ne mens graváta crímine,/Vitæ sit exsul múnere,/Dum nil perénne cógitat,/Seséque culpis ílligat.",
+			"Cœléste pulset óstium:/Vitále tollat prǽmium:Vitémus omne nóxium:/Purgémus omne péssimum.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["vesperae","versiculus"],
+		"datum":["V. Dirigátur Dómine orátio mea.","R. Sicut incénsum in conspecto tuo."]
+	},
+	{
+		"tags":["vesperae","feria-ii","antiphona-i","antiphona"],
+		"datum":"Inclinávit * Dóminus aurem suam mihi."
+	},
+	{
+		"tags":["vesperae","feria-ii","i-psalmus"],
+		"forwards-to":["psalmus-cxiv"]
+	},
+	{
+		"tags":["vesperae","feria-ii","antiphona-ii","antiphona"],
+		"datum":"Crédidi, * propter quod locútus sum."
+	},
+	{
+		"tags":["vesperae","feria-ii","ii-psalmus"],
+		"forwards-to":["psalmus-cxv"]
+	},
+	{
+		"tags":["vesperae","feria-ii","antiphona-iii","antiphona"],
+		"datum":"Laudáte * Dóminum omnes gentes."
+	},
+	{
+		"tags":["vesperae","feria-ii","iii-psalmus"],
+		"forwards-to":["psalmus-cxvi"]
+	},
+	{
+		"tags":["vesperae","feria-ii","antiphona-iv","antiphona"],
+		"datum":"Clamávi, * et exaudívit me."
+	},
+	{
+		"tags":["vesperae","feria-ii","iv-psalmus"],
+		"forwards-to":["psalmus-cxix"]
+	},
+	{
+		"tags":["vesperae","feria-ii","antiphona-v","antiphona"],
+		"datum":"Unde véniet * auxílium mihi."
+	},
+	{
+		"tags":["vesperae","feria-ii","v-psalmus"],
+		"forwards-to":["psalmus-cxx"]
+	},
+	{
+		"tags":["vesperae","feria-ii","hymnus"],
+		"datum":[
+			"Imménse cœli Cónditor,/Qui mixta ne confúnderent,/Aquæ fluénta dívidens,/Cœlum dedísti límitem.",
+			"Firmans locum cœléstibus,/Simúlque terræ rívulis;/Ut unda flammas témperet,/Terræ solum ne díssipent.",
+			"Infúnde nunc, piísime,/Donum perénnis grátiæ:/Fraudis novæ ne cásibus/Nos error átterat vetus.",
+			"Lucem fides adaúgeat:/Sic lúminis jubar ferat:/Hæc vana cuncta próterat:/Hanc falsa nulla cómprimant.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["vesperae","feria-ii","antiphona-magnificat","antiphona"],
+		"datum":"Magníficat * ánima mea Dóminum, quia respéxit Deus humilitátem meam."
+	},
+	{
+		"tags":["vesperae","feria-iii","antiphona-i","antiphona"],
+		"datum":"In domum Dómini * lætántes íbimus."
+	},
+	{
+		"tags":["vesperae","feria-iii","i-psalmus"],
+		"forwards-to":["psalmus-cxxi"]
+	},
+	{
+		"tags":["vesperae","feria-iii","antiphona-ii","antiphona"],
+		"datum":"Qui hábitas * in cœlis, miserére nobis."
+	},
+	{
+		"tags":["vesperae","feria-iii","ii-psalmus"],
+		"forwards-to":["psalmus-cxxii"]
+	},
+	{
+		"tags":["vesperae","feria-iii","antiphona-iii","antiphona"],
+		"datum":"Adjutórium * nostrum in nómine Dómini."
+	},
+	{
+		"tags":["vesperae","feria-iii","iii-psalmus"],
+		"forwards-to":["psalmus-cxxiii"]
+	},
+	{
+		"tags":["vesperae","feria-iii","antiphona-iv","antiphona"],
+		"datum":"Bénefac * Dómine bonis, et rectis corde."
+	},
+	{
+		"tags":["vesperae","feria-iii","iv-psalmus"],
+		"forwards-to":["psalmus-cxxiv"]
+	},
+	{
+		"tags":["vesperae","feria-iii","antiphona-v","antiphona"],
+		"datum":"Facti sumus * sicut consoláti."
+	},
+	{
+		"tags":["vesperae","feria-iii","v-psalmus"],
+		"forwards-to":["psalmus-cxxv"]
+	},
+	{
+		"tags":["vesperae","feria-iii","hymnus"],
+		"datum":[
+			"Tellúris alme Cónditor,/Mundi solum qui séparans,/Pulsis aquæ moléstiis,/Terram dedísti immóbilem:",
+			"Ut germen aptum próferens,/Fulvis decóra flóribus,/Fœcúnda fructu sísteret,/Pastúmque gratum rédderet.",
+			"Mentis perústæ vúlnera/Mundi viróre grátiæ:/Ut facta fletu díluat,/Motúsque pravos átterat.",
+			"Jussis tuis obtémperet:/Nullis malis appróximet:Bonis repléri gaúdeat,/Et mortis ictum nésciat.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["vesperae","feria-iii","antiphona-magnificat","antiphona"],
+		"datum":"Exsúltet * spíritus meus in Deo salutári meo."
+	},
+	{
+		"tags":["vesperae","feria-iv","antiphona-i","antiphona"],
+		"datum":"Non confundétur * cum loquétur inimícis suis in porta."
+	},
+	{
+		"tags":["vesperae","feria-iv","i-psalmus"],
+		"forwards-to":["psalmus-cxxvi"]
+	},
+	{
+		"tags":["vesperae","feria-iv","antiphona-ii","antiphona"],
+		"datum":"Beáti * omnes, qui timent Dóminum."
+	},
+	{
+		"tags":["vesperae","feria-iv","ii-psalmus"],
+		"forwards-to":["psalmus-cxxvii"]
+	},
+	{
+		"tags":["vesperae","feria-iv","antiphona-iii","antiphona"],
+		"datum":"Sæpe * expugnavérunt me a juventúte mea."
+	},
+	{
+		"tags":["vesperae","feria-iv","iii-psalmus"],
+		"forwards-to":["psalmus-cxxviii"]
+	},
+	{
+		"tags":["vesperae","feria-iv","antiphona-iv","antiphona"],
+		"datum":"De profúndis * clamávi ad te Dómine."
+	},
+	{
+		"tags":["vesperae","feria-iv","iv-psalmus"],
+		"forwards-to":["psalmus-cxxix"]
+	},
+	{
+		"tags":["vesperae","feria-iv","antiphona-v","antiphona"],
+		"datum":"Speret * Israël in Dómino."
+	},
+	{
+		"tags":["vesperae","feria-iv","v-psalmus"],
+		"forwards-to":["psalmus-cxxx"]
+	},
+	{
+		"tags":["vesperae","feria-iv","hymnus"],
+		"datum":[
+			"Cœli Deus sanctíssime,/Qui lúcidas mundi plagas/Candóre pingis ígneo,/Augens decóro lúmine:",
+			"Quarto die qui flámmeam/Dum solis accéndis rotam,/Lunæ minístras órdinem,/Vagósque cursus síderum:",
+			"Ut nóctibus, vel lúmini/Diremptiónis términum,/Primórdiis et ménsium/Signum dares notíssimum;",
+			"Expélle noctem córdium:/Abstérge sordes méntium:Resólve culpæ vínculum:/Evérte moles críminum.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["vesperae","feria-iv","antiphona-magnificat","antiphona"],
+		"datum":"Respéxit * Dóminus humilitátem meam, et fecit in me magna, qui potens est."
+	},
+	{
+		"tags":["vesperae","feria-v","antiphona-i","antiphona"],
+		"datum":"Et omnis * mansuetúdinis ejus."
+	},
+	{
+		"tags":["vesperae","feria-v","i-psalmus"],
+		"forwards-to":["psalmus-cxxxi"]
+	},
+	{
+		"tags":["vesperae","feria-v","antiphona-ii","antiphona"],
+		"datum":"Ecce * quam bonum, et quam jucúndum habitáre fratres in unum."
+	},
+	{
+		"tags":["vesperae","feria-v","ii-psalmus"],
+		"forwards-to":["psalmus-cxxxii"]
+	},
+	{
+		"tags":["vesperae","feria-v","antiphona-iii","antiphona"],
+		"datum":"Omnia * quæcúmque vóluit Dóminus fecit."
+	},
+	{
+		"tags":["vesperae","feria-v","iii-psalmus"],
+		"forwards-to":["psalmus-cxxxiv"]
+	},
+	{
+		"tags":["vesperae","feria-v","antiphona-iv","antiphona"],
+		"datum":"Quóniam in ætérnum * misericórdia ejus."
+	},
+	{
+		"tags":["vesperae","feria-v","iv-psalmus"],
+		"forwards-to":["psalmus-cxxxv"]
+	},
+	{
+		"tags":["vesperae","feria-v","antiphona-v","antiphona"],
+		"datum":"Hymnum cantáte * nobis de cánticis Sion."
+	},
+	{
+		"tags":["vesperae","feria-v","v-psalmus"],
+		"forwards-to":["psalmus-cxxxvi"]
+	},
+	{
+		"tags":["vesperae","feria-v","hymnus"],
+		"datum":[
+			"Magnæ Deus poténtiæ,/Qui fértili natos aqua/Partim relínquis gúrgiti,/Partim levas in áëra.",
+			"Demérsa lymphis ímprimens,/Subvécta cœlis érigens:/Ut stirpe ab una pródita,/Divérsa répleant loca:",
+			"Largíre cunctis sérvulis,/Quos mundat unda sánguinis,/Nescíre lapsus críminum,/Nec ferre mortis tǽdium.",
+			"Ut culpa nullum déprimat:/Nullum éfferat jactántia:/Elísa mens ne cóncidat:/Eláta mens ne córruat.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["vesperae","feria-v","antiphona-magnificat","antiphona"],
+		"datum":"Fac Deus * poténtiam in bráchio tuo: dispérde supérbos, et exálta húmiles."
+	},
+	{
+		"tags":["vesperae","feria-vi","antiphona-i","antiphona"],
+		"datum":"In conspéctu * Angelórum psallam tibi Deus meus."
+	},
+	{
+		"tags":["vesperae","feria-vi","i-psalmus"],
+		"forwards-to":["psalmus-cxxxvii"]
+	},
+	{
+		"tags":["vesperae","feria-vi","antiphona-ii","antiphona"],
+		"datum":"Dómine * probásti me, et cognovísti me."
+	},
+	{
+		"tags":["vesperae","feria-vi","ii-psalmus"],
+		"forwards-to":["psalmus-cxxxviii"]
+	},
+	{
+		"tags":["vesperae","feria-vi","antiphona-iii","antiphona"],
+		"datum":"A viro iníquo * líbera me Dómine."
+	},
+	{
+		"tags":["vesperae","feria-vi","iii-psalmus"],
+		"forwards-to":["psalmus-cxxxix"]
+	},
+	{
+		"tags":["vesperae","feria-vi","antiphona-iv","antiphona"],
+		"datum":"Dómine * clamávi ad te, exaúdi me."
+	},
+	{
+		"tags":["vesperae","feria-vi","iv-psalmus"],
+		"forwards-to":["psalmus-cxl"]
+	},
+	{
+		"tags":["vesperae","feria-vi","antiphona-v","antiphona"],
+		"datum":"Pórtio mea * Dómine sit in terra vivéntium."
+	},
+	{
+		"tags":["vesperae","feria-vi","v-psalmus"],
+		"forwards-to":["psalmus-cxli"]
+	},
+	{
+		"tags":["vesperae","feria-vi","hymnus"],
+		"datum":[
+			"Hóminis supérne Cónditor,/Qui cuncta solus órdinans,/Humum jubes prodúcere/Reptántis et feræ genus:",
+			"Et magna rerum córpora,/Dictu jubéntis vívida,/Per témporum certas vices/Obtemperáre sérvulis:",
+			"Repélle, quod cupídinis/Ciénte vi nos ímpetit,/Aut móribus se súggerit,/Aut áctibus se intérserit.",
+			"Da gaudiórum prǽmia,/Da gratiárum múnera:/Dissólve litis víncula:/Astrínge pacis fœdera.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["vesperae","feria-vi","antiphona-magnificat","antiphona"],
+		"datum":"Depósuit * poténtes, sanctos persequéntes: et exaltávit húmiles, Christum confiténtes."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona-i","antiphona"],
+		"datum":"Benedíctus * Dóminus Deus meus."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","i-psalmus"],
+		"forwards-to":["psalmus-cxliii"]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona-ii","antiphona"],
+		"datum":"Per síngulos dies * bendicam te Dómine."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","ii-psalmus"],
+		"forwards-to":["psalmus-cxliv"]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona-iii","antiphona"],
+		"datum":"Laudábo * Deum meum in vita mea."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","iii-psalmus"],
+		"forwards-to":["psalmus-cxlv"]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona-iv","antiphona"],
+		"datum":"Deo nostro * jucúnda sit laudátio."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","iv-psalmus"],
+		"forwards-to":["psalmus-cxlvi"]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona-v","antiphona"],
+		"datum":"Lauda * Jerúsalem Dóminum."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","v-psalmus"],
+		"forwards-to":["psalmus-cxlvii"]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","capitulum"],
+		"datum":"O altitúdo divitiárum sapiéntiæ et sciéntiæ Dei: + quam incomprehensibília sunt judícia ejus, * et investigábiles viæ ejus!"
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","hymnus"],
+		"datum":[
+			"Jam sol recédit ígneus:/Tu lux perénnis Unitas,/Nostris, beáta Trínitas,/Infúnde lumen córdibus.",
+			"Te mane laudum cármine,/Te deprecámur véspere;/Dignéris ut te súpplices/Laudémus inter cœlites.",
+			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","versiculus"],
+		"datum":["V. Dirigátur Dómine orátio mea.","R. Sicut incénsum in conspecto tuo."]
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona-magnificat","antiphona"],
+		"datum":"Suscépit * Deus Israël púerum suum: sicut locútus est ad Abraham, et semen ejus: exaltáre húmiles usque in sǽculum."
 	}
 ]

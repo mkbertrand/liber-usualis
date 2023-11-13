@@ -69,5 +69,218 @@
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["post-officium"]}
 		]
+	},
+	{
+		"tags":["prima","semiduplex","hymnus"],
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			{"from-tags":["terminatio","deo-patri"]}
+		]
+	},
+	{
+		"tags":["prima","dominica","antiphona"],
+		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["prima","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["prima","dominica","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxvii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["quicumque"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["ordinarium","prima","capitulum"],
+		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":["prima","responsorium"],
+		"datum":"Christe Fili Dei vivi,"
+	},
+	{
+		"tags":["prima","responsorium","responsum"],
+		"datum":"Miserére nobis."
+	},
+	{
+		"tags":["prima","responsorium","versus"],
+		"datum":"Qui sedes ad dexteram Patris."
+	},
+	{
+		"tags":["prima","versiculus"],
+		"datum":["V. Exsúrge, Christe, ádjuva nos.","R. Et líbera nos propter nomen tuum."]
+	},
+	{
+		"tags":["prima","preces"],
+		"datum":[
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"Credo in Deum.",
+			"Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cœlos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum.",
+			"V. Carnis resurrectiónem.",
+			"R. Vitam ætérnam. Amen.",
+			"V. Et ego at te Dómine clamávi.",
+			"R. Et mane orátio mea prævéniet te.",
+			"V. Repleátur os meum laude.",
+			"R. Ut cantem glóriam tuam, tota die magnitúdinem tuam.",
+			"V. Dómine avérte fáciem tuam a peccátis meis.",
+			"R. Et omnes iniquitátes meas dele.",
+			"V. Cor mundum crea in me Deus.",
+			"R. Et spíritum rectum ínnova in viscéribus meis.",
+			"V. Ne projícias me a fácie tua.",
+			"R. Et Spíritum sanctum tuum ne aúferas a me.",
+			"V. Redde mihi lætítiam salutáris tui.",
+			"R. Et spíritu principáli confírma me.",
+			{"from-tags":["adjutorium-nostrum"]},
+			{"from-tags":["confiteor"]},
+			"V. Dignáre Dómine die isto.",
+			"R. Sine peccáto nos custodíre.",
+			"V. Miserére nostri Dómine.",
+			"R. Miserére nostri.",
+			"V. Fiat misericórdia tua Dómine super nos.",
+			"R. Quemádmodum sperávimus in te.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
+		"tags":["ordinarium","prima","collecta"],
+		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera."
+	},
+	{
+		"tags":["ordinarium","prima","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["prima","lectio","benedictio"],
+		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
+	},
+	{
+		"tags":["prima","temporale","lectio"],
+		"datum":"Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
+	},
+	{
+		"tags":["prima","lectio"],
+		"forwards-to":["nona","capitulum"]
+	},
+	{
+		"tags":["prima","feria","hymnus"],
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			{"from-tags":["terminatio","deo-patri"]}
+		]
+	},
+	{
+		"tags":["prima","feria","antiphona"],
+		"datum":"Beati * qui ámbulant in lege Dómini."
+	},
+	{
+		"tags":["prima","feria-ii","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xxiii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["prima","feria-iii","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xxiv"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["prima","feria-iv","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xxv"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["prima","feria-v","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xxii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["prima","feria-vi","psalmodia"],
+		"datum":[
+			{"from-tags":["psalmus-liii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-xxi"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-i"]},
+			{"from-tags":["psalmus-cxviii-ii"]},
+			{"from-tags":["gloria-psalmi"]},
+			{"from-tags":["psalmus-cxviii-iii"]},
+			{"from-tags":["psalmus-cxviii-iv"]},
+			{"from-tags":["gloria-psalmi"]}
+		]
+	},
+	{
+		"tags":["prima","feria","capitulum"],
+		"datum":"Pacem et veritátem dilígite, * ait Dóminus omnípotens."
 	}
 ]

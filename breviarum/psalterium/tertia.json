@@ -34,5 +34,69 @@
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["post-officium"]}
 		]
+	},
+	{
+		"tags":["tertia","semiduplex","hymnus"],
+		"datum":[
+			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
+			"Os, lingua, mens, sensus, vigar/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["tertia","dominica","antiphona"],
+		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["tertia","dominica","capitulum"],
+		"datum":"Deus cáritas est: + et qui manet in caritáte, in Deo manet, * et Deus in eo."
+	},
+	{
+		"tags":["tertia","dominica","responsorium"],
+		"datum":"Inclína cor meum Deus"
+	},
+	{
+		"tags":["tertia","dominica","responsorium","responsum"],
+		"datum":"In testimónia tua."
+	},
+	{
+		"tags":["tertia","dominica","responsorium","versus"],
+		"datum":"Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me."
+	},
+	{
+		"tags":["tertia","dominica","versiculus"],
+		"datum":["V. Ego dixi, Dómine miserére mei.","R. Sana ánimam meam, quia peccávi tibi."]
+	},
+	{
+		"tags":["tertia","feria","hymnus"],
+		"datum":[
+			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
+			"Os, lingua, mens, sensus, vigar/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
+			{"from-tags":["terminatio","praesta-pater"]}
+		]
+	},
+	{
+		"tags":["tertia","feria","antiphona"],
+		"datum":"Deduc me * Dómine sémitam mandatórum tuórum."
+	},
+	{
+		"tags":["tertia","feria","capitulum"],
+		"datum":"Sana me Dómine et sanábor: + salvum me fac, et salvus ero: * quóniam laus mea tu es."
+	},
+	{
+		"tags":["tertia","feria","responsorium"],
+		"datum":"Sana ánimam meam,"
+	},
+	{
+		"tags":["tertia","feria","responsorium","responsum"],
+		"datum":"Quia peccávi tibi."
+	},
+	{
+		"tags":["tertia","feria","responsorium","versus"],
+		"datum":"Ego dixi, Dómine miserére mei."
+	},
+	{
+		"tags":["tertia","feria","versiculus"],
+		"datum":["V. Adjútor meus esto, ne derelínquas me.","R. Neque despícias me Deus salutáris meus."]
 	}
 ]
