@@ -36,16 +36,16 @@
 			{"from-tags":["psalmus-lxii"]},
 			{"from-tags":["psalmus-lxvi"]},
 			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["laudes","antiphona","antiphona-i"]},
+			{"from-tags":["laudes","antiphona","antiphona-i","repetita"]},
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-ii"]},
 			{"from-tags":["trium-puerorum"]},
-			{"from-tags":["laudes","antiphona","antiphona-ii"]},
+			{"from-tags":["laudes","antiphona","antiphona-ii","repetita"]},
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-iii"]},
 			{"from-tags":["psalmus-cxlviii"]},
 			{"from-tags":["psalmus-cxlix"]},
 			{"from-tags":["psalmus-cl"]},
 			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["laudes","antiphona","antiphona-iii"]}
+			{"from-tags":["laudes","antiphona","antiphona-iii","repetita"]}
 		]
 	},
 	{

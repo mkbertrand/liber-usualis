@@ -60,6 +60,9 @@ def getbreviarumfiles(queries):
                         icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
                         if not icopy['datum'][-1] in ['.',',','?','!',':',';']:
                             icopy['datum'] += '.'
+                        icopy = copy.deepcopy(i)
+                        icopy['tags'].add('repetita')
+                        icopy['datum'] = icopy['datum'].split('* ')[0] + icopy['datum'].split('* ')[1]
                         added.append(icopy)
                 ret.extend(got)
                 ret.extend(added)
