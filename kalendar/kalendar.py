@@ -252,13 +252,13 @@ def kalendar(year: int) -> Kalendar:
     epiphanyweek = 0
     while epiphanysunday + timedelta(weeks=epiphanyweek) != easter - timedelta(weeks=9):
         for i in range(0,7):
-            kal.add_entry(epiphanysunday + timedelta(weeks=epiphanyweek, days=i), epiphanycycle[epiphanyweek][i]['tags'])
+            kal.add_entry(epiphanysunday + timedelta(weeks=epiphanyweek, days=i), epiphanycycle[epiphanyweek][i]['tags'] | {'post-epiphaniam'})
         epiphanyweek += 1
     for i in range(0, 6 - epiphanyweek):
         sunday = xxivpentecost - timedelta(weeks=i + 1)
         if sunday != xxiiipentecost:
             for j in range(0,7):
-                kal.add_entry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]['tags'])
+                kal.add_entry(sunday + timedelta(days=j), epiphanycycle[5 - i][j]['tags'] | {'post-pentecosten'})
         else:
             omittedepiphanyentry = epiphanycycle[5 - i][0]['tags']
 
