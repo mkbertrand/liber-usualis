@@ -21,7 +21,7 @@
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
-				"with-tags":["nona"]
+				"cascade":["nona"]
 			},
 			{"from-tags":["nona","versiculus"]},
 			{"from-tags":["collecta-primaria"]},

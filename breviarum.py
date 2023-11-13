@@ -105,24 +105,24 @@ def search(query, pile, multipleresults = False, multipleresultssort = None, pri
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
-def process(item, withtags, pile):
+def process(item, cascade, pile):
     # None can sometimes be the result of a search and is expected, but indicates an absent item
     if item == None:
         return 'Absens'
     elif type(item) == set:
-        item = search(item | withtags, pile, priortags = item)
+        item = search(item | cascade, pile, priortags = item)
     if 'from-tags' in item:
-        response = process(search(item['from-tags'] | withtags, pile, priortags = item['from-tags']), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
+        response = process(search(item['from-tags'] | cascade, pile, priortags = item['from-tags']), item['cascade'] | cascade if 'cascade' in item else cascade, pile)
         return {'tags':item['tags'],'datum':response} if 'tags' in item else response
     elif 'forwards-to' in item:
-        return process(search(item['forwards-to'] | withtags, datamanage.getbreviarumfiles(defaultpile | item['forwards-to'] | withtags), priortags = item['forwards-to']), item['with-tags'] | withtags if 'with-tags' in item else withtags, pile)
+        return process(search(item['forwards-to'] | cascade, datamanage.getbreviarumfiles(defaultpile | item['forwards-to'] | cascade), priortags = item['forwards-to']), item['cascade'] | cascade if 'cascade' in item else cascade, pile)
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
             if type(i) == str:
                 ret.append(i)
             else:
-                iprocessed = process(i, withtags, pile)
+                iprocessed = process(i, cascade, pile)
                 if iprocessed == None:
                     ret.append('Absens')
                 elif type(iprocessed) == list:

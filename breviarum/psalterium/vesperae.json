@@ -8,23 +8,23 @@
 			{
 				"tags":["vesperae","psalmodia"],
 				"datum":[
-					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-i"]},
 					{"from-tags":["vesperae","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-i"]},
-					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-ii"]},
 					{"from-tags":["vesperae","ii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-ii"]},
-					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-iii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-iii"]},
 					{"from-tags":["vesperae","iii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-iii"]},
-					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-iv"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-iv"]},
 					{"from-tags":["vesperae","iv-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-iv"]},
-					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-v"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-v"]},
 					{"from-tags":["vesperae","v-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-v"]}
@@ -37,7 +37,7 @@
 					"Deo grátias.",
 					{"from-tags":["vesperae","hymnus"]},
 					{"from-tags":["vesperae","versiculus"]},
-					{"from-tags":["formula","antiphona-prior"],"with-tags":["vesperae","antiphona-magnificat"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-magnificat"]},
 					{"from-tags":["magnificat"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["vesperae","antiphona","antiphona-magnificat"]}
@@ -45,7 +45,7 @@
 			},
 			{
 				"from-tags":["collecta-primaria"],
-				"with-tags":["vesperae"]
+				"cascade":["vesperae"]
 			},
 			{"from-tags":["dominus-vobiscum"]},
 			{"from-tags":["hora-major","vesperae","benedicamus-domino"]},

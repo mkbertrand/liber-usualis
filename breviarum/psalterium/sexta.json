@@ -21,7 +21,7 @@
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
-				"with-tags":["sexta"]
+				"cascade":["sexta"]
 			},
 			{"from-tags":["sexta","versiculus"]},
 			{"from-tags":["collecta-primaria"]},

@@ -3,7 +3,7 @@
 		"tags":["completorium", "hora"],
 		"datum":[
 			{"from-tags":["ante-officium"]},
-			{"from-tags":["formula","lectio"],"with-tags":["completorium"]},
+			{"from-tags":["formula","lectio"],"cascade":["completorium"]},
 			{"from-tags":["adjutorium-nostrum"]},
 			{"from-tags":["pater-noster-secreta"]},
 			{"from-tags":["confiteor"]},
@@ -28,7 +28,7 @@
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
-				"with-tags":["completorium"]
+				"cascade":["completorium"]
 			},
 			{"from-tags":["completorium","versiculus"]},
 			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis","intonata"]},
@@ -38,7 +38,7 @@
 			{"from-tags":["completorium","preces"]},
 			{
 				"from-tags":["collecta-primaria"],
-				"with-tags":["ordinarium","completorium"]
+				"cascade":["ordinarium","completorium"]
 			},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],

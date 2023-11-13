@@ -13,13 +13,13 @@
 			"Deo grátias.",
 			{
 				"from-tags":["responsorium-breve"],
-				"with-tags":["prima"]
+				"cascade":["prima"]
 			},
 			{"from-tags":["prima","versiculus"]},
 			{"from-tags":["prima","preces"]},
 			{
 				"from-tags":["collecta-primaria"],
-				"with-tags":["ordinarium","prima"]
+				"cascade":["ordinarium","prima"]
 			},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
@@ -60,7 +60,7 @@
 			"Orémus.",
 			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.",
 			"Amen.",
-			{"from-tags":["formula","lectio"],"with-tags":["prima"]},
+			{"from-tags":["formula","lectio"],"cascade":["prima"]},
 			{"from-tags":["adjutorium-nostrum"]},
 			"V. Benedícite.",
 			"R. Deus.",
