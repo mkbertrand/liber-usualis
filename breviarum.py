@@ -122,6 +122,10 @@ def pickcascades(search, cascades):
         if not responsetags.isdisjoint(search & cascade) or 'primarium' in cascade:
             yield search | cascade
 
+def unioncascades(item, cascades):
+    for cascade in cascades:
+        yield item | cascade
+
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, cascades, pile):
     
@@ -132,7 +136,7 @@ def process(item, cascades, pile):
         item = search(list(pickcascades(item, cascades)), pile, priortags = item)
     
     # Next cascade (not to be used for the current search, but only for deeper searches
-    nextcascades = list(pickcascades(item['cascade'], cascades)) if 'cascade' in item else cascades
+    nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades
 
     if 'from-tags' in item:
     
