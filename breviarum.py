@@ -14,6 +14,8 @@ from kalendar import kalendar
 data_root = pathlib.Path(__file__).parent
 defaultpile = {'formulae','psalmi','cantica'}
 
+responsetags = {'commemoratio','antiphona-bmv','psalmi'}
+
 def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
 
@@ -117,7 +119,7 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
 
 def pickcascades(search, cascades):
     for cascade in cascades:
-        if not search.isdisjoint(cascade) or 'primarium' in cascade:
+        if not responsetags.isdisjoint(search & cascade) or 'primarium' in cascade:
             yield search | cascade
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
