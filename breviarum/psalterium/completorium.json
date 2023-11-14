@@ -2,7 +2,6 @@
 	{
 		"tags":["completorium", "hora"],
 		"datum":[
-			{"from-tags":["ante-officium"]},
 			{"from-tags":["formula","lectio"],"cascade":["completorium"]},
 			{"from-tags":["adjutorium-nostrum"]},
 			{"from-tags":["pater-noster-secreta"]},
@@ -55,8 +54,7 @@
 			{"from-tags":["antiphona-bmv"]},
 			"Divínum auxílium ✠ máneat semper nobíscum.",
 			"R. Amen.",
-			{"from-tags":["prex-triplex"]},
-			{"from-tags":["post-officium"]}
+			{"from-tags":["prex-triplex"]}
 		]
 	},
 	{

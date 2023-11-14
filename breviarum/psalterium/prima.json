@@ -2,7 +2,6 @@
 	{
 		"tags":["prima", "hora"],
 		"datum":[
-			{"from-tags":["ante-officium"]},
 			{"from-tags":["prex-triplex"]},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
 			{"from-tags":["prima","hymnus"]},
@@ -66,8 +65,7 @@
 			"R. Deus.",
 			"Dóminus nos benedícat, et ab omni malo deféndat, et ad vitam perdúcat ætérnam: et fidélium ánimæ per misericórdiam Dei requiéscant in pace.",
 			"Amen.",
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["post-officium"]}
+			{"from-tags":["pater-noster-secreta"]}
 		]
 	},
 	{

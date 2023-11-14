@@ -118,36 +118,44 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
 def pickcascades(search, cascades):
-    for cascade in cascades:
-        if not responsetags.isdisjoint(search & cascade) or 'primarium' in cascade:
-            yield search | cascade
+    if cascades == None:
+        yield search
+    else:
+        for cascade in cascades:
+            if not responsetags.isdisjoint(search & cascade) or 'primarium' in cascade:
+                yield search | cascade
 
 def unioncascades(item, cascades):
-    for cascade in cascades:
-        yield item | cascade
+    if cascades == None:
+        yield item
+    else:
+        for cascade in cascades:
+            yield item | cascade
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, cascades, pile):
-    
+
      # None can sometimes be the result of a search and is expected, but indicates an absent item
     if item == None:
         return 'Absens'
     elif type(item) == set:
         item = search(list(pickcascades(item, cascades)), pile, priortags = item)
-    
+
     # Next cascade (not to be used for the current search, but only for deeper searches
     nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades
 
     if 'from-tags' in item:
-    
         response = process(search(list(pickcascades(item['from-tags'], cascades)), pile, priortags = item['from-tags']), nextcascades, pile)
-        
-        return {'tags':item['tags'],'datum':response} if 'tags' in item else response
+        if ('tags' in item):
+            return {'tags':item['tags'], 'datum':response}
+        else:
+            return response
+
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, the provided pile may be insufficient so it is better to simply search a pile made from the specific relevant files
         probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist(list(pickcascades(item['forwards-to'], cascades))))
-        
         return process(search(list(pickcascades(item['forwards-to'], cascades)), probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
+
     elif type(item['datum']) == list:
         ret = []
         for i in item['datum']:
@@ -162,9 +170,8 @@ def process(item, cascades, pile):
                 else:
                     ret.append(iprocessed)
         item['datum'] = ret if len(ret) != 1 else ret[0]
-        return item
-    else:
-        return item
+
+    return item
 
 def replacetagrecurse(datum, target, item):
     if type(datum) == str:
@@ -238,7 +245,7 @@ if __name__ == "__main__":
     
     match datetime.now().hour:
         case 0 | 2 | 3 | 4 | 5:
-            defaulthour = 'matutinum'
+            defaulthour = 'matutinum laudes'
         case 6 | 7:
             defaulthour = 'prima'
         case 8 | 9 | 10:
@@ -266,10 +273,14 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(args.verbosity)
 
     # Generate kalendar
-    ret = hour(args.hour, datetime.strptime(args.date, '%Y-%m-%d').date())
+    defpile = datamanage.getbreviarumfiles(defaultpile)
+    ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
+    for i in args.hour.split(' '):
+        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date()))
+    ret['datum'].append(process({'post-officium'}, None, defpile))
 
     if args.output == sys.stdout:
         prettyprint(ret)
     else:
         # Write JSON output
-        args.output.write(dump_data(ret) + "\n")
+        args.output.write(dump_data(ret) + '\n')

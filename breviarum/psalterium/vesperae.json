@@ -2,7 +2,6 @@
 	{
 		"tags":["vesperae","hora"],
 		"datum":[
-			{"from-tags":["ante-officium"]},
 			{"from-tags":["prex-duplex"]},
 			{"from-tags":["deus-in-adjutorium","festalis"]},
 			{
@@ -50,8 +49,7 @@
 			{"from-tags":["dominus-vobiscum"]},
 			{"from-tags":["hora-major","vesperae","benedicamus-domino"]},
 			{"from-tags":["fidelium-animae"]},
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["post-officium"]}
+			{"from-tags":["pater-noster-secreta"]}
 		]
 	},
 	{

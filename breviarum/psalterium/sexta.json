@@ -2,7 +2,6 @@
 	{
 		"tags":["sexta", "hora"],
 		"datum":[
-			{"from-tags":["ante-officium"]},
 			{"from-tags":["prex-duplex"]},
 			{"from-tags":["deus-in-adjutorium","ferialis"]},
 			{"from-tags":["sexta","hymnus"]},
@@ -31,8 +30,7 @@
 			},
 			{"from-tags":["benedicamus-domino","hora-minor"]},
 			{"from-tags":["fidelium-animae"]},
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["post-officium"]}
+			{"from-tags":["pater-noster-secreta"]}
 		]
 	},
 	{
