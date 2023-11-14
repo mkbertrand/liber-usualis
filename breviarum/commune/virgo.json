@@ -1,0 +1,42 @@
+[
+	{
+		"tags":["virgo","antiphona","antiphona-i"],
+		"datum":"Hæc est Virgo sápiens, * et una de número prudéntum.",
+	},
+	{
+		"tags":["virgo","vesperae","psalmus-i"],
+		"forwards-to":["psalmus-cix"]
+	},
+	{
+		"tags":["virgo","antiphona","antiphona-ii"],
+		"datum":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit.",
+	},
+	{
+		"tags":["virgo","vesperae","psalmus-ii"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["virgo","antiphona","antiphona-iii"],
+		"datum":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum.",
+	},
+	{
+		"tags":["virgo","vesperae","psalmus-iii"],
+		"forwards-to":["psalmus-cxxi"]
+	},
+	{
+		"tags":["virgo","antiphona","antiphona-iv"],
+		"datum":"Veni elécta mea, * et ponam in te thronum meum, allelúja.",
+	},
+	{
+		"tags":["virgo","vesperae","psalmus-iv"],
+		"forwards-to":["psalmus-cxxvi"]
+	},
+	{
+		"tags":["virgo","antiphona","antiphona-v"],
+		"datum":"Ista est speciósa * inter fílias Jerúsalem.",
+	},
+	{
+		"tags":["virgo","vesperae","psalmus-v"],
+		"forwards-to":["psalmus-cxlvii"]
+	},
+]

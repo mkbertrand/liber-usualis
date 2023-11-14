@@ -25,16 +25,16 @@
 	],
 	"01-19":[
 		["canutus","semiduplex","martyr"],
-		["marius-et-soc","commemoratio","martyres"]
+		["marius-et-soc","commemoratio","martyr","martyres"]
 	],
 	"01-20":[
-		["fabianus-sebastianus","duplex-minus","martyres","papa"]
+		["fabianus-sebastianus","duplex-minus","martyr","martyres","papa"]
 	],
 	"01-21":[
 		["agnes","duplex-minus","virgo","martyr"]
 	],
 	"01-22":[
-		["vincentius-anastasius","semiduplex","martyres"]
+		["vincentius-anastasius","semiduplex","martyr","martyres"]
 	],
 	"01-23":[
 		["raymundus-penafort","semiduplex","confessor"],
@@ -44,7 +44,7 @@
 		["timotheus","duplex-minus","episcopus-martyr"]
 	],
 	"01-25":[
-		["conversio","duplex-majus","apostoli"]
+		["conversio","duplex-majus","apostolus"]
 	],
 	"01-26":[
 		["polycarpus","duplex-minus","episcopus-martyr"]
@@ -100,7 +100,7 @@
 		["valentinus","simplex","priest","martyr"]
 	],
 	"02-15":[
-		["faustinus-jovita","simplex","martyres"]
+		["faustinus-jovita","simplex","martyr","martyres"]
 	],
 	"02-18":[
 		["simeon","simplex","episcopus-martyr"]
@@ -112,7 +112,7 @@
 		["petrus-damianus","duplex-minus","episcopus-confessor","doctor"]
 	],
 	"02-24":[
-		["matthias","duplex-ii-classis","habens-vigiliam","apostoli"]
+		["matthias","duplex-ii-classis","habens-vigiliam","apostolus"]
 	],
 	"03-04":[
 		["casmirus","semiduplex","confessor"],
@@ -120,7 +120,7 @@
 	],
 	"03-07":[
 		["thomas-aquino","duplex-minus","confessor","doctor"],
-		["perpetua-felicitas","commemoratio","martyres"]
+		["perpetua-felicitas","commemoratio","martyr","martyres"]
 	],
 	"03-08":[
 		["joannes-deo","duplex-minus","confessor"]
@@ -129,7 +129,7 @@
 		["francisca-romanae","duplex-minus","vidua"]
 	],
 	"03-10":[
-		["quadraginta","semiduplex","martyres"]
+		["quadraginta","semiduplex","martyr","martyres"]
 	],
 	"03-12":[
 		["gregorius","duplex-minus","episcopus-confessor","papa","doctor"]
@@ -166,7 +166,7 @@
 	],
 	"04-14":[
 		["justinus","duplex-minus","martyr"],
-		["tiburtius-valerianus-maximus","commemoratio","martyres"]
+		["tiburtius-valerianus-maximus","commemoratio","martyr","martyres"]
 	],
 	"04-17":[
 		["anicetus","simplex","papa","episcopus-martyr"]
@@ -184,7 +184,7 @@
 		["fidelis","duplex-minus","martyr"]
 	],
 	"04-25":[
-		["marcus","duplex-ii-classis","martyr","evangelista","apostoli","poenitentialis"]
+		["marcus","duplex-ii-classis","martyr","evangelista","apostolus","poenitentialis"]
 	],
 	"04-26":[
 		["cletus-marcellinus","semiduplex","episcopi-martyres","papae"]
@@ -200,14 +200,14 @@
 		["catharina-senensis","duplex-minus","virgo"]
 	],
 	"05-01":[
-		["philippus-jacobus","duplex-ii-classis","apostoli"]
+		["philippus-jacobus","duplex-ii-classis","apostolus"]
 	],
 	"05-02":[
 		["athanasius","duplex-minus","episcopus-confessor","doctor"]
 	],
 	"05-03":[
 		["inventio-crucis","duplex-ii-classis"],
-		["alexandrus-i-et-soc","commemoratio","papa","martyres","episcopus-confessor"]
+		["alexandrus-i-et-soc","commemoratio","papa","martyr","martyres","episcopus-confessor"]
 	],
 	"05-04":[
 		["monica","duplex-minus","vidua"]
@@ -229,10 +229,10 @@
 	],
 	"05-10":[
 		["antoninus","duplex-minus","episcopus-confessor"],
-		["gordianus-epimachus","commemoratio","martyres"]
+		["gordianus-epimachus","commemoratio","martyr","martyres"]
 	],
 	"05-12":[
-		["nereus-achilleus-domitilla-paneratius","semiduplex","virgo","martyres"]
+		["nereus-achilleus-domitilla-paneratius","semiduplex","virgo","martyr","martyres"]
 	],
 	"05-14":[
 		["bonifacius","simplex","martyr"]
@@ -276,7 +276,7 @@
 		["petronilla","commemoratio","virgo"]
 	],
 	"06-02":[
-		["marcellinus-petrus-erasmus","simplex","martyres"]
+		["marcellinus-petrus-erasmus","simplex","martyr","martyres"]
 	],
 	"06-04":[
 		["franciscus-caracciolo","duplex-minus","confessor"]
@@ -288,17 +288,17 @@
 		["norbertus","duplex-minus","episcopus-confessor"]
 	],
 	"06-09":[
-		["primus-felicianus","simplex","martyres"]
+		["primus-felicianus","simplex","martyr","martyres"]
 	],
 	"06-10":[
 		["margarita-scotiae","semiduplex","vidua"]
 	],
 	"06-11":[
-		["barnabas","duplex-majus","apostoli","martyr"]
+		["barnabas","duplex-majus","apostolus","martyr"]
 	],
 	"06-12":[
 		["joannis-facundo","duplex-minus","confessor"],
-		["basilides","commemoratio","martyres"]
+		["basilides","commemoratio","martyr","martyres"]
 	],
 	"06-13":[
 		["antonius-padua","duplex-minus","confessor"]
@@ -307,14 +307,14 @@
 		["basilius-magnus","duplex-minus","episcopus-confessor","doctor"]
 	],
 	"06-15":[
-		["vitus-modestus-crescentia","simplex","martyres"]
+		["vitus-modestus-crescentia","simplex","martyr","martyres"]
 	],
 	"06-18":[
-		["marcus-marcellianus","simplex","martyres"]
+		["marcus-marcellianus","simplex","martyr","martyres"]
 	],
 	"06-19":[
 		["juliana-falconeriis","duplex-minus","virgo"],
-		["gervasius-protasius","commemoratio","martyres"]
+		["gervasius-protasius","commemoratio","martyr","martyres"]
 	],
 	"06-20":[
 		["silverius","simplex","papa","episcopus-martyr"]
@@ -332,20 +332,20 @@
 		["gulielmus","duplex-minus","abbas"]
 	],
 	"06-26":[
-		["joannes-paulus","duplex-minus","martyres"]
+		["joannes-paulus","duplex-minus","martyr","martyres"]
 	],
 	"06-28":[
 		["leo-ii","semiduplex","episcopus-confessor","papa"]
 	],
 	"06-29":[
-		["petrus-paulus","duplex-i-classis","apostoli","habens-octavam","habens-vigiliam","martyres"]
+		["petrus-paulus","duplex-i-classis","apostolus","habens-octavam","habens-vigiliam","martyr","martyres"]
 	],
 	"06-30":[
-		["commemoratio-pauli","duplex-majus","martyr","apostoli"]
+		["commemoratio-pauli","duplex-majus","martyr","apostolus"]
 	],
 	"07-02":[
 		["visitatio","duplex-ii-classis","marianum"],
-		["processus-martinianus","commemoratio","martyres"]
+		["processus-martinianus","commemoratio","martyr","martyres"]
 	],
 	"07-05":[
 		["cyrillus-methodius","duplex-minus","episcopi-confessores"]
@@ -354,14 +354,14 @@
 		["elisabeth-portugalliae","semiduplex","vidua"]
 	],
 	"07-10":[
-		["septem-fratres","semiduplex","martyres"]
+		["septem-fratres","semiduplex","martyr","martyres"]
 	],
 	"07-11":[
 		["pius-i","simplex","martyr","papa"]
 	],
 	"07-12":[
 		["joannes-gualbertus","duplex-minus","abbas"],
-		["nabor-felix","commemoratio","martyres"]
+		["nabor-felix","commemoratio","martyr","martyres"]
 	],
 	"07-13":[
 		["anacletus","semiduplex","papa","martyr"]
@@ -380,7 +380,7 @@
 	],
 	"07-18":[
 		["camillus-lellis","duplex-minus","confessor"],
-		["symphorosa-filii","commemoratio","martyres"]
+		["symphorosa-filii","commemoratio","martyr","martyres"]
 	],
 	"07-19":[
 		["vincentius-paulo","duplex-minus","confessor"]
@@ -403,7 +403,7 @@
 		["christiana","commemoratio","virgo","martyr"]
 	],
 	"07-25":[
-		["jacobus","duplex-ii-classis","apostoli","habens-vigiliam","martyr"],
+		["jacobus","duplex-ii-classis","apostolus","habens-vigiliam","martyr"],
 		["christophorus","commemoratio","martyr"]
 	],
 	"07-26":[
@@ -413,21 +413,21 @@
 		["pantaleon","simplex","martyr"]
 	],
 	"07-28":[
-		["nazarius-celsus-victor-i-innocentius-i","semiduplex","papae","martyres"]
+		["nazarius-celsus-victor-i-innocentius-i","semiduplex","papae","martyr","martyres"]
 	],
 	"07-29":[
 		["martha","semiduplex","virgo"],
-		["felix-ii-simplicius-faustinus-beatrix","commemoratio","papa","martyres"]
+		["felix-ii-simplicius-faustinus-beatrix","commemoratio","papa","martyr","martyres"]
 	],
 	"07-30":[
-		["abdon-sennen","simplex","martyres"]
+		["abdon-sennen","simplex","martyr","martyres"]
 	],
 	"07-31":[
 		["ignatius-lojola","duplex-minus","confessor"]
 	],
 	"08-01":[
 		["petrus-ad-vincula","duplex-majus"],
-		["machabaei","commemoratio","martyres"]
+		["machabaei","commemoratio","martyr","martyres"]
 	],
 	"08-02":[
 		["alphonsus-liguori","duplex-minus","doctor","episcopus-confessor"]
@@ -443,26 +443,26 @@
 	],
 	"08-06":[
 		["transfiguratio","duplex-majus"],
-		["xystus-ii-felicissimus-agapitus","commemoratio","martyres"]
+		["xystus-ii-felicissimus-agapitus","commemoratio","martyr","martyres"]
 	],
 	"08-07":[
 		["cajetanus","duplex-minus","confessor"],
 		["donatus","commemoratio","episcopus-martyr"]
 	],
 	"08-08":[
-		["cyriacus-largus-smaragdus","semiduplex","martyres"]
+		["cyriacus-largus-smaragdus","semiduplex","martyr","martyres"]
 	],
 	"08-10":[
 		["laurentius","duplex-ii-classis","martyr","habens-octavam","habens-vigiliam"]
 	],
 	"08-11":[
-		["tibertius-susanna","commemoratio","martyres"]
+		["tibertius-susanna","commemoratio","martyr","martyres"]
 	],
 	"08-12":[
 		["clara","duplex-minus","virgo"]
 	],
 	"08-13":[
-		["hippolytus-cassianus","commemoratio","martyres"]
+		["hippolytus-cassianus","commemoratio","martyr","martyres"]
 	],
 	"08-14":[
 		["eusebius","commemoratio","confessor"]
@@ -483,13 +483,13 @@
 		["joanna-francisca","duplex-minus","vidua"]
 	],
 	"08-22":[
-		["timotheus-etc","commemoratio","martyres"]
+		["timotheus-etc","commemoratio","martyr","martyres"]
 	],
 	"08-23":[
 		["philippus-benitius","duplex-minus","confessor"]
 	],
 	"08-24":[
-		["bartholomaeus","duplex-ii-classis","apostoli","habens-vigiliam"]
+		["bartholomaeus","duplex-ii-classis","apostolus","habens-vigiliam"]
 	],
 	"08-25":[
 		["ludovicus","semiduplex","confessor"]
@@ -510,14 +510,14 @@
 	],
 	"08-30":[
 		["rosa","duplex-minus","virgo"],
-		["felix-adauctus","commemoratio","martyres"]
+		["felix-adauctus","commemoratio","martyr","martyres"]
 	],
 	"08-31":[
 		["raymundus-nonnatus","duplex-minus","confessor"]
 	],
 	"09-01":[
 		["aegidius","simplex","abbas"],
-		["duodecim-fratrum","commemoratio","martyres"]
+		["duodecim-fratrum","commemoratio","martyr","martyres"]
 	],
 	"09-02":[
 		["stephanus-hungariae","semiduplex","confessor"]
@@ -536,7 +536,7 @@
 		["nicolaus-tolentino","duplex-minus","confessor"]
 	],
 	"09-11":[
-		["protus-hyacinthus","commemoratio","martyres"]
+		["protus-hyacinthus","commemoratio","martyr","martyres"]
 	],
 	"09-14":[
 		["exaltatio-crucis","duplex-majus"]
@@ -546,7 +546,7 @@
 	],
 	"09-16":[
 		["cornelius-cyprianus","semiduplex","episcopi-martyres"],
-		["euphemia-et-soc","commemoratio","martyres"]
+		["euphemia-et-soc","commemoratio","martyr","martyres"]
 	],
 	"09-17":[
 		["impressio-stigmatum","duplex-minus"]
@@ -555,17 +555,17 @@
 		["josephus-cupertino","duplex-minus","confessor"]
 	],
 	"09-19":[
-		["januarius-et-soc","duplex-minus","episcopus-martyr","martyres"]
+		["januarius-et-soc","duplex-minus","episcopus-martyr","martyr","martyres"]
 	],
 	"09-20":[
-		["eustachii-et-soc","duplex-minus","martyres"]
+		["eustachii-et-soc","duplex-minus","martyr","martyres"]
 	],
 	"09-21":[
-		["matthaeus","duplex-ii-classis","apostoli","evangelista","habens-vigiliam"]
+		["matthaeus","duplex-ii-classis","apostolus","evangelista","habens-vigiliam"]
 	],
 	"09-22":[
 		["thomas-villanova","duplex-minus","episcopus-confessor"],
-		["mauritius-et-soc","commemoratio","martyres"]
+		["mauritius-et-soc","commemoratio","martyr","martyres"]
 	],
 	"09-23":[
 		["linus","semiduplex","papa","martyr"],
@@ -575,10 +575,10 @@
 		["bmv-mercede","duplex-majus","marianum"]
 	],
 	"09-26":[
-		["cyprianus-justina","simplex","virgo","martyres"]
+		["cyprianus-justina","simplex","virgo","martyr","martyres"]
 	],
 	"09-27":[
-		["cosmas-damianus","semiduplex","martyres"]
+		["cosmas-damianus","semiduplex","martyr","martyres"]
 	],
 	"09-28":[
 		["wenceslaus","semiduplex","martyr"]
@@ -599,20 +599,20 @@
 		["franciscus","duplex-majus","confessor"]
 	],
 	"10-05":[
-		["placidus-et-soc","simplex","martyres"]
+		["placidus-et-soc","simplex","martyr","martyres"]
 	],
 	"10-06":[
 		["bruno","duplex-minus","confessor"]
 	],
 	"10-07":[
 		["marcus-ii","simplex","papa","confessor"],
-		["sergius-et-soc","commemoratio","martyres"]
+		["sergius-et-soc","commemoratio","martyr","martyres"]
 	],
 	"10-08":[
 		["birgitta","duplex-minus","vidua"]
 	],
 	"10-09":[
-		["dionysius-rusticus-eleutherius","semiduplex","martyres"]
+		["dionysius-rusticus-eleutherius","semiduplex","martyr","martyres"]
 	],
 	"10-10":[
 		["franciscus-borgiae","semiduplex","confessor"]
@@ -630,7 +630,7 @@
 		["hedwigis","semiduplex","vidua"]
 	],
 	"10-18":[
-		["lucas","duplex-ii-classis","apostoli","evangelista"]
+		["lucas","duplex-ii-classis","apostolus","evangelista"]
 	],
 	"10-19":[
 		["petrus-alcantara","duplex-minus","confessor"]
@@ -640,16 +640,16 @@
 	],
 	"10-21":[
 		["hilarion","simplex","abbas"],
-		["ursula-et-soc","commemoratio","virgines","martyres"]
+		["ursula-et-soc","commemoratio","virgo","virgines","martyr","martyres"]
 	],
 	"10-25":[
-		["chrysanthus-et-daria","simplex","martyres"]
+		["chrysanthus-et-daria","simplex","martyr","martyres"]
 	],
 	"10-26":[
 		["evaristus","simplex","papa","martyr"]
 	],
 	"10-28":[
-		["simon-et-judas","duplex-ii-classis","apostoli","habens-vigiliam"]
+		["simon-et-judas","duplex-ii-classis","apostolus","habens-vigiliam"]
 	],
 	"11-01":[
 		["omnes-sancti","duplex-i-classis","habens-vigiliam","habens-octavam"]
@@ -659,10 +659,10 @@
 	],
 	"11-05":[
 		["carolus","duplex-minus","episcopus-confessor"],
-		["vitalis-agricola","commemoratio","martyres"]
+		["vitalis-agricola","commemoratio","martyr","martyres"]
 	],
 	"11-08":[
-		["quatuor-coronati","commemoratio","martyres"]
+		["quatuor-coronati","commemoratio","martyr","martyres"]
 	],
 	"11-09":[
 		["dedicatio-salvatoris","duplex-minus","dedicatio"],
@@ -671,7 +671,7 @@
 	],
 	"11-10":[
 		["andreas-avellini","duplex-minus","confessor"],
-		["tryphon-et-soc","commemoratio","martyres"]
+		["tryphon-et-soc","commemoratio","martyr","martyres"]
 	],
 	"11-11":[
 		["martinus","duplex-minus","episcopus-confessor"],
@@ -726,7 +726,7 @@
 		["saturninus","commemoratio","martyr"]
 	],
 	"11-30":[
-		["andreas","duplex-ii-classis","apostoli","habens-vigiliam"]
+		["andreas","duplex-ii-classis","apostolus","habens-vigiliam"]
 	],
 	"12-02":[
 		["bibiana","semiduplex","virgo","martyr"]
@@ -763,7 +763,7 @@
 		["eusebius-martyr","semiduplex","episcopus-martyr"]
 	],
 	"12-21":[
-		["thomas","duplex-ii-classis","apostoli","habens-vigiliam"]
+		["thomas","duplex-ii-classis","apostolus","habens-vigiliam"]
 	],
 	"12-29":[
 		["thomas-cantuariensis","semiduplex","episcopus-martyr"]
