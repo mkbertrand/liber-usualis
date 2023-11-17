@@ -18,10 +18,7 @@
 			{"from-tags":["sexta","antiphona","antiphona-iii","repetita"]},
 			{"from-tags":["sexta","capitulum"]},
 			"Deo grátias.",
-			{
-				"from-tags":["responsorium-breve"],
-				"cascade":["sexta"]
-			},
+			{"from-tags":["responsorium-breve"]},
 			{"from-tags":["sexta","versiculus"]},
 			{"from-tags":["collecta-primaria"]},
 			{
@@ -47,19 +44,19 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["sexta","capitulum"],
+		"tags":["sexta","temporale","capitulum"],
 		"datum":"Alter altérius ónera portáte, * et sic adimplébitis legem Christi."
 	},
 	{
-		"tags":["sexta","dominica","responsorium"],
+		"tags":["sexta","dominica","responsorium-breve"],
 		"datum":"In ætérnum Dómine"
 	},
 	{
-		"tags":["sexta","dominica","responsorium","responsum"],
+		"tags":["sexta","dominica","responsorium-breve","responsum"],
 		"datum":"Pérmanet verbum tuum."
 	},
 	{
-		"tags":["sexta","dominica","responsorium","versus"],
+		"tags":["sexta","dominica","responsorium-breve","versus"],
 		"datum":"In sǽculum sǽculi véritas tua."
 	},
 	{
@@ -80,15 +77,15 @@
 		"datum":"Adjúva me, * et salvus ero Dómine."
 	},
 	{
-		"tags":["sexta","feria","responsorium"],
+		"tags":["sexta","feria","responsorium-breve"],
 		"datum":"Benedícam Dóminum"
 	},
 	{
-		"tags":["sexta","feria","responsorium","responsum"],
+		"tags":["sexta","feria","responsorium-breve","responsum"],
 		"datum":"In omni témpore."
 	},
 	{
-		"tags":["sexta","feria","responsorium","versus"],
+		"tags":["sexta","feria","responsorium-breve","versus"],
 		"datum":"Semper laus ejus in ore meo."
 	}
 ]

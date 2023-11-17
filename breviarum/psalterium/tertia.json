@@ -18,10 +18,7 @@
 			{"from-tags":["tertia","antiphona","antiphona-ii","repetita"]},
 			{"from-tags":["tertia","capitulum"]},
 			"Deo grátias.",
-			{
-				"from-tags":["responsorium-breve"],
-				"cascade":["tertia"]
-			},
+			{"from-tags":["responsorium-breve"]},
 			{"from-tags":["tertia","versiculus"]},
 			{"from-tags":["collecta-primaria"]},
 			{
@@ -50,15 +47,15 @@
 		"datum":"Deus cáritas est: + et qui manet in caritáte, in Deo manet, * et Deus in eo."
 	},
 	{
-		"tags":["tertia","dominica","responsorium"],
+		"tags":["tertia","dominica","responsorium-breve"],
 		"datum":"Inclína cor meum Deus"
 	},
 	{
-		"tags":["tertia","dominica","responsorium","responsum"],
+		"tags":["tertia","dominica","responsorium-breve","responsum"],
 		"datum":"In testimónia tua."
 	},
 	{
-		"tags":["tertia","dominica","responsorium","versus"],
+		"tags":["tertia","dominica","responsorium-breve","versus"],
 		"datum":"Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me."
 	},
 	{
@@ -82,15 +79,15 @@
 		"datum":"Sana me Dómine et sanábor: + salvum me fac, et salvus ero: * quóniam laus mea tu es."
 	},
 	{
-		"tags":["tertia","feria","responsorium"],
+		"tags":["tertia","feria","responsorium-breve"],
 		"datum":"Sana ánimam meam,"
 	},
 	{
-		"tags":["tertia","feria","responsorium","responsum"],
+		"tags":["tertia","feria","responsorium-breve","responsum"],
 		"datum":"Quia peccávi tibi."
 	},
 	{
-		"tags":["tertia","feria","responsorium","versus"],
+		"tags":["tertia","feria","responsorium-breve","versus"],
 		"datum":"Ego dixi, Dómine miserére mei."
 	},
 	{

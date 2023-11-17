@@ -201,22 +201,22 @@
 			{"from-tags":["responsorium","responsum"]},
 			{"from-tags":["responsorium","versus"]},
 			{"from-tags":["responsorium","responsum"]},
-			{"tags":["responsorium","gloria"],"datum":"Glória Patri, et Fílio, et Spirítui Sancto."},
+			"Glória Patri, et Fílio, et Spirítui Sancto.",
 			{"from-tags":["responsorium","responsum"]}
 		]
 	},
 	{
 		"tags":["responsorium-breve"],
 		"datum":[
-			{"from-tags":["responsorium"]},
-			{"from-tags":["responsorium","responsum"]},
-			{"from-tags":["responsorium"]},
-			{"from-tags":["responsorium","responsum"]},
-			{"from-tags":["responsorium","versus"]},
-			{"from-tags":["responsorium","responsum"]},
-			{"tags":["responsorium","gloria"],"datum":"Glória Patri, et Fílio, et Spirítui Sancto."},
-			{"from-tags":["responsorium"]},
-			{"from-tags":["responsorium","responsum"]}
+			{"from-tags":["responsorium-breve"]},
+			{"from-tags":["responsorium-breve","responsum"]},
+			{"from-tags":["responsorium-breve"]},
+			{"from-tags":["responsorium-breve","responsum"]},
+			{"from-tags":["responsorium-breve","versus"]},
+			{"from-tags":["responsorium-breve","responsum"]},
+			"Glória Patri, et Fílio, et Spirítui Sancto.",
+			{"from-tags":["responsorium-breve"]},
+			{"from-tags":["responsorium-breve","responsum"]}
 		]
 	},
 	{

@@ -10,10 +10,7 @@
 			{"from-tags":["prima","antiphona","antiphona-i","repetita"]},
 			{"from-tags":["ordinarium","prima","capitulum"]},
 			"Deo grátias.",
-			{
-				"from-tags":["responsorium-breve"],
-				"cascade":["prima"]
-			},
+			{"from-tags":["responsorium-breve"]},
 			{"from-tags":["prima","versiculus"]},
 			{"from-tags":["prima","preces"]},
 			{
@@ -117,15 +114,15 @@
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
-		"tags":["prima","responsorium"],
+		"tags":["prima","responsorium-breve"],
 		"datum":"Christe Fili Dei vivi,"
 	},
 	{
-		"tags":["prima","responsorium","responsum"],
+		"tags":["prima","responsorium-breve","responsum"],
 		"datum":"Miserére nobis."
 	},
 	{
-		"tags":["prima","responsorium","versus"],
+		"tags":["prima","responsorium-breve","versus"],
 		"datum":"Qui sedes ad dexteram Patris."
 	},
 	{

@@ -18,10 +18,7 @@
 			{"from-tags":["nona","antiphona","antiphona-v","repetita"]},
 			{"from-tags":["nona","capitulum"]},
 			"Deo grátias.",
-			{
-				"from-tags":["responsorium-breve"],
-				"cascade":["nona"]
-			},
+			{"from-tags":["responsorium-breve"]},
 			{"from-tags":["nona","versiculus"]},
 			{"from-tags":["collecta-primaria"]},
 			{
@@ -46,19 +43,19 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["nona","capitulum"],
+		"tags":["nona","temporale","capitulum"],
 		"datum":"Empti enim estis prétio magno. * Glorificáte et portáte Deum in córpore vestro."
 	},
 	{
-		"tags":["nona","dominica","responsorium"],
+		"tags":["nona","dominica","responsorium-breve"],
 		"datum":"Clamávi in toto corde meo,"
 	},
 	{
-		"tags":["nona","dominica","responsorium","responsum"],
+		"tags":["nona","dominica","responsorium-breve","responsum"],
 		"datum":"Exaúdi me Dómine."
 	},
 	{
-		"tags":["nona","dominica","responsorium","versus"],
+		"tags":["nona","dominica","responsorium-breve","versus"],
 		"datum":"Justificatiónes tuas requíram."
 	},
 	{
@@ -78,15 +75,15 @@
 		"datum":"Aspice in me, * et miserére mei Dómine."
 	},
 	{
-		"tags":["nona","feria","responsorium"],
+		"tags":["nona","feria","responsorium-breve"],
 		"datum":"Rédime me Dómine,"
 	},
 	{
-		"tags":["nona","feria","responsorium","responsum"],
+		"tags":["nona","feria","responsorium-breve","responsum"],
 		"datum":"Et miserére mei."
 	},
 	{
-		"tags":["nona","feria","responsorium","versus"],
+		"tags":["nona","feria","responsorium-breve","versus"],
 		"datum":"Pes enim meus stetit in via recta."
 	}
 ]
