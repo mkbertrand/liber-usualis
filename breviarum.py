@@ -108,7 +108,7 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
     elif not len(result[-1]['tags']) == len(result[-2]['tags']):
         return result[-1]
     elif not priortags == None:
-        logging.debug(f'Search differentiation required priortag to rank {result}' )
+        logging.debug(f'Search differentiation used priortag to rank {result}' )
         strippedresult = [a['tags'] & priortags for a in result]
         if not len(strippedresult[-1]) == len(strippedresult[-2]):
             return result[-1]
