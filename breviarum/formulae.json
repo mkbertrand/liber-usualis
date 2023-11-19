@@ -80,7 +80,7 @@
 		"forwards-to":["antiphona"]
 	},
 	{
-		"tags":["hymnus","te-deum"],
+		"tags":["te-deum"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2305",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
@@ -115,7 +115,7 @@
 		]
 	},
 	{
-		"tags":["hymnus","te-deum","solemnis"],
+		"tags":["te-deum","solemnis"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2809",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
@@ -252,38 +252,22 @@
 		"datum":[{"from-tags":["antiphona","antiphona-magnificat"]},{"from-tags":["vesperae","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
 	},
 	{
-		"tags":[
-			["duplex-i-classis","i-vesperae","vesperae","benedicamus-domino"],
-			["duplex-ii-classis","i-vesperae","vesperae","benedicamus-domino"],
-			["duplex-majus","i-vesperae","vesperae","benedicamus-domino"]
-		],
+		"tags":["sollemnitas","i-vesperae","vesperae","benedicamus-domino"],
 		"src":"https://gregobase.selapa.net/chant.php?id=4567",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":[
-			["duplex-i-classis","laudes","benedicamus-domino"],
-			["duplex-ii-classis","laudes","benedicamus-domino"],
-			["duplex-majus","laudes","benedicamus-domino"]
-		],
+		"tags":["sollemnitas","laudes","benedicamus-domino"],
 		"src":"https://gregobase.selapa.net/chant.php?id=10336",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":[
-			["duplex-i-classis","ii-vesperae","vesperae","benedicamus-domino"],
-			["duplex-ii-classis","ii-vesperae","vesperae","benedicamus-domino"],
-			["duplex-majus","ii-vesperae","vesperae","benedicamus-domino"]
-		],	
+		"tags":["sollemnitas","ii-vesperae","vesperae","benedicamus-domino"],	
 		"src":"https://gregobase.selapa.net/chant.php?id=4568",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":[
-			["duplex-i-classis","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
-			["duplex-ii-classis","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
-			["duplex-majus","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"]
-		],
+		"tags":["sollemnitas","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=7522",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
