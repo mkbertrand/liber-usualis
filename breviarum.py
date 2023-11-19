@@ -116,14 +116,20 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
         raise RuntimeError(f'Multiple equiprobable results for queries {queries}:\n{result[-1]}\n{result[-2]}')
     else:
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
-
+    
 def pickcascades(search, cascades):
+    ret = []
     if cascades == None:
-        yield search
+        return [search]
     else:
         for cascade in cascades:
-            if not responsetags.isdisjoint(search & cascade) or 'primarium' in cascade:
-                yield search | cascade
+            if not responsetags.isdisjoint(search & cascade):
+                ret.append(search | cascade)
+        if len(ret) == 0:
+            for cascade in cascades:
+                if 'primarium' in cascade:
+                    ret.append(search | cascade)
+        return ret
 
 def unioncascades(item, cascades):
     if cascades == None:
@@ -139,13 +145,13 @@ def process(item, cascades, pile):
     if item == None:
         return 'Absens'
     elif type(item) == set:
-        item = search(list(pickcascades(item, cascades)), pile, priortags = item)
+        item = search(pickcascades(item, cascades), pile, priortags = item)
 
     # Next cascade (not to be used for the current search, but only for deeper searches
     nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades
 
     if 'from-tags' in item:
-        response = process(search(list(pickcascades(item['from-tags'], cascades)), pile, priortags = item['from-tags']), nextcascades, pile)
+        response = process(search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
         if ('tags' in item):
             return {'tags':item['tags'], 'datum':response}
         else:
@@ -153,8 +159,8 @@ def process(item, cascades, pile):
 
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, the provided pile may be insufficient so it is better to simply search a pile made from the specific relevant files
-        probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist(list(pickcascades(item['forwards-to'], cascades))))
-        return process(search(list(pickcascades(item['forwards-to'], cascades)), probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
+        probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist(pickcascades(item['forwards-to'], cascades)))
+        return process(search(pickcascades(item['forwards-to'], cascades), probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
 
     elif type(item['datum']) == list:
         ret = []
