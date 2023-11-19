@@ -1,0 +1,452 @@
+[
+	{
+		"tags":["vidua","antiphona","antiphona-i"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2000",
+		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis."
+	},
+	{
+		"tags":["vidua","vesperae","i-psalmus"],
+		"forwards-to":["psalmus-cix"]
+	},
+	{
+		"tags":["vidua","antiphona","antiphona-ii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2963",
+		"datum":"In odórem * unguentórum tuórum cúrrimus; adolescéntulæ dilexérunt te nimis."
+	},
+	{
+		"tags":["vidua","vesperae","ii-psalmus"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["vidua","antiphona","antiphona-iii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2056",
+		"datum":"Jam hiems tránsiit, * imber ábiit, et recéssit: surge amíca mea, et veni."
+	},
+	{
+		"tags":["vidua","vesperae","iii-psalmus"],
+		"forwards-to":["psalmus-cxxi"]
+	},
+	{
+		"tags":["vidua","antiphona","antiphona-iv"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2115",
+		"datum":"Veni elécta mea, * et ponam in te thronum meum, allelúja."
+	},
+	{
+		"tags":["vidua","vesperae","iv-psalmus"],
+		"forwards-to":["psalmus-cxxvi"]
+	},
+	{
+		"tags":["vidua","antiphona","antiphona-v"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2474",
+		"datum":"Ista est speciósa * inter fílias Jerúsalem."
+	},
+	{
+		"tags":["vidua","vesperae","v-psalmus"],
+		"forwards-to":["psalmus-cxlvii"]
+	},
+	{
+		"tags":["vidua","martyr","capitulum"],
+		"datum":"Confitébor tibi, Dómine Rex, et collaudábo te Deum Salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne."
+	},
+	{
+		"tags":["vidua","capitulum"],
+		"datum":"Mulíerem fortem quis invéniet? procul, et de últimis fínibus prétium ejus. Confídit in ea cor viri sui, et spóliis non indigébit."
+	},
+	{
+		"tags":["vidua","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2492",
+		"datum":[
+			"Fortem viríli péctore/Laudémus omnes féminam,/Quæ sanctitátis glória/Ubíque fulget ínclyta.",
+			"Hæc sancto amóre saúcia,/Dum mundi amórem nóxium/Horréscit, ad cœléstia/Iter perégit árduum.",
+			"Carnem domans jejúniis,/Dulcíque mentem pábulo/Oratiónis nútriens,/Cœli potítur gaúdiis.",
+			"Rex Christe virtus fórtium,/Qui magna solus éfficis,/Hujus precátu, quǽsumus,/Audi benígnus súpplices.",
+			{"from-tags":["terminatio","deo-patri"]}
+		]
+	},
+	{
+		"tags":["vidua","i-vesperae","vesperae","versiculus"],
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+	},
+	{
+		"tags":["vidua","vesperae","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=18848",
+		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam."
+	},
+	{
+		"tags":["vidua","martyr","collecta"],
+		"datum":"Deus, qui inter cétera poténtiæ tuæ mirácula étiam in sexu frágili victóriam martýrii contulísti: concéde propítius; ut qui beátæ N. Mártyris tuæ natalítia cólimus, per ejus ad te exémpla gradiámur."
+	},
+	{
+		"tags":["vidua","martyr","virgines","martyes","collecta"],
+		"datum":"Da nobis, quǽsumus Dómine Deus noster, sanctárum Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis."
+	},
+	{
+		"tags":["vidua","collecta"],
+		"datum":"Exaúdi nos Deus salutáris noster: ut sicut de beátæ N. festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu."
+	},
+	{
+		"tags":["vidua","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["vidua","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"https://nocturnale.marteo.fr/chant/MUNXIa/",
+		"datum":"Laudémus Deum nostrum, * In confessióne beátæ N."
+	},
+	{
+		"tags":["vidua","viduae","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"https://nocturnale.marteo.fr/chant/MUNXIb/",
+		"datum":"Laudémus Deum nostrum, * In confessióne beatárum N. et N."
+	},
+	{
+		"tags":["vidua","matutinum","hymnus"],
+		"src":"https://nocturnale.marteo.fr/chant/MUVMHb/",
+		"datum":[
+			"Hujus orátu Deus alme nobis/Débitas pœnas scélerum remítte;/Ut tibi puro resonémus almum/Péctore carmen.",
+			"Sit decus Patri, genitǽque Proli,/Et tibi compar utriúsque virtus/Spíritus semper, Deus unus omni/Témporis ævo.","Amen."
+		]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN1A1/",
+		"datum":"O quam pulchra * est casta generátio cum claritáte!"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","i-psalmus"],
+		"forwards-to":["psalmus-viii"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUNXN1A2/",
+		"datum":"Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","ii-psalmus"],
+		"forwards-to":["psalmus-xviii"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN1A3/",
+		"datum":"Revértere, * revértere Sunamítis: revértere, revértere, ut intueámur te."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","iii-psalmus"],
+		"forwards-to":["psalmus-xxiii"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Parábolis Salomónis.",
+			"Mulíerem fortem quis invéniet? procul, et de últimis fínibus prétium ejus. Confídit in ea cor viri sui, et spóliis non indigébit. Reddet ei bonum, et non malum, ómnibus diébus vitæ suæ. Quæsívit lanam et linum, et operáta est consílio mánuum suárum. Facta est quasi navis institóris, de longe portans panem suum. Et de nocte surréxit, dedítque prædam domésticis suis, et cibária ancíllis suis. Considerávit agrum, et emit eum: de fructu mánuum suárum plantávit víneam. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum."
+		]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXNN1R1/",
+		"datum":"Veni elécta mea, et ponam in te thronum meum:"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i","responsum"],
+		"datum":"Quia concupívit Rex spéciem tuam."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i","versus"],
+		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Gustávit, et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus. Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusam. Manum suam apéruit ínopi, et palmas suas exténdit ad paúperem. Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus. Stragulátam vestem fecit sibi: byssus et púrpura induméntum ejus. Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ. Síndonem fecit, et véndidit, et cíngulum trádidit Chananǽo."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN1R2/",
+		"datum":"Diffúsa est grátia in lábiis tuis:"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii","responsum"],
+		"datum":"Proptérea benedíxit te Deus in ætérnum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii","versus"],
+		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo. Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus. Considerávit sémitas domus suæ, et panem otiósa non comédit. Surrexérunt fílii ejus, et beatíssimam prædicavérunt: vir ejus, et laudávit eam. Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum, ipsa laudábitur. Date ei de fructu mánuum suárum: et laudent eam in portis ópera ejus."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN1R3/",
+		"datum":"Spécie tua et pulchritúdine tua"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii","responsum"],
+		"datum":"Inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii","versus"],
+		"datum":"Diffúsa est grátia in lábiis tuis, proptéra benedíxit te Deus in ætérnum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A1/",
+		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","i-psalmus"],
+		"forwards-to":["psalmus-xliv"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A2/",
+		"datum":"Adjuvábit eam * Deus vultu suo: Deus médio ejus, non commovébitur."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","ii-psalmus"],
+		"forwards-to":["psalmus-xlv"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A3/",
+		"datum":"Aquæ multæ * non potuérunt exstínguere caritátem."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","iii-psalmus"],
+		"forwards-to":["psalmus-xlvii"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex libro sancti Ambrósii Epíscopi de Víduis.",
+			"Agrum hunc Ecclésiæ fértilem cerno, nunc integritátis flore vernántem, nunc viduitátis gravitáte polléntem, nunc étiam conjúgii frúctibus redundántem. Nam esti divérsi, uníus tamen agri fructus sunt: nec tanta hortórum lília, quantæ arístæ ségetum, méssium spicæ: compluriúmque spátia campórum recipiéndis aptántur semínibus, quam rédditis nováles frúctibus feriántur. Bona ergo vidúitas, quæ tóties apostólico judício prædicátur. Hæc enim magístra fídei, magístra est castitátis."
+		]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN2R1/",
+		"datum":"Propter veritátem, et mansuetúdinem, et justítiam:"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i","responsum"],
+		"datum":"Et dedúcet te mirabíliter déxtera tua."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i","versus"],
+		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Unde et illi qui deórum suórum adultéria et probra venerántur, cœlibátus et viduitátis statuére pœnas, ut ǽmuli críminum mulctárent stúdia virtútum, spécie quidem, qua fœcunditátem quǽrerent, sed stúdio, quo propósitum castitátis abolérent. Nam conféctis et miles stipéndiis arma depónit, et relícto offício quod gerébat, ad própria veteránus rura dimíttitur ut et ipse exércitæ labóribus vitæ réquiem consequántur; et álios spes futúræ quiétis subeúndis fáciat opéribus promptióres. Agrícola quoque matúrior torquéndam áliis stivam commíttit, et juveníli gravátus ópere providéntiam curæ senílis explórat: vitem facílius tondére, quam prémere, ut juvenescéntem luxúriam réprimat, et adolescéntem lascíviam falce succídat: parcórum quamdam pártuum castitátem docens étiam in vítibus expeténdam."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN2R2/",
+		"datum":"Dilexísti justítiam, et odísti iniquitátem:"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii","responsum"],
+		"datum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii","versus"],
+		"datum":"Propter veritátem, et mansuetúdinem, et justítiam."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Símilis huic vídua velut eméritis veterána stipéndiis castitátis, et si conjúgii arma depónat, domus tamen totíus pacem gubérnat: et si vehéndis onéribus otiósa, maritándis tamen junióribus próvida, ubi cultus utílior, ubi fructus ubérior sit, quarum cópulam aptiórem, seníli gravitáte dispónit. Ítaque si maturióribus quam junióribus commíttitur ager, cur putes utiliórem nuptam esse quam víduam? Quod si persecutóres fídei persecutóres fuérunt étiam viduitátis: útique fidem sequéntibus vidúitas non pro supplício fugiénda est, sed tenénda pro prǽmio."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUNXN2R3/",
+		"datum":"Fallax grátia, et vana est pulchritúdo:"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii","responsum"],
+		"datum":"Múlier timens Deum, ipsa laudábitur."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii","versus"],
+		"datum":"Date ei de fructu mánuum suárum, laudent eam in portis ópera ejus."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A1/",
+		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","i-psalmus"],
+		"forwards-to":["psalmus-xcv"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A2/",
+		"datum":"Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","ii-psalmus"],
+		"forwards-to":["psalmus-xcvi"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A3/",
+		"datum":"Veni sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","iii-psalmus"],
+		"forwards-to":["psalmus-xcvii"]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Símile erit regnum cœlórum thesaúro abscóndito in agro. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Cœlórum regnum, fratres caríssimi, idcírco terrénis rebus símile dícitur, ut ex his quæ ánimus novit, surgat ad incógnita quæ non novit: quátenus exémplo visibílium se ad invisibília rápiat, et per ea, quæ usu dídicit, quasi confricátus incaléscat: ut per hoc, quod scit notum dilígere, discat et incógnita amáre. Ecce enim cœlórum regnum thesaúro abscóndito in agro comparátur: quem qui ínvenit homo, absóndit, et præ gaúdio illíus vadit, et vendit univérsa quæ habet, et emit agrum illum."
+		]
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"https://nocturnale.marteo.fr/chant/MUNXN3R1/",
+		"datum":"Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus: considerávit sémitas domus suæ,"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i","responsum"],
+		"datum":"Et panem otiósa non comédit."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i","versus"],
+		"datum":"Gustávit et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Qua in re hoc quoque notándum est, quod invéntus thesaúrus abscónditur, ut servétur: quia stúdium cœléstis desidérii a malígnis spirítibus custodíre non súfficit, qui hoc ab humánis laúdibus non abscóndit. In præsénti étenim vita, quasi in via sumus, qua ad pátriam pérgimus. Malígni autem spíritus iter nostrum quasi quidam latrúnculi óbsident. Deprædári ergo desíderat, qui thesaúrum públice portat in via. Hoc autem dico, non ut próximi ópera nostra bona non vídeant, cum scriptum sit: Vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cœlis est: sed ut per hoc, quod ágimus, laudes extérius non quærámus. Sic autem sit opus in público, quátenus inténtio máneat in occúlto: ut et de bono ópere próximis præbeámus exémplum, et tamen per intentiónem, qua Deo soli placére quǽrimus, semper optémus secrétum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/MUVXN3R2/",
+		"datum":"Regnum mundi, et omnem ornátum sǽculi contémpsi, propter amórem Dómini mei Jesu Christi:"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii","responsum"],
+		"datum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii","versus"],
+		"datum":"Eructávit cor meum verbum bonum: dico ego ópera mea regi."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Thesaúrus autem cœléste est desidérium: ager vero, in quo thesaúrus abscónditur, disciplína stúdii cœléstis. Quem profécto agrum vénditis ómnibus cómparat, qui voluptátibus carnis renúntians, cuncta sua terréna desidéria per disciplínæ cœléstis custódiam calcat: ut nihil jam, quod caro blandítur, líbeat; nihil quod carnálem vitam trucídat, spíritus  perhorréscat."
+	},
+	{
+		"tags":["vidua","laudes","versiculus"],
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+	},
+	{
+		"tags":["vidua","martyr","laudes","antiphona","antiphona-benedictus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2681",
+		"datum":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus."
+	},
+	{
+		"tags":["vidua","tertia","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=3208",
+		"datum":"Spécie tua"
+	},
+	{
+		"tags":["vidua","tertia","responsorium","responsum"],
+		"datum":"Et pulchritúdine tua."
+	},
+	{
+		"tags":["vidua","tertia","responsorium","versus"],
+		"datum":"Inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","tertia","versiculus"],
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
+	},
+	{
+		"tags":["vidua","martyr","sexta","capitulum"],
+		"datum":"Liberásti me secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, de mánibus quæréntium ánimam meam, et de multis tribulatiónibus quæ circumdedérunt me."
+	},
+	{
+		"tags":["vidua","sexta","capitulum"],
+		"datum":"Manum suam apéruit ínopi, et palmas suas exténdit ad paúperem. Non timébit dómui suæ a frigóribus nivis."
+	},
+	{
+		"tags":["vidua","sexta","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=8710",
+		"datum":"Adjuvábit eam"
+	},
+	{
+		"tags":["vidua","sexta","responsorium","responsum"],
+		"datum":"Deus vultu suo."
+	},
+	{
+		"tags":["vidua","sexta","responsorium","versus"],
+		"datum":"Deus in médio ejus, non commovébitur."
+	},
+	{
+		"tags":["vidua","sexta","versiculus"],
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+	},
+	{
+		"tags":["vidua","martyr","nona","capitulum"],
+		"datum":"Laudábit usque ad mortem ánima mea Dóminum, quóniam éruis sustinéntes te, et líberas eos de manu angústiæ, Dómine Deus noster."
+	},
+	{
+		"tags":["vidua","nona","capitulum"],
+		"datum":"Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum, ipsa laudábitur."
+	},
+	{
+		"tags":["vidua","nona","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=3143",
+		"datum":"Elégit eam Deus,"
+	},
+	{
+		"tags":["vidua","nona","responsorium","responsum"],
+		"datum":"Et præelégit eam."
+	},
+	{
+		"tags":["vidua","nona","responsorium","versus"],
+		"datum":"In tabernáculo suo habitáre facit eam."
+	},
+	{
+		"tags":["vidua","nona","versiculus"],
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+	},
+	{
+		"tags":["vidua","ii-vesperae","vesperae","versiculus"],
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+	},
+	{
+		"tags":["vidua","ii-vesperae","vesperae","antiphona-magnificat"],
+		"datum":"Manum suam * apéruit ínopi, et palmas suas exténdit ad paúperem, et panem otiósa non comédit."
+	},
+	{
+		"tags":["vidua","martyr","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Joánnis Chrysóstomi.",
+			"Ego máxime commemoratiónes díligo Mártyrum, díligo, et ampléctor; atque omnes quidem, sed tum præcípue, cum mulíerum certámina proponúntur. Quanto enim infírmius est vas, tanto major est grátia, tanto illústrius est trophǽum, tanto insígnior est victória, non ob imbecillitátem sexus athletárum, sed quod per ea, quibus vícerat inimícus, nunc étiam vincátur."
+		]
+	},
+	{
+		"tags":["vidua","martyr","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Per mulíerem vicit, per mulíerem superátus est. Hoc illíus ántea telum erat: hoc illíus nunc cædis factum est instruméntum, hoc vas appáruit insuperábile. Peccávit illa prior, et mórtua est: ista fútilis promíssi spe infláta, Dei leges violávit: hæc vitam præséntem contémpsit, ne fidem in suum benefactórem ejuráret. Quam ígitur deínceps speráre póterunt excusatiónem viri, si molles sint, et ignávi; quam vero véniam, cum fórtiter ac viríliter se gerant mulíeres, cum ádeo se generóse ad certámina pietátis accíngant?"
+	},
+	{
+		"tags":["vidua","martyr","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Fuit illi corpus imbecíllum, et obnóxius sexus injúriæ; verúmtamen ómnium horum imbecillitátem advéniens grátia occultávit. Nihil enim est, nihil plane poténtius est eo, qui magno cum stúdio Dei timórem hábeat in mente defíxum; sed quamvis ignes, quamvis ferrum, quamvis béstias, quamvis áliud quidvis minéntur hostes, ómnia nullo negótio contémnit; quod útique Beáta ista étiam fecit."
+	}
+]
