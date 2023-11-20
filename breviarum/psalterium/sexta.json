@@ -2,32 +2,32 @@
 	{
 		"tags":["sexta", "hora"],
 		"datum":[
-			{"from-tags":["prex-duplex"]},
-			{"from-tags":["deus-in-adjutorium","ferialis"]},
-			{"from-tags":["sexta","hymnus"]},
-			{"from-tags":["sexta","antiphona","antiphona-iii","intonata"]},
-			{"from-tags":["psalmus-cxviii-xi"]},
-			{"from-tags":["psalmus-cxviii-xii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-xiii"]},
-			{"from-tags":["psalmus-cxviii-xiv"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-xv"]},
-			{"from-tags":["psalmus-cxviii-xvi"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["sexta","antiphona","antiphona-iii","repetita"]},
-			{"from-tags":["sexta","capitulum"]},
+			["prex-duplex"],
+			["deus-in-adjutorium","ferialis"],
+			["sexta","hymnus"],
+			["sexta","antiphona","antiphona-iii","intonata"],
+			["psalmus-cxviii-xi"],
+			["psalmus-cxviii-xii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-xiii"],
+			["psalmus-cxviii-xiv"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-xv"],
+			["psalmus-cxviii-xvi"],
+			["gloria-psalmi"],
+			["sexta","antiphona","antiphona-iii","repetita"],
+			["sexta","capitulum"],
 			"Deo grátias.",
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["sexta","versiculus"]},
-			{"from-tags":["collecta-primaria"]},
+			["responsorium-breve"],
+			["sexta","versiculus"],
+			["collecta-primaria"],
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["sexta","dominus-vobiscum"]
 			},
-			{"from-tags":["benedicamus-domino","hora-minor"]},
-			{"from-tags":["fidelium-animae"]},
-			{"from-tags":["pater-noster-secreta"]}
+			["benedicamus-domino","hora-minor"],
+			["fidelium-animae"],
+			["pater-noster-secreta"]
 		]
 	},
 	{
@@ -36,7 +36,7 @@
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus meríridem:",
 			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			{"from-tags":["terminatio","praesta-pater"]}
+			["terminatio","praesta-pater"]
 		]
 	},
 	{
@@ -69,7 +69,7 @@
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus meríridem:",
 			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			{"from-tags":["terminatio","praesta-pater"]}
+			["terminatio","praesta-pater"]
 		]
 	},
 	{

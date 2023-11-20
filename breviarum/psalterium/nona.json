@@ -2,32 +2,32 @@
 	{
 		"tags":["nona", "hora"],
 		"datum":[
-			{"from-tags":["prex-duplex"]},
-			{"from-tags":["deus-in-adjutorium","ferialis"]},
-			{"from-tags":["nona","hymnus"]},
-			{"from-tags":["nona","antiphona","antiphona-v","intonata"]},
-			{"from-tags":["psalmus-cxviii-xvii"]},
-			{"from-tags":["psalmus-cxviii-xviii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-xix"]},
-			{"from-tags":["psalmus-cxviii-xx"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-xxi"]},
-			{"from-tags":["psalmus-cxviii-xxii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["nona","antiphona","antiphona-v","repetita"]},
-			{"from-tags":["nona","capitulum"]},
+			["prex-duplex"],
+			["deus-in-adjutorium","ferialis"],
+			["nona","hymnus"],
+			["nona","antiphona","antiphona-v","intonata"],
+			["psalmus-cxviii-xvii"],
+			["psalmus-cxviii-xviii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-xix"],
+			["psalmus-cxviii-xx"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-xxi"],
+			["psalmus-cxviii-xxii"],
+			["gloria-psalmi"],
+			["nona","antiphona","antiphona-v","repetita"],
+			["nona","capitulum"],
 			"Deo grátias.",
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["nona","versiculus"]},
-			{"from-tags":["collecta-primaria"]},
+			["responsorium-breve"],
+			["nona","versiculus"],
+			["collecta-primaria"],
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["nona","dominus-vobiscum"]
 			},
-			{"from-tags":["benedicamus-domino","hora-minor"]},
-			{"from-tags":["fidelium-animae"]},
-			{"from-tags":["pater-noster-secreta"]}
+			["benedicamus-domino","hora-minor"],
+			["fidelium-animae"],
+			["pater-noster-secreta"]
 		]
 	},
 	{
@@ -35,7 +35,7 @@
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
 			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			{"from-tags":["terminatio","praesta-pater"]}
+			["terminatio","praesta-pater"]
 		]
 	},
 	{
@@ -67,7 +67,7 @@
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
 			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			{"from-tags":["terminatio","praesta-pater"]}
+			["terminatio","praesta-pater"]
 		]
 	},
 	{
