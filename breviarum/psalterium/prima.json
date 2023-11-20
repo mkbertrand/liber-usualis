@@ -2,27 +2,27 @@
 	{
 		"tags":["prima", "hora"],
 		"datum":[
-			{"from-tags":["prex-triplex"]},
-			{"from-tags":["deus-in-adjutorium","ferialis"]},
-			{"from-tags":["prima","hymnus"]},
-			{"from-tags":["prima","antiphona","antiphona-i","intonata"]},
-			{"from-tags":["prima","psalmodia"]},
-			{"from-tags":["prima","antiphona","antiphona-i","repetita"]},
-			{"from-tags":["ordinarium","prima","capitulum"]},
+			["prex-triplex"],
+			["deus-in-adjutorium","ferialis"],
+			["prima","hymnus"],
+			["prima","antiphona","antiphona-i","intonata"],
+			["prima","psalmodia"],
+			["prima","antiphona","antiphona-i","repetita"],
+			["ordinarium","prima","capitulum"],
 			"Deo grátias.",
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["prima","versiculus"]},
-			{"from-tags":["prima","preces"]},
+			["responsorium-breve"],
+			["prima","versiculus"],
+			["prima","preces"],
 			{
 				"from-tags":["collecta-primaria"],
-				"cascade":["ordinarium","prima"]
+				"cascade":["ordinarium"]
 			},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["prima","dominus-vobiscum"]
 			},
-			{"from-tags":["benedicamus-domino","hora-minor"]},
-			{"from-tags":["martyrologium"]},
+			["benedicamus-domino","hora-minor"],
+			["martyrologium"],
 			"V. Pretiósa in conspéctu Dómini.",
 			"R. Mors sanctórum ejus.",
 			"Sancta María, et omnes Sancti indercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.",
@@ -33,36 +33,24 @@
 			"R. Dómine ad adjuvándum me festína.",
 			"V. Deus in adjutórium meum inténde.",
 			"R. Dómine ad adjuvándum me festína.",
-			{"from-tags":["gloria-versorum"]},
-			{
-				"tags":["prima","capitulare","kyrie"],
-				"datum":"Kýrie eléison. Christe eléison. Kýrie eléison."
-			},
-			{
-				"datum":"Pater noster.",
-				"tags":["prima","capitulare","pater-noster-incipit"]
-			},
-			{
-				"datum":"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
-				"tags":["prima","capitulare","pater-noster"]
-			},
-			{
-				"datum":["V. Et ne nos indúcas in tentatiónem.","R. Sed líbera nos a malo."],
-				"tags":["prima","capitulare","et-ne-nos"]
-			},
+			["gloria-versorum"],
+			"Kýrie eleíson. Christe eleíson. Kýrie eleíson.",	
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.","R. Sed líbera nos a malo.",
 			"V. Réspice in servos tuos Dómine, et in ópera tua, * et dírige fílios eórum.",
 			"R. Et sit splendor Dómini Dei nostri super nos, + et ópera mánuum nostrárum dírige super nos, * et opus mánuum nostrárum dírige.",
-			{"from-tags":["gloria-versorum"]},
+			["gloria-versorum"],
 			"Orémus.",
 			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.",
 			"Amen.",
-			{"from-tags":["formula","lectio"],"cascade":["prima"]},
-			{"from-tags":["adjutorium-nostrum"]},
+			{"from-tags":["formula","lectionis"],"cascade":["prima"]},
+			["adjutorium-nostrum"],
 			"V. Benedícite.",
 			"R. Deus.",
 			"Dóminus nos benedícat, et ab omni malo deféndat, et ad vitam perdúcat ætérnam: et fidélium ánimæ per misericórdiam Dei requiéscant in pace.",
 			"Amen.",
-			{"from-tags":["pater-noster-secreta"]}
+			["pater-noster-secreta"]
 		]
 	},
 	{
@@ -72,7 +60,7 @@
 			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
 			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
 			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
-			{"from-tags":["terminatio","deo-patri"]}
+			["terminatio","deo-patri"]
 		]
 	},
 	{
@@ -82,31 +70,31 @@
 	{
 		"tags":["prima","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"]
 		]
 	},
 	{
 		"tags":["prima","dominica","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxvii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["quicumque"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-cxvii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"],
+			["quicumque"],
+			["gloria-psalmi"]
 		]
 	},
 	{
@@ -153,8 +141,8 @@
 			"R. Et Spíritum sanctum tuum ne aúferas a me.",
 			"V. Redde mihi lætítiam salutáris tui.",
 			"R. Et spíritu principáli confírma me.",
-			{"from-tags":["adjutorium-nostrum"]},
-			{"from-tags":["confiteor"]},
+			["adjutorium-nostrum"],
+			["confiteor"],
 			"V. Dignáre Dómine die isto.",
 			"R. Sine peccáto nos custodíre.",
 			"V. Miserére nostri Dómine.",
@@ -174,7 +162,7 @@
 		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
-		"tags":["prima","lectio","benedictio"],
+		"tags":["prima","benedictio"],
 		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
 	},
 	{
@@ -192,7 +180,7 @@
 			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
 			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
 			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
-			{"from-tags":["terminatio","deo-patri"]}
+			["terminatio","deo-patri"]
 		]
 	},
 	{
@@ -202,76 +190,76 @@
 	{
 		"tags":["prima","feria-ii","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xxiii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-xxiii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"]
 		]
 	},
 	{
 		"tags":["prima","feria-iii","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xxiv"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-xxiv"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"]
 		]
 	},
 	{
 		"tags":["prima","feria-iv","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xxv"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-xxv"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"]
 		]
 	},
 	{
 		"tags":["prima","feria-v","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xxii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-xxii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"]
 		]
 	},
 	{
 		"tags":["prima","feria-vi","psalmodia"],
 		"datum":[
-			{"from-tags":["psalmus-liii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xxi"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-i"]},
-			{"from-tags":["psalmus-cxviii-ii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxviii-iii"]},
-			{"from-tags":["psalmus-cxviii-iv"]},
-			{"from-tags":["gloria-psalmi"]}
+			["psalmus-liii"],
+			["gloria-psalmi"],
+			["psalmus-xxi"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-i"],
+			["psalmus-cxviii-ii"],
+			["gloria-psalmi"],
+			["psalmus-cxviii-iii"],
+			["psalmus-cxviii-iv"],
+			["gloria-psalmi"]
 		]
 	},
 	{

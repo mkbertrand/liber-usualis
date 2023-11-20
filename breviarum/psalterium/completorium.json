@@ -2,36 +2,36 @@
 	{
 		"tags":["completorium", "hora"],
 		"datum":[
-			{"from-tags":["formula","lectio"],"cascade":["completorium"]},
-			{"from-tags":["adjutorium-nostrum"]},
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["confiteor"]},
+			{"from-tags":["formula","lectionis"],"cascade":["completorium"]},
+			["adjutorium-nostrum"],
+			["pater-noster-secreta"],
+			["confiteor"],
 			"V. Convérte nos Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
-			{"from-tags":["deus-in-adjutorium","ferialis"]},
-			{"from-tags":["completorium","antiphona","intonata"]},
-			{"from-tags":["psalmus-iv"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xxx","versus-ii"]},
-			{"from-tags":["psalmus-xxx","versus-iii"]},
-			{"from-tags":["psalmus-xxx","versus-iv"]},
-			{"from-tags":["psalmus-xxx","versus-v"]},
-			{"from-tags":["psalmus-xxx","versus-vi"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-xc"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["psalmus-cxxxiii"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["completorium","antiphona","repetita"]},
-			{"from-tags":["completorium","hymnus"]},
-			{"from-tags":["completorium","ordinarium","capitulum"]},
+			["deus-in-adjutorium","ferialis"],
+			["completorium","antiphona","intonata"],
+			["psalmus-iv"],
+			["gloria-psalmi"],
+			["psalmus-xxx","versus-ii"],
+			["psalmus-xxx","versus-iii"],
+			["psalmus-xxx","versus-iv"],
+			["psalmus-xxx","versus-v"],
+			["psalmus-xxx","versus-vi"],
+			["gloria-psalmi"],
+			["psalmus-xc"],
+			["gloria-psalmi"],
+			["psalmus-cxxxiii"],
+			["gloria-psalmi"],
+			["completorium","antiphona","repetita"],
+			["completorium","hymnus"],
+			["completorium","ordinarium","capitulum"],
 			"Deo grátias.",
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["completorium","versiculus"]},
-			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis","intonata"]},
-			{"from-tags":["nunc-dimittis"]},
-			{"from-tags":["gloria-psalmi"]},
-			{"from-tags":["completorium","antiphona","antiphona-nunc-dimittis","repetita"]},
-			{"from-tags":["completorium","preces"]},
+			["responsorium-breve"],
+			["completorium","versiculus"],
+			["completorium","antiphona","antiphona-nunc-dimittis","intonata"],
+			["nunc-dimittis"],
+			["gloria-psalmi"],
+			["completorium","antiphona","antiphona-nunc-dimittis","repetita"],
+			["completorium","preces"],
 			{
 				"from-tags":["collecta-primaria"],
 				"cascade":["ordinarium","completorium"]
@@ -40,7 +40,7 @@
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["completorium","dominus-vobiscum"]
 			},
-			{"from-tags":["benedicamus-domino","hora-minor"]},
+			["benedicamus-domino","hora-minor"],
 			{
 				"tags":["completorium","benedictio-finalis"],
 				"datum":[
@@ -48,14 +48,14 @@
 					"R. Amen."
 				]
 			},
-			{"from-tags":["antiphona-bmv"]},
+			["antiphona-bmv"],
 			"Divínum auxílium ✠ máneat semper nobíscum.",
 			"R. Amen.",
-			{"from-tags":["prex-triplex"]}
+			["prex-triplex"]
 		]
 	},
 	{
-		"tags":["completorium","lectio","benedictio"],
+		"tags":["completorium","benedictio"],
 		"datum":"Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens."
 	},
 	{
@@ -73,7 +73,7 @@
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
 			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			{"from-tags":["terminatio","praesta-pater"]}
+			["terminatio","praesta-pater"]
 		]
 	},
 	{
@@ -143,7 +143,7 @@
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
 			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			{"from-tags":["terminatio","praesta-pater"]}
+			["terminatio","praesta-pater"]
 		]
 	}
 ]
