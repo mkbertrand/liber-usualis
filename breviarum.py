@@ -101,7 +101,6 @@ def anysearchmultiple(queries, pile):
     return ret
 
 def search(queries, pile, multipleresults = False, multipleresultssort = None, priortags = None):
-    print(queries)
     result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: len(a['tags'])))
     if len(result) == 0:
         warnings.warn(f'0 tags found for queries {list(queries)}')
@@ -171,7 +170,6 @@ def process(item, cascades, pile):
             if type(i) is str:
                 ret.append(i)
             else:
-                print(cascades)
                 iprocessed = process(i, cascades, pile)
                 if iprocessed is None:
                     ret.append('Absens')
