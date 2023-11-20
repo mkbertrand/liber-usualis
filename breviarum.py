@@ -145,10 +145,10 @@ def unioncascades(item, cascades):
 def process(item, cascades, pile):
 
      # None can sometimes be the result of a search and is expected, but indicates an absent item
+    if type(item) is set:
+        item = search(pickcascades(item, cascades), pile, priortags = item)
     if item is None:
         return 'Absens'
-    elif type(item) is set:
-        item = search(pickcascades(item, cascades), pile, priortags = item)
 
     # Next cascade (not to be used for the current search, but only for deeper searches
     nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades
