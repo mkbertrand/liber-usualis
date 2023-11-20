@@ -54,12 +54,13 @@ def getbreviarumfiles(queries):
                         icopy['tags'].add('pars')
                         icopy['datum'] = icopy['datum'].split('*')[1].lstrip()
                         added.append(icopy)
-                    if 'antiphona' in i['tags']:
+                    elif 'antiphona' in i['tags']:
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('intonata')
                         icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
                         if icopy['datum'][-1] not in ['.',',','?','!',':',';']:
                             icopy['datum'] += '.'
+                        added.append(icopy)
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('repetita')
                         icopy['datum'] = icopy['datum'].split('* ')[0] + icopy['datum'].split('* ')[1]
