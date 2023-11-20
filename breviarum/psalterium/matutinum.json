@@ -76,7 +76,7 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-i"]},
 					{"from-tags":["matutinum","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","ii-psalmus"]},
@@ -86,7 +86,7 @@
 					{"from-tags":["matutinum","iv-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-i","repetita"]},
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-ii"]},
 					{"from-tags":["matutinum","v-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","vi-psalmus"]},
@@ -96,7 +96,7 @@
 					{"from-tags":["matutinum","viii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-ii","repetita"]},
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-iii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-iii"]},
 					{"from-tags":["matutinum","ix-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","x-psalmus"]},
@@ -115,12 +115,12 @@
 			"R. Sed líbera nos a malo.",
 			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-i"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-ii"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-ii"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-iii"]},
-			{"from-tags":["formula","responsorium","gloria"],"cascade":["matutinum","responsorium-iii"]}
+			{"from-tags":["formula","lectio"],"cascade":["lectio-i"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-iii"]},
+			{"from-tags":["formula","responsorium","gloria"],"cascade":["responsorium-iii"]}
 		]
 	},
 	{
@@ -174,12 +174,12 @@
 			"R. Sed líbera nos a malo.",
 			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-i"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-ii"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-ii"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-iii"]},
-			{"from-tags":["formula","responsorium","gloria"],"cascade":["matutinum","responsorium-iii"]}
+			{"from-tags":["formula","lectio"],"cascade":["lectio-i"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-iii"]},
+			{"from-tags":["formula","responsorium","gloria"],"cascade":["responsorium-iii"]}
 		]
 	},
 	{
@@ -233,12 +233,12 @@
 			"R. Sed líbera nos a malo.",
 			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-i"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-ii"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-ii"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-iii"]},
-			{"from-tags":["hymnus","te-deum"]}
+			{"from-tags":["formula","lectio"],"cascade":["lectio-i"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-iii"]},
+			{"from-tags":["te-deum"]}
 		]
 	},
 	{
@@ -247,15 +247,15 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-i"]},
 					{"from-tags":["matutinum","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-i","repetita"]},
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-ii"]},
 					{"from-tags":["matutinum","ii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-ii","repetita"]},
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-iii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-iii"]},
 					{"from-tags":["matutinum","iii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-iii","repetita"]}
@@ -268,12 +268,12 @@
 			"R. Sed líbera nos a malo.",
 			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-i"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-ii"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-ii"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-iii"]},
-			{"from-tags":["formula","responsorium","gloria"],"cascade":["matutinum","responsorium-iii"]}
+			{"from-tags":["formula","lectio"],"cascade":["lectio-i"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-ii"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-iii"]},
+			{"from-tags":["formula","responsorium","gloria"],"cascade":["responsorium-iii"]}
 		]
 	},
 	{
@@ -282,15 +282,15 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-i"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-i"]},
 					{"from-tags":["matutinum","i-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-i","repetita"]},
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-ii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-ii"]},
 					{"from-tags":["matutinum","ii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-ii","repetita"]},
-					{"from-tags":["formula","antiphona-prior"],"cascade":["matutinum","antiphona-iii"]},
+					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-iii"]},
 					{"from-tags":["matutinum","iii-psalmus"]},
 					{"from-tags":["gloria-psalmi"]},
 					{"from-tags":["matutinum","antiphona","antiphona-iii","repetita"]}
@@ -303,12 +303,12 @@
 			"R. Sed líbera nos a malo.",
 			"Exaúdi Dómine Jesu Christe preces servórum tuórum, et miserére nobis, qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["matutinum","responsorium-i"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-ii"]},
-			{"from-tags":["formula","responsorium","gloria"],"cascade":["matutinum","responsorium-ii"]},
-			{"from-tags":["formula","lectio"],"cascade":["matutinum","lectio-iii"]},
-			{"from-tags":["hymnus","te-deum"]}
+			{"from-tags":["formula","lectio"],"cascade":["lectio-i"]},
+			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-ii"]},
+			{"from-tags":["formula","responsorium","gloria"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","lectio"],"cascade":["lectio-iii"]},
+			{"from-tags":["te-deum"]}
 		]
 	}
 ]

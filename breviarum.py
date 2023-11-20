@@ -71,7 +71,7 @@ def prettyprint(j):
                     print(obj)
                 else:
                     pieces = obj.split('/')
-                    if not len(pieces[0]) == 0:
+                    if len(pieces[0]) != 0:
                         print(pieces[0])
                     for i in pieces[1:]:
                         print(' ' + i)
@@ -101,6 +101,7 @@ def anysearchmultiple(queries, pile):
     return ret
 
 def search(queries, pile, multipleresults = False, multipleresultssort = None, priortags = None):
+    print(queries)
     result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: len(a['tags'])))
     if len(result) == 0:
         warnings.warn(f'0 tags found for queries {list(queries)}')
@@ -112,7 +113,7 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
     elif priortags is not None:
         logging.debug(f'Search differentiation used priortag to rank {result}' )
         strippedresult = [a['tags'] & priortags for a in result]
-        if not len(strippedresult[-1]) == len(strippedresult[-2]):
+        if len(strippedresult[-1]) != len(strippedresult[-2]):
             return result[-1]
     if not multipleresults:
         raise RuntimeError(f'Multiple equiprobable results for queries {queries}:\n{result[-1]}\n{result[-2]}')
@@ -170,6 +171,7 @@ def process(item, cascades, pile):
             if type(i) is str:
                 ret.append(i)
             else:
+                print(cascades)
                 iprocessed = process(i, cascades, pile)
                 if iprocessed is None:
                     ret.append('Absens')
@@ -199,7 +201,7 @@ def getbytags(daytags, query):
         if query in i:
             return i
 
-def hour(hour: str, day):
+def hour(hour: str, day, forcedprimarium=None):
     assert type(day) is not datetime
     daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
     for i in daytags:
@@ -209,36 +211,52 @@ def hour(hour: str, day):
 
     pile = datamanage.getbreviarumfiles(defaultpile | flattensetlist(daytags) | {hour})
 
+    if forcedprimarium:
+        for i in daytags:
+            if 'primarium' in i:
+                i.remove('primarium')
+                i.add('commemoratio')
+        for i in daytags:
+            if forcedprimarium in i:
+                i.add('primarium') 
     primary = getbytags(daytags, 'primarium')
     primarydatum = process({hour, 'hora'} | primary, [(primary | {hour}), (getbytags(daytags, 'antiphona-bmv'))], pile)
     return primarydatum
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-        description="Divine Office Hours",
+        description='Divine Office Hours',
     )
 
     parser.add_argument(
-        "-v",
-        "--verbosity",
-        metavar="LEVEL",
+        '-v',
+        '--verbosity',
+        metavar='LEVEL',
         type=lambda s: s.upper(),
         choices=logging.getLevelNamesMapping().keys(),
         default=logging.getLevelName(logging.getLogger().getEffectiveLevel()),
-        const="debug",
-        nargs="?",
-        help="Verbosity",
+        const='debug',
+        nargs='?',
+        help='Verbosity',
     )
 
     parser.add_argument(
-        "-o",
-        "--output",
-        type=argparse.FileType("w"),
-        default="-",
-        help="Output filename",
+        '-o',
+        '--output',
+        type=argparse.FileType('w'),
+        default='-',
+        help='Output filename',
+    )
+
+    parser.add_argument(
+        '-t',
+        '--tags',
+        type=str,
+        default=None,
+        help='Tag search for manually selected primarium',
     )
 
     parser.add_argument(
@@ -284,7 +302,7 @@ if __name__ == "__main__":
     defpile = datamanage.getbreviarumfiles(defaultpile)
     ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
     for i in args.hour.split(' '):
-        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date()))
+        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimarium=args.tags))
     ret['datum'].append(process({'post-officium'}, None, defpile))
 
     if args.output == sys.stdout:
