@@ -201,7 +201,7 @@ def getbytags(daytags, query):
         if query in i:
             return i
 
-def hour(hour: str, day, forcedprimarium=None):
+def hour(hour: str, day, forcedprimary=None):
     assert type(day) is not datetime
     daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
     for i in daytags:
@@ -211,15 +211,18 @@ def hour(hour: str, day, forcedprimarium=None):
 
     pile = datamanage.getbreviarumfiles(defaultpile | flattensetlist(daytags) | {hour})
 
-    if forcedprimarium:
+    if forcedprimary:
+        forcedprimary = set(forcedprimary.split(' '))
         for i in daytags:
             if 'primarium' in i:
                 i.remove('primarium')
                 i.add('commemoratio')
         for i in daytags:
-            if forcedprimarium in i:
+            if forcedprimary.issubset(i):
                 i.add('primarium') 
     primary = getbytags(daytags, 'primarium')
+    if primary is None and forcedprimary:
+        raise RuntimeError('Provided tag(s) not found') 
     primarydatum = process({hour, 'hora'} | primary, [(primary | {hour}), (getbytags(daytags, 'antiphona-bmv'))], pile)
     return primarydatum
 
@@ -302,7 +305,7 @@ if __name__ == '__main__':
     defpile = datamanage.getbreviarumfiles(defaultpile)
     ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
     for i in args.hour.split(' '):
-        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimarium=args.tags))
+        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimary=args.tags))
     ret['datum'].append(process({'post-officium'}, None, defpile))
 
     if args.output == sys.stdout:
