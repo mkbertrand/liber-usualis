@@ -25,7 +25,7 @@
 			["completorium","hymnus"],
 			["completorium","ordinarium","capitulum"],
 			"Deo grátias.",
-			["responsorium-breve"],
+			["formula","responsorium-breve"],
 			["completorium","versiculus"],
 			["completorium","antiphona","antiphona-nunc-dimittis","intonata"],
 			["nunc-dimittis"],
@@ -81,7 +81,7 @@
 		"datum":"Tu autem in nobis es, Dómine, + et nomen sanctum tuum invocátum est super nos: * ne derelínquas nos, Dómine, Deus noster."
 	},
 	{
-		"tags":["completorium","responsorium-breve"],
+		"tags":["completorium","responsorium-breve","incipit"],
 		"datum":"In manus tuas Dómine"
 	},
 	{

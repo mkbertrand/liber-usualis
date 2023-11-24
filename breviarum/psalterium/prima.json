@@ -10,7 +10,7 @@
 			["prima","antiphona","antiphona-i","repetita"],
 			["ordinarium","prima","capitulum"],
 			"Deo grátias.",
-			["responsorium-breve"],
+			["formula","responsorium-breve"],
 			["prima","versiculus"],
 			["prima","preces"],
 			{
@@ -102,7 +102,7 @@
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
-		"tags":["prima","responsorium-breve"],
+		"tags":["prima","responsorium-breve","incipit"],
 		"datum":"Christe Fili Dei vivi,"
 	},
 	{

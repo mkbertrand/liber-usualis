@@ -18,7 +18,7 @@
 			["nona","antiphona","antiphona-v","repetita"],
 			["nona","capitulum"],
 			"Deo grátias.",
-			["responsorium-breve"],
+			["formula","responsorium-breve"],
 			["nona","versiculus"],
 			["collecta-primaria"],
 			{
@@ -47,7 +47,7 @@
 		"datum":"Empti enim estis prétio magno. * Glorificáte et portáte Deum in córpore vestro."
 	},
 	{
-		"tags":["nona","dominica","responsorium-breve"],
+		"tags":["nona","dominica","responsorium-breve","incipit"],
 		"datum":"Clamávi in toto corde meo,"
 	},
 	{
@@ -75,7 +75,7 @@
 		"datum":"Aspice in me, * et miserére mei Dómine."
 	},
 	{
-		"tags":["nona","feria","responsorium-breve"],
+		"tags":["nona","feria","responsorium-breve","incipit"],
 		"datum":"Rédime me Dómine,"
 	},
 	{

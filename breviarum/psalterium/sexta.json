@@ -18,12 +18,12 @@
 			["sexta","antiphona","antiphona-iii","repetita"],
 			["sexta","capitulum"],
 			"Deo grátias.",
-			["responsorium-breve"],
+			["sexta","responsorium-breve"],
 			["sexta","versiculus"],
 			["collecta-primaria"],
 			{
-				"from-tags":["dominus-vobiscum","ferialis-a"],
-				"tags":["sexta","dominus-vobiscum"]
+				"tags":["sexta","dominus-vobiscum"],
+				"from-tags":["dominus-vobiscum","ferialis-a"]
 			},
 			["benedicamus-domino","hora-minor"],
 			["fidelium-animae"],
@@ -34,7 +34,7 @@
 		"tags":["sexta","semiduplex","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=12355",
 		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus meríridem:",
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
 			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
 			["terminatio","praesta-pater"]
 		]
@@ -48,7 +48,7 @@
 		"datum":"Alter altérius ónera portáte, * et sic adimplébitis legem Christi."
 	},
 	{
-		"tags":["sexta","dominica","responsorium-breve"],
+		"tags":["sexta","dominica","responsorium-breve","incipit"],
 		"datum":"In ætérnum Dómine"
 	},
 	{
@@ -67,7 +67,7 @@
 		"tags":["sexta","feria","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=11789",
 		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus meríridem:",
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
 			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
 			["terminatio","praesta-pater"]
 		]
@@ -77,7 +77,7 @@
 		"datum":"Adjúva me, * et salvus ero Dómine."
 	},
 	{
-		"tags":["sexta","feria","responsorium-breve"],
+		"tags":["sexta","feria","responsorium-breve","incipit"],
 		"datum":"Benedícam Dóminum"
 	},
 	{

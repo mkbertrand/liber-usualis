@@ -18,7 +18,7 @@
 			["tertia","antiphona","antiphona-ii","repetita"],
 			["tertia","capitulum"],
 			"Deo grátias.",
-			["responsorium-breve"],
+			["formula","responsorium-breve"],
 			["tertia","versiculus"],
 			["collecta-primaria"],
 			{
@@ -47,7 +47,7 @@
 		"datum":"Deus cáritas est: + et qui manet in caritáte, in Deo manet, * et Deus in eo."
 	},
 	{
-		"tags":["tertia","dominica","responsorium-breve"],
+		"tags":["tertia","dominica","responsorium-breve","incipit"],
 		"datum":"Inclína cor meum Deus"
 	},
 	{
@@ -79,7 +79,7 @@
 		"datum":"Sana me Dómine et sanábor: + salvum me fac, et salvus ero: * quóniam laus mea tu es."
 	},
 	{
-		"tags":["tertia","feria","responsorium-breve"],
+		"tags":["tertia","feria","responsorium-breve","incipit"],
 		"datum":"Sana ánimam meam,"
 	},
 	{
