@@ -40,8 +40,8 @@
 			"Sacrosánctæ et indivíduæ Trinitáti, crucifíxi Dómini nostri Jesu Christi humanitáti, beatíssimæ et gloriosíssimæ sempérque Vírginis Maríæ fœcúndæ integritáti, et ómnium Sanctórum universitáti sit sempitérna laus, honor, virtus et glória ab omni creatúra, nobísque remíssio ómnium peccatórum, per infiníta sǽcula sæculórum. Amen.",
 			"V. Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium.",
 			"R. Et beáti úbera, quæ lactavérunt Christum Dóminum.",
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["ave-maria-secreta"]}
+			["pater-noster-secreta"],
+			["ave-maria-secreta"]
 		]
 	},
 	{
@@ -59,16 +59,16 @@
 	{
 		"tags":["prex-duplex"],
 		"datum":[
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["ave-maria-secreta"]}
+			["pater-noster-secreta"],
+			["ave-maria-secreta"]
 		]
 	},
 	{
 		"tags":["prex-triplex"],
 		"datum":[
-			{"from-tags":["pater-noster-secreta"]},
-			{"from-tags":["ave-maria-secreta"]},
-			{"from-tags":["credo-secreta"]}
+			["pater-noster-secreta"],
+			["ave-maria-secreta"],
+			["credo-secreta"]
 		]
 	},
 	{
@@ -156,9 +156,9 @@
 				"datum":"Jube, domne, benedícere.",
 				"tags":["lectio","jube-domne"]
 			},
-			{"from-tags":["benedictio"]},
+			["benedictio"],
 			"R. Amen.",
-			{"from-tags":["lectio"]},
+			["lectio"],
 			"Tu autem, Dómine, miserére nobis.",
 			"R. Deo grátias."
 		]
@@ -188,35 +188,35 @@
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
-			{"from-tags":["responsorium"]},
-			{"from-tags":["responsorium","responsum"]},
-			{"from-tags":["responsorium","versus"]},
-			{"from-tags":["responsorium","responsum"]}
+			["responsorium","incipit"],
+			["responsorium","responsum"],
+			["responsorium","versus"],
+			["responsorium","responsum"]
 		]
 	},
 	{
 		"tags":["formula","responsorium","gloria"],
 		"datum":[
-			{"from-tags":["responsorium"]},
-			{"from-tags":["responsorium","responsum"]},
-			{"from-tags":["responsorium","versus"]},
-			{"from-tags":["responsorium","responsum"]},
+			["responsorium","incipit"],
+			["responsorium","responsum"],
+			["responsorium","versus"],
+			["responsorium","responsum"],
 			"Glória Patri, et Fílio, et Spirítui Sancto.",
-			{"from-tags":["responsorium","responsum"]}
+			["responsorium","responsum"]
 		]
 	},
 	{
-		"tags":["responsorium-breve"],
+		"tags":["formula","responsorium-breve"],
 		"datum":[
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["responsorium-breve","responsum"]},
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["responsorium-breve","responsum"]},
-			{"from-tags":["responsorium-breve","versus"]},
-			{"from-tags":["responsorium-breve","responsum"]},
+			["responsorium-breve","incipit"],
+			["responsorium-breve","responsum"],
+			["responsorium-breve","incipit"],
+			["responsorium-breve","responsum"],
+			["responsorium-breve","versus"],
+			["responsorium-breve","responsum"],
 			"Glória Patri, et Fílio, et Spirítui Sancto.",
-			{"from-tags":["responsorium-breve"]},
-			{"from-tags":["responsorium-breve","responsum"]}
+			["responsorium-breve","incipit"],
+			["responsorium-breve","responsum"]
 		]
 	},
 	{
@@ -229,7 +229,12 @@
 	},
 	{
 		"tags":["collecta-primaria"],
-		"datum":[{"from-tags":["dominus-vobiscum"]},"Orémus.",{"from-tags":["collecta"]},{"from-tags":["collecta","terminatio"]}]
+		"datum":[
+			["dominus-vobiscum"],
+			"Orémus.",
+			["collecta"],
+			["collecta","terminatio"]
+		]
 	},
 	{
 		"tags":["terminatio","per-dominum"],
@@ -245,11 +250,21 @@
 	},
 	{
 		"tags":["laudes","commemoratio"],
-		"datum":[{"from-tags":["antiphona","antiphona-benedictus"]},{"from-tags":["laudes","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
+		"datum":[
+			["antiphona","antiphona-benedictus"],
+			["laudes","versiculus"],
+			"Orémus.",
+			["collecta"]
+		]
 	},
 	{
 		"tags":["vesperae","commemoratio"],
-		"datum":[{"from-tags":["antiphona","antiphona-magnificat"]},{"from-tags":["vesperae","versiculus"]},"Orémus.",{"from-tags":["collecta"]}]
+		"datum":[
+			["antiphona","antiphona-magnificat"],
+			["vesperae","versiculus"],
+			"Orémus.",
+			["collecta"]
+		]
 	},
 	{
 		"tags":["sollemnitas","i-vesperae","vesperae","benedicamus-domino"],
@@ -326,7 +341,7 @@
 			"Salve, Regína, * mater misericórdiæ;/vita, dulcédo et spes nóstra, salve./Ad te clamámus éxsules fílii Hevæ./Ad te suspirámus geméntes et flentes/In hac lacrimárum valle./Eja ergo, advocáta nostra,/illos tuos misericórdes óculos ad nos convérte./Et Jesum, benedíctum fructum ventris tui,/nobis post hoc exsílium osténde./O clemens, o pia, o dulcis Virgo María.","Ora pro nobis, sancta Dei Génitrix.","Ut digni efficiámur promissiónibus Christi.",
 			"Orémus.",
 			"Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu Sancto cooperánte, præparásti: + da, ut, cujus commemoratióne lætámur, * ejus pia intercessióne, ab instántibus malis et a morte perpétua liberémur.",
-			{"from-tags":["terminatio","per-eumdem-christum"]}
+			["terminatio","per-eumdem-christum"]
 		]
 	}
 ]
