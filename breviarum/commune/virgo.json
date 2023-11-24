@@ -408,16 +408,16 @@
 		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam."
 	},
 	{
-		"tags":["virgo","tertia","responsorium-breve"],
+		"tags":["virgo","tertia","responsorium-breve","incipit"],
 		"src":"https://gregobase.selapa.net/chant.php?id=3208",
 		"datum":"Spécie tua"
 	},
 	{
-		"tags":["virgo","tertia","responsorium","responsum"],
+		"tags":["virgo","tertia","responsorium-breve","responsum"],
 		"datum":"Et pulchritúdine tua."
 	},
 	{
-		"tags":["virgo","tertia","responsorium","versus"],
+		"tags":["virgo","tertia","responsorium-breve","versus"],
 		"datum":"Inténde, próspere procéde, et regna."
 	},
 	{
@@ -429,16 +429,16 @@
 		"datum":"Ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhíbere Christo."
 	},
 	{
-		"tags":["virgo","sexta","responsorium-breve"],
+		"tags":["virgo","sexta","responsorium-breve","incipit"],
 		"src":"https://gregobase.selapa.net/chant.php?id=8710",
 		"datum":"Adjuvábit eam"
 	},
 	{
-		"tags":["virgo","sexta","responsorium","responsum"],
+		"tags":["virgo","sexta","responsorium-breve","responsum"],
 		"datum":"Deus vultu suo."
 	},
 	{
-		"tags":["virgo","sexta","responsorium","versus"],
+		"tags":["virgo","sexta","responsorium-breve","versus"],
 		"datum":"Deus in médio ejus, non commovébitur."
 	},
 	{
@@ -454,16 +454,16 @@
 		"datum":"O quam pulchra est casta generátio cum claritáte! immortális est enim memória illíus: quóniam apud Deum nota est, et apud hómines."
 	},
 	{
-		"tags":["virgo","nona","responsorium-breve"],
+		"tags":["virgo","nona","responsorium-breve","incipit"],
 		"src":"https://gregobase.selapa.net/chant.php?id=3143",
 		"datum":"Elégit eam Deus,"
 	},
 	{
-		"tags":["virgo","nona","responsorium","responsum"],
+		"tags":["virgo","nona","responsorium-breve","responsum"],
 		"datum":"Et præelégit eam."
 	},
 	{
-		"tags":["virgo","nona","responsorium","versus"],
+		"tags":["virgo","nona","responsorium-breve","versus"],
 		"datum":"In tabernáculo suo habitáre facit eam."
 	},
 	{
@@ -522,3 +522,4 @@
 		"datum":"Cum ergo de illis eunúchis díxerit, qui nisi étiam ipsi mente se contíneant, frustra et inutíliter tales sunt; ac de illis, qui ut regnum cœlórum consequántur, se cóntinent, subjúnxit rursus, dicens: Qui potest cápere, cápiat: ut alacrióres effíciat eo ipso, quod grave esse opus osténdit, et ineffábili benignitáte sua nóluit eam rem intra necessitátem legis conclúdere: idque dicéndo, adhuc magis possíbilem esse demónstrat ut voluntátis stúdium plus augeátur."
 	}
 ]
+
