@@ -49,7 +49,10 @@
 		"datum":"Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat."
 	},
 	{
-		"tags":["virgo","hymnus"],
+		"tags":[
+			["virgo","vesperae","hymnus"],
+			["virgo","laudes","hymnus"]
+		],
 		"src":"https://gregobase.selapa.net/chant.php?id=2587",
 		"datum":[
 			"Jesu, coróna Vírginum,/Quem mater illa cóncipit,/Quæ sola Virgo pártuit:/Hæc vota clemens áccipe.",
