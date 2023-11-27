@@ -153,7 +153,6 @@ def unioncascades(item, cascades):
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, cascades, pile):
-
      # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set:
         item = search([pickcascades(item, cascades)], pile, priortags = item)
@@ -212,7 +211,7 @@ def getbytags(daytags, query):
 
 def hour(hour: str, day, forcedprimary=None):
     assert type(day) is not datetime
-    daytags = prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day)
+    daytags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
     for i in daytags:
         for j in implicationtable:
             if j['tags'].issubset(i):
