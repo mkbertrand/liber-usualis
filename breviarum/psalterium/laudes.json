@@ -6,12 +6,12 @@
 			["laudes","psalmodia"],
 			["laudes","capitulum"],
 			"Deo grátias.",
-			["laudes","hymnus"],
+			["laudes","hymnus","primarium","tempus"],
 			["laudes","versiculus"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-benedictus"]},
 			["benedictus"],
 			["gloria-psalmi"],
-			["laudes","antiphona","antiphona-benedictus"],
+			["laudes","antiphona","antiphona-benedictus","repetita"],
 			["collecta-primaria"],
 			["dominus-vobiscum"],
 			["hora-major","laudes","benedicamus-domino"],
@@ -25,6 +25,34 @@
 		]
 	},
 	{
+		"tags":["laudes","psalmodia"],
+		"datum":[
+			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-i"]},
+			["i-psalmus"],
+			["gloria-psalmi"],
+			["laudes","antiphona","antiphona-i","repetita"],
+			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-ii"]},
+			["ii-psalmus"],
+			["gloria-psalmi"],
+			["laudes","antiphona","antiphona-ii","repetita"],
+			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-iii"]},
+			["psalmus-lxii"],
+			["psalmus-lxvi"],
+			["gloria-psalmi"],
+			["laudes","antiphona","antiphona-iii","repetita"],
+			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-iv"]},
+			["canticum"],
+			["laudes","antiphona","antiphona-iv","repetita"],
+			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-v"]},
+			["psalmus-cxlviii"],
+			["psalmus-cxlix"],
+			["psalmus-cl"],
+			["gloria-psalmi"],
+			["laudes","antiphona","antiphona-v","repetita"]
+		]
+	},
+	{
+
 		"tags":["laudes","dominica","psalmodia"],
 		"datum":[
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-i"]},
@@ -65,5 +93,100 @@
 	{
 		"tags":["laudes","dominica","capitulum"],
 		"datum":"Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, + honor, et virtus, et fortitúdo Deo nostro * in sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":[
+			["laudes","dominica","post-epiphaniam","hymnus"],
+			["laudes","dominica","post-pentecosten","hebdomada-i-octobris","hymnus"],
+			["laudes","dominica","post-pentecosten","october","hymnus"],
+			["laudes","dominica","post-pentecosten","november","hymnus"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=13348",
+		"datum":[
+			"Ætérne rerum Cónditor,/Noctem diémque qui regis,/Et témporum das témpora,/Ut álleves fastídium.",
+			"Noctúrna lux viántibus/A nocte noctem ségregans,/Præco diéi jam sonat,/Jubárque solis évocat.",
+			"Hoc excitátus Lúcifer/Solvit polum calígine:/Hoc omnis errónum cohors/Viam nocéndi déserit.",
+			"Hoc nauta vires cólligit,/Pontíque mitéscunt freta:/Hoc, ipsa petra Ecclésiæ,/Canénte, culpam díluit.",
+			"Surgámus ergo strénue:/Gallus jacéntes éxcitat,/Et somnoléntos íncrepat,/Gallus negántes árguit.",
+			"Gallo canénte spes redit,/Ægris salus refúnditur,/Mucro latrónis cónditur,/Lapsis fides revértitur.",
+			"Jesu labántes réspice,/Et nos vidéndo córrige:/Si réspicis, labes cadunt,/Fletúque culpa sólvitur.",
+			"Tu lux refúlge sénsibus,/Mentisque somnum díscute:/Te nostra vox primum sonet,/Et vota solvámus tibi.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","dominica","post-pentecosten","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=12721",
+		"datum":[
+			"Ecce jam noctis tenuátur umbra,/Lux et auróræ rútilans corúscat:/Súpplices rerum Dóminum canóra/Voce precémur:",
+			"Ut reos culpæ miserátus, omnem/Pellat angórem, tríbuat salútem,/Donet et nobis bona sempitérnæ/Múnera pacis.",
+			"Præstet hoc nobis Déitas beáta/Patris, ac Nati, paritérque sancti/Spíritusm cujus résonat per omnem/Glória mundum.","Amen."
+		]
+	},
+	{
+		"tags":["laudes","dominica","versiculus"],
+		"datum":["V. Dóminus regnávit, decórem índuit.","R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte."]
+	},
+	{
+		"tags":["laudes","feria-ii","antiphona","antiphona-i"],
+		"datum":"Miserére * mei Deus."
+	},
+	{
+		"tags":["laudes","feria","i-psalmus"],
+		"forwards-to":["psalmus-l"]
+	},
+	{
+		"tags":["laudes","feria-ii","antiphona","antiphona-ii"],
+		"datum":"Intéllige * clamórem meum Dómine."
+	},
+	{
+		"tags":["laudes","feria-ii","ii-psalmus"],
+		"forwards-to":["psalmus-v"]
+	},
+	{
+		"tags":["laudes","feria-ii","antiphona","antiphona-iii"],
+		"datum":"Deus Deus meus * ad te de luce vígilo."
+	},
+	{
+		"tags":["laudes","feria-ii","antiphona","antiphona-iv"],
+		"datum":"Convérsus est * furur tuus Dómine, et consolátus es me."
+	},
+	{
+		"tags":["laudes","feria-ii","canticum"],
+		"datum":[
+			["canticum-isaiae-prophetae"],
+			["gloria-psalmi"]
+		]
+	},
+	{
+		"tags":["laudes","feria-ii","antiphona","antiphona-v"],
+		"datum":"Laudáte * Dóminum de cœlis."
+	},
+	{
+		"tags":["laudes","feria","capitulum"],
+		"datum":"Nox præcéssit, dies autem appropinquávit. Abjiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus."
+	},
+	{
+		"tags":["laudes","feria-ii","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=15781",
+		"datum":[
+			"Splendor patérnæ glóriæ,/De luce lucem próferens,/Lux lucis, et fons lúminis,/Diem dies illúminans:",
+			"Verúsque sol illábere,/Micans nitóre pérpeti:/Jubárque sancti Spíritus/Infúnde nostris sénsibus.",
+			"Votis vocémus et Patrem,/Patrem poténtis grátiæ,/Patrem perénnis glóriæ:/Culpam reléget lúbricam.",
+			"Confírmet actus strénuos:/Dentes retúndat ínvidi:/Casus secúndet ásperos:/Agénda recte dírigat.",
+			"Mentem gubérnet et regat:/Sit pura nobis cástitas:/Fides calóre férveat,/Fraudis venéna nésciat.",
+			"Christúsque nobis sit cibus,/Potúsque noster sit fides:/Læti bibámus sóbriam/Profusiónem Spíritus.",
+			"Lætus dies hic tránseat:/Pudor sit ut dilúculum:/Fides velut merídies:/Crepúsculum mens nésciat.",
+			"Auróra lucem próvehit,/Cum luce nobis pródeat/In Patre totus Fílius,/Et totus in Verbo Pater.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","feria","versiculus"],
+		"datum":["V. Repléti sumus mane misericórdia tua.","R. Exsultávimus, et delectáti sumus."]
+	},
+	{
+		"tags":["laudes","feria-ii","antiphona","antiphona-benedictus"],
+		"datum":"Benedíctus * Dóminus Deus Ísraël."
 	}
 ]
