@@ -18,5 +18,13 @@
 	{
 		"tags":["semiduplex"],
 		"implies":["novem-lectiones"]
+	},
+	{
+		"tags":["dominica"],
+		"implies":["temporale"]
+	},
+	{
+		"tags":["feria"],
+		"implies":["temporale"]
 	}
 ]

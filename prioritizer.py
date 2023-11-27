@@ -36,17 +36,19 @@ coincidencetable = load_data('kalendar/data/vesperal-coincidence.json')
 hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv'}
 hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
+excludedtags = {'commemoratum','fixum','temporale','tempus'}
+
 def getvespers(day):
     assert type(day) is not datetime
     currday = datamanage.getdate(day)
     nextday = datamanage.getdate(day + timedelta(days=1))
     ivespers = [i.union({'i-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasivespers) and 'infra-octavam' not in occ, nextday)]
     iivespers = [i.union({'ii-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasiivespers), currday)]
-    ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint({'commemoratum','temporale','fixum'}), ivespers))
-    iivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint({'commemoratum','temporale','fixum'}), iivespers))
+    ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), ivespers))
+    iivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
     if len(iivespersprimarycandidates) == 0:
         # Grabs the temporale (ferial) II Vespers
-        iivespprim = next(filter(lambda occ: occ.isdisjoint({'commemoratum','fixum'}), iivespers))
+        iivespprim = next(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
         for i in iivespers:
             if i == iivespprim:
                 i.add('primarium')
@@ -63,13 +65,13 @@ def getvespers(day):
     def cycle():
         for coincidence in coincidencetable:
             for i in vesperal:
-                if coincidence['indices'].issubset(i) and i.isdisjoint({'fixum'}):
+                if coincidence['indices'].issubset(i) and i.isdisjoint({'fixum','tempus'}):
                     if type(coincidence['response']) is not list:
                         perform_action(coincidence, day, i)
                     else:
                         for j in coincidence['response']:
                             for k in vesperal:
-                                if k != i and 'fixum' not in k and j['indices'].issubset(k):
+                                if k != i and k.isdisjoint({'fixum','tempus'}) and j['indices'].issubset(k):
                                     target = i
                                     if 'target' in j and j['target'] == 'b':
                                         target = k

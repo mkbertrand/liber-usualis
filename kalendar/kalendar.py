@@ -195,7 +195,7 @@ def kalendar(year: int) -> Kalendar:
 
     i = date(year, 1, 1)
     while not i == date(year + 1, 1, 1):
-        kal.add_entry(i, {'fixum', menses[i.month - 1], str(i.day)})
+        kal.add_entry(i, {'tempus', menses[i.month - 1], str(i.day)})
         i = i + timedelta(days=1)
     for i in range(0, 13):
         if i == 0:
@@ -391,6 +391,8 @@ def kalendar(year: int) -> Kalendar:
             omittedepiphanyentry.discard('semiduplex')
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
+    excludedtags = {'commemoratum','fixum','temporale','tempus'}
+
     def perform_action(instruction, day, target):
         if instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
             target.add('commemoratum')
@@ -429,13 +431,13 @@ def kalendar(year: int) -> Kalendar:
 
     def resolvecoincidence(day, coincidence):
         for i in kal[day]:
-            if coincidence['indices'].issubset(i) and i.isdisjoint({'commemoratum','temporale','fixum'}):
+            if coincidence['indices'].issubset(i) and i.isdisjoint(excludedtags):
                 if not type(coincidence['response']) == list:
                     perform_action(coincidence, day, i)
                 else:
                     for j in coincidence['response']:
                         for k in kal[day]:
-                            if not k == i and k.isdisjoint({'commemoratum','temporale','fixum'}) and j['indices'].issubset(k):
+                            if not k == i and k.isdisjoint(excludedtags) and j['indices'].issubset(k):
                                 target = i
                                 if 'target' in j and j['target'] == 'b':
                                     target = k
@@ -452,7 +454,7 @@ def kalendar(year: int) -> Kalendar:
 
     for date0, entries in kal.items():
         for i in entries:
-            if i.isdisjoint({'fixum','temporale','commemoratum'}):
+            if i.isdisjoint(excludedtags):
                 i.add('primarium')
                 continue
 

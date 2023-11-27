@@ -17,7 +17,7 @@ from kalendar import kalendar
 data_root = pathlib.Path(__file__).parent
 defaultpile = {'formulae','psalmi','cantica'}
 
-responsetags = {'commemoratio','antiphona-bmv','psalmi'}
+responsetags = {'primarium','tempus','commemoratio','antiphona-bmv','psalmi'}
 
 def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
@@ -131,17 +131,17 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
 def pickcascades(search, cascades):
-    ret = []
     if cascades is None:
-        return [search]
+        return search
     else:
+        ret = copy.deepcopy(search)
         for cascade in cascades:
             if not responsetags.isdisjoint(search & cascade):
-                ret.append(search | cascade)
-        if len(ret) == 0:
+                ret |= cascade
+        if len(ret) == len(search):
             for cascade in cascades:
                 if 'primarium' in cascade:
-                    ret.append(search | cascade)
+                    ret |= cascade
         return ret
 
 def unioncascades(item, cascades):
@@ -156,7 +156,7 @@ def process(item, cascades, pile):
 
      # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set:
-        item = search(pickcascades(item, cascades), pile, priortags = item)
+        item = search([pickcascades(item, cascades)], pile, priortags = item)
     if item is None:
         return 'Absens'
 
@@ -164,7 +164,7 @@ def process(item, cascades, pile):
     nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades
 
     if 'from-tags' in item:
-        response = process(search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
+        response = process(search([pickcascades(item['from-tags'], cascades)], pile, priortags = item['from-tags']), nextcascades, pile)
         if 'tags' in item:
             return {'tags':item['tags'], 'datum':response}
         else:
@@ -172,8 +172,8 @@ def process(item, cascades, pile):
 
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, the provided pile may be insufficient so it is better to simply search a pile made from the specific relevant files
-        probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist(pickcascades(item['forwards-to'], cascades)))
-        return process(search(pickcascades(item['forwards-to'], cascades), probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
+        probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist([pickcascades(item['forwards-to'], cascades)]))
+        return process(search([pickcascades(item['forwards-to'], cascades)], probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
 
     elif type(item['datum']) is list:
         ret = []
@@ -232,7 +232,9 @@ def hour(hour: str, day, forcedprimary=None):
     primary = getbytags(daytags, 'primarium')
     if primary is None and forcedprimary:
         raise RuntimeError('Provided tag(s) not found') 
-    primarydatum = process({hour, 'hora'} | primary, [(primary | {hour}), (getbytags(daytags, 'antiphona-bmv'))], pile)
+    for i in daytags:
+        i.add(hour)
+    primarydatum = process({hour, 'hora'} | primary, daytags, pile)
     return primarydatum
 
 if __name__ == '__main__':
