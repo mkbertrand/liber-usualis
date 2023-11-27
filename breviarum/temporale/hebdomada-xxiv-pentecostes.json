@@ -1,0 +1,14 @@
+[
+	{
+		"tags":["hebdomada-xxiv-pentecostes","collecta"],
+		"datum":"Éxcita, quǽsumus Dómine, tuórum fidélium voluntátes: ut divíni óperis fructum propénsius exsequéntes, pietátis tuæ remédia majóra percípiant."
+	},
+	{
+		"tags":["hebdomada-xxiv-pentecostes","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+	{
+		"tags":["hebdomada-xxiv-pentecostes","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Amen dico vobis, * quia non præteríbit generátio hæc, donec ómnia fiant, cœlum et terra transíbunt, verba autem mea non transíbunt, dicit Dóminus."
+	}
+]

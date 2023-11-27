@@ -1,5 +1,95 @@
 [
 	{
+		"tags":["apostolus","vigilia","matutinum","lectio","lectio-i",
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Dixit Jesus discípulis suis: Hoc est præcéptum meum, ut diligátis ínvicem, sicut diléxi vos.",
+			"Homilía sancti Gregórii Papæ.",
+			"Cum cuncta sacra elóquia Domínicis plena sint præcéptis, quid est quod de dilectióne, quasi de singulári mandáto, Dóminus dicit, Hoc est præcéptum meum, ut diligátis ínvicem: nisi quia omne mandátum de sola dilectióne est: et ómnia unum præcéptum sunt? quia quidquid præcípitur, in sola caritáte solidátur. Ut enim multi árboris rami ex una radíce pródeunt: sic multæ virtútes ex una caritáte generántur. Nec habet áliquid viriditátis ramus boni óperis, si non manet in radíce caritátis."
+		],
+	},
+	{
+		"tags":["apostolus","vigilia","matutinum","lectio","lectio-ii"],
+		"datum":"Præcépta ergo Domínica et multa sunt, et unum: multa per diversitátem óperis, unum in radíce dilectiónis. Quáliter autem ista diléctio tenénda sit, ipse insínuat, qui in plerísque Scriptúræ suæ senténtiis, et amícos jubet díligi in se, et inimícos propter se. Ille enim veráciter caritátem habet, qui et amícum díligit in Deo, et inimícum díligit propter Deum. Nam sunt nonnúlli, qui díligunt próximos, sed per afféctum cognatiónis et carnis: quibus tamen in hac dilectióne sacra elóquia non contradícunt: sed áliud est quod sponte impénditur natúræ, áliud quod præcéptis Domínicis ex caritáte debétur obœdiéntiæ."
+	},
+	{
+		"tags":["apostolus","vigilia","matutinum","lectio","lectio-iii"],
+		"datum":"Hi nimírum et próximum díligunt, et tamen illa sublímia dilectiónis prǽmia non assequúntur: quia amórem suum non spiritáliter, sed carnáliter impéndunt. Proínde cum Dóminus díceret: Hoc est præcéptum meum, ut diligátis ínvicem: prótinus áddidit: Sicut  diléxi vos; ac si apérte dicat: Ad hoc amáte, ad quod amávi vos. Qua in re, fratres caríssimi, solérter intuéndum est, quod antíquus hostis, dum mentem nostram ad rerum temporálium dilectiónem trahit, infirmiórem contra nos próximum éxcitat, qui ea ipsa, quæ dilígimus, auférre moliátur."
+	},
+	{
+		"tags":["apostolus","antiphona","antiphona-i"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2300",
+		"datum":"Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos."
+	},
+	{
+		"tags":["apostolus","vesperae","i-psalmus"],
+		"forwards-to":["psalmus-cix"]
+	},
+	{
+		"tags":["apostolus","antiphona","antiphona-ii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2104",
+		"datum":Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
+	},
+	{
+		"tags":["apostolus","vesperae","ii-psalmus"],
+		"forwards-to":["psalmus-cx"],
+	},
+	{
+		"tags":["apostolus","antiphona","antiphona-iii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2202",
+		"datum":"Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus."
+	},
+	{
+		"tags":["apostolus","vesperae","iii-psalmus"],
+		"forwards-to":["psalmus-cxi"]
+	},
+	{
+		"tags":["apostolus","antiphona","antiphona-iv"],
+		"src":"https://gregobase.selapa.net/chant.php?id=1893",
+		"datum":"Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt."
+	},
+	{
+		"tags":["apostolus","vesperae","iv-psalmus"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["apostolus","antiphona","antiphona-v"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2594",
+		"datum":"In patiéntia vestra * possidébitis ánimas vestras."
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","v-psalmus"],
+		"forwards-to":["psalmus-cxvi"]
+	},
+	{
+		"tags":[
+			["apostolus","vesperae","capitulum"],
+			["apostolus","laudes","capitulum"],
+			["apostolus","tertia","capitulum"]
+		],
+		"datum":"Fratres: Jam non estis hóspites, et ádvenæ: sed estis cives sanctórum, et doméstici Dei: superædificáti super fundaméntum Apostolórum et Prophetárum, ipso summo angulári lápide Christo Jesu."
+	},
+	{
+		"tags":["apostolus","vesperae","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2194",
+		"datum":[
+			"Exsúltet orbis gaúdiis:/Cœlum resúltet laúdibus:/Apostolórum glóriam/Tellus et astra cóncinunt.",
+			"Vos sæculórum júdices,/Et vera mundi lúmina,/Votis precámur córdium:/Audíte voces súpplicum.",
+			"Qui templa cœli claúditis,/Serásque verbo sólvitis,/Nos a reátu nóxios/Solvi jubéte, quǽsumus.",
+			"Præcépta quorum prótinus/Languor salúsque séntiunt;/Sanáte mentes lánguidas:/Augéte nos virtútibus:",
+			"Ut, cum redíbit árbiter/In fine Christus sǽculi,/Nos sempitérni gaúdii/Concédat esse cómpotes.",
+			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["apostolus","i-vesperae","vesperae","versiculus"],
+			["apostolus","matutinum","nocturna-i","versiculus"]
+		],
+		"datum":["V. In omnem terram exívit sonus eórum.","R. Et in fines orbis terræ verba eórum."
+		]
+	},
+	{
 		"tags":["apostolus","matutinum","responsorium","responsorium-i"],
 		"datum":"Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:"
 	},
