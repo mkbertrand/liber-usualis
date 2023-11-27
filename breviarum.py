@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 import pathlib
 import json
 import copy
@@ -56,6 +57,7 @@ def dump_data(j):
     return json.dumps(recurse(j))
 
 implicationtable = load_data('tag-implications.json')
+tagsorttable = load_data('kalendar/data/tag-sort.json')
 
 def prettyprint(j):
     def recurse(obj):
@@ -90,9 +92,9 @@ def anysearch(query, pile):
                 if j.issubset(query):
                     ret = copy.deepcopy(i)
                     ret['tags'] = j
-                    yield ret
+                    yield copy.deepcopy(ret)
         elif i['tags'].issubset(query):
-            yield i
+            yield copy.deepcopy(i)
 
 def anysearchmultiple(queries, pile):
     ret = []
@@ -100,15 +102,24 @@ def anysearchmultiple(queries, pile):
         ret.extend(list(anysearch(i, pile)))
     return ret
 
+def itemvalue(tags):
+    val = 0
+    for i in range(0, len(tagsorttable)):
+        val |= tagsorttable[i].issubset(tags) << (len(tagsorttable) - i - 1)
+    return val
+
 def search(queries, pile, multipleresults = False, multipleresultssort = None, priortags = None):
-    result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: len(a['tags'])))
+    result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: itemvalue(a['tags']), reverse=True))
     if len(result) == 0:
         warnings.warn(f'0 tags found for queries {list(queries)}')
         return None
-    elif len(result) == 1:
+    bestvalue = itemvalue(result[0]['tags'])
+    result = list(filter(lambda a: itemvalue(a['tags']) == bestvalue, result))
+    if len(result) == 1:
         return result[0]
-    elif len(result[-1]['tags']) != len(result[-2]['tags']):
-        return result[-1]
+    result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
+    if len(result[0]['tags']) != len(result[1]['tags']):
+        return result[0]
     elif priortags is not None:
         logging.debug(f'Search differentiation used priortag to rank {result}' )
         strippedresult = [a['tags'] & priortags for a in result]
