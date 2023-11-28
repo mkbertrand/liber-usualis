@@ -28,11 +28,11 @@
 		"datum":"Ecce nomen Dómini * venit de longínquo, et cláritas ejus replet orbem terrárum."
 	},
 	{
-		"tags":["hebdomada-i-adventus","dominica","i-vesperae","vesperae","collecta"],
+		"tags":["hebdomada-i-adventus","collecta"],
 		"datum":"Excita, quǽsumus Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:"
 	},
 	{
-		"tags":["hebdomada-i-adventus","dominica","i-vesperae","collecta","terminatio"],
+		"tags":["hebdomada-i-adventus","collecta","terminatio"],
 		"forwards-to":["terminatio","qui-vivis"]
 	}
 ]
