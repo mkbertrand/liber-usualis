@@ -266,7 +266,7 @@ def kalendar(year: int) -> Kalendar:
     for entry in nativitycycle:
         date0 = todate(entry['date'], year)
         kal.add_entry(date0, entry['tags'])
-    kal.add_entry(nextsunday(christmas), movables['dominica-nativitatis']['tags'])
+    kal.add_entry(nextsunday(christmas), {'dominica','nativitas','dominica-infra-octavam','semiduplex'})
     if date(year, 1, 6).isoweekday() == 7:
         epiphanysunday = date(year, 1, 12)
         kal.transfer({'epiphania','dominica'}, target=epiphanysunday)
@@ -310,29 +310,6 @@ def kalendar(year: int) -> Kalendar:
     # List of inferred feasts that get merged in later
     buffer = Kalendar(year=year)
 
-    # Movable feasts with occurrence attribute
-    for name, movable in movables.items():
-        if 'occurrence' in movable:
-            matches = kal.match(movable['occurrence'], movable.get('excluded', set()))
-            for match_date, entry in matches:
-                kal.add_entry(match_date, movable['tags'])
-
-    kal |= buffer
-    buffer.kal.clear()
-
-    # Irregular movables
-    assumption = date(year, 8, 15)
-    if assumption.isoweekday() == 7:
-        kal.add_entry(assumption + timedelta(days=1), movables['joachim']['tags'])
-    else:
-        kal.add_entry(nextsunday(assumption), movables['joachim']['tags'])
-    # First Sunday of July
-    nominis_bmv = date(year, 9, 8)
-    if nominis_bmv.isoweekday() == 7:
-        kal.add_entry(nominis_bmv + timedelta(days=1), movables['nominis-bmv']['tags'])
-    else:
-        kal.add_entry(nextsunday(nominis_bmv), movables['nominis-bmv']['tags'])
-
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
         for entry in entries:
@@ -343,6 +320,8 @@ def kalendar(year: int) -> Kalendar:
                     if 'quadragesima' in kal.tagsindate(date0):
                         break
                     entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k - 1].lower()}
+                    if date0.isoweekday() == 7:
+                        entrystripped.add('dominica-infra-octavam')
                     # If a certain day within an Octave is manually entered, do not create one automatically
                     if kal.match_any(entrystripped) is None:
                         buffer.add_entry(date0, entrystripped)
@@ -350,12 +329,23 @@ def kalendar(year: int) -> Kalendar:
                 if 'quadragesima' in kal.tagsindate(date0):
                     continue
                 entrystripped = entry_base | {'duplex-minus', 'dies-octava'}
+                if date0.isoweekday() == 7:
+                    entrystripped.add('dominica-infra-octavam')
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_any(entrystripped) is None:
                     buffer.add_entry(date0, entrystripped)
             if 'habens-vigiliam' in entry and not 'vigilia-excepta' in entry:
                 entrystripped = entry_base | {'vigilia','poenitentialis','feria'}
                 buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
+
+    kal |= buffer
+    buffer.kal.clear()
+
+    # Movable feasts with occurrence attribute
+    for movable in movables:
+        matches = kal.match(movable['occurrence'], movable.get('excluded', set()))
+        for match_date in set([i.date for i in matches]):
+            kal.add_entry(match_date, movable['tags'])
 
     kal |= buffer
     buffer.kal.clear()

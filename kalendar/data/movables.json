@@ -1,159 +1,155 @@
-{
-	"bmv-sabbatum":{
+[
+	{
 		"occurrence":["sabbatum","feria","per-annum"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
+		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
 	},
-	"bmv-sabbatum-paschae":{
+	{
 		"occurrence":["sabbatum","feria","paschalis"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
+		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
 	},
-	"bmv-sabbatum-septuagesima":{
+	{
 		"occurrence":["sabbatum","feria","septuagesima"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
+		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
 	},
-	"bmv-sabbatum-sexagesima":{
+	{
 		"occurrence":["sabbatum","feria","sexagesima"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","marianum"]
+		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
 	},
-	"alma-redemptoris-adventus":{
+	{
 		"occurrence":["adventus"],
 		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"]
 	},
-	"alma-redemptoris-nativitatis":{
+	{
 		"occurrence":["nativitas"],
+		"excluded":["adventus"],
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
-	"alma-redemptoris-januarii":{
+	{
 		"occurrence":["januarius"],
+		"excluded":["nativitas"],
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
-	"alma-redemptoris-februarii":{
+	{
 		"occurrence":["februarius","1"],
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
-	"ave-regina-coelorum-februarii":{
-		"occurrence":["februarius"],
+	{
+		"occurrence":["post-epiphaniam"],
 		"excluded":["alma-redemptoris"],
 		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},
-	"ave-regina-coelorum-martii":{
-		"occurrence":["martius"],
-		"excluded":["paschalis"],
+	{
+		"occurrence":["septuagesima"],
+		"excluded":["alma-redemptoris"],
 		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},
-	"ave-regina-coelorum-quadragesimae":{
-		"occurrence":["quadragesima"],
-		"tags":["antiphona-bmv","ave-regina-coelorum"]
-	},
-	"regina-coeli":{
+	{
 		"occurrence":["paschalis"],
 		"tags":["antiphona-bmv","regina-coeli"]
 	},
-	"salve-regina":{
-		"occurrence":["per-annum"],
-		"excluded":["alma-redemptoris","ave-regina-coelorum"],
+	{
+		"occurrence":["post-pentecosten"],
 		"tags":["antiphona-bmv","salve-regina"]
 	},
-	"feria-iv-quattuor-temporum-adventus":{
+	{
 		"occurrence":["hebdomada-iii-advent","feria-iv"],
 		"tags":["quattuor-temporum-adventus","feria-iv","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"feria-vi-quattuor-temporum-adventus":{
+	{
 		"occurrence":["hebdomada-iii-advent","feria-vi"],
 		"tags":["quattuor-temporum-adventus","feria-vi","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"sabbato-quattuor-temporum-adventus":{
+	{
 		"occurrence":["hebdomada-iii-advent","sabbatum"],
 		"tags":["quattuor-temporum-adventus","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"nomen-jesus":{
+	{
 		"occurrence":["dominica","hebdomada-ii-epiphaniae"],
 		"tags":["nomen-jesus","duplex-ii-classis"]
 	},
-	"feria-iv-quattuor-temporum-quadragesimae":{
+	{
 		"occurrence":["hebdomada-i-quadragesimae","feria-iv"],
 		"tags":["quattuor-temporum-quadragesimae","feria-iv","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"feria-vi-quattuor-temporum-quadragesimae":{
+	{
 		"occurrence":["hebdomada-i-quadragesimae","feria-vi"],
 		"tags":["quattuor-temporum-quadragesimae","feria-vi","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"sabbato-quattuor-temporum-quadragesimae":{
+	{
 		"occurrence":["hebdomada-i-quadragesimae","sabbatum"],
 		"tags":["quattuor-temporum-quadragesimae","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"septem-dolores":{
+	{
 		"occurrence":["feria-vi","hebdomada-passionis"],
-		"tags":["septem-dolores","duplex-majus","marianum","poenitentialis"]
+		"tags":["septem-dolores","duplex-majus","maria","poenitentialis"]
 	},
-	"patrocinius-joseph":{
+	{
 		"occurrence":["dominica","hebdomada-iii-paschae"],
 		"tags":["patrocinius-joseph","duplex-ii-classis"]
 	},
-	"feria-ii-rogationis":{
+	{
 		"occurrence":["feria-ii","hebdomada-v-paschae"],
 		"tags":["feria-ii-rogationis","feria-ii","feria-major","feria","poenitentialis","rogatio"]
 	},
-	"feria-iii-rogationis":{
+	{
 		"occurrence":["feria-iii","hebdomada-v-paschae"],
 		"tags":["feria-iii-rogationis","feria-iii","feria","poenitentialis","rogatio"]
 	},
-	"feria-iv-rogationis":{
+	{
 		"occurrence":["feria-iv","hebdomada-v-paschae"],
 		"tags":["ascensio","feria-iv-rogationis","feria-iv","feria","poenitentialis","vigilia","rogatio"]
 	},
-	"feria-iv-quattuor-temporum-pentecostes":{
+	{
 		"occurrence":["pentecostes","feria-iv"],
 		"tags":["quattuor-temporum-pentecostes","feria-iv","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"feria-vi-quattuor-temporum-pentecostes":{
+	{
 		"occurrence":["pentecostes","feria-vi"],
 		"tags":["quattuor-temporum-pentecostes","feria-vi","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"sabbato-quattuor-temporum-pentecostes":{
+	{
 		"occurrence":["pentecostes","sabbatum"],
 		"tags":["quattuor-temporum-pentecostes","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"corpus-christi":{
+	{
 		"occurrence":["feria-v","hebdomada-i-pentecostes"],
 		"tags":["corpus-christi","duplex-i-classis","habens-octavam"]
 	},
-	"cor-jesus":{
+	{
 		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
 		"tags":["cor-jesus","duplex-majus"]
 	},
-	"pretiosissimi-sanguinis":{
+	{
 		"day":"Pretiosissimi Sanguinis D.N.J.C.",
 		"occurrence":["hebdomada-i-julii","dominica"],
 		"tags":["pretiosissimus-sanguis","duplex-ii-classis"]
 	},
-	"septem-dolores-septembris":{
+	{
 		"occurrence":["dominica","hebdomada-iii-septembris"],
-		"tags":["septem-dolores","september","duplex-majus","marianum"]
+		"tags":["septem-dolores","september","duplex-majus","maria"]
 	},
-	"feria-iv-quattuor-temporum-septembris":{
+	{
 		"occurrence":["hebdomada-iii-septembris","feria-iv"],
 		"tags":["quattuor-temporum-septembris","feria-iv","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"feria-vi-quattuor-temporum-septembris":{
+	{
 		"occurrence":["hebdomada-iii-septembris","feria-vi"],
 		"tags":["quattuor-temporum-septembris","feria-vi","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"sabbato-quattuor-temporum-septembris":{
+	{
 		"occurrence":["hebdomada-iii-septembris","sabbatum"],
 		"tags":["quattuor-temporum-septembris","sabbatum","feria-major","feria","poenitentialis","quattuor-temporum"]
 	},
-	"rosarium-bmv":{
+	{
 		"occurrence":["dominica","hebdomada-i-octobris"],
-		"tags":["rosarium-bmv","duplex-ii-classis","marianum"]
+		"tags":["rosarium-bmv","duplex-ii-classis","maria"]
 	},
-	"dominica-nativitatis":{
-		"tags":["nativitas","dominica","semiduplex","dominica-infra-octavam"]
-	},
-	"joachim":{
+	{
+		"occurrence":["assumptio","dominica-infra-octavam"],
 		"tags":["joachim","duplex-ii-classis","confessor"]
 	},
-	"nominis-bmv":{
-		"tags":["nomen-bmv","duplex-majus","marianum"]
+	{
+		"occurrence":["nativitas-bmv","dominica-infra-octavam"],
+		"tags":["nomen-bmv","duplex-majus","maria"]
 	}
-}
+]

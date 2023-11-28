@@ -53,6 +53,7 @@ class TestKalendar:
         date = datetime.date(kal.year, 1, 1)
         while date.year == kal.year:
             assert len(list(filter(lambda entry: entry.isdisjoint({"fixum","tempus","temporale","commemoratum"}), kal[date]))) == 1
+            assert len(list(filter(lambda entry: 'antiphona-bmv' in entry, kal[date]))) == 1
             
             date = date + datetime.timedelta(days=1)
 
