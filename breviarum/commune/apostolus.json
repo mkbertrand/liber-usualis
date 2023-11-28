@@ -1,12 +1,12 @@
 [
 	{
-		"tags":["apostolus","vigilia","matutinum","lectio","lectio-i",
+		"tags":["apostolus","vigilia","matutinum","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Joánnem.",
 			"In illo témpore: Dixit Jesus discípulis suis: Hoc est præcéptum meum, ut diligátis ínvicem, sicut diléxi vos.",
 			"Homilía sancti Gregórii Papæ.",
 			"Cum cuncta sacra elóquia Domínicis plena sint præcéptis, quid est quod de dilectióne, quasi de singulári mandáto, Dóminus dicit, Hoc est præcéptum meum, ut diligátis ínvicem: nisi quia omne mandátum de sola dilectióne est: et ómnia unum præcéptum sunt? quia quidquid præcípitur, in sola caritáte solidátur. Ut enim multi árboris rami ex una radíce pródeunt: sic multæ virtútes ex una caritáte generántur. Nec habet áliquid viriditátis ramus boni óperis, si non manet in radíce caritátis."
-		],
+		]
 	},
 	{
 		"tags":["apostolus","vigilia","matutinum","lectio","lectio-ii"],
@@ -28,11 +28,11 @@
 	{
 		"tags":["apostolus","antiphona","antiphona-ii"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2104",
-		"datum":Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
+		"datum":"Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
 	},
 	{
 		"tags":["apostolus","vesperae","ii-psalmus"],
-		"forwards-to":["psalmus-cx"],
+		"forwards-to":["psalmus-cx"]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iii"],
@@ -58,7 +58,7 @@
 		"datum":"In patiéntia vestra * possidébitis ánimas vestras."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","v-psalmus"],
+		"tags":["apostolus","i-vesperae","vesperae","v-psalmus"],
 		"forwards-to":["psalmus-cxvi"]
 	},
 	{
@@ -90,75 +90,195 @@
 		]
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-i"],
+		"tags":["apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2112",
+		"datum":"Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et ante reges et prǽsides ducémini propter me in testimónium illis, et Géntibus."
+	},
+	{
+		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXIa/",
+		"datum":"Regem Apostolórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXIb/",
+		"datum":"Regem Apostolórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["apostolus","matutinum","hymnus"],
+		"src":"https://nocturnale.marteo.fr/chant/EXAPEXH/",
+		"datum":[
+			"Ætérna Christi múnera,/Apostolórum glóriam,/Palmas et hymnos débitos/Lætis canámus méntibus.",
+			"Ecclesiárum Príncipes,/Belli triumpháles duces,/Cœléstis aulæ mílites,/Et vera mundi lúmina.",
+			"Devóta sanctórum fides,/Invícta spes credéntium,/Perfécta Christi cáritas/Mundi tyránnum cónterit.",
+			"In his Patérna glória,/In his triúmphat Fílius,/In his volúntas Spíritus,/Cœlum replétur gaúdio.",
+			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
+		]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN1A1/",
+		"datum":"In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","i-psalmus"],
+		"forwards-to":["psalmus-xviii"]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN1A2/",
+		"datum":"Clamavérunt justi, * et Dóminus exaudívit eos."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","ii-psalmus"],
+		"forwards-to":["psalmus-xxxiii"]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN1A3/",
+		"datum":"Constítues * eos príncipes super omnem terram: mémores erunt nóminis tui Dómine."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","iii-psalmus"],
+		"forwards-to":["psalmus-xliv"]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Epístola prima beáti Pauli Apóstoli ad Corínthios.",
+			"Sic nos exístimet homo ut minístros Christi: et dispensatóres mysteriórum Dei. Hic jam quǽritur inter dispensatóres, ut fidélis quis inveniátur. Mihi autem pro mínimo est ut a vobis júdicer, aut ab humáno die: sed neque meípsum júdico. Nihil enim mihi cónscius sum: sed non in hoc justificátus sum: qui autem júdicat me, Dóminus est. Ítaque nolíte ante tempus judicáre, quoadúsque véniat Dóminus: qui et illuminábit abscóndita tenebrárum, et manifestábit consília córdium; et tunc laus erit unicuíque a Deo."
+		]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN1R1/",
 		"datum":"Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:"
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-i","responsum"],
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i","responsum"],
 		"datum":"Estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-i","versum"],
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i","versum"],
 		"datum":"Dum lucem habétis, crédite in lucem, ut fílii lucis sitis."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-ii"],
+		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Hæc autem, fratres, transfigurávi in me et Apóllo, propter vos: ut in nobis discátis, ne supra quam scriptum est, unus advérsus álterum inflétur pro álio. Quis enim te discérnit? Quid autem habes, quod non accepísti? Si autem accepísti, quid gloriáris quasi non accéperis? Jam saturáti estis, jam dívites facti estis: sine nobis regnátis: et útinam regnétis, ut et nos vobíscum regnémus. Puto enim quod Deus nos Apóstolos novíssimos osténdit, tamquam morti destinátos: quia spectáculum facti sumus mundo, et Ángelis, et homínibus."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN1R2/",
 		"datum":"Tóllite jugum meum super vos, dicit Dóminus, et díscite a me, quia mitis sum, et húmilis corde:"
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-ii","responsum"],
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii","responsum"],
 		"datum":"Jugum enim meum suáve est, et onus meum leve."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-ii","versum"],
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii","versum"],
 		"datum":"Et inveniétis réquoe, animábus vestris."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-iii"],
+		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Nos stulti propter Christum, vos autem prudéntes in Christo: nos infírmi vos autem fortes: vos nóbiles, nos autem ignóbiles. Usque in hanc horam et esurímus, et sitímus, et nudi sumus, et cólaphis cǽdimur, et instábiles sumus, et laborámus operántes mánibus nostris: maledícimur, et benedícimus: persecutionem pátimur, et sustinémus: blasphemámur, et obsecrámus: tamquam purgaménta hujus mundi facti sumus, ómnium peripséma usque adhuc. Non ut confúndam vos, hæc scribo, sed ut fílios meos caríssimos móneo. Nam si decem míllia pædagogórum habeátis in Christo: sed non multos patres. Nam in Christo Jesu per Evangélium ego vos génui."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN1R3/",
 		"datum":"Dum steréritis ante reges et prǽsides, nolíte cogitáre quómodo quid loquámini:"
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-iii","responsum"],
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii","responsum"],
 		"datum":"Dábitur enim vobis in illa hora, quid loquámini."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-iii","versum"],
+		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii","versum"],
 		"datum":"Non enim vos estis qui loquímini: sed Spíritus Patris vestri, qui lóquitur in vobis."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-iv"],
+		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN2A1/",
+		"datum":"Príncipes populórum * congregáti sunt cum Deo Ábraham."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","i-psalmus"],
+		"forwards-to":["psalmus-xlvi"]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN2A2/",
+		"datum":"Dedísti hæreditátem * timéntibus nomen tuum Dómine."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","ii-psalmus"],
+		"forwards-to":["psalmus-lx"]
+	},
+	{
+		"tags":["apostolus","mtutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN2A3/",
+		"datum":"Annuntiavérunt * ópera Dei, et facta ejus intellexérunt."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","iii-psalmus"],
+		"forwards-to":["psalmus-lxiii"]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Constítues eos príncipes super omnem terram.","R. Mémores erunt nóminis tui Dómine."]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Gregórii Papæ.",
+			"Scriptum est: Spíritus Dómini ornávit cœlos. Ornaménta enim cœlórum sunt virtútes prædicántium. Quæ vidélicet ornaménta Paulus enúmerat, dicens: Álii datur per Spíritum sermo sapiéntiæ, álii sermo sciéntiæ secúndum eúmdem Spiritum, álteri fides in eódem Spíritu, álii grátia sanitátum in uno Spíritu, álii operátio virtútum, álii prophetía, álii discrétio spirítuum, álii génera linguárum, álii interpretátio sermónum. Hæc autem ómnia operátur unus atque idem Spíritus, dívidens síngulis prout vult."
+		]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN2R1/",
 		"datum":"Vidi conjúnctos viros, habéntes spléndidas vestes, et Angelus Dómini locútus est ad me, dicens:"
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-iv","responsum"],
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i","responsum"],
 		"datum":"Isti sunt viri sancti facti amíci Dei."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-iv","versum"],
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i","versum"],
 		"datum":"Vidi Angelum Dei fortem, volántem per médium cœlum, voce magna clamántem et dicéntem."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-v"],
+		"tags":["apostolus","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quot ergo sunt bona prædicántium, tot sunt ornaménta cœlórum. Hinc rursus scriptum est: Verbo Dómini cœli firmáti sunt. Verbum enim Dómini Fílius est Patris. Sed eósdem cœlos, vidélicet sanctos Apóstolos, ut tota simul sancta Trínitas ostendátur operáta, repénte de sancti Spíritus divinitáte adjúngitur: Et spíritu oris ejus omnis virtus eórum. Cœlórum ergo virtus de Spíritu sumpta est: quia mundi hujus potestátibus contraíre non præsúmerent, nisi eos sancti Spíritus fortitúdo solidásset. Quales namque doctóres sanctæ Ecclésiæ ante advéntum hujus Spíritus fúerit, scimus: et post advéntum illíus, cujus fortitúdinis facti sint, conspícimus."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN2R2/",
 		"datum":"Beáti estis, cum maledíxerint vobis hómines, et persecúti vos fúerint, díxerint omne malum advérsum vos, mentiéntes, propter me:"
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-v","responsum"],
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii","responsum"],
 		"datum":"Gaudéte et exsultáte, quóniam merces vestra copiósa est in cœlis."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-v","versum"],
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii","versum"],
 		"datum":"Cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-vi"],
+		"tags":["apostolus","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Certe iste ipse pastor Ecclésiæ, ad cujus sacratíssimum corpus sedémus, quantæ debilitátis, quantǽque formídinis ante advéntum Spíritus fúerit, ancílla ostiária requisíta dicat. Una enim mulíeris voce percússus, dum mori tímuit, vitam negávit. Et pensándum, quia cum comprehénsum Petrus negávit in terra, quem suspénsum latro conféssus est in cruce. Sed vir iste tantæ formídinis, qualis post advéntum Spíritus exsístat, audiámus. Fit convéntus magistrátus atque seniórum, cæsis denuntiátur Apóstolis, ne in nómine Jesu loqui débeant: Petrus magna auctoritáte respóndet: Obedíre opórtet Deo magis quam homínibus."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/APEXN2R3/",
 		"datum":"Isti sunt triumphatóres et amíci Dei, qui contemnéntes jussa príncipum, meruérunt prǽmia ætérna:"
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-vi","responsum"],
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii","responsum"],
 		"datum":"Modo coronántur, et accípiunt palmam."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-vi","versum"],
+		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii","versum"],
 		"datum":"Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
 	},
 	{
