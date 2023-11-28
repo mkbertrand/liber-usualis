@@ -187,6 +187,51 @@
 	},
 	{
 		"tags":["laudes","feria-ii","antiphona","antiphona-benedictus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=18855",
 		"datum":"Benedíctus * Dóminus Deus Ísraël."
+	},
+	{
+		"tags":["laudes","feria-iii","antiphona","antiphona-i"],
+		"datum":"Dele Dómine * iniquitátem meam."
+	},
+	{
+		"tags":["laudes","feria-iii","antiphona","antiphona-ii"],
+		"datum":"Salutáre * vultus mei, et Deus meus."
+	},
+	{
+		"tags":["laudes","feria-iii","ii-psalmus"],
+		"forwards-to":["psalmus-xlii"]
+	},
+	{
+		"tags":["laudes","feria-iii","antiphona","antiphona-iii"],
+		"datum":"Ad te de luce * vígilo Deus."
+	},
+	{
+		"tags":["laudes","feria-iii","antiphona","antiphona-iv"],
+		"datum":"Cunctis diébus * vitæ nostræ salvos nos fac Dómine."
+	},
+	{
+		"tags":["laudes","feria-iii","canticum"],
+		"forwards-to":["canticum-ezechiae"]
+	},
+	{
+		"tags":["laudes","feria-iii","antiphona","antiphona-v"],
+		"datum":"Omnes Ángeli ejus * laudáte Dóminum de cœlis."
+	},
+	{
+		"tags":["laudes","feria-iii","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=12157",
+		"datum":[
+			"Ales diéi núntius/Lucem propínquam prǽcinit:/Nos excitátor méntium/Jam Christus ad vitam vocat.",
+			"Auférte, clamat, léctulos,/Ægro sopóre désides:/Castíque, recti, ac sóbrii/Vigiláte, jam sum próximus.",
+			"Jesum ciámus vócibus,/Flentes, precántes, sóbrii:/Inténta supplicátio/Dormíre cor mundum vetat.",
+			"Tu Christe somnum díscute:/Tu rumpe noctis víncula:/Tu solve peccátum vetus,/Novúmque lumen íngere.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","feria-iii","antiphona","antiphona-benedictus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=11804",
+		"datum":"Eréxit nobis * Dóminus cornu salútis in domo David púeri sui."
 	}
 ]
