@@ -343,7 +343,13 @@ def kalendar(year: int) -> Kalendar:
 
     # Movable feasts with occurrence attribute
     for movable in movables:
-        matches = kal.match(movable['occurrence'], movable.get('excluded', set()))
+        matches = None
+        if type(movable['occurrence']) is list:
+            matches = []
+            for i in movable['occurrence']:
+                matches.extend(kal.match(i, movable.get('excluded', set())))
+        else:
+            matches = kal.match(movable['occurrence'], movable.get('excluded', set()))
         for match_date in set([i.date for i in matches]):
             kal.add_entry(match_date, movable['tags'])
 

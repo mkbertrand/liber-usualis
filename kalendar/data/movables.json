@@ -1,18 +1,56 @@
 [
 	{
-		"occurrence":["sabbatum","feria","per-annum"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
+		"occurrence":[
+			["adventus","feria"],
+			["per-annum","feria"],
+			["septuagesima","feria"]
+		],
+		"excluded":["hebdomada-passionis","hebdomada-sancta"],
+		"tags":["suffragium","de-cruce"]
 	},
 	{
-		"occurrence":["sabbatum","feria","paschalis"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
+		"occurrence":[
+			["adventus"],
+			["per-annum"],
+			["septuagesima"]
+		],
+		"excluded":["hebdomada-passionis","hebdomada-sancta"],
+		"tags":["suffragium","maria"]
 	},
 	{
-		"occurrence":["sabbatum","feria","septuagesima"],
-		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
+		"occurrence":[
+			["adventus"],
+			["per-annum"],
+			["septuagesima"]
+		],
+		"excluded":["hebdomada-passionis","hebdomada-sancta"],
+		"tags":["suffragium","joseph"]
 	},
 	{
-		"occurrence":["sabbatum","feria","sexagesima"],
+		"occurrence":[
+			["adventus"],
+			["per-annum"],
+			["septuagesima"]
+		],
+		"excluded":["hebdomada-passionis","hebdomada-sancta"],
+		"tags":["suffragium","apostoli"]
+	},
+	{
+		"occurrence":[
+			["adventus"],
+			["per-annum"],
+			["septuagesima"]
+		],
+		"excluded":["hebdomada-passionis","hebdomada-sancta"],
+		"tags":["suffragium","pro-pace"]
+	},
+	{
+		"occurrence":[
+			["sabbatum","feria","per-annum"],
+			["sabbatum","feria","paschalis"],
+			["sabbatum","feria","hebdomada-septuagesima"],
+			["sabbatum","feria","hebdomada-sexagesima"]
+		],
 		"tags":["bmv-sabbatum","sabbatum","simplex","maria"]
 	},
 	{
@@ -34,12 +72,10 @@
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	{
-		"occurrence":["post-epiphaniam"],
-		"excluded":["alma-redemptoris"],
-		"tags":["antiphona-bmv","ave-regina-coelorum"]
-	},
-	{
-		"occurrence":["septuagesima"],
+		"occurrence":[
+			["post-epiphaniam"],
+			["septuagesima"]
+		],
 		"excluded":["alma-redemptoris"],
 		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},

@@ -33,7 +33,7 @@ def taggedentry(day, tags):
             return i
 
 coincidencetable = load_data('kalendar/data/vesperal-coincidence.json')
-hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv'}
+hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv','suffragium'}
 hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
 excludedtags = {'commemoratum','fixum','temporale','tempus'}

@@ -1,5 +1,20 @@
 [
 	{
+		"indices":["suffragium"],
+		"response":[
+			{"indices":["duplex-i-classis"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-ii-classis"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-majus"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-minus"],"response":"omittendum","target":"a"}
+		]
+	},
+	{
+		"indices":["suffragium","de-cruce"],
+		"response":[
+			{"indices":["dominica"],"response":"omittendum","target":"a"}
+		]
+	},
+	{
 		"indices":["infra-octavam","dies-vii","ii-vesperae"],
 		"response":[
 			{"indices":["dies-octava","i-vesperae"],"response":"omittendum","target":"a"}

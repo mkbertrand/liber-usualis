@@ -490,5 +490,18 @@
 		"response":[
 			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
 		]
+	},
+	{
+		"indices":["suffragium"],
+		"response":[
+			{"indices":["duplex-i-classis"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-ii-classis"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-majus"],"response":"omittendum","target":"a"},
+			{"indices":["duplex-minus"],"response":"omittendum","target":"a"},
+			{"indices":["infra-octavam"],"response":"omittendum","target":"a"},
+			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
+			{"indices":["simplex"],"response":"commemorandum","target":"a"},
+			{"indices":["feria"],"response":"commemorandum","target":"a"}
+		]
 	}
 ]
