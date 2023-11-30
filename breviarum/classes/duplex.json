@@ -1,9 +1,9 @@
 [
 	{"tags":["prima","hymnus","duplex-minus"],"forwards-to":["prima","hymnus","semiduplex"]},
-	{"tags":["prima","preces","duplex-minus"],"datum":""},
+	{"tags":["prima","preces","duplex"],"datum":""},
 	{"tags":["tertia","hymnus","duplex-minus"],"forwards-to":["tertia","hymnus","semiduplex"]},
 	{"tags":["sexta","hymnus","duplex-minus"],"forwards-to":["sexta","hymnus","semiduplex"]},
 	{"tags":["nona","hymnus","duplex-minus"],"forwards-to":["nona","hymnus","semiduplex"]},
 	{"tags":["completorium","hymnus","duplex-minus"],"forwards-to":["completorium","hymnus","semiduplex"]},
-	{"tags":["completorium","preces","duplex-minus"],"datum":""}
+	{"tags":["completorium","preces","duplex"],"datum":""}
 ]

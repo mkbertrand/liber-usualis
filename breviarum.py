@@ -56,7 +56,7 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-implicationtable = load_data('tag-implications.json')
+implicationtable = load_data('kalendar/data/tag-implications.json')
 tagsorttable = load_data('kalendar/data/tag-sort.json')
 
 def prettyprint(j):
