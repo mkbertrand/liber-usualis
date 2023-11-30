@@ -1,0 +1,22 @@
+[
+	{
+		"tags":[
+			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
+			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2321",
+		"datum":"Sancta María succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemorationem."
+	},
+	{
+		"tags":["maria","suffragium","versiculus"],
+		"datum":["V. Ora pro nobis sancta Dei Génetrix.","R. Ut digni efficiámur promissiónibus Christi."]
+	},
+	{
+		"tags":["maria","collecta"],
+		"datum":"Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, + et gloriósa beátæ Maríæ semper Vírginis intercessióne, * a præsénti liberári tristítia, et ætérna pérfrui lætítia."
+	},
+	{
+		"tags":["maria","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	}
+]

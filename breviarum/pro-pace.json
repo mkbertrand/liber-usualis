@@ -1,0 +1,22 @@
+[
+	{
+		"tags":[
+			["pro-pace","vesperae","antiphona","antiphona-magnificat"],
+			["pro-pace","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=18858",
+		"datum":"Da pacem Dómine * in diébus nostris, quia non est álius, qui pugnet pro nobis, nisi tu Deus noster."
+	},
+	{
+		"tags":["pro-pace","versiculus"],
+		"datum":["V. Fiat pax in virtúte tua.","R. Et abundántia in túrribus tuis."]
+	},
+	{
+		"tags":["pro-pace","collecta"],
+		"datum":"Deus, a quo sancta desidéria, recta consília, et justa sunt ópera: da servis tuis illam, quam mundus dare non potest, pacem: ut et corda nostra mandátis tuis dédita, et hóstium subláta formídine, témpora sint tua protectióne tranquílla."
+	},
+	{
+		"tags":["pro-pace","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	}
+]

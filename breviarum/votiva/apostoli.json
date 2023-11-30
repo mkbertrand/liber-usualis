@@ -1,0 +1,28 @@
+[
+	{
+		"tags":["apostoli","vesperae","versiculus"],
+		"datum":["V. Constítues eos príncipes super omnem terram.","R. Mémores erunt nóminis tui Dómine."]
+	},
+	{
+		"tags":["apostoli","vesperae","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2974",
+		"datum":"Petrus Apóstolus, * et Paulus Doctor Géntium, ipsi nos docuérunt legem tuam Dómine."
+	},
+	{
+		"tags":["apostoli","collecta"],
+		"datum":"Deus, cujus déxtera beátum Petrum ambulántem in flúctibus, ne mergerétur, eréxit, et coapóstolum ejus Paulum, tértio naufragántem, de profúndo pélagi liberávit: exaúdi nos propítius, et concéde; ut ambórum méritis æternitátis glóriam consequámur:"
+	},
+	{
+		"tags":["apostoli","collecta","terminatio"],
+		"forwards-to":["terminatio","qui-vivis"]
+	},
+	{
+		"tags":["apostoli","laudes","versiculus"],
+		"datum":["V. In omnem terram exívit sonus eórum.","R. Et in fines orbis terræ verba eórum."]
+	},
+	{
+		"tags":["apostoli","laudes","antiphona","antiphona-benedictus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=12007",
+		"datum":"Gloriósi príncipes terræ, * quómodo in vita sua dilexérunt se, ita et in morte non sunt separáti."
+	}
+] 

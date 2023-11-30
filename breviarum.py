@@ -153,9 +153,14 @@ def unioncascades(item, cascades):
 
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, cascades, pile):
+
+    if item is None:
+        return 'Absens'
+
     if 'commemorationes' in item:
         ret = []
         commemorations = list(filter(lambda a : 'commemoratio' in a, cascades))
+        print(commemorations)
         for i in commemorations:
             probablepile = datamanage.getbreviarumfiles(defaultpile | i)
             ret.append(process({'formula','commemoratio'}, [i], probablepile))
@@ -166,8 +171,8 @@ def process(item, cascades, pile):
      # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set:
         item = search([pickcascades(item, cascades)], pile, priortags = item)
-    if item is None:
-        return 'Absens'
+        if item is None:
+            return 'Absens'
 
     # Next cascade (not to be used for the current search, but only for deeper searches
     nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades

@@ -8,7 +8,27 @@
 		"forwards-to":["terminatio","qui-vivis"]
 	},
 	{
+		"tags":["joseph","laudes","versiculus"],
+		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."]
+	},
+	{
 		"tags":["joseph","laudes","antiphona","antiphona-benedictus"],
-		"src":"",
-		"datum":"Joseph, fili David, * noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu sancto est."
+		"src":"https://gregobase.selapa.net/chant.php?id=12158",
+		"datum":"Ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph."
+	},
+	{
+		"tags":[
+			["joseph","ii-vesperae","vesperae","versiculus"],
+			["joseph","suffragium","vesperae","versiculus"]
+		],
+		"datum":["V. Glória et divítiæ in domo ejus.","R. Et justítia ejus manet in sǽculum sǽculi."]
+	},
+	{
+		"tags":[
+			["joseph","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+			["joseph","suffragium","vesperae","antiphona","antiphona-magnificat"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2431",
+		"datum":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam."
+	}
 ]
