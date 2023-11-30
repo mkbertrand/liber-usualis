@@ -4,8 +4,8 @@ import pathlib
 import json
 from datetime import datetime, date
 
-from datamanage import getyear, getbreviarumfile
-import breviarum
+from datamanage import getyear, getbreviariumfile
+import breviarium
 
 data_root = pathlib.Path(__file__).parent
 
@@ -42,7 +42,7 @@ def jsoninterp(j):
 
 @route('/<hour>')
 def office(hour):
-    return template('frontend/index.tpl',office=jsoninterp(breviarum.hour(hour, date.today())))
+    return template('frontend/index.tpl',office=jsoninterp(breviarium.hour(hour, date.today())))
 
 @route('/')
 def index():
@@ -79,7 +79,7 @@ def error404(error):
 @route('/forcereload')
 def forcereload():
     getyear.cache_clear()
-    getbreviarumfile.cache_clear()
+    getbreviariumfile.cache_clear()
     return 'Successfully dumped data caches.'
 
 run(host='localhost', port=8000)

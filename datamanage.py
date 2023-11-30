@@ -36,17 +36,17 @@ def getdate(day):
     return year[day]
 
 @functools.lru_cache(maxsize=32)
-def getbreviarumfile(query):
+def getbreviariumfile(query):
     logging.debug(f'Loading {query}')
     return load_data(query)
 
 # No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
-def getbreviarumfiles(queries):
+def getbreviariumfiles(queries):
     ret = []
-    for root,dirs,files in os.walk(data_root.joinpath('breviarum')):
+    for root,dirs,files in os.walk(data_root.joinpath('breviarium')):
         for i in files:
             if i[:-5] in queries:
-                got = getbreviarumfile(data_root.joinpath('breviarum').joinpath(root).joinpath(i))
+                got = getbreviariumfile(data_root.joinpath('breviarium').joinpath(root).joinpath(i))
                 added = []
                 for i in got:
                     if 'antiphona-invitatorium' in i['tags']:

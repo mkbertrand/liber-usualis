@@ -1,16 +1,16 @@
 from bottle import route, run, template
 
-import breviarum
+import breviarium
 from datetime import date
-from datamanage import getyear, getbreviarumfile
-@route('/breviarum/<hour>')
+from datamanage import getyear, getbreviariumfile
+@route('/breviarium/<hour>')
 def index(hour):
-    return breviarum.dump_data(breviarum.hour(hour, date.today()))
+    return breviarium.dump_data(breviarium.hour(hour, date.today()))
 
 @route('/forcereload')
 def forcereload():
     getyear.cache_clear()
-    getbreviarumfile.cache_clear()
+    getbreviariumfile.cache_clear()
     return 'Successfully dumped data caches.'
 
 run(host='localhost',port=8080)

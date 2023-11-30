@@ -162,10 +162,10 @@ def process(item, cascades, pile):
         commemorations = list(filter(lambda a : 'commemoratio' in a, cascades))
         print(commemorations)
         for i in commemorations:
-            probablepile = datamanage.getbreviarumfiles(defaultpile | i)
+            probablepile = datamanage.getbreviariumfiles(defaultpile | i)
             ret.append(process({'formula','commemoratio'}, [i], probablepile))
         if len(commemorations) != 0:
-            probablepile = datamanage.getbreviarumfiles(defaultpile | commemorations[-1])
+            probablepile = datamanage.getbreviariumfiles(defaultpile | commemorations[-1])
             ret.append(process({'collecta','terminatio'}, [commemorations[-1]], probablepile))
         return ret
      # None can sometimes be the result of a search and is expected, but indicates an absent item
@@ -186,7 +186,7 @@ def process(item, cascades, pile):
 
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, the provided pile may be insufficient so it is better to simply search a pile made from the specific relevant files
-        probableforwardpiles = datamanage.getbreviarumfiles(defaultpile | flattensetlist([pickcascades(item['forwards-to'], cascades)]))
+        probableforwardpiles = datamanage.getbreviariumfiles(defaultpile | flattensetlist([pickcascades(item['forwards-to'], cascades)]))
         return process(search([pickcascades(item['forwards-to'], cascades)], probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
 
     elif type(item['datum']) is list:
@@ -232,7 +232,7 @@ def hour(hour: str, day, forcedprimary=None):
             if j['tags'].issubset(i):
                 i |= j['implies']
 
-    pile = datamanage.getbreviarumfiles(defaultpile | flattensetlist(daytags) | {hour})
+    pile = datamanage.getbreviariumfiles(defaultpile | flattensetlist(daytags) | {hour})
 
     if forcedprimary:
         forcedprimary = set(forcedprimary.split(' '))
@@ -327,7 +327,7 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
 
     # Generate kalendar
-    defpile = datamanage.getbreviarumfiles(defaultpile)
+    defpile = datamanage.getbreviariumfiles(defaultpile)
     ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
     for i in args.hour.split(' '):
         ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimary=args.tags))
