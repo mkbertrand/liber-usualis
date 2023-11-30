@@ -180,7 +180,7 @@ def process(item, cascades, pile):
             return response
 
     elif 'forwards-to' in item:
-        # Since items in the Breviary may reference seemingly unrelated feasts, the provided pile may be insufficient so it is better to simply search a pile made from the specific relevant files
+        # Since items in the Breviary may reference seemingly unrelated feasts, process searches a pile made from relevant files
         probableforwardpiles = datamanage.getbreviariumfiles(defaultpile | flattensetlist([pickcascades(item['forwards-to'], cascades)]))
         return process(search([pickcascades(item['forwards-to'], cascades)], probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
 
@@ -200,19 +200,6 @@ def process(item, cascades, pile):
         item['datum'] = ret if len(ret) != 1 else ret[0]
 
     return item
-
-def replacetagrecurse(datum, target, item):
-    if type(datum) is str:
-        return datum
-    elif target.issubset(datum['tags']):
-        datum['datum'] = item
-    elif type(datum['datum']) is list:
-        for i in range(0, len(datum['datum'])):
-            ret = replacetagrecurse(datum['datum'][i], target, item)
-            if datum['datum'][i] != ret:
-                datum['datum'][i] = ret
-                return datum
-    return datum
 
 def getbytags(daytags, query):
     for i in daytags:
