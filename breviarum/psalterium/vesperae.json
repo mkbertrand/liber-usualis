@@ -29,20 +29,16 @@
 					["vesperae","antiphona","antiphona-v","repetita"]
 				]
 			},
-			{
-				"tags":["vesperae","ab-capitulo"],
-				"datum":[
-					["vesperae","capitulum"],
-					"Deo grátias.",
-					["vesperae","hymnus"],
-					["vesperae","versiculus"],
-					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-magnificat"]},
-					["magnificat"],
-					["gloria-psalmi"],
-					["vesperae","antiphona","antiphona-magnificat","repetita"]
-				]
-			},
+			["vesperae","capitulum"],
+			"Deo grátias.",
+			["vesperae","hymnus"],
+			["vesperae","versiculus"],
+			{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-magnificat"]},
+			["magnificat"],
+			["gloria-psalmi"],
+			["vesperae","antiphona","antiphona-magnificat","repetita"],
 			["collecta-primaria"],
+			["commemorationes"],
 			["dominus-vobiscum"],
 			["hora-major","vesperae","benedicamus-domino"],
 			["fidelium-animae"],
@@ -104,7 +100,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","versiculus"],
+		"tags":["vesperae","temporale","versiculus"],
 		"datum":["V. Dirigátur Dómine orátio mea.","R. Sicut incénsum in conspecto tuo."]
 	},
 	{
@@ -428,7 +424,7 @@
 			"Te mane laudum cármine,/Te deprecámur véspere;/Dignéris ut te súpplices/Laudémus inter cœlites.",
 			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.",
 			"Amen."
-		]	
+		]
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","versiculus"],

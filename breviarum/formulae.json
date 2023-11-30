@@ -249,21 +249,21 @@
 		"datum":"Per eúmdem Christum Dóminum nostrum. R. Amen."
 	},
 	{
-		"tags":["laudes","commemoratio"],
+		"tags":["formula","laudes","commemoratio"],
 		"datum":[
-			["antiphona","antiphona-benedictus"],
-			["laudes","versiculus"],
+			["commemoratio","antiphona","antiphona-benedictus"],
+			["commemoratio","laudes","versiculus"],
 			"Orémus.",
-			["collecta"]
+			["commemoratio","collecta"]
 		]
 	},
 	{
-		"tags":["vesperae","commemoratio"],
+		"tags":["formula","vesperae","commemoratio"],
 		"datum":[
-			["antiphona","antiphona-magnificat"],
-			["vesperae","versiculus"],
+			["commemoratio","antiphona","antiphona-magnificat"],
+			["commemoratio","vesperae","versiculus"],
 			"Orémus.",
-			["collecta"]
+			["commemoratio","collecta"]
 		]
 	},
 	{

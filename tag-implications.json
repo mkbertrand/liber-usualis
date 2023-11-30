@@ -26,5 +26,9 @@
 	{
 		"tags":["feria"],
 		"implies":["temporale"]
+	},
+	{
+		"tags":["commemoratum"],
+		"implies":["commemoratio"]
 	}
 ]
