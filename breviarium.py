@@ -144,13 +144,6 @@ def pickcascades(search, cascades):
                     ret |= cascade
         return ret
 
-def unioncascades(item, cascades):
-    if cascades is None:
-        yield item
-    else:
-        for cascade in cascades:
-            yield item | cascade
-
 # None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, cascades, pile):
 
@@ -175,7 +168,7 @@ def process(item, cascades, pile):
             return 'Absens'
 
     # Next cascade (not to be used for the current search, but only for deeper searches
-    nextcascades = list(unioncascades(item['cascade'], cascades)) if 'cascade' in item else cascades
+    nextcascades = [i | cascades for i in item['cascades']] if 'cascade' in item and cascades else cascades
 
     if 'from-tags' in item:
         response = process(search([pickcascades(item['from-tags'], cascades)], pile, priortags = item['from-tags']), nextcascades, pile)
