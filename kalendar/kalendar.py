@@ -390,7 +390,11 @@ def kalendar(year: int) -> Kalendar:
     excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
 
     def perform_action(instruction, day, target):
-        if instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
+        if instruction['response'] == 'combinandum':
+           target[0] |= target[1]
+           kal[day].remove(target[1])
+           return [day]
+        elif instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
             target.add('commemoratum')
             target.add('temporale')
             return [day]
@@ -437,6 +441,8 @@ def kalendar(year: int) -> Kalendar:
                                 target = i
                                 if 'target' in j and j['target'] == 'b':
                                     target = k
+                                elif 'target' in j and j['target'] == 'ab':
+                                    target = [i, k]
                                 for modifiedday in perform_action(j, day, target):
                                         resolve(modifiedday)
                                 return

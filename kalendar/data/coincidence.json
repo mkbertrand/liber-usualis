@@ -38,7 +38,7 @@
 	{
 		"indices":["quattuor-temporum-pentecostes"],
 		"response":[
-			{"indices":["pentecostes"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["pentecostes"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
@@ -147,15 +147,15 @@
 	{
 		"indices":["nativitas","vigilia"],
 		"response":[
-			{"indices":["dominica"],"response":"temporale-faciendum","target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["dominica"],"response":"combinandum","target":"ab"},
+			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
 		"indices":["epiphania","vigilia"],
 		"response":[
-			{"indices":["dominica"],"response":"temporale-faciendum","target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["dominica"],"response":"combinandum","target":"ab"},
+			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
@@ -163,7 +163,7 @@
 		"response":[
 			{"indices":["dominica"],"response":"translandum","target":"a","movement":"-1"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
@@ -459,7 +459,7 @@
 			{"indices":["bmv-sabbatum"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"commemorandum","target":"b"},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
@@ -472,7 +472,7 @@
 	{
 		"indices":["rogatio"],
 		"response":[
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
