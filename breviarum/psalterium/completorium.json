@@ -2,7 +2,7 @@
 	{
 		"tags":["completorium", "hora"],
 		"datum":[
-			{"from-tags":["formula","lectionis"],"cascade":["completorium"]},
+			["formula","lectionis"],
 			["adjutorium-nostrum"],
 			["pater-noster-secreta"],
 			["confiteor"],
@@ -24,7 +24,7 @@
 			["completorium","antiphona","repetita"],
 			["completorium","hymnus"],
 			["completorium","ordinarium","capitulum"],
-			"Deo grátias.",
+			"R. Deo grátias.",
 			["formula","responsorium-breve"],
 			["completorium","versiculus"],
 			["completorium","antiphona","antiphona-nunc-dimittis","intonata"],

@@ -26,7 +26,7 @@ def jsoninterp(j):
                     versus = obj['datum'][4]['datum'] if 'datum' in obj['datum'][2] else 'Absens'
                     return recurse([
                         f'R. br. {incipit} * {responsum}',
-                        f'V. {incipit} * {responsum}',
+                        f'R. {incipit} * {responsum}',
                         f'V. {versus}',
                         f'R. {responsum}',
                         f'V. {obj["datum"][6]}',
