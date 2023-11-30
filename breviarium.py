@@ -39,8 +39,8 @@ def load_data(p: str):
 
 def dump_data(j):
 
-    # JSON doesn't support sets. Recursively find and replace anything that
-    # looks like a list of tags with a set of tags.
+    # JSON doesn't like sets, so turn sets back into lists for JSON encoding.
+
     def recurse(obj, key=None):
         match obj:
             case dict():
@@ -102,19 +102,21 @@ def anysearchmultiple(queries, pile):
         ret.extend(list(anysearch(i, pile)))
     return ret
 
-def itemvalue(tags):
+def itemvalue(tags, table):
     val = 0
-    for i in range(0, len(tagsorttable)):
-        val |= tagsorttable[i].issubset(tags) << (len(tagsorttable) - i - 1)
+    for i in range(0, len(tagsorttable[table])):
+        include = set(filter(lambda a: a[0] != '!', tagsorttable[table][i]))
+        exclude = set([i[1:] for i in filter(lambda a: a[0] == '!', tagsorttable[table][i])])
+        val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(tagsorttable[table]) - i - 1)
     return val
 
 def search(queries, pile, multipleresults = False, multipleresultssort = None, priortags = None):
-    result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: itemvalue(a['tags']), reverse=True))
+    result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: itemvalue(a['tags'], 'precedence'), reverse=True))
     if len(result) == 0:
         warnings.warn(f'0 tags found for queries {list(queries)}')
         return None
-    bestvalue = itemvalue(result[0]['tags'])
-    result = list(filter(lambda a: itemvalue(a['tags']) == bestvalue, result))
+    bestvalue = itemvalue(result[0]['tags'], 'precedence')
+    result = list(filter(lambda a: itemvalue(a['tags'], 'precedence') == bestvalue, result))
     if len(result) == 1:
         return result[0]
     result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
@@ -144,15 +146,15 @@ def pickcascades(search, cascades):
                     ret |= cascade
         return ret
 
-# None handling is included so that hour searches with tagsets that will produce only partial hours (EG lectionary searches, searches for Vigils, etc) can be generated and used
 def process(item, cascades, pile):
 
     if item is None:
         return 'Absens'
 
+    # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
     if 'commemorationes' in item:
         ret = []
-        commemorations = list(filter(lambda a : 'commemoratio' in a, cascades))
+        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, cascades)), key=lambda a:itemvalue(a, 'rank'), reverse=True)
         print(commemorations)
         for i in commemorations:
             probablepile = datamanage.getbreviariumfiles(defaultpile | i)
@@ -168,7 +170,7 @@ def process(item, cascades, pile):
             return 'Absens'
 
     # Next cascade (not to be used for the current search, but only for deeper searches
-    nextcascades = [i | cascades for i in item['cascades']] if 'cascade' in item and cascades else cascades
+    nextcascades = [i | item['cascade'] for i in cascades] if 'cascade' in item and cascades else cascades
 
     if 'from-tags' in item:
         response = process(search([pickcascades(item['from-tags'], cascades)], pile, priortags = item['from-tags']), nextcascades, pile)
