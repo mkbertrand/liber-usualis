@@ -387,7 +387,7 @@ def kalendar(year: int) -> Kalendar:
             omittedepiphanyentry.discard('semiduplex')
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
-    excludedtags = {'commemoratum','fixum','temporale','tempus'}
+    excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
 
     def perform_action(instruction, day, target):
         if instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
