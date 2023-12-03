@@ -129,6 +129,18 @@
 		"datum":["V. Dóminus regnávit, decórem índuit.","R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte."]
 	},
 	{
+		"tags":["laudes","i-psalmus"],
+		"forwards-to":["psalmus-cxii"]
+	},
+	{
+		"tags":["laudes","ii-psalmus"],
+		"forwards-to":["psalmus-cxix"]
+	},
+	{
+		"tags":["laudes","canticum"],
+		"forwards-to":["trium-puerorum"]
+	},
+	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-i"],
 		"datum":"Miserére * mei Deus."
 	},
