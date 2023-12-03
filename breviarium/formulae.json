@@ -80,7 +80,7 @@
 		"forwards-to":["antiphona"]
 	},
 	{
-		"tags":["te-deum"],
+		"tags":["hymnus","te-deum"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2305",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
@@ -115,7 +115,7 @@
 		]
 	},
 	{
-		"tags":["te-deum","solemnis"],
+		"tags":["hymnus","te-deum","solemnis"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2809",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
@@ -203,6 +203,18 @@
 			["responsorium","responsum"],
 			"Glória Patri, et Fílio, et Spirítui Sancto.",
 			["responsorium","responsum"]
+		]
+	},
+	{
+		"tags":["formula","responsorium","gloria","duplex-responsum"],
+		"datum":[
+			["responsorium","incipit"],
+			["responsorium","responsum-i"],
+			["responsorium","responsum-ii"],
+			["responsorium","versus"],
+			["responsorium","responsum-i"],
+			"Glória Patri, et Fílio, et Spirítui Sancto.",
+			["responsorium","responsum-ii"]
 		]
 	},
 	{
