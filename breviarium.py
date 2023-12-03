@@ -160,7 +160,7 @@ def process(item, cascades, pile):
             ret.append(process({'formula','commemoratio'}, [i], probablepile))
         if len(commemorations) != 0:
             probablepile = datamanage.getbreviariumfiles(defaultpile | commemorations[-1])
-            ret.append(process({'collecta','terminatio'}, [commemorations[-1]], probablepile))
+            ret.append(process({'collecta','terminatio','commemoratio'}, [commemorations[-1]], probablepile))
         return ret
      # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set:
