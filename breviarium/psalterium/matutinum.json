@@ -206,23 +206,142 @@
 		"tags":["lectiones"],
 		"datum":[
 			{"from-tags":["formula","lectionis"],"cascade":["lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","responsorium","responsorium-i"],"cascade":["responsorium-i"]},
 			{"from-tags":["formula","lectionis"],"cascade":["lectio-ii"]},
-			{"from-tags":["formula","responsorium"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","responsorium","responsorium-ii"],"cascade":["responsorium-ii"]},
 			{"from-tags":["formula","lectionis"],"cascade":["lectio-iii"]},
-			{"from-tags":["formula","responsorium","gloria"],"cascade":["responsorium-iii"]}
+			{"from-tags":["formula","responsorium","responsorium-iii","gloria"],"cascade":["responsorium-iii"]}
 		]
 	},
 	{
 		"tags":["lectiones","te-deum"],
 		"datum":[
 			{"from-tags":["formula","lectionis"],"cascade":["lectio-i"]},
-			{"from-tags":["formula","responsorium"],"cascade":["responsorium-i"]},
+			{"from-tags":["formula","responsorium","responsorium-i"],"cascade":["responsorium-i"]},
 			{"from-tags":["formula","lectionis"],"cascade":["lectio-ii"]},
-			{"from-tags":["formula","responsorium","gloria"],"cascade":["responsorium-ii"]},
+			{"from-tags":["formula","responsorium","responsorium-ii","gloria"],"cascade":["responsorium-ii"]},
 			{"from-tags":["formula","lectionis"],"cascade":["lectio-iii"]},
-			["te-deum"]
+			["hymnus","te-deum"]
 		]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Servíte Dómino * in timóre: et exsultáte ei cum tremóre."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","i-psalmus"],
+		"forwards-to":["psalmus-i"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","ii-psalmus"],
+		"forwards-to":["psalmus-ii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","iii-psalmus"],
+		"forwards-to":["psalmus-iii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","iv-psalmus"],
+		"forwards-to":["psalmus-vi"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Deus judex justus, * fortis et longánimis: numquid irascétur per síngulos dies?"
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","v-psalmus"],
+		"forwards-to":["psalmus-vii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","vi-psalmus"],
+		"forwards-to":["psalmus-viii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","vii-psalmus"],
+		"forwards-to":["psalmus-ix"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","viii-psalmus"],
+		"forwards-to":["psalmus-x"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Tu Dómine * servábis nos: et custódies nos."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","ix-psalmus"],
+		"forwards-to":["psalmus-xi"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","x-psalmus"],
+		"forwards-to":["psalmus-xii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","xi-psalmus"],
+		"forwards-to":["psalmus-xiii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","xii-psalmus"],
+		"forwards-to":["psalmus-xiv"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-i","versiculus"],
+		"datum":["V. Memor fui nocte nóminis tui Dómine.","R. Et custodívi legem tuam."]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Bonórum meórum * non índiges, in te sperávi, consérva me Dómine."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","i-psalmus"],
+		"forwards-to":["psalmus-xv"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Propter verba * labiórum tuórum ego custodívi vias duras."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","ii-psalmus"],
+		"forwards-to":["psalmus-xvi"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Díligam te * Dómine virtus mea."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","iii-psalmus"],
+		"forwards-to":["psalmus-xvii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","versiculus"],
+		"datum":["V. Quóniam tu illúminas lucérnam meam Dómine.","R. Deus meus illúmina ténebras meas."]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Non sunt loquélæ, * neque sermónes, quorum non audiántur voces eórum."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","i-psalmus"],
+		"forwards-to":["psalmus-xviii"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Exaúdiat * te Dóminus in die tribulatiónis."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","ii-psalmus"],
+		"forwards-to":["psalmus-xix"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Dómine * in virtúte tua lætábitur rex."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","iii-psalmus"],
+		"forwards-to":["psalmus-xx"]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","versiculus"],
+		"datum":["V. Exaltáre Dómine in virtúte tua.","R. Cantábimus et psallémus virtútes tuas."]
 	}
-	
 ]

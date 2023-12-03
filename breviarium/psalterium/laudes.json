@@ -54,7 +54,7 @@
 	},
 	{
 
-		"tags":["laudes","dominica","psalmodia"],
+		"tags":["laudes","dominica","per-annum","psalmodia"],
 		"datum":[
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-i"]},
 			["psalmus-xcii"],
@@ -129,7 +129,7 @@
 		"datum":["V. Dóminus regnávit, decórem índuit.","R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte."]
 	},
 	{
-		"tags":["laudes","feria-ii","antiphona","antiphona-i"],
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-i"],
 		"datum":"Miserére * mei Deus."
 	},
 	{
@@ -137,30 +137,30 @@
 		"forwards-to":["psalmus-l"]
 	},
 	{
-		"tags":["laudes","feria-ii","antiphona","antiphona-ii"],
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-ii"],
 		"datum":"Intéllige * clamórem meum Dómine."
 	},
 	{
-		"tags":["laudes","feria-ii","ii-psalmus"],
+		"tags":["laudes","feria","feria-ii","ii-psalmus"],
 		"forwards-to":["psalmus-v"]
 	},
 	{
-		"tags":["laudes","feria-ii","antiphona","antiphona-iii"],
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-iii"],
 		"datum":"Deus Deus meus * ad te de luce vígilo."
 	},
 	{
-		"tags":["laudes","feria-ii","antiphona","antiphona-iv"],
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-iv"],
 		"datum":"Convérsus est * furur tuus Dómine, et consolátus es me."
 	},
 	{
-		"tags":["laudes","feria-ii","canticum"],
+		"tags":["laudes","feria","feria-ii","canticum"],
 		"datum":[
 			["canticum-isaiae-prophetae"],
 			["gloria-psalmi"]
 		]
 	},
 	{
-		"tags":["laudes","feria-ii","antiphona","antiphona-v"],
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-v"],
 		"datum":"Laudáte * Dóminum de cœlis."
 	},
 	{
@@ -168,7 +168,7 @@
 		"datum":"Nox præcéssit, dies autem appropinquávit. Abjiciámus ergo ópera tenebrárum, et induámur arma lucis. Sicut in die honéste ambulémus."
 	},
 	{
-		"tags":["laudes","feria-ii","hymnus"],
+		"tags":["laudes","feria","feria-ii","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=15781",
 		"datum":[
 			"Splendor patérnæ glóriæ,/De luce lucem próferens,/Lux lucis, et fons lúminis,/Diem dies illúminans:",
@@ -187,40 +187,40 @@
 		"datum":["V. Repléti sumus mane misericórdia tua.","R. Exsultávimus, et delectáti sumus."]
 	},
 	{
-		"tags":["laudes","feria-ii","antiphona","antiphona-benedictus"],
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-benedictus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=18855",
 		"datum":"Benedíctus * Dóminus Deus Ísraël."
 	},
 	{
-		"tags":["laudes","feria-iii","antiphona","antiphona-i"],
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-i"],
 		"datum":"Dele Dómine * iniquitátem meam."
 	},
 	{
-		"tags":["laudes","feria-iii","antiphona","antiphona-ii"],
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-ii"],
 		"datum":"Salutáre * vultus mei, et Deus meus."
 	},
 	{
-		"tags":["laudes","feria-iii","ii-psalmus"],
+		"tags":["laudes","feria","feria-iii","ii-psalmus"],
 		"forwards-to":["psalmus-xlii"]
 	},
 	{
-		"tags":["laudes","feria-iii","antiphona","antiphona-iii"],
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-iii"],
 		"datum":"Ad te de luce * vígilo Deus."
 	},
 	{
-		"tags":["laudes","feria-iii","antiphona","antiphona-iv"],
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-iv"],
 		"datum":"Cunctis diébus * vitæ nostræ salvos nos fac Dómine."
 	},
 	{
-		"tags":["laudes","feria-iii","canticum"],
+		"tags":["laudes","feria","feria-iii","canticum"],
 		"forwards-to":["canticum-ezechiae"]
 	},
 	{
-		"tags":["laudes","feria-iii","antiphona","antiphona-v"],
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-v"],
 		"datum":"Omnes Ángeli ejus * laudáte Dóminum de cœlis."
 	},
 	{
-		"tags":["laudes","feria-iii","hymnus"],
+		"tags":["laudes","feria","feria-iii","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=12157",
 		"datum":[
 			"Ales diéi núntius/Lucem propínquam prǽcinit:/Nos excitátor méntium/Jam Christus ad vitam vocat.",
@@ -231,8 +231,20 @@
 		]
 	},
 	{
-		"tags":["laudes","feria-iii","antiphona","antiphona-benedictus"],
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-benedictus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=11804",
 		"datum":"Eréxit nobis * Dóminus cornu salútis in domo David púeri sui."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-i"],
+		"datum":"Ámplius lava me * Dómine ab injustítia mea."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-ii"],
+		"datum":"Te decet * hymnus Deus in Sion."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","ii-psalmus"],
+		"forwards-to":["psalmus-lxiv"]
 	}
 ]
