@@ -33,6 +33,63 @@
 		]
 	},
 	{
+		"tags":["adventus","dominica","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N1A1/",
+		"datum":"Véniet ecce Rex * excélsus cum potestáte magna ad salvándas Gentes, allelúja."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N1A2/",
+		"datum":"Confortáte * manus dissolútas: confortámini, dícite, Ecce Deus noster véniet, et salvábit nos, allelúja."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N1A3/",
+		"datum":"Gaudéte omnes, * et lætámini: ecce quia véniet Dóminus ultiónis, addúcet retributiónem: ipse véniet, et salvábit nos."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Ex Sion spécies decóris ejus.","R. Deus noster maniféste véniet."]
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N2A1/",
+		"datum":"Gaude et lætáre * fília Jerúsalem: ecce Rex tuus véniet tibi: Sion noli timére, quia cito véniet salus tua."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N2A2/",
+		"datum":"Rex noster * advéniet Christus, quem Joánnes prædicávit Agnum esse ventúrum."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N2A3/",
+		"datum":"Ecce vénio * cito, et merces mea mecum est, dicit Dóminus: dare unicuíque secúndum ópera sua."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Emítte Agnum Dómine Dominatórem terræ.","R. De Petra desérti ad montem fíliæ Sion."]
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N3A1/",
+		"datum":"Gábriel Ángelus * locútus est Maríæ, dicens: Ave grátia plena, Dóminus tecum: benedícta tu inter mulíeres."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N3A2/",
+		"datum":"María dixit * Putas qualis est ista salutátio: quia conturbáta est ánima mea, et quia paritúra sum Regem, qui claustrum virginitátis meæ non violábit?"
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"https://nocturnale.marteo.fr/chant/A1F1N3A3/",
+		"datum":"In advéntu * summi Regis mundéntur corda hóminum, ut digne ambulémus in occúrsum illíus: quia ecce véniet, et non tardábit."
+	},
+	{
+		"tags":["adventus","dominica","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Egrediétur Dóminus de loco sancto suo.","R. Véniet, ut salvet pópulum suum."]
+	},
+	{
 		"tags":["adventus","laudes","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=11919",
 		"datum":[
@@ -42,6 +99,11 @@
 			"Ut, cum secúndo fúlserit,/Metúque mundum cínxerit,/Non pro reátu púniat,/Sed nos pius tunc prótegat.",
 			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.","Amen."
 		]
+	},
+	{
+		"tags":["adventus","prima","responsorium-breve","incipit"],
+		"src":"https://gregobase.selapa.net/chant.php?id=13127",
+		"datum":"Christe Fili Dei vivi,"
 	},
 	{
 		"tags":["adventus","prima","responsorium-breve","versus"],

@@ -1,0 +1,25 @@
+[
+	{
+		"tags":["caecilia","virgo","martyr","antiphona","antiphona-i"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2184",
+		"datum":"Cantántibus órganis * Cæcília Dómino decantábat, dicens: Fiat cor meum immaculátum, ut non confúndar."
+	},
+	{
+		"tags":["caecilia","virgo","martyr","antiphona","antiphona-ii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2554",
+		"datum":"Valeriánus * in cubículo Cæcíliam cum Ángelo orántem invénit"
+	},
+	{
+		"tags":["caecilia","virgo","martyr","antiphona","antiphona-iii"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2402",
+		"datum":"Cæcília fámula tua, * Domine, quasi apis tibi argumentósa desérvit."
+	},
+	{
+		"tags":["caecilia","virgo","martyr","collecta"],
+		"datum":"Deus, qui nos ánnua beátæ Cæcíliæ Vírginis et Mártyris tuæ solemnitáte lætíficas: da, ut quam venerámur offício, étiam piæ conversatiónis sequámur exémplo."
+	},
+	{
+		"tags":["caecilia","virgo","martyr","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	}
+]
