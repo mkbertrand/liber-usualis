@@ -42,7 +42,10 @@ def jsoninterp(j):
 
 @route('/<hour>')
 def office(hour):
-    return template('frontend/index.tpl',office=jsoninterp(breviarium.hour(hour, date.today())))
+    ret = ''
+    for i in hour.split(' '):
+        ret += jsoninterp(breviarium.hour(i, date.today()))
+    return template('frontend/index.tpl',office=ret)
 
 @route('/')
 def index():
