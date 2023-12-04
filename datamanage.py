@@ -49,11 +49,20 @@ def getbreviariumfiles(queries):
                 got = getbreviariumfile(data_root.joinpath('breviarium').joinpath(root).joinpath(i))
                 added = []
                 for i in got:
+
                     if 'antiphona-invitatorium' in i['tags']:
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('pars')
                         icopy['datum'] = icopy['datum'].split('*')[1].lstrip()
                         added.append(icopy)
+
+                    elif not type(i['tags']) is set and 'antiphona-invitatorium' in i['tags'][0]:
+                        icopy = copy.deepcopy(i)
+                        for j in icopy['tags']:
+                            j.add('pars')
+                        icopy['datum'] = icopy['datum'].split('*')[1].lstrip()
+                        added.append(icopy)
+
                     elif 'antiphona' in i['tags']:
                         icopy = copy.deepcopy(i)
                         icopy['tags'].add('intonata')
@@ -65,6 +74,21 @@ def getbreviariumfiles(queries):
                         icopy['tags'].add('repetita')
                         icopy['datum'] = icopy['datum'].split('* ')[0] + icopy['datum'].split('* ')[1]
                         added.append(icopy)
+
+                    elif type(i['tags']) is list and 'antiphona' in i['tags'][0]:
+                        icopy = copy.deepcopy(i)
+                        for j in icopy['tags']:
+                            j.add('intonata')
+                        icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
+                        if icopy['datum'][-1] not in ['.',',','?','!',':',';']:
+                            icopy['datum'] += '.'
+                        added.append(icopy)
+                        icopy = copy.deepcopy(i)
+                        for j in icopy['tags']:
+                            j.add('repetita')
+                        icopy['datum'] = icopy['datum'].split('* ')[0] + icopy['datum'].split('* ')[1]
+                        added.append(icopy)
+
                 ret.extend(got)
                 ret.extend(added)
 

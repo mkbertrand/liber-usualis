@@ -154,7 +154,6 @@ def process(item, cascades, pile):
     if 'commemorationes' in item:
         ret = []
         commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, cascades)), key=lambda a:itemvalue(a, 'rank'), reverse=True)
-        print(commemorations)
         for i in commemorations:
             probablepile = datamanage.getbreviariumfiles(defaultpile | i)
             ret.append(process({'formula','commemoratio'}, [i], probablepile))
