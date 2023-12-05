@@ -12,6 +12,7 @@
 			["benedictus"],
 			["gloria-psalmi"],
 			["laudes","antiphona","antiphona-benedictus","repetita"],
+			["preces"],
 			["collecta-primaria"],
 			["commemorationes"],
 			["dominus-vobiscum"],
@@ -204,6 +205,54 @@
 		"datum":"Benedíctus * Dóminus Deus Ísraël."
 	},
 	{
+		"tags":["laudes","preces"],
+		"datum":""
+	},
+	{
+		"tags":["laudes","feria","poenitentialis","preces"],
+		"datum":[
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			"Pater noster.",
+			"Qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Ego dixi: Dómine miserére mei.",
+			"R. Sana ánimam meam, quia peccávi tibi.",
+			"V. Convértere Dómine úsquequo.",
+			"R. Et deprecábilis esto super servos tuos.",
+			"V. Fiat misericórdia tua Dómine super nos.",
+			"R. Quemádmodum sperávimus in te.",
+			"V. Sacerdótes tui induántur justítiam.",
+			"R. Et sancti tui exsúltent.",
+			"V. Dómine salvum fac regem.",
+			"R. Et exaúdi nos in die, qua invocavérimus te.",
+			"V. Salvum fac pópulum tuum Dómine, et bénedic hæreditáti tuæ.",
+			"R. Et rege eos, et extólle illos usque in ætérnum.",
+			"V. Meménto congregatiónis tuæ.",
+			"R. Quam possedísti ab inítio.",
+			"V. Fiat pax in virtúte tua.",
+			"R. Et abundántia in túrribus tuis.",
+			"V. Orémus pro fidélibus defúnctis.",
+			"R. Réquiem ætérnam dona eis Dómine, et lux perpétua lúceat eis.",
+			"V. Requiéscant in pace.",
+			"R. Amen.",
+			"V. Pro frátribus nostris abséntibus.",
+			"R. Salvos fac servos tuos, Deus meus, sperántes in te.",
+			"V. Pro afflíctis et captívis.",
+			"R. Líbera eos Deus Ísraël ex ómnibus tribulatiónibus suis.",
+			"V. Mitte eis Dómine auxílium de sancto.",
+			"R. Et de Sion tuére eos.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat.",
+			["psalmus-cxxix"],
+			["gloria-psalmi"],
+			"V. Dómine Deus virtútum convérte nos.",
+			"R. Et osténde fáciem tuam, et salvi érimus.",
+			"V. Exsúrge Christe, ádjuva nos.",
+			"R. Et líbera nos propter nomen tuum.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-i"],
 		"datum":"Dele Dómine * iniquitátem meam."
 	},
@@ -225,7 +274,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","canticum"],
-		"forwards-to":["canticum-ezechiae"]
+		"datum":[
+			["canticum-ezechiae"],
+			["gloria-psalmi"]
+		]
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-v"],
