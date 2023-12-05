@@ -223,6 +223,7 @@ def hour(hour: str, day, forcedprimary=None):
         for i in daytags:
             if forcedprimary.issubset(i):
                 i.add('primarium') 
+                i.remove('commemoratio')
     primary = getbytags(daytags, 'primarium')
     if primary is None and forcedprimary:
         raise RuntimeError('Provided tag(s) not found') 
