@@ -9,7 +9,7 @@ import re
 from typing import NamedTuple, Optional, Self, Set
 
 from kalendar.pascha import geteaster, nextsunday
-
+from kalendar.dies import menses, mensum, numerals
 
 data_root = pathlib.Path(__file__).parent.joinpath("data")
 
@@ -36,17 +36,12 @@ paschalcycle = load_data('paschal.json')
 adventcycle = load_data('advent.json')
 nativitycycle = load_data('nativity.json')
 movables = load_data('movables.json')
-months = load_data('summer-autumn.json')
 sanctoral = load_data('kalendar.json')
 coincidencetable = load_data('coincidence.json')
 
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
 octavevigiltags = {'habens-octavam','habens-vigiliam','vigilia-excepta','incipit-libri'}
-lowernumerals = ['i','ii','iii','iv','v']
-numerals = ['II','III','IV','V','VI','VII']
-menses = ['januarius','februarius','martius','aprilis','majus','junius','julius','augustus','september','october','november','december']
-mensum = ['januarii','februarii','martii','aprilis','maji','junii','julii','augusti','septembris','octobris','novembris','decembris']
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
 
 class SearchResult(NamedTuple):
@@ -212,7 +207,7 @@ def kalendar(year: int) -> Kalendar:
                 if not (kalends + timedelta(weeks=j, days=k)).year == year:
                     continue
                 kal[kalends + timedelta(weeks=j, days=k)][0].add(feriae[k])
-                kal[kalends + timedelta(weeks=j, days=k)][0].add(f'hebdomada-{lowernumerals[j]}-{mensum[(i - 1) % 12]}')
+                kal[kalends + timedelta(weeks=j, days=k)][0].add(f'hebdomada-{numerals[j]}-{mensum[(i - 1) % 12]}')
             j += 1
         if i == 12 and nextkalends.year == year:
             for j in range(0,7):
@@ -274,29 +269,9 @@ def kalendar(year: int) -> Kalendar:
     currday = 2
     for i in range(0, 6):
         if not date(year, 1, 7 + i) == epiphanysunday:
-            kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 2].lower()})
+            kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 1]})
             currday += 1
     kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus'})
-
-    """# Autumnal Weeks
-    for i in range(8, 11):
-        kalends = sundaynear(date(year, i, 1))
-        # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
-        nextkalends = sundaynear(date(year, i + 1, 1))
-        month = months[["augustus","september","october","november"][i - 8]]
-        j = 0
-        while kalends + timedelta(weeks=j) != nextkalends:
-            for k in range(0,7):
-                kal.add_entry(kalends + timedelta(weeks=j, days=k), month[j][k]['tags'])
-            j += 1
-    kalends = sundaynear(date(year, 11, 1))
-    # Also works for November - December since Advent begins on the nearest Sunday to the Kalends of December
-    j = 0
-    while kalends + timedelta(weeks=j) != adventstart:
-        for k in range(0,7):
-            kal.add_entry(kalends + timedelta(weeks=j, days=k), months["november"][j][k]['tags'])
-        j += 1
-    """
 
     # Saints, and also handles leap years
     leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
@@ -319,7 +294,7 @@ def kalendar(year: int) -> Kalendar:
                     date0 = ent_date + timedelta(days=k)
                     if 'quadragesima' in kal.tagsindate(date0):
                         break
-                    entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k - 1].lower()}
+                    entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k]}
                     if date0.isoweekday() == 7:
                         entrystripped.add('dominica-infra-octavam')
                     # If a certain day within an Octave is manually entered, do not create one automatically
