@@ -9,12 +9,12 @@ import re
 from typing import NamedTuple, Optional, Self, Set
 
 from kalendar.pascha import geteaster, nextsunday
-from kalendar.dies import menses, mensum, numerals
+from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-data_root = pathlib.Path(__file__).parent.joinpath("data")
+data_root = pathlib.Path(__file__).parent.joinpath('data')
 
 def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
+    data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
@@ -49,7 +49,7 @@ class SearchResult(NamedTuple):
     feast: Set[str]
 
     def __str__(self) -> str:
-        return self.date.strftime("%a %Y-%m-%d") + ':' + str(self.feast)
+        return self.date.strftime('%a %Y-%m-%d') + ':' + str(self.feast)
 
 class Kalendar:
     def __init__(self, year: int, *args, **kwargs):
@@ -80,10 +80,10 @@ class Kalendar:
         return self.kal[key]
 
     def __repr__(self) -> str:
-        return f"Kalendar(year={self.year!r})"
+        return f'Kalendar(year={self.year!r})'
 
     def match(self, include: Set[str] = set(), exclude: Set[str] = set()):
-        assert include.isdisjoint(exclude), f"{include!r} and {exclude!r} must be disjoint"
+        assert include.isdisjoint(exclude), f'{include!r} and {exclude!r} must be disjoint'
         for date0, entries in self.kal.items():
             if set().union(*entries).isdisjoint(exclude):
                 for entry in entries:
@@ -101,7 +101,7 @@ class Kalendar:
             match = next(it)
         except StopIteration as e:
             # Fail if zero matches
-            raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got no matches!") from e
+            raise RuntimeError(f'{self.year}: match_unique({include!r}, {exclude!r}) got no matches!') from e
         else:
             # Fail if multiple matches
             try:
@@ -109,7 +109,7 @@ class Kalendar:
             except StopIteration:
                 pass
             else:
-                raise RuntimeError(f"{self.year}: match_unique({include!r}, {exclude!r}) got more than one match!")
+                raise RuntimeError(f'{self.year}: match_unique({include!r}, {exclude!r}) got more than one match!')
         return match
 
     def tagsindate(self, date: date) -> set:
@@ -135,7 +135,7 @@ class Kalendar:
 
         # Skip transfer if it's to the same day
         if newdate == match_date:
-            logging.debug(f"{self.year}: {entry!r} already on {newdate}")
+            logging.debug(f'{self.year}: {entry!r} already on {newdate}')
             return match
 
         entries = self[match_date]
@@ -144,7 +144,7 @@ class Kalendar:
         if mention:
             # Modify matching entries
             entries[:] = [
-                e - ranks - octavevigiltags | {"translatus-originalis"}
+                e - ranks - octavevigiltags | {'translatus-originalis'}
                 if e is entry
                 else e
                 for e in entries
@@ -155,7 +155,7 @@ class Kalendar:
 
         match = self.add_entry(newdate, newfeast)
 
-        logging.debug(f"{self.year}: Transfer {entry!r} from {match_date} to {newdate}")
+        logging.debug(f'{self.year}: Transfer {entry!r} from {match_date} to {newdate}')
         assert match_date - timedelta(days=1) == newdate or match_date < newdate
 
         assert not (target is None and obstacles is None)
@@ -183,14 +183,14 @@ def kalendar(year: int) -> Kalendar:
         else:
             return nextsunday(kalends, weeks=0)
     def todate(text: str, year0: int) -> date:
-        m = re.match(r"(\d+)-(\d+)", text)
+        m = re.match(r'(\d+)-(\d+)', text)
         if m is None:
             raise ValueError(f"Invalid date: {text}")
         return date(year0, int(m.group(1)), int(m.group(2)))
 
     i = date(year, 1, 1)
     while not i == date(year + 1, 1, 1):
-        kal.add_entry(i, {'tempus', menses[i.month - 1], str(i.day)})
+        kal.add_entry(i, {'tempus', menses[i.month - 1], latindate(i)})
         i = i + timedelta(days=1)
     for i in range(0, 13):
         if i == 0:
@@ -274,10 +274,9 @@ def kalendar(year: int) -> Kalendar:
     kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus'})
 
     # Saints, and also handles leap years
-    leapyear = year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
     for date0, entries in sanctoral.items():
         date0 = todate(str(date0), year)
-        if leapyear and date0.month == 2 and date0.day >= 24:
+        if leapyear(year) and date0.month == 2 and date0.day >= 24:
             date0 = date0 + timedelta(days=1)
         for entry in entries:
             kal.add_entry(date0, entry)
