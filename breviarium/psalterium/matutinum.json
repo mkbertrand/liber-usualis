@@ -3,7 +3,7 @@
 		"tags":[
 			["matutinum","novem-lectiones","nocturna-i","absolutio"],
 			["matutinum","feria-ii","absolutio"],
-			["matutinum","feria-iv","absolutio"]
+			["matutinum","feria-v","absolutio"]
 		],
 		"datum":"Exaúdi Dómine Jesu Christe preces servórum tuórum, + et miserére nobis, * qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum."
 	},
@@ -11,7 +11,7 @@
 		"tags":[
 			["matutinum","novem-lectiones","nocturna-i","lectio-i","benedictio"],
 			["matutinum","feria-ii","lectio-i","benedictio"],
-			["matutinum","feria-iv","lectio-i","benedictio"]
+			["matutinum","feria-v","lectio-i","benedictio"]
 		],
 		"datum":"Benedictióne perpétua * benedícat nos Pater ætérnus."
 	},
@@ -19,7 +19,7 @@
 		"tags":[
 			["matutinum","novem-lectiones","nocturna-i","lectio-ii","benedictio"],
 			["matutinum","feria-ii","lectio-ii","benedictio"],
-			["matutinum","feria-iv","lectio-ii","benedictio"]
+			["matutinum","feria-v","lectio-ii","benedictio"]
 		],
 		"datum":"Unigénitus Dei Fílius * nos benedícere et adjuváre dignétur."
 	},
@@ -27,37 +27,47 @@
 		"tags":[
 			["matutinum","novem-lectiones","nocturna-i","lectio-iii","benedictio"],
 			["matutinum","feria-ii","lectio-iii","benedictio"],
-			["matutinum","feria-iv","lectio-iii","benedictio"]
+			["matutinum","feria-v","lectio-iii","benedictio"]
 		],
 		"datum":"Spíritus sancti grátia * illúminet sensus et corda nostra."
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-ii","absolutio"]
+			["matutinum","novem-lectiones","nocturna-ii","absolutio"],
+			["matutinum","feria-iii","absolutio"],
+			["matutinum","feria-vi","absolutio"]
 		],
 		"datum":"Ipsíus píetas et misericórdia nos ádjuvet, * qui cum Patre et Spíritu sancto vivit et regnat in sǽcula sæculórum."
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-ii","lectio-i","benedictio"]
+			["matutinum","novem-lectiones","nocturna-ii","lectio-i","benedictio"],
+			["matutinum","feria-iii","lectio-i","benedictio"],
+			["matutinum","feria-vi","lectio-i","benedictio"]
 		],
 		"datum":"Deus Pater omnípotens * sit nobis propítius et clemens."
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-ii","lectio-ii","benedictio"]
+			["matutinum","novem-lectiones","nocturna-ii","lectio-ii","benedictio"],
+			["matutinum","feria-iii","lectio-ii","benedictio"],
+			["matutinum","feria-vi","lectio-ii","benedictio"]
 		],
 		"datum":"Christus perpétuæ * det nobis gaúdia vitæ."
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-ii","lectio-iii","benedictio"]
+			["matutinum","novem-lectiones","nocturna-ii","lectio-iii","benedictio"],
+			["matutinum","feria-iii","lectio-iii","benedictio"],
+			["matutinum","feria-vi","lectio-iii","benedictio"]
 		],
 		"datum":"Ignem sui amóris * accéndat Deus in córdibus nostris."
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-iii","absolutio"]
+			["matutinum","novem-lectiones","nocturna-iii","absolutio"],
+			["matutinum","feria-iv","absolutio"],
+			["matutinum","sabbatum","absolutio"]
 		],
 		"datum":"A vínculis peccatórum nostrórum * absólvat nobis omnípotens et miséricors Dóminus."
 	},
@@ -69,15 +79,65 @@
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","benedictio"]
+			["matutinum","feria-iv","lectio-i","benedictio"],
+			["matutinum","sabbatum","lectio-i","benedictio"]
+		],
+		"datum":"Ille nos benedícat, * qui sine fine vivit et regnat."
+	},
+	{
+		"tags":[
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","benedictio"],
+			["matutinum","feria-iv","lectio-ii","benedictio"],
+			["matutinum","sabbatum","lectio-ii","benedictio"]
 		],
 		"datum":"Divínum auxílium * máneat semper nobíscum."
 	},
 	{
 		"tags":[
-			["matutinum","novem-lectiones","nocturna-iii","lectio-iii","benedictio"]
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","apostolus","benedictio"],
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","martyr","benedictio"],
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","confessor","benedictio"]
+		],
+		"datum":"Cujus festum cólimus, * ipse intercédat pro nobis ad Dóminum."
+	},
+	{
+		"tags":[
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","apostolus","apostoli","benedictio"],
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","martyr","martyres","benedictio"],
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","confessor","confessores","benedictio"]
+		],
+		"datum":"Quorum festum cólimus, * ipsi intercédant pro nobis ad Dóminum."
+	},
+	{
+		"tags":[
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","virgo","benedictio"],
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","vidua","benedictio"]
+		],
+		"datum":"Cujus festum cólimus, * ipsa intercédat pro nobis ad Dóminum."
+	},
+	{
+		"tags":[
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","virgo","virgines","benedictio"],
+			["matutinum","novem-lectiones","nocturna-iii","lectio-ii","vidua","viduae","benedictio"]
+		],
+		"datum":"Quarum festum cólimus, * ipsæ intercédant pro nobis ad Dóminum."
+	},
+	{
+		"tags":["matutinum","novem-lectiones","nocturna-iii","lectio-ii","maria","benedictio"],
+		"datum":"Cujus festum cólimus, * ipsa Virgo vírginum intercédat pro nobis ad Dóminum."
+	},
+
+	{
+		"tags":[
+			["matutinum","novem-lectiones","nocturna-iii","lectio-iii","benedictio"],
+			["matutinum","feria-iv","lectio-iii","benedictio"],
+			["matutinum","sabbatum","lectio-iii","benedictio"]
 		],
 		"datum":"Ad societátem cívium supernórum * perdúcat nos Rex Angelórum."
+	},
+	{
+		"tags":["matutinum","commemoratio","lectio-iii","benedictio"],
+		"datum":"Per Evangélica dicta * deleántur nostra delícta."
 	},
 	{
 		"tags":["matutinum","hora"],
@@ -440,5 +500,81 @@
 	{
 		"tags":["matutinum","dominica","nocturna-iii","versiculus"],
 		"datum":["V. Exaltáre Dómine in virtúte tua.","R. Cantábimus et psallémus virtútes tuas."]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-i"],
+		"datum":"Dóminus defénsor * vitæ meæ."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","i-psalmus"],
+		"forwards-to":["psalmus-xxvi"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","ii-psalmus"],
+		"forwards-to":["psalmus-xxvii"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-ii"],
+		"datum":"Adoráte * Dóminum in aula sancta ejus."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","iii-psalmus"],
+		"forwards-to":["psalmus-xxviii"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","iv-psalmus"],
+		"forwards-to":["psalmus-xxix"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-iii"],
+		"datum":"In tua justítia * líbera me Dómine."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","v-psalmus"],
+		"forwards-to":["psalmus-xxx"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","vi-psalmus"],
+		"forwards-to":["psalmus-xxxi"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-iv"],
+		"datum":"Rectos decet * collaudátio."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","vii-psalmus"],
+		"forwards-to":["psalmus-xxxii"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","viii-psalmus"],
+		"forwards-to":["psalmus-xxxiii"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-v"],
+		"datum":"Expúgna * impugnántes me."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","ix-psalmus"],
+		"forwards-to":["psalmus-xxxiv"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","x-psalmus"],
+		"forwards-to":["psalmus-xxxv"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-vi"],
+		"datum":"Revéla * Dómino viam tuam."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","xi-psalmus"],
+		"forwards-to":["psalmus-xxxvi"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","xii-psalmus"],
+		"forwards-to":["psalmus-xxxvii"]
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","versiculus"],
+		"datum":["V. Dómine in cœlo misericórdia tua.","R. Et véritas tua usque ad nubes."]
 	}
 ]
