@@ -292,10 +292,12 @@
 	{
 		"indices":["duplex-ii-classis"],
 		"response":[
+			{"indices":["visitatio"],"response":"translandum","target":"a","movement":"+n"},
 			{"indices":["patrocinius-joseph"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["exaltatio-crucis"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["inventio-crucis"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["pretiosissimus-sanguis"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["dedicatio-michaelis"],"response":"translandum","target":"a","movement":"+n"},
 			{"indices":["rosarium-bmv"],"response":"translandum","target":"b","movement":"+n"},
 			{"indices":["duplex-ii-classis"],"response":"errora"},
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},

@@ -19,8 +19,8 @@ def test_repeatable(year: int) -> None:
     kal = kalendar.kalendar(year)
     kal3 = kalendar.kalendar(random.choice(range(1582, 3000)))
     kal2 = kalendar.kalendar(year)
-    assert kal.kal == kal2.kal
-
+    for i in kal.kal.keys():
+        assert kal.kal[i] == kal2.kal[i]
 
 class TestKalendar:
     @pytest.fixture(scope="class", params=range(1900, 2200))

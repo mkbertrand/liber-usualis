@@ -2,6 +2,7 @@
 
 from collections import defaultdict
 from datetime import date, datetime, timedelta
+import copy
 import json
 import logging
 import pathlib
@@ -273,16 +274,21 @@ def kalendar(year: int) -> Kalendar:
             currday += 1
     kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus'})
 
-    # Saints, and also handles leap years
-    for date0, entries in sanctoral.items():
-        date0 = todate(str(date0), year)
-        if leapyear(year) and date0.month == 2 and date0.day >= 24:
-            date0 = date0 + timedelta(days=1)
-        for entry in entries:
-            kal.add_entry(date0, entry)
-
     # List of inferred feasts that get merged in later
     buffer = Kalendar(year=year)
+
+    # Sanctorals
+    entries = copy.deepcopy(sanctoral)
+    for entry in entries:
+        matches = None
+        if type(entry['occurrence']) is list:
+            matches = []
+            for i in entry['occurrence']:
+                matches.extend(kal.match(i, entry.get('excluded', set())))
+        else:
+            matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
+        for match_date in set([i.date for i in matches]):
+            kal.add_entry(match_date, entry['tags'])
 
     # Octave and Vigil Processing
     for ent_date, entries in kal.items():
@@ -315,20 +321,18 @@ def kalendar(year: int) -> Kalendar:
     kal |= buffer
     buffer.kal.clear()
 
-    # Movable feasts with occurrence attribute
-    for movable in movables:
+    # Movables
+    entries = copy.deepcopy(movables)
+    for entry in entries:
         matches = None
-        if type(movable['occurrence']) is list:
+        if type(entry['occurrence']) is list:
             matches = []
-            for i in movable['occurrence']:
-                matches.extend(kal.match(i, movable.get('excluded', set())))
+            for i in entry['occurrence']:
+                matches.extend(kal.match(i, entry.get('excluded', set())))
         else:
-            matches = kal.match(movable['occurrence'], movable.get('excluded', set()))
+            matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
         for match_date in set([i.date for i in matches]):
-            kal.add_entry(match_date, movable['tags'])
-
-    kal |= buffer
-    buffer.kal.clear()
+            kal.add_entry(match_date, entry['tags'])
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if xxiiipentecostentry:
@@ -399,7 +403,7 @@ def kalendar(year: int) -> Kalendar:
             target.add('temporale')
             return [day]
         elif instruction['response'] == 'errora':
-            raise RuntimeError(f'Unexpected coincidence on day {day}')
+            raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {target}')
         else:
             raise RuntimeError(f'Unexpected response: {instruction["response"]}')
 
