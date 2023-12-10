@@ -1,0 +1,53 @@
+[
+	{
+		"tags":[
+			["hebdomada-ii-adventus","dominica","antiphona","antiphona-i"],
+			["hebdomada-ii-adventus","feria","prima","antiphona","antiphona-i"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2102",
+		"datum":"Ecce in núbibus cœli: * Dóminus véniet cum potestáte magna, allelúja."
+	},
+	{
+		"tags":[
+			["hebdomada-ii-adventus","dominica","antiphona","antiphona-ii"],
+			["hebdomada-ii-adventus","feria","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=1927",
+		"datum":"Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et antemurále: aperíte portas, quia nobíscum Deus, allelúja."
+	},
+	{
+		"tags":[
+			["hebdomada-ii-adventus","dominica","antiphona","antiphona-iii"],
+			["hebdomada-ii-adventus","feria","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2626",
+		"datum":"Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúja."
+	},
+	{
+		"tags":["hebdomada-ii-adventus","dominica","antiphona","antiphona-iv"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2768",
+		"datum":"Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúja, allelúja."
+	},
+	{
+		"tags":[
+			["hebdomada-ii-adventus","dominica","antiphona","antiphona-v"],
+			["hebdomada-ii-adventus","feria","nona","antiphona","antiphona-v"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2376",
+		"datum":"Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúja."
+	},
+	{
+		"tags":["hebdomada-ii-adventus","dominica","i-vesperae","vesperae","capitulum"],
+		"datum":"Fratres: Quæcúmque scripta sunt, ad nostram doctrínam scripta sunt: ut per patiéntiam, et consolatiónem Scripturárum spem habeámus."
+	},
+	{
+		"tags":["hebdomada-ii-adventus","dominica","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2686",
+		"datum":"Veni Dómine * visitáre nos in pace, ut lætémur coram te corde perfécto."
+	},
+	{
+		"tags":["hebdomada-ii-adventus","collecta"],
+		"datum":"Éxcita Dómine corda nostra ad præparándas Unigéniti tui vias: ut per ejus advéntum purificátis tibi méntibus servíre mereámur:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	}
+]

@@ -47,49 +47,66 @@ def getbreviariumfiles(queries):
         for i in files:
             if i[:-5] in queries:
                 got = getbreviariumfile(data_root.joinpath('breviarium').joinpath(root).joinpath(i))
+                if len(got) == 0:
+                    continue
                 added = []
-                for i in got:
+                for entry in got:
+                    entrycopy = copy.deepcopy(entry)
+                    for key, val in entrycopy.items():
+                        if not key in ['tags', 'datum', 'src', 'forwards-to','from-tags','cascade']:
+                            tags = None
+                            if type(entrycopy['tags']) is list:
+                                tags = [j | {key} for j in entrycopy['tags']]
+                            else:
+                                tags = entrycopy['tags'] | {key}
+                            newentry = {'tags':tags, 'datum':val}
+                            if 'src' in entrycopy:
+                                newentry['src'] = entrycopy['src']
+                            if 'cascade' in entrycopy:
+                                newentry['cascade'] = entrycopy['cascade']
+                            ret.append(newentry)
+                    if 'datum' in entry or 'forwards-to' in entry:
+                        ret.append(entry)
+    added = []
+    for entry in ret:
+        if 'antiphona-invitatorium' in entry['tags']:
+            entrycopy = copy.deepcopy(entry)
+            entrycopy['tags'].add('pars')
+            entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
+            added.append(entrycopy)
 
-                    if 'antiphona-invitatorium' in i['tags']:
-                        icopy = copy.deepcopy(i)
-                        icopy['tags'].add('pars')
-                        icopy['datum'] = icopy['datum'].split('*')[1].lstrip()
-                        added.append(icopy)
+        elif type(entry['tags']) is list and 'antiphona-invitatorium' in entry['tags'][0]:
+            entrycopy = copy.deepcopy(entry)
+            for j in entrycopy['tags']:
+                j.add('pars')
+            entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
+            added.append(entrycopy)
 
-                    elif not type(i['tags']) is set and 'antiphona-invitatorium' in i['tags'][0]:
-                        icopy = copy.deepcopy(i)
-                        for j in icopy['tags']:
-                            j.add('pars')
-                        icopy['datum'] = icopy['datum'].split('*')[1].lstrip()
-                        added.append(icopy)
+        elif 'antiphona' in entry['tags']:
+            entrycopy = copy.deepcopy(entry)
+            entrycopy['tags'].add('intonata')
+            entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
+            if entrycopy['datum'][-1] not in ['.',',','?','!',':',';']:
+                entrycopy['datum'] += '.'
+            added.append(entrycopy)
+            entrycopy = copy.deepcopy(entry)
+            entrycopy['tags'].add('repetita')
+            entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
+            added.append(entrycopy)
 
-                    elif 'antiphona' in i['tags']:
-                        icopy = copy.deepcopy(i)
-                        icopy['tags'].add('intonata')
-                        icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
-                        if icopy['datum'][-1] not in ['.',',','?','!',':',';']:
-                            icopy['datum'] += '.'
-                        added.append(icopy)
-                        icopy = copy.deepcopy(i)
-                        icopy['tags'].add('repetita')
-                        icopy['datum'] = icopy['datum'].split('* ')[0] + icopy['datum'].split('* ')[1]
-                        added.append(icopy)
-
-                    elif type(i['tags']) is list and 'antiphona' in i['tags'][0]:
-                        icopy = copy.deepcopy(i)
-                        for j in icopy['tags']:
-                            j.add('intonata')
-                        icopy['datum'] = icopy['datum'].split('*')[0].rstrip()
-                        if icopy['datum'][-1] not in ['.',',','?','!',':',';']:
-                            icopy['datum'] += '.'
-                        added.append(icopy)
-                        icopy = copy.deepcopy(i)
-                        for j in icopy['tags']:
-                            j.add('repetita')
-                        icopy['datum'] = icopy['datum'].split('* ')[0] + icopy['datum'].split('* ')[1]
-                        added.append(icopy)
-
-                ret.extend(got)
-                ret.extend(added)
-
+        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0]:
+            entrycopy = copy.deepcopy(entry)
+            for j in entrycopy['tags']:
+                j.add('intonata')
+            entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
+            if entrycopy['datum'][-1] not in ['.',',','?','!',':',';']:
+                entrycopy['datum'] += '.'
+            added.append(entrycopy)
+            entrycopy = copy.deepcopy(entry)
+            for j in entrycopy['tags']:
+                j.add('repetita')
+            entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
+            added.append(entrycopy)
+    ret.extend(added)
     return ret
+

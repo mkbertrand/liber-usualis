@@ -250,15 +250,19 @@
 	},
 	{
 		"tags":["terminatio","per-dominum"],
-		"datum":"Per Dóminum nostrum Jesum Christum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus sancti Deus, per ómnia sǽcula sæculórum. R. Amen."
+		"datum":["Per Dóminum nostrum Jesum Christum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus sancti Deus, per ómnia sǽcula sæculórum.","R. Amen."]
 	},
 	{
 		"tags":["terminatio","qui-vivis"],
-		"datum":"Qui vivis et regnas in unitáte Spíritus sancti Deus, per ómnia sǽcula sæculórum. R. Amen."
+		"datum":["Qui vivis et regnas in unitáte Spíritus sancti Deus, per ómnia sǽcula sæculórum.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","qui-tecum-vivit"],
+		"datum":["Qui tecum vivit et regnat in unitáte Spíritus sancti Deus, per ómnia sǽcula sæculórum.","R. Amen."]
 	},
 	{
 		"tags":["terminatio","per-eumdem-christum"],
-		"datum":"Per eúmdem Christum Dóminum nostrum. R. Amen."
+		"datum":["Per eúmdem Christum Dóminum nostrum.","R. Amen."]
 	},
 	{
 		"tags":["formula","laudes","commemoratio"],
@@ -316,6 +320,11 @@
 	{
 		"tags":["semiduplex","dominica","hora-major","benedicamus-domino"],
 		"src":"https://gregobase.selapa.net/chant.php?id=16976",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["semiduplex","dominica","poenitentialis","hora-major","benedicamus-domino"],
+		"src":"https://gregobase.selapa.net/chant.php?id=9841",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{

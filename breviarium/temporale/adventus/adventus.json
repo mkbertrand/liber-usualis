@@ -12,6 +12,10 @@
 		]
 	},
 	{
+		"tags":["adventus","vesperae","versiculus"],
+		"datum":["V. Roráte cœli désuper, et nubes pluant justum.","R. Aperiátur terra, et gérminet Salvatórem."]
+	},
+	{
 		"tags":["adventus","dominica","antiphona","antiphona-invitatorium"],
 		"src":"https://nocturnale.marteo.fr/chant/A1F1I/",
 		"datum":"Regem ventúrum Dóminum, * Veníte, adorémus."
@@ -101,13 +105,11 @@
 		]
 	},
 	{
-		"tags":["adventus","prima","responsorium-breve","incipit"],
+		"tags":["adventus","prima","responsorium-breve"],
 		"src":"https://gregobase.selapa.net/chant.php?id=13127",
-		"datum":"Christe Fili Dei vivi,"
-	},
-	{
-		"tags":["adventus","prima","responsorium-breve","versus"],
-		"datum":"Qui ventúrus es in mundum."
+		"incipit":"Christe Fili Dei vivi,",
+		"responsum":"Miserére nobis.",
+		"versus":"Qui ventúrus es in mundum."
 	},
 	{
 		"tags":["adventus","feria","feria-ii","matutinum","versiculus"],

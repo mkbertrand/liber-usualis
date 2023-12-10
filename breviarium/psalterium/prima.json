@@ -43,7 +43,7 @@
 			["gloria-versorum"],
 			"Orémus.",
 			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.",
-			"Amen.",
+			"R. Amen.",
 			{"from-tags":["formula","lectionis"],"cascade":["prima"]},
 			["adjutorium-nostrum"],
 			"V. Benedícite.",
@@ -102,16 +102,11 @@
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
-		"tags":["prima","responsorium-breve","incipit"],
-		"datum":"Christe Fili Dei vivi,"
-	},
-	{
-		"tags":["prima","responsorium-breve","responsum"],
-		"datum":"Miserére nobis."
-	},
-	{
-		"tags":["prima","responsorium-breve","versus"],
-		"datum":"Qui sedes ad dexteram Patris."
+		"tags":["prima","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=11818",
+		"incipit":"Christe Fili Dei vivi,",
+		"responsum":"Miserére nobis.",
+		"versus":"Qui sedes ad dexteram Patris."
 	},
 	{
 		"tags":["prima","versiculus"],
@@ -155,11 +150,8 @@
 	},
 	{
 		"tags":["ordinarium","prima","collecta"],
-		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera."
-	},
-	{
-		"tags":["ordinarium","prima","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
+		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["prima","benedictio"],

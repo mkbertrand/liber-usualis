@@ -30,5 +30,9 @@
 	{
 		"tags":["commemoratum"],
 		"implies":["commemoratio"]
+	},
+	{
+		"tags":["psalmi"],
+		"implies":["commemoratio"]
 	}
 ]
