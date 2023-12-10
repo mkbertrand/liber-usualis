@@ -40,14 +40,15 @@ def jsoninterp(j):
                 return stringhandle(obj) 
     return recurse(j)
 
-@route('/<hour>')
+@route('/hora/<hour>')
 def office(hour):
+    print(hour)
     ret = ''
     for i in hour.split(' '):
-        ret += jsoninterp(breviarium.hour(i, date.today()))
+        ret += jsoninterp(breviarium.hour(i, date.today(), forcedprimary='temporale'))
     return template('frontend/index.tpl',office=ret)
 
-@route('/')
+@route('/hora/')
 def index():
     hour = None
     match datetime.now().hour:
