@@ -38,7 +38,7 @@
 	},
 	{
 		"tags":[
-			["hebdomada-i-adventus","dominica","i-vesperae","vesperae","capitulum"],
+			["hebdomada-i-adventus","dominica","vesperae","capitulum"],
 			["hebdomada-i-adventus","dominica","laudes","capitulum"],
 			["hebdomada-i-adventus","dominica","tertia","capitulum"]
 		],
@@ -214,54 +214,17 @@
 		"versus":"In diébus illis salvábitur Juda, et Ísraël habitábit confidénter."
 	},
 	{
-		"tags":["hebdomada-i-adventus","laudes","versiculus"],
-		"datum":["V. Vox clamántis in desérto, Paráte viam Dómini.","R. Rectas fácite sémitas ejus."]
-	},
-	{
 		"tags":["hebdomada-i-adventus","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=12304",
 		"datum":"Spíritus sanctus * in te descéndet, María: ne tímeas, habébis in útero Fílium Dei, allelúja."
-	},
-	{
-		"tags":["hebdomada-i-adventus","tertia","responsorium-breve"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3159",
-		"incipit":"Veni ad liberándum nos",
-		"responsum":"Dómine Deus virtútum.",
-		"versus":"Osténde fáciem tuam, et salvi érimus."
-	},
-	{
-		"tags":["hebdomada-i-adventus","tertia","versiculus"],
-		"datum":["V. Timébunt Gentes nomen tuum Dómine.","R. Et omnes reges terræ glóriam tuam."]
 	},
 	{
 		"tags":["hebdomada-i-adventus","sexta","capitulum"],
 		"datum":"Nox præcéssit, dies autem appropinquávit: abjiciámus ergo ópera tenebrárum, et induámur arma lucis."
 	},
 	{
-		"tags":["hedbomada-i-adventus","sexta","responsorium-breve"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3070",
-		"incipit":"Osténde nobis Dómine",
-		"responsum":"Misericórdiam tuam.",
-		"versus":"Et salutáre tuum da nobis."
-	},
-	{
-		"tags":["hebdomada-i-adventus","sexta","versiculus"],
-		"datum":["Meménto nostri Dómine in beneplácito pópuli tui.","R. Vísita nos in salutári tuo."]
-	},
-	{
 		"tags":["hebdomada-i-adventus","nona","capitulum"],
 		"datum":"Sicut in die honéste ambulémus, non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentiónes et æmulatióne: sed induímini Dóminum Jesum Christum."
-	},
-	{
-		"tags":["hebdomada-i-adventus","nona","responsorium-breve"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3173",
-		"incipit":"Super te Jerúsalem,",
-		"responsum":"Oriétur Dóminus.",
-		"versus":"Et glória ejus in te vidébitur."
-	},
-	{
-		"tags":["hebdomada-i-adventus","nona","versiculus"],
-		"datum":["V. Dómine Deus virtútum convérte nos.","R. Et osténde fáciem tuam, et salvi érimus."]
 	},
 	{
 		"tags":["hebdomada-i-adventus","dominica","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
@@ -276,36 +239,12 @@
 		]
 	},
 	{
-		"tags":[
-			["hebdomada-i-adventus","feria","feria-ii","matutinum","responsorium","responsorium-i"],
-			["hebdomada-i-adventus","feria","feria-v","matutinum","responsorium","responsorium-i"]
-		],
-		"src":"https://nocturnale.marteo.fr/chant/A1F2R1/",
-		"incipit":"Súscipe verbum Virgo María, quod tibi a Dómino per Ángelum transmíssum est: concípies et páries Deum páriter et hóminem,",
-		"responsum":"Ut benedícta dicáris inter omnes mulíeres.",
-		"versus":"Páries quidem fílium, et virginitátis non patiéris detriméntum: efficiéris grávida, et eris mater semper intácta."
-	},
-	{
 		"tags":["hebdomada-i-adventus","feria","feria-ii","matutinum","lectio","lectio-ii"],
 		"datum":"Si voluéritis, et audiéritis me, bona terræ comedétis. Quod si noluéritis, et me ad iracúndiam provocavéritis, gládius devorábit vos, quia os Dómini locútum est. Quómodo facta est méretrix cívitas fidélis, plena judícii? Justítia habitávit in ea, nunc autem homicídæ. Argéntum tuum versum est in scóriam: vinum tuum mistum est aqua. Príncipes tui infidéles, sócii furum: omnes díligunt múnera, sequúntur retributiónes. Pupíllo non júdicant: et causa víduæ non ingréditur ad illos."
 	},
 	{
-		"tags":["hebdomada-i-adventus","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F2R2/",
-		"incipit":"Læténtur cœli, et exsúltet terra, jubiláte montes laudem: quia Dóminus noster véniet,",
-		"responsum":"Et paúperum suórum miserébitur.",
-		"versus":"Oriétur in diébus ejus justítia, et abundántia pacis."
-	},
-	{
 		"tags":["hebdomada-i-adventus","feria","feria-ii","matutinum","lectio","lectio-iii"],
 		"datum":"Propter hoc ait Dóminus Deus exercítuum fortis Ísraël: Heu, consolábor super hóstibus meis, et vindicábor de inimícis meis. Et convértam manum meam ad te, et éxcoquam ad purum scóriam tuam, et aúferam omne stannum tuum. Et restítuam júdices tuos ut fuérunt prius, et consiliários tuos sicut antíquitus: post hæc vocáberis cívitas justi, urbs fidélis. Sion in judício redimétur, et redúcent eam in justítia: et cónteret sceléstos, et peccatóres simul: et qui dereliquérunt Dóminum, consuméntur."
-	},
-	{
-		"tags":["hebdomada-i-adventus","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F2R3/",
-		"incipit":"Aliéni non transíbunt per Jerúsalem ámplius:",
-		"responsum":"Nam in illa die stillábunt montes dulcédinem, et colles fluent lac et mel, dicit Dóminus.",
-		"versus":"Deus a Líbano véniet, et Sanctus de monte umbróso et condénso."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","laudes","capitulum"],
@@ -333,33 +272,12 @@
 		]
 	},
 	{
-		"tags":["hebdomada-i-adventus","feria","feria-iii","matutinum","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F3R1/",
-		"incipit":"Montes Ísraël, ramos vestros expándite, et floréte, et fructus fácite:",
-		"responsum":"Prope est ut véniat dies Dómini.",
-		"versus":"Roráte cœli désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem."
-	},
-	{
 		"tags":["hebdomada-i-adventus","feria","feria-iii","matutinum","lectio","lectio-ii"],
 		"datum":"Et judicábit Gentes, et árguet pópulos multos: et conflábunt gládios suos in vómeres, et lánceas suas in falces: non levábit gens contra gentem gládium, nec exercebúntur ultra ad prǽlium. Domus Jacob veníte, et ambulémus in lúmine Dómini. Projecísti enim pópulum tuum, domum Jacob: quia repléti sunt ut olim, et aúgeres habuérunt ut Philísthiim, et púeris aliénis adhæsérunt."
 	},
 	{
-		"tags":["hebdomada-i-adventus","feria","feria-iii","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F3R2/",
-		"incipit":"Erúmpant montes jucunditátem, et colles justítiam:",
-		"responsum":"Quia lux mundi Dóminus cum poténtia venit.",
-		"versus":"De Sion exíbit lex, et verbum Dómini de Jerúsalem."
-	},
-	{
 		"tags":["hebdomada-i-adventus","feria","feria-iii","matutinum","lectio","lectio-iii"],
 		"datum":"Repléta est terra argénto et auro, et non est finis thesaurórum ejus: et repléta est terra ejus equis: et innumerábiles quadrígæ ejus. Et repléta est terra ejus idólis: opus mánuum suárum adoravérunt, quod fecérunt dígiti eórum. Et incurvávit se homo, et humiliátus est vir: ne ergo dimíttas eis."
-	},
-	{
-		"tags":["hebdomada-i-adventus","feria","feria-iii","matutinum","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F3R3/",
-		"incipit":"Ecce ab Austro vénio, ego Dóminus Deus vester,",
-		"responsum":"Visitáre vos in pace.",
-		"versus":"Aspíciam vos, et créscere fáciam: multiplicabímini, et firmábo pactum meum vobíscum."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
@@ -379,22 +297,8 @@
 		]
 	},
 	{
-		"tags":["hebdomada-i-adventus","feria","feria-iv","matutinum","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F4R1/",
-		"incipit":"Rex noster advéniet Christus,",
-		"responsum":"Quem Joánnes prædicávit Agnum esse ventúrum.",
-		"versus":"Super ipsum continébunt reges os suum, ipsum Gentes deprecabúntur."
-	},
-	{
 		"tags":["hebdomada-i-adventus","feria","feria-iv","matutinum","lectio","lectio-ii"],
 		"datum":"Et írruet pópulus, vir ad virum, et unusquísque ad próximum suum: tumultuábitur puer contra senem, et ignóbilis contra nóbilem. Apprehéndet enim vir fratrem suum domésticum patris sui: Vestiméntum tibi est, princeps esto noster, ruína autem hæc sub manu tua. Respondébit in die illa, dicens: Non sum médicus, et in domo mea non est panis, neque vestiméntum: nolíte constitúere me príncipem pópuli."
-	},
-	{
-		"tags":["hebdomada-i-adventus","feria","feria-iv","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A1F4R2/",
-		"incipit":"Ante multum tempus prophetávit Ezéchiel: Vidi portam clausam; ecce Deus ante sǽcula ex ea procedébat pro salúte mundi:",
-		"responsum":"Et erat íterum clausa, demónstrans Vírginem, quia post partum permánsit virgo.",
-		"versus":"Porta quam vidísti, Dóminus solus transíbit per illam."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-iv","matutinum","lectio","lectio-iii"],
