@@ -7,7 +7,7 @@
 			"Commúne qui mundi nefas/Ut expiáres; ad crucem/E Vírginis sacrário/Intácta prodis víctima.",
 			"Cujus potéstas glóriæ,/Noménque cum primum sonat;/Et cœlites et ínferi/Treménte curvántur genu.",
 			"Te deprecámur últimæ/Magnum diéi Júdicem,/Armis supérnæ grátiæ/Defénde nos ab hóstibus.",
-			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sæcula.",
+			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.",
 			"Amen."
 		]
 	},
@@ -30,7 +30,7 @@
 		"src":"https://nocturnale.marteo.fr/chant/EXA1H/",
 		"datum":[
 			"Verbum supérnum pródiens,/E Patris ætérni sinu/Qui natus orbi súbvenis,/Labénte cursu témporis.",
-			"Illúmina nunc péctora,/Tuóque amóre cóncrema;/Ut cor cadúca déserns/Cœli volúptas ímpleat:",
+			"Illúmina nunc péctora,/Tuóque amóre cóncrema;/Ut cor cadúca déserens/Cœli volúptas ímpleat:",
 			"Ut, cum tribúnal Júdicis/Damnábit igni nóxios,/Et vox amíca débitum/Vocábit ad cœlum pios.",
 			"Non esca flammárum nigros/Volvámur inter túrbines,/Vultu Dei sed cómpotes/Cœli fruámur gaúdiis.",
 			"Patri simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória."
@@ -111,7 +111,7 @@
 		"datum":[
 			"En clara vox redárguit/Obscúra quæque, pérsonans:/Procul fugéntur sómnia:/Ab alto Jesus prómicat.",
 			"Mens jam resúrgat tórpida,/Non ámplius jacens humi;/Sidus refúlget jam novum,/Ut tollat omne nóxium.",
-			"Et Agnus ad nos míttitur/Laxáre gratis débitum:/Omnes simul cum lácrimis/Precémur indulgéntiam.",
+			"En Agnus ad nos míttitur/Laxáre gratis débitum:/Omnes simul cum lácrimis/Precémur indulgéntiam.",
 			"Ut, cum secúndo fúlserit,/Metúque mundum cínxerit,/Non pro reátu púniat,/Sed nos pius tunc prótegat.",
 			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.","Amen."
 		]
@@ -217,5 +217,60 @@
 		"incipit":"Ecce ab Austro vénio, ego Dóminus Deus vester,",
 		"responsum":"Visitáre vos in pace.",
 		"versus":"Aspíciam vos, et créscere fáciam: multiplicabímini, et firmábo pactum meum vobíscum."
+	},
+	{
+		"tags":[
+			["hebdomada-i-adventus","feria","feria-iv","matutinum","responsorium","responsorium-i"],
+			["hebdomada-ii-adventus","feria","feria-iv","matutinum","responsorium","responsorium-i"]
+		],
+		"src":"https://nocturnale.marteo.fr/chant/A1F4R1/",
+		"incipit":"Rex noster advéniet Christus,",
+		"responsum":"Quem Joánnes prædicávit Agnum esse ventúrum.",
+		"versus":"Super ipsum continébunt reges os suum, ipsum Gentes deprecabúntur."
+	},
+	{
+		"tags":[
+			["hebdomada-i-adventus","feria","feria-iv","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-ii-adventus","feria","feria-iv","matutinum","responsorium","responsorium-ii"]
+		],
+		"src":"https://nocturnale.marteo.fr/chant/A1F4R2/",
+		"incipit":"Ante multum tempus prophetávit Ezéchiel: Vidi portam clausam; ecce Deus ante sǽcula ex ea procedébat pro salúte mundi:",
+		"responsum":"Et erat íterum clausa, demónstrans Vírginem, quia post partum permánsit virgo.",
+		"versus":"Porta quam vidísti, Dóminus solus transíbit per illam."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-sapientia","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=7450",
+		"datum":"O Sapiéntia, * quæ ex ore Altíssimi prodiísti, attíngens a fine usque ad finem, fórtiter suavitérque dispónens ómnia: veni ad docéndum nos viam prudéntiæ."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-adonai","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2596",
+		"datum":"O Adónai, * et Dux domus Ísraël, qui Móysi in igne flammæ rubi apparuísti, et ei in Sina legem dedísti: veni ad rediméndum nos in bráchio exténto."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-radix-jesse","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2203",
+		"datum":"O radix Jesse, * qui stas in signum populórum, super quem continébunt reges os suum, quem Gentes deprecabúntur: veni ad liberándum nos, jam noli tardáre."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-clavis-david","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2877",
+		"datum":"O clavis David, * et sceptrum domus Ísraël; qui áperis, et nemo claudit; claudis, et nemo áperit: veni, et educ vinctum de domo cárceris, sedéntem in ténebris, et umbra mortis."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-oriens","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2371",
+		"datum":"O Óriens, * splendor lucis ætérnæ, et sol justítiæ: veni, et illúmina sedéntes in ténebris, et umbra mortis."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-rex-gentium","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2133",
+		"datum":"O Rex Géntium, * et desiderátus eárum, lapísque anguláris, qui facis útraque unum: veni, et salva hóminem, quem de limo formásti."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-emmanuel","antiphona","antiphona-magnificat"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2483",
+		"datum":"O Emmánuel, * Rex et légifer noster, exspectátio Géntium, et Salvátor eárum: veni ad salvándum nos Dómine Deus noster."
 	}
 ]
