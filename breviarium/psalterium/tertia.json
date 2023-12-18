@@ -1,6 +1,6 @@
 [
 	{
-		"tags":["tertia", "hora"],
+		"tags":["tertia","hora"],
 		"datum":[
 			["prex-duplex"],
 			["deus-in-adjutorium","ferialis"],
@@ -20,6 +20,7 @@
 			"R. Deo grátias.",
 			["formula","responsorium-breve"],
 			["tertia","versiculus"],
+			["preces"],
 			["collecta-primaria"],
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
@@ -93,5 +94,25 @@
 	{
 		"tags":["tertia","feria","versiculus"],
 		"datum":["V. Adjútor meus esto, ne derelínquas me.","R. Neque despícias me Deus salutáris meus."]
+	},
+	{
+		"tags":["tertia","preces"],
+		"datum":[]
+	},
+	{
+		"tags":["tertia","poenitentialis","preces"],
+		"datum":[
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			"Pater noster.",
+			"Qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"V. Dómine Deus virtútum convérte nos.",
+			"R. Et osténde fáciem tuam, et salvi érimus.",
+			"V. Exsúrge Christe, ádjuva nos.",
+			"R. Et líbera nos propter nomen tuum.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat."
+		]
 	}
 ]

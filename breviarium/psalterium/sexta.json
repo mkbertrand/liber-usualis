@@ -1,6 +1,6 @@
 [
 	{
-		"tags":["sexta", "hora"],
+		"tags":["sexta","hora"],
 		"datum":[
 			["prex-duplex"],
 			["deus-in-adjutorium","ferialis"],
@@ -20,6 +20,7 @@
 			"R. Deo grátias.",
 			["formula","responsorium-breve"],
 			["sexta","versiculus"],
+			["preces"],
 			["collecta-primaria"],
 			{
 				"tags":["sexta","dominus-vobiscum"],
@@ -87,5 +88,25 @@
 	{
 		"tags":["sexta","feria","responsorium-breve","versus"],
 		"datum":"Semper laus ejus in ore meo."
+	},
+	{
+		"tags":["sexta","preces"],
+		"datum":[]
+	},
+	{
+		"tags":["sexta","poenitentialis","preces"],
+		"datum":[
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			"Pater noster.",
+			"Qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"V. Dómine Deus virtútum convérte nos.",
+			"R. Et osténde fáciem tuam, et salvi érimus.",
+			"V. Exsúrge Christe, ádjuva nos.",
+			"R. Et líbera nos propter nomen tuum.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat."
+		]
 	}
 ]
