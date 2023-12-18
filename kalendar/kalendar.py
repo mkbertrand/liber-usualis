@@ -372,6 +372,7 @@ def kalendar(year: int) -> Kalendar:
 
     excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
 
+    # Returns whether full process needs to be rerun
     def perform_action(instruction, day, target):
         if instruction['response'] == 'combinandum':
             target[0] |= target[1]
@@ -413,35 +414,36 @@ def kalendar(year: int) -> Kalendar:
 
     def process():
         for rule in coincidencetable:
-            if not subprocess(rule):
-                return
+            for i in kal.keys():
+                if not subprocess(rule, i):
+                    return
 
-    def subprocess(rule):
-        for i in kal.keys():
-            for tags in kal[i]:
-                if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
-                    if not type(rule['response']) is list:
-                        if perform_action(rule, i, tags):
-                            process()
-                            return False
-                        else:
-                            subprocess(rule)
-                            return True
+    # Returns whether process() should continue after this subprocess
+    def subprocess(rule, i):
+        for tags in kal[i]:
+            if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
+                if not type(rule['response']) is list:
+                    if perform_action(rule, i, tags):
+                        process()
+                        return False
                     else:
-                        for secondaryrule in rule['response']:
-                            for secondarytags in kal[i]:
-                                if secondaryrule['indices'].issubset(secondarytags) and not tags == secondarytags and secondarytags.isdisjoint(excludedtags):
-                                    target = tags
-                                    if 'target' in secondaryrule and secondaryrule['target'] == 'b':
-                                        target = secondarytags
-                                    elif 'target' in secondaryrule and secondaryrule['target'] == 'ab':
-                                        target = [tags, secondarytags]
-                                    if perform_action(secondaryrule, i, target):
-                                        process()
-                                        return False
-                                    else:
-                                        subprocess(rule)
-                                        return True
+                        subprocess(rule, i)
+                        return True
+                else:
+                    for secondaryrule in rule['response']:
+                        for secondarytags in kal[i]:
+                            if secondaryrule['indices'].issubset(secondarytags) and not tags == secondarytags and secondarytags.isdisjoint(excludedtags):
+                                target = tags
+                                if 'target' in secondaryrule and secondaryrule['target'] == 'b':
+                                    target = secondarytags
+                                elif 'target' in secondaryrule and secondaryrule['target'] == 'ab':
+                                    target = [tags, secondarytags]
+                                if perform_action(secondaryrule, i, target):
+                                    process()
+                                    return False
+                                else:
+                                    subprocess(rule, i)
+                                    return True
         return True
     process()
 
