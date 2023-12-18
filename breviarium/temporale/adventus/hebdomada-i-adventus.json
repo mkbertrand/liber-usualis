@@ -37,11 +37,7 @@
 		"datum":"Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja."
 	},
 	{
-		"tags":[
-			["hebdomada-i-adventus","dominica","vesperae","capitulum"],
-			["hebdomada-i-adventus","dominica","laudes","capitulum"],
-			["hebdomada-i-adventus","dominica","tertia","capitulum"]
-		],
+		"tags":["hebdomada-i-adventus","dominica","capitulum"],
 		"datum":"Fratres: Hora est jam nos de somno súrgere. + Nunc enim próprior est nostra salus, * quam cum credídimus."
 	},
 	{
@@ -219,11 +215,11 @@
 		"datum":"Spíritus sanctus * in te descéndet, María: ne tímeas, habébis in útero Fílium Dei, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-adventus","sexta","capitulum"],
+		"tags":["hebdomada-i-adventus","dominica","sexta","capitulum"],
 		"datum":"Nox præcéssit, dies autem appropinquávit: abjiciámus ergo ópera tenebrárum, et induámur arma lucis."
 	},
 	{
-		"tags":["hebdomada-i-adventus","nona","capitulum"],
+		"tags":["hebdomada-i-adventus","dominica","nona","capitulum"],
 		"datum":"Sicut in die honéste ambulémus, non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentiónes et æmulatióne: sed induímini Dóminum Jesum Christum."
 	},
 	{
@@ -247,17 +243,9 @@
 		"datum":"Propter hoc ait Dóminus Deus exercítuum fortis Ísraël: Heu, consolábor super hóstibus meis, et vindicábor de inimícis meis. Et convértam manum meam ad te, et éxcoquam ad purum scóriam tuam, et aúferam omne stannum tuum. Et restítuam júdices tuos ut fuérunt prius, et consiliários tuos sicut antíquitus: post hæc vocáberis cívitas justi, urbs fidélis. Sion in judício redimétur, et redúcent eam in justítia: et cónteret sceléstos, et peccatóres simul: et qui dereliquérunt Dóminum, consuméntur."
 	},
 	{
-		"tags":["hebdomada-i-adventus","feria","laudes","capitulum"],
-		"datum":"Veníte, et ascendámus ad montem Dómini, et ad domum Dei Jacob, et docébit nos vias suas, et ambulábimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem."
-	},
-	{
 		"tags":["hebdomada-i-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=13074",
 		"datum":"Ángelus Dómini * nuntiávit Maríæ, et concépit de Spíritu sancto, allelúja."
-	},
-	{
-		"tags":["hebdomada-i-adventus","feria","vesperae","capitulum"],
-		"datum":"Non auferétur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est: et ipse erit exspectátio Géntium."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],

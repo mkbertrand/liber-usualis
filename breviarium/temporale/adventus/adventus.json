@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["adventus","feria","vesperae","capitulum"],
+		"datum":"Non auferétur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est: et ipse erit exspectátio Géntium."
+	},
+	{
 		"tags":["adventus","vesperae","hymnus"],
 		"datum":[
 			"Creátor alme síderum,/Ætérna lux credéntium,/Jesu Redémptor ómnium,/Inténde votis súpplicum.",
@@ -106,6 +110,10 @@
 		"datum":["V. Egrediétur Dóminus de loco sancto suo.","R. Véniet, ut salvet pópulum suum."]
 	},
 	{
+		"tags":["adventus","feria","laudes","capitulum"],
+		"datum":"Veníte, et ascendámus ad montem Dómini, et ad domum Dei Jacob, et docébit nos vias suas, et ambulábimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem."
+	},
+	{
 		"tags":["adventus","laudes","hymnus"],
 		"src":"https://gregobase.selapa.net/chant.php?id=11919",
 		"datum":[
@@ -128,6 +136,10 @@
 		"versus":"Qui ventúrus es in mundum."
 	},
 	{
+		"tags":["adventus","feria","tertia","capitulum"],
+		"datum":"Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra."
+	},
+	{
 		"tags":["adventus","tertia","responsorium-breve"],
 		"src":"https://gregobase.selapa.net/chant.php?id=3159",
 		"incipit":"Veni ad liberándum nos",
@@ -139,6 +151,10 @@
 		"datum":["V. Timébunt Gentes nomen tuum Dómine.","R. Et omnes reges terræ glóriam tuam."]
 	},
 	{
+		"tags":["adventus","feria","sexta","capitulum"],
+		"datum":"In diébus illis salvábitur Juda, et Ísraël habitábit confidénter: et hoc est nomen, quod vocábunt eum, Dóminus justus noster."
+	},
+	{
 		"tags":["adventus","sexta","responsorium-breve"],
 		"src":"https://gregobase.selapa.net/chant.php?id=3070",
 		"incipit":"Osténde nobis Dómine",
@@ -147,7 +163,11 @@
 	},
 	{
 		"tags":["adventus","sexta","versiculus"],
-		"datum":["Meménto nostri Dómine in beneplácito pópuli tui.","R. Vísita nos in salutári tuo."]
+		"datum":["V. Meménto nostri Dómine in beneplácito pópuli tui.","R. Vísita nos in salutári tuo."]
+	},
+	{
+		"tags":["adventus","feria","nona","capitulum"],
+		"datum":"Prope est ut véniat tempus ejus, et dies ejus non elongabúntur. Miserébitur enim Dóminus Jacob, et Ísraël salvábitur."
 	},
 	{
 		"tags":["adventus","nona","responsorium-breve"],
@@ -157,8 +177,12 @@
 		"versus":"Et glória ejus in te vidébitur."
 	},
 	{
-		"tags":["adventus","nona","versiculus"],
+		"tags":["adventus","dominica","nona","versiculus"],
 		"datum":["V. Dómine Deus virtútum convérte nos.","R. Et osténde fáciem tuam, et salvi érimus."]
+	},
+	{
+		"tags":["adventus","feria","nona","versiculus"],
+		"datum":["V. Veni Dómine, et noli tardáre.","R. Reláxa facínora plebi tuæ."]
 	},
 	{
 		"tags":[
@@ -272,5 +296,21 @@
 		"tags":["adventus","antiphona-major","o-emmanuel","antiphona","antiphona-magnificat"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2483",
 		"datum":"O Emmánuel, * Rex et légifer noster, exspectátio Géntium, et Salvátor eárum: veni ad salvándum nos Dómine Deus noster."
+	},
+	{
+		"tags":[
+			["adventus","feriae-iii","laudes","antiphona","antiphona-ii"],
+			["adventus","feriae-iii","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=12041",
+		"datum":"Emítte Agnum Dómine * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion."
+	},
+	{
+		"tags":[
+			["adventus","feriae-iii","laudes","antiphona","antiphona-iii"],
+			["adventus","feriae-iii","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=12425",
+		"datum":"Ut cognoscámus Dómine * in terra viam tuam, in ómnibus géntibus salutáre tuum."
 	}
 ]

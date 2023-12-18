@@ -1,31 +1,31 @@
 [
 	{
-		"tags":["hebdomada-iii-adventus","antiphona","antiphona-i"],
+		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-i"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2145",
 		"datum":"Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-adventus","antiphona","antiphona-ii"],
+		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-ii"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2116",
 		"datum":"Jerúsalem gaude * gaúdio magno, quia véniet tibi Salvátor, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-adventus","antiphona","antiphona-iii"],
+		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-iii"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2830",
 		"datum":"Dabo in Sion * salútem, et in Jerúsalem glóriam meam, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-adventus","antiphona","antiphona-iv"],
+		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-iv"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2443",
 		"datum":"Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni Dómine, et noli tardáre, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-adventus","antiphona","antiphona-v"],
+		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-v"],
 		"src":"https://gregobase.selapa.net/chant.php?id=1937",
 		"datum":"Juste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini."
 	},
 	{
-		"tags":["hebdomada-iii-adventus","dominica","vesperae","capitulum"],
+		"tags":["hebdomada-iii-adventus","dominica","capitulum"],
 		"datum":"Fratres: Gaudéte in Dómino semper: íterum dico, gaudéte. + Modéstia vestra nota sit ómnibus homínibus: * Dóminus enim prope est."
 	},
 	{
@@ -37,5 +37,9 @@
 		"tags":["hebdomada-iii-adventus","collecta"],
 		"datum":"Aurem tuam, quǽsumus Dómine, précibus nostris accómmoda: + et mentis nostræ ténebras * grátia tuæ visitatiónis illústra.",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["hebdomada-iii-adventus","dominica","sexta","capitulum"],
+		"datum":"Nihil sollíciti sitis: sed in omni oratióne, et obsecratióne, cum gratiárum actióne, petitiónes vestræ innotéscant apud Deum."
 	}
 ]
