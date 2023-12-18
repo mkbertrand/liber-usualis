@@ -82,7 +82,8 @@ def getbreviariumfiles(queries):
             entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
             added.append(entrycopy)
 
-        elif 'antiphona' in entry['tags']:
+        elif 'antiphona' in entry['tags'] and not 'antiphona-major' in entry[
+'tags']:
             entrycopy = copy.deepcopy(entry)
             entrycopy['tags'].add('intonata')
             entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
@@ -94,7 +95,7 @@ def getbreviariumfiles(queries):
             entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
             added.append(entrycopy)
 
-        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0]:
+        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0] and 'antiphona-major' in entry['tags'][0]:
             entrycopy = copy.deepcopy(entry)
             for j in entrycopy['tags']:
                 j.add('intonata')

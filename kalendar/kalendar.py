@@ -25,7 +25,7 @@ def load_data(p: str):
                 return {k: recurse(v) for k, v in obj.items()}
             case list():
                 if all(type(x) == str for x in obj):
-                    return frozenset(obj)
+                    return set(obj)
                 return [recurse(v) for v in obj]
             case _:
                 return obj
@@ -228,12 +228,16 @@ def kalendar(year: int) -> Kalendar:
     xxiiipentecostentry: Optional[Set[str]] = None
     omittedepiphanyentry: Optional[Set[str]] = None
 
+    oantiphons = ['o-sapientia','o-adonai','o-radix-jesse','o-clavis-david','o-oriens','o-rex-gentium','o-emmanuel']
     # Advent Cycle
     for entry in adventcycle:
         date0 = adventstart + timedelta(days=entry['difference'])
         # Christmas Eve is its own liturgical day that outranks whatever Advent day it's on but most of Matins comes from the day so Advent count is only stopped at Christmas
         if date0 == christmas:
             break
+        if date0.day > 16 and date0.day < 24:
+            entry['tags'].add(oantiphons[date0.day - 17])
+            entry['tags'].add('antiphona-major')
         kal.add_entry(date0, entry['tags'])
 
     # Paschal Cycle

@@ -319,3 +319,4 @@ if __name__ == '__main__':
     else:
         # Write JSON output
         args.output.write(dump_data(ret) + '\n')
+
