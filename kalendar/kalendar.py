@@ -335,8 +335,9 @@ def kalendar(year: int) -> Kalendar:
                 matches.extend(kal.match(i, entry.get('excluded', set())))
         else:
             matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
+        difference = entry['difference'] if 'difference' in entry else 0
         for match_date in set([i.date for i in matches]):
-            kal.add_entry(match_date, entry['tags'])
+            kal.add_entry(match_date + timedelta(days=difference), entry['tags'])
 
     # 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
     if xxiiipentecostentry:
@@ -373,68 +374,76 @@ def kalendar(year: int) -> Kalendar:
 
     def perform_action(instruction, day, target):
         if instruction['response'] == 'combinandum':
-           target[0] |= target[1]
-           kal[day].remove(target[1])
-           return [day]
+            target[0] |= target[1]
+            kal[day].remove(target[1])
+            return True
         elif instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
             target.add('commemoratum')
             target.add('temporale')
-            return [day]
+            return False
         elif instruction['response'] == 'omittendum':
             kal[day].remove(target)
-            return [day]
+            return False
         elif instruction['response'] == 'commemorandum':
             target.add('commemoratum')
-            return [day]
+            return False
         elif instruction['response'] == 'translandum':
-            if instruction['movement'] == '+n' or instruction['movement'] == '+1':
-                target.add('translatum')
+            target.add('translatum')
+            if instruction['movement'] == '+n' or instruction['movement'] == 1:
                 kal[day + timedelta(days=1)].append(target)
                 kal[day].remove(target)
-                return [day, day + timedelta(days=1)]
-            elif instruction['movement'] == '-n' or instruction['movement'] == '-1':
-                target.add('translatum')
+            elif instruction['movement'] == '-n' or instruction['movement'] == -1:
                 kal[day - timedelta(days=1)].append(target)
                 kal[day].remove(target)
-                return [day, day - timedelta(days=1)]
+            elif type(instruction['movement']) is int:
+                kal[day + timedelta(days=instruction['movement'])].append(target)
+                kal[day].remove(target)
             else:
                 transtarget = kal.match_unique(instruction['movement']).date
-                target.add('translatum')
                 kal[transtarget].append(target)
                 kal[day].remove(target)
-                return [day, transtarget]
+            return True
         elif instruction['response'] == 'temporale-faciendum':
             target.add('temporale')
-            return [day]
+            return False
         elif instruction['response'] == 'errora':
             raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {target}')
         else:
             raise RuntimeError(f'Unexpected response: {instruction["response"]}')
 
-    def resolvecoincidence(day, coincidence):
-        for i in kal[day]:
-            if coincidence['indices'].issubset(i) and i.isdisjoint(excludedtags):
-                if not type(coincidence['response']) == list:
-                    perform_action(coincidence, day, i)
-                else:
-                    for j in coincidence['response']:
-                        for k in kal[day]:
-                            if not k == i and k.isdisjoint(excludedtags) and j['indices'].issubset(k):
-                                target = i
-                                if 'target' in j and j['target'] == 'b':
-                                    target = k
-                                elif 'target' in j and j['target'] == 'ab':
-                                    target = [i, k]
-                                for modifiedday in perform_action(j, day, target):
-                                        resolve(modifiedday)
-                                return
-                                
-    def resolve(day):
-        for coincidence in coincidencetable:
-            resolvecoincidence(day, coincidence)
+    def process():
+        for rule in coincidencetable:
+            if not subprocess(rule):
+                return
 
-    for i in kal.keys():
-        resolve(i)
+    def subprocess(rule):
+        for i in kal.keys():
+            for tags in kal[i]:
+                if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
+                    if not type(rule['response']) is list:
+                        if perform_action(rule, i, tags):
+                            process()
+                            return False
+                        else:
+                            subprocess(rule)
+                            return True
+                    else:
+                        for secondaryrule in rule['response']:
+                            for secondarytags in kal[i]:
+                                if secondaryrule['indices'].issubset(secondarytags) and not tags == secondarytags and secondarytags.isdisjoint(excludedtags):
+                                    target = tags
+                                    if 'target' in secondaryrule and secondaryrule['target'] == 'b':
+                                        target = secondarytags
+                                    elif 'target' in secondaryrule and secondaryrule['target'] == 'ab':
+                                        target = [tags, secondarytags]
+                                    if perform_action(secondaryrule, i, target):
+                                        process()
+                                        return False
+                                    else:
+                                        subprocess(rule)
+                                        return True
+        return True
+    process()
 
     for date0, entries in kal.items():
         for i in entries:

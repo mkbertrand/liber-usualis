@@ -1,5 +1,35 @@
 [
 	{
+		"indices":["antiphonae"],
+		"response":[
+			{"indices":["nativitas"],"response":"translandum","target":"a","movement":-7}
+		]
+	},
+	{
+		"indices":["thomas","duplex-ii-classis"],
+		"response":[
+			{"indices":["antiphonae","feriae-ii"],"response":"translandum","target":"b","movement":-2},
+			{"indices":["antiphonae","feriae-iii"],"response":"translandum","target":"b","movement":-3},
+			{"indices":["antiphonae","feriae-iv"],"response":"translandum","target":"b","movement":-4},
+			{"indices":["antiphonae","feriae-v"],"response":"omittendum","target":"b"},
+			{"indices":["antiphonae","feriae-vi"],"response":"translandum","target":"b","movement":1}
+		]
+	},
+	{
+		"indices":["antiphonae","dominicae"],
+		"response":[
+			{"indices":["thomas","duplex-ii-classis"],"response":"translandum","target":"a","movement":-1},
+			{"indices":["hebdomada-iii-adventus","dominica"],"response":"translandum","target":"a","movement":6}
+		]
+	},
+	{
+		"indices":["antiphonae"],
+		"response":[
+			{"indices":["feria"],"response":"combinandum","target":"ab"},
+			{"indices":["dominica"],"response":"combinandum","target":"ab"}
+		]
+	},
+	{
 		"indices":["pascha","duplex-i-classis"],
 		"response":[
 			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
@@ -121,13 +151,13 @@
 	{
 		"indices":["corpus-christi","duplex-i-classis"],
 		"response":[
-			{"indices":["nativitas-joannis-baptistae","duplex-i-classis"],"response":"translandum","target":"b","movement":"+1"}
+			{"indices":["nativitas-joannis-baptistae","duplex-i-classis"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
 		"indices":["purificatio","duplex-ii-classis"],
 		"response":[
-			{"indices":["dominica-ii-classis"],"response":"translandum","target":"a","movement":"+1"}
+			{"indices":["dominica-ii-classis"],"response":"translandum","target":"a","movement":1}
 		]
 	},
 	{
@@ -161,7 +191,7 @@
 	{
 		"indices":["vigilia"],
 		"response":[
-			{"indices":["dominica"],"response":"translandum","target":"a","movement":"-1"},
+			{"indices":["dominica"],"response":"translandum","target":"a","movement":-1},
 			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
 			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
@@ -169,7 +199,7 @@
 	{
 		"indices":["fideles-defuncti"],
 		"response":[
-			{"indices":["dominica"],"response":"translandum","target":"a","movement":"-1"}
+			{"indices":["dominica"],"response":"translandum","target":"a","movement":-1}
 		]
 	},
 	{
@@ -216,7 +246,7 @@
 		"indices":["nativitas","dominica-infra-octavam"],
 		"response":[
 			{"indices":["duplex-ii-classis"],"response":"translandum","target":"a","movement":["ad-iii-kalendas-januarii"]},
-			{"indices":["thomas-cantuariensis"],"response":"translandum","target":"b","movement":"+1"}
+			{"indices":["thomas-cantuariensis"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
