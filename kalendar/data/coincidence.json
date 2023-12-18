@@ -1,5 +1,12 @@
 [
 	{
+		"indices":["antiphona-major"],
+		"response":[
+			{"indices":["feria"],"response":"combinandum","target":"ab"},
+			{"indices":["dominica"],"response":"combinandum","target":"ab"}
+		]
+	},
+	{
 		"indices":["antiphonae"],
 		"response":[
 			{"indices":["nativitas"],"response":"translandum","target":"a","movement":-7}
@@ -18,7 +25,6 @@
 	{
 		"indices":["antiphonae","dominicae"],
 		"response":[
-			{"indices":["thomas","duplex-ii-classis"],"response":"translandum","target":"a","movement":-1},
 			{"indices":["hebdomada-iii-adventus","dominica"],"response":"translandum","target":"a","movement":6}
 		]
 	},
