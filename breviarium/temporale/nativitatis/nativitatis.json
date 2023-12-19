@@ -1,3 +1,41 @@
 [
-	{}
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Hódie sciétis, quia véniet Dóminus: * Et mane vidébitis glóriam ejus."
+	},
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","matutinum","hymnus"],
+		"datum":[
+			"Verbum supérnum pródiens,/E Patris ætérni sinu/Qui natus orbi súbvenis,/Labénte cursu témporis:",
+			"Illúmina nunc péctora,/Tuóque amóre cóncrema,/Ut cor cadúca déserens/Cœli volúptas ímpleat",
+			"Ut, cum tribúnal Júdicis/Damnábit igni nóxios,/Et vox amíca débitum/Vocábit ad cœlum pios.",
+			"Non esca flammárum nigros/Volvámur inter túrbines,/Vultu Dei sed cómpotes/Cœli fruámur gaúdiis.",
+			"Patri simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per mone glória.","Amen."
+		]
+	},
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","nocturna-i","versiculus"],
+		"datum":["V. Hódie sciétis, quia véniet Dóminus.","R. Et mane vidébitis glóriam ejus."]
+	},
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartum áddidit causam, cur a desponsáta concéptus sit: Ut partus, íniquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxòre generátum."
+		]
+	},
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","nocturna-i","responsorium","responsorium-i"],
+		"datum":"Sanctificámini hódie, et estóte paráti: quia die crástina vidébitis"
+	},
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","nocturna-i","responsorium","responsorium-i","responsum"],
+		"datum":"Majestátem Dei in vobis."
+	},
+	{
+		"tags":["nativitas","duplex-minus","vigilia","poenitentialis","non-translandum","nocturna-i","responsorium","responsorium-i","versus"],
+		"datum":"Hódie sciétis, quia véeniet Dóminus, et mane vidébitis."
+	}
 ]
