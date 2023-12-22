@@ -20,7 +20,7 @@ def load_data(p: str):
                 return {k: recurse(v, key=k) for k, v in obj.items()}
             case list():
                 if all(type(x) is str for x in obj) and key != 'datum':
-                    return set(obj)
+                    return frozenset(obj)
                 return [recurse(v) for v in obj]
             case _:
                 return obj
@@ -68,43 +68,51 @@ def getbreviariumfiles(queries):
                     if 'datum' in entry or 'forwards-to' in entry:
                         ret.append(entry)
     added = []
+
+    # Janky ways of changing the tags, but I don't really know a better way to copy the item and then modify tags
     for entry in ret:
         if 'antiphona-invitatorium' in entry['tags']:
             entrycopy = copy.deepcopy(entry)
-            entrycopy['tags'].add('pars')
+            entrycopy['tags'] = entry['tags'] | {'pars'}
             entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
             added.append(entrycopy)
 
         elif type(entry['tags']) is list and 'antiphona-invitatorium' in entry['tags'][0]:
             entrycopy = copy.deepcopy(entry)
-            for j in entrycopy['tags']:
-                j.add('pars')
+            oldtags = entrycopy['tags']
+            entrycopy['tags'] = []
+            for j in oldtags:
+                entrycopy['tags'].append(j | {'pars'})
             entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
             added.append(entrycopy)
 
-        elif 'antiphona' in entry['tags']:
+        elif 'antiphona' in entry['tags'] and not 'antiphona-major' in entry[
+'tags']:
             entrycopy = copy.deepcopy(entry)
-            entrycopy['tags'].add('intonata')
+            entrycopy['tags'] = entry['tags'] | {'intonata'}
             entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
             if entrycopy['datum'][-1] not in ['.',',','?','!',':',';']:
                 entrycopy['datum'] += '.'
             added.append(entrycopy)
             entrycopy = copy.deepcopy(entry)
-            entrycopy['tags'].add('repetita')
+            entrycopy['tags'] = entry['tags'] | {'repetita'}
             entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
             added.append(entrycopy)
 
-        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0]:
+        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0] and 'antiphona-major' in entry['tags'][0]:
             entrycopy = copy.deepcopy(entry)
-            for j in entrycopy['tags']:
-                j.add('intonata')
+            oldtags = entrycopy['tags']
+            entrycopy['tags'] = []
+            for j in oldtags:
+                entrycopy['tags'].append(j | {'intonata'})
             entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
             if entrycopy['datum'][-1] not in ['.',',','?','!',':',';']:
                 entrycopy['datum'] += '.'
             added.append(entrycopy)
             entrycopy = copy.deepcopy(entry)
-            for j in entrycopy['tags']:
-                j.add('repetita')
+            entrycopy['tags'] = []
+            for j in oldtags:
+                entrycopy['tags'].append(j | {'repetita'})
             entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
             added.append(entrycopy)
     ret.extend(added)

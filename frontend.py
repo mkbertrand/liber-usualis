@@ -6,6 +6,7 @@ from datetime import datetime, date
 
 from datamanage import getyear, getbreviariumfile
 import breviarium
+import datamanage
 
 data_root = pathlib.Path(__file__).parent
 
@@ -40,12 +41,20 @@ def jsoninterp(j):
                 return stringhandle(obj) 
     return recurse(j)
 
+@route('/hora/<day>/<hour>')
+def office(day, hour):
+    defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
+    ret = jsoninterp(breviarium.process({'ante-officium'}, None, defpile))
+    for i in hour.split(' '):
+        ret += jsoninterp(breviarium.hour(i, datetime.strptime(day, '%Y-%m-%d').date()))
+    ret += jsoninterp(breviarium.process({'post-officium'}, None, defpile))
+    return template('frontend/index.tpl',office=ret)
+
 @route('/hora/<hour>')
 def office(hour):
-    print(hour)
     ret = ''
     for i in hour.split(' '):
-        ret += jsoninterp(breviarium.hour(i, date.today(), forcedprimary='temporale'))
+        ret += jsoninterp(breviarium.hour(i, date.today()))
     return template('frontend/index.tpl',office=ret)
 
 @route('/hora/')

@@ -1,6 +1,6 @@
 [
 	{
-		"tags":["nona", "hora"],
+		"tags":["nona","hora"],
 		"datum":[
 			["prex-duplex"],
 			["deus-in-adjutorium","ferialis"],
@@ -20,6 +20,7 @@
 			"R. Deo grátias.",
 			["formula","responsorium-breve"],
 			["nona","versiculus"],
+			["preces"],
 			["collecta-primaria"],
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
@@ -85,5 +86,25 @@
 	{
 		"tags":["nona","feria","responsorium-breve","versus"],
 		"datum":"Pes enim meus stetit in via recta."
+	},
+	{
+		"tags":["nona","preces"],
+		"datum":[]
+	},
+	{
+		"tags":["nona","poenitentialis","preces"],
+		"datum":[
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			"Pater noster.",
+			"Qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			"V. Dómine Deus virtútum convérte nos.",
+			"R. Et osténde fáciem tuam, et salvi érimus.",
+			"V. Exsúrge Christe, ádjuva nos.",
+			"R. Et líbera nos propter nomen tuum.",
+			"V. Dómine exaúdi oratiónem meam.",
+			"R. Et clamor meus ad te véniat."
+		]
 	}
 ]

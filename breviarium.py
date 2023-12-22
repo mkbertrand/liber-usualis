@@ -162,7 +162,7 @@ def process(item, cascades, pile):
             ret.append(process({'collecta','terminatio','commemoratio'}, [commemorations[-1]], probablepile))
         return ret
      # None can sometimes be the result of a search and is expected, but indicates an absent item
-    if type(item) is set:
+    if type(item) is set or type(item) is frozenset:
         item = search([pickcascades(item, cascades)], pile, priortags = item)
         if item is None:
             return 'Absens'
@@ -319,3 +319,4 @@ if __name__ == '__main__':
     else:
         # Write JSON output
         args.output.write(dump_data(ret) + '\n')
+

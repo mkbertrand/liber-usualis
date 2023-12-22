@@ -1,5 +1,62 @@
 [
 	{
+		"occurrence":["ad-xvi-kalendas-januarii"],
+		"tags":["antiphona-major","o-sapientia"]
+	},
+	{
+		"occurrence":["ad-xv-kalendas-januarii"],
+		"tags":["antiphona-major","o-adonai"]
+	},
+	{
+		"occurrence":["ad-xiv-kalendas-januarii"],
+		"tags":["antiphona-major","o-radix-jesse"]
+	},
+	{
+		"occurrence":["ad-xiii-kalendas-januarii"],
+		"tags":["antiphona-major","o-clavis-david"]
+	},
+	{
+		"occurrence":["ad-xii-kalendas-januarii"],
+		"tags":["antiphona-major","o-oriens"]
+	},
+	{
+		"occurrence":["ad-xi-kalendas-januarii"],
+		"tags":["antiphona-major","o-rex-gentium"]
+	},
+	{
+		"occurrence":["ad-x-kalendas-januarii"],
+		"tags":["antiphona-major","o-emmanuel"]
+	},
+	{
+		"occurrence":["nativitas","dominica-infra-octavam"],
+		"tags":["antiphonae","dominicae"]
+	},
+	{
+		"occurrence":["nativitas","dominica-infra-octavam"],
+		"difference":-6,
+		"tags":["antiphonae","feriae-ii"]
+	},
+	{
+		"occurrence":["nativitas","dominica-infra-octavam"],
+		"difference":-5,
+		"tags":["antiphonae","feriae-iii"]
+	},
+	{
+		"occurrence":["nativitas","dominica-infra-octavam"],
+		"difference":-4,
+		"tags":["antiphonae","feriae-iv"]
+	},
+	{
+		"occurrence":["nativitas","dominica-infra-octavam"],
+		"difference":-3,
+		"tags":["antiphonae","feriae-v"]
+	},
+	{
+		"occurrence":["nativitas","dominica-infra-octavam"],
+		"difference":-2,
+		"tags":["antiphonae","feriae-vi"]
+	},
+	{
 		"occurrence":[
 			["per-annum","feria"],
 			["septuagesima","feria"]
