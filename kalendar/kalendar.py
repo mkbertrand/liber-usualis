@@ -366,65 +366,51 @@ def kalendar(year: int) -> Kalendar:
             omittedepiphanyentry.discard('semiduplex')
             kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
+    # RestartRequest is used to define what extent of the coincidencetable should be rechecked and what days should be examined in that restart.
+    class RestartRequest(NamedTuple):
+        # The reason these are needed is to specify which days should be rechecked under previous coincidencetable rules.  Obviously the whole kalendar could just be rechecked for all rules, but that is super slow and miserable.
+        days: list
+        rulenumber: int
     excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
 
-    # Returns whether full process needs to be rerun
-    def perform_action(instruction, day, target):
+    # perform_action() fulfils the action specified by a certain rule in the coincidencetable. The return is either None, or a RestartRequest.
+    def perform_action(instruction, day, target, rulenumber):
         if instruction['response'] == 'combinandum':
             target[0] |= target[1]
             kal[day].remove(target[1])
-            return True
-        elif instruction['response'] == {'commemorandum', 'temporale-faciendum'}:
-            target.add('commemoratum')
-            target.add('temporale')
-            return False
+            return RestartRequest([day], rulenumber)
         elif instruction['response'] == 'omittendum':
             kal[day].remove(target)
-            return False
-        elif instruction['response'] == 'commemorandum':
-            target.add('commemoratum')
-            return False
+            return
         elif instruction['response'] == 'translandum':
             target.add('translatum')
-            if instruction['movement'] == '+n' or instruction['movement'] == 1:
-                kal[day + timedelta(days=1)].append(target)
-                kal[day].remove(target)
-            elif instruction['movement'] == '-n' or instruction['movement'] == -1:
-                kal[day - timedelta(days=1)].append(target)
-                kal[day].remove(target)
-            elif type(instruction['movement']) is int:
-                kal[day + timedelta(days=instruction['movement'])].append(target)
-                kal[day].remove(target)
-            else:
-                transtarget = kal.match_unique(instruction['movement']).date
-                kal[transtarget].append(target)
-                kal[day].remove(target)
-            return True
-        elif instruction['response'] == 'temporale-faciendum':
-            target.add('temporale')
-            return False
+            transferday = (day + timedelta(days=instruction['movement'])) if type(instruction['movement']) is int else kal.match_unique(instruction['movement']).date
+            kal[transferday].append(target)
+            kal[day].remove(target)
+            return RestartRequest([day, transferday], rulenumber)
         elif instruction['response'] == 'errora':
             raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {target}')
+        # These remaining conditions are when the response is anything else, which means that the string(s) in the response are tags to be given to the target.
+        elif type(instruction['response']) is frozenset:
+            target |= instruction['response']
+            return RestartRequest([day], rulenumber)
         else:
-            raise RuntimeError(f'Unexpected response: {instruction["response"]}')
+            if not type(instruction['response']) is str:
+                raise RuntimeError(type(instruction['response']))
+            target.add(instruction['response'])
+            return RestartRequest([day], rulenumber)
 
-    def process():
-        for rule in coincidencetable:
-            for i in kal.keys():
-                if not subprocess(rule, i):
-                    return
-
-    # Returns whether process() should continue after this subprocess
-    def subprocess(rule, i):
+    # Applies only a specified rule for a certain day. May be recursed when perform_action returns None so that the whole process() doesn't need to be restarted.
+    def applyruleonday(rule, i, rulenumber):
+        if not rule['indices'].issubset(
         for tags in kal[i]:
             if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
                 if not type(rule['response']) is list:
-                    if perform_action(rule, i, tags):
-                        process()
-                        return False
+                    response = perform_action(rule, i, tags, rulenumber)
+                    if response is None:
+                        return applyruleonday(rule, i, rulenumber)
                     else:
-                        subprocess(rule, i)
-                        return True
+                        return response
                 else:
                     for secondaryrule in rule['response']:
                         for secondarytags in kal[i]:
@@ -434,14 +420,30 @@ def kalendar(year: int) -> Kalendar:
                                     target = secondarytags
                                 elif 'target' in secondaryrule and secondaryrule['target'] == 'ab':
                                     target = [tags, secondarytags]
-                                if perform_action(secondaryrule, i, target):
-                                    process()
-                                    return False
+                                # Performs the action. If no restart is necessary (IE response is None) it recurses the applyruleonday function since a rule could be applied multiple times in a single day, but it can't just continue the existing loop because an element could've been removed.
+                                response = perform_action(secondaryrule, i, target, rulenumber)
+                                if response is None:
+                                    return applyruleonday(rule, i, rulenumber)
                                 else:
-                                    subprocess(rule, i)
-                                    return True
-        return True
-    process()
+                                    return response
+        return None
+
+    # This is where the rules are looped through and applied to either all days, or just specified days (if they are previously checked rules being retroactively rechecked).
+    def process(promptingresponse):
+        for rulenumber in range(0, len(coincidencetable)):
+            for day in (promptingresponse.days if rulenumber < promptingresponse.rulenumber else kal.keys()):
+                response = applyruleonday(coincidencetable[rulenumber], day, rulenumber)
+                if not response is None:
+                    return response
+        return None
+
+    # This is the response that process() returns.  It has to be out here so that it persists for the loop to reuse it.
+    workingresponse = RestartRequest(None, 0)
+    # Continually reruns process with the specified RestartRequest, which is just a NamedTuple which specifies until which rule only a list of specified days should be checked against previous rules. Previous rules need to be checked since sometimes a previously inapplicable rule may be made applicable because another tag is added to a tagset.
+    while True:
+        workingresponse = process(workingresponse)
+        if workingresponse is None:
+            break
 
     for date0, entries in kal.items():
         for i in entries:
