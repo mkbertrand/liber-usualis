@@ -402,7 +402,6 @@ def kalendar(year: int) -> Kalendar:
 
     # Applies only a specified rule for a certain day. May be recursed when perform_action returns None so that the whole process() doesn't need to be restarted.
     def applyruleonday(rule, i, rulenumber):
-        if not rule['indices'].issubset(
         for tags in kal[i]:
             if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
                 if not type(rule['response']) is list:
