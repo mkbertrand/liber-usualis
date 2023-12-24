@@ -38,7 +38,7 @@
 	{
 		"indices":["pascha","duplex-i-classis"],
 		"response":[
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-minus"],"response":"omittendum","target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
@@ -48,23 +48,23 @@
 	{
 		"indices":["pascha"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
 			{"indices":["marcus","duplex-ii-classis"],"response":"translandum","target":"b","movement":["feria-iii","hebdomada-i-paschae"]},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
 			{"indices":["bmv-sabbatum"],"response":"omittendum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
 			{"indices":["vigilia"],"response":"omittendum","target":"b"}
 		]
 	},
 	{
 		"indices":["pentecostes","duplex-i-classis"],
 		"response":[
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-minus"],"response":"omittendum","target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
@@ -80,15 +80,15 @@
 	{
 		"indices":["pentecostes"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
 			{"indices":["bmv-sabbatum"],"response":"omittendum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
 			{"indices":["vigilia"],"response":"omittendum","target":"b"}
 		]
 	},
@@ -103,31 +103,31 @@
 			{"indices":["feria-major"],"response":"omittendum","target":"a"},
 			{"indices":["vigilia"],"response":"omittendum","target":"a"},
 			{"indices":["dominica"],"response":"omittendum","target":"a"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"}
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["cinerum","feria-iv"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
 			{"indices":["vigilia"],"response":"omittendum","target":"b"}
 		]
 	},
 	{
 		"indices":["triduum"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-minus"],"response":"omittendum","target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
@@ -137,21 +137,21 @@
 	{
 		"indices":["hebdomada-sancta"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
 			{"indices":["vigilia"],"response":"omittendum","target":"b"}
 		]
 	},
 	{
 		"indices":["marcus","duplex-ii-classis"],
 		"response":[
-			{"indices":["philippus-jacobus","duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"}
+			{"indices":["philippus-jacobus","duplex-ii-classis"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
@@ -198,7 +198,7 @@
 		"indices":["vigilia"],
 		"response":[
 			{"indices":["dominica"],"response":"translandum","target":"a","movement":-1},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
 			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
@@ -211,41 +211,41 @@
 	{
 		"indices":["quadragesima","dominica"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"}
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["dominica-i-classis"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"}
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["dominica-ii-classis"],
 		"response":[
-			{"indices":["sollemnitas-localis"],"response":["commemorandum","temporale-faciendum"],"target":"a"},
-			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"}
+			{"indices":["sollemnitas-localis"],"response":["commemoratum","temporale"],"target":"a"},
+			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
@@ -258,34 +258,34 @@
 	{
 		"indices":["corpus-christi","infra-octavam"],
 		"response":[
-			{"indices":["nativitas-joannis-baptistae","infra-octavam"],"response":"commemorandum","target":"b"},
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-majus","translatum"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor","translatum"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"}
+			{"indices":["nativitas-joannis-baptistae","infra-octavam"],"response":"commemoratum","target":"b"},
+			{"indices":["duplex-i-classis"],"response":"commemoratum","target":"a"},
+			{"indices":["duplex-majus","translatum"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor","translatum"],"response":"translandum","target":"b","movement":1},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["nativitas","infra-octavam"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["infra-octavam"],"response":"commemorandum","target":"b"}
+			{"indices":["duplex-i-classis"],"response":"commemoratum","target":"a"},
+			{"indices":["duplex-ii-classis"],"response":"commemoratum","target":"a"},
+			{"indices":["infra-octavam"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["epiphania","infra-octavam"],
 		"response":[
-			{"indices":["duplex-i-classis"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["duplex-i-classis"],"response":"commemoratum","target":"a"},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-minus"],"response":"omittendum","target":"b"},
-			{"indices":["dominica"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
+			{"indices":["dominica"],"response":["commemoratum", "temporale"],"target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
 			{"indices":["commemoratio"],"response":"omittendum","target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
@@ -298,213 +298,213 @@
 	{
 		"indices":["nomen-bmv"],
 		"response":[
-			{"indices":["exaltatio-crucis"],"response":"commemorandum","target":"b"}
+			{"indices":["exaltatio-crucis"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["duplex-i-classis"],
 		"response":[
-			{"indices":["sollemnitas-localis"],"response":"translandum","target":"a","movement":"+n"},
+			{"indices":["sollemnitas-localis"],"response":"translandum","target":"a","movement":1},
 			{"indices":["duplex-i-classis"],"response":"errora"},
-			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-minus"],"response":"omittendum","target":"b"},
-			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
+			{"indices":["dominica"],"response":["commemoratum","temporale"],"target":"b"},
 			{"indices":["semiduplex"],"response":"omittendum","target":"b"},
 			{"indices":["simplex"],"response":"omittendum","target":"b"},
 			{"indices":["commemoratio"],"response":"omittendum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["inventio-crucis"],
 		"response":[
-			{"indices":["philippus-jacobus"],"response":"translandum","target":"a","movement":"+n"},
-			{"indices":["marcus"],"response":"translandum","target":"a","movement":"+n"}
+			{"indices":["philippus-jacobus"],"response":"translandum","target":"a","movement":1},
+			{"indices":["marcus"],"response":"translandum","target":"a","movement":1}
 		]
 	},
 	{
 		"indices":["duplex-ii-classis"],
 		"response":[
-			{"indices":["visitatio"],"response":"translandum","target":"a","movement":"+n"},
-			{"indices":["patrocinius-joseph"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["exaltatio-crucis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["inventio-crucis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["pretiosissimus-sanguis"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["dedicatio-michaelis"],"response":"translandum","target":"a","movement":"+n"},
-			{"indices":["rosarium-bmv"],"response":"translandum","target":"b","movement":"+n"},
+			{"indices":["visitatio"],"response":"translandum","target":"a","movement":1},
+			{"indices":["patrocinius-joseph"],"response":"translandum","target":"b","movement":1},
+			{"indices":["exaltatio-crucis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["inventio-crucis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["pretiosissimus-sanguis"],"response":"translandum","target":"b","movement":1},
+			{"indices":["dedicatio-michaelis"],"response":"translandum","target":"a","movement":1},
+			{"indices":["rosarium-bmv"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-ii-classis"],"response":"errora"},
-			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
+			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["dominica"],"response":["commemoratum","temporale"],"target":"b"},
 			{"indices":["infra-octavam"],"response":"omittendum","target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["septem-dolores","poenitentialis"],
 		"response":[
-			{"indices":["duplex-majus"],"response":"translandum","target":"a","movement":"+n"},
+			{"indices":["duplex-majus"],"response":"translandum","target":"a","movement":1},
 			{"indices":["dominica-in-palmis"],"response":"omittendum","target":"a"}
 		]
 	},
 	{
 		"indices":["duplex-majus"],
 		"response":[
-			{"indices":["cor-jesus"],"response":"translandum","target":"a","movement":"+n"},
+			{"indices":["cor-jesus"],"response":"translandum","target":"a","movement":1},
 			{"indices":["duplex-majus"],"response":"errora"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["dominica"],"response":["commemoratum","temporale"],"target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["corpus-christi","dies-octava"],
 		"response":[
-			{"indices":["nativitas-joannis-baptistae","dies-octava"],"response":"commemorandum","target":"b"}
+			{"indices":["nativitas-joannis-baptistae","dies-octava"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["dies-octava"],
 		"response":[
 			{"indices":["dies-octava"],"response":"errora"},
-			{"indices":["doctor"],"response":"translandum","target":"b","movement":"+n"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"}
+			{"indices":["doctor"],"response":"translandum","target":"b","movement":1},
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["isidorus"],
 		"response":[
-			{"indices":["cyrillus-hierosolymitani"],"response":"translandum","target":"a","movement":"+n"},
-			{"indices":["leo-i"],"response":"translandum","target":"b","movement":"+n"}
+			{"indices":["cyrillus-hierosolymitani"],"response":"translandum","target":"a","movement":1},
+			{"indices":["leo-i"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
 		"indices":["leo-i"],
 		"response":[
-			{"indices":["anselmus"],"response":"translandum","target":"b","movement":"+n"}
+			{"indices":["anselmus"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
 		"indices":["anselmus"],
 		"response":[
-			{"indices":["athanasius"],"response":"translandum","target":"b","movement":"+n"}
+			{"indices":["athanasius"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
 		"indices":["athanasius"],
 		"response":[
-			{"indices":["gregorius-nazianzenus"],"response":"translandum","target":"b","movement":"+n"}
+			{"indices":["gregorius-nazianzenus"],"response":"translandum","target":"b","movement":1}
 		]
 	},
 	{
 		"indices":["doctor"],
 		"response":[
 			{"indices":["doctor"],"response":"errora"},
-			{"indices":["duplex-minus"],"response":"commemorandum","target":"b"},
-			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["duplex-minus"],"response":"commemoratum","target":"b"},
+			{"indices":["dominica"],"response":["commemoratum","temporale"],"target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["duplex-minus"],
 		"response":[
 			{"indices":["duplex-minus"],"response":"errora"},
-			{"indices":["dominica"],"response":["commemorandum","temporale-faciendum"],"target":"b"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["dominica"],"response":["commemoratum","temporale"],"target":"b"},
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["dominica"],
 		"response":[
-			{"indices":["semiduplex"],"response":"commemorandum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"}
+			{"indices":["semiduplex"],"response":"commemoratum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["nativitas-joannis-baptistae","infra-octavam"],
 		"response":[
-			{"indices":["petrus-paulus","infra-octavam"],"response":"commemorandum","target":"a"}
+			{"indices":["petrus-paulus","infra-octavam"],"response":"commemoratum","target":"a"}
 		]
 	},
 	{
 		"indices":["laurentius","infra-octavam"],
 		"response":[
-			{"indices":["assumptio","infra-octavam"],"response":"commemorandum","target":"a"}
+			{"indices":["assumptio","infra-octavam"],"response":"commemoratum","target":"a"}
 		]
 	},
 	{
 		"indices":["nativitas","infra-octavam"],
 		"response":[
-			{"indices":["infra-octavam"],"response":"commemorandum","target":"b"}
+			{"indices":["infra-octavam"],"response":"commemoratum","target":"b"}
 		]
 	},
 	{
 		"indices":["infra-octavam"],
 		"response":[
 			{"indices":["infra-octavam"],"response":"errora"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["semiduplex"],"response":"commemoratum","target":"a"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["post-ascensionem"],
 		"response":[
-			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["semiduplex"],"response":"commemoratum","target":"a"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["semiduplex"],
 		"response":[
 			{"indices":["semiduplex"],"response":"errora"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria-major"],"response":["commemorandum", "temporale-faciendum"],"target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria-major"],"response":["commemoratum", "temporale"],"target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
 		"indices":["feria-major"],
 		"response":[
 			{"indices":["bmv-sabbatum"],"response":"omittendum","target":"b"},
-			{"indices":["simplex"],"response":"commemorandum","target":"b"},
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
+			{"indices":["simplex"],"response":"commemoratum","target":"b"},
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
 			{"indices":["feria"],"response":"combinandum","target":"ab"}
 		]
 	},
 	{
 		"indices":["simplex"],
 		"response":[
-			{"indices":["commemoratio"],"response":"commemorandum","target":"b"},
-			{"indices":["feria"],"response":"temporale-faciendum","target":"b"}
+			{"indices":["commemoratio"],"response":"commemoratum","target":"b"},
+			{"indices":["feria"],"response":"temporale","target":"b"}
 		]
 	},
 	{
@@ -521,9 +521,9 @@
 			{"indices":["duplex-majus"],"response":"omittendum","target":"a"},
 			{"indices":["duplex-minus"],"response":"omittendum","target":"a"},
 			{"indices":["infra-octavam"],"response":"omittendum","target":"a"},
-			{"indices":["semiduplex"],"response":"commemorandum","target":"a"},
-			{"indices":["simplex"],"response":"commemorandum","target":"a"},
-			{"indices":["feria"],"response":"commemorandum","target":"a"}
+			{"indices":["semiduplex"],"response":"commemoratum","target":"a"},
+			{"indices":["simplex"],"response":"commemoratum","target":"a"},
+			{"indices":["feria"],"response":"commemoratum","target":"a"}
 		]
 	}
 ]
