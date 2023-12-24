@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["adventus","feria","vesperae","capitulum"],
-		"datum":"Non auferétur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est: et ipse erit exspectátio Géntium."
+		"datum":"Non auferétur sceptrum de Juda, et dux de fémore ejus, + donec véniat qui mitténdus est: * et ipse erit exspectátio Géntium."
 	},
 	{
 		"tags":["adventus","vesperae","hymnus"],
@@ -18,6 +18,15 @@
 	{
 		"tags":["adventus","vesperae","versiculus"],
 		"datum":["V. Roráte cœli désuper, et nubes pluant justum.","R. Aperiátur terra, et gérminet Salvatórem."]
+	},
+	{
+		"tags":["adventus","completorium","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2498",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			["terminatio","praesta-pater"]
+		]
 	},
 	{
 		"tags":["adventus","dominica","antiphona","antiphona-invitatorium"],
@@ -111,7 +120,7 @@
 	},
 	{
 		"tags":["adventus","feria","laudes","capitulum"],
-		"datum":"Veníte, et ascendámus ad montem Dómini, et ad domum Dei Jacob, et docébit nos vias suas, et ambulábimus in sémitis ejus: quia de Sion exíbit lex, et verbum Dómini de Jerúsalem."
+		"datum":"Veníte, et ascendámus ad montem Dómini, et ad domum Dei Jacob, + et docébit nos vias suas, et ambulábimus in sémitis ejus: * quia de Sion exíbit lex, et verbum Dómini de Jerúsalem."
 	},
 	{
 		"tags":["adventus","laudes","hymnus"],
@@ -136,8 +145,17 @@
 		"versus":"Qui ventúrus es in mundum."
 	},
 	{
+		"tags":["adventus","tertia","hymnus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=2889",
+		"datum":[
+			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
+			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
 		"tags":["adventus","feria","tertia","capitulum"],
-		"datum":"Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit rex, et sápiens erit: et fáciet judícium et justítiam in terra."
+		"datum":"Ecce dies véniunt, dicit Dóminus, + et suscitábo David germen justum: et regnábit rex, et sápiens erit: * et fáciet judícium et justítiam in terra."
 	},
 	{
 		"tags":["adventus","tertia","responsorium-breve"],
@@ -152,7 +170,7 @@
 	},
 	{
 		"tags":["adventus","feria","sexta","capitulum"],
-		"datum":"In diébus illis salvábitur Juda, et Ísraël habitábit confidénter: et hoc est nomen, quod vocábunt eum, Dóminus justus noster."
+		"datum":"In diébus illis salvábitur Juda, et Ísraël habitábit confidénter: + et hoc est nomen, quod vocábunt eum, * Dóminus justus noster."
 	},
 	{
 		"tags":["adventus","sexta","responsorium-breve"],
@@ -167,7 +185,7 @@
 	},
 	{
 		"tags":["adventus","feria","nona","capitulum"],
-		"datum":"Prope est ut véniat tempus ejus, et dies ejus non elongabúntur. Miserébitur enim Dóminus Jacob, et Ísraël salvábitur."
+		"datum":"Prope est ut véniat tempus ejus, + et dies ejus non elongabúntur. * Miserébitur enim Dóminus Jacob, et Ísraël salvábitur."
 	},
 	{
 		"tags":["adventus","nona","responsorium-breve"],
@@ -299,6 +317,38 @@
 	},
 	{
 		"tags":[
+			["adventus","dominicae","laudes","antiphona","antiphona-i"],
+			["adventus","dominicae","prima","antiphona","antiphona-i"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2386",
+		"datum":"Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja."
+	},
+	{
+		"tags":[
+			["adventus","dominicae","laudes","antiphona","antiphona-ii"],
+			["adventus","dominicae","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=238://gregobase.selapa.net/chant.php?id=2675",
+		"datum":"Ecce véniet * desiderátus cunctis Géntibus: et replébitur glória domus Dómini, allelúja."
+	},
+	{
+		"tags":[
+			["adventus","dominicae","laudes","antiphona","antiphona-iii"],
+			["adventus","dominicae","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=2801",
+		"datum":"Erunt prava * in dirécta, et áspera in vias planas: veni Dómine, et noli tardáre, allelúja."
+	},
+	{
+		"tags":[
+			["adventus","dominicae","laudes","antiphona","antiphona-v"],
+			["adventus","dominicae","nona","antiphona","antiphona-v"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=280://gregobase.selapa.net/chant.php?id=2440",
+		"datum":"Omnípotens sermo tuus * Dómine a regálibus sédibus véniet, allelúja."
+	},
+	{
+		"tags":[
 			["adventus","feriae-iii","laudes","antiphona","antiphona-ii"],
 			["adventus","feriae-iii","tertia","antiphona","antiphona-ii"]
 		],
@@ -312,5 +362,13 @@
 		],
 		"src":"https://gregobase.selapa.net/chant.php?id=12425",
 		"datum":"Ut cognoscámus Dómine * in terra viam tuam, in ómnibus géntibus salutáre tuum."
+	},
+	{
+		"tags":[
+			["adventus","feriae-v","laudes","antiphona","antiphona-iii"],
+			["adventus","feriae-v","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"https://gregobase.selapa.net/chant.php?id=13141",
+		"datum":"De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen ejus."
 	}
 ]
