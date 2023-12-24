@@ -114,7 +114,7 @@
 	},
 	{
 		"tags":["nativitas","vigilia","laudes","collecta"],
-		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque júdicem secúri videámus, Dóminum nostrum Jesum CHristum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus."
+		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque júdicem secúri videámus, Dóminum nostrum Jesum Christum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus."
 	},
 	{	"tags":["nativitas","vigilia","tertia","responsorium-breve"],
 		"incipit":"Hódie sciétis,",
@@ -196,7 +196,10 @@
 		"datum":"Appáruit benígnitas, et humánitas Salvatóris nostri Dei: non ex opéribus justítiæ, quæ fécimus nos, sed sécundum suam misericórdiam salvos nos fecit."
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","hymnus"],
+		"tags":[
+			["nativitas","i-vesperae","vesperae","hymnus"],
+			["nativitas","matutinum","hymnus"]
+		],
 		"datum":[
 			"Jesu Redémptor ómnium,/Quem lucis ante oríginem/Parem patérnæ glóriæ/Pater suprémus édidit.",
 			"Tu lumen, et splendor Patris,/Tu spes perénnis ómnium,/Inténde quas fundunt preces/Tui per orbem sérvuli.",
@@ -206,5 +209,54 @@
 			"Et nos, beáta quos sacri/Rigávit unda sánguinis;/Natális ob diem tui/Hymni tribútum sólvimus.",
 			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
+	},
+	
+	{
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Cum ortus fúerit sol de cœlo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo."
+	},
+	
+	{
+		"tags":["nativitas","i-vesperae","vesperae","collecta"],
+		"datum":"Concéde, quǽsumus omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet."
+	},
+	{
+		"tags":["nativitas","i-vesperae","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+
+
+
+	{
+                "tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
+                "datum":"Christus natus est nobis: * Veníte adorémus."
+        },
+	{
+		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Dóminus dixit * ad me: Fílius meus es tu, ego hódie génui te."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","i-psalmus"],
+		"forwards-to":["psalmus-ii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Tamquam sponsus * Dóminus procédens de thálamo suo."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","ii-psalmus"],
+		"forwards-to":["psalmus-xviii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Diffúsa est * grátia in lábiis tuis, proptérea benedíxit te Deus in ætérnum."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","iii-psalmus"],
+		"forwards-to":["psalmus-xliv"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Tamquam sponsus.","R. Dóminus procédens de thálamo suo."]
 	}
 ]
