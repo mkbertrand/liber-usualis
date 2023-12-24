@@ -5,14 +5,7 @@
 	},
 	{
 		"tags":["nativitas","vigilia","matutinum","hymnus"],
-		"src":"https://nocturnale.marteo.fr/chant/EXA1H/",
-		"datum":[
-			"Verbum supérnum pródiens,/E Patris ætérni sinu/Qui natus orbi súbvenis,/Labénte cursu témporis:",
-			"Illúmina nunc péctora,/Tuóque amóre cóncrema,/Ut cor cadúca déserens/Cœli volúptas ímpleat",
-			"Ut, cum tribúnal Júdicis/Damnábit igni nóxios,/Et vox amíca débitum/Vocábit ad cœlum pios.",
-			"Non esca flammárum nigros/Volvámur inter túrbines,/Vultu Dei sed cómpotes/Cœli fruámur gaúdiis.",
-			"Patri simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per mone glória.","Amen."
-		]
+		"forwards-to":["adventus","matutinum","hymnus"]
 	},
 	{
 		"tags":["nativitas","vigilia","matutinum","nocturna-i","versiculus"],
@@ -29,18 +22,10 @@
 	},
 	{
 		"tags":["nativitas","vigilia","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"datum":"Sanctificámini hódie, et estóte paráti: quia die crástina vidébitis"
+		"incipit":"Sanctificámini hódie, et estóte paráti: quia die crástina vidébitis",
+		"responsum":"Majestátem Dei in vobis.",
+		"versus":"Hódie sciétis, quia véniet Dóminus, et mane vidébitis."
 	},
-	{
-		"tags":["nativitas","vigilia","matutinum","nocturna-i","responsorium","responsorium-i","responsum"],
-		"datum":"Majestátem Dei in vobis."
-	},
-	{
-		"tags":["nativitas","vigilia","matutinum","nocturna-i","responsorium","responsorium-i","versus"],
-		"datum":"Hódie sciétis, quia véeniet Dóminus, et mane vidébitis."
-	},
-
-	
 	{
 		"tags":["nativitas","vigilia","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":[
@@ -49,15 +34,9 @@
 	},
 	{
 		"tags":["nativitas","vigilia","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"datum":"Constántes estóte, vidébitis auxílium Dómini super vos: Judǽa et Jerúsalem, nolíte timére:"
-	},
-	{
-		"tags":["nativitas","vigilia","matutinum","nocturna-ii","responsorium","responsorium-ii","responsum"],
-		"datum":"Cras egrediémini, et Dóminus erit vobíscum."
-	},
-	{
-		"tags":["nativitas","vigilia","matutinum","nocturna-ii","responsorium","responsorium-ii","versus"],
-		"datum":"Sanctificámini fílii Israël, et estóte paráti."
+		"incipit":"Constántes estóte, vidébitis auxílium Dómini super vos: Judǽa et Jerúsalem, nolíte timére:",
+		"responsum":"Cras egrediémini, et Dóminus erit vobíscum.",
+		"versus":"Sanctificámini fílii Israël, et estóte paráti."
 	},
 
 	
@@ -69,15 +48,9 @@
 	},
 	{
 		"tags":["nativitas","vigilia","matutinum","nocturna-iii","responsorium","responsorium-iii"],
-		"datum":"Sanctificámini, fílii Israël, dicit Dóminus: die enim crástina descéndet Dóminus,"
-	},
-	{
-		"tags":["nativitas","vigilia","matutinum","nocturna-iii","responsorium","responsorium-iii","responsum"],
-		"datum":"Et aúferet a vobis omnem languórem."
-	},
-	{
-		"tags":["nativitas","vigilia","matutinum","nocturna-iii","responsorium","responsorium-iii","versus"],
-		"datum":"Crástina die delébitur iníquitas terræ, et regnábit super nos Salvátor mundi."
+		"incipit":"Sanctificámini, fílii Israël, dicit Dóminus: die enim crástina descéndet Dóminus,",
+		"responsum":"Et aúferet a vobis omnem languórem.",
+		"versus":"Crástina die delébitur iníquitas terræ, et regnábit super nos Salvátor mundi."
 	},
 
 	{	
@@ -89,12 +62,18 @@
 		"forwards-to":["psalmus-xcii"]
 	},
 	{		
-		"tags":["nativitas","vigilia","laudes","antiphona","antiphona-ii"],
+		"tags":[
+			["nativitas","vigilia","laudes","antiphona","antiphona-ii"],
+			["nativitas","vigilia","tertia","antiphona"]
+		],
 		"datum":"Hódie sciétis * quia véniet Dóminus: et mane vidébitis glóriam ejus."
 	},
 	
 	{		
-		"tags":["nativitas","vigilia","laudes","antiphona","antiphona-iii"],
+		"tags":[
+			["nativitas","vigilia","sexta","antiphona"],
+			["nativitas","vigilia","laudes","antiphona","antiphona-iii"]
+		],
 		"datum":"Crástina die * delébitur iníquitas terræ: et regnábit super nos Salvátor mundi."
 	},
 	
@@ -104,26 +83,29 @@
 	},
 	
 	{		
-		"tags":["nativitas","vigilia","laudes","antiphona","antiphona-v"],
+		"tags":[
+			["nativitas","vigilia","laudes","antiphona","antiphona-v"],
+			["nativitas","vigilia","nona","antiphona"]
+		],
 		"datum":"Crástina erit * vobis salus, dicit Dóminus Deus exercítuum."
 	},
 	{	
-		"tags":["nativitas","vigilia","laudes","capitulum"],
+		"tags":[
+			["nativitas","vigilia","laudes","capitulum"],
+			["nativitas","vigilia","tertia","capitulum"]
+		],
 		"datum":"Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem."
 	},
 	{	
 		"tags":["nativitas","vigilia","laudes","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11919",
-		"datum":[
-			"En clara vox redárguit/Obscúra quæque, pérsonans:/Procul fugéntur sómnia:/Ab alto Jesus prómicat.",
-			"Mens jam resúrgat tórpida,/Non ámplius jacens humi;/Sidus refúlget jam novum,/Ut tollat omne nóxium.",
-			"En Agnus ad nos míttitur/Laxáre gratis débitum:/Omnes simul cum lácrimis/Precémur indulgéntiam.",
-			"Ut, cum secúndo fúlserit,/Metúque mundum cínxerit,/Non pro reátu púniat,/Sed nos pius tunc prótegat.",
-			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.","Amen."
-		]
+		"forwards-to":["adventus","laudes","hymnus"]
 	},
 	{	
-		"tags":["nativitas","vigilia","laudes","versiculus"],
+		"tags":[
+			["nativitas","vigilia","laudes","versiculus"],
+			["nativitas","vigilia","nona","versiculus"],
+			["nativitas","i-vesperae","vesperae","versiculus"]
+		],
 		"datum":["V. Crástina die delébitur iníquitas terræ.","R. Et regnábit super nos Salvátor mundi."]
 	},
 	{
@@ -132,26 +114,12 @@
 	},
 	{
 		"tags":["nativitas","vigilia","laudes","collecta"],
-		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque júdicem secúri videámus, Dóminum nostrum Jesum CHristum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus."
-	},
-	{
-		"tags":["nativitas","vigilia","tertia","antiphona"],
-		"forwards-to":["nativitas","vigilia","laudes","antiphona","antiphona-ii"]
-	},
-	{
-		"tags":["nativitas","vigilia","tertia","capitulum"],
-		"forwards-to":["nativitas","vigilia","laudes","capitulum"]
+		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque júdicem secúri videámus, Dóminum nostrum Jesum Christum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus."
 	},
 	{	"tags":["nativitas","vigilia","tertia","responsorium-breve"],
-		"datum":"Hódie sciétis,"
-	},
-	{
-		"tags":["nativitas","vigilia","tertia","responsorium-breve","responsum"],
-		"datum":"Quia véniet Dóminus."
-	},
-	{
-		"tags":["nativitas","vigilia","tertia","responsorium-breve","versus"],
-		"datum":"Et mane vidébitis glóriam ejus."
+		"incipit":"Hódie sciétis,",
+		"responsum":"Quia véniet Dóminus.",
+		"versus":"Et mane vidébitis glóriam ejus."
 	},
 	{
 		"tags":["nativitas","vigilia","tertia","versiculus"],
@@ -159,23 +127,13 @@
 	},
 	
 	{
-		"tags":["nativitas","vigilia","sexta","antiphona"],
-		"forwards-to":["nativitas","vigilia","laudes","antiphona","antiphona-iii"]
-	},
-	{
 		"tags":["nativitas","vigilia","sexta","capitulum"],
 		"datum":"Qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis, ex resurrectióne mortuórum Jesu Christi Dómini nostri."
 	},
 	{	"tags":["nativitas","vigilia","sexta","responsorium-breve"],
-		"datum":"Crástina die"
-	},
-	{
-		"tags":["nativitas","vigilia","sexta","responsorium-breve","responsum"],
-		"datum":"Delébitur iníquitas terræ."
-	},
-	{
-		"tags":["nativitas","vigilia","sexta","responsorium-breve","versus"],
-		"datum":"Et regnábit super nos Salvátor mundi."
+		"incipit":"Crástina die",
+		"responsum":"Delébitur iníquitas terræ.",
+		"versus":"Et regnábit super nos Salvátor mundi."
 	},
 	{
 		"tags":["nativitas","vigilia","sexta","versiculus"],
@@ -183,68 +141,122 @@
 	},
 	
 	{
-		"tags":["nativitas","vigilia","nona","antiphona"],
-		"forwards-to":["nativitas","vigilia","laudes","antiphona","antiphona-v"]
-	},
-	{
 		"tags":["nativitas","vigilia","nona","capitulum"],
 		"datum":"Per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi Dómini nostri."
 	},
 	{	"tags":["nativitas","vigilia","nona","responsorium-breve"],
-		"datum":"Crástina"
-	},
-	{
-		"tags":["nativitas","vigilia","nona","responsorium-breve","responsum"],
-		"datum":"Erit vobis salus."
-	},
-	{
-		"tags":["nativitas","vigilia","nona","responsorium-breve","versus"],
-		"datum":"Dicit Dóminus Deus exercítuum."
-	},
-	{
-		"tags":["nativitas","vigilia","nona","versiculus"],
-		"datum":["V. Crástina die delébitur iníquitas terræ.","R. Et regnábit super nos Salvátor mundi."]
+		"incipit":"Crástina",
+		"responsum":"Erit vobis salus.",
+		"versus":"Dicit Dóminus Deus exercítuum."
 	},
 
 
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","antiphona","antiphona-i"],
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-i"],
 		"datum":"Rex pacíficus magnificátus est, cujus vultum desíderat univérsa terra."
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","i-psalmus"],
+		"tags":["nativitas","i-vesperae","vesperae","i-psalmus"],
 		"forwards-to":["apostolus","vesperae","i-psalmus"]
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","antiphona","antiphona-ii"],
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-ii"],
 		"datum":"Magnificátus est Rex pacíficus super omnes reges univérsé terrae."
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","ii-psalmus"],
+		"tags":["nativitas","i-vesperae","vesperae","ii-psalmus"],
 		"forwards-to":["apostolus","vesperae","ii-psalmus"]
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","antiphona","antiphona-iii"],
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-iii"],
 		"datum":"Compléti sunt dies Maríæ, ut páreret Fílium suum primogénitu."
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","iii-psalmus"],
+		"tags":["nativitas","i-vesperae","vesperae","iii-psalmus"],
 		"forwards-to":["apostolus","vesperae","iii-psalmus"]
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","antiphona","antiphona-iv"],
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-iv"],
 		"datum":"Scitóte quia prope est regnum Dei: amen dico vobis, quia non tardábit."
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","iv-psalmus"],
+		"tags":["nativitas","i-vesperae","vesperae","iv-psalmus"],
 		"forwards-to":["apostolus","vesperae","iv-psalmus"]
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","antiphona","antiphona-v"],
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-v"],
 		"datum":"Leváte cápita vestra: ecce approppínquat redédemptio vestra."
 	},
 	{
-		"tags":["nativitas","habens-vigiliam","i-vesperae","vesperae","v-psalmus"],
+		"tags":["nativitas","i-vesperae","vesperae","v-psalmus"],
 		"forwards-to":["apostolus","vesperae","i-vesperae","v-psalmus"]
+	},
+	{
+		"tags":["nativitas","i-vesperae","vesperae","capitulum"],
+		"datum":"Appáruit benígnitas, et humánitas Salvatóris nostri Dei: non ex opéribus justítiæ, quæ fécimus nos, sed sécundum suam misericórdiam salvos nos fecit."
+	},
+	{
+		"tags":[
+			["nativitas","i-vesperae","vesperae","hymnus"],
+			["nativitas","matutinum","hymnus"]
+		],
+		"datum":[
+			"Jesu Redémptor ómnium,/Quem lucis ante oríginem/Parem patérnæ glóriæ/Pater suprémus édidit.",
+			"Tu lumen, et splendor Patris,/Tu spes perénnis ómnium,/Inténde quas fundunt preces/Tui per orbem sérvuli.",
+			"Meménto rerum Cònditor,/Nostri quod olim córporis,/Sacráta ab alvo Vírginis/Nascéndo, formam súmpseris.",
+			"Testátur hoc præsens dies,/Currens per anni círculum,/Quod solus e sinu Patris/Mundi salus advéneris.",
+			"Hunc astra, tellus, ǽquoram/Hunc omne quod cœlo subest,/Salútis Auctórem novæ/Novo salútat cántico.",
+			"Et nos, beáta quos sacri/Rigávit unda sánguinis;/Natális ob diem tui/Hymni tribútum sólvimus.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	
+	{
+		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Cum ortus fúerit sol de cœlo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo."
+	},
+	
+	{
+		"tags":["nativitas","i-vesperae","vesperae","collecta"],
+		"datum":"Concéde, quǽsumus omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet."
+	},
+	{
+		"tags":["nativitas","i-vesperae","collecta","terminatio"],
+		"forwards-to":["terminatio","per-dominum"]
+	},
+
+
+
+	{
+                "tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
+                "datum":"Christus natus est nobis: * Veníte adorémus."
+        },
+	{
+		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Dóminus dixit * ad me: Fílius meus es tu, ego hódie génui te."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","i-psalmus"],
+		"forwards-to":["psalmus-ii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Tamquam sponsus * Dóminus procédens de thálamo suo."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","ii-psalmus"],
+		"forwards-to":["psalmus-xviii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Diffúsa est * grátia in lábiis tuis, proptérea benedíxit te Deus in ætérnum."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","iii-psalmus"],
+		"forwards-to":["psalmus-xliv"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Tamquam sponsus.","R. Dóminus procédens de thálamo suo."]
 	}
 ]
