@@ -73,11 +73,8 @@
 	},
 	{
 		"tags":["formula","antiphona-prior"],
-		"forwards-to":["antiphona","intonata"]
-	},
-	{
-		"tags":["formula","antiphona-prior","duplex"],
-		"forwards-to":["antiphona"]
+		"datum":[["antiphona","intonata"]],
+		"duplex":[["antiphona"]]
 	},
 	{
 		"tags":["hymnus","te-deum"],
