@@ -179,8 +179,8 @@ def process(item, cascades, pile):
 
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, process searches a pile made from relevant files
-        probableforwardpiles = datamanage.getbreviariumfiles(defaultpile | flattensetlist([pickcascades(item['forwards-to'], cascades)]))
-        return process(search([pickcascades(item['forwards-to'], cascades)], probableforwardpiles, priortags = item['forwards-to']), nextcascades, pile)
+        probableforwardpiles = datamanage.getbreviariumfiles(defaultpile | item['forwards-to'])
+        return process(search([item['forwards-to']], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
 
     elif type(item['datum']) is list:
         ret = []
