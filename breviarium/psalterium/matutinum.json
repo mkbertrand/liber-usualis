@@ -168,12 +168,12 @@
 	{
 		"tags":["matutinum","nocturnae","feria"],
 		"cascade":["nocturna-i"],
-		"forwards-to":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]
+		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","simplex"],
 		"cascade":["nocturna-i","te-deum"],
-		"forwards-to":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]
+		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica"],
