@@ -261,5 +261,128 @@
 	{
 		"tags":["nativitas","matutinum","nocturna-i","versiculus"],
 		"datum":["V. Tamquam sponsus.","R. Dóminus procédens de thálamo suo."]
+	},
+	
+	{
+		"tags":["nativitas","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Primo témpore alleviáta est terra Zábulon, et terra Néphtali: et novíssimo aggraváta est via maris trans Jordánem Galilǽæ Géntium. Pópulus qui ambulábat in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est eis. Multiplicásti gentem, et non magnificásti lætítiam. Lætabúntur coram te, sicut qui lætántur in messe, sicut exsúltant victóres capta præda, quando dívidunt spólia. Jugum enim óneris ejus, et virgam húmeri ejus, et sceptrum exactóris ejus superásti sicut in die Mádian. Quia omnis violénta prædátio cum tumúltu, et vestiméntum mistum sánguine, erit in combustiónem, et cibus ignis. Párvulus enim natus est nobis, et fílius datus est nobis et factus est principátus super húmerum ejus: et vocábitur nomen ejus, Admirábilis, Consiliárius, Deus, Fortis, Pater futúri sǽculi, Princeps pacis."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Hódie nobis cœlórum Rex de Vírgine nasci dignátus est, ut hóminem pérditum ad cœléstia regna revocáret:",
+		"responsum":"Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.",
+		"versus":"Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis."
+	},
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":[
+			"Consolámini, consolámini pópule meus, dicit Deus vester. Loquímini ad cor Jerúsalem, et advocáte eam: quóniam completá est malítia ejus, dimíssa est iníquitas illíus: suscépit de manu Dómini duplícia pro ómnibus peccátis suis. Vox clamántis in desérto: Paráte viam Dómini, rectas fácite in solitúdine sémitas Dei nostri. Omnis vallis exaltábitur, et omnis mons et collis humiliábitur: et erunt prava in dirécta, et áspera in vias planas. Et revelábitur glória Dómini: et vidébit omnis caro páriter quod os Dómini locútum est. Vox dicéntis: Clama. Et dixi: Quid clamábo? Omnis caro fœnum, et omnis glória ejus quasi flos agri. Exsiccátum est fœnum, et cécidit flos: quia spíritus Dómini sufflávit in eo. Vere fœnum est pópulus: exsiccátum est fœnum, et cécidit flos: Verbum autem Dómini nostri manet in ætérnum."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Hódie nobis de cœlo pax vera descéndit:",
+		"responsum":"Hódie per totum mundum mellíflui facti sunt cœli.",
+		"versus":"Hódie illúxit nobis dies redemptiónis novæ, reparatiónis antíquæ, felicitátis ætérnæ."
+	},
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":[
+			"Consúrge, consúrge, indúere fortitúdine, tua Sion, indúere vestiméntis glóriæ tuæ Jerúsalem cívitas sancti: quia non adjíciet ultra ut pertránseat per te incircumcísus et immúndus. Excútere de púlvere, consúrge, sede Jerúsalem: solve víncula colli tui, captíva fília Sion. Quia hæc dicit Dóminus: Gratis venúmdati estis, et sine argénto redimémini. Quia hæc dicit Dóminus Deus: In Ægýptum descéndit pópulus meus in princípio, ut colónus esset ibi: et Assur absque ulla causa calumniátus est eum. Et nunc quid mihi est hic, dicit Dóminus, quóniam ablátus est pópulus meus gratis? Dominatóres ejus ínique agunt, dicit Dóminus: et júgiter tota die nomen meum blasphemátur. Propter hoc sciet pópulus meus nomen meum, in die illa: quia ego ipse qui loqébar, ecce adsum."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Quem vidístis pastóres? dícite, annuntiáte nobis, in terris quis appáruit?",
+		"responsum":"Natum vídimus, et choros Angelórum collaudántes Dóminum.",
+		"versus":"Dícite, quidnam vidístis? et annuntiáte Christi nativitátem."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Suscépimus * Deus misericórdiam tuam in médio templi tui."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","i-psalmus"],
+		"forwards-to":["psalmus-xlvii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Oriétur * in diébus Dómini abundántia pacis, et dominábitur."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","ii-psalmus"],
+		"forwards-to":["psalmus-lxxi"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Véritas de terra * orta est, et justítia de cœlo prospéxit. "
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","iii-psalmus"],
+		"forwards-to":["psalmus-lxxxiv"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Speciósus forma præ fíliis hóminum.","R. Diffúsa est grátia in lábiis tuis."]
+	},
+
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"Salvátor noster dilectíssimi, hódie natus est: gaudeámus. Neque enim fas est locum esse tristítiæ, ubi natális est vitæ: quæ consúmpto mortalitátis timóre, nobis íngerit de promíssa æternitáte lætítiam. Nemo ab hujus alacritátis participatióne secérnitur. Una cunctis lætítiæ commúnis est rátio: quia Dóminus noster peccáti mortísque destrúctor, sicut nullum a reátu líberum réperit ita liberándis ómnibus venit. Exsúltet sacntus, quia approprínquat ad palmam: daúdeat peccátor, quia invitátur ad véniam: animétur Gentílis, quia vocátur ad vitam. Dei namque Fílius secúndum plenitúdinem témporis, quam divíni consílii inscrutábilis altitúdo  dispósuit, reconciliándam auctóri suo natúram géneris assúmpsit humáni, ut invéntor mortis diábolus, per ipsam, quam vícerat, vincerétur."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"O magnum mystérium, et admirábile sacraméntum, ut animália vidérent Dóminum natum, jacéntem in præsépio:",
+		"responsum":"Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.",
+		"versus":"Ave María, grátia plena: Dóminus tecum."
+	},
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":[
+			"In quo conflíctu pro nobis ínito, magno et mirábili æquitáatis jure certátum est, dum omnípotens Dóminus cum sævíssimo hoste non in sua majestáte, sed in nostra congréditur humilitáte: objíciens ei eámdem formam, eamdémque natúram, mortalitátis quidem nostræ partícipem, sed peccáti totíus expértem. Aliénum quippe ab hac nativitáte est, quod de ómnibus légitur: Nemo mundus a sorde, nec infans, cujus est uníus diéi vita super terram. Nihil ergo in istam singulárem nativitátem de carnis concupiscéntia transívit, nihil de peccáti lege manávit. Virgo régia Davídicæ stirpis elígitur, quæ sacro gravidánda fœtu, divínam humanámque prolem prius concíperet mente, quam córpore. Et ne supérni ignára consílii ad inusitátos pavéret affátus, quod in ea operándum erat a Spíritu sancto, collóquio discit angélico: nec damnum credit pudóris, Dei Génitrix mox futúra."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Beáta Dei Génetrix María, cujus víscera intácta pérmanent:",
+		"responsum":"Hódie génuit Salvatórem sǽculi.",
+		"versus":"Beáta, quæ crédidit: quóniam perfécta sunt ómnia, quæ dicta sunt ei a Dómino."
+	},
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":[
+			"Agámus ergo, dilectíssimi, grátias Deo Patri, per Fílium ejus in Spíritu sancto: qui propter multam caritátem suam, qua diléxit nos, misértus est nostri: et cum essémus mórtui peccátis, convivificávit nos Christo, ut essémus in ipso nova creatúra, novúmque figméntum. Deponámus ergi véterem hóminem cum áctibus suis: et adépti participatíonem generatiónis Christi, carnis renuntiémus opéribus. Agnósce, o Christiáne, dignitátem tuam: et divínæ consors factus natúræ, noli in véterem vilitátem degéneri conversatióne redíre. Meménto, cujus cápitis et cujus córporis sis membrum. Reminíscere, quia érutus de potestáte tenebrárum, translátus es in Dei lumen et regnum."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Sancta et immaculáta virgínitas, quibus te laúdibus éfferam néscio:",
+		"responsum":"Quia quem cœli cápere non póterant, tuo grémio contulísti.",
+		"versus":"Benedícta tu in muliéribus, et benedíctus fructus ventris tui."
 	}
 ]
