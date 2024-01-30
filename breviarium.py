@@ -163,9 +163,11 @@ def process(item, cascades, pile):
         return ret
      # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set or type(item) is frozenset:
-        item = search([pickcascades(item, cascades)], pile, priortags = item)
-        if item is None:
-            return 'Absens'
+        result = search([pickcascades(item, cascades)], pile, priortags = item)
+        if result is None:
+            return str(list(pickcascades(item, cascades)))
+        else:
+            item = result
 
     # Next cascade (not to be used for the current search, but only for deeper searches
     nextcascades = [i | item['cascade'] for i in cascades] if 'cascade' in item and cascades else cascades
