@@ -232,7 +232,8 @@
 			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-minus","ii-vesperae"],"response":"commemorandum","target":"a"}
+			{"indices":["duplex-minus","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
 	{
@@ -244,7 +245,7 @@
 			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["duplex-minus","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
-			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
+			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
 	{

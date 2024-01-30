@@ -29,14 +29,36 @@
 		]
 	},
 	{
-		"tags":["adventus","dominica","antiphona","antiphona-invitatorium"],
+		"tags":[
+			["hebdomada-i-adventus","dominica","antiphona","antiphona-invitatorium"],
+			["hebdomada-ii-adventus","dominica","antiphona","antiphona-invitatorium"]
+		],
 		"src":"https://nocturnale.marteo.fr/chant/A1F1I/",
 		"datum":"Regem ventúrum Dóminum, * Veníte, adorémus."
 	},
 	{
-		"tags":["adventus","feria","antiphona","antiphona-invitatorium"],
+		"tags":[
+			["hebdomada-i-adventus","feria","antiphona","antiphona-invitatorium"],
+			["hebdomada-ii-adventus","feria","antiphona","antiphona-invitatorium"]
+		],
 		"src":"https://nocturnale.marteo.fr/chant/A1F2I/",
 		"datum":"Regem ventúrum Dóminum, * Veníte, adorémus."
+	},
+	{
+		"tags":[
+			["hebdomada-iii-adventus","dominica","antiphona","antiphona-invitatorium"],
+			["hebdomada-iv-adventus","dominica","antiphona","antiphona-invitatorium"]
+		],
+		"src":"https://nocturnale.marteo.fr/chant/A3F1I/",
+		"datum":"Prope est jam Dóminus: * Veníte adorémus."
+	},
+	{
+		"tags":[
+			["hebdomada-iii-adventus","feria","antiphona","antiphona-invitatorium"],
+			["hebdomada-iv-adventus","feria","antiphona","antiphona-invitatorium"]
+		],
+		"src":"https://nocturnale.marteo.fr/chant/A3F2I/",
+		"datum":"Prope est jam Dóminus: * Veníte adorémus."
 	},
 	{
 		"tags":["adventus","matutinum","hymnus"],
@@ -301,6 +323,11 @@
 		"datum":"O clavis David, * et sceptrum domus Ísraël; qui áperis, et nemo claudit; claudis, et nemo áperit: veni, et educ vinctum de domo cárceris, sedéntem in ténebris, et umbra mortis."
 	},
 	{
+		"tags":["adventus","antiphona-major","commemoratio","o-oriens","antiphona","antiphona-benedictus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=12599",
+		"datum":"Nolíte timére: quinta enim die véniet ad vos Dóminus noster."
+	},
+	{
 		"tags":["adventus","antiphona-major","o-oriens","antiphona","antiphona-magnificat"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2371",
 		"datum":"O Óriens, * splendor lucis ætérnæ, et sol justítiæ: veni, et illúmina sedéntes in ténebris, et umbra mortis."
@@ -309,6 +336,11 @@
 		"tags":["adventus","antiphona-major","o-rex-gentium","antiphona","antiphona-magnificat"],
 		"src":"https://gregobase.selapa.net/chant.php?id=2133",
 		"datum":"O Rex Géntium, * et desiderátus eárum, lapísque anguláris, qui facis útraque unum: veni, et salva hóminem, quem de limo formásti."
+	},
+	{
+		"tags":["adventus","antiphona-major","o-emmanuel","antiphona","antiphona-benedictus"],
+		"src":"https://gregobase.selapa.net/chant.php?id=12271",
+		"datum":"Ecce compléta sunt * ómnia, quæ dicta sunt per Ángelum de Vírgine María."
 	},
 	{
 		"tags":["adventus","antiphona-major","o-emmanuel","antiphona","antiphona-magnificat"],

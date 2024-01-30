@@ -183,8 +183,8 @@
 	{
 		"indices":["nativitas","vigilia"],
 		"response":[
-			{"indices":["dominica"],"response":"combinandum","target":"ab"},
-			{"indices":["feria"],"response":"combinandum","target":"ab"}
+			{"indices":["dominica"],"response":["commemoratum","matutinum"],"target":"b"},
+			{"indices":["feria"],"response":["commemoratum","psalmi"],"target":"b"}
 		]
 	},
 	{
