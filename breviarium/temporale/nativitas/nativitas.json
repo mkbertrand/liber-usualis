@@ -465,5 +465,66 @@
 			"Homilía sancti Augustíni Epíscopi.",
 			"Ne vile áliquid putáres quale consuevísti cogitáre, cum verba humána soléres audíre, audi quid cógites. Deus erat Verbum. Exeat nunc néscio quis infidélis Ariánus, et dicat, quia Verbum Dei factum est. Quómodo potest fíeri, ut Verbum Dei factum sit, quando Deus per Verbum fecit ómnia? Si et Verbum Dei ipsum factum est; per quod áliud verbum factum est? Si hoc dicis, quia hoc est verbum Verbi, per quod factum est illud: ipsum dico ego únicum Fílium Dei. Si autem non dicis verbum Verbi, concéde non factum, per quod facta sunt ómnia. Non enim per seípsum fíeri pótuit, per quod facta sunt ómnia. Crede ergo Evangelístæ."
 		]
+	},
+	
+	
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-i"],
+		"datum":"Quem vidístis * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja."
+	},
+	{	
+		"tags":["nativitas","laudes","i-psalmus"],
+		"forwards-to":["psalmus-xcii"]
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-ii"],
+		"datum":"Génuit puérpera * Regem, cui nomen ætérnum, et gaúdia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja."
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-iii"],
+		"datum":"Angelus ad pastóres * ait: Annúntio vobis gaúdium magnum: quia natus est vobis hódie Salvátor mundi, allelúja."
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-iv"],
+		"datum":"Facta est cum Angelo * multitúdo cœléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus, bonæ voluntátis, allelúja."
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-v"],
+		"datum":"Párvulus fílius * hódie natus est nobis: et vocábitur Deus, fortis, allelúja, allelúja."
+	},
+
+	{	
+		"tags":[
+			["nativitas","laudes","capitulum"],
+			["nativitas","tertia","capitulum"]
+		],
+		"datum":"Multifáriam, multísque modis olim Deus loquens pátribus in prophétis: novíssime diébus istis locútus est nobis in Fílio, quem constítuit hærédem universórum, per quem fecit et sǽcula."
+	},
+	{
+		"tags":["nativitas","laudes","hymnus"],
+		"datum":[
+			"A solis ortus cárdine/Ad usque terræ límitem,/Christum canámus Príncipem,/Natum María Vírgine.",
+			"Beátus auctor sǽculi/Servíle corpus índuit:/Ut carne carnem líberans,/Ne pérderet quos cóndidit.",
+			"Castæ Paréntis víscera/Cœléstis intrat grátia:/Venter Puéllæ bájulat/Secréta, quæ non nóverat.",
+			"Domus pudíci péctoris/Templum repénte fit Dei:/Intácta nésciens virum,/Concépit alvo Fílium.",
+			"Enítitur puérpera,/Quem Gábriel prædíxerat,/Quem ventre Matris géstiens/Báptista clausum sénserat.",
+			"Fœno jacére pértulit:/Præsépe non abhórruit:/Et lacte módico pastus est,/Per quem nec ales ésurit.",
+			"Gaudet chorus cœléstium,/Et Angeli canunt Deo;/Palámque fit pastóribus/Pastor, Créator ómnium.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["nativitas","laudes","versiculus"],
+		"datum":["V. Noctum fecit Dóminus, allelúja.","R. Salutáre suum, allelúja."]
+	},
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allel."
 	}
+
+	
 ]
