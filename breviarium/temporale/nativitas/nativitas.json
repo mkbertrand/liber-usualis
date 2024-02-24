@@ -221,11 +221,11 @@
 	},
 	
 	{
-		"tags":["nativitas","i-vesperae","vesperae","collecta"],
+		"tags":["nativitas","collecta"],
 		"datum":"Concéde, quǽsumus omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet."
 	},
 	{
-		"tags":["nativitas","i-vesperae","collecta","terminatio"],
+		"tags":["nativitas","collecta","terminatio"],
 		"forwards-to":["terminatio","per-dominum"]
 	},
 
@@ -385,5 +385,147 @@
 		"incipit":"Sancta et immaculáta virgínitas, quibus te laúdibus éfferam néscio:",
 		"responsum":"Quia quem cœli cápere non póterant, tuo grémio contulísti.",
 		"versus":"Benedícta tu in muliéribus, et benedíctus fructus ventris tui."
+	},
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Ipse invocábit * me, allelúja: Pater meus es tu, allelúja."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","i-psalmus"],
+		"forwards-to":["psalmus-lxxxviii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Læténtur cœli, * et exsúltet terra ante fáciem Dómini quóniam venit."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","ii-psalmus"],
+		"forwards-to":["psalmus-xcv"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Notum fecit * Dóminus, allelúja, salutáre suum, allelúja."
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","iii-psalmus"],
+		"forwards-to":["psalmus-xcvii"]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Ipse invocábit me, allelúja.","R. Pater meus es tu, allelúja."]
+	},
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Exiit edictum a Cǽsare Augústo, ut desriberétur univérsus orbis. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Quia largiénte Dómino, Missárum solémnia ter hódie celebratúri sumus, loqui diu de evangélica lectióne non póssumus: sed nos áliquid vel bréviter dícere, Redemptóris nostri natívitas ipsa compéllit. Quid est enim, quod nascitúro Dómino mundus descríbitur, nisi hoc, quod apérte monstrátur, quia ille apparébat in carne, qui électos suos adscríberet in æternitáte? Quo contra de réprobis per prophétam dícitur: Deleántur de libro vivéntium, et cum justis non scribántur. Qui bene étiam in Béthlehem náscitur. Béthlehem quippe domus panis interpretátur. Ipse namque est, qui ait: Ego sum panis vivus, qui de cœlo descéndi. Locus ergo, in quo Dóminus náscitur, domus panis ántea vocátus est: quia futúrum profécto erat, ut ille ibi per matériam carnis apparéret, qui electórum mentes intérna satietáte refíceret. Qui non in paréntum domo, sed in via náscitur: ut profécto osténderet, quia per humanitátem suam, quam assúmpserat, quasi in aliéno nascebátur."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium: et beáta úbera, quæ lactavérunt Christum Dóminum:",
+		"responsum":"Qui hódie pro salúte mundi de Vírgine nasci dignátus est.",
+		"versus":"Dies sanctificátus illúxit nobis: veníte Gentes et adoráte Dóminum."
+	},
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum, quod factum est, quod Dóminus osténdit nobis. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"Vidéte Ecclésiæ surgéntis exórdium. Christus náscitur, et pastóres vigiláre, cœpérunt: qui Géntium greges, pécudum modo ante vivéntes, in caulam Dómini congregárent, ne quos spiritálium bestiárum, per offúsas nóctium ténebras pateréntur incúrsus. Et bene pastóres vígilant, quos bonus pastor infórmat. Grex ígitur pópulus, nox sǽculum, pastóres sunt sacerdótes. Aut fortásse étiam ille sit pastor, cui dícitur: Esto vígilans et confírma. Quia non solum epíscopos ad tuéndum gregem Dóminus ordinávit, sed étiam Angelos destinávit."
+		]
+	},
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Verbum caro factum est, et habitávit in nobis:",
+		"responsum":"Et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre, plenum grátiæ et veritátis.",
+		"versus":"Omnia per ipsum facta sunt, et sine ipso factum est nihil."
+	},
+
+
+
+
+	{
+		"tags":["nativitas","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":[	
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Ne vile áliquid putáres quale consuevísti cogitáre, cum verba humána soléres audíre, audi quid cógites. Deus erat Verbum. Exeat nunc néscio quis infidélis Ariánus, et dicat, quia Verbum Dei factum est. Quómodo potest fíeri, ut Verbum Dei factum sit, quando Deus per Verbum fecit ómnia? Si et Verbum Dei ipsum factum est; per quod áliud verbum factum est? Si hoc dicis, quia hoc est verbum Verbi, per quod factum est illud: ipsum dico ego únicum Fílium Dei. Si autem non dicis verbum Verbi, concéde non factum, per quod facta sunt ómnia. Non enim per seípsum fíeri pótuit, per quod facta sunt ómnia. Crede ergo Evangelístæ."
+		]
+	},
+	
+	
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-i"],
+		"datum":"Quem vidístis * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja."
+	},
+	{	
+		"tags":["nativitas","laudes","i-psalmus"],
+		"forwards-to":["psalmus-xcii"]
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-ii"],
+		"datum":"Génuit puérpera * Regem, cui nomen ætérnum, et gaúdia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja."
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-iii"],
+		"datum":"Angelus ad pastóres * ait: Annúntio vobis gaúdium magnum: quia natus est vobis hódie Salvátor mundi, allelúja."
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-iv"],
+		"datum":"Facta est cum Angelo * multitúdo cœléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus, bonæ voluntátis, allelúja."
+	},
+
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-v"],
+		"datum":"Párvulus fílius * hódie natus est nobis: et vocábitur Deus, fortis, allelúja, allelúja."
+	},
+
+	{	
+		"tags":[
+			["nativitas","laudes","capitulum"],
+			["nativitas","tertia","capitulum"]
+		],
+		"datum":"Multifáriam, multísque modis olim Deus loquens pátribus in prophétis: novíssime diébus istis locútus est nobis in Fílio, quem constítuit hærédem universórum, per quem fecit et sǽcula."
+	},
+	{
+		"tags":["nativitas","laudes","hymnus"],
+		"datum":[
+			"A solis ortus cárdine/Ad usque terræ límitem,/Christum canámus Príncipem,/Natum María Vírgine.",
+			"Beátus auctor sǽculi/Servíle corpus índuit:/Ut carne carnem líberans,/Ne pérderet quos cóndidit.",
+			"Castæ Paréntis víscera/Cœléstis intrat grátia:/Venter Puéllæ bájulat/Secréta, quæ non nóverat.",
+			"Domus pudíci péctoris/Templum repénte fit Dei:/Intácta nésciens virum,/Concépit alvo Fílium.",
+			"Enítitur puérpera,/Quem Gábriel prædíxerat,/Quem ventre Matris géstiens/Báptista clausum sénserat.",
+			"Fœno jacére pértulit:/Præsépe non abhórruit:/Et lacte módico pastus est,/Per quem nec ales ésurit.",
+			"Gaudet chorus cœléstium,/Et Angeli canunt Deo;/Palámque fit pastóribus/Pastor, Créator ómnium.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["nativitas","laudes","versiculus"],
+		"datum":["V. Noctum fecit Dóminus, allelúja.","R. Salutáre suum, allelúja."]
+	},
+	{
+		"tags":["nativitas","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allel."
 	}
+
+	
 ]
