@@ -470,7 +470,10 @@
 	
 	
 	{
-		"tags":["nativitas","laudes","antiphona","antiphona-i"],
+		"tags":[
+			["nativitas","laudes","antiphona","antiphona-i"],
+			["nativitas","prima","antiphona"]
+		],
 		"datum":"Quem vidístis * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja."
 	},
 	{	
@@ -479,12 +482,18 @@
 	},
 
 	{
-		"tags":["nativitas","laudes","antiphona","antiphona-ii"],
+		"tags":[
+			["nativitas","laudes","antiphona","antiphona-ii"],
+			["nativitas","tertia","antiphona"]
+		],
 		"datum":"Génuit puérpera * Regem, cui nomen ætérnum, et gaúdia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja."
 	},
 
 	{
-		"tags":["nativitas","laudes","antiphona","antiphona-iii"],
+		"tags":[
+			["nativitas","laudes","antiphona","antiphona-iii"],
+			["nativitas","sexta","antiphona"]
+		],
 		"datum":"Angelus ad pastóres * ait: Annúntio vobis gaúdium magnum: quia natus est vobis hódie Salvátor mundi, allelúja."
 	},
 
@@ -494,7 +503,10 @@
 	},
 
 	{
-		"tags":["nativitas","laudes","antiphona","antiphona-v"],
+		"tags":[
+			["nativitas","laudes","antiphona","antiphona-v"],
+			["nativitas","nona","antiphona"]
+		],
 		"datum":"Párvulus fílius * hódie natus est nobis: et vocábitur Deus, fortis, allelúja, allelúja."
 	},
 
@@ -524,8 +536,43 @@
 	},
 	{
 		"tags":["nativitas","laudes","antiphona","antiphona-benedictus"],
-		"datum":"Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allel."
-	}
+		"datum":"Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allelúja."
+	},
 
 	
+	{
+		"tags":["nativitas","prima","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=3102",
+		"incipit":"Christe, Fili Dei vivi,",
+		"responsum":"Miserére nobis.",
+		"versus":"Qui natus es de María Vírgine."
+	},
+	{
+		"tags":["nativitas","tertia","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=3142",
+		"incipit":"Verbum caro factum est,",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et habitávit in nobis."
+	},
+	{
+		"tags":["nativitas","tertia","versiculus"],
+		"datum":["V. Ipse invocábit me, allelúja.","R. Pater meus es tu, allelúja."]
+	},
+
+	
+	{	
+		"tags":["nativitas","sexta","capitulum"],
+		"datum":"Et: Tu in princípio Dómine tertram fundásti: et ópera mánuum tuárum sunt cœli."
+	},
+	{
+		"tags":["nativitas","sexta","responsorium-breve"],
+		"src":"https://gregobase.selapa.net/chant.php?id=3104",
+		"incipit":"Notum fecit Dóminus,",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Salutáre suum."
+	},
+	{
+		"tags":["nativitas","sexta","versiculus"],
+		"datum":["V. Vidérunt omnes fines terræ, allelúja.","R. Salutáre Dei nostri, allelúja."]
+	}
 ]
