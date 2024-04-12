@@ -1,4 +1,5 @@
 import urllib.parse
+import re
 
 textlineclass = 'text-line'
 
@@ -38,6 +39,9 @@ def stringhandle(line):
     return f'<p class={textlineclass}>{line}</p>'
 
 def chomp(gabc, tags):
+
+    gabc = gabc[re.search('\\([cf]\\d\\)', gabc).span()[0]:]
+    gabc = gabc.replace('<sp>V/</sp>', '<v>\\Vbar</v>').replace('<sp>R/</sp>', '<v>\\Rbar</v>')
     if 'intonata' in tags:
         gabc = gabc[:gabc.index('*')] + '(::)'
     elif 'repetita' in tags:
@@ -46,24 +50,16 @@ def chomp(gabc, tags):
         clef = gabc[:gabc.index(')') + 1]
         incipit = gabc[gabc.index(')') + 1 : gabc.index('*')].strip()
         response = gabc[gabc.index(')', gabc.index('*')) + 1 : gabc.index('(::)')].strip()
-        verseloc = gabc.index('<sp>V/</sp>.') + len('<sp>V/</sp>.')
+        verseloc = gabc.index('<v>\\Vbar</v>') + len('<v>\\Vbar</v>')
         verse = gabc[verseloc : gabc.index('(::)', verseloc)].strip()
         gloria = gabc[gabc.index('(::)',  verseloc) + 4 : -4].strip()
 
-        print(clef)
-        print(incipit)
-        print(response)
-        print(verse)
-        print(gloria)
-
-        gabc = f'{clef} {incipit} *(;) {response} (::) <v>\Rbar</v> {incipit} (;) {response} (::) <v>\Vbar</v> {verse} *(;) {response} (::) <v>\Vbar</v> {gloria} (::) <v>\Rbar</v> {incipit} (;) {response} (::)'
+        gabc = f'{clef} {incipit} *(;) {response} (::) <v>\\Rbar</v> {incipit} (;) {response} (::) <v>\\Vbar</v> {verse} *(;) {response} (::) <v>\\Vbar</v> {gloria} (::) <v>\\Rbar</v> {incipit} (;) {response} (::)'
     return gabc
 
 def process(data, neumes):
     match data:
         case dict():
-            if 'responsorium-breve' in data['tags']:
-                print(data)
             if {'formula','responsorium-breve'}.issubset(set(data['tags'])):
                 return responsoriumbreve(data, neumes)
             elif 'antiphona' in set(data['tags']):
