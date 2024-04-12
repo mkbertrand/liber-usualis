@@ -24,25 +24,24 @@ If tagsets and objects are the language of the actual data, there needs to be a 
 
 ### Installation
 
-```
+```bash
 git clone https://github.com/mkbertrand/liber-usualis
 cd liber-usualis
-pip install bottle
-pip install pytest
+pip install bottle pytest
 ```
 
 ### Running
 
 To run only the backend, backend.py is run as follows:
 
-```
-python backend.py
+```bash
+./backend.py
 ```
 
 To run the standalone frontend, frontend.py is run as follows:
 
-```
-python frontend.py
+```bash
+./frontend.py
 ```
 
 ## Author
