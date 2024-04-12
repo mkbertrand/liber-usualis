@@ -28,7 +28,7 @@ define(['jquery','exsurge'], function($,exsurge) {
 			.replace(/<v>\\greheightstar<\/v>/g,'*');
 			
 			var mappings = exsurge.Gabc.createMappingsFromSource(this.ctxt, gabc);
-			this.score = new exsurge.ChantScore(this.ctxt, mappings, !gabc.includes('initial-style: 0;'));
+			this.score = new exsurge.ChantScore(this.ctxt, mappings, !gabc.includes('initial-style:0;'));
 			if (gabc.includes('mode:')) {
 				var modeloc = gabc.indexOf('mode:');
 				console.log(modeloc);

@@ -40,12 +40,19 @@ def stringhandle(line):
 
 def chomp(gabc, tags):
 
-    gabc = gabc[re.search('\\([cf]\\d\\)', gabc).span()[0]:]
+    mode = None
+    if ('mode:' in gabc):
+        mode = gabc[gabc.index('mode:') + 5:gabc.index('\n', gabc.index('mode:'))].strip()
+        if mode.endswith(';'):
+            mode = mode[:-1]
+    gabc = '%%\n' + gabc[re.search('\\([cf]\\d\\)', gabc).span()[0]:]
     gabc = gabc.replace('<sp>V/</sp>', '<v>\\Vbar</v>').replace('<sp>R/</sp>', '<v>\\Rbar</v>')
+    if mode:
+        gabc = f'mode:{mode};\n{gabc}'
     if 'intonata' in tags:
         gabc = gabc[:gabc.index('*')] + '(::)'
     elif 'repetita' in tags:
-        gabc = gabc.replace('*','')
+        gabc = 'initial-style:0;\n' + gabc.replace('*','')[gabc.index('\n') + 1:]
     elif 'responsorium-breve' in tags:
         clef = gabc[:gabc.index(')') + 1]
         incipit = gabc[gabc.index(')') + 1 : gabc.index('*')].strip()
