@@ -1,5 +1,7 @@
 import sys
-from bottle import route, run, template, static_file, error, template
+from bottle import route, run, template, static_file, error, template, hook
+from bottle import post, get
+import requests
 import pathlib
 import json
 from datetime import datetime, date
@@ -8,53 +10,27 @@ from datamanage import getyear, getbreviariumfile
 import breviarium
 import datamanage
 
+from frontend import process
+
 data_root = pathlib.Path(__file__).parent
 
 def load(p):
     data_root.joinpath(p).read_text(encoding='utf-8')
 
-def stringhandle(line):
-    line = line.replace('/', '<br>').replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
-    return f'<p class=text-line>{line}</p>'
-
-def jsoninterp(j):
-    def recurse(obj):
-        match obj:
-            case dict():
-                if {'formula','responsorium-breve'}.issubset(set(obj['tags'])):
-                    incipit = obj['datum'][0]['datum'] if 'datum' in obj['datum'][0] else 'Absens'
-                    responsum = obj['datum'][1]['datum'] if 'datum' in obj['datum'][1] else 'Absens'
-                    versus = obj['datum'][4]['datum'] if 'datum' in obj['datum'][2] else 'Absens'
-                    return recurse([
-                        f'R. br. {incipit} * {responsum}',
-                        f'R. {incipit} * {responsum}',
-                        f'V. {versus}',
-                        f'R. {responsum}',
-                        f'V. {obj["datum"][6]}',
-                        f' R. {incipit} * {responsum}'
-                    ])
-                else:
-                    return recurse(obj['datum'])
-            case list():
-                return ''.join([recurse(v) for v in obj])
-            case str():
-                return stringhandle(obj) 
-    return recurse(j)
-
 @route('/hora/<day>/<hour>')
 def office(day, hour):
     defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
-    ret = jsoninterp(breviarium.process({'ante-officium'}, None, defpile))
+    ret = process.process(breviarium.process({'ante-officium'}, None, defpile), True)
     for i in hour.split(' '):
-        ret += jsoninterp(breviarium.hour(i, datetime.strptime(day, '%Y-%m-%d').date()))
-    ret += jsoninterp(breviarium.process({'post-officium'}, None, defpile))
+        ret += process.process(breviarium.hour(i, datetime.strptime(day, '%Y-%m-%d').date()), True)
+        ret += process.process(breviarium.process({'post-officium'}, None, defpile), True)
     return template('frontend/index.tpl',office=ret)
 
 @route('/hora/<hour>')
 def office(hour):
     ret = ''
     for i in hour.split(' '):
-        ret += jsoninterp(breviarium.hour(i, date.today()))
+        ret += process.process(breviarium.hour(i, date.today()), True)
     return template('frontend/index.tpl',office=ret)
 
 @route('/hora/')
@@ -74,12 +50,23 @@ def index():
         case 16 | 17 | 18 | 19:
             hour = 'vesperae'
         case 20 | 21 | 22 | 23:
-            hour = 'completorium' 
+            hour = 'completorium'
     return office(hour)
 
 @route('/styles/<file>')
 def styles(file):
     return static_file(file, root='frontend/styles/')
+
+@get('/chant/gregobase/<id>/<tags>')
+def gregobase(id, tags= ''):
+    return chant(f'https://gregobase.selapa.net/download.php?id={id}&format=gabc&elem=1', tags)
+
+@get('/chant/<url:path>/<tags>')
+def chant(url, tags = ''):
+    if ('gregobase' in url and not url.endswith('&format=gabc')):
+        url = f'https://gregobase.selapa.net/download.php?id={url[url.index('id=') + 3:]}&format=gabc&elem=1'
+    response = requests.get(url, stream=True).text
+    return process.chomp(response, tags)
 
 @route('/js/<file>')
 def javascript(file):
