@@ -8,13 +8,13 @@ def leapyear(year):
     return year % 4 == 0 and (year % 400 == 0 or year % 100 != 0)
 
 def getnones(month):
-    if (month == 3 or month == 5 or month == 7 or month == 10):
+    if month == 3 or month == 5 or month == 7 or month == 10:
         return 7
     else:
         return 5
 
 def getides(month):
-    if (month == 3 or month == 5 or month == 7 or month == 10):
+    if month == 3 or month == 5 or month == 7 or month == 10:
         return 15
     else:
         return 13
@@ -23,26 +23,26 @@ def latindate(date0):
     nones = getnones(date0.month)
     ides = getides(date0.month)
     ret = ''
-    if (date0.day == 1):
+    if date0.day == 1:
         ret = 'kalendae'
-    elif (date0.day < nones - 1):
+    elif date0.day < nones - 1:
         ret = 'ad-' + numerals[nones - date0.day] + '-nonas'
-    elif (date0.day == nones - 1):
+    elif date0.day == nones - 1:
         ret = 'pridie-nonas'
-    elif (date0.day == nones):
+    elif date0.day == nones:
         ret = 'nonae'
-    elif (date0.day < ides - 1):
+    elif date0.day < ides - 1:
         ret = 'ad-' + numerals[ides - date0.day] + '-idus'
-    elif (date0.day == ides - 1):
+    elif date0.day == ides - 1:
         ret = 'pridie-idus'
-    elif (date0.day == ides):
+    elif date0.day == ides:
         ret = 'idus'
 
-    if (ret != ''):
+    if ret:
         return ret + '-' + mensum[date0.month - 1]
 
     dif = ((date(date0.year + 1, 1, 1) - date0) if date0.month == 12 else (date(date0.year, date0.month + 1, 1) - date0)).days
-    if (dif == 1):
+    if dif == 1:
         ret = 'pridie-kalendas'
     else:
         if leapyear(date0.year) and date0.month == 2 and date0.day == 24:

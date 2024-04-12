@@ -53,7 +53,7 @@ def getbreviariumfiles(queries):
                 for entry in got:
                     entrycopy = copy.deepcopy(entry)
                     for key, val in entrycopy.items():
-                        if not key in ['tags', 'datum', 'src', 'forwards-to','from-tags','cascade']:
+                        if key not in ['tags', 'datum', 'src', 'forwards-to','from-tags','cascade']:
                             tags = None
                             if type(entrycopy['tags']) is list:
                                 tags = [j | {key} for j in entrycopy['tags']]
@@ -72,7 +72,7 @@ def getbreviariumfiles(queries):
     # Janky ways of changing the tags, but I don't really know a better way to copy the item and then modify tags
     for entry in ret:
         if 'antiphona-invitatorium' in entry['tags']:
-            if not '*' in entry['datum']:
+            if '*' not in entry['datum']:
                 raise RuntimeError(f'Missing intonation mark in {entry}')
             entrycopy = copy.deepcopy(entry)
             entrycopy['tags'] = entry['tags'] | {'pars'}
@@ -80,7 +80,7 @@ def getbreviariumfiles(queries):
             added.append(entrycopy)
 
         elif type(entry['tags']) is list and 'antiphona-invitatorium' in entry['tags'][0]:
-            if not '*' in entry['datum']:
+            if '*' not in entry['datum']:
                 raise RuntimeError(f'Missing intonation mark in {entry}')
             entrycopy = copy.deepcopy(entry)
             oldtags = entrycopy['tags']
@@ -90,9 +90,9 @@ def getbreviariumfiles(queries):
             entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
             added.append(entrycopy)
 
-        elif 'antiphona' in entry['tags'] and not 'antiphona-major' in entry[
+        elif 'antiphona' in entry['tags'] and 'antiphona-major' not in entry[
 'tags']:
-            if not '*' in entry['datum']:
+            if '*' not in entry['datum']:
                 raise RuntimeError(f'Missing intonation mark in {entry}')
             entrycopy = copy.deepcopy(entry)
             entrycopy['tags'] = entry['tags'] | {'intonata'}
@@ -105,8 +105,8 @@ def getbreviariumfiles(queries):
             entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
             added.append(entrycopy)
 
-        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0] and not 'antiphona-major' in entry['tags'][0]:
-            if not '*' in entry['datum']:
+        elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0] and 'antiphona-major' not in entry['tags'][0]:
+            if '*' not in entry['datum']:
                 raise RuntimeError(f'Missing intonation mark in {entry}')
             entrycopy = copy.deepcopy(entry)
             oldtags = entrycopy['tags']

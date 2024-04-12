@@ -60,7 +60,7 @@ def gregobase(id, tags= ''):
 
 @get('/chant/<url:path>/<tags>')
 def chant(url, tags = ''):
-    if ('gregobase' in url and not url.endswith('&format=gabc')):
+    if 'gregobase' in url and not url.endswith('&format=gabc'):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('id=') + 3:]}&format=gabc&elem=1'
     response = requests.get(url, stream=True).text
     return process.chomp(response, tags)

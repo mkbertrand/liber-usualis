@@ -30,15 +30,15 @@ class TestKalendar:
     def test_structure(self, kal: kalendar.Kalendar) -> None:
         """Make sure the structure is correct"""
         for date, entries in kal.items():
-            assert type(date) == datetime.date
+            assert type(date) is datetime.date
             assert date.year == kal.year
-            assert type(entries) == list
+            assert type(entries) is list
             assert len(entries) >= 1, f"Day {date} has no entries"
             for entry in entries:
-                assert type(entry) == set
+                assert type(entry) is set
                 assert len(entry) >= 1, "Entry has no tags"
                 for tag in entry:
-                    assert type(tag) == str
+                    assert type(tag) is str
 
     def test_alldates(self, kal: kalendar.Kalendar) -> None:
         """Make sure every day of the year has at least one entry"""
@@ -76,7 +76,7 @@ class TestKalendar:
 
         def normalize(kal):
             return {
-                datetime.datetime.strptime(day, "%Y-%m-%d").date() if type(day) == str else day:
+                datetime.datetime.strptime(day, "%Y-%m-%d").date() if type(day) is str else day:
                 {frozenset(entry) for entry in entries}
                 for day, entries in kal.items()
             }

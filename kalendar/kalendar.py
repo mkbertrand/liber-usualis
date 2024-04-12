@@ -24,7 +24,7 @@ def load_data(p: str):
             case dict():
                 return {k: recurse(v) for k, v in obj.items()}
             case list():
-                if all(type(x) == str for x in obj):
+                if all(type(x) is str for x in obj):
                     return frozenset(obj)
                 return [recurse(v) for v in obj]
             case _:
@@ -60,9 +60,9 @@ class Kalendar:
         self.year = year
 
     def add_entry(self, date: date, entry: set | frozenset) -> SearchResult:
-        if type(entry) == frozenset:
+        if type(entry) is frozenset:
             entry = set(entry)
-        assert type(entry) == set
+        assert type(entry) is set
         self.kal[date].append(entry)
         return SearchResult(date, entry)
 
@@ -294,7 +294,7 @@ def kalendar(year: int) -> Kalendar:
     for ent_date, entries in kal.items():
         for entry in entries:
             entry_base = entry - ranks - octavevigiltags
-            if 'habens-octavam' in entry and not 'octava-excepta' in entry:
+            if 'habens-octavam' in entry and 'octava-excepta' not in entry:
                 for k in range(1,7):
                     date0 = ent_date + timedelta(days=k)
                     if 'quadragesima' in kal.tagsindate(date0):
@@ -314,7 +314,7 @@ def kalendar(year: int) -> Kalendar:
                 # If a certain day within an Octave is manually entered, do not create one automatically
                 if kal.match_any(entrystripped) is None:
                     buffer.add_entry(date0, entrystripped)
-            if 'habens-vigiliam' in entry and not 'vigilia-excepta' in entry:
+            if 'habens-vigiliam' in entry and 'vigilia-excepta' not in entry:
                 entrystripped = entry_base | {'vigilia','poenitentialis','feria'}
                 buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
@@ -404,7 +404,7 @@ def kalendar(year: int) -> Kalendar:
     def applyruleonday(rule, i, rulenumber):
         for tags in kal[i]:
             if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
-                if not type(rule['response']) is list:
+                if type(rule['response']) is not list:
                     response = perform_action(rule, i, tags, rulenumber)
                     if response is None:
                         return applyruleonday(rule, i, rulenumber)

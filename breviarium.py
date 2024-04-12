@@ -68,7 +68,7 @@ def prettyprint(j):
             case set() | frozenset():
                 pass
             case str():
-                if (obj.startswith('https')):
+                if obj.startswith('https'):
                     print(obj)
                 else:
                     pieces = obj.split('/')
@@ -86,7 +86,7 @@ def flattensetlist(sets):
 
 def anysearch(query, pile):
     for i in pile:
-        if type(i['tags']) == list:
+        if type(i['tags']) is list:
             for j in i['tags']:
                 if j.issubset(query):
                     ret = copy.deepcopy(i)
