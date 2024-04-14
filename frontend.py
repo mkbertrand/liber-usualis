@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import sys
 from bottle import route, run, template, static_file, error, template, hook
 from bottle import post, get
@@ -13,11 +11,6 @@ import breviarium
 import datamanage
 
 from frontend import process
-
-data_root = pathlib.Path(__file__).parent
-
-def load(p):
-    data_root.joinpath(p).read_text(encoding='utf-8')
 
 @route('/hora/<day>/<hour>')
 def office(day, hour):
@@ -70,7 +63,7 @@ def chant(url, tags = ''):
     response = requests.get(url, stream=True).text
     return process.chomp(response, tags)
 
-@route('/js/<file>')
+@route('/js/<file:path>')
 def javascript(file):
     return static_file(file, root='frontend/js/')
 

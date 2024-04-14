@@ -1,3 +1,4 @@
+from bottle import template
 import urllib.parse
 import re
 
@@ -21,16 +22,10 @@ def antiphon(antiphon, neumes):
 def responsoriumbreve(data, neumes):
     if not neumes or not 'src' in data['datum'][0]:
         incipit = data['datum'][0]['datum'] if 'datum' in data['datum'][0] else 'Absens'
-        responsum = data['datum'][1]['datum'] if 'datum' in data['datum'][1] else 'Absens'
-        versus = data['datum'][4]['datum'] if 'datum' in data['datum'][2] else 'Absens'
-        return process([
-            f'R. br. {incipit} * {responsum}',
-            f'R. {incipit} * {responsum}',
-            f'V. {versus}',
-            f'R. {responsum}',
-            f'V. {data["datum"][6]}',
-            f' R. {incipit} * {responsum}'
-        ], neumes)
+        response = data['datum'][1]['datum'] if 'datum' in data['datum'][1] else 'Absens'
+        verse = data['datum'][4]['datum'] if 'datum' in data['datum'][2] else 'Absens'
+        gloria = data['datum'][6] if len(data['datum']) == 9 else 'Absens'
+        return template('frontend/elements/responsorium-breve.tpl', incipit=incipit, response=response, verse=verse, gloria=gloria)
     else:
         return getchant(data['datum'][0]['src'], data['tags'])
 
@@ -79,4 +74,4 @@ def process(data, neumes):
             return ''.join([process(v, neumes) for v in data])
         case str():
             return stringhandle(data)
-    return process(data, neumes)
+    raise Exception('Illegal data type')
