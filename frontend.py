@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 from bottle import route, run, template, static_file, error, template, hook
 from bottle import post, get
