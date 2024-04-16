@@ -33,6 +33,9 @@ def responsoriumbreve(data: dict, neumes: bool) -> str:
         return template('frontend/elements/responsorium-breve.tpl', incipit=incipit, response=response, verse=verse, gloria=gloria)
 
 def stringhandle(line: str) -> str:
+    result = re.search('\\[[a-z-]+\\]', line)
+    if not result is None:
+        line[result.span()[0] + 1 : result.span()[1] - 1]
     line = line.replace('/', '<br>').replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
     return f'<p class={textlineclass}>{line}</p>'
 
@@ -62,7 +65,7 @@ def chomp(gabc: str, tags) -> str:
     else:
         return gabc
 
-def process(data, neumes: bool) -> str:
+def render(data, neumes: bool) -> str:
     match data:
         case {"tags": tags} if {'formula','responsorium-breve'}.issubset(set(tags)):
             return responsoriumbreve(data, neumes)
@@ -71,9 +74,9 @@ def process(data, neumes: bool) -> str:
         case {"src": src, "tags": tags} if neumes:
             return getchant(src, tags)
         case {"datum": datum}:
-            return process(datum, neumes)
+            return render(datum, neumes)
         case list():
-            return ''.join(process(v, neumes) for v in data)
+            return ''.join(render(v, neumes) for v in data)
         case str():
             return stringhandle(data)
     raise ValueError(f"Unhandled case: {data!r}")

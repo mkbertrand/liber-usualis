@@ -12,22 +12,24 @@ from datamanage import getyear, getbreviariumfile
 import breviarium
 import datamanage
 
-from frontend import process
+from frontend import renderer
+
+loadchant = True
 
 @route('/hora/<day>/<hour>')
 def office(day, hour):
     defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
-    ret = process.process(breviarium.process({'ante-officium'}, None, defpile), True)
+    ret = renderer.render(breviarium.process({'ante-officium'}, None, defpile), loadchant)
     for i in hour.split(' '):
-        ret += process.process(breviarium.hour(i, datetime.strptime(day, '%Y-%m-%d').date()), True)
-        ret += process.process(breviarium.process({'post-officium'}, None, defpile), True)
+        ret += renderer.render(breviarium.hour(i, datetime.strptime(day, '%Y-%m-%d').date()), loadchant)
+        ret += renderer.render(breviarium.process({'post-officium'}, None, defpile), loadchant)
     return template('frontend/index.tpl',office=ret)
 
 @route('/hora/<hour>')
 def office(hour):
     ret = ''
     for i in hour.split(' '):
-        ret += process.process(breviarium.hour(i, date.today()), True)
+        ret += renderer.render(breviarium.hour(i, date.today()), loadchant)
     return template('frontend/index.tpl',office=ret)
 
 @route('/hora/')
@@ -63,7 +65,7 @@ def chant(url, tags = ''):
     if 'gregobase' in url and not url.endswith('&format=gabc'):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('id=') + 3:]}&format=gabc&elem=1'
     response = requests.get(url, stream=True).text
-    return process.chomp(response, tags)
+    return renderer.chomp(response, tags)
 
 @route('/js/<file:path>')
 def javascript(file):
