@@ -33,9 +33,11 @@ def responsoriumbreve(data: dict, neumes: bool) -> str:
         return template('frontend/elements/responsorium-breve.tpl', incipit=incipit, response=response, verse=verse, gloria=gloria)
 
 def stringhandle(line: str) -> str:
-    result = re.search('\\[[a-z-]+\\]', line)
+    result = re.search('\\[.+\\]', line)
     if not result is None:
-        line[result.span()[0] + 1 : result.span()[1] - 1]
+        if result.group().startswith('psalmus-'):
+            return render
+        print(line[result.span()[0] + 1 : result.span()[1] - 1])
     line = line.replace('/', '<br>').replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
     return f'<p class={textlineclass}>{line}</p>'
 
@@ -49,10 +51,17 @@ def chomp(gabc: str, tags) -> str:
     gabc = gabc.replace('<sp>V/</sp>', '<v>\\Vbar</v>').replace('<sp>R/</sp>', '<v>\\Rbar</v>')
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
-    if 'intonata' in tags:
-        return gabc[:gabc.index('*')] + '(::)'
-    elif 'repetita' in tags:
-        return 'initial-style:0;\n' + gabc.replace('*','')[gabc.index('\n') + 1:]
+    if 'antiphona' in tags:
+        euouae = re.search(' <eu>.+$', gabc)
+        if 'intonata' in tags:
+            return gabc[:gabc.index('*')] + '(::)' + re.sub('<.?eu>','', euouae.group())
+        elif 'repetita' in tags:
+            gabc = gabc.replace('*','')[gabc.index('\n') + 1:euouae.span()[0]]
+            firstsyllable = re.search('\\w+\\(', gabc).group()
+            gabc = gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
+            return 'initial-style:0;\n' + gabc
+        else:
+            return re.sub('<.?eu>','', gabc)
     elif 'responsorium-breve' in tags:
         clef = gabc[:gabc.index(')') + 1]
         incipit = gabc[gabc.index(')') + 1 : gabc.index('*')].strip()

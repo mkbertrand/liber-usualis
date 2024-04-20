@@ -45,12 +45,12 @@ require(['jquery','exsurge'], function($,exsurge) {
 			
 			this.ctxt = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
 			this.ctxt.lyricTextFont = "'Times'";
-			this.ctxt.setFont("'Times'", 18);
+			this.ctxt.setFont("'Times'", 36);
 			this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
 			this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
 			
 			this.ctxt.condenseLineAmount = 1;
-			this.ctxt.setGlyphScaling(1/16);
+			this.ctxt.setGlyphScaling(1/8);
 			this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
 			this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
 			this.ctxt.minLyricWordSpacing *= 1;
