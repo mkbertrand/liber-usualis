@@ -51,16 +51,20 @@ def chomp(gabc: str, tags) -> str:
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
     if 'antiphona' in tags:
-        euouae = re.search(' <eu>.+$', gabc)
+        # Notes which define the termination
+        euouae = re.sub('<.?eu>', '', re.search(' <eu>.+$', gabc).group())
+        # Gabc without the euouae
+        gabc = gabc[:gabc.index('<eu>')]
         if 'intonata' in tags:
-            return gabc[:gabc.index('*')] + '(::)' + re.sub('<.?eu>','', euouae.group())
+            return gabc[:gabc.index('*')] + '(::)' + euouae
         elif 'repetita' in tags:
-            gabc = gabc.replace('*','')[gabc.index('\n') + 1:euouae.span()[0]]
+            gabc = gabc.replace('*','')[gabc.index('\n') + 1:]
             firstsyllable = re.search('\\w+\\(', gabc).group()
-            gabc = gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
-            return 'initial-style:0;\n' + gabc
-        else:
-            return re.sub('<.?eu>','', gabc)
+            gabc = 'initial-style:0;\n' + gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
+        if not 'paschalis' in tags and ' <i>T. P.</i>' in gabc:
+            return gabc[:gabc.index(' <i>T. P.</i>')]
+        return gabc
+
     elif 'responsorium-breve' in tags:
         clef = gabc[:gabc.index(')') + 1]
         incipit = gabc[gabc.index(')') + 1 : gabc.index('*')].strip()
