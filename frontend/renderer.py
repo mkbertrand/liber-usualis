@@ -32,11 +32,12 @@ def responsoriumbreve(data: dict, neumes: bool) -> str:
 def stringhandle(line: str) -> str:
     result = re.search('\\[.+\\]', line)
     if not result is None:
-        search = result.group()[1:-1]
-        if search.startswith('psalmus-'):
-            return render(psalms.render(search[len('psalmus-'):]), False)
-    matches = re.findall(
-    line = line.replace('/', '<br>').replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
+        return render(psalms.render(result.group()[1:-1]).split('\n'), False)
+
+    line = line.replace('/', '<br>')
+    for i in re.findall('[0-9]+', line):
+        line = line.replace(i, f'<span class="verse-number">{i}</span>')
+    line = line.replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
     return f'<p class={textlineclass}>{line}</p>'
 
 def chomp(gabc: str, tags) -> str:
