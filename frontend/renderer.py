@@ -51,10 +51,12 @@ def chomp(gabc: str, tags) -> str:
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
     if 'antiphona' in tags:
-        # Notes which define the termination
-        euouae = re.sub('<.?eu>', '', re.search(' <eu>.+$', gabc).group())
-        # Gabc without the euouae
-        gabc = gabc[:gabc.index('<eu>')]
+        if '<eu>' in gabc:
+            # Notes which define the termination
+            euouae = re.sub('<.?eu>', '', re.search(' <eu>.+$', gabc).group())
+            # Gabc without the euouae
+            gabc = gabc[:gabc.index('<eu>')]
+
         if 'intonata' in tags:
             return gabc[:gabc.index('*')] + '(::)' + euouae
         elif 'repetita' in tags:
