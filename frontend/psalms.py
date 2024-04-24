@@ -28,7 +28,6 @@ def render(query):
                 if not bounds[1] in psalmtext:
                     ret += re.search(f'{bounds[0]}(.|\\n)+$', psalmtext).group()
                 else:
-                    print(re.search(f'{bounds[0]}(.|\\n)+{bounds[1]}', psalmtext).group()[:-len(bounds[1])])
                     ret += re.search(f'{bounds[0]}(.|\\n)+\\n{bounds[1]}', psalmtext).group()[:-len(bounds[1])]
         else:
             ret += psalmget(i)
