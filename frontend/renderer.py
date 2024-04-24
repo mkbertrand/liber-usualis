@@ -1,6 +1,7 @@
 from bottle import template
 import urllib.parse
 import re
+import frontend.psalms as psalms
 
 textlineclass = 'text-line'
 
@@ -26,18 +27,15 @@ def responsoriumbreve(data: dict, neumes: bool) -> str:
     if neumes and 'src' in datum[0]:
         return getchant(datum[0]['src'], data['tags'])
     else:
-        incipit = datum[0].get('datum', 'Absens')
-        response = datum[1].get('datum', 'Absens')
-        verse = datum[4].get('datum', 'Absens')
-        gloria = datum[6] if len(datum) == 9 else 'Absens'
-        return template('frontend/elements/responsorium-breve.tpl', incipit=incipit, response=response, verse=verse, gloria=gloria)
+        return template('frontend/elements/responsorium-breve.tpl', incipit=datum[0].get('datum', 'Absens'), response=datum[1].get('datum', 'Absens'), verse=datum[4].get('datum', 'Absens'), gloria=datum[6] if len(datum) == 9 else 'Absens')
 
 def stringhandle(line: str) -> str:
     result = re.search('\\[.+\\]', line)
     if not result is None:
-        if result.group().startswith('psalmus-'):
-            return render
-        print(line[result.span()[0] + 1 : result.span()[1] - 1])
+        search = result.group()[1:-1]
+        if search.startswith('psalmus-'):
+            return render(psalms.render(search[len('psalmus-'):]), False)
+    matches = re.findall(
     line = line.replace('/', '<br>').replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
     return f'<p class={textlineclass}>{line}</p>'
 

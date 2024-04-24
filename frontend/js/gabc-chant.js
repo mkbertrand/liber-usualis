@@ -44,11 +44,11 @@ require(['jquery','exsurge'], function($,exsurge) {
 			super();
 			
 			this.ctxt = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
+			console.log(this.ctxt)
 			this.ctxt.lyricTextFont = "'Times'";
 			this.ctxt.setFont("'Times'", 36);
 			this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
 			this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
-			
 			this.ctxt.condenseLineAmount = 1;
 			this.ctxt.setGlyphScaling(1/8);
 			this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
@@ -66,6 +66,7 @@ require(['jquery','exsurge'], function($,exsurge) {
 			};
 			this.ctxt.setRubricColor('#d00');
 			this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
+			this.ctxt.intraNeumeSpacing = 5.5;
 			ChantElement.gabc = "";
 
 			if (this.innerText != "") {

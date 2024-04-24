@@ -67,6 +67,7 @@ def chant(url, tags = ''):
     response = requests.get(url, stream=True).text
     return renderer.chomp(response, tags)
 
+@route('/data/<version>/<query:path>:tabe 
 @route('/js/<file:path>')
 def javascript(file):
     return static_file(file, root='frontend/js/')
