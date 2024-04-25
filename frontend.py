@@ -71,6 +71,10 @@ def chant(url, tags = ''):
 def javascript(file):
     return static_file(file, root='frontend/js/')
 
+@route('/resources/<file:path>')
+def resources(file):
+    return static_file(file, root='frontend/resources/')
+
 @error(404)
 def error404(error):
     return 'Error 404'
