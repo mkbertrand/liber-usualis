@@ -48,6 +48,7 @@ def chomp(gabc: str, tags) -> str:
             mode = mode[:-1]
     gabc = '%%\n' + gabc[re.search('\\([cf]\\d\\)', gabc).span()[0]:]
     gabc = gabc.replace('<sp>V/</sp>.', '<v>\\Vbar</v>').replace('<sp>R/</sp>.', '<v>\\Rbar</v>')
+    gabc = re.sub('<.?sc>', '', gabc)
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
     if 'antiphona' in tags:
