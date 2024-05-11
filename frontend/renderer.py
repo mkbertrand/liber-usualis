@@ -1,7 +1,6 @@
 from bottle import template
 import urllib.parse
 import re
-import frontend.psalms as psalms
 
 textlineclass = 'text-line'
 
@@ -30,12 +29,9 @@ def responsoriumbreve(data: dict, neumes: bool) -> str:
         return template('frontend/elements/responsorium-breve.tpl', incipit=datum[0].get('datum', 'Absens'), response=datum[1].get('datum', 'Absens'), verse=datum[4].get('datum', 'Absens'), gloria=datum[6] if len(datum) == 9 else 'Absens')
 
 def stringhandle(line: str) -> str:
-    result = re.search('\\[.+\\]', line)
-    if not result is None:
-        return render(psalms.render(result.group()[1:-1]).split('\n'), False)
-
-    line = line.replace('/', '<br>')
-    for i in re.findall('[0-9]+', line):
+    line = line.replace('/', '<br>').replace('\n', '<br>')
+    # Has to be reversed since if there exist verse numbers like 10 and 1, the 1 will be replaced in both, and then the 0 will be ignored, and not included as a verse number.
+    for i in reversed(re.findall('[0-9]+', line)):
         line = line.replace(i, f'<span class="verse-number">{i}</span>')
     line = line.replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
     return f'<p class={textlineclass}>{line}</p>'

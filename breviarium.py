@@ -12,6 +12,7 @@ import logging
 import sys
 
 from kalendar import kalendar
+import psalms
 
 data_root = pathlib.Path(__file__).parent
 defaultpile = {'formulae','psalmi','cantica'}
@@ -95,12 +96,6 @@ def anysearch(query, pile):
         elif i['tags'].issubset(query):
             yield copy.deepcopy(i)
 
-def anysearchmultiple(queries, pile):
-    ret = []
-    for i in queries:
-        ret.extend(list(anysearch(i, pile)))
-    return ret
-
 def itemvalue(tags, table):
     val = 0
     for i in range(0, len(tagsorttable[table])):
@@ -109,10 +104,15 @@ def itemvalue(tags, table):
         val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(tagsorttable[table]) - i - 1)
     return val
 
-def search(queries, pile, multipleresults = False, multipleresultssort = None, priortags = None):
-    result = list(sorted(list(anysearchmultiple(queries, pile)), key=lambda a: itemvalue(a['tags'], 'precedence'), reverse=True))
+def search(query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
+
+    for i in query:
+        if '/' in i:
+            return {'datum':psalms.get(i)}
+
+    result = list(sorted(list(anysearch(query, pile)), key=lambda a: itemvalue(a['tags'], 'precedence'), reverse=True))
     if len(result) == 0:
-        warnings.warn(f'0 tags found for queries {list(queries)}')
+        warnings.warn(f'0 tags found for queries {list(query)}')
         return None
     bestvalue = itemvalue(result[0]['tags'], 'precedence')
     result = list(filter(lambda a: itemvalue(a['tags'], 'precedence') == bestvalue, result))
@@ -127,7 +127,7 @@ def search(queries, pile, multipleresults = False, multipleresultssort = None, p
         if len(strippedresult[-1]) != len(strippedresult[-2]):
             return result[-1]
     if not multipleresults:
-        raise RuntimeError(f'Multiple equiprobable results for queries {queries}:\n{result[-1]}\n{result[-2]}')
+        raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[-1]}\n{result[-2]}')
     else:
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
@@ -161,9 +161,10 @@ def process(item, cascades, pile):
             probablepile = datamanage.getbreviariumfiles(defaultpile | commemorations[-1])
             ret.append(process({'collecta','terminatio','commemoratio'}, [commemorations[-1]], probablepile))
         return ret
-     # None can sometimes be the result of a search and is expected, but indicates an absent item
+
+    # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set or type(item) is frozenset:
-        result = search([pickcascades(item, cascades)], pile, priortags = item)
+        result = search(pickcascades(item, cascades), pile, priortags = item)
         if result is None:
             return str(list(pickcascades(item, cascades)))
         else:
@@ -173,7 +174,7 @@ def process(item, cascades, pile):
     nextcascades = [i | item['cascade'] for i in cascades] if 'cascade' in item and cascades else cascades
 
     if 'from-tags' in item:
-        response = process(search([pickcascades(item['from-tags'], cascades)], pile, priortags = item['from-tags']), nextcascades, pile)
+        response = process(search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
         if 'tags' in item:
             return {'tags':item['tags'], 'datum':response}
         else:
@@ -182,7 +183,7 @@ def process(item, cascades, pile):
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, process searches a pile made from relevant files
         probableforwardpiles = datamanage.getbreviariumfiles(defaultpile | item['forwards-to'])
-        return process(search([item['forwards-to']], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
+        return process(search(item['forwards-to'], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
 
     elif type(item['datum']) is list:
         ret = []

@@ -70,31 +70,19 @@
 	{
 		"tags":["prima","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
 		]
 	},
 	{
 		"tags":["prima","dominica","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-cxvii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"],
-			["quicumque"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-cxvii,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["/psalmi/quicumque,gloria"]
 		]
 	},
 	{
@@ -242,76 +230,46 @@
 	{
 		"tags":["prima","feria-ii","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-xxiii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-xxiii,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
 		]
 	},
 	{
 		"tags":["prima","feria-iii","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-xxiv"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-xxiv,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
 		]
 	},
 	{
 		"tags":["prima","feria-iv","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-xxv"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-xxv,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
 		]
 	},
 	{
 		"tags":["prima","feria-v","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-xxii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-xxii,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
 		]
 	},
 	{
 		"tags":["prima","feria-vi","psalmodia"],
 		"datum":[
-			["psalmus-liii"],
-			["gloria-psalmi"],
-			["psalmus-xxi"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-i"],
-			["psalmus-cxviii-ii"],
-			["gloria-psalmi"],
-			["psalmus-cxviii-iii"],
-			["psalmus-cxviii-iv"],
-			["gloria-psalmi"]
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-xxi,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
 		]
 	},
 	{
