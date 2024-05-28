@@ -23,7 +23,7 @@
 	},
 	{
 		"tags":["apostolus","vesperae","i-psalmus"],
-		["/psalmi/psalmus-cix"]
+		"datum":[["/psalmi/psalmus-cix"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-ii"],
@@ -32,7 +32,7 @@
 	},
 	{
 		"tags":["apostolus","vesperae","ii-psalmus"],
-		["/psalmi/psalmus-cx"]
+		"datum":[["/psalmi/psalmus-cx"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iii"],
@@ -41,7 +41,7 @@
 	},
 	{
 		"tags":["apostolus","vesperae","iii-psalmus"],
-		["/psalmi/psalmus-cxi"]
+		"datum":[["/psalmi/psalmus-cxi"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iv"],
@@ -50,7 +50,7 @@
 	},
 	{
 		"tags":["apostolus","vesperae","iv-psalmus"],
-		["/psalmi/psalmus-cxii"]
+		"datum":[["/psalmi/psalmus-cxii"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-v"],
@@ -59,7 +59,7 @@
 	},
 	{
 		"tags":["apostolus","i-vesperae","vesperae","v-psalmus"],
-		["/psalmi/psalmus-cxvi"]
+		"datum":[["/psalmi/psalmus-cxvi"]]
 	},
 	{
 		"tags":[
@@ -122,7 +122,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","i-psalmus"],
-		["/psalmi/psalmus-xviii"]
+		"datum":[["/psalmi/psalmus-xviii"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-ii"],
@@ -131,7 +131,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","ii-psalmus"],
-		["/psalmi/psalmus-xxxiii"]
+		"datum":[["/psalmi/psalmus-xxxiii"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-iii"],
@@ -140,7 +140,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","iii-psalmus"],
-		["/psalmi/psalmus-xliv"]
+		"datum":[["/psalmi/psalmus-xliv"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-i"],
@@ -203,7 +203,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","i-psalmus"],
-		["/psalmi/psalmus-xlvi"]
+		"datum":[["/psalmi/psalmus-xlvi"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
@@ -212,7 +212,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","ii-psalmus"],
-		["/psalmi/psalmus-lx"]
+		"datum":[["/psalmi/psalmus-lx"]]
 	},
 	{
 		"tags":["apostolus","mtutinum","nocturna-ii","antiphona","antiphona-iii"],
@@ -221,7 +221,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","iii-psalmus"],
-		["/psalmi/psalmus-lxiii"]
+		"datum":[["/psalmi/psalmus-lxiii"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","versiculus"],

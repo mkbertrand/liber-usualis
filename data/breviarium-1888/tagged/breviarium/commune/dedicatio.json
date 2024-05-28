@@ -6,7 +6,7 @@
 	},
 	{
 		"tags":["dedicatio","vesperae","i-psalmus"],
-		["/psalmi/psalmus-cix"]
+		"datum":[["/psalmi/psalmus-cix"]]
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-ii"],
@@ -15,7 +15,7 @@
 	},
 	{
 		"tags":["dedicatio","vesperae","ii-psalmus"],
-		["/psalmi/psalmus-cx"]
+		"datum":[["/psalmi/psalmus-cx"]]
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-iii"],
@@ -24,7 +24,7 @@
 	},
 	{
 		"tags":["dedicatio","vesperae","iii-psalmus"],
-		["/psalmi/psalmus-cxi"]
+		"datum":[["/psalmi/psalmus-cxi"]]
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-iv"],
@@ -33,7 +33,7 @@
 	},
 	{
 		"tags":["dedicatio","vesperae","iv-psalmus"],
-		["/psalmi/psalmus-cxii"]
+		"datum":[["/psalmi/psalmus-cxii"]]
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-v"],
@@ -42,7 +42,7 @@
 	},
 	{
 		"tags":["dedicatio","i-vesperae","vesperae","v-psalmus"],
-		["/psalmi/psalmus-cxlvii"]
+		"datum":[["/psalmi/psalmus-cxlvii"]]
 	},
 	{
 		"tags":["dedicatio","capitulum"],
@@ -102,7 +102,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","i-psalmus"],
-		["/psalmi/psalmus-xxiii"]
+		"datum":[["/psalmi/psalmus-xxiii"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-ii"],
@@ -111,7 +111,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","ii-psalmus"],
-		["/psalmi/psalmus-xlv"]
+		"datum":[["/psalmi/psalmus-xlv"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-iii"],
@@ -120,7 +120,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","iii-psalmus"],
-		["/psalmi/psalmus-xlvii"]
+		"datum":[["/psalmi/psalmus-xlvii"]]
 	},
 	{
 		"tags":[
@@ -190,7 +190,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","i-psalmus"],
-		["/psalmi/psalmus-lxxxiii"]
+		"datum":[["/psalmi/psalmus-lxxxiii"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
@@ -199,7 +199,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","ii-psalmus"],
-		["/psalmi/psalmus-lxxxvi"]
+		"datum":[["/psalmi/psalmus-lxxxvi"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
@@ -208,7 +208,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","iii-psalmus"],
-		["/psalmi/psalmus-lxxxvii"]
+		"datum":[["/psalmi/psalmus-lxxxvii"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","versiculus"],
@@ -275,7 +275,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","i-psalmus"],
-		["/psalmi/psalmus-xc"]
+		"datum":[["/psalmi/psalmus-xc"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
@@ -284,7 +284,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","ii-psalmus"],
-		["/psalmi/psalmus-xcv"]
+		"datum":[["/psalmi/psalmus-xcv"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
@@ -293,7 +293,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","iii-psalmus"],
-		["/psalmi/psalmus-xcviii"]
+		"datum":[["/psalmi/psalmus-xcviii"]]
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","versiculus"],
@@ -421,7 +421,7 @@
 	},
 	{
 		"tags":["dedicatio","ii-vesperae","vesperae","v-psalmus"],
-		["/psalmi/psalmus-cxvi"]
+		"datum":[["/psalmi/psalmus-cxvi"]]
 	},
 	{
 		"tags":["dedicatio","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
