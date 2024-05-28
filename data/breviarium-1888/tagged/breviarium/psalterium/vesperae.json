@@ -9,23 +9,23 @@
 				"datum":[
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-i"]},
 					["vesperae","i-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-i","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-ii"]},
 					["vesperae","ii-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-ii","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-iii"]},
 					["vesperae","iii-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-iii","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-iv"]},
 					["vesperae","iv-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-iv","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-v"]},
 					["vesperae","v-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-v","repetita"]
 				]
 			},
@@ -35,7 +35,7 @@
 			["vesperae","versiculus"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-magnificat"]},
 			["magnificat"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["vesperae","antiphona","antiphona-magnificat","repetita"],
 			["preces"],
 			["collecta-primaria"],
@@ -52,7 +52,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","i-psalmus"],
-		"forwards-to":["psalmus-cix"]
+		["/psalmi/psalmus-cix"]
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","antiphona-ii","antiphona"],
@@ -60,7 +60,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","ii-psalmus"],
-		"forwards-to":["psalmus-cx"]
+		["/psalmi/psalmus-cx"]
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","antiphona-iii","antiphona"],
@@ -68,7 +68,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","iii-psalmus"],
-		"forwards-to":["psalmus-cxi"]
+		["/psalmi/psalmus-cxi"]
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","antiphona-iv","antiphona"],
@@ -76,7 +76,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","iv-psalmus"],
-		"forwards-to":["psalmus-cxii"]
+		["/psalmi/psalmus-cxii"]
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","antiphona-v","antiphona"],
@@ -84,7 +84,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","v-psalmus"],
-		"forwards-to":["psalmus-cxiii"]
+		["/psalmi/psalmus-cxiii"]
 	},
 	{
 		"tags":["vesperae","capitulum","temporale"],
@@ -110,7 +110,7 @@
 	},
 	{
 		"tags":["vesperae","feria-ii","i-psalmus"],
-		"forwards-to":["psalmus-cxiv"]
+		["/psalmi/psalmus-cxiv"]
 	},
 	{
 		"tags":["vesperae","feria-ii","antiphona-ii","antiphona"],
@@ -118,7 +118,7 @@
 	},
 	{
 		"tags":["vesperae","feria-ii","ii-psalmus"],
-		"forwards-to":["psalmus-cxv"]
+		["/psalmi/psalmus-cxv"]
 	},
 	{
 		"tags":["vesperae","feria-ii","antiphona-iii","antiphona"],
@@ -126,7 +126,7 @@
 	},
 	{
 		"tags":["vesperae","feria-ii","iii-psalmus"],
-		"forwards-to":["psalmus-cxvi"]
+		["/psalmi/psalmus-cxvi"]
 	},
 	{
 		"tags":["vesperae","feria-ii","antiphona-iv","antiphona"],
@@ -134,7 +134,7 @@
 	},
 	{
 		"tags":["vesperae","feria-ii","iv-psalmus"],
-		"forwards-to":["psalmus-cxix"]
+		["/psalmi/psalmus-cxix"]
 	},
 	{
 		"tags":["vesperae","feria-ii","antiphona-v","antiphona"],
@@ -142,7 +142,7 @@
 	},
 	{
 		"tags":["vesperae","feria-ii","v-psalmus"],
-		"forwards-to":["psalmus-cxx"]
+		["/psalmi/psalmus-cxx"]
 	},
 	{
 		"tags":["vesperae","feria-ii","hymnus"],
@@ -199,7 +199,7 @@
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat.",
 			["psalmus-l"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			"V. Dómine Deus virtútum convérte nos.",
 			"R. Et osténde fáciem tuam, et salvi érimus.",
 			"V. Exsúrge Christe, ádjuva nos.",
@@ -214,7 +214,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iii","i-psalmus"],
-		"forwards-to":["psalmus-cxxi"]
+		["/psalmi/psalmus-cxxi"]
 	},
 	{
 		"tags":["vesperae","feria-iii","antiphona-ii","antiphona"],
@@ -222,7 +222,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iii","ii-psalmus"],
-		"forwards-to":["psalmus-cxxii"]
+		["/psalmi/psalmus-cxxii"]
 	},
 	{
 		"tags":["vesperae","feria-iii","antiphona-iii","antiphona"],
@@ -230,7 +230,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iii","iii-psalmus"],
-		"forwards-to":["psalmus-cxxiii"]
+		["/psalmi/psalmus-cxxiii"]
 	},
 	{
 		"tags":["vesperae","feria-iii","antiphona-iv","antiphona"],
@@ -238,7 +238,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iii","iv-psalmus"],
-		"forwards-to":["psalmus-cxxiv"]
+		["/psalmi/psalmus-cxxiv"]
 	},
 	{
 		"tags":["vesperae","feria-iii","antiphona-v","antiphona"],
@@ -246,7 +246,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iii","v-psalmus"],
-		"forwards-to":["psalmus-cxxv"]
+		["/psalmi/psalmus-cxxv"]
 	},
 	{
 		"tags":["vesperae","feria-iii","hymnus"],
@@ -268,7 +268,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iv","i-psalmus"],
-		"forwards-to":["psalmus-cxxvi"]
+		["/psalmi/psalmus-cxxvi"]
 	},
 	{
 		"tags":["vesperae","feria-iv","antiphona-ii","antiphona"],
@@ -276,7 +276,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iv","ii-psalmus"],
-		"forwards-to":["psalmus-cxxvii"]
+		["/psalmi/psalmus-cxxvii"]
 	},
 	{
 		"tags":["vesperae","feria-iv","antiphona-iii","antiphona"],
@@ -284,7 +284,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iv","iii-psalmus"],
-		"forwards-to":["psalmus-cxxviii"]
+		["/psalmi/psalmus-cxxviii"]
 	},
 	{
 		"tags":["vesperae","feria-iv","antiphona-iv","antiphona"],
@@ -292,7 +292,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iv","iv-psalmus"],
-		"forwards-to":["psalmus-cxxix"]
+		["/psalmi/psalmus-cxxix"]
 	},
 	{
 		"tags":["vesperae","feria-iv","antiphona-v","antiphona"],
@@ -300,7 +300,7 @@
 	},
 	{
 		"tags":["vesperae","feria-iv","v-psalmus"],
-		"forwards-to":["psalmus-cxxx"]
+		["/psalmi/psalmus-cxxx"]
 	},
 	{
 		"tags":["vesperae","feria-iv","hymnus"],
@@ -322,7 +322,7 @@
 	},
 	{
 		"tags":["vesperae","feria-v","i-psalmus"],
-		"forwards-to":["psalmus-cxxxi"]
+		["/psalmi/psalmus-cxxxi"]
 	},
 	{
 		"tags":["vesperae","feria-v","antiphona-ii","antiphona"],
@@ -330,7 +330,7 @@
 	},
 	{
 		"tags":["vesperae","feria-v","ii-psalmus"],
-		"forwards-to":["psalmus-cxxxii"]
+		["/psalmi/psalmus-cxxxii"]
 	},
 	{
 		"tags":["vesperae","feria-v","antiphona-iii","antiphona"],
@@ -338,7 +338,7 @@
 	},
 	{
 		"tags":["vesperae","feria-v","iii-psalmus"],
-		"forwards-to":["psalmus-cxxxiv"]
+		["/psalmi/psalmus-cxxxiv"]
 	},
 	{
 		"tags":["vesperae","feria-v","antiphona-iv","antiphona"],
@@ -346,7 +346,7 @@
 	},
 	{
 		"tags":["vesperae","feria-v","iv-psalmus"],
-		"forwards-to":["psalmus-cxxxv"]
+		["/psalmi/psalmus-cxxxv"]
 	},
 	{
 		"tags":["vesperae","feria-v","antiphona-v","antiphona"],
@@ -354,7 +354,7 @@
 	},
 	{
 		"tags":["vesperae","feria-v","v-psalmus"],
-		"forwards-to":["psalmus-cxxxvi"]
+		["/psalmi/psalmus-cxxxvi"]
 	},
 	{
 		"tags":["vesperae","feria-v","hymnus"],
@@ -376,7 +376,7 @@
 	},
 	{
 		"tags":["vesperae","feria-vi","i-psalmus"],
-		"forwards-to":["psalmus-cxxxvii"]
+		["/psalmi/psalmus-cxxxvii"]
 	},
 	{
 		"tags":["vesperae","feria-vi","antiphona-ii","antiphona"],
@@ -384,7 +384,7 @@
 	},
 	{
 		"tags":["vesperae","feria-vi","ii-psalmus"],
-		"forwards-to":["psalmus-cxxxviii"]
+		["/psalmi/psalmus-cxxxviii"]
 	},
 	{
 		"tags":["vesperae","feria-vi","antiphona-iii","antiphona"],
@@ -392,7 +392,7 @@
 	},
 	{
 		"tags":["vesperae","feria-vi","iii-psalmus"],
-		"forwards-to":["psalmus-cxxxix"]
+		["/psalmi/psalmus-cxxxix"]
 	},
 	{
 		"tags":["vesperae","feria-vi","antiphona-iv","antiphona"],
@@ -400,7 +400,7 @@
 	},
 	{
 		"tags":["vesperae","feria-vi","iv-psalmus"],
-		"forwards-to":["psalmus-cxl"]
+		["/psalmi/psalmus-cxl"]
 	},
 	{
 		"tags":["vesperae","feria-vi","antiphona-v","antiphona"],
@@ -408,7 +408,7 @@
 	},
 	{
 		"tags":["vesperae","feria-vi","v-psalmus"],
-		"forwards-to":["psalmus-cxli"]
+		["/psalmi/psalmus-cxli"]
 	},
 	{
 		"tags":["vesperae","feria-vi","hymnus"],
@@ -430,7 +430,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","i-psalmus"],
-		"forwards-to":["psalmus-cxliii"]
+		["/psalmi/psalmus-cxliii"]
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","antiphona-ii","antiphona"],
@@ -438,7 +438,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","ii-psalmus"],
-		"forwards-to":["psalmus-cxliv"]
+		["/psalmi/psalmus-cxliv"]
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","antiphona-iii","antiphona"],
@@ -446,7 +446,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","iii-psalmus"],
-		"forwards-to":["psalmus-cxlv"]
+		["/psalmi/psalmus-cxlv"]
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","antiphona-iv","antiphona"],
@@ -454,7 +454,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","iv-psalmus"],
-		"forwards-to":["psalmus-cxlvi"]
+		["/psalmi/psalmus-cxlvi"]
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","antiphona-v","antiphona"],
@@ -462,7 +462,7 @@
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","v-psalmus"],
-		"forwards-to":["psalmus-cxlvii"]
+		["/psalmi/psalmus-cxlvii"]
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","capitulum"],

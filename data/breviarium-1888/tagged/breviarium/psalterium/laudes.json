@@ -10,7 +10,7 @@
 			["laudes","versiculus"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-benedictus"]},
 			["benedictus"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-benedictus","repetita"],
 			["preces"],
 			["collecta-primaria"],
@@ -31,16 +31,16 @@
 		"datum":[
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-i"]},
 			["i-psalmus"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-ii"]},
 			["ii-psalmus"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-iii"]},
 			["psalmus-lxii"],
 			["psalmus-lxvi"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-iii","repetita"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-iv"]},
 			["canticum"],
@@ -49,7 +49,7 @@
 			["psalmus-cxlviii"],
 			["psalmus-cxlix"],
 			["psalmus-cl"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-v","repetita"]
 		]
 	},
@@ -59,12 +59,12 @@
 		"datum":[
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-i"]},
 			["psalmus-xcii"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["psalmus-xcix"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["psalmus-lxii"],
 			["psalmus-lxvi"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["laudes","antiphona-ii"]},
 			["trium-puerorum"],
@@ -73,7 +73,7 @@
 			["psalmus-cxlviii"],
 			["psalmus-cxlix"],
 			["psalmus-cl"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["laudes","antiphona","antiphona-iii","repetita"]
 		]
 	},
@@ -131,11 +131,11 @@
 	},
 	{
 		"tags":["laudes","i-psalmus"],
-		"forwards-to":["psalmus-xcii"]
+		["/psalmi/psalmus-xcii"]
 	},
 	{
 		"tags":["laudes","ii-psalmus"],
-		"forwards-to":["psalmus-xcix"]
+		["/psalmi/psalmus-xcix"]
 	},
 	{
 		"tags":["laudes","canticum"],
@@ -147,7 +147,7 @@
 	},
 	{
 		"tags":["laudes","feria","i-psalmus"],
-		"forwards-to":["psalmus-l"]
+		["/psalmi/psalmus-l"]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-ii"],
@@ -155,7 +155,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","ii-psalmus"],
-		"forwards-to":["psalmus-v"]
+		["/psalmi/psalmus-v"]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-iii"],
@@ -169,7 +169,7 @@
 		"tags":["laudes","feria","feria-ii","canticum"],
 		"datum":[
 			["canticum-isaiae-prophetae"],
-			["gloria-psalmi"]
+			["/psalmi/gloria"]
 		]
 	},
 	{
@@ -245,7 +245,7 @@
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat.",
 			["psalmus-cxxix"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			"V. Dómine Deus virtútum convérte nos.",
 			"R. Et osténde fáciem tuam, et salvi érimus.",
 			"V. Exsúrge Christe, ádjuva nos.",
@@ -264,7 +264,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","ii-psalmus"],
-		"forwards-to":["psalmus-xlii"]
+		["/psalmi/psalmus-xlii"]
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-iii"],
@@ -278,7 +278,7 @@
 		"tags":["laudes","feria","feria-iii","canticum"],
 		"datum":[
 			["canticum-ezechiae"],
-			["gloria-psalmi"]
+			["/psalmi/gloria"]
 		]
 	},
 	{
@@ -311,6 +311,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iv","ii-psalmus"],
-		"forwards-to":["psalmus-lxiv"]
+		["/psalmi/psalmus-lxiv"]
 	}
 ]

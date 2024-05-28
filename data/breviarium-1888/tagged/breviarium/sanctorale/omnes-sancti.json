@@ -13,7 +13,7 @@
 	},
 	{
 		"tags":["omnes-sancti","vesperae","i-psalmus"],
-		"forwards-to":["psalmus-cix"]
+		["/psalmi/psalmus-cix"]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-ii"],
@@ -21,7 +21,7 @@
 	},
 	{
 		"tags":["omnes-sancti","vesperae","ii-psalmus"],
-		"forwards-to":["psalmus-cx"]
+		["/psalmi/psalmus-cx"]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iii"],
@@ -29,7 +29,7 @@
 	},
 	{
 		"tags":["omnes-sancti","vesperae","iii-psalmus"],
-		"forwards-to":["psalmus-cxi"]
+		["/psalmi/psalmus-cxi"]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iv"],
@@ -37,7 +37,7 @@
 	},
 	{
 		"tags":["omnes-sancti","vesperae","iv-psalmus"],
-		"forwards-to":["psalmus-cxii"]
+		["/psalmi/psalmus-cxii"]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-v"],
@@ -45,7 +45,7 @@
 	},
 	{
 		"tags":["omnes-sancti","i-vesperae","vesperae","v-psalmus"],
-		"forwards-to":["psalmus-cxvi"]
+		["/psalmi/psalmus-cxvi"]
 	},
 	{
 		"tags":["omnes-sancti","capitulum"],
@@ -92,7 +92,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","i-psalmus"],
-		"forwards-to":["psalmus-i"]
+		["/psalmi/psalmus-i"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","antiphona","antiphona-ii"],
@@ -100,7 +100,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","ii-psalmus"],
-		"forwards-to":["psalmus-iv"]
+		["/psalmi/psalmus-iv"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","antiphona","antiphona-iii"],
@@ -108,7 +108,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","iii-psalmus"],
-		"forwards-to":["psalmus-viii"]
+		["/psalmi/psalmus-viii"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","versiculus"],
@@ -171,7 +171,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","i-psalmus"],
-		"forwards-to":["psalmus-xiv"]
+		["/psalmi/psalmus-xiv"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","antiphona","antiphona-ii"],
@@ -179,7 +179,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","ii-psalmus"],
-		"forwards-to":["psalmus-xxiii"]
+		["/psalmi/psalmus-xxiii"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","antiphona","antiphona-iii"],
@@ -187,7 +187,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","iii-psalmus"],
-		"forwards-to":["psalmus-xxxi"]
+		["/psalmi/psalmus-xxxi"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","versiculus"],
@@ -250,7 +250,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","i-psalmus"],
-		"forwards-to":["psalmus-xxxiii"]
+		["/psalmi/psalmus-xxxiii"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","antiphona","antiphona-ii"],
@@ -258,7 +258,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","ii-psalmus"],
-		"forwards-to":["psalmus-lx"]
+		["/psalmi/psalmus-lx"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","antiphona","antiphona-iii"],
@@ -266,7 +266,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","iii-psalmus"],
-		"forwards-to":["psalmus-xcvi"]
+		["/psalmi/psalmus-xcvi"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","versiculus"],
@@ -390,7 +390,7 @@
 	},
 	{
 		"tags":["omnes-sancti","ii-vesperae","vesperae","v-psalmus"],
-		"forwards-to":["psalmus-cxv"]
+		["/psalmi/psalmus-cxv"]
 	},
 	{
 		"tags":["omnes-sancti","ii-vesperae","vesperae","versiculus"],
