@@ -79,17 +79,17 @@
 	},
 	{
 		"tags":["laudes","dominica","antiphona","antiphona-i"],
-		"src":"https://gregobase.selapa.net/chant.php?id=18321",
+		"src":"gregobase/18321",
 		"datum":"Allelúja, * allelúja."
 	},
 	{
 		"tags":["laudes","dominica","antiphona","antiphona-ii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13305",
+		"src":"gregobase/13305",
 		"datum":"Tres púeri * jussu regis in fornácem missi sunt, non timéntes flammam ignis, dicéntes: Benedíctus Deus."
 	},
 	{
 		"tags":["laudes","dominica","antiphona","antiphona-iii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=18322",
+		"src":"gregobase/18322",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
@@ -103,7 +103,7 @@
 			["laudes","dominica","post-pentecosten","october","hymnus"],
 			["laudes","dominica","post-pentecosten","november","hymnus"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=13348",
+		"src":"gregobase/13348",
 		"datum":[
 			"Ætérne rerum Cónditor,/Noctem diémque qui regis,/Et témporum das témpora,/Ut álleves fastídium.",
 			"Noctúrna lux viántibus/A nocte noctem ségregans,/Præco diéi jam sonat,/Jubárque solis évocat.",
@@ -118,7 +118,7 @@
 	},
 	{
 		"tags":["laudes","dominica","post-pentecosten","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12721",
+		"src":"gregobase/12721",
 		"datum":[
 			"Ecce jam noctis tenuátur umbra,/Lux et auróræ rútilans corúscat:/Súpplices rerum Dóminum canóra/Voce precémur:",
 			"Ut reos culpæ miserátus, omnem/Pellat angórem, tríbuat salútem,/Donet et nobis bona sempitérnæ/Múnera pacis.",
@@ -182,7 +182,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=15781",
+		"src":"gregobase/15781",
 		"datum":[
 			"Splendor patérnæ glóriæ,/De luce lucem próferens,/Lux lucis, et fons lúminis,/Diem dies illúminans:",
 			"Verúsque sol illábere,/Micans nitóre pérpeti:/Jubárque sancti Spíritus/Infúnde nostris sénsibus.",
@@ -201,7 +201,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=18855",
+		"src":"gregobase/18855",
 		"datum":"Benedíctus * Dóminus Deus Ísraël."
 	},
 	{
@@ -287,7 +287,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12157",
+		"src":"gregobase/12157",
 		"datum":[
 			"Ales diéi núntius/Lucem propínquam prǽcinit:/Nos excitátor méntium/Jam Christus ad vitam vocat.",
 			"Auférte, clamat, léctulos,/Ægro sopóre désides:/Castíque, recti, ac sóbrii/Vigiláte, jam sum próximus.",
@@ -298,7 +298,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11804",
+		"src":"gregobase/11804",
 		"datum":"Eréxit nobis * Dóminus cornu salútis in domo David púeri sui."
 	},
 	{

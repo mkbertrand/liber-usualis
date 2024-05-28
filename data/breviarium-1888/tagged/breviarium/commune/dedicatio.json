@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["dedicatio","antiphona","antiphona-i"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2758",
+		"src":"gregobase/2758",
 		"datum":"Domum tuam Dómine * decet sanctitúdo in longitúdinem diérum."
 	},
 	{
@@ -10,7 +10,7 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-ii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2508",
+		"src":"gregobase/2508",
 		"datum":"Domus mea * domus oratiónis vocábitur."
 	},
 	{
@@ -19,7 +19,7 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-iii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2834",
+		"src":"gregobase/2834",
 		"datum":"Hæc est domus Dómini * fírmiter ædificáta, bene fundáta est supra firmam petram."
 	},
 	{
@@ -28,7 +28,7 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2869",
+		"src":"gregobase/2869",
 		"datum":"Bene fundáta est * domus Dómini supra firmam petram."
 	},
 	{
@@ -37,7 +37,7 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-v"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2776",
+		"src":"gregobase/2776",
 		"datum":"Lápides pretiósi * omnes muri tui, et turres Jerúsalem gemmis ædificabúntur."
 	},
 	{
@@ -53,7 +53,7 @@
 			["dedicatio","i-vesperae","vesperae","hymnus"],
 			["dedicatio","matutinum","hymnus"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2200",
+		"src":"gregobase/2200",
 		"datum":[
 			"Cœléstis urbs Jerúsalem,/Beáta pacis vísio,/Quæ celsa de vivéntibus/Saxis ad astra tólleris,/Sponsǽque ritu cíngeris/Mille Angelórum míllibus.",
 			"O sorte nupta próspera,/Dotáta Patris glória,/Respérsa sponsi grátia,/Regína formosíssima,/Christo jugáta Príncipi,/Cœli corúsca cívitas.",
@@ -71,7 +71,7 @@
 	},
 	{
 		"tags":["dedicatio","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2315",
+		"src":"gregobase/2315",
 		"datum":"Sanctificávit Dóminus * tabernáculum suum: quia hæc est domus Dei, in qua invocábitur nomen ejus, de quo scriptum est: Et erit nomen meum ibi, dicit Dóminus."
 	},
 	{
@@ -92,12 +92,12 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDI/",
+		"src":"nocturnale/CDEDI",
 		"datum":"Domum Dei decet sanctitúdo: * Sponsum ejus Christum adorémus in ea."
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN1A1/",
+		"src":"nocturnale/CDEDN1A1",
 		"datum":"Tóllite * portas príncipes vestras, et elevámini portæ æternáles."
 	},
 	{
@@ -106,7 +106,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN1A2/",
+		"src":"nocturnale/CDEDN1A2",
 		"datum":"Erit mihi * Dóminus in Deum, et lapis iste vocábitur domus Dei."
 	},
 	{
@@ -115,7 +115,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN1A3/",
+		"src":"nocturnale/CDEDN1A3",
 		"datum":"Ædificávit * Móyses altáre Dómino Deo."
 	},
 	{
@@ -138,7 +138,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN1R1/",
+		"src":"nocturnale/CDEDN1R1",
 		"datum":"In dedicatióne templi decantábat pópulus laudem:"
 	},
 	{
@@ -155,7 +155,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN1R2/",
+		"src":"nocturnale/CDEDN1R2",
 		"datum":"Fundáta est domus Dómini supra vérticem móntium, et exaltáta est super omnes colles:"
 	},
 	{
@@ -172,7 +172,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN1R3/",
+		"src":"nocturnale/CDEDN1R3",
 		"datum":"Bénedic Dómine domum istam, quam ædificávi nómini tuo veniéntium in loco isto,"
 	},
 	{
@@ -185,7 +185,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN2A1/",
+		"src":"nocturnale/CDEDN2A1",
 		"datum":"Non est hic áliud, * nisi domus Dei, et porta cœli."
 	},
 	{
@@ -194,7 +194,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN2A2/",
+		"src":"nocturnale/CDEDN2A2",
 		"datum":"Vidit Jacob scalam, * súmmitas ejus cœlos tangébat, et descendéntes Ángelos, et dixit: Vere locus iste sanctus est."
 	},
 	{
@@ -203,7 +203,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN2A3/",
+		"src":"nocturnale/CDEDN2A3",
 		"datum":"Eréxit Jacob * lápidem in títulum, fundens óleum désuper."
 	},
 	{
@@ -223,7 +223,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN2R1/",
+		"src":"nocturnale/CDEDN2R1",
 		"datum":"Orántibus in loco isto,"
 	},
 	{
@@ -240,7 +240,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN2R2/",
+		"src":"nocturnale/CDEDN2R2",
 		"datum":"O quam metuéndus est locus iste:"
 	},
 	{
@@ -257,7 +257,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN2R3/",
+		"src":"nocturnale/CDEDN2R3",
 		"datum":"Mane surgens Jacob erigébat lápidem in títulum, fundens óleum désuper, votum vovit Dómino:"
 	},
 	{
@@ -270,7 +270,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN3A1/",
+		"src":"nocturnale/CDEDN3A1",
 		"datum":"Qui hábitat in adjutório Altíssimi, * in protectióne Dei cœli commorábitur."
 	},
 	{
@@ -279,7 +279,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN3A2/",
+		"src":"nocturnale/CDEDN3A2",
 		"datum":"Templum Dómini * sanctum est, Dei structúra est, Dei ædificátio est."
 	},
 	{
@@ -288,7 +288,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN3A3/",
+		"src":"nocturnale/CDEDN3A3",
 		"datum":"Benedícta * glória Dómini, de loco sancto suo, allelúja."
 	},
 	{
@@ -310,7 +310,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN3R1/",
+		"src":"nocturnale/CDEDN3R1",
 		"datum":"Domus mea, domus oratiónis vocábitur, dicit Dóminus: in ea omnis qui petit, áccipit; et qui quærit, ínvenit:"
 	},
 	{
@@ -327,7 +327,7 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/CDEDN3R2/",
+		"src":"nocturnale/CDEDN3R2",
 		"datum":"Lápides pretiósi omnes muri tui:"
 	},
 	{
@@ -344,7 +344,7 @@
 	},
 	{
 		"tags":["dedicatio","laudes","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2948",
+		"src":"gregobase/2948",
 		"datum":[
 			"Alto ex Olýmpi vértice/Summi Paréntis Fílius,/Ceu monte deséctus lapis/Terras in imas décidens,/Domus supérnæ, et ínfimæ,/Utrúmque junxit ángulum.",
 			"Sed illa sedes cœlitum/Semper resúltat laúdibus,/Deúmque Trinum et Únicum/Jugi canóre prǽdicat:/Illi canéntes júngimur/Almæ Siónis ǽmuli.",
@@ -359,7 +359,7 @@
 	},
 	{
 		"tags":["dedicatio","tertia","responsorium-breve","incipit"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3121",
+		"src":"gregobase/3121",
 		"datum":"Domum tuam Dómine"
 	},
 	{
@@ -380,7 +380,7 @@
 	},
 	{
 		"tags":["dedicatio","sexta","responsorium-breve","infcipit"],
-		"src":"https://gregobase.selapa.net/chant.php?id=1065",
+		"src":"gregobase/1065",
 		"datum":"Locus iste sanctus est,"
 	},
 	{
@@ -404,7 +404,7 @@
 	},
 	{
 		"tags":["dedicatio","nona","responsorium-breve","incipit"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3188",
+		"src":"gregobase/3188",
 		"datum":"Hæc est domus Dómini"
 	},
 	{
@@ -425,7 +425,7 @@
 	},
 	{
 		"tags":["dedicatio","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2416",
+		"src":"gregobase/2416",
 		"datum":"O quam metuéndus est * locus iste: vere non est hic áliud, nisi domus Dei, et porta cœli."
 	}
 ]

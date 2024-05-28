@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["vidua","antiphona","antiphona-i"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2000",
+		"src":"gregobase/2000",
 		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis."
 	},
 	{
@@ -10,7 +10,7 @@
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-ii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2963",
+		"src":"gregobase/2963",
 		"datum":"In odórem * unguentórum tuórum cúrrimus; adolescéntulæ dilexérunt te nimis."
 	},
 	{
@@ -19,7 +19,7 @@
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-iii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2056",
+		"src":"gregobase/2056",
 		"datum":"Jam hiems tránsiit, * imber ábiit, et recéssit: surge amíca mea, et veni."
 	},
 	{
@@ -28,7 +28,7 @@
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2115",
+		"src":"gregobase/2115",
 		"datum":"Veni elécta mea, * et ponam in te thronum meum, allelúja."
 	},
 	{
@@ -37,7 +37,7 @@
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-v"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2474",
+		"src":"gregobase/2474",
 		"datum":"Ista est speciósa * inter fílias Jerúsalem."
 	},
 	{
@@ -54,7 +54,7 @@
 	},
 	{
 		"tags":["vidua","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2492",
+		"src":"gregobase/2492",
 		"datum":[
 			"Fortem viríli péctore/Laudémus omnes féminam,/Quæ sanctitátis glória/Ubíque fulget ínclyta.",
 			"Hæc sancto amóre saúcia,/Dum mundi amórem nóxium/Horréscit, ad cœléstia/Iter perégit árduum.",
@@ -69,7 +69,7 @@
 	},
 	{
 		"tags":["vidua","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=18848",
+		"src":"gregobase/18848",
 		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam."
 	},
 	{
@@ -90,17 +90,17 @@
 	},
 	{
 		"tags":["vidua","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"https://nocturnale.marteo.fr/chant/MUNXIa/",
+		"src":"nocturnale/MUNXIa",
 		"datum":"Laudémus Deum nostrum, * In confessióne beátæ N."
 	},
 	{
 		"tags":["vidua","viduae","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"https://nocturnale.marteo.fr/chant/MUNXIb/",
+		"src":"nocturnale/MUNXIb",
 		"datum":"Laudémus Deum nostrum, * In confessióne beatárum N. et N."
 	},
 	{
 		"tags":["vidua","matutinum","hymnus"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVMHb/",
+		"src":"nocturnale/MUVMHb",
 		"datum":[
 			"Hujus orátu Deus alme nobis/Débitas pœnas scélerum remítte;/Ut tibi puro resonémus almum/Péctore carmen.",
 			"Sit decus Patri, genitǽque Proli,/Et tibi compar utriúsque virtus/Spíritus semper, Deus unus omni/Témporis ævo.","Amen."
@@ -108,7 +108,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1A1/",
+		"src":"nocturnale/MUXXN1A1",
 		"datum":"O quam pulchra * est casta generátio cum claritáte!"
 	},
 	{
@@ -117,7 +117,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUNXN1A2/",
+		"src":"nocturnale/MUNXN1A2",
 		"datum":"Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me."
 	},
 	{
@@ -126,7 +126,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1A3/",
+		"src":"nocturnale/MUXXN1A3",
 		"datum":"Revértere, * revértere Sunamítis: revértere, revértere, ut intueámur te."
 	},
 	{
@@ -146,7 +146,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXNN1R1/",
+		"src":"nocturnale/MUXNN1R1",
 		"datum":"Veni elécta mea, et ponam in te thronum meum:"
 	},
 	{
@@ -163,7 +163,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1R2/",
+		"src":"nocturnale/MUXXN1R2",
 		"datum":"Diffúsa est grátia in lábiis tuis:"
 	},
 	{
@@ -180,7 +180,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1R3/",
+		"src":"nocturnale/MUXXN1R3",
 		"datum":"Spécie tua et pulchritúdine tua"
 	},
 	{
@@ -193,7 +193,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A1/",
+		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
@@ -202,7 +202,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A2/",
+		"src":"nocturnale/MUXXN2A2",
 		"datum":"Adjuvábit eam * Deus vultu suo: Deus médio ejus, non commovébitur."
 	},
 	{
@@ -211,7 +211,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A3/",
+		"src":"nocturnale/MUXXN2A3",
 		"datum":"Aquæ multæ * non potuérunt exstínguere caritátem."
 	},
 	{
@@ -231,7 +231,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2R1/",
+		"src":"nocturnale/MUXXN2R1",
 		"datum":"Propter veritátem, et mansuetúdinem, et justítiam:"
 	},
 	{
@@ -248,7 +248,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2R2/",
+		"src":"nocturnale/MUXXN2R2",
 		"datum":"Dilexísti justítiam, et odísti iniquitátem:"
 	},
 	{
@@ -265,7 +265,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUNXN2R3/",
+		"src":"nocturnale/MUNXN2R3",
 		"datum":"Fallax grátia, et vana est pulchritúdo:"
 	},
 	{
@@ -278,7 +278,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A1/",
+		"src":"nocturnale/MUXXN3A1",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
 	},
 	{
@@ -287,7 +287,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A2/",
+		"src":"nocturnale/MUXXN3A2",
 		"datum":"Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum."
 	},
 	{
@@ -296,7 +296,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A3/",
+		"src":"nocturnale/MUXXN3A3",
 		"datum":"Veni sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
 	},
 	{
@@ -318,7 +318,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUNXN3R1/",
+		"src":"nocturnale/MUNXN3R1",
 		"datum":"Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus: considerávit sémitas domus suæ,"
 	},
 	{
@@ -335,7 +335,7 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXN3R2/",
+		"src":"nocturnale/MUVXN3R2",
 		"datum":"Regnum mundi, et omnem ornátum sǽculi contémpsi, propter amórem Dómini mei Jesu Christi:"
 	},
 	{
@@ -356,12 +356,12 @@
 	},
 	{
 		"tags":["vidua","martyr","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2681",
+		"src":"gregobase/2681",
 		"datum":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus."
 	},
 	{
 		"tags":["vidua","tertia","responsorium-breve","incipit"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3208",
+		"src":"gregobase/3208",
 		"datum":"Spécie tua"
 	},
 	{
@@ -386,7 +386,7 @@
 	},
 	{
 		"tags":["vidua","sexta","responsorium-breve","incipit"],
-		"src":"https://gregobase.selapa.net/chant.php?id=8710",
+		"src":"gregobase/8710",
 		"datum":"Adjuvábit eam"
 	},
 	{
@@ -411,7 +411,7 @@
 	},
 	{
 		"tags":["vidua","nona","responsorium-breve","incipit"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3143",
+		"src":"gregobase/3143",
 		"datum":"Elégit eam Deus,"
 	},
 	{

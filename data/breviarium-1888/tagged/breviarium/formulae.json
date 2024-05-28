@@ -1,17 +1,17 @@
 [
 	{
 		"tags":["deus-in-adjutorium","ferialis"],
-		"src":"https://gregobase.selapa.net/chant.php?id=15354",
+		"src":"gregobase/15354",
 		"datum":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui Sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."]
 	},
 	{
 		"tags":["deus-in-adjutorium","festalis"],
-		"src":"https://gregobase.selapa.net/chant.php?id=7417",
+		"src":"gregobase/7417",
 		"datum":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui Sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."]
 	},
 	{
 		"tags":["deus-in-adjutorium","solemnis"],
-		"src":"https://gregobase.selapa.net/chant.php?id=7402",
+		"src":"gregobase/7402",
 		"datum":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui Sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."]
 	},
 	{
@@ -78,7 +78,7 @@
 	},
 	{
 		"tags":["hymnus","te-deum"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2305",
+		"src":"gregobase/2305",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
 			"Te ætérnum Patrem * omnis terra venerátur.",
@@ -113,7 +113,7 @@
 	},
 	{
 		"tags":["hymnus","te-deum","solemnis"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2809",
+		"src":"gregobase/2809",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
 			"Te ætérnum Patrem * omnis terra venerátur.",
@@ -281,72 +281,72 @@
 	},
 	{
 		"tags":["sollemnitas","i-vesperae","vesperae","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=4567",
+		"src":"gregobase/4567",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["sollemnitas","laudes","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=10336",
+		"src":"gregobase/10336",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["sollemnitas","ii-vesperae","vesperae","benedicamus-domino"],	
-		"src":"https://gregobase.selapa.net/chant.php?id=4568",
+		"src":"gregobase/4568",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["sollemnitas","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=7522",
+		"src":"gregobase/7522",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["duplex-minus","i-vesperae","vesperae","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=7866",
+		"src":"gregobase/7866",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["duplex-minus","laudes","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=10336",
+		"src":"gregobase/10336",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["duplex-minus","ii-vesperae","vesperae","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=8245",
+		"src":"gregobase/8245",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["semiduplex","dominica","hora-major","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=16976",
+		"src":"gregobase/16976",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["semiduplex","dominica","poenitentialis","hora-major","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=9841",
+		"src":"gregobase/9841",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["semiduplex","laudes","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=10172",
+		"src":"gregobase/10172",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["semiduplex","vesperae","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=15698",
+		"src":"gregobase/15698",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["simplex","hora-major","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=15743",
+		"src":"gregobase/15743",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["feria","hora-major","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=15741",
+		"src":"gregobase/15741",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
 		"tags":["hora-minor","benedicamus-domino"],
-		"src":"https://gregobase.selapa.net/chant.php?id=18844",
+		"src":"gregobase/18844",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
@@ -355,12 +355,12 @@
 	},
 	{
 		"tags":["antiphona-bmv","alma-redemptoris","antiphona","solemnis"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11878",
+		"src":"gregobase/11878",
 		"datum":"Alma * Redemptóris Mater, quæ pérvia cœli/Porta manes, et stella maris, succúrre cadénti,/Súrgere qui curat, pópulo: tu quæ genuísti,/Natúra miránte, tuum sanctum Genitórem,/Virgo prius ac postérius, Gábrielis ab ore/Sumens illud Ave, peccatórum miserére."
 	}, 
 	{
 		"tags":["antiphona-bmv","alma-redemptoris","antiphona"],
-		"src":"https://gregobase.selapa.net/chant.php?id=1851",
+		"src":"gregobase/1851",
 		"datum":"Alma * Redemptóris Mater, quæ pérvia cœli/Porta manes, et stella maris, succúrre cadénti,/Súrgere qui curat, pópulo: tu quæ genuísti,/Natúra miránte, tuum sanctum Genitórem,/Virgo prius ac postérius, Gábrielis ab ore/Sumens illud Ave, peccatórum miserére."
 	}, 
 	{
@@ -392,12 +392,12 @@
 	},
 	{
 		"tags":["antiphona-bmv","salve-regina","antiphona","solemnis"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2715",
+		"src":"gregobase/2715",
 		"datum":"Salve Regína, * mater misericórdiæ, vita, dulcédo et spes nostra, salve. Ad te clamámus, éxsules fílii Hevæ. Ad te suspirámus, geméntes et flentes in hac lacrimárum valle. Eja ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Jesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, o pia, o dulcis Virgo María."
 	},
 	{
 		"tags":["antiphona-bmv","salve-regina","antiphona"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2435",
+		"src":"gregobase/2435",
 		"datum":"Salve Regína, * mater misericórdiæ, vita, dulcédo et spes nostra, salve. Ad te clamámus, éxsules fílii Hevæ. Ad te suspirámus, geméntes et flentes in hac lacrimárum valle. Eja ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Jesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, o pia, o dulcis Virgo María."
 	},
 	{

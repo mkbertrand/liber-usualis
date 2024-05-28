@@ -10,7 +10,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-iv","matutinum","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F4R1/",
+		"src":"nocturnale/A3F4R1",
 		"incipit":"Clama in fortitúdine, qui annúntias pacem in Jerúsalem:",
 		"responsum":"Dic civitátibus Judæ, et habitatóribus Sion: Ecce Deus noster, quem exspectabámus, advéniet.",
 		"versus":"Supra montem excélsum ascénde tu, qui evangelízas Sion, exálta in fortitúdine vocem tuam."
@@ -21,7 +21,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-iv","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F4R2/",
+		"src":"nocturnale/A3F4R2",
 		"incipit":"Oriétur stella ex Jacob, et exsúrget homo de Ísraël, et confrínget omnes duces alienigenárum:",
 		"responsum":"Et erit omnis terra posséssio ejus.",
 		"versus":"Adorábunt eum omnes reges terræ, omnes gentes sérvient ei."
@@ -32,14 +32,14 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-iv","matutinum","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F4R3/",
+		"src":"nocturnale/A3F4R3",
 		"incipit":"Modo véniet Dominátor Dóminus:",
 		"responsum":"Et nomen ejus Emmánuel vocábitur.",
 		"versus":"Oriétur in diébus ejus justítia, et abundántia pacis."
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-iv","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11827",
+		"src":"gregobase/11827",
 		"datum":"Missus est Gábriel * Ángelus ad Maríam Vírginem desponsátam Joseph."
 	},
 	{
@@ -49,7 +49,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-iv","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13295",
+		"src":"gregobase/13295",
 		"datum":"Ecce ancílla Dómini: * fiat mihi secúndum verbum tuum."
 	},
 	{
@@ -63,7 +63,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-vi","matutinum","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F6R1/",
+		"src":"nocturnale/A3F6R1",
 		"incipit":"Emítte Agnum Dómine, Dominatórem terræ,",
 		"responsum":"De Petra desérti ad montem fíliæ Sion.",
 		"versus":"Osténde nobis Dómine misericórdiam tuam, et salutáre tuum da nobis."
@@ -74,7 +74,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-vi","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F6R2/",
+		"src":"nocturnale/A3F6R2",
 		"incipit":"Roráte cœli désuperm et nubes pluant justum:",
 		"responsum":"Aperiátur terra, et gérminet Salvatórem.",
 		"versus":"Emítte Agnum Dómine Dominatórem terræ, de Petra desérti ad montem fíliæ Sion."
@@ -85,14 +85,14 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-vi","matutinum","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F6R3/",
+		"src":"nocturnale/A3F6R3",
 		"incipit":"Germinavérunt campi erémi germen odóris Ísraël: quia ecce Deus noster cum virtúte véniet,",
 		"responsum":"Et splendor ejus cum eo.",
 		"versus":"Ex Sion spécies decóris ejus: Deus noster maniféste véniet."
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-vi","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11883",
+		"src":"gregobase/11883",
 		"datum":"Ex quo facta est * vox salutatiónis tuæ in aúribus meis, exsultávit in gaúdio infans in útero meo, allelúja."
 	},
 	{
@@ -102,7 +102,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","feria-vi","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12245",
+		"src":"gregobase/12245",
 		"datum":"Hoc est testimónium, * quod perhíbuit Joánnes: Qui post me venit, ante me factus est."
 	},
 	{
@@ -116,7 +116,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","sabbatum","matutinum","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F7R1/",
+		"src":"nocturnale/A3F7R1",
 		"incipit":"Egrediétur virga de radíce Jesse, et flos de radíce ejus ascéndet:",
 		"responsum":"Et erit justítia cíngulum lumbórum ejus, et fides cinctórium renum ejus.",
 		"versus":"Et requiéscet super eum spíritus Dómini: spíritus sapiéntiæ, et intelléctus: spíritus consílii, et fortitúdinis."
@@ -127,7 +127,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","sabbatum","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F7R2/",
+		"src":"nocturnale/A3F7R2",
 		"incipit":"Radix Jesse, qui exsúrget judicáre Gentes, in eum Gentes sperábunt:",
 		"responsum":"Et erit nomen ejus benedíctum in sǽcula.",
 		"versus":"Super ipsum continébunt reges os suum, ipsum Gentes deprecabúntur."
@@ -144,7 +144,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","sabbatum","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12103",
+		"src":"gregobase/12103",
 		"datum":"Quómodo fiet istud, * Ángele Dei, quóniam virum non cognósco? Audi María Virgo: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi."
 	},
 	{

@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["virgo","antiphona","antiphona-i"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2281",
+		"src":"gregobase/2281",
 		"datum":"Hæc est Virgo sápiens, * et una de número prudéntum."
 	},
 	{
@@ -10,7 +10,7 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-ii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2798",
+		"src":"gregobase/2798",
 		"datum":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit."
 	},
 	{
@@ -19,7 +19,7 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-iii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2836",
+		"src":"gregobase/2836",
 		"datum":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum."
 	},
 	{
@@ -28,7 +28,7 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2115",
+		"src":"gregobase/2115",
 		"datum":"Veni elécta mea, * et ponam in te thronum meum, allelúja."
 	},
 	{
@@ -37,7 +37,7 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-v"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2151",
+		"src":"gregobase/2151",
 		"datum":"Ista est speciósa * inter fílias Jerúsalem."
 	},
 	{
@@ -53,7 +53,7 @@
 			["virgo","vesperae","hymnus"],
 			["virgo","laudes","hymnus"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2587",
+		"src":"gregobase/2587",
 		"datum":[
 			"Jesu, coróna Vírginum,/Quem mater illa cóncipit,/Quæ sola Virgo pártuit:/Hæc vota clemens áccipe.",
 			"Qui pergis inter lília,/Septus choréis Vírginum,/Sponsus decórus glória,/Sponsísque reddens prǽmia.",
@@ -75,7 +75,7 @@
 	},
 	{
 		"tags":["virgo","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2042",
+		"src":"gregobase/2042",
 		"datum":"Veni sponsa Christi: * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
 	},
 	{
@@ -83,7 +83,7 @@
 			["virgo","virgines","vesperae","antiphona","antiphona-magnificat"],
 			["virgo","virgines","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2919",
+		"src":"gregobase/2919",
 		"datum":"Prudéntes Vírgines * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei."
 	},
 	{
@@ -108,7 +108,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","sollemnitas","antiphona","antiphona-invitatorium"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXIc/",
+		"src":"nocturnale/MUVXIc",
 		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
 	},
 	{
@@ -116,17 +116,17 @@
 			["virgo","matutinum","duplex","antiphona","antiphona-invitatorium"],
 			["virgo","matutinum","semiduplex","antiphona","antiphona-invitatorium"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXIb/",
+		"src":"nocturnale/MUVXIb",
 		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["virgo","matutinum","simplex","antiphona","antiphona-invitatorium"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXIa/",
+		"src":"nocturnale/MUVXIa",
 		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["virgo","martyr","matutinum","hymnus"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVMHa/",
+		"src":"nocturnale/MUVMHa",
 		"datum":[
 			"Vírginis Proles, Opiféxque Matris,/Virgo quem gessit, peperítque Virgo;/Vírginis partos cánimus decóra/Morte triúmphos.",
 			"Hæc enim palmæ dúplicis beáta/Sorte, dum gestit frágilem domáre/Córporis sexum, dómuit cruéntum/Cæde tyránnum.",
@@ -137,7 +137,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","hymnus"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVMHa/",
+		"src":"nocturnale/MUVMHa",
 		"datum":[
 			"Vírginis Proles, Opiféxque Matris,/Virgo quem gessit, peperítque Virgo;/Vírginis festum cánimus beátæ/Áccipe votum.",
 			"Hujus orátu Deus alme nobis/Débitas pœnas scélerum remítte;/Ut tibi puro resonémus almum/Péctore carmen.",
@@ -146,7 +146,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1A1/",
+		"src":"nocturnale/MUXXN1A1",
 		"datum":"O quam pulchra * est casta generátio cum claritáte!"
 	},
 	{
@@ -155,7 +155,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXN1A2/",
+		"src":"nocturnale/MUVXN1A2",
 		"datum":"Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis."
 	},
 	{
@@ -164,7 +164,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1A3/",
+		"src":"nocturnale/MUXXN1A3",
 		"datum":"Revértere, * revértere Sunamítis: revértere, revértere, ut intueámur te."
 	},
 	{
@@ -184,14 +184,14 @@
 	},
 	{
 		"tags":["virgo","martyr","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXMN1R1/",
+		"src":"nocturnale/MUXMN1R1",
 		"incipit":"Veni sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit in ætérnum: pro cujus amóre sánguinem tuum fudísti,",
 		"responsum":"Et cum Ángelis in paradísum introísti.",
 		"versus":"Veni elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem tuam."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXNN1R1/",
+		"src":"nocturnale/MUXNN1R1",
 		"incipit":"Veni elécta mea, et ponam in te thronum meum:",
 		"responsum":"Quia concupívit Rex spéciem tuam.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
@@ -202,7 +202,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1R2/",
+		"src":"nocturnale/MUXXN1R2",
 		"incipit":"Diffúsa est grátia in lábiis tuis:",
 		"responsum":"Proptérea benedíxit te Deus in ætérnum.",
 		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
@@ -213,14 +213,14 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN1R3/",
+		"src":"nocturnale/MUXXN1R3",
 		"incipit":"Spécie tua et pulchritúdine tua",
 		"responsum":"Inténde, próspere procéde, et regna.",
 		"versus":"Diffúsa est grátia in lábiis tuis, proptéra benedíxit te Deus in ætérnum."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A1/",
+		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
@@ -229,7 +229,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A2/",
+		"src":"nocturnale/MUXXN2A2",
 		"datum":"Adjuvábit eam * Deus vultu suo: Deus médio ejus, non commovébitur."
 	},
 	{
@@ -238,7 +238,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2A3/",
+		"src":"nocturnale/MUXXN2A3",
 		"datum":"Aquæ multæ * non potuérunt exstínguere caritátem."
 	},
 	{
@@ -258,7 +258,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2R1/",
+		"src":"nocturnale/MUXXN2R1",
 		"incipit":"Propter veritátem, et mansuetúdinem, et justítiam:",
 		"responsum":"Et dedúcet te mirabíliter déxtera tua.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
@@ -269,7 +269,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN2R2/",
+		"src":"nocturnale/MUXXN2R2",
 		"incipit":"Dilexísti justítiam, et odísti iniquitátem:",
 		"responsum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ.",
 		"versus":"Propter veritátem, et mansuetúdinem, et justítiam."
@@ -280,14 +280,14 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXN2R3/",
+		"src":"nocturnale/MUVXN2R3",
 		"incipit":"Afferéntur Regi vírgines post eam, próximæ ejus",
 		"responsum":"Afferéntur tibi in lætítia et exsultatióne.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A1/",
+		"src":"nocturnale/MUXXN3A1",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
 	},
 	{
@@ -296,7 +296,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A2/",
+		"src":"nocturnale/MUXXN3A2",
 		"datum":"Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum."
 	},
 	{
@@ -305,7 +305,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUXXN3A3/",
+		"src":"nocturnale/MUXXN3A3",
 		"datum":"Veni sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
 	},
 	{
@@ -327,7 +327,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXN3R1/",
+		"src":"nocturnale/MUVXN3R1",
 		"incipit":"Hæc est Virgo sápiens, quam Dóminus vigilántem invénit, quæ accéptis lampádibus, sumpsit secum óleum:",
 		"responsum":"Et veniénte Dómino, introívit cum eo ad núptias.",
 		"versus":"Média nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei."
@@ -338,7 +338,7 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/MUVXN3R2/",
+		"src":"nocturnale/MUVXN3R2",
 		"incipit":"Média nocte clamor factus est:",
 		"responsum":"Ecce sponsus venit, exíte óbviam ei.",
 		"versus":"Prudéntes Vírgines, aptáte vestras lámpades."
@@ -353,12 +353,12 @@
 	},
 	{
 		"tags":["virgo","martyr","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=18848",
+		"src":"gregobase/18848",
 		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam."
 	},
 	{
 		"tags":["virgo","tertia","responsorium-breve"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3208",
+		"src":"gregobase/3208",
 		"incipit":"Spécie tua",
 		"responsum":"Et pulchritúdine tua.",
 		"versus":"Inténde, próspere procéde, et regna."
@@ -373,7 +373,7 @@
 	},
 	{
 		"tags":["virgo","sexta","responsorium-breve"],
-		"src":"https://gregobase.selapa.net/chant.php?id=8710",
+		"src":"gregobase/8710",
 		"incipit":"Adjuvábit eam",
 		"responsum":"Deus vultu suo.",
 		"versus":"Deus in médio ejus, non commovébitur."
@@ -392,7 +392,7 @@
 	},
 	{
 		"tags":["virgo","nona","responsorium-breve"],
-		"src":"https://gregobase.selapa.net/chant.php?id=3143",
+		"src":"gregobase/3143",
 		"incipit":"Elégit eam Deus,",
 		"responsum":"Et præelégit eam.",
 		"versus":"In tabernáculo suo habitáre facit eam."

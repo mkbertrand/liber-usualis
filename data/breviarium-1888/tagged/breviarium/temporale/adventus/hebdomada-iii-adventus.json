@@ -4,7 +4,7 @@
 			["hebdomada-iii-adventus","dominica","antiphona","antiphona-i"],
 			["hebdomada-iii-adventus","feria","prima","antiphona","antiphona-i"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2145",
+		"src":"gregobase/2145",
 		"datum":"Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúja."
 	},
 	{
@@ -12,7 +12,7 @@
 			["hebdomada-iii-adventus","dominica","antiphona","antiphona-ii"],
 			["hebdomada-iii-adventus","feria","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2116",
+		"src":"gregobase/2116",
 		"datum":"Jerúsalem gaude * gaúdio magno, quia véniet tibi Salvátor, allelúja."
 	},
 	{
@@ -20,12 +20,12 @@
 			["hebdomada-iii-adventus","dominica","antiphona","antiphona-iii"],
 			["hebdomada-iii-adventus","feria","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2830",
+		"src":"gregobase/2830",
 		"datum":"Dabo in Sion * salútem, et in Jerúsalem glóriam meam, allelúja."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2443",
+		"src":"gregobase/2443",
 		"datum":"Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni Dómine, et noli tardáre, allelúja."
 	},
 	{
@@ -33,7 +33,7 @@
 			["hebdomada-iii-adventus","dominica","antiphona","antiphona-v"],
 			["hebdomada-iii-adventus","feria","nona","antiphona","antiphona-v"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=1937",
+		"src":"gregobase/1937",
 		"datum":"Juste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini."
 	},
 	{
@@ -42,7 +42,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2616",
+		"src":"gregobase/2616",
 		"datum":"Ante me * non est formátus Deus, et post me non erit: quia mihi curvábitur omne genu, et confitébitur omnis lingua."
 	},
 	{
@@ -62,7 +62,7 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
 			["hebdomada-iii-adventus","feria","feria-ii","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A3N1R1/",
+		"src":"nocturnale/A3N1R1",
 		"incipit":"Ecce apparébit Dóminus super nubem cándidam,",
 		"responsum":"Et cum eo sanctórum míllia: et habébit in vestiménto, et in fémore suo scriptum: Rex regum, et Dóminus dominántium.",
 		"versus":"Apparébit in finem, et non mentiétur; si moram fécerit, exspécta eum, quia véniens véniet."
@@ -76,7 +76,7 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
 			["hebdomada-iii-adventus","feria","feria-ii","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A3N1R2/",
+		"src":"nocturnale/A3N1R2",
 		"incipit":"Béthlehem cívitas Dei summi, ex te éxiet Dominátor Ísraël, et egréssus ejus sicut a princípio diérum æternitátis, et magnificábitur in médio univérsæ terræ:",
 		"responsum":"Et pax erit in terra nostra, dum vénerit.",
 		"versus":"Loquétur pacem in Géntibus, et potéstas ejus a mari usque ad mare."
@@ -90,7 +90,7 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
 			["hebdomada-iii-adventus","feria","feria-ii","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A3N1R3/",
+		"src":"nocturnale/A3N1R3",
 		"incipit":"Qui ventúrus est, véniet, et non tardábit: et jam non erit timor in fínibus nostris:",
 		"responsum":"Quóniam ipse est Salvátor noster.",
 		"versus":"Depónet omnes iniquitátes nostras, et projíciet in profúndum maris ómnia peccáta nostra."
@@ -107,7 +107,7 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["hebdomada-iii-adventus","feria","feria-iii","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A3N2R1/",
+		"src":"nocturnale/A3N2R1",
 		"incipit":"Ægýpte noli flere, quia Dominátor tuus véniet tibi, ante cujus conspéctum movebúntur abýssi,",
 		"responsum":"Liberáre pópulum suum de manu poténtiæ.",
 		"versus":"Ecce véniet Dóminus exercítuum, Deus tuus cum potestáte magna."
@@ -121,7 +121,7 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 			["hebdomada-iii-adventus","feria","feria-iii","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A3N2R2/",
+		"src":"nocturnale/A3N2R2",
 		"incipit":"Prope est ut véniat tempus ejus, et dies ejus non elongabúntur:",
 		"responsum":"Miserébitur Dóminus Jacob, et Ísraël salvábitur.",
 		"versus":"Revértere virgo Ísraël, revértere ad civitátes tuas."
@@ -135,7 +135,7 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 			["hebdomada-iii-adventus","feria","feria-iii","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A3N2R3/",
+		"src":"nocturnale/A3N2R3",
 		"incipit":"Descéndet Dóminus sicut plúvia in vellus:",
 		"responsum":"Oriétur in diébus ejus justítia, et abundántia pacis.",
 		"versus":"Et adorábunt eum omnes reges, omnes gentes sérvient ei."
@@ -151,7 +151,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A3N3R1/",
+		"src":"nocturnale/A3N3R1",
 		"incipit":"Veni Dómine, et noli tardáre: reláxa facínora plebi tuæ,",
 		"responsum":"Et révoca dispérsos in terram suam.",
 		"versus":"Éxcita Dómine poténtiam tuam, et veni, ut salvos fácias nos."
@@ -162,7 +162,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3N3R2/",
+		"src":"nocturnale/A3N3R2",
 		"incipit":"Ecce radix Jesse descéndet in salútem populórum, ipsum Gentes deprecabúntur:",
 		"responsum":"Et erit nomen ejus gloriósum.",
 		"versus":"Dabit ei Dóminus Deus sedem David patris ejus, et regnábit in domo Jacob in ætérnum."
@@ -173,14 +173,14 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3N3R3/",
+		"src":"nocturnale/A3N3R3",
 		"incipit":"Docébit nos Dóminus vias suas, et ambulábimus in sémitis ejus:",
 		"responsum":"Quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.",
 		"versus":"Veníte, ascendámus ad montem Dómini, et ad domum Dei Jacob."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12671",
+		"src":"gregobase/12671",
 		"datum":"Super sólium * David, et super regnum ejus sedébit in ætérnum, allelúja."
 	},
 	{
@@ -193,7 +193,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13018",
+		"src":"gregobase/13018",
 		"datum":"Beáta es María, * quæ credidísti Dómino: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja."
 	},
 	{
@@ -213,12 +213,12 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11909",
+		"src":"gregobase/11909",
 		"datum":"Egrediétur * virga de radíce Jesse, et replébitur omnis terra glória Dómini: et vidébit omnis caro salutáre Dei."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12818",
+		"src":"gregobase/12818",
 		"datum":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus."
 	},
 	{
@@ -238,12 +238,12 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11750",
+		"src":"gregobase/11750",
 		"datum":"Tu Béthlehem * terra Juda, non eris mínima: ex te enim éxiet Dux, qui regat pópulum meum Ísraël."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13009",
+		"src":"gregobase/13009",
 		"datum":"Eleváre, eleváre, * consúrge Jerúsalem: solve víncula colli tui, captíva fília Sion."
 	},
 	{
@@ -255,7 +255,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","matutinum","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F5R1/",
+		"src":"nocturnale/A3F5R1",
 		"incipit":"Egrediétur Dóminus et præliábitur contra Gentes:",
 		"responsum":"Et stabunt pedes ejus supra montes olivárum ad Oriéntem.",
 		"versus":"Et elevábitur supra omnes colles, et fluent ad eum omnes Gentes."
@@ -266,7 +266,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","matutinum","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F5R2/",
+		"src":"nocturnale/A3F5R2",
 		"incipit":"Præcúrsor pro nobis ingréditur Agnus sine mácula,",
 		"responsum":"Secúndum órdinem Melchísedech Póntifex factus in ætérnum, et in sǽculum sǽculi.",
 		"versus":"Ipse est rex justítiæ, cujus generátio non habet finem."
@@ -277,19 +277,19 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","matutinum","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A3F5R3/",
+		"src":"nocturnale/A3F5R3",
 		"incipit":"Vidébunt Gentes justum tuum, et cuncti reges ínclytum tuum:",
 		"responsum":"Et vocábitur tibi nomen novum, quod os Dómini nominávit.",
 		"versus":"Et eris coróna glóriæ in manu Dómini, et diadéma regni in manu Dei tui."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11910",
+		"src":"gregobase/11910",
 		"datum":"Vigiláte * ánimo, in próximo est Dóminus Deus noster."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12631",
+		"src":"gregobase/12631",
 		"datum":"Lætámini * cum Jerúsalem, et exsultáte in ea omnes qui dilígitis eam, in ætérnum."
 	}
 ]

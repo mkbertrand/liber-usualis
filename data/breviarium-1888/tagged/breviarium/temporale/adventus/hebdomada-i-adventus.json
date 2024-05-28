@@ -4,7 +4,7 @@
 			["hebdomada-i-adventus","dominica","antiphona","antiphona-i"],
 			["hebdomada-i-adventus","feria","prima","antiphona","antiphona-i"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2835",
+		"src":"gregobase/2835",
 		"datum":"In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúja."
 	},
 	{
@@ -12,7 +12,7 @@
 			["hebdomada-i-adventus","dominica","antiphona","antiphona-ii"],
 			["hebdomada-i-adventus","feria","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2392",
+		"src":"gregobase/2392",
 		"datum":"Jucundáre * fília Sion, et exsúlta satis fília Jerúsalem, allelúja."
 	},
 	{
@@ -20,12 +20,12 @@
 			["hebdomada-i-adventus","dominica","antiphona","antiphona-iii"],
 			["hebdomada-i-adventus","feria","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2289",
+		"src":"gregobase/2289",
 		"datum":"Ecce Dóminus véniet, * et omnes Sancti ejus cum eo: et erit in die illa lux magna, allelúja."
 	},
 	{
 		"tags":["hebdomada-i-adventus","dominica","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=1876",
+		"src":"gregobase/1876",
 		"datum":"Omnes sitiéntes * veníte ad aquas: quǽrite Dóminum, dum inveníri potest, allelúja."
 	},
 	{
@@ -33,7 +33,7 @@
 			["hebdomada-i-adventus","dominica","antiphona","antiphona-v"],
 			["hebdomada-i-adventus","feria","nona","antiphona","antiphona-v"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2631",
+		"src":"gregobase/2631",
 		"datum":"Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja."
 	},
 	{
@@ -58,7 +58,7 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A1N1R1/",
+		"src":"nocturnale/A1N1R1",
 		"formula":[
 			["responsorium","incipit"],
 			["responsorium","responsum-i"],
@@ -93,7 +93,7 @@
 			["hebdomada-i-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
 			["hebdomada-i-adventus","feria","feria-v","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N1R2/",
+		"src":"nocturnale/A1N1R2",
 		"incipit":"Aspiciébam in visu noctis, et ecce in núbibus cœli Fílius hóminis veniébat: et datum est ei regnum, et honor:",
 		"responsum":"Et omnis pópulus, tribus, et linguæ sérvient ei.",
 		"versus":"Potéstas ejus, potéstas ætérna, quæ non auferétur: et regnum ejus, quod non corrumpétur."
@@ -107,7 +107,7 @@
 			["hebdomada-i-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
 			["hebdomada-i-adventus","feria","feria-v","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N1R3/",
+		"src":"nocturnale/A1N1R3",
 		"incipit":"Missus est Gábriel Ángelus ad Maríam Vírginem desponsátam Joseph, núntians ei verbum; et expavéscit Virgo de lúmine: ne tímeas, María, invenísti grátiam apud Dóminum:",
 		"responsum":"Ecce concípies et páries, et vocábitur Altíssimi Fílius.",
 		"versus":"Dabit ei Dóminus Deus sedem David, patris ejus, et regnábit in domo Jacob in ætérnum."
@@ -124,7 +124,7 @@
 			["hebdomada-i-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["hebdomada-i-adventus","feria","feria-vi","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N2R1/",
+		"src":"nocturnale/A1N2R1",
 		"incipit":"Ave María, grátia plena, Dóminus tecum:",
 		"responsum":"Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei.",
 		"versus":"Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Ángelus, dixit ei."
@@ -138,7 +138,7 @@
 			["hebdomada-i-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 			["hebdomada-i-adventus","feria","feria-vi","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N2R2/",
+		"src":"nocturnale/A1N2R2",
 		"incipit":"Salvatórem exspectámus Dóminum Jesum Christum,",
 		"responsum":"Qui reformábit corpus humilitátis nostræ configurátum córpori claritátis suæ.",
 		"versus":"Sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei."
@@ -153,7 +153,7 @@
 			["hebdomada-i-adventus","feria","feria-vi","matutinum","responsorium","responsorium-iii"]
 		],
 		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
-		"src":"https://nocturnale.marteo.fr/chant/A1N2R3/",
+		"src":"nocturnale/A1N2R3",
 		"incipit":"Óbsecro Dómine, mitte quem missúrus es: vide afflictiónem pópuli tui:",
 		"responsum-i":"Sicut locútus es, veni,",
 		"responsum-ii":"Et líbera nos.",
@@ -173,7 +173,7 @@
 			["hebdomada-i-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
 			["hebdomada-i-adventus","feria","sabbatum","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N3R1/",
+		"src":"nocturnale/A1N3R1",
 		"incipit":"Ecce virgo concípiet, et páriet fílium, dicit Dóminus:",
 		"responsum":"Et vocábitur nomen ejus Admirábilis, Deus Fortis.",
 		"versus":"Super sólium David, et super regnum ejus sedébit in ætérnum."
@@ -187,7 +187,7 @@
 			["hebdomada-i-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 			["hebdomada-i-adventus","feria","sabbatum","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N3R2/",
+		"src":"nocturnale/A1N3R2",
 		"incipit":"Audíte verbum Dómini Gentes, et annuntiáte illud in fínibus terræ:",
 		"responsum":"Et ínsulis, quæ procul sunt, dícite: Salvátor noster advéniet.",
 		"versus":"Annuntiáte, et audítum fácite: loquímini, et clamáte."
@@ -202,7 +202,7 @@
 			["hebdomada-i-adventus","feria","feria-iv","matutinum","responsorium","responsorium-iii"],
 			["hebdomada-i-adventus","feria","sabbatum","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A1N3R3/",
+		"src":"nocturnale/A1N3R3",
 		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
 		"incipit":"Ecce dies véniunt, dicit Dóminus, et suscitábo David germen justum: et regnábit Rex, et sápiens erit, et fáciet judícium et justítiam in terra:",
 		"responsum-i":"Et hoc est nomen quod vocábunt eum:",
@@ -211,7 +211,7 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","dominica","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12304",
+		"src":"gregobase/12304",
 		"datum":"Spíritus sanctus * in te descéndet, María: ne tímeas, habébis in útero Fílium Dei, allelúja."
 	},
 	{
@@ -224,7 +224,7 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","dominica","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11899",
+		"src":"gregobase/11899",
 		"datum":"Ne tímeas María, * invenísti enim grátiam apud Dóminum: ecce concípies, et páries fílium, allelúja."
 	},
 	{
@@ -244,12 +244,12 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13074",
+		"src":"gregobase/13074",
 		"datum":"Ángelus Dómini * nuntiávit Maríæ, et concépit de Spíritu sancto, allelúja."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11764",
+		"src":"gregobase/11764",
 		"datum":"Leva Jerúsalem * óculos tuos, et vide poténtiam regis: ecce Salvátor venit sólvere te a vínculo."
 	},
 	{
@@ -269,12 +269,12 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12719",
+		"src":"gregobase/12719",
 		"datum":"Ántequam convenírent, * invénta est María habens in útero de Spíritu sancto, allelúja."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13038",
+		"src":"gregobase/13038",
 		"datum":"Quǽrite Dóminum, * dum inveníri potest: invocáte eum, dum prope est, allelúja."
 	},
 	{
@@ -294,12 +294,12 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11819",
+		"src":"gregobase/11819",
 		"datum":"De Sion * exíbit lex, et verbum Dómini de Jerúsalem."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=11882",
+		"src":"gregobase/11882",
 		"datum":"Véniet * fórtior me post me, cujus non sum dignus sólvere corrígiam calceamentórum."
 	},
 	{
@@ -319,12 +319,12 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12807",
+		"src":"gregobase/12807",
 		"datum":"Benedícta * tu in muliéribus, et benedíctus fructus ventris tui."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=12824",
+		"src":"gregobase/12824",
 		"datum":"Exspectábo * Dóminum Salvatórem meum, et præstolábor eum dum prope est, allelúja."
 	},
 	{
@@ -344,12 +344,12 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13206",
+		"src":"gregobase/13206",
 		"datum":"Ecce véniet * Deus et homo de domo David sedére in throno, allelúja."
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2354",
+		"src":"gregobase/2354",
 		"datum":"Ex Ægýpto * vocávi Fílium meum: véniet, ut salvet pópulum suum."
 	},
 	{
@@ -369,7 +369,7 @@
 	},
 	{
 		"tags":["hebdomada-i-adventus","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2270",
+		"src":"gregobase/2270",
 		"datum":"Sion, noli timére, * ecce Deus tuus véniet, allelúja."
 	}
 ]

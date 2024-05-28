@@ -4,7 +4,7 @@
 			["hebdomada-ii-adventus","dominica","antiphona","antiphona-i"],
 			["hebdomada-ii-adventus","feria","prima","antiphona","antiphona-i"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2102",
+		"src":"gregobase/2102",
 		"datum":"Ecce in núbibus cœli: * Dóminus véniet cum potestáte magna, allelúja."
 	},
 	{
@@ -12,7 +12,7 @@
 			["hebdomada-ii-adventus","dominica","antiphona","antiphona-ii"],
 			["hebdomada-ii-adventus","feria","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=1927",
+		"src":"gregobase/1927",
 		"datum":"Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et antemurále: aperíte portas, quia nobíscum Deus, allelúja."
 	},
 	{
@@ -20,12 +20,12 @@
 			["hebdomada-ii-adventus","dominica","antiphona","antiphona-iii"],
 			["hebdomada-ii-adventus","feria","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2626",
+		"src":"gregobase/2626",
 		"datum":"Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúja."
 	},
 	{
 		"tags":["hebdomada-ii-adventus","dominica","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2768",
+		"src":"gregobase/2768",
 		"datum":"Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúja, allelúja."
 	},
 	{
@@ -33,7 +33,7 @@
 			["hebdomada-ii-adventus","dominica","antiphona","antiphona-v"],
 			["hebdomada-ii-adventus","feria","nona","antiphona","antiphona-v"]
 		],
-		"src":"https://gregobase.selapa.net/chant.php?id=2376",
+		"src":"gregobase/2376",
 		"datum":"Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúja."
 	},
 	{
@@ -42,7 +42,7 @@
 	},
 	{
 		"tags":["hebdomada-ii-adventus","dominica","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2686",
+		"src":"gregobase/2686",
 		"datum":"Veni Dómine * visitáre nos in pace, ut lætémur coram te corde perfécto."
 	},
 	{
@@ -62,7 +62,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
 			["hebdomada-ii-adventus","feria","feria-v","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N1R1/",
+		"src":"nocturnale/A2N1R1",
 		"incipit":"Jerúsalem, cito véniet salus tua: quare mœróre consúmeris? numquid consiliárius non est tibi, quia innovávit te dolor?",
 		"responsum":"Salvábo te, et liberábo te, noli timére.",
 		"versus":"Ego enim sum Dóminus Deus tuus, sanctus Ísraël, Redémptor tuus."
@@ -76,7 +76,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
 			["hebdomada-ii-adventus","feria","feria-v","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N1R2/",
+		"src":"nocturnale/A2N1R2",
 		"incipit":"Ecce Dóminus véniet, et omnes sancti ejus cum eo, et erit in die illa lux magna: et exíbunt de Jerúsalem sicut aqua munda: et regnábit Dóminus in ætérnum",
 		"responsum":"Super omnes Gentes.",
 		"versus":"Ecce Dóminus cum virtúte véniet: et regnum in manu ejus, et potéstas, et impérium."
@@ -90,7 +90,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
 			["hebdomada-ii-adventus","feria","feria-v","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N1R3/",
+		"src":"nocturnale/A2N1R3",
 		"incipit":"Cívitas Jerúsalem noli flere: quóniam dóluit Dóminus super te:",
 		"responsum":"Et aúferet a te omnem tribulatiónem.",
 		"versus":"Ecce Dóminus in fortitúdine véniet: et bráchium ejus dominábitur."
@@ -107,7 +107,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["hebdomada-ii-adventus","feria","feria-vi","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N2R1/",
+		"src":"nocturnale/A2N2R1",
 		"incipit":"Ecce véniet Dóminus, protéctor noster, sanctus Ísraël,",
 		"responsum":"Corónam regni habens in cápite suo.",
 		"versus":"Et dominábitur a mari usque ad mare, et a flúmine usque ad términos orbis terrárum."
@@ -121,7 +121,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 			["hebdomada-ii-adventus","feria","feria-vi","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N2R2/",
+		"src":"nocturnale/A2N2R2",
 		"incipit":"Sicut mater consolátur fílios suos, ita consolábor vos, dicit Dóminus: et de Jerúsalem civitáte quam elégi, véniet vobis auxílium:",
 		"responsum":"Et vidébitis, et gaudébit cor vestrum.",
 		"versus":"Dabo in Sion salútem, et in Jerúsalem glóriam meam."
@@ -135,7 +135,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 			["hebdomada-ii-adventus","feria","feria-vi","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N2R3/",
+		"src":"nocturnale/A2N2R3",
 		"incipit":"Jerúsalem plantábis víneam in móntibus tuis: exsultábis, quóniam dies Dómini véniet: surge Sion, convértere ad Dóminum Deum tuum: gaude et lætáre Jacob:",
 		"responsum":"Quia de médio Géntium Salvátor tuus véniet.",
 		"versus":"Exsúlta satis fília Sion: júbila fília Jerúsalem."
@@ -154,7 +154,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
 			["hebdomada-ii-adventus","feria","sabbatum","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N3R1/",
+		"src":"nocturnale/A2N3R1",
 		"incipit":"Egrediétur Dóminus de Samaría ad portam, quæ réspicit ad Oriéntem: et véniet in Béthlehem, ámbulans super aquas redemptiónis Judæ:",
 		"responsum":"Tunc salvus erit omnis homo: quia ecce véniet.",
 		"versus":"Et præparábitur in misericórdia sólium ejus, et sedébit super illud in veritáte."
@@ -168,7 +168,7 @@
 			["hebdomada-ii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 			["hebdomada-ii-adventus","feria","sabbatum","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N3R2/",
+		"src":"nocturnale/A2N3R2",
 		"incipit":"Festína, ne tardáveris Dómine:",
 		"responsum":"Et líbera pópulum tuum.",
 		"versus":"Veni Dómine, et noli tardáre: reláxa facínora plebi tuæ."
@@ -183,14 +183,14 @@
 			["hebdomada-ii-adventus","feria","feria-iv","matutinum","responsorium","responsorium-iii"],
 			["hebdomada-ii-adventus","feria","sabbatum","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"https://nocturnale.marteo.fr/chant/A2N3R3/",
+		"src":"nocturnale/A2N3R3",
 		"incipit":"Ecce Dóminus véniet cum splendóre descéndens, et virtus ejus cum eo,",
 		"responsum":"Visitáre pópulum suum in pace, et constitúere super eum vitam sempitérnam.",
 		"versus":"Ecce Dóminus noster cum virtúte véniet."
 	},
 	{
 		"tags":["hebdomada-ii-adventus","dominica","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2679",
+		"src":"gregobase/2679",
 		"datum":"Joánnes autem * cum audísset in vínculis ópera Christi, mittens duos ex discípulis suis, ait illi: Tu es qui ventúrus es, an álium exspectámus?"
 	},
 	{
@@ -203,7 +203,7 @@
 	},
 	{
 		"tags":["hebdomada-ii-adventus","dominica","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2504",
+		"src":"gregobase/2504",
 		"datum":"Tu es qui ventúrus es, * an álium exspectámus? Dícite Joánni quæ vidístis: Ad lumen rédeunt cæci, mórtui resúrgunt, paúperes evangelizántur, allelúja."
 	},
 	{
@@ -223,12 +223,12 @@
 	},
 	{
 		"tags":["hebdomada-ii-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2395",
+		"src":"gregobase/2395",
 		"datum":"De cœlo véniet * Dominátor Dóminus, et in manu ejus honor et impérium."
 	},
 	{
 		"tags":["hebdomada-ii-adventus","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2405",
+		"src":"gregobase/2405",
 		"datum":"Ecce véniet Rex * Dóminus terræ, et ipse aúferet jugum captivitátis nostræ."
 	},
 	{
@@ -248,12 +248,12 @@
 	},
 	{
 		"tags":["hebdomada-ii-adventus","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2303",
+		"src":"gregobase/2303",
 		"datum":"Super te * Jerúsalem oriétur Dóminus, et glória ejus in te vidébitur."
 	},
 	{
 		"tags":["hebdomada-ii-adventus","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2481",
+		"src":"gregobase/2481",
 		"datum":"Vox clamántis * in desérto, Paráte viam Dómini, rectas fácite sémitas Dei nostri."
 	},
 	{

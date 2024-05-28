@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["hebdomada-iv-adventus","dominica","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2837",
+		"src":"gregobase/2837",
 		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja, allelúja."
 	},
 	{
@@ -22,7 +22,7 @@
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/A4N1R1/",
+		"src":"nocturnale/A4N1R1",
 		"incipit":"Cánite tuba in Sion, vocáte Gentes, annuntiáte pópulis, et dícite:",
 		"responsum":"Ecce Deus Salvátor noster advéniet.",
 		"versus":"Annuntiáte, et audítum fácite: loquímini, et clamáte."
@@ -33,7 +33,7 @@
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/A4N1R2/",
+		"src":"nocturnale/A4N1R2",
 		"incipit":"Non auferétur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est:",
 		"responsum":"Et ipse erit exspectátio Géntium.",
 		"versus":"Pulchrióres sunt óculi ejus vino, et dentes ejus lacte candidióres."
@@ -44,7 +44,7 @@
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/A4N1R3/",
+		"src":"nocturnale/A4N1R3",
 		"incipit":"Me opórtet mínui, illum autem créscere: qui autem post me venit, ante me factus est:",
 		"responsum":"Cujus non sum dignus corrígiam calceamentórum sólvere.",
 		"versus":"Ego baptizávi vos aqua: ille autem baptizábit vos Spíritu sancto."

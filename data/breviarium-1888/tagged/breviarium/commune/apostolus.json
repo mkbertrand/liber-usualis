@@ -18,7 +18,7 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-i"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2300",
+		"src":"gregobase/2300",
 		"datum":"Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos."
 	},
 	{
@@ -27,7 +27,7 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-ii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2104",
+		"src":"gregobase/2104",
 		"datum":"Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
 	},
 	{
@@ -36,7 +36,7 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2202",
+		"src":"gregobase/2202",
 		"datum":"Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus."
 	},
 	{
@@ -45,7 +45,7 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=1893",
+		"src":"gregobase/1893",
 		"datum":"Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt."
 	},
 	{
@@ -54,7 +54,7 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-v"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2594",
+		"src":"gregobase/2594",
 		"datum":"In patiéntia vestra * possidébitis ánimas vestras."
 	},
 	{
@@ -71,7 +71,7 @@
 	},
 	{
 		"tags":["apostolus","vesperae","hymnus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2194",
+		"src":"gregobase/2194",
 		"datum":[
 			"Exsúltet orbis gaúdiis:/Cœlum resúltet laúdibus:/Apostolórum glóriam/Tellus et astra cóncinunt.",
 			"Vos sæculórum júdices,/Et vera mundi lúmina,/Votis precámur córdium:/Audíte voces súpplicum.",
@@ -91,22 +91,22 @@
 	},
 	{
 		"tags":["apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2112",
+		"src":"gregobase/2112",
 		"datum":"Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et ante reges et prǽsides ducémini propter me in testimónium illis, et Géntibus."
 	},
 	{
 		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXIa/",
+		"src":"nocturnale/APEXIa",
 		"datum":"Regem Apostolórum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXIb/",
+		"src":"nocturnale/APEXIb",
 		"datum":"Regem Apostolórum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["apostolus","matutinum","hymnus"],
-		"src":"https://nocturnale.marteo.fr/chant/EXAPEXH/",
+		"src":"nocturnale/EXAPEXH",
 		"datum":[
 			"Ætérna Christi múnera,/Apostolórum glóriam,/Palmas et hymnos débitos/Lætis canámus méntibus.",
 			"Ecclesiárum Príncipes,/Belli triumpháles duces,/Cœléstis aulæ mílites,/Et vera mundi lúmina.",
@@ -117,7 +117,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN1A1/",
+		"src":"nocturnale/APEXN1A1",
 		"datum":"In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum."
 	},
 	{
@@ -126,7 +126,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN1A2/",
+		"src":"nocturnale/APEXN1A2",
 		"datum":"Clamavérunt justi, * et Dóminus exaudívit eos."
 	},
 	{
@@ -135,7 +135,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN1A3/",
+		"src":"nocturnale/APEXN1A3",
 		"datum":"Constítues * eos príncipes super omnem terram: mémores erunt nóminis tui Dómine."
 	},
 	{
@@ -151,7 +151,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN1R1/",
+		"src":"nocturnale/APEXN1R1",
 		"datum":"Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:"
 	},
 	{
@@ -168,7 +168,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN1R2/",
+		"src":"nocturnale/APEXN1R2",
 		"datum":"Tóllite jugum meum super vos, dicit Dóminus, et díscite a me, quia mitis sum, et húmilis corde:"
 	},
 	{
@@ -185,7 +185,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN1R3/",
+		"src":"nocturnale/APEXN1R3",
 		"datum":"Dum steréritis ante reges et prǽsides, nolíte cogitáre quómodo quid loquámini:"
 	},
 	{
@@ -198,7 +198,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN2A1/",
+		"src":"nocturnale/APEXN2A1",
 		"datum":"Príncipes populórum * congregáti sunt cum Deo Ábraham."
 	},
 	{
@@ -207,7 +207,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN2A2/",
+		"src":"nocturnale/APEXN2A2",
 		"datum":"Dedísti hæreditátem * timéntibus nomen tuum Dómine."
 	},
 	{
@@ -216,7 +216,7 @@
 	},
 	{
 		"tags":["apostolus","mtutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN2A3/",
+		"src":"nocturnale/APEXN2A3",
 		"datum":"Annuntiavérunt * ópera Dei, et facta ejus intellexérunt."
 	},
 	{
@@ -236,7 +236,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN2R1/",
+		"src":"nocturnale/APEXN2R1",
 		"datum":"Vidi conjúnctos viros, habéntes spléndidas vestes, et Angelus Dómini locútus est ad me, dicens:"
 	},
 	{
@@ -253,7 +253,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN2R2/",
+		"src":"nocturnale/APEXN2R2",
 		"datum":"Beáti estis, cum maledíxerint vobis hómines, et persecúti vos fúerint, díxerint omne malum advérsum vos, mentiéntes, propter me:"
 	},
 	{
@@ -270,7 +270,7 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/APEXN2R3/",
+		"src":"nocturnale/APEXN2R3",
 		"datum":"Isti sunt triumphatóres et amíci Dei, qui contemnéntes jussa príncipum, meruérunt prǽmia ætérna:"
 	},
 	{

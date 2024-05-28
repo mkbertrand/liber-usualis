@@ -1,22 +1,22 @@
 [
 	{
 		"tags":["lucia","antiphona","antiphona-i"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2738",
+		"src":"gregobase/2738",
 		"datum":"Oránte sanct Lúcia, * appáruit ei beáta Agatha, et consolabátur ancíllam Christi."
 	},
 	{
 		"tags":["lucia","antiphona","antiphona-ii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2240",
+		"src":"gregobase/2240",
 		"datum":"Lúcia virgo * quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?"
 	},
 	{
 		"tags":["lucia","antiphona","antiphona-iii"],
-		"src":"https://gregobase.selapa.net/chant.php?id=1926",
+		"src":"gregobase/1926",
 		"datum":"Per te Lúcia virgo * cívitas Syracusána decorábitur a Dómino Jesu Christo."
 	},
 	{
 		"tags":["lucia","antiphona","antiphona-iv"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2039",
+		"src":"gregobase/2039",
 		"datum":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo."
 	},
 	{
@@ -26,7 +26,7 @@
 	},
 	{
 		"tags":["lucia","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=1987",
+		"src":"gregobase/1987",
 		"datum":"In tua patiéntia * possedísti ánimam tuam, Lúcia sponsa Christ: odísti quæ in mundo sunt, et corúscas cum Ángelis: sánguine próprio inimícum vicísti."
 	},
 	{
@@ -43,7 +43,7 @@
 	},
 	{
 		"tags":["lucia","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"https://nocturnale.marteo.fr/chant/1213N2R1/",
+		"src":"nocturnale/1213N2R1",
 		"incipit":"Lúcia virgo, quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ? nam et fides tua illi subvénit, et ecce salváta est:",
 		"responsum":"Quia jucúndum Deo in tua virginitáte habitáculum præparásti.",
 		"versus":"Sicut per me cívitas Catanénsium sublimátur a Christo, ita per te Syracusána cívitas decorábitur."
@@ -54,7 +54,7 @@
 	},
 	{
 		"tags":["lucia","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"https://nocturnale.marteo.fr/chant/1213N2R2/",
+		"src":"nocturnale/1213N2R2",
 		"incipit":"Rogávi Dóminum meum Jesum Christum, ut ignis iste non dominétur mei:",
 		"responsum":"Et impetrávi a Dómino indúcias martýrii mei.",
 		"versus":"Pro eo ut me dilígerent, detrahébant mihi: ego autem orábam."
@@ -65,7 +65,7 @@
 	},
 	{
 		"tags":["lucia","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"https://nocturnale.marteo.fr/chant/1213N2R3/",
+		"src":"nocturnale/1213N2R3",
 		"incipit":"Grata facta est a Dómino in certámine, quia apud Deum et apud hómines glorificáta est: ni conspéctu príncipis loquebátur sapiéntiam:",
 		"responsum":"Et Dóminus ómnium diléxit eam.",
 		"versus":"Adjuvábit eam Deus vultu suo: Deus in médio ejus, non commovébitur."
@@ -101,12 +101,12 @@
 	},
 	{
 		"tags":["lucia","laudes","antiphona","antiphona-benedictus"],
-		"src":"https://gregobase.selapa.net/chant.php?id=13242",
+		"src":"gregobase/13242",
 		"datum":"Colúmna es * immóbilis, Lúcia sponsa Christi: quia omnis plebs te exspéctat, ut accípias corónam vitæ, allelúja."
 	},
 	{
 		"tags":["lucia","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
-		"src":"https://gregobase.selapa.net/chant.php?id=2757",
+		"src":"gregobase/2757",
 		"datum":"Tanto póndere eam fixit * Spíritus sanctus, ut virgo Christi immóbilis permanéret."
 	}
 ]
