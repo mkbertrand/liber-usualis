@@ -30,9 +30,9 @@ def chomp(gabc: str, tags) -> str:
 
     elif 'responsorium-breve' in tags:
         clef = gabc[:gabc.index(')') + 1]
-        incipit = re.search(r'(?<=\(..\)\s).+?(?=\s\(\W\)\s\*)', gabc).group()
-        response = re.search(r'(?<=\s\(\W\)\s\*\s).+?(?=\s\(::\))', gabc).group()
-        verses = re.findall(r'(?<=<v>\\Vbar</v>\s).+?(?=\s\(::\))', gabc)
+        incipit = re.search(r'\(..\)\s(.+?)\s\(\W\)\s\*', gabc).group(1)
+        response = re.search(r'\s\(\W\)\s\*\s(.+?)\s\(::\)', gabc).group(1)
+        verses = re.findall(r'<v>\\Vbar</v>\s(.+?)?=\s\(::\)', gabc)
         verse = verses[0]
         gloria = verses[1]
 
