@@ -45,6 +45,8 @@ def getbreviariumfiles(queries):
     ret = []
     for root,dirs,files in os.walk(data_root.joinpath('data/breviarium-1888/tagged/breviarium')):
         for i in files:
+            if not i.endswith('.json'):
+                continue
             if i[:-5] in queries:
                 got = getbreviariumfile(data_root.joinpath('data/breviarium-1888/tagged/breviarium').joinpath(root).joinpath(i))
                 if len(got) == 0:

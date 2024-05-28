@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
 import sys
-from bottle import route, run, template, static_file, error, template, hook
+from bottle import route, request, run, template, static_file, error, template, hook
 from bottle import post, get
 import requests
 import pathlib
 import json
 from datetime import datetime, date
+
+import copy
 
 from datamanage import getyear, getbreviariumfile
 import breviarium
@@ -16,41 +18,35 @@ from frontend import renderer
 
 loadchant = True
 
-# Function can't be called breviarium() because module of same name is imported
-@route('/breviarium/')
+@get('/breviarium')
 def breviary():
-    hour = None
-    match datetime.now().hour:
-        case 0 | 1 | 2 | 3 | 4 | 5:
-            hour = 'matutinum laudes'
-        case 6 | 7:
-            hour = 'prima'
-        case 8 | 9 | 10:
-            hour = 'tertia'
-        case 11 | 12 | 13:
-            hour = 'sexta'
-        case 14 | 15:
-            hour = 'nona'
-        case 16 | 17 | 18 | 19:
-            hour = 'vesperae'
-        case 20 | 21 | 22 | 23:
-            hour = 'completorium'
-    return breviary(hour)
+    parameters = copy.deepcopy(request.query)
+    if not 'date' in parameters:
+        parameters['date'] = date.today()
+    else:
+        parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-@route('/breviarium/<hour>')
-def breviary(hour):
-    return breviary(date.today(), hour)
-
-@route('/breviarium/<day>/<hour>')
-def breviary(day, hour):
-
-    if type(day) is str:
-        day = datetime.strptime(day, '%Y-%m-%d').date()
+    if not 'hour' in parameters:
+        match datetime.now().hour:
+            case 0 | 1 | 2 | 3 | 4 | 5:
+                hour = 'matutinum laudes'
+            case 6 | 7:
+                hour = 'prima'
+            case 8 | 9 | 10:
+                hour = 'tertia'
+            case 11 | 12 | 13:
+                hour = 'sexta'
+            case 14 | 15:
+                hour = 'nona'
+            case 16 | 17 | 18 | 19:
+                hour = 'vesperae'
+            case 20 | 21 | 22 | 23:
+                hour = 'completorium'
 
     defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
     ret = renderer.render(breviarium.process({'ante-officium'}, None, defpile), loadchant)
-    for i in hour.split(' '):
-        ret += renderer.render(breviarium.hour(i, day), loadchant)
+    for i in parameters['hour'].split(' '):
+        ret += renderer.render(breviarium.hour(i, parameters['date']), loadchant)
         ret += renderer.render(breviarium.process({'post-officium'}, None, defpile), loadchant)
     return template('frontend/index.tpl',office=ret)
 
