@@ -108,7 +108,7 @@ def search(query, pile, multipleresults = False, multipleresultssort = None, pri
 
     for i in query:
         if '/' in i:
-            return {'datum':psalms.get(i)}
+            return {'tags': [i], 'datum':psalms.get(i)}
 
     result = list(sorted(list(anysearch(query, pile)), key=lambda a: itemvalue(a['tags'], 'precedence'), reverse=True))
     if len(result) == 0:
