@@ -14,7 +14,7 @@ from datamanage import getyear, getbreviariumfile
 import breviarium
 import datamanage
 
-from frontend import renderer
+from frontend import chomp, renderer
 
 loadchant = True
 
@@ -63,7 +63,7 @@ def chant(url, tags = ''):
     if 'gregobase' in url and not url.endswith('&format=gabc'):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('id=') + 3:]}&format=gabc&elem=1'
     response = requests.get(url, stream=True).text
-    return renderer.chomp(response, tags)
+    return chomp.chomp(response, tags)
 
 @route('/js/<file:path>')
 def javascript(file):
