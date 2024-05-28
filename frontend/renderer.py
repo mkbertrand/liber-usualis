@@ -42,7 +42,7 @@ def chomp(gabc: str, tags) -> str:
         mode = gabc[gabc.index('mode:') + 5:gabc.index('\n', gabc.index('mode:'))].strip()
         if mode.endswith(';'):
             mode = mode[:-1]
-    gabc = '%%\n' + gabc[re.search('\\([cf]\\d\\)', gabc).span()[0]:]
+    gabc = '%%\n' + gabc[re.search(r'\([cf]\d\)', gabc).span()[0]:]
     gabc = gabc.replace('<sp>V/</sp>.', '<v>\\Vbar</v>').replace('<sp>R/</sp>.', '<v>\\Rbar</v>')
     gabc = re.sub('<.?sc>', '', gabc)
     if mode:
@@ -66,11 +66,12 @@ def chomp(gabc: str, tags) -> str:
 
     elif 'responsorium-breve' in tags:
         clef = gabc[:gabc.index(')') + 1]
-        incipit = gabc[gabc.index(')') + 1 : gabc.index('*')].strip()
-        response = gabc[gabc.index(')', gabc.index('*')) + 1 : gabc.index('(::)')].strip()
-        verseloc = gabc.index('<v>\\Vbar</v>') + len('<v>\\Vbar</v>')
-        verse = gabc[verseloc : gabc.index('(::)', verseloc)].strip()
-        gloria = gabc[gabc.index('(::)',  verseloc) + 4 : -4].strip()
+        print(gabc)
+        incipit = re.search(r'(?<=\(..\)\s).+?(?=\s\(\W\)\s\*)', gabc).group()
+        response = re.search(r'(?<=\s\(\W\)\s\*\s).+?(?=\s\(::\))', gabc).group()
+        verses = re.findall(r'(?<=<v>\\Vbar</v>\s).+?(?=\s\(::\))', gabc)
+        verse = verses[0]
+        gloria = verses[1]
 
         return f'{clef} {incipit} *(;) {response} (::) <v>\\Rbar</v> {incipit} (;) {response} (::) <v>\\Vbar</v> {verse} *(;) {response} (::) <v>\\Vbar</v> {gloria} (::) <v>\\Rbar</v> {incipit} (;) {response} (::)'
     else:
