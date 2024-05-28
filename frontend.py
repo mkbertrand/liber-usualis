@@ -16,24 +16,9 @@ from frontend import renderer
 
 loadchant = True
 
-@route('/hora/<day>/<hour>')
-def office(day, hour):
-    defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
-    ret = renderer.render(breviarium.process({'ante-officium'}, None, defpile), loadchant)
-    for i in hour.split(' '):
-        ret += renderer.render(breviarium.hour(i, datetime.strptime(day, '%Y-%m-%d').date()), loadchant)
-        ret += renderer.render(breviarium.process({'post-officium'}, None, defpile), loadchant)
-    return template('frontend/index.tpl',office=ret)
-
-@route('/hora/<hour>')
-def office(hour):
-    ret = ''
-    for i in hour.split(' '):
-        ret += renderer.render(breviarium.hour(i, date.today()), loadchant)
-    return template('frontend/index.tpl',office=ret)
-
-@route('/hora/')
-def index():
+# Function can't be called breviarium() because module of same name is imported
+@route('/breviarium/')
+def breviary():
     hour = None
     match datetime.now().hour:
         case 0 | 1 | 2 | 3 | 4 | 5:
@@ -50,7 +35,24 @@ def index():
             hour = 'vesperae'
         case 20 | 21 | 22 | 23:
             hour = 'completorium'
-    return office(hour)
+    return breviary(hour)
+
+@route('/breviarium/<hour>')
+def breviary(hour):
+    return breviary(date.today(), hour)
+
+@route('/breviarium/<day>/<hour>')
+def breviary(day, hour):
+
+    if type(day) is str:
+        day = datetime.strptime(day, '%Y-%m-%d').date()
+
+    defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
+    ret = renderer.render(breviarium.process({'ante-officium'}, None, defpile), loadchant)
+    for i in hour.split(' '):
+        ret += renderer.render(breviarium.hour(i, day), loadchant)
+        ret += renderer.render(breviarium.process({'post-officium'}, None, defpile), loadchant)
+    return template('frontend/index.tpl',office=ret)
 
 @route('/styles/<file>')
 def styles(file):
