@@ -145,7 +145,7 @@ def pickcascades(search, cascades):
                     ret |= cascade
         return ret
 
-def process(item, cascades, pile):
+def process(root, item, cascades, pile):
 
     if item is None:
         return 'Absens'
@@ -155,11 +155,11 @@ def process(item, cascades, pile):
         ret = []
         commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, cascades)), key=lambda a:itemvalue(a, 'rank'), reverse=True)
         for i in commemorations:
-            probablepile = datamanage.getbreviariumfiles(defaultpile | i)
-            ret.append(process({'formula','commemoratio'}, [i], probablepile))
+            probablepile = datamanage.getbreviariumfiles(root, defaultpile | i)
+            ret.append(process(root, {'formula','commemoratio'}, [i], probablepile))
         if len(commemorations) != 0:
-            probablepile = datamanage.getbreviariumfiles(defaultpile | commemorations[-1])
-            ret.append(process({'collecta','terminatio','commemoratio'}, [commemorations[-1]], probablepile))
+            probablepile = datamanage.getbreviariumfiles(root, defaultpile | commemorations[-1])
+            ret.append(process(root, {'collecta','terminatio','commemoratio'}, [commemorations[-1]], probablepile))
         return ret
 
     # None can sometimes be the result of a search and is expected, but indicates an absent item
@@ -174,7 +174,7 @@ def process(item, cascades, pile):
     nextcascades = [i | item['cascade'] for i in cascades] if 'cascade' in item and cascades else cascades
 
     if 'from-tags' in item:
-        response = process(search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
+        response = process(root, search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
         if 'tags' in item:
             return {'tags':item['tags'], 'datum':response}
         else:
@@ -182,8 +182,8 @@ def process(item, cascades, pile):
 
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, process searches a pile made from relevant files
-        probableforwardpiles = datamanage.getbreviariumfiles(defaultpile | item['forwards-to'])
-        return process(search(item['forwards-to'], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
+        probableforwardpiles = datamanage.getbreviariumfiles(root, defaultpile | item['forwards-to'])
+        return process(root, search(item['forwards-to'], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
 
     elif type(item['datum']) is list:
         ret = []
@@ -191,7 +191,7 @@ def process(item, cascades, pile):
             if type(i) is str:
                 ret.append(i)
             else:
-                iprocessed = process(i, cascades, pile)
+                iprocessed = process(root, i, cascades, pile)
                 if iprocessed is None:
                     ret.append('Absens')
                 elif type(iprocessed) is list:
@@ -207,7 +207,7 @@ def getbytags(daytags, query):
         if query in i:
             return i
 
-def hour(hour: str, day, forcedprimary=None):
+def hour(root: str, hour: str, day, forcedprimary=None):
     assert type(day) is not datetime
     daytags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
     for i in daytags:
@@ -215,7 +215,7 @@ def hour(hour: str, day, forcedprimary=None):
             if j['tags'].issubset(i):
                 i |= j['implies']
 
-    pile = datamanage.getbreviariumfiles(defaultpile | flattensetlist(daytags) | {hour})
+    pile = datamanage.getbreviariumfiles(root, defaultpile | flattensetlist(daytags) | {hour})
 
     if forcedprimary:
         forcedprimary = set(forcedprimary.split(' '))
@@ -225,14 +225,14 @@ def hour(hour: str, day, forcedprimary=None):
                 i.add('commemoratio')
         for i in daytags:
             if forcedprimary.issubset(i):
-                i.add('primarium') 
+                i.add('primarium')
                 i -= {'commemoratio'}
     primary = getbytags(daytags, 'primarium')
     if primary is None and forcedprimary:
-        raise RuntimeError('Provided tag(s) not found') 
+        raise RuntimeError('Provided tag(s) not found')
     for i in daytags:
         i.add(hour)
-    primarydatum = process({hour, 'hora'} | primary, daytags, pile)
+    primarydatum = process(root, {hour, 'hora'} | primary, daytags, pile)
     return primarydatum
 
 if __name__ == '__main__':
@@ -311,7 +311,7 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
 
     # Generate kalendar
-    defpile = datamanage.getbreviariumfiles(defaultpile)
+    defpile = datamanage.getbreviariumfiles('breviarium-1888', defaultpile)
     ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
     for i in args.hour.split(' '):
         ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimary=args.tags))

@@ -41,14 +41,14 @@ def getbreviariumfile(query):
     return load_data(query)
 
 # No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
-def getbreviariumfiles(queries):
+def getbreviariumfiles(root, queries):
     ret = []
-    for root,dirs,files in os.walk(data_root.joinpath('data/breviarium-1888/tagged/breviarium')):
+    for root,dirs,files in os.walk(data_root.joinpath(f'data/{root}/tagged/breviarium')):
         for i in files:
             if not i.endswith('.json'):
                 continue
             if i[:-5] in queries:
-                got = getbreviariumfile(data_root.joinpath('data/breviarium-1888/tagged/breviarium').joinpath(root).joinpath(i))
+                got = getbreviariumfile(data_root.joinpath(f'data/{root}/tagged/breviarium').joinpath(root).joinpath(i))
                 if len(got) == 0:
                     continue
                 added = []

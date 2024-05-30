@@ -43,11 +43,11 @@ def breviary():
 
     parameters['chant'] = parameters['chant'] == 'true' if 'chant' in parameters else False
 
-    defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
+    defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)
     parameters['hour'] = 'ante-officium ' + parameters['hour'] + ' post-officium'
     ret = ''
     for i in parameters['hour'].split(' '):
-        ret += renderer.render(breviarium.hour(i, parameters['date']), parameters)
+        ret += renderer.render(breviarium.hour('breviarium-1888', i, parameters['date']), parameters)
     return template('frontend/index.tpl',office=ret)
 
 @route('/styles/<file>')
