@@ -16,8 +16,6 @@ import datamanage
 
 from frontend import chomp, renderer
 
-loadchant = True
-
 @get('/breviarium')
 def breviary():
     parameters = copy.deepcopy(request.query)
@@ -43,11 +41,13 @@ def breviary():
             case 20 | 21 | 22 | 23:
                 hour = 'completorium'
 
+    parameters['chant'] = parameters['chant'] == 'true' if 'chant' in parameters else False
+
     defpile = datamanage.getbreviariumfiles(breviarium.defaultpile)
-    ret = renderer.render(breviarium.process({'ante-officium'}, None, defpile), loadchant)
+    parameters['hour'] = 'ante-officium ' + parameters['hour'] + ' post-officium'
+    ret = ''
     for i in parameters['hour'].split(' '):
-        ret += renderer.render(breviarium.hour(i, parameters['date']), loadchant)
-        ret += renderer.render(breviarium.process({'post-officium'}, None, defpile), loadchant)
+        ret += renderer.render(breviarium.hour(i, parameters['date']), parameters)
     return template('frontend/index.tpl',office=ret)
 
 @route('/styles/<file>')

@@ -1,3 +1,5 @@
+# Why is this module called chomp? Idk, it's just a random word that's vaguely related to processing things (in the case of chomp, it's food but that's beside the point)
+
 import re
 
 def chomp(gabc: str, tags) -> str:
