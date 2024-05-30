@@ -24,7 +24,7 @@ def responsoriumbreve(data: dict, neumes: bool) -> str:
     if neumes and 'src' in datum[0]:
         return getchant(datum[0]['src'], data['tags'])
     else:
-        return template('frontend/elements/responsorium-breve.tpl', incipit=datum[0].get('datum', 'Absens'), response=datum[1].get('datum', 'Absens'), verse=datum[4].get('datum', 'Absens'), gloria=datum[6] if len(datum) == 9 else 'Absens')
+        return template('frontend/components/responsorium-breve.tpl', incipit=datum[0].get('datum', 'Absens'), response=datum[1].get('datum', 'Absens'), verse=datum[4].get('datum', 'Absens'), gloria=datum[6] if len(datum) == 9 else 'Absens')
 
 def stringhandle(line: str) -> str:
     line = line.replace('/', '<br>').replace('\n', '<br>')
@@ -48,5 +48,5 @@ def render(data, parameters, translation = {}) -> str:
         case list():
             return ''.join(render(v, parameters, translation) for v in data)
         case str():
-            return template('frontend/elements/element.tpl', content=stringhandle(data))
+            return template('frontend/components/text.tpl', content=stringhandle(data))
     raise ValueError(f"Unhandled case: {data!r}")

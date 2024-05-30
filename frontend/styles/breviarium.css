@@ -1,10 +1,23 @@
-.element-wrapper {
-
+.text-wrapper {
+	width: 100%;
 }
 
-.element-text-content-latin {
+.text-content-latin {
 	font-size: 24px;
 	line-height: 1.5;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+.decorated-wrapper {
+	display:flex;
+}
+
+.decoration-left-wrapper {
+	width: 15%;
+}
+
+.decorated-content-wrapper {
+	width: 85%;
+}
+
