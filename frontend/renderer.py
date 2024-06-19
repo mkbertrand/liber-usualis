@@ -1,6 +1,8 @@
 from bottle import template
 import urllib.parse
 import re
+import requests
+import json
 
 def getchant(src, tags) -> str:
     if 'http' in src:
@@ -33,7 +35,11 @@ def stringhandle(line: str) -> str:
         line = line.replace(i, f'<span class="verse-number">{i}</span>')
     return line.replace('N.','<span class=red>N.</span>').replace('V. ', '<span class=red>&#8483;.</span> ').replace('R. br. ', '<span class=red>&#8479;. br. </span> ').replace('R. ', '<span class=red>&#8479;.</span> ').replace('✠', '<span class=red>✠</span>').replace('✙', '<span class=red>✙</span>').replace('+', '<span class=red>†</span>').replace('*', '<span class=red>*</span>')
 
-def render(data, parameters, translation = {}) -> str:
+def render(data, parameters, language = None, translation = None) -> str:
+    if 'tags' in data and not language == None:
+        tran = json.loads(requests.get('http://localhost:8000/json/tags', params={'tags': ' '.join(data['tags'])}, stream=True, timeout=10).text)
+        if not tran is None:
+            translation = tran['datum']
     match data:
         case {"tags": tags} if {'formula','responsorium-breve'}.issubset(set(tags)):
             return responsoriumbreve(data, parameters['chant'])
@@ -42,11 +48,19 @@ def render(data, parameters, translation = {}) -> str:
         case {"src": src, "tags": tags} if parameters['chant']:
             return getchant(src, tags)
         case {'tags': tags, 'datum': datum} if any('psalmi' in i for i in tags):
-            return render(datum, parameters, translation)
+            return render(datum, parameters, language, translation)
         case {"datum": datum}:
-            return render(datum, parameters, translation)
+            return render(datum, parameters, language, translation)
         case list():
-            return ''.join(render(v, parameters, translation) for v in data)
+            if translation and len(translation) == len(data):
+                ret = ''
+                for i in range(0, len(data)):
+                    ret += render(data[i], parameters, language, translation[i])
+                return ret
+            return ''.join(render(v, parameters, language, None) for v in data)
         case str():
-            return template('frontend/components/text.tpl', content=stringhandle(data))
+            if translation:
+                return template('frontend/components/text.tpl', content=stringhandle(data), translation=translation)
+            else:
+                return template('frontend/components/text.tpl', content=stringhandle(data))
     raise ValueError(f"Unhandled case: {data!r}")

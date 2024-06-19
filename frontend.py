@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from gevent import monkey; monkey.patch_all()
 import sys
 from bottle import route, request, run, template, static_file, error, template, hook
 from bottle import post, get
@@ -15,6 +16,12 @@ import breviarium
 import datamanage
 
 from frontend import chomp, renderer
+
+@get('/json/tags')
+def tag():
+    parameters = copy.deepcopy(request.query)
+    search = set(parameters['tags'].split(' ')) | {'english'} | breviarium.defaultpile
+    return breviarium.dump_data(breviarium.search(search, datamanage.getbreviariumfiles('breviarium-1888/translations/english', search)))
 
 @get('/breviarium')
 def breviary():
@@ -47,7 +54,7 @@ def breviary():
     parameters['hour'] = 'ante-officium ' + parameters['hour'] + ' post-officium'
     ret = ''
     for i in parameters['hour'].split(' '):
-        ret += renderer.render(breviarium.hour('breviarium-1888', i, parameters['date']), parameters)
+        ret += renderer.render(breviarium.hour('breviarium-1888', i, parameters['date']), parameters, language='English')
     return template('frontend/index.tpl',office=ret)
 
 @route('/styles/<file>')
@@ -83,4 +90,4 @@ def forcereload():
     getbreviariumfile.cache_clear()
     return 'Successfully dumped data caches.'
 
-run(host='localhost', port=8000)
+run(host='localhost', port=8000, server='gevent')
