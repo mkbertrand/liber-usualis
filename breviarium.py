@@ -150,6 +150,9 @@ def process(root, item, cascades, pile):
     if item is None:
         return 'Absens'
 
+    if pile is None:
+        pile = []
+
     # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
     if 'commemorationes' in item:
         ret = []
