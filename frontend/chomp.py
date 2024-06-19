@@ -13,10 +13,14 @@ def chomp(gabc: str, tags) -> str:
     gabc = re.sub('<.?sc>', '', gabc)
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
-    if 'antiphona' in tags:
+    if 'deus-in-adjutorium' in tags:
+        return gabc[0:re.search(r'\(Z\-?\)', gabc).start()]
+
+    elif 'antiphona' in tags:
+        euouae = ''
         if '<eu>' in gabc:
             # Notes which define the termination
-            euouae = re.sub('<.?eu>', '', re.search(' <eu>.+$', gabc).group())
+            euouae = re.sub('<.?eu>', '', re.search(r' <eu>.+', gabc).group())
             # Gabc without the euouae
             gabc = gabc[:gabc.index('<eu>')]
 
@@ -34,7 +38,6 @@ def chomp(gabc: str, tags) -> str:
         clef = gabc[:gabc.index(')') + 1]
         incipit = re.search(r'\(..\)\s(.+?)\s\(\W\)\s\*', gabc).group(1)
         response = re.search(r'\s\(\W\)\s\*\s(.+?)\s\(::\)', gabc).group(1)
-        print(gabc)
         verses = re.findall(r'<v>\\Vbar</v>\s(.+?)?\s\(::\)', gabc)
         verse = verses[0]
         gloria = verses[1]
