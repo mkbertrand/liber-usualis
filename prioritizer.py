@@ -16,7 +16,7 @@ def load_data(p: str):
     def recurse(obj):
         match obj:
             case dict():
-                return {datetime.strptime(k, '%Y-%m-%d').date() if re.search('^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
+                return {datetime.strptime(k, '%Y-%m-%d').date() if re.search(r'^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
                 return {k: recurse(v) for k, v in obj.items()}
             case list():
                 if all(type(x) is str for x in obj):
@@ -36,7 +36,7 @@ coincidencetable = load_data('kalendar/data/vesperal-coincidence.json')
 hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv','suffragium'}
 hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
-excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
+excludedtags = {'antiphona-bmv','commemoratum','fixum','tempus'}
 
 def getvespers(day):
     assert type(day) is not datetime
@@ -46,6 +46,8 @@ def getvespers(day):
     iivespers = [i.union({'ii-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasiivespers), currday)]
     ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), ivespers))
     iivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
+    print(ivespers)
+    print(iivespers)
     if len(iivespersprimarycandidates) == 0:
         # Grabs the temporale (ferial) II Vespers
         iivespprim = next(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
