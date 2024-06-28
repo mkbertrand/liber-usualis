@@ -12,8 +12,8 @@
 			"To the most holy and undivided Trinity, to the humanity of our crucified Lord Jesus Christ, to the fruitful purity of the most blessed and most glorious Mary ever-Virgin, and to the company of all Saints be eternal praise, honor, virtue, and glory from all creatures, and to us the remission of all sins, through unending ages of ages. Amen.",
 			"Blessed be the womb of the Virgin Mary, which carried the Son of the eternal Father.",
 			"And blessed be the breasts, which fed Christ the Lord.",
-			[],
-			[]
+			"",
+			""
 		]
 	},
 	{
@@ -32,6 +32,34 @@
 			"Glory be to the Father, and to the Son, and to the Holy Spirit.",
 			"As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia."
 		]
+	},
+	{
+		"tags":["benedicamus-domino"],
+		"datum":[
+			"Let us bless the Lord.",
+			"Thanks be to God."
+		]
+	},
+	{
+		"tags":["dominus-vobiscum"],
+		"datum":["The Lord be with you.","And with your spirit."]
+	},
+	{
+		"tags":["per-dominum"],
+		"datum":["Through our Lord Jesus Christ your Son: Who lives and reigns with you in the unity of the Holy Spirit God, world without end.", "Amen."]
+	},
+	{
+		"tags":["formula","commemoratio"],
+		"datum":[
+			"",
+			"",
+			"Let us pray.",
+			""
+		]
+	},
+	{
+		"tags":["fidelium-animae"],
+		"datum":["May the souls of the faithfully departed through the mercy of God rest in peace.","Amen."]
 	}
 ]
 
