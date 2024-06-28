@@ -104,11 +104,14 @@ def itemvalue(tags, table):
         val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(tagsorttable[table]) - i - 1)
     return val
 
-def search(query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
+def search(root, query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
 
     for i in query:
         if '/' in i:
-            return {'tags': [i], 'datum':psalms.get(i)}
+            try:
+                return {'tags': [i], 'datum':psalms.get(root, i)}
+            except FileNotFoundError:
+                return None
 
     result = list(sorted(list(anysearch(query, pile)), key=lambda a: itemvalue(a['tags'], 'precedence'), reverse=True))
     if len(result) == 0:
@@ -167,7 +170,7 @@ def process(root, item, cascades, pile):
 
     # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set or type(item) is frozenset:
-        result = search(pickcascades(item, cascades), pile, priortags = item)
+        result = search(root, pickcascades(item, cascades), pile, priortags = item)
         if result is None:
             return str(list(pickcascades(item, cascades)))
         else:
@@ -177,7 +180,7 @@ def process(root, item, cascades, pile):
     nextcascades = [i | item['cascade'] for i in cascades] if 'cascade' in item and cascades else cascades
 
     if 'from-tags' in item:
-        response = process(root, search(pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
+        response = process(root, search(root, pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
         if 'tags' in item:
             return {'tags':item['tags'], 'datum':response}
         else:
@@ -186,7 +189,7 @@ def process(root, item, cascades, pile):
     elif 'forwards-to' in item:
         # Since items in the Breviary may reference seemingly unrelated feasts, process searches a pile made from relevant files
         probableforwardpiles = datamanage.getbreviariumfiles(root, defaultpile | item['forwards-to'])
-        return process(root, search(item['forwards-to'], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
+        return process(root, search(root, item['forwards-to'], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
 
     elif type(item['datum']) is list:
         ret = []

@@ -10,10 +10,10 @@ def psalm_line(line):
 def get_and_html(file):
     return ''.join(list(map(lambda line: psalm_line(line), open(file, 'r', encoding = 'utf-8').readlines())))
 
-def psalmget(psalm):
-    return get_and_html(f'{path}/data/breviarium-1888/untagged{psalm}.txt')
+def psalmget(root, psalm):
+    return get_and_html(f'{path}/data/{root}/untagged{psalm}.txt').strip()
 
-def get(query):
+def get(root, query):
     pathsplit = query.rfind('/')
     querypath = query[:pathsplit + 1]
     query = query[pathsplit + 1:]
@@ -21,7 +21,7 @@ def get(query):
     for i in query.split(','):
         if ':' in i:
             psalm = i.split(':')[0]
-            psalmtext = psalmget(querypath + psalm)
+            psalmtext = psalmget(root, querypath + psalm)
             for j in i.split(':')[1].split(';'):
                 bounds = j.split('-')
                 if len(bounds) == 1:
@@ -33,5 +33,5 @@ def get(query):
                 else:
                     ret += re.search(f'{bounds[0]}(.|\\n)+\\n{bounds[1]} ', psalmtext).group()[:-(len(bounds[1]) + 1)]
         else:
-            ret += psalmget(querypath + i)
+            ret += psalmget(root, querypath + i)
     return ret

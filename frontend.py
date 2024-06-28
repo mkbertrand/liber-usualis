@@ -10,6 +10,7 @@ import json
 from datetime import datetime, date
 
 import copy
+import warnings
 
 from datamanage import getyear, getbreviariumfile
 import breviarium
@@ -20,8 +21,9 @@ from frontend import chomp, renderer
 @get('/json/tags')
 def tag():
     parameters = copy.deepcopy(request.query)
+    root = 'breviarium-1888/translations/english'
     search = set(parameters['tags'].split(' ')) | {'english'} | breviarium.defaultpile
-    return breviarium.dump_data(breviarium.search(search, datamanage.getbreviariumfiles('breviarium-1888/translations/english', search)))
+    return breviarium.dump_data(breviarium.search(root, search, datamanage.getbreviariumfiles(root, search)))
 
 @get('/breviarium')
 def breviary():
