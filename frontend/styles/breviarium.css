@@ -1,16 +1,28 @@
 .text-wrapper {
 	width: 100%;
+	padding-bottom:5px;
 }
 
 .text-content-latin {
 	font-size: 24px;
 	line-height: 1.5;
-	margin-top: 10px;
-	margin-bottom: 10px;
+}
+
+.text-content-translation {
+	font-size: 18px;
+	line-height: 1;
+	color: #111;
+	padding-left:10px;
+}
+
+.chant-content-translation {
+	font-size: 18px;
+	line-height: 1;
+	color: #222;
 }
 
 .decorated-wrapper {
-	display:flex;
+	display: flex;
 }
 
 .decoration-left-wrapper {
