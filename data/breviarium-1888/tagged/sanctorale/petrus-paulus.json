@@ -1,0 +1,55 @@
+[
+	{
+		"tags":["petrus-paulus","antiphona","antiphona-i"],
+		"src":"gregobase/1866",
+		"datum":"Petrus et Joánnes * ascendébant in templum ad horam oratiónis nonam."
+	},
+	{
+		"tags":["petrus-paulus","antiphona","antiphona-ii"],
+		"src":"gregobase/2580",
+		"datum":"Argéntum et aurum * non est mihi: quod autem hábeo, hoc tibi do."
+	},
+	{
+		"tags":["petrus-paulus","antiphona","antiphona-iii"],
+		"src":"gregobase/2589",
+		"datum":"Dixit Ángelus ad Petrum: * Circúmda tibi vestiméntum tuum, et séquere me."
+	},
+	{
+		"tags":["petrus-paulus","antiphona","antiphona-iv"],
+		"src":"gregobase/2557",
+		"datum":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja."
+	},
+	{
+		"tags":["petrus-paulus","antiphona","antiphona-v"],
+		"src":"gregobase/1950",
+		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
+	},
+	{
+		"tags":["petrus-paulus","i-vesperae","vesperae","capitulum"],
+		"datum":"Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. Occídit autem Jacóbum fratrem Joánnis gládio. Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
+	},
+	{
+		"tags":["petrus-paulus","i-vesperae","vesperae","hymnus"],
+		"src":"gregobase/2761",
+		"datum":[
+			"Decóra lux æternitátis, aúream/Diem beátis irrigávit ígnibus,/Apostolórum quæ corónat Príncipes,/Reísque in astra líberam pandit viam.",
+			"Mundi magíster, atque cœli jánitor,/Romæ paréntes, arbitríque géntium,/Per ensis ille, hic per crucis victor necem/Vitæ senátum laureáti póssident.",
+			"O Roma felix, quæ duórum Príncipum/Es consecráta glorióso sánguine:/Horum cruóre purpuráta céteras/Excéllis orbis una pulchritúdines.",
+			"Sit Trinitáti sempitérna glória,/Honor, potéstas, atque jubilátio,/In unitáte quæ gubérnat ómnia,/Per univérsa sæculórum sǽcula. Amen."
+		]
+	},
+	{
+		"tags":["petrus-paulus","i-vesperae","vesperae","versiculus"],
+		"datum":["V. In omnem terram exívit sonus eórum.","R. Et in fines orbis terræ verba eórum."]
+	},
+	{
+		"tags":["petrus-paulus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2717",
+		"datum":"Tu es pastor óvium, * princeps Apostolórum: tibi tráditæ sunt claves regni cœlórum."
+	},
+	{
+		"tags":["petrus-paulus","collecta"],
+		"datum":"Deus, qui hodiérnam diem Apostolórum tuórum Petri et Pauli martýrio consecrásti: da Ecclésiæ tuæ, eórum in ómnibus sequi præcéptum, per quos religiónis sumpsit exórdium.",
+		"terminatio":[["terminatio","per-dominum"]]
+	}
+]

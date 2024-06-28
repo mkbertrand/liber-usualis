@@ -13,10 +13,7 @@
 	},
 	{
 		"tags":["maria","collecta"],
-		"datum":"Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, + et gloriósa beátæ Maríæ semper Vírginis intercessióne, * a præsénti liberári tristítia, et ætérna pérfrui lætítia."
-	},
-	{
-		"tags":["maria","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
+		"datum":"Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, + et gloriósa beátæ Maríæ semper Vírginis intercessióne, * a præsénti liberári tristítia, et ætérna pérfrui lætítia.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

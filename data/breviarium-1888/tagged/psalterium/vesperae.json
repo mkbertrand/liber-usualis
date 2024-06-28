@@ -5,27 +5,27 @@
 			["prex-duplex"],
 			["deus-in-adjutorium","festalis"],
 			{
-				"tags":["vesperae","psalmodia"],
+				"tags":["vesperae","psalmi"],
 				"datum":[
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-i"]},
 					["vesperae","i-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-i","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-ii"]},
 					["vesperae","ii-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-ii","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-iii"]},
 					["vesperae","iii-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-iii","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-iv"]},
 					["vesperae","iv-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-iv","repetita"],
 					{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-v"]},
 					["vesperae","v-psalmus"],
-					["gloria-psalmi"],
+					["/psalmi/gloria"],
 					["vesperae","antiphona","antiphona-v","repetita"]
 				]
 			},
@@ -35,7 +35,7 @@
 			["vesperae","versiculus"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-magnificat"]},
 			["magnificat"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			["vesperae","antiphona","antiphona-magnificat","repetita"],
 			["preces"],
 			["collecta-primaria"],
@@ -92,7 +92,7 @@
 		"datum":[["/psalmi/psalmus-cxiii"]]
 	},
 	{
-		"tags":["vesperae","capitulum","temporale"],
+		"tags":["vesperae","temporale","capitulum"],
 		"datum":"Benedíctus Deus, et Pater Dómini nostri Jesu Christi, + Pater misericordiárum, et Deus tótius consolatiónis, * qui consolátur nos in omni tribulatióne nostra."
 	},
 	{
@@ -205,7 +205,7 @@
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat.",
 			["psalmus-l"],
-			["gloria-psalmi"],
+			["/psalmi/gloria"],
 			"V. Dómine Deus virtútum convérte nos.",
 			"R. Et osténde fáciem tuam, et salvi érimus.",
 			"V. Exsúrge Christe, ádjuva nos.",
