@@ -26,7 +26,9 @@ def chomp(gabc: str, tags) -> str:
 
         if 'intonata' in tags:
             return gabc[:gabc.index('*')] + '(::)' + euouae
-        elif 'repetita' in tags:
+        elif {'commemoratio', 'repetita', 'suffragium'}.isdisjoint(tags):
+            gabc = gabc + euouae
+        else:
             gabc = gabc.replace('*','')[gabc.index('\n') + 1:]
             firstsyllable = re.search('\\w+\\(', gabc).group()
             gabc = 'initial-style:0;\n' + gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
