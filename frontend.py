@@ -56,7 +56,9 @@ def breviary():
     parameters['hour'] = 'ante-officium ' + parameters['hour'] + ' post-officium'
     ret = ''
     for i in parameters['hour'].split(' '):
-        ret += renderer.render(breviarium.hour('breviarium-1888', i, parameters['date']), parameters, language='English')
+        ret += renderer.render(
+                breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split(' ')) if 'conditions' in parameters else None),
+                parameters, language='English')
     return template('frontend/index.tpl',office=ret)
 
 @route('/styles/<file>')

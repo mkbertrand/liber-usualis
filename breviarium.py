@@ -224,7 +224,6 @@ def hour(root: str, hour: str, day, forcedprimary=None):
     pile = datamanage.getbreviariumfiles(root, defaultpile | flattensetlist(daytags) | {hour})
 
     if forcedprimary:
-        forcedprimary = set(forcedprimary.split(' '))
         for i in daytags:
             if 'primarium' in i:
                 i.remove('primarium')
@@ -320,7 +319,7 @@ if __name__ == '__main__':
     defpile = datamanage.getbreviariumfiles('breviarium-1888', defaultpile)
     ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
     for i in args.hour.split(' '):
-        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimary=args.tags))
+        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimary=set(args.tags.split(' '))))
     ret['datum'].append(process({'post-officium'}, None, defpile))
 
     if args.output == sys.stdout:
