@@ -25,7 +25,9 @@
 		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
 	},
 	{
-		"tags":["petrus-paulus","i-vesperae","vesperae","capitulum"],
+		"tags":[
+			["petrus-paulus","vesperae","capitulum"],
+			["petrus-paulus","laudes","capitulum"]],
 		"datum":"Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. Occídit autem Jacóbum fratrem Joánnis gládio. Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
 	},
 	{

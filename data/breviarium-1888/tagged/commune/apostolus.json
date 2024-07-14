@@ -31,7 +31,7 @@
 		"datum":"Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
 	},
 	{
-		"tags":["apostolus","vesperae","ii-psalmus"],
+		"tags":["apostolus","i-vesperae","vesperae","ii-psalmus"],
 		"datum":[["/psalmi/psalmus-cx"]]
 	},
 	{
@@ -40,7 +40,7 @@
 		"datum":"Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus."
 	},
 	{
-		"tags":["apostolus","vesperae","iii-psalmus"],
+		"tags":["apostolus","i-vesperae","vesperae","iii-psalmus"],
 		"datum":[["/psalmi/psalmus-cxi"]]
 	},
 	{
@@ -49,7 +49,7 @@
 		"datum":"Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt."
 	},
 	{
-		"tags":["apostolus","vesperae","iv-psalmus"],
+		"tags":["apostolus","i-vesperae","vesperae","iv-psalmus"],
 		"datum":[["/psalmi/psalmus-cxii"]]
 	},
 	{
@@ -304,5 +304,21 @@
 	{
 		"tags":["apostolus","matutinum","responsorium","responsorium-viii","versum"],
 		"datum":"Sancti per fidem vicérunt regna operáti sunt justítiam."
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","ii-psalmus"],
+		"datum":[["/psalmi/psalmus-cxii"]]
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","iii-psalmus"],
+		"datum":[["/psalmi/psalmus-cxv"]]
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","iv-psalmus"],
+		"datum":[["/psalmi/psalmus-cxxv"]]
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","v-psalmus"],
+		"datum":[["/psalmi/psalmus-cxxxviii"]]
 	}
 ]

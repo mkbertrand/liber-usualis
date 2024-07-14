@@ -1,0 +1,92 @@
+[
+	{
+		"tags":["confessor","antiphona","antiphona-i"],
+		"src":"gregobase/2080",
+		"datum":"Dómine quinque talénta * tradidísti mihi: ecce ália quinque superlucrátus sum."
+	},
+	{
+		"tags":["confessor","vesperae","i-psalmus"],
+		"datum":[["/psalmi/psalmus-cix"]]
+	},
+	{
+		"tags":["confessor","antiphona","antiphona-ii"],
+		"src":"gregobase/2179",
+		"datum":"Euge serve bone, * in módico fidélis, intra in gaúdium Dómini tui."
+	},
+	{
+		"tags":["confessor","vesperae","ii-psalmus"],
+		"datum":[["/psalmi/psalmus-cx"]]
+	},
+	{
+		"tags":["confessor","antiphona","antiphona-iii"],
+		"src":"gregobase/2570",
+		"datum":"Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam."
+	},
+	{
+		"tags":["confessor","vesperae","iii-psalmus"],
+		"datum":[["/psalmi/psalmus-cxi"]]
+	},
+	{
+		"tags":["confessor","antiphona","antiphona-iv"],
+		"src":"gregobase/2182",
+		"datum":"Beátus ille servus, * quem cum vénerit Dóminus ejus, et pulsáverit jánuam, invénerit vigilántem."
+	},
+	{
+		"tags":["confessor","vesperae","iv-psalmus"],
+		"datum":[["/psalmi/psalmus-cxii"]]
+	},
+	{
+		"tags":["confessor","antiphona","antiphona-v"],
+		"src":"gregobase/2677",
+		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
+	},
+	{
+		"tags":["confessor","vesperae","v-psalmus"],
+		"datum":[["/psalmi/psalmus-cxvi"]]
+	},
+	{
+		"tags":["confessor","vesperae","capitulum"],
+		"datum":"Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesaúris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua."
+	},
+	{
+		"tags":["confessor","vesperae","hymnus"],
+		"src":"gregobase/2407",
+		"datum":[
+			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit beátas/Scándere sedes.",
+			"Qui pius, prudens, húmilis pudícus,/Sóbriam duxit sine labe vitam,/Donec humános animávit auræ/Spíritus artus.",
+			"Cujus ob præstans méritum frequénter,/Ægra quæ passim jacuére, membra/Víribus morbi dómitis, salúti/Restituúntur.",
+			"Noster hinc illi chorus obsequéntem/Cóncinit laudem, celebréque palmas;/Ut piis ejus précibus juvémur/Omne per ævum.",
+			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Tótius mundi sériem gubérnat/Trinus et unus.","Amen."
+		]
+	},
+	{
+		"tags":["confessor","mtv","vesperae","hymnus"],
+		"src":"gregobase/2407",
+		"datum":[
+			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit suprémos/Laudis honóres.",
+			"Qui pius, prudens, húmilis pudícus,/Sóbriam duxit sine labe vitam,/Donec humános animávit auræ/Spíritus artus.",
+			"Cujus ob præstans méritum frequénter,/Ægra quæ passim jacuére, membra/Víribus morbi dómitis, salúti/Restituúntur.",
+			"Noster hinc illi chorus obsequéntem/Cóncinit laudem, celebréque palmas;/Ut piis ejus précibus juvémur/Omne per ævum.",
+			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Tótius mundi sériem gubérnat/Trinus et unus.","Amen."
+		]
+	},
+	{
+		"tags":["confessor","i-vesperae","vesperae","versiculus"],
+		"datum":["V. Amávit eum Dóminus, et ornávit eum.","R. Stolam glóriæ índuit eum."]
+	},
+	{
+		"tags":["confessor","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2586",
+		"datum":"Similábo eum * viro sapiénti, qui ædificávit domum suam super petram."
+	},
+	{
+		"tags":["confessor","ii-vesperae","vesperae","versiculus"],
+		"datum":["V. Justum dedúxit Dóminus per vias rectas.","R. Et osténdit illi regnum Dei."]
+	},
+	{
+		"tags":["confessor","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2251",
+		"datum":"Hic vir, qui despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu."
+	}
+]
+
