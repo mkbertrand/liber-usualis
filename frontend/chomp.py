@@ -3,6 +3,8 @@
 import re
 
 def chomp(gabc: str, tags) -> str:
+
+    tags = tags.split('.')
     mode: str | None = None
     if 'mode:' in gabc:
         mode = gabc[gabc.index('mode:') + 5:gabc.index('\n', gabc.index('mode:'))].strip()
@@ -24,6 +26,9 @@ def chomp(gabc: str, tags) -> str:
             # Gabc without the euouae
             gabc = gabc[:gabc.index('<eu>')]
 
+        if not 'paschalis' in tags and ' <i>T. P.</i>' in gabc:
+            gabc = gabc[:gabc.index(' <i>T. P.</i>')]
+
         if 'intonata' in tags:
             return gabc[:gabc.index('*')] + '(::)' + euouae
         elif {'commemoratio', 'repetita', 'suffragium'}.isdisjoint(tags):
@@ -32,8 +37,6 @@ def chomp(gabc: str, tags) -> str:
             gabc = gabc.replace('*','')[gabc.index('\n') + 1:]
             firstsyllable = re.search('\\w+\\(', gabc).group()
             gabc = 'initial-style:0;\n' + gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
-        if not 'paschalis' in tags and ' <i>T. P.</i>' in gabc:
-            return gabc[:gabc.index(' <i>T. P.</i>')]
         return gabc
 
     elif 'responsorium-breve' in tags:
