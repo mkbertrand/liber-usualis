@@ -306,19 +306,53 @@
 		"datum":"Sancti per fidem vicérunt regna operáti sunt justítiam."
 	},
 	{
+		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-i"],
+		"src":"gregobase/1973",
+		"datum":"Jurávit Dóminus, * et non pœnitébit eum: Tu es sacérdos in ætérnum."
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-ii"],
+		"src":"gregobase/2751",
+		"datum":"Cóllocet eum * Dóminus cum princípibus pópuli sui."
+	},
+	{
 		"tags":["apostolus","ii-vesperae","vesperae","ii-psalmus"],
 		"datum":[["/psalmi/psalmus-cxii"]]
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-iii"],
+		"src":"gregobase/1861",
+		"datum":"Dirupísti Dómine * víncula mea: tibi sacrificábohóstiam laudis."
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","iii-psalmus"],
 		"datum":[["/psalmi/psalmus-cxv"]]
 	},
 	{
+		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-iv"],
+		"src":"gregobase/2337",
+		"datum":"Eúntes ibant * et flebant, mitténtes sémina sua."
+	},
+	{
 		"tags":["apostolus","ii-vesperae","vesperae","iv-psalmus"],
 		"datum":[["/psalmi/psalmus-cxxv"]]
 	},
 	{
+		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-v"],
+		"src":"gregobase/2079",
+		"datum":"Confortátus est * principátus eórum, et honorái sunt amíci sui Deus."
+	},
+	{
 		"tags":["apostolus","ii-vesperae","vesperae","v-psalmus"],
 		"datum":[["/psalmi/psalmus-cxxxviii"]]
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","versiculus"],
+		"datum":["V. Annuntiavérunt ópera Dei.","R. Et facta ejus, intellexérunt."]
+	},
+	{
+		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1915",
+		"datum":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum, allelúja."
 	}
 ]
