@@ -1,0 +1,92 @@
+[
+	{
+		"tags":["episcopus","confessor","antiphona","antiphona-i"],
+		"src":"gregobase/1914",
+		"datum":"Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus."
+	},
+	{
+		"tags":["episcopus","confessor","vesperae","i-psalmus"],
+		"datum":[["/psalmi/psalmus-cix"]]
+	},
+	{
+		"tags":["episcopus","confessor","antiphona","antiphona-ii"],
+		"src":"gregobase/2613",
+		"datum":"Non est invéntus * símilis illi, qui conserváret legem Excélsi."
+	},
+	{
+		"tags":["episcopus","confessor","vesperae","ii-psalmus"],
+		"datum":[["/psalmi/psalmus-cx"]]
+	},
+	{
+		"tags":["episcopus","confessor","antiphona","antiphona-iii"],
+		"src":"gregobase/2858",
+		"datum":"Ídeo jurejurándo * fecit illum Dóminus créscere in plebem suam."
+	},
+	{
+		"tags":["episcopus","confessor","vesperae","iii-psalmus"],
+		"datum":[["/psalmi/psalmus-cxi"]]
+	},
+	{
+		"tags":["episcopus","confessor","antiphona","antiphona-iv"],
+		"src":"gregobase/2009",
+		"datum":"Sacerdótes Dei * benedícite Dóminum: servi Dómini hymnum dícite Deo, allelúja."
+	},
+	{
+		"tags":["episcopus","confessor","vesperae","iv-psalmus"],
+		"datum":[["/psalmi/psalmus-cxii"]]
+	},
+	{
+		"tags":["episcopus","confessor","antiphona","antiphona-v"],
+		"src":"gregobase/2592",
+		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
+	},
+	{
+		"tags":["episcopus","confessor","i-vesperae","vesperae","v-psalmus"],
+		"datum":[["/psalmi/psalmus-cxvi"]]
+	},
+	{
+		"tags":["episcopus","confessor","ii-vesperae","vesperae","v-psalmus"],
+		"datum":[["/psalmi/psalmus-cxxxi"]]
+	},
+	{
+		"tags":["episcopus","confessor","vesperae","capitulum"],
+		"datum":"Ecce sacérdos magnus, + qui in diébus suis plácuit Deo, et invéntus est justus: * et in témpore iracúndiæ factus est reconciliátio."
+	},
+	{
+		"tags":["episcopus","confessor","vesperae","hymnus"],
+		"src":"gregobase/2334",
+		"datum":[
+			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit beátas/Scándere sedes.",
+			"Qui pius, prudens, húmilis pudícus,/Sóbriam duxit sine labe vitam,/Donec humános animávit auræ/Spíritus artus.",
+			"Cujus ob præstans méritum frequénter,/Ægra quæ passim jacuére, membra/Víribus morbi dómitis, salúti/Restituúntur.",
+			"Noster hinc illi chorus obsequéntem/Cóncinit laudem, celebréque palmas;/Ut piis ejus précibus juvémur/Omne per ævum.",
+			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Tótius mundi sériem gubérnat/Trinus et unus.","Amen."
+		]
+	},
+	{
+		"tags":["episcopus","confessor","mtv","vesperae","hymnus"],
+		"src":"gregobase/2334",
+		"datum":[
+			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit suprémos/Laudis honóres.",
+			"Qui pius, prudens, húmilis pudícus,/Sóbriam duxit sine labe vitam,/Donec humános animávit auræ/Spíritus artus.",
+			"Cujus ob præstans méritum frequénter,/Ægra quæ passim jacuére, membra/Víribus morbi dómitis, salúti/Restituúntur.",
+			"Noster hinc illi chorus obsequéntem/Cóncinit laudem, celebréque palmas;/Ut piis ejus précibus juvémur/Omne per ævum.",
+			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Tótius mundi sériem gubérnat/Trinus et unus.","Amen."
+		]
+	},
+	{
+		"tags":["episcopus","confessor","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2223",
+		"datum":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum."
+	},
+	{
+		"tags":["episcopus","confessor","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2933",
+		"datum":"Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum."
+	},
+	{
+		"tags":["episcopus","confessor","papa","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1820",
+		"datum":"Dum esset summus Póntifex, * terréna non métuit, sed ad cœléstia regna gloriósus migrávit."
+	}
+]
