@@ -30,7 +30,7 @@ def chomp(gabc: str, tags) -> str:
         if not 'paschalis' in tags and ' <i>T. P.</i>' in gabc:
             gabc = gabc[:gabc.index(' <i>T. P.</i>')]
 
-        if not 'septuagesima' in tags:
+        if not 'septuagesima' in tags and '<i>Post Septuag.</i>' in gabc:
             gabc = gabc[:gabc.index('<i>Post Septuag.</i>')]
 
         if 'intonata' in tags:
