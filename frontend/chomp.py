@@ -5,6 +5,7 @@ import re
 def chomp(gabc: str, tags) -> str:
 
     tags = tags.split('.')
+    gabc = gabc.replace('<v>\greheightstar</v>','*')
     mode: str | None = None
     if 'mode:' in gabc:
         mode = gabc[gabc.index('mode:') + 5:gabc.index('\n', gabc.index('mode:'))].strip()
@@ -22,12 +23,15 @@ def chomp(gabc: str, tags) -> str:
         euouae = ''
         if '<eu>' in gabc:
             # Notes which define the termination
-            euouae = re.sub('<.?eu>', '', re.search(r' <eu>.+', gabc).group())
+            euouae = re.sub('<.?eu>', '', re.search(r' <eu>.+', gabc).group()).strip()
             # Gabc without the euouae
             gabc = gabc[:gabc.index('<eu>')]
 
         if not 'paschalis' in tags and ' <i>T. P.</i>' in gabc:
             gabc = gabc[:gabc.index(' <i>T. P.</i>')]
+
+        if not 'septuagesima' in tags:
+            gabc = gabc[:gabc.index('<i>Post Septuag.</i>')]
 
         if 'intonata' in tags:
             return gabc[:gabc.index('*')] + '(::)' + euouae
@@ -35,7 +39,7 @@ def chomp(gabc: str, tags) -> str:
             gabc = gabc + euouae
         else:
             gabc = gabc.replace('*','')[gabc.index('\n') + 1:]
-            firstsyllable = re.search('\\w+\\(', gabc).group()
+            firstsyllable = re.search(r'\w+\(', gabc).group()
             gabc = 'initial-style:0;\n' + gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
         return gabc
 
