@@ -58,7 +58,7 @@ def breviary():
     for i in parameters['hour'].split(' '):
         ret += renderer.render(
                 breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split(' ')) if 'conditions' in parameters else None),
-                parameters, language='English')
+                parameters)
     return template('frontend/index.tpl',office=ret)
 
 @route('/styles/<file>')
@@ -94,4 +94,4 @@ def forcereload():
     getbreviariumfile.cache_clear()
     return 'Successfully dumped data caches.'
 
-run(host='localhost', port=8000, server='gevent')
+run(host='localhost', port=8080)
