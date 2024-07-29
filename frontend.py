@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from gevent import monkey; monkey.patch_all()
 import sys
 from bottle import route, request, run, template, static_file, error, template, hook
 from bottle import post, get
