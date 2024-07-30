@@ -19,24 +19,6 @@ defaultpile = {'formulae','psalmi','cantica'}
 
 responsetags = {'primarium','tempus','commemoratio','antiphona-bmv','psalmi'}
 
-def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
-
-    # JSON doesn't support sets. Recursively find and replace anything that
-    # looks like a list of tags with a set of tags.
-    def recurse(obj, key=None):
-        match obj:
-            case dict():
-                return {k: recurse(v, key=k) for k, v in obj.items()}
-            case list():
-                if all(type(x) is str for x in obj) and key != 'datum':
-                    return frozenset(obj)
-                return [recurse(v) for v in obj]
-            case _:
-                return obj
-
-    return recurse(data)
-
 def dump_data(j):
 
     # JSON doesn't like sets, so turn sets back into lists for JSON encoding.
@@ -56,8 +38,8 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-implicationtable = load_data('data/breviarium-1888/tag-implications.json')
-tagsorttable = load_data('data/breviarium-1888/tag-sort.json')
+implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
+tagsorttable = datamanage.load_data('data/breviarium-1888/tag-sort.json')
 
 def prettyprint(j):
     def recurse(obj):
@@ -96,12 +78,15 @@ def anysearch(query, pile):
         elif i['tags'].issubset(query):
             yield copy.deepcopy(i)
 
-def itemvalue(tags, table):
+# Numerical rank of query tagset according to a table of tagsets. Outputs a binary number with 1 in positions where the tagset at that table position was a subset of the query.
+def discriminate(root, table: str, tags: set):
+    table = datamanage.getdiscrimina(root, table)
     val = 0
-    for i in range(0, len(tagsorttable[table])):
-        include = set(filter(lambda a: a[0] != '!', tagsorttable[table][i]))
-        exclude = set([i[1:] for i in filter(lambda a: a[0] == '!', tagsorttable[table][i])])
-        val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(tagsorttable[table]) - i - 1)
+    for i in range(0, len(table)):
+        include = set(filter(lambda a: a[0] != '!', table[i]))
+        exclude = table[i] - include
+        # Adds 1 or 0 lower on the number as the position in the table increases using binary operators. The higher the position in the table (IE the farther down in the table), the lower precedence something is.
+        val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
     return val
 
 def search(root, query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
@@ -113,12 +98,12 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
             except FileNotFoundError:
                 return None
 
-    result = list(sorted(list(anysearch(query, pile)), key=lambda a: itemvalue(a['tags'], 'precedence'), reverse=True))
+    result = list(sorted(list(anysearch(query, pile)), key=lambda a: discriminate(root, 'general', a['tags']), reverse=True))
     if len(result) == 0:
         warnings.warn(f'0 tags found for queries {list(query)}')
         return None
-    bestvalue = itemvalue(result[0]['tags'], 'precedence')
-    result = list(filter(lambda a: itemvalue(a['tags'], 'precedence') == bestvalue, result))
+    bestvalue = discriminate(root, 'general', result[0]['tags'])
+    result = list(filter(lambda a: discriminate(root, 'general', a['tags']) == bestvalue, result))
     if len(result) == 1:
         return result[0]
     result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
@@ -159,7 +144,7 @@ def process(root, item, cascades, pile):
     # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
     if 'commemorationes' in item:
         ret = []
-        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, cascades)), key=lambda a:itemvalue(a, 'rank'), reverse=True)
+        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, cascades)), key=lambda a:discriminate(root, 'rank', a), reverse=True)
         for i in commemorations:
             probablepile = datamanage.getbreviariumfiles(root, defaultpile | i)
             ret.append(process(root, {'formula','commemoratio'}, [i], probablepile))

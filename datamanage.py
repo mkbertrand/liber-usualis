@@ -27,6 +27,10 @@ def load_data(p: str):
 
     return recurse(data)
 
+@functools.lru_cache(maxsize=32)
+def getdiscrimina(root, query):
+    return load_data(f'data/{root}/discrimina/{query}.json')
+
 @functools.lru_cache(maxsize=16)
 def getyear(year):
     return kalendar.kalendar(year)
