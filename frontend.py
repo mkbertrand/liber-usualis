@@ -21,7 +21,7 @@ from frontend import chomp, renderer
 def tag():
     parameters = copy.deepcopy(request.query)
     root = 'breviarium-1888/translations/english'
-    search = set(parameters['tags'].split(' ')) | {'english'} | breviarium.defaultpile
+    search = set(parameters['tags'].split('+')) | {'english'} | breviarium.defaultpile
     return breviarium.dump_data(breviarium.search(root, search, datamanage.getbreviariumfiles(root, search)))
 
 @get('/breviarium')
@@ -35,28 +35,28 @@ def breviary():
     if not 'hour' in parameters:
         match datetime.now().hour:
             case 0 | 1 | 2 | 3 | 4 | 5:
-                hour = 'matutinum laudes'
+                parameters['hour'] = 'matutinum+laudes'
             case 6 | 7:
-                hour = 'prima'
+                parameters['hour'] = 'prima'
             case 8 | 9 | 10:
-                hour = 'tertia'
+                parameters['hour'] = 'tertia'
             case 11 | 12 | 13:
-                hour = 'sexta'
+                parameters['hour'] = 'sexta'
             case 14 | 15:
-                hour = 'nona'
+                parameters['hour'] = 'nona'
             case 16 | 17 | 18 | 19:
-                hour = 'vesperae'
+                parameters['hour'] = 'vesperae'
             case 20 | 21 | 22 | 23:
-                hour = 'completorium'
+                parameters['hour'] = 'completorium'
 
     parameters['chant'] = parameters['chant'] == 'true' if 'chant' in parameters else False
 
     defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)
     parameters['hour'] = 'ante-officium ' + parameters['hour'] + ' post-officium'
     ret = ''
-    for i in parameters['hour'].split(' '):
+    for i in parameters['hour'].split('+'):
         ret += renderer.render(
-                breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split(' ')) if 'conditions' in parameters else None),
+                breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None),
                 parameters)
     return template('frontend/index.tpl',office=ret)
 
