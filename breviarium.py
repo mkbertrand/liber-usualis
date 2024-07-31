@@ -39,7 +39,6 @@ def dump_data(j):
     return json.dumps(recurse(j))
 
 implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
-tagsorttable = datamanage.load_data('data/breviarium-1888/tag-sort.json')
 
 def prettyprint(j):
     def recurse(obj):
@@ -84,7 +83,7 @@ def discriminate(root, table: str, tags: set):
     val = 0
     for i in range(0, len(table)):
         include = set(filter(lambda a: a[0] != '!', table[i]))
-        exclude = table[i] - include
+        exclude = {a[1:] for a in table[i] - include}
         # Adds 1 or 0 lower on the number as the position in the table increases using binary operators. The higher the position in the table (IE the farther down in the table), the lower precedence something is.
         val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
     return val

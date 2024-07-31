@@ -1,4 +1,9 @@
 [
+	["ordinarium"],
+	["!confessor"],
+	["!martyr"],
+	["!virgo"],
+	["!apostolus"],
 	["te-deum"],
 	["matutinum","antiphona"],
 	["antiphona-major"],
@@ -12,7 +17,6 @@
 	["duplex-responsum"],
 	["formula"],
 	["terminatio"],
-	["ordinarium"],
 	["antiphona-bmv"],
 	["prima"],
 	["completorium"],
@@ -28,12 +32,6 @@
 	["sexta"],
 	["nona"],
 	["vesperae"],
-	["lucia"],
-	["petrus-paulus"],
-	["maria-magdalena-poenitens"],
-	["apostolus"],
-	["virgo"],
-	["martyr"],
 	["vigilia"],
 	["feria"]
 ]
