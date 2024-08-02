@@ -129,15 +129,40 @@
 		]
 	},
 	{
+		"indices":["i-vesperae","joannes-apostolus","dies-octava","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","stephanus","dies-octava","primarium"],"response":"psalmi","target":"b"}
+		]
+	},
+	{
 		"indices":["i-vesperae","joannes-apostolus","primarium"],
 		"response":[
 			{"indices":["ii-vesperae","stephanus","primarium"],"response":"commemorandum","target":"a"}
 		]
 	},
 	{
+		"indices":["i-vesperae","innocentes","dies-octava","primarium"],
+		"response":[
+			{"indices":["ii-vesperae","joannes-apostolus","dies-octava","primarium"],"response":"psalmi","target":"b"}
+		]
+	},
+
+	{
 		"indices":["i-vesperae","innocentes","primarium"],
 		"response":[
 			{"indices":["ii-vesperae","joannes-apostolus","primarium"],"response":"commemorandum","target":"a"}
+		]
+	},
+	{
+		"indices":["epiphania","infra-octavam"],
+		"response":[
+			{"indices":["post-epiphaniam","feria"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["primarium"],
+		"response":[
+			{"indices":["feria-iv","cinerum"],"response":"commemorandum","target":"a"}
 		]
 	},
 	{
@@ -150,6 +175,19 @@
 			{"indices":["duplex-minus","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex-i-classis","primarium","ii-vesperae"],
+		"response":[
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
@@ -169,6 +207,9 @@
 			{"indices":["duplex-minus","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
@@ -189,6 +230,19 @@
 			{"indices":["semiduplex","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex-ii-classis","primarium","ii-vesperae"],
+		"response":[
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
@@ -208,11 +262,24 @@
 			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
 	{
-		"indices":["duplex-minus","i-vesperae"],
+		"indices":["duplex-majus","primarium","ii-vesperae"],
+		"response":[
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex-minus","primarium","i-vesperae"],
 		"response":[
 			{"indices":["dominica-i-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
 			{"indices":["dominica-ii-classis","ii-vesperae"],"response":"commemorandum","target":"b"},
@@ -222,6 +289,19 @@
 			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["duplex-minus","primarium","ii-vesperae"],
+		"response":[
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
@@ -229,15 +309,18 @@
 		"indices":["dominica","i-vesperae"],
 		"response":[
 			{"indices":["semiduplex","ii-vesperae"],"response":"psalmi","target":"b"},
-			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-ii-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
-			{"indices":["duplex-minus","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-i-classis","primarium","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-ii-classis","primarium","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-majus","primarium","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["duplex-minus","primarium","ii-vesperae"],"response":"commemorandum","target":"a"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},
 	{
-		"indices":["semiduplex","i-vesperae"],
+		"indices":["semiduplex","primarium","i-vesperae"],
 		"response":[
 			{"indices":["semiduplex","ii-vesperae"],"response":"psalmi","target":"b"},
 			{"indices":["duplex-i-classis","ii-vesperae"],"response":"commemorandum","target":"a"},
@@ -245,6 +328,19 @@
 			{"indices":["duplex-majus","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["duplex-minus","ii-vesperae"],"response":"commemorandum","target":"a"},
 			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["semiduplex","primarium","ii-vesperae"],
+		"response":[
+			{"indices":["feria-major","ii-vesperae"],"response":"commemorandum","target":"b"},
+			{"indices":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"omittendum","target":"b"},
+			{"indices":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"omittendum","target":"b"},
 			{"indices":["feria","per-annum","ii-vesperae"],"response":"omittendum","target":"b"}
 		]
 	},

@@ -34,7 +34,7 @@ def taggedentry(day, tags):
 
 coincidencetable = load_data('kalendar/data/vesperal-coincidence.json')
 hasivespers = {'simplex','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis','antiphona-bmv','suffragium'}
-hasiivespers = {'feria','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
+hasiivespers = {'feria','coena-domini','parasceve','semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 
 excludedtags = {'antiphona-bmv','commemoratum','fixum','tempus'}
 
@@ -46,11 +46,9 @@ def getvespers(day):
     iivespers = [i.union({'ii-vesperae'}) for i in filter(lambda occ: not occ.isdisjoint(hasiivespers), currday)]
     ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), ivespers))
     iivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
-    print(ivespers)
-    print(iivespers)
     if len(iivespersprimarycandidates) == 0:
         # Grabs the temporale (ferial) II Vespers
-        iivespprim = next(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
+        iivespprim = next(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers), None)
         for i in iivespers:
             if i == iivespprim:
                 i.add('primarium')
@@ -64,6 +62,7 @@ def getvespers(day):
                 i.add('primarium')
     # Final product
     vesperal = iivespers + ivespers
+
     def cycle():
         for coincidence in coincidencetable:
             for i in vesperal:
@@ -78,16 +77,21 @@ def getvespers(day):
                                     if 'target' in j and j['target'] == 'b':
                                         target = k
                                     if not (j['response'] == 'commemorandum' and 'commemoratum' in target) and not (j['response'] == 'psalmi' and 'psalmi' in target):
+
                                         if j['response'] == 'omittendum':
                                             vesperal.remove(target)
+
                                         elif j['response'] == 'commemorandum':
                                             if 'primarium' in target:
                                                 target.remove('primarium')
                                             target.add('commemoratum')
+
                                         elif j['response'] == 'psalmi':
                                             if 'primarium' in target:
                                                 target.remove('primarium')
                                             target.add('psalmi')
+                                            target.add('commemoratum')
+
                                         elif j['response'] == 'errora':
                                             raise RuntimeError(f'Unexpected coincidence between {i} and {k} on day {vesperal}')
                                         else:
