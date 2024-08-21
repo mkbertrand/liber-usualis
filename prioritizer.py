@@ -66,6 +66,8 @@ def getvespers(day):
     def cycle():
         for coincidence in coincidencetable:
             for i in vesperal:
+                include = set(filter(lambda a: a[0] != '!', i))
+                exclude = set([i[1:] for i in i - include])
                 if coincidence['indices'].issubset(i) and i.isdisjoint({'fixum','tempus'}):
                     if type(coincidence['response']) is not list:
                         perform_action(coincidence, day, i)
