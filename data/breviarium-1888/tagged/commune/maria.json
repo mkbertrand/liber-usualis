@@ -1,5 +1,50 @@
 [
 	{
+		"tags":["maria","antiphona","antiphona-i"],
+		"src":"gregobase/2000",
+		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis."
+	},
+	{
+		"tags":["maria","vesperae","i-psalmus"],
+		"datum":[["/psalmi/psalmus-cix"]]
+	},
+	{
+		"tags":["maria","antiphona","antiphona-ii"],
+		"src":"gregobase/2514",
+		"datum":"Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me."
+	},
+	{
+		"tags":["maria","vesperae","ii-psalmus"],
+		"datum":[["/psalmi/psalmus-cxii"]]
+	},
+	{
+		"tags":["maria","antiphona","antiphona-iii"],
+		"src":"gregobase/2007",
+		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
+	},
+	{
+		"tags":["maria","vesperae","iii-psalmus"],
+		"datum":[["/psalmi/psalmus-cxxi"]]
+	},
+	{
+		"tags":["maria","antiphona","antiphona-iv"],
+		"src":"gregobase/2056",
+		"datum":"Jam hiems tránsiit: * imber ábiit, et recéssit: surge amíca mea, et veni."
+	},
+	{
+		"tags":["maria","vesperae","iv-psalmus"],
+		"datum":[["/psalmi/psalmus-cxxvi"]]
+	},
+	{
+		"tags":["maria","antiphona","antiphona-v"],
+		"src":"gregobase/18381",
+		"datum":"Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génetrix."
+	},
+	{
+		"tags":["maria","vesperae","v-psalmus"],
+		"datum":[["/psalmi/psalmus-cxlvii"]]
+	},
+	{
 		"tags":[
 			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
 			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
