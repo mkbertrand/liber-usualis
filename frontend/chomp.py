@@ -20,7 +20,7 @@ def chomp(gabc: str, tags) -> str:
 
     gabc = re.sub('<.?sc>', '', gabc)
     # Remove in-text comments
-    gabc = re.sub(r'\[.*\]', '', gabc)
+    gabc = re.sub(r'\[.*?\]', '', gabc)
 
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
