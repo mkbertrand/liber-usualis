@@ -11,7 +11,7 @@ from datetime import datetime, date
 import copy
 import warnings
 
-from datamanage import getyear, getbreviariumfile
+from datamanage import getyear, getbreviariumfile, getdiscrimina
 import breviarium
 import datamanage
 
@@ -87,10 +87,11 @@ def resources(file):
 def error404(error):
     return 'Error 404'
 
-@route('/forcereload')
-def forcereload():
+@route('/reset')
+def reset():
     getyear.cache_clear()
     getbreviariumfile.cache_clear()
+    getdiscrimina.cache_clear()
     return 'Successfully dumped data caches.'
 
 run(host='localhost', port=8080)
