@@ -11,9 +11,17 @@ def chomp(gabc: str, tags) -> str:
         mode = gabc[gabc.index('mode:') + 5:gabc.index('\n', gabc.index('mode:'))].strip()
         if mode.endswith(';'):
             mode = mode[:-1]
+
+    # Remove all commented text before the beginning of the content
     gabc = '%%\n' + gabc[re.search(r'\([cf]\d\)', gabc).span()[0]:]
+
+    # Replace gregobase's preferred versicle and response with libu-friendly versions
     gabc = gabc.replace('<sp>V/</sp>.', '<v>\\Vbar</v>').replace('<sp>R/</sp>.', '<v>\\Rbar</v>')
+
     gabc = re.sub('<.?sc>', '', gabc)
+    # Remove in-text comments
+    gabc = re.sub(r'\[.*\]', '', gabc)
+
     if mode:
         gabc = f'mode:{mode};\n{gabc}'
     if 'deus-in-adjutorium' in tags:
