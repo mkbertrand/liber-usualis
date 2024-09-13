@@ -24,6 +24,10 @@ def tag():
     search = set(parameters['tags'].split('+')) | {'english'} | breviarium.defaultpile
     return breviarium.dump_data(breviarium.search(root, search, datamanage.getbreviariumfiles(root + '/translations/english', search), rootappendix='/translations/english'))
 
+@get('/')
+def index():
+    return template('frontend/index.tpl')
+
 @get('/breviarium')
 def breviary():
     parameters = copy.deepcopy(request.query)
@@ -58,7 +62,7 @@ def breviary():
         ret += renderer.render(
                 breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None),
                 parameters)
-    return template('frontend/index.tpl',office=ret)
+    return ret
 
 @route('/styles/<file>')
 def styles(file):
