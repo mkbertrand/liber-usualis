@@ -14,12 +14,27 @@
 		<div class='lyric-font' style='font-size: 1px; visibility: hidden;' >I<span class='b'>I<span class='i'>I</span></span><span class='i'>I</span><span style="font-family:'Exsurge Characters';">V. R.</span></div>
 		<div x-data="{
 			day: new Date(),
+			search: '',
 			get Hour() {
-				return fetch('/breviarium?date=' + this.day.toISOString().substring(0,10) + '&hour=vesperae&chant=false').then((response) => response.text())
+				return fetch('/breviarium?date=' + this.day.toISOString().substring(0, 10) + '&hour=vesperae&chant=false').then((response) => response.text())
 			}
 			}">
-			<div id='content-wrapper'>
+			<div id="content-wrapper">
 				<div x-html="Hour"></div>
+			</div>
+			<div id="date-selector-wrapper">
+				<div class="date-selector-item-container">
+					<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = day.toISOString().substring(0,10)">&#8592;</button>
+				</div>
+				<div class="date-selector-item-container">
+					<input id="date-selector-text" type="date" x-model="search" x-init="search = day.toISOString().substring(0,10)">
+				</div>
+				<div class="date-selector-item-container">
+					<button id="date-selector-text-submit" class="date-selector-button" @click="day = new Date(search + new Date().toISOString().substring(10))">&#8629;</button>
+				</div>
+				<div class="date-selector-item-container">
+					<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = day.toISOString().substring(0,10)">&#8594;</button>
+				</div>
 			</div>
 		</div>
 	</body>
