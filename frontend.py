@@ -53,6 +53,9 @@ def breviary():
             case 20 | 21 | 22 | 23:
                 parameters['hour'] = 'completorium'
 
+    if ' ' in parameters['hour']:
+        parameters['hour'] = parameters['hour'].replace(' ', '+')
+
     parameters['chant'] = parameters['chant'] == 'true' if 'chant' in parameters else False
 
     defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)

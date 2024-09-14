@@ -6,14 +6,40 @@ body {
 	background-color: #f5f5f5;
 }
 
-#date-selector-wrapper {
+#top-fixed-wrapper {
+	width: 600px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin: 0;
+	padding-top: 10px;
+}
+
+#hour-selector-wrapper {
 	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.hour-selector-item-container {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.hour-selector-button {
+	font-size: 20px;
+	font-family: times;
+}
+
+#date-selector-wrapper {
 	width: 500px;
 	position: fixed;
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
-	padding: 0;
+	padding-bottom: 10px;
 	margin: 0;
 	display: flex;
 	justify-content: center;
