@@ -22,7 +22,7 @@ def stringhandle(line: str) -> str:
 
 def render(data, parameters, language = None, translation = None) -> str:
     if 'tags' in data and not language == None:
-        tran = json.loads(requests.get('http://localhost:8000/json/tags', params={'tags': '+'.join(data['tags'])}, stream=True, timeout=10).text)
+        tran = json.loads(requests.get('http://localhost:8080/json/tags', params={'tags': '+'.join(data['tags'])}, stream=True, timeout=10).text)
         if not tran is None:
             translation = tran['datum']
     match data:
