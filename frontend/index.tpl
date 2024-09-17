@@ -40,6 +40,23 @@
 					} else if (typeof data === 'object') {
 						return render(data['datum'], parameters, language, null);
 					} else if (typeof data === 'string') {
+						let numbers = data.match(/[0-9]+/g);
+						if (numbers !== null) {
+							numbers.reverse();
+							for (i in numbers) {
+								data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
+							}
+						}
+						data = data.replace(/\//g, '<br>')
+							.replace(/\n/g, '<br>')
+							.replace(/N\./g, '<span class=\'red\'>N.</span>')
+							.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
+							.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
+							.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
+							.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
+							.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
+							.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
+							.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
 						return data;
 					} else {
 						return 'error';
@@ -82,7 +99,7 @@
 			<div id="content-wrapper">
 				<template x-for="element in Ritual">
 					<div class="text-content-latin">
-						<p x-text="element"></p>
+						<p x-html="element"></p>
 					</div>
 				</template>
 			</div>
