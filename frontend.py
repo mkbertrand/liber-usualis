@@ -20,9 +20,9 @@ from frontend import chomp, renderer
 @get('/json/tags')
 def tag():
     parameters = copy.deepcopy(request.query)
-    root = 'breviarium-1888/translations/english'
+    root = 'breviarium-1888'
     search = set(parameters['tags'].split('+')) | {'english'} | breviarium.defaultpile
-    return breviarium.dump_data(breviarium.search(root, search, datamanage.getbreviariumfiles(root, search)))
+    return breviarium.dump_data(breviarium.search(root, search, datamanage.getbreviariumfiles(root + '/translations/english', search), rootappendix='/translations/english'))
 
 @get('/breviarium')
 def breviary():

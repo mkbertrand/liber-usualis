@@ -88,12 +88,12 @@ def discriminate(root, table: str, tags: set):
         val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
     return val
 
-def search(root, query, pile, multipleresults = False, multipleresultssort = None, priortags = None):
+def search(root, query, pile, multipleresults = False, multipleresultssort = None, priortags = None, rootappendix = ''):
 
     for i in query:
         if '/' in i:
             try:
-                return {'tags': [i], 'datum':psalms.get(root, i)}
+                return {'tags': [i], 'datum':psalms.get(root + rootappendix, i)}
             except FileNotFoundError:
                 return None
 
