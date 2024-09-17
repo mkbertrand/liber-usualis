@@ -26,7 +26,7 @@ def tag():
 
 @get('/')
 def index():
-    return template('frontend/index.tpl')
+    return static_file('index.html', 'frontend/')
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/ritual')
