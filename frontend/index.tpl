@@ -22,10 +22,18 @@
 			get Ritual() {
 				function render(data, parameters, language = null, translation = null) {
 					if (typeof data === 'object' && Array.isArray(data)) {
-						ret = '';
+						let ret = [];
 						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 						for (let i = 0, count = data.length; i < count; i++) {
-							ret += render(data[i], parameters, language, null);
+							const rendered = render(data[i], parameters, language, null);
+							if (Array.isArray(rendered)) {
+								// I guess js doesn't actually like for in loops for unclear reasons
+								for (let j = 0; j < rendered.length; j++) {
+									ret.push(rendered[j]);
+								}
+							} else {
+								ret.push(rendered);
+							}
 						};
 						return ret;
 					// Native function to check if an object is a dictionary? No need
@@ -37,7 +45,13 @@
 						return 'error';
 					}
 				};
-				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false').then((response) => response.json()).then((data) => render(data, null, null, null))
+
+				// Just guarantees that the return is an array so that the x-for doesn't break
+				function outerrender(data, parameters, language = null, translation = null) {
+					const rendered = render(data, parameters, language, translation);
+					return Array.isArray(rendered) ? rendered : [rendered];
+				};
+				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false').then((response) => response.json()).then((data) => outerrender(data, null, null, null))
 			}
 		}">
 			<div id="top-fixed-wrapper">
@@ -66,7 +80,11 @@
 				</div>
 			</div>
 			<div id="content-wrapper">
-				<div x-html="Ritual"></div>
+				<template x-for="element in Ritual">
+					<div class="text-content-latin">
+						<p x-text="element"></p>
+					</div>
+				</template>
 			</div>
 			<div id="date-selector-wrapper">
 				<div class="date-selector-item-container">
