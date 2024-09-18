@@ -15,6 +15,7 @@
 		<div x-data="{
 			day: new Date(),
 			hour: 'vesperae',
+			translation: 'none',
 			search: '',
 			get Hour() {
 				return fetch('/breviarium?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false').then((response) => response.text())
@@ -98,8 +99,11 @@
 			</div>
 			<div id="content-wrapper">
 				<template x-for="element in Ritual">
-					<div class="text-content-latin">
-						<p x-html="element"></p>
+					<div>
+						<p class="text-content-latin" x-html="element"></p>
+						<div x-show="translation != 'none'">
+							<p class="text-content-translation"></p>
+						</div>
 					</div>
 				</template>
 			</div>
