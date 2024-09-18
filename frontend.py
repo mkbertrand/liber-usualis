@@ -61,7 +61,25 @@ def ritual():
 
     defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)
     parameters['hour'] = 'ante-officium+' + parameters['hour'] + '+post-officium'
-    return breviarium.dump_data([breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')])
+    ritual = [breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')]
+
+    translation = {}
+
+    if 'translation' in parameters:
+        def gettranslation(tags):
+            search = set(tags) | {parameters['translation']} | breviarium.defaultpile
+            return breviarium.search('breviarium-1888', search, datamanage.getbreviariumfiles('breviarium-1888/translations/english', search), rootappendix='/translations/english')
+
+        def traverse(obj):
+            if type(obj) is dict and 'tags' in obj:
+                translation['+'.join(obj['tags'])] = gettranslation(obj['tags'])
+                traverse(obj['datum'])
+            elif type(obj) is list:
+                for v in obj:
+                    traverse(v)
+        traverse(ritual)
+
+    return breviarium.dump_data({'translation' : translation, 'ritual' : ritual})
 
 @get('/breviarium')
 def breviary():

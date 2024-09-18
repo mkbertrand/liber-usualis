@@ -15,18 +15,42 @@
 		<div x-data="{
 			day: new Date(),
 			hour: 'vesperae',
-			translation: 'none',
+			translation: 'english',
 			search: '',
 			get Hour() {
 				return fetch('/breviarium?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false').then((response) => response.text())
 			},
 			get Ritual() {
-				function render(data, parameters, language = null, translation = null) {
+				function stringrender(data) {
+					let numbers = data.match(/[0-9]+/g);
+					if (numbers !== null) {
+						numbers.reverse();
+						for (i in numbers) {
+							data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
+						}
+					}
+					data = data.replace(/\//g, '<br>')
+						.replace(/\n/g, '<br>')
+						.replace(/N\./g, '<span class=\'red\'>N.</span>')
+						.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
+						.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
+						.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
+						.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
+						.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
+						.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
+						.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
+					return data;
+				};
+
+				function hunt(translationpool, tags) P
+
+				};
+				function render(data, parameters, translation = null, alltranslation = null) {
 					if (typeof data === 'object' && Array.isArray(data)) {
 						let ret = [];
 						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 						for (let i = 0, count = data.length; i < count; i++) {
-							const rendered = render(data[i], parameters, language, null);
+							const rendered = render(data[i], parameters, null, alltranslation);
 							if (Array.isArray(rendered)) {
 								// I guess js doesn't actually like for in loops for unclear reasons
 								for (let j = 0; j < rendered.length; j++) {
@@ -41,35 +65,18 @@
 					} else if (typeof data === 'object') {
 						return render(data['datum'], parameters, language, null);
 					} else if (typeof data === 'string') {
-						let numbers = data.match(/[0-9]+/g);
-						if (numbers !== null) {
-							numbers.reverse();
-							for (i in numbers) {
-								data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
-							}
-						}
-						data = data.replace(/\//g, '<br>')
-							.replace(/\n/g, '<br>')
-							.replace(/N\./g, '<span class=\'red\'>N.</span>')
-							.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-							.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
-							.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
-							.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
-							.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
-							.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
-							.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
-						return data;
+						return stringrender(data);
 					} else {
 						return 'error';
 					}
 				};
 
 				// Just guarantees that the return is an array so that the x-for doesn't break
-				function outerrender(data, parameters, language = null, translation = null) {
-					const rendered = render(data, parameters, language, translation);
+				function outerrender(data, parameters) {
+					const rendered = render(data['ritual'], parameters, translation, data['translation']);
 					return Array.isArray(rendered) ? rendered : [rendered];
 				};
-				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false').then((response) => response.json()).then((data) => outerrender(data, null, null, null))
+				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false&translation=' + this.translation).then((response) => response.json()).then((data) => outerrender(data, null, null, null))
 			}
 		}">
 			<div id="top-fixed-wrapper">
