@@ -34,7 +34,7 @@
 			["vesperae","hymnus"],
 			["vesperae","versiculus"],
 			{"from-tags":["formula","antiphona-prior"],"cascade":["vesperae","antiphona-magnificat"]},
-			["magnificat"],
+			["/psalmi/magnificat"],
 			["/psalmi/gloria"],
 			["vesperae","antiphona","antiphona-magnificat","repetita"],
 			["preces"],
