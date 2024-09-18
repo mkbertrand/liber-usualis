@@ -22,15 +22,19 @@
 			},
 			get Ritual() {
 				function stringrender(data) {
-					let numbers = data.match(/[0-9]+/g);
+
+					data = data.replace(/\//g, '<br>');
+
+					let numbers = data.match(/^[0-9]+\s/gm);
+
 					if (numbers != null) {
 						numbers.reverse();
 						for (i in numbers) {
 							data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
 						}
 					}
-					data = data.replace(/\//g, '<br>')
-						.replace(/\n/g, '<br>')
+
+					data = data.replace(/\n/g, '<br>')
 						.replace(/N\./g, '<span class=\'red\'>N.</span>')
 						.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
 						.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
