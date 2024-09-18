@@ -72,7 +72,9 @@ def ritual():
 
         def traverse(obj):
             if type(obj) is dict and 'tags' in obj:
-                translation['+'.join(obj['tags'])] = gettranslation(obj['tags'])
+                tran = gettranslation(obj['tags'])
+                if tran:
+                    translation['+'.join(obj['tags'])] = tran
                 traverse(obj['datum'])
             elif type(obj) is list:
                 for v in obj:

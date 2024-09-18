@@ -61,10 +61,9 @@ body {
 
 #content-wrapper {
 	font-family: times;
-	margin-left: 100px;
-	margin-right: 100px;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-left: 270px;
+	margin-right: 270px;
+	padding: 40px 30px 30px 40px;
 	margin-top:0;
 	height: 100%;
 	background-color: #ffffff;

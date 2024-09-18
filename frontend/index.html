@@ -23,7 +23,7 @@
 			get Ritual() {
 				function stringrender(data) {
 					let numbers = data.match(/[0-9]+/g);
-					if (numbers !== null) {
+					if (numbers != null) {
 						numbers.reverse();
 						for (i in numbers) {
 							data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
@@ -42,15 +42,23 @@
 					return data;
 				};
 
-				function hunt(translationpool, tags) P
+				function render(data, parameters, translated = null, translationpool = null) {
 
-				};
-				function render(data, parameters, translation = null, alltranslation = null) {
+					let tran = null;
+
+					if (translationpool != null && typeof data === 'object' && 'tags' in data) {
+						console.log(data['tags'].join('+'));
+						tran = translationpool[data['tags'].join('+')];
+					};
+					if (tran != null) {
+						translated = tran['datum'];
+					};
+
 					if (typeof data === 'object' && Array.isArray(data)) {
 						let ret = [];
 						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 						for (let i = 0, count = data.length; i < count; i++) {
-							const rendered = render(data[i], parameters, null, alltranslation);
+							const rendered = render(data[i], parameters, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool);
 							if (Array.isArray(rendered)) {
 								// I guess js doesn't actually like for in loops for unclear reasons
 								for (let j = 0; j < rendered.length; j++) {
@@ -61,11 +69,10 @@
 							}
 						};
 						return ret;
-					// Native function to check if an object is a dictionary? No need
 					} else if (typeof data === 'object') {
-						return render(data['datum'], parameters, language, null);
+						return render(data['datum'], parameters, translated, translationpool);
 					} else if (typeof data === 'string') {
-						return stringrender(data);
+					return translated != null && typeof translated === 'string' ? {content: stringrender(data), translation: stringrender(translated)} : {content: stringrender(data)};
 					} else {
 						return 'error';
 					}
@@ -73,7 +80,9 @@
 
 				// Just guarantees that the return is an array so that the x-for doesn't break
 				function outerrender(data, parameters) {
-					const rendered = render(data['ritual'], parameters, translation, data['translation']);
+					console.log(data['ritual']);
+					console.log(data['translation']);
+					const rendered = render(data['ritual'], parameters, null, data['translation']);
 					return Array.isArray(rendered) ? rendered : [rendered];
 				};
 				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&chant=false&translation=' + this.translation).then((response) => response.json()).then((data) => outerrender(data, null, null, null))
@@ -107,9 +116,11 @@
 			<div id="content-wrapper">
 				<template x-for="element in Ritual">
 					<div>
-						<p class="text-content-latin" x-html="element"></p>
-						<div x-show="translation != 'none'">
-							<p class="text-content-translation"></p>
+						<div class="text-container-latin">
+							<p class="text-content-latin" x-html="element['content']"></p>
+						</div>
+						<div class="text-container-translation" x-show="translation != 'none'">
+							<p class="text-content-translation" x-html="element['translation']"></p>
 						</div>
 					</div>
 				</template>
