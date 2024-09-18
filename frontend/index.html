@@ -47,7 +47,6 @@
 					let tran = null;
 
 					if (translationpool != null && typeof data === 'object' && 'tags' in data) {
-						console.log(data['tags'].join('+'));
 						tran = translationpool[data['tags'].join('+')];
 					};
 					if (tran != null) {
@@ -80,8 +79,6 @@
 
 				// Just guarantees that the return is an array so that the x-for doesn't break
 				function outerrender(data, parameters) {
-					console.log(data['ritual']);
-					console.log(data['translation']);
 					const rendered = render(data['ritual'], parameters, null, data['translation']);
 					return Array.isArray(rendered) ? rendered : [rendered];
 				};
