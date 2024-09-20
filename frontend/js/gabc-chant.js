@@ -12,8 +12,6 @@ require(['jquery','exsurge'], function($,exsurge) {
 		}
 		
 		chantLayout() {
-			var src = $(this).attr('src');
-			$.get(src).then(data => {this.setGabc(data);this.init();});
 			this.score.layoutChantLines(this.ctxt, $(this).parent().width());
 			$(this).html(this.score.createSvg(this.ctxt));
 		}

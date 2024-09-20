@@ -63,7 +63,7 @@ def ritual():
         forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')]
 
     translation = {}
-    if 'translation' in parameters:
+    if 'translation' in parameters and parameters['translation'] == 'true':
         def gettranslation(tags):
             search = set(tags) | {parameters['translation']} | breviarium.defaultpile
             return breviarium.search('breviarium-1888', search, datamanage.getbreviariumfiles('breviarium-1888/translations/english', search), rootappendix='/translations/english')
@@ -81,7 +81,7 @@ def ritual():
         traverse(ritual)
 
     chant = {}
-    if 'chant' in parameters:
+    if 'chant' in parameters and parameters['chant'] == 'true':
         def traverse(obj):
             if type(obj) is dict and 'src' in obj:
                 src = obj['src']
