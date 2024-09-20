@@ -4,6 +4,7 @@ import functools
 import os
 import copy
 import logging
+import requests
 
 from kalendar import kalendar
 
@@ -43,6 +44,10 @@ def getdate(day):
 def getbreviariumfile(query):
     logging.debug(f'Loading {query}')
     return load_data(query)
+
+@functools.lru_cache(maxsize=1024)
+def getchantfile(url):
+    return requests.get(url, stream=True).text
 
 # No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
 def getbreviariumfiles(root, queries):
