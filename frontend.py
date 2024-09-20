@@ -81,15 +81,14 @@ def ritual():
         traverse(ritual)
 
     chant = {}
-    if 'chant' in parameters or True:
+    if 'chant' in parameters:
         def traverse(obj):
             if type(obj) is dict and 'src' in obj:
-                print('here')
                 src = obj['src']
                 tags = obj['tags'] if 'tags' in obj else ''
                 if 'gregobase' in src and not src.endswith('&format=gabc'):
                     src = f'https://gregobase.selapa.net/download.php?id={src[src.index('/') + 1:]}&format=gabc&elem=1'
-                gabc = chomp.chomp(requests.get(src, stream=True).text, tags)
+                gabc = chomp.chomp(datamanage.getchantfile(src), tags)
                 assert not "\"" in gabc
                 chant[obj['src'] + ';' + '+'.join(tags)] = gabc
             if type(obj) is dict:
@@ -99,8 +98,7 @@ def ritual():
                     traverse(v)
         traverse(ritual)
 
-    print(chant)
-    return breviarium.dump_data({'translation' : translation, 'ritual' : ritual})
+    return breviarium.dump_data({'translation' : translation, 'chant': chant, 'ritual' : ritual})
 
 @route('/styles/<file>')
 def styles(file):
