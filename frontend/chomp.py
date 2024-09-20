@@ -4,7 +4,6 @@ import re
 
 def chomp(gabc: str, tags) -> str:
 
-    tags = tags.split('+')
     gabc = gabc.replace(r'<v>\greheightstar</v>','*')
     mode: str | None = None
     if 'mode:' in gabc:

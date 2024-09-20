@@ -63,7 +63,6 @@ def ritual():
         forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')]
 
     translation = {}
-
     if 'translation' in parameters:
         def gettranslation(tags):
             search = set(tags) | {parameters['translation']} | breviarium.defaultpile
@@ -74,12 +73,33 @@ def ritual():
                 tran = gettranslation(obj['tags'])
                 if tran:
                     translation['+'.join(obj['tags'])] = tran
+            if type(obj) is dict:
                 traverse(obj['datum'])
             elif type(obj) is list:
                 for v in obj:
                     traverse(v)
         traverse(ritual)
 
+    chant = {}
+    if 'chant' in parameters or True:
+        def traverse(obj):
+            if type(obj) is dict and 'src' in obj:
+                print('here')
+                src = obj['src']
+                tags = obj['tags'] if 'tags' in obj else ''
+                if 'gregobase' in src and not src.endswith('&format=gabc'):
+                    src = f'https://gregobase.selapa.net/download.php?id={src[src.index('/') + 1:]}&format=gabc&elem=1'
+                gabc = chomp.chomp(requests.get(src, stream=True).text, tags)
+                assert not "\"" in gabc
+                chant[obj['src'] + ';' + '+'.join(tags)] = gabc
+            if type(obj) is dict:
+                traverse(obj['datum'])
+            elif type(obj) is list:
+                for v in obj:
+                    traverse(v)
+        traverse(ritual)
+
+    print(chant)
     return breviarium.dump_data({'translation' : translation, 'ritual' : ritual})
 
 @route('/styles/<file>')

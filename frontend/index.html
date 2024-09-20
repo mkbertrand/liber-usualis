@@ -7,6 +7,7 @@
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href="/styles/index.css">
 		<link rel="stylesheet" type="text/css" href="/styles/breviarium.css">
+		<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 		<script async data-main="/js/gabc-chant.js" src="/js/require.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
@@ -15,7 +16,7 @@
 		<div x-data="{
 			day: new Date(),
 			hour: 'vesperae',
-			chant: true,
+			chant: false,
 			translation: 'english',
 			search: '',
 			get Hour() {
@@ -129,7 +130,9 @@
 							<p class="text-content-latin" x-html="element['content']"></p>
 						</div>
 						<template x-if="chant && 'chant' in element">
-							<gabc-chant x-bind:src="await getChant(element['chant'])"></gabc-chant>
+							<div class="chant-wrapper">
+								<gabc-chant x-bind:src="element['chant']"></gabc-chant>
+							</div>
 						</template>
 						<div class="text-container-translation" x-show="translation != 'none'">
 							<p class="text-content-translation" x-html="element['translation']"></p>
