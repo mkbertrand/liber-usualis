@@ -57,11 +57,10 @@ def ritual():
     if ' ' in parameters['hour']:
         parameters['hour'] = parameters['hour'].replace(' ', '+')
 
-    parameters['chant'] = parameters['chant'] == 'true' if 'chant' in parameters else False
-
     defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)
     parameters['hour'] = 'ante-officium+' + parameters['hour'] + '+post-officium'
-    ritual = [breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')]
+    ritual = [breviarium.hour('breviarium-1888', i, parameters['date'],
+        forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')]
 
     translation = {}
 
@@ -83,59 +82,16 @@ def ritual():
 
     return breviarium.dump_data({'translation' : translation, 'ritual' : ritual})
 
-@get('/breviarium')
-def breviary():
-    parameters = copy.deepcopy(request.query)
-    if not 'date' in parameters:
-        parameters['date'] = date.today()
-    else:
-        parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
-
-    if not 'hour' in parameters:
-        match datetime.now().hour:
-            case 0 | 1 | 2 | 3 | 4 | 5:
-                parameters['hour'] = 'matutinum+laudes'
-            case 6 | 7:
-                parameters['hour'] = 'prima'
-            case 8 | 9 | 10:
-                parameters['hour'] = 'tertia'
-            case 11 | 12 | 13:
-                parameters['hour'] = 'sexta'
-            case 14 | 15:
-                parameters['hour'] = 'nona'
-            case 16 | 17 | 18 | 19:
-                parameters['hour'] = 'vesperae'
-            case 20 | 21 | 22 | 23:
-                parameters['hour'] = 'completorium'
-
-    if ' ' in parameters['hour']:
-        parameters['hour'] = parameters['hour'].replace(' ', '+')
-
-    parameters['chant'] = parameters['chant'] == 'true' if 'chant' in parameters else False
-
-    defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)
-    parameters['hour'] = 'ante-officium+' + parameters['hour'] + '+post-officium'
-    ret = ''
-    for i in parameters['hour'].split('+'):
-        ret += renderer.render(
-                breviarium.hour('breviarium-1888', i, parameters['date'], forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None),
-                parameters)
-    return ret
-
 @route('/styles/<file>')
 def styles(file):
     return static_file(file, root='frontend/styles/')
 
-@get('/chant/gregobase/<id>/<tags>')
-def gregobase(id, tags= ''):
-    return chant(f'https://gregobase.selapa.net/download.php?id={id}&format=gabc&elem=1', tags)
-
-@get('/chant/<url:path>/<tags>')
-def chant(url, tags = ''):
+@get('/chant/<url:path>')
+def chant(url):
     if 'gregobase' in url and not url.endswith('&format=gabc'):
-        url = f'https://gregobase.selapa.net/download.php?id={url[url.index('id=') + 3:]}&format=gabc&elem=1'
+        url = f'https://gregobase.selapa.net/download.php?id={url[url.index('/') + 1:]}&format=gabc&elem=1'
     response = datamanage.getchantfile(url)
-    return chomp.chomp(response, tags)
+    return chomp.chomp(response, request.query['tags'].replace(' ', '+') if 'tags' in request.query else '')
 
 @route('/js/<file:path>')
 def javascript(file):
