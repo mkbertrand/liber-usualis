@@ -80,25 +80,7 @@ def ritual():
                     traverse(v)
         traverse(ritual)
 
-    chant = {}
-    if 'chant' in parameters and parameters['chant'] == 'true':
-        def traverse(obj):
-            if type(obj) is dict and 'src' in obj:
-                src = obj['src']
-                tags = obj['tags'] if 'tags' in obj else ''
-                if 'gregobase' in src and not src.endswith('&format=gabc'):
-                    src = f'https://gregobase.selapa.net/download.php?id={src[src.index('/') + 1:]}&format=gabc&elem=1'
-                gabc = chomp.chomp(datamanage.getchantfile(src), tags)
-                assert not "\"" in gabc
-                chant[obj['src'] + ';' + '+'.join(tags)] = gabc
-            if type(obj) is dict:
-                traverse(obj['datum'])
-            elif type(obj) is list:
-                for v in obj:
-                    traverse(v)
-        traverse(ritual)
-
-    return breviarium.dump_data({'translation' : translation, 'chant': chant, 'ritual' : ritual})
+    return breviarium.dump_data({'translation' : translation, 'ritual' : ritual})
 
 @route('/styles/<file>')
 def styles(file):
@@ -109,7 +91,7 @@ def chant(url):
     if 'gregobase' in url and not url.endswith('&format=gabc'):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('/') + 1:]}&format=gabc&elem=1'
     response = datamanage.getchantfile(url)
-    return chomp.chomp(response, request.query['tags'].replace(' ', '+') if 'tags' in request.query else '')
+    return chomp.chomp(datamanage.getchantfile(url), request.query['tags'].replace(' ', '+') if 'tags' in request.query else '')
 
 @route('/js/<file:path>')
 def javascript(file):

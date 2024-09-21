@@ -45,7 +45,7 @@
 					return data;
 				};
 
-				function render(data, chant, translated = null, translationpool = null, chantpool = null) {
+				function render(data, chant, translated = null, translationpool = null) {
 
 					let tran = null;
 
@@ -60,7 +60,7 @@
 						let ret = [];
 						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 						for (let i = 0, count = data.length; i < count; i++) {
-							const rendered = render(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, chantpool);
+							const rendered = render(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool);
 							if (Array.isArray(rendered)) {
 								// I guess js doesn't actually like for in loops for unclear reasons
 								for (let j = 0; j < rendered.length; j++) {
@@ -72,9 +72,9 @@
 						};
 						return ret;
 					} else if (typeof data === 'object' && chant && 'src' in data) {
-						return {chant: chantpool[data['src'] + ';' + data['tags'].join('+')]};
+						return {chant: '/chant/' + data['src'] + '?tags=' + data['tags'].join('+')};
 					} else if (typeof data === 'object') {
-						return render(data['datum'], chant, translated, translationpool, chantpool);
+						return render(data['datum'], chant, translated, translationpool);
 					} else if (typeof data === 'string') {
 					return translated != null && typeof translated === 'string' ? {content: stringrender(data), translation: stringrender(translated)} : {content: stringrender(data)};
 					} else {
@@ -84,11 +84,11 @@
 
 				// Just guarantees that the return is an array so that the x-for doesn't break
 				function outerrender(data, chant) {
-					const rendered = render(data['ritual'], chant, null, data['translation'], data['chant']);
+					const rendered = render(data['ritual'], chant, null, data['translation']);
 					return Array.isArray(rendered) ? rendered : [rendered];
 				};
 
-				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation + '&chant=' + this.chant).then((response) => response.json()).then((data) => outerrender(data, this.chant))
+				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation).then((response) => response.json()).then((data) => outerrender(data, this.chant))
 			}
 		}">
 			<div id="top-fixed-wrapper">
@@ -123,9 +123,7 @@
 							<p class="text-content-latin" x-html="element['content']"></p>
 						</div>
 						<template x-if="chant && 'chant' in element">
-							<div class="chant-wrapper">
-								<gabc-chant x-text="element['chant']"></gabc-chant>
-							</div>
+							<div class="chant-wrapper" x-html="'<gabc-chant src=' + element['chant'] + '></gabc-chant>'"></div>
 						</template>
 						<div class="text-container-translation" x-show="translation != 'none'">
 							<p class="text-content-translation" x-html="element['translation']"></p>
