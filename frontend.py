@@ -91,7 +91,7 @@ def chant(url):
     if 'gregobase' in url and not url.endswith('&format=gabc'):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('/') + 1:]}&format=gabc&elem=1'
     response = datamanage.getchantfile(url)
-    return chomp.chomp(datamanage.getchantfile(url), request.query['tags'].replace(' ', '+') if 'tags' in request.query else '')
+    return chomp.chomp(datamanage.getchantfile(url), request.query['tags'].replace(' ', '+').split('+') if 'tags' in request.query else set())
 
 @route('/js/<file:path>')
 def javascript(file):
