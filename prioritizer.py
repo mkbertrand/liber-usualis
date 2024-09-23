@@ -17,7 +17,6 @@ def load_data(p: str):
         match obj:
             case dict():
                 return {datetime.strptime(k, '%Y-%m-%d').date() if re.search(r'^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
-                return {k: recurse(v) for k, v in obj.items()}
             case list():
                 if all(type(x) is str for x in obj):
                     return set(obj)
