@@ -1,8 +1,10 @@
 require(['jquery','exsurge'], function($,exsurge) {
 
-	$(window).resize(event => {
-		$('gabc-chant').each((index, elem) =>
-			Promise.resolve(new Promise(((resolve, reject) => elem.chantLayout()))));
+	$(document).ready(function() {
+		const resizeObserver = new ResizeObserver(() =>
+			$('gabc-chant').each((index, elem) =>
+				Promise.resolve(new Promise(((resolve, reject) => elem.chantLayout())))));
+		resizeObserver.observe(document.getElementById('content-wrapper'));
 	});
 		
 	class ChantElement extends HTMLElement {
@@ -12,8 +14,10 @@ require(['jquery','exsurge'], function($,exsurge) {
 		}
 		
 		chantLayout() {
-			this.score.layoutChantLines(this.ctxt, $(this).parent().width());
-			$(this).html(this.score.createSvg(this.ctxt));
+			if (typeof this.score !== 'undefined') {
+				this.score.layoutChantLines(this.ctxt, $(this).parent().width());
+				$(this).html(this.score.createSvg(this.ctxt));
+			}
 		}
 		
 		setGabc(gabc) {

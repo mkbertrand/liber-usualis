@@ -63,13 +63,18 @@ body {
 	font-size: 20px;
 }
 
+#site-wrapper {
+	width: 100%;
+}
+
 #content-wrapper {
 	font-family: times;
 	margin-left: 270px;
 	margin-right: 270px;
 	padding: 40px 30px 30px 40px;
-	margin-top:0;
 	height: 100%;
+	margin: 0 auto;
+	max-width: 1750px;
 	background-color: #f9f9f9;
 	border-left: 1px solid #fcf6dc;
 	border-right: 1px solid #fcf6dc;
