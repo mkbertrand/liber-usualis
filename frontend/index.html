@@ -91,10 +91,10 @@
 			}
 		}">
 			<div id="top-fixed-wrapper">
-				<div id="hour-selector-wrapper" x-data="{liturgylist: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]}">
+				<div id="liturgy-selector-wrapper" x-data="{liturgylist: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]}">
 					<template x-for="liturgy in liturgylist">
-						<div class="hour-selector-item-container">
-							<button class="hour-selector-button" @click="hour = liturgy['id']" x-text="liturgy['name']"></button>
+						<div class="liturgy-selector-item-container">
+							<button class="liturgy-selector-button" @click="hour = liturgy['id']" x-text="liturgy['name']"></button>
 						</div>
 					</template>
 				</div>
