@@ -82,11 +82,8 @@
 	},
 	{
 		"tags":["vidua","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Exaúdi nos Deus salutáris noster: ut sicut de beátæ N. festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu."
-	},
-	{
-		"tags":["vidua","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
 		"tags":["vidua","matutinum","antiphona","antiphona-invitatorium"],

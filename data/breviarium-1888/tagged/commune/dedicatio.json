@@ -76,19 +76,13 @@
 	},
 	{
 		"tags":["dedicatio","anniversarius","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Deus, qui invisibíliter ómnia cóntines, et tamen pro salúte géneris humáni signa tuæ poténtiæ visibíliter osténdis: + templum hoc poténtia tuæ inhabitatiónis illústra, et concéde; ut omnes, qui huc deprecatúri convéniunt, * ex quacúmque tribulatióne ad te clamáverint, consolatiónis tuæ benefícia consequántur."
 	},
 	{
-		"tags":["dedicatio","anniversarius","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
-	},
-	{
 		"tags":["dedicatio","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Deus, qui nobis per síngulos annos hujus sancti templi tui consecratiónis réparas diem, et sacris semper mystériis repræséntas incólumnes: + exaúdi preces pópuli tui, et præsta; ut quisquis hoc templum benefícia petitúrus ingréditur, * cuncta se impetrásse lætétur."
-	},
-	{
-		"tags":["dedicatio","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
 		"tags":["dedicatio","matutinum","antiphona","antiphona-invitatorium"],

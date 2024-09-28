@@ -167,12 +167,12 @@
 	},
 	{
 		"tags":["matutinum","nocturnae","feria"],
-		"cascade":["nocturna-i"],
+		"with":["nocturna-i"],
 		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","simplex"],
-		"cascade":["nocturna-i","te-deum"],
+		"with":["nocturna-i","te-deum"],
 		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
@@ -180,15 +180,15 @@
 		"datum":[
 			{
 				"from-tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-i"]
+				"with":["nocturna-i"]
 			},
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-ii"]
+				"with":["nocturna-ii"]
 			},
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-iii","te-deum"]
+				"with":["nocturna-iii","te-deum"]
 			}
 		]
 	},
@@ -197,15 +197,15 @@
 		"datum":[
 			{
 				"from-tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-i"]
+				"with":["nocturna-i"]
 			},
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-ii"]
+				"with":["nocturna-ii"]
 			},
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-iii"]
+				"with":["nocturna-iii"]
 			}
 		]
 	},
@@ -214,15 +214,15 @@
 		"datum":[
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-i"]
+				"with":["nocturna-i"]
 			},
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-ii"]
+				"with":["nocturna-ii"]
 			},
 			{
 				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"cascade":["nocturna-iii","te-deum"]
+				"with":["nocturna-iii","te-deum"]
 			}
 		]
 	},
@@ -232,7 +232,7 @@
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-i"]},
+					["matutinum","antiphona","antiphona-i","intonata"],
 					["matutinum","i-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","ii-psalmus"],
@@ -242,7 +242,7 @@
 					["matutinum","iv-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","antiphona","antiphona-i","repetita"],
-					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-ii"]},
+					["matutinum","antiphona","antiphona-ii","intonata"],
 					["matutinum","v-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","vi-psalmus"],
@@ -252,7 +252,7 @@
 					["matutinum","viii-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","antiphona","antiphona-ii","repetita"],
-					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-iii"]},
+					["matutinum","antiphona","antiphona-iii","intonata"],
 					["matutinum","ix-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","x-psalmus"],
@@ -329,20 +329,51 @@
 		]
 	},
 	{
+		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae","duplex"],
+		"datum":[
+			{
+				"tags":["matutinum","psalmodia"],
+				"datum":[
+					["matutinum","antiphona","antiphona-i"],
+					["matutinum","i-psalmus"],
+					["gloria-psalmi"],
+					["matutinum","antiphona","antiphona-i","repetita"],
+					["matutinum","antiphona","antiphona-ii"],
+					["matutinum","ii-psalmus"],
+					["gloria-psalmi"],
+					["matutinum","antiphona","antiphona-ii","repetita"],
+					["matutinum","antiphona","antiphona-iii"],
+					["matutinum","iii-psalmus"],
+					["gloria-psalmi"],
+					["matutinum","antiphona","antiphona-iii","repetita"]
+				]
+			},
+			["matutinum","versiculus"],
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			["absolutio"],
+			"R. Amen.",
+			["lectiones"]
+		]
+	},
+
+	{
 		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
 		"datum":[
 			{
 				"tags":["matutinum","psalmodia"],
 				"datum":[
-					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-i"]},
+					["matutinum","antiphona","antiphona-i","intonata"],
 					["matutinum","i-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","antiphona","antiphona-i","repetita"],
-					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-ii"]},
+					["matutinum","antiphona","antiphona-ii","intonata"],
 					["matutinum","ii-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","antiphona","antiphona-ii","repetita"],
-					{"from-tags":["formula","antiphona-prior"],"cascade":["antiphona-iii"]},
+					["matutinum","antiphona","antiphona-iii","intonata"],
 					["matutinum","iii-psalmus"],
 					["gloria-psalmi"],
 					["matutinum","antiphona","antiphona-iii","repetita"]
@@ -361,22 +392,22 @@
 	{
 		"tags":["lectiones"],
 		"datum":[
-			{"from-tags":["formula","lectionis"],"cascade":["lectio-i"]},
-			{"from-tags":["formula","responsorium","responsorium-i"],"cascade":["responsorium-i"]},
-			{"from-tags":["formula","lectionis"],"cascade":["lectio-ii"]},
-			{"from-tags":["formula","responsorium","responsorium-ii"],"cascade":["responsorium-ii"]},
-			{"from-tags":["formula","lectionis"],"cascade":["lectio-iii"]},
-			{"from-tags":["formula","responsorium","responsorium-iii","gloria"],"cascade":["responsorium-iii"]}
+			{"from-tags":["formula","lectionis"],"with":["lectio-i"]},
+			{"from-tags":["formula","responsorium","responsorium-i"],"with":["responsorium-i"]},
+			{"from-tags":["formula","lectionis"],"with":["lectio-ii"]},
+			{"from-tags":["formula","responsorium","responsorium-ii"],"with":["responsorium-ii"]},
+			{"from-tags":["formula","lectionis"],"with":["lectio-iii"]},
+			{"from-tags":["formula","responsorium","responsorium-iii","gloria"],"with":["responsorium-iii"]}
 		]
 	},
 	{
 		"tags":["lectiones","te-deum"],
 		"datum":[
-			{"from-tags":["formula","lectionis"],"cascade":["lectio-i"]},
-			{"from-tags":["formula","responsorium","responsorium-i"],"cascade":["responsorium-i"]},
-			{"from-tags":["formula","lectionis"],"cascade":["lectio-ii"]},
-			{"from-tags":["formula","responsorium","responsorium-ii","gloria"],"cascade":["responsorium-ii"]},
-			{"from-tags":["formula","lectionis"],"cascade":["lectio-iii"]},
+			{"from-tags":["formula","lectionis"],"with":["lectio-i"]},
+			{"from-tags":["formula","responsorium","responsorium-i"],"with":["responsorium-i"]},
+			{"from-tags":["formula","lectionis"],"with":["lectio-ii"]},
+			{"from-tags":["formula","responsorium","responsorium-ii","gloria"],"with":["responsorium-ii"]},
+			{"from-tags":["formula","lectionis"],"with":["lectio-iii"]},
 			["hymnus","te-deum"]
 		]
 	},

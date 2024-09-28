@@ -15,9 +15,7 @@ from kalendar import kalendar
 import psalms
 
 data_root = pathlib.Path(__file__).parent
-defaultpile = {'formulae','psalmi','cantica'}
-
-responsetags = {'primarium','tempus','commemoratio','antiphona-bmv','psalmi'}
+defaultpile = {'formulae'}
 
 def dump_data(j):
 
@@ -113,67 +111,60 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
         strippedresult = [a['tags'] & priortags for a in result]
         if len(strippedresult[-1]) != len(strippedresult[-2]):
             return result[-1]
+
     if not multipleresults:
         raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[-1]}\n{result[-2]}')
     else:
         return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
-def pickcascades(search, cascades):
-    if cascades is None:
-        return search
-    else:
-        ret = copy.deepcopy(search)
-        for cascade in cascades:
-            if not responsetags.isdisjoint(search & cascade):
-                ret |= cascade
-        if len(ret) == len(search):
-            for cascade in cascades:
-                if 'primarium' in cascade:
-                    ret |= cascade
-        return ret
-
-def process(root, item, cascades, pile):
+def process(root, item, selected, alternates, pile):
 
     if item is None:
         return 'Absens'
-
     if pile is None:
         pile = []
 
     # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
     if 'commemorationes' in item:
         ret = []
-        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, cascades)), key=lambda a:discriminate(root, 'rank', a), reverse=True)
+        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(root, 'rank', a), reverse=True)
         for i in commemorations:
-            probablepile = datamanage.getbreviariumfiles(root, defaultpile | i)
-            ret.append(process(root, {'formula','commemoratio'}, [i], probablepile))
+            probablepile = datamanage.getbreviariumfiles(root, defaultpile | item | i)
+            ret.append(process(root, {'formula','commemoratio'}, i | (item - {'commemorationes'}), alternates, probablepile))
         if len(commemorations) != 0:
             probablepile = datamanage.getbreviariumfiles(root, defaultpile | commemorations[-1])
-            ret.append(process(root, {'collecta','terminatio','commemoratio'}, [commemorations[-1]], probablepile))
+            ret.append(process(root, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
         return ret
 
     # None can sometimes be the result of a search and is expected, but indicates an absent item
     if type(item) is set or type(item) is frozenset:
-        result = search(root, pickcascades(item, cascades), pile, priortags = item)
+        result = search(root, item | selected, pile, priortags = item)
         if result is None:
-            return str(list(pickcascades(item, cascades)))
+            return str(list(item | selected))
         else:
             item = result
 
-    # Next cascade (not to be used for the current search, but only for deeper searches
-    nextcascades = [i | item['cascade'] for i in cascades] if 'cascade' in item and cascades else cascades
+    if 'choose' in item:
+        if any([item['choose'].issubset(i) for i in alternates]):
+            for i in range(0, len(alternates)):
+                if item['choose'].issubset(alternates[i]):
+                    alternates.append(selected)
+                    selected = alternates.pop(i)
+                    break
+    elif 'reference' in item:
+        alternates.append(selected)
+        # Just in case an item needs to change depending on whether it is a reference
+        selected = item['reference'] | {'referens'}
+        pile = datamanage.getbreviariumfiles(root, defaultpile | item['reference'])
 
+    if 'with' in item:
+        selected |= set(item['with'])
     if 'from-tags' in item:
-        response = process(root, search(root, pickcascades(item['from-tags'], cascades), pile, priortags = item['from-tags']), nextcascades, pile)
+        response = process(root, search(root, item['from-tags'] | selected, pile, priortags = item['from-tags']), selected, alternates, pile)
         if 'tags' in item:
-            return {'tags':item['tags'], 'datum':response}
+            return {'tags': item['tags'], 'datum': response}
         else:
             return response
-
-    elif 'forwards-to' in item:
-        # Since items in the Breviary may reference seemingly unrelated feasts, process searches a pile made from relevant files
-        probableforwardpiles = datamanage.getbreviariumfiles(root, defaultpile | item['forwards-to'])
-        return process(root, search(root, item['forwards-to'], probableforwardpiles, priortags = item['forwards-to']), item['cascade'] if 'cascade' in item else None, pile)
 
     elif type(item['datum']) is list:
         ret = []
@@ -181,7 +172,7 @@ def process(root, item, cascades, pile):
             if type(i) is str:
                 ret.append(i)
             else:
-                iprocessed = process(root, i, cascades, pile)
+                iprocessed = process(root, i, selected, alternates, pile)
                 if iprocessed is None:
                     ret.append('Absens')
                 elif type(iprocessed) is list:
@@ -216,12 +207,16 @@ def hour(root: str, hour: str, day, forcedprimary=None):
             if forcedprimary.issubset(i):
                 i.add('primarium')
                 i -= {'commemoratio'}
+    daytags = [frozenset(i) for i in daytags]
     primary = getbytags(daytags, 'primarium')
     if primary is None and forcedprimary:
         raise RuntimeError('Provided tag(s) not found')
     for i in daytags:
-        i.add(hour)
-    primarydatum = process(root, {hour, 'hora'} | primary, daytags, pile)
+        if 'primarium' in i:
+            daytags.remove(i)
+            break
+
+    primarydatum = process(root, {hour, 'hora'}, primary | {hour}, daytags, pile)
     return primarydatum
 
 if __name__ == '__main__':

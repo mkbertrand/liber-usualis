@@ -13,10 +13,7 @@
 			["formula","responsorium-breve"],
 			["prima","versiculus"],
 			["prima","preces"],
-			{
-				"from-tags":["collecta-primaria"],
-				"cascade":["ordinarium"]
-			},
+			["prima","collecta","ordinarium"],
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["prima","dominus-vobiscum"]
@@ -44,7 +41,7 @@
 			"Orémus.",
 			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi: Qui vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			{"from-tags":["formula","lectionis"],"cascade":["prima"]},
+			["formula","lectionis"],
 			["adjutorium-nostrum"],
 			"V. Benedícite.",
 			"R. Deus.",
