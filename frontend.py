@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-from bottle import route, request, run, template, static_file, error, template, hook
+from bottle import route, request, run, static_file, error, hook
 from bottle import post, get
 import requests
 import pathlib

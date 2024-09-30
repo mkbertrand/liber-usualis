@@ -55,7 +55,18 @@
 						translated = tran['datum'];
 					};
 
-					if (typeof data === 'object' && Array.isArray(data)) {
+					if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
+						console.log(data)
+						incipit = data['datum'][0];
+						response = data['datum'][1];
+						verse = data['datum'][4];
+						gloria = data['datum'].length == 9 ? data['datum'][6] : null;
+						console.log(incipit);
+						console.log(response);
+						console.log(verse);
+						console.log(gloria);
+						return render({src: incipit['src'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']}, chant, translated);
+					} else if (typeof data === 'object' && Array.isArray(data)) {
 						let ret = [];
 						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 						for (let i = 0, count = data.length; i < count; i++) {
