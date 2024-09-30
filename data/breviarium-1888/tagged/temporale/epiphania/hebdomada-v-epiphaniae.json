@@ -1,11 +1,8 @@
 [
 	{
 		"tags":["hebdomada-v-epiphaniae","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Famíliam tuam, quǽsumus Dómine, contínua pietáte custódi: ut quæ in sola spe grátiæ cœléstis innítitur, tua semper protectióne muniátur."
-	},
-	{
-		"tags":["hebdomada-v-epiphaniae","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
 		"tags":["hebdomada-v-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],

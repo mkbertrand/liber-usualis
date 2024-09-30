@@ -1,11 +1,8 @@
 [
 	{
 		"tags":["hebdomada-iii-epiphaniae","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Omnípotens sempitérne Deus, infirmitátem nostram propítius réspice: atque ad protegéndum nos, déxteram tuæ majestátis exténde."
-	},
-	{
-		"tags":["hebdomada-iii-epiphaniae","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
 		"tags":["hebdomada-iii-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],

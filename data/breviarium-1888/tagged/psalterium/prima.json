@@ -208,7 +208,7 @@
 	},
 	{
 		"tags":["prima","lectio"],
-		"forwards-to":["nona","capitulum"]
+		"datum":[["nona","capitulum"]]
 	},
 	{
 		"tags":["prima","feria","hymnus"],

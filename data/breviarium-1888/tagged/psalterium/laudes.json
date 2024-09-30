@@ -171,7 +171,7 @@
 	},
 	{
 		"tags":["laudes","canticum"],
-		"forwards-to":["trium-puerorum"]
+		"datum":[["/psalmi/trium-puerorum"]]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-i"],

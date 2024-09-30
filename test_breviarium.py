@@ -5,7 +5,7 @@ import warnings
 
 import breviarium
 
-@pytest.mark.parametrize('dateoffset', random.sample(range(0,365), k=20))
+@pytest.mark.parametrize('dateoffset', random.sample(range(0,365), k=365))
 def test_breaks(dateoffset: int) -> None:
     day = date(2000, 1, 1) + timedelta(days=dateoffset)
     warnings.filterwarnings('ignore')

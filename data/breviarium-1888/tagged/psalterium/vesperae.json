@@ -23,7 +23,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","psalmi","duplex"],
+		"tags":["vesperae","psalmi","duplex","formula"],
 		"datum":[
 			["vesperae","antiphona","antiphona-i"],
 			["vesperae","i-psalmus"],
@@ -48,7 +48,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","psalmi"],
+		"tags":["vesperae","psalmi","formula"],
 		"datum":[
 			["vesperae","antiphona","antiphona-i","intonata"],
 			["vesperae","i-psalmus"],

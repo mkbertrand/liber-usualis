@@ -1,11 +1,8 @@
 [
 	{
 		"tags":["omnes-sancti","vigilia","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Dómine Deus noster, multíplica super nos grátiam tuam: et quorum prævenímus gloriósa solémnia, tríbue súbsequi in sancta professióne lætítiam."
-	},
-	{
-		"tags":["omnes-sancti","vigilia","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-i"],
@@ -76,11 +73,8 @@
 	},
 	{
 		"tags":["omnes-sancti","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus largiáris."
-	},
-	{
-		"tags":["omnes-sancti","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","antiphona","antiphona-invitatorium"],

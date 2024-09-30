@@ -165,7 +165,6 @@ def process(root, item, selected, alternates, pile):
             return {'tags': item['tags'], 'datum': response}
         else:
             return response
-
     elif type(item['datum']) is list:
         ret = []
         for i in item['datum']:
