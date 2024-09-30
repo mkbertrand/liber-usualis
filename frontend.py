@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
 
-import sys
-from bottle import route, request, run, static_file, error, hook
-from bottle import post, get
+from bottle import get, route, request, run, static_file, error
 import requests
-import pathlib
 import json
 from datetime import datetime, date
 
 import copy
-import warnings
 
-from datamanage import getyear, getbreviariumfile, getdiscrimina
 import breviarium
 import datamanage
 
-from frontend import chomp, renderer
+from frontend import chomp
 
 @get('/json/tags')
 def tag():
@@ -107,9 +102,9 @@ def error404(error):
 
 @route('/reset')
 def reset():
-    getyear.cache_clear()
-    getbreviariumfile.cache_clear()
-    getdiscrimina.cache_clear()
+    datamanage.getyear.cache_clear()
+    datamanage.getbreviariumfile.cache_clear()
+    datamanage.getdiscrimina.cache_clear()
     return 'Successfully dumped data caches.'
 
 run(host='localhost', port=8080)
