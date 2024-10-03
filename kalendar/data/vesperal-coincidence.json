@@ -105,6 +105,10 @@
 		]
 	},
 	{
+		"indices":["adrianus","commemoratio"],
+		"response":"omittendum"
+	},
+	{
 		"indices":["i-vesperae","septem-dolores","primarium"],
 		"response":[
 			{"indices":["ii-vesperae","exaltatio-crucis","primarium"],"response":"commemorandum","target":"a"}

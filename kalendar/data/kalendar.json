@@ -113,7 +113,7 @@
 	},
 	{
 		"occurrence":["pridie-nonas-februarii"],
-		"tags":["andrea-corsinus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["andreas-corsinus", "duplex-minus", "episcopus", "confessor"]
 	},
 	{
 		"occurrence":["nonae-februarii"],
@@ -193,7 +193,7 @@
 	},
 	{
 		"occurrence":["ad-vii-idus-martii"],
-		"tags":["francisca-romanae", "duplex-minus", "vidua"]
+		"tags":["francisca-romana", "duplex-minus", "vidua"]
 	},
 	{
 		"occurrence":["ad-vi-idus-martii"],
@@ -289,7 +289,7 @@
 	},
 	{
 		"occurrence":["ad-iii-kalendas-maji"],
-		"tags":["petrus", "duplex-minus", "martyr"]
+		"tags":["petrus-martyr", "duplex-minus", "martyr"]
 	},
 	{
 		"occurrence":["pridie-kalendas-maji"],
@@ -325,7 +325,7 @@
 	},
 	{
 		"occurrence":["nonae-maji"],
-		"tags":["duplex-minus", "episcopus-martyr"]
+		"tags":["stanislaus", "duplex-minus", "episcopus-martyr"]
 	},
 	{
 		"occurrence":["ad-viii-idus-maji"],
@@ -345,7 +345,7 @@
 	},
 	{
 		"occurrence":["ad-iv-idus-maji"],
-		"tags":["nereus-achilleus-domitilla-paneratius", "semiduplex", "virgo", "martyr", "martyres"]
+		"tags":["nereus-achilleus-domitilla-paneratius", "semiduplex", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["pridie-idus-maji"],
@@ -445,11 +445,11 @@
 	},
 	{
 		"occurrence":["pridie-idus-junii"],
-		"tags":["joannis-facundo", "duplex-minus", "confessor"]
+		"tags":["joannes-facundo", "duplex-minus", "confessor"]
 	},
 	{
 		"occurrence":["pridie-idus-junii"],
-		"tags":["basilides", "commemoratio", "martyr", "martyres"]
+		"tags":["basilides-et-soc", "commemoratio", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["idus-junii"],
@@ -481,7 +481,7 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-julii"],
-		"tags":["aloysius", "duplex-minus", "confessor"]
+		"tags":["aloisius-gonzagae", "duplex-minus", "confessor"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-julii"],
@@ -621,7 +621,7 @@
 	},
 	{
 		"occurrence":["ad-v-kalendas-augusti"],
-		"tags":["nazarius-celsus-victor-i-innocentius-i", "semiduplex", "papae", "martyr", "martyres"]
+		"tags":["nazarius-et-soc", "semiduplex", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["ad-iv-kalendas-augusti"],
@@ -629,7 +629,7 @@
 	},
 	{
 		"occurrence":["ad-iv-kalendas-augusti"],
-		"tags":["felix-ii-simplicius-faustinus-beatrix", "commemoratio", "papa", "martyr", "martyres"]
+		"tags":["felix-ii-et-soc", "simplex", "commemoratio", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["ad-iii-kalendas-augusti"],
@@ -649,7 +649,7 @@
 	},
 	{
 		"occurrence":["ad-iv-nonas-augusti"],
-		"tags":["alphonsus-liguori", "duplex-minus", "doctor", "episcopus", "confessor"]
+		"tags":["alphonsus-liguorio", "duplex-minus", "doctor", "episcopus", "confessor"]
 	},
 	{
 		"occurrence":["ad-iii-nonas-augusti"],
@@ -725,7 +725,7 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-septembris"],
-		"tags":["timotheus-etc", "commemoratio", "martyr", "martyres"]
+		"tags":["timotheus-hippolytus-symphorianus", "simplex", "commemoratio", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-septembris"],
@@ -753,7 +753,7 @@
 	},
 	{
 		"occurrence":["ad-v-kalendas-septembris"],
-		"tags":["hermis", "commemoratio", "martyr"]
+		"tags":["hermes", "simplex", "commemoratio", "martyr"]
 	},
 	{
 		"occurrence":["ad-iv-kalendas-septembris"],
@@ -761,7 +761,7 @@
 	},
 	{
 		"occurrence":["ad-iv-kalendas-septembris"],
-		"tags":["sabina", "commemoratio", "martyr"]
+		"tags":["sabina", "simplex", "commemoratio", "martyr"]
 	},
 	{
 		"occurrence":["ad-iii-kalendas-septembris"],
@@ -769,7 +769,7 @@
 	},
 	{
 		"occurrence":["ad-iii-kalendas-septembris"],
-		"tags":["felix-adauctus", "commemoratio", "martyr", "martyres"]
+		"tags":["felix-adauctus", "simplex", "commemoratio", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["pridie-kalendas-septembris"],
@@ -781,7 +781,7 @@
 	},
 	{
 		"occurrence":["kalendae-septembris"],
-		"tags":["duodecim-fratrum", "commemoratio", "martyr", "martyres"]
+		"tags":["duodecim-fratres", "commemoratio", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-septembris"],
@@ -797,7 +797,7 @@
 	},
 	{
 		"occurrence":["ad-vi-idus-septembris"],
-		"tags":["adrianus", "commemoratio", "martyr"]
+		"tags":["adrianus", "simplex", "commemoratio", "martyr"]
 	},
 	{
 		"occurrence":["ad-v-idus-septembris"],
@@ -817,7 +817,7 @@
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-octobris"],
-		"tags":["nicomedes", "commemoratio", "martyr"]
+		"tags":["nicomedes", "simplex", "commemoratio", "martyr"]
 	},
 	{
 		"occurrence":["ad-xvi-kalendas-octobris"],
@@ -837,11 +837,11 @@
 	},
 	{
 		"occurrence":["ad-xiii-kalendas-octobris"],
-		"tags":["januarius-et-soc", "duplex-minus", "episcopus-martyr", "martyr", "martyres"]
+		"tags":["januarius-et-soc", "duplex-minus", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["ad-xii-kalendas-octobris"],
-		"tags":["eustachii-et-soc", "duplex-minus", "martyr", "martyres"]
+		"tags":["eustachius-et-soc", "duplex-minus", "martyr", "martyres"]
 	},
 	{
 		"occurrence":["ad-xi-kalendas-octobris"],
@@ -861,7 +861,7 @@
 	},
 	{
 		"occurrence":["ad-ix-kalendas-octobris"],
-		"tags":["thecla", "commemoratio", "virgo", "martyr"]
+		"tags":["thecla", "simplex", "commemoratio", "virgo", "martyr"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-octobris"],
