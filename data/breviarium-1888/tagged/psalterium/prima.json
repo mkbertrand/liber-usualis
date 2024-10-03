@@ -211,7 +211,11 @@
 		"datum":[["nona","capitulum"]]
 	},
 	{
-		"tags":["prima","feria","hymnus"],
+		"tags":[
+			["prima","feria","hymnus"],
+			["prima","simplex","hymnus"]
+		],
+		"src":"gregobase/11944",
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
 			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
