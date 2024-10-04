@@ -8,17 +8,28 @@ import copy
 
 import breviarium
 import datamanage
+import prioritizer
 
 from frontend import chomp
+
+implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
 
 @get('/')
 def index():
     return static_file('index.html', 'frontend/')
 
+def flattensetlist(sets):
+    ret = set()
+    for i in sets:
+        ret |= i
+    return ret
+
 # Returns raw JSON so that frontend can format it as it will
 @get('/ritual')
 def ritual():
     parameters = copy.deepcopy(request.query)
+    root = 'breviarium-1888'
+
     if not 'date' in parameters:
         parameters['date'] = date.today()
     else:
@@ -44,10 +55,25 @@ def ritual():
     if ' ' in parameters['hour']:
         parameters['hour'] = parameters['hour'].replace(' ', '+')
 
-    defpile = datamanage.getbreviariumfiles('breviarium-1888', breviarium.defaultpile)
-    parameters['hour'] = 'ante-officium+' + parameters['hour'] + '+post-officium'
-    ritual = [breviarium.hour('breviarium-1888', i, parameters['date'],
-        forcedprimary=set(parameters['conditions'].split('+')) if 'conditions' in parameters else None) for i in parameters['hour'].split('+')]
+    defpile = datamanage.getbreviariumfiles(root, breviarium.defaultpile)
+
+    ritual = []
+    ritual.append(breviarium.process(root, {'ante-officium'}, None, None, defpile))
+
+    for hour in parameters['hour'].split('+'):
+        tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
+        for i in tags:
+            for j in implicationtable:
+                if j['tags'].issubset(i):
+                    i |= j['implies']
+        pile = datamanage.getbreviariumfiles(root, breviarium.defaultpile | flattensetlist(tags) | set(parameters['hour'].split('+')))
+        tags = [frozenset(i) for i in tags]
+        primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+        tags.remove(primary)
+        ritual.append(breviarium.process(root, {hour, 'hora'}, primary | {hour}, tags, pile))
+
+    ritual.append(breviarium.process(root, {'post-officium'}, None, None, defpile))
+
 
     translation = {}
     if 'translation' in parameters and parameters['translation'] == 'true':
