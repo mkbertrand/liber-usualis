@@ -205,7 +205,7 @@ def hour(root: str, hour: str, day, forcedprimary=None):
         for i in daytags:
             if forcedprimary.issubset(i):
                 i.add('primarium')
-                i -= {'commemoratio'}
+                i.remove('commemoratio')
     daytags = [frozenset(i) for i in daytags]
     primary = getbytags(daytags, 'primarium')
     if primary is None and forcedprimary:
