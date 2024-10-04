@@ -2,7 +2,6 @@
 
 from bottle import get, route, request, run, static_file, error
 import requests
-import json
 from datetime import datetime, date
 
 import copy
@@ -11,13 +10,6 @@ import breviarium
 import datamanage
 
 from frontend import chomp
-
-@get('/json/tags')
-def tag():
-    parameters = copy.deepcopy(request.query)
-    root = 'breviarium-1888'
-    search = set(parameters['tags'].split('+')) | {'english'} | breviarium.defaultpile
-    return breviarium.dump_data(breviarium.search(root, search, datamanage.getbreviariumfiles(root + '/translations/english', search), rootappendix='/translations/english'))
 
 @get('/')
 def index():
