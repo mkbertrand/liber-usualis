@@ -92,6 +92,10 @@ def resources(file):
 def error404(error):
     return 'Error 404'
 
+@error(500)
+def error500(error):
+    return error
+
 @route('/reset')
 def reset():
     datamanage.getyear.cache_clear()
