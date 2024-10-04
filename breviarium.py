@@ -121,6 +121,10 @@ def process(root, item, selected, alternates, pile):
 
     if item is None:
         return 'Absens'
+    if selected is None:
+        selected = set()
+    if alternates is None:
+        alternates = []
     if pile is None:
         pile = []
 
@@ -182,41 +186,35 @@ def process(root, item, selected, alternates, pile):
 
     return item
 
-def getbytags(daytags, query):
-    for i in daytags:
-        if query in i:
-            return i
-
 def hour(root: str, hour: str, day, forcedprimary=None):
     assert type(day) is not datetime
-    daytags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
-    for i in daytags:
+    tags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
+    for i in tags:
         for j in implicationtable:
             if j['tags'].issubset(i):
                 i |= j['implies']
 
-    pile = datamanage.getbreviariumfiles(root, defaultpile | flattensetlist(daytags) | {hour})
+    pile = datamanage.getbreviariumfiles(root, defaultpile | flattensetlist(tags) | {hour})
 
     if forcedprimary:
-        for i in daytags:
+        for i in tags:
             if 'primarium' in i:
                 i.remove('primarium')
                 i.add('commemoratio')
-        for i in daytags:
+        for i in tags:
             if forcedprimary.issubset(i):
                 i.add('primarium')
                 i.remove('commemoratio')
-    daytags = [frozenset(i) for i in daytags]
-    primary = getbytags(daytags, 'primarium')
+    tags = [frozenset(i) for i in tags]
+    primary = list(filter(lambda i: 'primarium' in i, tags))[0]
     if primary is None and forcedprimary:
         raise RuntimeError('Provided tag(s) not found')
-    for i in daytags:
+    for i in tags:
         if 'primarium' in i:
-            daytags.remove(i)
+            tags.remove(i)
             break
 
-    primarydatum = process(root, {hour, 'hora'}, primary | {hour}, daytags, pile)
-    return primarydatum
+    return process(root, {hour, 'hora'}, primary | {hour}, tags, pile)
 
 if __name__ == '__main__':
     import argparse
