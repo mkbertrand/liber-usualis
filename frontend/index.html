@@ -18,7 +18,11 @@
 			hour: 'vesperae',
 			chant: false,
 			translation: false,
+			ritual: '',
 			get Ritual() {
+				return this.ritual;
+			},
+			async updateRitual() {
 				function stringrender(data) {
 
 					data = data.replace(/\//g, '<br>');
@@ -61,10 +65,6 @@
 						response = data['datum'][1];
 						verse = data['datum'][4];
 						gloria = data['datum'].length == 9 ? data['datum'][6] : null;
-						console.log(incipit);
-						console.log(response);
-						console.log(verse);
-						console.log(gloria);
 						return render({src: incipit['src'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']}, chant, translated);
 					} else if (typeof data === 'object' && Array.isArray(data)) {
 						let ret = [];
@@ -98,11 +98,11 @@
 					return Array.isArray(rendered) ? rendered : [rendered];
 				};
 
-				// For some reason this.chant being referenced in the then() that handles the promise is not sufficient for this getter to update when this.chant is updated
-				this.chant;
-				return fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation).then((response) => response.json()).then((data) => outerrender(data, this.chant))
+				var response = await fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
+				var json = await response.json();
+				this.ritual = outerrender(json, this.chant);
 			}
-		}">
+		}" x-init="updateRitual()">
 			<div id="side-panel-left">
 			</div>
 			<div id="site-wrapper">

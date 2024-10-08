@@ -93,7 +93,8 @@ def ritual():
                     traverse(v)
         traverse(ritual)
 
-    return breviarium.dump_data({'translation' : translation, 'ritual' : ritual})
+    name = ' et '.join([i.capitalize() for i in parameters['hour']])
+    return breviarium.dump_data({'ritual' : ritual, 'translation' : translation, 'name': name})
 
 @route('/styles/<file>')
 def styles(file):
