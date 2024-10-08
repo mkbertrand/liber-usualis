@@ -186,36 +186,6 @@ def process(root, item, selected, alternates, pile):
 
     return item
 
-def hour(root: str, hour: str, day, forcedprimary=None):
-    assert type(day) is not datetime
-    tags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
-    for i in tags:
-        for j in implicationtable:
-            if j['tags'].issubset(i):
-                i |= j['implies']
-
-    pile = datamanage.getbreviariumfiles(root, defaultpile | flattensetlist(tags) | {hour})
-
-    if forcedprimary:
-        for i in tags:
-            if 'primarium' in i:
-                i.remove('primarium')
-                i.add('commemoratio')
-        for i in tags:
-            if forcedprimary.issubset(i):
-                i.add('primarium')
-                i.remove('commemoratio')
-    tags = [frozenset(i) for i in tags]
-    primary = list(filter(lambda i: 'primarium' in i, tags))[0]
-    if primary is None and forcedprimary:
-        raise RuntimeError('Provided tag(s) not found')
-    for i in tags:
-        if 'primarium' in i:
-            tags.remove(i)
-            break
-
-    return process(root, {hour, 'hora'}, primary | {hour}, tags, pile)
-
 if __name__ == '__main__':
     import argparse
 
