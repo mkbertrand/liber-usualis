@@ -245,6 +245,13 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
+        '-r',
+        '--root',
+        type=str,
+        default='breviarium-1888',
+        help='Data Root for Content',
+    )
+    parser.add_argument(
         '-t',
         '--tags',
         type=str,
@@ -292,11 +299,29 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
 
     # Generate kalendar
-    defpile = datamanage.getbreviariumfiles('breviarium-1888', defaultpile)
-    ret = {'tags':{'reditus'},'datum':[process({'ante-officium'}, None, defpile)]}
+    defpile = datamanage.getbreviariumfiles(args.root, defaultpile)
+    day = datetime.strptime(args.date, '%Y-%m-%d').date()
+    argtags = set() if args.tags is None else set(args.tags.split(' '))
+    ret = {'tags':{'reditus'},'datum':[process(args.root, {'ante-officium'}, None, None, defpile)]}
+
     for i in args.hour.split(' '):
-        ret['datum'].append(hour(i, datetime.strptime(args.date, '%Y-%m-%d').date(), forcedprimary=set(args.tags.split(' '))))
-    ret['datum'].append(process({'post-officium'}, None, defpile))
+        tags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
+        for j in tags:
+            for k in implicationtable:
+                if k['tags'].issubset(j):
+                    j |= k['implies']
+        pile = datamanage.getbreviariumfiles(args.root, defaultpile | flattensetlist(tags) | {i} | argtags)
+        primary = None
+        if len(argtags) == 0:
+            primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+            for j in tags:
+                if 'primarium' in j:
+                    tags.remove(j)
+                    break
+        else:
+            primary = argtags
+        ret['datum'].append(process(args.root, {i, 'hora'}, primary, tags, pile))
+    ret['datum'].append(process(args.root, {'post-officium'}, None, None, defpile))
 
     if args.output == sys.stdout:
         prettyprint(ret)
