@@ -19,6 +19,7 @@
 			chant: false,
 			translation: false,
 			ritual: '',
+			initialized: false,
 			get Ritual() {
 				return this.ritual;
 			},
@@ -98,11 +99,13 @@
 					return Array.isArray(rendered) ? rendered : [rendered];
 				};
 
+				this.chant;
 				var response = await fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
 				var json = await response.json();
 				this.ritual = outerrender(json, this.chant);
+				this.initialized = true;
 			}
-		}" x-init="updateRitual()">
+		}" x-effect="updateRitual()">
 			<div id="side-panel-left">
 			</div>
 			<div id="site-wrapper">
@@ -125,7 +128,7 @@
 						<button @click="chant = !chant">Chant toggle</button>
 					</div>
 				</div>
-				<div id="content-wrapper">
+				<div x-show="initialized" id="content-wrapper">
 					<template x-for="element in Ritual">
 						<div>
 							<div class="text-container-latin" x-show="!chant || !('chant' in element)">
