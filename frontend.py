@@ -61,7 +61,7 @@ def ritual():
     ritual.append(breviarium.process(root, {'ante-officium'}, None, None, defpile))
 
     for hour in parameters['hour'].split('+'):
-        tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
+        tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(parameters['date']))
         for i in tags:
             for j in implicationtable:
                 if j['tags'].issubset(i):
@@ -93,7 +93,7 @@ def ritual():
                     traverse(v)
         traverse(ritual)
 
-    name = ' et '.join([i.capitalize() for i in parameters['hour']])
+    name = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
     return breviarium.dump_data({'ritual' : ritual, 'translation' : translation, 'name': name})
 
 @route('/styles/<file>')
