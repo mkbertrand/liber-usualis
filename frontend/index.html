@@ -23,6 +23,10 @@
 			get Ritual() {
 				return this.ritual;
 			},
+			name: '',
+			get Name() {
+				return this.name;
+			},
 			async updateRitual() {
 				function stringrender(data) {
 
@@ -49,8 +53,7 @@
 					return data;
 				};
 
-				function render(data, chant, translated = null, translationpool = null) {
-
+				function render(data, chant, translated = null, translationpool = null, incomm = false) {
 					let tran = null;
 
 					if (translationpool != null && typeof data === 'object' && 'tags' in data) {
@@ -61,7 +64,6 @@
 					};
 
 					if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
-						console.log(data)
 						incipit = data['datum'][0];
 						response = data['datum'][1];
 						verse = data['datum'][4];
@@ -71,7 +73,7 @@
 						let ret = [];
 						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 						for (let i = 0, count = data.length; i < count; i++) {
-							const rendered = render(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool);
+							const rendered = render(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, incomm);
 							if (Array.isArray(rendered)) {
 								// I guess js doesn't actually like for in loops for unclear reasons
 								for (let j = 0; j < rendered.length; j++) {
@@ -83,9 +85,12 @@
 						};
 						return ret;
 					} else if (typeof data === 'object' && chant && 'src' in data) {
+						if (incomm) {
+							data['tags'].push('commemoratio');
+						}
 						return {chant: '/chant/' + data['src'] + '?tags=' + data['tags'].join('+')};
 					} else if (typeof data === 'object') {
-						return render(data['datum'], chant, translated, translationpool);
+						return render(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio')));
 					} else if (typeof data === 'string') {
 					return translated != null && typeof translated === 'string' ? {content: stringrender(data), translation: stringrender(translated)} : {content: stringrender(data)};
 					} else {
@@ -104,6 +109,7 @@
 				var json = await response.json();
 				this.ritual = outerrender(json, this.chant);
 				this.initialized = true;
+				this.name = json['name'];
 			}
 		}" x-effect="updateRitual()">
 			<div id="side-panel-left">
@@ -129,6 +135,7 @@
 					</div>
 				</div>
 				<div x-show="initialized" id="content-wrapper">
+					<h1 x-text="Name"></h1>
 					<template x-for="element in Ritual">
 						<div>
 							<div class="text-container-latin" x-show="!chant || !('chant' in element)">

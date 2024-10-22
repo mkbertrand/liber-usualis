@@ -30,7 +30,7 @@ def chomp(gabc: str, tags) -> str:
         euouae = ''
         if '<eu>' in gabc:
             # Notes which define the termination
-            euouae = re.sub('<.?eu>', '', re.search(r' <eu>.+', gabc).group()).strip()
+            euouae = re.sub(r'<.?eu>', '', re.search(r' <eu>.+', gabc).group()).strip()
             # Gabc without the euouae
             gabc = gabc[:gabc.index('<eu>')]
 
@@ -41,13 +41,18 @@ def chomp(gabc: str, tags) -> str:
             gabc = gabc[:gabc.index('<i>Post Septuag.</i>')]
 
         if 'intonata' in tags:
-            return gabc[:gabc.index('*')] + '(::)' + euouae
+            gabc = gabc[:gabc.index('*')] + '(::)' + euouae
         elif {'commemoratio', 'repetita', 'suffragium'}.isdisjoint(tags):
             gabc = gabc + euouae
         else:
             gabc = gabc.replace('*','')[gabc.index('\n') + 1:]
             firstsyllable = re.search(r'\w+\(', gabc).group()
-            gabc = 'initial-style:0;\n' + gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
+            gabc = gabc[:gabc.index('(')].capitalize() + gabc[gabc.index('('):].replace(firstsyllable, firstsyllable.capitalize())
+
+        if 'repetita' in tags:
+            gabc = 'initial-style:0;\n' + gabc
+        else:
+            gabc = 'initial-style:1;\n' + gabc
         return gabc
 
     elif 'responsorium-breve' in tags:
