@@ -275,7 +275,7 @@ if __name__ == '__main__':
     ret = {'tags':{'reditus'},'datum':[process(args.root, {'ante-officium'}, None, None, defpile)]}
 
     for i in args.hour.split(' '):
-        tags = copy.deepcopy(prioritizer.getvespers(day) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(day))
+        tags = copy.deepcopy(prioritizer.getvespers(day) if i == 'vesperae' or i == 'completorium' else datamanage.getdate(day))
         for j in tags:
             for k in implicationtable:
                 if k['tags'].issubset(j):
