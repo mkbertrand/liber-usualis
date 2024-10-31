@@ -35,23 +35,6 @@ def ritual():
     else:
         parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-    if not 'hour' in parameters:
-        match datetime.now().hour:
-            case 0 | 1 | 2 | 3 | 4 | 5:
-                parameters['hour'] = 'matutinum+laudes'
-            case 6 | 7:
-                parameters['hour'] = 'prima'
-            case 8 | 9 | 10:
-                parameters['hour'] = 'tertia'
-            case 11 | 12 | 13:
-                parameters['hour'] = 'sexta'
-            case 14 | 15:
-                parameters['hour'] = 'nona'
-            case 16 | 17 | 18 | 19:
-                parameters['hour'] = 'vesperae'
-            case 20 | 21 | 22 | 23:
-                parameters['hour'] = 'completorium'
-
     if ' ' in parameters['hour']:
         parameters['hour'] = parameters['hour'].replace(' ', '+')
 

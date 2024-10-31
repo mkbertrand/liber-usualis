@@ -111,7 +111,23 @@
 				this.initialized = true;
 				this.name = json['name'];
 			}
-		}" x-effect="updateRitual()">
+		}" x-init="
+			if (day.getHours() < 6) {
+				hour = 'matutinum+laudes';
+			} else if (day.getHours() < 9) {
+				hour = 'prima'
+			} else if (day.getHours() < 11) {
+				hour = 'tertia'
+			} else if (day.getHours() < 14) {
+				hour = 'sexta'
+			} else if (day.getHours() < 16) {
+				hour = 'nona'
+			} else if (day.getHours() < 20) {
+				hour = 'vesperae'
+			} else {
+				hour = 'completorium'
+			}
+		" x-effect="updateRitual()">
 			<div id="side-panel-left">
 			</div>
 			<div id="site-wrapper">
