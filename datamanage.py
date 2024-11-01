@@ -11,7 +11,7 @@ from kalendar import kalendar
 data_root = pathlib.Path(__file__).parent
 
 def load_data(p: str):
-    data = json.loads(data_root.joinpath(p).read_text(encoding="utf-8"))
+    data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
     # JSON doesn't support sets. Recursively find and replace anything that
     # looks like a list of tags with a set of tags.
@@ -40,7 +40,7 @@ def getdate(day):
     year = getyear(day.year)
     return year[day]
 
-@functools.lru_cache(maxsize=32)
+@functools.lru_cache(maxsize=64)
 def getbreviariumfile(query):
     logging.debug(f'Loading {query}')
     return load_data(query)
@@ -48,6 +48,10 @@ def getbreviariumfile(query):
 @functools.lru_cache(maxsize=1024)
 def getchantfile(url):
     return requests.get(url, stream=True).text
+
+@functools.lru_cache(maxsize=16)
+def getnames(root):
+    return json.loads(data_root.joinpath(f'data/{root}/nomina.json').read_text(encoding='utf-8'))
 
 # No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
 def getbreviariumfiles(root, queries):

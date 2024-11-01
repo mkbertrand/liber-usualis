@@ -15,7 +15,7 @@
 		<div class='lyric-font' style='font-size: 1px; visibility: hidden;' >I<span class='b'>I<span class='i'>I</span></span><span class='i'>I</span><span style="font-family:'Exsurge Characters';">V. R.</span></div>
 		<div id="site-wrapper-outer" x-data="{
 			day: new Date(),
-			hour: 'vesperae',
+			hour: 'completorium',
 			chant: false,
 			translation: false,
 			ritual: '',
@@ -57,6 +57,7 @@
 					let tran = null;
 
 					if (translationpool != null && typeof data === 'object' && 'tags' in data) {
+						console.log(data['tags']);
 						tran = translationpool[data['tags'].join('+')];
 					};
 					if (tran != null) {
