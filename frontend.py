@@ -74,7 +74,6 @@ def ritual():
 
     ritual.append(breviarium.process(root, {'post-officium'}, None, None, defpile))
 
-
     translation = {}
     if 'translation' in parameters and parameters['translation'] == 'true':
         def gettranslation(tags):
@@ -93,6 +92,8 @@ def ritual():
                     traverse(v)
         traverse(ritual)
 
+    tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour']  else datamanage.getdate(parameters['date']))
+    nomina = datamanage.getnames(root)
     name = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
     return breviarium.dump_data({'ritual' : ritual, 'translation' : translation, 'name': name})
 
