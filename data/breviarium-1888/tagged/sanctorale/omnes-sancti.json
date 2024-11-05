@@ -6,6 +6,7 @@
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-i"],
+		"src":"gregobase/2883",
 		"datum":"Vidi turbam magnam, * quam dinumeráre nemo póterat, ex ómnibus géntibus, stantes ante thronum."
 	},
 	{
@@ -14,6 +15,7 @@
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-ii"],
+		"src":"gregobase/2634",
 		"datum":"Et omnes Ángeli * stabant in circúitu throni, et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum."
 	},
 	{
@@ -22,6 +24,7 @@
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iii"],
+		"src":"gregobase/1999",
 		"datum":"Redemísti nos * Dómine Deus in sánguine tuo ex omni tribu, et linqua, et pópulo, et natióne, et fecísti nos Deo nostro regnum."
 	},
 	{
@@ -30,6 +33,7 @@
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iv"],
+		"src":"gregobase/2109",
 		"datum":"Benedícite Dóminum * omnes elécti ejus: ágite lætítiæ, et confitémini illi."
 	},
 	{
@@ -38,6 +42,7 @@
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-v"],
+		"src":"gregobase/2328",
 		"datum":"Hymnus ómnibus Sanctis ejus: * fíliis Israël, pópulo appropinquánti sibi: glória hæc est ómnibus Sanctis ejus."
 	},
 	{
@@ -53,6 +58,7 @@
 			["omnes-sancti","vesperae","hymnus"],
 			["omnes-sancti","matutinum","hymnus"]
 		],
+		"src":"gregobase/2829",
 		"datum":[
 			"Placáre, Christe, sérvulis,/Quibus Patris cleméntiam/Tuæ ad tribúnal grátiæ/Patróna Virgo pósulat.",
 			"Et vos beáta, per novem/Distíncta gyros ágmina,/Antíqua cum præséntibus,/Futúra damna péllite.",
@@ -392,6 +398,7 @@
 	},
 	{
 		"tags":["omnes-sancti","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2216",
 		"datum":"O quam gloriósum * est regnum in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit."
 	}
 ]
