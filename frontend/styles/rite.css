@@ -1,3 +1,24 @@
+#top-right-panel-toggle {
+	position: sticky;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+	font-family: times;
+	white-space: nowrap;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#top-right-panel-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#top-right-panel {
+
+}
+
 #bottom-easy-select-wrapper {
 	position: fixed;
 	bottom: 0;

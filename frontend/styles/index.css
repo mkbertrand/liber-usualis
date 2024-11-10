@@ -32,6 +32,7 @@ body {
 	max-width: 160em;
 	margin-top: 76px;
 	display: flex;
+	justify-content: center;
 }
 
 .lyric-font {
@@ -65,16 +66,8 @@ body {
 	text-decoration: none;
 }
 
-#side-panel-left {
+#side-panel-left, #side-panel-right {
 	width: 40em;
-	flex-basis: 40em;
-	flex-grow: 0;
-}
-
-#side-panel-right {
-	width: 40em;
-	flex-basis: 40em;
-	flex-grow: 0;
 }
 
 #site-wrapper {
@@ -82,25 +75,10 @@ body {
 	max-width: 100em;
 }
 
-#top-right-panel-toggle {
-	position: sticky;
-	top: 0;
-	right: 0;
-	font-size: 20px;
-	font-family: times;
-	white-space: nowrap;
-	margin-top: 10px;
-	margin-right: 10px;
-}
-
-#top-right-panel-wrapper {
-	position: fixed;
-	top: 0;
-	right: 0;
-}
-
-#top-right-panel {
-
+@media only screen and (max-width: 40em) {
+	#side-panel-left, #side-panel-right {
+		display: none;
+	}
 }
 
 #content-wrapper {
