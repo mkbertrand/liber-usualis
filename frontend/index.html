@@ -6,13 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href="/styles/index.css">
+		<link rel="stylesheet" type="text/css" href="/styles/rite.css">
 		<link rel="stylesheet" type="text/css" href="/styles/breviarium.css">
 		<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+		<script src="/js/ritegen.js">
 		<script async data-main="/js/gabc-chant.js" src="/js/require.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 	<body>
 		<div class='lyric-font' style='font-size: 1px; visibility: hidden;' >I<span class='b'>I<span class='i'>I</span></span><span class='i'>I</span><span style="font-family:'Exsurge Characters';">V. R.</span></div>
+		<div id="top-bar-title">
+			<div id="project-logo">
+				<h1 id="website-temp-name">LIBER VSVALIS PROIECT</h1>
+			</div>
+		</div>
 		<div id="site-wrapper-outer" x-data="{
 			day: new Date(),
 			hour: 'completorium',
@@ -28,87 +35,10 @@
 				return this.name;
 			},
 			async updateRitual() {
-				function stringrender(data) {
-
-					data = data.replace(/\//g, '<br>');
-
-					let numbers = data.match(/^[0-9]+\s/gm);
-
-					if (numbers != null) {
-						numbers.reverse();
-						for (const i of numbers) {
-							data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
-						}
-					}
-
-					data = data.replace(/\n/g, '<br>')
-						.replace(/N\./g, '<span class=\'red\'>N.</span>')
-						.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-						.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
-						.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
-						.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
-						.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
-						.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
-						.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
-					return data;
-				};
-
-				function render(data, chant, translated = null, translationpool = null, incomm = false) {
-					let tran = null;
-
-					if (translationpool != null && typeof data === 'object' && 'tags' in data) {
-						console.log(data['tags']);
-						tran = translationpool[data['tags'].join('+')];
-					};
-					if (tran != null) {
-						translated = tran['datum'];
-					};
-
-					if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
-						incipit = data['datum'][0];
-						response = data['datum'][1];
-						verse = data['datum'][4];
-						gloria = data['datum'].length == 9 ? data['datum'][6] : null;
-						return render({src: incipit['src'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']}, chant, translated);
-					} else if (typeof data === 'object' && Array.isArray(data)) {
-						let ret = [];
-						// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
-						for (let i = 0, count = data.length; i < count; i++) {
-							const rendered = render(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, incomm);
-							if (Array.isArray(rendered)) {
-								// I guess js doesn't actually like for in loops for unclear reasons
-								for (let j = 0; j < rendered.length; j++) {
-									ret.push(rendered[j]);
-								}
-							} else {
-								ret.push(rendered);
-							}
-						};
-						return ret;
-					} else if (typeof data === 'object' && chant && 'src' in data) {
-						if (incomm) {
-							data['tags'].push('commemoratio');
-						}
-						return {chant: '/chant/' + data['src'] + '?tags=' + data['tags'].join('+')};
-					} else if (typeof data === 'object') {
-						return render(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio')));
-					} else if (typeof data === 'string') {
-					return translated != null && typeof translated === 'string' ? {content: stringrender(data), translation: stringrender(translated)} : {content: stringrender(data)};
-					} else {
-						return 'error';
-					}
-				};
-
-				// Just guarantees that the return is an array so that the x-for doesn't break
-				function outerrender(data, chant) {
-					const rendered = render(data['ritual'], chant, null, data['translation']);
-					return Array.isArray(rendered) ? rendered : [rendered];
-				};
-
 				this.chant;
 				var response = await fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
 				var json = await response.json();
-				this.ritual = outerrender(json, this.chant);
+				this.ritual = render(json, this.chant);
 				this.initialized = true;
 				this.name = json['name'];
 			}
@@ -129,21 +59,21 @@
 				hour = 'completorium'
 			}
 		" x-effect="updateRitual()">
+			<div id="side-bar-nav" x-data="{
+				pages:[
+					{'path':'/', 'name':'Pray'}
+				]
+				}">
+				<template x-for="page in pages">
+					<div class="nav-element">
+						<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
+					</div>
+				</template>
+
+			</div>
 			<div id="side-panel-left">
 			</div>
 			<div id="site-wrapper">
-				<div id="project-logo">
-					<h1 id="website-temp-name">LIBER VSVALIS PROIECT</h1>
-				</div>
-				<div id="top-fixed-wrapper">
-					<div id="liturgy-selector-wrapper" x-data="{liturgylist: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]}">
-						<template x-for="liturgy in liturgylist">
-							<div class="liturgy-selector-item-container">
-								<button class="liturgy-selector-button" @click="hour = liturgy['id']" x-text="liturgy['name']"></button>
-							</div>
-						</template>
-					</div>
-				</div>
 				<div id="top-right-panel-wrapper" x-data="{opened: false}">
 					<button id="top-right-panel-toggle" @click="opened = !opened">More Options</button>
 					<div x-cloak id="top-right-panel" x-show="opened" x-transition>
@@ -167,18 +97,29 @@
 						</div>
 					</template>
 				</div>
-				<div id="date-selector-wrapper" x-data="{search: ''}">
-					<div class="date-selector-item-container">
-						<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = day.toISOString().substring(0,10)">&#8592;</button>
+				<div id="bottom-easy-select-wrapper">
+					<div id="date-selector-wrapper" x-data="{search: ''}">
+						<div class="date-selector-item-container">
+							<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = day.toISOString().substring(0,10)">&#8592;</button>
+						</div>
+						<div class="date-selector-item-container">
+							<input id="date-selector-text" type="date" x-model="search" x-init="search = day.toISOString().substring(0,10)" @keyup.enter.window="day = new Date(search + new Date().toISOString().substring(10))">
+						</div>
+						<div class="date-selector-item-container">
+							<button id="date-selector-text-submit" class="date-selector-button" @click="day = new Date(search + new Date().toISOString().substring(10))">&#8629;</button>
+						</div>
+						<div class="date-selector-item-container">
+							<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = day.toISOString().substring(0,10)">&#8594;</button>
+						</div>
 					</div>
-					<div class="date-selector-item-container">
-						<input id="date-selector-text" type="date" x-model="search" x-init="search = day.toISOString().substring(0,10)" @keyup.enter.window="day = new Date(search + new Date().toISOString().substring(10))">
-					</div>
-					<div class="date-selector-item-container">
-						<button id="date-selector-text-submit" class="date-selector-button" @click="day = new Date(search + new Date().toISOString().substring(10))">&#8629;</button>
-					</div>
-					<div class="date-selector-item-container">
-						<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = day.toISOString().substring(0,10)">&#8594;</button>
+					<div id="rite-selector-wrapper" x-data="{
+						 rites: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]
+						 }">
+						<template x-for="rite in rites">
+							<div class="rite-selector-item-wrapper">
+								<button class="rite-selector-button" @click="hour = rite.id" x-text="rite.name"></button>
+							</div>
+						</template>
 					</div>
 				</div>
 			</div>

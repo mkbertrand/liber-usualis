@@ -1,0 +1,48 @@
+#bottom-easy-select-wrapper {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding-bottom: 10px;
+}
+
+#date-selector-wrapper {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+#date-selector-text {
+	height: 35px;
+	font-size: 20px;
+	border: 1px solid #eee;
+}
+
+#date-selector-text, .date-selector-button, .rite-selector-button {
+	border-radius: 5px;
+	font-family: times;
+	cursor: pointer;
+}
+
+.date-selector-button {
+	height: 35px;
+	font-size: 24px;
+	padding-top: 10px;
+	border: none;
+}
+
+#rite-selector-wrapper {
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	min-height: 35px;
+}
+
+.rite-selector-button {
+	font-size: 18px;
+	height: 100%;
+	border: none;
+}
