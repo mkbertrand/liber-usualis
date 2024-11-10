@@ -67,7 +67,8 @@ body {
 }
 
 #side-panel-left, #side-panel-right {
-	width: 40em;
+	width: 20em;
+	flex-shrink: 0;
 }
 
 #site-wrapper {
@@ -75,7 +76,7 @@ body {
 	max-width: 100em;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 70em) {
 	#side-panel-left, #side-panel-right {
 		display: none;
 	}
