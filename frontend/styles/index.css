@@ -30,7 +30,7 @@ body {
 #site-wrapper-outer {
 	position: relative;
 	max-width: 160em;
-	margin-top: 76px;
+	margin: 76px auto 0 auto;
 	display: flex;
 	justify-content: center;
 }
