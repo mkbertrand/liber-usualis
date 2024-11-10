@@ -25,6 +25,10 @@
 	left: 50%;
 	transform: translate(-50%, 0);
 	padding-bottom: 10px;
+	background-color: rgba(249, 249, 249, .8);
+	max-width: 100%;
+	border: 1px solid #eee;
+	border-radius: 5px;
 }
 
 #date-selector-wrapper {
@@ -60,6 +64,7 @@
 	justify-content: center;
 	gap: 10px;
 	min-height: 35px;
+	flex-wrap: wrap;
 }
 
 .rite-selector-button {
