@@ -39,27 +39,30 @@
 }
 
 #top-right-panel-toggle {
-	position: sticky;
-	top: 0;
-	right: 0;
+	float: right;
+	margin-bottom: 10px;
 	font-size: 20px;
 	font-family: times;
 	white-space: nowrap;
-	margin-top: 10px;
-	margin-right: 10px;
 }
 
-#top-right-panel-wrapper {
+#top-right-panel-container {
 	position: fixed;
-	top: 0;
+	top: 76px;
 	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
 #top-right-panel {
-
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
 }
 
-#bottom-easy-select-wrapper {
+#bottom-easy-select-container {
 	position: fixed;
 	bottom: 0;
 	left: 50%;
@@ -71,39 +74,39 @@
 	border-radius: 5px;
 }
 
-#date-selector-wrapper {
+#date-selector-container {
 	margin: 0;
 	display: flex;
 	justify-content: center;
-	gap: 10px;
+	gap: 7px;
 }
 
 #date-selector-text {
 	height: 35px;
 	font-size: 20px;
-	border: 1px solid #eee;
+	border: 1px solid #eee !important;
 }
 
-#date-selector-text, .date-selector-button, .rite-selector-button {
+#date-selector-text, button {
 	border-radius: 5px;
 	color: black;
 	font-family: times;
 	cursor: pointer;
+	border: none;
 }
 
 .date-selector-button {
 	height: 35px;
 	font-size: 24px;
 	padding-top: 10px;
-	border: none;
 }
 
-#rite-selector-wrapper {
+#rite-selector-container {
 	width: 100%;
 	margin-top: 10px;
 	display: flex;
 	justify-content: center;
-	gap: 10px;
+	gap: 7px;
 	min-height: 35px;
 	flex-wrap: wrap;
 }
@@ -111,7 +114,6 @@
 .rite-selector-button {
 	font-size: 18px;
 	height: 100%;
-	border: none;
 }
 
 .rite-selector-button-selected {
