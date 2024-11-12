@@ -10,7 +10,7 @@ import breviarium
 import datamanage
 import prioritizer
 
-from frontend import chomp
+import chomp
 
 implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
 
