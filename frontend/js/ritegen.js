@@ -70,7 +70,7 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 
 // Just guarantees that the return is an array so that the x-for doesn't break
 function render(data, chant) {
-	const rendered = renderinner(data['ritual'], chant, null, data['translation']);
+	const rendered = renderinner(data['rite'], chant, null, data['translation']);
 	return Array.isArray(rendered) ? rendered : [rendered];
 };
 

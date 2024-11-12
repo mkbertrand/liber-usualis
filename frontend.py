@@ -25,8 +25,8 @@ def flattensetlist(sets):
     return ret
 
 # Returns raw JSON so that frontend can format it as it will
-@get('/ritual')
-def ritual():
+@get('/rite')
+def rite():
     parameters = copy.deepcopy(request.query)
     root = 'breviarium-1888'
 
@@ -40,8 +40,8 @@ def ritual():
 
     defpile = datamanage.getbreviariumfiles(root, breviarium.defaultpile)
 
-    ritual = []
-    ritual.append(breviarium.process(root, {'ante-officium'}, None, None, defpile))
+    rite = []
+    rite.append(breviarium.process(root, {'ante-officium'}, None, None, defpile))
 
     for hour in parameters['hour'].split('+'):
         tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(parameters['date']))
@@ -53,9 +53,9 @@ def ritual():
         tags = [frozenset(i) for i in tags]
         primary = list(filter(lambda i: 'primarium' in i, tags))[0]
         tags.remove(primary)
-        ritual.append(breviarium.process(root, {hour, 'hora'}, primary | {hour}, tags, pile))
+        rite.append(breviarium.process(root, {hour, 'hora'}, primary | {hour}, tags, pile))
 
-    ritual.append(breviarium.process(root, {'post-officium'}, None, None, defpile))
+    rite.append(breviarium.process(root, {'post-officium'}, None, None, defpile))
 
     translation = {}
     if 'translation' in parameters and parameters['translation'] == 'true':
@@ -73,12 +73,12 @@ def ritual():
             elif type(obj) is list:
                 for v in obj:
                     traverse(v)
-        traverse(ritual)
+        traverse(rite)
 
     tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour']  else datamanage.getdate(parameters['date']))
     nomina = datamanage.getnames(root)
     name = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
-    return breviarium.dump_data({'ritual' : ritual, 'translation' : translation, 'name': name})
+    return breviarium.dump_data({'rite' : rite, 'translation' : translation, 'name': name})
 
 @route('/styles/<file>')
 def styles(file):

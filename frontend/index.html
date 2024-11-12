@@ -35,7 +35,7 @@
 			},
 			async updateRite() {
 				this.chant;
-				var response = await fetch('/ritual?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
+				var response = await fetch('/rite?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
 				var json = await response.json();
 				this.rite = render(json, this.chant);
 				this.initialized = true;
