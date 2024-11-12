@@ -54,7 +54,7 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 			}
 		};
 		return ret;
-	} else if (typeof data === 'object' && chant && 'src' in data) {
+	} else if (typeof data === 'object' && chant && 'src' in data && data['src'] != undefined) {
 		if (incomm) {
 			data['tags'].push('commemoratio');
 		}
