@@ -1,3 +1,21 @@
+#rite-page-container {
+	position: relative;
+	max-width: 100em;
+}
+
+@media only screen and (max-width: 70em) {
+	#side-panel-left, #side-panel-right {
+		display: none;
+	}
+}
+
+#rite-container {
+	font-family: times;
+	padding: 10px 30px 30px 40px;
+	height: 100%;
+	background-color: #f9f9f9;
+}
+
 .text-container-latin {
 	margin: 0;
 	padding: 0;

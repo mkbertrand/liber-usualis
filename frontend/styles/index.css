@@ -27,7 +27,7 @@ body {
 	line-height: 0;
 }
 
-#site-wrapper-outer {
+#content-container-outer {
 	position: relative;
 	max-width: 160em;
 	margin: 76px auto 0 auto;
@@ -39,26 +39,38 @@ body {
 	height: 0;
 }
 
-#side-bar-nav {
+#sidebar-nav-toggle-wrapper {
 	position: fixed;
+	height: 35px;
+	margin-top: 18px;
+	margin-left: 18px;
+	background-color: transparent;
+}
+
+#sidebar-nav-toggle {
+	height: 100%;
+}
+
+#sidebar-nav {
+	position: fixed;
+	left: 0;
 	height: 100%;
 	background-color: #f9f9f9;
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
-	padding-left: 25px;
 	border-right: 1px solid #eee;
+	z-index: 3;
 }
 
 .nav-element {
-	padding-top: 10px;
 	width: 100px;
 	height: 30px;
 }
 
 .nav-element-link {
-	width: 100%;
-	height: 100%;
+	padding-top: 10px;
+	padding-left: 25px;
 	display: block;
 	font-family: times;
 	font-size: 24px;
@@ -66,27 +78,13 @@ body {
 	text-decoration: none;
 }
 
+.nav-element-link:hover {
+	background-color: #fee;
+}
+
 #side-panel-left, #side-panel-right {
 	width: 20em;
 	flex-shrink: 0;
-}
-
-#site-wrapper {
-	position: relative;
-	max-width: 100em;
-}
-
-@media only screen and (max-width: 70em) {
-	#side-panel-left, #side-panel-right {
-		display: none;
-	}
-}
-
-#content-wrapper {
-	font-family: times;
-	padding: 10px 30px 30px 40px;
-	height: 100%;
-	background-color: #f9f9f9;
 }
 
 .red {
