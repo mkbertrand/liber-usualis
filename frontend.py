@@ -76,9 +76,41 @@ def rite():
         traverse(rite)
 
     tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour']  else datamanage.getdate(parameters['date']))
+    primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+    if 'pascha' in primary:
+        primary -= {'dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum'}
     nomina = datamanage.getnames(root)
+<<<<<<< Updated upstream
     name = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
     return breviarium.dump_data({'rite' : rite, 'translation' : translation, 'name': name})
+=======
+    nominaii = datamanage.getnamesii(root)
+    for i in implicationtable:
+        if i['tags'].issubset(primary):
+            primary |= i['implies']
+
+    daynameopt = ''
+    daynametag = nomina.keys() & primary
+    if len(daynametag) != 0:
+        daynameopt = nomina[daynametag.pop()]
+    else:
+        daynameopt = ['', '']
+
+    if not type(daynameopt) is list:
+        daynameopt = [daynameopt, daynameopt]
+
+    namesiidisj = nominaii.keys() & primary
+
+    if len(namesiidisj) == 0:
+        name = daynameopt[0]
+    else:
+        name = nominaii[sorted(namesiidisj, key=len)[-1]]+ ' ' + daynameopt[1]
+
+    print(name)
+
+    hourname = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
+    return breviarium.dump_data({'rite' : rite, 'translation' : translation, 'name': hourname})
+>>>>>>> Stashed changes
 
 @route('/styles/<file>')
 def styles(file):

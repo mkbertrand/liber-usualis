@@ -38,5 +38,21 @@
 	{
 		"tags":["abbas"],
 		"implies":["confessor"]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii"],
+		"implies":["hebdomada-sancta-prior"]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iii"],
+		"implies":["hebdomada-sancta-prior"]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iv"],
+		"implies":["hebdomada-sancta-prior"]
+	},
+	{
+		"tags":["dominica","pascha"],
+		"implies":["dominica-resurrectionis"]
 	}
 ]

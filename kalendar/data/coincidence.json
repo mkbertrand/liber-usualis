@@ -110,6 +110,8 @@
 	{
 		"indices":["cinerum","feria-iv"],
 		"response":[
+			{"indices":["dies-octava"],"response":"omittendum","target":"b"},
+			{"indices":["infra-octavam"],"response":"omittendum","target":"b"},
 			{"indices":["duplex-i-classis"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-ii-classis"],"response":"translandum","target":"b","movement":1},
 			{"indices":["duplex-majus"],"response":"translandum","target":"b","movement":1},
@@ -174,7 +176,7 @@
 		]
 	},
 	{
-		"indices":["cinerum"],
+		"indices":["post-cineres"],
 		"response":[
 			{"indices":["dies-octava"],"response":"omittendum","target":"b"},
 			{"indices":["infra-octavam"],"response":"omittendum","target":"b"}
