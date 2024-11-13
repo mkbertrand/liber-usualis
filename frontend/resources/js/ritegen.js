@@ -34,8 +34,9 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 	};
 
 	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('nomen-ritus')) {
-		console.log(data['datum']);
-		nom = typeof data['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum'] : data['datum'][1];
+		nom = data['datum'][1];
+		if (typeof data['datum'][1] === 'object')
+			nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
 		return {'content': '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>'};
 	}
 	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
