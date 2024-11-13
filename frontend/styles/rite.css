@@ -141,3 +141,9 @@
 .rite-selector-button-selected {
 	font-weight: bold;
 }
+
+@media print {
+	#top-right-panel-container, #side-panel-left, #side-panel-right, #bottom-easy-select-container {
+		display: none;
+	}
+}
