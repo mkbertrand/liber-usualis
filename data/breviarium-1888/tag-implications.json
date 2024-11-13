@@ -38,5 +38,9 @@
 	{
 		"tags":["abbas"],
 		"implies":["confessor"]
+	},
+	{
+		"tags":["episcopus-martyr"],
+		"implies":["martyr"]
 	}
 ]
