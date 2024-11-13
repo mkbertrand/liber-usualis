@@ -12,7 +12,9 @@ import prioritizer
 
 import chomp
 
-implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
+root = 'breviarium-1888'
+
+implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
 @get('/')
 def indexserve():
@@ -32,7 +34,6 @@ def flattensetlist(sets):
 @get('/rite')
 def rite():
     parameters = copy.deepcopy(request.query)
-    root = 'breviarium-1888'
 
     if not 'date' in parameters:
         parameters['date'] = date.today()
@@ -58,6 +59,7 @@ def rite():
         primary = list(filter(lambda i: 'primarium' in i, tags))[0]
         tags.remove(primary)
         rite.append(breviarium.process(root, {hour, 'hora'}, primary | {hour}, tags, pile))
+        print(breviarium.process(root, {'nomen'}, primary | {hour}, tags, pile))
 
     rite.append(breviarium.process(root, {'post-officium'}, None, None, defpile))
 
@@ -65,7 +67,7 @@ def rite():
     if 'translation' in parameters and parameters['translation'] == 'true':
         def gettranslation(tags):
             search = set(tags) | {parameters['translation']} | breviarium.defaultpile
-            return breviarium.search('breviarium-1888', search, datamanage.getbreviariumfiles('breviarium-1888/translations/english', search), rootappendix='/translations/english')
+            return breviarium.search(root, search, datamanage.getbreviariumfiles(f'{root}/translations/english', search), rootappendix='/translations/english')
 
         def traverse(obj):
             if type(obj) is dict and 'tags' in obj:
@@ -79,10 +81,7 @@ def rite():
                     traverse(v)
         traverse(rite)
 
-    tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour']  else datamanage.getdate(parameters['date']))
-    nomina = datamanage.getnames(root)
-    name = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
-    return breviarium.dump_data({'rite' : rite, 'translation' : translation, 'name': name})
+    return breviarium.dump_data({'rite' : rite, 'translation' : translation})
 
 @get('/chant/<url:path>')
 def chant(url):
@@ -90,6 +89,10 @@ def chant(url):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('/') + 1:]}&format=gabc&elem=1'
     response = datamanage.getchantfile(url)
     return chomp.chomp(datamanage.getchantfile(url), request.query['tags'].replace(' ', '+').split('+') if 'tags' in request.query else set())
+
+@get('/nomina')
+def nomina():
+    return datamanage.getnames(root)
 
 @route('/resources/<file:path>')
 def resources(file):

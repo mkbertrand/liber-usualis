@@ -49,10 +49,6 @@ def getbreviariumfile(query):
 def getchantfile(url):
     return requests.get(url, stream=True).text
 
-@functools.lru_cache(maxsize=16)
-def getnames(root):
-    return json.loads(data_root.joinpath(f'data/{root}/nomina.json').read_text(encoding='utf-8'))
-
 # No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
 def getbreviariumfiles(root, queries):
     ret = []

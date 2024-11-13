@@ -43,33 +43,28 @@
 				get Rite() {
 					return this.rite;
 				},
-				name: '',
-				get Name() {
-					return this.name;
-				},
 				async updateRite() {
 					this.chant;
 					var response = await fetch('/rite?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
 					var json = await response.json();
 					this.rite = render(json, this.chant);
 					this.initialized = true;
-					this.name = json['name'];
-				}
+				},
 			}" x-init="
 				if (day.getHours() < 6) {
 					hour = 'matutinum+laudes';
 				} else if (day.getHours() < 9) {
-					hour = 'prima'
+					hour = 'prima';
 				} else if (day.getHours() < 11) {
-					hour = 'tertia'
+					hour = 'tertia';
 				} else if (day.getHours() < 14) {
-					hour = 'sexta'
+					hour = 'sexta';
 				} else if (day.getHours() < 16) {
-					hour = 'nona'
+					hour = 'nona';
 				} else if (day.getHours() < 20) {
-					hour = 'vesperae'
+					hour = 'vesperae';
 				} else {
-					hour = 'completorium'
+					hour = 'completorium';
 				}
 			" x-effect="updateRite()">
 				<div id="top-right-panel-container" x-data="{opened: false}">
@@ -83,7 +78,6 @@
 				</div>
 				<div id="rite-page-container">
 					<div x-show="initialized" id="rite-container">
-						<h1 x-text="Name"></h1>
 						<template x-for="element in Rite">
 							<div class="content-container">
 								<div class="text-container-latin" x-show="!chant || !('chant' in element)">
