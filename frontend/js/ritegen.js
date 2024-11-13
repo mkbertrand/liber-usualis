@@ -38,8 +38,9 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		response = data['datum'][1];
 		verse = data['datum'][4];
 		gloria = data['datum'].length == 9 ? data['datum'][6] : null;
-		return renderinner({src: incipit['src'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']}, chant, translated);
-	} else if (typeof data === 'object' && Array.isArray(data)) {
+		data = {src: incipit['src'], tags: data['tags'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']};
+	}
+	if (typeof data === 'object' && Array.isArray(data)) {
 		let ret = [];
 		// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 		for (let i = 0, count = data.length; i < count; i++) {
