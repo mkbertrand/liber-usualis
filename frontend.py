@@ -84,20 +84,12 @@ def rite():
     name = ' et '.join([i.capitalize() for i in parameters['hour'].split('+')])
     return breviarium.dump_data({'rite' : rite, 'translation' : translation, 'name': name})
 
-@route('/styles/<file>')
-def styles(file):
-    return static_file(file, root='frontend/styles/')
-
 @get('/chant/<url:path>')
 def chant(url):
     if 'gregobase' in url and not url.endswith('&format=gabc'):
         url = f'https://gregobase.selapa.net/download.php?id={url[url.index('/') + 1:]}&format=gabc&elem=1'
     response = datamanage.getchantfile(url)
     return chomp.chomp(datamanage.getchantfile(url), request.query['tags'].replace(' ', '+').split('+') if 'tags' in request.query else set())
-
-@route('/js/<file:path>')
-def javascript(file):
-    return static_file(file, root='frontend/js/')
 
 @route('/resources/<file:path>')
 def resources(file):

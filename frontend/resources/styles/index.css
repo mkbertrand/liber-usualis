@@ -106,15 +106,11 @@
 #date-selector-text {
 	height: 35px;
 	font-size: 20px;
-	border: 1px solid #eee !important;
-}
-
-#date-selector-text, button {
+	border: 1px solid #eee;
 	border-radius: 5px;
-	color: black;
-	font-family: times;
 	cursor: pointer;
-	border: none;
+	font-family: times;
+	color: black;
 }
 
 .date-selector-button {

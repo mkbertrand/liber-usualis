@@ -143,3 +143,11 @@ tspan[style="font-family:'Exsurge Characters';fill:#f00;"] {
 }
 
 [x-cloak] { display: none !important; }
+
+button {
+	border-radius: 5px;
+	color: black;
+	font-family: times;
+	cursor: pointer;
+	border: none;
+}
