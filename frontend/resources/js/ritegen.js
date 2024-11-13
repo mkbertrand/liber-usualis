@@ -33,6 +33,11 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		translated = tran['datum'];
 	};
 
+	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('nomen-ritus')) {
+		console.log(data['datum']);
+		nom = typeof data['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum'] : data['datum'][1];
+		return {'content': '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>'};
+	}
 	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
 		incipit = data['datum'][0];
 		response = data['datum'][1];

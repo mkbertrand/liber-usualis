@@ -58,8 +58,8 @@ def rite():
         tags = [frozenset(i) for i in tags]
         primary = list(filter(lambda i: 'primarium' in i, tags))[0]
         tags.remove(primary)
+        rite.append(breviarium.process(root, {'nomen-ritus'}, primary | {hour}, tags, pile))
         rite.append(breviarium.process(root, {hour, 'hora'}, primary | {hour}, tags, pile))
-        print(breviarium.process(root, {'nomen'}, primary | {hour}, tags, pile))
 
     rite.append(breviarium.process(root, {'post-officium'}, None, None, defpile))
 
