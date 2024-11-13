@@ -15,8 +15,12 @@ import chomp
 implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
 
 @get('/')
-def index():
-    return static_file('index.html', 'frontend/')
+def indexserve():
+    return pageserve('index')
+
+@get('/<page>')
+def pageserve(page):
+    return static_file(f'{page}.html', 'frontend/pages/')
 
 def flattensetlist(sets):
     ret = set()

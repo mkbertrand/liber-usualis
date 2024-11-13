@@ -7,9 +7,10 @@
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href="/styles/index.css">
 		<link rel="stylesheet" type="text/css" href="/styles/rite.css">
-		<script src="/js/ritegen.js">
-		<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
-		<script data-main="/js/gabc-chant.js" src="/js/require.js"></script>
+		<script src="/js/ritegen.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="/js/exsurge.js"></script>
+		<script src="/js/gabc-chant.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 	<body>
@@ -21,6 +22,18 @@
 					<h1 id="website-temp-name">LIBER VSVALIS</h1>
 				</div>
 			</div>
+			<nav id="sidebar-nav" x-show="sidebarnavopen" x-data="{
+				pages:[
+					{'path':'/', 'name':'Pray'}
+				]
+				}">
+				<template x-for="page in pages">
+					<div class="nav-element">
+						<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
+					</div>
+				</template>
+
+			</nav>
 			<div id="content-container-outer" x-data="{
 				day: new Date(),
 				hour: '',
@@ -60,18 +73,6 @@
 					hour = 'completorium'
 				}
 			" x-effect="updateRite()">
-				<nav id="sidebar-nav" x-show="sidebarnavopen" x-data="{
-					pages:[
-						{'path':'/', 'name':'Pray'}
-					]
-					}">
-					<template x-for="page in pages">
-						<div class="nav-element">
-							<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
-						</div>
-					</template>
-
-				</nav>
 				<div id="top-right-panel-container" x-data="{opened: false}">
 					<button id="top-right-panel-toggle" @click="opened = !opened">More Options</button>
 					<div x-cloak id="top-right-panel" x-show="opened" x-transition>
@@ -85,13 +86,13 @@
 					<div x-show="initialized" id="rite-container">
 						<h1 x-text="Name"></h1>
 						<template x-for="element in Rite">
-							<div>
+							<div class="content-container">
 								<div class="text-container-latin" x-show="!chant || !('chant' in element)">
 									<p class="text-content-latin" x-html="element['content']"></p>
 								</div>
-								<template x-if="chant && 'chant' in element">
-									<div class="chant-wrapper" x-html="'<gabc-chant src=' + element['chant'] + '></gabc-chant>'"></div>
-								</template>
+									<template x-if="chant && 'chant' in element">
+										<div class="chant-wrapper" x-html="'<gabc-chant src=' + element['chant'] + '></gabc-chant>'"></div>
+									</template>
 								<div class="text-container-translation" x-show="translation">
 									<p class="text-content-translation" x-html="element['translation']"></p>
 								</div>

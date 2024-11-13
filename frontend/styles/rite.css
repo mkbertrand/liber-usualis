@@ -38,6 +38,10 @@
 	padding-left:10px;
 }
 
+.chant-wrapper {
+	width: 0;
+}
+
 .chant-content-translation {
 	font-size: 18px;
 	line-height: 1;

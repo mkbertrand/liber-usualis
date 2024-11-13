@@ -53,6 +53,7 @@ body {
 
 #sidebar-nav {
 	position: fixed;
+	top: 76px;
 	left: 0;
 	height: 100%;
 	background-color: #f9f9f9;
