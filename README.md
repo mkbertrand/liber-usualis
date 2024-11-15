@@ -46,4 +46,4 @@ Benjamin Bloomfield (whose Javascript code I 'borrowed' and whose Compline proje
 
 ## License
 
-All files within this project are released under the GNU Affero General Public License (AGPL-3.0 or later) regardless of whether this is indicated within the file.
+All files within this project are released under the GNU Affero General Public License (AGPL-3.0 or later) regardless of whether this is indicated within the file. All files only have the name Miles K. Bertrand explicitly listed (with exception to frontend/resources/js/gabc-chant.js . This does not imply that Miles K. Bertrand is the exclusive contributor to these files.
