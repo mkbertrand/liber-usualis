@@ -30,7 +30,11 @@
 		]
 	},
 	{
-		"tags":["tertia","semiduplex","hymnus"],
+		"tags":[
+			["tertia","duplex","hymnus"],
+			["tertia","semiduplex","hymnus"]
+		],
+		"src":"gregobase/12527",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
 			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",

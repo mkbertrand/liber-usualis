@@ -55,7 +55,11 @@
 		]
 	},
 	{
-		"tags":["prima","semiduplex","hymnus"],
+		"tags":[
+			["prima","duplex","hymnus"],
+			["prima","semiduplex","hymnus"]
+		],
+		"src":"gregobase/12589",
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
 			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
