@@ -2,5 +2,15 @@
 	{
 		"tags":["hebdomada-vi-epiphaniae","basis-nominis"],
 		"datum":"VI post Epiphaniam"
+	},
+	{
+		"tags":["hebdomada-vi-epiphaniae","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Præsta, quǽsumus omnípotens Deus: + ut semper rationabília meditántes, * quæ tibi sunt plácita, et dictis exsequámur, et factis."
+	},
+	{
+		"tags":["hebdomada-vi-epiphaniae","dominica","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2149",
+		"datum":"Símile est * regnum cœlórum ferménto, quod accéptum múlier abscóndit in farínæ satis tribus, donec fermentátum est totum."
 	}
 ]
