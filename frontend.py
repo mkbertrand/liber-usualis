@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from bottle import get, route, request, run, static_file, error
+from bottle import get, route, request, run, static_file, error, template
 import requests
 from datetime import datetime, date
 
@@ -18,11 +18,22 @@ implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
 @get('/')
 def indexserve():
-    return pageserve('index')
+    return pageserve('index', 'Rite Generator')
 
-@get('/<page>')
-def pageserve(page):
-    return static_file(f'{page}.html', 'frontend/pages/')
+@get('/about/')
+def aboutserve():
+    return pageserve('about', 'About')
+
+@get('/credit/')
+def aboutserve():
+    return pageserve('credit', 'Credit')
+
+@get('/help/')
+def aboutserve():
+    return pageserve('help', 'Help the Liber Usualis Project')
+
+def pageserve(page, title):
+    return template('frontend/resources/page.tpl', page=page, title=title)
 
 def flattensetlist(sets):
     ret = set()

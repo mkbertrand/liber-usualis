@@ -3,6 +3,12 @@
 	max-width: 100em;
 }
 
+#side-panel-left, #side-panel-right {
+	width: 20em;
+	flex-shrink: 0;
+	background-color: #f9f9ee;
+}
+
 @media only screen and (max-width: 70em) {
 	#side-panel-left, #side-panel-right {
 		display: none;
@@ -23,11 +29,6 @@
 .text-container-latin {
 	margin: 0;
 	padding: 0;
-}
-
-.text-content-latin {
-	font-size: 24px;
-	line-height: 1.25;
 }
 
 .text-container-translation {
