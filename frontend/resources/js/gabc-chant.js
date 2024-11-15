@@ -1,3 +1,6 @@
+// Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+// Additional credit to Benjamin Bloomfield as this file is a modification of his original
+
 $(document).ready(function() {
 	const resizeObserver = new ResizeObserver(() =>{
 		$('gabc-chant').each((index, elem) =>

@@ -1,3 +1,5 @@
+# Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 # Why is this module called chomp? Idk, it's just a random word that's vaguely related to processing things (in the case of chomp, it's food but that's beside the point)
 
 import re

@@ -1,3 +1,5 @@
+# Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 from datetime import datetime, date, timedelta
 
 menses = ['januarius','februarius','martius','aprilis','majus','junius','julius','augustus','september','october','november','december']

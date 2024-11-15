@@ -1,3 +1,5 @@
+// Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 function stringrender(data) {
 	data = data.replace(/\//g, '<br>');
 

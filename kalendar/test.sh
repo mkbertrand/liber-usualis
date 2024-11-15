@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 set -eu -o pipefail
 
 year_start=1900

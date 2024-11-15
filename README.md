@@ -43,3 +43,7 @@ Jacob Heilman
 ## Additional Credit
 
 Benjamin Bloomfield (whose Javascript code I 'borrowed' and whose Compline project initially inspired this project)
+
+## License
+
+All files within this project are released under the GNU Affero General Public License (AGPL-3.0 or later) regardless of whether this is indicated within the file.

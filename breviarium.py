@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 import pathlib
 import json
 import copy
