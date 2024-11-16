@@ -67,7 +67,7 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		if (incomm) {
 			data['tags'].push('commemoratio');
 		}
-		return {chant: '/chant/' + data['src'] + '?tags=' + data['tags'].join('+')};
+		return {chantid: '/chant/' + data['src'], chanttags: data['tags'].join('+')};
 	} else if (typeof data === 'object') {
 		return renderinner(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio')));
 	} else if (typeof data === 'string') {
@@ -83,3 +83,6 @@ function render(data, chant) {
 	return Array.isArray(rendered) ? rendered : [rendered];
 };
 
+async function chomp(id, tags) {
+	return fetch(id + '?tags=' + tags).then(data => data.text());
+}

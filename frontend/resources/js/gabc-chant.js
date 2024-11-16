@@ -78,8 +78,7 @@ class ChantElement extends HTMLElement {
 			this.setGabc(gabc);
 			this.init();
 		} else {
-			var src = $(this).attr('src');
-			$.get(src).then(data => {this.setGabc(data);this.init();});
+			chomp($(this).attr('id'), $(this).attr('tags')).then(text => {this.setGabc(text); this.init();});
 		}
 	}
 }

@@ -51,11 +51,11 @@
 		<div x-show="initialized" id="rite-container">
 			<template x-for="element in Rite">
 				<div class="content-container">
-					<div class="text-container-latin" x-show="!chant || !('chant' in element)">
+					<div class="text-container-latin" x-show="!chant || !('chantid' in element)">
 						<p class="text-content-latin" x-html="element['content']"></p>
 					</div>
-						<template x-if="chant && 'chant' in element">
-							<div class="chant-wrapper" x-html="'<gabc-chant src=' + element['chant'] + '></gabc-chant>'"></div>
+						<template x-if="chant && 'chantid' in element">
+							<div class="chant-wrapper" x-html="'<gabc-chant id=' + element['chantid'] + ' tags=' + element['chanttags'] + '></gabc-chant>'"></div>
 						</template>
 					<div class="text-container-translation" x-show="translation">
 						<p class="text-content-translation" x-html="element['translation']"></p>
