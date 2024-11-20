@@ -1,1106 +1,1382 @@
 [
 	{
-		"difference":-63,
+		"basis":"pascha",
+		"offset":-63,
 		"tags":["semiduplex","dominica","dominica-ii-classis","hebdomada-septuagesima","septuagesima","poenitentialis","incipit-libri"]
 	},
 	{
-		"difference":-62,
+		"basis":"pascha",
+		"offset":-62,
 		"tags":["feria","feria-ii","hebdomada-septuagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-61,
+		"basis":"pascha",
+		"offset":-61,
 		"tags":["feria","feria-iii","hebdomada-septuagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-60,
+		"basis":"pascha",
+		"offset":-60,
 		"tags":["feria","feria-iv","hebdomada-septuagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-59,
+		"basis":"pascha",
+		"offset":-59,
 		"tags":["feria","feria-v","hebdomada-septuagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-58,
+		"basis":"pascha",
+		"offset":-58,
 		"tags":["feria","feria-vi","hebdomada-septuagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-57,
+		"basis":"pascha",
+		"offset":-57,
 		"tags":["feria","sabbatum","hebdomada-septuagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-56,
+		"basis":"pascha",
+		"offset":-56,
 		"tags":["semiduplex","dominica","dominica-ii-classis","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-55,
+		"basis":"pascha",
+		"offset":-55,
 		"tags":["feria","feria-ii","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-54,
+		"basis":"pascha",
+		"offset":-54,
 		"tags":["feria","feria-iii","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-53,
+		"basis":"pascha",
+		"offset":-53,
 		"tags":["feria","feria-iv","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-52,
+		"basis":"pascha",
+		"offset":-52,
 		"tags":["feria","feria-v","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-51,
+		"basis":"pascha",
+		"offset":-51,
 		"tags":["feria","feria-vi","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-50,
+		"basis":"pascha",
+		"offset":-50,
 		"tags":["feria","sabbatum","hebdomada-sexagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-49,
+		"basis":"pascha",
+		"offset":-49,
 		"tags":["semiduplex","dominica","dominica-ii-classis","hebdomada-quinquagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-48,
+		"basis":"pascha",
+		"offset":-48,
 		"tags":["feria","feria-ii","hebdomada-quinquagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-47,
+		"basis":"pascha",
+		"offset":-47,
 		"tags":["feria","feria-iii","hebdomada-quinquagesima","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-46,
+		"basis":"pascha",
+		"offset":-46,
 		"tags":["cinerum","feria-major","feria","feria-iv","septuagesima","non-concurrentia","poenitentialis","non-translandum"]
 	},
 	{
-		"difference":-45,
+		"basis":"pascha",
+		"offset":-45,
 		"tags":["cinerum","feria-major","feria","feria-v","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-44,
+		"basis":"pascha",
+		"offset":-44,
 		"tags":["cinerum","feria-major","feria","feria-vi","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-43,
+		"basis":"pascha",
+		"offset":-43,
 		"tags":["cinerum","feria-major","feria","sabbatum","septuagesima","poenitentialis"]
 	},
 	{
-		"difference":-42,
+		"basis":"pascha",
+		"offset":-42,
 		"tags":["hebdomada-i-quadragesimae","quadragesima","septuagesima","dominica","dominica-i-classis","semiduplex","poenitentialis"]
 	},
 	{
-		"difference":-41,
+		"basis":"pascha",
+		"offset":-41,
 		"tags":["hebdomada-i-quadragesimae","feria-major","quadragesima","septuagesima","feria-ii","feria","poenitentialis"]
 	},
 	{
-		"difference":-40,
+		"basis":"pascha",
+		"offset":-40,
 		"tags":["hebdomada-i-quadragesimae","feria-major","quadragesima","septuagesima","feria-iii","feria","poenitentialis"]
 	},
 	{
-		"difference":-39,
+		"basis":"pascha",
+		"offset":-39,
 		"tags":["hebdomada-i-quadragesimae","feria-major","quadragesima","septuagesima","feria-iv","feria","poenitentialis"]
 	},
 	{
-		"difference":-38,
+		"basis":"pascha",
+		"offset":-38,
 		"tags":["hebdomada-i-quadragesimae","feria-major","quadragesima","septuagesima","feria-v","feria","poenitentialis"]
 	},
 	{
-		"difference":-37,
+		"basis":"pascha",
+		"offset":-37,
 		"tags":["hebdomada-i-quadragesimae","feria-major","quadragesima","septuagesima","feria-vi","feria","poenitentialis"]
 	},
 	{
-		"difference":-36,
+		"basis":"pascha",
+		"offset":-36,
 		"tags":["hebdomada-i-quadragesimae","feria-major","quadragesima","septuagesima","sabbatum","feria","poenitentialis"]
 	},
 	{
-		"difference":-35,
+		"basis":"pascha",
+		"offset":-35,
 		"tags":["hebdomada-ii-quadragesimae","quadragesima","septuagesima","dominica","dominica-ii-classis","semiduplex","poenitentialis"]
 	},
 	{
-		"difference":-34,
+		"basis":"pascha",
+		"offset":-34,
 		"tags":["hebdomada-ii-quadragesimae","feria-major","quadragesima","septuagesima","feria-ii","feria","poenitentialis"]
 	},
 	{
-		"difference":-33,
+		"basis":"pascha",
+		"offset":-33,
 		"tags":["hebdomada-ii-quadragesimae","feria-major","quadragesima","septuagesima","feria-iii","feria","poenitentialis"]
 	},
 	{
-		"difference":-32,
+		"basis":"pascha",
+		"offset":-32,
 		"tags":["hebdomada-ii-quadragesimae","feria-major","quadragesima","septuagesima","feria-iv","feria","poenitentialis"]
 	},
 	{
-		"difference":-31,
+		"basis":"pascha",
+		"offset":-31,
 		"tags":["hebdomada-ii-quadragesimae","feria-major","quadragesima","septuagesima","feria-v","feria","poenitentialis"]
 	},
 	{
-		"difference":-30,
+		"basis":"pascha",
+		"offset":-30,
 		"tags":["hebdomada-ii-quadragesimae","feria-major","quadragesima","septuagesima","feria-vi","feria","poenitentialis"]
 	},
 	{
-		"difference":-29,
+		"basis":"pascha",
+		"offset":-29,
 		"tags":["hebdomada-ii-quadragesimae","feria-major","quadragesima","septuagesima","sabbatum","feria","poenitentialis"]
 	},
 	{
-		"difference":-28,
+		"basis":"pascha",
+		"offset":-28,
 		"tags":["hebdomada-iii-quadragesimae","quadragesima","septuagesima","dominica","dominica-ii-classis","semiduplex","poenitentialis"]
 	},
 	{
-		"difference":-27,
+		"basis":"pascha",
+		"offset":-27,
 		"tags":["hebdomada-iii-quadragesimae","feria-major","quadragesima","septuagesima","feria-ii","feria","poenitentialis"]
 	},
 	{
-		"difference":-26,
+		"basis":"pascha",
+		"offset":-26,
 		"tags":["hebdomada-iii-quadragesimae","feria-major","quadragesima","septuagesima","feria-iii","feria","poenitentialis"]
 	},
 	{
-		"difference":-25,
+		"basis":"pascha",
+		"offset":-25,
 		"tags":["hebdomada-iii-quadragesimae","feria-major","quadragesima","septuagesima","feria-iv","feria","poenitentialis"]
 	},
 	{
-		"difference":-24,
+		"basis":"pascha",
+		"offset":-24,
 		"tags":["hebdomada-iii-quadragesimae","feria-major","quadragesima","septuagesima","feria-v","feria","poenitentialis"]
 	},
 	{
-		"difference":-23,
+		"basis":"pascha",
+		"offset":-23,
 		"tags":["hebdomada-iii-quadragesimae","feria-major","quadragesima","septuagesima","feria-vi","feria","poenitentialis"]
 	},
 	{
-		"difference":-22,
+		"basis":"pascha",
+		"offset":-22,
 		"tags":["hebdomada-iii-quadragesimae","feria-major","quadragesima","septuagesima","sabbatum","feria","poenitentialis"]
 	},
 	{
-		"difference":-21,
+		"basis":"pascha",
+		"offset":-21,
 		"tags":["hebdomada-iv-quadragesimae","quadragesima","septuagesima","dominica","dominica-ii-classis","semiduplex","poenitentialis"]
 	},
 	{
-		"difference":-20,
+		"basis":"pascha",
+		"offset":-20,
 		"tags":["hebdomada-iv-quadragesimae","feria-major","quadragesima","septuagesima","feria-ii","feria","poenitentialis"]
 	},
 	{
-		"difference":-19,
+		"basis":"pascha",
+		"offset":-19,
 		"tags":["hebdomada-iv-quadragesimae","feria-major","quadragesima","septuagesima","feria-iii","feria","poenitentialis"]
 	},
 	{
-		"difference":-18,
+		"basis":"pascha",
+		"offset":-18,
 		"tags":["hebdomada-iv-quadragesimae","feria-major","quadragesima","septuagesima","feria-iv","feria","poenitentialis"]
 	},
 	{
-		"difference":-17,
+		"basis":"pascha",
+		"offset":-17,
 		"tags":["hebdomada-iv-quadragesimae","feria-major","quadragesima","septuagesima","feria-v","feria","poenitentialis"]
 	},
 	{
-		"difference":-16,
+		"basis":"pascha",
+		"offset":-16,
 		"tags":["hebdomada-iv-quadragesimae","feria-major","quadragesima","septuagesima","feria-vi","feria","poenitentialis"]
 	},
 	{
-		"difference":-15,
+		"basis":"pascha",
+		"offset":-15,
 		"tags":["hebdomada-iv-quadragesimae","feria-major","quadragesima","septuagesima","sabbatum","feria","poenitentialis"]
 	},
 	{
-		"difference":-14,
+		"basis":"pascha",
+		"offset":-14,
 		"tags":["hebdomada-passionis","dominica","quadragesima","septuagesima","semiduplex","dominica-i-classis","poenitentialis","incipit-libri"]
 	},
 	{
-		"difference":-13,
+		"basis":"pascha",
+		"offset":-13,
 		"tags":["hebdomada-passionis","feria-major","quadragesima","septuagesima","feria-ii","feria","poenitentialis"]
 	},
 	{
-		"difference":-12,
+		"basis":"pascha",
+		"offset":-12,
 		"tags":["hebdomada-passionis","feria-major","quadragesima","septuagesima","feria-iii","feria","poenitentialis"]
 	},
 	{
-		"difference":-11,
+		"basis":"pascha",
+		"offset":-11,
 		"tags":["hebdomada-passionis","feria-major","quadragesima","septuagesima","feria-iv","feria","poenitentialis"]
 	},
 	{
-		"difference":-10,
+		"basis":"pascha",
+		"offset":-10,
 		"tags":["hebdomada-passionis","feria-major","quadragesima","septuagesima","feria-v","feria","poenitentialis"]
 	},
 	{
-		"difference":-9,
+		"basis":"pascha",
+		"offset":-9,
 		"tags":["hebdomada-passionis","feria-major","quadragesima","septuagesima","feria-vi","feria","poenitentialis"]
 	},
 	{
-		"difference":-8,
+		"basis":"pascha",
+		"offset":-8,
 		"tags":["hebdomada-passionis","feria-major","quadragesima","septuagesima","sabbatum","feria","poenitentialis"]
 	},
 	{
-		"difference":-7,
+		"basis":"pascha",
+		"offset":-7,
 		"tags":["dominica-in-palmis","quadragesima","septuagesima","hebdomada-sancta","dominica","semiduplex","dominica-i-classis","poenitentialis"]
 	},
 	{
-		"difference":-6,
+		"basis":"pascha",
+		"offset":-6,
 		"tags":["hebdomada-sancta","quadragesima","septuagesima","feria-ii","feria","non-concurrentia","poenitentialis"]
 	},
 	{
-		"difference":-5,
+		"basis":"pascha",
+		"offset":-5,
 		"tags":["hebdomada-sancta","quadragesima","septuagesima","feria-iii","feria","non-concurrentia","poenitentialis"]
 	},
 	{
-		"difference":-4,
+		"basis":"pascha",
+		"offset":-4,
 		"tags":["hebdomada-sancta","quadragesima","septuagesima","feria-iv","feria","non-concurrentia","poenitentialis"]
 	},
 	{
-		"difference":-3,
+		"basis":"pascha",
+		"offset":-3,
 		"tags":["hebdomada-sancta","quadragesima","septuagesima","triduum","coena-domini","feria-v","duplex","non-concurrentia","poenitentialis","incipit-libri"]
 	},
 	{
-		"difference":-2,
+		"basis":"pascha",
+		"offset":-2,
 		"tags":["hebdomada-sancta","quadragesima","septuagesima","triduum","parasceve","feria-vi","duplex","non-concurrentia","poenitentialis"]
 	},
 	{
-		"difference":-1,
+		"basis":"pascha",
+		"offset":-1,
 		"tags":["hebdomada-sancta","quadragesima","septuagesima","triduum","sabbatum-sanctum","sabbatum","duplex","vigilia","non-concurrentia","poenitentialis"]
 	},
 	{
-		"difference":0,
+		"basis":"pascha",
+		"offset":0,
 		"tags":["pascha","duplex-i-classis","paschalis","dominica","dominica-i-classis","habens-vigiliam","vigilia-excepta","habens-octavam","octava-excepta"]
 	},
 	{
-		"difference":1,
+		"basis":"pascha",
+		"offset":1,
 		"tags":["pascha","duplex-i-classis","paschalis","feria-ii","infra-octavam","dies-ii","non-concurrentia"]
 	},
 	{
-		"difference":2,
+		"basis":"pascha",
+		"offset":2,
 		"tags":["pascha","duplex-i-classis","paschalis","feria-iii","infra-octavam","dies-iii","non-concurrentia"]
 	},
 	{
-		"difference":3,
+		"basis":"pascha",
+		"offset":3,
 		"tags":["pascha","semiduplex","paschalis","feria-iv","infra-octavam","dies-iv","non-concurrentia"]
 	},
 	{
-		"difference":4,
+		"basis":"pascha",
+		"offset":4,
 		"tags":["pascha","semiduplex","paschalis","feria-v","infra-octavam","dies-v","non-concurrentia"]
 	},
 	{
-		"difference":5,
+		"basis":"pascha",
+		"offset":5,
 		"tags":["pascha","semiduplex","paschalis","feria-vi","infra-octavam","dies-vi","non-concurrentia"]
 	},
 	{
-		"difference":6,
+		"basis":"pascha",
+		"offset":6,
 		"tags":["pascha","semiduplex","paschalis","sabbatum","infra-octavam","dies-vii","non-concurrentia"]
 	},
 	{
-		"difference":7,
+		"basis":"pascha",
+		"offset":7,
 		"tags":["dominica-in-albis","paschalis","dominica","duplex-minus","dominica-i-classis","dies-octava","hebdomada-i-paschae"]
 	},
 	{
-		"difference":8,
+		"basis":"pascha",
+		"offset":8,
 		"tags":["hebdomada-i-paschae","paschalis","feria-ii","feria","incipit-libri"]
 	},
 	{
-		"difference":9,
+		"basis":"pascha",
+		"offset":9,
 		"tags":["hebdomada-i-paschae","paschalis","feria-iii","feria"]
 	},
 	{
-		"difference":10,
+		"basis":"pascha",
+		"offset":10,
 		"tags":["hebdomada-i-paschae","paschalis","feria-iv","feria"]
 	},
 	{
-		"difference":11,
+		"basis":"pascha",
+		"offset":11,
 		"tags":["hebdomada-i-paschae","paschalis","feria-v","feria"]
 	},
 	{
-		"difference":12,
+		"basis":"pascha",
+		"offset":12,
 		"tags":["hebdomada-i-paschae","paschalis","feria-vi","feria"]
 	},
 	{
-		"difference":13,
+		"basis":"pascha",
+		"offset":13,
 		"tags":["hebdomada-i-paschae","paschalis","sabbatum","feria"]
 	},
 	{
-		"difference":14,
+		"basis":"pascha",
+		"offset":14,
 		"tags":["hebdomada-ii-paschae","paschalis","dominica","semiduplex"]
 	},
 	{
-		"difference":15,
+		"basis":"pascha",
+		"offset":15,
 		"tags":["hebdomada-ii-paschae","paschalis","feria-ii","feria"]
 	},
 	{
-		"difference":16,
+		"basis":"pascha",
+		"offset":16,
 		"tags":["hebdomada-ii-paschae","paschalis","feria-iii","feria"]
 	},
 	{
-		"difference":17,
+		"basis":"pascha",
+		"offset":17,
 		"tags":["hebdomada-ii-paschae","paschalis","feria-iv","feria"]
 	},
 	{
-		"difference":18,
+		"basis":"pascha",
+		"offset":18,
 		"tags":["hebdomada-ii-paschae","paschalis","feria-v","feria"]
 	},
 	{
-		"difference":19,
+		"basis":"pascha",
+		"offset":19,
 		"tags":["hebdomada-ii-paschae","paschalis","feria-vi","feria"]
 	},
 	{
-		"difference":20,
+		"basis":"pascha",
+		"offset":20,
 		"tags":["hebdomada-ii-paschae","paschalis","sabbatum","feria"]
 	},
 	{
-		"difference":21,
+		"basis":"pascha",
+		"offset":21,
 		"tags":["hebdomada-iii-paschae","paschalis","dominica","semiduplex","incipit-libri"]
 	},
 	{
-		"difference":22,
+		"basis":"pascha",
+		"offset":22,
 		"tags":["hebdomada-iii-paschae","paschalis","feria-ii","feria"]
 	},
 	{
-		"difference":23,
+		"basis":"pascha",
+		"offset":23,
 		"tags":["hebdomada-iii-paschae","paschalis","feria-iii","feria"]
 	},
 	{
-		"difference":24,
+		"basis":"pascha",
+		"offset":24,
 		"tags":["hebdomada-iii-paschae","paschalis","feria-iv","feria"]
 	},
 	{
-		"difference":25,
+		"basis":"pascha",
+		"offset":25,
 		"tags":["hebdomada-iii-paschae","paschalis","feria-v","feria"]
 	},
 	{
-		"difference":26,
+		"basis":"pascha",
+		"offset":26,
 		"tags":["hebdomada-iii-paschae","paschalis","feria-vi","feria"]
 	},
 	{
-		"difference":27,
+		"basis":"pascha",
+		"offset":27,
 		"tags":["hebdomada-iii-paschae","paschalis","sabbatum","feria"]
 	},
 	{
-		"difference":28,
+		"basis":"pascha",
+		"offset":28,
 		"tags":["hebdomada-iv-paschae","paschalis","dominica","semiduplex","incipit-libri"]
 	},
 	{
-		"difference":29,
+		"basis":"pascha",
+		"offset":29,
 		"tags":["hebdomada-iv-paschae","paschalis","feria-ii","feria"]
 	},
 	{
-		"difference":30,
+		"basis":"pascha",
+		"offset":30,
 		"tags":["hebdomada-iv-paschae","paschalis","feria-iii","feria"]
 	},
 	{
-		"difference":31,
+		"basis":"pascha",
+		"offset":31,
 		"tags":["hebdomada-iv-paschae","paschalis","feria-iv","feria"]
 	},
 	{
-		"difference":32,
+		"basis":"pascha",
+		"offset":32,
 		"tags":["hebdomada-iv-paschae","paschalis","feria-v","feria"]
 	},
 	{
-		"difference":33,
+		"basis":"pascha",
+		"offset":33,
 		"tags":["hebdomada-iv-paschae","paschalis","feria-vi","feria"]
 	},
 	{
-		"difference":34,
+		"basis":"pascha",
+		"offset":34,
 		"tags":["hebdomada-iv-paschae","paschalis","sabbatum","feria"]
 	},
 	{
-		"difference":35,
+		"basis":"pascha",
+		"offset":35,
 		"tags":["hebdomada-v-paschae","paschalis","dominica","semiduplex","incipit-libri"]
 	},
 	{
-		"difference":36,
+		"basis":"pascha",
+		"offset":36,
 		"tags":["hebdomada-v-paschae","paschalis","feria-ii","feria"]
 	},
 	{
-		"difference":37,
+		"basis":"pascha",
+		"offset":37,
 		"tags":["hebdomada-v-paschae","paschalis","feria-iii","feria"]
 	},
 	{
-		"difference":38,
+		"basis":"pascha",
+		"offset":38,
 		"tags":["hebdomada-v-paschae","paschalis","feria-iv","feria"]
 	},
 	{
-		"difference":39,
+		"basis":"pascha",
+		"offset":39,
 		"tags":["ascensio","paschalis","duplex-i-classis","habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"]
 	},
 	{
-		"difference":40,
+		"basis":"pascha",
+		"offset":40,
 		"tags":["ascensio","paschalis","semiduplex","dies-ii","infra-octavam","incipit-libri"]
 	},
 	{
-		"difference":42,
+		"basis":"pascha",
+		"offset":42,
 		"tags":["ascensio","paschalis","semiduplex","dies-iv","infra-octavam","dominica-infra-octavam","incipit-libri"]
 	},
 	{
-		"difference":45,
+		"basis":"pascha",
+		"offset":45,
 		"tags":["ascensio","paschalis","semiduplex","dies-vii","infra-octavam","incipit-libri"]
 	},
 	{
-		"difference":47,
+		"basis":"pascha",
+		"offset":47,
 		"tags":["post-ascensionem","paschalis","feria-vi","semiduplex","incipit-libri"]
 	},
 	{
-		"difference":48,
+		"basis":"pascha",
+		"offset":48,
 		"tags":["vigilia","pentecostes","paschalis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
 	},
 	{
-		"difference":49,
+		"basis":"pascha",
+		"offset":49,
 		"tags":["pentecostes","paschalis","duplex-i-classis","dominica","dominica-i-classis","habens-vigiliam","vigilia-excepta","habens-octavam","octava-excepta"]
 	},
 	{
-		"difference":50,
+		"basis":"pascha",
+		"offset":50,
 		"tags":["pentecostes","paschalis","duplex-i-classis","feria-ii","infra-octavam","dies-ii","non-concurrentia"]
 	},
 	{
-		"difference":51,
+		"basis":"pascha",
+		"offset":51,
 		"tags":["pentecostes","paschalis","duplex-i-classis","feria-iii","infra-octavam","dies-iii","non-concurrentia"]
 	},
 	{
-		"difference":52,
+		"basis":"pascha",
+		"offset":52,
 		"tags":["pentecostes","paschalis","semiduplex","feria-iv","infra-octavam","dies-iv","non-concurrentia"]
 	},
 	{
-		"difference":53,
+		"basis":"pascha",
+		"offset":53,
 		"tags":["pentecostes","paschalis","semiduplex","feria-v","infra-octavam","dies-v","non-concurrentia"]
 	},
 	{
-		"difference":54,
+		"basis":"pascha",
+		"offset":54,
 		"tags":["pentecostes","paschalis","semiduplex","feria-vi","infra-octavam","dies-vi","non-concurrentia"]
 	},
 	{
-		"difference":55,
+		"basis":"pascha",
+		"offset":55,
 		"tags":["pentecostes","paschalis","semiduplex","sabbatum","infra-octavam","dies-vii","non-concurrentia"]
 	},
 	{
-		"difference":56,
+		"basis":"pascha",
+		"offset":56,
 		"tags":["trinitas","pentecostes","duplex-ii-classis","post-pentecosten","per-annum","dominica","dominica-i-classis","dies-octava"]
 	},
 	{
-		"difference":57,
+		"basis":"pascha",
+		"offset":57,
 		"tags":["feria","feria-ii","hebdomada-i-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
-		"difference":58,
+		"basis":"pascha",
+		"offset":58,
 		"tags":["feria","feria-iii","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":59,
+		"basis":"pascha",
+		"offset":59,
 		"tags":["feria","feria-iv","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":60,
+		"basis":"pascha",
+		"offset":60,
 		"tags":["feria","feria-v","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":61,
+		"basis":"pascha",
+		"offset":61,
 		"tags":["feria","feria-vi","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":62,
+		"basis":"pascha",
+		"offset":62,
 		"tags":["feria","sabbatum","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":63,
+		"basis":"pascha",
+		"offset":63,
 		"tags":["semiduplex","dominica","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":64,
+		"basis":"pascha",
+		"offset":64,
 		"tags":["feria","feria-ii","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":65,
+		"basis":"pascha",
+		"offset":65,
 		"tags":["feria","feria-iii","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":66,
+		"basis":"pascha",
+		"offset":66,
 		"tags":["feria","feria-iv","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":67,
+		"basis":"pascha",
+		"offset":67,
 		"tags":["feria","feria-v","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":68,
+		"basis":"pascha",
+		"offset":68,
 		"tags":["feria","feria-vi","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":69,
+		"basis":"pascha",
+		"offset":69,
 		"tags":["feria","sabbatum","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":70,
+		"basis":"pascha",
+		"offset":70,
 		"tags":["semiduplex","dominica","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":71,
+		"basis":"pascha",
+		"offset":71,
 		"tags":["feria","feria-ii","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":72,
+		"basis":"pascha",
+		"offset":72,
 		"tags":["feria","feria-iii","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":73,
+		"basis":"pascha",
+		"offset":73,
 		"tags":["feria","feria-iv","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":74,
+		"basis":"pascha",
+		"offset":74,
 		"tags":["feria","feria-v","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":75,
+		"basis":"pascha",
+		"offset":75,
 		"tags":["feria","feria-vi","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":76,
+		"basis":"pascha",
+		"offset":76,
 		"tags":["feria","sabbatum","hebdomada-iii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":77,
+		"basis":"pascha",
+		"offset":77,
 		"tags":["semiduplex","dominica","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":78,
+		"basis":"pascha",
+		"offset":78,
 		"tags":["feria","feria-ii","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":79,
+		"basis":"pascha",
+		"offset":79,
 		"tags":["feria","feria-iii","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":80,
+		"basis":"pascha",
+		"offset":80,
 		"tags":["feria","feria-iv","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":81,
+		"basis":"pascha",
+		"offset":81,
 		"tags":["feria","feria-v","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":82,
+		"basis":"pascha",
+		"offset":82,
 		"tags":["feria","feria-vi","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":83,
+		"basis":"pascha",
+		"offset":83,
 		"tags":["feria","sabbatum","hebdomada-iv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":84,
+		"basis":"pascha",
+		"offset":84,
 		"tags":["semiduplex","dominica","hebdomada-v-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
-		"difference":85,
+		"basis":"pascha",
+		"offset":85,
 		"tags":["feria","feria-ii","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":86,
+		"basis":"pascha",
+		"offset":86,
 		"tags":["feria","feria-iii","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":87,
+		"basis":"pascha",
+		"offset":87,
 		"tags":["feria","feria-iv","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":88,
+		"basis":"pascha",
+		"offset":88,
 		"tags":["feria","feria-v","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":89,
+		"basis":"pascha",
+		"offset":89,
 		"tags":["feria","feria-vi","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":90,
+		"basis":"pascha",
+		"offset":90,
 		"tags":["feria","sabbatum","hebdomada-v-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":91,
+		"basis":"pascha",
+		"offset":91,
 		"tags":["semiduplex","dominica","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":92,
+		"basis":"pascha",
+		"offset":92,
 		"tags":["feria","feria-ii","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":93,
+		"basis":"pascha",
+		"offset":93,
 		"tags":["feria","feria-iii","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":94,
+		"basis":"pascha",
+		"offset":94,
 		"tags":["feria","feria-iv","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":95,
+		"basis":"pascha",
+		"offset":95,
 		"tags":["feria","feria-v","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":96,
+		"basis":"pascha",
+		"offset":96,
 		"tags":["feria","feria-vi","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":97,
+		"basis":"pascha",
+		"offset":97,
 		"tags":["feria","sabbatum","hebdomada-vi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":98,
+		"basis":"pascha",
+		"offset":98,
 		"tags":["semiduplex","dominica","hebdomada-vii-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
-		"difference":99,
+		"basis":"pascha",
+		"offset":99,
 		"tags":["feria","feria-ii","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":100,
+		"basis":"pascha",
+		"offset":100,
 		"tags":["feria","feria-iii","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":101,
+		"basis":"pascha",
+		"offset":101,
 		"tags":["feria","feria-iv","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":102,
+		"basis":"pascha",
+		"offset":102,
 		"tags":["feria","feria-v","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":103,
+		"basis":"pascha",
+		"offset":103,
 		"tags":["feria","feria-vi","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":104,
+		"basis":"pascha",
+		"offset":104,
 		"tags":["feria","sabbatum","hebdomada-vii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":105,
+		"basis":"pascha",
+		"offset":105,
 		"tags":["semiduplex","dominica","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":106,
+		"basis":"pascha",
+		"offset":106,
 		"tags":["feria","feria-ii","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":107,
+		"basis":"pascha",
+		"offset":107,
 		"tags":["feria","feria-iii","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":108,
+		"basis":"pascha",
+		"offset":108,
 		"tags":["feria","feria-iv","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":109,
+		"basis":"pascha",
+		"offset":109,
 		"tags":["feria","feria-v","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":110,
+		"basis":"pascha",
+		"offset":110,
 		"tags":["feria","feria-vi","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":111,
+		"basis":"pascha",
+		"offset":111,
 		"tags":["feria","sabbatum","hebdomada-viii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":112,
+		"basis":"pascha",
+		"offset":112,
 		"tags":["semiduplex","dominica","hebdomada-ix-pentecostes","post-pentecosten","per-annum","incipit-libri"]
 	},
 	{
-		"difference":113,
+		"basis":"pascha",
+		"offset":113,
 		"tags":["feria","feria-ii","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":114,
+		"basis":"pascha",
+		"offset":114,
 		"tags":["feria","feria-iii","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":115,
+		"basis":"pascha",
+		"offset":115,
 		"tags":["feria","feria-iv","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":116,
+		"basis":"pascha",
+		"offset":116,
 		"tags":["feria","feria-v","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":117,
+		"basis":"pascha",
+		"offset":117,
 		"tags":["feria","feria-vi","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":118,
+		"basis":"pascha",
+		"offset":118,
 		"tags":["feria","sabbatum","hebdomada-ix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":119,
+		"basis":"pascha",
+		"offset":119,
 		"tags":["semiduplex","dominica","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":120,
+		"basis":"pascha",
+		"offset":120,
 		"tags":["feria","feria-ii","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":121,
+		"basis":"pascha",
+		"offset":121,
 		"tags":["feria","feria-iii","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":122,
+		"basis":"pascha",
+		"offset":122,
 		"tags":["feria","feria-iv","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":123,
+		"basis":"pascha",
+		"offset":123,
 		"tags":["feria","feria-v","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":124,
+		"basis":"pascha",
+		"offset":124,
 		"tags":["feria","feria-vi","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":125,
+		"basis":"pascha",
+		"offset":125,
 		"tags":["feria","sabbatum","hebdomada-x-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":126,
+		"basis":"pascha",
+		"offset":126,
 		"tags":["semiduplex","dominica","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":127,
+		"basis":"pascha",
+		"offset":127,
 		"tags":["feria","feria-ii","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":128,
+		"basis":"pascha",
+		"offset":128,
 		"tags":["feria","feria-iii","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":129,
+		"basis":"pascha",
+		"offset":129,
 		"tags":["feria","feria-iv","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":130,
+		"basis":"pascha",
+		"offset":130,
 		"tags":["feria","feria-v","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":131,
+		"basis":"pascha",
+		"offset":131,
 		"tags":["feria","feria-vi","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":132,
+		"basis":"pascha",
+		"offset":132,
 		"tags":["feria","sabbatum","hebdomada-xi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":133,
+		"basis":"pascha",
+		"offset":133,
 		"tags":["semiduplex","dominica","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":134,
+		"basis":"pascha",
+		"offset":134,
 		"tags":["feria","feria-ii","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":135,
+		"basis":"pascha",
+		"offset":135,
 		"tags":["feria","feria-iii","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":136,
+		"basis":"pascha",
+		"offset":136,
 		"tags":["feria","feria-iv","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":137,
+		"basis":"pascha",
+		"offset":137,
 		"tags":["feria","feria-v","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":138,
+		"basis":"pascha",
+		"offset":138,
 		"tags":["feria","feria-vi","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":139,
+		"basis":"pascha",
+		"offset":139,
 		"tags":["feria","sabbatum","hebdomada-xii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":140,
+		"basis":"pascha",
+		"offset":140,
 		"tags":["semiduplex","dominica","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":141,
+		"basis":"pascha",
+		"offset":141,
 		"tags":["feria","feria-ii","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":142,
+		"basis":"pascha",
+		"offset":142,
 		"tags":["feria","feria-iii","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":143,
+		"basis":"pascha",
+		"offset":143,
 		"tags":["feria","feria-iv","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":144,
+		"basis":"pascha",
+		"offset":144,
 		"tags":["feria","feria-v","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":145,
+		"basis":"pascha",
+		"offset":145,
 		"tags":["feria","feria-vi","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":146,
+		"basis":"pascha",
+		"offset":146,
 		"tags":["feria","sabbatum","hebdomada-xiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":147,
+		"basis":"pascha",
+		"offset":147,
 		"tags":["semiduplex","dominica","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":148,
+		"basis":"pascha",
+		"offset":148,
 		"tags":["feria","feria-ii","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":149,
+		"basis":"pascha",
+		"offset":149,
 		"tags":["feria","feria-iii","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":150,
+		"basis":"pascha",
+		"offset":150,
 		"tags":["feria","feria-iv","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":151,
+		"basis":"pascha",
+		"offset":151,
 		"tags":["feria","feria-v","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":152,
+		"basis":"pascha",
+		"offset":152,
 		"tags":["feria","feria-vi","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":153,
+		"basis":"pascha",
+		"offset":153,
 		"tags":["feria","sabbatum","hebdomada-xiv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":154,
+		"basis":"pascha",
+		"offset":154,
 		"tags":["semiduplex","dominica","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":155,
+		"basis":"pascha",
+		"offset":155,
 		"tags":["feria","feria-ii","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":156,
+		"basis":"pascha",
+		"offset":156,
 		"tags":["feria","feria-iii","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":157,
+		"basis":"pascha",
+		"offset":157,
 		"tags":["feria","feria-iv","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":158,
+		"basis":"pascha",
+		"offset":158,
 		"tags":["feria","feria-v","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":159,
+		"basis":"pascha",
+		"offset":159,
 		"tags":["feria","feria-vi","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":160,
+		"basis":"pascha",
+		"offset":160,
 		"tags":["feria","sabbatum","hebdomada-xv-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":161,
+		"basis":"pascha",
+		"offset":161,
 		"tags":["semiduplex","dominica","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":162,
+		"basis":"pascha",
+		"offset":162,
 		"tags":["feria","feria-ii","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":163,
+		"basis":"pascha",
+		"offset":163,
 		"tags":["feria","feria-iii","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":164,
+		"basis":"pascha",
+		"offset":164,
 		"tags":["feria","feria-iv","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":165,
+		"basis":"pascha",
+		"offset":165,
 		"tags":["feria","feria-v","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":166,
+		"basis":"pascha",
+		"offset":166,
 		"tags":["feria","feria-vi","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":167,
+		"basis":"pascha",
+		"offset":167,
 		"tags":["feria","sabbatum","hebdomada-xvi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":168,
+		"basis":"pascha",
+		"offset":168,
 		"tags":["semiduplex","dominica","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":169,
+		"basis":"pascha",
+		"offset":169,
 		"tags":["feria","feria-ii","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":170,
+		"basis":"pascha",
+		"offset":170,
 		"tags":["feria","feria-iii","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":171,
+		"basis":"pascha",
+		"offset":171,
 		"tags":["feria","feria-iv","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":172,
+		"basis":"pascha",
+		"offset":172,
 		"tags":["feria","feria-v","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":173,
+		"basis":"pascha",
+		"offset":173,
 		"tags":["feria","feria-vi","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":174,
+		"basis":"pascha",
+		"offset":174,
 		"tags":["feria","sabbatum","hebdomada-xvii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":175,
+		"basis":"pascha",
+		"offset":175,
 		"tags":["semiduplex","dominica","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":176,
+		"basis":"pascha",
+		"offset":176,
 		"tags":["feria","feria-ii","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":177,
+		"basis":"pascha",
+		"offset":177,
 		"tags":["feria","feria-iii","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":178,
+		"basis":"pascha",
+		"offset":178,
 		"tags":["feria","feria-iv","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":179,
+		"basis":"pascha",
+		"offset":179,
 		"tags":["feria","feria-v","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":180,
+		"basis":"pascha",
+		"offset":180,
 		"tags":["feria","feria-vi","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":181,
+		"basis":"pascha",
+		"offset":181,
 		"tags":["feria","sabbatum","hebdomada-xviii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":182,
+		"basis":"pascha",
+		"offset":182,
 		"tags":["semiduplex","dominica","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":183,
+		"basis":"pascha",
+		"offset":183,
 		"tags":["feria","feria-ii","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":184,
+		"basis":"pascha",
+		"offset":184,
 		"tags":["feria","feria-iii","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":185,
+		"basis":"pascha",
+		"offset":185,
 		"tags":["feria","feria-iv","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":186,
+		"basis":"pascha",
+		"offset":186,
 		"tags":["feria","feria-v","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":187,
+		"basis":"pascha",
+		"offset":187,
 		"tags":["feria","feria-vi","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":188,
+		"basis":"pascha",
+		"offset":188,
 		"tags":["feria","sabbatum","hebdomada-xix-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":189,
+		"basis":"pascha",
+		"offset":189,
 		"tags":["semiduplex","dominica","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":190,
+		"basis":"pascha",
+		"offset":190,
 		"tags":["feria","feria-ii","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":191,
+		"basis":"pascha",
+		"offset":191,
 		"tags":["feria","feria-iii","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":192,
+		"basis":"pascha",
+		"offset":192,
 		"tags":["feria","feria-iv","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":193,
+		"basis":"pascha",
+		"offset":193,
 		"tags":["feria","feria-v","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":194,
+		"basis":"pascha",
+		"offset":194,
 		"tags":["feria","feria-vi","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":195,
+		"basis":"pascha",
+		"offset":195,
 		"tags":["feria","sabbatum","hebdomada-xx-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":196,
+		"basis":"pascha",
+		"offset":196,
 		"tags":["semiduplex","dominica","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":197,
+		"basis":"pascha",
+		"offset":197,
 		"tags":["feria","feria-ii","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":198,
+		"basis":"pascha",
+		"offset":198,
 		"tags":["feria","feria-iii","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":199,
+		"basis":"pascha",
+		"offset":199,
 		"tags":["feria","feria-iv","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":200,
+		"basis":"pascha",
+		"offset":200,
 		"tags":["feria","feria-v","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":201,
+		"basis":"pascha",
+		"offset":201,
 		"tags":["feria","feria-vi","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":202,
+		"basis":"pascha",
+		"offset":202,
 		"tags":["feria","sabbatum","hebdomada-xxi-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":203,
+		"basis":"pascha",
+		"offset":203,
 		"tags":["semiduplex","dominica","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":204,
+		"basis":"pascha",
+		"offset":204,
 		"tags":["feria","feria-ii","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":205,
+		"basis":"pascha",
+		"offset":205,
 		"tags":["feria","feria-iii","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":206,
+		"basis":"pascha",
+		"offset":206,
 		"tags":["feria","feria-iv","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":207,
+		"basis":"pascha",
+		"offset":207,
 		"tags":["feria","feria-v","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":208,
+		"basis":"pascha",
+		"offset":208,
 		"tags":["feria","feria-vi","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":209,
+		"basis":"pascha",
+		"offset":209,
 		"tags":["feria","sabbatum","hebdomada-xxii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":210,
+		"basis":"pascha",
+		"offset":210,
 		"tags":["semiduplex","dominica","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":211,
+		"basis":"pascha",
+		"offset":211,
 		"tags":["feria","feria-ii","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":212,
+		"basis":"pascha",
+		"offset":212,
 		"tags":["feria","feria-iii","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":213,
+		"basis":"pascha",
+		"offset":213,
 		"tags":["feria","feria-iv","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":214,
+		"basis":"pascha",
+		"offset":214,
 		"tags":["feria","feria-v","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":215,
+		"basis":"pascha",
+		"offset":215,
 		"tags":["feria","feria-vi","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
-		"difference":216,
+		"basis":"pascha",
+		"offset":216,
 		"tags":["feria","sabbatum","hebdomada-xxiii-pentecostes","post-pentecosten","per-annum"]
 	}
 ]

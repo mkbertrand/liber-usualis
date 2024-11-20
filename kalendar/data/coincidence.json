@@ -1,5 +1,19 @@
 [
 	{
+		"indices":["hebdomada-xxiv-pentecostes"],
+		"response":[
+			{"indices":["post-pentecosten"],"response":"omittendum","target":"b"}
+		]
+	},
+	{
+		"indices":["adventus"],
+		"response":[
+			{"indices":["post-pentecosten"],"response":"omittendum","target":"b"},
+			{"indices":["nativitas","festum"],"response":"omittendum","target":"a"},
+			{"indices":["nativitas","infra-octavam"],"response":"omittendum","target":"a"}
+		]
+	},
+	{
 		"indices":["antiphona-major"],
 		"response":[
 			{"indices":["feria"],"response":"combinandum","target":"ab"},
