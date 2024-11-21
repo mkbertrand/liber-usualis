@@ -62,7 +62,6 @@ def chomp(gabc: str, tags) -> str:
         incipit = re.search(r'\(.\d\)\s(.+?)\s\*', gabc).group(1)
         response = re.search(r'\*\(\W\)\s(.+?)\s\(::\)', gabc).group(1)
         verses = [''.join(i) if type(i) is tuple else i for i in re.findall(r'<v>\\Vbar<\/v>\.?(\(::\))?\s(.+?)\s\*?\(::\)', gabc)]
-        print(verses)
         verse = verses[0]
         gloria = verses[1]
 
