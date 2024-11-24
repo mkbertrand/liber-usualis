@@ -12,8 +12,6 @@ import breviarium
 import datamanage
 import prioritizer
 
-import chomp
-
 root = 'breviarium-1888'
 
 implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
