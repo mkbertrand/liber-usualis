@@ -62,7 +62,7 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		if (incomm) {
 			data['tags'].push('commemoratio');
 		}
-		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].join('+') + '" />';
+		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].join('+') + '"></gabc-chant>';
 
 	} else if (typeof data === 'object') {
 		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio'))) + '</div>';
