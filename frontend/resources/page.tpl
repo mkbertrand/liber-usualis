@@ -20,7 +20,7 @@
 					<h1 id="website-temp-name">LIBER VSVALIS</h1>
 				</div>
 			</div>
-			<nav id="sidebar-nav" x-show="sidebarnavopen" x-data="{
+			<nav id="sidebar-nav" x-show="sidebarnavopen" x-transition x-data="{
 				pages:[
 					{'path':'/', 'name':'Pray'},
 					{'path':'/about/', 'name':'About'},
@@ -29,9 +29,7 @@
 				]
 				}">
 				<template x-for="page in pages">
-					<div class="nav-element">
-						<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
-					</div>
+					<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
 				</template>
 
 			</nav>

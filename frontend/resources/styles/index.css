@@ -65,28 +65,24 @@
 	width: 85%;
 }
 
-#top-right-panel-toggle {
-	float: right;
-	margin-bottom: 10px;
-	font-size: 20px;
-	font-family: times;
-	white-space: nowrap;
-}
-
-#top-right-panel-container {
+#options-panel {
 	position: fixed;
-	top: 76px;
-	right: 0;
-	margin-top: 10px;
-	margin-right: 10px;
-	display: flex;
-	flex-direction: column;
-}
-
-#top-right-panel {
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%, -50%);
+	width: 30em;
+	height: 50vh;
+	max-width: 100%;
+	background-color: rgba(249, 249, 249, .9);
 	display: flex;
 	flex-direction: column;
 	gap: 7px;
+	z-index: 1;
+}
+
+#options-panel-title {
+	text-align: center;
+	font-size: 20px;
 }
 
 #bottom-easy-select-container {
@@ -94,11 +90,27 @@
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 0);
-	padding-bottom: 10px;
-	background-color: rgba(249, 249, 249, .8);
 	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#bottom-easy-select-hide {
+	width: 100px;
+	height: 20px;
+}
+
+#bottom-easy-select-content-container {
+	background-color: rgba(249, 249, 249, .8);
 	border: 1px solid #eee;
 	border-radius: 5px;
+	padding-bottom: 10px;
+}
+
+#bottom-easy-select-hide-icon {
+	height: 30px;
+	margin-top: -5px;
 }
 
 #date-selector-container {
@@ -109,8 +121,8 @@
 }
 
 #date-selector-text {
-	height: 35px;
-	font-size: 20px;
+	height: 30px;
+	font-size: 18px;
 	border: 1px solid #eee;
 	border-radius: 5px;
 	cursor: pointer;
@@ -119,9 +131,17 @@
 }
 
 .date-selector-button {
-	height: 35px;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	text-align: center;
 	font-size: 24px;
-	padding-top: 10px;
+}
+
+#options-button {
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
 }
 
 #rite-selector-container {
@@ -135,8 +155,9 @@
 }
 
 .rite-selector-button {
+	height: 25px;
+	text-align: center;
 	font-size: 18px;
-	height: 100%;
 }
 
 .rite-selector-button-selected {
@@ -144,7 +165,7 @@
 }
 
 @media print {
-	#top-right-panel-container, #side-panel-left, #side-panel-right, #bottom-easy-select-container {
+	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container {
 		display: none;
 	}
 }

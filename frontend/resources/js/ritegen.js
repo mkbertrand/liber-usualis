@@ -39,8 +39,9 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		nom = data['datum'][1];
 		if (typeof data['datum'][1] === 'object')
 			nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
-		return {'content': '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>'};
+		return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
 	}
+
 	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
 		incipit = data['datum'][0];
 		response = data['datum'][1];
@@ -48,30 +49,26 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		gloria = data['datum'].length == 9 ? data['datum'][6] : null;
 		data = {src: incipit['src'], tags: data['tags'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']};
 	}
+
 	if (typeof data === 'object' && Array.isArray(data)) {
-		let ret = [];
+		let ret = '';
 		// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 		for (let i = 0, count = data.length; i < count; i++) {
-			const rendered = renderinner(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, incomm);
-			if (Array.isArray(rendered)) {
-				// I guess js doesn't actually like for in loops for unclear reasons
-				for (let j = 0; j < rendered.length; j++) {
-					ret.push(rendered[j]);
-				}
-			} else {
-				ret.push(rendered);
-			}
+			ret += renderinner(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, incomm);
 		};
 		return ret;
+
 	} else if (typeof data === 'object' && chant && 'src' in data && data['src'] != undefined) {
 		if (incomm) {
 			data['tags'].push('commemoratio');
 		}
-		return {chantid: '/chant/' + data['src'], chanttags: data['tags'].join('+')};
+		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].join('+') + '" />';
+
 	} else if (typeof data === 'object') {
-		return renderinner(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio')));
+		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio'))) + '</div>';
+
 	} else if (typeof data === 'string') {
-	return translated != null && typeof translated === 'string' ? {content: stringrender(data), translation: stringrender(translated)} : {content: stringrender(data)};
+		return '<p class="rite-text">' + stringrender(data) + '</p><p class="rite-text-translation">' + (translated != null && typeof translated === 'string' ? stringrender(translated) : '') + '</p>';
 	} else {
 		return 'error';
 	}
@@ -79,8 +76,7 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 
 // Just guarantees that the return is an array so that the x-for doesn't break
 function render(data, chant) {
-	const rendered = renderinner(data['rite'], chant, null, data['translation']);
-	return Array.isArray(rendered) ? rendered : [rendered];
+	return renderinner(data['rite'], chant, null, data['translation']);
 };
 
 async function chomp(id, tags) {

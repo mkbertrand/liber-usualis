@@ -75,19 +75,17 @@ body {
 	padding-top: 20px;
 	border-right: 1px solid #eee;
 	z-index: 3;
-}
-
-.nav-element {
-	width: 100px;
-	height: 35px;
+	gap: 10px;
 }
 
 .nav-element-link {
-	padding-top: 10px;
-	padding-left: 25px;
+	width: 100px;
+	height: 40px;
+	padding-top: 15px;
 	display: block;
+	text-align: center;
 	font-family: times;
-	font-size: 24px;
+	font-size: 20px;
 	color: black;
 	text-decoration: none;
 }
@@ -166,7 +164,8 @@ tspan[style="font-family:'Exsurge Characters';fill:#f00;"] {
 [x-cloak] { display: none !important; }
 
 button {
-	border-radius: 5px;
+	background-color: #eee;
+	border-radius: 7px;
 	color: black;
 	font-family: times;
 	cursor: pointer;

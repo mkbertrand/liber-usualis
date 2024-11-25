@@ -5,6 +5,7 @@
 <script type="text/javascript" src="/resources/js/exsurge.js"></script>
 <script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
 <div id="content-container-outer" x-data="{
+	optionspanel: false,
 	day: new Date(),
 	hour: '',
 	chant: false,
@@ -14,9 +15,12 @@
 	get Rite() {
 		return this.rite;
 	},
+	realDate() {
+		return new Date(this.day.getTime() - this.day.getTimezoneOffset() * 60000);
+	},
 	async updateRite() {
 		this.chant;
-		var response = await fetch('/rite?date=' + this.day.toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
+		var response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
 		var json = await response.json();
 		this.rite = render(json, this.chant);
 		this.initialized = true;
@@ -38,44 +42,33 @@
 		hour = 'completorium';
 	}
 " x-effect="updateRite()">
-	<div id="top-right-panel-container" x-data="{opened: false}">
-		<button id="top-right-panel-toggle" @click="opened = !opened">More Options</button>
-		<div x-cloak id="top-right-panel" x-show="opened" x-transition>
-			<button @click="translation = !translation">Translation toggle</button>
-			<button @click="chant = !chant">Chant toggle</button>
-		</div>
+	<div x-cloak id="options-panel" x-show="optionspanel">
+		<div id="options-panel-title">Options</div>
+		<button class="options-panel-button" @click="translation = !translation">Translation toggle</button>
+		<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
 	</div>
 	<div id="side-panel-left">
 	</div>
 	<div id="rite-page-container">
-		<div x-show="initialized" id="rite-container">
-			<template x-for="element in Rite">
-				<div class="content-container">
-					<div class="text-container-latin" x-show="!chant || !('chantid' in element)">
-						<p class="text-content-latin" x-html="element['content']"></p>
-					</div>
-						<template x-if="chant && 'chantid' in element">
-							<div class="chant-wrapper" x-html="'<gabc-chant id=' + element['chantid'] + ' tags=' + element['chanttags'] + '></gabc-chant>'"></div>
-						</template>
-					<div class="text-container-translation" x-show="translation">
-						<p class="text-content-translation" x-html="element['translation']"></p>
-					</div>
-				</div>
-			</template>
+		<div x-show="initialized" id="rite-container" x-html="Rite">
 		</div>
-		<div id="bottom-easy-select-container">
-			<div id="date-selector-container" x-data="{search: ''}">
-				<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = day.toISOString().substring(0,10)">&#8592;</button>
-				<input id="date-selector-text" type="date" x-model="search" x-init="search = day.toISOString().substring(0,10)" @keyup.enter.window="day = new Date(search + new Date().toISOString().substring(10))">
-				<button id="date-selector-text-submit" class="date-selector-button" @click="day = new Date(search + new Date().toISOString().substring(10))">&#8629;</button>
-				<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = day.toISOString().substring(0,10)">&#8594;</button>
-			</div>
-			<div id="rite-selector-container" x-data="{
-				 rites: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]
-				 }">
-				<template x-for="rite in rites">
-					<button class="rite-selector-button" :class="(rite.id == hour) && 'rite-selector-button-selected'" @click="hour = rite.id" x-text="rite.name"></button>
-				</template>
+		<div id="bottom-easy-select-container" x-data="{open: true}">
+			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" src="/resources/svg/down.svg" /></button>
+			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
+				<div id="date-selector-container" x-data="{search: ''}">
+					<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
+					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="day = new Date(search + new Date().toISOString().substring(10))">
+					<button id="date-selector-text-submit" class="date-selector-button" @click="day = new Date(search + new Date().toISOString().substring(10))">&#8629;</button>
+					<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
+					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
+				</div>
+				<div id="rite-selector-container" x-data="{
+					 rites: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]
+					 }">
+					<template x-for="rite in rites">
+						<button class="rite-selector-button" :class="(rite.id == hour) && 'rite-selector-button-selected'" @click="hour = rite.id" x-text="rite.name"></button>
+					</template>
+				</div>
 			</div>
 		</div>
 	</div>
