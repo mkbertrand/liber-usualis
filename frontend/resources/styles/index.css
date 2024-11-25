@@ -169,3 +169,19 @@
 		display: none;
 	}
 }
+
+#rite-container {
+	font-size: 20px;
+}
+
+.ante-officium, .post-officium {
+	font-size: 18px;
+}
+
+.psalmus::first-letter {
+	float: left;
+	font-size: 60px;
+	font-weight: bold;
+	margin-right: 0.5rem;
+	color: red;
+}

@@ -25,7 +25,7 @@ function stringrender(data) {
 };
 
 
-function renderinner(data, chant, translated = null, translationpool = null, incomm = false) {
+function renderinner(data, chant, translated = null, translationpool = null, parenttags) {
 	let tran = null;
 
 	if (translationpool != null && typeof data === 'object' && 'tags' in data) {
@@ -54,21 +54,20 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 		let ret = '';
 		// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 		for (let i = 0, count = data.length; i < count; i++) {
-			ret += renderinner(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, incomm);
+			ret += renderinner(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, parenttags);
 		};
 		return ret;
 
 	} else if (typeof data === 'object' && chant && 'src' in data && data['src'] != undefined) {
-		if (incomm) {
-			data['tags'].push('commemoratio');
-		}
-		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].join('+') + '"></gabc-chant>';
+		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].concat(parenttags).join('+') + '"></gabc-chant>';
 
 	} else if (typeof data === 'object') {
-		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], chant, translated, translationpool, ('tags' in data && data['tags'].includes('commemoratio'))) + '</div>';
+			if ('tags' in data && data['tags'].join(' ').includes('psalmus')) { data['tags'].push('psalmus'); }
+			if ('tags' in data && data['tags'].join(' ').includes('canticum')) { data['tags'].push('canticum'); }
+		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], chant, translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags)) + '</div>';
 
 	} else if (typeof data === 'string') {
-		return '<p class="rite-text">' + stringrender(data) + '</p><p class="rite-text-translation">' + (translated != null && typeof translated === 'string' ? stringrender(translated) : '') + '</p>';
+		return '<p class="rite-text ' + parenttags.join(' ') + '">' + stringrender(data) + '</p><p class="rite-text-translation">' + (translated != null && typeof translated === 'string' ? stringrender(translated) : '') + '</p>';
 	} else {
 		return 'error';
 	}
@@ -76,7 +75,7 @@ function renderinner(data, chant, translated = null, translationpool = null, inc
 
 // Just guarantees that the return is an array so that the x-for doesn't break
 function render(data, chant) {
-	return renderinner(data['rite'], chant, null, data['translation']);
+	return renderinner(data['rite'], chant, null, data['translation'], []);
 };
 
 async function chomp(id, tags) {
