@@ -41,6 +41,23 @@ def flattensetlist(sets):
         ret |= i
     return ret
 
+@get('/kalendar')
+def kalendar():
+    parameters = copy.deepcopy(request.query)
+
+    if not 'date' in parameters:
+        parameters['date'] = date.today()
+    else:
+        parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
+
+    tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if parameters['hour'] == 'vesperae' or parameters['hour'] == 'completorium' else datamanage.getdate(parameters['date']))
+
+    for i in tags:
+        for j in implicationtable:
+            if j['tags'].issubset(i):
+                i |= j['implies']
+    return breviarium.dump_data(tags)
+
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():
@@ -105,7 +122,7 @@ def chant(url):
 def nomina():
     return datamanage.getnames(root)
 
-@route('/resources/<file:path>')
+@get('/resources/<file:path>')
 def resources(file):
     return static_file(file, root='frontend/resources/')
 
@@ -117,7 +134,7 @@ def error404(error):
 def error500(error):
     return error
 
-@route('/reset')
+@get('/reset')
 def reset():
     datamanage.getyear.cache_clear()
     datamanage.getbreviariumfile.cache_clear()
