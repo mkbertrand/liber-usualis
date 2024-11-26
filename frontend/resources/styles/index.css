@@ -185,3 +185,8 @@
 	margin-right: 0.5rem;
 	color: red;
 }
+
+.verse-number {
+	font-size: 10px;
+	color: red;
+}
