@@ -15,6 +15,9 @@
 	get Rite() {
 		return this.rite;
 	},
+	setDate(date) {
+		this.day = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.day.getTimezoneOffset() * 60000);
+	},
 	realDate() {
 		return new Date(this.day.getTime() - this.day.getTimezoneOffset() * 60000);
 	},
@@ -57,8 +60,8 @@
 			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
 				<div id="date-selector-container" x-data="{search: ''}">
 					<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
-					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="day = new Date(search + new Date().toISOString().substring(10))">
-					<button id="date-selector-text-submit" class="date-selector-button" @click="day = new Date(search + new Date().toISOString().substring(10))">&#8629;</button>
+					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
+					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
 					<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
 					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
 				</div>
