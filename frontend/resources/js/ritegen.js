@@ -62,7 +62,7 @@ function renderinner(data, chant, translated = null, translationpool = null, par
 		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].concat(parenttags).join('+') + '"></gabc-chant>';
 
 	} else if (typeof data === 'object') {
-			if ('tags' in data && data['tags'].join(' ').includes('psalmus')) { data['tags'].push('psalmus'); }
+			if ('tags' in data && data['tags'].join(' ').includes('/psalmi/')) { data['tags'].push('psalmus'); }
 			if ('tags' in data && data['tags'].join(' ').includes('canticum')) { data['tags'].push('canticum'); }
 		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], chant, translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags)) + '</div>';
 
