@@ -237,34 +237,22 @@
 				"tags":["matutinum","psalmodia"],
 				"datum":[
 					["matutinum","antiphona","antiphona-i","intonata"],
-					["matutinum","i-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","ii-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","iii-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","iv-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-i"],
+					["matutinum","psalmus-ii"],
+					["matutinum","psalmus-iii"],
+					["matutinum","psalmus-iv"],
 					["matutinum","antiphona","antiphona-i","repetita"],
 					["matutinum","antiphona","antiphona-ii","intonata"],
-					["matutinum","v-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","vi-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","vii-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","viii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-v"],
+					["matutinum","psalmus-vi"],
+					["matutinum","psalmus-vii"],
+					["matutinum","psalmus-viii"],
 					["matutinum","antiphona","antiphona-ii","repetita"],
 					["matutinum","antiphona","antiphona-iii","intonata"],
-					["matutinum","ix-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","x-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","xi-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","xii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-ix"],
+					["matutinum","psalmus-x"],
+					["matutinum","psalmus-xi"],
+					["matutinum","psalmus-xii"],
 					["matutinum","antiphona","antiphona-iii","repetita"]
 				]
 			},
@@ -285,40 +273,28 @@
 				"tags":["matutinum","psalmodia"],
 				"datum":[
 					["matutinum","antiphona","antiphona-i","intonata"],
-					["matutinum","i-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","ii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-i"],
+					["matutinum","psalmus-ii"],
 					["matutinum","antiphona","antiphona-i","repetita"],
 					["matutinum","antiphona","antiphona-ii","intonata"],
-					["matutinum","iii-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","iv-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-iii"],
+					["matutinum","psalmus-iv"],
 					["matutinum","antiphona","antiphona-ii","repetita"],
 					["matutinum","antiphona","antiphona-iii","intonata"],
-					["matutinum","v-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","vi-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-v"],
+					["matutinum","psalmus-vi"],
 					["matutinum","antiphona","antiphona-iii","repetita"],
 					["matutinum","antiphona","antiphona-iv","intonata"],
-					["matutinum","vii-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","viii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-vii"],
+					["matutinum","psalmus-viii"],
 					["matutinum","antiphona","antiphona-iv","repetita"],
 					["matutinum","antiphona","antiphona-v","intonata"],
-					["matutinum","ix-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","x-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-ix"],
+					["matutinum","psalmus-x"],
 					["matutinum","antiphona","antiphona-v","repetita"],
 					["matutinum","antiphona","antiphona-vi","intonata"],
-					["matutinum","xi-psalmus"],
-					["gloria-psalmi"],
-					["matutinum","xii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-xi"],
+					["matutinum","psalmus-xii"],
 					["matutinum","antiphona","antiphona-vi","repetita"]
 				]
 			},
@@ -339,16 +315,13 @@
 				"tags":["matutinum","psalmodia"],
 				"datum":[
 					["matutinum","antiphona","antiphona-i"],
-					["matutinum","i-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-i"],
 					["matutinum","antiphona","antiphona-i","repetita"],
 					["matutinum","antiphona","antiphona-ii"],
-					["matutinum","ii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-ii"],
 					["matutinum","antiphona","antiphona-ii","repetita"],
 					["matutinum","antiphona","antiphona-iii"],
-					["matutinum","iii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-iii"],
 					["matutinum","antiphona","antiphona-iii","repetita"]
 				]
 			},
@@ -370,16 +343,13 @@
 				"tags":["matutinum","psalmodia"],
 				"datum":[
 					["matutinum","antiphona","antiphona-i","intonata"],
-					["matutinum","i-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-i"],
 					["matutinum","antiphona","antiphona-i","repetita"],
 					["matutinum","antiphona","antiphona-ii","intonata"],
-					["matutinum","ii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-ii"],
 					["matutinum","antiphona","antiphona-ii","repetita"],
 					["matutinum","antiphona","antiphona-iii","intonata"],
-					["matutinum","iii-psalmus"],
-					["gloria-psalmi"],
+					["matutinum","psalmus-iii"],
 					["matutinum","antiphona","antiphona-iii","repetita"]
 				]
 			},
@@ -420,19 +390,19 @@
 		"datum":"Servíte Dómino * in timóre: et exsultáte ei cum tremóre."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","i-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-i"],
 		"datum":[["/psalmi/psalmus-i"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","ii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-ii"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","iii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-iii"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","iv-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-vi"]]
 	},
 	{
@@ -440,19 +410,19 @@
 		"datum":"Deus judex justus, * fortis et longánimis: numquid irascétur per síngulos dies?"
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","v-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-v"],
 		"datum":[["/psalmi/psalmus-vii"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","vi-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-vi"],
 		"datum":[["/psalmi/psalmus-viii"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","vii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-vii"],
 		"datum":[["/psalmi/psalmus-ix"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","viii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-viii"],
 		"datum":[["/psalmi/psalmus-x"]]
 	},
 	{
@@ -460,19 +430,19 @@
 		"datum":"Tu Dómine * servábis nos: et custódies nos."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","ix-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-ix"],
 		"datum":[["/psalmi/psalmus-xi"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","x-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-x"],
 		"datum":[["/psalmi/psalmus-xii"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","xi-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-xi"],
 		"datum":[["/psalmi/psalmus-xiii"]]
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-i","xii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-i","psalmus-xii"],
 		"datum":[["/psalmi/psalmus-xiv"]]
 	},
 	{
@@ -484,7 +454,7 @@
 		"datum":"Bonórum meórum * non índiges, in te sperávi, consérva me Dómine."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-ii","i-psalmus"],
+		"tags":["matutinum","dominica","nocturna-ii","psalmus-i"],
 		"datum":[["/psalmi/psalmus-xv"]]
 	},
 	{
@@ -492,7 +462,7 @@
 		"datum":"Propter verba * labiórum tuórum ego custodívi vias duras."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-ii","ii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-ii","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-xvi"]]
 	},
 	{
@@ -500,7 +470,7 @@
 		"datum":"Díligam te * Dómine virtus mea."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-ii","iii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-ii","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-xvii"]]
 	},
 	{
@@ -512,7 +482,7 @@
 		"datum":"Non sunt loquélæ, * neque sermónes, quorum non audiántur voces eórum."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-iii","i-psalmus"],
+		"tags":["matutinum","dominica","nocturna-iii","psalmus-i"],
 		"datum":[["/psalmi/psalmus-xviii"]]
 	},
 	{
@@ -520,7 +490,7 @@
 		"datum":"Exaúdiat * te Dóminus in die tribulatiónis."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-iii","ii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-iii","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-xix"]]
 	},
 	{
@@ -528,7 +498,7 @@
 		"datum":"Dómine * in virtúte tua lætábitur rex."
 	},
 	{
-		"tags":["matutinum","dominica","nocturna-iii","iii-psalmus"],
+		"tags":["matutinum","dominica","nocturna-iii","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-xx"]]
 	},
 	{
@@ -540,11 +510,11 @@
 		"datum":"Dóminus defénsor * vitæ meæ."
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","i-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-i"],
 		"datum":[["/psalmi/psalmus-xxvi"]]
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","ii-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-xxvii"]]
 	},
 	{
@@ -552,11 +522,11 @@
 		"datum":"Adoráte * Dóminum in aula sancta ejus."
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","iii-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-xxviii"]]
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","iv-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-xxix"]]
 	},
 	{
@@ -564,11 +534,11 @@
 		"datum":"In tua justítia * líbera me Dómine."
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","v-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-v"],
 		"datum":[["/psalmi/psalmus-xxx"]]
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","vi-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-vi"],
 		"datum":[["/psalmi/psalmus-xxxi"]]
 	},
 	{
@@ -576,11 +546,11 @@
 		"datum":"Rectos decet * collaudátio."
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","vii-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-vii"],
 		"datum":[["/psalmi/psalmus-xxxii"]]
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","viii-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-viii"],
 		"datum":[["/psalmi/psalmus-xxxiii"]]
 	},
 	{
@@ -588,11 +558,11 @@
 		"datum":"Expúgna * impugnántes me."
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","ix-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-ix"],
 		"datum":[["/psalmi/psalmus-xxxiv"]]
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","x-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-x"],
 		"datum":[["/psalmi/psalmus-xxxv"]]
 	},
 	{
@@ -600,11 +570,11 @@
 		"datum":"Revéla * Dómino viam tuam."
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","xi-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-xi"],
 		"datum":[["/psalmi/psalmus-xxxvi"]]
 	},
 	{
-		"tags":["matutinum","feria","feria-ii","xii-psalmus"],
+		"tags":["matutinum","feria","feria-ii","psalmus-xii"],
 		"datum":[["/psalmi/psalmus-xxxvii"]]
 	},
 	{

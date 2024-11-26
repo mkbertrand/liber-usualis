@@ -5,8 +5,8 @@
 		"datum":"Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","i-psalmus"],
-		"datum":[["/psalmi/psalmus-cix"]]
+		"tags":["episcopus","confessor","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cix,gloria"]]
 	},
 	{
 		"tags":["episcopus","confessor","antiphona","antiphona-ii"],
@@ -14,8 +14,8 @@
 		"datum":"Non est invéntus * símilis illi, qui conserváret legem Excélsi."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-cx"]]
+		"tags":["episcopus","confessor","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
 		"tags":["episcopus","confessor","antiphona","antiphona-iii"],
@@ -23,8 +23,8 @@
 		"datum":"Ídeo jurejurándo * fecit illum Dóminus créscere in plebem suam."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-cxi"]]
+		"tags":["episcopus","confessor","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
 		"tags":["episcopus","confessor","antiphona","antiphona-iv"],
@@ -32,8 +32,8 @@
 		"datum":"Sacerdótes Dei * benedícite Dóminum: servi Dómini hymnum dícite Deo, allelúja."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","iv-psalmus"],
-		"datum":[["/psalmi/psalmus-cxii"]]
+		"tags":["episcopus","confessor","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
 		"tags":["episcopus","confessor","antiphona","antiphona-v"],
@@ -41,12 +41,12 @@
 		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
 	},
 	{
-		"tags":["episcopus","confessor","i-vesperae","vesperae","v-psalmus"],
-		"datum":[["/psalmi/psalmus-cxvi"]]
+		"tags":["episcopus","confessor","i-vesperae","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","ii-vesperae","vesperae","v-psalmus"],
-		"datum":[["/psalmi/psalmus-cxxxi"]]
+		"tags":["episcopus","confessor","ii-vesperae","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxxxi,gloria"]]
 	},
 	{
 		"tags":["episcopus","confessor","vesperae","capitulum"],

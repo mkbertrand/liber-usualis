@@ -5,8 +5,8 @@
 		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis."
 	},
 	{
-		"tags":["vidua","vesperae","i-psalmus"],
-		"datum":[["/psalmi/psalmus-cix"]]
+		"tags":["vidua","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cix,gloria"]]
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-ii"],
@@ -14,8 +14,8 @@
 		"datum":"In odórem * unguentórum tuórum cúrrimus; adolescéntulæ dilexérunt te nimis."
 	},
 	{
-		"tags":["vidua","vesperae","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-cxii"]]
+		"tags":["vidua","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-iii"],
@@ -23,8 +23,8 @@
 		"datum":"Jam hiems tránsiit, * imber ábiit, et recéssit: surge amíca mea, et veni."
 	},
 	{
-		"tags":["vidua","vesperae","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-cxxi"]]
+		"tags":["vidua","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxxi,gloria"]]
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-iv"],
@@ -32,8 +32,8 @@
 		"datum":"Veni elécta mea, * et ponam in te thronum meum, allelúja."
 	},
 	{
-		"tags":["vidua","vesperae","iv-psalmus"],
-		"datum":[["/psalmi/psalmus-cxxvi"]]
+		"tags":["vidua","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxxvi,gloria"]]
 	},
 	{
 		"tags":["vidua","antiphona","antiphona-v"],
@@ -41,8 +41,8 @@
 		"datum":"Ista est speciósa * inter fílias Jerúsalem."
 	},
 	{
-		"tags":["vidua","vesperae","v-psalmus"],
-		"datum":[["/psalmi/psalmus-cxlvii"]]
+		"tags":["vidua","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxlvii,gloria"]]
 	},
 	{
 		"tags":["vidua","martyr","capitulum"],
@@ -109,8 +109,8 @@
 		"datum":"O quam pulchra * est casta generátio cum claritáte!"
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-i","i-psalmus"],
-		"datum":[["/psalmi/psalmus-viii"]]
+		"tags":["vidua","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-ii"],
@@ -118,8 +118,8 @@
 		"datum":"Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-i","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-xviii"]]
+		"tags":["vidua","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xviii,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-iii"],
@@ -127,8 +127,8 @@
 		"datum":"Revértere, * revértere Sunamítis: revértere, revértere, ut intueámur te."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-i","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-xxiii"]]
+		"tags":["vidua","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","versiculus"],
@@ -194,8 +194,8 @@
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","i-psalmus"],
-		"datum":[["/psalmi/psalmus-xliv"]]
+		"tags":["vidua","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xliv,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-ii"],
@@ -203,8 +203,8 @@
 		"datum":"Adjuvábit eam * Deus vultu suo: Deus médio ejus, non commovébitur."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-xlv"]]
+		"tags":["vidua","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xlv,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-iii"],
@@ -212,8 +212,8 @@
 		"datum":"Aquæ multæ * non potuérunt exstínguere caritátem."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-xlvii"]]
+		"tags":["vidua","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xlvii,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","versiculus"],
@@ -279,8 +279,8 @@
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-iii","i-psalmus"],
-		"datum":[["/psalmi/psalmus-xcv"]]
+		"tags":["vidua","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xcv,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-ii"],
@@ -288,8 +288,8 @@
 		"datum":"Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-iii","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-xcvi"]]
+		"tags":["vidua","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-iii"],
@@ -297,8 +297,8 @@
 		"datum":"Veni sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-iii","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-xcvii"]]
+		"tags":["vidua","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xcvii,gloria"]]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","versiculus"],
@@ -316,15 +316,9 @@
 	{
 		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i"],
 		"src":"nocturnale/MUNXN3R1",
-		"datum":"Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus: considerávit sémitas domus suæ,"
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i","responsum"],
-		"datum":"Et panem otiósa non comédit."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i","versus"],
-		"datum":"Gustávit et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus."
+		"incipit":"Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus: considerávit sémitas domus suæ,",
+		"responsum":"Et panem otiósa non comédit.",
+		"versus":"Gustávit et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-ii"],
@@ -333,15 +327,9 @@
 	{
 		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"src":"nocturnale/MUVXN3R2",
-		"datum":"Regnum mundi, et omnem ornátum sǽculi contémpsi, propter amórem Dómini mei Jesu Christi:"
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii","responsum"],
-		"datum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii","versus"],
-		"datum":"Eructávit cor meum verbum bonum: dico ego ópera mea regi."
+		"incipit":"Regnum mundi, et omnem ornátum sǽculi contémpsi, propter amórem Dómini mei Jesu Christi:",
+		"responsum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi.",
+		"versus":"Eructávit cor meum verbum bonum: dico ego ópera mea regi."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-iii"],
@@ -357,17 +345,11 @@
 		"datum":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus."
 	},
 	{
-		"tags":["vidua","tertia","responsorium-breve","incipit"],
+		"tags":["vidua","tertia","responsorium-breve"],
 		"src":"gregobase/3208",
-		"datum":"Spécie tua"
-	},
-	{
-		"tags":["vidua","tertia","responsorium-breve","responsum"],
-		"datum":"Et pulchritúdine tua."
-	},
-	{
-		"tags":["vidua","tertia","responsorium-breve","versus"],
-		"datum":"Inténde, próspere procéde, et regna."
+		"incipit":"Spécie tua",
+		"responsum":"Et pulchritúdine tua.",
+		"versus":"Inténde, próspere procéde, et regna."
 	},
 	{
 		"tags":["vidua","tertia","versiculus"],
@@ -382,17 +364,11 @@
 		"datum":"Manum suam apéruit ínopi, et palmas suas exténdit ad paúperem. Non timébit dómui suæ a frigóribus nivis."
 	},
 	{
-		"tags":["vidua","sexta","responsorium-breve","incipit"],
+		"tags":["vidua","sexta","responsorium-breve"],
 		"src":"gregobase/8710",
-		"datum":"Adjuvábit eam"
-	},
-	{
-		"tags":["vidua","sexta","responsorium-breve","responsum"],
-		"datum":"Deus vultu suo."
-	},
-	{
-		"tags":["vidua","sexta","responsorium-breve","versus"],
-		"datum":"Deus in médio ejus, non commovébitur."
+		"incipit":"Adjuvábit eam",
+		"responsum":"Deus vultu suo.",
+		"versus":"Deus in médio ejus, non commovébitur."
 	},
 	{
 		"tags":["vidua","sexta","versiculus"],
@@ -407,17 +383,11 @@
 		"datum":"Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum, ipsa laudábitur."
 	},
 	{
-		"tags":["vidua","nona","responsorium-breve","incipit"],
+		"tags":["vidua","nona","responsorium-breve"],
 		"src":"gregobase/3143",
-		"datum":"Elégit eam Deus,"
-	},
-	{
-		"tags":["vidua","nona","responsorium-breve","responsum"],
-		"datum":"Et præelégit eam."
-	},
-	{
-		"tags":["vidua","nona","responsorium-breve","versus"],
-		"datum":"In tabernáculo suo habitáre facit eam."
+		"incipit":"Elégit eam Deus,",
+		"responsum":"Et præelégit eam.",
+		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
 		"tags":["vidua","nona","versiculus"],

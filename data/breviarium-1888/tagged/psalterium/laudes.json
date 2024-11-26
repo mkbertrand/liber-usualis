@@ -13,8 +13,7 @@
 			["laudes","hymnus","primarium","tempus"],
 			["laudes","versiculus"],
 			["laudes","benedictus","antiphona-prior"],
-			["benedictus"],
-			["gloria-psalmi"],
+			["/psalmi/benedictus,gloria"],
 			["laudes","antiphona","antiphona-benedictus","repetita"],
 			["preces"],
 			["collecta-primaria"],
@@ -34,11 +33,11 @@
 		"tags":["laudes","psalmodia","duplex"],
 		"datum":[
 			["laudes","antiphona","antiphona-i"],
-			["i-psalmus"],
+			["psalmus-i"],
 			["gloria-psalmi"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			["laudes","antiphona","antiphona-ii"],
-			["ii-psalmus"],
+			["psalmus-ii"],
 			["gloria-psalmi"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii"],
@@ -50,10 +49,7 @@
 			["canticum"],
 			["laudes","antiphona","antiphona-iv","repetita"],
 			["laudes","antiphona","antiphona-v"],
-			["psalmus-cxlviii"],
-			["psalmus-cxlix"],
-			["psalmus-cl"],
-			["gloria-psalmi"],
+			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
 			["laudes","antiphona","antiphona-v","repetita"]
 		]
 	},
@@ -61,11 +57,11 @@
 		"tags":["laudes","psalmodia"],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
-			["i-psalmus"],
+			["psalmus-i"],
 			["gloria-psalmi"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			["laudes","antiphona","antiphona-ii","intonata"],
-			["ii-psalmus"],
+			["psalmus-ii"],
 			["gloria-psalmi"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii","intonata"],
@@ -77,10 +73,7 @@
 			["canticum"],
 			["laudes","antiphona","antiphona-iv","repetita"],
 			["laudes","antiphona","antiphona-v","intonata"],
-			["psalmus-cxlviii"],
-			["psalmus-cxlix"],
-			["psalmus-cl"],
-			["gloria-psalmi"],
+			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
 			["laudes","antiphona","antiphona-v","repetita"]
 		]
 	},
@@ -89,22 +82,15 @@
 		"tags":["laudes","dominica","per-annum","psalmodia"],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
-			["psalmus-xcii"],
-			["gloria-psalmi"],
-			["psalmus-xcix"],
-			["gloria-psalmi"],
-			["psalmus-lxii"],
-			["psalmus-lxvi"],
-			["gloria-psalmi"],
+			["/psalmi/psalmus-xcii,gloria"],
+			["/psalmi/psalmus-xcix,gloria"],
+			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			["laudes","antiphona","antiphona-ii","intonata"],
-			["trium-puerorum"],
+			["/psalmi/trium-puerorum"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii","intonata"],
-			["psalmus-cxlviii"],
-			["psalmus-cxlix"],
-			["psalmus-cl"],
-			["gloria-psalmi"],
+			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
 			["laudes","antiphona","antiphona-iii","repetita"]
 		]
 	},
@@ -166,12 +152,12 @@
 		"datum":["V. Dóminus regnávit, decórem índuit.","R. Índuit Dóminus fortitúdinem, et præcínxit se virtúte."]
 	},
 	{
-		"tags":["laudes","i-psalmus"],
-		"datum":[["/psalmi/psalmus-xcii"]]
+		"tags":["laudes","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xcii,gloria"]]
 	},
 	{
-		"tags":["laudes","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-xcix"]]
+		"tags":["laudes","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcix,gloria"]]
 	},
 	{
 		"tags":["laudes","canticum"],
@@ -182,16 +168,16 @@
 		"datum":"Miserére * mei Deus."
 	},
 	{
-		"tags":["laudes","feria","i-psalmus"],
-		"datum":[["/psalmi/psalmus-l"]]
+		"tags":["laudes","feria","psalmus-i"],
+		"datum":[["/psalmi/psalmus-l,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-ii"],
 		"datum":"Intéllige * clamórem meum Dómine."
 	},
 	{
-		"tags":["laudes","feria","feria-ii","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-v"]]
+		"tags":["laudes","feria","feria-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-v,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-iii"],
@@ -203,10 +189,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","canticum"],
-		"datum":[
-			["canticum-isaiae-prophetae"],
-			["gloria-psalmi"]
-		]
+		"datum":[["/psalmi/isaiae-prophetae,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-v"],
@@ -299,8 +282,8 @@
 		"datum":"Salutáre * vultus mei, et Deus meus."
 	},
 	{
-		"tags":["laudes","feria","feria-iii","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-xlii"]]
+		"tags":["laudes","feria","feria-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xlii,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-iii"],
@@ -312,10 +295,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","canticum"],
-		"datum":[
-			["canticum-ezechiae"],
-			["gloria-psalmi"]
-		]
+		"datum":[["/psalmi/canticum-ezechiae,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-v"],
@@ -346,7 +326,7 @@
 		"datum":"Te decet * hymnus Deus in Sion."
 	},
 	{
-		"tags":["laudes","feria","feria-iv","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-lxiv"]]
+		"tags":["laudes","feria","feria-iv","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxiv,gloria"]]
 	}
 ]

@@ -22,8 +22,8 @@
 		"datum":"Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos."
 	},
 	{
-		"tags":["apostolus","vesperae","i-psalmus"],
-		"datum":[["/psalmi/psalmus-cix"]]
+		"tags":["apostolus","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cix,gloria"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-ii"],
@@ -31,8 +31,8 @@
 		"datum":"Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-cx"]]
+		"tags":["apostolus","i-vesperae","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iii"],
@@ -40,8 +40,8 @@
 		"datum":"Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-cxi"]]
+		"tags":["apostolus","i-vesperae","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iv"],
@@ -49,8 +49,8 @@
 		"datum":"Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","iv-psalmus"],
-		"datum":[["/psalmi/psalmus-cxii"]]
+		"tags":["apostolus","i-vesperae","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-v"],
@@ -58,8 +58,8 @@
 		"datum":"In patiéntia vestra * possidébitis ánimas vestras."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","v-psalmus"],
-		"datum":[["/psalmi/psalmus-cxvi"]]
+		"tags":["apostolus","i-vesperae","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
 		"tags":[
@@ -121,8 +121,8 @@
 		"datum":"In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-i","i-psalmus"],
-		"datum":[["/psalmi/psalmus-xviii"]]
+		"tags":["apostolus","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xviii,gloria"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-ii"],
@@ -130,8 +130,8 @@
 		"datum":"Clamavérunt justi, * et Dóminus exaudívit eos."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-i","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-xxxiii"]]
+		"tags":["apostolus","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xxxiii,gloria"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-iii"],
@@ -139,8 +139,8 @@
 		"datum":"Constítues * eos príncipes super omnem terram: mémores erunt nóminis tui Dómine."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-i","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-xliv"]]
+		"tags":["apostolus","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xliv,gloria"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-i"],
@@ -152,15 +152,9 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"src":"nocturnale/APEXN1R1",
-		"datum":"Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:"
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i","responsum"],
-		"datum":"Estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ."
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i","versum"],
-		"datum":"Dum lucem habétis, crédite in lucem, ut fílii lucis sitis."
+		"incipit":"Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:",
+		"responsum":"Estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ.",
+		"versus":"Dum lucem habétis, crédite in lucem, ut fílii lucis sitis."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -169,15 +163,9 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"src":"nocturnale/APEXN1R2",
-		"datum":"Tóllite jugum meum super vos, dicit Dóminus, et díscite a me, quia mitis sum, et húmilis corde:"
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii","responsum"],
-		"datum":"Jugum enim meum suáve est, et onus meum leve."
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii","versum"],
-		"datum":"Et inveniétis réquoe, animábus vestris."
+		"incipit":"Tóllite jugum meum super vos, dicit Dóminus, et díscite a me, quia mitis sum, et húmilis corde:",
+		"responsum":"Jugum enim meum suáve est, et onus meum leve.",
+		"versus":"Et inveniétis réquoe, animábus vestris."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -186,15 +174,9 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii"],
 		"src":"nocturnale/APEXN1R3",
-		"datum":"Dum steréritis ante reges et prǽsides, nolíte cogitáre quómodo quid loquámini:"
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii","responsum"],
-		"datum":"Dábitur enim vobis in illa hora, quid loquámini."
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii","versum"],
-		"datum":"Non enim vos estis qui loquímini: sed Spíritus Patris vestri, qui lóquitur in vobis."
+		"incipit":"Dum steréritis ante reges et prǽsides, nolíte cogitáre quómodo quid loquámini:",
+		"responsum":"Dábitur enim vobis in illa hora, quid loquámini.",
+		"versus":"Non enim vos estis qui loquímini: sed Spíritus Patris vestri, qui lóquitur in vobis."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-i"],
@@ -202,8 +184,8 @@
 		"datum":"Príncipes populórum * congregáti sunt cum Deo Ábraham."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-ii","i-psalmus"],
-		"datum":[["/psalmi/psalmus-xlvi"]]
+		"tags":["apostolus","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xlvi,gloria"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
@@ -211,8 +193,8 @@
 		"datum":"Dedísti hæreditátem * timéntibus nomen tuum Dómine."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-ii","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-lx"]]
+		"tags":["apostolus","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lx,gloria"]]
 	},
 	{
 		"tags":["apostolus","mtutinum","nocturna-ii","antiphona","antiphona-iii"],
@@ -220,8 +202,8 @@
 		"datum":"Annuntiavérunt * ópera Dei, et facta ejus intellexérunt."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-ii","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-lxiii"]]
+		"tags":["apostolus","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","versiculus"],
@@ -237,15 +219,9 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"src":"nocturnale/APEXN2R1",
-		"datum":"Vidi conjúnctos viros, habéntes spléndidas vestes, et Angelus Dómini locútus est ad me, dicens:"
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i","responsum"],
-		"datum":"Isti sunt viri sancti facti amíci Dei."
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i","versum"],
-		"datum":"Vidi Angelum Dei fortem, volántem per médium cœlum, voce magna clamántem et dicéntem."
+		"incipit":"Vidi conjúnctos viros, habéntes spléndidas vestes, et Angelus Dómini locútus est ad me, dicens:",
+		"responsum":"Isti sunt viri sancti facti amíci Dei.",
+		"versus":"Vidi Angelum Dei fortem, volántem per médium cœlum, voce magna clamántem et dicéntem."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","lectio","lectio-ii"],
@@ -254,15 +230,9 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"src":"nocturnale/APEXN2R2",
-		"datum":"Beáti estis, cum maledíxerint vobis hómines, et persecúti vos fúerint, díxerint omne malum advérsum vos, mentiéntes, propter me:"
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii","responsum"],
-		"datum":"Gaudéte et exsultáte, quóniam merces vestra copiósa est in cœlis."
-	},
-	{
-		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii","versum"],
-		"datum":"Cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis."
+		"incipit":"Beáti estis, cum maledíxerint vobis hómines, et persecúti vos fúerint, díxerint omne malum advérsum vos, mentiéntes, propter me:",
+		"responsum":"Gaudéte et exsultáte, quóniam merces vestra copiósa est in cœlis.",
+		"versus":"Cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -271,39 +241,71 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"src":"nocturnale/APEXN2R3",
-		"datum":"Isti sunt triumphatóres et amíci Dei, qui contemnéntes jussa príncipum, meruérunt prǽmia ætérna:"
+		"incipit":"Isti sunt triumphatóres et amíci Dei, qui contemnéntes jussa príncipum, meruérunt prǽmia ætérna:",
+		"responsum":"Modo coronántur, et accípiunt palmam.",
+		"versus":"Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii","responsum"],
-		"datum":"Modo coronántur, et accípiunt palmam."
+		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/APEXN3A1",
+		"datum":"Exaltabúntur * córnua justi, allelúja."
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii","versum"],
-		"datum":"Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
+		"tags":["apostolus","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxiv,gloria"]]
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-vii"],
-		"datum":"Isti sunt qui vivéntes in carne, plantavérunt Ecclésiam sánguine suo:"
+		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/APEXN3A3",
+		"datum":"Lux orta est * justo, allelúja, rectis corde lætítia, allelúja."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-vii","responsum"],
-		"datum":"Cálicem Dómini bibérunt, et amíci Dei facti sunt."
+		"tags":["apostolus","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-vii","versum"],
-		"datum":"In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum."
+		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/APEXN3A3",
+		"datum":"Custodiébant * testimónia ejus, et præcépta ejus, allelúja."
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-viii"],
-		"datum":"Isti sunt viri sancti, quos elégit Dóminus in caritáte non ficta, et dedit illis glóriam sempitérnam:"
+		"tags":["apostolus","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xcviii,gloria"]]
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-viii","responsum"],
-		"datum":"Quorum doctrína fulget Ecclésia, ut sole luna."
+		"tags":["apostolus","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Nimis honoráti sunt amíci tui Deus.","R. Nimis confortátus est principátus eórum."]
 	},
 	{
-		"tags":["apostolus","matutinum","responsorium","responsorium-viii","versum"],
-		"datum":"Sancti per fidem vicérunt regna operáti sunt justítiam."
+		"tags":["apostolus","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Et réliqua.",
+			"Homilía S. Hierónymi Presbýteri.",
+			"Grandis fidúcia! Petrus piscátor erat, dives non fúerat, cibos manu et arte quærébat: et tamen lóquitur confidénter: Relíquimus ómnia. Et quia non súfficit tantum relínquere, jungit quod perféctum est: Et secúti sumus te. Fécimus quod jussísti: quid ígitur nobis dabis prǽmii? Jesus autem dixit illis: Amen dico vobis, quod vos qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Ísraël. Non dixit: Qui reliquístis ómnia; hoc enim et Crates fecit philósophus, et multi álii divítias contempsérunt: sed, Qui secúti estis me: quod próprie Apostolórum est, atque credéntium."
+		]
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/APEXN3R1",
+		"incipit":"Isti sunt qui vivéntes in carne, plantavérunt Ecclésiam sánguine suo:",
+		"responsum":"Cálicem Dómini bibérunt, et amíci Dei facti sunt.",
+		"versus":"In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ (quando et mórtui de corruptióne resúrgent incorrúpti), sedébitis et vos in sóliis judicántium, condemnántes duódecim tribus Ísraël: quia vobis credéntibus, illi crédere noluérunt. Et omnis qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit. Locus iste cum illa senténtia cóngruit, in qua Salvátor lóquitur: Non veni pacem míttere, sed gládium. Veni enim separáre hóminem a patre suo, et matrem a fília, et nurum a socru: et inimíci hóminis doméstici ejus. Qui ergo propter fidem Christi, et prædicatiónem Evangélii, omnes afféctus contémpserint, atque divítias et sǽculi voluptátes: isti céntuplum recípient, et vitam ætérnam possidébunt."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/APEXN3R2",
+		"incipit":"Isti sunt viri sancti, quos elégit Dóminus in caritáte non ficta, et dedit illis glóriam sempitérnam:",
+		"responsum":"Quorum doctrína fulget Ecclésia, ut sole luna.",
+		"versus":"Sancti per fidem vicérunt regna operáti sunt justítiam."
+	},
+	{
+		"tags":["apostolus","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Ex occasióne hujus senténtiæ quidam introdúcunt mille annos post resurrectiónem, dicéntes, tunc nobis céntuplum ómnium rerum quas dimísimus, et vitam ætérnam esse reddéndam: non intelligéntes, quod, si in céteris digna sit repromíssio, in uxóribus appáreat turpitúdo: ut qui unam pro Dómino dimíserit, centum recípiat in futúro. Sensus ergo iste est: Qui carnália pro Salvatóre dimíserit, spirituália recípiet: quæ comparatióne et mérito sui ita erunt, quasi si parvo número centenárius númerus comparétur."
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-i"],
@@ -316,8 +318,8 @@
 		"datum":"Cóllocet eum * Dóminus cum princípibus pópuli sui."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","ii-psalmus"],
-		"datum":[["/psalmi/psalmus-cxii"]]
+		"tags":["apostolus","ii-vesperae","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-iii"],
@@ -325,8 +327,8 @@
 		"datum":"Dirupísti Dómine * víncula mea: tibi sacrificábohóstiam laudis."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","iii-psalmus"],
-		"datum":[["/psalmi/psalmus-cxv"]]
+		"tags":["apostolus","ii-vesperae","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxv,gloria"]]
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-iv"],
@@ -334,8 +336,8 @@
 		"datum":"Eúntes ibant * et flebant, mitténtes sémina sua."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","iv-psalmus"],
-		"datum":[["/psalmi/psalmus-cxxv"]]
+		"tags":["apostolus","ii-vesperae","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxxv,gloria"]]
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-v"],
@@ -343,8 +345,8 @@
 		"datum":"Confortátus est * principátus eórum, et honorái sunt amíci sui Deus."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","v-psalmus"],
-		"datum":[["/psalmi/psalmus-cxxxviii"]]
+		"tags":["apostolus","ii-vesperae","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxxxviii,gloria"]]
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","versiculus"],
