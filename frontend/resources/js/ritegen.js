@@ -1,6 +1,10 @@
 // Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 function stringrender(data) {
+	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
+		.replaceAll('É', 'E').replaceAll('Í', 'I')
+		.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
+		.replaceAll('Ý', 'Y');
 	data = data.replaceAll(/\//g, '<br>');
 
 	let numbers = data.match(/^[0-9]+\s/gm);
