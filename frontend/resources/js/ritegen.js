@@ -7,7 +7,7 @@ function stringrender(data) {
 		.replaceAll('Ý', 'Y');
 	data = data.replaceAll(/\//g, '<br>');
 
-	let numbers = data.match(/^[0-9]+\s/gm);
+	let numbers = data.match(/\s[0-9]+\s/gm);
 
 	if (numbers != null) {
 		numbers.reverse();
