@@ -18,9 +18,9 @@ function stringrender(data) {
 
 	data = data.replace(/\n/g, '<br>')
 		.replace(/N\./g, '<span class=\'red\'>N.</span>')
+		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
 		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
 		.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
-		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
 		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
 		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
 		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
@@ -39,21 +39,54 @@ function renderinner(data, chant, translated = null, translationpool = null, par
 		translated = tran['datum'];
 	};
 
-	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('nomen-ritus')) {
-		nom = data['datum'][1];
-		if (typeof data['datum'][1] === 'object')
-			nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
-		return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
-	}
+	try {
+		if (typeof data === 'object' && 'tags' in data) {
+			if (data['tags'].includes('nomen-ritus')) {
+				nom = data['datum'][1];
+				if (typeof data['datum'][1] === 'object')
+					nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
+				return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
+			} else if (data['tags'].includes('responsorium') && data['tags'].includes('hebdomada-i-adventus') && data['tags'].includes('dominica') && data['tags'].includes('nocturna-i') && data['tags'].includes('responsorium-i')) {
+				incipit = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('incipit'))[0];
+				src = incipit['src'];
+				incipit = incipit['datum'];
+				responsei = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-i'))[0]['datum'];
+				versei = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus-i'))[0]['datum'];
+				responseii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-ii'))[0]['datum'];
+				verseii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus-ii'))[0]['datum'];
+				responseiii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-iii'))[0]['datum'];
+				verseiii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus-iii'))[0]['datum'];
+				gloria = data['datum'].filter((item) => typeof item === 'string')[0];
+				data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii} * ${responseiii}/V. ${versei}/R. ${responsei}/V. ${verseii}/R. ${responseii}/V. ${verseiii}/R. ${responseiii}/V. ${gloria}/R. ${responsei} * ${responseii} * ${responseiii}`}
 
-	if (typeof data === 'object' && 'tags' in data && data['tags'].includes('responsorium-breve')) {
-		incipit = data['datum'][0];
-		response = data['datum'][1];
-		verse = data['datum'][4];
-		gloria = data['datum'].length == 9 ? data['datum'][6] : null;
-		data = {src: incipit['src'], tags: data['tags'], datum: 'R. br. ' + incipit['datum'] + ' * ' + response['datum'] + '/R. ' + incipit['datum'] + ' * ' + response['datum'] + '/V. ' + verse['datum'] + '/R. ' + response['datum'] + (gloria === null ? '' : '/V. ' + gloria) + '/R. ' + incipit['datum'] + ' * ' + response['datum']};
-	}
+			} else if (data['tags'].includes('responsorium') && data['tags'].includes('formula') && typeof data['datum'][0] === 'object') {
+				incipit = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('incipit'))[0];
+				src = incipit['src'];
+				incipit = incipit['datum'];
+				response = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum'))[0];
+				verse = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus'))[0]['datum'];
+				gloria = data['datum'].filter((item) => typeof item === 'string')[0];
+				if (response == undefined) {
+					responsei = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-i'))[0]['datum'];
+					responseii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-ii'))[0]['datum'];
+					data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii}/V. ${verse}/R. ${responsei}/V. ${gloria}/R. ${responseii}`}
+				} else {
+					response = response['datum'];
+					data = {src: src, tags: data['tags'], datum: gloria == undefined ? `R. ${incipit} * ${response}/V. ${verse}/R. ${response}` : `R. ${incipit} * ${response}/V. ${verse}/R. ${response}/V. ${gloria}/R. ${response}`}
+				}
 
+			} else if (data['tags'].includes('responsorium-breve')) {
+				incipit = data['datum'][0]['datum'];
+				response = data['datum'][1]['datum'];
+				verse = data['datum'][4]['datum'];
+				gloria = data['datum'].length == 9 ? data['datum'][6] : null;
+				data = {src: data['datum'][0]['src'], tags: data['tags'], datum: `R. br. ${incipit} * ${response}/R. ${incipit} * ${response}/V. ${verse}/R. ${response} ${gloria == null ? '' : '/V. ' + gloria}/R. ${incipit} * ${response}`};
+			}
+		}
+	} catch(err) {
+		console.log(err);
+		console.log("Some objects failed to render correctly.");
+	}
 	if (typeof data === 'object' && Array.isArray(data)) {
 		let ret = '';
 		// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
