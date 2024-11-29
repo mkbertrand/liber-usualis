@@ -642,6 +642,84 @@
 		]
 	},
 	{
+		"tags":["matutinum","feria","feria-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/EXF3A1",
+		"datum":"Ut non delínquam * in lingua mea."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xxxviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xxxix,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/EXF3A2",
+		"datum":"Sana * Dómine ánimam meam, quia peccávi tibi."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xl,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-xli,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/EXF3A3",
+		"datum":"Eructávit * cor meum verbum bonum."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-v"],
+		"datum":[["/psalmi/psalmus-xliii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-vi"],
+		"datum":[["/psalmi/psalmus-xliv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","antiphona","antiphona-iv"],
+		"src":"nocturnale/EXF3A4",
+		"datum":"Adjútor * in tribulatiónibus."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-vii"],
+		"datum":[["/psalmi/psalmus-xlv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-viii"],
+		"datum":[["/psalmi/psalmus-xlvi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","antiphona","antiphona-v"],
+		"src":"nocturnale/EXF3A5",
+		"datum":"Magnus Dóminus * et laudábilis nimis."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-ix"],
+		"datum":[["/psalmi/psalmus-xlvii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-x"],
+		"datum":[["/psalmi/psalmus-xlviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","antiphona","antiphona-vi"],
+		"src":"nocturnale/F4N3A1",
+		"datum":"Deus deórum * Dóminus locútus est."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-xi"],
+		"datum":[["/psalmi/psalmus-xlix,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","psalmus-xii"],
+		"datum":[["/psalmi/psalmus-li,gloria"]]
+	},
+	{
 		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/EXF4I",
 		"datum":"In manu tua Dómine * Omnes fines terræ."
@@ -658,6 +736,84 @@
 		]
 	},
 	{
+		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-i"],
+		"src":"nocturnale/EXF4A1",
+		"datum":"Avértit Dóminus * captivitátem plebis suæ."
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-liv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-ii"],
+		"src":"nocturnale/EXF4A2",
+		"datum":"Quóniam * in te confídit ánima mea."
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-lvi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-iii"],
+		"src":"nocturnale/EXF4A3",
+		"datum":"Justa judicáte * fílii hóminum."
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-v"],
+		"datum":[["/psalmi/psalmus-lvii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-vi"],
+		"datum":[["/psalmi/psalmus-lviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-iv"],
+		"src":"nocturnale/EXF4A4",
+		"datum":"Da nobis * Dómine auxílium de tribulatióne."
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-vii"],
+		"datum":[["/psalmi/psalmus-lix,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-viii"],
+		"datum":[["/psalmi/psalmus-lx,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-v"],
+		"src":"nocturnale/EXF4A5",
+		"datum":"Nonne Deo * subjécta erit ánima mea?"
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-ix"],
+		"datum":[["/psalmi/psalmus-lxi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-x"],
+		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","antiphona","antiphona-vi"],
+		"src":"nocturnale/EXF4A6",
+		"datum":"Benedícite * Gentes Deum nostrum."
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-xi"],
+		"datum":[["/psalmi/psalmus-lxv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","psalmus-xii"],
+		"datum":[["/psalmi/psalmus-lxvii,gloria"]]
+	},
+	{
 		"tags":["matutinum","feria","feria-v","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/EXF5I",
 		"datum":"Dóminum qui fecit nos, * Veníte adorémus."
@@ -672,6 +828,84 @@
 			"Repélle tu calíginem/Intrínsecus quam máxime,/Ut in beáto gaúdeat/Se collocári lúmine.",
 			["terminatio","praesta-pater"]
 		]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona","antiphona-i"],
+		"src":"nocturnale/EXF5A1",
+		"datum":"Dómine Deus * in adjutórium meum inténde."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxix,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona","antiphona-ii"],
+		"src":"nocturnale/EXF5A2",
+		"datum":"Esto mihi * Dómine in Deum protectórem."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxx,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-lxxi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona","antiphona-iii"],
+		"src":"nocturnale/EXF5A3",
+		"datum":"Liberásti virgam * hæreditátis tuæ."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-v"],
+		"datum":[["/psalmi/psalmus-lxxii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-vi"],
+		"datum":[["/psalmi/psalmus-lxxiii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona","antiphona-iv"],
+		"src":"nocturnale/EXF5A4",
+		"datum":"Et invocábimus * nomen tuum Dómine."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-vii"],
+		"datum":[["/psalmi/psalmus-lxxiv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-viii"],
+		"datum":[["/psalmi/psalmus-lxxv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona","antiphona-v"],
+		"src":"nocturnale/EXF5A5",
+		"datum":"Tu es Deus, * qui facis mirabília."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-ix"],
+		"datum":[["/psalmi/psalmus-lxxvi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-x"],
+		"datum":[["/psalmi/psalmus-lxxvii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona","antiphona-vi"],
+		"src":"nocturnale/EXF5A6",
+		"datum":"Propítius esto * peccátis nostris Dómine."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-xi"],
+		"datum":[["/psalmi/psalmus-lxxviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","psalmus-xii"],
+		"datum":[["/psalmi/psalmus-lxxix,gloria"]]
 	},
 	{
 		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-invitatorium"],
@@ -691,6 +925,84 @@
 		]
 	},
 	{
+		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-i"],
+		"src":"nocturnale/EXF6A1",
+		"datum":"Exsultáte * Deo adjutóri nostro."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxx,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-ii"],
+		"src":"nocturnale/EXF6A2",
+		"datum":"Tu solus * Altíssimus super omnem terram."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxxii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-lxxxiii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-iii"],
+		"src":"nocturnale/EXF6A3",
+		"datum":"Benedixísti * Dómine terram tuam."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-v"],
+		"datum":[["/psalmi/psalmus-lxxxiv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-vi"],
+		"datum":[["/psalmi/psalmus-lxxxv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-iv"],
+		"src":"nocturnale/EXF6A4",
+		"datum":"Fundaménta ejus * in móntibus sanctis."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-vii"],
+		"datum":[["/psalmi/psalmus-lxxxvi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-viii"],
+		"datum":[["/psalmi/psalmus-lxxxvii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-v"],
+		"src":"nocturnale/EXF6A5",
+		"datum":"Benedíctus * Dóminus in ætérnum."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-ix"],
+		"datum":[["/psalmi/psalmus-lxxxviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-x"],
+		"datum":[["/psalmi/psalmus-xciii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","antiphona","antiphona-vi"],
+		"src":"nocturnale/EXF6A6",
+		"datum":"Cantáte * Dómino, et benedícite nómini ejus."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-xi"],
+		"datum":[["/psalmi/psalmus-xcv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","psalmus-xii"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
+	},
+	{
 		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/F6I",
 		"datum":"Dóminum Deum nostrum * Veníte, adorémus."
@@ -705,5 +1017,98 @@
 			"Quicúmque ut horas nóctium/Nunc concinéndo rúmpimus,/Ditémur omnes áffatim/Donis beátæ pátriæ.",
 			["terminatio","praesta-pater"]
 		]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-i"],
+		"src":"nocturnale/EXF7A1",
+		"datum":"Quia mirabília * fecit Dóminus."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xcvii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcviii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-ii"],
+		"src":"nocturnale/EXF7A2a",
+		"datum":"Jubiláte * Deo omnis terra."
+	},
+	{
+		"tags":[
+			["matutinum","feria","sabbatum","vigilia","nativitas","antiphona","antiphona-ii"],
+			["matutinum","feria","sabbatum","bmv-sabbatum","antiphona","antiphona-ii"]
+		],
+		"src":"nocturnale/EXF7A2b",
+		"datum":"Bonum est * confitéri Dómino"
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xcix,gloria"]]
+	},
+	{
+		"tags":[
+			["matutinum","feria","sabbatum","vigilia","nativitas","psalmus-iii"],
+			["matutinum","feria","sabbatum","bmv-sabbatum","psalmus-iii"]
+		],
+		"datum":[["/psalmi/psalmus-xci,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-c,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-iii"],
+		"src":"nocturnale/EXF7A3",
+		"datum":"Clamor meus * ad te véniat Deus."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-v"],
+		"datum":[["/psalmi/psalmus-ci,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-vi"],
+		"datum":[["/psalmi/psalmus-cii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-iv"],
+		"src":"nocturnale/EXF7A4",
+		"datum":"Bénedic * ánima mea Dómino."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-vii"],
+		"datum":[["/psalmi/psalmus-ciii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-viii"],
+		"datum":[["/psalmi/psalmus-civ,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-v"],
+		"src":"nocturnale/EXF7A5",
+		"datum":"Vísita nos * Dómine in salutári tuo."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-ix"],
+		"datum":[["/psalmi/psalmus-cv,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-x"],
+		"datum":[["/psalmi/psalmus-cvi,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona","antiphona-vi"],
+		"src":"nocturnale/EXF7A6",
+		"datum":"Confitébor Dómino * nimis in ore meo."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-xi"],
+		"datum":[["/psalmi/psalmus-cvii,gloria"]]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","psalmus-xii"],
+		"datum":[["/psalmi/psalmus-cviii,gloria"]]
 	}
 ]

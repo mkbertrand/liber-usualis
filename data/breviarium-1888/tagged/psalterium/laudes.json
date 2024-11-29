@@ -317,5 +317,162 @@
 	{
 		"tags":["laudes","feria","feria-iv","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-lxiv,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-iii"],
+		"datum":"Lábia mea * laudábunt te in vita mea, Deus meus."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-iv"],
+		"datum":"Dóminus judicábit * fines terræ."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","canticum"],
+		"datum":[["/psalmi/canticum-annae,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-v"],
+		"datum":"Cœli cœlórium * laudáte Deum."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","hymnus"],
+		"datum":[
+			"Nox, et tenébræ, et núbila,/Confúsa mundi et túrbida:/Lux intrat, albéscit polus:/Christus venit: discédite.",
+			"Calígo terræ scínditur/Percússa solis spículo,/Rebúsque jam color redit,/Vultu niténtis síderis.",
+			"Te Christe solum nóvimus:/Te mente pura et símplici,/Flendo et canéndo quǽsumus,/Inténde nostris sénsibus.",
+			"Sunt multa fucis íllita,/Quæ luce purgéntur tua:/Tu vera lux cœléstium/Vultu seréno illúmina.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-benedictus"],
+		"datum":"De manu ómnium * qui odérunt nos, líbera nos Dómine."
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-i"],
+		"datum":"Tibi soli peccávi, * Dómine miserére mei."
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-ii"],
+		"datum":"Dómine, * refúgium factus es nobis."
+	},
+	{
+		"tags":["laudes","feria","feria-v","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxix,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-iii"],
+		"datum":"In matutínis * meditábor in te."
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-iv"],
+		"datum":"Cantémus * Dómino glorióse."
+	},
+	{
+		"tags":["laudes","feria","feria-v","canticum"],
+		"datum":[["/psalmus/canticum-moysis,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-v"],
+		"datum":"In sanctis ejus * laudáte Deum."
+	},
+	{
+		"tags":["laudes","feria","feria-v","hymnus"],
+		"datum":[
+			"Lux ecce surgit aúrea,/Pallens facéssat cǽcitas,/Quæ nosmet in præceps diu/Erróre traxit dévio.",
+			"Hæc lux serénum cónferat,/Purósque nos præstet sibi:/Nihil loquámur súbdolum:/Volvámus obscúrum nihil.",
+			"Sic tota decúrrat dies,/Ne lingua mendax, ne manus/Oculíve peccent lúbrici,/Ne noxa corpus ínquinet.",
+			"Speculátor astat désuper,/Qui nos diébus ómnibus,/Actúsque nostros próspicit/A luce prima in vésperum.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-benedictus"],
+		"datum":"In sanctitáte * serviámus Dómino, et liberábit nos ab inimícis nostris."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-i"],
+		"datum":"Spíritu principáli * confírma cor meum Deus."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-ii"],
+		"datum":"In veritáte * tua exaúdi me Dómine."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxlii,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-iii"],
+		"datum":"Illúmina Dómine * vultum tuum super nos."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-iv"],
+		"datum":"Dómine * audívi audítum tuum et tímui."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","canticum"],
+		"datum":[["/psalmi/canticum-habacuc,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-v"],
+		"datum":"In týmpano * et choro, in chordis et órgano laudáte Deum."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","hymnus"],
+		"datum":[
+			"Ætérna cœli glória,/Beáta spes mortálium,/Summi Tonántis Únice,/Castǽque proles Vírginis:",
+			"Da déxteram surgéntibus,/Exsúrgat ut mens sóbria,/Flagrans et in laudem Dei/Grates repéndat débitas.",
+			"Ortus refúlget lúcifer,/Præítque solem núntius:/Cadunt tenébræ nóctium:/Lux sancta nos illúminet.",
+			"Manénsque nostris sénsibus,/Noctem repéllat sǽculi,/Omníque fine témporis/Purgáta servet péctora.",
+			"Quæsíta jam primum fides/In corde radíces agat:/Secúnda spes congaúdeat,/Qua major exstat cáritas.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-benedictus"],
+		"datum":"Per víscera * misericórdiæ Dei nostri visitávit nos Óriens ex alto."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-i"],
+		"datum":"Benígne fac * in bona voluntáte tua Dómine."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-ii"],
+		"datum":"Bonum est * confíteri Dómino."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xci,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-iii"],
+		"datum":"Métuant Dóminum * omnes fines terræ."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-iv"],
+		"datum":"Date magnitúdinem * Deo nostro."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","canticum"],
+		"datum":[["/psalmi/canticum-moysis-ii,gloria"]]
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-v"],
+		"datum":"In cýmbalis benesonántibus * laudáte Deum."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","hymnus"],
+		"src":"gregobase/12329",
+		"datum":[
+			"Auróra jam spargit polum:/Terris dies illábitur./Lucis resúltat spículum:/Discédat omne lúbricum.",
+			"Phantásma noctis éxsulet:/Mentis reátus córruat:/Quidquid tenébris hórridum/Nox áttulit culpæ, cadat.",
+			"Ut mane, quod nos últimum/Hic deprecámur cérnui,/Cum luce nobis éffluat,/Hoc dum canóre cóncrepat.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-benedictus"],
+		"datum":"Illumináre * Dómine his, qui in ténebris sedent, et dírige pedes nostros in viam pacis, Deus Ísraël."
 	}
 ]
