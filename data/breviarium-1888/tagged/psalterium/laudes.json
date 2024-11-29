@@ -10,7 +10,7 @@
 			["laudes","psalmodia"],
 			["laudes","capitulum"],
 			"Deo grátias.",
-			["laudes","hymnus","primarium","tempus"],
+			["laudes","hymnus"],
 			["laudes","versiculus"],
 			["laudes","benedictus","antiphona-prior"],
 			["/psalmi/benedictus,gloria"],
@@ -113,9 +113,7 @@
 	{
 		"tags":[
 			["laudes","dominica","post-epiphaniam","hymnus"],
-			["laudes","dominica","post-pentecosten","hebdomada-i-octobris","hymnus"],
-			["laudes","dominica","post-pentecosten","october","hymnus"],
-			["laudes","dominica","post-pentecosten","november","hymnus"]
+			["laudes","dominica","autumnalis","hymnus"]
 		],
 		"src":"gregobase/13348",
 		"datum":[
