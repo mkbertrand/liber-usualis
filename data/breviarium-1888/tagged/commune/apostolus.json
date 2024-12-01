@@ -67,10 +67,13 @@
 			["apostolus","laudes","capitulum"],
 			["apostolus","tertia","capitulum"]
 		],
-		"datum":"Fratres: Jam non estis hóspites, et ádvenæ: sed estis cives sanctórum, et doméstici Dei: superædificáti super fundaméntum Apostolórum et Prophetárum, ipso summo angulári lápide Christo Jesu."
+		"datum":"Fratres: Jam non estis hóspites, et ádvenæ: + sed estis cives sanctórum, et doméstici Dei: superædificáti super fundaméntum Apostolórum et Prophetárum, * ipso summo angulári lápide Christo Jesu."
 	},
 	{
-		"tags":["apostolus","vesperae","hymnus"],
+		"tags":[
+			["apostolus","vesperae","hymnus"],
+			["apostolus","laudes","hymnus"]
+		],
 		"src":"gregobase/2194",
 		"datum":[
 			"Exsúltet orbis gaúdiis:/Cœlum resúltet laúdibus:/Apostolórum glóriam/Tellus et astra cóncinunt.",
@@ -206,7 +209,10 @@
 		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-ii","versiculus"],
+		"tags":[
+			["apostolus","matutinum","nocturna-ii","versiculus"],
+			["apostolus","tertia","versiculus"]
+		],
 		"datum":["V. Constítues eos príncipes super omnem terram.","R. Mémores erunt nóminis tui Dómine."]
 	},
 	{
@@ -273,7 +279,10 @@
 		"datum":[["/psalmi/psalmus-xcviii,gloria"]]
 	},
 	{
-		"tags":["apostolus","matutinum","nocturna-iii","versiculus"],
+		"tags":[
+			["apostolus","matutinum","nocturna-iii","versiculus"],
+			["apostolus","sexta","versiculus"]
+		],
 		"datum":["V. Nimis honoráti sunt amíci tui Deus.","R. Nimis confortátus est principátus eórum."]
 	},
 	{
@@ -306,6 +315,48 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","lectio","lectio-iii"],
 		"datum":"Ex occasióne hujus senténtiæ quidam introdúcunt mille annos post resurrectiónem, dicéntes, tunc nobis céntuplum ómnium rerum quas dimísimus, et vitam ætérnam esse reddéndam: non intelligéntes, quod, si in céteris digna sit repromíssio, in uxóribus appáreat turpitúdo: ut qui unam pro Dómino dimíserit, centum recípiat in futúro. Sensus ergo iste est: Qui carnália pro Salvatóre dimíserit, spirituália recípiet: quæ comparatióne et mérito sui ita erunt, quasi si parvo número centenárius númerus comparétur."
+	},
+	{
+		"tags":[
+			["apostolus","laudes","versiculus"],
+			["apostolus","nona","versiculus"],
+			["apostolus","ii-vesperae","vesperae","versiculus"]
+		],
+		"datum":["V. Annuntiavérunt ópera Dei.","R. Et facta ejus intellexérunt."]
+	},
+	{
+		"tags":["apostolus","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12597",
+		"datum":"Vos qui reliquístis * ómnia, et secúti estis me, céntuplum accipiétis, et vitam ætérnam possidébitis."
+	},
+	{
+		"tags":["apostolus","tertia","responsorium-breve"],
+		"src":"gregobase/3187",
+		"incipit":"In omnem terram",
+		"responsum":"Exívit sonus eórum.",
+		"versus":"Et in fines orbis terræ verba eórum."
+	},
+	{
+		"tags":["apostolus","sexta","capitulum"],
+		"datum":"Per manus autem Apostolórum * fiébant signa et prodígia multa in plebe."
+	},
+	{
+		"tags":["apostolus","sexta","responsorium-breve"],
+		"src":"gregobase/3055",
+		"incipit":"Constítues eos príncipes",
+		"responsum":"Mémores erunt nóminis tui Dómine.",
+		"versus":"Mémores erunt nóminis tui Dómine."
+	},
+	{
+		"tags":["apostolus","nona","capitulum"],
+		"datum":"Ibant Apóstoli gaudéntes a conspéctu concílii, * quóniam digni hábiti sunt pro nómine Jesu contuméliam pati."
+	},
+	{
+		"tags":["apostolus","nona","responsorium-breve"],
+		"src":"gregobase/3166",
+		"incipit":"Nimis honoráti sunt",
+		"responsum":"Amíci tui Deus.",
+		"versus":"Nimis confortátus est principátus eórum."
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-i"],
@@ -347,10 +398,6 @@
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxxxviii,gloria"]]
-	},
-	{
-		"tags":["apostolus","ii-vesperae","vesperae","versiculus"],
-		"datum":["V. Annuntiavérunt ópera Dei.","R. Et facta ejus, intellexérunt."]
 	},
 	{
 		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
