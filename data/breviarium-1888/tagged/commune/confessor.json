@@ -80,6 +80,81 @@
 		"datum":"Similábo eum * viro sapiénti, qui ædificávit domum suam super petram."
 	},
 	{
+		"tags":["confessor","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia, étiam actiónes imitémur."
+	},
+	{
+		"tags":["confessor","collecta","alia"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur."
+	},
+	{
+		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Beátus vir, * qui in lege Dómini meditábitur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper et prosperabúntur."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-i,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Beátus iste sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constítues est in monte sancto ejus."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Tu es glória mea, * tu es suscéptor meus Dómine: tu exáltans caput meum, et exaudísti me de monte sancto tuo."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Amávit eum Dómine, et ornávit eum.", "R. Stolam glóriæ índuit eum."]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De libro Sapiéntiæ.",
+			"Justus si morte præoccupátus fúerit, in refrigério erit. Senéctus enim venerábilis est non diutúrna, neque annórum número computáta: cani autem sunt sensus hóminis, et ætas senectútis vita immaculáta. Placens Deo factus est diléctus, et vivens inter peccatóres translátus est. Raptus est ne malítia mutáret intelléctum ejus, aut ne fíctio decíperet ánimam illíus. Fascinátio enim nugacitátis obscúrat bona, et inconstántia concupiscéntiæ transvértit sensum sine malítia. Consummátus in brevi explévit témpora multa: plácita enim erat Deo ánima illíus: propter hoc properávit edúcere illum de médio iniquitátum."
+		]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Euge serve bone et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam:",
+		"responsum":"Intra in gaúdium Dómini tui.",
+		"versus":"Dómine quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Pópuli autem vidéntes, et non intelligéntes, nec ponéntes in præcórdiis tália: quóniam grátia Dei et misericórdia est in sanctos ejus, et respéctus in eléctos illíus. Condémnat autem justus mórtuus vivos ímpios, et juvéntus celérius consummáta longam vitam injústi. Vidébunt enim finem sapiéntis, et non intélligent quid cogitáverit de illo Deus, et quare muníerit illum Dóminus. Vidébunt et contémnent eum: illos autem Dóminus irridébit. Et erunt post hæc decidéntes sine honóre, et in contumélia inter mórtuos in perpétuum: quóniam disrúmpet illos inflátos sine voce, et commovébit illos a fundaméntis, et usque ad suprémum desolabúntur."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Justus germinábit sicut lílium:",
+		"responsum":"Et florébit in ætérnum ante Dóminum.",
+		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Et erunt geméntes, et memória illórum períbit. Vénient in cogitatióne peccatórum suórum tímidi, et tradúcent illos ex advérso iniquitátes ipsórum. Tunc stabunt justi in magna constántia advérsus eos qui se angustiavérunt, et qui abstulérunt labóres eórum. Vidéntes turbabúntur timóre horríbili, et mirabúntur in subitatióne insperátæ salútis, dicéntes intra se, pœniténtiam agéntes, et præ angústia spíritus geméntes: Hi sunt quos habúimus aliquándo in derísum et in similitúdinem impropérii. Nos insensáti vitam illórum æstimabámus insániam, et finem illórum sine honóre: ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum:",
+		"responsum":"Et invéntus est in número sanctórum.",
+		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
+	},
+	{
 		"tags":["confessor","ii-vesperae","vesperae","versiculus"],
 		"datum":["V. Justum dedúxit Dóminus per vias rectas.","R. Et osténdit illi regnum Dei."]
 	},
