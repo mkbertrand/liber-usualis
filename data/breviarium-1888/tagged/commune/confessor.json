@@ -45,11 +45,14 @@
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["confessor","vesperae","capitulum"],
+		"tags":["confessor","capitulum"],
 		"datum":"Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesaúris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua."
 	},
 	{
-		"tags":["confessor","vesperae","hymnus"],
+		"tags":[
+			["confessor","vesperae","hymnus"],
+			["confessor","matutinum","hymnus"]
+		],
 		"src":"gregobase/2407",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit beátas/Scándere sedes.",
@@ -60,7 +63,10 @@
 		]
 	},
 	{
-		"tags":["confessor","mtv","vesperae","hymnus"],
+		"tags":[
+			["confessor","mtv","vesperae","hymnus"],
+			["confessor","mtv","matutinum","hymnus"]
+		],
 		"src":"gregobase/2407",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit suprémos/Laudis honóres.",
@@ -71,8 +77,11 @@
 		]
 	},
 	{
-		"tags":["confessor","i-vesperae","vesperae","versiculus"],
-		"datum":["V. Amávit eum Dóminus, et ornávit eum.","R. Stolam glóriæ índuit eum."]
+		"tags":[
+			["confessor","i-vesperae","vesperae","versiculus"],
+			["confessor","matutinum","nocturna-i","versiculus"]
+		],
+		"datum":["V. Amávit eum Dómine, et ornávit eum.", "R. Stolam glóriæ índuit eum."]
 	},
 	{
 		"tags":["confessor","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
@@ -85,9 +94,19 @@
 		"datum":"Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia, étiam actiónes imitémur."
 	},
 	{
+		"tags":["confessor","confessores","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Deus, qui nos beatórum N. Confessórum tuórum ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia, étiam actiónes imitémur."
+	},
+	{
 		"tags":["confessor","collecta","alia"],
 		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur."
+	},
+	{
+		"tags":["confessor","confessores","collecta","alia"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beatórum N. Confessórum tuórum solemnitáte deférimus: ut qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur."
 	},
 	{
 		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium"],
@@ -116,10 +135,6 @@
 	{
 		"tags":["confessor","matutinum","nocturna-i","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-iii,gloria"]]
-	},
-	{
-		"tags":["confessor","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Amávit eum Dómine, et ornávit eum.", "R. Stolam glóriæ índuit eum."]
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-i"],
@@ -155,8 +170,179 @@
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
-		"tags":["confessor","ii-vesperae","vesperae","versiculus"],
+		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Invocántem exaudívit * Dóminus sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-iv,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Læténtur omnes, * qui sperant in te Dómine: quóniam tu benedixísti justo, scuto bonæ voluntátis tuæ coronásti eum."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-v,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Dómine Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti sanctum tuum, et constituísti eum super ópera mánuum tuárum."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":[
+			["confessor","matutinum","nocturna-ii","versiculus"],
+			["confessor","tertia","versiculus"]
+		],
+		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Joánnis Chrysóstomi.",
+			"Beáti N. dies, cujus festivitátem celebrámus, ad ipsíus recte factórum enarratiónem linguam nostram evocávit, síquidem hódie beátus iste ad tranquíllam, omnísque perturbatiónis expértem vitam tránsiit: eóque navígium áppulit, ubi deínceps non póterit metúere naufrágium, nec ullam ánimi perturbatiónem, aut dolórem. Et quid mirum est, si locus ille purus est ab omni moléstia ánimi, cum Paulus homínibus adhuc in hac vita degéntibus loquens dicat: Semper gaudéte, sine intermissióne oráte?"
+		]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
+		"responsum":"Et dedit illi claritátem ætérnam.",
+		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quod si hic, ubi morbi, ubi insectatiónes, ubi præmatúræ mortes, ubi calúmniæ, ubi invídiæ, ubi perturbatiónes, ubi iræ, ubi cupiditátes, ubi innumerábiles insídiæ, ubi quotidiánæ sollicitúdines, ubi perpétua sibíque succidéntia mala sunt, innúmeros ex omni parte dolóres afferéntia, Paulus dixit fíeri posse, ut semper gaudeámus, si quis paúlulum ex rerum mundanárum flúctibus eréxerit caput, vitámque suam recte composúerit: multo magis, postquam hinc demigravérimus, fácile cómpotes érimus ejus boni, cum hæc ómnia subláta fúerint, advérsa valetúdo, morbi, peccándi matéria, ubi non est meum ac tuum, frígidum illud verbum, et quidquid est malórum in vitam nostram ínvehens, innúmeraque gignens bella."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum,",
+		"responsum":"Et ad portas paradísi coronávit eum.",
+		"versus":"Índuit eum Dóminus lorícam fídei, et ornávit eum."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Quamóbrem maximópere grátulor hujus sancti felicitáti, quod quamquam translátus est, atque hanc, quæ apud nos est, civitátem relíquit, tamen in álteram adscríptus est civitátem, nempe Dei: et digréssus ab hac Ecclésia, ad illam pervénit, quæ est primogenitórum descriptórum in cœlis: ac relíctis hisce festis, tránsiit ad celebritátem Angelórum. Étenim quod et cívitas sursum sit, et Ecclésia, et celébritas, audi Paulum dicéntem: Accessístis ad civitátem Dei vivéntis, Jerúsalem cœléstem, et Ecclésiam primitivórum, qui conscripísti sunt in cœlis, et ad multórum míllium Angelórum frequéntiam."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Iste homo perfécit ómnia quæ locútus est ei Deus, et dixit ad eum: Ingrédere in réquiem meam:",
+		"responsum":"Quia te vidi justum coram me ex ómnibus géntibus.",
+		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Dómine, * iste sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscét in monte sancto tuo."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Vitam pétiit * a te, et tribuísti ei Dómine: glóriam et magnum decórem imposuísti super eum: posuísti in cápite ejus corónam de lápide pretióso."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
+	},
+	{
+		"tags":[
+			["confessor","matutinum","nocturna-iii","versiculus"],
+			["confessor","sexta","versiculus"]
+		],
+		"datum":["V. Lex Dei ejus in corde ipsíus.","R. Et non supplantabúntur gressus ejus."]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Dixit Jesus discípulis suis: Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Sancti Evangélii, fratres caríssimi, apérta vobis est léctio recitáta. Sed ne alíquibus ipsa ejus planíties alta fortásse videátur, eam sub brevitáte transcúrrimus, quátenus ejus exposítio ita nesciéntibus fiat cógnita, ut tamen sciéntibus non sit onerósa. Dóminus dicit: Sint lumbi vestri præcíncti. Lumbos enim præcíngimus, cum carnis luxúriam per continéntiam coarctámus. Sed quia minus est, mala non ágere, nisi étiam quisque stúdeat, et bonis opéribus insudáre, prótinus ádditur: Et lucérnæ ardéntes in mánibus vestris. Lucérnas quippe ardéntes in mánibus tenémus, cum per bona ópera próximis nostris lucis exémpla monstrámus. De quibus profécto opéribus Dóminus dicit: Lúceat lux vestra coram homínibus, ut vídeant ópera vestra bona, et gloríficent Patrem vestrum qui in cœlis est."
+		]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Iste est qui ante Deum magnas virtútes operátus est, et de omni corde suo laudávit Dóminum:",
+		"responsum":"Ipse intercédat pro peccátis ómnium populórum.",
+		"versus":"Ecce homo sine queréla, verus Dei cultor, ábstinens se ab omni ópere malo, et pérmanens in innocéntia sua."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Duo autem sunt, quæ jubéntur, et lumbos restríngere, et lucérnas tenére: ut et mundítia sit castitátis in operatióne. Redemptóri étenim nostro unum sine áltero placére nequáquam potest: si aut is qui bona agit, adhuc luxúriæ inquinaménta non déserit: aut is qui castitáte præéminet, necdum se per bona ópera exércet. Nec cástitas ergo magna est sine bono ópere, nec opus bonum est áliquod sine castitáte. Sed et si utrúmque ágitur, restat, ut quisquis ille est, spe ad supérnam pátriam tendat, et nequáquam se a vítiis pro mundi hujus honestáte contíneat."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris:",
+		"responsum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis.",
+		"versus":"Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis: ut cum vénerit et pulsáverit, conféstim apériant ei. Venit quippe Dóminus, cum ad judícium próperat: pulsat vero, cum jam per ægritúdinis moléstias esse mortem vicínam desígnat. Cui conféstim apérimus, si hunc cum amóre suscípimus. Aperíre enim júdici pulsánti non vult, qui exíre de córpore trépidat: et vidére eum, quem contempsísse se méminit, júdicem formídat. Qui autem de sua spe et operatióne secúrus est, pulsánti conféstim áperit, quia lætus júdicem sústinet. Et cum tempus propínquæ mortis advénerit, de glória retributiónis hilaréscit."
+	},
+	{
+		"tags":["confessor","laudes","hymnus"],
+		"datum":[
+			"Jesu coróna célsior,/Et véritas sublímior,/Qui confiténti sérvulo,/Reddis perénne prǽmium:",
+			"Da supplicánti cœtui,/Hujus rogátus nóxii/Remissiónem críminis,/Rumpéndo nexum vínculi.",
+			"Anni revérso témpore,/Dies refúlsit lúmine,/Quo Sanctus hic de córpore/Migrávit inter sídera.",
+			"Hic vana terræ gaúdia,/Et luculénta prǽdia,/Pollúta sorde députans,/Ovans tenet cœléstia.",
+			"Te Christe Rex piíssime,/Hic confiténdo júgiter,/Calcávit artes dǽmonum,/Sævúmque avérni príncipem.",
+			"Virtúte clarus, et fide,/Confessióne sédulus,/Jejúna membra déferens,/Dapes supérnas óbtinet.",
+			"Proínde te piíssime/Precámur omnes súpplices:/Nobis ut hujus grátia/Pœnas remíttas débitas.",
+			"Patri perénnis glória,/Natóque Patris único,/Sanctóque sit Paráclito,/Per omne semper sǽculum.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["confessor","laudes","versiculus"],
+			["confessor","nona","versiculus"],
+			["confessor","ii-vesperae","vesperae","versiculus"]
+		],
 		"datum":["V. Justum dedúxit Dóminus per vias rectas.","R. Et osténdit illi regnum Dei."]
+	},
+	{
+		"tags":["confessor","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui."
+	},
+	{
+		"tags":["confessor","tertia","responsorium-breve"],
+		"incipit":"Amávit eum Dóminus,",
+		"responsum":"Et ornávit eum.",
+		"versus":"Stolam glóriæ índuit eum."
+	},
+	{
+		"tags":["confessor","sexta","capitulum"],
+		"datum":"Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur."
+	},
+	{
+		"tags":["confessor","sexta","responsorium-breve"],
+		"incipit":"Os justi",
+		"responsum":"Meditábitur sapiéntiam.",
+		"versus":"Et lingua ejus loquétur judícium."
+	},
+	{
+		"tags":["confessor","nona","capitulum"],
+		"datum":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: honestávit illum in labóribus, et complévit labóres illíus."
+	},
+	{
+		"tags":["confessor","nona","responsorium-breve"],
+		"incipit":"Lex Dei ejus",
+		"responsum":"In corde ipsíus.",
+		"versus":"Et non supplantabúntur gressus ejus."
 	},
 	{
 		"tags":["confessor","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
