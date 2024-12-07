@@ -180,7 +180,7 @@
 
 .psalmus::first-letter {
 	float: left;
-	font-size: 60px;
+	font-size: 100px;
 	font-weight: bold;
 	margin-right: 0.5rem;
 	color: red;

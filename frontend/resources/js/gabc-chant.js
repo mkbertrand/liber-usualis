@@ -49,17 +49,24 @@ class ChantElement extends HTMLElement {
 		super();
 		
 		this.ctxt = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
-		this.ctxt.lyricTextFont = "'Times'";
-		this.ctxt.setFont("'Times'", 36);
+
+		this.ctxt.setFont("'Times'", 22);
+
+		this.ctxt.dropCapTextColor = 'red';
 		this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
+
+		this.ctxt.annotationTextColor = 'red';
 		this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
+
+		this.ctxt.rubricColor = 'red';
+		this.ctxt.staffLineColor = 'red';
+
 		this.ctxt.condenseLineAmount = 1;
-		this.ctxt.setGlyphScaling(1/8);
-		this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
-		this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
+		// For some reason, setting the property directly doesn't work for glyph scaling specifically :D
+		this.ctxt.setGlyphScaling(1/12);
 		this.ctxt.minLyricWordSpacing *= 1;
 		this.ctxt.accidentalSpaceMultiplier = 1.5;
-		this.ctxt.annotationTextColor = '#d00';
+		this.ctxt.intraNeumeSpacing = 5;
 
 		this.ctxt.specialCharProperties['font-family'] = "'Versiculum'";
 		this.ctxt.specialCharProperties['font-variant'] = 'normal';
@@ -68,9 +75,6 @@ class ChantElement extends HTMLElement {
 		this.ctxt.specialCharText = function(char) {
 			return char.toLowerCase();
 		};
-		this.ctxt.setRubricColor('#d00');
-		this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
-		this.ctxt.intraNeumeSpacing = 5.5;
 		ChantElement.gabc = "";
 
 		if (this.innerText != "") {

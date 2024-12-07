@@ -1,5 +1,6 @@
 // Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+trivialchants = ['deus-in-adjutorium'];
 function stringrender(data) {
 	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
 		.replaceAll('É', 'E').replaceAll('Í', 'I')
@@ -29,7 +30,7 @@ function stringrender(data) {
 };
 
 
-function renderinner(data, chant, translated = null, translationpool = null, parenttags) {
+function renderinner(data, translated = null, translationpool = null, parenttags, options) {
 	let tran = null;
 
 	if (translationpool != null && typeof data === 'object' && 'tags' in data) {
@@ -91,12 +92,12 @@ function renderinner(data, chant, translated = null, translationpool = null, par
 		let ret = '';
 		// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 		for (let i = 0, count = data.length; i < count; i++) {
-			ret += renderinner(data[i], chant, Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, parenttags);
+			ret += renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, parenttags, options);
 		};
 		return ret;
 
-	} else if (typeof data === 'object' && chant && 'src' in data && data['src'] != undefined) {
-		return '<gabc-chant id="/chant/' + data['src'] + '" tags="' + data['tags'].concat(parenttags).join('+') + '"></gabc-chant>';
+	} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data['tags'].some(tag => trivialchants.includes(tag)))) {
+		return `<gabc-chant id="/chant/${data['src']}" tags="${data['tags'].concat(parenttags).join('+')}"></gabc-chant>`;
 
 	} else if (typeof data === 'object') {
 		if ('tags' in data && data['tags'].join(' ').includes('/psalmi/')) {
@@ -104,7 +105,7 @@ function renderinner(data, chant, translated = null, translationpool = null, par
 			data['tags'].push('psalmus');
 		}
 		if ('tags' in data && data['tags'].join(' ').includes('canticum')) { data['tags'].push('canticum'); }
-		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], chant, translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags)) + '</div>';
+		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options) + '</div>';
 
 	} else if (typeof data === 'string') {
 		return '<p class="rite-text ' + parenttags.join(' ') + '">' + stringrender(data) + '</p><p class="rite-text-translation">' + (translated != null && typeof translated === 'string' ? stringrender(translated) : '') + '</p>';
@@ -115,11 +116,12 @@ function renderinner(data, chant, translated = null, translationpool = null, par
 
 // Just guarantees that the return is an array so that the x-for doesn't break
 function render(data, chant) {
-	return renderinner(data['rite'], chant, null, data['translation'], []);
+	options = {chant: chant, disabletrivialchant: true};
+	return renderinner(data['rite'], null, data['translation'], [], options);
 };
 
 async function chomp(id, tags) {
-	return fetch(id + '?tags=' + tags).then(data => data.text()).then(gabc => {
+	return fetch(id).then(data => data.text()).then(gabc => {
 		gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 		mode = undefined;
 		if (gabc.includes('mode:')) {
@@ -130,14 +132,18 @@ async function chomp(id, tags) {
 		}
 
 		// Remove commented text falling before content
-		gabc = '%%\n' + gabc.substring(gabc.search(/\([cf]\d\)/));
-		gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>').replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>').replaceAll(/<.?sc>/g, '').replaceAll(/\[.*?\]/g, '');
+		gabc = gabc.substring(gabc.search(/\([cf]\d\)/));
+		gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>').replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>').replaceAll(/<.?sc>/g, '').replaceAll(/\[.*?\]/g, '').replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3').replaceAll('<sp>*</sp>', '*').replace(/<c>.+?<\/c>/, '');
 
+		gabcdata = '';
 		if (mode !== undefined) {
-			gabc = 'mode:' + mode + ';\n' + gabc;
+			gabcdata = 'mode:' + mode + ';\n%%\n';
+		} else {
+			gabcdata = '%%\n';
 		}
+
 		if (tags.includes('deus-in-adjutorium')) {
-			return gabc.substring(0, gabc.search(/\(Z\-?\)/));
+			return gabcdata + gabc.substring(0, gabc.search(/\(Z\-?\)/));
 
 		} else if (tags.includes('antiphona')) {
 			euouae = '';
@@ -147,24 +153,28 @@ async function chomp(id, tags) {
 			}
 
 			if (!tags.includes('paschalis') && gabc.includes('<i>T. P.</i>')) {
-				gabc = gabc.substring(0, gabc.indexOf(' <i>T. P.</i>'));
+				gabc = gabc.substring(0, gabc.indexOf('<i>T. P.</i>')).trim();
 			}
 			if (!tags.includes('septuagesima') && gabc.includes('<i>Post Septuag.</i>')) {
-				gabc = gabc.substring(0, gabc.indexOf(' <i>Post Septuag.</i>'));
+				gabc = gabc.substring(0, gabc.indexOf('<i>Post Septuag.</i>')).trim();
 			}
 
 			if (tags.includes('intonata')) {
 				gabc = gabc.substring(0, gabc.indexOf('*')) + '(::)' + euouae;
+			} else if (tags.includes('pars')) {
+				gabc = gabc.replace(/^(\(..\)\s).+?\*.+?\)\s?/, '$1');
+				gabcdata = '%%\n';
 			} else if (!(tags.includes('commemoratio') || tags.includes('repetita') || tags.includes('suffragium'))) {
 				gabc = gabc + euouae;
 			} else {
-				gabc = gabc.replace('*', '').split('\n')[2];
+				gabc = gabc.replace('*', '');
+				gabcdata = '%%\n';
 				firstsyllable = gabc.match(/\w+\(/)[0];
 				gabc = gabc.replace(firstsyllable, firstsyllable.charAt(0).toUpperCase() + firstsyllable.slice(1).toLowerCase());
 			}
 			
-			gabc = (tags.includes('repetita') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabc;
-			return gabc;
+			gabcdata = (tags.includes('repetita') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
+			return gabcdata + gabc;
 
 		} else if (tags.includes('responsorium-breve')) {
 			clef = gabc.substring(0, gabc.indexOf(')') + 1);
@@ -173,10 +183,10 @@ async function chomp(id, tags) {
 			verses = [...gabc.matchAll(/<v>\\Vbar<\/v>\.?(\(::\))?\s(.+?)\s\*?\(::\)/g)];
 			verse = verses[0][2];
 			gloria = verses[1][2];
-			return clef + ' ' + incipit + ' *(;) ' + response + ' (::) <v>\\Rbar</v> ' + incipit + ' (;) ' + response + ' (::) <v>\\Vbar</v> ' + verse + ' *(;) ' + response + ' (::) <v>\\Vbar</v> ' + gloria + ' (::) <v>\\Rbar</v> ' + incipit + ' (;) ' + response + ' (::)';
+			return gabcdata + clef + ' ' + incipit + ' *(;) ' + response + ' (::) <v>\\Rbar</v> ' + incipit + ' (;) ' + response + ' (::) <v>\\Vbar</v> ' + verse + ' *(;) ' + response + ' (::) <v>\\Vbar</v> ' + gloria + ' (::) <v>\\Rbar</v> ' + incipit + ' (;) ' + response + ' (::)';
 
 		} else {
-			return gabc;
+			return gabcdata + gabc;
 		}
 	});
 }
