@@ -1,59 +1,59 @@
 [
 	{
-		"tags":["episcopus","confessor","antiphona","antiphona-i"],
+		"tags":["confessor-pontifex","antiphona","antiphona-i"],
 		"src":"gregobase/1914",
 		"datum":"Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","psalmus-i"],
+		"tags":["confessor-pontifex","vesperae","psalmus-i"],
 		"datum":[["/psalmi/psalmus-cix,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","antiphona","antiphona-ii"],
+		"tags":["confessor-pontifex","antiphona","antiphona-ii"],
 		"src":"gregobase/2613",
 		"datum":"Non est invéntus * símilis illi, qui conserváret legem Excélsi."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","psalmus-ii"],
+		"tags":["confessor-pontifex","vesperae","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","antiphona","antiphona-iii"],
+		"tags":["confessor-pontifex","antiphona","antiphona-iii"],
 		"src":"gregobase/2858",
 		"datum":"Ídeo jurejurándo * fecit illum Dóminus créscere in plebem suam."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","psalmus-iii"],
+		"tags":["confessor-pontifex","vesperae","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","antiphona","antiphona-iv"],
+		"tags":["confessor-pontifex","antiphona","antiphona-iv"],
 		"src":"gregobase/2009",
 		"datum":"Sacerdótes Dei * benedícite Dóminum: servi Dómini hymnum dícite Deo, allelúja."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","psalmus-iv"],
+		"tags":["confessor-pontifex","vesperae","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","antiphona","antiphona-v"],
+		"tags":["confessor-pontifex","antiphona","antiphona-v"],
 		"src":"gregobase/2592",
 		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
 	},
 	{
-		"tags":["episcopus","confessor","i-vesperae","vesperae","psalmus-v"],
+		"tags":["confessor-pontifex","i-vesperae","vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","ii-vesperae","vesperae","psalmus-v"],
+		"tags":["confessor-pontifex","ii-vesperae","vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxxxi,gloria"]]
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","capitulum"],
+		"tags":["confessor-pontifex","vesperae","capitulum"],
 		"datum":"Ecce sacérdos magnus, + qui in diébus suis plácuit Deo, et invéntus est justus: * et in témpore iracúndiæ factus est reconciliátio."
 	},
 	{
-		"tags":["episcopus","confessor","vesperae","hymnus"],
+		"tags":["confessor-pontifex","vesperae","hymnus"],
 		"src":"gregobase/2334",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit beátas/Scándere sedes.",
@@ -64,7 +64,7 @@
 		]
 	},
 	{
-		"tags":["episcopus","confessor","mtv","vesperae","hymnus"],
+		"tags":["confessor-pontifex","mtv","vesperae","hymnus"],
 		"src":"gregobase/2334",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit suprémos/Laudis honóres.",
@@ -75,17 +75,17 @@
 		]
 	},
 	{
-		"tags":["episcopus","confessor","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor-pontifex","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2223",
 		"datum":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum."
 	},
 	{
-		"tags":["episcopus","confessor","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor-pontifex","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2933",
 		"datum":"Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum."
 	},
 	{
-		"tags":["episcopus","confessor","papa","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor-pontifex","papa","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1820",
 		"datum":"Dum esset summus Póntifex, * terréna non métuit, sed ad cœléstia regna gloriósus migrávit."
 	}

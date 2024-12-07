@@ -36,6 +36,10 @@
 		"implies":["commemoratio"]
 	},
 	{
+		"tags":["confessor-pontifex"],
+		"implies":["confessor"]
+	},
+	{
 		"tags":["abbas"],
 		"implies":["confessor"]
 	},

@@ -9,7 +9,7 @@
 	},
 	{
 		"occurrence":["ad-xix-kalendas-februarii"],
-		"tags":["hilarius", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["hilarius", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-xix-kalendas-februarii"],
@@ -81,7 +81,7 @@
 	},
 	{
 		"occurrence":["ad-vi-kalendas-februarii"],
-		"tags":["joannes-chrysostomus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["joannes-chrysostomus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-v-kalendas-februarii"],
@@ -89,7 +89,7 @@
 	},
 	{
 		"occurrence":["ad-iv-kalendas-februarii"],
-		"tags":["franciscus-salesius", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["franciscus-salesius", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-iii-kalendas-februarii"],
@@ -113,7 +113,7 @@
 	},
 	{
 		"occurrence":["pridie-nonas-februarii"],
-		"tags":["andreas-corsinus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["andreas-corsinus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["nonae-februarii"],
@@ -121,7 +121,7 @@
 	},
 	{
 		"occurrence":["ad-viii-idus-februarii"],
-		"tags":["titus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["titus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-viii-idus-februarii"],
@@ -137,7 +137,7 @@
 	},
 	{
 		"occurrence":["ad-v-idus-februarii"],
-		"tags":["cyrillus-alexandrini", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["cyrillus-alexandrini", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-v-idus-februarii"],
@@ -165,7 +165,7 @@
 	},
 	{
 		"occurrence":["ad-vii-kalendas-martii"],
-		"tags":["petrus-damianus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["petrus-damianus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-vi-kalendas-martii"],
@@ -201,15 +201,15 @@
 	},
 	{
 		"occurrence":["ad-iv-idus-martii"],
-		"tags":["gregorius", "duplex-minus", "episcopus", "confessor", "papa", "doctor"]
+		"tags":["gregorius", "duplex-minus", "confessor-pontifex", "papa", "doctor"]
 	},
 	{
 		"occurrence":["ad-xvi-kalendas-aprilis"],
-		"tags":["patritius", "duplex-minus", "episcopus", "confessor"]
+		"tags":["patritius", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-xv-kalendas-aprilis"],
-		"tags":["cyrillus-hierosolymitani", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["cyrillus-hierosolymitani", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-xiv-kalendas-aprilis"],
@@ -229,7 +229,7 @@
 	},
 	{
 		"occurrence":["pridie-nonas-aprilis"],
-		"tags":["isidorus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["isidorus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["nonae-aprilis"],
@@ -237,7 +237,7 @@
 	},
 	{
 		"occurrence":["ad-iii-idus-aprilis"],
-		"tags":["leo-i", "duplex-minus", "papa", "episcopus", "confessor", "doctor"]
+		"tags":["leo-i", "duplex-minus", "papa", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["idus-aprilis"],
@@ -257,7 +257,7 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-maji"],
-		"tags":["anselmus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["anselmus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-maji"],
@@ -301,7 +301,7 @@
 	},
 	{
 		"occurrence":["ad-vi-nonas-maji"],
-		"tags":["athanasius", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["athanasius", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-v-nonas-maji"],
@@ -309,7 +309,7 @@
 	},
 	{
 		"occurrence":["ad-v-nonas-maji"],
-		"tags":["alexandrus-i-et-soc", "commemoratio", "papa", "martyr", "martyres", "episcopus", "confessor"]
+		"tags":["alexandrus-i-et-soc", "commemoratio", "papa", "martyr", "martyres", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-maji"],
@@ -317,7 +317,7 @@
 	},
 	{
 		"occurrence":["ad-iii-nonas-maji"],
-		"tags":["pius-v", "duplex-minus", "papa", "episcopus", "confessor"]
+		"tags":["pius-v", "duplex-minus", "papa", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["pridie-nonas-maji"],
@@ -333,11 +333,11 @@
 	},
 	{
 		"occurrence":["ad-vii-idus-maji"],
-		"tags":["gregorius-nazianzenus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["gregorius-nazianzenus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-vi-idus-maji"],
-		"tags":["antoninus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["antoninus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-vi-idus-maji"],
@@ -353,7 +353,7 @@
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-junii"],
-		"tags":["ubaldus", "semiduplex", "episcopus", "confessor"]
+		"tags":["ubaldus", "semiduplex", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-xvi-kalendas-junii"],
@@ -365,7 +365,7 @@
 	},
 	{
 		"occurrence":["ad-xiv-kalendas-junii"],
-		"tags":["petrus-coelestinus", "duplex-minus", "episcopus", "confessor", "papa"]
+		"tags":["petrus-coelestinus", "duplex-minus", "confessor-pontifex", "papa"]
 	},
 	{
 		"occurrence":["ad-xiv-kalendas-junii"],
@@ -377,7 +377,7 @@
 	},
 	{
 		"occurrence":["ad-viii-kalendas-junii"],
-		"tags":["gregorius-vii", "duplex-minus", "episcopus", "confessor", "papa"]
+		"tags":["gregorius-vii", "duplex-minus", "confessor-pontifex", "papa"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-junii"],
@@ -401,7 +401,7 @@
 	},
 	{
 		"occurrence":["ad-v-kalendas-junii"],
-		"tags":["augustinus-episcopus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["augustinus-episcopus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-iii-kalendas-junii"],
@@ -429,7 +429,7 @@
 	},
 	{
 		"occurrence":["ad-viii-idus-junii"],
-		"tags":["norbertus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["norbertus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-v-idus-junii"],
@@ -457,7 +457,7 @@
 	},
 	{
 		"occurrence":["ad-xviii-kalendas-julii"],
-		"tags":["basilius-magnus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["basilius-magnus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-julii"],
@@ -485,7 +485,7 @@
 	},
 	{
 		"occurrence":["ad-x-kalendas-julii"],
-		"tags":["paulinus", "simplex", "episcopus", "confessor"]
+		"tags":["paulinus", "simplex", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-julii"],
@@ -501,7 +501,7 @@
 	},
 	{
 		"occurrence":["ad-iv-kalendas-julii"],
-		"tags":["leo-ii", "semiduplex", "episcopus", "confessor", "papa"]
+		"tags":["leo-ii", "semiduplex", "confessor-pontifex", "papa"]
 	},
 	{
 		"occurrence":["ad-iii-kalendas-julii"],
@@ -549,7 +549,7 @@
 	},
 	{
 		"occurrence":["pridie-idus-julii"],
-		"tags":["bonaventura", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["bonaventura", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["idus-julii"],
@@ -597,7 +597,7 @@
 	},
 	{
 		"occurrence":["ad-x-kalendas-augusti"],
-		"tags":["liborius", "commemoratio", "episcopus", "confessor"]
+		"tags":["liborius", "commemoratio", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-ix-kalendas-augusti"],
@@ -649,7 +649,7 @@
 	},
 	{
 		"occurrence":["ad-iv-nonas-augusti"],
-		"tags":["alphonsus-liguorio", "duplex-minus", "doctor", "episcopus", "confessor"]
+		"tags":["alphonsus-liguorio", "duplex-minus", "doctor", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-iii-nonas-augusti"],
@@ -749,7 +749,7 @@
 	},
 	{
 		"occurrence":["ad-v-kalendas-septembris"],
-		"tags":["augustinus", "duplex-minus", "episcopus", "confessor", "doctor"]
+		"tags":["augustinus", "duplex-minus", "confessor-pontifex", "doctor"]
 	},
 	{
 		"occurrence":["ad-v-kalendas-septembris"],
@@ -789,7 +789,7 @@
 	},
 	{
 		"occurrence":["nonae-septembris"],
-		"tags":["laurentius-justinianus", "semiduplex", "episcopus", "confessor"]
+		"tags":["laurentius-justinianus", "semiduplex", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-vi-idus-septembris"],
@@ -849,7 +849,7 @@
 	},
 	{
 		"occurrence":["ad-x-kalendas-octobris"],
-		"tags":["thomas-villanova", "duplex-minus", "episcopus", "confessor"]
+		"tags":["thomas-villanova", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-octobris"],
@@ -889,7 +889,7 @@
 	},
 	{
 		"occurrence":["kalendae-octobris"],
-		"tags":["remigius", "semiduplex", "episcopus", "confessor"]
+		"tags":["remigius", "semiduplex", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-vi-nonas-octobris"],
@@ -985,7 +985,7 @@
 	},
 	{
 		"occurrence":["nonae-novembris"],
-		"tags":["carolus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["carolus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["nonae-novembris"],
@@ -1013,7 +1013,7 @@
 	},
 	{
 		"occurrence":["ad-iii-idus-novembris"],
-		"tags":["martinus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["martinus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-iii-idus-novembris"],
@@ -1037,7 +1037,7 @@
 	},
 	{
 		"occurrence":["ad-xv-kalendas-decembris"],
-		"tags":["gregorius-thaumaturgus", "semiduplex", "episcopus", "confessor"]
+		"tags":["gregorius-thaumaturgus", "semiduplex", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-xiv-kalendas-decembris"],
@@ -1105,7 +1105,7 @@
 	},
 	{
 		"occurrence":["pridie-nonas-decembris"],
-		"tags":["petrus-chrysologus", "duplex-minus", "episcopus", "confessor", "doctor", "mtv"]
+		"tags":["petrus-chrysologus", "duplex-minus", "confessor-pontifex", "doctor", "mtv"]
 	},
 	{
 		"occurrence":["pridie-nonas-decembris"],
@@ -1117,11 +1117,11 @@
 	},
 	{
 		"occurrence":["ad-viii-idus-decembris"],
-		"tags":["nicolaus", "duplex-minus", "episcopus", "confessor"]
+		"tags":["nicolaus", "duplex-minus", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["ad-vii-idus-decembris"],
-		"tags":["ambrosius", "duplex-minus", "episcopus", "confessor", "doctor", "mtv"]
+		"tags":["ambrosius", "duplex-minus", "confessor-pontifex", "doctor", "mtv"]
 	},
 	{
 		"occurrence":["ad-vi-idus-decembris"],
@@ -1133,7 +1133,7 @@
 	},
 	{
 		"occurrence":["ad-iii-idus-decembris"],
-		"tags":["damasus-i", "semiduplex", "papa", "episcopus", "confessor"]
+		"tags":["damasus-i", "semiduplex", "papa", "confessor-pontifex"]
 	},
 	{
 		"occurrence":["idus-decembris"],
@@ -1153,6 +1153,6 @@
 	},
 	{
 		"occurrence":["pridie-kalendas-januarii"],
-		"tags":["silvestrus-i", "duplex-minus", "papa", "episcopus", "confessor"]
+		"tags":["silvestrus-i", "duplex-minus", "papa", "confessor-pontifex"]
 	}
 ]
