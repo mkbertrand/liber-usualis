@@ -178,11 +178,24 @@
 	font-size: 18px;
 }
 
-.psalmus::first-letter {
+.psalmus::first-letter, .lectio-incipiens::first-letter {
 	float: left;
 	font-size: 100px;
 	font-weight: bold;
 	margin-right: 0.5rem;
+	color: red;
+}
+
+.evangelium-matutini::first-letter {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+}
+
+.lectio-sequens::first-letter {
+	float: left;
+	font-size: 60px;
+	font-weight: bold;
 	color: red;
 }
 

@@ -90,7 +90,6 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 	}
 	if (typeof data === 'object' && Array.isArray(data)) {
 		let ret = '';
-		// Ridiculous language requires me to store the count because variable scope doesn't matter apparently.
 		for (let i = 0, count = data.length; i < count; i++) {
 			ret += renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, parenttags, options);
 		};
@@ -104,6 +103,17 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			data['datum'] = data['datum'].replace(/^\d+\s/, '');
 			data['tags'].push('psalmus');
 		}
+		if ('tags' in data && data['tags'].includes('lectio')) {
+			// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
+			if (!data['tags'].includes('lectio-i')) {
+				data['tags'].push('lectio-sequens');
+			} else if (Array.isArray(data['datum']) && data['datum'].length == 4) {
+				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][2]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
+			} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
+				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
+			}
+		}
+
 		if ('tags' in data && data['tags'].join(' ').includes('canticum')) { data['tags'].push('canticum'); }
 		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options) + '</div>';
 
