@@ -46,7 +46,7 @@
 	},
 	{
 		"tags":["confessor","capitulum"],
-		"datum":"Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in pecúnia et thesaúris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua."
+		"datum":"Beátus vir, qui invéntus est sine mácula, + et qui post aurum non ábiit, nec sperávit in pecúnia et thesaúris. * Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua."
 	},
 	{
 		"tags":[
@@ -91,29 +91,44 @@
 	{
 		"tags":["confessor","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia, étiam actiónes imitémur."
+		"datum":"Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur."
 	},
 	{
 		"tags":["confessor","confessores","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui nos beatórum N. Confessórum tuórum ánnua solemnitáte lætíficas: concéde propítius; ut cujus natalítia, étiam actiónes imitémur."
+		"datum":"Deus, qui nos beatórum N. Confessórum tuórum ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur."
 	},
 	{
 		"tags":["confessor","collecta","alia"],
 		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur."
+		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: + ut qui nostræ justítiæ fidúciam non habémus, * ejus, qui tibi plácuit, précibus adjuvémur."
 	},
 	{
 		"tags":["confessor","confessores","collecta","alia"],
 		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beatórum N. Confessórum tuórum solemnitáte deférimus: ut qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur."
+		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beatórum N. Confessórum tuórum solemnitáte deférimus: + ut qui nostræ justítiæ fidúciam non habémus, * ejus, qui tibi plácuit, précibus adjuvémur."
 	},
 	{
-		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium"],
+		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","simplex"],
+		"src":"nocturnale/COPOIa",
+		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":[
+			["confessor","matutinum","antiphona","antiphona-invitatorium","semiduplex"],
+			["confessor","matutinum","antiphona","antiphona-invitatorium","duplex-minus"]
+		],
+		"src":"nocturnale/COPOIb",
+		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
+		"src":"nocturnale/COPOIc",
 		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/COPONA1A1",
 		"datum":"Beátus vir, * qui in lege Dómini meditábitur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper et prosperabúntur."
 	},
 	{
@@ -122,6 +137,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/COPONA1A2",
 		"datum":"Beátus iste sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constítues est in monte sancto ejus."
 	},
 	{
@@ -130,6 +146,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/COPONA1A3",
 		"datum":"Tu es glória mea, * tu es suscéptor meus Dómine: tu exáltans caput meum, et exaudísti me de monte sancto tuo."
 	},
 	{
@@ -145,6 +162,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/COPON1R1",
 		"incipit":"Euge serve bone et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam:",
 		"responsum":"Intra in gaúdium Dómini tui.",
 		"versus":"Dómine quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum."
@@ -155,6 +173,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/CONPN1R2",
 		"incipit":"Justus germinábit sicut lílium:",
 		"responsum":"Et florébit in ætérnum ante Dóminum.",
 		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
@@ -165,12 +184,14 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/CONPN1R3",
 		"incipit":"Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum:",
 		"responsum":"Et invéntus est in número sanctórum.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/COPON2A1",
 		"datum":"Invocántem exaudívit * Dóminus sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace."
 	},
 	{
@@ -179,6 +200,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/COPON2A2",
 		"datum":"Læténtur omnes, * qui sperant in te Dómine: quóniam tu benedixísti justo, scuto bonæ voluntátis tuæ coronásti eum."
 	},
 	{
@@ -187,6 +209,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/COPON2A3",
 		"datum":"Dómine Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti sanctum tuum, et constituísti eum super ópera mánuum tuárum."
 	},
 	{
@@ -209,6 +232,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"nocturnale/CONPN2R1",
 		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
 		"responsum":"Et dedit illi claritátem ætérnam.",
 		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
@@ -219,6 +243,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/COPON2R2",
 		"incipit":"Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum,",
 		"responsum":"Et ad portas paradísi coronávit eum.",
 		"versus":"Índuit eum Dóminus lorícam fídei, et ornávit eum."
@@ -229,12 +254,14 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/CONPN2R3",
 		"incipit":"Iste homo perfécit ómnia quæ locútus est ei Deus, et dixit ad eum: Ingrédere in réquiem meam:",
 		"responsum":"Quia te vidi justum coram me ex ómnibus géntibus.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/COPON3A1",
 		"datum":"Dómine, * iste sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscét in monte sancto tuo."
 	},
 	{
@@ -243,6 +270,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/COPON3A2",
 		"datum":"Vitam pétiit * a te, et tribuísti ei Dómine: glóriam et magnum decórem imposuísti super eum: posuísti in cápite ejus corónam de lápide pretióso."
 	},
 	{
@@ -251,6 +279,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/COPON3A3",
 		"datum":"Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum."
 	},
 	{
@@ -275,6 +304,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/CONPN3R1",
 		"incipit":"Iste est qui ante Deum magnas virtútes operátus est, et de omni corde suo laudávit Dóminum:",
 		"responsum":"Ipse intercédat pro peccátis ómnium populórum.",
 		"versus":"Ecce homo sine queréla, verus Dei cultor, ábstinens se ab omni ópere malo, et pérmanens in innocéntia sua."
@@ -285,6 +315,7 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/COPON3R2",
 		"incipit":"Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris:",
 		"responsum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis.",
 		"versus":"Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit."
@@ -295,6 +326,7 @@
 	},
 	{
 		"tags":["confessor","laudes","hymnus"],
+		"src":"gregobase/17926",
 		"datum":[
 			"Jesu coróna célsior,/Et véritas sublímior,/Qui confiténti sérvulo,/Reddis perénne prǽmium:",
 			"Da supplicánti cœtui,/Hujus rogátus nóxii/Remissiónem críminis,/Rumpéndo nexum vínculi.",
@@ -316,30 +348,34 @@
 	},
 	{
 		"tags":["confessor","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2808",
 		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui."
 	},
 	{
 		"tags":["confessor","tertia","responsorium-breve"],
+		"src":"gregobase/3089",
 		"incipit":"Amávit eum Dóminus,",
 		"responsum":"Et ornávit eum.",
 		"versus":"Stolam glóriæ índuit eum."
 	},
 	{
 		"tags":["confessor","sexta","capitulum"],
-		"datum":"Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur."
+		"datum":"Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, * et in conspéctu Altíssimi deprecábitur."
 	},
 	{
 		"tags":["confessor","sexta","responsorium-breve"],
+		"src":"gregobase/3084",
 		"incipit":"Os justi",
 		"responsum":"Meditábitur sapiéntiam.",
 		"versus":"Et lingua ejus loquétur judícium."
 	},
 	{
 		"tags":["confessor","nona","capitulum"],
-		"datum":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: honestávit illum in labóribus, et complévit labóres illíus."
+		"datum":"Justum dedúxit Dóminus per vias rectas, + et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: * honestávit illum in labóribus, et complévit labóres illíus."
 	},
 	{
 		"tags":["confessor","nona","responsorium-breve"],
+		"src":"gregobase/3110",
 		"incipit":"Lex Dei ejus",
 		"responsum":"In corde ipsíus.",
 		"versus":"Et non supplantabúntur gressus ejus."
@@ -348,6 +384,53 @@
 		"tags":["confessor","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2251",
 		"datum":"Hic vir, qui despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-i","alia"],
+		"datum":[
+			"De libro Ecclesiástici.",
+			"Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesaúris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ídea stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum."
+		]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-ii","alia"],
+		"datum":"Qui timet Dóminum, excípiet doctrínam ejus: et qui vigiláverint ad illum, invénient benedictiónem. Qui quærit legem, replébitur ab ea: et qui insidióse agit, scandalizábitur in ea. Qui timent Dóminum, invénient judícium justum, et justítias quasi lumen accéndent. Qui credit Deo, atténdit mandátis, et qui confídit in illo, non minorábitur. Timénti Dóminum non occúrrent mala, sed in tentatióne Deus illum conservábit, et liberábit a malis. Sápiens non odit mandáta et justítias, et non illidétur quasi in procélla navis. Homo sensátus credit legi Dei, et lex illi fidélis."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-iii","alia"],
+		"datum":"Spíritus timéntium Deum quǽritur, et in respéctu illíus benedicétur. Spes enim illórum in salvántem illos, et óculi Dei in diligéntes se. Qui timet Dóminum, nihil trepidábit, et non pavébit: quóniam ipse est spes ejus. Timéntis Dóminum beáta est ánima ejus. Ad quem réspicit, et quis est fortitúdo ejus? Óculi Dómini super timéntes eum, protéctor poténtiæ firmaméntum virtútis, tégimen ardóris, et umbráculum meridiáni, deprecátio offensiónis, et adjutórium casus, exáltans ánimam, et illúminans óculos, dans sanitátem, et vitam, et benedictiónem."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-i","alia"],
+		"datum":[
+			"Ex libro Morálium sancti Gregórii Papæ.",
+			"Deridétur justi simplícitas. Hujus mundi sapiéntia est, cor machinatiónibus tégere, sensum verbis veláre; quæ falsa sunt, vera osténdere; quæ vera sunt, falsa demonstráre. Hæc nimírum prudéntia usu a juvénibus scitur, hæc a púeris prétio díscitur: hanc qui sciunt, céteros despiciéndo supérbiunt: hanc qui nésciunt, subjécti et tímidi in áliis mirántur: quia ab eis hæc éadem duplicitátis iníquitas nómine palliáta dilígitur, dum mentis pervérsitas urbánitas vocátur. Hæc sibi obsequéntibus prǽcipit honórum cúlmina quǽrere, adépta temporális glóriæ vanitáte gaudére, irrogáta ab áliis mala multiplícius réddere: cum vires súppetunt, nullis resisténtibus cédere: cum virtútis possibílitas deest, quidquid explére per malítiam non valent, hoc in pacífica bonitáte simuláre."
+		]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-ii","alia"],
+		"datum":"At contra, sapiéntia justórum est: nil per ostentatiónem fíngere, sensum verbis aperíre, vera ut sunt dilígere, falsa devitáre; bona gratis exhibére, mala libéntius toleráre, quam fácere; nullam injúriæ ultiónem quǽrere, pro veritáte contuméliam lucrum putáre. Sed hæc justórum simplícitas deridétur: quia ab hujus mundi sapiéntibus puritátis virtus fatúitas créditur. Omne enim quod innocénter ágitur, ab eis proculdúbio stultum putátur: et quidquid in ópere véritas ápprobat, carnáli sapiéntiæ fátuum sonat. Quid namque stúltius vidétur mundo, quam mentem verbis osténdere, nil cálida machinatióne simuláre, nullas injúriis contumélias réddere, pro maledicéntibus oráre, paupertátem quǽrere, posséssa relínquere, rapiénti non resístere, percutiénti álteram maxíllam præbére?"
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-iii","alia"],
+		"datum":"Lampas contémpta apud cogitatiónes dívitum. Sæpe contíngit, ut eléctus quisque, qui ad ætérnam felicitátem dúcitur, contínua hic adversitáte deprimátur: non hunc rerum abundántia fúlciat, non dignitátum glória honorábilem osténdat, nulla ei obsequéntium frequéntia súppetat, nulla hunc humánis óculis véstium pompa compónat: a cunctis vero despicábilis cérnitur, et hujus mundi grátia indígnus æstimátur: sed tamen ante occúlti júdicis óculos virtútibus émicat, vitæ méritis corúscat: honorári métuit, déspici non réfugit: corpus continéntia áfficit, sola in ánimo dilectióne pinguéscit: mentem semper ad patiéntiam prǽparat, et eréctus pro justítia, de percéptis contuméliis exsúltat: afflíctis ex corde compátitur, de bonórum prosperitátibus quasi de própriis lætátur, sacri verbi pábula in mente sollícitus rúminat, et inquisítus quódlibet éloqui duplíciter ignórat."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-i","alia"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Dixit Jesus discípulis suis: Nolíte timére pusíllus grex, quia complácuit Patri vestro dare vobis regnum. Et réliqua.",
+			"Homilía venerábilis Bedæ Presbýteri.",
+			"Pusíllum gregem electórum, vel ob comparatiónem majóris númeri reprobórum, vel pótius ob humilitátis devotiónem nóminat: quia vidélicet Ecclésiam suam quantálibet numerositáte jam dilatátam, tamen usque ad finem mundi humilitáte vult créscere, et ad promíssum regnum humilitáte perveníre. Ideóque ejus labóres blande consolátus, quam regnum Dei tantum quǽrere prǽcipit, eídem regnum a Patre dandum complácita benignitáte promíttit."
+		]
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-ii","alia"],
+		"datum":"Véndite quæ possidétis, et date eleemósynam. Nolíte, inquit, timére, ne propter regnum Dei militántibus, hujus vitæ necessária desint: quin étiam posséssa propter eleemósynam véndite. Quod tunc digne fit, quando quis semel pro Dómino suis ómnibus spretis, nihilóminus post hæc labóre mánuum, unde et victum transígere, et eleemósynam dare queat, operátur. Unde gloriátur Apóstolus, dicens: Argéntum, et aurum, aut vestem nullíus concupívi: ipsi scitis, quóniamad ea quæ mihi opus erant, et his qui mecum sunt, ministravérunt manus istæ. Ómnia osténdi vobis, quóniam sic laborántes opórtet suscípere infírmos."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-iii","alia"],
+		"datum":"Fácite vobis sácculos qui non veteráscunt: eleemósynas vidélicet operándo, quarum perces in ætérnum máneat. Ubi non hoc præcéptum esse putándum est, ut nil pecúniæ reservétur a sanctis, vel suis scílicet, vel paúperum úsibus suggeréndæ: cum et ipse Dóminus, cui ministrábant Ángeli, tamen ad informándam Ecclésiam suam lóculos habuísse legátur, et a fidélibus obláta consérvans, et suórum necessitátibus aliísque indigéntibus tríbuens; sed ne Deo propter ista serviátur, et ob inópiæ timórem justítia deserátur."
 	}
 ]
 
