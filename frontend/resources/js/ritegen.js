@@ -111,6 +111,8 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][2]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
 			} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
 				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
+			} else {
+				return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`	
 			}
 		}
 
