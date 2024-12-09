@@ -89,8 +89,111 @@
 	},
 	{
 		"tags":["maria","collecta"],
-		"datum":"Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, + et gloriósa beátæ Maríæ semper Vírginis intercessióne, * a præsénti liberári tristítia, et ætérna pérfrui lætítia.",
-		"terminatio":[["terminatio","per-dominum"]]
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, + et gloriósa beátæ Maríæ semper Vírginis intercessióne, * a præsénti liberári tristítia, et ætérna pérfrui lætítia."
+	},
+	{
+		"tags":["maria","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Sancta María Dei Génetrix Virgo, * Intercéde pro nobis."
+	},
+	{
+		"tags":["maria","matutinum","hymnus"],
+		"datum":[
+			"Quem terra, pontus, sídera/Colunt, adórant, prǽdicant,/Trinam regéntem máchinam,/Claustrum Maríæ bájulat.",
+			"Cui luna, sol, et ómnia/Desérviunt per témpora,/Perfúsa cœli grátia,/Gestant puéllæ víscera.",
+			"Beáta Mater múnere,/Cujus supérnus ártifex/Mundum pugíllo cóntinens,/Ventris sub arca clausus est.",
+			"Beáta cœli núntio,/Fœcúnda sancto Spíritu,/Desiderátus géntibus,/Cujus per alvum fusus est.",
+			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Benedícta tu * in muliéribus, et benedíctus fructus ventris tui."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Sicut myrrha * elécta odórem dedísti suavitátis sancta Dei Génitrix."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xviii,gloria"]]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis."
+	},
+	{
+		"tags":["maria","matutinum","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Parábolis Salamónis.",
+			"Ego sapiéntia hábito in consílio, et erudítis intérsum cogitatiónibus. Timor Dómini odit malum: arrogántiam, et supérbiam, et viam pravam, et os bilíngue detéstor. Meum est consílium et ǽquitas, mea est prudéntia, mea est fortitúdo. Per me reges regnant, et legum conditóres justa decérnunt: per me príncipes ímperant, et poténtes decérnunt justítiam. Ego diligéntes me díligo: et qui mane vígilant ad me, invénient me."
+		]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Sancta et immaculáta virgínitas, quibus te laúdibus éfferam néscio:",
+		"responsum":"Quia quem cœli cápere non póterant, tuo grémio contulísti.",
+		"versus":"Benedícta tu in muliéribus, et benedíctus fructus ventris tui."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Mecum sunt divítiæ, et glória, opes supérbæ et justítia. Mélior est enim fructus meus auro, et lápide pretióso, et genímina mea argénto elécto. In víis justítiæ ámbulo, in médio semitárum judícii, ut ditem diligéntes me, et thesaúros eórum répleam. Dóminus possédit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. Ab ætérno ordináta sum, et ex antíquis ántequam terra fíeret. Nondum erant abýssi, et ego jam concépta eram: necdum fontes aquárum erúperant: necdum montes gravi mole constíterant: ante colles ego parturiébar."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Congratulámini mihi omnes, qui dilígitis Dóminum, quia cum essem párvula, plácui Altíssimo:",
+		"responsum":"Et de meis viscéribus génui Deum et hóminem.",
+		"versus":"Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei. Qui me invénerit, invéniet vitam, et haúriet salútem a Dómino: qui autem in me peccáverit, lædet ánimam suam. Omnes, qui me odérunt, díligunt mortem. Sapiéntia ædificávit sibi domum, excídit colúmnas septem. Immolávit víctimas suas, míscuit vinum, et propósuit mensam suam. Misit ancíllas suas ut vocárent ad arcem, et ad mœnia civitátis: Si quis est párvulus, véniat ad me. Et insipiéntibus locúta est: Veníte, comédite panem meum, et bíbite vinum quod míscui vobis."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Beáta es Virgo María, quæ Dóminum portásti, Creatórem mundi:",
+		"responsum":"Genuísti qui te fecit, et in ætérnum pérmanes Virgo.",
+		"versus":"Ave María, grátia plena, Dóminus tecum."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xliv,gloria"]]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xlv,gloria"]]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Sicut læténtium * ómnium nostrum habitátio est in te, * sancta Dei Génetrix."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxxvi,gloria"]]
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
 	},
 	{
 		"tags":["maria","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
