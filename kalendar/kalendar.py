@@ -16,6 +16,25 @@ from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
 data_root = pathlib.Path(__file__).parent.joinpath('data')
 
+def dump_data(j):
+
+    # JSON doesn't like sets, so turn sets back into lists for JSON encoding.
+
+    def recurse(obj, key=None):
+        match obj:
+            case dict():
+                return {k: recurse(v, key=k) for k, v in obj.items()}
+            case list():
+                return [recurse(v) for v in obj]
+            case set() | frozenset():
+                if all(type(x) is str for x in obj):
+                    return list(obj)
+                return [recurse(v) for v in obj]
+            case _:
+                return obj
+
+    return json.dumps(recurse(j))
+
 def load_data(p: str):
 	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
@@ -362,90 +381,75 @@ def kalendar(year: int) -> Kalendar:
 			omittedepiphanyentry.discard('semiduplex')
 			kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
-	# RestartRequest is used to define what extent of the coincidencetable should be rechecked and what days should be examined in that restart.
-	class RestartRequest(NamedTuple):
-		# The reason these are needed is to specify which days should be rechecked under previous coincidencetable rules.  Obviously the whole kalendar could just be rechecked for all rules, but that is super slow and miserable.
+	# These tags are all mutually exclusive between eachother
+	roletags = {'primarium', 'commemoratio', 'omissum', 'tempus'}
+
+	for entrydate, entries in kal.items():
+		for entry in entries:
+			if entry.isdisjoint(roletags):
+				entry.add('primarium')
+
+	class CoincidenceJob(NamedTuple):
 		days: list
-		rulenumber: int
-	excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
+		extent: int
 
-	# perform_action() fulfils the action specified by a certain rule in the coincidencetable. The return is either None, or a RestartRequest.
-	def perform_action(instruction, day, target, rulenumber):
-		if instruction['response'] == 'combinandum':
-			target[0] |= target[1]
-			kal[day].remove(target[1])
-			return RestartRequest([day], rulenumber)
-		elif instruction['response'] == 'omittendum':
-			kal[day].remove(target)
-			return
-		elif instruction['response'] == 'translandum':
-			target.add('translatum')
-			transferday = (day + timedelta(days=instruction['movement'])) if type(instruction['movement']) is int else kal.match_unique(instruction['movement']).date
-			kal[transferday].append(target)
-			kal[day].remove(target)
-			return RestartRequest([day, transferday], rulenumber)
-		elif instruction['response'] == 'errora':
-			raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {target}')
-		# These remaining conditions are when the response is anything else, which means that the string(s) in the response are tags to be given to the target.
-		elif type(instruction['response']) is frozenset:
-			target |= instruction['response']
-			return RestartRequest([day], rulenumber)
-		else:
-			if not type(instruction['response']) is str:
-				raise RuntimeError(type(instruction['response']))
-			target.add(instruction['response'])
-			return RestartRequest([day], rulenumber)
+	initialjob = CoincidenceJob([date(year, 1, 1)], len(coincidencetable))
 
-	# Applies only a specified rule for a certain day. May be recursed when perform_action returns None so that the whole process() doesn't need to be restarted.
-	def applyruleonday(rule, i, rulenumber):
-		for tags in kal[i]:
-			if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
-				if type(rule['response']) is not list:
-					response = perform_action(rule, i, tags, rulenumber)
-					if response is None:
-						return applyruleonday(rule, i, rulenumber)
-					else:
-						return response
-				else:
-					for secondaryrule in rule['response']:
-						for secondarytags in kal[i]:
-							if secondaryrule['indices'].issubset(secondarytags) and not tags == secondarytags and secondarytags.isdisjoint(excludedtags):
-								target = tags
-								if 'target' in secondaryrule and secondaryrule['target'] == 'b':
-									target = secondarytags
-								elif 'target' in secondaryrule and secondaryrule['target'] == 'ab':
-									target = [tags, secondarytags]
-								# Performs the action. If no restart is necessary (IE response is None) it recurses the applyruleonday function since a rule could be applied multiple times in a single day, but it can't just continue the existing loop because an element could've been removed.
-								response = perform_action(secondaryrule, i, target, rulenumber)
-								if response is None:
-									return applyruleonday(rule, i, rulenumber)
-								else:
-									return response
-		return None
+	nye = date(year, 12, 31)
+	while initialjob.days[-1] != nye:
+		initialjob.days.append(initialjob.days[-1] + timedelta(days=1))
 
-	# This is where the rules are looped through and applied to either all days, or just specified days (if they are previously checked rules being retroactively rechecked).
-	def process(promptingresponse):
-		for rulenumber in range(0, len(coincidencetable)):
-			for day in (promptingresponse.days if rulenumber < promptingresponse.rulenumber else kal.keys()):
-				response = applyruleonday(coincidencetable[rulenumber], day, rulenumber)
-				if not response is None:
-					return response
-		return None
+	def fulfil(job):
+		for rulenumber in range(job.extent):
+			rule = coincidencetable[rulenumber]
+			for day in job.days:
+				for entry in kal[day]:
+					if rule['indices'] <= entry:
 
-	# This is the response that process() returns.  It has to be out here so that it persists for the loop to reuse it.
-	workingresponse = RestartRequest(None, 0)
-	# Continually reruns process with the specified RestartRequest, which is just a NamedTuple which specifies until which rule only a list of specified days should be checked against previous rules. Previous rules need to be checked since sometimes a previously inapplicable rule may be made applicable because another tag is added to a tagset.
-	while True:
-		workingresponse = process(workingresponse)
-		if workingresponse is None:
-			break
+						def applyrule(target, action, movement = None):
+							if action == 'transfer':
+								kal[day].remove(target)
+								target = copy.deepcopy(target)
+								target.add('translatum')
+								transferday = day + timedelta(days=movement) if type(movement) is int else kal.match_unique(movement).date
+								kal[transferday].append(target)
+								fulfil(CoincidenceJob([transferday, day], rulenumber))
+							elif action == 'dele':
+								kal[day].remove(target)
+							elif action == 'combina':
+								target[0] |= target[1]
+								kal[day].remove(target[1])
+								fulfil(CoincidenceJob([day], rulenumber))
+							elif action == 'errora':
+								raise RuntimeError(f'Unexpected coincidence!\nEntry: {target}\nRule: {rule}\nDay: {kal[day]}')
+							elif type(action) is set:
+								if not action.isdisjoint(roletags):
+									target -= roletags
+								target |= action
+								fulfil(CoincidenceJob([day], rulenumber))
+							else:
+								if action in roletags:
+									target -= roletags
+								target.add(action)
+								fulfil(CoincidenceJob([day], rulenumber))
 
-	for date0, entries in kal.items():
-		for i in entries:
-			if i.isdisjoint(excludedtags):
-				i.add('primarium')
-				continue
+						if type(rule['response']) is str:
+							applyrule(entry, rule['response'])
+						else:
+							for subrule in rule['response']:
+								for secondentry in kal[day]:
+									if entry == secondentry:
+										continue
+									else:
+										if subrule['indices'] <= secondentry:
+											target = ''
+											if subrule['response'] == 'combina':
+												target = [entry, secondentry]
+											else:
+												target = entry if subrule['target'] == 'a' else secondentry
+											applyrule(target, subrule['response'], subrule['movement'] if 'movement' in subrule else None)
 
+	fulfil(initialjob)
 	return kal
 
 if __name__ == "__main__":
@@ -495,4 +499,4 @@ if __name__ == "__main__":
 	# Convert datestrings to strings and sets into lists
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
 	# Write JSON output
-	args.output.write(json.dumps(ret) + "\n")
+	args.output.write(dump_data(ret) + "\n")
