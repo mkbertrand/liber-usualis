@@ -311,7 +311,7 @@ def kalendar(year: int) -> Kalendar:
 				if kal.match_any(entrystripped) is None:
 					buffer.add_entry(date0, entrystripped)
 			if 'habens-vigiliam' in entry and 'vigilia-excepta' not in entry:
-				entrystripped = entry_base | {'vigilia','poenitentialis','feria'}
+				entrystripped = entry_base | {'vigilia','poenitentialis','simplex'}
 				buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
 	kal |= buffer
@@ -367,18 +367,33 @@ def kalendar(year: int) -> Kalendar:
 		# The reason these are needed is to specify which days should be rechecked under previous coincidencetable rules.  Obviously the whole kalendar could just be rechecked for all rules, but that is super slow and miserable.
 		days: list
 		rulenumber: int
-	excludedtags = {'antiphona-bmv','commemoratum','fixum','temporale','tempus'}
+
+	roletags = {'primarium', 'commemoratio', 'omissum', 'tempus'}
+	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
+
+	for entrydate, entries in kal.items():
+		for entry in entries:
+			if entry.isdisjoint(roletags):
+				entry.add('primarium')
 
 	# perform_action() fulfils the action specified by a certain rule in the coincidencetable. The return is either None, or a RestartRequest.
 	def perform_action(instruction, day, target, rulenumber):
-		if instruction['response'] == 'combinandum':
+		if instruction['response'] == 'combina':
 			target[0] |= target[1]
+			# If there are multiple role tags (which are mutually exclusive), it picks the highest one to use and removes the others
+			if len(target[0] & roletags) > 1:
+				for i in roletagsordered:
+					if i in target[0]:
+						target[0] -= roletags
+						target[0].add(i)
+						break
+
 			kal[day].remove(target[1])
 			return RestartRequest([day], rulenumber)
-		elif instruction['response'] == 'omittendum':
+		elif instruction['response'] == 'dele':
 			kal[day].remove(target)
 			return
-		elif instruction['response'] == 'translandum':
+		elif instruction['response'] == 'transfer':
 			target.add('translatum')
 			transferday = (day + timedelta(days=instruction['movement'])) if type(instruction['movement']) is int else kal.match_unique(instruction['movement']).date
 			kal[transferday].append(target)
@@ -388,28 +403,38 @@ def kalendar(year: int) -> Kalendar:
 			raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {target}')
 		# These remaining conditions are when the response is anything else, which means that the string(s) in the response are tags to be given to the target.
 		elif type(instruction['response']) is frozenset:
+			# Prevents redundant instructions from being executed. Not perfectly optimized. This whole algo is being rewritten anyway so it can suck for now
+			if instruction['response'] <= target:
+				return 1
+			if not instruction['response'].isdisjoint(roletags):
+				target -= roletags
 			target |= instruction['response']
 			return RestartRequest([day], rulenumber)
 		else:
+			# Same as previous
+			if instruction['response'] in target:
+				return 1
 			if not type(instruction['response']) is str:
 				raise RuntimeError(type(instruction['response']))
+			if instruction['response'] in roletags:
+				target -= roletags
 			target.add(instruction['response'])
 			return RestartRequest([day], rulenumber)
 
 	# Applies only a specified rule for a certain day. May be recursed when perform_action returns None so that the whole process() doesn't need to be restarted.
 	def applyruleonday(rule, i, rulenumber):
 		for tags in kal[i]:
-			if rule['indices'].issubset(tags) and tags.isdisjoint(excludedtags):
+			if rule['include'] <= tags and not ('exclude' in rule and rule['exclude'] <= tags):
 				if type(rule['response']) is not list:
 					response = perform_action(rule, i, tags, rulenumber)
 					if response is None:
 						return applyruleonday(rule, i, rulenumber)
-					else:
+					elif response != 1:
 						return response
 				else:
 					for secondaryrule in rule['response']:
 						for secondarytags in kal[i]:
-							if secondaryrule['indices'].issubset(secondarytags) and not tags == secondarytags and secondarytags.isdisjoint(excludedtags):
+							if secondaryrule['include'] <= secondarytags and not ('exclude' in secondaryrule and secondaryrule['exclude'] <= secondarytags) and not tags == secondarytags:
 								target = tags
 								if 'target' in secondaryrule and secondaryrule['target'] == 'b':
 									target = secondarytags
@@ -419,7 +444,7 @@ def kalendar(year: int) -> Kalendar:
 								response = perform_action(secondaryrule, i, target, rulenumber)
 								if response is None:
 									return applyruleonday(rule, i, rulenumber)
-								else:
+								elif response != 1:
 									return response
 		return None
 
@@ -439,12 +464,6 @@ def kalendar(year: int) -> Kalendar:
 		workingresponse = process(workingresponse)
 		if workingresponse is None:
 			break
-
-	for date0, entries in kal.items():
-		for i in entries:
-			if i.isdisjoint(excludedtags):
-				i.add('primarium')
-				continue
 
 	return kal
 
