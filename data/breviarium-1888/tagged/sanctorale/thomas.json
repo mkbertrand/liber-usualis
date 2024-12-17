@@ -1,0 +1,19 @@
+[
+	{
+		"tags":["thomas","nomen"],
+		"datum":"S Thomae Apostoli"
+	},
+	{
+		"tags":[
+			["thomas","vesperae","antiphona","antiphona-magnificat"],
+			["thomas","laues","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/2517",
+		"datum":"Quia vidísti me, * Thoma, credidísti: beáti qui non vidérunt, et credidérunt, allelúja."
+	},
+	{
+		"tags":["thomas","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Da nobis, quǽsumus Dómine, beáti Apóstoli tui Thomæ solemnitátibus gloriári: + ut ejus semper et patrocíniis sublevémur, * et fidem cóngrua devotióne sectémur."
+	}
+]
