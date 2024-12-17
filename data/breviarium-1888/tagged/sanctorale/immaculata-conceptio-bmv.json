@@ -1,0 +1,103 @@
+[
+	{
+		"tags":["immaculata-conceptio-bmv","nomen"],
+		"datum":"Immaculatæ Conceptionis BMV"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-i"],
+		"src":"gregobase/2922",
+		"datum":"Tota pulchra * es María, et mácula originális non est in te."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-ii"],
+		"src":"gregobase/2930",
+		"datum":"Vestiméntum tuum * cándidum quasi nix, et fácies tua sicut sol."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-iii"],
+		"src":"gregobase/2747",
+		"datum":"Tu glória Jerúsalem, * tu lætítia Ísraël, tu honorificéntia pópuli nostri."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-iv"],
+		"src":"gregobase/2370",
+		"datum":"Benedícta es tu, * Virgo María, a Dómino Deo excélso præ ómnibus muliéribus super terram."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-v"],
+		"src":"gregobase/2078",
+		"datum":"Trahe nos * Virgo immaculáta, post te currémus in odórem unguentórum tuórum."
+	},
+	{
+		"tags":[
+			["immaculata-conceptio-bmv","vesperae","versiculus"],
+			["immaculata-conceptio-bmv","laudes","versiculus"]
+		],
+		"datum":["V. Immaculáta Concéptio est hódie sanctæ Maríæ Vírginis.","R. Quæ serpéntis caput virgíneo pede contrívit."]
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2695",
+		"datum":"Beátam me dicent * omnes generatiónes, quia fecit mihi magna qui potens est, allelúja."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","collecta"],
+		"terminatio":[["terminatio","per-eumdem-dominum"]],
+		"datum":"Deus, qui per Immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculum præparásti: + quǽsumus; ut qui ex morte ejúsdem Fílii tui prævísa, eam ab omni labe præservásti, * nos quoque mundos ejus intercessióne ad te perveníre concédas."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","laudes","capitulum"],
+		"datum":"Dóminus possédit me in inítio viárum suárum, ántequam quidquam fáceret a princípio. + Ab ætérno ordináta sum, et ex antíquis ántequam terra fíeret. * Nondum erant abýssi, et ego jam concépta eram."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2152",
+		"datum":"Ait Dóminus Deus * ad serpéntem: Inimicítias ponam inter te et mulíerem, et semen tuum et semen illíus: ipsa cónteret caput tuum, allelúja."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","tertia","responsorium-breve"],
+		"src":"gregobase/3204",
+		"incipit":"Deus omnípotens",
+		"responsum":"Præcínxit me virtúte.",
+		"versus":"Et pósuit immaculátam viam meam."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","tertia","versiculus"],
+		"datum":["V. In hoc cognóvi quóniam voluísti me.","R. Quóniam non gaudébit inimícus meus super me."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","sexta","capitulum"],
+		"datum":"Porta hæc clausa erit, non aperiétur, et vir non intrábit per eam, + quóniam Dóminus Deus Ísraël ingréssus est per eam: erítque clausa Príncipi. * Princeps ipse sedébit in ea."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","sexta","responsorium-breve"],
+		"src":"gregobase/3081",
+		"incipit":"In hoc cognóvi,",
+		"responsum":"Quóniam voluísti me.",
+		"versus":"Quóniam non gaudébit inimícus meus super me."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","sexta","versiculus"],
+		"datum":["V. Exaltábo te Dómine, quóniam suscepísti me.","R. Nec delectásti inimícos meos super me."]
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","nona","capitulum"],
+		"datum":"Signum magnum appáruit in cœlo: + Múlier amícta sole, et luna sub pédibus ejus, * et in cápite ejus coróna stellárum duódecim."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","nona","responsorium-breve"],
+		"src":"gregobase/3069",
+		"incipit":"Exaltábo te Dómine,",
+		"responsum":"Quóniam suscepísti me.",
+		"versus":"Nec delectásti inimícos meos super me."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","nona","versiculus"],
+		"datum":["V. Immaculáta Concéptio tua Dei Génetrix Virgo.","R. Gaúdium annuntiávit univérso mundo."]
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2494",
+		"datum":"Hódie egréssa est * virga de radíce Jesse: hódie sine ulla peccáti labe concépta est María: hódie contrítum est ab ea caput serpéntis antíqui, allelúja."
+	}
+]
