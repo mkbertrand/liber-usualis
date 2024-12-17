@@ -10,6 +10,7 @@ import logging
 import pathlib
 import re
 from typing import NamedTuple, Optional, Self, Set
+import itertools
 
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
@@ -47,6 +48,41 @@ threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis'
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
 octavevigiltags = {'habens-octavam','habens-vigiliam','vigilia-excepta','incipit-libri'}
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
+
+
+# Flattens the coincidence table
+
+class Restriction(NamedTuple):
+	include: set
+	exclude: set
+
+rules = []
+rulenumber = 0
+for i in copy.deepcopy(coincidencetable):
+	if not 'exclude' in i:
+		i['exclude'] = None
+	if not 'recheck' in i:
+		i['recheck'] = True
+	if not 'continue' in i:
+		i['continue'] = False
+	i['restrict'] = [Restriction(i['include'], i['exclude'])]
+	if type(i['response']) is str:
+		i['target'] = 0
+		i['number'] = rulenumber
+		rules.append(i)
+		rulenumber += 1
+	else:
+		for j in i['response']:
+			if not 'exclude' in j:
+				j['exclude'] = None
+			j['restrict'] = [i['restrict'][0], Restriction(j['include'], j['exclude'])]
+			j['number'] = rulenumber
+			if not 'recheck' in j:
+				j['recheck'] = i['recheck']
+			if not 'continue' in j:
+				j['continue'] = i['continue']
+			rules.append(j)
+			rulenumber += 1
 
 class SearchResult(NamedTuple):
 	date: date
@@ -362,108 +398,89 @@ def kalendar(year: int) -> Kalendar:
 			omittedepiphanyentry.discard('semiduplex')
 			kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
-	# RestartRequest is used to define what extent of the coincidencetable should be rechecked and what days should be examined in that restart.
-	class RestartRequest(NamedTuple):
-		# The reason these are needed is to specify which days should be rechecked under previous coincidencetable rules.  Obviously the whole kalendar could just be rechecked for all rules, but that is super slow and miserable.
-		days: list
-		rulenumber: int
-
-	roletags = {'primarium', 'commemoratio', 'omissum', 'tempus'}
 	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
+	roletags = set(roletagsordered)
+
+	class Job(NamedTuple):
+		days: tuple
+		rule: dict
+		parentnumber: int = -1
+
+	queue = [Job(tuple(kal.keys()), rule) for rule in rules]
+	queue.reverse()
+	ruleskip = [False] * len(rules)
 
 	for entrydate, entries in kal.items():
 		for entry in entries:
 			if entry.isdisjoint(roletags):
 				entry.add('primarium')
 
-	# perform_action() fulfils the action specified by a certain rule in the coincidencetable. The return is either None, or a RestartRequest.
-	def perform_action(instruction, day, target, rulenumber):
-		if instruction['response'] == 'combina':
-			target[0] |= target[1]
-			# If there are multiple role tags (which are mutually exclusive), it picks the highest one to use and removes the others
-			if len(target[0] & roletags) > 1:
-				for i in roletagsordered:
-					if i in target[0]:
-						target[0] -= roletags
-						target[0].add(i)
-						break
-
-			kal[day].remove(target[1])
-			return RestartRequest([day], rulenumber)
-		elif instruction['response'] == 'dele':
-			kal[day].remove(target)
+	def resolvejob(job):
+		if ruleskip[job.rule['number']]:
 			return
-		elif instruction['response'] == 'transfer':
-			target.add('translatum')
-			transferday = (day + timedelta(days=instruction['movement'])) if type(instruction['movement']) is int else kal.match_unique(instruction['movement']).date
-			kal[transferday].append(target)
-			kal[day].remove(target)
-			return RestartRequest([day, transferday], rulenumber)
-		elif instruction['response'] == 'errora':
-			raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {target}')
-		# These remaining conditions are when the response is anything else, which means that the string(s) in the response are tags to be given to the target.
-		elif type(instruction['response']) is frozenset:
-			# Prevents redundant instructions from being executed. Not perfectly optimized. This whole algo is being rewritten anyway so it can suck for now
-			if instruction['response'] <= target:
-				return 1
-			if not instruction['response'].isdisjoint(roletags):
-				target -= roletags
-			target |= instruction['response']
-			return RestartRequest([day], rulenumber)
-		else:
-			# Same as previous
-			if instruction['response'] in target:
-				return 1
-			if not type(instruction['response']) is str:
-				raise RuntimeError(type(instruction['response']))
-			if instruction['response'] in roletags:
-				target -= roletags
-			target.add(instruction['response'])
-			return RestartRequest([day], rulenumber)
+		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
+		if not rules[job.rule['number'] - 1]['recheck']:
+			ruleskip[job.rule['number'] - 1] = True
 
-	# Applies only a specified rule for a certain day. May be recursed when perform_action returns None so that the whole process() doesn't need to be restarted.
-	def applyruleonday(rule, i, rulenumber):
-		for tags in kal[i]:
-			if rule['include'] <= tags and not ('exclude' in rule and rule['exclude'] <= tags):
-				if type(rule['response']) is not list:
-					response = perform_action(rule, i, tags, rulenumber)
-					if response is None:
-						return applyruleonday(rule, i, rulenumber)
-					elif response != 1:
-						return response
-				else:
-					for secondaryrule in rule['response']:
-						for secondarytags in kal[i]:
-							if secondaryrule['include'] <= secondarytags and not ('exclude' in secondaryrule and secondaryrule['exclude'] <= secondarytags) and not tags == secondarytags:
-								target = tags
-								if 'target' in secondaryrule and secondaryrule['target'] == 'b':
-									target = secondarytags
-								elif 'target' in secondaryrule and secondaryrule['target'] == 'ab':
-									target = [tags, secondarytags]
-								# Performs the action. If no restart is necessary (IE response is None) it recurses the applyruleonday function since a rule could be applied multiple times in a single day, but it can't just continue the existing loop because an element could've been removed.
-								response = perform_action(secondaryrule, i, target, rulenumber)
-								if response is None:
-									return applyruleonday(rule, i, rulenumber)
-								elif response != 1:
-									return response
-		return None
+		for day in job.days:
 
-	# This is where the rules are looped through and applied to either all days, or just specified days (if they are previously checked rules being retroactively rechecked).
-	def process(promptingresponse):
-		for rulenumber in range(0, len(coincidencetable)):
-			for day in (promptingresponse.days if rulenumber < promptingresponse.rulenumber else kal.keys()):
-				response = applyruleonday(coincidencetable[rulenumber], day, rulenumber)
-				if not response is None:
-					return response
-		return None
+			tagsetindices = range(len(kal[day]))
+			matchset = [[tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex])] for restriction in job.rule['restrict']]
+			matches = list(itertools.product(*matchset))
 
-	# This is the response that process() returns.  It has to be out here so that it persists for the loop to reuse it.
-	workingresponse = RestartRequest(None, 0)
-	# Continually reruns process with the specified RestartRequest, which is just a NamedTuple which specifies until which rule only a list of specified days should be checked against previous rules. Previous rules need to be checked since sometimes a previously inapplicable rule may be made applicable because another tag is added to a tagset.
-	while True:
-		workingresponse = process(workingresponse)
-		if workingresponse is None:
-			break
+			for match in matches:
+				if len(set(match)) == len(job.rule['restrict']):
+					if job.rule['response'] == 'combina':
+						kal[day][match[0]] |= kal[day][match[1]]
+						if len(kal[day][match[0]] & roletags) > 1:
+							for i in roletagsordered:
+								if i in kal[day][match[0]]:
+									kal[day][match[0]] -= roletags
+									kal[day][match[0]].add(i)
+									break
+						kal[day].pop(match[1])
+						# We will restart this job from scratch when we've iterated through the more specific jobs
+						queue.append(job)
+						queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+					elif job.rule['response'] == 'errora':
+						raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {match}')
+					else:
+						target = match[job.rule['target']]
+						if job.rule['response'] == 'dele':
+							kal[day].pop(target)
+							queue.append(job)
+						elif job.rule['response'] == 'transfer':
+							move = kal[day].pop(target)
+							move.add('translatum')
+							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
+							kal[transferday].append(move)
+							queue.append(job)
+							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
+							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
+							queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
+						elif type(job.rule['response']) is frozenset:
+							if job.rule['response'] <= kal[day][target]:
+								continue
+							if job.rule['response'] & roletags:
+								kal[day][target] -= roletags
+							kal[day][target] |= job.rule['response']
+							queue.append(job)
+							queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+						elif not type(job.rule['response']) is str:
+							raise RuntimeError(type(job.rule['response']))
+						else:
+							if job.rule['response'] in kal[day][target]:
+								continue
+							if job.rule['response'] in roletags:
+								kal[day][target] -= roletags
+							kal[day][target].add(job.rule['response'])
+							queue.append(job)
+							if not job.rule['continue']:
+								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+					return
+
+	while len(queue) != 0:
+		resolvejob(queue.pop())
 
 	return kal
 
