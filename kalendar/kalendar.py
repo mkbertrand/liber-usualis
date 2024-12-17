@@ -64,7 +64,7 @@ for i in copy.deepcopy(coincidencetable):
 	if not 'recheck' in i:
 		i['recheck'] = True
 	if not 'continue' in i:
-		i['continue'] = False
+		i['continue'] = True
 	i['restrict'] = [Restriction(i['include'], i['exclude'])]
 	if type(i['response']) is str:
 		i['target'] = 0
@@ -416,6 +416,7 @@ def kalendar(year: int) -> Kalendar:
 				entry.add('primarium')
 
 	def resolvejob(job):
+
 		if ruleskip[job.rule['number']]:
 			return
 		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
@@ -425,7 +426,19 @@ def kalendar(year: int) -> Kalendar:
 		for day in job.days:
 
 			tagsetindices = range(len(kal[day]))
-			matchset = [[tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex])] for restriction in job.rule['restrict']]
+			matchset = []
+			failsearch = False
+			for restriction in job.rule['restrict']:
+				search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex])]
+				if len(search) == 0:
+					failsearch = True
+					break
+				else:
+					matchset.append(search)
+
+			if failsearch:
+				continue
+
 			matches = list(itertools.product(*matchset))
 
 			for match in matches:
@@ -465,7 +478,8 @@ def kalendar(year: int) -> Kalendar:
 								kal[day][target] -= roletags
 							kal[day][target] |= job.rule['response']
 							queue.append(job)
-							queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+							if not job.rule['continue']:
+								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
 						elif not type(job.rule['response']) is str:
 							raise RuntimeError(type(job.rule['response']))
 						else:

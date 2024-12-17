@@ -355,7 +355,7 @@
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus"],"response":"dele","target":1},
 			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
-			{"include":["semiduplex","primarium"],"response":"dele","target":1},
+			{"include":["semiduplex"],"response":"dele","target":1},
 			{"include":["simplex"],"response":"dele","target":1},
 			{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
 			{"include":["feria","primarium"],"response":"omissum","target":1}
@@ -510,7 +510,6 @@
 	{
 		"include":["nativitas-joannis-baptistae","infra-octavam","primarium"],
 		"recheck":false,
-		"continue":true,
 		"response":[
 			{"include":["petrus-paulus","infra-octavam"],"response":"commemoratio","target":0}
 		]
@@ -518,7 +517,6 @@
 	{
 		"include":["laurentius","infra-octavam","primarium"],
 		"recheck":false,
-		"continue":true,
 		"response":[
 			{"include":["assumptio","infra-octavam"],"response":"commemoratio","target":0}
 		]
@@ -601,7 +599,6 @@
 	{
 		"include":["suffragium","primarium"],
 		"recheck":false,
-		"continue":true,
 		"response":[
 			{"include":["duplex-i-classis"],"response":"dele","target":0},
 			{"include":["duplex-ii-classis"],"response":"dele","target":0},
@@ -616,13 +613,11 @@
 	{
 		"include":["maria","primarium"],
 		"recheck":false,
-		"continue":true,
 		"response":"responsorium-primae-mariae"
 	},
 	{
 		"include":["primarium"],
 		"recheck":false,
-		"continue":true,
 		"response":[
 			{"include":["maria","infra-octavam"],"response":"responsorium-primae-mariae","target":0},
 			{"include":["maria","dies-octava"],"response":"responsorium-primae-mariae","target":0}
