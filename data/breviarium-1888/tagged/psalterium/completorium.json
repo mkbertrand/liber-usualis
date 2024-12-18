@@ -27,7 +27,7 @@
 			["/psalmi/nunc-dimittis,gloria"],
 			["completorium","antiphona","antiphona-nunc-dimittis","repetita"],
 			["completorium","preces"],
-			["completorium","collecta","ordinarium"],
+			{"from-tags":["collecta-primaria"],"with":["ordinarium"]},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["completorium","dominus-vobiscum"]
@@ -126,8 +126,8 @@
 	},
 	{
 		"tags":["completorium","ordinarium","collecta"],
-		"datum":"Vísita, quǽsumus Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: + Ángeli tui sancti hábitent in ea, qui nos in pace custódiant, * et benedíctio tua sit super nos semper.",
-		"terminatio":[["terminatio","per-dominum"]]
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Vísita, quǽsumus Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: + Ángeli tui sancti hábitent in ea, qui nos in pace custódiant, * et benedíctio tua sit super nos semper."
 	},
 	{
 		"tags":["completorium","feria","hymnus"],

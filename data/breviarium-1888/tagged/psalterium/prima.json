@@ -17,7 +17,7 @@
 			["formula","responsorium-breve"],
 			["prima","versiculus"],
 			["prima","preces"],
-			["prima","collecta","ordinarium"],
+			{"from-tags":["collecta-primaria"],"with":["ordinarium"]},
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["prima","dominus-vobiscum"]
@@ -207,8 +207,8 @@
 	},
 	{
 		"tags":["ordinarium","prima","collecta"],
-		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, dirigántur cogitatiónes et ópera.",
-		"terminatio":[["terminatio","per-dominum"]]
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: + tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, * dirigántur cogitatiónes et ópera."
 	},
 	{
 		"tags":["prima","benedictio"],
