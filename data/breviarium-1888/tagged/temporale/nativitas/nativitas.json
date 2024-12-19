@@ -156,7 +156,7 @@
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-i"],
-		"datum":[{"from-tags":["psalmus-i"],"reference":["apostolus","i-vesperae","vesperae"]}]
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-i"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-ii"],
@@ -165,7 +165,7 @@
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-ii"],
-		"datum":[{"from-tags":["psalmus-ii"],"reference":["apostolus","i-vesperae","vesperae"]}]
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-ii"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-iii"],
@@ -174,7 +174,7 @@
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-iii"],
-		"datum":[{"from-tags":["psalmus-iii"],"reference":["apostolus","i-vesperae","vesperae"]}]
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-iv"],
@@ -183,7 +183,7 @@
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-iv"],
-		"datum":[{"from-tags":["psalmus-iv"],"reference":["apostolus","i-vesperae","vesperae"]}]
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-iv"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-v"],
@@ -192,7 +192,7 @@
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-v"],
-		"datum":[{"from-tags":["psalmus-v"],"reference":["apostolus","i-vesperae","vesperae"]}]
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-v"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","capitulum"],

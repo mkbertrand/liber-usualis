@@ -12,6 +12,9 @@ from kalendar import kalendar
 
 data_root = pathlib.Path(__file__).parent
 
+# Reserved tags
+functiontags = {'datum', 'src', 'tags', 'from-tags', 'reference', 'choose', 'with'}
+
 def load_data(p: str):
     data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
@@ -66,7 +69,7 @@ def getbreviariumfiles(root, queries):
                 for entry in got:
                     entrycopy = copy.deepcopy(entry)
                     for key, val in entrycopy.items():
-                        if key not in ['tags', 'datum', 'src', 'forwards-to','from-tags','cascade']:
+                        if key not in functiontags:
                             tags = None
                             if type(entrycopy['tags']) is list:
                                 tags = [j | {key} for j in entrycopy['tags']]
@@ -75,10 +78,8 @@ def getbreviariumfiles(root, queries):
                             newentry = {'tags':tags, 'datum':val}
                             if 'src' in entrycopy:
                                 newentry['src'] = entrycopy['src']
-                            if 'cascade' in entrycopy:
-                                newentry['cascade'] = entrycopy['cascade']
                             ret.append(newentry)
-                    if 'datum' in entry or 'forwards-to' in entry:
+                    if 'datum' in entry or 'reference' in entry:
                         ret.append(entry)
     added = []
 

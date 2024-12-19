@@ -138,9 +138,7 @@
 	},
 	{
 		"tags":["quattuor-tempora-adventus","sabbatum","matutinum","responsorium","responsorium-iii"],
-		"incipit":[{"from-tags":["incipit"],"reference":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"]}],
-		"responsum":[{"from-tags":["responsum"],"reference":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"]}],
-		"versus":[{"from-tags":["versus"],"reference":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"]}]
+		"formula":[{"from-tags":["formula"],"reference":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"]}]
 	},
 	{
 		"tags":["quattuor-tempora-adventus","sabbatum","laudes","antiphona","antiphona-benedictus"],

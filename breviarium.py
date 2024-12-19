@@ -88,7 +88,7 @@ def discriminate(root, table: str, tags: set):
 		val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
 	return val
 
-def search(root, query, pile, multipleresults = False, multipleresultssort = None, priortags = None, rootappendix = ''):
+def search(root, query, pile, multipleresults = False, multipleresultssort = None, rootappendix = ''):
 
 	for i in query:
 		if '/' in i:
@@ -108,12 +108,6 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
 	result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
 	if len(result[0]['tags']) != len(result[1]['tags']):
 		return result[0]
-	elif priortags is not None:
-		logging.debug(f'Search differentiation used priortag to rank {result}' )
-		strippedresult = [a['tags'] & priortags for a in result]
-		if len(strippedresult[-1]) != len(strippedresult[-2]):
-			return result[-1]
-
 	if not multipleresults:
 		raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[-1]}\n{result[-2]}')
 	else:
@@ -144,7 +138,7 @@ def process(root, item, selected, alternates, pile):
 
 		# None can sometimes be the result of a search and is expected, but indicates an absent item
 		if type(item) is set or type(item) is frozenset:
-			result = search(root, item | selected, pile, priortags = item)
+			result = search(root, item | selected, pile)
 			if result is None:
 				return str(list(item | selected))
 			else:
@@ -162,11 +156,13 @@ def process(root, item, selected, alternates, pile):
 			# Just in case an item needs to change depending on whether it is a reference
 			selected = item['reference'] | {'referens'}
 			pile = datamanage.getbreviariumfiles(root, defaultpile | item['reference'])
+			response = process(root, search(root, selected | item['from-tags'] if 'from-tags' in item else selected, pile), selected, alternates, pile)
+			return response
 
 		if 'with' in item:
 			selected |= set(item['with'])
 		if 'from-tags' in item:
-			response = process(root, search(root, item['from-tags'] | selected, pile, priortags = item['from-tags']), selected, alternates, pile)
+			response = process(root, search(root, item['from-tags'] | selected, pile), selected, alternates, pile)
 			if 'tags' in item:
 				return {'tags': item['tags'], 'datum': response}
 			else:
@@ -188,7 +184,7 @@ def process(root, item, selected, alternates, pile):
 
 		return item
 	except:
-		raise Exception(f'Error occured while generating for {item} with {selected} and {alternates}')
+		print(f'Error occured while generating for {item} with {selected} and {alternates}')
 
 
 if __name__ == '__main__':
