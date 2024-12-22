@@ -8,8 +8,6 @@ import copy
 import logging
 import requests
 
-from kalendar import kalendar
-
 data_root = pathlib.Path(__file__).parent
 
 # Reserved tags
