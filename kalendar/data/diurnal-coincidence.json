@@ -1,0 +1,9 @@
+[
+	{
+		"include":["vigilia","primarium"],
+		"recheck":false,
+		"response":[
+			{"include":["feria"],"response":"combina","target":0}
+		]
+	}
+]

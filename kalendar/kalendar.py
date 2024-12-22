@@ -12,6 +12,7 @@ import re
 from typing import NamedTuple, Optional, Self, Set
 import itertools
 
+import kalendar.datamanage as datamanage
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
@@ -42,47 +43,12 @@ nativitycycle = load_data('nativity.json')
 autumnalcycle = load_data('autumnalis.json')
 movables = load_data('movables.json')
 sanctoral = load_data('kalendar.json')
-coincidencetable = load_data('coincidence.json')
+rules = datamanage.flatten(load_data('coincidence.json'))
 
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
 octavevigiltags = {'habens-octavam','habens-vigiliam','vigilia-excepta','incipit-libri'}
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
-
-
-# Flattens the coincidence table
-
-class Restriction(NamedTuple):
-	include: set
-	exclude: set
-
-rules = []
-rulenumber = 0
-for i in copy.deepcopy(coincidencetable):
-	if not 'exclude' in i:
-		i['exclude'] = None
-	if not 'recheck' in i:
-		i['recheck'] = True
-	if not 'continue' in i:
-		i['continue'] = True
-	i['restrict'] = [Restriction(i['include'], i['exclude'])]
-	if type(i['response']) is str:
-		i['target'] = 0
-		i['number'] = rulenumber
-		rules.append(i)
-		rulenumber += 1
-	else:
-		for j in i['response']:
-			if not 'exclude' in j:
-				j['exclude'] = None
-			j['restrict'] = [i['restrict'][0], Restriction(j['include'], j['exclude'])]
-			j['number'] = rulenumber
-			if not 'recheck' in j:
-				j['recheck'] = i['recheck']
-			if not 'continue' in j:
-				j['continue'] = i['continue']
-			rules.append(j)
-			rulenumber += 1
 
 class SearchResult(NamedTuple):
 	date: date
@@ -401,6 +367,11 @@ def kalendar(year: int) -> Kalendar:
 	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 	roletags = set(roletagsordered)
 
+	for entrydate, entries in kal.items():
+		for entry in entries:
+			if entry.isdisjoint(roletags):
+				entry.add('primarium')
+
 	class Job(NamedTuple):
 		days: tuple
 		rule: dict
@@ -409,11 +380,6 @@ def kalendar(year: int) -> Kalendar:
 	queue = [Job(tuple(kal.keys()), rule) for rule in rules]
 	queue.reverse()
 	ruleskip = [False] * len(rules)
-
-	for entrydate, entries in kal.items():
-		for entry in entries:
-			if entry.isdisjoint(roletags):
-				entry.add('primarium')
 
 	def resolvejob(job):
 

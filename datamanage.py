@@ -37,14 +37,6 @@ def load_data(p: str):
 def getdiscrimina(root, query):
     return load_data(f'data/{root}/discrimina/{query}.json')
 
-@functools.lru_cache(maxsize=16)
-def getyear(year):
-    return kalendar.kalendar(year)
-
-def getdate(day):
-    year = getyear(day.year)
-    return year[day]
-
 @functools.lru_cache(maxsize=64)
 def getbreviariumfile(query):
     logging.debug(f'Loading {query}')

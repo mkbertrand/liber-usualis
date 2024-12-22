@@ -12,6 +12,8 @@ import breviarium
 import datamanage
 import prioritizer
 
+import kalendar.datamanage
+
 root = 'breviarium-1888'
 
 implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
@@ -50,7 +52,7 @@ def kalendar():
     else:
         parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-    tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if parameters['hour'] == 'vesperae' or parameters['hour'] == 'completorium' else datamanage.getdate(parameters['date']))
+    tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if parameters['hour'] == 'vesperae' or parameters['hour'] == 'completorium' else prioritizer.getdiurnal(parameters['date']))
 
     for i in tags:
         for j in implicationtable:
@@ -77,7 +79,7 @@ def rite():
     rite.append(breviarium.process(root, {'ante-officium'}, None, None, defpile))
 
     for hour in parameters['hour'].split('+'):
-        tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if hour == 'vesperae' or hour == 'completorium' else datamanage.getdate(parameters['date']))
+        tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if hour == 'vesperae' or hour == 'completorium' else prioritizer.getdiurnal(parameters['date']))
         for i in tags:
             for j in implicationtable:
                 if j['tags'].issubset(i):
