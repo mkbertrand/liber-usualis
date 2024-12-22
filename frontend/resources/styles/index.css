@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'paulus-franck-initialen';
+	src: url('/resources/PaulusFranckInitialen.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 #rite-page-container {
 	position: relative;
 	max-width: 100em;
@@ -90,6 +97,7 @@
 #options-panel-title {
 	text-align: center;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 #bottom-easy-select-container {
@@ -192,21 +200,27 @@
 }
 
 .psalmus::first-letter, .lectio-incipiens::first-letter {
+	font-family: 'paulus-franck-initialen';
 	float: left;
-	font-size: 100px;
-	font-weight: bold;
+	font-size: 115px;
 	margin-right: 0.5rem;
 	color: red;
 }
 
 .lectio-sequens::first-letter {
+	font-family: 'paulus-franck-initialen';
 	float: left;
-	font-size: 60px;
-	font-weight: bold;
+	font-size: 80px;
 	color: red;
 }
 
+@media only screen and (max-width: 650px) {
+	.psalmus::first-letter, .lectio-incipiens::first-letter {
+		line-height: .8;
+	}
+}
+
 .verse-number {
-	font-size: 10px;
+	font-size: 8px;
 	color: red;
 }
