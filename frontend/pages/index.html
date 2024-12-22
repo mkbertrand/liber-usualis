@@ -45,10 +45,12 @@
 		hour = 'completorium';
 	}
 " x-effect="updateRite()">
-	<div x-cloak id="options-panel" x-show="optionspanel">
-		<div id="options-panel-title">Options</div>
-		<button class="options-panel-button" @click="translation = !translation">Translation toggle</button>
-		<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
+	<div x-cloak id="options-panel-background" x-show="optionspanel">
+		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
+			<div id="options-panel-title">Options</div>
+			<button class="options-panel-button" @click="translation = !translation">Translation toggle</button>
+			<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
+		</div>
 	</div>
 	<div id="side-panel-left">
 	</div>
