@@ -105,10 +105,10 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		}
 		if ('tags' in data && data['tags'].includes('lectio')) {
 			// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
-			if (!data['tags'].includes('lectio-i')) {
-				data['tags'].push('lectio-sequens');
-			} else if (Array.isArray(data['datum']) && data['datum'].length == 4) {
+			if (Array.isArray(data['datum']) && data['datum'].length == 4) {
 				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][2]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
+			} else if (!data['tags'].includes('lectio-i')) {
+				data['tags'].push('lectio-sequens');
 			} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
 				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
 			} else {
@@ -154,6 +154,9 @@ async function chomp(id, tags) {
 			gabcdata = '%%\n';
 		}
 
+		// Make sure asterisks are formatted right
+		gabc = gabc.replace(/(\([,:;]+?\))\s*?\*\s/, '*$1 ');
+
 		if (tags.includes('deus-in-adjutorium')) {
 			return gabcdata + gabc.substring(0, gabc.search(/\(Z\-?\)/));
 
@@ -174,7 +177,7 @@ async function chomp(id, tags) {
 			if (tags.includes('intonata')) {
 				gabc = gabc.substring(0, gabc.indexOf('*')) + '(::)' + euouae;
 			} else if (tags.includes('pars')) {
-				gabc = gabc.replace(/^(\(..\)\s).+?\*.+?\)\s?/, '$1');
+				gabc = gabc.replace(/^(\(..\)\s).+?\*(\(.*?\))?\s?/, '$1');
 				gabcdata = '%%\n';
 			} else if (!(tags.includes('commemoratio') || tags.includes('repetita') || tags.includes('suffragium'))) {
 				gabc = gabc + euouae;
