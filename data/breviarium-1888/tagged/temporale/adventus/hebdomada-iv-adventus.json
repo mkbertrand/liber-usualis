@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["hebdomada-iv-adventus","basis-nominis"],
+		"datum":"IV Adventus"
+	},
+	{
 		"tags":["hebdomada-iv-adventus","dominica","antiphona","antiphona-iv"],
 		"src":"gregobase/2837",
 		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja, allelúja."
@@ -21,7 +25,10 @@
 		]
 	},
 	{
-		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"tags":[
+			["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomada-iv-adventus","feria","feria-ii","matutinum","responsorium","responsorium-i"]
+		],
 		"src":"nocturnale/A4N1R1",
 		"incipit":"Cánite tuba in Sion, vocáte Gentes, annuntiáte pópulis, et dícite:",
 		"responsum":"Ecce Deus Salvátor noster advéniet.",
@@ -32,7 +39,10 @@
 		"datum":"In cubílibus, in quibus prius dracónes habitábant, oriétur viror cálami et junci. Et erit ibi sémita et via, et via sancta vocábitur: non transíbit per eam pollútus, et hæc erit vobis dirécta via, ita ut stulti non errent per eam. Non erit ibi leo, et mala béstia non ascéndet per eam, nec inveniétur ibi: et ambulábunt, qui liberáti fúerint. Et redémpti a Dómino converténtur, et vénient in Sion cum laude: et lætítia sempitérna super caput eórum: gaúdium et lætítiam obtinébunt, et fúgiet dolor et gémitus."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"tags":[
+			["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-iv-adventus","feria","feria-ii","matutinum","responsorium","responsorium-ii"]
+		],
 		"src":"nocturnale/A4N1R2",
 		"incipit":"Non auferétur sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est:",
 		"responsum":"Et ipse erit exspectátio Géntium.",
@@ -43,10 +53,142 @@
 		"datum":"Táceant ad me ínsulæ, et Gentes mutent fortitúdinem: accédant, et tunc loquántur, simul ad judícium propinquémus. Quis suscitávit ab Oriénte justum, vocávit eum ut sequerétur se? dabit in conspéctu ejus Gentes et reges obtinébit: dabit quasi púlverem gládio ejus, sicut stípulam vento raptam árcui ejus. Persequétur eos, transíbit in pace , sémita in pédibus ejus non apparébit. Quis hæc operátus est, et fecit, vocans generatiónes ab exórdio? Ego Dóminus, primus et novíssimus ego sum."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"tags":[
+			["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-iv-adventus","feria","feria-ii","matutinum","responsorium","responsorium-iii"]
+		],
 		"src":"nocturnale/A4N1R3",
 		"incipit":"Me opórtet mínui, illum autem créscere: qui autem post me venit, ante me factus est:",
 		"responsum":"Cujus non sum dignus corrígiam calceamentórum sólvere.",
 		"versus":"Ego baptizávi vos aqua: ille autem baptizábit vos Spíritu sancto."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"Si fidéliter, dilectíssimi, atque sapiénter creatiónis nostræ intelligámus exórdium, inveniémus hóminem ídeo ad imáginem Dei cónditum, ut imitátor sui esset auctóris: et hanc esse naturálem nostri géneris dignitátem, si in nobis, quasi in quodam spéculo, divínæ benignitátis forma respléndeat. Ad quam quotídie nos útique réparat grátia Salvatóris, dum quod cécidit in Adam primo, erígitur in secúndo."
+		]
+	},
+	{
+		"tags":[
+			["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-iv-adventus","feria","feria-iii","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Nascétur nobis párvulus, et vocábitur Deus, Fortis:",
+		"responsum":"Ipse sedébit super thronum David patris sui, et imperábit: cujus potéstas super húmerum ejus.",
+		"versus":"In ipso benedicéntur omnes tribus terræ, omnes Gentes sérvient ei."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Causa autem reparatiónis nostræ non est nisi misericórdia Dei: quem non diligerémus, nisi prius nos ipse dilígeret, et ténebras ignorántiæ nostræ, suæ veritátis luce discúteret. Quod per sanctum Isaíam Dóminus denúntians, ait: Addúcam cæcos in viam quam ignorábant et sémitas quas nesciébant, fáciam illos calcáre: fáciam illis ténebras in lucem, et prava in dirécta. Hæc verba fáciam illis, et non relínquam eos. Et íterum: Invéntus sum, inquit, a non quæréntibus me, et palam appárui iis qui me non interrogábant."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-iv-adventus","feria","feria-iii","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Ecce jam venit plenitúdo témporis, in quo misit Deus Fílium suum in terras, natum de Vírgine, factum sub lege:",
+		"responsum":"Ut eos, qui sub lege erant, redímeret.",
+		"versus":"Propter nímiam caritátem suam, qua diléxit nos Deus, Fílium suum misit in similitúdinem carnis peccáti."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Quod quómodo implétum sit, Joánnes Apóstolus docet, dicens: Scimus quóniam Fílius Dei venit, et dedit nobis sensum, ut cognoscámus verum, et simus in vero Fílio ejus. Et íterum: Nos ergo diligámus Deum, quóniam ipse prior diléxit nos. Diligéndo ítaque nos Deus, ad imáginem suam nos réparat: et ut in nobis formam suæ bonitátis invéniat, dat unde ipsi quoque quod operátur operémur, accéndens scílicet méntium nostrárum lucérnas, et igne nos suæ caritátis inflámmans, ut non solum ipsum, sed étiam quidquid díligit, diligámus."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-iv-adventus","feria","feria-iii","matutinum","responsorium","responsorium-iii"]
+		],
+		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
+		"incipit":"Virgo Ísraël, revértere ad civitátes tuas:",
+		"responsum-i":"Úsquequo dolens avertéris? generábis Dóminum Salvatórem, oblatiónem novam in terra:",
+		"responsum-ii":"Ambulábunt hómines in salvatiónem.",
+		"versus":"In caritáte perpétua diléxi te: ídeo attráxi te míserans tui."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"Dicébat Joánnes ad turbas, quæ exíbant ut baptizaréntur ab eo: Genímina viperárum, quis osténdit vobis fúgere a ventúra ira? Ventúra enim ira est animadvérsio ultiónis extrémæ: quam tunc fúgere peccátor non valet, qui nunc ad laménta pœniténtiæ non recúrrit. Et notándum, quod malæ sóboles, malórum paréntum actiónem imitántes, genímina viperárum vocántur: quia per hoc quod bonis ínvident, eósque persequúntur, quod quibúsdam mala retríbuunt, quod læsiónes próximis exquírunt: quóniam in his ómnibus patrum suórum carnálium vias sequúntur, quasi venenáti fílii de venenátis paréntibus nati sunt."
+		]
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Jurávi, dicit Dóminus, ut ultra jam non iráscar super terram: montes enim et colles suscípient justítiam meam,",
+		"responsum":"Et testaméntum pacis erit in Jerúsalem.",
+		"versus":"Juxta est salus mea, ut véniat: et justítia mea, ut revelétur."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Sed quia jam peccávimus, quia usu malæ consuetúdinis involúti sumus: dicat quid nobis faciéndum sit, ut fúgere a ventúra ira valeámus. Séquitur: Fácti ergo fructus dignos pœniténtiæ. In quibus verbis notándum est, quod amícus sponsi non solum fructus pœniténtiæ, sed dignos pœniténtiæ ádmonet esse faciéndos. Áliud namque est fructum fácere pœniténtiæ fructum fácere. Ut enim secúndum dignos pœniténtiæ fructus loquámur, sciéndum est, quia quisquis illícita nulla commísit, huic jure concéditur, ut lícitis utátur: sicque pietátis ópera fáciat, ut tamen si volúerit, ea quæ mundi sunt, non relínquat."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Non discédimus a te, vivificábis nos Dómine, et nomen tuum invocábimus:",
+		"responsum":"Osténde nobis fáciem tuam, et salvi érimus.",
+		"versus":"Meménto nostri Dómine in beneplácito pópuli tui: vísita nos in salutári tuo."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"At si quis in fornicatiónis culpam, vel fortásse, quod est grávius, in adultérium lapsus est: tanto a se lícita debet abscíndere, quanto se méminit et illícita perpetrásse. Neque enim par fructus boni óperis esse debet, ejus qui minus, et ejus qui ámplius delíquit: aut ejus qui in nullis, et ejus qui in quibúsdam facinóribus cécidit, et ejus qui in multis est lapsus. Per hoc ergo quod dícitur: Fácite fructus dignos pœniténtiæ: uniuscujúsque consciéntia convenítur, ut tanto majóra acquírat bonórum óperum lucra per pœniténtiam, quanto gravióra sibi íntulit damna per culpam."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"incipit":"Intuémini, quantus sit iste, qui ingréditur ad salvándas Gentes: ipse est rex justítiæ,",
+		"responsum":"Cujus generátio non habet finem.",
+		"versus":"Præcúrsor órdinem Melchísidech Póntifex factus in ætérnum."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Ave María, * grátia plena: Dóminus tecum: benedícta tu in muliéribus, allelúja."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","sexta","capitulum"],
+		"datum":"Mihi autem pro mínimo est, ut a vobis júdicer, aut de humáno die: sed neque meípsum júdico."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","dominica","nona","capitulum"],
+		"datum":"Ítaque nolíte ante tempus judicáre, quoadúsque véniat Dóminus: qui et illuminábit abscóndita tenebrárum, et manifestábit consília córdium: et tunc laus erit unicuíque a Deo."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"De Isaía Prophéta.",
+			"Et tu Ísraël serve meus, Jacob quem elégi, semen Ábraham amíci mei: in quo apprehéndi te ab extrémis terræ, et a longínquis ejus vocávi te, et dixi tibi: Servus meus es tu, elégi te, et non abjéci te. Ne tímeas, quia ego Deus tuus: confortávi te, et auxiliátus sum tibi, et suscépit te déxtera justi mei."
+		]
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio","lectio-ii"],
+		"datum":"Ecce confundéntur et erubéscent omnes, qui pugnant advérsum te: erunt quasi non sint, et períbunt viri, qui contradícunt tibi. Quæres eos, et non invénies, viros rebélles tuos: erunt quasi non sint, et véluti consúmptio hómines bellántes advérsum te. Quia ego Dóminus Deus tuus apprehéndens manum tuam, dicénsque tibi: Ne tímeas, ego adjúvi te."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio","lectio-iii"],
+		"datum":"Noli timére, vermis Jacob, qui mórtui estis ex Ísraël: ego auxiliátus sum tibi, dicit Dóminus: et redémptor tuus sanctus Ísraël. Ego pósui te quasi plaustrum tritúrans novum, habens rostra serántia: triturábis montes, et commínues: et colles quasi púlverem pones. Ventilábis eos, et ventus tollet, et turbo dispérget eos: et tu exsultábis in Dómino, in sancto Ísraël lætáberis."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Dicit Dóminus: * Pœniténtiam ágite: appropinquávit enim regnum cœlórum, allelúja."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"De Isaía Prophéta.",
+			"Ecce servus meus, suscípiam eum: eléctus meus, complácuit sibi in illo ánima mea: dedi spíritum meum super eum, judícium Géntibus próferet. Non clamábit, neque accípiet persónam, nec audiétur vox ejus foris. Cálamum quassátum non cónteret, et linum fúmigans non exstínguet: in veritáte edúcet judícium. Non erit tristis, neque turbuléntus, donec ponat in terra judícium: et legem ejus ínsulæ exspectábunt."
+		]
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio","lectio-ii"],
+		"datum":"Hæc dicit Dóminus Deus creans cœlos, exténdens eos: firmans terram, et quæ gérminant ex ea: dans flatum pópulo, qui est super eam, et spíritum calcántibus eam. Ego Dóminus vocávi te in justítia, et apprehéndi manum tuam, et servávi te. Et dedi te in fœdus pópuli, in lucem Géntium: ut aperíres óculos cæcórum, et edúceres de conclusióne vinctum, de domo cárceris sedéntes in ténebris."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio","lectio-iii"],
+		"datum":"Cantáte Dómino cánticum novum, laus ejus ab extrémis terræ: qui descénditis in mare, et plenitúdo ejus, ínsulæ, et habitatóres eárum. Sublevétur desértum, et civitátes ejus; in dómibus habitábit Cedar: laudáte habitatóres Petræ, de vértice móntium clamábunt. Ponent Dómino glóriam, et laudem ejus in ínsulis nuntiábunt. Dóminus sicut fortis egrediétur, sicut vir præliátor suscitábit zelum: vociferábitur, et clamábit: super inimícos suos confortábitur."
+	},
+	{
+		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","antiphona","antiphona-benedictus"],
+		"datum":"Consúrge, consúrge: * indúere fortitúdinem, bráchium Dómini."
 	}
 ]
