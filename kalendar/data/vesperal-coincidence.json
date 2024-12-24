@@ -176,11 +176,8 @@
 			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
 			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
-			{"include":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria","hebdomada-sexagesima","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria","hebdomada-quinquagesima","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria","paschalis","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria","per-annum","ii-vesperae"],"response":"dele","target":1}
+			{"include":["feria","adventus","ii-vesperae"],"response":"dele","target":1},
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
 	{
