@@ -295,8 +295,6 @@ def kalendar(year: int) -> Kalendar:
 			if 'habens-octavam' in entry and 'octava-excepta' not in entry:
 				for k in range(1,7):
 					date0 = ent_date + timedelta(days=k)
-					if 'quadragesima' in kal.tagsindate(date0):
-						break
 					entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k]}
 					if date0.isoweekday() == 7:
 						entrystripped.add('dominica-infra-octavam')
@@ -304,8 +302,6 @@ def kalendar(year: int) -> Kalendar:
 					if kal.match_any(entrystripped) is None:
 						buffer.add_entry(date0, entrystripped)
 				date0 = ent_date + timedelta(weeks=1)
-				if 'quadragesima' in kal.tagsindate(date0):
-					continue
 				entrystripped = entry_base | {'duplex-minus', 'dies-octava'}
 				if date0.isoweekday() == 7:
 					entrystripped.add('dominica-infra-octavam')
