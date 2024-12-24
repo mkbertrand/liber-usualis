@@ -1,0 +1,132 @@
+[
+	{
+		"tags":["vigilia-nativitatis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Hódie sciétis, quia véniet Dóminus: * Et mane vidébitis glóriam ejus."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","hymnus"],
+		"forwards-to":["adventus","matutinum","hymnus"]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Hódie sciétis, quia véniet Dóminus.","R. Et mane vidébitis glóriam ejus."]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartum áddidit causam, cur a desponsáta concéptus sit: Ut partus, íniquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxòre generátum."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Sanctificámini hódie, et estóte paráti: quia die crástina vidébitis",
+		"responsum":"Majestátem Dei in vobis.",
+		"versus":"Hódie sciétis, quia véniet Dóminus, et mane vidébitis."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":[
+			"Antequam convenírent, invénta est in útero habens de Spíritu sancto. Non ab álio invénta est, nisi a Joseph, qui pene licéntia maritáli futúræ uxóris ómnia nóverat. Quod autem dícitur, Antequam convenírent: non séquitur ut póstea convénerint: sed Scriptúra quod factum non sit, osténdit."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Constántes estóte, vidébitis auxílium Dómini super vos: Judǽa et Jerúsalem, nolíte timére:",
+		"responsum":"Cras egrediémini, et Dóminus erit vobíscum.",
+		"versus":"Sanctificámini fílii Israël, et estóte paráti."
+	},
+
+	
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":[
+			"Joseph autem vir ejus, cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam. Si quis fornicáriæ conjúngitur, unum corpus effícitur, et in lege præcéptum est, non solum reos, sed et cónscios críminum obnóxios esse peccáti: quómodo Joseph, cum crimen celáret uxóris, justus scríbitur? Sed hoc testimónium Maríæ est, quod Joseph sciens illíus castitátem, et admírans quod evénerat, celat siléntio, cujus mystérium nesciébat."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"incipit":"Sanctificámini, fílii Israël, dicit Dóminus: die enim crástina descéndet Dóminus,",
+		"responsum":"Et aúferet a vobis omnem languórem.",
+		"versus":"Crástina die delébitur iníquitas terræ, et regnábit super nos Salvátor mundi."
+	},
+	{
+		"tags":["vigilia-nativitatis","antiphona","antiphona-i"],
+		"datum":"Judǽa et Jerúsalem * nolíte timére: cras egrediémini, et Dóminus erit vobíscum, allelúja."
+	},	
+	{
+		"tags":["vigilia-nativitatis","antiphona","antiphona-ii"],
+		"datum":"Hódie sciétis * quia véniet Dóminus: et mane vidébitis glóriam ejus."
+	},
+	{
+		"tags":["vigilia-nativitatis","antiphona","antiphona-iii"],
+		"datum":"Crástina die * delébitur iníquitas terræ: et regnábit super nos Salvátor mundi."
+	},
+	{
+		"tags":["vigilia-nativitatis","antiphona","antiphona-iv"],
+		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja."
+	},
+	{
+		"tags":["vigilia-nativitatis","antiphona","antiphona-v"],
+		"datum":"Crástina erit * vobis salus, dicit Dóminus Deus exercítuum."
+	},
+	{	
+		"tags":["vigilia-nativitatis","capitulum"],
+		"datum":"Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem."
+	},
+	{	
+		"tags":["vigilia-nativitatis","laudes","versiculus"],
+		"datum":["V. Crástina die delébitur iníquitas terræ.","R. Et regnábit super nos Salvátor mundi."]
+	},
+	{
+		"tags":["vigilia-nativitatis","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Oriétur * sicut sol Salvátor mundi: et descéndet in úterum Vírginis, sicut imber super gramen, allelúia."
+	},
+	{
+		"tags":["vigilia-nativitatis","collecta"],
+		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque júdicem secúri videámus, Dóminum nostrum Jesum Christum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus."
+	},
+	{
+		"tags":["vigilia-nativitatis","tertia","responsorium-breve"],
+		"src":"gregobase/3090",
+		"incipit":"Hódie sciétis,",
+		"responsum":"Quia véniet Dóminus.",
+		"versus":"Et mane vidébitis glóriam ejus."
+	},
+	{
+		"tags":["vigilia-nativitatis","tertia","versiculus"],
+		"datum":["V. Constántes estóte.","R. Vidébitis auxílium Dómini super vos."]
+	},
+	{
+		"tags":["vigilia-nativitatis","sexta","capitulum"],
+		"datum":"Qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis, ex resurrectióne mortuórum Jesu Christi Dómini nostri."
+	},
+	{
+		"tags":["vigilia-nativitatis","sexta","responsorium-breve"],
+		"src":"gregobase/3172",
+		"incipit":"Crástina die",
+		"responsum":"Delébitur iníquitas terræ.",
+		"versus":"Et regnábit super nos Salvátor mundi."
+	},
+	{
+		"tags":["vigilia-nativitatis","sexta","versiculus"],
+		"datum":["V. Crástina erit vobis salus.","R. Dicit Dóminus Deus exercítuum."]
+	},
+	{
+		"tags":["vigilia-nativitatis","nona","capitulum"],
+		"datum":"Per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi Dómini nostri."
+	},
+	{
+		"tags":["vigilia-nativitatis","nona","responsorium-breve"],
+		"src":"gregobase/3162",
+		"incipit":"Crástina",
+		"responsum":"Erit vobis salus.",
+		"versus":"Dicit Dóminus Deus exercítuum."
+	},
+	{
+		"tags":["vigilia-nativitatis","nona","versiculus"],
+		"datum":["V. Crástina die delébitur iníquitas terræ.","R. Et regnábit super nos Salvátor mundi."]
+	}
+]

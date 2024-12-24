@@ -168,8 +168,12 @@
 		"tags":["petrus-damianus","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
+		"occurrence":["ad-vii-kalendas-martii"],
+		"tags":["vigilia-matthiae","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-vi-kalendas-martii"],
-		"tags":["matthias","duplex-ii-classis","habens-vigiliam","apostolus"]
+		"tags":["matthias","duplex-ii-classis","apostolus"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-martii"],
@@ -488,8 +492,12 @@
 		"tags":["paulinus","simplex","confessor-pontifex"]
 	},
 	{
+		"occurrence":["ad-ix-kalendas-julii"],
+		"tags":["vigilia-nativitatis-joannis-baptistae","simplex","vigilia","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-viii-kalendas-julii"],
-		"tags":["nativitas-joannis-baptistae","duplex-i-classis","habens-octavam","habens-vigiliam"]
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","habens-octavam"]
 	},
 	{
 		"occurrence":["ad-vii-kalendas-julii"],
@@ -504,8 +512,12 @@
 		"tags":["leo-ii","semiduplex","confessor-pontifex","papa"]
 	},
 	{
+		"occurrence":["ad-iv-kalendas-julii"],
+		"tags":["vigilia-petri-pauli","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-iii-kalendas-julii"],
-		"tags":["petrus-paulus","duplex-i-classis","apostolus","habens-octavam","habens-vigiliam","martyr","martyres"]
+		"tags":["petrus-paulus","duplex-i-classis","apostolus","habens-octavam","martyr","martyres"]
 	},
 	{
 		"occurrence":["pridie-kalendas-julii"],
@@ -604,8 +616,12 @@
 		"tags":["christiana","simplex","commemoratio","virgo","martyr"]
 	},
 	{
+		"occurrence":["ad-ix-kalendas-augusti"],
+		"tags":["vigilia-jacobi","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-viii-kalendas-augusti"],
-		"tags":["jacobus","duplex-ii-classis","apostolus","habens-vigiliam","martyr"]
+		"tags":["jacobus","duplex-ii-classis","apostolus","martyr"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-augusti"],
@@ -684,8 +700,16 @@
 		"tags":["cyriacus-largus-smaragdus","semiduplex","martyr","martyres"]
 	},
 	{
+		"occurrence":["ad-v-idus-augusti"],
+		"tags":["vigilia-laurentii","simplex","vigilia","poenitentialis"]
+	},
+	{
+		"occurrence":["ad-v-idus-augusti"],
+		"tags":["romanus","simplex","commemoratio","martyr"]
+	},
+	{
 		"occurrence":["ad-iv-idus-augusti"],
-		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam","habens-vigiliam"]
+		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam"]
 	},
 	{
 		"occurrence":["ad-iii-idus-augusti"],
@@ -704,8 +728,12 @@
 		"tags":["eusebius","simplex","commemoratio","confessor"]
 	},
 	{
+		"occurrence":["ad-xix-kalendas-septembris"],
+		"tags":["vigilia-assumptionis","simplex","commemoratio","vigilia","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-xviii-kalendas-septembris"],
-		"tags":["assumptio","duplex-i-classis","maria","habens-octavam","habens-vigiliam"]
+		"tags":["assumptio","duplex-i-classis","maria","habens-octavam"]
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-septembris"],
@@ -732,8 +760,12 @@
 		"tags":["philippus-benitius","duplex-minus","confessor"]
 	},
 	{
+		"occurrence":["ad-x-kalendas-septembris"],
+		"tags":["vigilia-bartholomaei","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-ix-kalendas-septembris"],
-		"tags":["bartholomaeus","duplex-ii-classis","apostolus","habens-vigiliam"]
+		"tags":["bartholomaeus","duplex-ii-classis","apostolus"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-septembris"],
@@ -844,8 +876,12 @@
 		"tags":["eustachius-et-soc","duplex-minus","martyr","martyres"]
 	},
 	{
+		"occurrence":["ad-xii-kalendas-octobris"],
+		"tags":["vigilia-matthaei","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-xi-kalendas-octobris"],
-		"tags":["matthaeus","duplex-ii-classis","apostolus","evangelista","habens-vigiliam"]
+		"tags":["matthaeus","duplex-ii-classis","apostolus","evangelista"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-octobris"],
@@ -972,12 +1008,20 @@
 		"tags":["evaristus","simplex","papa","martyr"]
 	},
 	{
+		"occurrence":["ad-vi-kalendas-novembris"],
+		"tags":["vigilia-simonis-et-judae","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-v-kalendas-novembris"],
-		"tags":["simon-et-judas","duplex-ii-classis","apostolus","habens-vigiliam"]
+		"tags":["simon-et-judas","duplex-ii-classis","apostolus"]
+	},
+	{
+		"occurrence":["pridie-kalendas-novembris"],
+		"tags":["vigilia-omnium-sanctorum","simplex","vigilia","poenitentialis"]
 	},
 	{
 		"occurrence":["kalendae-novembris"],
-		"tags":["omnes-sancti","duplex-i-classis","habens-vigiliam","habens-octavam"]
+		"tags":["omnes-sancti","duplex-i-classis","habens-octavam"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-novembris"],
@@ -1089,11 +1133,15 @@
 	},
 	{
 		"occurrence":["ad-iii-kalendas-decembris"],
+		"tags":["vigilia-andreae","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
+		"occurrence":["ad-iii-kalendas-decembris"],
 		"tags":["saturninus","simplex","commemoratio","martyr"]
 	},
 	{
 		"occurrence":["pridie-kalendas-decembris"],
-		"tags":["andreas","duplex-ii-classis","apostolus","habens-vigiliam"]
+		"tags":["andreas","duplex-ii-classis","apostolus"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-decembris"],
@@ -1124,8 +1172,12 @@
 		"tags":["ambrosius","duplex-minus","confessor-pontifex","doctor","mtv"]
 	},
 	{
+		"occurrence":["ad-vii-idus-decembris"],
+		"tags":["vigilia-immaculatae-conceptionis-bmv","simplex","vigilia","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-vi-idus-decembris"],
-		"tags":["immaculata-conceptio-bmv","duplex-i-classis","maria","habens-vigiliam","habens-octavam"]
+		"tags":["immaculata-conceptio-bmv","duplex-i-classis","maria","habens-octavam"]
 	},
 	{
 		"occurrence":["ad-iv-idus-decembris"],
@@ -1144,8 +1196,12 @@
 		"tags":["eusebius-martyr","semiduplex","episcopus-martyr"]
 	},
 	{
+		"occurrence":["ad-xiii-kalendas-januarii"],
+		"tags":["vigilia-thomae","simplex","vigilia","vigilia-apostoli","poenitentialis"]
+	},
+	{
 		"occurrence":["ad-xii-kalendas-januarii"],
-		"tags":["thomas","duplex-ii-classis","apostolus","habens-vigiliam"]
+		"tags":["thomas","duplex-ii-classis","apostolus"]
 	},
 	{
 		"occurrence":["ad-iv-kalendas-januarii"],

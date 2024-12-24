@@ -205,7 +205,7 @@
 		]
 	},
 	{
-		"include":["nativitas","vigilia"],
+		"include":["vigilia-nativitatis"],
 		"recheck":false,
 		"response":[
 			{"include":["dominica","primarium"],"response":["commemoratio","matutinum"],"target":1},
@@ -213,7 +213,7 @@
 		]
 	},
 	{
-		"include":["epiphania","vigilia"],
+		"include":["vigilia-epiphaniae"],
 		"recheck":false,
 		"response":[
 			{"include":["dominica","primarium"],"response":"omissum","target":1},

@@ -317,7 +317,7 @@
 	{
 		"basis":"pascha",
 		"offset":0,
-		"tags":["pascha","duplex-i-classis","paschalis","dominica","dominica-i-classis","habens-vigiliam","vigilia-excepta","habens-octavam","octava-excepta"]
+		"tags":["pascha","duplex-i-classis","paschalis","dominica","dominica-i-classis","habens-octavam","octava-excepta"]
 	},
 	{
 		"basis":"pascha",
@@ -512,7 +512,7 @@
 	{
 		"basis":"pascha",
 		"offset":39,
-		"tags":["ascensio","paschalis","duplex-i-classis","habens-octavam","habens-vigiliam","vigilia-excepta","incipit-libri"]
+		"tags":["ascensio","paschalis","duplex-i-classis","habens-octavam","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
@@ -537,12 +537,12 @@
 	{
 		"basis":"pascha",
 		"offset":48,
-		"tags":["vigilia","pentecostes","paschalis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
+		"tags":["vigilia-pentecostes","paschalis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":49,
-		"tags":["pentecostes","paschalis","duplex-i-classis","dominica","dominica-i-classis","habens-vigiliam","vigilia-excepta","habens-octavam","octava-excepta"]
+		"tags":["pentecostes","paschalis","duplex-i-classis","dominica","dominica-i-classis","habens-octavam","octava-excepta"]
 	},
 	{
 		"basis":"pascha",

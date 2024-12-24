@@ -47,7 +47,7 @@ rules = datamanage.flatten(load_data('coincidence.json'))
 
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
-octavevigiltags = {'habens-octavam','habens-vigiliam','vigilia-excepta','incipit-libri'}
+octavevigiltags = {'habens-octavam','incipit-libri'}
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
 
 class SearchResult(NamedTuple):
@@ -308,9 +308,6 @@ def kalendar(year: int) -> Kalendar:
 				# If a certain day within an Octave is manually entered, do not create one automatically
 				if kal.match_any(entrystripped) is None:
 					buffer.add_entry(date0, entrystripped)
-			if 'habens-vigiliam' in entry and 'vigilia-excepta' not in entry:
-				entrystripped = entry_base | {'vigilia','poenitentialis','simplex'}
-				buffer.add_entry(ent_date - timedelta(days=1), entrystripped)
 
 	kal |= buffer
 	buffer.kal.clear()
