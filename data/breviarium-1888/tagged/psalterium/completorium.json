@@ -65,10 +65,7 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":[
-			["completorium","duplex","hymnus"],
-			["completorium","semiduplex","hymnus"]
-		],
+		"tags":["completorium","semiduplex","hymnus"],
 		"src":"gregobase/1843",
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",

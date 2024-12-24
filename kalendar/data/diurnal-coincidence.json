@@ -1,6 +1,6 @@
 [
 	{
-		"include":["vigilia","primarium"],
+		"include":["vigilia","simplex","primarium"],
 		"recheck":false,
 		"response":[
 			{"include":["feria"],"response":"combina","target":0}
