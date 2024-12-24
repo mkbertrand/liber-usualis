@@ -13,7 +13,6 @@ import warnings
 import logging
 import sys
 
-from kalendar import kalendar
 import psalms
 
 data_root = pathlib.Path(__file__).parent
@@ -183,8 +182,9 @@ def process(root, item, selected, alternates, pile):
 			item['datum'] = ret if len(ret) != 1 else ret[0]
 
 		return item
-	except:
-		print(f'Error occured while generating for {item} with {selected} and {alternates}')
+	except Exception as e:
+		print(f'Error occured while generating for {item} with {selected} and {alternates}: ')
+		print(e)
 
 
 if __name__ == '__main__':

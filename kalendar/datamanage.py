@@ -2,8 +2,6 @@ import functools
 import copy
 from typing import NamedTuple
 
-import kalendar.kalendar as kalendar
-
 class Restriction(NamedTuple):
 	include: set
 	exclude: set
@@ -40,8 +38,9 @@ def flatten(table):
 
 @functools.lru_cache(maxsize=16)
 def getyear(year):
-    return kalendar.kalendar(year)
+	import kalendar.kalendar as kalendar
+	return kalendar.kalendar(year)
 
 def getdate(day):
-    year = getyear(day.year)
-    return year[day]
+	year = getyear(day.year)
+	return year[day]
