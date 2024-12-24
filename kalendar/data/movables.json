@@ -107,11 +107,11 @@
 	},
 	{
 		"occurrence":["adventus"],
+		"excluded":["nativitas"],
 		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"]
 	},
 	{
 		"occurrence":["nativitas"],
-		"excluded":["adventus"],
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	{

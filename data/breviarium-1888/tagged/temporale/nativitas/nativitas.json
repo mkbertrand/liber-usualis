@@ -1,5 +1,13 @@
 [
 	{
+		"tags":["nativitas","nomen"],
+		"datum":"In Nativitate Domini Nostri Jesu Christi"
+	},
+	{
+		"tags":["nativitas","basis-nominis"],
+		"datum":"Nativitatis Domini Nostri Jesu Christi"
+	},
+	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/2996",
 		"datum":"Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra."
@@ -11,7 +19,7 @@
 	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-ii"],
 		"src":"gregobase/3011",
-		"datum":"Magnificátus est * Rex pacíficus super omnes reges univérsé terrae."
+		"datum":"Magnificátus est * Rex pacíficus super omnes reges univérsæ terrae."
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-ii"],
@@ -38,7 +46,7 @@
 	{
 		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/3006",
-		"datum":"Leváte cápita vestra: * ecce approppínquat redédemptio vestra."
+		"datum":"Leváte cápita vestra: * ecce appropínquat redémptio vestra."
 	},
 	{
 		"tags":["nativitas","i-vesperae","vesperae","psalmus-v"],
@@ -322,13 +330,6 @@
 	{
 		"tags":["nativitas","laudes","antiphona","antiphona-benedictus"],
 		"datum":"Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allelúja."
-	},
-	{
-		"tags":["nativitas","prima","responsorium-breve"],
-		"src":"gregobase/3102",
-		"incipit":"Christe, Fili Dei vivi,",
-		"responsum":"Miserére nobis.",
-		"versus":"Qui natus es de María Vírgine."
 	},
 	{
 		"tags":["nativitas","tertia","responsorium-breve"],

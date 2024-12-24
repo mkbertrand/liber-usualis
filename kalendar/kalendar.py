@@ -450,7 +450,8 @@ def kalendar(year: int) -> Kalendar:
 							queue.append(job)
 							if not job.rule['continue']:
 								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-					return
+					if job.rule['continue']:
+						return
 
 	while len(queue) != 0:
 		resolvejob(queue.pop())

@@ -62,6 +62,32 @@
 		]
 	},
 	{
+		"include":["nativitas"],
+		"recheck":false,
+		"response":"tempus-nativitatis"
+	},
+	{
+		"include":["innocentes"],
+		"recheck":false,
+		"response":"tempus-nativitatis"
+	},
+	{
+		"include":["vigilia-epiphaniae"],
+		"recheck":false,
+		"response":"tempus-nativitatis"
+	},
+	{
+		"include":[],
+		"exclude":["tempus"],
+		"recheck":false,
+		"continue":false,
+		"response":[
+			{"include":["nativitas"],"target":0,"response":"tempus-nativitatis"},
+			{"include":["innocentes"],"target":0,"response":"tempus-nativitatis"},
+			{"include":["vigilia-epiphaniae"],"target":0,"response":"tempus-nativitatis"}
+		]
+	},
+	{
 		"include":["pascha","duplex-i-classis"],
 		"recheck":false,
 		"response":[
@@ -355,7 +381,7 @@
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus"],"response":"dele","target":1},
 			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
-			{"include":["semiduplex"],"response":"dele","target":1},
+			{"include":["semiduplex"],"exclude":["dominica"],"response":"dele","target":1},
 			{"include":["simplex"],"response":"dele","target":1},
 			{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
 			{"include":["feria","primarium"],"response":"omissum","target":1}
@@ -389,7 +415,7 @@
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus","primarium"],"response":"commemoratio","target":1},
 			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
-			{"include":["infra-octavam"],"response":"dele","target":1},
+			{"include":["infra-octavam"],"exclude":["tempus-nativitatis"],"response":"dele","target":1},
 			{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
@@ -604,16 +630,29 @@
 		]
 	},
 	{
-		"include":["maria","primarium"],
+		"include":["adventus"],
 		"recheck":false,
-		"response":"responsorium-primae-mariae"
+		"response":"tempus-adventus"
 	},
 	{
-		"include":["primarium"],
+		"include":["adventus"],
 		"recheck":false,
 		"response":[
-			{"include":["maria","infra-octavam"],"response":"responsorium-primae-mariae","target":0},
-			{"include":["maria","dies-octava"],"response":"responsorium-primae-mariae","target":0}
+			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-adventus"}
+		]
+	},
+	{
+		"include":["maria","primarium"],
+		"recheck":false,
+		"response":"tempus-mariae"
+	},
+	{
+		"include":[],
+		"exclude":["tempus"],
+		"recheck":false,
+		"response":[
+			{"include":["maria","infra-octavam"],"response":"tempus-mariae","target":0},
+			{"include":["maria","dies-octava"],"response":"tempus-mariae","target":0}
 		]
 	}
 ]
