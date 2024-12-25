@@ -49,7 +49,10 @@
 		"datum":"Beátus vir, qui suffert tentatiónem: + quóniam cum probátus fúerit, accípiet corónam vitæ, * quam repromísit Deus diligéntibus se."
 	},
 	{
-		"tags":["martyr","vesperae","hymnus"],
+		"tags":[
+			["martyr","vesperae","hymnus"],
+			["martyr","matutinum","hymnus"]
+		],
 		"src":"gregobase/2702",
 		"datum":[
 			"Deus tuórum mílitum/Sors et coróna, prǽmium,/Laudes canéntes Mártyris/Absólve nexu críminis.",
@@ -60,7 +63,10 @@
 		]
 	},
 	{
-		"tags":["martyr","i-vesperae","vesperae","versiculus"],
+		"tags":[
+			["martyr","i-vesperae","vesperae","versiculus"],
+			["martyr","matutinum","nocturna-i","versiculus"]
+		],
 		"datum":["V. Glória et honóre coronásti eum Dómine.","R. Et constituísti eum super ópera mánuum tuárum."]
 	},
 	{
@@ -69,21 +75,189 @@
 		"datum":"Iste sanctus * pro lege Dei sui certávit usque ad mortem, et a verbis impiórum non tímuit: fundátus enim erat supra firmam petram."
 	},
 	{
-		"tags":["martyr","matutinum","lectio","lectio-vii"],
+		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"In lege Dómini * fuit volúntas ejus die ac nocte."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-i,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Prǽdicans * præcéptum Dómini constitútus est in monte sancto ejus."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Voce mea * ad Dóminum clamávi: et exaudívit me de monte sancto suo."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-iii"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
-			"Léctio sancti Evangélii secúndum Lucam.",
-			"In illo témpore: Descéndens Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judǽa, et Jerúsalem, et marítima, et Tyri, et Sidónis. Et réliqua.",
-			"Homília sancti Ambrósii Epíscopi.",
-			"Advérte ómnia diligénter, quómodo et cum Apóstolis ascéndat et descéndat ad turbas. Quómodo enim turba nisi in húmili Christum vidéret? Non séquitur ad excélsa, non ascéndit ad sublímia. Dénique ubi descéndit, invénit infírmos: in excélsis enim infírmi esse non possunt. Hinc étiam Matthǽus docet in inferióribus débiles esse sanátos. Prius enim unusquísque sanándus est, ut paulátim virtútibus procedéntibus ascéndere possit ad montem. Et ídeo quemque in inferióribus sanat, hoc est, a libídine révocat, injúriam cæcitátis avértit. Ad vúlnera nostra descéndit: ut usu quodam et cópia suæ natúræ, compartícipes nos fáciat esse regni cœléstis."
+			"De Áctibus Apostolórum.",
+			"A Miléto Paulus mittens Éphesum, vocávit majóres natu Ecclésiæ. Qui cum veníssent ad eum, et simul essent, dixit eis: Vos scitis a prima die, qua ingréssus sum in Ásiam, quáliter vobíscum per omne tempus fúerim, sérviens Dómino cum omni humilitáte, et lácrimis, et tentatiónibus, quæ mihi accidérunt ex insídiis Judæórum: quómodo nihil subtráxerim utílium, quo minus annuntiárem vobis, et docérem vos públicæe, et per domos, testíficans Judǽis, atque Gentílibus in Deum pœniténtiam, et fidem in Dóminum nostrum Jesum Christum. Et nunc ecce alligátus ego spíritu, vado in Jerúsalem: quæ in ea ventúra sint mihi, ignórans: nisi quod Spíritus sanctus per omnes civitátes mihi protestátur, dicens: quóniam víncula et tribulatiónes Jerosólymis me manent. Sed nihil horum véreor: nec fácio ánimam meam pretiosiórem quam me, dúmmodo consúmmem cursum meum, et ministérium verbi, quod accépi a Dómino Jesu, testificári Evangélium grátiæ Dei."
 		]
 	},
 	{
-		"tags":["martyr","matutinum","lectio","lectio-viii"],
-		"datum":"Beáti paúperes, quia vestrum est regnum Dei. Quátuor tantum beatúdines sanctus Lucas domínicas pósuit, octo vero sanctus Matthǽus: sed in illis octo istæ quátuor sunt, et in quátuor istis illæ octo. Hic enim quátuor velut virtútes ampléxus est cardináles: ille in illis octo mýsticum númerum reserávit. Pro octáva enim multi inscribúntur Psalmi: et mandátum áccipis octo illis partem dare fortásse benedictiónibus. Sicut enim spei nostræ octáva perféctio est, ita octáva summa virtútum est."
+		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Iste sanctus pro lege Dei sui certávit usque ad mortem, et a verbis impiórum non tímuit:",
+		"responsum":"Fundátus enim erat supra firmam petram.",
+		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
-		"tags":["martyr","matutinum","lectio","lectio-ix"],
-		"datum":"Sed prius quæ sunt amplióra videámus. Beáti, inquit, paúperes, quóniam vestrum est regnum Dei. Primam benedictiónem hanc utérque Evangelísta pósuit. Órdine enim prima est, et parens quædam generatióque virtútum: quia qui contémpserit sæculária, ipse merébitur sempitérna: nec potest quisquam méritum regni cœléstis adipísci, qui mundi cupiditáte pressus, emergéndi non habet facultátem."
+		"tags":["martyr","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Et nunc ecce ego scio quia ámplius non vidébitis fáciem meam vos omnes, per quos transívi prǽdicans regnum Dei. Quaprópter contéstor vos hodiérna die, quia mundus sum a sánguine ómnium. Non enim subterfúgi quóminus annuntiárem omne consílium Dei vobis. Atténdite vobis, et univérso gregi, in quo vos Spíritus sanctus pósuit epíscopos régere Ecclésiam Dei, quam acquisívit sánguine suo. Ego scio quóniam intrábunt post discessiónem meam lupi rapáces in vos, non parcéntes gregi. Et ex vobis ipsis exsúrgent viri loquéntes pervérsa, ut abdúcant discípulos post se. Propter quod vigiláte memória retinéntes: quóniam per triénnum nocte et die non cessávi, cum lácrimis monens unumquémque vestrum."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Justus germinábit sicut lílium:",
+		"responsum":"Et florébit in ætérnum ante Dóminum.",
+		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Et nunc comméndo vos Deo, et verbo grátiæ ipsíus, qui potens est ædificáre, et dare hæreditátem in sanctificátis ómnibus. Argéntum et aurum, aut vestem nullíus concupívi, sicut ipsi scitis: quóniam ad ea, quæ mihi opus erant, et his qui mecum sunt, ministravérunt manus istæ. Ómnia osténdi vobis, quóniam sic laborántes, opórtet suscípere infírmos, ac meminísse verbi Dómini Jesu, quóniam ipse dixit: Beátius est magis dare, quam accípere. Et cum hæc dixísset, pósitis génibus suis orávit cum ómnibus illis. Magnus autem fletus factus est ómnium: et procumbéntes super collum Pauli, osculabántur eum, doléntes máxime in verbo, quod díxerat, quóniam ámplius fáciem ejus non essent visúri. Et deducébant eum ad navem."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum:",
+		"responsum":"Et invéntus est in número sanctórum.",
+		"versus":"Iste est qui contémpserint vitam mundi, et pervénit ad cœléstia regna."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Fílii hóminum * scitóte quia Dóminus sanctum suum mirificávit."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-iv,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Scuto bonæ voluntátis * tuæ coronásti eum Dómine."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-v,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"In univérsa terra * glória et honóre coronásti eum."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Posuísti Dómine super caput ejus.","R. Corónam de lápide pretióso."]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"Triumphális beáti Mártyris N. dies hódie nobis anniversária celebritáte recúrrit: cujus glorificatióni sicut congaúdet Ecclésia, sic ejus propónit sequénda vestígia. Si enim compátimur, et conglorificábimur. In cujus glorióso agóne duo nobis præcípue consideránda sunt: induráta vidélicet tortóris sævítia, et Mártyris invícta patiéntia. Sævítia tortóris, ut eam detestémur: patiéntia Mártyris, ut eam imitémur. Audi Psalmístam advérsus malítiam increpántem: Noli æmulári in malignántibus: quóniam tamquam fœnum velóciter aréscent. Quod autem advérsus malignántes patiéntia exhibénda sit, audi Apóstolum suadéntem: Patiéntia vobis necessária est, ut reportétis promissiónes."
+		]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
+		"responsum":"Et dedit illi claritátem ætérnam.",
+		"versus":"Descendítque cum illo in fóveam, et in vínculis non derelíquit eum."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Coronáta ítaque est beáti Mártyris patiéntia: mancipáta est ætérnis cruciátibus tortóris incorrécta malítia. Hoc atténdens in agóne suo gloriósus Christi athléta, non exhórruit cárcerem. Ad imitatiónem cápitis sui tolerávit probra, sustínuit irrisiónes, flagélla non tímuit: et quot ante mortem pro Christo pértulit supplícia, tot ei de se óbtulit sacrifícia. Quod enim propinánte Apóstolo bíberat, alte retinébat: Quia non sunt condígnæ passiónes hujus témporis ad futúram glóriam, quæ revelábitur in nobis. Et quia momentáneum hoc et leve nostræ tribulatiónis, ætérnum glóriæ pondus operátur in cœlis. Hujus promissiónis amóre a terrénis suspénsus, et prægustáta supérnæ suavitátis dulcédine ineffabíliter afféctus, dicébat cum Psalmísta: Quid mihi est in cœlo, et a te quid vólui super terram? Defécit caro mea et cor meum: Deus cordis mei, et pars mea Deus in ætérnum."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Desidérium ánimæ ejus tribuísti ei Dómine,",
+		"responsum":"Et voluntáte labiórum ejus non fraudásti eum.",
+		"versus":"Quóniam prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Contemplabátur enim quantum in ænígmate infírmitas humána óculum mentis in æternitáte fígere potest, quanta sint supérnæ civitátis gaúdia: et ea enarráre non suffíciens, admirándo clamábat: Quid mihi est in cœlo? Quasi díceret: Excédit vires meas, excédit facultátem eloquéntiæ meæ, transcéndit capacitátem intelligéntiæ meæ illud decus, illa glória, illa celsitúdo, qua nobis, a conturbatióne hóminum remótis, in abscóndito faciéi suæ Jesus Christus Dóminus noster reformábit corpus humilitátis nostræ, configurátum córpori claritátis suæ. Hujus perféctæ libertátis contemplatióne nullum vitábat perículum, nullum horrébat supplícium: et si míllies posset mori, non putábat se hanc digne posse áliqua ratióne promeréri."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Stola jucunditátis índuit eum Dóminus:",
+		"responsum":"Et corónam pulchritúdinis pósuit super caput ejus.",
+		"versus":"Cibávit illum Dóminus pane vitæ et intelléctus: et aqua sapiéntiæ salutáris potávit illum."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Justus Dóminus, * et justítiam diléxit: æquitátem vidit vultus ejus."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-x,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Habitábit * in tabernáculo tuo: requiéscet in monte sancto tuo."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Posuísti Dómine * super caput ejus corónam de lápide pretióso."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Magna est glória ejus in salutári tuo.","R. Glóriam et magnum decórem impónes super eum."]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Dixit Jesus turbis: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Si considerémus, fratres caríssimi, quæ et quanta sunt, quæ nobis promittúntur in cœlis, viléscunt ánimo ómnia quæ habéntur in terris. Terréna namque substántia supérnæ felicitáti comparáta, pondus est, non subsídium. Temporális vita ætérnæ vitæ comparáta, mors est pótius dicénda quam vita. Ipse enim quotidiánus deféctus corruptiónis quid est áliud, quam quædam prolíxitas mortis? Quæ autem lingua dícere, vel quis intelléctus cápere súfficit, illa supérnæ civitátis quanta sint gaúdia; Angelórum choris interésse, cum beatíssimis spirítibus glóriæ conditóris assístere, præséntem Dei vultum cérnere, incircumscríptum lumen vidére, nullo mortis metu áffici, incorruptiónis perpétuæ múnere lætári?"
+		]
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Coróna aúrea super caput ejus,",
+		"responsum":"Expréssa signo sanctitátis, glória honóris, et opus fortitúdinis.",
+		"versus":"Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Sed ad hæc audíta inardéscit ánimus, jamque illic cupit assístere, ubi se sperat sine fine gaudére. Sed ad magna prǽmia perveníri non potest, nisi per magnos labóres. Unde et Paulus egrégius prædicátor dicit: Non coronábitur, nisi qui legítime certáverit. Deléctat ergo mentem magnitúdo præmiórum, sed non detérreat certámen labórum. Unde ad se veniéntibus Véritas dicit: Si quis venit ad me, et non odit patrem suum, et matrem, et uxórem, et fílios, et fratres, et soróres, adhuc autem et ánimam suam, non potest meus esse discípulus."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Hic est vere Martyr, qui pro Christi nómine sánguinem suum fudit:",
+		"responsum":"Qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsívit, sed ad cœléstia regna pervénit.",
+		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
+	},
+	{
+		"tags":["martyr","episcopus-martyr","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Dómine prævenísti eum in benedictiónibus dulcédinis:",
+		"responsum":"Posuísti in cápite ejus corónam de lápide pretióso.",
+		"versus":"Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi."
+	},
+	{
+		"tags":["martyr","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Sed percontári libet, quómodo paréntes, et carnáliter propínquos præcípimur odísse, qui jubémur et inimícos dilígere? Et certe Véritas de uxóre dicit: Quod Deus conjúnxit, homo non séparet. Et Paulus ait: Viri, dilígite uxóres vestras, sicut et Christus Ecclésiam. Ecce, discípulus uxórem diligéndam prǽdicat, cum magíster dicat: Qui uxórem non odit, non potest meus esse discípulus. Numquid áliud judex núntiat, áliud præco clamat? An simul et odísse póssumus, et dilígere? Sed si vim præcépti perpéndimus, utrúmque ágere per discretiónem valémus: ut uxórem, et eos, qui nobis carnis cognatióne conjúncti sunt, et quos próximos nóvimus, diligámus; et quos adversários in via Dei pátimus, odiéndo et fugiéndo nesciámus."
 	},
 	{
 		"tags":["martyr","ii-vesperae","vesperae","psalmus-v"],
