@@ -88,6 +88,14 @@
 		]
 	},
 	{
+		"include":["innocentes","festum"],
+		"recheck":false,
+		"continue":false,
+		"response":[
+			{"include":["tempus"],"exclude":["dominica"],"response":"poenitentialis","target":0}
+		]
+	},
+	{
 		"include":["pascha","duplex-i-classis"],
 		"recheck":false,
 		"response":[

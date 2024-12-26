@@ -231,6 +231,23 @@
 		]
 	},
 	{
+		"tags":["matutinum","nocturnae","innocentes","festum"],
+		"datum":[
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+				"with":["nocturna-i"]
+			},
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+				"with":["nocturna-ii"]
+			},
+			{
+				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+				"with":["nocturna-iii"]
+			}
+		]
+	},
+	{
 		"tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
 		"datum":[
 			{

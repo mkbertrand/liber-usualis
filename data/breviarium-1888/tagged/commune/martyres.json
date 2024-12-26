@@ -1,5 +1,145 @@
 [
 	{
+		"tags":["martyres","antiphona","antiphona-i"],
+		"datum":"Omnes sancti, * quanta passi sunt torménta, ut secúri pervenírent ad palmam martýrii."
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","psalmus-i"],
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-i"]
+	},
+	{
+		"tags":["martyres","antiphona","antiphona-ii"],
+		"datum":"Cum palma * ad regna pervenérunt sancti, corónas decóris meruérunt de manu Dei."
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","psalmus-ii"],
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-ii"]
+	},
+	{
+		"tags":["martyres","antiphona","antiphona-iii"],
+		"datum":"Córpora sanctórum * in pace sepúlta sunt: et vivent nómina eórum in ætérnum."
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","psalmus-iii"],
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-iii"]
+	},
+	{
+		"tags":["martyres","antiphona","antiphona-iv"],
+		"datum":"Mártyres Dómini * Dóminum benedícite in ætérnum."
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","psalmus-iv"],
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-iv"]
+	},
+	{
+		"tags":["martyres","antiphona","antiphona-v"],
+		"datum":"Mártyrum chorus * laudáte Dóminum de cœlis, allelúja."
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","psalmus-v"],
+		"reference":["apostolus","i-vesperae","vesperae","psalmus-v"]
+	},
+	{
+		"tags":["martyres","capitulum"],
+		"datum":"Justórum ánimæ in manu Dei sunt, et non tanget illos torméntum mortis. Visi sunt óculis insipiéntium mori: illi autem sunt in pace."
+	},
+	{
+		"tags":["martyres","vesperae","hymnus"],
+		"datum":[
+			"Sanctórum méritis ínclyta gaúdia/Pangámus sócii, gestáque fórtia:/Gliscens fert ánimus prómere cántibus/Victórum genus óptimum.",
+			"Hi sunt, quos fátue mundus abhórruit;/Hunc fructu vácuum, flóribus áridum/Contempsére tui nóminis ásseclæ/Jesu Rex bone cœlitum.",
+			"Hi pro te fúrias, atque minas truces/Calcárunt hóminum, sǽvaque vérbera:/His cessit lácerans fórtiter úngula,/Nec carpsit penetrália.",
+			"Cædúntur gládiis more bidéntium:/Non murmur résonat, non quærimónia;/Sed corde impávido mens bene cónscia/Consérvat patiéntiam.",
+			"Quæ vox, quæ póterit lingua retéxere,/Quæ tu Martýribus múnera prǽparas?/Rubri nam flúido sánguine fúlgidis/Cingunt témpora laúreis.",
+			"Te summa o Déitas, únaque póscimus;/Ut culpas ábigas, nóxia súbtrahas,/Des pacem fámulis, ut tibi glóriam/Annórum in sériem canant.","Amen."
+		]
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","versiculus"],
+		"datum":["V. Lætámini in Dómino, et exsultáte justi.","R. Et gloriámini omnes recti corde."]
+	},
+	{
+		"tags":["martyres","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Istórum est enim * regnum cœlórum, qui contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni."
+	},
+	{
+		"tags":["martyres","episcopi-martyres","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Beatórum Mártyrum paritérque Pontíficum N. et N. nos, quǽsumus Dómine, festa tueántur: et eórum comméndet orátio veneránda."
+	},
+	{
+		"tags":["martyres","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalítia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére."
+	},
+	{
+		"tags":["martyres","collecta","alia-collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis."
+	},
+	{
+		"tags":["martyres","laudes","hymnus"],
+		"datum":[
+			"Rex glorióse Mártyrum,/Coróna confiténtium,/Qui respuéntes térrea/Perdúcis ad cœléstia.",
+			"Aurem benígnam prótinus/Inténde nostris vócibus:/Trophǽa sacra pángimus:/Ignósce quod delíquimus.",
+			"Tu vincis inter Mártyres,/Parcísque Confessóribus:/Tu vince nostra crímina,/Largítor indulgéntiæ.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":[
+			["martyres","laudes","versiculus"],
+			["martyres","nona","versiculus"]
+		],
+		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
+	},
+	{
+		"tags":["martyres","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Vestri capílli cápitis * omnes numeráti sunt: nolíte timére: multis passéribus melióres estis vos."
+	},
+	{
+		"tags":["martyres","tertia","responsorium-breve"],
+		"incipit":"Lætámini in Dómino,",
+		"responsum":"Et exsultáte justi.",
+		"versus":"Et gloriámini omnes recti corde."
+	},
+	{
+		"tags":["martyres","tertia","versiculus"],
+		"datum":["V. Exsúltent justi in conspéctu Dei.","R. Et delecténtur in lætítia."]
+	},
+	{
+		"tags":["martyres","sexta","capitulum"],
+		"datum":"Réddidit Deus mercédem labórum sanctórum suórum, et dedúxit illos in via mirábili: et fuit illis in velaménto diéi, et in luce stellárum nocte."
+	},
+	{
+		"tags":["martyres","sexta","responsorium-breve"],
+		"incipit":"Exsúltent justi",
+		"responsum":"In conspéctu Dei.",
+		"versus":"Et delecténtur in lætítia."
+	},
+	{
+		"tags":["martyres","sexta","versiculus"],
+		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
+	},
+	{
+		"tags":["martyres","sexta","versiculus"],
+		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
+	},
+	{
+		"tags":["martyres","nona","capitulum"],
+		"datum":"Fulgébunt justi, et tamquam scintíllæ in arundinéto discúrrent. Judicábunt natiónes, et dominabúntur pópulis: et regnábit Dóminus illórum in perpétuum."
+	},
+	{
+		"tags":["martyres","nona","responsorium-breve"],
+		"incipit":"Justi autem",
+		"responsum":"In perpétuum vivent.",
+		"versus":"Et apud Dóminum est merces eórum."
+	},
+	{
+		"tags":["martyres","ii-vesperae","vesperae","antiphona","antiphona-i"],
+		"datum":"Isti sunt sancti, * qui pro testaménto Dei sua córpora tradidérunt, et in sánguine Agni lavérunt stolas suas."
+	},
+	{
 		"tags":["martyres","matutinum","nocturna-iii","lectio","lectio-i","alia"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Lucam.",
