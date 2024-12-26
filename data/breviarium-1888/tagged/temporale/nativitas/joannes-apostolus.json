@@ -8,17 +8,184 @@
 		"datum":"Sancti Joannis Apostoli"
 	},
 	{
-		"tags":["joannes-apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":[
+			["joannes-apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+			["joannes-apostolus","laudes","antiphona","antiphona-benedictus"]
+		],
 		"src":"gregobase/2174",
 		"datum":"Iste est Joánnes, * qui supra pectus Dómini in cœna recúbuit: beátus Apóstolus, cui reveláta sunt secréta cœléstia."
 	},
 	{
-		"tags":["joannes-apostolus","i-vesperae","vesperae","versiculus"],
+		"tags":["joannes-apostolus","vesperae","versiculus"],
 		"datum":["V. Valde honorándus est beátus Joánnes.","R. Qui supra pectus Dómini in cœna recúbuit."]
 	},
 	{
 		"tags":["joannes-apostolus","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Ecclésiam tuam Dómine benígnus illústra: + ut beáti Joánnis Apóstoli tui et Evangelístæ illumináta doctrínis, * ad dona pervéniat sempitérna."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Íncipit Epístola prima beáti Joánnis Apóstoli.",
+			"Quod fuit ab inítio, quod audívimus, quod vídimus óculis nostris, quod perspéximus, et manus nostræ contrectavérunt de verbo vitæ: et vita manifestáta est, et vídimus, et testámur, et annuntiámus vobis vitam ætérnam, quæ erat apud Patrem, et appáruit nobis: quod vídimus et audívimus, annuntiámus vobis, ut et vos societátem habeátis nobíscum, et socíetas nostra sit cum Patre, et cum Fílio ejus Jesu Christo. Et hæc scríbimus vobis, ut gaudeátis, et gaúdium vestrum sit plenum. Et hæc est annuntiátio, quam audívimus ab eo, et annuntiámus vobis: Quóniam Deus lux est, et ténebræ in eo non sunt ullæ."
+		]
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/1227N1R1",
+		"incipit":"Valde honorándus est beátus Joánnes, qui supra pectus Dómini in cœna recúbuit:",
+		"responsum":"Cui Christus in cruce matrem vírginem vírgini commendávit.",
+		"versus":"Virgo est eléctus a Dómino, atque inter céteros magis diléctus."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Si dixérimus quóniam societátem habémus cum eo, et in ténebris ambulámus, mentímur, et veritátem non fácimus. Si autem in luce ambulámus, sicut et ipse est in luce; societátem habémus ad ínvicem, et sanguis Jesu Christi Fílii ejus emúndat nos ab omni peccáto. Si dixérimus quóniam peccátum non habémus: ipsi nos sedúcimus, et véritas in nobis non est. Si confiteámur peccáta nostra: fidélis est, et justus, ut remíttat nobis peccáta nostra, et emúndet nos ab omni iniquitáte. Si dixérimus quóniam non peccávimus, mendácem fácimus eum, et verbum ejus non est in nobis."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/1227N1R2",
+		"incipit":"Hic est discípulus ille, qui testimónium pérhibet de his, et scrípsit hæc:",
+		"responsum":"Et scimus quia verum est testimónium ejus.",
+		"versus":"Fluénta Evangélii de ipso sacro Domínici péctoris fonte potávit."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Filíoli mei, hæc scribo vobis, ut non peccétis. Sed et si quis peccáverit, advocátum habémus apud Patrem, Jesum Christum justum: et ipse est propitiátio pro peccátis nostris: non pro nostris autem tantum, sed étiam pro totíus mundi. Et in hoc scimus, quóniam cognóvimus eum, si mandáta ejus observémus. Qui dicit se nosse eum, et mandáta ejus non custódit, mendax est, et in hoc véritas non est. Qui autem servat verbum ejus, vere in hoc cáritas Dei perfécta est."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/1227N1R3",
+		"incipit":"Hic est beatíssimus Evangelísta et Apóstolus Joánnes,",
+		"responsum":"Qui privilégio amóris præcípui, céteris áltius a Dómino méruit honorári.",
+		"versus":"Hic est discípulus ille, quem diligébat Jesus, qui supra pectus Dómini in cœna recúbuit."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex libro sancti Hierónymi Presbýteri de Scriptóribus Ecclesiásticis.",
+			"Joánnes Apóstolus, quem Jesus amávit plúrimum, fílius Zebedǽi, frater Jacóbi Apóstoli, quem Heródes post passiónem Dómini decollávit, novíssimus ómnium scripsit Evangélium, rogátus ab Ásiæ epíscopis, advérsus Cerínthum, aliósque hæréticos: et máxime tunc Ebionitárum dogma consúrgens, qui ásserunt Christum ante Maríam non fuísse: unde et compúlsus est divínam ejus nativitátem edícere."
+		]
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"nocturnale/1227N2R1",
+		"incipit":"Qui vícerit, fáciem illum colúmnam in templo meo, dicit Dóminus:",
+		"responsum":"Et scribam super eum nomen meum, et nomen civitátis novæ Jerúsalem.",
+		"versus":"Vincénti dabo édere de ligno vitæ, quod est in paradíso Dei mei."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quarto décimo ígitur anno, secúndam post Nerónem persecutiónem movénte Domitiáno, in Patmos ínsulam relegátus, scripsit Apocalýpsim, quam interpretátur Justínus Martyr, et Irenǽus. Interfécto autem Domitiáno, et actis ejus ob nímiam crudelitátem a senátu rescíssis, sub Nerva príncipe rédiit Éphesum: ibíque usque ad Trajánum príncipem persevérans, totas Ásiæ fundávit, rexítque ecclésias; et conféctus sénio, sexagésimo octávo post passiónem Dómini anno mórtuus, juxta eámdem urbem sepúltus est."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/1227N2R2",
+		"incipit":"Diligébat autem eum Jesus, quóniam speciális prærogatíva castitátis amplióri dilectióne fécerat dignum:",
+		"responsum":"Quia virgo eléctus ab ipso, virgo in ævum permánsit.",
+		"versus":"In cruce dénique moritúrus, huic matrem suam vírginem vírgini commendávit."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Beátus Joánnes Evangelísta, cum Éphesi morarétur usque ad últimam senectútem, et vix inter discipulórum manus ad Ecclésiam deferrétur, nec posset in plura vocem verba contéxere: nihil áliud per síngulas solébat proférre colléctas, nisi hoc: Filíoli, dilígite altérutrum. Tandem discípuli, et fratres, qui áderant, tǽdio affécti quod éadem semper audírent, dixérunt: Magíster, quare semper hoc lóqueris? Qui respóndit dignam Joánne senténtiam: Quia præcéptum Dómini est: et si solum fiat, súfficit."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/1227N2R3",
+		"incipit":"In médio Ecclésiæ apéruit os ejus,",
+		"responsum":"Et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.",
+		"versus":"Jucunditátem et exsultatiónem thesaurizávit super eum."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Dixit Jesus Petro: Séquere me. Convérsus Petrus, vidit illum discípulum, quem diligébat Jesus, sequéntem. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Duas vitas sibi divínitus prædicátas, et commendátas novit Ecclésia: quarum est una in fide, áltera in spécie: una in témpore peregrinatiónis, áltera in æternitáte mansiónis: una in labóre, áltera in réquie: una in via, áltera in pátria: una in ópere actiónis, áltera in mercéde contemplatiónis. Una declínat a malo, et facit bonum: áltera nullum habet, a quo declínet, malum; et magnum habet, quo fruátur, bonum. Una cum hoste pugnat, áltera sine hoste regnat."
+		]
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/1227N3R1",
+		"incipit":"In illum diem suscípiam te servum meum, et ponam te sicut signáculum in conspéctu meo:",
+		"responsum":"Quóniam ego elégi te, dicit Dóminus.",
+		"versus":"Esto fidélis usque ad mortem, et dabo tibi corónam vitæ."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Una súbvenit indigénti, áltera ibi est, ubi nullum ínvenit indigéntem. Una aliéna peccáta, ut sua sibi ignoscántur, ignóscit: áltera nec pátitur quod ignóscat, nec facit quod sibi poscat ignósci. Una flagellátur malis, ne extollátur in bonis: áltera tanta plenitúdine grátiæ caret omni malo, ut sine ulla tentatióne supérbiæ cohǽreat summo bono."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/1227N3R2",
+		"incipit":"Iste est Joánnes, qui supra pectus Dómini in cœna recúbuit:",
+		"responsum":"Beátus Apóstolus, cui reveláta sunt secréta cœléstia.",
+		"versus":"Fluénta Evangélii de ipso sacro Domínici péctoris fonte potávit."
+	},
+	{
+		"tags":["joannes-apostolus","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Ergo una bona est, sed adhuc mísera: áltera mélior, et beáta. Ista significáta est per Apóstolum Petrum, illa per Joánnem. Tota hic ágitur ista usque in hujus sǽculi finem, et illic ínvenit finem: différtur illa complénda post hujus sǽculi finem, sed in futúro sǽculo non habet finem. Ídeo dícitur huic: Séquere me. De illo autem: Sic eum volo manére, donec véniam: quid ad te? tu me séquere. Quid enim est hoc? Quantum sápio, quantum cápio, quid est hoc? nisi tu me séquere per imitatiónem perferéndi temporália mala: ille máneat, donec sempitérna vénio redditúrus bona."
+	},
+	{
+		"tags":["joannes-apostolus","antiphona","antiphona-i"],
+		"src":"gregobase/1906",
+		"datum":"Valde honorándus est * beátus Joánnes, qui supra pectus Dómini in cœna recúbuit."
+	},
+	{
+		"tags":["joannes-apostolus","antiphona","antiphona-ii"],
+		"src":"gregobase/2569",
+		"datum":"Hic est discípulus ille, * qui testimónium pérhibet de his: et scimus quia verum est testimónium ejus."
+	},
+	{
+		"tags":["joannes-apostolus","antiphona","antiphona-iii"],
+		"src":"gregobase/2499",
+		"datum":"Hic est discípulus meus: * sic eum volo manére, donec véniam."
+	},
+	{
+		"tags":["joannes-apostolus","antiphona","antiphona-iv"],
+		"src":"gregobase/13076",
+		"datum":"Sunt de hic stántibus, * qui non gustábunt mortem, donec vídeant Fílium hóminis in regno suo."
+	},
+	{
+		"tags":["joannes-apostolus","antiphona","antiphona-v"],
+		"src":"gregobase/2409",
+		"datum":"Ecce puer meus * eléctus, quem elégi, pósui super eum spíritum meum."
+	},
+	{
+		"tags":["joannes-apostolus","capitulum"],
+		"datum":"Qui timet Deum, fáciet bona: + et qui cóntinens est justítiæ, * apprehéndet illam, et obviábit illi quasi mater honorificáta."
+	},
+	{
+		"tags":[
+			["joannes-apostolus","vesperae","hymnus"],
+			["joannes-apostolus","laudes","hymnus"]
+		],
+		"src":"gregobase/2191",
+		"datum":[
+			"Exsúltet orbis gaúdiis:/Cœlum resúltet laúdibus:/Apostolórum glóriam/Tellus et astra cóncinunt.",
+			"Vos sæculórum júdices,/Et vera mundi lúmina,/Votis precámur córdium:/Audíte voces súpplicum.",
+			"Qui templa cœli claúditis,/Serásque verbo sólvitis,/Nos a reátu nóxios/Solvi jubéte, quǽsumus.",
+			"Præcépta quorum prótinus/Languor salúsque séntiunt;/Sanáte mentes lánguidas:/Augéte nos virtútibus:",
+			"Ut, cum redíbit árbiter/In fine Christus sǽculi,/Nos sempitérni gaúdii/Concédat esse cómpotes.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["joannes-apostolus","laudes","versiculus"],
+		"datum":["V. Hic est discípulus ille, qui testimónium pérhibet de his.","R. Et scimus quia verum est testimónium ejus."]
+	},
+	{
+		"tags":["joannes-apostolus","sexta","capitulum"],
+		"datum":"Cibávit illum pane vitæ, et intelléctus, + et aqua sapiéntiæ salutáris * potávit illum Dóminus Deus noster."
+	},
+	{
+		"tags":["joannes-apostolus","nona","capitulum"],
+		"datum":"In médio Ecclésiæ apéruit os ejus, + et implévit illum Dóminus spíritu sapiéntiæ, et intelléctus, * et stolam glóriæ índuit eum."
+	},
+	{
+		"tags":["joannes-apostolus","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2471",
+		"datum":"Éxiit * sermo inter fratres, quod discípulus ille non móritur; et non dixit Jesus, Non móritur: sed, Sic eum volo manére, donec véniam."
 	}
 ]

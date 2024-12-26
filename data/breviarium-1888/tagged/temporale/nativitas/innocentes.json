@@ -1,0 +1,24 @@
+[
+	{
+		"tags":["innocentes","nomen"],
+		"datum":"In Festo Sanctorum Innocentium"
+	},
+	{
+		"tags":["innocentes","basis-nominis"],
+		"datum":"Sanctorum Innocentium"
+	},
+	{
+		"tags":["innocentes","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2548",
+		"datum":"Hi sunt, * qui cum muliéribus non sunt coinquináti: vírgines enim sunt et sequúntur Agnum, quocúmque íerit."
+	},
+	{
+		"tags":["innocentes","i-vesperae","vesperae","versiculus"],
+		"datum":["V. Heródes irátus occídit multos púeros.","R. In Béthlehem Judæ civitáte David."]
+	},
+	{
+		"tags":["innocentes","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: + ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, * étiam móribus vita fateátur."
+	}
+]
