@@ -258,7 +258,7 @@
 		"datum":["Per eúmdem Christum Dóminum nostrum.","R. Amen."]
 	},
 	{
-		"tags":["formula","laudes","commemoratio"],
+		"tags":["formula","laudes","formula-commemorationis"],
 		"datum":[
 			["commemoratio","antiphona","antiphona-benedictus"],
 			["commemoratio","laudes","versiculus"],
@@ -267,7 +267,7 @@
 		]
 	},
 	{
-		"tags":["formula","vesperae","commemoratio"],
+		"tags":["formula","vesperae","formula-commemorationis"],
 		"datum":[
 			["commemoratio","antiphona","antiphona-magnificat"],
 			["commemoratio","vesperae","versiculus"],

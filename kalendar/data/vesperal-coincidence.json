@@ -24,6 +24,12 @@
 		"response":"dele"
 	},
 	{
+		"include":["nativitas","commemoratio","infra-octavam","ii-vesperae"],
+		"response":[
+			{"include":["ii-vesperae","primarium"],"response":["psalmi","duplex"],"target":0}
+		]
+	},
+	{
 		"include":["septem-dolores","primarium"],
 		"response":[
 			{"include":["benedictus","primarium"],"response":"commemoratio","target":0}
@@ -224,7 +230,7 @@
 			{"include":["sollemnitas-localis","ii-vesperae"],"response":"commemoratio","target":0},
 			{"include":["duplex-majus","ii-vesperae"],"response":"commemoratio","target":1},
 			{"include":["duplex-minus","ii-vesperae"],"response":"commemoratio","target":1},
-			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
+			{"include":["semiduplex","ii-vesperae"],"exclude":["tempus-nativitatis"],"response":"dele","target":1},
 			{"include":["duplex-i-classis","ii-vesperae"],"response":"commemoratio","target":0},
 			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
 			{"include":["feria","hebdomada-septuagesima","ii-vesperae"],"response":"dele","target":1},

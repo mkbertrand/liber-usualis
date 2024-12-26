@@ -129,7 +129,7 @@ def process(root, item, selected, alternates, pile):
 			commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(root, 'rank', a), reverse=True)
 			for i in commemorations:
 				probablepile = datamanage.getbreviariumfiles(root, defaultpile | item | i)
-				ret.append(process(root, {'formula','commemoratio'}, i | (item - {'commemorationes'}), alternates, probablepile))
+				ret.append(process(root, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
 			if len(commemorations) != 0:
 				probablepile = datamanage.getbreviariumfiles(root, defaultpile | commemorations[-1])
 				ret.append(process(root, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
@@ -147,6 +147,7 @@ def process(root, item, selected, alternates, pile):
 			if any([item['choose'].issubset(i) for i in alternates]):
 				for i in range(0, len(alternates)):
 					if item['choose'].issubset(alternates[i]):
+						alternates = copy.deepcopy(alternates)
 						alternates.append(selected)
 						selected = alternates.pop(i)
 						break
