@@ -45,7 +45,7 @@
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["martyr","vesperae","capitulum"],
+		"tags":["martyr","capitulum"],
 		"datum":"Beátus vir, qui suffert tentatiónem: + quóniam cum probátus fúerit, accípiet corónam vitæ, * quam repromísit Deus diligéntibus se."
 	},
 	{
@@ -75,11 +75,23 @@
 		"datum":"Iste sanctus * pro lege Dei sui certávit usque ad mortem, et a verbis impiórum non tímuit: fundátus enim erat supra firmam petram."
 	},
 	{
-		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium"],
+		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium","simplex"],
+		"src":"nocturnale/UMEXIa",
+		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
+	},
+	{
+		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium","festivus"],
+		"src":"nocturnale/UMEXIb",
+		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
+	},
+	{
+		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium","solemnis"],
+		"src":"nocturnale/UMEXIc",
 		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/UMEXN1A1",
 		"datum":"In lege Dómini * fuit volúntas ejus die ac nocte."
 	},
 	{
@@ -88,6 +100,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/UMEXN1A2",
 		"datum":"Prǽdicans * præcéptum Dómini constitútus est in monte sancto ejus."
 	},
 	{
@@ -96,6 +109,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/UMEXN1A3",
 		"datum":"Voce mea * ad Dóminum clamávi: et exaudívit me de monte sancto suo."
 	},
 	{
@@ -106,21 +120,23 @@
 		"tags":["martyr","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Áctibus Apostolórum.",
-			"A Miléto Paulus mittens Éphesum, vocávit majóres natu Ecclésiæ. Qui cum veníssent ad eum, et simul essent, dixit eis: Vos scitis a prima die, qua ingréssus sum in Ásiam, quáliter vobíscum per omne tempus fúerim, sérviens Dómino cum omni humilitáte, et lácrimis, et tentatiónibus, quæ mihi accidérunt ex insídiis Judæórum: quómodo nihil subtráxerim utílium, quo minus annuntiárem vobis, et docérem vos públicæe, et per domos, testíficans Judǽis, atque Gentílibus in Deum pœniténtiam, et fidem in Dóminum nostrum Jesum Christum. Et nunc ecce alligátus ego spíritu, vado in Jerúsalem: quæ in ea ventúra sint mihi, ignórans: nisi quod Spíritus sanctus per omnes civitátes mihi protestátur, dicens: quóniam víncula et tribulatiónes Jerosólymis me manent. Sed nihil horum véreor: nec fácio ánimam meam pretiosiórem quam me, dúmmodo consúmmem cursum meum, et ministérium verbi, quod accépi a Dómino Jesu, testificári Evangélium grátiæ Dei."
+			"A Miléto Paulus mittens Éphesum, vocávit majóres natu Ecclésiæ. Qui cum veníssent ad eum, et simul essent, dixit eis: Vos scitis a prima die, qua ingréssus sum in Ásiam, quáliter vobíscum per omne tempus fúerim, sérviens Dómino cum omni humilitáte, et lácrimis, et tentatiónibus, quæ mihi accidérunt ex insídiis Judæórum: quómodo nihil subtráxerim utílium, quo minus annuntiárem vobis, et docérem vos públice, et per domos, testíficans Judǽis, atque Gentílibus in Deum pœniténtiam, et fidem in Dóminum nostrum Jesum Christum. Et nunc ecce alligátus ego spíritu, vado in Jerúsalem: quæ in ea ventúra sint mihi, ignórans: nisi quod Spíritus sanctus per omnes civitátes mihi protestátur, dicens: quóniam víncula et tribulatiónes Jerosólymis me manent. Sed nihil horum véreor: nec fácio ánimam meam pretiosiórem quam me, dúmmodo consúmmem cursum meum, et ministérium verbi, quod accépi a Dómino Jesu, testificári Evangélium grátiæ Dei."
 		]
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/UMEXN1R1",
 		"incipit":"Iste sanctus pro lege Dei sui certávit usque ad mortem, et a verbis impiórum non tímuit:",
 		"responsum":"Fundátus enim erat supra firmam petram.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","lectio","lectio-ii"],
-		"datum":"Et nunc ecce ego scio quia ámplius non vidébitis fáciem meam vos omnes, per quos transívi prǽdicans regnum Dei. Quaprópter contéstor vos hodiérna die, quia mundus sum a sánguine ómnium. Non enim subterfúgi quóminus annuntiárem omne consílium Dei vobis. Atténdite vobis, et univérso gregi, in quo vos Spíritus sanctus pósuit epíscopos régere Ecclésiam Dei, quam acquisívit sánguine suo. Ego scio quóniam intrábunt post discessiónem meam lupi rapáces in vos, non parcéntes gregi. Et ex vobis ipsis exsúrgent viri loquéntes pervérsa, ut abdúcant discípulos post se. Propter quod vigiláte memória retinéntes: quóniam per triénnum nocte et die non cessávi, cum lácrimis monens unumquémque vestrum."
+		"datum":"Et nunc ecce ego scio quia ámplius non vidébitis fáciem meam vos omnes, per quos transívi prǽdicans regnum Dei. Quaprópter contéstor vos hodiérna die, quia mundus sum a sánguine ómnium. Non enim subterfúgi quóminus annuntiárem omne consílium Dei vobis. Atténdite vobis, et univérso gregi, in quo vos Spíritus sanctus pósuit epíscopos régere Ecclésiam Dei, quam acquisívit sánguine suo. Ego scio quóniam intrábunt post discessiónem meam lupi rapáces in vos, non parcéntes gregi. Et ex vobis ipsis exsúrgent viri loquéntes pervérsa, ut abdúcant discípulos post se. Propter quod vigiláte memória retinéntes: quóniam per triénnium nocte et die non cessávi, cum lácrimis monens unumquémque vestrum."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/UMEXN1R2",
 		"incipit":"Justus germinábit sicut lílium:",
 		"responsum":"Et florébit in ætérnum ante Dóminum.",
 		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
@@ -131,12 +147,14 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/UMEXN1R3",
 		"incipit":"Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum:",
 		"responsum":"Et invéntus est in número sanctórum.",
 		"versus":"Iste est qui contémpserint vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/UMEXN2A1",
 		"datum":"Fílii hóminum * scitóte quia Dóminus sanctum suum mirificávit."
 	},
 	{
@@ -145,6 +163,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/UMEXN2A2",
 		"datum":"Scuto bonæ voluntátis * tuæ coronásti eum Dómine."
 	},
 	{
@@ -153,6 +172,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/UMEXN2A3",
 		"datum":"In univérsa terra * glória et honóre coronásti eum."
 	},
 	{
@@ -160,7 +180,10 @@
 		"datum":[["/psalmi/psalmus-viii,gloria"]]
 	},
 	{
-		"tags":["martyr","matutinum","nocturna-ii","versiculus"],
+		"tags":[
+			["martyr","matutinum","nocturna-ii","versiculus"],
+			["martyr","tertia","versiculus"]
+		],
 		"datum":["V. Posuísti Dómine super caput ejus.","R. Corónam de lápide pretióso."]
 	},
 	{
@@ -172,6 +195,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"nocturnale/UMEXN2R1",
 		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
 		"responsum":"Et dedit illi claritátem ætérnam.",
 		"versus":"Descendítque cum illo in fóveam, et in vínculis non derelíquit eum."
@@ -182,6 +206,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/UMEXN2R2",
 		"incipit":"Desidérium ánimæ ejus tribuísti ei Dómine,",
 		"responsum":"Et voluntáte labiórum ejus non fraudásti eum.",
 		"versus":"Quóniam prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso."
@@ -192,12 +217,14 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/UMEXN2R3",
 		"incipit":"Stola jucunditátis índuit eum Dóminus:",
 		"responsum":"Et corónam pulchritúdinis pósuit super caput ejus.",
 		"versus":"Cibávit illum Dóminus pane vitæ et intelléctus: et aqua sapiéntiæ salutáris potávit illum."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/UMEXN3A1",
 		"datum":"Justus Dóminus, * et justítiam diléxit: æquitátem vidit vultus ejus."
 	},
 	{
@@ -206,6 +233,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/UMEXN3A2",
 		"datum":"Habitábit * in tabernáculo tuo: requiéscet in monte sancto tuo."
 	},
 	{
@@ -214,6 +242,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/UMEXN3A3",
 		"datum":"Posuísti Dómine * super caput ejus corónam de lápide pretióso."
 	},
 	{
@@ -221,7 +250,10 @@
 		"datum":[["/psalmi/psalmus-xx,gloria"]]
 	},
 	{
-		"tags":["martyr","matutinum","nocturna-iii","versiculus"],
+		"tags":[
+			["martyr","matutinum","nocturna-iii","versiculus"],
+			["martyr","sexta","versiculus"]
+		],
 		"datum":["V. Magna est glória ejus in salutári tuo.","R. Glóriam et magnum decórem impónes super eum."]
 	},
 	{
@@ -235,6 +267,7 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/UMEXN3R1",
 		"incipit":"Coróna aúrea super caput ejus,",
 		"responsum":"Expréssa signo sanctitátis, glória honóris, et opus fortitúdinis.",
 		"versus":"Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso."
@@ -245,27 +278,71 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/UMEXN3R2a",
 		"incipit":"Hic est vere Martyr, qui pro Christi nómine sánguinem suum fudit:",
 		"responsum":"Qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsívit, sed ad cœléstia regna pervénit.",
 		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
 	},
 	{
 		"tags":["martyr","episcopus-martyr","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/UMEXN3R2b",
 		"incipit":"Dómine prævenísti eum in benedictiónibus dulcédinis:",
 		"responsum":"Posuísti in cápite ejus corónam de lápide pretióso.",
 		"versus":"Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Sed percontári libet, quómodo paréntes, et carnáliter propínquos præcípimur odísse, qui jubémur et inimícos dilígere? Et certe Véritas de uxóre dicit: Quod Deus conjúnxit, homo non séparet. Et Paulus ait: Viri, dilígite uxóres vestras, sicut et Christus Ecclésiam. Ecce, discípulus uxórem diligéndam prǽdicat, cum magíster dicat: Qui uxórem non odit, non potest meus esse discípulus. Numquid áliud judex núntiat, áliud præco clamat? An simul et odísse póssumus, et dilígere? Sed si vim præcépti perpéndimus, utrúmque ágere per discretiónem valémus: ut uxórem, et eos, qui nobis carnis cognatióne conjúncti sunt, et quos próximos nóvimus, diligámus; et quos adversários in via Dei pátimus, odiéndo et fugiéndo nesciámus."
+		"datum":"Sed percontári libet, quómodo paréntes, et carnáliter propínquos præcípimur odísse, qui jubémur et inimícos dilígere? Et certe Véritas de uxóre dicit: Quod Deus conjúnxit, homo non séparet. Et Paulus ait: Viri, dilígite uxóres vestras, sicut et Christus Ecclésiam. Ecce, discípulus uxórem diligéndam prǽdicat, cum magíster dicat: Qui uxórem non odit, non potest meus esse discípulus. Numquid áliud judex núntiat, áliud præco clamat? An simul et odísse póssumus, et dilígere? Sed si vim præcépti perpéndimus, utrúmque ágere per discretiónem valémus: ut uxórem, et eos, qui nobis carnis cognatióne conjúncti sunt, et quos próximos nóvimus, diligámus; et quos adversários in via Dei pátimur, odiéndo et fugiéndo nesciámus."
+	},
+	{
+		"tags":["martyr","laudes","hymnus"],
+		"src":"gregobase/12434",
+		"datum":[
+			"Invícte Martyr, únicum/Patris secútus Fílium,/Victis triúmphas hóstibus./Victor fruens cœléstibus.",
+			"Tui precátus múnere/Nostrum reátum dílue,/Arcens mali contágium,/Vitæ repéllens tǽdium.",
+			"Solúta sunt jam víncula/Tui sacráti córporis:/Nos solve vinclis sǽculi,/Dono supérni Núminis.",
+			"Deo Patri sit glória,/Ejúsque soli Fílio,/Cum Spíritu Paráclito,/Nunc, et per omne sǽculum.", "Amen."
+		]
+	},
+	{
+		"tags":["martyr","tertia","responsorium-breve"],
+		"src":"gregobase/3108",
+		"incipit":"Glória et honóre",
+		"responsum":"Coronásti eum Dómine.",
+		"versus":"Et constituísti eum super ópera mánuum tuárum."
+	},
+	{
+		"tags":["martyr","sexta","capitulum"],
+		"datum":"Cibávit illum pane vitæ et intelléctus, + et aqua sapiéntiæ salutáris * potávit illum Dóminus Deus noster."
+	},
+	{
+		"tags":["martyr","sexta","responsorium-breve"],
+		"src":"gregobase/3097",
+		"incipit":"Posuísti Dómine",
+		"responsum":"Super caput ejus.",
+		"versus":"Corónam de lápide pretióso."
+	},
+	{
+		"tags":["martyr","nona","capitulum"],
+		"datum":"Justus cor suum trádidit ad vigilándum dilúculo ad Dóminum, qui fecit illum, * et in conspéctu Altíssimi deprecábitur."
+	},
+	{
+		"tags":["martyr","nona","responsorium-breve"],
+		"src":"gregobase/12441",
+		"incipit":"Magna est glória ejus",
+		"responsum":"In salutári tuo.",
+		"versus":"Glóriam et magnum decórem impónes super eum."
+	},
+	{
+		"tags":[
+			["martyr","nona","versiculus"],
+			["martyr","ii-vesperae","vesperae","versiculus"]
+		],
+		"datum":["V. Justus ut palma florébit.","R. Sicus cedrus Líbani multiplicábitur."]
 	},
 	{
 		"tags":["martyr","ii-vesperae","vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
-	},
-	{
-		"tags":["martyr","ii-vesperae","vesperae","versiculus"],
-		"datum":["V. Justus ut palma florébit.","R. Sicus cedrus Líbani multiplicábitur."]
 	},
 	{
 		"tags":["martyr","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],

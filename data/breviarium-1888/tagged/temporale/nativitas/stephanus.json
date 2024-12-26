@@ -4,16 +4,198 @@
 		"datum":"S Stephani Protomartyris"
 	},
 	{
-		"tags":["stephanus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":[
+			["stephanus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+			["stephanus","laudes","antiphona","antiphona-benedictus"]
+		],
 		"src":"gregobase/2825",
 		"datum":"Stéphanus autem * plenus grátia et fortitúdine, faciébat signa magna in pópulo."
 	},
 	{
 		"tags":["stephanus","collecta"],
 		"terminatio":[["terminatio","qui-tecum-vivit"]],
-		"datum":"Da nobis, quǽsumus Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: quia ejus natalítia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:"
+		"datum":"Da nobis, quǽsumus Dómine, imitári quod cólimus, ut discámus et inimícos dilígere: + quia ejus natalítia celebrámus, * qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:"
 	},
 	{
 		"tags":["stephanus","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"gregobase/1226I",
 		"datum":"Christum natum, qui beátum hódie coronávit Stéphanum, * Veníte adorémus."
-	}]
+	},
+	{
+		"tags":[
+			["stephanus","vesperae","hymnus"],
+			["stephanus","matutinum","hymnus"]
+		],
+		"src":"gregobase/2126",
+		"datum":[
+			"Deus tuórum mílitum/Sors et coróna, prǽmium,/Laudes canéntes Mártyris/Absólve nexu críminis.",
+			"Hic nempe mundi gaúdia,/Et blanda fraudum pábula/Imbúta felle députans,/Pervénit ad cœléstia.",
+			"Pœnas cucúrrit fórtiter,/Et sústulit viríliter,/Fundénsque pro te sánguinem,/Ætérna dona póssidet.",
+			"Ob hoc precátu súpplici/Te póscimus, piíssime;/In hoc triúmpho Mártyris/Dimmíte noxam sérvulis.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Áctibus Apostolórum.",
+			"In diébus illis, crescénte número discipulórum, factum est murmur Græcórum advérsus Hebrǽos, eo quod despiceréntur in ministério quotidiáno víduæ eórum. Convocántes autem duódecim multitúdinem discipulórum, dixérunt: Non est æquum nos derelínquere verbum Dei, et ministráre mensis. Consideráte ergo fratres, viros ex vobis boni testimónii septem, plenos Spíritu sancto et sapiéntia, quos constituámus super hoc opus. Nos vero oratióni, et ministério verbi instántes érimus."
+		]
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/1226N1R1",
+		"incipit":"Stéphanus autem plenus grátia et fortitúdine,",
+		"responsum":"Faciébat prodígia et signa magna in pópulo.",
+		"versus":"Surrexérunt quidam de synagóga disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spirítui, qui loquebátur."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Et plácuit sermo coram omni multitúdine. Et elegérunt Stéphanum, virum plenum fide et Spíritu sancto, et Philíppum, et Próchorum, et Nicánorem, et Timónem, et Pármenam, et Nicoláum ádvenam Antiochénum. Hos statuérunt ante conspéctum Apostolórum: et orántes imposuérunt eis manus. Et verbum Dómini crescébat, et multiplicabátur númerus discipulórum in Jerúsalem valde: multa étiam turba sacerdótum obediébat fídei. Stéphanus autem plenus grátia et fortitúdine, faciébat prodígia et signa magna in pópulo."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/1226N1R2",
+		"incipit":"Vidébant omnes Stéphanum qui erant in concílio.",
+		"responsum":"Et intuebántur vultum ejus tamquam vultum Ángeli stantis inter illos.",
+		"versus":"Plenus grátia et fortitúdine faciébat prodígia et signa magna in pópulo."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Surrexérunt autem quidam de synagóga, quæ appellátur Libertinórum, et Cyrenénsium, et Alexandrinórum, et eórum qui erant a Cilícia, et Ásia, disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spirítui, qui loquebátur. Tunc summisérunt viros, qui dícerent se audivísse eum dicéntem verba blasphémiæ in Móysen, et in Deum. Commovérunt ítaque plebem, et senióres, et scribas: et concurréntes rapuérunt eum, et adduxérunt in concílium, et statuérunt falsos testes, qui dícerent: Homo iste non cessat loqui verba advérsus locum sanctum, et legem."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/1226N1R3",
+		"incipit":"Íntuens in cœlum beátus Stéphanus, vidit glóriam Dei, et ait:",
+		"responsum":"Ecce vídeo cœlos apértos, et Fílium hóminis stantem a dextris virtútis Dei.",
+		"versus":"Cum autem esset Stéphanus plenus Spíritu sancto, inténdens in cœlum, vidit glóriam Dei, et ait."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Fulgéntii Epíscopi.",
+			"Heri celebrávimus temporálem sempitérni Regis nostri natálem: hódie celebrámus triumphálem mílitis passiónem. Heri enim Rex noster trábea carnis indútus, de aula úteri virginális egrédiens, visitáre dignátus est mundum: hódie miles de tabernáculo córporis éxiens, triumphátor migrávit ad cœlum. Ille sempitérnæ Deitátis majestáte serváta, servíle cinctórium carnis assúmens, in hujus sǽculi campum pugnatúrus intrávit: iste depósitis corruptibílibus córporis induméntis, ad cœli palátium perénniter regnatúrus ascéndit. Ille descéndit carne velátus, iste ascéndit sánguine laureátus."
+		]
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"nocturnale/1226N2R1",
+		"incipit":"Lapidábant Stéphanum invocántem et dicéntem:",
+		"responsum":"Dómine Jesu Christe, áccipe spíritum meum: et ne státuas illis hoc peccátum.",
+		"versus":"Pósitis autem génibus clamávit voce magna, dicens."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Ascéndit iste lapidántibus Judǽis, quia ille descéndit lætántibus Ángelis. Glória in excélsis Deo, heri sancti Ángeli exsultántes cantavérunt: hódie Stéphanum lætántes in suum consórtium suscepérunt. Heri Dóminus exívit de útero Vírginis: hódie miles egréssus est de ergástulo carnis. Heri Christus pro nobis pannis est involútus: hódie Stéphanus stola est ab eo immortalitátis indútus. Heri præsépis angústia Christum portávit infántem: hódie imménsitas cœli suscépit Stéphanum triumphántem. Solus Dóminus descéndit, ut multos eleváret: humiliávit se Rex noster, ut suos mílites exaltáret."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/1226N2R2",
+		"incipit":"Ímpetum fecérunt unanímiter in eum, et ejecérunt eum extra civitátem, invocántem et dicéntem:",
+		"responsum":"Dómine Jesu, áccipe spíritum meum.",
+		"versus":"Et testes deposuérunt vestiménta sua secus pedes adolescéntis, qui vocábitur Saulus: et lapidábunt Stéphanum invocántem et dicéntem."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Necessárium tamen nobis est, fratres, agnóscere, quibus armis præcínctus Stéphanus sævítiam Judæórum pótuit superáre, ut ita meruísset felíciter triumpháre. Stéphanus ergo, ut nóminis sui corónam meruísset accípere, caritátem pro armis habébat, et per ipsam ubíque vincébat. Per caritátem Dei, sæviéntibus Judǽis non cessit: per caritátem próximi pro lapidántibus intercéssit. Per caritátem arguébat errántes, ut corrigeréntur: per caritátem pro lapidántibus orábat, ne puniréntur. Caritátis virtúte subníxus, vicit Saulum crudéliter sæviéntem: et quem hábuit in terra persecutórem, in cœlo méruit habére consórtem."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/1226N2R3",
+		"incipit":"Ímpii super justum jactúram fecérunt, ut eum morti tráderent:",
+		"responsum":"At ille gaudens suscépit lápides, ut mererétur accípere corónam glóriæ.",
+		"versus":"Continuérunt aures suas, et ímpetum fecérunt unanímiter in eum."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Dicébat Jesus scribis et pharisǽis: Ecce ego mitto ad vos prophétas, et sapiéntes, et scribas: et ex illis occidétis, et crucifigétis. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"Hoc quod ántea dixerámus: Impléte mensúram patrum vestrórum: ad persónam Dómini pertinére, eo quod occidéndus esset ab eis, potest et ad discípulos ejus reférri, de quibus nunc dicit: Ecce ego mitto ad vos prophétas, et sapiéntes, et scribas. Simúlque obsérva, juxta Apóstolum scribéntem ad Corínthios, vária esse dona discipulórum Christi: álios prophétas, qui ventúra prædícent: álios sapiéntes, qui novérunt quando débeant proférre sermónem: álios scribas in lege doctíssimos, ex quibus lapidátus est Stéphanus, Paulus occísus, crucifíxus Petrus, flagelláti in Áctibus Apostolórum discípuli."
+		]
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/1226N3R1",
+		"incipit":"Stéphanus servus Dei, quem lapidábunt Judǽi, vidit cœlos apértos, vidit et introívit:",
+		"responsum":"Beátus homo, cui cœli patébunt.",
+		"versus":"Cum ígitur saxórum crepitántium túrbine quarerétur, inter æthéreos aulæ cœléstis sinus divína ei cláritas fulsit."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Quǽrimus, quis iste sit Zacharías fílius Barachíæ: quia multos légimus Zacharías. Et ne líbera nobis tribuerétur erróris facúltas, ádditum est: Quem occidístis inter templum et altáre. In divérsis divérsa legi: et débeo singulórum opiniónes pónere. Álii Zacharíam fílium Barachíæ dicunt, qui in duódecim prophétis undécimus est: patrísque in eo nomen conséntit: sed ubi occísus sit inter templum et altáre, Scriptúra non lóquitur: máxime cum tempóribus ejus vix ruínæ templi fúerint. Álii Zacharíam patrem Joánnis intélligi volunt, ex quibúsdam apocryphórum sómniis approbántes, quod proptérea occísus sit, quia Salvatóris prædicáverit advéntum."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/1226N3R2",
+		"incipit":"Patefáctæ sunt jánuæ cœli Christi Mártyri beáto Stéphano, qui in número Mártyrum invéntus est primus:",
+		"responsum":"Et ídeo triúmphat in cœlis coronátus.",
+		"versus":"Mortem enim, quam Salvátor noster dignátus est pro nobis pati, hanc ille primus réddidit Salvatóri."
+	},
+	{
+		"tags":["stephanus","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Álii istum volunt esse Zacharíam, qui occísus est a Joas rege Judæ inter templum et altáre, sicut Regum narrat história. Sed observándum, quod ille Zacharías non sit fílius Barachíæ, sed fílius Joíadæ sacerdótis: unde et Scriptúra refert: Non fuit recordátus Joas patris ejus Joíadæ, quia sibi fecísset bona. Cum ergo et Zacharíam teneámus et occisiónis conséntiat locus: quǽrimus, quare Barachíæ dicátur fílius, et non Joíadæ? Barachía lingua nostra Benedíctus Dómini dícitur, et sacerdótis Joíadæ justítia Hebrǽo nómine demonstrátur. In Evangélio, quo utúntur Nazaréni, pro fílio Barachíæ, fílium Joíadæ reperímus scriptum."
+	},
+	{
+		"tags":["stephanus","antiphona","antiphona-i"],
+		"src":"gregobase/1972",
+		"datum":"Lapidavérunt Stéphanum, * et ipse invocábat Dóminum, dicens: Ne státuas illis hoc peccátum."
+	},
+	{
+		"tags":["stephanus","antiphona","antiphona-ii"],
+		"src":"gregobase/2160",
+		"datum":"Lápides torréntis * illi dulces fuérunt: ipsum sequúntur omnes ánimæ justæ."
+	},
+	{
+		"tags":["stephanus","antiphona","antiphona-iii"],
+		"src":"gregobase/2787",
+		"datum":"Adhǽsit ánima mea * post te, quia caro mea lapidáta est pro te, Deus meus."
+	},
+	{
+		"tags":["stephanus","antiphona","antiphona-iv"],
+		"src":"gregobase/2373",
+		"datum":"Stéphanus vidit * cœlos apértos, vidit, et introívit: beátus homo cui cœli patébant."
+	},
+	{
+		"tags":["stephanus","antiphona","antiphona-v"],
+		"src":"gregobase/2048",
+		"datum":"Ecce vídeo * cœlos apértos, et Jesum stantem a dextris virtútis Dei."
+	},
+	{
+		"tags":["stephanus","capitulum"],
+		"datum":"Stéphanus autem plenus grátia et fortitúdine, * faciébat prodígia et signa magna in pópulo."
+	},
+	{
+		"tags":["stephanus","laudes","hymnus"],
+		"src":"gregobase/12618",
+		"datum":[
+			"Invícte Martyr, únicum/Patris secútus Fílium,/Victis triúmphas hóstibus./Victor fruens cœléstibus.",
+			"Tui precátus múnere/Nostrum reátum dílue,/Arcens mali contágium,/Vitæ repéllens tǽdium.",
+			"Solúta sunt jam víncula/Tui sacráti córporis:/Nos solve vinclis sǽculi,/Dono supérni Núminis.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["stephanus","laudes","versiculus"],
+		"datum":["V. Sepeliérunt Stéphanum viri timoráti.","R. Et fecérunt planctum magnum super eum."]
+	},
+	{
+		"tags":["stephanus","sexta","capitulum"],
+		"datum":"Surrexérunt autem quidam de synagóga, quæ appellátur Libertinórum, et Cyrenénsium, et Alexandrinórum, + et eórum qui erant a Cilícia, et Ásia, disputántes cum Stéphano: * et non póterant resístere sapiéntiæ, et Spirítui qui loquebátur."
+	},
+	{
+		"tags":["stephanus","nona","capitulum"],
+		"datum":"Pósitis autem génibus clamávit voce magna, dicens: + Dómine ne státuas illis hoc peccátum. * Et cum hoc dixísset, obdormívit in Dómino."
+	},
+	{
+		"tags":["stephanus","ii-vesperae","vesperae","versiculus"],
+		"datum":["V. Stéphanus vidit cœlos apértos.","R. Vidit, et introívit: beátus homo, cui cœli patébant."]
+	},
+	{
+		"tags":["stephanus","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1962",
+		"datum":"Sepeliérunt Stéphanum * viri timoráti, et fecérunt planctum magnum super eum."
+	}
+]
