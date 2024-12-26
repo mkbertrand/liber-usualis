@@ -336,16 +336,16 @@
 	{
 		"tags":[
 			["martyr","nona","versiculus"],
-			["martyr","ii-vesperae","vesperae","versiculus"]
+			["martyr","ii-vesperae","versiculus"]
 		],
 		"datum":["V. Justus ut palma florébit.","R. Sicus cedrus Líbani multiplicábitur."]
 	},
 	{
-		"tags":["martyr","ii-vesperae","vesperae","psalmus-v"],
+		"tags":["martyr","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
 	},
 	{
-		"tags":["martyr","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["martyr","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2879",
 		"datum":"Qui vult veníre post me, * ábneget semetípsum, et tollat crucem suam, et sequátur me."
 	}

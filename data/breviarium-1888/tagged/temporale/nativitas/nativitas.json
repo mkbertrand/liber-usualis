@@ -8,52 +8,52 @@
 		"datum":"Nativitatis Domini Nostri Jesu Christi"
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-i"],
+		"tags":["nativitas","i-vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/2996",
 		"datum":"Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra."
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","psalmus-i"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-i"]
+		"tags":["nativitas","i-vesperae","psalmus-i"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-i"]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-ii"],
+		"tags":["nativitas","i-vesperae","antiphona","antiphona-ii"],
 		"src":"gregobase/3011",
 		"datum":"Magnificátus est * Rex pacíficus super omnes reges univérsæ terrae."
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","psalmus-ii"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-ii"]
+		"tags":["nativitas","i-vesperae","psalmus-ii"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-ii"]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-iii"],
+		"tags":["nativitas","i-vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/2997",
 		"datum":"Compléti sunt * dies Maríæ, ut páreret Fílium suum primogénitu."
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","psalmus-iii"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-iii"]
+		"tags":["nativitas","i-vesperae","psalmus-iii"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-iii"]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-iv"],
+		"tags":["nativitas","i-vesperae","antiphona","antiphona-iv"],
 		"src":"gregobase/3005",
 		"datum":"Scitóte * quia prope est regnum Dei: amen dico vobis, quia non tardábit."
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","psalmus-iv"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-iv"]
+		"tags":["nativitas","i-vesperae","psalmus-iv"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-iv"]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-v"],
+		"tags":["nativitas","i-vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/3006",
 		"datum":"Leváte cápita vestra: * ecce appropínquat redémptio vestra."
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","psalmus-v"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-v"]
+		"tags":["nativitas","i-vesperae","psalmus-v"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-v"]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","capitulum"],
+		"tags":["nativitas","i-vesperae","capitulum"],
 		"datum":"Appáruit benígnitas, et humánitas Salvatóris nostri Dei: + non ex opéribus justítiæ, quæ fécimus nos, * sed sécundum suam misericórdiam salvos nos fecit."
 	},
 	{
@@ -73,11 +73,11 @@
 		]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","versiculus"],
+		"tags":["nativitas","i-vesperae","versiculus"],
 		"datum":["V. Crástina die delébitur iníquitas terræ.","R. Et regnábit super nos Salvátor mundi."]
 	},
 	{
-		"tags":["nativitas","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["nativitas","i-vesperae","antiphona","antiphona-magnificat"],
 		"src": "gregobase/3002",
                 "datum":"Cum ortus fúerit * sol de cœlo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo."
 	},
@@ -351,7 +351,7 @@
 	{
 		"tags":[
 			["nativitas","laudes","versiculus"],
-			["nativitas","ii-vesperae","vesperae","versiculus"]
+			["nativitas","ii-vesperae","versiculus"]
 		],
 		"datum":["V. Notum fecit Dóminus, allelúja.","R. Salutáre suum, allelúja."]
 	},
@@ -402,52 +402,52 @@
 		"datum":["V. Verbum caro factum est, allelúja.","R. Et habitávit in nobis, allelúja."]
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","antiphona","antiphona-i"],
+		"tags":["nativitas","ii-vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/2728",
 		"datum":"Tecum princípium * in die virtútis tuæ, in splendóribus sanctórum, ex útero ante lucíferum génui te."
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","psalmus-i"],
+		"tags":["nativitas","ii-vesperae","psalmus-i"],
 		"datum":[["/psalmi/psalmus-cix,gloria"]]
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","antiphona","antiphona-ii"],
+		"tags":["nativitas","ii-vesperae","antiphona","antiphona-ii"],
 		"src":"gregobase/2736",
 		"datum":"Redemptiónem * misit Dóminus pópulo suo: mandávit in ætérnum testaméntum suum."
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","psalmus-ii"],
+		"tags":["nativitas","ii-vesperae","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","antiphona","antiphona-iii"],
+		"tags":["nativitas","ii-vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/2058",
 		"datum":"Exórtum est * in ténebris lumen rectis corde: miséricors, et miserátor, et justus Dóminus."
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","psalmus-iii"],
+		"tags":["nativitas","ii-vesperae","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","antiphona","antiphona-iv"],
+		"tags":["nativitas","ii-vesperae","antiphona","antiphona-iv"],
 		"src":"gregobase/2277",
 		"datum":"Apud Dóminum * misericórdia, et copiósa apud eum redémptio."
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","psalmus-iv"],
+		"tags":["nativitas","ii-vesperae","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-cxxix,gloria"]]
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","antiphona","antiphona-v"],
+		"tags":["nativitas","ii-vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/2766",
 		"datum":"De fructu * ventris tui ponam super sedem tuam."
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","psalmus-v"],
+		"tags":["nativitas","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxxxi,gloria"]]
 	},
 	{
-		"tags":["nativitas","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["nativitas","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2486",
 		"datum":"Hódie * Christus natus est: hódie Salvátor appáruit: hódie in terra canunt Ángeli, lætántur Archángeli: hódie exsúltant justi, dicéntes: Glória in excélsis Deo, allelúja."
 	}

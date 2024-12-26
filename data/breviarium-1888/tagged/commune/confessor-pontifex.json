@@ -41,11 +41,11 @@
 		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
 	},
 	{
-		"tags":["confessor-pontifex","i-vesperae","vesperae","psalmus-v"],
+		"tags":["confessor-pontifex","i-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["confessor-pontifex","ii-vesperae","vesperae","psalmus-v"],
+		"tags":["confessor-pontifex","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxxxi,gloria"]]
 	},
 	{
@@ -75,17 +75,17 @@
 		]
 	},
 	{
-		"tags":["confessor-pontifex","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor-pontifex","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2223",
 		"datum":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum."
 	},
 	{
-		"tags":["confessor-pontifex","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor-pontifex","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2933",
 		"datum":"Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum."
 	},
 	{
-		"tags":["confessor-pontifex","papa","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor-pontifex","papa","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1820",
 		"datum":"Dum esset summus Póntifex, * terréna non métuit, sed ad cœléstia regna gloriósus migrávit."
 	}

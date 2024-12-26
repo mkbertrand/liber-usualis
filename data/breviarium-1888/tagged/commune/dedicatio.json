@@ -41,7 +41,7 @@
 		"datum":"Lápides pretiósi * omnes muri tui, et turres Jerúsalem gemmis ædificabúntur."
 	},
 	{
-		"tags":["dedicatio","i-vesperae","vesperae","psalmus-v"],
+		"tags":["dedicatio","i-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxlvii,gloria"]]
 	},
 	{
@@ -50,7 +50,7 @@
 	},
 	{
 		"tags":[
-			["dedicatio","i-vesperae","vesperae","hymnus"],
+			["dedicatio","i-vesperae","hymnus"],
 			["dedicatio","matutinum","hymnus"]
 		],
 		"src":"gregobase/2200",
@@ -64,13 +64,13 @@
 	},
 	{
 		"tags":[
-			["dedicatio","i-vesperae","vesperae","versiculus"],
+			["dedicatio","i-vesperae","versiculus"],
 			["dedicatio","laudes","versiculus"]
 		],
 		"datum":["V. Hæc est domus Dómini fírmiter ædificáta.","R. Bene fundáta est supra firmam petram."]
 	},
 	{
-		"tags":["dedicatio","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["dedicatio","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2315",
 		"datum":"Sanctificávit Dóminus * tabernáculum suum: quia hæc est domus Dei, in qua invocábitur nomen ejus, de quo scriptum est: Et erit nomen meum ibi, dicit Dóminus."
 	},
@@ -119,7 +119,7 @@
 	{
 		"tags":[
 			["dedicatio","matutinum","nocturna-i","versiculus"],
-			["dedicatio","ii-vesperae","vesperae","versiculus"]
+			["dedicatio","ii-vesperae","versiculus"]
 		],
 		"datum":["V. Domum tuam Dómine decet sanctitúdo.","R. In longitúdinem diérum."]
 	},
@@ -348,11 +348,11 @@
 		"datum":["V. Bene fundáta est domus Dómini.","R. Supra firmam petram."]
 	},
 	{
-		"tags":["dedicatio","ii-vesperae","vesperae","psalmus-v"],
+		"tags":["dedicatio","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["dedicatio","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["dedicatio","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2416",
 		"datum":"O quam metuéndus est * locus iste: vere non est hic áliud, nisi domus Dei, et porta cœli."
 	}

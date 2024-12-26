@@ -286,12 +286,12 @@
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["sollemnitas","ii-vesperae","vesperae","benedicamus-domino"],	
+		"tags":["sollemnitas","ii-vesperae","benedicamus-domino"],	
 		"src":"gregobase/4568",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["sollemnitas","ii-vesperae","vesperae","benedicamus-domino","modus-quintus"],
+		"tags":["sollemnitas","ii-vesperae","benedicamus-domino","modus-quintus"],
 		"src":"gregobase/7522",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
@@ -306,7 +306,7 @@
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["duplex-minus","ii-vesperae","vesperae","benedicamus-domino"],
+		"tags":["duplex-minus","ii-vesperae","benedicamus-domino"],
 		"src":"gregobase/8245",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},

@@ -14,7 +14,7 @@
 		"datum":"Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","psalmus-ii"],
+		"tags":["apostolus","i-vesperae","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
@@ -23,7 +23,7 @@
 		"datum":"Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","psalmus-iii"],
+		"tags":["apostolus","i-vesperae","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
@@ -32,7 +32,7 @@
 		"datum":"Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","psalmus-iv"],
+		"tags":["apostolus","i-vesperae","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
@@ -41,7 +41,7 @@
 		"datum":"In patiéntia vestra * possidébitis ánimas vestras."
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","psalmus-v"],
+		"tags":["apostolus","i-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
@@ -65,14 +65,14 @@
 	},
 	{
 		"tags":[
-			["apostolus","i-vesperae","vesperae","versiculus"],
+			["apostolus","i-vesperae","versiculus"],
 			["apostolus","matutinum","nocturna-i","versiculus"]
 		],
 		"datum":["V. In omnem terram exívit sonus eórum.","R. Et in fines orbis terræ verba eórum."
 		]
 	},
 	{
-		"tags":["apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["apostolus","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2112",
 		"datum":"Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et ante reges et prǽsides ducémini propter me in testimónium illis, et Géntibus."
 	},
@@ -299,7 +299,7 @@
 		"tags":[
 			["apostolus","laudes","versiculus"],
 			["apostolus","nona","versiculus"],
-			["apostolus","ii-vesperae","vesperae","versiculus"]
+			["apostolus","ii-vesperae","versiculus"]
 		],
 		"datum":["V. Annuntiavérunt ópera Dei.","R. Et facta ejus intellexérunt."]
 	},
@@ -338,48 +338,48 @@
 		"versus":"Nimis confortátus est principátus eórum."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-i"],
+		"tags":["apostolus","ii-vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/1973",
 		"datum":"Jurávit Dóminus, * et non pœnitébit eum: Tu es sacérdos in ætérnum."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-ii"],
+		"tags":["apostolus","ii-vesperae","antiphona","antiphona-ii"],
 		"src":"gregobase/2751",
 		"datum":"Cóllocet eum * Dóminus cum princípibus pópuli sui."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","psalmus-ii"],
+		"tags":["apostolus","ii-vesperae","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-iii"],
+		"tags":["apostolus","ii-vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/1861",
 		"datum":"Dirupísti Dómine * víncula mea: tibi sacrificábohóstiam laudis."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","psalmus-iii"],
+		"tags":["apostolus","ii-vesperae","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-iv"],
+		"tags":["apostolus","ii-vesperae","antiphona","antiphona-iv"],
 		"src":"gregobase/2337",
 		"datum":"Eúntes ibant * et flebant, mitténtes sémina sua."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","psalmus-iv"],
+		"tags":["apostolus","ii-vesperae","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-cxxv,gloria"]]
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-v"],
+		"tags":["apostolus","ii-vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/2079",
 		"datum":"Confortátus est * principátus eórum, et honorái sunt amíci sui Deus."
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","psalmus-v"],
+		"tags":["apostolus","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxxxviii,gloria"]]
 	},
 	{
-		"tags":["apostolus","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["apostolus","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1915",
 		"datum":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum, allelúja."
 	}

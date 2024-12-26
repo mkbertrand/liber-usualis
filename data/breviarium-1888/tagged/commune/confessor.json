@@ -78,13 +78,13 @@
 	},
 	{
 		"tags":[
-			["confessor","i-vesperae","vesperae","versiculus"],
+			["confessor","i-vesperae","versiculus"],
 			["confessor","matutinum","nocturna-i","versiculus"]
 		],
 		"datum":["V. Amávit eum Dómine, et ornávit eum.", "R. Stolam glóriæ índuit eum."]
 	},
 	{
-		"tags":["confessor","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2586",
 		"datum":"Similábo eum * viro sapiénti, qui ædificávit domum suam super petram."
 	},
@@ -342,7 +342,7 @@
 		"tags":[
 			["confessor","laudes","versiculus"],
 			["confessor","nona","versiculus"],
-			["confessor","ii-vesperae","vesperae","versiculus"]
+			["confessor","ii-vesperae","versiculus"]
 		],
 		"datum":["V. Justum dedúxit Dóminus per vias rectas.","R. Et osténdit illi regnum Dei."]
 	},
@@ -381,7 +381,7 @@
 		"versus":"Et non supplantabúntur gressus ejus."
 	},
 	{
-		"tags":["confessor","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["confessor","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2251",
 		"datum":"Hic vir, qui despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu."
 	},

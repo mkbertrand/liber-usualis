@@ -5,7 +5,7 @@
 	},
 	{
 		"tags":[
-			["stephanus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+			["stephanus","i-vesperae","antiphona","antiphona-magnificat"],
 			["stephanus","laudes","antiphona","antiphona-benedictus"]
 		],
 		"src":"gregobase/2825",
@@ -190,11 +190,11 @@
 		"datum":"Pósitis autem génibus clamávit voce magna, dicens: + Dómine ne státuas illis hoc peccátum. * Et cum hoc dixísset, obdormívit in Dómino."
 	},
 	{
-		"tags":["stephanus","ii-vesperae","vesperae","versiculus"],
+		"tags":["stephanus","ii-vesperae","versiculus"],
 		"datum":["V. Stéphanus vidit cœlos apértos.","R. Vidit, et introívit: beátus homo, cui cœli patébant."]
 	},
 	{
-		"tags":["stephanus","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["stephanus","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1962",
 		"datum":"Sepeliérunt Stéphanum * viri timoráti, et fecérunt planctum magnum super eum."
 	}

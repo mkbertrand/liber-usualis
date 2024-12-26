@@ -66,7 +66,7 @@
 		"datum":["V. Dignáre me laudáre te, Virgo sacráta.","R. Da mihi virtútem contra hostes tuos."]
 	},
 	{
-		"tags":["maria","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2321",
 		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem."
 	},
@@ -79,7 +79,7 @@
 		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemorationem."
 	},
 	{
-		"tags":["maria","bmv-sabbatum","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["maria","bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1902",
 		"datum":"Beáta Mater, * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis ad Dóminum."
 	},
@@ -340,7 +340,7 @@
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
-		"tags":["maria","ii-vesperae","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["maria","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2950",
 		"datum":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus."
 	}
