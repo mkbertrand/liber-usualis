@@ -30,6 +30,12 @@
 		]
 	},
 	{
+		"include":["thomas-cantuariensis","translatum","i-vesperae","primarium"],
+		"response":[
+			{"include":["nativitas","dominica-infra-octavam","ii-vesperae","primarium"],"response":"commemoratio","target":0}
+		]
+	},
+	{
 		"include":["septem-dolores","primarium"],
 		"response":[
 			{"include":["benedictus","primarium"],"response":"commemoratio","target":0}
