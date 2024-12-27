@@ -260,7 +260,7 @@ def kalendar(year: int) -> Kalendar:
 	for entry in nativitycycle:
 		date0 = todate(entry['date'], year)
 		kal.add_entry(date0, entry['tags'])
-	kal.add_entry(nextsunday(christmas), {'dominica','nativitas','dominica-infra-octavam','semiduplex'})
+	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex'})
 	if date(year, 1, 6).isoweekday() == 7:
 		epiphanysunday = date(year, 1, 12)
 		kal.transfer({'epiphania','dominica'}, target=epiphanysunday)

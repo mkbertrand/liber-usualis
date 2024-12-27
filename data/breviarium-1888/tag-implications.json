@@ -46,5 +46,9 @@
 	{
 		"tags":["episcopus-martyr"],
 		"implies":["martyr"]
+	},
+	{
+		"tags":["dominica-infra-octavam"],
+		"implies":["infra-octavam"]
 	}
 ]
