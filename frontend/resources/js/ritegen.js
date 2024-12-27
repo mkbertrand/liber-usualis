@@ -106,11 +106,11 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		if ('tags' in data && data['tags'].includes('lectio')) {
 			// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
 			if (Array.isArray(data['datum']) && data['datum'].length == 4) {
-				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][2]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
+				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][2])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
 			} else if (!data['tags'].includes('lectio-i')) {
 				data['tags'].push('lectio-sequens');
 			} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
-				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${data['datum'][0]}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
+				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
 			} else {
 				return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`	
 			}
