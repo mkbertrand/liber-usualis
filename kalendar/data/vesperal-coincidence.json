@@ -26,7 +26,10 @@
 	{
 		"include":["nativitas","commemoratio","infra-octavam","ii-vesperae"],
 		"response":[
-			{"include":["ii-vesperae","primarium"],"response":["psalmi","duplex"],"target":0}
+			{"include":["duplex-ii-classis","primarium"],"response":["psalmi","duplex"],"target":0},
+			{"include":["duplex-majus","primarium"],"response":["psalmi","duplex"],"target":0},
+			{"include":["duplex-minus","primarium"],"response":["psalmi","duplex"],"target":0},
+			{"include":["ii-vesperae","primarium"],"response":"psalmi","target":0}
 		]
 	},
 	{
