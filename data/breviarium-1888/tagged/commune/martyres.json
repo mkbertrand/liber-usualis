@@ -1,38 +1,43 @@
 [
 	{
 		"tags":["martyres","antiphona","antiphona-i"],
+		"src":"gregobase/1821",
 		"datum":"Omnes sancti, * quanta passi sunt torménta, ut secúri pervenírent ad palmam martýrii."
 	},
 	{
-		"tags":["martyres","i-vesperae","psalmus-i"],
+		"tags":["martyres","vesperae","psalmus-i"],
 		"reference":["apostolus","i-vesperae","vesperae","psalmus-i"]
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-ii"],
+		"src":"gregobase/2338",
 		"datum":"Cum palma * ad regna pervenérunt sancti, corónas decóris meruérunt de manu Dei."
 	},
 	{
-		"tags":["martyres","i-vesperae","psalmus-ii"],
+		"tags":["martyres","vesperae","psalmus-ii"],
 		"reference":["apostolus","i-vesperae","vesperae","psalmus-ii"]
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-iii"],
+		"src":"gregobase/2746",
 		"datum":"Córpora sanctórum * in pace sepúlta sunt: et vivent nómina eórum in ætérnum."
 	},
 	{
-		"tags":["martyres","i-vesperae","psalmus-iii"],
+		"tags":["martyres","vesperae","psalmus-iii"],
 		"reference":["apostolus","i-vesperae","vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-iv"],
+		"src":"gregobase/2051",
 		"datum":"Mártyres Dómini * Dóminum benedícite in ætérnum."
 	},
 	{
-		"tags":["martyres","i-vesperae","psalmus-iv"],
+		"tags":["martyres","vesperae","psalmus-iv"],
 		"reference":["apostolus","i-vesperae","vesperae","psalmus-iv"]
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-v"],
+		"src":"gregobase/1897",
 		"datum":"Mártyrum chorus * laudáte Dóminum de cœlis, allelúja."
 	},
 	{
@@ -45,6 +50,7 @@
 	},
 	{
 		"tags":["martyres","vesperae","hymnus"],
+		"src":"gregobase/2571",
 		"datum":[
 			"Sanctórum méritis ínclyta gaúdia/Pangámus sócii, gestáque fórtia:/Gliscens fert ánimus prómere cántibus/Victórum genus óptimum.",
 			"Hi sunt, quos fátue mundus abhórruit;/Hunc fructu vácuum, flóribus áridum/Contempsére tui nóminis ásseclæ/Jesu Rex bone cœlitum.",
@@ -55,11 +61,15 @@
 		]
 	},
 	{
-		"tags":["martyres","i-vesperae","versiculus"],
+		"tags":[
+			["martyres","i-vesperae","versiculus"],
+			["martyres","matutinum","nocturna-i","versiculus"]
+		],
 		"datum":["V. Lætámini in Dómino, et exsultáte justi.","R. Et gloriámini omnes recti corde."]
 	},
 	{
 		"tags":["martyres","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2682",
 		"datum":"Istórum est enim * regnum cœlórum, qui contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni."
 	},
 	{
@@ -79,6 +89,7 @@
 	},
 	{
 		"tags":["martyres","laudes","hymnus"],
+		"src":"gregobase/2790",
 		"datum":[
 			"Rex glorióse Mártyrum,/Coróna confiténtium,/Qui respuéntes térrea/Perdúcis ad cœléstia.",
 			"Aurem benígnam prótinus/Inténde nostris vócibus:/Trophǽa sacra pángimus:/Ignósce quod delíquimus.",
@@ -87,25 +98,124 @@
 		]
 	},
 	{
+		"tags":["martyres","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem Mártyrum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["martyres","matutinum","hymnus"],
+		"datum":[
+			"Christo profúsum sánguinem,/Et Mártyrum victórias,/Dignámque cœlo laúream/Lætis sequámur vócibus.",
+			"Terróre victo sǽculi,/Pœnísque spretis córporis,/Mortis sacræ compéndio/Vitam beátam póssident.",
+			"Tradúntur igni Mártyres,/Et bestiárum déntibus:/Armáta sævit úngulis/Tortóris insáni manus.",
+			"Nudáta pendent víscera,/Sanguis sacrátus fúnditur:/Sed pérmanent immóbiles/Vitæ perénnis grátia.",
+			"Te nunc Redémptor quǽsumus,/Ut Mártyrum consórtio/Jungas precántes sérvulos/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Secus decúrsus aquárum * plantávit víneam justórum, et in lege Dómini fuit volúntas eórum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-i,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Tamquam aurum * in fornáce probávit eléctos Dóminus: et quasi holocaústa accépit eos in ætérnum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Si coram homínibus * torménta passi sunt, spes electórum est immortális in ætérnum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Dabo sanctis meis * locum nominátum in regno Patris mei, dicit Dóminus."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Sanctis, qui in terra sunt ejus, * mirificávit omnes voluntátes meas inter illos."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xv,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Sancti qui sperant in Dómino, * habébunt fortitúdinem, assúment pennas ut áquilæ, volábunt, et non defícient."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
+	},
+	{
+		"tags":[
+			["martyres","matutinum","nocturna-ii","versiculus"],
+			["martyres","tertia","versiculus"]
+		],
+		"datum":["V. Exsúltent justi in conspéctu Dei.","R. Et delecténtur in lætítia."]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Justi autem * in perpétuum vivent, et apud Dóminum est merces eórum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xxxii,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Tradidérunt * córpora sua in mortem, ne servírent idólis: ídeo coronáti póssident palmam."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xxxiii,gloria"]]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Ecce merces * sanctórum copiósa est apud Deum: ipsi vero mórtui sunt pro Christo, et vivent in ætérnum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xlv,gloria"]]
+	},
+	{
+		"tags":[
+			["martyres","matutinum","nocturna-iii","versiculus"],
+			["martyres","sexta","versiculus"]
+		],
+		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
+	},
+	{
 		"tags":[
 			["martyres","laudes","versiculus"],
-			["martyres","nona","versiculus"]
+			["martyres","nona","versiculus"],
+			["martyres","ii-vesperae","versiculus"]
 		],
 		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
 	},
 	{
 		"tags":["martyres","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2177",
 		"datum":"Vestri capílli cápitis * omnes numeráti sunt: nolíte timére: multis passéribus melióres estis vos."
 	},
 	{
 		"tags":["martyres","tertia","responsorium-breve"],
+		"src":"gregobase/3218",
 		"incipit":"Lætámini in Dómino,",
 		"responsum":"Et exsultáte justi.",
 		"versus":"Et gloriámini omnes recti corde."
-	},
-	{
-		"tags":["martyres","tertia","versiculus"],
-		"datum":["V. Exsúltent justi in conspéctu Dei.","R. Et delecténtur in lætítia."]
 	},
 	{
 		"tags":["martyres","sexta","capitulum"],
@@ -113,17 +223,10 @@
 	},
 	{
 		"tags":["martyres","sexta","responsorium-breve"],
+		"src":"gregobase/3160",
 		"incipit":"Exsúltent justi",
 		"responsum":"In conspéctu Dei.",
 		"versus":"Et delecténtur in lætítia."
-	},
-	{
-		"tags":["martyres","sexta","versiculus"],
-		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
-	},
-	{
-		"tags":["martyres","sexta","versiculus"],
-		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
 	},
 	{
 		"tags":["martyres","nona","capitulum"],
@@ -131,13 +234,44 @@
 	},
 	{
 		"tags":["martyres","nona","responsorium-breve"],
+		"src":"gregobase/3199",
 		"incipit":"Justi autem",
 		"responsum":"In perpétuum vivent.",
 		"versus":"Et apud Dóminum est merces eórum."
 	},
 	{
 		"tags":["martyres","ii-vesperae","antiphona","antiphona-i"],
+		"src":"gregobase/2186",
 		"datum":"Isti sunt sancti, * qui pro testaménto Dei sua córpora tradidérunt, et in sánguine Agni lavérunt stolas suas."
+	},
+	{
+		"tags":["martyres","ii-vesperae","antiphona","antiphona-ii"],
+		"src":"gregobase/2482",
+		"datum":"Sancti per fidem * vicérunt regna, operáti sunt justítiam, adépti sunt repromissiónes."
+	},
+	{
+		"tags":["martyres","ii-vesperae","antiphona","antiphona-iii"],
+		"src":"gregobase/2198",
+		"datum":"Sanctórum velut áquilæ * juvéntus renovábitur: florébunt sicut lílium in civitáte Dómini."
+	},
+	{
+		"tags":["martyres","ii-vesperae","antiphona","antiphona-iv"],
+		"src":"gregobase/2665",
+		"datum":"Abstérget Deus * omnem lácrimam ab óculis sanctórum: et jam non erit ámplius neque luctus, neque clamor, sed nec ullus dolor: quóniam prióra transiérunt."
+	},
+	{
+		"tags":["martyres","ii-vesperae","antiphona","antiphona-v"],
+		"src":"gregobase/1886",
+		"datum":"In cœléstibus regnis * sanctórum habitátio est, et in ætérnum réquies eórum."
+	},
+	{
+		"tags":["martyres","ii-vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxv,gloria"]]
+	},
+	{
+		"tags":["martyres","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1958",
+		"datum":"Gaudent in cœlis * ánimæ sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exsúltant sine fine."
 	},
 	{
 		"tags":["martyres","matutinum","nocturna-iii","lectio","lectio-i","alia"],
