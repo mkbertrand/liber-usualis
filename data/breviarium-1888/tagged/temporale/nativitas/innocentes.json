@@ -8,12 +8,18 @@
 		"datum":"Sanctorum Innocentium"
 	},
 	{
-		"tags":["innocentes","i-vesperae","antiphona","antiphona-magnificat"],
+		"tags":[
+			["innocentes","i-vesperae","antiphona","antiphona-magnificat"],
+			["innocentes","laudes","antiphona","antiphona-benedictus"]
+		],
 		"src":"gregobase/2548",
 		"datum":"Hi sunt, * qui cum muliéribus non sunt coinquináti: vírgines enim sunt et sequúntur Agnum, quocúmque íerit."
 	},
 	{
-		"tags":["innocentes","i-vesperae","versiculus"],
+		"tags":[
+			["innocentes","i-vesperae","versiculus"],
+			["innocentes","laudes","versiculus"]
+		],
 		"datum":["V. Heródes irátus occídit multos púeros.","R. In Béthlehem Judæ civitáte David."]
 	},
 	{
@@ -23,11 +29,182 @@
 	},
 	{
 		"tags":["innocentes","matutinum","hymnus"],
+		"src":"nocturnale/1228H",
 		"datum":[
 			"Audit tyránnus ánxius/Adésse regum Príncipem,/Qui nomen Ísraël regat,/Teneátque David régiam.",
 			"Exclámat amens núntio:/Succéssor instat, péllimur:/Satélles, i, ferrum rape:/Perfúnde cunas sánguine.",
 			"Quid próficit tantum nefas?Quid crimen Heródem juvat?/Unus tot inter fúnera/Impúne Christus tóllitur.",
 			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Jeremía Prophéta.",
+			"Hæc dicit Dóminus: Vox in excélso audíta est lamentatiónis, luctus, et fletus Rachel plorántis fílios suos, et noléntis consolári super eis, quia non sunt. Hæc dicit Dóminus: Quiéscat vox tua a plorátu, et óculi tui a lácrimis: quia est merces óperi tuo, ait Dóminus: et reverténtur de terra inimíci. Et est spes novíssimis tuis, ait Dóminus: et reverténtur fílii ad términos suos."
+		]
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"1228N1R1",
+		"incipit":"Centum quadragínta quátuor míllia, qui empta sunt de terra, hi sunt qui cum muliéribus non sunt coinquináti:",
+		"responsum":"Vírgines enim permansérunt, ídeo regnant cum Deo, et Agnus Dei cum illis.",
+		"versus":"Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Aúdiens audívi Éphraïm transmigrántem: Castigásti me, et erudítus sum, quasi juvénculus indómitus: convérte me, et convértar: quia tu Dóminus Deus meus. Postquam enim convertísti me, egi pœniténtiam: et postquam ostendísti mihi, percússi femur meum. Confúsus sum, et erúbui: quóniam sustínui oppróbrium adolescéntiæ meæ. Si fílius honorábilis mihi Éphraïm, si puer delicátus: quia ex quo locútus sum de eo, adhuc recordábor ejus."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"1228N1R2",
+		"incipit":"Sub altáre Dei audívi voces occisórum dicéntium:",
+		"responsum":"Quare non deféndis sánguinem nostrum? Et accepérunt divínum respónsum: Adhuc sustinéte módicum tempus, donec impleátur númerus fratrum vestrórum.",
+		"versus":"Vidi sub altáre Dei ánimas interfectórum propter verbum Dei, et propter testimónium quod habébant, et clamábant voce magna, dicéntes."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Státue tibi spéculam, pone tibi amaritúdines: dírige cor tuum in viam rectam, in qua ambulásti: revértere virgo Ísraël, revértere ad civitátes tuas istas. Úsquequo delíciis dissólveris fília vaga? quia creávit Dóminus novum super terram: Fémina circúmdabit virum. Hæc dicit Dóminus exercítuum Deus Ísraël: Adhuc dicent verbum istud in terra Juda, et in úrbibus ejus, cum convértero captivitátem eórum: Benedícat tibi Dóminus, pulchritúdo justítiæ, mons sanctus."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"1228N1R3",
+		"incipit":"Adoravérunt vivéntem in sǽcula sæculórum,",
+		"responsum":"Mitténtes corónas suas ante thronum Dómini Dei sui.",
+		"versus":"Et cecidérunt in conspéctu throni in fácies suas: et benedixérunt vivéntem in sǽcula sæculórum."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"Hódie, fratres caríssimi, natálem illórum infántium cólimus, quos ab Heróde crudelíssimo rege interféctos esse, Evangélii textus elóquitur. Et ídeo cum summa exsultatióne gaúdeat terra, cœléstium mílitum, et tantárum parens fœcúnda virtútum. Ecce profánus hostis numquam beátis párvulis tantum prodésse potuísset obséquio, quantum prófuit ódio. Nam, sicut sacratíssimum præséntis diéi festum maniféstat, quantum in beátos párvulos iníquitas abundávit, tantum in eis grátia benedictiónis refúdit."
+		]
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"1228N2R1",
+		"incipit":"Effudérunt sánguinem sanctórum velut aquam in circúitu Jerúsalem:",
+		"responsum":"Et non erat qui sepelíret.",
+		"versus":"Posuérunt mortália servórum tuórum escas volatílibus cœli, carnes sanctórum tuórum béstiis terræ."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Beáta es, o Béthlehem terra Juda, quæ Heródis regis immanitátem in puerórum exstinctióne perpéssa es: quæ sub uno témpore candidátam plebem imbéllis infántiæ Deo offérre meruísti. Digne tamen natálem illórum cólimus, quos beátius ætérnæ vitæ mundus édidit, quam quos maternórum víscerum partus effúdit. Síquidem ante vitæ perpétuæ adépti sunt dignitátem, quam usúram præséntis accéperint."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"1228N2R2",
+		"incipit":"Isti sunt sancti, qui passi sunt propter te Dómine: víndica eos,",
+		"responsum":"Quia clamant ad te quotídie.",
+		"versus":"Víndica Dómine sánguinem sanctórum tuórum, qui effúsus est."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Aliórum quidem pretiósa mors Mártyrum laudem in confessióne proméruit, horum in consummatióne complácuit. Quia incipiéntis vitæ primórdiis, ipse eis occásus inítium glóriæ dedit, qui præséntis términum impósuit. Quos Heródis impíetas lactántes matrum ubéribus abstráxit, qui jure dicúntur Mártyrum flores, quos in médio frígore infidelitátis exórtos velut primas erumpéntes Ecclésiæ gemmas, quædam persecutiónis pruína decóxit."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"1228N2R3",
+		"incipit":"Isti sunt, qui non inquinavérunt vestiménta sua:",
+		"responsum":"Ambulábunt mecum in albis, quia digni sunt.",
+		"versus":"Hi sunt, qui cum muliéribus non sunt coinquináti: vírgines enim sunt."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1228N3A2",
+		"datum":"Isti sunt, * qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Ángelus Dómini appáruit in somnis Joseph, dicens: Surge, et áccipe púerum, et matrem ejus, et fuge in Ægýptum, et esto ibi usque dum dicam tibi. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"Quando tulit púerum, et matrem ejus, ut in Ægýptum tránseat, nocte tulit, et in ténebris: quia noctem ignorántiæ his, a quibus ipse recéssit, relíquit incrédulis. Quando vero revértitur in Judǽam, nec nox, nec ténebræ ponúntur in Evangélio: quia in fine mundi Judǽi fidem, tamquam Christum ab Ægýpto reverténtem suscipiéntes, illuminabúntur."
+		]
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"1228N3R1",
+		"incipit":"Cantábant sancti cánticum novum ante sedem Dei et Agni:",
+		"responsum":"Et resonábat terra in voces eorum.",
+		"versus":"Hi empti sunt ex homínibus primítiæ Deo et Agno, et in ore ipsórum non est invéntum mendácium."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Ut adimplerétur quod dictum est a Dómino per Prophétam dicéntem: Ex Ægýpto vocávi Fílium meum. Respóndeant, qui Hebræórum volúminum dénegant veritátem, ubi hoc in Septuagínta legátur interprétibus. Quod cum non invénerint, nos eis dicémus, in Osée Prophéta scriptum, sicut et exemplária probáre possunt, quæ nuper edídimus."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"1228N3R2",
+		"incipit":"Vidi sub altáre Dei ánimas interfectórum propter verbum Dei quod habébant, et clara voce dicébant:",
+		"responsum":"Víndica Dómine sánguinem sanctórum tuórum, qui effúsus est.",
+		"versus":"Sub throno Dei omnes sancti clamant."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Tunc adimplétum est, quod dictum est per Jeremíam Prophétam dicéntem: Vox in Rama audíta est, plorátus et ululátus multus, Rachel plorans fílios suos. De Rachel natus est Bénjamin, in cujus tribu non est Béthlehem. Quǽritur ergo, quómodo Rachel fílios Judæ, id est Béthlehem, quasi suos ploret. Respondébimus bréviter, quia sepúlta sit juxta Béthlehem in Éphrata: et ex matérno corpúsculi hospítio matris nomen accéperit. Sive quóniam Juda et Bénjamin duæ tribus junctæ erant: et Heródes præcéperat non solum in Béthlehem intérfici púeros, sed et in ómnibus fínibus ejus."
+	},
+	{
+		"tags":["innocentes","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"src":"1228N3R3",
+		"incipit":"Isti, qui amícti sunt stolis albis, qui sunt, et unde venérunt? Et dixit mihi:",
+		"responsum":"Hi sunt, qui venérunt de tribulatióne magna, et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.",
+		"versus":"Vidi sub altáre Dei ánimas interfectórum propter verbum Dei, et propter testimónium quod habébunt."
+	},
+	{
+		"tags":["innocentes","antiphona","antiphona-i"],
+		"src":"gregobase/2449",
+		"datum":"Heródes irátus * occídit multos púeros in Béthlehem Judæ civitáte David."
+	},
+	{
+		"tags":["innocentes","antiphona","antiphona-ii"],
+		"src":"gregobase/1879",
+		"datum":"A bimátu * et infra, occídit multos púeros Heródes propter Dóminum."
+	},
+	{
+		"tags":["innocentes","antiphona","antiphona-iii"],
+		"src":"gregobase/2703",
+		"datum":"Ángeli eórum * semper vident fáciem Patris."
+	},
+	{
+		"tags":["innocentes","antiphona","antiphona-iv"],
+		"src":"gregobase/12471",
+		"datum":"Vox in Rama * audíta est, plorátus et ululátus, Rachel plorans fílios suos."
+	},
+	{
+		"tags":["innocentes","antiphona","antiphona-v"],
+		"src":"gregobase/2939",
+		"datum":"Sub throno Dei * omnes sancti clamant: Víndica sánguinem nostrum Deus noster."
+	},
+	{
+		"tags":["innocentes","capitulum"],
+		"datum":"Vidi supra montem Sion Agnum stantem, + et cum eo centum quadragínta quátuor míllia, * habéntes nomen ejus, et nomen Patris ejus scriptum in fróntibus suis."
+	},
+	{
+		"tags":["innocentes","laudes","hymnus"],
+		"src":"gregobase/1963",
+		"datum":[
+			"Salvéte flores Mártyrum,/Quos lucis ipso in límine/Christi insecútor sústulit,/Ceu turbo nascéntes rosas.",
+			"Vos prima Christi víctima,/Grex immolatórum tener,/Aram sub ipsam símplices/Palma et corónis lúditis.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["innocentes","sexta","capitulum"],
+		"datum":"Hi sunt, qui cum muliéribus non sunt coinquináti: + vírgines enim sunt. * Hi sequúntur Agnum, quocúmque íerit."
+	},
+	{
+		"tags":["innocentes","nona","capitulum"],
+		"datum":"Hi empti sunt ex homínibus primítiæ Deo et Agno, + et in ore ipsórum non est invéntum mendácium: * sine mácula enim sunt ante thronum Dei."
+	},
+	{
+		"tags":["innocentes","ii-vesperae","versiculus"],
+		"datum":["V. Sub throno Dei omnes sancti clamant.","R. Víndica sánguinem nostrum Deus noster."]
+	},
+	{
+		"tags":["innocentes","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2833",
+		"datum":"Innocéntes pro Christo infántes occísi sunt, ab iníquo rege lacténtes interfécti sunt: ipsum sequúntur Agnum sine mácula, et dicunt semper: Glória tibi Dómine."
 	}
 ]
