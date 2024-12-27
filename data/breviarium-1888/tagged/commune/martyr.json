@@ -80,7 +80,7 @@
 		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
 	},
 	{
-		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium","festivus"],
+		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/UMEXIb",
 		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
 	},
@@ -305,6 +305,19 @@
 		]
 	},
 	{
+		"tags":[
+			["martyr","laudes","versiculus"],
+			["martyr","nona","versiculus"],
+			["martyr","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Justus ut palma florébit.","R. Sicus cedrus Líbani multiplicábitur."]
+	},
+	{
+		"tags":["martyr","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2855",
+		"datum":"Qui odit * ánimam suam in hoc mundo, in vitam ætérnam custódit eam."
+	},
+	{
 		"tags":["martyr","tertia","responsorium-breve"],
 		"src":"gregobase/3108",
 		"incipit":"Glória et honóre",
@@ -332,13 +345,6 @@
 		"incipit":"Magna est glória ejus",
 		"responsum":"In salutári tuo.",
 		"versus":"Glóriam et magnum decórem impónes super eum."
-	},
-	{
-		"tags":[
-			["martyr","nona","versiculus"],
-			["martyr","ii-vesperae","versiculus"]
-		],
-		"datum":["V. Justus ut palma florébit.","R. Sicus cedrus Líbani multiplicábitur."]
 	},
 	{
 		"tags":["martyr","ii-vesperae","psalmus-v"],
