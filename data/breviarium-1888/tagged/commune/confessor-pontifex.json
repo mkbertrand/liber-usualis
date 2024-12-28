@@ -53,7 +53,10 @@
 		"datum":"Ecce sacérdos magnus, + qui in diébus suis plácuit Deo, et invéntus est justus: * et in témpore iracúndiæ factus est reconciliátio."
 	},
 	{
-		"tags":["confessor-pontifex","vesperae","hymnus"],
+		"tags":[
+			["confessor-pontifex","vesperae","hymnus"],
+			["confessor-pontifex","matutinum","hymnus"]
+		],
 		"src":"gregobase/2334",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit beátas/Scándere sedes.",
@@ -64,7 +67,10 @@
 		]
 	},
 	{
-		"tags":["confessor-pontifex","mtv","vesperae","hymnus"],
+		"tags":[
+			["confessor-pontifex","mtv","vesperae","hymnus"],
+			["confessor-pontifex","mtv","matutinum","hymnus"]
+		],
 		"src":"gregobase/2334",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit suprémos/Laudis honóres.",
@@ -78,6 +84,62 @@
 		"tags":["confessor-pontifex","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2223",
 		"datum":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum."
+	},
+	{
+		"tags":["confessor-pontifex","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Da, quǽsumus omnípotens Deus: ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, et devotiónem nobis aúgeat et salútem."
+	},
+	{
+		"tags":["confessor-pontifex","collecta","alia-collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Exaúdi, quǽsumus Dómine, preces nostras, quas in beáti N. Confessóris tui atque Pontíficis solemnitáte deférimus: et qui tibi digne méruit famulári, ejus intercedéntibus méritis ab ómnibus nos absólve peccátis."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Ecce sacérdos magnus, qui in diébus suis plácuit Deo:",
+		"responsum":"Ídeo jurejurándo fecit illum Dóminus créscere in plebem suam.",
+		"versus":"Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Jurávit Dóminus, et non pœnitébit eum:",
+		"responsum":"Tu es sacérdos in ætérnum secúndum órdinem Melchísedech.",
+		"versus":"Dixit Dóminus Dómino meo, Sede a dextris meis."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","versiculus"],
+		"datum":["Elégit eum Dóminus sacerdótem sibi.","R. Ad sacrificándum ei hóstiam laudis."]
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Invéni David, servum meum, óleo sancto meo unxi eum:",
+		"responsum":"Manus enim mea auxiliábitur ei.",
+		"versus":"Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Pósui adjutórium super poténtem, et exaltávi eléctum de plebe mea:",
+		"responsum":"Manus enim mea auxiliábitur ei.",
+		"versus":"Invéni David servum meum, óleo sancto meo unxi eum."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Iste est qui ante Deum magnas virtútes operátus est, et omnis terra doctrína ejus repléta est:",
+		"responsum":"Ipse intercédat pro peccátis ómnium populórum.",
+		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Tu es sacérdos in ætérnum.","R. Secúndum órdinem Melchísedech."]
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"datum":""
 	},
 	{
 		"tags":["confessor-pontifex","ii-vesperae","antiphona","antiphona-magnificat"],
