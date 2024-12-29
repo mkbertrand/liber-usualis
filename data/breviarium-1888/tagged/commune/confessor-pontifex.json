@@ -139,7 +139,7 @@
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"datum":""
+		"formula":[{"reference":[["formula"],["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii"]]}]
 	},
 	{
 		"tags":["confessor-pontifex","ii-vesperae","antiphona","antiphona-magnificat"],

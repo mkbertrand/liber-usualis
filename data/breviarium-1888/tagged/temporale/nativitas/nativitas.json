@@ -481,7 +481,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-i","responsorium","responsorium-ii"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-i","responsorium","responsorium-ii"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -489,7 +489,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-i","responsorium","responsorium-iii"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-i","responsorium","responsorium-iii"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -497,7 +497,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-i"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-ii","responsorium","responsorium-i"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -508,7 +508,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-ii"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-ii","responsorium","responsorium-ii"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-ii"],
@@ -516,7 +516,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -524,7 +524,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-iii","responsorium","responsorium-i"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-iii","responsorium","responsorium-i"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -537,7 +537,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"formula":[{"from-tags":["formula"],"reference":["nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"]}]
+		"formula":[{"reference":[["formula"],["nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"]]}]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","lectio","lectio-ii"],

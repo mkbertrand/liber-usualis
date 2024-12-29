@@ -1,10 +1,10 @@
 [
-	{"tags":["prima","hymnus","duplex-minus"],"reference":["prima","hymnus","semiduplex"]},
+	{"tags":["prima","hymnus","duplex-minus"],"reference":[["hymnus"],["prima","semiduplex"]]},
 	{"tags":["prima","preces","duplex"],"datum":""},
-	{"tags":["tertia","hymnus","duplex-minus"],"reference":["tertia","hymnus","semiduplex"]},
-	{"tags":["sexta","hymnus","duplex-minus"],"reference":["sexta","hymnus","semiduplex"]},
-	{"tags":["nona","hymnus","duplex-minus"],"reference":["nona","hymnus","semiduplex"]},
-	{"tags":["completorium","hymnus","duplex-minus"],"reference":["completorium","hymnus","semiduplex"]},
+	{"tags":["tertia","hymnus","duplex-minus"],"reference":[["hymnus"],["tertia","semiduplex"]]},
+	{"tags":["sexta","hymnus","duplex-minus"],"reference":[["hymnus"],["sexta","semiduplex"]]},
+	{"tags":["nona","hymnus","duplex-minus"],"reference":[["hymnus"],["nona","semiduplex"]]},
+	{"tags":["completorium","hymnus","duplex-minus"],"reference":[["hymnus"],["completorium","semiduplex"]]},
 	{"tags":["completorium","preces","duplex"],"datum":""},
 	{
 		"tags":["dies-octava","nomen"],

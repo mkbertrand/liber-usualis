@@ -38,6 +38,7 @@ def dump_data(j):
 	return json.dumps(recurse(j))
 
 implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
+propria = datamanage.load_data('data/breviarium-1888/propria.json')
 
 def prettyprint(j):
 	def recurse(obj):
@@ -80,6 +81,7 @@ def anysearch(query, pile):
 def discriminate(root, table: str, tags: set):
 	table = datamanage.getdiscrimina(root, table)
 	val = 0
+	tags = {':propria' if i in propria else i for i in tags}
 	for i in range(0, len(table)):
 		include = set(filter(lambda a: a[0] != '!', table[i]))
 		exclude = {a[1:] for a in table[i] - include}
@@ -153,6 +155,9 @@ def process(root, item, selected, alternates, pile):
 						break
 		if 'reference' in item:
 			alternates.append(selected)
+			if type(item['reference']) is list:
+				item['from-tags'] = item['reference'][0]
+				item['reference'] = item['reference'][1]
 			# Just in case an item needs to change depending on whether it is a reference
 			selected = item['reference'] | {'referens'}
 			pile = datamanage.getbreviariumfiles(root, defaultpile | item['reference'])
