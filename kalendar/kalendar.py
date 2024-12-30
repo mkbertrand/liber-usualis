@@ -375,11 +375,10 @@ def kalendar(year: int) -> Kalendar:
 	ruleskip = [False] * len(rules)
 
 	def resolvejob(job):
-
 		if ruleskip[job.rule['number']]:
 			return
 		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
-		if not rules[job.rule['number'] - 1]['recheck']:
+		if job.rule['number'] != 0 and not rules[job.rule['number'] - 1]['recheck']:
 			ruleskip[job.rule['number'] - 1] = True
 
 		for day in job.days:
