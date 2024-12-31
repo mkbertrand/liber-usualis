@@ -81,7 +81,8 @@ def anysearch(query, pile):
 def discriminate(root, table: str, tags: set):
 	table = datamanage.getdiscrimina(root, table)
 	val = 0
-	tags = {':propria' if i in propria else i for i in tags}
+	if not tags.isdisjoint(propria):
+		tags |= {':propria'}
 	for i in range(0, len(table)):
 		include = set(filter(lambda a: a[0] != '!', table[i]))
 		exclude = {a[1:] for a in table[i] - include}
