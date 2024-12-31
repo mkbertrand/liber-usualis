@@ -110,8 +110,8 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
 	result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
 	if len(result[0]['tags']) != len(result[1]['tags']):
 		return result[0]
-	if not multipleresults:
-		raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[-1]}\n{result[-2]}')
+	elif not multipleresults:
+		raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[0]}\n{result[1]}')
 	else:
 		return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
