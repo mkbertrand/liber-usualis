@@ -1,0 +1,321 @@
+[
+	{
+		"tags":["circumcisio","nomen"],
+		"datum":"In Circumcisione Domini Nostri Jesu Christi"
+	},
+	{
+		"tags":["circumcisio","antiphona","antiphona-i"],
+		"src":"gregobase/2008",
+		"datum":"O admirábile commércium: * Creátor géneris humáni, animátum corpus sumens, de Vírgine nasci dignátus est: et procédens homo sine sémine, largítus est nobis suam Deitátem."
+	},
+	{
+		"tags":["circumcisio","vesperae","psalmus-i"],
+		"reference":["maria","vesperae","i-vesperae","psalmus-i"]
+	},
+	{
+		"tags":["circumcisio","antiphona","antiphona-ii"],
+		"src":"gregobase/2973",
+		"datum":"Quando natus es * ineffabíliter ex Vírgine, tunc implétæ sunt Scriptúræ, sicut plúvia in vellus descendísti, ut salvum fáceres genus humánum: te laudámus Deus noster."
+	},
+	{
+		"tags":["circumcisio","vesperae","psalmus-ii"],
+		"reference":["maria","vesperae","i-vesperae","psalmus-ii"]
+	},
+	{
+		"tags":["circumcisio","antiphona","antiphona-iii"],
+		"src":"gregobase/1903",
+		"datum":"Rubum quem víderat Móyses * incombústum, conservátum agnóvimus tuam laudábilem virginitátem: Dei Génetrix, intercéde pro nobis."
+	},
+	{
+		"tags":["circumcisio","vesperae","psalmus-iii"],
+		"reference":["maria","vesperae","i-vesperae","psalmus-iii"]
+	},
+	{
+		"tags":["circumcisio","antiphona","antiphona-iv"],
+		"src":"gregobase/2195",
+		"datum":"Germinávit radix Jesse, * orta est stella ex Jacob: Virgo péperit Salvatórem: te laudámus Deus noster."
+	},
+	{
+		"tags":["circumcisio","vesperae","psalmus-iv"],
+		"reference":["maria","vesperae","i-vesperae","psalmus-iv"]
+	},
+	{
+		"tags":["circumcisio","antiphona","antiphona-v"],
+		"src":"gregobase/2234",
+		"datum":"Ecce María génuit * nobis Salvatórem, quem Joánnes videns exclamávit, dicens, Ecce Agnus Dei, ecce qui tollit peccáta mundi, allelúja."
+	},
+	{
+		"tags":["circumcisio","vesperae","psalmus-v"],
+		"reference":["maria","vesperae","i-vesperae","psalmus-v"]
+	},
+	{
+		"tags":["circumcisio","capitulum"],
+		"datum":"Appáruit grátia Dei Salvatóris nostri ómnibus homínibus, + erúdiens nos, ut abnegántes impietátem, et sæculária desidéria, * sóbrie, et juste, et pie vivámus in hoc sǽculo."
+	},
+	{
+		"tags":[
+			["circumcisio","vesperae","hymnus"],
+			["circumcisio","matutinum","hymnus"]
+		],
+		"reference":[["hymnus"],["nativitas","vesperae"]]
+	},
+	{
+		"tags":[
+			["circumcisio","i-vesperae","versiculus"],
+			["circumcisio","laudes","versiculus"]
+		],
+		"datum":["V. Verbum caro factum est, allelúja.","R. Et habitávit in nobis, allelúja."]
+	},
+	{
+		"tags":["circumcisio","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2010",
+		"datum":"Propter nímiam * caritátem suam, qua diléxit nos Deus, Fílium suum misit in similitúdinem carnis peccáti, allelúja."
+	},
+	{
+		"tags":["circumcisio","collecta"],
+		"terminatio":[["terminatio","qui-tecum-vivit"]],
+		"datum":"Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fœcúnda, humáno géneri prǽmia præstitísti: + tríbue quǽsumus; ut ipsam pro nobis intercédere sentiámus, * per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:"
+	},
+	{
+		"tags":["circumcisio","matutinum","antiphona","antiphona-invitatorium"],
+		"reference":[["antiphona"],["nativitas","matutinum","antiphona-invitatorium"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"reference":[["antiphona"],["nativitas","matutinum","nocturna-i","antiphona-i"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0101N1A2",
+		"datum":"In sole pósuit * tabernáculum suum: et ipse tamquam sponsus procédens de thálamo suo."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xviii,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0101N1A3",
+		"datum":"Elevámini * portæ æternáles, et introíbit Rex glóriæ."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Tamquam sponsus.","R. Dóminus procédens de thálamo suo."]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Epístola beáti Pauli Apóstoli ad Romános.",
+			"Quid ergo ámplius Judǽo est? aut quæ utílitas circumcisiónis? Multum per omnem modum. Primum quidem, quia crédita sunt illis elóquia Dei. Quid enim si quidam illórum non credidérunt? Numquid incredúlitas illórum fidem Dei evacuábit? Absit. Est autem Deus verax: omnis autem homo mendax, sicut scriptum est: Ut justificéris in sermónibus tuis: et vincas cum judicáris. Si autem iníquitas nostra justítiam Dei comméndat, quid dicémus? Numquid iníquus est Deus qui infert iram? (secúndum hóminem dico.) Absit. Alióquin quómodo judicábit Deus hunc mundum?"
+		]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/0101N1R1",
+		"incipit":"Ecce Agnus Dei, ecce qui tollit peccáta mundi: ecce de quo dicébam vobis: Qui me venit, ante me factus est:",
+		"responsum":"Cujus non sum dignus corrígiam calceaménti sólvere.",
+		"versus":"Qui de terra est, de terra lóquitur: qui de cœlo venit, super omnes est."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"An Judæórum Deus tantum? nonne et Géntium? Imo et Géntium. Quóniam quidem unus est Deus, qui justíficat circumcisiónem ex fide, et præpútium per fidem. Legem ergo destrúimus per fidem? Absit: sed legem statúimus. Quid ergo dicémus invenísse Ábraham patrem nostrum secúndum carnem? Si enim Ábraham ex opéribus justificátus est, habet glóriam, sed non apud Deum. Quid enim dicit Scriptúra? Crédidit Ábraham Deo: et reputátum est illi ad justítiam. Ei autem, qui operátur, merces non imputátur secúndum grátiam, sed secúndum débitum. Ei vero qui non operátur, credénti autem in eum, qui justíficat ímpium, reputátur fides ejus ad justítiam secúndum propósitum grátiæ Dei. Sicut et David dicit beatitúdinem hóminis, cui Deus accépto fert justítiam sine opéribus: Beáti, quorum remíssæ sunt iniquitátes, et quorum tecta sunt peccáta."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/0101N1R2",
+		"incipit":"Dies sanctificátus illúxit nobis: veníte Gentes, et adoráte Dóminum:",
+		"responsum":"Quia hódie descéndit lux magna in terris.",
+		"versus":"Hæc dies quam fecit Dóminus, exsultémus et lætémur in ea."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Beatitúdo ergo hæc in circumcisióne tantum manet, an étiam in præpútio? Dícimus enim quia reputáta est Ábrahæ fides ad justítiam. Quómodo ergo reputáta est? in circumcisióne, an in præpútio? Non in circumcisióne, sed in præpútio. Et signum accépit circumcisiónis, signáculum justítiæ fídei, quæ est in præpútio: ut sit pater ómnium credéntium per præpútium, ut reputétur et illis ad justítiam: et sit pater circumcisiónis non iis tantum qui sunt ex circumcisióne, sed et iis qui sectántur vestígia fídei, quæ est in præpútio patris nostri Ábrahæ."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/0101N1R3",
+		"incipit":"Benedíctus qui venit in nómine Dómini, Deus Dóminus, et illúxit nobis:",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Hæc est dies quam fecit Dóminus, exsultémus et lætémur in ea."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0101N2A1",
+		"datum":"Speciósus forma * præ fíliis hóminum, diffúsa est grátia in lábiis tuis."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xliv,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0101N2A2",
+		"datum":"Homo natus est * in ea, et ipse fundávit eam Altíssimus."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxvi,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0101N2A3",
+		"datum":"Exsultábunt ómnia ligna * silvárum ante fáciem Dómini, quóniam venit."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xcv,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Speciósus forma præ fíliis hóminum.","R. Diffúsa est grátia in lábiis tuis."]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"Festivitátis hodiérnæ, dilectíssimi, verus venerátor est, et pius cultor, qui nec de Incarnatióne Dómini áliquid falsum, nec de Deitáte áliquid sentit indígnum. Paris enim perículi malum est, si illi aut natúræ nostræ véritas, aut patérnæ glóriæ negátur æquálitas. Cum ergo ad intelligéndum sacraméntum Nativitátis Christi, qua de matre vírgine est ortus, accédimus, abigátur procul terrenárum calígo ratiónum, et ab illuminátæ fídei óculo mundánæ sapiéntiæ fumus abscédat."
+		]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","responsorium","responsorium-i","formula"],
+		"reference":[["formula"],["maria","matutinum","nocturna-i","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Divína est enim auctóritas, cui crédimus: divína est doctrína, quam séquimur. Quóniam sive legis testificatióni, sive oráculis Prophetárum, sive evangélicæ tubæ interiórem admoveámus audítum: verum est, quod Joánnes plenus Spíritu sancto intónuit: In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Hoc erat in princípio apud Deum. Ómnia per ipsum facta sunt, et sine ipso factum est nihil. Et simíliter verum est, quod idem prædicátor adjécit: Verbum caro factum est, et habitávit in nobis: et vídimus glóriam ejus, glóriam quasi unigéniti a Patre."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/0101N2R2",
+		"incipit":"Confirmátum est cor Vírginis, in quo divína mystéria, Ángelo nuntiánte, concépit: tunc speciósum forma præ fíliis hóminum castis suscépit viscéribus:",
+		"responsum":"Et benedícta in ætérnum, Deum nobis prótulit et hóminem.",
+		"versus":"Domus pudíci péctoris templum repénte fit Dei, intácta nésciens virum, verbo concépit Fílium."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"In utráque ergo natúra idem est Dei Fílius, nostra suscípiens, et própria non amíttens: in hómine hóminem rénovans, in se incommutábilis persevérans. Déitas enim, quæ illi cum Patre commúnis est, nullum detriméntum omnipoténtiæ súbiit, nec Dei formam servi forma violávit: quia summa et sempitérna esséntia, quæ se ad humáni géneris inclinávit salútem, nos quidem in suam glóriam tránstulit, sed quod erat, esse non déstitit. Unde cum Unigénitus Dei minórem se Patre confitétur, cui se dicit æquálem, veritátem in se formæ utriúsque demónstrat: ut et humánam probet imparílitas, et divínam decláret æquálitas."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/0101N2R3",
+		"incipit":"Benedícta et venerábilis es Virgo María, quæ sine tactu pudóris invénta es mater Salvatóris:",
+		"responsum":"Jacébat in præsépio, et fulgébat in cœlo.",
+		"versus":"Dómine audívi audítum tuum, et tímui: considerávi ópera tua, et expiávi: in médio duórum animálium."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0101N3A1",
+		"datum":"In princípio, * et ante sǽcula Deus erat Verbum, et ipse natus est hódie Salvátor mundi."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0101N3A2",
+		"datum":"Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie nasci dignátus est."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcvii,gloria"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0101N3A3",
+		"datum":"Nato Dómino, * Angelórum chorus canébat, dicens: Salus Deo nostro, sedénti super thronum, et Agno."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xcviii,gloria"]]
+	},
+	{
+		"tags":[
+			["circumcisio","matutinum","nocturna-iii","versiculus"],
+			["circumcisio","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Notum fecit Dóminus, allelúja.","R. Salutáre suum, allelúja."]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Lectio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Postquam consummáti sunt dies octo, ut circumciderétur puer: vocátum est nomen ejus Jesus. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"Circumcíditur ítaque puer. Quis est iste puer, nisi ille, de quo dictum est: Puer natus est nobis, fílius datus est nobis? Factus est enim sub lege, ut eos, qui sub lege essent, lucrifáceret. Ut sísterent eum Dómino. Quid sit autem in Jerúsalem sisti Dómino, dícerem, nisi in Isaíæ comméntis ante dixíssem. Circumcísus enim vítiis, Domínico dignus judicátur obtútu: quia óculi Dómini super justos. Vides omnem legis véteris sériem fuísse typum futúri: nam et circumcísio purgatiónem signíficat delictórum."
+		]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
+		"reference":[["formula"],["maria","matutinum","nocturna-i","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Sed quóniam prona quadam cupiditáte peccándi, humánæ carnis et mentis fragílitas inextricabílibus vítiis implicátur, eo per octávum circumcisiónis diem culpæ totíus futúra purgátio, resurrectiónis præfigurabátur ætáte. Hoc est enim illud: Quia omne masculínum adapériens vulvam, sanctum Dómino vocábitur. Verbis enim legis promittebátur Vírginis partus. Et vere sanctus, quia immaculátus. Dénique ipsum esse, qui lege signétur, in eúmdem modum ab Ángelo repetíta verba declárant: Quod nascétur, inquit, Sanctum, vocábitur Fílius Dei."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/0101N3R2",
+		"incipit":"Nésciens mater virgo virum, péperit sine dolóre:",
+		"responsum":"Salvatórem sæculórum, ipsum Regem Angelórum, sola virgo lactábat úbere de cœlo pleno.",
+		"versus":"Domus pudíci péctoris templum repénte fit Dei: intácta nésciens virum, verbo concépit Fílium."
+	},
+	{
+		"tags":["circumcisio","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Solus enim per ómnia ex natis de fémina sanctus Dóminus Jesus, qui terrénæ contágia corruptélæ, immaculáti partus novitáte non sénserit, et cœlésti majestáte depúlerit. Nam si lítteram sequámur: quómodo sanctus omnis másculus, cum multos sceleratíssimos fuísse non láteat? Numquid sanctus Achab? Numquid sancti pseudoprophétæ, quos ad Elíæ preces ultor cœléstis injúriæ ignis absúmpsit? Sed ille sanctus, quem in figúra futúri mystérii pia legis divínæ præscrípta signábant; eo quod solus sanctæ Ecclésiæ vírginis ad generándos pópulos Dei, immaculátæ fœcunditátis aperíret genitále secrétum."
+	},
+	{
+		"tags":["circumcisio","laudes","hymnus"],
+		"reference":[["hymnus"],["nativitas","laudes"]]
+	},
+	{
+		"tags":["circumcisio","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13319",
+		"datum":"Mirábile mystérium * declarátur hódie: innovántur natúræ, Deus homo factus est: id quod fuit assúmpsit; non commixtiónem passus, neque divisiónem."
+	},
+	{
+		"tags":["circumcisio","tertia","responsorium-breve","formula"],
+		"reference":[["formula"],["nativitas","tertia","responsorium-breve"]]
+	},
+	{
+		"tags":["circumcisio","tertia","versiculus"],
+		"reference":["nativitas","tertia","versiculus"]
+	},
+	{
+		"tags":["circumcisio","sexta","capitulum"],
+		"reference":["nativitas","sexta","capitulum"]
+	},
+	{
+		"tags":["circumcisio","sexta","responsorium-breve","formula"],
+		"reference":[["formula"],["nativitas","sexta","responsorium-breve"]]
+	},
+	{
+		"tags":["circumcisio","sexta","versiculus"],
+		"reference":["nativitas","sexta","versiculus"]
+	},
+	{
+		"tags":["circumcisio","nona","capitulum"],
+		"reference":["nativitas","nona","capitulum"]
+	},
+	{
+		"tags":["circumcisio","nona","responsorium-breve","formula"],
+		"reference":[["formula"],["nativitas","nona","responsorium-breve"]]
+	},
+	{
+		"tags":["circumcisio","nona","versiculus"],
+		"reference":["nativitas","nona","versiculus"]
+	},
+	{
+		"tags":["circumcisio","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2916",
+		"datum":"Magnum * hæreditátis mystérium: templum Dei factus est úterus nesciéntis virum: non est pollútus ex ea carnem assúmens: omnes gentes vénient, dicéntes: Glória tibi Dómine."
+	}
+]

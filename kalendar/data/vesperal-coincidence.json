@@ -389,6 +389,18 @@
 		"response":[
 			{"include":["feria","ii-vesperae"],"response":["commemoratio","psalmi"],"target":1}
 		]
+	},
+	{
+		"include":["circumcisio","i-vesperae"],
+		"response":[
+			{"include":["commemoratio"],"response":"omissum","target":1}
+		]
+	},
+	{
+		"include":["circumcisio","ii-vesperae"],
+		"response":[
+			{"include":["commemoratio","semiduplex"],"response":"omissum","target":1}
+		]
 	}
 ]
 

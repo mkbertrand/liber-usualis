@@ -662,5 +662,12 @@
 			{"include":["maria","infra-octavam"],"response":"tempus-mariae","target":0},
 			{"include":["maria","dies-octava"],"response":"tempus-mariae","target":0}
 		]
+	},
+	{
+		"include":["circumcisio"],
+		"recheck":false,
+		"response":[
+			{"include":["commemoratio"],"response":"omissum","target":1}
+		]
 	}
 ]
