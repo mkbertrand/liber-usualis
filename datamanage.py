@@ -58,6 +58,20 @@ def getbreviariumfiles(root, queries):
 				added = []
 				for entry in got:
 					entrycopy = copy.deepcopy(entry)
+
+					# Handle antiphons
+					if 'antiphona-invitatorium' in entrycopy['tags'] and 'datum' in entrycopy:
+						if '*' not in entry['datum']:
+							raise RuntimeError(f'Missing intonation mark in {entry}')
+						entrycopy['pars'] = entrycopy['datum'].split('*')[1].lstrip()
+					elif 'antiphona' in entrycopy['tags'] and 'datum' in entrycopy:
+						if '*' not in entry['datum']:
+							raise RuntimeError(f'Missing intonation mark in {entry}')
+						entrycopy['intonata'] = entrycopy['datum'].split('*')[0].rstrip()
+						if entrycopy['intonata'][-1] not in ['.',',','?','!',':',';']:
+							entrycopy['intonata'] += '.'
+						entrycopy['repetita'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
+					# Expands out entries where there's more than one item
 					for key, val in entrycopy.items():
 						if key not in functiontags:
 							tags = None
@@ -71,62 +85,4 @@ def getbreviariumfiles(root, queries):
 							ret.append(newentry)
 					if 'datum' in entry or 'reference' in entry:
 						ret.append(entry)
-	added = []
-
-	# Janky ways of changing the tags, but I don't really know a better way to copy the item and then modify tags
-	for entry in ret:
-		if 'antiphona-invitatorium' in entry['tags']:
-			if '*' not in entry['datum']:
-				raise RuntimeError(f'Missing intonation mark in {entry}')
-			entrycopy = copy.deepcopy(entry)
-			entrycopy['tags'] = entry['tags'] | {'pars'}
-			entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
-			added.append(entrycopy)
-
-		elif type(entry['tags']) is list and 'antiphona-invitatorium' in entry['tags'][0]:
-			if '*' not in entry['datum']:
-				raise RuntimeError(f'Missing intonation mark in {entry}')
-			entrycopy = copy.deepcopy(entry)
-			oldtags = entrycopy['tags']
-			entrycopy['tags'] = []
-			for j in oldtags:
-				entrycopy['tags'].append(j | {'pars'})
-			entrycopy['datum'] = entrycopy['datum'].split('*')[1].lstrip()
-			added.append(entrycopy)
-
-		elif 'antiphona' in entry['tags'] and 'antiphona-major' not in entry[
-'tags']:
-			if '*' not in entry['datum']:
-				raise RuntimeError(f'Missing intonation mark in {entry}')
-			entrycopy = copy.deepcopy(entry)
-			entrycopy['tags'] = entry['tags'] | {'intonata'}
-			entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
-			if entrycopy['datum'][-1] not in ['.',',','?','!',':',';']:
-				entrycopy['datum'] += '.'
-			added.append(entrycopy)
-			entrycopy = copy.deepcopy(entry)
-			entrycopy['tags'] = entry['tags'] | {'repetita'}
-			entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
-			added.append(entrycopy)
-
-		elif type(entry['tags']) is list and 'antiphona' in entry['tags'][0] and 'antiphona-major' not in entry['tags'][0]:
-			if '*' not in entry['datum']:
-				raise RuntimeError(f'Missing intonation mark in {entry}')
-			entrycopy = copy.deepcopy(entry)
-			oldtags = entrycopy['tags']
-			entrycopy['tags'] = []
-			for j in oldtags:
-				entrycopy['tags'].append(j | {'intonata'})
-			entrycopy['datum'] = entrycopy['datum'].split('*')[0].rstrip()
-			if entrycopy['datum'][-1] not in ['.',',','?','!',':',';']:
-				entrycopy['datum'] += '.'
-			added.append(entrycopy)
-			entrycopy = copy.deepcopy(entry)
-			entrycopy['tags'] = []
-			for j in oldtags:
-				entrycopy['tags'].append(j | {'repetita'})
-			entrycopy['datum'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
-			added.append(entrycopy)
-	ret.extend(added)
 	return ret
-
