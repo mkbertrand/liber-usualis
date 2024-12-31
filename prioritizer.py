@@ -34,11 +34,6 @@ def load_data(p: str):
 diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/diurnal-coincidence.json'))
 vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/vesperal-coincidence.json'))
 
-noivespers = {'feria', 'vigilia', 'infra-octavam', 'coena-domini', 'parasceve'}
-noiivespers = {'simplex', 'vigilia', 'antiphona-bmv', 'suffragium'}
-
-excludedtags = {'antiphona-bmv','commemoratio','fixum','tempus'}
-
 roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 roletags = set(roletagsordered)
 
@@ -47,24 +42,8 @@ class Job(NamedTuple):
 
 def getvespers(day):
 	assert type(day) is not datetime
-	ivespers = [i | {'i-vesperae'} for i in filter(lambda occ: occ.isdisjoint(noivespers), kalendar.datamanage.getdate(day + timedelta(days=1)))]
-	iivespers = [i | {'ii-vesperae'} for i in filter(lambda occ: occ.isdisjoint(noiivespers), kalendar.datamanage.getdate(day))]
-	ivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), ivespers))
-	iivespersprimarycandidates = list(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers))
-	if len(iivespersprimarycandidates) == 0:
-		# Grabs the temporale (ferial) II Vespers
-		iivespprim = next(filter(lambda occ: occ.isdisjoint(excludedtags), iivespers), None)
-		for i in iivespers:
-			if i == iivespprim:
-				i.add('primarium')
-	else:
-		for i in iivespers:
-			if i == iivespersprimarycandidates[0]:
-				i.add('primarium')
-	if len(ivespersprimarycandidates) != 0:
-		for i in ivespers:
-			if i == ivespersprimarycandidates[0]:
-				i.add('primarium')
+	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1))]
+	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
 	# Final product
 	vesperal = iivespers + ivespers
 
