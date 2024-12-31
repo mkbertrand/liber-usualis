@@ -179,12 +179,12 @@ async function chomp(id, tags) {
 			} else if (tags.includes('pars')) {
 				gabc = gabc.replace(/^(\(..\)\s).+?\*(\(.*?\))?\s?/, '$1');
 				gabcdata = '%%\n';
-			} else if (!(tags.includes('commemoratio') || tags.includes('repetita') || tags.includes('suffragium'))) {
+			} else if (tags.includes('formula-commemorationis') || tags.includes('suffragium')) {
 				gabc = gabc + euouae;
 			} else {
 				gabc = gabc.replace('*', '');
 				gabcdata = '%%\n';
-				firstsyllable = gabc.match(/\w+\(/)[0];
+				firstsyllable = gabc.match(/[\wáǽéíóúý]+\(/)[0];
 				gabc = gabc.replace(firstsyllable, firstsyllable.charAt(0).toUpperCase() + firstsyllable.slice(1).toLowerCase());
 			}
 			
