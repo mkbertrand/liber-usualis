@@ -84,7 +84,7 @@
 		"response":"dele"
 	},
 	{
-		"include":["nativitas","commemoratio","infra-octavam","ii-vesperae"],
+		"include":["nativitas","infra-octavam","ii-vesperae"],
 		"response":[
 			{"include":["duplex-ii-classis","primarium"],"response":["psalmi","duplex"],"target":0},
 			{"include":["duplex-majus","primarium"],"response":["psalmi","duplex"],"target":0},

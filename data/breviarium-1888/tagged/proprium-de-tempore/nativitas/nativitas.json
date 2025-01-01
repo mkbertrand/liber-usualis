@@ -566,5 +566,38 @@
 		"tags":["nativitas","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2178",
 		"datum":"Puer Jesus * proficiébat ætáte et sapiéntia coram Deo et homínibus."
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i"],
+		"reference":[["nocturna","tres-psalmi","tres-antiphonae"],["nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-i"]]
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii"],
+		"reference":[["nocturna","tres-psalmi","tres-antiphonae"],["nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-ii"]]
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum quod factum est, quod Dóminus osténdit nobis. Et venérunt festinántes. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"Vides festináre pastóres. Nemo enim cum desídia Christum requírit. Vides pastóres Ángelo credidísse: et tu Patri, Fílio, Spirítui sancto, Ángelis, Prophétis, et Apóstolis crédere non vis? Vide, quam signánter Scriptúra singulórum libret moménta verbórum. Festínant, inquit, Verbum vidére. Étenim cum caro Dómini vidétur, Verbum vidétur, quod est Fílius."
+		]
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
+		"reference":[["formula"],["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Non medíocre fídei tibi hoc videátur exémplum, quod vilis sit persóna pastórum. Certe quo vílior ad prudéntiam, eo pretiósior ad fidem. Non gymnásia choris reférta sapiéntum, sed plebum Dóminus símplicem requisívit, quæ phaleráre audíta, et fucáre nescíret. Simplícitas enim quǽritur, non ambítio desiderátur."
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii","formula"],
+		"reference":[["formula"],["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Nec contemnénda putes quasi vília verba pastórum. A pastóribus enim María fidem cólligit. A pastóribus pópulus ad Dei reveréntiam congregátur. Miráti étiam sunt omnes qui audiérunt, de iis, quæ dicebántur a pastóribus ad ipsos. María autem conservábat ómnia verba hæc, cónferens in corde suo. Discámus sanctæ Vírginis in ómnibus castitátem, quæ non minus ore pudíca, quam córpore, arguménta fídei conferébat in corde."
 	}
 ]
