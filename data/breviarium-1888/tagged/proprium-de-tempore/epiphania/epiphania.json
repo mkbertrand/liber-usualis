@@ -1,0 +1,411 @@
+[
+	{
+		"tags":["epiphania","nomen"],
+		"datum":"In Epiphania Domini"
+	},
+	{
+		"tags":["epiphania","basis-nominis"],
+		"datum":"Epiphaniæ Domini"
+	},
+	{
+		"tags":["epiphania","antiphona","antiphona-i"],
+		"src":"gregobase/2271",
+		"datum":"Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie mundo appáruit."
+	},
+	{
+		"tags":["epiphania","i-vesperae","psalmus-i"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-i"]
+	},
+	{
+		"tags":["epiphania","antiphona","antiphona-ii"],
+		"src":"gregobase/2692",
+		"datum":"Venit lumen tuum * Jerúsalem, et glória Dómini super te orta est, et ambulábunt Gentes in lúmine tuo, allelúja."
+	},
+	{
+		"tags":["epiphania","i-vesperae","psalmus-ii"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-ii"]
+	},
+	{
+		"tags":["epiphania","antiphona","antiphona-iii"],
+		"src":"gregobase/2464",
+		"datum":"Apértis thesaúris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, allelúja."
+	},
+	{
+		"tags":["epiphania","i-vesperae","psalmus-iii"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-iii"]
+	},
+	{
+		"tags":["epiphania","antiphona","antiphona-iv"],
+		"src":"gregobase/2004",
+		"datum":"Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja."
+	},
+	{
+		"tags":["epiphania","i-vesperae","psalmus-iv"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-iv"]
+	},
+	{
+		"tags":["epiphania","antiphona","antiphona-v"],
+		"src":"gregobase/1968",
+		"datum":"Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt."
+	},
+	{
+		"tags":["epiphania","i-vesperae","psalmus-v"],
+		"reference":["apostolus","vesperae","i-vesperae","psalmus-v"]
+	},
+	{
+		"tags":["epiphania","capitulum"],
+		"datum":"Surge, illumináre Jerúsalem, quia venit lumen tuum, * et glória Dómini super te orta est."
+	},
+	{
+		"tags":[
+			["epiphania","vesperae","hymnus"],
+			["epiphania","matutinum","hymnus"]
+		],
+		"src":"gregobase/2129",
+		"datum":[
+			"Crudélis Heródes, Deum/Regem veníre quid times?/Non éripit mortália,/Qui regna dat cœléstia.",
+			"Ibant Magi, quam víderant,/Stellam sequéntes prǽviam:/Lumen requírunt lúmine:/Deum faténtur múnere.",
+			"Lavácra puri gúrgitis/Cœléstis Agnus áttigit:/Peccáta, quæ non détulit,/Nos abluéndo sústulit.",
+			"Novum genus poténtiæ:/Aquæ rubéscunt hýdriæ,/Vinúmque jussa fúndere,/Mutávit unda oríginem.",
+			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["epiphania","vesperae","versiculus"],
+			["epiphania","matutinum","nocturna-ii","versiculus"]
+		],
+		"datum":["V. Reges Tharsis et ínsulæ múnera ófferent.","R. Reges Árabum et Saba dona addúcent."]
+	},
+	{
+		"tags":["epiphania","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2368",
+		"datum":"Magi * vidéntes stellam, dixérunt ad ínvicem: Hoc signum magni Regis est: eámus et inquirámus eum, et offerámus ei múnera, aurum, thus, et myrrham, allelúja."
+	},
+	{
+		"tags":["epiphania","collecta"],
+		"terminatio":[["terminatio","per-eumdem-dominum"]],
+		"datum":"Deus, qui hodiérna die Unigénitum tuum Géntibus stella duce revelásti: + concéde propítius; ut qui jam te ex fide cognóvimus, * usque ad contemplándum spéciem tuæ celsitúdinis perducámur."
+	},
+	{
+		"tags":["epiphania","festum","matutinum","hora"],
+		"datum":[
+			["prex-triplex"],
+			["matutinum","nocturnae"]
+		]
+	},
+	{
+		"tags":["epiphania","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0106I",
+		"datum":"Christus appáruit nobis, * Veníte adorémus."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0106N1A1",
+		"datum":"Afférte Dómino * fílii Dei, adoráte Dóminum in aula sancta ejus."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xxviii,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0106N1A2",
+		"datum":"Flúminis ímpetus * lætíficat, allelúja, civitátem Dei, allelúja."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xlv,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0106N1A3",
+		"datum":"Psállite Deo nostro, * psállite: psállite Regi nostro, psállite sapiénter."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xlvi,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Omnis terra adóret te, et psallat tibi.","R. Psalmum dicat nómini tuo Dómine."]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Isaía Prophéta.",
+			"Omnes sitiéntes veníte ad aquas: et qui non habétis argéntum, properáte, émite, et comédite: veníte, émite absque argénto, et absque ulla commutatióne vinum et lac. Quare appénditis argéntum non in pánibus, et labórem vestrum non in saturitáte? Audíte audiéntes me, et comédite bonum, et delectábitur in crassitúdine ánima vestra. Inclináte aurem vestram, et veníte ad me: audíte, et vivet ánima vestra, et fériam vobíscum pactum sempitérnum, misericórdias David fidéles. Ecce testem pópulis dedi eum, ducem ac præceptórem Géntibus."
+		]
+	},
+	{
+		"tags":["epiphania","festum","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/0106N1R1",
+		"incipit":"Hódie in Jordáne baptizáto Dómino apérti sunt cœli, et sicut colúmba super eum Spíritus mansit, et vox Patris intónuit:",
+		"responsum":"Hic est Fílius meus diléctus, in quo mihi bene complácui.",
+		"versus":"Descéndit Spíritus sanctus corporáli spécie sicut colúmba in ipsum, et vox de cœlo facta est."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/0106N1R1b",
+		"incipit":"Tria sunt múnera pretiósa, quæ obtulérunt Magi Dómino in die ista, et habent in se divína mystéria:",
+		"responsum":"In auro, ut ostendátur Regis poténtia: in thure, Sacerdótem magnum consídera: et in myrrha, Domínicam sepultúram.",
+		"versus":"Salútis nostræ auctórem Magi veneráti sunt in cunábulis, et de thesaúris suis mýsticas ei múnerum spécies obtulérunt."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Surge, illumináre Jerúsalem: quia venit lumen tuum, et glória Dómini super te orta est. Quia ecce ténebræ opérient terram, et calígo pópulos: super te autem oriétur Dóminus, et glória ejus in te vidébitur. Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui. Leva in circúitu óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent. Tunc vidébis, et áfflues, mirábitur, et dilatábitur cor tuum, quando convérsa fúerit ad te multitúdo maris, fortitúdo Géntium vénerit tibi. Inundátio camelórum opériet te, dromedárii Mádian et Epha: omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/0106N1R2",
+		"incipit":"In colúmbæ spécie Spíritus sanctus visus est, Patérna vox audíta est:",
+		"responsum":"Hic est Fílius meus diléctus, in quo mihi bene complácui.",
+		"versus":"Cœli apérti sunt super eum, et vox Patris intónuit."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Gaudens gaudébo in Dómino, et exsultábit ánima mea in Deo meo: quia índuit me vestiméntis salútis: et induménto justítiæ circúmdedit me, quasi sponsum decorátum coróna, et quasi sponsam ornátam monílibus suis. Sicut enim terra profert germen suum, et sicut hortus semen suum gérminat, sic Dóminus Deus germinábit justítiam, et laudem coram univérsis Géntibus. Propter Sion non tacébo, et propter Jerúsalem non quiéscam, donec egrediátur ut splendor justus ejus, et salvátor ejus ut lampas accendátur."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/0106N1R3",
+		"incipit":"Reges Tharsis et ínsulæ múnera ófferent:",
+		"responsum":"Reges Árabum et Saba dona Dómino Deo addúcent.",
+		"versus":"Omnes de Saba vénient, aurum et thus deferéntes."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0106N2A1",
+		"datum":"Omnis terra adóret te, * et psallat tibi: psalmum dicat nómini tuo Dómine."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxv,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0106N2A2",
+		"datum":"Reges Tharsis * et ínsulæ múnera ófferent Regi Dómino."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxi,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0106N2A3",
+		"datum":"Omnes Gentes * quascúmque fecísti, vénient, et adorábunt coram te Dómine."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxxv,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"Gaudéte in Dómino, dilectíssimi, íterum dico, gaudéte: quóniam brevi intervállo témporis, post solemnitátem Nativitátis Christi, festívitas declaratiónis ejus illúxit: et quem in illo die Virgo péperit, in hoc mundus agnóvit. Verbum enim caro factum, sic susceptiónis nostræ temperávit exórdia, ut natus Jesus et credéntibus maniféstus, et persequéntibus esset occúltus. Jam tunc ergo cœli enarravérunt glóriam Dei, et in omnem terram sonus veritátis exívit, quando et pastóribus exércitus Angelórum Salvatóris éditi annuntiátor appáruit, et Magos ad eum adorándum prǽvia stella perdúxit: ut a solis ortu usque ad occásum veri Regis generátio coruscáret, cum rerum fidem et regna Oriéntis per Magos díscerent, et Románum impérium non latéret."
+		]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"nocturnale/0106N2R1",
+		"incipit":"Illumináre, illumináre Jerúsalem, quia venit lux tua:",
+		"responsum":"Et glória Dómini super te orta est.",
+		"versus":"Et ambulábunt Gentes in lúmine tuo, et reges in splendoŕe ortus tui."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Nam et sævítia Heródis volens primórdia suspécti sibi Regis exstínguere, huic dispensatióni nésciens serviébat: ut dum atróci inténtus facínori, ignótum sibi púerum indiscréta infántium cæde perséquitur, annuntiátum cœlitus dominatóris ortum insígnior ubíque fama loquerétur: quam promptiórem ad narrándum, diligentiorémque faciébat et supérnæ significatiónis nóvitas, et cruentíssimi persecutóris impíetas. Tunc autem étiam Ægýpto Salvátor illátus est, ut gens antíquis erróribus dédita, jam ad vicínam salútem per occúltam grátiam signarétur: et quæ nondum ejécerat ab ánimo superstitiónem, jam hospítio recíperet veritátem."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/0106N2R2",
+		"incipit":"Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes,",
+		"responsum":"Allelúja, allelúja, allelúja.",
+		"versus":"Reges Tharsis et ínsulæ múnera ófferent, reges Árabum et Saba dona addúcent."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Agnoscámus ergo, dilectíssimi, in Magis adoratóribus Christi, vocatiónis nostræ fideíque primítias: et exsultántibus ánimis beátæ spei inítia celebrémus. Exínde enim in ætérnam hæreditátem cœpimus introíre: exínde nobis Christum loquéntia Scripturárum arcána patuérunt, et véritas, quam Judæórum obcæcátio non récipit, ómnibus natiónibus lumen suum invéxit. Honorétur ítaque a nobis sacratíssimus dies, in quo salútis nostræ Auctor appáruit: et quem Magi infántem veneráti sunt in cunábulis, nos omnipoténtem adorémus in cœlis. Ac sicut illi de thesaúris suis mýsticas Dómino múnerum spécies obtulérunt, ita et nos de córdibus nostris, quæ Deo sunt digna, promámus."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/0106N2R3",
+		"incipit":"Magi véniunt ab Oriénte Jerosólymam, quæréntes, et dicéntes: Ubi est qui natus est, cujus stellam vídimus?",
+		"responsum":"Et vénimus adoráre Dóminum.",
+		"versus":"Vídimus stellam ejus in Oriénte."
+	},
+	{
+		"tags":["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0106N3A1",
+		"datum":"Veníte adorémus eum: * quia ipse est Dóminus Deus noster."
+	},
+	{
+		"tags":["epiphania","festum","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[
+			"Veníte, exsultémus Dómino: * jubilémus Deo salutári nostro:",
+			"Præoccupémus fáciem ejus in confessióne: * et in psalmis jubilémus ei.",
+			["antiphona","antiphona-i"],
+			"Quóniam Deus magnus Dóminus: * et Rex magnus super omnes deos.",
+			"Quia in manu ejus sunt omnes fines terræ: * et altitúdines móntium ipsíus sunt.",
+			["antiphona","antiphona-i"],
+			"Quóniam ipsíus est mare, et ipse fecit illud: * et siccam manus ejus formavérunt.",
+			["antiphona","antiphona-i"],
+			"Et nos pópulus páscuæ ejus, et oves manus ejus. * Hódie si vocem ejus audiéritis, nolíte obduráre corda vestra:",
+			"Sicut in irritatióne secúndum diem tentatiónis in desérto: * ubi tentavérunt me patres vestri, probavérunt me, et vidérunt ópera mea.",
+			["antiphona","antiphona-i"],
+			"Quadragínta annis offénsus fui generatióni illi, * et dixi: Semper hi errant corde.",
+			"Et isti non cognovérunt vias meas, ut jurávi in ira mea: * Si introíbunt in réquiem meam.",
+			["antiphona","antiphona-i"],
+			["/psalmi/gloria"]
+		]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Homo natus est * in ea, et ipse fundávit eam Altíssimus."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxxvi,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0106N3A2",
+		"datum":"Adoráte Dóminum, * allelúja: in aula sancta ejus, allelúja."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcv,gloria"]]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0106N3A3",
+		"datum":"Adoráte Deum, * allelúja: omnes Ángeli ejus, allelúja."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
+	},
+	{
+		"tags":[
+			["epiphania","matutinum","nocturna-iii","versiculus"],
+			["epiphania","sexta","versiculus"]
+		],
+		"datum":["V. Adoráte Dóminum, allelúja.","R. In aula sancta ejus, allelúja."]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"Cum natus esset Jesus in Béthlehem Juda in diébus Heródis regis, ecce Magi ab Oriénte venérunt Jerosólymam, dicéntes: Ubi est qui natus est Rex Judæórum? Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Sicut in lectióne evangélica, fratres caríssimi, audístis, cœli Rege nato, rex terræ turbátus est: quia nimírum terréna altitúdo confúnditur, cum celsitúdo cœléstis aperítur. Sed quæréndum nobis est, quidnam sit, quod, Redemptóre nato, pastóribus in Judǽa Ángelus appáruit, atque ad adorándum hunc ab Oriénte Magos non Ángelus, sed stella perdúxit? Quia vidélicet Judǽis, tamquam ratióne uténtibus, rationále ánimal, id est, Ángelus prædicáre débuit: Gentíles vero, quia uti ratióne nesciébant, ad cognoscéndum Dóminum non per vocem, sed per signa perducúntur. Unde étiam per Paulum dícitur: Prophetíæ fidélibus datæ sunt, non infidélibus: signa autem infidélibus, non fidélibus. Quia et illis prophetíæ tamquam fidélibus, non infidélibus: et istis signa tamquam infidélibus, non fidélibus data sunt."
+		]
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/0106N3R1",
+		"incipit":"Stella, quam víderant Magi in Oriénte, antecedébat eos, donec venírent ad locum, ubi puer erat.",
+		"responsum":"Vidéntes autem eam, gavísi sunt gaúdio magno.",
+		"versus":"Et intrántes domum, invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Et notándum, quod Redemptórem nostrum, cum jam perféctæ esset ætátis, eísdem Gentílibus Apóstoli prǽdicant, eúmque párvulum, et necdum per humáni córporis offícium loquéntem, stella Géntibus denúntiat: quia nimírum ratiónis ordo poscébat, ut et loquéntem jam Dóminum loquéntes nobis prædicatóres innotéscerent, et necdum loquéntem eleménta muta prædicárent. Sed in ómnibus signis, quæ vel nascénte Dómino, vel moriénte eo monstráta sunt, considerándum nobis est, quanta fúerit in quorúmdam Judæórum corde durítia, qui hunc nec per prophetíæ donum, nec per mirácula agnovérunt."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/0106N3R2",
+		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
+		"incipit":"Vidéntes stellam Magi, gavísi sunt gaúdio magno:",
+		"responsum-i":"Et intrántes domum invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum:",
+		"responsum-ii":"Et apértis thesaúris suis obtulérunt ei múnera, aurum, thus, et myrrham.",
+		"versus":"Stella, quam víderant Magi in Oriénte, antecedébat eos, usque dum véniens staret supra ubi erat puer."
+	},
+	{
+		"tags":["epiphania","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Ómnia quippe eleménta auctórem suum venísse testáta sunt. Ut enim de eis quiddam usu humáno loquar: Deum hunc cœli esse cognovérunt, quia prótinus stellam misérunt. Mare cognóvit, quia sub plantis ejus se calcábile prǽbuit. Terra cognóvit, quia eo moriénte contrémuit. Sol cognóvit, quia lucis suæ rádios abscóndit. Saxa et paríetes cognovérunt, quia témpore mortis ejus scissa sunt. Inférnus agnóvit, quia hos, quos tenébat mórtuos, réddidit. Et tamen hunc, quem Dóminum ómnia insensibília eleménta sensérunt, adhuc infidélium Judæórum corda Deum esse mínime cognóscunt, et durióra saxis, scindi ad pœniténdum nolunt."
+	},
+	{
+		"tags":["epiphania","laudes","hymnus"],
+		"src":"gregobase/2999",
+		"datum":[
+			"O sola magnárum úrbium/Major Bethlem, cui cóntigit/Ducem salútis cœlitus/Incorporátum gígnere.",
+			"Quem stella, quæ solis rotam/Vincit decóre, ac lúmine;/Venísse terris núntiat/Cum carne terréstri Deum.",
+			"Vidére postquam illum Magi,/Eóa promunt múnera:/Stratíque votis ófferunt/Thus, myrrham, et aurum régium.",
+			"Regem Deúmque annúntiant/Thesaúrus, et fragrans odor/Thuris Sabǽi, ac mýrrheus/Pulvis sepúlchrum prǽdocet.",
+			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["epiphania","laudes","versiculus"],
+			["epiphania","nona","versiculus"]
+		],
+		"datum":["V. Adoráte Deum, allelúja.","R. Omnes Ángeli ejus, allelúja."]
+	},
+	{
+		"tags":["epiphania","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2382",
+		"datum":"Hódie * cœlésti sponso juncta est Ecclésia, quóniam in Jordáne lavit Christus ejus crímina: currunt cum munéribus Magi ad regáles núptias, et ex aqua facto vino lætántur convívæ, allelúja."
+	},
+	{
+		"tags":["epiphania","tertia","responsorium-breve"],
+		"src":"gregobase/3083",
+		"incipit":"Reges Tharsis et ínsulæ múnera ófferent,",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Reges Árabum et Saba dona addúcent."
+	},
+	{
+		"tags":["epiphania","tertia","versiculus"],
+		"datum":["V. Omnes de Saba vénient, allelúja.","R. Aurum et thus deferéntes, allelúja."]
+	},
+	{
+		"tags":["epiphania","sexta","capitulum"],
+		"datum":"Leva in circúitu óculos tuos, et vide: + omnes isti congregáti sunt, venérunt tibi: * fílii tui de longe vénient, et fíliæ tuæ de látere surgent."
+	},
+	{
+		"tags":["epiphania","sexta","responsorium-breve"],
+		"src":"gregobase/3161",
+		"incipit":"Omnes de Saba vénient,",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Aurum et thus deferéntes."
+	},
+	{
+		"tags":["epiphania","nona","capitulum"],
+		"datum":"Omnes de Saba vénient, + aurum et thus deferéntes, * et laudem Dómino annuntiántes."
+	},
+	{
+		"tags":["epiphania","nona","responsorium-breve"],
+		"src":"gregobase/3206",
+		"incipit":"Adoráte Dóminum,",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"In aula sancta ejus."
+	},
+	{
+		"tags":["epiphania","ii-vesperae","psalmus-i"],
+		"reference":["dominica","vesperae","ii-vesperae","psalmus-i"]
+	},
+	{
+		"tags":["epiphania","ii-vesperae","psalmus-ii"],
+		"reference":["dominica","vesperae","ii-vesperae","psalmus-ii"]
+	},
+	{
+		"tags":["epiphania","ii-vesperae","psalmus-iii"],
+		"reference":["dominica","vesperae","ii-vesperae","psalmus-iii"]
+	},
+	{
+		"tags":["epiphania","ii-vesperae","psalmus-iv"],
+		"reference":["dominica","vesperae","ii-vesperae","psalmus-iv"]
+	},
+	{
+		"tags":["epiphania","ii-vesperae","psalmus-v"],
+		"reference":["dominica","vesperae","ii-vesperae","psalmus-v"]
+	},
+	{
+		"tags":["epiphania","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2199",
+		"datum":"Tribus miráculis * ornátum diem sanctum cólimus: hódie stella Magos duxit ad præsépium: hódie vinum ex aqua factum est ad núptias: hódie in Jordáne a Joánne Christus baptizári vóluit, ut salváret nos, allelúja."
+	}
+]
