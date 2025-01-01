@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["vigilia-epiphaniae","nomen"],
+		"datum":"In Vigilia Epiphaniæ Domini"
+	},
+	{
 		"tags":["vigilia-epiphaniae","i-vesperae","antiphona","antiphona-magnificat"],
 		"reference":[["antiphona","antiphona-magnificat"],["nativitas","dominica-infra-octavam","ii-vesperae"]]
 	},
@@ -10,13 +14,13 @@
 	{
 		"tags":["vigilia-epiphaniae","collecta"],
 		"terminatio":[["terminatio","qui-tecum-vivit"]],
-		"datum":"Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre."
+		"datum":"Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: + ut in nómine dilécti Fílii tui * mereámur bonis opéribus abundáre."
 	},
 	{
 		"tags":["vigilia-epiphaniae","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Epístola ad Romános.",
-			"An ignorántis fratres (sciéntibus enim legem loquor) quia lex in hómine dominátur quanto témpore vivit? Nam quæ sub viro est múlier, vivénte viro, alligáta est legi: si autem mórtuus fúerit vir ejus, solúta est a lege viri. Ígitur, vivénte viro, vocábitur adúltera si fúerit cum álio viro: si autem mórtuus fúerit vir ejus, liberáta est a lege viri: ut non sit adúltera si fúerit cum álio viro."
+			"An ignorátis fratres (sciéntibus enim legem loquor) quia lex in hómine dominátur quanto témpore vivit? Nam quæ sub viro est múlier, vivénte viro, alligáta est legi: si autem mórtuus fúerit vir ejus, solúta est a lege viri. Ígitur, vivénte viro, vocábitur adúltera si fúerit cum álio viro: si autem mórtuus fúerit vir ejus, liberáta est a lege viri: ut non sit adúltera si fúerit cum álio viro."
 		]
 	},
 	{
@@ -40,7 +44,7 @@
 	},
 	{
 		"tags":["vigilia-epiphaniae","matutinum","nocturna-ii","lectio","lectio-iii"],
-		"datum":"O mirácula, o prodígia, fratres mei! Natúræ jura mutántur in hómine; Deus náscitur, virgo sine viro grávidátur, viri nésciam sermo Dei marítat: simul facta est mater et virgo; mater facta, sed incorrúpta; virgo habens fílium, nésciens virum; semper clausa, sed non infœcúnda. Solus enim sine peccáto est natus, quem sine viríli compléxu non concupiscéntia carnis, sed obediéntia génuit mentis."
+		"datum":"O mirácula, o prodígia, fratres mei! Natúræ jura mutántur in hómine; Deus náscitur, virgo sine viro gravidátur, viri nésciam sermo Dei marítat: simul facta est mater et virgo; mater facta, sed incorrúpta; virgo habens fílium, nésciens virum; semper clausa, sed non infœcúnda. Solus enim sine peccáto est natus, quem sine viríli compléxu non concupiscéntia carnis, sed obediéntia génuit mentis."
 	},
 	{
 		"tags":["vigilia-epiphaniae","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -57,7 +61,7 @@
 	},
 	{
 		"tags":["vigilia-epiphaniae","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris pouísset exémplum, numquam díceret: Quod dictum est per Prophétas: sed simplíciter: Quod dictum est per Prophétam: nunc autem pluráliter Prophétas vocans, osténdit se non verba de Scriptúris sumpsísse, sed sensum. Nazarǽus sanctus interpretátur. Sanctum autem Dóminum futúrum omnis Scriptúra commémorat."
+		"datum":"Quóniam Nazarǽus vocábitur. Si fixum de Scriptúris posuísset exémplum, numquam díceret: Quod dictum est per Prophétas: sed simplíciter: Quod dictum est per Prophétam: nunc autem pluráliter Prophétas vocans, osténdit se non verba de Scriptúris sumpsísse, sed sensum. Nazarǽus sanctus interpretátur. Sanctum autem Dóminum futúrum omnis Scriptúra commémorat."
 	},
 	{
 		"tags":["vigilia-epiphaniae","capitulum"],
@@ -66,5 +70,17 @@
 	{
 		"tags":["vigilia-epiphaniae","laudes","antiphona","antiphona-benedictus"],
 		"reference":[["antiphona","antiphona-benedictus"],["nativitas","dominica-infra-octavam","laudes"]]
+	},
+	{
+		"tags":["vigilia-epiphaniae","prima","preces"],
+		"datum":""
+	},
+	{
+		"tags":["vigilia-epiphaniae","sexta","capitulum"],
+		"reference":[["capitulum"],["nativitas","sexta","dominica-infra-octavam"]]
+	},
+	{
+		"tags":["vigilia-epiphaniae","nona","capitulum"],
+		"reference":[["capitulum"],["nativitas","nona","dominica-infra-octavam"]]
 	}
 ]
