@@ -37,6 +37,14 @@
 		"response":"dele"
 	},
 	{
+		"include":["nativitas","infra-octavam","ii-vesperae"],
+		"recheck":false,
+		"response":[
+			{"include":["nativitas","infra-octavam","i-vesperae","primarium"],"response":"primarium","target":0},
+			{"include":["thomas-cantuariensis","ii-vesperae"],"response":"commemoratio","target":1}
+		]
+	},
+	{
 		"include":["infra-octavam","i-vesperae"],
 		"recheck":false,
 		"response":"dele"
