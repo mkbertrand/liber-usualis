@@ -8,7 +8,7 @@
 		"datum":[
 			["prex-duplex"],
 			["deus-in-adjutorium","festalis"],
-			{"from-tags":["vesperae","formula-psalmorum","formula"],"choose":["psalmi"]},
+			["vesperae","psalmi"],
 			["vesperae","capitulum"],
 			"R. Deo grátias.",
 			["vesperae","hymnus"],
@@ -16,7 +16,7 @@
 			["vesperae","magnificat","antiphona-prior"],
 			["/psalmi/magnificat,gloria"],
 			["vesperae","antiphona","antiphona-magnificat","repetita"],
-			["preces"],
+			["vesperae","preces"],
 			["collecta-primaria"],
 			["vesperae","commemorationes"],
 			["dominus-vobiscum"],
@@ -26,7 +26,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","formula-psalmorum","duplex","formula"],
+		"tags":["vesperae","psalmi","duplex"],
 		"datum":[
 			["vesperae","antiphona","antiphona-i"],
 			["vesperae","psalmus-i"],
@@ -46,7 +46,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","formula-psalmorum","formula"],
+		"tags":["vesperae","psalmi"],
 		"datum":[
 			["vesperae","antiphona","antiphona-i","intonata"],
 			["vesperae","psalmus-i"],

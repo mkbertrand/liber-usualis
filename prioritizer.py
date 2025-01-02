@@ -7,6 +7,7 @@ from datetime import date, datetime, timedelta
 import re
 from typing import NamedTuple
 import itertools
+import copy
 
 from kalendar import kalendar
 import kalendar.datamanage
@@ -34,104 +35,27 @@ def load_data(p: str):
 diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/diurnal-coincidence.json'))
 vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/vesperal-coincidence.json'))
 
-roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
-roletags = set(roletagsordered)
-
 class Job(NamedTuple):
 	rule: dict
 
-def getvespers(day):
-	assert type(day) is not datetime
-	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1))]
-	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
-	# Final product
-	vesperal = iivespers + ivespers
+def guaranteeset(item):
+	if type(item) is set or type(item) is frozenset:
+		return item
+	else:
+		return {item}
 
-	queue = [Job(rule) for rule in vesperalrules]
+def prioritize(day, rules):
+
+	queue = [Job(rule) for rule in rules]
 	queue.reverse()
-	ruleskip = [False] * len(vesperalrules)
+	ruleskip = [False] * len(rules)
 
 	def resolvejob(job):
 
 		if ruleskip[job.rule['number']]:
 			return
 		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
-		if not vesperalrules[job.rule['number'] - 1]['recheck']:
-			ruleskip[job.rule['number'] - 1] = True
-
-		tagsetindices = range(len(vesperal))
-		matchset = []
-		for restriction in job.rule['restrict']:
-			search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= vesperal[tagsetindex] and not (restriction.exclude and restriction.exclude <= vesperal[tagsetindex])]
-			if len(search) == 0:
-				return
-			else:
-				matchset.append(search)
-
-		matches = list(itertools.product(*matchset))
-
-		for match in matches:
-			if len(set(match)) == len(job.rule['restrict']):
-				if job.rule['response'] == 'combina':
-					vesperal[match[0]] |= vesperal[match[1]]
-					if len(vesperal[match[0]] & roletags) > 1:
-						for i in roletagsordered:
-							if i in vesperal[match[0]]:
-								vesperal[match[0]] -= roletags
-								vesperal[match[0]].add(i)
-								break
-					vesperal.pop(match[1])
-					# We will restart this job from scratch when we've iterated through the more specific jobs
-					queue.append(job)
-					queue.extend([Job(vesperalrules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-				elif job.rule['response'] == 'errora':
-					raise RuntimeError(f'Unexpected coincidence in {vesperal} involving {match}')
-				else:
-					target = match[job.rule['target']]
-					if job.rule['response'] == 'dele':
-						vesperal.pop(target)
-						queue.append(job)
-					elif type(job.rule['response']) is frozenset:
-						if job.rule['response'] <= vesperal[target]:
-							continue
-						if job.rule['response'] & roletags:
-							vesperal[target] -= roletags
-						vesperal[target] |= job.rule['response']
-						queue.append(job)
-						if not job.rule['continue']:
-							queue.extend([Job(vesperalrules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-					elif not type(job.rule['response']) is str:
-						raise RuntimeError(type(job.rule['response']))
-					else:
-						if job.rule['response'] in vesperal[target]:
-							continue
-						if job.rule['response'] in roletags:
-							vesperal[target] -= roletags
-						vesperal[target].add(job.rule['response'])
-						queue.append(job)
-						if not job.rule['continue']:
-							queue.extend([Job(vesperalrules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-				return
-
-	while len(queue) != 0:
-		resolvejob(queue.pop())
-
-	return vesperal
-
-def getdiurnal(day):
-	assert type(day) is not datetime
-	day = kalendar.datamanage.getdate(day)
-
-	queue = [Job(rule) for rule in diurnalrules]
-	queue.reverse()
-	ruleskip = [False] * len(diurnalrules)
-
-	def resolvejob(job):
-
-		if ruleskip[job.rule['number']]:
-			return
-		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
-		if not diurnalrules[job.rule['number'] - 1]['recheck']:
+		if not rules[job.rule['number'] - 1]['recheck']:
 			ruleskip[job.rule['number'] - 1] = True
 
 		tagsetindices = range(len(day))
@@ -147,18 +71,17 @@ def getdiurnal(day):
 
 		for match in matches:
 			if len(set(match)) == len(job.rule['restrict']):
+
+				# In instructions to add/switch around tags, the mutate response is assumed (as opposed to duplicate to make a modified copy of that tagset)
+				if not 'response' in job.rule:
+					job.rule['response'] = 'mutate'
+
 				if job.rule['response'] == 'combina':
 					day[match[0]] |= day[match[1]]
-					if len(day[match[0]] & roletags) > 1:
-						for i in roletagsordered:
-							if i in day[match[0]]:
-								day[match[0]] -= roletags
-								day[match[0]].add(i)
-								break
 					day.pop(match[1])
 					# We will restart this job from scratch when we've iterated through the more specific jobs
 					queue.append(job)
-					queue.extend([Job(diurnalrules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+					queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
 				elif job.rule['response'] == 'errora':
 					raise RuntimeError(f'Unexpected coincidence in {day} involving {match}')
 				else:
@@ -166,32 +89,41 @@ def getdiurnal(day):
 					if job.rule['response'] == 'dele':
 						day.pop(target)
 						queue.append(job)
-					elif type(job.rule['response']) is frozenset:
-						if job.rule['response'] <= day[target]:
-							continue
-						if job.rule['response'] & roletags:
-							day[target] -= roletags
-						day[target] |= job.rule['response']
-						queue.append(job)
-						if not job.rule['continue']:
-							queue.extend([Job(diurnalrules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-					elif not type(job.rule['response']) is str:
-						raise RuntimeError(type(job.rule['response']))
 					else:
-						if job.rule['response'] in day[target]:
-							continue
-						if job.rule['response'] in roletags:
-							day[target] -= roletags
-						day[target].add(job.rule['response'])
-						queue.append(job)
+						newset = copy.deepcopy(day[target])
+						if 'remove' in job.rule:
+							newset -= guaranteeset(job.rule['remove'])
+						if 'adde' in job.rule:
+							newset |= guaranteeset(job.rule['adde'])
+						if job.rule['response'] == 'duplicate':
+							if not newset in day:
+								day.append(newset)
+						elif job.rule['response'] == 'mutate':
+							day[target] = newset
+						else:
+							raise RuntimeError(f'Unknown instruction {job.rule})')
 						if not job.rule['continue']:
-							queue.extend([Job(diurnalrules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-				return
+							queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+				if job.rule['continue']:
+					return
 
 	while len(queue) != 0:
 		resolvejob(queue.pop())
 
 	return day
+
+def getvespers(day):
+	assert type(day) is not datetime
+	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1))]
+	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
+	# Final product
+	vesperal = iivespers + ivespers
+	return prioritize(vesperal, vesperalrules)
+
+def getdiurnal(day):
+	assert type(day) is not datetime
+	day = kalendar.datamanage.getdate(day)
+	return prioritize(day, diurnalrules)
 
 if __name__ == '__main__':
 	import argparse

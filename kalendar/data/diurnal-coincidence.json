@@ -5,5 +5,11 @@
 		"response":[
 			{"include":["feria"],"response":"combina","target":0}
 		]
+	},
+	{
+		"include":["simplex","primarium"],
+		"response":[
+			{"include":["feria","omissum"],"response":"duplicate","remove":"omissum","adde":["matutinum","psalmi"],"target":1}
+		]
 	}
 ]

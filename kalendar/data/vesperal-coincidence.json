@@ -7,7 +7,7 @@
 	{
 		"include":["simplex","primarium","ii-vesperae"],
 		"response":[
-			{"include":["feria","ii-vesperae"],"response":"primarium","target":1}
+			{"include":["feria","ii-vesperae"],"remove":["commemoratio","omissum"],"adde":"primarium","target":1}
 		]
 	},
 	{
@@ -40,8 +40,8 @@
 		"include":["nativitas","infra-octavam","ii-vesperae"],
 		"recheck":false,
 		"response":[
-			{"include":["nativitas","infra-octavam","i-vesperae","primarium"],"response":"primarium","target":0},
-			{"include":["thomas-cantuariensis","ii-vesperae"],"response":"commemoratio","target":1}
+			{"include":["nativitas","infra-octavam","i-vesperae","primarium"],"remove":"commemoratio","adde":"primarium","target":0},
+			{"include":["thomas-cantuariensis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
@@ -61,7 +61,8 @@
 	},
 	{
 		"include":["dominica","hebdomada-iv-adventus","commemoratio"],
-		"response":"primarium"
+		"remove":"commemoratio",
+		"adde":"primarium"
 	},
 	{
 		"include":["suffragium"],
@@ -84,55 +85,61 @@
 		"response":"dele"
 	},
 	{
-		"include":["nativitas","infra-octavam","ii-vesperae"],
+		"include":["nativitas","infra-octavam","ii-vesperae","primarium"],
 		"response":[
-			{"include":["duplex-ii-classis","primarium"],"response":["psalmi","duplex"],"target":0},
-			{"include":["duplex-majus","primarium"],"response":["psalmi","duplex"],"target":0},
-			{"include":["duplex-minus","primarium"],"response":["psalmi","duplex"],"target":0},
-			{"include":["ii-vesperae","primarium"],"response":"psalmi","target":0}
+			{"include":["duplex-minus","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae","duplex"],"target":0}
+		]
+	},
+	{
+		"include":["nativitas","infra-octavam","ii-vesperae","commemoratio"],
+		"response":[
+			{"include":["duplex-ii-classis","primarium"],"response":"duplicate","remove":"commemoratio","adde":["psalmi","vesperae","duplex"],"target":0},
+			{"include":["duplex-majus","primarium"],"response":"duplicate","remove":"commemoratio","adde":["psalmi","vesperae","duplex"],"target":0},
+			{"include":["duplex-minus","primarium"],"response":"duplicate","remove":"commemoratio","adde":["psalmi","vesperae","duplex"],"target":0},
+			{"include":["semiduplex","ii-vesperae","primarium"],"response":"duplicate","remove":"commemoratio","adde":["psalmi","vesperae"],"target":0}
 		]
 	},
 	{
 		"include":["thomas-cantuariensis","translatum","i-vesperae","primarium"],
 		"response":[
-			{"include":["nativitas","dominica-infra-octavam","ii-vesperae","primarium"],"response":"commemoratio","target":0}
+			{"include":["nativitas","dominica-infra-octavam","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["septem-dolores","primarium"],
 		"response":[
-			{"include":["benedictus","primarium"],"response":"commemoratio","target":0}
+			{"include":["benedictus","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["patrocinius-joseph","primarium"],
 		"response":[
-			{"include":["duplex-ii-classis","primarium"],"response":"commemoratio","target":0}
+			{"include":["duplex-ii-classis","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["apparitio-michaelis","primarium"],
 		"response":[
-			{"include":["joannes-portam-latinam","primarium"],"response":"commemoratio","target":1}
+			{"include":["joannes-portam-latinam","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["marcus","primarium"],
 		"response":[
-			{"include":["philippus-jacobus","primarium"],"response":"commemoratio","target":1}
+			{"include":["philippus-jacobus","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["inventio-crucis","primarium"],
 		"response":[
-			{"include":["philippus-jacobus","primarium"],"response":"commemoratio","target":1},
-			{"include":["marcus","primarium"],"response":"commemoratio","target":1}
+			{"include":["philippus-jacobus","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["marcus","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["duplex-i-classis","nativitas-joannis-baptistae","i-vesperae","primarium"],
 		"response":[
-			{"include":["duplex-i-classis","corpus-christi","ii-vesperae","primarium"],"response":"commemoratio","target":0}
+			{"include":["duplex-i-classis","corpus-christi","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
@@ -144,37 +151,37 @@
 	{
 		"include":["duplex-majus","cor-jesus","primarium"],
 		"response":[
-			{"include":["duplex-majus","primarium"],"response":"commemoratio","target":1}
+			{"include":["duplex-majus","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["visitatio","primarium"],
 		"response":[
-			{"include":["pretiosissimus-sanguis","primarium"],"response":"commemoratio","target":1}
+			{"include":["pretiosissimus-sanguis","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["i-vesperae","anna","primarium"],
 		"response":[
-			{"include":["ii-vesperae","jacobus","primarium"],"response":"commemoratio","target":0}
+			{"include":["ii-vesperae","jacobus","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["i-vesperae","maria-ad-nives","primarium"],
 		"response":[
-			{"include":["ii-vesperae","dominicus","primarium"],"response":"commemoratio","target":1}
+			{"include":["ii-vesperae","dominicus","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["i-vesperae","transfiguratio","primarium"],
 		"response":[
-			{"include":["ii-vesperae","maria-ad-nives","primarium"],"response":"commemoratio","target":1}
+			{"include":["ii-vesperae","maria-ad-nives","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["i-vesperae","anna","primarium"],
 		"response":[
-			{"include":["ii-vesperae","jacobus","primarium"],"response":"commemoratio","target":0}
+			{"include":["ii-vesperae","jacobus","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
@@ -184,50 +191,52 @@
 	{
 		"include":["i-vesperae","septem-dolores","primarium"],
 		"response":[
-			{"include":["ii-vesperae","exaltatio-crucis","primarium"],"response":"commemoratio","target":0}
+			{"include":["ii-vesperae","exaltatio-crucis","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["nomen-bmv","primarium"],
 		"response":[
-			{"include":["exaltatio-crucis","primarium"],"response":"commemoratio","target":0}
+			{"include":["exaltatio-crucis","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["rosarium-bmv","primarium"],
 		"response":[
-			{"include":["dedicatio-michaelis","primarium"],"response":"commemoratio","target":0}
+			{"include":["dedicatio-michaelis","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["franciscus","primarium"],
 		"response":[
-			{"include":["angeli-custodes","primarium"],"response":"commemoratio","target":1}
+			{"include":["angeli-custodes","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["i-vesperae","joannes-apostolus","dies-octava","primarium"],
 		"response":[
-			{"include":["ii-vesperae","stephanus","dies-octava","primarium"],"response":["commemoratio","psalmi"],"target":1}
+			{"include":["ii-vesperae","stephanus","dies-octava","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["ii-vesperae","stephanus","dies-octava","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["i-vesperae","joannes-apostolus","primarium"],
 		"response":[
-			{"include":["ii-vesperae","stephanus","primarium"],"response":"commemoratio","target":0}
+			{"include":["ii-vesperae","stephanus","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["i-vesperae","innocentes","dies-octava","primarium"],
 		"response":[
-			{"include":["ii-vesperae","joannes-apostolus","dies-octava","primarium"],"response":["commemoratio","psalmi"],"target":1}
+			{"include":["ii-vesperae","joannes-apostolus","dies-octava","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["ii-vesperae","joannes-apostolus","dies-octava","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 
 	{
 		"include":["i-vesperae","innocentes","primarium"],
 		"response":[
-			{"include":["ii-vesperae","joannes-apostolus","primarium"],"response":"commemoratio","target":0}
+			{"include":["ii-vesperae","joannes-apostolus","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
@@ -240,17 +249,17 @@
 	{
 		"include":["primarium"],
 		"response":[
-			{"include":["feria-iv","cinerum"],"response":"commemoratio","target":0}
+			{"include":["feria-iv","cinerum"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["duplex-i-classis","i-vesperae"],
 		"response":[
-			{"include":["duplex-ii-classis","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["duplex-majus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","adventus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
@@ -264,11 +273,11 @@
 	{
 		"include":["sollemnitas-localis","i-vesperae"],
 		"response":[
-			{"include":["duplex-ii-classis","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["duplex-majus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
@@ -281,12 +290,12 @@
 	{
 		"include":["duplex-ii-classis","i-vesperae"],
 		"response":[
-			{"include":["sollemnitas-localis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-majus","ii-vesperae"],"response":"commemoratio","target":1},
-			{"include":["duplex-minus","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["sollemnitas-localis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-majus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["duplex-minus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["semiduplex","ii-vesperae"],"exclude":["tempus-nativitatis"],"response":"dele","target":1},
-			{"include":["duplex-i-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["duplex-i-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
@@ -297,48 +306,51 @@
 		]
 	},
 	{
-		"include":["duplex-majus","i-vesperae"],
+		"include":["duplex-majus","i-vesperae","primarium"],
 		"response":[
-			{"include":["duplex-minus","ii-vesperae"],"response":"commemoratio","target":1},
-			{"include":["semiduplex","ii-vesperae"],"response":"commemoratio","target":1},
-			{"include":["duplex-i-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-ii-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["duplex-minus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["semiduplex","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["duplex-i-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-ii-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["feria-major","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
 	{
 		"include":["duplex-minus","primarium","i-vesperae"],
 		"response":[
-			{"include":["duplex-minus","ii-vesperae"],"response":["commemoratio","psalmi"],"target":1},
-			{"include":["semiduplex","ii-vesperae"],"response":"commemoratio","target":1},
-			{"include":["duplex-i-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-ii-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-majus","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["duplex-minus","ii-vesperae","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["duplex-minus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["semiduplex","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["duplex-i-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
 	{
 		"include":["dominica","semiduplex","i-vesperae"],
 		"response":[
-			{"include":["semiduplex","ii-vesperae"],"response":["commemoratio","psalmi"],"target":1},
-			{"include":["duplex-i-classis","primarium","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-ii-classis","primarium","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-majus","primarium","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-minus","primarium","ii-vesperae"],"response":"commemoratio","target":0},
+			{"include":["semiduplex","ii-vesperae"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["semiduplex","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["duplex-i-classis","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-ii-classis","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-majus","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-minus","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["feria","ii-vesperae"],"response":"dele","target":1}
 		]
 	},
 	{
 		"include":["semiduplex","primarium","i-vesperae"],
 		"response":[
-			{"include":["semiduplex","ii-vesperae"],"response":["commemoratio","psalmi"],"target":1},
-			{"include":["duplex-i-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-ii-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-majus","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-minus","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":1},
+			{"include":["semiduplex","ii-vesperae","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["semiduplex","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["duplex-i-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-minus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
@@ -346,7 +358,7 @@
 		"include":["bmv-sabbatum","i-vesperae"],
 		"response":[
 			{"include":["infra-octavam","ii-vesperae"],"response":"dele","target":0},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":0},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-ii-classis","ii-vesperae"],"response":"dele","target":0},
 			{"include":["duplex-majus","ii-vesperae"],"response":"dele","target":0},
 			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":0},
@@ -358,29 +370,32 @@
 		"response":[
 			{"include":["duplex-i-classis","ii-vesperae"],"response":"dele","target":0},
 			{"include":["sollemnitas-localis","ii-vesperae"],"response":"dele","target":0},
-			{"include":["duplex-ii-classis","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-majus","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["duplex-minus","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["semiduplex","ii-vesperae"],"response":"commemoratio","target":0},
-			{"include":["feria-major","ii-vesperae"],"response":"commemoratio","target":0}
+			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-minus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["semiduplex","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
 		"include":["simplex","i-vesperae","primarium"],
 		"response":[
-			{"include":["feria","ii-vesperae"],"response":["commemoratio","psalmi"],"target":1}
+			{"include":["feria","ii-vesperae"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["feria","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
 		"include":["circumcisio","i-vesperae"],
+		"continue":false,
 		"response":[
-			{"include":["commemoratio"],"response":"omissum","target":1}
+			{"include":["commemoratio"],"remove":"commemoratio","adde":"omissum","target":1}
 		]
 	},
 	{
 		"include":["circumcisio","ii-vesperae"],
+		"continue":false,
 		"response":[
-			{"include":["commemoratio","semiduplex"],"response":"omissum","target":1}
+			{"include":["commemoratio","semiduplex"],"remove":"commemoratio","adde":"omissum","target":1}
 		]
 	}
 ]

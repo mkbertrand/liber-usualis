@@ -32,10 +32,6 @@
 		"implies":["commemoratio"]
 	},
 	{
-		"tags":["psalmi"],
-		"implies":["commemoratio"]
-	},
-	{
 		"tags":["confessor-pontifex"],
 		"implies":["confessor"]
 	},

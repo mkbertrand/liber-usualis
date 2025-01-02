@@ -286,35 +286,7 @@
 	{
 		"tags":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"],
 		"datum":[
-			{
-				"tags":["matutinum","psalmodia"],
-				"datum":[
-					["matutinum","antiphona","antiphona-i","intonata"],
-					["matutinum","psalmus-i"],
-					["matutinum","psalmus-ii"],
-					["matutinum","antiphona","antiphona-i","repetita"],
-					["matutinum","antiphona","antiphona-ii","intonata"],
-					["matutinum","psalmus-iii"],
-					["matutinum","psalmus-iv"],
-					["matutinum","antiphona","antiphona-ii","repetita"],
-					["matutinum","antiphona","antiphona-iii","intonata"],
-					["matutinum","psalmus-v"],
-					["matutinum","psalmus-vi"],
-					["matutinum","antiphona","antiphona-iii","repetita"],
-					["matutinum","antiphona","antiphona-iv","intonata"],
-					["matutinum","psalmus-vii"],
-					["matutinum","psalmus-viii"],
-					["matutinum","antiphona","antiphona-iv","repetita"],
-					["matutinum","antiphona","antiphona-v","intonata"],
-					["matutinum","psalmus-ix"],
-					["matutinum","psalmus-x"],
-					["matutinum","antiphona","antiphona-v","repetita"],
-					["matutinum","antiphona","antiphona-vi","intonata"],
-					["matutinum","psalmus-xi"],
-					["matutinum","psalmus-xii"],
-					["matutinum","antiphona","antiphona-vi","repetita"]
-				]
-			},
+			["matutinum","psalmi"],
 			["matutinum","versiculus"],
 			"Pater noster.",
 			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
@@ -352,7 +324,6 @@
 			["lectiones"]
 		]
 	},
-
 	{
 		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
 		"datum":[
@@ -378,6 +349,35 @@
 			["absolutio"],
 			"R. Amen.",
 			["lectiones"]
+		]
+	},
+	{
+		"tags":["matutinum","psalmi","feria"],
+		"datum":[
+			["matutinum","antiphona","antiphona-i","intonata"],
+			["matutinum","psalmus-i"],
+			["matutinum","psalmus-ii"],
+			["matutinum","antiphona","antiphona-i","repetita"],
+			["matutinum","antiphona","antiphona-ii","intonata"],
+			["matutinum","psalmus-iii"],
+			["matutinum","psalmus-iv"],
+			["matutinum","antiphona","antiphona-ii","repetita"],
+			["matutinum","antiphona","antiphona-iii","intonata"],
+			["matutinum","psalmus-v"],
+			["matutinum","psalmus-vi"],
+			["matutinum","antiphona","antiphona-iii","repetita"],
+			["matutinum","antiphona","antiphona-iv","intonata"],
+			["matutinum","psalmus-vii"],
+			["matutinum","psalmus-viii"],
+			["matutinum","antiphona","antiphona-iv","repetita"],
+			["matutinum","antiphona","antiphona-v","intonata"],
+			["matutinum","psalmus-ix"],
+			["matutinum","psalmus-x"],
+			["matutinum","antiphona","antiphona-v","repetita"],
+			["matutinum","antiphona","antiphona-vi","intonata"],
+			["matutinum","psalmus-xi"],
+			["matutinum","psalmus-xii"],
+			["matutinum","antiphona","antiphona-vi","repetita"]
 		]
 	},
 	{

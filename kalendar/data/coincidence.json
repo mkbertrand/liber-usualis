@@ -247,8 +247,8 @@
 		"include":["vigilia-nativitatis"],
 		"recheck":false,
 		"response":[
-			{"include":["dominica","primarium"],"response":["commemoratio","matutinum"],"target":1},
-			{"include":["feria","primarium"],"response":["commemoratio","psalmi"],"target":1}
+			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
+			{"include":["feria","primarium"],"response":"commemoratio","target":1}
 		]
 	},
 	{

@@ -17,6 +17,8 @@ def flatten(table):
 		if not 'continue' in i:
 			i['continue'] = True
 		i['restrict'] = [Restriction(i['include'], i['exclude'])]
+		if not 'response' in i:
+			i['response'] = 'mutate'
 		if type(i['response']) is str:
 			i['target'] = 0
 			i['number'] = rulenumber

@@ -39,6 +39,8 @@ def dump_data(j):
 
 implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
 propria = datamanage.load_data('data/breviarium-1888/propria.json')
+# List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
+data = datamanage.load_data('data/breviarium-1888/data.json')
 
 def prettyprint(j):
 	def recurse(obj):
@@ -140,7 +142,16 @@ def process(root, item, selected, alternates, pile):
 
 		# None can sometimes be the result of a search and is expected, but indicates an absent item
 		if type(item) is set or type(item) is frozenset:
-			result = search(root, item | selected, pile)
+			result = None
+			for i in range(len(alternates)):
+				if item <= alternates[i]:
+					result = search(root, item | alternates[i], pile)
+					alternates = copy.deepcopy(alternates)
+					alternates.append(selected)
+					selected = alternates.pop(i) - data
+					break
+			if result is None:
+				result = search(root, item | selected, pile)
 			if result is None:
 				return str(list(item | selected))
 			else:
@@ -148,7 +159,7 @@ def process(root, item, selected, alternates, pile):
 
 		if 'choose' in item:
 			if any([item['choose'].issubset(i) for i in alternates]):
-				for i in range(0, len(alternates)):
+				for i in range(len(alternates)):
 					if item['choose'].issubset(alternates[i]):
 						alternates = copy.deepcopy(alternates)
 						alternates.append(selected)
