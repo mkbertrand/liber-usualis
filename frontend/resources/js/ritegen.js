@@ -97,6 +97,8 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				verse = data['datum'][4]['datum'];
 				gloria = data['datum'].length == 9 ? data['datum'][6] : null;
 				data = {src: data['datum'][0]['src'], tags: data['tags'], datum: `R. br. ${incipit} * ${response}/R. ${incipit} * ${response}/V. ${verse}/R. ${response} ${gloria == null ? '' : '/V. ' + gloria}/R. ${incipit} * ${response}`};
+			} else if (data['tags'].includes('hymnus') && data['tags'].includes('te-deum') && !options['chant']) {
+				return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data['datum'].join('/'))}</p>`;
 			}
 		}
 	} catch(err) {
