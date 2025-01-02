@@ -47,35 +47,50 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				if (typeof data['datum'][1] === 'object')
 					nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
 				return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
+			} else if (data['tags'].includes('epiphania') && data['tags'].includes('nocturna-iii') && data['tags'].includes('psalmus-i')) {
+				antiphon = renderinner(data['datum'][2], null, null, parenttags, options);
+				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
+			} else if (data['tags'].includes('lectio')) {
+				// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
+				if (Array.isArray(data['datum']) && data['datum'].length == 4) {
+					return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][2])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
+				} else if (!data['tags'].includes('lectio-i')) {
+					data['tags'].push('lectio-sequens');
+				} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
+					return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
+				} else {
+					return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`	
+				}
 			} else if (data['tags'].includes('responsorium') && data['tags'].includes('hebdomada-i-adventus') && data['tags'].includes('dominica') && data['tags'].includes('nocturna-i') && data['tags'].includes('responsorium-i')) {
-				incipit = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('incipit'))[0];
+				incipit = data['datum'][0];
 				src = incipit['src'];
 				incipit = incipit['datum'];
-				responsei = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-i'))[0]['datum'];
-				versei = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus-i'))[0]['datum'];
-				responseii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-ii'))[0]['datum'];
-				verseii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus-ii'))[0]['datum'];
-				responseiii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-iii'))[0]['datum'];
-				verseiii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus-iii'))[0]['datum'];
-				gloria = data['datum'].filter((item) => typeof item === 'string')[0];
+				responsei = data['datum'][1]['datum'];
+				versei = data['datum'][4]['datum'];
+				responseii = data['datum'][2]['datum'];
+				verseii = data['datum'][6]['datum'];
+				responseiii = data['datum'][3]['datum'];
+				verseiii = data['datum'][8]['datum'];
+				gloria = data['datum'][10];
 				data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii} * ${responseiii}/V. ${versei}/R. ${responsei}/V. ${verseii}/R. ${responseii}/V. ${verseiii}/R. ${responseiii}/V. ${gloria}/R. ${responsei} * ${responseii} * ${responseiii}`}
 
-			} else if (data['tags'].includes('responsorium') && data['tags'].includes('formula') && typeof data['datum'][0] === 'object') {
-				incipit = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('incipit'))[0];
+			} else if (data['tags'].includes('duplex-responsum') && data['tags'].includes('formula') && typeof data['datum'][0] === 'object') {
+				incipit = data['datum'][0];
 				src = incipit['src'];
 				incipit = incipit['datum'];
-				response = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum'))[0];
-				verse = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('versus'))[0]['datum'];
-				gloria = data['datum'].filter((item) => typeof item === 'string')[0];
-				if (response == undefined) {
-					responsei = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-i'))[0]['datum'];
-					responseii = data['datum'].filter((item) => typeof item === 'object' && item['tags'].includes('responsum-ii'))[0]['datum'];
-					data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii}/V. ${verse}/R. ${responsei}/V. ${gloria}/R. ${responseii}`}
-				} else {
-					response = response['datum'];
-					data = {src: src, tags: data['tags'], datum: gloria == undefined ? `R. ${incipit} * ${response}/V. ${verse}/R. ${response}` : `R. ${incipit} * ${response}/V. ${verse}/R. ${response}/V. ${gloria}/R. ${response}`}
-				}
-
+				responsei = data['datum'][1]['datum'];
+				responseii = data['datum'][2]['datum'];
+				verse = data['datum'][3]['datum'];
+				gloria = data['datum'][5];
+				data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii}/V. ${verse}/R. ${responsei}/V. ${gloria}/R. ${responseii}`}
+			} else if (data['tags'].includes('responsorium') && data['tags'].includes('formula') && typeof data['datum'][0] === 'object') {
+				incipit = data['datum'][0];
+				src = incipit['src'];
+				incipit = incipit['datum'];
+				response = data['datum'][1]['datum'];
+				verse = data['datum'][2]['datum'];
+				gloria = data['tags'].includes('gloria') ? data['datum'][4] : null;
+				data = {src: src, tags: data['tags'], datum: gloria == null ? `R. ${incipit} * ${response}/V. ${verse}/R. ${response}` : `R. ${incipit} * ${response}/V. ${verse}/R. ${response}/V. ${gloria}/R. ${response}`}
 			} else if (data['tags'].includes('responsorium-breve')) {
 				incipit = data['datum'][0]['datum'];
 				response = data['datum'][1]['datum'];
@@ -103,24 +118,12 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			data['datum'] = data['datum'].replace(/^\d+\s/, '');
 			data['tags'].push('psalmus');
 		}
-		if ('tags' in data && data['tags'].includes('lectio')) {
-			// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
-			if (Array.isArray(data['datum']) && data['datum'].length == 4) {
-				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][2])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
-			} else if (!data['tags'].includes('lectio-i')) {
-				data['tags'].push('lectio-sequens');
-			} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
-				return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
-			} else {
-				return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`	
-			}
-		}
 
 		if ('tags' in data && data['tags'].join(' ').includes('canticum')) { data['tags'].push('canticum'); }
 		return '<div class="rite-item' + ('tags' in data ? ' ' + data['tags'].join(' ') : '') + '">' + renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options) + '</div>';
 
 	} else if (typeof data === 'string') {
-		return '<p class="rite-text ' + parenttags.join(' ') + '">' + stringrender(data) + '</p><p class="rite-text-translation">' + (translated != null && typeof translated === 'string' ? stringrender(translated) : '') + '</p>';
+		return `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p><p class="rite-text-translation">${translated != null && typeof translated === 'string' ? stringrender(translated) : ''}</p>`
 	} else {
 		return 'error';
 	}
