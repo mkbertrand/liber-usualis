@@ -40,6 +40,7 @@ implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.j
 
 # List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
 objects = datamanage.load_data('data/breviarium-1888/categoriae/objecta.json')
+divisiones = datamanage.load_data('data/breviarium-1888/categoriae/divisiones.json')
 propria = datamanage.load_data('data/breviarium-1888/propria.json')
 
 def prettyprint(j):
@@ -74,8 +75,8 @@ def anysearch(query, pile):
 			for j in i['tags']:
 				if j.issubset(query):
 					ret = copy.deepcopy(i)
-					ret['tags'] = j
-					yield copy.deepcopy(ret)
+					ret['tags'] = copy.deepcopy(j)
+					yield ret
 		elif i['tags'].issubset(query):
 			yield copy.deepcopy(i)
 
@@ -97,7 +98,7 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
 	for i in query:
 		if '/' in i:
 			try:
-				return {'tags': [i], 'datum':psalms.get(root + rootappendix, i)}
+				return {'tags': {i}, 'datum':psalms.get(root + rootappendix, i)}
 			except FileNotFoundError:
 				return None
 
@@ -129,7 +130,7 @@ def handlecommemorations(root, item, selected, alternates):
 			ret.append(process(root, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
 		return ret
 
-def process(root, item, selected, alternates, pile, applyformula=None):
+def process(root, item, selected, alternates, pile):
 	try:
 		if item is None:
 			return 'Absens'
@@ -149,25 +150,16 @@ def process(root, item, selected, alternates, pile, applyformula=None):
 
 		if 'reference' in item:
 			alternates.append(selected)
-			if type(item['reference']) is list:
-				item['from-tags'] = item['reference'][0]
-				item['reference'] = item['reference'][1]
 			# Just in case an item needs to change depending on whether it is a reference
 			selected = item['reference'] | {'referens'}
-			pile = datamanage.getpile(root, defaultpile | item['reference'])
-			response = process(root, search(root, selected | item['from-tags'] if 'from-tags' in item else selected, pile), selected, alternates, pile)
+			pile = datamanage.getpile(root, defaultpile | selected)
+			response = process(root, search(root, selected, pile), selected - objects, alternates, pile)
 			return response
 
-		if 'with' in item:
-			selected |= set(item['with'])
-
 		if 'from-tags' in item:
-			if applyformula:
-				item['from-tags'] |= applyformula
-
 			result = None
 			for i in range(len(alternates)):
-				if item['from-tags'] <= alternates[i]:
+				if item['from-tags'] | (selected & divisiones) <= alternates[i]:
 					result = search(root, item['from-tags'] | alternates[i], pile)
 					alternates = copy.deepcopy(alternates)
 					alternates.append(selected)
@@ -177,11 +169,7 @@ def process(root, item, selected, alternates, pile, applyformula=None):
 				result = search(root, item['from-tags'] | selected, pile)
 			if result is None:
 				return str(list(item['from-tags'] | selected))
-			elif 'formula' in result['tags']:
-				applyformula = item['from-tags'] - objects
-			else:
-				applyformula = None
-			response = process(root, result, selected, alternates, pile, applyformula)
+			response = process(root, result, selected | (item['from-tags'] - result['tags'] - objects), alternates, pile)
 
 			if 'tags' in item:
 				response = {'tags': item['tags'], 'datum': response}
@@ -193,7 +181,7 @@ def process(root, item, selected, alternates, pile, applyformula=None):
 				if type(i) is str:
 					ret.append(i)
 				else:
-					iprocessed = process(root, i, selected, alternates, pile, applyformula)
+					iprocessed = process(root, i, selected, alternates, pile)
 					if iprocessed is None:
 						ret.append('Absens')
 					elif type(iprocessed) is list:

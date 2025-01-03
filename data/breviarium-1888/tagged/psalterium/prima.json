@@ -12,12 +12,12 @@
 			["prima","antiphona","antiphona-i","intonata"],
 			["prima","psalmodia"],
 			["prima","antiphona","antiphona-i","repetita"],
-			["ordinarium","prima","capitulum"],
+			["prima","capitulum"],
 			"R. Deo grátias.",
 			["formula","responsorium-breve"],
 			["prima","versiculus"],
 			["prima","preces"],
-			{"from-tags":["collecta-primaria"],"with":["ordinarium"]},
+			["collecta-primaria"],
 			{
 				"from-tags":["dominus-vobiscum","ferialis-a"],
 				"tags":["prima","dominus-vobiscum"]
@@ -55,7 +55,10 @@
 		]
 	},
 	{
-		"tags":["prima","semiduplex","hymnus"],
+		"tags":[
+			["prima","duplex-minus","hymnus"],
+			["prima","semiduplex","hymnus"]
+		],
 		"src":"gregobase/12589",
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
@@ -88,7 +91,7 @@
 		]
 	},
 	{
-		"tags":["ordinarium","prima","capitulum"],
+		"tags":["prima","capitulum"],
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
@@ -223,7 +226,7 @@
 		]
 	},
 	{
-		"tags":["ordinarium","prima","collecta"],
+		"tags":["prima","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: + tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, * dirigántur cogitatiónes et ópera."
 	},

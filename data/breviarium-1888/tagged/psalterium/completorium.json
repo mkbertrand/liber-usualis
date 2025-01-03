@@ -19,7 +19,7 @@
 			["/psalmi/psalmus-cxxxiii,gloria"],
 			["completorium","antiphona","repetita"],
 			["completorium","hymnus"],
-			["completorium","ordinarium","capitulum"],
+			["completorium","capitulum"],
 			"R. Deo grátias.",
 			["formula","responsorium-breve"],
 			["completorium","versiculus"],
@@ -62,7 +62,10 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["completorium","semiduplex","hymnus"],
+		"tags":[
+			["completorium","duplex-minus","hymnus"],
+			["completorium","semiduplex","hymnus"]
+		],
 		"src":"gregobase/1843",
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
@@ -71,7 +74,7 @@
 		]
 	},
 	{
-		"tags":["completorium","ordinarium","capitulum"],
+		"tags":["completorium","capitulum"],
 		"datum":"Tu autem in nobis es Dómine, + et nomen sanctum tuum invocátum est super nos, * ne derelínquas nos Dómine Deus noster."
 	},
 	{

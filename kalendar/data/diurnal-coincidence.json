@@ -16,21 +16,10 @@
 		"include":["vigilia-nativitatis","primarium"],
 		"response":[
 			{"include":["hebdomada-iv-adventus"],"response":"duplicate","remove":"commemoratio","adde":["hora","matutinum"],"target":1},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","lectiones"],"target":0},
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","versiculus"],"target":0},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectio","lectio-i"],"target":0},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","responsorium","responsorium-i","formula"],"target":0},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectio","lectio-ii"],"target":0},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","responsorium","responsorium-ii","formula"],"target":0},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectio","lectio-iii"],"target":0},
-			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","responsorium","responsorium-iii","formula","gloria"],"target":0},
+			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectiones"],"target":0},
 			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","versiculus"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","lectio","lectio-i"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","responsorium","responsorium-i","formula"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","lectio","lectio-ii"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","responsorium","responsorium-ii","formula"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","lectio","lectio-iii"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","responsorium","responsorium-iii","formula","gloria"],"target":0}
+			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectiones"],"target":0}
 		]
 	},
 	{

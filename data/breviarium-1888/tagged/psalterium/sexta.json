@@ -20,17 +20,17 @@
 			["sexta","versiculus"],
 			["preces"],
 			["collecta-primaria"],
-			{
-				"tags":["sexta","dominus-vobiscum"],
-				"from-tags":["dominus-vobiscum","ferialis-a"]
-			},
+			["dominus-vobiscum","ferialis-a"],
 			["benedicamus-domino","hora-minor"],
 			["fidelium-animae"],
 			["pater-noster-secreta"]
 		]
 	},
 	{
-		"tags":["sexta","semiduplex","hymnus"],
+		"tags":[
+			["sexta","duplex-minus","hymnus"],
+			["sexta","semiduplex","hymnus"]
+		],
 		"src":"gregobase/12355",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

@@ -20,17 +20,17 @@
 			["tertia","versiculus"],
 			["preces"],
 			["collecta-primaria"],
-			{
-				"from-tags":["dominus-vobiscum","ferialis-a"],
-				"tags":["tertia","dominus-vobiscum"]
-			},
+			["dominus-vobiscum","ferialis-a"],
 			["benedicamus-domino","hora-minor"],
 			["fidelium-animae"],
 			["pater-noster-secreta"]
 		]
 	},
 	{
-		"tags":["tertia","semiduplex","hymnus"],
+		"tags":[
+			["tertia","duplex-minus","hymnus"],
+			["tertia","semiduplex","hymnus"]
+		],
 		"src":"gregobase/12527",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",

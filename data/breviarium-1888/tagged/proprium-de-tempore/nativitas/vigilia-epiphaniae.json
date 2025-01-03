@@ -5,7 +5,7 @@
 	},
 	{
 		"tags":["vigilia-epiphaniae","i-vesperae","antiphona","antiphona-magnificat"],
-		"reference":[["antiphona","antiphona-magnificat"],["nativitas","dominica-infra-octavam","ii-vesperae"]]
+		"reference":["antiphona","antiphona-magnificat","nativitas","dominica-infra-octavam","ii-vesperae"]
 	},
 	{
 		"tags":["vigilia-epiphaniae","i-vesperae","versiculus"],
@@ -65,11 +65,11 @@
 	},
 	{
 		"tags":["vigilia-epiphaniae","capitulum"],
-		"reference":[["capitulum"],["nativitas","dominica-infra-octavam"]]
+		"reference":["capitulum","nativitas","dominica-infra-octavam"]
 	},
 	{
 		"tags":["vigilia-epiphaniae","laudes","antiphona","antiphona-benedictus"],
-		"reference":[["antiphona","antiphona-benedictus"],["nativitas","dominica-infra-octavam","laudes"]]
+		"reference":["antiphona","antiphona-benedictus","nativitas","dominica-infra-octavam","laudes"]
 	},
 	{
 		"tags":["vigilia-epiphaniae","prima","preces"],
@@ -77,10 +77,10 @@
 	},
 	{
 		"tags":["vigilia-epiphaniae","sexta","capitulum"],
-		"reference":[["capitulum"],["nativitas","sexta","dominica-infra-octavam"]]
+		"reference":["capitulum","nativitas","sexta","dominica-infra-octavam"]
 	},
 	{
 		"tags":["vigilia-epiphaniae","nona","capitulum"],
-		"reference":[["capitulum"],["nativitas","nona","dominica-infra-octavam"]]
+		"reference":["capitulum","nativitas","nona","dominica-infra-octavam"]
 	}
 ]

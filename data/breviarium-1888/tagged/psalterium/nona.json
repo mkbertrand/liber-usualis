@@ -20,17 +20,17 @@
 			["nona","versiculus"],
 			["preces"],
 			["collecta-primaria"],
-			{
-				"from-tags":["dominus-vobiscum","ferialis-a"],
-				"tags":["nona","dominus-vobiscum"]
-			},
+			["dominus-vobiscum","ferialis-a"],
 			["benedicamus-domino","hora-minor"],
 			["fidelium-animae"],
 			["pater-noster-secreta"]
 		]
 	},
 	{
-		"tags":["nona","semiduplex","hymnus"],
+		"tags":[
+			["nona","duplex-minus","hymnus"],
+			["nona","semiduplex","hymnus"]
+		],
 		"src":"gregobase/12799",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
