@@ -141,9 +141,20 @@ if __name__ == '__main__':
 		help='Date to generate',
 	)
 
+	parser.add_argument(
+		'-t',
+		'--time',
+		type=str,
+		default='vesperale',
+		help='Whether to generate vesperale or diurnale'
+	)
+
 	args = parser.parse_args()
 
 	# Generate kalendar
-	ret = getvespers(datetime.strptime(args.date, '%Y-%m-%d').date())
-
-	print(ret)
+	if args.time == 'vesperale':
+		print(getvespers(datetime.strptime(args.date, '%Y-%m-%d').date()))
+	elif args.time == 'diurnale':
+		print(getdiurnal(datetime.strptime(args.date, '%Y-%m-%d').date()))
+	else:
+		print('Invalid option for -t')
