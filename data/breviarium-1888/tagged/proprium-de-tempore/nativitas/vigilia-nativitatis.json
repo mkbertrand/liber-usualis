@@ -12,46 +12,40 @@
 		"forwards-to":["adventus","matutinum","hymnus"]
 	},
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-i","versiculus"],
+		"tags":["vigilia-nativitatis","matutinum","versiculus"],
 		"datum":["V. Hódie sciétis, quia véniet Dóminus.","R. Et mane vidébitis glóriam ejus."]
 	},
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-i","lectio","lectio-i"],
+		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
 			"Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Et réliqua.",
 			"Homilía sancti Hierónymi Presbýteri.",
-			"Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartum áddidit causam, cur a desponsáta concéptus sit: Ut partus, íniquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxòre generátum."
+			"Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartam áddidit causam, cur a desponsáta concéptus sit: Ut partus, ínquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxòre generátum."
 		]
 	},
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-i"],
 		"incipit":"Sanctificámini hódie, et estóte paráti: quia die crástina vidébitis",
 		"responsum":"Majestátem Dei in vobis.",
 		"versus":"Hódie sciétis, quia véniet Dóminus, et mane vidébitis."
 	},
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-ii","lectio","lectio-ii"],
-		"datum":[
-			"Antequam convenírent, invénta est in útero habens de Spíritu sancto. Non ab álio invénta est, nisi a Joseph, qui pene licéntia maritáli futúræ uxóris ómnia nóverat. Quod autem dícitur, Antequam convenírent: non séquitur ut póstea convénerint: sed Scriptúra quod factum non sit, osténdit."
-		]
+		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-ii"],
+		"datum":"Ántequam convenírent, invénta est in útero habens de Spíritu sancto. Non ab álio invénta est, nisi a Joseph, qui pene licéntia maritáli futúræ uxóris ómnia nóverat. Quod autem dícitur, Antequam convenírent: non séquitur ut póstea convénerint: sed Scriptúra quod factum non sit, osténdit."
 	},
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-ii"],
 		"incipit":"Constántes estóte, vidébitis auxílium Dómini super vos: Judǽa et Jerúsalem, nolíte timére:",
 		"responsum":"Cras egrediémini, et Dóminus erit vobíscum.",
 		"versus":"Sanctificámini fílii Israël, et estóte paráti."
 	},
-
-	
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":[
-			"Joseph autem vir ejus, cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam. Si quis fornicáriæ conjúngitur, unum corpus effícitur, et in lege præcéptum est, non solum reos, sed et cónscios críminum obnóxios esse peccáti: quómodo Joseph, cum crimen celáret uxóris, justus scríbitur? Sed hoc testimónium Maríæ est, quod Joseph sciens illíus castitátem, et admírans quod evénerat, celat siléntio, cujus mystérium nesciébat."
-		]
+		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-iii"],
+		"datum":"Joseph autem vir ejus, cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam. Si quis fornicáriæ conjúngitur, unum corpus effícitur, et in lege præcéptum est, non solum reos, sed et cónscios críminum obnóxios esse peccáti: quómodo Joseph, cum crimen celáret uxóris, justus scríbitur? Sed hoc testimónium Maríæ est, quod Joseph sciens illíus castitátem, et admírans quod evénerat, celat siléntio, cujus mystérium nesciébat."
 	},
 	{
-		"tags":["vigilia-nativitatis","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-iii"],
 		"incipit":"Sanctificámini, fílii Israël, dicit Dóminus: die enim crástina descéndet Dóminus,",
 		"responsum":"Et aúferet a vobis omnem languórem.",
 		"versus":"Crástina die delébitur iníquitas terræ, et regnábit super nos Salvátor mundi."
@@ -79,6 +73,10 @@
 	{	
 		"tags":["vigilia-nativitatis","capitulum"],
 		"datum":"Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem."
+	},
+	{
+		"tags":["vigilia-nativitatis","hymnus"],
+		"reference":[["hymnus"],["adventus","laudes"]]
 	},
 	{	
 		"tags":["vigilia-nativitatis","laudes","versiculus"],
