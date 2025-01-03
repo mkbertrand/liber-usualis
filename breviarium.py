@@ -15,7 +15,6 @@ import sys
 
 import psalms
 
-data_root = pathlib.Path(__file__).parent
 defaultpile = {'formulae'}
 
 def dump_data(j):
@@ -38,10 +37,10 @@ def dump_data(j):
 	return json.dumps(recurse(j))
 
 implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
-propria = datamanage.load_data('data/breviarium-1888/propria.json')
+
 # List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
-data = datamanage.load_data('data/breviarium-1888/data.json')
-formularia = datamanage.load_data('data/breviarium-1888/formularia.json')
+objects = datamanage.load_data('data/breviarium-1888/categoriae/objecta.json')
+propria = datamanage.load_data('data/breviarium-1888/propria.json')
 
 def prettyprint(j):
 	def recurse(obj):
@@ -172,14 +171,14 @@ def process(root, item, selected, alternates, pile, applyformula=None):
 					result = search(root, item['from-tags'] | alternates[i], pile)
 					alternates = copy.deepcopy(alternates)
 					alternates.append(selected)
-					selected = alternates.pop(i) - data
+					selected = alternates.pop(i) - objects
 					break
 			if result is None:
 				result = search(root, item['from-tags'] | selected, pile)
 			if result is None:
 				return str(list(item['from-tags'] | selected))
 			elif 'formula' in result['tags']:
-				applyformula = item['from-tags'] - formularia
+				applyformula = item['from-tags'] - objects
 			else:
 				applyformula = None
 			response = process(root, result, selected, alternates, pile, applyformula)

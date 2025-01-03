@@ -73,7 +73,7 @@ def rite():
     if ' ' in parameters['hour']:
         parameters['hour'] = parameters['hour'].replace(' ', '+')
 
-    defpile = datamanage.getbreviariumfiles(root, breviarium.defaultpile)
+    defpile = datamanage.getpile(root, breviarium.defaultpile)
 
     rite = []
     rite.append(breviarium.process(root, {'ante-officium'}, None, None, defpile))
@@ -84,7 +84,7 @@ def rite():
             for j in implicationtable:
                 if j['tags'].issubset(i):
                     i |= j['implies']
-        pile = datamanage.getbreviariumfiles(root, breviarium.defaultpile | flattensetlist(tags) | set(parameters['hour'].split('+')))
+        pile = datamanage.getpile(root, breviarium.defaultpile | flattensetlist(tags) | set(parameters['hour'].split('+')))
         tags = [frozenset(i) for i in tags]
         primary = list(filter(lambda i: 'primarium' in i, tags))[0]
         tags.remove(primary)
