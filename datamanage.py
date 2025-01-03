@@ -115,13 +115,12 @@ def getbreviariumfile(query):
 def getchantfile(url):
 	return requests.get(url, stream=True).text
 
-# No error management is needed for missing queries since queries aren't checked for actively, but rather all files in the system are checked to see if they match any of the queries
-def getbreviariumfiles(root, queries):
+def getpile(root, pile):
 	ret = []
 	for root,dirs,files in os.walk(data_root.joinpath(f'data/{root}/tagged')):
 		for i in files:
 			if not i.endswith('.json'):
 				continue
-			if i[:-5] in queries:
+			if i[:-5] in pile:
 				ret.extend(getbreviariumfile(data_root.joinpath(f'data/{root}/tagged').joinpath(root).joinpath(i)))
 	return ret

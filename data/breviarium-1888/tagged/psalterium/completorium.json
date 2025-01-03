@@ -6,7 +6,7 @@
 	{
 		"tags":["completorium","hora"],
 		"datum":[
-			["formula","lectionis"],
+			["formula","formula-lectionis"],
 			["adjutorium-nostrum"],
 			["pater-noster-secreta"],
 			["confiteor"],
@@ -120,6 +120,13 @@
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat."
 		]
+	},
+	{
+		"tags":[
+			["completorium","duplex","preces"],
+			["completorium","infra-octavam","preces"]
+		],
+		"datum":""
 	},
 	{
 		"tags":["completorium","ordinarium","collecta"],

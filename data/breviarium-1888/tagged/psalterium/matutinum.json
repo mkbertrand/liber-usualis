@@ -171,84 +171,46 @@
 	},
 	{
 		"tags":["matutinum","nocturnae","feria"],
-		"with":["nocturna-i"],
-		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
+		"datum":[["formula","matutinum","formula-nocturnae","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","simplex"],
-		"with":["nocturna-i","te-deum"],
-		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
+		"datum":[["formula","matutinum","formula-nocturnae","duodecim-psalmi","sex-antiphonae","te-deum"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica"],
 		"datum":[
-			{
-				"from-tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
-				"with":["nocturna-i"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-ii"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-iii","te-deum"]
-			}
+			["formula","matutinum","formula-nocturnae","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica","poenitentialis"],
 		"datum":[
-			{
-				"from-tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
-				"with":["nocturna-i"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-ii"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-iii"]
-			}
+			["formula","matutinum","formula-nocturnae","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","novem-lectiones"],
 		"datum":[
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-i"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-ii"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-iii","te-deum"]
-			}
+			["formula","matutinum","formula-nocturnae","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","innocentes","festum"],
 		"datum":[
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-i"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-ii"]
-			},
-			{
-				"from-tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
-				"with":["nocturna-iii"]
-			}
+			["formula","matutinum","formula-nocturnae","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["formula","matutinum","formula-nocturnae","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{
-		"tags":["matutinum","nocturna","duodecim-psalmi","tres-antiphonae"],
+		"tags":["matutinum","formula","formula-nocturnae","duodecim-psalmi","tres-antiphonae"],
 		"datum":[
 			{
 				"tags":["matutinum","psalmodia"],
@@ -280,11 +242,11 @@
 			"R. Sed líbera nos a malo.",
 			["absolutio"],
 			"R. Amen.",
-			["lectiones"]
+			["formula","formula-lectionum"]
 		]
 	},
 	{
-		"tags":["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"],
+		"tags":["matutinum","formula","formula-nocturnae","duodecim-psalmi","sex-antiphonae"],
 		"datum":[
 			["matutinum","psalmi"],
 			["matutinum","versiculus"],
@@ -294,11 +256,11 @@
 			"R. Sed líbera nos a malo.",
 			["absolutio"],
 			"R. Amen.",
-			["lectiones"]
+			["formula","formula-lectionum"]
 		]
 	},
 	{
-		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae","duplex"],
+		"tags":["matutinum","formula","formula-nocturnae","tres-psalmi","tres-antiphonae","duplex"],
 		"datum":[
 			{
 				"tags":["matutinum","psalmodia"],
@@ -321,11 +283,11 @@
 			"R. Sed líbera nos a malo.",
 			["absolutio"],
 			"R. Amen.",
-			["lectiones"]
+			["formula","formula-lectionum"]
 		]
 	},
 	{
-		"tags":["matutinum","nocturna","tres-psalmi","tres-antiphonae"],
+		"tags":["matutinum","formula","formula-nocturnae","tres-psalmi","tres-antiphonae"],
 		"datum":[
 			{
 				"tags":["matutinum","psalmodia"],
@@ -348,7 +310,7 @@
 			"R. Sed líbera nos a malo.",
 			["absolutio"],
 			"R. Amen.",
-			["lectiones"]
+			["formula","formula-lectionum"]
 		]
 	},
 	{
@@ -381,24 +343,24 @@
 		]
 	},
 	{
-		"tags":["lectiones"],
+		"tags":["formula","formula-lectionum"],
 		"datum":[
-			{"from-tags":["formula","lectionis"],"with":["lectio-i"]},
-			{"from-tags":["formula","responsorium","responsorium-i"],"with":["responsorium-i"]},
-			{"from-tags":["formula","lectionis"],"with":["lectio-ii"]},
-			{"from-tags":["formula","responsorium","responsorium-ii"],"with":["responsorium-ii"]},
-			{"from-tags":["formula","lectionis"],"with":["lectio-iii"]},
-			{"from-tags":["formula","responsorium","responsorium-iii","gloria"],"with":["responsorium-iii"]}
+			["formula","formula-lectionis","lectio-i"],
+			["formula","responsorium","responsorium-i"],
+			["formula","formula-lectionis","lectio-ii"],
+			["formula","responsorium","responsorium-ii"],
+			["formula","formula-lectionis","lectio-iii"],
+			["formula","responsorium","responsorium-iii","gloria"]
 		]
 	},
 	{
-		"tags":["lectiones","te-deum"],
+		"tags":["formula","formula-lectionum","te-deum"],
 		"datum":[
-			{"from-tags":["formula","lectionis"],"with":["lectio-i"]},
-			{"from-tags":["formula","responsorium","responsorium-i"],"with":["responsorium-i"]},
-			{"from-tags":["formula","lectionis"],"with":["lectio-ii"]},
-			{"from-tags":["formula","responsorium","responsorium-ii","gloria"],"with":["responsorium-ii"]},
-			{"from-tags":["formula","lectionis"],"with":["lectio-iii"]},
+			["formula","formula-lectionis","lectio-i"],
+			["formula","responsorium","responsorium-i"],
+			["formula","formula-lectionis","lectio-ii"],
+			["formula","responsorium","responsorium-ii","gloria"],
+			["formula","formula-lectionis","lectio-iii"],
 			["hymnus","te-deum"]
 		]
 	},

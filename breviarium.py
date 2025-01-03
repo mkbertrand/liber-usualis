@@ -41,6 +41,7 @@ implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.j
 propria = datamanage.load_data('data/breviarium-1888/propria.json')
 # List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
 data = datamanage.load_data('data/breviarium-1888/data.json')
+formularia = datamanage.load_data('data/breviarium-1888/formularia.json')
 
 def prettyprint(j):
 	def recurse(obj):
@@ -117,7 +118,19 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
 	else:
 		return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
 
-def process(root, item, selected, alternates, pile):
+# Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
+def handlecommemorations(root, item, selected, alternates):
+		ret = []
+		commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(root, 'rank', a), reverse=True)
+		for i in commemorations:
+			probablepile = datamanage.getpile(root, defaultpile | item | i)
+			ret.append(process(root, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
+		if len(commemorations) != 0:
+			probablepile = datamanage.getpile(root, defaultpile | commemorations[-1])
+			ret.append(process(root, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
+		return ret
+
+def process(root, item, selected, alternates, pile, applyformula=None):
 	try:
 		if item is None:
 			return 'Absens'
@@ -128,43 +141,13 @@ def process(root, item, selected, alternates, pile):
 		if pile is None:
 			pile = []
 
-		# Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
 		if 'commemorationes' in item:
-			ret = []
-			commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(root, 'rank', a), reverse=True)
-			for i in commemorations:
-				probablepile = datamanage.getbreviariumfiles(root, defaultpile | item | i)
-				ret.append(process(root, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
-			if len(commemorations) != 0:
-				probablepile = datamanage.getbreviariumfiles(root, defaultpile | commemorations[-1])
-				ret.append(process(root, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
-			return ret
+			return handlecommemorations(root, item, selected, alternates)
 
 		# None can sometimes be the result of a search and is expected, but indicates an absent item
 		if type(item) is set or type(item) is frozenset:
-			result = None
-			for i in range(len(alternates)):
-				if item <= alternates[i]:
-					result = search(root, item | alternates[i], pile)
-					alternates = copy.deepcopy(alternates)
-					alternates.append(selected)
-					selected = alternates.pop(i) - data
-					break
-			if result is None:
-				result = search(root, item | selected, pile)
-			if result is None:
-				return str(list(item | selected))
-			else:
-				item = result
+			item = {'from-tags':item}
 
-		if 'choose' in item:
-			if any([item['choose'].issubset(i) for i in alternates]):
-				for i in range(len(alternates)):
-					if item['choose'].issubset(alternates[i]):
-						alternates = copy.deepcopy(alternates)
-						alternates.append(selected)
-						selected = alternates.pop(i)
-						break
 		if 'reference' in item:
 			alternates.append(selected)
 			if type(item['reference']) is list:
@@ -172,25 +155,46 @@ def process(root, item, selected, alternates, pile):
 				item['reference'] = item['reference'][1]
 			# Just in case an item needs to change depending on whether it is a reference
 			selected = item['reference'] | {'referens'}
-			pile = datamanage.getbreviariumfiles(root, defaultpile | item['reference'])
+			pile = datamanage.getpile(root, defaultpile | item['reference'])
 			response = process(root, search(root, selected | item['from-tags'] if 'from-tags' in item else selected, pile), selected, alternates, pile)
 			return response
 
 		if 'with' in item:
 			selected |= set(item['with'])
+
 		if 'from-tags' in item:
-			response = process(root, search(root, item['from-tags'] | selected, pile), selected, alternates, pile)
-			if 'tags' in item:
-				return {'tags': item['tags'], 'datum': response}
+			if applyformula:
+				item['from-tags'] |= applyformula
+
+			result = None
+			for i in range(len(alternates)):
+				if item['from-tags'] <= alternates[i]:
+					result = search(root, item['from-tags'] | alternates[i], pile)
+					alternates = copy.deepcopy(alternates)
+					alternates.append(selected)
+					selected = alternates.pop(i) - data
+					break
+			if result is None:
+				result = search(root, item['from-tags'] | selected, pile)
+			if result is None:
+				return str(list(item['from-tags'] | selected))
+			elif 'formula' in result['tags']:
+				applyformula = item['from-tags'] - formularia
 			else:
-				return response
+				applyformula = None
+			response = process(root, result, selected, alternates, pile, applyformula)
+
+			if 'tags' in item:
+				response = {'tags': item['tags'], 'datum': response}
+			return response
+
 		elif type(item['datum']) is list:
 			ret = []
 			for i in item['datum']:
 				if type(i) is str:
 					ret.append(i)
 				else:
-					iprocessed = process(root, i, selected, alternates, pile)
+					iprocessed = process(root, i, selected, alternates, pile, applyformula)
 					if iprocessed is None:
 						ret.append('Absens')
 					elif type(iprocessed) is list:
@@ -288,7 +292,7 @@ if __name__ == '__main__':
 		logging.getLogger().setLevel(args.verbosity)
 
 	# Generate kalendar
-	defpile = datamanage.getbreviariumfiles(args.root, defaultpile)
+	defpile = datamanage.getpile(args.root, defaultpile)
 	day = datetime.strptime(args.date, '%Y-%m-%d').date()
 	argtags = set() if args.tags is None else set(args.tags.split(' '))
 	ret = {'tags':{'reditus'},'datum':[process(args.root, {'ante-officium'}, None, None, defpile)]}
@@ -299,7 +303,7 @@ if __name__ == '__main__':
 			for k in implicationtable:
 				if k['tags'].issubset(j):
 					j |= k['implies']
-		pile = datamanage.getbreviariumfiles(args.root, defaultpile | flattensetlist(tags) | {i} | argtags)
+		pile = datamanage.getpile(args.root, defaultpile | flattensetlist(tags) | {i} | argtags)
 		primary = None
 		if len(argtags) == 0:
 			primary = list(filter(lambda i: 'primarium' in i, tags))[0]
