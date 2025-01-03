@@ -457,10 +457,69 @@
 	},
 	{
 		"tags":["epiphania","dies-ii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12046",
 		"datum":"Ab Oriénte * venérunt Magi in Béthlehem adoráre Dóminum: et apértis thesaúris suis, pretiósa múnera obtulérunt: aurum, sicut Regi magno; thus, sicut Deo vero; myrrham sepultúræ ejus, allelúja."
 	},
 	{
 		"tags":["epiphania","dies-ii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2817",
 		"datum":"Vidéntes stellam Magi, * gavísi sunt gaúdio magno: et intrántes domum, obtulérunt Dómino aurem, thus, et myrrham, allelúja."
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Epístola ad Romános.",
+			"Óbsecro ítaque vos fratres per misericórdiam Dei, ut exhibeátis córpora vestra hóstiam vivéntem, sanctam, Deo placéntem, rationábile obséquium vestrum. Et nolíte conformári huic sǽculo, sed reformámini in novitáte sensus vestri: ut probétis quæ sit volúntas Dei bona, et benéplacens, et perfécta. Dico enim per grátiam quæ data est mihi, ómnibus qui sunt inter vos: Non plus sápere quam opórtet sápere, sed sápere ad sobrietátem: et unicuíque sicut Deus divísit mensúram fídei."
+		]
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Sicut enim in uno córpore multa membra habémus, ómnia autem membra non eúmdem actum habent: ita multi unum corpus sumus in Christo, sínguli autem alter altérius membra. Habéntes autem donatiónes secúndum grátiam, quæ data est nobis, differéntes: sive prophetíam secúndum ratiónem fídei, sive ministérium in ministrándo, sive qui docet in doctrína, qui exhortátur in exhortándo, qui tríbuit in simplicitáte, qui præest in sollicitúdine, qui miserétur in hilaritáte."
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Diléctio sine simulatióne. Odiéntes malum, adhæréntes bono: Caritáte fraternitátis ínvicem diligéntes: Honóre ínvicem præveniéntes: Sollicitúdine non pigri: Spíritu fervéntes: Dómino serviéntes: Spe gaudéntes: In tribulatióne patiéntes: Oratióni instántes: Necessitátibus sanctórum communicántes: Hospitalitátem sectántes. Benedícite persequéntibus vos: benedícite, et nolíte maledícere. Gaudére cum gaudéntibus, flere cum fléntibus: Idípsum ínvicem sentiéntes: Non alta sapiéntes, sed humílibus consentiéntes."
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"De Sermóne sancti Augustíni Epíscopi.",
+			"Cum tam multi jam nati, atque defúncti essent reges Judæórum, numquid quemquam eórum adorándum Magi quæsiérunt? Non, quia nec quemquam eórum cœlo loquénte didicérunt. Verúmtamen, quod prætereúndem non est, hæc Magórum illuminátio magnum testimónium cæcitátis éxstitit Judæórum. In terra eórum isti requirébant, quem illi in sua non agnoscébant."
+		]
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Apud eos isti infántem invenérunt, quem illi apud se negavérunt. In his terris de longínquo isti et peregríni púerum Christum nondum verba proméntem adoravérunt, ubi cives illi júvenem mirácula faciéntem crucifixérunt. Isti in membris parvis Deum adoravérunt, illi in magnis factis nec tamquam hómini pepercérunt: quasi plus fúerit vidére novam stellam in ejus nativitáte fulgéntem, quam solem ejus in morte lugéntem."
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Jam vero quod éadem stella, quæ Magos perdúxit ad locum, ubi erat cum matre Vírgine Deus infans, quæ útique póterat eos ad ipsam perdúcere civitátem, se tamen subtráxit, nec eis prorsus appáruit, donec de civitáte, in qua Christus nascerétur, iídem ipsi interrogaréntur Judǽi, et ipsi eam secúndum divíne Scriptúræ testimónium nominárent, ipsi dícerent: In Béthlehem Judæ. Sic enim scriptum est: Et tu Béthlehem terra Juda, non es mínima in princípibus Juda: ex te enim éxiet Dux, qui regat pópulum meum Ísraël. Quid áliud hic significávit divína providéntia, nisi apud Judǽos solas divínas lítteras remansúras, quibus Gentes instrueréntur, illi excæcaréntur?"
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"Cum natus esset Jesus in Béthlehem Juda in diébus Heródis regis, ecce Magi ab Oriénte venérunt Jerosólymam, dicéntes: Ubi est qui natus est Rex Judæórum? Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"Magi vero aurum, thus, et myrrham déferunt. Aurum quippe Regi cóngruit, thus vero in Dei sacrifícium pónitur, myrrha autem mortuórum córpora condiúntur. Eum ergo Magi, quem adórant, étiam mýsticis munéribus prǽdicant: auro Regem, thure Deum, myrrha mortálem. Sunt vero nonnúlli hærétici, qui hunc Deum credunt, sed ubíque regnáre nequáquam credunt. Hi profécto ei thus ófferunt, sed offérre étiam aurum nolunt. Et sunt nonnúlli, qui hunc Regem exístimant, sed Deum negant. Hi vidélicet ei aurum ófferunt, sed offérre thus nolunt."
+		]
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Et sunt nonnúlli, qui hunc et Deum et Regem faténtur, sed assumpsísse carnem mortálem negant. Hi nimírum ei aurum et thus ófferunt, sed offérre myrrham assúmptæ mortalitátis nolunt. Nos ítaque nato Dómino offerámus aurum, ut hunc ubíque regnáre fateámur: offerámus thus, ut credámus, quod is qui in témpore appáruit, Deus ante témpora éxstitit: offerámus myrrham, ut eum, quem crédimus in sua divinitáte impassíbilem, credámus étiam in nostra fuísse carne mortálem."
+	},
+	{
+		"tags":["epiphania","dies-iii","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Quamvis in auro, thure, et myrrha intélligi et áliud potest. Auro namque sapiéntia designátur, Salomóne attestánte, qui ait: Thesaúrus desiderábilis requiéscit in ore sapiéntis. Thure autem, quod Deo incénditur, virtus oratiónis exprímitur, Psalmísta testánte, qui dicit: Dirigátur orátio mea sicut incénsum in conspéctu tuo. Per myrrham vero carnis nostræ mortificátio figurátur. Unde sancta Ecclésia de suis operáriis usque ad mortem pro Deo certántibus dicit: Manus meæ distillavérunt myrrham."
+	},
+	{
+		"tags":["epiphania","dies-iii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/11912",
+		"datum":"Tria sunt múnera, * quæ obtulérunt Magi Dómino, aurum, thus, et myrrham, Fílio Dei, Regi magno, allelúja."
+	},
+	{
+		"tags":["epiphania","dies-iii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1881",
+		"datum":"lux de luce * apparuísti Christe, cui Magi múnera ófferunt, allelúja, allelúja, allelúja."
 	}
 ]
