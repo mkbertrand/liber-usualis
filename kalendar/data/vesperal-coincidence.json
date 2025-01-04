@@ -385,14 +385,14 @@
 		]
 	},
 	{
-		"include":["circumcisio","i-vesperae"],
+		"include":["circumcisio","festum","i-vesperae"],
 		"continue":false,
 		"response":[
 			{"include":["commemoratio"],"remove":"commemoratio","adde":"omissum","target":1}
 		]
 	},
 	{
-		"include":["circumcisio","ii-vesperae"],
+		"include":["circumcisio","festum","ii-vesperae"],
 		"continue":false,
 		"response":[
 			{"include":["commemoratio","semiduplex"],"remove":"commemoratio","adde":"omissum","target":1}

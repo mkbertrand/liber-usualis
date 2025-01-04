@@ -8,9 +8,9 @@ import kalendar.datamanage
 
 @pytest.mark.parametrize('dateoffset',range(0, 365))
 def test_singleprimary(dateoffset):
-    day = date(2000, 1, 1) + timedelta(days=dateoffset)
-    print(kalendar.datamanage.getdate(day))
-    print(kalendar.datamanage.getdate(day + timedelta(days = 1)))
-    result = prioritizer.getvespers(day)
-    print(result)
-    assert len(list(filter(lambda a: 'primarium' in a, result))) == 1
+	day = date(2000, 1, 1) + timedelta(days=dateoffset)
+	print(kalendar.datamanage.getdate(day))
+	print(kalendar.datamanage.getdate(day + timedelta(days = 1)))
+	result = prioritizer.getvespers(day)
+	assert len(list(filter(lambda a: 'primarium' in a, result))) == 1
+	assert all([len(i & {'primarium', 'commemoratio', 'omissum', 'psalmi'}) < 2 for i in result])

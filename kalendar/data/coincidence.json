@@ -669,7 +669,7 @@
 		]
 	},
 	{
-		"include":["circumcisio"],
+		"include":["circumcisio","festum"],
 		"recheck":false,
 		"response":[
 			{"include":["commemoratio"],"response":"omissum","target":1}
