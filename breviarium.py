@@ -41,7 +41,7 @@ implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.j
 # List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
 objects = datamanage.load_data('data/breviarium-1888/categoriae/objecta.json')
 divisiones = datamanage.load_data('data/breviarium-1888/categoriae/divisiones.json')
-propria = datamanage.load_data('data/breviarium-1888/categoriae/propria.json')
+propria = datamanage.load_data('data/breviarium-1888/propria.json')
 
 def prettyprint(j):
 	def recurse(obj):

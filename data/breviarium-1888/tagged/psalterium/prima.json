@@ -18,7 +18,10 @@
 			["prima","versiculus"],
 			["prima","preces"],
 			["collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
+			{
+				"from-tags":["dominus-vobiscum","ferialis-a"],
+				"tags":["prima","dominus-vobiscum"]
+			},
 			["benedicamus-domino","hora-minor"],
 			["martyrologium"],
 			"V. Pretiósa in conspéctu Dómini.",

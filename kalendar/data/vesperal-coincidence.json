@@ -332,7 +332,7 @@
 	{
 		"include":["dominica","semiduplex","i-vesperae"],
 		"response":[
-			{"include":["semiduplex","ii-vesperae","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
+			{"include":["semiduplex","ii-vesperae"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
 			{"include":["semiduplex","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["duplex-i-classis","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-ii-classis","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
