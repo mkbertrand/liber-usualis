@@ -182,7 +182,10 @@
 		"datum":"Vidi supra montem Sion Agnum stantem, + et cum eo centum quadragínta quátuor míllia, * habéntes nomen ejus, et nomen Patris ejus scriptum in fróntibus suis."
 	},
 	{
-		"tags":["innocentes","laudes","hymnus"],
+		"tags":[
+			["innocentes","laudes","hymnus"],
+			["innocentes","vesperae","hymnus"]
+		],
 		"src":"gregobase/1963",
 		"datum":[
 			"Salvéte flores Mártyrum,/Quos lucis ipso in límine/Christi insecútor sústulit,/Ceu turbo nascéntes rosas.",
