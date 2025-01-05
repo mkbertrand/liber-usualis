@@ -171,42 +171,42 @@
 	},
 	{
 		"tags":["matutinum","nocturnae","feria"],
-		"datum":[["nocturna","duodecim-psalmi","sex-antiphonae"]]
+		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","simplex"],
-		"datum":[["nocturna","duodecim-psalmi","sex-antiphonae","te-deum"]]
+		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae","te-deum"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica"],
 		"datum":[
-			["nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
+			["matutinum","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica","poenitentialis"],
 		"datum":[
-			["nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+			["matutinum","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","novem-lectiones"],
 		"datum":[
-			["nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
+			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","innocentes","festum"],
 		"datum":[
-			["nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{
@@ -240,7 +240,7 @@
 			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
 			"V. Et ne nos indúcas in tentatiónem.",
 			"R. Sed líbera nos a malo.",
-			["absolutio"],
+			["matutinum","absolutio"],
 			"R. Amen.",
 			["lectiones"]
 		]
@@ -254,7 +254,7 @@
 			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
 			"V. Et ne nos indúcas in tentatiónem.",
 			"R. Sed líbera nos a malo.",
-			["absolutio"],
+			["matutinum","absolutio"],
 			"R. Amen.",
 			["lectiones"]
 		]
@@ -281,9 +281,9 @@
 			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
 			"V. Et ne nos indúcas in tentatiónem.",
 			"R. Sed líbera nos a malo.",
-			["absolutio"],
+			["matutinum","absolutio"],
 			"R. Amen.",
-			["lectiones"]
+			["matutinum","lectiones"]
 		]
 	},
 	{
@@ -308,9 +308,9 @@
 			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
 			"V. Et ne nos indúcas in tentatiónem.",
 			"R. Sed líbera nos a malo.",
-			["absolutio"],
+			["matutinum","absolutio"],
 			"R. Amen.",
-			["lectiones"]
+			["matutinum","lectiones"]
 		]
 	},
 	{

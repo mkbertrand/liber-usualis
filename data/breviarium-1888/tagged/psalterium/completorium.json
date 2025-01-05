@@ -6,7 +6,7 @@
 	{
 		"tags":["completorium","hora"],
 		"datum":[
-			["formula","formula-lectionis"],
+			["completorium","formula","formula-lectionis"],
 			["adjutorium-nostrum"],
 			["pater-noster-secreta"],
 			["confiteor"],
@@ -21,15 +21,15 @@
 			["completorium","hymnus"],
 			["completorium","capitulum"],
 			"R. Deo grátias.",
-			["formula","responsorium-breve"],
+			["completorium","formula","responsorium-breve"],
 			["completorium","versiculus"],
 			["completorium","antiphona","antiphona-nunc-dimittis","intonata"],
 			["/psalmi/nunc-dimittis,gloria"],
 			["completorium","antiphona","antiphona-nunc-dimittis","repetita"],
 			["completorium","preces"],
-			["collecta-primaria"],
+			["completorium","collecta-primaria"],
 			["dominus-vobiscum","ferialis-a"],
-			["benedicamus-domino","hora-minor"],
+			["completorium","benedicamus-domino","hora-minor"],
 			{
 				"tags":["completorium","benedictio-finalis"],
 				"datum":[
