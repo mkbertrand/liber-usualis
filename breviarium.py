@@ -193,6 +193,26 @@ def process(root, item, selected, alternates, pile):
 
 	return item
 
+def generate(root, day, hour: str):
+	hours = hour.split('+')
+	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
+	tags = copy.deepcopy(prioritizer.getvespers(day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.getdiurnal(day))
+	for i in tags:
+		for j in implicationtable:
+			if j['tags'].issubset(i):
+				i |= j['implies']
+	pile = datamanage.getpile(root, defaultpile | flattensetlist(tags) | set(hours))
+	tags = [frozenset(i) for i in tags]
+	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+	tags.remove(primary)
+
+	lit = []
+	for hour in hours:
+		lit.extend([{'nomen-ritus', hour}, {'hora', hour}])
+	return process(root, {'tags':{'ritus'},'datum':[
+		{'ante-officium'}, *lit, {'post-officium'}
+		]}, primary, tags, pile)
+
 if __name__ == '__main__':
 	import argparse
 
@@ -269,27 +289,8 @@ if __name__ == '__main__':
 		logging.getLogger().setLevel(args.verbosity)
 
 	# Generate kalendar
-	defpile = datamanage.getpile(args.root, defaultpile)
 	day = datetime.strptime(args.date, '%Y-%m-%d').date()
-
-	hours = args.hour.split('+')
-	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	tags = copy.deepcopy(prioritizer.getvespers(day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.getdiurnal(day))
-	for i in tags:
-		for j in implicationtable:
-			if j['tags'].issubset(i):
-				i |= j['implies']
-	pile = datamanage.getpile(args.root, defaultpile | flattensetlist(tags) | set(hours))
-	tags = [frozenset(i) for i in tags]
-	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
-	tags.remove(primary)
-
-	lit = []
-	for hour in hours:
-		lit.extend([{'nomen-ritus', hour}, {'hora', hour}])
-	ret = process(args.root, {'tags':{'ritus'},'datum':[
-		{'ante-officium'}, *lit, {'post-officium'}
-		]}, primary, tags, pile)
+	ret = generate(args.root, day, args.hour)
 
 	if args.output == sys.stdout:
 		prettyprint(ret)
