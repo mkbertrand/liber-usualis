@@ -29,7 +29,7 @@ def dump_data(j):
 				return [recurse(v) for v in obj]
 			case set() | frozenset():
 				if all(type(x) is str for x in obj):
-					return list(obj)
+					return sorted(list(obj))
 				return [recurse(v) for v in obj]
 			case _:
 				return obj
@@ -131,70 +131,67 @@ def handlecommemorations(root, item, selected, alternates):
 		return ret
 
 def process(root, item, selected, alternates, pile):
-	try:
-		if item is None:
-			return 'Absens'
-		if selected is None:
-			selected = set()
-		if alternates is None:
-			alternates = []
-		if pile is None:
-			pile = []
+	if item is None:
+		return 'Absens'
+	if selected is None:
+		selected = set()
+	if alternates is None:
+		alternates = []
+	if pile is None:
+		pile = []
 
-		if 'commemorationes' in item:
-			return handlecommemorations(root, item, selected, alternates)
+	if 'commemorationes' in item:
+		return handlecommemorations(root, item, selected, alternates)
 
-		# None can sometimes be the result of a search and is expected, but indicates an absent item
-		if type(item) is set or type(item) is frozenset:
-			item = {'from-tags':item}
+	# Within the data, a set (represented in JSON as a list of strings) is a euphemism for from: tags
+	if type(item) is set or type(item) is frozenset:
+		item = {'from':item}
 
-		if 'reference' in item:
-			alternates.append(selected)
-			# Just in case an item needs to change depending on whether it is a reference
-			selected = item['reference'] | {'referens'}
-			pile = datamanage.getpile(root, defaultpile | selected)
-			response = process(root, search(root, selected, pile), selected - objects, alternates, pile)
-			return response
+	if 'reference' in item:
+		alternates.append(selected)
+		# Just in case an item needs to change depending on whether it is a reference
+		selected = item['reference'] | {'referens'}
+		pile = datamanage.getpile(root, defaultpile | selected)
+		response = process(root, search(root, selected, pile), selected - objects, alternates, pile)
+		return response
 
-		if 'from-tags' in item:
-			result = None
-			for i in range(len(alternates)):
-				if item['from-tags'] | (selected & divisiones) <= alternates[i]:
-					result = search(root, item['from-tags'] | alternates[i], pile)
-					alternates = copy.deepcopy(alternates)
-					alternates.append(selected)
-					selected = alternates.pop(i) - objects
-					break
-			if result is None:
-				result = search(root, item['from-tags'] | selected, pile)
-			if result is None:
-				return str(list(item['from-tags'] | selected))
-			response = process(root, result, selected | (item['from-tags'] - result['tags'] - objects), alternates, pile)
+	if 'from' in item:
+		result = None
+		for i in range(len(alternates)):
+			if item['from'] | (selected & divisiones) <= alternates[i]:
+				result = search(root, item['from'] | alternates[i], pile)
+				alternates = copy.deepcopy(alternates)
+				alternates.append(selected)
+				selected = alternates.pop(i) - objects
+				break
+		if result is None:
+			result = search(root, item['from'] | selected, pile)
+		if result is None:
+			# It has to be sorted for testing purposes
+			return str(sorted(list(item['from'] | selected)))
 
-			if 'tags' in item:
-				response = {'tags': item['tags'], 'datum': response}
-			return response
+		response = process(root, result, (selected | item['from']) - result['tags'] - objects, alternates, pile)
 
-		elif type(item['datum']) is list:
-			ret = []
-			for i in item['datum']:
-				if type(i) is str:
-					ret.append(i)
+		if 'tags' in item:
+			response = {'tags': item['tags'], 'datum': response}
+		return response
+
+	elif type(item['datum']) is list:
+		ret = []
+		for i in item['datum']:
+			if type(i) is str:
+				ret.append(i)
+			else:
+				iprocessed = process(root, i, selected, alternates, pile)
+				if iprocessed is None:
+					ret.append('Absens')
+				elif type(iprocessed) is list:
+					ret.extend(iprocessed)
 				else:
-					iprocessed = process(root, i, selected, alternates, pile)
-					if iprocessed is None:
-						ret.append('Absens')
-					elif type(iprocessed) is list:
-						ret.extend(iprocessed)
-					else:
-						ret.append(iprocessed)
-			item['datum'] = ret if len(ret) != 1 else ret[0]
+					ret.append(iprocessed)
+		item['datum'] = ret if len(ret) != 1 else ret[0]
 
-		return item
-	except Exception as e:
-		print(f'Error occured while generating for {item} with {selected} and {alternates}: ')
-		print(e)
-
+	return item
 
 if __name__ == '__main__':
 	import argparse
@@ -230,13 +227,6 @@ if __name__ == '__main__':
 		type=str,
 		default='breviarium-1888',
 		help='Data Root for Content',
-	)
-	parser.add_argument(
-		'-t',
-		'--tags',
-		type=str,
-		default=None,
-		help='Tag search for manually selected primarium',
 	)
 
 	parser.add_argument(
@@ -281,27 +271,25 @@ if __name__ == '__main__':
 	# Generate kalendar
 	defpile = datamanage.getpile(args.root, defaultpile)
 	day = datetime.strptime(args.date, '%Y-%m-%d').date()
-	argtags = set() if args.tags is None else set(args.tags.split(' '))
-	ret = {'tags':{'reditus'},'datum':[process(args.root, {'ante-officium'}, None, None, defpile)]}
 
-	for i in args.hour.split(' '):
-		tags = copy.deepcopy(prioritizer.getvespers(day) if i == 'vesperae' or i == 'completorium' else datamanage.getdate(day))
-		for j in tags:
-			for k in implicationtable:
-				if k['tags'].issubset(j):
-					j |= k['implies']
-		pile = datamanage.getpile(args.root, defaultpile | flattensetlist(tags) | {i} | argtags)
-		primary = None
-		if len(argtags) == 0:
-			primary = list(filter(lambda i: 'primarium' in i, tags))[0]
-			for j in tags:
-				if 'primarium' in j:
-					tags.remove(j)
-					break
-		else:
-			primary = argtags
-		ret['datum'].append(process(args.root, {i, 'hora'}, primary, tags, pile))
-	ret['datum'].append(process(args.root, {'post-officium'}, None, None, defpile))
+	hours = args.hour.split('+')
+	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
+	tags = copy.deepcopy(prioritizer.getvespers(day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.getdiurnal(day))
+	for i in tags:
+		for j in implicationtable:
+			if j['tags'].issubset(i):
+				i |= j['implies']
+	pile = datamanage.getpile(args.root, defaultpile | flattensetlist(tags) | set(hours))
+	tags = [frozenset(i) for i in tags]
+	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+	tags.remove(primary)
+
+	lit = []
+	for hour in hours:
+		lit.extend([{'nomen-ritus', hour}, {'hora', hour}])
+	ret = process(args.root, {'tags':{'ritus'},'datum':[
+		{'ante-officium'}, *lit, {'post-officium'}
+		]}, primary, tags, pile)
 
 	if args.output == sys.stdout:
 		prettyprint(ret)

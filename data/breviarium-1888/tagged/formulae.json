@@ -197,13 +197,13 @@
 	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
-			["responsorium","incipit"],
-			["responsorium","responsum-i"],
-			["responsorium","responsum-ii"],
-			["responsorium","versus"],
-			["responsorium","responsum-i"],
+			["matutinum","responsorium","incipit"],
+			["matutinum","responsorium","responsum-i"],
+			["matutinum","responsorium","responsum-ii"],
+			["matutinum","responsorium","versus"],
+			["matutinum","responsorium","responsum-i"],
 			"Glória Patri, et Fílio, et Spirítui Sancto.",
-			["responsorium","responsum-ii"]
+			["matutinum","responsorium","responsum-ii"]
 		]
 	},
 	{
@@ -264,19 +264,19 @@
 	{
 		"tags":["formula","laudes","formula-commemorationis"],
 		"datum":[
-			["commemoratio","antiphona","antiphona-benedictus"],
+			["commemoratio","laudes","antiphona","antiphona-benedictus"],
 			["commemoratio","laudes","versiculus"],
 			"Orémus.",
-			["commemoratio","collecta"]
+			["commemoratio","laudes","collecta"]
 		]
 	},
 	{
 		"tags":["formula","vesperae","formula-commemorationis"],
 		"datum":[
-			["commemoratio","antiphona","antiphona-magnificat"],
+			["commemoratio","vesperae","antiphona","antiphona-magnificat"],
 			["commemoratio","vesperae","versiculus"],
 			"Orémus.",
-			["commemoratio","collecta"]
+			["commemoratio","vesperae","collecta"]
 		]
 	},
 	{
