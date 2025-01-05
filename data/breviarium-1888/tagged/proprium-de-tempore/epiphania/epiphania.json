@@ -461,7 +461,7 @@
 		"datum":"Ab Oriénte * venérunt Magi in Béthlehem adoráre Dóminum: et apértis thesaúris suis, pretiósa múnera obtulérunt: aurum, sicut Regi magno; thus, sicut Deo vero; myrrham sepultúræ ejus, allelúja."
 	},
 	{
-		"tags":["epiphania","dies-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["epiphania","dies-ii","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2817",
 		"datum":"Vidéntes stellam Magi, * gavísi sunt gaúdio magno: et intrántes domum, obtulérunt Dómino aurem, thus, et myrrham, allelúja."
 	},
@@ -518,7 +518,7 @@
 		"datum":"Tria sunt múnera, * quæ obtulérunt Magi Dómino, aurum, thus, et myrrham, Fílio Dei, Regi magno, allelúja."
 	},
 	{
-		"tags":["epiphania","dies-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["epiphania","dies-iii","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1881",
 		"datum":"lux de luce * apparuísti Christe, cui Magi múnera ófferunt, allelúja, allelúja, allelúja."
 	},
@@ -575,7 +575,7 @@
 		"datum":"Vídimus stellam ejus * in Oriénte, et vénimus cum munéribus adoráre Dóminum."
 	},
 	{
-		"tags":["epiphania","dies-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["epiphania","dies-iv","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2812",
 		"datum":"Interrogábat * Magos Heródes: Quod signum vidístis super natum Regem? Stellam vídimus fulgéntem, cujus splendor illúminat mundum."
 	},
@@ -632,7 +632,7 @@
 		"datum":"Omnes natiónes * vénient a longe, portántes múnera sua, allelúja."
 	},
 	{
-		"tags":["epiphania","dies-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["epiphania","dies-v","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2944",
 		"datum":"Omnes de Saba * vénient, aurum et thus deferéntes, allelúja, allelúja."
 	},
@@ -689,22 +689,26 @@
 		"datum":"Vénient ad te, * qui detrahébant tibi, et adorábunt vestígia pedum tuórum."
 	},
 	{
-		"tags":["epiphania","dies-vi","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["epiphania","dies-vi","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1960",
 		"datum":"Admóniti Magi * in somnis, per áliam viam revérsi sunt in regiónem suam."
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","capitulum"],
-		"datum":"Fratres: Óbsecro vos per misericórdiam Dei, ut exhibeátis córpora vestra hóstiam vivéntem, sanctam, Deo placéntem, rationábile obséquium vestrum."
+		"datum":"Fratres: Óbsecro vos per misericórdiam Dei, + ut exhibeátis córpora vestra hóstiam vivéntem, sanctam, Deo placéntem, * rationábile obséquium vestrum."
 	},
 	{
-		"tags":["epiphania","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+		"tags":[
+			["epiphania","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+			["epiphania","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/2342",
 		"datum":"Remánsit * puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus, existimántes illum esse in comitátu: et requirébant eum inter cognátos et notos."
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Vota, quǽsumus Dómine, suplicántis pópuli cœlésti pietáte proséquere: ut et quæ agénda sunt, vídeant, et ad implénda quæ víderint, convaléscant."
+		"datum":"Vota, quǽsumus Dómine, suplicántis pópuli cœlésti pietáte proséquere: + ut et quæ agénda sunt, vídeant, * et ad implénda quæ víderint, convaléscant."
 	},
 	{
 		"tags":["epiphania","infra-octavam","commemoratio","versiculus"],
@@ -718,7 +722,7 @@
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Epístola ad Romános.",
-			"Comméndo autem vobis Phœben sorórem nostram, quæ est in ministério Ecclésiæ, quæ est in Cenchris: ut eam suscipiátis in Dómino digne sanctis: et assistátis ei in quocúmque negótio vestri indigúerit: éternim ipsa quoque ástitit multis, et mihi ipsi. Salutáte Priscam et Áquilam adjutóres meos in Christo Jesu; (qui pro ánima mea suas cervíces supposuérunt: quibus non solus ego grátias ago, sed et cunctæ Ecclésiæ Géntium) et domésticam Ecclésiam eórum."
+			"Comméndo autem vobis Phœben sorórem nostram, quæ est in ministério Ecclésiæ, quæ est in Cenchris: ut eam suscipiátis in Dómino digne sanctis: et assistátis ei in quocúmque negótio vestri indigúerit: étenim ipsa quoque ástitit multis, et mihi ipsi. Salutáte Priscam et Áquilam adjutóres meos in Christo Jesu; (qui pro ánima mea suas cervíces supposuérunt: quibus non solus ego grátias ago, sed et cunctæ Ecclésiæ Géntium) et domésticam Ecclésiam eórum."
 		]
 	},
 	{
@@ -727,13 +731,13 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-iii"],
-		"datum":"Salútat vos Timothéus adjútor meus, et Lúcius, et Jason, et Sosípater cognáti mei. Salúto vos ego Tértius, qui scripsi epístolam, in Dómino. Salútat vos Cajus hospes meus, et univérsa Ecclésia. Salútat vos Erástus arcárius civitátis, et Quartus frater. Grátia Dómini nostri Jesu Christi cum ómnibus vobis. Amen."
+		"datum":"Salútat vos Timótheus adjútor meus, et Lúcius, et Jason, et Sosípater cognáti mei. Salúto vos ego Tértius, qui scripsi epístolam, in Dómino. Salútat vos Cajus hospes meus, et univérsa Ecclésia. Salútat vos Erástus arcárius civitátis, et Quartus frater. Grátia Dómini nostri Jesu Christi cum ómnibus vobis. Amen."
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-i"],
 		"datum":[
 			"Sermo sancti Leónis Papæ.",
-			"Justum et rationábile, dilectíssimi, veræ pietátis obséquium est, in diébus, qui divínæ ópera misericórdiæ protestántur, toto corde gaudére, et honorífice ea, quæ ad salútem nostram gesta sunt, celebráre, vocánte nos ad hanc devotiónem ipsa recurréntium témporum lege, quæ nobis post diem, in quo coætérnus Patri Fílius Dei natus ex Vírgine est, brevi intervállo Epiphániæ íntulit festum, ex apparitióne Dómini consecrátum."
+			"Justum et rationábile, dilectíssimi, veræ pietátis obséquium est, in diébus, qui divínæ ópera misericórdiæ protestántur, toto corde gaudére, et honorífice ea, quæ ad salútem nostram gesta sunt, celebráre, vocánte nos ad hanc devotiónem ipsa recurréntium témporum lege, quæ nobis post diem, in quo coætérnus Patri Fílius Dei natus ex Vírgine est, brevi intervállo Epiphaníæ íntulit festum, ex apparitióne Dómini consecrátum."
 		]
 	},
 	{
@@ -742,7 +746,7 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-iii"],
-		"datum":"Ad roborándum ego hanc fidem, quæ contra omnes pronuntiabátur erróres, ex magna gestum est divíni pietáte consílii, ut gens in longínqua Orientális plagæ regióne consístens, quæ spectandórum síderum arte pollébat, signum nati púeri, qui supra omnem Ísraël esset regnatúrus, accíperet. Nova étenim cláritas apud Magos stellæ illustrióris appáruit, et intuéntium ánimos ita admiratióne sui splendóris implévit, ut nequáquam sibi créderent negligéndum, quod tanto nuntiabátur judício."
+		"datum":"Ad roborándum ergo hanc fidem, quæ contra omnes pronuntiabátur erróres, ex magna gestum est divíni pietáte consílii, ut gens in longínqua Orientális plagæ regióne consístens, quæ spectandórum síderum arte pollébat, signum nati púeri, qui supra omnem Ísraël esset regnatúrus, accíperet. Nova étenim cláritas apud Magos stellæ illustrióris appáruit, et intuéntium ánimos ita admiratióne sui splendóris implévit, ut nequáquam sibi créderent negligéndum, quod tanto nuntiabátur indício."
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -759,18 +763,56 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Et venit Názareth, et erat súbditus illis. Quid enim magíster virtútis, nisi offícium pietátis impléret? Et mirámur, si Patri defert, qui súbditur matri? Non útique infirmitátis, sed pietátis ista subjéctio est: attóllat licet sævis emíssus látebris cóluber perfídiæ caput, et serpentínis émovat venéna pectóribus. Cum dicit se Fílius missum, majórem hæréticus appéllat Patrem, ut imperféctum Fílium dicat, qui potest havére majórem: ut aliénis auxíliis ásserat eum, qui míttitur, indigére. Numquid et humáno egébat auxílio, ut matérno servíret império?"
-	},
-	{
-		"tags":["epiphania","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
-		"datum":"Remánsit * puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus, existimántes illum esse in comitátu: et requirébant eum inter cognátos et notos."
+		"datum":"Et venit Názareth, et erat súbditus illis. Quid enim magíster virtútis, nisi offícium pietátis impléret? Et mirámur, si Patri defert, qui súbditur matri? Non útique infirmitátis, sed pietátis ista subjéctio est: attóllat licet sævis emíssus látebris cóluber perfídiæ caput, et serpentínis évomat venéna pectóribus. Cum dicit se Fílius missum, majórem hæréticus appéllet Patrem, ut imperféctum Fílium dicat, qui potest habére majórem: ut aliénis auxíliis ásserat eum, qui míttitur, indigére. Numquid et humáno egébat auxílio, ut matérno servíret império?"
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","sexta","capitulum"],
-		"datum":"Dico enim per grátiam quæ data est mihi, ómnibus qui sunt inter vos: Non plus sápere quam opórtet sápere, sed sápere ad sobrietátem."
+		"datum":"Dico enim per grátiam quæ data est mihi, ómnibus qui sunt inter vos: + Non plus sápere quam opórtet sápere, * sed sápere ad sobrietátem."
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","nona","capitulum"],
-		"datum":"Sicut enim in uno córpore multa membra habémus, ómnia autem membra non eúmdem actum habent: ita multi unum corpus sumus in Christo, sínguli autem alter altérius membra in Christo Jesu Dómino nostro."
+		"datum":"Sicut enim in uno córpore multa membra habémus, ómnia autem membra non eúmdem actum habent: + ita multi unum corpus sumus in Christo, * sínguli autem alter altérius membra in Christo Jesu Dómino nostro."
+	},
+	{
+		"tags":["epiphania","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2418",
+		"datum":"Fili, quid fecísti * nobis sic? Ego et pater tuus doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in iis, quæ Patris mei sunt, opórtet me esse?"
+	},
+	{
+		"tags":["epiphania","dies-octava","collecta"],
+		"terminatio":[["terminatio","qui-tecum-vivit"]],
+		"datum":"Deus, cujus Unigénitus in substántia nostræ carnis appáruit: præsta quǽsumus; ut per eum, quem símilem nobis foris agnóvimus, intus reformári mereámur:"
+	},
+	{
+		"tags":["epiphania","dies-octava","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Gregórii Nazianzéni.",
+			"Non possum cohibére lætítiæ voluptátem, sed mente extóllor, et affícior: et própriæ pusillitátis oblítus, offícium magni Joánnis, imo pótius famulátum subíre conténdo, ac géstio: et licet non sim præcúrsor, de erémo tamen vénio. Christus ergo illuminátur, imo pótius fulgóre suo nos illúminat: Christus baptizátur, simul et nos descendámus, ut cum ipso páriter ascendámus."
+		]
+	},
+	{
+		"tags":["epiphania","dies-octava","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Joánnes baptízat, et accédit Jesus, sanctíficans quidem et ipsum, qui baptízat, præcípue tamen ut et véterem Adam sepéliat in aquis, et ante ómnia, ut per hæc sanctificéntur aquæ Jordánis: ut sicut erat spíritus et caro, ita et his, qui baptizándi erant, in spíritu et aqua sanctificatiónis succéssio traderétur. Non súscipit Baptísta, conténdit Jesus. Ego, inquit, opus hábeo a te baptizári. Lucérna dicit ad Solem, et vox lóquitur ad Verbum."
+	},
+	{
+		"tags":["epiphania","dies-octava","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Ascéndit Jesus de aqua, secum quodámmodo demérsum edúcens et élevans mundum: et vidit non dívidi cœlum, sed aperíri, quod sibi ac nobis post se aliquándo Adam ille conclúserat; sicut et ígneo gládio paradísus fúerat conclúsus. Spíritus sanctus testimónium pérhibet: simília namque sibi ipsa concúrrunt. De cœlo testimónium defértur: inde enim erat ille, cui testimónium perhibétur."
+	},
+	{
+		"tags":["epiphania","dies-octava","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Vidit Joánnes Jesum veniéntem ad se, et ait: Ecce Agnus Dei, ecce qui tollit peccátum mundi. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Ántequam veníret Dóminus ut baptizarétur a Joánne in Jordáne, nóverat eum illis vócibus, ubi ait: Tu ad me venis baptizári? ego a te débeo baptizári. Sed ecce Dóminum nóverat, nóverat Fílium Dei. Unde probámus quod jam nóverat, quia ipse baptizáret in Spíritu sancto? Ántequam veníret ad flúvium, cum multi ad Joánnem cúrrerent baptizári, ait illis: Ego quidem baptízo vos in aqua: qui autem post me venit, major me est: cujus non sum dignus corrígiam calceaménti sólvere: ipse vos baptizábit in Spíritu sancto, et igni. Jam et hoc nóverat."
+		]
+	},
+	{
+		"tags":["epiphania","dies-octava","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Quid ergo per colúmbam dídicit, ne mendax póstea inveniátur, (quod avértat a nobis Deus opinári) nisi quamdam proprietátem in Christo talem futúram, ut quamvis multi minístri baptizatúri essent, sive justi, sive injústi, non tribuerétur sánctitas baptísmi, nisi illi, super quem descéndit colúmba, de quo dictum est: Hic est qui baptízat in Spíritu sancto? Petrus baptízet, hic est qui baptízat: Paulus baptízet, hic est qui baptízat: Judas baptízet, hic est qui baptízat. Nam si pro diversitáte meritórum baptísma sanctum est: quia divérsa sunt mérita, divérsa erunt baptísmata: et tanto quisque áliquid mélius putátur accípere, quanto a melióre vidétur accepísse."
+	},
+	{
+		"tags":["epiphania","dies-octava","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Ipsi sancti, (intellígite fratres) boni pertinéntes ad colúmbam, pertinéntes ad sortem civitátis illíus Jerúsalem, ipsi boni in Ecclésia, de quibus dicit Apóstolus: Novit Dóminus qui sunt ejus; diversárum gratiárum sunt, non omnes pária mérita habent. Sunt álii áliis sanctióres, sunt álii áliis melióres. Quare ergo si unus ab illo, verbi grátia, justo, sancto baptizétur, álius ab álio inferióris mériti apud Deum, inferióris gradus, inferióris continéntiæ, inferióris vitæ; unum tamen et par et æquále est quod accepérunt, nisi quia hic est, qui baptízat?"
 	}
 ]

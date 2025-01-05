@@ -397,6 +397,12 @@
 		"response":[
 			{"include":["commemoratio","semiduplex"],"remove":"commemoratio","adde":"omissum","target":1}
 		]
+	},
+	{
+		"include":["epiphania","dies-octava","i-vesperae"],
+		"response":[
+			{"include":["epiphania","infra-octavam","commemoratio"],"response":"dele","target":1}
+		]
 	}
 ]
 
