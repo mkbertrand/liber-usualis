@@ -240,10 +240,10 @@
 		]
 	},
 	{
-		"include":["epiphania","infra-octavam"],
+		"include":["epiphania","infra-octavam","primarium"],
 		"response":[
-			{"include":["dominica"],"response":"dele","target":0},
-			{"include":["post-epiphaniam","feria"],"response":"dele","target":1}
+			{"include":["post-epiphaniam","feria"],"response":"dele","target":1},
+			{"include":["epiphania","dominica-infra-octavam"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
