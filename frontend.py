@@ -92,7 +92,8 @@ def rite():
 					traverse(v)
 		traverse(rite['datum'])
 
-	return breviarium.dump_data({'rite' : rite['datum'], 'translation' : translation})
+	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(parameters['date']))
+	return breviarium.dump_data({'rite' : rite['datum'], 'translation' : translation, 'day': tags})
 
 @get('/chant/<url:path>')
 def chant(url):

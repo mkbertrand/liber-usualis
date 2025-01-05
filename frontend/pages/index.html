@@ -25,17 +25,15 @@
 	},
 	async update() {
 		this.chant;
-		var response = await fetch('/day?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour)
-		var json = await response.json();
 		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
-		var primary = json.filter((tags) => tags.includes('primarium'))[0];
-		this.color = primary.filter((tag) => colors.includes(tag))[0];
-		console.log(this.color);
-		response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
-		json = await response.json();
+		var response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
+		var json = await response.json();
 		this.rite = render(json, this.chant);
 		this.initialized = true;
-	},
+
+		var primary = json.day.filter((tags) => tags.includes('primarium'))[0];
+		this.color = primary.filter((tag) => colors.includes(tag))[0];
+	}
 }" x-init="
 	if (date.getHours() < 6) {
 		hour = 'matutinum+laudes';
