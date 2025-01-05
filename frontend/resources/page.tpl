@@ -18,7 +18,7 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/burger-menu.svg" /></button>
 				<div id="project-logo">
-					<h1 id="website-temp-name">LIBER VSVALIS</h1>
+					<img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT">
 				</div>
 			</div>
 			<nav id="sidebar-nav" x-show="sidebarnavopen" x-transition x-data="{

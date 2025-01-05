@@ -6,7 +6,9 @@
 <script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
 <div id="content-container-outer" x-data="{
 	optionspanel: false,
-	day: new Date(),
+	date: new Date(),
+	day: '',
+	color: '',
 	hour: '',
 	chant: false,
 	translation: false,
@@ -16,35 +18,41 @@
 		return this.rite;
 	},
 	setDate(date) {
-		this.day = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.day.getTimezoneOffset() * 60000);
+		this.date = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.date.getTimezoneOffset() * 60000);
 	},
 	realDate() {
-		return new Date(this.day.getTime() - this.day.getTimezoneOffset() * 60000);
+		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000);
 	},
-	async updateRite() {
+	async update() {
 		this.chant;
-		var response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
+		var response = await fetch('/day?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour)
 		var json = await response.json();
+		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
+		var primary = json.filter((tags) => tags.includes('primarium'))[0];
+		this.color = primary.filter((tag) => colors.includes(tag))[0];
+		console.log(this.color);
+		response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
+		json = await response.json();
 		this.rite = render(json, this.chant);
 		this.initialized = true;
 	},
 }" x-init="
-	if (day.getHours() < 6) {
+	if (date.getHours() < 6) {
 		hour = 'matutinum+laudes';
-	} else if (day.getHours() < 9) {
+	} else if (date.getHours() < 9) {
 		hour = 'prima';
-	} else if (day.getHours() < 11) {
+	} else if (date.getHours() < 11) {
 		hour = 'tertia';
-	} else if (day.getHours() < 14) {
+	} else if (date.getHours() < 14) {
 		hour = 'sexta';
-	} else if (day.getHours() < 16) {
+	} else if (date.getHours() < 16) {
 		hour = 'nona';
-	} else if (day.getHours() < 20) {
+	} else if (date.getHours() < 20) {
 		hour = 'vesperae';
 	} else {
 		hour = 'completorium';
 	}
-" x-effect="updateRite()">
+" x-effect="update()">
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 			<div id="options-panel-title">Options</div>
@@ -52,7 +60,7 @@
 			<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
 		</div>
 	</div>
-	<div id="side-panel-left">
+	<div id="side-panel-left" :class="color">
 	</div>
 	<div id="rite-page-container">
 		<div x-show="initialized" id="rite-container" x-html="Rite">
@@ -61,10 +69,10 @@
 			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" src="/resources/svg/down.svg" /></button>
 			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
 				<div id="date-selector-container" x-data="{search: ''}">
-					<button id="date-selector-decrement" class="date-selector-button" @click="day = new Date(day.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
+					<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
 					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
 					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
-					<button id="date-selector-increment" class="date-selector-button" @click="day = new Date(day.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
+					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
 					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
 				</div>
 				<div id="rite-selector-container" x-data="{
@@ -77,6 +85,6 @@
 			</div>
 		</div>
 	</div>
-	<div id="side-panel-right">
+	<div id="side-panel-right" :class="color">
 	</div>
 </div>

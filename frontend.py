@@ -43,7 +43,7 @@ def flattensetlist(sets):
 		ret |= i
 	return ret
 
-@get('/kalendar')
+@get('/day')
 def kalendar():
 	parameters = copy.deepcopy(request.query)
 
@@ -52,7 +52,7 @@ def kalendar():
 	else:
 		parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if parameters['hour'] == 'vesperae' or parameters['hour'] == 'completorium' else prioritizer.getdiurnal(parameters['date']))
+	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(parameters['date']))
 
 	for i in tags:
 		for j in implicationtable:

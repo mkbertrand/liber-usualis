@@ -13,7 +13,22 @@
 #side-panel-left, #side-panel-right {
 	width: 20em;
 	flex-shrink: 0;
-	background-color: #f9f9ee;
+}
+
+.violacei {
+	background-color: #fcdaff;
+}
+
+.rubri {
+	background-color: #ffcfcf;
+}
+
+.viridis {
+	background-color: #cfe8cf;
+}
+
+.aurei {
+	background-color: #f9f9f9;
 }
 
 @media only screen and (max-width: 70em) {
