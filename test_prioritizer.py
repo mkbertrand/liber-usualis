@@ -6,9 +6,11 @@ from datetime import date, timedelta
 import prioritizer
 import kalendar.datamanage
 
+year = 2001
+
 @pytest.mark.parametrize('dateoffset',range(0, 365))
 def test_singleprimary(dateoffset):
-	day = date(2000, 1, 1) + timedelta(days=dateoffset)
+	day = date(2001, 1, 1) + timedelta(days=dateoffset)
 	print(kalendar.datamanage.getdate(day))
 	print(kalendar.datamanage.getdate(day + timedelta(days = 1)))
 	result = prioritizer.getvespers(day)
