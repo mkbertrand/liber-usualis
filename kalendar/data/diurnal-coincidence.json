@@ -7,12 +7,6 @@
 		]
 	},
 	{
-		"include":["simplex","primarium"],
-		"response":[
-			{"include":["feria","omissum"],"response":"duplicate","remove":"omissum","adde":["matutinum","psalmi"],"target":1}
-		]
-	},
-	{
 		"include":["vigilia-nativitatis","primarium"],
 		"response":[
 			{"include":["hebdomada-iv-adventus"],"response":"duplicate","remove":"commemoratio","adde":["hora","matutinum"],"target":1},

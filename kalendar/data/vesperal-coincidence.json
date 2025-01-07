@@ -380,7 +380,6 @@
 	{
 		"include":["simplex","i-vesperae","primarium"],
 		"response":[
-			{"include":["feria","ii-vesperae"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
 			{"include":["feria","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
