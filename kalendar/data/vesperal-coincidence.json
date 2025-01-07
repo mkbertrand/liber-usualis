@@ -31,6 +31,11 @@
 		"response":"dele"
 	},
 	{
+		"include":["sabbatum","feria","ii-vesperae"],
+		"recheck":false,
+		"response":"dele"
+	},
+	{
 		"include":["vigilia","i-vesperae"],
 		"exclude":["vigilia-epiphaniae"],
 		"recheck":false,
@@ -330,15 +335,15 @@
 		]
 	},
 	{
-		"include":["dominica","semiduplex","i-vesperae"],
+		"include":["dominica","semiduplex","i-vesperae","primarium"],
 		"response":[
+			{"include":["epiphania"],"remove":"primarium","adde":"omissum","target":0},
 			{"include":["semiduplex","ii-vesperae","primarium"],"response":"duplicate","remove":"primarium","adde":["psalmi","vesperae"],"target":1},
 			{"include":["semiduplex","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["duplex-i-classis","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-ii-classis","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-majus","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
-			{"include":["duplex-minus","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
-			{"include":["feria","ii-vesperae"],"response":"dele","target":1}
+			{"include":["duplex-minus","primarium","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
@@ -380,7 +385,7 @@
 	{
 		"include":["simplex","i-vesperae","primarium"],
 		"response":[
-			{"include":["feria","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1}
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
