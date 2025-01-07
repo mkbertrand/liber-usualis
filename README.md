@@ -13,9 +13,10 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 ```bash
 git clone https://github.com/mkbertrand/liber-usualis
 cd liber-usualis
-pip install bottle pytest
+pip install bottle pytest diff-match-patch
 ```
 
+Note: diff-match-patch is only necessary for test_breviarium.
 ### Running
 
 To run only the backend, backend.py is run as follows:
