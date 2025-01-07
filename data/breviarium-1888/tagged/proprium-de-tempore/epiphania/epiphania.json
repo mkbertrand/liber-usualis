@@ -706,6 +706,14 @@
 		"datum":"Remánsit * puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus, existimántes illum esse in comitátu: et requirébant eum inter cognátos et notos."
 	},
 	{
+		"tags":["epiphania","dominica-infra-octavam","collecta"],
+		"reference":["hebdomada-i-epiphaniae","collecta"]
+	},
+	{
+		"tags":["epiphania","dominica-infra-octavam","collecta","terminatio"],
+		"reference":["hebdomada-i-epiphaniae","collecta","terminatio"]
+	},
+	{
 		"tags":["epiphania","infra-octavam","commemoratio","versiculus"],
 		"datum":["V. Omnes de Saba vénient, allelúja.","R. Aurum et thus deferéntes, allelúja."]
 	},
@@ -722,7 +730,7 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio"],
-		"datum":[["hebdomada-i-epiphaniae","dominica","matutinum","nocturna-i","lectio"]]
+		"datum":[["hebdomada-i-epiphaniae","dominica","lectio"]]
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","translatum","matutinum","nocturna-i","lectio","lectio-ii"],

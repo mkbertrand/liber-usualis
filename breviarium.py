@@ -46,8 +46,8 @@ implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.j
 
 # List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
 objects = datamanage.load_data('data/breviarium-1888/categoriae/objecta.json')
-positionales = datamanage.load_data('data/breviarium-1888/categoriae/positionales.json')
-positionalesset = flattensetlist(positionales)
+positionals2d = datamanage.load_data('data/breviarium-1888/categoriae/positionales.json')
+positionals = flattensetlist(positionals2d)
 propria = datamanage.load_data('data/breviarium-1888/categoriae/propria.json')
 
 def prettyprint(j):
@@ -149,7 +149,8 @@ def process(root, item, selected, alternates, pile):
 		item = {'from':item}
 
 	if 'reference' in item:
-		alternates.append(selected)
+		alternates = copy.deepcopy(alternates)
+		alternates.append(selected - objects - positionals)
 		# Just in case an item needs to change depending on whether it is a reference
 		selected = item['reference'] | {'referens'}
 		pile = datamanage.getpile(root, defaultpile | selected)
@@ -159,30 +160,22 @@ def process(root, item, selected, alternates, pile):
 	if 'from' in item:
 		result = None
 		for i in range(len(alternates)):
-			if False and len(item['from'] - objects - positionalesset) != 0 and item['from'] - objects - positionalesset <= alternates[i]:
-				# If new positionales are specified, toss the old ones, otherwise be nice and let user keep them
-				print(item['from'])
-				print(selected)
-				print(alternates)
-				if positionalesset.isdisjoint(item['from']):
-					alternates = copy.deepcopy(alternates)
-					alternates[i] |= selected & positionalesset
-				print(item['from'] | alternates[i])
-				result = search(root, item['from'] | alternates[i], pile)
+			if len(item['from'] - objects - positionals) != 0 and item['from'] - objects - positionals <= alternates[i]:
 				alternates = copy.deepcopy(alternates)
-				alternates.append(selected)
+				alternates.append(selected - positionals)
+				selected = alternates.pop(i) | (selected & positionals)
 				break
 			elif item['from'] <= alternates[i]:
 				result = search(root, item['from'] | alternates[i], pile)
 				alternates = copy.deepcopy(alternates)
 				alternates.append(selected)
-				selected = alternates.pop(i) - objects | (selected & positionalesset)
+				selected = alternates.pop(i) - objects | (selected & positionals)
 				break
 
 		selected = copy.deepcopy(selected)
 		# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
-		if any([len(i & (item['from'] | selected)) > 1 for i in positionales]):
-			selected -= positionalesset
+		if any([len(i & (item['from'] | selected)) > 1 for i in positionals2d]):
+			selected -= positionals
 		if result is None:
 			result = search(root, item['from'] | selected, pile)
 		if result is None:
