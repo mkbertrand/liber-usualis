@@ -246,18 +246,18 @@
 		"datum":[
 			"Veníte, exsultémus Dómino: * jubilémus Deo salutári nostro:",
 			"Præoccupémus fáciem ejus in confessióne: * et in psalmis jubilémus ei.",
-			["antiphona","antiphona-i","repetita"],
+			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
 			"Quóniam Deus magnus Dóminus: * et Rex magnus super omnes deos.",
 			"Quia in manu ejus sunt omnes fines terræ: * et altitúdines móntium ipsíus sunt.",
-			["antiphona","antiphona-i","repetita"],
+			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
 			"Quóniam ipsíus est mare, et ipse fecit illud: * et siccam manus ejus formavérunt.",
-			["antiphona","antiphona-i","repetita"],
+			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
 			"Et nos pópulus páscuæ ejus, et oves manus ejus. * Hódie si vocem ejus audiéritis, nolíte obduráre corda vestra:",
 			"Sicut in irritatióne secúndum diem tentatiónis in desérto: * ubi tentavérunt me patres vestri, probavérunt me, et vidérunt ópera mea.",
-			["antiphona","antiphona-i","repetita"],
+			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
 			"Quadragínta annis offénsus fui generatióni illi, * et dixi: Semper hi errant corde.",
 			"Et isti non cognovérunt vias meas, ut jurávi in ira mea: * Si introíbunt in réquiem meam.",
-			["antiphona","antiphona-i","repetita"],
+			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
 			["/psalmi/gloria"]
 		]
 	},
@@ -706,11 +706,6 @@
 		"datum":"Remánsit * puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus, existimántes illum esse in comitátu: et requirébant eum inter cognátos et notos."
 	},
 	{
-		"tags":["epiphania","dominica-infra-octavam","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Vota, quǽsumus Dómine, suplicántis pópuli cœlésti pietáte proséquere: + ut et quæ agénda sunt, vídeant, * et ad implénda quæ víderint, convaléscant."
-	},
-	{
 		"tags":["epiphania","infra-octavam","commemoratio","versiculus"],
 		"datum":["V. Omnes de Saba vénient, allelúja.","R. Aurum et thus deferéntes, allelúja."]
 	},
@@ -719,18 +714,22 @@
 		"datum":["V. Adoráte Deum, allelúja.","R. Omnes Ángeli ejus, allelúja."]
 	},
 	{
-		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-i"],
+		"tags":["epiphania","dominica-infra-octavam","translatum","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Epístola ad Romános.",
 			"Comméndo autem vobis Phœben sorórem nostram, quæ est in ministério Ecclésiæ, quæ est in Cenchris: ut eam suscipiátis in Dómino digne sanctis: et assistátis ei in quocúmque negótio vestri indigúerit: étenim ipsa quoque ástitit multis, et mihi ipsi. Salutáte Priscam et Áquilam adjutóres meos in Christo Jesu; (qui pro ánima mea suas cervíces supposuérunt: quibus non solus ego grátias ago, sed et cunctæ Ecclésiæ Géntium) et domésticam Ecclésiam eórum."
 		]
 	},
 	{
-		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-ii"],
+		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio"],
+		"datum":[["hebdomada-i-epiphaniae","dominica","matutinum","nocturna-i","lectio"]]
+	},
+	{
+		"tags":["epiphania","dominica-infra-octavam","translatum","matutinum","nocturna-i","lectio","lectio-ii"],
 		"datum":"Rogo autem vos fratres, ut observétis eos, qui dissensiónes et offendícula præter doctrínam, quam vos didicístis, fáciunt, et declináte ab illis. Hujuscémodi enim Christo Dómino nostro non sérviunt, sed suo ventri: et per dulces sermónes, et benedictiónes sedúcunt corda innocéntium. Vestra enim obediéntia in omnem locum divulgáta est. Gaúdeo ígitur in vobis. Sed volo vos sapiéntes esse in bono, et símplices in malo."
 	},
 	{
-		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-iii"],
+		"tags":["epiphania","dominica-infra-octavam","translatum","matutinum","nocturna-i","lectio","lectio-iii"],
 		"datum":"Salútat vos Timótheus adjútor meus, et Lúcius, et Jason, et Sosípater cognáti mei. Salúto vos ego Tértius, qui scripsi epístolam, in Dómino. Salútat vos Cajus hospes meus, et univérsa Ecclésia. Salútat vos Erástus arcárius civitátis, et Quartus frater. Grátia Dómini nostri Jesu Christi cum ómnibus vobis. Amen."
 	},
 	{

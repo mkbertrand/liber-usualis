@@ -363,10 +363,10 @@
 			{"include":["duplex-ii-classis"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-majus"],"response":"transfer","target":1,"movement":1},
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
-			{"include":["duplex-minus"],"response":"dele","target":1},
+			{"include":["duplex-minus"],"response":"omissum","target":1},
 			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
-			{"include":["semiduplex"],"exclude":["epiphania"],"response":"dele","target":1},
-			{"include":["simplex"],"response":"dele","target":1},
+			{"include":["semiduplex"],"exclude":["epiphania"],"response":"omissum","target":1},
+			{"include":["simplex"],"exclude":["hyginus"],"response":"omissum","target":1},
 			{"include":["feria","primarium"],"response":"omissum","target":1}
 		]
 	},
