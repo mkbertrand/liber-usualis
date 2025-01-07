@@ -1,4 +1,12 @@
 [
+	"ante-officium",
+	"post-officium",
+	"prex-duplex",
+	"prex-triplex",
+	"collecta-primaria",
+	"collecta",
+	"terminatio",
+	"nomen-ritus",
 	"nomen",
 	"hora",
 	"hymnus",
@@ -13,5 +21,9 @@
 	"formula-lectionis",
 	"lectiones",
 	"formula-commemorationis",
-	"nocturna"
+	"nocturna",
+	"nocturnae",
+	"magnificat",
+	"benedictus",
+	"preces"
 ]
