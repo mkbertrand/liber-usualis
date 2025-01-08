@@ -365,10 +365,11 @@ def kalendar(year: int) -> Kalendar:
 
 	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 	roletags = set(roletagsordered)
+	noprimarium = roletags | {'psalmi-graduales', 'antiphona-bmv'}
 
 	for entrydate, entries in kal.items():
 		for entry in entries:
-			if entry.isdisjoint(roletags):
+			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
 	class Job(NamedTuple):

@@ -54,7 +54,7 @@ class TestKalendar:
         """Make sure each day of the year has only one entry which is not either a commemoration, part of the temporale, or a fixed reference"""
         date = datetime.date(kal.year, 1, 1)
         while date.year == kal.year:
-            assert len(list(filter(lambda entry: entry.isdisjoint({'omissum','tempus','commemoratio'}), kal[date]))) == 1
+            assert len(list(filter(lambda i: 'primarium' in i, kal[date]))) == 1
             assert len(list(filter(lambda entry: 'antiphona-bmv' in entry, kal[date]))) == 1
 
             date = date + datetime.timedelta(days=1)

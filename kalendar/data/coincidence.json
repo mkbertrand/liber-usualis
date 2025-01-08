@@ -1,10 +1,5 @@
 [
 	{
-		"include":["antiphona-bmv","primarium"],
-		"recheck":false,
-		"response":"omissum"
-	},
-	{
 		"include":["hebdomada-xxiv-pentecostes"],
 		"recheck":false,
 		"response":[
@@ -726,5 +721,9 @@
 	{
 		"include":["paschalis"],
 		"response":"aurei"
+	},
+	{
+		"include":["translatus-originalis"],
+		"response":"omissum"
 	}
 ]
