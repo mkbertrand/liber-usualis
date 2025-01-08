@@ -10,7 +10,7 @@
 			["deus-in-adjutorium","ferialis"],
 			["prima","hymnus"],
 			["prima","antiphona","antiphona-i","intonata"],
-			["prima","psalmodia"],
+			["prima","psalmi"],
 			["prima","antiphona","antiphona-i","repetita"],
 			["prima","capitulum"],
 			"R. Deo grátias.",
@@ -70,7 +70,7 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["prima","psalmodia"],
+		"tags":["prima","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
@@ -78,7 +78,7 @@
 		]
 	},
 	{
-		"tags":["prima","dominica","psalmodia"],
+		"tags":["prima","dominica","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-cxvii,gloria"],
@@ -259,7 +259,7 @@
 		"datum":"Beati * qui ámbulant in lege Dómini."
 	},
 	{
-		"tags":["prima","feria-ii","psalmodia"],
+		"tags":["prima","feria-ii","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxiii,gloria"],
@@ -268,7 +268,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-iii","psalmodia"],
+		"tags":["prima","feria-iii","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxiv,gloria"],
@@ -277,7 +277,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-iv","psalmodia"],
+		"tags":["prima","feria-iv","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxv,gloria"],
@@ -286,7 +286,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-v","psalmodia"],
+		"tags":["prima","feria-v","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxii,gloria"],
@@ -295,7 +295,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-vi","psalmodia"],
+		"tags":["prima","feria-vi","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxi,gloria"],
