@@ -261,18 +261,20 @@ def kalendar(year: int) -> Kalendar:
 		date0 = todate(entry['date'], year)
 		kal.add_entry(date0, entry['tags'])
 	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex'})
-	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','hebdomada-i-epiphaniae','semiduplex'})
+	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','semiduplex'})
 	if date(year, 1, 6).isoweekday() == 7:
 		epiphanysunday = date(year, 1, 12)
 		kal.transfer({'epiphania','dominica-infra-octavam'}, target=epiphanysunday)
 
 	currday = 2
+	pdom = False
 	for i in range(0, 6):
 		if not date(year, 1, 7 + i) == epiphanysunday:
-			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 1]})
+			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 1], 'post-dominicam' if pdom else 'ante-dominicam'})
 			currday += 1
 		else:
 			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','commemoratio'})
+			pdom = True
 
 	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus'})
 
