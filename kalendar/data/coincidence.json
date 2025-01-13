@@ -735,5 +735,15 @@
 			{"include":["duplex-minus"],"response":"dele","target":0},
 			{"include":["semiduplex"],"response":"dele","target":0}
 		]
+	},
+	{
+		"include":["psalmi-poenitentiales"],
+		"response":[
+			{"include":["duplex-i-classis"],"response":"dele","target":0},
+			{"include":["duplex-ii-classis"],"response":"dele","target":0},
+			{"include":["duplex-majus"],"response":"dele","target":0},
+			{"include":["duplex-minus"],"response":"dele","target":0},
+			{"include":["semiduplex"],"response":"dele","target":0}
+		]
 	}
 ]
