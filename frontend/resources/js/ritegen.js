@@ -1,4 +1,4 @@
-// Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+// Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 trivialchants = ['deus-in-adjutorium'];
 function stringrender(data) {
@@ -43,6 +43,9 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 	try {
 		if (typeof data === 'object' && 'tags' in data) {
 			if (data['tags'].includes('nomen-ritus')) {
+				if (typeof (data['datum']) === 'string') {
+					return '<h2 class="rite-name">' + data['datum'] + '</h2>';
+				}
 				nom = data['datum'][1];
 				if (typeof data['datum'][1] === 'object')
 					nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];

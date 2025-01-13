@@ -5,6 +5,7 @@
 <script type="text/javascript" src="/resources/js/exsurge.js"></script>
 <script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
 <div id="content-container-outer" x-data="{
+	defaultlist: [],
 	optionspanel: false,
 	date: new Date(),
 	day: '',
@@ -23,32 +24,47 @@
 	realDate() {
 		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000);
 	},
+	get RiteList() {
+		if (this.day == '') {
+			return defaultlist;
+		}
+		list = JSON.parse(JSON.stringify(defaultlist));
+		if (this.day.some(i => i.includes('psalmi-graduales'))) {
+			list.unshift({'id':'psalmi-graduales', 'name':'Psalmi Graduales'});
+		}
+		if (this.day.some(i => i.includes('psalmi-poenitentiales'))) {
+			list.splice(1, 0, {'id':'psalmi-poenitentiales', 'name':'Psalmi Poenitentiales'});
+
+		}
+		return list;
+	},
 	async update() {
 		this.chant;
 		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
 		var response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
 		var json = await response.json();
 		this.rite = render(json, this.chant);
-		this.initialized = true;
-
-		var primary = json.day.filter((tags) => tags.includes('primarium'))[0];
+		this.day = json.day;
+		var primary = this.day.filter((tags) => tags.includes('primarium'))[0];
 		this.color = primary.filter((tag) => colors.includes(tag))[0];
+		this.initialized = true;
 	}
 }" x-init="
+	this.defaultlist = [{'id':'ante-officium+matutinum+laudes+post-officium', 'name':'Matutinum & Laudes'}, {'id':'ante-officium+prima+post-officium', 'name':'Prima'}, {'id':'ante-officium+tertia+post-officium', 'name':'Tertia'}, {'id':'ante-officium+sexta+post-officium', 'name':'Sexta'}, {'id':'ante-officium+nona+post-officium', 'name':'Nona'}, {'id':'ante-officium+vesperae+post-officium', 'name':'Vesperae'}, {'id':'ante-officium+completorium+post-officium', 'name':'Completorium'}];
 	if (date.getHours() < 6) {
-		hour = 'matutinum+laudes';
+		hour = this.defaultlist[0].id;
 	} else if (date.getHours() < 9) {
-		hour = 'prima';
+		hour = this.defaultlist[1].id;
 	} else if (date.getHours() < 11) {
-		hour = 'tertia';
+		hour = this.defaultlist[2].id;
 	} else if (date.getHours() < 14) {
-		hour = 'sexta';
+		hour = this.defaultlist[3].id;
 	} else if (date.getHours() < 16) {
-		hour = 'nona';
+		hour = this.defaultlist[4].id;
 	} else if (date.getHours() < 20) {
-		hour = 'vesperae';
+		hour = this.defaultlist[5].id;
 	} else {
-		hour = 'completorium';
+		hour = this.defaultlist[6].id;
 	}
 " x-effect="update()">
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
@@ -73,10 +89,8 @@
 					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
 					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
 				</div>
-				<div id="rite-selector-container" x-data="{
-					 rites: [{'id': 'matutinum+laudes', 'name':'Matutinum &amp; Laudes'}, {'id': 'prima', 'name': 'Prima'}, {'id': 'tertia', 'name': 'Tertia'}, {'id': 'sexta', 'name': 'Sexta'}, {'id': 'nona', 'name': 'Nona'}, {'id': 'vesperae', 'name': 'Vesperae'}, {'id': 'completorium', 'name': 'Completorium'}]
-					 }">
-					<template x-for="rite in rites">
+				<div id="rite-selector-container">
+					<template x-for="rite in RiteList">
 						<button class="rite-selector-button" :class="(rite.id == hour) && 'rite-selector-button-selected'" @click="hour = rite.id" x-text="rite.name"></button>
 					</template>
 				</div>

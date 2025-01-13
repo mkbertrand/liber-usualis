@@ -15,7 +15,7 @@ import sys
 
 import psalms
 
-defaultpile = {'formulae'}
+defaultpile = {'formulae', 'litaniae-sanctorum'}
 
 def dump_data(j):
 
@@ -221,10 +221,11 @@ def generate(root, day, hour: str):
 
 	lit = []
 	for hour in hours:
-		lit.extend([{'nomen-ritus', hour}, {'hora', hour}])
-	return process(root, {'tags':{'ritus'},'datum':[
-		{'ante-officium'}, *lit, {'post-officium'}
-		]}, primary, tags, pile)
+		if hour in {'matutinum', 'laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium', 'psalmi-graduales', 'psalmi-poenitentiales'}:
+			lit.extend([{'nomen-ritus', hour}, {'hora', hour}])
+		else:
+			lit.append({'hora', hour})
+	return process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 
 if __name__ == '__main__':
 	import argparse
@@ -274,19 +275,19 @@ if __name__ == '__main__':
 
 	match datetime.now().hour:
 		case 0 | 2 | 3 | 4 | 5:
-			defaulthour = 'matutinum laudes'
+			defaulthour = 'ante-officium+matutinum+laudes+post-officium'
 		case 6 | 7:
-			defaulthour = 'prima'
+			defaulthour = 'ante-officium+prima+post-officium'
 		case 8 | 9 | 10:
-			defaulthour = 'tertia'
+			defaulthour = 'ante-officium+tertia+post-officium'
 		case 11 | 12 | 13:
-			defaulthour = 'sexta'
+			defaulthour = 'ante-officium+sexta+post-officium'
 		case 14 | 15:
-			defaulthour = 'nona'
+			defaulthour = 'ante-officium+nona+post-officium'
 		case 16 | 17 | 18 | 19:
-			defaulthour = 'vesperae'
+			defaulthour = 'ante-officium+vesperae+post-officium'
 		case 20 | 21 | 22 | 23:
-			defaulthour = 'completorium'
+			defaulthour = 'ante-officium+completorium+post-officium'
 
 	parser.add_argument(
 		'-hr',
