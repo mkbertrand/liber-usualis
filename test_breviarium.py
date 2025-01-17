@@ -44,21 +44,28 @@ def flattensetlist(sets):
 def test_match(day) -> None:
 	warnings.filterwarnings('ignore')
 
-	for j in ['matutinum+laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
-		old = str(striptags(datamanage.load_data(f'testdata/{day}-vesperal.json' if 'vesperae' in j else f'testdata/{day}-diurnal.json')))
+	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
+		old = str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json')))
 		new = str(striptags(breviarium.generate(root, day, j)))
 
 		diffs = dmp.diff_main(old, new)
 		dmp.diff_cleanupSemantic(diffs)
 
 		change = False
+		changelog = ''
 		for (op, item) in diffs:
 			if op == dmp.DIFF_DELETE:
-				print(f'- {item.replace('\\', '')}')
+				print(f'- {item.replace('\\', '')}\n')
+				changelog += f'- {item.replace('\\', '')}\n\n'
 				change = True
 			elif op == dmp.DIFF_INSERT:
 				print(f'+ {item.replace('\\', '')}')
+				changelog += f'+ {item.replace('\\', '')}\n'
 				change = True
 			# Don't print if there's an equal section since this is superfluous
+
+		if change:
+			with open(f'testresults/{day}-{j.replace("+", "-")}.json', 'w') as fileout:
+				fileout.write(changelog)
 
 		assert not change
