@@ -190,7 +190,7 @@ def process(root, item, selected, alternates, pile):
 
 	if 'reference' in item:
 		alternates = copy.deepcopy(alternates)
-		alternates.append(selected - (expandcat(root, 'objecta') | expandcat(root, 'positionales')))
+		alternates.append(selected & expandcat(root, 'temporale'))
 		# Just in case an item needs to change depending on whether it is a reference
 		selected = item['reference'] | {'referens'}
 		pile = datamanage.getpile(root, defaultpile | selected)
@@ -201,11 +201,13 @@ def process(root, item, selected, alternates, pile):
 		result = None
 		if not any('/' in i for i in item['from']):
 			for i in range(len(alternates)):
-				if len(item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales'))) != 0 and item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales')) <= alternates[i]:
+				# Basically if the from is explicitly calling for some day's propers, remove the other day context to facilitate this
+				if len(item['from'] & expandcat(root, 'temporale')) != 0 and item['from'] & expandcat(root, 'temporale') <= alternates[i]:
 					alternates = copy.deepcopy(alternates)
 					alternates.append(selected - expandcat(root, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(root, 'positionales'))
 					break
+				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
 				elif item['from'] <= alternates[i]:
 					result = search(root, item['from'] | alternates[i], pile)
 					alternates = copy.deepcopy(alternates)

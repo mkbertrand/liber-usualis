@@ -171,26 +171,26 @@
 	},
 	{
 		"tags":["matutinum","nocturnae","feria"],
-		"datum":[["matutinum","feria","nocturna","duodecim-psalmi","sex-antiphonae"]]
+		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","simplex"],
-		"datum":[["matutinum","simplex","nocturna","duodecim-psalmi","sex-antiphonae","te-deum"]]
+		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae","te-deum"]]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica"],
 		"datum":[
-			["matutinum","dominica","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
-			["matutinum","dominica","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["matutinum","dominica","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
+			["matutinum","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica","poenitentialis"],
 		"datum":[
-			["matutinum","dominica","poenitentialis","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
-			["matutinum","dominica","poenitentialis","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["matutinum","dominica","poenitentialis","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+			["matutinum","poenitentialis","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["matutinum","poenitentialis","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","poenitentialis","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{
@@ -204,9 +204,9 @@
 	{
 		"tags":["matutinum","nocturnae","innocentes","festum"],
 		"datum":[
-			["matutinum","innocentes","festum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
-			["matutinum","innocentes","festum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["matutinum","innocentes","festum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+			["matutinum","festum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["matutinum","festum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","festum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{
