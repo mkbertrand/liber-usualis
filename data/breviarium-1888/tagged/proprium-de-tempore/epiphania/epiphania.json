@@ -91,7 +91,7 @@
 		"tags":["epiphania","festum","matutinum","hora"],
 		"datum":[
 			["prex-triplex"],
-			["epiphania","festum","matutinum","nocturnae"]
+			["matutinum","nocturnae"]
 		]
 	},
 	{
@@ -246,18 +246,18 @@
 		"datum":[
 			"Veníte, exsultémus Dómino: * jubilémus Deo salutári nostro:",
 			"Præoccupémus fáciem ejus in confessióne: * et in psalmis jubilémus ei.",
-			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
+			["antiphona","antiphona-i","repetita"],
 			"Quóniam Deus magnus Dóminus: * et Rex magnus super omnes deos.",
 			"Quia in manu ejus sunt omnes fines terræ: * et altitúdines móntium ipsíus sunt.",
-			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
+			["antiphona","antiphona-i","repetita"],
 			"Quóniam ipsíus est mare, et ipse fecit illud: * et siccam manus ejus formavérunt.",
-			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
+			["antiphona","antiphona-i","repetita"],
 			"Et nos pópulus páscuæ ejus, et oves manus ejus. * Hódie si vocem ejus audiéritis, nolíte obduráre corda vestra:",
 			"Sicut in irritatióne secúndum diem tentatiónis in desérto: * ubi tentavérunt me patres vestri, probavérunt me, et vidérunt ópera mea.",
-			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
+			["antiphona","antiphona-i","repetita"],
 			"Quadragínta annis offénsus fui generatióni illi, * et dixi: Semper hi errant corde.",
 			"Et isti non cognovérunt vias meas, ut jurávi in ira mea: * Si introíbunt in réquiem meam.",
-			["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i","repetita"],
+			["antiphona","antiphona-i","repetita"],
 			["/psalmi/gloria"]
 		]
 	},
@@ -317,7 +317,7 @@
 	{
 		"tags":["epiphania","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"src":"nocturnale/0106N3R2",
-		"formula":[["formula","responsorium","gloria","duplex-responsum","epiphania","nocturna-iii","responsorium-ii"]],
+		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
 		"incipit":"Vidéntes stellam Magi, gavísi sunt gaúdio magno:",
 		"responsum-i":"Et intrántes domum invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum:",
 		"responsum-ii":"Et apértis thesaúris suis obtulérunt ei múnera, aurum, thus, et myrrham.",
