@@ -2,6 +2,7 @@
 
 # Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+import os
 import pathlib
 import json
 import copy
@@ -12,29 +13,15 @@ import datamanage
 import warnings
 import logging
 import sys
+import functools
 
 import psalms
 
 defaultpile = {'formulae', 'litaniae-sanctorum'}
 
-def dump_data(j):
-
-	# JSON doesn't like sets, so turn sets back into lists for JSON encoding.
-
-	def recurse(obj, key=None):
-		match obj:
-			case dict():
-				return {k: recurse(v, key=k) for k, v in obj.items()}
-			case list():
-				return [recurse(v) for v in obj]
-			case set() | frozenset():
-				if all(type(x) is str for x in obj):
-					return sorted(list(obj))
-				return [recurse(v) for v in obj]
-			case _:
-				return obj
-
-	return json.dumps(recurse(j))
+@functools.lru_cache(maxsize=64)
+def getcategory(root, category):
+	return datamanage.load_data(f'data/{root}/categoriae/{category}.json')
 
 def flattensetlist(sets):
 	ret = set()
@@ -42,13 +29,65 @@ def flattensetlist(sets):
 		ret |= i
 	return ret
 
-implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
+def flatcat(root, category):
+	return flatcat0(getcategory(root, category))
 
-# List of tags which are reserved for ID'ing content (like chapters, antiphons, etc)
-objects = datamanage.load_data('data/breviarium-1888/categoriae/objecta.json')
-positionals2d = datamanage.load_data('data/breviarium-1888/categoriae/positionales.json')
-positionals = flattensetlist(positionals2d)
-propria = datamanage.load_data('data/breviarium-1888/categoriae/propria.json')
+def flatcat0(category):
+	if type(category) is set:
+		return category
+	elif type(category) is list:
+		return flattensetlist(category)
+	else:
+		raise RuntimeError()
+
+@functools.lru_cache(maxsize=16)
+def expandcat(root, category):
+	return expandcat0(root, getcategory(root, category))
+
+def expandcat0(root, category):
+	if type(category) is set or type(category) is frozenset:
+		ret = set()
+		for i in category:
+			if i.startswith('/'):
+				ret |= expandcat(root, i[1:])
+			else:
+				ret.add(i)
+		return ret
+	elif type(category) is list:
+		return expandcat0(root, flattensetlist(category))
+	else:
+		raise RuntimeError(str(category))
+
+def matches(root, tag, tags):
+	if tag.startswith('/'):
+		return check(getcategory(root, tag[1:]), tags)
+	else:
+		return tag in tags
+
+def check(root, category, tags):
+	return check0(root, getcategory(root, category))
+
+def check0(root, category, tags):
+	if type(category) is set or type(category) is frozenset:
+		return any([matches(root, tag, tags) for tag in category])
+	elif type(category) is list:
+		return any([check0(root, i, tags) for i in categories])
+	else:
+		raise RuntimeError()
+
+
+def contradicts(root, category, tags):
+	return contradicts0(root, getcategory(root, category), tags)
+
+def contradicts0(root, category, tags):
+	if type(category) is set or type(category) is frozenset:
+		return False
+	elif type(category) is list:
+		return any([sum([matches(root, tag, tags) for tag in subcat]) > 1 for subcat in category])
+	else:
+		return RuntimeError()
+
+implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
 
 def prettyprint(j):
 	def recurse(obj):
@@ -85,13 +124,14 @@ def anysearch(query, pile):
 def discriminate(root, table: str, tags: set):
 	table = datamanage.getdiscrimina(root, table)
 	val = 0
-	if not tags.isdisjoint(propria):
-		tags |= {':propria'}
 	for i in range(0, len(table)):
-		include = set(filter(lambda a: a[0] != '!', table[i]))
-		exclude = {a[1:] for a in table[i] - include}
-		# Adds 1 or 0 lower on the number as the position in the table increases using binary operators. The higher the position in the table (IE the farther down in the table), the lower precedence something is.
-		val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
+		if len(table[i]) == 1 and list(table[i])[0].startswith('/'):
+			val |= (not tags.isdisjoint(expandcat(root, list(table[i])[0]))) << (len(table) - i - 1)
+		else:
+			include = set(filter(lambda a: a[0] != '!', table[i]))
+			exclude = {a[1:] for a in table[i] - include}
+			# Adds 1 or 0 lower on the number as the position in the table increases using binary operators. The higher the position in the table (IE the farther down in the table), the lower precedence something is.
+			val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
 	return val
 
 def search(root, query, pile, multipleresults = False, multipleresultssort = None, rootappendix = ''):
@@ -150,39 +190,42 @@ def process(root, item, selected, alternates, pile):
 
 	if 'reference' in item:
 		alternates = copy.deepcopy(alternates)
-		alternates.append(selected - objects - positionals)
+		alternates.append(selected - (expandcat(root, 'objecta') | expandcat(root, 'positionales')))
 		# Just in case an item needs to change depending on whether it is a reference
 		selected = item['reference'] | {'referens'}
 		pile = datamanage.getpile(root, defaultpile | selected)
-		response = process(root, search(root, selected, pile), selected - objects, alternates, pile)
+		response = process(root, search(root, selected, pile), selected - expandcat(root, 'objecta'), alternates, pile)
 		return response
 
 	if 'from' in item:
 		result = None
-		for i in range(len(alternates)):
-			if len(item['from'] - objects - positionals) != 0 and item['from'] - objects - positionals <= alternates[i]:
-				alternates = copy.deepcopy(alternates)
-				alternates.append(selected - positionals)
-				selected = alternates.pop(i) | (selected & positionals)
-				break
-			elif item['from'] <= alternates[i]:
-				result = search(root, item['from'] | alternates[i], pile)
-				alternates = copy.deepcopy(alternates)
-				alternates.append(selected)
-				selected = alternates.pop(i) - objects | (selected & positionals)
-				break
+		if not any('/' in i for i in item['from']):
+			for i in range(len(alternates)):
+				if len(item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales'))) != 0 and item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales')) <= alternates[i]:
+					alternates = copy.deepcopy(alternates)
+					alternates.append(selected - expandcat(root, 'positionales'))
+					selected = alternates.pop(i) | (selected & expandcat(root, 'positionales'))
+					break
+				elif item['from'] <= alternates[i]:
+					result = search(root, item['from'] | alternates[i], pile)
+					alternates = copy.deepcopy(alternates)
+					alternates.append(selected)
+					selected = alternates.pop(i) - expandcat(root, 'objecta') | (selected & expandcat(root, 'positionales'))
+					break
+				elif False and len(item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales'))) != 0:
+					raise RuntimeError(item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales')))
 
 		selected = copy.deepcopy(selected)
 		# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
-		if any([len(i & (item['from'] | selected)) > 1 for i in positionals2d]):
-			selected -= positionals
+		if contradicts(root, 'positionales', item['from'] | selected):
+			selected -= expandcat(root, 'positionales')
 		if result is None:
 			result = search(root, item['from'] | selected, pile)
 		if result is None:
 			# It has to be sorted for testing purposes
 			return str(sorted(list(item['from'] | selected)))
 		# Removes tags referring to things like Antiphons, Responsories, etc
-		selected = (selected | item['from']) - objects
+		selected = (selected | item['from']) - expandcat(root, 'objecta')
 		response = process(root, result, selected, alternates, pile)
 
 		if 'tags' in item:
@@ -310,5 +353,5 @@ if __name__ == '__main__':
 		prettyprint(ret)
 	else:
 		# Write JSON output
-		args.output.write(dump_data(ret) + '\n')
+		args.output.write(datamanage.dump_data(ret) + '\n')
 

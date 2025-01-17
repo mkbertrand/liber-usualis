@@ -31,6 +31,24 @@ def load_data(p: str):
 
 	return recurse(data)
 
+def dump_data(j):
+
+	# JSON doesn't like sets, so turn sets back into lists for JSON encoding.
+	def recurse(obj, key=None):
+		match obj:
+			case dict():
+				return {k: recurse(v, key=k) for k, v in obj.items()}
+			case list():
+				return [recurse(v) for v in obj]
+			case set() | frozenset():
+				if all(type(x) is str for x in obj):
+					return sorted(list(obj))
+				return [recurse(v) for v in obj]
+			case _:
+				return obj
+
+	return json.dumps(recurse(j))
+
 @functools.lru_cache(maxsize=32)
 def getdiscrimina(root, query):
 	return load_data(f'data/{root}/discrimina/{query}.json')

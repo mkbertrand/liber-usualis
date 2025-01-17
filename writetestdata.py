@@ -15,5 +15,5 @@ for i in range(0, 365):
 
 	for j in ['matutinum+laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
 		with open(f'testdata/{day}-vesperal.json' if 'vesperae' in j else f'testdata/{day}-diurnal.json', 'w') as fileout:
-			fileout.write(breviarium.dump_data(breviarium.generate(root, day, j)))
+			fileout.write(datamanage.dump_data(breviarium.generate(root, day, j)))
 
