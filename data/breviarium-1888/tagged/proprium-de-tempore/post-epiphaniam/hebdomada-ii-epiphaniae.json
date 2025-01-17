@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["hebdomada-ii-epiphaniae","basis-nominis"],
+		"datum":"II Epiphaniæ"
+	},
+	{
 		"tags":["hebdomada-ii-epiphaniae","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Omnípotens sempitérne Deus, qui cœléstia simul et terréna moderáris: supplicatiónes pópuli tui cleménter exaúdi, et pacem tuam nostris concéde temporálibus."
@@ -50,5 +54,28 @@
 	{
 		"tags":["hebdomada-ii-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
 		"datum":"Ac per hoc ergo Dóminus invitátus venit ad núptias, ut conjugális cástitas firmarétur, et ostenderétur sacraméntum nuptiárum: quia et illárum nuptiárum sponsus persónam Dómini figurábat, cui dictum est: Servásti vinum bonum usque adhuc. Bonum enim vinum Christus servávit usque adhuc, id est, Evangélium suum."
+	},
+	{
+		"tags":["hebdomada-ii-epiphaniae","dominica","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Núptiæ factæ sunt * in Cana Galilǽæ, et erat ibi Jesus cum María matre sua."
+	},
+	{
+		"tags":["hebdomada-ii-epiphaniae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Deficiénte vino, * jussit Jesus impléri hýdrias aqua, quæ in vinum convérsa est, allelúja."
+	},
+	{
+		"tags":["hebdomada-ii-epiphaniae","feria-ii","matutinum","lectio","lectio-i"],
+		"datum":[
+				"De Epístola secúnda ad Corínthios.",
+				"Incípimus íterum nosmetípsos commendare? aut numquid egémus (sicut quidam) commendatítiis epístolis ad vos, aut ex vobis? Epístola nostra vos estis, scripta in córdibus nostris, quæ scitur, et légitur ab ómnibus homínibus: manifestáti quod epístola estis Christi, ministráta a nobis, et scripta non attraménto, sed Spíritu Dei vivi: non in tábulis lapídeis, sed in tábulis cordis carnálibus."
+		]
+	},
+	{
+		"tags":["hebdomada-ii-epiphaniae","feria-ii","matutinum","lectio","lectio-ii"],
+		"datum":"Fidúciam autem talem habémus per Christum ad Deum: non quod sufficiénts simus cogitáre áliquid a nobis, quasi ex nobis: sed sufficiéntia nostra ex Deo est: qui et idóneos nos fecit minístros novi Testaménti, non líttera, sed Spíritu: líttera enim occídit, Spíritus autem vivíficat. Quod si ministrátio mortis lítteris deformáta in lapídibus, fuit in glória, ita ut non possent inténdere fílii Ísraël in fáciem Móysi propter glóriam vultus ejus, quæ evacuátur: quómodo non magis ministrátio Spíritus erit in glória?"
+	},
+	{
+		"tags":["hebdomada-ii-epiphaniae","feria-ii","matutinum","lectio","lectio-iii"],
+		"datum":"Nam si ministrátio damnatiónis glória est: multo magis abúndat ministérium justítiæ in glória. Nam nec glorificátum est, quod cláruit in hac parte, propter excelléntem glóriam. Si enim quod evacuátur, per glóriam est: multo magis quod manet, in glória est. Habéntes ígitur talem spem, multa fidúcia útimur: et non sicut Móyses ponébat velámen super fáciem suam, ut non inténderent fílii Ísraël in fáciem ejus, quod evacuátur, sed obtúsi sunt sensus eórum. Usque in hodiérnum enim diem idípsum velámen in lectióne véteris Testaménti manet non revélatum, quóniam in Christo evacuátur."
 	}
 ]
