@@ -18,7 +18,7 @@ implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
 dmp = diff_match_patch.diff_match_patch()
 
-# Basically a copy of breviarium#dump_data but removes tags since these are liable to change without affecting the content being tested
+# Basically a copy of datamanage#dump_data but removes tags since these are liable to change without affecting the content being tested
 def striptags(j):
 
 	def recurse(obj, key=None):
@@ -54,10 +54,10 @@ def test_match(day) -> None:
 		change = False
 		for (op, item) in diffs:
 			if op == dmp.DIFF_DELETE:
-				print(f'- {item}')
+				print(f'- {item.replace('\\', '')}')
 				change = True
 			elif op == dmp.DIFF_INSERT:
-				print(f'+ {item}')
+				print(f'+ {item.replace('\\', '')}')
 				change = True
 			# Don't print if there's an equal section since this is superfluous
 
