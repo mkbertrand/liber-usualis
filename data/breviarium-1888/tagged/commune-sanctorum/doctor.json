@@ -1,0 +1,29 @@
+[
+	{
+		"tags":["doctor","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte N., divínæ legis amátor, deprecáre pro nobis Fílium Dei."
+	},
+	{
+		"tags":["doctor","collecta"],
+		"terminatio":[["terminatio","per-dominum"]],
+		"datum":"Deus, qui pópulo tuo ætérnæ salútis beátum N. minístrum tribuísti: præsta quǽsumus; ut quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cœlis."
+	},
+	{
+		"tags":["doctor","matutinum","nocturna-iii","lectio","lectio-i","alia-homilia"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.",
+			"Homilía sancti Hilárii Epíscopi.",
+			"Vos estis sal terræ: quod si sal infatuátum fúerit, ad níhilum valet id quod saliétur. Sal, ut árbitror, terræ nullum est. Quómodo ergo Apóstolos sal terræ nuncupávit? Sed propríetas est quærénda dictórum, quam et Apostolórum offícium, et ipsíus salis natúra monstrábit. Sal est in se uno cóntinens aquæ et ignis eleméntum, et hoc ex duóbus est unum."
+		]
+	},
+	{
+		"tags":["doctor","matutinum","nocturna-iii","lectio","lectio-ii","alia-homilia"],
+		"datum":"Hic ígitur in omnem usum humáni géneris efféctus, incorruptiónem corpóribus, quibus fúerit aspérsus, impértit, et ad omnem sensum condíti sapóris aptíssimus est. Apóstoli autem sunt rerum cœléstium prædicatóres, et æternitátis velut satóres, immortalitátem ómnibus corpóribus, quibus eórum sermo aspérsus fúerit, conferéntes. Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes.",
+		"merito-igitur":"Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes."
+	},
+	{
+		"tags":["doctor","matutinum","nocturna-iii","lectio","lectio-iii","alia-homilia"],
+		"datum":"Sed natúra salis semper éadem est, nec immutári umquam potest. Verum quia conversióni homo súbjacet, et solus beátus, qui usque ad finem in ómnibus Dei opéribus permánserit: ídeo eos sal terræ nuncupátos monet in tráditæ sibi potestátis virtúte persístere, ne infatuáti nihil sáliant, et ipsi, sensu accépti sapóris amísso, vivificáre corrúpta non possint, et projécti de Ecclésiæ promptuáriis, cum his quos salíerint, pédibus incedéntium proterántur."
+	}
+]
