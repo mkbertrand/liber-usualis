@@ -113,7 +113,7 @@
 	{
 		"include":["septem-dolores","primarium"],
 		"response":[
-			{"include":["benedictus","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
+			{"include":["benedictus-abbas","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
