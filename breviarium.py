@@ -202,27 +202,35 @@ def process(root, item, selected, alternates, pile):
 		if not any('/' in i for i in item['from']):
 			for i in range(len(alternates)):
 				# Basically if the from is explicitly calling for some day's propers, remove the other day context to facilitate this
-				if len(item['from'] & expandcat(root, 'temporale')) != 0 and item['from'] & expandcat(root, 'temporale') <= alternates[i]:
+				if 'occurrens' in item['from'] and len(item['from'] & expandcat(root, 'temporale')) != 0 and item['from'] & expandcat(root, 'temporale') <= alternates[i]:
+					item['from'] -= {'occurrens'}
 					alternates = copy.deepcopy(alternates)
 					alternates.append(selected - expandcat(root, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(root, 'positionales'))
+					pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
+					result = search(root, item['from'] | selected, pile)
 					break
+
 				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
 				elif item['from'] <= alternates[i]:
+					pile = datamanage.getpile(root, defaultpile | item['from'] | alternates[i])
 					result = search(root, item['from'] | alternates[i], pile)
 					alternates = copy.deepcopy(alternates)
 					alternates.append(selected)
 					selected = alternates.pop(i) - expandcat(root, 'objecta') | (selected & expandcat(root, 'positionales'))
 					break
-				elif False and len(item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales'))) != 0:
-					raise RuntimeError(item['from'] - (expandcat(root, 'objecta') | expandcat(root, 'positionales')))
 
-		selected = copy.deepcopy(selected)
-		# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
-		if contradicts(root, 'positionales', item['from'] | selected):
-			selected -= expandcat(root, 'positionales')
 		if result is None:
+			# Only remove tags referring to propers and commons and whatnot if a different set is suggested
+			if len(item['from'] & expandcat(root, 'temporale')) != 0:
+				raise RuntimeError(f'{item['from']}\n\n{alternates}')
+
+			# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
+			if contradicts(root, 'positionales', item['from'] | selected):
+				selected -= expandcat(root, 'positionales')
 			result = search(root, item['from'] | selected, pile)
+
+		# If result is still None at this point, just tell user what was searched for
 		if result is None:
 			# It has to be sorted for testing purposes
 			return str(sorted(list(item['from'] | selected)))
@@ -259,10 +267,10 @@ def generate(root, day, hour: str):
 		for j in implicationtable:
 			if j['tags'].issubset(i):
 				i |= j['implies']
-	pile = datamanage.getpile(root, defaultpile | flattensetlist(tags) | set(hours))
 	tags = [frozenset(i) for i in tags]
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
+	pile = datamanage.getpile(root, defaultpile | primary | set(hours))
 
 	lit = []
 	for hour in hours:

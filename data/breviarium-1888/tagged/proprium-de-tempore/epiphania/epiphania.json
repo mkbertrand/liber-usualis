@@ -425,7 +425,7 @@
 	},
 	{
 		"tags":["epiphania","infra-octavam","post-dominicam","matutinum","nocturna-i","lectio"],
-		"datum":[["hebdomada-i-epiphaniae","feria","lectio"]]
+		"datum":[["hebdomada-i-epiphaniae","feria","occurrens","lectio"]]
 	},
 	{
 		"tags":["epiphania","dies-ii","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -734,7 +734,7 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","matutinum","nocturna-i","lectio"],
-		"datum":[["hebdomada-i-epiphaniae","dominica","lectio"]]
+		"datum":[["hebdomada-i-epiphaniae","dominica","occurrens","lectio"]]
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","translatum","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -796,7 +796,7 @@
 	},
 	{
 		"tags":["epiphania","dies-octava","matutinum","nocturna-i","lectio"],
-		"datum":[["hebdomada-i-epiphaniae","feria","lectio"]]
+		"datum":[["hebdomada-i-epiphaniae","feria","occurrens","lectio"]]
 	},
 	{
 		"tags":["epiphania","dies-octava","matutinum","nocturna-ii","lectio","lectio-i"],
