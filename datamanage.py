@@ -133,12 +133,21 @@ def getbreviariumfile(query):
 def getchantfile(url):
 	return requests.get(url, stream=True).text
 
-def getpile(root, pile):
+# Has the list of files in the tagged directory to prevent multiple discoveratory traversals from having to be done
+@functools.lru_cache(maxsize=16)
+def getwalk(root):
 	ret = []
-	for root,dirs,files in os.walk(data_root.joinpath(f'data/{root}/tagged')):
+	for roo,dirs,files in os.walk(data_root.joinpath(f'data/{root}/tagged')):
 		for i in files:
 			if not i.endswith('.json'):
 				continue
-			if i[:-5] in pile:
-				ret.extend(getbreviariumfile(data_root.joinpath(f'data/{root}/tagged').joinpath(root).joinpath(i)))
+			else:
+				ret.append((i[:-5], data_root.joinpath(f'data/{root}/tagged').joinpath(roo).joinpath(i)))
+	return ret
+
+def getpile(root, pile):
+	ret = []
+	for name, file in getwalk(root):
+		if name in pile:
+			ret.extend(getbreviariumfile(file))
 	return ret
