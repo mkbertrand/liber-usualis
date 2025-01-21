@@ -13,8 +13,8 @@
 		"datum":"Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie mundo appáruit."
 	},
 	{
-		"tags":["epiphania","i-vesperae","psalmus-i"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-i"]
+		"tags":["epiphania","i-vesperae","psalmus"],
+		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
 	},
 	{
 		"tags":["epiphania","antiphona","antiphona-ii"],
@@ -22,17 +22,9 @@
 		"datum":"Venit lumen tuum * Jerúsalem, et glória Dómini super te orta est, et ambulábunt Gentes in lúmine tuo, allelúja."
 	},
 	{
-		"tags":["epiphania","i-vesperae","psalmus-ii"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-ii"]
-	},
-	{
 		"tags":["epiphania","antiphona","antiphona-iii"],
 		"src":"gregobase/2464",
 		"datum":"Apértis thesaúris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, allelúja."
-	},
-	{
-		"tags":["epiphania","i-vesperae","psalmus-iii"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["epiphania","antiphona","antiphona-iv"],
@@ -40,17 +32,9 @@
 		"datum":"Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja."
 	},
 	{
-		"tags":["epiphania","i-vesperae","psalmus-iv"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-iv"]
-	},
-	{
 		"tags":["epiphania","antiphona","antiphona-v"],
 		"src":"gregobase/1968",
 		"datum":"Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt."
-	},
-	{
-		"tags":["epiphania","i-vesperae","psalmus-v"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-v"]
 	},
 	{
 		"tags":["epiphania","capitulum"],
@@ -384,24 +368,8 @@
 		"versus":"In aula sancta ejus."
 	},
 	{
-		"tags":["epiphania","ii-vesperae","psalmus-i"],
-		"reference":["dominica","vesperae","ii-vesperae","psalmus-i"]
-	},
-	{
-		"tags":["epiphania","ii-vesperae","psalmus-ii"],
-		"reference":["dominica","vesperae","ii-vesperae","psalmus-ii"]
-	},
-	{
-		"tags":["epiphania","ii-vesperae","psalmus-iii"],
-		"reference":["dominica","vesperae","ii-vesperae","psalmus-iii"]
-	},
-	{
-		"tags":["epiphania","ii-vesperae","psalmus-iv"],
-		"reference":["dominica","vesperae","ii-vesperae","psalmus-iv"]
-	},
-	{
-		"tags":["epiphania","ii-vesperae","psalmus-v"],
-		"reference":["dominica","vesperae","ii-vesperae","psalmus-v"]
+		"tags":["epiphania","ii-vesperae","psalmus"],
+		"datum":[["dominica","vesperae","ii-vesperae","psalmus"]]
 	},
 	{
 		"tags":["epiphania","ii-vesperae","antiphona","antiphona-magnificat"],
@@ -711,11 +679,8 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","collecta"],
-		"reference":["hebdomada-i-epiphaniae","collecta"]
-	},
-	{
-		"tags":["epiphania","dominica-infra-octavam","collecta","terminatio"],
-		"reference":["hebdomada-i-epiphaniae","collecta","terminatio"]
+		"terminatio":[["hebdomada-i-epiphaniae","collecta","terminatio"]],
+		"datum":[["hebdomada-i-epiphaniae","collecta"]]
 	},
 	{
 		"tags":["epiphania","infra-octavam","commemoratio","versiculus"],

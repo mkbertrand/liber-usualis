@@ -9,8 +9,8 @@
 		"datum":"Omnis * qui invocáverit nomen Dómini, salvus erit."
 	},
 	{
-		"tags":["nomen-jesu","i-vesperae","psalmus-i"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-i"]
+		"tags":["nomen-jesu","i-vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
 		"tags":["nomen-jesu","vesperae","antiphona","antiphona-ii"],
@@ -18,17 +18,9 @@
 		"datum":"Sanctum et terríbile * nomen ejus, inítium sapiéntiæ timor Dómini."
 	},
 	{
-		"tags":["nomen-jesu","i-vesperae","psalmus-ii"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-ii"]
-	},
-	{
 		"tags":["nomen-jesu","vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/2795",
 		"datum":"Ego autem * in Dómino gaudébo, et exsultábo in Deo Jesu meo."
-	},
-	{
-		"tags":["nomen-jesu","i-vesperae","psalmus-iii"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["nomen-jesu","vesperae","antiphona","antiphona-iv"],
@@ -36,16 +28,12 @@
 		"datum":"A solis ortu * usque ad occásum laudábile nomen Dómini."
 	},
 	{
-		"tags":["nomen-jesu","i-vesperae","psalmus-iv"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-iv"]
-	},
-	{
 		"tags":["nomen-jesu","vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/2213",
 		"datum":"Sacrificábo * hóstiam laudis, et nomen Dómini invocábo."
 	},
 	{
-		"tags":["nomen-jesu","i-vesperae","psalmus-v"],
+		"tags":["nomen-jesu","i-vesperae","psalmus","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
 	},
 	{
@@ -80,8 +68,14 @@
 		"datum":"Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: + concéde propítius; ut cujus sanctum nomen venerámur in terris, * ejus quoque aspéctu perfruámur in cœlis."
 	},
 	{
-		"tags":["nomen-jesu","completorium","hymnus"],
-		"reference":["tempus-nativitatis","completorium","hymnus"]
+		"tags":[
+			["nomen-jesu","completorium","hymnus"],
+			["nomen-jesu","prima","hymnus"],
+			["nomen-jesu","tertia","hymnus"],
+			["nomen-jesu","sexta","hymnus"],
+			["nomen-jesu","nona","hymnus"]
+		],
+		"datum":[["tempus-nativitatis","hymnus"]]
 	},
 	{
 		"tags":["nomen-jesu","matutinum","antiphona","antiphona-invitatorium"],
@@ -114,17 +108,13 @@
 		"datum":"In nómine Jesu * omne genu flectátur cœléstium, terréstrium, et infernórum."
 	},
 	{
-		"tags":["nomen-jesu","matutinum","nocturna-i","psalmus-ii"],
-		"reference":["maria","matutinum","nocturna-i","psalmus-ii"]
+		"tags":["nomen-jesu","matutinum","psalmus"],
+		"datum":[["maria","matutinum","psalmus"]]
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","antiphona","antiphona-iii"],
 		"src":"nocturnale/N2N1A3",
 		"datum":"Confitémini Dómino, * et invocáte nomen ejus: mementóte, quóniam excélsum est nomen ejus."
-	},
-	{
-		"tags":["nomen-jesu","matutinum","nocturna-i","psalmus-iii"],
-		"reference":["maria","matutinum","nocturna-i","psalmus-iii"]
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","versiculus"],
@@ -172,26 +162,14 @@
 		"datum":"Mémores erunt * nóminis tui Dómine in omni generatióne et generatiónem."
 	},
 	{
-		"tags":["nomen-jesu","matutinum","nocturna-ii","psalmus-i"],
-		"reference":["maria","matutinum","nocturna-ii","psalmus-i"]
-	},
-	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","antiphona","antiphona-ii"],
 		"src":"nocturnale/N2N2A2",
 		"datum":"Magnificáte * Dóminum mecum, et exaltémus nomen ejus in idípsum."
 	},
 	{
-		"tags":["nomen-jesu","matutinum","nocturna-ii","psalmus-ii"],
-		"reference":["maria","matutinum","nocturna-ii","psalmus-ii"]
-	},
-	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","antiphona","antiphona-iii"],
 		"src":"nocturnale/N2N2A3",
 		"datum":"Omnes gentes, * quascúmque fecísti, vénient, et adorábunt coram te Doḿine, et glorificábunt nomen tuum."
-	},
-	{
-		"tags":["nomen-jesu","matutinum","nocturna-ii","psalmus-iii"],
-		"reference":["maria","matutinum","nocturna-ii","psalmus-iii"]
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","versiculus"],
@@ -239,26 +217,14 @@
 		"datum":"Cantáte Dómino, * et benedícite nómini ejus: annuntiáte de die in diem salutáre ejus."
 	},
 	{
-		"tags":["nomen-jesu","matutinum","nocturna-iii","psalmus-i"],
-		"reference":["maria","matutinum","nocturna-iii","psalmus-i"]
-	},
-	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","antiphona","antiphona-ii"],
 		"src":"nocturnale/N2N3A2",
 		"datum":"Secúndum nomen tuum Deus, * sic et laus tua in fines terræ: justítia plena est déxtera tua."
 	},
 	{
-		"tags":["nomen-jesu","matutinum","nocturna-iii","psalmus-ii"],
-		"reference":["maria","matutinum","nocturna-iii","psalmus-ii"]
-	},
-	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","antiphona","antiphona-iii"],
 		"src":"nocturnale/N2N3A3",
 		"datum":"Cantáte Dómino, * psalmum dícite nómini ejus: iter fácite ei, qui ascéndit super occásum, Dóminus nomen illi."
-	},
-	{
-		"tags":["nomen-jesu","matutinum","nocturna-iii","psalmus-iii"],
-		"reference":["maria","matutinum","nocturna-iii","psalmus-iii"]
 	},
 	{
 		"tags":[
@@ -348,14 +314,6 @@
 		"tempus-septuagesimae":"Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum."
 	},
 	{
-		"tags":["nomen-jesu","prima","hymnus"],
-		"reference":["tempus-nativitatis","prima","hymnus"]
-	},
-	{
-		"tags":["nomen-jesu","tertia","hymnus"],
-		"reference":["tempus-nativitatis","tertia","hymnus"]
-	},
-	{
 		"tags":["nomen-jesu","tertia","responsorium-breve"],
 		"src":"gregobase/3092",
 		"incipit":"Sit nomen Dómini benedíctum,",
@@ -371,10 +329,6 @@
 	{
 		"tags":["nomen-jesu","tertia","versiculus"],
 		"datum":["V. Afférte Dómino glóriam et honórem, allelúja.","R. Afférte Dómino glóriam nómini ejus, allelúja."]
-	},
-	{
-		"tags":["nomen-jesu","sexta","hymnus"],
-		"reference":["tempus-nativitatis","sexta","hymnus"]
 	},
 	{
 		"tags":["nomen-jesu","sexta","capitulum"],
@@ -397,10 +351,6 @@
 		"tags":["nomen-jesu","sexta","versiculus"],
 		"datum":["V. Magnificáte Dóminum mecum, allelúja.","R. Et exaltémus nomen ejus in idípsum, allelúja."],
 		"tempus-septuagesimae":["V. Magnificáte Dóminum mecum.","R. Et exaltémus nomen ejus in idípsum."]
-	},
-	{
-		"tags":["nomen-jesu","nona","hymnus"],
-		"reference":["tempus-nativitatis","nona","hymnus"]
 	},
 	{
 		"tags":["nomen-jesu","nona","capitulum"],

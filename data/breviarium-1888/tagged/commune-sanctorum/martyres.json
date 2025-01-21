@@ -5,8 +5,8 @@
 		"datum":"Omnes sancti, * quanta passi sunt torménta, ut secúri pervenírent ad palmam martýrii."
 	},
 	{
-		"tags":["martyres","vesperae","psalmus-i"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-i"]
+		"tags":["martyres","vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-ii"],
@@ -14,17 +14,9 @@
 		"datum":"Cum palma * ad regna pervenérunt sancti, corónas decóris meruérunt de manu Dei."
 	},
 	{
-		"tags":["martyres","vesperae","psalmus-ii"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-ii"]
-	},
-	{
 		"tags":["martyres","antiphona","antiphona-iii"],
 		"src":"gregobase/2746",
 		"datum":"Córpora sanctórum * in pace sepúlta sunt: et vivent nómina eórum in ætérnum."
-	},
-	{
-		"tags":["martyres","vesperae","psalmus-iii"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-iv"],
@@ -32,17 +24,9 @@
 		"datum":"Mártyres Dómini * Dóminum benedícite in ætérnum."
 	},
 	{
-		"tags":["martyres","vesperae","psalmus-iv"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-iv"]
-	},
-	{
 		"tags":["martyres","antiphona","antiphona-v"],
 		"src":"gregobase/1897",
 		"datum":"Mártyrum chorus * laudáte Dóminum de cœlis, allelúja."
-	},
-	{
-		"tags":["martyres","i-vesperae","psalmus-v"],
-		"reference":["apostolus","i-vesperae","vesperae","psalmus-v"]
 	},
 	{
 		"tags":["martyres","capitulum"],

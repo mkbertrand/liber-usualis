@@ -13,8 +13,8 @@
 		"datum":"Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra."
 	},
 	{
-		"tags":["nativitas","i-vesperae","psalmus-i"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-i"]
+		"tags":["nativitas","i-vesperae","psalmus"],
+		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
 	},
 	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-ii"],
@@ -22,17 +22,9 @@
 		"datum":"Magnificátus est * Rex pacíficus super omnes reges univérsæ terrae."
 	},
 	{
-		"tags":["nativitas","i-vesperae","psalmus-ii"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-ii"]
-	},
-	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/2997",
 		"datum":"Compléti sunt * dies Maríæ, ut páreret Fílium suum primogénitu."
-	},
-	{
-		"tags":["nativitas","i-vesperae","psalmus-iii"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-iv"],
@@ -40,17 +32,9 @@
 		"datum":"Scitóte * quia prope est regnum Dei: amen dico vobis, quia non tardábit."
 	},
 	{
-		"tags":["nativitas","i-vesperae","psalmus-iv"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-iv"]
-	},
-	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/3006",
 		"datum":"Leváte cápita vestra: * ecce appropínquat redémptio vestra."
-	},
-	{
-		"tags":["nativitas","i-vesperae","psalmus-v"],
-		"reference":["apostolus","vesperae","i-vesperae","psalmus-v"]
 	},
 	{
 		"tags":["nativitas","i-vesperae","capitulum"],
@@ -481,7 +465,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-i","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-i","responsorium","responsorium-ii"]
+		"datum":[["formula","nativitas","matutinum","nocturna-i","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -489,7 +473,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-ii","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-i","responsorium","responsorium-iii"]
+		"datum":[["formula","nativitas","matutinum","nocturna-i","responsorium","responsorium-iii"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -497,7 +481,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-iii","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-ii","responsorium","responsorium-i"]
+		"datum":[["formula","nativitas","matutinum","nocturna-ii","responsorium","responsorium-i"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -508,7 +492,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-i","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-ii","responsorium","responsorium-ii"]
+		"datum":[["formula","nativitas","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-ii"],
@@ -516,7 +500,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-ii","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"]
+		"datum":[["formula","nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -524,7 +508,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-iii","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-iii","responsorium","responsorium-i"]
+		"datum":[["formula","nativitas","matutinum","nocturna-iii","responsorium","responsorium-i"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -537,7 +521,7 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
-		"reference":["formula","nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"]
+		"datum":[["formula","nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","lectio","lectio-ii"],
@@ -569,11 +553,11 @@
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-i"],
-		"reference":["nocturna","tres-psalmi","tres-antiphonae","nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-i"]
+		"datum":[["nocturna","tres-psalmi","tres-antiphonae","nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-i"]]
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii"],
-		"reference":["nocturna","tres-psalmi","tres-antiphonae","nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-ii"]
+		"datum":[["nocturna","tres-psalmi","tres-antiphonae","nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-ii"]]
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -586,7 +570,7 @@
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
-		"reference":["formula","nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"]
+		"datum":[["formula","nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"]]
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-ii"],
@@ -594,7 +578,7 @@
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii","formula"],
-		"reference":["formula","nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"]
+		"datum":[["formula","nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-iii"],
