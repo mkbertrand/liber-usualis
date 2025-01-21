@@ -213,17 +213,24 @@ def process(root, item, selected, alternates, pile):
 
 				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
 				elif item['from'] <= alternates[i]:
-					pile = datamanage.getpile(root, defaultpile | item['from'] | alternates[i])
-					result = search(root, item['from'] | alternates[i], pile)
 					alternates = copy.deepcopy(alternates)
 					alternates.append(selected)
-					selected = alternates.pop(i) - expandcat(root, 'objecta') | (selected & expandcat(root, 'positionales'))
+					if contradicts(root, 'positionales', item['from'] | alternates[i] | selected):
+						selected = alternates.pop(i) - expandcat(root, 'objecta')
+					else:
+						selected = alternates.pop(i) - expandcat(root, 'objecta') | (selected & expandcat(root, 'positionales'))
+					pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
+					result = search(root, item['from'] | selected, pile)
 					break
 
 		if result is None:
 			# Only remove tags referring to propers and commons and whatnot if a different set is suggested
 			if len(item['from'] & expandcat(root, 'temporale')) != 0:
-				raise RuntimeError(f'{item['from']}\n\n{alternates}')
+				selected -= expandcat(root, 'temporale')
+				selected |= item['from'] & expandcat(root, 'temporale')
+				print(item['from'])
+				print(selected)
+				pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
 
 			# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
 			if contradicts(root, 'positionales', item['from'] | selected):

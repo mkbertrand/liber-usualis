@@ -9,8 +9,8 @@
 		"datum":"O admirábile commércium: * Creátor géneris humáni, animátum corpus sumens, de Vírgine nasci dignátus est: et procédens homo sine sémine, largítus est nobis suam Deitátem."
 	},
 	{
-		"tags":["circumcisio","vesperae","psalmus-i"],
-		"reference":["maria","vesperae","i-vesperae","psalmus-i"]
+		"tags":["circumcisio","vesperae","psalmus"],
+		"datum":[["maria","vesperae","i-vesperae"]]
 	},
 	{
 		"tags":["circumcisio","antiphona","antiphona-ii"],
@@ -18,17 +18,9 @@
 		"datum":"Quando natus es * ineffabíliter ex Vírgine, tunc implétæ sunt Scriptúræ, sicut plúvia in vellus descendísti, ut salvum fáceres genus humánum: te laudámus Deus noster."
 	},
 	{
-		"tags":["circumcisio","vesperae","psalmus-ii"],
-		"reference":["maria","vesperae","i-vesperae","psalmus-ii"]
-	},
-	{
 		"tags":["circumcisio","antiphona","antiphona-iii"],
 		"src":"gregobase/1903",
 		"datum":"Rubum quem víderat Móyses * incombústum, conservátum agnóvimus tuam laudábilem virginitátem: Dei Génitrix, intercéde pro nobis."
-	},
-	{
-		"tags":["circumcisio","vesperae","psalmus-iii"],
-		"reference":["maria","vesperae","i-vesperae","psalmus-iii"]
 	},
 	{
 		"tags":["circumcisio","antiphona","antiphona-iv"],
@@ -36,17 +28,9 @@
 		"datum":"Germinávit radix Jesse, * orta est stella ex Jacob: Virgo péperit Salvatórem: te laudámus Deus noster."
 	},
 	{
-		"tags":["circumcisio","vesperae","psalmus-iv"],
-		"reference":["maria","vesperae","i-vesperae","psalmus-iv"]
-	},
-	{
 		"tags":["circumcisio","antiphona","antiphona-v"],
 		"src":"gregobase/2234",
 		"datum":"Ecce María génuit * nobis Salvatórem, quem Joánnes videns exclamávit, dicens, Ecce Agnus Dei, ecce qui tollit peccáta mundi, allelúja."
-	},
-	{
-		"tags":["circumcisio","vesperae","psalmus-v"],
-		"reference":["maria","vesperae","i-vesperae","psalmus-v"]
 	},
 	{
 		"tags":["circumcisio","capitulum"],
@@ -57,7 +41,7 @@
 			["circumcisio","vesperae","hymnus"],
 			["circumcisio","matutinum","hymnus"]
 		],
-		"reference":["hymnus","nativitas","vesperae"]
+		"datum":[["nativitas","vesperae","hymnus"]]
 	},
 	{
 		"tags":[
@@ -78,11 +62,11 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","antiphona","antiphona-invitatorium"],
-		"reference":["antiphona","nativitas","matutinum","antiphona-invitatorium"]
+		"datum":[["nativitas","matutinum","antiphona","antiphona-invitatorium"]]
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"reference":["antiphona","nativitas","matutinum","nocturna-i","antiphona-i"]
+		"datum":[["nativitas","matutinum","nocturna-i","antiphona","antiphona-i"]]
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-i","psalmus-i"],
@@ -185,8 +169,8 @@
 		]
 	},
 	{
-		"tags":["circumcisio","matutinum","nocturna-ii","responsorium","responsorium-i","formula"],
-		"reference":["formula","maria","matutinum","nocturna-i","responsorium","responsorium-ii"]
+		"tags":["circumcisio","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-ii","lectio","lectio-ii"],
@@ -254,8 +238,8 @@
 		]
 	},
 	{
-		"tags":["circumcisio","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
-		"reference":["formula","maria","matutinum","nocturna-i","responsorium","responsorium-i"]
+		"tags":["circumcisio","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-i"]]
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-iii","lectio","lectio-ii"],
@@ -274,7 +258,7 @@
 	},
 	{
 		"tags":["circumcisio","laudes","hymnus"],
-		"reference":["hymnus","nativitas","laudes"]
+		"datum":[["hymnus","nativitas","laudes"]]
 	},
 	{
 		"tags":["circumcisio","laudes","antiphona","antiphona-benedictus"],
@@ -282,36 +266,36 @@
 		"datum":"Mirábile mystérium * declarátur hódie: innovántur natúræ, Deus homo factus est: id quod fuit assúmpsit; non commixtiónem passus, neque divisiónem."
 	},
 	{
-		"tags":["circumcisio","tertia","responsorium-breve","formula"],
-		"reference":["formula","nativitas","tertia","responsorium-breve"]
+		"tags":["circumcisio","tertia","responsorium-breve"],
+		"datum":[["nativitas","tertia","responsorium-breve"]]
 	},
 	{
 		"tags":["circumcisio","tertia","versiculus"],
-		"reference":["nativitas","tertia","versiculus"]
+		"datum":[["nativitas","tertia","versiculus"]]
 	},
 	{
 		"tags":["circumcisio","sexta","capitulum"],
-		"reference":["nativitas","sexta","capitulum"]
+		"datum":[["nativitas","sexta","capitulum"]]
 	},
 	{
-		"tags":["circumcisio","sexta","responsorium-breve","formula"],
-		"reference":["formula","nativitas","sexta","responsorium-breve"]
+		"tags":["circumcisio","sexta","responsorium-breve"],
+		"datum":[["nativitas","sexta","responsorium-breve"]]
 	},
 	{
 		"tags":["circumcisio","sexta","versiculus"],
-		"reference":["nativitas","sexta","versiculus"]
+		"datum":[["nativitas","sexta","versiculus"]]
 	},
 	{
 		"tags":["circumcisio","nona","capitulum"],
-		"reference":["nativitas","nona","capitulum"]
+		"datum":[["nativitas","nona","capitulum"]]
 	},
 	{
-		"tags":["circumcisio","nona","responsorium-breve","formula"],
-		"reference":["formula","nativitas","nona","responsorium-breve"]
+		"tags":["circumcisio","nona","responsorium-breve"],
+		"datum":[["nativitas","nona","responsorium-breve"]]
 	},
 	{
 		"tags":["circumcisio","nona","versiculus"],
-		"reference":["nativitas","nona","versiculus"]
+		"datum":[["nativitas","nona","versiculus"]]
 	},
 	{
 		"tags":["circumcisio","ii-vesperae","antiphona","antiphona-magnificat"],

@@ -65,7 +65,7 @@ def test_match(day) -> None:
 			# Don't print if there's an equal section since this is superfluous
 
 		if change:
-			with open(f'testresults/{day}-{j.replace("+", "-")}.json', 'w') as fileout:
+			with open(f'testresults/{day}-{j.replace("+", "-")}.txt', 'w') as fileout:
 				fileout.write(changelog)
 
 		assert not change

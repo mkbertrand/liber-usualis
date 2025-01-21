@@ -59,54 +59,17 @@ def getbreviariumfile(query):
 	got = load_data(query)
 	if len(got) == 0:
 		return []
-	added = []
-
-	for entry in got:
-		if 'reference' in entry and ('antiphona-invitatorium' in entry['tags'] or (type(entry['tags']) is list and 'antiphona-invitatorium' in entry['tags'][0])):
-			newentry = copy.deepcopy(entry)
-			if type(newentry['tags']) is list:
-				newentry['tags'] = [i | {'pars'} for i in newentry['tags']]
-			else:
-				newentry['tags'] = newentry['tags'] | {'pars'}
-			if type(newentry['reference']) is list:
-				newentry['reference'][0] = newentry['reference'][0] | {'pars'}
-			else:
-				newentry['reference'] = newentry['reference'] | {'pars'}
-			added.append(newentry)
-		elif 'reference' in entry and ('antiphona' in entry['tags'] or (type(entry['tags']) is list and 'antiphona' in entry['tags'][0])):
-			newentry = copy.deepcopy(entry)
-			if type(newentry['tags']) is list:
-				newentry['tags'] = [i | {'intonata'} for i in newentry['tags']]
-			else:
-				newentry['tags'] = newentry['tags'] | {'intonata'}
-			if type(newentry['reference']) is list:
-				newentry['reference'][0] = newentry['reference'][0] | {'intonata'}
-			else:
-				newentry['reference'] = newentry['reference'] | {'intonata'}
-			added.append(newentry)
-			newentry = copy.deepcopy(entry)
-			if type(newentry['tags']) is list:
-				newentry['tags'] = [i | {'repetita'} for i in newentry['tags']]
-			else:
-				newentry['tags'] = newentry['tags'] | {'repetita'}
-			if type(newentry['reference']) is list:
-				newentry['reference'][0] = newentry['reference'][0] | {'repetita'}
-			else:
-				newentry['reference'] = newentry['reference'] | {'repetita'}
-			added.append(newentry)
-
-	got.extend(added)
 
 	ret = []
 	for entry in got:
 		entrycopy = copy.deepcopy(entry)
 
 		# Handle antiphons
-		if ('antiphona-invitatorium' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona-invitatorium' in entrycopy['tags'][0])) and 'datum' in entrycopy:
+		if ('antiphona-invitatorium' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona-invitatorium' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str:
 			if '*' not in entry['datum']:
 				raise RuntimeError(f'Missing intonation mark in {entry}')
 			entrycopy['pars'] = entrycopy['datum'].split('*')[1].lstrip()
-		elif ('antiphona' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona' in entrycopy['tags'][0])) and 'datum' in entrycopy:
+		elif ('antiphona' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str:
 			if '*' not in entry['datum']:
 				raise RuntimeError(f'Missing intonation mark in {entry}')
 			entrycopy['intonata'] = entrycopy['datum'].split('*')[0].rstrip()

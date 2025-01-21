@@ -1,0 +1,26 @@
+[
+	{
+		"tags":["cathedra-petri","nomen"],
+		"datum":"Cathedræ Petri"
+	},
+	{
+		"tags":["cathedra-petri","hymnus"],
+		"datum":[
+			"Quodcúmque in orbe néxibus revínxeris,/Erit revínctum Petre in arce síderum:/Et quod resólvit hic potéstas trádita,/Erit solútum cœli in alto vértice:/In fine mundi judicábis sǽculum.",
+			"Patri perénne sit per ævum glória,/Tibíque laudes concinámus ínclytas,/Ætérne Nate, sit supérne Spíritus/Honor tibi, decúsque: sancta júgiter/Laudétur omne Trínitas per sǽculum.","Amen."
+		]
+	},
+	{
+		"tags":["cathedra-petri","i-vesperae","versiculus"],
+		"datum":["V. Tu es Petrus.","R. Et super hanc petram ædificábo Ecclésiam meam."]
+	},
+	{
+		"tags":["cathedra-petri","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Tu es pastor óvium, * princeps Apostolórum, tibi tráditæ sunt claves regni cœlórum."
+	},
+	{
+		"tags":["cathedra-petri","collecta"],
+		"terminatio":[["terminatio","qui-vivis"]],
+		"datum":"Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur:"
+	}
+]
