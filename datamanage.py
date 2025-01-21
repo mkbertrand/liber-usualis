@@ -11,7 +11,7 @@ import requests
 data_root = pathlib.Path(__file__).parent
 
 # Reserved tags
-functiontags = {'datum', 'src', 'tags', 'from-tags', 'reference', 'choose', 'with'}
+functiontags = {'datum', 'src', 'tags', 'from-tags', 'choose', 'with'}
 
 def load_data(p: str):
 	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
@@ -88,7 +88,7 @@ def getbreviariumfile(query):
 				if 'src' in entrycopy:
 					newentry['src'] = entrycopy['src']
 				ret.append(newentry)
-		if 'datum' in entry or 'reference' in entry:
+		if 'datum' in entry:
 			ret.append(entry)
 	return ret
 

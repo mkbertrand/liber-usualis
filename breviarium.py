@@ -188,15 +188,6 @@ def process(root, item, selected, alternates, pile):
 	if type(item) is set or type(item) is frozenset:
 		item = {'from':item}
 
-	if 'reference' in item:
-		alternates = copy.deepcopy(alternates)
-		alternates.append(selected & expandcat(root, 'temporale'))
-		# Just in case an item needs to change depending on whether it is a reference
-		selected = item['reference'] | {'referens'}
-		pile = datamanage.getpile(root, defaultpile | selected)
-		response = process(root, search(root, selected, pile), selected - expandcat(root, 'objecta'), alternates, pile)
-		return response
-
 	if 'from' in item:
 		result = None
 		if not any('/' in i for i in item['from']):
@@ -228,8 +219,6 @@ def process(root, item, selected, alternates, pile):
 			if len(item['from'] & expandcat(root, 'temporale')) != 0:
 				selected -= expandcat(root, 'temporale')
 				selected |= item['from'] & expandcat(root, 'temporale')
-				print(item['from'])
-				print(selected)
 				pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
 
 			# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
