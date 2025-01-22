@@ -20,7 +20,7 @@
 	{
 		"tags":["doctor","matutinum","nocturna-iii","lectio","lectio-ii","alia-homilia"],
 		"datum":"Hic ígitur in omnem usum humáni géneris efféctus, incorruptiónem corpóribus, quibus fúerit aspérsus, impértit, et ad omnem sensum condíti sapóris aptíssimus est. Apóstoli autem sunt rerum cœléstium prædicatóres, et æternitátis velut satóres, immortalitátem ómnibus corpóribus, quibus eórum sermo aspérsus fúerit, conferéntes. Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes.",
-		"merito-igitur":"Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes."
+		"merito-igitur":["Mérito ígitur sal terræ nuncupáti sunt, per doctrínæ virtútem saliéndi modo æternitáti córpora reservántes.", ["matutinum","nocturna-iii","lectio-iii","lectio"]]
 	},
 	{
 		"tags":["doctor","matutinum","nocturna-iii","lectio","lectio-iii","alia-homilia"],

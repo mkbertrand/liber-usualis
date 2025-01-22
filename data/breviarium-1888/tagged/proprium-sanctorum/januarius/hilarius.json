@@ -25,7 +25,8 @@
 		"datum":"Magna deínceps tranquillitáte Pictavórum ecclésiam administrávit: Galliámque univérsam addúxit, ut Arianórum impietátem condemnáret. Multos libros scripsit mira eruditióne: quos omnes sanctus Hierónymnus ad Lætam, sine ulla erróris suspicióne legi posse testátur illis verbis: Hilárii libros inoffénso decúrrat pede. Migrávit in cœlum Ídibus Januárii, Valentiniáno et Valénte imperatóribus, anno post Christum natum trecentésimo sexagésimo nono. Eum a multis Pátribus et concíliis insígnem Ecclésiæ Doctórem nuncupátum, atque uti talem in áliquot diœcésibus cultum, tandem instánte sýnodo Burdigalénsi Pius nonus Póntifex Máximus, ex sacrórum Rítuum Congregatiónis consúlto, universális Ecclésiæ Doctórem declarávit et confirmávit, ac ipsíus festo die Missam et Offícium de Doctóribus ab ómnibus recitári jussit."
 	},
 	{
-		"tags":["xhilarius","matutinum","nocturna-iii","lectio"],
-		"datum":[["doctor","alia-homilia","lectio","merito-igitur"]]
+		"tags":["hilarius","matutinum","nocturna-iii","lectio"],
+		"datum":[["doctor","nocturna-iii","alia-homilia","lectio","merito-igitur"]],
+		"lectio-iii":[["felix","matutinum","lectio"]]
 	}
 ]
