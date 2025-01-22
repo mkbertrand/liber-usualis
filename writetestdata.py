@@ -13,6 +13,7 @@ warnings.filterwarnings('ignore')
 for i in range(0, 365):
 	day = date(year, 1, 1) + timedelta(days=i)
 
+	print(day)
 	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
 		with open(f'testdata/{day}-{j.replace("+", "-")}.json', 'w') as fileout:
 			fileout.write(datamanage.dump_data(breviarium.generate(root, day, j)))
