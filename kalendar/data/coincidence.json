@@ -638,6 +638,20 @@
 		]
 	},
 	{
+		"include":["suffragium","de-cruce","primarium"],
+		"recheck":false,
+		"response":[
+			{"include":["duplex-i-classis"],"response":"dele","target":0},
+			{"include":["duplex-ii-classis"],"response":"dele","target":0},
+			{"include":["duplex-majus"],"response":"dele","target":0},
+			{"include":["duplex-minus"],"response":"dele","target":0},
+			{"include":["infra-octavam"],"response":"dele","target":0},
+			{"include":["semiduplex","primarium"],"response":"dele","target":0},
+			{"include":["simplex","primarium"],"response":"dele","target":0},
+			{"include":["feria","primarium"],"response":"dele","target":0}
+		]
+	},
+	{
 		"include":["adventus"],
 		"recheck":false,
 		"response":"tempus-adventus"
@@ -647,6 +661,18 @@
 		"recheck":false,
 		"response":[
 			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-adventus"}
+		]
+	},
+	{
+		"include":["septuagesima"],
+		"reckeck":false,
+		"response":"tempus-septuagesimae"
+	},
+	{
+		"include":["septuagesima"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-septuagesimae"}
 		]
 	},
 	{
