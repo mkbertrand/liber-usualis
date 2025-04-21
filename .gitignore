@@ -6,3 +6,4 @@ kalendars/testdata/**
 *.swo
 testdata/*
 testresults/*
+.direnv/
