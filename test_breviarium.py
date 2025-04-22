@@ -15,6 +15,8 @@ import datamanage
 year = 2001
 root = 'breviarium-1888'
 implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
+changes = dict()
+
 
 dmp = diff_match_patch.diff_match_patch()
 
@@ -55,17 +57,24 @@ def test_match(day) -> None:
 		changelog = ''
 		for (op, item) in diffs:
 			if op == dmp.DIFF_DELETE:
-				print(f'- {item.replace('\\', '')}\n')
+				# print(f'- {item.replace('\\', '')}\n')
 				changelog += f'- {item.replace('\\', '')}\n\n'
 				change = True
 			elif op == dmp.DIFF_INSERT:
-				print(f'+ {item.replace('\\', '')}')
+				# print(f'+ {item.replace('\\', '')}')
 				changelog += f'+ {item.replace('\\', '')}\n'
 				change = True
 			# Don't print if there's an equal section since this is superfluous
 
 		if change:
-			with open(f'testresults/{day}-{j.replace("+", "-")}.txt', 'w') as fileout:
-				fileout.write(changelog)
+			print(changelog)
+			if hash(changelog) in changes:
+				print(f'{day}-{j.replace("+", "-")} has the same changes as {changes[hash(changelog)]}')
+			else:
+				print('hi')
+				changes[hash(changelog)] = f'{day}-{j.replace("+", "-")}'
+				print(changes)
+				with open(f'testresults/{day}-{j.replace("+", "-")}.txt', 'w') as fileout:
+					fileout.write(changelog)
 
 		assert not change
