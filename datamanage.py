@@ -1,4 +1,4 @@
-# Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import pathlib
 import json
@@ -65,11 +65,11 @@ def getbreviariumfile(query):
 		entrycopy = copy.deepcopy(entry)
 
 		# Handle antiphons
-		if ('antiphona-invitatorium' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona-invitatorium' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str:
+		if ('antiphona-invitatorium' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona-invitatorium' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str and entry['datum'] != '':
 			if '*' not in entry['datum']:
 				raise RuntimeError(f'Missing intonation mark in {entry}')
 			entrycopy['pars'] = entrycopy['datum'].split('*')[1].lstrip()
-		elif ('antiphona' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str:
+		elif ('antiphona' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str and entry['datum'] != '':
 			if '*' not in entry['datum']:
 				raise RuntimeError(f'Missing intonation mark in {entry}')
 			entrycopy['intonata'] = entrycopy['datum'].split('*')[0].rstrip()
