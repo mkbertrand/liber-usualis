@@ -1,11 +1,17 @@
 [
 	{
-		"tags":["antiphona-bmv","alma-redemptoris","antiphona","solemnis"],
+		"tags":[
+			["antiphona-bmv","alma-redemptoris","antiphona","ante-nativitatem","solemnis"],
+			["antiphona-bmv","alma-redemptoris","antiphona","post-nativitatem","solemnis"]
+		],
 		"src":"gregobase/11878",
 		"datum":"Alma * Redemptóris Mater, quæ pérvia cœli/Porta manes, et stella maris, succúrre cadénti,/Súrgere qui curat, pópulo: tu quæ genuísti,/Natúra miránte, tuum sanctum Genitórem,/Virgo prius ac postérius, Gábrielis ab ore/Sumens illud Ave, peccatórum miserére."
 	}, 
 	{
-		"tags":["antiphona-bmv","alma-redemptoris","antiphona"],
+		"tags":[
+			["antiphona-bmv","alma-redemptoris","ante-nativitatem","antiphona"],
+			["antiphona-bmv","alma-redemptoris","post-nativitatem","antiphona"]
+		],
 		"src":"gregobase/1851",
 		"datum":"Alma * Redemptóris Mater, quæ pérvia cœli/Porta manes, et stella maris, succúrre cadénti,/Súrgere qui curat, pópulo: tu quæ genuísti,/Natúra miránte, tuum sanctum Genitórem,/Virgo prius ac postérius, Gábrielis ab ore/Sumens illud Ave, peccatórum miserére."
 	}, 
