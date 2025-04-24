@@ -228,6 +228,10 @@
 		"datum":["V. Adjutórium nóstrum ✠ in nómine Dómini.","R. Qui fecit cœlum et terram."]
 	},
 	{
+		"tags":["dg-capituli"],
+		"datum":"R. Deo grátias."
+	},
+	{
 		"tags":["dominus-vobiscum"],
 		"datum":["V. Dóminus vobíscum.","R. Et cum spíritu tuo."]
 	},
@@ -355,6 +359,16 @@
 		"tags":["hora-minor","benedicamus-domino"],
 		"src":"gregobase/18844",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":["hora-major","pascha","benedicamus-domino"],
+		"src":"gregobase/19811",
+		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
+	},
+	{
+		"tags":["hora-major","pascha","benedicamus-domino","duplex-i-classis"],
+		"src":"gregobase/19812",
+		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
 	},
 	{
 		"tags":["fidelium-animae"],
