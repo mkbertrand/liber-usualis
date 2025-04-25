@@ -50,6 +50,12 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				if (typeof data['datum'][1] === 'object')
 					nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
 				return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
+			} else if (data['tags'].includes('responsorium')) {
+				let ret = '';
+				for (i in data['datum']) {
+					ret += typeof data['datum'][i] === 'object' ? data['datum'][i]['datum'] : data['datum'][i];
+				}
+				data['datum'] = ret;
 			} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
 				antiphon = renderinner(data['datum'][2], null, null, parenttags, options);
 				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
@@ -64,42 +70,6 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				} else {
 					return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`	
 				}
-			} else if (data['tags'].includes('responsorium') && data['tags'].includes('hebdomada-i-adventus') && data['tags'].includes('dominica') && data['tags'].includes('nocturna-i') && data['tags'].includes('responsorium-i')) {
-				incipit = data['datum'][0];
-				src = incipit['src'];
-				incipit = incipit['datum'];
-				responsei = data['datum'][1]['datum'];
-				versei = data['datum'][4]['datum'];
-				responseii = data['datum'][2]['datum'];
-				verseii = data['datum'][6]['datum'];
-				responseiii = data['datum'][3]['datum'];
-				verseiii = data['datum'][8]['datum'];
-				gloria = data['datum'][10];
-				data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii} * ${responseiii}/V. ${versei}/R. ${responsei}/V. ${verseii}/R. ${responseii}/V. ${verseiii}/R. ${responseiii}/V. ${gloria}/R. ${responsei} * ${responseii} * ${responseiii}`}
-
-			} else if (data['tags'].includes('duplex-responsum') && data['tags'].includes('formula') && typeof data['datum'][0] === 'object') {
-				incipit = data['datum'][0];
-				src = incipit['src'];
-				incipit = incipit['datum'];
-				responsei = data['datum'][1]['datum'];
-				responseii = data['datum'][2]['datum'];
-				verse = data['datum'][3]['datum'];
-				gloria = data['datum'][5];
-				data = {src: src, tags: data['tags'], datum: `R. ${incipit} * ${responsei} * ${responseii}/V. ${verse}/R. ${responsei}/V. ${gloria}/R. ${responseii}`}
-			} else if (data['tags'].includes('responsorium') && data['tags'].includes('formula') && typeof data['datum'][0] === 'object') {
-				incipit = data['datum'][0];
-				src = incipit['src'];
-				incipit = incipit['datum'];
-				response = data['datum'][1]['datum'];
-				verse = data['datum'][2]['datum'];
-				gloria = data['tags'].includes('gloria') ? data['datum'][4] : null;
-				data = {src: src, tags: data['tags'], datum: gloria == null ? `R. ${incipit} * ${response}/V. ${verse}/R. ${response}` : `R. ${incipit} * ${response}/V. ${verse}/R. ${response}/V. ${gloria}/R. ${response}`}
-			} else if (data['tags'].includes('responsorium-breve')) {
-				incipit = data['datum'][0]['datum'];
-				response = data['datum'][1]['datum'];
-				verse = data['datum'][4]['datum'];
-				gloria = data['datum'].length == 9 ? data['datum'][6] : null;
-				data = {src: data['datum'][0]['src'], tags: data['tags'], datum: `R. br. ${incipit} * ${response}/R. ${incipit} * ${response}/V. ${verse}/R. ${response} ${gloria == null ? '' : '/V. ' + gloria}/R. ${incipit} * ${response}`};
 			} else if (data['tags'].includes('hymnus') && data['tags'].includes('te-deum') && !options['chant']) {
 				return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data['datum'].join('/'))}</p>`;
 			}

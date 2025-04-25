@@ -180,33 +180,29 @@
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
-			["responsorium","incipit"],
-			["responsorium","responsum"],
-			["responsorium","versus"],
-			["responsorium","responsum"]
+			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
+			"\nV. ",["responsorium","versus"],
+			"\nR. ",["responsorium","responsum"]
 		]
 	},
 	{
 		"tags":["formula","responsorium","gloria"],
 		"datum":[
-			["responsorium","incipit"],
-			["responsorium","responsum"],
-			["responsorium","versus"],
-			["responsorium","responsum"],
-			"Glória Patri, et Fílio, et Spirítui Sancto.",
-			["responsorium","responsum"]
+			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
+			"\nV. ",["responsorium","versus"],
+			"\nR. ",["responsorium","responsum"],
+			"\nV. Glória Patri, et Fílio, et Spirítui Sancto.",
+			"\nR. ",["responsorium","responsum"]
 		]
 	},
 	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
-			["matutinum","responsorium","incipit"],
-			["matutinum","responsorium","responsum-i"],
-			["matutinum","responsorium","responsum-ii"],
-			["matutinum","responsorium","versus"],
-			["matutinum","responsorium","responsum-i"],
-			"Glória Patri, et Fílio, et Spirítui Sancto.",
-			["matutinum","responsorium","responsum-ii"]
+			"R. ",["matutinum","responsorium","incipit"]," * ",["matutinum","responsorium","responsum-i"]," * ",["matutinum","responsorium","responsum-ii"],
+			"\nV. ",["matutinum","responsorium","versus"],
+			"\nR. ",["matutinum","responsorium","responsum-i"],
+			"\nV. Glória Patri, et Fílio, et Spirítui Sancto.",
+			"\nR. ",["matutinum","responsorium","responsum-ii"]
 		]
 	},
 	{
