@@ -208,15 +208,12 @@
 	{
 		"tags":["formula","responsorium-breve"],
 		"datum":[
-			["responsorium-breve","incipit"],
-			["responsorium-breve","responsum"],
-			["responsorium-breve","incipit"],
-			["responsorium-breve","responsum"],
-			["responsorium-breve","versus"],
-			["responsorium-breve","responsum"],
-			"Glória Patri, et Fílio, et Spirítui Sancto.",
-			["responsorium-breve","incipit"],
-			["responsorium-breve","responsum"]
+			"R. br. ",["responsorium-breve","incipit"]," * ",["responsorium-breve","responsum"],
+			"\n",["responsorium-breve","incipit"]," ",["responsorium-breve","responsum"],
+			"\nV. ",["responsorium-breve","versus"],
+			"\nR. ",["responsorium-breve","responsum"],
+			"\nV. Glória Patri, et Fílio, et Spirítui Sancto.",
+			"\nR. ",["responsorium-breve","incipit"]," ",["responsorium-breve","responsum"]
 		]
 	},
 	{

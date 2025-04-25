@@ -50,7 +50,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				if (typeof data['datum'][1] === 'object')
 					nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
 				return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
-			} else if (data['tags'].includes('responsorium')) {
+			} else if (data['tags'].includes('responsorium') || data['tags'].includes('responsorium-breve')) {
 				let ret = '';
 				for (i in data['datum']) {
 					ret += typeof data['datum'][i] === 'object' ? data['datum'][i]['datum'] : data['datum'][i];
@@ -168,15 +168,6 @@ async function chomp(id, tags) {
 			
 			gabcdata = (tags.includes('repetita') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
 			return gabcdata + gabc;
-
-		} else if (tags.includes('responsorium-breve')) {
-			clef = gabc.substring(0, gabc.indexOf(')') + 1);
-			incipit = gabc.match(/\(.\d\)\s(.+?)\s\*/)[1];
-			response = gabc.match(/\*\(\W\)\s(.+?)\s\(..\)/)[1];
-			verses = [...gabc.matchAll(/<v>\\Vbar<\/v>\.?(\(::\))?\s(.+?)\s\*?\(::\)/g)];
-			verse = verses[0][2];
-			gloria = verses[1][2];
-			return gabcdata + clef + ' ' + incipit + ' *(;) ' + response + ' (::) <v>\\Rbar</v> ' + incipit + ' (;) ' + response + ' (::) <v>\\Vbar</v> ' + verse + ' *(;) ' + response + ' (::) <v>\\Vbar</v> ' + gloria + ' (::) <v>\\Rbar</v> ' + incipit + ' (;) ' + response + ' (::)';
 
 		} else {
 			return gabcdata + gabc;
