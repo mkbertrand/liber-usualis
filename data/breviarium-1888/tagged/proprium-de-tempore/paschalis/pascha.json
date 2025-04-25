@@ -4,6 +4,31 @@
 		"datum":"In Dominica Resurrectionis"
 	},
 	{
+		"tags":["pascha","i-vesperae","completorium","antiphona"],
+		"datum":""
+	},
+	{
+		"tags":["pascha","i-vesperae","completorium","hymnus"],
+		"datum":""
+	},
+	{
+		"tags":["pascha","i-vesperae","completorium","capitulum"],
+		"datum":""
+	},
+	{
+		"tags":["pascha","i-vesperae","completorium","responsorium-breve"],
+		"datum":""
+	},
+	{
+		"tags":["pascha","i-vesperae","completorium","versiculus"],
+		"datum":""
+	},
+	{
+		"tags":["pascha","i-vesperae","completorium","antiphona","antiphona-nunc-dimittis"],
+		"src":"gregobase/12662",
+		"datum":"Véspere autem sábbati, * quæ lucéscit in prima sábbati, venit María Magdaléne, et áltera María vidére sepúlchrum, allelúja."
+	},
+	{
 		"tags":["pascha","matutinum","nocturnae"],
 		"datum":[
 			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae","te-deum"]
@@ -184,7 +209,7 @@
 		"datum":"Et respiciéntes * vidérunt revolútum lápidem: erat quippe magnus valde, allelúja."
 	},
 	{
-		"tags":["pascha","completorium","hora"],
+		"tags":["pascha","ii-vesperae","completorium","hora"],
 		"datum":[
 			["completorium","formula","formula-lectionis"],
 			["adjutorium-nostrum"],
