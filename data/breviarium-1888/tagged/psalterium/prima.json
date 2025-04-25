@@ -71,7 +71,10 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["prima","psalmi"],
+		"tags":[
+			["prima","dominica","paschalis","psalmi"],
+			["prima","psalmi"]
+		],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
@@ -234,7 +237,7 @@
 		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
 	},
 	{
-		"tags":["prima","temporale","lectio"],
+		"tags":["prima","per-annum","lectio"],
 		"datum":"Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
 	},
 	{
@@ -276,7 +279,7 @@
 		"datum":"Beati * qui ámbulant in lege Dómini."
 	},
 	{
-		"tags":["prima","feria-ii","psalmi"],
+		"tags":["prima","feria","feria-ii","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxiii,gloria"],
@@ -285,7 +288,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-iii","psalmi"],
+		"tags":["prima","feria","feria-iii","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxiv,gloria"],
@@ -294,7 +297,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-iv","psalmi"],
+		"tags":["prima","feria","feria-iv","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxv,gloria"],
@@ -303,7 +306,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-v","psalmi"],
+		"tags":["prima","feria","feria-v","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxii,gloria"],
@@ -312,7 +315,7 @@
 		]
 	},
 	{
-		"tags":["prima","feria-vi","psalmi"],
+		"tags":["prima","feria","feria-vi","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxi,gloria"],
