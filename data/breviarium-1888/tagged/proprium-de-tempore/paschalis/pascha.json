@@ -6,17 +6,13 @@
 	{
 		"tags":["pascha","matutinum","nocturnae"],
 		"datum":[
-			["matutinum","nocturna","tres-psalmi","tres-antiphonae","te-deum"]
+			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
 		"tags":["pascha","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/P0I",
 		"datum":"Surréxit Dóminus vere, * Allelúja."
-	},
-	{
-		"tags":["pascha","matutinum","hymnus"],
-		"datum":""
 	},
 	{
 		"tags":["pascha","matutinum","antiphona","antiphona-i"],
@@ -50,49 +46,71 @@
 		"datum":["V. Surréxit Dóminus de sepúlchro, allelúja.","R. Qui pro nobis pepéndit in ligno, allelúja."]
 	},
 	{
-		"tags":["pascha","laudes","hora"],
+		"tags":["pascha","dominica","matutinum","lectio","lectio-i"],
 		"datum":[
-			["deus-in-adjutorium","festalis"],
-			["laudes","psalmi"],
-			["antiphona","haec-dies"],
-			["laudes","benedictus","antiphona-prior"],
-			["/psalmi/benedictus,gloria"],
-			["laudes","antiphona","antiphona-benedictus","repetita"],
-			["laudes","collecta-primaria"],
-			["laudes","commemorationes"],
-			["dominus-vobiscum"],
-			["laudes","hora-major","benedicamus-domino"],
-			["fidelium-animae"],
-			["pater-noster-secreta"],
-			"V. Dóminus det nobis suam pacem.",
-			"R. Et vitam ætérnam. Amen.",
-			["antiphona-bmv"],
-			"Divínum auxílium ✠ máneat semper nobíscum.",
-			"R. Amen."
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"In illo témpore: María Magdaléne, et Maria Jacóbi, et Salóme emérunt arómata, ut veniéntes úngerent Jesum. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Audístis, fratres caríssimi, quod sanctæ mulíeres, quæ Dóminum fuerant secútæ, cum aromátibus ad monuméntum venérunt, et ei, quem vivéntem diléxerant, étiam mórtuo, stúdio humanitátis obsequúntur. Sed res gesta áliquid in sancta Ecclésia signat geréndum. Sic quippe necésse est ut audiámus quæ facta sunt, quátenus cogitémus étiam quæ nobis sint ex eórum imitatióne faciénda. Et nos ergo in eum, qui est mórtuus, credéntes, si odóre virtútum reférti, cum opinióne bonórum óperum Dóminum quǽrimus, ad monuméntum profécto illíus cum aromátibus venímus. Illæ autem mulíeres Ángelos vident, quæ cum aromátibus venérunt: quia vidélicet illæ mentes supérnos cives aspíciunt, quæ cum virtútum odóribus ad Dóminum per sancta desidéria proficiscúntur."
 		]
 	},
 	{
+		"tags":["pascha","matutinum","responsorium","responsorium-i"],
+		"src":"nocturnale/P0R1",
+		"formula":[
+			"R. ",["incipit"]," * ",["responsum"],
+			"\nV. ",["versus"],
+			"\nR. ",["responsum"],
+			"\nV. Glória Patri, et Fílio, et Spirítui sancto.",
+			"\nR. ", ["incipit"]," ",["responsum"]
+		],
+		"incipit":"Ángelus Dómini descéndit de cœlo, et accédens revólvit lápidem, et super eum sedit, et dixit muliéribus:",
+		"responsum":"Nolíte timére: scio enim quia crucifíxum quǽritis: jam surréxit: veníte, et vidéte locum, ubi pósitus erat Dóminus, allelúja.",
+		"versus":"Et introëúntes in monuméntum, vidérunt júvenum sedéntem in dextris, coopértum stola cándida, et obstupuérunt: qui dixit illis."
+	},
+	{
+		"tags":["pascha","dominica","matutinum","lectio","lectio-ii"],
+		"datum":"Notándum vero nobis est, quidnam sit, quod in dextris sedére Ángelus cérnitur. Quid namque per sinístram, nisi vita præsens: quid vero per déxteram, nisi perpétua vita designátur? Unde in Cánticis canticórum scriptum est: Læva ejus sub cápite meo, et déxtera illíus amplexábitur me. Quia ergo Redémptor noster jam præséntis vitæ corruptiónem transíerat, recte Ángelus, qui nuntiáre perénnem ejus vitam vénerat, in déxtera sedébat. Qui stola cándida coopértus appáruit: quia festivitátis nostræ gaúdia nuntiávit. Candor étenim vestis, splendórem nostræ denúntiat solemnitátis. Nostræ dicámus, an suæ? Sed ut fateámur vérius, et suæ dicámus, et nostræ. Illa quippe Redemptóris nostri resurréctio et nostra festívitas fuit, quia nos ad immortalitátem redúxit: et Angelórum festívitas éxstitit, quia nos revocándo ad cœléstia, eórum númerum implévit."
+	},
+	{
+		"tags":["pascha","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P0R2",
+		"incipit":"Cum transísset sábbatum, María Magdaléne, et María Jacóbi, et Salóme emérunt arómata,",
+		"responsum":"Ut veniéntes úngerent Jesum, allelúja, allelúja.",
+		"versus":"Et valde mane una sabbatórum, véniunt ad monuméntum, orto jam sole."
+	},
+	{
+		"tags":["pascha","dominica","matutinum","lectio","lectio-iii"],
+		"datum":"In sua ergo ac nostra festivitáte Ángelus in albis véstibus appáruit: quia dum nos per resurrectiónem Domínicam ad supérna redúcimur, cœléstis pátriæ damna reparántur. Sed quid adveniéntes féminas affátur, audiámus: Nolíte expavéscere. Ac si apérte dicat, Páveant illi, qui non amant advéntum supernórum cívium: pertiméscant, qui carnálibus desidériis pressi, ad eórum se societátem pertíngere posse despérant. Vos autem, cur pertiméscitis, quæ vestros concíves vidétis? Unde et Matthǽus Ángelum apparuísse descríbens, ait: Erat aspéctus ejus sicut fulgur, et vestiménta ejus sicut nix. In fulgóre étenim terror timóris est, in nive autem blandiméntum candóris."
+	},
+	{
 		"tags":["pascha","antiphona","antiphona-i"],
+		"src":"gregobase/1952",
 		"datum":"Ángelus autem Dómini * descéndit de cœlo, et accédens revólvit lápidem, et sedébat super eum, alléluja, allelúja."
 	},
 	{
 		"tags":["pascha","antiphona","antiphona-ii"],
+		"src":"gregobase/2038",
 		"datum":"Et ecce terræmótus * factus est magnus: Ángelus enim Dómini descéndit de cœlo, allelúja."
 	},
 	{
 		"tags":["pascha","antiphona","antiphona-iii"],
+		"src":"gregobase/2344",
 		"datum":"Erat autem * aspéctus ejus sicut fulgur, vestiménta autem ejus sicut nix, allelúja, allelúja."
 	},
 	{
 		"tags":["pascha","antiphona","antiphona-iv"],
+		"src":"gregobase/2959",
 		"datum":"Præ timóre autem ejus * extérriti sunt custódes, et facti sunt velut mórtui, allelúja."
 	},
 	{
 		"tags":["pascha","antiphona","antiphona-v"],
+		"src":"gregobase/2171",
 		"datum":"Respóndens autem Ángelus, * dixit muliéribus: Nolíte timére: scio enim quod Jesum quǽritis, allelúja."
 	},
 	{
 		"tags":["antiphona","haec-dies"],
+		"src":"gregobase/2230",
 		"datum":"Hæc dies * quam fecit Dóminus: exsultémus, et lætémur in ea."
 	},
 	{
@@ -106,93 +124,100 @@
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
-		"tags":["pascha","prima","hora"],
+		"tags":[
+			["pascha","capitulum","laudes"],
+			["pascha","capitulum","prima"],
+			["pascha","capitulum","tertia"],
+			["pascha","capitulum","sexta"],
+			["pascha","capitulum","nona"],
+			["pascha","capitulum","vesperae"]
+		],
+		"datum":[["antiphona","haec-dies"]]
+	},
+	{
+		"tags":["pascha","dg-capituli"],
+		"datum":""
+	},
+	{
+		"tags":[
+			["pascha","hymnus","matutinum"],
+			["pascha","hymnus","laudes"],
+			["pascha","hymnus","prima"],
+			["pascha","hymnus","tertia"],
+			["pascha","hymnus","sexta"],
+			["pascha","hymnus","nona"],
+			["pascha","hymnus","vesperae"]
+		],
+		"datum":""
+	},
+	{
+		"tags":[
+			["pascha","laudes","versiculus"],
+			["pascha","prima","versiculus"],
+			["pascha","tertia","versiculus"],
+			["pascha","sexta","versiculus"],
+			["pascha","nona","versiculus"]
+		],
+		"datum":""
+	},
+	{
+		"tags":[
+			["pascha","antiphona","prima"],
+			["pascha","antiphona","tertia"],
+			["pascha","antiphona","sexta"],
+			["pascha","antiphona","nona"]
+		],
+		"datum":""
+	},
+	{
+		"tags":[
+			["pascha","responsorium-breve","prima"],
+			["pascha","responsorium-breve","tertia"],
+			["pascha","responsorium-breve","sexta"],
+			["pascha","responsorium-breve","nona"]
+		],
+		"datum":""
+	},
+	{
+		"tags":["pascha","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2732",
+		"datum":"Et respiciéntes * vidérunt revolútum lápidem: erat quippe magnus valde, allelúja."
+	},
+	{
+		"tags":["pascha","completorium","hora"],
 		"datum":[
-			["prex-triplex"],
-			["deus-in-adjutorium","ferialis"],
-			["prima","psalmi"],
-			["antiphona","haec-dies"],
-			["prima","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["prima","benedicamus-domino","hora-minor"],
-			["martyrologium"],
-			"V. Pretiósa in conspéctu Dómini.",
-			"R. Mors sanctórum ejus.",
-			"Sancta María, et omnes Sancti indercédant pro nobis ad Dóminum, ut nos mereámur ab eo adjuvári et salvári, qui vivit et regnat in sǽcula sæculórum.",
-			"R. Amen.",
-			"V. Deus in adjutórium meum inténde.",
-			"R. Dómine ad adjuvándum me festína.",
-			"V. Deus in adjutórium meum inténde.",
-			"R. Dómine ad adjuvándum me festína.",
-			"V. Deus in adjutórium meum inténde.",
-			"R. Dómine ad adjuvándum me festína.",
-			["gloria-versorum"],
-			"Kýrie eleíson. Christe eleíson. Kýrie eleíson.",	
-			"Pater noster.",
-			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
-			"V. Et ne nos indúcas in tentatiónem.","R. Sed líbera nos a malo.",
-			"V. Réspice in servos tuos Dómine, et in ópera tua, * et dírige fílios eórum.",
-			"R. Et sit splendor Dómini Dei nostri super nos, + et ópera mánuum nostrárum dírige super nos, * et opus mánuum nostrárum dírige.",
-			["gloria-versorum"],
-			"Orémus.",
-			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, + sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: * ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi:",
-			"Qui vivis et regnas in sǽcula sæculórum.",
-			"R. Amen.",
-			["prima","formula","formula-lectionis"],
+			["completorium","formula","formula-lectionis"],
 			["adjutorium-nostrum"],
-			"V. Benedícite.",
-			"R. Deus.",
-			"Dóminus nos benedícat, et ab omni malo deféndat, et ad vitam perdúcat ætérnam: et fidélium ánimæ per misericórdiam Dei requiéscant in pace.",
-			"Amen.",
-			["pater-noster-secreta"]
+			["pater-noster-secreta"],
+			["confiteor"],
+			"V. Convérte nos ✙ Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
+			["deus-in-adjutorium","ferialis"],
+			["/psalmi/psalmus-iv,gloria"],
+			["/psalmi/psalmus-xxx:2-6,gloria"],
+			["/psalmi/psalmus-xc,gloria"],
+			["/psalmi/psalmus-cxxxiii,gloria"],
+			["completorium","antiphona","repetita"],
+			["/psalmi/nunc-dimittis,gloria"],
+			["antiphona","haec-dies"],
+			["completorium","collecta-primaria"],
+			["dominus-vobiscum","ferialis-a"],
+			["completorium","benedicamus-domino","hora-minor"],
+			{
+				"tags":["completorium","benedictio-finalis"],
+				"datum":[
+					"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
+					"R. Amen."
+				]
+			},
+			["antiphona-bmv"],
+			"Divínum auxílium ✠ máneat semper nobíscum.",
+			"R. Amen.",
+			["prex-triplex"]
 		]
 	},
 	{
-		"tags":["pascha","tertia","hora"],
-		"datum":[
-			["prex-duplex"],
-			["deus-in-adjutorium","ferialis"],
-			["/psalmi/psalmus-cxviii:33-48,gloria"],
-			["/psalmi/psalmus-cxviii:49-64,gloria"],
-			["/psalmi/psalmus-cxviii:65-80,gloria"],
-			["antiphona","haec-dies"],
-			["tertia","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["tertia","benedicamus-domino","hora-minor"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
-		]
-	},
-	{
-		"tags":["pascha","sexta","hora"],
-		"datum":[
-			["prex-duplex"],
-			["deus-in-adjutorium","ferialis"],
-			["/psalmi/psalmus-cxviii:81-96,gloria"],
-			["/psalmi/psalmus-cxviii:97-112,gloria"],
-			["/psalmi/psalmus-cxviii:113-128,gloria"],
-			["antiphona","haec-dies"],
-			["sexta","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["sexta","benedicamus-domino","hora-minor"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
-		]
-	},
-	{
-		"tags":["pascha","nona","hora"],
-		"datum":[
-			["prex-duplex"],
-			["deus-in-adjutorium","ferialis"],
-			["/psalmi/psalmus-cxviii:129-144,gloria"],
-			["/psalmi/psalmus-cxviii:145-160,gloria"],
-			["/psalmi/psalmus-cxviii:161-176,gloria"],
-			["antiphona","haec-dies"],
-			["nona","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["nona","benedicamus-domino","hora-minor"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
-		]
+		"tags":["pascha","completorium","antiphona","repetita"],
+		"src":"gregobase/4499",
+		"datum":"Allelúja, allelúja, allelúja, allelúja."
 	}
 ]
