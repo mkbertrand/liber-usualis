@@ -1,0 +1,45 @@
+[
+	{
+		"tags":["dominica-in-albis","i-vesperae","capitulum"],
+		"datum":"Caríssimi: Omne, quod natum est ex Deo, vincit mundum: + et hæc est victória, quæ vincit mundum, * fides nostra."
+	},
+	{
+		"tags":["dominica-in-albis","i-vesperae","versiculus"],
+		"datum":["V. Mane nobíscum Dómine, allelúja.","R. Quóniam advesperáscit, allelúja."]
+	},
+	{
+		"tags":["dominica-in-albis","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1885",
+		"datum":"Cum esset sero * die illa una sabbatórum, et fores essent clausæ, ubi erant discípuli congregáti in unum, stetit Jesus in médio, et dixit eis: Pax vobis, allelúja."
+	},
+	{
+		"tags":["dominica-in-albis","collecta"],
+		"datum":"Præsta quǽsumus omnípotens Deus: + ut qui paschália festa perégimus, * hæc, te largiénte, móribus et vita teneámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["dominica-in-albis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1930",
+		"datum":"Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúja, allelúja."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2528",
+		"datum":"Pax vobis, * ego sum, allelúja: nolíte timére, allelúja."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/12184",
+		"datum":"Mitte manum tuam, * et cognósce loca clavórum, allelúja: et noli esse incrédulus, sed fidélis, allelúja."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2517",
+		"datum":"Quia vidísti me, * Thoma, credidísti: beáti qui non vidérunt, et credidérunt, allelúja."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/12460",
+		"datum":"Misi dígitum meum * in fixúras clavórum, et manum meam in latus ejus, et dixi: Dóminus meus, et Deus meus, allelúja."
+	}
+]

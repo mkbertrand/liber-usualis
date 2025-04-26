@@ -70,6 +70,30 @@
 		]
 	},
 	{
+		"tags":["vesperae","paschalis","psalmi","duplex"],
+		"datum":[
+			["vesperae","antiphona","antiphona-i"],
+			["vesperae","psalmus","psalmus-i"],
+			["vesperae","psalmus","psalmus-ii"],
+			["vesperae","psalmus","psalmus-iii"],
+			["vesperae","psalmus","psalmus-iv"],
+			["vesperae","psalmus","psalmus-v"],
+			["vesperae","antiphona","antiphona-i","repetita"]
+		]
+	},
+	{
+		"tags":["vesperae","paschalis","psalmi"],
+		"datum":[
+			["vesperae","antiphona","antiphona-i","intonata"],
+			["vesperae","psalmus","psalmus-i"],
+			["vesperae","psalmus","psalmus-ii"],
+			["vesperae","psalmus","psalmus-iii"],
+			["vesperae","psalmus","psalmus-iv"],
+			["vesperae","psalmus","psalmus-v"],
+			["vesperae","antiphona","antiphona-i","repetita"]
+		]
+	},
+	{
 		"tags":["vesperae","magnificat","antiphona-prior"],
 		"duplex":[["vesperae","antiphona","antiphona-magnificat"]],
 		"datum":[["vesperae","antiphona","antiphona-magnificat","intonata"]]
@@ -468,6 +492,11 @@
 		"tags":["vesperae","dominica","i-vesperae","antiphona-i","antiphona"],
 		"src":"gregobase/10783",
 		"datum":"Benedíctus * Dóminus Deus meus."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-i","paschalis"],
+		"src":"gregobase/3004",
+		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
 		"tags":["vesperae","dominica","i-vesperae","psalmus-i"],
