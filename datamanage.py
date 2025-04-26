@@ -93,7 +93,14 @@ def getbreviariumfile(query):
 	return ret
 
 @functools.lru_cache(maxsize=1024)
-def getchantfile(url):
+def getchantfile(src):
+	url = ''
+	if 'gregobase' in src and not src.endswith('&format=gabc'):
+		url = f'https://gregobase.selapa.net/download.php?id={src[src.index('/') + 1:]}&format=gabc&elem=1'
+	elif 'nocturnale' in src:
+		url = f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc'
+	else:
+		raise Exception('Unsupported chant repository')
 	return requests.get(url, stream=True).text
 
 # Has the list of files in the tagged directory to prevent multiple discoveratory traversals from having to be done

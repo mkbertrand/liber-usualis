@@ -97,13 +97,6 @@ def rite():
 
 @get('/chant/<url:path>')
 def chant(url):
-	if 'gregobase' in url and not url.endswith('&format=gabc'):
-		url = f'https://gregobase.selapa.net/download.php?id={url[url.index('/') + 1:]}&format=gabc&elem=1'
-	elif 'nocturnale' in url:
-		url = f'https://nocturnale.marteo.fr/static/gabc/{url[url.index('/') + 1:]}.gabc'
-	else:
-		raise Exception('Unsupported chant repository')
-	response = datamanage.getchantfile(url)
 	return datamanage.getchantfile(url)
 
 @get('/nomina')
