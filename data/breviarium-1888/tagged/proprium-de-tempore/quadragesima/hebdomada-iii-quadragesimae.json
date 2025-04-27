@@ -5,33 +5,68 @@
 		"datum":"Dixit autem pater * ad servos suos: Cito proférte stolam primam, et indúite illum, et date ánnulum in manu ejus, et calceaménta in pédibus ejus."
 	},
 	{
+		"tags":["hebdomada-iii-quadragesimae","dominica","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/19820",
+		"datum":"Cum fortis armátus * custódit átrium suum, in pace sunt ómnia quæ póssidet."
+	},
+	{
 		"tags":["hebdomada-iii-quadragesimae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/19816",
 		"datum":"Extóllens vocem * quædam múlier de turba, dixit: Beátus venter qui te portávit, et úbera, quæ suxísti. At Jesus ait illi: Quinímo beáti qui aúdiunt verbum Dei, et custódiunt illud."
 	},
 	{
-		"tags":["hebdomada-iii-quadragesimae","feria","feria-ii","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2313",
+		"datum":"Amen dico vobis, * quia nemo prophéta accéptus est in pátria sua."
+	},
+	{
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2117",
 		"datum":"Jesus autem tránsiens * per médium illórum ibat."
 	},
 	{
-		"tags":["hebdomada-iii-quadragesimae","feria","feria-iii","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/1933",
+		"datum":"Si duo ex vobis * consénserint super terram de omni re quamcúmque petíerint, fiet illis a Patre meo, dicit Dóminus."
+	},
+	{
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2666",
 		"datum":"Ubi duo vel tres * congregáti fúerint in nómine meo, in médio eórum sum, dicit Dóminus."
 	},
 	{
-		"tags":["hebdomada-iii-quadragesimae","feria","feria-iv","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13021",
+		"datum":"Audíte et intellígite * traditiónes, quas Dóminus dedit nobis."
+	},
+	{
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2538",
 		"datum":"Non lotis mánibus * manducáre, non coínquinat hóminem."
 	},
 	{
-		"tags":["hebdomada-iii-quadragesimae","feria","feria-v","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/1993",
+		"datum":"Exíbant autem dæmónia * a multis clamántia, et dicéntia, Quia tu es Christus Fílius Dei: et íncrepans non sinébat ea loqui, quia sciébant ipsum esse Christum."
+	},
+	{
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2733",
 		"datum":"Omnes qui habébant infírmos, * ducébant illos ad Jesum, et sanabántur."
 	},
 	{
-		"tags":["hebdomada-iii-quadragesimae","feria","feria-vi","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2512",
+		"datum":"Aquam, quam ego dédero * si quis bíberit ex ea, non sítiet in ætérnum."
+	},
+	{
+		"tags":["hebdomada-iii-quadragesimae","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2420",
 		"datum":"Dómine, * ut vídeo, prophéta es tu: patres nostri in monte hoc adoravérunt."
+	},
+	{
+		"tags":["hebdomada-iii-quadragesimae","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2034",
+		"datum":"Inclinávit se Jesus, * et scribébat in terra: Si quis sine peccáto est, mittat in eam lápidem."
 	}
 ]

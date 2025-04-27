@@ -5,9 +5,19 @@
 		"datum":"Nemo te condemnávit múlier? * nemo Dómine: nec ego te condemnábo: jam ámplius noli peccáre."
 	},
 	{
+		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2754",
+		"datum":"Cum sublevásset óculos * Jesus, et vidísset máximam multitúdinem veniéntem ad se, dixit ad Philíppum: Unde emémus panes, ut mandúcent hi? hoc autem dicébat tentans eum: ipse enim sciébat quid esset factúrus."
+	},
+	{
 		"tags":["hebdomada-iv-quadragesimae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2196",
 		"datum":"Súbiit ergo * in montem Jesus, et ibi sedébat cum discípulis suis."
+	},
+	{
+		"tags":["hebdomada-iv-quadragesimae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/1863",
+		"datum":"Auférte ista hinc, * dicit Dóminus: et nolíte fácere domum Patris mei domum negotiatiónis."
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
@@ -15,9 +25,19 @@
 		"datum":"Sólvite templum hoc, * dicit Dóminus; et post tríduum reædificábo illud: hoc autem dicébat de templo córporis sui."
 	},
 	{
+		"tags":["hebdomada-iv-quadragesimae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2729",
+		"datum":"Quid me quǽritis * interfícere, hóminem qui vera locútus sum vobis?"
+	},
+	{
 		"tags":["hebdomada-iv-quadragesimae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2323",
 		"datum":"Nemo in eum misit manum: * quia nondum vénerat hora ejus."
+	},
+	{
+		"tags":["hebdomada-iv-quadragesimae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2541",
+		"datum":"Rabbi, quid peccávit * homo iste, quod cæcus natus est? Respóndit Jesus, et dixit: Neque hic peccávit, neque paréntes ejus: sed ut manifesténtur ópera Dei in illo."
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
@@ -25,13 +45,28 @@
 		"datum":"Ille homo * qui dícitur Jesus, lutum fecit ex sputo, et linívit óculos meos, et modo vídeo."
 	},
 	{
+		"tags":["hebdomada-iv-quadragesimae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2859",
+		"datum":"Ibat Jesus * in civitátem, quæ vocátur Naïm: et ecce defúnctus efferebátur fílius únicus matris suæ."
+	},
+	{
 		"tags":["hebdomada-iv-quadragesimae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2773",
 		"datum":"Prophéta magnus * surréxit in nobis, et quia Deus visitávit plebem suam."
 	},
 	{
+		"tags":["hebdomada-iv-quadragesimae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12696",
+		"datum":"Lázarus amícus noster * dormit: eámus, et a somno excitémus eum."
+	},
+	{
 		"tags":["hebdomada-iv-quadragesimae","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/19817",
 		"datum":"Dómine, * si fuísses hic, Lázarus non esset mórtuus: ecce jam fœtet quatriduánus in monuménto."
+	},
+	{
+		"tags":["hebdomada-iv-quadragesimae","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2865",
+		"datum":"Qui séquitur me, * non ámbulat in ténebris: sed habébit lumen vitæ, dicit Dóminus."
 	}
 ]
