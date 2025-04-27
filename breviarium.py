@@ -135,7 +135,7 @@ def discriminate(root, table: str, tags: set):
 	return val
 
 def managesearch(query, result):
-	if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '':
+	if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
 		return result
 	else:
 		if 'intonata' in query:
