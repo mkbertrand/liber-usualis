@@ -64,18 +64,6 @@ def getbreviariumfile(query):
 	for entry in got:
 		entrycopy = copy.deepcopy(entry)
 
-		# Handle antiphons
-		if ('antiphona-invitatorium' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona-invitatorium' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str and entry['datum'] != '':
-			if '*' not in entry['datum']:
-				raise RuntimeError(f'Missing intonation mark in {entry}')
-			entrycopy['pars'] = entrycopy['datum'].split('*')[1].lstrip()
-		elif ('antiphona' in entrycopy['tags'] and not 'repetita' in entrycopy['tags'] or (type(entrycopy['tags']) is list and 'antiphona' in entrycopy['tags'][0])) and 'datum' in entrycopy and type(entrycopy['datum']) is str and entry['datum'] != '':
-			if '*' not in entry['datum']:
-				raise RuntimeError(f'Missing intonation mark in {entry}')
-			entrycopy['intonata'] = entrycopy['datum'].split('*')[0].rstrip()
-			if entrycopy['intonata'][-1] not in ['.',',','?','!',':',';']:
-				entrycopy['intonata'] += '.'
-			entrycopy['repetita'] = entrycopy['datum'].split('* ')[0] + entrycopy['datum'].split('* ')[1]
 		# Expands out entries where there's more than one item
 		for key, val in entrycopy.items():
 			if key not in functiontags:
