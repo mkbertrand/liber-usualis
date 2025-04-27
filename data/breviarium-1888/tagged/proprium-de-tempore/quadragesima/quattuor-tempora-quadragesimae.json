@@ -1,12 +1,26 @@
 [
 	{
-		"tags":["quattuor-tempora-quadragesimae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["quattuor-tempora-quadragesimae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12492",
+		"datum":"Generátio * hæc prava et pervérsa signum quærit: et signum non dábitur ei, nisi signum Jonæ prophétæ."
+	},
+	{
+		"tags":["quattuor-tempora-quadragesimae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12734",
 		"datum":"Sicut fuit Jonas * in ventre ceti tribus diébus et tribus nóctibus, ita erit Fílius hóminis in corde terræ."
 	},
 	{
-		"tags":["quattuor-tempora-quadragesimae","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["quattuor-tempora-quadragesimae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2045",
+		"datum":"Ángelus Dómini * descendébat de cœlo, et movebátur aqua, et sanabátur unus."
+	},
+	{
+		"tags":["quattuor-tempora-quadragesimae","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2543",
 		"datum":"Qui me sanum fecit, * ille mihi præcépit: Tolle grabátum tuum, et ámbula in pace."
+	},
+	{
+		"tags":["quattuor-tempora-quadragesimae","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["hebdomada-ii-quadragesimae","dominica","antiphona"]]
 	}
 ]
