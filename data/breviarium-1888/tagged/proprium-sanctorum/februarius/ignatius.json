@@ -5,11 +5,12 @@
 	},
 	{
 		"tags":["ignatius","collecta"],
-		"datum":"Infirmitátem nostram réspice, omnípotens Deus: et quia pondus própriæ actiónis gravat, beáti Ignátii Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat."
+		"datum":"Infirmitátem nostram réspice, omnípotens Deus: et quia pondus própriæ actiónis gravat, beáti Ignátii Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["ignatius","matutinum","nocturna-i","lectio"],
-		"datum":[["tempore","occurrens","lectio"]]
+		"datum":[["temporale","occurrens","lectio"]]
 	},
 	{
 		"tags":["ignatius","matutinum","nocturna-ii","lectio","lectio-i"],

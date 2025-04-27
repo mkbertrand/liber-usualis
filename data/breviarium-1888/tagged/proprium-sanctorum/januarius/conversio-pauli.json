@@ -5,21 +5,59 @@
 	},
 	{
 		"tags":["conversio-pauli","antiphona","antiphona-i"],
-		"datum":"Ego plantávi, *Apóllo rigávit, Deus autem increméntum dedit, allelúja."
+		"src":"gregobase/2098",
+		"datum":"Ego plantávi, * Apóllo rigávit, Deus autem increméntum dedit, allelúja.",
+		"tempus-septuagesimae":"Ego plantávi, * Apóllo rigávit, Deus autem increméntum dedit."
 	},
 	{
 		"tags":["conversio-pauli","antiphona","antiphona-ii"],
+		"src":"gregobase/2725",
 		"datum":"Libénter gloriábor * in infirmitátibus meis, ut inhábitet in me virtus Christi."
 	},
 	{
 		"tags":["conversio-pauli","antiphona","antiphona-iii"],
+		"src":"gregobase/2843",
 		"datum":"Grátia Dei * in me vácua non fuit, sed grátia ejus semper in me manet."
 	},
 	{
 		"tags":["conversio-pauli","antiphona","antiphona-iv"],
+		"src":"gregobase/1912",
 		"datum":"Damásci, præpósitus * Gentis Arétæ regis vóluit me comprehéndere: a frátribus per murum demíssus sum in sporta, et sic evási manus ejus in nómine Dómini."
 	},
 	{
 		"tags":["conversio-pauli","antiphona","antiphona-v"],
-		"datum":"Ter virgis cæsus sum, * seme
+		"src":"gregobase/2262",
+		"datum":"Ter virgis cæsus sum, * semel lapidátus sum, ter naufrágium pértuli pro Christi nómine."
+	},
+	{
+		"tags":["conversio-pauli","capitulum"],
+		"datum":"Saulus adhuc spirans minárum, et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, + et pétiit ab eo epístolas in Damáscum ad synagógas: * ut si quos invenísset hujus viæ viros, ac mulíeres, vinctos perdúceret in Jerúsalem."
+	},
+	{
+		"tags":["conversio-pauli","vesperae","hymnus"],
+		"src":"gregobase/2611",
+		"datum":[
+			"Egrégie Doctor Paule mores ínstrue,/Et nostra tecum péctora in cœlum trahe:/Veláta dum merídiem cernat fides,/Et solis instar sola regnet cáritas.",
+			"Sit Trinitáti sempitérna glória,/Honor, potéstas, atque jubilátio,/In unitáte, quæ gubérnat ómnia,/Per univérsa æternitátis sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["conversio-pauli","vesperae","versiculus"],
+		"datum":["V. Tu es vas electiónis sancte Paule Apóstole.","R. Prædicátor veritátis in univérso mundo."]
+	},
+	{
+		"tags":["conversio-pauli","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2598",
+		"datum":"Vade Ananía, * et quære Saulum: ecce enim orat: quia vas electiónis est mihi, ut portet nomen meum coram Géntibus, et régibus, et fíliis Ísraël."
+	},
+	{
+		"tags":["conversio-pauli","collecta"],
+		"datum":"Deus, qui univérsum mundum beáti Pauli Apóstoli prædicatióne docuísti: + da nobis quǽsumus; ut qui ejus hódie Conversiónem cólimus, * per ejus ad te exémpla gradiámur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["conversio-pauli","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2937",
+		"datum":"Sancte Paule Apóstole, * prædicátor veritátis, et Doctor Géntium, intercéde pro nobis ad Deum, qui te elégit."
+	}
 ]
