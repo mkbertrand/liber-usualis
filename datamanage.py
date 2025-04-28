@@ -13,6 +13,8 @@ data_root = pathlib.Path(__file__).parent
 # Reserved tags
 functiontags = {'datum', 'src', 'tags', 'from-tags', 'choose', 'with'}
 
+tagselections = {'tags', 'from-tags', 'implies', 'choose', 'with'}
+
 def load_data(p: str):
 	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
 
@@ -23,7 +25,7 @@ def load_data(p: str):
 			case dict():
 				return {k: recurse(v, key=k) for k, v in obj.items()}
 			case list():
-				if all(type(x) is str for x in obj) and key != 'datum':
+				if all(type(x) is str for x in obj) and (key is None or key in tagselections):
 					return frozenset(obj)
 				return [recurse(v) for v in obj]
 			case _:
@@ -72,6 +74,7 @@ def getbreviariumfile(query):
 					tags = [j | {key} for j in entrycopy['tags']]
 				else:
 					tags = entrycopy['tags'] | {key}
+				print(val)
 				newentry = {'tags':tags, 'datum':val}
 				if 'src' in entrycopy:
 					newentry['src'] = entrycopy['src']
