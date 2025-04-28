@@ -241,7 +241,11 @@ def process(root, item, selected, alternates, pile):
 
 			# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
 			if contradicts(root, 'positionales', item['from'] | selected):
-				selected -= expandcat(root, 'positionales')
+				# Temporary solution to issue with antiphon references sorry
+				if 'antiphona' in item['from']:
+					selected = (selected - expandcat(root, 'positionales')) | {'intonata', 'pars', 'repetita'} & selected
+				else:
+					selected -= expandcat(root, 'positionales')
 			result = search(root, item['from'] | selected, pile)
 
 		# If result is still None at this point, just tell user what was searched for
