@@ -1,6 +1,9 @@
 [
 	{
-		"tags":["hebdomada-v-paschae","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"tags":[
+			["hebdomada-v-paschae","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+			["hebdomada-v-paschae","dominica","laudes","antiphona","antiphona-benedictus"]
+		],
 		"src":"gregobase/2567",
 		"datum":"Usque modo * non petístis quidquam in nómine meo: pétite, et accipiétis, allelúja."
 	},

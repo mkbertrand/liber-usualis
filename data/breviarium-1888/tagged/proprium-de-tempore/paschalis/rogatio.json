@@ -1,12 +1,27 @@
 [
 	{
+		"tags":["feria-ii-rogationis","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/15304",
+		"datum":"Petíte, et accipiétis: * quǽrite, et inveniétis: pulsáte, et aperiétur vobis, allelúja."
+	},
+	{
 		"tags":["feria-ii-rogationis","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12455",
 		"datum":"Ipse enim Pater amat * vos, quia vos me amástis, et credidístis, allelúja."
 	},
 	{
+		"tags":["feria-iii-rogationis","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12136",
+		"datum":"Oportébat * pati Christum, et resúrgere a mórtuis, allelúja."
+	},
+	{
 		"tags":["feria-iii-rogationis","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12035",
 		"datum":"Exívi a Patre, * et veni in mundum: íterum relínquo mundum, et vado ad Patrem, allelúja."
+	},
+	{
+		"tags":["feria-iv-rogationis","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13130",
+		"datum":"Pater, venit hora, * clarífica Fílium tuum claritáte quam hábui, priúsquam mundus esset, apud te, allelúja."
 	}
 ]
