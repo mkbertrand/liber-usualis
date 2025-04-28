@@ -1,0 +1,8 @@
+{
+    "Description": "Nixos VHD import",
+    "Format": "vhd",
+    "UserBucket": {
+        "S3Bucket": "nixos-iam-bucket",
+        "S3Key": "nixos-amazon-image-24.11.20250412.26d499f-x86_64-linux.vhd"
+    }
+}
