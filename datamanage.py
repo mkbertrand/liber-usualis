@@ -74,7 +74,6 @@ def getbreviariumfile(query):
 					tags = [j | {key} for j in entrycopy['tags']]
 				else:
 					tags = entrycopy['tags'] | {key}
-				print(val)
 				newentry = {'tags':tags, 'datum':val}
 				if 'src' in entrycopy:
 					newentry['src'] = entrycopy['src']
