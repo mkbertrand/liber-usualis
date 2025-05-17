@@ -85,8 +85,16 @@
 		"versus":"Redemísti nos Dómine Deus veritátis."
 	},
 	{
+		"tags":["completorium","tempus-paschale","responsorium-breve"],
+		"src":"gregobase/7667",
+		"incipit":"In manus tuas Dómine, comméndo spíritum meum",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Redemísti nos Dómine Deus veritátis."
+	},
+	{
 		"tags":["completorium","versiculus"],
-		"datum":["V. Custódi nos Dómine ut pupíllam óculi.","R. Sub umbra alárum tuárum prótege nos."]
+		"datum":["V. Custódi nos Dómine ut pupíllam óculi.","R. Sub umbra alárum tuárum prótege nos."],
+		"tempus-paschale":["V. Custódi nos Dómine ut pupíllam óculi, allelúja.","R. Sub umbra alárum tuárum prótege nos, allelúja."]
 	},
 	{
 		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
@@ -141,6 +149,69 @@
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
 			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
 			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["completorium","tempus-adventus","hymnus"],
+		"src":"gregobase/2498",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["completorium","tempus-nativitatis","hymnus"],
+		"src":"gregobase/13339",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["completorium","tempus-epiphaniae","hymnus"],
+		"src":"gregobase/12897",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["completorium","tempus-quadragesimae","hymnus"],
+		"src":"gregobase/12673",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["completorium","tempus-passionis","hymnus"],
+		"src":"gregobase/19859",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["completorium","tempus-paschale","hymnus"],
+		"src":"gregobase/19861",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["completorium","tempus-mariae","hymnus"],
+		"src":"gregobase/11857",
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
 		]
 	}
 ]

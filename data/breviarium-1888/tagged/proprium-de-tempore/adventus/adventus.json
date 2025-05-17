@@ -20,15 +20,6 @@
 		"datum":["V. Roráte cœli désuper, et nubes pluant justum.","R. Aperiátur terra, et gérminet Salvatórem."]
 	},
 	{
-		"tags":["adventus","completorium","hymnus"],
-		"src":"gregobase/2498",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
 		"tags":[
 			["hebdomada-i-adventus","dominica","antiphona","antiphona-invitatorium"],
 			["hebdomada-ii-adventus","dominica","antiphona","antiphona-invitatorium"]
@@ -158,37 +149,6 @@
 	{
 		"tags":["adventus","laudes","versiculus"],
 		"datum":["V. Vox clamántis in desérto, Paráte viam Dómini.","R. Rectas fácite sémitas ejus."]
-	},
-	{
-		"tags":["adventus","prima","responsorium-breve"],
-		"src":"gregobase/13127",
-		"incipit":"Christe Fili Dei vivi,",
-		"responsum":"Miserére nobis.",
-		"versus":"Qui ventúrus es in mundum."
-	},
-	{
-		"tags":["adventus","tertia","hymnus"],
-		"src":"gregobase/2889",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["adventus","feria","tertia","capitulum"],
-		"datum":"Ecce dies véniunt, dicit Dóminus, + et suscitábo David germen justum: et regnábit rex, et sápiens erit: * et fáciet judícium et justítiam in terra."
-	},
-	{
-		"tags":["adventus","tertia","responsorium-breve"],
-		"src":"gregobase/3159",
-		"incipit":"Veni ad liberándum nos",
-		"responsum":"Dómine Deus virtútum.",
-		"versus":"Osténde fáciem tuam, et salvi érimus."
-	},
-	{
-		"tags":["adventus","tertia","versiculus"],
-		"datum":["V. Timébunt Gentes nomen tuum Dómine.","R. Et omnes reges terræ glóriam tuam."]
 	},
 	{
 		"tags":["adventus","feria","sexta","capitulum"],

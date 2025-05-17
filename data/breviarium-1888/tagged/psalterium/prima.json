@@ -73,6 +73,7 @@
 	{
 		"tags":[
 			["prima","dominica","paschalis","psalmi"],
+			["prima","feria","paschalis","psalmi"],
 			["prima","psalmi"]
 		],
 		"datum":[
@@ -92,7 +93,10 @@
 		]
 	},
 	{
-		"tags":["prima","capitulum"],
+		"tags":[
+			["prima","capitulum"],
+			["prima","paschalis","feria","capitulum"]
+		],
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
 	{
@@ -109,6 +113,13 @@
 		"versus":"Qui ventúrus es in mundum."
 	},
 	{
+		"tags":["prima","tempus-paschale","responsorium-breve"],
+		"src":"gregobase/11818",
+		"incipit":"Christe Fili Dei vivi, miserére nobis",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Qui surrexísti a mórtuis."
+	},
+	{
 		"tags":[
 			["prima","tempus-mariae","responsorium-breve","versus"],
 			["prima","tempus-nativitatis","responsorium-breve","versus"],
@@ -122,7 +133,8 @@
 	},
 	{
 		"tags":["prima","versiculus"],
-		"datum":["V. Exsúrge, Christe, ádjuva nos.","R. Et líbera nos propter nomen tuum."]
+		"datum":["V. Exsúrge, Christe, ádjuva nos.","R. Et líbera nos propter nomen tuum."],
+		"tempus-paschale":["V. Exsúrge, Christe, ádjuva nos, allelúja.","R. Et líbera nos propter nomen tuum, allelúja."]
 	},
 	{
 		"tags":["prima","preces"],
@@ -279,6 +291,10 @@
 		"datum":"Beati * qui ámbulant in lege Dómini."
 	},
 	{
+		"tags":["prima","paschalis","antiphona"],
+		"datum":"Allelúja, * allelúja, allelúja, allelúja."
+	},
+	{
 		"tags":["prima","feria","feria-ii","psalmi"],
 		"datum":[
 			["/psalmi/psalmus-liii,gloria"],
@@ -326,5 +342,82 @@
 	{
 		"tags":["prima","feria","capitulum"],
 		"datum":"Pacem et veritátem dilígite, * ait Dóminus omnípotens."
+	},
+	{
+		"tags":["prima","tempus-adventus","hymnus"],
+		"src":"gregobase/19235",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["prima","tempus-nativitatis","hymnus"],
+		"src":"gregobase/19628",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["prima","tempus-epiphaniae","hymnus"],
+		"src":"gregobase/19632",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["prima","tempus-quadragesimae","hymnus"],
+		"src":"gregobase/19862",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["prima","tempus-passionis","hymnus"],
+		"src":"gregobase/19863",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			["terminatio","deo-patri"]
+		]
+	},
+	{
+		"tags":["prima","tempus-paschale","hymnus"],
+		"src":"gregobase/19864",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["prima","tempus-mariae","hymnus"],
+		"src":"gregobase/19865",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
+		]
 	}
 ]

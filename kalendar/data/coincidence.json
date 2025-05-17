@@ -676,6 +676,30 @@
 		]
 	},
 	{
+		"include":["quadragesima"],
+		"reckeck":false,
+		"response":"tempus-quadragesimae"
+	},
+	{
+		"include":["quadragesima"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-quadragesimae"}
+		]
+	},
+	{
+		"include":["paschalis"],
+		"recheck":false,
+		"response":"tempus-paschale"
+	},
+	{
+		"include":["paschalis"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-paschale"}
+		]
+	},
+	{
 		"include":["maria","primarium"],
 		"recheck":false,
 		"response":"tempus-mariae"
