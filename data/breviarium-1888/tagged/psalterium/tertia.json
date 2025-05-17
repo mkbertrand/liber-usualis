@@ -40,6 +40,7 @@
 	},
 	{
 		"tags":["tertia","dominica","per-annum","antiphona"],
+		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
@@ -58,6 +59,7 @@
 	},
 	{
 		"tags":["tertia","feria","hymnus"],
+		"src":"gregobase/2578",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
 			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
@@ -65,7 +67,8 @@
 		]
 	},
 	{
-		"tags":["tertia","feria","per-annum","antiphona"],
+		"tags":["tertia","feria","antiphona"],
+		"src":"gregobase/10876",
 		"datum":"Deduc me * Dómine sémitam mandatórum tuórum."
 	},
 	{
@@ -83,19 +86,77 @@
 		"datum":["V. Adjútor meus esto, ne derelínquas me.","R. Neque despícias me Deus salutáris meus."]
 	},
 	{
-		"tags":["adventus","feria","tertia","capitulum"],
+		"tags":["tertia","adventus","feria","capitulum"],
 		"datum":"Ecce dies véniunt, dicit Dóminus, + et suscitábo David germen justum: et regnábit rex, et sápiens erit: * et fáciet judícium et justítiam in terra."
 	},
 	{
-		"tags":["adventus","tertia","responsorium-breve"],
+		"tags":["tertia","adventus","responsorium-breve"],
 		"src":"gregobase/3159",
 		"incipit":"Veni ad liberándum nos",
 		"responsum":"Dómine Deus virtútum.",
 		"versus":"Osténde fáciem tuam, et salvi érimus."
 	},
 	{
-		"tags":["adventus","tertia","versiculus"],
+		"tags":["tertia","adventus","versiculus"],
 		"datum":["V. Timébunt Gentes nomen tuum Dómine.","R. Et omnes reges terræ glóriam tuam."]
+	},
+	{
+		"tags":["tertia","quadragesima","feria","antiphona"],
+		"src":"gregobase/13088",
+		"datum":"Advenérunt nobis * dies pœniténtiæ, ad rediménda peccáta, ad salvándas ánimas."
+	},
+	{
+		"tags":["tertia","quadragesima","feria","capitulum"],
+		"datum":"Convertímini ad me in toto corde vestro, in jejúnio, et in fletu, et planctu. + Et scíndite corda vestra, et non vestiménta vestra, * ait Dóminus omnípotens."
+	},
+	{
+		"tags":["tertia","quadragesima","responsorium-breve"],
+		"src":"gregobase/3093",
+		"incipit":"Ipse liberávit me",
+		"responsum":"De láqueo venántium.",
+		"versus":"Et a verbo áspero."
+	},
+	{
+		"tags":["tertia","quadragesima","versiculus"],
+		"datum":["V. Scápulis suis obumbrábit tibi.","R. Et sub pennis ejus sperábis."]
+	},
+	{
+		"tags":["tertia","passio","feria","antiphona"],
+		"src":"gregobase/12134",
+		"datum":"Judicásti Dómine * causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus."
+	},
+	{
+		"tags":["tertia","passio","feria","capitulum"],
+		"datum":"Dómine, omnes qui te derelínquunt, confundéntur: + recedéntes a te, in terra scribéntur: * quóniam dereliquérunt venam aquárum vivéntium Dóminum."
+	},
+	{
+		"tags":["tertia","passio","responsorium-breve"],
+		"incipit":"Érue a frámea",
+		"responsum":"Deus ánimam meam.",
+		"versus":"Et de manu canis únicam meam."
+	},
+	{
+		"tags":["tertia","passio","versiculus"],
+		"datum":["V. De ore leónis líbera me Dómine.","R. Et a córnibus unicórnium humilitátem meam."]
+	},
+	{
+		"tags":["tertia","paschalis","antiphona"],
+		"src":"gregobase/18551",
+		"datum":"Allelúja, * allelúja, allelúja, allelúja."
+	},
+	{
+		"tags":["tertia","paschalis","capitulum"],
+		"datum":"Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. + Quod enim mórtuus est peccáto, mórtuus est semel: * quod autem vivit, vivit Deo."
+	},
+	{
+		"tags":["tertia","paschalis","responsorium-breve"],
+		"incipit":"Surréxit Dóminus de sepúlchro",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Qui pro nobis pepéndit in ligno."
+	},
+	{
+		"tags":["tertia","paschalis","versiculus"],
+		"datum":["V. Surréxit Dóminus vere, allelúja.","R. Et appáruit Simóni, allelúja."]
 	},
 	{
 		"tags":["tertia","preces"],

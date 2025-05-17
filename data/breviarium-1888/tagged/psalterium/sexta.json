@@ -47,16 +47,10 @@
 		"datum":"Alter altérius ónera portáte, * et sic adimplébitis legem Christi."
 	},
 	{
-		"tags":["sexta","dominica","responsorium-breve","incipit"],
-		"datum":"In ætérnum Dómine"
-	},
-	{
-		"tags":["sexta","dominica","responsorium-breve","responsum"],
-		"datum":"Pérmanet verbum tuum."
-	},
-	{
-		"tags":["sexta","dominica","responsorium-breve","versus"],
-		"datum":"In sǽculum sǽculi véritas tua."
+		"tags":["sexta","dominica","responsorium-breve"],
+		"incipit":"In ætérnum Dómine",
+		"responsum":"Pérmanet verbum tuum.",
+		"versus":"In sǽculum sǽculi véritas tua."
 	},
 	{
 		"tags":["sexta","versiculus"],
@@ -76,16 +70,61 @@
 		"datum":"Adjúva me, * et salvus ero Dómine."
 	},
 	{
-		"tags":["sexta","feria","responsorium-breve","incipit"],
-		"datum":"Benedícam Dóminum"
+		"tags":["sexta","feria","responsorium-breve"],
+		"incipit":"Benedícam Dóminum",
+		"responsum":"In omni témpore.",
+		"versus":"Semper laus ejus in ore meo."
 	},
 	{
-		"tags":["sexta","feria","responsorium-breve","responsum"],
-		"datum":"In omni témpore."
+		"tags":["sexta","adventus","feria","capitulum"],
+		"datum":"In diébus illis salvábitur Juda, et Ísraël habitábit confidénter: + et hoc est nomen, quod vocábunt eum, * Dóminus justus noster."
 	},
 	{
-		"tags":["sexta","feria","responsorium-breve","versus"],
-		"datum":"Semper laus ejus in ore meo."
+		"tags":["sexta","adventus","responsorium-breve"],
+		"src":"gregobase/3070",
+		"incipit":"Osténde nobis Dómine",
+		"responsum":"Misericórdiam tuam.",
+		"versus":"Et salutáre tuum da nobis."
+	},
+	{
+		"tags":["sexta","adventus","versiculus"],
+		"datum":["V. Meménto nostri Dómine in beneplácito pópuli tui.","R. Vísita nos in salutári tuo."]
+	},
+	{
+		"tags":["sexta","quadragesima","feria","antiphona"],
+		"datum":"Commendémus nosmetípsos * in multa patiéntia, in jejúniis multis, per arma justítiæ."
+	},
+	{
+		"tags":["sexta","quadragesima","feria","capitulum"],
+		"datum":"Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, et revertétur ad Dóminum, et miserébitur ejus, et ad Deum nostrum, quóniam multus est ad ignoscéndum."
+	},
+	{
+		"tags":["sexta","quadragesima","responsorium-breve"],
+		"incipit":"Scápulis suis",
+		"responsum":"Obumbrábit tibi.",
+		"versus":"Et sub pennis ejus sperábis."
+	},
+	{
+		"tags":["sexta","quadragesima","versiculus"],
+		"datum":["V. Scuto circumdábit te véritas ejus.","R. Non timébis a timóre noctúrno."]
+	},
+	{
+		"tags":["sexta","passio","feria","antiphona"],
+		"datum":"Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi."
+	},
+	{
+		"tags":["sexta","passio","feria","capitulum"],
+		"datum":"Confundántur qui me persequúntur, et non confúndar ego: páveant illi, et non páveam ego: induc super eos diem afflictiónis, et dúplici contritióne cóntere eos, Dómine Deus noster."
+	},
+	{
+		"tags":["sexta","passio","responsorium-breve"],
+		"incipit":"De ore leónis",
+		"responsum":"Líbera me Dómine.",
+		"versus":"Et a córnibus unicórnium humilitátem meam."
+	},
+	{
+		"tags":["sexta","passio","versiculus"],
+		"datum":["V. Ne perdas cum ímpiis Deus ánimam meam.","R. Et cum viris sánguinum vitam meam."]
 	},
 	{
 		"tags":["sexta","preces"],
@@ -105,6 +144,69 @@
 			"R. Et líbera nos propter nomen tuum.",
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
+		"tags":["sexta","tempus-adventus","hymnus"],
+		"src":"gregobase/19236",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["sexta","tempus-nativitatis","hymnus"],
+		"src":"gregobase/19630",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["sexta","tempus-epiphaniae","hymnus"],
+		"src":"gregobase/19634",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["sexta","tempus-quadragesimae","hymnus"],
+		"src":"gregobase/19870",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["sexta","tempus-passionis","hymnus"],
+		"src":"gregobase/19871",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["sexta","tempus-paschalis","hymnus"],
+		"src":"gregobase/19872",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["sexta","tempus-mariae","hymnus"],
+		"src":"gregobase/19873",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
 		]
 	}
 ]
