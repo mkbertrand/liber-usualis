@@ -40,6 +40,7 @@
 	},
 	{
 		"tags":["sexta","dominica","per-annum","antiphona"],
+		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
@@ -67,6 +68,7 @@
 	},
 	{
 		"tags":["sexta","feria","per-annum","antiphona"],
+		"src":"gregobase/19875",
 		"datum":"Adjúva me, * et salvus ero Dómine."
 	},
 	{
@@ -92,14 +94,16 @@
 	},
 	{
 		"tags":["sexta","quadragesima","feria","antiphona"],
+		"src":"gregobase/12198",
 		"datum":"Commendémus nosmetípsos * in multa patiéntia, in jejúniis multis, per arma justítiæ."
 	},
 	{
 		"tags":["sexta","quadragesima","feria","capitulum"],
-		"datum":"Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, et revertétur ad Dóminum, et miserébitur ejus, et ad Deum nostrum, quóniam multus est ad ignoscéndum."
+		"datum":"Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, + et revertétur ad Dóminum, et miserébitur ejus, * et ad Deum nostrum, quóniam multus est ad ignoscéndum."
 	},
 	{
 		"tags":["sexta","quadragesima","responsorium-breve"],
+		"src":"gregobase/3186",
 		"incipit":"Scápulis suis",
 		"responsum":"Obumbrábit tibi.",
 		"versus":"Et sub pennis ejus sperábis."
@@ -110,11 +114,12 @@
 	},
 	{
 		"tags":["sexta","passio","feria","antiphona"],
+		"src":"gregobase/11918",
 		"datum":"Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi."
 	},
 	{
 		"tags":["sexta","passio","feria","capitulum"],
-		"datum":"Confundántur qui me persequúntur, et non confúndar ego: páveant illi, et non páveam ego: induc super eos diem afflictiónis, et dúplici contritióne cóntere eos, Dómine Deus noster."
+		"datum":"Confundántur qui me persequúntur, et non confúndar ego: + páveant illi, et non páveam ego: * induc super eos diem afflictiónis, et dúplici contritióne cóntere eos, Dómine Deus noster."
 	},
 	{
 		"tags":["sexta","passio","responsorium-breve"],
@@ -125,6 +130,25 @@
 	{
 		"tags":["sexta","passio","versiculus"],
 		"datum":["V. Ne perdas cum ímpiis Deus ánimam meam.","R. Et cum viris sánguinum vitam meam."]
+	},
+	{
+		"tags":["sexta","paschalis","antiphona"],
+		"src":"gregobase/18553",
+		"datum":"Allelúja, * allelúja, allelúja, allelúja."
+	},
+	{
+		"tags":["sexta","paschalis","feria","capitulum"],
+		"datum":"Christus resurréxit a mórtuis primítiæ dormiéntium: + quóniam quidem per hóminem mors, et per hóminem resurréctio mortuórum. * Et sicut in Adam omnes moriúntur, ita et in Christo omnes vivificabúntur."
+	},
+	{
+		"tags":["sexta","paschalis","responsorium-breve"],
+		"incipit":"Surréxit Dóminus vere",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et appáruit Simóni."
+	},
+	{
+		"tags":["sexta","paschalis","versiculus"],
+		"datum":["V. Gavísi sunt discípuli, allelúja.","R. Viso Dómino, allelúja."]
 	},
 	{
 		"tags":["sexta","preces"],
@@ -192,7 +216,7 @@
 		]
 	},
 	{
-		"tags":["sexta","tempus-paschalis","hymnus"],
+		"tags":["sexta","tempus-paschale","hymnus"],
 		"src":"gregobase/19872",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

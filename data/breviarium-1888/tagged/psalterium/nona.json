@@ -40,6 +40,7 @@
 	},
 	{
 		"tags":["nona","dominica","per-annum","antiphona"],
+		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
@@ -47,16 +48,10 @@
 		"datum":"Empti enim estis prétio magno. * Glorificáte et portáte Deum in córpore vestro."
 	},
 	{
-		"tags":["nona","dominica","responsorium-breve","incipit"],
-		"datum":"Clamávi in toto corde meo,"
-	},
-	{
-		"tags":["nona","dominica","responsorium-breve","responsum"],
-		"datum":"Exaúdi me Dómine."
-	},
-	{
-		"tags":["nona","dominica","responsorium-breve","versus"],
-		"datum":"Justificatiónes tuas requíram."
+		"tags":["nona","dominica","responsorium-breve"],
+		"incipit":"Clamávi in toto corde meo,",
+		"responsum":"Exaúdi me Dómine.",
+		"versus":"Justificatiónes tuas requíram."
 	},
 	{
 		"tags":["nona","versiculus"],
@@ -64,6 +59,7 @@
 	},
 	{
 		"tags":["nona","feria","hymnus"],
+		"src":"gregobase/13226",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
 			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
@@ -72,19 +68,91 @@
 	},
 	{
 		"tags":["nona","feria","per-annum","antiphona"],
+		"src":"gregobase/19887",
 		"datum":"Aspice in me, * et miserére mei Dómine."
 	},
 	{
-		"tags":["nona","feria","responsorium-breve","incipit"],
-		"datum":"Rédime me Dómine,"
+		"tags":["nona","feria","responsorium-breve"],
+		"incipit":"Rédime me Dómine,",
+		"responsum":"Et miserére mei.",
+		"versus":"Pes enim meus stetit in via recta."
 	},
 	{
-		"tags":["nona","feria","responsorium-breve","responsum"],
-		"datum":"Et miserére mei."
+		"tags":["nona","adventus","feria","capitulum"],
+		"datum":"Prope est ut véniat tempus ejus, + et dies ejus non elongabúntur. * Miserébitur enim Dóminus Jacob, et Ísraël salvábitur."
 	},
 	{
-		"tags":["nona","feria","responsorium-breve","versus"],
-		"datum":"Pes enim meus stetit in via recta."
+		"tags":["nona","adventus","responsorium-breve"],
+		"src":"gregobase/3173",
+		"incipit":"Super te Jerúsalem,",
+		"responsum":"Oriétur Dóminus.",
+		"versus":"Et glória ejus in te vidébitur."
+	},
+	{
+		"tags":["nona","adventus","dominica","versiculus"],
+		"datum":["V. Dómine Deus virtútum convérte nos.","R. Et osténde fáciem tuam, et salvi érimus."]
+	},
+	{
+		"tags":["nona","adventus","feria","versiculus"],
+		"datum":["V. Veni Dómine, et noli tardáre.","R. Reláxa facínora plebi tuæ."]
+	},
+	{
+		"tags":["nona","quadragesima","feria","antiphona"],
+		"src":"gregobase/12264",
+		"datum":"Per arma justítiæ * virtútis Dei commendémus nosmetípsos in multa patiéntia."
+	},
+	{
+		"tags":["nona","quadragesima","feria","capitulum"],
+		"datum":"Frange esuriénti panem tuum, et egénos vagósque induc in domum tuam: + cum víderis nudum, óperi eum, * et carnem tuam ne despéxeris."
+	},
+	{
+		"tags":["nona","quadragesima","responsorium-breve"],
+		"src":"gregobase/3168",
+		"incipit":"Scuto circumdábit te",
+		"responsum":"Véritas ejus.",
+		"versus":"Non timébis a timóre noctúrno."
+	},
+	{
+		"tags":["nona","quadragesima","versiculus"],
+		"datum":["V. Ángelis suis Deus mandávit de te.","R. Ut custódiant te in ómnibus viis tuis."]
+	},
+	{
+		"tags":["nona","passio","feria","antiphona"],
+		"src":"gregobase/12996",
+		"datum":"Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ."
+	},
+	{
+		"tags":["nona","passio","feria","capitulum"],
+		"datum":"Recordáre quod stéterim in conspéctu tuo, + ut lóquerer pro eis bonum, * et avérterem indignatiónem tuam ab eis."
+	},
+	{
+		"tags":["nona","passio","responsorium-breve"],
+		"incipit":"Ne perdas cum ímpiis",
+		"responsum":"Deus ánimam meam.",
+		"versus":"Et cum viris sánguinum vitam meam."
+	},
+	{
+		"tags":["nona","passio","versiculus"],
+		"datum":["V. Éripe me Dómine ab hómine malo.","R. A viro iníquo éripe me."]
+	},
+	{
+		"tags":["nona","paschalis","antiphona"],
+		"src":"gregobase/18553",
+		"datum":"Allelúja, * allelúja, allelúja, allelúja."
+	},
+	{
+		"tags":["nona","paschalis","feria","capitulum"],
+		"datum":"Christus semel pro peccátis nostris mórtuus est, justus pro injústis, + ut nos offérret Deo, mortificátus quidem carne, * vivificátus autem spíritu."
+	},
+	{
+		"tags":["nona","paschalis","responsorium-breve"],
+		"incipit":"Gavísi sunt discípuli",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Viso Dómino."
+	},
+	{
+		"tags":["nona","paschalis","versiculus"],
+		"datum":["V. Mane nobíscum Dómine, allelúja.","R. Quóniam advesperáscit, allelúja."]
 	},
 	{
 		"tags":["nona","preces"],
@@ -104,6 +172,69 @@
 			"R. Et líbera nos propter nomen tuum.",
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
+		"tags":["nona","tempus-adventus","hymnus"],
+		"src":"gregobase/19314",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["nona","tempus-nativitatis","hymnus"],
+		"src":"gregobase/19631",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["nona","tempus-epiphaniae","hymnus"],
+		"src":"gregobase/19635",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["nona","tempus-quadragesimae","hymnus"],
+		"src":"gregobase/19883",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["nona","tempus-passionis","hymnus"],
+		"src":"gregobase/19884",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			["terminatio","praesta-pater"]
+		]
+	},
+	{
+		"tags":["nona","tempus-paschale","hymnus"],
+		"src":"gregobase/19885",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["nona","tempus-mariae","hymnus"],
+		"src":"gregobase/19886",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
 		]
 	}
 ]
