@@ -470,10 +470,12 @@
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-i"],
+		"src":"fcc/lapaf5a1",
 		"datum":"Tibi soli peccávi, * Dómine miserére mei."
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-ii"],
+		"src":"fcc/lapaf5a2",
 		"datum":"Dómine, * refúgium factus es nobis."
 	},
 	{
@@ -482,18 +484,21 @@
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-iii"],
+		"src":"fcc/lapaf5a3",
 		"datum":"In matutínis * meditábor in te."
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-iv"],
+		"src":"fcc/lapaf5a4",
 		"datum":"Cantémus * Dómino glorióse."
 	},
 	{
 		"tags":["laudes","feria","feria-v","canticum"],
-		"datum":[["/psalmus/canticum-moysis,gloria"]]
+		"datum":[["/psalmi/canticum-moysis,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-v"],
+		"src":"fcc/lapaf5a5",
 		"datum":"In sanctis ejus * laudáte Deum."
 	},
 	{
@@ -509,6 +514,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12907",
 		"datum":"In sanctitáte * serviámus Dómino, et liberábit nos ab inimícis nostris."
 	},
 	{
