@@ -160,7 +160,7 @@ async function chomp(id, tags) {
 			} else if (tags.includes('repetita')) {
 				gabc = gabc.replace('*', '');
 				gabcdata = '%%\n';
-				firstsyllable = gabc.match(/[\wáǽéíóúý]+\(/)[0];
+				firstsyllable = gabc.match(/[\wáǽœŒéíóúý]+\(/)[0];
 				gabc = gabc.replace(firstsyllable, firstsyllable.charAt(0).toUpperCase() + firstsyllable.slice(1).toLowerCase());
 			} else if (!(tags.includes('formula-commemorationis') || tags.includes('suffragium'))) {
 				gabc = gabc + euouae;
