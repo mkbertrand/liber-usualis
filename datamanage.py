@@ -89,6 +89,8 @@ def getchantfile(src):
 		url = f'https://gregobase.selapa.net/download.php?id={src[src.index('/') + 1:]}&format=gabc&elem=1'
 	elif 'nocturnale' in src:
 		url = f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc'
+	elif 'fcc' in src:
+		url = f'http://localhost:40081/{src[src.index('/') + 1:]}.gabc'
 	else:
 		raise Exception('Unsupported chant repository')
 	return requests.get(url, stream=True).text

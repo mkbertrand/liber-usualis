@@ -12,6 +12,7 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 
 ```bash
 git clone https://github.com/mkbertrand/liber-usualis
+git clone https://github.com/mkbertrand/franciscan-chant-closet
 cd liber-usualis
 pip install bottle pytest diff-match-patch
 ```
@@ -19,18 +20,12 @@ pip install bottle pytest diff-match-patch
 Note: diff-match-patch is only necessary for test_breviarium.
 ### Running
 
-To run only the backend, backend.py is run as follows:
-
-```bash
-./backend.py
-```
-
-To run the frontend server (by default on localhost:8080, frontend.py is run as follows:
+To run the server (by default on localhost:8080, frontend.py is run as follows:
 
 ```bash
 ./frontend.py
 ```
-
+Note: for full functionality, franciscan-chant-closet must be run at the same time and must be able to bind to port 40081.
 ## Author
 
 Miles Bertrand
