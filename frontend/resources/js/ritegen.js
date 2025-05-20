@@ -1,5 +1,13 @@
 // Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+function unpack(data) {
+	if (typeof data === 'string') {
+		return data;
+	} else if (typeof data === 'object') {
+		return unpack(data['datum']);
+	}
+};
+
 trivialchants = ['deus-in-adjutorium'];
 function stringrender(data) {
 	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
@@ -50,10 +58,10 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				if (typeof data['datum'][1] === 'object')
 					nom = typeof data['datum'][1]['datum'][1] === 'object' ? data['datum'][1]['datum'][0] + data['datum'][1]['datum'][1]['datum']: data['datum'][1]['datum'];
 				return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
-			} else if (data['tags'].includes('responsorium') || data['tags'].includes('responsorium-breve')) {
+			} else if (Array.isArray(data['datum']) && (data['tags'].includes('responsorium') || data['tags'].includes('responsorium-breve'))) {
 				let ret = '';
 				for (i in data['datum']) {
-					ret += typeof data['datum'][i] === 'object' ? data['datum'][i]['datum'] : data['datum'][i];
+					ret += unpack(data['datum'][i]);
 				}
 				data['datum'] = ret;
 			} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
