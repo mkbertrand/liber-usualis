@@ -107,16 +107,16 @@
 	},
 	{
 		"occurrence":["in-tempore-adventus"],
-		"excluded":["nativitas"],
+		"excluded":["in-tempore-nativitatis"],
 		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"]
 	},
 	{
-		"occurrence":["nativitas"],
+		"occurrence":["in-tempore-nativitatis"],
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	{
 		"occurrence":["januarius"],
-		"excluded":["nativitas"],
+		"excluded":["in-tempore-nativitatis"],
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
 	},
 	{

@@ -132,7 +132,7 @@
 	{
 		"tags":[
 			["prima","tempus-mariae","responsorium-breve","versus"],
-			["prima","tempus-nativitatis","responsorium-breve","versus"],
+			["prima","in-tempore-nativitatis","responsorium-breve","versus"],
 			["prima","nomen-jesu","responsorium-breve","versus"]
 		],
 		"datum":"Qui natus es de María Vírgine."
@@ -339,7 +339,7 @@
 		]
 	},
 	{
-		"tags":["prima","tempus-nativitatis","hymnus"],
+		"tags":["prima","in-tempore-nativitatis","hymnus"],
 		"src":"gregobase/19628",
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",

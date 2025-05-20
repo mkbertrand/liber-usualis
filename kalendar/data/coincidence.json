@@ -57,29 +57,14 @@
 		]
 	},
 	{
-		"include":["nativitas"],
-		"recheck":false,
-		"response":"tempus-nativitatis"
-	},
-	{
-		"include":["innocentes"],
-		"recheck":false,
-		"response":"tempus-nativitatis"
-	},
-	{
-		"include":["vigilia-epiphaniae"],
-		"recheck":false,
-		"response":"tempus-nativitatis"
-	},
-	{
 		"include":[],
 		"exclude":["tempus"],
 		"recheck":false,
 		"continue":false,
 		"response":[
-			{"include":["nativitas"],"target":0,"response":"tempus-nativitatis"},
-			{"include":["innocentes"],"target":0,"response":"tempus-nativitatis"},
-			{"include":["vigilia-epiphaniae"],"target":0,"response":"tempus-nativitatis"}
+			{"include":["in-tempore-nativitatis"],"target":0,"response":"in-tempore-nativitatis"},
+			{"include":["innocentes"],"target":0,"response":"in-tempore-nativitatis"},
+			{"include":["vigilia-epiphaniae"],"target":0,"response":"in-tempore-nativitatis"}
 		]
 	},
 	{
@@ -423,7 +408,7 @@
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus","primarium"],"response":"commemoratio","target":1},
 			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
-			{"include":["infra-octavam"],"exclude":["tempus-nativitatis"],"response":"dele","target":1},
+			{"include":["infra-octavam"],"exclude":["in-tempore-nativitatis"],"response":"dele","target":1},
 			{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
