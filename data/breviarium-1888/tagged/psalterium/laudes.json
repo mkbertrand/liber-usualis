@@ -569,10 +569,12 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-i"],
+		"src":"fcc/lapaf7a1",
 		"datum":"Benígne fac * in bona voluntáte tua Dómine."
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-ii"],
+		"src":"fcc/lapaf7a2",
 		"datum":"Bonum est * confíteri Dómino."
 	},
 	{
@@ -581,10 +583,12 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-iii"],
+		"src":"fcc/lapaf7a3",
 		"datum":"Métuant Dóminum * omnes fines terræ."
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-iv"],
+		"src":"fcc/lapaf7a4",
 		"datum":"Date magnitúdinem * Deo nostro."
 	},
 	{
@@ -593,6 +597,7 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-v"],
+		"src":"fcc/lapaf7a5",
 		"datum":"In cýmbalis benesonántibus * laudáte Deum."
 	},
 	{
@@ -607,6 +612,7 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-benedictus"],
+		"src":"fcc/lapaf7be",
 		"datum":"Illumináre * Dómine his, qui in ténebris sedent, et dírige pedes nostros in viam pacis, Deus Ísraël."
 	}
 ]
