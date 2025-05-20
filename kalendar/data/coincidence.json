@@ -688,18 +688,6 @@
 		]
 	},
 	{
-		"include":["paschalis"],
-		"recheck":false,
-		"response":"tempus-paschale"
-	},
-	{
-		"include":["paschalis"],
-		"recheck":false,
-		"response":[
-			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-paschale"}
-		]
-	},
-	{
 		"include":["maria","primarium"],
 		"recheck":false,
 		"response":"tempus-mariae"
@@ -769,7 +757,11 @@
 		"response":"aurei"
 	},
 	{
-		"include":["paschalis"],
+		"include":["in-tempore-paschali","feria"],
+		"response":"aurei"
+	},
+	{
+		"include":["in-tempore-paschali","dominica"],
 		"response":"aurei"
 	},
 	{
@@ -794,6 +786,13 @@
 			{"include":["duplex-majus"],"response":"dele","target":0},
 			{"include":["duplex-minus"],"response":"dele","target":0},
 			{"include":["semiduplex"],"response":"dele","target":0}
+		]
+	},
+	{
+		"include":["in-tempore-paschali"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-paschali"}
 		]
 	}
 ]

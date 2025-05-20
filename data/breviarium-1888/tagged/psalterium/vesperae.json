@@ -70,7 +70,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","paschalis","psalmi","duplex"],
+		"tags":["vesperae","in-tempore-paschali","temporale","psalmi","duplex"],
 		"datum":[
 			["vesperae","antiphona","antiphona-i"],
 			["vesperae","psalmus","psalmus-i"],
@@ -82,7 +82,7 @@
 		]
 	},
 	{
-		"tags":["vesperae","paschalis","psalmi"],
+		"tags":["vesperae","in-tempore-paschali","temporale","psalmi"],
 		"datum":[
 			["vesperae","antiphona","antiphona-i","intonata"],
 			["vesperae","psalmus","psalmus-i"],
@@ -104,7 +104,7 @@
 		"datum":"Dixit Dóminus * Dómino meo: Sede a dextris meis."
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-i","paschalis"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-i","in-tempore-paschali"],
 		"src":"gregobase/2622",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -166,6 +166,20 @@
 	{
 		"tags":["vesperae","temporale","versiculus"],
 		"datum":["V. Dirigátur Dómine orátio mea.","R. Sicut incénsum in conspecto tuo."]
+	},
+	{
+		"tags":["in-tempore-paschali","temporale","vesperae","hymnus"],
+		"src":"gregobase/2932",
+		"datum":[
+			"Ad régias Agni dapes,/Stolis amícti cándidis/Post tránsitum Maris rubri/Christo canámus Príncipi.",
+			"Divína cujus cáritas/Sacrum propínat sánguinem,/Almíque membra córporis/Amor sacérdos ímmolat.",
+			"Sparsum cruórem póstibus/Vastátor horret Ángelus:/Fugítque divísum mare:/Mergúntur hostes flúctibus.",
+			"Jam Pascha nostrum Christus est,/Paschális idem víctima,/Et pura puris méntibus/Sinceritátis ázyma.",
+			"O vera cœli víctima,/Subjécta cui sunt tártara,/Solúta mortis víncula,/Recépta vitæ prǽmia.",
+			"Victor subáctis ínferis/Trophǽa Christus éxplicat,/Cœlóque apérto, súbditum/Regem tenebrárum trahit.",
+			"Ut sis perénne méntibus/Paschále Jesu gaúdium,/A morte dira críminum/Vitæ renátos líbera.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paraclíto,/In sempitérna sǽcula.","Amen."
+		]
 	},
 	{
 		"tags":["vesperae","feria-ii","antiphona-i","antiphona"],
@@ -499,7 +513,7 @@
 		"datum":"Benedíctus * Dóminus Deus meus."
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-i","paschalis"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-i","in-tempore-paschali"],
 		"src":"gregobase/3004",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},

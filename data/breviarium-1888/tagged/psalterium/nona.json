@@ -136,22 +136,22 @@
 		"datum":["V. Éripe me Dómine ab hómine malo.","R. A viro iníquo éripe me."]
 	},
 	{
-		"tags":["nona","paschalis","antiphona"],
+		"tags":["nona","in-tempore-paschali","temporale","antiphona"],
 		"src":"gregobase/18553",
 		"datum":"Allelúja, * allelúja, allelúja, allelúja."
 	},
 	{
-		"tags":["nona","paschalis","feria","capitulum"],
+		"tags":["nona","in-tempore-paschali","feria","capitulum"],
 		"datum":"Christus semel pro peccátis nostris mórtuus est, justus pro injústis, + ut nos offérret Deo, mortificátus quidem carne, * vivificátus autem spíritu."
 	},
 	{
-		"tags":["nona","paschalis","responsorium-breve"],
+		"tags":["nona","in-tempore-paschali","temporale","responsorium-breve"],
 		"incipit":"Gavísi sunt discípuli",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Viso Dómino."
 	},
 	{
-		"tags":["nona","paschalis","versiculus"],
+		"tags":["nona","in-tempore-paschali","temporale","versiculus"],
 		"datum":["V. Mane nobíscum Dómine, allelúja.","R. Quóniam advesperáscit, allelúja."]
 	},
 	{
@@ -220,7 +220,7 @@
 		]
 	},
 	{
-		"tags":["nona","tempus-paschale","hymnus"],
+		"tags":["nona","in-tempore-paschali","hymnus"],
 		"src":"gregobase/19885",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",

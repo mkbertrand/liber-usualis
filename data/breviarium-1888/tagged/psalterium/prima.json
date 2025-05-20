@@ -73,8 +73,7 @@
 	},
 	{
 		"tags":[
-			["prima","dominica","paschalis","psalmi"],
-			["prima","feria","paschalis","psalmi"],
+			["prima","in-tempore-paschali","psalmi"],
 			["prima","psalmi"]
 		],
 		"datum":[
@@ -106,7 +105,7 @@
 	{
 		"tags":[
 			["prima","capitulum"],
-			["prima","paschalis","feria","capitulum"]
+			["prima","in-tempore-paschali","feria","capitulum"]
 		],
 		"datum":"Regi sæculórum immortáli et invisíbili, + soli Deo honor et glória * in sǽcula sæculórum. Amen."
 	},
@@ -124,7 +123,7 @@
 		"versus":"Qui ventúrus es in mundum."
 	},
 	{
-		"tags":["prima","tempus-paschale","responsorium-breve"],
+		"tags":["prima","in-tempore-paschali","responsorium-breve"],
 		"src":"gregobase/11818",
 		"incipit":"Christe Fili Dei vivi, miserére nobis",
 		"responsum":"Allelúja, allelúja.",
@@ -145,7 +144,7 @@
 	{
 		"tags":["prima","versiculus"],
 		"datum":["V. Exsúrge, Christe, ádjuva nos.","R. Et líbera nos propter nomen tuum."],
-		"tempus-paschale":["V. Exsúrge, Christe, ádjuva nos, allelúja.","R. Et líbera nos propter nomen tuum, allelúja."]
+		"in-tempore-paschali":["V. Exsúrge, Christe, ádjuva nos, allelúja.","R. Et líbera nos propter nomen tuum, allelúja."]
 	},
 	{
 		"tags":["prima","preces"],
@@ -270,7 +269,7 @@
 		]
 	},
 	{
-		"tags":["prima","paschalis","antiphona"],
+		"tags":["prima","in-tempore-paschali","temporale","antiphona"],
 		"src":"gregobase/18552",
 		"datum":"Allelúja, * allelúja, allelúja, allelúja."
 	},
@@ -384,7 +383,7 @@
 		]
 	},
 	{
-		"tags":["prima","tempus-paschale","hymnus"],
+		"tags":["prima","in-tempore-paschali","hymnus"],
 		"src":"gregobase/19864",
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
@@ -430,7 +429,7 @@
 		"datum":"Fáciem meam non avérti ab increpántibus et conspuéntibus in me. + Dóminus Deus auxiliátor meus, * ídeo non sum confúsus."
 	},
 	{
-		"tags":["prima","paschalis","lectio"],
+		"tags":["prima","in-tempore-paschali","temporale","lectio"],
 		"datum":"Si consurrexístis cum Christo, + quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens: * quæ sursum sunt sápite, non quæ super terram."
 	}
 ]

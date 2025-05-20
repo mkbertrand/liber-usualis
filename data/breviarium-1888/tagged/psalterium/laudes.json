@@ -78,7 +78,7 @@
 
 		"tags":[
 			["laudes","dominica","per-annum","psalmi"],
-			["laudes","paschalis","psalmi"]
+			["laudes","in-tempore-paschali","temporale","psalmi"]
 		],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
@@ -112,7 +112,7 @@
 		"datum":"Allelúja, * allelúja."
 	},
 	{
-		"tags":["laudes","paschalis","antiphona","antiphona-i"],
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-i"],
 		"src":"fcc/lapxf1a1",
 		"datum":"Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja."
 	},
@@ -122,7 +122,7 @@
 		"datum":"Tres púeri * jussu regis in fornácem missi sunt, non timéntes flammam ignis, dicéntes: Benedíctus Deus."
 	},
 	{
-		"tags":["laudes","paschalis","antiphona","antiphona-ii"],
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-ii"],
 		"src":"fcc/lapxf1a2",
 		"datum":"Surréxit Christus * de sepúlchro, qui liberávit tres púeros de camíno ignis ardéntis, allelúja."
 	},
@@ -132,7 +132,7 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["laudes","paschalis","antiphona","antiphona-iii"],
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-iii"],
 		"src":"fcc/lapxf1a3",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -243,7 +243,7 @@
 		"datum":["V. Éripe me de inimícis meis Deus meus.","R. Et ab insurgéntibus in me líbera me."]
 	},
 	{
-		"tags":["laudes","paschalis","hymnus"],
+		"tags":["laudes","in-tempore-paschali","temporale","hymnus"],
 		"src":"gregobase/12353",
 		"datum":[
 			"Auróra cœlum púrpurat,/Æther resúltat laúdibus,/Mundus triúmphans júbilat,/Horrens avérnus ínfremit:",
@@ -255,7 +255,7 @@
 		]
 	},
 	{
-		"tags":["laudes","paschalis","versiculus"],
+		"tags":["laudes","in-tempore-paschali","temporale","versiculus"],
 		"datum":["V. In resurrectióne tua Christe, allelúja.","R. Cœli et terra læténtur, allelúja."]
 	},
 	{
@@ -331,7 +331,7 @@
 		"datum":"Veníte, mittámus lignum in panem ejus, + et eradámus eum de terra vivéntium, * et nomen ejus non memorétur ámplius."
 	},
 	{
-		"tags":["laudes","paschalis","feria","capitulum"],
+		"tags":["laudes","in-tempore-paschali","feria","capitulum"],
 		"datum":"Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. + Quod enim mórtuus est peccáto, mórtuus est semel: * quod autem vivit, vivit Deo."
 	},
 	{

@@ -132,22 +132,22 @@
 		"datum":["V. Ne perdas cum ímpiis Deus ánimam meam.","R. Et cum viris sánguinum vitam meam."]
 	},
 	{
-		"tags":["sexta","paschalis","antiphona"],
+		"tags":["sexta","in-tempore-paschali","temporale","antiphona"],
 		"src":"gregobase/18553",
 		"datum":"Allelúja, * allelúja, allelúja, allelúja."
 	},
 	{
-		"tags":["sexta","paschalis","feria","capitulum"],
+		"tags":["sexta","in-tempore-paschali","feria","capitulum"],
 		"datum":"Christus resurréxit a mórtuis primítiæ dormiéntium: + quóniam quidem per hóminem mors, et per hóminem resurréctio mortuórum. * Et sicut in Adam omnes moriúntur, ita et in Christo omnes vivificabúntur."
 	},
 	{
-		"tags":["sexta","paschalis","responsorium-breve"],
+		"tags":["sexta","in-tempore-paschali","temporale","responsorium-breve"],
 		"incipit":"Surréxit Dóminus vere",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et appáruit Simóni."
 	},
 	{
-		"tags":["sexta","paschalis","versiculus"],
+		"tags":["sexta","in-tempore-paschali","temporale","versiculus"],
 		"datum":["V. Gavísi sunt discípuli, allelúja.","R. Viso Dómino, allelúja."]
 	},
 	{
@@ -216,7 +216,7 @@
 		]
 	},
 	{
-		"tags":["sexta","tempus-paschale","hymnus"],
+		"tags":["sexta","in-tempore-paschali","hymnus"],
 		"src":"gregobase/19872",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

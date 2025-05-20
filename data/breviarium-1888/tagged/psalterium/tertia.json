@@ -140,22 +140,22 @@
 		"datum":["V. De ore leónis líbera me Dómine.","R. Et a córnibus unicórnium humilitátem meam."]
 	},
 	{
-		"tags":["tertia","paschalis","antiphona"],
+		"tags":["tertia","in-tempore-paschali","temporale","antiphona"],
 		"src":"gregobase/18551",
 		"datum":"Allelúja, * allelúja, allelúja, allelúja."
 	},
 	{
-		"tags":["tertia","paschalis","feria","capitulum"],
+		"tags":["tertia","in-tempore-paschali","feria","capitulum"],
 		"datum":"Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. + Quod enim mórtuus est peccáto, mórtuus est semel: * quod autem vivit, vivit Deo."
 	},
 	{
-		"tags":["tertia","paschalis","responsorium-breve"],
+		"tags":["tertia","in-tempore-paschali","temporale","responsorium-breve"],
 		"incipit":"Surréxit Dóminus de sepúlchro",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Qui pro nobis pepéndit in ligno."
 	},
 	{
-		"tags":["tertia","paschalis","versiculus"],
+		"tags":["tertia","in-tempore-paschali","temporale","versiculus"],
 		"datum":["V. Surréxit Dóminus vere, allelúja.","R. Et appáruit Simóni, allelúja."]
 	},
 	{
@@ -224,7 +224,7 @@
 		]
 	},
 	{
-		"tags":["tertia","tempus-paschale","hymnus"],
+		"tags":["tertia","in-tempore-paschali","hymnus"],
 		"src":"gregobase/19860",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",

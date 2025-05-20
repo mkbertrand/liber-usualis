@@ -99,7 +99,7 @@
 	{
 		"occurrence":[
 			["sabbatum","feria","per-annum"],
-			["sabbatum","feria","paschalis"],
+			["sabbatum","feria","in-tempore-paschali"],
 			["sabbatum","feria","hebdomada-septuagesima"],
 			["sabbatum","feria","hebdomada-sexagesima"]
 		],
@@ -132,7 +132,7 @@
 		"tags":["antiphona-bmv","ave-regina-coelorum"]
 	},
 	{
-		"occurrence":["paschalis"],
+		"occurrence":["in-tempore-paschali"],
 		"tags":["antiphona-bmv","regina-coeli"]
 	},
 	{
