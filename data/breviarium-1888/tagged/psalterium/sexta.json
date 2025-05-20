@@ -78,18 +78,18 @@
 		"versus":"Semper laus ejus in ore meo."
 	},
 	{
-		"tags":["sexta","adventus","feria","capitulum"],
+		"tags":["sexta","in-tempore-adventus","feria","capitulum"],
 		"datum":"In diébus illis salvábitur Juda, et Ísraël habitábit confidénter: + et hoc est nomen, quod vocábunt eum, * Dóminus justus noster."
 	},
 	{
-		"tags":["sexta","adventus","responsorium-breve"],
+		"tags":["sexta","in-tempore-adventus","temporale","responsorium-breve"],
 		"src":"gregobase/3070",
 		"incipit":"Osténde nobis Dómine",
 		"responsum":"Misericórdiam tuam.",
 		"versus":"Et salutáre tuum da nobis."
 	},
 	{
-		"tags":["sexta","adventus","versiculus"],
+		"tags":["sexta","in-tempore-adventus","temporale","versiculus"],
 		"datum":["V. Meménto nostri Dómine in beneplácito pópuli tui.","R. Vísita nos in salutári tuo."]
 	},
 	{
@@ -171,7 +171,7 @@
 		]
 	},
 	{
-		"tags":["sexta","tempus-adventus","hymnus"],
+		"tags":["sexta","in-tempore-adventus","hymnus"],
 		"src":"gregobase/19236",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

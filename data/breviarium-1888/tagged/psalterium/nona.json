@@ -78,22 +78,22 @@
 		"versus":"Pes enim meus stetit in via recta."
 	},
 	{
-		"tags":["nona","adventus","feria","capitulum"],
+		"tags":["nona","in-tempore-adventus","feria","capitulum"],
 		"datum":"Prope est ut véniat tempus ejus, + et dies ejus non elongabúntur. * Miserébitur enim Dóminus Jacob, et Ísraël salvábitur."
 	},
 	{
-		"tags":["nona","adventus","responsorium-breve"],
+		"tags":["nona","in-tempore-adventus","temporale","responsorium-breve"],
 		"src":"gregobase/3173",
 		"incipit":"Super te Jerúsalem",
 		"responsum":"Oriétur Dóminus.",
 		"versus":"Et glória ejus in te vidébitur."
 	},
 	{
-		"tags":["nona","adventus","dominica","versiculus"],
+		"tags":["nona","in-tempore-adventus","dominica","versiculus"],
 		"datum":["V. Dómine Deus virtútum convérte nos.","R. Et osténde fáciem tuam, et salvi érimus."]
 	},
 	{
-		"tags":["nona","adventus","feria","versiculus"],
+		"tags":["nona","in-tempore-adventus","feria","versiculus"],
 		"datum":["V. Veni Dómine, et noli tardáre.","R. Reláxa facínora plebi tuæ."]
 	},
 	{
@@ -175,7 +175,7 @@
 		]
 	},
 	{
-		"tags":["nona","tempus-adventus","hymnus"],
+		"tags":["nona","in-tempore-adventus","hymnus"],
 		"src":"gregobase/19314",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",

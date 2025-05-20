@@ -7,7 +7,7 @@
 		]
 	},
 	{
-		"include":["adventus"],
+		"include":["in-tempore-adventus"],
 		"recheck":false,
 		"response":[
 			{"include":["post-pentecosten"],"response":"dele","target":1},
@@ -652,18 +652,6 @@
 		]
 	},
 	{
-		"include":["adventus"],
-		"recheck":false,
-		"response":"tempus-adventus"
-	},
-	{
-		"include":["adventus"],
-		"recheck":false,
-		"response":[
-			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-adventus"}
-		]
-	},
-	{
 		"include":["septuagesima"],
 		"reckeck":false,
 		"response":"tempus-septuagesimae"
@@ -786,6 +774,13 @@
 			{"include":["duplex-majus"],"response":"dele","target":0},
 			{"include":["duplex-minus"],"response":"dele","target":0},
 			{"include":["semiduplex"],"response":"dele","target":0}
+		]
+	},
+	{
+		"include":["in-tempore-adventus"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-adventus"}
 		]
 	},
 	{

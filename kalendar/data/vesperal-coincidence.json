@@ -293,7 +293,7 @@
 			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
 			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["feria","adventus","ii-vesperae"],"response":"dele","target":1},
+			{"include":["feria","in-tempore-adventus","ii-vesperae"],"response":"dele","target":1},
 			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
 		]
 	},
