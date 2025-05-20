@@ -417,7 +417,7 @@
 		]
 	},
 	{
-		"include":["septem-dolores","poenitentialis"],
+		"include":["septem-dolores","in-tempore-passionis"],
 		"recheck":false,
 		"response":[
 			{"include":["duplex-majus"],"response":"transfer","target":0,"movement":1},
@@ -751,6 +751,13 @@
 		"recheck":false,
 		"response":[
 			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-quadragesimae"}
+		]
+	},
+	{
+		"include":["in-tempore-passionis"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-passionis"}
 		]
 	},
 	{

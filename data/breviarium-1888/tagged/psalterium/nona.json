@@ -117,22 +117,22 @@
 		"datum":["V. Ángelis suis Deus mandávit de te.","R. Ut custódiant te in ómnibus viis tuis."]
 	},
 	{
-		"tags":["nona","passio","feria","antiphona"],
+		"tags":["nona","in-tempore-passionis","feria","antiphona"],
 		"src":"gregobase/12996",
 		"datum":"Numquid rédditur * pro bono malum, quia fodérunt fóveam ánimæ meæ."
 	},
 	{
-		"tags":["nona","passio","feria","capitulum"],
+		"tags":["nona","in-tempore-passionis","feria","capitulum"],
 		"datum":"Recordáre quod stéterim in conspéctu tuo, + ut lóquerer pro eis bonum, * et avérterem indignatiónem tuam ab eis."
 	},
 	{
-		"tags":["nona","passio","responsorium-breve"],
+		"tags":["nona","in-tempore-passionis","temporale","responsorium-breve"],
 		"incipit":"Ne perdas cum ímpiis",
 		"responsum":"Deus ánimam meam.",
 		"versus":"Et cum viris sánguinum vitam meam."
 	},
 	{
-		"tags":["nona","passio","versiculus"],
+		"tags":["nona","in-tempore-passionis","temporale","versiculus"],
 		"datum":["V. Éripe me Dómine ab hómine malo.","R. A viro iníquo éripe me."]
 	},
 	{
@@ -211,7 +211,7 @@
 		]
 	},
 	{
-		"tags":["nona","tempus-passionis","hymnus"],
+		"tags":["nona","in-tempore-passionis","hymnus"],
 		"src":"gregobase/19884",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",

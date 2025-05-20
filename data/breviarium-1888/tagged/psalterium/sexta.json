@@ -113,22 +113,22 @@
 		"datum":["V. Scuto circumdábit te véritas ejus.","R. Non timébis a timóre noctúrno."]
 	},
 	{
-		"tags":["sexta","passio","feria","antiphona"],
+		"tags":["sexta","in-tempore-passionis","feria","antiphona"],
 		"src":"gregobase/11918",
 		"datum":"Pópule meus, * quid feci tibi? aut quid moléstus fui? Respónde mihi."
 	},
 	{
-		"tags":["sexta","passio","feria","capitulum"],
+		"tags":["sexta","in-tempore-passionis","feria","capitulum"],
 		"datum":"Confundántur qui me persequúntur, et non confúndar ego: + páveant illi, et non páveam ego: * induc super eos diem afflictiónis, et dúplici contritióne cóntere eos, Dómine Deus noster."
 	},
 	{
-		"tags":["sexta","passio","responsorium-breve"],
+		"tags":["sexta","in-tempore-passionis","temporale","responsorium-breve"],
 		"incipit":"De ore leónis",
 		"responsum":"Líbera me Dómine.",
 		"versus":"Et a córnibus unicórnium humilitátem meam."
 	},
 	{
-		"tags":["sexta","passio","versiculus"],
+		"tags":["sexta","in-tempore-passionis","temporale","versiculus"],
 		"datum":["V. Ne perdas cum ímpiis Deus ánimam meam.","R. Et cum viris sánguinum vitam meam."]
 	},
 	{
@@ -207,7 +207,7 @@
 		]
 	},
 	{
-		"tags":["sexta","tempus-passionis","hymnus"],
+		"tags":["sexta","in-tempore-passionis","hymnus"],
 		"src":"gregobase/19871",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

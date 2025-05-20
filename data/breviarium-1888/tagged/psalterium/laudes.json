@@ -227,7 +227,7 @@
 		"datum":["V. Ángelis suis Deus mandávit de te.","R. Ut custódiant te in ómnibus viis tuis."]
 	},
 	{
-		"tags":["laudes","passio","hymnus"],
+		"tags":["laudes","in-tempore-passionis","temporale","hymnus"],
 		"src":"gregobase/13250",
 		"datum":[
 			"Lustra sex qui jam perégit,/Tempus implens córporis,/Sponte líbera Redémptor/Passióni déditus,/Agnus in Crucis levátur/Immolándus stípite.",
@@ -239,7 +239,7 @@
 		]
 	},
 	{
-		"tags":["laudes","passio","versiculus"],
+		"tags":["laudes","in-tempore-passionis","temporale","versiculus"],
 		"datum":["V. Éripe me de inimícis meis Deus meus.","R. Et ab insurgéntibus in me líbera me."]
 	},
 	{
@@ -327,7 +327,7 @@
 		"datum":"Clama, ne cesses, quasi tuba exálta vocem tuam, + et annúntia pópulo meo scélera eórum, * et dómui Jacob peccáta eórum."
 	},
 	{
-		"tags":["laudes","passio","feria","capitulum"],
+		"tags":["laudes","in-tempore-passionis","feria","capitulum"],
 		"datum":"Veníte, mittámus lignum in panem ejus, + et eradámus eum de terra vivéntium, * et nomen ejus non memorétur ámplius."
 	},
 	{

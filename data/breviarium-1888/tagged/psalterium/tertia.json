@@ -121,22 +121,22 @@
 		"datum":["V. Scápulis suis obumbrábit tibi.","R. Et sub pennis ejus sperábis."]
 	},
 	{
-		"tags":["tertia","passio","feria","antiphona"],
+		"tags":["tertia","in-tempore-passionis","feria","antiphona"],
 		"src":"gregobase/12134",
 		"datum":"Judicásti Dómine * causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus."
 	},
 	{
-		"tags":["tertia","passio","feria","capitulum"],
+		"tags":["tertia","in-tempore-passionis","feria","capitulum"],
 		"datum":"Dómine, omnes qui te derelínquunt, confundéntur: + recedéntes a te, in terra scribéntur: * quóniam dereliquérunt venam aquárum vivéntium Dóminum."
 	},
 	{
-		"tags":["tertia","passio","responsorium-breve"],
+		"tags":["tertia","in-tempore-passionis","temporale","responsorium-breve"],
 		"incipit":"Érue a frámea",
 		"responsum":"Deus ánimam meam.",
 		"versus":"Et de manu canis únicam meam."
 	},
 	{
-		"tags":["tertia","passio","versiculus"],
+		"tags":["tertia","in-tempore-passionis","temporale","versiculus"],
 		"datum":["V. De ore leónis líbera me Dómine.","R. Et a córnibus unicórnium humilitátem meam."]
 	},
 	{
@@ -215,7 +215,7 @@
 		]
 	},
 	{
-		"tags":["tertia","tempus-passionis","hymnus"],
+		"tags":["tertia","in-tempore-passionis","hymnus"],
 		"src":"gregobase/2408",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
