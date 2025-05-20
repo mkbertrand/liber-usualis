@@ -97,23 +97,23 @@
 		"datum":["V. Veni Dómine, et noli tardáre.","R. Reláxa facínora plebi tuæ."]
 	},
 	{
-		"tags":["nona","quadragesima","feria","antiphona"],
+		"tags":["nona","in-tempore-quadragesimae","feria","antiphona"],
 		"src":"gregobase/12264",
 		"datum":"Per arma justítiæ * virtútis Dei commendémus nosmetípsos in multa patiéntia."
 	},
 	{
-		"tags":["nona","quadragesima","feria","capitulum"],
+		"tags":["nona","in-tempore-quadragesimae","feria","capitulum"],
 		"datum":"Frange esuriénti panem tuum, et egénos vagósque induc in domum tuam: + cum víderis nudum, óperi eum, * et carnem tuam ne despéxeris."
 	},
 	{
-		"tags":["nona","quadragesima","responsorium-breve"],
+		"tags":["nona","in-tempore-quadragesimae","temporale","responsorium-breve"],
 		"src":"gregobase/3168",
 		"incipit":"Scuto circumdábit te",
 		"responsum":"Véritas ejus.",
 		"versus":"Non timébis a timóre noctúrno."
 	},
 	{
-		"tags":["nona","quadragesima","versiculus"],
+		"tags":["nona","in-tempore-quadragesimae","temporale","versiculus"],
 		"datum":["V. Ángelis suis Deus mandávit de te.","R. Ut custódiant te in ómnibus viis tuis."]
 	},
 	{
@@ -202,7 +202,7 @@
 		]
 	},
 	{
-		"tags":["nona","tempus-quadragesimae","hymnus"],
+		"tags":["nona","in-tempore-quadragesimae","hymnus"],
 		"src":"gregobase/19883",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",

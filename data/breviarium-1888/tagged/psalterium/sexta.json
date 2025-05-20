@@ -93,23 +93,23 @@
 		"datum":["V. Meménto nostri Dómine in beneplácito pópuli tui.","R. Vísita nos in salutári tuo."]
 	},
 	{
-		"tags":["sexta","quadragesima","feria","antiphona"],
+		"tags":["sexta","in-tempore-quadragesimae","feria","antiphona"],
 		"src":"gregobase/12198",
 		"datum":"Commendémus nosmetípsos * in multa patiéntia, in jejúniis multis, per arma justítiæ."
 	},
 	{
-		"tags":["sexta","quadragesima","feria","capitulum"],
+		"tags":["sexta","in-tempore-quadragesimae","feria","capitulum"],
 		"datum":"Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, + et revertétur ad Dóminum, et miserébitur ejus, * et ad Deum nostrum, quóniam multus est ad ignoscéndum."
 	},
 	{
-		"tags":["sexta","quadragesima","responsorium-breve"],
+		"tags":["sexta","in-tempore-quadragesimae","temporale","responsorium-breve"],
 		"src":"gregobase/3186",
 		"incipit":"Scápulis suis",
 		"responsum":"Obumbrábit tibi.",
 		"versus":"Et sub pennis ejus sperábis."
 	},
 	{
-		"tags":["sexta","quadragesima","versiculus"],
+		"tags":["sexta","in-tempore-quadragesimae","temporale","versiculus"],
 		"datum":["V. Scuto circumdábit te véritas ejus.","R. Non timébis a timóre noctúrno."]
 	},
 	{
@@ -198,7 +198,7 @@
 		]
 	},
 	{
-		"tags":["sexta","tempus-quadragesimae","hymnus"],
+		"tags":["sexta","in-tempore-quadragesimae","hymnus"],
 		"src":"gregobase/19870",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

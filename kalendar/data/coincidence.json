@@ -203,7 +203,7 @@
 		]
 	},
 	{
-		"include":["quadragesima"],
+		"include":["in-tempore-quadragesimae"],
 		"recheck":false,
 		"response":[
 			{"include":["dies-octava"],"response":"dele","target":1},
@@ -256,7 +256,7 @@
 		]
 	},
 	{
-		"include":["quadragesima","dominica"],
+		"include":["in-tempore-quadragesimae","dominica"],
 		"response":[
 			{"include":["duplex-i-classis"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-ii-classis"],"response":"transfer","target":1,"movement":1},
@@ -632,18 +632,6 @@
 		]
 	},
 	{
-		"include":["quadragesima"],
-		"reckeck":false,
-		"response":"tempus-quadragesimae"
-	},
-	{
-		"include":["quadragesima"],
-		"recheck":false,
-		"response":[
-			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-quadragesimae"}
-		]
-	},
-	{
 		"include":["maria","primarium"],
 		"recheck":false,
 		"response":"tempus-mariae"
@@ -756,6 +744,13 @@
 		"recheck":false,
 		"response":[
 			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-septuagesimae"}
+		]
+	},
+	{
+		"include":["in-tempore-quadragesimae"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-quadragesimae"}
 		]
 	},
 	{

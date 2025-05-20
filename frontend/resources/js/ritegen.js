@@ -156,7 +156,7 @@ async function chomp(id, tags) {
 			if (!tags.includes('in-tempore-paschali') && gabc.includes('<i>T. P.</i>')) {
 				gabc = gabc.substring(0, gabc.indexOf('<i>T. P.</i>')).trim();
 			}
-			if (!tags.includes('septuagesima') && gabc.includes('<i>Post Septuag.</i>')) {
+			if (!tags.includes('in-tempore-septuagesimae') && gabc.includes('<i>Post Septuag.</i>')) {
 				gabc = gabc.substring(0, gabc.indexOf('<i>Post Septuag.</i>')).trim();
 			}
 

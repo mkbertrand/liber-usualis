@@ -101,23 +101,23 @@
 		"datum":["V. Timébunt Gentes nomen tuum Dómine.","R. Et omnes reges terræ glóriam tuam."]
 	},
 	{
-		"tags":["tertia","quadragesima","feria","antiphona"],
+		"tags":["tertia","in-tempore-quadragesimae","feria","antiphona"],
 		"src":"gregobase/13088",
 		"datum":"Advenérunt nobis * dies pœniténtiæ, ad rediménda peccáta, ad salvándas ánimas."
 	},
 	{
-		"tags":["tertia","quadragesima","feria","capitulum"],
+		"tags":["tertia","in-tempore-quadragesimae","feria","capitulum"],
 		"datum":"Convertímini ad me in toto corde vestro, in jejúnio, et in fletu, et planctu. + Et scíndite corda vestra, et non vestiménta vestra, * ait Dóminus omnípotens."
 	},
 	{
-		"tags":["tertia","quadragesima","responsorium-breve"],
+		"tags":["tertia","in-tempore-quadragesimae","temporale","responsorium-breve"],
 		"src":"gregobase/3093",
 		"incipit":"Ipse liberávit me",
 		"responsum":"De láqueo venántium.",
 		"versus":"Et a verbo áspero."
 	},
 	{
-		"tags":["tertia","quadragesima","versiculus"],
+		"tags":["tertia","in-tempore-quadragesimae","temporale","versiculus"],
 		"datum":["V. Scápulis suis obumbrábit tibi.","R. Et sub pennis ejus sperábis."]
 	},
 	{
@@ -206,7 +206,7 @@
 		]
 	},
 	{
-		"tags":["tertia","tempus-quadragesimae","hymnus"],
+		"tags":["tertia","in-tempore-quadragesimae","hymnus"],
 		"src":"gregobase/2044",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",

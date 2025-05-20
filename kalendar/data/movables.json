@@ -240,11 +240,17 @@
 		"tags":["nomen-bmv","duplex-majus","maria"]
 	},
 	{
-		"occurrence":["feria-iv","quadragesima"],
+		"occurrence":[
+			["feria-iv","in-tempore-quadragesimae"],
+			["feria-iv","hebdomada-passionis"]
+		],
 		"tags":["psalmi-graduales"]
 	},
 	{
-		"occurrence":["feria-vi","quadragesima"],
+		"occurrence":[
+			["feria-vi","in-tempore-quadragesimae"],
+			["feria-vi","hebdomada-passionis"]
+		],
 		"tags":["psalmi-poenitentiales"]
 	}
 ]
