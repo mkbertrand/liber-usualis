@@ -76,7 +76,10 @@
 	},
 	{
 
-		"tags":["laudes","dominica","per-annum","psalmi"],
+		"tags":[
+			["laudes","dominica","per-annum","psalmi"],
+			["laudes","paschalis","psalmi"]
+		],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-xcii,gloria"],
@@ -109,13 +112,28 @@
 		"datum":"Allelúja, * allelúja."
 	},
 	{
+		"tags":["laudes","paschalis","antiphona","antiphona-i"],
+		"src":"fcc/lapxf1a1",
+		"datum":"Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja."
+	},
+	{
 		"tags":["laudes","dominica","per-annum","antiphona","antiphona-ii"],
 		"src":"gregobase/13305",
 		"datum":"Tres púeri * jussu regis in fornácem missi sunt, non timéntes flammam ignis, dicéntes: Benedíctus Deus."
 	},
 	{
+		"tags":["laudes","paschalis","antiphona","antiphona-ii"],
+		"src":"fcc/lapxf1a2",
+		"datum":"Surréxit Christus * de sepúlchro, qui liberávit tres púeros de camíno ignis ardéntis, allelúja."
+	},
+	{
 		"tags":["laudes","dominica","per-annum","antiphona","antiphona-iii"],
 		"src":"gregobase/18322",
+		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["laudes","paschalis","antiphona","antiphona-iii"],
+		"src":"fcc/lapxf1a3",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
