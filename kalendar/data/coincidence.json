@@ -76,11 +76,6 @@
 		]
 	},
 	{
-		"include":["epiphania"],
-		"recheck":false,
-		"response":"tempus-epiphaniae"
-	},
-	{
 		"include":["pascha","duplex-i-classis"],
 		"recheck":false,
 		"response":[

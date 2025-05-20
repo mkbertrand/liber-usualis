@@ -260,8 +260,8 @@ def kalendar(year: int) -> Kalendar:
 	for entry in nativitycycle:
 		date0 = todate(entry['date'], year)
 		kal.add_entry(date0, entry['tags'])
-	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex'})
-	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','semiduplex'})
+	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex','in-tempore-nativitatis'})
+	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','semiduplex','per-octavam-epiphaniae'})
 	if date(year, 1, 6).isoweekday() == 7:
 		epiphanysunday = date(year, 1, 12)
 		kal.transfer({'epiphania','dominica-infra-octavam'}, target=epiphanysunday)
@@ -270,13 +270,13 @@ def kalendar(year: int) -> Kalendar:
 	pdom = False
 	for i in range(0, 6):
 		if not date(year, 1, 7 + i) == epiphanysunday:
-			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 1], 'post-dominicam' if pdom else 'ante-dominicam'})
+			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','dies-' + numerals[currday - 1], 'post-dominicam' if pdom else 'ante-dominicam','per-octavam-epiphaniae'})
 			currday += 1
 		else:
-			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','commemoratio'})
+			kal.add_entry(date(year, 1, 7 + i), {'epiphania','semiduplex','infra-octavam','commemoratio','per-octavam-epiphaniae'})
 			pdom = True
 
-	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus'})
+	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus','per-octavam-epiphaniae'})
 
 	# List of inferred feasts that get merged in later
 	buffer = Kalendar(year=year)
