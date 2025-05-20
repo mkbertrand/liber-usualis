@@ -632,18 +632,6 @@
 		]
 	},
 	{
-		"include":["septuagesima"],
-		"reckeck":false,
-		"response":"tempus-septuagesimae"
-	},
-	{
-		"include":["septuagesima"],
-		"recheck":false,
-		"response":[
-			{"include":[],"exclude":["tempus"],"target":1,"response":"tempus-septuagesimae"}
-		]
-	},
-	{
 		"include":["quadragesima"],
 		"reckeck":false,
 		"response":"tempus-quadragesimae"
@@ -761,6 +749,13 @@
 		"recheck":false,
 		"response":[
 			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-adventus"}
+		]
+	},
+	{
+		"include":["in-tempore-septuagesimae"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-septuagesimae"}
 		]
 	},
 	{

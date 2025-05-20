@@ -54,13 +54,13 @@
 	{
 		"tags":["nomen-jesu","vesperae","versiculus"],
 		"datum":["V. Sit nomen Dómini benedíctum, allelúja.","R. Ex hoc nunc, et usque in sǽculum, allelúja."],
-		"tempus-septuagesimae":["V. Sit nomen Dómini benedíctum.","R. Ex hoc nunc, et usque in sǽculum."]
+		"in-tempore-septuagesimae":["V. Sit nomen Dómini benedíctum.","R. Ex hoc nunc, et usque in sǽculum."]
 	},
 	{
 		"tags":["nomen-jesu","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2618",
 		"datum":"Fecit * mihi magna qui potens est, et sanctum nomen ejus, allelúja.",
-		"tempus-septuagesimae":"Fecit * mihi magna qui potens est, et sanctum nomen ejus."
+		"in-tempore-septuagesimae":"Fecit * mihi magna qui potens est, et sanctum nomen ejus."
 	},
 	{
 		"tags":["nomen-jesu","collecta"],
@@ -229,7 +229,7 @@
 	{
 		"tags":[
 			["nomen-jesu","matutinum","nocturna-iii","versiculus"],
-			["nomen-jesu","tertia","versiculus","tempus-septuagesimae"]
+			["nomen-jesu","tertia","versiculus","in-tempore-septuagesimae"]
 		],
 		"datum":["V. Afférte Dómino glóriam et honórem.","R. Afférte Dómino glóriam nómini ejus."]
 	},
@@ -303,7 +303,7 @@
 	{
 		"tags":[
 			["nomen-jesu","laudes","versiculus"],
-			["nomen-jesu","tertia","versiculus","tempus-septuagesimae"]
+			["nomen-jesu","tertia","versiculus","in-tempore-septuagesimae"]
 		],
 		"datum":["V. Adjutórium nostrum in nómine Dómini.","R. Qui fecit cœlum et terram."]
 	},
@@ -311,7 +311,7 @@
 		"tags":["nomen-jesu","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13137",
 		"datum":"Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum, allelúja.",
-		"tempus-septuagesimae":"Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum."
+		"in-tempore-septuagesimae":"Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum."
 	},
 	{
 		"tags":["nomen-jesu","tertia","responsorium-breve"],
@@ -321,7 +321,7 @@
 		"versus":"Ex hoc nunc, et usque in sǽculum."
 	},
 	{
-		"tags":["nomen-jesu","tertia","responsorium-breve","tempus-septuagesimae"],
+		"tags":["nomen-jesu","tertia","responsorium-breve","in-tempore-septuagesimae"],
 		"incipit":"Sit nomen Dómini,",
 		"responsum":"Benedíctum.",
 		"versus":"Ex hoc nunc, et usque in sǽculum."
@@ -342,7 +342,7 @@
 		"versus":"Afférte Dómino glóriam nómini ejus."
 	},
 	{
-		"tags":["nomen-jesu","sexta","responsorium-breve","tempus-septuagesimae"],
+		"tags":["nomen-jesu","sexta","responsorium-breve","in-tempore-septuagesimae"],
 		"incipit":"Afférte Dómino glóriam,",
 		"responsum":"Et honórem.",
 		"versus":"Afférte Dómino glóriam nómini ejus."
@@ -350,7 +350,7 @@
 	{
 		"tags":["nomen-jesu","sexta","versiculus"],
 		"datum":["V. Magnificáte Dóminum mecum, allelúja.","R. Et exaltémus nomen ejus in idípsum, allelúja."],
-		"tempus-septuagesimae":["V. Magnificáte Dóminum mecum.","R. Et exaltémus nomen ejus in idípsum."]
+		"in-tempore-septuagesimae":["V. Magnificáte Dóminum mecum.","R. Et exaltémus nomen ejus in idípsum."]
 	},
 	{
 		"tags":["nomen-jesu","nona","capitulum"],
@@ -364,7 +364,7 @@
 		"versus":"Et exaltémus nomen ejus in idípsum."
 	},
 	{
-		"tags":["nomen-jesu","nona","responsorium-breve","tempus-septuagesimae"],
+		"tags":["nomen-jesu","nona","responsorium-breve","in-tempore-septuagesimae"],
 		"incipit":"Magnificáte Dóminum,",
 		"responsum":"Mecum.",
 		"versus":"Et exaltémus nomen ejus in idípsum."
@@ -377,6 +377,6 @@
 		"tags":["nomen-jesu","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2547",
 		"datum":"Vocábis * nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum, allelúja.",
-		"tempus-septuagesimae":"Vocábis * nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum."
+		"in-tempore-septuagesimae":"Vocábis * nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum."
 	}
 ]

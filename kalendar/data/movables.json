@@ -59,7 +59,7 @@
 	{
 		"occurrence":[
 			["per-annum","feria"],
-			["septuagesima","feria"]
+			["in-tempore-septuagesimae","feria"]
 		],
 		"excluded":["hebdomada-passionis","hebdomada-sancta"],
 		"tags":["suffragium","de-cruce"]
@@ -67,7 +67,7 @@
 	{
 		"occurrence":[
 			["per-annum"],
-			["septuagesima"]
+			["in-tempore-septuagesimae"]
 		],
 		"excluded":["hebdomada-passionis","hebdomada-sancta"],
 		"tags":["suffragium","maria"]
@@ -75,7 +75,7 @@
 	{
 		"occurrence":[
 			["per-annum"],
-			["septuagesima"]
+			["in-tempore-septuagesimae"]
 		],
 		"excluded":["hebdomada-passionis","hebdomada-sancta"],
 		"tags":["suffragium","joseph"]
@@ -83,7 +83,7 @@
 	{
 		"occurrence":[
 			["per-annum"],
-			["septuagesima"]
+			["in-tempore-septuagesimae"]
 		],
 		"excluded":["hebdomada-passionis","hebdomada-sancta"],
 		"tags":["suffragium","apostoli"]
@@ -91,7 +91,7 @@
 	{
 		"occurrence":[
 			["per-annum"],
-			["septuagesima"]
+			["in-tempore-septuagesimae"]
 		],
 		"excluded":["hebdomada-passionis","hebdomada-sancta"],
 		"tags":["suffragium","pro-pace"]
@@ -126,7 +126,7 @@
 	{
 		"occurrence":[
 			["post-epiphaniam"],
-			["septuagesima"]
+			["in-tempore-septuagesimae"]
 		],
 		"excluded":["alma-redemptoris"],
 		"tags":["antiphona-bmv","ave-regina-coelorum"]
