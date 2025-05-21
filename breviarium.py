@@ -292,10 +292,7 @@ def generate(root, day, hour: str):
 
 	lit = []
 	for hour in hours:
-		if hour in {'matutinum', 'laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium', 'psalmi-graduales', 'psalmi-poenitentiales'}:
-			lit.extend([{'nomen-ritus', hour}, {'hora', hour}])
-		else:
-			lit.append({'hora', hour})
+		lit.append({'hora', hour})
 	return process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 
 if __name__ == '__main__':

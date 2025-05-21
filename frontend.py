@@ -75,6 +75,7 @@ def rite():
 
 	rite = breviarium.generate(root, parameters['date'], parameters['hour'])
 	translation = {}
+
 	if 'translation' in parameters and parameters['translation'] == 'true':
 		def gettranslation(tags):
 			search = set(tags) | {parameters['translation']} | breviarium.defaultpile
