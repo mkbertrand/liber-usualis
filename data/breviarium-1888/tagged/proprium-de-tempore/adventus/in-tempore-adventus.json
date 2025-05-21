@@ -1,115 +1,35 @@
 [
 	{
 		"tags":[
-			["hebdomada-i-adventus","dominica","antiphona","antiphona-invitatorium"],
-			["hebdomada-ii-adventus","dominica","antiphona","antiphona-invitatorium"]
+			["matutinum","hebdomada-i-adventus","dominica","antiphona","antiphona-invitatorium"],
+			["matutinum","hebdomada-ii-adventus","dominica","antiphona","antiphona-invitatorium"]
 		],
 		"src":"nocturnale/A1F1I",
 		"datum":"Regem ventúrum Dóminum, * Veníte, adorémus."
 	},
 	{
 		"tags":[
-			["hebdomada-i-adventus","feria","antiphona","antiphona-invitatorium"],
-			["hebdomada-ii-adventus","feria","antiphona","antiphona-invitatorium"]
+			["matutinum","hebdomada-i-adventus","feria","antiphona","antiphona-invitatorium"],
+			["matutinum","hebdomada-ii-adventus","feria","antiphona","antiphona-invitatorium"]
 		],
 		"src":"nocturnale/A1F2I",
 		"datum":"Regem ventúrum Dóminum, * Veníte, adorémus."
 	},
 	{
 		"tags":[
-			["hebdomada-iii-adventus","dominica","antiphona","antiphona-invitatorium"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-invitatorium"]
+			["matutinum","hebdomada-iii-adventus","dominica","antiphona","antiphona-invitatorium"],
+			["matutinum","hebdomada-iv-adventus","dominica","antiphona","antiphona-invitatorium"]
 		],
 		"src":"nocturnale/A3F1I",
 		"datum":"Prope est jam Dóminus: * Veníte adorémus."
 	},
 	{
 		"tags":[
-			["hebdomada-iii-adventus","feria","antiphona","antiphona-invitatorium"],
-			["hebdomada-iv-adventus","feria","antiphona","antiphona-invitatorium"]
+			["matutinum","hebdomada-iii-adventus","feria","antiphona","antiphona-invitatorium"],
+			["matutinum","hebdomada-iv-adventus","feria","antiphona","antiphona-invitatorium"]
 		],
 		"src":"nocturnale/A3F2I",
 		"datum":"Prope est jam Dóminus: * Veníte adorémus."
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","temporale","hymnus"],
-		"src":"nocturnale/EXA1H",
-		"datum":[
-			"Verbum supérnum pródiens,/E Patris ætérni sinu/Qui natus orbi súbvenis,/Labénte cursu témporis.",
-			"Illúmina nunc péctora,/Tuóque amóre cóncrema;/Ut cor cadúca déserens/Cœli volúptas ímpleat:",
-			"Ut, cum tribúnal Júdicis/Damnábit igni nóxios,/Et vox amíca débitum/Vocábit ad cœlum pios.",
-			"Non esca flammárum nigros/Volvámur inter túrbines,/Vultu Dei sed cómpotes/Cœli fruámur gaúdiis.",
-			"Patri simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória."
-		]
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/A1F1N1A1",
-		"datum":"Véniet ecce Rex * excélsus cum potestáte magna ad salvándas Gentes, allelúja."
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/A1F1N1A2",
-		"datum":"Confortáte * manus dissolútas: confortámini, dícite, Ecce Deus noster véniet, et salvábit nos, allelúja."
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/A1F1N1A3",
-		"datum":"Gaudéte omnes, * et lætámini: ecce quia véniet Dóminus ultiónis, addúcet retributiónem: ipse véniet, et salvábit nos."
-	},
-	{
-		"tags":[
-			["matutinum","in-tempore-adventus","dominica","nocturna-i","versiculus"],
-			["matutinum","in-tempore-adventus","feria-ii","versiculus"],
-			["matutinum","in-tempore-adventus","feria-v","versiculus"]
-		],
-		"datum":["V. Ex Sion spécies decóris ejus.","R. Deus noster maniféste véniet."]
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/A1F1N2A1",
-		"datum":"Gaude et lætáre * fília Jerúsalem: ecce Rex tuus véniet tibi: Sion noli timére, quia cito véniet salus tua."
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/A1F1N2A2",
-		"datum":"Rex noster * advéniet Christus, quem Joánnes prædicávit Agnum esse ventúrum."
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/A1F1N2A3",
-		"datum":"Ecce vénio * cito, et merces mea mecum est, dicit Dóminus: dare unicuíque secúndum ópera sua."
-	},
-	{
-		"tags":[
-			["matutinum","in-tempore-adventus","dominica","nocturna-ii","versiculus"],
-			["matutinum","in-tempore-adventus","feria-iii","versiculus"],
-			["matutinum","in-tempore-adventus","feria-vi","versiculus"]
-		],
-		"datum":["V. Emítte Agnum Dómine Dominatórem terræ.","R. De Petra desérti ad montem fíliæ Sion."]
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/A1F1N3A1",
-		"datum":"Gábriel Ángelus * locútus est Maríæ, dicens: Ave grátia plena, Dóminus tecum: benedícta tu inter mulíeres."
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/A1F1N3A2",
-		"datum":"María dixit * Putas qualis est ista salutátio: quia conturbáta est ánima mea, et quia paritúra sum Regem, qui claustrum virginitátis meæ non violábit?"
-	},
-	{
-		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/A1F1N3A3",
-		"datum":"In advéntu * summi Regis mundéntur corda hóminum, ut digne ambulémus in occúrsum illíus: quia ecce véniet, et non tardábit."
-	},
-	{
-		"tags":[
-			["matutinum","in-tempore-adventus","dominica","nocturna-iii","versiculus"],
-			["matutinum","in-tempore-adventus","feria-iv","versiculus"],
-			["matutinum","in-tempore-adventus","sabbatum","versiculus"]
-		],
-		"datum":["V. Egrediétur Dóminus de loco sancto suo.","R. Véniet, ut salvet pópulum suum."]
 	},
 	{
 		"tags":[

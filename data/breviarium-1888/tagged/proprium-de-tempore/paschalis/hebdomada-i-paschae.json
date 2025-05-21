@@ -18,6 +18,33 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["matutinum","nocturna","duodecim-psalmi","una-antiphona","duplex"],
+		"datum":[
+			["matutinum","antiphona","antiphona-i"],
+			["matutinum","psalmus","psalmus-i"],
+			["matutinum","psalmus","psalmus-ii"],
+			["matutinum","psalmus","psalmus-iii"],
+			["matutinum","psalmus","psalmus-iv"],
+			["matutinum","psalmus","psalmus-v"],
+			["matutinum","psalmus","psalmus-vi"],
+			["matutinum","psalmus","psalmus-vii"],
+			["matutinum","psalmus","psalmus-viii"],
+			["matutinum","psalmus","psalmus-ix"],
+			["matutinum","psalmus","psalmus-x"],
+			["matutinum","psalmus","psalmus-xi"],
+			["matutinum","psalmus","psalmus-xii"],
+			["matutinum","antiphona","antiphona-i","repetita"],
+			["matutinum","versiculus"],
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			["matutinum","absolutio"],
+			"R. Amen.",
+			["matutinum","lectiones"]
+		]
+	},
+	{
 		"tags":["dominica-in-albis","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/1885",
 		"datum":"Cum esset sero * die illa una sabbatórum, et fores essent clausæ, ubi erant discípuli congregáti in unum, stetit Jesus in médio, et dixit eis: Pax vobis, allelúja."
