@@ -405,6 +405,25 @@
 		]
 	},
 	{
+		"tags":["matutinum","psalmi","feria","in-tempore-paschali"],
+		"datum":[
+			["matutinum","antiphona","antiphona-i","intonata"],
+			["matutinum","psalmus","psalmus-i"],
+			["matutinum","psalmus","psalmus-ii"],
+			["matutinum","psalmus","psalmus-iii"],
+			["matutinum","psalmus","psalmus-iv"],
+			["matutinum","psalmus","psalmus-v"],
+			["matutinum","psalmus","psalmus-vi"],
+			["matutinum","psalmus","psalmus-vii"],
+			["matutinum","psalmus","psalmus-viii"],
+			["matutinum","psalmus","psalmus-ix"],
+			["matutinum","psalmus","psalmus-x"],
+			["matutinum","psalmus","psalmus-xi"],
+			["matutinum","psalmus","psalmus-xii"],
+			["matutinum","antiphona","antiphona-i","repetita"]
+		]
+	},
+	{
 		"tags":["lectiones"],
 		"datum":[
 			["formula","formula-lectionis","lectio-i"],
