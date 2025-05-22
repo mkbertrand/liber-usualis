@@ -5,7 +5,13 @@
 		"datum":"Famíliam tuam, quǽsumus, Dómine, contínua pietáte custódi: + ut a cunctis adversitátibus te protegénte sit líbera; * et in bonis áctibus tuo nómini sit devóta."
 	},
 	{
-		"tags":["hebdomada-xxi-pentecostes","dominica","ii-vesperae","antiphona-magnificat"],
+		"tags":["hebdomada-xxi-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12341",
+		"datum":"Dixit autem * dóminus servo: Redde quod debes. Prócidens autem servus ille rogábat eum, dicens: Patiéntiam habe in me, et ómnia reddam tibi."
+	},
+	{
+		"tags":["hebdomada-xxi-pentecostes","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2688",
 		"datum":"Serve nequam, * omne débitum dimísi tibi, quóniam rogásti me: nonne ergo opórtuit et te miseréri consérvi tui, sicut et ego tui misértus sum, allelúja."
 	}
 ]
