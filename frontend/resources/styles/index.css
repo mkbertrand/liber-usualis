@@ -218,7 +218,7 @@ h4.item-header {
 	font-size: 16px;
 }
 
-.evangelium-matutini::first-letter, .hymnus::first-letter {
+.evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter {
 	font-weight: bold;
 	color: red;
 }
