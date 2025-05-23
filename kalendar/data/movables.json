@@ -59,7 +59,8 @@
 	{
 		"occurrence":[
 			["per-annum","feria"],
-			["in-tempore-septuagesimae","feria"]
+			["in-tempore-septuagesimae","feria"],
+			["in-tempore-paschali"]
 		],
 		"excluded":["in-tempore-passionis"],
 		"tags":["suffragium","de-cruce"]
