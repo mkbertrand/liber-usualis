@@ -21,5 +21,11 @@
 		"response":"duplicate",
 		"remove":"primarium",
 		"adde":["matutinum","antiphona","antiphona-invitatorium"]
+	},
+	{
+		"include":["bmv-sabbatum","maria","primarium"],
+		"response":[
+			{"include":["sabbatum","feria"],"adde":"bmv-sabbatum","target":1}
+		]
 	}
 ]
