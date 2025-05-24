@@ -85,8 +85,11 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				return '<h2 class="rite-name">' + data['datum'][0] + nom + '</h2>';
 
 			} else if ((data['tags'].includes('responsorium') || data['tags'].includes('responsorium-breve')) && Array.isArray(data['datum'])) {
+				if (typeof data['datum'][1] === 'string') {
+					return data['datum'][1].replace(", 'incipit'",'');
+				}
 				header = 'Responsorium';
-				if (data['datum'][1]['tags'].includes('responsorium-breve')) {
+				if (data['tags'].includes('responsorium-breve')) {
 					header = 'Responsorium Breve';
 				} else {
 					nn = 1;
@@ -190,6 +193,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		}
 	} catch(err) {
 		console.log(err);
+		console.log(data);
 		console.log("Some objects failed to render correctly.");
 	}
 };
@@ -197,7 +201,13 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 // Just guarantees that the return is an array so that the x-for doesn't break
 function render(data, chant) {
 	options = {chant: chant, disabletrivialchant: true};
-	return renderinner(data['rite'], null, data['translation'], [], options);
+	var title;
+	for (var i = 0; i < data['day'].length; i++) {
+		if (data['day'][i].includes('primarium')) {
+			title = data['names'][i];
+		}
+	}
+	return `<h1 class="day-title">${title}</h1>` + renderinner(data['rite'], null, data['translation'], [], options);
 };
 
 async function chomp(id, tags) {

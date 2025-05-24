@@ -1,5 +1,4 @@
-@font-face {
-	font-family: 'paulus-franck-initialen';
+@font-face { font-family: 'paulus-franck-initialen';
 	src: url('/resources/PaulusFranckInitialen.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
@@ -212,6 +211,11 @@ h4.item-header {
 
 #rite-container {
 	font-size: 20px;
+}
+
+.day-title {
+	color: red;
+	font-variant:small-caps;
 }
 
 .ante-officium, .post-officium {

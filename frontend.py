@@ -94,7 +94,20 @@ def rite():
 		traverse(rite['datum'])
 
 	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(parameters['date']))
-	return datamanage.dump_data({'rite' : rite['datum'], 'translation' : translation, 'day': tags})
+
+	pile = datamanage.getpile(root, flattensetlist(tags))
+	names = []
+	for i in tags:
+		if not {'tempus','antiphona-bmv','psalmi'}.isdisjoint(i):
+			names.append('')
+		else:
+			resp = breviarium.process(root, {'nomen'}, i, [], pile)
+			name = resp['datum'] if 'datum' in resp else '+'.join(i)
+			if type(name) is list:
+				name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(i)
+			names.append(name)
+
+	return datamanage.dump_data({'rite' : rite['datum'], 'translation' : translation, 'day': tags, 'names': names})
 
 @get('/chant/<url:path>')
 def chant(url):
