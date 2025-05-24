@@ -79,7 +79,7 @@ def rite():
 	if 'translation' in parameters and parameters['translation'] == 'true':
 		def gettranslation(tags):
 			search = set(tags) | {parameters['translation']} | breviarium.defaultpile
-			return breviarium.search(root, search, datamanage.getbreviariumfiles(f'{root}/translations/english', search), rootappendix='/translations/english')
+			return breviarium.search(root, search, datamanage.getbreviariumfile(f'{root}/translations/english', search), rootappendix='/translations/english')
 
 		def traverse(obj):
 			if type(obj) is dict and 'tags' in obj:
