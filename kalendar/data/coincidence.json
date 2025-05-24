@@ -766,5 +766,12 @@
 		"response":[
 			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-paschali"}
 		]
+	},
+	{
+		"include":["bmv-sabbatum"],
+		"recheck":false,
+		"response":[
+			{"include":["post-nativitatem"],"target":0,"response":"post-nativitatem"}
+		]
 	}
 ]
