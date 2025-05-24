@@ -47,16 +47,6 @@
 	text-align: center;
 }
 
-h4.item-header {
-	text-align: center;
-	color: red;
-	font-size: 20px;
-	font-variant: small-caps;
-	line-height: 0;
-	padding: 0;
-	margin: 0;
-}
-
 .text-container-latin {
 	margin: 0;
 	padding: 0;
@@ -211,11 +201,28 @@ h4.item-header {
 
 #rite-container {
 	font-size: 20px;
+	display: block;
 }
 
 .day-title {
 	color: red;
 	font-variant:small-caps;
+}
+
+.rite-text {
+	margin-top: 0;
+}
+
+.rite-text-translation {
+	margin-top: 0;
+}
+
+h4.item-header {
+	text-align: center;
+	color: red;
+	font-size: 20px;
+	font-variant: small-caps;
+	margin: 0;
 }
 
 .ante-officium, .post-officium {

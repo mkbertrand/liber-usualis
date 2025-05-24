@@ -116,6 +116,26 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
 				antiphon = renderinner(data['datum'][2], null, null, parenttags, options);
 				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
+			} else if (data['tags'].includes('formula-lectionis')) {
+				header = 'Lectio';
+				if (data['datum'][1]['tags'].includes('lectio-brevis')) {
+					header = 'Lectio Brevis';
+				} else {
+					nn = 1;
+					if (data['datum'][1]['tags'].includes('nocturna-ii')) {
+						nn = 2
+					} else if (data['datum'][1]['tags'].includes('nocturna-iii')) {
+						nn = 3
+					}
+					if (data['datum'][1]['tags'].includes('lectio-i')) {
+						switch(nn) { case 1: header = 'Lectio I'; break; case 2: header = 'Lectio IV'; break; case 3: header = 'Lectio VII';};
+					} else if (data['datum'][1]['tags'].includes('lectio-ii')) {
+						switch(nn) { case 1: header = 'Lectio II'; break; case 2: header = 'Lectio V'; break; case 3: header = 'Lectio VII';};
+					} else if (data['datum'][1]['tags'].includes('lectio-iii')) {
+						switch(nn) { case 1: header = 'Lectio III'; break; case 2: header = 'Lectio VI'; break; case 3: header = 'Lectio IX';};
+					}
+				}
+				return `<h4 class="item-header">${header}</h4>` + renderinner(data['datum'], translated, translationpool, data['tags'].concat(parenttags), options);
 			} else if (data['tags'].includes('lectio')) {
 				// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
 				if (Array.isArray(data['datum']) && data['datum'].length == 4) {
@@ -184,7 +204,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 			}
 
-			return `<h4 class="item-header">${header}</h4><div class="rite-item'${('tags' in data ? ' ' + data['tags'].join(' ') : '')}'">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options)}</div>`;
+			return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item'${('tags' in data ? ' ' + data['tags'].join(' ') : '')}'">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options)}</div>`;
 
 		} else if (typeof data === 'string') {
 			return `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p><p class="rite-text-translation">${translated != null && typeof translated === 'string' ? stringrender(translated) : ''}</p>`
