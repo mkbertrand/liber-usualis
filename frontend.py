@@ -94,7 +94,10 @@ def rite():
 		traverse(rite['datum'])
 
 	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(parameters['date']))
-
+	commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)
+	noncomm = filter(lambda a : not a in commemorations, tags)
+	tags = commemorations
+	tags.extend(noncomm)
 	pile = datamanage.getpile(root, flattensetlist(tags))
 	names = []
 	for i in tags:

@@ -5,6 +5,8 @@ titled = {
 	hymnus: 'Hymnus'
 };
 
+titled['collecta-primaria'] = 'Collecta';
+
 function patternpsalmtitle(title) {
 	ret = '';
 	for (i of title.split(' ')) {
@@ -55,7 +57,7 @@ function stringrender(data) {
 	return data;
 };
 
-function renderinner(data, translated = null, translationpool = null, parenttags, options) {
+function renderinner(data, translated = null, translationpool = null, parenttags, options, names) {
 	try {
 		let tran = null;
 
@@ -69,11 +71,10 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		if (typeof data === 'object' && Array.isArray(data)) {
 			let ret = '';
 			for (let i = 0, count = data.length; i < count; i++) {
-				ret += renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, parenttags, options);
+				ret += renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, translationpool, parenttags, options, names);
 			};
 			return ret;
 		}
-
 		if (typeof data === 'object' && 'tags' in data) {
 			if (data['tags'].includes('nomen-ritus')) {
 				if (typeof (data['datum']) === 'string') {
@@ -111,10 +112,10 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					ret += unpack(data['datum'][i]);
 				}
 				data['datum'] = ret;
-				return `<h4 class="item-header">${header}</h4><div class="rite-item'${data['tags'].join(' ')}'">${renderinner(data['datum'], translated, translationpool, data['tags'].concat(parenttags), options)}</div>`;
+				return `<h4 class="item-header">${header}</h4><div class="rite-item'${data['tags'].join(' ')}'">${renderinner(data['datum'], translated, translationpool, data['tags'].concat(parenttags), options, names)}</div>`;
 
 			} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
-				antiphon = renderinner(data['datum'][2], null, null, parenttags, options);
+				antiphon = renderinner(data['datum'][2], null, null, parenttags, options, names);
 				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
 			} else if (data['tags'].includes('formula-lectionis')) {
 				header = 'Lectio';
@@ -135,7 +136,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 						switch(nn) { case 1: header = 'Lectio III'; break; case 2: header = 'Lectio VI'; break; case 3: header = 'Lectio IX';};
 					}
 				}
-				return `<h4 class="item-header">${header}</h4>` + renderinner(data['datum'], translated, translationpool, data['tags'].concat(parenttags), options);
+				return `<h4 class="item-header">${header}</h4>` + renderinner(data['datum'], translated, translationpool, data['tags'].concat(parenttags), options, names);
 			} else if (data['tags'].includes('lectio')) {
 				// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
 				if (Array.isArray(data['datum']) && data['datum'].length == 4) {
@@ -149,6 +150,13 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 			} else if (data['tags'].includes('hymnus') && data['tags'].includes('te-deum') && !options['chant']) {
 				return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data['datum'].join('/'))}</p>`;
+			} else if (data['tags'].includes('commemorationes')) {
+				ret = ''
+				for (var i = 0; i < data['datum'].length - 1; i++) {
+					ret += `<h4 class="item-header">Commemoratio ${names[i]}</h4>` + renderinner(data['datum'][i], translated, translationpool, data['tags'].concat(parenttags), options, names);
+				}
+				ret += renderinner(data['datum'][data['datum'].length - 1], translated, translationpool, data['tags'].concat(parenttags), options, names);
+				return ret;
 			} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data['tags'].some(tag => trivialchants.includes(tag)))) {
 				return `<gabc-chant id="/chant/${data['src']}" tags="${data['tags'].concat(parenttags).join('+')}"></gabc-chant>`;
 			}
@@ -204,7 +212,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 			}
 
-			return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item'${('tags' in data ? ' ' + data['tags'].join(' ') : '')}'">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options)}</div>`;
+			return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item'${('tags' in data ? ' ' + data['tags'].join(' ') : '')}'">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options, names)}</div>`;
 
 		} else if (typeof data === 'string') {
 			return `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p><p class="rite-text-translation">${translated != null && typeof translated === 'string' ? stringrender(translated) : ''}</p>`
@@ -227,7 +235,7 @@ function render(data, chant) {
 			title = data['names'][i];
 		}
 	}
-	return `<h1 class="day-title">${title}</h1>` + renderinner(data['rite'], null, data['translation'], [], options);
+	return `<h1 class="day-title">${title}</h1>` + renderinner(data['rite'], null, data['translation'], [], options, data['names']);
 };
 
 async function chomp(id, tags) {

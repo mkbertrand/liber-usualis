@@ -187,7 +187,7 @@ def handlecommemorations(root, item, selected, alternates):
 		if len(commemorations) != 0:
 			probablepile = datamanage.getpile(root, defaultpile | commemorations[-1])
 			ret.append(process(root, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
-		return ret
+		return {'tags':{'commemorationes'}, 'datum':ret}
 
 def process(root, item, selected, alternates, pile):
 	if item is None:
