@@ -83,7 +83,7 @@
 			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			["laudes","antiphona","antiphona-ii","intonata"],
-			["/psalmi/trium-puerorum"],
+			["/psalmi/canticum-trium-puerorum"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii","intonata"],
 			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
@@ -100,7 +100,7 @@
 	},
 	{
 		"tags":["laudes","canticum"],
-		"datum":[["/psalmi/trium-puerorum"]]
+		"datum":[["/psalmi/canticum-trium-puerorum"]]
 	},
 	{
 		"tags":["laudes","dominica","per-annum","antiphona","antiphona-i"],
@@ -196,7 +196,7 @@
 			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
 			["laudes","antiphona","antiphona-iii","repetita"],
 			["laudes","antiphona","antiphona-iv","intonata"],
-			["/psalmi/trium-puerorum"],
+			["/psalmi/canticum-trium-puerorum"],
 			["laudes","antiphona","antiphona-iv","repetita"],
 			["laudes","antiphona","antiphona-v","intonata"],
 			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
@@ -284,7 +284,7 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","canticum"],
-		"datum":[["/psalmi/isaiae-prophetae,gloria"]]
+		"datum":[["/psalmi/canticum-isaiae-prophetae,gloria"]]
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-v"],

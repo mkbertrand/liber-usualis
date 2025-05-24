@@ -137,7 +137,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				data['datum'] = data['datum'].replace(/^\d+\s/, '');
 				for (tag of data['tags']) {
 					if (tag.startsWith('/psalmi/')) {
-						header = tag.substring(8).replace('-', ' ').split(',')[0];
+						header = tag.substring(8).replaceAll('-', ' ').split(',')[0];
 						if (header.includes(':')) {
 							headerspl = header.split(':');
 							header = `${patternpsalmtitle(headerspl[0])}<small> ${headerspl[1]}</small>`;
