@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-x-pentecostes","dominica","nomen"],
+		"datum":"Dominica X post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-x-pentecostes","basis-nominis"],
+		"datum":"X post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-x-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2030",
 		"datum":"Fecit Joas * rectum coram Dómino cunctis diébus, quibus dócuit eum Joíada sacérdos."
+	},
+	{
+		"tags":["hebdomada-x-pentecostes","collecta"],
+		"datum":"Deus, qui omnipoténtiam tuam parcéndo máxime et miserándo maniféstas: + multíplica super nos misericórdiam tuam; ut ad tua promíssa curréntes, * cœléstium bonórum fácias esse consórtes.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-x-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

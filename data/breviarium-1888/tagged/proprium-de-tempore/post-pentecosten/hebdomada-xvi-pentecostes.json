@@ -1,8 +1,16 @@
 [
 	{
+		"tags":["hebdomada-xvi-pentecostes","dominica","nomen"],
+		"datum":"Dominica XVI post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xvi-pentecostes","basis-nominis"],
+		"datum":"XVI post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-xvi-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Tua nos, quǽsumus Dómine, grátia semper et prævéniat et sequátur: ac bonis opéribus júgiter præstet esse inténtos."
+		"datum":"Tua nos, quǽsumus Dómine, grátia semper et prævéniat et sequátur: * ac bonis opéribus júgiter præstet esse inténtos.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-xvi-pentecostes","dominica","matutinum","nocturna-iii","lectio","lectio-i"],

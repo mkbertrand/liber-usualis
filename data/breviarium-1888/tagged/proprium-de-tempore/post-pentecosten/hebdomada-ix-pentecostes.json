@@ -1,5 +1,13 @@
 [
 	{
+		"tags":["hebdomada-ix-pentecostes","dominica","nomen"],
+		"datum":"Dominica IX post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-ix-pentecostes","basis-nominis"],
+		"datum":"IX post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-ix-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1935",
 		"datum":"Dum tólleret Dóminus * Elíam per túrbinem in cœlum, Eliséus clamábat: Pater mi, currus Ísraël, et auríga ejus."
@@ -7,7 +15,7 @@
 	{
 		"tags":["hebdomada-ix-pentecostes","collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Páteant aures misericórdiæ tuæ Dómine précibus supplicántium: et ut peténtibus desideráta concédas, fac eos, quæ tibi sunt plácita, postuláre."
+		"datum":"Páteant aures misericórdiæ tuæ Dómine précibus supplicántium: + et ut peténtibus desideráta concédas, * fac eos, quæ tibi sunt plácita, postuláre."
 	},
 	{
 		"tags":["hebdomada-ix-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

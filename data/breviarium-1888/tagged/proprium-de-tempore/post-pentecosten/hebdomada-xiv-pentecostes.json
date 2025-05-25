@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xiv-pentecostes","dominica","nomen"],
+		"datum":"Dominica XIV post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xiv-pentecostes","basis-nominis"],
+		"datum":"XIV post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xiv-pentecostes","collecta"],
+		"datum":"Custódi Dómine, quǽsumus, Ecclésiam tuam propitiatióne perpétua: + et quia sine te lábitur humána mortálitas, * tuis semper auxíliis et abstrahátur a nóxiis, et ad salutária dirigátur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xiv-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12684",
 		"datum":"Nolíte sollíciti esse, * dicéntes: Quid manducábimus, aut quid bibémus? scit enim Pater vester, quid vobis necésse sit, allelúja."

@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xvii-pentecostes","dominica","nomen"],
+		"datum":"Dominica XVII post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xvii-pentecostes","basis-nominis"],
+		"datum":"XVII post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xvii-pentecostes","collecta"],
+		"datum":"Da, quǽsumus Dómine, pópulo tuo diabólica vitáre contágia: * et te solum Deum pura mente sectári.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xvii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12006",
 		"datum":"Magíster, * quod est mandátum magnum in lege? Ait illi Jesus: Díliges Dóminum Deum tuum ex toto corde tuo, allelúja."

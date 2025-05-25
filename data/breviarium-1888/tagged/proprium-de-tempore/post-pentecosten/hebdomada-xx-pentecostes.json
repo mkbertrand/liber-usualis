@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xx-pentecostes","dominica","nomen"],
+		"datum":"Dominica XX post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xx-pentecostes","basis-nominis"],
+		"datum":"XX post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xx-pentecostes","collecta"],
+		"datum":"Largíre, quǽsumus Dómine, fidélibus tuis indulgéntiam placátus, et pacem: + ut páriter ab ómnibus mundéntur offénsis, * et secúra tibi mente desérviant.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xx-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2219",
 		"datum":"Erat quidam régulus, * cujus fílius infirmabátur Caphérnaum: hic cum audísset quod Jesus veníret in Galilǽam, rogábat eum, ut sanáret fílium ejus."

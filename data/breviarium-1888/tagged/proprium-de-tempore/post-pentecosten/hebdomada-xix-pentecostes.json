@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xix-pentecostes","dominica","nomen"],
+		"datum":"Dominica XIX post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xix-pentecostes","basis-nominis"],
+		"datum":"XIX post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xix-pentecostes","collecta"],
+		"datum":"Omnípotens et miséricors Deus, univérsa nobis adversántia propitiátus exclúde: + ut mente et córpore páriter expedíti, * quæ tua sunt, líberis méntibus exsequámur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xix-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12177",
 		"datum":"Dícite invitátis: * Ecce prándium meum parávi, veníte ad núptias, allelúja."

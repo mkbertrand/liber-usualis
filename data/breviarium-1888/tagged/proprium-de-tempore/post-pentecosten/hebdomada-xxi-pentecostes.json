@@ -1,8 +1,16 @@
 [
 	{
+		"tags":["hebdomada-xxi-pentecostes","dominica","nomen"],
+		"datum":"Dominica XXI post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xxi-pentecostes","basis-nominis"],
+		"datum":"XXI post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-xxi-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Famíliam tuam, quǽsumus, Dómine, contínua pietáte custódi: + ut a cunctis adversitátibus te protegénte sit líbera; * et in bonis áctibus tuo nómini sit devóta."
+		"datum":"Famíliam tuam, quǽsumus, Dómine, contínua pietáte custódi: + ut a cunctis adversitátibus te protegénte sit líbera; * et in bonis áctibus tuo nómini sit devóta.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-xxi-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-iii-pentecostes","dominica","nomen"],
+		"datum":"Dominica III post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-iii-pentecostes","basis-nominis"],
+		"datum":"III post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-iii-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2346",
 		"datum":"Cognovérunt omnes * a Dan usque Bersabée, quod fidélis Sámuel Prophéta esset Dómini."
+	},
+	{
+		"tags":["hebdomada-iii-pentecostes","collecta"],
+		"datum":"Protéctor in te sperántium Deus, sine quo nihil est válidum, nihil sanctum: + multíplica super nos misericórdiam tuam; ut te rectóre, te duce, sic transeámus per bona temporália, * ut non amittámus ætérna.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-iii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

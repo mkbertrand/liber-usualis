@@ -1,13 +1,21 @@
 [
 	{
+		"tags":["hebdomada-iv-pentecostes","dominica","nomen"],
+		"datum":"Dominica IV post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-iv-pentecostes","basis-nominis"],
+		"datum":"IV post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-iv-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2533",
 		"datum":"Præváluit David * in Philisthǽum in funda et lápide, in nómine Dómini."
 	},
 	{
 		"tags":["hebdomada-iv-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Da nobis, quǽsumus Dómine, + ut et mundi cursus pacífice nobis tuo órdine dirigátur: * et Ecclésia tua tranquílla devotióne lætétur."
+		"datum":"Da nobis, quǽsumus Dómine, + ut et mundi cursus pacífice nobis tuo órdine dirigátur: * et Ecclésia tua tranquílla devotióne lætétur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-iv-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

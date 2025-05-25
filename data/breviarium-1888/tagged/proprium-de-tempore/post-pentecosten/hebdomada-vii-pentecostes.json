@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-vii-pentecostes","dominica","nomen"],
+		"datum":"Dominica VII post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-vii-pentecostes","basis-nominis"],
+		"datum":"VII post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-vii-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1970",
 		"datum":"Unxérunt Salomónem * Sadoc sacérdos, et Nathan prophéta, regem in Gihon, et ascendéntes læti dixérunt: Vivat rex in ætérnum."
+	},
+	{
+		"tags":["hebdomada-vii-pentecostes","collecta"],
+		"datum":"Deus, cujus providéntia in sui dispositióne non fállitur: + te súpplices exorámus; ut nóxia cuncta submóveas, * et ómnia nobis profutúra concédas.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-vii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

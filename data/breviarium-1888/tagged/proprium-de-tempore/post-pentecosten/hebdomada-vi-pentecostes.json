@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-vi-pentecostes","dominica","nomen"],
+		"datum":"Dominica VI post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-vi-pentecostes","basis-nominis"],
+		"datum":"VI post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-vi-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2207",
 		"datum":"Óbsecro Dómine, * aufer iniquitátem servi tui, quia insipiénter egi."
+	},
+	{
+		"tags":["hebdomada-vi-pentecostes","collecta"],
+		"datum":"Deus virtútum, cujus est totum quod est óptimum: + ínsere pectóribus nostris amórem tui nóminis, et præsta in nobis religiónis augméntum; * ut quæ sunt bona, nútrias; ac pietátis stúdio, quæ sunt nutríta, custódias.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-vi-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

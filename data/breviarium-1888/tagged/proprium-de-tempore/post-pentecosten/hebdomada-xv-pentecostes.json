@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xv-pentecostes","dominica","nomen"],
+		"datum":"Dominica XV post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xv-pentecostes","basis-nominis"],
+		"datum":"XV post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xv-pentecostes","collecta"],
+		"datum":"Ecclésiam tuam Dómine miserátio continuáta mundet et múniat: + et quia sine te non potest salva consístere, * tuo semper múnere gubernétur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xv-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2859",
 		"datum":"Ibat Jesus * in civitátem quæ vocáur Naïm: et ecce defúnctus efferebátur fílius únicus matris suæ."

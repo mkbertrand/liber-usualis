@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["hebdomada-xxiii-pentecostes","dominica","nomen"],
-		"datum":"Dominicæ XXIII Pentecosten"
+		"datum":"Dominica XXIII post Pentecosten"
 	},
 	{
 		"tags":["hebdomada-xxiii-pentecostes","basis-nominis"],
@@ -9,8 +9,8 @@
 	},
 	{
 		"tags":["hebdomada-xxiii-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Absólve, quǽsumus Dómine, tuórum delícta populórum: ut a peccatórum néxibus, quæ pro nostra fragilitáte contráximus, tua benignitáte liberémur."
+		"datum":"Absólve, quǽsumus Dómine, tuórum delícta populórum: + ut a peccatórum néxibus, quæ pro nostra fragilitáte contráximus, * tua benignitáte liberémur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-vii"],

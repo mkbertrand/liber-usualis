@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-viii-pentecostes","dominica","nomen"],
+		"datum":"Dominica VIII post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-viii-pentecostes","basis-nominis"],
+		"datum":"VIII post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-viii-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2946",
 		"datum":"Exaudísti Dómine * oratiónem servi tui, ut ædificárem templum nómini tuo."
+	},
+	{
+		"tags":["hebdomada-viii-pentecostes","collecta"],
+		"datum":"Largíre nobis, quǽsumus Dómine, semper spíritum cogitándi quæ recta sunt, propítius et agéndi: + ut qui sine te esse non póssumus, * secúndum te vívere valeámus.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-viii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

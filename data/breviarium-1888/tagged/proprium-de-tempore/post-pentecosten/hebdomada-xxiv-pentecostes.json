@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["hebdomada-xxiv-pentecostes","dominica","nomen"],
-		"datum":"Dominicæ XXIV Pentecosten"
+		"datum":"Dominica XXIV post Pentecosten"
 	},
 	{
 		"tags":["hebdomada-xxiv-pentecostes","basis-nominis"],
@@ -9,8 +9,8 @@
 	},
 	{
 		"tags":["hebdomada-xxiv-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Éxcita, quǽsumus Dómine, tuórum fidélium voluntátes: ut divíni óperis fructum propénsius exsequéntes, pietátis tuæ remédia majóra percípiant."
+		"datum":"Éxcita, quǽsumus Dómine, tuórum fidélium voluntátes: + ut divíni óperis fructum propénsius exsequéntes, * pietátis tuæ remédia majóra percípiant.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-xxiv-pentecostes","dominica","matutinum","nocturna-iii","lectio","lectio-i"],

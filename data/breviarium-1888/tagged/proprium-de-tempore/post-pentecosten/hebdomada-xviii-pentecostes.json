@@ -1,8 +1,16 @@
 [
 	{
+		"tags":["hebdomada-xviii-pentecostes","dominica","nomen"],
+		"datum":"Dominica XVIII post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xviii-pentecostes","basis-nominis"],
+		"datum":"XVIII post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-xviii-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Dírigat corda nostra, quǽsumus Dómine, tuæ miseratiónis operátio: * quia tibi sine te placére non póssumus."
+		"datum":"Dírigat corda nostra, quǽsumus Dómine, tuæ miseratiónis operátio: * quia tibi sine te placére non póssumus.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-xviii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

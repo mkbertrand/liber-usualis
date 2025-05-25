@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xii-pentecostes","dominica","nomen"],
+		"datum":"Dominica XII post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xii-pentecostes","basis-nominis"],
+		"datum":"XII post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xii-pentecostes","collecta"],
+		"datum":"Omnípotens et miséricors Deus, de cujus múnere venit, ut tibi a fidélibus tuis digne et laudabíliter serviátur: + tríbue quǽsumus nobis; * ut ad promissiónes tuas sine offensióne currámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2524",
 		"datum":"Magíster, * quid faciéndo vitam ætérnam possidébo? at ille dixit ad eum: In lege quid scriptum est? quómodo legis? Díliges Dóminum Deum tuum ex toto corde tuo, allelúja."

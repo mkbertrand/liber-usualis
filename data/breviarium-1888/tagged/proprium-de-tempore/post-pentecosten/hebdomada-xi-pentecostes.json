@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-xi-pentecostes","dominica","nomen"],
+		"datum":"Dominica XI post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xi-pentecostes","basis-nominis"],
+		"datum":"XI post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-xi-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1946",
 		"datum":"Óbsecro Dómine, * meménto quæso, quómodo ambuláverim coram te in veritáte, et in corde perfécto, et quod plácitum est coram te, fécerim."
+	},
+	{
+		"tags":["hebdomada-xi-pentecostes","collecta"],
+		"datum":"Omnípotens sempitérne Deus, qui abundántia pietátis tuæ, et mérita súpplicum excédis et vota: + effúnde super nos misericórdiam tuam; ut dimíttas quæ consciéntia métuit, * et adjícias quod orátio non præsúmit.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-xi-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

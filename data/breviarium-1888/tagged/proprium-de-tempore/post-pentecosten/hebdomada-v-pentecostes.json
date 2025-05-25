@@ -1,8 +1,21 @@
 [
 	{
+		"tags":["hebdomada-v-pentecostes","dominica","nomen"],
+		"datum":"Dominica V post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-v-pentecostes","basis-nominis"],
+		"datum":"V post Octavam Pentecostes"
+	},
+	{
 		"tags":["hebdomada-v-pentecostes","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2172",
 		"datum":"Montes Gélboë, * nec ros nec plúvia véniant super vos: quia in te abjéctus est clýpeus fórtium, clýpeus Saul, quasi non esset unctus óleo. Quómodo cecidérunt fortes in bello? Jónathas in excélsis interféctus est: Saul et Jónathas amábiles, et decóri valde in vita sua, in morte quoque non sunt divísi."
+	},
+	{
+		"tags":["hebdomada-v-pentecostes","collecta"],
+		"datum":"Deus, qui diligéntibus te bona invisibília præparásti: + infúnde córdibus nostris tui amóris afféctum: ut te in ómnibus, et super ómnia diligéntes, * promissiónes tuas, quæ omne desidérium súperant, consequámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-v-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

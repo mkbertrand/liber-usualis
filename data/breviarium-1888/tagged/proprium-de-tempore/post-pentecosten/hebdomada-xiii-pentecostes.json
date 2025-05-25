@@ -1,5 +1,18 @@
 [
 	{
+		"tags":["hebdomada-xiii-pentecostes","dominica","nomen"],
+		"datum":"Dominica XIII post Pentecosten"
+	},
+	{
+		"tags":["hebdomada-xiii-pentecostes","basis-nominis"],
+		"datum":"XIII post Octavam Pentecostes"
+	},
+	{
+		"tags":["hebdomada-xiii-pentecostes","collecta"],
+		"datum":"Omnípotens sempitérne Deus, da nobis fídei, spei, et caritátis augméntum: + et ut mereámur ássequi quod promíttis, * fac nos amáre quod prǽcipis.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["hebdomada-xiii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/19912",
 		"datum":"Cum transíret Jesus * quoddam castéllum, occurrérunt ei decem viri leprósi: qui stetérunt a longe, et levavérunt vocem, dicéntes: Jesu præcéptor, miserére nostri."
