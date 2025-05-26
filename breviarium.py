@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import os
 import pathlib
