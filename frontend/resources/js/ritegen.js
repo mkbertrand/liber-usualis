@@ -207,7 +207,8 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				header = 'Psalmi Graduales';
 			}
 			for (i of data['tags']) {
-				if (i in titled) {
+				// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
+				if (i in titled && !(typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes(i))) {
 					header = titled[i];
 				}
 			}
