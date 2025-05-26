@@ -1,12 +1,12 @@
 [
 	{
 		"tags":["hebdomada-ii-epiphaniae","basis-nominis"],
-		"datum":"II Epiphaniæ"
+		"datum":"II post Epiphaniam"
 	},
 	{
 		"tags":["hebdomada-ii-epiphaniae","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Omnípotens sempitérne Deus, qui cœléstia simul et terréna moderáris: supplicatiónes pópuli tui cleménter exaúdi, et pacem tuam nostris concéde temporálibus."
+		"datum":"Omnípotens sempitérne Deus, qui cœléstia simul et terréna moderáris: + supplicatiónes pópuli tui cleménter exaúdi, * et pacem tuam nostris concéde temporálibus.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-ii-epiphaniae","dominica","matutinum","nocturna-i","lectio","lectio-i"],

@@ -1,12 +1,13 @@
 [
 	{
 		"tags":["hebdomada-v-epiphaniae","basis-nominis"],
-		"datum":"V post Epiphaniam"
+		"post-epiphaniam":"V post Epiphaniam",
+		"post-pentecosten":"V quæ superfuit post Epiphaniam"
 	},
 	{
 		"tags":["hebdomada-v-epiphaniae","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Famíliam tuam, quǽsumus Dómine, contínua pietáte custódi: ut quæ in sola spe grátiæ cœléstis innítitur, tua semper protectióne muniátur."
+		"datum":"Famíliam tuam, quǽsumus Dómine, contínua pietáte custódi: + ut quæ in sola spe grátiæ cœléstis innítitur, * tua semper protectióne muniátur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-v-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],

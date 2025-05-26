@@ -1,7 +1,13 @@
 [
 	{
 		"tags":["hebdomada-vi-epiphaniae","basis-nominis"],
-		"datum":"VI post Epiphaniam"
+		"post-epiphaniam":"VI post Epiphaniam",
+		"post-pentecosten":"VI quæ superfuit post Epiphaniam"
+	},
+	{
+		"tags":["hebdomada-vi-epiphaniae","collecta"],
+		"datum":"Præsta, quǽsumus omnípotens Deus: + ut semper rationabília meditántes, * quæ tibi sunt plácita, et dictis exsequámur, et factis.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hebdomada-vi-epiphaniae","dominica","laudes","antiphona","antiphona-benedictus"],
