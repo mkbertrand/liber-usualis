@@ -50,7 +50,7 @@
 		this.color = primary.filter((tag) => colors.includes(tag))[0];
 		this.initialized = true;
 	},
-	get DayOptions() {
+	get Coincidences() {
 		if (this.names == '') {
 			return '';
 		}
@@ -87,10 +87,13 @@
 			<div id="options-panel-title">Options</div>
 			<button class="options-panel-button" @click="translation = !translation">Translation toggle</button>
 			<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
-			<div>
-				<template x-for="dayoption in DayOptions">
-					<div x-text="dayoption[0]"></div>
-				</template>
+			<div id="coincidences-list-container">
+				<h4 id="coincidences-list-title">Coincidences</h4>
+				<div>
+					<template x-for="coinciding in Coincidences">
+						<div class="coincidence-entry" x-text="coinciding[0]"></div>
+					</template>
+				</div>
 			</div>
 		</div>
 	</div>
