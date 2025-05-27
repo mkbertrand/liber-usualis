@@ -48,14 +48,6 @@
 		"implies":["infra-octavam"]
 	},
 	{
-		"tags":["vesperae"],
-		"implies":["hora-major"]
-	},
-	{
-		"tags":["laudes"],
-		"implies":["hora-major"]
-	},
-	{
 		"tags":["martyr","in-tempore-paschali"],
 		"implies":["martyrum-tempore-paschali"]
 	},

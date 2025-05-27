@@ -248,17 +248,26 @@
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["semiduplex","dominica","hora-major","benedicamus-domino"],
+		"tags":[
+			["semiduplex","dominica","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","laudes","benedicamus-domino"]
+		],
 		"src":"gregobase/16976",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["semiduplex","dominica","poenitentialis","hora-major","benedicamus-domino"],
+		"tags":[
+			["semiduplex","dominica","poenitentialis","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","poenitentialis","laudes","benedicamus-domino"]
+		],
 		"src":"gregobase/9841",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["dominica","in-tempore-paschali","hora-major","benedicamus-domino"],
+		"tags":[
+			["dominica","in-tempore-paschali","vesperae","benedicamus-domino"],
+			["dominica","in-tempore-paschali","laudes","benedicamus-domino"]
+		],
 		"src":"gregobase/8121",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
@@ -273,12 +282,18 @@
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["simplex","hora-major","benedicamus-domino"],
+		"tags":[
+			["simplex","vesperae","benedicamus-domino"],
+			["simplex","laudes","benedicamus-domino"]
+		],
 		"src":"gregobase/15743",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["feria","hora-major","benedicamus-domino"],
+		"tags":[
+			["feria","vesperae","benedicamus-domino"],
+			["feria","laudes","benedicamus-domino"]
+		],
 		"src":"gregobase/15741",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
@@ -288,12 +303,18 @@
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
-		"tags":["hora-major","pascha","benedicamus-domino"],
+		"tags":[
+			["pascha","vesperae","benedicamus-domino"],
+			["pascha","laudes","benedicamus-domino"]
+		],
 		"src":"gregobase/19811",
 		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
 	},
 	{
-		"tags":["hora-major","pascha","benedicamus-domino","duplex-i-classis"],
+		"tags":[
+			["pascha","vesperae","benedicamus-domino","duplex-i-classis"],
+			["pascha","laudes","benedicamus-domino","duplex-i-classis"]
+		],
 		"src":"gregobase/19812",
 		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
 	},
