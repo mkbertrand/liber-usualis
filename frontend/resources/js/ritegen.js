@@ -151,6 +151,9 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			} else if (data['tags'].includes('hymnus') && data['tags'].includes('te-deum') && !options['chant']) {
 				return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data['datum'].join('/'))}</p>`;
 			} else if (data['tags'].includes('commemorationes')) {
+				if (data['datum'].length == 0) {
+					return '';
+				}
 				ret = '';
 				for (var i = 0; i < data['datum'].length - 1; i++) {
 					ret += `<h4 class="item-header">${names[i]}</h4>` + renderinner(data['datum'][i], translated, translationpool, data['tags'].concat(parenttags), options, names);
