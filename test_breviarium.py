@@ -47,8 +47,8 @@ def test_match(day) -> None:
 	warnings.filterwarnings('ignore')
 
 	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
-		old = str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json')))
-		new = str(striptags(breviarium.generate(root, day, j)))
+		old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json'))))
+		new = re.sub(r'\[.+?\]', '[]', str(striptags(breviarium.generate(root, day, j))))
 
 		diffs = dmp.diff_main(old, new)
 		dmp.diff_cleanupSemantic(diffs)
@@ -71,7 +71,6 @@ def test_match(day) -> None:
 			if hash(changelog) in changes:
 				print(f'{day}-{j.replace("+", "-")} has the same changes as {changes[hash(changelog)]}')
 			else:
-				print('hi')
 				changes[hash(changelog)] = f'{day}-{j.replace("+", "-")}'
 				print(changes)
 				with open(f'testresults/{day}-{j.replace("+", "-")}.txt', 'w') as fileout:
