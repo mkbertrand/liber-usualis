@@ -2,7 +2,8 @@
 	{
 		"tags":["confessor-pontifex","antiphona","antiphona-i"],
 		"src":"gregobase/1914",
-		"datum":"Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus."
+		"datum":"Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus.",
+		"in-tempore-paschali":"Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","vesperae","psalmus-i"],
@@ -11,7 +12,8 @@
 	{
 		"tags":["confessor-pontifex","antiphona","antiphona-ii"],
 		"src":"gregobase/2613",
-		"datum":"Non est invéntus * símilis illi, qui conserváret legem Excélsi."
+		"datum":"Non est invéntus * símilis illi, qui conserváret legem Excélsi.",
+		"in-tempore-paschali":"Non est invéntus * símilis illi, qui conserváret legem Excélsi, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","vesperae","psalmus-ii"],
@@ -20,7 +22,8 @@
 	{
 		"tags":["confessor-pontifex","antiphona","antiphona-iii"],
 		"src":"gregobase/2858",
-		"datum":"Ídeo jurejurándo * fecit illum Dóminus créscere in plebem suam."
+		"datum":"Ídeo jurejurándo * fecit illum Dóminus créscere in plebem suam.",
+		"in-tempore-paschali":"Ídeo jurejurándo * fecit illum Dóminus créscere in plebem suam, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","vesperae","psalmus-iii"],
@@ -38,7 +41,8 @@
 	{
 		"tags":["confessor-pontifex","antiphona","antiphona-v"],
 		"src":"gregobase/2592",
-		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
+		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui.",
+		"in-tempore-paschali":"Serve bone * et fidélis, intra in gaúdium Dómini tui, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","i-vesperae","psalmus-v"],
@@ -79,17 +83,18 @@
 	{
 		"tags":["confessor-pontifex","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2223",
-		"datum":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum."
+		"datum":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum.",
+		"in-tempore-paschali":"Sacérdos et Póntifex, * et virtútum ópifex, pastor bone in pópulo, ora pro nobis Dóminum, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Da, quǽsumus omnípotens Deus: + ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, * et devotiónem nobis aúgeat et salútem."
+		"datum":"Da, quǽsumus omnípotens Deus: + ut beáti N. Confessóris tui atque Pontíficis veneránda solémnitas, * et devotiónem nobis aúgeat et salútem.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["confessor-pontifex","collecta","alia-collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Exaúdi, quǽsumus Dómine, preces nostras, quas in beáti N. Confessóris tui atque Pontíficis solemnitáte deférimus: + et qui tibi digne méruit famulári, ejus intercedéntibus méritis * ab ómnibus nos absólve peccátis."
+		"datum":"Exaúdi, quǽsumus Dómine, preces nostras, quas in beáti N. Confessóris tui atque Pontíficis solemnitáte deférimus: + et qui tibi digne méruit famulári, ejus intercedéntibus méritis * ab ómnibus nos absólve peccátis.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","antiphona","antiphona-invitatorium"],
@@ -114,7 +119,8 @@
 			["confessor-pontifex","matutinum","nocturna-ii","versiculus"],
 			["confessor-pontifex","tertia","versiculus"]
 		],
-		"datum":["V. Elégit eum Dóminus sacerdótem sibi.","R. Ad sacrificándum ei hóstiam laudis."]
+		"datum":["V. Elégit eum Dóminus sacerdótem sibi.","R. Ad sacrificándum ei hóstiam laudis."],
+		"in-tempore-paschali":["V. Elégit eum Dóminus sacerdótem sibi, allelúja.","R. Ad sacrificándum ei hóstiam laudis, allelúja."]
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-i"],
@@ -142,7 +148,8 @@
 			["confessor-pontifex","matutinum","nocturna-iii","versiculus"],
 			["confessor-pontifex","sexta","versiculus"]
 		],
-		"datum":["V. Tu es sacérdos in ætérnum.","R. Secúndum órdinem Melchísedech."]
+		"datum":["V. Tu es sacérdos in ætérnum.","R. Secúndum órdinem Melchísedech."],
+		"in-tempore-paschali":["V. Tu es sacérdos in ætérnum, allelúja.","R. Secúndum órdinem Melchísedech, allelúja."]
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
@@ -162,7 +169,8 @@
 	{
 		"tags":["confessor-pontifex","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2306",
-		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui."
+		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui.",
+		"in-tempore-paschali":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","sexta","capitulum"],
@@ -173,6 +181,12 @@
 		"src":"gregobase/3222",
 		"incipit":"Elégit eum Dóminus",
 		"responsum":"Sacerdótem sibi.",
+		"versus":"Ad sacrificándum ei hóstiam laudis."
+	},
+	{
+		"tags":["confessor-pontifex","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Elégit eum Dóminus sacerdótem sibi",
+		"responsum":"Allelúja, allelúja.",
 		"versus":"Ad sacrificándum ei hóstiam laudis."
 	},
 	{
@@ -187,17 +201,26 @@
 		"versus":"Secúndum órdinem Melchísedech."
 	},
 	{
+		"tags":["confessor-pontifex","nona","responsorium-breve","in-tempore-paschali"],
+		"src":"gregobase/3101",
+		"incipit":"Tu es sacérdos in ætérnum",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Secúndum órdinem Melchísedech."
+	},
+	{
 		"tags":["confessor-pontifex","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxxxi,gloria"]]
 	},
 	{
 		"tags":["confessor-pontifex","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2933",
-		"datum":"Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum."
+		"datum":"Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum.",
+		"in-tempore-paschali":"Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum, allelúja."
 	},
 	{
 		"tags":["confessor-pontifex","papa","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1820",
-		"datum":"Dum esset summus Póntifex, * terréna non métuit, sed ad cœléstia regna gloriósus migrávit."
+		"datum":"Dum esset summus Póntifex, * terréna non métuit, sed ad cœléstia regna gloriósus migrávit.",
+		"in-tempore-paschali":"Dum esset summus Póntifex, * terréna non métuit, sed ad cœléstia regna gloriósus migrávit, allelúja."
 	}
 ]

@@ -2,7 +2,8 @@
 	{
 		"tags":["vidua","antiphona","antiphona-i"],
 		"src":"gregobase/2000",
-		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis."
+		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis.",
+		"in-tempore-paschali":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis, allelúja."
 	},
 	{
 		"tags":["vidua","vesperae","psalmus-i"],
@@ -11,7 +12,8 @@
 	{
 		"tags":["vidua","antiphona","antiphona-ii"],
 		"src":"gregobase/2963",
-		"datum":"In odórem * unguentórum tuórum cúrrimus; adolescéntulæ dilexérunt te nimis."
+		"datum":"In odórem * unguentórum tuórum cúrrimus; adolescéntulæ dilexérunt te nimis.",
+		"in-tempore-paschali":"In odórem * unguentórum tuórum cúrrimus; adolescéntulæ dilexérunt te nimis, allelúja."
 	},
 	{
 		"tags":["vidua","vesperae","psalmus-ii"],
@@ -20,7 +22,8 @@
 	{
 		"tags":["vidua","antiphona","antiphona-iii"],
 		"src":"gregobase/2056",
-		"datum":"Jam hiems tránsiit, * imber ábiit, et recéssit: surge amíca mea, et veni."
+		"datum":"Jam hiems tránsiit, * imber ábiit, et recéssit: surge amíca mea, et veni.",
+		"in-tempore-paschali":"Jam hiems tránsiit, * imber ábiit, et recéssit: surge amíca mea, et veni, allelúja."
 	},
 	{
 		"tags":["vidua","vesperae","psalmus-iii"],
@@ -38,7 +41,8 @@
 	{
 		"tags":["vidua","antiphona","antiphona-v"],
 		"src":"gregobase/2474",
-		"datum":"Ista est speciósa * inter fílias Jerúsalem."
+		"datum":"Ista est speciósa * inter fílias Jerúsalem.",
+		"in-tempore-paschali":"Ista est speciósa * inter fílias Jerúsalem, allelúja."
 	},
 	{
 		"tags":["vidua","vesperae","psalmus-v"],
@@ -64,13 +68,26 @@
 		]
 	},
 	{
+		"tags":["vidua","hymnus","in-tempore-paschali"],
+		"src":"gregobase/2024",
+		"datum":[
+			"Fortem viríli péctore/Laudémus omnes féminam,/Quæ sanctitátis glória/Ubíque fulget ínclyta.",
+			"Hæc sancto amóre saúcia,/Dum mundi amórem nóxium/Horréscit, ad cœléstia/Iter perégit árduum.",
+			"Carnem domans jejúniis,/Dulcíque mentem pábulo/Oratiónis nútriens,/Cœli potítur gaúdiis.",
+			"Rex Christe virtus fórtium,/Qui magna solus éfficis,/Hujus precátu, quǽsumus,/Audi benígnus súpplices.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
 		"tags":["vidua","i-vesperae","versiculus"],
-		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
+		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
 	{
 		"tags":["vidua","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/18848",
-		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam."
+		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam.",
+		"in-tempore-paschali":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam, allelúja."
 	},
 	{
 		"tags":["vidua","martyr","collecta"],
@@ -337,12 +354,14 @@
 	},
 	{
 		"tags":["vidua","laudes","versiculus"],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."],
+		"in-tempore-paschali":["V. Diffúsa est grátia in lábiis tuis, allelúja.","R. Proptérea benedíxit te Deus in ætérnum, allelúja."]
 	},
 	{
 		"tags":["vidua","martyr","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2681",
-		"datum":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus."
+		"datum":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus.",
+		"in-tempore-paschali":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus, allelúja."
 	},
 	{
 		"tags":["vidua","tertia","responsorium-breve"],
@@ -352,8 +371,15 @@
 		"versus":"Inténde, próspere procéde, et regna."
 	},
 	{
+		"tags":["vidua","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Spécie tua et pulchritúdine tua",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Inténde, próspere procéde, et regna."
+	},
+	{
 		"tags":["vidua","tertia","versiculus"],
-		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
+		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
 	},
 	{
 		"tags":["vidua","martyr","sexta","capitulum"],
@@ -371,8 +397,15 @@
 		"versus":"Deus in médio ejus, non commovébitur."
 	},
 	{
+		"tags":["vidua","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Adjuvábit eam Deus vultu suo.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Deus in médio ejus, non commovébitur."
+	},
+	{
 		"tags":["vidua","sexta","versiculus"],
-		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
+		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
 	{
 		"tags":["vidua","martyr","nona","capitulum"],
@@ -385,21 +418,29 @@
 	{
 		"tags":["vidua","nona","responsorium-breve"],
 		"src":"gregobase/3143",
-		"incipit":"Elégit eam Deus,",
+		"incipit":"Elégit eam Deus",
 		"responsum":"Et præelégit eam.",
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
-		"tags":["vidua","nona","versiculus"],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+		"tags":["vidua","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Elégit eam Deus, et præelégit eam",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
-		"tags":["vidua","ii-vesperae","versiculus"],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+		"tags":[
+			["vidua","nona","versiculus"],
+			["vidua","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."],
+		"in-tempore-paschali":["V. Diffúsa est grátia in lábiis tuis, allelúja.","R. Proptérea benedíxit te Deus in ætérnum, allelúja."]
 	},
 	{
 		"tags":["vidua","ii-vesperae","antiphona-magnificat"],
-		"datum":"Manum suam * apéruit ínopi, et palmas suas exténdit ad paúperem, et panem otiósa non comédit."
+		"src":"gregobase/2275",
+		"datum":"Manum suam * apéruit ínopi, et palmas suas exténdit ad paúperem, et panem otiósa non comédit.",
+		"in-tempore-paschali":"Manum suam * apéruit ínopi, et palmas suas exténdit ad paúperem, et panem otiósa non comédit, allelúja."
 	},
 	{
 		"tags":["vidua","martyr","matutinum","nocturna-ii","lectio","lectio-i"],

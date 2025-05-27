@@ -46,5 +46,21 @@
 	{
 		"tags":["dominica-infra-octavam"],
 		"implies":["infra-octavam"]
+	},
+	{
+		"tags":["vesperae"],
+		"implies":["hora-major"]
+	},
+	{
+		"tags":["laudes"],
+		"implies":["hora-major"]
+	},
+	{
+		"tags":["martyr","in-tempore-paschali"],
+		"implies":["martyrum-tempore-paschali"]
+	},
+	{
+		"tags":["apostolus","in-tempore-paschali"],
+		"implies":["apostolorum-tempore-paschali","martyrum-tempore-paschali"]
 	}
 ]

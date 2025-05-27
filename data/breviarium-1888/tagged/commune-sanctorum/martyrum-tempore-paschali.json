@@ -1,0 +1,129 @@
+[
+	{
+		"tags":["martyrum-tempore-paschali","antiphona","antiphona-i"],
+		"src":"gregobase/1923",
+		"datum":"Sancti tui Dómine * florébunt sicut lílium, allelúja: et sicut odor bálsami erunt ante te, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","antiphona","antiphona-ii"],
+		"src":"gregobase/2105",
+		"datum":"In cœléstibus regnis * sanctórum habitátio est, allelúja: et in ætérnum réquies eórum, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","antiphona","antiphona-iii"],
+		"src":"gregobase/2788",
+		"datum":"In velaménto * clamábant sancti tui Dómine, allelúja, allelúja, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","antiphona","antiphona-iv"],
+		"src":"gregobase/2943",
+		"datum":"Spíritus et ánimæ * justórum hymnum dícite Deo nostro, allelúja, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","antiphona","antiphona-v"],
+		"src":"gregobase/2720",
+		"datum":"Fulgébunt justi * sicut sol in conspéctu Dei, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","capitulum"],
+		"datum":"Stabunt justi in magna constántia + advérsus eos, qui se angustiavérunt, * et qui abstulérunt labóres eórum."
+	},
+	{
+		"tags":[
+			["martyrum-tempore-paschali","vesperae","hymnus"],
+			["martyrum-tempore-paschali","matutinum","hymnus"]
+		],
+		"src":"gregobase/12833",
+		"datum":[
+			"Deus tuórum mílitum/Sors et coróna, prǽmium,/Laudes canéntes Mártyris/Absólve nexu críminis.",
+			"Hic nempe mundi gaúdia,/Et blanda fraudum pábula/Imbúta felle députans,/Pervénit ad cœléstia.",
+			"Pœnas cucúrrit fórtiter,/Et sústulit viríliter,/Fundénsque pro te sánguinem,/Ætérna dona póssidet.",
+			"Ob hoc precátu súpplici/Te póscimus, piíssime;/In hoc triúmpho Mártyris/Dimítte noxam sérvulis.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["martyrum-tempore-paschali","martyres","vesperae","hymnus"],
+			["martyrum-tempore-paschali","martyres","laudes","hymnus"]
+		],
+		"src":"gregobase/13113",
+		"datum":[
+			"Rex glorióse Mártyrum,/Coróna confiténtium,/Qui respuéntes térrea/Perdúcis ad cœléstia.",
+			"Aurem benígnam prótinus/Inténde nostris vócibus:/Trophǽa sacra pángimus:/Ignósce quod delíquimus.",
+			"Tu vincis inter Mártyres,/Parcísque Confessóribus:/Tu vince nostra crímina,/Largítor indulgéntiæ.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","i-vesperae","versiculus"],
+		"datum":["V. Sancti et justi in Dómino gaudéte, allelúja.","R. Vos elégit Deus in hæreditátem sibi, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2510",
+		"datum":"Lux perpétua * lucébit sanctis tuis Dómine, et ætérnitas témporum, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","laudes","hymnus"],
+		"src":"gregobase/12997",
+		"datum":[
+			"Invícte Martyr, únicum/Patris secútus Fílium,/Victis triúmphas hóstibus./Victor fruens cœléstibus.",
+			"Tui precátus múnere/Nostrum reátum dílue,/Arcens mali contágium,/Vitæ repéllens tǽdium.",
+			"Solúta sunt jam víncula/Tui sacráti córporis:/Nos solve vinclis sǽculi,/Dono supérni Núminis.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["martyrum-tempore-paschali","laudes","versiculus"],
+			["martyrum-tempore-paschali","nona","versiculus"],
+			["martyrum-tempore-paschali","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Pretiósa in conspéctu Dómini, allelúja.","R. Mors sanctórum ejus, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2680",
+		"datum":"Fíliæ Jerúsalem, * veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus in die solemnitátis et lætítiæ, allelúja, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","tertia","responsorium-breve"],
+		"incipit":"Sancti et justi in Dómino gaudéte",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Vos elégit Deus in hæreditátem sibi."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","tertia","versiculus"],
+		"datum":["V. Lux perpétua lucébit sanctis tuis Dómine, allelúja.","R. Et ætérnitas témporum, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","sexta","capitulum"],
+		"datum":"Ecce quómodo computáti sunt inter fílios Dei, * et inter sanctos sors illórum est."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","sexta","responsorium-breve"],
+		"incipit":"Lux perpétua lucébit sanctis tuis Dómine",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et ætérnitas témporum."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","sexta","versiculus"],
+		"datum":["V. Lætítia sempitérna super cápita eórum, allelúja.","R. Gaúdium et exsultatiónem obtinébunt, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","nona","capitulum"],
+		"datum":"Scimus quóniam diligéntibus Deum + ómnia cooperántur in bonum, * iis, qui secúndum propósitum vocáti sunt sancti."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","nona","responsorium-breve"],
+		"incipit":"Lætítia sempitérna super cápita eórum",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Gaúdium et exsultatiónem obtinébunt."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","ii-vesperae","antiphona-magnificat"],
+		"src":"gregobase/2831",
+		"datum":"Sancti et justi * in Dómino gaudéte, allelúja: vos elégit Deus in hæreditátem sibi, allelúja."
+	}
+]

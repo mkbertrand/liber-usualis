@@ -2,7 +2,8 @@
 	{
 		"tags":["confessor","antiphona","antiphona-i"],
 		"src":"gregobase/2080",
-		"datum":"Dómine quinque talénta * tradidísti mihi: ecce ália quinque superlucrátus sum."
+		"datum":"Dómine quinque talénta * tradidísti mihi: ecce ália quinque superlucrátus sum.",
+		"in-tempore-paschali":"Dómine quinque talénta * tradidísti mihi: ecce ália quinque superlucrátus sum, allelúja."
 	},
 	{
 		"tags":["confessor","vesperae","psalmus-i"],
@@ -11,7 +12,8 @@
 	{
 		"tags":["confessor","antiphona","antiphona-ii"],
 		"src":"gregobase/2179",
-		"datum":"Euge serve bone, * in módico fidélis, intra in gaúdium Dómini tui."
+		"datum":"Euge serve bone, * in módico fidélis, intra in gaúdium Dómini tui.",
+		"in-tempore-paschali":"Euge serve bone, * in módico fidélis, intra in gaúdium Dómini tui, allelúja."
 	},
 	{
 		"tags":["confessor","vesperae","psalmus-ii"],
@@ -20,7 +22,8 @@
 	{
 		"tags":["confessor","antiphona","antiphona-iii"],
 		"src":"gregobase/2570",
-		"datum":"Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam."
+		"datum":"Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.",
+		"in-tempore-paschali":"Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam, allelúja."
 	},
 	{
 		"tags":["confessor","vesperae","psalmus-iii"],
@@ -29,7 +32,8 @@
 	{
 		"tags":["confessor","antiphona","antiphona-iv"],
 		"src":"gregobase/2182",
-		"datum":"Beátus ille servus, * quem cum vénerit Dóminus ejus, et pulsáverit jánuam, invénerit vigilántem."
+		"datum":"Beátus ille servus, * quem cum vénerit Dóminus ejus, et pulsáverit jánuam, invénerit vigilántem.",
+		"in-tempore-paschali":"Beátus ille servus, * quem cum vénerit Dóminus ejus, et pulsáverit jánuam, invénerit vigilántem, allelúja."
 	},
 	{
 		"tags":["confessor","vesperae","psalmus-iv"],
@@ -38,7 +42,8 @@
 	{
 		"tags":["confessor","antiphona","antiphona-v"],
 		"src":"gregobase/2677",
-		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui."
+		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui.",
+		"in-tempore-paschali":"Serve bone * et fidélis, intra in gaúdium Dómini tui, allelúja."
 	},
 	{
 		"tags":["confessor","vesperae","psalmus-v"],
@@ -81,32 +86,34 @@
 			["confessor","i-vesperae","versiculus"],
 			["confessor","matutinum","nocturna-i","versiculus"]
 		],
-		"datum":["V. Amávit eum Dómine, et ornávit eum.", "R. Stolam glóriæ índuit eum."]
+		"datum":["V. Amávit eum Dómine, et ornávit eum.", "R. Stolam glóriæ índuit eum."],
+		"in-tempore-paschali":["V. Amávit eum Dómine, et ornávit eum, allelúja.", "R. Stolam glóriæ índuit eum, allelúja."]
 	},
 	{
 		"tags":["confessor","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2586",
-		"datum":"Similábo eum * viro sapiénti, qui ædificávit domum suam super petram."
+		"datum":"Similábo eum * viro sapiénti, qui ædificávit domum suam super petram.",
+		"in-tempore-paschali":"Similábo eum * viro sapiénti, qui ædificávit domum suam super petram, allelúja."
 	},
 	{
 		"tags":["confessor","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur."
+		"datum":"Deus, qui nos beáti N. Confessóris tui ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["confessor","confessores","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui nos beatórum N. Confessórum tuórum ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur."
+		"datum":"Deus, qui nos beatórum N. Confessórum tuórum ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["confessor","collecta","alia"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: + ut qui nostræ justítiæ fidúciam non habémus, * ejus, qui tibi plácuit, précibus adjuvémur."
+		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: + ut qui nostræ justítiæ fidúciam non habémus, * ejus, qui tibi plácuit, précibus adjuvémur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["confessor","confessores","collecta","alia"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beatórum N. Confessórum tuórum solemnitáte deférimus: + ut qui nostræ justítiæ fidúciam non habémus, * ejus, qui tibi plácuit, précibus adjuvémur."
+		"datum":"Adésto Dómine supplicatiónibus nostris, quas in beatórum N. Confessórum tuórum solemnitáte deférimus: + ut qui nostræ justítiæ fidúciam non habémus, * ejus, qui tibi plácuit, précibus adjuvémur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","simplex"],
@@ -221,7 +228,8 @@
 			["confessor","matutinum","nocturna-ii","versiculus"],
 			["confessor","tertia","versiculus"]
 		],
-		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."]
+		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."],
+		"in-tempore-paschali":["V. Os justi meditábitur sapiéntiam, allelúja.","R. Et lingua ejus loquétur judícium, allelúja."]
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -291,7 +299,8 @@
 			["confessor","matutinum","nocturna-iii","versiculus"],
 			["confessor","sexta","versiculus"]
 		],
-		"datum":["V. Lex Dei ejus in corde ipsíus.","R. Et non supplantabúntur gressus ejus."]
+		"datum":["V. Lex Dei ejus in corde ipsíus.","R. Et non supplantabúntur gressus ejus."],
+		"in-tempore-paschali":["V. Lex Dei ejus in corde ipsíus, allelúja.","R. Et non supplantabúntur gressus ejus, allelúja."]
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -344,18 +353,26 @@
 			["confessor","nona","versiculus"],
 			["confessor","ii-vesperae","versiculus"]
 		],
-		"datum":["V. Justum dedúxit Dóminus per vias rectas.","R. Et osténdit illi regnum Dei."]
+		"datum":["V. Justum dedúxit Dóminus per vias rectas.","R. Et osténdit illi regnum Dei."],
+		"in-tempore-paschali":["V. Justum dedúxit Dóminus per vias rectas, allelúja.","R. Et osténdit illi regnum Dei, allelúja."]
 	},
 	{
 		"tags":["confessor","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2808",
-		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui."
+		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui.",
+		"in-tempore-paschali":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui, allelúja."
 	},
 	{
 		"tags":["confessor","tertia","responsorium-breve"],
 		"src":"gregobase/3089",
-		"incipit":"Amávit eum Dóminus,",
+		"incipit":"Amávit eum Dóminus",
 		"responsum":"Et ornávit eum.",
+		"versus":"Stolam glóriæ índuit eum."
+	},
+	{
+		"tags":["confessor","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Amávit eum Dóminus, et ornávit eum.",
+		"responsum":"Allelúja, allelúja.",
 		"versus":"Stolam glóriæ índuit eum."
 	},
 	{
@@ -370,6 +387,12 @@
 		"versus":"Et lingua ejus loquétur judícium."
 	},
 	{
+		"tags":["confessor","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Os justi meditábitur sapiéntiam.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et lingua ejus loquétur judícium."
+	},
+	{
 		"tags":["confessor","nona","capitulum"],
 		"datum":"Justum dedúxit Dóminus per vias rectas, + et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: * honestávit illum in labóribus, et complévit labóres illíus."
 	},
@@ -381,9 +404,16 @@
 		"versus":"Et non supplantabúntur gressus ejus."
 	},
 	{
+		"tags":["confessor","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Lex Dei ejus in corde ipsíus.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et non supplantabúntur gressus ejus."
+	},
+	{
 		"tags":["confessor","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2251",
-		"datum":"Hic vir, qui despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu."
+		"datum":"Hic vir, qui despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu.",
+		"in-tempore-paschali":"Hic vir, qui despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-i","alia"],
@@ -433,4 +463,3 @@
 		"datum":"Fácite vobis sácculos qui non veteráscunt: eleemósynas vidélicet operándo, quarum perces in ætérnum máneat. Ubi non hoc præcéptum esse putándum est, ut nil pecúniæ reservétur a sanctis, vel suis scílicet, vel paúperum úsibus suggeréndæ: cum et ipse Dóminus, cui ministrábant Ángeli, tamen ad informándam Ecclésiam suam lóculos habuísse legátur, et a fidélibus obláta consérvans, et suórum necessitátibus aliísque indigéntibus tríbuens; sed ne Deo propter ista serviátur, et ob inópiæ timórem justítia deserátur."
 	}
 ]
-
