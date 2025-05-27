@@ -1,0 +1,157 @@
+[
+	{
+		"tags":["inventio-crucis","nomen"],
+		"datum":"In Inventione Sanctæ Crucis"
+	},
+	{
+		"tags":["inventio-crucis","vesperae","psalmus"],
+		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
+	},
+	{
+		"tags":["inventio-crucis","antiphona","antiphona-i"],
+		"src":"gregobase/2164",
+		"in-tempore-paschali":"O magnum pietátis opus: * mors mórtua tunc est, in ligno quando mórtua vita fuit, allelúja.",
+		"datum":"O magnum pietátis opus: * mors mórtua tunc est, in ligno quando mórtua vita fuit."
+	},
+	{
+		"tags":["inventio-crucis","antiphona","antiphona-ii"],
+		"src":"gregobase/2529",
+		"in-tempore-paschali":"Salva nos * Christe Salvátor per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis, allelúja.",
+		"datum":"Salva nos * Christe Salvátor per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis."
+	},
+	{
+		"tags":["inventio-crucis","antiphona","antiphona-iii"],
+		"src":"gregobase/2623",
+		"datum":"Ecce Crucem Dómini, * fúgite partes advérsæ, vicit leo de tribu Juda, radix David, allelúja."
+	},
+	{
+		"tags":["inventio-crucis","antiphona","antiphona-iv"],
+		"src":"gregobase/2945",
+		"in-tempore-paschali":"Nos autem gloriári * opórtet in Cruce Dómini nostri Jesu Christi, allelúja.",
+		"datum":"Nos autem gloriári * opórtet in Cruce Dómini nostri Jesu Christi."
+	},
+	{
+		"tags":["inventio-crucis","antiphona","antiphona-v"],
+		"src":"gregobase/2868",
+		"in-tempore-paschali":"Per signum Crucis * de inimícis nostris líbera nos Deus noster, allelúja.",
+		"datum":"Per signum Crucis * de inimícis nostris líbera nos Deus noster."
+	},
+	{
+		"tags":["inventio-crucis","capitulum"],
+		"datum":"Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: + sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, * et hábitu invéntus ut homo."
+	},
+	{
+		"tags":["inventio-crucis","vesperae","hymnus"],
+		"src":"gregobase/12999",
+		"in-tempore-paschali":[
+			"Vexílla regis pródeunt:/Fulget Crucis mystérium,/Qua vita mortem pértulit,/Et morte vitam prótulit.",
+			"Quæ vulneráta lánceæ/Mucróne diro, críminum/Ut nos laváret sórdibus,/Manávit unda, et sánguine.",
+			"Impléta sunt quæ cóncinit/David fidéli cármine,/Dicéndo natiónibus:/Regnávit a ligno Deus.",
+			"Arbor decóra et fúlgida,/Ornáta regis púrpura,/Elécta digno stípite/Tam sancta membra tángere.",
+			"Beáta, cujus bráchiis/Prétium pepéndit sǽculi,/Statéra facta córporis,/Tulítque prædam tártari.",
+			"O Crux ave spes única,/Paschále quæ fers gaúdium/Piis adaúge grátiam,/Reísque dele crímina.",
+			"Te, fons salútis Trínitas,/Collaúdet omnis spíritus:/Quibus Crucis victóriam/Largíris, adde prǽmium.","Amen."
+		],
+		"datum":[
+			"Vexílla regis pródeunt:/Fulget Crucis mystérium,/Qua vita mortem pértulit,/Et morte vitam prótulit.",
+			"Quæ vulneráta lánceæ/Mucróne diro, críminum/Ut nos laváret sórdibus,/Manávit unda, et sánguine.",
+			"Impléta sunt quæ cóncinit/David fidéli cármine,/Dicéndo natiónibus:/Regnávit a ligno Deus.",
+			"Arbor decóra et fúlgida,/Ornáta regis púrpura,/Elécta digno stípite/Tam sancta membra tángere.",
+			"Beáta, cujus bráchiis/Prétium pepéndit sǽculi,/Statéra facta córporis,/Tulítque prædam tártari.",
+			"O Crux ave spes única,/In hac triúmphi glória/Piis adaúge grátiam,/Reísque dele crímina.",
+			"Te, fons salútis Trínitas,/Collaúdet omnis spíritus:/Quibus Crucis victóriam/Largíris, adde prǽmium.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["inventio-crucis","vesperae","versiculus"],
+			["inventio-crucis","nona","versiculus"]
+		],
+		"in-tempore-paschali":["V. Hoc signum Crucis erit in cœlo, allelúja.","R. Cum Dóminus ad judicándum vénerit, allelúja."],
+		"datum":["V. Hoc signum Crucis erit in cœlo.","R. Cum Dóminus ad judicándum vénerit."]
+	},
+	{
+		"tags":["inventio-crucis","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1907",
+		"in-tempore-paschali":"O Crux, * splendídior cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis: quæ sola fuísti digna portáre taléntum mundi: dulce lignum, dulces clavos, dúlcia ferens póndera: salva præséntem catérvam in tuis hódie laúdibus congregátam, allelúja, allelúja.",
+		"datum":"O Crux, * splendídior cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis: quæ sola fuísti digna portáre taléntum mundi: dulce lignum, dulces clavos, dúlcia ferens póndera: salva præséntem catérvam in tuis hódie laúdibus congregátam."
+	},
+	{
+		"tags":["inventio-crucis","collecta"],
+		"datum":"Deus, qui in præclára salutíferæ Crucis inventióne, passiónis tuæ mirácula suscitásti: + concéde; ut vitális ligni prétio, * ætérnæ vitæ suffrágia consequámur.",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["inventio-crucis","laudes","hymnus"],
+		"datum":[["laudes","in-tempore-passionis","temporale","hymnus"]]
+	},
+	{
+		"tags":[
+			["inventio-crucis","laudes","versiculus"],
+			["inventio-crucis","tertia","versiculus"]
+		],
+		"in-tempore-paschali":["V. Adorámus te Christe, et benedícimus tibi, allelúja.", "R. Quia per Crucem tuam redemísti mundum, allelúja."],
+		"datum":["V. Adorámus te Christe, et benedícimus tibi.", "R. Quia per Crucem tuam redemísti mundum."]
+	},
+	{
+		"tags":["inventio-crucis","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13034",
+		"in-tempore-paschali":"Super ómnia * ligna cedrórum tu sola excélsior, in qua vita mundi pepéndit, in qua Christus triumphávit, et mors mortem superávit in ætérnum, allelúja.",
+		"datum":"Super ómnia * ligna cedrórum tu sola excélsior, in qua vita mundi pepéndit, in qua Christus triumphávit, et mors mortem superávit in ætérnum."
+	},
+	{
+		"tags":["inventio-crucis","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Hoc signum Crucic erit in cœlo",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Cum Dóminus ad judicándum vénerit."
+	},
+	{
+		"tags":["inventio-crucis","tertia","responsorium-breve"],
+		"incipit":"Hoc signum Crucis",
+		"responsum":"Erit in cœlo.",
+		"versus":"Cum Dóminus ad judicándum vénerit."
+	},
+	{
+		"tags":["inventio-crucis","sexta","capitulum"],
+		"datum":"Mihi autem absit gloriári, + nisi in Cruce Dómini nostri Jesu Christi: * per quem mihi mundus crucifíxus est, et ego mundo."
+	},
+	{
+		"tags":["inventio-crucis","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Adorámus te Christe, et benedícimus tibi",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Quia per Crucem tuam redemísti mundum."
+	},
+	{
+		"tags":["inventio-crucis","sexta","responsorium-breve"],
+		"incipit":"Adorámus te Christe",
+		"responsum":"Et benedícimus tibi.",
+		"versus":"Quia per Crucem tuam redemísti mundum."
+	},
+	{
+		"tags":["inventio-crucis","sexta","versiculus"],
+		"in-tempore-paschali":["V. Omnis terra adóret te, et psallat tibi, allelúja.","R. Psalmum dicat nómini tuo Dómine, allelúja."],
+		"datum":["V. Omnis terra adóret te, et psallat tibi.","R. Psalmum dicat nómini tuo Dómine."]
+	},
+	{
+		"tags":["inventio-crucis","nona","capitulum"],
+		"datum":"Humiliávit semetípsum factus obédiens usque ad mortem, mortem autem Crucis. + Propter quod et Deus exaltávit illum, * et donávit illi nomen, quod est super omne nomen."
+	},
+	{
+		"tags":["inventio-crucis","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Omnis terra adóret te, et psallat tibi",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Psalmum dicat nómini tuo Dómine."
+	},
+	{
+		"tags":["inventio-crucis","nona","responsorium-breve"],
+		"incipit":"Omnis terra adóret te",
+		"responsum":"Et psallat tibi.",
+		"versus":"Psalmum dicat nómini tuo Dómine."
+	},
+	{
+		"tags":["inventio-crucis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2884",
+		"in-tempore-paschali":"Crucem sanctam súbiit, * qui inférnum confrégit: accínctus est poténtia, surréxit die tértia, allelúja.",
+		"datum":"Crucem sanctam súbiit, * qui inférnum confrégit: accínctus est poténtia, surréxit die tértia."
+	}
+]
