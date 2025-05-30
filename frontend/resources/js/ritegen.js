@@ -277,8 +277,12 @@ async function chomp(id, tags) {
 				gabc = gabc.substring(0, gabc.search(/<eu>/));
 			}
 
-			if (!tags.includes('in-tempore-paschali') && gabc.includes('<i>T. P.</i>')) {
-				gabc = gabc.substring(0, gabc.indexOf('<i>T. P.</i>')).trim();
+			if (gabc.includes('<i>T. P.</i>')) {
+				if (tags.includes('in-tempore-paschali')) {
+					gabc = gabc.replace('<i>T. P.</i>', '');
+				} else {
+					gabc = gabc.substring(0, gabc.indexOf('<i>T. P.</i>')).trim();
+				}
 			}
 			if (!tags.includes('in-tempore-septuagesimae') && gabc.includes('<i>Post Septuag.</i>')) {
 				gabc = gabc.substring(0, gabc.indexOf('<i>Post Septuag.</i>')).trim();
