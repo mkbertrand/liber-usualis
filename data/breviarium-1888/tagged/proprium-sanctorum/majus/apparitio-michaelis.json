@@ -1,0 +1,170 @@
+[
+	{
+		"tags":["apparitio-michaelis","nomen"],
+		"datum":"In Apparitione S. Michaëlis Archangeli"
+	},
+	{
+		"tags":["apparitio-michaelis","antiphona","antiphona-i"],
+		"src":"gregobase/2648",
+		"in-tempore-paschali":"Stetit Ángelus * juxta aram templi, habens thuríbulum aúreum in manu sua, allelúja.",
+		"datum":"Stetit Ángelus * juxta aram templi, habens thuríbulum aúreum in manu sua."
+	},
+	{
+		"tags":["apparitio-michaelis","vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["apparitio-michaelis","antiphona","antiphona-ii"],
+		"src":"gregobase/1868",
+		"datum":"Dum præliarétur * Míchaël Archángelus cum dracóne, audíta est vox dicéntium: Salus Deo nostro, allelúja."
+	},
+	{
+		"tags":["apparitio-michaelis","antiphona","antiphona-iii"],
+		"src":"gregobase/2245",
+		"in-tempore-paschali":"Archángele Míchaël, * constítui te príncipem super omnes ánimas suscípiendas, allelúja.",
+		"datum":"Archángele Míchaël, * constítui te príncipem super omnes ánimas suscípiendas."
+	},
+	{
+		"tags":["apparitio-michaelis","antiphona","antiphona-iv"],
+		"src":"gregobase/2074",
+		"in-tempore-paschali":"Ángeli Dómini * Dóminum benedícite in ætérnum, allelúja.",
+		"datum":"Ángeli Dómini * Dóminum benedícite in ætérnum."
+	},
+	{
+		"tags":["apparitio-michaelis","antiphona","antiphona-v"],
+		"src":"gregobase/2791",
+		"datum":"Ángeli, Archángeli, * Throni, et Dominatiónes, Principátus, et Potestátes, Virtútes cœlórum, laudáte Dóminum de cœlis, allelúja."
+	},
+	{
+		"tags":["apparitio-michaelis","capitulum"],
+		"datum":"Significávit Deus quæ opórtet fíeri cito, + loquens per Ángelum suum servo suo Joánni, qui testimónium perhíbuit verbo Dei, * et testimónium Jesu Christi, quæcúmque vidit."
+	},
+	{
+		"tags":["apparitio-michaelis","vesperae","hymnus","in-tempore-paschali"],
+		"src":"gregobase/19938",
+		"datum":[
+			"Te, splendor et virtus Patris,/Te vita, Jesu, córdium,/Ab ore qui pendent tuo,/Laudámus inter Ángelos.",
+			"Tibi mille densa míllium/Ducum coróna mílitat:/Sed éxplicat victor crucem/Míchaël salútis sígnifer.",
+			"Dracónis hic dirum caput/In ima pellit tártara,/Ducémque cum rebéllibus/Cœlésti ab arce fúlminat.",
+			"Contra ducem supérbiæ/Sequámur hunc nos príncipem,/Ut detur ex Agni throno/Nobis coróna glóriæ.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["apparitio-michaelis","vesperae","hymnus"],
+		"src":"gregobase/19939",
+		"datum":[
+			"Te, splendor et virtus Patris,/Te vita, Jesu, córdium,/Ab ore qui pendent tuo,/Laudámus inter Ángelos.",
+			"Tibi mille densa míllium/Ducum coróna mílitat:/Sed éxplicat victor crucem/Míchaël salútis sígnifer.",
+			"Dracónis hic dirum caput/In ima pellit tártara,/Ducémque cum rebéllibus/Cœlésti ab arce fúlminat.",
+			"Contra ducem supérbiæ/Sequámur hunc nos príncipem,/Ut detur ex Agni throno/Nobis coróna glóriæ.",
+			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["apparitio-michaelis","i-vesperae","versiculus"],
+			["apparitio-michaelis","laudes","versiculus"]
+		],
+		"in-tempore-paschali":["V. Stetit Ángelus juxta aram templi, allelúja.","R. Habens thuríbulum aúreum in manu sua, allelúja."],
+		"datum":["V. Stetit Ángelus juxta aram templi.","R. Habens thuríbulum aúreum in manu sua."]
+	},
+	{
+		"tags":["apparitio-michaelis","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2640",
+		"datum":"Dum sacrum mystérium * cérneret Joánnes, Archángelus Míchaël tuba cécinit: Ignósce Dómine Deus noster, qui áperis librum, et solvis signácula ejus, allelúja."
+	},
+	{
+		"tags":["apparitio-michaelis","collecta"],
+		"datum":"Deus, qui miro órdine Angelórum ministéria hominúmque dispénsas: + concéde propítius; ut a quibus tibi ministrántibus in cœlo semper assístitur, * ab his in terra vita nostra muniátur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["apparitio-michaelis","laudes","hymnus"],
+		"src":"gregobase/12915",
+		"datum":[
+			"Christe, sanctórum decus Angelórum,/Gentis humánæ Sator et Redémptor,/Cœlitum nobis tríbuas beátas/Scándere sedes.",
+			"Ángelus pacis Míchaël in ædes/Cœlitus nostras véniat, serénæ/Auctor ut pacis lacrimósa in orcum/Bella reléget.",
+			"Ángelus fortis Gábriel, ut hostes/Pellat antíquos, et amíca cœlo,/Quæ triumphátur státuit per orbem,/Templa revísat.",
+			"Ángelus nostræ médicus salútis,/Adsit e cœlo Ráphaël, ut omnes/Sanet ægrótos, dubiósque vitæ/Dírigat actus.",
+			"Virgo dux pacis, Genetríxque lucis,/Et sacer nobis chorus Angelórum/Semper assístat, simul et micántis/Régia cœli.",
+			"Præstet hoc nobis Déitas beáta/Patris, ac Nati, paritérque sancti/Spíritus, cujus résonat per omnem/Glória mundum.","Amen."
+		]
+	},
+	{
+		"tags":["apparitio-michaelis","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/11856",
+		"datum":"Factum est * siléntium in cœlo, dum draco commítteret bellum: et Míchaël pugnávit cum eo, et fecit victóriam, allelúja."
+	},
+	{
+		"tags":["apparitio-michaelis","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Stetit Ángelus juxta aram templi",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Habens thuríbulum aúreum in manu sua."
+	},
+	{
+		"tags":["apparitio-michaelis","tertia","responsorium-breve"],
+		"incipit":"Stetit Ángelus",
+		"responsum":"Juxta aram templi.",
+		"versus":"Habens thuríbulum aúreum in manu sua."
+	},
+	{
+		"tags":["apparitio-michaelis","tertia","versiculus"],
+		"in-tempore-paschali":["V. Ascéndit fumus arómatum in conspéctu Dómini, allelúja.","R. De manu Ángeli, allelúja."],
+		"datum":["V. Ascéndit fumus arómatum in conspéctu Dómini.","R. De manu Ángeli."]
+	},
+	{
+		"tags":["apparitio-michaelis","sexta","capitulum"],
+		"datum":"Audívi vocem Angelórum multórum in circúitu throni, et animálium, et seniórum: + et erat númerus eórum míllia míllium, * voce magna dicéntium: Salus Deo nostro."
+	},
+	{
+		"tags":["apparitio-michaelis","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Ascéndit fumus arómatum in conspéctu Dómini",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"De manu Ángeli."
+	},
+	{
+		"tags":["apparitio-michaelis","sexta","responsorium-breve"],
+		"incipit":"Ascéndit fumus arómatum",
+		"responsum":"In conspéctu Dómini.",
+		"versus":"De manu Ángeli."
+	},
+	{
+		"tags":[
+			["apparitio-michaelis","sexta","versiculus"],
+			["apparitio-michaelis","ii-vesperae","versiculus"]
+		],
+		"in-tempore-paschali":["V. In conspéctu Angelórum psallam tibi Deus meus, allelúja.","R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo, allelúja."],
+		"datum":["V. In conspéctu Angelórum psallam tibi Deus meus.","R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo."]
+	},
+	{
+		"tags":["apparitio-michaelis","nona","capitulum"],
+		"datum":"Factum est prǽlium magnum in cœlo: + Míchaël, et Ángeli ejus præliabántur cum dracóne, et draco pugnábat, et ángeli ejus: * et non prævaluérunt, neque locus invéntus est eórum ámplius in cœlo."
+	},
+	{
+		"tags":["apparitio-michaelis","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"In conspéctu Angelórum psallam tibi Deus meus.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Adorábo ad templum sanctum tuum, et confitébor nómini tuo."
+	},
+	{
+		"tags":["apparitio-michaelis","nona","responsorium-breve"],
+		"incipit":"In conspéctu Angelórum",
+		"responsum":"Psallam tibi Deus meus.",
+		"versus":"Adorábo ad templum sanctum tuum, et confitébor nómini tuo."
+	},
+	{
+		"tags":["apparitio-michaelis","nona","versiculus"],
+		"in-tempore-paschali":["V. Adoráte Deum, allelúja.","R. Omnes Ángeli ejus, allelúja."],
+		"datum":["V. Adoráte Deum.","R. Omnes Ángeli ejus."]
+	},
+	{
+		"tags":["apparitio-michaelis","ii-vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxxxvii,gloria"]]
+	},
+	{
+		"tags":["apparitio-michaelis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2625",
+		"datum":"Princeps gloriosíssime, * Míchaël Archángele, esto memor nostri: hic, et ubíque semper precáre pro nobis Fílium Dei, allelúja, allelúja."
+	}
+]

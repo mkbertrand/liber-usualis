@@ -1,0 +1,38 @@
+[
+	{
+		"tags":["venantius","nomen"],
+		"datum":"S. Venantii Martyris"
+	},
+	{
+		"tags":["venantius","i-vesperae","hymnus"],
+		"src":"gregobase/2236",
+		"datum":[
+			"Martyr Dei Venántius,/Lux et decus Camértium,/Tortóre victo et júdice,/Lætus triúmphum cóncinit.",
+			"Annis puer, post víncula,/Post cárceres, post vérbera,/Longa fame freméntibus/Cibus datur leónibus.",
+			"Sed ejus innocéntiæ/Parcit leónum immánitas,/Pedésque lambunt Mártyris,/Iræ famísque immémores.",
+			"Verso deórsum vértice/Hauríre fumum cógitur:/Costas utrímque et víscera/Succénsa lampas ústulat.",
+			"Sit laus Patri, sit Fílio,/Tibíque sancte Spíritus:/Da per preces Venántii/Beáta nobis gaúdia.","Amen."
+		]
+	},
+	{
+		"tags":["venantius","i-vesperae","versiculus"],
+		"in-tempore-paschali":["V. Glória et honóre coronásti eum Dómine, allelúja.","R. Et constituísti eum super ópera mánuum tuárum, allelúja."],
+		"datum":["V. Glória et honóre coronásti eum Dómine.","R. Et constituísti eum super ópera mánuum tuárum."]
+	},
+	{
+		"tags":["venantius","collecta"],
+		"datum":"Deus, qui hunc diem beáti Venántii Mártyris tui triúmpho consecrásti: + exaúdi preces pópuli tui, et præsta; ut qui ejus mérita venerámur, * fídei constántiam imitémur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["venantius","laudes","hymnus"],
+		"src":"gregobase/12065",
+		"datum":[
+			"Dum nocte pulsa lúcifer/Diem propínquam núntiat,/Nobis refert Venántius/Lucis beátæ múnera.",
+			"Nam críminum calíginem,/Stygísque noctem dépulit,/Veróque cives lúmine/Divinitátis ímbuit.",
+			"Aquis sacri baptísmatis/Lustrávit ille pátriam:/Quos tinxit unda mílites,/In astra misit Mártyres.",
+			"Nunc Angelórum párticeps,/Adésto votis súpplicum:/Procul repélle crímina,/Tuúmque lumen íngere.",
+			"Sit laus Patri, sit Fílio,/Tibíque sancte Spíritus:/Da per preces Venántii/Beáti nobis gaúdia.","Amen."
+		]
+	}
+]
