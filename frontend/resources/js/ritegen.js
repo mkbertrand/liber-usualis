@@ -24,7 +24,7 @@ function unpack(data) {
 	if (typeof data === 'string') {
 		return data;
 	} else if (typeof data === 'object') {
-		return unpack(data['datum']);
+		return Array.isArray(data) ? data : unpack(data['datum']);
 	}
 };
 
@@ -138,15 +138,16 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 				return `<h4 class="item-header">${header}</h4>` + renderinner(data['datum'], translated, translationpool, data['tags'].concat(parenttags), options, names);
 			} else if (data['tags'].includes('lectio')) {
+				const reading = unpack(data);
 				// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
-				if (Array.isArray(data['datum']) && data['datum'].length == 4) {
-					return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][2])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][3])}</p>`	
+				if (Array.isArray(reading) && reading.length == 4) {
+					return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(reading[0])}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading[3])}</p>`
 				} else if (!data['tags'].includes('lectio-i')) {
-					return `<p class="rite-text lectio-sequens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`	
-				} else if (Array.isArray(data['datum']) && data['datum'].length == 2) {
-					return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(data['datum'][0])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'][1])}</p>`	
+					return `<p class="rite-text lectio-sequens ${data['tags'].join(' ')}">${stringrender(reading)}</p>`
+				} else if (Array.isArray(reading) && reading.length == 2) {
+					return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading[1])}</p>`
 				} else {
-					return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(data['datum'])}</p>`
+					return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading)}</p>`
 				}
 			} else if (data['tags'].includes('hymnus') && data['tags'].includes('te-deum') && !options['chant']) {
 				return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data['datum'].join('/'))}</p>`;
