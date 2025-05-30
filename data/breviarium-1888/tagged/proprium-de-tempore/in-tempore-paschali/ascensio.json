@@ -13,7 +13,7 @@
 		"datum":"Viri Galilǽi, * quid aspícitis in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, sic véniet, allelúja."
 	},
 	{
-		"tags":["ascensio","i-vesperae","psalmus"],
+		"tags":["ascensio","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
@@ -55,7 +55,11 @@
 		]
 	},
 	{
-		"tags":["ascensio","i-vesperae","versiculus"],
+		"tags":[
+			["ascensio","i-vesperae","versiculus"],
+			["ascensio","dies-iii","ii-vesperae","commemoratio","versiculus"],
+			["ascensio","dies-iv","commemoratio","versiculus"]
+		],
 		"datum":["V. Ascéndit Deus in jubilatióne, allelúja.","R. Et Dóminus in voce tubæ, allelúja."]
 	},
 	{
@@ -72,7 +76,8 @@
 		"tags":[
 			["ascensio","laudes","versiculus"],
 			["ascensio","nona","versiculus"],
-			["ascensio","ii-vesperae","versiculus"]
+			["ascensio","ii-vesperae","versiculus"],
+			["ascensio","dominica-infra-octavam","i-vesperae","versiculus"]
 		],
 		"datum":["V. Dóminus in cœlo, allelúja.","R. Parávit sedem suam, allelúja."]
 	},
@@ -119,5 +124,55 @@
 		"tags":["ascensio","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1916",
 		"datum":"O Rex glóriæ, * Dómine virtútum, qui triumphátor hódie super omnes cœlos ascendísti, ne derelínquas nos órphanos: sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja."
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","capitulum"],
+			["ascensio","post-ascensionem","capitulum"]
+		],
+		"datum":"Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. + Ante ómnia autem, mútuam in vosmetípsis caritátem contínuam habéntes: * quia cáritas óperit multitúdinem peccatórum."
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+			["ascensio","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
+			["ascensio","post-ascensionem","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/1850",
+		"datum":"Cum vénerit Paráclitus, * quem ego mittam vobis Spíritum veritátis, qui a Patre procédit, ille testimónium perhibébit de me, allelúja."
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","collecta"],
+			["ascensio","post-ascensionem","collecta"]
+		],
+		"datum":"Omnípotens sempitérne Deus, + fac nos tibi semper et devótam gérere voluntátem, * et majestáti tuæ sincéro corde servíre.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","sexta","capitulum"],
+			["ascensio","post-ascensionem","sexta","capitulum"]
+		],
+		"datum":"Hospitáles ínvicem sine murmuratióne: + unusquísque, sicut accépit grátiam, in altérutrum illam administrántes, * sicut boni dispensatóres multifórmis grátiæ Dei."
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","nona","capitulum"],
+			["ascensio","post-ascensionem","nona","capitulum"]
+		],
+		"datum":"Si quis lóquitur, quasi sermónes Dei: + si quis minístrat, tamquam ex virtúte, quam adminístrat Deus: * ut in ómnibus honorificétur Deus per Jesum Christum Dóminum nostrum."
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
+			["ascensio","post-ascensionem","ii-vesperae","antiphona","antiphona-magnificat"]
+		],
+		"src":"gregobase/1981",
+		"datum":"Hæc locútus sum * vobis, ut cum vénerit hora eórum, reminiscámini quia ego dixi vobis, allelúja."
+	},
+	{
+		"tags":["ascensio","post-ascensionem","feria-vi","nomen"],
+		"datum":"Feria VI post Octavam Ascensionis"
 	}
 ]

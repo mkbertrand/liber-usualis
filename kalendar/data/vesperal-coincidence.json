@@ -65,6 +65,11 @@
 		"response":"dele"
 	},
 	{
+		"include":["post-ascensionem","i-vesperae"],
+		"recheck":false,
+		"response":"dele"
+	},
+	{
 		"include":["dominica","hebdomada-iv-adventus","commemoratio"],
 		"remove":"commemoratio",
 		"adde":"primarium"

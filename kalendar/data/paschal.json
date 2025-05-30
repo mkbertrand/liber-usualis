@@ -512,7 +512,7 @@
 	{
 		"basis":"pascha",
 		"offset":39,
-		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","duplex-i-classis","habens-octavam","incipit-libri"]
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","duplex-i-classis","habens-octavam","incipit-libri","octava-excepta"]
 	},
 	{
 		"basis":"pascha",
@@ -521,8 +521,28 @@
 	},
 	{
 		"basis":"pascha",
+		"offset":41,
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-iii","infra-octavam"]
+	},
+	{
+		"basis":"pascha",
 		"offset":42,
-		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-iv","infra-octavam","dominica-infra-octavam","incipit-libri"]
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dominica-infra-octavam","incipit-libri"]
+	},
+	{
+		"basis":"pascha",
+		"offset":42,
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","commemoratio","dies-iv","infra-octavam"]
+	},
+	{
+		"basis":"pascha",
+		"offset":43,
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-v","infra-octavam"]
+	},
+	{
+		"basis":"pascha",
+		"offset":44,
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-vi","infra-octavam"]
 	},
 	{
 		"basis":"pascha",
@@ -531,13 +551,18 @@
 	},
 	{
 		"basis":"pascha",
+		"offset":46,
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","duplex-minus","dies-octava"]
+	},
+	{
+		"basis":"pascha",
 		"offset":47,
-		"tags":["post-ascensionem","in-tempore-paschali","in-tempore-ascensionis","feria-vi","semiduplex","incipit-libri"]
+		"tags":["ascensio","post-ascensionem","in-tempore-paschali","in-tempore-ascensionis","feria-vi","semiduplex","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":48,
-		"tags":["vigilia-pentecostes","in-tempore-paschali","in-tempore-ascensionis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
+		"tags":["ascensio","vigilia-pentecostes","in-tempore-paschali","in-tempore-ascensionis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
 	},
 	{
 		"basis":"pascha",

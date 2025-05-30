@@ -98,7 +98,7 @@ def rite():
 	noncomm = filter(lambda a : not a in commemorations, tags)
 	tags = commemorations
 	tags.extend(noncomm)
-	pile = datamanage.getpile(root, flattensetlist(tags))
+	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
 	names = []
 	for i in tags:
 		if not {'tempus','antiphona-bmv','psalmi'}.isdisjoint(i):
