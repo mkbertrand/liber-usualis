@@ -1,0 +1,123 @@
+[
+	{
+		"tags":["ascensio","duplex-i-classis","nomen"],
+		"datum":"In Ascensione Domini"
+	},
+	{
+		"tags":["ascensio","basis-nominis"],
+		"datum":"Ascensionis Domini"
+	},
+	{
+		"tags":["ascensio","antiphona","antiphona-i"],
+		"src":"gregobase/1888",
+		"datum":"Viri Galilǽi, * quid aspícitis in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, sic véniet, allelúja."
+	},
+	{
+		"tags":["ascensio","i-vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["ascensio","antiphona","antiphona-ii"],
+		"src":"gregobase/2651",
+		"datum":"Cumque intueréntur * in cœlum eúntem illum, dixérunt, allelúja."
+	},
+	{
+		"tags":["ascensio","antiphona","antiphona-iii"],
+		"src":"gregobase/1971",
+		"datum":"Elevátis mánibus * benedíxit eis, et ferebátur in cœlum, allelúja."
+	},
+	{
+		"tags":["ascensio","antiphona","antiphona-iv"],
+		"src":"gregobase/2072",
+		"datum":"Exaltáte Regem regum, * et hymnum dícite Deo, allelúja."
+	},
+	{
+		"tags":["ascensio","antiphona","antiphona-v"],
+		"src":"gregobase/2362",
+		"datum":"Vidéntibus illis * elevátus est, et nubes suscépit eum in cœlo, allelúja."
+	},
+	{
+		"tags":["ascensio","capitulum"],
+		"datum":"Primum quidem sermónem feci de ómnibus, o Theóphile, + quæ cœpit Jesus fácere, et docére usque in diem, qua præcípiens Apóstolis per Spíritum sanctum, quos elégit, * assúmptus est."
+	},
+	{
+		"tags":[
+			["ascensio","vesperae","hymnus"],
+			["ascensio","laudes","hymnus"]
+		],
+		"src":"gregobase/2828",
+		"datum":[
+			"Salútis humánæ Sator,/Jesu volúptas córdium,/Orbis redémpti Cónditor,/Et casta lux amántium.",
+			"Qua victus es cleméntia,/Ut nostra ferres crímina?/Mortem subíres ínnocens,/A morte nos ut tólleres?",
+			"Perrúmpis inférnum chaos;/Vinctis caténas détrahis;/Victor triúmpho nóbili/Ad déxteram Patris sedes.",
+			"Te cogat indulgéntia,/Ut damna nostra sárcias,/Tuíque vultus cómpotes/Dites beáto lúmine.",
+			"Tu dux ad astra, et sémita,/Sis meta nostris córdibus,/Sis lacrimárum gaúdium,/Sis dulce vitæ prǽmium.","Amen."
+		]
+	},
+	{
+		"tags":["ascensio","i-vesperae","versiculus"],
+		"datum":["V. Ascéndit Deus in jubilatióne, allelúja.","R. Et Dóminus in voce tubæ, allelúja."]
+	},
+	{
+		"tags":["ascensio","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2941",
+		"datum":"Pater, * manifestávi nomen tuum homínibus quos dedísti mihi: nunc autem pro eis rogo, non pro mundo, quia ad te vénio, allelúja."
+	},
+	{
+		"tags":["ascensio","collecta"],
+		"datum":"Concéde, quǽsumus omnípotens Deus: + ut qui hodiérna die Unigénitum tuum Redemptórem nostrum ad cœlos ascendísse crédimus, * ipsi quoque mente in cœléstibus habitémus.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":[
+			["ascensio","laudes","versiculus"],
+			["ascensio","nona","versiculus"],
+			["ascensio","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Dóminus in cœlo, allelúja.","R. Parávit sedem suam, allelúja."]
+	},
+	{
+		"tags":["ascensio","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13029",
+		"datum":"Ascéndo ad Patrem meum, * et Patrem vestrum: Deum meum, et Deum vestrum, allelúja."
+	},
+	{
+		"tags":["ascensio","tertia","responsorium-breve"],
+		"incipit":"Ascéndit Deus in jubilatióne",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et Dóminus in voce tubæ."
+	},
+	{
+		"tags":["ascensio","tertia","versiculus"],
+		"datum":["V. Ascéndens Christus in altum, allelúja.","R. Captívam duxit captivitátem, allelúja."]
+	},
+	{
+		"tags":["ascensio","sexta","capitulum"],
+		"datum":"Et convéscens, præcépit eis ab Jerosólymis ne discéderent, + sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: * quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu sancto non post multos hos dies."
+	},
+	{
+		"tags":["ascensio","sexta","responsorium-breve"],
+		"incipit":"Ascéndens Christus in altum",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Captívam duxit captivitátem."
+	},
+	{
+		"tags":["ascensio","sexta","versiculus"],
+		"datum":["V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.","R. Deum meum et Deum vestrum, allelúja."]
+	},
+	{
+		"tags":["ascensio","nona","capitulum"],
+		"datum":"Viri Galilǽi, quid statis aspiciéntes in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, * sic véniet, quemádmodum vidístis eum eúntem in cœlum."
+	},
+	{
+		"tags":["ascensio","nona","responsorium-breve"],
+		"incipit":"Ascéndo ad Patrem meum, et Patrem vestrum",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Deum meum, et Deum vestrum."
+	},
+	{
+		"tags":["ascensio","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1916",
+		"datum":"O Rex glóriæ, * Dómine virtútum, qui triumphátor hódie super omnes cœlos ascendísti, ne derelínquas nos órphanos: sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja."
+	}
+]

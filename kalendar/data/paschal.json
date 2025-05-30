@@ -512,32 +512,32 @@
 	{
 		"basis":"pascha",
 		"offset":39,
-		"tags":["ascensio","in-tempore-paschali","duplex-i-classis","habens-octavam","incipit-libri"]
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","duplex-i-classis","habens-octavam","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":40,
-		"tags":["ascensio","in-tempore-paschali","semiduplex","dies-ii","infra-octavam","incipit-libri"]
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-ii","infra-octavam","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":42,
-		"tags":["ascensio","in-tempore-paschali","semiduplex","dies-iv","infra-octavam","dominica-infra-octavam","incipit-libri"]
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-iv","infra-octavam","dominica-infra-octavam","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":45,
-		"tags":["ascensio","in-tempore-paschali","semiduplex","dies-vii","infra-octavam","incipit-libri"]
+		"tags":["ascensio","in-tempore-paschali","in-tempore-ascensionis","semiduplex","dies-vii","infra-octavam","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":47,
-		"tags":["post-ascensionem","in-tempore-paschali","feria-vi","semiduplex","incipit-libri"]
+		"tags":["post-ascensionem","in-tempore-paschali","in-tempore-ascensionis","feria-vi","semiduplex","incipit-libri"]
 	},
 	{
 		"basis":"pascha",
 		"offset":48,
-		"tags":["vigilia-pentecostes","in-tempore-paschali","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
+		"tags":["vigilia-pentecostes","in-tempore-paschali","in-tempore-ascensionis","semiduplex","sabbatum","post-ascensionem","incipit-libri"]
 	},
 	{
 		"basis":"pascha",

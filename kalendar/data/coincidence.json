@@ -768,6 +768,13 @@
 		]
 	},
 	{
+		"include":["in-tempore-ascensionis"],
+		"recheck":false,
+		"response":[
+			{"include":[],"exclude":["tempus"],"target":1,"response":"in-tempore-ascensionis"}
+		]
+	},
+	{
 		"include":["bmv-sabbatum"],
 		"recheck":false,
 		"response":[
