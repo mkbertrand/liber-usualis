@@ -2,7 +2,8 @@
 	{
 		"tags":["virgo","antiphona","antiphona-i"],
 		"src":"gregobase/2281",
-		"datum":"Hæc est Virgo sápiens, * et una de número prudéntum."
+		"datum":"Hæc est Virgo sápiens, * et una de número prudéntum.",
+		"in-tempore-paschali":"Hæc est Virgo sápiens, * et una de número prudéntum, allelúja."
 	},
 	{
 		"tags":["virgo","vesperae","psalmus-i"],
@@ -11,7 +12,8 @@
 	{
 		"tags":["virgo","antiphona","antiphona-ii"],
 		"src":"gregobase/2798",
-		"datum":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit."
+		"datum":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit.",
+		"in-tempore-paschali":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit, allelúja."
 	},
 	{
 		"tags":["virgo","vesperae","psalmus-ii"],
@@ -20,7 +22,8 @@
 	{
 		"tags":["virgo","antiphona","antiphona-iii"],
 		"src":"gregobase/2836",
-		"datum":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum."
+		"datum":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum.",
+		"in-tempore-paschali":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum, allelúja."
 	},
 	{
 		"tags":["virgo","vesperae","psalmus-iii"],
@@ -38,7 +41,8 @@
 	{
 		"tags":["virgo","antiphona","antiphona-v"],
 		"src":"gregobase/2151",
-		"datum":"Ista est speciósa * inter fílias Jerúsalem."
+		"datum":"Ista est speciósa * inter fílias Jerúsalem.",
+		"in-tempore-paschali":"Ista est speciósa * inter fílias Jerúsalem, allelúja."
 	},
 	{
 		"tags":["virgo","vesperae","psalmus-v"],
@@ -46,7 +50,7 @@
 	},
 	{
 		"tags":["virgo","capitulum"],
-		"datum":"Fratres: Qui gloriátur, in Dómino gloriétur. Non enim qui seípsum comméndat, ille probátus est: sed quem Deus comméndat."
+		"datum":"Fratres: Qui gloriátur, in Dómino gloriétur. + Non enim qui seípsum comméndat, ille probátus est: * sed quem Deus comméndat."
 	},
 	{
 		"tags":[
@@ -63,20 +67,37 @@
 		]
 	},
 	{
+		"tags":[
+			["virgo","vesperae","hymnus","in-tempore-paschali"],
+			["virgo","laudes","hymnus","in-tempore-paschali"]
+		],
+		"src":"gregobase/2143",
+		"datum":[
+			"Jesu, coróna Vírginum,/Quem mater illa cóncipit,/Quæ sola Virgo pártuit:/Hæc vota clemens áccipe.",
+			"Qui pergis inter lília,/Septus choréis Vírginum,/Sponsus decórus glória,/Sponsísque reddens prǽmia.",
+			"Quocúmque tendis, Vírgines/Sequúntur, atque laúdibus/Post te canéntes cúrsitant,/Hymnósque dulces pérsonant.",
+			"Te deprecámur súpplices;/Nostris ut addas sénsibus,/Nescíre prorsus ómnia/Corruptiónis vúlnera.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
 		"tags":["virgo","i-vesperae","versiculus"],
-		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
+		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
 	{
 		"tags":[
 			["virgo","virgines","vesperae","versiculus"],
 			["virgo","virgines","laudes","versiculus"]
 		],
-		"datum":["V. Adducéntur Regi Vírgines post eam.","R. Próxime ejus afferéntur tibi."]
+		"datum":["V. Adducéntur Regi Vírgines post eam.","R. Próxime ejus afferéntur tibi."],
+		"in-tempore-paschali":["V. Adducéntur Regi Vírgines post eam, allelúja.","R. Próxime ejus afferéntur tibi, allelúja."]
 	},
 	{
 		"tags":["virgo","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2042",
-		"datum":"Veni sponsa Christi: * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
+		"datum":"Veni sponsa Christi: * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.",
+		"in-tempore-paschali":"Veni sponsa Christi: * áccipe corónam, quam tibi Dóminus præparávit in ætérnum, allelúja."
 	},
 	{
 		"tags":[
@@ -84,7 +105,8 @@
 			["virgo","virgines","laudes","antiphona","antiphona-benedictus"]
 		],
 		"src":"gregobase/2919",
-		"datum":"Prudéntes Vírgines * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei."
+		"datum":"Prudéntes Vírgines * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.",
+		"in-tempore-paschali":"Prudéntes Vírgines * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei, allelúja."
 	},
 	{
 		"tags":["virgo","martyr","collecta"],
@@ -93,17 +115,17 @@
 	},
 	{
 		"tags":["virgo","martyr","collecta","collecta-alia"],
-		"datum":"Indulgéntiam nobis, quǽsumus Dómine, beáta N. Virgo et Martyr implóret: quæ tibi grata semper éxstitit et mérito castitátis, et tuæ professióne virtútis.",
+		"datum":"Indulgéntiam nobis, quǽsumus Dómine, beáta N. Virgo et Martyr implóret: + quæ tibi grata semper éxstitit et mérito castitátis, * et tuæ professióne virtútis.",
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["virgo","martyr","virgines","martyes","collecta"],
-		"datum":"Da nobis, quǽsumus Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.",
+		"datum":"Da nobis, quǽsumus Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: * ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.",
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["virgo","collecta"],
-		"datum":"Exaúdi nos Deus salutáris noster: ut sicut de beátæ N. Vírginis tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu.",
+		"datum":"Exaúdi nos Deus salutáris noster: + ut sicut de beátæ N. Vírginis tuæ festivitáte gaudémus; * ita piæ devotiónis erudiámur afféctu.",
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
@@ -348,13 +370,19 @@
 		"datum":"In quinque autem córporis sénsibus unusquísque subsístit. Geminátus autem quinárius denárium pérficit. Et quia ex utróque sexu fidélium multitúdo collígitur, sancta Ecclésia decem virgínibus símilis esse denuntiátur. In qua quia mali cum bonis, et réprobi cum eléctis admíxti sunt, recte símilis virgínibus prudéntibus et fátuis esse perhibétur. Sunt namque pleríque continéntes, qui ab appetítu se exterióri custódiunt, et spe ad interióra rapiúntur, carnem mácerant, et toto desidério ad supérnam pátriam anhélant, ætérna prǽmia éxpetunt, pro labóribus suis recípere laudes humánas nolunt. Hi nimírum glóriam suam non in ore hóminum ponunt, sed intra consciéntiam cóntegunt. Et sunt pleríque, qui corpus per abstinéntiam afflígunt, sed de ipsa sua abstinéntia humános favóres éxpetunt."
 	},
 	{
-		"tags":["virgo","laudes","versiculus"],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+		"tags":[
+			["virgo","laudes","versiculus"],
+			["virgo","nona","versiculus"],
+			["virgo","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."],
+		"in-tempore-paschali":["V. Diffúsa est grátia in lábiis tuis, allelúja.","R. Proptérea benedíxit te Deus in ætérnum, allelúja."]
 	},
 	{
 		"tags":["virgo","martyr","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/18848",
-		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam."
+		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam.",
+		"in-tempore-paschali":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam, allelúja."
 	},
 	{
 		"tags":["virgo","tertia","responsorium-breve"],
@@ -364,12 +392,19 @@
 		"versus":"Inténde, próspere procéde, et regna."
 	},
 	{
+		"tags":["virgo","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Spécie tua et pulchritúdine tua",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Inténde, próspere procéde, et regna."
+	},
+	{
 		"tags":["virgo","tertia","versiculus"],
-		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
+		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
 	},
 	{
 		"tags":["virgo","sexta","capitulum"],
-		"datum":"Ǽmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhíbere Christo."
+		"datum":"Ǽmulor enim vos Dei æmulatióne. + Despóndi enim vos uni viro * vírginem castam exhíbere Christo."
 	},
 	{
 		"tags":["virgo","sexta","responsorium-breve"],
@@ -379,16 +414,23 @@
 		"versus":"Deus in médio ejus, non commovébitur."
 	},
 	{
+		"tags":["virgo","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Adjuvábit eam Deus vultu suo",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Deus in médio ejus, non commovébitur."
+	},
+	{
 		"tags":["virgo","sexta","versiculus"],
-		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
+		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
 	{
 		"tags":["virgo","martyr","nona","capitulum"],
-		"datum":"Dómine Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. Invocávi Dóminum Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório."
+		"datum":"Dómine Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. + Invocávi Dóminum Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, * et in témpore superbórum sine adjutório."
 	},
 	{
 		"tags":["virgo","nona","capitulum"],
-		"datum":"O quam pulchra est casta generátio cum claritáte! immortális est enim memória illíus: quóniam apud Deum nota est, et apud hómines."
+		"datum":"O quam pulchra est casta generátio cum claritáte! + immortális est enim memória illíus: * quóniam apud Deum nota est, et apud hómines."
 	},
 	{
 		"tags":["virgo","nona","responsorium-breve"],
@@ -398,12 +440,10 @@
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
-		"tags":["virgo","nona","versiculus"],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
-	},
-	{
-		"tags":["virgo","ii-vesperae","versiculus"],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."]
+		"tags":["virgo","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Elégit eam Deus, et præelégit eam",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
 		"tags":["virgo","martyr","matutinum","nocturna-i","lectio","lectio-i"],
