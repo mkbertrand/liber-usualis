@@ -1,5 +1,61 @@
 [
 	{
+		"tags":["dominica","nomen"],
+		"datum":["Dominica ", ["basis-nominis"]]
+	},
+	{
+		"tags":["feria","feria-ii","nomen"],
+		"datum":["Feria II infra Hebdomadam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["feria","feria-iii","nomen"],
+		"datum":["Feria III infra Hebdomadam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["feria","feria-iv","nomen"],
+		"datum":["Feria IV infra Hebdomadam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["feria","feria-v","nomen"],
+		"datum":["Feria V infra Hebdomadam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["feria","feria-vi","nomen"],
+		"datum":["Feria VI infra Hebdomadam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["feria","sabbatum","nomen"],
+		"datum":["Sabbato infra Hebdomadam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["infra-octavam","dies-ii","nomen"],
+		"datum":["Dies II infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["infra-octavam","dies-iii","nomen"],
+		"datum":["Dies III infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["infra-octavam","dies-iv","nomen"],
+		"datum":["Dies IV infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["infra-octavam","dies-v","nomen"],
+		"datum":["Dies V infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["infra-octavam","dies-vi","nomen"],
+		"datum":["Dies VI infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["infra-octavam","dies-vii","nomen"],
+		"datum":["Dies VII infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["dominica-infra-octavam","nomen"],
+		"datum":["Dominica infra Octavam ", ["basis-nominis"]]
+	},
+	{
 		"tags":["dies-octava","nomen"],
 		"datum":["In Octava ", ["basis-nominis"]]
 	},
