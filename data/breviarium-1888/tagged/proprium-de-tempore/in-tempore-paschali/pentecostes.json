@@ -1,0 +1,228 @@
+[
+	{
+		"tags":["pentecostes","festum","nomen"],
+		"datum":"In Festo Pentecostes"
+	},
+	{
+		"tags":["pentecostes","infra-octavam","basis-nominis"],
+		"datum":"Pentecostes"
+	},
+	{
+		"tags":["pentecostes","antiphona","antiphona-i"],
+		"src":"gregobase/19943",
+		"datum":"Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja."
+	},
+	{
+		"tags":["pentecostes","i-vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["pentecostes","antiphona","antiphona-ii"],
+		"src":"gregobase/2393",
+		"datum":"Spíritus Dómini * replévit orbem terrárum, allelúja."
+	},
+	{
+		"tags":["pentecostes","antiphona","antiphona-iii"],
+		"src":"gregobase/2527",
+		"datum":"Repléti sunt omnes * Spíritu sancto, et cœpérunt loqui, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","antiphona","antiphona-iv"],
+		"src":"gregobase/2550",
+		"datum":"Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja."
+	},
+	{
+		"tags":["pentecostes","antiphona","antiphona-v"],
+		"src":"gregobase/2311",
+		"datum":"Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","capitulum"],
+		"datum":"Cum compleréntur dies Pentecóstes, erant omnes discípuli páriter in eódem loco: + et factus est repénte de cœlo sonus, tamquam adveniéntis spíritus veheméntis, * et replévit totam domum, ubi erant sedéntes."
+	},
+	{
+		"tags":[
+			["pentecostes","vesperae","hymnus"],
+			["pentecostes","tertia","hymnus"]
+		],
+		"src":"gregobase/2923",
+		"datum":[
+			"Veni Creátor Spíritus,/Mentes tuórum vísita,/Imple supérna grátia,/Quæ tu creásti péctora.",
+			"Qui díceris Paráclitus,/Altíssimi donum Dei,/Fons vivus, ignis, cáritas./Et spiritális únctio.",
+			"Tu septifórmis múnere,/Dígitus patérnæ déxteræ,/Tu rite promíssum Patris,/Sermóne ditans gúttura.",
+			"Accénde lumen sénsibus:/Infúnde amórem córdibus:/Infírma nostri córporis/Virtúte firmans pérpeti.",
+			"Hostem repéllas lóngius,/Pacémque dones prótinus:/Ductóre sic te prǽvio/Vitémus omne nóxium.",
+			"Per te sciámus da Patrem,/Noscámus atque Fílium,/Teque utriúsque Spíritum/Credámus omne témpore.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["pentecostes","i-vesperae","versiculus"],
+			["pentecostes","laudes","versiculus"]
+		],
+		"datum":["V. Repléti sunt omnes Spíritu sancto, allelúja.","R. Et cœpérunt loqui, allelúja."]
+	},
+	{
+		"tags":["pentecostes","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/3003",
+		"datum":"Non vos relínquam * órphanos, allelúja: vado et vénio ad vos, allelúja: et gaudébit cor vestrum, allelúja."
+	},
+	{
+		"tags":["pentecostes","collecta"],
+		"datum":"Deus, qui hodiérna die corda fidélium sancti Spíritus illustratióne docuísti: + da nobis in eódem Spíritu recta sápere, * et de ejus semper consolatióne gaudére.",
+		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
+	},
+	{
+		"tags":["pentecostes","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/P7I",
+		"datum":"Allelúja, Spíritus Dómini replévit orbem terrárum: * Veníte adorémus, allelúja."
+	},
+	{
+		"tags":["pentecostes","matutinum","hymnus"],
+		"src":"nocturnale/P7H",
+		"datum":[
+			"Jam Christus astra ascénderat,/Revérsus unde vénerat,/Patris fruéndum múnere/Sanctum datúrus Spíritum.",
+			"Solémnis urgébat dies,/Quo mýstico septémplici/Orbis volútus sépties,/Signat beáta témpora.",
+			"Cum lucis hora tértia/Repénte mundus íntonat,/Apóstolis orántibus/Deum veníre núntiat.",
+			"De Patris ergo lúmine/Decórus ignis almus est,/Qui fida Christi péctora/Calóre Verbi cómpleat.",
+			"Impléta gaudent víscera,/Affláta sancto Spíritu,/Vocésque divérsas sonant,/Fantur Dei magnália.",
+			"Notíque cunctis Géntibus,/Græcis, Latínis, Bárbaris,/Simúlque loquúntur ómnium.",
+			"Judǽa tunc incrédula,/Vesána torvo spíritu,/Madére musto sóbrios/Christi fidéles íncrepat.",
+			"Sed éditis miráculis/Occúrrit, et docet Petrus,/Falsum profári pérfidos,/Joéle teste cómprobans.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["pentecostes","matutinum","nocturnae"],
+		"datum":[
+			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae","te-deum"]
+		]
+	},
+	{
+		"tags":["pentecostes","matutinum","antiphona","antiphona-i"],
+		"src":"nocturnale/P7A1",
+		"datum":"Factus est * repénte de cœlo sonus adveniéntis spíritus veheméntis, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","matutinum","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xlvii,gloria"]]
+	},
+	{
+		"tags":["pentecostes","matutinum","antiphona","antiphona-ii"],
+		"src":"nocturnale/P7A2",
+		"datum":"Confírma hoc Deus, * quod operátus es in nobis: a templo sancto tuo, quod est in Jerúsalem, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","matutinum","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxvii,gloria"]]
+	},
+	{
+		"tags":["pentecostes","matutinum","antiphona","antiphona-iii"],
+		"src":"nocturnale/P7A3",
+		"datum":"Emítte Spíritum tuum, * et creabúntur: et renovábis fáciem terræ, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","matutinum","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-ciii,gloria"]]
+	},
+	{
+		"tags":["pentecostes","matutinum","versiculus"],
+		"datum":["V. Spíritus Dómini replévit orbem terrárum, allelúja.","R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja."]
+	},
+	{
+		"tags":["pentecostes","festum","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Dixit Jesus discípulis suis: Si quis díligit me, sermónem meum servábit, et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciémus. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Libet, fratres caríssimi, evangélicæ verba lectiónis sub brevitáte transcúrrere, ut post diútius líceat in contemplatióne tantæ solemnitátis immorári. Hódie namque Spíritus sanctus repentíno sónitu super discípulos venit, mentésque carnálium in sui amórem permutávit, et foris apparéntibus linguis ígneis, intus facta sunt corda flammántia: quia dum Deum in ignis visióne suscepérunt, per amórem suáviter arsérunt. Ipse namque Spíritus sanctus amor est: unde et Joánnes dicit: Deus cáritas est. Qui ergo mente íntegra Deum desíderat, profécto jam habet, quem amat. Neque enim quisquam posset Deum dilígere, si eum quem díligit, non habéret."
+		]
+	},
+	{
+		"tags":["pentecostes","matutinum","responsorium","responsorium-i"],
+		"src":"nocturnale/P7R1",
+		"incipit":"Cum compleréntur dies Pentecóstes, erant omnes páriter in eódem loco, allelúja: et súbito factus est sonus de cœlo, allelúja,",
+		"responsum":"Tamquam spíritus veheméntis, et replévit totam domum, allelúja, allelúja",
+		"versus":"Dum ergo essent in unum discípuli congregáti propter metum Judæórum, sonus repénte de cœlo venit super eos."
+	},
+	{
+		"tags":["pentecostes","festum","matutinum","lectio","lectio-ii"],
+		"datum":"Sed ecce, si unusquísque vestrum requirátur, an díligat Deum: tota fidúcia, et secúra mente respóndet, Díligo. In ipso autem lectiónis exórdio audístis quid Véritas dicit: Si quis díligit me, sermónem meum servábit. Probátio ergo dilectiónis, exhibítio est óperis. Hinc in epístola sua idem Joánnes dicit: Qui dicit, Díligo Deum, et mandáta ejus non custódit, mendax est. Vere étenim Deum dilígimus et mandáta ejus custodímus, si nos a nostris voluptátibus coarctámus. Nam qui adhuc per illícita desidéria díffluit, profécto Deum non amat: quia ei in sua voluntáte contradícit."
+	},
+	{
+		"tags":["pentecostes","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P7R2",
+		"incipit":"Repléti sunt omnes Spíritu sancto: et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illis:",
+		"responsum":"Et convénit multitúdo dicéntium, allelúja.",
+		"versus":"Loquebántur váriis linguis Apóstoli magnália Dei."
+	},
+	{
+		"tags":["pentecostes","festum","matutinum","lectio","lectio-iii"],
+		"datum":"Et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciémus. Pensáte, fratres caríssimi, quanta sit ista dígnitas, habére in cordis hospítio advéntum Dei. Certe si domum nostram quisquam dives, aut prǽpotens amícus intráret, omni festinántia domus tota mundarétur, ne quid fortásse esset quod óculos amíci intrántis offénderet. Tergat ergo sordes pravi óperis, qui Deo prǽparat domum mentis. Sed vidéte quid Véritas dicat: Veniémus, et mansiónem apud eum faciémus. In quorúmdam étenim corda venit, et mansiónem non facit: quia per compunctiónem quidem Dei respéctum percípiunt, sed tentatiónis témpore hoc ipsum quo compúncti fúerant, obliviscúntur: sicque ad perpetránda peccáta rédeunt, ac si hæc mínime planxíssent."
+	},
+	{
+		"tags":["pentecostes","laudes","hymnus"],
+		"src":"gregobase/2926",
+		"datum":[
+			"Beáta nobis gaúdia/Anni redúxit órbita,/Cum Spíritus Paráclitus/Illápsus est Apóstolis.",
+			"Ignis vibránte lúmine/Linguæ figúram détulit,/Verbis ut essent próflui,/Et caritáte férvidi.",
+			"Linguis loquúntur ómnium,/Turbæ pavent Gentílium:/Musto madére députant,/Quos Spíritus repléverat.",
+			"Patráta sunt hæc mýstice,/Paschæ perácto témpore,/Sacro diérum círculo,/Quo lege fit remíssio.",
+			"Te nunc Deus piíssime/Vultu precámur cérnuo,/Illápsa nobis cœlitus/Largíre dona Spíritus.",
+			"Dudum sacráta péctora/Tua replésti grátia:/Dimítte nostra crímina,/Et da quiéta témpora.",
+			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["pentecostes","festum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2375",
+		"datum":"Accípite * Spíritum sanctum: quorum remiséritis peccáta, remittúntur eis, allelúja."
+	},
+	{
+		"tags":["pentecostes","tertia","responsorium-breve"],
+		"incipit":"Spíritus Dómini replévit orbem terrárum",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et hoc quod cóntinet ómnia, sciéntiam habet vocis."
+	},
+	{
+		"tags":["pentecostes","tertia","versiculus"],
+		"datum":["V. Spíritus Paráclitus, allelúja.","R. Docébit vos ómnia, allelúja."]
+	},
+	{
+		"tags":["pentecostes","sexta","capitulum"],
+		"datum":"Facta autem hac voce, convénit multitúdo, + et mente confúsa est, * quóniam audiébat unusquísque lingua sua illos loquéntes."
+	},
+	{
+		"tags":["pentecostes","sexta","responsorium-breve"],
+		"incipit":"Spíritus Paráclitus",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Docébit vos ómnia."
+	},
+	{
+		"tags":["pentecostes","sexta","versiculus"],
+		"datum":["V. Repléti sunt omnes Spíritu sancto, allelúja.","R. Et cœpérunt loqui, allelúja."]
+	},
+	{
+		"tags":["pentecostes","nona","capitulum"],
+		"datum":"Judǽi quoque, et Prosélyti, Cretes, et Árabes: + audívimus eos loquéntes nostris linguis * magnália Dei."
+	},
+	{
+		"tags":["pentecostes","nona","responsorium-breve"],
+		"incipit":"Repléti sunt omnes Spíritu sancto",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et cœpérunt loqui."
+	},
+	{
+		"tags":[
+			["pentecostes","nona","versiculus"],
+			["pentecostes","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Loquebántur váriis linguis Apóstoli, allelúja.","R. Magnália Dei, allelúja."]
+	},
+	{
+		"tags":["pentecostes","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2249",
+		"datum":"Hódie * compléti sunt dies Pentecóstes, allelúja: hódie Spíritus sanctus in igne discípulis appáruit, et tríbuit eis charísmatum dona: misit eos in univérsum mundum prædicáre, et testificári: qui credíderit, et baptizátus fúerit, salvus erit, allelúja."
+	}
+]
