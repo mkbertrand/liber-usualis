@@ -17,7 +17,7 @@ import functools
 
 import psalms
 
-defaultpile = {'formulae', 'litaniae-sanctorum'}
+defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones'}
 
 @functools.lru_cache(maxsize=64)
 def getcategory(root, category):

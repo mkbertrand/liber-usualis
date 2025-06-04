@@ -522,6 +522,13 @@
 		]
 	},
 	{
+		"include":["dominica-infra-octavam","primarium"],
+		"response":[
+			{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
+			{"include":["simplex","primarium"],"response":"commemoratio","target":1}
+		]
+	},
+	{
 		"include":["nativitas-joannis-baptistae","infra-octavam","primarium"],
 		"recheck":false,
 		"response":[

@@ -96,7 +96,7 @@
 	{
 		"tags":["pentecostes","matutinum","nocturnae"],
 		"datum":[
-			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae","te-deum"]
+			["matutinum","nocturna","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
@@ -129,6 +129,10 @@
 	{
 		"tags":["pentecostes","matutinum","versiculus"],
 		"datum":["V. Spíritus Dómini replévit orbem terrárum, allelúja.","R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja."]
+	},
+	{
+		"tags":["pentecostes","matutinum","benedictio"],
+		"datum":[["matutinum","evangelica-lectio","benedictio"]]
 	},
 	{
 		"tags":["pentecostes","festum","matutinum","lectio","lectio-i"],
