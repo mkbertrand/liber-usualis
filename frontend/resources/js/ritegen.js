@@ -119,20 +119,21 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
 			} else if (data['tags'].includes('formula-lectionis')) {
 				header = 'Lectio';
-				if (data['datum'][1]['tags'].includes('lectio-brevis')) {
+				btags = 'tags' in data['datum'][1]['datum'] ? data['datum'][1]['datum']['tags'] : data['datum'][1]['tags'];
+				if (btags.includes('lectio-brevis')) {
 					header = 'Lectio Brevis';
 				} else {
 					nn = 1;
-					if (data['datum'][1]['tags'].includes('nocturna-ii')) {
+					if (btags.includes('nocturna-ii')) {
 						nn = 2
-					} else if (data['datum'][1]['tags'].includes('nocturna-iii')) {
+					} else if (btags.includes('nocturna-iii')) {
 						nn = 3
 					}
-					if (data['datum'][1]['tags'].includes('lectio-i')) {
+					if (btags.includes('lectio-i')) {
 						switch(nn) { case 1: header = 'Lectio I'; break; case 2: header = 'Lectio IV'; break; case 3: header = 'Lectio VII';};
-					} else if (data['datum'][1]['tags'].includes('lectio-ii')) {
+					} else if (btags.includes('lectio-ii')) {
 						switch(nn) { case 1: header = 'Lectio II'; break; case 2: header = 'Lectio V'; break; case 3: header = 'Lectio VII';};
-					} else if (data['datum'][1]['tags'].includes('lectio-iii')) {
+					} else if (btags.includes('lectio-iii')) {
 						switch(nn) { case 1: header = 'Lectio III'; break; case 2: header = 'Lectio VI'; break; case 3: header = 'Lectio IX';};
 					}
 				}
