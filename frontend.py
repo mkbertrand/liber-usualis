@@ -2,9 +2,15 @@
 
 # Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
-from bottle import get, route, request, run, static_file, error, template
+import bottle
+from bottle import get, route, request, static_file, error, template
 import requests
 from datetime import datetime, date
+from requestlogger import WSGILogger, ApacheFormatter
+import waitress
+import logging
+
+from logging.handlers import TimedRotatingFileHandler
 
 import copy
 
@@ -124,6 +130,10 @@ def nomina():
 def resources(file):
 	return static_file(file, root='frontend/resources/')
 
+@get('/logs/internal_requests')
+def internal_requests():
+	return static_file('internal_requests.log', root='../logs/')
+
 @error(404)
 def error404(error):
 	return 'Error 404'
@@ -139,4 +149,7 @@ def reset():
 	datamanage.getdiscrimina.cache_clear()
 	return 'Successfully dumped data caches.'
 
-run(host='localhost', port=8080)
+waitress.serve(WSGILogger(
+	bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
+	ApacheFormatter(), propagate=False
+))

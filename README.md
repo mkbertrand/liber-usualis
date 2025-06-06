@@ -14,7 +14,7 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 git clone https://github.com/mkbertrand/liber-usualis
 git clone https://github.com/mkbertrand/franciscan-chant-closet
 cd liber-usualis
-pip install bottle pytest diff-match-patch
+pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 ```
 
 Note: diff-match-patch is only necessary for test_breviarium.
