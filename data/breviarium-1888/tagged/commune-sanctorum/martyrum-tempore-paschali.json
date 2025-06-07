@@ -44,6 +44,20 @@
 	},
 	{
 		"tags":[
+			["martyrum-tempore-paschali","in-tempore-ascensionis","vesperae","hymnus"],
+			["martyrum-tempore-paschali","in-tempore-ascensionis","matutinum","hymnus"]
+		],
+		"src":"gregobase/19953",
+		"datum":[
+			"Deus tuórum mílitum/Sors et coróna, prǽmium,/Laudes canéntes Mártyris/Absólve nexu críminis.",
+			"Hic nempe mundi gaúdia,/Et blanda fraudum pábula/Imbúta felle députans,/Pervénit ad cœléstia.",
+			"Pœnas cucúrrit fórtiter,/Et sústulit viríliter,/Fundénsque pro te sánguinem,/Ætérna dona póssidet.",
+			"Ob hoc precátu súpplici/Te póscimus, piíssime;/In hoc triúmpho Mártyris/Dimítte noxam sérvulis.",
+			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":[
 			["martyrum-tempore-paschali","martyres","vesperae","hymnus"],
 			["martyrum-tempore-paschali","martyres","laudes","hymnus"]
 		],
@@ -55,6 +69,18 @@
 			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
 		]
 	},
+	{
+		"tags":[
+			["martyrum-tempore-paschali","in-tempore-ascensionis","martyres","vesperae","hymnus"],
+			["martyrum-tempore-paschali","in-tempore-ascensionis","martyres","laudes","hymnus"]
+		],
+		"src":"gregobase/19954",
+		"datum":[
+			"Rex glorióse Mártyrum,/Coróna confiténtium,/Qui respuéntes térrea/Perdúcis ad cœléstia.",
+			"Aurem benígnam prótinus/Inténde nostris vócibus:/Trophǽa sacra pángimus:/Ignósce quod delíquimus.",
+			"Tu vincis inter Mártyres,/Parcísque Confessóribus:/Tu vince nostra crímina,/Largítor indulgéntiæ.",
+			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
 	{
 		"tags":["martyrum-tempore-paschali","i-vesperae","versiculus"],
 		"datum":["V. Sancti et justi in Dómino gaudéte, allelúja.","R. Vos elégit Deus in hæreditátem sibi, allelúja."]
@@ -72,6 +98,16 @@
 			"Tui precátus múnere/Nostrum reátum dílue,/Arcens mali contágium,/Vitæ repéllens tǽdium.",
 			"Solúta sunt jam víncula/Tui sacráti córporis:/Nos solve vinclis sǽculi,/Dono supérni Núminis.",
 			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","in-tempore-ascensionis","laudes","hymnus"],
+		"src":"gregobase/19955",
+		"datum":[
+			"Invícte Martyr, únicum/Patris secútus Fílium,/Victis triúmphas hóstibus./Victor fruens cœléstibus.",
+			"Tui precátus múnere/Nostrum reátum dílue,/Arcens mali contágium,/Vitæ repéllens tǽdium.",
+			"Solúta sunt jam víncula/Tui sacráti córporis:/Nos solve vinclis sǽculi,/Dono supérni Núminis.",
+			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
 	},
 	{
