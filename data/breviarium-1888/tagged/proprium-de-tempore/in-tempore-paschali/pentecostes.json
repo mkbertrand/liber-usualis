@@ -193,7 +193,10 @@
 		"versus":"Et hoc quod cóntinet ómnia, sciéntiam habet vocis."
 	},
 	{
-		"tags":["pentecostes","tertia","versiculus"],
+		"tags":[
+			["pentecostes","tertia","versiculus"],
+			["pentecostes","feria-iii","matutinum","versiculus"]
+		],
 		"datum":["V. Spíritus Paráclitus, allelúja.","R. Docébit vos ómnia, allelúja."]
 	},
 	{
@@ -279,5 +282,49 @@
 		"tags":["pentecostes","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2899",
 		"datum":"Si quis díligit me, * sermónem meum servábit: et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciémus, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Dixit Jesus pharisǽis: Amen, amen dico vobis: qui non intrat per óstium in ovíle óvium, sed ascéndit aliúnde, ille fur est, et latro. Qui autem intrat per óstium, pastor est óvium. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Dóminus de grege suo, et de óstio quo intrátur ad ovíle, similitúdinem propósuit in hodiérna lectióne. Dicant ergo pagáni: Bene vívimus. Si per óstium non intrant, quid prodest eis unde gloriántur? Ad hoc enim debet unicuíque prodésse bene vívere, ut detur illi semper vívere: nam cui non datur semper vívere, quid prodest bene vívere? Quia nec bene vívere dicéndi sunt, qui finem bene vivéndi vel cæcitáte nésciunt, vel inflatióne contémnunt. Non est autem cuíquam spes vera et certa semper vivéndi, nisi agnóscat vitam, quod est Christus, et per jánuam intret in ovíle."
+		]
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Apparuérunt Apóstolis dispertítæ linguæ tamquam ignis, allelúja:",
+		"responsum":"Sedítque supra síngulos eórum Spíritus sanctus, allelúja, allelúja.",
+		"versus":"Et cœpérunt loqui váriis linguis, prout Spíritus sanctus dabat éloqui illis."
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","lectio","lectio-ii"],
+		"datum":"Quærunt ergo plerúmque tales hómines étiam persuadére homínibus, ut bene vivant, et Christiáni non sint. Per áliam partem volunt ascéndere, rápere et occídere; non ut bonus pastor, conserváre atque salváre. Fuérunt ergo quidam philósophi de virtútibus et vítiis subtília multa tractántes, dividéntes, definiéntes, ratiocinatiónes acutíssimas concludéntes, libros impléntes, suam sapiéntiam buccis crepántibus ventilántes, qui étiam dícere audérent homínibus: Nos sequímini, sectam nostram tenéte, si vultis beáte vívere. Sed non intrábant per óstium: pérdere volébant, mactáre et occídere."
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Loquebántur váriis linguis Apóstoli magnália Dei,",
+		"responsum":"Prout Spíritus sanctus dabat éloqui illis, allelúja.",
+		"versus":"Repléti sunt omnes Spíritu sancto, et cœpérunt loqui."
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","lectio","lectio-iii"],
+		"datum":"Quid de istis dicam? Ecce ipsi pharisǽi legébant, et in eo, quod legébant, Christum sonábant, ventúrum sperábant, et præséntem non agnoscébant. Jactábant se étiam ipsi inter Vidéntes, hoc est, inter sapiéntes, et negábant Christum, et non intrábant per óstium. Ergo et ipsi, si quos forte sedúcerent, mactándos et occidéndos, non liberándos sedúcerent. Et hos dimittámus: videámus illos, si forte ipsi intrant per óstium, qui ipsíus Christi nómine gloriántur. Innumerábiles enim sunt, qui se Vidéntes non solum jactant, sed a Christo illuminátos vidéri volunt: sunt autem hærétici."
+	},
+	{
+		"tags":["pentecostes","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12812",
+		"datum":"Ego sum óstium, * dicit Dóminus: per me si quis introíerit, salvábitur, et páscua invéniet, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-iii","collecta"],
+		"datum":"Adsit nobis, quǽsumus Dómine virtus Spíritus sancti: + quæ et corda nostra cleménter expúrget, * et ab ómnibus tueátur advérsis.",
+		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
+	},
+	{
+		"tags":["pentecostes","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2864",
+		"datum":"Pacem * relínquo vobis, pacem meam do vobis: non quómodo mundus dat, ego do vobis, allelúja."
 	}
 ]
