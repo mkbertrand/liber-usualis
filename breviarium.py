@@ -138,18 +138,21 @@ def managesearch(query, result):
 	if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
 		return result
 	else:
-		if 'intonata' in query:
-			result['datum'] = result['datum'].split('*')[0].rstrip()
-			if result['datum'][-1] not in ['.',',','?','!',':',';']:
-				result['datum'] += '.'
-			result['tags'] |= {'intonata'}
-		elif 'repetita' in query:
-			result['datum'] = result['datum'].split('* ')[0] + result['datum'].split('* ')[1]
-			result['tags'] |= {'repetita'}
-		elif 'pars' in query:
-			result['datum'] = result['datum'].split('*')[1].lstrip()
-			result['tags'] |= {'pars'}
-		return result
+		try:
+			if 'intonata' in query:
+				result['datum'] = result['datum'].split('*')[0].rstrip()
+				if result['datum'][-1] not in ['.',',','?','!',':',';']:
+					result['datum'] += '.'
+				result['tags'] |= {'intonata'}
+			elif 'repetita' in query:
+				result['datum'] = result['datum'].split('* ')[0] + result['datum'].split('* ')[1]
+				result['tags'] |= {'repetita'}
+			elif 'pars' in query:
+				result['datum'] = result['datum'].split('*')[1].lstrip()
+				result['tags'] |= {'pars'}
+			return result
+		except IndexError:
+			raise RuntimeError(f'Bad formatting for antiphon {result['datum']}')
 
 
 def search(root, query, pile, multipleresults = False, multipleresultssort = None, rootappendix = ''):
