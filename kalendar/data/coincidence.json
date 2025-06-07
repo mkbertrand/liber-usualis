@@ -620,6 +620,7 @@
 			{"include":["duplex-minus"],"response":"dele","target":0},
 			{"include":["infra-octavam"],"response":"dele","target":0},
 			{"include":["semiduplex","primarium"],"response":"dele","target":0},
+			{"include":["vigilia","simplex","primarium"],"response":"commemoratio","target":0},
 			{"include":["simplex","primarium"],"response":"dele","target":0},
 			{"include":["feria","primarium"],"response":"commemoratio","target":0}
 		]
