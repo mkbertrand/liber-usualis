@@ -122,10 +122,6 @@ def rite():
 def chant(url):
 	return datamanage.getchantfile(url)
 
-@get('/nomina')
-def nomina():
-	return datamanage.getnames(root)
-
 @get('/resources/<file:path>')
 def resources(file):
 	return static_file(file, root='frontend/resources/')
@@ -134,6 +130,14 @@ def resources(file):
 def internal_requests():
 	return static_file('internal_requests.log', root='../logs/')
 
+@get('/favicon.ico')
+def favicon():
+	return static_file('agnus-dei.png', root='frontend/resources/')
+
+@get('/robots.txt')
+def robots():
+	return static_file('robots.txt', root='frontend/resources/')
+
 @error(404)
 def error404(error):
 	return 'Error 404'
@@ -141,13 +145,6 @@ def error404(error):
 @error(500)
 def error500(error):
 	return error
-
-@get('/reset')
-def reset():
-	datamanage.getyear.cache_clear()
-	datamanage.getbreviariumfile.cache_clear()
-	datamanage.getdiscrimina.cache_clear()
-	return 'Successfully dumped data caches.'
 
 waitress.serve(WSGILogger(
 	bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
