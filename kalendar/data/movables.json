@@ -59,11 +59,14 @@
 	{
 		"occurrence":[
 			["per-annum","feria"],
-			["in-tempore-septuagesimae","feria"],
-			["in-tempore-paschali"]
+			["in-tempore-septuagesimae","feria"]
 		],
 		"excluded":["in-tempore-passionis"],
 		"tags":["suffragium","de-cruce"]
+	},
+	{
+		"occurrence":["in-tempore-paschali"],
+		"tags":["suffragium","de-cruce-tempore-paschali"]
 	},
 	{
 		"occurrence":[
