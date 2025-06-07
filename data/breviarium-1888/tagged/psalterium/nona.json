@@ -55,7 +55,10 @@
 		"datum":["V. Ab occúltis meis munda me Dómine.","R. Et ab aliénis parce servo tuo."]
 	},
 	{
-		"tags":["nona","feria","hymnus"],
+		"tags":[
+			["nona","feria","hymnus"],
+			["nona","simplex","hymnus"]
+		],
 		"src":"gregobase/13226",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
@@ -169,6 +172,15 @@
 			"R. Et líbera nos propter nomen tuum.",
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
+		"tags":["nona","sollemnitas","hymnus"],
+		"src":"gregobase/1836",
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			["terminatio","praesta-pater"]
 		]
 	},
 	{

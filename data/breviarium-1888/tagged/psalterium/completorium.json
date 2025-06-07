@@ -140,7 +140,10 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["completorium","feria","hymnus"],
+		"tags":[
+			["completorium","feria","hymnus"],
+			["completorium","simplex","hymnus"]
+		],
 		"src":"gregobase/13354",
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
@@ -149,8 +152,8 @@
 		]
 	},
 	{
-		"tags":["completorium","duplex","sollemnitas","hymnus"],
-		"src":"gregobase/1843",
+		"tags":["completorium","sollemnitas","hymnus"],
+		"src":"gregobase/2998",
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
 			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",

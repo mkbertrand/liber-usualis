@@ -55,7 +55,10 @@
 		"datum":["V. Dóminus regit me, et nihil mihi déerit.","R. In loco páscuæ ibi me collocávit."]
 	},
 	{
-		"tags":["sexta","feria","hymnus"],
+		"tags":[
+			["sexta","feria","hymnus"],
+			["sexta","simplex","hymnus"]
+		],
 		"src":"gregobase/11789",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
@@ -165,6 +168,15 @@
 			"R. Et líbera nos propter nomen tuum.",
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
+		"tags":["sexta","sollemnitas","hymnus"],
+		"src":"gregobase/2239",
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			["terminatio","praesta-pater"]
 		]
 	},
 	{

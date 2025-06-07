@@ -55,7 +55,10 @@
 		"datum":["V. Ego dixi, Dómine miserére mei.","R. Sana ánimam meam, quia peccávi tibi."]
 	},
 	{
-		"tags":["tertia","feria","hymnus"],
+		"tags":[
+			["tertia","feria","hymnus"],
+			["tertia","simplex","hymnus"]
+		],
 		"src":"gregobase/2578",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
@@ -173,6 +176,15 @@
 			"R. Et líbera nos propter nomen tuum.",
 			"V. Dómine exaúdi oratiónem meam.",
 			"R. Et clamor meus ad te véniat."
+		]
+	},
+	{
+		"tags":["tertia","sollemnitas","hymnus"],
+		"src":"gregobase/12715",
+		"datum":[
+			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
+			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
+			["terminatio","praesta-pater"]
 		]
 	},
 	{
