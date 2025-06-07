@@ -75,6 +75,13 @@
 		"adde":"primarium"
 	},
 	{
+		"include":["suffragium","de-cruce"],
+		"response":[
+			{"include":["dominica"],"response":"dele","target":0},
+			{"include":["simplex"],"response":"dele","target":0}
+		]
+	},
+	{
 		"include":["suffragium"],
 		"response":[
 			{"include":["duplex-i-classis"],"response":"dele","target":0},
@@ -82,13 +89,6 @@
 			{"include":["duplex-majus"],"response":"dele","target":0},
 			{"include":["duplex-minus"],"response":"dele","target":0},
 			{"include":["infra-octavam"],"response":"dele","target":0}
-		]
-	},
-	{
-		"include":["suffragium","de-cruce"],
-		"response":[
-			{"include":["dominica"],"response":"dele","target":0},
-			{"include":["simplex"],"response":"dele","target":0}
 		]
 	},
 	{
