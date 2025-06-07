@@ -1,0 +1,19 @@
+[
+	{
+		"tags":["vigilia-petri-pauli","nomen"],
+		"datum":"In Vigilia Ss. Apostolorum Petri et Pauli"
+	},
+	{
+		"tags":["vigilia-petri-pauli","antiphona","antiphona-benedictus"],
+		"datum":[["feria","occurrens","antiphona","antiphona-benedictus"]]
+	},
+	{
+		"tags":["vigilia-petri-pauli","laudes","versiculus"],
+		"datum":[["feria","occurrens","laudes","versiculus"]]
+	},
+	{
+		"tags":["vigilia-petri-pauli","collecta"],
+		"datum":"Præsta, quǽsumus omnípotens Deus: * ut nullis nos permíttas perturbatiónibus cóncuti, quos in apostólicæ confessiónis petra solidásti.",
+		"terminatio":[["terminatio","per-dominum"]]
+	}
+]
