@@ -69,7 +69,7 @@
 		"datum":"Non vos relínquam * órphanos, allelúja: vado et vénio ad vos, allelúja: et gaudébit cor vestrum, allelúja."
 	},
 	{
-		"tags":["pentecostes","collecta"],
+		"tags":["pentecostes","festum","collecta"],
 		"datum":"Deus, qui hodiérna die corda fidélium sancti Spíritus illustratióne docuísti: + da nobis in eódem Spíritu recta sápere, * et de ejus semper consolatióne gaudére.",
 		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
 	},
@@ -127,7 +127,10 @@
 		"datum":[["/psalmi/psalmus-ciii,gloria"]]
 	},
 	{
-		"tags":["pentecostes","matutinum","versiculus"],
+		"tags":[
+			["pentecostes","festum","matutinum","versiculus"],
+			["pentecostes","feria-ii","matutinum","versiculus"]
+		],
 		"datum":["V. Spíritus Dómini replévit orbem terrárum, allelúja.","R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja."]
 	},
 	{
@@ -144,7 +147,7 @@
 		]
 	},
 	{
-		"tags":["pentecostes","matutinum","responsorium","responsorium-i"],
+		"tags":["pentecostes","festum","matutinum","responsorium","responsorium-i"],
 		"src":"nocturnale/P7R1",
 		"incipit":"Cum compleréntur dies Pentecóstes, erant omnes páriter in eódem loco, allelúja: et súbito factus est sonus de cœlo, allelúja,",
 		"responsum":"Tamquam spíritus veheméntis, et replévit totam domum, allelúja, allelúja",
@@ -155,7 +158,7 @@
 		"datum":"Sed ecce, si unusquísque vestrum requirátur, an díligat Deum: tota fidúcia, et secúra mente respóndet, Díligo. In ipso autem lectiónis exórdio audístis quid Véritas dicit: Si quis díligit me, sermónem meum servábit. Probátio ergo dilectiónis, exhibítio est óperis. Hinc in epístola sua idem Joánnes dicit: Qui dicit, Díligo Deum, et mandáta ejus non custódit, mendax est. Vere étenim Deum dilígimus et mandáta ejus custodímus, si nos a nostris voluptátibus coarctámus. Nam qui adhuc per illícita desidéria díffluit, profécto Deum non amat: quia ei in sua voluntáte contradícit."
 	},
 	{
-		"tags":["pentecostes","matutinum","responsorium","responsorium-ii"],
+		"tags":["pentecostes","festum","matutinum","responsorium","responsorium-ii"],
 		"src":"nocturnale/P7R2",
 		"incipit":"Repléti sunt omnes Spíritu sancto: et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illis:",
 		"responsum":"Et convénit multitúdo dicéntium, allelúja.",
@@ -225,8 +228,56 @@
 		"datum":["V. Loquebántur váriis linguis Apóstoli, allelúja.","R. Magnália Dei, allelúja."]
 	},
 	{
-		"tags":["pentecostes","ii-vesperae","antiphona","antiphona-magnificat"],
+		"tags":["pentecostes","ii-vesperae","psalmus"],
+		"datum":[["dominica","ii-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["pentecostes","festum","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2249",
 		"datum":"Hódie * compléti sunt dies Pentecóstes, allelúja: hódie Spíritus sanctus in igne discípulis appáruit, et tríbuit eis charísmatum dona: misit eos in univérsum mundum prædicáre, et testificári: qui credíderit, et baptizátus fúerit, salvus erit, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-ii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Dixit Jesus Nicodémo: Sic Deus diléxit mundum, ut Fílium suum unigénitum daret: ut omnis, qui credit in eum, non péreat, sed hábeat vitam ætérnam. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Quantum in médico est, sanáre venit ægrótum. Ipse se intérimit, qui præcépta médici observáre non vult. Venit Salvátor in mundum. Quare Salvátor dictus est mundi, nisi, ut salvet mundum, non, ut júdicet mundum? Salvári non vis ab ipso: ex te judicáberis. Et quid dicam, judicáberis? Vide quid ait: Qui credit in eum, non judicátur. Qui autem non credit: quid dictúrum sperábas, nisi Judicátur? Quod addit: Jam, inquit, judicátus est: nondum appáruit judícium, et jam factum est judícium."
+		]
+	},
+	{
+		"tags":["pentecostes","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Jam non dicam vos servos, sed amícos meos; quia ómnia cognovístis, quæ operátus sum in médio vestri, allelúja:",
+		"responsum":"Accípite Spíritum sanctum in vobis Paráclitum: ille est, quem Pater mittet vobis, allelúja.",
+		"versus":"Vos amíci mei estis, si fecéritis quæ ego præcípio vobis."
+	},
+	{
+		"tags":["pentecostes","feria-ii","matutinum","lectio","lectio-ii"],
+		"datum":"Novit enim Dóminus, qui sunt ejus: novit qui permáneant ad corónam, qui permáneant ad flammam. Novit in área sua tríticum, novit et páleam: novit ségetem, novit et zizánia. Jam judicátus est, qui non credit. Quare judicátus? Quia non crédidit in nómine unigéniti Fílii Dei. Hoc est autem judícium: quia lux venit in mundum, et dilexérunt hómines magis ténebras, quam lucem: erant enim mala ópera eórum. Fratres mei, quorum ópera bona invénit Dóminus? Nullórum. Ómnia ópera mala invénit. Quómodo ergo quidam fecérunt veritátem, et venérunt ad lucem? Et hoc enim séquitur: Qui autem facit veritátem, venit ad lucem."
+	},
+	{
+		"tags":["pentecostes","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Spíritus sanctus procédens a throno, Apostolórum péctora invisibíliter penetrávit novo sanctificatiónis signo:",
+		"responsum":"Ut in ore eórum ómnium génera nasceréntur linguárum, allelúja.",
+		"versus":"Advénit ignis divínus, non combúrens, sed illúminans, et tríbuit eis charísmatum dona."
+	},
+	{
+		"tags":["pentecostes","feria-ii","matutinum","lectio","lectio-iii"],
+		"datum":"Sed dilexérunt, inquit, ténebras magis quam lucem. Ibi pósuit vim. Multi enim dilexérunt peccáta sua, multi conféssi sunt peccáta sua: quia qui confitétur peccáta sua, et accúsat peccáta sua, jam cum Deo facit. Accúsat Deus peccáta tua: si et tu accúsas, conjúngeris Deo. Quasi duæ res sunt, homo, et peccátor. Quod audis, homo, Deus fecit: quod audis, peccátor, ipse homo fecit. Dele, quod fecísti, ut Deus salvet, quod fecit. Opórtet ut óderis in te opus tuum, et ames in te opus Dei. Cum autem cœperit tibi displicére quod fecísti, inde incípiunt bona ópera tua, quia accúsas mala ópera tua. Inítium óperum bonórum, conféssio est óperum malórum."
+	},
+	{
+		"tags":["pentecostes","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/11948",
+		"datum":"Sic Deus * diléxit mundum, ut Fílium suum unigénitum daret: ut omnis, qui credit in ipsum, non péreat, sed hábeat vitam ætérnam, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-ii","collecta"],
+		"datum":"Deus, qui Apóstolis tuis sanctum dedísti Spíritum: + concéde plebi tuæ piæ petitiónis efféctum; * ut quibus dedísti fidem, largiáris et pacem.",
+		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
+	},
+	{
+		"tags":["pentecostes","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2899",
+		"datum":"Si quis díligit me, * sermónem meum servábit: et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciémus, allelúja."
 	}
 ]
