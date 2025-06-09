@@ -1,0 +1,53 @@
+[
+	{
+		"tags":["commemoratio-pauli","nomen"],
+		"datum":"In Commemoratione S. Pauli Apostoli"
+	},
+	{
+		"tags":["commemoratio-pauli","antiphona"],
+		"datum":[["conversio-pauli","antiphona"]]
+	},
+	{
+		"tags":["commemoratio-pauli","capitulum"],
+		"datum":"Bonum certámen certávi, cursum consummávi, fidem servávi. + In réliquo repósita est mihi coróna justítiæ, * quam reddet mihi Dóminus in illa die justus judex."
+	},
+	{
+		"tags":["commemoratio-pauli","vesperae","hymnus"],
+		"datum":[["conversio-pauli","hymnus"]]
+	},
+	{
+		"tags":[
+			["commemoratio-pauli","vesperae","versiculus"],
+			["commemoratio-pauli","laudes","versiculus"]
+		],
+		"datum":[["conversio-pauli","vesperae","versiculus"]]
+	},
+	{
+		"tags":[
+			["commemoratio-pauli","i-vesperae","antiphona","antiphona-magnificat"],
+			["commemoratio-pauli","ii-vesperae","antiphona","antiphona-magnificat"]
+		],
+		"datum":[["conversio-pauli","vesperae","ii-vesperae","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":["commemoratio-pauli","collecta"],
+		"datum":"Deus, qui multitúdinem Géntium beáti Pauli Apóstoli prædicatióne docuísti: + da nobis, quǽsumus; ut cujus natalítia cólimus, * ejus apud te patrocínia sentiámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["commemoratio-pauli","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["conversio-pauli","laudes","antiphona","antiphona-benedictus"]]
+	},
+	{
+		"tags":["commemoratio-pauli","sexta","capitulum"],
+		"datum":"Ne magnitúdo revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet. + Propter quod ter Dóminum rogávi, ut discéderet a me: * et dixit mihi: Súfficit tibi grátia mea."
+	},
+	{
+		"tags":["commemoratio-pauli","nona","capitulum"],
+		"datum":"Ego enim sum mínimus Apostolórum, qui non sum dignus vocári Apóstolus, quóniam persecútus sum Ecclésiam Dei. + Grátia autem Dei sum id, quod sum, * et grátia ejus in me vácua non fuit."
+	},
+	{
+		"tags":["commemoratio-pauli","ii-vesperae","antiphona"],
+		"datum":[["apostolus","vesperae","ii-vesperae","antiphona"]]
+	}
+]

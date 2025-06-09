@@ -1,5 +1,13 @@
 [
 	{
+		"tags":["petrus-paulus","duplex-i-classis","nomen"],
+		"datum":"Ss. Apostolorum Petri et Pauli"
+	},
+	{
+		"tags":["petrus-paulus","basis-nominis"],
+		"datum":"Ss. Petri et Pauli"
+	},
+	{
 		"tags":["petrus-paulus","antiphona","antiphona-i"],
 		"src":"gregobase/1866",
 		"datum":"Petrus et Joánnes * ascendébant in templum ad horam oratiónis nonam."
@@ -25,13 +33,11 @@
 		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
 	},
 	{
-		"tags":[
-			["petrus-paulus","vesperae","capitulum"],
-			["petrus-paulus","laudes","capitulum"]],
-		"datum":"Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. Occídit autem Jacóbum fratrem Joánnis gládio. Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
+		"tags":["petrus-paulus","capitulum"],
+		"datum":"Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. + Occídit autem Jacóbum fratrem Joánnis gládio. * Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
 	},
 	{
-		"tags":["petrus-paulus","i-vesperae","hymnus"],
+		"tags":["petrus-paulus","vesperae","hymnus"],
 		"src":"gregobase/2761",
 		"datum":[
 			"Decóra lux æternitátis, aúream/Diem beátis irrigávit ígnibus,/Apostolórum quæ corónat Príncipes,/Reísque in astra líberam pandit viam.",
@@ -41,17 +47,40 @@
 		]
 	},
 	{
-		"tags":["petrus-paulus","i-vesperae","versiculus"],
-		"datum":["V. In omnem terram exívit sonus eórum.","R. Et in fines orbis terræ verba eórum."]
-	},
-	{
 		"tags":["petrus-paulus","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2717",
 		"datum":"Tu es pastor óvium, * princeps Apostolórum: tibi tráditæ sunt claves regni cœlórum."
 	},
 	{
 		"tags":["petrus-paulus","collecta"],
-		"datum":"Deus, qui hodiérnam diem Apostolórum tuórum Petri et Pauli martýrio consecrásti: da Ecclésiæ tuæ, eórum in ómnibus sequi præcéptum, per quos religiónis sumpsit exórdium.",
+		"datum":"Deus, qui hodiérnam diem Apostolórum tuórum Petri et Pauli martýrio consecrásti: + da Ecclésiæ tuæ, eórum in ómnibus sequi præcéptum, * per quos religiónis sumpsit exórdium.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["petrus-paulus","laudes","hymnus"],
+		"src":"gregobase/1988",
+		"datum":[
+			"Beáte Pastor Petre clemens áccipe/Voces precántum, criminúmque víncula/Verbo resólve, cui potéstas trádita,/Aperíre terris cœlum, apértum claúdere.",
+			"Egrégie Doctor Paule mores ínstrue,/Et nostra tecum péctora in cœlum trahe:/Veláta dum merídiem cernat fides,/Et solis instar sola regnet cáritas.",
+			"Sit Trinitáti sempitérna glória,/Honor, potéstas, atque jubilátio,/In unitáte quæ gubérnat ómnia,/Per univérsa æternitátis sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2689",
+		"datum":"Quodcúmque * ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis: dicit Dóminus Simóni Petro."
+	},
+	{
+		"tags":["petrus-paulus","sexta","capitulum"],
+		"datum":"Petrus quidem servabátur in cárcere. + Orátio autem fiébat sine intermissióne * ab Ecclésia ad Deum pro eo."
+	},
+	{
+		"tags":["petrus-paulus","nona","capitulum"],
+		"datum":"Et Petrus ad se revérsus, dixit: Nunc scio vere, quia misit Dóminus Ángelum suum, + et erípuit me de manu Heródis, * et de omni expectatióne plebis Judæórum."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1918",
+		"datum":"Hódie * Simon Petrus ascéndit crucis patíbulum, allelúja: hódie claviculárius regni gaúdens migrávit ad Christum: hódie Paulus Apóstolus, lumen orbis terræ inclináto cápite pro Christi nómine martýrio coronátus est, allelúja."
 	}
 ]

@@ -38,11 +38,14 @@
 		"src":"gregobase/2611",
 		"datum":[
 			"Egrégie Doctor Paule mores ínstrue,/Et nostra tecum péctora in cœlum trahe:/Veláta dum merídiem cernat fides,/Et solis instar sola regnet cáritas.",
-			"Sit Trinitáti sempitérna glória,/Honor, potéstas, atque jubilátio,/In unitáte, quæ gubérnat ómnia,/Per univérsa æternitátis sǽcula.","Amen."
+			"Sit Trinitáti sempitérna glória,/Honor, potéstas, atque jubilátio,/In unitáte quæ gubérnat ómnia,/Per univérsa æternitátis sǽcula.","Amen."
 		]
 	},
 	{
-		"tags":["conversio-pauli","vesperae","versiculus"],
+		"tags":[
+			["conversio-pauli","vesperae","versiculus"],
+			["conversio-pauli","laudes","versiculus"]
+		],
 		"datum":["V. Tu es vas electiónis sancte Paule Apóstole.","R. Prædicátor veritátis in univérso mundo."]
 	},
 	{
@@ -54,6 +57,19 @@
 		"tags":["conversio-pauli","collecta"],
 		"datum":"Deus, qui univérsum mundum beáti Pauli Apóstoli prædicatióne docuísti: + da nobis quǽsumus; ut qui ejus hódie Conversiónem cólimus, * per ejus ad te exémpla gradiámur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["conversio-pauli","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12436",
+		"datum":"Vos qui secúti estis me, * sedébitis super sedes, judicántes duódecim tribus Ísraël, dicit Dóminus."
+	},
+	{
+		"tags":["conversio-pauli","sexta","capitulum"],
+		"datum":"Surréxit autem Saulus de terra, apertísque óculis nihil vidébat. + Ad manus autem illum trahéntes, introduxérunt Damáscum. * Et erat ibi tribus diébus non videns, et non manducávit, neque bibit."
+	},
+	{
+		"tags":["conversio-pauli","nona","capitulum"],
+		"datum":"Saulus autem multo magis convalescébat, + et confundébat Judǽos, qui habitábant Damásci, * affírmans quóniam hic est Christus."
 	},
 	{
 		"tags":["conversio-pauli","ii-vesperae","antiphona","antiphona-magnificat"],
