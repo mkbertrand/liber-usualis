@@ -59,7 +59,8 @@
 	{
 		"tags":[
 			["pentecostes","i-vesperae","versiculus"],
-			["pentecostes","laudes","versiculus"]
+			["pentecostes","laudes","versiculus"],
+			["pentecostes","feria-iv","matutinum","versiculus"]
 		],
 		"datum":["V. Repléti sunt omnes Spíritu sancto, allelúja.","R. Et cœpérunt loqui, allelúja."]
 	},
@@ -87,7 +88,7 @@
 			"Cum lucis hora tértia/Repénte mundus íntonat,/Apóstolis orántibus/Deum veníre núntiat.",
 			"De Patris ergo lúmine/Decórus ignis almus est,/Qui fida Christi péctora/Calóre Verbi cómpleat.",
 			"Impléta gaudent víscera,/Affláta sancto Spíritu,/Vocésque divérsas sonant,/Fantur Dei magnália.",
-			"Notíque cunctis Géntibus,/Græcis, Latínis, Bárbaris,/Simúlque loquúntur ómnium.",
+			"Notíque cunctis Géntibus,/Græcis, Latínis, Bárbaris,/Simúlque demirántibus,/Linguis loquúntur ómnium.",
 			"Judǽa tunc incrédula,/Vesána torvo spíritu,/Madére musto sóbrios/Christi fidéles íncrepat.",
 			"Sed éditis miráculis/Occúrrit, et docet Petrus,/Falsum profári pérfidos,/Joéle teste cómprobans.",
 			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
@@ -326,5 +327,53 @@
 		"tags":["pentecostes","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2864",
 		"datum":"Pacem * relínquo vobis, pacem meam do vobis: non quómodo mundus dat, ego do vobis, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-iv","infra-octavam","nomen"],
+		"datum":"Feria IV Quatuor Temporum"
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"In illo témpore: Dixit Jesus turbis Judæórum: Nemo potest veníre ad me, nisi Pater, qui misit me, tráxerit eum. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Noli cogitáre te invítum trahi: tráhitur ánimus et amóre. Nec timére debémus, ne ab homínibus, qui verba perpéndunt, et a rebus máxime divínis intelligéndis longe remóti sunt, in hoc Scripturárum sanctárum evangélico verbo fórsitan reprehendámur, et dicátur nobis: Quómodo voluntáte credo, si trahor? Ego dico: Parum est voluntáte: étiam voluptáte tráheris. Quid est, trahi voluptáte? Delectáre in Dómino: et dabit tibi petitiónes cordis tui. Est quædam volúptas cordis, cui panis dulcis est ille cœléstis. Porro si poétæ dícere lícuit: Trahit sua quemque volúptas: non necéssitas, sed volúptas; non obligátio, sed delectátio: quanto fórtius nos dícere debémus, trahi hóminem ad Christum, qui delectátur veritáte, delectátur beatitúdine, delectátur justítia, delectátur sempitérna vita, quod totum Christus est? An vero habent córporis sensus voluptátes suas, et ánimus deséritur a voluptátibus suis? Si ánimus non habet voluptátes suas, unde dícitur: Fílii autem hóminum sub tégmine alárum tuárum sperábunt: Inebriabúntur ab ubertáte domus tuæ, et torrénte voluptátis tuæ potábis eos. Quóniam apud te est fons vitæ: et in lúmine tuo vidébimus lumen?"
+		]
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","responsorium","responsorium-i"],
+		"incipit":"Disciplínam et sapiéntiam dócuit eos Dóminus, allelúja: firmávit in illis grátiam Spíritus sui,",
+		"responsum":"Et intelléctu implévit corda eórum, allelúja.",
+		"versus":"Repentíno namque sónitu Spíritus sanctus super eos venit."
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","lectio","lectio-ii"],
+		"datum":"Da amántem, et sentit quod dico: da desiderántem, da esuriéntem, da in ista solitúdine peregrinántem, atque sitiéntem, et fontem ætérnæ pátriæ suspirántem: da talem, et scit quid dicam. Si autem frígido loquor, nescit, quid loquor. Tales erant isti, qui ínvicem murmurábant. Pater, inquit, quem tráxerit, venit ad me. Quid est autem, Pater quem tráxerit, cum ipse Christus trahat? Quare vóluit dícere, Pater quem tráxerit? Si trahéndi sumus, ab illo trahámur, cui dicit quædam, quæ díligit: Post odórem unguentórum tuórum currémus. Sed quid intélligi vóluit, advertámus fratres, et quantum póssumus, capiámus. Trahit Pater ad Fílium eos, qui proptérea credunt in Fílium, quia eum cógitant Patrem habére Deum. Deus enim Pater æquálem sibi génuit Fílium: et qui cógitat, atque in fide sua sentit et rúminat, æquálem esse Patri eum, in quem crédidit, ipsum trahit Pater ad Fílium."
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Ite in univérsum orbem, et prædicáte Evangélium, allelúja:",
+		"responsum":"Qui credíderit, et baptizátus fúerit, salvus erit, allelúja, allelúja, allelúja.",
+		"versus":"In nómine meo dæmónia ejícient, linguis loquéntur novis, serpéntes tollent."
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","lectio","lectio-iii"],
+		"datum":"Aríus crédidit creatúram, non eum traxit Pater: quia non consíderat Patrem, qui Fílium non credit æquálem. Quid dicis, o Ari? Quid dicis hærétice? quid lóqueris? Quid est Christus? Non, inquit, Deus verus, sed quem fecit Deus verus. Non te traxit Pater: non enim intellexísti Patrem, cujus Fílium negas. Áliud cógitas, non est ipse Fílius: nec a Patre tráheris, nec ad Fílium tráheris. Áliud est enim Fílius, áliud quod tu dicis. Photínus dicit: Homo solum est Christus, non est et Deus. Qui sic credit, non Pater eum traxit. Quem traxit Pater? Illum qui dicit: Tu es Christus Fílius Dei vivi. Ramum víridem osténdis ovi, et trahis illam. Nuces púero demonstrántur, et tráhitur: et quod currit, tráhitur, amándo tráhitur, sine læsióne córporis tráhitur, cordis vínculo tráhitur. Si ergo ista, quæ inter delícias et voluptátes terrénas revelántur amántibus, trahunt, quóniam verum est. Trahit sua quemque volúptas: non trahit revelátus Christus a Patre? Quid enim fórtius desíderat ánima, quam veritátem?"
+	},
+	{
+		"tags":["pentecostes","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12949",
+		"datum":"Ego sum panis vivus, * dicit Dóminus, qui de cœlo descéndi, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-iv","collecta"],
+		"datum":"Mentes nostras, quǽsumus Dómine, Paráclitus, qui a te procédit, illúminet: * et indúcat in omnem, sicut tuus promísit Fílius, veritátem:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":["pentecostes","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2047",
+		"datum":"Ego sum panis vivus, * qui de cœlo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum: et panis, quem ego dabo, caro mea est pro mundi vita, allelúja."
 	}
 ]
