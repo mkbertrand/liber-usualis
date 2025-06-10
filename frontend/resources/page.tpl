@@ -18,6 +18,7 @@
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=8">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=8">
+		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
