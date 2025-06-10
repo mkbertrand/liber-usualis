@@ -5,6 +5,14 @@
 <html lang='en'>
 	<head>
 		<title>{{title}}</title>
+		<script type="application/ld+json">
+		{
+			"@context":"https://schema.org",
+			"@type":"WebSite",
+			"name":"Liber Usualis",
+			"url":"https://liberusualis.org/"
+		}
+		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
