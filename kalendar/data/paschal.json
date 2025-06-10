@@ -602,7 +602,12 @@
 	{
 		"basis":"pascha",
 		"offset":56,
-		"tags":["trinitas","pentecostes","duplex-ii-classis","post-pentecosten","per-annum","dominica","dominica-i-classis","dies-octava"]
+		"tags":["trinitas","duplex-ii-classis","post-pentecosten","per-annum","dominica-i-classis"]
+	},
+	{
+		"basis":"pascha",
+		"offset":56,
+		"tags":["dominica","per-annum","hebdomada-i-pentecostes","semiduplex","commemoratio"]
 	},
 	{
 		"basis":"pascha",

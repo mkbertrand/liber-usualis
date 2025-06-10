@@ -142,7 +142,10 @@
 		"datum":"Ad societátem cívium supernórum * perdúcat nos Rex Angelórum."
 	},
 	{
-		"tags":["matutinum","commemoratio","lectio-iii","benedictio"],
+		"tags":[
+			["matutinum","commemoratio","lectio-iii","benedictio"],
+			["benedictio","per-evangelica-dicta"]
+		],
 		"datum":"Per Evangélica dicta * deleántur nostra delícta."
 	},
 	{
