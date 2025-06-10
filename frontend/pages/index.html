@@ -49,6 +49,7 @@
 		var primary = this.day.filter((tags) => tags.includes('primarium'))[0];
 		this.color = primary.filter((tag) => colors.includes(tag))[0];
 		this.initialized = true;
+		window.scrollTo({top:0});
 	},
 	get Coincidences() {
 		if (this.names == '') {
