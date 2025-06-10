@@ -102,7 +102,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					if (data['datum'][1]['tags'].includes('responsorium-i')) {
 						switch(nn) { case 1: header = 'Responsorium I'; break; case 2: header = 'Responsorium IV'; break; case 3: header = 'Responsorium VII';};
 					} else if (data['datum'][1]['tags'].includes('responsorium-ii')) {
-						switch(nn) { case 1: header = 'Responsorium II'; break; case 2: header = 'Responsorium V'; break; case 3: header = 'Responsorium VII';};
+						switch(nn) { case 1: header = 'Responsorium II'; break; case 2: header = 'Responsorium V'; break; case 3: header = 'Responsorium VIII';};
 					} else if (data['datum'][1]['tags'].includes('responsorium-iii')) {
 						switch(nn) { case 1: header = 'Responsorium III'; break; case 2: header = 'Responsorium VI'; break; case 3: header = 'Responsorium IX';};
 					}
@@ -119,7 +119,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
 			} else if (data['tags'].includes('formula-lectionis')) {
 				header = 'Lectio';
-				btags = typeof data['datum'][1]['datum'] === 'object' ? data['datum'][1]['datum']['tags'] : data['datum'][1]['tags'];
+				btags = (typeof data['datum'][1]['datum'] === 'object' ? data['datum'][1]['datum']['tags'].concat(data['datum'][1]['tags']) : data['datum'][1]['tags']);
 				if (btags.includes('lectio-brevis')) {
 					header = 'Lectio Brevis';
 				} else {
@@ -132,7 +132,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					if (btags.includes('lectio-i')) {
 						switch(nn) { case 1: header = 'Lectio I'; break; case 2: header = 'Lectio IV'; break; case 3: header = 'Lectio VII';};
 					} else if (btags.includes('lectio-ii')) {
-						switch(nn) { case 1: header = 'Lectio II'; break; case 2: header = 'Lectio V'; break; case 3: header = 'Lectio VII';};
+						switch(nn) { case 1: header = 'Lectio II'; break; case 2: header = 'Lectio V'; break; case 3: header = 'Lectio VIII';};
 					} else if (btags.includes('lectio-iii')) {
 						switch(nn) { case 1: header = 'Lectio III'; break; case 2: header = 'Lectio VI'; break; case 3: header = 'Lectio IX';};
 					}
