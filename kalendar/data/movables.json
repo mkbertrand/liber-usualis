@@ -256,5 +256,28 @@
 			["feria-vi","hebdomada-passionis"]
 		],
 		"tags":["psalmi-poenitentiales"]
+	},
+	{
+		"occurrence":[
+			["hebdomada-i-adventus","feria-ii"],
+			["hebdomada-ii-adventus","feria-ii"],
+			["hebdomada-iii-adventus","feria-ii"],
+			["hebdomada-iv-adventus","feria-ii"],
+			["kalendae-januarii"],
+			["kalendae-februarii"],
+			["kalendae-martii"],
+			["hebdomada-i-quadragesimae","feria-ii"],
+			["hebdomada-ii-quadragesimae","feria-ii"],
+			["hebdomada-iii-quadragesimae","feria-ii"],
+			["hebdomada-iv-quadragesimae","feria-ii"],
+			["hebdomada-passionis","feria-ii"],
+			["kalendae-junii"],
+			["kalendae-julii"],
+			["kalendae-augusti"],
+			["kalendae-septembris"],
+			["kalendae-octobris"],
+			["kalendae-novembris"]
+		],
+		"tags":["officium-defunctorum"]
 	}
 ]

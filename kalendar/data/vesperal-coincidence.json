@@ -42,6 +42,11 @@
 		"response":"dele"
 	},
 	{
+		"include":["officium-defunctorum","ii-vesperae"],
+		"recheck":false,
+		"response":"dele"
+	},
+	{
 		"include":["nativitas","infra-octavam","ii-vesperae"],
 		"recheck":false,
 		"response":[

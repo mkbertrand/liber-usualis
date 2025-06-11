@@ -741,6 +741,18 @@
 		]
 	},
 	{
+		"include":["officium-defunctorum"],
+		"response":[
+			{"include":["in-tempore-paschali"],"response":"transfer","target":0,"movement":1},
+			{"include":["duplex-i-classis"],"response":"transfer","target":0,"movement":1},
+			{"include":["duplex-ii-classis"],"response":"transfer","target":0,"movement":1},
+			{"include":["duplex-majus"],"response":"transfer","target":0,"movement":1},
+			{"include":["duplex-minus"],"response":"transfer","target":0,"movement":1},
+			{"include":["semiduplex"],"response":"transfer","target":0,"movement":1},
+			{"include":["officium-defunctorum"],"response":"dele","target":1}
+		]
+	},
+	{
 		"include":["in-tempore-adventus"],
 		"recheck":false,
 		"response":[
