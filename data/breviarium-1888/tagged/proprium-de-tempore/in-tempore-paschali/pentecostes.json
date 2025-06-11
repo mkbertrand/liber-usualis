@@ -60,7 +60,8 @@
 		"tags":[
 			["pentecostes","i-vesperae","versiculus"],
 			["pentecostes","laudes","versiculus"],
-			["pentecostes","feria-iv","matutinum","versiculus"]
+			["pentecostes","feria-iv","matutinum","versiculus"],
+			["pentecostes","sabbatum","matutinum","versiculus"]
 		],
 		"datum":["V. Repléti sunt omnes Spíritu sancto, allelúja.","R. Et cœpérunt loqui, allelúja."]
 	},
@@ -130,7 +131,8 @@
 	{
 		"tags":[
 			["pentecostes","festum","matutinum","versiculus"],
-			["pentecostes","feria-ii","matutinum","versiculus"]
+			["pentecostes","feria-ii","matutinum","versiculus"],
+			["pentecostes","feria-v","matutinum","versiculus"]
 		],
 		"datum":["V. Spíritus Dómini replévit orbem terrárum, allelúja.","R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja."]
 	},
@@ -159,7 +161,10 @@
 		"datum":"Sed ecce, si unusquísque vestrum requirátur, an díligat Deum: tota fidúcia, et secúra mente respóndet, Díligo. In ipso autem lectiónis exórdio audístis quid Véritas dicit: Si quis díligit me, sermónem meum servábit. Probátio ergo dilectiónis, exhibítio est óperis. Hinc in epístola sua idem Joánnes dicit: Qui dicit, Díligo Deum, et mandáta ejus non custódit, mendax est. Vere étenim Deum dilígimus et mandáta ejus custodímus, si nos a nostris voluptátibus coarctámus. Nam qui adhuc per illícita desidéria díffluit, profécto Deum non amat: quia ei in sua voluntáte contradícit."
 	},
 	{
-		"tags":["pentecostes","festum","matutinum","responsorium","responsorium-ii"],
+		"tags":[
+			["pentecostes","festum","matutinum","responsorium","responsorium-ii"],
+			["pentecostes","sabbatum","matutinum","responsorium","responsorium-i"]
+		],
 		"src":"nocturnale/P7R2",
 		"incipit":"Repléti sunt omnes Spíritu sancto: et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illis:",
 		"responsum":"Et convénit multitúdo dicéntium, allelúja.",
@@ -196,7 +201,8 @@
 	{
 		"tags":[
 			["pentecostes","tertia","versiculus"],
-			["pentecostes","feria-iii","matutinum","versiculus"]
+			["pentecostes","feria-iii","matutinum","versiculus"],
+			["pentecostes","feria-vi","matutinum","versiculus"]
 		],
 		"datum":["V. Spíritus Paráclitus, allelúja.","R. Docébit vos ómnia, allelúja."]
 	},
@@ -250,7 +256,11 @@
 		]
 	},
 	{
-		"tags":["pentecostes","feria-ii","matutinum","responsorium","responsorium-i"],
+		"tags":[
+			["pentecostes","feria-ii","matutinum","responsorium","responsorium-i"],
+			["pentecostes","sabbatum","matutinum","responsorium","responsorium-ii"]
+		],
+		"src":"nocturnale/P7F2R1",
 		"incipit":"Jam non dicam vos servos, sed amícos meos; quia ómnia cognovístis, quæ operátus sum in médio vestri, allelúja:",
 		"responsum":"Accípite Spíritum sanctum in vobis Paráclitum: ille est, quem Pater mittet vobis, allelúja.",
 		"versus":"Vos amíci mei estis, si fecéritis quæ ego præcípio vobis."
@@ -261,6 +271,7 @@
 	},
 	{
 		"tags":["pentecostes","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P7F2R2",
 		"incipit":"Spíritus sanctus procédens a throno, Apostolórum péctora invisibíliter penetrávit novo sanctificatiónis signo:",
 		"responsum":"Ut in ore eórum ómnium génera nasceréntur linguárum, allelúja.",
 		"versus":"Advénit ignis divínus, non combúrens, sed illúminans, et tríbuit eis charísmatum dona."
@@ -295,6 +306,7 @@
 	},
 	{
 		"tags":["pentecostes","feria-iii","matutinum","responsorium","responsorium-i"],
+		"src":"nocturnale/P7F3R1",
 		"incipit":"Apparuérunt Apóstolis dispertítæ linguæ tamquam ignis, allelúja:",
 		"responsum":"Sedítque supra síngulos eórum Spíritus sanctus, allelúja, allelúja.",
 		"versus":"Et cœpérunt loqui váriis linguis, prout Spíritus sanctus dabat éloqui illis."
@@ -305,6 +317,7 @@
 	},
 	{
 		"tags":["pentecostes","feria-iii","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P7F3R2",
 		"incipit":"Loquebántur váriis linguis Apóstoli magnália Dei,",
 		"responsum":"Prout Spíritus sanctus dabat éloqui illis, allelúja.",
 		"versus":"Repléti sunt omnes Spíritu sancto, et cœpérunt loqui."
@@ -343,6 +356,7 @@
 	},
 	{
 		"tags":["pentecostes","feria-iv","matutinum","responsorium","responsorium-i"],
+		"src":"nocturnale/P7F4R1",
 		"incipit":"Disciplínam et sapiéntiam dócuit eos Dóminus, allelúja: firmávit in illis grátiam Spíritus sui,",
 		"responsum":"Et intelléctu implévit corda eórum, allelúja.",
 		"versus":"Repentíno namque sónitu Spíritus sanctus super eos venit."
@@ -353,6 +367,7 @@
 	},
 	{
 		"tags":["pentecostes","feria-iv","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P7F4R2",
 		"incipit":"Ite in univérsum orbem, et prædicáte Evangélium, allelúja:",
 		"responsum":"Qui credíderit, et baptizátus fúerit, salvus erit, allelúja, allelúja, allelúja.",
 		"versus":"In nómine meo dæmónia ejícient, linguis loquéntur novis, serpéntes tollent."
@@ -375,5 +390,132 @@
 		"tags":["pentecostes","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2047",
 		"datum":"Ego sum panis vivus, * qui de cœlo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum: et panis, quem ego dabo, caro mea est pro mundi vita, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Convocátis Jesus duódecim Apóstolis, dedit illis virtútem et potestátem super ómnia dæmónia, et ut languóres curárent. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"Qualis débeat esse qui evangelízat regnum Dei, præcéptis evangélicis designátur: ut sine virga, sine pera, sine calceaménto, sine pane, sine pecúnia, hoc est, subsídii sæculáris adminícula non requírens, fidéque tutus, putet sibi quo minus ea requírat, magis posse suppétere. Quæ possunt, qui volunt, ad eum deriváre tractátum, ut spiritálem tantúmmodo locus iste formáre videátur afféctum: qui velut induméntum quoddam videátur córporis exuísse, non solum potestáte rejécta contemptísque divítiis, sed étiam carnis ipsíus illécebris abdicátis. Quibus primo ómnium datur pacis atque constántiæ generále mandátum, ut pacem ferant, constántiam servent, hospitális necessitúdinis jura custódiant: aliénum a prædicatóre regni cœléstis ástruens cursitáre per domos, et inviolábilis hospítii jura mutáre."
+		]
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","responsorium","responsorium-i"],
+		"src":"nocturnale/P7F5R1",
+		"incipit":"Advénit ignis divínus, non combúrens, sed illúminans; non consúmens, sed lucens: et invénit corda discipulórum receptácula munda:",
+		"responsum":"Et tríbuit eis charísmatum dona, allelúja, allelúja.",
+		"versus":"Invénit eos concórdes caritáte, et collustrávit eos inúndans grátia Deitátis."
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","lectio","lectio-ii"],
+		"datum":"Sed ut hospítii grátia deferénda censétur: ita étiam, si non recipiántur, excutiéndum púlverem, et egrediéndum de civitáte mandátur. Quo non medíocris boni remunerátio docétur hospítii: ut non solum pacem tribuámus hospítibus, verum étiam, si qua eos terrénæ obúmbrant delícta levitátis, recéptis apostólicæ prædicatiónis vestígiis auferántur. Nec otióse secúndum Matthǽum, domus, quam ingrediántur Apóstoli, eligénda decérnitur: ut mutándi hospítii, necessitudinísque violándæ causa non súppetat. Non tamen éadem caútio receptóri mandátur hospítii: ne, dum hospes elígitur, hospitálitas ipsa minuátur."
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P7F5R2",
+		"incipit":"Spíritus sanctus replévit totam domum, ubi erant Apóstoli: et apparuérunt illis dispertítæ linguæ, tamquam ignis, sedítque supra síngulos eórum:",
+		"responsum":"Et repléti sunt omnes Spíritu sancto: et cœpérunt loqui váriis linguis, prout Spíritus sanctus dabat éloqui illis, allelúja, allelúja, allelúja.",
+		"versus":"Dum ergo essent in unum discípuli congregáti propter metum Judæórum, sonus repénte de cœlo venit super eos."
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","lectio","lectio-iii"],
+		"datum":"Sed hæc, ut secúndum lítteram de hospítii religióne venerábilis est forma præcépti: ita étiam de mystério senténtia cœléstis arrídet. Étenim cum domus elígitur, dignus hospes inquíritur. Videámus ígitur, ne forte Ecclésia præferénda designétur, et Christus. Quæ enim dígnior domus apostólicæ prædicatiónis ingréssu, quam sancta Ecclésia? Aut quis præferéndus magis ómnibus vidétur esse, quam Christus, qui pedes suis laváre consuévit hospítibus: et quoscúmque sua recéperit domo, pollútis non patiátur habitáre vestígiis: sed maculósos licet vitæ prióris, in réliquum tamen dignétur mundáre procéssus? Hic est ígitur solus, quem nemo debet desérere, nemo mutáre. Cui bene dícitur: Dómine, ad quem íbimus? verba vitæ ætérnæ habes, et nos crédimus."
+	},
+	{
+		"tags":["pentecostes","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12178",
+		"datum":"Convocátis Jesus * duódecim discípulis suis, dedit illis virtútem et potestátem super ómnia dæmónia, et ut languóres curárent: et misit illos prædicáre regnum Dei, et sanáre infírmos, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-v","collecta"],
+		"datum":"Deus, qui hodiérna die corda fidélium sancti Spíritus illustratióne docuísti: + da nobis in eódem Spíritu recta sápere, * et de ejus semper consolatióne gaudére.",
+		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
+	},
+	{
+		"tags":["pentecostes","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2574",
+		"datum":"Spíritus * qui a Patre procédit, allelúja: ille me clarificábit, allelúja, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-vi","infra-octavam","nomen"],
+		"datum":"Feria VI Quatuor Temporum"
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Factum est in una diérum, et Jesus sedébat docens. Et erant pharisǽi sedéntes, et legis doctóres, qui vénerant ex omni castéllo Galilǽæ, et Judǽæ, et Jerúsalem: et virtus Dómini erat ad sanándum eos. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"Non otiósa hujus paralýtici, nec angústa medicína est, quando Dóminus et orásse præmíttitur: non útique propter suffrágium, sed propter exémplum. Imitándi enim spécimen dedit, non precándi ámbitum requisívit. Et conveniéntibus ex omni Galilǽa, et Judǽa, et Jerúsalem legis doctóribus, inter ceterórum remédia debílium, paralýtici istíus medicína descríbitur. Primum ómnium, quod ante díximus, unusquísque æger peténdæ precatóres salútis debet adhibére, per quos nostræ vitæ compágo resolúta, actuúmque nostrórum clauda vestígia, verbi cœléstis remédio reforméntur."
+		]
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","responsorium","responsorium-i"],
+		"src":"nocturnale/P7F6R1",
+		"incipit":"Non vos me elegístis, sed ego elégi vos, et pósui vos:",
+		"responsum":"Ut eátis, et fructum afferátis, et fructus vester máneat, allelúja, allelúja.",
+		"versus":"Sicut misit me Pater, et ego mitto vos."
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","lectio","lectio-ii"],
+		"datum":"Sint ígitur áliqui monitóres mentis, qui ánimum hóminis, quamvis exterióris córporis debilitáte torpéntem, ad superióra érigant. Quorum rursus adminículis et attóllere et humiliáre se fácilis ante Jesum locétur, Domínico vidéri dignus aspéctu. Humilitátem enim réspicit Dóminus: quia respéxit humilitátem ancíllæ suæ. Quorum fidem ut vidit, dixit: Homo, remittúntur tibi peccáta tua. Magnus Dóminus, qui aliórum mérito ignóscit áliis: et dum álios probat, áliis reláxat erráta. Cur apud te, homo, colléga non váleat, cum apud Deum servus et interveniéndi méritum, et jus hábeat impetrándi?"
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","responsorium","responsorium-ii"],
+		"src":"nocturnale/P7F6R2",
+		"incipit":"Spíritus Dómini replévit orbem terrárum:",
+		"responsum":"Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja, allelúja.",
+		"versus":"Ómnium est enim ártifex, omnem habens virtútem, ómnia prospíciens."
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","lectio","lectio-iii"],
+		"datum":"Disce qui júdicas, ignóscere: disce qui æger es, impetráre. Si grávium peccatórum diffídis véniam, ádhibe precatóres, ádhibe Ecclésiam, quæ pro te precétur, cujus contemplatióne, quod tibi Dóminus negáre posset, ignóscat. Et quamvis históriæ fidem non debeámus omíttere, ut vere paralýtici istíus corpus credámus esse sanátum: cognósce tamen interióris hóminis sanitátem, cui peccáta donántur. Cum Judǽi ásserunt peccáta a solo Deo posse concédi, Deum útique eum confiténtur: suóque judício perfídiam suam produnt, qui opus ástruunt, ut persónam negent."
+	},
+	{
+		"tags":["pentecostes","feria-vi","laudes","antiphona","antiphona-magnificat"],
+		"src":"gregobase/13321",
+		"datum":"Dixit Jesus: * Ut sciátis autem, quia Fílius hóminis habet potestátem in terra dimitténdi peccáta, ait paralýtico: Tibi dico, surge: tolle lectum tuum, et vade in domum tuam, allelúja."
+	},
+	{
+		"tags":["pentecostes","feria-vi","collecta"],
+		"datum":"Da quǽsumus Ecclésiæ tuæ miséricors Deus: + ut sancto Spíritu congregáta, * hostíli nullátenus incursióne turbétur.",
+		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
+	},
+	{
+		"tags":["pentecostes","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2488",
+		"datum":"Paráclitus autem * Spíritu sanctus, quem mittet Pater in nómine meo, ille vos docébit ómnia, et súggeret vobis ómnia, quæcúmque díxero vobis, allelúja."
+	},
+	{
+		"tags":["pentecostes","sabbatum","infra-octavam","nomen"],
+		"datum":"Sabbatum Quatuor Temporum"
+	},
+	{
+		"tags":["pentecostes","sabbatum","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Surgens Jesus de synagóga, introívit in domum Simónis. Socrus autem Simónis tenebátur magnis fébribus. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"Vide cleméntiam Dómini Salvatóris: nec indignatióne commótus, nec scélere offénsus, nec injúria violátus Judǽam déserit: quin étiam ímmemor injúriæ, memor cleméntiæ, nunc docéndo, nunc liberándo, nunc sanándo, infídæ plebis corda demúlcet. Et bene sanctus Lucas virum ab spíritu nequítiæ liberátum ante præmísit, et subdit féminæ sanitátem. Utrúmque enim sexum Dóminus curatúrus advénerat: sed prior sanári débuit, qui prior creátus est; nec prætermítti illa, quæ mobilitáte magis ánimi, quam pravitáte peccáverat."
+		]
+	},
+	{
+		"tags":["pentecostes","sabbatum","matutinum","lectio","lectio-ii"],
+		"datum":"Sábbato medicínæ Domínicæ ópera cœpta signíficat, ut inde nova creatúra cœperit, ubi vetus creatúra ante desívit: nec sub lege esse Dei Fílium, sed supra legem in ipso princípio designáret: nec solvi legem, sed impléri. Neque enim per legem, sed verbo factus est mundus, sicut légimus: Verbo Dómini cœli firmáti sunt. Non sólvitur ergo lex, sed implétur: ut fiat renovátio hóminis jam labéntis. Unde et Apóstolus ait: Exspoliántes vos véterem hóminem, indúite novum, qui secúndum Deum creátus est."
+	},
+	{
+		"tags":["pentecostes","sabbatum","matutinum","lectio","lectio-iii"],
+		"datum":"Et bene sábbato cœpit, ut ipsum se osténderet Creatórem, qui ópera opéribus intéxeret, et prosequerétur opus, quod ipse jam cœperat: ut si domum faber renováre dispónat, non a fundaméntis, sed a culmínibus íncipit sólvere vetustátem. Ítaque ibi prius manum ádmovet, ubi ante desíerat: deínde a minóribus íncipit, ut ad majóra pervéniat. Liberáre a dǽmone et hómines, sed in verbo Dei possunt: resurrectiónem mórtuis imperáre, divínæ solíus est potestátis. Fortássis étiam in typo mulíeris illíus socrus Simónis et Andréæ, váriis críminum fébribus caro nostra languébat, et diversárum cupiditátum immódicis æstuábat illécebris. Nec minórem febrem amóris esse díxerim, quam calóris. Ítaque illa ánimum, hæc corpus inflámmat. Febris enim nostra, avarítia est: febris nostra, libído est: febris nostra, luxúria est: febris nostra, ambítio est: febris nostra, iracúndia est."
+	},
+	{
+		"tags":["pentecostes","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12491",
+		"datum":"Cáritas Dei * diffúsa est in córdibus nostris, per inhabitántem Spíritum ejus in nobis, allelúja."
+	},
+	{
+		"tags":["pentecostes","sabbatum","collecta"],
+		"datum":"Méntibus nostris, quǽsumus Dómine, Spíritum sanctum benígnus infúnde: + cujus et sapiéntia cónditi sumus, * et providéntia gubernámur.",
+		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
 	}
 ]
