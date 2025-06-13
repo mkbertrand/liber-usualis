@@ -365,7 +365,7 @@ def kalendar(year: int) -> Kalendar:
 
 	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 	roletags = set(roletagsordered)
-	noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'antiphona-bmv'}
+	noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'officium-defunctorum', 'antiphona-bmv'}
 
 	for entrydate, entries in kal.items():
 		for entry in entries:

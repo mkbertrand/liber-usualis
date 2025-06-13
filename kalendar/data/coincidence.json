@@ -753,10 +753,6 @@
 		]
 	},
 	{
-		"include":["officium-defunctorum"],
-		"response":"omissum"
-	},
-	{
 		"include":["in-tempore-adventus"],
 		"recheck":false,
 		"response":[
