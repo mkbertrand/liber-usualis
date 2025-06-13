@@ -26,5 +26,38 @@
 		"tags":["hebdomada-i-pentecostes","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2053",
 		"datum":"Nolíte judicáre, * ut non judicémini: in quo enim judício judicavéritis, judicabímini, dicit Dóminus."
+	},
+	{
+		"tags":["hebdomada-i-pentecostes","feria-ii","lectio","lectio-i"],
+		"datum":[
+			"Íncipit liber primus Regum.",
+			"Fuit vir unus de Ramáthaim Sophim, de monte Éphraïm, et nomen ejus Élcana, fílius Jéroham, fílii Éliu, fílii Thohu, fílii Suph, Ephrathǽus: et hábuit duas uxóres, nomen uni Anna, et nomen secúndæ Phenénna. Fuerúntque Phenénnæ fílii: Annæ autem non erant líberi. Et ascendébat vir ille de civitáte sua statútis diébus, ut adoráret, et sacrificáret Dómino exercítuum in Silo. Erant autem ibi duo fílii Heli, Ophni et Phínees, sacerdótes Dómini."
+		]
+	},
+	{
+		"tags":["hebdomada-i-pentecostes","feria-ii","responsorium","responsorium-i"],
+		"incipit":"Præparáte corda vestra Dómino, et servíte illi soli:",
+		"responsum":"Et liberábit vos de mánibus inimicórum vestrórum.",
+		"versus":"Convertímini ad eum in toto corde vestro, et auférte deos aliénos de médio vestri."
+	},
+	{
+		"tags":["hebdomada-i-pentecostes","feria-ii","lectio","lectio-ii"],
+		"datum":"Venit ergo dies, et immolávit Élcana, dedítque Phenénnæ uxóri suæ, et cunctis fíliis ejus, et filiábus partes: Annæ autem dedit partem unam tristis, quia Annam diligébat. Dóminus autem conclúserat vulvam ejus. Affligébat quoque eam ǽmula ejus, et veheménter angébat, in tantum, ut exprobráret quod Dóminus conclusísset vulvam ejus: sicque faciébat per síngulos annos, cum redeúnte témpore ascénderent ad templum Dómini: et sic provocábat eam. Porro illa flebat, et non capiébat cibum. Dixit ergo ei Élcana vir suus: Anna, cur fles? et quare non cómedis? et quam ob rem afflígitur cor tuum? numquid non ego mélior tibi sum, quam decem fílii?"
+	},
+	{
+		"tags":["hebdomada-i-pentecostes","feria-ii","responsorium","responsorium-ii"],
+		"incipit":"Deus ómnium exaudítor est: ipse misit Ángelum suum, et tulit me de óvibus patris mei:",
+		"responsum":"Et unxit me unctióne misericórdiæ suæ.",
+		"versus":"Dóminus, qui erípuit me de ore leónis, et de manu béstiæ liberávit me."
+	},
+	{
+		"tags":["hebdomada-i-pentecostes","feria-ii","lectio","lectio-iii"],
+		"datum":"Surréxit autem Anna postquam coméderat et bíberat in Silo. Et Heli sacerdóte sedénte super sellam ante postes templi Dómini, cum esset Anna amáro ánimo, orávit ad Dóminum, flens lárgiter, et votum vovit, dicens: Dómine exercítuum, si respíciens víderis afflictiónem fámulæ tuæ, et recordátus mei fúeris, nec oblítus ancíllæ tuæ, dederísque servæ tuæ sexum virílem: dabo eum Dómino ómnibus diébus vitæ ejus, et novácula non ascéndet super caput ejus."
+	},
+	{
+		"tags":["hebdomada-i-pentecostes","feria-ii","responsorium","responsorium-iii"],
+		"incipit":"Dóminus, qui erípuit me de ore leónis, et de manu béstiæ liberávit me,",
+		"responsum":"Ipse me erípiet de mánibus inimicórum meórum.",
+		"versus":"Misit Deus misericórdiam suam, et veritátem suam: ánimam meam erípuit de médio catulórum leónum."
 	}
 ]
