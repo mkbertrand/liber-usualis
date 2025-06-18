@@ -35,6 +35,48 @@
 		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae","te-deum"]]
 	},
 	{
+		"tags":[
+			["matutinum","feria-ii","simplex","festum","versiculus"],
+			["matutinum","feria-v","simplex","festum","versiculus"]
+		],
+		"datum":[["nocturna-i","versiculus"]]
+	},
+	{
+		"tags":[
+			["matutinum","feria-iii","simplex","festum","versiculus"],
+			["matutinum","feria-vi","simplex","festum","versiculus"]
+		],
+		"datum":[["nocturna-ii","versiculus"]]
+	},
+	{
+		"tags":[
+			["matutinum","feria-iv","simplex","festum","versiculus"],
+			["matutinum","sabbatum","simplex","festum","versiculus"]
+		],
+		"datum":[["nocturna-iii","versiculus"]]
+	},
+	{
+		"tags":[
+			["matutinum","feria-ii","simplex","festum","responsorium"],
+			["matutinum","feria-v","simplex","festum","responsorium"]
+		],
+		"datum":[["nocturna-i","responsorium"]]
+	},
+	{
+		"tags":[
+			["matutinum","feria-iii","simplex","festum","responsorium"],
+			["matutinum","feria-vi","simplex","festum","responsorium"]
+		],
+		"datum":[["nocturna-ii","responsorium"]]
+	},
+	{
+		"tags":[
+			["matutinum","feria-iv","simplex","festum","responsorium"],
+			["matutinum","sabbatum","simplex","festum","responsorium"]
+		],
+		"datum":[["nocturna-iii","responsorium"]]
+	},
+	{
 		"tags":["matutinum","nocturnae","semiduplex","dominica"],
 		"datum":[
 			["matutinum","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],

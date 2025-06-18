@@ -220,7 +220,7 @@ def process(root, item, selected, alternates, pile):
 					alternates.append(selected - expandcat(root, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(root, 'positionales'))
 					pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
-					result = search(root, item['from'] | selected, pile)
+					item['from'] -= expandcat(root, 'temporale')
 					break
 
 				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item

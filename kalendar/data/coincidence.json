@@ -800,5 +800,21 @@
 		"response":[
 			{"include":["post-nativitatem"],"target":0,"response":"post-nativitatem"}
 		]
+	},
+	{
+		"include":["simplex"],
+		"exclude":["vigilia"],
+		"response":"festum"
+	},
+	{
+		"include":["simplex"],
+		"response":[
+			{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
+			{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
+			{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
+			{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
+			{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
+			{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
+		]
 	}
 ]
