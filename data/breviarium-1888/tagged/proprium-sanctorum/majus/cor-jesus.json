@@ -1,0 +1,123 @@
+[
+	{
+		"tags":["cor-jesus","nomen"],
+		"datum":"Ss. Cordis Domini Nostri Jesu Christi"
+	},
+	{
+		"tags":["cor-jesus","antiphona","antiphona-i"],
+		"datum":"Díscite a me, * quia mitis sum et húmilis corde."
+	},
+	{
+		"tags":["cor-jesus","vesperae","psalmus"],
+		"datum":[["corpus-christi","vesperae","i-vesperae","psalmus"]]
+	},
+	{
+		"tags":["cor-jesus","antiphona","antiphona-ii"],
+		"datum":"Sanctificávi locum * istum, ut sit nomen meum ibi in sempitérnum, et permáneant óculi mei et cor meum ibi cunctis diébis."
+	},
+	{
+		"tags":["cor-jesus","antiphona","antiphona-iii"],
+		"datum":"Et dixi: * Ergo sine causa justificávi cor meum, et lavi inter innocéntes manus meas, et fui flagellátus tota die."
+	},
+	{
+		"tags":["cor-jesus","antiphona","antiphona-iv"],
+		"datum":"Secúndum multitúdinem * dolórum meórum in corde meo, consolatiónes tuæ lætificavérunt ánimam meam."
+	},
+	{
+		"tags":["cor-jesus","antiphona","antiphona-v"],
+		"datum":"Pone me * ut signáculum super cor tuum, ut signáculum super bráchium tuum."
+	},
+	{
+		"tags":["cor-jesus","capitulum"],
+		"datum":"Ecce Deus Salvátor meus, fiduciálieter agam, et non timébo: quia fortitúdo mea et laus mea Dóminus, et factus est mihi in salútem. Hauriétis aquas in gaúdio de fóntibus Salvatóris."
+	},
+	{
+		"tags":["cor-jesus","vesperae","hymnus"],
+		"datum":[
+			"Auctor beáte sǽculi,/Christe Redémptor ómnium,/Lumen Patris de lúmine,/Deúsque verus de Deo.",
+			"Amor coégit te tuus/Mortále corpus súmere,/Ut novus Adam rédderes,/Quod vetus ille abstúlerat.",
+			"Ille amor almus ártifex/Terræ, marísque, et síderum,/Erráta patrum míserans,/Et nostra rumpens víncula.",
+			"Non corde discédat tuo/Vis illa amóris ínclyti:/Hoc fonte gentes haúriant/Remissiónis grátiam.",
+			"Percússam ad hoc est láncea,/Passúmque ad hoc est vúlnera,/Ut nos laváret sórdibus/Unda fluénte, et sánguine.",
+			"Decus Parénti, et Fílio,/Sanctóque sit Spirítui,/Quibus potéstas, glória,/Regnúmque in omne est sǽculum.","Amen."
+		]
+	},
+	{
+		"tags":["cor-jesus","i-vesperae","versiculus"],
+		"datum":["V. Ignem veni míttere in terram.","R. Et quid volo, nisi ut accendátur?"]
+	},
+	{
+		"tags":["cor-jesus","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Impropérium * exspectávit cor meum, et misériam: et sustínui qui simul contristarétur, et non fuit; et qui consolarétur, et non invéni."
+	},
+	{
+		"tags":["cor-jesus","collecta"],
+		"datum":"Concéde quǽsumus omnípotens Deus: ut, qui in sanctíssimo dilécti Fílii tui Corde gloriántes, præcípua in nos caritátis ejus benefícia recólimus; eórum páriter et actu delectémur et fructu.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["cor-jesus","laudes","hymnus"],
+		"datum":[
+			"Cor, arca legem cóntinens/Non servitútis véteris,/Sed grátiæ, sed véniæ,/Sed et misericórdiæ.",
+			"Cor, sanctuárium novi/Intemerátum fœderis,/Templum vetústo sánctius,/Velúmque scisso utílius.",
+			"Te vulnerátum cáritas/Ictu paténti vóluit,/Amóris invisíbilis/Ut venerémur vúlnera.",
+			"Hoc sub amóris sýmbolo/Passus cruénta et mýstica,/Utrúmque sacrifícium/Christus sacérdos óbtulit.",
+			"Quis non amántem rédamet?/Quis non redémptus díligat,/Et corde in isto séligat/Ætérna tabernácula?",
+			"Decus Parénti, et Fílio,/Sanctóque sit Spirítui,/Quibus potéstas, glória,/Regnúmque in omne est sǽculum.","Amen."
+		]
+	},
+	{
+		"tags":["cor-jesus","laudes","versiculus"],
+		"datum":["V. Vere languóres nostros ipse tulit.","R. Et dolóres nostros ipse portávit."]
+	},
+	{
+		"tags":["cor-jesus","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Vulnerátus est * propter iniquitátes nostras, attrítus est propter scélera nostra: disciplína pacis nostræ super eum, et livóre ejus sanáti sumus."
+	},
+	{
+		"tags":["cor-jesus","tertia","responsorium-breve"],
+		"incipit":"Vere",
+		"responsum":"Languóres nostros ipse tulit.",
+		"versus":"Et dolóres nostros ipse portávit."
+	},
+	{
+		"tags":["cor-jesus","tertia","versiculus"],
+		"datum":["V. Pósuit fines tuos pacem.","R. Et ádipe fruménti sátiat te."]
+	},
+	{
+		"tags":["cor-jesus","sexta","capitulum"],
+		"datum":"Dicétis in die illa: Confitémini Dómino, et invocáte nomen ejus: et mementóte quóniam excélsum est nomen ejus."
+	},
+	{
+		"tags":["cor-jesus","sexta","responsorium-breve"],
+		"incipit":"Pósuit",
+		"responsum":"Fines tuos pacem.",
+		"versus":"Et ádipe fruménti sátiat te."
+	},
+	{
+		"tags":["cor-jesus","sexta","versiculus"],
+		"datum":["V. Dirupísti Dómine víncula mea.","R. Tibi sacrificábo hóstiam laudis."]
+	},
+	{
+		"tags":["cor-jesus","nona","capitulum"],
+		"datum":"Cantáte Dómino quóniam magnífice fecit, annuntiáte hoc in univérsa terra. Exsúlta et lauda habitátio Sion, quia magnus in médio tui sanctus Ísraël."
+	},
+	{
+		"tags":["cor-jesus","nona","responsorium-breve"],
+		"incipit":"Dirupísti Dómine",
+		"responsum":"Víncula mea.",
+		"versus":"Tibi sacrificábo hóstiam laudis."
+	},
+	{
+		"tags":["cor-jesus","nona","versiculus"],
+		"datum":["V. Erit Dóminus nominátus in signum ætérnum.","R. Quod non auferétur."]
+	},
+	{
+		"tags":["cor-jesus","ii-vesperae","versiculus"],
+		"datum":["V. Hauriétis aquas in gaúdio.","R. De fóntibus Salvatóris."]
+	},
+	{
+		"tags":["cor-jesus","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Ad Jesum autem * cum veníssent, ut vidérunt eum jam mórtuum, non fregérunt ejus crura: sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua."
+	}
+]

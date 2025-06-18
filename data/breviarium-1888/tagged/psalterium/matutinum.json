@@ -296,6 +296,21 @@
 		]
 	},
 	{
+		"tags":["lectio-iii","lectiones-diei-illi"],
+		"datum":[["lectio-i","lectio-ii","lectio-iii"]]
+	},
+	{
+		"tags":["lectiones","initium-libri-resumendi"],
+		"datum":[
+			["formula","formula-lectionis","lectio-i"],
+			["formula","responsorium","responsorium-i"],
+			["formula","formula-lectionis","lectio-ii"],
+			["formula","responsorium","responsorium-ii"],
+			["formula","formula-lectionis","lectio-iii","lectiones-diei-illi"],
+			["formula","responsorium","responsorium-iii","gloria"]
+		]
+	},
+	{
 		"tags":["lectiones","te-deum"],
 		"datum":[
 			["formula","formula-lectionis","lectio-i"],
