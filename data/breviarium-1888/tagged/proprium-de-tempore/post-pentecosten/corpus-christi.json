@@ -4,23 +4,115 @@
 		"datum":"In Festo Corporis Christi"
 	},
 	{
+		"tags":["corpus-christi","antiphona","antiphona-i"],
+		"datum":"Sacérdos in ætérnum * Christus Dóminus secúndum órdinem Melchísedech, panem et vinum óbtulit."
+	},
+	{
 		"tags":["corpus-christi","i-vesperae","psalmus","psalmus-i"],
 		"datum":[["/psalmi/psalmus-cix,gloria"]]
+	},
+	{
+		"tags":["corpus-christi","antiphona","antiphona-ii"],
+		"datum":"Miserátor Dóminus * escam dedit timéntibus se in memóriam suórum mirabílium."
 	},
 	{
 		"tags":["corpus-christi","i-vesperae","psalmus","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
+		"tags":["corpus-christi","antiphona","antiphona-iii"],
+		"datum":"Cálicem salutáris * accípiam, et sacrificábo hóstiam laudis."
+	},
+	{
 		"tags":["corpus-christi","i-vesperae","psalmus","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
+	},
+	{
+		"tags":["corpus-christi","antiphona","antiphona-iv"],
+		"datum":"Sicut novéllæ olivárum, * Ecclésiæ fílii sint in circúitu mensæ Dómini."
 	},
 	{
 		"tags":["corpus-christi","i-vesperae","psalmus","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-cxxvii,gloria"]]
 	},
 	{
+		"tags":["corpus-christi","antiphona","antiphona-v"],
+		"datum":"Qui pacem * ponit fines Ecclésiæ, fruménti ádipe sátiat nos Dóminus."
+	},
+	{
 		"tags":["corpus-christi","i-vesperae","psalmus","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxlvii,gloria"]]
+	},
+	{
+		"tags":["corpus-christi","capitulum"],
+		"datum":"Fratres: Ego enim accépi a Dómino quod et trádidi vobis, quóniam Dóminus Jesus, in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit: Accípite, et manducáte: hoc est corpus meum, quod pro vobis tradétur: hoc fácite in meam commemoratiónem."
+	},
+	{
+		"tags":["corpus-christi","vesperae","hymnus"],
+		"datum":[
+			"Pange lingua gloriósi/Córporis mystérium,/Sanguinísque pretiósi,/Quem in mundi prétium/Fructus ventris generósi/Rex effúdit Géntium.",
+			"Nobis datus, nobis natus/Ex intácta Vírgine,/Et in mundo conversátus,/Sparso verbi sémine,/Sui moras incolátus/Miro clausit órdine.",
+			"In suprémæ nocte cœnæ,/Recúmbens cum frátribus/Observáta lege plene/Cibis in legálibus,/Cibum turbæ duodénæ/Se dat suis mánibus.",
+			"Verbum caro, panem verum/Verbo carnem éfficit:/Fitque sanguis Christi merum,/Et si sensus déficit,/Ad firmándum cor sincérum/Sola fides súfficit.",
+			"Tantum ergo Sacraméntum/Venerémur cérnui:/Et antíquum documéntum/Novo cedat rítui:/Præstet fides suppleméntum/Sénsuum deféctui.",
+			"Genitóri, Genitóque/Laus et jubilátio,/Salus, honor, virtus quoque/Sit et benedíctio:/Procedénti ab utróque/Compar sit laudátio.","Amen."
+		]
+	},
+	{
+		"tags":["corpus-christi","i-vesperae","versiculus"],
+		"datum":["V. Panem de cœlo præstitísti eis, allelúja.","R. Omne delectaméntum in se habéntem, allelúja."]
+	},
+	{
+		"tags":["corpus-christi","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"O quam suávis est * Dómine spíritus tuus, qui ut dulcédinem tuam in fílios demonstráres, pane suavíssimo de cœlo prǽstito, esuriéntes reples bonis, fastidiósos dívites dimíttens inánes."
+	},
+	{
+		"tags":["corpus-christi","collecta"],
+		"datum":"Deus, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti: tríbue, quǽsumus, ita nos córporis et sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["corpus-christi","antiphona","antiphona-invitatorium"],
+		"datum":"Christum Regem adorémus dominántem Géntibus: * Qui se manducántibus dat spíritus pinguédinem."
+	},
+	{
+		"tags":["corpus-christi","matutinum","hymnus"],
+		"datum":[
+			"Sacris solémniis juncta sint gaúdia,/Et ex præcórdiis sonent præcónia;/Recédant vétera, nova sint ómnia,/Corda, voces, et ópera.",
+			"Noctis recólitur cœna novíssima,/Qua Christus créditur agnum et ázyma/Dedísse frátibus, juxta legítima/Priscis indúlta pátribus.",
+			"Post agnum týpicum, explétis épulis,/Corpus Domínicum datum discípulis,/Sic totum ómnibus, quod totum síngulis,/Ejus fatémur mánibus.",
+			"Dedit fragílibus córporis férculum,/Dedit et trístibus sánguinis póculum,/Dicens: accípite quod trado vásculum,/Omnes ex eo bíbite.",
+			"Sic sacrifícium istud instítuit,/Cujus offícium commítti vóluit/Solis presbýteris, quibus sic cóngruit,/Ut sumant, et dent céteris.",
+			"Panis angélicus fit panis hóminum;/Dat panis cœlicum figúris términum:/O res mirábilis, mandúcat Dóminum/Pauper, servus, et húmilis.",
+			"Te trina Déitas únaque póscimus,/Sic nos tu vísita, sicut te cólimus:/Per tuas sémitas duc nos quo téndimus,/Ad lucem, quam inhábitas.","Amen."
+		]
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Fractum salutíferum * gustándum dedit Dóminus mortis suæ témpore."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-i,gloria"]]
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"A fructu fruménti * et vini multiplicáti fidéles in pace Christi requiéscunt."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-iv,gloria"]]
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Communióne cálicis, * quo Deus ipse súmitur, non vitulórum sánguine, congregávit nos Dóminus."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xv,gloria"]]
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Panem cœli dedit eis, allelúja.","R. Panem Angelórum manducávit homo, allelúja."]
 	}
 ]
