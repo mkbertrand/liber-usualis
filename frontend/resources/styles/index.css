@@ -57,13 +57,6 @@
 	padding: 0;
 }
 
-.text-content-translation {
-	font-size: 18px;
-	line-height: 1;
-	color: #111;
-	padding-left:10px;
-}
-
 .chant-wrapper {
 	width: 0;
 }
@@ -224,12 +217,15 @@
 }
 
 .rite-text {
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .rite-text-translation {
 	margin-top: 0;
+	font-size: 14px;
+	line-height: 1;
+	color: #111;
+	padding-left:10px;
+	font-style:italic;
 }
 
 h4.item-header {

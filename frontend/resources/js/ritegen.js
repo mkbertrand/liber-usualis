@@ -223,7 +223,13 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item${('tags' in data ? ' ' + data['tags'].join(' ') : '')}">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options, names)}</div>`;
 
 		} else if (typeof data === 'string') {
-			return `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p><p class="rite-text-translation">${translated != null && typeof translated === 'string' ? stringrender(translated) : ''}</p>`
+			ret = `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p>`
+			if (translated != null && typeof translated === 'string') {
+				return ret + `<p class="rite-text-translation">${stringrender(translated)}</p>`;
+			} else {
+				return ret;
+			}
+
 		} else {
 			return 'error';
 		}
