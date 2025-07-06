@@ -225,6 +225,7 @@
 
 .rite-text {
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .rite-text-translation {
@@ -239,6 +240,14 @@ h4.item-header {
 	margin: 0;
 }
 
+h5.psalm-subheader {
+	text-align: center;
+	color: red;
+	font-size: 18px;
+	font-variant: small-caps;
+	margin: 0;
+}
+
 .ante-officium, .post-officium {
 	font-size: 16px;
 }
@@ -248,7 +257,7 @@ h4.item-header {
 	color: red;
 }
 
-.psalmus::first-letter, .lectio-incipiens::first-letter {
+.lectio-incipiens::first-letter {
 	font-family: 'paulus-franck-initialen';
 	float: left;
 	font-size: 115px;
@@ -257,7 +266,7 @@ h4.item-header {
 	color: red;
 }
 
-.lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
+.psalmus::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 	font-family: 'paulus-franck-initialen';
 	float: left;
 	font-size: 80px;

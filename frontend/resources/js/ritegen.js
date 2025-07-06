@@ -7,19 +7,6 @@ titled = {
 
 titled['collecta-primaria'] = 'Collecta';
 
-function patternpsalmtitle(title) {
-	ret = '';
-	for (i of title.split(' ')) {
-		if (/^[clxvi]+$/.test(i)) {
-			ret += ' ' + i.toUpperCase();
-		} else {
-			ret += ' ' + i[0].toUpperCase() + i.substring(1);
-		}
-	}
-
-	return ret.substring(1);
-}
-
 function unpack(data) {
 	if (typeof data === 'string') {
 		return data;
@@ -172,17 +159,30 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		if (typeof data === 'object') {
 			header = '';
 			if ('tags' in data && data['tags'].join(' ').includes('/psalmi/')) {
-				data['datum'] = data['datum'].replace(/^\d+\s/, '');
-				for (tag of data['tags']) {
-					if (tag.startsWith('/psalmi/')) {
-						header = tag.substring(8).replaceAll('-', ' ').split(',')[0];
-						if (header.includes(':')) {
-							headerspl = header.split(':');
-							header = `${patternpsalmtitle(headerspl[0])}<small> ${headerspl[1]}</small>`;
-						} else {
-							header = patternpsalmtitle(header);
+				header = data['datum'].split('\n')[0].slice(1, -1);
+				data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1)
+				if (data['datum'].includes('[')) {
+					data['datum'] = data['datum'].replaceAll(/(\[.+?\])\n\d+?\s/g, '$1\n');
+					headedsects = data['datum'].split('[');
+
+					if (headedsects.length != 1) {
+						ret = '';
+						for (const i of headedsects) {
+							if (i.length != 0) {
+								if (!i.includes(']')) {
+									ret += `<p class="rite-text psalmus">${stringrender(i)}</p>`;
+								} else {
+									subheader = i.split(']')[0];
+									// Removing an additional character because of new line.
+									body = i.split(']')[1].substring(1);
+									ret += `<h5 class="psalm-subheader">${subheader}</h4><p class="rite-text psalmus">${stringrender(body)}</p>`;
+								}
+							}
 						}
+						return `<h4 class="item-header">${header}</h4>${ret}`;
 					}
+				} else {
+					data['datum'] = data['datum'].replace(/^\d+\s/, '');
 				}
 				data['tags'].push('psalmus');
 			}
@@ -220,7 +220,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 			}
 
-			return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item'${('tags' in data ? ' ' + data['tags'].join(' ') : '')}'">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options, names)}</div>`;
+			return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item${('tags' in data ? ' ' + data['tags'].join(' ') : '')}">${renderinner(data['datum'], translated, translationpool, ('tags' in data ? data['tags'].concat(parenttags) : parenttags), options, names)}</div>`;
 
 		} else if (typeof data === 'string') {
 			return `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p><p class="rite-text-translation">${translated != null && typeof translated === 'string' ? stringrender(translated) : ''}</p>`

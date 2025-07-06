@@ -7,33 +7,41 @@ import re
 path = str(pathlib.Path(__file__).parent.absolute())
 
 def psalm_line(line):
-    return line
+	return line
 
 def get_and_html(file):
-    return ''.join(list(map(lambda line: psalm_line(line), open(file, 'r', encoding = 'utf-8').readlines())))
+	return ''.join(list(map(lambda line: psalm_line(line), open(file, 'r', encoding = 'utf-8').readlines())))
 
 def psalmget(root, psalm):
-    return get_and_html(f'{path}/data/{root}/untagged{psalm}.txt').strip() + '\n'
+	return get_and_html(f'{path}/data/{root}/untagged{psalm}.txt').strip() + '\n'
 
 def get(root, query):
-    pathsplit = query.rfind('/')
-    querypath = query[:pathsplit + 1]
-    query = query[pathsplit + 1:]
-    ret = ''
-    for i in query.split(','):
-        if ':' in i:
-            psalm = i.split(':')[0]
-            psalmtext = psalmget(root, querypath + psalm)
-            for j in i.split(':')[1].split(';'):
-                bounds = j.split('-')
-                if len(bounds) == 1:
-                    bounds[1] = str(int(bounds[0]) + 1)
-                else:
-                    bounds[1] = str(int(bounds[1]) + 1)
-                if not bounds[1] in psalmtext:
-                    ret += re.search(f'{bounds[0]}(.|\\n)+$', psalmtext).group()
-                else:
-                    ret += re.search(f'{bounds[0]}(.|\\n)+\\n{bounds[1]} ', psalmtext).group()[:-(len(bounds[1]) + 1)]
-        else:
-            ret += psalmget(root, querypath + i)
-    return ret.strip()
+	pathsplit = query.rfind('/')
+	querypath = query[:pathsplit + 1]
+	query = query[pathsplit + 1:]
+	ret = ''
+	for i in query.split(','):
+		add = ''
+		psalm = i.split(':')[0] if ':' in i else i
+		psalmcapped = ' '.join([w.capitalize() if re.match(r'^[clxvi]+$', w) is None else w.upper() for w in psalm.split('-')])
+		if ':' in i:
+			psalmtext = psalmget(root, querypath + psalm)
+			for j in i.split(':')[1].split(';'):
+				bounds = j.split('-')
+				if len(bounds) == 1:
+					bounds[1] = str(int(bounds[0]) + 1)
+				else:
+					bounds[1] = str(int(bounds[1]) + 1)
+				if not bounds[1] in psalmtext:
+					add = re.search(f'{bounds[0]}(.|\\n)+$', psalmtext).group()
+				else:
+					add = re.search(f'{bounds[0]}(.|\\n)+\\n{bounds[1]} ', psalmtext).group()[:-(len(bounds[1]) + 1)]
+			psalmcapped += ':' + i.split(':')[1]
+		else:
+			add = psalmget(root, querypath + i)
+		# Basically only useful for the Acrostic labels for Psalm 118
+		add = re.sub(r'(\d+?)\s(\[.+?\])', r'\2\n\1 ', add)
+		if psalmcapped != 'Gloria' and psalmcapped != 'Requiem':
+			add = f'[{psalmcapped}]\n' + add
+		ret += add
+	return ret.strip()
