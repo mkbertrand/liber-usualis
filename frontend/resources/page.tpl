@@ -27,14 +27,16 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/burger-menu.svg" /></button>
 				<div id="project-logo">
-					<img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT">
+					<a href="/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
 				</div>
 			</div>
 			<nav id="sidebar-nav" x-show="sidebarnavopen" x-transition x-data="{
 				pages:[
-					{'path':'/', 'name':'Pray'},
+					{'path':'/', 'name':'Home'},
+					{'path':'/pray/', 'name':'Pray'},
 					{'path':'/about/', 'name':'About'},
 					{'path':'/help/', 'name':'Help'},
+					{'path':'/donate/', 'name':'Donate'},
 					{'path':'/credit/', 'name':'Credit'}
 				]
 				}">

@@ -1,126 +1,63 @@
+<!DOCTYPE html>
+
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
-<script type="text/javascript" src="/resources/js/ritegen.js?v=3"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="/resources/js/exsurge.js"></script>
-<script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
-<div id="content-container-outer" x-data="{
-	defaultlist: [],
-	optionspanel: false,
-	date: new Date(),
-	day: '',
-	names: '',
-	color: '',
-	hour: '',
-	chant: false,
-	translation: false,
-	rite: '',
-	initialized: false,
-	get Rite() {
-		return this.rite;
-	},
-	setDate(date) {
-		this.date = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.date.getTimezoneOffset() * 60000);
-	},
-	realDate() {
-		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000);
-	},
-	get RiteList() {
-		if (this.day == '') {
-			return defaultlist;
+<html lang='en'>
+	<head>
+		<title>Home</title>
+		<script type="application/ld+json">
+		{
+			"@context":"https://schema.org",
+			"@type":"WebSite",
+			"name":"Liber Usualis",
+			"url":"https://liberusualis.org/"
 		}
-		list = JSON.parse(JSON.stringify(defaultlist));
-		if (this.day.some(i => i.includes('psalmi-graduales'))) {
-			list.unshift({'id':'psalmi-graduales', 'name':'Psalmi Graduales'});
-		}
-		if (this.day.some(i => i.includes('psalmi-poenitentiales'))) {
-			list.splice(1, 0, {'id':'psalmi-poenitentiales', 'name':'Psalmi Poenitentiales'});
-		}
-		return list;
-	},
-	async update() {
-		this.chant;
-		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
-		var response = await fetch('/rite?date=' + this.realDate().toISOString().substring(0, 10) + '&hour=' + this.hour + '&translation=' + this.translation);
-		var json = await response.json();
-		this.rite = render(json, this.chant);
-		this.day = json.day;
-		this.names = json.names;
-		var primary = this.day.filter((tags) => tags.includes('primarium'))[0];
-		this.color = primary.filter((tag) => colors.includes(tag))[0];
-		this.initialized = true;
-		window.scrollTo({top:0});
-	},
-	get Coincidences() {
-		if (this.names == '') {
-			return '';
-		}
-		else {
-			names = [];
-			for (let i = 0; i < this.day.length; i++) {
-				if (this.names[i] != '') {
-					names.push([this.names[i], this.day[i]])
-				}
-			}
-			return names;
-		}
-	}
-}" x-init="
-	this.defaultlist = [{'id':'ante-officium+matutinum+laudes+post-officium', 'name':'Matutinum & Laudes'}, {'id':'ante-officium+prima+post-officium', 'name':'Prima'}, {'id':'ante-officium+tertia+post-officium', 'name':'Tertia'}, {'id':'ante-officium+sexta+post-officium', 'name':'Sexta'}, {'id':'ante-officium+nona+post-officium', 'name':'Nona'}, {'id':'ante-officium+vesperae+post-officium', 'name':'Vesperae'}, {'id':'ante-officium+completorium+post-officium', 'name':'Completorium'}];
-	if (date.getHours() < 6) {
-		hour = this.defaultlist[0].id;
-	} else if (date.getHours() < 9) {
-		hour = this.defaultlist[1].id;
-	} else if (date.getHours() < 11) {
-		hour = this.defaultlist[2].id;
-	} else if (date.getHours() < 14) {
-		hour = this.defaultlist[3].id;
-	} else if (date.getHours() < 16) {
-		hour = this.defaultlist[4].id;
-	} else if (date.getHours() < 20) {
-		hour = this.defaultlist[5].id;
-	} else {
-		hour = this.defaultlist[6].id;
-	}
-" x-effect="update()">
-	<div x-cloak id="options-panel-background" x-show="optionspanel">
-		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-			<div id="options-panel-title">Options</div>
-			<button class="options-panel-button" @click="translation = !translation">Translation toggle</button>
-			<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
-			<div id="coincidences-list-container">
-				<h4 id="coincidences-list-title">Coincidences</h4>
-				<div>
-					<template x-for="coinciding in Coincidences">
-						<div class="coincidence-entry" x-text="coinciding[0]"></div>
-					</template>
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/index.css?v=1">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=10">
+		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	</head>
+	<body>
+		<div id="site-wrapper-home">
+			<div id="top-bar-title">
+				<div id="project-logo">
+					<a href="/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
+				</div>
+			</div>
+			<div id="content-container-outer-home">
+				<div id="side-panel-left">
+				</div>
+				<div id="home-screen">
+					<h1 id="main-title-label">LIBER USUALIS PROJECT</h1>
+					<nav id="center-nav" x-data="{
+						pages:[
+							{'path':'/', 'name':'Home'},
+							{'path':'/pray/', 'name':'Pray'},
+							{'path':'/about/', 'name':'About'},
+							{'path':'/help/', 'name':'Help'},
+							{'path':'/credit/', 'name':'Credit'}
+						]
+						}">
+						<template x-for="page in pages">
+							<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
+						</template>
+
+					</nav>
+					<div style="height:2em;"></div>
+					<form id="paypal-donate-button" action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="25CUBHQKYN67Y" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+					</form>
+				</div>
+				<div id="side-panel-right">
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="side-panel-left" :class="color">
-	</div>
-	<div id="rite-page-container">
-		<div x-show="initialized" id="rite-container" x-html="Rite">
-		</div>
-		<div id="bottom-easy-select-container" x-data="{open: true}">
-			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" src="/resources/svg/down.svg" /></button>
-			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
-				<div id="date-selector-container" x-data="{search: ''}">
-					<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
-					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
-					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
-					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
-					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
-				</div>
-				<div id="rite-selector-container">
-					<template x-for="rite in RiteList">
-						<button class="rite-selector-button" :class="(rite.id == hour) && 'rite-selector-button-selected'" @click="hour = rite.id" x-text="rite.name"></button>
-					</template>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="side-panel-right" :class="color">
-	</div>
-</div>
+	</body>
+</html>

@@ -26,7 +26,11 @@ implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
 @get('/')
 def indexserve():
-	return pageserve('index', 'Rite Generator')
+	return static_file('index.html', root='frontend/pages/')
+
+@get('/pray/')
+def prayserve():
+	return pageserve('pray', 'Rite Generator')
 
 @get('/about/')
 def aboutserve():
@@ -35,6 +39,10 @@ def aboutserve():
 @get('/credit/')
 def aboutserve():
 	return pageserve('credit', 'Credit')
+
+@get('/donate/')
+def donateserve():
+	return pageserve('donate', 'Donate')
 
 @get('/help/')
 def aboutserve():
