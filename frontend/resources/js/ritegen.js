@@ -162,7 +162,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				header = data['datum'].split('\n')[0].slice(1, -1);
 				data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1)
 				if (data['datum'].includes('[')) {
-					data['datum'] = data['datum'].replaceAll(/(\[.+?\])\n\d+?\s/g, '$1\n');
+					data['datum'] = data['datum'].replaceAll(/(\[.+?\])\\n\d+?\s/g, '$1\n');
 					headedsects = data['datum'].split('[');
 
 					if (headedsects.length != 1) {

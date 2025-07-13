@@ -40,7 +40,7 @@ def get(root, query):
 		else:
 			add = psalmget(root, querypath + i)
 		# Basically only useful for the Acrostic labels for Psalm 118
-		add = re.sub(r'(\d+?)\s(\[.+?\])', r'\2\n\1 ', add)
+		add = re.sub(r'(\d+?)\s(\[.+?\])', r'\2\\n\1 ', add)
 		if psalmcapped != 'Gloria' and psalmcapped != 'Requiem':
 			add = f'[{psalmcapped}]\n' + add
 		ret += add
