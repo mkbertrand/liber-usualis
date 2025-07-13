@@ -130,7 +130,8 @@
 		"tags":[
 			["prima","tempus-mariae","responsorium-breve","versus"],
 			["prima","in-tempore-nativitatis","responsorium-breve","versus"],
-			["prima","nomen-jesu","responsorium-breve","versus"]
+			["prima","nomen-jesu","responsorium-breve","versus"],
+			["prima","infra-octavam-corporis-christi","responsorium-breve","versus"]
 		],
 		"datum":"Qui natus es de María Vírgine."
 	},
@@ -359,7 +360,10 @@
 		]
 	},
 	{
-		"tags":["prima","in-tempore-nativitatis","hymnus"],
+		"tags":[
+			["prima","in-tempore-nativitatis","hymnus"],
+			["prima","infra-octavam-corporis-christi","hymnus"]
+		],
 		"src":"gregobase/19628",
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
@@ -455,7 +459,7 @@
 		"datum":[["nona","capitulum"]]
 	},
 	{
-		"tags":["prima","per-annum","lectio"],
+		"tags":["prima","per-annum","temporale","lectio"],
 		"datum":"Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
 	},
 	{

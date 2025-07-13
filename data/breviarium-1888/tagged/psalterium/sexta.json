@@ -189,7 +189,10 @@
 		]
 	},
 	{
-		"tags":["sexta","in-tempore-nativitatis","hymnus"],
+		"tags":[
+			["sexta","in-tempore-nativitatis","hymnus"],
+			["sexta","infra-octavam-corporis-christi","hymnus"]
+		],
 		"src":"gregobase/19630",
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",

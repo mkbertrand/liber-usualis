@@ -197,7 +197,10 @@
 		]
 	},
 	{
-		"tags":["tertia","in-tempore-nativitatis","hymnus"],
+		"tags":[
+			["tertia","in-tempore-nativitatis","hymnus"],
+			["tertia","infra-octavam-corporis-christi","hymnus"]
+		],
 		"src":"gregobase/19629",
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",

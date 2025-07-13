@@ -193,7 +193,10 @@
 		]
 	},
 	{
-		"tags":["nona","in-tempore-nativitatis","hymnus"],
+		"tags":[
+			["nona","in-tempore-nativitatis","hymnus"],
+			["nona","infra-octavam-corporis-christi","hymnus"]
+		],
 		"src":"gregobase/19631",
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
