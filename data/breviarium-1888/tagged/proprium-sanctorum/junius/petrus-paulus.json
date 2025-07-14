@@ -8,36 +8,36 @@
 		"datum":"Ss. Petri et Pauli"
 	},
 	{
-		"tags":["petrus-paulus","antiphona","antiphona-i"],
+		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-i"],
 		"src":"gregobase/1866",
 		"datum":"Petrus et Joánnes * ascendébant in templum ad horam oratiónis nonam."
 	},
 	{
-		"tags":["petrus-paulus","antiphona","antiphona-ii"],
+		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-ii"],
 		"src":"gregobase/2580",
 		"datum":"Argéntum et aurum * non est mihi: quod autem hábeo, hoc tibi do."
 	},
 	{
-		"tags":["petrus-paulus","antiphona","antiphona-iii"],
+		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-iii"],
 		"src":"gregobase/2589",
 		"datum":"Dixit Ángelus ad Petrum: * Circúmda tibi vestiméntum tuum, et séquere me."
 	},
 	{
-		"tags":["petrus-paulus","antiphona","antiphona-iv"],
+		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-iv"],
 		"src":"gregobase/2557",
 		"datum":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja."
 	},
 	{
-		"tags":["petrus-paulus","antiphona","antiphona-v"],
+		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-v"],
 		"src":"gregobase/1950",
 		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
 	},
 	{
-		"tags":["petrus-paulus","capitulum"],
+		"tags":["petrus-paulus","duplex-i-classis","capitulum"],
 		"datum":"Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. + Occídit autem Jacóbum fratrem Joánnis gládio. * Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
 	},
 	{
-		"tags":["petrus-paulus","vesperae","hymnus"],
+		"tags":["petrus-paulus","duplex-i-classis","vesperae","hymnus"],
 		"src":"gregobase/2761",
 		"datum":[
 			"Decóra lux æternitátis, aúream/Diem beátis irrigávit ígnibus,/Apostolórum quæ corónat Príncipes,/Reísque in astra líberam pandit viam.",
@@ -47,7 +47,7 @@
 		]
 	},
 	{
-		"tags":["petrus-paulus","i-vesperae","antiphona","antiphona-magnificat"],
+		"tags":["petrus-paulus","duplex-i-classis","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2717",
 		"datum":"Tu es pastor óvium, * princeps Apostolórum: tibi tráditæ sunt claves regni cœlórum."
 	},
@@ -57,7 +57,7 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["petrus-paulus","laudes","hymnus"],
+		"tags":["petrus-paulus","duplex-i-classis","laudes","hymnus"],
 		"src":"gregobase/1988",
 		"datum":[
 			"Beáte Pastor Petre clemens áccipe/Voces precántum, criminúmque víncula/Verbo resólve, cui potéstas trádita,/Aperíre terris cœlum, apértum claúdere.",
@@ -66,21 +66,54 @@
 		]
 	},
 	{
-		"tags":["petrus-paulus","duplex-i-classis","laudes","antiphona","antiphona-benedictus"],
+		"tags":["petrus-paulus","duplex-i-classis","duplex-i-classis","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2689",
 		"datum":"Quodcúmque * ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis: dicit Dóminus Simóni Petro."
 	},
 	{
-		"tags":["petrus-paulus","sexta","capitulum"],
+		"tags":["petrus-paulus","duplex-i-classis","sexta","capitulum"],
 		"datum":"Petrus quidem servabátur in cárcere. + Orátio autem fiébat sine intermissióne * ab Ecclésia ad Deum pro eo."
 	},
 	{
-		"tags":["petrus-paulus","nona","capitulum"],
+		"tags":["petrus-paulus","duplex-i-classis","nona","capitulum"],
 		"datum":"Et Petrus ad se revérsus, dixit: Nunc scio vere, quia misit Dóminus Ángelum suum, + et erípuit me de manu Heródis, * et de omni expectatióne plebis Judæórum."
 	},
 	{
-		"tags":["petrus-paulus","duplex-i-classis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"tags":["petrus-paulus","duplex-i-classis","duplex-i-classis","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1918",
 		"datum":"Hódie * Simon Petrus ascéndit crucis patíbulum, allelúja: hódie claviculárius regni gaúdens migrávit ad Christum: hódie Paulus Apóstolus, lumen orbis terræ inclináto cápite pro Christi nómine martýrio coronátus est, allelúja."
+	},
+	{
+		"tags":[
+			["petrus-paulus","infra-octavam","vesperae","versiculus"],
+			["petrus-paulus","dies-octava","vesperae","versiculus"]
+		],
+		"datum":[["apostoli","vesperae","versiculus"]]
+	},
+	{
+		"tags":[
+			["petrus-paulus","infra-octavam","vesperae","antiphona","antiphona-magnificat"],
+			["petrus-paulus","dies-octava","vesperae","antiphona","antiphona-magnificat"]
+		],
+		"datum":[["apostoli","vesperae","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":[
+			["petrus-paulus","infra-octavam","laudes","antiphona","antiphona-benedictus"],
+			["petrus-paulus","dies-octava","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["apostoli","laudes","antiphona","antiphona-benedictus"]]
+	},
+	{
+		"tags":[
+			["petrus-paulus","infra-octavam","laudes","versiculus"],
+			["petrus-paulus","dies-octava","laudes","versiculus"]
+		],
+		"datum":[["apostoli","laudes","versiculus"]]
+	},
+	{
+		"tags":["petrus-paulus","dies-octava","collecta"],
+		"datum":[["apostoli","collecta"]],
+		"terminatio":[["apostoli","collecta","terminatio"]]
 	}
 ]

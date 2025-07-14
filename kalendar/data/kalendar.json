@@ -528,6 +528,10 @@
 		"tags":["commemoratio-pauli","duplex-majus","martyr","apostolus"]
 	},
 	{
+		"occurrence":["pridie-kalendas-julii"],
+		"tags":["commemoratio-petri","semiduplex","commemoratio","martyr","apostolus"]
+	},
+	{
 		"occurrence":["ad-vi-nonas-julii"],
 		"tags":["visitatio","duplex-ii-classis","maria"]
 	},
@@ -537,7 +541,7 @@
 	},
 	{
 		"occurrence":["ad-iii-nonas-julii"],
-		"tags":["cyrillus-methodius","duplex-minus","episcopi-confessores"]
+		"tags":["cyrillus-methodius","duplex-minus","confessor-pontifex","episcopi-confessores"]
 	},
 	{
 		"occurrence":["ad-viii-idus-julii"],
@@ -617,7 +621,7 @@
 	},
 	{
 		"occurrence":["ad-ix-kalendas-augusti"],
-		"tags":["christiana","simplex","commemoratio","virgo","martyr"]
+		"tags":["christina","simplex","commemoratio","virgo","martyr"]
 	},
 	{
 		"occurrence":["ad-ix-kalendas-augusti"],

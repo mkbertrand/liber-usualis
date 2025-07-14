@@ -1,11 +1,15 @@
 [
 	{
+		"tags":["maria-magdalena-poenitens","nomen"],
+		"datum":"S. Mariæ Magdalenæ Pœnitentis"
+	},
+	{
 		"tags":["maria-magdalena-poenitens","vesperae","hymnus"],
 		"src":"gregobase/1841",
 		"datum":[
 			"Pater supérni lúminis,/Cum Magdalénam réspicis,/Flammas amóris éxcitas,/Gelúque solvis péctoris.",
 			"Amóre currit saúcia/Pedes beátos úngere,/Laváre fletu, térgere/Comis, et ore lámbere.",
-			"Astáre non timet cruci:/Sepúlchro inhǽret ánxia,/Trucesnec horret mílites:/Pellit timórem cáritas.",
+			"Astáre non timet cruci:/Sepúlchro inhǽret ánxia,/Truces nec horret mílites:/Pellit timórem cáritas.",
 			"O vera, Christe, cáritas,/Tu nostra purga crímina,/Tu corda reple grátia,/Tu redde cœli prǽmia.",
 			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
 		]
@@ -16,12 +20,40 @@
 	},
 	{
 		"tags":["maria-magdalena-poenitens","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2101",
+		"src":"gregobase/20000",
 		"datum":"Múlier, * quæ erat in civitáte peccátrix, ut cognóvit quod Jesus accúbuit in domo Simónis leprósi, áttulit alabástrum unguénti, et stans retro secus pedes Jesu, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat, et osculabátur pedes ejus, et unguénto ungébat."
 	},
 	{
 		"tags":["maria-magdalena-poenitens","collecta"],
 		"terminatio":[["terminatio","qui-vivis"]],
-		"datum":"Beátæ Maríæ Magdalénæ, quǽsumus Dómine, suffrágiis adjuvémur: cujus précibus exorátus, quatriduánum fratrem Lázarum vivum ab ínferis resuscitásti:"
+		"datum":"Beátæ Maríæ Magdalénæ, quǽsumus Dómine, suffrágiis adjuvémur: + cujus précibus exorátus, * quatriduánum fratrem Lázarum vivum ab ínferis resuscitásti:"
+	},
+	{
+		"tags":["maria-magdalena-poenitens","laudes","hymnus"],
+		"src":"gregobase/13257",
+		"datum":[
+			"Summi Paréntis Únice,/Vultu pio nos réspice,/Vocans ad arcem glóriæ/Cor Magdalénæ pœnitens.",
+			"Amíssa drachma régio/Recóndita est ærário;/Et gemma detérso luto/Nitóre vincit sídera.",
+			"Jesu, medéla vúlnerum,/Spes una pœniténtium,/Per Magdalénæ lácrimas/Peccáta nostra díluas.",
+			"Dei Parens piíssima/Hevæ nepótes flébiles/De mille vitæ flúctibus/Salútis in portum vehas.",
+			"Uni Deo sit glória,/Pro multifórmi grátia,/Peccántium qui crímina/Remíttit, et dat prǽmia.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["maria-magdalena-poenitens","laudes","versiculus"],
+			["maria-magdalena-poenitens","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+	},
+	{
+		"tags":["maria-magdalena-poenitens","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/19998",
+		"datum":"María * unxit pedes Jesu, et extérsit capíllis suis, et domus impléta est ex odóre unguénti."
+	},
+	{
+		"tags":["maria-magdalena-poenitens","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/19999",
+		"datum":"Múlier, * quæ erat in civitáte peccátrix, áttulit alabástrum unguénti, et stans retro secus pedes Dómini, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat."
 	}
 ]

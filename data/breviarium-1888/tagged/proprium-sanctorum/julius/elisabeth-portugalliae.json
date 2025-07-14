@@ -1,0 +1,73 @@
+[
+	{
+		"tags":["elisabeth-portugalliae","nomen"],
+		"datum":"S. Elisabeth Reg. Portugalliæ Viduæ"
+	},
+	{
+		"tags":["elisabeth-portugalliae","antiphona","antiphona-ii"],
+		"src":"gregobase/19994",
+		"datum":"Et concupíscet Rex * decórem tuum, quia ipse est Dóminus Deus tuus."
+	},
+	{
+		"tags":["elisabeth-portugalliae","antiphona","antiphona-iii"],
+		"src":"gregobase/19995",
+		"datum":"Potens in ópere * et sermóne, lenívit iracúndiam Dómini, et conciliávit cor patris ad fílium."
+	},
+	{
+		"tags":["elisabeth-portugalliae","antiphona","antiphona-iv"],
+		"src":"gregobase/19996",
+		"datum":"Quasi arcus refúlgens * inter nébulas glóriæ, et quasi flos rosárum in diébus vernis."
+	},
+	{
+		"tags":["elisabeth-portugalliae","antiphona","antiphona-v"],
+		"src":"gregobase/19997",
+		"datum":"Quasi stella matutína * in médio nébulæ, et quasi luna plena in diébus suis."
+	},
+	{
+		"tags":["elisabeth-portugalliae","vesperae","hymnus"],
+		"src":"gregobase/12024",
+		"datum":[
+			"Domáre cordins ímpetus Elísabeth/Fortis, inópsque Deo/Servíre, regno prǽtulit.",
+			"En fúlgidis recépta cœli sédibus,/Sidereǽque domus/Ditáta sanctis gaúdiis.",
+			"Nunc regnat inter cœlites beátior,/Et premit astra, docens/Quæ vera sint regni bona.",
+			"Patri potéstas, Filióque glória,/Perpetuúmque decus/Tibi sit alme Spíritus.","Amen."
+		]
+	},
+	{
+		"tags":["elisabeth-portugalliae","vesperae","versiculus"],
+		"datum":["V. Ora pro nobis beáta Elísabeth.","R. Ut digni efficiámur promissiónibus Christi."]
+	},
+	{
+		"tags":["elisabeth-portugalliae","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1874",
+		"datum":"Et nunc * reges intellígite, erudímini qui judicátis terram."
+	},
+	{
+		"tags":["elisabeth-portugalliae","collecta"],
+		"datum":"Clementíssime Deus, qui beátam Elísabeth regínam, inter céteras egrégias dotes, béllici furóris sedándi prærogatíva decorásti: + da nobis ejus intercessióne post mortális vitæ, quam supplíciter pétimus, pacem, * ad ætérna gaúdia perveníre.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["elisabeth-portugalliae","laudes","hymnus"],
+		"src":"gregobase/13218",
+		"datum":[
+			"Opes decúsque régium relíqueras/Elísabeth, Dei dicáta númini:/Recépta nunc beáris inter Ángelos;/Libens ab hóstium tuére nos dolis.",
+			"Præi, viámque dux salútis índica:/Sequémur: O sit una mens fidélium,/Odor bonus sit omnis áctio, tuis/Id ínnuit rosis opérta cáritas.",
+			"Beáta cáritas, in arce síderum/Potens locáre nos per omne sǽculum:/Patríque, Filióque summa glória,/Tibíque laus perénnis alme Spíritus.","Amen."
+		]
+	},
+	{
+		"tags":["elisabeth-portugalliae","laudes","versiculus"],
+		"datum":["V. Méritis et précibus beátæ Elísabeth.","R. Propítius esto Dómine pópulo tuo."]
+	},
+	{
+		"tags":["elisabeth-portugalliae","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13105",
+		"datum":"Tu glória Jerúsalem, * tu lætítia Ísraël, tu honorificéntia pópuli tui."
+	},
+	{
+		"tags":["elisabeth-portugalliae","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2001",
+		"datum":"Elísabeth * pacis et pátriæ mater, in cœlo triúmphans, dona nobis pacem."
+	}
+]

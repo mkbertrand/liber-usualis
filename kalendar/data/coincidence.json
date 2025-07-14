@@ -304,6 +304,7 @@
 		"include":["corpus-christi","infra-octavam","primarium"],
 		"response":[
 			{"include":["nativitas-joannis-baptistae","infra-octavam","primarium"],"response":"commemoratio","target":1},
+			{"include":["corpus-christi","dominica-infra-octavam"],"response":"commemoratio","target":0},
 			{"include":["duplex-i-classis"],"response":"commemoratio","target":0},
 			{"include":["duplex-majus","translatum"],"response":"transfer","target":1,"movement":1},
 			{"include":["doctor","translatum"],"response":"transfer","target":1,"movement":1},
@@ -654,6 +655,14 @@
 		]
 	},
 	{
+		"include":[],
+		"exclude":["tempus"],
+		"recheck":false,
+		"response":[
+			{"include":["infra-octavam-corporis-christi"],"response":"infra-octavam-corporis-christi","target":0}
+		]
+	},
+	{
 		"include":["circumcisio","festum"],
 		"recheck":false,
 		"response":[
@@ -815,6 +824,12 @@
 			{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
 			{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
 			{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
+		]
+	},
+	{
+		"include":["commemoratio-pauli"],
+		"response":[
+			{"include":["petrus-paulus","infra-octavam"],"target":1,"response":"dele"}
 		]
 	}
 ]

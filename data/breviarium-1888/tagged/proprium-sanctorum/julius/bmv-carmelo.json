@@ -1,0 +1,26 @@
+[
+	{
+		"tags":["bmv-carmelo","nomen"],
+		"datum":"In Commemoratione B.M.V. de Monte Carmelo"
+	},
+	{
+		"tags":["bmv-carmelo","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2321",
+		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam solémnem Commemoratiónem."
+	},
+	{
+		"tags":["bmv-carmelo","collecta"],
+		"datum":"Deus, qui beatíssimæ semper Vírginis et Genetrícis tuæ Maríæ singulári título Carméli órdinem decorásti: + concéde propítius; ut cujus hódie Commemoratiónem solémni celebrámus offício, ejus muníti præsídiis, * ad gaúdia sempitérna perveníre mereámur:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["bmv-carmelo","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12963",
+		"datum":"Caput tuum * ut Carmélus, et comæ cápitis tui sicut púrpura regis vincta canálibus, allelúja."
+	},
+	{
+		"tags":["bmv-carmelo","ii-vesperae","antiphona-magnificat"],
+		"src":"gregobase/2324",
+		"datum":"Glória Líbani * data est ei, decor Carméli, et Saron, allelúja."
+	}
+]

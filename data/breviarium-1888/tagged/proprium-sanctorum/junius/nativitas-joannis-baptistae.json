@@ -52,7 +52,10 @@
 		]
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","i-vesperae","versiculus"],
+		"tags":[
+			["nativitas-joannis-baptistae","i-vesperae","versiculus"],
+			["nativitas-joannis-baptistae","matutinum","nocturna-i","versiculus"]
+		],
 		"datum":["V. Fuit homo missus a Deo.","R. Cui nomen erat Joánnes."]
 	},
 	{
@@ -64,6 +67,101 @@
 		"tags":["nativitas-joannis-baptistae","collecta"],
 		"datum":"Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti: + da pópulis tuis spirituálium grátiam gaudiórum; * et ómnium fidélium mentes dírige in viam salútis ætérnæ.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem Præcursóris Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","hymnus"],
+		"datum":[
+			"Antra desérti téneris sub annis/Cívium turmas fúgiens, petísti,/Ne levi posses maculáre vitam/Crímine linguæ.",
+			"Prǽbuit durum tégumen camélus/Artubus sacris, stróphium bidéntes:/Cui latex haustum, sociáta pastum/Mella locústis.",
+			"Céteri tantum cecinére Vatum/Corde præságo jubar affutúrum:/Tu quidem mundi scelus auferéntem/Índice prodis.",
+			"Non fuit vasti spátium per orbis/Sánctior quisquam génitus Joánne,/Qui nefas sæcli méruit lavántem/Tíngere lymphis.",
+			"Sit decus Patri, genitǽque Proli,/Et tibi compar utriúsque virtus/Spíritus semper, Deus unus, omni/Témporis ævo.","Amen."
+		]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Priúsquam te formárem * in útero, novi te: et ántequam progrederéris, sanctificávi te."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-i,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Ad ómnia quæ mittam te, * dicit Dóminus, ibis: ne tímeas, et quæ mandávero tibi, loquéris ad eos."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Ne tímeas * a fácie eórum, quia ego tecum sum, dicit Dóminus."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Íncipit Jeremías Prophéta.",
+			"Verba Jeremíæ fílii Helcíæ, de sacerdótibus, qui fuérunt in Ánathoth, in Terra Bénjamin. Quod factum est verbum Dómini ad eum in diébus Josíæ fílii Amon regis Juda, in tertiodécimo anno regni ejus. Et factum est in diébus Jóakim fílii Josíæ regis Juda, usque ad consummatiónem undécimi anni Sedecíæ fílii Josíæ regis Juda, usque ad transmigratiónem Jerúsalem, in mense quinto. Et factum est verbum Dómini ad me, dicens: Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sanctificávi te, et Prophétam in Géntibus dedi te."
+		]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Fuit homo missus a Deo, cui nomen erat Joánnes:",
+		"responsum":"Hic venit in testimónium, ut testimónium perhibéret de lúmine, et paráret Dómino plebem perféctam.",
+		"versus":"Erat Joánnes in desérto prǽdicans baptísmum pœniténtiæ."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Et dixi, A a a, Dómine Deus: ecce néscio loqui, quia puer ego sum. Et dixit Dóminus ad me: Noli dícere: Puer sum: quóniam ad ómnia, quæ mittam te, ibis: et univérsa quæcúmque mandávero tibi, loquéris. Ne tímeas a fácie eórum: quia tecum ego sum ut éruam te, dicit Dóminus. Et misit Dóminus manum suam, et tétigit os meum: et dixit Dóminus ad me: Ecce dedi verba mea in ore tuo: ecce constítui te hódie super Gentes, et super regna, ut evéllas, et déstruas, et dispérdas, et díssipes, et ædífices, et plantes."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Elísabeth Zacharíæ magnum virum génuit, Joánnem Baptístam Præcursórem Dómini:",
+		"responsum":"Qui viam Dómino præparávit in erémo.",
+		"versus":"Fuit homo missus a Deo, cui nomen erat Joánnes."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Tu ergo accínge lumbos tuos, et surge, et lóquere ad eos ómnia quæ ego præcípio tibi. Ne formídes a fácie eórum: nec enim timére te fáciam vultum eórum. Ego quippe dedi te hódie in civitátem munítam, et in colúmnam férream, et in murum ǽreum, super omnem terram, régibus Juda, princípibus ejus, et sacerdótibus, et pópulo terræ. Et bellábunt advérsum te, et non prævalébunt: quia ego tecum sum, ait Dóminus, ut líberem te."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Priúsquam te formárem in útero, novi te: et ántequam exíres de ventre, sanctificávi te:",
+		"responsum":"Et Prophétam in Géntibus dedi te.",
+		"versus":"Vir diléctus a Deo, et homínibus honorátus est."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Misit Dóminus * manum suam, et tétigit os meum, et Prophétam in Géntibus dedit me Dóminus."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-iv,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Ecce dedi * verba mea in ore tuo: ecce constítui te super Gentes et regna."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-v,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Dóminus ab útero * vocávit me, de ventre matris meæ recordátus est nóminis mei."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-i"],

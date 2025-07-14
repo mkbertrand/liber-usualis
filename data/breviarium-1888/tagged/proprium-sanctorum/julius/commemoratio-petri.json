@@ -1,0 +1,23 @@
+[
+	{
+		"tags":["commemoratio-petri","nomen"],
+		"datum":"In Commemoratione S. Petri"
+	},
+	{
+		"tags":[
+			["commemoratio-petri","laudes","antiphona","antiphona-benedictus"],
+			["commemoratio-petri","vesperae","antiphona","antiphona-magnificat"]
+		],
+		"src":"gregobase/2717",
+		"datum":"Tu es pastor óvium, * princeps Apostolórum: tibi tráditæ sunt claves regni cœlórum."
+	},
+	{
+		"tags":["commemoratio-petri","commemoratio","versiculus"],
+		"datum":["V. Tu es Petrus.","R. Et super hanc petram ædificábo Ecclésiam meam."]
+	},
+	{
+		"tags":["commemoratio-petri","commemoratio","collecta"],
+		"datum":"Deus, qui beáto Petro, Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: + concéde; ut intercessiónis ejus auxílio, * a peccatórum nostrórum néxibus liberémur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	}
+]

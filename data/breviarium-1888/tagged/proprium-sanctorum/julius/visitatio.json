@@ -1,0 +1,58 @@
+[
+	{
+		"tags":["visitatio","nomen"],
+		"datum":"In Visitatione B.M.V."
+	},
+	{
+		"tags":["visitatio","antiphona","antiphona-i"],
+		"src":"gregobase/2841",
+		"datum":"Exsúrgens María, * ábiit in montána cum festinatióne in civitátem Juda."
+	},
+	{
+		"tags":["visitatio","antiphona","antiphona-ii"],
+		"src":"gregobase/1994",
+		"datum":"Intrávit María * in domum Zacharíæ, et salutávit Elísabeth."
+	},
+	{
+		"tags":["visitatio","antiphona","antiphona-iii"],
+		"src":"gregobase/2845",
+		"datum":"Ut audívit * salutatiónem Maríæ Elísabeth, exsultávit infans in útero ejus, et repléta est Spíritu sancto, allelúja."
+	},
+	{
+		"tags":["visitatio","antiphona","antiphona-iv"],
+		"src":"gregobase/1840",
+		"datum":"Benedícta * tu inter mulíeres, et benedíctus fructus ventris tui."
+	},
+	{
+		"tags":["visitatio","antiphona","antiphona-v"],
+		"src":"gregobase/1975",
+		"datum":"Ex quo facta est * vox salutatiónis tuæ in aúribus meis, exsultávit infans in útero meo, allelúja."
+	},
+	{
+		"tags":[
+			["visitatio","vesperae","versiculus"],
+			["visitatio","laudes","versiculus"]
+		],
+		"datum":["V. Benedícta tu in muliéribus.","R. Et benedíctus fructus ventris tui."]
+	},
+	{
+		"tags":["visitatio","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2469",
+		"datum":"Beáta es * María, quæ credidísti: perficiéntur in te quæ dicta sunt tibi a Dómino, allelúja."
+	},
+	{
+		"tags":["visitatio","collecta"],
+		"datum":"Fámulis tuis, quǽsumus Dómine, cœléstis grátiæ munus impertíre: + ut quibus beátæ Vírginis partus éxstitit salútis exórdium, * Visitatiónis ejus votíva solémnitas, pacis tríbuat increméntum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["visitatio","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12507",
+		"datum":"Cum audísset * salutatiónem Maríæ Elísabeth, exclamávit voce magna, et dixit: Unde hoc mihi, ut véniat mater Dómini mei ad me? allelúja."
+	},
+	{
+		"tags":["visitatio","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2350",
+		"datum":"Beátam me dicent * omnes generatiónem, quia ancíllam húmilem respéxit Deus, allelúja."
+	}
+]

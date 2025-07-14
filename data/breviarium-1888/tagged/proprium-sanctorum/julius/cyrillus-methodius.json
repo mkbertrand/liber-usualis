@@ -1,0 +1,54 @@
+[
+	{
+		"tags":["cyrillus-methodius","nomen"],
+		"datum":"Ss. Cyrilli et Methodii Pontificium et Confessorum"
+	},
+	{
+		"tags":["cyrillus-methodius","vesperae","hymnus"],
+		"datum":[
+			"Sédibus cœli nítidis recéptos/Dícite athlétas géminos, fidéles;/Slávicæ duplex cólumen, decúsque/Dícite gentis.",
+			"Hos amor fratres sociávit unus,/Únaque abdúxit píetas erémo,/Ferre quo multis célerent beátæ/Pígnora vitæ.",
+			"Luce, quæ templis súperis renídet,/Búlgaros complent, Móravos, Bohémos;/Mox feras turmas numerósa Petro/Ágmina ducunt.",
+			"Débitam cincti méritis corónam/Pérgite o flecti lácrimis precántum;/Prisca vos Slavis opus est datóres/Dona tuéri.",
+			"Quæque vos clamat generósa tellus/Servet ætérnæ fídei nitórem;/Quæ dedit princeps, dabit ipsa semper/Roma salútem.",
+			"Gentis humánæ Sator et Redémptor,/Qui bonus nobis bona cuncta præbes,/Sint tibi grates, tibi sit per omne/Glória sæclum.","Amen."
+		]
+	},
+	{
+		"tags":["cyrillus-methodius","vesperae","versiculus"],
+		"datum":["V. Sacerdótes tui induántur justítiam.","R. Et sancti tui exsúltent."]
+	},
+	{
+		"tags":["cyrillus-methodius","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"O quam speciósi pedes * evangelizántium pacem, evangelizántium bona, dicéntium Sion: regnábit Deus tuus."
+	},
+	{
+		"tags":["cyrillus-methodius","collecta"],
+		"datum":"Omnípotens sempitérne Deus, qui Slavóniæ gentes per beátos Confessóres tuos atque Pontífices Cyríllum et Methódium ad agnitiónem tui nóminis veníre tribuísti: + præsta; ut quorum festivitáte gloriámur, * eórum consórtio copulémur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cyrillus-methodius","laudes","hymnus"],
+		"datum":[
+			"Lux o decóra pátriæ/Slavísque amíca géntibus,/Salvéte, fratres: ánnuo/Vos efferémus cántico;",
+			"Quos Roma plaudens éxcipit,/Compléxa mater fílios,/Auget coróna prǽsulum,/Novóque firmat róbore.",
+			"Terras ad usque bárbaras/Inférre Christum pérgitis:/Quot vanus error lúserat,/Almo replétis lúmine.",
+			"Noxis solúta péctora/Ardor supérnus ábripit;/Mutátur horror véprium/In sanctitátis flósculos.",
+			"Et nunc seréna cœlitum/Locáti in aula, súpplici/Adéste voto: Slávicas/Serváte gentes Númini.",
+			"Erróre mersos únicum/Ovíle Christi cóngreget;/Factis avítis ǽmula/Fides viréscat púlchrior.",
+			"Tu nos, beáta Trínitas,/Cœlésti amóre cóncita,/Patrúmque natos ínclyta/Da pérsequi vestígia.","Amen."
+		]
+	},
+	{
+		"tags":["cyrillus-methodius","laudes","versiculus"],
+		"datum":["V. Sapiéntiam sanctórum narrent pópuli.","R. Et laudem eórum núntient Ecclésia."]
+	},
+	{
+		"tags":["cyrillus-methodius","laudes","antiphona","antiphona-benedictus"],
+		"datum":"In sanctitáte * et justítia serviérunt Dómino ómnibus diébus suis: ídeo stolam glóriæ índuit illos Dóminus Deus Ísraël."
+	},
+	{
+		"tags":["cyrillus-methodius","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Isti sunt * viri sancti, facti amíci Dei, divínæ veritátis præcónio gloriósi: linguæ eórum claves cœli factæ sunt."
+	}
+]

@@ -452,6 +452,26 @@
 		"response":[
 			{"include":["epiphania","infra-octavam","commemoratio"],"response":"dele","target":1}
 		]
+	},
+	{
+		"include":["commemoratio-pauli","i-vesperae"],
+		"response":"dele"
+	},
+	{
+		"include":["commemoratio-petri","i-vesperae"],
+		"response":"dele"
+	},
+	{
+		"include":["visitatio","i-vesperae"],
+		"response":[
+			{"include":["processus-martinianus","i-vesperae"],"remove":"commemoratio","adde":"omissum","target":1}
+		]
+	},
+	{
+		"include":["jacobus","i-vesperae"],
+		"response":[
+			{"include":["christophorus","i-vesperae"],"remove":"commemoratio","adde":"omissum","target":1}
+		]
 	}
 ]
 
