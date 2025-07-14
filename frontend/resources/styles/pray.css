@@ -213,7 +213,18 @@
 
 .day-title {
 	color: red;
-	font-variant:small-caps;
+	font-variant: small-caps;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.day-subtitle {
+	color: red;
+	font-variant: small-caps;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 0;
 }
 
 .rite-text {
