@@ -41,6 +41,7 @@
 	padding: 10px 30px 30px 40px;
 	height: 100%;
 	background-color: #f9f9f9;
+	display: block;
 }
 
 .rite-name {
@@ -206,11 +207,6 @@
 	}
 }
 
-#rite-container {
-	font-size: 20px;
-	display: block;
-}
-
 .day-title {
 	color: red;
 	font-variant: small-caps;
@@ -228,6 +224,8 @@
 }
 
 .rite-text {
+	font-size: 20px;
+	line-height: 1.15;
 }
 
 .rite-text-translation {
