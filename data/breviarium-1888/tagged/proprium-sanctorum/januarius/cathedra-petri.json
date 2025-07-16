@@ -1,10 +1,11 @@
 [
 	{
 		"tags":["cathedra-petri","nomen"],
-		"datum":"Cathedræ Petri"
+		"datum":"Cathedræ S. Petri"
 	},
 	{
-		"tags":["cathedra-petri","hymnus"],
+		"tags":["cathedra-petri","vesperae","hymnus"],
+		"src":"gregobase/8160",
 		"datum":[
 			"Quodcúmque in orbe néxibus revínxeris,/Erit revínctum Petre in arce síderum:/Et quod resólvit hic potéstas trádita,/Erit solútum cœli in alto vértice:/In fine mundi judicábis sǽculum.",
 			"Patri perénne sit per ævum glória,/Tibíque laudes concinámus ínclytas,/Ætérne Nate, sit supérne Spíritus/Honor tibi, decúsque: sancta júgiter/Laudétur omne Trínitas per sǽculum.","Amen."
@@ -16,11 +17,32 @@
 	},
 	{
 		"tags":["cathedra-petri","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2717",
 		"datum":"Tu es pastor óvium, * princeps Apostolórum, tibi tráditæ sunt claves regni cœlórum."
 	},
 	{
 		"tags":["cathedra-petri","collecta"],
-		"terminatio":[["terminatio","qui-vivis"]],
-		"datum":"Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur:"
+		"datum":"Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: + concéde; ut intercessiónis ejus auxílio, * a peccatórum nostrórum néxibus liberémur:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["cathedra-petri","laudes","hymnus"],
+		"src":"gregobase/13301",
+		"datum":[
+			"Beáte Pastor Petre clemens áccipe/Voces precántum, criminúmque víncula/Verbo resólve, cui potéstas trádita,/Aperíre terris cœlum, apértum claúdere.",
+			"Sit Trinitáti sempitérna glória,/Honor, potéstas, atque jubilátio,/In unitáte quæ gubérnat ómnia,/Per univérsa æternitátis sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["cathedra-petri","laudes","versiculus"],
+		"datum":["V. Exáltent eum in ecclésia plebis.","R. Et in cáthedra seniórum laudent eum."]
+	},
+	{
+		"tags":["cathedra-petri","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["petrus-paulus","duplex-i-classis","antiphona","antiphona-benedictus"]]
+	},
+	{
+		"tags":["cathedra-petri","ii-vesperae","versiculus"],
+		"datum":["V. Elégit te Dóminus sacerdótem sibi.","R. Ad sacrificándum ei hóstiam laudis."]
 	}
 ]

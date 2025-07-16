@@ -8,12 +8,11 @@
 			["commemoratio-petri","laudes","antiphona","antiphona-benedictus"],
 			["commemoratio-petri","vesperae","antiphona","antiphona-magnificat"]
 		],
-		"src":"gregobase/2717",
-		"datum":"Tu es pastor óvium, * princeps Apostolórum: tibi tráditæ sunt claves regni cœlórum."
+		"datum":[["cathedra-petri","i-vesperae","vesperae","antiphona","antiphona-magnificat"]]
 	},
 	{
 		"tags":["commemoratio-petri","commemoratio","versiculus"],
-		"datum":["V. Tu es Petrus.","R. Et super hanc petram ædificábo Ecclésiam meam."]
+		"datum":[["cathedra-petri","i-vesperae","vesperae","versiculus"]]
 	},
 	{
 		"tags":["commemoratio-petri","commemoratio","collecta"],

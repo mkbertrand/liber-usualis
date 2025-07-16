@@ -1,0 +1,80 @@
+[
+	{
+		"tags":["petrus-ad-vincula","nomen"],
+		"datum":"S. Petri ad Vincula"
+	},
+	{
+		"tags":["petrus-ad-vincula","antiphona","antiphona-i"],
+		"src":"gregobase/2593",
+		"datum":"Heródes rex * appósuit ut apprehénderet et Petrum: quem cum apprehendísset, misit in cárcerem, volens post Pascha prodúcere eum pópulo."
+	},
+	{
+		"tags":["petrus-ad-vincula","antiphona","antiphona-ii"],
+		"src":"gregobase/2553",
+		"datum":"Petrus quidem * servabátur in cárcere, orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo."
+	},
+	{
+		"tags":["petrus-ad-vincula","antiphona","antiphona-iii"],
+		"src":"gregobase/2589",
+		"datum":"Dixit Ángelus * ad Petrum: Circúmda tibi vestiméntum tuum, et séquere me."
+	},
+	{
+		"tags":["petrus-ad-vincula","antiphona","antiphona-iv"],
+		"src":"gregobase/2557",
+		"datum":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja."
+	},
+	{
+		"tags":["petrus-ad-vincula","antiphona","antiphona-v"],
+		"src":"gregobase/1950",
+		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
+	},
+	{
+		"tags":["petrus-ad-vincula","capitulum"],
+		"datum":[["petrus-paulus","duplex-i-classis","capitulum"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","vesperae","hymnus"],
+		"src":"gregobase/2070",
+		"datum":[
+			"Miris modis repénte liber, férrea/Christo jubénte vincla Petrus éxuit:/Ovílis ille Pastor, et Rector gregis/Vitæ reclúdit páscua, et fontes sacros,/Ovésque servat créditas, arcet lupos.",
+			"Patri perénne sit per ævum glória,/Tibíque laudes concinámus ínclytas,/Ætérne Nate, sit supérne Spíritus/Honor tibi decúsque: sancta júgiter/Laudétur omne Trínitas per sǽculum.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["petrus-ad-vincula","vesperae","versiculus"],
+			["petrus-ad-vincula","laudes","versiculus"]
+		],
+		"datum":[["cathedra-petri","i-vesperae","vesperae","versiculus"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["cathedra-petri","i-vesperae","vesperae","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","collecta"],
+		"datum":"Deus, qui beátum Petrum Apóstolum, a vínculis absolútum, illǽsum abíre fecísti: + nostrórum, quǽsumus, absólve víncula peccatórum; * et ómnia mala a nobis propitiátus exclúde.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","laudes","hymnus"],
+		"datum":[["cathedra-petri","laudes","hymnus"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["petrus-paulus","duplex-i-classis","antiphona","antiphona-benedictus"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","sexta","capitulum"],
+		"datum":[["petrus-paulus","duplex-i-classis","sexta","capitulum"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","nona","capitulum"],
+		"datum":[["petrus-paulus","duplex-i-classis","nona","capitulum"]]
+	},
+	{
+		"tags":["petrus-ad-vincula","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2012",
+		"datum":"Solve * jubénte Deo terrárum Petre caténas, qui facis ut páteant cœléstia regna beátis."
+	}
+]

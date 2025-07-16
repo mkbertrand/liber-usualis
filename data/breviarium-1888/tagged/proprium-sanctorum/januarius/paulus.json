@@ -8,7 +8,7 @@
 			["paulus","vesperae","antiphona","antiphona-magnificat"],
 			["paulus","laudes","antiphona","antiphona-benedictus"]
 		],
-		"datum":"Sancte Paule Apóstole, * prædicátor veritátis, et Doctor Géntium, intercéde pro nobis ad Deum, qui te elégit."
+		"datum":[["conversio-pauli","ii-vesperae","vesperae","antiphona","antiphona-magnificat"]]
 	},
 	{
 		"tags":["paulus","versiculus"],
@@ -16,6 +16,6 @@
 	},
 	{
 		"tags":["paulus","collecta"],
-		"datum":"Deus, qui multitúdinem Géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis quǽsumus; ut cujus commemoratiónem cólimus, ejus apud te patrocínia sentiámus."
+		"datum":"Deus, qui multitúdinem Géntium beáti Pauli Apóstoli prædicatióne docuísti: * da nobis quǽsumus; ut cujus commemoratiónem cólimus, ejus apud te patrocínia sentiámus."
 	}
 ]
