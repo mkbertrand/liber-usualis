@@ -33,7 +33,7 @@
 	},
 	{
 		"occurrence":["ad-xv-kalendas-februarii"],
-		"tags":["cathedra-petri","duplex-majus","confessor-pontifex","confessor"]
+		"tags":["cathedra-petri","duplex-majus","confessor-pontifex","confessor","papa"]
 	},
 	{
 		"occurrence":["ad-xv-kalendas-februarii"],
@@ -665,7 +665,11 @@
 	},
 	{
 		"occurrence":["kalendae-augusti"],
-		"tags":["petrus-ad-vincula","duplex-majus"]
+		"tags":["petrus-ad-vincula","duplex-majus","apostolus"]
+	},
+	{
+		"occurrence":["kalendae-augusti"],
+		"tags":["paulus","commemoratio","semiduplex"]
 	},
 	{
 		"occurrence":["kalendae-augusti"],
@@ -674,6 +678,10 @@
 	{
 		"occurrence":["ad-iv-nonas-augusti"],
 		"tags":["alphonsus-liguorio","duplex-minus","doctor","confessor-pontifex"]
+	},
+	{
+		"occurrence":["ad-iv-nonas-augusti"],
+		"tags":["stephanus-i","simplex","commemoratio","papa","martyr"]
 	},
 	{
 		"occurrence":["ad-iii-nonas-augusti"],
