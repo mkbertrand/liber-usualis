@@ -136,7 +136,10 @@
 		"datum":"Qui natus es de María Vírgine."
 	},
 	{
-		"tags":["prima","per-octavam-epiphaniae","responsorium-breve","versus"],
+		"tags":[
+			["prima","per-octavam-epiphaniae","responsorium-breve","versus"],
+			["prima","transfiguratio","responsorium-breve","versus"]
+		],
 		"datum":"Qui apparuísti hódie."
 	},
 	{
@@ -448,6 +451,17 @@
 			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
 			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
 			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["prima","transfiguratio","hymnus"],
+		"src":"gregobase/20010",
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			"Jesu, tibi sit glória,/Qui te revélas párvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
 	},
 	{
