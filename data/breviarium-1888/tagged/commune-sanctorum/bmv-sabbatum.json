@@ -1,0 +1,64 @@
+[
+	{
+		"tags":["bmv-sabbatum","simplex","nomen"],
+		"datum":"Beatæ Mariæ in Sabbato"
+	},
+	{
+		"tags":[
+			["bmv-sabbatum","i-vesperae","versiculus"],
+			["bmv-sabbatum","matutinum","versiculus"]
+		],
+		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."],
+		"in-tempore-paschali":["V. Diffúsa est grátia in lábiis tuis, allelúja.","R. Proptérea benedíxit te Deus in ætérnum, allelúja."]
+	},
+	{
+		"tags":["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1902",
+		"datum":"Beáta Mater, * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis ad Dóminum."
+	},
+	{
+		"tags":["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat","post-nativitatem"],
+		"src":"gregobase/2916",
+		"datum":"Magnum hæreditátis mystérium: * templum Dei factus est úterus nesciéntis virum: non est pollútus ex ea carnem assúmens: omnes gentes vénient dicéntes: Glória tibi Dómine."
+	},
+	{
+		"tags":[
+			["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat","in-tempore-paschali"],
+			["bmv-sabbatum","laudes","antiphona","antiphona-benedictus","in-tempore-paschali"]
+		],
+		"src":"gregobase/14963",
+		"datum":"Regína cœli, * lætáre, allelúja: quia quem meruísti portáre, allelúja: resurréxit sicut dixit, allelúja: ora pro nobis Deum, allelúja."
+	},
+	{
+		"tags":["bmv-sabbatum","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Ave María, grátia plena, * Dóminus tecum.",
+		"in-tempore-paschali":"Ave María, grátia plena, * Dóminus tecum, allelúja."
+	},
+	{
+		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-i"],
+		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-i"]],
+		"in-tempore-paschali":[["maria","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"]]
+	},
+	{
+		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-ii"],
+		"formula":[["formula","duplex-responsum"]],
+		"incipit":"Felix namque es, sacra Virgo María, et omni laude digníssima:",
+		"responsum-i":"Quia ex te ortus est sol justítiæ,",
+		"responsum-ii":"Christus Deus noster.",
+		"versus":"Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem."
+	},
+	{
+		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-ii","responsum-ii","in-tempore-paschali"],
+		"datum":"Christus Deus noster, allelúja."
+	},
+	{
+		"tags":["bmv-sabbatum","laudes","versiculus"],
+		"datum":["V. Benedícta tu in muliéribus.","R. Et benedíctus fructus ventris tui."],
+		"in-tempore-paschali":["V. Benedícta tu in muliéribus, allelúja.","R. Et benedíctus fructus ventris tui, allelúja."]
+	},
+	{
+		"tags":["bmv-sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/19326",
+		"datum":"Beáta Dei Génetrix María, * Virgo perpétua, templum Dómini, sacrárium Spíritus sancti: sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu."
+	}
+]

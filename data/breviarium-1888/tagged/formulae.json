@@ -339,10 +339,26 @@
 	},
 	{
 		"tags":[
+			["maria","vesperae","benedicamus-domino"],
+			["maria","laudes","benedicamus-domino"]
+		],
+		"src":"gregobase/10399",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":[
 			["simplex","vesperae","benedicamus-domino"],
 			["simplex","laudes","benedicamus-domino"]
 		],
 		"src":"gregobase/15743",
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":[
+			["bmv-sabbatum","maria","vesperae","benedicamus-domino"],
+			["bmv-sabbatum","maria","laudes","benedicamus-domino"]
+		],
+		"src":"gregobase/17674",
 		"datum":["Benedicámus Dómino.","Deo grátias."]
 	},
 	{
