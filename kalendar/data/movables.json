@@ -232,7 +232,7 @@
 		"tags":["rosarium-bmv","duplex-ii-classis","maria"]
 	},
 	{
-		"occurrence":["assumptio","dominica-infra-octavam"],
+		"occurrence":["assumptio-bmv","dominica-infra-octavam"],
 		"tags":["joachim","duplex-ii-classis","confessor"]
 	},
 	{
@@ -275,5 +275,9 @@
 			["kalendae-novembris"]
 		],
 		"tags":["officium-defunctorum"]
+	},
+	{
+		"occurrence":["tempus"],
+		"tags":["votiva"]
 	}
 ]

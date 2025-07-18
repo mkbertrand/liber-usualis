@@ -107,7 +107,7 @@
 			"Cui luna, sol, et ómnia/Desérviunt per témpora,/Perfúsa cœli grátia,/Gestant puéllæ víscera.",
 			"Beáta Mater múnere,/Cujus supérnus ártifex/Mundum pugíllo cóntinens,/Ventris sub arca clausus est.",
 			"Beáta cœli núntio,/Fœcúnda sancto Spíritu,/Desiderátus géntibus,/Cujus per alvum fusus est.",
-			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
 		]
 	},
 	{
@@ -305,11 +305,12 @@
 	},
 	{
 		"tags":["maria","laudes","hymnus"],
+		"src":"gregobase/2885",
 		"datum":[
 			"O gloriósa vírginum,/Sublímis inter sídera,/Qui te creávit, párvulum/Lacténte nutris úbere.",
 			"Quod Heva tristis ábstulit,/Tu reddis almo gérmine:/Intrent ut astra flébiles,/Cœli reclúdis cárdines.",
 			"Tu regis alti jánua,/Et aula lucis fúlgida:/Vitam datam per Vírginem/Gentes redémptæ plaúdite.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽula.","Amen."
+			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
 		]
 	},
 	{
@@ -322,6 +323,7 @@
 	},
 	{
 		"tags":["maria","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13018",
 		"datum":"Beáta es María, * quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja."
 	},
 	{

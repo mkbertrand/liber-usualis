@@ -9,7 +9,11 @@
 	},
 	{
 		"tags":["cajetanus","collecta"],
-		"datum":"Deus, qui beáto Cajetáno Confessóri tuo apostólicam vivéndi formam imitári tribuísti: da nobis, ejus intercessióne et exémplo, in te semper confídere, et sola cœléstia desideráre.",
+		"datum":"Deus, qui beáto Cajetáno Confessóri tuo apostólicam vivéndi formam imitári tribuísti: + da nobis, ejus intercessióne et exémplo, in te semper confídere, * et sola cœléstia desideráre.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cajetanus","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["hebdomada-xiv-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"]]
 	}
 ]
