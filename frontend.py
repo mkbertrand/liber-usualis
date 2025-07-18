@@ -57,8 +57,14 @@ def flattensetlist(sets):
 		ret |= i
 	return ret
 
-@get('/day')
-def kalendar():
+def getname(tagset, pile):
+	resp = breviarium.process(root, {'nomen'}, tagset, [], pile)
+	name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
+	if type(name) is list:
+		name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
+	return name
+
+def daytags(vesperal = False):
 	parameters = copy.deepcopy(request.query)
 
 	if not 'date' in parameters:
@@ -72,7 +78,20 @@ def kalendar():
 		for j in implicationtable:
 			if j['tags'].issubset(i):
 				i |= j['implies']
-	return datamanage.dump_data(tags)
+
+	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
+
+	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
+	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
+	votives = [['Officium Parvum B.M.V.', {'officium-parvum-bmv'}]]
+	return {
+			'tags': tags,
+			'primary': [getname(primary, pile), primary],
+			'commemorations': commemorations,
+			'omissions': omissions,
+			'votives': votives
+		}
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
@@ -87,7 +106,42 @@ def rite():
 	if ' ' in parameters['hour']:
 		parameters['hour'] = parameters['hour'].replace(' ', '+')
 
-	rite = breviarium.generate(root, parameters['date'], parameters['hour'])
+	# Generate the actual liturgical text. Didn't use breviarium.generate because of votive office handling
+	day = parameters['date']
+	hour = parameters['hour']
+	hours = hour.split('+')
+	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
+
+	vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'})
+
+	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
+	for i in tags:
+		for j in implicationtable:
+			if j['tags'].issubset(i):
+				i |= j['implies']
+
+	tags = [frozenset(i) for i in tags]
+
+	# Handle the Little Office of the BVM
+	if 'select' in parameters and parameters['select'] == 'officium-parvum-bmv':
+		def votivize(i):
+			if 'votiva' in i:
+				return i | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}
+			else:
+				return i - {'primarium', 'commemoratio', 'psalmi'}
+		tags = [votivize(i) for i in tags]
+		tags.append({'pro-sanctis','commemoratio'})
+
+	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+	tags.remove(primary)
+	pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
+
+	lit = []
+	for hour in hours:
+		lit.append({'hora', hour})
+	rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
+	tags.append(primary)
+
 	translation = {}
 
 	if 'translation' in parameters and parameters['translation'] == 'true':
@@ -107,24 +161,17 @@ def rite():
 					traverse(v)
 		traverse(rite['datum'])
 
-	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(parameters['date']))
-	commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)
-	noncomm = filter(lambda a : not a in commemorations, tags)
-	tags = commemorations
-	tags.extend(noncomm)
 	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
-	names = []
-	for i in tags:
-		if not {'tempus','antiphona-bmv','psalmi'}.isdisjoint(i):
-			names.append('')
-		else:
-			resp = breviarium.process(root, {'nomen'}, i, [], pile)
-			name = resp['datum'] if 'datum' in resp else '+'.join(i)
-			if type(name) is list:
-				name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(i)
-			names.append(name)
+	usednames = [getname(tagset, pile) for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
+	usednames.insert(0, getname(primary, pile))
 
-	return datamanage.dump_data({'rite' : rite['datum'], 'translation' : translation, 'day': tags, 'names': names})
+	return datamanage.dump_data({
+		'rite' : rite['datum'],
+		'translation' : translation,
+		'day': daytags(vesperal = vesperal),
+		'usedprimary': primary,
+		'usednames': usednames
+		})
 
 @get('/chant/<url:path>')
 def chant(url):

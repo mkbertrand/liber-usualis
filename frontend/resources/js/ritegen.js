@@ -147,7 +147,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 				ret = '';
 				for (var i = 0; i < data['datum'].length - 1; i++) {
-					ret += `<h4 class="item-header">${names[i]}</h4>` + renderinner(data['datum'][i], translated, translationpool, data['tags'].concat(parenttags), options, names);
+					ret += `<h4 class="item-header">${names[i + 1]}</h4>` + renderinner(data['datum'][i], translated, translationpool, data['tags'].concat(parenttags), options, names);
 				}
 				ret += renderinner(data['datum'][data['datum'].length - 1], translated, translationpool, data['tags'].concat(parenttags), options, names);
 				return ret;
@@ -245,26 +245,21 @@ function render(data, chant) {
 	options = {chant: chant, disabletrivialchant: true};
 	var title;
 	var subtitle = '';
-	for (var i = 0; i < data['day'].length; i++) {
-		if (data['day'][i].includes('primarium')) {
-			title = data['names'][i];
-			if (data['day'][i].includes('duplex-i-classis')) {
-				subtitle = 'Duplex I Classis';
-			} else if (data['day'][i].includes('duplex-ii-classis')) {
-				subtitle = 'Duplex II Classis';
-			} else if (data['day'][i].includes('duplex-majus')) {
-				subtitle = 'Duplex Majus';
-			} else if (data['day'][i].includes('duplex-minus')) {
-				subtitle = 'Duplex Minus';
-			} else if (data['day'][i].includes('semiduplex')) {
-				subtitle = 'Semiduplex';
-			} else if (data['day'][i].includes('simplex') || data['day'][i].includes('feria')) {
-				subtitle = 'Simplex';
-			}
-			break;
-		}
+	title = data['usednames'][0];
+	if (data['usedprimary'].includes('duplex-i-classis')) {
+		subtitle = 'Duplex I Classis';
+	} else if (data['usedprimary'].includes('duplex-ii-classis')) {
+		subtitle = 'Duplex II Classis';
+	} else if (data['usedprimary'].includes('duplex-majus')) {
+		subtitle = 'Duplex Majus';
+	} else if (data['usedprimary'].includes('duplex-minus')) {
+		subtitle = 'Duplex Minus';
+	} else if (data['usedprimary'].includes('semiduplex')) {
+		subtitle = 'Semiduplex';
+	} else if (data['usedprimary'].includes('simplex') || data['usedprimary'].includes('feria')) {
+		subtitle = 'Simplex';
 	}
-	return `<h1 class="day-title">${title}</h1><h2 class="day-subtitle">${subtitle}</h2>` + renderinner(data['rite'], null, data['translation'], [], options, data['names']);
+	return `<h1 class="day-title">${title}</h1><h2 class="day-subtitle">${subtitle}</h2>` + renderinner(data['rite'], null, data['translation'], [], options, data['usednames']);
 };
 
 async function chomp(id, tags) {

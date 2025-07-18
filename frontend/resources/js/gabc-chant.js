@@ -53,7 +53,6 @@ class ChantElement extends HTMLElement {
 		this.ctxt.setFont("'Times'", 22);
 
 		this.ctxt.dropCapTextColor = 'red';
-		this.ctxt.dropCapTextFont = this.ctxt.lyricTextFont;
 
 		this.ctxt.annotationTextColor = 'red';
 		this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;

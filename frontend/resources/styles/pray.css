@@ -114,12 +114,29 @@
 	width: 100%;
 }
 
-.coincidence-entry {
-}
-
 #coincidences-list-title {
 	text-align: center;
 	margin:0;
+}
+
+.coincidences-label {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-style: italic;
+	color: red;
+}
+
+.coincidence-entry {
+	margin-left: 20px;
+	cursor: not-allowed;
+}
+
+.permitted-entry {
+	cursor: pointer;
+}
+
+#selected-entry {
 }
 
 #bottom-easy-select-container {
