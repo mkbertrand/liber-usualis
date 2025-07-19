@@ -11,7 +11,9 @@
 	day: '',
 	color: '',
 	hour: '',
+	choral: true,
 	chant: false,
+	recitation: 'recto-tono',
 	translation: false,
 	rite: '',
 	select: '',
@@ -37,6 +39,19 @@
 			list.splice(1, 0, {'id':'psalmi-poenitentiales', 'name':'Psalmi Poenitentiales'});
 		}
 		return list;
+	},
+	setRecitation(set) {
+		this.recitation = set;
+		if (this.recitation == 'plainchant') {
+			this.choral = true;
+			this.chant = true;
+		} else if (this.recitation == 'recto-tono') {
+			this.choral = true;
+			this.chant = false;
+		} else if (this.recitation == 'private') {
+			this.choral = false;
+			this.chant = false;
+		}
 	},
 	async update() {
 		this.chant;
@@ -71,8 +86,12 @@
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 			<h3 id="options-panel-title">Options</h3>
-			<button class="options-panel-button" @click="translation = !translation">Translation toggle</button>
-			<button class="options-panel-button" @click="chant = !chant">Chant toggle</button>
+			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Translation toggle</button>
+			<div class="recitation-select-container">
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">Plainchant</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">Recto Tono</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">Private</button>
+			</div>
 			<template x-if="initialized">
 				<div id="coincidences-list-container">
 					<h3 id="coincidences-list-title">Coincidences</h3>

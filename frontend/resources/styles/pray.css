@@ -110,6 +110,32 @@
 	font-weight: bold;
 }
 
+.options-panel-button-off {
+	font-style:italic;
+}
+
+.options-panel-button-on {
+	background-color: #e6b0b0 !important;
+}
+
+.options-panel-button {
+	background-color: #ddd;
+}
+
+.options-panel-button:hover {
+	background-color: #e0b0b0;
+}
+
+.recitation-select-container {
+	display: flex;
+	flex-direction: row;
+	gap: 7px;
+}
+
+.recitation-select-button {
+	flex-grow: 1;
+}
+
 #coincidences-list-container {
 	width: 100%;
 }
