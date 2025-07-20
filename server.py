@@ -26,7 +26,7 @@ implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
 @get('/')
 def indexserve():
-	return static_file('index.html', root='frontend/pages/')
+	return static_file('index.html', root='web/pages/')
 
 @get('/pray/')
 def prayserve():
@@ -49,7 +49,7 @@ def aboutserve():
 	return pageserve('help', 'Help the Liber Usualis Project')
 
 def pageserve(page, title):
-	return template('frontend/resources/page.tpl', page=page, title=title)
+	return template('web/resources/page.tpl', page=page, title=title)
 
 def flattensetlist(sets):
 	ret = set()
@@ -179,7 +179,7 @@ def chant(url):
 
 @get('/resources/<file:path>')
 def resources(file):
-	return static_file(file, root='frontend/resources/')
+	return static_file(file, root='web/resources/')
 
 @get('/logs/internal_requests')
 def internal_requests():
@@ -187,11 +187,11 @@ def internal_requests():
 
 @get('/favicon.ico')
 def favicon():
-	return static_file('agnus-dei.png', root='frontend/resources/')
+	return static_file('agnus-dei.png', root='web/resources/')
 
 @get('/robots.txt')
 def robots():
-	return static_file('robots.txt', root='frontend/resources/')
+	return static_file('robots.txt', root='web/resources/')
 
 @error(404)
 def error404(error):

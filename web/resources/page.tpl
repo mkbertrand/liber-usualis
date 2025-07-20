@@ -20,6 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=12">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 	<body>
@@ -45,7 +46,7 @@
 				</template>
 
 			</nav>
-			% include(f'frontend/pages/{page}.html')
+			% include(f'web/pages/{page}.html')
 		</div>
 	</body>
 </html>
