@@ -85,8 +85,8 @@
 " x-effect="update()">
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-			<h3 id="options-panel-title">Options</h3>
-			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Translation</button>
+			<h3 id="options-panel-title">Optionen</h3>
+			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Übersetzung</button>
 			<div class="recitation-select-container">
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">Plainchant</button>
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">Recto Tono</button>
@@ -94,18 +94,18 @@
 			</div>
 			<template x-if="initialized">
 				<div id="coincidences-list-container">
-					<h3 id="coincidences-list-title">Coincidences</h3>
-					<h4 class="coincidences-label">Primary</h3>
+					<h3 id="coincidences-list-title">Zufälle</h3>
+					<h4 class="coincidences-label">Hauptfest</h3>
 					<div @click="select=''; optionspanel=false;" id="primary-entry" class="coincidence-entry permitted-entry" x-text="day.primary[0]"></div>
-					<h4 class="coincidences-label">Commemorations</h3>
+					<h4 class="coincidences-label">Kommemorationen</h3>
 					<template x-for="commemoration in day.commemorations">
 						<div class="coincidence-entry" x-text="commemoration[0]"></div>
 					</template>
-					<h4 class="coincidences-label">Omissions</h3>
+					<h4 class="coincidences-label">Auslassungen</h3>
 					<template x-for="omission in day.omissions">
 						<div class="coincidence-entry" x-text="omission[0]"></div>
 					</template>
-					<h4 class="coincidences-label">Votives</h3>
+					<h4 class="coincidences-label">Votive</h3>
 					<div @click="select='officium-parvum-bmv'; optionspanel=false;" class="coincidence-entry permitted-entry" x-text="day.votives[0][0]"></div>
 				</div>
 			</template>
