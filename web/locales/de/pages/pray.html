@@ -1,0 +1,139 @@
+<!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
+
+<script type="text/javascript" src="/resources/js/ritegen.js?v=7"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/resources/js/exsurge.js"></script>
+<script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
+<div id="content-container-outer" x-data="{
+	defaultlist: [],
+	optionspanel: false,
+	date: new Date(),
+	day: '',
+	color: '',
+	hour: '',
+	choral: $persist(true),
+	chant: $persist(false),
+	recitation: $persist('recto-tono'),
+	translation: $persist(false),
+	rite: '',
+	select: '',
+	initialized: false,
+	get Rite() {
+		return this.rite;
+	},
+	setDate(date) {
+		this.date = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.date.getTimezoneOffset() * 60000);
+	},
+	realDate() {
+		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000);
+	},
+	get RiteList() {
+		if (this.day.tags === undefined) {
+			return defaultlist;
+		}
+		list = JSON.parse(JSON.stringify(defaultlist));
+		if (this.day.tags.some(i => i.includes('psalmi-graduales'))) {
+			list.unshift({'id':'psalmi-graduales', 'name':'Psalmi Graduales'});
+		}
+		if (this.day.tags.some(i => i.includes('psalmi-poenitentiales'))) {
+			list.splice(1, 0, {'id':'psalmi-poenitentiales', 'name':'Psalmi Poenitentiales'});
+		}
+		return list;
+	},
+	setRecitation(set) {
+		this.recitation = set;
+		if (this.recitation == 'plainchant') {
+			this.choral = true;
+			this.chant = true;
+		} else if (this.recitation == 'recto-tono') {
+			this.choral = true;
+			this.chant = false;
+		} else if (this.recitation == 'private') {
+			this.choral = false;
+			this.chant = false;
+		}
+	},
+	async update() {
+		this.chant;
+		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
+		var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&hour=${this.hour}&translation=${this.translation ? translation(locale) : 'none'}` + (this.select == '' ? '' : `&select=${this.select}`));
+		var json = await response.json();
+		this.rite = render(json, this.chant);
+		this.day = json.day;
+		var primary = this.day.primary[1];
+		this.color = primary.filter((tag) => colors.includes(tag))[0];
+		this.initialized = true;
+		window.scrollTo({top:0});
+	}
+}" x-init="
+	this.defaultlist = [{'id':'ante-officium+matutinum+laudes+post-officium', 'name':'Matutinum & Laudes'}, {'id':'ante-officium+prima+post-officium', 'name':'Prima'}, {'id':'ante-officium+tertia+post-officium', 'name':'Tertia'}, {'id':'ante-officium+sexta+post-officium', 'name':'Sexta'}, {'id':'ante-officium+nona+post-officium', 'name':'Nona'}, {'id':'ante-officium+vesperae+post-officium', 'name':'Vesperae'}, {'id':'ante-officium+completorium+post-officium', 'name':'Completorium'}];
+	if (date.getHours() < 6) {
+		hour = this.defaultlist[0].id;
+	} else if (date.getHours() < 9) {
+		hour = this.defaultlist[1].id;
+	} else if (date.getHours() < 11) {
+		hour = this.defaultlist[2].id;
+	} else if (date.getHours() < 14) {
+		hour = this.defaultlist[3].id;
+	} else if (date.getHours() < 16) {
+		hour = this.defaultlist[4].id;
+	} else if (date.getHours() < 20) {
+		hour = this.defaultlist[5].id;
+	} else {
+		hour = this.defaultlist[6].id;
+	}
+" x-effect="update()">
+	<div x-cloak id="options-panel-background" x-show="optionspanel">
+		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
+			<h3 id="options-panel-title">Options</h3>
+			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Translation</button>
+			<div class="recitation-select-container">
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">Plainchant</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">Recto Tono</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">Private</button>
+			</div>
+			<template x-if="initialized">
+				<div id="coincidences-list-container">
+					<h3 id="coincidences-list-title">Coincidences</h3>
+					<h4 class="coincidences-label">Primary</h3>
+					<div @click="select=''; optionspanel=false;" id="primary-entry" class="coincidence-entry permitted-entry" x-text="day.primary[0]"></div>
+					<h4 class="coincidences-label">Commemorations</h3>
+					<template x-for="commemoration in day.commemorations">
+						<div class="coincidence-entry" x-text="commemoration[0]"></div>
+					</template>
+					<h4 class="coincidences-label">Omissions</h3>
+					<template x-for="omission in day.omissions">
+						<div class="coincidence-entry" x-text="omission[0]"></div>
+					</template>
+					<h4 class="coincidences-label">Votives</h3>
+					<div @click="select='officium-parvum-bmv'; optionspanel=false;" class="coincidence-entry permitted-entry" x-text="day.votives[0][0]"></div>
+				</div>
+			</template>
+		</div>
+	</div>
+	<div id="side-panel-left" :class="color">
+	</div>
+	<div id="rite-page-container">
+		<div x-show="initialized" id="rite-container" x-html="Rite">
+		</div>
+		<div id="bottom-easy-select-container" x-data="{open: true}">
+			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" src="/resources/svg/down.svg" /></button>
+			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
+				<div id="date-selector-container" x-data="{search: ''}">
+					<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
+					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
+					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
+					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
+					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
+				</div>
+				<div id="rite-selector-container">
+					<template x-for="rite in RiteList">
+						<button class="rite-selector-button" :class="(rite.id == hour) && 'rite-selector-button-selected'" @click="hour = rite.id" x-text="rite.name"></button>
+					</template>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="side-panel-right" :class="color">
+	</div>
+</div>
