@@ -86,7 +86,7 @@
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 			<h3 id="options-panel-title">Options</h3>
-			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Translation toggle</button>
+			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Translation</button>
 			<div class="recitation-select-container">
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">Plainchant</button>
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">Recto Tono</button>
