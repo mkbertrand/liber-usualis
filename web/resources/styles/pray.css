@@ -271,6 +271,10 @@
 	line-height: 1.15;
 }
 
+.with-translation {
+	margin-bottom: 6px;
+}
+
 .rite-text-translation {
 	margin-top: 0;
 	font-size: 14px;

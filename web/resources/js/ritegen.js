@@ -225,9 +225,21 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		} else if (typeof data === 'string') {
 			ret = `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p>`
 			if (translated != null && typeof translated === 'string') {
+				translated = translated.replaceAll(/\[.+?\]/g, '').trim();
+				rendered = stringrender(data);
+				if (rendered.includes('<br>')) {
+					ret = '';
+					renderedsplit = rendered.split('<br>');
+					translationsplit = stringrender(translated).split('<br>');
+					for (var i = 0; i < renderedsplit.length; i++) {
+						ret += `<span class="rite-text ${parenttags.join(' ')} with-translation">${renderedsplit[i]}</span><br><span class="rite-text-translation">${translationsplit[i]}</span><br>`;
+					}
+					return ret;
+				}
+				ret = `<p class="rite-text ${parenttags.join(' ')} with-translation">${stringrender(data)}</p>`
 				return ret + `<p class="rite-text-translation">${stringrender(translated)}</p>`;
 			} else {
-				return ret;
+				return `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p>`
 			}
 
 		} else {
