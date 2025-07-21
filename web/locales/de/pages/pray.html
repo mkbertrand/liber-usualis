@@ -124,7 +124,7 @@
 					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
 					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
 					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
-					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
+					<button id="options-button" @click="optionspanel = !optionspanel">Optionen</button>
 				</div>
 				<div id="rite-selector-container">
 					<template x-for="rite in RiteList">
