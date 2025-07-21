@@ -15,6 +15,7 @@ from logging.handlers import TimedRotatingFileHandler
 import copy
 import argparse
 import re
+import os
 
 import breviarium
 import datamanage
@@ -42,17 +43,15 @@ def localehunt(acceptlanguage):
 
 	# Sort locales to decide what user wants
 	langs = [l[0] for l in sorted(langs, key=lambda l : l[1], reverse=True)]
-	# Add en locale on end because if user insists on some stupid locale like fr we will want a fallback
-	langs.append('en')
 
 	return langs
 
 titles = {
 		'pray': 'Rite Generator',
 		'about': 'About',
-		'credit': 'Credit',
+		'help': 'Help the Liber Usualis Project',
 		'donate': 'Donate',
-		'help': 'Help the Liber Usualis Project'
+		'credit': 'Credit'
 		}
 
 @get('/')
@@ -68,10 +67,17 @@ def pageserve():
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
 	finally:
+		print(locales)
 		if page == '':
-			return static_file('index.html', root='web/pages/')
+			for locale in locales:
+				if os.path.exists(f'web/locales/{locale}/pages/index.html'):
+					return static_file('index.html', root=f'web/locales/{locale}/pages/')
+			return static_file('index.html', root='web/locales/en/pages/')
 		else:
-			return template('web/resources/page.tpl', page=page, title=title)
+			for locale in locales:
+				if os.path.exists(f'web/locales/{locale}/pages/{page}.html'):
+					return template('web/resources/page.tpl', page=page, title=title, locale=locale)
+			return template('web/resources/page.tpl', page=page, title=title, locale='en')
 
 def flattensetlist(sets):
 	ret = set()

@@ -2,7 +2,7 @@
 
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
-<html lang='en'>
+<html lang="{{locale.split('-')[0]}}">
 	<head>
 		<title>{{title}}</title>
 		<script type="application/ld+json">
@@ -28,25 +28,11 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/burger-menu.svg" /></button>
 				<div id="project-logo">
-					<a href="/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
+					<a href="/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a>
 				</div>
 			</div>
-			<nav id="sidebar-nav" x-show="sidebarnavopen" x-transition x-data="{
-				pages:[
-					{'path':'/', 'name':'Home'},
-					{'path':'/pray/', 'name':'Pray'},
-					{'path':'/about/', 'name':'About'},
-					{'path':'/help/', 'name':'Help'},
-					{'path':'/donate/', 'name':'Donate'},
-					{'path':'/credit/', 'name':'Credit'}
-				]
-				}">
-				<template x-for="page in pages">
-					<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
-				</template>
-
-			</nav>
-			% include(f'web/pages/{page}.html')
+			% include(f'web/locales/{locale}/resources/sidemenu.html')
+			% include(f'web/locales/{locale}/pages/{page}.html')
 		</div>
 	</body>
 </html>
