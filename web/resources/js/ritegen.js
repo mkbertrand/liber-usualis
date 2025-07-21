@@ -330,3 +330,13 @@ async function chomp(id, tags) {
 		}
 	});
 }
+
+function translation(locale) {
+	if (locale == 'en') {
+		return ['english'];
+	} else if (locale == 'de') {
+		return ['deutsch'];
+	} else {
+		return ['english'];
+	}
+}

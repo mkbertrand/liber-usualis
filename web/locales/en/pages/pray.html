@@ -56,7 +56,7 @@
 	async update() {
 		this.chant;
 		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
-		var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&hour=${this.hour}&translation=${this.translation}` + (this.select == '' ? '' : `&select=${this.select}`));
+		var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&hour=${this.hour}&translation=${this.translation ? translation(locale) : 'none'}` + (this.select == '' ? '' : `&select=${this.select}`));
 		var json = await response.json();
 		this.rite = render(json, this.chant);
 		this.day = json.day;

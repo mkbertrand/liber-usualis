@@ -24,7 +24,7 @@
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 	<body>
-		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false}">
+		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/burger-menu.svg" /></button>
 				<div id="project-logo">

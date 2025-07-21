@@ -67,7 +67,6 @@ def pageserve():
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
 	finally:
-		print(locales)
 		if page == '':
 			for locale in locales:
 				if os.path.exists(f'web/locales/{locale}/pages/index.html'):
@@ -172,10 +171,11 @@ def rite():
 
 	translation = {}
 
-	if 'translation' in parameters and parameters['translation'] == 'true':
+	if 'translation' in parameters and parameters['translation'] != 'none':
 		def gettranslation(tags):
-			search = set(tags) | {parameters['translation']} | breviarium.defaultpile
-			return breviarium.search(root, search, datamanage.getpile(f'{root}/translations/english', search), rootappendix='/translations/english')
+			translation = parameters['translation']
+			search = set(tags) | {translation} | breviarium.defaultpile
+			return breviarium.search(root, search, datamanage.getpile(f'{root}/translations/{translation}', search), rootappendix=f'/translations/{translation}')
 
 		def traverse(obj):
 			if type(obj) is dict and 'tags' in obj:
