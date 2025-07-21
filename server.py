@@ -13,6 +13,8 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 
 import copy
+import argparse
+import re
 
 import breviarium
 import datamanage
@@ -24,32 +26,47 @@ root = 'breviarium-1888'
 
 implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
+titles = {
+		'pray': 'Rite Generator',
+		'about': 'About',
+		'credit': 'Credit',
+		'donate': 'Donate',
+		'help': 'Help the Liber Usualis Project'
+		}
+
 @get('/')
-def indexserve():
-	return static_file('index.html', root='web/pages/')
-
 @get('/pray/')
-def prayserve():
-	return pageserve('pray', 'Rite Generator')
-
 @get('/about/')
-def aboutserve():
-	return pageserve('about', 'About')
-
 @get('/credit/')
-def aboutserve():
-	return pageserve('credit', 'Credit')
-
 @get('/donate/')
-def donateserve():
-	return pageserve('donate', 'Donate')
-
 @get('/help/')
-def aboutserve():
-	return pageserve('help', 'Help the Liber Usualis Project')
+def pageserve():
+	page = request.route.rule[1:-1]
+	title = titles[page] if page in titles else ''
 
-def pageserve(page, title):
-	return template('web/resources/page.tpl', page=page, title=title)
+	# Get preferred locales
+	acla = request.headers.get('Accept-Language').replace(', ', ',')
+	langs = []
+	index = 0
+	for la in acla.split(','):
+		match = re.search(r';q=([\d\.]+?)(,|$)', acla[acla.index(la):])
+		# index is used to slightly devalue locales that are listed later but don't come with a q value (or have an equal q value with something else)
+		if match is None:
+			langs.append([la, index * -0.001])
+		else:
+			langs.append([la.split(';')[0], float(match.groups()[0]) - index * 0.001])
+		index += 1
+
+	# Sort locales to decide what user wants
+	langs = [l[0] for l in sorted(langs, key=lambda l : l[1], reverse=True)]
+
+	# Add en locale on end because if user insists on some stupid locale like fr we will want a fallback
+	langs.append('en')
+
+	if page == '':
+		return static_file('index.html', root='web/pages/')
+	else:
+		return template('web/resources/page.tpl', page=page, title=title)
 
 def flattensetlist(sets):
 	ret = set()
@@ -201,7 +218,15 @@ def error404(error):
 def error500(error):
 	return error
 
-waitress.serve(WSGILogger(
-	bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
-	ApacheFormatter(), propagate=False
-))
+parser = argparse.ArgumentParser(description='Server')
+parser.add_argument('-o', '--output', action='store_true', help='Display output in command line instead of in log file')
+args = parser.parse_args()
+
+if args.output:
+	from bottle import run
+	run(host='localhost', port=8080)
+else:
+	waitress.serve(WSGILogger(
+		bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
+		ApacheFormatter(), propagate=False
+	))
