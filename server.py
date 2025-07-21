@@ -26,6 +26,27 @@ root = 'breviarium-1888'
 
 implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 
+def localehunt(acceptlanguage):
+	# Get preferred locales
+	acla = acceptlanguage.replace(', ', ',')
+	langs = []
+	index = 0
+	for la in acla.split(','):
+		match = re.search(r';q=([\d\.]+?)(,|$)', acla[acla.index(la):])
+		# index is used to slightly devalue locales that are listed later but don't come with a q value (or have an equal q value with something else)
+		if match is None:
+			langs.append([la, index * -0.001])
+		else:
+			langs.append([la.split(';')[0], float(match.groups()[0]) - index * 0.001])
+		index += 1
+
+	# Sort locales to decide what user wants
+	langs = [l[0] for l in sorted(langs, key=lambda l : l[1], reverse=True)]
+	# Add en locale on end because if user insists on some stupid locale like fr we will want a fallback
+	langs.append('en')
+
+	return langs
+
 titles = {
 		'pray': 'Rite Generator',
 		'about': 'About',
@@ -43,30 +64,14 @@ titles = {
 def pageserve():
 	page = request.route.rule[1:-1]
 	title = titles[page] if page in titles else ''
-
-	# Get preferred locales
-	acla = request.headers.get('Accept-Language').replace(', ', ',')
-	langs = []
-	index = 0
-	for la in acla.split(','):
-		match = re.search(r';q=([\d\.]+?)(,|$)', acla[acla.index(la):])
-		# index is used to slightly devalue locales that are listed later but don't come with a q value (or have an equal q value with something else)
-		if match is None:
-			langs.append([la, index * -0.001])
+	locales = ['en']
+	try:
+		locales = localehunt(request.headers.get('Accept-Language'))
+	finally:
+		if page == '':
+			return static_file('index.html', root='web/pages/')
 		else:
-			langs.append([la.split(';')[0], float(match.groups()[0]) - index * 0.001])
-		index += 1
-
-	# Sort locales to decide what user wants
-	langs = [l[0] for l in sorted(langs, key=lambda l : l[1], reverse=True)]
-
-	# Add en locale on end because if user insists on some stupid locale like fr we will want a fallback
-	langs.append('en')
-
-	if page == '':
-		return static_file('index.html', root='web/pages/')
-	else:
-		return template('web/resources/page.tpl', page=page, title=title)
+			return template('web/resources/page.tpl', page=page, title=title)
 
 def flattensetlist(sets):
 	ret = set()
