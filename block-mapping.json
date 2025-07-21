@@ -1,0 +1,9 @@
+[
+    {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+            "SnapshotId": "snap-06b5478c6321d7e9a",
+            "VolumeType": "gp3"
+        }
+    }
+]

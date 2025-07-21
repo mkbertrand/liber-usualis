@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::744074488000:role/vmimport"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::nixos-iam-bucket",
+                "arn:aws:s3:::nixos-iam-bucket/*"
+            ]
+        }
+    ]
+}
