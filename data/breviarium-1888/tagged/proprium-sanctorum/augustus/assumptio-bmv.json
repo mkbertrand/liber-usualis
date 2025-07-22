@@ -4,6 +4,10 @@
 		"datum":"In Assumptione B.M.V."
 	},
 	{
+		"tags":["assumptio-bmv","basis-nominis"],
+		"datum":"Assumptionis"
+	},
+	{
 		"tags":["assumptio-bmv","antiphona","antiphona-i"],
 		"src":"gregobase/2561",
 		"datum":"Assúmpta est * María in cœlum: gaudent Ángeli, laudántes benedícunt Dóminum."
@@ -27,5 +31,70 @@
 		"tags":["assumptio-bmv","antiphona","antiphona-v"],
 		"src":"gregobase/2861",
 		"datum":"Pulchra es, * et decóra, fília Jerúsalem: terríbilis ut castrórum ácies ordináta."
+	},
+	{
+		"tags":["assumptio-bmv","capitulum"],
+		"datum":"In ómnibus réquiem quæsívi, et in hæreditáte Dómini morábor. + Tunc præcépit, et dixit mihi Creátor ómnium: * et qui creávit me, requiévit in tabernáculo meo."
+	},
+	{
+		"tags":["assumptio-bmv","i-vesperae","versiculus"],
+		"datum":["V. Exaltáta est sancta Dei Génitrix.","R. Super choros Angelórum ad cœléstia regna."]
+	},
+	{
+		"tags":["assumptio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2183",
+		"datum":"Virgo prudentíssima, * quo progréderis, quasi auróra valde rútilans? Fília Sion tota formósa et suávis es, pulchra ut luna, elécta ut sol."
+	},
+	{
+		"tags":["assumptio-bmv","collecta"],
+		"datum":"Famulórum tuórum, quǽsumus Dómine, delíctis ignósce: + ut qui tibi placére de áctibus nostris non valémus; * Genitrícis Fílii tui Dómini nostri intercessióne salvémur:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":[
+			["assumptio-bmv","laudes","versiculus"],
+			["assumptio-bmv","ii-vesperae","versiculus"]
+		],
+		"datum":["V. Exaltáta est sancta Dei Génitrix.","R. Super choros Angelórum ad cœléstia regna."]
+	},
+	{
+		"tags":["assumptio-bmv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2730",
+		"datum":"Quæ est ista, * quæ ascéndit sicut auróra consúrgens, pulchra ut luna, elécta ut sol, terríbilis ut castrórum ácies ordináta?"
+	},
+	{
+		"tags":["assumptio-bmv","tertia","responsorium-breve"],
+		"incipit":"Exaltáta est",
+		"responsum":"Sancta Dei Génitrix.",
+		"versus":"Super choros Angelórum ad cœléstia regna."
+	},
+	{
+		"tags":["assumptio-bmv","tertia","versiculus"],
+		"datum":["V. Assúmpta est María in cœlum, gaudent Ángeli.","R. Laudántes benedícunt Dóminum."]
+	},
+	{
+		"tags":["assumptio-bmv","sexta","responsorium-breve"],
+		"incipit":"Assúmpta est María in cœlum",
+		"responsum":"Gaudent Ángeli.",
+		"versus":"Laudántes benedícunt Dóminum."
+	},
+	{
+		"tags":["assumptio-bmv","sexta","versiculus"],
+		"datum":["V. María Virgo assúmpta est ad æthéreum thálamum.","R. In quo Rex regum stelláto sedet sólio."]
+	},
+	{
+		"tags":["assumptio-bmv","nona","responsorium-breve"],
+		"incipit":"María Virgo assúmpta est",
+		"responsum":"Ad æthéreum thálamum.",
+		"versus":"In quo Rex regum stelláto sedet sólio."
+	},
+	{
+		"tags":["assumptio-bmv","nona","versiculus"],
+		"datum":[["maria","vesperae","versiculus"]]
+	},
+	{
+		"tags":["assumptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2700",
+		"datum":"Hódie María Virgo * cœlos ascéndit: gaudéte, quia cum Christo regnat in ætérnum."
 	}
 ]

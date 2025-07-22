@@ -208,6 +208,12 @@
 		]
 	},
 	{
+		"include":["assumptio-bmv","dies-octava","ii-vesperae","primarium"],
+		"response":[
+			{"include":["i-vesperae","philippus-benitius","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
+		]
+	},
+	{
 		"include":["adrianus","commemoratio"],
 		"response":"dele"
 	},
@@ -478,5 +484,9 @@
 		"response":[
 			{"include":["paulus","omissum"],"remove":"omissum","adde":"commemoratio","target":1}
 		]
+	},
+	{
+		"include":["joanna-francisca","ii-vesperae","psalmi"],
+		"response":"dele"
 	}
 ]

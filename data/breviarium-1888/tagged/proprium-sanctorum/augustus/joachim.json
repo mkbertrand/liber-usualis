@@ -1,0 +1,26 @@
+[
+	{
+		"tags":["joachim","nomen"],
+		"datum":"S. Joachim Confessoris Patris B.M.V."
+	},
+	{
+		"tags":[
+			["joachim","i-vesperae","versiculus"],
+			["joachim","laudes","versiculus"]
+		],
+		"datum":["V. Potens in terra erit semen ejus.","R. Generátio rectórum benedicétur."]
+	},
+	{
+		"tags":[
+			["joachim","i-vesperae","antiphona","antiphona-magnificat"],
+			["joachim","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/1869",
+		"datum":"Laudémus * virum gloriósum in generatióne sua, quia benedictiónem ómnium géntium dedit illi Dóminus: et testaméntum suum confirmávit super caput ejus."
+	},
+	{
+		"tags":["joachim","collecta"],
+		"datum":"Deus, qui præ ómnibus Sanctis tuis beátum Jóachim Genitrícis Fílii tui patrem esse voluísti: + concéde, quǽsumus; ut cujus festa venerámur, * ejus quoque perpétuo patrocínia sentiámus.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	}
+]
