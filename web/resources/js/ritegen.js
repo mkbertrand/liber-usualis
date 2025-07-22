@@ -23,14 +23,7 @@ function stringrender(data) {
 		.replaceAll('Ý', 'Y');
 	data = data.replaceAll(/(?<!<)\//g, '<br>');
 
-	let numbers = data.match(/\s[0-9]+\s/gm);
-
-	if (numbers != null) {
-		numbers.reverse();
-		for (const i of numbers) {
-			data = data.replaceAll(i, '<span class=\'verse-number\'>' + i + '</span>');
-		}
-	}
+	data = data.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
 
 	data = data.replace(/\n/g, '<br>')
 		.replace(/N\./g, '<span class=\'red\'>N.</span>')
@@ -225,7 +218,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		} else if (typeof data === 'string') {
 			ret = `<p class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</p>`
 			if (translated != null && typeof translated === 'string') {
-				translated = translated.replaceAll(/\[.+?\]/g, '').trim();
+				translated = translated.replaceAll(/\[.+?\]/g, '').trim().replaceAll(/([0-9]+)\s/g, '');
 				rendered = stringrender(data);
 				if (rendered.includes('<br>')) {
 					ret = '';
