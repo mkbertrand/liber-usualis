@@ -1,0 +1,53 @@
+[
+	{
+		"tags":["decollatio-joannis-baptistae","nomen"],
+		"datum":"In Decollatione Sancti Joannis Baptistæ"
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","antiphona","antiphona-i"],
+		"src":"gregobase/2185",
+		"datum":"Heródes enim ténuit * et ligávit Joánnem, et pósuit in cárcerem propter Herodíadem."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","antiphona","antiphona-ii"],
+		"src":"gregobase/2693",
+		"datum":"Dómine mi rex, * da mihi in disco caput Joánnis Baptístæ."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","antiphona","antiphona-iii"],
+		"src":"gregobase/2723",
+		"datum":"Puéllæ saltánti * imperávit mater: Nihil áliud petas, nisi caput Joánnis."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","antiphona","antiphona-iv"],
+		"src":"gregobase/2507",
+		"datum":"Arguébat Heródem * Joánnes propter Herodíadem, quam túlerat fratri suo Philíppo uxórem."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","antiphona","antiphona-v"],
+		"src":"gregobase/2489",
+		"datum":"Da mihi in disco * caput Joánnis Baptístæ: et contristátus est rex propter jusjurándum."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","i-vesperae","versiculus"],
+		"datum":["V. Glória et honóre coronásti eum Dómine.","R. Et constituísti eum super ópera mánuum tuárum."]
+	},
+	{
+		"tags":[
+			["decollatio-joannis-baptistae","i-vesperae","antiphona","antiphona-magnificat"],
+			["decollatio-joannis-baptistae","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/2304",
+		"datum":"Misso Heródes * spiculatóre, præcépit amputári caput Joánnis in cárcere. Quo audíto, discípuli ejus venérunt, et tulérunt corpus ejus, et posuérunt illud in monuménto."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","collecta"],
+		"datum":"Sancti Joánnis Baptístæ Præcursóris et Mártyris tui quǽsumus Dómine: veneránda festívitas, * salutáris auxílii nobis præstet efféctum.",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2584",
+		"datum":"Misit rex incrédulus * minístros detestábiles, et amputári jussit caput Joánnis Baptístæ."
+	}
+]
