@@ -32,8 +32,8 @@ def load_data(p: str):
 
 	return recurse(data)
 
-diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/diurnal-coincidence.json'))
-vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/vesperal-coincidence.json'))
+vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json'))
+diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json'))
 
 class Job(NamedTuple):
 	rule: dict

@@ -36,14 +36,14 @@ def load_data(p: str):
 
 	return recurse(data)
 
-epiphanycycle = load_data('epiphany.json')
-paschalcycle = load_data('paschal.json')
-adventcycle = load_data('advent.json')
-nativitycycle = load_data('nativity.json')
+epiphanycycle = load_data('epiphania.json')
+paschalcycle = load_data('de-paschali.json')
+adventcycle = load_data('de-adventu.json')
+nativitycycle = load_data('in-tempore-nativitatis.json')
 autumnalcycle = load_data('autumnalis.json')
-movables = load_data('movables.json')
-sanctoral = load_data('kalendar.json')
-rules = datamanage.flatten(load_data('coincidence.json'))
+movables = load_data('motabiles.json')
+sanctoral = load_data('kalendarium.json')
+rules = datamanage.flatten(load_data('tabella.json'))
 
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
