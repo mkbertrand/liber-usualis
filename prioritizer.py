@@ -128,6 +128,8 @@ def getdiurnal(day):
 	prioritized = prioritize(kalendar.datamanage.getdate(day), diurnalrules)
 	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1)), martyrologyrules)
 	lunarday = luna.lunardate(day)
+	lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tredecima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
+	martyrology.append('luna-' + lunardaytags[lunarday - 1])
 	return prioritized + martyrology
 
 if __name__ == '__main__':
