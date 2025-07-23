@@ -80,6 +80,12 @@
 		"adde":"primarium"
 	},
 	{
+		"include":["nativitas","duplex-i-classis","i-vesperae"],
+		"response":[
+			{"include":["feria"],"response":"dele","target":1}
+		]
+	},
+	{
 		"include":["suffragium","de-cruce"],
 		"response":[
 			{"include":["dominica"],"response":"dele","target":0},
@@ -215,7 +221,7 @@
 	},
 	{
 		"include":["adrianus","commemoratio"],
-		"response":"dele"
+		"remove":["primarium","commemoratio"],"adde":"omissum"
 	},
 	{
 		"include":["i-vesperae","septem-dolores","primarium"],
@@ -301,16 +307,17 @@
 	},
 	{
 		"include":["duplex-i-classis","i-vesperae","primarium"],
+		"continue":false,
 		"response":[
 			{"include":["dominica-i-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["dominica-ii-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["duplex-majus","ii-vesperae"],"response":"dele","target":1},
-			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":1},
-			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
+			{"include":["duplex-majus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
+			{"include":["duplex-minus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
+			{"include":["semiduplex","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
 			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["feria","in-tempore-adventus","ii-vesperae"],"response":"dele","target":1},
-			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
+			{"include":["feria","in-tempore-adventus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
@@ -323,11 +330,11 @@
 		"include":["sollemnitas-localis","i-vesperae","primarium"],
 		"response":[
 			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["duplex-majus","ii-vesperae"],"response":"dele","target":1},
-			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":1},
-			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":1},
+			{"include":["duplex-majus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
+			{"include":["duplex-minus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
+			{"include":["semiduplex","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
 			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
@@ -338,6 +345,7 @@
 	},
 	{
 		"include":["duplex-ii-classis","i-vesperae","primarium"],
+		"continue":false,
 		"response":[
 			{"include":["dominica-i-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["dominica-ii-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
@@ -366,7 +374,7 @@
 			{"include":["duplex-i-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-ii-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["feria-major","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
@@ -381,7 +389,7 @@
 			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
@@ -407,7 +415,7 @@
 			{"include":["duplex-majus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-minus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["feria-major","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"response":"dele","target":1}
+			{"include":["feria","ii-vesperae"],"exclude":["feria-major"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
@@ -424,8 +432,8 @@
 	{
 		"include":["simplex","i-vesperae"],
 		"response":[
-			{"include":["duplex-i-classis","ii-vesperae"],"response":"dele","target":0},
-			{"include":["sollemnitas-localis","ii-vesperae"],"response":"dele","target":0},
+			{"include":["duplex-i-classis","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":0},
+			{"include":["sollemnitas-localis","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":0},
 			{"include":["duplex-ii-classis","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-minus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
@@ -487,6 +495,6 @@
 	},
 	{
 		"include":["joanna-francisca","ii-vesperae","psalmi"],
-		"response":"dele"
+		"remove":["primarium","commemoratio"],"adde":"omissum"
 	}
 ]
