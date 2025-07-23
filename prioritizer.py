@@ -10,7 +10,9 @@ import itertools
 import copy
 
 from kalendar import kalendar
+
 import kalendar.datamanage
+import kalendar.luna as luna
 
 data_root = pathlib.Path(__file__).parent
 
@@ -34,6 +36,7 @@ def load_data(p: str):
 
 vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json'))
 diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json'))
+martyrologyrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-martyrologii.json'))
 
 class Job(NamedTuple):
 	rule: dict
@@ -122,8 +125,10 @@ def getvespers(day):
 
 def getdiurnal(day):
 	assert type(day) is not datetime
-	day = kalendar.datamanage.getdate(day)
-	return prioritize(day, diurnalrules)
+	prioritized = prioritize(kalendar.datamanage.getdate(day), diurnalrules)
+	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1)), martyrologyrules)
+	lunarday = luna.lunardate(day)
+	return prioritized + martyrology
 
 if __name__ == '__main__':
 	import argparse

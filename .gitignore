@@ -3,6 +3,7 @@ typings/
 __pycache__
 kalendars/**
 kalendars/testdata/**
+kalendar/lunar_chart.json
 *.swp
 *.swo
 testdata/*

@@ -1,0 +1,12 @@
+[
+	{
+		"include":[],
+		"exclude":["tempus"],
+		"response":"dele"
+	},
+	{
+		"include":[],
+		"remove":"tempus",
+		"adde":"martyrologium"
+	}
+]
