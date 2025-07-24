@@ -289,7 +289,7 @@ h4.item-header {
 	color: red;
 	font-size: 20px;
 	font-variant: small-caps;
-	margin-bottom: -16px;
+	margin: 0;
 }
 
 h5.psalm-subheader {
@@ -304,7 +304,7 @@ h5.psalm-subheader {
 	font-size: 16px;
 }
 
-.evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter {
+.evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter {
 	font-weight: bold;
 	color: red;
 }

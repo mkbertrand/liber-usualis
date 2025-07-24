@@ -10,6 +10,41 @@ titled = {
 
 titled['collecta-primaria'] = 'Collecta';
 
+function numberize(year) {
+	nu = year.substring(12, 16);
+	thousands = nu[0] - '0';
+	ret = thousands == 2 ? 'Bis Millésimo' : 'Millésimo';
+	hundreds = nu[1] - '0';
+	hundredsnames = ['', ' Centésimo', ' Ducentésimo', ' Trecentésimo', ' Quadricentésimo', ' Quingentésimo', ' Sescentésimo', ' Septingentésimo', ' Octigentésimo', ' Nongentésimo'];
+	ret += hundredsnames[hundreds];
+	onetonine = ['', ' Primo', ' Secúndo', ' Tértio', ' Quarto', ' Quinto', ' Sexto', ' Séptimo', ' Octávo', ' Nono']
+	tensnumbers = ['', '', ' Vicésimo', ' Trecésimo', ' Quadragésimo', ' Quinquagésimo', ' Sexagésimo', ' Septuagésimo', ' Octogésimo', ' Nonagésimo']
+	if (nu[2] >= '2') {
+		tens = nu[2] - '0';
+		ret += tensnumbers[tens];
+		ones = nu[3] - '0';
+		ret += onetonine[ones];
+	} else {
+		tens = (nu[2] - '0') * 10 + (nu[3] - '0')
+		if (tens <= 9) {
+			ret += onetonine[tens];
+		} else if (tens == 10) {
+			ret += ' Décimo';
+		} else if (tens == 11) {
+			ret += ' Undécimo.'
+		} else if (tens == 12) {
+			ret += ' Duodécimo.'
+		} else if (tens <= 17) {
+			ret += onetonine[tens - 10] + ' Décimo';
+		} else if (tens == 18) {
+			ret += ' Duodevicésimo.'
+		} else if (tens == 19) {
+			ret += ' Undevicésimo.'
+		}
+	}
+	return year.replace(nu, ret.toLowerCase());
+}
+
 function unpack(data) {
 	if (typeof data === 'string') {
 		return data;
@@ -213,6 +248,17 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					header = 'Versiculus';
 				}
 				data['datum'] = data['datum'][0] + '<br>' + data['datum'][1];
+			} else if (data['tags'].includes('martyrologium')) {
+				ret = `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][0]))} ${stringrender(unpack(data['datum'][1]))} ${stringrender(numberize(unpack(data['datum'][2])))}</p><p class="rite-text martyrologium">${stringrender(unpack(data['datum'][3]))}</p>`;
+				martyrology = unpack(data['datum'][4]);
+				if (typeof martyrology === 'string') {
+					ret += `<p class="rite-text martyrologium">${martyrology}</p>`;
+				} else {
+					for (i of unpack(data['datum'][4])) {
+						ret += `<p class="rite-text martyrologium">${stringrender(i)}</p>`;
+					}
+				}
+				data['datum'] = ret + `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][5]))}<br>${stringrender(unpack(data['datum'][6]))}</p>`;
 			}
 			for (i of data['tags']) {
 				// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once

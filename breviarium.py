@@ -17,7 +17,7 @@ import functools
 
 import psalms
 
-defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones'}
+defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis'}
 
 @functools.lru_cache(maxsize=64)
 def getcategory(root, category):
@@ -210,6 +210,14 @@ def process(root, item, selected, alternates, pile):
 		item = {'from':item}
 
 	if 'from' in item:
+		if 'anno-domini' in item['from']:
+			yeartag = list(filter(lambda i: any(c.isdigit() for c in i), selected))[0]
+			return {'tags': {'anno-domini'}, 'datum': 'Anno Dómini ' + yeartag + '.'}
+
+		if 'martyrologium' in item['from']:
+			root = 'martyrologium-1846'
+			pile = datamanage.getpile(root, item['from'] | {'dies-lunae'})
+
 		result = None
 		if not any('/' in i for i in item['from']):
 			for i in range(len(alternates)):
