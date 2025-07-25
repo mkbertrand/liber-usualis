@@ -127,7 +127,7 @@ def getdiurnal(day):
 	assert type(day) is not datetime
 	prioritized = prioritize(kalendar.datamanage.getdate(day), diurnalrules)
 	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1)), martyrologyrules)
-	lunarday = luna.lunardate(day)
+	lunarday = luna.lunardate(day + timedelta(days=1))
 	lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
 	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
 	martyrology[0].add(str(day.year))
