@@ -9,12 +9,10 @@ import re
 import diff_match_patch
 
 import breviarium
-import prioritizer
 import datamanage
 
 year = 2001
 root = 'breviarium-1888'
-implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
 changes = dict()
 
 

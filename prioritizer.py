@@ -34,6 +34,7 @@ def load_data(p: str):
 
 	return recurse(data)
 
+implicationtable = load_data('kalendar/data/sequentes.json')
 vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json'))
 diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json'))
 martyrologyrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-martyrologii.json'))
@@ -121,7 +122,13 @@ def getvespers(day):
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
 	# Final product
 	vesperal = iivespers + ivespers
-	return prioritize(vesperal, vesperalrules)
+	tags = prioritize(vesperal, vesperalrules)
+	for i in tags:
+		for j in implicationtable:
+			if j['tags'].issubset(i):
+				i |= j['implies']
+
+	return tags
 
 def getdiurnal(day):
 	assert type(day) is not datetime
@@ -130,7 +137,14 @@ def getdiurnal(day):
 	lunarday = luna.lunardate(day + timedelta(days=1))
 	lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
 	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
-	return prioritized + martyrology
+
+	tags = prioritized + martyrology
+	for i in tags:
+		for j in implicationtable:
+			if j['tags'].issubset(i):
+				i |= j['implies']
+
+	return tags
 
 if __name__ == '__main__':
 	import argparse

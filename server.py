@@ -25,8 +25,6 @@ import kalendar.datamanage
 
 root = 'breviarium-1888'
 
-implicationtable = datamanage.load_data(f'data/{root}/tag-implications.json')
-
 def localehunt(acceptlanguage):
 	# Get preferred locales
 	acla = acceptlanguage.replace(', ', ',')
@@ -94,17 +92,9 @@ def getname(tagset, pile):
 def daytags(vesperal = False):
 	parameters = copy.deepcopy(request.query)
 
-	if not 'date' in parameters:
-		parameters['date'] = date.today()
-	else:
-		parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
+	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-	tags = copy.deepcopy(prioritizer.getvespers(parameters['date']) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(parameters['date']))
-
-	for i in tags:
-		for j in implicationtable:
-			if j['tags'].issubset(i):
-				i |= j['implies']
+	tags = copy.deepcopy(prioritizer.getvespers(day) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(day))
 
 	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
 
@@ -125,27 +115,13 @@ def daytags(vesperal = False):
 def rite():
 	parameters = copy.deepcopy(request.query)
 
-	if not 'date' in parameters:
-		parameters['date'] = date.today()
-	else:
-		parameters['date'] = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
-
-	if ' ' in parameters['hour']:
-		parameters['hour'] = parameters['hour'].replace(' ', '+')
-
 	# Generate the actual liturgical text. Didn't use breviarium.generate because of votive office handling
-	day = parameters['date']
-	hour = parameters['hour']
-	hours = hour.split('+')
+	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
+	hours = parameters['hour'].replace(' ', '+').split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-
 	vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'})
 
 	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
-	for i in tags:
-		for j in implicationtable:
-			if j['tags'].issubset(i):
-				i |= j['implies']
 
 	tags = [frozenset(i) for i in tags]
 

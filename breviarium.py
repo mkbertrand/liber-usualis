@@ -87,8 +87,6 @@ def contradicts0(root, category, tags):
 	else:
 		return RuntimeError()
 
-implicationtable = datamanage.load_data('data/breviarium-1888/tag-implications.json')
-
 def prettyprint(j):
 	def recurse(obj):
 		match obj:
@@ -292,10 +290,6 @@ def generate(root, day, hour: str):
 	hours = hour.split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
 	tags = copy.deepcopy(prioritizer.getvespers(day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.getdiurnal(day))
-	for i in tags:
-		for j in implicationtable:
-			if j['tags'].issubset(i):
-				i |= j['implies']
 	tags = [frozenset(i) for i in tags]
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
