@@ -123,8 +123,6 @@ def rite():
 
 	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
 
-	tags = [frozenset(i) for i in tags]
-
 	# Handle the Little Office of the BVM
 	if 'select' in parameters and parameters['select'] == 'officium-parvum-bmv':
 		def votivize(i):

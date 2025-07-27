@@ -240,18 +240,8 @@
 		"tags":["nomen-bmv","duplex-majus","maria"]
 	},
 	{
-		"occurrence":[
-			["feria-iv","in-tempore-quadragesimae"],
-			["feria-iv","hebdomada-passionis"]
-		],
-		"tags":["psalmi-graduales"]
-	},
-	{
-		"occurrence":[
-			["feria-vi","in-tempore-quadragesimae"],
-			["feria-vi","hebdomada-passionis"]
-		],
-		"tags":["psalmi-poenitentiales"]
+		"occurrence":["tempus"],
+		"tags":["officium-parvum-bmv","maria"]
 	},
 	{
 		"occurrence":[
@@ -275,6 +265,20 @@
 			["kalendae-novembris"]
 		],
 		"tags":["officium-defunctorum"]
+	},
+	{
+		"occurrence":[
+			["feria-iv","in-tempore-quadragesimae"],
+			["feria-iv","hebdomada-passionis"]
+		],
+		"tags":["psalmi-graduales"]
+	},
+	{
+		"occurrence":[
+			["feria-vi","in-tempore-quadragesimae"],
+			["feria-vi","hebdomada-passionis"]
+		],
+		"tags":["psalmi-poenitentiales"]
 	},
 	{
 		"occurrence":["tempus"],

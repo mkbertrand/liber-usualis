@@ -156,6 +156,13 @@
 .coincidence-entry {
 	margin-left: 20px;
 	cursor: not-allowed;
+	font-size: 16px;
+}
+
+.non-dicitur {
+	color: #333;
+	font-size: 14px;
+	font-style: italic;
 }
 
 .permitted-entry {

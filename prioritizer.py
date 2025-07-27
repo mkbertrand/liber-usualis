@@ -128,7 +128,7 @@ def getvespers(day):
 			if j['tags'].issubset(i):
 				i |= j['implies']
 
-	return tags
+	return [frozenset(i) for i in tags]
 
 def getdiurnal(day):
 	assert type(day) is not datetime
@@ -144,7 +144,7 @@ def getdiurnal(day):
 			if j['tags'].issubset(i):
 				i |= j['implies']
 
-	return tags
+	return [frozenset(i) for i in tags]
 
 if __name__ == '__main__':
 	import argparse

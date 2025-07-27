@@ -11,6 +11,9 @@
 	day: '',
 	color: '',
 	hour: '',
+	ambit: $persist('omnes'),
+	aggregation: $persist(true),
+	lastrecited: $persist(),
 	choral: $persist(true),
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
@@ -56,7 +59,7 @@
 	async update() {
 		this.chant;
 		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
-		var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&hour=${this.hour}&translation=${this.translation ? translation(locale) : 'none'}` + (this.select == '' ? '' : `&select=${this.select}`));
+		var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&hour=${this.hour}&translation=${this.translation ? translation(locale) : 'none'}&aggregation=${this.aggregation}` + (this.select == '' ? '' : `&select=${this.select}`));
 		var json = await response.json();
 		this.rite = render(json, this.chant);
 		this.day = json.day;
@@ -95,18 +98,22 @@
 			<template x-if="initialized">
 				<div id="coincidences-list-container">
 					<h3 id="coincidences-list-title">Coincidences</h3>
-					<h4 class="coincidences-label">Primary</h3>
+					<h4 class="coincidences-label">Primary</h4>
 					<div @click="select=''; optionspanel=false;" id="primary-entry" class="coincidence-entry permitted-entry" x-text="day.primary[0]"></div>
-					<h4 class="coincidences-label">Commemorations</h3>
+					<h4 class="coincidences-label">Commemorations</h4>
 					<template x-for="commemoration in day.commemorations">
 						<div class="coincidence-entry" x-text="commemoration[0]"></div>
 					</template>
-					<h4 class="coincidences-label">Omissions</h3>
+					<h4 class="coincidences-label">Omissions</h4>
 					<template x-for="omission in day.omissions">
 						<div class="coincidence-entry" x-text="omission[0]"></div>
 					</template>
+					<h4 class="coincidences-label">Other Offices</h4>
+					<div @click="select='officium-parvum-bmv'; optionspanel=false;" class="coincidence-entry permitted-entry">Officium Parvum B.M.V.<span class="non-dicitur" x-show="day.primary[1].includes('duplex') || day.primary[1].includes('semiduplex')"> Non hodie dicitur</span></div>
+					<div @click="select='officium-defunctorum'; optionspanel=false;" class="coincidence-entry permitted-entry">Officium Defunctorum<span class="non-dicitur" x-show="!day.tags.some((tagset) => tagset.includes('officium-defunctorum'))"> Non hodie dicitur</span></div>
+					<div @click="hour='psalmi-graduales'; optionspanel=false;" class="coincidence-entry permitted-entry">Psalmi Graduales<span class="non-dicitur" x-show="!day.tags.some((tagset) => tagset.includes('psalmi-graduales'))"> Non hodie dicuntur</span></div>
+					<div @click="hour='psalmi-poenitentiales'; optionspanel=false;" class="coincidence-entry permitted-entry">Psalmi Poenitentiales<span class="non-dicitur" x-show="!day.tags.some((tagset) => tagset.includes('psalmi-poenitentiales'))"> Non hodie dicuntur</span></div>
 					<h4 class="coincidences-label">Votives</h3>
-					<div @click="select='officium-parvum-bmv'; optionspanel=false;" class="coincidence-entry permitted-entry" x-text="day.votives[0][0]"></div>
 				</div>
 			</template>
 		</div>

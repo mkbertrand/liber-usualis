@@ -290,7 +290,6 @@ def generate(root, day, hour: str):
 	hours = hour.split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
 	tags = copy.deepcopy(prioritizer.getvespers(day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.getdiurnal(day))
-	tags = [frozenset(i) for i in tags]
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
 	pile = datamanage.getpile(root, defaultpile | primary | set(hours))

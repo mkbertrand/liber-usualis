@@ -27,5 +27,27 @@
 		"response":[
 			{"include":["sabbatum","feria"],"adde":"bmv-sabbatum","target":1}
 		]
+	},
+	{
+		"include":["officium-parvum-bmv"],
+		"response":[
+			{"include":["tempus","feria-ii"],"target":0,"adde":"feria-ii"},
+			{"include":["tempus","feria-iii"],"target":0,"adde":"feria-iii"},
+			{"include":["tempus","feria-iv"],"target":0,"adde":"feria-iv"},
+			{"include":["tempus","feria-v"],"target":0,"adde":"feria-v"},
+			{"include":["tempus","feria-vi"],"target":0,"adde":"feria-vi"},
+			{"include":["tempus","sabbatum"],"target":0,"adde":"sabbatum"}
+		]
+	},
+	{
+		"include":["officium-parvum-bmv"],
+		"response":[
+			{"include":["duplex-i-classis"],"target":0,"adde":"omissum"},
+			{"include":["duplex-ii-classis"],"target":0,"adde":"omissum"},
+			{"include":["duplex-majus"],"target":0,"adde":"omissum"},
+			{"include":["duplex-minus"],"target":0,"adde":"omissum"},
+			{"include":["semiduplex"],"target":0,"adde":"omissum"},
+			{"include":["maria"],"target":0,"adde":"omissum"}
+		]
 	}
 ]

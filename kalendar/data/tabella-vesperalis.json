@@ -496,5 +496,20 @@
 	{
 		"include":["joanna-francisca","ii-vesperae","psalmi"],
 		"remove":["primarium","commemoratio"],"adde":"omissum"
+	},
+	{
+		"include":["officium-parvum-bmv","ii-vesperae"],
+		"response":"dele"
+	},
+	{
+		"include":["officium-parvum-bmv"],
+		"response":[
+			{"include":["duplex-i-classis"],"target":0,"adde":"omissum"},
+			{"include":["duplex-ii-classis"],"target":0,"adde":"omissum"},
+			{"include":["duplex-majus"],"target":0,"adde":"omissum"},
+			{"include":["duplex-minus"],"target":0,"adde":"omissum"},
+			{"include":["semiduplex"],"target":0,"adde":"omissum"},
+			{"include":["maria"],"target":0,"adde":"omissum"}
+		]
 	}
 ]

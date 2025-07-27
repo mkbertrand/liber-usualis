@@ -54,5 +54,13 @@
 	{
 		"tags":["apostolus","in-tempore-paschali"],
 		"implies":["apostolorum-tempore-paschali","martyrum-tempore-paschali"]
+	},
+	{
+		"tags":["officium-parvum-bmv"],
+		"implies":["semiduplex"]
+	},
+	{
+		"tags":["votiva"],
+		"implies":["semiduplex"]
 	}
 ]
