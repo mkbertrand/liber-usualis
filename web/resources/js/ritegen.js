@@ -11,12 +11,12 @@ class RiteItem {
 	}
 }
 fullambit = [
-	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('psalmi-graduales', 'psalmi-graduales', CONTINGENT), new RiteItem('matutinum', 'opbmv', CONTINGENT), new RiteItem('laudes', 'opbmv', CONTINGENT),  new RiteItem('matutinum', 'diei', ALWAYS), new RiteItem('laudes', 'diei', ALWAYS), new RiteItem('matutinum', 'defunctorum', CONTINGENT), new RiteItem('laudes', 'defunctorum', CONTINGENT), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', CONTINGENT)], 'id': 'matutinum'},
-	{'name': 'Prima', 'content': [new RiteItem('prima', 'diei', ALWAYS), new RiteItem('prima', 'opbmv', CONTINGENT), new RiteItem('officium-capituli', 'diei', ALWAYS)], 'id': 'prima'},
-	{'name': 'Tertia', 'content': [new RiteItem('tertia', 'diei', ALWAYS), new RiteItem('tertia', 'opbmv', CONTINGENT)], 'id': 'tertia'},
-	{'name': 'Sexta', 'content': [new RiteItem('sexta', 'diei', ALWAYS), new RiteItem('sexta', 'opbmv', CONTINGENT)], 'id': 'sexta'},
-	{'name': 'Nona', 'content': [new RiteItem('nona', 'diei', ALWAYS), new RiteItem('nona', 'opbmv', CONTINGENT)], 'id': 'nona'},
-	{'name': 'Vesperæ', 'content': [new RiteItem('vesperae', 'opbmv', CONTINGENT), new RiteItem('vesperae', 'diei', ALWAYS), new RiteItem('vesperae', 'defunctorum', CONTINGENT)], 'id': 'vesperae'},
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('psalmi-graduales', 'psalmi-graduales', CONTINGENT), new RiteItem('matutinum', 'opbmv', CONTINGENT), new RiteItem('laudes', 'opbmv', CONTINGENT),  new RiteItem('matutinum', 'diei', ALWAYS), new RiteItem('laudes', 'diei', ALWAYS), new RiteItem('matutinum', 'defunctorum', CONTINGENT), new RiteItem('laudes', 'defunctorum', CONTINGENT), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', CONTINGENT), new RiteItem('antiphona-bmv', 'diei', ALWAYS)], 'id': 'matutinum'},
+	{'name': 'Prima', 'content': [new RiteItem('prima', 'diei', ALWAYS), new RiteItem('prima', 'opbmv', CONTINGENT), new RiteItem('officium-capituli', 'diei', ALWAYS), new RiteItem('antiphona-bmv', 'diei', ALWAYS)], 'id': 'prima'},
+	{'name': 'Tertia', 'content': [new RiteItem('tertia', 'diei', ALWAYS), new RiteItem('tertia', 'opbmv', CONTINGENT), new RiteItem('antiphona-bmv', 'diei', ALWAYS)], 'id': 'tertia'},
+	{'name': 'Sexta', 'content': [new RiteItem('sexta', 'diei', ALWAYS), new RiteItem('sexta', 'opbmv', CONTINGENT), new RiteItem('antiphona-bmv', 'diei', ALWAYS)], 'id': 'sexta'},
+	{'name': 'Nona', 'content': [new RiteItem('nona', 'diei', ALWAYS), new RiteItem('nona', 'opbmv', CONTINGENT), new RiteItem('antiphona-bmv', 'diei', ALWAYS)], 'id': 'nona'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('vesperae', 'opbmv', CONTINGENT), new RiteItem('vesperae', 'diei', ALWAYS), new RiteItem('antiphona-bmv', 'diei', ALWAYS), new RiteItem('vesperae', 'defunctorum', CONTINGENT)], 'id': 'vesperae'},
 	{'name': 'Completorium', 'content': [new RiteItem('completorium', 'diei', ALWAYS), new RiteItem('completorium', 'opbmv', CONTINGENT)], 'id': 'completorium'}
 ];
 function ritelist(daytags, ambit) {
@@ -37,13 +37,13 @@ function ritelist(daytags, ambit) {
 	ret = []
 
 	for (var i = 0; i < ambit.length; i++) {
-		lit = [['ante-officium', 'diei']];
+		lit = [['aperi-domine', 'diei']];
 		for (var j = 0; j < ambit[i].content.length; j++) {
 			if (ambit[i].content[j].when == ALWAYS || included.includes(ambit[i].content[j].where)) {
 				lit.push([ambit[i].content[j].what, ambit[i].content[j].where]);
 			}
 		}
-		lit.push(['post-officium', 'diei']);
+		lit.push(['sacrosanctae', 'diei']);
 		ret.push({'name': ambit[i].name, 'content': lit, 'id': ambit[i].id});
 	}
 
@@ -51,7 +51,7 @@ function ritelist(daytags, ambit) {
 }
 
 function riteTitle(data, size = 'large') {
-	if (data.rite.tags.includes('post-officium')) {
+	if (data.rite.tags.includes('sacrosanctae') || data.rite.tags.includes('antiphona-bmv')) {
 		return '';
 	}
 	var title = data['usednames'][0];

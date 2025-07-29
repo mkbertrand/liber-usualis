@@ -120,7 +120,6 @@ def rite():
 	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 	hours = parameters['hour'].replace(' ', '+').split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	print(parameters['time'])
 	vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
 	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
@@ -139,6 +138,10 @@ def rite():
 	tags.remove(primary)
 	pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
 
+	noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
+	if noending:
+		tags.append({'fidelium-animae', 'hoc-omissum'})
+		tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'})
 	lit = []
 	for hour in hours:
 		lit.append({'hora', hour})
