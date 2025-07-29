@@ -47,7 +47,7 @@
 			{"include":["duplex-majus"],"target":0,"adde":"omissum"},
 			{"include":["duplex-minus"],"target":0,"adde":"omissum"},
 			{"include":["semiduplex"],"target":0,"adde":"omissum"},
-			{"include":["maria"],"target":0,"adde":"omissum"}
+			{"include":["maria"],"exclude":["suffragium"],"target":0,"adde":"omissum"}
 		]
 	}
 ]

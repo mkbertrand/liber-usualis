@@ -1,5 +1,81 @@
 // Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+ALWAYS = true;
+CONTINGENT = false;
+
+class RiteItem {
+	constructor(what, where, when) {
+		this.what = what;
+		this.where = where;
+		this.when = when;
+	}
+}
+fullambit = [
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('psalmi-graduales', 'psalmi-graduales', CONTINGENT), new RiteItem('matutinum', 'opbmv', CONTINGENT), new RiteItem('laudes', 'opbmv', CONTINGENT),  new RiteItem('matutinum', 'diei', ALWAYS), new RiteItem('laudes', 'diei', ALWAYS), new RiteItem('matutinum', 'defunctorum', CONTINGENT), new RiteItem('laudes', 'defunctorum', CONTINGENT), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', CONTINGENT)], 'id': 'matutinum'},
+	{'name': 'Prima', 'content': [new RiteItem('prima', 'diei', ALWAYS), new RiteItem('prima', 'opbmv', CONTINGENT), new RiteItem('officium-capituli', 'diei', ALWAYS)], 'id': 'prima'},
+	{'name': 'Tertia', 'content': [new RiteItem('tertia', 'diei', ALWAYS), new RiteItem('tertia', 'opbmv', CONTINGENT)], 'id': 'tertia'},
+	{'name': 'Sexta', 'content': [new RiteItem('sexta', 'diei', ALWAYS), new RiteItem('sexta', 'opbmv', CONTINGENT)], 'id': 'sexta'},
+	{'name': 'Nona', 'content': [new RiteItem('nona', 'diei', ALWAYS), new RiteItem('nona', 'opbmv', CONTINGENT)], 'id': 'nona'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('vesperae', 'opbmv', CONTINGENT), new RiteItem('vesperae', 'diei', ALWAYS), new RiteItem('vesperae', 'defunctorum', CONTINGENT)], 'id': 'vesperae'},
+	{'name': 'Completorium', 'content': [new RiteItem('completorium', 'diei', ALWAYS), new RiteItem('completorium', 'opbmv', CONTINGENT)], 'id': 'completorium'}
+];
+function ritelist(daytags, ambit) {
+	included = ['diei'];
+	if (daytags.some(i => i.includes('officium-parvum-bmv') && !i.includes('omissum'))) {
+		included.push('opbmv');
+	}
+	if (daytags.some(i => i.includes('officium-defunctorum'))) {
+		included.push('defunctorum');
+	}
+	if (daytags.some(i => i.includes('psalmi-graduales'))) {
+		included.push('psalmi-graduales');
+	}
+	if (daytags.some(i => i.includes('psalmi-poenitentiales'))) {
+		included.push('psalmi-poenitentiales');
+	}
+
+	ret = []
+
+	for (var i = 0; i < ambit.length; i++) {
+		lit = [['ante-officium', 'diei']];
+		for (var j = 0; j < ambit[i].content.length; j++) {
+			if (ambit[i].content[j].when == ALWAYS || included.includes(ambit[i].content[j].where)) {
+				lit.push([ambit[i].content[j].what, ambit[i].content[j].where]);
+			}
+		}
+		lit.push(['post-officium', 'diei']);
+		ret.push({'name': ambit[i].name, 'content': lit, 'id': ambit[i].id});
+	}
+
+	return ret;
+}
+
+function riteTitle(data, size = 'large') {
+	if (data.rite.tags.includes('post-officium')) {
+		return '';
+	}
+	var title = data['usednames'][0];
+	if (size == 'small') {
+		return `<h1 class="small-title">${title}</h1>`;
+	} else {
+		var subtitle = '';
+		if (data['usedprimary'].includes('duplex-i-classis')) {
+			subtitle = 'Duplex I Classis';
+		} else if (data['usedprimary'].includes('duplex-ii-classis')) {
+			subtitle = 'Duplex II Classis';
+		} else if (data['usedprimary'].includes('duplex-majus')) {
+			subtitle = 'Duplex Majus';
+		} else if (data['usedprimary'].includes('duplex-minus')) {
+			subtitle = 'Duplex Minus';
+		} else if (data['usedprimary'].includes('semiduplex')) {
+			subtitle = 'Semiduplex';
+		} else if (data['usedprimary'].includes('simplex') || data['usedprimary'].includes('feria')) {
+			subtitle = 'Simplex';
+		}
+		return `<h1 class="large-title">${title}</h1><h2 class="large-subtitle">${subtitle}</h2>`;
+	}
+}
+
 titled = {
 	capitulum: 'Capitulum',
 	hymnus: 'Hymnus',
@@ -212,7 +288,8 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				if (!parenttags.includes('commemorationes')) {
 					header = 'Versiculus';
 				}
-				data['datum'] = data['datum'][0] + '<br>' + data['datum'][1];
+				vscl = unpack(data['datum']);
+				data['datum'] = vscl[0] + '<br>' + vscl[1];
 			} else if (data['tags'].includes('martyrologium')) {
 				ret = `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][0]))} ${stringrender(unpack(data['datum'][1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data['datum'][2]))}</p>`;
 				martyrology = unpack(data['datum'][3]);
@@ -267,23 +344,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 // Just guarantees that the return is an array so that the x-for doesn't break
 function render(data, chant) {
 	options = {chant: chant, disabletrivialchant: true};
-	var title;
-	var subtitle = '';
-	title = data['usednames'][0];
-	if (data['usedprimary'].includes('duplex-i-classis')) {
-		subtitle = 'Duplex I Classis';
-	} else if (data['usedprimary'].includes('duplex-ii-classis')) {
-		subtitle = 'Duplex II Classis';
-	} else if (data['usedprimary'].includes('duplex-majus')) {
-		subtitle = 'Duplex Majus';
-	} else if (data['usedprimary'].includes('duplex-minus')) {
-		subtitle = 'Duplex Minus';
-	} else if (data['usedprimary'].includes('semiduplex')) {
-		subtitle = 'Semiduplex';
-	} else if (data['usedprimary'].includes('simplex') || data['usedprimary'].includes('feria')) {
-		subtitle = 'Simplex';
-	}
-	return `<h1 class="day-title">${title}</h1><h2 class="day-subtitle">${subtitle}</h2>` + renderinner(data['rite'], null, data['translation'], [], options, data['usednames']);
+	return renderinner(data['rite'], null, data['translation'], [], options, data['usednames']);
 };
 
 async function chomp(id, tags) {

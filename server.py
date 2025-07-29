@@ -89,12 +89,13 @@ def getname(tagset, pile):
 		name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
 	return name
 
+@get('/day')
 def daytags(vesperal = False):
 	parameters = copy.deepcopy(request.query)
 
 	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-	tags = copy.deepcopy(prioritizer.getvespers(day) if 'vesperae' in parameters['hour'] or 'completorium' in parameters['hour'] else prioritizer.getdiurnal(day))
+	tags = copy.deepcopy(prioritizer.getvespers(day) if parameters['time'] == 'vesperale' else prioritizer.getdiurnal(day))
 
 	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
 
@@ -102,13 +103,13 @@ def daytags(vesperal = False):
 	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
 	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
 	votives = [['Officium Parvum B.M.V.', {'officium-parvum-bmv'}]]
-	return {
+	return datamanage.dump_data({
 			'tags': tags,
 			'primary': [getname(primary, pile), primary],
 			'commemorations': commemorations,
 			'omissions': omissions,
 			'votives': votives
-		}
+		})
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
@@ -119,7 +120,8 @@ def rite():
 	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 	hours = parameters['hour'].replace(' ', '+').split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'})
+	print(parameters['time'])
+	vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
 	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
 
@@ -170,7 +172,6 @@ def rite():
 	return datamanage.dump_data({
 		'rite' : rite['datum'],
 		'translation' : translation,
-		'day': daytags(vesperal = vesperal),
 		'usedprimary': primary,
 		'usednames': usednames
 		})
