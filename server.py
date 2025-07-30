@@ -142,9 +142,13 @@ def rite():
 	if noending:
 		tags.append({'fidelium-animae', 'hoc-omissum'})
 		tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'})
+	private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 	lit = []
 	for hour in hours:
-		lit.append({'hora', hour})
+		if private:
+			lit.append({'hora', hour, 'privata'})
+		else:
+			lit.append({'hora', hour})
 	rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 	tags.append(primary)
 

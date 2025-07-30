@@ -91,6 +91,16 @@
 		]
 	},
 	{
+		"tags":["confiteor","privata"],
+		"datum":[
+			"Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis: quia peccávi nimis, cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum.",
+			"Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam.",
+			"R. Amen.",
+			"Indulgéntiam, ✠ absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus.",
+			"R. Amen."
+		]
+	},
+	{
 		"tags":["aperi-domine"],
 		"datum":[
 			"Aperi Dómine os meum ad benedicéndum nomen sanctum tuum: munda quoque cor meum ab ómnibus vanis, pervérsis et aliénis cogitatiónibus: intelléctum illúmina, afféctum inflámma, ut digne, atténte ac devóte hoc Offícium recitáre váleam, et exaudíri mérear ante conspéctum divínæ Majestátis tuæ. Per Christum Dóminum nostrum. Amen.",
@@ -139,6 +149,20 @@
 		"datum":[
 			{
 				"datum":"Jube, domne, benedícere.",
+				"tags":["jube-domne"]
+			},
+			["benedictio"],
+			"R. Amen.",
+			["lectio"],
+			"Tu autem Dómine miserére nobis.",
+			"R. Deo grátias."
+		]
+	},
+	{
+		"tags":["formula","formula-lectionis","privata"],
+		"datum":[
+			{
+				"datum":"Jube, Dómine, benedícere.",
 				"tags":["jube-domne"]
 			},
 			["benedictio"],
@@ -212,7 +236,13 @@
 	},
 	{
 		"tags":["dominus-vobiscum"],
-		"datum":["V. Dóminus vobíscum.","R. Et cum spíritu tuo."]
+		"datum":["V. Dóminus vobíscum.","R. Et cum spíritu tuo."],
+		"privata":["V. Dómine exaúdi oratiónem meam.","R. Et clamor meus ad te véniat."]
+	},
+	{
+		"tags":["domine-exaudi"],
+		"datum":["V. Dómine exaúdi oratiónem meam.","R. Et clamor meus ad te véniat."],
+		"privata":""
 	},
 	{
 		"tags":["collecta-primaria"],

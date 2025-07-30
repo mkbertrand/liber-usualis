@@ -57,7 +57,7 @@
 				if (i != this.hour.content.length - 1 && (this.hour.content[i + 1][1] == 'officium-parvum-bmv' || this.hour.content[i + 1][1] == 'officium-defunctorum' || this.hour.content[i + 1][0] == 'psalmi-poenitentiales')) {
 					noending = true;
 				}
-				var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation(locale) : 'none'}` + (select == '' ? '' : `&select=${select}`));
+				var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation(locale) : 'none'}&privata=${this.recitation=='private' ? 'privata': 'chorali'}` + (select == '' ? '' : `&select=${select}`));
 				var json = await response.json();
 				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
 				if (i == 0) {
