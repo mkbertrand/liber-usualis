@@ -292,6 +292,8 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					header = 'Ad Vesperas';
 				} else if (data['tags'].includes('completorium')) {
 					header = 'Ad Completorium';
+				} else if (data['tags'].includes('antiphona-bmv')) {
+					header = 'Antiphona B.M.V.';
 				}
 			} else if (data['tags'].includes('psalmi-poenitentiales')) {
 				header = 'Septem Psalmi Pœnitentiales cum Litaniis';
