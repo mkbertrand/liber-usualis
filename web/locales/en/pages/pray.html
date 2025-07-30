@@ -12,11 +12,11 @@
 	day: '',
 	color: '',
 	hour: '',
-	ambit: $persist('omnes'),
 	choral: $persist(true),
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
+	ambit: '',
 	rite: '',
 	initialized: false,
 	dayinitialized: false,
@@ -29,49 +29,55 @@
 	realDate() {
 		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000);
 	},
-	setRecitation(set) {
-		this.recitation = set;
-		if (this.recitation == 'plainchant') {
+	setRecitation(recitation) {
+		if (recitation == 'plainchant') {
 			this.choral = true;
 			this.chant = true;
-		} else if (this.recitation == 'recto-tono') {
+		} else if (recitation == 'recto-tono') {
 			this.choral = true;
 			this.chant = false;
-		} else if (this.recitation == 'private') {
+		} else if (recitation == 'private') {
 			this.choral = false;
 			this.chant = false;
 		}
+		this.ambit = defineambit('', this.choral);
+		this.list = ritelist(this.day.tags, this.ambit);
+		this.slideHour(this.hour.id);
+		this.recitation = recitation;
 	},
+	updateRiteAsyncLock: false,
 	async updateRite() {
 		window.scrollTo({top:0});
 		lasttitle = '';
-		for (var i = 0; i < this.hour.content.length; i++) {
-			select = '';
-			switch (this.hour.content[i][1]) {
-				case 'opbmv': select = 'officium-parvum-bmv'; break;
-				case 'defunctorum': select = 'officium-defunctorum'; break;
-			}
-			noending = false;
-			if (i != this.hour.content.length - 1 && (this.hour.content[i + 1][1] == 'opbmv' || this.hour.content[i + 1][1] == 'defunctorum' || this.hour.content[i + 1][0] == 'psalmi-poenitentiales')) {
-				noending = true;
-			}
-			var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation(locale) : 'none'}` + (select == '' ? '' : `&select=${select}`));
-			var json = await response.json();
-			// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
-			if (i == 0) {
-				title = riteTitle(json, 'large')
-				this.rite = title + render(json, this.chant);
-				lasttitle = json.usednames[0];
-			} else {
-				title = '';
-				if (json.usednames[0] != lasttitle) {
-					title = riteTitle(json, 'small');
+		if (!this.updateRiteAsyncLock) {
+			this.updateRiteAsyncLock = true;
+			for (var i = 0; i < this.hour.content.length; i++) {
+				select = this.hour.content[i][1] == 'diei' ? '' : this.hour.content[i][1];
+				noending = false;
+				if (i != this.hour.content.length - 1 && (this.hour.content[i + 1][1] == 'officium-parvum-bmv' || this.hour.content[i + 1][1] == 'officium-defunctorum' || this.hour.content[i + 1][0] == 'psalmi-poenitentiales')) {
+					noending = true;
 				}
-				this.rite += title + render(json, this.chant);
-				lasttitle = json.usednames[0];
+				var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation(locale) : 'none'}` + (select == '' ? '' : `&select=${select}`));
+				var json = await response.json();
+				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
+				if (i == 0) {
+					title = riteTitle(json, 'large')
+					this.rite = title + render(json, this.chant);
+					lasttitle = json.usednames[0];
+				} else {
+					title = '';
+					if (json.usednames[0] != lasttitle) {
+						title = riteTitle(json, 'small');
+					}
+					this.rite += title + render(json, this.chant);
+					lasttitle = json.usednames[0];
+				}
 			}
+			this.initialized = true;
+			this.updateRiteAsyncLock = false;
+		} else {
+			console.log('Simultaneous attempts to update Rite');
 		}
-		this.initialized = true;
 	},
 	slideHour(id) {
 		for (var i = 0; i < this.list.length; i++) {
@@ -88,7 +94,7 @@
 		var json = await response.json();
 		var primary = json.primary[1];
 		this.color = primary.filter((tag) => colors.includes(tag))[0];
-		this.list = ritelist(json.tags, fullambit);
+		this.list = ritelist(json.tags, this.ambit);
 		this.day = json;
 		if (this.dayinitialized) {
 			this.slideHour(this.hour.id);
@@ -113,6 +119,9 @@
 
 	}
 }" x-init="
+  	if (ambit == '') {
+		ambit = defineambit('', choral);
+	}
 	$watch('date', date => updateDay());
 	$watch('recitation', recitation => updateRite());
 	$watch('translation', translation => updateRite());
@@ -129,13 +138,14 @@
 			hour = list[4];
 		} else if (date.getHours() < 20) {
 			hour = list[5];
-			time = 'vesperale';
 		} else {
 			hour = list[6];
-			time = 'vesperale';
 		}
 		updateRite();
 	});
+	if (date.getHours() >= 16) {
+		time = 'vesperale';
+	}
 	updateDay();
 ">
 	<div x-cloak id="options-panel-background" x-show="optionspanel">

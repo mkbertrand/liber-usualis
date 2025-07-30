@@ -242,13 +242,19 @@
 }
 
 .rite-selector-button {
+	background-color: #ddd;
 	height: 25px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
+	padding-top: 5px;
+}
+
+.rite-selector-button:hover {
+	background-color: #e0b0b0;
 }
 
 .rite-selector-button-selected {
-	font-weight: bold;
+	background-color: #e6b0b0 !important;
 }
 
 @media print {
