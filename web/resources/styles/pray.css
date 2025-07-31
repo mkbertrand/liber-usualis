@@ -119,7 +119,7 @@
 }
 
 .options-panel-button {
-	background-color: #ddd;
+	background-color: #eee;
 }
 
 .options-panel-button:hover {
@@ -186,6 +186,11 @@
 #bottom-easy-select-hide {
 	width: 100px;
 	height: 20px;
+	background-color: #eee;
+}
+
+#bottom-easy-select-hide:hover {
+	background-color: #e0b0b0;
 }
 
 #bottom-easy-select-content-container {
@@ -198,6 +203,10 @@
 #bottom-easy-select-hide-icon {
 	height: 30px;
 	margin-top: -5px;
+}
+
+.bottom-easy-select-hide-icon-closed {
+	transform: rotate(180deg);
 }
 
 #date-selector-container {
@@ -225,10 +234,19 @@
 	font-size: 24px;
 }
 
+.date-selector-button:hover {
+	background-color: #e0b0b0;
+}
+
 #options-button {
 	height: 30px;
 	text-align: center;
 	font-size: 18px;
+	background-color: #eee;
+}
+
+#options-button:hover {
+	background-color: #e0b0b0;
 }
 
 #rite-selector-container {
@@ -242,7 +260,7 @@
 }
 
 .rite-selector-button {
-	background-color: #ddd;
+	background-color: #eee;
 	height: 25px;
 	text-align: center;
 	font-size: 16px;
