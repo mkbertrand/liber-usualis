@@ -122,6 +122,15 @@
 		"datum":"Pater noster, qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen."
 	},
 	{
+		"tags":["pater-noster-semisecreta"],
+		"datum":[
+			"Pater noster.",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo."
+		]
+	},
+	{
 		"tags":["ave-maria-secreta"],
 		"datum":"Ave María, grátia plena, Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui Jesus. Sancta María, Mater Dei, ora pro nobis peccatóribus, nunc et in hora mortis nostræ. Amen."
 	},
@@ -171,6 +180,10 @@
 			"Tu autem Dómine miserére nobis.",
 			"R. Deo grátias."
 		]
+	},
+	{
+		"tags":["formula","formula-lectionis","legitur-directe"],
+		"datum":[["lectio"]]
 	},
 	{
 		"tags":["terminatio","deo-patri"],

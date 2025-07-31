@@ -69,10 +69,7 @@
 	{
 		"tags":["officium-defunctorum","vesperae","preces"],
 		"datum":[
-			"Pater noster.",
-			"Qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
-			"V. Et ne nos indúcas in tentatiónem.",
-			"R. Sed líbera nos a malo.",
+			["pater-noster-semisecreta"],
 			["/psalmi/psalmus-cxlv,requiem"],
 			"V. A porta ínferi.",
 			"R. Érue Dómine ánimas eórum.",
@@ -105,5 +102,102 @@
 	{
 		"tags":["officium-defunctorum","pater-noster-secreta-post-officium"],
 		"datum":""
+	},
+	{
+		"tags":[
+			["officium-defunctorum","matutinum","prex-triplex"],
+			["officium-defunctorum","matutinum","domine-labia"],
+			["officium-defunctorum","matutinum","deus-in-adjutorium"],
+			["officium-defunctorum","matutinum","invitatorium"],
+			["officium-defunctorum","matutinum","hymnus"]
+		],
+		"datum":""
+	},
+	{
+		"tags":[
+			["officium-defunctorum","matutinum","nocturnae","feria-ii"],
+			["officium-defunctorum","matutinum","nocturnae","feria-v"]
+		],
+		"hi":[["nocturna-i"]]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Dírige * Dómine Deus meus in conspéctu tuo viam meam."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-v,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Convértere * Dómine, et éripe ánimam meam: quóniam non est in morte, qui memor sit tui."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-vi,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Nequándo rápiat * ut leo ánimam meam, dum non est qui rédimat, neque qui salvum fáciat."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-vii,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","versiculus"],
+		"datum":["V. A porta ínferi.","R. Érue Dómine ánimas eórum."]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","pater-noster-semisecreta"],
+		"datum":[["pater-noster-secreta"]]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","absolutio"],
+		"datum":""
+	},
+	{
+		"tags":["officium-defunctorum","formula","formula-lectionis"],
+		"datum":[["formula","formula-lectionis","legitur-directe"]]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":"Parce mihi Dómine; nihil enim sunt dies mei. Quid est homo, quia magníficas eum? aut quid appónis erga eum cor tuum? Vísitas eum dilúculo, et súbito probas illum. Úsquequo non parcis mihi, nec dimíttis me, ut glútiam salívam meam? Peccávi, quid fáciam tibi o custos hóminum? quare posuísti me contrárium tibi, et factus sum mihimetípsi gravis? Cur non tollis peccátum meum, et quare non aufers iniquitátem meam? ecce nunc in púlvere dórmiam: et si mane me quæsíeris, non subsístam."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-i"],
+		"incipit":"Credo quod Redémptor meus vivit, et in novíssimo die de terra surrectúrus sum:",
+		"responsum":"Et in carne mea vidébo Deum Salvatórem meum.",
+		"versus":"Quem visúrus sum ego ipse, et non álius: et óculi mei conspectúri sunt."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Tædet ánimam meam vitæ meæ, dimíttam advérsum me elóquium meum, loquar in amaritúdine ánimæ meæ. Dicam Deo: Noli me condemnáre: índica mihi cur me ita júdices. Numquid bonum tibi vidétur, si calumniéris me, et ópprimas me opus mánuum tuárum, et consílium impiórum ádjuves? Numquid óculi cárnei tibi sunt: aut sicut videt homo, et tu vidébis? Numquid sicut dies hóminis dies tui, et anni tui sicut humána sunt témpora, ut quæras iniquitátem meam, et peccátum meum scrutéris? Et scias quia nihil ímpium fécerim, cum sit nemo qui de manu tua possit erúere."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-ii"],
+		"incipit":"Qui Lázarum resuscitásti a monuménto fœtidum:",
+		"responsum":"Tu eis Dómine dona réquiem, et locum indulgéntiæ.",
+		"versus":"Qui ventúrus es judicáre vivos et mórtuos, et sǽculum per ignem."
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Manus tuæ fecérunt me, et plasmavérunt me totum in circúitu: et sic repénte præcípitas me? Meménto quæso quod sicut lutum féceris me, et in púlverem redúces me. Nonne sicut lac mulsísti me, et sicut cáseum me coagulásti? Pelle et cárnibus vestísti me: óssibus et nervis compegísti me: Vitam et misericórdiam tribuísti mihi, et visitátio tua custodívit spíritum meum."
+	},
+	{
+		"tags":["formula","responsorium","gloria","officium-defunctorum"],
+		"datum":[
+			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
+			"\nV. ",["responsorium","versus"],
+			"\nR. ",["responsorium","responsum"],
+			"\nV. Réquiem ætérnam dona eis Dómine: et lux perpétua lúceat eis.",
+			"\nR. ",["responsorium","responsum"]
+		]
+	},
+	{
+		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-iii"],
+		"incipit":"Dómine, quando véneris judicáre terram, ubi me abscóndam a vultu iræ tuæ?",
+		"responsum":"Quia peccávi nimis in vita mea.",
+		"versus":"Commíssa mea pavésco, et ante te erubésco: dum véneris judicáre, noli me condemnáre."
 	}
 ]
