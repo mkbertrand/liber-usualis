@@ -13,7 +13,7 @@ fullambit = [
 	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('tertia', 'diei', true), new RiteItem('tertia', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'tertia'},
 	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('sexta', 'diei', true), new RiteItem('sexta', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'sexta'},
 	{'name': 'Nona', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('nona', 'diei', true), new RiteItem('nona', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'nona'},
-	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('vesperae', 'officium-parvum-bmv', false), new RiteItem('vesperae', 'diei', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('vesperae', 'officium-defunctorum', false), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'vesperae'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('vesperae', 'officium-parvum-bmv', false), new RiteItem('vesperae', 'diei', true), new RiteItem('vesperae', 'officium-defunctorum', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'vesperae'},
 	{'name': 'Completorium', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('completorium', 'diei', true), new RiteItem('completorium', 'officium-parvum-bmv', false), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'completorium'}
 ];
 
@@ -50,7 +50,13 @@ function ritelist(daytags, ambit) {
 	for (var i = 0; i < ambit.length; i++) {
 		lit = [];
 		for (var j = 0; j < ambit[i].content.length; j++) {
-			if (ambit[i].content[j].always || included.includes(ambit[i].content[j].where)) {
+			// The Antiphon to the Blessed Virgin Mary is never said when the Office of the Dead, Penitential Psalms, or the Litany follow (except as an integral part of Compline)
+			if (
+				(ambit[i].content[j].always || included.includes(ambit[i].content[j].where))
+			&& !(included.includes('officium-defunctorum') && (ambit[i].id == 'vesperae' || ambit[i].id == 'matutinum') && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(included.includes('psalmi-poenitentiales') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(included.includes('litaniae') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
+			) {
 				lit.push([ambit[i].content[j].what, ambit[i].content[j].where]);
 			}
 		}

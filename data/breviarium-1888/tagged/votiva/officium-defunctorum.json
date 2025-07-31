@@ -1,0 +1,109 @@
+[
+	{
+		"tags":["officium-defunctorum","nomen"],
+		"datum":"Officium Defunctorum"
+	},
+	{
+		"tags":["officium-defunctorum","prex-duplex"],
+		"datum":""
+	},
+	{
+		"tags":["officium-defunctorum","deus-in-adjutorium"],
+		"datum":""
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-i"],
+		"datum":"Placébo Dómino * in regióne vivórum."
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cxiv,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-ii"],
+		"datum":"Heu mihi Dómine, * quia incolátus meus prolongátus est."
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxix,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-iii"],
+		"datum":"Dóminus custódit te * ab omni malo: custódiat ánimam tuam Dóminus."
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxx,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-iv"],
+		"datum":"Si iniquitátes * observáveris Dómine: Dómine quis sustinébit?"
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxxix,requiem"]]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-v"],
+		"datum":"Ópera * mánuum tuárum Dómine ne despícias."
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxxxvii,requiem"]]
+	},
+	{
+		"tags":[
+			["officium-defunctorum","vesperae","capitulum"],
+			["officium-defunctorum","vesperae","hymnus"]
+		],
+		"datum":""
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","versiculus"],
+		"datum":["V. Audívi vocem de cœlo dicéntem mihi.","R. Beáti mórtui qui in Dómino moriúntur."]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Omne * quod dat mihi Pater, ad me véniet: et eum qui venit ad me, non ejíciam foras."
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","preces"],
+		"datum":[
+			"Pater noster.",
+			"Qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo.",
+			["/psalmi/psalmus-cxlv,requiem"],
+			"V. A porta ínferi.",
+			"R. Érue Dómine ánimas eórum.",
+			"V. Requiéscant in pace.",
+			"R. Amen.",
+			["domine-exaudi"]
+		]
+	},
+	{
+		"tags":["officium-defunctorum","collecta"],
+		"datum":[
+			"Deus, qui inter apostólicos sacerdótes, fámulos tuos pontificáli seu sacerdotáli vigére: præsta quǽsumus; ut eórum quoque perpétuo aggregéntur consórtio.",
+			"Deus, véniæ largítor et humánæ salútis amátor: quǽsumus cleméntiam tuam; ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo transiérunt, beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas.",
+			"Fidélium Deus ómnium cónditor et redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: ut indulgéntiam quam semper optavérunt, piis supplicatiónibus consequántur:"
+		],
+		"terminatio":["Qui vivis et regnas in sǽcula sæculórum.","R. Amen."]
+	},
+	{
+		"tags":["officium-defunctorum","dominus-vobiscum","post-collectas"],
+		"datum":["V. Réquiem ætérnam dona eis Dómine.", "R. Et lux perpétua lúceat eis."]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","benedicamus-domino"],
+		"datum":["V. Requiéscant in pace.","R. Amen."]
+	},
+	{
+		"tags":["officium-defunctorum","vesperae","fidelium-animae"],
+		"datum":""
+	},
+	{
+		"tags":["officium-defunctorum","pater-noster-secreta-post-officium"],
+		"datum":""
+	}
+]

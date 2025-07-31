@@ -124,15 +124,24 @@ def rite():
 
 	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
 
-	# Handle the Little Office of the BVM
-	if 'select' in parameters and parameters['select'] == 'officium-parvum-bmv':
-		def votivize(i):
-			if 'votiva' in i:
-				return i | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}
-			else:
-				return i - {'primarium', 'commemoratio', 'psalmi'}
-		tags = [votivize(i) for i in tags]
-		tags.append({'pro-sanctis','commemoratio'})
+	# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
+	if 'select' in parameters:
+		if parameters['select'] == 'officium-parvum-bmv':
+			def votivize(i):
+				if 'votiva' in i:
+					return i | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}
+				else:
+					return i - {'primarium', 'commemoratio', 'psalmi'}
+			tags = [votivize(i) for i in tags]
+			tags.append({'pro-sanctis','commemoratio'})
+		elif parameters['select'] == 'officium-defunctorum':
+			def votivize(i):
+				if 'votiva' in i:
+					return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
+				else:
+					return i - {'primarium', 'commemoratio', 'psalmi'}
+			tags = [votivize(i) for i in tags]
+
 
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
