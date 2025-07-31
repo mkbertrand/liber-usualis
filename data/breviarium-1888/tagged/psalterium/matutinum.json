@@ -3,9 +3,23 @@
 		"tags":["matutinum","hora"],
 		"datum":[
 			["prex-triplex"],
-			"V. Dómine, +︎ lábia mea apéries.",
-			"R. Et os meum annuntiábit laudem tuam.",
+			["domine-labia"],
 			["deus-in-adjutorium","festalis"],
+			["invitatorium"],
+			["matutinum","hymnus"],
+			["matutinum","nocturnae"]
+		]
+	},
+	{
+		"tags":["matutinum","domine-labia"],
+		"datum":[
+			"V. Dómine, +︎ lábia mea apéries.",
+			"R. Et os meum annuntiábit laudem tuam."
+		]
+	},
+	{
+		"tags":["invitatorium"],
+		"datum":[
 			["matutinum","antiphona","antiphona-invitatorium"],
 			["matutinum","antiphona","antiphona-invitatorium"],
 			"Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
@@ -21,9 +35,7 @@
 			"Glória Patri, et Fílio, et Spirítui sancto.",
 			"Sicut erat in princípio, et nunc, et semper: et in sǽcula sæculórum. Amen.",
 			["matutinum","antiphona","antiphona-invitatorium","pars"],
-			["matutinum","antiphona","antiphona-invitatorium"],
-			["matutinum","hymnus"],
-			["matutinum","nocturnae"]
+			["matutinum","antiphona","antiphona-invitatorium"]
 		]
 	},
 	{

@@ -72,11 +72,13 @@
 		"datum":"Deus, qui hodiérna die Unigénitum tuum Géntibus stella duce revelásti: + concéde propítius; ut qui jam te ex fide cognóvimus, * usque ad contemplándum spéciem tuæ celsitúdinis perducámur."
 	},
 	{
-		"tags":["epiphania","festum","matutinum","hora"],
-		"datum":[
-			["prex-triplex"],
-			["matutinum","nocturnae"]
-		]
+		"tags":[
+			["epiphania","festum","domine-labia"],
+			["epiphania","festum","matutinum","deus-in-adjutorium"],
+			["epiphania","festum","invitatorium"],
+			["epiphania","festum","matutinum","hymnus"]
+		],
+		"datum":""
 	},
 	{
 		"tags":["epiphania","matutinum","antiphona","antiphona-invitatorium"],
