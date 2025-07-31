@@ -186,7 +186,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
 				antiphon = renderinner(data['datum'][2], null, null, parenttags, options, names);
 				return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
-			} else if (data['tags'].includes('formula-lectionis')) {
+			} else if (data['tags'].includes('formula-lectionis') && data['datum'] != '') {
 				header = 'Lectio';
 				btags = (typeof data['datum'][1]['datum'] === 'object' ? data['datum'][1]['datum']['tags'].concat(data['datum'][1]['tags']) : data['datum'][1]['tags']);
 				if (btags.includes('lectio-brevis')) {

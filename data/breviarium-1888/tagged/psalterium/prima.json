@@ -16,7 +16,8 @@
 			["dominus-vobiscum"],
 			["prima","collecta-primaria"],
 			["dominus-vobiscum","ferialis-a"],
-			["prima","benedicamus-domino","hora-minor"]
+			["prima","benedicamus-domino","hora-minor"],
+			["prima","dismissio"]
 		]
 	},
 	{
@@ -431,5 +432,9 @@
 			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
 			"Jesu, tibi sit glória,/Qui te revélas párvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
+	},
+	{
+		"tags":["prima","dismissio"],
+		"datum":""
 	}
 ]

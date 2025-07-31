@@ -4,27 +4,12 @@
 		"datum":"Officium Parvum B.M.V."
 	},
 	{
-		"tags":["officium-parvum-bmv","vesperae","hora"],
-		"datum":[
-			["ave-maria-secreta"],
-			["deus-in-adjutorium","festalis"],
-			["vesperae","psalmi"],
-			["vesperae","capitulum"],
-			["vesperae","dg-capituli"],
-			["vesperae","hymnus"],
-			["vesperae","versiculus"],
-			["vesperae","magnificat","antiphona-prior"],
-			["/psalmi/magnificat,gloria"],
-			["vesperae","antiphona","antiphona-magnificat","repetita"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum"],
-			["vesperae","collecta-primaria"],
-			["vesperae","commemorationes"],
-			["dominus-vobiscum"],
-			["vesperae","benedicamus-domino"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
-		]
+		"tags":[
+			["officium-parvum-bmv","prex-duplex"],
+			["officium-parvum-bmv","matutinum","prex-triplex"],
+			["officium-parvum-bmv","prima","prex-triplex"]
+		],
+		"datum":[["ave-maria-secreta"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","vesperae","antiphona"],
@@ -43,37 +28,37 @@
 		"datum":[["bmv-sabbatum","i-vesperae","vesperae","antiphona","antiphona-magnificat"]]
 	},
 	{
-		"tags":["officium-parvum-bmv","completorium","hora"],
+		"tags":[
+			["officium-parvum-bmv","vesperae","preces"],
+			["officium-parvum-bmv","completorium","preces"],
+			["officium-parvum-bmv","laudes","preces"],
+			["officium-parvum-bmv","prima","preces"],
+			["officium-parvum-bmv","tertia","preces"],
+			["officium-parvum-bmv","sexta","preces"],
+			["officium-parvum-bmv","nona","preces"]
+		],
+		"datum":"Kýrie eléison. Christe eléison. Kýrie eléison."
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","completorium","formula","formula-lectionis"],
+			["officium-parvum-bmv","completorium","adjutorium-nostrum"],
+			["officium-parvum-bmv","completorium","confiteor"],
+			["officium-parvum-bmv","completorium","antiphona"],
+			["officium-parvum-bmv","completorium","responsorium-breve","formula"]
+		],
+		"datum":""
+	},
+	{
+		"tags":["officium-parvum-bmv","completorium","pater-noster-secreta","de-confiteor"],
+		"datum":[["ave-maria-secreta"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","completorium","psalmi"],
 		"datum":[
-			["ave-maria-secreta"],
-			"V. Convérte nos ✙ Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
-			["deus-in-adjutorium","ferialis"],
 			["/psalmi/psalmus-cxxviii,gloria"],
 			["/psalmi/psalmus-cxxix,gloria"],
-			["/psalmi/psalmus-cxxx,gloria"],
-			["completorium","hymnus"],
-			["completorium","capitulum"],
-			["completorium","dg-capituli"],
-			["completorium","versiculus"],
-			["completorium","antiphona","antiphona-nunc-dimittis","intonata"],
-			["/psalmi/nunc-dimittis,gloria"],
-			["completorium","antiphona","antiphona-nunc-dimittis","repetita"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum"],
-			["completorium","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["completorium","benedicamus-domino","hora-minor"],
-			{
-				"tags":["completorium","benedictio-finalis"],
-				"datum":[
-					"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
-					"R. Amen."
-				]
-			},
-			["antiphona-bmv"],
-			"Divínum auxílium ✠ máneat semper nobíscum.",
-			"R. Amen.",
-			["prex-triplex"]
+			["/psalmi/psalmus-cxxx,gloria"]
 		]
 	},
 	{
@@ -108,33 +93,6 @@
 		"tags":["officium-parvum-bmv","completorium","collecta"],
 		"datum":"Beátæ et gloriósæ semper Vírginis Maríæ, quǽsumus Dómine, intercéssio gloriósa nos prótegat, * et ad vitam perdúcat ætérnam.",
 		"terminatio":[["terminatio","per-dominum"]]
-	},
-	{
-		"tags":["officium-parvum-bmv","matutinum","hora"],
-		"datum":[
-			["ave-maria-secreta"],
-			"V. Dómine, +︎ lábia mea apéries.",
-			"R. Et os meum annuntiábit laudem tuam.",
-			["deus-in-adjutorium","festalis"],
-			["matutinum","antiphona","antiphona-invitatorium"],
-			["matutinum","antiphona","antiphona-invitatorium"],
-			"Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
-			["matutinum","antiphona","antiphona-invitatorium"],
-			"Quóniam Deus magnus Dóminus, et Rex magnus super omnes deos: quóniam non repéllet Dóminus plebem suam, quia in manu ejus sunt omes fines terræ, et altitúdines móntium ipse cónspicit.",
-			["matutinum","antiphona","antiphona-invitatorium", "pars"],
-			"Quóniam ipsíus est mare, et ipse fecit illud, et áridam fundavérunt manus ejus: veníte adorémus, et procidámus ante Deum: plorémus coram Dómino, qui fecit nos, quia ipse est Dóminus Deus noster: nos autem pópulus ejus, et oves páscuæ ejus.",
-			["matutinum","antiphona","antiphona-invitatorium"],
-			"Hódie si vocem ejus audiéritis, nolíte obduráre corda vestra, sicut in exacerbatióne secúndum diem tentatiónis in desérto: ubi tentavérunt me patres vestri, probavérunt et vidérunt ópera mea.",
-			["matutinum","antiphona","antiphona-invitatorium","pars"],
-			"Quadragínta annis próximus fui generatióni huic, et dixi, Semper hi errant corde: ipsi vero non cognovérunt vias meas, quibus jurávi in ira mea, si introíbunt in réquiem meam.",
-			["matutinum","antiphona","antiphona-invitatorium"],
-			"Glória Patri, et Fílio, et Spirítui sancto.",
-			"Sicut erat in princípio, et nunc, et semper: et in sǽcula sæculórum. Amen.",
-			["matutinum","antiphona","antiphona-invitatorium","pars"],
-			["matutinum","antiphona","antiphona-invitatorium"],
-			["matutinum","hymnus"],
-			["matutinum","nocturnae"]
-		]
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","antiphona","antiphona-invitatorium"],
@@ -203,28 +161,6 @@
 		"datum":[["bmv-sabbatum","matutinum","responsorium","responsorium-ii"]]
 	},
 	{
-		"tags":["officium-parvum-bmv","laudes","hora"],
-		"datum":[
-			["deus-in-adjutorium","festalis"],
-			["laudes","psalmi"],
-			["laudes","capitulum"],
-			["laudes","dg-capituli"],
-			["laudes","hymnus"],
-			["laudes","versiculus"],
-			["laudes","benedictus","antiphona-prior"],
-			["/psalmi/benedictus,gloria"],
-			["laudes","antiphona","antiphona-benedictus","repetita"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum"],
-			["laudes","collecta-primaria"],
-			["laudes","commemorationes"],
-			["dominus-vobiscum"],
-			["laudes","benedicamus-domino"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
-		]
-	},
-	{
 		"tags":["officium-parvum-bmv","antiphona"],
 		"datum":[["assumptio-bmv","antiphona"]]
 	},
@@ -249,31 +185,20 @@
 		"terminatio":[["terminatio","per-eumdem-christum"]]
 	},
 	{
-		"tags":["officium-parvum-bmv","prima","hora"],
+		"tags":["officium-parvum-bmv","prima","psalmi"],
 		"datum":[
-			["ave-maria-secreta"],
-			["deus-in-adjutorium","ferialis"],
-			["prima","hymnus"],
-			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-lxxxiv,gloria"],
-			["/psalmi/psalmus-cxvi,gloria"],
-			["prima","antiphona","antiphona-i","repetita"],
-			["prima","capitulum"],
-			["prima","dg-capituli"],
-			["prima","versiculus"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum","ferialis-a"],
-			["prima","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["vesperae","benedicamus-domino"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
+			["/psalmi/psalmus-cxvi,gloria"]
 		]
 	},
 	{
 		"tags":["officium-parvum-bmv","prima","capitulum"],
 		"datum":"Quæ est ista, quæ progréditur quasi auróra consúrgens, + pulchra ut luna, elécta ut sol, * terríbilis ut castrórum ácies ordináta?"
+	},
+	{
+		"tags":["officium-parvum-bmv","prima","responsorium-breve","formula"],
+		"datum":""
 	},
 	{
 		"tags":["officium-parvum-bmv","prima","versiculus"],
@@ -285,26 +210,18 @@
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
-		"tags":["officium-parvum-bmv","tertia","hora"],
+		"tags":["officium-parvum-bmv","prima","dismissio"],
 		"datum":[
-			["ave-maria-secreta"],
-			["deus-in-adjutorium","ferialis"],
-			["tertia","hymnus"],
-			["tertia","antiphona","antiphona-ii","intonata"],
-			["/psalmi/psalmus-cxix,gloria"],
-			["/psalmi/psalmus-cxx,gloria"],
-			["/psalmi/psalmus-cxxi,gloria"],
-			["tertia","antiphona","antiphona-ii","repetita"],
-			["tertia","capitulum"],
-			["tertia","dg-capituli"],
-			["tertia","versiculus"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum"],
-			["tertia","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["tertia","benedicamus-domino","hora-minor"],
 			["fidelium-animae"],
 			["pater-noster-secreta"]
+		]
+	},
+	{
+		"tags":["officium-parvum-bmv","tertia","psalmi"],
+		"datum":[
+			["/psalmi/psalmus-cxix,gloria"],
+			["/psalmi/psalmus-cxx,gloria"],
+			["/psalmi/psalmus-cxxi,gloria"]
 		]
 	},
 	{
@@ -312,31 +229,20 @@
 		"datum":"Et sic in Sion firmáta sum, + et in civitáte sanctificáta simíliter requiévi, * et in Jerúsalem potéstas mea."
 	},
 	{
+		"tags":["officium-parvum-bmv","tertia","responsorium-breve","formula"],
+		"datum":""
+	},
+	{
 		"tags":["officium-parvum-bmv","tertia","collecta"],
 		"datum":"Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fœcúnda, humáno géneri prǽmia præstitísti: + tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, * per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:",
 		"terminatio":[["terminatio","qui-tecum-vivit"]]
 	},
 	{
-		"tags":["officium-parvum-bmv","sexta","hora"],
+		"tags":["officium-parvum-bmv","sexta","psalmi"],
 		"datum":[
-			["ave-maria-secreta"],
-			["deus-in-adjutorium","ferialis"],
-			["sexta","hymnus"],
-			["sexta","antiphona","antiphona-iii","intonata"],
 			["/psalmi/psalmus-cxxii,gloria"],
 			["/psalmi/psalmus-cxxiii,gloria"],
-			["/psalmi/psalmus-cxxiv,gloria"],
-			["sexta","antiphona","antiphona-iii","repetita"],
-			["sexta","capitulum"],
-			["sexta","dg-capituli"],
-			["sexta","versiculus"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum"],
-			["sexta","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["sexta","benedicamus-domino","hora-minor"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
+			["/psalmi/psalmus-cxxiv,gloria"]
 		]
 	},
 	{
@@ -344,32 +250,25 @@
 		"datum":"Et radicávi in pópulo honorificáto, + et in parte Dei mei hæréditas illíus, * et in plenitúdine sanctórum deténtio mea."
 	},
 	{
+		"tags":["officium-parvum-bmv","sexta","responsorium-breve","formula"],
+		"datum":""
+	},
+	{
 		"tags":["officium-parvum-bmv","sexta","collecta"],
 		"datum":"Concéde miséricors Deus, fragilitáti nostræ præsídium: + ut qui sanctæ Dei Genitrícis memóriam ágimus, * intercessiónis ejus auxílio, a nostris iniquitátibus resurgámus.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
-		"tags":["officium-parvum-bmv","nona","hora"],
+		"tags":["officium-parvum-bmv","nona","psalmi"],
 		"datum":[
-			["ave-maria-secreta"],
-			["deus-in-adjutorium","ferialis"],
-			["nona","hymnus"],
-			["nona","antiphona","antiphona-v","intonata"],
 			["/psalmi/psalmus-cxxv,gloria"],
 			["/psalmi/psalmus-cxxvi,gloria"],
-			["/psalmi/psalmus-cxxvii,gloria"],
-			["nona","antiphona","antiphona-v","repetita"],
-			["nona","capitulum"],
-			["nona","dg-capituli"],
-			["nona","versiculus"],
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["dominus-vobiscum"],
-			["nona","collecta-primaria"],
-			["dominus-vobiscum","ferialis-a"],
-			["nona","benedicamus-domino","hora-minor"],
-			["fidelium-animae"],
-			["pater-noster-secreta"]
+			["/psalmi/psalmus-cxxvii,gloria"]
 		]
+	},
+	{
+		"tags":["officium-parvum-bmv","nona","responsorium-breve","formula"],
+		"datum":""
 	},
 	{
 		"tags":["officium-parvum-bmv","nona","versiculus"],

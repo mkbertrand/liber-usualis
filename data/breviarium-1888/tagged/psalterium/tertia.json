@@ -6,9 +6,7 @@
 			["deus-in-adjutorium","ferialis"],
 			["tertia","hymnus"],
 			["tertia","antiphona","antiphona-ii","intonata"],
-			["/psalmi/psalmus-cxviii:33-48,gloria"],
-			["/psalmi/psalmus-cxviii:49-64,gloria"],
-			["/psalmi/psalmus-cxviii:65-80,gloria"],
+			["tertia","psalmi"],
 			["tertia","antiphona","antiphona-ii","repetita"],
 			["tertia","capitulum"],
 			["tertia","dg-capituli"],
@@ -39,6 +37,14 @@
 		"tags":["tertia","dominica","per-annum","antiphona"],
 		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["tertia","psalmi"],
+		"datum":[
+			["/psalmi/psalmus-cxviii:33-48,gloria"],
+			["/psalmi/psalmus-cxviii:49-64,gloria"],
+			["/psalmi/psalmus-cxviii:65-80,gloria"]
+		]
 	},
 	{
 		"tags":["tertia","dominica","per-annum","capitulum"],

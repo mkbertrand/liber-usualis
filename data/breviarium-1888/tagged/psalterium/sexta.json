@@ -6,9 +6,7 @@
 			["deus-in-adjutorium","ferialis"],
 			["sexta","hymnus"],
 			["sexta","antiphona","antiphona-iii","intonata"],
-			["/psalmi/psalmus-cxviii:81-96,gloria"],
-			["/psalmi/psalmus-cxviii:97-112,gloria"],
-			["/psalmi/psalmus-cxviii:113-128,gloria"],
+			["sexta","psalmi"],
 			["sexta","antiphona","antiphona-iii","repetita"],
 			["sexta","capitulum"],
 			["sexta","dg-capituli"],
@@ -39,6 +37,14 @@
 		"tags":["sexta","dominica","per-annum","antiphona"],
 		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["sexta","psalmi"],
+		"datum":[
+			["/psalmi/psalmus-cxviii:81-96,gloria"],
+			["/psalmi/psalmus-cxviii:97-112,gloria"],
+			["/psalmi/psalmus-cxviii:113-128,gloria"]
+		]
 	},
 	{
 		"tags":["sexta","temporale","capitulum"],

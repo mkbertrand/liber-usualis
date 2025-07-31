@@ -4,15 +4,12 @@
 		"datum":[
 			["completorium","formula","formula-lectionis"],
 			["adjutorium-nostrum"],
-			["pater-noster-secreta"],
+			["pater-noster-secreta","de-confiteor"],
 			["confiteor"],
 			"V. Convérte nos ✙ Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
 			["deus-in-adjutorium","ferialis"],
 			["completorium","antiphona","intonata"],
-			["/psalmi/psalmus-iv,gloria"],
-			["/psalmi/psalmus-xxx:1-6,gloria"],
-			["/psalmi/psalmus-xc,gloria"],
-			["/psalmi/psalmus-cxxxiii,gloria"],
+			["completorium","psalmi"],
 			["completorium","antiphona","repetita"],
 			["completorium","hymnus"],
 			["completorium","capitulum"],
@@ -52,6 +49,15 @@
 		"tags":["completorium","antiphona"],
 		"src":"gregobase/1896",
 		"datum":"Miserére * mihi, Dómine, et exáudi oratiónem meam."
+	},
+	{
+		"tags":["completorium","psalmi"],
+		"datum":[
+			["/psalmi/psalmus-iv,gloria"],
+			["/psalmi/psalmus-xxx:1-6,gloria"],
+			["/psalmi/psalmus-xc,gloria"],
+			["/psalmi/psalmus-cxxxiii,gloria"]
+		]
 	},
 	{
 		"tags":["completorium","antiphona","in-tempore-paschali"],
