@@ -1,5 +1,25 @@
 [
 	{
+		"tags":["coena-domini","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cxv"]]
+	},
+	{
+		"tags":["coena-domini","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxix"]]
+	},
+	{
+		"tags":["coena-domini","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxxxix"]]
+	},
+	{
+		"tags":["coena-domini","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxl"]]
+	},
+	{
+		"tags":["coena-domini","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxli"]]
+	},
+	{
 		"tags":["coena-domini","vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Cœnántibus autem illis, * accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis."
 	}

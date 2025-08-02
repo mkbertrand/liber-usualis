@@ -1,0 +1,147 @@
+[
+	{
+		"tags":["septem-dolores-passione","nomen"],
+		"datum":"Septem Dolorum B.M.V."
+	},
+	{
+		"tags":["septem-dolores-passione","antiphona","antiphona-i"],
+		"src":"gregobase/2961",
+		"datum":"Vadam ad montem * myrrhæ, et ad collem thuris."
+	},
+	{
+		"tags":["septem-dolores-passione","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cxv,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","antiphona","antiphona-ii"],
+		"src":"gregobase/2131",
+		"datum":"Diléctus meus * cándidus, et rubicúndus: comæ cápitis ejus sicut púrpura regis vincta canálibus."
+	},
+	{
+		"tags":["septem-dolores-passione","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxix,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","antiphona","antiphona-iii"],
+		"src":"gregobase/2852",
+		"datum":"Quo ábiit * diléctus tuus, o pulchérrima mulíerum? quo diléctus tuus declinávit?"
+	},
+	{
+		"tags":["septem-dolores-passione","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxxxix,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","antiphona","antiphona-iv"],
+		"src":"gregobase/2774",
+		"datum":"Fascículus myrrhæ * diléctus meus mihi, inter úbera mea commorábitur."
+	},
+	{
+		"tags":["septem-dolores-passione","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxl,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","antiphona","antiphona-v"],
+		"src":"gregobase/2900",
+		"datum":"Fulcíte me flóribus, * stipáte me malis, quia amóre lángueo."
+	},
+	{
+		"tags":["septem-dolores-passione","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxli,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","capitulum"],
+		"datum":"Quis crédidit audítui nostro? et bráchium Dómini cui revelátum est? Et ascéndet sicut virgúltum coram eo, * et sicut radix de terra sitiénti."
+	},
+	{
+		"tags":["septem-dolores-passione","vesperae","hymnus"],
+		"src":"gregobase/2163",
+		"datum":[
+			"Stabat Mater dolorósa/Juxta crucem lacrimósa,/Dum pendébat Fílius.",
+			"Cujus ánimam geméntem,/Contristátam, et doléntem,/Pertransívit gládius.",
+			"O quam tristis et afflícta/Fuit illa benedícta/Mater Unigéniti!",
+			"Quæ mœrébat, et dolébat,/Pia Mater dum vidébat/Nati pœnas ínclyti.",
+			"Quis est homo qui non fleret,/Matrem Christi si vidéret/In tanto supplício?",
+			"Quis non posset contristári,/Christi Matrem contemplári/Doléntem cum Fílio?",
+			"Pro peccátis suæ gentis/Vidit Jesum in torméntis,/Et flagéllis súbditum.",
+			"Vidit suum dulcem natum,/Moriéndo desolátum,/Dum emísit spíritum.",
+			"Eja, Mater, fons amóris,/Me sentíre vim dolóris/Fac, ut tecum lúgeam.",
+			"Fac ut árdeat cor meum/In amándo Christum Deum,/Ut sibi compláceam.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["septem-dolores-passione","vesperae","versiculus"],
+			["septem-dolores-passione","laudes","versiculus"],
+			["septem-dolores-passione","nona","versiculus"]
+		],
+		"datum":["V. Ora pro nobis Virgo dolorosíssima.","R. Ut digni efficiámur promissiónibus Christi"]
+	},
+	{
+		"tags":["septem-dolores-passione","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2559",
+		"datum":"Tuam ipsíus ánimam * (ait ad Maríam Símeon) pertransíbit gládius."
+	},
+	{
+		"tags":["septem-dolores-passione","collecta"],
+		"datum":"Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit: + concéde propítius; ut qui transfixiónem ejus et passiónem venerándo recólimus, * gloriósis méritis et précibus ómnium Sanctórum cruci fidéliter astántium intercedéntibus, passiónis tuæ efféctum felícem consequámur:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["septem-dolores-passione","laudes","hymnus"],
+		"src":"gregobase/12383",
+		"datum":[
+			"Virgo vírginum præclára,/Mihi jam non sis amára,/Fac me tecum plángere.",
+			"Fac ut portem Christi mortem,/Passiónis fac consórtem,/Et plagas recólere.",
+			"Fac me plagis vulnerári,/Fac me cruce inebriári,/Et cruóre Fílii.",
+			"Flammis ne urar succénsus,/Per te Virgo sim defénsus/In die judícii.",
+			"Christe, cum sit hinc exíre,/Da per Matrem me veníre/Ad palmam victóriæ.",
+			"Quando corpus moriétur,/Fac ut ánimæ donétur/Paradísi glória.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["septem-dolores-passione","laudes","antiphona","antiphona-benedictus"],
+			["septem-dolores-passione","ii-vesperae","antiphona","antiphona-magnificat"]
+		],
+		"src":"gregobase/2927",
+		"datum":"Cum vidísset Jesus * matrem stantem juxta crucem, et discípulum quem diligébat, dicit matri suæ: Múlier, ecce fílius tuus. Deínde dicit discípulo: Ecce mater tua."
+	},
+	{
+		"tags":["septem-dolores-passione","prima","responsorium-breve","versus"],
+		"datum":"Qui passus es pro hómine."
+	},
+	{
+		"tags":["septem-dolores-passione","tertia","responsorium-breve"],
+		"incipit":"Pósuit me",
+		"responsum":"Desolátam.",
+		"versus":"Tota die mœróre conféctam."
+	},
+	{
+		"tags":["septem-dolores-passione","tertia","versiculus"],
+		"datum":["V. Fácies mea intúmuit a fletu.","R. Et pálpebræ meæ caligavérunt."]
+	},
+	{
+		"tags":["septem-dolores-passione","sexta","capitulum"],
+		"datum":"Ipse vulnerátus est propter iniquitátes nostras, + attrítus est propter scélera nostra. Disciplína pacis nostræ super eum, * et livóre ejus sanáti sumus."
+	},
+	{
+		"tags":["septem-dolores-passione","sexta","responsorium-breve"],
+		"incipit":"Fácies mea",
+		"responsum":"Intúmuit a fletu.",
+		"versus":"Et pálpebræ meæ caligavérunt."
+	},
+	{
+		"tags":["septem-dolores-passione","sexta","versiculus"],
+		"datum":["V. Deus vitam meam annuntiávi tibi.","R. Posuísti lácrimas meas in conspéctu tuo."]
+	},
+	{
+		"tags":["septem-dolores-passione","nona","capitulum"],
+		"datum":"Generatiónem ejus quis enarrábit? quia abscíssus est de terra vivéntium; * propter scelus pópuli mei percússi eum."
+	},
+	{
+		"tags":["septem-dolores-passione","nona","responsorium-breve"],
+		"incipit":"Deus vitam meam",
+		"responsum":"Annuntiávi tibi.",
+		"versus":"Posuísti lácrimas meas in conspéctu tuo."
+	}
+]

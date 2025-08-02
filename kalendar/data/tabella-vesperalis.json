@@ -135,7 +135,7 @@
 		]
 	},
 	{
-		"include":["septem-dolores","primarium"],
+		"include":["septem-dolores-passione","primarium"],
 		"response":[
 			{"include":["benedictus-abbas","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
@@ -220,7 +220,7 @@
 		]
 	},
 	{
-		"include":["i-vesperae","septem-dolores","primarium"],
+		"include":["i-vesperae","septem-dolores-septembris","primarium"],
 		"response":[
 			{"include":["ii-vesperae","exaltatio-crucis","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
@@ -241,7 +241,7 @@
 		"include":["franciscus","primarium"],
 		"response":[
 			{"include":["angeli-custodes","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["septem-dolores","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
+			{"include":["septem-dolores-septembris","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{

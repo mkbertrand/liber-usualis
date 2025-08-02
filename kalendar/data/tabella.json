@@ -347,7 +347,7 @@
 		]
 	},
 	{
-		"include":["septem-dolores","september"],
+		"include":["septem-dolores-septembris"],
 		"recheck":false,
 		"response":[
 			{"include":["exaltatio-crucis"],"response":"transfer","target":0,"movement":7},
@@ -421,7 +421,7 @@
 		]
 	},
 	{
-		"include":["septem-dolores","in-tempore-passionis"],
+		"include":["septem-dolores-passione"],
 		"recheck":false,
 		"response":[
 			{"include":["duplex-majus"],"response":"transfer","target":0,"movement":1},

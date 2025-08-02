@@ -1,0 +1,125 @@
+[
+	{
+		"tags":["septem-dolores-septembris","nomen"],
+		"datum":"Septem Dolorum B.M.V."
+	},
+	{
+		"tags":["septem-dolores-septembris","antiphona","antiphona-i"],
+		"src":"gregobase/2228",
+		"datum":"Quo ábiit diléctus tuus, * o pulchérrima mulíerum? quo declinávit diléctus tuus, et quærémus eum tecum."
+	},
+	{
+		"tags":["septem-dolores-septembris","antiphona","antiphona-ii"],
+		"src":"gregobase/1878",
+		"datum":"Recédite a me, * amáre flebo, nolíte incúmbere, ut consolémini me."
+	},
+	{
+		"tags":["septem-dolores-septembris","antiphona","antiphona-iii"],
+		"src":"gregobase/2646",
+		"datum":"Non est ei spécies, * neque decor, et vídimus eum, et non erat aspéctus."
+	},
+	{
+		"tags":["septem-dolores-septembris","antiphona","antiphona-iv"],
+		"src":"gregobase/1967",
+		"datum":"A planta pedis * usque ad vérticem cápitis, non est in eo sánitas."
+	},
+	{
+		"tags":["septem-dolores-septembris","antiphona","antiphona-v"],
+		"src":"gregobase/2900",
+		"datum":"Fulcíte me flóribus, * stipáte me malis, quia amóre lángueo."
+	},
+	{
+		"tags":["septem-dolores-septembris","capitulum"],
+		"datum":"Cui comparábo te? vel cui assimilábo te fília Jerúsalem? cui exæquábo te, et consolábor te virgo fília Sion? magna est velut mare contrítio tua."
+	},
+	{
+		"tags":["septem-dolores-septembris","vesperae","hymnus"],
+		"src":"gregobase/4095",
+		"datum":[
+			"O quot undis lacrimárum,/Quo dolóre vólvitur,/Luctuósa de cruénto/Dum, revúlsum stípite,/Cernit ulnis incubántem/Virgo Mater fílium!",
+			"Os suáve, mite pectus,/Et latus dulcíssimum,/Dexterámque vulnerátam,/Et sinístram saúciam,/Et rubras cruóre plantas/Ægra tingit lácrimis.",
+			"Centiésque milliésque/Stringit arctis néxibus/Pectus illud, et lacértos,/Illa figit vúlnera:/Sicque tota colliquéscit/In dolóris ósculis.",
+			"Eja Mater, obsecrámus/Per tuas has lácrimas,/Filiíque triste funus,/Vulnerúmque púrpuram,/Hunc tui cordis dolórem/Conde nostris córdibus.",
+			"Esto Patri, Filióque,/Et coǽvo Flámini,/Esto summæ Trinitáti/Sempitérna glória,/Et perénnis laus, honórque/Hoc, et omni sǽculo.","Amen."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","vesperae","versiculus"],
+		"datum":["V. Regína Mártyrum ora pro nobis.","R. Quæ juxta crucem Jesu constitísti."]
+	},
+	{
+		"tags":["septem-dolores-septembris","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2343",
+		"datum":"Nolíte * me consideráre, quod fusca sim, quia decolorávit me sol, fílii matris meæ pugnavérunt contra me."
+	},
+	{
+		"tags":["septem-dolores-septembris","collecta"],
+		"datum":"Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit: + concéde propítius; ut qui dolóres ejus venerándo recólimus, * passiónis tuæ efféctum felícem consequámur:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","laudes","hymnus"],
+		"src":"gregobase/13067",
+		"datum":[
+			"Summæ Deus cleméntiæ,/Septem dolóres Vírginis/Plagásque Jesu Fílii/Fac rite nos revólvere.",
+			"Nobis salútem cónferant/Deíparæ tot lácrimæ,/Quibus laváre súfficis/Totíus orbis crímina.",
+			"Sit quinque Jesu vúlnerum/Amára contemplátio,/Sint et dolóres Vírginis/Ætérna cunctis gaúdia.",
+			"Jesu, tibi sit glória,/Qui passus es pro sérvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","laudes","versiculus"],
+		"datum":["V. María Virgo per virtútem tot dolórum.","R. Fac nos gaudére in regno cœlórum."]
+	},
+	{
+		"tags":["septem-dolores-septembris","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Veníte * ascendámus ad montem Dómini, et vidéte si est dolor, sicut dolor meus."
+	},
+	{
+		"tags":["septem-dolores-septembris","prima","responsorium-breve","versus"],
+		"datum":"Qui passus es propter nostram salútem."
+	},
+	{
+		"tags":["septem-dolores-septembris","tertia","responsorium-breve"],
+		"incipit":"O vos omnes",
+		"responsum":"Qui transítis per viam.",
+		"versus":"Atténdite et vidéte, si est dolor, sicut dolor meus."
+	},
+	{
+		"tags":["septem-dolores-septembris","tertia","versiculus"],
+		"datum":["V. Defecérunt præ lácrimis óculi mei.","R. Conturbáta sunt ómnia víscera mea."]
+	},
+	{
+		"tags":["septem-dolores-septembris","sexta","capitulum"],
+		"datum":"Plorans plorávit in nocte, + et lácrimæ ejus in maxíllis ejus: * non est qui consolétur eam ex ómnibus caris ejus."
+	},
+	{
+		"tags":["septem-dolores-septembris","sexta","responsorium-breve"],
+		"incipit":"Defecérunt",
+		"responsum":"Præ lácrimis óculi mei.",
+		"versus":"Conturbáta sunt ómnia víscera mea."
+	},
+	{
+		"tags":["septem-dolores-septembris","sexta","versiculus"],
+		"datum":["V. Fascículus myrrhæ diléctus meus mihi.","R. Inter úbera mea commorábitur."]
+	},
+	{
+		"tags":["septem-dolores-septembris","nona","capitulum"],
+		"datum":"Deduc quasi torréntem lácrimas per diem, et noctem: + non des réquiem tibi, * neque táceat pupílla óculi tui."
+	},
+	{
+		"tags":["septem-dolores-septembris","nona","responsorium-breve"],
+		"incipit":"Fascículus myrrhæ",
+		"responsum":"Diléctus meus mihi.",
+		"versus":"Inter úbera mea commorábitur."
+	},
+	{
+		"tags":["septem-dolores-septembris","nona","versiculus"],
+		"datum":["V. Ánima mea liquefácta est.","R. Ut diléctus locútus est."]
+	},
+	{
+		"tags":["septem-dolores-septembris","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1980",
+		"datum":"Oppréssit me dolor, * et fácies mea intúmuit a fletu, et pálpebræ meæ caligavérunt."
+	}
+]
