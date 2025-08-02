@@ -240,7 +240,8 @@
 	{
 		"include":["franciscus","primarium"],
 		"response":[
-			{"include":["angeli-custodes","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
+			{"include":["angeli-custodes","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["septem-dolores","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
 		]
 	},
 	{
