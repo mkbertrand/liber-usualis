@@ -350,8 +350,10 @@
 		"include":["septem-dolores","september"],
 		"recheck":false,
 		"response":[
-			{"include":["exaltatio-crucis"],"response":"transfer","target":0,"movement":["dominica","hebdomada-iv-septembris"]},
-			{"include":["nomen-bmv"],"response":"transfer","target":0,"movement":["dominica","hebdomada-iv-septembris"]}
+			{"include":["exaltatio-crucis"],"response":"transfer","target":0,"movement":7},
+			{"include":["nomen-bmv"],"response":"transfer","target":0,"movement":7},
+			{"include":["duplex-ii-classis"],"response":"transfer","target":0,"movement":7},
+			{"include":["hebdomada-i-adventus","dominica"],"response":"transfer","target":0,"movement":["hebdomada-iii-septembris","feria-ii"]}
 		]
 	},
 	{
