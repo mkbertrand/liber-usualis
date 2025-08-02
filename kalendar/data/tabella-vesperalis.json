@@ -220,10 +220,6 @@
 		]
 	},
 	{
-		"include":["adrianus","commemoratio"],
-		"remove":["primarium","commemoratio"],"adde":"omissum"
-	},
-	{
 		"include":["i-vesperae","septem-dolores","primarium"],
 		"response":[
 			{"include":["ii-vesperae","exaltatio-crucis","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
@@ -496,6 +492,16 @@
 	{
 		"include":["joanna-francisca","ii-vesperae","psalmi"],
 		"remove":["primarium","commemoratio"],"adde":"omissum"
+	},
+	{
+		"include":["adrianus"],
+		"remove":["primarium","commemoratio"],"adde":"omissum"
+	},
+	{
+		"include":["nomen-bmv","commemoratio"],
+		"response":[
+			{"include":["nativitas-bmv","ii-vesperae","primarium"],"remove":"commemoratio","adde":"omissum","target":0}
+		]
 	},
 	{
 		"include":["officium-parvum-bmv","ii-vesperae"],

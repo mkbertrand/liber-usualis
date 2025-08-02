@@ -1,5 +1,13 @@
 [
 	{
+		"tags":["nativitas-bmv","nomen"],
+		"datum":"In Nativitate B.M.V."
+	},
+	{
+		"tags":["nativitas-bmv","basis-nominis"],
+		"datum":"Nativitatis B.M.V."
+	},
+	{
 		"tags":["nativitas-bmv","antiphona","antiphona-i"],
 		"src":"gregobase/2062",
 		"datum":"Natívitas gloriósæ Vírginis Maríæ * ex sémine Ábrahæ, ortæ de tribu Juda, clara ex stirpe David."
@@ -25,7 +33,10 @@
 		"datum":"Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum."
 	},
 	{
-		"tags":["nativitas-bmv","vesperae","versiculus"],
+		"tags":[
+			["nativitas-bmv","vesperae","versiculus"],
+			["nativitas-bmv","laudes","versiculus"]
+		],
 		"datum":["V. Natívitas est hódie sanctæ Maríæ Vírginis.","R. Cujus vita ínclyta cunctas illústrat ecclésias."]
 	},
 	{
@@ -35,8 +46,13 @@
 	},
 	{
 		"tags":["nativitas-bmv","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Fámulis tuis, quǽsumus Dómine, cœléstis grátiæ munus impertíre: ut quibus beátæ Vírginis partus éxstitit salútis exórdium, Nativitátis ejus votíva solémnitas pacis tríbuat increméntum."
+		"datum":"Fámulis tuis, quǽsumus Dómine, cœléstis grátiæ munus impertíre: + ut quibus beátæ Vírginis partus éxstitit salútis exórdium, * Nativitátis ejus votíva solémnitas pacis tríbuat increméntum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["nativitas-bmv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13064",
+		"datum":"Nativitátem hodiérnam * perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja."
 	},
 	{
 		"tags":["nativitas-bmv","ii-vesperae","antiphona","antiphona-magnificat"],

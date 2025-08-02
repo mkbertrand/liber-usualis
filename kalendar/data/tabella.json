@@ -358,7 +358,8 @@
 		"include":["nomen-bmv"],
 		"recheck":false,
 		"response":[
-			{"include":["exaltatio-crucis","primarium"],"response":"commemoratio","target":1}
+			{"include":["exaltatio-crucis","primarium"],"response":"transfer","target":0,"movement":1},
+			{"include":["nativitas-bmv","dies-octava","primarium"],"response":"omissum","target":1}
 		]
 	},
 	{

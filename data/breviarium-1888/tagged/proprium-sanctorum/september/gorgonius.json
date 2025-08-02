@@ -1,7 +1,11 @@
 [
 	{
+		"tags":["gorgonius","nomen"],
+		"datum":"S. Gorgonii Martyris"
+	},
+	{
 		"tags":["gorgonius","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Sanctus tuus Dómine Gorgónius sua nos intercessióne lætíficet: et pia fáciat solemnitáte gaudére."
+		"datum":"Sanctus tuus Dómine Gorgónius sua nos intercessióne lætíficet: * et pia fáciat solemnitáte gaudére.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

@@ -1,0 +1,31 @@
+[
+	{
+		"tags":["exaltatio-crucis","nomen"],
+		"datum":"In Exaltatione S. Crucis"
+	},
+	{
+		"tags":["exaltatio-crucis"],
+		"antiphona":[["inventio-crucis","antiphona"]],
+		"capitulum":[["inventio-crucis","capitulum"]],
+		"hymnus":[["inventio-crucis","hymnus"]],
+		"versiculus":[["inventio-crucis","versiculus"]]
+	},
+	{
+		"tags":["exaltatio-crucis","vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["exaltatio-crucis","collecta"],
+		"datum":"Deus, qui nos hodiérna die Exaltatiónis sanctæ Crucis ánnua solemnitáte lætíficas: + præsta, quǽsumus; ut cujus mystérium in terra cognóvimus, * ejus redemptiónis prǽmia in cœlo mereámur.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["exaltatio-crucis","responsorium-breve"],
+		"datum":[["inventio-crucis","responsorium-breve"]]
+	},
+	{
+		"tags":["exaltatio-crucis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1920",
+		"datum":"O Crux * benedícta, quæ sola fuísti digna portáre Regem cœlórum et Dóminum, allelúja."
+	}
+]
