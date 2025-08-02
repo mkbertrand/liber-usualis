@@ -94,7 +94,7 @@
 	top: 50vh;
 	transform: translate(-50%, -50%);
 	width: 30em;
-	height: 60vh;
+	height: 50vh;
 	max-width: 100%;
 	background-color: rgba(249, 249, 249, 1);
 	display: flex;
@@ -126,6 +126,11 @@
 	background-color: #e0b0b0;
 }
 
+.options-panel-section-head {
+	text-align: center;
+	margin:0;
+}
+
 .recitation-select-container {
 	display: flex;
 	flex-direction: row;
@@ -136,13 +141,19 @@
 	flex-grow: 1;
 }
 
-#coincidences-list-container {
+#options-panel-require-initialized-container {
 	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-top: 7px;
 }
 
-.options-panel-section-head {
-	text-align: center;
-	margin:0;
+#coincidences-list-container {
+	flex-grow: 0;
+	flex-basis: 50%;
+	padding-left: 14px;
+	padding-right: 14px;
 }
 
 .coincidences-label {
@@ -154,7 +165,7 @@
 }
 
 .coincidence-entry {
-	margin-left: 20px;
+	margin-left: 5px;
 	cursor: not-allowed;
 	font-size: 16px;
 }
@@ -172,15 +183,20 @@
 #selected-entry {
 }
 
-.ambit-select-entry {
-	font-size: 16px;
-	cursor: pointer;
-	margin-left: 20px;
+#ambit-select-wrapper {
+	flex-grow: 0;
+	flex-basis: 50%;
+	height: 100%;
 }
 
-.ambit-selected {
-	border-radius:7px;
-	background-color: #e6b0b0;
+#ambit-select-container {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	height: 100%;
+	border-left: 1px solid #eee;
+	padding-left: 14px;
+	padding-right: 14px;
 }
 
 #bottom-easy-select-container {

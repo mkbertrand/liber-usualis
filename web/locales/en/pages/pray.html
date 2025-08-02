@@ -16,8 +16,8 @@
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
-	desired: 'officium-defunctorum',
-	ambit: '',
+	desired: $persist('omnes'),
+	ambit: $persist([]),
 	rite: '',
 	initialized: false,
 	dayinitialized: false,
@@ -171,6 +171,8 @@
 			} else {
 				hour = list[1];
 			}
+		} else if (list.length == 1) {
+			hour = list[0];
 		}
 		updateRite();
 	});
@@ -189,24 +191,28 @@
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">Private</button>
 			</div>
 			<template x-if="initialized">
-				<div id="coincidences-list-container">
-					<h3 class="options-panel-section-head">Coincidences</h3>
-					<h4 class="coincidences-label">Primary</h4>
-					<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(day.primary[0])"></div>
-					<h4 class="coincidences-label">Commemorations</h4>
-					<template x-for="commemoration in day.commemorations">
-						<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
-					</template>
-					<h4 class="coincidences-label">Omissions</h4>
-					<template x-for="omission in day.omissions">
-						<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
-					</template>
-					<h4 class="coincidences-label">Votives</h3>
-					<h3 class="options-panel-section-head">Selection</h3>
-					<div class="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
-						<template x-for="entry in ambitEntries">
-							<div class="ambit-select-entry" :class="desired == entry[0] && 'ambit-selected'" x-text="entry[1]" @click="desired = entry[0]"></div>
+				<div id="options-panel-require-initialized-container">
+					<div id="coincidences-list-container">
+						<h3 class="options-panel-section-head">Coincidences</h3>
+						<h4 class="coincidences-label">Primary</h4>
+						<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(day.primary[0])"></div>
+						<h4 class="coincidences-label">Commemorations</h4>
+						<template x-for="commemoration in day.commemorations">
+							<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 						</template>
+						<h4 class="coincidences-label">Omissions</h4>
+						<template x-for="omission in day.omissions">
+							<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
+						</template>
+						<h4 class="coincidences-label">Votives</h3>
+					</div>
+					<div id="ambit-select-wrapper">
+					<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
+						<h3 class="options-panel-section-head">Selection</h3>
+						<template x-for="entry in ambitEntries">
+							<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+						</template>
+					</div>
 					</div>
 				</div>
 			</template>
