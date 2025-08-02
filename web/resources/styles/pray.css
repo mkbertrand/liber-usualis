@@ -94,7 +94,7 @@
 	top: 50vh;
 	transform: translate(-50%, -50%);
 	width: 30em;
-	height: 50vh;
+	height: 60vh;
 	max-width: 100%;
 	background-color: rgba(249, 249, 249, 1);
 	display: flex;
@@ -140,7 +140,7 @@
 	width: 100%;
 }
 
-#coincidences-list-title {
+.options-panel-section-head {
 	text-align: center;
 	margin:0;
 }
@@ -170,6 +170,17 @@
 }
 
 #selected-entry {
+}
+
+.ambit-select-entry {
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.ambit-selected {
+	border-radius:7px;
+	background-color: #e6b0b0;
 }
 
 #bottom-easy-select-container {

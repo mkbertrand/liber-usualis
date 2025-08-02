@@ -8,7 +8,7 @@ class RiteItem {
 	}
 }
 fullambit = [
-	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('psalmi-graduales', 'psalmi-graduales', false), new RiteItem('matutinum', 'officium-parvum-bmv', false), new RiteItem('laudes', 'officium-parvum-bmv', false),  new RiteItem('matutinum', 'diei', true), new RiteItem('laudes', 'diei', true), new RiteItem('matutinum', 'officium-defunctorum', false), new RiteItem('laudes', 'officium-defunctorum', false), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'matutinum'},
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('psalmi-graduales', 'psalmi-graduales', false), new RiteItem('matutinum', 'officium-parvum-bmv', false), new RiteItem('laudes', 'officium-parvum-bmv', false), new RiteItem('matutinum', 'diei', true), new RiteItem('laudes', 'diei', true), new RiteItem('matutinum', 'officium-defunctorum', false), new RiteItem('laudes', 'officium-defunctorum', false), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'matutinum'},
 	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('prima', 'diei', true), new RiteItem('prima', 'officium-parvum-bmv', false), new RiteItem('officium-capituli', 'diei', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'prima'},
 	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('tertia', 'diei', true), new RiteItem('tertia', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'tertia'},
 	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('sexta', 'diei', true), new RiteItem('sexta', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'sexta'},
@@ -17,8 +17,44 @@ fullambit = [
 	{'name': 'Completorium', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('completorium', 'diei', true), new RiteItem('completorium', 'officium-parvum-bmv', false), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'completorium'}
 ];
 
+opbmvambit = [
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('matutinum', 'officium-parvum-bmv', true), new RiteItem('laudes', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'matutinum'},
+	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('prima', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'prima'},
+	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('tertia', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'tertia'},
+	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('sexta', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'sexta'},
+	{'name': 'Nona', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('nona', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'nona'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('vesperae', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'vesperae'},
+	{'name': 'Completorium', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('completorium', 'officium-parvum-bmv', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'completorium'}
+];
+
+defunctambit = [
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'officium-defunctorum', true), new RiteItem('matutinum', 'officium-defunctorum', true), new RiteItem('laudes', 'officium-defunctorum', true), new RiteItem('sacrosanctae', 'officium-defunctorum', true)], 'id': 'matutinum'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'officium-defunctorum', true), new RiteItem('vesperae', 'officium-defunctorum', true), new RiteItem('sacrosanctae', 'officium-defunctorum', true)], 'id': 'vesperae'}
+];
+
+gradualambit = [{'name': 'Psalmi Graduales', 'content': [new RiteItem('psalmi-graduales', 'diei', true)], 'id': 'matutinum'}]
+penitentialsambit = [{'name': 'Psalmi Pœnitentiales', 'content': [new RiteItem('psalmi-poenitentiales', 'diei', true)], 'id': 'matutinum'}]
+
 function defineambit(desired, choral = true) {
-	ambit = fullambit;
+	switch(desired) {
+		case 'omnes':
+			ambit = fullambit;
+			break;
+		case 'officium-parvum-bmv':
+			ambit = opbmvambit;
+			break;
+		case 'officium-defunctorum':
+			ambit = defunctambit;
+			break;
+		case 'psalmi-graduales':
+			ambit = gradualambit;
+			break;
+		case 'psalmi-poenitentiales':
+			ambit = penitentialsambit;
+			break;
+		case 'diei':
+			ambit = fullambit.map((entry) => ({'name': entry.name, 'content': entry.content.filter((item) => item.where == 'diei'), 'id': entry.id}))
+	}
 	if (choral) {
 		return ambit;
 	} else {
@@ -90,6 +126,10 @@ function riteTitle(data, size = 'large') {
 		}
 		return `<h1 class="large-title">${title}</h1><h2 class="large-subtitle">${subtitle}</h2>`;
 	}
+}
+
+function abbreviateName(name) {
+	return name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.');
 }
 
 titled = {

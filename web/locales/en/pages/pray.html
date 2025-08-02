@@ -16,6 +16,7 @@
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
+	desired: 'officium-defunctorum',
 	ambit: '',
 	rite: '',
 	initialized: false,
@@ -40,7 +41,7 @@
 			this.choral = false;
 			this.chant = false;
 		}
-		this.ambit = defineambit('', this.choral);
+		this.ambit = defineambit(this.desired, this.choral);
 		this.list = ritelist(this.day.tags, this.ambit);
 		this.slideHour(this.hour.id);
 		this.recitation = recitation;
@@ -117,29 +118,59 @@
 		}
 
 
+	},
+	setAmbit(ambit) {
+		oldambit = this.ambit;
+		this.ambit = ambit;
+		this.list = ritelist(this.day.tags, this.ambit);
+
+		if (this.ambit.length < oldambit.length && this.ambit.length == 1) {
+			this.setHour('matutinum');
+		} else if (this.ambit.length < oldambit.length && this.ambit.length == 2) {
+			if (this.hour.id == 'completorium') {
+				this.setHour('vesperae');
+			} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour.id)) {
+				this.setHour('matutinum');
+			} else {
+				this.slideHour(this.hour.id);
+				this.updateRite();
+			}
+		} else {
+			this.slideHour(this.hour.id);
+			this.updateRite();
+		}
 	}
 }" x-init="
   	if (ambit == '') {
-		ambit = defineambit('', choral);
+		ambit = defineambit(desired, choral);
 	}
 	$watch('date', date => updateDay());
+	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
 	$watch('recitation', recitation => updateRite());
 	$watch('translation', translation => updateRite());
 	$watch('dayinitialized', dayinitialized => {
-		if (date.getHours() < 6) {
-			hour = list[0];
-		} else if (date.getHours() < 9) {
-			hour = list[1];
-		} else if (date.getHours() < 11) {
-			hour = list[2];
-		} else if (date.getHours() < 14) {
-			hour = list[3];
-		} else if (date.getHours() < 16) {
-			hour = list[4];
-		} else if (date.getHours() < 20) {
-			hour = list[5];
-		} else {
-			hour = list[6];
+		if (list.length == 7) {
+			if (date.getHours() < 6) {
+				hour = list[0];
+			} else if (date.getHours() < 9) {
+				hour = list[1];
+			} else if (date.getHours() < 11) {
+				hour = list[2];
+			} else if (date.getHours() < 14) {
+				hour = list[3];
+			} else if (date.getHours() < 16) {
+				hour = list[4];
+			} else if (date.getHours() < 20) {
+				hour = list[5];
+			} else {
+				hour = list[6];
+			}
+		} else if (list.length == 2) {
+			if (date.getHours() < 16) {
+				hour = list[0];
+			} else {
+				hour = list[1];
+			}
 		}
 		updateRite();
 	});
@@ -159,23 +190,24 @@
 			</div>
 			<template x-if="initialized">
 				<div id="coincidences-list-container">
-					<h3 id="coincidences-list-title">Coincidences</h3>
+					<h3 class="options-panel-section-head">Coincidences</h3>
 					<h4 class="coincidences-label">Primary</h4>
-					<div @click="select=''; optionspanel=false;" id="primary-entry" class="coincidence-entry permitted-entry" x-text="day.primary[0]"></div>
+					<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(day.primary[0])"></div>
 					<h4 class="coincidences-label">Commemorations</h4>
 					<template x-for="commemoration in day.commemorations">
-						<div class="coincidence-entry" x-text="commemoration[0]"></div>
+						<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 					</template>
 					<h4 class="coincidences-label">Omissions</h4>
 					<template x-for="omission in day.omissions">
-						<div class="coincidence-entry" x-text="omission[0]"></div>
+						<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
 					</template>
-					<h4 class="coincidences-label">Other Offices</h4>
-					<div @click="select='officium-parvum-bmv'; optionspanel=false;" class="coincidence-entry permitted-entry">Officium Parvum B.M.V.<span class="non-dicitur" x-show="day.primary[1].includes('duplex') || day.primary[1].includes('semiduplex')"> Non hodie dicitur</span></div>
-					<div @click="select='officium-defunctorum'; optionspanel=false;" class="coincidence-entry permitted-entry">Officium Defunctorum<span class="non-dicitur" x-show="!day.tags.some((tagset) => tagset.includes('officium-defunctorum'))"> Non hodie dicitur</span></div>
-					<div @click="hour='psalmi-graduales'; optionspanel=false;" class="coincidence-entry permitted-entry">Psalmi Graduales<span class="non-dicitur" x-show="!day.tags.some((tagset) => tagset.includes('psalmi-graduales'))"> Non hodie dicuntur</span></div>
-					<div @click="hour='psalmi-poenitentiales'; optionspanel=false;" class="coincidence-entry permitted-entry">Psalmi Poenitentiales<span class="non-dicitur" x-show="!day.tags.some((tagset) => tagset.includes('psalmi-poenitentiales'))"> Non hodie dicuntur</span></div>
 					<h4 class="coincidences-label">Votives</h3>
+					<h3 class="options-panel-section-head">Selection</h3>
+					<div class="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
+						<template x-for="entry in ambitEntries">
+							<div class="ambit-select-entry" :class="desired == entry[0] && 'ambit-selected'" x-text="entry[1]" @click="desired = entry[0]"></div>
+						</template>
+					</div>
 				</div>
 			</template>
 		</div>
