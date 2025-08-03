@@ -1,0 +1,26 @@
+[
+	{
+		"tags":["josephus-cupertino","nomen"],
+		"datum":"S. Josephi a Cupertino Confessoris"
+	},
+	{
+		"tags":["josephus-cupertino","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2273",
+		"datum":"Mórtuus sum, * et vita mea est abscóndita cum Christo in Deo."
+	},
+	{
+		"tags":["josephus-cupertino","collecta"],
+		"datum":"Deus, qui ad unigénitum Fílium tuum exaltátum a terra ómnia tráhere disposuísti: + pérfice propítius; ut méritis et exémplo seráphici Confessóris tui Joséphi supra terrénas omnes cupiditátes eleváti, * ad eum perveníre mereámur:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":["josephus-cupertino","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13261",
+		"datum":"Osténdit mihi * Dóminus flúvium aquæ vivæ, spléndidum tamquam crystállum, procedéntem de sede Dei et Agni."
+	},
+	{
+		"tags":["josephus-cupertino","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2823",
+		"datum":"Exístimo * ómnia detriméntum esse propter eminéntem sciéntiam Jesu Christi Dómini mei."
+	}
+]

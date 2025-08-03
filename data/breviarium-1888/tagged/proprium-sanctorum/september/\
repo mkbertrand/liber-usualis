@@ -1,0 +1,30 @@
+[
+	{
+		"tags":["dedicatio-michaelis","nomen"],
+		"datum":"In Dedicatione S. Michaëlis Archangeli"
+	},
+	{
+		"tags":["dedicatio-michaelis"],
+		"antiphona":[["apparitio-michaelis","antiphona"]],
+		"capitulum":[["apparitio-michaelis","capitulum"]],
+		"hymnus":[["apparitio-michaelis","hymnus"]],
+		"versiculus":[["apparitio-michaelis","versiculus"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","i-vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","collecta"],
+		"datum":[["apparitio-michaelis","collecta"]],
+		"terminatio":[["apparitio-michaelis","collecta","terminatio"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","responsorium-breve"],
+		"datum":[["apparitio-michaelis","responsorium-breve"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","ii-vesperae","psalmus"],
+		"datum":[["apparitio-michaelis","ii-vesperae","vesperae","psalmus"]]
+	}
+]

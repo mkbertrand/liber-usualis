@@ -1,0 +1,21 @@
+[
+	{
+		"tags":["thomas-villanova","nomen"],
+		"datum":"S. Thomæ de Villanova Episcopi et Confessoris"
+	},
+	{
+		"tags":["thomas-villanova","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2419",
+		"datum":"Dispérsit, * dedit paupéribus: justítia ejus manet in sǽculum sǽculi."
+	},
+	{
+		"tags":["thomas-villanova","collecta"],
+		"datum":"Deus, qui beátum Thomam Pontíficem insígnis in paúperes misericórdiæ virtúte decorásti: + quǽsumus; ut ejus intercessióne in omnes qui te deprecántur, * divítias misericórdiæ tuæ benígnus effúndas.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["thomas-villanova","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12848",
+		"datum":"Eleemósynas illíus * enarrábit omnis ecclésia sanctórum."
+	}
+]
