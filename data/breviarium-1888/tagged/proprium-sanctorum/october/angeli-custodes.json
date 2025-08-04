@@ -1,0 +1,100 @@
+[
+	{
+		"tags":["angeli-custodes","nomen"],
+		"datum":"Ss. Angelorum Custodum"
+	},
+	{
+		"tags":["angeli-custodes","antiphona","antiphona-i"],
+		"src":"gregobase/2562",
+		"datum":"Ángelis suis * Deus mandávit de te, ut custódiant te in ómnibus viis tuis."
+	},
+	{
+		"tags":["angeli-custodes","i-vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["angeli-custodes","antiphona","antiphona-ii"],
+		"src":"gregobase/2476",
+		"datum":"Laudémus Dóminum, * quem laudant Ángeli, quem Chérubim et Séraphim, Sanctus, Sanctus, Sanctus proclámant."
+	},
+	{
+		"tags":["angeli-custodes","antiphona","antiphona-iii"],
+		"src":"gregobase/2727",
+		"datum":"Ángeli eórum * semper vident fáciem Patris mei, qui est in cœlis."
+	},
+	{
+		"tags":["angeli-custodes","antiphona","antiphona-iv"],
+		"src":"gregobase/2252",
+		"datum":"Benedíctus Deus, * qui misit Ángelum suum, et éruit servos suos, qui credidérunt in eum."
+	},
+	{
+		"tags":["angeli-custodes","antiphona","antiphona-v"],
+		"src":"gregobase/1998",
+		"datum":"Laudáte Deum * omnes Ángeli ejus, laudáte eum omnes virtútes ejus."
+	},
+	{
+		"tags":["angeli-custodes","capitulum"],
+		"datum":"Ecce ego mittam Ángelum meum, + qui præcédat te, et custódiat in via, et introdúcat in locum, quem parávi. * Obsérva eum, et audi vocem ejus."
+	},
+	{
+		"tags":["angeli-custodes","vesperae","hymnus"],
+		"src":"gregobase/2320",
+		"datum":[
+			"Custódes hóminum psállimus Ángelos,/Natúræ frágili quos Pater áddidit/Cœléstis cómites, insidiántibus/Ne succúmberet hóstibus.",
+			"Nam quod corrúerit próditor ángelus,/Concéssis mérito pulsus honóribus,/Ardens invídia péllere nítitur/Quos cœlo Deus ádvocat.",
+			"Huc custos ígitur pérvigil ádvola,/Avértens pátria de tibi crédita/Tam morbos ánimi, quam requiéscere/Quidquid non sinit íncolas.",
+			"Sanctæ sit Tríadi laus pia júgiter,/Cujus perpétuo númine máchina/Triplex hæc régitur, cujus in ómnia/Regnat glória sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["angeli-custodes","versiculus"],
+		"datum":[["apparitio-michaelis","versiculus"]],
+		"i-vesperae":[["apparitio-michaelis","ii-vesperae","vesperae","versiculus"]],
+		"laudes":[["apparitio-michaelis","ii-vesperae","vesperae","versiculus"]]
+	},
+	{
+		"tags":["angeli-custodes","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2525",
+		"datum":"Omnes sunt * administratórii spíritus in ministérium missi propter eos, qui hæreditátem cápiunt salútis."
+	},
+	{
+		"tags":["angeli-custodes","collecta"],
+		"datum":"Deus, qui ineffábili providéntia sanctos Ángelos tuos ad nostram custódiam míttere dignáris: + largíre supplícibus tuis; et eórum semper protectióne deféndi, * et ætérna societáte gaudére.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["angeli-custodes","laudes","hymnus"],
+		"src":"gregobase/13338",
+		"datum":[
+			"Ætérne Rector síderum,/Qui, quidquid est poténtia/Magna creásti, nec regis/Minóre providéntia:",
+			"Adésto supplicántium/Tibi reórum cœtui,/Lucísque sub crepúsculum/Lucem novam da méntibus.",
+			"Tuúsque nobis Ángelus/Eléctus ad custódiam,/Hic adsit; a contágio/Ut críminum nos prótegat.",
+			"Nobis dracónis ǽmuli/Versútias extérminet;/Ne rete frauduléntiæ/Incaúta nectat péctora.",
+			"Metum repéllat hóstium/Nostris procul de fínibus:/Pacem procúret cívium,/Fugétque pestiléntiam,",
+			"Deo Patri sit glória,/Qui, quos redémit Fílius,/Et sanctus unxit Spíritus,/Per Ángelos custódiat.","Amen."
+		]
+	},
+	{
+		"tags":["angeli-custodes","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13230",
+		"datum":"Revérsus est Ángelus * qui loquebátur in me, et suscitávit me; quasi virum qui suscitátur a somno suo."
+	},
+	{
+		"tags":["angeli-custodes","responsorium-breve"],
+		"datum":[["apparitio-michaelis","responsorium-breve"]]
+	},
+	{
+		"tags":["angeli-custodes","capitulum"],
+		"sexta":"Nec contemnéndum putes: + quia non dimíttet cum peccáveris: * et est nomen meum in illo.",
+		"nona":"Quod si audíeris vocem ejus, et féceris ómnia quæ loquor, + inimícus ero inimícis tuis, et afflígam affligéntes te. * Præcedétque te Ángelus meus."
+	},
+	{
+		"tags":["angeli-custodes","ii-vesperae","psalmus"],
+		"datum":[["apparitio-michaelis","ii-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["angeli-custodes","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2860",
+		"datum":"Sancti Ángeli * Custódes nostri, deféndite nos in prǽlio, ut non pereámus in treméndo judício."
+	}
+]
