@@ -101,7 +101,7 @@ def daytags(vesperal = False):
 
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
-	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
+	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
 	votives = [['Officium Parvum B.M.V.', {'officium-parvum-bmv'}]]
 	return datamanage.dump_data({
 			'tags': tags,
@@ -136,8 +136,11 @@ def rite():
 			tags.append({'pro-sanctis','commemoratio'})
 		elif parameters['select'] == 'officium-defunctorum':
 			def votivize(i):
-				if 'votiva' in i:
-					return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
+				if 'officium-defunctorum' in i:
+					if 'duplex-minus' in i:
+						return i | {'officium-defunctorum', 'primarium'}
+					else:
+						return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
 				else:
 					return i - {'primarium', 'commemoratio', 'psalmi'}
 			tags = [votivize(i) for i in tags]

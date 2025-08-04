@@ -1,7 +1,8 @@
 [
 	{
 		"tags":["officium-defunctorum","nomen"],
-		"datum":"Officium Defunctorum"
+		"datum":"Officium Defunctorum",
+		"fideles-defuncti":"In Commemoratione Omnium Fidelium Defunctorum"
 	},
 	{
 		"tags":["officium-defunctorum","prex-duplex"],
@@ -86,6 +87,14 @@
 			"V. Requiéscant in pace.",
 			"R. Amen.",
 			["domine-exaudi"]
+		],
+		"fideles-defuncti":[
+			["pater-noster-semisecreta"],
+			"V. A porta ínferi.",
+			"R. Érue Dómine ánimas eórum.",
+			"V. Requiéscant in pace.",
+			"R. Amen.",
+			["domine-exaudi"]
 		]
 	},
 	{
@@ -95,6 +104,11 @@
 			"Deus, véniæ largítor et humánæ salútis amátor: + quǽsumus cleméntiam tuam; ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sǽculo transiérunt, * beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas.",
 			"Fidélium Deus ómnium cónditor et redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: + ut indulgéntiam quam semper optavérunt, * piis supplicatiónibus consequántur:"
 		],
+		"terminatio":["Qui vivis et regnas in sǽcula sæculórum.","R. Amen."]
+	},
+	{
+		"tags":["fideles-defuncti","officium-defunctorum","collecta"],
+		"datum":"Fidélium Deus ómnium cónditor et redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: + ut indulgéntiam quam semper optavérunt, * piis supplicatiónibus consequántur:",
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
@@ -122,6 +136,39 @@
 			["officium-defunctorum","matutinum","hymnus"]
 		],
 		"datum":""
+	},
+	{
+		"tags":["fideles-defuncti","officium-defunctorum","matutinum","invitatorium"],
+		"datum":[
+			["matutinum","antiphona","antiphona-invitatorium"],
+			["matutinum","antiphona","antiphona-invitatorium"],
+			"Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
+			["matutinum","antiphona","antiphona-invitatorium"],
+			"Quóniam Deus magnus Dóminus, et Rex magnus super omnes deos: quóniam non repéllet Dóminus plebem suam, quia in manu ejus sunt omes fines terræ, et altitúdines móntium ipse cónspicit.",
+			["matutinum","antiphona","antiphona-invitatorium", "pars"],
+			"Quóniam ipsíus est mare, et ipse fecit illud, et áridam fundavérunt manus ejus: veníte adorémus, et procidámus ante Deum: plorémus coram Dómino, qui fecit nos, quia ipse est Dóminus Deus noster: nos autem pópulus ejus, et oves páscuæ ejus.",
+			["matutinum","antiphona","antiphona-invitatorium"],
+			"Hódie si vocem ejus audiéritis, nolíte obduráre corda vestra, sicut in exacerbatióne secúndum diem tentatiónis in desérto: ubi tentavérunt me patres vestri, probavérunt et vidérunt ópera mea.",
+			["matutinum","antiphona","antiphona-invitatorium","pars"],
+			"Quadragínta annis próximus fui generatióni huic, et dixi, Semper hi errant corde: ipsi vero non cognovérunt vias meas, quibus jurávi in ira mea, si introíbunt in réquiem meam.",
+			["matutinum","antiphona","antiphona-invitatorium"],
+			"Réquiem ætérnam * dona eis Dómine.",
+			"Et lux perpétua * lúceat eis.",
+			["matutinum","antiphona","antiphona-invitatorium","pars"],
+			["matutinum","antiphona","antiphona-invitatorium"]
+		]
+	},
+	{
+		"tags":["fideles-defuncti","officium-defunctorum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem, cui ómnia vivunt, * Veníte adorémus."
+	},
+	{
+		"tags":["fideles-defuncti","officium-defunctorum","matutinum","nocturnae"],
+		"datum":[
+			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+		]
 	},
 	{
 		"tags":[
@@ -359,6 +406,23 @@
 		"versus":"Clamántes et dicéntes: Advenísti Redémptor noster."
 	},
 	{
+		"tags":["fideles-defuncti","officium-defunctorum","matutinum","nocturna-iii","responsorium-iii","responsorium"],
+		"formula":[
+			"R. ",["incipit"]," * ",["responsum-i"]," * ",["responsum-ii"],
+			"\nV. ",["versus-i"],
+			"\nR. ",["responsum-i"],
+			"\nV. ",["versus-ii"],
+			"\nR. ",["responsum-ii"],
+			"\nV. Réquiem ætérnam dona eis Dómine: et lux perpétua lúceat eis.",
+			"\nR. ",["incipit"]," ",["responsum-i"]," ",["responsum-ii"]
+		],
+		"incipit":"Líbera me Dómine de morte ætérna in die illa treménda:",
+		"responsum-i":"Quando cœli movéndi sunt et terra:",
+		"responsum-ii":"Dum véneris judicáre sǽculum per ignem.",
+		"versus-i":"Tremens factus sum ego, et tímeo, dum discússio vénerit, atque ventúra ira.",
+		"versus-ii":"Dies illa, dies iræ, calamitátis et misériæ, dies magna et amára valde."
+	},
+	{
 		"tags":["officium-defunctorum","laudes","antiphona","antiphona-i"],
 		"src":"gregobase/1068",
 		"datum":"Exsultábunt * Dómino ossa humiliáta."
@@ -382,6 +446,12 @@
 		"datum":"Me suscépit * déxtera tua Dómine."
 	},
 	{
+		"tags":["officium-defunctorum","laudes","psalmi-deus-deus-meus"],
+		"datum":[
+			["/psalmi/psalmus-lxii,psalmus-lxvi,requiem"]
+		]
+	},
+	{
 		"tags":["officium-defunctorum","laudes","antiphona","antiphona-iv"],
 		"src":"gregobase/2253",
 		"datum":"A porta ínferi * érue Dómine ánimam meam."
@@ -396,6 +466,12 @@
 		"datum":"Omnis spíritus * laudet Dóminum."
 	},
 	{
+		"tags":["officium-defunctorum","laudes","psalmi-laudate"],
+		"datum":[
+			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,requiem"]
+		]
+	},
+	{
 		"tags":["officium-defunctorum","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/935",
 		"datum":"Ego sum * resurréctio et vita: qui credit in me, étiam si mórtuus fúerit, vivet: et omnis qui vivit et credit in me, non moriétur in ætérnum."
@@ -405,6 +481,14 @@
 		"datum":[
 			["pater-noster-semisecreta"],
 			["/psalmi/psalmus-cxxix,requiem"],
+			"V. A porta ínferi.",
+			"R. Érue Dómine ánimas eórum.",
+			"V. Requiéscant in pace.",
+			"R. Amen.",
+			["domine-exaudi"]
+		],
+		"fideles-defuncti":[
+			["pater-noster-semisecreta"],
 			"V. A porta ínferi.",
 			"R. Érue Dómine ánimas eórum.",
 			"V. Requiéscant in pace.",

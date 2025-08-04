@@ -245,7 +245,7 @@
 		"include":["fideles-defuncti"],
 		"recheck":false,
 		"response":[
-			{"include":["dominica"],"response":"transfer","target":0,"movement":-1}
+			{"include":["dominica"],"response":"transfer","target":0,"movement":1}
 		]
 	},
 	{
@@ -754,6 +754,7 @@
 	},
 	{
 		"include":["officium-defunctorum"],
+		"exclude":["fideles-defuncti"],
 		"response":[
 			{"include":["in-tempore-paschali"],"response":"transfer","target":0,"movement":1},
 			{"include":["duplex-i-classis"],"response":"transfer","target":0,"movement":1},
@@ -761,7 +762,14 @@
 			{"include":["duplex-majus"],"response":"transfer","target":0,"movement":1},
 			{"include":["duplex-minus"],"response":"transfer","target":0,"movement":1},
 			{"include":["semiduplex"],"response":"transfer","target":0,"movement":1},
-			{"include":["officium-defunctorum"],"response":"dele","target":1}
+			{"include":["officium-defunctorum"],"response":"dele","target":1},
+			{"include":["tempus","dominica"],"target":0,"response":"dominica"},
+			{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
+			{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
+			{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
+			{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
+			{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
+			{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
 		]
 	},
 	{

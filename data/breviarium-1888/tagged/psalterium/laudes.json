@@ -36,14 +36,26 @@
 			["laudes","psalmus-ii"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii"],
-			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
+			["laudes","psalmi-deus-deus-meus"],
 			["laudes","antiphona","antiphona-iii","repetita"],
 			["laudes","antiphona","antiphona-iv"],
 			["laudes","canticum"],
 			["laudes","antiphona","antiphona-iv","repetita"],
 			["laudes","antiphona","antiphona-v"],
-			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
+			["laudes","psalmi-laudate"],
 			["laudes","antiphona","antiphona-v","repetita"]
+		]
+	},
+	{
+		"tags":["laudes","psalmi-deus-deus-meus"],
+		"datum":[
+			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"]
+		]
+	},
+	{
+		"tags":["laudes","psalmi-laudate"],
+		"datum":[
+			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"]
 		]
 	},
 	{
@@ -56,13 +68,13 @@
 			["laudes","psalmus-ii"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii","intonata"],
-			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
+			["laudes","psalmi-deus-deus-meus"],
 			["laudes","antiphona","antiphona-iii","repetita"],
 			["laudes","antiphona","antiphona-iv","intonata"],
 			["laudes","canticum"],
 			["laudes","antiphona","antiphona-iv","repetita"],
 			["laudes","antiphona","antiphona-v","intonata"],
-			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
+			["laudes","psalmi-laudate"],
 			["laudes","antiphona","antiphona-v","repetita"]
 		]
 	},
@@ -76,13 +88,13 @@
 			["laudes","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-xcii,gloria"],
 			["/psalmi/psalmus-xcix,gloria"],
-			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
+			["laudes","psalmi-deus-deus-meus"],
 			["laudes","antiphona","antiphona-i","repetita"],
 			["laudes","antiphona","antiphona-ii","intonata"],
 			["/psalmi/canticum-trium-puerorum"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii","intonata"],
-			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
+			["laudes","psalmi-laudate"],
 			["laudes","antiphona","antiphona-iii","repetita"]
 		]
 	},
@@ -189,13 +201,13 @@
 			["/psalmi/psalmus-cxvii,gloria"],
 			["laudes","antiphona","antiphona-ii","repetita"],
 			["laudes","antiphona","antiphona-iii","intonata"],
-			["/psalmi/psalmus-lxii,psalmus-lxvi,gloria"],
+			["laudes","psalmi-deus-deus-meus"],
 			["laudes","antiphona","antiphona-iii","repetita"],
 			["laudes","antiphona","antiphona-iv","intonata"],
 			["/psalmi/canticum-trium-puerorum"],
 			["laudes","antiphona","antiphona-iv","repetita"],
 			["laudes","antiphona","antiphona-v","intonata"],
-			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl,gloria"],
+			["laudes","psalmi-laudate"],
 			["laudes","antiphona","antiphona-v","repetita"]
 		]
 	},

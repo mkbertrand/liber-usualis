@@ -13,8 +13,8 @@
 		"datum":"Vidi turbam magnam, * quam dinumeráre nemo póterat, ex ómnibus géntibus, stantes ante thronum."
 	},
 	{
-		"tags":["omnes-sancti","vesperae","psalmus-i"],
-		"datum":[["/psalmi/psalmus-cix,gloria"]]
+		"tags":["omnes-sancti","vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-ii"],
@@ -22,17 +22,9 @@
 		"datum":"Et omnes Ángeli * stabant in circúitu throni, et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum."
 	},
 	{
-		"tags":["omnes-sancti","vesperae","psalmus-ii"],
-		"datum":[["/psalmi/psalmus-cx,gloria"]]
-	},
-	{
 		"tags":["omnes-sancti","antiphona","antiphona-iii"],
 		"src":"gregobase/1999",
 		"datum":"Redemísti nos * Dómine Deus in sánguine tuo ex omni tribu, et linqua, et pópulo, et natióne, et fecísti nos Deo nostro regnum."
-	},
-	{
-		"tags":["omnes-sancti","vesperae","psalmus-iii"],
-		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iv"],
@@ -40,21 +32,13 @@
 		"datum":"Benedícite Dóminum * omnes elécti ejus: ágite lætítiæ, et confitémini illi."
 	},
 	{
-		"tags":["omnes-sancti","vesperae","psalmus-iv"],
-		"datum":[["/psalmi/psalmus-cxii,gloria"]]
-	},
-	{
 		"tags":["omnes-sancti","antiphona","antiphona-v"],
 		"src":"gregobase/2328",
 		"datum":"Hymnus ómnibus Sanctis ejus: * fíliis Israël, pópulo appropinquánti sibi: glória hæc est ómnibus Sanctis ejus."
 	},
 	{
-		"tags":["omnes-sancti","i-vesperae","psalmus-v"],
-		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
-	},
-	{
 		"tags":["omnes-sancti","capitulum"],
-		"datum":"Ecce ego Joánnes vidi álterum Ángelum ascendéntem ab ortu solis, habéntem signum Dei vivi: et clamávit voce magna quátuor Ángelis, quibus datum est nocére terræ et mari, dicens: Nolíte nocére terræ et mari, neque arbóribus, quadúsque signémus servos Dei nostri in fróntibus eórum."
+		"datum":"Ecce ego Joánnes vidi álterum Ángelum ascendéntem ab ortu solis, habéntem signum Dei vivi: + et clamávit voce magna quátuor Ángelis, quibus datum est nocére terræ et mari, dicens: Nolíte nocére terræ et mari, neque arbóribus, * quadúsque signémus servos Dei nostri in fróntibus eórum."
 	},
 	{
 		"tags":[
@@ -82,8 +66,8 @@
 	},
 	{
 		"tags":["omnes-sancti","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus largiáris."
+		"datum":"Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: + quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, * multiplicátis intercessóribus largiáris.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["omnes-sancti","matutinum","antiphona","antiphona-invitatorium"],
@@ -270,6 +254,7 @@
 	},
 	{
 		"tags":["omnes-sancti","laudes","hymnus"],
+		"src":"gregobase/2520",
 		"datum":[
 			"Salútis ætérnæ dator,/Jesu redémptis súbveni:/Virgo parens cleméntiæ/Dona salútem sérvulis.",
 			"Vos Angelórum míllia,/Patrúmque cœtus, ágmina/Canóra Vatum: vos reis/Precámini indulgéntiam.",
@@ -280,11 +265,16 @@
 		]
 	},
 	{
-		"tags":["omnes-sancti","laudes","versiculus"],
+		"tags":[
+			["omnes-sancti","laudes","versiculus"],
+			["omnes-sancti","nona","versiculus"],
+			["omnes-sancti","ii-vesperae","versiculus"]
+		],
 		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
 	},
 	{
 		"tags":["omnes-sancti","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2233",
 		"datum":"Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confiténtur unánimes, beáta Trínitas, unus Deus."
 	},
 	{
@@ -299,7 +289,7 @@
 	},
 	{
 		"tags":["omnes-sancti","sexta","capitulum"],
-		"datum":"Post hæc vidi turbam magnam, quam dinumeráre nemo póterat ex ómnibus géntibus, et tríbubus, et pópulis, et linguis, stantes ante thronum Dei, in conspéctu Agni, amícti stolis albis, et palmæ in mánibus eórum."
+		"datum":"Post hæc vidi turbam magnam, quam dinumeráre nemo póterat + ex ómnibus géntibus, et tríbubus, et pópulis, et linguis, stantes ante thronum Dei, in conspéctu Agni, amícti stolis albis, * et palmæ in mánibus eórum."
 	},
 	{
 		"tags":["omnes-sancti","sexta","responsorium-breve"],
@@ -313,7 +303,7 @@
 	},
 	{
 		"tags":["omnes-sancti","nona","capitulum"],
-		"datum":"Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, honor, virtus, et fortitúdo Deo nostro, in sǽcula sæculórum. Amen."
+		"datum":"Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, + honor, virtus, et fortitúdo Deo nostro, * in sǽcula sæculórum. Amen."
 	},
 	{
 		"tags":["omnes-sancti","nona","responsorium-breve"],
@@ -322,16 +312,8 @@
 		"versus":"Et apud Dóminum est merces eórum."
 	},
 	{
-		"tags":["omnes-sancti","nona","versiculus"],
-		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
-	},
-	{
 		"tags":["omnes-sancti","ii-vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxv"]]
-	},
-	{
-		"tags":["omnes-sancti","ii-vesperae","versiculus"],
-		"datum":["V. Exsultábunt sancti in glória.","R. Lætabúntur in cubílibus suis."]
 	},
 	{
 		"tags":["omnes-sancti","ii-vesperae","antiphona","antiphona-magnificat"],
