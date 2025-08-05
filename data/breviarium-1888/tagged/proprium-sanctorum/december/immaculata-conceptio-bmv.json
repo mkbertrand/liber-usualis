@@ -1,7 +1,10 @@
 [
 	{
-		"tags":["immaculata-conceptio-bmv","nomen"],
-		"datum":"Immaculatæ Conceptionis BMV"
+		"tags":[
+			["immaculata-conceptio-bmv","nomen"],
+			["immaculata-conceptio-bmv","basis-nominis"]
+		],
+		"datum":"Immaculatæ Conceptionis B.M.V."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-i"],
@@ -42,8 +45,8 @@
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","collecta"],
-		"terminatio":[["terminatio","per-eumdem-dominum"]],
-		"datum":"Deus, qui per Immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculum præparásti: + quǽsumus; ut qui ex morte ejúsdem Fílii tui prævísa, eam ab omni labe præservásti, * nos quoque mundos ejus intercessióne ad te perveníre concédas."
+		"datum":"Deus, qui per Immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculum præparásti: + quǽsumus; ut qui ex morte ejúsdem Fílii tui prævísa, eam ab omni labe præservásti, * nos quoque mundos ejus intercessióne ad te perveníre concédas.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","laudes","capitulum"],

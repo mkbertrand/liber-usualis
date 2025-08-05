@@ -1,12 +1,12 @@
 [
 	{
 		"tags":["ambrosius","nomen"],
-		"datum":"S Ambrosii Episcopi Confessoris et Ecclesia Doctoris"
+		"datum":"S. Ambrosii Episcopi Confessoris et Ecclesia Doctoris"
 	},
 	{
 		"tags":["ambrosius","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui pópulo tuo ætérnæ salútis beátum Ambrósium minístrum tribuísti: præsta, quǽsumus; ut quem Doctórem vitæ habuímus in terris, intercessórem habére mereámur in cœlis."
+		"datum":"Deus, qui pópulo tuo ætérnæ salútis beátum Ambrósium minístrum tribuísti: + præsta, quǽsumus; ut quem Doctórem vitæ habuímus in terris, * intercessórem habére mereámur in cœlis.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["ambrosius","matutinum","nocturna-ii","lectio","lectio-i"],

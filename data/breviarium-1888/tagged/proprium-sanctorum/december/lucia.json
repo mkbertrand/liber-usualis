@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["lucia","nomen"],
+		"datum":"S. Luciæ Virginis et Martyris"
+	},
+	{
 		"tags":["lucia","antiphona","antiphona-i"],
 		"src":"gregobase/2738",
 		"datum":"Oránte sanct Lúcia, * appáruit ei beáta Agatha, et consolabátur ancíllam Christi."
@@ -31,8 +35,8 @@
 	},
 	{
 		"tags":["lucia","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Exaúdi nos Deus salutáris noster: ut sicut de beátæ Lúciæ Vírginis et Mártyris tuæ festivitáte gaudémus; ita piæ devotiónis erudiámur afféctu."
+		"datum":"Exaúdi nos Deus salutáris noster: + ut sicut de beátæ Lúciæ Vírginis et Mártyris tuæ festivitáte gaudémus; * ita piæ devotiónis erudiámur afféctu.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["lucia","matutinum","nocturna-i","lectio","lectio-i"],
