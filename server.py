@@ -66,7 +66,6 @@ def pageserve():
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
 	finally:
-		locales = ['de']
 		if page == '':
 			for locale in locales:
 				if os.path.exists(f'web/locales/{locale}/pages/index.html'):
