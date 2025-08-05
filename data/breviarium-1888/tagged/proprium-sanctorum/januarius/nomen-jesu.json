@@ -1,7 +1,7 @@
 [
 	{
 		"tags":["nomen-jesu","nomen"],
-		"datum":"In Festo Sanctissimi Nominis Jesu"
+		"datum":"In Festo Ss. Nominis Jesu"
 	},
 	{
 		"tags":["nomen-jesu","vesperae","antiphona","antiphona-i"],
@@ -9,7 +9,7 @@
 		"datum":"Omnis * qui invocáverit nomen Dómini, salvus erit."
 	},
 	{
-		"tags":["nomen-jesu","i-vesperae","psalmus"],
+		"tags":["nomen-jesu","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
@@ -33,7 +33,7 @@
 		"datum":"Sacrificábo * hóstiam laudis, et nomen Dómini invocábo."
 	},
 	{
-		"tags":["nomen-jesu","i-vesperae","psalmus","psalmus-v"],
+		"tags":["nomen-jesu","vesperae","psalmus","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
 	},
 	{
@@ -64,8 +64,8 @@
 	},
 	{
 		"tags":["nomen-jesu","collecta"],
-		"terminatio":[["terminatio","per-eumdem-dominum"]],
-		"datum":"Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: + concéde propítius; ut cujus sanctum nomen venerámur in terris, * ejus quoque aspéctu perfruámur in cœlis."
+		"datum":"Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: + concéde propítius; ut cujus sanctum nomen venerámur in terris, * ejus quoque aspéctu perfruámur in cœlis.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
 		"tags":[

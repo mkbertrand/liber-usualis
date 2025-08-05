@@ -305,6 +305,12 @@
 		]
 	},
 	{
+		"include":["nomen-jesu"],
+		"response":[
+			{"include":["hebdomada-septuagesima","dominica","primarium"],"response":"transfer","target":0,"movement":["ad-v-kalendas-februarii"]}
+		]
+	},
+	{
 		"include":["in-tempore-quadragesimae","dominica"],
 		"response":[
 			{"include":["duplex-i-classis"],"response":"transfer","target":1,"movement":1},

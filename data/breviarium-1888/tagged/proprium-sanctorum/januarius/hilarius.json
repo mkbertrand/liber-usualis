@@ -1,12 +1,17 @@
 [
 	{
 		"tags":["hilarius","nomen"],
-		"datum":"Sancti Hilarii Episcopi Confessoris et Ecclesiæ Doctoris"
+		"datum":"S. Hilarii Episcopi Confessoris et Ecclesiæ Doctoris"
+	},
+	{
+		"tags":["hilarius","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1908",
+		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Hilári, divínæ legis amátor, deprecáre pro nobis Fílium Dei."
 	},
 	{
 		"tags":["hilarius","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui pópulo tuo ætérnæ salútis beátum Hilárium minístrum tribuísti: præsta quǽsumus; ut quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cœlis."
+		"datum":"Deus, qui pópulo tuo ætérnæ salútis beátum Hilárium minístrum tribuísti: + præsta quǽsumus; ut quem Doctórem vitæ habúimus in terris, * intercessórem habére mereámur in cœlis.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["hilarius","matutinum","nocturna-i","lectio"],

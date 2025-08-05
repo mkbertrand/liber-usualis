@@ -1,12 +1,12 @@
 [
 	{
 		"tags":["antonius","nomen"],
-		"datum":"Sancti Antonii Abbatis"
+		"datum":"S. Antonii Abbatis"
 	},
 	{
 		"tags":["antonius","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Intercéssio nos, quǽsumus Dómine, beáti Antónii Abbátis comméndet: ut, quod nostris méritis non valémus, ejus patrocínio assequámur."
+		"datum":"Intercéssio nos, quǽsumus Dómine, beáti Antónii Abbátis comméndet: + ut, quod nostris méritis non valémus, * ejus patrocínio assequámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["antonius","matutinum","nocturna-i","lectio"],

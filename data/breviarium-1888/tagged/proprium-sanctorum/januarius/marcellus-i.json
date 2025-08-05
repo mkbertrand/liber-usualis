@@ -1,12 +1,12 @@
 [
 	{
 		"tags":["marcellus-i","nomen"],
-		"datum":"Sancti Marcelli Papæ et Martyris"
+		"datum":"S. Marcelli Papæ et Martyris"
 	},
 	{
 		"tags":["marcellus-i","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Preces pópuli tui, quǽsumus Dómine, cleménter exaúdi: ut beáti Marcélli Mártyris tui atque Pontíficis méritis adjuvémur, cujus passióne lætámur."
+		"datum":"Preces pópuli tui, quǽsumus Dómine, cleménter exaúdi: + ut beáti Marcélli Mártyris tui atque Pontíficis méritis adjuvémur, * cujus passióne lætámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["marcellus-i","matutinum","nocturna-i","lectio"],

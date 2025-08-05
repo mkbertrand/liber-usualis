@@ -1,0 +1,71 @@
+[
+	{
+		"tags":["agnes","nomen"],
+		"datum":"S. Agnetis Virginis et Martyris"
+	},
+	{
+		"tags":["agnes","antiphona","antiphona-i"],
+		"src":"gregobase/2210",
+		"datum":"Ingréssa Agnes * turpitúdinis locum, Ángelum Dómini præparátum invénit."
+	},
+	{
+		"tags":["agnes","vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["agnes","antiphona","antiphona-ii"],
+		"src":"gregobase/2906",
+		"datum":"Mecum enim hábeo * custódem córporis mei, Ángelum Dómini."
+	},
+	{
+		"tags":["agnes","antiphona","antiphona-iii"],
+		"src":"gregobase/1889",
+		"datum":"Ánnulo suo * subarrhávit me Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna."
+	},
+	{
+		"tags":["agnes","antiphona","antiphona-iv"],
+		"src":"gregobase/2039",
+		"datum":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo."
+	},
+	{
+		"tags":["agnes","antiphona","antiphona-v"],
+		"src":"gregobase/1832",
+		"datum":"Congaudéte mecum, * et congratulámini, quia cum his ómnibus lúcidas sedes accépi."
+	},
+	{
+		"tags":["agnes","capitulum"],
+		"datum":[["vidua","martyr","capitulum"]]
+	},
+	{
+		"tags":["agnes","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2814",
+		"datum":"Beáta Agnes * in médio flammárum expánsis mánibus orábat: Te déprecor omnípotens, adoránde, colénde, Pater metuénde, quia per sanctum Fílium tuum evási minas sacrílegi tyránni, et carnis spurcítias immaculáto calle transívi: et ecce vénio ad te, quem amávi, quem quæsívi, quem semper optávi."
+	},
+	{
+		"tags":["agnes","collecta"],
+		"datum":"Omnípotens sempitérne Deus, qui infírma mundi éligis, ut fórtia quæque confúndas: + concéde propítius; ut, qui beátæ Agnétis Vírginis et Mártyris tuæ solémnia cólimus, * ejus apud te patrocínia sentiámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["agnes","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12687",
+		"datum":"Ecce quod concupívi, * jam vídeo: quod sperávi, jam téneo: ipsi sum juncta in cœlis, quem in terris pósita, tota devotióne diléxi."
+	},
+	{
+		"tags":["agnes","sexta","capitulum"],
+		"datum":[["vidua","martyr","sexta","capitulum"]]
+	},
+	{
+		"tags":["agnes","nona","capitulum"],
+		"datum":[["vidua","martyr","nona","capitulum"]]
+	},
+	{
+		"tags":["agnes","ii-vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxlvii,gloria"]]
+	},
+	{
+		"tags":["agnes","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2159",
+		"datum":"Stans beáta Agnes * in médio flammæ, expánsis mánibus orábat ad Dóminum: Omnípotens, adoránde, colénde, treménde, benedíco te, et glorífico nomen tuum in ætérnum."
+	}
+]

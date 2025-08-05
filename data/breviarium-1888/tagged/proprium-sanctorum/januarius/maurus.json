@@ -1,8 +1,12 @@
 [
 	{
+		"tags":["maurus","nomen"],
+		"datum":"S. Mauri Abbatis"
+	},
+	{
 		"tags":["maurus","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Intercéssio nos, quǽsumus Dómine, beáti Mauri Abbátis comméndet: ut quod nostris méritis non valémus, ejus patrocínio assequámur."
+		"datum":"Intercéssio nos, quǽsumus Dómine, beáti Mauri Abbátis comméndet: * ut quod nostris méritis non valémus, ejus patrocínio assequámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["maurus","matutinum","lectio"],
