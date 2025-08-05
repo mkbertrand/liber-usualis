@@ -1,6 +1,11 @@
 [
 	{
-		"tags":["vigilia-andreae","basis-nominis"],
-		"datum":"S Andreæ Apostoli"
+		"tags":["vigilia-andreae","nomen"],
+		"datum":"In Vigilia S. Andreæ Apostoli"
+	},
+	{
+		"tags":["vigilia-andreae","collecta"],
+		"datum":"Quǽsumus omnípotens Deus: + ut beátus Andréas Apóstolus, cujus prævenímus festivitátem, tuum pro nobis implóret auxílium; * ut a nostris reátibus absolúti, a cunctis étiam perículis eruámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

@@ -1,0 +1,49 @@
+[
+	{
+		"tags":["martinus","nomen"],
+		"datum":"S. Martini Episcopi et Confessoris"
+	},
+	{
+		"tags":["martinus","antiphona","antiphona-i"],
+		"src":"gregobase/2785",
+		"datum":"Dixérunt discípuli * ad beátum Martínum: Cur nos pater déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces."
+	},
+	{
+		"tags":["martinus","antiphona","antiphona-ii"],
+		"src":"gregobase/2585",
+		"datum":"Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua."
+	},
+	{
+		"tags":["martinus","antiphona","antiphona-iii"],
+		"src":"gregobase/2968",
+		"datum":"O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!"
+	},
+	{
+		"tags":["martinus","antiphona","antiphona-iv"],
+		"src":"gregobase/2155",
+		"datum":"Óculis ac mánibus * in cœlum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja."
+	},
+	{
+		"tags":["martinus","antiphona","antiphona-v"],
+		"src":"gregobase/2192",
+		"datum":"Martínus Ábrahæ sinu * lætus excípitur: Martínus, hic pauper et módicus, cœlum dives ingréditur, hymnis cœléstibus honorátur."
+	},
+	{
+		"tags":[
+			["martinus","i-vesperae","antiphona","antiphona-magnificat"],
+			["martinus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/2887",
+		"datum":"O beátum virum, * cujus ánima paradísum póssidet: unde exsúltant Ángeli, lætántur Archángeli, chorus Sanctórum proclámat, turba Vírginum invítat, Mane nobíscum in ætérnum."
+	},
+	{
+		"tags":["martinus","collecta"],
+		"datum":"Deus, qui cónspicis, quia ex nulla nostra virtúte subsístimus: + concéde propítius; ut intercessióne beáti Martíni Confessóris tui atque Pontíficis * contra ómnia advérsa muniámur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["martinus","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2378",
+		"datum":"O beátum Pontíficem, * qui totis viscéribus diligébat Christum Regem, et non formidábat impérii principátum: o sanctíssima ánima, quam etsi gládius persecutóribus non ábstulit, palmam tamen martýrii non amísit!"
+	}
+]

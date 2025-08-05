@@ -1,0 +1,51 @@
+[
+	{
+		"tags":["clemens-i","nomen"],
+		"datum":"S. Clementis Papæ et Martyris"
+	},
+	{
+		"tags":["clemens-i","antiphona","antiphona-i"],
+		"src":"gregobase/2278",
+		"datum":"Oránte sancto Cleménte, * appáruit ei Agnus Dei."
+	},
+	{
+		"tags":["clemens-i","antiphona","antiphona-ii"],
+		"src":"gregobase/2661",
+		"datum":"Non meis méritis * ad vos me misit Dóminus, vestris corónis partícipem fíeri."
+	},
+	{
+		"tags":["clemens-i","antiphona","antiphona-iii"],
+		"src":"gregobase/2643",
+		"datum":"Vidi supra montem * Agnum stantem, de sub cujus pede fons vivus emánat."
+	},
+	{
+		"tags":["clemens-i","antiphona","antiphona-iv"],
+		"src":"gregobase/2870",
+		"datum":"De sub cujus pede * fons vivus emánat, flúminis ímpetus lætíficat civitátem Dei."
+	},
+	{
+		"tags":["clemens-i","antiphona","antiphona-v"],
+		"src":"gregobase/2020",
+		"datum":"Omnes gentes * per gyrum credidérunt Christo Dómino."
+	},
+	{
+		"tags":["clemens-i","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2551",
+		"datum":"Orémus omnes * ad Dóminum Jesum Christum, ut Confessóribus suis fontis venam apériat."
+	},
+	{
+		"tags":["clemens-i","collecta"],
+		"datum":"Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * virtútem quoque passiónis imitémur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["clemens-i","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12754",
+		"datum":"Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum: et Clemens cum lácrimis dicébat: Súscipe Pater spíritum meum."
+	},
+	{
+		"tags":["clemens-i","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2411",
+		"datum":"Dedísti Dómine habitáculum * Mártyri tuo Cleménti in mari, in modum templi marmórei, angélicis mánibus præparátum, iter præbens pópulo terræ, ut enárrent mirabília tua."
+	}
+]

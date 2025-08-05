@@ -1,25 +1,51 @@
 [
 	{
-		"tags":["caecilia","virgo","martyr","antiphona","antiphona-i"],
+		"tags":["caecilia","nomen"],
+		"datum":"S. Cæciliæ Virginis et Martyris"
+	},
+	{
+		"tags":["caecilia","antiphona","antiphona-i"],
 		"src":"gregobase/2184",
 		"datum":"Cantántibus órganis * Cæcília Dómino decantábat, dicens: Fiat cor meum immaculátum, ut non confúndar."
 	},
 	{
-		"tags":["caecilia","virgo","martyr","antiphona","antiphona-ii"],
+		"tags":["caecilia","antiphona","antiphona-ii"],
 		"src":"gregobase/2554",
 		"datum":"Valeriánus * in cubículo Cæcíliam cum Ángelo orántem invénit"
 	},
 	{
-		"tags":["caecilia","virgo","martyr","antiphona","antiphona-iii"],
+		"tags":["caecilia","antiphona","antiphona-iii"],
 		"src":"gregobase/2402",
 		"datum":"Cæcília fámula tua, * Domine, quasi apis tibi argumentósa desérvit."
 	},
 	{
-		"tags":["caecilia","virgo","martyr","collecta"],
-		"datum":"Deus, qui nos ánnua beátæ Cæcíliæ Vírginis et Mártyris tuæ solemnitáte lætíficas: da, ut quam venerámur offício, étiam piæ conversatiónis sequámur exémplo."
+		"tags":["caecilia","antiphona","antiphona-iv"],
+		"src":"gregobase/2039",
+		"datum":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo."
 	},
 	{
-		"tags":["caecilia","virgo","martyr","collecta","terminatio"],
-		"forwards-to":["terminatio","per-dominum"]
+		"tags":["caecilia","antiphona","antiphona-v"],
+		"src":"gregobase/2016",
+		"datum":"Triduánas a Dómino * popósci indúcias, ut domum meam ecclésiam consecrárem."
+	},
+	{
+		"tags":["caecilia","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2853",
+		"datum":"Est secrétum * Valeriáne, quod tibi volo dícere: Ángelum Dei hábeo amatórem, qui nímio zelo custódit corpus meum."
+	},
+	{
+		"tags":["caecilia","collecta"],
+		"datum":"Deus, qui nos ánnua beátæ Cæcíliæ Vírginis et Mártyris tuæ solemnitáte lætíficas: + da, ut quam venerámur offício, * étiam piæ conversatiónis sequámur exémplo.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["caecilia","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12405",
+		"datum":"Dum auróra * finem daret, Cæcília exclamávit, dicens: Eja mílites Christi, abjícite ópera tenebrárum, et induímini arma lucis."
+	},
+	{
+		"tags":["caecilia","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2380",
+		"datum":"Virgo gloriósa * semper Evangélium Christi gerébat in pectóre suo, et non diébus neque nóctibus a collóquiis divínis et oratióne cessábat."
 	}
 ]

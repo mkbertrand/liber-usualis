@@ -1,7 +1,11 @@
 [
 	{
-		"tags":["elisabeth","vidua","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Tuórum corda fidélium Deus miserátor illústra: et beátæ Elísabeth précibus gloriósis fac nos próspera mundi despícere; et cœlésti semper consolatióne gaudére."
+		"tags":["elisabeth","nomen"],
+		"datum":"S. Elisabeth Viduæ"
+	},
+	{
+		"tags":["elisabeth","collecta"],
+		"datum":"Tuórum corda fidélium Deus miserátor illústra: + et beátæ Elísabeth précibus gloriósis fac nos próspera mundi despícere; * et cœlésti semper consolatióne gaudére.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]
