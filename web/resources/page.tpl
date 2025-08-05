@@ -32,7 +32,11 @@
 				</div>
 			</div>
 			% include(f'web/locales/{locale}/resources/sidemenu.html')
-			% include(f'web/locales/{locale}/pages/{page}.html')
+			% if page == 'pray':
+				% include(f'web/resources/{page}.tpl', ritegenversion='13', text=text)
+			% else:
+				% include(f'web/locales/{locale}/pages/{page}.html')
+
 		</div>
 	</body>
 </html>

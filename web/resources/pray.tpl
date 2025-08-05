@@ -1,6 +1,6 @@
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
-<script type="text/javascript" src="/resources/js/ritegen.js?v=13"></script>
+<script type="text/javascript" src="/resources/js/ritegen.js?v={{ritegenversion}}"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="/resources/js/exsurge.js"></script>
 <script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
@@ -183,32 +183,32 @@
 ">
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-			<h3 id="options-panel-title">Options</h3>
-			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">Translation</button>
+			<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
+			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
 			<div class="recitation-select-container">
-				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">Plainchant</button>
-				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">Recto Tono</button>
-				<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">Private</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
+				<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-private']}}</button>
 			</div>
 			<template x-if="initialized">
 				<div id="options-panel-require-initialized-container">
 					<div id="coincidences-list-container">
-						<h3 class="options-panel-section-head">Coincidences</h3>
-						<h4 class="coincidences-label">Primary</h4>
+						<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
+						<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
 						<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(day.primary[0])"></div>
-						<h4 class="coincidences-label">Commemorations</h4>
+						<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
 						<template x-for="commemoration in day.commemorations">
 							<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 						</template>
-						<h4 class="coincidences-label">Omissions</h4>
+						<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
 						<template x-for="omission in day.omissions">
 							<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
 						</template>
-						<h4 class="coincidences-label">Votives</h3>
+						<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
 					</div>
 					<div id="ambit-select-wrapper">
 					<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
-						<h3 class="options-panel-section-head">Selection</h3>
+						<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 						<template x-for="entry in ambitEntries">
 							<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
 						</template>
@@ -231,7 +231,7 @@
 					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
 					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
 					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
-					<button id="options-button" @click="optionspanel = !optionspanel">Options</button>
+					<button id="options-button" @click="optionspanel = !optionspanel">{{text['options-panel-button']}}</button>
 				</div>
 				<div id="rite-selector-container">
 					<template x-for="item in list">

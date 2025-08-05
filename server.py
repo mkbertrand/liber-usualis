@@ -16,6 +16,7 @@ import copy
 import argparse
 import re
 import os
+import json
 
 import breviarium
 import datamanage
@@ -65,6 +66,7 @@ def pageserve():
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
 	finally:
+		locales = ['de']
 		if page == '':
 			for locale in locales:
 				if os.path.exists(f'web/locales/{locale}/pages/index.html'):
@@ -74,6 +76,11 @@ def pageserve():
 			for locale in locales:
 				if os.path.exists(f'web/locales/{locale}/pages/{page}.html'):
 					return template('web/resources/page.tpl', page=page, title=title, locale=locale)
+				elif os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
+					with open(f'web/locales/{locale}/pages/{page}.json') as f:
+						text = json.load(f)
+						return template('web/resources/page.tpl', page=page, title=title, locale=locale, text=text)
+
 			return template('web/resources/page.tpl', page=page, title=title, locale='en')
 
 def flattensetlist(sets):
