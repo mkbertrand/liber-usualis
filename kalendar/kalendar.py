@@ -194,6 +194,12 @@ def kalendar(year: int) -> Kalendar:
 			raise ValueError(f"Invalid date: {text}")
 		return date(year0, int(m.group(1)), int(m.group(2)))
 
+	easter = geteaster(year)
+	christmas = date(year, 12, 25)
+	adventstart = nextsunday(christmas, weeks=-4)
+	bases = {'dominica-i-adventus': nextsunday(christmas, weeks=-4),
+		'pascha': geteaster(year)}
+
 	i = date(year, 1, 1)
 	while not i == date(year + 1, 1, 1):
 		kal.add_entry(i, {'tempus', menses[i.month - 1], latindate(i)})
@@ -209,6 +215,7 @@ def kalendar(year: int) -> Kalendar:
 			nextkalends = nearsunday(date(year, i + 1, 1))
 		j = 0
 		while kalends + timedelta(weeks=j) != nextkalends:
+			bases[f'dominica-{numerals[j]}-{mensum[(i - 1) % 12]}'] = kalends + timedelta(weeks=j)
 			for k in range(0,7):
 				if not (kalends + timedelta(weeks=j, days=k)).year == year:
 					continue
@@ -222,12 +229,6 @@ def kalendar(year: int) -> Kalendar:
 				kal[nextkalends + timedelta(days=j)][0].add(feriae[j])
 				kal[nextkalends + timedelta(days=j)][0].add('hebdomada-i-januarii')
 
-	easter = geteaster(year)
-	christmas = date(year, 12, 25)
-	adventstart = nextsunday(christmas, weeks=-4)
-	bases = {'dominica-i-adventus': nextsunday(christmas, weeks=-4),
-		'pascha': geteaster(year),
-		'dominica-i-decembris': nearsunday(date(year, 12, 1))}
 	cycles = [adventcycle, paschalcycle, autumnalcycle]
 
 	xxiiipentecost = easter + timedelta(weeks=30)
@@ -365,7 +366,7 @@ def kalendar(year: int) -> Kalendar:
 
 	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 	roletags = set(roletagsordered)
-	noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv'}
+	noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','legitur-mense'}
 
 	for entrydate, entries in kal.items():
 		for entry in entries:
@@ -432,6 +433,15 @@ def kalendar(year: int) -> Kalendar:
 							move.add('translatum')
 							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
 							kal[transferday].append(move)
+							queue.append(job)
+							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
+							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
+							queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
+						elif type(job.rule['response']) is frozenset and 'movement' in job.rule:
+							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
+							if job.rule['response'] in kal[transferday]:
+								continue
+							kal[transferday].append(job.rule['response'])
 							queue.append(job)
 							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
 							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])

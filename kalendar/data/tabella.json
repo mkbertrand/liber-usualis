@@ -16,6 +16,55 @@
 		]
 	},
 	{
+		"include":["liber-job"],
+		"recheck":false,
+		"response":[
+			{"include":["liber-ecclesiastici"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["liber-i-machabaeorum"],
+		"recheck":false,
+		"response":[
+			{"include":["liber-esther","incipit-libri"],"response":"transfer","target":1,"movement":-3},
+			{"include":["liber-esther","dies-ii-libri"],"response":"transfer","target":1,"movement":-3},
+			{"include":["liber-esther","dies-iii-libri"],"response":"transfer","target":1,"movement":-3},
+			{"include":["liber-esther"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["liber-ezechielis"],
+		"recheck":false,
+		"response":[
+			{"include":["liber-ii-machabaeorum","dies-viii-libri"],"response":"transfer","target":1,"movement":-3},
+			{"include":["liber-ii-machabaeorum","dies-ix-libri"],"response":"transfer","target":1,"movement":-3},
+			{"include":["liber-ii-machabaeorum","dies-x-libri"],"response":"transfer","target":1,"movement":-3},
+			{"include":["liber-ii-machabaeorum"],"response":"dele","target":1},
+			{"include":["liber-danielis"],"response":"dele","target":0}
+		]
+	},
+	{
+		"include":["liber-ii-machabaeorum","dies-viii-libri"],
+		"recheck":false,
+		"response":[
+			{"include":["liber-ii-machabaeorum","dies-v-libri"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["liber-ii-machabaeorum","dies-ix-libri"],
+		"recheck":false,
+		"response":[
+			{"include":["liber-ii-machabaeorum","dies-vi-libri"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["liber-ii-machabaeorum","dies-x-libri"],
+		"recheck":false,
+		"response":[
+			{"include":["liber-ii-machabaeorum","dies-vii-libri"],"response":"dele","target":1}
+		]
+	},
+	{
 		"include":["antiphona-major"],
 		"recheck":false,
 		"response":[
@@ -853,6 +902,32 @@
 		"include":["commemoratio-pauli"],
 		"response":[
 			{"include":["petrus-paulus","infra-octavam"],"target":1,"response":"dele"}
+		]
+	},
+	{
+		"include":["feria","primarium"],
+		"response":[
+			{"include":["liber-esther","translatum"],"response":["dele-judith"],"movement":["hebdomada-iv-septembris","feria-v"],"target":0},
+			{"include":["liber-esther","translatum"],"response":["dele-judith"],"movement":["hebdomada-iv-septembris","feria-vi"],"target":0},
+			{"include":["liber-esther","translatum"],"response":["dele-judith"],"movement":["hebdomada-iv-septembris","sabbatum"],"target":0}
+		]
+	},
+	{
+		"include":["liber-judith"],
+		"response":[
+			{"include":["dele-judith"],"response":"dele","target":0},
+			{"include":["liber-esther"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["dele-judith"],
+		"response":"dele"
+	},
+	{
+		"include":["legitur-mense"],
+		"response":[
+			{"include":["feria"],"response":"combina","target":0},
+			{"include":["dominica","semiduplex"],"response":"combina","target":0}
 		]
 	}
 ]
