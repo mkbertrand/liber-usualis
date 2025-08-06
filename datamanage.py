@@ -79,7 +79,7 @@ def getbreviariumfile(query):
 					newentry['src'] = entrycopy['src']
 				ret.append(newentry)
 		if 'datum' in entry:
-			ret.append(entry)
+			ret.append({k: v for k, v in entry.items() if k in functiontags})
 	return ret
 
 @functools.lru_cache(maxsize=1024)
