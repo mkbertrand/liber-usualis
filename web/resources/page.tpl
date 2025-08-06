@@ -2,6 +2,8 @@
 
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
+% import json
+
 <html lang="{{locale.split('-')[0]}}">
 	<head>
 		<title>{{title}}</title>
@@ -33,7 +35,7 @@
 			</div>
 			% include(f'web/locales/{locale}/resources/sidemenu.html')
 			% if page == 'pray':
-				% include(f'web/resources/{page}.tpl', ritegenversion='13', text=text)
+				% include(f'web/resources/{page}.tpl', ritegenversion='13', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
 			% else:
 				% include(f'web/locales/{locale}/pages/{page}.html')
 

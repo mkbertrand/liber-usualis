@@ -73,12 +73,8 @@ def pageserve():
 			return static_file('index.html', root='web/locales/en/pages/')
 		else:
 			for locale in locales:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.html'):
+				if os.path.exists(f'web/locales/{locale}/pages/{page}.html') or os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
 					return template('web/resources/page.tpl', page=page, title=title, locale=locale)
-				elif os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					with open(f'web/locales/{locale}/pages/{page}.json') as f:
-						text = json.load(f)
-						return template('web/resources/page.tpl', page=page, title=title, locale=locale, text=text)
 
 			return template('web/resources/page.tpl', page=page, title=title, locale='en')
 
