@@ -112,11 +112,11 @@ def anysearch(query, pile):
 		if type(i['tags']) is list:
 			for j in i['tags']:
 				if j.issubset(query):
-					ret = copy.deepcopy(i)
-					ret['tags'] = copy.deepcopy(j)
+					ret = copy.copy(i)
+					ret['tags'] = j
 					yield ret
 		elif i['tags'].issubset(query):
-			yield copy.deepcopy(i)
+			yield copy.copy(i)
 
 # Numerical rank of query tagset according to a table of tagsets. Outputs a binary number with 1 in positions where the tagset at that table position was a subset of the query.
 def discriminate(root, table: str, tags: set):
@@ -222,7 +222,7 @@ def process(root, item, selected, alternates, pile):
 				# Basically if the from is explicitly calling for some day's propers, remove the other day context to facilitate this
 				if 'occurrens' in item['from'] and len(item['from'] & expandcat(root, 'temporale')) != 0 and item['from'] & expandcat(root, 'temporale') <= alternates[i]:
 					item['from'] -= {'occurrens'}
-					alternates = copy.deepcopy(alternates)
+					alternates = copy.copy(alternates)
 					alternates.append(selected - expandcat(root, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(root, 'positionales'))
 					pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
@@ -231,7 +231,7 @@ def process(root, item, selected, alternates, pile):
 
 				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
 				elif item['from'] <= alternates[i]:
-					alternates = copy.deepcopy(alternates)
+					alternates = copy.copy(alternates)
 					alternates.append(selected)
 					if contradicts(root, 'positionales', item['from'] | alternates[i] | selected):
 						selected = alternates.pop(i) - expandcat(root, 'objecta')
