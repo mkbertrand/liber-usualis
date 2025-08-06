@@ -52,6 +52,7 @@
 		lasttitle = '';
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
+			newrite = '';
 			for (var i = 0; i < this.hour.content.length; i++) {
 				select = this.hour.content[i][1] == 'diei' ? '' : this.hour.content[i][1];
 				noending = false;
@@ -63,17 +64,16 @@
 				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
 				if (i == 0) {
 					title = riteTitle(json, 'large')
-					this.rite = title + render(json, this.chant);
-					lasttitle = json.usednames[0];
 				} else {
 					title = '';
 					if (json.usednames[0] != lasttitle) {
 						title = riteTitle(json, 'small');
 					}
-					this.rite += title + render(json, this.chant);
-					lasttitle = json.usednames[0];
 				}
+				newrite += title + render(json, this.chant);
+				lasttitle = json.usednames[0];
 			}
+			this.rite = newrite;
 			this.initialized = true;
 			this.updateRiteAsyncLock = false;
 		} else {
