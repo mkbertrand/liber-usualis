@@ -1,11 +1,15 @@
 [
 	{
 		"tags":["agatha","nomen"],
-		"datum":"Sanctæ Agathæ Virginis et Martyris"
+		"datum":"S. Agathæ Virginis et Martyris"
 	},
 	{
-		"tags":["agatha","vesperae","capitulum"],
-		"datum":"Confitébor tibi Dómine Rex, et collaudábo te Deum Salvatórem meum. + Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, * et liberásti corpus meum a perditióne."
+		"tags":[
+			["agatha","capitulum"],
+			["agatha","sexta","capitulum"],
+			["agatha","nona","capitulum"]
+		],
+		"datum":[["vidua","martyr","capitulum"]]
 	},
 	{
 		"tags":["agatha","vesperae","antiphona","antiphona-magnificat"],
@@ -41,5 +45,10 @@
 		"tags":["agatha","antiphona","antiphona-v"],
 		"src":"gregobase/2530",
 		"datum":"Qui me dignátus est * ab omni plaga curáre, et mamíllam meam meo péctori restitúere, ipsum ínvoco Deum vivum."
+	},
+	{
+		"tags":["agatha","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12170",
+		"datum":"Paganórum * multitúdo fúgiens ad sepúlchrum vírginis, tulérunt velum ejus contra ignem: ut comprobáret Dóminus, quod a perículis incéndii méritis beátæ Ágathæ Mártyris suæ eos liberáret."
 	}
 ]

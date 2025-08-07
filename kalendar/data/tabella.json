@@ -245,7 +245,7 @@
 		]
 	},
 	{
-		"include":["purificatio","duplex-ii-classis"],
+		"include":["purificatio-bmv","duplex-ii-classis"],
 		"recheck":false,
 		"response":[
 			{"include":["dominica-ii-classis"],"response":"transfer","target":0,"movement":1}

@@ -4,18 +4,69 @@
 		"datum":"In Purificatione B.M.V."
 	},
 	{
-		"tags":["purificatio-bmv","i-vesperae","antiphona","antiphona-i"],
+		"tags":["purificatio-bmv","i-vesperae","antiphona"],
+		"datum":[["circumcisio","antiphona"]],
+		"in-tempore-septuagesimae":[["circumcisio","antiphona","in-tempore-septuagesimae"]]
 	},
 	{
-		"tags":["purificatio-bmv","i-vesperae","antiphona","antiphona-ii"],
+		"tags":["purificatio-bmv","capitulum"],
+		"datum":"Ecce ego mitto Ángelum meum, et præparábit viam ante fáciem meam. + Et statim véniet ad templum sanctum suum Dominátor, quem vos quǽritis, * et Ángelus testaménti, quem vos vultis."
 	},
 	{
-		"tags":["purificatio-bmv","i-vesperae","antiphona","antiphona-iii"],
+		"tags":["purificatio-bmv","vesperae","versiculus"],
+		"datum":["V. Respónsum accépit Símeon a Spíritu sancto.","R. Non visúrum se mortem, nisi vidéret Christum Dómini."]
 	},
 	{
-		"tags":["purificatio-bmv","i-vesperae","antiphona","antiphona-iv"],
+		"tags":[
+			["purificatio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
+			["purificatio-bmv","i-vesperae","antiphona","antiphona-magnificat","in-tempore-septuagesimae"]
+		],
+		"src":"gregobase/1979",
+		"datum":"Senex * púerum portávat, puer autem senem regébat: quem virgo péperit, et post partum virgo permánsit: ipsum quem génuit, adorávit."
 	},
 	{
-		"tags":["purificatio-bmv","i-vesperae","antiphona","antiphona-v"],
+		"tags":["purificatio-bmv","collecta"],
+		"datum":"Omnípotens sempitérne Deus, majestátem tuam súpplices exorámus: + ut, sicut unigénitus Fílius tuus hodiérna die cum nostræ carnis substántia in templo est præsentátus; * ita nos fácias purificátis tibi méntibus præsentári.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
+	{
+		"tags":["purificatio-bmv","antiphona","antiphona-i"],
+		"src":"gregobase/2652",
+		"datum":"Símeon justus * et timorátus exspectábat redemptiónem Ísraël, et Spíritus sanctus erat in eo."
+	},
+	{
+		"tags":["purificatio-bmv","antiphona","antiphona-ii"],
+		"src":"gregobase/1853",
+		"datum":"Respónsum accépit Símeon * a Spíritu sancto, non visúrum se mortem, nisi vidéret Dóminum."
+	},
+	{
+		"tags":["purificatio-bmv","antiphona","antiphona-iii"],
+		"src":"gregobase/1944",
+		"datum":"Accípiens Símeon * púerum in mánibus, grátias agens benedíxit Dóminum."
+	},
+	{
+		"tags":["purificatio-bmv","antiphona","antiphona-iv"],
+		"src":"gregobase/1846",
+		"datum":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Ísraël."
+	},
+	{
+		"tags":["purificatio-bmv","antiphona","antiphona-v"],
+		"src":"gregobase/2505",
+		"datum":"Obtulérunt * pro eo Dómino par túrturum aut duos pullos columbárum."
+	},
+	{
+		"tags":["purificatio-bmv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/13145",
+		"datum":"Cum indúcerent * púerum Jesum paréntes ejus, accépit eum Símeon in ulnas suas, et benedíxit Deum, dicens: Nunc dimíttis servum tuum in pace."
+	},
+	{
+		"tags":["purificatio-bmv","capitulum"],
+		"sexta":"Ecce véniet, dicit Dóminus exercítuum: + et quis póterit cogitáre diem advéntus ejus, et quis stabit ad vidéndum eum? Ipse enim quasi ignis conflans, * et quasi herba fullónum.",
+		"nona":"Et placébit Dómino sacrifícium Juda, et Jerúsalem sicut dies sǽculi, + et sicut anni antíqui, * dicit Dóminus omnípotens."
+	},
+	{
+		"tags":["purificatio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2750",
+		"datum":"Hódie * beáta Virgo María púerum Jesum præsentávit in templo, et Símeon replétus Spíritu sancto accépit eum in ulnas suas, et benedíxit Deum in ætérnum."
+	}
 ]
