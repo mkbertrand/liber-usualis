@@ -1,0 +1,35 @@
+[
+	{
+		"tags":["cathedra-petri-antiochiae","nomen"],
+		"datum":"In Cathedra S. Petri Antiochiæ"
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","hymnus"],
+		"datum":[["cathedra-petri","hymnus"]]
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","i-vesperae","versiculus"],
+		"datum":[["cathedra-petri","i-vesperae","versiculus"]]
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["cathedra-petri","i-vesperae","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","collecta"],
+		"datum":[["cathedra-petri","collecta"]],
+		"terminatio":[["cathedra-petri","collecta","terminatio"]]
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","laudes","versiculus"],
+		"datum":[["cathedra-petri","laudes","versiculus"]]
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["cathedra-petri","laudes","antiphona","antiphona-benedictus"]]
+	},
+	{
+		"tags":["cathedra-petri-antiochiae","ii-vesperae","versiculus"],
+		"datum":[["cathedra-petri","ii-vesperae","versiculus"]]
+	}
+]
