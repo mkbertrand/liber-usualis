@@ -7,6 +7,10 @@
 		]
 	},
 	{
+		"include":["vigilia","commemoratio"],
+		"remove":"omissum"
+	},
+	{
 		"include":["vigilia-nativitatis","primarium"],
 		"response":[
 			{"include":["hebdomada-iv-adventus"],"response":"duplicate","remove":"commemoratio","adde":["hora","matutinum"],"target":1},

@@ -651,8 +651,7 @@
 		"include":["feria-major"],
 		"response":[
 			{"include":["bmv-sabbatum"],"response":"dele","target":1},
-			{"include":["simplex","primarium"],"response":"commemoratio","target":1},
-			{"include":["feria"],"response":"combina","target":0}
+			{"include":["simplex","primarium"],"response":"commemoratio","target":1}
 		]
 	},
 	{
