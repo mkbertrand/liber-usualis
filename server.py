@@ -6,7 +6,6 @@ import bottle
 from bottle import get, route, request, static_file, error, template
 import requests
 from datetime import datetime, date
-from requestlogger import WSGILogger, ApacheFormatter
 import waitress
 import logging
 
@@ -233,6 +232,7 @@ if args.output:
 	from bottle import run
 	run(host='localhost', port=8080)
 else:
+	from requestlogger import WSGILogger, ApacheFormatter
 	waitress.serve(WSGILogger(
 		bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
 		ApacheFormatter(), propagate=False
