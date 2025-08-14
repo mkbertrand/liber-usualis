@@ -9,7 +9,7 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","matutinum","hymnus"],
-		"forwards-to":["in-tempore-adventus","temporale","matutinum","hymnus"]
+		"datum":[["in-tempore-adventus","temporale","matutinum","hymnus"]]
 	},
 	{
 		"tags":["vigilia-nativitatis","matutinum","versiculus"],

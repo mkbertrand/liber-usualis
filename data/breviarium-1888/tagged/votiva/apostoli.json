@@ -14,11 +14,8 @@
 	},
 	{
 		"tags":["apostoli","collecta"],
-		"datum":"Deus, cujus déxtera beátum Petrum ambulántem in flúctibus, ne mergerétur, eréxit, et coapóstolum ejus Paulum, tértio naufragántem, de profúndo pélagi liberávit: + exaúdi nos propítius, et concéde; * ut ambórum méritis æternitátis glóriam consequámur:"
-	},
-	{
-		"tags":["apostoli","collecta","terminatio"],
-		"forwards-to":["terminatio","qui-vivis"]
+		"datum":"Deus, cujus déxtera beátum Petrum ambulántem in flúctibus, ne mergerétur, eréxit, et coapóstolum ejus Paulum, tértio naufragántem, de profúndo pélagi liberávit: + exaúdi nos propítius, et concéde; * ut ambórum méritis æternitátis glóriam consequámur:",
+		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
 		"tags":["apostoli","laudes","versiculus"],
