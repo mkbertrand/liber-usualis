@@ -8,7 +8,7 @@ class RiteItem {
 	}
 }
 fullambit = [
-	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('psalmi-graduales', 'psalmi-graduales', false), new RiteItem('matutinum', 'officium-parvum-bmv', false), new RiteItem('laudes', 'officium-parvum-bmv', false), new RiteItem('matutinum', 'diei', true), new RiteItem('laudes', 'diei', true), new RiteItem('matutinum', 'officium-defunctorum', false), new RiteItem('laudes', 'officium-defunctorum', false), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'matutinum'},
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('psalmi-graduales', 'psalmi-graduales', false), new RiteItem('matutinum', 'officium-parvum-bmv', false), new RiteItem('laudes', 'officium-parvum-bmv', false), new RiteItem('matutinum', 'diei', true), new RiteItem('laudes', 'diei', true), new RiteItem('matutinum', 'officium-defunctorum', false), new RiteItem('laudes', 'officium-defunctorum', false), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', false), new RiteItem('litaniae-sanctorum', 'litaniae-sanctorum', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'matutinum'},
 	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('prima', 'diei', true), new RiteItem('prima', 'officium-parvum-bmv', false), new RiteItem('officium-capituli', 'diei', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'prima'},
 	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('tertia', 'diei', true), new RiteItem('tertia', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'tertia'},
 	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('sexta', 'diei', true), new RiteItem('sexta', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'sexta'},
@@ -80,6 +80,9 @@ function ritelist(daytags, ambit) {
 	if (daytags.some(i => i.includes('psalmi-poenitentiales'))) {
 		included.push('psalmi-poenitentiales');
 	}
+	if (daytags.some(i => i.includes('litaniae-sanctorum'))) {
+		included.push('litaniae-sanctorum');
+	}
 
 	ret = []
 
@@ -91,14 +94,14 @@ function ritelist(daytags, ambit) {
 				(ambit[i].content[j].always || included.includes(ambit[i].content[j].where))
 			&& !(included.includes('officium-defunctorum') && (ambit[i].id == 'vesperae' || ambit[i].id == 'matutinum') && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(included.includes('psalmi-poenitentiales') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
-			&& !(included.includes('litaniae') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(included.includes('litaniae-sanctorum') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
 			) {
 				lit.push([ambit[i].content[j].what, ambit[i].content[j].where]);
 			}
 		}
 		ret.push({'name': ambit[i].name, 'content': lit, 'id': ambit[i].id});
 	}
-
+	console.log(ret);
 	return ret;
 }
 
@@ -129,7 +132,7 @@ function riteTitle(data, size = 'large') {
 }
 
 function abbreviateName(name) {
-	return name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.');
+	return name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Pontificum', 'Pont.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.');
 }
 
 titled = {
@@ -346,6 +349,8 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 				}
 			} else if (data['tags'].includes('psalmi-poenitentiales')) {
 				header = 'Septem Psalmi Pœnitentiales cum Litaniis';
+			} else if (data['tags'].includes('litaniae-sanctorum')) {
+				header = 'Litaniæ';
 			} else if (data['tags'].includes('psalmi-graduales')) {
 				header = 'Psalmi Graduales';
 			} else if (data['tags'].includes('versiculus')) {

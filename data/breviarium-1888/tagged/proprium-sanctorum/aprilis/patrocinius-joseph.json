@@ -1,0 +1,131 @@
+[
+	{
+		"tags":["patrocinius-joseph","nomen"],
+		"datum":"Patrocinii S. Joseph Confessoris et Sponsi B.M.V."
+	},
+	{
+		"tags":["patrocinius-joseph","antiphona","antiphona-i"],
+		"src":"gregobase/2663",
+		"datum":"Jacob autem * génuit Joseph virum Maríæ, de qua natus est Jesus, qui vocátur Christus, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","vesperae","psalmus"],
+		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
+	},
+	{
+		"tags":["patrocinius-joseph","antiphona","antiphona-ii"],
+		"src":"gregobase/2146",
+		"datum":"Missus est * Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","antiphona","antiphona-iii"],
+		"src":"gregobase/12446",
+		"datum":"Ascéndit autem * Joseph a Galilǽa de civitáte Názareth, in Judǽam in civitátem David, quæ vocátur Béthlehem, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","antiphona","antiphona-iv"],
+		"src":"gregobase/12205",
+		"datum":"Et venérunt festinántes, * et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","antiphona","antiphona-v"],
+		"src":"gregobase/2005",
+		"datum":"Et ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","capitulum"],
+		"datum":"Benedictiónes patris tui confortátæ sunt benedictiónibus patrum ejus: + donec veníret desidérium cóllium æternórum: * fiant in cápite Joseph, et in vértice Nazarǽi inter fratres suos."
+	},
+	{
+		"tags":["patrocinius-joseph","vesperae","hymnus"],
+		"src":"gregobase/2235",
+		"datum":[
+			"Te, Joseph, célebrent ágmina cœ\u0301litum,/Te cuncti résonent christíadum chori,/Qui clarus méritis, junctus es ínclytæ/Casto fœ\u0301dere Vírgini.",
+			"Almo cum túmidam gérmine cónjugem/Admírans, dúbio tángeris ánxius,/Afflátu súperi Fláminis Ángelus/Concéptum púerum docet.",
+			"Tu natum Dóminum stringis, ad éxteras/Ægýpti prófugum tu séqueris plagas;/Amíssum Sólymis quæris, et ínvenis,/Miscens gaúdia flétibus.",
+			"Post mortem réliquos mors pia cónsecrat,/Palmámque eméritos glória súscipit:/Tu vivens, Súperis par, frúeris Deo,/Mira sorte beátior.",
+			"Nobis, summa Trias, parce precántibus,/Da Joseph méritis sídera scándere:/Ut tandem líceat nos tibi pérpetim/Gratum prómere cánticum.","Amen."
+		]
+	},
+	{
+		"tags":["patrocinius-joseph","i-vesperae","versiculus"],
+		"datum":["V. Constítuit eum dóminum domus suæ, allelúja.","R. Et príncipem omnis possessiónis suæ, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/12798",
+		"datum":"Cum esset desponsáta * Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","collecta"],
+		"datum":"Deus, qui ineffábili providéntia beátum Joseph sanctíssimæ Genitrícis tuæ sponsum elígere dignátus es: + præsta, quǽsumus; ut quem protectórem benerámur in terris, * intercessórem habére mereámur in cœlis:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["patrocinius-joseph","laudes","hymnus"],
+		"src":"gregobase/11972",
+		"datum":[
+			"Cœ\u0301litum Joseph decus, atque nostræ/Certa spes vitæ, columénque mundi,/Quas tibi læti cánimus, benígnus/Súscipe laudes.",
+			"Te sator rerum státuit pudícæ/Vírginis sponsum, voluítque Verbi/Te patrem dici, dedit et minísrum/Esse salútis.",
+			"Tu Redemptórem stábulo jacéntem,/Quem chorus Vatum cécinit futúrum,/Áspicis gaudens, humilísque natum/Numen adóras.",
+			"Rex Deus regum, Dominátor orbis,/Cujus ad nutum tremit inferórum/Turba, cui pronus famulátur æther,/Se tibi subdit.",
+			"Laus sit excélsæ Tríadi perénnis,/Quæ tibi præbens súperos honóres,/Det tuis nobis méritis beátæ/Gaúdia vitæ.","Amen."
+		]
+	},
+	{
+		"tags":["patrocinius-joseph","laudes","versiculus"],
+		"datum":["V. Dedísti mihi protectiónem salútis tuæ, allelúja.","R. Et déxtera tua suscépit me, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12819",
+		"datum":"Joseph fili David, * noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","tertia","responsorium-breve"],
+		"incipit":"Constítuit eum dóminum domus suæ",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et príncipem omnis possessiónis suæ."
+	},
+	{
+		"tags":["patrocinius-joseph","tertia","versiculus"],
+		"datum":["V. Confitébor nómini tuo, allelúja.","R. Quóniam adjútor et protéctor factus es mihi, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","sexta","capitulum"],
+		"datum":"Deus patris tui erit adjútor tuus, + et Omnípotens benedícet tibi * benedictiónibus cœli désuper."
+	},
+	{
+		"tags":["patrocinius-joseph","sexta","responsorium-breve"],
+		"incipit":"Confitébor nómini tuo",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Quóniam adjútor et protéctor factus es mihi."
+	},
+	{
+		"tags":["patrocinius-joseph","sexta","versiculus"],
+		"datum":["V. Justus germinábit sicut lílium, allelúja.","R. Et florébit in ætérnum ante Dóminum, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","nona","capitulum"],
+		"datum":"Fílius accréscens Joseph, + fílius accréscens, et decórus aspéctu: * fíliæ discurrérunt super murum."
+	},
+	{
+		"tags":["patrocinius-joseph","nona","responsorium-breve"],
+		"datum":"Justus germinábit sicut lílium",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et florébit in ætérnum ante Dóminum."
+	},
+	{
+		"tags":["patrocinius-joseph","nona","versiculus"],
+		"datum":["V. Plantátus in domo Dómini, allelúja.","R. In átriis domus Dei nostri, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","ii-vesperae","versiculus"],
+		"datum":["V. Sub umbra illíus, quem desideráveram, sedi, allelúja.","R. Et fructus ejus dulcis gútturi meo, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/12371",
+		"datum":"Fili, * quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te, allelúja."
+	}
+]
