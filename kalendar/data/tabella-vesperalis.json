@@ -16,6 +16,11 @@
 		"response":"dele"
 	},
 	{
+		"include":["dominica","feria"],
+		"recheck":false,
+		"response":"dele"
+	},
+	{
 		"include":["vigilia","ii-vesperae"],
 		"recheck":false,
 		"response":"dele"

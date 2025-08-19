@@ -287,14 +287,14 @@
 		"include":["vigilia"],
 		"recheck":false,
 		"response":[
-			{"include":["dominica","primarium"],"response":"transfer","target":0,"movement":-1}
+			{"include":["dominica","semiduplex","primarium"],"response":"transfer","target":0,"movement":-1}
 		]
 	},
 	{
 		"include":["fideles-defuncti"],
 		"recheck":false,
 		"response":[
-			{"include":["dominica"],"response":"transfer","target":0,"movement":1}
+			{"include":["dominica","semiduplex"],"response":"transfer","target":0,"movement":1}
 		]
 	},
 	{
@@ -427,7 +427,7 @@
 			{"include":["duplex-majus"],"response":"transfer","target":1,"movement":1},
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus"],"response":"dele","target":1},
-			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
+			{"include":["dominica","semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["semiduplex"],"exclude":["dominica"],"response":"dele","target":1},
 			{"include":["simplex"],"response":"dele","target":1},
 			{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
@@ -461,7 +461,7 @@
 			{"include":["duplex-majus"],"response":"transfer","target":1,"movement":1},
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus","primarium"],"response":"commemoratio","target":1},
-			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
+			{"include":["dominica","semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["infra-octavam"],"exclude":["in-tempore-nativitatis"],"response":"dele","target":1},
 			{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["simplex","primarium"],"response":"commemoratio","target":1},
@@ -566,7 +566,7 @@
 		"include":["duplex-minus","primarium"],
 		"response":[
 			{"include":["duplex-minus","primarium"],"response":"errora"},
-			{"include":["dominica","primarium"],"response":"commemoratio","target":1},
+			{"include":["dominica","semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
@@ -574,7 +574,7 @@
 		]
 	},
 	{
-		"include":["dominica","primarium"],
+		"include":["dominica","semiduplex","primarium"],
 		"response":[
 			{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 			{"include":["simplex","primarium"],"response":"commemoratio","target":1}
@@ -658,7 +658,20 @@
 		"include":["simplex","primarium"],
 		"response":[
 			{"include":["vigilia","simplex"],"response":"commemoratio","target":0},
+			{"include":["dominica","feria"],"response":"commemoratio","target":0},
 			{"include":["feria","primarium"],"exclude":["vigilia"],"response":"omissum","target":1}
+		]
+	},
+	{
+		"include":["dominica","feria"],
+		"response":[
+			{"include":["feria"],"response":"omissum","target":1},
+			{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
+			{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
+			{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
+			{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
+			{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
+			{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
 		]
 	},
 	{
@@ -927,6 +940,12 @@
 	{
 		"include":["dele-judith"],
 		"response":"dele"
+	},
+	{
+		"include":["hebdomada-xxiii-pentecostes","dominica","translatum"],
+		"response":[
+			{"include":["feria"],"response":"dele","target":1}
+		]
 	},
 	{
 		"include":["legitur-mense"],

@@ -334,9 +334,10 @@ def kalendar(year: int) -> Kalendar:
 			kal.add_entry(match_date + timedelta(days=offset), entry['tags'])
 
 	# 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
-	if xxiiipentecostentry:
-		xxiiipentecostentry = set(xxiiipentecostentry)
-		xxiiipentecostentry.add('translatum')
+	if 'hebdomada-xxiii-pentecostes' in kal.tagsindate(xxivpentecost):
+		xxiiipentecostentry = kal.match_unique({'hebdomada-xxiii-pentecostes', 'dominica'}).feast
+		xxiiipentecostentry |= {'translatum', 'feria'}
+		xxiiipentecostentry -= {'semiduplex'}
 		i = 1
 		while i < 7:
 			if kal.tagsindate(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
@@ -345,12 +346,11 @@ def kalendar(year: int) -> Kalendar:
 			else:
 				i += 1
 		if i == 7:
-			xxiiipentecostentry.add('simplex')
-			xxiiipentecostentry.discard('semiduplex')
+			xxiiipentecostentry |= {'commemoratio'}
 			kal.add_entry(xxivpentecost - timedelta(days=1), xxiiipentecostentry)
 	if omittedepiphanyentry:
-		omittedepiphanyentry = set(omittedepiphanyentry)
-		omittedepiphanyentry.add('translatum')
+		omittedepiphanyentry |= {'translatum', 'feria', 'post-epiphaniam'}
+		omittedepiphanyentry -= {'semiduplex'}
 		septuagesima = easter - timedelta(weeks=9)
 		i = 1
 		while i < 7:
@@ -360,8 +360,7 @@ def kalendar(year: int) -> Kalendar:
 			else:
 				i += 1
 		if i == 7:
-			omittedepiphanyentry.add('simplex')
-			omittedepiphanyentry.discard('semiduplex')
+			omittedepiphanyentry |= {'commemoratio'}
 			kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
 	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
