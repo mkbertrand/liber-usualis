@@ -953,5 +953,29 @@
 			{"include":["feria"],"response":"combina","target":0},
 			{"include":["dominica","semiduplex"],"response":"combina","target":0}
 		]
+	},
+	{
+		"include":["tempus"],
+		"response":[
+			{"include":["hebdomada-sexagesima","feria-ii","omissum"],"response":["hebdomada-sexagesima","feria-ii","vesperae","antiphona","antiphona-magnificat","intonata"],"movement":3,"target":1},
+			{"include":["hebdomada-sexagesima","feria-iii","omissum"],"response":["hebdomada-sexagesima","feria-iii","vesperae","antiphona","antiphona-magnificat","intonata"],"movement":2,"target":1},
+			{"include":["hebdomada-sexagesima","feria-iv","omissum"],"response":["hebdomada-sexagesima","feria-iv","vesperae","antiphona","antiphona-magnificat","intonata"],"movement":1,"target":1},
+			{"include":["hebdomada-sexagesima","feria-ii","omissum"],"response":["hebdomada-sexagesima","feria-ii","vesperae","antiphona","antiphona-magnificat","repetita"],"movement":3,"target":1},
+			{"include":["hebdomada-sexagesima","feria-iii","omissum"],"response":["hebdomada-sexagesima","feria-iii","vesperae","antiphona","antiphona-magnificat","repetita"],"movement":2,"target":1},
+			{"include":["hebdomada-sexagesima","feria-iv","omissum"],"response":["hebdomada-sexagesima","feria-iv","vesperae","antiphona","antiphona-magnificat","repetita"],"movement":1,"target":1}
+		]
+	},
+	{
+		"include":["hebdomada-sexagesima","feria-iv","antiphona-magnificat"],
+		"response":[
+			{"include":["hebdomada-sexagesima","feria-iii","antiphona-magnificat"],"response":"dele","target":1},
+			{"include":["hebdomada-sexagesima","feria-ii","antiphona-magnificat"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["hebdomada-sexagesima","feria-iii","antiphona-magnificat"],
+		"response":[
+			{"include":["hebdomada-sexagesima","feria-ii","antiphona-magnificat"],"response":"dele","target":1}
+		]
 	}
 ]
