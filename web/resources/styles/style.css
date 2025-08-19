@@ -1,3 +1,11 @@
+:root {
+	--generic-white-background-color: #f9f9f9;
+	--border-color: #efe9e9;
+	--button-color: #eee;
+	--button-color-hover: #e0b0b0;
+	--button-color-toggled: #e6b0b0;
+}
+
 html {
 	min-height: 100vh;
 }
@@ -19,8 +27,8 @@ body {
 	top: 0;
 	width: 100%;
 	height: 75px !important;
-	background-color: #f9f9f9;
-	border-bottom: 1px solid #eee;
+	background-color: var(--generic-white-background-color);
+	border-bottom: 1px solid var(--border-color);
 	z-index: 2;
 }
 
@@ -54,7 +62,7 @@ body {
 	min-height: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
-	background-color: #f9f9f9;
+	background-color: var(--generic-white-background-color);
 }
 
 #sidebar-nav-toggle-wrapper {
@@ -74,11 +82,11 @@ body {
 	top: 76px;
 	left: 0;
 	height: 100%;
-	background-color: #f9f9f9;
+	background-color: var(--generic-white-background-color);
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
-	border-right: 1px solid #eee;
+	border-right: 1px solid var(--border-color);
 	z-index: 3;
 	gap: 10px;
 }
@@ -96,7 +104,7 @@ body {
 }
 
 .nav-element-link:hover {
-	background-color: #fee;
+	background-color: var(--button-color-hover);
 }
 
 .red {
@@ -162,7 +170,7 @@ tspan[style="font-family:'Exsurge Characters';fill:#f00;"] {
 [x-cloak] { display: none !important; }
 
 button {
-	background-color: #eee;
+	background-color: var(--button-color);
 	border-radius: 7px;
 	color: black;
 	font-family: times;

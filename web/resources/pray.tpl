@@ -47,8 +47,7 @@
 		this.recitation = recitation;
 	},
 	updateRiteAsyncLock: false,
-	async updateRite() {
-		window.scrollTo({top:0});
+	async updateRite(scroll = true) {
 		lasttitle = '';
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
@@ -64,6 +63,9 @@
 				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
 				if (i == 0) {
 					title = riteTitle(json, 'large')
+					if (scroll) {
+						window.scrollTo({top:0, behavior: 'smooth'});
+					}
 				} else {
 					title = '';
 					if (json.usednames[0] != lasttitle) {
@@ -146,7 +148,7 @@
 	}
 	$watch('date', date => updateDay());
 	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
-	$watch('recitation', recitation => updateRite());
+	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
 	$watch('dayinitialized', dayinitialized => {
 		if (list.length == 7) {

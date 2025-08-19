@@ -101,7 +101,6 @@ function ritelist(daytags, ambit) {
 		}
 		ret.push({'name': ambit[i].name, 'content': lit, 'id': ambit[i].id});
 	}
-	console.log(ret);
 	return ret;
 }
 

@@ -27,7 +27,7 @@
 }
 
 .aurei {
-	background-color: #f9f9f9;
+	background-color: var(--generic-white-background-color);
 }
 
 @media only screen and (max-width: 70em) {
@@ -40,7 +40,7 @@
 	font-family: times;
 	padding: 10px 30px 30px 40px;
 	height: 100%;
-	background-color: #f9f9f9;
+	background-color: var(--generic-white-background-color);
 	display: block;
 }
 
@@ -96,7 +96,7 @@
 	width: 30em;
 	height: 50vh;
 	max-width: 100%;
-	background-color: rgba(249, 249, 249, 1);
+	background-color: var(--generic-white-background-color);
 	display: flex;
 	flex-direction: column;
 	gap: 7px;
@@ -115,15 +115,15 @@
 }
 
 .options-panel-button-on {
-	background-color: #e6b0b0 !important;
+	background-color: var(--button-color-toggled) !important;
 }
 
 .options-panel-button {
-	background-color: #eee;
+	background-color: var(--button-color);
 }
 
 .options-panel-button:hover {
-	background-color: #e0b0b0;
+	background-color: var(--button-color-hover);
 }
 
 .options-panel-section-head {
@@ -194,7 +194,7 @@
 	flex-direction: column;
 	gap: 7px;
 	height: 100%;
-	border-left: 1px solid #eee;
+	border-left: 1px solid var(--border-color);
 	padding-left: 14px;
 	padding-right: 14px;
 }
@@ -213,16 +213,16 @@
 #bottom-easy-select-hide {
 	width: 100px;
 	height: 20px;
-	background-color: #eee;
+	background-color: var(--button-color);
 }
 
 #bottom-easy-select-hide:hover {
-	background-color: #e0b0b0;
+	background-color: var(--button-color-hover);
 }
 
 #bottom-easy-select-content-container {
 	background-color: rgba(249, 249, 249, .8);
-	border: 1px solid #eee;
+	border: 1px solid var(--border-color);
 	border-radius: 5px;
 	padding-bottom: 10px;
 }
@@ -246,7 +246,7 @@
 #date-selector-text {
 	height: 30px;
 	font-size: 18px;
-	border: 1px solid #eee;
+	border: 1px solid var(--border-color);
 	border-radius: 5px;
 	cursor: pointer;
 	font-family: times;
@@ -262,18 +262,18 @@
 }
 
 .date-selector-button:hover {
-	background-color: #e0b0b0;
+	background-color: var(--button-color-hover);
 }
 
 #options-button {
 	height: 30px;
 	text-align: center;
 	font-size: 18px;
-	background-color: #eee;
+	background-color: var(--button-color);
 }
 
 #options-button:hover {
-	background-color: #e0b0b0;
+	background-color: var(--button-color-hover);
 }
 
 #rite-selector-container {
@@ -287,7 +287,7 @@
 }
 
 .rite-selector-button {
-	background-color: #eee;
+	background-color: var(--button-color);
 	height: 25px;
 	text-align: center;
 	font-size: 16px;
@@ -295,11 +295,11 @@
 }
 
 .rite-selector-button:hover {
-	background-color: #e0b0b0;
+	background-color: var(--button-color-hover);
 }
 
 .rite-selector-button-selected {
-	background-color: #e6b0b0 !important;
+	background-color: var(--button-color-toggled) !important;
 }
 
 @media print {

@@ -22,7 +22,7 @@ body {
 
 #home-screen {
 	position: relative;
-	background-color:#f9f9f9;
+	background-color: var(--generic-white-background-color);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
