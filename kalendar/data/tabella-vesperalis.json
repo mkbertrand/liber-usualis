@@ -523,5 +523,25 @@
 			{"include":["semiduplex"],"target":0,"adde":"omissum"},
 			{"include":["maria"],"exclude":["suffragium"],"target":0,"adde":"omissum"}
 		]
+	},
+	{
+		"include":["hebdomada-septuagesima","dominica","i-vesperae","commemoratio"],
+		"response":[
+			{"include":["primarium"],"target":1,"adde":"in-tempore-septuagesimae"},
+			{"include":["commemoratio"],"target":1,"adde":"in-tempore-septuagesimae"},
+			{"include":["omissum"],"target":1,"adde":"in-tempore-septuagesimae"}
+		]
+	},
+	{
+		"include":["hebdomada-septuagesima","dominica","i-vesperae","commemoratio"],
+		"response":"duplicate",
+		"remove":"commemoratio",
+		"adde":["vesperae","deus-in-adjutorium","festalis"]
+	},
+	{
+		"include":["hebdomada-septuagesima","dominica","i-vesperae","commemoratio"],
+		"response":"duplicate",
+		"remove":"commemoratio",
+		"adde":["vesperae","benedicamus-domino"]
 	}
 ]
