@@ -318,7 +318,14 @@
 		"datum":[]
 	},
 	{
-		"tags":["vesperae","poenitentialis","feria","preces"],
+		"tags":[
+			["vesperae","in-tempore-adventus","feria","preces"],
+			["vesperae","cinerum","feria","preces"],
+			["vesperae","in-tempore-quadragesimae","feria","preces"],
+			["vesperae","in-tempore-passionis","feria","preces"],
+			["vesperae","quattuor-tempora","feria","preces"],
+			["vesperae","vigilia","feria","preces"]
+		],
 		"datum":[
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],

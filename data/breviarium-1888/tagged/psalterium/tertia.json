@@ -169,7 +169,14 @@
 		"datum":[]
 	},
 	{
-		"tags":["tertia","poenitentialis","feria","preces"],
+		"tags":[
+			["tertia","in-tempore-adventus","feria","preces"],
+			["tertia","cinerum","feria","preces"],
+			["tertia","in-tempore-quadragesimae","feria","preces"],
+			["tertia","in-tempore-passionis","feria","preces"],
+			["tertia","quattuor-tempora","feria","preces"],
+			["tertia","vigilia","feria","preces"]
+		],
 		"datum":[
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],

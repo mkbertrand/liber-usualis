@@ -348,7 +348,14 @@
 		"datum":[]
 	},
 	{
-		"tags":["laudes","poenitentialis","feria","preces"],
+		"tags":[
+			["laudes","in-tempore-adventus","feria","preces"],
+			["laudes","cinerum","feria","preces"],
+			["laudes","in-tempore-quadragesimae","feria","preces"],
+			["laudes","in-tempore-passionis","feria","preces"],
+			["laudes","quattuor-tempora","feria","preces"],
+			["laudes","vigilia","feria","preces"]
+		],
 		"datum":[
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],

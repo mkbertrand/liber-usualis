@@ -2,5 +2,94 @@
 	{
 		"tags":["hebdomada-quinquagesima","basis-nominis"],
 		"datum":"Quinquagesimæ"
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","capitulum"],
+		"datum":"Fratres: Si linguis hóminum loquar, et Angelórum, + caritátem autem non hábeam, * factus sum velut æs sonans, aut cýmbalum tínniens."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2276",
+		"datum":"Pater fídei nostræ * Ábraham summus, óbtulit holocaústum super altáre pro fílio."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","collecta"],
+		"datum":"Preces nostras, quǽsumus Dómine, cleménter exaúdi: + atque a peccatórum vínculis absolútos, * ab omni nos adversitáte custódi.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-i"],
+		"src":"gregobase/13020",
+		"datum":"Secúndum multitúdinem * miseratiónum tuárum Dómine, dele iniquitátem meam."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-ii"],
+		"src":"gregobase/12246",
+		"datum":"Deus meus es tu, * et confitébor tibi: Deus meus es tu, et exaltábo te."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-iii"],
+		"src":"gregobase/13162",
+		"datum":"Ad te de luce * vígilo Deus, ut vídeam virtútem tuam."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/13031",
+		"datum":"Hymnum dícite, * et superexaltáte eum in sǽcula."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-v"],
+		"src":"gregobase/12542",
+		"datum":"Omnes Ángeli * ejus laudáte Dóminum de cœlis."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12650",
+		"datum":"Ecce ascéndimus * Jerosólymam et consummabúntur ómnia, quæ scripta sunt de Fílio hóminis: tradétur enim Géntibus, et illudétur, et conspuétur: et postquam flagelláverint, occídent eum, et tértia die resúrget."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","prima","antiphona"],
+		"src":"gregobase/1974",
+		"datum":"Iter faciénte * Jesu, dum appropinquáret Jéricho, cæcus clamábat ad eum, ut lumen recípere mererétur."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","officium-capituli","lectio"],
+		"datum":[["officium-capituli","per-annum","temporale","lectio"]]
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","tertia","antiphona"],
+		"src":"gregobase/2365",
+		"datum":"Transeúnte * Dómino clamábat cæcus ad eum: Miserére mei, Fili David."
+	},
+	{
+		"tags":[
+			["hebdomada-quinquagesima","dominica","sexta","antiphona"],
+			["hebdomada-quinquagesima","feria-ii","vesperae","antiphona","antiphona-magnificat"]
+		],
+		"src":"gregobase/2361",
+		"datum":"Et qui præíbant, * increpábant eum ut tacéret: ipse vero multo magis clamábat: Miserére mei, Fili David."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","sexta","capitulum"],
+		"datum":"Cáritas numquam éxcidit: + sive prophetíæ evacuabúntur, sive linguæ cessábunt, sive sciéntia destruétur: * Ex parte enim cognóscimus, et ex parte prophetámus."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","nona","antiphona"],
+		"src":"gregobase/2258",
+		"datum":"Cæcus magis * ac magis clamábat, ut eum Dóminus illumináret."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","nona","capitulum"],
+		"datum":"Nunc autem manent, fides, spes, cáritas, tria hæc: * major autem horum est cáritas."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2369",
+		"datum":"Stans autem Jesus * jussit cæcum addúci ad se, et ait illi: Quid vis ut fáciam tibi? Dómine, ut vídeam. Et Jesus ait illi: Réspice, fides tua te salvum fecit. Et conféstim vidit, et sequebátur illum, magníficans Deum."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2780",
+		"datum":"Miserére mei, * Fili David. Quid vis ut fáciam tibi? Dómine, ut vídeam."
 	}
 ]
