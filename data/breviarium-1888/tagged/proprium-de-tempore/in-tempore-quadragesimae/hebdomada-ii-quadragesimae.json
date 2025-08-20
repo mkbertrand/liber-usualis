@@ -1,8 +1,49 @@
 [
 	{
-		"tags":["hebdomada-ii-quadragesimae","dominica","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-quadragesimae","basis-nominis"],
+		"datum":"II Quadragesimæ"
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","capitulum"],
+		"datum":"Fratres: Rogámus vos, et obsecrámus in Dómino Jesu: + ut quemádmodum accepístis a nobis, quómodo vos opórteat ambuláre, et placére Deo, * sic et ambulétis, ut abundétis magis."
+	},
+	{
+		"tags":[
+			["hebdomada-ii-quadragesimae","dominica","vesperae","antiphona","antiphona-magnificat"],
+			["hebdomada-ii-quadragesimae","dominica","nona","antiphona"]
+		],
 		"src":"gregobase/2283",
 		"datum":"Visiónem quam vidístis, * némini dixéritis, donec a mórtuis resúrgat Fílius hóminis."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","collecta"],
+		"datum":"Deus, qui cónspicis omni nos virtúte destítui, intérius exteriúsque custódi: + ut ab ómnibus adversitátibus muniámur in córpore, * et a pravis cogitatiónibus mundémur in mente.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","laudes","antiphona","antiphona-i"],
+		"src":"gregobase/12862",
+		"datum":"Dómine, * lábia mea apéries, et os meum annuntiábit laudem tuam."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","laudes","antiphona","antiphona-ii"],
+		"src":"gregobase/12593",
+		"datum":"Déxtera Dómini * fecit virtútem: déxtera Dómini exaltávit me."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","laudes","antiphona","antiphona-iii"],
+		"src":"gregobase/11994",
+		"datum":"Factus est * adjútor meus Deus meus."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/13283",
+		"datum":"Trium puerórum * cantémus hymnum, quem cantábant in camíno ignis, benedicéntes Dóminum."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","laudes","antiphona","antiphona-v"],
+		"src":"gregobase/12642",
+		"datum":"Státuit ea * in ætérnum, et in sǽculum sǽculi: præcéptum pósuit, et non præteríbit."
 	},
 	{
 		"tags":["hebdomada-ii-quadragesimae","dominica","laudes","antiphona","antiphona-benedictus"],
@@ -10,58 +51,134 @@
 		"datum":"Assúmpsit Jesus * discípulos suos, et ascéndit in montem, et transfigurátus est ante eos."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"tags":[
+			["hebdomada-ii-quadragesimae","dominica","prima","antiphona"],
+			["hebdomada-ii-quadragesimae","dominica","tertia","antiphona"]
+		],
+		"src":"gregobase/2319",
+		"datum":"Dómine, * bonum est nos hic esse: si vis, faciámus hic tria tabernácula; tibi unum, Móysi unum, et Elíæ unum."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","sexta","antiphona"],
+		"src":"gregobase/2301",
+		"datum":"Faciámus hic * tria tabernácula; tibi unum, Móysi unum, et Elíæ unum."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","sexta","capitulum"],
+		"datum":"Hæc est enim volúntas Dei, sanctificátio vestra: + ut abstineátis vos a fornicatióne, * ut sciat unusquísque vestrum vas suum possidére in sanctificatióne et honóre."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","dominica","nona","capitulum"],
+		"datum":"Non enim vocávit nos Deus in immundítiam, + sed in sanctificatiónem, * in Christo Jesu Dómino nostro."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/1989",
 		"datum":"Ego princípium, * qui et loquor vobis."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-quadragesimae","feria-ii","collecta"],
+		"datum":"Præsta quǽsumus omnípotens Deus: + ut família tua, quæ se, affligéndo carnem, ab aliméntis ábstinet, * sectándo justítiam, a culpa jejúnet.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2739",
 		"datum":"Qui me misit, mecum est, * et non relíquit me solum: quia quæ plácita sunt ei, fácio semper."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-quadragesimae","feria-ii","vesperae","collecta"],
+		"datum":"Adésto supplicatiónibus nostris omnípotens Deus: * et quibus fidúciam sperándæ pietátis indúlges, consuétæ misericórdiæ tríbue benígnus efféctum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/1910",
 		"datum":"Unus est * enim magíster vester, qui in cœlis est, Christus Dóminus."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-quadragesimae","feria-iii","collecta"],
+		"datum":"Pérfice, quǽsumus Dómine, benígnus in nobis observántiæ sanctæ subsídium: + ut quæ te auctóre faciénda cognóvimus, * te operánte impleámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2156",
 		"datum":"Omnes autem * vos fratres estis: et patrem nolíte vocáre vobis super terram: unus est enim Pater vester, qui in cœlis est: nec vocémini magístri, quia magíster vester unus est Christus."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-quadragesimae","feria-iii","vesperae","collecta"],
+		"datum":"Propitiáre Dómine supplicatiónibus nostris, et animárum nostrárum medére languóribus: * ut remissióne percépta, in tua semper benedictióne lætémur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13233",
 		"datum":"Ecce ascéndimus * Jerosólymam: et Fílius hóminis tradétur ad crucifigéndum."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-quadragesimae","feria-iv","collecta"],
+		"datum":"Pópulum tuum, quǽsumus Dómine, propítius réspice: + et quos ab escis carnálibus prǽcepis abstinére, * a nóxiis quoque vítiis cessáre concéde.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2268",
 		"datum":"Tradétur enim Géntibus * ad illudéndum, et flagellándum, et crucifigéndum."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-quadragesimae","feria-iv","vesperae","collecta"],
+		"datum":"Deus innocéntiæ restitútor et amátor, dírige ad te tuórum corda servórum: * ut spíritus tui fervóre concépto, et in fide inveniántur stábiles, et in ópere efficáces.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/1904",
 		"datum":"Fili, recordáre * quia recepísti bona in vita tua, et Lázarus simíliter mala."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-quadragesimae","feria-v","collecta"],
+		"datum":"Præsta nobis, quǽsumus Dómine, auxílium grátiæ tuæ: + ut jejúniis et oratiónibus conveniénter inténti, * liberémur ab hóstibus mentis et córporis.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1992",
 		"datum":"Dives ille * guttam aquæ pétiit, qui micas panis Lázaro negávit."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-quadragesimae","feria-v","vesperae","collecta"],
+		"datum":"Adésto Dómine fámulis tuis, et perpétuam benignitátem largíre poscéntibus: * ut iis qui te auctóre et gubernatóre gloriántur, et congregáta restaúres, et restauráta consérves.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2138",
 		"datum":"Quæréntes eum tenére, * timuérunt turbam, quia sicut prophétam eum habébunt."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-quadragesimae","feria-vi","collecta"],
+		"datum":"Da, quǽsumus omnípotens Deus: + ut sacro nos purificánte jejúnio, * sincéris méntibus ad sancta ventúra fácias perveníre.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2138",
 		"datum":"Quæréntes eum tenére, * timuérunt turbam, quia sicut prophétam eum habébunt."
 	},
 	{
-		"tags":["hebdomada-ii-quadragesimae","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-quadragesimae","feria-vi","vesperae","collecta"],
+		"datum":"Da, quǽsumus Dómine, pópulo tuo salútem mentis et córporis: * ut bonis opéribus inhæréndo, tuæ semper virtútis mereátur protectióne deféndi.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","sabbatum","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2170",
 		"datum":"Vadam ad patrem meum, * et dicam ei: Pater, fac me sicut unum ex mercenáriis tuis."
+	},
+	{
+		"tags":["hebdomada-ii-quadragesimae","sabbatum","collecta"],
+		"datum":"Da, quǽsumus Dómine, nostris efféctum jejúniis salutárem: + ut castigátio carnis assúmpta, * ad nostrárum vegetatiónem tránseat animárum.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]
