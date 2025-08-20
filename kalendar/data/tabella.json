@@ -160,7 +160,7 @@
 		]
 	},
 	{
-		"include":["quattuor-tempora-pentecostes"],
+		"include":["quatuor-tempora-pentecostes"],
 		"recheck":false,
 		"response":[
 			{"include":["pentecostes"],"response":"combina","target":0}
