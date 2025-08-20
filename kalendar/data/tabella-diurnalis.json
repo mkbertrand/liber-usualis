@@ -7,6 +7,13 @@
 		]
 	},
 	{
+		"include":["quatuor-tempora"],
+		"recheck":false,
+		"response":[
+			{"include":["feria"],"response":"combina","target":0}
+		]
+	},
+	{
 		"include":["vigilia","commemoratio"],
 		"remove":"omissum"
 	},

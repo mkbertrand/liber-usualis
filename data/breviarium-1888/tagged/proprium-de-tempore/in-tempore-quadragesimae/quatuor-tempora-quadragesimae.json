@@ -1,32 +1,56 @@
 [
 	{
-		"tags":["quatuor-tempora-quadragesimae","nomen"],
-		"feria-iv":"Feria IV Quatuor Temporum",
-		"feria-vi":"Feria VI Quatuor Temporum",
-		"sabbatum":"Sabbato Quatuor Temporum"
+		"tags":["quatuor-tempora-quadragesimae","quatuor-tempora","nomen"],
+		"feria-iv":"Feria IV Quatuor Temporum Quadragesimæ",
+		"feria-vi":"Feria VI Quatuor Temporum Quadragesimæ",
+		"sabbatum":"Sabbato Quatuor Temporum Quadragesimæ"
 	},
 	{
-		"tags":["quatuor-tempora-quadragesimae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12492",
 		"datum":"Generátio * hæc prava et pervérsa signum quærit: et signum non dábitur ei, nisi signum Jonæ prophétæ."
 	},
 	{
-		"tags":["quatuor-tempora-quadragesimae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","collecta"],
+		"datum":"Preces nostras, quǽsumus Dómine, cleménter exaúdi: + et contra cuncta nobis adversántia, * déxteram tuæ majestátis exténde.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12734",
 		"datum":"Sicut fuit Jonas * in ventre ceti tribus diébus et tribus nóctibus, ita erit Fílius hóminis in corde terræ."
 	},
 	{
-		"tags":["quatuor-tempora-quadragesimae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","vesperae","collecta"],
+		"datum":"Mentes nostras, quǽsumus Dómine, lúmine tuæ claritátis illústra: * ut vidére possímus quæ agénda sunt; et quæ recta sunt, ágere valeámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2045",
 		"datum":"Ángelus Dómini * descendébat de cœlo, et movebátur aqua, et sanabátur unus."
 	},
 	{
-		"tags":["quatuor-tempora-quadragesimae","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","collecta"],
+		"datum":"Esto Dómine propítius plebi tuæ: + et quam tibi facis esse devótam, * benígno réfove miserátus auxílio.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2543",
 		"datum":"Qui me sanum fecit, * ille mihi præcépit: Tolle grabátum tuum, et ámbula in pace."
 	},
 	{
-		"tags":["quatuor-tempora-quadragesimae","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","vesperae","collecta"],
+		"datum":"Exaúdi nos miséricors Deus: * et méntibus nostris grátiæ tuæ lumen osténde."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","sabbatum","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["hebdomada-ii-quadragesimae","dominica","antiphona"]]
+	},
+	{
+		"tags":["quatuor-tempore-quadragesimae","sabbatum","collecta"],
+		"datum":"Pópulum tuum, quǽsumus Dómine, propítius réspice: * atque ab eo flagélla tuæ iracúndiæ cleménter avérte.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

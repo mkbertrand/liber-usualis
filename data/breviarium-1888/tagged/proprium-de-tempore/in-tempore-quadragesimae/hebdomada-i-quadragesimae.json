@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["hebdomada-i-quadragesimae","basis-nominis"],
+		"datum":"I Quadragesimæ"
+	},
+	{
 		"tags":["hebdomada-i-quadragesimae","dominica","capitulum"],
 		"datum":"Fratres: Hortámur vos, ne in vácuum grátiam Dei recipiátis. + Ait enim: Témpore accépto exaudívi te, * et in die salútis adjúvi te."
 	},
@@ -77,33 +81,63 @@
 		"datum":"Ecce nunc tempus * acceptábile, ecce nunc dies salútis: in his ergo diébus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia, in jejúniis, in vigíliis, et in caritáte non ficta."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-quadragesimae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11877",
 		"datum":"Veníte benedícti * Patris mei, percípite regnum, quod vobis parátum est ab orígine mundi."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-quadragesimae","feria-ii","collecta"],
+		"datum":"Convérte nos Deus salutáris noster: + et ut nobis jejúnium Quadragesimále profíciat, * mentes nostras cœléstibus ínstrue disciplínis.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/11778",
 		"datum":"Quod uni * ex mínimis meis fecístis, mihi fecístis, dicit Dóminus."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-quadragesimae","vesperae","feria-ii","collecta"],
+		"datum":"Absólve, quǽsumus Dómine, nostrórum víncula peccatórum: * et quidquid pro eis merémur, propitiátus avérte.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13318",
 		"datum":"Intrávit Jesus * in templum Dei, et ejiciébat omnes vendéntes et eméntes: et mensas nummulariórum, et cáthedras vendéntium colúmbas evértit."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-quadragesimae","feria-iii","collecta"],
+		"datum":"Réspice Dómine famíliam tuam, et præsta: + ut apud te mens nostra tuo desidério fúlgeat, * quæ se carnis maceratióne castígat.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2624",
 		"datum":"Scriptum est enim, * quia domus mea, domus oratiónis est cunctis géntibus: vos autem fecístis illam spelúncam latrónum: et erat quotídie docens in templo."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-quadragesimae","vesperae","feria-iii","collecta"],
+		"datum":"Ascéndant ad te Dómine preces nostræ: * et ab Ecclésia tua cunctam repélle nequítiam.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12575",
 		"datum":"Egréssus Jesus * secéssit in partes Tyri et Sidónis: et ecce múlier Chananǽa a fínibus illis egréssa, clamábat dicens: Miserére mei, fili David."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-quadragesimae","feria-v","collecta"],
+		"datum":"Devotiónem pópuli tui, quǽsumus Dómine, benígnus inténde: + ut qui per abstinéntiam macerántur in córpore, * per fructum boni óperis reficiántur in mente.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2385",
 		"datum":"O múlier, * magna est fides tua: fiat tibi sicut petísti."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-v","vesperae","collecta"],
+		"datum":"Da, quǽsumus Dómine, pópulis christiánis, et quæ profiténtur agnóscere: * et cœléste munus dilígere, quod frequéntant.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]
