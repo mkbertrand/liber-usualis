@@ -1,8 +1,44 @@
 [
 	{
+		"tags":["hebdomada-passionis","basis-nominis"],
+		"datum":"Passionis"
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","capitulum"],
+		"datum":"Fratres: Christus assístens Póntifex futurórum bonórum, per ámplius et perféctius tabernáculum non manu factum, id est, non hujus creatiónis: + neque per sánguinem hircórum aut vitulórum, sed per próprium sánguinem introívit semel in Sancta, * ætérna redemptióne invénta."
+	},
+	{
 		"tags":["hebdomada-passionis","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2740",
 		"datum":"Ego sum * qui testimónium perhíbeo de meípso: et testimónium pérhibet de me, qui misit me Pater."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","collecta"],
+		"datum":"Quǽsumus omnípotens Deus, famíliam tuam propítius réspice: + ut te largiénte, regátur in córpore: * et te servánte, custodiátur in mente.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","laudes","antiphona","antiphona-i"],
+		"src":"gregobase/12931",
+		"datum":"Vide Dómine * afflictiónem meam, quóniam eréctus est inimícus meus."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","laudes","antiphona","antiphona-ii"],
+		"src":"gregobase/13060",
+		"datum":"In tribulatióne * invocávi Dóminum, et exaudívit me in latitúdine."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","laudes","antiphona","antiphona-iii"],
+		"src":"gregobase/12134",
+		"datum":"Judicásti Dómine * causam ánimæ meæ, defénsor vitæ meæ, Dómine Deus meus."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","laudes","antiphona","antiphona-iv"],
+		"datum":[["in-tempore-passionis","sexta","feria","antiphona"]]
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","laudes","antiphona","antiphona-v"],
+		"datum":[["in-tempore-passionis","nona","feria","antiphona"]]
 	},
 	{
 		"tags":["hebdomada-passionis","dominica","laudes","antiphona","antiphona-benedictus"],
@@ -10,63 +46,146 @@
 		"datum":"Dicébat Jesus * turbis Judæórum, et princípibus sacerdótum: Qui ex Deo est, verba Dei audit: proptérea vos non audítis, quia ex Deo non estis."
 	},
 	{
+		"tags":["hebdomada-passionis","dominica","prima","antiphona"],
+		"src":"gregobase/2413",
+		"datum":"Ego dæmónium non hábeo, * sed honorífico Patrem meum, dicit Dóminus."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","tertia","antiphona"],
+		"src":"gregobase/2873",
+		"datum":"Ego glóriam meam * non quæro: est qui quærat, et júdicet."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","sexta","antiphona"],
+		"src":"gregobase/2017",
+		"datum":"Amen, amen dico vobis: * si quis sermónem meum serváverit, mortem non gustábit in ætérnum."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","sexta","capitulum"],
+		"datum":"Si enim sanguis hircórum, et taurórum, et cinis vítulæ aspérsus inquinátos sanctíficat ad emundatiónem carnis: + quanto magis sanguis Christi, qui per Spíritum sanctum semetípsum óbtulit immaculátum Deo, * emundábit consciéntiam nostram ab opéribus mórtuis, ad serviéndum Deo vivénti?"
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","nona","antiphona"],
+		"src":"gregobase/2214",
+		"datum":"Tulérunt lápides * Judǽi ut jácerent in eum: Jesus autem abscóndit se, et exívit de templo."
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","nona","capitulum"],
+		"datum":"Et ídeo novi Testaménti mediátor est: ut morte intercedénte, in redemptiónem eárum prævaricatiónum, quæ erant sub prióri Testaménto, + repromissiónem accípiant, qui vocáti sunt ætérnæ hæreditátis * in Christo Jesu Dómino nostro."
+	},
+	{
 		"tags":["hebdomada-passionis","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2718",
 		"datum":"Ábraham pater vester * exsultávit ut vidéret diem meum: vidit, et gavísus est."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-passionis","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2401",
 		"datum":"In die magno * festivitátis stabat Jesus, et clamábat dicens: Si quis sitit, véniat ad me, et bibat."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-passionis","feria-ii","collecta"],
+		"datum":"Sanctífica, quǽsumus Dómine, nostra jejúnia: * et cunctárum nobis indulgéntiam propítius largíre culpárum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2451",
 		"datum":"Si quis sitit, * véniat ad me, et bibat: et de ventre ejus fluent aquæ vivæ, dicit Dóminus."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-passionis","feria-ii","vesperae","collecta"],
+		"datum":"Da, quǽsumus Dómine, pópulo tuo salútem mentis et córporis: * ut bonis opéribus inhæréndo, tua semper mereátur protectióne deféndi.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2122",
 		"datum":"Tempus meum * nondum advénit, tempus autem vestrum semper est parátum."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-passionis","feria-iii","collecta"],
+		"datum":"Nostra tibi, Dómine quǽsumus, sint accépta jejúnia: + quæ nos et expiándo, grátia tua dignos effíciant, * et ad remédia perdúcant ætérna.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2415",
 		"datum":"Vos ascéndite * ad diem festum hunc: ego autem non ascéndam, quia tempus meum nondum advénit."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-passionis","feria-iii","vesperae","collecta"],
+		"datum":"Da nobis quǽsumus Dómine, perseverántem in tua voluntáte famulátum: * ut in diébus nostris et mérito et número pópulus tibi sérviens augeátur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2567",
 		"datum":"Oves meæ * vocem meam aúdiunt: et ego Dóminus agnósco eas."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-passionis","feria-iv","collecta"],
+		"datum":"Sanctificáto hoc jejúnio, Deus, tuórum corda fidélium miserátor illústra: + et quibus devotiónis præstas afféctum, * præbe supplicántibus pium benígnus audítum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2712",
 		"datum":"Multa bona ópera * operátus sum vobis: propter quod opus vultis me occídere?"
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-passionis","feria-iv","vesperae","collecta"],
+		"datum":"Adésto supplicatiónibus nostris omnípotens Deus: * et quibus fidúciam sperándæ pietátis indúlges, consuétæ misericórdiæ tríbue benígnus efféctum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2132",
 		"datum":"Magíster dicit: * Tempus meum prope est, apud te fácio Pascha cum discípulis meis."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-passionis","feria-v","collecta"],
+		"datum":"Præsta, quǽsumus omnípotens Deus: + ut dígnitas conditiónis humánæ per immoderántiam sauciáta, * medicinális parsimóniæ stúdio reformétur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2691",
 		"datum":"Desidério desiderávi * hoc Pascha manducáre vobíscum, ántequam pátiar."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-passionis","feria-v","vesperae","collecta"],
+		"datum":"Esto, quǽsumus Dómine, propítius plebi tuæ: * ut, quæ tibi non placent, respuéntes, tuórum pótius repleántur delectatiónibus mandatórum.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2054",
 		"datum":"Appropinquábat autem * dies festus Judæórum: et quærébant príncipes sacerdótum quómodo Jesum interfícerent, sed timébant plebem."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-passionis","feria-vi","collecta"],
+		"datum":"Córdibus nostris, quǽsumus Dómine, grátiam tuam benígnus infúnde: + ut peccáta nostra castigatióne voluntária cohibéntes, * temporáliter pótius macerémur, quam supplíciis deputémur ætérnis.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/13150",
 		"datum":"Príncipes sacerdótum * consílium fecérunt ut Jesum occíderent: dicébant autem: Non in die festo, ne forte tumúltus fíeret in pópulo."
 	},
 	{
-		"tags":["hebdomada-passionis","feria","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-passionis","feria-vi","vesperae","collecta"],
+		"datum":"Concéde quǽsumus omnípotens Deus: * ut qui protectiónis tuæ grátiam quǽrimus, liberáti a malis ómnibus, secúra tibi mente serviámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-passionis","sabbatum","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2678",
 		"datum":"Clarífica me Pater * apud temetípsum claritáte, quam hábui priúsquam mundus fíeret."
+	},
+	{
+		"tags":["hebdomada-passionis","sabbatum","collecta"],
+		"datum":"Profíciat, quǽsumus Dómine, plebs tibi dicáta piæ devotiónis afféctu: + ut sacris actiónibus erudíta, quanto majestáti tuæ fit grátior, * tanto donis potióribus augeátur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

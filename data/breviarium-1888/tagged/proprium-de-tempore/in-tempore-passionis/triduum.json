@@ -1,0 +1,172 @@
+[
+	{
+		"tags":["coena-domini","nomen"],
+		"datum":"Feria V in Cœna Domini"
+	},
+	{
+		"tags":[
+			["triduum","domine-labia"],
+			["triduum","deus-in-adjutorium"],
+			["triduum","invitatorium"],
+			["triduum","hymnus"]
+		],
+		"datum":""
+	},
+	{
+		"tags":["coena-domini","laudes","antiphona","antiphona-i"],
+		"datum":"Justificéris Dómine * in sermónibus tuis, et vincas cum judicáris."
+	},
+	{
+		"tags":["triduum","laudes","psalmus-i"],
+		"datum":[["/psalmi/psalmus-l"]]
+	},
+	{
+		"tags":["coena-domini","laudes","antiphona","antiphona-ii"],
+		"datum":"Dóminus * tamquam ovis ad víctimam ductus est, et non apéruit os suum."
+	},
+	{
+		"tags":["triduum","laudes","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxix"]]
+	},
+	{
+		"tags":["coena-domini","laudes","antiphona","antiphona-iii"],
+		"datum":"Contrítum est * cor meum in médio mei, contremuérunt ómnia ossa mea."
+	},
+	{
+		"tags":["coena-domini","laudes","antiphona","antiphona-iv"],
+		"datum":"Exhortátus es * in virtúte tua, et in refectióne sancta tua Dómine."
+	},
+	{
+		"tags":["triduum","laudes","canticum"],
+		"datum":[["/psalmi/canticum-moysi"]]
+	},
+	{
+		"tags":["coena-domini","laudes","antiphona","antiphona-v"],
+		"datum":"Oblátus est * quia ipse vóluit, et peccáta nostra ipse portávit."
+	},
+	{
+		"tags":[
+			["triduum","capitulum"],
+			["triduum","dg-capituli"]
+		],
+		"datum":""
+	},
+	{
+		"tags":["coena-domini","laudes","versiculus"],
+		"datum":["V. Homo pacis meæ, in quo sperávi.","R. Qui edébat panes meos, ampliávit advérsum me supplantatiónem."]
+	},
+	{
+		"tags":["coena-domini","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Tráditor autem * dedit eis signum, dicens: Quem osculátus fúero, ipse est, tenéte eum."
+	},
+	{
+		"tags":["christus-factus"],
+		"coena-domini":"V. Christus factus est pro nobis obédiens usque ad mortem.",
+		"parasceve":"V. Christus factus est pro nobis obédiens usque ad mortem. Mortem autem crucis.",
+		"sabbatum-sanctum":"V. Christus factus est pro nobis obédiens usque ad mortem. Mortem autem crucis. Propter quod et Deus exaltávit illum, et dedit illi nomen, quod est super omne nomen."
+	},
+	{
+		"tags":[
+			["triduum","laudes","preces"],
+			["triduum","prima","preces"],
+			["triduum","tertia","preces"],
+			["triduum","sexta","preces"],
+			["triduum","nona","preces"],
+			["triduum","vesperae","preces"],
+			["triduum","completorium","preces"]
+		],
+		"datum":[
+			["christus-factus"],
+			["pater-noster-secreta"],
+			["/psalmi/psalmus-l"],
+			["collecta"],
+			["collecta","terminatio"]
+		]
+	},
+	{
+		"tags":[
+			["triduum","dominus-vobiscum"],
+			["triduum","collecta-primaria"],
+			["triduum","comemmorationes"],
+			["triduum","dominus-vobiscum","post-collectas"],
+			["triduum","benedicamus-domino"],
+			["triduum","fidelium-animae"],
+			["triduum","pater-noster-secreta-post-officium"]
+		],
+		"datum":""
+	},
+	{
+		"tags":[
+			["triduum","collecta"],
+			["triduum","prima","collecta"],
+			["triduum","completorium","collecta"]
+		],
+		"datum":"Réspice, quǽsumus Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":[
+			["triduum","hymnus"],
+			["triduum","antiphona"],
+			["triduum","capitulum"],
+			["triduum","dg-capituli"],
+			["triduum","responsorium-breve"],
+			["triduum","versiculus"]
+		],
+		"prima":"",
+		"tertia":"",
+		"sexta":"",
+		"nona":""
+	},
+	{
+		"tags":["triduum","psalmi"],
+		"prima":[
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
+		],
+		"tertia":[
+			["/psalmi/psalmus-cxviii:33-48"],
+			["/psalmi/psalmus-cxviii:49-64"],
+			["/psalmi/psalmus-cxviii:65-80"]
+		],
+		"sexta":[
+			["/psalmi/psalmus-cxviii:81-96"],
+			["/psalmi/psalmus-cxviii:97-112"],
+			["/psalmi/psalmus-cxviii:113-128"]
+		],
+		"nona":[
+			["/psalmi/psalmus-cxviii:129-144"],
+			["/psalmi/psalmus-cxviii:145-160"],
+			["/psalmi/psalmus-cxviii:161-176"]
+		]
+	},
+	{
+		"tags":["coena-domini","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cxv"]]
+	},
+	{
+		"tags":["coena-domini","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxix"]]
+	},
+	{
+		"tags":["coena-domini","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxxxix"]]
+	},
+	{
+		"tags":["coena-domini","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxl"]]
+	},
+	{
+		"tags":["coena-domini","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxli"]]
+	},
+	{
+		"tags":["coena-domini","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Cœnántibus autem illis, * accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis."
+	},
+	{
+		"tags":["parasceve","vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Cum accepísset * acétum, dixit: Consummátum est: et inclináto cápite emísit spíritum."
+	}
+]

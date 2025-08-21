@@ -95,6 +95,8 @@ function ritelist(daytags, ambit) {
 			&& !(included.includes('officium-defunctorum') && (ambit[i].id == 'vesperae' || ambit[i].id == 'matutinum') && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(included.includes('psalmi-poenitentiales') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(included.includes('litaniae-sanctorum') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(daytags.some(i => i.includes('triduum')) && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(daytags.some(i => i.includes('triduum')) && ambit[i].content[j].what == 'officium-capituli')
 			) {
 				lit.push([ambit[i].content[j].what, ambit[i].content[j].where]);
 			}
@@ -357,7 +359,12 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					header = 'Versiculus';
 				}
 				vscl = unpack(data['datum']);
-				data['datum'] = vscl[0] + '<br>' + vscl[1];
+				if (typeof vscl == 'string' && vscl == '') {
+					header = '';
+					data['datum'] = '';
+				} else {
+					data['datum'] = vscl[0] + '<br>' + vscl[1];
+				}
 			} else if (data['tags'].includes('martyrologium')) {
 				ret = `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][0]))} ${stringrender(unpack(data['datum'][1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data['datum'][2]))}</p>`;
 				martyrology = unpack(data['datum'][3]);
