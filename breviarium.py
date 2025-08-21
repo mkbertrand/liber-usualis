@@ -191,7 +191,6 @@ def handlecommemorations(root, item, selected, alternates):
 		return {'tags':{'commemorationes'}, 'datum':ret}
 
 def process(root, item, selected, alternates, pile):
-	print(item)
 	if item is None:
 		return 'Absens'
 	if selected is None:
