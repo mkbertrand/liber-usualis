@@ -78,6 +78,10 @@
 		"datum":"Omne * quod dat mihi Pater, ad me véniet: et eum qui venit ad me, non ejíciam foras."
 	},
 	{
+		"tags":["officium-defunctorum","vesperae","magnificat"],
+		"datum":[["/psalmi/magnificat,requiem"]]
+	},
+	{
 		"tags":["officium-defunctorum","vesperae","preces"],
 		"datum":[
 			["pater-noster-semisecreta"],
@@ -163,7 +167,10 @@
 		"datum":"Regem, cui ómnia vivunt, * Veníte adorémus."
 	},
 	{
-		"tags":["fideles-defuncti","officium-defunctorum","matutinum","nocturnae"],
+		"tags":[
+			["officium-defunctorum","matutinum","nocturnae"],
+			["fideles-defuncti","officium-defunctorum","matutinum","nocturnae"]
+		],
 		"datum":[
 			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
 			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
@@ -475,6 +482,10 @@
 		"tags":["officium-defunctorum","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/935",
 		"datum":"Ego sum * resurréctio et vita: qui credit in me, étiam si mórtuus fúerit, vivet: et omnis qui vivit et credit in me, non moriétur in ætérnum."
+	},
+	{
+		"tags":["officium-defunctorum","laudes","benedictus"],
+		"datum":[["/psalmi/benedictus,requiem"]]
 	},
 	{
 		"tags":["officium-defunctorum","laudes","preces"],

@@ -6,7 +6,7 @@
 			["adjutorium-nostrum"],
 			["pater-noster-secreta","de-confiteor"],
 			["confiteor"],
-			"V. Convérte nos ✙ Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
+			["converte-nos"],
 			["deus-in-adjutorium","ferialis"],
 			["completorium","antiphona","intonata"],
 			["completorium","psalmi"],
@@ -17,23 +17,16 @@
 			["completorium","formula","responsorium-breve"],
 			["completorium","versiculus"],
 			["completorium","antiphona","antiphona-nunc-dimittis","intonata"],
-			["/psalmi/nunc-dimittis,gloria"],
+			["nunc-dimittis"],
 			["completorium","antiphona","antiphona-nunc-dimittis","repetita"],
 			["completorium","preces"],
 			["dominus-vobiscum"],
 			["completorium","collecta-primaria"],
 			["dominus-vobiscum","ferialis-a"],
 			["completorium","benedicamus-domino","hora-minor"],
-			{
-				"tags":["completorium","benedictio-finalis"],
-				"datum":[
-					"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
-					"R. Amen."
-				]
-			},
+			["completorium","benedictio-finalis"],
 			["antiphona-bmv"],
-			"Divínum auxílium ✠ máneat semper nobíscum.",
-			"R. Amen.",
+			["divinum-auxilium"],
 			["prex-triplex"]
 		]
 	},
@@ -44,6 +37,10 @@
 	{
 		"tags":["completorium","lectio"],
 		"datum":"Fratres: Sóbrii estóte, et vigiláte: + quia adversárius vester diábolus tamquam leo rúgiens círcuit, quærens quem dévoret: * cui resístite fortes in fide."
+	},
+	{
+		"tags":["completorium","converte-nos"],
+		"datum":["V. Convérte nos ✙ Deus salutáris noster.","R. Et avérte iram tuam a nobis."]
 	},
 	{
 		"tags":["completorium","antiphona"],
@@ -106,6 +103,10 @@
 		"in-tempore-paschali":"Salva nos * Dómine vigilántes, custódi nos dormiéntes: ut vigilémus cum Christo, et requiescámus in pace, allelúja."
 	},
 	{
+		"tags":["completorium","nunc-dimittis"],
+		"datum":[["/psalmi/nunc-dimittis,gloria"]]
+	},
+	{
 		"tags":["completorium","preces"],
 		"datum":[
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
@@ -141,6 +142,13 @@
 		"tags":["completorium","collecta"],
 		"datum":"Vísita, quǽsumus Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: + Ángeli tui sancti hábitent in ea, qui nos in pace custódiant, * et benedíctio tua sit super nos semper.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["completorium","benedictio-finalis"],
+		"datum":[
+			"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
+			"R. Amen."
+		]
 	},
 	{
 		"tags":[

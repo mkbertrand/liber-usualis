@@ -14,6 +14,7 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-i"],
+		"src":"gregobase/2046",
 		"datum":"Justificéris Dómine * in sermónibus tuis, et vincas cum judicáris."
 	},
 	{
@@ -22,27 +23,43 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-ii"],
+		"src":"gregobase/2709",
 		"datum":"Dóminus * tamquam ovis ad víctimam ductus est, et non apéruit os suum."
 	},
 	{
-		"tags":["triduum","laudes","psalmus-ii"],
+		"tags":["coena-domini","laudes","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-lxxxix"]]
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-iii"],
+		"src":"gregobase/2792",
 		"datum":"Contrítum est * cor meum in médio mei, contremuérunt ómnia ossa mea."
 	},
 	{
+		"tags":["triduum","laudes","psalmi-deus-deus-meus"],
+		"datum":[
+			["/psalmi/psalmus-lxii,psalmus-lxvi"]
+		]
+	},
+	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/2641",
 		"datum":"Exhortátus es * in virtúte tua, et in refectióne sancta tua Dómine."
 	},
 	{
-		"tags":["triduum","laudes","canticum"],
+		"tags":["coena-domini","laudes","canticum"],
 		"datum":[["/psalmi/canticum-moysi"]]
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-v"],
+		"src":"gregobase/2545",
 		"datum":"Oblátus est * quia ipse vóluit, et peccáta nostra ipse portávit."
+	},
+	{
+		"tags":["triduum","laudes","psalmi-laudate"],
+		"datum":[
+			["/psalmi/psalmus-cxlviii,psalmus-cxlix,psalmus-cl"]
+		]
 	},
 	{
 		"tags":[
@@ -57,7 +74,19 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2458",
 		"datum":"Tráditor autem * dedit eis signum, dicens: Quem osculátus fúero, ipse est, tenéte eum."
+	},
+	{
+		"tags":["triduum","laudes","benedictus"],
+		"datum":[["/psalmi/benedictus"]]
+	},
+	{
+		"tags":["christus-factus","laudes"],
+		"src":"gregobase/1862",
+		"coena-domini":"V. Christus factus est pro nobis obédiens usque ad mortem.",
+		"parasceve":"V. Christus factus est pro nobis obédiens usque ad mortem. Mortem autem crucis.",
+		"sabbatum-sanctum":"V. Christus factus est pro nobis obédiens usque ad mortem. Mortem autem crucis. Propter quod et Deus exaltávit illum, et dedit illi nomen, quod est super omne nomen."
 	},
 	{
 		"tags":["christus-factus"],
@@ -116,14 +145,15 @@
 		"prima":"",
 		"tertia":"",
 		"sexta":"",
-		"nona":""
+		"nona":"",
+		"completorium":""
 	},
 	{
 		"tags":["triduum","psalmi"],
 		"prima":[
-			["/psalmi/psalmus-liii,gloria"],
-			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-liii"],
+			["/psalmi/psalmus-cxviii:1-16"],
+			["/psalmi/psalmus-cxviii:17-32"]
 		],
 		"tertia":[
 			["/psalmi/psalmus-cxviii:33-48"],
@@ -139,34 +169,177 @@
 			["/psalmi/psalmus-cxviii:129-144"],
 			["/psalmi/psalmus-cxviii:145-160"],
 			["/psalmi/psalmus-cxviii:161-176"]
+		],
+		"completorium":[
+			["/psalmi/psalmus-iv"],
+			["/psalmi/psalmus-xxx:1-6"],
+			["/psalmi/psalmus-xc"],
+			["/psalmi/psalmus-cxxxiii"]
 		]
 	},
 	{
-		"tags":["coena-domini","vesperae","psalmus-i"],
+		"tags":["triduum","vesperae","antiphona","antiphona-i"],
+		"datum":"Cálicem * salutáris accípiam, et nomen Dómini invocábo."
+	},
+	{
+		"tags":["triduum","vesperae","psalmus-i"],
 		"datum":[["/psalmi/psalmus-cxv"]]
 	},
 	{
-		"tags":["coena-domini","vesperae","psalmus-ii"],
+		"tags":["triduum","vesperae","antiphona","antiphona-ii"],
+		"datum":"Cum his, qui odérunt pacem, * eram pacíficus: dum loquébar illis, impugnábant me gratis."
+	},
+	{
+		"tags":["triduum","vesperae","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-cxix"]]
 	},
 	{
-		"tags":["coena-domini","vesperae","psalmus-iii"],
+		"tags":["triduum","vesperae","antiphona","antiphona-iii"],
+		"datum":"Ab homínibus iníquis * líbera me Dómine."
+	},
+	{
+		"tags":["triduum","vesperae","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cxxxix"]]
 	},
 	{
-		"tags":["coena-domini","vesperae","psalmus-iv"],
+		"tags":["triduum","vesperae","antiphona","antiphona-iv"],
+		"datum":"Custódi me * a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem."
+	},
+	{
+		"tags":["triduum","vesperae","psalmus-iv"],
 		"datum":[["/psalmi/psalmus-cxl"]]
 	},
 	{
-		"tags":["coena-domini","vesperae","psalmus-v"],
+		"tags":["triduum","vesperae","antiphona","antiphona-v"],
+		"datum":"Considerábam * ad déxteram, et vidébam, et non erat qui cognósceret me."
+	},
+	{
+		"tags":["triduum","vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxli"]]
+	},
+	{
+		"tags":["triduum","vesperae","versiculus"],
+		"datum":""
 	},
 	{
 		"tags":["coena-domini","vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Cœnántibus autem illis, * accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis."
 	},
 	{
+		"tags":["triduum","vesperae","magnificat"],
+		"datum":[["/psalmi/magnificat"]]
+	},
+	{
+		"tags":[
+			["triduum","completorium","formula-lectionis"],
+			["triduum","completorium","adjutorium-nostrum"],
+			["triduum","completorium","pater-noster-secreta","de-confiteor"],
+			["triduum","completorium","converte-nos"],
+			["triduum","completorium","benedictio-finalis"],
+			["triduum","completorium","antiphona-bmv"],
+			["triduum","completorium","divinum-auxilium"],
+			["triduum","completorium","prex-triplex"]
+		],
+		"datum":""
+	},
+	{
+		"tags":["triduum","completorium","nunc-dimittis"],
+		"datum":[["/psalmi/nunc-dimittis"]]
+	},
+	{
+		"tags":["parasceve","nomen"],
+		"datum":"Feria VI in Parasceve"
+	},
+	{
+		"tags":["parasceve","laudes","antiphona","antiphona-i"],
+		"src":"gregobase/2555",
+		"datum":"Próprio * Fílio suo non pepércit Deus, sed pro nobis ómnibus trádidit illum."
+	},
+	{
+		"tags":["parasceve","laudes","antiphona","antiphona-ii"],
+		"src":"gregobase/2753",
+		"datum":"Anxiátus est super me * spíritus meus, in me turbátum est cor meum."
+	},
+	{
+		"tags":["parasceve","laudes","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxlii"]]
+	},
+	{
+		"tags":["parasceve","laudes","antiphona","antiphona-iii"],
+		"src":"gregobase/2552",
+		"datum":"Ait latro ad latrónem: * Nos quidem digna factis recípimus, hic autem quid fecit? Meménto mei Dómine, dum véneris in regnum tuum."
+	},
+	{
+		"tags":["parasceve","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/2827",
+		"datum":"Cum conturbáta fúerit * ánima mea Dómine, misericórdiæ memor eris."
+	},
+	{
+		"tags":["parasceve","laudes","canticum"],
+		"datum":[["/psalmi/canticum-habacuc"]]
+	},
+	{
+		"tags":["parasceve","laudes","antiphona","antiphona-v"],
+		"src":"gregobase/1827",
+		"datum":"Meménto mei * Dómine, dum véneris in regnum tuum."
+	},
+	{
+		"tags":["parasceve","laudes","versiculus"],
+		"datum":["V. Collocávit me in obscúris.","R. Sicut mórtuos sǽculi."]
+	},
+	{
+		"tags":["parasceve","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2896",
+		"datum":"Posuérunt * super caput ejus causam ipsíus scriptam: Jesus Nazarénus, Rex Judæórum."
+	},
+	{
 		"tags":["parasceve","vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Cum accepísset * acétum, dixit: Consummátum est: et inclináto cápite emísit spíritum."
+	},
+	{
+		"tags":["sabbatum-sanctum","nomen"],
+		"datum":"Sabbato Sancto"
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-i"],
+		"src":"gregobase/1957",
+		"datum":"O mors, * ero mors tua, morsus tuus ero inférne."
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-ii"],
+		"src":"gregobase/2212",
+		"datum":"Plangent eum * quasi unigénitum, quia ínnocens Dóminus occísus est."
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xlii"]]
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-iii"],
+		"src":"gregobase/2263",
+		"datum":"Atténdite * univérsi pópuli, et vidéte dolórem meum."
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/2253",
+		"datum":"A porta ínferi * érue Dómine ánimam meam."
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","canticum"],
+		"datum":[["/psalmi/canticum-ezechiae"]]
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-v"],
+		"src":"gregobase/1901",
+		"datum":"O vos omnes * qui transítis per viam, atténdite et vidéte, si est dolor sicut dolor meus."
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","versiculus"],
+		"datum":["V. Caro mea requiéscet in spe.","R. Et non dabis sanctum tuum vidére corruptiónem."]
+	},
+	{
+		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2288",
+		"datum":"Mulíeres * sedéntes ad monuméntum lamentabántur, flentes Dóminum."
 	}
 ]

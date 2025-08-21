@@ -145,6 +145,8 @@ def rite():
 				else:
 					return i - {'primarium', 'commemoratio', 'psalmi'}
 			tags = [votivize(i) for i in tags]
+			if not any('officium-defunctorum' in i for i in tags):
+				tags.append({'officium-defunctorum','semiduplex','primarium'})
 
 
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]

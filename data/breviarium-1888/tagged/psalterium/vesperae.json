@@ -9,8 +9,8 @@
 			["vesperae","dg-capituli"],
 			["vesperae","hymnus"],
 			["vesperae","versiculus"],
-			["vesperae","magnificat","antiphona-prior"],
-			["/psalmi/magnificat,gloria"],
+			["vesperae","antiphona-prior-magnificat"],
+			["magnificat"],
 			["vesperae","antiphona","antiphona-magnificat","repetita"],
 			["vesperae","preces"],
 			["dominus-vobiscum"],
@@ -91,9 +91,13 @@
 		]
 	},
 	{
-		"tags":["vesperae","magnificat","antiphona-prior"],
+		"tags":["vesperae","antiphona-prior-magnificat"],
 		"duplex":[["vesperae","antiphona","antiphona-magnificat"]],
 		"datum":[["vesperae","antiphona","antiphona-magnificat","intonata"]]
+	},
+	{
+		"tags":["vesperae","magnificat"],
+		"datum":[["/psalmi/magnificat,gloria"]]
 	},
 	{
 		"tags":["vesperae","dominica","ii-vesperae","antiphona-i","antiphona"],

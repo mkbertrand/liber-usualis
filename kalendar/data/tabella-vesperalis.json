@@ -543,5 +543,11 @@
 		"response":"duplicate",
 		"remove":"commemoratio",
 		"adde":["vesperae","benedicamus-domino"]
+	},
+	{
+		"include":["triduum"],
+		"response":[
+			{"include":["antiphona-bmv"],"response":"dele","target":1}
+		]
 	}
 ]

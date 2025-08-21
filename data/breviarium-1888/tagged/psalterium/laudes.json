@@ -8,8 +8,8 @@
 			["laudes","dg-capituli"],
 			["laudes","hymnus"],
 			["laudes","versiculus"],
-			["laudes","benedictus","antiphona-prior"],
-			["/psalmi/benedictus,gloria"],
+			["laudes","antiphona-prior-benedictus"],
+			["laudes","benedictus"],
 			["laudes","antiphona","antiphona-benedictus","repetita"],
 			["laudes","preces"],
 			["dominus-vobiscum"],
@@ -22,9 +22,13 @@
 		]
 	},
 	{
-		"tags":["laudes","benedictus","antiphona-prior"],
+		"tags":["laudes","antiphona-prior-benedictus"],
 		"duplex":[["laudes","antiphona","antiphona-benedictus"]],
 		"datum":[["laudes","antiphona","antiphona-benedictus","intonata"]]
+	},
+	{
+		"tags":["laudes","benedictus"],
+		"datum":[["/psalmi/benedictus,gloria"]]
 	},
 	{
 		"tags":["laudes","psalmi","duplex"],
