@@ -97,6 +97,7 @@ function ritelist(daytags, ambit) {
 			&& !(included.includes('litaniae-sanctorum') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(daytags.some(i => i.includes('triduum')) && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(daytags.some(i => i.includes('triduum')) && ambit[i].content[j].what == 'officium-capituli')
+			&& !(daytags.some(i => i.includes('pascha') && i.includes('i-vesperae') && i.includes('duplex-i-classis')) && ambit[i].id == 'vesperae' && (ambit[i].content[j].what == 'antiphona-bmv' || ambit[i].content[j].what == 'aperi-domine' || ambit[i].content[j].what == 'sacrosanctae'))
 			) {
 				lit.push([ambit[i].content[j].what, ambit[i].content[j].where]);
 			}

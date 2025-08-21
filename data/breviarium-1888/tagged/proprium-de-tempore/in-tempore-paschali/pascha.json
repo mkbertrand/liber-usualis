@@ -4,27 +4,55 @@
 		"datum":"In Dominica Resurrectionis"
 	},
 	{
-		"tags":["pascha","i-vesperae","completorium","antiphona"],
+		"tags":["pascha","i-vesperae","vesperae","hora"],
+		"datum":[
+			["pascha","antiphona","antiphona-i","duplex"],
+			["/psalmi/psalmus-cxvi,gloria"],
+			["pascha","antiphona","antiphona-i","repetita"],
+			["pascha","antiphona","antiphona-magnificat","duplex"],
+			["pascha","magnificat"],
+			["pascha","antiphona","antiphona-magnificat","repetita"],
+			["dominus-vobiscum"],
+			["pascha","collecta-primaria"],
+			["dominus-vobiscum"],
+			["pascha","dismissio"]
+
+		]
+	},
+	{
+		"tags":["pascha","i-vesperae","antiphona-i"],
+		"src":"gregobase/2308",
+		"datum":"Allelúja, * allelúja, allelúja."
+	},
+	{
+		"tags":["pascha","i-vesperae","collecta"],
+		"datum":"Spíritum nobis Dómine tuæ caritátis infúnde: ut quos sacraméntis paschálibus satiásti, tua fácias pietáte concórdes.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["dismissio","pascha","i-vesperae","vesperae"],
+		"src":"gregobase/15464",
+		"datum":["Ite missa est, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
+	},
+	{
+		"tags":["dismissio","pascha","i-vesperae","vesperae","privata"],
+		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja.",["pater-noster-secreta"]]
+	},
+	{
+		"tags":[
+			["pascha","i-vesperae","completorium","antiphona"],
+			["pascha","i-vesperae","completorium","hymnus"],
+			["pascha","i-vesperae","completorium","capitulum"],
+			["pascha","i-vesperae","completorium","responsorium-breve"],
+			["pascha","i-vesperae","completorium","versiculus"]
+		],
 		"datum":""
 	},
 	{
-		"tags":["pascha","i-vesperae","completorium","hymnus"],
-		"datum":""
-	},
-	{
-		"tags":["pascha","i-vesperae","completorium","capitulum"],
-		"datum":""
-	},
-	{
-		"tags":["pascha","i-vesperae","completorium","responsorium-breve"],
-		"datum":""
-	},
-	{
-		"tags":["pascha","i-vesperae","completorium","versiculus"],
-		"datum":""
-	},
-	{
-		"tags":["pascha","i-vesperae","completorium","antiphona","antiphona-nunc-dimittis"],
+		"tags":[
+			["pascha","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+			["pascha","i-vesperae","completorium","antiphona","antiphona-nunc-dimittis"]
+		],
 		"src":"gregobase/12662",
 		"datum":"Véspere autem sábbati, * quæ lucéscit in prima sábbati, venit María Magdaléne, et áltera María vidére sepúlchrum, allelúja."
 	},
