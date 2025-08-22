@@ -549,5 +549,11 @@
 		"response":[
 			{"include":["antiphona-bmv"],"response":"dele","target":1}
 		]
+	},
+	{
+		"include":["assumptio-bmv","dies-octava","i-vesperae"],
+		"response":[
+			{"include":["joanna-francisca","ii-vesperae","psalmi"],"response":"dele","target":1}
+		]
 	}
 ]
