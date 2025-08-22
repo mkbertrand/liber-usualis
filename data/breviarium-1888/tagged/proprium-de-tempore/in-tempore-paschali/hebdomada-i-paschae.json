@@ -58,52 +58,60 @@
 		"datum":"Cum esset sero * die illa una sabbatórum, et fores essent clausæ, ubi erant discípuli congregáti in unum, stetit Jesus in médio, et dixit eis: Pax vobis, allelúja."
 	},
 	{
+		"tags":["dominica-in-albis","sexta","capitulum"],
+		"datum":"Quis est autem qui vincit mundum, + nisi qui credit quóniam Jesus est Fílius Dei? hic est, qui venit per aquam et sánguinem, Jesus Christus: * non in aqua solum, sed in aqua et sánguine."
+	},
+	{
+		"tags":["dominica-in-albis","nona","capitulum"],
+		"datum":"Si testimónium hóminum accípimus, testimónium Dei majus est: + quóniam hoc est testimónium Dei, quod majus est, quóniam testificátus est de Fílio suo. * Qui credit in Fílium Dei, habet testimónium Dei in se."
+	},
+	{
 		"tags":["dominica-in-albis","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1930",
 		"datum":"Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-paschae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12288",
 		"datum":"Surgens Jesus * mane prima sábbati, appáruit primo Maríæ Magdalénæ, de qua ejécerat septem dæmónia, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-paschae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12598",
 		"datum":"Pax vobis, * ego sum, allelúja: nolíte timére, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-paschae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11770",
 		"datum":"Præcédam vos * in Galilǽam, ibi me vidébitis, sicut dixi vobis, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-paschae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12184",
 		"datum":"Mitte manum tuam, * et cognósce loca clavórum, allelúja: et noli esse incrédulus, sed fidélis, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-paschae","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12312",
 		"datum":"Ego sum vitis vera, * allelúja: et vos pálmites veri, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-paschae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2517",
 		"datum":"Quia vidísti me, * Thoma, credidísti: beáti qui non vidérunt, et credidérunt, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-paschae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11986",
 		"datum":"Ardens est cor meum, * desídero vidére Dóminum meum: quæro, et non invénio, ubi posuérunt eum, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-i-paschae","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12460",
 		"datum":"Misi dígitum meum * in fixúras clavórum, et manum meam in latus ejus, et dixi: Dóminus meus, et Deus meus, allelúja."
 	},
 	{
-		"tags":["hebdomada-i-paschae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-i-paschae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12052",
 		"datum":"Venérunt ad monuméntum * María Magdaléne, et áltera María, vidére sepúlchrum, allelúja."
 	}

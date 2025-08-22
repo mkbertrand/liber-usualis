@@ -1,7 +1,15 @@
 [
 	{
+		"tags":["hebdomada-ii-paschae","dominica","nomen"],
+		"datum":"Dominica II post Pascha"
+	},
+	{
 		"tags":["hebdomada-ii-paschae","basis-nominis"],
 		"datum":"II post Octavam Paschæ"
+	},
+	{
+		"tags":["hebdomada-ii-paschae","dominica","capitulum"],
+		"datum":"Caríssimi: Christus passus est pro nobis, + vobis relínquens exémplum, ut sequámini vestígia ejus. * Qui peccátum non fecit, nec invéntus est dolus in ore ejus."
 	},
 	{
 		"tags":[
@@ -17,52 +25,60 @@
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
+		"tags":["hebdomada-ii-paschae","dominica","sexta","capitulum"],
+		"datum":"Tradébat autem judicánti se injúste: + qui peccáta nostra ipse pértulit in córpore suo super lignum: ut peccátis mórtui, justítiæ vivámus: * cujus livóre sanáti sumus."
+	},
+	{
+		"tags":["hebdomada-ii-paschae","dominica","nona","capitulum"],
+		"datum":"Erátis enim sicut oves errántes, + sed convérsi estis nunc ad pastórem, * et epíscopum animárum vestrárum."
+	},
+	{
 		"tags":["hebdomada-ii-paschae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2247",
 		"datum":"Ego sum pastor bonus, * qui pasco oves meas, et pro óvibus meis pono ánimam meam, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-paschae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12890",
 		"datum":"Eúntes * in mundum, allelúja: docéte omnes Gentes, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-paschae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12204",
 		"datum":"Pastor bonus * ánimam suam ponit pro óvibus suis, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-paschae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12755",
 		"datum":"Eúntes in mundum, * docéte omnes Gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus sancti, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-paschae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/19818",
 		"datum":"Mercenárius autem, * cujus non sunt oves própriæ, videt lupum veniéntem, et dimíttit oves, et fugit, et lupus rapit, et dispérget oves, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-paschae","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12867",
 		"datum":"Ite, nuntiáte * frátribus meis, allelúja: ut eant in Galilǽam, allelúja: ibi me vidébunt, allelúja, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-paschae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12525",
 		"datum":"Sicut novit me Pater, * et ego cognósco Patrem, et ánimam meam pono pro óvibus meis, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-paschae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12765",
 		"datum":"Tu solus peregrínus es, * et non audísti de Jesu, quómodo tradidérunt eum in damnatiónem mortis? allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-ii-paschae","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12891",
 		"datum":"Álias oves hábeo, * quæ non sunt ex hoc ovíli: et illas opórtet me addúcere, et vocem meam aúdient: et fiet unum ovíle, et unus pastor, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-paschae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-ii-paschae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13095",
 		"datum":"Nonne sic opórtuit * pati Christum, et ita intráre in glóriam suam? allelúja."
 	}

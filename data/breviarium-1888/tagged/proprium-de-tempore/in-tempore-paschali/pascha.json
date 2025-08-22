@@ -232,6 +232,14 @@
 		"datum":""
 	},
 	{
+		"tags":["prima","pascha","psalmi"],
+		"datum":[
+			["/psalmi/psalmus-liii,gloria"],
+			["/psalmi/psalmus-cxviii:1-16,gloria"],
+			["/psalmi/psalmus-cxviii:17-32,gloria"]
+		]
+	},
+	{
 		"tags":["pascha","vesperae","psalmus"],
 		"datum":[["dominica","ii-vesperae","vesperae","psalmus"]]
 	},
@@ -278,9 +286,37 @@
 		"datum":"Allelúja, * allelúja, allelúja, allelúja."
 	},
 	{
+		"tags":["pascha","nomen"],
+		"feria-ii":"Feria II infra Octavam Paschæ",
+		"feria-iii":"Feria III infra Octavam Paschæ",
+		"feria-iv":"Feria IV infra Octavam Paschæ",
+		"feria-v":"Feria V infra Octavam Paschæ",
+		"feria-vi":"Feria VI infra Octavam Paschæ"
+	},
+	{
+		"tags":["pascha","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/11971",
+		"datum":"Jesus junxit se * discípulis suis in via, et ibat cum illis: óculi autem eórum tenebántur, ne eum agnóscerent: et increpávit eos, dicens: O stulti et tardi corde ad credéndum in his, quæ locúti sunt Prophétæ, allelúja."
+	},
+	{
+		"tags":["pascha","feria-ii","collecta"],
+		"datum":"Deus, qui solemnitáte pascháli, mundo remédia contulísti: + pópulum tuum, quǽsumus, cœlésti dono proséquere; * ut et perféctam libertátem cónsequi mereátur, et ad vitam profíciat sempitérnam.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["pascha","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2314",
 		"datum":"Qui sunt hi sermónes, * quos confértis ad ínvicem ambulántes, et estis tristes? allelúja."
+	},
+	{
+		"tags":["pascha","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12689",
+		"datum":"Stetit Jesus * in médio discipulórum suórum, et dixit eis: Pax vobis, allelúja, allelúja."
+	},
+	{
+		"tags":["pascha","feria-iii","collecta"],
+		"datum":"Deus, qui Ecclésiam tuam novo semper fœtu multíplicas: + concéde fámulis tuis; ut sacraméntum vivéndo téneant, * quod fide percepérunt.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["pascha","feria-iii","vesperae","antiphona","antiphona-magnificat"],
@@ -288,9 +324,29 @@
 		"datum":"Vidéte manus meas * et pedes meos, quia ego ipse sum, allelúja, allelúja."
 	},
 	{
+		"tags":["pascha","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12153",
+		"datum":"Míttite in déxteram * navígii rete, et inveniétis, allelúja."
+	},
+	{
+		"tags":["pascha","feria-iv","collecta"],
+		"datum":"Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: + concéde propítius; ut per temporália festa quæ ágimus, * perveníre ad gaúdia ætérna mereámur.",
+		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
 		"tags":["pascha","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2023",
 		"datum":"Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja."
+	},
+	{
+		"tags":["pascha","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/11828",
+		"datum":"María stabat * ad monuméntum plorans, et vidit duos Ángelos in albis, sedéntes, et sudárium quod fúerat super caput Jesu, allelúja."
+	},
+	{
+		"tags":["pascha","feria-v","collecta"],
+		"datum":"Deus, qui ad diversitátem Géntium in confessióne tui nóminis adunásti: + da, ut renátis fonte baptísmatis * una sit fides méntium et píetas actiónum.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["pascha","feria-v","vesperae","antiphona","antiphona-magnificat"],
@@ -298,8 +354,32 @@
 		"datum":"Tulérunt Dóminum meum, * et néscio ubi posuérunt eum: si tu sustulísti eum, dícito mihi, allelúja: et ego eum tollam, allelúja."
 	},
 	{
+		"tags":["pascha","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12261",
+		"datum":"Úndecim discípuli * in Galilǽa vidéntes Dóminum adoravérunt, allelúja."
+	},
+	{
+		"tags":["pascha","feria-vi","collecta"],
+		"datum":"Omnípotens sempitérne Deus, qui paschále sacraméntum in reconciliatiónis humánæ fœ\u0301dere contulísti: + da méntibus nostris; ut quod professióne celebrámus, * imitémur efféctu.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
 		"tags":["pascha","feria-vi","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2917",
 		"datum":"Data est mihi * omnis potéstas in cœlo et in terra, allelúja."
+	},
+	{
+		"tags":["pascha","sabbatum","nomen"],
+		"datum":"Sabbato in Albis"
+	},
+	{
+		"tags":["pascha","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12917",
+		"datum":"Currébant * duo simul, et ille álius discípulus præcucúrrit cítius Petro, et venit prior ad monuméntum, allelúja."
+	},
+	{
+		"tags":["pascha","sabbatum","collecta"],
+		"datum":"Concéde quǽsumus omnípotens Deus: + ut qui festa paschália venerándo égimus, * per hæc contíngere ad gaúdia ætérna mereámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

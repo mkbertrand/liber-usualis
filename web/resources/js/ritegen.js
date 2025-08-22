@@ -329,6 +329,9 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			if ('tags' in data && data['tags'].join(' ').includes('canticum')) {
 				data['tags'].push('canticum');
 			}
+			if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {
+				header = 'Antiphona';
+			}
 			if (data['tags'].includes('hora')) {
 				if (data['tags'].includes('matutinum')) {
 					header = 'Ad Matutinum';
@@ -360,7 +363,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 					header = 'Versiculus';
 				}
 				vscl = unpack(data['datum']);
-				if (typeof vscl == 'string' && vscl == '') {
+				if (typeof vscl === 'string' && vscl == '') {
 					header = '';
 					data['datum'] = '';
 				} else {
@@ -380,7 +383,7 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 			}
 			for (i of data['tags']) {
 				// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
-				if (i in titled && !(typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes(i)) && data['datum'] != '') {
+				if (i in titled && !(typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes(i)) && data['datum'] != '' && header == '') {
 					header = titled[i];
 				}
 			}
