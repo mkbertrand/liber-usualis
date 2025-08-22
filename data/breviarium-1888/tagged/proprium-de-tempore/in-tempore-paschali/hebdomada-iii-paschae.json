@@ -8,6 +8,10 @@
 		"datum":"III post Octavam Paschæ"
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","capitulum"],
+		"datum":"Caríssimi: Óbsecro vos tamquam ádvenas et peregrínos + abstinére vos a carnálibus desidériis, * quæ mílitant advérsus ánimam."
+	},
+	{
 		"tags":[
 			["hebdomada-iii-paschae","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 			["hebdomada-iii-paschae","dominica","laudes","antiphona","antiphona-benedictus"]
@@ -21,52 +25,60 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","sexta","capitulum"],
+		"datum":"Subjécti ígitur estóte omni humánæ creatúræ propter Deum: + sive regi quasi præcellénti: * sive dúcibus tamquam ab eo missis ad vindíctam malefactórum, laudem vero bonórum."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","nona","capitulum"],
+		"datum":"Servi súbditi estóte in omni timóre dóminis, + non tantum bonis et modéstis, sed étiam dýscolis. * Hæc est enim grátia in Christo Jesu Dómino nostro."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/19819",
 		"datum":"Amen dico vobis, * quia plorábitis et flébitis vos: mundus autem gaudébit, vos vero contristabímini: sed tristítia vestra convertétur in gaúdium, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-iii-paschae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12489",
 		"datum":"Et incípiens * a Móyse et ómnibus Prophétis, interpretabátur illis Scriptúras, quæ de ipso erant, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-paschae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12301",
 		"datum":"Tristítia vestra * vertétur in gaúdium, allelúja: et gaúdium vestrum nemo tollet a vobis, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-iii-paschae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12726",
 		"datum":"Et coëgérunt * illum, dicéntes: Mane nobíscum Dómine, quóniam advesperáscit, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-paschae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12906",
 		"datum":"Tristítia implévit * cor vestrum: et gaúdium vestrum nemo tollet a vobis, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-iii-paschae","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13284",
 		"datum":"Mane nobíscum, * quóniam advesperáscit, et inclináta est jam dies, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-paschae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12164",
 		"datum":"Tristítia vestra, * allelúja, vertétur in gaúdium, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-iii-paschae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13087",
 		"datum":"Et intrávit * cum illis: et factum est, dum recúmberet cum illis, accépit panem et benedíxit, ac fregit, et porrigébat illis, allelúja, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["hebdomada-iii-paschae","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12776",
 		"datum":"Amen amen dico vobis, * íterum vidébo vos, et gaudébit cor vestrum, et gaúdium vestrum nemo tollet a vobis, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"tags":["hebdomada-iii-paschae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11845",
 		"datum":"Cognovérunt * Dóminum Jesum, allelúja, in fractióne panis, allelúja."
 	}

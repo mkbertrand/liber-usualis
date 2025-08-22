@@ -1,8 +1,25 @@
 [
 	{
+		"tags":["nomen"],
+		"feria-ii-rogationis":"Feria II in Rogationibus",
+		"feria-iii-rogationis":"Feria III in Rogationibus",
+		"feria-iv-rogationis":"Feria IV in Rogationibus Vigilia Ascensionis"
+	},
+	{
 		"tags":["feria-ii-rogationis","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/15304",
 		"datum":"Petíte, et accipiétis: * quǽrite, et inveniétis: pulsáte, et aperiétur vobis, allelúja."
+	},
+	{
+		"tags":[
+			["feria-ii-rogationis","matutinum","collecta"],
+			["feria-ii-rogationis","laudes","collecta"],
+			["feria-ii-rogationis","tertia","collecta"],
+			["feria-ii-rogationis","sexta","collecta"],
+			["feria-ii-rogationis","nona","collecta"]
+		],
+		"datum":"Præsta quǽsumus omnípotens Deus: + ut qui in afflictióne nostra de tua pietáte confídimus; * contra advérsa ómnia tua semper protectióne muniámur.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["feria-ii-rogationis","vesperae","antiphona","antiphona-magnificat"],

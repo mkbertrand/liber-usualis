@@ -440,7 +440,8 @@
 			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-minus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["semiduplex","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
-			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0}
+			{"include":["feria-ii-rogationis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["feria-major","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{
