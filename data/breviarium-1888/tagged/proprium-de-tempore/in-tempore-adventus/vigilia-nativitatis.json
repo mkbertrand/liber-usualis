@@ -72,7 +72,7 @@
 	},
 	{	
 		"tags":["vigilia-nativitatis","capitulum"],
-		"datum":"Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem."
+		"datum":"Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, + quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, * qui factus est ei ex sémine David secúndum carnem."
 	},
 	{
 		"tags":["vigilia-nativitatis","hymnus"],
@@ -88,8 +88,8 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","collecta"],
-		"terminatio":"Dóminum nostrum Jesum Christum Fílium tuum: Qui tecum vivit et regnat in unitáte Spíritus. Per ómnia sǽcula sæculórum. Amen.", 
-		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque júdicem secúri videámus,"
+		"datum": "Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: + præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, * veniéntem quoque júdicem secúri videámus, Dóminum nostrum Jesum Christum Fílium tuum:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
 	},
 	{
 		"tags":["vigilia-nativitatis","tertia","responsorium-breve"],
@@ -104,7 +104,7 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","sexta","capitulum"],
-		"datum":"Qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis, ex resurrectióne mortuórum Jesu Christi Dómini nostri."
+		"datum":"Qui prædestinátus est Fílius Dei in virtúte + secúndum spíritum sanctificatiónis, * ex resurrectióne mortuórum Jesu Christi Dómini nostri."
 	},
 	{
 		"tags":["vigilia-nativitatis","sexta","responsorium-breve"],
@@ -119,7 +119,7 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","nona","capitulum"],
-		"datum":"Per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi Dómini nostri."
+		"datum":"Per quem accépimus grátiam, et apostolátum + ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, * in quibus estis et vos vocáti Jesu Christi Dómini nostri."
 	},
 	{
 		"tags":["vigilia-nativitatis","nona","responsorium-breve"],

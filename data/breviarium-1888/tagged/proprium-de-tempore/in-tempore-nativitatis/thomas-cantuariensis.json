@@ -1,40 +1,28 @@
 [
 	{
 		"tags":["thomas-cantuariensis","nomen"],
-		"datum":"Sancti Thomæ Cantuariensis"
+		"datum":"S. Thomæ Cantuariensis"
 	},
 	{
 		"tags":["thomas-cantuariensis","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, pro cujus Ecclésia gloriósus Póntifex Thomas gládiis impiórum occúbuit: + præsta quǽsumus; ut omnes, qui ejus implórant auxílium, * petitiónis suæ salutárem consequántur efféctum."
+		"datum":"Deus, pro cujus Ecclésia gloriósus Póntifex Thomas gládiis impiórum occúbuit: + præsta quǽsumus; ut omnes, qui ejus implórant auxílium, * petitiónis suæ salutárem consequántur efféctum.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["thomas-cantuariensis","matutinum","nocturna-ii","lectio","lectio-i"],
-		"datum":"Thomas, Londíni in Ánglia natus, Theobáldo succéssit Cantuariénsi epíscopo: et qui ántea in administrándo cancelláriæ múnere præcláre se gésserat, in episcopáli offício fortis et invíctus fuit. Cum enim Henrícus secúndus Ángliæ rex, convocátis ad se epíscopis et procéribus regni, leges ferret utilitáti ac dignitáti ecclesiásticæ repugnántes, ádeo constánter óbstitit régiæ cupiditáti, ut neque pollicitatiónibus, neque terróribus de senténtia decédens, próxime conjiciéndus in cárcerem clam recésserit. Inde propínqui ejus omnis ætátis ejécti, amíci, fautóres omnes, iis, quibus per ætátem licéret, jurejurándo adstríctis, univérsos Thomam aditúros, si fortásse miserábili suórum calamitátis aspéctu moverétur, qui a sancto propósito privátis incómmodis deterréri mínime potuísset. Non respéxit carnem aut sánguinem, neque ullus in eo humanitátis sensus pastorális offícii constántiam labefactávit."
+		"tags":["thomas-cantuariensis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Thomas, Londíni in Ánglia natus, Theobáldo succéssit Cantuariénsi epíscopo: et qui ántea in administrándo cancelláriæ múnere præcláre se gésserat, in episcopáli offício fortis et invíctus fuit. Cum enim Henrícus secúndus Ángliæ rex, convocátis ad se epíscopis et procéribus regni, leges ferret utilitáti ac dignitáti ecclesiásticæ repugnántes, ádeo constánter óbstitit régiæ cupiditáti, ut neque pollicitatiónibus, neque terróribus de senténtia decédens, próxime conjiciéndus in cárcerem clam recésserit. Inde propínqui ejus omnis ætátis ejécti, amíci, fautóres omnes, iis, quibus per ætátem licéret, jurejurándo adstríctis, univérsos Thomam aditúros, si fortásse miserábili suórum calamitátis aspéctu moverétur, qui a sancto propósito privátis incómmodis deterréri mínime potuísset. Non respéxit carnem aut sánguinem, neque ullus in eo humanitátis sensus pastorális offícii constántiam labefactávit.",
+		"lectio-ii":"Cóntulit ígitur se ad Alexándrum tértium Pontíficem, a quo benígne accéptus est: et inde proféctus, mónachis Pontiniacénsis monastérii, Cisterciénsis órdinis, ab eódem commendátus. Quod ut cognóvit Henrícus, missis ad convéntum fratrum Cisterciénsium minácibus lítteris, Thomam e Pontiníaco monastério exturbáre conátur. Quare vir sanctus, véritus ne sua causa mali áliquid Cisterciénsis família paterétur, sponte discéssit, et Ludovícum Gálliæ regem ejus invitátu convénit: ubi támdiu fuit, quoad Pontífice Máximo, et ipso rege agéntibus, ab exsílio, summa totíus regni gratulatióne revocátur. Qui dum boni pastóris offícium secúrus exséquitur, ecce calumniatóres ad regem déferunt, eum multa contra regnum et públicam quiétem molíri, ut proptérea sǽpius conquererétur rex, se in suo regno cum uno sacerdóte pacem habére non posse.",
+		"lectio-iii":"Ex qua regis voce nefárii satéllites sperántes gratum se regi factúros, si Thomam e médio tóllerent, clam conveniéntes Cantuáriam, epíscopum in templo vespertínis horis óperam dantem aggrediúntur. Qui cléricis templi áditus præclúdere conántibus accúrrens, óstium apéruit, illis usus verbis ad suos: Non est Dei Ecclésia custodiénda more castrórum: et ego pro Ecclésia Dei libénter mortem subíbo. Tum ad mílites: Vos Dei jussu cavéte, ne cuípiam meórum noceátis. Deínde flexis génibus, Deo, beátæ Maríæ, sancto Dionýsio et réliquis sanctis ejus ecclésiæ patrónis, Ecclésiam et seípsum comméndans, sacrum caput eádem constántia, qua iniquíssimi regis légibus restíterat, ímpio ferro præcidéndum óbtulit, quarto Kaléndas Januárii, anno Dómini millésimo centésimo septuagésimo primo: cujus cérebro respérsum est totíus templi paviméntum. Quem multis póstea illústrem miráculis idem Alexánder Póntifex rétulit in sanctórum númerum."
 	},
 	{
-		"tags":["thomas-cantuariensis","matutinum","nocturna-ii","lectio","lectio-ii"],
-		"datum":"Cóntulit ígitur se ad Alexándrum tértium Pontíficem, a quo benígne accéptus est: et inde proféctus, mónachis Pontiniacénsis monastérii, Cisterciénsis órdinis, ab eódem commendátus. Quod ut cognóvit Henrícus, missis ad convéntum fratrum Cisterciénsium minácibus lítteris, Thomam e Pontiníaco monastério exturbáre conátur. Quare vir sanctus, véritus ne sua causa mali áliquid Cisterciénsis família paterétur, sponte discéssit, et Ludovícum Gálliæ regem ejus invitátu convénit: ubi támdiu fuit, quoad Pontífice Máximo, et ipso rege agéntibus, ab exsílio, summa totíus regni gratulatióne revocátur. Qui dum boni pastóris offícium secúrus exséquitur, ecce calumniatóres ad regem déferunt, eum multa contra regnum et públicam quiétem molíri, ut proptérea sǽpius conquererétur rex, se in suo regno cum uno sacerdóte pacem habére non posse."
-	},
-	{
-		"tags":["thomas-cantuariensis","matutinum","nocturna-ii","lectio","lectio-iii"],
-		"datum":"Ex qua regis voce nefárii satéllites sperántes gratum se regi factúros, si Thomam e médio tóllerent, clam conveniéntes Cantuáriam, epíscopum in templo vespertínis horis óperam dantem aggrediúntur. Qui cléricis templi áditus præclúdere conántibus accúrrens, óstium apéruit, illis usus verbis ad suos: Non est Dei Ecclésia custodiénda more castrórum: et ego pro Ecclésia Dei libénter mortem subíbo. Tum ad mílites: Vos Dei jussu cavéte, ne cuípiam meórum noceátis. Deínde flexis génibus, Deo, beátæ Maríæ, sancto Dionýsio et réliquis sanctis ejus ecclésiæ patrónis, Ecclésiam et seípsum comméndans, sacrum caput eádem constántia, qua iniquíssimi regis légibus restíterat, ímpio ferro præcidéndum óbtulit, quarto Kaléndas Januárii, anno Dómini millésimo centésimo septuagésimo primo: cujus cérebro respérsum est totíus templi paviméntum. Quem multis póstea illústrem miráculis idem Alexánder Póntifex rétulit in sanctórum númerum."
-	},
-	{
-		"tags":["thomas-cantuariensis","matutinum","nocturna-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["thomas-cantuariensis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Joánnem.",
 			"In illo témpore: Dixit Jesus pharisǽis: Ego sum pastor bonus. Bonus pastor ánimam suam dat pro óvibus suis. Et réliqua.",
 			"Homilía sancti Joánnis Chrysóstomi.",
 			"Magnum quiddam, dilectíssimi, magnum, inquam, est Ecclésiæ prælátio, et quæ multa índiget sapiéntia et fortitúdine, qualem Christus propósuit: ut ánimam pro óvibus ponámus, et numquam illas deserámus: ut lupo generóse resistámus. Hæc enim inter pastórem et mercenárium est differéntia. Alter própriæ, contémptis óvibus: alter, sua contémpta, óvium semper salúti invígilat. Pastóris ergo exémplo demonstráto, deceptóres duos méminit; furem mactántem et rapiéntem oves; et mercenárium permitténtem, neque defendéntem commíssas."
-		]
-	},
-	{
-		"tags":["thomas-cantuariensis","matutinum","nocturna-iii","lectio","lectio-ii"],
-		"datum":"Quod superióri témpore Ezéchiel his verbis insectátus est: Væ pastóribus Ísraël: nonne pascébant semetípsos? nonne greges pascúntur a pastóribus? Sed illi contrárium faciébant, quod máximæ malítiæ genus est, et plurimórum causa malórum. Idcírco inquit: Neque quod abjéctum erat, reducébant: neque quod períerat, quærébant, neque confráctum alligábant, neque infírmum consolidábant: quóniam se, non gregem pascébant. Idem et Paulus áliis verbis signíficat: Omnes quæ sua sunt, quærunt, non quæ Jesu Christi."
-	},
-	{
-		"tags":["thomas-cantuariensis","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Verum ab utróque se dissidére osténdit Christus: ab illis quidem, qui in aliórum perníciem véniunt, cum dicat, se proptérea venísse, ut vitam habérent, et abundántius habérent: ab his autem, qui oves a lupis rapi negligébant, dicéndo se propter eas ánimam pónere, ne oves perírent. Nam cum Judǽi ipsum interímere vellent, non proptérea déstitit a doctrína, neque credéntes trádidit, sed pérstitit, et pértulit mortem: ídeo frequénter inquit: Ego sum pastor bonus. Quæ cum nullo niti testimónio videréntur, (quod enim póneret ánimam suam, non multo post re monstrátum est: quod autem vitam habérent, et abundántius habérent, eventúrum erat in futúro sǽculo) álterum ab áltero confírmat."
+		],
+		"lectio-ii":"Quod superióri témpore Ezéchiel his verbis insectátus est: Væ pastóribus Ísraël: nonne pascébant semetípsos? nonne greges pascúntur a pastóribus? Sed illi contrárium faciébant, quod máximæ malítiæ genus est, et plurimórum causa malórum. Idcírco inquit: Neque quod abjéctum erat, reducébant: neque quod períerat, quærébant, neque confráctum alligábant, neque infírmum consolidábant: quóniam se, non gregem pascébant. Idem et Paulus áliis verbis signíficat: Omnes quæ sua sunt, quærunt, non quæ Jesu Christi.",
+		"lectio-iii":"Verum ab utróque se dissidére osténdit Christus: ab illis quidem, qui in aliórum perníciem véniunt, cum dicat, se proptérea venísse, ut vitam habérent, et abundántius habérent: ab his autem, qui oves a lupis rapi negligébant, dicéndo se propter eas ánimam pónere, ne oves perírent. Nam cum Judǽi ipsum interímere vellent, non proptérea déstitit a doctrína, neque credéntes trádidit, sed pérstitit, et pértulit mortem: ídeo frequénter inquit: Ego sum pastor bonus. Quæ cum nullo niti testimónio videréntur, (quod enim póneret ánimam suam, non multo post re monstrátum est: quod autem vitam habérent, et abundántius habérent, eventúrum erat in futúro sǽculo) álterum ab áltero confírmat."
 	}
 ]

@@ -58,8 +58,8 @@
 	},
 	{
 		"tags":["circumcisio","collecta"],
-		"terminatio":[["terminatio","qui-tecum-vivit"]],
-		"datum":"Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fœcúnda, humáno géneri prǽmia præstitísti: + tríbue quǽsumus; ut ipsam pro nobis intercédere sentiámus, * per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:"
+		"datum":"Deus, qui salútis ætérnæ, beátæ Maríæ virginitáte fœcúnda, humáno géneri prǽmia præstitísti: + tríbue quǽsumus; ut ipsam pro nobis intercédere sentiámus, * per quam merúimus auctórem vitæ suscípere, Dóminum nostrum Jesum Christum Fílium tuum:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
 	},
 	{
 		"tags":["circumcisio","matutinum","antiphona","antiphona-invitatorium"],
@@ -267,36 +267,20 @@
 		"datum":"Mirábile mystérium * declarátur hódie: innovántur natúræ, Deus homo factus est: id quod fuit assúmpsit; non commixtiónem passus, neque divisiónem."
 	},
 	{
-		"tags":["circumcisio","tertia","responsorium-breve","formula"],
-		"datum":[["nativitas","tertia","responsorium-breve","formula"]]
+		"tags":["circumcisio","responsorium-breve"],
+		"datum":[["nativitas","responsorium-breve"]]
 	},
 	{
-		"tags":["circumcisio","tertia","versiculus"],
-		"datum":[["nativitas","tertia","versiculus"]]
+		"tags":["circumcisio","versiculus"],
+		"datum":[["nativitas","versiculus"]]
 	},
 	{
 		"tags":["circumcisio","sexta","capitulum"],
 		"datum":[["nativitas","sexta","capitulum"]]
 	},
 	{
-		"tags":["circumcisio","sexta","responsorium-breve","formula"],
-		"datum":[["nativitas","sexta","responsorium-breve","formula"]]
-	},
-	{
-		"tags":["circumcisio","sexta","versiculus"],
-		"datum":[["nativitas","sexta","versiculus"]]
-	},
-	{
 		"tags":["circumcisio","nona","capitulum"],
 		"datum":[["nativitas","nona","capitulum"]]
-	},
-	{
-		"tags":["circumcisio","nona","responsorium-breve","formula"],
-		"datum":[["nativitas","nona","responsorium-breve","formula"]]
-	},
-	{
-		"tags":["circumcisio","nona","versiculus"],
-		"datum":[["nativitas","nona","versiculus"]]
 	},
 	{
 		"tags":["circumcisio","ii-vesperae","antiphona","antiphona-magnificat"],

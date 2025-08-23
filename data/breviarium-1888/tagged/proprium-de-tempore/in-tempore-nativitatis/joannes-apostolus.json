@@ -1,11 +1,11 @@
 [
 	{
 		"tags":["joannes-apostolus","nomen"],
-		"datum":"In Festo Sancti Joannis Apostoli et Evangelistæ"
+		"datum":"In Festo S. Joannis Apostoli et Evangelistæ"
 	},
 	{
 		"tags":["joannes-apostolus","basis-nominis"],
-		"datum":"Sancti Joannis Apostoli et Evangelistæ"
+		"datum":"S. Joannis Apostoli et Evangelistæ"
 	},
 	{
 		"tags":[
@@ -21,8 +21,8 @@
 	},
 	{
 		"tags":["joannes-apostolus","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Ecclésiam tuam Dómine benígnus illústra: + ut beáti Joánnis Apóstoli tui et Evangelístæ illumináta doctrínis, * ad dona pervéniat sempitérna."
+		"datum":"Ecclésiam tuam Dómine benígnus illústra: + ut beáti Joánnis Apóstoli tui et Evangelístæ illumináta doctrínis, * ad dona pervéniat sempitérna.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["joannes-apostolus","matutinum","nocturna-i","lectio","lectio-i"],
@@ -189,50 +189,32 @@
 		"datum":"Éxiit * sermo inter fratres, quod discípulus ille non móritur; et non dixit Jesus, Non móritur: sed, Sic eum volo manére, donec véniam."
 	},
 	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-i","lectio","lectio-i"],
-		"datum":[
+		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
 			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
 			"Post hæc vidi: et ecce óstium apértum in cœlo: et vox prima, quam audívi tamquam tubæ loquéntis mecum, dicens: Ascénde huc, et osténdam tibi quæ opórtet fíeri post hæc. Et statim fui in spíritu: et ecce sedes pósita erat in cœlo, et supra sedem sedens. Et qui sedébat, símilis erat aspéctui lápidis jáspidis et sárdinis: et iris erat in circúitu sedis, símilis visióni smarágdinæ. Et in circúitu sedis sedília vigínti quátuor: et super thronos vigínti quátuor senióres sedéntes, circumamícti vestiméntis albis, et in capítibus eórum corónæ aúreæ."
-		]
+		],
+		"lectio-ii":"Et de throno procedébant fúlgura, et voces, et tonítrua: et septem lámpades ardéntes ante thronum, qui sunt septem spíritus Dei. Et in conspéctu sedis tamquam mare vítreum símile crystállo: et in médio sedis, et in circúitu sedis quátuor animália plena óculis ante et retro. Et ánimal primum símile leóni, et secúndum ánimal símile vítulo, et tértium ánimal habens fáciem quasi hóminis, et quartum ánimal símile áquilæ volánti. Et quátuor animália, síngula eórum habébant alas senas: et in circúitu, et intus plena sunt óculis.",
+		"lectio-iii":"Et réquiem non habébant die ac nocte, dicéntia: Sanctus, Sanctus, Sanctus Dóminus Deus omnípotens, qui erat, et qui est, et qui ventúrus est. Et cum darent illa animália glóriam, et honórem, et benedictiónem sedénti super thronum, vivénti in sǽcula sæculórum, procidébant vigínti quátuor senióres ante sedéntem in throno, et adorábant vivéntem in sǽcula sæculórum, et mittébant corónas suas ante thronum, dicéntes: Dignus es Dómine Deus noster accípere glóriam, et honórem, et virtútem: quia tu creásti ómnia, et propter voluntátem tuam erant, et creáta sunt."
 	},
 	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-i","lectio","lectio-ii"],
-		"datum":"Et de throno procedébant fúlgura, et voces, et tonítrua: et septem lámpades ardéntes ante thronum, qui sunt septem spíritus Dei. Et in conspéctu sedis tamquam mare vítreum símile crystállo: et in médio sedis, et in circúitu sedis quátuor animália plena óculis ante et retro. Et ánimal primum símile leóni, et secúndum ánimal símile vítulo, et tértium ánimal habens fáciem quasi hóminis, et quartum ánimal símile áquilæ volánti. Et quátuor animália, síngula eórum habébant alas senas: et in circúitu, et intus plena sunt óculis."
-	},
-	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-i","lectio","lectio-iii"],
-		"datum":"Et réquiem non habébant die ac nocte, dicéntia: Sanctus, Sanctus, Sanctus Dóminus Deus omnípotens, qui erat, et qui est, et qui ventúrus est. Et cum darent illa animália glóriam, et honórem, et benedictiónem sedénti super thronum, vivénti in sǽcula sæculórum, procidébant vigínti quátuor senióres ante sedéntem in throno, et adorábant vivéntem in sǽcula sæculórum, et mittébant corónas suas ante thronum, dicéntes: Dignus es Dómine Deus noster accípere glóriam, et honórem, et virtútem: quia tu creásti ómnia, et propter voluntátem tuam erant, et creáta sunt."
-	},
-	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-ii","lectio","lectio-i"],
-		"datum":[
+		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
 			"Ex Tractátu sancti Augustíni Epíscopi in Joánnem.",
 			"In quátuor Evangéliis, vel pótius quátuor libris uníus Evangélii, sanctus Joánnes Apóstolus non immérito secúndum intelligéntiam spiritálem áquilæ comparátus, áltius multóque sublímius áliis tribus eréxit prædicatiónem suam: et in ejus erectióne étiam corda nostra érigi vóluit. Nam céteri tres Evangelístæ tamquam cum hómine Dómino in terra ámbulant, et de divinitáte ejus pauca dixérunt: istum autem quasi pigúerit in terra ambuláre, sicut ipso exórdio sui sermónis intónuit, eréxit se non solum super terram, et super omnem ámbitum áëris et cœli, sed super omnem étiam exércitum Angelórum, omnémque constitutiónem invisibílium potestátum: et pervénit ad eum, per quem facta sunt ómnia, dicéndo: In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum."
-		]
+		],
+		"lectio-ii":"Huic tantæ sublimitáti princípii étiam cétera cóngrua prædicávit, et de Dómini divinitáte, quómodo nullus álius, est locútus: hoc ructábat, quod bíberat. Non enim sine causa de illo in isto ipso Evangélio narrátur, quia et in convívio super pectus Dómini discumbébat. De illo ergo péctore in secréto bibébat, sed quod in secréto bibit, in manifésto eructávit: ut pervéniat ad omnes gentes non solum incarnátio Fílii Dei, pássio, et resurréctio, sed étiam quod erat ante incarnatiónem únicus Patri, Verbum Patris, coætérnus generánti, æquális ei a quo missus est.",
+		"lectio-iii":"Áquila ipse est Joánnes, sublímium prædicátor, et lucis intérnæ atque ætérnæ fixis óculis contemplátor. Dicúntur enim et pulli aquilárum a paréntibus sic probári, patris scílicet ungue suspéndi, et rádiis solis oppóni. Qui firme contemplátus fúerit, fílius agnóscitur: si ácie palpitáverit, tamquam adulterínus ab ungue dimíttitur. Jam ergo vidéte, quam sublímia loqui débuit, qui est áquilæ comparátus: et tamen étiam nos humi repéntes, infírmi, et vix ullíus moménti inter hómines, audémus tractáre ista, et ista expónere: et putámus nos aut cápere posse cum cogitámus, aut capi dum dícimus."
 	},
 	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-ii","lectio","lectio-ii"],
-		"datum":"Huic tantæ sublimitáti princípii étiam cétera cóngrua prædicávit, et de Dómini divinitáte, quómodo nullus álius, est locútus: hoc ructábat, quod bíberat. Non enim sine causa de illo in isto ipso Evangélio narrátur, quia et in convívio super pectus Dómini discumbébat. De illo ergo péctore in secréto bibébat, sed quod in secréto bibit, in manifésto eructávit: ut pervéniat ad omnes gentes non solum incarnátio Fílii Dei, pássio, et resurréctio, sed étiam quod erat ante incarnatiónem únicus Patri, Verbum Patris, coætérnus generánti, æquális ei a quo missus est."
-	},
-	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-ii","lectio","lectio-iii"],
-		"datum":"Áquila ipse est Joánnes, sublímium prædicátor, et lucis intérnæ atque ætérnæ fixis óculis contemplátor. Dicúntur enim et pulli aquilárum a paréntibus sic probári, patris scílicet ungue suspéndi, et rádiis solis oppóni. Qui firme contemplátus fúerit, fílius agnóscitur: si ácie palpitáverit, tamquam adulterínus ab ungue dimíttitur. Jam ergo vidéte, quam sublímia loqui débuit, qui est áquilæ comparátus: et tamen étiam nos humi repéntes, infírmi, et vix ullíus moménti inter hómines, audémus tractáre ista, et ista expónere: et putámus nos aut cápere posse cum cogitámus, aut capi dum dícimus."
-	},
-	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Joánnem.",
 			"In illo témpore: Dixit Jesus Petro: Séquere me. Convérsus Petrus, vidit illum discípulum, quem diligébat Jesus, sequéntem. Et réliqua.",
 			"Homilía sancti Joánnis Chrysóstomi.",
 			"Cum magna Christus Petro communicásset, orbis terrárum curam demandásset, martýrium prædixísset, et majórem erga eum dilectiónem testátus esset: cum vellet Petrus Joánnem sócium et collégam, inquit: Hic autem quid? Numquid eámdem viam aggrediétur? Et quemádmodum in cœna interrogáre non ausus, Joánnem suffécit; ita nunc vicem reddit, arbitrátus eum velle, sed non audére de se sciscitári. Tum Christus: Si eum volo manére donec véniam, quid ad te?"
-		]
-	},
-	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-iii","lectio","lectio-ii"],
-		"datum":"Nam cum nímia id caritáte díceret Petrus, nec ab eo dívidi vellet, osténdens Christus, quod quantávis eum dilectióne prosequerétur, suam ássequi non posset, inquit: Si eum volo manére, quid ad te? His verbis nos erúdiens, neque doléndum, neque curiósius præter divínam voluntátem investigándum. Nam cum Petrus semper in hujúsmodi interrogatiónes fervéntius prosilíret, íterum ejus fervórem retúndens, quod non sit ultérius inquiréndum, in hunc modum respóndit."
-	},
-	{
-		"tags":["joannes-apostolus","dies-octava","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Éxiit ergo sermo iste inter fratres, quod discípulus ille non móritur: et non dixit ei Jesus, quia non móritur; sed, Si eum volo manére donec véniam quid ad te? Noli arbitrári, inquit, eódem modo me de vobis disposuísse. Hoc autem dixit ut intempestívum afféctum, et consuetúdinis desidérium tólleret. Cum enim essent orbis terrárum curam susceptúri, simul ámplius esse non oportébat: magnum enim fuísset mundo detriméntum. Idcírco inquit: Opus suscepísti, id consídera: pérfice, labóra, et te certamínibus expóne. Quid ad te, si volo eum manére hic? tu offícium tuum cura, et exséquere."
+		],
+		"lectio-ii":"Nam cum nímia id caritáte díceret Petrus, nec ab eo dívidi vellet, osténdens Christus, quod quantávis eum dilectióne prosequerétur, suam ássequi non posset, inquit: Si eum volo manére, quid ad te? His verbis nos erúdiens, neque doléndum, neque curiósius præter divínam voluntátem investigándum. Nam cum Petrus semper in hujúsmodi interrogatiónes fervéntius prosilíret, íterum ejus fervórem retúndens, quod non sit ultérius inquiréndum, in hunc modum respóndit.",
+		"lectio-iii":"Éxiit ergo sermo iste inter fratres, quod discípulus ille non móritur: et non dixit ei Jesus, quia non móritur; sed, Si eum volo manére donec véniam quid ad te? Noli arbitrári, inquit, eódem modo me de vobis disposuísse. Hoc autem dixit ut intempestívum afféctum, et consuetúdinis desidérium tólleret. Cum enim essent orbis terrárum curam susceptúri, simul ámplius esse non oportébat: magnum enim fuísset mundo detriméntum. Idcírco inquit: Opus suscepísti, id consídera: pérfice, labóra, et te certamínibus expóne. Quid ad te, si volo eum manére hic? tu offícium tuum cura, et exséquere."
 	}
 ]

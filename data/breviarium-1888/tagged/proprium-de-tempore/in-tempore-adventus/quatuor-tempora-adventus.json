@@ -1,5 +1,11 @@
 [
 	{
+		"tags":["quatuor-tempora-adventus","nomen"],
+		"feria-iv":"Feria IV Quatuor Temporum Adventus",
+		"feria-vi":"Feria VI Quatuor Temporum Adventus",
+		"sabbatum":"Sabbato Quatuor Temporum Adventus"
+	},
+	{
 		"tags":["quatuor-tempora-adventus","feria-iv","matutinum","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Lucam.",
@@ -43,8 +49,14 @@
 		"datum":"Missus est Gábriel * Ángelus ad Maríam Vírginem desponsátam Joseph."
 	},
 	{
-		"tags":["quatuor-tempora-adventus","feria-iv","collecta"],
-		"datum":"Præsta, quǽsumus omnípotens Deus: ut redemptiónis nostræ ventúra solémnitas, et præséntis nobis vitæ subsídia cónferat, et ætérnæ beatúdinis prǽmia largiátur.",
+		"tags":[
+			["quatuor-tempora-adventus","feria-iv","matutinum","collecta"],
+			["quatuor-tempora-adventus","feria-iv","laudes","collecta"],
+			["quatuor-tempora-adventus","feria-iv","tertia","collecta"],
+			["quatuor-tempora-adventus","feria-iv","sexta","collecta"],
+			["quatuor-tempora-adventus","feria-iv","nona","collecta"]
+		],
+		"datum":"Præsta, quǽsumus omnípotens Deus: + ut redemptiónis nostræ ventúra solémnitas, et præséntis nobis vitæ subsídia cónferat, * et ætérnæ beatúdinis prǽmia largiátur.",
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
@@ -96,8 +108,14 @@
 		"datum":"Ex quo facta est * vox salutatiónis tuæ in aúribus meis, exsultávit in gaúdio infans in útero meo, allelúja."
 	},
 	{
-		"tags":["quatuor-tempora-adventus","feria-vi","collecta"],
-		"datum":"Éxcita, quǽsumus Dómine, poténtiam tuam, et veni: ut hi, qui in tua pietáte confídunt, ab omni cítius adversitáte liberéntur:",
+		"tags":[
+			["quatuor-tempora-adventus","feria-vi","matutinum","collecta"],
+			["quatuor-tempora-adventus","feria-vi","laudes","collecta"],
+			["quatuor-tempora-adventus","feria-vi","tertia","collecta"],
+			["quatuor-tempora-adventus","feria-vi","sexta","collecta"],
+			["quatuor-tempora-adventus","feria-vi","nona","collecta"]
+		],
+		"datum":"Éxcita, quǽsumus Dómine, poténtiam tuam, et veni: + ut hi, qui in tua pietáte confídunt, * ab omni cítius adversitáte liberéntur:",
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
@@ -147,7 +165,7 @@
 	},
 	{
 		"tags":["quatuor-tempora-adventus","sabbatum","collecta"],
-		"datum":"Deus, qui cónspicis, quia ex nostra pravitáte afflígimur: concéde propítius; ut ex tua visitatióne consolémur:",
+		"datum":"Deus, qui cónspicis, quia ex nostra pravitáte afflígimur: + concéde propítius; * ut ex tua visitatióne consolémur:",
 		"terminatio":[["terminatio","qui-vivis"]]
 	}
 ]

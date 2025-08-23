@@ -63,17 +63,17 @@
 	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-magnificat"],
 		"src": "gregobase/3002",
-                "datum":"Cum ortus fúerit * sol de cœlo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo."
+		"datum":"Cum ortus fúerit * sol de cœlo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo."
 	},
 	{
 		"tags":["nativitas","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Concéde, quǽsumus omnípotens Deus: + ut nos Unigéniti tui nova per carnem Natívitas líberet; * quos sub peccáti jugo vetústa sérvitus tenet."
+		"datum":"Concéde, quǽsumus omnípotens Deus: + ut nos Unigéniti tui nova per carnem Natívitas líberet; * quos sub peccáti jugo vetústa sérvitus tenet.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-                "tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
+		"tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/1225I",
-                "datum":"Christus natus est nobis: * Veníte adorémus."
+		"datum":"Christus natus est nobis: * Veníte adorémus."
         },
 	{
 		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-i"],
@@ -206,9 +206,7 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","lectio","lectio-iii"],
-		"datum":[
-			"Agámus ergo, dilectíssimi, grátias Deo Patri, per Fílium ejus in Spíritu sancto: qui propter multam caritátem suam, qua diléxit nos, misértus est nostri: et cum essémus mórtui peccátis, convivificávit nos Christo, ut essémus in ipso nova creatúra, novúmque figméntum. Deponámus ergo véterem hóminem cum áctibus suis: et adépti participatiónem generatiónis Christi, carnis renuntiémus opéribus. Agnósce, o Christiáne, dignitátem tuam: et divínæ consors factus natúræ, noli in véterem vilitátem degéneri conversatióne redíre. Meménto, cujus cápitis et cujus córporis sis membrum. Reminíscere, quia érutus de potestáte tenebrárum, translátus es in Dei lumen et regnum."
-		]
+		"datum":"Agámus ergo, dilectíssimi, grátias Deo Patri, per Fílium ejus in Spíritu sancto: qui propter multam caritátem suam, qua diléxit nos, misértus est nostri: et cum essémus mórtui peccátis, convivificávit nos Christo, ut essémus in ipso nova creatúra, novúmque figméntum. Deponámus ergo véterem hóminem cum áctibus suis: et adépti participatiónem generatiónis Christi, carnis renuntiémus opéribus. Agnósce, o Christiáne, dignitátem tuam: et divínæ consors factus natúræ, noli in véterem vilitátem degéneri conversatióne redíre. Meménto, cujus cápitis et cujus córporis sis membrum. Reminíscere, quia érutus de potestáte tenebrárum, translátus es in Dei lumen et regnum."
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"],
@@ -453,8 +451,8 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","collecta"],
-		"terminatio":[["terminatio","qui-tecum-vivit"]],
-		"datum":"Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: + ut in nómine dilécti Fílii tui * mereámur bonis opéribus abundáre:"
+		"datum":"Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: + ut in nómine dilécti Fílii tui * mereámur bonis opéribus abundáre:",
+		"terminatio":[["terminatio","qui-tecum-vivit"]]
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-i"],

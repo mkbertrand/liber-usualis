@@ -1,0 +1,43 @@
+[
+	{
+		"tags":["quatuor-tempora-septembris","nomen"],
+		"feria-iv":"Feria IV Quatuor Temporum Septembris",
+		"feria-vi":"Feria IV Quatuor Temporum Septembris",
+		"sabbatum":"Sabbato Quatuor Temporum Septembris"
+	},
+	{
+		"tags":["quatuor-tempora-septembris","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Hoc genus * dæmoniórum in nullo potest exíre, nisi in oratióne et jejúnio."
+	},
+	{
+		"tags":[
+			["quatuor-tempora-septembris","feria-iv","matutinum","collecta"],
+			["quatuor-tempora-septembris","feria-iv","laudes","collecta"],
+			["quatuor-tempora-septembris","feria-iv","tertia","collecta"],
+			["quatuor-tempora-septembris","feria-iv","sexta","collecta"],
+			["quatuor-tempora-septembris","feria-iv","nona","collecta"]
+		],
+		"datum":"Misericórdiæ tuæ remédiis, quǽsumus Dómine, fragilitátis nostra subsístat: ut quæ sua conditióne attéritur, tua cleméntia reparétur.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-septembris","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Múlier * quæ erat in civitáte peccátrix, stans retro secus pedes Dómini, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat, et deosculabátur pedes ejus ut unguénto ungébat."
+	},
+	{
+		"tags":[
+			["quatuor-tempora-septembris","feria-vi","matutinum","collecta"],
+			["quatuor-tempora-septembris","feria-vi","laudes","collecta"],
+			["quatuor-tempora-septembris","feria-vi","tertia","collecta"],
+			["quatuor-tempora-septembris","feria-vi","sexta","collecta"],
+			["quatuor-tempora-septembris","feria-vi","nona","collecta"]
+		],
+		"datum":"Præsta, quǽsumus omnípotens Deus: ut observatiónes sacras ánnua devotióne recoléntes, et córpore tibi placeámus, et mente.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-septembris","sabbatum","collecta"],
+		"datum":"Omnípotens sempitérne Deus, qui per continéntiam salutárem corpóribus medéris et méntibus: majestátem tuam súpplices exorámus; ut pia jejunántium deprecatióne placátus, et præséntia nobis subsídia tríbuas, et futúra.",
+		"terminatio":[["terminatio","per-dominum"]]
+	}
+]
