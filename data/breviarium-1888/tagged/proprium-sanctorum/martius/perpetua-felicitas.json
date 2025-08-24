@@ -1,0 +1,27 @@
+[
+	{
+		"tags":["perpetua-felicitas","nomen"],
+		"datum":"Ss. Perpetuæ et Felicitatis Martyrum"
+	},
+	{
+		"tags":[
+			["perpetua-felicitas","vesperae","antiphona","antiphona-magnificat"],
+			["perpetua-felicitas","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/8165",
+		"datum":"Istárum est enim * regnum cœlórum, qui contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni."
+	},
+	{
+		"tags":[
+			["perpetua-felicitas","vesperae","versiculus"],
+			["perpetua-felicitas","laudes","versiculus"]
+		],
+		"datum":["V. Glória et honóre coronásti eas Dómine.","R. Et constituísti eas super ópera mánuum tuárum."]
+			
+	},
+	{
+		"tags":["perpetua-felicitas","collecta"],
+		"datum":"Da nobis, quǽsumus Dómine Deus noster, sanctárum Mártyrum tuárum Perpétuæ et Felicitátis palmas incessábili devotióne venerári: + ut, quas digna mente non póssumus celebráre, * humílibus saltem frequentémus obséquiis.",
+		"terminatio":[["terminatio","per-dominum"]]
+	}
+]
