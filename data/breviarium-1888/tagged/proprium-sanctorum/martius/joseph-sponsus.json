@@ -54,13 +54,14 @@
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","versiculus"],
-		"datum":["V. Constítuit eum dóminum domus suæ.","R. Et príncipem omnis possessiónis suæ."]
+		"datum":["V. Constítuit eum dóminum domus suæ.","R. Et príncipem omnis possessiónis suæ."],
+		"in-tempore-paschali":["V. Constítuit eum dóminum domus suæ, allelúja.","R. Et príncipem omnis possessiónis suæ, allelúja."]
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2664",
 		"datum":"Exsúrgens Joseph a somno, * fecit sicut præcépit ei Ángelus Dómini, et accépit cónjugem suam.",
-		"datum":"Exsúrgens Joseph a somno, * fecit sicut præcépit ei Ángelus Dómini, et accépit cónjugem suam, allelúja."
+		"in-tempore-paschali":"Exsúrgens Joseph a somno, * fecit sicut præcépit ei Ángelus Dómini, et accépit cónjugem suam, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","collecta"],
@@ -80,7 +81,7 @@
 	{
 		"tags":["joseph-sponsus","antiphona","antiphona-iii"],
 		"datum":"Non inveniéntes * Jesum, regréssi sunt in Jerúsalem requiréntes eum; et post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem et interrogántem eos.",
-		"datum":"Non inveniéntes * Jesum, regréssi sunt in Jerúsalem requiréntes eum; et post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem et interrogántem eos, allelúja."
+		"in-tempore-paschali":"Non inveniéntes * Jesum, regréssi sunt in Jerúsalem requiréntes eum; et post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem et interrogántem eos, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","antiphona","antiphona-iv"],
@@ -105,11 +106,82 @@
 	},
 	{
 		"tags":["joseph-sponsus","laudes","versiculus"],
-		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."]
+		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."],
+		"in-tempore-paschali":["V. Os justi meditábitur sapiéntiam, allelúja.","R. Et lingua ejus loquétur judícium, allelúja."]
 	},
 	{
 		"tags":["joseph-sponsus","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12158",
-		"datum":"Ipse Jesus erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph."
+		"datum":"Ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph.",
+		"in-tempore-paschali":"Ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","tertia","responsorium-breve"],
+		"incipit":"Constítuit eum",
+		"responsum":"Dóminum domus suæ.",
+		"versus":"Et príncipem omnis possessiónis suæ."
+	},
+	{
+		"tags":["joseph-sponsus","tertia","versiculus"],
+		"datum":["V. Magna est glória ejus in salutári tuo.","R. Glóriam et magnum decórem impónes super eum."],
+		"in-tempore-paschali":["V. Magna est glória ejus in salutári tuo, allelúja.","R. Glóriam et magnum decórem impónes super eum, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Constítuit eum dóminum domus suæ",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et príncipem omnis possessiónis suæ."
+	},
+	{
+		"tags":["joseph-sponsus","sexta","capitulum"],
+		"datum":"Diléctus Deo et homínibus, cujus memória in benedictióne est. + In fide et lenitáte ipsíus sanctum fecit illum, * et elégit eum ex omni carne."
+	},
+	{
+		"tags":["joseph-sponsus","sexta","responsorium-breve"],
+		"incipit":"Magna est glória ejus",
+		"responsum":"In salutári tuo.",
+		"versus":"Glóriam et magnum decórem impónes super eum."
+	},
+	{
+		"tags":["joseph-sponsus","sexta","versiculus"],
+		"datum":["V. Justus germinábit sicut lílium.","R. Et florébit in ætérnum ante Dóminum."],
+		"in-tempore-paschali":["V. Justus germinábit sicut lílium, allelúja.","R. Et florébit in ætérnum ante Dóminum, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Magna est glória ejus in salutári tuo",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Glóriam et magnum decórem impónes super eum."
+	},
+	{
+		"tags":["joseph-sponsus","nona","capitulum"],
+		"datum":"Profúgum justum dedúxit Sapiéntia per vias rectas, + et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: * honestávit illum in labóribus, et complévit labóres illíus."
+	},
+	{
+		"tags":["joseph-sponsus","nona","responsorium-breve"],
+		"incipit":"Justus germinábit",
+		"responsum":"Sicut lílium.",
+		"versus":"Et florébit in ætérnum ante Dóminum."
+	},
+	{
+		"tags":["joseph-sponsus","nona","versiculus"],
+		"datum":["V. Plantátus in domo Dómini.","R. In átriis domus Dei nostri."],
+		"in-tempore-paschali":["V. Plantátus in domo Dómini, allelúja.","R. In átriis domus Dei nostri, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Justus germinábit sicut lílium",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et florébit in ætérnum ante Dóminum."
+	},
+	{
+		"tags":["joseph-sponsus","ii-vesperae","versiculus"],
+		"datum":["V. Glória et divítiæ in domo ejus.","R. Et justítia ejus manet in sǽculum sǽculi."],
+		"in-tempore-paschali":["V. Glória et divítiæ in domo ejus, allelúja.","R. Et justítia ejus manet in sǽculum sǽculi, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2431",
+		"datum":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam."
 	}
 ]
