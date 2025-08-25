@@ -35,7 +35,7 @@
 			</div>
 			% include(f'web/locales/{locale}/resources/sidemenu.html')
 			% if page == 'pray':
-				% include(f'web/resources/{page}.tpl', ritegenversion='13', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
+				% include(f'web/resources/{page}.tpl', ritegenversion='14', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
 			% else:
 				% include(f'web/locales/{locale}/pages/{page}.html')
 
