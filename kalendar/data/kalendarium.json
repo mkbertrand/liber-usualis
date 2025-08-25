@@ -8,6 +8,11 @@
 		"tags":["hyginus","simplex","commemoratio","papa","martyr"]
 	},
 	{
+		"occurrence":["dominica","hebdomada-i-epiphaniae"],
+		"offset":7,
+		"tags":["nomen-jesu","duplex-ii-classis"]
+	},
+	{
 		"occurrence":["ad-xix-kalendas-februarii"],
 		"tags":["hilarius","duplex-minus","confessor-pontifex","doctor"]
 	},
@@ -236,6 +241,10 @@
 		"tags":["annuntiatio-bmv","duplex-ii-classis","maria"]
 	},
 	{
+		"occurrence":["feria-vi","hebdomada-passionis"],
+		"tags":["septem-dolores-passione","duplex-majus","maria"]
+	},
+	{
 		"occurrence":["ad-iv-nonas-aprilis"],
 		"tags":["franciscus-paula","duplex-minus","confessor"]
 	},
@@ -306,6 +315,10 @@
 	{
 		"occurrence":["pridie-kalendas-maji"],
 		"tags":["catharina-senensis","duplex-minus","virgo"]
+	},
+	{
+		"occurrence":["dominica","hebdomada-iii-paschae"],
+		"tags":["patrocinius-joseph","duplex-ii-classis"]
 	},
 	{
 		"occurrence":["kalendae-maji"],
@@ -428,6 +441,10 @@
 		"tags":["petronilla","simplex","commemoratio","virgo"]
 	},
 	{
+		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
+		"tags":["cor-jesus","duplex-majus"]
+	},
+	{
 		"occurrence":["ad-iv-nonas-junii"],
 		"tags":["marcellinus-petrus-erasmus","simplex","martyr","martyres"]
 	},
@@ -534,6 +551,10 @@
 	{
 		"occurrence":["pridie-kalendas-julii"],
 		"tags":["commemoratio-petri","semiduplex","commemoratio","martyr","apostolus"]
+	},
+	{
+		"occurrence":["hebdomada-i-julii","dominica"],
+		"tags":["pretiosissimus-sanguis","duplex-ii-classis"]
 	},
 	{
 		"occurrence":["ad-vi-nonas-julii"],
@@ -756,6 +777,10 @@
 		"tags":["assumptio-bmv","duplex-i-classis","maria","habens-octavam"]
 	},
 	{
+		"occurrence":["assumptio-bmv","dominica-infra-octavam"],
+		"tags":["joachim","duplex-ii-classis","confessor","mtv"]
+	},
+	{
 		"occurrence":["ad-xvii-kalendas-septembris"],
 		"tags":["hyacinthus","duplex-minus","confessor","mtv"]
 	},
@@ -848,6 +873,10 @@
 		"tags":["nativitas-bmv","duplex-ii-classis","maria","habens-octavam"]
 	},
 	{
+		"occurrence":["nativitas-bmv","dominica-infra-octavam"],
+		"tags":["nomen-bmv","duplex-majus","maria"]
+	},
+	{
 		"occurrence":["ad-vi-idus-septembris"],
 		"tags":["adrianus","simplex","commemoratio","martyr"]
 	},
@@ -870,6 +899,10 @@
 	{
 		"occurrence":["ad-xvii-kalendas-octobris"],
 		"tags":["nicomedes","simplex","commemoratio","martyr"]
+	},
+	{
+		"occurrence":["dominica","hebdomada-iii-septembris"],
+		"tags":["septem-dolores-septembris","duplex-majus","maria"]
 	},
 	{
 		"occurrence":["ad-xvi-kalendas-octobris"],
@@ -942,6 +975,10 @@
 	{
 		"occurrence":["pridie-kalendas-octobris"],
 		"tags":["hieronymus","duplex-minus","confessor","doctor"]
+	},
+	{
+		"occurrence":["dominica","hebdomada-i-octobris"],
+		"tags":["rosarium-bmv","duplex-ii-classis","maria"]
 	},
 	{
 		"occurrence":["kalendae-octobris"],

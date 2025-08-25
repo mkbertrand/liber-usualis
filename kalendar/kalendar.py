@@ -239,9 +239,30 @@ def kalendar(year: int) -> Kalendar:
 	xxiiipentecostentry: Optional[Set[str]] = None
 	omittedepiphanyentry: Optional[Set[str]] = None
 
+	# Octave Processing
+	def octavate(ent_date, entry):
+		if 'habens-octavam' in entry and 'octava-excepta' not in entry:
+			entry_base = entry - ranks - octavevigiltags
+			for k in range(1,7):
+				date0 = ent_date + timedelta(days=k)
+				entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k]}
+				if date0.isoweekday() == 7:
+					entrystripped |= {'dominica-infra-octavam'}
+				# If a certain day within an Octave is manually entered, do not create one automatically
+				if kal.match_any(entrystripped) is None:
+					kal.add_entry(date0, entrystripped)
+			date0 = ent_date + timedelta(weeks=1)
+			entrystripped = entry_base | {'duplex-minus', 'dies-octava'}
+			if date0.isoweekday() == 7:
+				entrystripped |= {'dominica-infra-octavam'}
+			# If a certain day within an Octave is manually entered, do not create one automatically
+			if kal.match_any(entrystripped) is None:
+				kal.add_entry(date0, entrystripped)
+
 	for cycle in cycles:
 		for entry in cycle:
 			kal.add_entry(bases[entry['basis']] + timedelta(days=entry['offset']), entry['tags'])
+			octavate(bases[entry['basis']] + timedelta(days=entry['offset']), entry['tags'])
 
 	# Epiphany Sundays
 	epiphanyweek = 0
@@ -279,9 +300,6 @@ def kalendar(year: int) -> Kalendar:
 
 	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus','per-octavam-epiphaniae'})
 
-	# List of inferred feasts that get merged in later
-	buffer = Kalendar(year=year)
-
 	# Sanctorals
 	entries = copy.deepcopy(sanctoral)
 	for entry in entries:
@@ -294,30 +312,7 @@ def kalendar(year: int) -> Kalendar:
 			matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
 		for match_date in set([i.date for i in matches]):
 			kal.add_entry(match_date, entry['tags'])
-
-	# Octave and Vigil Processing
-	for ent_date, entries in kal.items():
-		for entry in entries:
-			entry_base = entry - ranks - octavevigiltags
-			if 'habens-octavam' in entry and 'octava-excepta' not in entry:
-				for k in range(1,7):
-					date0 = ent_date + timedelta(days=k)
-					entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k]}
-					if date0.isoweekday() == 7:
-						entrystripped.add('dominica-infra-octavam')
-					# If a certain day within an Octave is manually entered, do not create one automatically
-					if kal.match_any(entrystripped) is None:
-						buffer.add_entry(date0, entrystripped)
-				date0 = ent_date + timedelta(weeks=1)
-				entrystripped = entry_base | {'duplex-minus', 'dies-octava'}
-				if date0.isoweekday() == 7:
-					entrystripped.add('dominica-infra-octavam')
-				# If a certain day within an Octave is manually entered, do not create one automatically
-				if kal.match_any(entrystripped) is None:
-					buffer.add_entry(date0, entrystripped)
-
-	kal |= buffer
-	buffer.kal.clear()
+			octavate(match_date, entry['tags'])
 
 	# Movables
 	entries = copy.deepcopy(movables)

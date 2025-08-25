@@ -156,11 +156,6 @@
 		"tags":["quatuor-tempora-adventus","sabbatum","feria-major","feria","poenitentialis","quatuor-tempora"]
 	},
 	{
-		"occurrence":["dominica","hebdomada-i-epiphaniae"],
-		"offset":7,
-		"tags":["nomen-jesu","duplex-ii-classis"]
-	},
-	{
 		"occurrence":["hebdomada-i-quadragesimae","feria-iv"],
 		"tags":["quatuor-tempora-quadragesimae","feria-iv","feria-major","feria","poenitentialis","quatuor-tempora"]
 	},
@@ -171,14 +166,6 @@
 	{
 		"occurrence":["hebdomada-i-quadragesimae","sabbatum"],
 		"tags":["quatuor-tempora-quadragesimae","sabbatum","feria-major","feria","poenitentialis","quatuor-tempora"]
-	},
-	{
-		"occurrence":["feria-vi","hebdomada-passionis"],
-		"tags":["septem-dolores-passione","duplex-majus","maria"]
-	},
-	{
-		"occurrence":["dominica","hebdomada-iii-paschae"],
-		"tags":["patrocinius-joseph","duplex-ii-classis"]
 	},
 	{
 		"occurrence":["feria-ii","hebdomada-v-paschae"],
@@ -205,18 +192,6 @@
 		"tags":["quatuor-tempora-pentecostes","sabbatum","poenitentialis","quatuor-tempora"]
 	},
 	{
-		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
-		"tags":["cor-jesus","duplex-majus"]
-	},
-	{
-		"occurrence":["hebdomada-i-julii","dominica"],
-		"tags":["pretiosissimus-sanguis","duplex-ii-classis"]
-	},
-	{
-		"occurrence":["dominica","hebdomada-iii-septembris"],
-		"tags":["septem-dolores-septembris","duplex-majus","maria"]
-	},
-	{
 		"occurrence":["hebdomada-iii-septembris","feria-iv"],
 		"tags":["quatuor-tempora-septembris","feria-iv","feria-major","feria","poenitentialis","quatuor-tempora"]
 	},
@@ -227,18 +202,6 @@
 	{
 		"occurrence":["hebdomada-iii-septembris","sabbatum"],
 		"tags":["quatuor-tempora-septembris","sabbatum","feria-major","feria","poenitentialis","quatuor-tempora"]
-	},
-	{
-		"occurrence":["dominica","hebdomada-i-octobris"],
-		"tags":["rosarium-bmv","duplex-ii-classis","maria"]
-	},
-	{
-		"occurrence":["assumptio-bmv","dominica-infra-octavam"],
-		"tags":["joachim","duplex-ii-classis","confessor","mtv"]
-	},
-	{
-		"occurrence":["nativitas-bmv","dominica-infra-octavam"],
-		"tags":["nomen-bmv","duplex-majus","maria"]
 	},
 	{
 		"occurrence":["tempus"],
