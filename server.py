@@ -172,14 +172,15 @@ def rite():
 	if 'translation' in parameters and parameters['translation'] != 'none':
 		def gettranslation(tags):
 			translation = parameters['translation']
-			search = set(tags) | {translation} | breviarium.defaultpile
-			return breviarium.search(root, search, datamanage.getpile(f'{root}/translations/{translation}', search), rootappendix=f'/translations/{translation}')
+			search = set(tags) | {translation}
+			transroot = f'{root}/translations/{translation}'
+			return breviarium.search(root, search, datamanage.getpile(transroot, search | breviarium.defaultpile), rootappendix=f'/translations/{translation}')
 
 		def traverse(obj):
 			if type(obj) is dict and 'tags' in obj:
 				tran = gettranslation(obj['tags'])
 				if tran:
-					translation['+'.join(obj['tags'])] = tran
+					translation['+'.join(sorted(obj['tags']))] = tran
 			if type(obj) is dict:
 				traverse(obj['datum'])
 			elif type(obj) is list:

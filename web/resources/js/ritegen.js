@@ -182,7 +182,9 @@ function renderinner(data, translated = null, translationpool = null, parenttags
 		let tran = null;
 
 		if (translationpool != null && typeof data === 'object' && 'tags' in data) {
-			tran = translationpool[data['tags'].join('+')];
+			tags = data['tags'];
+			tags.sort();
+			tran = translationpool[tags.join('+')];
 		};
 		if (tran != null) {
 			translated = tran['datum'];
