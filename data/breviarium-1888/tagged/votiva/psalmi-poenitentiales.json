@@ -5,7 +5,7 @@
 		"datum":"Ne reminiscáris * Dómine delícta nostra, vel paréntum nostrórum: neque vindíctam sumas de peccátis nostris."
 	},
 	{
-		"tags":["psalmi-poenitentiales"],
+		"tags":["psalmi-poenitentiales","ritus"],
 		"datum":[
 			["antiphona","ne-reminiscaris","intonata"],
 			["/psalmi/psalmus-vi,gloria"],
@@ -16,7 +16,7 @@
 			["/psalmi/psalmus-cxxix,gloria"],
 			["/psalmi/psalmus-cxlii,gloria"],
 			["antiphona","ne-reminiscaris","repetita"],
-			["litaniae-sanctorum"]
+			["litaniae-sanctorum","ritus"]
 		]
 	}
 ]

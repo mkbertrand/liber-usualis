@@ -296,7 +296,7 @@ def generate(root, day, hour: str):
 
 	lit = []
 	for hour in hours:
-		lit.append({'hora', hour})
+		lit.append({'ritus', hour})
 	return process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 
 if __name__ == '__main__':

@@ -161,9 +161,9 @@ def rite():
 	lit = []
 	for hour in hours:
 		if private:
-			lit.append({'hora', hour, 'privata'})
+			lit.append({'ritus', hour, 'privata'})
 		else:
-			lit.append({'hora', hour})
+			lit.append({'ritus', hour})
 	rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 	tags.append(primary)
 
