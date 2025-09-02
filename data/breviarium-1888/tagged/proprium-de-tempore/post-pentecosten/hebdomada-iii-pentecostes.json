@@ -18,6 +18,17 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-iii-pentecostes","dominica","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Erant appropinquántes ad Jesum publicáni, et peccatóres, ut audírent illum. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Audístis in lectióne evangélica, fratres mei, quia peccatóres et publicáni accessérunt ad Redemptórem nostrum: et non solum ad colloquéndum, sed étiam ad convescéndum recépti sunt. Quod vidéntes pharisǽi dedignáti sunt. Ex qua re collígite, quia vera justítia compassiónem habet, falsa justítia dedignatiónem: quamvis et justi sóleant recte peccatóribus dedignári. Sed áliud est quod ágitur typo supérbiæ, áliud quod zelo disciplínæ."
+		],
+		"lectio-ii":"Dedignántur étenim, sed non dedignántes: despérant, sed non desperántes: persecutiónem cómmovent, sed amántes: quia etsi foris increpatiónes per disciplínam exággerant, intus tamen dulcédinem per caritátem servant. Præpónunt sibi in ánimo ipsos plerúmque quos córrigunt: melióres exístimant eos quoque quos júdicant. Quod vidélicet agéntes, et per disciplínam súbditos, et per humilitátem custódiunt semetípsos.",
+		"lectio-iii":"At contra, hi qui de falsa justítia superbíre solent, céteros quosque despíciunt, nulla infirmántibus misericórdia condescéndunt: quo se peccatóres esse non credunt, eo detérius peccatóres fiunt. De quorum profécto número pharisǽi exstíterant, qui dijudicántes Dóminum quod peccatóres suscíperet, arénti corde ipsum fontem misericórdiæ reprehendébant. Sed quia ægri erant, ita ut ægros se esse nescírent; quátenus quod erant agnóscerent, cœléstis eos médicus blandis foméntis curat, benígnum paradígma óbjicit, et in eórum corde vúlneris tumórem premit."
+	},
+	{
 		"tags":["hebdomada-iii-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2201",
 		"datum":"Quis ex vobis * homo, qui habet centum oves, et si perdíderit unam ex illis, nonne dimíttit nonagínta novem in desérto, et vadit ad illam quæ períerat, donec invéniat eam? allelúja."

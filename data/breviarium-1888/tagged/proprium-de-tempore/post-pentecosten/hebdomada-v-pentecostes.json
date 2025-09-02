@@ -18,6 +18,17 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-v-pentecostes","dominica","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Dixit Jesus discípulis suis: Nisi abundáverit justítia vestra plus quam scribárum et pharisæórum, non intrábitis in regnum cœlórum. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"Justítia pharisæórum est, ut non occídant: justítia eórum qui intratúri sunt in regnum cœlórum, ut non irascántur sine causa. Mínimum est ergo, non occídere: et qui illud sólverit, mínimus vocábitur in regno cœlórum. Qui autem illud impléverit, ut non occídat, non contínuo magnus erit, et idóneus regno cœlórum; sed tamen ascéndit áliquem gradum: perficiétur autem, si nec irascátur sine causa: quod si perfécerit, multo remótior erit ab homicídio. Quaprópter qui docet ut non irascámur, non solvit legem ne occidámus, sed implet pótius: ut et foris, dum non occídimus; et in corde, dum non iráscimur, innocéntiam custodiámus."
+		],
+		"lectio-ii":"Gradus ítaque sunt in istis peccátis: ut primo quisque irascátur, et eum motum retíneat corde concéptum. Jam si extórserit vocem indignántis ipsa commótio, non significántem áliquid, sed illum ánimi motum ipsa eruptióne testántem, qua feriátur ille, cui iráscitur: plus est útique quam si surgens ira siléntio premerétur. Si vero non solum vox indignántis audiátur, sed étiam verbum, quo jam certam ejus vituperatiónem, in quem profértur, desígnet et notet: quis dúbitet, ámplius hoc esse, quam si solus indignatiónis sonus ederétur?",
+		"lectio-iii":"Vide nunc étiam tres reátus, judícii, concílii, et gehénnæ ignis. Nam in judício adhuc defensióni datur locus. In concílio autem, quamquam et judícium esse sóleat, tamen quia interésse áliquid hoc loco fatéri cogit ipsa distínctio, vidétur ad concílium pertinére senténtiæ prolátio: quando non jam cum ipso reo ágitur, utrum damnándus sit; sed inter se, qui júdicant, cónferunt quo supplício damnári opórteat, quem constat esse damnándum. Gehénna vero ignis, nec damnatiónem habet dúbiam, sicut judícium; nec damnáti pœnam, sicut concílium: in gehénna quippe ignis, certa est damnátio, et pœna damnáti."
+	},
+	{
 		"tags":["hebdomada-v-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2279",
 		"datum":"Audístis * quia dictum est antíquis: Non occídes: qui autem occíderit, reus erit judício."
