@@ -145,7 +145,8 @@ titled = {
 	martyrologium: 'Martyrologium'
 };
 
-titled['collecta-primaria'] = 'Collecta';
+titled['ante-collectas'] = 'Collecta';
+titled['sacrosanctae'] = 'Sacrosanctæ';
 
 // It can be readily observed that this is just an extremely primitive version of render()
 function unpack(data) {

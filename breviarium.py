@@ -132,8 +132,12 @@ def discriminate(root, table: str, tags: set):
 			val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
 	return val
 
+# Certain hard-coded modifications to the resultants of searches for antiphons and adds some tags
 def managesearch(query, result):
-	if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
+	if not 'tags' in result:
+		return result
+	result['tags'] |= query
+	if not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
 		return result
 	else:
 		try:
@@ -176,7 +180,7 @@ def search(root, query, pile, multipleresults = False, multipleresultssort = Non
 	elif not multipleresults:
 		raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[0]}\n{result[1]}')
 	else:
-		return list(sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort))
+		return list([managesearch(query, i) for i in sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort)])
 
 # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
 def handlecommemorations(root, item, selected, alternates):

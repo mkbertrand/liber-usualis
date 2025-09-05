@@ -12,7 +12,7 @@
 			["pascha","antiphona","antiphona-magnificat","duplex"],
 			["pascha","magnificat"],
 			["pascha","antiphona","antiphona-magnificat","repetita"],
-			["dominus-vobiscum"],
+			["dominus-vobiscum","ante-collectas"],
 			["pascha","collecta-primaria"],
 			["dominus-vobiscum"],
 			["pascha","dismissio"]
@@ -264,6 +264,7 @@
 			["completorium","antiphona","repetita"],
 			["/psalmi/nunc-dimittis,gloria"],
 			["antiphona","haec-dies"],
+			["dominus-vobiscum","ante-collectas"],
 			["completorium","collecta-primaria"],
 			["dominus-vobiscum","ferialis-a"],
 			["completorium","benedicamus-domino","hora-minor"],
