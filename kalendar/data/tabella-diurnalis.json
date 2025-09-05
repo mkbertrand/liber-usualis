@@ -1,7 +1,13 @@
 [
 	{
+		"include":["vigilia-immaculatae-conceptionis-bmv"],
+		"remove":"commemoratio",
+		"adde":"omissum"
+	},
+	{
 		"include":["vigilia","simplex"],
 		"recheck":false,
+		"exclude":["omissum"],
 		"response":[
 			{"include":["feria"],"response":"combina","target":0}
 		]
@@ -20,7 +26,7 @@
 	{
 		"include":["vigilia-nativitatis","primarium"],
 		"response":[
-			{"include":["hebdomada-iv-adventus"],"response":"duplicate","remove":"commemoratio","adde":["hora","matutinum"],"target":1},
+			{"include":["hebdomada-iv-adventus"],"response":"duplicate","remove":"commemoratio","adde":["ritus","matutinum"],"target":1},
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","versiculus"],"target":0},
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectiones"],"target":0},
 			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","versiculus"],"target":0},

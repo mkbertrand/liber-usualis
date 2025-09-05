@@ -97,11 +97,14 @@
 		]
 	},
 	{
-		"tags":["matutinum","nocturnae","semiduplex","dominica","poenitentialis"],
+		"tags":[
+			["matutinum","nocturnae","semiduplex","dominica","in-tempore-adventus"],
+			["matutinum","nocturnae","semiduplex","dominica","in-tempore-septuagesimae"]
+		],
 		"datum":[
-			["matutinum","poenitentialis","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
-			["matutinum","poenitentialis","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
-			["matutinum","poenitentialis","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+			["matutinum","nocturna","nocturna-i","duodecim-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
 		]
 	},
 	{

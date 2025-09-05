@@ -360,8 +360,12 @@
 	},
 	{
 		"tags":[
-			["semiduplex","dominica","poenitentialis","vesperae","benedicamus-domino"],
-			["semiduplex","dominica","poenitentialis","laudes","benedicamus-domino"]
+			["semiduplex","dominica","in-tempore-adventus","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-adventus","laudes","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-quadragesimae","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-quadragesimae","laudes","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-passionis","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-passionis","laudes","benedicamus-domino"]
 		],
 		"src":"gregobase/9841",
 		"datum":["Benedicámus Dómino.","Deo grátias."]

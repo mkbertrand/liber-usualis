@@ -14,19 +14,19 @@
 	flex-shrink: 0;
 }
 
-.violacei {
+.violacei-theme-color {
 	background-color: #fcdaff;
 }
 
-.rubri {
+.rubri-theme-color {
 	background-color: #ffcfcf;
 }
 
-.viridis {
+.viridis-theme-color {
 	background-color: #cfe8cf;
 }
 
-.aurei {
+.aurei-theme-color {
 	background-color: var(--generic-white-background-color);
 }
 

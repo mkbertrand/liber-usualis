@@ -96,7 +96,7 @@
 		var response = await fetch(`/day?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}`);
 		var json = await response.json();
 		var primary = json.primary[1];
-		this.color = primary.filter((tag) => colors.includes(tag))[0];
+		this.color = primary.filter((tag) => colors.includes(tag))[0] + '-theme-color';
 		this.list = ritelist(json.tags, this.ambit);
 		this.day = json;
 		if (this.dayinitialized) {
