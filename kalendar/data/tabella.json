@@ -117,14 +117,6 @@
 		]
 	},
 	{
-		"include":["innocentes","festum"],
-		"recheck":false,
-		"continue":false,
-		"response":[
-			{"include":["tempus"],"exclude":["dominica"],"response":"poenitentialis","target":0}
-		]
-	},
-	{
 		"include":["pascha","duplex-i-classis"],
 		"recheck":false,
 		"response":[
@@ -738,62 +730,6 @@
 		"response":[
 			{"include":["commemoratio"],"response":"omissum","target":1}
 		]
-	},
-	{
-		"include":["poenitentialis"],
-		"exclude":["pentecostes"],
-		"response":"violacei"
-	},
-	{
-		"include":["martyr"],
-		"exclude":["innocentes","festum"],
-		"response":"rubri"
-	},
-	{
-		"include":["martyres"],
-		"exclude":["innocentes","festum"],
-		"response":"rubri"
-	},
-	{
-		"include":["pentecostes"],
-		"response":"rubri"
-	},
-	{
-		"include":["per-annum"],
-		"response":"viridis"
-	},
-	{
-		"include":["nativitas"],
-		"response":"aurei"
-	},
-	{
-		"include":["epiphania"],
-		"response":"aurei"
-	},
-	{
-		"include":["confessor"],
-		"response":"aurei"
-	},
-	{
-		"include":["confessores"],
-		"response":"aurei"
-	},
-	{
-		"include":["virgo"],
-		"exclude":["martyr"],
-		"response":"aurei"
-	},
-	{
-		"include":["vidua"],
-		"response":"aurei"
-	},
-	{
-		"include":["in-tempore-paschali","feria"],
-		"response":"aurei"
-	},
-	{
-		"include":["in-tempore-paschali","dominica"],
-		"response":"aurei"
 	},
 	{
 		"include":["translatus-originalis"],
