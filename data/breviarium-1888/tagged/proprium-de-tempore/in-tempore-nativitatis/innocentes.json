@@ -38,6 +38,14 @@
 		]
 	},
 	{
+		"tags":["innocentes","matutinum","nocturnae","festum"],
+		"datum":[
+			["matutinum","festum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["matutinum","festum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","festum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+		]
+	},
+	{
 		"tags":["innocentes","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Jeremía Prophéta.",
