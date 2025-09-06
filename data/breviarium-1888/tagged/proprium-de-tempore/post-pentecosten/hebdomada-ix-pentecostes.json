@@ -14,8 +14,19 @@
 	},	
 	{
 		"tags":["hebdomada-ix-pentecostes","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Páteant aures misericórdiæ tuæ Dómine précibus supplicántium: + et ut peténtibus desideráta concédas, * fac eos, quæ tibi sunt plácita, postuláre."
+		"datum":"Páteant aures misericórdiæ tuæ Dómine précibus supplicántium: + et ut peténtibus desideráta concédas, * fac eos, quæ tibi sunt plácita, postuláre.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-ix-pentecostes","dominica","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Cum appropinquáret Jesus Jerúsalem, videns civitátem flevit super illam, dicens: Quia si cognovísses et tu, et quidem in hac die tua, quæ ad pacem tibi, nunc autem abscóndita sunt ab óculis tuis. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Quod a flente Dómino illa Jerosolymórum subvérsio descríbitur, quæ a Vespasiáno et Tito Románis princípibus facta est, nullus qui históriam eversiónis ejúsdem legit, ignórat. Románi étenim príncipes denuntiántur, cum dícitur: Quia vénient dies in te, et circúmdabunt te inimíci tui vallo. Hoc quoque quod ádditur: Non relínquent in te lápidem super lápidem: étiam jam ipsa ejúsdem civitátis transmigrátio testátur; quia dum nunc in eo loco constrúcta est, ubi extra portam fúerat Dóminus crucifíxus, prior illa Jerúsalem, ut dícitur, fúnditus est evérsa."
+		],
+		"lectio-ii":"Cui ex qua culpa eversiónis suæ pœna fúerit illáta, subjúngitur: Eo quod non cognóveris tempus visitatiónis tuæ. Creátor quippe hóminum per incarnatiónis suæ mystérium hanc visitáre dignátus est: sed ipsa timóris et amóris illíus recordáta non est. Unde étiam per Prophétam in increpatióne cordis humáni aves cœli ad testimónium deducúntur, dum dícitur: Milvus in cœlo cognóvit tempus suum, turtur et hirúndo et cicónia custodiérunt tempus advéntus sui: pópulus autem meus non cognóvit judícium Dómini.",
+		"lectio-iii":"Flevit étenim prius Redémptor ruínam pérfidæ civitátis, quam ipsa sibi cívitas non cognoscébat esse ventúram. Cui a flente Dómino recte dícitur: Quia si cognovísses, et tu; subaúdi, fleres; quæ modo, quia nescis quod ímminet, exsúltas. Unde et súbditur: Et quidem in hac die tua, quæ ad pacem tibi. Cum enim carnis se voluptátibus daret, et ventúra mala non prospíceret; in die sua, quæ ad pacem esse ei póterant, habébat."
 	},
 	{
 		"tags":["hebdomada-ix-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],
