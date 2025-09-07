@@ -310,9 +310,10 @@ def kalendar(year: int) -> Kalendar:
 				matches.extend(kal.match(i, entry.get('excluded', set())))
 		else:
 			matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
+		offset = entry['offset'] if 'offset' in entry else 0
 		for match_date in set([i.date for i in matches]):
-			kal.add_entry(match_date, entry['tags'])
-			octavate(match_date, entry['tags'])
+			kal.add_entry(match_date + timedelta(days=offset), entry['tags'])
+			octavate(match_date + timedelta(days=offset), entry['tags'])
 
 	# Movables
 	entries = copy.deepcopy(movables)
