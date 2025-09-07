@@ -136,8 +136,8 @@ def discriminate(root, table: str, tags: set):
 def managesearch(query, result):
 	if not 'tags' in result:
 		return result
-	result['tags'] |= query
 	if not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
+		result['tags'] |= query
 		return result
 	else:
 		try:
@@ -152,6 +152,7 @@ def managesearch(query, result):
 			elif 'pars' in query:
 				result['datum'] = result['datum'].split('*')[1].lstrip()
 				result['tags'] |= {'pars'}
+			result['tags'] |= query
 			return result
 		except IndexError:
 			raise RuntimeError(f'Bad formatting for antiphon {result['datum']}')
