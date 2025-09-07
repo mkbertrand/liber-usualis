@@ -25,7 +25,7 @@
 			"Dirígere et sanctificáre, régere et gubernáre dignáre, Dómine Deus Rex cœli et terræ, hódie corda et córpora nostra, + sensus, sermónes et actus nostros in lege tua, et in opéribus mandatórum tuórum: * ut hic, et in ætérnum, te auxiliánte salvi et líberi esse mereámur, Salvátor mundi:",
 			"Qui vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
-			["officium-capituli","formula","formula-lectionis"],
+			["officium-capituli","formula","lectio-brevis","formula-lectionis"],
 			["adjutorium-nostrum"],
 			"V. Benedícite.",
 			"R. Deus.",
@@ -39,27 +39,27 @@
 		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
 	},
 	{
-		"tags":["officium-capituli","per-annum","temporale","lectio"],
+		"tags":["officium-capituli","per-annum","temporale","lectio-brevis","lectio"],
 		"datum":"Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
 	},
 	{
-		"tags":["officium-capituli","in-tempore-adventus","temporale","lectio"],
+		"tags":["officium-capituli","in-tempore-adventus","temporale","lectio-brevis","lectio"],
 		"datum":"Dómine miserére nostri: te enim exspectávimus: + esto bráchium nostrum in mane, * et salus nostra in témpore tribulatiónis."
 	},
 	{
-		"tags":["officium-capituli","in-tempore-quadragesimae","temporale","lectio"],
+		"tags":["officium-capituli","in-tempore-quadragesimae","temporale","lectio-brevis","lectio"],
 		"datum":"Quǽrite Dóminum, dum inveníri potest: * invocáte eum, dum prope est."
 	},
 	{
-		"tags":["officium-capituli","in-tempore-passionis","temporale","lectio"],
+		"tags":["officium-capituli","in-tempore-passionis","temporale","lectio-brevis","lectio"],
 		"datum":"Fáciem meam non avérti ab increpántibus et conspuéntibus in me. + Dóminus Deus auxiliátor meus, * ídeo non sum confúsus."
 	},
 	{
-		"tags":["officium-capituli","in-tempore-paschali","temporale","lectio"],
+		"tags":["officium-capituli","in-tempore-paschali","temporale","lectio-brevis","lectio"],
 		"datum":"Si consurrexístis cum Christo, + quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens: * quæ sursum sunt sápite, non quæ super terram."
 	},
 	{
-		"tags":["officium-capituli","lectio"],
+		"tags":["officium-capituli","lectio-brevis","lectio"],
 		"datum":[["nona","capitulum"]]
 	}
 ]

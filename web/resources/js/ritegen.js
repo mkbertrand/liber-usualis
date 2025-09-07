@@ -222,14 +222,26 @@ function render(data, chant) {
 				}
 
 			} else if (typeof data === 'object' && 'tags' in data) {
+				ret = '';
+				function makeheader(header, style = 'item-header') {
+					return `<h4 class="${style}">${header}</h4>`;
+				}
+				header = '';
+
+				for (i of data['tags']) {
+					// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
+					if (i in titled && !(typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes(i)) && data['datum'] != '' && header == '') {
+						header = makeheader(titled[i]);
+					}
+				}
+
 				if ((data['tags'].includes('responsorium') || data['tags'].includes('responsorium-breve')) && Array.isArray(data['datum'])) {
 					// This is a string if no responsory was found
 					if (typeof data['datum'][1] === 'string') {
 						return data['datum'][1].replace(", 'incipit'",'');
 					}
-					header = 'Responsorium';
 					if (data['tags'].includes('responsorium-breve')) {
-						header = 'Responsorium Breve';
+						header = makeheader('Responsorium Breve');
 					} else {
 						nn = 1;
 						if (data['datum'][1]['tags'].includes('nocturna-ii')) {
@@ -238,29 +250,29 @@ function render(data, chant) {
 							nn = 3
 						}
 						if (data['datum'][1]['tags'].includes('responsorium-i')) {
-							switch(nn) { case 1: header = 'Responsorium I'; break; case 2: header = 'Responsorium IV'; break; case 3: header = 'Responsorium VII';};
+							header = makeheader('Responsorium ' + ['I', 'IV', 'VII'][nn - 1]);
 						} else if (data['datum'][1]['tags'].includes('responsorium-ii')) {
-							switch(nn) { case 1: header = 'Responsorium II'; break; case 2: header = 'Responsorium V'; break; case 3: header = 'Responsorium VIII';};
+							header = makeheader('Responsorium ' + ['II', 'V', 'VIII'][nn - 1]);
 						} else if (data['datum'][1]['tags'].includes('responsorium-iii')) {
-							switch(nn) { case 1: header = 'Responsorium III'; break; case 2: header = 'Responsorium VI'; break; case 3: header = 'Responsorium IX';};
+							header = makeheader('Responsorium ' + ['III', 'VI', 'IX'][nn - 1]);
 						}
 					}
-					return `<h4 class="item-header">${header}</h4><p class="rite-text'${data['tags'].join(' ')}'">${stringrender(unpack(data['datum']).join(''), translated, data['tags'].concat(parenttags))}</p>`;
+					return `${header}<p class="rite-text'${data['tags'].join(' ')}'">${stringrender(unpack(data['datum']).join(''), translated, data['tags'].concat(parenttags))}</p>`;
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
 					antiphon = `<p class="rite text ${data['tags']}">${unpack(data['datum'][2], null, null, parenttags)}</p>`;
 					return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data['datum'][0])}<br>${stringrender(data['datum'][1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][3])}<br>${stringrender(data['datum'][4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][8])}<br>${stringrender(data['datum'][9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][11])}<br>${stringrender(data['datum'][12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data['datum'][14]['datum'])}</p>`
+
 				} else if (data['tags'].includes('formula-lectionis') && data['datum'] != '' && !(typeof data['datum'] !== 'string' && 'tags' in data['datum'] && data['datum']['tags'].includes('formula-lectionis'))) {
-					header = 'Lectio';
-					if (!Array.isArray(data['datum'])) {
-						if (typeof data['datum'] !== 'string') {
-							btags = data['datum']['tags'];
-						}
+					if (!Array.isArray(data['datum']) && typeof data['datum'] !== 'string') {
+						btags = data['datum']['tags'];
 					} else {
-						btags = (typeof data['datum'][1]['datum'] === 'object' ? data['datum'][1]['datum']['tags'].concat(data['datum'][1]['tags']) : data['datum'][1]['tags']);
+						btags = typeof data['datum'][1]['datum'] === 'object' ?
+							data['datum'][1]['datum']['tags'].concat(data['datum'][1]['tags']) :
+							data['datum'][1]['tags'];
 					}
 					if (btags.includes('lectio-brevis')) {
-						header = 'Lectio Brevis';
+						header = makeheader('Lectio Brevis');
 					} else {
 						nn = 1;
 						if (btags.includes('nocturna-ii')) {
@@ -269,14 +281,15 @@ function render(data, chant) {
 							nn = 3
 						}
 						if (btags.includes('lectio-i')) {
-							switch(nn) { case 1: header = 'Lectio I'; break; case 2: header = 'Lectio IV'; break; case 3: header = 'Lectio VII';};
+							header = makeheader('Lectio ' + ['I', 'IV', 'VII'][nn - 1]);
 						} else if (btags.includes('lectio-ii')) {
-							switch(nn) { case 1: header = 'Lectio II'; break; case 2: header = 'Lectio V'; break; case 3: header = 'Lectio VIII';};
+							header = makeheader('Lectio ' + ['II', 'V', 'VIII'][nn - 1]);
 						} else if (btags.includes('lectio-iii')) {
-							switch(nn) { case 1: header = 'Lectio III'; break; case 2: header = 'Lectio VI'; break; case 3: header = 'Lectio IX';};
+							header = makeheader('Lectio ' + ['III', 'VI', 'IX'][nn - 1]);
 						}
 					}
-					return `<h4 class="item-header">${header}</h4>` + renderinner(data['datum'], translated, data['tags'].concat(parenttags));
+					return header + renderinner(data['datum'], translated, data['tags'].concat(parenttags));
+
 				} else if (data['tags'].includes('lectio')) {
 					const reading = unpack(data);
 					// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
@@ -299,78 +312,49 @@ function render(data, chant) {
 					}
 					ret = '';
 					for (var i = 0; i < data['datum'].length - 1; i++) {
-						ret += `<h4 class="item-header">${names[i + 1]}</h4>` + renderinner(data['datum'][i], translated, data['tags'].concat(parenttags));
+						ret += makeheader(names[i + 1]) + renderinner(data['datum'][i], translated, data['tags'].concat(parenttags));
 					}
 					ret += renderinner(data['datum'][data['datum'].length - 1], translated, data['tags'].concat(parenttags));
 					return ret;
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data['tags'].some(tag => trivialchants.includes(tag)))) {
 					return `<gabc-chant id="/chant/${data['src']}" tags="${data['tags'].concat(parenttags).join('+')}"></gabc-chant>`;
-				}
-				header = '';
-				if (data['tags'].join(' ').includes('/psalmi/')) {
-					header = data['datum'].split('\n')[0].slice(1, -1);
+				} else if (data['tags'].join(' ').includes('/psalmi/')) {
+					header = makeheader(data['datum'].split('\n')[0].slice(1, -1));
 					data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1)
-					if (data['datum'].includes('[')) {
-						data['datum'] = data['datum'].replaceAll(/(\[.+?\])\\n\d+?\s/g, '$1\n');
-						headedsects = data['datum'].split('[');
-
-						if (headedsects.length != 1) {
-							ret = '';
-							for (const i of headedsects) {
-								if (i.length != 0) {
-									if (!i.includes(']')) {
-										ret += `<p class="rite-text psalmus">${stringrender(i)}</p>`;
-									} else {
-										subheader = i.split(']')[0];
-										// Removing an additional character because of new line.
-										body = i.split(']')[1].substring(1);
-										ret += `<h5 class="psalm-subheader">${subheader}</h4><p class="rite-text psalmus">${stringrender(body)}</p>`;
-									}
-								}
-							}
-							return `<h4 class="item-header">${header}</h4>${ret}`;
-						}
-					} else {
-						data['datum'] = data['datum'].replace(/^\d+\s/, '');
-					}
+					data['datum'] = data['datum'].replace(/^\d+\s/, '');
 					data['tags'].push('psalmus');
-				}
-
-				if (data['tags'].join(' ').includes('canticum')) {
-					data['tags'].push('canticum');
-				}
-				if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {
-					header = 'Antiphona';
-				}
-				if (data['tags'].includes('ritus')) {
+				// For Easter when the Hæc dies is inserted in the place of the Chapter
+				} else if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {
+					header = makeheader('Antiphona');
+				} else if (data['tags'].includes('ritus')) {
 					if (data['tags'].includes('matutinum')) {
-						header = 'Ad Matutinum';
+						header = makeheader('Ad Matutinum');
 					} else if (data['tags'].includes('laudes')) {
-						header = 'Ad Laudes';
+						header = makeheader('Ad Laudes');
 					} else if (data['tags'].includes('prima')) {
-						header = 'Ad Primam';
+						header = makeheader('Ad Primam');
 					} else if (data['tags'].includes('tertia')) {
-						header = 'Ad Tertiam';
+						header = makeheader('Ad Tertiam');
 					} else if (data['tags'].includes('sexta')) {
-						header = 'Ad Sextam';
+						header = makeheader('Ad Sextam');
 					} else if (data['tags'].includes('nona')) {
-						header = 'Ad Nonam';
+						header = makeheader('Ad Nonam');
 					} else if (data['tags'].includes('vesperae')) {
-						header = 'Ad Vesperas';
+						header = makeheader('Ad Vesperas');
 					} else if (data['tags'].includes('completorium')) {
-						header = 'Ad Completorium';
+						header = makeheader('Ad Completorium');
 					} else if (data['tags'].includes('antiphona-bmv')) {
-						header = 'Antiphona B.M.V.';
+						header = makeheader('Antiphona B.M.V.');
 					} else if (data['tags'].includes('psalmi-graduales')) {
-						header = 'Psalmi Graduales';
+						header = makeheader('Psalmi Graduales');
 					} else if (data['tags'].includes('psalmi-poenitentiales')) {
-						header = 'Septem Psalmi Pœnitentiales cum Litaniis';
+						header = makeheader('Septem Psalmi Pœnitentiales cum Litaniis');
 					} else if (data['tags'].includes('litaniae-sanctorum')) {
-						header = 'Litaniæ';
+						header = makeheader('Litaniæ');
 					}
 				} else if (data['tags'].includes('versiculus')) {
 					if (!parenttags.includes('commemorationes')) {
-						header = 'Versiculus';
+						header = makeheader('Versiculus');
 					}
 					vscl = unpack(data['datum']);
 					if (typeof vscl === 'string' && vscl == '') {
@@ -391,14 +375,8 @@ function render(data, chant) {
 					}
 					data['datum'] = ret + `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][4]))}<br>${stringrender(unpack(data['datum'][5]))}</p>`;
 				}
-				for (i of data['tags']) {
-					// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
-					if (i in titled && !(typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes(i)) && data['datum'] != '' && header == '') {
-						header = titled[i];
-					}
-				}
 
-				return (header == '' ? '' : `<h4 class="item-header">${header}</h4>`) + `<div class="rite-item${' ' + data['tags'].join(' ')}">${renderinner(data['datum'], translated, data['tags'].concat(parenttags))}</div>`;
+				return `${header}<div class="rite-item${' ' + data['tags'].join(' ')}">${renderinner(data['datum'], translated, data['tags'].concat(parenttags))}</div>`;
 
 			} else {
 				return 'error';
