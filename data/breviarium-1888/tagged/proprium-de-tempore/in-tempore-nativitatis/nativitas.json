@@ -1,11 +1,11 @@
 [
 	{
 		"tags":["nativitas","nomen"],
-		"datum":"In Nativitate Domini Nostri Jesu Christi"
+		"datum":"In Nativitate D.N.J.C."
 	},
 	{
 		"tags":["nativitas","basis-nominis"],
-		"datum":"Nativitatis Domini Nostri Jesu Christi"
+		"datum":"Nativitatis D.N.J.C."
 	},
 	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-i"],
@@ -436,6 +436,10 @@
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2486",
 		"datum":"Hódie * Christus natus est: hódie Salvátor appáruit: hódie in terra canunt Ángeli, lætántur Archángeli: hódie exsúltant justi, dicéntes: Glória in excélsis Deo, allelúja."
+	},
+	{
+		"tags":["nativitas","dominica-infra-octavam","nomen"],
+		"datum":"Dominica infra Octavam Nativitatis D.N.J.C."
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","capitulum"],

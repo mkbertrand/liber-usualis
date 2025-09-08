@@ -385,8 +385,12 @@ def kalendar(year: int) -> Kalendar:
 
 	# Nativity & Epiphany
 	for entry in nativitycycle:
-		date0 = todate(entry['date'], year)
-		kal.add_entry(date0, entry['tags'])
+		if type(entry['tags']) is list:
+			for i in entry['tags']:
+				kal.add_entry(kal.match_unique(entry['occurrence']).date, i)
+		else:
+			kal.add_entry(kal.match_unique(entry['occurrence']).date, entry['tags'])
+
 	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex','in-tempore-nativitatis'})
 	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','semiduplex','per-octavam-epiphaniae'})
 	if date(year, 1, 6).isoweekday() == 7:

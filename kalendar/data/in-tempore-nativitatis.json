@@ -1,142 +1,97 @@
 [
 	{
-		"date":"12-24",
+		"occurrence":["ad-ix-kalendas-januarii"],
 		"tags":["vigilia-nativitatis","duplex-minus","vigilia","non-translandum"]
 	},
 	{
-		"date":"12-25",
+		"occurrence":["ad-viii-kalendas-januarii"],
 		"tags":["nativitas","festum","duplex-i-classis","habens-octavam","octava-excepta","in-tempore-nativitatis"]
 	},
 	{
-		"date":"12-26",
-		"tags":["stephanus","duplex-ii-classis","martyr","habens-octavam","octava-excepta","in-tempore-nativitatis"]
+		"occurrence":["ad-vii-kalendas-januarii"],
+		"tags":[
+				["stephanus","duplex-ii-classis","martyr","habens-octavam","octava-excepta","in-tempore-nativitatis"],
+				["nativitas","semiduplex","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-26",
-		"tags":["nativitas","semiduplex","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		"occurrence":["ad-vi-kalendas-januarii"],
+		"tags":[
+				["joannes-apostolus","duplex-ii-classis","apostolus","evangelista","habens-octavam","octava-excepta","in-tempore-nativitatis"],
+				["nativitas","semiduplex","infra-octavam","dies-iii","in-tempore-nativitatis"],
+				["stephanus","semiduplex","martyr","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-27",
-		"tags":["nativitas","semiduplex","infra-octavam","dies-iii","in-tempore-nativitatis"]
+		"occurrence":["ad-v-kalendas-januarii"],
+		"tags":[
+				["innocentes","duplex-ii-classis","festum","martyres","habens-octavam","octava-excepta","in-tempore-nativitatis"],
+				["nativitas","semiduplex","infra-octavam","dies-iv","in-tempore-nativitatis"],
+				["stephanus","semiduplex","martyr","infra-octavam","dies-iii","in-tempore-nativitatis"],
+				["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-27",
-		"tags":["joannes-apostolus","duplex-ii-classis","apostolus","evangelista","habens-octavam","octava-excepta","in-tempore-nativitatis"]
+		"occurrence":["ad-iv-kalendas-januarii"],
+		"tags":[
+				["nativitas","semiduplex","infra-octavam","dies-v","in-tempore-nativitatis"],
+				["stephanus","semiduplex","martyr","infra-octavam","dies-iv","in-tempore-nativitatis"],
+				["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iii","in-tempore-nativitatis"],
+				["innocentes","semiduplex","martyres","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-27",
-		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		"occurrence":["ad-iii-kalendas-januarii"],
+		"tags":[
+				["nativitas","semiduplex","infra-octavam","dies-vi","in-tempore-nativitatis"],
+				["stephanus","semiduplex","martyr","infra-octavam","dies-v","in-tempore-nativitatis"],
+				["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iv","in-tempore-nativitatis"],
+				["innocentes","semiduplex","martyres","infra-octavam","dies-iii","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-28",
-		"tags":["nativitas","semiduplex","infra-octavam","dies-iv","in-tempore-nativitatis"]
+		"occurrence":["pridie-kalendas-januarii"],
+		"tags":[
+				["nativitas","semiduplex","infra-octavam","dies-vii","in-tempore-nativitatis"],
+				["stephanus","semiduplex","martyr","infra-octavam","dies-vi","in-tempore-nativitatis"],
+				["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-v","in-tempore-nativitatis"],
+				["innocentes","semiduplex","martyres","infra-octavam","dies-iv","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-28",
-		"tags":["innocentes","duplex-ii-classis","festum","martyres","habens-octavam","octava-excepta","in-tempore-nativitatis"]
+		"occurrence":["kalendae-januarii"],
+		"tags":[
+				["circumcisio","festum","duplex-ii-classis","dies-octava","in-tempore-nativitatis"],
+				["stephanus","semiduplex","martyr","infra-octavam","dies-vii","in-tempore-nativitatis"],
+				["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vi","in-tempore-nativitatis"],
+				["innocentes","semiduplex","martyres","infra-octavam","dies-v","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-28",
-		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-iii","in-tempore-nativitatis"]
+		"occurrence":["ad-iv-nonas-januarii"],
+		"tags":[
+				["stephanus","duplex-minus","martyr","dies-octava","in-tempore-nativitatis"],
+				["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vii","in-tempore-nativitatis"],
+				["innocentes","semiduplex","martyres","infra-octavam","dies-vi","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-28",
-		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-ii","in-tempore-nativitatis"]
+		"occurrence":["ad-iii-nonas-januarii"],
+		"tags":[
+				["joannes-apostolus","duplex-minus","apostolus","evangelista","dies-octava","in-tempore-nativitatis"],
+				["innocentes","semiduplex","martyres","infra-octavam","dies-vii","in-tempore-nativitatis"]
+		]
 	},
 	{
-		"date":"12-29",
-		"tags":["nativitas","semiduplex","infra-octavam","dies-v","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-29",
-		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-iv","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-29",
-		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-29",
-		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-ii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-30",
-		"tags":["nativitas","semiduplex","infra-octavam","dies-vi","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-30",
-		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-v","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-30",
-		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iv","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-30",
-		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-iii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-31",
-		"tags":["nativitas","semiduplex","infra-octavam","dies-vii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-31",
-		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-vi","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-31",
-		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-v","in-tempore-nativitatis"]
-	},
-	{
-		"date":"12-31",
-		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-iv","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-01",
-		"tags":["circumcisio","festum","duplex-ii-classis","dies-octava","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-01",
-		"tags":["stephanus","semiduplex","martyr","infra-octavam","dies-vii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-01",
-		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vi","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-01",
-		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-v","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-02",
-		"tags":["stephanus","duplex-minus","martyr","dies-octava","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-02",
-		"tags":["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-02",
-		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-vi","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-03",
-		"tags":["joannes-apostolus","duplex-minus","apostolus","evangelista","dies-octava","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-03",
-		"tags":["innocentes","semiduplex","martyres","infra-octavam","dies-vii","in-tempore-nativitatis"]
-	},
-	{
-		"date":"01-04",
+		"occurrence":["pridie-nonas-januarii"],
 		"tags":["innocentes","duplex-minus","martyres","dies-octava","in-tempore-nativitatis"]
 	},
 	{
-		"date":"01-05",
+		"occurrence":["nonae-januarii"],
 		"tags":["vigilia-epiphaniae","circumcisio","semiduplex","vigilia","non-translandum","in-tempore-nativitatis"]
 	},
 	{
-		"date":"01-06",
+		"occurrence":["ad-viii-idus-januarii"],
 		"tags":["epiphania","festum","duplex-i-classis","habens-octavam","octava-excepta","per-octavam-epiphaniae"]
 	}
 ]
