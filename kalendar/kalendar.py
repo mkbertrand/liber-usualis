@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2024-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 from collections import defaultdict
 from datetime import date, datetime, timedelta
@@ -180,19 +180,126 @@ class Kalendar:
 			self.transfer_entry(match, obstacles=obstacles, mention=mention)
 
 
+def nearsunday(kalends: date):
+	if kalends.isoweekday() < 4:
+		return nextsunday(kalends, weeks=-1)
+	else:
+		return nextsunday(kalends, weeks=0)
+
+def todate(text: str, year0: int) -> date:
+	m = re.match(r'(\d+)-(\d+)', text)
+	if m is None:
+		raise ValueError(f"Invalid date: {text}")
+	return date(year0, int(m.group(1)), int(m.group(2)))
+
+roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
+roletags = set(roletagsordered)
+noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','legitur-mense'}
+
+# N.B. This is a mutable function. It will change kal
+def process(kal):
+
+	class Job(NamedTuple):
+		days: tuple
+		rule: dict
+		parentnumber: int = -1
+
+	queue = [Job(tuple(kal.keys()), rule) for rule in rules]
+	queue.reverse()
+	ruleskip = [False] * len(rules)
+
+	def resolvejob(job):
+		if ruleskip[job.rule['number']]:
+			return
+		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
+		if job.rule['number'] != 0 and not rules[job.rule['number'] - 1]['recheck']:
+			ruleskip[job.rule['number'] - 1] = True
+
+		for day in job.days:
+
+			tagsetindices = range(len(kal[day]))
+			matchset = []
+			failsearch = False
+			for restriction in job.rule['restrict']:
+				search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex])]
+				if len(search) == 0:
+					failsearch = True
+					break
+				else:
+					matchset.append(search)
+
+			if failsearch:
+				continue
+
+			matches = list(itertools.product(*matchset))
+
+			for match in matches:
+				if len(set(match)) == len(job.rule['restrict']):
+					if job.rule['response'] == 'combina':
+						kal[day][match[0]] |= kal[day][match[1]]
+						if len(kal[day][match[0]] & roletags) > 1:
+							for i in roletagsordered:
+								if i in kal[day][match[0]]:
+									kal[day][match[0]] -= roletags
+									kal[day][match[0]].add(i)
+									break
+						kal[day].pop(match[1])
+						# We will restart this job from scratch when we've iterated through the more specific jobs
+						queue.append(job)
+						queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+					elif job.rule['response'] == 'errora':
+						raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {match}')
+					else:
+						target = match[job.rule['target']]
+						if job.rule['response'] == 'dele':
+							kal[day].pop(target)
+							queue.append(job)
+						elif job.rule['response'] == 'transfer':
+							move = kal[day].pop(target)
+							move.add('translatum')
+							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
+							kal[transferday].append(move)
+							queue.append(job)
+							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
+							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
+							queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
+						elif type(job.rule['response']) is frozenset and 'movement' in job.rule:
+							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
+							if job.rule['response'] in kal[transferday]:
+								continue
+							kal[transferday].append(job.rule['response'])
+							queue.append(job)
+							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
+							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
+							queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
+						elif type(job.rule['response']) is frozenset:
+							if job.rule['response'] <= kal[day][target]:
+								continue
+							if job.rule['response'] & roletags:
+								kal[day][target] -= roletags
+							kal[day][target] |= job.rule['response']
+							queue.append(job)
+							if not job.rule['continue']:
+								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+						elif not type(job.rule['response']) is str:
+							raise RuntimeError(type(job.rule['response']))
+						else:
+							if job.rule['response'] in kal[day][target]:
+								continue
+							if job.rule['response'] in roletags:
+								kal[day][target] -= roletags
+							kal[day][target].add(job.rule['response'])
+							queue.append(job)
+							if not job.rule['continue']:
+								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+					if job.rule['continue']:
+						return
+
+	while len(queue) != 0:
+		resolvejob(queue.pop())
+
 def kalendar(year: int) -> Kalendar:
 	kal = Kalendar(year=year)
-
-	def nearsunday(kalends: date):
-		if kalends.isoweekday() < 4:
-			return nextsunday(kalends, weeks=-1)
-		else:
-			return nextsunday(kalends, weeks=0)
-	def todate(text: str, year0: int) -> date:
-		m = re.match(r'(\d+)-(\d+)', text)
-		if m is None:
-			raise ValueError(f"Invalid date: {text}")
-		return date(year0, int(m.group(1)), int(m.group(2)))
 
 	easter = geteaster(year)
 	christmas = date(year, 12, 25)
@@ -359,113 +466,12 @@ def kalendar(year: int) -> Kalendar:
 			omittedepiphanyentry |= {'commemoratio'}
 			kal.add_entry(septuagesima - timedelta(days=1), omittedepiphanyentry)
 
-	roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
-	roletags = set(roletagsordered)
-	noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','legitur-mense'}
-
 	for entrydate, entries in kal.items():
 		for entry in entries:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	class Job(NamedTuple):
-		days: tuple
-		rule: dict
-		parentnumber: int = -1
-
-	queue = [Job(tuple(kal.keys()), rule) for rule in rules]
-	queue.reverse()
-	ruleskip = [False] * len(rules)
-
-	def resolvejob(job):
-		if ruleskip[job.rule['number']]:
-			return
-		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
-		if job.rule['number'] != 0 and not rules[job.rule['number'] - 1]['recheck']:
-			ruleskip[job.rule['number'] - 1] = True
-
-		for day in job.days:
-
-			tagsetindices = range(len(kal[day]))
-			matchset = []
-			failsearch = False
-			for restriction in job.rule['restrict']:
-				search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex])]
-				if len(search) == 0:
-					failsearch = True
-					break
-				else:
-					matchset.append(search)
-
-			if failsearch:
-				continue
-
-			matches = list(itertools.product(*matchset))
-
-			for match in matches:
-				if len(set(match)) == len(job.rule['restrict']):
-					if job.rule['response'] == 'combina':
-						kal[day][match[0]] |= kal[day][match[1]]
-						if len(kal[day][match[0]] & roletags) > 1:
-							for i in roletagsordered:
-								if i in kal[day][match[0]]:
-									kal[day][match[0]] -= roletags
-									kal[day][match[0]].add(i)
-									break
-						kal[day].pop(match[1])
-						# We will restart this job from scratch when we've iterated through the more specific jobs
-						queue.append(job)
-						queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-					elif job.rule['response'] == 'errora':
-						raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {match}')
-					else:
-						target = match[job.rule['target']]
-						if job.rule['response'] == 'dele':
-							kal[day].pop(target)
-							queue.append(job)
-						elif job.rule['response'] == 'transfer':
-							move = kal[day].pop(target)
-							move.add('translatum')
-							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
-							kal[transferday].append(move)
-							queue.append(job)
-							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
-							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
-							queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
-						elif type(job.rule['response']) is frozenset and 'movement' in job.rule:
-							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
-							if job.rule['response'] in kal[transferday]:
-								continue
-							kal[transferday].append(job.rule['response'])
-							queue.append(job)
-							parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
-							queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
-							queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
-						elif type(job.rule['response']) is frozenset:
-							if job.rule['response'] <= kal[day][target]:
-								continue
-							if job.rule['response'] & roletags:
-								kal[day][target] -= roletags
-							kal[day][target] |= job.rule['response']
-							queue.append(job)
-							if not job.rule['continue']:
-								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-						elif not type(job.rule['response']) is str:
-							raise RuntimeError(type(job.rule['response']))
-						else:
-							if job.rule['response'] in kal[day][target]:
-								continue
-							if job.rule['response'] in roletags:
-								kal[day][target] -= roletags
-							kal[day][target].add(job.rule['response'])
-							queue.append(job)
-							if not job.rule['continue']:
-								queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-					if job.rule['continue']:
-						return
-
-	while len(queue) != 0:
-		resolvejob(queue.pop())
+	process(kal)
 
 	return kal
 
