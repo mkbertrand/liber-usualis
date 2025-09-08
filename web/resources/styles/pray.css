@@ -391,12 +391,14 @@ h4.psalm-subheader {
 	float: left;
 	font-size: 74px;
 	font-weight: normal;
+	margin-right: 0.5rem;
 	color: red;
 }
 
 @media only screen and (max-width: 650px) {
 	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 		line-height: .8;
+		font-size: 80px;
 	}
 }
 
