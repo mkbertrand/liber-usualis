@@ -385,11 +385,8 @@ def kalendar(year: int) -> Kalendar:
 
 	# Nativity & Epiphany
 	for entry in nativitycycle:
-		if type(entry['tags']) is list:
-			for i in entry['tags']:
-				kal.add_entry(kal.match_unique(entry['occurrence']).date, i)
-		else:
-			kal.add_entry(kal.match_unique(entry['occurrence']).date, entry['tags'])
+		for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
+			kal.add_entry(kal.match_unique(entry['occurrence']).date, tagset)
 
 	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex','in-tempore-nativitatis'})
 	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','semiduplex','per-octavam-epiphaniae'})
@@ -421,8 +418,9 @@ def kalendar(year: int) -> Kalendar:
 			matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
 		offset = entry['offset'] if 'offset' in entry else 0
 		for match_date in set([i.date for i in matches]):
-			kal.add_entry(match_date + timedelta(days=offset), entry['tags'])
-			octavate(match_date + timedelta(days=offset), entry['tags'])
+			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
+				kal.add_entry(match_date + timedelta(days=offset), tagset)
+				octavate(match_date + timedelta(days=offset), tagset)
 
 	# Movables
 	entries = copy.deepcopy(movables)
