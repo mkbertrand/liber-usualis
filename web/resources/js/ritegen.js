@@ -324,7 +324,7 @@ function render(data, chant) {
 				} else if (data['tags'].join(' ').includes('/psalmi/')) {
 					header = makeheader(data['datum'].split('\n')[0].slice(1, -1));
 					data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1).replace(/^\d+\s/, '');
-					data['tags'].push('psalmus');
+					data['tags'].push('textus-psalmi');
 
 				// For Easter when the Hæc dies is inserted in the place of the Chapter
 				} else if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {

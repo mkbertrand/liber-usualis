@@ -386,7 +386,7 @@ h4.psalm-subheader {
 	color: red;
 }
 
-.psalmus::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
+.textus-psalmi::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 	font-family: 'paulus-franck-initialen';
 	float: left;
 	font-size: 80px;
