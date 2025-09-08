@@ -1,0 +1,22 @@
+<!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
+
+<script type="text/javascript" src="/resources/js/kalendargen.js?v=1"></script>
+<div id="content-container-outer" x-data="{
+	kalendar: [],
+	initialized: false,
+	async getKalendar() {
+		var response = await fetch(`/kalendar`);
+		var json = await response.json();
+		this.kalendar = json;
+		this.initialized = true;
+	}
+}" x-init="getKalendar();">
+	<div id="content-container-inner">
+		<h1 id="kalendar-title">KALENDARIUM ROMANUM</h1>
+		<template x-if="initialized">
+			<template x-for="entry in kalendar">
+				<div x-text="entry"></div>
+			</template>
+		</template>
+	</div>
+</div>

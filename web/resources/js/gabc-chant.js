@@ -1,5 +1,74 @@
-// Copyright 2024 (AGPL-3.0-or-later), Miles K. Bertrand et al.
-// Additional credit to Benjamin Bloomfield as this file is a modification of his original
+// Copyright 2024-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+// Additional credit to Benjamin Bloomfield as this file is a modification of his original (except for chomp())
+
+async function chomp(id, tags) {
+	return fetch(id).then(data => data.text()).then(gabc => {
+		gabc = gabc.replace('<v>\\greheightstar</v>', '*');
+		mode = undefined;
+		if (gabc.includes('mode:')) {
+			mode = gabc.substring(gabc.indexOf('mode:') + 5, gabc.indexOf('\n', gabc.indexOf('mode:'))).trim();
+			if (mode.endsWith(';')) {
+				mode = mode.slice(0, -1);
+			}
+		}
+
+		// Remove commented text falling before content
+		gabc = gabc.substring(gabc.search(/\([cf]\d\)/));
+		gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>').replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>').replaceAll(/<.?sc>/g, '').replaceAll(/\[.*?\]/g, '').replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3').replaceAll('<sp>*</sp>', '*').replace(/<c>.+?<\/c>/, '');
+
+		gabcdata = '';
+		if (mode !== undefined) {
+			gabcdata = 'mode:' + mode + ';\n%%\n';
+		} else {
+			gabcdata = '%%\n';
+		}
+
+		// Make sure asterisks are formatted right
+		gabc = gabc.replace(/(\([,:;]+?\))\s*?\*\s/, '*$1 ');
+
+		if (tags.includes('deus-in-adjutorium')) {
+			return gabcdata + gabc.substring(0, gabc.search(/\(Z\-?\)/));
+
+		} else if (tags.includes('antiphona')) {
+			euouae = '';
+			if (gabc.includes('<eu>')) {
+				euouae = gabc.match(/\s<eu>.+/)[0].replaceAll(/<.?eu>/g, '');
+				gabc = gabc.substring(0, gabc.search(/<eu>/));
+			}
+
+			if (gabc.includes('<i>T. P.</i>')) {
+				if (tags.includes('in-tempore-paschali')) {
+					gabc = gabc.replace('<i>T. P.</i>', '');
+				} else {
+					gabc = gabc.substring(0, gabc.indexOf('<i>T. P.</i>')).trim();
+				}
+			}
+			if (!tags.includes('in-tempore-septuagesimae') && gabc.includes('<i>Post Septuag.</i>')) {
+				gabc = gabc.substring(0, gabc.indexOf('<i>Post Septuag.</i>')).trim();
+			}
+
+			if (tags.includes('intonata')) {
+				gabc = gabc.substring(0, gabc.indexOf('*')) + '(::)' + euouae;
+			} else if (tags.includes('pars')) {
+				gabc = gabc.replace(/^(\(..\)\s).+?\*(\(.*?\))?\s?/, '$1');
+				gabcdata = '%%\n';
+			} else if (tags.includes('repetita')) {
+				gabc = gabc.replace('*', '');
+				gabcdata = '%%\n';
+				firstsyllable = gabc.match(/[\wáǽœÆŒéíóúý]+\(/)[0];
+				gabc = gabc.replace(firstsyllable, firstsyllable.charAt(0).toUpperCase() + firstsyllable.slice(1).toLowerCase());
+			} else if (!(tags.includes('formula-commemorationis') || tags.includes('suffragium'))) {
+				gabc = gabc + euouae;
+			}
+			
+			gabcdata = (tags.includes('repetita') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
+			return gabcdata + gabc;
+
+		} else {
+			return gabcdata + gabc;
+		}
+	});
+}
 
 $(document).ready(function() {
 	const resizeObserver = new ResizeObserver(() =>{
