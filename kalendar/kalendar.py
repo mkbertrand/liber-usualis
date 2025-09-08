@@ -58,11 +58,10 @@ class SearchResult(NamedTuple):
 		return self.date.strftime('%a %Y-%m-%d') + ':' + str(self.feast)
 
 class Kalendar:
-	def __init__(self, year: int, *args, **kwargs):
+	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 
 		self.kal: defaultdict = defaultdict(list)
-		self.year = year
 
 	def add_entry(self, date: date, entry: set | frozenset) -> SearchResult:
 		if type(entry) is frozenset:
@@ -86,7 +85,7 @@ class Kalendar:
 		return self.kal[key]
 
 	def __repr__(self) -> str:
-		return f'Kalendar(year={self.year!r})'
+		return f'Kalendar()'
 
 	def match(self, include: Set[str] = set(), exclude: Set[str] = set()):
 		assert include.isdisjoint(exclude), f'{include!r} and {exclude!r} must be disjoint'
@@ -107,7 +106,7 @@ class Kalendar:
 			match = next(it)
 		except StopIteration as e:
 			# Fail if zero matches
-			raise RuntimeError(f'{self.year}: match_unique({include!r}, {exclude!r}) got no matches!') from e
+			raise RuntimeError(f'match_unique({include!r}, {exclude!r}) got no matches!') from e
 		else:
 			# Fail if multiple matches
 			try:
@@ -115,7 +114,7 @@ class Kalendar:
 			except StopIteration:
 				pass
 			else:
-				raise RuntimeError(f'{self.year}: match_unique({include!r}, {exclude!r}) got more than one match!')
+				raise RuntimeError(f'match_unique({include!r}, {exclude!r}) got more than one match!')
 		return match
 
 	def tagsindate(self, date: date) -> set:
@@ -141,7 +140,7 @@ class Kalendar:
 
 		# Skip transfer if it's to the same day
 		if newdate == match_date:
-			logging.debug(f'{self.year}: {entry!r} already on {newdate}')
+			logging.debug(f'{entry!r} already on {newdate}')
 			return match
 
 		entries = self[match_date]
@@ -161,7 +160,7 @@ class Kalendar:
 
 		match = self.add_entry(newdate, newfeast)
 
-		logging.debug(f'{self.year}: Transfer {entry!r} from {match_date} to {newdate}')
+		logging.debug(f'Transfer {entry!r} from {match_date} to {newdate}')
 		assert match_date - timedelta(days=1) == newdate or match_date < newdate
 
 		assert not (target is None and obstacles is None)
@@ -299,13 +298,12 @@ def process(kal):
 		resolvejob(queue.pop())
 
 def kalendar(year: int) -> Kalendar:
-	kal = Kalendar(year=year)
+	kal = Kalendar()
 
 	easter = geteaster(year)
 	christmas = date(year, 12, 25)
 	adventstart = nextsunday(christmas, weeks=-4)
-	bases = {'dominica-i-adventus': nextsunday(christmas, weeks=-4),
-		'pascha': geteaster(year)}
+	bases = {'dominica-i-adventus': adventstart, 'pascha': easter}
 
 	i = date(year, 1, 1)
 	while not i == date(year + 1, 1, 1):
