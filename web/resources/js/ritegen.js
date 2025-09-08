@@ -304,6 +304,7 @@ function render(data, chant) {
 					} else {
 						return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading)}</p>`
 					}
+
 				} else if (data['tags'].includes('hymnus') && data['tags'].includes('te-deum') && !options['chant']) {
 					return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data['datum'].join('/'))}</p>`;
 				} else if (data['tags'].includes('commemorationes')) {
@@ -316,16 +317,19 @@ function render(data, chant) {
 					}
 					ret += renderinner(data['datum'][data['datum'].length - 1], translated, data['tags'].concat(parenttags));
 					return ret;
+
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data['tags'].some(tag => trivialchants.includes(tag)))) {
 					return `<gabc-chant id="/chant/${data['src']}" tags="${data['tags'].concat(parenttags).join('+')}"></gabc-chant>`;
+
 				} else if (data['tags'].join(' ').includes('/psalmi/')) {
 					header = makeheader(data['datum'].split('\n')[0].slice(1, -1));
-					data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1)
-					data['datum'] = data['datum'].replace(/^\d+\s/, '');
+					data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1).replace(/^\d+\s/, '');
 					data['tags'].push('psalmus');
+
 				// For Easter when the Hæc dies is inserted in the place of the Chapter
 				} else if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {
 					header = makeheader('Antiphona');
+
 				} else if (data['tags'].includes('ritus')) {
 					if (data['tags'].includes('matutinum')) {
 						header = makeheader('Ad Matutinum');
@@ -352,6 +356,7 @@ function render(data, chant) {
 					} else if (data['tags'].includes('litaniae-sanctorum')) {
 						header = makeheader('Litaniæ');
 					}
+
 				} else if (data['tags'].includes('versiculus')) {
 					if (!parenttags.includes('commemorationes')) {
 						header = makeheader('Versiculus');
@@ -363,6 +368,7 @@ function render(data, chant) {
 					} else {
 						data['datum'] = vscl[0] + '<br>' + vscl[1];
 					}
+
 				} else if (data['tags'].includes('martyrologium')) {
 					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][0]))} ${stringrender(unpack(data['datum'][1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data['datum'][2]))}</p>`;
 					martyrology = unpack(data['datum'][3]);
