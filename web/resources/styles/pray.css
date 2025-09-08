@@ -380,7 +380,7 @@ h4.psalm-subheader {
 .lectio-incipiens::first-letter {
 	font-family: 'paulus-franck-initialen';
 	float: left;
-	font-size: 115px;
+	font-size: 100px;
 	font-weight: normal;
 	margin-right: 0.5rem;
 	color: red;
@@ -389,13 +389,13 @@ h4.psalm-subheader {
 .textus-psalmi::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 	font-family: 'paulus-franck-initialen';
 	float: left;
-	font-size: 80px;
+	font-size: 74px;
 	font-weight: normal;
 	color: red;
 }
 
 @media only screen and (max-width: 650px) {
-	.psalmus::first-letter, .lectio-incipiens::first-letter {
+	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 		line-height: .8;
 	}
 }
