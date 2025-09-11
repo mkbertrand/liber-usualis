@@ -7,6 +7,7 @@ import os
 import copy
 import logging
 import requests
+import kalendar.display as display
 
 data_root = pathlib.Path(__file__).parent
 
@@ -113,3 +114,29 @@ def getpile(root, pile):
 		if name in pile:
 			ret.extend(getbreviariumfile(file))
 	return ret
+
+root = 'breviarium-1888'
+def getname(tagset, pile):
+	import breviarium
+	resp = breviarium.process(root, {'nomen'}, tagset, [], pile)
+	name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
+	if type(name) is list:
+		name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
+	return name
+
+@functools.lru_cache(maxsize=1)
+def getdisplaykalendar():
+	ret = dict(sorted(display.kalendar().items()))
+	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
+	kalendar = load_data('kalendar/data/kalendarium.json')
+	kalendar.extend(load_data('kalendar/data/in-tempore-nativitatis.json'))
+
+	kalendar = display.kalendar2()
+	for entry in kalendar:
+		if type(entry['tags']) is frozenset:
+			entry['tags'] = [entry['tags']]
+		entry['names'] = [getname(tagset, getpile(root, tagset | {'formulae'})) for tagset in entry['tags']]
+		if any(i in entry['occurrence'] for i in ['feria-ii', 'feria-iii', 'feria-iv', 'feria-v', 'feria-vi', 'sabbatum']):
+			entry['occurrence'] |= {'feria'}
+		entry['occurrence-name'] = getname(entry['occurrence'], getpile(root, entry['occurrence'] | {'formulae'}))
+	return dump_data({'skeleton': ret, 'kalendar': kalendar})

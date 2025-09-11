@@ -22,6 +22,7 @@ import datamanage
 import prioritizer
 
 import kalendar.datamanage
+import kalendar.display as display
 
 root = 'breviarium-1888'
 
@@ -54,6 +55,7 @@ titles = {
 
 @get('/')
 @get('/pray/')
+@get('/kalendar/')
 @get('/about/')
 @get('/credit/')
 @get('/donate/')
@@ -198,6 +200,10 @@ def rite():
 		'usedprimary': primary,
 		'usednames': usednames
 		})
+
+@get('/kalendar')
+def kal():
+	return datamanage.getdisplaykalendar()
 
 @get('/chant/<url:path>')
 def chant(url):

@@ -2,21 +2,115 @@
 
 <script type="text/javascript" src="/resources/js/kalendargen.js?v=1"></script>
 <div id="content-container-outer" x-data="{
+	skeleton: [],
 	kalendar: [],
 	initialized: false,
 	async getKalendar() {
 		var response = await fetch(`/kalendar`);
 		var json = await response.json();
-		this.kalendar = json;
+		this.skeleton = json.skeleton;
+		newskeleton = new Object();
+		monthtitles = {'01': 'Januarius.', '02': 'Februarius.', '03': 'Martius.', '04': 'Aprilis.', '05': 'Majus.', '06': 'Junius.', '07': 'Julius.', '08': 'Augustus.', '09': 'September.', '10': 'October', '11': 'November', '12': 'December.'}
+		letter = 0;
+		cepac = 0;
+		for (var i = 0; i < Object.entries(this.skeleton).length; i++) {
+			if (/\d{4}-\d{2}-01/.test(Object.entries(this.skeleton)[i][0])) {
+				monthnumber = Object.entries(this.skeleton)[i][0].split('-')[1];
+				newskeleton[Object.entries(this.skeleton)[i][0] + '-excluded'] = `<h4 class='month-name-title'>${monthtitles[monthnumber]}</h4>`;
+			}
+			Object.entries(this.skeleton)[i][1].push(['littera', letter, cepac]);
+			letter = (letter + 1) % 7;
+			cepac++;
+			newskeleton[Object.entries(this.skeleton)[i][0]] = Object.entries(this.skeleton)[i][1];
+			
+			if (Object.entries(this.skeleton)[i][0] == '2001-02-28') {
+				newskeleton[Object.entries(this.skeleton)[i][0] + '-excluded'] = `<span class='red'>In anno bissextili mensis Febr. est dierum <span style='color:black'>29.</span> et festum S. Mathiæ celebratur die <span style='color:black'>25.</span> Febr. et bis dicitur <span style='color:black'>sexto Kalendas,</span> id est die <span style='color:black'>24.</span> et die <span style='color:black'>25.</span> et littera Dominicalis, quæ assumpta fuit in mense Januario, mutatur in præcedentem; ut si in Januario littera Dominicalis fuerit <span style='color:black'>A,</span> mutatur in præcedentem, quæ est <span style='color:black'>g.</span> etc; et littera <span style='color:black'>f.</span> bis servit, <span style='color:black'>24.</span> et <span style='color:black'>25.</span></span>`;
+			} else if (Object.entries(this.skeleton)[i][0] == '2001-12-31') {
+				newskeleton[Object.entries(this.skeleton)[i][0] + '-excluded'] = `<span class='red'>Hæc Epacta <span style='color:black'>19.</span> nigra numquam est in usu, nisi quando eodem anno concurrit cum Aureo numero <span style='color:black'>xix.</span></span>`;
+			}
+		}
+		this.skeleton = newskeleton;
+		this.kalendar = json.kalendar;
 		this.initialized = true;
+	},
+	makeentry(date, occurrences) {
+		// For month titles and a few other things
+		if (typeof occurrences === 'string') {
+			return occurrences;
+		}
+
+		function deviseentry(entry) {
+			tags = [];
+			names = [];
+			if (typeof entry.names === 'string') {
+				tags = [entry.tags];
+				names = [entry.names];
+			} else {
+				tags = entry.tags;
+				names = entry.names;
+			}
+			ret = abbreviateName(names[0]);
+			if (tags[0].includes('commemoratio')) {
+				ret = `${ret}. <span class='red'>commem.</span>`;
+			} else if (tags[0].includes('duplex-i-classis')) {
+				ret = `<span class='red'>${ret}. </span>dupl. 1. class.`;
+			} else if (tags[0].includes('duplex-ii-classis')) {
+				ret = `<span class='red'>${ret}. </span>dupl. 2. class.`;
+			} else if (tags[0].includes('duplex-majus')) {
+				ret = `<span class='red'>${ret}. </span>dupl. maj.`;
+			} else if (tags[0].includes('duplex-minus')) {
+				ret = `${ret}. <span class='red'>dupl.</span>`;
+			} else if (tags[0].includes('semiduplex') && !tags[0].includes('infra-octavam')) {
+				ret = `${ret}. <span class='red'>semidupl.</span>`;
+			}
+
+			if (tags.length > 1) {
+				ret += ', comm. ';
+				for (var k = 1; k < tags.length; k++) {
+					ret += abbreviateComm(names[k]);
+					if (k + 1 != tags.length) {
+						ret += ', ';
+					}
+				}
+			}
+			return ret + '.';
+		}
+		ret = '';
+		for (var i = 0; i < occurrences.length; i++) {
+			for (var j = 0; j < this.kalendar.length; j++) {
+				if (this.kalendar[j].occurrence.every(tag => occurrences[i].includes(tag))) {
+					if (occurrences[i].includes('tempus')) {
+						ret += deviseentry(this.kalendar[j]);
+					} else {
+						ret += `<br /><span class='red'>${abbreviateOcc(this.kalendar[j]['occurrence-name'])}.</span> ${deviseentry(this.kalendar[j])}`;
+					}
+				}
+			}
+		}
+		return ret.replaceAll('..', '.').replaceAll('.</span>.', '.</span>');
 	}
 }" x-init="getKalendar();">
 	<div id="content-container-inner">
 		<h1 id="kalendar-title">KALENDARIUM ROMANUM</h1>
 		<template x-if="initialized">
-			<template x-for="entry in kalendar">
-				<div x-text="entry"></div>
-			</template>
+			<table class="kalendar-table">
+				<tr>
+					<th class="kalendar-table-header kalendar-table-entry">Cyclus Epact.</th>
+					<th class="kalendar-table-header kalendar-table-entry rotated-header">L.D.</th>
+					<th class="kalendar-table-header kalendar-table-entry"></th>
+					<th class="kalendar-table-header kalendar-table-entry rotated-header">D.M.</th>
+					<th class="kalendar-table-header kalendar-table-entry">Mensis.</th>
+				</tr>
+				<template x-for="(entry, date) in skeleton">
+					<tr>
+						<td class="kalendar-table-entry red kalendar-entry-nowrap" x-html="date.includes('-excluded') ? '' : epact[entry.filter(item => item[0] == 'littera')[0][2]]"></td>
+						<td class="kalendar-table-entry" x-html="date.includes('-excluded') ? '' : litterae[entry.filter(item => item[0] == 'littera')[0][1]]"></td>
+						<td class="kalendar-table-entry" x-html="date.includes('-excluded') ? '' : dateabbreviation(entry)"></td>
+						<td class="kalendar-table-entry date-entry" x-text="date.includes('-excluded') ? '' : parseInt(date.split('-')[2])"></td>
+						<td class="kalendar-table-entry" x-html="makeentry(date, entry)"></td>
+					</tr>
+				</template>
+			</table>
 		</template>
 	</div>
 </div>
