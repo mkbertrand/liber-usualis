@@ -15,6 +15,7 @@ def test_data(file) -> None:
     for entry in pile:
         tags = entry['tags']
         for k, v in entry.items():
+            assert re.search('^[a-z-]+$', k), entry
             assert k != 'forwards-to', entry
             if k == 'tags':
                 if type(v) is list:
@@ -24,3 +25,26 @@ def test_data(file) -> None:
             assert all(not x in v for x in list('`ẃŕṕśǵḱĺźćǘńḿ')), entry
         if 'collecta' in entry['tags']:
             assert 'terminatio' in entry, entry
+
+
+oes = set()
+
+def idoes(txt):
+    txt = txt.replace('\u0301', '&')
+    fd = re.findall('[a-zA-ZáéíóúýÁÉÍÓÚÝæœÆŒǽǼ&]+', txt)
+    for f in fd:
+        if ('œ' in f or 'Œ' in f) and not any(x in f for x in list('&áéíóúýÁÉÍÓÚÝ')):
+            oes.add(f)
+
+for file in files:
+    pile = datamanage.load_data(file)
+    for entry in pile:
+        for k, v in entry.items():
+            if type(v) is list:
+                for i in v:
+                    if type(i) is str:
+                        idoes(i)
+            elif type(v) is str:
+                idoes(v)
+
+print(oes)
