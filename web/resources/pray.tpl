@@ -199,7 +199,7 @@
 						<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
 						<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(day.primary[0])"></div>
 						<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-						<template x-for="commemoration in day.commemorations">
+						<template x-for="commemoration in day.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
 							<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 						</template>
 						<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
