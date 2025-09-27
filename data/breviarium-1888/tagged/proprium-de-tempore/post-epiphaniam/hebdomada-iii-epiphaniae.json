@@ -10,21 +10,15 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["hebdomada-iii-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iii-epiphaniae","dominica","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
 			"Léctio sancti Evangélii secúndum secúndum Matthǽum.",
 			"In illo témpore: Cum descendísset Jesus de monte, secútæ sunt eum turbæ multæ; et ecce leprósus véniens, adorábat eum. Et réliqua.",
 			"Homilía sancti Hierónymi Presbýteri.",
 			"De monte Dómino descendénte, occúrrunt turbæ, quia ad altióra ascéndere non valuérunt. Et primus ei occúrrit leprósus: necdum enim póterat cum lepra tam multíplicem in monte Salvatóris audíre sermónem. Et notándum quod hic primus speciáliter curátus sit: secúndo, puer centuriónis: tértio, socrus Petri fébriens in Caphárnaum: quarto loco, qui obláti sunt ei a dæmónio vexáti: quorum spíritus verbo ejiciébat, quando et omnes male habéntes curávit."
-		]
-	},
-	{
-		"tags":["hebdomada-iii-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
-		"datum":"Et ecce leprósus véniens adorábat eum, dicens. Recte post prædicatiónem atque doctrínam signi offértur occásio, ut per virtútem miráculi prætéritus apud audiéntes sermo firmétur. Dómine, si vis, potes me mundáre. Qui voluntátem rogat, de virtúte non dúbitat. Et exténdens Jesus manum, tétigit eum, dicens: Volo, mundáre. Extendénte manum Dómino, statim lepra fugit. Simúlque consídera, quam húmilis et sine jactántia respónsio. Ille díxerat, Si vis: Dóminus respóndit, Volo. Ille præmíserat, Potes me mundáre: Dóminus jungit, et dicit, Mundáre. Non ergo, ut pleríque Latinórum putant, jungéndum est et legéndum, Volo mundáre: sed separátim, ut primum dicat, Volo: deínde ímperet, Mundáre."
-	},
-	{
-		"tags":["hebdomada-iii-epiphaniae","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Et ait illi Jesus: Vide, némini díxeris. Et revéra quid erat necésse ut sermóne jactáret, quod córpore præferébat? Sed vade, osténde te sacerdóti. Várias ob causas mittit eum ad sacerdótem: primum propter humilitátem, ut sacerdótibus deférre honórem videátur. Erat enim lege præcéptum, ut qui mundáti fúerant a lepra, offérrent múnera sacerdótibus. Deínde ut mundátum vidéntes leprósum, aut créderent Salvatóri, aut non créderent: si créderent, salvaréntur: si non créderent, inexcusábiles forent. Et simul, ne, quod in eo sæpíssime criminabántur, legem viderétur infríngere."
+		],
+		"lectio-ii":"Et ecce leprósus véniens adorábat eum, dicens. Recte post prædicatiónem atque doctrínam signi offértur occásio, ut per virtútem miráculi prætéritus apud audiéntes sermo firmétur. Dómine, si vis, potes me mundáre. Qui voluntátem rogat, de virtúte non dúbitat. Et exténdens Jesus manum, tétigit eum, dicens: Volo, mundáre. Extendénte manum Dómino, statim lepra fugit. Simúlque consídera, quam húmilis et sine jactántia respónsio. Ille díxerat, Si vis: Dóminus respóndit, Volo. Ille præmíserat, Potes me mundáre: Dóminus jungit, et dicit, Mundáre. Non ergo, ut pleríque Latinórum putant, jungéndum est et legéndum, Volo mundáre: sed separátim, ut primum dicat, Volo: deínde ímperet, Mundáre.",
+		"lectio-iii":"Et ait illi Jesus: Vide, némini díxeris. Et revéra quid erat necésse ut sermóne jactáret, quod córpore præferébat? Sed vade, osténde te sacerdóti. Várias ob causas mittit eum ad sacerdótem: primum propter humilitátem, ut sacerdótibus deférre honórem videátur. Erat enim lege præcéptum, ut qui mundáti fúerant a lepra, offérrent múnera sacerdótibus. Deínde ut mundátum vidéntes leprósum, aut créderent Salvatóri, aut non créderent: si créderent, salvaréntur: si non créderent, inexcusábiles forent. Et simul, ne, quod in eo sæpíssime criminabántur, legem viderétur infríngere."
 	},
 	{
 		"tags":["hebdomada-iii-epiphaniae","dominica","laudes","antiphona","antiphona-benedictus"],

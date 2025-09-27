@@ -13,21 +13,15 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["hebdomada-xxiv-pentecostes","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-xxiv-pentecostes","dominica","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
 			"In illo témpore: Dixit Jesus discípulis suis: Cum vidéritis abominatiónem desolatiónis, quæ dicta est a Daniéle prophéta, stantem in loco sancto: qui legit, intélligat. Et réliqua.",
 			"Homilía sancti Hierónymi Presbýteri.",
 			"Quando ad intelligéntiam provocámur, mýsticum monstrátur esse quod dictum est. Légimus autem in Daniéle hoc modo: Et in dimídio hebdómadis auferétur sacrifícium et libámina: et in templo abominátio desolatiónum erit, usque ad consummatiónem témporis, et consummátio dábitur super solitúdinem. De hoc et Apóstolus lóquitur, quod homo iniquitátis, et adversárius elevándus sit contra omne quod dícitur Deus et cólitur: ita ut aúdeat stare in templo Dei, et osténdere quod ipse sit Deus: cujus advéntus secúndum operatiónem sátanæ déstruat eos, et ad Dei solitúdinem rédigat, qui se suscéperint."
-		]
-	},
-	{
-		"tags":["hebdomada-xxiv-pentecostes","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
-		"datum":"Potest autem simplíciter aut de Antichrísto áccipi, aut de imágine Cǽsaris, quam Pilátus pósuit in templo, aut de Adriáni equéstri státua, quæ in ipso sancto sanctórum loco usque in præséntem diem stetit. Abominátio quoque secúndum véterem scriptúram idólum nuncupátur: et idcírco ádditur, desolatiónis, quod in desoláto templo atque destrúcto idólum pósitum sit."
-	},
-	{
-		"tags":["hebdomada-xxiv-pentecostes","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Abominátio desolatiónis intélligi potest et omne dogma pervérsum: quod cum vidérimus stare in loco sancto, hoc est in Ecclésia, et se osténdere Deum: debémus fúgere de Judǽa ad montes, hoc est, dimíssa occidénte líttera, et Judáica pravitáte, appropinquáre móntibus ætérnis, de quibus illúminat mirabíliter Deus; et esse in tecto, et in dómate, quo non possint igníta diáboli jácula perveníre, nec descéndere et tóllere áliquid de domo conversatiónis prístinæ, nec quǽrere quæ retrórsum sunt: sed magis sérere in agro spirituálium scripturárum, ut fructus capiámus ex eo: nec tóllere álteram túnicam, quam Apóstoli habére prohibéntur."
+		],
+		"lectio-ii":"Potest autem simplíciter aut de Antichrísto áccipi, aut de imágine Cǽsaris, quam Pilátus pósuit in templo, aut de Adriáni equéstri státua, quæ in ipso sancto sanctórum loco usque in præséntem diem stetit. Abominátio quoque secúndum véterem scriptúram idólum nuncupátur: et idcírco ádditur, desolatiónis, quod in desoláto templo atque destrúcto idólum pósitum sit.",
+		"lectio-iii":"Abominátio desolatiónis intélligi potest et omne dogma pervérsum: quod cum vidérimus stare in loco sancto, hoc est in Ecclésia, et se osténdere Deum: debémus fúgere de Judǽa ad montes, hoc est, dimíssa occidénte líttera, et Judáica pravitáte, appropinquáre móntibus ætérnis, de quibus illúminat mirabíliter Deus; et esse in tecto, et in dómate, quo non possint igníta diáboli jácula perveníre, nec descéndere et tóllere áliquid de domo conversatiónis prístinæ, nec quǽrere quæ retrórsum sunt: sed magis sérere in agro spirituálium scripturárum, ut fructus capiámus ex eo: nec tóllere álteram túnicam, quam Apóstoli habére prohibéntur."
 	},
 	{
 		"tags":["hebdomada-xxiv-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"],

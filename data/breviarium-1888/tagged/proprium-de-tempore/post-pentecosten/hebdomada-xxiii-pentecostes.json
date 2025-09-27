@@ -13,21 +13,15 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-vii"],
-		"datum":[
+		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
-			"In illo témpore: Loquénte Jesu ad turbas. ecce princeps unus accéssit, et adorábat eum, dicens: Dómine, fília mea modo defúncta est. Et réliqua.",
-			"Homilía Sancti Hierónymi Presbýteri.",
+			"In illo témpore: Loquénte Jesu ad turbas, ecce princeps unus accéssit, et adorábat eum, dicens: Dómine, fília mea modo defúncta est. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
 			"Octávum signum est, in quo princeps suscitári póstulat fíliam suam, nolens de mystério veræ circumcisiónis exclúdi: sed subíntrat múlier sánguine fluens, et octávo sanátur loco: ut príncipis fília de hoc exclúsa número, véniat ad nonum, juxta illud quod in Psalmis dícitur: Æthiópia prævéniet manus ejus Deo: et, Cum intráverit plenitúdo Géntium, tunc omnis Israël salvus fiet."
-		]
-	},
-	{
-		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-viii"],
-		"datum":"Et ecce múlier, quæ sánguinis fluxum patiebátur duódecim annis, accéssit retro, et tétigit fímbriam vestiménti ejus. In Evangélio secúndum Lucam scríbitur, quod príncipis fília duódecim annos habéret ætátis. Nota ergo, quod eo témpore hæc múlier, id est, Géntium pópulus cœ\u0301perit ægrotáre, quo genus Judæórum credíderat. Nisi enim ex comparatióne virtútum, vítium non osténditur."
-	},
-	{
-		"tags":["hebdomada-xxiii-pentecostes","dominica","matutinum","lectio","lectio-ix"],
-		"datum":"Hæc autem múlier sánguine fluens, non in domo, non in urbe accédit ad Dóminum, quia juxta legem úrbibus excludebátur: sed in itínere ambulánte Dómino; ut dum pergit ad áliam, ália curarétur. Unde dicunt et Apóstoli: Vobis quidem oportébat prædicári verbum Dei: sed quóniam vos judicástis indígnos salúte, transgrédimur ad Gentes."
+		],
+		"lectio-ii":"Et ecce múlier, quæ sánguinis fluxum patiebátur duódecim annis, accéssit retro, et tétigit fímbriam vestiménti ejus. In Evangélio secúndum Lucam scríbitur, quod príncipis fília duódecim annos habéret ætátis. Nota ergo, quod eo témpore hæc múlier, id est, Géntium pópulus cœ\u0301perit ægrotáre, quo genus Judæórum credíderat. Nisi enim ex comparatióne virtútum, vítium non osténditur.",
+		"lectio-iii":"Hæc autem múlier sánguine fluens, non in domo, non in urbe accédit ad Dóminum, quia juxta legem úrbibus excludebátur: sed in itínere ambulánte Dómino; ut dum pergit ad áliam, ália curarétur. Unde dicunt et Apóstoli: Vobis quidem oportébat prædicári verbum Dei: sed quóniam vos judicástis indígnos salúte, transgrédimur ad Gentes."
 	},
 	{
 		"tags":["hebdomada-xxiii-pentecostes","dominica","laudes","antiphona-benedictus"],
