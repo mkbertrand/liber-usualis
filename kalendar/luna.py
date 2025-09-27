@@ -31,7 +31,7 @@ def epact(year):
 # F-r and F-n correspond to F rubra and F nigra
 litterae = {
 		'i': 'a', 'ii': 'b', 'iii': 'c', 'iv': 'd', 'v': 'e', 'vi': 'f', 'vii': 'g', 'viii': 'h', 'ix':  'i', 'x': 'k', 'xi': 'l', 'xii': 'm', 'xiii': 'n', 'xiv': 'p', 'xv': 'q', 'xvi': 'r', 'xvii': 's', 'xviii': 't', 'xix': 'u',
-		'xx': 'A', 'xxi': 'B', 'xxii': 'C', 'xxiii': 'D', 'xxiv': 'E', 'xxv': 'F-r', '25': 'F-n', 'xxvi': 'G', 'xxvii': 'H', 'xxiii': 'M', 'xxiv': 'N', '*': 'P'
+		'xx': 'A', 'xxi': 'B', 'xxii': 'C', 'xxiii': 'D', 'xxiv': 'E', 'xxv': 'F-r', '25': 'F-n', 'xxvi': 'G', 'xxvii': 'H', 'xxviii': 'M', 'xxix': 'N', '*': 'P'
 		}
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'A', 'B', 'C', 'D', 'E', 'F-r', 'F-n', 'G', 'H', 'M', 'N', 'P']
 def littera(year):
