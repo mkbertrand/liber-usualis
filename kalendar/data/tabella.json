@@ -884,9 +884,35 @@
 		]
 	},
 	{
-		"include":["legitur-mense"],
+		"include":["incipit-libri","retrotranslandum"],
+		"response":[
+			{"include":["incipit-libri","scriptura"],"response":"transfer","target":0,"movement":-1},
+			{"include":["scriptura-propria"],"response":"transfer","target":0,"movement":-1}
+		]
+	},
+	{
+		"include":["incipit-libri","scriptura"],
+		"response":[
+			{"include":["incipit-libri","scriptura","translatum"],"response":"retrotranslandum","target":1},
+			{"include":["scriptura-propria"],"response":"transfer","target":0,"movement":1}
+		]
+	},
+	{
+		"include":["incipit-libri","scriptura"],
+		"response":[
+			{"include":["scriptura"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["scriptura"],
 		"response":[
 			{"include":["feria"],"response":"combina","target":0},
+			{"include":["dominica","semiduplex"],"response":"combina","target":0}
+		]
+	},
+	{
+		"include":["pro-antiphona-magnificat"],
+		"response":[
 			{"include":["dominica","semiduplex"],"response":"combina","target":0}
 		]
 	},

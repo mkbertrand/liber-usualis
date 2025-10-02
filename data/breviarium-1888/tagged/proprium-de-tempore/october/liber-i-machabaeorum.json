@@ -2,7 +2,175 @@
 	{
 		"tags":["liber-i-machabaeorum","incipit-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1858",
-		"datum":"Adapériat Dóminus * cor vestum in lege sua, et in præcéptis suis, et fáciat pacem Dóminus Deus noster."
+		"datum":"Adapériat Dóminus * cor vestrum in lege sua, et in præcéptis suis, et fáciat pacem Dóminus Deus noster."
+	},
+	{
+		"tags":["liber-i-machabaeorum","incipit-libri","lectio","lectio-i"],
+		"datum":[
+			"Íncipit liber primus Machabæórum.",
+			"Et factum est, postquam percússit Alexánder Philíppi Mácedo, qui primus regnávit in Grǽcia, egréssus de terra Cethim, Daríum regem Persárum, et Medórum: constítuit prǽlia multa, et obtínuit ómnium munitiónes, et interfécit reges terræ, et pertránsiit usque ad fines terræ: et accépit spólia multitúdinis Géntium: et síluit terra in conspéctu ejus. Et congregávit virtútem, et exércitum fortem nimis: et exaltátum est, et elevátum cor ejus: et obtínuit regiónes Géntium, et tyránnos: et facti sunt illi in tribútum. Et post hæc décidit in lectum, et cognóvit quia morerétur. Et vocávit púeros suos nóbiles, qui secum erant nutríti a juventúte: et divísit illis regnum suum, cum adhuc víveret."
+		]
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-i","responsorium","responsorium-i"],
+			["liber-i-machabaeorum","feria","feria-v","responsorium","responsorium-i"]
+		],
+		"incipit":"Adapériat Dóminus cor vestrum in lege sua, et in præcéptis suis, et fáciat pacem in diébus vestris:",
+		"responsum":"Concédat vobis salútem, et rédimat vos a malis.",
+		"versus":"Exaúdiat Dóminus oratiónes vestras, et reconciliétur vobis, nec vos déserat in témpore malo."
+	},
+	{
+		"tags":["liber-i-machabaeorum","incipit-libri","lectio","lectio-ii"],
+		"datum":"Et regnávit Alexánder annis duódecim, et mórtuus est. Et obtinuérunt púeri ejus regnum, unusquísque in loco suo: et imposuérunt omnes sibi diadémata post mortem ejus, et fílii eórum post eos annis multis, et multiplicáta sunt mala in terra. Et éxiit ex eis radix peccátrix, Antíochus illústris, fílius Antíochi regis, qui fúerat Romæ obses: et regnávit in anno centésimo trigésimo séptimo regni Græcórum."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-i","responsorium","responsorium-ii"],
+			["liber-i-machabaeorum","feria","feria-v","responsorium","responsorium-ii"]
+		],
+		"incipit":"Exaúdiat Dóminus oratiónes vestras, et reconciliétur vobis, nec vos déserat in témpore malo,",
+		"responsum":"Dóminus Deus noster.",
+		"versus":"Det vobis cor ómnibus, ut colátis eum, et faciátis ejus voluntátem."
+	},
+	{
+		"tags":["liber-i-machabaeorum","incipit-libri","lectio","lectio-iii"],
+		"datum":"In diébus illis exiérunt ex Ísraël fílii iníqui, et suasérunt multis, dicéntes: Eámus, et disponámus testaméntum cum Géntibus, quæ circa nos sunt: quia ex quo recéssimus ab eis, invenérunt nos multa mala. Et bonus visus est sermo in óculis eórum. Et destinavérunt áliqui de pópulo, et abiérunt ad regem: et dedit illis potestátem ut fácerent justítiam Géntium. Et ædificavérunt gymnásium in Jerosólymis secúndum legem Natiónum: et fecérunt sibi præpútia, et recessérunt a testaménto sancto, et juncti sunt Natiónibus, et venúmdati sunt ut fácerent malum."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-i","responsorium","responsorium-iii"],
+			["liber-i-machabaeorum","feria","feria-v","responsorium","responsorium-iii"]
+		],
+		"incipit":"Congregáti sunt inimíci nostri, et gloriántur in virtúte sua: cóntere fortitúdinem illórum Dómine, et dispérge illos:",
+		"responsum":"Ut cognóscant, quia non est álius qui pugnet pro nobis, nisi tu Deus noster.",
+		"versus":"Dispérge illos in virtúte tua, et déstrue eos protéctor noster Dómine."
+	},
+	{
+		"tags":["liber-i-machabaeorum","incipit-libri","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex libro Officiórum sancti Ambrósii Epíscopi.",
+			"Fortásse áliquos béllica defíxos glória tenet, ut putent solam esse præliárem fortitúdinem; et ídeo me ad ista deflexísse, quia illa nostris déforet. Quam fortis Jesus Nave, ut uno prǽlio quinque reges captos stérneret cum pópulis suis? Deínde cum advérsum Gabaonítas urgéret prǽlium, et vererétur ne nox impedíret victóriam, magnitúdine mentis et fídei clamávit: Stet sol: et stetit, donec victória consummarétur. Gédeon in trecéntis viris de ingénti pópulo et acérbo hoste revéxit triúmphum. Jónathas adoléscens virtútem magnam fecit in prǽlio."
+		]
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-ii","responsorium","responsorium-i"],
+			["liber-i-machabaeorum","feria","feria-vi","responsorium","responsorium-i"]
+		],
+		"incipit":"Ímpetum inimicórum ne timuéritis: mémores estóte, quómodo salvi facti sunt patres nostri:",
+		"responsum":"Et nunc clamémus in cœlum, et miserébitur nostri Deus noster.",
+		"versus":"Mementóte mirabílium ejus, quæ fecit Pharaóni, et exercítui ejus in Mari rubro."
+	},
+	{
+		"tags":["liber-i-machabaeorum","incipit-libri","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quid de Machabǽis loquar? Sed prius de pópulo dicam patrum: qui cum essent paráti ad repugnándum pro templo Dei, et pro legítimis suis, dolo hóstium die lacessíti sábbati, maluérunt vulnéribus offérre nuda córpora, quam repugnáre, ne violárent sábbatum. Ítaque omnes læti se obtulérunt morti. Sed Machabǽi considerántes quod hoc exémplo gens omnis posset períre, sábbato étiam, cum ipsi in bellum provocaréntur, ulti sunt innocéntium necem fratrum suórum. Unde póstea stimulátus rex Antíochus, cum bellum accénderet per duces suos Lýsiam, Nicánorem, Górgiam, ita cum Orientálibus suis et Assýriis attrítus est cópiis, ut quadragínta et octo míllia in médio campi a tribus míllibus prosterneréntur."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-ii","responsorium","responsorium-ii"],
+			["liber-i-machabaeorum","feria","feria-vi","responsorium","responsorium-ii"]
+		],
+		"incipit":"Congregátæ sunt Gentes in multitúdine, ut dímicent contra nos, et ignorámus quid ágere debeámus:",
+		"responsum":"Dóminus Deus, ad te sunt óculi nostri, ne pereámus.",
+		"versus":"Tu scis quæ cógitant in nos: quómodo potérimus subsístere ante fáciem illórum, nisi tu ádjuves nos? Dómine Deus."
+	},
+	{
+		"tags":["liber-i-machabaeorum","incipit-libri","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Virtútem ducis Judæ Machabǽi de uno ejus mílite consideráte. Namque Eleázarus, cum supereminéntem céteris elephántem loríca vestítum régia advérteret, arbitrátus quod in eo esset rex, cursu cóncito in médium legiónis se prorúpit: et abjécto clýpeo, utráque manu interficiébat, donec perveníret ad béstiam, atque intrávit sub eam, et subjécto gládio interémit eam. Ítaque cadens béstia oppréssit Eleázarum, atque ita mórtuus est. Quanta ígitur virtus ánimi! primo, ut mortem non timéret: deínde, ut circumfúsus legiónibus inimicórum, in confértos raperétur hostes, médium penetráret agmen, et contémpta morte ferócior, abjécto clýpeo, utráque manu vulnerátæ molem béstiæ subíret ac sustinéret, post infra ipsam succéderet, quo plenióri feríret ictu: cujus ruína inclúsus, magis quam oppréssus, suo est sepúltus triúmpho."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-ii","responsorium","responsorium-iii"],
+			["liber-i-machabaeorum","feria","feria-vi","responsorium","responsorium-iii"]
+		],
+		"incipit":"Tua est poténtia, tuum regnum Dómine: tu es super omnes gentes:",
+		"responsum":"Da pacem Dómine in diébus nostris.",
+		"versus":"Creátor ómnium Deus, terríbilis et fortis, justus et miséricors."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","dominica","nocturna-iii","responsorium","responsorium-i"],
+			["liber-i-machabaeorum","feria","feria-iv","responsorium","responsorium-i"],
+			["liber-i-machabaeorum","feria","sabbatum","responsorium","responsorium-i"]
+		],
+		"incipit":"Refúlsit sol in clýpeos aúreos, et resplenduérunt montes ab eis:",
+		"responsum":"Et fortitúdo Géntium dissipáta est.",
+		"versus":"Erat enim exércitus magnus valde, et fortis: et appropiávit Judas, et exércitus ejus in prǽlio."
+	},
+	{
+		"tags":["liber-i-machabaeorum","dies-ii-libri","lectio","lectio-i"],
+		"datum":[
+			"De libro primo Machabæórum.",
+			"Et parátum est regnum in conspéctu Antíochi, et cœpit regnáre in terra Ægýpti ut regnáret super duo regna. Et intrávit in Ægýptum in multitúdine gravi, in cúrribus, et elephántis, et equítibus, et copiósa návium multitúdine: et constítuit bellum advérsus Ptolemǽum regem Ægýpti, et véritus est Ptolemǽus a fácie ejus, et fugit, et cecidérunt vulneráti multi. Et comprehéndit civitátes munítas in terra Ægýpti: et accépit spólia terræ Ægýpti."
+		]
+	},
+	{
+		"tags":["liber-i-machabaeorum","feria","feria-ii","responsorium","responsorium-i"],
+		"incipit":"Dixit Judas Simóni fratri suo: Élige tibi viros, et vade, líbera fratres tuos in Galilǽam: ego autem, et Jónathas frater tuus, íbimus in Galaadítim:",
+		"responsum":"Sicut fúerit volúntas in cœlo, sic fiat.",
+		"versus":"Accingímini fílii poténtes, et estóte paráti: quóniam mélius est nobis mori in bello, quam vidére mala gentis nostræ, et sanctórum."
+	},
+	{
+		"tags":["liber-i-machabaeorum","dies-ii-libri","lectio","lectio-ii"],
+		"datum":"Et convértit Antíochus, postquam percússit Ægýptum in centésimo et quadragésimo tértio anno: et ascéndit ad Ísraël, et ascéndit Jerosólymam in multitúdine gravi. Et intrávit in sanctificatiónem cum supérbia, et accépit altáre aúreum, et candelábrum lúminis, et univérsa vasa ejus, et mensam propositiónis, et libatória, et phíalas, et mortaríola aúrea, et velum, et corónas, et ornaméntum aúreum quod in fácie templi erat: et commínuit ómnia."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","feria","feria-ii","responsorium","responsorium-ii"],
+			["liber-i-machabaeorum","feria","feria-iv","responsorium","responsorium-ii"],
+			["liber-i-machabaeorum","feria","sabbatum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Ornavérunt fáciem templi corónis aúreis, et dedicavérunt altáre Dómino:",
+		"responsum":"Et facta est lætítia magna in pópulo.",
+		"versus":"In hymnis et confessiónibus benedicébant Dóminum."
+	},
+	{
+		"tags":["liber-i-machabaeorum","dies-ii-libri","lectio","lectio-iii"],
+		"datum":"Et accépit argéntum, et aurum, et vasa concupiscibília: et accépit thesaúros occúltos, quos invénit: et sublátis ómnibus ábiit in terram suam. Et fecit cædem hóminum, et locútus est in supérbia magna. Et factus est planctus magnus in Ísraël, et in omni loco eórum: et ingemuérunt príncipes, et senióres: vírgines et júvenes infirmáti sunt: et speciósitas mulíerum immutáta est. Omnis marítus sumpsit laméntum: et quæ sedébant in thoro maritáli, lugébant: et commóta est terra super habitántes in ea, et univérsa domus Jacob índuit confusiónem."
+	},
+	{
+		"tags":[
+			["liber-i-machabaeorum","feria","feria-ii","responsorium","responsorium-iii"],
+			["liber-i-machabaeorum","feria","feria-iv","responsorium","responsorium-iii"],
+			["liber-i-machabaeorum","feria","sabbatum","responsorium","responsorium-iii"]
+		],
+		"incipit":"In hymnis et confessiónibus benedicébant Dóminum:",
+		"responsum":"Qui magna fecit in Ísraël, et victóriam dedit illis Dóminus omnípotens.",
+		"versus":"Ornavérunt fáciem templi corónis aúreis, et dedicavérunt altáre Dómino."
+	},
+	{
+		"tags":["liber-i-machabaeorum","dies-iii-libri","lectio","lectio-i"],
+		"datum":[
+			"De libro primo Machabæórum.",
+			"In diébus illis surréxit Mathathías fílius Joánnis, fílii Simeónis, sacérdos ex fíliis Jóarib ab Jerúsalem, et consédit in monte Modin: et habébat fílios quinque, Joánnem, qui cognominabátur Gaddis: et Simónem, qui cognominabátur Thasi: et Judam, qui vocabátur Machabǽus: et Eleázarum, qui cognominabátur Ábaron: et Jónathan, qui cognominabátur Apphus. Hi vidérunt mala, quæ fiébant in pópulo Juda, et in Jerúsalem."
+		]
+	},
+	{
+		"tags":["liber-i-machabaeorum","feria","feria-iii","responsorium","responsorium-i"],
+		"incipit":"Hic est fratrum amátor, et pópuli Ísraël:",
+		"responsum":"Hic est qui multum orat pro pópulo, et univérsa sancta civitáte Jerúsalem.",
+		"versus":"Vir iste in pópulo suo mitíssimus appáruit."
+	},
+	{
+		"tags":["liber-i-machabaeorum","dies-iii-libri","lectio","lectio-ii"],
+		"datum":"Et dixit Mathathías: Væ mihi, ut quid natus sum vidére contritiónem pópuli mei et contritiónem civitátis sanctæ, et sedére illic, cum datur in mánibus inimicórum? Sancta in manu extraneórum facta sunt: templum ejus sicut homo ignóbilis. Vasa glóriæ ejus captíva abdúcta sunt: trucidáti sunt senes ejus in platéis, et júvenes ejus cecidérunt in gládio inimicórum. Quæ gens non hæreditávit regnum ejus, et non obtínuit spólia ejus?"
+	},
+	{
+		"tags":["liber-i-machabaeorum","feria","feria-iii","responsorium","responsorium-ii"],
+		"incipit":"Tu Dómine universórum, qui nullam habes indigéntiam, voluísti templum tuum fíeri in nobis:",
+		"responsum":"Consérva domum istam immaculátam in ætérnum Dómine.",
+		"versus":"Tu elegísti Dómine domum istam ad invocándum nomen tuum in ea, ut esset domus oratiónis et obsecratiónis pópulo tuo."
+	},
+	{
+		"tags":["liber-i-machabaeorum","dies-iii-libri","lectio","lectio-iii"],
+		"datum":"Et scidit vestiménta sua Mathathías, et fílii ejus: et operuérunt se cilíciis, et planxérunt valde. Et venérunt illuc qui missi erant a rege Antíocho, ut cógerent eos, qui confúgerant in civitátem Modin, immoláre, et accéndere thura, et a lege Dei discédere. Et multi de pópulo Ísraël consentiéntes accessérunt ad eos: sed Mathathías, et fílii ejus constánter stetérunt."
+	},
+	{
+		"tags":["liber-i-machabaeorum","feria","feria-iii","responsorium","responsorium-iii"],
+		"incipit":"Áperi óculos tuos Dómine, et vide afflictiónem nostram: circumdedérunt nos Gentes ad puniéndum nos:",
+		"responsum":"Sed tu Dómine exténde bráchium tuum, et líbera ánimas nostras.",
+		"versus":"Afflíge oppriméntes nos, et contuméliam faciéntes in supérbiam; et custódi partem tuam."
 	},
 	{
 		"tags":["liber-i-machabaeorum","dies-viii-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],

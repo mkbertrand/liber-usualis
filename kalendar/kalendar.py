@@ -193,7 +193,7 @@ def todate(text: str, year0: int) -> date:
 
 roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 roletags = set(roletagsordered)
-noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','legitur-mense'}
+noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat'}
 
 # N.B. This is a mutable function. It will change kal
 def process(kal):
@@ -366,8 +366,9 @@ def kalendar(year: int) -> Kalendar:
 
 	for cycle in cycles:
 		for entry in cycle:
-			kal.add_entry(bases[entry['basis']] + timedelta(days=entry['offset']), entry['tags'])
-			octavate(bases[entry['basis']] + timedelta(days=entry['offset']), entry['tags'])
+			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
+				kal.add_entry(bases[entry['basis']] + timedelta(days=entry['offset']), tagset)
+				octavate(bases[entry['basis']] + timedelta(days=entry['offset']), tagset)
 
 	# Epiphany Sundays
 	epiphanyweek = 0
