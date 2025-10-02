@@ -380,6 +380,8 @@ function render(data, chant) {
 						}
 					}
 					data['datum'] = ret + `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][4]))}<br>${stringrender(unpack(data['datum'][5]))}</p>`;
+				} else if (['antiphona-bmv', 'completorium', 'antiphona'].every((tag) => data['tags'].includes(tag))) {
+					header = makeheader('Antiphona B.M.V.');
 				}
 
 				return `${header}<div class="rite-item${' ' + data['tags'].join(' ')}">${renderinner(data['datum'], translated, data['tags'].concat(parenttags))}</div>`;
