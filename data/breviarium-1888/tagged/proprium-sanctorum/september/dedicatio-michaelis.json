@@ -8,7 +8,8 @@
 		"antiphona":[["apparitio-michaelis","antiphona"]],
 		"capitulum":[["apparitio-michaelis","capitulum"]],
 		"hymnus":[["apparitio-michaelis","hymnus"]],
-		"versiculus":[["apparitio-michaelis","versiculus"]]
+		"versiculus":[["apparitio-michaelis","versiculus"]],
+		"responsorium":[["apparitio-michaelis","responsorium"]]
 	},
 	{
 		"tags":["dedicatio-michaelis","i-vesperae","psalmus"],
@@ -18,6 +19,79 @@
 		"tags":["dedicatio-michaelis","collecta"],
 		"datum":[["apparitio-michaelis","collecta"]],
 		"terminatio":[["apparitio-michaelis","collecta","terminatio"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","psalmus"],
+		"datum":[["de-sanctis-angelis","psalmus"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0929N1A1",
+		"datum":"Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cœlo."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0929N1A2",
+		"datum":"Laudémus Dóminum, * quem laudant Ángeli, quem Chérubim et Séraphim, Sanctus, Sanctus, Sanctus proclámant."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0929N1A3",
+		"datum":"Ascéndit fumus * arómatum in conspéctu Dómini de manu Ángeli."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-i","lectio"],
+		"datum":[["apparitio-michaelis","lectio"]]
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0929N2A1",
+		"datum":"Míchaël Archángele, * veni in adjutórium pópulo Dei."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0929N2A2",
+		"datum":"Míchaël * præpósitus paradísi, quem honoríficant Angelórum cives."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0929N2A3",
+		"datum":"Gloriósus apparuísti * in conspéctu Dómini: proptérea decórem índuit te Dóminus."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Gregórii Papæ.",
+			"Novem Angelórum órdines dícimus, quia vidélicet esse, testánte sacro elóquio scimus: Ángelos, Archángelos, Virtútes, Potestátes, Principátus, Dominatiónes, Thronos, Chérubim atque Séraphim. Esse namque Ángelos et Archángelos pene omnes sacri elóquii páginæ testántur: Chérubim vero atque Séraphim sæpe, ut notum est, libri prophetárum loquúntur. Quátuor quoque órdinum nómina Paulus Apóstolus ad Ephésios enúmerat, dicens: Supra omnem Principátum, et Potestátem, et Virtútem, et Dominatiónem. Qui rursus ad Colossénses scribens, ait: Sive Throni, sive Potestátes, sive Principátus, sive Dominatiónes. Dum ergo illis quátuor, quæ ad Ephésios dixit, conjungúntur Throni, quinque sunt órdines: quibus dum Ángeli et Archángeli, Chérubim atque Séraphim adjúncta sunt, procul dúbio novem esse Angelórum órdines inveniúntur."
+		],
+		"lectio-ii":"Sciéndum vero quod Angelórum vocábulum nomen est offícii, non natúræ. Nam sancti illi cœléstis pátriæ spíritus semper quidem sunt spíritus, sed semper vocári Ángeli nequáquam possunt: quia tunc solum sunt Ángeli, cum per eos áliqua nuntiántur. Unde et per Psalmístam dícitur: Qui facit Ángelos suos spíritus. Ac si paténter dicat: Qui eos, quos semper habet spíritus, étiam cum volúerit, Ángelos facit. Hi autem qui mínima núntiant, Ángeli: qui vero summa annúntiant, Archángeli vocántur. Hinc est enim quod ad Maríam Vírginem non quílibet Ángelus, sed Gábriel Archángelus míttitur. Ad hoc quippe ministérium, summum Ángelum veníre dignum fúerat, qui summum ómnium nuntiábat. Qui idcírco étiam privátis nomínibus censéntur, ut signétur per vocábula, étiam in operatióne quid váleant. Míchaël namque, Quis ut Deus? Gábriel autem, Fortitúdo Dei: Ráphaël vero dícitur Medicína Dei.",
+		"lectio-iii":"Et quóties miræ virtútis áliquid ágitur, Míchaël mitti perhibétur: ut ex ipso actu et nómine detur intélligi, quia nullus potest fácere, quod fácere prǽvalet Deus. Unde et ille antíquus hostis, qui Deo esse per supérbiam símilis concupívit, dicens: In cœlum conscéndam, super astra cœli exaltábo sólium meum, símilis ero Altíssimo: dum in fine mundi in sua virtúte relinquétur extrémo supplício periméndus, cum Michaéle Archángelo præliatúrus esse perhibétur, sicut per Joánnem dícitur: Factum est prǽlium cum Michaéle Archángelo. Ad Maríam quoque Gábriel míttitur, qui Dei fortitúdo nominátur. Illum quippe nuntiáre veniébat, qui ad debellándas aéreas potestátes húmilis apparére dignátus est. Ráphaël quoque interpretátur, ut díximus, Medicína Dei: quia vidélicet dum Tobíæ óculos quasi per offícium curatiónis tétigit, cæcitátis ejus ténebras tersit."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0929N3A1",
+		"datum":"Ángelus Archángelus * Míchaël, Dei núntius pro animábus justis, allelúja, allelúja."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0929N3A2",
+		"datum":"Data sunt ei * incénsa multa, ut adoléret ea ante altáre aúreum, quod est ante óculos Dómini."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0929N3A3",
+		"datum":"Multa magnália * de Michaéle Archángelo, qui fortis in prǽlio fecit victóriam."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Accessérunt discípuli ad Jesum, dicéntes: Quis, putas, major est in regno cœlórum? Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"Post invéntum statérem, post tribúta réddita, quid sibi vult Apostolórum repentína interrogátio, Quis, putas, major est in regno cœlórum? Quia víderant pro Petro et Dómino idem tribútum rédditum, ex æqualitáte prétii arbitráti sunt Petrum ómnibus Apóstolis esse prælátum, qui in redditióne tribúti Dómino fúerat comparátus: ídeo intérrogant quis major sit in regno cœlórum. Vidénsque Jesus cogitatiónes eórum, et causas erróris intélligens, vult desidérium glóriæ humilitátis contentióne sanáre."
+		],
+		"lectio-ii":"Si autem manus tua, vel pes tuus scandalízat te, abscínde eum, et prójice abs te. Necésse est quidem veníre scándala: væ tamen ei est hómini, qui, quod necésse est ut fiat in mundo, vítio suo facit ut per se fiat. Ígitur omnis truncátur afféctus, et univérsa propínquitas amputátur, ne per occasiónem pietátis unusquísque credéntium scándalis páteat. Si, inquit, ita est quis tibi conjúnctus, ut manus, pes, óculus, et est útilis atque sollícitus, et acútus ad perspiciéndum: scándalum autem tibi facit, et propter dissonántiam morum te pértrahit in gehénnam: mélius est ut et propinquitáte ejus, et emoluméntis carnálibus cáreas: ne dum vis lucrifácere cognátos et necessários, causam hábeas ruinárum.",
+		"lectio-iii":"Dico vobis, quia Ángeli eórum in cœlis semper vident fáciem Patris mei. Supra díxerat, per manum, et pedem, et óculum omnes propinquitátes et necessitúdines, quæ scándalum fácere póterant, amputándas: austeritátem ítaque senténtiæ subjécto præcépto témperat, dicens: Vidéte ne contemnátis unum ex pusíllis istis. Sic, inquit, præcípio severitátem, ut commiscéri cleméntiam dóceam: quia Ángeli eórum in cœlis vident semper fáciem Patris. Magna dígnitas animárum, ut unaquǽque hábeat ab ortu nativitátis in custódiam sui Ángelum delegátum. Unde légimus in Apocalýpsi Joánnis: Ángelo Éphesi, et reliquárum ecclesiárum, scribe hæc. Apóstolus quoque prǽcipit velári cápita in ecclésiis feminárum propter Ángelos."
 	},
 	{
 		"tags":["dedicatio-michaelis","responsorium-breve"],

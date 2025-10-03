@@ -40,7 +40,10 @@
 		"datum":"Significávit Deus quæ opórtet fíeri cito, + loquens per Ángelum suum servo suo Joánni, qui testimónium perhíbuit verbo Dei, * et testimónium Jesu Christi, quæcúmque vidit."
 	},
 	{
-		"tags":["apparitio-michaelis","vesperae","hymnus","in-tempore-paschali"],
+		"tags":[
+			["apparitio-michaelis","vesperae","hymnus","in-tempore-paschali"],
+			["apparitio-michaelis","matutinum","hymnus","in-tempore-paschali"]
+		],
 		"src":"gregobase/19938",
 		"datum":[
 			"Te, splendor et virtus Patris,/Te vita, Jesu, córdium,/Ab ore qui pendent tuo,/Laudámus inter Ángelos.",
@@ -51,7 +54,10 @@
 		]
 	},
 	{
-		"tags":["apparitio-michaelis","vesperae","hymnus"],
+		"tags":[
+			["apparitio-michaelis","vesperae","hymnus"],
+			["apparitio-michaelis","matutinum","hymnus"]
+		],
 		"src":"gregobase/19939",
 		"datum":[
 			"Te, splendor et virtus Patris,/Te vita, Jesu, córdium,/Ab ore qui pendent tuo,/Laudámus inter Ángelos.",
@@ -64,7 +70,8 @@
 	{
 		"tags":[
 			["apparitio-michaelis","i-vesperae","versiculus"],
-			["apparitio-michaelis","laudes","versiculus"]
+			["apparitio-michaelis","laudes","versiculus"],
+			["apparitio-michaelis","matutinum","nocturna-i","versiculus"]
 		],
 		"in-tempore-paschali":["V. Stetit Ángelus juxta aram templi, allelúja.","R. Habens thuríbulum aúreum in manu sua, allelúja."],
 		"datum":["V. Stetit Ángelus juxta aram templi.","R. Habens thuríbulum aúreum in manu sua."]
@@ -78,6 +85,151 @@
 		"tags":["apparitio-michaelis","collecta"],
 		"datum":"Deus, qui miro órdine Angelórum ministéria hominúmque dispénsas: + concéde propítius; ut a quibus tibi ministrántibus in cœlo semper assístitur, * ab his in terra vita nostra muniátur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","antiphona","antiphona-invitatorium"],
+		"in-tempore-paschali":"Regem Archangelórum Dóminum, * Veníte adorémus, allelúja.",
+		"datum":"Regem Archangelórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","antiphona"],
+		"in-tempore-paschali":"Concússum est mare, et contrémuit terra, ubi Archángelus Míchaël descendébat de cœlo, allelúja."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Ex Daniéle Prophéta.",
+			"Aspiciébam donec throni pósiti sunt, et antíquus diérum sedit: vestiméntum ejus cándidum quasi nix, et capílli cápitis ejus quasi lana munda: thronus ejus flammæ ignis: rotæ ejus ignis accénsus. Flúvius ígneus, rapidúsque egrediebátur a fácie ejus. Míllia míllium ministrábant ei, et décies míllies centéna míllia assistébant ei: judícium sedit, et libri apérti sunt. Aspiciébam propter vocem sermónum grándium, quos cornu illud loquebátur: et vidi quóniam interfécta esset béstia, et periísset corpus ejus, et tráditum esset ad comburéndum igni."
+		]
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"incipit":"Factum est siléntium in cœlo, dum commítteret bellum draco cum Michaéle Archángelo:",
+		"responsum":"Audíta est vox míllia míllium dicéntium: Salus, honor et virtus omnipoténti Deo, allelúja.",
+		"versus":"Míllia míllium ministrábant ei, et décies centéna míllia assistébant ei."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Factum est siléntium in cœlo, dum commítteret bellum draco cum Michaéle Archángelo:",
+		"responsum":"Audíta est vox míllia míllium dicéntium: Salus, honor et virtus omnipoténti Deo.",
+		"versus":"Míllia míllium ministrábant ei, et décies centéna míllia assistébant ei."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Die autem vigésima et quarta mensis primi, eram juxta flúvium magnum, qui est Tigris. Et levávi óculos meos, et vidi: et ecce vir unus vestítus líneis, et renes ejus accíncti auro obrízo: et corpus ejus quasi chrysólithus, et fácies ejus velut spécies fúlguris, et óculi ejus ut lampas ardens: et bráchia ejus, et quæ deórsum sunt usque ad pedes, quasi spécies æris candéntis: et vox sermónum ejus ut vox multitúdinis. Vidi autem ego Dániel solus visiónem: porro viri qui erant mecum, non vidérunt: sed terror nímius írruit super eos, et fugérunt in abscónditum. Ego autem relíctus solus vidi visiónem grandem hanc: et non remánsit in me fortitúdo, sed et spécies mea immutáta est in me, et emárcui, nec hábui quidquam vírium."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"incipit":"Stetit Ángelus juxta aram templi, habens thuríbulum aúreum in manu sua, et data sunt ei incénsa multa:",
+		"responsum":"Et ascéndit fumus in conspéctu Dómini, allelúja.",
+		"versus":"In conspéctu Angelórum psallam tibi: adorábo ad templum sanctum tuum, et confitébor nómini tuo Dómine."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Stetit Ángelus juxta aram templi, habens thuríbulum aúreum in manu sua, et data sunt ei incénsa multa:",
+		"responsum":"Et ascéndit fumus in conspéctu Dómini.",
+		"versus":"In conspéctu Angelórum psallam tibi: adorábo ad templum sanctum tuum, et confitébor nómini tuo Dómine."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Et audívi vocem sermónum ejus: et aúdiens jacébam consternátus super fáciem meam, et vultus meus hærébat terræ. Et ecce manus tétigit me, et eréxit me super génua mea, et super artículos mánuum meárum. Et dixit ad me: Dániel vir desideriórum, intéllige verba, quæ ego loquor ad te, et sta in gradu tuo: nunc enim sum missus ad te. Cumque dixísset mihi sermónem istum, steti tremens. Et ait ad me: Noli metúere Dániel: quia ex die primo quo posuísti cor tuum ad intelligéndum ut te afflígeres in conspéctu Dei tui, exaudíta sunt verba tua: et ego veni propter sermónes tuos. Princeps autem regni Persárum réstitit mihi vigínti et uno diébus: et ecce Míchaël, unus de princípibus primis, venit in adjutórium meum, et ego remánsi ibi juxta regem Persárum. Veni autem ut docérem te quæ ventúra sunt pópulo tuo in novíssimis diébus, quóniam adhuc vísio in dies."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"incipit":"In conspéctu Angelórum psallam tibi, et adorábo ad templum sanctum tuum:",
+		"responsum":"Et confitébor nómini tuo Dómine, allelúja.",
+		"versus":"Super misericórdia tua et veritáte tua: quóniam magnificásti super nos nomen sanctum tuum."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"In conspéctu Angelórum psallam tibi, et adorábo ad templum sanctum tuum:",
+		"responsum":"Et confitébor nómini tuo Dómine.",
+		"versus":"Super misericórdia tua et veritáte tua: quóniam magnificásti super nos nomen sanctum tuum."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","antiphona"],
+		"in-tempore-paschali":"Míchaël Archángele, veni in adjutórium pópulo Dei, allelúja."
+	},
+	{
+		"tags":[
+			["apparitio-michaelis","matutinum","nocturna-ii","versiculus"],
+			["apparitio-michaelis","tertia","versiculus"]
+		],
+		"in-tempore-paschali":["V. Ascéndit fumus arómatum in conspéctu Dómini, allelúja.","R. De manu Ángeli, allelúja."],
+		"datum":["V. Ascéndit fumus arómatum in conspéctu Dómini.","R. De manu Ángeli."]
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"incipit":"Hic est Míchaël Archángelus, princeps milítiæ Angelórum,",
+		"responsum":"Cujus honor præstat benefícia populórum, et orátio perdúcit ad regna cœlórum, allelúja.",
+		"versus":"Archángelus Míchaël præpósitus paradísi, quem honoríficant Angelórum cives."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Hic est Míchaël Archángelus, princeps milítiæ Angelórum,",
+		"responsum":"Cujus honor præstat benefícia populórum, et orátio perdúcit ad regna cœlórum.",
+		"versus":"Archángelus Míchaël præpósitus paradísi, quem honoríficant Angelórum cives."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"incipit":"Venit Míchaël Archángelus cum multitúdine Angelórum, cui trádidit Deus ánimas sanctórum,",
+		"responsum":"Ut perdúcat eas in paradísum exsultatiónis, allelúja.",
+		"versus":"Emítte Dómine Spíritum sanctum tuum de cœlis, spíritum sapiéntiæ et intelléctus."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Venit Míchaël Archángelus cum multitúdine Angelórum, cui trádidit Deus ánimas sanctórum,",
+		"responsum":"Ut perdúcat eas in paradísum exsultatiónis.",
+		"versus":"Emítte Dómine Spíritum sanctum tuum de cœlis, spíritum sapiéntiæ et intelléctus."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"incipit":"In témpore illo consúrget Míchaël, qui stat pro fíliis vestris:",
+		"responsum":"Et véniet tempus, quale non fuit, ex quo gentes esse cœpérunt, usque ad illud, allelúja.",
+		"versus":"In témpore illo salvábitur pópulus tuus omnis, qui invéntus fúerit scriptus in libro vitæ."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"In témpore illo consúrget Míchaël, qui stat pro fíliis vestris:",
+		"responsum":"Et véniet tempus, quale non fuit, ex quo gentes esse cœpérunt, usque ad illud.",
+		"versus":"In témpore illo salvábitur pópulus tuus omnis, qui invéntus fúerit scriptus in libro vitæ."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-iii","antiphona"],
+		"in-tempore-paschali":"Ángelus Archángelus Míchaël, Dei núntius pro animábus justis, allelúja, allelúja."
+	},
+	{
+		"tags":[
+			["apparitio-michaelis","matutinum","nocturna-iii","versiculus"],
+			["apparitio-michaelis","sexta","versiculus"],
+			["apparitio-michaelis","ii-vesperae","versiculus"]
+		],
+		"in-tempore-paschali":["V. In conspéctu Angelórum psallam tibi Deus meus, allelúja.","R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo, allelúja."],
+		"datum":["V. In conspéctu Angelórum psallam tibi Deus meus.","R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo."]
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"incipit":"In conspéctu Géntium nolíte timére: vos enim in córdibus vestris adoráte et timéte Dóminum:",
+		"responsum":"Ángelus enim ejus vobíscum est, allelúja.",
+		"versus":"Stetit Ángelus juxta aram templi, habens thuríbulum aúreum in manu sua."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"In conspéctu Géntium nolíte timére: vos enim in córdibus vestris adoráte et timéte Dóminum:",
+		"responsum":"Ángelus enim ejus vobíscum est.",
+		"versus":"Stetit Ángelus juxta aram templi, habens thuríbulum aúreum in manu sua."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"incipit":"Míchaël Archángelus venit in adjutórium pópulo Dei,",
+		"responsum":"Stetit in auxílium pro animábus justis, allelúja.",
+		"versus":"Stetit Ángelus juxta aram templi, habens thuríbulu aúreum in manu sua."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Míchaël Archángelus venit in adjutórium pópulo Dei,",
+		"responsum":"Stetit in auxílium pro animábus justis.",
+		"versus":"Stetit Ángelus juxta aram templi, habens thuríbulu aúreum in manu sua."
 	},
 	{
 		"tags":["apparitio-michaelis","laudes","hymnus"],
@@ -109,11 +261,6 @@
 		"versus":"Habens thuríbulum aúreum in manu sua."
 	},
 	{
-		"tags":["apparitio-michaelis","tertia","versiculus"],
-		"in-tempore-paschali":["V. Ascéndit fumus arómatum in conspéctu Dómini, allelúja.","R. De manu Ángeli, allelúja."],
-		"datum":["V. Ascéndit fumus arómatum in conspéctu Dómini.","R. De manu Ángeli."]
-	},
-	{
 		"tags":["apparitio-michaelis","sexta","capitulum"],
 		"datum":"Audívi vocem Angelórum multórum in circúitu throni, et animálium, et seniórum: + et erat númerus eórum míllia míllium, * voce magna dicéntium: Salus Deo nostro."
 	},
@@ -128,14 +275,6 @@
 		"incipit":"Ascéndit fumus arómatum",
 		"responsum":"In conspéctu Dómini.",
 		"versus":"De manu Ángeli."
-	},
-	{
-		"tags":[
-			["apparitio-michaelis","sexta","versiculus"],
-			["apparitio-michaelis","ii-vesperae","versiculus"]
-		],
-		"in-tempore-paschali":["V. In conspéctu Angelórum psallam tibi Deus meus, allelúja.","R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo, allelúja."],
-		"datum":["V. In conspéctu Angelórum psallam tibi Deus meus.","R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo."]
 	},
 	{
 		"tags":["apparitio-michaelis","nona","capitulum"],
