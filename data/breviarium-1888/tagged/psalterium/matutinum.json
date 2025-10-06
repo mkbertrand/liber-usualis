@@ -350,6 +350,24 @@
 		]
 	},
 	{
+		"tags":["matutinum","habens-commemorationem-matutini","nocturna-iii","lectio","include-inauthenticas"],
+		"lectio-ii":[["matutinum","nocturna-iii","lectio-ii","lectio"],["matutinum","nocturna-iii","lectio-iii","lectio"]],
+		"lectio-iii":[["commemoratio-matutini"]]
+	},
+	{
+		"tags":["commemoratio-matutini"],
+		"nocturna-ii":[
+			["matutinum","nocturna-ii","lectio-i","lectio"],
+			["matutinum","nocturna-ii","lectio-ii","lectio"],
+			["matutinum","nocturna-ii","lectio-iii","lectio"]
+		],
+		"nocturna-iii":[
+			["matutinum","nocturna-iii","lectio-i","lectio"],
+			["matutinum","nocturna-iii","lectio-ii","lectio"],
+			["matutinum","nocturna-iii","lectio-iii","lectio"]
+		]
+	},
+	{
 		"tags":["matutinum","dominica","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/EXF1I",
 		"datum":"Adorémus Dóminum, * Qui fecit nos."
@@ -643,7 +661,7 @@
 		"datum":"Gábriel Ángelus * locútus est Maríæ, dicens: Ave grátia plena, Dóminus tecum: benedícta tu inter mulíeres."
 	},
 	{
-		"tags":["matutinum","in-tempore-paschali","dominica","antiphona"],
+		"tags":["matutinum","in-tempore-paschali","dominica","nocturna-iii","antiphona"],
 		"src":"nocturnale/P1F1N3A",
 		"datum":"Allelúja: * noli flere María, allelúja: resurréxit Dóminus, allelúja, allelúja."
 	},

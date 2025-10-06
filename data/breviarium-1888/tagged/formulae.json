@@ -166,7 +166,7 @@
 			},
 			["benedictio"],
 			"R. Amen.",
-			["lectio"],
+			["lectio","include-inauthenticas"],
 			"Tu autem Dómine miserére nobis.",
 			"R. Deo grátias."
 		]
@@ -213,7 +213,10 @@
 		]
 	},
 	{
-		"tags":["formula","responsorium","gloria"],
+		"tags":[
+			["formula","responsorium","gloria"],
+			["formula","responsorium","gloria","simplex-responsum"]
+		],
 		"datum":[
 			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
 			"\nV. ",["responsorium","versus"],

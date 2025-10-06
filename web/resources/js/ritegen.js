@@ -292,15 +292,17 @@ function render(data, chant) {
 
 				} else if (data['tags'].includes('lectio')) {
 					const reading = unpack(data);
+					if (typeof data['datum'] === 'object' && !Array.isArray(data['datum']) && data['datum']['tags'].includes('commemoratio-matutini')) {
+					}
 					// Basically just figuring out whether this is the first, second, or third Reading of a Nocturne.
-					if (Array.isArray(reading) && typeof reading[0] !== 'string') {
+					else if (Array.isArray(reading) && typeof reading[0] !== 'string') {
 						return `<p class="rite-text lectio-sequens ${data['tags'].join(' ')}">${stringrender(unpack(reading[0])) + '<br/>' + stringrender(unpack(reading[1]))}</p>`;
 					} else if (Array.isArray(reading) && reading.length == 4) {
 						return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(reading[0])}</p><p class="rite-text evangelium-matutini ${data['tags'].join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading[3])}</p>`
 					} else if (Array.isArray(reading) && reading.length == 2) {
 						return `<p class="rite-text lectionis-titulum ${data['tags'].join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading[1])}</p>`
 					} else if (!btags.includes('lectio-i')) {
-						return `<p class="rite-text lectio-sequens ${data['tags'].join(' ')}">${stringrender(reading)}</p>`
+						return `<p class="rite-text lectio-sequens ${data['tags'].join(' ')}">${stringrender(unpack(reading))}</p>`
 					} else {
 						return `<p class="rite-text lectio-incipiens ${data['tags'].join(' ')}">${stringrender(reading)}</p>`
 					}
@@ -330,6 +332,14 @@ function render(data, chant) {
 				} else if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {
 					header = makeheader('Antiphona');
 
+				} else if (data['tags'].includes('nocturna')) {
+					if (data['tags'].includes('nocturna-i')) {
+						header = makeheader('Nocturna I');
+					} else if (data['tags'].includes('nocturna-ii')) {
+						header = makeheader('Nocturna II');
+					} else if (data['tags'].includes('nocturna-iii')) {
+						header = makeheader('Nocturna III');
+					}
 				} else if (data['tags'].includes('ritus')) {
 					if (data['tags'].includes('matutinum')) {
 						header = makeheader('Ad Matutinum');
