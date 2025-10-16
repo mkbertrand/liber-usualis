@@ -8,22 +8,22 @@ class RiteItem {
 	}
 }
 fullambit = [
-	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('psalmi-graduales', 'psalmi-graduales', false), new RiteItem('matutinum', 'officium-parvum-bmv', false), new RiteItem('laudes', 'officium-parvum-bmv', false), new RiteItem('matutinum', 'diei', true), new RiteItem('laudes', 'diei', true), new RiteItem('matutinum', 'officium-defunctorum', false), new RiteItem('laudes', 'officium-defunctorum', false), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', false), new RiteItem('litaniae-sanctorum', 'litaniae-sanctorum', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'matutinum'},
-	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('prima', 'diei', true), new RiteItem('prima', 'officium-parvum-bmv', false), new RiteItem('officium-capituli', 'diei', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'prima'},
-	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('tertia', 'diei', true), new RiteItem('tertia', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'tertia'},
-	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('sexta', 'diei', true), new RiteItem('sexta', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'sexta'},
-	{'name': 'Nona', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('nona', 'diei', true), new RiteItem('nona', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'nona'},
-	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('vesperae', 'officium-parvum-bmv', false), new RiteItem('vesperae', 'diei', true), new RiteItem('vesperae', 'officium-defunctorum', false), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'vesperae'},
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('psalmi-graduales', 'psalmi-graduales', false), new RiteItem('matutinum', 'officium-parvum-bmv', false), new RiteItem('laudes', 'officium-parvum-bmv', false), new RiteItem('matutinum', 'diei', true), new RiteItem('laudes', 'diei', true), new RiteItem('matutinum', 'officium-defunctorum', false), new RiteItem('laudes', 'officium-defunctorum', false), new RiteItem('psalmi-poenitentiales', 'psalmi-poenitentiales', false), new RiteItem('litaniae-sanctorum', 'litaniae-sanctorum', false), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'matutinum'},
+	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('prima', 'diei', true), new RiteItem('prima', 'officium-parvum-bmv', false), new RiteItem('officium-capituli', 'diei', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'prima'},
+	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('tertia', 'diei', true), new RiteItem('tertia', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'tertia'},
+	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('sexta', 'diei', true), new RiteItem('sexta', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'sexta'},
+	{'name': 'Nona', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('nona', 'diei', true), new RiteItem('nona', 'officium-parvum-bmv', false), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'nona'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('vesperae', 'officium-parvum-bmv', false), new RiteItem('vesperae', 'diei', true), new RiteItem('vesperae', 'officium-defunctorum', false), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'vesperae'},
 	{'name': 'Completorium', 'content': [new RiteItem('aperi-domine', 'diei', true), new RiteItem('completorium', 'diei', true), new RiteItem('completorium', 'officium-parvum-bmv', false), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'completorium'}
 ];
 
 opbmvambit = [
-	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('matutinum', 'officium-parvum-bmv', true), new RiteItem('laudes', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'matutinum'},
-	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('prima', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'prima'},
-	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('tertia', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'tertia'},
-	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('sexta', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'sexta'},
-	{'name': 'Nona', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('nona', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'nona'},
-	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('vesperae', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'diei', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'vesperae'},
+	{'name': 'Matutinum & Laudes', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('matutinum', 'officium-parvum-bmv', true), new RiteItem('laudes', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'matutinum'},
+	{'name': 'Prima', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('prima', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'prima'},
+	{'name': 'Tertia', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('tertia', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'tertia'},
+	{'name': 'Sexta', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('sexta', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'sexta'},
+	{'name': 'Nona', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('nona', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'nona'},
+	{'name': 'Vesperæ', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('vesperae', 'officium-parvum-bmv', true), new RiteItem('antiphona-bmv', 'antiphona-bmv-temporis', true), new RiteItem('sacrosanctae', 'officium-parvum-bmv', true)], 'id': 'vesperae'},
 	{'name': 'Completorium', 'content': [new RiteItem('aperi-domine', 'officium-parvum-bmv', true), new RiteItem('completorium', 'officium-parvum-bmv', true), new RiteItem('sacrosanctae', 'diei', true)], 'id': 'completorium'}
 ];
 
@@ -141,8 +141,7 @@ titled = {
 	capitulum: 'Capitulum',
 	hymnus: 'Hymnus',
 	preces: 'Preces',
-	confiteor: 'Confiteor',
-	martyrologium: 'Martyrologium'
+	confiteor: 'Confiteor'
 };
 
 titled['ante-collectas'] = 'Collecta';
@@ -334,37 +333,39 @@ function render(data, chant) {
 
 				} else if (data['tags'].includes('nocturna')) {
 					if (data['tags'].includes('nocturna-i')) {
-						header = makeheader('Nocturna I');
+						header = makeheader('Nocturna I', 'section-header');
 					} else if (data['tags'].includes('nocturna-ii')) {
-						header = makeheader('Nocturna II');
+						header = makeheader('Nocturna II', 'section-header');
 					} else if (data['tags'].includes('nocturna-iii')) {
-						header = makeheader('Nocturna III');
+						header = makeheader('Nocturna III', 'section-header');
 					}
 				} else if (data['tags'].includes('ritus')) {
 					if (data['tags'].includes('matutinum')) {
-						header = makeheader('Ad Matutinum');
+						header = makeheader('Ad Matutinum', 'section-header');
 					} else if (data['tags'].includes('laudes')) {
-						header = makeheader('Ad Laudes');
+						header = makeheader('Ad Laudes', 'section-header');
 					} else if (data['tags'].includes('prima')) {
-						header = makeheader('Ad Primam');
+						header = makeheader('Ad Primam', 'section-header');
 					} else if (data['tags'].includes('tertia')) {
-						header = makeheader('Ad Tertiam');
+						header = makeheader('Ad Tertiam', 'section-header');
 					} else if (data['tags'].includes('sexta')) {
-						header = makeheader('Ad Sextam');
+						header = makeheader('Ad Sextam', 'section-header');
 					} else if (data['tags'].includes('nona')) {
-						header = makeheader('Ad Nonam');
+						header = makeheader('Ad Nonam', 'section-header');
 					} else if (data['tags'].includes('vesperae')) {
-						header = makeheader('Ad Vesperas');
+						header = makeheader('Ad Vesperas', 'section-header');
 					} else if (data['tags'].includes('completorium')) {
-						header = makeheader('Ad Completorium');
+						header = makeheader('Ad Completorium', 'section-header');
 					} else if (data['tags'].includes('antiphona-bmv')) {
 						header = makeheader('Antiphona B.M.V.');
 					} else if (data['tags'].includes('psalmi-graduales')) {
-						header = makeheader('Psalmi Graduales');
+						header = makeheader('Psalmi Graduales', 'section-header');
 					} else if (data['tags'].includes('psalmi-poenitentiales')) {
-						header = makeheader('Septem Psalmi Pœnitentiales cum Litaniis');
+						header = makeheader('Septem Psalmi Pœnitentiales cum Litaniis', 'section-header');
 					} else if (data['tags'].includes('litaniae-sanctorum')) {
-						header = makeheader('Litaniæ');
+						header = makeheader('Litaniæ', 'section-header');
+					} else if (data['tags'].includes('officium-capituli')) {
+						header = makeheader('Martyrologium', 'section-header');
 					}
 
 				} else if (data['tags'].includes('versiculus')) {

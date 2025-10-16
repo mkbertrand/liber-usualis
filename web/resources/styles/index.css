@@ -12,6 +12,7 @@ body {
 }
 
 #content-container-outer-home {
+	font-family: times;
 	position: relative;
 	width: 100%;
 	height: 100%;

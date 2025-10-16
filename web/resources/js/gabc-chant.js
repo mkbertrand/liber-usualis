@@ -119,7 +119,7 @@ class ChantElement extends HTMLElement {
 		
 		this.ctxt = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
 
-		this.ctxt.setFont("'Times'", 22);
+		this.ctxt.setFont("'Old Standard TT'", 22);
 
 		this.ctxt.dropCapTextColor = 'red';
 
