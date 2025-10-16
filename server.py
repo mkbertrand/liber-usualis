@@ -46,39 +46,39 @@ def localehunt(acceptlanguage):
 	return langs
 
 titles = {
-		'pray': 'Rite Generator',
-		'about': 'About',
-		'help': 'Help the Liber Usualis Project',
-		'donate': 'Donate',
-		'credit': 'Credit'
-		}
+	'pray': 'Rite Generator',
+	'about': 'About',
+	'help': 'Help the Liber Usualis Project',
+	'donate': 'Donate',
+	'credit': 'Credit'
+}
 
 definedlocales = ['en', 'de']
 owntemplate = ['index']
 
 @get('/')
 def index():
-	return redirect('/index/')
+	return redirect('/index')
 
-@get('/index/')
-@get('/pray/')
-@get('/kalendar/')
-@get('/about/')
-@get('/credit/')
-@get('/donate/')
-@get('/help/')
+@get('/index')
+@get('/pray')
+@get('/kalendar')
+@get('/about')
+@get('/credit')
+@get('/donate')
+@get('/help')
 def bouncetolocale():
-	page = request.route.rule[1:-1]
+	page = request.route.rule[1:]
 	locales = ['en']
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
 	finally:
-		return redirect(f'/{list(filter(lambda loc: loc in definedlocales, locales))[0]}/{page}/')
+		return redirect(f'/{list(filter(lambda loc: loc in definedlocales, locales))[0]}/{page}')
 
-@get('/en/<page>/')
-@get('/de/<page>/')
+@get('/en/<page>')
+@get('/de/<page>')
 def localpage(page):
-	preferredlocale = request.route.rule[1:-8]
+	preferredlocale = request.route.rule[1:-7]
 	title = titles[page] if page in titles else ''
 	locales = [preferredlocale]
 	try:

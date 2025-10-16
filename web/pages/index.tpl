@@ -36,10 +36,10 @@
 					<h1 id="main-title-label">LIBER USUALIS PROJECT</h1>
 					<nav id="center-nav" x-data="{
 						pages:[
-							{'path':'/{{preferredlocale}}/pray/', 'name':'{{text['pray']}}'},
-							{'path':'/{{preferredlocale}}/about/', 'name':'{{text['about']}}'},
-							{'path':'/{{preferredlocale}}/help/', 'name':'{{text['help']}}'},
-							{'path':'/{{preferredlocale}}/credit/', 'name':'{{text['credit']}}'}
+							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'},
+							{'path':'/{{preferredlocale}}/about', 'name':'{{text['about']}}'},
+							{'path':'/{{preferredlocale}}/help', 'name':'{{text['help']}}'},
+							{'path':'/{{preferredlocale}}/credit', 'name':'{{text['credit']}}'}
 						]
 						}">
 						<template x-for="page in pages">
