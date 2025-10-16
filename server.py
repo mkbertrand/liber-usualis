@@ -53,7 +53,7 @@ titles = {
 	'credit': 'Credit'
 }
 
-definedlocales = ['en', 'de']
+definedlocales = ['en', 'de', 'la']
 owntemplate = ['index']
 
 @get('/')
@@ -77,6 +77,7 @@ def bouncetolocale():
 
 @get('/en/<page>')
 @get('/de/<page>')
+@get('/la/<page>')
 def localpage(page):
 	preferredlocale = request.route.rule[1:-7]
 	title = titles[page] if page in titles else ''

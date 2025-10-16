@@ -143,6 +143,9 @@
 		}
 	}
 }" x-init="
+	if ('{{locale}}' == 'la') {
+		translation = false;
+	}
   	if (ambit == '') {
 		ambit = defineambit(desired, choral);
 	}
@@ -186,7 +189,9 @@
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 			<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
+			% if locale != 'la':
 			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
+			% end
 			<div class="recitation-select-container">
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
 				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
