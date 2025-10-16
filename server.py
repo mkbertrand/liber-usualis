@@ -3,7 +3,7 @@
 # Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import bottle
-from bottle import get, route, request, static_file, error, template
+from bottle import get, route, request, static_file, error, template, redirect
 import requests
 from datetime import datetime, date
 import waitress
@@ -53,31 +53,46 @@ titles = {
 		'credit': 'Credit'
 		}
 
+definedlocales = ['en', 'de']
+owntemplate = ['index']
+
 @get('/')
+def index():
+	return redirect('/index/')
+
+@get('/index/')
 @get('/pray/')
 @get('/kalendar/')
 @get('/about/')
 @get('/credit/')
 @get('/donate/')
 @get('/help/')
-def pageserve():
+def bouncetolocale():
 	page = request.route.rule[1:-1]
-	title = titles[page] if page in titles else ''
 	locales = ['en']
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
 	finally:
-		if page == '':
-			for locale in locales:
-				if os.path.exists(f'web/locales/{locale}/pages/index.html'):
-					return static_file('index.html', root=f'web/locales/{locale}/pages/')
-			return static_file('index.html', root='web/locales/en/pages/')
-		else:
-			for locale in locales:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.html') or os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					return template('web/resources/page.tpl', page=page, title=title, locale=locale)
+		return redirect(f'/{list(filter(lambda loc: loc in definedlocales, locales))[0]}/{page}/')
 
-			return template('web/resources/page.tpl', page=page, title=title, locale='en')
+@get('/en/<page>/')
+@get('/de/<page>/')
+def localpage(page):
+	preferredlocale = request.route.rule[1:-8]
+	title = titles[page] if page in titles else ''
+	locales = [preferredlocale]
+	try:
+		locales.extend(localehunt(request.headers.get('Accept-Language')))
+	finally:
+		if not 'en' in locales:
+			locales.append('en')
+		for locale in locales:
+			if page in owntemplate:
+				if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
+					return template('web/pages/index.tpl', locale=locale, preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
+			else:
+				if os.path.exists(f'web/locales/{locale}/pages/{page}.html') or os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
+					return template('web/resources/page.tpl', page=page, title=title, locale=locale, preferredlocale=preferredlocale)
 
 def flattensetlist(sets):
 	ret = set()

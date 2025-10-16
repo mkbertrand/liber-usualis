@@ -26,7 +26,7 @@
 		<div id="site-wrapper-home">
 			<div id="top-bar-title">
 				<div id="project-logo">
-					<a href="/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
+					<a href="/{{preferredlocale}}/index/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
 				</div>
 			</div>
 			<div id="content-container-outer-home">
@@ -36,10 +36,10 @@
 					<h1 id="main-title-label">LIBER USUALIS PROJECT</h1>
 					<nav id="center-nav" x-data="{
 						pages:[
-							{'path':'/pray/', 'name':'Pray'},
-							{'path':'/about/', 'name':'About'},
-							{'path':'/help/', 'name':'Help'},
-							{'path':'/credit/', 'name':'Credit'}
+							{'path':'/{{preferredlocale}}/pray/', 'name':'{{text['pray']}}'},
+							{'path':'/{{preferredlocale}}/about/', 'name':'{{text['about']}}'},
+							{'path':'/{{preferredlocale}}/help/', 'name':'{{text['help']}}'},
+							{'path':'/{{preferredlocale}}/credit/', 'name':'{{text['credit']}}'}
 						]
 						}">
 						<template x-for="page in pages">

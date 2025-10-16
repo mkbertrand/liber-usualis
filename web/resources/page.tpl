@@ -33,12 +33,12 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/burger-menu.svg" /></button>
 				<div id="project-logo">
-					<a href="/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a>
+					<a href="/{{preferredlocale}}/index/"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a>
 				</div>
 			</div>
-			% include(f'web/locales/{locale}/resources/sidemenu.html')
+			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
 			% if page == 'pray':
-				% include(f'web/resources/{page}.tpl', ritegenversion='18', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
+				% include(f'web/pages/{page}.tpl', ritegenversion='18', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
 			% else:
 				% include(f'web/locales/{locale}/pages/{page}.html')
 
