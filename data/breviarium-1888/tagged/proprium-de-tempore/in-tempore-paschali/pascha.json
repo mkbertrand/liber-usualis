@@ -6,26 +6,26 @@
 	{
 		"tags":["pascha","i-vesperae","vesperae","ritus"],
 		"datum":[
-			["pascha","antiphona","antiphona-i","duplex"],
+			["antiphona","antiphona-i"],
 			["/psalmi/psalmus-cxvi,gloria"],
-			["pascha","antiphona","antiphona-i","repetita"],
-			["pascha","antiphona","antiphona-magnificat","duplex"],
-			["pascha","magnificat"],
-			["pascha","antiphona","antiphona-magnificat","repetita"],
+			["antiphona","antiphona-i","repetita"],
+			["antiphona","antiphona-magnificat"],
+			["magnificat"],
+			["antiphona","antiphona-magnificat","repetita"],
 			["dominus-vobiscum","ante-collectas"],
-			["pascha","collecta-primaria"],
+			["vesperae","collecta-primaria"],
 			["dominus-vobiscum"],
-			["pascha","dismissio"]
+			["dismissio"]
 
 		]
 	},
 	{
-		"tags":["pascha","i-vesperae","antiphona-i"],
+		"tags":["pascha","i-vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/2308",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["pascha","i-vesperae","collecta"],
+		"tags":["pascha","dominica","i-vesperae","collecta"],
 		"datum":"Spíritum nobis Dómine tuæ caritátis infúnde: ut quos sacraméntis paschálibus satiásti, tua fácias pietáte concórdes.",
 		"terminatio":[["terminatio","per-dominum"]]
 	},
@@ -251,7 +251,7 @@
 	{
 		"tags":["pascha","ii-vesperae","completorium","ritus"],
 		"datum":[
-			["completorium","formula","formula-lectionis"],
+			["completorium","formula","formula-lectionis","lectio-brevis"],
 			["adjutorium-nostrum"],
 			["pater-noster-secreta"],
 			["confiteor"],
@@ -275,7 +275,7 @@
 					"R. Amen."
 				]
 			},
-			["antiphona-bmv"],
+			["antiphona-bmv","antiphona-bmv-temporis","occurrens"],
 			"Divínum auxílium ✠ máneat semper nobíscum.",
 			"R. Amen.",
 			["prex-triplex"]

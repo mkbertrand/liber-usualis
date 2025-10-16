@@ -112,20 +112,20 @@
 	{
 		"occurrence":["in-tempore-adventus"],
 		"excluded":["in-tempore-nativitatis"],
-		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","alma-redemptoris","ante-nativitatem"]
 	},
 	{
 		"occurrence":["in-tempore-nativitatis"],
-		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","alma-redemptoris","post-nativitatem"]
 	},
 	{
 		"occurrence":["januarius"],
 		"excluded":["in-tempore-nativitatis"],
-		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","alma-redemptoris","post-nativitatem"]
 	},
 	{
 		"occurrence":["kalendae-februarii"],
-		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","alma-redemptoris","post-nativitatem"]
 	},
 	{
 		"occurrence":[
@@ -133,15 +133,15 @@
 			["in-tempore-septuagesimae"]
 		],
 		"excluded":["alma-redemptoris"],
-		"tags":["antiphona-bmv","ave-regina-coelorum"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","ave-regina-coelorum"]
 	},
 	{
 		"occurrence":["in-tempore-paschali"],
-		"tags":["antiphona-bmv","regina-coeli"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","regina-coeli"]
 	},
 	{
 		"occurrence":["post-pentecosten"],
-		"tags":["antiphona-bmv","salve-regina"]
+		"tags":["antiphona-bmv","antiphona-bmv-temporis","salve-regina"]
 	},
 	{
 		"occurrence":["hebdomada-iii-adventus","feria-iv"],

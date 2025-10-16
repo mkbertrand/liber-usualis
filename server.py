@@ -149,8 +149,14 @@ def rite():
 			tags = [votivize(i) for i in tags]
 			if not any('officium-defunctorum' in i for i in tags):
 				tags.append({'officium-defunctorum','semiduplex','primarium'})
+		elif parameters['select'] == 'antiphona-bmv-temporis':
+			tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
+			tags[0] |= {'primarium'}
 
-
+	private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
+	if private:
+		for i in tags:
+			i |= {'privata'}
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
 	pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
@@ -159,13 +165,9 @@ def rite():
 	if noending:
 		tags.append({'fidelium-animae', 'hoc-omissum'})
 		tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'})
-	private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 	lit = []
 	for hour in hours:
-		if private:
-			lit.append({'ritus', hour, 'privata'})
-		else:
-			lit.append({'ritus', hour})
+		lit.append({'ritus', hour})
 	rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 	tags.append(primary)
 

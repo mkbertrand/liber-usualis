@@ -58,32 +58,19 @@ def expandcat0(root, category):
 	else:
 		raise RuntimeError(str(category))
 
-def matches(root, tag, tags):
-	if tag.startswith('/'):
-		return check(getcategory(root, tag[1:]), tags)
-	else:
-		return tag in tags
-
-def check(root, category, tags):
-	return check0(root, getcategory(root, category))
-
-def check0(root, category, tags):
-	if type(category) is set or type(category) is frozenset:
-		return any([matches(root, tag, tags) for tag in category])
-	elif type(category) is list:
-		return any([check0(root, i, tags) for i in categories])
-	else:
-		raise RuntimeError()
-
-
 def contradicts(root, category, tags):
-	return contradicts0(root, getcategory(root, category), tags)
+	# In other words, are there any contradictions?
+	return len(list(contradictions(root, category, tags)))
 
-def contradicts0(root, category, tags):
+def contradictions(root, category, tags):
+	category = getcategory(root, category)
 	if type(category) is set or type(category) is frozenset:
-		return False
+		return []
 	elif type(category) is list:
-		return any([sum([matches(root, tag, tags) for tag in subcat]) > 1 for subcat in category])
+		for subcat in category:
+			subcat = expandcat0(root, subcat)
+			if sum([tag in tags for tag in subcat]) > 1:
+				yield subcat
 	else:
 		return RuntimeError()
 
@@ -199,7 +186,7 @@ def process(root, item, selected, alternates, pile):
 	if item is None:
 		return 'Absens'
 	if selected is None:
-		selected = set()
+		selected = frozenset()
 	if alternates is None:
 		alternates = []
 	if pile is None:
@@ -213,19 +200,20 @@ def process(root, item, selected, alternates, pile):
 		item = {'from':item}
 
 	if 'from' in item:
-		if 'anno-domini' in item['from']:
-			yeartag = list(filter(lambda i: any(c.isdigit() for c in i), selected))[0]
-			return {'tags': {'anno-domini'}, 'datum': 'Anno Dómini ' + yeartag + '.'}
-
 		if 'martyrologium' in item['from']:
 			root = 'martyrologium-1846'
 			pile = datamanage.getpile(root, item['from'] | {'dies-lunae'})
+
+		selected = copy.deepcopy(selected)
+		# Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
+		for cclass in contradictions(root, 'positionales', item['from'] | selected):
+			selected -= cclass
 
 		result = None
 		if not any('/' in i for i in item['from']):
 			for i in range(len(alternates)):
 				# Basically if the from is explicitly calling for some day's propers, remove the other day context to facilitate this
-				if 'occurrens' in item['from'] and len(item['from'] & expandcat(root, 'temporale')) != 0 and item['from'] & expandcat(root, 'temporale') <= alternates[i]:
+				if 'occurrens' in item['from'] and item['from'] & expandcat(root, 'temporale') <= alternates[i]:
 					item['from'] -= {'occurrens'}
 					alternates = copy.copy(alternates)
 					alternates.append(selected - expandcat(root, 'positionales'))
@@ -235,39 +223,36 @@ def process(root, item, selected, alternates, pile):
 					break
 
 				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
-				elif item['from'] <= alternates[i]:
+				# Sometimes there are explicit tagsets in alternates that specify certain things (as opposed to above when the data itself requests something)
+				elif item['from'] | (selected & expandcat(root, 'positionales')) <= alternates[i]:
 					alternates = copy.copy(alternates)
 					alternates.append(selected)
+
 					if contradicts(root, 'positionales', item['from'] | alternates[i] | selected):
-						selected = alternates.pop(i) - expandcat(root, 'objecta')
+						selected = alternates.pop(i)
 					else:
-						selected = alternates.pop(i) - expandcat(root, 'objecta') | (selected & expandcat(root, 'positionales'))
+						selected = alternates.pop(i) | (selected & expandcat(root, 'positionales'))
 					pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
 					result = search(root, item['from'] | selected, pile)
 					break
 
 		if result is None:
 			# Only remove tags referring to propers and commons and whatnot if a different set is suggested
+			# This is different than the occurrens system because we're not asking about something on the specific day (for example, we want the ferial readings of the day)
+			# but rather we may want the readings for the Common of the Blessed Virgin which isn't specific day-to-day
 			if len(item['from'] & expandcat(root, 'temporale')) != 0:
-				selected -= expandcat(root, 'temporale')
+				for cclass in contradictions(root, 'temporale', item['from'] | selected):
+					selected -= cclass
 				selected |= item['from'] & expandcat(root, 'temporale')
 				pile = datamanage.getpile(root, defaultpile | item['from'] | selected)
 
-			# Only remove tags referring to positional things like nocturna-i, vesperae, etc if mutually exclusive positionals are specified, but otherwise let them carry over
-			if contradicts(root, 'positionales', item['from'] | selected):
-				# Temporary solution to issue with antiphon references sorry
-				if 'antiphona' in item['from']:
-					selected = (selected - expandcat(root, 'positionales')) | {'intonata', 'pars', 'repetita'} & selected
-				else:
-					selected -= expandcat(root, 'positionales')
 			result = search(root, item['from'] | selected, pile)
 
 		# If result is still None at this point, just tell user what was searched for
 		if result is None:
 			# It has to be sorted for testing purposes
 			return str(sorted(list(item['from'] | selected)))
-		# Removes tags referring to things like Antiphons, Responsories, etc
-		selected = (selected | item['from']) - expandcat(root, 'objecta')
+		selected |= item['from']
 		response = process(root, result, selected, alternates, pile)
 
 		if 'tags' in item:

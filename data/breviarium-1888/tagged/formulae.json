@@ -56,7 +56,11 @@
 		"datum":["Septima die infra Octavam ", ["basis-nominis"]]
 	},
 	{
-		"tags":["dominica-infra-octavam","nomen"],
+		"tags":["infra-octavam","nomen"],
+		"datum":["Infra Octavam ", ["basis-nominis"]]
+	},
+	{
+		"tags":["dominica-infra-octavam","infra-octavam","nomen"],
 		"datum":["Dominica infra Octavam ", ["basis-nominis"]]
 	},
 	{

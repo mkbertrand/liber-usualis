@@ -1,11 +1,15 @@
 [
 	{
-		"tags":["epiphania","nomen"],
+		"tags":["epiphania","festum","nomen"],
 		"datum":"In Epiphania Domini"
 	},
 	{
 		"tags":["epiphania","basis-nominis"],
 		"datum":"Epiphaniæ Domini"
+	},
+	{
+		"tags":["epiphania","dominica-infra-octavam","nomen"],
+		"datum":"Dominica infra Octavam Epiphaniæ Domini"
 	},
 	{
 		"tags":["epiphania","antiphona","antiphona-i"],

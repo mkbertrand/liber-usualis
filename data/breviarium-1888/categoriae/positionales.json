@@ -1,9 +1,12 @@
 [
 	["matutinum","laudes","prima","officium-capituli","tertia","sexta","nona","vesperae","completorium"],
 	["antiphona-i","antiphona-ii","antiphona-iii","antiphona-iv","antiphona-v","antiphona-vi","antiphona-benedictus","antiphona-magnificat","antiphona-invitatorium"],
+	["psalmi","psalmus-i","psalmus-ii","psalmus-iii","psalmus-iv","psalmus-v","psalmus-vi","psalmus-vii","psalmus-viii","psalmus-ix","psalmus-x","psalmus-xi","psalmus-xii","psalmi-deus-deus-meus","psalmi-laudate","canticum"],
 	["nocturna-i","nocturna-ii","nocturna-iii"],
 	["lectio-i","lectio-ii","lectio-iii"],
-	["i-vesperae","ii-vesperae"],
 	["pars","intonata","repetita"],
-	["responsorium-i","responsorium-ii","responsorium-iii"]
+	["responsorium-i","responsorium-ii","responsorium-iii"],
+	["ritus","nocturna","responsorium"],
+	["formula","incipit","responsum","responsum-i","responsum-ii","versus","responsum-iii","versus-i","versus-ii","versus-iii"],
+	["/objecta"]
 ]
