@@ -170,8 +170,7 @@ def rite():
 
 	private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 	if private:
-		for i in tags:
-			i |= {'privata'}
+		tags = [i | {'privata'} for i in tags]
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
 	pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
