@@ -1,21 +1,40 @@
 [
 	{
+		"tags":["completorium","benedictio"],
+		"datum":"May the Almighty Lord grant us a quiet night and a perfect end."
+	},
+	{
+		"tags":["completorium","lectio"],
+		"datum":"Brethren, be sober, be vigilant: because your adversary the devil as a roaring lion walketh about, seeking whom he may devour: whom resist ye, stedfast in the faith."
+	},
+	{
+		"tags":["converte-nos"],
+		"datum":["Turn us, O God of our salvation.","And cause Thine anger toward us to cease."]
+	},
+	{
 		"tags":["completorium","antiphona"],
-		"datum":"Have mercy * on me Lord, and hear my prayer."
+		"datum":"Have mercy * upon me, O Lord, and hear my prayer."
 	},
 	{
 		"tags":["completorium","capitulum"],
-		"datum":"But you are among us Lord, + and your holy name is invoked over us, * lest you should abandon us Lord our God."
+		"datum":"Yet Thou, O Lord, art in the midst of us, and Thine holy Name is called upon us: leave us not, O Lord our God."
 	},
 	{
 		"tags":["completorium","responsorium-breve"],
-		"incipit":"Into your hands Lord",
+		"incipit":"Into thine hands, O Lord",
 		"responsum":"I commend my spirit.",
-		"versus":"You have redeemed us Lord God of truth."
+		"versus":"Thou hast redeemed us, O Lord God of truth."
 	},
 	{
 		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
-		"datum":"Save us * Lord while we keep watch, guard us while we sleep: that we may keep watch with Christ, and rest in peace."
+		"datum":"O Lord, keep us * waking, guard us sleeping: that we may wake with Christ and rest in peace."
+	},
+	{
+		"tags":["completorium","collecta"],
+		"datum":"Visit, we beseech Thee, O Lord, this habitation, and drive far from it all snares of the enemy: let Thine holy Angels dwell herein, to keep us in peace, and may Thy blessing be always upon us."
+	},
+	{
+		"tags":["completorium","benedictio-finalis"],
+		"datum":["May the Almighty and Merciful Lord, the Father, the Son, and the Holy Ghost, bless and keep us.","Amen."]
 	}
 ]
-

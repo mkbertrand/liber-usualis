@@ -2,16 +2,16 @@
 	{
 		"tags":["aperi-domine"],
 		"datum":[
-			"Open Lord my mouth to bless your holy name: clean also my heart from all vanities, perversions, and foreign thoughts: illumine my intellect, inflame my affection, that worthily, attentively, and devotedly I may be able to recite this Office, and merit to be heard before the sight of your divine Majesty. Through Christ our Lord. Amen.",
-			"Lord in union with that divine intention, wherewith you offered praises to God on earth, these Hours I offer to you."
+			"O Lord, open Thou my mouth that I may bless Thy Holy Name. Cleanse my heart from all vain, evil, and wandering thoughts; enlighten my understanding; kindle my affections, that I may pray to, and praise Thee with attention and devotion; and may worthily be heard before the presence of Thy Divine Majesty. Through Christ our Lord. Amen.",
+			"Lord, in union with that Divine Intention wherewith Thou didst Thyself praise God, while as Thou wast on earth, I offer these Hours unto Thee."
 		]
 	},
 	{
 		"tags":["sacrosanctae"],
 		"datum":[
-			"To the most holy and undivided Trinity, to the humanity of our crucified Lord Jesus Christ, to the fruitful purity of the most blessed and most glorious Mary ever-Virgin, and to the company of all Saints be eternal praise, honor, virtue, and glory from all creatures, and to us the remission of all sins, through unending ages of ages. Amen.",
-			"Blessed be the womb of the Virgin Mary, which carried the Son of the eternal Father.",
-			"And blessed be the breasts, which fed Christ the Lord.",
+			"To the Most Holy and undivided Trinity, to the Manhood of our Lord Jesus Christ Crucified, to the fruitful Virginity of the most blessed and most glorious Mary, always a Virgin, and to the holiness of all the Saints be ascribed everlasting praise, honour, and glory, by all creatures, and to us be granted the forgiveness of all our sins, world without end. Amen.",
+			"Blessed be the womb of the Virgin Mary which bore the Son of the Eternal Father.",
+			"And blessed be the paps which gave suck to Christ our Lord.",
 			"",
 			""
 		]
@@ -27,9 +27,9 @@
 	{
 		"tags":["deus-in-adjutorium"],
 		"datum":[
-			"God come to my assistance.",
-			"Lord make haste to help me.",
-			"Glory be to the Father, and to the Son, and to the Holy Spirit.",
+			"Make haste, O God, to deliver us.",
+			"Make haste to help me, O Lord.",
+			"Glory be to the Father, and to the Son, and to the Holy Ghost.",
 			"As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia."
 		]
 	},
@@ -51,17 +51,21 @@
 	{
 		"tags":["benedicamus-domino"],
 		"datum":[
-			"Let us bless the Lord.",
+			"Bless we the Lord.",
 			"Thanks be to God."
 		]
 	},
 	{
 		"tags":["dominus-vobiscum"],
-		"datum":["The Lord be with you.","And with your spirit."]
+		"datum":["The Lord be with you.","And with thy spirit."]
+	},
+	{
+		"tags":["collecta-primaria"],
+		"datum":["Let us pray.","",""]
 	},
 	{
 		"tags":["per-dominum"],
-		"datum":["Through our Lord Jesus Christ your Son: Who lives and reigns with you in the unity of the Holy Spirit God, world without end.", "Amen."]
+		"datum":["Through our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","Amen."]
 	},
 	{
 		"tags":["formula","commemoratio"],
@@ -75,6 +79,44 @@
 	{
 		"tags":["fidelium-animae"],
 		"datum":["May the souls of the faithfully departed through the mercy of God rest in peace.","Amen."]
+	},
+	{
+		"tags":["formula","formula-lectionis"],
+		"datum":[
+			"Sir, be pleased to give the blessing.",
+			"",
+			"Amen.",
+			"",
+			"But Thou, O Lord, have mercy on us.",
+			"Thanks be to God."
+		]
+	},
+	{
+		"tags":["adjutorium-nostrum"],
+		"datum":["Our help is in the Name of the Lord.","Who made heaven and earth."]
+	},
+	{
+		"tags":["confiteor"],
+		"datum":[
+			"I confess to God Almighty, to the Blessed Mary, always a Virgin, to the Blessed Michael the Archangel, to the Blessed John the Baptist, to the Holy Apostles Peter and Paul, to all the Saints, and to you my brethren, that I have sinned exceedingly in thought, word, and deed, by my fault, by my fault, by my most grievous fault. Therefore I beseech the Blessed Mary, always a Virgin, the Blessed Michael the Archangel, the Blessed John the Baptist, the Holy Apostles Peter and Paul, all the Saints, and you my brethren, to pray to the Lord our God for me.",
+			"Almighty God have mercy on thee, forgive thee thy sins, and bring thee to life everlasting.",
+			"Amen.",
+			"I confess to God Almighty, to the Blessed Mary, always a Virgin, to the Blessed Michael the Archangel, to the Blessed John the Baptist, to the Holy Apostles Peter and Paul, to all the Saints, and to thee father, that I have sinned exceedingly in thought, word, and deed, by my fault, by my fault, by my most grievous fault. Therefore I beseech the Blessed Mary, always a Virgin, the Blessed Michael the Archangel, the Blessed John the Baptist, the Holy Apostles Peter and Paul, all the Saints, and thee father, to pray to the Lord our God for me.",
+			"Almighty God have mercy on you, forgive you your sins, and bring you to life everlasting.",
+			"Amen.",
+			"May the Almighty and merciful Lord grant us pardon, absolution, and remission of all our sins.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["confiteor","privata"],
+		"datum":[
+			"I confess to God Almighty, to the Blessed Mary, always a Virgin, to the Blessed Michael the Archangel, to the Blessed John the Baptist, to the Holy Apostles Peter and Paul, and to all the Saints, that I have sinned exceedingly in thought, word, and deed, by my fault, by my fault, by my most grievous fault. Therefore I beseech the Blessed Mary, always a Virgin, the Blessed Michael the Archangel, the Blessed John the Baptist, the Holy Apostles Peter and Paul, and all the Saints, to pray to the Lord our God for me.",
+			"Almighty God have mercy on us, forgive us our sins, and bring us to life everlasting.",
+			"Amen.",
+			"May the Almighty and merciful Lord grant us pardon, absolution, and remission of all our sins.",
+			"Amen."
+		]
 	}
 ]
 
