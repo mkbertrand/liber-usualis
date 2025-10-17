@@ -233,7 +233,7 @@ function render(data, chant) {
 						header = makeheader(titled[i]);
 					}
 				}
-
+				// If data['datum'] is an array, that means that the responsory isn't actually nested down another layer.
 				if ((data['tags'].includes('responsorium') || data['tags'].includes('responsorium-breve')) && Array.isArray(data['datum'])) {
 					// This is a string if no responsory was found
 					if (typeof data['datum'][1] === 'string') {
@@ -256,7 +256,31 @@ function render(data, chant) {
 							header = makeheader('Responsorium ' + ['III', 'VI', 'IX'][nn - 1]);
 						}
 					}
-					return `${header}<p class="rite-text'${data['tags'].join(' ')}'">${stringrender(unpack(data['datum']).join(''), translated, data['tags'].concat(parenttags))}</p>`;
+					textret = stringrender(unpack(data['datum']).join(''));
+					if (translationpool != null) {
+						trans = translated;
+						alldefined = true;
+						for (var i = 0; i < translated.length; i++) {
+							if (trans[i] == '') {
+								tran = translationpool[data['datum'][i]['tags'].join('+')];
+								trans[i] = unpack(tran);
+								if (trans[i] == undefined) {
+									alldefined = false;
+									break;
+								}
+							}
+						}
+						if (alldefined) {
+							textret = '';
+							latin = unpack(data['datum']).join('').split('\n');
+							vernacular = trans.join('').split('\n');
+							for (var i = 0; i < latin.length; i++) {
+								vernacular[i] = vernacular[i].replace(/^(R\.\sbr\.\s|R\.\s|V\.\s)/, '');
+								textret += `<span class="rite-text">${stringrender(latin[i])}</span><br><span class="rite-text-translation">${stringrender(vernacular[i])}</span><br>`;
+							}
+						}
+					}
+					return `${header}<p class="rite-text'${data['tags'].join(' ')}'">${textret}</p>`;
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
 					antiphon = `<p class="rite text ${data['tags']}">${unpack(data['datum'][2], null, null, parenttags)}</p>`;
@@ -391,7 +415,7 @@ function render(data, chant) {
 						}
 					}
 					data['datum'] = ret + `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][4]))}<br>${stringrender(unpack(data['datum'][5]))}</p>`;
-				} else if (['antiphona-bmv', 'completorium', 'antiphona'].every((tag) => data['tags'].includes(tag))) {
+				} else if (['antiphona-bmv', 'antiphona'].every((tag) => data['tags'].includes(tag)) && parenttags.includes('completorium')) {
 					header = makeheader('Antiphona B.M.V.');
 				}
 

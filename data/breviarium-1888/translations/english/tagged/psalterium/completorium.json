@@ -1,7 +1,21 @@
 [
 	{
+		"tags":["completorium","antiphona"],
+		"datum":"Have mercy * on me Lord, and hear my prayer."
+	},
+	{
 		"tags":["completorium","capitulum"],
 		"datum":"But you are among us Lord, + and your holy name is invoked over us, * lest you should abandon us Lord our God."
+	},
+	{
+		"tags":["completorium","responsorium-breve"],
+		"incipit":"Into your hands Lord",
+		"responsum":"I commend my spirit.",
+		"versus":"You have redeemed us Lord God of truth."
+	},
+	{
+		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
+		"datum":"Save us * Lord while we keep watch, guard us while we sleep: that we may keep watch with Christ, and rest in peace."
 	}
 ]
 
