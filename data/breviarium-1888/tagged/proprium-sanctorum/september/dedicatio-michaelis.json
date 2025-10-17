@@ -21,13 +21,13 @@
 		"terminatio":[["apparitio-michaelis","collecta","terminatio"]]
 	},
 	{
-		"tags":["dedicatio-michaelis","matutinum","psalmus"],
-		"datum":[["de-sanctis-angelis","psalmus"]]
-	},
-	{
 		"tags":["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"src":"nocturnale/0929N1A1",
 		"datum":"Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cœlo."
+	},
+	{
+		"tags":["dedicatio-michaelis","matutinum","psalmus"],
+		"datum":[["de-sanctis-angelis","psalmus"]]
 	},
 	{
 		"tags":["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-ii"],

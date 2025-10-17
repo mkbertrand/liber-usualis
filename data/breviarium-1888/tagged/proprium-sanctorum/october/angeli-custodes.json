@@ -37,7 +37,10 @@
 		"datum":"Ecce ego mittam Ángelum meum, + qui præcédat te, et custódiat in via, et introdúcat in locum, quem parávi. * Obsérva eum, et audi vocem ejus."
 	},
 	{
-		"tags":["angeli-custodes","vesperae","hymnus"],
+		"tags":[
+			["angeli-custodes","vesperae","hymnus"],
+			["angeli-custodes","matutinum","hymnus"]
+		],
 		"src":"gregobase/2320",
 		"datum":[
 			"Custódes hóminum psállimus Ángelos,/Natúræ frágili quos Pater áddidit/Cœléstis cómites, insidiántibus/Ne succúmberet hóstibus.",
@@ -61,6 +64,158 @@
 		"tags":["angeli-custodes","collecta"],
 		"datum":"Deus, qui ineffábili providéntia sanctos Ángelos tuos ad nostram custódiam míttere dignáris: + largíre supplícibus tuis; et eórum semper protectióne deféndi, * et ætérna societáte gaudére.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/1002I",
+		"datum":"Regem Angelórum Dóminum, * Veníte adorémus."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/1002N1A1",
+		"datum":"Dóminus Deus * cœli et terræ, ipse mittet Ángelum suum coram te."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","psalmus"],
+		"datum":[["de-sanctis-angelis","matutinum","psalmus"]]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/1002N1A2",
+		"datum":"Deus meus * misit Ángelum suum, et conclúsit ora leónum, et non nocuérunt mihi."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/1002N1A2",
+		"datum":"Bene ambulétis, * et Dóminus sit in itínere vestro, et Ángelus ejus comitétur vobíscum."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De libro Éxodi.",
+			"Ecce ego mittam Ángelum meum, qui præcédat te, et custódiat in via, et introdúcat in locum quem parávi. Obsérva eum, et audi vocem ejus, nec contemnéndum putes: quia non dimíttet cum peccáveris, et est nomen meum in illo. Quod si audíeris vocem ejus, et féceris ómnia quæ loquor, inimícus ero inimícis tuis, et afflígam affligéntes te. Præcedétque te Ángelus meus."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Ángelis suis Deus mandávit de te, ut custódiant te in ómnibus viis tuis:",
+		"responsum":"In mánibus portábunt te, ne umquam offéndas ad lápidem pedem tuum.",
+		"versus":"Míllia míllium ministrábunt ei, et décies míllies centéna míllia assistébant ei."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":[
+			"Ex Zacharía Prophéta.",
+			"Factum est verbum Dómini ad Zacharíam fílium Barachíæ, fílii Addo, prophétam, dicens: Vidi per noctem, et ecce vir ascéndens super equum rufum, et ipse stabat inter myrtéta quæ erant in profúndo: et post eum equi rufi, várii, et albi. Et dixi: Quid sunt isti, Dómine mi? Et dixit ad me Ángelus, qui loquebátur in me: Ego osténdam tibi quid sint hæc. Et respóndit vir, qui stabat inter myrtéta, et dixit: Isti sunt quos misit Dóminus ut perámbulent terram. Et respondérunt Ángelo Dómini, qui stabat inter myrtéta, et dixérunt: Perambulávimus terram, et ecce omnis terra habitátur, et quiéscit."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Respóndit Ángelus Dómini, et dixit: Dómine exercítuum,",
+		"responsum":"Úsquequo tu non miseréberis Jerúsalem et úrbium Juda, quibus irátus est?",
+		"versus":"Iste enim septuagésimus annus est."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Et levávi óculos meos, et vidi: et ecce vir, et in manu ejus funículus mensórum. Et dixi: Quo tu vadis? Et dixit ad me: Ut métiar Jerúsalem, et vídeam quanta sit latitúdo ejus, et quanta longitúdo ejus. Et ecce Ángelus qui loquebátur in me, egrediebátur, et Ángelus álius egrediebátur in occúrsum ejus. Et dixit ad eum: Curre, lóquere ad púerum istum dicens: Absque muro habitábitur Jerúsalem præ multitúdine hóminum, et jumentórum in médio ejus. Et ego ero ei, ait Dóminus, murus ignis in circúitu: et in glória ero in médio ejus."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"In conspéctu Géntium nolíte timére: vos enim in córdibus vestris adoráte et timéte Dóminum:",
+		"responsum":"Ángelus enim ejus vobíscum est.",
+		"versus":"Stetit Ángelus juxta aram templi, habens thuríbulum aúreum in manu sua."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/1002N2A1",
+		"datum":"Cum essem vobíscum, * per voluntátem Dei eram: ipsum benedícite, et cantáte ei."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1002N2A2",
+		"datum":"Tollens se Ángelus Dómini, * qui præcedébat castra Ísraël, ábiit post eos."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/1002N2A3",
+		"datum":"Immíttet Ángelus Dómini * in circúitu timéntium eum, et erípiet eos."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Bernárdi Abbátis.",
+			"Ángelis suis mandávit de te. Mira dignátio, et vere magna diléctio caritátis. Quis enim? quibus? de quo? quid mandávit? Studióse considerémus, fratres, diligénter commendémus memóriæ hoc tam grande mandátum. Quis enim mandávit? cujus sunt Ángeli? cujus mandátis obtémperant? cujus obédiunt voluntáti? Nempe Ángelis suis mandávit de te, ut custódiant te in ómnibus viis tuis. Nec cunctántur, quin étiam in mánibus tollant te. Summa ergo majéstas mandávit Ángelis, et Ángelis suis mandávit. Illis útique sublímibus, tam beátis quam próximis sibi cohæréntibus, et vere domésticis mandávit de te. Tu quis es? Quid est homo, quod memor es ejus? aut fílius hóminis, quóniam réputas eum? Quasi vero non sit homo putrédo, et fílius hóminis vermis. Sed quid putas mandávit de te? Ut custódiant te."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Vivit ipse Dóminus,",
+		"responsum":"Quóniam custodívit me Ángelus ejus, et hinc eúntem, et ibi commorántem, et inde huc reverténtem.",
+		"versus":"Et non permísit me Dóminus ancíllam suam coinquinári."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quantam tibi debet hoc verbum inférre reveréntiam, afférre devotiónem, conférre fidúciam! Reveréntiam pro præséntia, devotiónem pro benevoléntia, fidúciam pro custódia. Caute ámbula, ut vidélicet, cui adsunt Ángeli, sicut eis mandátum est, in ómnibus viis tuis. In quovis diversório, in quovis ángulo Ángelo tuo reveréntiam habe. Tu ne aúdeas illo præsénte, quod vidénte me non audéres. An præséntem esse dúbitas, quem non vides? Quid si audíres? Quid si tángeres? Quid si olfáceres? Vide, quia non solo visu rerum præséntia comprobétur."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Ángelus Dómini descéndit cum Azaría et sóciis ejus in fornácem, et excússit flammam ignis de fornáce:",
+		"responsum":"Et non tétigit eos omníno ignis, neque contristávit.",
+		"versus":"Benedíctus Deus eórum, qui misit Ángelum suum, et éruit servos suos qui credidérunt in eum."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"In ipso ítaque, fratres, affectuóse diligámus Ángelos ejus, tamquam futúros aliquándo cohærédes nostros, ínterim vero actóres et tutóres a Patre pósitos, et præpósitos nobis. Quid sub tantis custódibus timeámus? Nec superári, nec sedúci, minus autem sedúcere possunt, qui custódiunt nos in ómnibus viis nostris. Fidéles sunt, prudéntes sunt, poténtes sunt: quid trepidámus? Tantum sequámur eos, adhæreámus eis, et in protectióne Dei cœli commorémur. Quóties ergo gravíssima cérnitur urgére tentátio, et tribulátio véhemens imminére, ínvoca custódem tuum, ductórem tuum, adjutórem tuum in opportunitátibus, in tribulatióne: incláma eum, et dic: Dómine salva nos, perímus."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"In omni tribulatióne eórum non est tribulátus,",
+		"responsum":"Et Ángelus faciéi ejus salvávit eos.",
+		"versus":"In dilectióne sua et indulgéntia sua ipse redémit eos, et portávit eos, et elevávit eos cunctis diébus sǽculi."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/1002N3A1",
+		"datum":"Misit Dóminus * Ángelum suum, qui percússit omnem virum robústum, et bellatórem, et príncipem exércitus regis Assyriórum."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1002N3A2",
+		"datum":"Adoráte Dóminum * omnes Ángeli ejus: audívit, et lætáta est Sion."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/1002N3A3",
+		"datum":"Benedícite Dómino * omnes Ángeli ejus, poténtes virtúte, faciéntes verbum illíus, ad audiéndam vocem sermónum ejus."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Accessérunt discípuli ad Jesum, dicéntes: Quis, putas, major est in regno cœlórum? Et réliqua.",
+			"Homilía sancti Hilárii Epíscopi.",
+			"Nónnisi revérsos in natúram puerórum introíre regnum cœlórum Dóminus docet: id est, per simplicitátem puerílem vítia córporum nostrórum animǽque revocánda. Púeros autem credéntes omnes per audiéntiæ fidem nuncupávit. Hi enim patrem sequúntur, matrem amant, próximo velle malum nésciunt, curam opum négligunt: non isoléscunt, non odérunt, non mentiúntur, dictis credunt, et quod aúdiunt, verum habent. Reverténdum ígitur est ad simplicitátem infántium, quia in ea collocáti, spéciem humilitátis domínicæ circumferémus."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Machabǽus, et qui cum eo erant, cognovérunt expugnári præsídia:",
+		"responsum":"Cum fletu et lácrimis rogábant Dóminum, et omnis turba simul, ut bonum Ángelum mítteret ad salútem Ísraël.",
+		"versus":"Cum páriter prompto ánimo procéderent Jerosólymis, appáruit præcédens eos eques in veste cándida."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Væ huic mundo ab scándalis. Humílitas passiónis scándalum mundo est. In hoc enim máxime ignorántia detinétur humána, quod sub deformitáte crucis, ætérnæ glóriæ Dóminum nóluit accípere. Et quid mundo tam periculósum, quam non recepísse Christum? Ídeo vero necésse esse ait veníre scándala: quia ad sacraméntum reddéndæ nobis æternitátis, omnis in eo passiónis humílitas esset explénda."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Tu Dómine, qui misísti Ángelum tuum sub Ezechía rege Juda, et interfecísti de castris Sennácherib centum octogínta quinque  míllia:",
+		"responsum":"Et nunc Dominátor cœlórum mitte Ángelum tuum bonum ante nos, in timóre et tremóre magnitúdinis bráchii tui.",
+		"versus":"Ut métuant qui cum blasphémia véniunt advérsus sanctum pópulum tuum."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Vidéte ne contemnátis unum de pusíllis istis qui credunt in me. Aptíssimum vínculum mútui amóris impósuit, ad eos præcípue qui vere in Dómino credidíssent. Pusillórum enim Ángeli quotídie Deum vident: quia Fílius hóminis venit salváre quæ pérdita sunt. Ergo et Fílius hóminis salvat, et Deum Ángeli vident, et Ángeli pusillórum præsunt fidélium oratiónibus. Præésse Ángelos absolúta auctóritas est. Salvatórum ígitur per Christum oratiónes Ángeli quotídie Deo ófferunt. Ergo periculóse ille contémnitur, cujus desidéria, ac postulatiónes ad ætérnum, et invisíbilem Deum ambitióso Angelórum famulátu ac ministério pervehúntur."
 	},
 	{
 		"tags":["angeli-custodes","laudes","hymnus"],
