@@ -257,7 +257,7 @@ function render(data, chant) {
 						}
 					}
 					textret = stringrender(unpack(data['datum']).join(''));
-					if (translationpool != null) {
+					if (translationpool != null && translated != null) {
 						trans = translated;
 						alldefined = true;
 						for (var i = 0; i < translated.length; i++) {
