@@ -386,23 +386,21 @@
 	margin-right: 0.5rem;
 	color: red;
 	line-height: 0;
+	initial-letter: 3;
+	-webkit-initial-letter: 3;
 }
 
 .lectio-sequens::first-letter {
 	font-size: 57px !important;
+	initial-letter: 2;
+	-webkit-initial-letter: 2;
 }
 
 @media only screen and (max-width: 650px) {
 	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
-		initial-letter: 3;
-		-webkit-initial-letter: 3;
 		font-size: initial;
 		float: initial;
 		line-height: initial;
-	}
-	.lectio-sequens::first-letter {
-		initial-letter: 2 !important;
-		-webkit-initial-letter: 2 !important;
 	}
 
 	#rite-container {
