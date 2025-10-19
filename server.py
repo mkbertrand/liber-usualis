@@ -3,7 +3,7 @@
 # Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import bottle
-from bottle import get, route, request, static_file, error, template, redirect
+from bottle import get, route, request, static_file, error, template, redirect, abort
 import requests
 from datetime import datetime, date
 import waitress
@@ -108,6 +108,9 @@ def getname(tagset, pile):
 		name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
 	return name
 
+def error500tpl(error):
+	return template('web/resources/error500.tpl', error=error)
+
 @get('/day')
 def daytags(vesperal = False):
 	parameters = copy.deepcopy(request.query)
@@ -133,90 +136,100 @@ def daytags(vesperal = False):
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():
-	parameters = copy.deepcopy(request.query)
+	try:
+		parameters = copy.deepcopy(request.query)
 
-	# Generate the actual liturgical text. Didn't use breviarium.generate because of votive office handling
-	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
-	hours = parameters['hour'].replace(' ', '+').split('+')
-	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
+		# Generate the actual liturgical text. Didn't use breviarium.generate because of votive office handling
+		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
+		hours = parameters['hour'].replace(' ', '+').split('+')
+		assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
+		vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
-	tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
+		tags = copy.deepcopy(prioritizer.getvespers(day) if vesperal else prioritizer.getdiurnal(day))
 
-	# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
-	if 'select' in parameters:
-		if parameters['select'] == 'officium-parvum-bmv':
-			def votivize(i):
-				if 'votiva' in i:
-					return i | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}
-				else:
-					return i - {'primarium', 'commemoratio', 'psalmi'}
-			tags = [votivize(i) for i in tags]
-			tags.append({'pro-sanctis','commemoratio'})
-		elif parameters['select'] == 'officium-defunctorum':
-			def votivize(i):
-				if 'officium-defunctorum' in i:
-					if 'duplex-minus' in i:
-						return i | {'officium-defunctorum', 'primarium'}
+		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
+		if 'select' in parameters:
+			if parameters['select'] == 'officium-parvum-bmv':
+				def votivize(i):
+					if 'votiva' in i:
+						return i | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}
 					else:
-						return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
-				else:
-					return i - {'primarium', 'commemoratio', 'psalmi'}
-			tags = [votivize(i) for i in tags]
-			if not any('officium-defunctorum' in i for i in tags):
-				tags.append({'officium-defunctorum','semiduplex','primarium'})
-		elif parameters['select'] == 'antiphona-bmv-temporis':
-			tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
-			tags[0] |= {'primarium'}
+						return i - {'primarium', 'commemoratio', 'psalmi'}
+				tags = [votivize(i) for i in tags]
+				tags.append({'pro-sanctis','commemoratio'})
+			elif parameters['select'] == 'officium-defunctorum':
+				def votivize(i):
+					if 'officium-defunctorum' in i:
+						if 'duplex-minus' in i:
+							return i | {'officium-defunctorum', 'primarium'}
+						else:
+							return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
+					else:
+						return i - {'primarium', 'commemoratio', 'psalmi'}
+				tags = [votivize(i) for i in tags]
+				if not any('officium-defunctorum' in i for i in tags):
+					tags.append({'officium-defunctorum','semiduplex','primarium'})
+			elif parameters['select'] == 'antiphona-bmv-temporis':
+				tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
+				tags[0] |= {'primarium'}
 
-	private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
-	if private:
-		tags = [i | {'privata'} for i in tags]
-	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
-	tags.remove(primary)
-	pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
+		private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
+		if private:
+			tags = [i | {'privata'} for i in tags]
+		primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+		tags.remove(primary)
+		pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
 
-	noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
-	if noending:
-		tags.append({'fidelium-animae', 'hoc-omissum'})
-		tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'})
-	lit = []
-	for hour in hours:
-		lit.append({'ritus', hour})
-	rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
-	tags.append(primary)
+		noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
+		if noending:
+			tags.append({'fidelium-animae', 'hoc-omissum'})
+			tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'})
+		lit = []
+		for hour in hours:
+			lit.append({'ritus', hour})
+		rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
+		tags.append(primary)
 
-	translation = {}
+		translation = {}
 
-	if 'translation' in parameters and parameters['translation'] != 'none':
-		def gettranslation(tags):
-			translation = parameters['translation']
-			search = set(tags) | {translation}
-			transroot = f'{root}/translations/{translation}'
-			return breviarium.search(root, search, datamanage.getpile(transroot, search | breviarium.defaultpile), rootappendix=f'/translations/{translation}')
+	except:
+		abort(500, error500tpl('Error incognitus.'))
 
-		def traverse(obj):
-			if type(obj) is dict and 'tags' in obj:
-				tran = gettranslation(obj['tags'])
-				if tran:
-					translation['+'.join(sorted(obj['tags']))] = tran
-			if type(obj) is dict:
-				traverse(obj['datum'])
-			elif type(obj) is list:
-				for v in obj:
-					traverse(v)
-		traverse(rite['datum'])
+	try:
+		if 'translation' in parameters and parameters['translation'] != 'none':
+			def gettranslation(tags):
+				translation = parameters['translation']
+				search = set(tags) | {translation}
+				transroot = f'{root}/translations/{translation}'
+				return breviarium.search(root, search, datamanage.getpile(transroot, search | breviarium.defaultpile), rootappendix=f'/translations/{translation}')
 
-	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
-	usednames = [getname(tagset, pile) for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
-	usednames.insert(0, getname(primary, pile))
+			def traverse(obj):
+				if type(obj) is dict and 'tags' in obj:
+					tran = gettranslation(obj['tags'])
+					if tran:
+						translation['+'.join(sorted(obj['tags']))] = tran
+				if type(obj) is dict:
+					traverse(obj['datum'])
+				elif type(obj) is list:
+					for v in obj:
+						traverse(v)
+			traverse(rite['datum'])
+	except:
+		abort(500, error500tpl('Error de interpretatione.'))
 
-	return datamanage.dump_data({
-		'rite' : rite['datum'],
-		'translation' : translation,
-		'usedprimary': primary,
-		'usednames': usednames
-		})
+	try:
+		pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
+		usednames = [getname(tagset, pile) for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
+		usednames.insert(0, getname(primary, pile))
+
+		return datamanage.dump_data({
+			'rite' : rite['datum'],
+			'translation' : translation,
+			'usedprimary': primary,
+			'usednames': usednames
+			})
+	except:
+		abort(500, error500tpl('Error incognitus.'))
 
 @get('/kalendar')
 def kal():
@@ -248,7 +261,7 @@ def error404(error):
 
 @error(500)
 def error500(error):
-	return error
+	return error.body
 
 parser = argparse.ArgumentParser(description='Server')
 parser.add_argument('-o', '--output', action='store_true', help='Display output in command line instead of in log file')

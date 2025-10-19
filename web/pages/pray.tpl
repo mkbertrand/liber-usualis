@@ -59,6 +59,10 @@
 					noending = true;
 				}
 				var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation(locale) : 'none'}&privata=${this.recitation=='private' ? 'privata': 'chorali'}` + (select == '' ? '' : `&select=${select}`));
+				if (response.status == 500) {
+					newrite = await response.text();
+					break;
+				}
 				var json = await response.json();
 				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
 				if (i == 0) {
