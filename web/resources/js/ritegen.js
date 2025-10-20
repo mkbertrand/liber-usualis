@@ -144,7 +144,7 @@ titled = {
 	confiteor: 'Confiteor'
 };
 
-titled['ante-collectas'] = 'Collecta';
+titled['collecta-primaria'] = 'Collecta';
 titled['sacrosanctae'] = 'Sacrosanctæ';
 
 // It can be readily observed that this is just an extremely primitive version of render()
@@ -177,6 +177,19 @@ function stringrender(data) {
 		.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
 	return data;
 };
+
+function sectionrender(text, translation, tags) {
+	ret = `<p class="rite-text ${tags.join(' ')}">`;
+	for (var i = 0; i < text.length; i++) {
+		ret += `<span class="rite-text">${stringrender(text[i])}</span><br>`
+		if (translation != null) {
+			// For stylistic reasons, remove any rubric-text at the start of the translation like line numbers in Psalms or Versicle/Response signs.
+			trans = stringrender(translation[i]).replace(/^<span.+?<\/span>/, '').replace(/\[.+?\]/g, '');
+			ret += `<span class="rite-text-translation">${trans}</span><br>`;
+		}
+	}
+	return ret + '</p>';
+}
 
 function render(data, chant) {
 	options = {chant: chant, disabletrivialchant: true};
@@ -256,7 +269,7 @@ function render(data, chant) {
 							header = makeheader('Responsorium ' + ['III', 'VI', 'IX'][nn - 1]);
 						}
 					}
-					textret = stringrender(unpack(data['datum']).join(''));
+					vernacular = null;
 					if (translationpool != null && translated != null) {
 						trans = translated;
 						alldefined = true;
@@ -271,16 +284,11 @@ function render(data, chant) {
 							}
 						}
 						if (alldefined) {
-							textret = '';
-							latin = unpack(data['datum']).join('').split('\n');
 							vernacular = trans.join('').split('\n');
-							for (var i = 0; i < latin.length; i++) {
-								vernacular[i] = vernacular[i].replace(/^(R\.\sbr\.\s|R\.\s|V\.\s)/, '');
-								textret += `<span class="rite-text">${stringrender(latin[i])}</span><br><span class="rite-text-translation">${stringrender(vernacular[i])}</span><br>`;
-							}
 						}
 					}
-					return `${header}<p class="rite-text'${data['tags'].join(' ')}'">${textret}</p>`;
+
+					return header + sectionrender(unpack(data['datum']).join('').split('\n'), vernacular, data['tags']);
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data['tags'].includes(i))) {
 					antiphon = `<p class="rite text ${data['tags']}">${unpack(data['datum'][2], null, null, parenttags)}</p>`;
@@ -349,7 +357,7 @@ function render(data, chant) {
 				} else if (data['tags'].join(' ').includes('/psalmi/')) {
 					header = makeheader(data['datum'].split('\n')[0].slice(1, -1));
 					data['datum'] = data['datum'].substring(data['datum'].indexOf('\n') + 1).replace(/^\d+\s/, '');
-					data['tags'].push('textus-psalmi');
+					return header + sectionrender(data['datum'].split('\n'), translated == null ? null : translated.split('\n').slice(1), data['tags'].concat('textus-psalmi'));
 
 				// For Easter when the Hæc dies is inserted in the place of the Chapter
 				} else if (data['tags'].includes('capitulum') && typeof data['datum'] === 'object' && 'tags' in data['datum'] && data['datum']['tags'].includes('haec-dies')) {
@@ -396,14 +404,6 @@ function render(data, chant) {
 					if (!parenttags.includes('commemorationes')) {
 						header = makeheader('Versiculus');
 					}
-					vscl = unpack(data['datum']);
-					if (typeof vscl === 'string' && vscl == '') {
-						header = '';
-						data['datum'] = '';
-					} else {
-						data['datum'] = vscl[0] + '<br>' + vscl[1];
-					}
-
 				} else if (data['tags'].includes('martyrologium')) {
 					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data['datum'][0]))} ${stringrender(unpack(data['datum'][1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data['datum'][2]))}</p>`;
 					martyrology = unpack(data['datum'][3]);
