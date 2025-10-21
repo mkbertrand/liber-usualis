@@ -7,5 +7,19 @@
 		"tags":["dionysius-rusticus-eleutherius","collecta"],
 		"datum":"Deus, qui hodiérna die beátum Dionýsium, Mártyrem tuum atque Pontíficem, virtúte constántiæ in passióne roborásti, quique illi, ad prædicándum Gentibus glóriam tuam, Rústicum et Eleuthérium sociáre dignátus es: + tríbue nobis, quǽsumus; eórum imitatióne, pro amóre tuo próspera mundi despícere, * et nulla ejus advérsa formidáre.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["dionysius-rusticus-eleutherius","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens"]]
+	},
+	{
+		"tags":["dionysius-rusticus-eleutherius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Dionýsius Atheniénsis, unus ex Areopagítis judícibus, vir fuit omni doctrínæ génere instrúctus. Qui cum adhuc in Gentilitátis erróre versarétur, eo die quo Christus Dóminus cruci affíxus est, solem præter natúram defecísse animadvértens, exclamásse tráditur: Aut Deus natúræ pátitur, aut mundi máchina dissolvétur. Sed cum Paulus Apóstolus véniens Athénas, et in Areopágum ductus, ratiónem reddidísset ejus doctrínæ quam prædicábat, affírmans Christum Dóminum resurrexísse, et mórtuos omnes in vitam reditúros esse: cum álii multi, tum ipse Dionýsius in Christum crédidit.",
+		"lectio-ii":"Ítaque et baptizátus est ab Apóstolo, et Atheniénsium ecclésiæ præféctus. Qui cum póstea Romam venísset, a Cleménte Pontífice missus est in Gálliam prædicándi Evangélii causa. Quem Lutétiam usque Parisiórum Rústicus présbyter, et Eleuthérius diáconus prosecúti sunt: ubi a Fescénnio præfécto, quod multos ad christiánam religiónem convertísset, ipse cum sóciis virgis cæsus est: cumque in prædicatióne christiánæ fídei constantíssime perseveráret, in cratículam subjécto igne injícitur, multísque prætérea supplíciis una cum sóciis cruciátur.",
+		"lectio-iii":"Sed ea tormentórum génera ómnibus forti ac libénti ánimo perferéntibus, Dionýsius annum agens supra centésimum, cum réliquis secúri percútitur séptimo Idus Octóbris. De quo illud memóriæ próditum est, abscíssum suum caput sustulísse, et progréssum ad duo míllia pássuum in mánibus gestásse. Libros scripsit admirábiles, ac plane cœléstes, de divínis nomínibus, de cœlésti et ecclesiástica hierarchía, de mýstica theología, et álios quosdam."
+	},
+	{
+		"tags":["dionysius-rusticus-eleutherius","matutinum","nocturna-iii","lectio"],
+		"datum":[["martyres","alia-homilia-iii"]]
 	}
 ]

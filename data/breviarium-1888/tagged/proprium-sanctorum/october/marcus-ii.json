@@ -7,5 +7,11 @@
 		"tags":["marcus-ii","collecta"],
 		"datum":"Exaúdi Dómine preces nostras: et, interveniénte beáto Marco, Confessóre tuo atque Pontífice, * indulgéntiam nobis tríbue placátus et pacem.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["marcus-ii","matutinum","lectio"],
+		"lectio-i":[["temporale","occurrens"]],
+		"lectio-ii":[["temporale","occurrens"],["temporale","occurrens","lectio-iii"]],
+		"lectio-iii":"Marcus Románus, Constantíno magno imperatóre Póntifex, instítuit ut epíscopus Ostiénsis, a quo Románus Póntifex consecrátur, pállio uterétur. Duas Romæ basílicas ædificávit, álteram in Urbe, álteram via Ardeatína: quas Constantínus auctas, magnis munéribus exornávit. Vixit in pontificátu menses octo, sepultúsque est in cœmetério Balbínæ."
 	}
 ]
