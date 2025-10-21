@@ -347,6 +347,12 @@
 	font-style: italic;
 }
 
+.rite-text-rubric {
+	font-size: 18px;
+	color: red;
+	font-style: italic;
+}
+
 .section-header {
 	text-align: center;
 	color: red;

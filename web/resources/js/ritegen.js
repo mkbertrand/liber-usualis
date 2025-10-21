@@ -174,7 +174,8 @@ function stringrender(data) {
 		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
 		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
 		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
-		.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
+		.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
+		.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 	return data;
 };
 
@@ -419,7 +420,11 @@ function render(data, chant) {
 					header = makeheader('Antiphona B.M.V.');
 				}
 
-				return `${header}<div class="rite-item${' ' + data['tags'].join(' ')}">${renderinner(data['datum'], translated, data['tags'].concat(parenttags))}</div>`;
+				if (['deus-in-adjutorium', 'pater-noster-semisecreta', 'credo-semisecreta'].some(i => data['tags'].includes(i))) {
+					return `${header}<div class="rite-item${' ' + data['tags'].join(' ')}">${sectionrender(data['datum'], translated, data['tags'].concat(parenttags))}</div>`;
+				} else {
+					return `${header}<div class="rite-item${' ' + data['tags'].join(' ')}">${renderinner(data['datum'], translated, data['tags'].concat(parenttags))}</div>`;
+				}
 
 			} else {
 				return 'error';
