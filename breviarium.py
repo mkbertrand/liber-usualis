@@ -269,7 +269,11 @@ def process(root, item, selected, alternates, pile):
 				else:
 					ret.append(iprocessed)
 		item['datum'] = ret if len(ret) != 1 else ret[0]
+		return item
 
+	# Often in the text there will be an N. replaced with the celebrated Saint's name.
+	if type(item) is dict and 'N.' in item['datum']:
+		item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(root, item['tags'] | {'n'} | selected, pile)['datum'])
 	return item
 
 def generate(root, day, hour: str):
