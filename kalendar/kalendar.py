@@ -220,7 +220,7 @@ def process(kal):
 			matchset = []
 			failsearch = False
 			for restriction in job.rule['restrict']:
-				search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex])]
+				search = [tagsetindex for tagsetindex in tagsetindices if (restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex]))]
 				if len(search) == 0:
 					failsearch = True
 					break

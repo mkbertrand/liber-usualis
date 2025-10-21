@@ -426,9 +426,9 @@
 			{"include":["infra-octavam","ii-vesperae"],"response":"dele","target":0},
 			{"include":["feria-major","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
 			{"include":["duplex-ii-classis","ii-vesperae"],"response":"dele","target":0},
-			{"include":["duplex-majus","ii-vesperae"],"response":"dele","target":0},
-			{"include":["duplex-minus","ii-vesperae"],"response":"dele","target":0},
-			{"include":["semiduplex","ii-vesperae"],"response":"dele","target":0}
+			{"include":["duplex-majus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["duplex-minus","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0},
+			{"include":["semiduplex","ii-vesperae"],"remove":"primarium","adde":"commemoratio","target":0}
 		]
 	},
 	{

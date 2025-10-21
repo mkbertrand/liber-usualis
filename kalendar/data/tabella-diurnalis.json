@@ -42,7 +42,18 @@
 	{
 		"include":["bmv-sabbatum","maria","primarium"],
 		"response":[
-			{"include":["sabbatum","feria"],"adde":"bmv-sabbatum","target":1}
+			{"include":["tempus","januarius"],"adde":"januarius","target":0},
+			{"include":["tempus","februarius"],"adde":"februarius","target":0},
+			{"include":["tempus","martius"],"adde":"martius","target":0},
+			{"include":["tempus","aprilis"],"adde":"aprilis","target":0},
+			{"include":["tempus","majus"],"adde":"majus","target":0},
+			{"include":["tempus","junius"],"adde":"junius","target":0},
+			{"include":["tempus","julius"],"adde":"julius","target":0},
+			{"include":["tempus","augustus"],"adde":"augustus","target":0},
+			{"include":["tempus","september"],"adde":"september","target":0},
+			{"include":["tempus","october"],"adde":"october","target":0},
+			{"include":["tempus","november"],"adde":"november","target":0},
+			{"include":["tempus","december"],"adde":"december","target":0}
 		]
 	},
 	{

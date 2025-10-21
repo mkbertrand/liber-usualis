@@ -35,6 +35,10 @@
 		"in-tempore-paschali":"Ave María, grátia plena, * Dóminus tecum, allelúja."
 	},
 	{
+		"tags":["bmv-sabbatum","matutinum","psalmi"],
+		"datum":[["temporale","occurrens","pro-bmv-sabbato"]]
+	},
+	{
 		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-i"],
 		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-i"]],
 		"in-tempore-paschali":[["maria","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"]]
@@ -60,5 +64,17 @@
 		"tags":["bmv-sabbatum","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/19326",
 		"datum":"Beáta Dei Génitrix María, * Virgo perpétua, templum Dómini, sacrárium Spíritus sancti: sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu."
+	},
+	{
+		"tags":["bmv-sabbatum","matutinum","lectio"],
+		"lectio-i":[["temporale","occurrens"]],
+		"lectio-ii":[["temporale","occurrens","lectio-ii","lectio"], ["temporale","occurrens","lectio-iii","lectio"]]
+	},
+	{
+		"tags":["bmv-sabbatum","matutinum","lectio","lectio-iii"],
+		"october":[
+			"Sermo sancti Bernárdi Abbátis.",
+			"Amplectámur Maríæ vestígia, fratres mei, et devotíssima supplicatióne beátis illíus pédibus provolvámur. Teneámus eam, nec dimittámus, donec benedíxerit nobis: potens est enim. Nempe vellus est médium inter rorem et áream: múlier inter solem et lunam: María inter Christum et Ecclésiam constitúta. Sed forte miráris, non tam vellus opértum rore, quam amíctam sole mulíerem. Magna síquidem familiáritas, sed mira omníno vicínitas solis, et mulíeris. Quómodo enim in tam veheménti fervóre tam frágilis natúra subsístit? Mérito quidem admiráris Móyses sancte, et curiósius desíderas intuéri. Verúmtamen solve calceaménta de pédibus tuis, et involúcra pone carnálium cogitatiónum, si accédere concupíscis."
+		]
 	}
 ]
