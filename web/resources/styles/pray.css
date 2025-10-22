@@ -327,6 +327,14 @@
 	margin-bottom: 0;
 }
 
+.section-header {
+	text-align: center;
+	color: red;
+	font-size: 22px;
+	font-variant: small-caps;
+	margin: 0;
+}
+
 .rite-text {
 	font-size: 20px;
 	line-height: 1.1;
@@ -353,13 +361,6 @@
 	font-style: italic;
 }
 
-.section-header {
-	text-align: center;
-	color: red;
-	font-size: 22px;
-	font-variant: small-caps;
-	margin: 0;
-}
 .item-header {
 	text-align: center;
 	color: red;
