@@ -200,7 +200,7 @@ function render(data, chant) {
 				for (let i = 0, count = data.length; i < count; i++) {
 					plus = renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, parenttags, delin=delin);
 					if (delin != 'p') {
-						if (ret.endsWith('</p>') && !plus.startsWith('<p')) {
+						if (ret.endsWith('</p>') && plus != '' && !plus.startsWith('<p')) {
 							ret += '<p class="rite-text">';
 						} else if (!ret.endsWith('</p>') && ret != '' && plus.startsWith('<p')) {
 							ret += '</p>';
@@ -284,7 +284,7 @@ function render(data, chant) {
 					data.datum = unpack(data.datum).join('').split('\n');
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data.tags.includes(i))) {
-					antiphon = `<p class="rite text ${data.tags}">${unpack(data.datum[2], null, null, parenttags)}</p>`;
+					antiphon = `<p class="rite-text ${data.tags}">${unpack(data.datum[2], null, null, parenttags)}</p>`;
 					return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data.datum[0])}<br>${stringrender(data.datum[1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[3])}<br>${stringrender(data.datum[4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[8])}<br>${stringrender(data.datum[9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[11])}<br>${stringrender(data.datum[12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[14].datum)}</p>`
 
 				} else if (data.tags.includes('formula-lectionis') && data.datum != '' && !(typeof data.datum !== 'string' && 'tags' in data.datum && data.datum.tags.includes('formula-lectionis'))) {
@@ -295,8 +295,6 @@ function render(data, chant) {
 							data.datum[1].datum.tags.concat(data.datum[1].tags) :
 							data.datum[1].tags;
 					}
-					console.log(btags);
-					console.log(data);
 					if (data.datum[3].tags.includes('lectio-brevis')) {
 						header = makeheader('Lectio Brevis');
 					} else {
@@ -412,7 +410,8 @@ function render(data, chant) {
 				}
 				paragraphed = ['aperi-domine', 'pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'sacrosanctae', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere'];
 				if (paragraphed.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
-					return `${header}<p class="rite-text ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}</p>`;
+					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
+					return ret == '' ? '' : `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}</p>`;
 				}
 				dived = ['ritus', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
