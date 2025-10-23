@@ -361,7 +361,7 @@
 }
 
 .rite-text-rubric {
-	font-size: 18px;
+	font-size: calc(100% - 4px);
 	color: red;
 	font-style: italic;
 }
@@ -406,6 +406,10 @@
 	font-size: 60px !important;
 	initial-letter: 2;
 	-webkit-initial-letter: 2;
+}
+
+.rubricum {
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 650px) {

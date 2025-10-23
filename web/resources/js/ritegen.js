@@ -53,7 +53,7 @@ function defineambit(desired, choral = true) {
 			ambit = penitentialsambit;
 			break;
 		case 'diei':
-			ambit = fullambit.map((entry) => ({'name': entry.name, 'content': entry.content.filter((item) => item.where == 'diei'), 'id': entry.id}))
+			ambit = fullambit.map((entry) => ({'name': entry.name, 'content': entry.content.filter((item) => item.where == 'diei' || item.where == 'antiphona-bmv-temporis'), 'id': entry.id}))
 	}
 	if (choral) {
 		return ambit;
@@ -67,7 +67,7 @@ function defineambit(desired, choral = true) {
 }
 
 function ritelist(daytags, ambit) {
-	included = ['diei'];
+	included = ['diei', 'antiphona-bmv-temporis'];
 	if (daytags.some(i => i.includes('officium-parvum-bmv') && !i.includes('omissum'))) {
 		included.push('officium-parvum-bmv');
 	}
@@ -199,17 +199,16 @@ function render(data, chant) {
 				let ret = '';
 				for (let i = 0, count = data.length; i < count; i++) {
 					plus = renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, parenttags, delin=delin);
-					if (delin != 'p') {
-						if (ret.endsWith('</p>') && plus != '' && !plus.startsWith('<p')) {
-							ret += '<p class="rite-text">';
-						} else if (!ret.endsWith('</p>') && ret != '' && plus.startsWith('<p')) {
-							ret += '</p>';
-						}
+					if (delin != 'p' && ret.endsWith('</p>') && plus != '' && !plus.startsWith('<p')) {
+						ret += '<p class="rite-text">';
 					}
 					ret += plus;
 				};
 				return ret;
 			} else if (typeof data === 'string') {
+				if (data == '') {
+					return '';
+				}
 				if (translated != null && typeof translated === 'string') {
 					translated = translated.replaceAll(/\[.+?\]/g, '').trim().replaceAll(/([0-9]+)\s/g, '');
 					rendered = stringrender(data);
@@ -218,11 +217,11 @@ function render(data, chant) {
 						renderedsplit = rendered.split('<br>');
 						translationsplit = stringrender(translated).split('<br>');
 						for (var i = 0; i < renderedsplit.length; i++) {
-							ret += `<${delin} class="rite-text ${parenttags.join(' ')} with-translation">${renderedsplit[i]}</${delin}><br><${delin} class="rite-text-translation">${translationsplit[i]}</${delin}>` + (delin == 'span' ? '<br>' : '');
+							ret += `<${delin} class="rite-text ${parenttags.join(' ')} with-translation">${renderedsplit[i]}</${delin}>` + (translationsplit[i] == '' ? '' : `<br><${delin} class="rite-text-translation">${translationsplit[i]}</${delin}>`) + (delin == 'span' ? '<br>' : '');
 						}
 						return ret;
 					}
-					return `<${delin} class="rite-text ${parenttags.join(' ')} with-translation">${stringrender(data)}</${delin}><br><${delin} class="rite-text-translation">${stringrender(translated)}</${delin}>` + (delin == 'span' ? '<br>' : '');
+					return `<${delin} class="rite-text ${parenttags.join(' ')} with-translation">${stringrender(data)}</${delin}>` + (translated == '' ? '' : `<br><${delin} class="rite-text-translation">${stringrender(translated)}</${delin}>`) + (delin == 'span' ? '<br>' : '');
 				} else {
 					return `<${delin} class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</${delin}>` + (delin == 'span' ? '<br>' : '');
 				}
@@ -233,13 +232,13 @@ function render(data, chant) {
 				function makeheader(header, style = 'item-header') {
 					return `<h4 class="${style}">${header}</h4>`;
 				}
-				header = '';
+				var header = '';
 
 				for (i of data.tags) {
 					// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
-					if (i in titled && !(typeof data.datum === 'object' && 'tags' in data.datum && data.datum.tags.includes(i)) && data.datum != '' && header == '') {
+					if (i in titled && !parenttags.includes(i) && data.datum != '') {
 						header = makeheader(titled[i]);
-					}    
+					}
 				}
 				// If data.datum is an array, that means that the responsory isn't actually nested down another layer.
 				if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
@@ -295,7 +294,7 @@ function render(data, chant) {
 							data.datum[1].datum.tags.concat(data.datum[1].tags) :
 							data.datum[1].tags;
 					}
-					if (data.datum[3].tags.includes('lectio-brevis')) {
+					if (data.datum.length > 3 && typeof data.datum[3] === 'object' && data.datum[3].tags.includes('lectio-brevis')) {
 						header = makeheader('Lectio Brevis');
 					} else {
 						nn = 1;
@@ -408,7 +407,7 @@ function render(data, chant) {
 				if (data.tags.includes('hymnus') && !parenttags.includes('hymnus')) {
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(unpack(data.datum), translated, data.tags.concat(parenttags), delin='p')}</div>`;
 				}
-				paragraphed = ['aperi-domine', 'pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'sacrosanctae', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere'];
+				paragraphed = ['aperi-domine', 'pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'sacrosanctae', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
 				if (paragraphed.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					return ret == '' ? '' : `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}</p>`;
