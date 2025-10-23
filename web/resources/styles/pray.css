@@ -361,7 +361,7 @@
 }
 
 .rite-text-rubric {
-	font-size: calc(100% - 4px);
+	font-size: 14px;
 	color: red;
 	font-style: italic;
 }
