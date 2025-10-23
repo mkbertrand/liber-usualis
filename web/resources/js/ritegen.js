@@ -202,7 +202,7 @@ function render(data, chant) {
 					if (delin != 'p') {
 						if (ret.endsWith('</p>') && !plus.startsWith('<p')) {
 							ret += '<p class="rite-text">';
-						} else if (!ret.endsWith('</p>') && plus.startsWith('<p')) {
+						} else if (!ret.endsWith('</p>') && ret != '' && plus.startsWith('<p')) {
 							ret += '</p>';
 						}
 					}
@@ -390,10 +390,8 @@ function render(data, chant) {
 					if (data.tags.includes('antiphona-bmv')) {
 						header = makeheader('Antiphona B.M.V.');
 					}
-				} else if (data.tags.includes('versiculus')) {
-					if (!parenttags.includes('commemorationes')) {
-						header = makeheader('Versiculus');
-					}
+				} else if (data.tags.includes('versiculus') && !parenttags.includes('versiculus') && !parenttags.includes('commemorationes')) {
+					header = makeheader('Versiculus');
 				} else if (data.tags.includes('martyrologium')) {
 					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[0]))} ${stringrender(unpack(data.datum[1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data.datum[2]))}</p>`;
 					martyrology = unpack(data.datum[3]);
@@ -412,15 +410,15 @@ function render(data, chant) {
 				if (data.tags.includes('hymnus') && !parenttags.includes('hymnus')) {
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(unpack(data.datum), translated, data.tags.concat(parenttags), delin='p')}</div>`;
 				}
-				paragraphed = ['aperi-domine', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'collecta-primaria', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'sacrosanctae', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere'];
+				paragraphed = ['aperi-domine', 'pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'sacrosanctae', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere'];
 				if (paragraphed.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					return `${header}<p class="rite-text ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}</p>`;
 				}
-				dived = ['ritus']
+				dived = ['ritus', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}</div>`;
 				}
-				return renderinner(data.datum, translated, data.tags.concat(parenttags));
+				return header + renderinner(data.datum, translated, data.tags.concat(parenttags));
 			} else {
 				return 'error';
 			}
