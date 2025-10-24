@@ -201,9 +201,14 @@ def process(root, item, selected, alternates, pile):
 			pile = datamanage.getpile(root, item['from'] | {'dies-lunae'})
 
 		selected = copy.deepcopy(selected)
+		repile = False
 		# Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
 		for cclass in contradictions(root, 'positionales', item['from'] | selected):
 			selected -= cclass
+			repile = True
+
+		if repile:
+			pile = datamanage.getpile(root, item['from'] | selected | defaultpile)
 
 		result = None
 		if not any('/' in i for i in item['from']):
