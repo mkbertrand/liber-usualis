@@ -137,16 +137,6 @@ function abbreviateName(name) {
 	return name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Pontificum', 'Pont.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.');
 }
 
-titled = {
-	capitulum: 'Capitulum',
-	hymnus: 'Hymnus',
-	preces: 'Preces',
-	confiteor: 'Confiteor'
-};
-
-titled['collecta-primaria'] = 'Collecta';
-titled['sacrosanctae'] = 'Sacrosanctæ';
-
 // It can be readily observed that this is just an extremely primitive version of render()
 function unpack(data) {
 	if (typeof data === 'string') {
@@ -177,6 +167,29 @@ function stringrender(data) {
 		.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
 		.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 	return data;
+};
+
+riteheaders = {
+	'matutinum': 'Ad Matutinum',
+	'laudes': 'Ad Laudes',
+	'prima': 'Ad Primam',
+	'tertia': 'Ad Tertiam',
+	'sexta': 'Ad Sextam',
+	'nona': 'Ad Nonam',
+	'vesperae': 'Ad Vesperas',
+	'completorium': 'Ad Completorium',
+	'psalmi-graduales': 'Psalmi Graduales',
+	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales cum Litaniis',
+	'litaniae-sanctorum': 'Litaniæ',
+	'officium-capituli': 'Martyrologium'
+};
+headers = {
+	'capitulum': 'Capitulum',
+	'hymnus': 'Hymnus',
+	'preces': 'Preces',
+	'confiteor': 'Confiteor',
+	'collecta-primaria': 'Collecta',
+	'sacrosanctae': 'Sacrosanctæ'
 };
 
 function render(data, chant) {
@@ -236,8 +249,8 @@ function render(data, chant) {
 
 				for (i of data.tags) {
 					// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
-					if (i in titled && !parenttags.includes(i) && data.datum != '') {
-						header = makeheader(titled[i]);
+					if (i in headers && !parenttags.includes(i) && data.datum != '') {
+						header = makeheader(headers[i]);
 					}
 				}
 				// If data.datum is an array, that means that the responsory isn't actually nested down another layer.
@@ -333,15 +346,11 @@ function render(data, chant) {
 				} else if (data.tags.includes('hymnus') && data.tags.includes('te-deum') && !options['chant']) {
 					return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data.datum.join('/'))}</p>`;
 				} else if (data.tags.includes('commemorationes')) {
-					if (data.datum.length == 0) {
-						return '';
-					}
-					ret = '';
+					var ret = '';
 					for (var i = 0; i < data.datum.length - 1; i++) {
 						ret += makeheader(names[i + 1]) + renderinner(data.datum[i], translated, data.tags.concat(parenttags));
 					}
-					ret += renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
-					return ret;
+					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
 
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data.tags.some(tag => trivialchants.includes(tag)))) {
 					return `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
@@ -365,20 +374,6 @@ function render(data, chant) {
 						header = makeheader('Nocturna III', 'section-header');
 					}
 				} else if (data.tags.includes('ritus')) {
-					riteheaders = {
-						'matutinum': 'Ad Matutinum',
-						'laudes': 'Ad Laudes',
-						'prima': 'Ad Primam',
-						'tertia': 'Ad Tertiam',
-						'sexta': 'Ad Sextam',
-						'nona': 'Ad Nonam',
-						'vesperae': 'Ad Vesperas',
-						'completorium': 'Ad Completorium',
-						'psalmi-graduales': 'Psalmi Graduales',
-						'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales cum Litaniis',
-						'litaniae-sanctorum': 'Litaniæ',
-						'officium-capituli': 'Martyrologium'
-					};
 					for (i of data.tags) {
 						if (i in riteheaders && !parenttags.includes(i)) {
 							header = makeheader(riteheaders[i], 'section-header');
