@@ -161,26 +161,7 @@
 	},
 	{
 		"tags":["nona","preces"],
-		"datum":[]
-	},
-	{
-		"tags":[
-			["nona","in-tempore-adventus","feria","preces"],
-			["nona","cinerum","feria","preces"],
-			["nona","in-tempore-quadragesimae","feria","preces"],
-			["nona","in-tempore-passionis","feria","preces"],
-			["nona","quatuor-tempora","feria","preces"],
-			["nona","vigilia","feria","preces"]
-		],
-		"datum":[
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["pater-noster-semisecreta"],
-			"V. Dómine Deus virtútum convérte nos.",
-			"R. Et osténde fáciem tuam, et salvi érimus.",
-			"V. Exsúrge Christe, ádjuva nos.",
-			"R. Et líbera nos propter nomen tuum.",
-			["domine-exaudi"]
-		]
+		"datum":[["tertia"]]
 	},
 	{
 		"tags":["nona","sollemnitas","hymnus"],

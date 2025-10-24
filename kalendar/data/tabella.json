@@ -939,5 +939,11 @@
 		"response":[
 			{"include":["hebdomada-sexagesima","feria-ii","antiphona-magnificat"],"response":"dele","target":1}
 		]
+	},
+	{
+		"include":["antiphona-bmv"],
+		"response":[
+			{"include":["dominica","tempus"],"response":"dominica","target":0}
+		]
 	}
 ]

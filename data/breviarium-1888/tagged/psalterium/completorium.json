@@ -106,8 +106,24 @@
 		"datum":[["/psalmi/nunc-dimittis,gloria"]]
 	},
 	{
+		
+		"tags":[
+			["in-tempore-adventus","feria","completorii-preces"],
+			["cinerum","feria","completorii-preces"],
+			["in-tempore-quadragesimae","feria","completorii-preces"],
+			["in-tempore-passionis","feria","completorii-preces"],
+			["quatuor-tempora","feria","completorii-preces"]
+		],
+		"datum":"[Flexis genibus.]"
+	},
+	{
+		"tags":["completorii-preces"],
+		"datum":""
+	},
+	{
 		"tags":["completorium","preces"],
 		"datum":[
+			["rubricum","completorii-preces"],
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],
 			["credo-semisecreta"],

@@ -1,5 +1,11 @@
 [
 	{
+		"include":["antiphona-bmv","ii-vesperae","dominica"],
+		"response":[
+			{"include":["antiphona-bmv","i-vesperae"],"adde":"dominica","target":1}
+		]
+	},
+	{
 		"include":["antiphona-bmv","ii-vesperae"],
 		"recheck":false,
 		"response":"dele"
