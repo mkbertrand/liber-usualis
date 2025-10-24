@@ -192,7 +192,8 @@ def rite():
 
 		translation = {}
 
-	except:
+	except Exception as e:
+		print(e)
 		abort(500, error500tpl('Error incognitus.'))
 
 	try:
@@ -214,7 +215,8 @@ def rite():
 					for v in obj:
 						traverse(v)
 			traverse(rite['datum'])
-	except:
+	except Exception as e:
+		print(e)
 		abort(500, error500tpl('Error de interpretatione.'))
 
 	try:
@@ -228,7 +230,8 @@ def rite():
 			'usedprimary': primary,
 			'usednames': usednames
 			})
-	except:
+	except Exception as e:
+		print(e)
 		abort(500, error500tpl('Error incognitus.'))
 
 @get('/kalendar')

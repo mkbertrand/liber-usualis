@@ -319,6 +319,11 @@
 	margin-top: 0;
 }
 
+.rite-item {
+	margin: 0;
+	padding: 0;
+}
+
 .small-title {
 	color: red;
 	font-variant: small-caps;
@@ -327,10 +332,18 @@
 	margin-bottom: 0;
 }
 
+.section-header {
+	text-align: center;
+	color: red;
+	font-size: 22px;
+	font-variant: small-caps;
+	margin: 0;
+}
+
 .rite-text {
 	font-size: 20px;
-	line-height: 1.1;
-	margin-top: 14px;
+	line-height: 1.25;
+	margin-top: 7px;
 	margin-bottom: 14px;
 }
 
@@ -347,13 +360,12 @@
 	font-style: italic;
 }
 
-.section-header {
-	text-align: center;
+.rite-text-rubric {
+	font-size: 14px;
 	color: red;
-	font-size: 22px;
-	font-variant: small-caps;
-	margin: 0;
+	font-style: italic;
 }
+
 .item-header {
 	text-align: center;
 	color: red;
@@ -381,9 +393,9 @@
 
 .textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 	float: left;
-	font-size: 83px;
+	font-size: 94px;
 	font-weight: bold;
-	margin-right: 0.5rem;
+	margin-right: 0.3rem;
 	color: red;
 	line-height: 0;
 	initial-letter: 3;
@@ -391,9 +403,13 @@
 }
 
 .lectio-sequens::first-letter {
-	font-size: 57px !important;
+	font-size: 60px !important;
 	initial-letter: 2;
 	-webkit-initial-letter: 2;
+}
+
+.rubricum {
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 650px) {
