@@ -411,7 +411,7 @@ function render(data, chant) {
 				if (dived.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}</div>`;
 				}
-				return header + renderinner(data.datum, translated, data.tags.concat(parenttags));
+				return header + '<div class="compensatory-separator"></div>' + renderinner(data.datum, translated, data.tags.concat(parenttags));
 			} else {
 				return 'error';
 			}

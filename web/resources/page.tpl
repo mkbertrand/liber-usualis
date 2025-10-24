@@ -18,7 +18,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=27">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=28">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=12">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
@@ -38,7 +38,7 @@
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
 			% if page == 'pray':
-				% include(f'web/pages/{page}.tpl', ritegenversion='18', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
+				% include(f'web/pages/{page}.tpl', ritegenversion='19', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
 			% else:
 				% include(f'web/locales/{locale}/pages/{page}.html')
 

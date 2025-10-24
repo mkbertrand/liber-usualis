@@ -382,6 +382,10 @@
 	margin: 0;
 }
 
+.compensatory-separator {
+	height: 6px;
+}
+
 .aperi-domine, .sacrosanctae {
 	font-size: 16px;
 }
