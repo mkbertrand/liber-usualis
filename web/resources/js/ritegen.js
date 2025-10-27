@@ -392,7 +392,7 @@ function render(data, chant) {
 					if (data.tags.includes('antiphona-bmv')) {
 						header = makeheader('Antiphona B.M.V.');
 					}
-				} else if (data.tags.includes('versiculus') && !parenttags.includes('versiculus') && !parenttags.includes('commemorationes')) {
+				} else if (data.tags.includes('versiculus') && !parenttags.includes('versiculus') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-bmv')) {
 					header = makeheader('Versiculus');
 				} else if (data.tags.includes('martyrologium')) {
 					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[0]))} ${stringrender(unpack(data.datum[1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data.datum[2]))}</p>`;

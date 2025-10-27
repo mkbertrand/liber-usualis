@@ -29,8 +29,13 @@
 		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"],
 		"datum":[
 			["antiphona-bmv","alma-redemptoris","antiphona"],
-			"V. Ángelus Dómini nuntiávit Maríæ.",
-			"R. Et concépit de Spíritu sancto.",
+			{
+				"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem","versiculus"],
+				"datum":[
+					"V. Ángelus Dómini nuntiávit Maríæ.",
+					"R. Et concépit de Spíritu sancto."
+				]
+			},
 			"Orémus.",
 			"Grátiam tuam, quǽsumus Dómine, méntibus nostris infúnde, + ut qui, Ángelo nuntiánte, Christi Fílii tui Incarnatiónem cognóvimus, * per passiónem ejus et crucem ad resurrectiónis glóriam perducámur.",
 			["terminatio","per-eumdem-christum"]
@@ -40,8 +45,13 @@
 		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"],
 		"datum":[
 			["antiphona-bmv","alma-redemptoris","antiphona"],
-			"V. Post partum Virgo invioláta permansísti.",
-			"R. Dei Génitrix intercéde pro nobis.",
+			{
+				"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem","versiculus"],
+				"datum":[
+					"V. Post partum Virgo invioláta permansísti.",
+					"R. Dei Génitrix intercéde pro nobis."
+				]
+			},
 			"Orémus.",
 			"Deus, qui salútis ætérnæ beátæ Maríæ virginitáte fœcúnda, humáno géneri prǽmia præstitísti: tríbue, quǽsumus; ut ipsam pro nobis intercédere sentiámus, per quam merúimus auctórem vitæ suscípere Dóminum nostrum Jesum Christum Fílium tuum.",
 			"R. Amen."
@@ -61,8 +71,13 @@
 		"tags":["antiphona-bmv","ave-regina-coelorum"],
 		"datum":[
 			["antiphona-bmv","ave-regina-coelorum","antiphona"],
-			"V. Dignáre me laudáre te, Virgo sacráta.",
-			"R. Da mihi virtútem contra hostes tuos.",
+			{
+				"tags":["antiphona-bmv","ave-regina-coelorum","versiculus"],
+				"datum":[
+					"V. Dignáre me laudáre te, Virgo sacráta.",
+					"R. Da mihi virtútem contra hostes tuos."
+				]
+			},
 			"Orémus.",
 			"Concéde, misericórs Deus, fragilitáti nostræ præsídium: + ut qui sanctæ Dei Genitrícis memóriam ágimus, * intercessiónibus ejus auxílio, a nostris iniquitátibus resurgámus.",
 			["terminatio","per-eumdem-christum"]
@@ -82,8 +97,13 @@
 		"tags":["antiphona-bmv","regina-coeli"],
 		"datum":[
 			["antiphona-bmv","regina-coeli","antiphona"],
-			"V. Gaude et lætáre Virgo María, allelúja.",
-			"R. Quia surréxit Dóminus vere, allelúja.",
+			{
+				"tags":["antiphona-bmv","regina-coeli","versiculus"],
+				"datum":[
+					"V. Gaude et lætáre Virgo María, allelúja.",
+					"R. Quia surréxit Dóminus vere, allelúja."
+				]
+			},
 			"Orémus.",
 			"Deus, qui per resurrectiónem Fílii tui Dómini nostri Jesu Christi mundum lætificáre dignátus es: + præsta, quǽsumus; ut per ejus Genitrícem Vírginem Maríam * perpétuæ capiámus gaúdia vitæ.",
 			["terminatio","per-eumdem-christum"]
@@ -103,12 +123,16 @@
 		"tags":["antiphona-bmv","salve-regina"],
 		"datum":[
 			["antiphona-bmv","salve-regina","antiphona"],
-			"V. Ora pro nobis sancta Dei Génitrix.",
-			"R. Ut digni efficiámur promissiónibus Christi.",
+			{
+				"tags":["antiphona-bmv","salve-regina","versiculus"],
+				"datum":[
+					"V. Ora pro nobis sancta Dei Génitrix.",
+					"R. Ut digni efficiámur promissiónibus Christi."
+				]
+			},
 			"Orémus.",
 			"Omnípotens sempitérne Deus, qui gloriósæ Vírginis Matris Maríæ corpus et ánimam, ut dignum Fílii tui habitáculum éffici mererétur, Spíritu sancto cooperánte, præparásti: + da, ut, cujus commemoratióne lætámur, * ejus pia intercessióne, ab instántibus malis, et a morte perpétua liberémur.",
 			["terminatio","per-eumdem-christum"]
 		]
 	}
 ]
-

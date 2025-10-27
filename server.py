@@ -16,6 +16,7 @@ import argparse
 import re
 import os
 import json
+import traceback
 
 import breviarium
 import datamanage
@@ -72,8 +73,9 @@ def bouncetolocale():
 	locales = ['en']
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
+		locales.append('en')
 	finally:
-		return redirect(f'/{list(filter(lambda loc: loc in definedlocales, locales))[0]}/{page}')
+		return redirect(f'/{[loc for loc in locales if loc in definedlocales][0]}/{page}')
 
 @get('/en/<page>')
 @get('/de/<page>')
@@ -121,7 +123,7 @@ def daytags(vesperal = False):
 
 	pile = datamanage.getpile(root, flattensetlist(tags) | {'formulae'})
 
-	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+	primary = [i for i in tags if 'primarium' in i][0]
 	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
 	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(root, 'rank', a), reverse=True)]
 	votives = [['Officium Parvum B.M.V.', {'officium-parvum-bmv'}]]
@@ -176,14 +178,14 @@ def rite():
 		private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 		if private:
 			tags = [i | {'privata'} for i in tags]
-		primary = list(filter(lambda i: 'primarium' in i, tags))[0]
+		primary = [i for i in tags if 'primarium' in i][0]
 		tags.remove(primary)
 		pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
 
 		noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
 		if noending:
-			tags.append({'fidelium-animae', 'hoc-omissum'})
-			tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'})
+			tags.append({'fidelium-animae', 'hoc-omissum'} | set(hours))
+			tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'} | set(hours))
 		lit = []
 		for hour in hours:
 			lit.append({'ritus', hour})
@@ -193,6 +195,7 @@ def rite():
 		translation = {}
 
 	except Exception as e:
+		traceback.print_exc()
 		print(e)
 		abort(500, error500tpl('Error incognitus.'))
 
@@ -216,6 +219,7 @@ def rite():
 						traverse(v)
 			traverse(rite['datum'])
 	except Exception as e:
+		traceback.print_exc()
 		print(e)
 		abort(500, error500tpl('Error de interpretatione.'))
 
@@ -231,6 +235,7 @@ def rite():
 			'usednames': usednames
 			})
 	except Exception as e:
+		traceback.print_exc()
 		print(e)
 		abort(500, error500tpl('Error incognitus.'))
 
