@@ -379,7 +379,7 @@ p.rite-text {
 }
 
 .aperi-domine, .sacrosanctae {
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter {
