@@ -169,6 +169,12 @@ function stringrender(data) {
 	return data;
 };
 
+// Obvious
+function paragraphclosed(string) {
+	// Less than or equal because both equal implies value of -1 which implies no paragraphs at all
+	return string.lastIndexOf('</p') >= string.lastIndexOf('<p');
+}
+
 riteheaders = {
 	'matutinum': 'Ad Matutinum',
 	'laudes': 'Ad Laudes',
@@ -197,7 +203,7 @@ function render(data, chant) {
 	translationpool = data.translation;
 	names = data['usednames'];
 
-	function renderinner(data, translated = null, parenttags, delin = 'span') {
+	function renderinner(data, translated = null, parenttags) {
 		try {
 			if (translationpool != null && typeof data === 'object' && 'tags' in data) {
 				tags = data.tags;
@@ -211,9 +217,13 @@ function render(data, chant) {
 			if (typeof data === 'object' && Array.isArray(data)) {
 				let ret = '';
 				for (let i = 0, count = data.length; i < count; i++) {
-					plus = renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, parenttags, delin=delin);
-					if (delin != 'p' && ret.endsWith('</p>') && plus != '' && !plus.startsWith('<p')) {
-						ret += '<p class="rite-text">';
+					plus = renderinner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, parenttags);
+					// Obvious function but the reason is that the start of a paragraph may be specified without saying where it should end (intended functionality)
+					if (plus.startsWith('<p') && !paragraphclosed(ret)) {
+						ret += '</p>';
+					}
+					if (!plus.startsWith('<div') && paragraphclosed(ret) && !(plus.startsWith('<p') || plus.startsWith('<h'))) {
+						ret += `<p class="rite-text ${parenttags.join(' ')}">`;
 					}
 					ret += plus;
 				};
@@ -230,13 +240,13 @@ function render(data, chant) {
 						renderedsplit = rendered.split('<br>');
 						translationsplit = stringrender(translated).split('<br>');
 						for (var i = 0; i < renderedsplit.length; i++) {
-							ret += `<${delin} class="rite-text ${parenttags.join(' ')} with-translation">${renderedsplit[i]}</${delin}>` + (translationsplit[i] == '' ? '' : `<br><${delin} class="rite-text-translation">${translationsplit[i]}</${delin}>`) + (delin == 'span' ? '<br>' : '');
+							ret += renderedsplit[i] + (translationsplit[i] == '' ? '' : `<br><span class="rite-text-translation">${translationsplit[i]}</span><br>`);
 						}
 						return ret;
 					}
-					return `<${delin} class="rite-text ${parenttags.join(' ')} with-translation">${stringrender(data)}</${delin}>` + (translated == '' ? '' : `<br><${delin} class="rite-text-translation">${stringrender(translated)}</${delin}>`) + (delin == 'span' ? '<br>' : '');
+					return stringrender(data) + (translated == '' ? '' : `<br><span class="rite-text-translation">${stringrender(translated)}</span><br>`);
 				} else {
-					return `<${delin} class="rite-text ${parenttags.join(' ')}">${stringrender(data)}</${delin}>` + (delin == 'span' ? '<br>' : '');
+					return stringrender(data) + '<br>';
 				}
 
 			} else if (typeof data === 'object' && 'tags' in data) {
@@ -400,18 +410,33 @@ function render(data, chant) {
 				}
 
 				if (data.tags.includes('hymnus') && !parenttags.includes('hymnus')) {
-					return `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(unpack(data.datum), translated, data.tags.concat(parenttags), delin='p')}</div>`;
+					return `${header}<div class="rite-item ${data.tags.join(' ')}">` + unpack(data.datum).map((par) => `<p class="rite-text ${data.tags.join(' ')}">${renderinner(par, translated, data.tags.concat(parenttags))}</p>`).join('') + '</div>';
 				}
-				paragraphed = ['aperi-domine', 'pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'sacrosanctae', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
-				if (paragraphed.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
-					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
-					return ret == '' ? '' : `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}</p>`;
-				}
+
 				dived = ['ritus', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
-					return `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}</div>`;
+					ret = `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}`;
+					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 				}
-				return header + '<div class="compensatory-separator"></div>' + renderinner(data.datum, translated, data.tags.concat(parenttags));
+
+				closeparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
+				if (closeparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
+					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
+					if (ret == '') {
+						return '';
+					}
+					if (!ret.startsWith('<p')) {
+						ret = `<p class="rite-text ${data.tags.join(' ')}">` + ret;
+					}
+					return `${header}${ret}</p>`;
+				}
+
+				openparagraph = ['capitulum'];
+				if (openparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
+					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
+					return ret == '' ? '' : `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}`;
+				}
+				return header + renderinner(data.datum, translated, data.tags.concat(parenttags));
 			} else {
 				return 'error';
 			}

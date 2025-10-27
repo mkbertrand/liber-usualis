@@ -340,15 +340,11 @@
 	margin: 0;
 }
 
-.rite-text {
+p.rite-text {
 	font-size: 20px;
 	line-height: 1.25;
 	margin-top: 7px;
 	margin-bottom: 14px;
-}
-
-.with-translation {
-	margin-bottom: 6px;
 }
 
 .rite-text-translation {
@@ -380,10 +376,6 @@
 	font-size: 18px;
 	font-variant: small-caps;
 	margin: 0;
-}
-
-.compensatory-separator {
-	height: 6px;
 }
 
 .aperi-domine, .sacrosanctae {
