@@ -322,6 +322,7 @@
 .rite-item {
 	margin: 0;
 	padding: 0;
+	font-size: 20px;
 }
 
 .small-title {
@@ -340,8 +341,7 @@
 	margin: 0;
 }
 
-p.rite-text {
-	font-size: 20px;
+.rite-text {
 	line-height: 1.25;
 	margin-top: 7px;
 	margin-bottom: 14px;

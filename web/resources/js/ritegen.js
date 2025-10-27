@@ -413,7 +413,7 @@ function render(data, chant) {
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">` + unpack(data.datum).map((par) => `<p class="rite-text ${data.tags.join(' ')}">${renderinner(par, translated, data.tags.concat(parenttags))}</p>`).join('') + '</div>';
 				}
 
-				dived = ['ritus', 'collecta-primaria', 'formula-commemorationis']
+				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					ret = `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}`;
 					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
