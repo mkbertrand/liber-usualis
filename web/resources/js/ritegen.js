@@ -395,16 +395,20 @@ function render(data, chant) {
 				} else if (data.tags.includes('versiculus') && !parenttags.includes('versiculus') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-bmv')) {
 					header = makeheader('Versiculus');
 				} else if (data.tags.includes('martyrologium')) {
-					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[0]))} ${stringrender(unpack(data.datum[1]))}</p><p class="rite-text martyrologium">${stringrender(unpack(data.datum[2]))}</p>`;
+					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[0]))} ${stringrender(unpack(data.datum[1]))}</p>`;
+					prae = unpack(data.datum[2]);
+					if (prae != '') {
+						ret += `<p class="rite-text martyrologium">${stringrender(prae)}</p>`;
+					}
 					martyrology = unpack(data.datum[3]);
 					if (typeof martyrology === 'string') {
-						ret += `<p class="rite-text martyrologium">${martyrology}</p>`;
+						ret += `<p class="rite-text martyrologium">${stringrender(martyrology)}</p>`;
 					} else {
 						for (i of unpack(data.datum[3])) {
 							ret += `<p class="rite-text martyrologium">${stringrender(i)}</p>`;
 						}
 					}
-					data.datum = ret + `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[4]))}<br>${stringrender(unpack(data.datum[5]))}</p>`;
+					return ret + `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[4]))}<br>${stringrender(unpack(data.datum[5]))}</p>`;
 				} else if (['antiphona-bmv', 'antiphona'].every((tag) => data.tags.includes(tag)) && parenttags.includes('completorium')) {
 					header = makeheader('Antiphona B.M.V.');
 				}
@@ -419,7 +423,7 @@ function render(data, chant) {
 					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 				}
 
-				closeparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
+				closeparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
 				if (closeparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
