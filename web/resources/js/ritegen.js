@@ -195,7 +195,8 @@ headers = {
 	'preces': 'Preces',
 	'confiteor': 'Confiteor',
 	'collecta-primaria': 'Collecta',
-	'sacrosanctae': 'Sacrosanctæ'
+	'sacrosanctae': 'Sacrosanctæ',
+	'invitatorium': 'Invitatorium'
 };
 
 function render(data, chant) {
@@ -222,7 +223,7 @@ function render(data, chant) {
 					if (plus.startsWith('<p') && !paragraphclosed(ret)) {
 						ret += '</p>';
 					}
-					if (!plus.startsWith('<div') && paragraphclosed(ret) && !(plus.startsWith('<p') || plus.startsWith('<h'))) {
+					if (paragraphclosed(ret) && !(plus.startsWith('<div') || plus.startsWith('<p') || plus.startsWith('<h'))) {
 						ret += `<p class="rite-text ${parenttags.join(' ')}">`;
 					}
 					ret += plus;
