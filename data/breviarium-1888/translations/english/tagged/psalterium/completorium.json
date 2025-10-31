@@ -26,12 +26,39 @@
 		"versus":"Thou hast redeemed us, O Lord God of truth."
 	},
 	{
+		"tags":["completorium","versiculus"],
+		"datum":["V. Keep us, O Lord, as the apple of the eye.","R. Hide us under the shadow of Thy wings."]
+	},
+	{
 		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
 		"datum":"O Lord, keep us * waking, guard us sleeping: that we may wake with Christ and rest in peace."
 	},
 	{
 		"tags":["completorium","collecta"],
 		"datum":"Visit, we beseech Thee, O Lord, this habitation, and drive far from it all snares of the enemy: let Thine holy Angels dwell herein, to keep us in peace, and may Thy blessing be always upon us."
+	},
+	{
+		"tags":["completorium","preces"],
+		"datum":[
+			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			"",
+			"",
+			"V. Blessed art Thou, O Lord God of our fathers,",
+			"R. And to be praised and glorified above all for ever.",
+			"V. Bless we the Father, and the Son, and the Holy Ghost.",
+			"R.  Let us praise and exalt Him above all for ever.",
+			"V. Blessed art Thou, O Lord, in the firmament of heaven,",
+			"R. And to be praised, and glorified, and exalted above all for ever.",
+			"V. May the Lord, the Almighty and merciful, bless and keep us.",
+			"R. Amen.",
+			"V. Vouchsafe, O Lord, this night,",
+			"R. To keep us without sin.",
+			"V. Have mercy upon us, O Lord.",
+			"R. Have mercy on us.",
+			"V. O Lord, let Thy mercy lighten upon us.",
+			"R. As our trust is in Thee.",
+			""
+		]
 	},
 	{
 		"tags":["completorium","benedictio-finalis"],

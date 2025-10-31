@@ -25,6 +25,10 @@
 		"datum":"Hail Mary, full of grace, the Lord is with thee: blessed art thou among women, and blessed is the fruit of thy womb Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen."
 	},
 	{
+		"tags":["credo-secreta"],
+		"datum":"I believe in God the Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord ; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins, the Resurrection of the body. And the Life everlasting. Amen."
+	},
+	{
 		"tags":["deus-in-adjutorium"],
 		"datum":[
 			"Make haste, O God, to deliver us.",
@@ -66,6 +70,13 @@
 	{
 		"tags":["per-dominum"],
 		"datum":["Through our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","Amen."]
+	},
+	{
+		"tags":["per-eumdem-christum"],
+		"datum":[
+			"Through the same Christ our Lord.",
+			"R. Amen."
+		]
 	},
 	{
 		"tags":["formula","commemoratio"],
@@ -116,6 +127,31 @@
 			"Amen.",
 			"May the Almighty and merciful Lord grant us pardon, absolution, and remission of all our sins.",
 			"Amen."
+		]
+	},
+	{
+		"tags":["pater-noster-semisecreta"],
+		"datum":[
+			"Our Father.",
+			"Who art in heaven: hallowed be thy name: thy kingdom come: thy will be done, on earth as it is in heaven. Give us this day our daily bread: and forgive us our trespasses, as we forgive those who trespass against us:",
+			"V. And lead us not into templation.",
+			"R. But deliver us from evil."
+		]
+	},
+	{
+		"tags":["credo-semisecreta"],
+		"datum":[
+			"I believe.",
+			"In God the Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord ; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins,",
+			"V. The Resurrection of the body.",
+			"R. And the Life everlasting. Amen."
+		]
+	},
+	{
+		"tags":["divinum-auxilium"],
+		"datum":[
+			"God's most mighty strength alway Be His people's staff and stay.",
+			"R. Amen."
 		]
 	}
 ]
