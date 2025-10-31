@@ -62,6 +62,7 @@
 	},
 	{
 		"tags":["omnes-sancti","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1991",
 		"datum":"Ángeli, * Archángeli, Throni et Dominatiónes, Principátus et Potestátes, Virtútes cœlórum, Chérubim atque Séraphim, Patriárchæ et Prophétæ, sancti legis Doctóres, Apóstoli, omnes Christi Mártyres, sancti Confessóres, Vírgines Dómini, Anachorítæ, Sanctíque omnes intercédite pro nobis."
 	},
 	{
@@ -71,10 +72,12 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/1101I",
 		"datum":"Regem regum Dóminum veníte adorémus: * Quia ipse est coróna Sanctórum ómnium."
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/1101N1A1",
 		"datum":"Novit Dóminus * viam justórum, qui in lege ejus meditántur die ac nocte."
 	},
 	{
@@ -83,6 +86,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/1101N1A2",
 		"datum":"Mirificávit Dóminus * Sanctos suos, et exaudívit eos clamántes ad se."
 	},
 	{
@@ -91,6 +95,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/1101N1A3",
 		"datum":"Admirábile est * nomen tuum Dómine: quia glória et honóre coronásti Sanctos tuos, et constituísti eos super ópera mánuum tuárum."
 	},
 	{
@@ -136,6 +141,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/1101N2A1",
 		"datum":"Dómine, * qui operáti sunt justítiam, habitábunt in tabernáculo tuo, et requiéscent in monte sancto tuo."
 	},
 	{
@@ -144,6 +150,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1101N2A2",
 		"datum":"Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob."
 	},
 	{
@@ -152,6 +159,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/1101N2A3",
 		"datum":"Lætámini in Dómino, * et exsultáte justi, et gloriámini omnes recti corde."
 	},
 	{
@@ -197,6 +205,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/1101N3A1",
 		"datum":"Timéte Dóminum * omnes Sancti ejus, quóniam nihil deest timéntibus eum: ecce óculi Dómini super justos, et aures ejus ad preces eórum."
 	},
 	{
@@ -205,6 +214,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1101N3A2",
 		"datum":"Dómine * spes Sanctórum, et turris fortitúdinis eórum dedísti hæreditátem timéntibus nomen tuum, et habitábunt in tabernáculo tuo in sǽcula."
 	},
 	{
@@ -213,6 +223,7 @@
 	},
 	{
 		"tags":["omnes-sancti","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/1101N3A3",
 		"datum":"Qui dilígitis Dóminum, * lætámini in Dómino, et confitémini memóriæ sanctitátis ejus."
 	},
 	{
@@ -319,5 +330,9 @@
 		"tags":["omnes-sancti","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2216",
 		"datum":"O quam gloriósum * est regnum in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit."
+	},
+	{
+		"tags":["omnes-sancti","infra-octavam","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens"]]
 	}
 ]
