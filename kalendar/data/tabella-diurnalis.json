@@ -85,5 +85,11 @@
 			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
 			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
+	},
+	{
+		"include":["infra-octavam","commemoratio"],
+		"response":"duplicate",
+		"remove":"commemoratio",
+		"adde":["prima","preces"]
 	}
 ]

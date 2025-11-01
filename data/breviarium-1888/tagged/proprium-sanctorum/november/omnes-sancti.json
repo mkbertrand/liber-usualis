@@ -24,7 +24,7 @@
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iii"],
 		"src":"gregobase/1999",
-		"datum":"Redemísti nos * Dómine Deus in sánguine tuo ex omni tribu, et linqua, et pópulo, et natióne, et fecísti nos Deo nostro regnum."
+		"datum":"Redemísti nos * Dómine Deus in sánguine tuo ex omni tribu, et lingua, et pópulo, et natióne, et fecísti nos Deo nostro regnum."
 	},
 	{
 		"tags":["omnes-sancti","antiphona","antiphona-iv"],
@@ -53,7 +53,7 @@
 			"Vos purpuráti Mártyres,/Vos candidáti prǽmio/Confessiónis, éxsules/Vocáte nos in pátriam.",
 			"Choréa casta Vírginum,/Et quos erémus íncolas/Transmísit astris, cœ\u0301litum/Locáte nos in sédibus.",
 			"Auférte gentem pérfidam/Credéntium de fínibus,/Ut unus omnes únicum/Ovíle nos pastor regat.",
-			"Deo Patri sit glória,/Natóque Patris único,Sancto simul Paráclito,In sempitérna sǽcula.","Amen."
+			"Deo Patri sit glória,/Natóque Patris único,/Sancto simul Paráclito,/In sempitérna sǽcula.","Amen."
 		]
 	},
 	{
@@ -334,5 +334,25 @@
 	{
 		"tags":["omnes-sancti","infra-octavam","matutinum","nocturna-i","lectio"],
 		"datum":[["temporale","occurrens"]]
+	},
+	{
+		"tags":["omnes-sancti","dies-ii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne Venerábilis Bedæ Presbýteri.",
+			"Quam laxo sinu de prǽlio reverténtes cívitas cœléstis éxcipit, de hoste prostráto trophǽa feréntibus occúrrit. Cum triumphántibus viris et féminæ véniunt, quæ cum sǽculo sexum quoque vicérunt, et gemináta glória milítiæ, vírgines cum púeris téneros annos virtútibus transeúntes: sed et cétera fidélium turba aulæ perpétuæ régiam intrábit, qui sinceritátem fídei inconcússis præceptórum cœléstium disciplínis uníta pace observavérunt."
+		],
+		"lectio-ii":"Ergo ágite nunc fratres, aggrediámur iter vitæ, revertámur ad civitátem cœléstem, in qua scripti sumus, et cives decréti. Non sumus hóspites, sed cives Sanctórum et doméstici Dei, étiam illíus hærédes, cohærédes autem Christi. Hujus nobis urbis jánuas apériet fortitúdo, et fidúcia latum præbébit ingréssum. Considerémus ergo ínclytam urbis illíus felicitátem, in quantum consideráre possíbile est: ut enim vere est, comprehéndere nullus sermo suffíciet.",
+		"lectio-iii":"Dícitur de ea in quodam loco sic, Quod aufúgiet ibi dolor, et tristítia, et gémitus. Quid hac vita beátius, ubi non est paupertátis metus, non ægritúdinis imbecíllitas? Nemo lædétur, irascétur nemo, nemo ínvidet, cupíditas nulla exardéscit: nullum ibi desidérium honóris pulsat, aut potestátis ambítio. Nullus ibi diáboli metus, insídiæ dǽmonum nullæ, terror gehénnæ procul: mors neque córporis neque ánimæ erit, sed immortalitátis múnere vita jucúnda."
+	},
+	{
+		"tags":["omnes-sancti","dies-ii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"In illo témpore: Videns Jesus turbas, ascéndit in montem, et cum sedísset, accessérunt ad eum discípuli ejus. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"Nec aliúnde omníno incípere opórtuit beatitúdinem, quam a paupertáte spíritus, síquidem perventúra est ad summam sapiéntiam. Inítium autem sapiéntiæ timor Dómini: quóniam et e contrário, Inítium omnis peccáti supérbia scríbitur. Supérbi autem áppetunt et díligunt regna terrárum. Beáti mites: quóniam ipsi hæreditáte possidébunt terram: illam credo terram, de qua in Psalmo dícitur: Spes mea es tu, pórtio mea in terra vivéntium. Signíficat enim quamdam soliditátem et stabilitátem hæreditátis perpétuæ, ubi ánima per bonum afféctum, tamquam loco suo requiéscit, sicut corpus in terra: et inde cibo suo álitur, sicut corpus ex terra: ipsa est réquies et vita Sanctórum. Mites autem sunt, qui cedunt improbitátibus, et non resístunt malo, sed vincunt in bono malum."
+		],
+		"lectio-ii":"Beáti lugéntes: quóniam ipsi consolabúntur. Luctus est tristítia de amissióne carórum: convérsi autem ad Deum, ea, quæ in hoc mundo cara amplectebántur, amíttunt. Non enim gaudent his rebus, quibus ante gaudébant: et donec fiat in illis amor æternórum, nonnúlla mœstítia sauciántur. Consolabúntur ergo Spíritu sancto, qui máxime proptérea Paráclitus nominátur, id est Consolátor: ut temporália amitténtes, ætérna lætítia perfruántur.",
+		"lectio-iii":"Beáti qui esúriunt et sítiunt justítiam: quóniam ipsi saturabúntur. Jam istos amatóres dicit veri et inconcússi boni. Illo ergo cibo saturabúntur, de quo ipse Dóminus dicit: Meus cibus est, ut fáciam voluntátem Patris mei, quod est justítia: et illa aqua, de qua quisquis bíberit, ut idem dicit, fiet in eo fons aquæ saliéntis in vitam ætérnam. Beáti misericórdes: quóniam ipsórum miserébitur Deus. Beátos esse dicit, qui subvéniunt míseris: quod eis ita repénditur, ut de miséria liberéntur."
 	}
 ]

@@ -556,5 +556,11 @@
 		"response":[
 			{"include":["joanna-francisca","ii-vesperae","psalmi"],"response":"dele","target":1}
 		]
+	},
+	{
+		"include":["infra-octavam","commemoratio"],
+		"response":"duplicate",
+		"remove":"commemoratio",
+		"adde":["completorium","preces"]
 	}
 ]
