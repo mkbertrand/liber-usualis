@@ -273,11 +273,12 @@ def error500(error):
 
 parser = argparse.ArgumentParser(description='Server')
 parser.add_argument('-o', '--output', action='store_true', help='Display output in command line instead of in log file')
+parser.add_argument('-a', '--addr', default='localhost', help='Set host address (only applies when -o is set)')
 args = parser.parse_args()
 
 if args.output:
 	from bottle import run
-	run(host='localhost', port=8080)
+	run(host=args.addr, port=8080)
 else:
 	from requestlogger import WSGILogger, ApacheFormatter
 	waitress.serve(WSGILogger(
