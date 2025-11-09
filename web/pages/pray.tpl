@@ -1,5 +1,6 @@
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
+<script type="text/javascript" src="/resources/js/pray.js?v={{ritegenversion}}"></script>
 <script type="text/javascript" src="/resources/js/ritegen.js?v={{ritegenversion}}"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="/resources/js/exsurge.js"></script>
@@ -22,6 +23,9 @@
 	initialized: false,
 	dayinitialized: false,
 	get Rite() {
+		if (panelsopen) {
+			$nextTick(() => generatepanels());
+		}
 		return this.rite;
 	},
 	setDate(date) {
@@ -147,6 +151,7 @@
 		}
 	}
 }" x-init="
+	dopanelsize();
 	if ('{{locale}}' == 'la') {
 		translation = false;
 	}
@@ -254,4 +259,5 @@
 	</div>
 	<div id="side-panel-right" :class="color">
 	</div>
+	<div id="size-change-listener" x-resize="dopanelsize()"></div>
 </div>

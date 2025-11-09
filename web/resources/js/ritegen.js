@@ -196,7 +196,8 @@ headers = {
 	'confiteor': 'Confiteor',
 	'collecta-primaria': 'Collecta',
 	'sacrosanctae': 'Sacrosanctæ',
-	'invitatorium': 'Invitatorium'
+	'invitatorium': 'Invitatorium',
+	'haec-dies': 'Antiphona'
 };
 
 function render(data, chant) {
@@ -341,16 +342,16 @@ function render(data, chant) {
 					if (!(typeof data.datum === 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('commemoratio-matutini'))) {
 						// For the first reading from a Homily
 						if (Array.isArray(reading) && reading[0].includes('Evangélii')) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[3])}</p>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[3])}<br>`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[1])}</p>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[1])}<br>`
 						} else if (!btags.includes('lectio-i')) {
 							if (Array.isArray(reading)) { reading = reading.join('<br>')};
-							return `<p class="rite-text lectio-sequens ${data.tags.join(' ')}">${stringrender(reading)}</p>`
+							return `<p class="rite-text lectio-sequens ${data.tags.join(' ')}">${stringrender(reading)}<br>`
 						} else {
 							if (Array.isArray(reading)) { reading = reading.join('<br>')};
-							return `<p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading)}</p>`
+							return `<p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading)}<br>`
 						}
 					}
 
@@ -371,10 +372,6 @@ function render(data, chant) {
 					data.datum = data.datum.substring(data.datum.indexOf('\n') + 1).replace(/^\d+\s/, '').split('\n');
 					translated = translated == null ? null : translated.split('\n').slice(1);
 					data.tags.push('textus-psalmi');
-
-				// For Easter when the Hæc dies is inserted in the place of the Chapter
-				} else if (data.tags.includes('capitulum') && typeof data.datum === 'object' && 'tags' in data.datum && data.datum.tags.includes('haec-dies')) {
-					header = makeheader('Antiphona');
 
 				} else if (data.tags.includes('nocturna')) {
 					if (data.tags.includes('nocturna-i')) {
@@ -415,6 +412,9 @@ function render(data, chant) {
 				}
 
 				if (data.tags.includes('hymnus') && !parenttags.includes('hymnus')) {
+					if (unpack(data.datum) == '') {
+						return '';
+					}
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">` + unpack(data.datum).map((par) => `<p class="rite-text ${data.tags.join(' ')}">${renderinner(par, translated, data.tags.concat(parenttags))}</p>`).join('') + '</div>';
 				}
 
@@ -424,8 +424,8 @@ function render(data, chant) {
 					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 				}
 
-				closeparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
-				if (closeparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
+				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
+				if (fullparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
 						return '';
@@ -436,7 +436,7 @@ function render(data, chant) {
 					return `${header}${ret}</p>`;
 				}
 
-				openparagraph = ['capitulum'];
+				openparagraph = ['capitulum', 'absolutio'];
 				if (openparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					return ret == '' ? '' : `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}`;
@@ -454,13 +454,3 @@ function render(data, chant) {
 
 	return renderinner(data['rite'], null, []);
 };
-
-function translation(locale) {
-	if (locale == 'en') {
-		return ['english'];
-	} else if (locale == 'de') {
-		return ['deutsch'];
-	} else {
-		return ['english'];
-	}
-}
