@@ -41,7 +41,7 @@
 		"datum":"Lápides pretiósi * omnes muri tui, et turres Jerúsalem gemmis ædificabúntur."
 	},
 	{
-		"tags":["dedicatio","i-vesperae","psalmus-v"],
+		"tags":["dedicatio","vesperae","psalmus-v"],
 		"datum":[["/psalmi/psalmus-cxlvii,gloria"]]
 	},
 	{
@@ -346,10 +346,6 @@
 	{
 		"tags":["dedicatio","nona","versiculus"],
 		"datum":["V. Bene fundáta est domus Dómini.","R. Supra firmam petram."]
-	},
-	{
-		"tags":["dedicatio","ii-vesperae","psalmus-v"],
-		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
 		"tags":["dedicatio","ii-vesperae","antiphona","antiphona-magnificat"],
