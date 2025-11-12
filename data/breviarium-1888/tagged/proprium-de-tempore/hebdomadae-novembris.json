@@ -12,7 +12,10 @@
 		]
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomadae-novembris","feria","feria-v","matutinum","responsorium","responsorium-i"]
+		],
 		"incipit":"Vidi Dóminum sedéntem super sólium excélsum et elevátum: et plena erat omnis terra majestáte ejus:",
 		"responsum":"Et ea quæ sub ipso erant, replébant templum.",
 		"versus":"Séraphim stabant super illud: sex alæ uni, et sex alæ álteri."
@@ -22,7 +25,10 @@
 		"datum":"Et in médio ejus similitúdo quátuor animálium: et hic aspéctus eórum, similitúdo hóminis in eis. Quátuor fácies uni, et quátuor pennæ uni. Pedes eórum pedes recti, et planta pedis eórum quasi planta pedis vítuli, et scintíllæ quasi aspéctus æris candéntis. Et manus hóminis sub pennis eórum in quátuor pártibus: et fácies, et pennas per quátuor partes habébant. Junctǽque erant pennæ eórum altérius ad álterum: non revertebántur cum incéderent: sed unumquódque ante fáciem suam gradiebátur."
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomadae-novembris","feria","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
 		"incipit":"Áspice Dómine de sede sancta tua, et cógita de nobis: inclína Deus meus aurem tuam, et audi:",
 		"responsum":"Áperi óculos tuos, et vide tribulatiónem nostram.",
 		"versus":"Qui regis Ísraël, inténde, qui dedúcis velut ovem Joseph."
@@ -32,7 +38,10 @@
 		"datum":"Similitúdo autem vultus eórum: fácies hóminis, et fácies leónis a dextris ipsórum quátuor: fácies autem bovis, a sinístris ipsórum quátuor, et fácies áquilæ désuper ipsórum quátuor. Fácies eórum, et pennæ eórum exténtæ désuper: duæ pennæ singulórum jungebántur, et duæ tegébant córpora eórum: et unumquódque eórum coram fácie sua ambulábat: ubi erat ímpetus spíritus, illuc gradiebántur, nec revertebántur cum ambulárent."
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomadae-novembris","feria","feria-v","matutinum","responsorium","responsorium-iii"]
+		],
 		"incipit":"Áspice Dómine, quia facta est desoláta cívitas plena divítiis, sedet in tristítia dómina Géntium:",
 		"responsum":"Non est qui consolétur eam, nisi tu Deus noster.",
 		"versus":"Plorans plorávit in nocte, et lácrimæ ejus in maxíllis ejus."
@@ -45,7 +54,10 @@
 		]
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomadae-novembris","feria","feria-vi","matutinum","responsorium","responsorium-i"]
+		],
 		"incipit":"Super muros tuos Jerúsalem constítui custódes:",
 		"responsum":"Tota die et nocte non tacébunt laudáre nomen Dómini.",
 		"versus":"Prædicábunt pópulis fortitúdinem meam, et annuntiábunt Géntibus glóriam tuam."
@@ -55,7 +67,10 @@
 		"datum":"Sed prima quǽstio nobis óritur, cur is qui nihil adhuc díxerat, ita exórsus est, dicens: Et factum est in trigésimo anno. Et, namque sermo conjunctiónis est: et scimus, quia non conjúngitur sermo súbsequens, nisi sermóni præcedénti. Qui ígitur nihil díxerat, cur dicit, Et factum est: cum non sit sermo, cui hoc quod íncipit, subjúngat? Qua in re intuéndum est, quia sicut nos corporália, sic Prophétæ sensu spiritália aspíciunt: eísque et illa sunt præséntia, quæ nostræ ignorántiæ abséntia vidéntur. Unde fit, ut in mente Prophetárum ita conjúncta sint exterióribus interióra, quátenus simul útraque vídeant: simúlque in eis fiat et intus verbum quod aúdiunt, et foris quod dicunt."
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomadae-novembris","feria","feria-vi","matutinum","responsorium","responsorium-ii"]
+		],
 		"incipit":"Muro tuo inexpugnábili circumcínge nos Dómine, et armis tuæ poténtiæ prótege nos semper:",
 		"responsum":"Líbera Dómine Deus Ísraël clamántes ad te.",
 		"versus":"Érue nos in mirabílibus tuis, et da glóriam nómini tuo."
@@ -65,21 +80,22 @@
 		"datum":"Patet ígitur causa, cur qui nihil díxerat, inchoávit, dicens: Et factum est in tricésimo anno: quia hoc verbum quod foris prótulit, illi verbo quod intus audíerat, conjúnxit. Continuávit ergo verba quæ prótulit visióni íntimæ, et idcírco íncipit, dicens: Et factum est. Subjúnxit enim hoc quod extérius loqui ínchoat: ac si et illud foris sit, quod intus vidit. Hoc autem quod dícitur, quia in tricésimo anno spíritum prophetíæ accéperit, índicat áliquid nobis considerándum: vidélicet quia juxta ratiónis usum, doctrínæ sermo non súppetit, nisi in ætáte perfécta. Unde et ipse Dóminus anno duodécimo ætátis suæ in médio doctórum in templo sedens, non docens, sed intérrogans vóluit inveníri."
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomadae-novembris","feria","feria-vi","matutinum","responsorium","responsorium-iii"]
+		],
 		"incipit":"Sustinúimus pacem, et non venit: quæsívimus bona, et ecce turbátio: cognóvimus Dómine peccáta nostra:",
 		"responsum":"Non in perpétuum obliviscáris nos.",
 		"versus":"Peccávimus, ímpie géssimus, iniquitátem fécimus Dómine in omnem justítiam tuam."
 	},
 	{
-		"tags":["liber-ezechielis","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"tags":[
+			["hebdomadae-novembris","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomadae-novembris","feria","sabbatum","matutinum","responsorium","responsorium-i"]
+		],
 		"incipit":"Laudábilis pópulus,",
 		"responsum":"Quem Dóminus exercítuum benedíxerit, dicens: Opus mánuum meárum tu es, hæréditas mea Ísraël.",
 		"versus":"Beáta gens, cujus est Dóminus Deus, pópulus eléctus in hæreditátem."
-	},
-	{
-		"tags":["liber-ezechielis","dies-viii-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2265",
-		"datum":"Áspice Dómine * quia facta est desoláta cívitas plena divítiis: sedet in tristítia dómina Géntium: non est qui consolétur eam, nisi tu Deus noster."
 	},
 	{
 		"tags":["liber-ezechielis","dies-ii-libri","matutinum","lectio","lectio-i"],
@@ -89,7 +105,7 @@
 		]
 	},
 	{
-		"tags":["liber-ezechielis","feria","feria-ii","matutinum","responsorium","responsorium-i"],
+		"tags":["hebdomadae-novembris","feria","feria-ii","matutinum","responsorium","responsorium-i"],
 		"incipit":"Redémit pópulum tuum, et liberávit eum: et vénient, et exsultábunt in monte Sion: et gaudébunt de bonis Dómini super fruménto, vino, et óleo:",
 		"responsum":"Et ultra non esúrient.",
 		"versus":"Erítque ánima eórum quasi hortus irríguus."
@@ -99,7 +115,11 @@
 		"datum":"Tu ergo fili hóminis ne tímeas eos, neque sermónes eórum métuas: quóniam incréduli et subversóres sunt tecum, et cum scorpiónibus hábitas. Verba eórum ne tímeas, et vultus eórum ne formídes: quia domus exásperans est. Loquéris ergo verba mea ad eos, si forte aúdiant, et quiéscant: quóniam irritatóres sunt."
 	},
 	{
-		"tags":["liber-ezechielis","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"tags":[
+			["hebdomadae-novembris","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
+			["hebdomadae-novembris","feria","feria-iv","matutinum","responsorium","responsorium-ii"],
+			["hebdomadae-novembris","feria","sabbatum","matutinum","responsorium","responsorium-ii"]
+		],
 		"incipit":"Angústiæ mihi sunt úndique, et quid éligam ignóro.",
 		"responsum":"Mélius est mihi incídere in manus hóminum, quam derelínquere legem Dei mei.",
 		"versus":"Si enim hoc égero, mors mihi est: si autem non égero, non effúgiam manus vestras."
@@ -109,7 +129,11 @@
 		"datum":"Tu autem fili hómini audi quæcúmque loquor ad te: et noli esse exásperans sicut domus exasperátrix est: áperi os tuum et cómede quæcúmque ego do tibi. Et vidi, et ecce manus missa ad me, in qua erat involútus liber: et expándit illum coram me, qui erat scriptus intus, et foris: et scriptæ erant in eo lamentatiónes, et carmen, et væ."
 	},
 	{
-		"tags":["liber-ezechielis","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
+		"tags":[
+			["hebdomadae-novembris","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
+			["hebdomadae-novembris","feria","feria-iv","matutinum","responsorium","responsorium-iii"],
+			["hebdomadae-novembris","feria","sabbatum","matutinum","responsorium","responsorium-iii"]
+		],
 		"incipit":"Misit Dóminus Ángelum suum, et conclúsit ora leónum:",
 		"responsum":"Et contaminavérunt: quia coram eo injustítia invénta non est in me.",
 		"versus":"Misit Deus misericórdiam suam, et veritátem suam: ánimam meam erípuit de médio catulórum leónum."
@@ -122,7 +146,7 @@
 		]
 	},
 	{
-		"tags":["liber-ezechielis","feria","feria-iii","matutinum","responsorium","responsorium-i"],
+		"tags":["hebdomadae-novembris","feria","feria-iii","matutinum","responsorium","responsorium-i"],
 		"incipit":"A fácie furóris tui Deus conturbáta est omnis terra:",
 		"responsum":"Sed miserére Dómine, et ne fácias consummatiónem.",
 		"versus":"Dómine Dóminus noster, quam admirábile est nomen tuum."
@@ -132,7 +156,7 @@
 		"datum":"Non enim ad pópulum profúndi sermónis, et ignótæ linguæ tu mítteris ad domum Ísraël: neque ad pópulos multos profúndi sermónis, et ignótæ linguæ, quorum non possis audíre sermónes: et si ad illos mitteréris, ipsi audírent te. Domus autem Ísraël nolunt audíre te: quia nolunt audíre me. Omnis quippe domus Ísraël attríta fronte est, et duro corde. Ecce dedi fáciem tuam valentiórem faciébus eórum, et frontem tuam duriórem fróntibus eórum. Ut adamántem, et ut sílicem dedi fáciem tuam: ne tímeas eos, neque métuas a fácie eórum: quia domus exásperans est."
 	},
 	{
-		"tags":["liber-ezechielis","feria","feria-iii","matutinum","responsorium","responsorium-ii"],
+		"tags":["hebdomadae-novembris","feria","feria-iii","matutinum","responsorium","responsorium-ii"],
 		"incipit":"Civitátem istam tu circúmda Dómine: et Ángeli tui custódiant muros ejus.",
 		"responsum":"Exaúdi Dómine pópulum tuum cum misericórdia.",
 		"versus":"Avertátur furor tuus Dómine a pópulo tuo, et a civitáte sancta tua."
@@ -142,9 +166,53 @@
 		"datum":"Et dixit ad me: Fili hóminis omnes sermónes meos, quos ego loquor ad te, assúme in corde tuo, et aúribus tuis audi: Et vade, ingrédere ad transmigratiónem, ad fílios pópuli tui, et loquéris ad eos, et dices eis: Hæc dicit Dóminus Deus: si forte aúdiant, et quiéscant. Et assúmpsit me spíritus, et audívi post me vocem commotiónis magnæ: Benedícta glória Dómini de loco suo, et vocem alárum animálium percutiéntium álteram ad álteram, et vocem rotárum sequéntium animália, et vocem commotiónis magnæ."
 	},
 	{
-		"tags":["liber-ezechielis","feria","feria-iii","matutinum","responsorium","responsorium-iii"],
+		"tags":["hebdomadae-novembris","feria","feria-iii","matutinum","responsorium","responsorium-iii"],
 		"incipit":"Genti peccatríci, pópulo pleno peccáto miserére,",
 		"responsum":"Dómine Deus.",
 		"versus":"Esto placábilis super nequítiam pópuli tui."
+	},
+	{
+		"tags":["hebdomadae-novembris","feria","feria-iv","matutinum","responsorium","responsorium-i"],
+		"incipit":"Indicábo tibi homo, quid sit bonum: aut quid Dómimus requírat a te:",
+		"responsum":"Fácere judícium et justítiam, et sollícitum ambuláre cum Deo tuo.",
+		"versus":"Spera in Dómino, et fac bonitátem, et inhábita terram."
+	},
+	{
+		"tags":["liber-ezechielis","dies-viii-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2265",
+		"datum":"Áspice Dómine * quia facta est desoláta cívitas plena divítiis: sedet in tristítia dómina Géntium: non est qui consolétur eam, nisi tu Deus noster."
+	},
+	{
+		"tags":["liber-danielis","incipit-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1844",
+		"datum":"Muro tuo * inexpugnábili circumcínge nos Dómine, et armis tuæ poténtiæ prótege nos semper."
+	},
+	{
+		"tags":["liber-osee","incipit-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1934",
+		"datum":"Qui cœlórum * cóntines thronum, et abýssos intuéris, Dómine Rex regum, montes pónderas, terram palmo conclúdis: exaúdi nos Dómine in gemítibus nostris."
+	},
+	{
+		"tags":["liber-michaeae","incipit-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/1940",
+		"datum":"Super muros tuos * Jerúsalem constítui custódes: tota die et nocte non tacébunt laudáre nomen Dómini."
+	},
+	{
+		"tags":["liber-michaeae","incipit-libri","lectio"],
+		"lectio-i":[
+			"Íncipit Michǽas Prophéta.",
+			"Verbum Dómini, quod factum est ad Michǽam Morasthíten, in diébus Jóathan, Achas, et Ezechíæ, regum Juda: quod vidit super Samaríam, et Jerúsalem. Audíte pópuli omnes, et atténdat terra, et plenitúdo ejus: et sit Dóminus Deus vobis in testem, Dóminus de templo sancto suo. Quia ecce Dóminus egrediétur de loco suo: et descéndet, et calcábit super excélsa terræ."
+		],
+		"lectio-ii":"Et consuméntur montes subtus eum: et valles scindéntur sicut cera a fácie ignis, et sicut aquæ, quæ decúrrunt in præceps. In scélere Jacob omne istud, et in peccátis domus Ísraël. Quod scelus Jacob? nonne Samaría? et quæ excélsa Judæ? nonne Jerúsalem? et ponam Samaríam quasi acérvum lápidum in agro cum plantátur vínea: et détraham in vallem lápides ejus, et fundaménta ejus revelábo.",
+		"lectio-iii":"Et ómnia sculptília ejus concidéntur, et omnes mercédes ejus comburéntur igne, et ómnia idóla ejus ponam in perditiónem: quia de mercédibus meretrícis congregáta sunt, et usque ad mercédem meretrícis reverténtur. Super hoc plangam, et ululábo: vadam spoliátus, et nudus: fáciam planctum velut dracónum, et luctum quasi struthiónum. Quia desperáta est plaga ejus, quia venit usque ad Judam, tétigit portam pópuli mei usque ad Jerúsalem."
+	},
+	{
+		"tags":["liber-malachiae","incipit-libri","lectio"],
+		"lectio-i":[
+			"Íncipit Malachías Prophéta.",
+			"Onus verbi Dómini ad Ísraël in manu Malachíæ. Diléxi vos, dicit Dóminus, et dixístis: In quo dilexísti nos? Nonne frater erat Esau Jacob, dicit Dóminus, et diléxi Jacob, Esau autem ódio hábui? et pósui montes ejus in solitúdinem, et hæreditátem ejus in dracónes desérti. Quod si díxerit Idumǽa: Destrúcti sumus, sed reverténtes ædificábimus quæ destrúcta sunt: Hæc dicit Dóminus exercítuum: Isti ædificábunt, et ego déstruam: et vocabúntur términi impietátis, et pópulus, cui irátus est Dóminus usque in ætérnum."
+		],
+		"lectio-ii":"Et óculi vestri vidébunt: et vos dicétis: Magnificétur Dóminus super términum Ísraël. Fílius honórat patrem, et servus dóminum suum: si ergo Pater ego sum, ubi est honor meus? et si Dóminus ego sum, ubi est timor meus, dicit Dóminus exercítuum? ad vos, o sacerdótes, qui despícitis nomen meum, et dixístis: In quo despéximus nomen tuum? Offértis super altáre meum panem pollútum et dícitis: In quo pollúimus te? In eo quod dícitis: Mensa Dómini despécta est.",
+		"lectio-iii":"Si offerátis cæcum ad immolándum, nonne malum est? et si offerátis claudum, et lánguidum, nonne malum est? offer illud duci tuo, si placúerit ei, aut si suscéperit fáciem tuam, dicit Dóminus exercítuum. Et nunc deprecámini vultum Dei ut misereátur vestri (de manu enim vestra factum est hoc) si quómodo suscípiat fácies vestras, dicit Dóminus exercítuum. Quis est in vobis, qui claudat óstia, et incéndat altáre meum gratúito? non est mihi volúntas in vobis, dicit Dóminus exercítuum: et munus non suscípiam de manu vestra. Ab ortu enim solis usque ad occásum, magnum est nomen meum in Géntibus, et in omni loco sacrificátur, et offértur nómini meo oblátio munda: quia magnum est nomen meum in Géntibus, dicit Dóminus exercítuum."
 	}
 ]

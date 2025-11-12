@@ -91,5 +91,23 @@
 		"response":"duplicate",
 		"remove":"commemoratio",
 		"adde":["prima","preces"]
+	},
+	{
+		"include":["dominica"],
+		"response":[
+			{"include":["hebdomadae-augusti","tempus"],"target":0,"adde":"hebdomadae-augusti"},
+			{"include":["hebdomadae-septembris","tempus"],"target":0,"adde":"hebdomadae-septembris"},
+			{"include":["hebdomadae-octobris","tempus"],"target":0,"adde":"hebdomadae-octobris"},
+			{"include":["hebdomadae-novembris","tempus"],"target":0,"adde":"hebdomadae-novembris"}
+		]
+	},
+	{
+		"include":["feria"],
+		"response":[
+			{"include":["hebdomadae-augusti","tempus"],"target":0,"adde":"hebdomadae-augusti"},
+			{"include":["hebdomadae-septembris","tempus"],"target":0,"adde":"hebdomadae-septembris"},
+			{"include":["hebdomadae-octobris","tempus"],"target":0,"adde":"hebdomadae-octobris"},
+			{"include":["hebdomadae-novembris","tempus"],"target":0,"adde":"hebdomadae-novembris"}
+		]
 	}
 ]

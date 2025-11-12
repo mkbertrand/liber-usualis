@@ -326,6 +326,7 @@ def kalendar(year: int) -> Kalendar:
 					continue
 				kal[kalends + timedelta(weeks=j, days=k)][0].add(feriae[k])
 				kal[kalends + timedelta(weeks=j, days=k)][0].add(f'hebdomada-{numerals[j]}-{mensum[(i - 1) % 12]}')
+				kal[kalends + timedelta(weeks=j, days=k)][0].add(f'hebdomadae-{mensum[(i - 1) % 12]}')
 			j += 1
 		if i == 12 and nextkalends.year == year:
 			for j in range(0,7):
@@ -333,6 +334,7 @@ def kalendar(year: int) -> Kalendar:
 					break
 				kal[nextkalends + timedelta(days=j)][0].add(feriae[j])
 				kal[nextkalends + timedelta(days=j)][0].add('hebdomada-i-januarii')
+				kal[nextkalends + timedelta(days=j)][0].add('hebdomadae-januarii')
 
 	cycles = [adventcycle, paschalcycle, autumnalcycle]
 

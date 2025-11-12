@@ -562,5 +562,14 @@
 		"response":"duplicate",
 		"remove":"commemoratio",
 		"adde":["completorium","preces"]
+	},
+	{
+		"include":["dominica","i-vesperae"],
+		"response":[
+			{"include":["hebdomadae-augusti","tempus","i-vesperae"],"target":0,"adde":"hebdomadae-augusti"},
+			{"include":["hebdomadae-septembris","tempus","i-vesperae"],"target":0,"adde":"hebdomadae-septembris"},
+			{"include":["hebdomadae-octobris","tempus","i-vesperae"],"target":0,"adde":"hebdomadae-octobris"},
+			{"include":["hebdomadae-novembris","tempus","i-vesperae"],"target":0,"adde":"hebdomadae-novembris"}
+		]
 	}
 ]
