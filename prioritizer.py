@@ -65,7 +65,7 @@ def prioritize(day, rules):
 		tagsetindices = range(len(day))
 		matchset = []
 		for restriction in job.rule['restrict']:
-			search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= day[tagsetindex] and not (restriction.exclude and restriction.exclude <= day[tagsetindex])]
+			search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= day[tagsetindex] and not (restriction.exclude and (restriction.exclude <= day[tagsetindex] if type(restriction.exclude) is frozenset else any(i <= day[tagsetindex] for i in restriction.exclude)))]
 			if len(search) == 0:
 				return
 			else:
