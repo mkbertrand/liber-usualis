@@ -4,9 +4,8 @@
 		"datum":"S. Ambrosii Episcopi Confessoris et Ecclesia Doctoris"
 	},
 	{
-		"tags":["ambrosius","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1908",
-		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Ambrósi, divínæ legis amátor, deprecáre pro nobis Fílium Dei."
+		"tags":["ambrosius","vesperae","antiphona-magnificat","n"],
+		"datum":"Ambrósi"
 	},
 	{
 		"tags":["ambrosius","collecta"],
@@ -14,15 +13,13 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["ambrosius","matutinum","nocturna-ii","lectio","lectio-i"],
-		"datum":"Ambrósius epíscopus Mediolanénsis, Ambrósii civis Románi fílius, patre Gálliæ præfécto natus est. In hujus infántis ore exámen apum consedísse dícitur: quæ res divínam viri eloquéntiam præmonstrábat. Romæ liberálibus disciplínis erudítus est. Post a Probo præfécto, Ligúriæ et Æmíliæ præpósitus: unde póstea ejúsdem Probi jussu cum potestáte Mediolánum venit: ubi, mórtuo Auxéntio Ariáno epíscopo, pópulus de successóre deligéndo dissidébat. Quare Ambrósius, pro offícii sui múnere ecclésiam ingréssus, ut commótam seditiónem sedáret, cum multa de quiéte et tranquillitáte reipúblicæ præcláre dixísset, de repénte púero Ambrósium epíscopum exclamánte, univérsi pópuli vox erúpit, Ambrósium epíscopum deposcéntis."
+		"tags":["ambrosius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Ambrósius epíscopus Mediolanénsis, Ambrósii civis Románi fílius, patre Gálliæ præfécto natus est. In hujus infántis ore exámen apum consedísse dícitur: quæ res divínam viri eloquéntiam præmonstrábat. Romæ liberálibus disciplínis erudítus est. Post a Probo præfécto, Ligúriæ et Æmíliæ præpósitus: unde póstea ejúsdem Probi jussu cum potestáte Mediolánum venit: ubi, mórtuo Auxéntio Ariáno epíscopo, pópulus de successóre deligéndo dissidébat. Quare Ambrósius, pro offícii sui múnere ecclésiam ingréssus, ut commótam seditiónem sedáret, cum multa de quiéte et tranquillitáte reipúblicæ præcláre dixísset, de repénte púero Ambrósium epíscopum exclamánte, univérsi pópuli vox erúpit, Ambrósium epíscopum deposcéntis.",
+		"lectio-ii":"Recusánte illo, et eórum précibus resisténte, ardens pópuli stúdium ad Valentiniánum imperatórem delátum est: cui gratíssimum fuit a se deléctos júdices ad sacerdótium postulári. Fuit id étiam Probo præfécto jucúndum, qui Ambrósio proficiscénti quasi divínans díxerat: Vade age, non ut judex, sed ut epíscopus. Ítaque cum ad pópuli desidérium imperatóris volúntas accéderet, Ambrósius baptizátus (erat enim catechúmenus) sacrísque initiátus, ac servátis ómnibus ex institúto Ecclésiæ órdinum grádibus, octávo  die, qui fuit séptimo Idus Decémbris, episcopále onus suscépit. Factus epíscopus, cathólicam fidem et disciplínam ecclesiásticam acérrime deféndit: multósque Ariános, et álios hæréticos ad fídei veritátem convértit, in quibus claríssimum Ecclésiæ lumen sanctum Augustínum Jesu Christo péperit.",
+		"lectio-iii":"Gratiáno imperatóre occíso, ad Máximum ejus interfectórem legátus íterum proféctus est: eóque pœniténtiam ágere recusánte, se ab ejus communióne semóvit. Theodósium imperatórem, propter cædem Thessalonícæ factam, ingréssu Ecclésiæ prohíbuit. Cui, cum ille David quoque regem adúlterum, et homocídam fuísse dixísset, respóndit Ambrósius: Qui secútus es errántem, séquere pœniténtiam. Quare Theodósius sibi ab eo impósitam públicam pœniténtiam humíliter egit. Ergo sanctus epíscopus pro Ecclésia Dei máximis labóribus curísque perfúnctus, multis libris étiam egrégie conscríptis, ántequam in morbum incíderet, mortis suæ diem prædíxit. Ad quem ægrótum Honorátus Vercellénsis epíscopus, Dei voce ter admónitus, accúrrit, eíque sanctum Dómini corpus prǽbuit: quo ille sumpto, conformátis in crucis similitúdinem mánibus, orans, ánimam Deo réddidit prídie Nonas Aprílis, anno post Christum natum trecentésimo nonagésimo séptimo."
 	},
 	{
-		"tags":["ambrosius","matutinum","nocturna-ii","lectio","lectio-ii"],
-		"datum":"Recusánte illo, et eórum précibus resisténte, ardens pópuli stúdium ad Valentiniánum imperatórem delátum est: cui gratíssimum fuit a se deléctos júdices ad sacerdótium postulári. Fuit id étiam Probo præfécto jucúndum, qui Ambrósio proficiscénti quasi divínans díxerat: Vade age, non ut judex, sed ut epíscopus. Ítaque cum ad pópuli desidérium imperatóris volúntas accéderet, Ambrósius baptizátus (erat enim catechúmenus) sacrísque initiátus, ac servátis ómnibus ex institúto Ecclésiæ órdinum grádibus, octávo  die, qui fuit séptimo Idus Decémbris, episcopále onus suscépit. Factus epíscopus, cathólicam fidem et disciplínam ecclesiásticam acérrime deféndit: multósque Ariános, et álios hæréticos ad fídei veritátem convértit, in quibus claríssimum Ecclésiæ lumen sanctum Augustínum Jesu Christo péperit."
-	},
-	{
-		"tags":["ambrosius","matutinum","nocturna-ii","lectio","lectio-iii"],
-		"datum":"Gratiáno imperatóre occíso, ad Máximum ejus interfectórem legátus íterum proféctus est: eóque pœniténtiam ágere recusánte, se ab ejus communióne semóvit. Theodósium imperatórem, propter cædem Thessalonícæ factam, ingréssu Ecclésiæ prohíbuit. Cui, cum ille David quoque regem adúlterum, et homocídam fuísse dixísset, respóndit Ambrósius: Qui secútus es errántem, séquere pœniténtiam. Quare Theodósius sibi ab eo impósitam públicam pœniténtiam humíliter egit. Ergo sanctus epíscopus pro Ecclésia Dei máximis labóribus curísque perfúnctus, multis libris étiam egrégie conscríptis, ántequam in morbum incíderet, mortis suæ diem prædíxit. Ad quem ægrótum Honorátus Vercellénsis epíscopus, Dei voce ter admónitus, accúrrit, eíque sanctum Dómini corpus prǽbuit: quo ille sumpto, conformátis in crucis similitúdinem mánibus, orans, ánimam Deo réddidit prídie Nonas Aprílis, anno post Christum natum trecentésimo nonagésimo séptimo."
+		"tags":["ambrosius","matutinum","nocturna-iii","lectio"],
+		"datum":[["doctor","alia-homilia","lectio"]]
 	}
 ]
