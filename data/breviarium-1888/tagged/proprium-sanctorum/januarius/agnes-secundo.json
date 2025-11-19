@@ -14,6 +14,11 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["agnes-secundo","matutinum","lectio"],
+		"lectio-i":[["temporale","occurrens","lectio","lectio-i"]],
+		"lectio-ii":[["temporale","occurrens","lectio","lectio-ii"],["temporale","occurrens","lectio","lectio-iii"]]
+	},
+	{
 		"tags":["agnes-secundo","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12687",
 		"datum":"Ecce quod concupívi, * jam vídeo: quod sperávi, jam téneo: ipsi sum juncta in cœlis, quem in terris pósita, tota devotióne diléxi."
