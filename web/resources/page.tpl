@@ -18,8 +18,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=31">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=13">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=32">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=14">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>

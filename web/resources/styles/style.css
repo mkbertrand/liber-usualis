@@ -60,6 +60,7 @@ body {
 	margin: 0 auto;
 	padding: 0 20px;
 	background-color: var(--generic-white-background-color);
+	font-size: 18px;
 }
 
 #sidebar-nav-toggle-wrapper {
@@ -113,12 +114,12 @@ h1 {
 	text-align: center;
 }
 
-h2.text-head {
+h2 {
 	font-size: 22px;
 	line-height: 1;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	text-align: center;
+	text-align: left;
 }
 
 h3 {

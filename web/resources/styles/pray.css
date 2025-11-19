@@ -297,6 +297,7 @@
 }
 
 .large-title {
+	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	color: red;
 	font-size: 24px;
@@ -305,14 +306,18 @@
 }
 
 .large-subtitle {
+	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	color: red;
 	font-size: 18px;
 	text-align: center;
 	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.25;
 }
 
 .small-title {
+	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	color: red;
 	font-size: 22px;
@@ -321,6 +326,7 @@
 }
 
 .section-header {
+	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	color: red;
 	font-size: 22px;
@@ -329,6 +335,7 @@
 }
 
 .rite-text {
+	font-family: "Old Standard TT", times;
 	line-height: 1.25;
 	margin-top: 7px;
 	margin-bottom: 14px;
