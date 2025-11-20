@@ -1,5 +1,29 @@
 [
 	{
+		"tags":["maria","antiphona","antiphona-i"],
+		"datum":"While the King * sitteth at his table, my spikenard sendeth forth the smell thereof."
+	},
+	{
+		"tags":["maria","antiphona","antiphona-ii"],
+		"datum":" His left hand * is under my head, and his right hand doth embrace me."
+	},
+	{
+		"tags":["maria","antiphona","antiphona-iii"],
+		"datum":"I am black * but comely, O ye daughters of Jerusalem. Therefore the King hath loved me, and brought me into his chamber."
+	},
+	{
+		"tags":["maria","antiphona","antiphona-iv"],
+		"datum":"Lo ! the winter is past, * the rain is over and gone. Rise up, my love, and come away."
+	},
+	{
+		"tags":["maria","antiphona","antiphona-v"],
+		"datum":"Thou art become beautiful * O Holy Mother of God! and gentle in thy gladness."
+	},
+	{
+		"tags":["maria","capitulum"],
+		"datum":"I was created from the beginning, before the world; + and I shall never fail. * In the holy tabernacle I served before him."
+	},
+	{
 		"tags":["maria","suffragium","antiphona"],
 		"datum":"Holy Mary * succor the wretched, help the weak-minded, restore the failing, pray for the people, intervene for the clerics, intercede for the devoted female sex: so that all should know your help, whoever celebrates your holy commemoration."
 	},
@@ -10,5 +34,12 @@
 	{
 		"tags":["maria","collecta"],
 		"datum":"Grant us your servants, we ask you Lord God, to rejoice in perpetual health of mind and body, + and by the glorious intercession of Blessed Mary ever-Virgin, * to be freed from present sorrow, and to enjoy eternal happiness."
+	},
+	{
+		"tags":[
+			["maria","laudes","versiculus"],
+			["maria","nona","versiculus"]
+		],
+		"datum":["V. Grace is poured into thy lips.","R. Therefore God hath blessed thee for ever."]
 	}
 ]

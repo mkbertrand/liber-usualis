@@ -61,11 +61,16 @@
 	},
 	{
 		"tags":["dominus-vobiscum"],
-		"datum":["The Lord be with you.","And with thy spirit."]
+		"datum":["V. The Lord be with you.","R. And with thy spirit."],
+		"privata":["V. Hear my prayer, O Lord.","R. And let my cry come unto Thee."]
+	},
+	{
+		"tags":["domine-exaudi"],
+		"datum":["V. Hear my prayer, O Lord.","R. And let my cry come unto Thee."]
 	},
 	{
 		"tags":["collecta-primaria"],
-		"datum":["Let us pray.","",""]
+		"datum":["","Let us pray.","",""]
 	},
 	{
 		"tags":["per-dominum"],
@@ -79,7 +84,10 @@
 		]
 	},
 	{
-		"tags":["formula","commemoratio"],
+		"tags":[
+			["formula","vesperae","formula-commemorationis"],
+			["formula","laudes","formula-commemorationis"]
+		],
 		"datum":[
 			"",
 			"",

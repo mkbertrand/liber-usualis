@@ -1,0 +1,30 @@
+[
+	{
+		"tags":[
+			["officium-parvum-bmv","vesperae","preces"],
+			["officium-parvum-bmv","completorium","preces"],
+			["officium-parvum-bmv","laudes","preces"],
+			["officium-parvum-bmv","prima","preces"],
+			["officium-parvum-bmv","tertia","preces"],
+			["officium-parvum-bmv","sexta","preces"],
+			["officium-parvum-bmv","nona","preces"]
+		],
+		"datum":"Kyrie eleison. Christe eleison. Kyrie eleison."
+	},
+	{
+		"tags":["officium-parvum-bmv","completorium","capitulum"],
+		"datum":"I am the mother of fair love, + and fear, and knowledge, * and holy hope."
+	},
+	{
+		"tags":["officium-parvum-bmv","completorium","versiculus"],
+		"datum":["V. Pray for us, O holy Mother of God.","R. That we may be made worthy of the promises of Christ."]
+	},
+	{
+		"tags":["officium-parvum-bmv","completorium","antiphona","antiphona-nunc-dimittis"],
+		"datum":"We take refuge under Thy protectionm * O holy Mother of God! Despise not our supplications in our need, but deliver us alway from all dangers, O Virgin, glorious and blessed!"
+	},
+	{
+		"tags":["officium-parvum-bmv","completorium","collecta"],
+		"datum":"Lord, we pray Thee, that the glorious intercession of Mary, blessed, and glorious, and everlastingly Virgin, may shield us and bring us on toward eternal life."
+	}
+]
