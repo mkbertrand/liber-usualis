@@ -246,7 +246,7 @@ function render(data, chant) {
 						}
 						return ret;
 					}
-					return stringrender(data) + (translated == '' ? '' : `<br><span class="rite-text-translation">${stringrender(translated)}</span><br>`);
+					return stringrender(data) + (translated == '' ? '<br>' : `<br><span class="rite-text-translation">${stringrender(translated)}</span><br>`);
 				} else {
 					return stringrender(data) + '<br>';
 				}
