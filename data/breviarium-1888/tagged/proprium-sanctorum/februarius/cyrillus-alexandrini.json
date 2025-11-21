@@ -4,13 +4,17 @@
 		"datum":"S. Cyrilli Episcopi Alexandrini Confessoris et Ecclesiæ Doctoris"
 	},
 	{
-		"tags":["cyrillus-alexandrini","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1908",
-		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Cyrílle, divínæ legis amátor, deprecáre pro nobis Fílium Dei."
+		"tags":["cyrillus-alexandrini","vesperae","antiphona-magnificat","n"],
+		"datum":"Cyrílle"
 	},
 	{
 		"tags":["cyrillus-alexandrini","collecta"],
 		"datum":"Deus, qui beátum Cyríllum Confessórem tuum atque Pontíficem divínæ maternitátis beatíssimæ Vírginis Maríæ assertórem invíctum effecísti: + concéde, ipso intercedénte; ut qui vere eam Genitrícem Dei crédimus, * matérna ejúsdem protectióne salvémur.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["cyrillus-alexandrini","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"in-tempora-quadragesmiae":[["confessor","alia-lectio","lectio"]]
 	}
 ]

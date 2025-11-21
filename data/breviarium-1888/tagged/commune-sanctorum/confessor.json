@@ -444,19 +444,13 @@
 		"in-tempore-paschali":"Hic vir despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu, allelúja."
 	},
 	{
-		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-i","alia"],
-		"datum":[
+		"tags":["confessor","matutinum","nocturna-i","lectio","alia-lectio"],
+		"lectio-i":[
 			"De libro Ecclesiástici.",
 			"Beátus vir, qui invéntus est sine mácula: et qui post aurum non ábiit, nec sperávit in pecúnia et thesaúris. Quis est hic, et laudábimus eum? fecit enim mirabília in vita sua. Qui probátus in illo, et perféctus est, erit illi glória ætérna: qui pótuit tránsgredi, et non est transgréssus: fácere mala, et non fecit: ídea stabilíta sunt bona illíus in Dómino, et eleemósynas illíus enarrábit omnis ecclésia sanctórum."
-		]
-	},
-	{
-		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-ii","alia"],
-		"datum":"Qui timet Dóminum, excípiet doctrínam ejus: et qui vigiláverint ad illum, invénient benedictiónem. Qui quærit legem, replébitur ab ea: et qui insidióse agit, scandalizábitur in ea. Qui timent Dóminum, invénient judícium justum, et justítias quasi lumen accéndent. Qui credit Deo, atténdit mandátis, et qui confídit in illo, non minorábitur. Timénti Dóminum non occúrrent mala, sed in tentatióne Deus illum conservábit, et liberábit a malis. Sápiens non odit mandáta et justítias, et non illidétur quasi in procélla navis. Homo sensátus credit legi Dei, et lex illi fidélis."
-	},
-	{
-		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-iii","alia"],
-		"datum":"Spíritus timéntium Deum quǽritur, et in respéctu illíus benedicétur. Spes enim illórum in salvántem illos, et óculi Dei in diligéntes se. Qui timet Dóminum, nihil trepidábit, et non pavébit: quóniam ipse est spes ejus. Timéntis Dóminum beáta est ánima ejus. Ad quem réspicit, et quis est fortitúdo ejus? Óculi Dómini super timéntes eum, protéctor poténtiæ firmaméntum virtútis, tégimen ardóris, et umbráculum meridiáni, deprecátio offensiónis, et adjutórium casus, exáltans ánimam, et illúminans óculos, dans sanitátem, et vitam, et benedictiónem."
+		],
+		"lectio-ii":"Qui timet Dóminum, excípiet doctrínam ejus: et qui vigiláverint ad illum, invénient benedictiónem. Qui quærit legem, replébitur ab ea: et qui insidióse agit, scandalizábitur in ea. Qui timent Dóminum, invénient judícium justum, et justítias quasi lumen accéndent. Qui credit Deo, atténdit mandátis, et qui confídit in illo, non minorábitur. Timénti Dóminum non occúrrent mala, sed in tentatióne Deus illum conservábit, et liberábit a malis. Sápiens non odit mandáta et justítias, et non illidétur quasi in procélla navis. Homo sensátus credit legi Dei, et lex illi fidélis.",
+		"lectio-iii":"Spíritus timéntium Deum quǽritur, et in respéctu illíus benedicétur. Spes enim illórum in salvántem illos, et óculi Dei in diligéntes se. Qui timet Dóminum, nihil trepidábit, et non pavébit: quóniam ipse est spes ejus. Timéntis Dóminum beáta est ánima ejus. Ad quem réspicit, et quis est fortitúdo ejus? Óculi Dómini super timéntes eum, protéctor poténtiæ firmaméntum virtútis, tégimen ardóris, et umbráculum meridiáni, deprecátio offensiónis, et adjutórium casus, exáltans ánimam, et illúminans óculos, dans sanitátem, et vitam, et benedictiónem."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-i","alia"],

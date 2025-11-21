@@ -264,6 +264,8 @@ def process(root, item, selected, alternates, pile):
 		ret = []
 		for i in item['datum']:
 			if type(i) is str:
+				if 'N.' in i:
+					i = i.replace('N. et N.', 'N.').replace('N.', search(root, item['tags'] | {'n'} | selected, pile)['datum'])
 				ret.append(i)
 			else:
 				iprocessed = process(root, i, selected, alternates, pile)

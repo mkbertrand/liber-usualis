@@ -7,5 +7,10 @@
 		"tags":["blasius","collecta"],
 		"datum":"Deus, qui nos beáti Blásii Mártyris tui atque Pontíficis ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * de ejúsdem étiam protectióne gaudeámus.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["blasius","matutinum","lectio"],
+		"lectio-i":[["temporale","occurrens","lectio","lectio-i"]],
+		"lectio-ii":[["temporale","occurrens","lectio","lectio-ii"],["temporale","occurrens","lectio","lectio-iii"]]
 	}
 ]
