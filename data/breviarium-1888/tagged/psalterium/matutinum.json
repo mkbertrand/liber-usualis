@@ -1461,5 +1461,9 @@
 	{
 		"tags":["matutinum","feria","sabbatum","versiculus"],
 		"datum":["V. Dómine exaúdi oratiónem meam.","R. Et clamor meus ad te véniat."]
+	},
+	{
+		"tags":["dominica","feria","matutinum","lectio"],
+		"datum":[["nocturna-iii","matutinum","lectio"]]
 	}
 ]
