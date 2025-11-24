@@ -7,6 +7,18 @@
 		"sabbatum":"Sabbato post Cineres"
 	},
 	{
+		"tags":["cinerum","feria-iv","matutinum","responsorium","responsorium-i"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-iii"]]
+	},
+	{
+		"tags":["cinerum","feria-iv","matutinum","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-iii"]]
+	},
+	{
+		"tags":["cinerum","feria-iv","matutinum","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-quinquagesima","feria","feria-ii","responsorium-i"]]
+	},
+	{
 		"tags":["cinerum","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12032",
 		"datum":"Cum jejunátis, * nolíte fíeri sicut hypócritæ, tristes."
@@ -25,6 +37,20 @@
 		"tags":["cinerum","feria-iv","vesperae","collecta"],
 		"datum":"Inclinántes se, Dómine, majestáti tuæ, propitiátus inténde: * ut qui divíno múnere sunt refécti, cœléstibus semper nutriántur auxíliis.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cinerum","feria-v","matutinum","responsorium","responsorium-i"],
+		"incipit":"Dómine, puer meus jacet paralýticus in domo, et male torquétur:",
+		"responsum":"Amen dico tibi, ego véniam, et curábo eum.",
+		"versus":"Dómine, non sum dignus ut intres sub tectum meum: sed tamen dic verbo, et sanábitur puer meus."
+	},
+	{
+		"tags":["cinerum","feria-v","matutinum","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-i"]]
+	},
+	{
+		"tags":["cinerum","feria-v","matutinum","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-i"]]
 	},
 	{
 		"tags":["cinerum","feria-v","laudes","antiphona","antiphona-benedictus"],
@@ -47,6 +73,18 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["cinerum","feria-vi","matutinum","responsorium","responsorium-i"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-ii"]]
+	},
+	{
+		"tags":["cinerum","feria-vi","matutinum","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-ii"]]
+	},
+	{
+		"tags":["cinerum","feria-vi","matutinum","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-ii"]]
+	},
+	{
 		"tags":["cinerum","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12736",
 		"datum":"Cum facis * eleemósynam, nésciat sinístra tua quid fáciat déxtera tua."
@@ -65,6 +103,18 @@
 		"tags":["cinerum","feria-vi","vesperae","collecta"],
 		"datum":"Tuére Dómine pópulum tuum, et ab ómnibus peccátis cleménter emúnda: * quia nulla ei nocébit advérsitas, si nulla ei dominétur iníquitas.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cinerum","sabbatum","matutinum","responsorium","responsorium-i"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-iii"]]
+	},
+	{
+		"tags":["cinerum","sabbatum","matutinum","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-quinquagesima","dominica","nocturna-iii"]]
+	},
+	{
+		"tags":["cinerum","sabbatum","matutinum","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-quinquagesima","feria","feria-ii","responsorium-i"]]
 	},
 	{
 		"tags":["cinerum","sabbatum","laudes","antiphona","antiphona-benedictus"],

@@ -18,6 +18,74 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Locútus est Dóminus ad Abrahm, dicens: Egrédere de terra tua, et de cognatióne tua, et veni in terram quam monstrávero tibi:",
+		"responsum":"Et fáciam te in gentem magnam.",
+		"versus":"Benedícens benedícam tibi, et magnificábo nomen tuum, erísque benedíctus."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Dum staret Ábraham ad ílicem Mambre, vidit tres viros ascendéntes per viam:",
+		"responsum":"Tres vidit, et unum adorávit.",
+		"versus":"Ecce Sara uxor tua páriet tibi fílium, et vocábis nomen ejus Ísaac."
+	},
+	{
+		"tags":[
+			["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-quinquagesima","feria","feria-ii","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Tentávit Dóminus Ábraham, et dixit ad eum:",
+		"responsum":"Tolle fílium tuum, quem díligis, Ísaac, et offer illum ibi in holocaústum super unum móntium, quem díxero tibi.",
+		"versus":"Vocátus quoque a Dómino, respóndit, Adsum: et ait ei Dóminus."
+	},
+	{
+		"tags":[
+			["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-quinquagesima","feria","feria-iii","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Ángelus Dómini vocávit Ábraham, dicens:",
+		"responsum":"Ne exténdas manum tuam super púerum, eo quod tímeas Dóminum.",
+		"versus":"Cumque extendísset manum ut immoláret fílium, ecce Ángelus Dómini de cœlo clamávit, dicens."
+	},
+	{
+		"tags":[
+			["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-quinquagesima","feria","feria-iii","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Vocávit Ángelus Dómini Ábraham de cœlo, secúndo, dicens: Benedícam tibi,",
+		"responsum":"Et multiplicábo te sicut stellas cœli.",
+		"versus":"Possidébit semen tuum portas inimicórum tuórum, et benedicéntur in sémine tuo omnes tribus terræ."
+	},
+	{
+		"tags":[
+			["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-quinquagesima","feria","feria-iii","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Deus dómini mei Ábraham dírige viam meam:",
+		"responsum":"Ut cum salúte revértar in domum dómini mei.",
+		"versus":"Óbsecro Dómine, fac misericórdiam cum servo tuo."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Veni hódie ad fontem aquæ, et orávi Dóminum, dicens:",
+		"responsum":"Dómine Deus Ábraham, tu prósperum fecísti desidérium meum.",
+		"versus":"Ígitur puélla, cui díxero, Da mihi aquam de hýdria tua, ut bibam: et illa díxerit, Bibe dómine, et camélis tuis potum tríbuam: ipsa est, quam præparávit Dóminus fílio dómini mei."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Factus est sermo Dómini ad Abram, dicens:",
+		"responsum":"Noli timére Abram: ego protéctor tuus sum, et merces tua magna nimis.",
+		"versus":"Ego enim sum Dóminus Deus tuus, qui edúxi te de Ur Chaldæórum."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"formula":[["duplex-responsum"]],
+		"incipit":"Cæcus sedébat secus viam, transeúnte Dómino, et clamávit ad eum: et ait illi Dóminus:",
+		"responsum-i":"Quid vis ut fáciam tibi?",
+		"responsum-ii":"Dómine, ut vídeam lumen.",
+		"versus":"Stans autem Jesus, jussit illum duci ad se, et cum appropinquásset, interrogávit eum, dicens."
+	},
+	{
 		"tags":["hebdomada-quinquagesima","dominica","laudes","antiphona","antiphona-i"],
 		"src":"gregobase/13020",
 		"datum":"Secúndum multitúdinem * miseratiónum tuárum Dómine, dele iniquitátem meam."
@@ -86,6 +154,18 @@
 		"tags":["hebdomada-quinquagesima","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2369",
 		"datum":"Stans autem Jesus * jussit cæcum addúci ad se, et ait illi: Quid vis ut fáciam tibi? Dómine, ut vídeam. Et Jesus ait illi: Réspice, fides tua te salvum fecit. Et conféstim vidit, et sequebátur illum, magníficans Deum."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","feria","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Movens Abram tabernáculum suum, venit et habitávit juxta convállem Mambre:",
+		"responsum":"Ædificavítque ibi altáre Dómino.",
+		"versus":"Dixit autem Dóminus ad eum: Leva óculos tuos, et vide: omnem terram quam cónspicis, tibi dabo, et sémini tuo in sempitérnum."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Crédidit Abram Deo, et reputátum est ei ad justítiam:",
+		"responsum":"Et ídeo amícus Dei factus est.",
+		"versus":"Fuit autem justus coram Dómino, et ambulávit in viis ejus."
 	},
 	{
 		"tags":["hebdomada-quinquagesima","feria-iii","vesperae","antiphona","antiphona-magnificat"],

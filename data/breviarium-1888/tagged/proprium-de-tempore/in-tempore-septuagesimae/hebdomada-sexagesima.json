@@ -38,6 +38,7 @@
 	{
 		"tags":[
 			["hebdomada-sexagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-sexagesima","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
 			["hebdomada-sexagesima","feria","feria-v","matutinum","responsorium","responsorium-iii"]
 		],
 		"incipit":"Quadragínta dies et noctes apérti sunt cœli, et ex omni carne habénte spíritum vitæ ingréssa sunt in arcam:",
@@ -182,12 +183,6 @@
 		"incipit":"Recordátus Dóminus Noë, addúxit spíritum super terram, et imminútæ sunt aquæ:",
 		"responsum":"Et prohíbitæ sunt plúviæ de cœlis.",
 		"versus":"Reversǽque sunt aquæ de terra eúntes et redeúntes, et cœpérunt mínui post centum quinquagínta dies."
-	},
-	{
-		"tags":["hebdomada-sexagesima","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
-		"incipit":"Quadragínta dies et noctes apérti sunt cœli, et ex omni carne habénte spíritum vitæ ingréssa sunt in arcam:",
-		"responsum":"Et clausit a foris óstium Dóminus.",
-		"versus":"In artículo diéi illíus ingréssus est Noë in arcam, et fílii ejus, et uxor illíus, et uxóres filiórum ejus."
 	},
 	{
 		"tags":["hebdomada-sexagesima","feria-ii","vesperae","antiphona","antiphona-magnificat"],
