@@ -240,13 +240,13 @@
 		<div x-show="initialized" id="rite-container" x-html="Rite">
 		</div>
 		<div id="bottom-easy-select-container" x-data="{open: true}">
-			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" :class="!open && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/down.svg" /></button>
+			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" :class="!open && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
 				<div id="date-selector-container" x-data="{search: ''}">
-					<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)">&#8592;</button>
+					<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-left.svg" /></button>
 					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
-					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);">&#8629;</button>
-					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)">&#8594;</button>
+					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-right.svg" /></button>
 					<button id="options-button" @click="optionspanel = !optionspanel">{{text['options-panel-button']}}</button>
 				</div>
 				<div id="rite-selector-container">
