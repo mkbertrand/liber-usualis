@@ -22,6 +22,95 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomada-septuagesima","feria","feria-v","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"In princípio creávit Deus cœlum et terram, et fecit in ea hóminem,",
+		"responsum":"Ad imáginem et similitúdinem suam.",
+		"versus":"Formávit ígitur Deus hóminem de limo terræ, et inspirávit in fáciem ejus spiráculum vitæ."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-septuagesima","feria","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"In princípio creávit Deus cœlum et terram, et Spíritus Dei ferebátur super aquas:",
+		"responsum":"Et vidit Deus cuncta quæ fécerat, et erant valde bona.",
+		"versus":"Ígitur perfécti sunt cœli et terra, et omnia ornátus eórum."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-septuagesima","feria","feria-v","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Formávit Dóminus hóminem de limo terræ,",
+		"responsum":"Et inspirávit in fáciem ejus spiráculum vitæ, et factus est homo in ánimam vivéntem.",
+		"versus":"In princípio fecit Deus cœlum et terram, et plasmávit in ea hóminem."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-septuagesima","feria","feria-iii","matutinum","responsorium","responsorium-i"],
+			["hebdomada-septuagesima","feria","feria-vi","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Tulit Dóminus hóminem, et pósuit eum in paradíso voluptátis:",
+		"responsum":"Ut operarétur et custodíret illum.",
+		"versus":"Plantáverat autem Dóminus Deus paradísum voluptátis a princípio, in quo pósuit hóminem quem formáverat."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-septuagesima","feria","feria-iii","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-septuagesima","feria","feria-vi","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Dixit Dóminus Deus: Non est bonum hóminem esse solum:",
+		"responsum":"Faciámus ei adjutórium símile sibi.",
+		"versus":"Adæ vero non inveniebátur adjútor símilis sibi: dixit vero Deus."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-septuagesima","feria","feria-iii","matutinum","responsorium","responsorium-iii"],
+			["hebdomada-septuagesima","feria","feria-vi","matutinum","responsorium","responsorium-iii"]
+		],
+		"formula":[["duplex-responsum"]],
+		"incipit":"Immísit Dóminus sopórem in Adam, et tulit unam de costis ejus:",
+		"responsum-i":"Et ædificávit costam, quam túlerat Dóminus de Adam, in mulíerem, et addúxit eam ad Adam, ut vidéret quid vocáret eam:",
+		"responsum-ii":"Et vocávit nomen ejus Virágo, quia de viro sumpta est.",
+		"versus":"Cumque obdormísset, tulit unam de costis ejus, et replévit carnem pro ea."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-septuagesima","feria","feria-iv","matutinum","responsorium","responsorium-i"],
+			["hebdomada-septuagesima","feria","sabbatum","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Plantáverat autem Dóminus Deus paradísum voluptátis a princípio:",
+		"responsum":"In quo pósuit hóminem, quem formáverat.",
+		"versus":"Produxítque Dóminus Deus de humo omne lignum pulchrum visu, et ad vescéndum suáve; lignum étiam vitæ in médio paradísi."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["hebdomada-septuagesima","feria","feria-iv","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-septuagesima","feria","sabbatum","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Ecce Adam quasi unus ex nobis factus est sciens bonum et malum:",
+		"responsum":"Vidéte, ne forte sumat de ligno vitæ, et vivat in ætérnum.",
+		"versus":"Fecit quoque Dóminus Deus Adæ túnicam pellíceam, et índuit eum, et dixit."
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+			["hebdomada-septuagesima","feria","feria-iv","matutinum","responsorium","responsorium-iii"],
+			["hebdomada-septuagesima","feria","sabbatum","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Ubi est Abel frater tuus? dixit Dóminus ad Cain. Néscio Dómine, numquid custos fratris mei sum ego? Et dixit ad eum: Quid fecísti?",
+		"responsum":"Ecce vox sánguinis fratris tui Abel clamat ad me de terra.",
+		"versus":"Maledíctus eris super terram, quæ apéruit os suum, et suscépit sánguinem fratris tui de manu tua."
+	},
+	{
 		"tags":["hebdomada-septuagesima","dominica","laudes","antiphona","antiphona-i"],
 		"src":"gregobase/13183",
 		"datum":"Miserére mei * Deus, et a delícto meo munda me: quia tibi soli peccávi."
@@ -87,6 +176,24 @@
 		"tags":["hebdomada-septuagesima","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/11729",
 		"datum":"Dixit paterfamílias * operáriis suis: Quid hic statis tota die otiósi? At illi respondéntes dixérunt: Quia nemo nos condúxit. Ite et vos in víneam meam: et quod justum fúerit, dabo vobis."
+	},
+	{
+		"tags":["hebdomada-septuagesima","feria","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Dum deambuláret Dóminus in paradíso ad auram post merídiem, clamávit, et dixit: Adam ubi es? Audívi Dómine vocem tuam,",
+		"responsum":"Et abscóndi me.",
+		"versus":"Vocem tuam audívi in paradíso, et tímui, eo quod nudus essem."
+	},
+	{
+		"tags":["hebdomada-septuagesima","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"In sudóre vultus tui vescéris pane tuo, dixit Dóminus ad Adam: cum operátus fúeris terram, non dabit fructus suos:",
+		"responsum":"Sed spinas et tríbulos germinábit tibi.",
+		"versus":"Quia audísti vocem uxóris tuæ, et comedísti de ligno, ex quo præcéperam tibi ne coméderes, maledícta terra in ópere tuo."
+	},
+	{
+		"tags":["hebdomada-septuagesima","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
+		"incipit":"Formávit Dóminus hóminem de limo terræ,",
+		"responsum":"Et inspirávit in fáciem ejus spiráculum vitæ, et factus est homo in ánimam vivéntem.",
+		"versus":"In princípio fecit Deus cœlum et terram, et plasmávit in ea hóminem."
 	},
 	{
 		"tags":["hebdomada-septuagesima","feria-ii","vesperae","antiphona","antiphona-magnificat"],

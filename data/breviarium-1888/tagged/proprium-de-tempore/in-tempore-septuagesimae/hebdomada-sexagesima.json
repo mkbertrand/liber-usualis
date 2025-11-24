@@ -18,6 +18,89 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomada-sexagesima","feria","feria-v","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Dixit Dóminus ad Noë: Finis univérsæ carnis venit coram me: repléta est terra iniquitáte eórum,",
+		"responsum":"Et ego dispérdam eos cum terra.",
+		"versus":"Fac tibi arcam de lignis lævigátis, mansiúnculas in ea fácies."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-sexagesima","feria","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Noë vir justus atque perféctus, cum Deo ambulávit:",
+		"responsum":"Et fecit ómnia quæcúmque præcépit ei Deus.",
+		"versus":"Fecit sibi arcam, ut salvarétur univérsum semen."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-sexagesima","feria","feria-v","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Quadragínta dies et noctes apérti sunt cœli, et ex omni carne habénte spíritum vitæ ingréssa sunt in arcam:",
+		"responsum":"Et clausit a foris óstium Dóminus.",
+		"versus":"In artículo diéi illíus ingréssus est Noë in arcam, et fílii ejus, et uxor illíus, et uxóres filiórum ejus."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-sexagesima","feria","feria-iii","matutinum","responsorium","responsorium-i"],
+			["hebdomada-sexagesima","feria","feria-vi","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Ædificávit Noë altáre Dómino, ófferens super illud holocaústum: odoratúsque est Dóminus odórem suavitátis, et benedíxit ei, dicens:",
+		"responsum":"Créscite, et multiplicámini, et repléte terram.",
+		"versus":"Ecce ego státuam pactum meum vobíscum, et cum sémine vestro post vos."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-sexagesima","feria","feria-iii","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-sexagesima","feria","feria-vi","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Ponam arcum meum in núbibus cœli, dixit Dóminus ad Noë:",
+		"responsum":"Et recordábor fœ\u0301deris mei, quod pépigi tecum.",
+		"versus":"Cumque obdúxero núbibus cœlum, apparébit arcus meus in núbibus."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-sexagesima","feria","feria-iii","matutinum","responsorium","responsorium-iii"],
+			["hebdomada-sexagesima","feria","feria-vi","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Per memetípsum jurávi, dicit Dóminus, non adjíciam ultra aquas dilúvii super terram: pacti mei recordábor.",
+		"responsum":"Ut non perdam aquis dil1uvii omnem carnem.",
+		"versus":"Arcum meum ponam in núbibus, et erit signum fœ\u0301deris inter me, et inter terram."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-sexagesima","feria","feria-iv","matutinum","responsorium","responsorium-i"],
+			["hebdomada-sexagesima","feria","sabbatum","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Benedíxit Deus Noë, et fíliis ejus, et dixit ad eos:",
+		"responsum":"Créscite, et multiplicámini, et repléte terram.",
+		"versus":"Ecce ego státuam pactum meum vobíscum, et cum sémine vestro post vos."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["hebdomada-sexagesima","feria","feria-iv","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-sexagesima","feria","sabbatum","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Ecce ego státuam pactum meum vobíscum, et cum sémine vestro post vos:",
+		"responsum":"Neque erit deínceps dilúvium díssipans terram.",
+		"versus":"Arcum meum ponam in núbibus, et erit signum fœ\u0301deris inter me, et inter terram."
+	},
+	{
+		"tags":["hebdomada-sexagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"incipit":"Cum turba plúrima convenírent ad Jesum, et de civitátibus properárent ad eum, dixit per similitúdinem:",
+		"responsum":"Éxiit qui séminat, semináre semen suum.",
+		"versus":"Et dum séminat, áliud cécidit in terram bonam, et ortum fecit fructum céntuplum."
+	},
+	{
 		"tags":["hebdomada-sexagesima","dominica","laudes","antiphona","antiphona-i"],
 		"src":"gregobase/12343",
 		"datum":"Secúndum magnam misericórdiam * tuam miserére mei Deus."
@@ -83,6 +166,28 @@
 		"tags":["hebdomada-sexagesima","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1883",
 		"datum":"Vobis datum est * nosse mystérium regni Dei, céteris autem in parábolis, dixit Jesus discípulis suis."
+	},
+	{
+		"tags":[
+			["hebdomada-sexagesima","feria","feria-ii","matutinum","responsorium","responsorium-i"],
+			["hebdomada-sexagesima","feria","feria-iv","matutinum","responsorium","responsorium-iii"],
+			["hebdomada-sexagesima","feria","sabbatum","matutinum","responsorium","responsorium-iii"]
+		],
+		"incipit":"In artículo diéi illíus ingréssus est Noë in arcam, et fílii ejus,",
+		"responsum":"Uxor illíus, et uxóres filiórum ejus.",
+		"versus":"Deléta sunt univérsa de terra, remánsit autem solus Noë, et qui cum eo erant in arca."
+	},
+	{
+		"tags":["hebdomada-sexagesima","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Recordátus Dóminus Noë, addúxit spíritum super terram, et imminútæ sunt aquæ:",
+		"responsum":"Et prohíbitæ sunt plúviæ de cœlis.",
+		"versus":"Reversǽque sunt aquæ de terra eúntes et redeúntes, et cœpérunt mínui post centum quinquagínta dies."
+	},
+	{
+		"tags":["hebdomada-sexagesima","feria","feria-ii","matutinum","responsorium","responsorium-iii"],
+		"incipit":"Quadragínta dies et noctes apérti sunt cœli, et ex omni carne habénte spíritum vitæ ingréssa sunt in arcam:",
+		"responsum":"Et clausit a foris óstium Dóminus.",
+		"versus":"In artículo diéi illíus ingréssus est Noë in arcam, et fílii ejus, et uxor illíus, et uxóres filiórum ejus."
 	},
 	{
 		"tags":["hebdomada-sexagesima","feria-ii","vesperae","antiphona","antiphona-magnificat"],
