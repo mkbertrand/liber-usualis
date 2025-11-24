@@ -383,7 +383,7 @@
 	font-size: 16px !important;
 }
 
-.absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter {
+.absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter {
 	font-weight: bold;
 	color: red;
 }

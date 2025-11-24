@@ -415,6 +415,9 @@ function render(data, chant) {
 					if (unpack(data.datum) == '') {
 						return '';
 					}
+					else if (typeof unpack(data.datum) === 'string' && unpack(data.datum).startsWith('[')) {
+						return stringrender(unpack(data.datum));
+					}
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">` + unpack(data.datum).map((par) => `<p class="rite-text ${data.tags.join(' ')}">${renderinner(par, translated, data.tags.concat(parenttags))}</p>`).join('') + '</div>';
 				}
 
