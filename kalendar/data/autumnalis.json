@@ -1,5 +1,65 @@
 [
 	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":7,
+		"tags":["epistola-ii-corinthios","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":14,
+		"tags":["epistola-galatas","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":17,
+		"tags":["epistola-ephesios","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":21,
+		"tags":["epistola-philippenses","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":23,
+		"tags":["epistola-colossenses","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":25,
+		"tags":["epistola-i-thessalonicenses","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":27,
+		"tags":["epistola-ii-thessalonicenses","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":28,
+		"tags":["epistola-i-timotheum","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":30,
+		"tags":["epistola-ii-timotheum","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":32,
+		"tags":["epistola-titum","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":34,
+		"tags":["epistola-philemonem","incipit-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-infra-epiphaniam",
+		"offset":35,
+		"tags":["epistola-hebraeos","incipit-libri","scriptura"]
+	},
+	{
 		"basis":"dominica-i-augusti",
 		"offset":0,
 		"tags":["de-parabolis","incipit-libri","scriptura"]

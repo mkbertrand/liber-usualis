@@ -303,7 +303,9 @@ def kalendar(year: int) -> Kalendar:
 	easter = geteaster(year)
 	christmas = date(year, 12, 25)
 	adventstart = nextsunday(christmas, weeks=-4)
-	bases = {'dominica-i-adventus': adventstart, 'pascha': easter}
+	epiphanysunday = nextsunday(date(year, 1, 7))
+
+	bases = {'dominica-i-adventus': adventstart, 'pascha': easter, 'dominica-infra-epiphaniam': epiphanysunday}
 
 	i = date(year, 1, 1)
 	while not i == date(year + 1, 1, 1):
@@ -341,15 +343,13 @@ def kalendar(year: int) -> Kalendar:
 	xxiiipentecost = easter + timedelta(weeks=30)
 	xxivpentecost = adventstart - timedelta(weeks=1)
 
-	epiphanysunday = nextsunday(date(year, 1, 7))
-
 	xxiiipentecostentry: Optional[Set[str]] = None
 	omittedepiphanyentry: Optional[Set[str]] = None
 
 	# Octave Processing
 	def octavate(ent_date, entry):
 		if 'habens-octavam' in entry and 'octava-excepta' not in entry:
-			entry_base = entry - ranks - octavevigiltags
+			entry_base = entry - ranks - octavevigiltags - {'scriptura-propria'}
 			for k in range(1,7):
 				date0 = ent_date + timedelta(days=k)
 				entrystripped = entry_base | {'semiduplex','infra-octavam','dies-' + numerals[k]}
@@ -409,6 +409,7 @@ def kalendar(year: int) -> Kalendar:
 
 	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus','per-octavam-epiphaniae'})
 
+	octaveagenda = []
 	# Sanctorals
 	entries = copy.deepcopy(sanctoral)
 	for entry in entries:
@@ -423,7 +424,13 @@ def kalendar(year: int) -> Kalendar:
 		for match_date in set([i.date for i in matches]):
 			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
 				kal.add_entry(match_date + timedelta(days=offset), tagset)
-				octavate(match_date + timedelta(days=offset), tagset)
+				if 'habens-octavam' in entry and 'octava-excepta' not in tagset:
+					octaveagenda.append((match_date + timedelta(days=offset), tagset))
+
+
+	# Do Octave stuff after since there may be manually entered days within Octaves or Octave-Days
+	for i in octaveagenda:
+		octavate(i[0], i[1])
 
 	# Movables
 	entries = copy.deepcopy(movables)
