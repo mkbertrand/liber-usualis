@@ -18,16 +18,31 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De libro Génesis.",
+			"Dixit autem Dóminus ad Abram: Egrédere de terra tua, et de cognatióne tua, et de domo patris tui, et veni in terram, quam monstrábo tibi. Faciámque te in gentem magnam, et benedícam tibi, et magnificábo nomen tuum, erísque benedíctus. Benedícam benedicéntibus tibi, et maledícam maledicéntibus tibi, atque in te benedicéntur univérsæ cognatiónes terræ. Egréssus est ítaque Abram sicut præcéperat ei Dóminus, et ivit cum eo Lot. Septuagínta quinque annórum erat Abram, cum egrederétur de Haran. Tulítque Sárai uxórem suam, et Lot fílium fratris sui, universámque substántiam quam posséderant, et ánimas quas fécerant in Haran: et egréssi sunt ut irent in terram Chánaan. Cumque veníssent in eam, pertransívit Abram terram usque ad locum Sichem, usque ad convállem illústrem: Chananǽus autem tunc erat in terra."
+		]
+	},
+	{
 		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"incipit":"Locútus est Dóminus ad Abrahm, dicens: Egrédere de terra tua, et de cognatióne tua, et veni in terram quam monstrávero tibi:",
 		"responsum":"Et fáciam te in gentem magnam.",
 		"versus":"Benedícens benedícam tibi, et magnificábo nomen tuum, erísque benedíctus."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Appáruit autem Dóminus Abram, et dixit ei: Sémini tuo dabo terram hanc. Qui ædificávit ibi altáre Dómino, qui apparúerat ei. Et inde transgrédiens ad montem, qui erat contra Oriéntem Bethel, teténdit ibi tabernáculum suum, ab Occidénte habens Bethel, et ab Oriénte Hai: ædificávit quoque ibi altáre Dómino, et invocávit nomen ejus. Perrexítque Abram vadens, et ultra progrédiens ad merídiem. Facta est autem fames in terra: descendítque Abram in Ægýptum, ut peregrinarétur ibi: prævalúerat enim fames in terra. Cumque prope esset ut ingrederétur Ægýptum, dixit Sárai uxóri suæ: Novi quod pulchra sis múlier, et quod cum víderint te Ægýptii, dictúri sunt: Uxor ipsíus est: et interfícient me, et te reservábunt. Dic ergo, óbsecro te, quod soror mea sis: ut bene sit mihi propter te, et vivat ánima mea ob grátiam tui."
+	},
+	{
 		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"incipit":"Dum staret Ábraham ad ílicem Mambre, vidit tres viros ascendéntes per viam:",
 		"responsum":"Tres vidit, et unum adorávit.",
 		"versus":"Ecce Sara uxor tua páriet tibi fílium, et vocábis nomen ejus Ísaac."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Cum ítaque ingréssus esset Abram Ægýptum, vidérunt Ægýptii mulíerem quod esset pulchra nimis. Et nuntiavérunt príncipes Pharaóni, et laudavérunt eam apud illum: et subláta est múlier in domum Pharaónis. Abram vero bene usi sunt propter illam: fuerúntque ei oves et boves et ásini, et servi et fámulæ, et ásinæ et caméli. Flagellávit autem Dóminus Pharaónem plagis máximis, et domum ejus propter Sárai uxórem Abram. Vocavítque Phárao Abram, et dixit ei: Quidnam est hoc quod fecísti mihi? quare non indicásti quod uxor tua esset? Quam ob causam dixísti esse sorórem tuam, ut tóllerem eam mihi in uxórem? Nunc ígitur ecce conjux tua, áccipe eam, et vade."
 	},
 	{
 		"tags":[
@@ -39,6 +54,13 @@
 		"versus":"Vocátus quoque a Dómino, respóndit, Adsum: et ait ei Dóminus."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex libro sancti Ambrósii Epíscopi de Ábraham Patriárcha.",
+			"Magnus plane vir Ábraham et multárum virtútum clarus insígnibus, quem votis suis philosophía non pótuit æquáre. Dénique minus est quod illa finxit, quam quod iste gessit: majórque ambitióso eloquéntiæ mendácio simplex veritátis fides. Ítaque cujúsmodi fúerit in eo viro devótio, considerémus. Ea enim virtus órdine prima est, quæ est fundaméntum ceterárum: meritóque hanc ab eo primam exégit Deus, dicens: Exi de terra tua, et de cognatióne tua, et de domo patris tui. Satis fúerat dixísse, de terra tua. Ibi enim erat exíre de cognatióne, exíre de patérna domo."
+		]
+	},
+	{
 		"tags":[
 			["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["hebdomada-quinquagesima","feria","feria-iii","matutinum","responsorium","responsorium-i"]
@@ -46,6 +68,10 @@
 		"incipit":"Ángelus Dómini vocávit Ábraham, dicens:",
 		"responsum":"Ne exténdas manum tuam super púerum, eo quod tímeas Dóminum.",
 		"versus":"Cumque extendísset manum ut immoláret fílium, ecce Ángelus Dómini de cœlo clamávit, dicens."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Sed ídeo áddidit síngula, ut ejus afféctum probáret: ne forte aut imprudénter cœpísse viderétur, aut fraus áliqua mandátis cœléstibus pararétur. Sed sicut coacervánda fuérunt præcépta, ne quid latéret; ita étiam proponénda prǽmia, ne forte desperáret. Tentátur ut fortis, incitátur ut fidélis, provocátur ut justus: meritóque exívit, quemádmodum locútus est illi Dóminus. Et exívit cum eo Lot. Hoc autem, quod pro magno inter septem sapiéntum dicta celebrátur, Séquere Deum; perfécit Ábraham, factóque sapiéntum dicta prævénit, et secútus Deum exívit de terra sua."
 	},
 	{
 		"tags":[
@@ -57,6 +83,10 @@
 		"versus":"Possidébit semen tuum portas inimicórum tuórum, et benedicéntur in sémine tuo omnes tribus terræ."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Sed quia ante terra ei fúerat ália, hoc est, régio Chaldæórum, de qua exívit Thare pater Ábrahæ, et in Charran demigrávit: et quia secum edúxit nepótem suum, cui dictum fúerat, Exi de cognatióne tua: considerémus, ne forte hoc sit exíre de terra sua, de hujus terræ, hoc est, de córporis nostri quadam commoratióne égredi, de qua exívit Paulus, qui dixit: Nostra autem conversátio in cœlis est."
+	},
+	{
 		"tags":[
 			["hebdomada-quinquagesima","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 			["hebdomada-quinquagesima","feria","feria-iii","matutinum","responsorium","responsorium-iii"]
@@ -66,16 +96,33 @@
 		"versus":"Óbsecro Dómine, fac misericórdiam cum servo tuo."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"In illo témpore: Assúmpsit Jesus duódecim, et ait illis: Ecce ascéndimus Jerosólymam, et consummabúntur ómnia, quæ scripta sunt per Prophétas de Fílio hóminis. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"Redémptor noster, prǽvidens ex passióne sua discipulórum ánimos perturbándos, eis longe ante et ejúsdem passiónis pœnam, et resurrectiónis suæ glóriam prædíxit: ut cum eum moriéntem, sicut prædíctum est, cérnerent; étiam resurrectúrum non dubitárent. Sed quia carnáles adhuc discípuli nullo modo valébant cápere verba mystérii, venítur ad miráculum. Ante eórum óculos cæcus lumen recépit: ut qui cœléstis mystérii verba non cáperent, eos ad fidem cœléstia facta solidárent."
+		]
+	},
+	{
 		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
 		"incipit":"Veni hódie ad fontem aquæ, et orávi Dóminum, dicens:",
 		"responsum":"Dómine Deus Ábraham, tu prósperum fecísti desidérium meum.",
 		"versus":"Ígitur puélla, cui díxero, Da mihi aquam de hýdria tua, ut bibam: et illa díxerit, Bibe dómine, et camélis tuis potum tríbuam: ipsa est, quam præparávit Dóminus fílio dómini mei."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Sed mirácula Dómini et Salvatóris nostri sic accipiénda sunt, fratres caríssimi, ut et in veritáte credántur facta, et tamen per significatiónem nobis áliquid ínnuant. Ópera quippe ejus et per poténtiam áliud osténdunt, et per mystérium áliud loquúntur. Ecce enim, quis juxta históriam cæcus iste fúerit, ignorámus: sed tamen quid per mystérium signíficet, nóvimus. Cæcum quippe est genus humánum, quod in parénte primo a paradísi gaúdiis expúlsum, claritátem supérnæ lucis ignórans, damnatiónis suæ ténebras pátitur. Sed tamen per Redemptóris sui præséntiam illuminátur: ut intérnæ lucis gaúdia jam per desidérium vídeat, atque in via vitæ boni óperis gressus ponat."
+	},
+	{
 		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"incipit":"Factus est sermo Dómini ad Abram, dicens:",
 		"responsum":"Noli timére Abram: ego protéctor tuus sum, et merces tua magna nimis.",
 		"versus":"Ego enim sum Dóminus Deus tuus, qui edúxi te de Ur Chaldæórum."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Notándum vero est, quod cum Jesus Jéricho appropinquáre dícitur, cæcus illuminátur. Jéricho quippe luna interpretátur: luna autem in sacro elóquio pro deféctu carnis pónitur: quia dum ménstruis moméntis decréscit, deféctum nostræ mortalitátis desígnat. Dum ígitur Cónditor noster appropínquat Jéricho, cæcus ad lumen redit: quia dum divínitas deféctum nostræ carnis suscépit, humánum genus lumen, quod amíserat, recépit. Unde enim Deus humána pátitur, inde homo ad divína sublevátur. Qui vidélicet cæcus recte et juxta viam sedére, et mendícans esse descríbitur. Ipsa enim Véritas dicit: Ego sum via."
 	},
 	{
 		"tags":["hebdomada-quinquagesima","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
@@ -156,16 +203,40 @@
 		"datum":"Stans autem Jesus * jussit cæcum addúci ad se, et ait illi: Quid vis ut fáciam tibi? Dómine, ut vídeam. Et Jesus ait illi: Réspice, fides tua te salvum fecit. Et conféstim vidit, et sequebátur illum, magníficans Deum."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","feria-ii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"De libro Génesis.",
+			"Ascéndit ergo Abram de Ægýpto, ipse et uxor ejus, et ómnia quæ habébat, et Lot cum eo ad Austrálem plagam. Erat autem dives valde in possessióne auri et argénti. Reversúsque est per iter, quo vénerat, a Merídie in Bethel usque ad locum ubi prius fíxerat tabernáculum inter Bethel et Haï: in loco altáris quod fécerat prius, et invocávit ibi nomen Dómini. Sed et Lot qui erat cum Abram, fuérunt greges óvium, et arménta, et tabernácula. Nec póterat eos cápere terra, ut habitárent simul: erat quippe substántia eórum multa, et nequíbant habitáre commúniter."
+		]
+	},
+	{
 		"tags":["hebdomada-quinquagesima","feria","feria-ii","matutinum","responsorium","responsorium-i"],
 		"incipit":"Movens Abram tabernáculum suum, venit et habitávit juxta convállem Mambre:",
 		"responsum":"Ædificavítque ibi altáre Dómino.",
 		"versus":"Dixit autem Dóminus ad eum: Leva óculos tuos, et vide: omnem terram quam cónspicis, tibi dabo, et sémini tuo in sempitérnum."
 	},
 	{
+		"tags":["hebdomada-quinquagesima","feria-ii","matutinum","lectio","lectio-ii"],
+		"datum":"Unde et facta est rixa inter pastóres gregum Abram et Lot. Eo autem témpore Chananǽus et Pherezǽus habitábant in terra illa. Dixit ergo Abram ad Lot: Ne quæso sit júrgium inter me et te, et inter pastóres meos, et pastóres tuos: fratres enim sumus. Ecce univérsa terra coram te est: recéde a me, óbsecro: si ad sinístram íeris, ego déxteram tenébo: si tu déxteram elégeris, ego ad sinístram pergam. Elevátis ítaque Lot óculis, vidit omnem circa regiónem Jordánis, quæ univérsa irrigabátur ántequam subvérteret Dóminus Sódomam et Gomórrham, sicut paradísus Dómini, et sicut Ægýptus veniéntibus in Segor. Elegítque sibi Lot regiónem circa Jordánem, et recéssit ab Oriénte."
+	},
+	{
 		"tags":["hebdomada-quinquagesima","feria","feria-ii","matutinum","responsorium","responsorium-ii"],
 		"incipit":"Crédidit Abram Deo, et reputátum est ei ad justítiam:",
 		"responsum":"Et ídeo amícus Dei factus est.",
 		"versus":"Fuit autem justus coram Dómino, et ambulávit in viis ejus."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","feria-ii","matutinum","lectio","lectio-iii"],
+		"datum":"Divisíque sunt altérutrum a fratre suo. Abram habitávit in terra Chánaan: Lot vero morátus est in óppidis, quæ erant circa Jordánem, et habitávit in Sódomis. Hómines autem Sodomítæ péssimi erant, et peccatóres coram Dómino nimis. Dixítque Dóminus ad Abram, postquam divísus est ab eo Lot: Leva óculos tuos, et vide a loco, in quo nunc es, ad Aquilónem et Merídiem, ad Oriéntem et Occidéntem. Omnem terram, quam cónspicis, tibi dabo, et sémini tuo usque in sempitérnum. Faciámque semen tuum sicut púlverem terræ."
+	},
+	{
+		"tags":["hebdomada-quinquagesima","feria-iii","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Génesis.",
+			"Et egréssi sunt rex Sodomórum, et rex Gomórrhæ, rexque Ádamæ, et rex Séboïm, necnon et rex Balæ, quæ est Segor: et direxérunt áciem contra eos in valle Silvéstri: scílicet advérsus Chodorlahómor regem Elamitárum, et Thadal regem Géntium, et Ámraphel regem Sénnaar, et Árioch regem Ponti: quátuor reges advérsus quinque. Vallis autem Silvéstris habébat púteos multos bitúminis. Ítaque rex Sodomórum, et Gomórrhæ terga vertérunt, ceciderúntque ibi: et qui remánserant, fugérunt ad montem. Tulérunt autem omnem substántiam Sodomórum et Gomórrhæ, et univérsa quæ ad cibum pértinent, et abiérunt: necnon et Lot et substántiam ejus, fílium fratris Abram, qui habitábat in Sódomis."
+		],
+		"lectio-ii":"Et ecce unus, qui eváserat, nuntiávit Abram Hebrǽo, qui habitábat in conválle Mambre Amorrhǽi, fratris Escol, et fratris Aner: hi enim pepígerant fœdus cum Abram. Quod cum audísset Abram, captum vidélicet Lot fratrem suum, numerávit expedítos vernáculos suos trecéntos decem et octo: et persecútus est usque Dan. Et divísis sóciis, írruit super eos nocte: percussítque eos, et persecútus est eos usque Hoba, quæ est ad lævam Damásci. Reduxítque omnem substántiam, et Lot fratrem suum cum substántia illíus, mulíeres quoque et pópulum.",
+		"lectio-iii":"Egréssus est autem rex Sodomórum in occúrsum ejus, postquam revérsus est a cæde Chodorlahómor, et regum qui cum eo erant in valle Save, quæ est vallis regis. At vero Melchísedech rex Salem, próferens panem et vinum, erat enim sacérdos Dei altíssimi, benedíxit ei, et ait: Benedíctus Abram Deo excélso, qui creávit cœlum et terram: et benedíctus Deus excélsus, quo protegénte, hostes in mánibus tuis sunt. Et dedit ei décimas ex ómnibus."
 	},
 	{
 		"tags":["hebdomada-quinquagesima","feria-iii","vesperae","antiphona","antiphona-magnificat"],
