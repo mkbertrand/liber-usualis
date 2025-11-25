@@ -7,5 +7,9 @@
 		"tags":["hilarion","collecta"],
 		"datum":"Intercéssio nos, quǽsumus Dómine, beáti Hilariónis Abbátis comméndet: + ut quod nostris méritis non valémus, * ejus patrocínio assequámur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hilarion","matutinum","lectio"],
+		"lectio-i":[["temporale","occurrens","lectio-i","lectio"],["temporale","occurrens","lectio-ii","lectio"],["temporale","occurrens","lectio-iii","lectio"]]
 	}
 ]
