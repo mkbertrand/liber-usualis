@@ -345,7 +345,7 @@ function render(data, chant) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[3])}<br>`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[1])}<br>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(1).join('<br>'))}<br>`
 						} else if (!btags.includes('lectio-i')) {
 							if (Array.isArray(reading)) { reading = reading.join('<br>')};
 							return `<p class="rite-text lectio-sequens ${data.tags.join(' ')}">${stringrender(reading)}<br>`
