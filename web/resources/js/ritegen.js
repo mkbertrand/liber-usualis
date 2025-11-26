@@ -146,6 +146,15 @@ function unpack(data) {
 	}
 };
 
+// Digs out nested data recursively (useful for translation)
+function claw(data) {
+	if (typeof data.datum === 'string' || Array.isArray(data.datum)) {
+		return data;
+	} else {
+		return claw(data.datum);
+	}
+}
+
 trivialchants = ['deus-in-adjutorium'];
 function stringrender(data) {
 	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
@@ -208,11 +217,11 @@ function render(data, chant) {
 	function renderinner(data, translated = null, parenttags) {
 		try {
 			if (translationpool != null && typeof data === 'object' && 'tags' in data) {
-				tags = data.tags;
+				var tags = data.tags;
 				tags.sort();
-				tran = translationpool[tags.join('+')];
+				var tran = translationpool[tags.join('+')];
 				if (tran != null) {
-					translated = tran.datum;
+					translated = JSON.parse(JSON.stringify(tran.datum));
 				}
 			}
 
@@ -234,7 +243,7 @@ function render(data, chant) {
 				if (data == '') {
 					return '';
 				}
-				if (translated != null && typeof translated === 'string') {
+				if (translated != null && typeof translated === 'string' && translated != '') {
 					translated = translated.replaceAll(/\[.+?\]/g, '').trim().replaceAll(/([0-9]+)\s/g, '');
 					rendered = stringrender(data);
 					if (rendered.includes('<br>')) {
@@ -289,12 +298,11 @@ function render(data, chant) {
 						}
 					}
 					if (translationpool != null && translated != null) {
-						trans = translated;
-						alldefined = true;
+						var trans = translated;
+						var alldefined = true;
 						for (var i = 0; i < translated.length; i++) {
 							if (trans[i] == '') {
-								tran = translationpool[data.datum[i].tags.join('+')];
-								trans[i] = unpack(tran);
+								trans[i] = unpack(translationpool[claw(data.datum[i]).tags.join('+')]);
 								if (trans[i] == undefined) {
 									alldefined = false;
 									break;
@@ -303,6 +311,8 @@ function render(data, chant) {
 						}
 						if (alldefined) {
 							translated = trans.join('').split('\n');
+						} else {
+							translated = null;
 						}
 					}
 					data.datum = unpack(data.datum).join('').split('\n');
@@ -340,18 +350,22 @@ function render(data, chant) {
 				} else if (data.tags.includes('lectio')) {
 					reading = unpack(data);
 					if (!(typeof data.datum === 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('commemoratio-matutini'))) {
+						if (!translated) {
+							translated = Array(reading.length).fill('', 0);
+						}
 						// For the first reading from a Homily
 						if (Array.isArray(reading) && reading[0].includes('Evangélii')) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading[3])}<br>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(3).join(' '))}<br>`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(1).join('<br>'))}<br>`
-						} else if (!btags.includes('lectio-i')) {
-							if (Array.isArray(reading)) { reading = reading.join('<br>')};
-							return `<p class="rite-text lectio-sequens ${data.tags.join(' ')}">${stringrender(reading)}<br>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(1).join(' '))}<br>`
+						// Weird structuring but basically this is needed since sometimes readings are begun without title.
+						} else if (btags.includes('lectio-i')) {
+							if (Array.isArray(reading)) { reading = reading.join(' ')};
+							return `<p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${renderinner(reading, translated, [])}`
 						} else {
-							if (Array.isArray(reading)) { reading = reading.join('<br>')};
-							return `<p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading)}<br>`
+							if (Array.isArray(reading)) { reading = reading.join(' '); translated = translated.join(' ');};
+							return `<p class="rite-text lectio-sequens ${data.tags.join(' ')}">${renderinner(reading, translated, [])}`
 						}
 					}
 

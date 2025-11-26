@@ -6,7 +6,10 @@
 			["matutinum","feria-ii","absolutio"],
 			["matutinum","feria-v","absolutio"]
 		],
-		"datum":"Exaúdi Dómine Jesu Christe preces servórum tuórum, + et miserére nobis, * qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum."
+		"datum":[
+			"Exaúdi Dómine Jesu Christe preces servórum tuórum, + et miserére nobis, * qui cum Patre et Spíritu sancto vivis et regnas in sǽcula sæculórum.",
+			"R. Amen."
+		]
 	},
 	{
 		"tags":[
@@ -41,7 +44,10 @@
 			["matutinum","feria-iii","absolutio"],
 			["matutinum","feria-vi","absolutio"]
 		],
-		"datum":"Ipsíus píetas et misericórdia nos ádjuvet, * qui cum Patre et Spíritu sancto vivit et regnat in sǽcula sæculórum."
+		"datum":[
+			"Ipsíus píetas et misericórdia nos ádjuvet, * qui cum Patre et Spíritu sancto vivit et regnat in sǽcula sæculórum.",
+			"R. Amen."
+		]
 	},
 	{
 		"tags":[
@@ -73,7 +79,10 @@
 			["matutinum","feria-iv","absolutio"],
 			["matutinum","sabbatum","absolutio"]
 		],
-		"datum":"A vínculis peccatórum nostrórum * absólvat nobis omnípotens et miséricors Dóminus."
+		"datum":[
+			"A vínculis peccatórum nostrórum * absólvat nobis omnípotens et miséricors Dóminus.",
+			"R. Amen."
+		]
 	},
 	{
 		"tags":[
@@ -147,7 +156,10 @@
 	},
 	{
 		"tags":["matutinum","bmv-sabbatum","absolutio"],
-		"datum":"Précibus et méritis beátæ Maríæ semper Vírginis, et ómnium Sanctórum, * perdúcat nos Dóminus ad regna cœlórum."
+		"datum":[
+			"Précibus et méritis beátæ Maríæ semper Vírginis, et ómnium Sanctórum, * perdúcat nos Dóminus ad regna cœlórum.",
+			"R. Amen."
+		]
 	},
 	{
 		"tags":["matutinum","bmv-sabbatum","benedictio"],

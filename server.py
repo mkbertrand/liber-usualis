@@ -205,7 +205,7 @@ def rite():
 				translation = parameters['translation']
 				search = set(tags) | {translation}
 				transroot = f'{root}/translations/{translation}'
-				return breviarium.search(root, search, datamanage.getpile(transroot, search | breviarium.defaultpile), rootappendix=f'/translations/{translation}')
+				return breviarium.search(root, search, datamanage.getpile(transroot, primary | set(hours) | search | breviarium.defaultpile), rootappendix=f'/translations/{translation}')
 
 			def traverse(obj):
 				if type(obj) is dict and 'tags' in obj:

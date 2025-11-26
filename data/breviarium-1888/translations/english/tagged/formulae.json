@@ -42,13 +42,44 @@
 		"datum":"Thanks be to God."
 	},
 	{
+		"tags":["formula","responsorium"],
+		"datum":[
+			"R. ",""," * ","",
+			"\nV. ","",
+			"\nR. ",""
+		]
+	},
+	{
+		"tags":[
+			["formula","responsorium","gloria"],
+			["formula","responsorium","gloria","simplex-responsum"]
+		],
+		"datum":[
+			"R. ",""," * ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
+			"\nR. ",""
+		]
+	},
+	{
+		"tags":["formula","responsorium","gloria","duplex-responsum"],
+		"datum":[
+			"R. ",""," * ",""," * ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
+			"\nR. ",""
+		]
+	},
+	{
 		"tags":["formula","responsorium-breve"],
 		"datum":[
 			"R. br. ",""," * ","",
 			"\n","",", ","",
 			"\nV. ","",
 			"\nR. ","",
-			"\nV. Glory be to the Father, and to the Son, and to the Holy Spirit.",
+			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
 			"\nR. ","",", ",""
 		]
 	},
