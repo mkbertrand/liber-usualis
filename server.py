@@ -183,12 +183,13 @@ def rite():
 		pile = datamanage.getpile(root, breviarium.defaultpile | primary | set(hours))
 
 		noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
-		if noending:
+		if noending and not 'antiphona-bmv' in primary:
 			tags.append({'fidelium-animae', 'hoc-omissum'} | set(hours))
 			tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'} | set(hours))
 		lit = []
 		for hour in hours:
 			lit.append({'ritus', hour})
+
 		rite = breviarium.process(root, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 		tags.append(primary)
 
