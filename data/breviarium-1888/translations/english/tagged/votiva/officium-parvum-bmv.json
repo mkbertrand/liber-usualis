@@ -25,7 +25,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","completorium","collecta"],
-		"datum":"Lord, we pray Thee, that the glorious intercession of Mary, blessed, and glorious, and everlastingly Virgin, may shield us and bring us on toward eternal life."
+		"datum":"Lord, we pray Thee, that the glorious intercession of Mary, blessed, and glorious, and everlastingly Virgin, may shield us * and bring us on toward eternal life."
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","antiphona","antiphona-invitatorium"],
@@ -36,5 +36,60 @@
 		"lectio-i":"With all these I sought rest, but I shall abide in the inheritance of the Lord. So the Creator of all things gave me a commandment, and said unto me, even He that made me rested in my tabernacle, and said unto me, Let thy dwelling be in Jacob, and thine inheritance in Israel, and strike thou thy roots amid My chosen people.",
 		"lectio-ii":"And so was I established in Zion, and likewise in the Holy City was I given to rest, and in Jerusalem was my power. And I took root among the honourable people, even in the portion of my God, as His own inheritance, and mine abiding was in the full assembly of the Saints.",
 		"lectio-iii":"I was exalted like a cedar in Lebanon, and as a cypress-tree upon Mount Zion. I was exalted like a palm-tree in Kadesh, and as a rose plant in Jericho, as a fair olive-tree in the plains, and grew up as a plane tree beside the water in the broad ways. I gave a sweet smell like cinnamon and aromatic balm; I yielded a pleasant odour like the best myrrh."
+	},
+	{
+		"tags":["officium-parvum-bmv","laudes","capitulum"],
+		"datum":"The daughters of Zion saw her, and called her blessed; the queens also, and they praised her."
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","laudes","versiculus"],
+			["officium-parvum-bmv","sexta","versiculus"]
+		],
+		"datum":["V. Blessed art thou among women.","R. And blessed is the Fruit of thy womb."]
+	},
+	{
+		"tags":["officium-parvum-bmv","laudes","antiphona","antiphona-benedictus"],
+		"datum":"O Blessed Mary, Mother of God, * Virgin for ever, temple of the Lord, sanctuary of the Holy Ghost, thou, without any ensample before thee, didst make thyself well-pleasing in the sight of our Lord Jesus Christ pray for the people, plead for the clergy, make intercession for all women vowed to God."
+	},
+	{
+		"tags":["officium-parvum-bmv","laudes","collecta"],
+		"datum":"O God, Who didst will that Thy Word should, by the message of an Angel, take flesh in the womb of the Blessed Virgin Mary, * grant unto us, we beseech Thee, that all we who do believe her to be in very deed the Mother of God, may be holpen by her prayers in Thy sight."
+	},
+	{
+		"tags":["officium-parvum-bmv","prima","capitulum"],
+		"datum":"Who is she that cometh forth like the rising dawn, fair as the moon, clear as the sun, terrible as a fenced camp set in battle array?"
+	},
+	{
+		"tags":["officium-parvum-bmv","prima","versiculus"],
+		"datum":["V. Holy Virgin, my praise by thee accepted be.","R. Give me strength against thine enemies."]
+	},
+	{
+		"tags":["officium-parvum-bmv","prima","collecta"],
+		"datum":"God, Who wast pleased to choose for Thy dwelling-place the maiden palace of Blessed Mary, + grant, we beseech Thee, that her protection may shield us, * and make us glad in her commemoration."
+	},
+	{
+		"tags":["officium-parvum-bmv","tertia","capitulum"],
+		"datum":"And so I was established in Zion, and likewise in the holy city was I given to rest, and in Jerusalem was my power."
+	},
+	{
+		"tags":["officium-parvum-bmv","tertia","collecta"],
+		"datum":"O God, Who, by the fruitful virginity of the Blessed Mary, hast given unto mankind the rewards of everlasting life; + grant, we beseech Thee, that we may continually feel the might of her intercession * through whom we have worthily received the Author of our life, our Lord Jesus Christ, Thy Son,"
+	},
+	{
+		"tags":["officium-parvum-bmv","sexta","capitulum"],
+		"datum":"And I took root among the honourable people, even in the portion of my God, as His own inheritance, and mine abiding was in the full assembly of the Saints."
+	},
+	{
+		"tags":["officium-parvum-bmv","sexta","collecta"],
+		"datum":"Most merciful God, grant, we beseech Thee, a succour unto the frailty of our nature, + that as we keep ever alive the memory of the holy Mother of God, * so by the help of her intercession we may be raised up from the bondage of our sins."
+	},
+	{
+		"tags":["officium-parvum-bmv","nona","versiculus"],
+		"datum":["V. After thy delivery thou still remainest a Virgin undefiled.","R. Mother of God, pray for us."]
+	},
+	{
+		"tags":["officium-parvum-bmv","nona","collecta"],
+		"datum":"O Lord, we beseech Thee, forgive the transgressions of Thy servants, + and, forasmuch as by our own deeds we cannot please Thee, * may we find safety through the prayers of the Mother of Thy Son and our Lord."
 	}
 ]

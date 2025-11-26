@@ -108,9 +108,27 @@
 		"datum":["Through our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","Amen."]
 	},
 	{
+		"tags":["per-eumdem-dominum"],
+		"datum":["Through the Same our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","Amen."]
+	},
+	{
 		"tags":["per-eumdem-christum"],
 		"datum":[
 			"Through the same Christ our Lord.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["qui-vivis"],
+		"datum":[
+			"Who livest and reignest with God the Father, in the unity of the Holy Ghost, one God, world without end.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["qui-tecum-vivit"],
+		"datum":[
+			"Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.",
 			"R. Amen."
 		]
 	},
