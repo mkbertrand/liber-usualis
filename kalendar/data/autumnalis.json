@@ -321,8 +321,23 @@
 	},
 	{
 		"basis":"dominica-i-septembris",
-		"offset":18,
+		"offset":17,
 		"tags":["liber-tobiae","dies-iv-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-i-septembris",
+		"offset":18,
+		"tags":["liber-tobiae","dies-v-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-i-septembris",
+		"offset":19,
+		"tags":["liber-tobiae","dies-vi-libri","scriptura"]
+	},
+	{
+		"basis":"dominica-i-septembris",
+		"offset":20,
+		"tags":["liber-tobiae","dies-vii-libri","scriptura"]
 	},
 	{
 		"basis":"dominica-i-septembris",

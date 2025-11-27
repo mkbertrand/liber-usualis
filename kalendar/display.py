@@ -106,6 +106,7 @@ def kalendar2() -> Kalendar:
 				kal.add_entry(date0, entrystripped)
 
 	movables = []
+	octaveagenda = []
 	# Sanctorals
 	entries = copy.deepcopy(sanctoral)
 	for entry in entries:
@@ -125,7 +126,11 @@ def kalendar2() -> Kalendar:
 		for match_date in set([i.date for i in matches]):
 			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
 				kal.add_entry(match_date + timedelta(days=offset), tagset)
-				octavate(match_date + timedelta(days=offset), tagset)
+				if 'habens-octavam' in tagset and 'octava-excepta' not in tagset:
+					octaveagenda.append((match_date + timedelta(days=offset), tagset))
+
+	for i in octaveagenda:
+		octavate(i[0], i[1])
 
 	# Nativity & Epiphany
 	for entry in nativitycycle:

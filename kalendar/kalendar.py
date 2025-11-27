@@ -412,7 +412,7 @@ def kalendar(year: int) -> Kalendar:
 	octaveagenda = []
 	# Sanctorals
 	entries = copy.deepcopy(sanctoral)
-	for entry in entries:
+	for entry in []:
 		matches = None
 		if type(entry['occurrence']) is list:
 			matches = []
