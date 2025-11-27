@@ -481,6 +481,13 @@
 		"datum":"Adónai Dómine * Deus magne et mirábilis, qui dedísti salútem in manu féminæ, exaúdi preces servórum tuórum."
 	},
 	{
+		"tags":["liber-judith","incipit-libri","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Íncipit liber Judith.",
+			"Arpháxad ítaque, rex Medórum, subjugáverat multas gentes império suo, et ipse ædificávit civitátem potentíssimam, quam appellávit Ecbátanis, ex lapídibus quadrátis et sectis: fecit muros ejus in altitúdinem cubitórum septuagínta, et in latitúdinem cubitórum trigínta, turres vero ejus pósuit in altitúdinem cubitórum centum. Per quadrum vero eárum latus utrúmque vicenórum pedum spátio tendebátur, posuítque portas ejus in altitúdinem túrrium: et gloriabátur quasi potens in poténtia exércitus sui, et in glória quadrigárum suárum."
+		]
+	},
+	{
 		"tags":[
 			["liber-judith","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
 			["liber-judith","feria","feria-ii","matutinum","responsorium","responsorium-i"],
@@ -489,6 +496,14 @@
 		"incipit":"Adónai Dómine Deus magne et mirábilis, qui dedísti salútem in manu féminæ:",
 		"responsum":"Exaúdi preces servórum tuórum.",
 		"versus":"Benedíctus es Dómine, qui non derelínquis præsuméntes de te, et de sua virtúte gloriántes humílias."
+	},
+	{
+		"tags":["liber-judith","incipit-libri","matutinum","lectio","lectio-ii"],
+		"datum":"Anno ígitur duodécimo regni sui: Nabuchodónosor rex Assyriórum, qui regnábat in Nínive civitáte magna, pugnávit contra Arpháxad, et obtínuit eum in campo magno, qui appellátur Rágau, circa Euphráten, et Tigrin, et Jádason in campo Érioch regis Elicórum. Tunc exaltátum est regnum Nabuchodónosor, et cor ejus elevátum est: et misit ad omnes, qui habitábant in Cilícia, et Damásco, et Líbano, et ad gentes quæ sunt in Carmélo, et Cedar, et inhabitántes Galilǽam in campo magno Ésdrelon, et ad omnes qui erant in Samaría, et trans flumen Jordánem usque ad Jerúsalem, et omnem terram Jesse quoúsque perveniátur ad términos Æthiópiæ."
+	},
+	{
+		"tags":["liber-judith","incipit-libri","matutinum","lectio","lectio-iii"],
+		"datum":"Ad hos omnes misit núntios Nabuchodónosor rex Assyriórum: qui omnes uno ánimo contradixérunt, et remisérunt eos vácuos, et sine honóre abjecérunt. Tunc indignátus Nabuchodónosor rex advérsus omnem terram illam, jurávit per thronum et regnum suum quod defénderet se de ómnibus regiónibus his. Anno tertiodécimo Nabuchodónosor regis, vigésima et secúnda die mensis primi factum est verbum in domo Nabuchodónosor regis Assyriórum ut defénderet se. Vocavítque omnes majóres natu, omnésque duces, et bellatóres suos, et hábuit cum eis mystérium consílii sui: dixítque cogitatiónem suam in eo esse, ut omnem terram suo subjugáret império."
 	},
 	{
 		"tags":[
@@ -506,6 +521,13 @@
 		"versus":"Benedíctus Dóminus, qui creávit cœlum et terram: quia hódie nomen tuum ita magnificávit."
 	},
 	{
+		"tags":["liber-judith","incipit-libri","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex libro sancti Ambrósii Epíscopi de Elía et jejúnio.",
+			"Poténtes vinum prohibéntur bíbere, ne cum bíberint, obliviscántur sapiéntiam. Dénique bibébant vinum in ebrietáte poténtes, qui Holoférni príncipi milítiæ regis Assyriórum se trádere gestiébant: sed non bibébat fémina Judith, jejúnans ómnibus diébus viduitátis suæ, præter festórum diérum solemnitátes. His armis muníta procéssit, et omnem Assyriórum circumvénit exércitum. Sóbrii vigóre consílii ábstulit Holoférnis caput, servávit pudicítiam, victóriam reportávit."
+		]
+	},
+	{
 		"tags":[
 			["liber-judith","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["liber-judith","feria","feria-iii","matutinum","responsorium","responsorium-i"],
@@ -519,6 +541,10 @@
 		"versus":"Indulgéntiam ipsíus fusis lácrimis postulémus, et humiliémus illi ánimas nostras."
 	},
 	{
+		"tags":["liber-judith","incipit-libri","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Hæc enim succíncta jejúnio in castris prætendébat aliénis: ille vino sepúltus jacébat, ut ictum vúlneris sentíre non posset. Ítaque uníus mulíeris jejúnium innúmeros stravit exércitus Assyriórum. Esther quoque púlchrior facta est jejúnio: Dóminus enim grátiam sóbriæ mentis augébat. Omne genus suum, id est, totum pópulum Judæórum a persecutiónis acerbitáte liberávit, ita ut regem sibi fáceret esse subjéctum."
+	},
+	{
 		"tags":[
 			["liber-judith","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 			["liber-judith","feria","feria-iii","matutinum","responsorium","responsorium-ii"],
@@ -527,6 +553,10 @@
 		"incipit":"Dominátor Dómine cœlórum et terræ, Creátor aquárum, Rex univérsæ creatúræ:",
 		"responsum":"Exaúdi oratiónem servórum tuórum.",
 		"versus":"Tu Dómine, cui humílium semper et mansuetórum plácuit deprecátio."
+	},
+	{
+		"tags":["liber-judith","incipit-libri","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Ítaque illa, quæ tríduo jejunávit contínuo, et corpus suum aqua lavit, plus plácuit, et vindíctam rétulit: Aman autem, dum se regáli jactat convívio, inter ipsa vina pœnam suæ ebrietátis exsólvit. Est ergo jejúnium reconciliatiónis sacrifícium, virtútis increméntum, quod fecit étiam féminas fortióres augménto grátiæ. Jejúnium nescit fœneratórem, non sortem fœ\u0301noris novit: non rédolet usúras mensa jejunántium: étiam ipsis jejúnium convíviis dat grátiam. Dulcióres post famem épulæ fiunt, quæ assiduitáte fastídio sunt, et diutúrna continuatióne viléscunt. Condiméntum cibi jejúnium est. Quanto avídior appeténtia, tanto esca jucúndior."
 	},
 	{
 		"tags":[
@@ -552,6 +582,60 @@
 		"incipit":"Confórta me Rex, sanctórum principátum tenens:",
 		"responsum":"Et da sermónem rectum, et bene sonántem in os meum.",
 		"versus":"Dómine Rex univérsæ potestátis convérte consílium eórum super eos."
+	},
+	{
+		"tags":["liber-judith","dies-ii-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Judith.",
+			"Fílii Ísraël, qui habitábant in terra Juda, timuérunt valde a fácie Holoférnis. Tremor, et horror invásit sensus eórum, ne hoc fáceret Jerúsalem et templo Dómini, quod fécerat céteris civitátibus et templis eárum. Et misérunt in omnem Samaríam per circúitum usque Jéricho, et præoccupavérunt omnes vértices móntium: et muris circumdedérunt vicos suos, et congregavérunt fruménta in præparatiónem pugnæ."
+		],
+		"lectio-ii":"Sacérdos étiam Elíachim scripsit ad univérsos, qui erant contra Ésdrelon, quæ est contra fáciem campi magni juxta Dóthain, et univérsos, per quos viæ tránsitus esse póterat, ut obtinérent ascénsus móntium, per quos via esse póterat ad Jerúsalem, et illic custodírent ubi angústum iter esse póterat inter montes. Et fecérunt fílii Ísraël secúndum quod constitúerat eis sacérdos Dómini Elíachim. Et clamávit omnis pópulus ad Dóminum instántia magna, et humiliavérunt ánimas suas in jejúniis, et oratiónibus, ipsi et mulíeres eórum.",
+		"lectio-iii":"Et induérunt se sacerdótes cilíciis, et infántes prostravérunt contra fáciem templi Dómini, et altáre Dómini operuérunt cilício: et clamavérunt ad Dóminum Deum Ísraël unanímiter ne daréntur in prædam infántes eórum, et uxóres eórum in divisiónem, et civitátes eórum in extermínium, et sancta eórum in pollutiónem, et fíerent oppróbrium Géntibus. Tunc Elíachim, sacérdos Dómini magnus, circuívit omnem Ísraël, allocutúsque est eos, dicens: Scitóte quóniam exaúdiet Dóminus preces vestras, si manéntes permanséritis in jejúniis, et oratiónibus in conspéctu Dómini."
+	},
+	{
+		"tags":["liber-judith","dies-iii-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Judith.",
+			"Et factum est, cum audísset hæc verba Judith vídua, quæ erat fília Merári, fílii Idox, fílii Joseph, fílii Ozíæ, fílii Élai, fílii Jamnor, fílii Gédeon, fílii Ráphaim, fílii Áchitob, fílii Melchíæ, fílii Enan, fílii Nathaníæ, fílii Saláthiel, fílii Símeon, fílii Ruben: et vir ejus fuit Manásses, qui mórtuus est in diébus messis hordeáceæ: instábat enim super alligántes manípulos in campo, et venit æstus super caput ejus, et mórtuus est in Bethúlia civitáte sua, et sepúltus est illic cum pátribus suis. Erat autem Judith relícta ejus vídua jam annis tribus, et ménsibus sex."
+		],
+		"lectio-ii":"Et in superióribus domus suæ fecit sibi secrétum cubículum, in quo cum puéllis suis clausa morabátur, et habens super lumbos suos cilícium, jejunábat ómnibus diébus vitæ suæ, præter sábbata, et neoménias, et festa domus Ísraël. Erat autem elegánti aspéctu nimis, cui vir suus relíquerat divítias multas, et famíliam copiósam, ac possessiónes arméntis boum, et grégibus óvium plenas. Et erat hæc in ómnibus famosíssima, quóniam timébat Dóminum valde, nec erat qui loquerétur de illa verbum malum.",
+		"lectio-iii":"Hæc ítaque cum audísset quóniam Ozías promisísset quod transácto quinto die tráderet civitátem, misit ad presbýteros Chabri, et Charmi. Et venérunt ad illam, et dixit illis: Quod est hoc verbum, in quo consénsit Ozías, ut tradat civitátem Assýriis si intra quinque dies non vénerit vobis adjutórium? Et qui estis vos, qui tentátis Dóminum?"
+	},
+	{
+		"tags":["liber-judith","dies-iv-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Judith.",
+			"Factum est autem, cum cessásset clamáre ad Dóminum, surréxit de loco, in quo jacúerat prostráta ad Dóminum. Vocavítque abram suam, et descéndens in domum suam, ábstulit a se cilícium, et éxuit se vestiméntis viduitátis suæ, et lavit corpus suum, et unxit se myro óptimo, et discriminávit crinem cápitis sui, et impósuit mitram super caput suum, et índuit se vestiméntis jucunditátis suæ, induítque sandália pédibus suis, assumpsítque dextralíola, et lília, et inaúres, et ánnulos, et ómnibus ornaméntis suis ornávit se. Cui étiam Dóminus cóntulit splendórem."
+		],
+		"lectio-ii":"Factum est autem, cum descénderet montem, circa ortum diéi, occurrérunt ei exploratóres Assyriórum et tenuérunt eam, dicéntes: Unde venis? aut quo vadis? Quæ respóndit: Fília sum Hebræórum, ídeo ego fugi a fácie eórum, quóniam futúrum agnóvi, quod dentur vobis in deprædatiónem, pro eo quod contemnéntes vos, noluérunt ultro trádere seípsos ut invenírent misericórdiam in conspéctu vestro.",
+		"lectio-iii":"Duxerúntque illam ad tabernáculum Holoférnis, annuntiántes eam. Cumque intrásset ante fáciem ejus, statim captus est in suis óculis Holoférnes. Dixerúntque ad eum satéllites ejus: Quis contémnat pópulum Hebræórum, qui tam decóras mulíeres habent, ut non pro his mérito pugnáre contra eos debeámus? Videns ítaque Judith Holoférnem sedéntem in conopéo, quod erat ex púrpura, et auro, et smarágdo, et lapídibus pretiósis intéxtum: et cum in fáciem ejus intendísset, adorávit eum, prostérnens se super terram."
+	},
+	{
+		"tags":["liber-judith","dies-v-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Judith.",
+			"Et factum est, in quarto die Holoférnes fecit cœnam servis suis, et dixit ad Vágao eunúchum suum: Vade, et suáde Hebrǽam illam ut sponte conséntiat habitáre mecum. Fœdum est enim apud Assýrios, si fémina irrídeat virum agéndo ut immúnis ab eo tránseat. Tunc introívit Vágao ad Judith, et dixit: Non vereátur bona puélla introíre ad dóminum meum, ut honorificétur ante fáciem ejus, ut mandúcet cum eo, et bibat vinum in jucunditáte. Cui Judith respóndit: Quæ ego sum, ut contradícam dómino meo?"
+		],
+		"lectio-ii":"Ut autem sero factum est, festinavérunt servi illíus ad hospítia sua, et conclúsit Vágao óstia cubículi, et ábiit. Erant autem omnes fatigáti a vino: erátque Judith sola in cubículo. Porro Holoférnes jacébat in lecto, nímia ebrietáte sopítus. Dixítque Judith puéllæ suæ ut staret foris ante cubículum, et observáret. Stetítque Judith ante lectum, orans cum lácrimis, et labiórum motu in siléntio, dicens: Confírma me Dómine Deus Ísraël, et réspice in hac hora ad ópera mánuum meárum, ut, sicut promisísti, Jerúsalem civitátem tuam érigas: et hoc quod credens per te posse fíeri cogitávi, perfíciam.",
+		"lectio-iii":"Et cum hæc dixísset, accéssit ad colúmnam, quæ erat ad caput léctuli ejus, et pugiónem ejus, qui in ea ligátus pendébat, exsólvit. Cumque evaginásset illum, apprehéndit comam cápitis ejus, et ait: Confírma me Dómine Deus in hac hora. Et percússit bis in cervícem ejus, et abscídit caput ejus, et ábstulit conopéum ejus a colúmnis, et evólvit corpus ejus truncum. Et post pusíllum exívit, et trádidit caput Holoférnis ancíllæ suæ, et jussit ut mítteret illud in peram suam."
+	},
+	{
+		"tags":["liber-judith","dies-vi-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Judith.",
+			"Cumque omnis exércitus decollátum Holoférnem audísset, fugit mens et consílium ab eis, et solo tremóre et metu agitáti, fugæ præsídium sumunt, ita ut nullus loquerétur cum próximo suo, sed inclináto cápite, relíctis ómnibus, evádere festinábant Hebrǽos, quos armátos super se veníre audiébant, fugiéntes per vias campórum et sémitas cóllium. Vidéntes ítaque fílii Ísraël fugiéntes, secúti sunt illos. Descenderúntque clangéntes tubis, et ululántes post ipsos."
+		],
+		"lectio-ii":"Misit ítaque Ozías núntios per omnes civitátes et regiónes Ísraël. Omnis ítaque régio, omnísque urbs eléctam juventútem armátam misit post eos, et persecúti sunt eos in ore gládii, quoúsque pervenírent ad extremitátem fínium suórum. Réliqui autem, qui erant in Bethúlia, ingréssi sunt castra Assyriórum, et prædam, quam fugiéntes Assýrii relíquerant, abstulérunt, et onustáti sunt valde.",
+		"lectio-iii":"Jóachim autem summus póntifex de Jerúsalem venit in Bethúliam cum univérsis presbýteris suis, ut vidéret Judith. Quæ cum exísset ad illum, benedixérunt eam omnes una voce, dicéntes: Tu glória Jerúsalem, tu lætítia Ísraël, tu honorificéntia pópuli nostri: quia fecísti viríliter, et confortátum est cor tuum, eo quod castitátem amáveris, et post virum tuum, álterum nescíeris: ídeo et manus Dómini confortávit te, et ídeo eris benedícta in ætérnum. Et dixit omnis pópulus: Fiat, fiat."
+	},
+	{
+		"tags":["liber-judith","dies-vii-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Judith.",
+			"Et factum est post hæc, omnis pópulus post victóriam venit in Jerúsalem adoráre Dóminum: et mox ut purificáti sunt, obtulérunt omnes holocaústa, et vota, et repromissiónes suas. Porro Judith univérsa vasa béllica Holoférnis, quæ dedit illi pópulus, et conopéum, quod ipsa sustúlerat de cubíli ipsíus, óbtulit in anáthema obliviónis."
+		],
+		"lectio-ii":"Erat autem pópulus jucúndus secúndum fáciem sanctórum, et per tres menses gaúdium hujus victóriæ celebrátum est cum Judith. Post dies autem illos unusquísque rédiit in domum suam, et Judith magna facta est in Bethúlia, et præclárior erat univérsæ terræ Ísraël. Erat étiam virtúti cástitas adjúncta, ita ut non cognósceret virum ómnibus diébus vitæ suæ, ex quo defúnctus est Manásses vir ejus. Erat autem diébus festis procédens cum magna glória.",
+		"lectio-iii":"Mansit autem in domo viri sui annos centum quinque, et dimísit abram suam líberam, et defúncta est ac sepúlta cum viro suo in Bethúlia. Luxítque illam omnis pópulus diébus septem. In omni autem spátio vitæ ejus non fuit qui perturbáret Ísraël, et post mortem ejus annis multis. Dies autem victóriæ hujus festivitátis, ab Hebrǽis in número sanctórum diérum accípitur, et cólitur a Judǽis ex illo témpore usque in præséntem diem."
 	},
 	{
 		"tags":["liber-esther","incipit-libri","dominica","i-vesperae","antiphona","antiphona-magnificat"],
