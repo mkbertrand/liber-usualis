@@ -109,5 +109,13 @@
 			{"include":["hebdomadae-octobris","tempus"],"target":0,"adde":"hebdomadae-octobris"},
 			{"include":["hebdomadae-novembris","tempus"],"target":0,"adde":"hebdomadae-novembris"}
 		]
+	},
+	{
+		"include":["quatuor-tempora"],
+		"response":[
+			{"include":["cornelius-cyprianus"],"target":1,"adde":"de-quatuor-temporibus"},
+			{"include":["januarius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"},
+			{"include":["eustachius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"}
+		]
 	}
 ]
