@@ -7,5 +7,10 @@
 		"tags":["cornelius-cyprianus","collecta"],
 		"datum":"Beatórum Mártyrum, paritérque Pontíficum Cornélii et Cypriáni nos quǽsumus Dómine festa tueántur: * et eórum comméndet orátio veneránda.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cornelius-cyprianus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"de-quatuor-temporibus":[["commune","martyres","martyr","matutinum","nocturna-i","lectio"]]
 	}
 ]
