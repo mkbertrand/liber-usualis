@@ -101,11 +101,23 @@
 		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
 	},
 	{
+		"tags":["confessor-pontifex","matutinum","nocturna-i","lectio"],
+		"datum":[
+			"De Epístola prima beáti Pauli Apóstoli ad Timótheum.",
+			"Fidélis sermo: Si quis episcopátum desíderat, bonum opus desíderat. Opórtet ergo epíscopum irreprehensíbilem esse, uníus uxóris virum, sóbrium, prudéntem, ornátum, pudícum, hospitálem, doctórem, non vinoléntum, non percussórem, sed modéstum; non litigiósum, non cúpidum, sed suæ dómui bene præpósitum, fílios habéntem súbditos cum omni castitáte. Si quis autem dómui suæ præésse nescit, quómodo Ecclésiæ Dei diligéntiam habébit? Non neóphytum: ne in supérbiam elátus, in judícium íncidat diáboli. Opórtet autem illum et testimónium habére bonum ab iis qui foris sunt, ut non in oppróbrium íncidat, et in láqueum diáboli."
+		],
+		"lectio-ii":"Opórtet enim epíscopum sine crímine esse, sicut Dei dispensatórem: non supérbum, non iracúndum, non vinoléntum, non percussórem, non turpis lucri cúpidum: sed hospitálem, benígnum, sóbrium, justum, sanctum, continéntem, amplecténtem eum, qui secúndum doctrínam est, fidélem sermónem: ut potens sit exhortári in doctrína sana, et eos, qui contradícunt, argúere. Sunt enim multi étiam inobediéntes, vaníloqui, et seductóres: máxime qui de circumcisióne sunt: quos opórtet redárgui: qui univérsas domos subvértunt, docéntes quæ non opórtet, turpis lucri grátia."
+	},
+	{
 		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"src":"nocturnale/COPON1R2",
 		"incipit":"Ecce sacérdos magnus, qui in diébus suis plácuit Deo:",
 		"responsum":"Ídeo jurejurándo fecit illum Dóminus créscere in plebem suam.",
 		"versus":"Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Tu autem lóquere quæ decent sanam doctrínam: Senes ut sóbrii sint, pudíci, prudéntes, sani in fide, in dilectióne, in patiéntia: Anus simíliter in hábitu sancto, non criminatríces, non multo vino serviéntes, bene docéntes: ut prudéntiam dóceant adolescéntulas, ut viros suos ament, fílios suos díligant, prudéntes, castas, sóbrias, domus curam habéntes, benígnas, súbditas viris suis, ut non blasphemétur verbum Dei. Júvenes simíliter hortáre ut sóbrii sint. In ómnibus teípsum præbe exémplum bonórum óperum, in doctrína, in integritáte, in gravitáte, verbum sanum, irreprehensíbile: ut is, qui ex advérso est, vereátur, nihil habens malum dícere de nobis."
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-iii"],

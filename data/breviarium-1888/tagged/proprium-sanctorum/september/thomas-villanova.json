@@ -14,6 +14,11 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["thomas-villanova","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"de-quatuor-temporibus":[["commune","confessor-pontifex","matutinum","nocturna-i","lectio"]]
+	},
+	{
 		"tags":["thomas-villanova","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12848",
 		"datum":"Eleemósynas illíus * enarrábit omnis ecclésia sanctórum."

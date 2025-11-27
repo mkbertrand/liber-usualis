@@ -424,7 +424,7 @@ def kalendar(year: int) -> Kalendar:
 		for match_date in set([i.date for i in matches]):
 			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
 				kal.add_entry(match_date + timedelta(days=offset), tagset)
-				if 'habens-octavam' in entry and 'octava-excepta' not in tagset:
+				if 'habens-octavam' in tagset and 'octava-excepta' not in tagset:
 					octaveagenda.append((match_date + timedelta(days=offset), tagset))
 
 
