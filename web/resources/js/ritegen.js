@@ -353,6 +353,18 @@ function render(data, chant) {
 						if (!translated) {
 							translated = Array(reading.length).fill('', 0);
 						}
+
+						// Readings have initial letters, but the first-letter pseudoclass is applied to the first letter of a paragraph. Therefore the reading's annotation needs to be in a separate paragraph.
+						function annotate(reading, translated, cssclasses) {
+							annotation = reading.match(/^\[.+?\/\]/g);
+							if (annotation) {
+								reading = reading.replace(/^\[.+?\/\]/g,'');
+								annotation = annotation[0].slice(1, -2);
+								return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation}</p><p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
+							}
+							return `<p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
+						}
+
 						// For the first reading from a Homily
 						if (Array.isArray(reading) && reading[0].includes('Evangélii')) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(3).join(' '))}<br>`
@@ -362,10 +374,10 @@ function render(data, chant) {
 						// Weird structuring but basically this is needed since sometimes readings are begun without title.
 						} else if (btags.includes('lectio-i')) {
 							if (Array.isArray(reading)) { reading = reading.join(' ')};
-							return `<p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${renderinner(reading, translated, [])}`
+							return annotate(reading, translated, 'lectio-incipiens ' + data.tags.join(' '));
 						} else {
 							if (Array.isArray(reading)) { reading = reading.join(' '); translated = translated.join(' ');};
-							return `<p class="rite-text lectio-sequens ${data.tags.join(' ')}">${renderinner(reading, translated, [])}`
+							return annotate(reading, translated, 'lectio-sequens ' + data.tags.join(' '));
 						}
 					}
 

@@ -363,6 +363,11 @@
 	font-size: 14px;
 }
 
+.rite-text-rubric-above-paragraph {
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+
 .item-header {
 	font-variant: small-caps;
 	color: red;
