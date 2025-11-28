@@ -643,6 +643,13 @@
 		"datum":"Dómine Rex omnípotens, * in ditióne tua cuncta sunt pósita, et non est qui possit tuæ resístere voluntáti."
 	},
 	{
+		"tags":["liber-esther","incipit-libri","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Íncipit liber Esther.",
+			"In diébus Assuéri, qui regnávit ab Índia usque Æthiópiam super centum vigínti septem províncias: quando sedit in sólio regni sui, Susan cívitas regni ejus exórdium fuit. Tértio ígitur anno impérii sui fecit grande convívium cunctis princípibus, et púeris suis, fortíssimis Persárum, et Medórum ínclytis, et præféctis provinciárum coram se, ut osténderet divítias glóriæ regni sui, ac magnitúdinem, atque jactántiam poténtiæ suæ, multo témpore, centum vidélicet et octogínta diébus."
+		]
+	},
+	{
 		"tags":[
 			["liber-esther","incipit-libri","matutinum","responsorium","responsorium-i"],
 			["liber-esther","feria","dies-ii-libri","matutinum","responsorium","responsorium-i"],
@@ -651,6 +658,11 @@
 		"incipit":"Dómine mi Rex omnípotens, in ditióne tua cuncta sunt pósita, et non est qui possit resístere voluntáti tuæ:",
 		"responsum":"Líbera nos propter nomen tuum.",
 		"versus":"Exaúdi oratiónem nostram, et convérte luctum nostrum in gaúdium."
+	},
+	{
+		"tags":["liber-esther","incipit-libri","matutinum","lectio"],
+		"lectio-ii":"Cumque impleréntur dies convívii, invitávit omnem pópulum, qui invéntus est in Susan, a máximo usque ad mínimum: et jussit septem diébus convívium præparári in vestíbulo horti, et némoris, quod régio cultu et manu cónsitum erat. Et pendébant ex omni parte tentória aérii colóris, et carbásini ac hyacínthini, sustentáta fúnibus býssinis, atque purpúreis, qui ebúrneis círculis insérti erant, et colúmnis marmóreis fulciebántur. Léctuli quoque aúrei et argéntei, super paviméntum smarágdino et pário stratum lápide, dispósiti erant: quod mira varietáte pictúra decorábat.",
+		"lectio-iii":"Bibébant autem qui invitáti erant, aúreis póculis, et áliis atque áliis vasis cibi inferebántur. Vinum quoque, ut magnificéntia régia dignum erat, abúndans et præcípuum ponebátur. Nec erat qui noléntes cógeret ad bibéndum, sed sicut rex statúerat, præpónens mensis síngulos de princípibus suis ut súmeret unusquísque quod vellet. Vasthi quoque regína fecit convívium feminárum in palátio, ubi rex Assuérus manére consuéverat."
 	},
 	{
 		"tags":[
@@ -665,6 +677,13 @@
 		"versus":"Dómine Deus creátor cœli et terræ, réspice ad humilitátem nostram."
 	},
 	{
+		"tags":["liber-esther","incipit-libri","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex libro Officiórum sancti Ambrósii Epíscopi.",
+			"Quid Esther regína, nonne ut pópulum suum perículo erúeret (quod erat decórum atque honéstum) morti se óbtulit, nec immítis regis trepidávit furórem? Ipse quoque rex Persárum ferox atque túmido corde, tamen decórum judicávit, índici insidiárum, quæ sibi parátæ forent, grátiam repræsentáre, populúmque líberum a servitúte erípere, erúere neci, nec párcere neci ejus, qui tam indecóra suasísset. Dénique quem secúndum a se, ac præcípuum inter omnes amícos habéret, cruci trádidit, quod dehonestátum se ejus frauduléntis consíliis animadvertísset."
+		]
+	},
+	{
 		"tags":[
 			["liber-esther","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["liber-esther","feria","dies-iii-libri","matutinum","responsorium","responsorium-i"],
@@ -673,5 +692,64 @@
 		"incipit":"Meménto mei Dóminus Deus in bonum:",
 		"responsum":"Et ne déleas miseratiónes meas, quas feci in domo Dei mei, et in cæremóniis ejus.",
 		"versus":"Recordáre mei, Dómine Deus meus."
+	},
+	{
+		"tags":["liber-esther","incipit-libri","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Ea enim amicítia probábilis, quæ honestátem tuétur, præferénda sane ópibus, honóribus, potestátibus; honestáti vero præférri non solet, sed honestátem sequi. Qualis fuit Jónathæ, qui pro pietáte nec offénsam patris, nec salútis perículum refugiébat. Qualis fuit Achímelech, qui pro hospitális grátiæ offíciis necem pótius sibi, quam proditiónem fugiéntis amíci subeúndam arbitrabátur. Nihil ígitur præferéndum honestáti: quæ tamen ne amicítiæ stúdio prætereátur, étiam hoc Scriptúra ádmonet.",
+		"lectio-iii":"Sunt enim plerǽque philosophórum quæstiónes: Utrum amíci causa quisquam contra pátriam sentíre, necne, débeat, ut amíco obédiat: Utrum opórteat ut fidem déserat, dum indúlget atque inténdit amíci commoditátibus. Et Scriptúra quidem ait: Clava, et gládius, et sagítta ferráta: sic homo est testimónium dans falsum advérsus amícum suum. Sed consídera quid ástruat. Non testimónium reprehéndit dictum in amícum, sed falsum testimónium. Quid enim si Dei causa, quid si pátriæ, cogátur áliquis dícere testimónium? Numquid præponderáre debet amicítia religióni, præponderáre caritáti vítium?"
+	},
+	{
+		"tags":["liber-esther","dies-ii-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Esther.",
+			"Erat vir Judǽus in Susan civitáte, vocábulo Mardochǽus fílius Jaïr, fílii Sémei, fílii Cis, de stirpe Jémini, qui translátus fúerat de Jerúsalem eo témpore, quo Jechoníam regem Juda Nabuchodónosor rex Babylónis transtúlerat, qui fuit nutrítius fíliæ fratris sui Edíssæ, quæ áltero nómine vocabátur Esther: et utrúmque paréntem amíserat: pulchra nimis, et decóra fácie. Mortuísque patre ejus ac matre, Mardochǽus sibi eam adoptávit in fíliam."
+		],
+		"lectio-ii":"Cumque percrebuísset regis impérium, et juxta mandátum illíus multæ pulchræ vírgines adduceréntur Susan, et Egéo traderéntur Eunúcho; Esther quoque inter céteras puéllas ei trádita est, ut servarétur in número feminárum. Quæ plácuit ei, et invénit grátiam in conspéctu illíus. Et præcépit eunúcho, ut acceleráret mundum mulíebrem, et tráderet ei partes suas, et septem puéllas speciosíssimas de domo regis, et tam ipsam, quam pedíssequas ejus ornáret atque excóleret. Quæ nóluit indicáre ei pópulum et pátriam suam: Mardochǽus enim præcéperat ei, ut de hac re omníno reticéret: qui deambulábat quotídie ante vestíbulum domus, in qua eléctæ vírgines servabántur, curam agens salútis Esther.",
+		"lectio-iii":"Evolúto autem témpore per órdinem, instábat dies, quo Esther fília Abíhaïl fratris Mardochǽi, quam sibi adoptáverat in fíliam, debéret intráre ad regem. Quæ non quæsívit mulíebrem cultum, sed quæcúmque vóluit Egéus eunúchus custos vírginum, hæc ei ad ornátum dedit. Erat enim formósa valde, et incredíbili pulchritúdine, ómnium óculis gratiósa et amábilis videbátur. Ducta est ítaque ad cubículum regis Assuéri mense décimo, qui vocátur Tebeth, séptimo anno regni ejus. Et adamávit eam rex plus quam omnes mulíeres, habuítque grátiam et misericórdiam coram eo super omnes mulíeres, et pósuit diadéma regni in cápite ejus, fecítque eam regnáre in loco Vasthi."
+	},
+	{
+		"tags":["liber-esther","dies-iii-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Esther.",
+			"Post hæc rex Assuérus exaltávit Aman fílium Amadáthi, qui erat de stirpe Agag: et pósuit sólium ejus super omnes príncipes, quos habébat. Cunctíque servi regis, qui in fóribus palátii versabántur, flectébant génua, et adorábant Aman: sic enim præcéperat eis imperátor. Solus Mardochǽus non flectébat genu, neque adorábat eum. Cui dixérunt púeri regis, qui ad fores palátii præsidébant: Cur præter céteros non obsérvas mandátum regis?"
+		],
+		"lectio-ii":"Cumque hoc crébrius dícerent, et ille nollet audíre, nuntiavérunt Aman, scire cupiéntes utrum perseveráret in senténtia: díxerat enim eis se esse Judǽum. Quod cum audísset Aman, et experiménto probásset quod Mardochǽus non flécteret sibi genu, nec se adoráret, irátus est valde, et pro níhilo duxit in unum Mardochǽum míttere manus suas.",
+		"lectio-iii":"Audíerat enim quod esset gentis Judǽæ: magísque vóluit omnem Judæórum, qui erant in regno Assuéri, pérdere natiónem. Mense primo (cujus vocábulum est Nisan) anno duodécimo regni Assuéri, missa est sors in urnam, quæ Hebráice dícitur phur, coram Aman, quo die et quo mense gens Judæórum debéret intérfici: et exívit mensis duodécimus, qui vocátur Adar."
+	},
+	{
+		"tags":["liber-esther","dies-iv-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Esther.",
+			"Quæ cum audísset Mardochǽus, scidit vestiménta sua, et indútus est sacco, spargens cínerem cápiti: et in platéa médiæ civitátis voce magna clamábat, osténdens amaritúdinem ánimi sui, et hoc ejulátu usque ad fores palátii grádiens. Non enim erat lícitum indútum sacco aulam regis intráre. In ómnibus quoque provínciis, óppidis, ac locis, ad quæ crudéle regis dogma pervénerat, planctus ingens erat apud Judǽos, jejúnium, ululátus, et fletus, sacco et cínere multis pro strato uténtibus. Ingréssæ autem sunt puéllæ Esther et eunúchi, nuntiaverúntque ei. Quod aúdiens consternáta est: et vestem misit, ut abláto sacco indúerent eum: quam accípere nóluit. Accitóque Athach eunúcho, quem rex minístrum ei déderat, præcépit ei ut iret ad Mardochǽum, et dísceret ab eo cur hoc fáceret."
+		],
+		"lectio-ii":"Egressúsque Athach, ivit ad Mardochǽum stantem in platéa civitátis, ante óstium palátii: qui indicávit ei ómnia quæ accíderant, quómodo Aman promisísset, ut in thesaúros regis pro Judæórum nece inférret argéntum. Exémplar quoque edícti, quod pendébat in Susan, dedit ei, ut regínæ osténderet, et monéret eam, ut intráret ad regem, et deprecarétur eum pro pópulo suo. Regréssus Athach, nuntiávit Esther ómnia, quæ Mardochǽus díxerat. Quæ respóndit ei, et jussit ut díceret Mardochǽo: Omnes servi regis, et cunctæ, quæ sub ditióne ejus sunt, norunt provínciæ, quod sive vir, sive múlier non vocátus, intérius átrium regis intráverit, absque ulla cunctatióne statim interficiátur: nisi forte rex aúream virgam ad eum teténderit pro signo cleméntiæ, atque ita possit vívere. Ego ígitur quómodo ad regem intráre pótero, quæ trigínta jam diébus non sum vocáta ad eum?",
+		"lectio-iii":"Quod cum audísset Mardochǽus, rursum mandávit Esther, dicens: Ne putes quod ánimam tuam tantum líberes, quia in domo regis es præ cunctis Judǽis: si enim nunc silúeris, per áliam occasiónem liberabúntur Judǽi: et tu, et domus patris tui períbitis. Et quis novit utrum idcírco ad regnum véneris, ut in tali témpore pararéris? Rursúmque Esther hæc Mardochǽo verba mandávit: Vade et cóngrega omnes Judǽos, quos in Susan repéreris, et oráte pro me. Non comedátis, et non bibátis tribus diébus, et tribus nóctibus: et ego cum ancíllis meis simíliter jejunábo, et tunc ingrédiar ad regem contra legem fáciens, non vocáta, tradénsque me morti et perículo. Ivit ítaque Mardochǽus, et fecit ómnia, quæ ei Esther præcéperat."
+	},
+	{
+		"tags":["liber-esther","dies-v-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Esther.",
+			"Die autem tértio indúta est Esther regálibus vestiméntis, et stetit in átrio domus régiæ, quod erat intérius, contra basílicam regis: at ille sedébat super sólium suum in consistório palátii contra óstium domus. Cumque vidísset Esther regínam stantem, plácuit óculis ejus, et exténdit contra eam virgam aúream, quam tenébat manu. Quæ accédens osculáta est summitátem virgæ ejus. Dixítque ad eam rex: Quid vis Esther regína? quæ est petítio tua? étiam si dimídiam partem regni petíeris, dábitur tibi. At illa respóndit: Si regi placet, óbsecro ut vénias ad me hódie, et Aman tecum ad convívium, quod parávi. Statímque rex, Vocáte, inquit, cito Aman ut Esther obédiat voluntáti."
+		],
+		"lectio-ii":"Egréssus est ítaque illo die Aman lætus et álacer. Cumque vidísset Mardochǽum sedéntem ante fores palátii, et non solum non assurrexísse sibi, sed nec motum quidem de loco sessiónis suæ, indignátus est valde: et dissimuláta ira, revérsus in domum suam, convocávit ad se amícos suos, et Zares uxórem suam: et expósuit illis magnitúdinem divitiárum suárum, filiorúmque turbam, et quanta eum glória super omnes príncipes et servos suos rex elevásset. Et post hæc ait: Regína quoque Esther nullum álium vocávit ad convívium cum rege, præter me: apud quam étiam cras cum rege pransúrus sum. Et cum hæc ómnia hábeam, nihil me habére puto, quámdiu vídero Mardochǽum Judǽum sedéntem ante fores régias.",
+		"lectio-iii":"Responderúntque ei Zares uxor ejus, et céteri amíci: Jube parári excélsam trabem habéntem altitúdinis quinquagínta cúbitos, et dic mane regi ut appendátur super eam Mardochǽus, et sic ibis cum rege lætus ad convívium. Plácuit ei consílium, et jussit excélsam parári crucem."
+	},
+	{
+		"tags":["liber-esther","dies-vi-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Esther.",
+			"Noctem illam duxit rex insómnem, jussítque sibi afférri histórias et annáles priórum témporum. Quæ cum illo præsénte legeréntur, ventum est ad illum locum ubi scriptum erat quómodo nuntiásset Mardochǽus insídias Bágathan, et Thares eunuchórum, regem Assuérum juguláre cupiéntium. Quod cum audísset rex, ait: Quid pro hac fide honóris ac prǽmii Mardochǽus consecútus est? Dixérunt ei servi illíus ac minístri: Nihil omníno mercédis accépit. Statímque rex, Quis est, inquit, in átrio? Aman quippe intérius átrium domus régiæ intráverat, ut suggéreret regi, et jubéret Mardochǽum affígi patíbulo, quod ei fúerat præparátum. Respondérunt púeri: Aman stat in átrio. Dixítque rex: Ingrediátur."
+		],
+		"lectio-ii":"Cumque esset ingréssus, ait illi: Quid debet fíeri viro, quem rex honoráre desíderat? Cógitans autem in corde suo Aman, et réputans quod nullum álium rex, nisi se, vellet honoráre, respóndit: Homo, quem rex honoráre cupit, debet índui véstibus régiis, et impóni super equum, qui de sella regis est, et accípere régium diadéma super caput suum, et primus de régiis princípibus, ac tyránnis téneat equum ejus, et per platéam civitátis incédens clamet, et dicat: Sic honorábitur, quemcúmque volúerit rex honoráre.",
+		"lectio-iii":"Dixítque ei rex: Festína, et sumpta stola et equo, fac, ut locútus es, Mardochǽo Judǽo, qui sedet ante fores palátii. Cave ne quidquam de his, quæ locútus es, prætermíttas. Tulit ítaque Aman stolam et equum, indutúmque Mardochǽum in platéa civitátis, et impósitum equo præcedébat, atque clamábat: Hoc honóre condígnus est, quemcúmque rex volúerit honoráre. Reversúsque est Mardochǽus ad jánuam palátii: et Aman festinávit ire in domum suam, lugens et opérto cápite: narravítque Zares uxóri suæ, et amícis ómnia quæ eveníssent sibi."
+	},
+	{
+		"tags":["liber-esther","dies-vii-libri","matutinum","lectio"],
+		"lectio-i":[
+			"De libro Esther.",
+			"Intrávit ítaque rex et Aman, ut bíberent cum regína. Dixítque ei rex étiam secúnda die, postquam vino incalúerat: Quæ est petítio tua Esther ut detur tibi? et quid vis fíeri? étiam si dimídiam partem regni mei petíeris, impetrábis. Ad quem illa respóndit: Si invéni grátiam in óculis tuis, o rex, et si tibi placet, dona mihi ánimam meam pro qua rogo, et pópulum meum, pro quo óbsecro. Tráditi enim sumus ego et pópulus meus, ut conterámur, jugulémur, et pereámus. Atque útinam in servos et fámulas venderémur: esset tolerábile malum, et gemens tacérem: nunc autem hostis noster est, cujus crudélitas redúndat in regem."
+		],
+		"lectio-ii":"Respondénsque rex Assuérus, ait: Quis est iste, et cujus poténtiæ, ut hæc aúdeat fácere? Dixítque Esther: Hostis et inimícus noster péssimus iste est Aman. Quod ille aúdiens, íllico obstúpuit, vultum regis ac regínæ ferre non sústinens. Rex autem irátus surréxit, et de loco convívii intrávit in hortum arbóribus cónsitum. Aman quoque surréxit ut rogáret Esther regínam pro ánima sua, intelléxit enim a rege sibi parátum malum.",
+		"lectio-iii":"Qui cum revérsus esset de horto nemóribus cónsito, et intrásset convívii locum, réperit Aman super léctulum corruísse, in quo jacébat Esther, et ait: Étiam regínam vult opprímere, me præsénte, in domo mea. Necdum verbum de ore regis exíerat, et statim operuérunt fáciem ejus. Dixítque Harbóna, unus de eunúchis, qui stabant in ministério regis: En lignum, quod paráverat Mardochǽo, qui locútus est pro rege, stat in domo Aman, habens altitúdinis quinquagínta cúbitos. Cui dixit rex: Appéndite eum in eo. Suspénsus est ítaque Aman in patíbulo quod paráverat Mardochǽo: et regis ira quiévit."
 	}
 ]

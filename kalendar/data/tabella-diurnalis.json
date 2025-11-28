@@ -115,7 +115,9 @@
 		"response":[
 			{"include":["cornelius-cyprianus"],"target":1,"adde":"de-quatuor-temporibus"},
 			{"include":["januarius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["eustachius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"}
+			{"include":["eustachius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"},
+			{"include":["thomas-de-villanova"],"target":1,"adde":"de-quatuor-temporibus"},
+			{"include":["linus"],"target":1,"adde":"de-quatuor-temporibus"}
 		]
 	}
 ]
