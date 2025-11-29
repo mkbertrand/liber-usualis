@@ -351,21 +351,19 @@
 .rite-text-translation {
 	font-style: italic;
 	color: #111;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1;
 	margin-top: 0;
 	padding-left: 10px;
 }
 
 .rite-text-rubric {
-	font-style: italic;
 	color: red;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .rite-text-rubric-above-paragraph {
 	margin-bottom: 0;
-	padding-left: 10px;
 }
 
 .item-header {

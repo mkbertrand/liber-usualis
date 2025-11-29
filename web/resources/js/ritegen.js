@@ -250,8 +250,15 @@ function render(data, chant) {
 						ret = '';
 						renderedsplit = rendered.split('<br>');
 						translationsplit = stringrender(translated).split('<br>');
+						// Lines corresponding only to annotations are not accounted for in the translation, so there is an offset
+						annotationoffset = 0;
 						for (var i = 0; i < renderedsplit.length; i++) {
-							ret += renderedsplit[i] + (translationsplit[i] == '' ? '' : `<br><span class="rite-text-translation">${translationsplit[i]}</span><br>`);
+							if (renderedsplit[i].match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span>/)) {
+								ret += renderedsplit[i] + '<br>';
+								annotationoffset++;
+							} else {
+								ret += renderedsplit[i] + (translationsplit[i - annotationoffset] == '' ? '' : `<br><span class="rite-text-translation">${translationsplit[i - annotationoffset]}</span><br>`);
+							}
 						}
 						return ret;
 					}
@@ -356,9 +363,9 @@ function render(data, chant) {
 
 						// Readings have initial letters, but the first-letter pseudoclass is applied to the first letter of a paragraph. Therefore the reading's annotation needs to be in a separate paragraph.
 						function annotate(reading, translated, cssclasses) {
-							annotation = reading.match(/^\[.+?\/\]/g);
+							annotation = reading.match(/^\[.+?\]\//g);
 							if (annotation) {
-								reading = reading.replace(/^\[.+?\/\]/g,'');
+								reading = reading.replace(/^\[.+?\]\//g,'');
 								annotation = annotation[0].slice(1, -2);
 								return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation}</p><p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 							}
@@ -468,7 +475,17 @@ function render(data, chant) {
 				openparagraph = ['capitulum', 'absolutio'];
 				if (openparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
-					return ret == '' ? '' : `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}`;
+					if (ret == '') {
+						return '';
+					}
+					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
+					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
+					if (annotation == null) {
+						return `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}`;
+					} else {
+						ret = ret.replace(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/,'');
+						return `${header}<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
+					}
 				}
 				return header + renderinner(data.datum, translated, data.tags.concat(parenttags));
 			} else {
