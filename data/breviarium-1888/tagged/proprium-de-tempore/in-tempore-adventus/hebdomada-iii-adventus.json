@@ -5,37 +5,44 @@
 	},
 	{
 		"tags":[
-			["hebdomada-iii-adventus","dominica","antiphona","antiphona-i"],
-			["hebdomada-iii-adventus","feria","prima","antiphona","antiphona-i"]
+			["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-i"],
+			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-i"],
+			["hebdomada-iii-adventus","prima","antiphona","antiphona-i"]
 		],
 		"src":"gregobase/2145",
 		"datum":"Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúja."
 	},
 	{
 		"tags":[
-			["hebdomada-iii-adventus","dominica","antiphona","antiphona-ii"],
-			["hebdomada-iii-adventus","feria","tertia","antiphona","antiphona-ii"]
+			["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-ii"],
+			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-ii"],
+			["hebdomada-iii-adventus","tertia","antiphona","antiphona-ii"]
 		],
 		"src":"gregobase/2116",
 		"datum":"Jerúsalem gaude * gaúdio magno, quia véniet tibi Salvátor, allelúja."
 	},
 	{
 		"tags":[
-			["hebdomada-iii-adventus","dominica","antiphona","antiphona-iii"],
-			["hebdomada-iii-adventus","feria","sexta","antiphona","antiphona-iii"]
+			["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-iii"],
+			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-iii"],
+			["hebdomada-iii-adventus","sexta","antiphona","antiphona-iii"]
 		],
 		"src":"gregobase/2830",
 		"datum":"Dabo in Sion * salútem, et in Jerúsalem glóriam meam, allelúja."
 	},
 	{
-		"tags":["hebdomada-iii-adventus","dominica","antiphona","antiphona-iv"],
+		"tags":[
+			["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-iv"],
+			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-iv"]
+		],
 		"src":"gregobase/2443",
 		"datum":"Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni Dómine, et noli tardáre, allelúja."
 	},
 	{
 		"tags":[
-			["hebdomada-iii-adventus","dominica","antiphona","antiphona-v"],
-			["hebdomada-iii-adventus","feria","nona","antiphona","antiphona-v"]
+			["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-v"],
+			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-v"],
+			["hebdomada-iii-adventus","nona","antiphona","antiphona-v"]
 		],
 		"src":"gregobase/1937",
 		"datum":"Juste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini."

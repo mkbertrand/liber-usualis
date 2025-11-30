@@ -5,37 +5,44 @@
 	},
 	{
 		"tags":[
-			["hebdomada-ii-adventus","dominica","antiphona","antiphona-i"],
-			["hebdomada-ii-adventus","feria","prima","antiphona","antiphona-i"]
+			["hebdomada-ii-adventus","dominica","laudes","antiphona","antiphona-i"],
+			["hebdomada-ii-adventus","dominica","ii-vesperae","antiphona","antiphona-i"],
+			["hebdomada-ii-adventus","prima","antiphona","antiphona-i"]
 		],
 		"src":"gregobase/2102",
 		"datum":"Ecce in núbibus cœli: * Dóminus véniet cum potestáte magna, allelúja."
 	},
 	{
 		"tags":[
-			["hebdomada-ii-adventus","dominica","antiphona","antiphona-ii"],
-			["hebdomada-ii-adventus","feria","tertia","antiphona","antiphona-ii"]
+			["hebdomada-ii-adventus","dominica","laudes","antiphona","antiphona-ii"],
+			["hebdomada-ii-adventus","dominica","ii-vesperae","antiphona","antiphona-ii"],
+			["hebdomada-ii-adventus","tertia","antiphona","antiphona-ii"]
 		],
 		"src":"gregobase/1927",
 		"datum":"Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et antemurále: aperíte portas, quia nobíscum Deus, allelúja."
 	},
 	{
 		"tags":[
-			["hebdomada-ii-adventus","dominica","antiphona","antiphona-iii"],
-			["hebdomada-ii-adventus","feria","sexta","antiphona","antiphona-iii"]
+			["hebdomada-ii-adventus","dominica","laudes","antiphona","antiphona-iii"],
+			["hebdomada-ii-adventus","dominica","ii-vesperae","antiphona","antiphona-iii"],
+			["hebdomada-ii-adventus","sexta","antiphona","antiphona-iii"]
 		],
 		"src":"gregobase/2626",
 		"datum":"Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúja."
 	},
 	{
-		"tags":["hebdomada-ii-adventus","dominica","antiphona","antiphona-iv"],
+		"tags":[
+			["hebdomada-ii-adventus","dominica","laudes","antiphona","antiphona-iv"],
+			["hebdomada-ii-adventus","dominica","ii-vesperae","antiphona","antiphona-iv"]
+		],
 		"src":"gregobase/2768",
 		"datum":"Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúja, allelúja."
 	},
 	{
 		"tags":[
-			["hebdomada-ii-adventus","dominica","antiphona","antiphona-v"],
-			["hebdomada-ii-adventus","feria","nona","antiphona","antiphona-v"]
+			["hebdomada-ii-adventus","dominica","laudes","antiphona","antiphona-v"],
+			["hebdomada-ii-adventus","dominica","ii-vesperae","antiphona","antiphona-v"],
+			["hebdomada-ii-adventus","nona","antiphona","antiphona-v"]
 		],
 		"src":"gregobase/2376",
 		"datum":"Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúja."
