@@ -374,10 +374,10 @@ function render(data, chant) {
 
 						// For the first reading from a Homily
 						if (Array.isArray(reading) && reading[0].includes('Evangélii')) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p><p class="rite-text evangelium-matutini ${data.tags.join(' ')}">${stringrender(reading[1])}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(3).join(' '))}<br>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p>${annotate(reading.slice(3).join(' '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '))}`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p><p class="rite-text lectio-incipiens ${data.tags.join(' ')}">${stringrender(reading.slice(1).join(' '))}<br>`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' '), translated, 'lectio-incipiens ' + data.tags.join(' '))}`
 						// Weird structuring but basically this is needed since sometimes readings are begun without title.
 						} else if (btags.includes('lectio-i')) {
 							if (Array.isArray(reading)) { reading = reading.join(' ')};
