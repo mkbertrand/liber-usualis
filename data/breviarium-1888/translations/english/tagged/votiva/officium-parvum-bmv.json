@@ -91,5 +91,32 @@
 	{
 		"tags":["officium-parvum-bmv","nona","collecta"],
 		"datum":"O Lord, we beseech Thee, forgive the transgressions of Thy servants, + and, forasmuch as by our own deeds we cannot please Thee, * may we find safety through the prayers of the Mother of Thy Son and our Lord."
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","vesperae","antiphona","antiphona-magnificat"],
+			["officium-parvum-bmv","in-tempore-adventus","completorium","antiphona","antiphona-nunc-dimittis"],
+			["officium-parvum-bmv","in-tempore-adventus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":"The Holy Ghost * shall come upon thee, O Mary, * fear not; thou shalt bear in thy womb the Son of Goda, alleluia."
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","completorium","versiculus"],
+			["officium-parvum-bmv","in-tempore-adventus","nona","versiculus"]
+		],
+		"datum":["V. The Angel of the Lord announced unto Mary.","R. And she conceived of the Holy Ghost."]
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","lectio","in-tempore-adventus"],
+		"lectio-i":"The Angel Gabriel was sent from God unto a city of Galilee named Nazareth, to a Virgin espoused to a man whose name was Joseph, of the house of David, and the Virgin’s name was Mary. And the Angel came in unto her, and said: Hail, thou that art full of grace: the Lord is with thee: blessed art thou among women.",
+		"lectio-ii":"And when she heard it, she was troubled at his saying, and cast in her mind what manner of salutation this should be. And the Angel said unto her: Fear not, Mary; for thou hast found grace with God: behold, thou shalt conceive in thy womb, and bring forth a Son, and shalt call His Name Jesus. He shall be great, and shall be called the Son of the Highest; and the Lord God shall give unto Him the throne of His father David; and He shall reign over the house of Jacob for ever, and of His kingdom there shall be no end.",
+		"lectio-iii":"Then said Mary unto the Angel: How shall this be, seeing I know not a man? And the Angel answered and .said unto her: The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee; therefore also that Holy Thing Which shall be born of thee shall be called the Son of God. And, behold, thy cousin Elizabeth, she hath also conceived a son in her old age, and this is the sixth month with her who was called barren; for with God nothing shall be impossible. And Mary said: Behold the handmaid of the Lord; be it unto me according to thy word."
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-iii","in-tempore-adventus"],
+		"incipit":"Receive, O Virgin Mary, receive the word of the Lord, which is sent thee by His Angel: thou shalt conceive, and shalt bring forth God and Man together.",
+		"responsum":"And thou shalt be called blessed among all women.",
+		"versus":"Thou shalt bring forth a son, and remain a maiden undefiled: thou shalt conceive and be a Mother, still Virgin unspotted."
 	}
 ]

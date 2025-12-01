@@ -104,7 +104,7 @@
 	},
 	{
 		"tags":[
-			["officium-parvum-bmv","matutinum","dominica"],
+			["officium-parvum-bmv","matutinum","feria-i"],
 			["officium-parvum-bmv","matutinum","feria-ii"],
 			["officium-parvum-bmv","matutinum","feria-v"]
 		],
@@ -116,16 +116,16 @@
 			["officium-parvum-bmv","matutinum","feria-iii"],
 			["officium-parvum-bmv","matutinum","feria-vi"]
 		],
-		"antiphona":[["maria","matutinum","nocturna-ii","antiphona"]],
-		"psalmus":[["maria","matutinum","nocturna-ii","psalmus"]]
+		"antiphona":[["matutinum","nocturna-ii","antiphona"]],
+		"psalmus":[["matutinum","nocturna-ii","psalmus"]]
 	},
 	{
 		"tags":[
 			["officium-parvum-bmv","matutinum","feria-iv"],
 			["officium-parvum-bmv","matutinum","sabbatum"]
 		],
-		"antiphona":[["maria","matutinum","nocturna-iii","antiphona"]],
-		"psalmus":[["maria","matutinum","nocturna-iii","psalmus"]]
+		"antiphona":[["matutinum","nocturna-iii","antiphona"]],
+		"psalmus":[["matutinum","nocturna-iii","psalmus"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","absolutio"],
@@ -278,5 +278,90 @@
 		"tags":["officium-parvum-bmv","nona","collecta"],
 		"datum":"Famulórum tuórum, quǽsumus Dómine, delíctis ignósce: + ut qui tibi placére de áctibus nostris non valémus, * Genitrícis Fílii tui Dómini nostri intercessióne salvémur:",
 		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","in-tempore-adventus","antiphona"],
+		"datum":[["annuntiatio-bmv","antiphona"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","vesperae","capitulum"],
+			["officium-parvum-bmv","in-tempore-adventus","laudes","capitulum"],
+			["officium-parvum-bmv","in-tempore-adventus","tertia","capitulum"]
+		],
+		"datum":[["annuntiatio-bmv","nona","capitulum"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","vesperae","antiphona","antiphona-magnificat"],
+			["officium-parvum-bmv","in-tempore-adventus","completorium","antiphona","antiphona-nunc-dimittis"],
+			["officium-parvum-bmv","in-tempore-adventus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"src":"gregobase/12304",
+		"datum":"Spíritus sanctus * in te descéndet María: ne tímeas, habébis in útero Fílium Dei, allelúja."
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","collecta"],
+			["officium-parvum-bmv","in-tempore-adventus","completorium","collecta"],
+			["officium-parvum-bmv","in-tempore-adventus","laudes","collecta"],
+			["officium-parvum-bmv","in-tempore-adventus","prima","collecta"],
+			["officium-parvum-bmv","in-tempore-adventus","tertia","collecta"],
+			["officium-parvum-bmv","in-tempore-adventus","sexta","collecta"],
+			["officium-parvum-bmv","in-tempore-adventus","nona","collecta"]
+		],
+		"datum":[["annuntiatio-bmv","laudes","collecta"]],
+		"terminatio":[["annuntiatio-bmv","laudes","collecta","terminatio"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","in-tempore-adventus","collecta","terminatio"],
+		"vesperae":[["terminatio","per-eumdem-christum"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","completorium","capitulum"],
+			["officium-parvum-bmv","in-tempore-adventus","prima","capitulum"],
+			["officium-parvum-bmv","in-tempore-adventus","nona","capitulum"]
+		],
+		"datum":[["annuntiatio-bmv","vesperae","capitulum"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","completorium","versiculus"],
+			["officium-parvum-bmv","in-tempore-adventus","nona","versiculus"]
+		],
+		"datum":["V. Ángelus Dómini nuntiávit Maríæ.","R. Et concépit de Spíritu sancto."]
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","lectio","lectio-i","in-tempore-adventus"],
+		"datum":"[Luc. 1. c.]/Missus est Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et ingréssus Ángelus ad eam dixit: Ave grátia plena: Dóminus tecum: benedícta tu in muliéribus."
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-i","in-tempore-adventus"],
+		"datum":[["hebdomada-i-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","lectio","lectio-ii","in-tempore-adventus"],
+		"datum":"Quæ cum audísset, turbáta est in sermóne ejus, et cogitábat qualis esset ista salutátio. Et ait Ángelus ei: Ne tímeas María: invenísti enim grátiam apud Deum: ecce concípies in útero, et páries fílium, et vocábis nomen ejus Jesum. Hic erit magnus, et Fílius Altíssimi vocábitur: et dabit illi Dóminus Deus sedem David patris ejus: et regnábit in domo Jacob in ætérnum, et regni ejus non erit finis."
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-ii","in-tempore-adventus"],
+		"datum":[["hebdomada-i-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","lectio","lectio-iii","in-tempore-adventus"],
+		"datum":"Dixit autem María ad Ángelum: Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Ángelus dixit ei: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi. Ideóque et quod nascétur ex te Sanctum, vocábitur Fílius Dei. Et ecce Elísabeth cognáta tua, et ipsa concépit fílium in senectúte sua: et hic mensis sextus est illi, quæ vocátur stérilis: quia non erit impossíbile apud Deum omne verbum. Dixit autem María: Ecce ancílla Dómini, fiat mihi secúndum verbum tuum."
+	},
+	{
+		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-iii","in-tempore-adventus"],
+		"formula":[["formula","gloria","simplex-responsum"]],
+		"src":"nocturnale/A1F2R1",
+		"incipit":"Súscipe verbum Virgo María, quod tibi a Dómino per Ángelum transmíssum est: concípies et páries Deum páriter et hóminem,",
+		"responsum":"Ut benedícta dicáris inter omnes mulíeres.",
+		"versus":"Páries quidem fílium, et virginitátis non patiéris detriméntum: efficiéris grávida, et eris mater semper intácta."
+	},
+	{
+		"tags":["officium-parvum-bmv","in-tempore-adventus","sexta","capitulum"],
+		"datum":[["annuntiatio-bmv","sexta","capitulum"]]
 	}
 ]

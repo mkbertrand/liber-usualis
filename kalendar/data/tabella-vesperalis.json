@@ -566,5 +566,11 @@
 			{"include":["hebdomadae-octobris","tempus","i-vesperae"],"target":0,"adde":"hebdomadae-octobris"},
 			{"include":["hebdomadae-novembris","tempus","i-vesperae"],"target":0,"adde":"hebdomadae-novembris"}
 		]
+	},
+	{
+		"include":["votiva","ii-vesperae"],
+		"response":[
+			{"include":["votiva","i-vesperae","in-tempore-adventus"],"target":0,"adde":"in-tempore-adventus"}
+		]
 	}
 ]

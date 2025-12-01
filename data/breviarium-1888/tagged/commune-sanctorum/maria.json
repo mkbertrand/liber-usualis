@@ -98,10 +98,12 @@
 	},
 	{
 		"tags":["maria","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/CBMVI",
 		"datum":"Sancta María Dei Génitrix Virgo, * Intercéde pro nobis."
 	},
 	{
 		"tags":["maria","matutinum","hymnus"],
+		"src":"nocturnale/CBMVH",
 		"datum":[
 			"Quem terra, pontus, sídera/Colunt, adórant, prǽdicant,/Trinam regéntem máchinam,/Claustrum Maríæ bájulat.",
 			"Cui luna, sol, et ómnia/Desérviunt per témpora,/Perfúsa cœli grátia,/Gestant puéllæ víscera.",
@@ -112,6 +114,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/CBMVN1A1",
 		"datum":"Benedícta tu * in muliéribus, et benedíctus fructus ventris tui."
 	},
 	{
@@ -120,6 +123,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/CBMVN1A2",
 		"datum":"Sicut myrrha * elécta odórem dedísti suavitátis sancta Dei Génitrix."
 	},
 	{
@@ -128,6 +132,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/CBMVN1A3",
 		"datum":"Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis."
 	},
 	{
@@ -177,6 +182,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/CBMVN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
@@ -185,6 +191,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/CBMVN2A2",
 		"datum":"Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur."
 	},
 	{
@@ -193,6 +200,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/CBMVN2A3",
 		"datum":"Sicut læténtium * ómnium nostrum habitátio est in te, sancta Dei Génitrix."
 	},
 	{
@@ -244,6 +252,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/CBMVN3A1",
 		"datum":"Gaude María Virgo, * cunctas hǽreses sola interemísti in univérso mundo."
 	},
 	{
@@ -252,6 +261,7 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/CBMVN3A2",
 		"datum":"Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos."
 	},
 	{
@@ -260,7 +270,13 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/CBMVN3A3",
 		"datum":"Post partum * Virgo invioláta permansísti, Dei Génitrix intercéde pro nobis."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-iii","in-tempore-adventus"],
+		"src":"nocturnale/CBMVN3A3b",
+		"datum":"Ángelus Dómini * nuntiávit Maríæ, et concépit de Spíritu sancto."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","psalmus-iii"],

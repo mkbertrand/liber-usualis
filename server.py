@@ -152,13 +152,8 @@ def rite():
 		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
 		if 'select' in parameters:
 			if parameters['select'] == 'officium-parvum-bmv':
-				def votivize(i):
-					if 'votiva' in i:
-						return i | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}
-					else:
-						return i - {'primarium', 'commemoratio', 'psalmi'}
-				tags = [votivize(i) for i in tags]
-				tags.append({'pro-sanctis','commemoratio'})
+				votive = list(filter(lambda i: 'votiva' in i, tags))[0]
+				tags = [votive | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}, votive | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
 			elif parameters['select'] == 'officium-defunctorum':
 				def votivize(i):
 					if 'officium-defunctorum' in i:
