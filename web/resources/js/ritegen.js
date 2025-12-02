@@ -287,20 +287,20 @@ function render(data, chant) {
 					if (typeof data.datum[1] === 'string') {
 						return data.datum[1].replace(", 'incipit'",'');
 					}
-					if (data.tags.includes('responsorium-breve')) {
+					if (data.quaesitum.includes('responsorium-breve')) {
 						header = makeheader('Responsorium Breve');
 					} else {
 						nn = 1;
-						if (data.datum[1].tags.includes('nocturna-ii')) {
+						if (data.quaesitum.includes('nocturna-ii')) {
 							nn = 2
-						} else if (data.datum[1].tags.includes('nocturna-iii')) {
+						} else if (data.quaesitum.includes('nocturna-iii')) {
 							nn = 3
 						}
-						if (data.datum[1].tags.includes('responsorium-i')) {
+						if (data.quaesitum.includes('responsorium-i')) {
 							header = makeheader('Responsorium ' + ['I', 'IV', 'VII'][nn - 1]);
-						} else if (data.datum[1].tags.includes('responsorium-ii')) {
+						} else if (data.quaesitum.includes('responsorium-ii')) {
 							header = makeheader('Responsorium ' + ['II', 'V', 'VIII'][nn - 1]);
-						} else if (data.datum[1].tags.includes('responsorium-iii')) {
+						} else if (data.quaesitum.includes('responsorium-iii')) {
 							header = makeheader('Responsorium ' + ['III', 'VI', 'IX'][nn - 1]);
 						}
 					}
@@ -407,11 +407,11 @@ function render(data, chant) {
 					data.tags.push('textus-psalmi');
 
 				} else if (data.tags.includes('nocturna')) {
-					if (data.tags.includes('nocturna-i')) {
+					if (data.quaesitum.includes('nocturna-i')) {
 						header = makeheader('Nocturna I', 'section-header');
-					} else if (data.tags.includes('nocturna-ii')) {
+					} else if (data.quaesitum.includes('nocturna-ii')) {
 						header = makeheader('Nocturna II', 'section-header');
-					} else if (data.tags.includes('nocturna-iii')) {
+					} else if (data.quaesitum.includes('nocturna-iii')) {
 						header = makeheader('Nocturna III', 'section-header');
 					}
 				} else if (data.tags.includes('ritus')) {

@@ -121,6 +121,8 @@ def discriminate(root, table: str, tags: set):
 
 # Certain hard-coded modifications to the resultants of searches for antiphons and adds some tags
 def managesearch(query, result):
+	if 'tags' in result:
+		result['quaesitum'] = query
 	if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
 		return result
 	else:
