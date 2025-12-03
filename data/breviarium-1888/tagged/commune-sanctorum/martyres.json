@@ -30,7 +30,7 @@
 	},
 	{
 		"tags":["martyres","capitulum"],
-		"datum":"Justórum ánimæ in manu Dei sunt, et non tanget illos torméntum mortis. + Visi sunt óculis insipiéntium mori: * illi autem sunt in pace."
+		"datum":"[Sap. 3.]/Justórum ánimæ in manu Dei sunt, et non tanget illos torméntum mortis. + Visi sunt óculis insipiéntium mori: * illi autem sunt in pace."
 	},
 	{
 		"tags":["martyres","vesperae","hymnus"],
@@ -120,6 +120,24 @@
 		"datum":[["/psalmi/psalmus-iii,gloria"]]
 	},
 	{
+		"tags":["martyres","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Abstérget Deus omnem lácrimam ab óculis sanctórum: et jam non erit ámplius neque luctus, neque clamor, sed nec ullus dolor:",
+		"responsum":"Quóniam prióra transiérunt.",
+		"versus":"Non esúriunt, neque sítient ámplius, neque cadet super illos sol, neque ullus æstus."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Viri sancti gloriósum sánguinem fudérunt pro Dómino, amavérunt Christum in vita sua, imitáti sunt eum in morte sua:",
+		"responsum":"Et ídeo corónas triumpháles meruérunt.",
+		"versus":"Unus spíritus, et una fides erat in eis."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Tradidérunt córpora sua propter Deum ad supplícia:",
+		"responsum":"Et meruérunt habére corónas perpétuas.",
+		"versus":"Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
+	},
+	{
 		"tags":["martyres","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"datum":"Dabo sanctis meis * locum nominátum in regno Patris mei, dicit Dóminus."
 	},
@@ -151,6 +169,39 @@
 		"datum":["V. Exsúltent justi in conspéctu Dei.","R. Et delecténtur in lætítia."]
 	},
 	{
+		"tags":["martyres","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Serm. 47. de Sanctis.]/Quotiescúmque, fratres caríssimi, sanctórum Mártyrum solémnia celebrámus, ita, ipsis intercedéntibus, exspectémus a Dómino cónsequi temporália benefícia, ut ipsos Mártyres imitándo accípere mereámur ætérna. Ab ipsis enim sanctórum Mártyrum in veritáte festivitátum gaúdia celebrántur, qui ipsórum Mártyrum exémpla sequúntur. Solemnitátes enim Mártyrum exhortatiónes sunt martyriórum: ut imitári non pígeat, quod celebráre deléctat."
+		]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Sancti tui Dómine mirábile consecúti sunt iter, serviéntes præcéptis tuis, ut inveniréntur illǽsi in aquis válidis:",
+		"responsum":"Terra appáruit árida: et in Mari rubro via sine impediménto.",
+		"versus":"Quóniam percússit petram, et fluxérunt aquæ, et torréntes inundavérunt."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Sed nos vólumus gaudére cum sanctis: et tribulatiónem mundi nólumus sustinére cum ipsis. Qui enim sanctos Mártyres, in quantum potúerit, imitári nolúerit; ad eórum beatitúdinem non póterit perveníre. Sed et Paulus Apóstolus prǽdicat, dicens: Si fuérimus sócii passiónum, érimus et consolatiónum. Et Dóminus in Evangélio: Si mundus vos odit, scitóte quia me priórem vobis ódio hábuit. Recúsat esse in córpore, qui ódium non vult sustinére cum cápite."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Vérbera carníficum non timuérunt sancti Dei, moriéntes pro Christi nómine:",
+		"responsum":"Ut hærédes fíerent in domo Dómini.",
+		"versus":"Tradidérunt córpora sua propter Deum ad supplícia."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Sed dicit áliquis: Et quis est qui possit beatórum Mártyrum vestígia sequi? Huic ego respóndeo: quia non solum Mártyres, sed étiam ipsum Dóminum cum ipsíus adjutório, si vólumus, póssumus imitári. Audi non me, sed ipsum Dóminum géneri humáno clamántem: Díscite a me, quia mitis sum et húmilis corde. Audi et Petrum Apóstolum admonéntem: Christus passus est pro nobis, relínquens nobis exémplum, ut sequámur vestígia ejus."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Tamquam aurum in fornáce probávit eléctos Dóminus, et quasi holocaústi hóstiam accépit illos: et in témpore erit respéctus illórum:",
+		"responsum":"Quónaim donum et pax est eléctis Dei.",
+		"versus":"Qui confídunt in illum, intélligent veritátem, et fidéles in dilectióne acquiéscent illi."
+	},
+	{
 		"tags":["martyres","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"datum":"Justi autem * in perpétuum vivent, et apud Dóminum est merces eórum."
 	},
@@ -180,6 +231,41 @@
 			["martyres","sexta","versiculus"]
 		],
 		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 21. c.]/In illo témpore: Dixit Jesus discípulis suis: Cum audiéritis prǽlia, et seditiónes, nolíte terréri: opórtet primum hæc fíeri, sed nondum statim finis. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homil. 35. in Evangel.]/Dóminus ac Redémptor noster peritúri mundi præcurréntia mala denúntiat, ut eo minus pertúrbent veniéntia, quo fúerint præscíta. Minus enim jácula fériunt, quæ prævidéntur: et nos tolerabílius mundi mala suscípimus, si contra hæc per præsciéntiæ clýpeum munímur. Ecce enim dicit: Cum audiéritis prǽlia et seditiónes, nolíte terréri: opórtet enim primum hæc fíeri, sed nondum statim finis. Pensánda sunt verba Redemptóris nostri, per quæ nos áliud intérius, áliud extérius passúros esse denúntiat. Bella quippe ad hostes pértinent, seditiónes ad cives. Ut ergo nos índicet intérius exteriúsque turbári, áliud nos fatétur ab hóstibus, áliud a frátribus pérpeti."
+		]
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Propter testaméntum Dómini, et leges patérnas, sancti Dei persistérunt in amóre fraternitátis:",
+		"responsum":"Quia unus fuit semper spíritus in eis, et una fides.",
+		"versus":"Ecce quam bonum et quam jucúndum jucúndum habitáre fratres in unum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Sed his malis præveniéntibus, quia non statim finis sequátur, adjúngit: Surget gens contra gentem, et regnum advérsus regnum: et terræmótus magni erunt per loca, et pestiléntiæ, et fames, terrorésque de cœlo: et signa magna erunt. Última tribulátio multis tribulatiónibus prævenítur: et per crebra mala, quæ prevéniunt, indicántur mala perpétua, quæ subsequéntur. Et ídeo post bella et seditiónes non statim finis: quia multa debent mala præcúrrere, ut malum váleant sine fine nuntiáre."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Sancti mei, qui in carne pósiti, certámen habuístis:",
+		"responsum":"Mercédem labóris ego reddam vobis.",
+		"versus":"Veníte benedícti Patris mei, percípite regnum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","responsorium","responsorium-ii","martyres-fratres"],
+		"incipit":"Hæc est vera fratérnitas, quæ numquam pótuit violári certámine: qui effúso sánguine secúti sunt Dóminum:",
+		"responsum":"Contemnéntes aulam régiam, pervenérunt ad regna cœléstia.",
+		"versus":"Ecce quam bonum et quam jucúndum habitáre fratres in unum."
+	},
+	{
+		"tags":["martyres","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Sed cum tot signa perturbatiónis dicta sint, opórtet, ut eórum consideratiónem bréviter per síngula perstringámus: quia necésse est, ut ália e cœlo, ália e terra, ália ab eleméntis, ália ab homínibus patiámur. Ait enim: Surget gens contra gentem, ecce perturbátio hóminum: erunt terræmótus magni per loca, ecce respéctus iræ désuper: erunt pestiléntiæ, ecce inæquálitas córporum: erit fames, ecce sterílitas terræ: terrorésque de cœlo et tempestátes, ecce inæquálitas áëris. Quia ergo ómnia consummánda sunt, ante consummatiónem ómnia perturbántur: et qui in cunctis delíquimus, in cunctis ferímur: ut impleátur quod dícitur, Et pugnábit pro eo orbis terrárum contra insensátos."
 	},
 	{
 		"tags":[
@@ -258,12 +344,21 @@
 		"datum":"Gaudent in cœlis * ánimæ sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exsúltant sine fine."
 	},
 	{
+		"tags":["martyres","matutinum","nocturna-ii","lectio","alia-lectio"],
+		"lectio-i":[
+			"Sermo sancti Joánnis Chrysóstomi.",
+			"[Serm. 1 de Martyr. Tom. 3.]/Nemo est qui nésciat, Mártyrum glórias ad hoc divíno consílio a Dei pópulis frequentári, ut et illis débitus honor dicétur, et nobis virtútis exémpla, favénte Christo, monstréntur: ut dum hæc ita celebrári perspícimus, cognoscámus quanta eos glória máneat in cœlis, quorum natalítia táliter celebrántur in terris: quo possímus étiam ipsi tálibus provocári exémplis, virtúte pari, devotióne consímili ac fide: ut Christo præstánte, dimicáre et víncere hostem possímus: ut parta victória, cum iísdem sanctis in regnis cœléstibus triumphémus."
+		],
+		"lectio-ii":"Quis est enim, qui eórum volens mérito copulári; nisi prius constántiam eórum téneat, sectétur fidem, imitétur virtútem passiónis; eórum glóriam páribus vitæ lineaméntis aut invéniat, aut exquírat? Qui etsi martýrio par esse non possit: tamen múneris tanti dignitáte se quisque bonis áctibus dignum prǽbeat. Adest enim clementíssimus Deus, qui desiderántibus suis aut martýrium prǽbeat, aut sine martýrio cum sanctis prǽmia divína retríbuat.",
+		"lectio-iii":"Ut enim infirmátur peccátor advérsis, ita justus tentatiónibus roborátur. Sic dimicárunt advérsus peccátum sancti: sic et laborándo fortióres et moriéndo victóres effécti sunt. Nullus athlétes sine certámine fórtior dici, nullus sine victória póterit coronári. Nemo miles sine prǽlio hostem subjécit: nemo sine bello imperatórem proméruit. Habes, christiáne, competéntia arma, quibus hostem expúgnes: habes fortíssima tela, quibus inimícum debélles."
+	},
+	{
 		"tags":["martyres","matutinum","nocturna-iii","lectio","alia-homilia"],
 		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Lucam.",
-			"In illo témpore: Descéndens Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judǽa, et Jerúsalem, et marítima, et Tyri, et Sidónis. Et réliqua.",
+			"[Luc. 6. c.]/In illo témpore: Descéndens Jesus de monte, stetit in loco campéstri, et turba discipulórum ejus, et multitúdo copiósa plebis ab omni Judǽa, et Jerúsalem, et marítima, et Tyri, et Sidónis. Et réliqua.",
 			"Homilía sancti Ambrósii Epíscopi.",
-			"Advérte ómnia diligénter, quómodo et cum Apóstolis ascéndat et descéndat ad turbas. Quómodo enim turba nisi in húmili Christum vidéret? Non séquitur ad excélsa, non ascéndit ad sublímia. Dénique ubi descéndit, invénit infírmos: in excélsis enim infírmi esse non possunt. Hinc étiam Matthǽus docet in inferióribus débiles esse sanátos. Prius enim unusquísque sanándus est, ut paulátim virtútibus procedéntibus ascéndere possit ad montem. Et ídeo quemque in inferióribus sanat, hoc est, a libídine révocat, injúriam cæcitátis avértit. Ad vúlnera nostra descéndit: ut usu quodam et cópia suæ natúræ, compartícipes nos fáciat esse regni cœléstis."
+			"[Lib. 5. in Lucam. Cap . 6., post init.]/Advérte ómnia diligénter, quómodo et cum Apóstolis ascéndat et descéndat ad turbas. Quómodo enim turba nisi in húmili Christum vidéret? Non séquitur ad excélsa, non ascéndit ad sublímia. Dénique ubi descéndit, invénit infírmos: in excélsis enim infírmi esse non possunt. Hinc étiam Matthǽus docet in inferióribus débiles esse sanátos. Prius enim unusquísque sanándus est, ut paulátim virtútibus procedéntibus ascéndere possit ad montem. Et ídeo quemque in inferióribus sanat, hoc est, a libídine révocat, injúriam cæcitátis avértit. Ad vúlnera nostra descéndit: ut usu quodam et cópia suæ natúræ, compartícipes nos fáciat esse regni cœléstis."
 		],
 		"lectio-ii":"Beáti paúperes, quia vestrum est regnum Dei. Quátuor tantum beatúdines sanctus Lucas domínicas pósuit, octo vero sanctus Matthǽus: sed in illis octo istæ quátuor sunt, et in quátuor istis illæ octo. Hic enim quátuor velut virtútes ampléxus est cardináles: ille in illis octo mýsticum númerum reserávit. Pro octáva enim multi inscribúntur Psalmi: et mandátum áccipis octo illis partem dare fortásse benedictiónibus. Sicut enim spei nostræ octáva perféctio est, ita octáva summa virtútum est.",
 		"lectio-iii":"Sed prius quæ sunt amplióra videámus. Beáti, inquit, paúperes, quóniam vestrum est regnum Dei. Primam benedictiónem hanc utérque Evangelísta pósuit. Órdine enim prima est, et parens quædam generatióque virtútum: quia qui contémpserit sæculária, ipse merébitur sempitérna: nec potest quisquam méritum regni cœléstis adipísci, qui mundi cupiditáte pressus, emergéndi non habet facultátem."
@@ -272,9 +367,9 @@
 		"tags":["martyres","matutinum","nocturna-iii","lectio","alia-homilia-iii"],
 		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Lucam.",
-			"In illo témpore: Dixit Jesus discípulis suis: Atténdite a ferménto pharisæórum, quod est hypócrisis. Et réliqua.",
+			"[Luc. 12.]/In illo témpore: Dixit Jesus discípulis suis: Atténdite a ferménto pharisæórum, quod est hypócrisis. Et réliqua.",
 			"Homilía venerábilis Bedæ Presbýteri.",
-			"De hoc ferménto Apóstolus prǽcipit: Ítaque epulémur, non in ferménto véteri, neque in ferménto malítiæ et nequítiæ, sed in ázymis sinceritátis et veritátis. Nam sicut módicum ferméntum totam farínæ, cui injícitur, massam corrúmpit, universámque mox conspersiónem suo sapóre commáculat: sic nimírum simulátio, cujus semel ánimum imbúerit, tota virtútum sinceritáte et veritáte fraudábit. Est ergo sensus: Atténdite ne æmulémini simulatóres, quia véniet profécto tempus, in quo et vestra virtus ómnibus, et eórum revelétur hypócrisis."
+			"[Lib. 4. in Lucam, cap. 52.]/De hoc ferménto Apóstolus prǽcipit: Ítaque epulémur, non in ferménto véteri, neque in ferménto malítiæ et nequítiæ, sed in ázymis sinceritátis et veritátis. Nam sicut módicum ferméntum totam farínæ, cui injícitur, massam corrúmpit, universámque mox conspersiónem suo sapóre commáculat: sic nimírum simulátio, cujus semel ánimum imbúerit, tota virtútum sinceritáte et veritáte fraudábit. Est ergo sensus: Atténdite ne æmulémini simulatóres, quia véniet profécto tempus, in quo et vestra virtus ómnibus, et eórum revelétur hypócrisis."
 		],
 		"lectio-ii":"Verum quod séquitur: Quóniam quæ in ténebris dixístis, in lúmine dicéntur: non solum in futúro, quando cuncta córdium abscóndita proferéntur ad lucem, sed et in præsénti témpore potest congruénter áccipi: quóniam quæ inter ténebras quondam pressurárum, carcerúmque umbras, vel locúti, vel passi sunt Apóstoli, nunc clarificáta per orbem Ecclésia, lectis eórum áctibus, públice prædicántur. Ne terreámini ab his qui occídunt corpus. Si persecutóres sanctórum, occísis corpóribus, non habent ámplius quid contra illos agant; ergo supervácua furunt insánia, qui mórtua Mártyrum membra feris avibúsque discerpénda projíciunt, cum nequáquam omnipoténtiæ Dei, quin ea resuscitándo vivíficet, obsístere possint.",
 		"lectio-iii":"Duo autem sunt génera persecutórum: unum palam sæviéntium, álterum ficte fraudulentérque blandiéntium. Contra utrúmque nos muníre atque institúere volens Salvátor, et supra ab hypócrisi pharisæórum atténdere, et hic a carníficum cæde prǽcipit non timére: quia vidélicet post mortem nec horum crudélitas, nec illórum váleat simulátio duráre. Nonne quinque pásseres véneunt dipóndio? Si minutíssima, inquit, animália, et quæ quólibet per áëra ferúntur volatília, Deus oblivísci non potest; vos qui ad imáginem facti estis Creatóris, non debétis terréri ab his, qui occídunt corpus: quia qui irrationabília animália gubérnat, rationabília curáre non désinit."
