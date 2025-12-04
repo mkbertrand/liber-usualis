@@ -262,8 +262,12 @@
 		"datum":"Hódie egréssa est * virga de radíce Jesse: hódie sine ulla peccáti labe concépta est María: hódie contrítum est ab ea caput serpéntis antíqui, allelúja."
 	},
 	{
-		"tags":["immaculata-conceptio-bmv","infra-octavam","matutinum","nocturna-i","lectio"],
-		"datum":[["temporale","occurrens","lectio"]]
+		"tags":[
+			["immaculata-conceptio-bmv","infra-octavam","matutinum","nocturna-i","lectio"],
+			["immaculata-conceptio-bmv","dies-octava","matutinum","nocturna-i","lectio"]
+		],
+		"datum":[["temporale","occurrens","lectio"]],
+		"de-quatuor-temporibus":[["maria","commune","lectio"]]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","dies-ii","infra-octavam","matutinum","nocturna-ii","lectio"],
@@ -344,5 +348,25 @@
 		],
 		"lectio-ii":"Ne tímeas María, invenísti enim apud Deum grátiam períre nésciam; invenísti apud Deum grátiam præ quálibet exímiam; invenísti apud Deum grátiam ómnibus votis expeténdam; invenísti apud Deum grátiam ómnium gratiárum splendidíssimam; invenísti apud Deum grátiam numquam elanguéntem; invenísti apud Deum grátiam quæ te salvam præstet; invenísti apud Deum grátiam, quæ nullo ímpetu quatiátur; invenísti apud Deum grátiam plane invíctam; invenísti apud Deum grátiam perénniter duratúram. Et álii quidem, iíque plures ante te exímia sanctitáte floruérunt. Sed némini, quemádmodum tibi, plena grátia impertíta est; nemo sicut tu, ad tantum magnificéntiæ est evéctus; nemo sicut tu, purificánte grátia præoccupátus est; nemo sicut tu, cœlésti lúmine refúlsit; nemo sicut tu, præ omni celsitúdine exaltátus est.",
 		"lectio-iii":"Et mérito quidem; nemo enim sicut tu, ad Deum tam prope accéssit; nemo sicut tu, Dei donis ditátus est; nemo sicut tu, Dei grátiæ párticeps fuit. Ómnia vincis, quæcúmque inter hómines emíneant; ómnia súperas múnera, quæ effúsa a Dei largitáte in quóslibet dimanáverint. Plus enim ómnibus inhabitántis Dei possessióne ditéscis. Nemo sic in se Deum complécti pótuit; nemo pótuit sic frui Dei præséntia; nemo dignus est hábitus, qui sic per Deum illuminarétur; ac proptérea non modo Deum ómnium Conditórem ac Dóminum in te excepísti, sed eum habes ex te ineffabíliter incarnátum, atque in útero tuo gestátum, et post hæc génitum, et univérsos hómines a patérna condemnatióne rediméntem, ac salútem, quæ nullum finem habitúra sit, ipsis elargiéntem. Et proptérea tibi clamávi, atque íterum veheménter clamábo: Ave grátia plena, Dóminus tecum: benedícta tu in muliéribus."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","dies-octava","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex Bulla dogmática Pii Papæ noni.",
+			"Ab antíquis tempóribus sacrórum Antístites, ecclesiástici viri, reguláres órdines ac vel ipsi imperatóres et reges ab hac apostólica Sede eníxe efflagitárunt, ut Immaculáta sanctíssimæ Dei Genitrícis Concéptio véluti cathólicæ fídei dogma definirétur. Quæ postulatiónes hac nostra quoque ætáte iterátæ fuérunt, ac potíssimum felícis recordatiónis Gregório decimoséxto prædecessóri nostro, ac nobis ipsis oblátæ sunt tum ab epíscopis, tum a clero sæculári, tum a religiósis famíliis, ac summis princípibus et fidélibus pópulis. Nos ítaque singulári ánimi nostri gaúdio hæc ómnia probe noscéntes, ac sério considerántes, vix dum licet immériti, arcáno divínæ providéntiæ consílio ad hanc sublímem Petri cáthedram evécti, totíus Ecclésiæ gubernácula tractánda suscépimus, nihil certe antíquius habúimus, quam pro summa nostra vel a téneris annis erga sanctíssimam Dei Genitrícem Vírginem Maríam veneratióne, pietáte et afféctu ea ómnia perágere, quæ adhuc in Ecclésiæ votis esse póterant, ut beatíssimæ Vírginis honor augerétur, ejúsque prærogatívæ uberióri luce nitérent."
+		],
+		"lectio-ii":"Ítaque plúrimum in Dómino confísi advenísse témporum opportunitátem pro Immaculáta sanctíssimæ Dei Genitrícis Vírginis Maríæ Conceptióne definiénda, quam divína elóquia, veneránda tradítio, perpétuus Ecclésiæ sensus, singuláris catholicórum Antístitum ac fidélium conspirátio, et insígnia prædecessórum nostrórum acta, constitutiónes mirífice illústrant atque declárant; rebus ómnibus diligentíssime perpénsis et assíduis fervidísque ad Deum précibus effúsis, mínime cunctándum nobis esse censúimus, suprémo nostro judício Immaculátam ipsíus Vírginis Conceptiónem sancíre, definíre, atque ita pientíssimis cathólici orbis desidériis, nostrǽque in ipsam sanctíssimam Vírginem pietáti satisfácere, ac simul in ipsa unigénitum Fílium suum Dóminum nostrum Jesum Christum magis atque magis honorificáre, cum in Fílium redúndet quidquid honóris et laudis in Matrem impénditur.",
+		"lectio-iii":"Quare postquam numquam intermísimus in humilitáte et jejúnio privátas nostras et públicas Ecclésiæ preces Deo Patri per Fílium ejus offérre, ut Spíritus sancti virtúte mentem nostram dirígere et confirmáre dignarétur, imploráto univérsæ cœléstis cúriæ præsídio, et advocáto cum gemítibus Paráclito Spíritu, eóque sic aspiránte: ad honórem sanctæ et indivíduæ Trinitátis, ad decus et ornaméntum Vírginis Deíparæ, ad exaltatiónem fídei cathólicæ et christiánæ religiónis augméntum, auctoritáte Dómini nostri Jesu Christi, beatórum Apostolórum Petri et Pauli, ac nostra declarámus, pronuntiámus et definímus: Doctrínam quæ tenet beatíssimam Vírginem Maríam in primo instánti suæ Conceptiónis fuísse singulári omnipoténtis Dei grátia et privilégio, intúitu meritórum Christi Jesu Salvatóris humáni géneris, ab omni originális culpæ labe præservátam immúnem, esse a Deo revelátam, atque idcírco ab ómnibus fidélibus fírmiter constantérque credéndam. Quaprópter si qui secus ac a nobis definítum est, quod Deus avértat, præsúmpserint corde sentíre, ii nóverint ac porro sciant se próprio judício condemnátos, naufrágium circa fidem passos esse, et ab unitáte Ecclésiæ defecísse."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","dies-octava","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 1. c.]/In illo témpore: Missus est Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et réliqua.",
+			"Homilía sancti Epiphánii Epíscopi.",
+			"[Orat. de laudibus S. Mariæ Deiparæ.]/Quid dicam, aut quid próloquar de præclára et sancta Vírgine? Solo enim Deo excépto, cunctis supérior éxstitit: natúra formósior est ipsis Chérubim et Séraphim, et omni exércitu angélico; cui prædicándæ cœléstis ac terréna lingua mínime súfficit, imo vero nec Angelórum. O beáta Virgo, colúmba pura et sponsa cœléstis María, cœlum, templum, et thronus divinitátis, quæ coruscántem in cœlo et in terra solem habes Christum! Nubes lúcida, quæ fulgur de cœlo lucidíssimum ad illuminándum mundum deduxísti Christum. Ave grátia plena, porta cœlórum, de qua in Cánticis prophéta in decúrsu oratiónis plane et apérte prolóquitur inclámans: Hortus conclúsus, soror mea sponsa, hortus conclúsus, fons signátus."
+		],
+		"lectio-ii":"Virgo est lílium immaculátum, quæ rosam immarcescíbilem génuit Christum. O sancta Deípara, ovis immaculáta quæ verbum ex te incarnátum Agnum Christum peperísti! O Virgo sanctíssima, quæ exércitus Angelórum in stupórem deduxísti! Stupéndum est miráculum in cœlis, múlier amícta sole, gestans lucem in ulnis: stupéndum miráculum in cœlis, thálamus Vírginis habens Fílium Dei: stupéndum miráculum in cœlis, Dóminus Angelórum infans Vírginis efféctus est. Ángeli accusábant Hevam, nunc vero Maríam glória prosequúntur, quæ lapsam Hevam eréxit, et Adámum e paradíso dejéctum in cœlos misit. Ipsa enim est cœli et terræ mediátrix, quæ uniónem naturáliter perégit.",
+		"lectio-iii":"Grátia sanctæ Vírginis est imménsa. Hinc Gábriel in primis salútat Vírginem, dicens: Ave grátia plena, quæ es spléndidum cœlum. Ave grátia plena, multis virtútibus exornáta Virgo. Ave grátia plena, quæ es urna aúrea cóntinens manna cœléste. Ave grátia plena, quæ sitiéntes perénnis fontis dulcédine sátias. Ave sanctíssima Mater Immaculáta, quæ genuísti Christum, qui est ante te. Ave púrpura régia, quæ cœli terrǽque Regem induísti. Ave liber incomprehénsus, quæ Verbum et Fílium Patris mundo legéndum exhibuísti."
 	}
 ]
