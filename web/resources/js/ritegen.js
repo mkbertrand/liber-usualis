@@ -367,7 +367,7 @@ function render(data, chant) {
 							if (annotation) {
 								reading = reading.replace(/^\[.+?\]\//g,'');
 								annotation = annotation[0].slice(1, -2);
-								return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation}</p><p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
+								return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${stringrender(annotation)}</p><p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 							}
 							return `<p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 						}
