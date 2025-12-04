@@ -364,7 +364,7 @@
 
 .rite-text-rubric-above-paragraph {
 	margin-top: 7px;
-	margin-bottom: 0;
+	margin-bottom: -7px;
 }
 
 .item-header {

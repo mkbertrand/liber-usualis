@@ -169,7 +169,7 @@ function stringrender(data) {
 		.replace(/N\./g, '<span class=\'red\'>N.</span>')
 		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
 		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-		.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
+		.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
 		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
 		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
 		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
