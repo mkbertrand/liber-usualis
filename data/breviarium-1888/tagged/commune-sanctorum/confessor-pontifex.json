@@ -50,7 +50,7 @@
 	},
 	{
 		"tags":["confessor-pontifex","capitulum"],
-		"datum":"Ecce sacérdos magnus, + qui in diébus suis plácuit Deo, et invéntus est justus: * et in témpore iracúndiæ factus est reconciliátio."
+		"datum":"[Eccli. 44. c.]/Ecce sacérdos magnus, + qui in diébus suis plácuit Deo, et invéntus est justus: * et in témpore iracúndiæ factus est reconciliátio."
 	},
 	{
 		"tags":[
@@ -63,7 +63,7 @@
 			"Qui pius, prudens, húmilis, pudícus,/Sóbriam duxit sine labe vitam,/Donec humános animávit auræ/Spíritus artus.",
 			"Cujus ob præstans méritum frequénter,/Ægra quæ passim jacuére, membra/Víribus morbi dómitis, salúti/Restituúntur.",
 			"Noster hinc illi chorus obsequéntem/Cóncinit laudem, celebrésque palmas;/Ut piis ejus précibus juvémur/Omne per ævum.",
-			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Tótius mundi sériem gubérnat/Trinus et unus.","Amen."
+			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Totíus mundi sériem gubérnat/Trinus et unus.","Amen."
 		]
 	},
 	{
@@ -77,7 +77,7 @@
 			"Qui pius, prudens, húmilis, pudícus,/Sóbriam duxit sine labe vitam,/Donec humános animávit auræ/Spíritus artus.",
 			"Cujus ob præstans méritum frequénter,/Ægra quæ passim jacuére, membra/Víribus morbi dómitis, salúti/Restituúntur.",
 			"Noster hinc illi chorus obsequéntem/Cóncinit laudem, celebrésque palmas;/Ut piis ejus précibus juvémur/Omne per ævum.",
-			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Tótius mundi sériem gubérnat/Trinus et unus.","Amen."
+			"Sit salus illi, decus, atque virtus,/Qui super cœli sólio corúscans,/Totíus mundi sériem gubérnat/Trinus et unus.","Amen."
 		]
 	},
 	{
@@ -104,7 +104,7 @@
 		"tags":["confessor-pontifex","matutinum","nocturna-i","lectio"],
 		"datum":[
 			"De Epístola prima beáti Pauli Apóstoli ad Timótheum.",
-			"Fidélis sermo: Si quis episcopátum desíderat, bonum opus desíderat. Opórtet ergo epíscopum irreprehensíbilem esse, uníus uxóris virum, sóbrium, prudéntem, ornátum, pudícum, hospitálem, doctórem, non vinoléntum, non percussórem, sed modéstum; non litigiósum, non cúpidum, sed suæ dómui bene præpósitum, fílios habéntem súbditos cum omni castitáte. Si quis autem dómui suæ præésse nescit, quómodo Ecclésiæ Dei diligéntiam habébit? Non neóphytum: ne in supérbiam elátus, in judícium íncidat diáboli. Opórtet autem illum et testimónium habére bonum ab iis qui foris sunt, ut non in oppróbrium íncidat, et in láqueum diáboli."
+			"[I. Tim. 3.]/Fidélis sermo: Si quis episcopátum desíderat, bonum opus desíderat. Opórtet ergo epíscopum irreprehensíbilem esse, uníus uxóris virum, sóbrium, prudéntem, ornátum, pudícum, hospitálem, doctórem, non vinoléntum, non percussórem, sed modéstum; non litigiósum, non cúpidum, sed suæ dómui bene præpósitum, fílios habéntem súbditos cum omni castitáte. Si quis autem dómui suæ præésse nescit, quómodo Ecclésiæ Dei diligéntiam habébit? Non neóphytum: ne in supérbiam elátus, in judícium íncidat diáboli. Opórtet autem illum et testimónium habére bonum ab iis qui foris sunt, ut non in oppróbrium íncidat, et in láqueum diáboli."
 		],
 		"lectio-ii":"Opórtet enim epíscopum sine crímine esse, sicut Dei dispensatórem: non supérbum, non iracúndum, non vinoléntum, non percussórem, non turpis lucri cúpidum: sed hospitálem, benígnum, sóbrium, justum, sanctum, continéntem, amplecténtem eum, qui secúndum doctrínam est, fidélem sermónem: ut potens sit exhortári in doctrína sana, et eos, qui contradícunt, argúere. Sunt enim multi étiam inobediéntes, vaníloqui, et seductóres: máxime qui de circumcisióne sunt: quos opórtet redárgui: qui univérsas domos subvértunt, docéntes quæ non opórtet, turpis lucri grátia."
 	},
@@ -135,6 +135,13 @@
 		"in-tempore-paschali":["V. Elégit eum Dóminus sacerdótem sibi, allelúja.","R. Ad sacrificándum ei hóstiam laudis, allelúja."]
 	},
 	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Máximi Epíscopi.",
+			"[Homilia 59, quæ est 2. de S. Eusebio Vercellensi.]/Ad sancti ac beatíssimi Patris nostri N., cujus hódie festa celebrámus, laudes addidísse áliquid, decerpsísse est: síquidem virtútum ejus grátia non sermónibus exponénda est, sed opéribus comprobánda. Cum enim dicat Scriptúra: Glória patris est fílius sápiens: quantæ hujus sunt glóriæ, qui tantórum filiórum sapiéntia, et devotióne lætátur? In Christo enim Jesu per Evangélium ipse nos génuit."
+		]
+	},
+	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"src":"nocturnale/COPON2R1",
 		"incipit":"Invéni David, servum meum, óleo sancto meo unxi eum:",
@@ -142,11 +149,19 @@
 		"versus":"Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei."
 	},
 	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quidquid ígitur in hac sancta plebe potest esse virtútis et grátiæ, de hoc quasi quodam fonte lucidíssimo, ómnium rivulórum púritas emanávit. Étenim quia castitátis pollébat vigóre, quia abstinéntiæ gloriabátur angústiis, quia blandiméntis erat prǽditus lenitátis, ómnium cívium in Deum provocávit afféctum: quia Pontíficis administratióne fulgébat, plures e discípulis relíquit sui sacerdótii successóres."
+	},
+	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"src":"nocturnale/COPON2R2",
 		"incipit":"Pósui adjutórium super poténtem, et exaltávi eléctum de plebe mea:",
 		"responsum":"Manus enim mea auxiliábitur ei.",
 		"versus":"Invéni David servum meum, óleo sancto meo unxi eum."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Bene et cóngrue in hac die, quam nobis beáti Patris nostri N. ad paradísum tránsitus exsultábilem reddit, præséntis Psalmi versículum decantávimus: In memória ætérna erit justus. Digne enim in memóriam vértitur hóminum, qui ad gaúdium tránsiit Angelórum. Dicit sermo divínus: Ne laudes hóminem in vita sua: tamquam si díceret: Lauda post vitam, magnífica post consummatiónem. Dúplici enim ex causa utílius est hóminum magis memóriæ laudem dare, quam vitæ; ut illo potíssimum témpore mérita sanctitátis extóllas, quando nec laudántem adulátio movet, nec laudátum tentet elátio."
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-iii"],
@@ -167,14 +182,14 @@
 		"tags":["confessor-pontifex","matutinum","nocturna-iii","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
-			"In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua. Et réliqua.",
+			"[Matth. 25. b.]/In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua. Et réliqua.",
 			"Homilía sancti Gregórii Papæ.",
-			"Léctio sancti Evangélii, fratres caríssimi, sollícite consideráre nos ádmonet, ne nos, qui plus céteris in hoc mundo accepísse áliquid cérnimur, ab auctóre mundi grávius inde judicémur. Cum enim augéntur dona, ratiónes étiam crescunt donórum. Tanto ergo esse humílior, atque ad serviéndum Deo prómptior quisque debet ex múnere, quanto se obligatiórem esse cónspicit in reddénda ratióne. Ecce homo qui péregre proficíscitur, servos suos vocat, eísque ad negótium talénta partítur. Post multum vero témporis positúrus ratiónem revértitur. Bene operántes pro apportáto lucro remúnerat, servum vero a bono ópere torpéntem damnat."
+			"[Homilia 9. in Evangel.]/Léctio sancti Evangélii, fratres caríssimi, sollícite consideráre nos ádmonet, ne nos, qui plus céteris in hoc mundo accepísse áliquid cérnimur, ab auctóre mundi grávius inde judicémur. Cum enim augéntur dona, ratiónes étiam crescunt donórum. Tanto ergo esse humílior, atque ad serviéndum Deo prómptior quisque debet ex múnere, quanto se obligatiórem esse cónspicit in reddénda ratióne. Ecce homo qui péregre proficíscitur, servos suos vocat, eísque ad negótium talénta partítur. Post multum vero témporis positúrus ratiónem revértitur. Bene operántes pro apportáto lucro remúnerat, servum vero a bono ópere torpéntem damnat."
 		]
 	},
 	{
-		"tags":["confessor-pontifex","matutinum","nocturna-iii","responsorium","responsorium-i","formula"],
-		"datum":[["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii","formula"]]
+		"tags":["confessor-pontifex","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"datum":[["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-iii","lectio","lectio-ii"],
@@ -225,7 +240,7 @@
 	},
 	{
 		"tags":["confessor-pontifex","sexta","capitulum"],
-		"datum":"Non est invéntus símilis illi, + qui conserváret legem Excélsi: * ídeo jurejurándo fecit illum Dóminus créscere in plebem suam."
+		"datum":"[Eccli. 44. c.]/Non est invéntus símilis illi, + qui conserváret legem Excélsi: * ídeo jurejurándo fecit illum Dóminus créscere in plebem suam."
 	},
 	{
 		"tags":["confessor-pontifex","sexta","responsorium-breve"],
@@ -242,7 +257,7 @@
 	},
 	{
 		"tags":["confessor-pontifex","nona","capitulum"],
-		"datum":"Fungi sacerdótio, + et habére laudem in nómine ipsíus, * et offérre illi incénsum dignum in odórem suavitátis."
+		"datum":"[Eccli. 45. c.]/Fungi sacerdótio, + et habére laudem in nómine ipsíus, * et offérre illi incénsum dignum in odórem suavitátis."
 	},
 	{
 		"tags":["confessor-pontifex","nona","responsorium-breve"],
