@@ -26,12 +26,32 @@
 		"lectio-iii":"Ipse palam fáciet disciplínam doctrínæ suæ, et in lege testaménti Dómini gloriábitur. Collaudábunt multi sapiéntiam ejus, et usque in sǽculum non delébitur. Non recédet memória ejus, et nomen ejus requirétur a generatióne in generatiónem. Sapiéntiam ejus enarrábunt gentes, et laudem ejus enuntiábit Ecclésia."
 	},
 	{
+		"tags":["doctor","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex libro Morálium sancti Gregórii Papæ.",
+			"[Lib. 9. Cap. 6.]/Qui post Oríonas Hýadum nómine, nisi Doctóres sanctæ Ecclésiæ designántur? Qui subdúctis Martýribus, eo jam témpore ad mundi notítiam venérunt, quo fides clárius elúcet, et représsa infidelitátis híeme, áltius per corda fidélium sol veritátis calet. Qui remóta tempestáte persecutiónis, explétis longis nóctibus infidelitátis, tunc sanctæ Ecclésiæ orti sunt, cum ei jam per credulitátis vernum lucídior annus aperítur."
+		],
+		"lectio-ii":"Nec immérito Doctóres sancti Hýadum nuncupatióne signántur. Græco quippe elóquio hýetos plúvia vocátur: et Hýades nomen a plúviis accepérunt, quia ortæ procul dúbio imbres ferunt. Bene ergo Hýadum appellatióne expréssi sunt, qui ad statum universális Ecclésiæ, quasi in cœli fáciem dedúcti, super aréntem terram humáni péctoris sanctæ prædicatiónis imbres fudérunt. Si enim prædicatiónis sermo plúvia non esset, Móyses mínime dixísset: Exspectétur sicut plúvia elóquium meum: et nequáquam per Isaíam Véritas díceret: Mandábo núbibus meis, ne pluant super eam imbrem: atque hoc, quod paulo ante protúlimus: Quamóbrem prohíbitæ sunt stellæ pluviárum.",
+		"lectio-iii":"Dum ergo Hýades cum plúviis véniunt, ad cœli spátia altióra sol dúcitur: quia apparénte Doctórum sciéntia, dum mens nostra imbre prædicatiónis infúnditur, fídei calor augétur. Et perfúsa terra ad fructum próficit, cum lumen ǽtheris ignéscit: quia ubérius frugem boni óperis réddimus dum per sacræ eruditiónis flammam in corde clárius ardémus. Dumque per eos diébus síngulis magis magísque sciéntia cœléstis osténditur, quasi intérni nobis lúminis vernum tempus aperítur: ut novus sol nostris méntibus rútilet, et eórum verbis nobis cógnitus seípso quotídie clárior micet. Urgénte étenim mundi fine, supérna sciéntia próficit, et lárgius cum témpore excréscit."
+	},
+	{
+		"tags":["doctor","matutinum","nocturna-iii","lectio"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 5. b.]/In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Lib. 1. de Serm. Domini in monte./Cap. 6. Tom. 4.]/Osténdit Dóminus, fátuos esse judicándos, qui temporálium bonórum vel cópiam sectántes, vel inópiam metuéntes, amíttunt ætérna, quæ nec dari possunt ab homínibus, nec auférri. Ítaque si sal infatuátum fúerit, in quo saliétur? Id est, si vos, per quos condiéndi sunt quodámmodo pópuli, metu persecutiónum temporálium amiséritis regna cœlórum; qui erunt hómines, per quos a vobis error auferátur, cum vos elégerit Deus, per quos errórem aúferat ceterórum?"
+		],
+		"lectio-ii":"Ergo ad níhilum valet sal infatuátum, nisi ut mittátur foras, et calcétur ab homínibus. Non ítaque calcátur ab homínibus, qui pátitur persecutiónem: sed qui persecutiónem timéndo infatuátur. Calcári enim non potest nisi inférior: sed inférior non est, qui quamvis córpore multa in terra sustíneat, corde tamen fixus in cœlo est.",
+		"lectio-iii":"Vos estis lumen mundi. Quómodo dixit supérius sal terræ, sic nunc dicit lumen mundi. Nam neque supérius ista terra accipiénda est, quam pédibus corpóreis calcámus: sed hómines qui in terra hábitant, vel étiam peccatóres, quorum condiéndis et exstinguéndis putóribus apostólicum salem Dóminus misit. Et hic mundum non cœlum et terram, sed hómines, qui sunt in mundo, vel díligunt mundum, opórtet intélligi, quibus illuminándis Apóstoli missi sunt. Non potest cívitas abscóndi super montem pósita: id est, fundáta super insígnem magnámque justítiam, quam signíficat étiam ipse mons, in quo dísputat Dóminus."
+	},
+	{
 		"tags":["doctor","matutinum","nocturna-iii","lectio","lectio-i","alia-homilia"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
 			"[Matth. 5. b.]/In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.",
 			"Homilía sancti Hilárii Epíscopi.",
-			"[Lib. 1. de Serm. Domini in monte./Cap. 6. Tom. 4.]/Vos estis sal terræ: quod si sal infatuátum fúerit, ad níhilum valet id quod saliétur. Sal, ut árbitror, terræ nullum est. Quómodo ergo Apóstolos sal terræ nuncupávit? Sed propríetas est quærénda dictórum, quam et Apostolórum offícium, et ipsíus salis natúra monstrábit. Sal est in se uno cóntinens aquæ et ignis eleméntum, et hoc ex duóbus est unum."
+			"[Comm. in Matthæum, can. 4.]/Vos estis sal terræ: quod si sal infatuátum fúerit, ad níhilum valet id quod saliétur. Sal, ut árbitror, terræ nullum est. Quómodo ergo Apóstolos sal terræ nuncupávit? Sed propríetas est quærénda dictórum, quam et Apostolórum offícium, et ipsíus salis natúra monstrábit. Sal est in se uno cóntinens aquæ et ignis eleméntum, et hoc ex duóbus est unum."
 		]
 	},
 	{
