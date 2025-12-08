@@ -25,6 +25,10 @@
 		"datum":"Gegrüßet seist du, Maria, voll der Gnade, der Herr ist mit dir. Du bist gebenedeit unter den Frauen, und gebenedeit ist die Frucht deine Leibes, Jesus. Heilige Maria, Mutter Gottes, bitte für uns Sünder, jetzt und in der Stunde unseres Todes. Amen."
 	},
 	{
+		"tags":["credo-secreta"],
+		"datum":"Ich glaube an Gott, den Vater, den Allmächtigen, den Schöpfer des Himmels und Erde, und an Jesus Christus, Seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in die Hölle, am dritte Tage auferstanden von den Toten, aufgefahren in den Himmel; Er sitzet zur Rechten Gottes, des allmächtigen Vaters, von dannen Er kommen wird, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Vergebung der Sünden, Auferstehung der Fleisches und das ewige Leben. Amen."
+	},
+	{
 		"tags":["deus-in-adjutorium"],
 		"datum":[
 			"Gott, auf meine Hilfe habe acht.",
@@ -34,6 +38,52 @@
 		]
 	},
 	{
+		"tags":["dg-capituli"],
+		"datum":"Dank sei Gott."
+	},
+	{
+		"tags":["formula","responsorium"],
+		"datum":[
+			"R. ",""," * ","",
+			"\nV. ","",
+			"\nR. ",""
+		]
+	},
+	{
+		"tags":[
+			["formula","responsorium","gloria"],
+			["formula","responsorium","gloria","simplex-responsum"]
+		],
+		"datum":[
+			"R. ",""," * ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"\nR. ",""
+		]
+	},
+	{
+		"tags":["formula","responsorium","gloria","duplex-responsum"],
+		"datum":[
+			"R. ",""," * ",""," * ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"\nR. ",""
+		]
+	},
+	{
+		"tags":["formula","responsorium-breve"],
+		"datum":[
+			"R. br. ",""," * ","",
+			"\n",""," ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"\nR. ",""," ",""
+		]
+    },
+	{
 		"tags":["benedicamus-domino"],
 		"datum":[
 			"Lasset uns preisen den Herrn.",
@@ -42,14 +92,51 @@
 	},
 	{
 		"tags":["dominus-vobiscum"],
-		"datum":["Der Herr sei mit euch.","Und mit deinem Geiste."]
+		"datum":["V. Der Herr sei mit euch.","R. Und mit deinem Geiste."],
+		"privata":["V. Herr, erhöre mein Gebet.","R. Und lass mein Rufen zu Dir kommen."]
+	},
+	{
+		"tags":["domine-exaudi"],
+		"datum":["V. Herr, erhöre mein Gebet.","R. Und lass mein Rufen zu Dir kommen."]
+	},
+	{
+		"tags":["collecta-primaria"],
+		"datum":["","Lasset uns beten.","",""]
 	},
 	{
 		"tags":["per-dominum"],
-		"datum":["Durch unsern Herrn Jesus Christus, deinen Sohn, der in der Einheit des Heiligen Geistes mit dir lebt und herrscht, Gott von Ewigkeit zu Ewigkeit.", "Amen."]
+		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.", "Amen."]
 	},
 	{
-		"tags":["formula","commemoratio"],
+		"tags":["per-eumdem-dominum"],
+		"datum":["Durch Ihn, unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","Amen."]
+	},
+	{
+		"tags":["per-eumdem-christum"],
+		"datum":[
+			"Durch Ihn Christus unseren Herrn.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["qui-vivis"],
+		"datum":[
+			"Der Du lebst und herrschest mit Gott dem Vater in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["qui-tecum-vivit"],
+		"datum":[
+			"Der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["formula","vesperae","formula-commemorationis"],
+			["formula","laudes","formula-commemorationis"]
+		],
 		"datum":[
 			"",
 			"",
