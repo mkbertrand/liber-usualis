@@ -9,8 +9,32 @@
 		]
 	},
 	{
+		"tags":[
+			["antiphona-bmv","alma-redemptoris","ante-nativitatem","antiphona"],
+			["antiphona-bmv","alma-redemptoris","post-nativitatem","antiphona"]
+		],
+		"datum":"Maiden, Mother of Him that redeemed us, thou that abidest/Heaven’s open gate, and the Star of the Sea, come, succour the fallen!/Fallen indeed we are, but fain would rise by thy succour./Thou that beyond nature’s course, hast borne in time the Eternal;/Thou that a Virgin before and after that childbirth remainest,/From the Archangel’s lips the quickening message receiving,/Mother of Jesus and us, turn thine eyes of mercy on sinners."
+	},
+	{
+		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem","versiculus"],
+		"datum":["V. The Angel of the Lord announced unto Mary.","R. And she conceived by the Holy Ghost."]
+	},
+	{
+
+	},
+	{
 		"tags":["antiphona-bmv","salve-regina","antiphona"],
 		"datum":"Hail, O Queen, Mother of mercy! hail, our life, our sweetness, and our hope. To thee we cry, the banished sons of Eve. Toward thee we sigh, weeping and groaning in this vale of tears. Ah, then, thou our Advocate, turn on us those merciful eyes of thine! And, after this our exile, show to us Jesus, the blessed Fruit of thy womb. O most merciful, O most gracious, O most sweet Virgin Mary!"
+	},
+	{
+		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"],
+		"datum":[
+			"",
+			"",
+			"Let us pray.",
+			"We beseech Thee, O Lord, pour Thy grace into our hearts; that, as we have known the Incarnation of Thy Son Christ by the message of an Angel, so by His Passion and Cross we may be brought unto the glory of the Resurrection.",
+			""
+		]
 	},
 	{
 		"tags":["antiphona-bmv","salve-regina","versiculus"],
