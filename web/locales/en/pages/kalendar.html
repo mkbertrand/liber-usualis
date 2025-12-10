@@ -10,7 +10,7 @@
 		var json = await response.json();
 		this.skeleton = json.skeleton;
 		newskeleton = new Object();
-		monthtitles = {'01': 'Januarius.', '02': 'Februarius.', '03': 'Martius.', '04': 'Aprilis.', '05': 'Majus.', '06': 'Junius.', '07': 'Julius.', '08': 'Augustus.', '09': 'September.', '10': 'October', '11': 'November', '12': 'December.'}
+		monthtitles = {'01': 'Januarius.', '02': 'Februarius.', '03': 'Martius.', '04': 'Aprilis.', '05': 'Majus.', '06': 'Junius.', '07': 'Julius.', '08': 'Augustus.', '09': 'September.', '10': 'October.', '11': 'November.', '12': 'December.'}
 		letter = 0;
 		cepac = 0;
 		for (var i = 0; i < Object.entries(this.skeleton).length; i++) {
