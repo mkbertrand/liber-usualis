@@ -194,8 +194,45 @@
 			["hebdomada-iv-adventus","feria","nona","antiphona","antiphona-v"]
 
 		],
-		"src":"gregobase/280://gregobase.selapa.net/chant.php?id=2440",
+		"src":"gregobase/2440",
 		"datum":"Omnípotens sermo tuus * Dómine a regálibus sédibus véniet, allelúja."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-i"],
+			["in-tempore-adventus","feriae-ii","prima","antiphona","antiphona-i"]
+		],
+		"src":"gregobase/13274",
+		"datum":"Ecce véniet * Dóminus princeps regum terræ: beáti, qui paráti sunt occúrrere illi."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-ii"],
+			["in-tempore-adventus","feriae-ii","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"gregobase/13147",
+		"datum":"Cum vénerit * Fílius hóminis, putas invéniet fidem super terram?"
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-iii"],
+			["in-tempore-adventus","feriae-ii","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"gregobase/12857",
+		"datum":"Ecce jam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras."
+	},
+	{
+		"tags":["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/12197",
+		"datum":"Hauriétis aquas * in gaúdio de fóntibus Salvatóris."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-v"],
+			["in-tempore-adventus","feriae-ii","nona","antiphona","antiphona-v"]
+		],
+		"src":"gregobase/11909",
+		"datum":"Egrediétur * Dóminus de loco sancto suo: véniet ut salvet pópulum suum."
 	},
 	{
 		"tags":[
@@ -286,5 +323,10 @@
 		],
 		"src":"gregobase/12327",
 		"datum":"Ego autem * ad Dóminum aspíciam, et exspectábo Deum Salvatórem meum."
+	},
+	{
+		"tags":["hebdomada-iii-adventus","sabbatum","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/13077",
+		"datum":"Exspectétur * sicut plúvia elóquium meum: et descéndet super nos sicut ros Deus noster."
 	}
 ]
