@@ -345,19 +345,10 @@
 	{
 		"tags":["matutinum","habens-commemorationem-matutini","nocturna-iii","lectio","include-inauthenticas"],
 		"lectio-ii":[["matutinum","nocturna-iii","lectio-ii","lectio"],["matutinum","nocturna-iii","lectio-iii","lectio"]],
-		"lectio-iii":[["commemoratio-matutini"]]
-	},
-	{
-		"tags":["commemoratio-matutini"],
-		"nocturna-ii":[
-			["matutinum","nocturna-ii","lectio-i","lectio"],
-			["matutinum","nocturna-ii","lectio-ii","lectio"],
-			["matutinum","nocturna-ii","lectio-iii","lectio"]
-		],
-		"nocturna-iii":[
-			["matutinum","nocturna-iii","lectio-i","lectio"],
-			["matutinum","nocturna-iii","lectio-ii","lectio"],
-			["matutinum","nocturna-iii","lectio-iii","lectio"]
+		"lectio-iii":[
+			["commemoratio-matutini","occurrens","matutinum","lectio-i","lectio"],
+			["commemoratio-matutini","occurrens","matutinum","lectio-ii","lectio"],
+			["commemoratio-matutini","occurrens","matutinum","lectio-iii","lectio"]
 		]
 	},
 	{

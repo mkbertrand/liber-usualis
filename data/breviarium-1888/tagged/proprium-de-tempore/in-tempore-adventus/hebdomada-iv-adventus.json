@@ -4,7 +4,10 @@
 		"datum":"IV Adventus"
 	},
 	{
-		"tags":["hebdomada-iv-adventus","dominica","antiphona","antiphona-iv"],
+		"tags":[
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-iv"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-iv"]
+		],
 		"src":"gregobase/2837",
 		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja, allelúja."
 	},

@@ -158,8 +158,9 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-i"],
 			["in-tempore-adventus","dominicae","prima","antiphona","antiphona-i"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-i"],
-			["hebdomada-iv-adventus","feria","prima","antiphona","antiphona-i"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-i"],
+			["hebdomada-iv-adventus","prima","antiphona","antiphona-i"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-i"]
 		],
 		"src":"gregobase/2386",
 		"datum":"Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja."
@@ -168,8 +169,9 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-ii"],
 			["in-tempore-adventus","dominicae","tertia","antiphona","antiphona-ii"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-ii"],
-			["hebdomada-iv-adventus","feria","tertia","antiphona","antiphona-ii"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-ii"],
+			["hebdomada-iv-adventus","tertia","antiphona","antiphona-ii"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-ii"]
 
 		],
 		"src":"gregobase/2675",
@@ -179,8 +181,9 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-iii"],
 			["in-tempore-adventus","dominicae","sexta","antiphona","antiphona-iii"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-iii"],
-			["hebdomada-iv-adventus","feria","sexta","antiphona","antiphona-iii"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-iii"],
+			["hebdomada-iv-adventus","sexta","antiphona","antiphona-iii"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-iii"]
 
 		],
 		"src":"gregobase/2801",
@@ -190,8 +193,9 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-v"],
 			["in-tempore-adventus","dominicae","nona","antiphona","antiphona-v"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-v"],
-			["hebdomada-iv-adventus","feria","nona","antiphona","antiphona-v"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-v"],
+			["hebdomada-iv-adventus","nona","antiphona","antiphona-v"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-v"]
 
 		],
 		"src":"gregobase/2440",

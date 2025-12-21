@@ -5,6 +5,11 @@
 		"adde":"omissum"
 	},
 	{
+		"include":["vigilia-thomae"],
+		"adde":"omissum",
+		"remove":["primarium","commemoratio"]
+	},
+	{
 		"include":["vigilia","simplex"],
 		"recheck":false,
 		"exclude":["omissum"],
@@ -88,6 +93,22 @@
 		]
 	},
 	{
+		"include":["eusebius-martyr","primarium"],
+		"response":[
+			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
+			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
+			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+		]
+	},
+	{
+		"include":["thomas","primarium"],
+		"response":[
+			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
+			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
+			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+		]
+	},
+	{
 		"include":["infra-octavam","commemoratio"],
 		"response":"duplicate",
 		"remove":"commemoratio",
@@ -119,7 +140,8 @@
 			{"include":["eustachius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"},
 			{"include":["thomas-de-villanova"],"target":1,"adde":"de-quatuor-temporibus"},
 			{"include":["linus"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["immaculata-conceptio-bmv"],"target":1,"adde":"de-quatuor-temporibus"}
+			{"include":["immaculata-conceptio-bmv"],"target":1,"adde":"de-quatuor-temporibus"},
+			{"include":["eusebius-martyr"],"target":1,"adde":"de-quatuor-temporibus"}
 		]
 	}
 ]
