@@ -19,9 +19,9 @@
 		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
-			"Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Et réliqua.",
+			"[Matth. 1. c.]/Cum esset desponsáta mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto. Et réliqua.",
 			"Homilía sancti Hierónymi Presbýteri.",
-			"Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartam áddidit causam, cur a desponsáta concéptus sit: Ut partus, ínquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxòre generátum."
+			"[Lib. I. Comment. in c. 1. Matth.]/Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartam áddidit causam, cur a desponsáta concéptus sit: Ut partus, ínquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxòre generátum."
 		]
 	},
 	{
@@ -52,27 +52,32 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","antiphona","antiphona-i"],
+		"src":"gregobase/2256",
 		"datum":"Judǽa et Jerúsalem * nolíte timére: cras egrediémini, et Dóminus erit vobíscum, allelúja."
 	},	
 	{
 		"tags":["vigilia-nativitatis","antiphona","antiphona-ii"],
+		"src":"gregobase/2345",
 		"datum":"Hódie sciétis * quia véniet Dóminus: et mane vidébitis glóriam ejus."
 	},
 	{
 		"tags":["vigilia-nativitatis","antiphona","antiphona-iii"],
+		"src":"gregobase/2461",
 		"datum":"Crástina die * delébitur iníquitas terræ: et regnábit super nos Salvátor mundi."
 	},
 	{
 		"tags":["vigilia-nativitatis","antiphona","antiphona-iv"],
+		"src":"gregobase/2837",
 		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja."
 	},
 	{
 		"tags":["vigilia-nativitatis","antiphona","antiphona-v"],
+		"src":"gregobase/2081",
 		"datum":"Crástina erit * vobis salus, dicit Dóminus Deus exercítuum."
 	},
 	{	
 		"tags":["vigilia-nativitatis","capitulum"],
-		"datum":"Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, + quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, * qui factus est ei ex sémine David secúndum carnem."
+		"datum":"[Rom. 1.]/Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, + quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, * qui factus est ei ex sémine David secúndum carnem."
 	},
 	{
 		"tags":["vigilia-nativitatis","hymnus"],
@@ -104,7 +109,7 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","sexta","capitulum"],
-		"datum":"Qui prædestinátus est Fílius Dei in virtúte + secúndum spíritum sanctificatiónis, * ex resurrectióne mortuórum Jesu Christi Dómini nostri."
+		"datum":"[Rom. 1.]/Qui prædestinátus est Fílius Dei in virtúte + secúndum spíritum sanctificatiónis, * ex resurrectióne mortuórum Jesu Christi Dómini nostri."
 	},
 	{
 		"tags":["vigilia-nativitatis","sexta","responsorium-breve"],
@@ -119,7 +124,7 @@
 	},
 	{
 		"tags":["vigilia-nativitatis","nona","capitulum"],
-		"datum":"Per quem accépimus grátiam, et apostolátum + ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, * in quibus estis et vos vocáti Jesu Christi Dómini nostri."
+		"datum":"[Rom. 1.]/Per quem accépimus grátiam, et apostolátum + ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, * in quibus estis et vos vocáti Jesu Christi Dómini nostri."
 	},
 	{
 		"tags":["vigilia-nativitatis","nona","responsorium-breve"],

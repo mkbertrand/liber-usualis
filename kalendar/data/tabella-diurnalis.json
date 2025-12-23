@@ -35,7 +35,7 @@
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","versiculus"],"target":0},
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectiones"],"target":0},
 			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","versiculus"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectiones"],"target":0}
+			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","evangelica-lectio","lectiones"],"target":0}
 		]
 	},
 	{
