@@ -35,7 +35,8 @@
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","versiculus"],"target":0},
 			{"include":["hebdomada-iv-adventus","dominica"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-iii","lectiones"],"target":0},
 			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","nocturna-i","versiculus"],"target":0},
-			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","evangelica-lectio","lectiones"],"target":0}
+			{"include":["hebdomada-iv-adventus","feria"],"response":"duplicate","remove":"primarium","adde":["matutinum","evangelica-lectio","lectiones"],"target":0},
+			{"include":["hebdomada-iv-adventus","feria"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},
 	{
@@ -43,6 +44,12 @@
 		"response":"duplicate",
 		"remove":"primarium",
 		"adde":["matutinum","antiphona","antiphona-invitatorium"]
+	},
+	{
+		"include":["vigilia-nativitatis"],
+		"response":"duplicate",
+		"remove":"primarium",
+		"adde":["matutinum","antiphona","antiphona-invitatorium","pars"]
 	},
 	{
 		"include":["bmv-sabbatum","maria","primarium"],
@@ -85,14 +92,6 @@
 		]
 	},
 	{
-		"include":["rosarium-bmv","primarium"],
-		"response":[
-			{"include":["dominica","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
-			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
-		]
-	},
-	{
 		"include":["eusebius-martyr","primarium"],
 		"response":[
 			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
@@ -106,6 +105,22 @@
 			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
 			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+		]
+	},
+	{
+		"include":["nomen-jesu","primarium"],
+		"response":[
+			{"include":["dominica","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
+			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+		]
+	},
+	{
+		"include":["rosarium-bmv","primarium"],
+		"response":[
+			{"include":["dominica","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
+			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
