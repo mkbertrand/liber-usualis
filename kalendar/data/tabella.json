@@ -433,6 +433,7 @@
 			{"include":["dedicatio-michaelis"],"response":"transfer","target":0,"movement":1},
 			{"include":["rosarium-bmv"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-majus"],"response":"transfer","target":1,"movement":1},
+			{"include":["paulus","commemoratio"],"response":"transfer","target":1,"movement":1},
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus","primarium"],"response":"commemoratio","target":1},
 			{"include":["dominica","semiduplex","primarium"],"response":"commemoratio","target":1},
