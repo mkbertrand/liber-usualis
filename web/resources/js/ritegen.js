@@ -329,27 +329,20 @@ function render(data, chant) {
 					return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data.datum[0])}<br>${stringrender(data.datum[1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[3])}<br>${stringrender(data.datum[4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[8])}<br>${stringrender(data.datum[9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[11])}<br>${stringrender(data.datum[12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[14].datum)}</p>`
 
 				} else if (data.tags.includes('formula-lectionis') && data.datum != '' && !(typeof data.datum !== 'string' && 'tags' in data.datum && data.datum.tags.includes('formula-lectionis'))) {
-					if (!Array.isArray(data.datum) && typeof data.datum !== 'string') {
-						btags = data.datum.tags;
-					} else {
-						btags = typeof data.datum[1].datum === 'object' ?
-							data.datum[1].datum.tags.concat(data.datum[1].tags) :
-							data.datum[1].tags;
-					}
-					if (data.datum.length > 3 && typeof data.datum[3] === 'object' && data.datum[3].tags.includes('lectio-brevis')) {
+					if (data.quaesitum.includes('lectio-brevis')) {
 						header = makeheader('Lectio Brevis');
 					} else {
 						nn = 1;
-						if (btags.includes('nocturna-ii')) {
+						if (data.quaesitum.includes('nocturna-ii')) {
 							nn = 2
-						} else if (btags.includes('nocturna-iii')) {
+						} else if (data.quaesitum.includes('nocturna-iii')) {
 							nn = 3
 						}
-						if (btags.includes('lectio-i')) {
+						if (data.quaesitum.includes('lectio-i')) {
 							header = makeheader('Lectio ' + ['I', 'IV', 'VII'][nn - 1]);
-						} else if (btags.includes('lectio-ii')) {
+						} else if (data.quaesitum.includes('lectio-ii')) {
 							header = makeheader('Lectio ' + ['II', 'V', 'VIII'][nn - 1]);
-						} else if (btags.includes('lectio-iii')) {
+						} else if (data.quaesitum.includes('lectio-iii')) {
 							header = makeheader('Lectio ' + ['III', 'VI', 'IX'][nn - 1]);
 						}
 					}
@@ -379,7 +372,7 @@ function render(data, chant) {
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' '), translated, 'lectio-incipiens ' + data.tags.join(' '))}`
 						// Weird structuring but basically this is needed since sometimes readings are begun without title.
-						} else if (btags.includes('lectio-i')) {
+						} else if (data.quaesitum.includes('lectio-i')) {
 							if (Array.isArray(reading)) { reading = reading.join(' ')};
 							return annotate(reading, translated, 'lectio-incipiens ' + data.tags.join(' '));
 						} else {
