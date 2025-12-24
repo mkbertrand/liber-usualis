@@ -25,9 +25,9 @@
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-</style>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
 	</head>
 	<body>
 		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
@@ -38,11 +38,7 @@
 				</div>
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
-			% if page == 'pray':
-				% include(f'web/pages/{page}.tpl', ritegenversion='33', text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
-			% else:
-				% include(f'web/locales/{locale}/pages/{page}.html')
-
+			% include(f'web/locales/{locale}/pages/{page}.html')
 		</div>
 	</body>
 </html>

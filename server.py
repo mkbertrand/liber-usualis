@@ -55,7 +55,7 @@ titles = {
 }
 
 definedlocales = ['en', 'de', 'la']
-owntemplate = ['index']
+owntemplate = ['index', 'pray']
 
 @get('/')
 def index():
@@ -92,7 +92,7 @@ def localpage(page):
 		for locale in locales:
 			if page in owntemplate:
 				if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					return template('web/pages/index.tpl', locale=locale, preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
+					return template(f'web/pages/{page}.tpl', locale=locale, preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
 			else:
 				if os.path.exists(f'web/locales/{locale}/pages/{page}.html') or os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
 					return template('web/resources/page.tpl', page=page, title=title, locale=locale, preferredlocale=preferredlocale)
