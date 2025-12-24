@@ -10,5 +10,9 @@
 	"coincidences-list-omissions":"Omissions",
 	"coincidences-list-votives":"Votives",
 	"selection-title":"Selection",
-	"options-panel-button":"Options"
+	"bottom-panel-toggle":"Show Bottom Panel",
+	"bottom-panel-explanation":"The bottom panel is used to select different dates and hours.",
+	"options-panel-button":"Options",
+	"next-hour":"Next Hour",
+	"next-hour-forbidden-tooltip":"The next Hour cannot licitly be said."
 }
