@@ -145,6 +145,7 @@
 			this.updateRite();
 		}
 		this.dayinitialized = true;
+		this.ignoredatechange = false;
 	},
 	setTime(time) {
 		this.time = time;
@@ -169,10 +170,9 @@
 				} else {
 					// Otherwise things will happen async that need to be synchronous
 					this.ignoredatechange = true;
-					this.slideHour(this.list[0].id);
 					this.date = new Date(this.date.getTime() + 86400000);
-					await this.updateDay();
-					this.ignoredatechange = false;
+					// This has the effect of actually hitting setTime() and updateDay()
+					await this.setHour(this.list[0].id);
 				}
 				return;
 			}
