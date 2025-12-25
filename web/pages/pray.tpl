@@ -187,7 +187,6 @@
 		} else {
 			this.canincrementhour = this.date.getHours() >= 14;
 		}
-		this.canincrementhour = true;
 	},
 	setAmbit(ambit) {
 		oldambit = this.ambit;
