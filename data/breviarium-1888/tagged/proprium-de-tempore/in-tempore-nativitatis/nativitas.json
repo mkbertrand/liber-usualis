@@ -167,7 +167,7 @@
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-iii"],
 		"src":"nocturnale/1225N2A3",
-		"datum":"Véritas de terra * orta est, et justítia de cœlo prospéxit. "
+		"datum":"Véritas de terra * orta est, et justítia de cœlo prospéxit."
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","psalmus-iii"],
@@ -247,8 +247,9 @@
 		"datum":["V. Ipse invocábit me, allelúja.","R. Pater meus es tu, allelúja."]
 	},
 	{
-		"tags":["nativitas","matutinum","nocturna-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["nativitas","matutinum","nocturna-iii","lectio-i"],
+		"benedictio":[["matutinum","evangelica-lectio","lectio-i","benedictio"]],
+		"lectio":[
 			"Léctio sancti Evangélii secúndum Lucam.",
 			"[Luc. 2.]/In illo témpore: Exiit edíctum a Cǽsare Augústo, ut describerétur univérsus orbis. Et réliqua.",
 			"Homilía sancti Gregórii Papæ.",
@@ -263,8 +264,9 @@
 		"versus":"Dies sanctificátus illúxit nobis: veníte Gentes et adoráte Dóminum."
 	},
 	{
-		"tags":["nativitas","matutinum","nocturna-iii","lectio","lectio-ii"],
-		"datum":[
+		"tags":["nativitas","matutinum","nocturna-iii","lectio-ii"],
+		"benedictio":[["matutinum","per-evangelica-dicta","benedictio"]],
+		"lectio":[
 			"Léctio sancti Evangélii secúndum Lucam.",
 			"[Luc. 2. b.]/In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum, quod factum est, quod Dóminus osténdit nobis. Et réliqua.",
 			"Homilía sancti Ambrósii Epíscopi.",
@@ -279,8 +281,9 @@
 		"versus":"Omnia per ipsum facta sunt, et sine ipso factum est nihil."
 	},
 	{
-		"tags":["nativitas","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":[	
+		"tags":["nativitas","matutinum","nocturna-iii","lectio-iii"],
+		"benedictio":"Verba sancti Evangélii * dóceat nos Christus Fílius Dei.",
+		"lectio":[	
 			"Léctio sancti Evangélii secúndum Joánnem.",
 			"[Joan. 1.]/In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Et réliqua.",
 			"Homilía sancti Augustíni Epíscopi.",
