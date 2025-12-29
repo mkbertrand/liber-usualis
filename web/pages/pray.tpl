@@ -21,6 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=39">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=15">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
@@ -39,8 +40,7 @@
 	optionspanel: false,
 	date: new Date(),
 	time: 'diurnale',
-	day: '',
-	color: '',
+	liturgicalday: '',
 	hour: '',
 	choral: $persist(true),
 	chant: $persist(false),
@@ -55,17 +55,20 @@
 	dayinitialized: false,
 	ignoredatechange: false,
 	canincrementhour: true,
+	lastcompleted: $persist(null),
 	get Rite() {
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
 		}
 		return this.rite;
 	},
+	// Sets this.date with a local date which is adjusted to UTC.
 	setDate(date) {
 		this.date = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.date.getTimezoneOffset() * 60000);
 	},
-	realDate() {
-		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000);
+	// Returns the date (yyyy-mm-dd) adjusted for timezone.
+	getLocalDate() {
+		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
 	},
 	setRecitation(recitation) {
 		if (recitation == 'plainchant') {
@@ -79,7 +82,7 @@
 			this.chant = false;
 		}
 		this.ambit = defineambit(this.desired, this.choral);
-		this.list = ritelist(this.day.tags, this.ambit);
+		this.list = ritelist(this.liturgicalday.tags, this.ambit);
 		this.slideHour(this.hour.id);
 		this.recitation = recitation;
 	},
@@ -95,7 +98,7 @@
 				if (i != this.hour.content.length - 1 && (this.hour.content[i + 1][1] == 'officium-parvum-bmv' || this.hour.content[i + 1][1] == 'officium-defunctorum' || this.hour.content[i + 1][0] == 'psalmi-poenitentiales' || this.hour.content[i + 1][0] == 'litaniae-sanctorum' || this.hour.content[i + 1][0] == 'officium-capituli')) {
 					noending = true;
 				}
-				var response = await fetch(`/rite?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation(locale) : 'none'}&privata=${this.recitation=='private' ? 'privata': 'chorali'}` + (select == '' ? '' : `&select=${select}`));
+				var response = await fetch(`/rite?date=${this.getLocalDate()}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation('{{locale}}') : 'none'}&privata=${this.recitation=='private' ? 'privata': 'chorali'}` + (select == '' ? '' : `&select=${select}`));
 				if (response.status == 500) {
 					newrite = await response.text();
 					break;
@@ -132,14 +135,11 @@
 		}
 	},
 	async updateDay() {
-		const colors = ['violacei', 'rubri', 'viridis', 'aurei'];
-
-		var response = await fetch(`/day?date=${this.realDate().toISOString().substring(0, 10)}&time=${this.time}`);
+		var response = await fetch(`/day?date=${this.getLocalDate()}&time=${this.time}`);
 		var json = await response.json();
 		var primary = json.primary[1];
-		this.color = primary.filter((tag) => colors.includes(tag))[0] + '-theme-color';
 		this.list = ritelist(json.tags, this.ambit);
-		this.day = json;
+		this.liturgicalday = json;
 		if (this.dayinitialized) {
 			this.slideHour(this.hour.id);
 			this.updateRite();
@@ -153,7 +153,7 @@
 	},
 	setHour(id) {
 		this.slideHour(id);
-		this.determineCanIncrement();
+		this.canIncrement();
 		oldtime = this.time;
 		newtime = (this.hour.id == 'vesperae' || this.hour.id == 'completorium') ? 'vesperale' : 'diurnale';
 		if (newtime != oldtime) {
@@ -178,20 +178,23 @@
 			}
 		}
 	},
-	determineCanIncrement() {
+	canIncrement() {
+		this.canIncrementFrom(this.getLocalDate(), this.hour);
+	},
+	canIncrementFrom(date, hour) {
 		currentDate = new Date();
-		if (this.hour.id == 'matutinum' && new Date(currentDate - currentDate.getTimezoneOffset() * 60000).toISOString().substring(0,10) != this.realDate().toISOString().substring(0,10)) {
+		if (hour.id == 'matutinum' && new Date(currentDate - currentDate.getTimezoneOffset() * 60000).toISOString().substring(0,10) != date) {
 			this.canincrementhour = false;
-		} else if (this.hour.id != 'completorium') {
-			this.canincrementhour = true;
-		} else {
+		} else if (hour.id == 'completorium') {
 			this.canincrementhour = this.date.getHours() >= 14;
+		} else {
+			this.canincrementhour = true;
 		}
 	},
 	setAmbit(ambit) {
 		oldambit = this.ambit;
 		this.ambit = ambit;
-		this.list = ritelist(this.day.tags, this.ambit);
+		this.list = ritelist(this.liturgicalday.tags, this.ambit);
 
 		if (this.ambit.length < oldambit.length && this.ambit.length == 1) {
 			this.setHour('matutinum');
@@ -210,6 +213,7 @@
 		}
 	}
 }" x-init="
+	console.log(new Date().toISOString());
 	dopanelsize();
 	if ('{{locale}}' == 'la') {
 		translation = false;
@@ -223,6 +227,13 @@
 	$watch('translation', translation => updateRite());
 	$watch('dayinitialized', dayinitialized => {
 		if (list.length == 7) {
+			if (lastcompleted != null) {
+				if (lastcompleted[0] == getLocalDate()) {
+					if (lastcompleted[1] == 'completorium' && date.getHours() >= 14) {
+					}
+				}
+				console.log(lastcompleted);
+			}
 			if (date.getHours() < 6) {
 				hour = list[0];
 			} else if (date.getHours() < 9) {
@@ -283,13 +294,13 @@
 					<div id="coincidences-list-container">
 						<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
 						<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-						<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(day.primary[0])"></div>
+						<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalday.primary[0])"></div>
 						<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-						<template x-for="commemoration in day.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
+						<template x-for="commemoration in liturgicalday.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
 							<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 						</template>
 						<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-						<template x-for="omission in day.omissions">
+						<template x-for="omission in liturgicalday.omissions">
 							<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
 						</template>
 						<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
@@ -308,7 +319,7 @@
 			<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
 		</div>
 	</div>
-	<div id="side-panel-left" :class="color">
+	<div id="side-panel-left">
 	</div>
 	<div id="rite-page-container">
 		<div x-show="initialized" id="rite-container" x-html="Rite">
@@ -318,10 +329,10 @@
 				<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 				<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 					<div id="date-selector-container" x-data="{search: ''}">
-						<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-left.svg" /></button>
-						<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
+						<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-left.svg" /></button>
+						<input id="date-selector-text" type="date" x-model="search" x-init="search = getLocalDate()" @keyup.enter.window="setDate(search);">
 						<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-						<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-right.svg" /></button>
+						<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-right.svg" /></button>
 					</div>
 					<div id="rite-selector-container">
 						<template x-for="item in list">
@@ -332,11 +343,12 @@
 			</div>
 		</template>
 		<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
-			<button id="next-hour-button" :class="canincrementhour? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="determineCanIncrement();" @click="if (canincrementhour) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
+			<div style="height:0;" x-intersect="lastcompleted = [getLocalDate(), hour.id]"></div>
+			<button id="next-hour-button" :class="canincrementhour? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canIncrement();" @click="if (canincrementhour) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
 			<span id="next-hour-forbidden-tooltip" x-show="!canincrementhour && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
 		</div>
 	</div>
-	<div id="side-panel-right" :class="color">
+	<div id="side-panel-right">
 	</div>
 	<div id="size-change-listener" x-resize="dopanelsize()"></div>
 </div>
