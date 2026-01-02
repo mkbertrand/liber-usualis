@@ -48,8 +48,8 @@
 	translation: $persist(false),
 	bottompanel: $persist(false),
 	bottompanelopen: true,
-	desired: $persist('omnes'),
-	ambit: $persist([]),
+	search: '',
+	desired: $persist('omnes'), ambit: $persist([]),
 	rite: '',
 	initialized: false,
 	dayinitialized: false,
@@ -170,6 +170,7 @@
 					// Otherwise things will happen async that need to be synchronous
 					this.ignoredatechange = true;
 					this.date = new Date(this.date.getTime() + 86400000);
+					this.search = this.getLocalDate();
 					// This has the effect of actually hitting setTime() and updateDay()
 					await this.setHour(this.liturgylist[0].id);
 				}
@@ -231,6 +232,18 @@
 		} else {
 			this.slideHour(this.hour.id);
 			this.updateRite();
+		}
+
+		if (this.nexthour) {
+			if (this.ambit.length < oldambit.length && this.ambit.length == 1) {
+				this.nexthour[1] = 'matutinum';
+			} else if (this.ambit.length < oldambit.length && this.ambit.length == 2) {
+				if (this.hour.id == 'completorium') {
+					this.nexthour[1] = 'vesperae';
+				} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour.id)) {
+					this.nexthour[1] = 'matutinum';
+				}
+			}
 		}
 	}
 }" x-init="
@@ -358,7 +371,7 @@
 			<div id="bottom-easy-select-container">
 				<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 				<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
-					<div id="date-selector-container" x-data="{search: ''}">
+					<div id="date-selector-container">
 						<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-left.svg" /></button>
 						<input id="date-selector-text" type="date" x-model="search" x-init="search = getLocalDate()" @keyup.enter.window="setDate(search);">
 						<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
