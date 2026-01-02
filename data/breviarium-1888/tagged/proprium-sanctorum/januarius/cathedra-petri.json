@@ -4,7 +4,10 @@
 		"datum":"Cathedræ S. Petri"
 	},
 	{
-		"tags":["cathedra-petri","vesperae","hymnus"],
+		"tags":[
+			["cathedra-petri","vesperae","hymnus"],
+			["cathedra-petri","matutinum","hymnus"]
+		],
 		"src":"gregobase/8160",
 		"datum":[
 			"Quodcúmque in orbe néxibus revínxeris,/Erit revínctum Petre in arce síderum:/Et quod resólvit hic potéstas trádita,/Erit solútum cœli in alto vértice:/In fine mundi judicábis sǽculum.",
@@ -24,6 +27,106 @@
 		"tags":["cathedra-petri","collecta"],
 		"datum":"Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: + concéde; ut intercessiónis ejus auxílio, * a peccatórum nostrórum néxibus liberémur:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["cathedra-petri","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0118I",
+		"datum":"Tu es pastor óvium, princeps Apostolórum: * Tibi trádidit Deus claves regni cœlórum."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Íncipit Epístola prima beáti Petri Apóstoli.",
+			"[I. Petr. 1.]/Petrus Apóstolus Jesu Christi, eléctis ádvenis dispersiónis Ponti, Galátiæ, Cappadóciæ, Ásiæ, et Bithýniæ secúndum præsciéntiam Dei Patris, in sanctificatiónem Spíritus, in obediéntiam, et aspersiónem sánguinis Jesu Christi: Grátia vobis, et pax multiplicétur. Benedíctus Deus et Pater Dómini nostri Jesu Christi, qui secúndum misericórdiam suam magnam regenerávit nos in spem vivam, per resurrectiónem Jesu Christi ex mórtuis, in hæreditátem incorruptíbilem, et incontaminátam, et immarcescíbilem, conservátam in cœlis in vobis, qui in virtúte Dei custodímini per fidem in salútem, parátam revelári in témpore novíssimo."
+		]
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Simon Petre ántequam de navi vocárem te, novi te, et super plebem meam príncipem te constítui,",
+		"responsum":"Et claves regni cœlórum trádidi tibi.",
+		"versus":"Quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"In quo exsultábitis, módicum nunc si opórtet contristári in váriis tentatiónibus: ut probátio vestræ fídei multo pretiósior auro (quod per ignem probátur) inveniátur in laudem, et glóriam, et honórem in revelatióne Jesu Christi: quem cum non vidéritis dilígitis: in quem nunc quoque non vidéntes créditis: credéntes autem exsultábitis lætítia inenarrábili, et glorificáta: reportántes finem fídei vestræ salútem animárum."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Si díligis me, Simon Petre, pasce oves meas. Dómine tu nosti quia amo te,",
+		"responsum":"Et ánimam meam pono pro te.",
+		"versus":"Si oportúerit me mori tecum, non te negábo."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"De qua salúte exquisiérunt, atque scrutáti sunt prophétæ, qui de futúra in vobis grátia prophetavérunt: scrutántes in quod, vel quale tempus significáret in eis Spíritus Christi: prænúntians eas quæ in Christo sunt passiónes, et posterióres glórias: quibus revelátum est quia non sibimetípsis, vobis autem ministrábant ea, quæ nunc nuntiáta sunt vobis per eos, qui evangelizavérunt vobis, Spíritu sancto misso de cœlo, in quem desíderant Ángeli prospícere."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam:",
+		"responsum":"Et tibi dabo claves regni cœlórum.",
+		"versus":"Quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"[Serm. 1. de Ss. Apost. Petro et Paulo, ante medium.]/Cum duódecim Apóstoli, accépta per Spíritum sanctum ómnium locutióne linguárum, imbuéndum Evangélio mundum distribútis sibi terrárum pártibus suscepíssent, beatíssimus Petrus princeps apostólici órdinis ad arcem Románi destinátur impérii, ut lux veritátis, quæ in ómnium géntium revelabátur salútem, efficácius se ab ipso cápite per totum mundi corpus effúnderet. Cujus autem natiónis hómines in hac tunc urbe non essent? aut quæ usquam Gentes ignorárent, quod Roma didicísset?"
+		]
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Tu es pastor óvium, princeps Apostolórum: tibi trádidit Deus ómnia regna mundi:",
+		"responsum":"Et ídeo tibi tráditæ sunt claves regni cœlórum.",
+		"versus":"Quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Hic conculcándæ philosophíæ opiniónes, hic dissolvéndæ erant terrénæ sapiéntiæ vanitátes, hic confutándi dǽmonum cultus, hic ómnium sacrilegiórum impíetas destruénda, ubi diligentíssima superstitióne habebátur colléctum, quidquid usquam fúerat vanis erróribus institútum. Ad hanc ergo urbem tu beatíssime Petre Apóstole veníre non métuis; et consórte glóriæ tuæ Paulo Apóstolo, aliárum adhuc ecclesiárum ordinatiónibus occupáto, silvam istam freméntium bestiárum, et turbulentíssimæ profunditátis océanum constántior, quam cum supra mare graderéris, ingréderis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Ego pro te rogávi Petre, ut non defíciat fides tua:",
+		"responsum":"Et tu aliquándo convérsus confírma fratres tuos.",
+		"versus":"Caro et sanguis non revelávit tibi, sed Pater meus, qui es in cœlis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Jam pópulos, qui ex circumcisióne credíderant, erudíeras: jam Antiochénam ecclésiam, ubi primum christiáni nóminis dígnitas est orta, fundáveras: jam Pontum, Galátiam, Cappadóciam, Ásiam, atque Bithýniam légibus evangélicæ prædicatiónis impléveras: nec aut dúbius de provéctu óperis, aut de spátio tuæ ignárus ætátis, trophǽum crucis Christi Románis árcibus inferébas, quo te divínis præordinatiónibus anteíbant, et honor potestátis, et glória passiónis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Petre amas me? tu scis Dómine, quia amo te.",
+		"responsum":"Pasce oves meas.",
+		"versus":"Simon Joánnis díligis me plus his? tu scis Dómine, quia amo te."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 16. b.]/In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi: et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.",
+			"Homilía sancti Hilárii Epíscopi.",
+			"[Comment. in Matth. can. 16. post initium.]/Dóminus a discípulis requírit, quem se hómines esse dícerent: et adjécit, hóminis fílium. Hæc enim confessiónis tenénda rátio est, ut sicut Dei Fílium, ita et fílium hóminis meminérimus: quia álterum sine áltero nihil spei tríbuit ad salútem. Éditis ítaque, quæ divérsæ de eo erant, hóminum opiniónibus, quid de se ipsi séntiant, quærit. Petrus respóndit: Tu es Christus Fílius Dei vivi. Sed Petrus conditiónes propositiónis expénderat. Dóminus enim díxerat: Quem me hómines esse dicunt, fílium hóminis? Et certe fílium hóminis, contemplátio córporis præferébat. Sed addéndo, Quem me esse dicunt; significávit præter id, quod in se videbátur, esse áliud sentiéndum: erat enim hóminis fílius. Quod ígitur de se opinándi judícium desiderábat? Non illud arbitrámur, quod de se ipse conféssus est: sed occúltum erat, de quo quærebátur, in quod se credéntium fides debébat exténdere."
+		]
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Quem dicunt hómines esse Fílium hóminis? dixit Jesus discípulis suis. Respóndens Petrus dixit: Tu es Christus Fílius Dei vivi.",
+		"responsum":"Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.",
+		"versus":"Beátus es Simon Bar-Jona, quia caro et sanguis non revelávit tibi, sed Pater meus, qui est in cœlis."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Et dignum plane conféssio Petri prǽmium consecúta est: quia Dei Fílium in hómine vidísset. Beátus hic est, qui ultra humánum óculos intendísse, et vidísse laudátus est: non id quod ex carne et sánguine erat cóntuens, sed Dei Fílium cœléstis Patris revelatióne conspíciens: dignúsque judicátus, qui quod in Christo Dei esset, primus agnósceret."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Elégit te Dóminus sacerdótem sibi, ad sacrificándum ei",
+		"responsum":"Hóstiam laudis.",
+		"versus":"Ímmola Deo sacrifícium laudis, et redde Altíssimo vota tua."
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"O in nuncupatióne novi nóminis felix Ecclésiæ fundaméntum: dígnaque ædificatióne illíus petra, quæ inférnas leges, et tártari portas, et ómnia mortis claustra dissólveret! O beátus cœli jánitor, cujus arbítrio claves ætérni áditus tradúntur, cujus terréstre judícium præjudicáta auctóritas sit in cœlo! ut quæ in terris aut ligáta sint aut solúta, statúti ejúsdem conditiónem obtíneant et in cœlo."
 	},
 	{
 		"tags":["cathedra-petri","laudes","hymnus"],

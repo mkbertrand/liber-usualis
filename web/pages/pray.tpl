@@ -1,11 +1,40 @@
+<!DOCTYPE html>
+
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
-<script type="text/javascript" src="/resources/js/pray.js?v={{ritegenversion}}"></script>
-<script type="text/javascript" src="/resources/js/ritegen.js?v={{ritegenversion}}"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="/resources/js/exsurge.js"></script>
-<script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
-<div id="content-container-outer" x-data="{
+% import json
+
+<html lang="{{locale.split('-')[0]}}">
+	<head>
+		<title>Pray</title>
+		<script type="application/ld+json">
+		{
+			"@context":"https://schema.org",
+			"@type":"WebSite",
+			"name":"Liber Usualis",
+			"url":"https://liberusualis.org/"
+		}
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=39">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=15">
+		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
+		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+		</style>
+		<script type="text/javascript" src="/resources/js/pray.js?v=1"></script>
+		<script type="text/javascript" src="/resources/js/ritegen.js?v=33"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
+		<script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
+	</head>
+	<body x-data="{
 	list: [],
 	optionspanel: false,
 	date: new Date(),
@@ -17,11 +46,15 @@
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
+	bottompanel: $persist(false),
+	bottompanelopen: true,
 	desired: $persist('omnes'),
 	ambit: $persist([]),
 	rite: '',
 	initialized: false,
 	dayinitialized: false,
+	ignoredatechange: false,
+	canincrementhour: true,
 	get Rite() {
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
@@ -112,6 +145,7 @@
 			this.updateRite();
 		}
 		this.dayinitialized = true;
+		this.ignoredatechange = false;
 	},
 	setTime(time) {
 		this.time = time;
@@ -119,6 +153,7 @@
 	},
 	setHour(id) {
 		this.slideHour(id);
+		this.determineCanIncrement();
 		oldtime = this.time;
 		newtime = (this.hour.id == 'vesperae' || this.hour.id == 'completorium') ? 'vesperale' : 'diurnale';
 		if (newtime != oldtime) {
@@ -126,8 +161,32 @@
 		} else {
 			this.updateRite();
 		}
-
-
+	},
+	async incrementHour() {
+		for (var i = 0; i < this.list.length; i++) {
+			if (this.list[i].id == this.hour.id) {
+				if (i != this.list.length - 1) {
+					this.setHour(this.list[i + 1].id);
+				} else {
+					// Otherwise things will happen async that need to be synchronous
+					this.ignoredatechange = true;
+					this.date = new Date(this.date.getTime() + 86400000);
+					// This has the effect of actually hitting setTime() and updateDay()
+					await this.setHour(this.list[0].id);
+				}
+				return;
+			}
+		}
+	},
+	determineCanIncrement() {
+		currentDate = new Date();
+		if (this.hour.id == 'matutinum' && new Date(currentDate - currentDate.getTimezoneOffset() * 60000).toISOString().substring(0,10) != this.realDate().toISOString().substring(0,10)) {
+			this.canincrementhour = false;
+		} else if (this.hour.id != 'completorium') {
+			this.canincrementhour = true;
+		} else {
+			this.canincrementhour = this.date.getHours() >= 14;
+		}
 	},
 	setAmbit(ambit) {
 		oldambit = this.ambit;
@@ -155,10 +214,10 @@
 	if ('{{locale}}' == 'la') {
 		translation = false;
 	}
-  	if (ambit == '') {
+	if (ambit == '') {
 		ambit = defineambit(desired, choral);
 	}
-	$watch('date', date => updateDay());
+	$watch('date', date => {if (!ignoredatechange) {updateDay()}});
 	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
 	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
@@ -194,7 +253,20 @@
 		time = 'vesperale';
 	}
 	updateDay();
-">
+	">
+		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
+			<div id="top-bar-title">
+				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/hamburger-menu.svg" /></button>
+				<div id="project-logo">
+					<a href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a>
+				</div>
+				<button id="options-gear-wrapper" @click="optionspanel = !optionspanel">
+					<img id="options-gear" src="/resources/svg/settings-outline.svg" />
+				</button>
+			</div>
+			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
+
+<div id="content-container-outer">
 	<div x-cloak id="options-panel-background" x-show="optionspanel">
 		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 			<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
@@ -223,15 +295,17 @@
 						<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
 					</div>
 					<div id="ambit-select-wrapper">
-					<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
-						<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-						<template x-for="entry in ambitEntries">
-							<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
-						</template>
-					</div>
+						<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
+							<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
+							<template x-for="entry in ambitEntries">
+								<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+							</template>
+						</div>
 					</div>
 				</div>
 			</template>
+			<button class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
+			<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
 		</div>
 	</div>
 	<div id="side-panel-left" :class="color">
@@ -239,25 +313,33 @@
 	<div id="rite-page-container">
 		<div x-show="initialized" id="rite-container" x-html="Rite">
 		</div>
-		<div id="bottom-easy-select-container" x-data="{open: true}">
-			<button id="bottom-easy-select-hide" @click="open = !open"><img id="bottom-easy-select-hide-icon" :class="!open && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
-			<div id="bottom-easy-select-content-container" x-show="open" x-transition>
-				<div id="date-selector-container" x-data="{search: ''}">
-					<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-left.svg" /></button>
-					<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
-					<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-					<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-right.svg" /></button>
-					<button id="options-button" @click="optionspanel = !optionspanel">{{text['options-panel-button']}}</button>
-				</div>
-				<div id="rite-selector-container">
-					<template x-for="item in list">
-						<button class="rite-selector-button" :class="(item.id == hour.id) && 'rite-selector-button-selected'" @click="setHour(item.id)" x-text="item.name"></button>
-					</template>
+		<template x-if="bottompanel">
+			<div id="bottom-easy-select-container">
+				<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
+				<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
+					<div id="date-selector-container" x-data="{search: ''}">
+						<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-left.svg" /></button>
+						<input id="date-selector-text" type="date" x-model="search" x-init="search = realDate().toISOString().substring(0,10)" @keyup.enter.window="setDate(search);">
+						<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+						<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = realDate().toISOString().substring(0,10)"><img src="/resources/svg/arrow-right.svg" /></button>
+					</div>
+					<div id="rite-selector-container">
+						<template x-for="item in list">
+							<button class="rite-selector-button" :class="(item.id == hour.id) && 'rite-selector-button-selected'" @click="setHour(item.id)" x-text="item.name"></button>
+						</template>
+					</div>
 				</div>
 			</div>
+		</template>
+		<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
+			<button id="next-hour-button" :class="canincrementhour? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="determineCanIncrement();" @click="if (canincrementhour) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
+			<span id="next-hour-forbidden-tooltip" x-show="!canincrementhour && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
 		</div>
 	</div>
 	<div id="side-panel-right" :class="color">
 	</div>
 	<div id="size-change-listener" x-resize="dopanelsize()"></div>
 </div>
+		</div>
+	</body>
+</html>

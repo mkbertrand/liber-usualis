@@ -345,19 +345,14 @@
 	{
 		"tags":["matutinum","habens-commemorationem-matutini","nocturna-iii","lectio","include-inauthenticas"],
 		"lectio-ii":[["matutinum","nocturna-iii","lectio-ii","lectio"],["matutinum","nocturna-iii","lectio-iii","lectio"]],
-		"lectio-iii":[["commemoratio-matutini"]]
+		"lectio-iii":[["commemoratio-matutini","occurrens","lectio-commemorationis","lectio"]]
 	},
 	{
-		"tags":["commemoratio-matutini"],
-		"nocturna-ii":[
-			["matutinum","nocturna-ii","lectio-i","lectio"],
-			["matutinum","nocturna-ii","lectio-ii","lectio"],
-			["matutinum","nocturna-ii","lectio-iii","lectio"]
-		],
-		"nocturna-iii":[
-			["matutinum","nocturna-iii","lectio-i","lectio"],
-			["matutinum","nocturna-iii","lectio-ii","lectio"],
-			["matutinum","nocturna-iii","lectio-iii","lectio"]
+		"tags":["commemoratio-matutini","lectio-commemorationis","lectio"],
+		"datum":[
+			["matutinum","lectio-i","lectio"],
+			["matutinum","lectio-ii","lectio"],
+			["matutinum","lectio-iii","lectio"]
 		]
 	},
 	{
@@ -384,7 +379,7 @@
 		"datum":[
 			"Nocte surgéntes vigilémus omnes,/Semper in psalmis meditémur, atque/Voce concórdi Dómino canámus/Dúlciter hymnos.",
 			"Ut pio Regi páriter canéntes,/Cum suis sanctis mereámur aulam/Íngredi cœli, simul et perénnem/Dúcere vitam.",
-			"Præstet hoc nobis Déitas beáta/Patris, ac Nati, paritérque sancti/Spíritus, cujus résonat per omnem/Glória mundum.", "Amen."
+			"Præstet hoc nobis Déitas beáta/Patris, ac Nati, paritérque sancti/Spíritus, cujus résonat per omnem/Glória mundum.","Amen."
 		]
 	},
 	{
@@ -395,7 +390,7 @@
 			"Illúmina nunc péctora,/Tuóque amóre cóncrema;/Ut cor cadúca déserens/Cœli volúptas ímpleat:",
 			"Ut, cum tribúnal Júdicis/Damnábit igni nóxios,/Et vox amíca débitum/Vocábit ad cœlum pios.",
 			"Non esca flammárum nigros/Volvámur inter túrbines,/Vultu Dei sed cómpotes/Cœli fruámur gaúdiis.",
-			"Patri simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória."
+			"Patri simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
 		]
 	},
 	{

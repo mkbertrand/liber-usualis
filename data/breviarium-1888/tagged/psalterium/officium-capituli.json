@@ -8,7 +8,7 @@
 			{
 				"tags":["oratio-sanctae-mariae"],
 				"datum":[
-					"Sancta María, et omnes Sancti indercédant pro nobis ad Dóminum, + ut nos mereámur ab eo adjuvári et salvári, * qui vivit et regnat in sǽcula sæculórum.",
+					"Sancta María, et omnes Sancti intercédant pro nobis ad Dóminum, + ut nos mereámur ab eo adjuvári et salvári, * qui vivit et regnat in sǽcula sæculórum.",
 					"R. Amen."
 				]
 			},
@@ -47,7 +47,10 @@
 		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
 	},
 	{
-		"tags":["officium-capituli","per-annum","temporale","lectio-brevis","lectio"],
+		"tags":[
+			["officium-capituli","per-annum","temporale","lectio-brevis","lectio"],
+			["officium-capituli","in-tempore-septuagesimae","temporale","lectio-brevis","lectio"]
+		],
 		"datum":"[II. Thess. 3. b.]/Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
 	},
 	{

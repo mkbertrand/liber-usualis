@@ -130,7 +130,7 @@
 		"datum":"O clavis David, * et sceptrum domus Ísraël; qui áperis, et nemo claudit; claudis, et nemo áperit: veni, et educ vinctum de domo cárceris, sedéntem in ténebris, et umbra mortis."
 	},
 	{
-		"tags":["in-tempore-adventus","antiphona-major","commemoratio","o-oriens","antiphona","antiphona-benedictus"],
+		"tags":["in-tempore-adventus","antiphona-major","o-oriens","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12599",
 		"datum":"Nolíte timére: * quinta enim die véniet ad vos Dóminus noster."
 	},
@@ -158,8 +158,9 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-i"],
 			["in-tempore-adventus","dominicae","prima","antiphona","antiphona-i"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-i"],
-			["hebdomada-iv-adventus","feria","prima","antiphona","antiphona-i"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-i"],
+			["hebdomada-iv-adventus","prima","antiphona","antiphona-i"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-i"]
 		],
 		"src":"gregobase/2386",
 		"datum":"Cánite tuba * in Sion, quia prope est dies Dómini: ecce véniet ad salvándum nos, allelúja."
@@ -168,19 +169,21 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-ii"],
 			["in-tempore-adventus","dominicae","tertia","antiphona","antiphona-ii"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-ii"],
-			["hebdomada-iv-adventus","feria","tertia","antiphona","antiphona-ii"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-ii"],
+			["hebdomada-iv-adventus","tertia","antiphona","antiphona-ii"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-ii"]
 
 		],
-		"src":"gregobase/238://gregobase.selapa.net/chant.php?id=2675",
+		"src":"gregobase/2675",
 		"datum":"Ecce véniet * desiderátus cunctis Géntibus: et replébitur glória domus Dómini, allelúja."
 	},
 	{
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-iii"],
 			["in-tempore-adventus","dominicae","sexta","antiphona","antiphona-iii"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-iii"],
-			["hebdomada-iv-adventus","feria","sexta","antiphona","antiphona-iii"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-iii"],
+			["hebdomada-iv-adventus","sexta","antiphona","antiphona-iii"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-iii"]
 
 		],
 		"src":"gregobase/2801",
@@ -190,12 +193,58 @@
 		"tags":[
 			["in-tempore-adventus","dominicae","laudes","antiphona","antiphona-v"],
 			["in-tempore-adventus","dominicae","nona","antiphona","antiphona-v"],
-			["hebdomada-iv-adventus","dominica","antiphona","antiphona-v"],
-			["hebdomada-iv-adventus","feria","nona","antiphona","antiphona-v"]
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-v"],
+			["hebdomada-iv-adventus","nona","antiphona","antiphona-v"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-v"]
 
 		],
-		"src":"gregobase/280://gregobase.selapa.net/chant.php?id=2440",
+		"src":"gregobase/2440",
 		"datum":"Omnípotens sermo tuus * Dómine a regálibus sédibus véniet, allelúja."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-i"],
+			["in-tempore-adventus","feriae-ii","prima","antiphona","antiphona-i"]
+		],
+		"src":"gregobase/13274",
+		"datum":"Ecce véniet * Dóminus princeps regum terræ: beáti, qui paráti sunt occúrrere illi."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-ii"],
+			["in-tempore-adventus","feriae-ii","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"gregobase/13147",
+		"datum":"Cum vénerit * Fílius hóminis, putas invéniet fidem super terram?"
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-iii"],
+			["in-tempore-adventus","feriae-ii","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"gregobase/12857",
+		"datum":"Ecce jam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras."
+	},
+	{
+		"tags":["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/12197",
+		"datum":"Hauriétis aquas * in gaúdio de fóntibus Salvatóris."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-ii","laudes","antiphona","antiphona-v"],
+			["in-tempore-adventus","feriae-ii","nona","antiphona","antiphona-v"]
+		],
+		"src":"gregobase/11909",
+		"datum":"Egrediétur * Dóminus de loco sancto suo: véniet ut salvet pópulum suum."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-iii","laudes","antiphona","antiphona-i"],
+			["in-tempore-adventus","feriae-iii","prima","antiphona","antiphona-i"]
+		],
+		"src":"gregobase/12764",
+		"datum":"Roráte cœli désuper, * et nubes pluant justum: aperiátur terra, et gérminet Salvatórem."
 	},
 	{
 		"tags":[
@@ -214,11 +263,132 @@
 		"datum":"Ut cognoscámus Dómine * in terra viam tuam, in ómnibus géntibus salutáre tuum."
 	},
 	{
+		"tags":["in-tempore-adventus","feriae-iii","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/20397",
+		"datum":"Da mercédem Dómine * sustinéntibus te, ut prophétæ tui fidéles inveniántur."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-iii","laudes","antiphona","antiphona-v"],
+			["in-tempore-adventus","feriae-iii","nona","antiphona","antiphona-v"]
+		],
+		"src":"gregobase/12000",
+		"datum":"Lex per Móysen data est, * grátia et véritas per Jesum Christum facta est."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-iv","laudes","antiphona","antiphona-i"],
+			["in-tempore-adventus","feriae-iv","prima","antiphona","antiphona-i"]
+		],
+		"src":"gregobase/13135",
+		"datum":"Prophétæ prædicavérunt * nasci Salvatórem de Vírgine María."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-iv","laudes","antiphona","antiphona-ii"],
+			["in-tempore-adventus","feriae-iv","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"gregobase/11753",
+		"datum":"Spíritus * Dómini super me, evangelizáre paupéribus misit me."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-iv","laudes","antiphona","antiphona-iii"],
+			["in-tempore-adventus","feriae-iv","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"gregobase/11836",
+		"datum":"Propter Sion * non tacébo, donec egrediátur ut splendor justus ejus."
+	},
+	{
+		"tags":["in-tempore-adventus","feriae-iv","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/13116",
+		"datum":"Ecce véniet Dóminus, * ut sédeat cum princípibus, et sólium glóriæ téneat."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-iv","laudes","antiphona","antiphona-v"],
+			["in-tempore-adventus","feriae-iv","nona","antiphona","antiphona-v"]
+		],
+		"src":"gregobase/12021",
+		"datum":"Annuntiáte * pópulis, et dícite: Ecce Deus Salvátor noster véniet."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-v","laudes","antiphona","antiphona-i"],
+			["in-tempore-adventus","feriae-v","prima","antiphona","antiphona-i"]
+		],
+		"src":"gregobase/12190",
+		"datum":"De Sion * véniet Dóminus omnípotens, ut salvum fáciat pópulum suum."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-v","laudes","antiphona","antiphona-ii"],
+			["in-tempore-adventus","feriae-v","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"gregobase/12299",
+		"datum":"Convértere Dómine * aliquántulum, et ne tardes veníre ad servos tuos."
+	},
+	{
 		"tags":[
 			["in-tempore-adventus","feriae-v","laudes","antiphona","antiphona-iii"],
 			["in-tempore-adventus","feriae-v","sexta","antiphona","antiphona-iii"]
 		],
 		"src":"gregobase/13141",
 		"datum":"De Sion * véniet, qui regnatúrus est Dóminus, Emmánuel magnum nomen ejus."
+	},
+	{
+		"tags":["in-tempore-adventus","feriae-v","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/12924",
+		"datum":"Ecce Deus meus, * et honorábo eum: Deus patris mei, et exaltábo eum."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-v","laudes","antiphona","antiphona-v"],
+			["in-tempore-adventus","feriae-v","nona","antiphona","antiphona-v"]
+		],
+		"src":"gregobase/12895",
+		"datum":"Dóminus * légifer noster, Dóminus Rex noster, ipse véniet, et salvábit nos."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-vi","laudes","antiphona","antiphona-i"],
+			["in-tempore-adventus","feriae-vi","prima","antiphona","antiphona-i"]
+		],
+		"src":"gregobase/13173",
+		"datum":"Constántes estóte, * vidébitis auxílium Dómini super vos."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-vi","laudes","antiphona","antiphona-ii"],
+			["in-tempore-adventus","feriae-vi","tertia","antiphona","antiphona-ii"]
+		],
+		"src":"gregobase/12791",
+		"datum":"Ad te Dómine * levávi ánimam meam: veni, et éripe me Dómine, ad te confúgi."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-vi","laudes","antiphona","antiphona-iii"],
+			["in-tempore-adventus","feriae-vi","sexta","antiphona","antiphona-iii"]
+		],
+		"src":"gregobase/12518",
+		"datum":"Veni Dómine, * et noli tardáre: reláxa facínora plebi tuæ Ísraël."
+	},
+	{
+		"tags":["in-tempore-adventus","feriae-vi","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/12230",
+		"datum":"Deus a Líbano véniet, * et splendor ejus sicut lumen erit."
+	},
+	{
+		"tags":[
+			["in-tempore-adventus","feriae-vi","laudes","antiphona","antiphona-v"],
+			["in-tempore-adventus","feriae-vi","nona","antiphona","antiphona-v"]
+		],
+		"src":"gregobase/12327",
+		"datum":"Ego autem * ad Dóminum aspíciam, et exspectábo Deum Salvatórem meum."
+	},
+	{
+		"tags":["hebdomada-iii-adventus","sabbatum","laudes","antiphona","antiphona-iv"],
+		"src":"gregobase/13077",
+		"datum":"Exspectétur * sicut plúvia elóquium meum: et descéndet super nos sicut ros Deus noster."
 	}
 ]

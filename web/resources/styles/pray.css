@@ -2,6 +2,18 @@
 	max-width: 100% !important;
 }
 
+#options-gear-wrapper {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	height: 35px;
+	background-color: transparent;
+}
+
+#options-gear {
+	height: 100%;
+}
+
 #rite-page-container {
 	position: relative;
 	width: 100%;
@@ -19,7 +31,7 @@
 
 #rite-container {
 	font-family: "Old Standard TT", times;
-	padding: 10px 40px 60px 40px;
+	padding: 10px 40px 10px 40px;
 	min-height: calc(100vh - 71px - var(--top-bar-title-height));
 	background-color: var(--generic-white-background-color);
 	display: block;
@@ -292,6 +304,14 @@
 	background-color: var(--button-color-toggled) !important;
 }
 
+#bottom-panel-explanation {
+	font-size: 14px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	font-style: italic;
+}
+
 .rite-item {
 	font-size: 20px;
 	margin: 0;
@@ -413,6 +433,41 @@
 	margin-bottom: 0;
 }
 
+#next-hour-button-container {
+	padding: 0 40px 60px 40px;
+	background-color: var(--generic-white-background-color);
+}
+
+#next-hour-button {
+	float: right;
+	font-family: "Old Standard TT", times;
+	font-size: 16px;
+	background-color: transparent;
+}
+
+#next-hour-button:hover {
+	background-color: var(--button-color-hover);
+}
+
+#next-hour-button-icon {
+	position: relative;
+	top: 4px;
+	height: 20px;
+	padding-left: 4px;
+}
+
+.next-hour-button-forbidden:hover {
+	background-color: transparent !important;
+	cursor: not-allowed;
+}
+
+#next-hour-forbidden-tooltip {
+	position: relative;
+	top: 6px;
+	font-family: "Old Standard TT", times;
+	font-size: 16px;
+}
+
 @media only screen and (max-width: 650px) {
 	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 		font-size: initial;
@@ -421,12 +476,20 @@
 	}
 
 	#rite-container {
-		padding: 10px 30px 60px 30px;
+		padding: 10px 30px 10px 30px;
+	}
+
+	#next-hour-button-container {
+		padding: 0 30px 60px 30px;
+	}
+
+	#next-hour-forbidden-tooltip {
+		top: 5px;
 	}
 }
 
 @media print {
-	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container {
+	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container {
 		display: none;
 	}
 }

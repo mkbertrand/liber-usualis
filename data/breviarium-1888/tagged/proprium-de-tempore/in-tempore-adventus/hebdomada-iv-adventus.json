@@ -4,13 +4,16 @@
 		"datum":"IV Adventus"
 	},
 	{
-		"tags":["hebdomada-iv-adventus","dominica","antiphona","antiphona-iv"],
+		"tags":[
+			["hebdomada-iv-adventus","dominica","laudes","antiphona","antiphona-iv"],
+			["hebdomada-iv-adventus","dominica","ii-vesperae","antiphona","antiphona-iv"]
+		],
 		"src":"gregobase/2837",
 		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja, allelúja."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","capitulum"],
-		"datum":"Fratres: Sic nos exístimet homo ut minístros Christi, + et dispensatóres mysteriórum Dei. * Hic jam quǽritur inter dispensatóres, ut fidélis quis inveniátur."
+		"datum":"[I. Cor. 4.]/Fratres: Sic nos exístimet homo ut minístros Christi, + et dispensatóres mysteriórum Dei. * Hic jam quǽritur inter dispensatóres, ut fidélis quis inveniátur."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","collecta"],
@@ -21,7 +24,7 @@
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Isaía Prophéta.",
-			"Lætábitur desérta et ínvia, et exsultábit solitúdo, et florébit quasi lílium. Gérminans germinábit, et exsultábit lætabúnda et laudans: glória Líbani data est ei: decor Carméli et Saron, ipsi vidébunt glóriam Dómini, et decórem Dei nostri. Confortáte manus dissolútas, et génua debília roboráte. Dícite pusillánimis: Confortámini, et nolíte timére: ecce Deus vester ultiónem addúcet retributiónis: Deus ipse véniet, et salvábit vos. Tunc aperiéntur óculi cæcórum, et aures surdórum patébunt. Tunc sáliet sicut cervus claudus, et apérta erit lingua mutórum: quia scissæ sunt in desérto aquæ, et torréntes in solitúdine. Et quæ erat árida, erit in stagnum, et sítiens in fontes aquárum."
+			"[Isaiæ 35.]/Lætábitur desérta et ínvia, et exsultábit solitúdo, et florébit quasi lílium. Gérminans germinábit, et exsultábit lætabúnda et laudans: glória Líbani data est ei: decor Carméli et Saron, ipsi vidébunt glóriam Dómini, et decórem Dei nostri. Confortáte manus dissolútas, et génua debília roboráte. Dícite pusillánimis: Confortámini, et nolíte timére: ecce Deus vester ultiónem addúcet retributiónis: Deus ipse véniet, et salvábit vos. Tunc aperiéntur óculi cæcórum, et aures surdórum patébunt. Tunc sáliet sicut cervus claudus, et apérta erit lingua mutórum: quia scissæ sunt in desérto aquæ, et torréntes in solitúdine. Et quæ erat árida, erit in stagnum, et sítiens in fontes aquárum."
 		]
 	},
 	{
@@ -52,7 +55,7 @@
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-i","lectio","lectio-iii"],
-		"datum":"Táceant ad me ínsulæ, et Gentes mutent fortitúdinem: accédant, et tunc loquántur, simul ad judícium propinquémus. Quis suscitávit ab Oriénte justum, vocávit eum ut sequerétur se? dabit in conspéctu ejus Gentes et reges obtinébit: dabit quasi púlverem gládio ejus, sicut stípulam vento raptam árcui ejus. Persequétur eos, transíbit in pace , sémita in pédibus ejus non apparébit. Quis hæc operátus est, et fecit, vocans generatiónes ab exórdio? Ego Dóminus, primus et novíssimus ego sum."
+		"datum":"[Isaiæ 41.]/Táceant ad me ínsulæ, et Gentes mutent fortitúdinem: accédant, et tunc loquántur, simul ad judícium propinquémus. Quis suscitávit ab Oriénte justum, vocávit eum ut sequerétur se? dabit in conspéctu ejus Gentes et reges obtinébit: dabit quasi púlverem gládio ejus, sicut stípulam vento raptam árcui ejus. Persequétur eos, transíbit in pace , sémita in pédibus ejus non apparébit. Quis hæc operátus est, et fecit, vocans generatiónes ab exórdio? Ego Dóminus, primus et novíssimus ego sum."
 	},
 	{
 		"tags":[
@@ -69,7 +72,7 @@
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-ii","lectio","lectio-i"],
 		"datum":[
 			"Sermo sancti Leónis Papæ.",
-			"Si fidéliter, dilectíssimi, atque sapiénter creatiónis nostræ intelligámus exórdium, inveniémus hóminem ídeo ad imáginem Dei cónditum, ut imitátor sui esset auctóris: et hanc esse naturálem nostri géneris dignitátem, si in nobis, quasi in quodam spéculo, divínæ benignitátis forma respléndeat. Ad quam quotídie nos útique réparat grátia Salvatóris, dum quod cécidit in Adam primo, erígitur in secúndo."
+			"[Serm. 1. de jejunio decimi mensis, et collectis.]/Si fidéliter, dilectíssimi, atque sapiénter creatiónis nostræ intelligámus exórdium, inveniémus hóminem ídeo ad imáginem Dei cónditum, ut imitátor sui esset auctóris: et hanc esse naturálem nostri géneris dignitátem, si in nobis, quasi in quodam spéculo, divínæ benignitátis forma respléndeat. Ad quam quotídie nos útique réparat grátia Salvatóris, dum quod cécidit in Adam primo, erígitur in secúndo."
 		]
 	},
 	{
@@ -119,9 +122,9 @@
 		"tags":["hebdomada-iv-adventus","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Lucam.",
-			"Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam. Et réliqua.",
+			"[Luc. 3.]/Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam. Et réliqua.",
 			"De Homilía sancti Gregórii Papæ.",
-			"Dicébat Joánnes ad turbas, quæ exíbant ut baptizaréntur ab eo: Genímina viperárum, quis osténdit vobis fúgere a ventúra ira? Ventúra enim ira est animadvérsio ultiónis extrémæ: quam tunc fúgere peccátor non valet, qui nunc ad laménta pœniténtiæ non recúrrit. Et notándum, quod malæ sóboles, malórum paréntum actiónem imitántes, genímina viperárum vocántur: quia per hoc quod bonis ínvident, eósque persequúntur, quod quibúsdam mala retríbuunt, quod læsiónes próximis exquírunt: quóniam in his ómnibus patrum suórum carnálium vias sequúntur, quasi venenáti fílii de venenátis paréntibus nati sunt."
+			"[Ex Homilia 20. in Evangelia ante medium.]/Dicébat Joánnes ad turbas, quæ exíbant ut baptizaréntur ab eo: Genímina viperárum, quis osténdit vobis fúgere a ventúra ira? Ventúra enim ira est animadvérsio ultiónis extrémæ: quam tunc fúgere peccátor non valet, qui nunc ad laménta pœniténtiæ non recúrrit. Et notándum, quod malæ sóboles, malórum paréntum actiónem imitántes, genímina viperárum vocántur: quia per hoc quod bonis ínvident, eósque persequúntur, quod quibúsdam mala retríbuunt, quod læsiónes próximis exquírunt: quóniam in his ómnibus patrum suórum carnálium vias sequúntur, quasi venenáti fílii de venenátis paréntibus nati sunt."
 		]
 	},
 	{
@@ -169,26 +172,20 @@
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","sexta","capitulum"],
-		"datum":"Mihi autem pro mínimo est, ut a vobis júdicer, + aut de humáno die: * sed neque meípsum júdico."
+		"datum":"[I. Cor. 4.]/Mihi autem pro mínimo est, ut a vobis júdicer, + aut de humáno die: * sed neque meípsum júdico."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","dominica","nona","capitulum"],
-		"datum":"Ítaque nolíte ante tempus judicáre, quoadúsque véniat Dóminus: + qui et illuminábit abscóndita tenebrárum, et manifestábit consília córdium: * et tunc laus erit unicuíque a Deo."
+		"datum":"[I. Cor. 4.]/Ítaque nolíte ante tempus judicáre, quoadúsque véniat Dóminus: + qui et illuminábit abscóndita tenebrárum, et manifestábit consília córdium: * et tunc laus erit unicuíque a Deo."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio"],
+		"lectio-i":[
 			"De Isaía Prophéta.",
-			"Et tu Ísraël serve meus, Jacob quem elégi, semen Ábraham amíci mei: in quo apprehéndi te ab extrémis terræ, et a longínquis ejus vocávi te, et dixi tibi: Servus meus es tu, elégi te, et non abjéci te. Ne tímeas, quia ego tecum sum: ne declínes, quia ego Deus tuus: confortávi te, et auxiliátus sum tibi, et suscépit te déxtera justi mei."
-		]
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio","lectio-ii"],
-		"datum":"Ecce confundéntur et erubéscent omnes, qui pugnant advérsum te: erunt quasi non sint, et períbunt viri, qui contradícunt tibi. Quæres eos, et non invénies, viros rebélles tuos: erunt quasi non sint, et véluti consúmptio hómines bellántes advérsum te. Quia ego Dóminus Deus tuus apprehéndens manum tuam, dicénsque tibi: Ne tímeas, ego adjúvi te."
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-ii","matutinum","lectio","lectio-iii"],
-		"datum":"Noli timére, vermis Jacob, qui mórtui estis ex Ísraël: ego auxiliátus sum tibi, dicit Dóminus: et redémptor tuus sanctus Ísraël. Ego pósui te quasi plaustrum tritúrans novum, habens rostra serrántia: triturábis montes, et commínues: et colles quasi púlverem pones. Ventilábis eos, et ventus tollet, et turbo dispérget eos: et tu exsultábis in Dómino, in sancto Ísraël lætáberis."
+			"[Isaiæ 41. b.]/Et tu Ísraël serve meus, Jacob quem elégi, semen Ábraham amíci mei: in quo apprehéndi te ab extrémis terræ, et a longínquis ejus vocávi te, et dixi tibi: Servus meus es tu, elégi te, et non abjéci te. Ne tímeas, quia ego tecum sum: ne declínes, quia ego Deus tuus: confortávi te, et auxiliátus sum tibi, et suscépit te déxtera justi mei."
+		],
+		"lectio-ii":"Ecce confundéntur et erubéscent omnes, qui pugnant advérsum te: erunt quasi non sint, et períbunt viri, qui contradícunt tibi. Quæres eos, et non invénies, viros rebélles tuos: erunt quasi non sint, et véluti consúmptio hómines bellántes advérsum te. Quia ego Dóminus Deus tuus apprehéndens manum tuam, dicénsque tibi: Ne tímeas, ego adjúvi te.",
+		"lectio-iii":"Noli timére, vermis Jacob, qui mórtui estis ex Ísraël: ego auxiliátus sum tibi, dicit Dóminus: et redémptor tuus sanctus Ísraël. Ego pósui te quasi plaustrum tritúrans novum, habens rostra serrántia: triturábis montes, et commínues: et colles quasi púlverem pones. Ventilábis eos, et ventus tollet, et turbo dispérget eos: et tu exsultábis in Dómino, in sancto Ísraël lætáberis."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
@@ -196,19 +193,13 @@
 		"datum":"Dicit Dóminus: * Pœniténtiam ágite: appropinquávit enim regnum cœlórum, allelúja."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio"],
+		"lectio-i":[
 			"De Isaía Prophéta.",
-			"Ecce servus meus, suscípiam eum: eléctus meus, complácuit sibi in illo ánima mea: dedi spíritum meum super eum, judícium Géntibus próferet. Non clamábit, neque accípiet persónam, nec audiétur vox ejus foris. Cálamum quassátum non cónteret, et linum fúmigans non exstínguet: in veritáte edúcet judícium. Non erit tristis, neque turbuléntus, donec ponat in terra judícium: et legem ejus ínsulæ exspectábunt."
-		]
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio","lectio-ii"],
-		"datum":"Hæc dicit Dóminus Deus creans cœlos, et exténdens eos: firmans terram, et quæ gérminant ex ea: dans flatum pópulo, qui est super eam, et spíritum calcántibus eam. Ego Dóminus vocávi te in justítia, et apprehéndi manum tuam, et servávi te. Et dedi te in fœdus pópuli, in lucem Géntium: ut aperíres óculos cæcórum, et edúceres de conclusióne vinctum, de domo cárceris sedéntes in ténebris."
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-iii","matutinum","lectio","lectio-iii"],
-		"datum":"Cantáte Dómino cánticum novum, laus ejus ab extrémis terræ: qui descénditis in mare, et plenitúdo ejus, ínsulæ, et habitatóres eárum. Sublevétur desértum, et civitátes ejus; in dómibus habitábit Cedar: laudáte habitatóres Petræ, de vértice móntium clamábunt. Ponent Dómino glóriam, et laudem ejus in ínsulis nuntiábunt. Dóminus sicut fortis egrediétur, sicut vir præliátor suscitábit zelum: vociferábitur, et clamábit: super inimícos suos confortábitur."
+			"[Isaiæ 42.]/Ecce servus meus, suscípiam eum: eléctus meus, complácuit sibi in illo ánima mea: dedi spíritum meum super eum, judícium Géntibus próferet. Non clamábit, neque accípiet persónam, nec audiétur vox ejus foris. Cálamum quassátum non cónteret, et linum fúmigans non exstínguet: in veritáte edúcet judícium. Non erit tristis, neque turbuléntus, donec ponat in terra judícium: et legem ejus ínsulæ exspectábunt."
+		],
+		"lectio-ii":"Hæc dicit Dóminus Deus creans cœlos, et exténdens eos: firmans terram, et quæ gérminant ex ea: dans flatum pópulo, qui est super eam, et spíritum calcántibus eam. Ego Dóminus vocávi te in justítia, et apprehéndi manum tuam, et servávi te. Et dedi te in fœdus pópuli, in lucem Géntium: ut aperíres óculos cæcórum, et edúceres de conclusióne vinctum, de domo cárceris sedéntes in ténebris.",
+		"lectio-iii":"Cantáte Dómino cánticum novum, laus ejus ab extrémis terræ: qui descénditis in mare, et plenitúdo ejus, ínsulæ, et habitatóres eárum. Sublevétur desértum, et civitátes ejus; in dómibus habitábit Cedar: laudáte habitatóres Petræ, de vértice móntium clamábunt. Ponent Dómino glóriam, et laudem ejus in ínsulis nuntiábunt. Dóminus sicut fortis egrediétur, sicut vir præliátor suscitábit zelum: vociferábitur, et clamábit: super inimícos suos confortábitur."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
@@ -216,19 +207,13 @@
 		"datum":"Consúrge, consúrge: * indúere fortitúdinem, bráchium Dómini."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","feria","feria-iv","matutinum","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iv-adventus","feria","feria-iv","matutinum","lectio"],
+		"lectio-i":[
 			"De Isaía Prophéta.",
-			"Audíte me, qui sequímini quod justum est, et quǽritis Dóminum: atténdite ad petram unde excísi estis, et ad cavérnam laci, de qua præcísi estis. Atténdite ad Ábraham patrem vestrum, et ad Saram quæ péperit vos: quia unum vocávi eum, et benedíxi ei, et multiplicávi eum. Consolábitur ergo Dóminus Sion, et consolábitur omnes ruínas ejus: et ponet desértum ejus quasi delícias, et solitúdinem ejus quasi hortum Dómini. Gaúdium et lætítia inveniétur in ea, gratiárum áctio, et vox laudis."
-		]
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-iv","matutinum","lectio","lectio-ii"],
-		"datum":"Atténdite ad me pópule meus, et tribus mea me audíte: quia lex a me éxiet, et judícium meum in lucem populórum requiéscet. Prope est justus meus, egréssus est salvátor meus, et bráchia mea pópulos judicábunt: me ínsulæ exspectábunt, et bráchium meum sustinébunt. Leváte in cœlum óculos vestros, et vidéte sub terra deórsum: quia cœli sicut fumus liquéscent, et terra sicut vestiméntum atterétur, et habitatóres ejus sicut hæc interíbunt: Salus autem mea in sempitérnum erit, et justítia mea non defíciet."
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-iv","matutinum","lectio","lectio-iii"],
-		"datum":"Audíte me qui scitis justum, pópulus meus, lex mea in corde eórum: nolíte timére oppróbrium hóminum, et blasphémias eórum ne metuátis. Sicut enim vestiméntum, sic cómedet eos vermis: et sicut lanam, sic devorábit eos tínea: Salus autem mea in sempitérnum erit, et justítia mea in generatiónes generatiónum."
+			"[Isaiæ 51.]/Audíte me, qui sequímini quod justum est, et quǽritis Dóminum: atténdite ad petram unde excísi estis, et ad cavérnam laci, de qua præcísi estis. Atténdite ad Ábraham patrem vestrum, et ad Saram quæ péperit vos: quia unum vocávi eum, et benedíxi ei, et multiplicávi eum. Consolábitur ergo Dóminus Sion, et consolábitur omnes ruínas ejus: et ponet desértum ejus quasi delícias, et solitúdinem ejus quasi hortum Dómini. Gaúdium et lætítia inveniétur in ea, gratiárum áctio, et vox laudis."
+		],
+		"lectio-ii":"Atténdite ad me pópule meus, et tribus mea me audíte: quia lex a me éxiet, et judícium meum in lucem populórum requiéscet. Prope est justus meus, egréssus est salvátor meus, et bráchia mea pópulos judicábunt: me ínsulæ exspectábunt, et bráchium meum sustinébunt. Leváte in cœlum óculos vestros, et vidéte sub terra deórsum: quia cœli sicut fumus liquéscent, et terra sicut vestiméntum atterétur, et habitatóres ejus sicut hæc interíbunt: Salus autem mea in sempitérnum erit, et justítia mea non defíciet.",
+		"lectio-iii":"Audíte me qui scitis justum, pópulus meus, lex mea in corde eórum: nolíte timére oppróbrium hóminum, et blasphémias eórum ne metuátis. Sicut enim vestiméntum, sic cómedet eos vermis: et sicut lanam, sic devorábit eos tínea: Salus autem mea in sempitérnum erit, et justítia mea in generatiónes generatiónum."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","feria","feria-iv","laudes","antiphona","antiphona-benedictus"],
@@ -236,19 +221,13 @@
 		"datum":"Ponam in Sion * salútem, et in Jerúsalem glóriam meam, allelúja."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","feria","feria-v","matutinum","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iv-adventus","feria","feria-v","matutinum","lectio"],
+		"lectio-i":[
 			"De Isaía Prophéta.",
-			"Útinam dirúmperes cœlos, et descénderes: a fácie tua montes deflúerent. Sicut exústio ignis tabéscerent, aquæ ardérent igni, ut notum fíeret nomen tuum inimícis tuis: a fácie tua Gentes turbaréntur. Cum féceris mirabília, non sustinébimus: descendísti, et a fácie tua montes defluxérunt. A sǽculo non audiérunt, neque aúribus percepérunt: óculus non vidit, Deus absque te, quæ præparásti exspectántibus te."
-		]
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-v","matutinum","lectio","lectio-ii"],
-		"datum":"Occurrísti lætánti, et faciénti justítiam: in viis tuis recordabúntur tui: ecce tu irátus es, et peccávimus: in ipsis fúimus semper, et salvábimur. Et facti sumus ut immúndus omnes nos, et quasi pannus menstruátæ univérsæ justítiæ nostræ: et cecídimus quasi fólium univérsi, et iniquitátes nostræ quasi ventus abstulérunt nos. Non est qui ínvocet nomen tuum: qui consúrgat, et téneat te: abscondísti fáciem tuam a nobis, et allisísti nos in manu iniquitátis nostræ."
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-v","matutinum","lectio","lectio-iii"],
-		"datum":"Et nunc Dómine pater noster es tu, nos vero lutum: et fictor noster tu, et ópera mánuum tuárum omnes nos. Ne irascáris Dómine satis, et ne ultra memíneris iniquitátis nostræ: ecce réspice, pópulus tuus omnes nos. Cívitas sancti tui facta est desérta, Sion desérta facta est, Jerúsalem desoláta est. Domus sanctificatiónis nostræ, et glóriæ nostræ, ubi laudavérunt te patres nostri, facta est in exustiónem ignis, et ómnia desiderabília nostra versa sunt in ruínas."
+			"[Isaiæ 64.]/Útinam dirúmperes cœlos, et descénderes: a fácie tua montes deflúerent. Sicut exústio ignis tabéscerent, aquæ ardérent igni, ut notum fíeret nomen tuum inimícis tuis: a fácie tua Gentes turbaréntur. Cum féceris mirabília, non sustinébimus: descendísti, et a fácie tua montes defluxérunt. A sǽculo non audiérunt, neque aúribus percepérunt: óculus non vidit, Deus absque te, quæ præparásti exspectántibus te."
+		],
+		"lectio-ii":"Occurrísti lætánti, et faciénti justítiam: in viis tuis recordabúntur tui: ecce tu irátus es, et peccávimus: in ipsis fúimus semper, et salvábimur. Et facti sumus ut immúndus omnes nos, et quasi pannus menstruátæ univérsæ justítiæ nostræ: et cecídimus quasi fólium univérsi, et iniquitátes nostræ quasi ventus abstulérunt nos. Non est qui ínvocet nomen tuum: qui consúrgat, et téneat te: abscondísti fáciem tuam a nobis, et allisísti nos in manu iniquitátis nostræ.",
+		"lectio-iii":"Et nunc Dómine pater noster es tu, nos vero lutum: et fictor noster tu, et ópera mánuum tuárum omnes nos. Ne irascáris Dómine satis, et ne ultra memíneris iniquitátis nostræ: ecce réspice, pópulus tuus omnes nos. Cívitas sancti tui facta est desérta, Sion desérta facta est, Jerúsalem desoláta est. Domus sanctificatiónis nostræ, et glóriæ nostræ, ubi laudavérunt te patres nostri, facta est in exustiónem ignis, et ómnia desiderabília nostra versa sunt in ruínas."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
@@ -256,19 +235,13 @@
 		"datum":"Consolámini, consolámini, * pópule meus, dicit Dóminus Deus vester."
 	},
 	{
-		"tags":["hebdomada-iv-adventus","feria","feria-vi","matutinum","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iv-adventus","feria","feria-vi","matutinum","lectio"],
+		"lectio-i":[
 			"De Isaía Prophéta.",
-			"Audíte verbum Dómini, qui trémitis ad verbum ejus: dixérunt fratres vestri odiéntes vos, et abjiciéntes propter nomen meum: Glorificétur Dóminus, et vidébimus in lætítia vestra: ipsi autem confundéntur. Vox pópuli de civitáte, vox de templo, vox Dómini reddéntis retributiónem inimícis suis. Ántequam parturíret, péperit: ántequam veníret partus ejus, péperit másculum. Quis audívit umquam tale? et quis vidit huic símile? Numquid partúriet terra in die una? aut pariétur gens simul, quia parturívit et péperit Sion fílios suos?"
-		]
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-vi","matutinum","lectio","lectio-ii"],
-		"datum":"Numquid ego, qui álios párere fácio, ipse non páriam, dicit Dóminus? si ego, qui generatiónem céteris tríbuo, stérilis ero, ait Dóminus Deus tuus? Lætámini cum Jerúsalem, et exsultáte in ea omnes qui dilígitis eam: gaudéte cum ea gaúdio univérsi, qui lugétis super eam, ut sugátis, et repleámini ab úbere consolatiónis ejus: ut mulgeátis, et delíciis affluátis ab omnímoda glória ejus. Quia hæc dicit Dóminus: Ecce ego declinábo super eam quasi flúvium pacis, et quasi torréntem inundántem glóriam Géntium, quam sugétis: ad úbera portabímini, et super génua blandiéntur vobis."
-	},
-	{
-		"tags":["hebdomada-iv-adventus","feria","feria-vi","matutinum","lectio","lectio-iii"],
-		"datum":"Quómodo si cui mater blandiátur, ita ego consolábor vos, et in Jerúsalem consolabímini. Vidébitis, et gaudébit cor vestrum, et ossa vestra quasi herba germinábunt, et cognoscétur manus Dómini servis ejus, et indignábitur inimícis suis. Quia ecce Dóminus in igne véniet, et quasi turbo quadrígæ ejus: réddere in indignatióne furórem suum, et increpatiónem suam in flamma ignis: quia in igne Dóminus dijudicábit, et in gládio suo ad omnem carnem, et multiplicabúntur interfécti a Dómino."
+			"[Isaiæ 66. b.]/Audíte verbum Dómini, qui trémitis ad verbum ejus: dixérunt fratres vestri odiéntes vos, et abjiciéntes propter nomen meum: Glorificétur Dóminus, et vidébimus in lætítia vestra: ipsi autem confundéntur. Vox pópuli de civitáte, vox de templo, vox Dómini reddéntis retributiónem inimícis suis. Ántequam parturíret, péperit: ántequam veníret partus ejus, péperit másculum. Quis audívit umquam tale? et quis vidit huic símile? Numquid partúriet terra in die una? aut pariétur gens simul, quia parturívit et péperit Sion fílios suos?"
+		],
+		"lectio-ii":"Numquid ego, qui álios párere fácio, ipse non páriam, dicit Dóminus? si ego, qui generatiónem céteris tríbuo, stérilis ero, ait Dóminus Deus tuus? Lætámini cum Jerúsalem, et exsultáte in ea omnes qui dilígitis eam: gaudéte cum ea gaúdio univérsi, qui lugétis super eam, ut sugátis, et repleámini ab úbere consolatiónis ejus: ut mulgeátis, et delíciis affluátis ab omnímoda glória ejus. Quia hæc dicit Dóminus: Ecce ego declinábo super eam quasi flúvium pacis, et quasi torréntem inundántem glóriam Géntium, quam sugétis: ad úbera portabímini, et super génua blandiéntur vobis.",
+		"lectio-iii":"Quómodo si cui mater blandiátur, ita ego consolábor vos, et in Jerúsalem consolabímini. Vidébitis, et gaudébit cor vestrum, et ossa vestra quasi herba germinábunt, et cognoscétur manus Dómini servis ejus, et indignábitur inimícis suis. Quia ecce Dóminus in igne véniet, et quasi turbo quadrígæ ejus: réddere in indignatióne furórem suum, et increpatiónem suam in flamma ignis: quia in igne Dóminus dijudicábit, et in gládio suo ad omnem carnem, et multiplicabúntur interfécti a Dómino."
 	},
 	{
 		"tags":["hebdomada-iv-adventus","feria","feria-vi","laudes","antiphona","antiphona-benedictus"],

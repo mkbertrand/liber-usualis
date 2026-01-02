@@ -76,18 +76,8 @@
 		"include":["antiphonae"],
 		"recheck":false,
 		"response":[
+			{"include":["vigilia-nativitatis"],"response":"transfer","target":0,"movement":-7},
 			{"include":["nativitas"],"response":"transfer","target":0,"movement":-7}
-		]
-	},
-	{
-		"include":["thomas","duplex-ii-classis"],
-		"recheck":false,
-		"response":[
-			{"include":["antiphonae","feriae-ii"],"response":"transfer","target":1,"movement":-2},
-			{"include":["antiphonae","feriae-iii"],"response":"transfer","target":1,"movement":-3},
-			{"include":["antiphonae","feriae-iv"],"response":"transfer","target":1,"movement":-4},
-			{"include":["antiphonae","feriae-v"],"response":"dele","target":1},
-			{"include":["antiphonae","feriae-vi"],"response":"transfer","target":1,"movement":1}
 		]
 	},
 	{
@@ -95,14 +85,6 @@
 		"recheck":false,
 		"response":[
 			{"include":["hebdomada-iii-adventus","dominica"],"response":"transfer","target":0,"movement":6}
-		]
-	},
-	{
-		"include":["antiphonae"],
-		"recheck":false,
-		"response":[
-			{"include":["feria"],"response":"combina","target":0},
-			{"include":["dominica","primarium"],"response":"combina","target":0}
 		]
 	},
 	{
@@ -451,6 +433,7 @@
 			{"include":["dedicatio-michaelis"],"response":"transfer","target":0,"movement":1},
 			{"include":["rosarium-bmv"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-majus"],"response":"transfer","target":1,"movement":1},
+			{"include":["paulus","commemoratio"],"response":"transfer","target":1,"movement":1},
 			{"include":["doctor"],"response":"transfer","target":1,"movement":1},
 			{"include":["duplex-minus","primarium"],"response":"commemoratio","target":1},
 			{"include":["dominica","semiduplex","primarium"],"response":"commemoratio","target":1},
@@ -465,6 +448,21 @@
 		"include":["duplex-ii-classis","primarium"],
 		"response":[
 			{"include":["duplex-ii-classis","primarium"],"response":"errora"}
+		]
+	},
+	{
+		"include":["thomas","duplex-ii-classis"],
+		"recheck":false,
+		"response":[
+			{"include":["antiphonae"],"response":"transfer","target":1,"movement":["hebdomada-iii-adventus","sabbatum"]}
+		]
+	},
+	{
+		"include":["antiphonae"],
+		"recheck":false,
+		"response":[
+			{"include":["feria"],"response":"combina","target":0},
+			{"include":["dominica","primarium"],"response":"combina","target":0}
 		]
 	},
 	{
