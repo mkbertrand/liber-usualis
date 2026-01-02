@@ -108,7 +108,7 @@
 				if (i == 0) {
 					title = riteTitle(json, 'large')
 					if (scroll) {
-						window.scrollTo({top:0, behavior: 'smooth'});
+						window.scrollTo({top:0});
 					}
 				} else {
 					title = '';
