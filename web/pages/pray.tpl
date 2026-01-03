@@ -18,7 +18,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=39">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=40">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=15">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
@@ -30,7 +30,7 @@
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
 		<script type="text/javascript" src="/resources/js/pray.js?v=1"></script>
-		<script type="text/javascript" src="/resources/js/ritegen.js?v=33"></script>
+		<script type="text/javascript" src="/resources/js/ritegen.js?v=34"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
 		<script type="text/javascript" src="/resources/js/gabc-chant.js"></script>
