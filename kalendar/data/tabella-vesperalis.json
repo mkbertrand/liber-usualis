@@ -572,5 +572,11 @@
 		"response":[
 			{"include":["votiva","i-vesperae","in-tempore-adventus"],"target":0,"adde":"in-tempore-adventus"}
 		]
+	},
+	{
+		"include":["antiphona-bmv"],
+		"response":[
+			{"include":["dominica","tempus"],"target":0,"adde":"dominica"}
+		]
 	}
 ]

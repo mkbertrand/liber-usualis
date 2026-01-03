@@ -157,26 +157,7 @@
 	},
 	{
 		"tags":["sexta","preces"],
-		"datum":[]
-	},
-	{
-		"tags":[
-			["sexta","in-tempore-adventus","feria","preces"],
-			["sexta","cinerum","feria","preces"],
-			["sexta","in-tempore-quadragesimae","feria","preces"],
-			["sexta","in-tempore-passionis","feria","preces"],
-			["sexta","quatuor-tempora","feria","preces"],
-			["sexta","vigilia","feria","preces"]
-		],
-		"datum":[
-			"Kýrie eléison. Christe eléison. Kýrie eléison.",
-			["pater-noster-semisecreta"],
-			"V. Dómine Deus virtútum convérte nos.",
-			"R. Et osténde fáciem tuam, et salvi érimus.",
-			"V. Exsúrge Christe, ádjuva nos.",
-			"R. Et líbera nos propter nomen tuum.",
-			["domine-exaudi"]
-		]
+		"datum":[["tertia","preces"]]
 	},
 	{
 		"tags":["sexta","sollemnitas","hymnus"],

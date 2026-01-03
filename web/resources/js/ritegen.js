@@ -1,4 +1,4 @@
-// Copyright 2024-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+// Copyright 2024-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 class RiteItem {
 	constructor(what, where, always) {
@@ -174,6 +174,7 @@ function stringrender(data) {
 		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
 		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
 		.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
+		.replace(/\[\((.+?)\)\]\s/g, '<span class=\'rite-text-rubric small-rubric\'>(\$1) </span>')
 		.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 	return data;
 };
@@ -234,7 +235,12 @@ function render(data, chant) {
 						ret += '</p>';
 					}
 					if (paragraphclosed(ret) && !(plus.startsWith('<div') || plus.startsWith('<p') || plus.startsWith('<h'))) {
-						ret += `<p class="rite-text ${parenttags.join(' ')}">`;
+						if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
+							ret += `<p class="rite-text ${parenttags.join(' ')} rite-text-rubric rite-text-rubric-above-paragraph">`;
+							plus = stringrender(data[i].slice(1, -2));
+						} else {
+							ret += `<p class="rite-text ${parenttags.join(' ')}">`;
+						}
 					}
 					ret += plus;
 				};
@@ -433,8 +439,6 @@ function render(data, chant) {
 						}
 					}
 					return ret + `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[4]))}<br>${stringrender(unpack(data.datum[5]))}</p>`;
-				} else if (['antiphona-bmv', 'antiphona'].every((tag) => data.tags.includes(tag)) && parenttags.includes('completorium')) {
-					header = makeheader('Antiphona B.M.V.');
 				}
 
 				if (data.tags.includes('hymnus') && !parenttags.includes('hymnus')) {
@@ -448,7 +452,7 @@ function render(data, chant) {
 				}
 
 				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'collecta-primaria', 'formula-commemorationis']
-				if (dived.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
+				if (dived.some(i => data.tags.includes(i))) {
 					ret = `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}`;
 					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 				}

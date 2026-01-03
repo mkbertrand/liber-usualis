@@ -382,6 +382,10 @@
 	font-size: 16px;
 }
 
+.small-rubric {
+	font-size: 14px !important;
+}
+
 .rite-text-rubric-above-paragraph {
 	margin-top: 7px;
 	margin-bottom: -7px;

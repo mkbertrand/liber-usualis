@@ -24,8 +24,7 @@
 			["dominus-vobiscum","ferialis-a"],
 			["completorium","benedicamus-domino","hora-minor"],
 			["completorium","benedictio-finalis"],
-			["antiphona-bmv","antiphona-bmv-temporis","occurrens"],
-			["divinum-auxilium"],
+			["antiphona-bmv","antiphona-bmv-temporis","occurrens","ritus","infra-completorium"],
 			["prex-triplex"]
 		]
 	},
@@ -104,6 +103,36 @@
 	{
 		"tags":["completorium","nunc-dimittis"],
 		"datum":[["/psalmi/nunc-dimittis,gloria"]]
+	},
+	{
+		"tags":[
+			["completorium","in-tempore-adventus","feria","preces"],
+			["completorium","cinerum","feria","preces"],
+			["completorium","in-tempore-quadragesimae","feria","preces"],
+			["completorium","in-tempore-passionis","feria","preces"],
+			["completorium","quatuor-tempora","feria","preces"],
+			["completorium","vigilia","feria","preces"]
+		],
+		"datum":[
+			"[Flexis genibus]/Kýrie eléison. Christe eléison. Kýrie eléison.",
+			["pater-noster-semisecreta"],
+			["credo-semisecreta"],
+			"V. Benedíctus es Dómine Deus patrum nostrórum.",
+			"R. Et laudábilis et gloriósus in sǽcula.",
+			"V. Benedicámus Patrem et Fílium cum sancto Spíritu.",
+			"R. Laudémus, et superexaltémus eum in sǽcula.",
+			"V. Benedíctus es Dómine in firmamento cœli.",
+			"R. Et laudábilis, et gloriósus, et superexaltátus in sǽcula.",
+			"V. Benedícat et custódiat nos omnípotens et miséricors Dóminus.",
+			"R. Amen.",
+			"V. Dignáre Dómine nocte ista.",
+			"R. Sine peccáto nos custodíre.",
+			"V. Miserére nostri Dómine.",
+			"R. Miserére nostri.",
+			"V. Fiat misericórdia tua Dómine super nos.",
+			"R. Quemádmodum sperávimus in te.",
+			["domine-exaudi"]
+		]
 	},
 	{
 		"tags":["completorium","preces"],
