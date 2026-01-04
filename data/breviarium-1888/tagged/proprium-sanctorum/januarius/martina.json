@@ -9,8 +9,30 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["martina","matutinum","hymnus"],
+		"datum":[
+			"Martínæ célebri plaúdite nómini/Cives Romúlei, plaúdite glóriæ:/Insígnem méritis dícite Vírginem,/Christi dícite Mártyrem.",
+			"Hæc dum conspícuis orta paréntibus/Inter delícias, inter amábiles/Luxus illécebras dítibus áffluit/Faustæ munéribus domus.",
+			"Vitæ despíciens cómmoda, dédicat/Se rerum Dómino, et munífica manu/Christi paupéribus distríbuens opes,/Quærit prǽmia cœ\u0301litum.",
+			"Non illam crúcians úngula, non feræ,/Non virgæ horríbili vúlnere cómmovent;/Hinc lapsi e Súperum sédibus Ángeli/Cœlésti dape récreant.",
+			"Quin et depósita sævítie leo/Se rictu plácido prójicit ad pedes:/Te Martína tamen dans gládius neci/Cœli cœ\u0301tibus ínserit.",
+			"Te, thuris rédolens ara vapóribus,/Quæ fumat, précibus júgiter ínvocat,/Et falsum périmens auspícium, tui/Delet nóminis ómine.",
+			"A nobis ábigas lúbrica gaúdia/Tu, qui Martýribus dexter ades, Deus/Une et Trine: tuis da fámulis jubar,/Quo clemens ánimos beas.","Amen."
+		]
+	},
+	{
 		"tags":["martina","matutinum","nocturna-i","lectio"],
 		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["martina","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Martína virgo Romána, patre consulári, illústri génere nata, téneris adhuc annis orbáta paréntibus, christiánæ pietátis ardóre succénsa, divítias, quibus affluébat, mira in paúperes liberalitáte distríbuit. Sub Alexándro príncipe, cum deos inánes cólere juberétur, immáne fácinus summa libertáte detestátur. Quaprópter íterum atque íterum affécta verbéribus, uncis, úngulis férreis, testárum fragméntis laceráta, acutíssimis gládiis membrátim concísa, ádipe fervénti perúncta, demum in amphitheátro damnátur ad béstias: a quibus illǽsa divínitus evádens, in ardéntem rogum injécta, incólumis pari benefício servátur.",
+		"lectio-ii":"Ex ejus tortóribus nonnúlli, miráculi novitáte corrépti, Dei aspiránte grátia, Christi fidem ampléxi, post cruciátus gloriósam martýrii palmam cápitis abscissióne promeruére. Ad ejúsdem preces nunc terræmótibus exórtis, nunc ígnibus e cœlo tonánte delápsis, deórum templa prostráta sunt, et simulácra consúmpta. Intérdum ex vulnéribus lac cum sánguine erúpit, splendórque nitidíssimus, ac suavíssimus odor e córpore emanávit: intérdum sublímis régia in sede divínis laúdibus una cum cœlítibus interésse visa est.",
+		"lectio-iii":"Hisce prodígiis, ejúsque in primis constántia, ácriter permótus judex, caput vírgini amputári præcépit; qua perémpta, auditáque de cœlo voce, qua ad Súperos evocabátur, urbs tota contrémuit, ac multi idolórum cultóres ad Christi fidem convérsi sunt. Sacrum Martínæ corpus, sedénte sancto Urbáno primo, martýrio afféctum, Urbáno octávo Pontífice Máximo, in pervetústa ejúsdem ecclésia, ad Mamertínum cárcerem, in Capitolíni clivi radícibus, cum sanctórum Mártyrum Concórdii, Epiphánii et sociórum corpóribus repértum, eódem loco in meliórem formam redácto, atque decéntius ornáto, magno pópuli concúrsu, totíus Urbis lætítia, solémni ritu ac pompa repósitum est."
+	},
+	{
+		"tags":["martina","matutinum","nocturna-iii","lectio"],
+		"datum":[["virgo","commune","lectio"]]
 	},
 	{
 		"tags":["martina","laudes","hymnus"],
