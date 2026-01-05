@@ -100,7 +100,8 @@ class ChantElement extends HTMLElement {
 		.replace(/<sp>'(?:ae|æ)<\/sp>/g,'ǽ')
 		.replace(/<sp>'(?:oe|œ)<\/sp>/g,'œ́')
 		.replace(/<v>\\greheightstar<\/v>/g,'*')
-		.replace(/<\/?i>/g,'_');
+		.replace(/<\/?i>/g,'_')
+		.replace(/<\/?nlba>/g,'');
 
 		var mappings = exsurge.Gabc.createMappingsFromSource(this.ctxt, gabc);
 		this.score = new exsurge.ChantScore(this.ctxt, mappings, !gabc.includes('initial-style:0;'));

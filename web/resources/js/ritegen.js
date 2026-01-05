@@ -389,7 +389,7 @@ function render(data, chant) {
 					}
 
 				} else if (data.tags.includes('hymnus') && data.tags.includes('te-deum') && !options['chant']) {
-					return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data.datum.join('/'))}</p>`;
+					return `${makeheader('Te Deum')}<p class="rite-text hymnus hymnus-te-deum">${stringrender(data.datum.join('/'))}</p>`;
 				} else if (data.tags.includes('commemorationes')) {
 					var ret = '';
 					for (var i = 0; i < data.datum.length - 1; i++) {
@@ -398,7 +398,11 @@ function render(data, chant) {
 					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
 
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data.tags.some(tag => trivialchants.includes(tag)))) {
-					return `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
+					ret = `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
+					if (data.tags.includes('hymnus') && data.tags.includes('te-deum')) {
+						ret = makeheader('Te Deum') + ret;
+					}
+					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
 					header = makeheader(data.datum.split('\n')[0].slice(1, -1));
