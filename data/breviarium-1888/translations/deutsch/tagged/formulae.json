@@ -18,11 +18,11 @@
 	},
 	{
 		"tags":["pater-noster-secreta"],
-		"datum":"Vater unser im Himmel, geheiligt werde Dein Name, Dein Reich komme, Dein Wille geschehe, wie im Himmel, so Erden! Unser tägliches Brot gib uns heute; und vergib uns unsere Schuld, wie auch wir vergeben unsern Schuldigern; und führe uns nicht in Versuchung, sondern erlöse uns von dem Bösen. Amen."
+		"datum":"Vater unser im Himmel, geheiliget werde Dein Name, Dein Reich komme, Dein Wille geschehe, wie im Himmel, so auf Erden! Unser tägliches Brot gib uns heute; und vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern; und führe uns nicht in Versuchung, sondern erlöse uns von dem Bösen. Amen."
 	},
 	{
 		"tags":["ave-maria-secreta"],
-		"datum":"Gegrüßet seist du, Maria, voll der Gnade, der Herr ist mit dir. Du bist gebenedeit unter den Frauen, und gebenedeit ist die Frucht deine Leibes, Jesus. Heilige Maria, Mutter Gottes, bitte für uns Sünder, jetzt und in der Stunde unseres Todes. Amen."
+		"datum":"Gegrüßet seist du, Maria, voll der Gnade, der Herr ist mit dir. Du bist gebenedeit unter den Frauen, und gebenedeit ist die Frucht deines Leibes, Jesus. Heilige Maria, Mutter Gottes, bitte für uns Sünder, jetzt und in der Stunde unseres Todes. Amen."
 	},
 	{
 		"tags":["credo-secreta"],
@@ -147,5 +147,68 @@
 	{
 		"tags":["fidelium-animae"],
 		"datum":["Die Seelen der verstorbenen Gläubigen mögen durch die Barmherzigkeit Gottes in Frieden ruhen.","Amen."]
+	},
+	{
+		"tags":["formula","formula-lectionis"],
+		"datum":[
+			"Erteile, Herr, den Segen.",
+			"",
+			"Amen.",
+			"",
+			"Du aber, Herr, erbarme dich unser.",
+			"Dank sei Gott."
+		]
+	},
+	{
+		"tags":["adjutorium-nostrum"],
+		"datum":["Unsere Hilfe ist im Namen des Herrn.","Der Himmel und Erde erschaffen hat."]
+	},
+	{
+		"tags":["confiteor"],
+		"datum":[
+			"Ich bekenne Gott, dem Allmächtigen, der seligen, allzeit reinen Jungfrau Maria, dem heiligen Erzengel Michael, dem heiligen Johannes dem Täufer, den heiligen Aposteln Petrus und Paulus, allen Heiligen und euch, Brüder, dass ich viel gesündiget habe in Gedanken, Worten und Werken, durch meine Schuld, durch meine Schuld, durch meine übergroße Schuld. Darum bitte ich die selige, allzeit reine Jungfrau Maria, den heiligen Erzengel Michael, den heiligen Johannes den Täufer, die heiligen Apostel Petrus und Paulus, alle Heiligen und euch, Brüder, für mich zu beten bei Gott unseren Herrn.",
+			"Der allmächtige Gott erbarme sich deiner, er lasse dir die Sünden nach und führe dich zum ewigen Leben.",
+			"Amen.",
+			"Ich bekenne Gott, dem Allmächtigen, der seligen, allzeit reinen Jungfrau Maria, dem heiligen Erzengel Michael, dem heiligen Johannes dem Täufer, den heiligen Aposteln Petrus und Paulus, allen Heiligen und dir, Pater, dass ich viel gesündiget habe in Gedanken, Worten und Werken, durch meine Schuld, durch meine Schuld, durch meine übergroße Schuld. Darum bitte ich die selige, allzeit reine Jungfrau Maria, den heiligen Erzengel Michael, den heiligen Johannes den Täufer, die heiligen Apostel Petrus und Paulus, alle Heiligen und dich, Pater, für mich zu beten bei Gott unseren Herrn.",
+			"Der allmächtige Gott erbarme sich euer, er lasse euch die Sünden nach und führe euch zum ewigen Leben.",
+			"Amen.",
+			"Nachlass, Vergebung und Verzeihung unserer Sünden gewähre uns der allmächtige und barmherzige Herr.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["confiteor","privata"],
+		"datum":[
+			"Ich bekenne Gott, dem Allmächtigen, der seligen, allzeit reinen Jungfrau Maria, dem heiligen Erzengel Michael, dem heiligen Johannes dem Täufer, den heiligen Aposteln Petrus und Paulus, allen Heiligen, dass ich viel gesündiget habe in Gedanken, Worten und Werken, durch meine Schuld, durch meine Schuld, durch meine übergroße Schuld. Darum bitte ich die selige, allzeit reine Jungfrau Maria, den heiligen Erzengel Michael, den heiligen Johannes den Täufer, die heiligen Apostel Petrus und Paulus und alle Heiligen, für mich zu beten bei Gott unseren Herrn.",
+			"Der allmächtige Gott erbarme sich unser, er lasse uns die Sünden nach und führe uns zum ewigen Leben.",
+			"Amen.",
+			"Nachlass, Vergebung und Verzeihung unserer Sünden gewähre uns der allmächtige und barmherzige Herr.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["pater-noster-semisecreta"],
+		"datum":[
+			"Vater unser.",
+			"Im Himmel, geheiliget werde Dein Name, Dein Reich komme, Dein Wille geschehe, wie im Himmel, so auf Erden! Unser tägliches Brot gib uns heute; und vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern;",
+			"V. Und führe uns nicht in Versuchung.",
+			"R. Sondern erlöse uns von dem Bösen."
+		]
+	},
+	{
+		"tags":["credo-semisecreta"],
+		"datum":[
+			"Ich glaube an Gott.",
+			"Den Vater, den Allmächtigen, den Schöpfer des Himmels und Erde, und an Jesus Christus, Seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in die Hölle, am dritte Tage auferstanden von den Toten, aufgefahren in den Himmel; Er sitzet zur Rechten Gottes, des allmächtigen Vaters, von dannen Er kommen wird, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Vergebung der Sünden,",
+			"V. Auferstehung des Fleisches.",
+			"R. Und das ewige Leben. Amen."
+		]
+	},
+	{
+		"tags":["divinum-auxilium"],
+		"datum":[
+			"Die göttliche Hilfe bleibe mit uns allezeit.",
+			"R. Amen."
+		]
 	}
 ]
