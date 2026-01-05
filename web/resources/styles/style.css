@@ -35,9 +35,15 @@ body {
 	height: 100%;
 }
 
+#logo-link-wrapper {
+	width: fit-content;
+	height: 100%;
+	margin: 0 auto;
+}
+
 #logo {
 	object-fit: contain;
-	width: 100%;
+	width: auto;
 	height: 100%;
 }
 

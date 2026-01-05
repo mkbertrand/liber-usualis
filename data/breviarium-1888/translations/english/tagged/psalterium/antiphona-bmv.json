@@ -1,12 +1,7 @@
 [
 	{
-		"tags":["antiphona-bmv","ritus"],
-		"datum":[
-			"V. The Lord give us His peace.",
-			"R. And life everlasting. Amen.",
-			"",
-			""
-		]
+		"tags":["antiphona-bmv","versiculus","dominus-det"],
+		"datum":["V. The Lord give us His peace.","R. And life everlasting. Amen."]
 	},
 	{
 		"tags":[
@@ -16,38 +11,31 @@
 		"datum":"Maiden, Mother of Him that redeemed us, thou that abidest/Heaven’s open gate, and the Star of the Sea, come, succour the fallen!/Fallen indeed we are, but fain would rise by thy succour./Thou that beyond nature’s course, hast borne in time the Eternal;/Thou that a Virgin before and after that childbirth remainest,/From the Archangel’s lips the quickening message receiving,/Mother of Jesus and us, turn thine eyes of mercy on sinners."
 	},
 	{
-		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem","versiculus"],
-		"datum":["V. The Angel of the Lord announced unto Mary.","R. And she conceived by the Holy Ghost."]
-	},
-	{
-
-	},
-	{
-		"tags":["antiphona-bmv","salve-regina","antiphona"],
-		"datum":"Hail, O Queen, Mother of mercy! hail, our life, our sweetness, and our hope. To thee we cry, the banished sons of Eve. Toward thee we sigh, weeping and groaning in this vale of tears. Ah, then, thou our Advocate, turn on us those merciful eyes of thine! And, after this our exile, show to us Jesus, the blessed Fruit of thy womb. O most merciful, O most gracious, O most sweet Virgin Mary!"
-	},
-	{
 		"tags":["antiphona-bmv","alma-redemptoris","ante-nativitatem"],
-		"datum":[
-			"",
-			"",
+		"versiculus":["V. The Angel of the Lord announced unto Mary.","R. And she conceived by the Holy Ghost."],
+		"collecta":[
 			"Let us pray.",
 			"We beseech Thee, O Lord, pour Thy grace into our hearts; that, as we have known the Incarnation of Thy Son Christ by the message of an Angel, so by His Passion and Cross we may be brought unto the glory of the Resurrection.",
 			""
 		]
 	},
 	{
-		"tags":["antiphona-bmv","salve-regina","versiculus"],
-		"datum":[
-			"V. Pray for us, holy Mother of God.",
-			"R. That we may be made worthy of the promises of Christ."
+		"tags":["antiphona-bmv","alma-redemptoris","post-nativitatem"],
+		"versiculus":["V. After thy delivery thou still remainest a Virgin undefiled.","R. Mother of God, pray for us."],
+		"collecta":[
+			"Let us pray.",
+			"O God, Who, by the fruitful virginity of the Blessed Mary, hast given unto mankind the rewards of everlasting life, + grant, we beseech Thee, that we may continually feel the might of her intercession; * through whom we have worthily received the Author of our life, our Lord Jesus Christ Thy Son.",
+			"R. Amen."
 		]
 	},
 	{
+		"tags":["antiphona-bmv","salve-regina","antiphona"],
+		"datum":"Hail, O Queen, Mother of mercy! hail, our life, our sweetness, and our hope. To thee we cry, the banished sons of Eve. Toward thee we sigh, weeping and groaning in this vale of tears. Ah, then, thou our Advocate, turn on us those merciful eyes of thine! And, after this our exile, show to us Jesus, the blessed Fruit of thy womb. O most merciful, O most gracious, O most sweet Virgin Mary!"
+	},
+	{
 		"tags":["antiphona-bmv","salve-regina"],
-		"datum":[
-			"",
-			"",
+		"versiculus":["V. Pray for us, holy Mother of God.","R. That we may be made worthy of the promises of Christ."],
+		"collecta":[
 			"Let us pray.",
 			"O almighty God, Who, by the co-operation of the Holy Ghost, didst make ready both the body and soul of the glorious Virgin and Mother Mary worthily to become a meet dwelling for Thy Son; + grant that as we rejoice in her memory, * so by her pitiful intercession we may be delivered from the evils that continually hang over us, and finally from everlasting death.",
 			""

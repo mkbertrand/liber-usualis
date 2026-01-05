@@ -90,4 +90,3 @@ def lunardate(day):
 			if day <= date(day.year, 2, 29):
 				search = str(day - timedelta(days=1))[5:]
 	return lunar_chart[search][letter]
-

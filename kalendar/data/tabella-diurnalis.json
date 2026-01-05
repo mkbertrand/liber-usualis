@@ -165,5 +165,15 @@
 			{"include":["immaculata-conceptio-bmv"],"target":1,"adde":"de-quatuor-temporibus"},
 			{"include":["eusebius-martyr"],"target":1,"adde":"de-quatuor-temporibus"}
 		]
+	},
+	{
+		"include":["antiphona-bmv"],
+		"response":[
+			{"include":["dominica","tempus"],"target":0,"adde":"dominica"}
+		]
+	},
+	{
+		"include":["vigilia-epiphaniae"],
+		"remove":"habens-commemorationem-matutini"
 	}
 ]

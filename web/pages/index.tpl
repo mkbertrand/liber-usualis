@@ -16,8 +16,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/index.css?v=1">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=11">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/index.css?v=2">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=12">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -26,7 +26,7 @@
 		<div id="site-wrapper-home">
 			<div id="top-bar-title">
 				<div id="project-logo">
-					<a href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 			</div>
 			<div id="content-container-outer-home">

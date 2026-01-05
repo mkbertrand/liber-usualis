@@ -34,7 +34,10 @@
 		"datum":"Saulus adhuc spirans minárum, et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, + et pétiit ab eo epístolas in Damáscum ad synagógas: * ut si quos invenísset hujus viæ viros, ac mulíeres, vinctos perdúceret in Jerúsalem."
 	},
 	{
-		"tags":["conversio-pauli","vesperae","hymnus"],
+		"tags":[
+			["conversio-pauli","vesperae","hymnus"],
+			["conversio-pauli","matutinum","hymnus"]
+		],
 		"src":"gregobase/2611",
 		"datum":[
 			"Egrégie Doctor Paule mores ínstrue,/Et nostra tecum péctora in cœlum trahe:/Veláta dum merídiem cernat fides,/Et solis instar sola regnet cáritas.",
@@ -57,6 +60,153 @@
 		"tags":["conversio-pauli","collecta"],
 		"datum":"Deus, qui univérsum mundum beáti Pauli Apóstoli prædicatióne docuísti: + da nobis quǽsumus; ut qui ejus hódie Conversiónem cólimus, * per ejus ad te exémpla gradiámur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["conversio-pauli","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0125I",
+		"datum":"Laudémus Deum nostrum, * In conversióne Doctóris Géntium."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0125N1A1",
+		"datum":"Qui operátus est Petro * in apostolátum, operátus est et mihi inter Gentes: et cognovérunt grátiam, quæ data est mihi a Christo Dómino."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0125N1A2",
+		"datum":"Scio cui crédidi, * et certus sum, quia potens est depósitum meum serváre in illum diem justus judex."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0125N1A3",
+		"datum":"Mihi vívere Christus est, * et mori lucrum: gloriári me opórtet in cruce Dómini nostri Jesu Christi."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Áctibus Apostolórum.",
+			"[Act. 9.]/Saulus adhuc spirans minárum, et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, et pétiit ab eo epístolas in Damáscum ad synagógas: ut si quos invenísset hujus viæ viros, ac mulíeres, vinctos perdúceret in Jerúsalem. Et cum iter fáceret, cóntigit ut appropinquáret Damásco: et súbito circumfúlsit eum lux de cœlo. Et cadens in terram audívit vocem dicéntem sibi: Saule, Saule, quid me perséqueris? Qui dixit: Quis es Dómine? Et ille: Ego sum Jesus, quem tu perséqueris. Durum est tibi contra stímulum calcitráre."
+		]
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Qui operátus est Petro in apostolátum, operátus est et mihi inter Gentes:",
+		"responsum":"Et cognovérunt grátiam Dei, quæ data est mihi.",
+		"versus":"Grátia Dei in me vácua non fuit, sed grátia ejus semper in me manet."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Et tremens, ac stupens dixit: Dómine, quid me vis fácere? Et Dóminus ad eum: Surge, et ingrédere civitátem, et ibi dicétur tibi quid te opórteat fácere. Viri autem illi, qui comitabántur cum eo, stabant stupefácti, audiéntes quidem vocem, néminem autem vidéntes. Surréxit autem Saulus de terra, apertísque óculis nihil vidébat. Ad manus autem illum trahéntes, introduxérunt Damáscum. Et erat ibi tribus diébus non videns, et non manducávit, neque bibit."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Bonum certámen certávi, cursum consummávi, fidem servávi:",
+		"responsum":"Ideóque repósita est mihi coróna justítiæ.",
+		"versus":"Scio cui crédidi, et certus sum quia potens est depósitum meum serváre in illum diem."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Erat autem quidam discípulus Damásci, nómine Ananías: et dixit ad illum in visu Dóminus: Ananía. At ille ait: Ecce ego, Dómine. Et Dóminus ad eum: Surge, et vade in vicum, qui vocátur Rectus: et quære in domo Judæ Saulum nómine Tarsénsem: ecce enim orat. (Et vidit virum Ananíam nómine, introëúntem, et imponéntem sibi manus ut visum recípiat.) Respóndit autem Ananías: Dómine, audívi a multis de viro hoc, quanta mala fécerit sanctis tuis in Jerúsalem: et hic habet potestátem a princípibus sacerdótum alligándi omnes, qui ínvocant nomen tuum. Dixit autem ad eum Dóminus: Vade, quóniam vas electiónis est mihi iste, ut portet nomen meum coram Géntibus, et régibus, et fíliis Ísraël. Ego enim osténdam illi quanta opórteat eum pro nómine meo pati."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Repósita est mihi coróna justítiæ:",
+		"responsum":"Quam reddet mihi Dóminus in illum diem justus judex.",
+		"versus":"Scio cui crédidi, et certus sum quia potens est depósitum meum serváre in illum diem."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0125N2A1",
+		"datum":"Tu es vas * electiónis sancte Paule Apóstole, prædicátor veritátis in univérso mundo."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0125N2A2",
+		"datum":"Magnus sanctus Paulus * vas electiónis, vere digne est glorificándus, qui et méruit thronum duodécimum possidére."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0125N2A3",
+		"datum":"Bonum certámen certávi, * cursum consummávi, fidem servávi."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Sermone 14. de Sanctis.]/Hódie de Áctibus Apostolórum léctio hæc pronuntiáta est: ubi Paulus Apóstolus ex persecutóre Christianórum, annuntiátor factus est Christi. Prostrávit enim Christus persecutórem, ut fáceret Ecclésiæ doctórem: percútiens eum, et sanans, occídens, et vivíficans: occísus agnus a lupis, et fáciens agnos de lupis. Ita enim in præclára prophetía, cum Jacob Patriárcha benedíceret fíliis suis (præséntes tangens, futúra prospíciens) prædíctum erat, quod in Paulo cóntigit. Erat autem Paulus, sicut ipse testátur, de tribu Bénjamin. Cum autem Jacob benedícens fílios suos, venísset ad benedicéndum Bénjamin, ait de illo: Bénjamin lupus rapax."
+		]
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Tu es vas electiónis sancte Paule Apóstole, prædicátor veritátis in univérso mundo:",
+		"responsum":"Per quem omnes Gentes cognovérunt grátiam Dei.",
+		"versus":"Intercéde pro nobis ad Deum, qui te elégit."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Quid ergo? lupus rapax semper? Absit; sed qui mane rapit prædam, ad vésperam dívidit escas. Hoc in Apóstolo Paulo implétum est, quia et de illo dictum erat. Jam, si placet, audiámus illum mane rapiéntem, ad vésperam escas dividéntem. Mane, et véspere pósita sunt pro eo, ac si dicerétur, prius, et póstea. Sic ergo accipiámus: Prius rápiet, póstea dívidet escas. Atténdite raptórem. Saulus, inquit, accéptis epístolis a princípibus sacerdótum, ibat, ut ubicúmque inveníret Christiános, ad sacerdótes attráheret et addúceret, útique puniéndos."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Grátia Dei sum is quod sum:",
+		"responsum":"Et grátia ejus in me vácua non fuit, sed semper in me manet.",
+		"versus":"Qui operátus est Petro in apostolátum, operátus est et mihi inter Gentes."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Ibat spirans, et anhélans cædes; hoc est, mane rápiens. Nam et quando lapidátus est Stéphanus primus Martyr pro nómine Christi, evidéntius áderat et Saulus, et sic áderat lapidántibus, ut non ei suffíceret, si tantum suis mánibus lapidáret. Ut enim esset in ómnium lapidántium mánibus, ipse ómnium vestiménta servábat: magis sǽviens omnes adjuvándo, quam suis mánibus lapidándo. Audívimus, mane rápiet: videámus ad vésperam quáliter dívidat escas. Voce Christi prostrátus de cœlo, et accípiens désuper interdíctum jam sæviéndi, cécidit in fáciem suam, prius prosternéndus, póstea erigéndus; prius percutiéndus, póstea sanándus."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Saulus, qui et Paulus, magnus prædicátor,",
+		"responsum":"A Deo confortátus convalescébat, et confundébat Judǽos.",
+		"versus":"Osténdens quia hic est Christus Fílius Dei."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0125N3A1",
+		"datum":"Saulus, * qui et Paulus, magnus prædicátor, a Deo confortátus convalescébat, et confundébat Judǽos."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0125N3A2",
+		"datum":"Ne magnitúdo * revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet: propter quod ter Dóminum rogávi, ut auferrétur a me, et dixit mihi Dóminus: Súfficit tibi Paule grátia mea."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0125N3A3",
+		"datum":"Repósita est mihi * coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 19. d.]/In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Et réliqua.",
+			"Homilía venerábilis Bedæ Presbýteri.",
+			"[Homilia in Natali S. Benedicti.]/Perféctus ille est, qui ábiens vendit ómnia quæ habet, et dat paupéribus, ac véniens, séquitur Christum: habébit enim thesaúrum non deficiéntem in cœlis. Unde bene interrogánte Petro, dixit tálibus Jesus: Amen dico vobis, quod vos qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Ísraël. In hac quippe vita pro ejus nómine laborántes, in ália prǽmium speráre dócuit: id est, in regeneratióne; cum vidélicet in vitam immortálem fuérimus resurgéndo regeneráti, qui in vitam cadúcam mortáliter erámus géniti."
+		]
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Sancte Paule Apóstole prædicátor veritátis, et Doctor Géntium,",
+		"responsum":"Intercéde pro nobis ad Deum, qui te elégit, ut digni efficiámur grátia Dei.",
+		"versus":"Te es vas electiónis sancte Paule Apóstole prædicátor veritátis."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Et justa prorsus retribútio, ut qui hic pro Christo humánæ glóriam celsitúdinis neglexérunt, illic a Christo júdices glorificáti singuláriter cum eo assídeant, qui a sequéndis ejus vestígiis nulla ratióne póterant avélli. Nemo autem putet duódecim tantum Apóstolos, quia pro Juda prævaricánte Mathías eléctus est, tunc esse judicatúros: sicut nec duódecim solæ sunt tribus Ísraël judicándæ: alióquin tribus Levi, quæ tertiadécima est, injudicáta recédet."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"formula":[["duplex-responsum"]],
+		"incipit":"Damásci, præpósitus Gentis Arétæ regis vóluit me comprehéndere:",
+		"responsum-i":"Et a frátribus per murum demíssus sum in sporta,",
+		"responsum-ii":"Et sic evási manus ejus in nómine Dómini.",
+		"versus":"Deus et Pater Dómini nostri Jesu Christi scit quia non méntior."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Et Paulus, qui tertiusdécimus est Apóstolus, judicándi sorte privábitur, cum ipse dicat: Nescítis quóniam ángelos judicábimus, quanto magis sæculária? Sciéndum namque est, omnes, qui ad exémplum Apostolórum sua reliquérunt ómnia, et secúti sunt Christum, júdices cum eo ventúros, sicut étiam omne mortálium genus esse judicándum. Quia enim duodenário sæpe número solet in Scriptúris univérsitas designári, per duódecim sedes Apostolórum, ómnium numerósitas judicántium, et per duódecim tribus Ísraël, univérsitas eórum, qui judicándi sunt, osténditur."
 	},
 	{
 		"tags":["conversio-pauli","laudes","antiphona","antiphona-benedictus"],

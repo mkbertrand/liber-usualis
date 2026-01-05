@@ -882,6 +882,12 @@
 		]
 	},
 	{
+		"include":["dominica","post-epiphaniam","translatum"],
+		"response":[
+			{"include":["feria"],"response":"dele","target":1}
+		]
+	},
+	{
 		"include":["incipit-libri","retrotranslandum"],
 		"response":[
 			{"include":["incipit-libri","scriptura"],"response":"transfer","target":0,"movement":-1},
