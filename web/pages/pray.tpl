@@ -313,7 +313,7 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/hamburger-menu.svg" /></button>
 				<div id="project-logo">
-					<a href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 				<button id="options-gear-wrapper" @click="optionspanel = !optionspanel">
 					<img id="options-gear" src="/resources/svg/settings-outline.svg" />
@@ -321,81 +321,81 @@
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
 
-<div id="content-container-outer">
-	<div x-cloak id="options-panel-background" x-show="optionspanel">
-		<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-			<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
-			% if locale != 'la':
-			<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
-			% end
-			<div class="recitation-select-container">
-				<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
-				<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
-				<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-private']}}</button>
-			</div>
-			<template x-if="initialized">
-				<div id="options-panel-require-initialized-container">
-					<div id="coincidences-list-container">
-						<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
-						<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-						<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalday.primary[0])"></div>
-						<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-						<template x-for="commemoration in liturgicalday.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
-							<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
-						</template>
-						<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-						<template x-for="omission in liturgicalday.omissions">
-							<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
-						</template>
-						<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
-					</div>
-					<div id="ambit-select-wrapper">
-						<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
-							<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-							<template x-for="entry in ambitEntries">
-								<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
-							</template>
+			<div id="content-container-outer">
+				<div x-cloak id="options-panel-background" x-show="optionspanel">
+					<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
+						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
+						% if locale != 'la':
+						<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
+						% end
+						<div class="recitation-select-container">
+							<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
+							<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
+							<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-private']}}</button>
 						</div>
-					</div>
-				</div>
-			</template>
-			<button class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
-			<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
-		</div>
-	</div>
-	<div id="side-panel-left">
-	</div>
-	<div id="rite-page-container">
-		<div x-show="initialized" id="rite-container" x-html="Rite">
-		</div>
-		<template x-if="bottompanel">
-			<div id="bottom-easy-select-container">
-				<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
-				<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
-					<div id="date-selector-container">
-						<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-left.svg" /></button>
-						<input id="date-selector-text" type="date" x-model="search" x-init="search = getLocalDate()" @keyup.enter.window="setDate(search);">
-						<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-						<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-right.svg" /></button>
-					</div>
-					<div id="rite-selector-container">
-						<template x-for="item in liturgylist">
-							<button class="rite-selector-button" :class="(item.id == hour.id) && 'rite-selector-button-selected'" @click="setHour(item.id)" x-text="item.name"></button>
+						<template x-if="initialized">
+							<div id="options-panel-require-initialized-container">
+								<div id="coincidences-list-container">
+									<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
+									<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
+									<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalday.primary[0])"></div>
+									<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
+									<template x-for="commemoration in liturgicalday.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
+										<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
+									</template>
+									<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
+									<template x-for="omission in liturgicalday.omissions">
+										<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
+									</template>
+									<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
+								</div>
+								<div id="ambit-select-wrapper">
+									<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
+										<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
+										<template x-for="entry in ambitEntries">
+											<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+										</template>
+									</div>
+								</div>
+							</div>
 						</template>
+						<button class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
+						<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
 					</div>
 				</div>
+				<div id="side-panel-left">
+				</div>
+				<div id="rite-page-container">
+					<div x-show="initialized" id="rite-container" x-html="Rite">
+					</div>
+					<template x-if="bottompanel">
+						<div id="bottom-easy-select-container">
+							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
+							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
+								<div id="date-selector-container">
+									<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-left.svg" /></button>
+									<input id="date-selector-text" type="date" x-model="search" x-init="search = getLocalDate()" @keyup.enter.window="setDate(search);">
+									<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+									<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-right.svg" /></button>
+								</div>
+								<div id="rite-selector-container">
+									<template x-for="item in liturgylist">
+										<button class="rite-selector-button" :class="(item.id == hour.id) && 'rite-selector-button-selected'" @click="setHour(item.id)" x-text="item.name"></button>
+									</template>
+								</div>
+							</div>
+						</div>
+					</template>
+					<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
+						<div style="height:0;" x-intersect="determineNextHour()"></div>
+						<button id="next-hour-button" :class="canincrementhour? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canincrementhour = canIncrementTo();" @click="if (canincrementhour) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
+						<span id="next-hour-forbidden-tooltip" x-show="!canincrementhour && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
+					</div>
+				</div>
+				<div id="side-panel-right">
+				</div>
+				<div id="size-change-listener" x-resize="dopanelsize()"></div>
 			</div>
-		</template>
-		<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
-			<div style="height:0;" x-intersect="determineNextHour()"></div>
-			<button id="next-hour-button" :class="canincrementhour? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canincrementhour = canIncrementTo();" @click="if (canincrementhour) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
-			<span id="next-hour-forbidden-tooltip" x-show="!canincrementhour && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
-		</div>
-	</div>
-	<div id="side-panel-right">
-	</div>
-	<div id="size-change-listener" x-resize="dopanelsize()"></div>
-</div>
 		</div>
 	</body>
 </html>

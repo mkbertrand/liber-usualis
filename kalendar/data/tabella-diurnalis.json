@@ -171,5 +171,9 @@
 		"response":[
 			{"include":["dominica","tempus"],"target":0,"adde":"dominica"}
 		]
+	},
+	{
+		"include":["vigilia-epiphaniae"],
+		"remove":"habens-commemorationem-matutini"
 	}
 ]

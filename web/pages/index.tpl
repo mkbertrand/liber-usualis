@@ -26,7 +26,7 @@
 		<div id="site-wrapper-home">
 			<div id="top-bar-title">
 				<div id="project-logo">
-					<a href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS PROJECT"></a>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 			</div>
 			<div id="content-container-outer-home">

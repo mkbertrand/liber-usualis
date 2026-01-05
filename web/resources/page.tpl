@@ -34,7 +34,7 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/hamburger-menu.svg" /></button>
 				<div id="project-logo">
-					<a href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
