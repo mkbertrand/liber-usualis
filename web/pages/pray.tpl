@@ -6,7 +6,7 @@
 
 <html lang="{{locale.split('-')[0]}}">
 	<head>
-		<title>Pray</title>
+		<title>{{text['title']}}</title>
 		<script type="application/ld+json">
 		{
 			"@context":"https://schema.org",

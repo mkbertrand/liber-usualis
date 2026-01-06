@@ -4,7 +4,7 @@
 
 <html lang='en'>
 	<head>
-		<title>Home</title>
+		<title>Breviarium Romanum</title>
 		<script type="application/ld+json">
 		{
 			"@context":"https://schema.org",
@@ -16,7 +16,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/index.css?v=2">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/breviarium.css?v=2">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=12">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
@@ -33,25 +33,26 @@
 				<div id="side-panel-left">
 				</div>
 				<div id="home-screen">
-					<h1 id="main-title-label">LIBER USUALIS PROJECT</h1>
+					<h2 id="breviarium-title">Breviarium Romanum</h2>
+					<h3 class="breviarium-subtitle">Ex Decreto Sacrosancti Concilii Tridentini</h3>
+					<h4 class="breviarium-subtitle-2">Restitutum</h4>
+					<h3 class="breviarium-subtitle">S. Pii V. Pontificis Maximi</h3>
+					<h4 class="breviarium-subtitle-2">Jussu Editum</h4>
+					<h3 class="breviarium-subtitle">Clementis VIII., Urbani VIII. et Leonis XIII.</h3>
+					<h4 class="breviarium-subtitle-2">Auctoritate Recognitum.</h4>
+					<hr style="width:100%">
 					<nav id="center-nav" x-data="{
 						pages:[
-							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'},
-							{'path':'/{{preferredlocale}}/about', 'name':'{{text['about']}}'},
-							{'path':'/{{preferredlocale}}/help', 'name':'{{text['help']}}'},
-							{'path':'/{{preferredlocale}}/credit', 'name':'{{text['credit']}}'}
+							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['de-anno']}}'},
+							{'path':'/{{preferredlocale}}/kalendar', 'name':'{{text['kalendar']}}'},
+							{'path':'/{{preferredlocale}}/rubricae', 'name':'{{text['rubrics']}}'},
+							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'}
 						]
 						}">
 						<template x-for="page in pages">
 							<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
 						</template>
 					</nav>
-					<div style="height:2em;"></div>
-					<form id="paypal-donate-button" action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="25CUBHQKYN67Y" />
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-					</form>
 				</div>
 				<div id="side-panel-right">
 				</div>

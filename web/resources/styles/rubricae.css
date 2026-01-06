@@ -1,0 +1,39 @@
+#content-container-inner {
+	font-family: times;
+	padding: 0 40px !important;
+}
+
+.latin-content {
+	margin-bottom: 20px;
+	column-count: 1;
+	column-gap: 20px;
+}
+
+h1 {
+	color: red;
+	font-size: 30px !important;
+	letter-spacing: .05em;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+h3 {
+	text-align: center;
+	color: red;
+	font-size: 20px !important;
+	font-weight: normal;
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 6px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+ol {
+	margin-top: 6px;
+	margin-bottom: 0;
+	font-size: 18px;
+}
