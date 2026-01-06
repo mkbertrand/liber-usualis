@@ -8,6 +8,7 @@ import requests
 from datetime import datetime, date
 import waitress
 import logging
+import warnings
 
 from logging.handlers import TimedRotatingFileHandler
 
@@ -46,22 +47,16 @@ def localehunt(acceptlanguage):
 
 	return langs
 
-titles = {
-	'pray': 'Rite Generator',
-	'about': 'About',
-	'help': 'Help the Liber Usualis Project',
-	'donate': 'Donate',
-	'credit': 'Credit'
-}
-
-definedlocales = ['en', 'de', 'la']
-owntemplate = ['index', 'pray']
+definedlocales = os.listdir('web/locales/')
+owntemplate = ['index', 'breviarium', 'pray']
 
 @get('/')
 def index():
 	return redirect('/index')
 
 @get('/index')
+@get('/breviarium')
+@get('/rubricae')
 @get('/pray')
 @get('/kalendar')
 @get('/about')
@@ -77,18 +72,21 @@ def bouncetolocale():
 	finally:
 		return redirect(f'/{[loc for loc in locales if loc in definedlocales][0]}/{page}')
 
-@get('/en/<page>')
-@get('/de/<page>')
-@get('/la/<page>')
-def localpage(page):
-	preferredlocale = request.route.rule[1:-7]
-	title = titles[page] if page in titles else ''
+@get(f'/<preferredlocale:re:{'|'.join(definedlocales)}>/<page>')
+def localpage(preferredlocale, page):
 	locales = [preferredlocale]
 	try:
 		locales.extend(localehunt(request.headers.get('Accept-Language')))
 	finally:
 		if not 'en' in locales:
 			locales.append('en')
+
+		titles = ''
+		for locale in locales:
+			if os.path.exists(f'web/locales/{locale}/resources/page-titles.json'):
+				titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
+		title = titles[page] if page in titles else ''
+
 		for locale in locales:
 			if page in owntemplate:
 				if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
@@ -237,7 +235,9 @@ def rite():
 
 @get('/kalendar')
 def kal():
-	return datamanage.getdisplaykalendar()
+	with warnings.catch_warnings():
+		warnings.simplefilter('ignore')
+		return datamanage.getdisplaykalendar()
 
 @get('/chant/<url:path>')
 def chant(url):

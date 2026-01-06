@@ -331,8 +331,9 @@ function render(data, chant) {
 					data.datum = unpack(data.datum).join('').split('\n');
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data.tags.includes(i))) {
-					antiphon = `<p class="rite-text ${data.tags}">${unpack(data.datum[2], null, null, parenttags)}</p>`;
-					return `<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data.datum[0])}<br>${stringrender(data.datum[1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[3])}<br>${stringrender(data.datum[4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[8])}<br>${stringrender(data.datum[9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[11])}<br>${stringrender(data.datum[12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[14].datum)}</p>`
+					header = makeheader('Psalmus XCIV');
+					antiphon = `<p class="rite-text antiphona ${data.tags}">${unpack(data.datum[2], null, null, parenttags)}</p>`;
+					return `${header}<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data.datum[0])}<br>${stringrender(data.datum[1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[3])}<br>${stringrender(data.datum[4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[8])}<br>${stringrender(data.datum[9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[11])}<br>${stringrender(data.datum[12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[14].datum)}</p>`
 
 				} else if (data.tags.includes('formula-lectionis') && data.datum != '' && !(typeof data.datum !== 'string' && 'tags' in data.datum && data.datum.tags.includes('formula-lectionis'))) {
 					if (data.quaesitum.includes('lectio-brevis')) {
@@ -388,7 +389,7 @@ function render(data, chant) {
 					}
 
 				} else if (data.tags.includes('hymnus') && data.tags.includes('te-deum') && !options['chant']) {
-					return `<p class="rite-text hymnus hymnus-te-deum">${stringrender(data.datum.join('/'))}</p>`;
+					return `${makeheader('Te Deum')}<p class="rite-text hymnus hymnus-te-deum">${stringrender(data.datum.join('/'))}</p>`;
 				} else if (data.tags.includes('commemorationes')) {
 					var ret = '';
 					for (var i = 0; i < data.datum.length - 1; i++) {
@@ -397,7 +398,11 @@ function render(data, chant) {
 					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
 
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data.tags.some(tag => trivialchants.includes(tag)))) {
-					return `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
+					ret = `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
+					if (data.tags.includes('hymnus') && data.tags.includes('te-deum')) {
+						ret = makeheader('Te Deum') + ret;
+					}
+					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
 					header = makeheader(data.datum.split('\n')[0].slice(1, -1));

@@ -16,8 +16,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/index.css?v=2">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=12">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/index.css?v=3">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=13">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -33,7 +33,7 @@
 				<div id="side-panel-left">
 				</div>
 				<div id="home-screen">
-					<h1 id="main-title-label">LIBER USUALIS PROJECT</h1>
+					<h1 id="main-title-label">Liber Usualis Project</h1>
 					<nav id="center-nav" x-data="{
 						pages:[
 							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'},
@@ -45,7 +45,6 @@
 						<template x-for="page in pages">
 							<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
 						</template>
-
 					</nav>
 					<div style="height:2em;"></div>
 					<form id="paypal-donate-button" action="https://www.paypal.com/donate" method="post" target="_top">

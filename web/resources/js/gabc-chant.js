@@ -14,7 +14,7 @@ async function chomp(id, tags) {
 
 		// Remove commented text falling before content
 		gabc = gabc.substring(gabc.search(/\([cf]\d\)/));
-		gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>').replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>').replaceAll(/<.?sc>/g, '').replaceAll(/\[.*?\]/g, '').replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3').replaceAll('<sp>*</sp>', '*').replace(/<c>.+?<\/c>/, '');
+		gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>').replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>').replaceAll(/<.?sc>/g, '').replaceAll(/\[.*?\]/g, '').replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3').replaceAll('<sp>*</sp>', '*').replace(/<c>.+?<\/c>/, '').replaceAll(/<e>(.+?)<\/e>\(.\)/g, '<i>$1</i>()');
 
 		gabcdata = '';
 		if (mode !== undefined) {
@@ -99,8 +99,10 @@ class ChantElement extends HTMLElement {
 		.replace(/<b><\/b>/g,'')
 		.replace(/<sp>'(?:ae|æ)<\/sp>/g,'ǽ')
 		.replace(/<sp>'(?:oe|œ)<\/sp>/g,'œ́')
-		.replace(/<v>\\greheightstar<\/v>/g,'*');
-		
+		.replace(/<v>\\greheightstar<\/v>/g,'*')
+		.replace(/<\/?i>/g,'_')
+		.replace(/<\/?nlba>/g,'');
+
 		var mappings = exsurge.Gabc.createMappingsFromSource(this.ctxt, gabc);
 		this.score = new exsurge.ChantScore(this.ctxt, mappings, !gabc.includes('initial-style:0;'));
 		if (gabc.includes('mode:')) {

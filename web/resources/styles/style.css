@@ -64,7 +64,7 @@ body {
 	width: 100em;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 10px 40px;
 	background-color: var(--generic-white-background-color);
 	font-size: 18px;
 }
@@ -113,26 +113,6 @@ body {
 
 .red {
 	color: red !important;
-}
-
-h1 {
-	font-size: 24px;
-	text-align: center;
-}
-
-h2 {
-	font-size: 22px;
-	line-height: 1;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	text-align: left;
-}
-
-h3 {
-	font-size: 18px;
-	line-height: 1;
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 
 @font-face {
