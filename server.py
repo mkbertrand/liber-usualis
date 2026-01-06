@@ -8,6 +8,7 @@ import requests
 from datetime import datetime, date
 import waitress
 import logging
+import warnings
 
 from logging.handlers import TimedRotatingFileHandler
 
@@ -234,7 +235,9 @@ def rite():
 
 @get('/kalendar')
 def kal():
-	return datamanage.getdisplaykalendar()
+	with warnings.catch_warnings():
+		warnings.simplefilter('ignore')
+		return datamanage.getdisplaykalendar()
 
 @get('/chant/<url:path>')
 def chant(url):
