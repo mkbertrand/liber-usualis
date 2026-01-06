@@ -64,7 +64,7 @@ body {
 	width: 100em;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 10px 40px;
 	background-color: var(--generic-white-background-color);
 	font-size: 18px;
 }

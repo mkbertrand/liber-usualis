@@ -29,6 +29,7 @@ body {
 	flex-direction: column;
 	height: 100%;
 	width: calc(min(100vw, 75vh));
+	padding: 10px 40px;
 }
 
 #side-panel-left, #side-panel-right {
@@ -38,8 +39,13 @@ body {
 }
 
 #main-title-label {
+	text-align: center;
 	color: red;
-	font-size: 24px;
+	font-size: 30px;
+	font-variant: small-caps;
+	font-weight: normal;
+	letter-spacing: .05em;
+	margin-bottom: 12px;
 }
 
 #center-nav {

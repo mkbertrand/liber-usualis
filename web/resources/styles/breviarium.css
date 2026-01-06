@@ -25,7 +25,6 @@ body {
 	position: relative;
 	background-color: var(--generic-white-background-color);
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	height: 100%;
 	width: calc(min(100vw, 75vh));
@@ -66,5 +65,8 @@ body {
 	margin: 12px;
 }
 
-#center-nav {
+.nav-element {
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
 }

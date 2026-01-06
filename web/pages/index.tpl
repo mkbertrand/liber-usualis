@@ -33,7 +33,7 @@
 				<div id="side-panel-left">
 				</div>
 				<div id="home-screen">
-					<h1 id="main-title-label">LIBER USUALIS PROJECT</h1>
+					<h1 id="main-title-label">Liber Usualis Project</h1>
 					<nav id="center-nav" x-data="{
 						pages:[
 							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'},

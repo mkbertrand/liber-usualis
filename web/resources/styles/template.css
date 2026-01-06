@@ -1,19 +1,31 @@
 h1 {
-	font-size: 24px;
+	font-family: 'times';
 	text-align: center;
+	color: red;
+	font-size: 30px;
+	font-variant: small-caps;
+	font-weight: normal;
+	letter-spacing: .05em;
 }
 
 h2 {
-	font-size: 22px;
-	line-height: 1;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	text-align: left;
+	font-family: 'times';
+	text-align: center;
+	color: red;
+	font-size: 24px;
+	font-variant: small-caps;
+	font-weight: normal;
+}
+
+h2.subtitle {
+	margin-top: -12px;
 }
 
 h3 {
-	font-size: 18px;
-	line-height: 1;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	font-family: 'times';
+	text-align: left;
+	color: black;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-weight: normal;
 }

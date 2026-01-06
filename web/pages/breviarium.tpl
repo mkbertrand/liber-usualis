@@ -33,7 +33,7 @@
 				<div id="side-panel-left">
 				</div>
 				<div id="home-screen">
-					<h2 id="breviarium-title">Breviarium Romanum</h2>
+					<h1 id="breviarium-title">Breviarium Romanum</h1>
 					<h3 class="breviarium-subtitle">Ex Decreto Sacrosancti Concilii Tridentini</h3>
 					<h4 class="breviarium-subtitle-2">Restitutum</h4>
 					<h3 class="breviarium-subtitle">S. Pii V. Pontificis Maximi</h3>
@@ -41,7 +41,7 @@
 					<h3 class="breviarium-subtitle">Clementis VIII., Urbani VIII. et Leonis XIII.</h3>
 					<h4 class="breviarium-subtitle-2">Auctoritate Recognitum.</h4>
 					<hr style="width:100%">
-					<nav id="center-nav" x-data="{
+					<nav id="breviarium-contents-nav" x-data="{
 						pages:[
 							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['de-anno']}}'},
 							{'path':'/{{preferredlocale}}/kalendar', 'name':'{{text['kalendar']}}'},
@@ -50,7 +50,7 @@
 						]
 						}">
 						<template x-for="page in pages">
-							<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
+							<p><a class="nav-element" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a></p>
 						</template>
 					</nav>
 				</div>
