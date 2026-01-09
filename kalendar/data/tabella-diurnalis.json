@@ -175,5 +175,9 @@
 	{
 		"include":["vigilia-epiphaniae"],
 		"remove":"habens-commemorationem-matutini"
+	},
+	{
+		"include":["epiphania","infra-octavam"],
+		"remove":"habens-commemorationem-matutini"
 	}
 ]

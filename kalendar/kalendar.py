@@ -392,7 +392,7 @@ def kalendar(year: int) -> Kalendar:
 			kal.add_entry(kal.match_unique(entry['occurrence']).date, tagset)
 
 	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex','in-tempore-nativitatis'})
-	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','semiduplex','per-octavam-epiphaniae'})
+	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','infra-octavam','semiduplex','per-octavam-epiphaniae'})
 	if date(year, 1, 6).isoweekday() == 7:
 		epiphanysunday = date(year, 1, 12)
 		kal.transfer({'epiphania','dominica-infra-octavam'}, target=epiphanysunday)

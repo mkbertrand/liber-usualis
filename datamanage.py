@@ -14,7 +14,7 @@ data_root = pathlib.Path(__file__).parent
 # Reserved tags
 functiontags = {'datum', 'src', 'tags', 'from-tags', 'choose', 'with'}
 
-tagselections = {'tags', 'from-tags', 'implies', 'choose', 'with'}
+tagselections = {'tags', 'from-tags', 'implies', 'choose', 'with', 'quaesitum'}
 
 def load_data(p: str):
 	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
@@ -45,7 +45,7 @@ def dump_data(j):
 				return [recurse(v) for v in obj]
 			case set() | frozenset():
 				if all(type(x) is str for x in obj):
-					return sorted(list(obj))
+					return list(obj)
 				return [recurse(v) for v in obj]
 			case _:
 				return obj
