@@ -9,7 +9,7 @@
 			["officium-parvum-bmv","matutinum","prex-triplex"],
 			["officium-parvum-bmv","prima","prex-triplex"]
 		],
-		"datum":[["ave-maria-secreta"]]
+		"datum":["[Dicitur secreto/]",["ave-maria-secreta"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","vesperae","antiphona"],
@@ -50,8 +50,8 @@
 		"datum":""
 	},
 	{
-		"tags":["officium-parvum-bmv","completorium","pater-noster-secreta","de-confiteor"],
-		"datum":[["ave-maria-secreta"]]
+		"tags":["officium-parvum-bmv","completorium","pater-noster-de-confiteor"],
+		"datum":["[Dicitur secreto/]",["ave-maria-secreta"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","completorium","psalmi"],

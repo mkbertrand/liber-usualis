@@ -170,6 +170,7 @@ function stringrender(data) {
 		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
 		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
 		.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
+		.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
 		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
 		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
 		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
@@ -196,7 +197,7 @@ riteheaders = {
 	'completorium': 'Ad Completorium',
 	'psalmi-graduales': 'Psalmi Graduales',
 	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales cum Litaniis',
-	'litaniae-sanctorum': 'Litaniæ',
+	'litaniae-sanctorum': 'Litaniæ Sanctorum',
 	'officium-capituli': 'Martyrologium'
 };
 headers = {

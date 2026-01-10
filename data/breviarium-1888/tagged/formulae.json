@@ -134,9 +134,18 @@
 		"datum":"Pater noster, qui es in cœlis: sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris: et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen."
 	},
 	{
+		"tags":["pater-noster-clara-voce"],
+		"datum":[
+			"Pater noster. [totum dicitur clara voce.]",
+			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
+			"V. Et ne nos indúcas in tentatiónem.",
+			"R. Sed líbera nos a malo."
+		]
+	},
+	{
 		"tags":["pater-noster-semisecreta"],
 		"datum":[
-			"Pater noster.",
+			"Pater noster. [secreto.]",
 			"Qui es in cœlis, sanctificétur nomen tuum: advéniat regnum tuum: fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie: et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris:",
 			"V. Et ne nos indúcas in tentatiónem.",
 			"R. Sed líbera nos a malo."
@@ -145,7 +154,7 @@
 	{
 		"tags":["credo-semisecreta"],
 		"datum":[
-			"Credo in Deum.",
+			"Credo in Deum. [secreto.]",
 			"Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu Sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos; tértia die resurréxit a mórtuis; ascéndit ad cœlos; sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum Sanctum, sanctam Ecclésiam cathólicam, Sanctórum communiónem, remissiónem peccatórum.",
 			"V. Carnis resurrectiónem.","R. Vitam ætérnam. Amen."
 		]
@@ -161,6 +170,7 @@
 	{
 		"tags":["prex-duplex"],
 		"datum":[
+			"[Dicuntur secreto./]",
 			["pater-noster-secreta"],
 			["ave-maria-secreta"]
 		]
@@ -168,6 +178,7 @@
 	{
 		"tags":["prex-triplex"],
 		"datum":[
+			"[Dicuntur secreto./]",
 			["pater-noster-secreta"],
 			["ave-maria-secreta"],
 			["credo-secreta"]
@@ -471,8 +482,14 @@
 		"datum":["Divínum auxílium ✠ máneat semper nobíscum.","R. Amen."]
 	},
 	{
-		"tags":["pater-noster-secreta-post-officium"],
-		"datum":[["pater-noster-secreta"]]
+		"tags":[
+			["pater-noster-secreta-post-officium"],
+			["pater-noster-de-confiteor"]
+		],
+		"datum":[
+			"[Dicitur secreto./]",
+			["pater-noster-secreta"]
+		]
 	},
 	{
 		"tags":["hoc-omissum"],

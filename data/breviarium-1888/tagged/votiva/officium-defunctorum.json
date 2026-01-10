@@ -84,6 +84,7 @@
 	{
 		"tags":["officium-defunctorum","vesperae","preces"],
 		"datum":[
+			"[Flexis genibus/]",
 			["pater-noster-semisecreta"],
 			["/psalmi/psalmus-cxlv,requiem"],
 			"V. A porta ínferi.",
@@ -93,6 +94,7 @@
 			["domine-exaudi"]
 		],
 		"fideles-defuncti":[
+			"[Flexis genibus/]",
 			["pater-noster-semisecreta"],
 			"V. A porta ínferi.",
 			"R. Érue Dómine ánimas eórum.",
@@ -231,7 +233,10 @@
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","pater-noster-semisecreta"],
-		"datum":[["pater-noster-secreta"]]
+		"datum":[
+			"[Dicitur secreto./]",
+			["pater-noster-secreta"]
+		]
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","absolutio"],
@@ -490,6 +495,7 @@
 	{
 		"tags":["officium-defunctorum","laudes","preces"],
 		"datum":[
+			"[Flexis genibus/]",
 			["pater-noster-semisecreta"],
 			["/psalmi/psalmus-cxxix,requiem"],
 			"V. A porta ínferi.",
@@ -499,6 +505,7 @@
 			["domine-exaudi"]
 		],
 		"fideles-defuncti":[
+			"[Flexis genibus/]",
 			["pater-noster-semisecreta"],
 			"V. A porta ínferi.",
 			"R. Érue Dómine ánimas eórum.",

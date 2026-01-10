@@ -7,7 +7,8 @@
 	{
 		"tags":["psalmi-poenitentiales","ritus"],
 		"datum":[
-			["antiphona","ne-reminiscaris","intonata"],
+			"[Dicuntur omnino flexis genibus./]",
+			["antiphona","psalmi-poenitentiales","ne-reminiscaris","intonata"],
 			["/psalmi/psalmus-vi,gloria"],
 			["/psalmi/psalmus-xxxi,gloria"],
 			["/psalmi/psalmus-xxxvii,gloria"],
@@ -15,7 +16,7 @@
 			["/psalmi/psalmus-ci,gloria"],
 			["/psalmi/psalmus-cxxix,gloria"],
 			["/psalmi/psalmus-cxlii,gloria"],
-			["antiphona","ne-reminiscaris","repetita"],
+			["antiphona","psalmi-poenitentiales","ne-reminiscaris","repetita"],
 			["litaniae-sanctorum","ritus"]
 		]
 	}

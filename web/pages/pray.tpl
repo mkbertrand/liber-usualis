@@ -30,7 +30,7 @@
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
 		<script type="text/javascript" src="/resources/js/pray.js?v=1"></script>
-		<script type="text/javascript" src="/resources/js/ritegen.js?v=35"></script>
+		<script type="text/javascript" src="/resources/js/ritegen.js?v=36"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
 		<script type="text/javascript" src="/resources/js/gabc-chant.js?v=3"></script>
