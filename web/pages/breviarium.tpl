@@ -41,10 +41,10 @@
 					<h3 class="breviarium-subtitle">Clementis VIII., Urbani VIII. et Leonis XIII.</h3>
 					<h4 class="breviarium-subtitle-2">Auctoritate Recognitum.</h4>
 					<hr style="width:100%">
-					<p>Hi! You're on an incomplete part of the website. This navigation page is only somewhat usable (you will note that the De Anno link goes to /pray and that /rubricae does not yet have the complete rubrics). Don't worry; using this page will not break anything.</p>
+					<p>Hi! You're on an incomplete part of the website. This navigation page is only somewhat usable (you will note that De Anno does not yet have the complete rubrics). Don't worry; using this page will not break anything.</p>
 					<nav id="breviarium-contents-nav" x-data="{
 						pages:[
-							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['de-anno']}}'},
+							{'path':'/{{preferredlocale}}/de-anno', 'name':'{{text['de-anno']}}'},
 							{'path':'/{{preferredlocale}}/kalendar', 'name':'{{text['kalendar']}}'},
 							{'path':'/{{preferredlocale}}/rubricae', 'name':'{{text['rubrics']}}'},
 							{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'}
