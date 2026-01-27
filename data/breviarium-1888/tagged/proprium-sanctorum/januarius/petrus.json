@@ -1,0 +1,22 @@
+[
+	{
+		"tags":["petrus","nomen"],
+		"datum":"S. Petri Apostoli"
+	},
+	{
+		"tags":[
+			["petrus","vesperae","antiphona","antiphona-magnificat"],
+			["petrus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["cathedra-petri","i-vesperae","vesperae","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":["petrus","versiculus"],
+		"datum":[["cathedra-petri","i-vesperae","versiculus"]]
+	},
+	{
+		"tags":["petrus","collecta"],
+		"datum":[["cathedra-petri","collecta"]],
+		"terminatio":[["cathedra-petri","collecta","terminatio"]]
+	}
+]
