@@ -105,7 +105,8 @@
 		"exclude":["duplex-i-classis"],
 		"response":[
 			{"include":["simplex","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
-			{"include":["simplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]}
+			{"include":["simplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["vigilia","simplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
