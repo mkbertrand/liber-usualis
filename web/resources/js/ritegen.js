@@ -287,6 +287,9 @@ function render(data, chant) {
 					if (i in headers && !parenttags.includes(i) && data.datum != '') {
 						header = makeheader(headers[i]);
 					}
+					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
+						header = makeheader('Te Deum');
+					}
 				}
 				// If data.datum is an array, that means that the responsory isn't actually nested down another layer.
 				if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
@@ -389,8 +392,6 @@ function render(data, chant) {
 						}
 					}
 
-				} else if (data.tags.includes('hymnus') && data.tags.includes('te-deum') && !options['chant']) {
-					return `${makeheader('Te Deum')}<p class="rite-text hymnus hymnus-te-deum">${stringrender(data.datum.join('/'))}</p>`;
 				} else if (data.tags.includes('commemorationes')) {
 					var ret = '';
 					for (var i = 0; i < data.datum.length - 1; i++) {
@@ -447,7 +448,7 @@ function render(data, chant) {
 					return ret + `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[4]))}<br>${stringrender(unpack(data.datum[5]))}</p>`;
 				}
 
-				if (data.tags.includes('hymnus') && !parenttags.includes('hymnus')) {
+				if (data.tags.includes('hymnus') && !data.tags.includes('te-deum') && !parenttags.includes('hymnus')) {
 					if (unpack(data.datum) == '') {
 						return '';
 					}
