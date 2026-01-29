@@ -8,9 +8,7 @@
 			["confiteor"],
 			["converte-nos"],
 			["deus-in-adjutorium","ferialis"],
-			["completorium","antiphona","intonata"],
 			["completorium","psalmi"],
-			["completorium","antiphona","repetita"],
 			["completorium","hymnus"],
 			["completorium","capitulum"],
 			["completorium","dg-capituli"],
@@ -48,10 +46,12 @@
 	{
 		"tags":["completorium","psalmi"],
 		"datum":[
+			["completorium","antiphona","intonata"],
 			["/psalmi/psalmus-iv,gloria"],
 			["/psalmi/psalmus-xxx:1-6,gloria"],
 			["/psalmi/psalmus-xc,gloria"],
-			["/psalmi/psalmus-cxxxiii,gloria"]
+			["/psalmi/psalmus-cxxxiii,gloria"],
+			["completorium","antiphona","repetita"]
 		]
 	},
 	{

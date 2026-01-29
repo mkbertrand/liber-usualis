@@ -5,9 +5,7 @@
 			["prex-duplex"],
 			["deus-in-adjutorium","ferialis"],
 			["tertia","hymnus"],
-			["tertia","antiphona","antiphona-ii","intonata"],
 			["tertia","psalmi"],
-			["tertia","antiphona","antiphona-ii","repetita"],
 			["tertia","capitulum"],
 			["tertia","dg-capituli"],
 			["tertia","formula","responsorium-breve"],
@@ -40,9 +38,11 @@
 	{
 		"tags":["tertia","psalmi"],
 		"datum":[
+			["tertia","antiphona","antiphona-ii","intonata"],
 			["/psalmi/psalmus-cxviii:33-48,gloria"],
 			["/psalmi/psalmus-cxviii:49-64,gloria"],
-			["/psalmi/psalmus-cxviii:65-80,gloria"]
+			["/psalmi/psalmus-cxviii:65-80,gloria"],
+			["tertia","antiphona","antiphona-ii","repetita"]
 		]
 	},
 	{

@@ -5,9 +5,7 @@
 			["prex-triplex"],
 			["deus-in-adjutorium","ferialis"],
 			["prima","hymnus"],
-			["prima","antiphona","antiphona-i","intonata"],
 			["prima","psalmi"],
-			["prima","antiphona","antiphona-i","repetita"],
 			["prima","capitulum"],
 			["prima","dg-capituli"],
 			["prima","formula","responsorium-breve"],
@@ -44,38 +42,46 @@
 			["prima","psalmi"]
 		],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","dominica","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-cxvii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
 			["/psalmi/psalmus-cxviii:17-32,gloria"],
-			["/psalmi/quicumque,gloria"]
+			["/psalmi/quicumque,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","in-tempore-septuagesimae","dominica","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xcii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
 			["/psalmi/psalmus-cxviii:17-32,gloria"],
-			["/psalmi/quicumque,gloria"]
+			["/psalmi/quicumque,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","in-tempore-paschali","dominica","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
 			["/psalmi/psalmus-cxviii:17-32,gloria"],
-			["/psalmi/quicumque,gloria"]
+			["/psalmi/quicumque,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
@@ -264,46 +270,56 @@
 	{
 		"tags":["prima","feria","feria-ii","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxiii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","feria","feria-iii","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxiv,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","feria","feria-iv","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxv,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","feria","feria-v","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxii,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
 		"tags":["prima","feria","feria-vi","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-xxi,gloria"],
 			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
+			["/psalmi/psalmus-cxviii:17-32,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
