@@ -30,7 +30,7 @@
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
 		<script type="text/javascript" src="/resources/js/pray.js?v=1"></script>
-		<script type="text/javascript" src="/resources/js/ritegen.js?v=37"></script>
+		<script type="text/javascript" src="/resources/js/ritegen.js?v=38"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
 		<script type="text/javascript" src="/resources/js/gabc-chant.js?v=3"></script>
@@ -108,9 +108,6 @@
 				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
 				if (i == 0) {
 					title = riteTitle(json, 'large')
-					if (scroll) {
-						window.scrollTo({top:0});
-					}
 				} else {
 					title = '';
 					if (json.usednames[0] != lasttitle) {
@@ -121,6 +118,9 @@
 				lasttitle = json.usednames[0];
 			}
 			this.rite = newrite;
+			if (scroll) {
+				window.scrollTo({top:0});
+			}
 			this.initialized = true;
 			this.updateRiteAsyncLock = false;
 		} else {
@@ -192,25 +192,19 @@
 			return zeroedsetdate - 0 == zeroedcurrentdate - 0;
 		}
 	},
+	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
 		zeroedsetdate = new Date(this.date.getFullYear(), this.date.getMonth(), this.date.getDate());
 		currentdate = new Date();
 		zeroedcurrentdate = new Date(currentdate.getFullYear(), currentdate.getMonth(), currentdate.getDate());
-		if (zeroedsetdate - 86400000 == zeroedcurrentdate - 0 && this.hour.id == 'matutinum' && this.liturgylist.length != 1) {
-			this.nexthour = [this.date, this.liturgylist[1].id];
-		} else if (zeroedsetdate - 0 != zeroedcurrentdate - 0) {
-			// If user completes an hour from the day before, they've clearly made a mistake and will have to manually select their hour next time they reload the page.
-			this.nexthour = null;
-		} else {
-			for (var i = 0; i < this.liturgylist.length; i++) {
-				if (this.liturgylist[i].id == this.hour.id) {
-					if (i != this.liturgylist.length - 1) {
-						this.nexthour = [this.date, this.liturgylist[i + 1].id];
-					} else {
-						this.nexthour = [new Date(this.date.getTime() + 86400000), this.liturgylist[0].id];
-					}
-					break;
+		for (var i = 0; i < this.liturgylist.length; i++) {
+			if (this.liturgylist[i].id == this.hour.id) {
+				if (i != this.liturgylist.length - 1) {
+					this.nexthour = [this.date, this.liturgylist[i + 1].id];
+				} else {
+					this.nexthour = [new Date(this.date.getTime() + 86400000), this.liturgylist[0].id];
 				}
+				break;
 			}
 		}
 	},
