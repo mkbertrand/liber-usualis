@@ -187,28 +187,18 @@ function paragraphclosed(string) {
 }
 
 riteheaders = {
-	'matutinum': 'Ad Matutinum',
-	'laudes': 'Ad Laudes',
-	'prima': 'Ad Primam',
-	'tertia': 'Ad Tertiam',
-	'sexta': 'Ad Sextam',
-	'nona': 'Ad Nonam',
-	'vesperae': 'Ad Vesperas',
-	'completorium': 'Ad Completorium',
-	'psalmi-graduales': 'Psalmi Graduales',
-	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales cum Litaniis',
-	'litaniae-sanctorum': 'Litaniæ Sanctorum',
-	'officium-capituli': 'Martyrologium'
-};
-headers = {
-	'capitulum': 'Capitulum',
-	'hymnus': 'Hymnus',
-	'preces': 'Preces',
-	'confiteor': 'Confiteor',
-	'collecta-primaria': 'Collecta',
-	'sacrosanctae': 'Sacrosanctæ',
-	'invitatorium': 'Invitatorium',
-	'haec-dies': 'Antiphona'
+	'matutinum': 'Ad Matutinum.',
+	'laudes': 'Ad Laudes.',
+	'prima': 'Ad Primam.',
+	'tertia': 'Ad Tertiam.',
+	'sexta': 'Ad Sextam.',
+	'nona': 'Ad Nonam.',
+	'vesperae': 'Ad Vesperas.',
+	'completorium': 'Ad Completorium.',
+	'psalmi-graduales': 'Psalmi Graduales.',
+	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales cum Litaniis.',
+	'litaniae-sanctorum': 'Litaniæ Sanctorum.',
+	'officium-capituli': 'Martyrologium.'
 };
 
 function render(data, chant) {
@@ -217,6 +207,10 @@ function render(data, chant) {
 	names = data['usednames'];
 
 	function renderinner(data, translated = null, parenttags) {
+		// We frequently want to know if some array, but not parenttags, includes some tag.
+		function uniquelyhas(tag, list = data.tags) {
+			return list.includes(tag) && !parenttags.includes(tag);
+		}
 		try {
 			if (translationpool != null && typeof data === 'object' && 'tags' in data) {
 				var tags = data.tags;
@@ -280,15 +274,55 @@ function render(data, chant) {
 				function makeheader(header, style = 'item-header') {
 					return `<h4 class="${style}">${header}</h4>`;
 				}
+				function makeheadingannotation(annot) {
+					return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
+				}
 				var header = '';
 
 				for (i of data.tags) {
 					// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
+					headers = {
+						'psalmi': 'Psalmi.',
+						'preces': 'Preces.',
+						'collecta-primaria': 'Collecta.',
+						'invitatorium': 'Invitatorium.',
+						'haec-dies': 'Antiphona.'
+					};
 					if (i in headers && !parenttags.includes(i) && data.datum != '') {
 						header = makeheader(headers[i]);
 					}
 					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
 						header = makeheader('Te Deum');
+					} else if (uniquelyhas('capitulum') && !data.tags.includes('pascha')) {
+						if (data.quaesitum.includes('officium-parvum-bmv') && !['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
+							header = makeheader('Capitulum & Versiculus.');
+						} else if (['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
+							header = makeheader('Capitulum, Hymnus & Versiculus.');
+						} else {
+							header = makeheader('Capitulum, Responsorium Breve & Versiculus.');
+						}
+					} else if (uniquelyhas('versiculus') && ['officium-defunctorum', 'coena-domini', 'parasceve', 'sabbatum-sanctum'].some(tag => data.tags.includes(tag))) {
+						header = makeheader('Versiculus.');
+					} else if (uniquelyhas('versiculus') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-bmv')) {
+						header = makeheadingannotation('Versiculus.');
+					} else if (uniquelyhas('absolutio')) {
+						header = makeheadingannotation('Absolutio.');
+					} else if (uniquelyhas('hymnus')) {
+						if (['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
+							header = makeheadingannotation('Hymnus.');
+						} else {
+							header = makeheader('Hymnus.');
+						}
+					} else if (uniquelyhas('antiphona-magnificat') && !data.tags.includes('repetita') && !parenttags.includes('commemorationes')) {
+						header = makeheader('Canticum B. Mariæ Virg.');
+					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.tags.includes('repetita')) {
+						header = makeheader('Canticum Simeonis.');
+					} else if (uniquelyhas('antiphona-benedictus') && !data.tags.includes('repetita') && !parenttags.includes('commemorationes')) {
+						header = makeheader('Canticum Zachariæ.');
+					} else if (uniquelyhas('confiteor') && parenttags.includes('completorium')) {
+						header = makeheader('Confessio.');
+					} else if (uniquelyhas('psalmi') && data.quaesitum.includes('matutinum')) {
+						header = '';
 					}
 				}
 				// If data.datum is an array, that means that the responsory isn't actually nested down another layer.
@@ -298,7 +332,7 @@ function render(data, chant) {
 						return data.datum[1].replace(", 'incipit'",'');
 					}
 					if (data.quaesitum.includes('responsorium-breve')) {
-						header = makeheader('Responsorium Breve');
+						header = makeheadingannotation('Responsorium Breve.');
 					} else {
 						nn = 1;
 						if (data.quaesitum.includes('nocturna-ii')) {
@@ -307,11 +341,11 @@ function render(data, chant) {
 							nn = 3
 						}
 						if (data.quaesitum.includes('responsorium-i')) {
-							header = makeheader('Responsorium ' + ['I', 'IV', 'VII'][nn - 1]);
+							header = makeheadingannotation(`Responsorium ${['I', 'IV', 'VII'][nn - 1]}.`);
 						} else if (data.quaesitum.includes('responsorium-ii')) {
-							header = makeheader('Responsorium ' + ['II', 'V', 'VIII'][nn - 1]);
+							header = makeheadingannotation(`Responsorium ${['II', 'V', 'VIII'][nn - 1]}.`);
 						} else if (data.quaesitum.includes('responsorium-iii')) {
-							header = makeheader('Responsorium ' + ['III', 'VI', 'IX'][nn - 1]);
+							header = makeheadingannotation(`Responsorium ${['III', 'VI', 'IX'][nn - 1]}.`);
 						}
 					}
 					if (translationpool != null && translated != null) {
@@ -335,13 +369,13 @@ function render(data, chant) {
 					data.datum = unpack(data.datum).join('').split('\n');
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data.tags.includes(i))) {
-					header = makeheader('Psalmus XCIV');
+					header = makeheadingannotation('Psalmus XCIV.');
 					antiphon = `<p class="rite-text antiphona ${data.tags}">${unpack(data.datum[2], null, null, parenttags)}</p>`;
 					return `${header}<p class="rite-text epiphania-venite epiphania-venite-incipit">${stringrender(data.datum[0])}<br>${stringrender(data.datum[1])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[3])}<br>${stringrender(data.datum[4])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[6])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[8])}<br>${stringrender(data.datum[9])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[11])}<br>${stringrender(data.datum[12])}</p>${antiphon}<p class="rite-text epiphania-venite">${stringrender(data.datum[14].datum)}</p>`
 
 				} else if (data.tags.includes('formula-lectionis') && data.datum != '' && !(typeof data.datum !== 'string' && 'tags' in data.datum && data.datum.tags.includes('formula-lectionis'))) {
 					if (data.quaesitum.includes('lectio-brevis')) {
-						header = makeheader('Lectio Brevis');
+						header = makeheader('Lectio Brevis.');
 					} else {
 						nn = 1;
 						if (data.quaesitum.includes('nocturna-ii')) {
@@ -350,11 +384,11 @@ function render(data, chant) {
 							nn = 3
 						}
 						if (data.quaesitum.includes('lectio-i')) {
-							header = makeheader('Lectio ' + ['I', 'IV', 'VII'][nn - 1]);
+							header = makeheader(`Lectio ${['I', 'IV', 'VII'][nn - 1]}.`);
 						} else if (data.quaesitum.includes('lectio-ii')) {
-							header = makeheader('Lectio ' + ['II', 'V', 'VIII'][nn - 1]);
+							header = makeheader(`Lectio ${['II', 'V', 'VIII'][nn - 1]}.`);
 						} else if (data.quaesitum.includes('lectio-iii')) {
-							header = makeheader('Lectio ' + ['III', 'VI', 'IX'][nn - 1]);
+							header = makeheader(`Lectio ${['III', 'VI', 'IX'][nn - 1]}.`);
 						}
 					}
 
@@ -376,6 +410,8 @@ function render(data, chant) {
 							return `<p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 						}
 
+
+
 						// For the first reading from a Homily
 						if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p>${annotate(reading.slice(3).join(' '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '))}`
@@ -393,9 +429,9 @@ function render(data, chant) {
 					}
 
 				} else if (data.tags.includes('commemorationes')) {
-					var ret = '';
+					var ret = makeheader('Commemorationes.');
 					for (var i = 0; i < data.datum.length - 1; i++) {
-						ret += makeheader(names[i + 1]) + renderinner(data.datum[i], translated, data.tags.concat(parenttags));
+						ret += makeheadingannotation(names[i + 1] + '.') + renderinner(data.datum[i], translated, data.tags.concat(parenttags));
 					}
 					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
 
@@ -407,18 +443,20 @@ function render(data, chant) {
 					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
-					header = makeheader(data.datum.split('\n')[0].slice(1, -1));
+					header = makeheadingannotation(data.datum.split('\n')[0].slice(1, -1).replace(':', '. ') + '.');
 					data.datum = data.datum.substring(data.datum.indexOf('\n') + 1).replace(/^\d+\s/, '').split('\n');
 					translated = translated == null ? null : translated.split('\n').slice(1);
 					data.tags.push('textus-psalmi');
 
 				} else if (data.tags.includes('nocturna')) {
 					if (data.quaesitum.includes('nocturna-i')) {
-						header = makeheader('Nocturna I', 'section-header');
+						header = makeheader('Nocturnus I.', 'section-header');
 					} else if (data.quaesitum.includes('nocturna-ii')) {
-						header = makeheader('Nocturna II', 'section-header');
+						header = makeheader('Nocturnus II.', 'section-header');
 					} else if (data.quaesitum.includes('nocturna-iii')) {
-						header = makeheader('Nocturna III', 'section-header');
+						header = makeheader('Nocturnus III.', 'section-header');
+					} else {
+						header = makeheader('Nocturnus.', 'section-header');
 					}
 				} else if (data.tags.includes('ritus')) {
 					for (i of data.tags) {
@@ -429,8 +467,6 @@ function render(data, chant) {
 					if (data.tags.includes('antiphona-bmv')) {
 						header = makeheader('Antiphona B.M.V.');
 					}
-				} else if (data.tags.includes('versiculus') && !parenttags.includes('versiculus') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-bmv')) {
-					header = makeheader('Versiculus');
 				} else if (data.tags.includes('martyrologium')) {
 					ret = `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[0]))} ${stringrender(unpack(data.datum[1]))}</p>`;
 					prae = unpack(data.datum[2]);
@@ -448,7 +484,7 @@ function render(data, chant) {
 					return ret + `<p class="rite-text martyrologium">${stringrender(unpack(data.datum[4]))}<br>${stringrender(unpack(data.datum[5]))}</p>`;
 				}
 
-				if (data.tags.includes('hymnus') && !data.tags.includes('te-deum') && !parenttags.includes('hymnus')) {
+				if (uniquelyhas('hymnus') && !data.tags.includes('te-deum')) {
 					if (unpack(data.datum) == '') {
 						return '';
 					}
@@ -465,7 +501,7 @@ function render(data, chant) {
 				}
 
 				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
-				if (fullparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
+				if (fullparagraph.some(i => uniquelyhas(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
 						return '';
@@ -477,7 +513,7 @@ function render(data, chant) {
 				}
 
 				openparagraph = ['capitulum', 'absolutio'];
-				if (openparagraph.some(i => data.tags.includes(i) && !parenttags.includes(i))) {
+				if (openparagraph.some(i => uniquelyhas(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
 						return '';
@@ -485,10 +521,13 @@ function render(data, chant) {
 					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
 					if (annotation == null) {
-						return `${header}<p class="rite-text ${data.tags.join(' ')}">${ret}`;
+						if (!ret.startsWith('<p')) {
+							ret = `<p class="rite-text ${data.tags.join(' ')}">` + ret;
+						}
+						return header + ret;
 					} else {
 						ret = ret.replace(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/,'');
-						return `${header}<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
+						return `${header}<p class="rite-text-rubric rite-text-rubric-above-paragraph">Capitulum. ${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
 					}
 				}
 				return header + renderinner(data.datum, translated, data.tags.concat(parenttags));
