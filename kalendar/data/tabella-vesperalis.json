@@ -1,8 +1,15 @@
 [
 	{
 		"include":["antiphona-bmv","ii-vesperae"],
+		"exclude":["alma-redemptoris","dies-finalis"],
 		"recheck":false,
 		"response":"dele"
+	},
+	{
+		"include":["alma-redemptoris","dies-finalis"],
+		"response":[
+			{"include":["ave-regina-coelorum"],"response":"dele","target":1}
+		]
 	},
 	{
 		"include":["simplex","primarium","ii-vesperae"],
@@ -577,6 +584,12 @@
 		"include":["antiphona-bmv"],
 		"response":[
 			{"include":["dominica","tempus"],"target":0,"adde":"dominica"}
+		]
+	},
+	{
+		"include":["purificatio-bmv"],
+		"response":[
+			{"include":["dominica","tempus"],"target":0,"adde":"in-dominica"}
 		]
 	}
 ]

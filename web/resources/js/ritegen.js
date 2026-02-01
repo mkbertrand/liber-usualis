@@ -92,9 +92,9 @@ function ritelist(daytags, ambit) {
 			// The Antiphon to the Blessed Virgin Mary is never said when the Office of the Dead, Penitential Psalms, or the Litany follow (except as an integral part of Compline)
 			if (
 				(ambit[i].content[j].always || included.includes(ambit[i].content[j].where))
-			&& !(included.includes('officium-defunctorum') && (ambit[i].id == 'vesperae' || ambit[i].id == 'matutinum') && ambit[i].content[j].what == 'antiphona-bmv')
-			&& !(included.includes('psalmi-poenitentiales') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
-			&& !(included.includes('litaniae-sanctorum') && ambit[i].id == 'matutinum' && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(included.includes('officium-defunctorum') && ambit[i].content.some(it => it.where == 'officium-defunctorum') && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(included.includes('psalmi-poenitentiales') && ambit[i].content.some(it => it.what == 'psalmi-poenitentiales') && ambit[i].content[j].what == 'antiphona-bmv')
+			&& !(included.includes('litaniae-sanctorum') && ambit[i].content.some(it => it.what == 'litaniae-sanctorum') && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(daytags.some(i => i.includes('triduum')) && ambit[i].content[j].what == 'antiphona-bmv')
 			&& !(daytags.some(i => i.includes('triduum')) && ambit[i].content[j].what == 'officium-capituli')
 			&& !(daytags.some(i => i.includes('pascha') && i.includes('i-vesperae') && i.includes('duplex-i-classis')) && ambit[i].id == 'vesperae' && (ambit[i].content[j].what == 'antiphona-bmv' || ambit[i].content[j].what == 'aperi-domine' || ambit[i].content[j].what == 'sacrosanctae'))

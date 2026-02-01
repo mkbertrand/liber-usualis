@@ -22,7 +22,7 @@
 			["dominus-vobiscum","ferialis-a"],
 			["completorium","benedicamus-domino","hora-minor"],
 			["completorium","benedictio-finalis"],
-			["antiphona-bmv","antiphona-bmv-temporis","occurrens","ritus","infra-completorium"],
+			["antiphona-bmv-pro-completorio"],
 			["prex-triplex"]
 		]
 	},
@@ -298,5 +298,14 @@
 			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
 			"Jesu, tibi sit glória,/Qui passus es pro sérvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
+	},
+	{
+		"tags":["antiphona-bmv-pro-completorio"],
+		"datum":[["antiphona-bmv","antiphona-bmv-temporis","occurrens","ritus","infra-completorium"]]
+	},
+	{
+		"tags":["antiphona-bmv-pro-completorio","purificatio-bmv","ii-vesperae"],
+		"datum":[["antiphona-bmv","ave-regina-coelorum","ritus","infra-completorium"]],
+		"in-dominica":[["antiphona-bmv","ave-regina-coelorum","ritus","infra-completorium","dominica"]]
 	}
 ]
