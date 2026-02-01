@@ -18,7 +18,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=41">
+		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=42">
 		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=17">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
