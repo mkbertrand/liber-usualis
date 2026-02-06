@@ -5,6 +5,8 @@ let
 
     # App packages
     app_pkgs = with pkgs; [
+        python_env
+        # whatever else you want to add here
         btop
     ];
 
