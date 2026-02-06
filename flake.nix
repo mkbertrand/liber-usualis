@@ -1,153 +1,142 @@
 {
-    description = "mutli-use flake for devshell and building the application";
+  description = "mutli-use flake for devshell and building the application";
 
-    inputs = {
-        determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
-        nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2511.0";
-        flake-utils.url = "github:numtide/flake-utils";
-        nixos-generators = {
-            url = "github:nix-community/nixos-generators";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        pyproject-nix = {
-            url = "github:pyproject-nix/pyproject.nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        uv2nix = {
-            url = "github:pyproject-nix/uv2nix";
-            inputs.pyproject-nix.follows = "pyproject-nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        pyproject-build-systems = {
-            url = "github:pyproject-nix/build-system-pkgs";
-            inputs.pyproject-nix.follows = "pyproject-nix";
-            inputs.uv2nix.follows = "uv2nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+  inputs = {
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
+    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2511.0";
+    flake-utils.url = "github:numtide/flake-utils";
+    nixos-generators = {
+      url = "github:nix-community/nixos-generators";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
+    pyproject-nix = {
+      url = "github:pyproject-nix/pyproject.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    uv2nix = {
+      url = "github:pyproject-nix/uv2nix";
+      inputs.pyproject-nix.follows = "pyproject-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    pyproject-build-systems = {
+      url = "github:pyproject-nix/build-system-pkgs";
+      inputs.pyproject-nix.follows = "pyproject-nix";
+      inputs.uv2nix.follows = "uv2nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
 
-    outputs = { self, nixpkgs, flake-utils, determinate, nixos-generators, pyproject-nix, uv2nix, pyproject-build-systems, ... }:
-        flake-utils.lib.eachDefaultSystem (system:
-            let
-                pkgs = import nixpkgs {
-                    inherit system;
-                };
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      determinate,
+      nixos-generators,
+      pyproject-nix,
+      uv2nix,
+      pyproject-build-systems,
+      ...
+    }:
+    let
+      # Helper function to create python_env for a given system
+      mkPythonEnv = system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+          workspace = uv2nix.lib.workspace.loadWorkspace { workspaceRoot = ./.; };
+          overlay = workspace.mkPyprojectOverlay { sourcePreference = "wheel"; };
+          python = pkgs.python313;
+          pythonSet = (pkgs.callPackage pyproject-nix.build.packages {
+            inherit python;
+          }).overrideScope (
+            pkgs.lib.composeManyExtensions [
+              pyproject-build-systems.overlays.default
+              overlay
+              (final: prev: {
+                wsgi-request-logger = prev.wsgi-request-logger.overrideAttrs (old: {
+                  nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [
+                    final.setuptools
+                  ];
+                });
+              })
+            ]
+          );
+        in
+        pythonSet.mkVirtualEnv "libu-env" workspace.deps.default;
 
-                # uv2nix workspace
-                workspace = uv2nix.lib.workspace.loadWorkspace { workspaceRoot = ./.; };
+      # NixOS configuration helpers (always x86_64-linux)
+      nixosSystem = "x86_64-linux";
+      python_env = mkPythonEnv nixosSystem;
 
-                # Create package overlay from workspace
-                overlay = workspace.mkPyprojectOverlay {
-                    sourcePreference = "wheel";
-                };
+      nodes = [ "libu" ];
+      formats = [ "docker" "proxmox" "iso" "install-iso" "linode" "amazon" ];
 
-                # Base Python package set from pyproject.nix
-                python = pkgs.python313;
-                pythonSet = (pkgs.callPackage pyproject-nix.build.packages {
-                    inherit python;
-                }).overrideScope (
-                    pkgs.lib.composeManyExtensions [
-                        pyproject-build-systems.overlays.default
-                        overlay
-                        # Override for packages with missing build dependencies
-                        (final: prev: {
-                            wsgi-request-logger = prev.wsgi-request-logger.overrideAttrs (old: {
-                                nativeBuildInputs = (old.nativeBuildInputs or []) ++ [
-                                    final.setuptools
-                                ];
-                            });
-                        })
-                    ]
-                );
+      # For nixos-generators packages
+      configuration = nodename: format:
+        nixos-generators.nixosGenerate {
+          system = nixosSystem;
+          inherit format;
+          modules = [
+            determinate.nixosModules.default
+            ./nixos-config.nix
+          ];
+          specialArgs = {
+            inherit self nixpkgs nodename format python_env;
+          };
+        };
 
-                # Create the virtual environment with all dependencies
-                python_env = pythonSet.mkVirtualEnv "libu-env" workspace.deps.default;
+      # For nixosConfigurations (nixos-rebuild)
+      generators = nodename: format:
+        nixpkgs.lib.nixosSystem {
+          system = nixosSystem;
+          modules = [
+            determinate.nixosModules.default
+            ./nixos-config.nix
+            ./${format}-hw.nix
+          ];
+          specialArgs = {
+            inherit self nixpkgs nodename format python_env;
+          };
+        };
 
+    in
+    # Merge per-system outputs with top-level nixosConfigurations
+    flake-utils.lib.eachDefaultSystem (system:
+      let
+        pkgs = import nixpkgs { inherit system; };
+        systemPythonEnv = mkPythonEnv system;
+      in
+      {
+        python_env = systemPythonEnv;
 
-                nodes = [
-                    "libu"
-                ];
-                formats = [
-                    "docker"
-                    "proxmox"
-                    "iso"
-                    "install-iso"
-                    "linode"
-                    "amazon"
-                ];
+        devShells.default = pkgs.mkShell {
+          name = "libu-dev-shell";
+          packages = [
+            systemPythonEnv
+            pkgs.uv
+            pkgs.awscli2
+          ];
+        };
 
-                configuration = (
-                    # Function that templates out a value for the `nixosConfigurations` attrset.
-                    # Used for bundling a nixos configuration for the node to be used for autoUpgrades after deployment.
-                    nodename: format:
-                    nixos-generators.nixosGenerate {
-                        system = "x86_64-linux";
-                        format = format;
-                        modules = [
-                            determinate.nixosModules.default
-                            ./nixos-config.nix
-                        ];
-                        specialArgs = {
-                            # additional arguments to pass to modules
-                            self = self;
-                            nixpkgs = nixpkgs;
-                            nodename = nodename;
-                            format = format;
-                            inherit python_env;
-                        };
-                    }
-                );
-                generators = (
-                    # Function that templates out a value for the `nixosConfigurations` attrset.
-                    # Used for bundling a nixos configuration for the node to be used for autoUpgrades after deployment.
-                    nodename: format:
-                    nixpkgs.lib.nixosSystem {
-                        system = "x86_64-linux";
-                        format = format;
-                        modules = [
-                            determinate.nixosModules.default
-                            ./nixos-config.nix
-                        ];
-                        specialArgs = {
-                            # additional arguments to pass to modules
-                            self = self;
-                            nixpkgs = nixpkgs;
-                            nodename = nodename;
-                            format = format;
-                            inherit python_env;
-                        };
-                    }
-                );
-
-            in {
-                # Export python_env so it can be used in nixos-config.nix
-                inherit python_env;
-
-                devShells.default = pkgs.mkShell {
-                    name = "libu-dev-shell";
-
-                    packages = [
-                        python_env
-                        pkgs.uv
-                        pkgs.awscli2
-                    ];
-                };
-
-                # This evaluates to something like: {"libu-amazon" = nixpkgs.lib.nixosGenerate {...}; ... }
-                packages = builtins.listToAttrs (
-                    builtins.concatMap ( format:
-                        map
-                        ( nodename: { "name" = "${nodename}-${format}"; "value" = configuration nodename format; } )
-                        nodes  # List of nodes to generate images for
-                    )
-                    formats
-                );
-                nixosConfigurations = builtins.listToAttrs (
-                    builtins.concatMap ( format:
-                        ( nodename: { "name" = "${nodename}"; "value" = generators nodename format; } )
-                        nodes  # List of nodes to generate nixos configs for
-                    )
-                    formats
-                );
-            });
+        # Image packages (nixos-generators)
+        packages = builtins.listToAttrs (
+          builtins.concatMap (format:
+            map (nodename: {
+              name = "${nodename}-${format}";
+              value = configuration nodename format;
+            }) nodes
+          ) formats
+        );
+      }
+    ) // {
+      # Top-level nixosConfigurations (required for nixos-rebuild)
+      nixosConfigurations = builtins.listToAttrs (
+        builtins.concatMap (format:
+          map (nodename: {
+            name = "${nodename}-${format}";
+            value = generators nodename format;
+          }) nodes
+        ) formats
+      );
+    };
 }

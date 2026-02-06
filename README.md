@@ -87,3 +87,11 @@ aws ec2 register-image \
 
 ```
 the import-image command might take 30ish minutes to run, so there's probably a better way of creating the new IAM, maybe even just having the nixos config as a public or private flake and running nixos-rebuild switch on the ec2 instance machine with the flake as the target
+# Rebuilding
+```bash
+export host="YOUR_HOSTNAME_OR_IP_HERE";
+nixos-rebuild switch \
+  --flake ".#libu-linode" \
+  --target-host "master@$host" \
+  --use-remote-sudo
+```
