@@ -320,9 +320,9 @@
 					<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
 						<div class="locale-select-container">
-							<button class="options-panel-button locale-select-button" @click="window.location.href = window.location.pathname.replace(/^\\/[a-z]{2}\\//, '/en/') + window.location.search" :class="'{{locale}}' == 'en' ? 'options-panel-button-on' : 'options-panel-button-off'">EN</button>
-							<button class="options-panel-button locale-select-button" @click="window.location.href = window.location.pathname.replace(/^\\/[a-z]{2}\\//, '/de/') + window.location.search" :class="'{{locale}}' == 'de' ? 'options-panel-button-on' : 'options-panel-button-off'">DE</button>
-							<button class="options-panel-button locale-select-button" @click="window.location.href = window.location.pathname.replace(/^\\/[a-z]{2}\\//, '/la/') + window.location.search" :class="'{{locale}}' == 'la' ? 'options-panel-button-on' : 'options-panel-button-off'">LA</button>
+							<button class="options-panel-button locale-select-button {{!'options-panel-button-on' if locale == 'en' else 'options-panel-button-off'}}" @click="window.location.assign('/en' + window.location.pathname.slice(3) + window.location.search)">EN</button>
+							<button class="options-panel-button locale-select-button {{!'options-panel-button-on' if locale == 'de' else 'options-panel-button-off'}}" @click="window.location.assign('/de' + window.location.pathname.slice(3) + window.location.search)">DE</button>
+							<button class="options-panel-button locale-select-button {{!'options-panel-button-on' if locale == 'la' else 'options-panel-button-off'}}" @click="window.location.assign('/la' + window.location.pathname.slice(3) + window.location.search)">LA</button>
 						</div>
 						% if locale != 'la':
 						<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
