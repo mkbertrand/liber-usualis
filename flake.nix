@@ -3,7 +3,7 @@
 
     inputs = {
         determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
-        nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2411.0";
+        nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2511.0";
         flake-utils.url = "github:numtide/flake-utils";
         nixos-generators = {
             url = "github:nix-community/nixos-generators";
@@ -18,13 +18,6 @@
                     inherit system;
                 };
 
-                python_env = pkgs.python3.withPackages (ps: with ps; [
-                    bottle
-                    pytest
-                    diff-match-patch
-                    requests
-                    black
-                ]);
 
                 nodes = [
                     "libu"
@@ -55,7 +48,6 @@
                             nixpkgs = nixpkgs;
                             nodename = nodename;
                             format = format;
-                            python_env = python_env;
                         };
                     }
                 );
@@ -76,7 +68,6 @@
                             nixpkgs = nixpkgs;
                             nodename = nodename;
                             format = format;
-                            python_env = python_env;
                         };
                     }
                 );
@@ -86,7 +77,7 @@
                     name = "libu-dev-shell";
 
                     packages = [
-                        python_env
+                        pkgs.uv
                         pkgs.awscli2
                     ];
                 };

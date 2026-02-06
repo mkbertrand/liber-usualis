@@ -26,6 +26,8 @@ import prioritizer
 import kalendar.datamanage
 import kalendar.display as display
 
+LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
+
 root = 'breviarium-1888'
 
 def localehunt(acceptlanguage):
@@ -278,6 +280,6 @@ if args.output:
 else:
 	from requestlogger import WSGILogger, ApacheFormatter
 	waitress.serve(WSGILogger(
-		bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
+		bottle.default_app(), [TimedRotatingFileHandler(LOG_PATH, 'd', 7)],
 		ApacheFormatter(), propagate=False
 	))

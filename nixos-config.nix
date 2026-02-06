@@ -1,12 +1,10 @@
-{ lib, nixpkgs, format, nodename, python_env, ... }:
+{ lib, nixpkgs, format, nodename, ... }:
 let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
 
     # App packages
     app_pkgs = with pkgs; [
-        python_env
-        # whatever else you want to add here
         btop
     ];
 
@@ -70,7 +68,6 @@ in
             curl
             git
             file
-            python_env
         ];
 
         services.nginx = {
@@ -162,7 +159,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
                 description = "Bottle Application";
                 wantedBy = [ "multi-user.target" ];
                 serviceConfig = {
-                    ExecStart = "${python_env}/bin/python ${bottle_app.out}/lib/frontend.py";
+                    ExecStart = "${python_env}/bin/python ${bottle_app.out}/lib/server.py";
                     Restart = "always";
                     User = "bottle";
                     Group = "bottle";
