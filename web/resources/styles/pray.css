@@ -132,6 +132,16 @@
 	margin: 0;
 }
 
+.locale-select-container {
+	display: flex;
+	flex-direction: row;
+	gap: 7px;
+}
+
+.locale-select-button {
+	flex-grow: 1;
+}
+
 .recitation-select-container {
 	display: flex;
 	flex-direction: row;
