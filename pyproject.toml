@@ -12,3 +12,6 @@ dependencies = [
     "waitress>=3.0.2",
     "wsgi-request-logger>=0.4.6",
 ]
+
+[tool.setuptools]
+packages = ["web", "data", "kalendar"]

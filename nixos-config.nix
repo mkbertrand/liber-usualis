@@ -1,4 +1,4 @@
-{ lib, nixpkgs, format, nodename, ... }:
+{ lib, nixpkgs, format, nodename, python_env, ... }:
 let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
