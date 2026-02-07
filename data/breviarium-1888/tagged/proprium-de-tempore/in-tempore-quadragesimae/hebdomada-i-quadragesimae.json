@@ -5,7 +5,7 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","capitulum"],
-		"datum":"Fratres: Hortámur vos, ne in vácuum grátiam Dei recipiátis. + Ait enim: Témpore accépto exaudívi te, * et in die salútis adjúvi te."
+		"datum":"[II. Cor. 6.]/Fratres: Hortámur vos, ne in vácuum grátiam Dei recipiátis. + Ait enim: Témpore accépto exaudívi te, * et in die salútis adjúvi te."
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","i-vesperae","antiphona","antiphona-magnificat"],
@@ -16,6 +16,138 @@
 		"tags":["hebdomada-i-quadragesimae","dominica","collecta"],
 		"datum":"Deus, qui Ecclésiam tuam ánnua Quadragesimáli observatióne puríficas: * præsta famíliæ tuæ; ut quod a te obtinére abstinéndo nítitur, hoc bonis opéribus exsequátur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Epístola secúnda beáti Pauli Apóstoli ad Corínthios.",
+			"[II. Cor. 6.]/Adjuvántes autem exhortámur ne in vácuum grátiam Dei recipiátis. Ait enim: Témpore accépto exaudívi te, et in die salútis adjúvi te. Ecce nunc tempus acceptábile, ecce nunc dies salútis. Némini dantes ullam offensiónem, ut non vituperétur ministérium nostrum: sed in ómnibus exhibeámus nosmetípsos sicut Dei minístros in multa patiéntia, in tribulatiónibus, in necessitátibus, in angústiis, in plagis, in carcéribus, in seditiónibus, in labóribus, in vigíliis, in jejúniis, in castitáte, in sciéntia, in longanimitáte, in suavitáte, in Spíritu sancto, in caritáte non ficta, in verbo veritátis, in virtúte Dei, per arma justítiæ a dextris, et a sinístris, per glóriam, et ignobilitátem, per infámiam, et bonam famam: ut seductóres, et veráces, sicut qui ignóti, et cógniti: quasi moriéntes, et ecce vívimus: ut castigáti, et non mortificáti: quasi tristes, semper autem gaudéntes: sicut egéntes, multos autem locupletántes: tamquam nihil habéntes, et ómnia possidéntes."
+		]
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomada-i-quadragesimae","feria","feria-ii","responsorium","responsorium-i"]
+		],
+		"incipit":"Ecce nunc tempus acceptábile, ecce nunc dies salútis: commendémus nosmetípsos in multa patiéntia, in jejúniis multis,",
+		"responsum":"Per arma justítiæ virtútis Dei.",
+		"versus":"In ómnibus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia, in jejúniis multis."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Os nostrum patet ad vos o Corínthii, cor nostrum dilatátum est. Non angustiámini in nobis: angustiámini autem in viscéribus vestris: eámdem autem habéntes remuneratiónem, tamquam fíliis dico: dilatámini et vos. Nolíte jugum dúcere cum infidélibus. Quæ enim participátio justítiæ cum iniquitáte? Aut quæ socíetas luci ad ténebras? Quæ autem convéntio Christi ad Bélial? Aut quæ pars fidéli cum infidéli? Qui autem consénsus templo Dei cum idólis? Vos enim estis templum Dei vivi, sicut dicit Deus: Quóniam inhabitábo in illis, et inambulábo inter eos, et ero illórum Deus, et ipsi erunt mihi pópulus."
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-i-quadragesimae","feria","feria-ii","responsorium","responsorium-ii"],
+			["hebdomada-i-quadragesimae","feria","feria-v","responsorium","responsorium-ii"]
+		],
+		"incipit":"In ómnibus exhibeámus nosmetípsos sicut Dei minístros in multa patiéntia:",
+		"responsum":"Ut non vituperétur ministérium nostrum.",
+		"versus":"Ecce nunc tempus acceptábile, ecce nunc dies salútis: commendémus nosmetípsos in multa patiéntia."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"[Cap. 7.]/Replétus sum consolatióne, superabúndo gaúdio in omni tribulatióne nostra. Nam et cum venissémus in Macedóniam, nullam réquiem hábuit caro nostra, sed omnem tribulatiónem passi sumus: foris pugnæ, intus timóres. Sed qui consolátur húmiles, consolátus est nos Deus in advéntu Titi. Non solum autem in advéntu ejus, sed étiam in consolatióne, qua consolátus est in vobis, réferens nobis vestrum desidérium, vestrum fletum, vestram æmulatiónem pro me, ita ut magis gaudérem. Quóniam etsi contristávi vos in epístola, non me pœ\u0301nitet: etsi pœnitéret, videns quod epístola illa (etsi ad horam) vos contristávit; nunc gaúdeo: non quia contristáti estis, sed quia contristáti estis ad pœniténtiam."
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-i-quadragesimae","feria","feria-ii","responsorium","responsorium-iii"],
+			["hebdomada-i-quadragesimae","feria","feria-v","responsorium","responsorium-iii"]
+		],
+		"incipit":"In jejúnio et fletu orábunt sacerdótes, dicéntes:",
+		"responsum":"Parce Dómine, parce pópulo tuo; et ne des hæreditátem tuam in perditiónem.",
+		"versus":"Inter vestíbulum et altáre plorábunt sacerdótes, dicéntes."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"[Sermo 4. de Quadragesima.]/Prædicatúrus vobis, dilectíssimi, sacratíssimum maximúmque jejúnium, quo áptius utar exórdio, quam ut verbis Apóstoli, in quo Christus loquebátur, incípiam, dicámque quod lectum est: Ecce nunc tempus acceptábile: ecce nunc dies salútis? Quamvis enim nulla sint témpora, quæ divínis non sint plena munéribus, et semper nobis ad misericórdiam Dei per ipsíus grátiam præstétur accéssus: nunc tamen ómnium mentes majóri stúdio ad spiritáles proféctus movéri, et amplióri fidúcia opórtet animári, quando ad univérsa pietátis offícia, illíus nos diéi, in quo redémpti sumus, recúrsus invítat: ut excéllens super ómnia passiónis Domínicæ sacraméntum, purificátis et corpóribus et ánimis celebrémus."
+		]
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-i-quadragesimae","feria","feria-iii","responsorium","responsorium-i"],
+			["hebdomada-i-quadragesimae","feria","feria-vi","responsorium","responsorium-i"]
+		],
+		"incipit":"Emendémus in mélius, quæ ignoránter peccávimus: ne súbito præoccupáti die mortis, quærámus spátium pœniténtiæ, et inveníre non possímus:",
+		"responsum":"Atténde Dómine, et miserére, quia peccávimus tibi.",
+		"versus":"Ádjuva nos Deus salutáris noster, et propter honórem nóminis tui Dómine líbera nos."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Debebátur quidem tantis mystériis ita incessábilis devótio, et continuáta reveréntia, ut tales permanerémus in conspéctu Dei, quales nos in ipso Pascháli festo dignum est inveníri. Sed quia hæc fortitúdo paucórum est; et dum carnis fragilitáte austérior observántia relaxátur, dumque per várias actiónes vitæ hujus sollicitúdo disténditur, necésse est de mundáno púlvere étiam religiósa corda sordéscere: magna divínæ institutiónis salubritáte provísum est, ut ad reparándam méntium puritátem quadragínta nobis diérum exercitátio mederétur, in quibus aliórum témporum culpas, et pia ópera redímerent, et jejúnia casta decóquerent."
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-i-quadragesimae","feria","feria-iii","responsorium","responsorium-ii"],
+			["hebdomada-i-quadragesimae","feria","feria-vi","responsorium","responsorium-ii"]
+		],
+		"incipit":"Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, et revertátur ad Dóminum, et miserébitur ejus:",
+		"responsum":"Quia benígnus et miséricors est, et præstábilis super malítia Dóminus Deus noster.",
+		"versus":"Non vult Dóminus mortem peccatóris, sed ut convertátur et vivat."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Ingressúri ígitur, dilectíssimi, dies mýsticos, et purificándis ánimis atque corpóribus sacrátius institútos, præcéptis apostólicis obedíre curémus, emundántes nos ab omni inquinaménto carnis ac spíritus: ut castigátis colluctatiónibus, quæ sunt inter utrámque substántiam, ánimus, quem sub Dei gubernáculis constitútum, córporis sui decet esse rectórem, dominatiónis suæ obtíneat dignitátem: ut némini dantes ullam offensiónem, vituperatiónibus obloquéntium non simus obnóxii. Digna enim ab infidélibus reprehensióne carpémur, et nostro vítio linguæ ímpiæ in injúriam se religiónis armábunt, si jejunántium mores a puritáte perféctæ continéntiæ discrepárint. Non enim in sola abstinéntia cibi stat nostri summa jejúnii: aut fructuóse córpori esca subtráhitur, nisi mens ab iniquitáte revocétur."
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-i-quadragesimae","feria","feria-iii","responsorium","responsorium-iii"],
+			["hebdomada-i-quadragesimae","feria","feria-vi","responsorium","responsorium-iii"]
+		],
+		"incipit":"Paradísi portas apéruit nobis jejúnii tempus: suscipiámus illud orántes, et deprecántes:",
+		"responsum":"Ut in die resurrectiónis cum Dómino gloriémur.",
+		"versus":"In ómnibus exhibeámus nosmetípsos sicut Dei minístros in multa patiéntia."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 4.]/In illo témpore: Ductus est Jesus in desértum a Spíritu, ut tentarétur a diábolo. Et cum jejunásset quadragínta diébus et quadragínta nóctibus, póstea esúriit. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 16. in Evangelia.]/Dubitári a quibúsdam solet, a quo spíritu sit Jesus ductus in desértum, propter hoc quod súbditur: Assúmpsit eum diábolus in sanctam civitátem: et rursum: Assúmpsit eum in montem excélsum valde. Sed vere et absque ulla quæstióne conveniénter accípitur, ut a sancto Spíritu in desértum ductus credátur: ut illuc eum suus Spíritus dúceret, ubi hunc ad tentándum malígnus spíritus inveníret. Sed ecce, cum dícitur Deus homo vel in excélsum montem, vel in sanctam civitátem a diábolo assúmptus, mens réfugit crédere, humánæ hoc audíre aures expavéscunt. Qui tamen non esse incredibília ista cognóscimus, si in illo et ália facta pensámus."
+		]
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-i-quadragesimae","feria","feria-iv","responsorium","responsorium-i"],
+			["hebdomada-i-quadragesimae","feria","sabbatum","responsorium","responsorium-i"]
+		],
+		"incipit":"Scíndite corda vestra, et non vestiménta vestra: et convertímini ad Dóminum Deum vestrum:",
+		"responsum":"Quia benígnus et miséricors est.",
+		"versus":"Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, et revertétur ad Dóminum, et miserébitur ejus."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Certe iniquórum ómnium caput diábolus est: et hujus cápitis membra sunt omnes iníqui. An non diáboli membrum fuit Pilátus? an non diáboli membra Judǽi persequéntes, et mílites crucifigéntes Christum fuérunt? Quid ergo mirum, si se ab illo permísit in montem duci, qui se pértulit étiam a membris illíus crucifígi? Non est ergo indígnum Redemptóri nostro quod tentári vóluit, qui vénerat occídi. Justum quippe erat, ut sic tentatiónes nostras suis tentatiónibus vínceret, sicut mortem nostram vénerat sua morte superáre."
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["hebdomada-i-quadragesimae","feria","feria-iv","responsorium","responsorium-ii"],
+			["hebdomada-i-quadragesimae","feria","sabbatum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Frange esuriénti panem tuum, et egénos vagósque induc in domum tuam:",
+		"responsum":"Tunc erúmpet quasi mane lumen tuum, et anteíbit fáciem tuam justítia tua.",
+		"versus":"Cum víderis nudum, óperi eum, et carnem tuam ne despéxeris."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Sed sciéndum nobis est, quia tribus modis tentátio ágitur: suggestióne, delectatióne, et consénsu. Et nos cum tentámur, plerúmque in delectatiónem, aut étiam in consénsum lábimur: quia de carnis peccáto propagáti, in nobis ipsis étiam gérimus, unde certámina tolerámus. Deus vero, qui in útero Vírginis incarnátus, in mundum sine peccáto vénerat, nihil contradictiónis in semetípso tolerábat. Tentári ergo per suggestiónem pótuit: sed ejus mentem peccáti delectátio non momórdit. Atque ídeo omnis diabólica illa tentátio foris, non intus fuit."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"incipit":"Ángelis suis Deus mandávit de te, ut custódiant te in ómnibus viis tuis:",
+		"responsum":"In mánibus portábunt te, ne umquam offéndas ad lápidem pedem tuum.",
+		"versus":"Super áspidem et basilíscum ambulábis, et conculcábis leónem et dracónem."
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-i"],
@@ -81,6 +213,21 @@
 		"datum":"Ecce nunc tempus * acceptábile, ecce nunc dies salútis: in his ergo diébus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia, in jejúniis, in vigíliis, et in caritáte non ficta."
 	},
 	{
+		"tags":["hebdomada-i-quadragesimae","feria","matutinum","benedictio"],
+		"datum":[["benedictio","evangelica-lectio"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-ii","matutinum","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 25. c.]/In illo témpore: Dixit Jesus discípulis suis: Cum vénerit Fílius hóminis in majestáte sua, et omnes Ángeli cum eo, tunc sedébit super sedem majestátis suæ: et congregabúntur ante eum omnes gentes. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Lib. de Fide et operibus. cap. 15. tom. 4. circa medium.]/Si mandátis non servátis, ad vitam veníri potest per solam fidem, quæ sine opéribus mórtua est: illud deínde quómodo verum erit, quod eis, quos ad sinístram positúrus est, dicet: Ite in ignem ætérnum, qui parátus est diábolo, et ángelis ejus: nec íncrepat, quia in eum non credidérunt; sed quia bona ópera non fecérunt? Nam profécto, ne sibi quisquam de fide, quæ sine opéribus mórtua est, promíttat ætérnam vitam; proptérea omnes gentes segregatúrum se dixit, quæ permíxtæ eísdem páscuis utebántur: ut appáreat, eos illi dictúros: Dómine, quando te vídimus illa et illa patiéntem, et non ministrávimus tibi? qui in eum credíderant, sed bona operári non curáverant, tamquam de ipsa fide mórtua ad vitam pervenirétur ætérnam."
+		],
+		"lectio-ii":"An forte ibunt in ignem ætérnum, qui ópera misericórdiæ non fecérunt: et non ibunt, qui aliéna rapuérunt? vel corrumpéndo in se templum Dei, in seípsos immisericórdes fuérunt: quasi ópera misericórdiæ prosint áliquid sine dilectióne, dicénte Apóstolo: Si distríbuam ómnia mea paupéribus, caritátem autem non hábeam, nihil mihi prodest? Aut díligat quisquam próximum sicut seípsum, qui non díligit seípsum? Qui enim díligit iniquitátem, odit ánimam suam.",
+		"lectio-iii":"Neque illud dici hic póterit, in quo nonnúlli seípsos sedúcunt, ignem ætérnum dictum, non ipsam combustiónem ætérnam. Per ignem quippe, qui ætérnus erit, transitúros arbitrántur eos, quibus propter fidem mórtuam per ignem promíttunt salútem: ut vidélicet ipse ignis ætérnus sit, combústio vero eórum, hoc est, operátio ignis, non sit in eos ætérna: cum et hoc prǽvidens Dóminus, senténtiam suam conclúsit ita dicens: Sic ibunt illi in combustiónem ætérnam, justi autem in vitam ætérnam. Erit ergo ætérna combústio, sicut ignis: et eos in illam itúros Véritas dicit, quorum non fidem, sed bona ópera defuísse declarávit."
+	},
+	{
 		"tags":["hebdomada-i-quadragesimae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11877",
 		"datum":"Veníte benedícti * Patris mei, percípite regnum, quod vobis parátum est ab orígine mundi."
@@ -99,6 +246,17 @@
 		"tags":["hebdomada-i-quadragesimae","vesperae","feria-ii","collecta"],
 		"datum":"Absólve, quǽsumus Dómine, nostrórum víncula peccatórum: * et quidquid pro eis merémur, propitiátus avérte.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-iii","matutinum","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 21. b.]/In illo témpore: Cum intrásset Jesus Jerosólymam, commóta est univérsa cívitas, dicens: Quis est hic? Et réliqua.",
+			"Homilía venerábilis Bedæ Presbýteri.",
+			"[Homil. 7. in Quadrag. tom. 7]/Quod maledicéndo ficum infructuósam per figúram fecit Dóminus, hoc idem mox apértius osténdit, ejiciéndo ímprobos e templo. Neque enim áliquid peccávit arbor, quod esuriénte Dómino poma non hábuit, quorum necdum tempus advénerat: sed peccavére sacerdótes qui in domo Dómini negótia sæculária gerébant, et fructum pietátis, quem debúerant, quemque in eis Dóminus esuriébat, ferre superséderant. Arefécit Dóminus árborem maledícto, ut hómines hæc vidéntes, sive audiéntes, multo magis intellígerent sese divíno condemnándos esse judício, si absque óperum fructu, de plausu tantum sibi religiósi sermónis, velut de sónitu et teguménto blandiréntur viridántium foliórum."
+		],
+		"lectio-ii":"Verum quia non intellexérunt, in ipsos consequénter districtiónem méritæ ultiónis exércuit: et ejécit commércia rerum humanárum de domo illa, in qua divínas tantum res agi, hóstias et oratiónes Deo offérri, verbum Dei legi, audíri, et decantári præcéptum erat. Et quidem credéndum est, quia ea tantum vendi vel emi repérerit in templo, quæ ad ministérium necessária essent ejúsdem templi, juxta hoc quod álias factum légimus, cum idem templum ingrédiens, invénit in eo vendéntes et eméntes oves, et boves, et colúmbas: quia nimírum hæc ómnia non nisi ut offerréntur in domo Dómini, eos qui de longe vénerant, ab indígenis comparáre credéndum est.",
+		"lectio-iii":"Si ergo Dóminus nec ea volébat venúmdari in templo, quæ in templo volébat offérri, vidélicet propter stúdium avarítiæ, sive fraudis, quod próprium solet esse negotiántium fácinus: quanta putas animadversióne puníret, si invenísset ibi áliquos rísui vel vanilóquio vacántes, aut álii cuílibet vítio mancipátos? Si enim ea quæ álibi líbere geri póterant, Dóminus in domo sua temporália negótia geri non pátitur: quanto magis ea quæ nusquam fíeri licet, plus cœléstis iræ meréntur, si in ǽdibus Deo sacrátis agúntur. Verum quia Spíritus sanctus in colúmba super Dóminum appáruit, recte per colúmbas sancti Spíritus charísmata signántur. Qui autem sunt in templo Dei hódie, qui colúmbas vendunt, nisi qui in Ecclésia prétium de impositióne manus accípiunt, per quam vidélicet impositiónem Spíritus sanctus cœ\u0301litus datur?"
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-iii","laudes","antiphona","antiphona-benedictus"],
@@ -121,6 +279,72 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-i-quadragesimae","feria-iv","matutinum","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 12. c.]/In illo témpore: Respondérunt Jesu quidam de scribis et pharisǽis, dicéntes: Magíster, vólumus a te signum vidére. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Lib. 7. in Lucæ cap. 11.]/Judæórum plebe damnáta, Ecclésiæ mystérium evidénter exprímitur, quæ in Ninivítis per pœniténtiam, et in regína Austri per stúdium percipiéndæ sapiéntiæ, de totíus orbis fínibus congregátur, ut pacífici Salamónis verba cognóscat. Regína plane, cujus regnum est indivísum, de divérsis et distántibus pópulis in unum corpus assúrgens."
+		],
+		"lectio-ii":"Ítaque Sacraméntum illud magnum est de Christo, et Ecclésia. Sed tamen hoc majus est, quia illud in figúra ante præcéssit, nunc autem plenum in veritáte mystérium est. Illic enim Sálomon typus, hic autem Christus in suo córpore est. Ex duóbus ígitur constat Ecclésia: ut aut peccáre nésciat, aut peccáre désinat. Pœniténtia enim delíctum ábolet, sapiéntia cavet.",
+		"lectio-iii":"Céterum Jonæ signum, ut typus Domínicæ passiónis, ita étiam grávium, quæ Judǽi commíserint, testificátio peccatórum est. Simul advértere licet et majestátis oráculum, et pietátis indícium. Namque Ninivitárum exémplo et denuntiátur supplícium, et remédium demonstrátur. Unde étiam Judǽi debent non desperáre indulgéntiam, si velint ágere pœniténtiam."
+	},
+	{
+		"tags":[
+			["hebdomada-i-quadragesimae","feria","feria-iv","responsorium","responsorium-iii"],
+			["hebdomada-i-quadragesimae","feria","sabbatum","responsorium","responsorium-iii"]
+		],
+		"incipit":"Abscóndite eleemósynam in sinu paúperum, et ipsa orábit pro vobis ad Dóminum:",
+		"responsum":"Quia sicut aqua exstínguit ignem, ita eleemósyna exstínguit peccátum.",
+		"versus":"Date eleemósynam, et ecce ómnia munda sunt vobis."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","nomen"],
+		"feria-iv":"Feria IV Quatuor Temporum Quadragesimæ",
+		"feria-vi":"Feria VI Quatuor Temporum Quadragesimæ",
+		"sabbatum":"Sabbato Quatuor Temporum Quadragesimæ"
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/12492",
+		"datum":"Generátio * hæc prava et pervérsa signum quærit: et signum non dábitur ei, nisi signum Jonæ prophétæ."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","collecta"],
+		"datum":"Preces nostras, quǽsumus Dómine, cleménter exaúdi: + et contra cuncta nobis adversántia, * déxteram tuæ majestátis exténde.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/12734",
+		"datum":"Sicut fuit Jonas * in ventre ceti tribus diébus et tribus nóctibus, ita erit Fílius hóminis in corde terræ."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-iv","vesperae","collecta"],
+		"datum":"Mentes nostras, quǽsumus Dómine, lúmine tuæ claritátis illústra: * ut vidére possímus quæ agénda sunt; et quæ recta sunt, ágere valeámus.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-v","matutinum","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 15. c.]/In illo témpore: Egréssus Jesus, secéssit in partes Tyri et Sidónis. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"[Lib. 2. Comm. in cap. 15. Matth.]/Scribis et pharisǽis calumniatóribus derelíctis, transgréditur in partes Tyri et Sidónis, ut Týrios Sidoniósque curáret. Múlier autem Chananǽa egréditur de fínibus prístinis, ut clamans fíliæ ímpetret sanitátem. Obsérva quod in quintodécimo loco fília Chananǽæ sanétur. Miserére mei Dómine, fili David. Inde novit vocáre fílium David, quia egréssa jam fúerat de fínibus suis, et errórem Tyriórum ac Sidoniórum loci ac fídei commutatióne dimíserat."
+		]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria","feria-v","responsorium","responsorium-i"],
+		"incipit":"Tribulárer, si nescírem misericórdias tuas Dómine: tu dixísti, Nolo mortem peccatóris, sed ut magis convertátur et vivat:",
+		"responsum":"Qui Chananǽam et publicánum vocásti ad pœniténtiam.",
+		"versus":"Secúndum multitúdinem dolórum meórum in corde meo, consolatiónes tuæ lætificavérunt ánimam meam."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-v","matutinum","lectio"],
+		"lectio-ii":"Fília mea male a dæmónio vexátur. Ego fíliam Chananǽæ puto ánimas esse credéntium, quæ male a dæmónio vexabántur, ignorántes creatórem, et adorántes lápidem. Qui non respóndit ei verbum: non de supérbia pharisáica, nec de scribárum supercílio: sed ne ipse senténtiæ suæ viderétur esse contrárius, per quam jússerat: In viam Géntium ne abiéritis, et in civitátes Samaritanórum ne intravéritis. Nolébat enim occasiónem calumniatóribus dare: perfectámque salútem Géntium passiónis et resurrectiónis témpori reservábat.",
+		"lectio-iii":"Et accedéntes discípuli ejus rogábant eum, dicéntes: Dimítte eam, quia clamat post nos. Discípuli illo adhuc témpore mystéria Dómini nesciéntes, vel misericórdia commóti, rogábant pro Chananǽa mulíere, quam alter Evangelísta Syrophœníssam appéllat: vel importunitáte ejus carére cupiéntes, quia non ut cleméntem, sed ut durum médicum crébrius inclamáret. Ipse autem respóndens ait: Non sum missus, nisi ad oves quæ periérunt domus Ísraël. Non quo et ad Gentes non missus sit, sed quo primum missus sit ad Ísraël: ut illis non recipiéntibus Evangélium, justa fíeret ad Gentes transmigrátio."
+	},
+	{
 		"tags":["hebdomada-i-quadragesimae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12575",
 		"datum":"Egréssus Jesus * secéssit in partes Tyri et Sidónis: et ecce múlier Chananǽa a fínibus illis egréssa, clamábat dicens: Miserére mei, fili David."
@@ -138,6 +362,56 @@
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-v","vesperae","collecta"],
 		"datum":"Da, quǽsumus Dómine, pópulis christiánis, et quæ profiténtur agnóscere: * et cœléste munus dilígere, quod frequéntant.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","feria-vi","matutinum","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 5.]/In illo témpore: Erat dies festus Judæórum, et ascéndit Jesus Jerosólymam. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tractatus 17. in Joannem, post init.]/Videámus quid volúerit significáre in illo uno, quem étiam ipse servans unitátis mystérium, de tot languéntibus unum sanáre dignátus est. Invénit in annis ejus númerum quemdam languóris. Trigínta et octo annos habébat in infirmitáte. Hic númerus quómodo magis ad languórem pertíneat, quam ad sanitátem, paulo diligéntius exponéndum est. Inténtos vos volo: áderit Dóminus, ut cóngrue loquar, et sufficiénter audiátis. Quadragenárius númerus sacrátus nobis in quadam perfectióne commendátur: notum esse árbitror caritáti vestræ: testántur sæpíssime divínæ Scriptúræ: jejúnium hoc número consecrátum esse, bene nostis. Nam et Móyses quadragínta diébus jejunávit, et Elías tótidem: et ipse Dóminus noster et Salvátor Jesus Christus hunc jejúnii númerum implévit. Per Móysen significátur Lex, per Elíam significántur Prophétæ, per Dóminum significátur Evangélium. Ídeo in illo monte tres apparuérunt, ubi se discípulis osténdit in claritáte vultus et vestis suæ: appáruit enim médius inter Móysen et Elíam, tamquam Evangélium testimónium habéret a lege et Prophétis."
+		],
+		"lectio-ii":"Sive ergo in lege, sive in Prophétis, sive in Evangélio, quadragenárius númerus nobis in jejúnio commendátur. Jejúnium autem magnum et generále est, abstinére ab iniquitátibus et illícitis voluptátibus sǽculi, quod est perféctum jejúnium: ut abnegántes impietátem et sæculáres cupiditátes, temperánter et juste et pie vivámus in hoc sǽculo. Huic jejúnio quam mercédem addit Apóstolus? Séquitur, et dicit: Exspectántes illam beátam spem, et manifestatiónem glóriæ beáti Dei et Salvatóris nostri Jesu Christi. In hoc ergo sǽculo quasi quadragésimam abstinéntiæ celebrámus, cum bene vívimus, cum ab iniquitátibus et ab illícitis voluptátibus abstinémus: sed quia hæc abstinéntia sine mercéde non erit, exspectámus beátam illam spem, et revelatiónem glóriæ magni Dei, et Salvatóris nostri Jesu Christi. In illa spe, cum fúerit de spe facta res, acceptúri sumus mercédem denárium. Ipsa enim merces rédditur operáriis in vínea laborántibus, secúndum Evangélium, quod vos credo reminísci: neque enim ómnia commemoránda sunt tamquam rúdibus et imperítis. Denárius ergo, qui accépit nomen a número decem, rédditur, et conjúnctus quadragenário fit quinquagenárius: unde cum labóre celebrámus Quadragésimam ante Pascha; cum lætítia vero, tamquam accépta mercéde, Quinquagésimam post Pascha.",
+		"lectio-iii":"Mementóte quod proposúerim númerum trigintaócto annórum in illo lánguido. Volo expónere, quare númerus ille trigésimus et octávus, languóris sit pótius quam sanitátis. Ergo, ut dicébam, cáritas implet legem: ad plenitúdinem legis in ómnibus opéribus pértinet quadragenárius númerus. In caritáte autem duo præcépta nobis commendántur: Díliges Dóminum Deum tuum ex toto corde tuo, et ex tota ánima tua, et ex tota mente tua: et díliges próximum tuum sicut teípsum. In his duóbus præcéptis tota lex pendet, et Prophétæ. Mérito et illa vídua omnes facultátes suas, duo minúta misit in dona Dei: mérito et pro illo lánguido a latrónibus sauciáto stabulárius duos nummos accépit, unde sanarétur: mérito apud Samaritános bíduum fecit Jesus, ut eos caritáte firmáret. Binário ergo isto número cum áliquid boni significátur, máxime bipertíta cáritas commendátur. Si ergo quadragenárius númerus habet perfectiónem legis, et lex non implétur nisi in gémino præcépto caritátis: quid miráris, quia languébat, qui ad quadragínta, duo minus habébat?"
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/2045",
+		"datum":"Ángelus Dómini * descendébat de cœlo, et movebátur aqua, et sanabátur unus."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","collecta"],
+		"datum":"Esto Dómine propítius plebi tuæ: + et quam tibi facis esse devótam, * benígno réfove miserátus auxílio.",
+		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2543",
+		"datum":"Qui me sanum fecit, * ille mihi præcépit: Tolle grabátum tuum, et ámbula in pace."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","feria-vi","vesperae","collecta"],
+		"datum":"Exaúdi nos miséricors Deus: * et méntibus nostris grátiæ tuæ lumen osténde."
+	},
+	{
+		"tags":["hebdomada-i-quadragesimae","sabbatum","matutinum","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 17.]/In illo témpore: Assúmpsit Jesus Petrum, et Jacóbum, et Joánnem fratrem ejus, et duxit illos in montem excélsum seórsum: et transfigurátus est ante eos. Et réliqua.",
+			"Homilía sancti Leónis Papæ.",
+			"[Homilia de Transfiguratione Domini.]/Evangélica léctio, dilectíssimi, quæ per aures córporis interiórem méntium nostrárum pulsávit audítum, ad magni sacraménti nos intelligéntiam vocat: quam aspiránte grátia Dei, facílius assequémur, si consideratiónem nostram ad ea, quæ paulo supérius sunt narráta, referámus. Salvátor enim humáni géneris Jesus Christus, condens eam fidem, quæ et ímpios ad justítiam, et mórtuos révocat ad vitam, ad hoc discípulos suos doctrínæ mónitis, et óperum miráculis imbuébat, ut idem Christus et Unigénitus Dei, et hóminis Fílius crederétur. Nam unum horum sine áltero non próderat ad salútem: et æquális erat perículi, Dóminum Jesum Christum aut Deum tantúmmodo sine hómine, aut sine Deo solum hóminem credidísse; cum utrúmque esset páriter confiténdum; quia sicut Deo vera humánitas, ita hómini ínerat vera divínitas."
+		],
+		"lectio-ii":"Ad confirmándam ergo hujus fídei salubérrimam cognitiónem interrogáverat discípulos suos Dóminus, inter divérsas aliórum opiniónes quid ipsi de eo créderent, quidve sentírent. Ubi Petrus Apóstolus, per revelatiónem summi Patris corpórea súperans, et humána transcéndens, vidit mentis óculis Fílium Dei vivi, et conféssus est glóriam Deitátis; quia non ad solam respéxit substántiam carnis et sánguinis: tantúmque in hac fídei sublimitáte complácuit, ut beatitúdinis felicitáte donátus, sacram inviolábilis petræ accíperet firmitátem: super quam fundáta Ecclésia, portis ínferi et mortis légibus prævaléret: nec in solvéndis aut ligándis quorumcúmque causis, áliud ratum esset in cœlis, quam quod Petri sedísset arbítrio.",
+		"lectio-iii":"Hæc autem, dilectíssimi, laudátæ intelligéntiæ celsitúdo instruénda erat de inferióris substántiæ sacraménto: ne apostólica fides ad glóriam confiténdæ in Christo Deitátis evécta, infirmitátis nostræ receptiónem indígnam impassíbili Deo atque incóngruam judicáret: et ita jam in Christo humánam créderet glorificátam esse natúram, ut nec supplício posset áffici, nec morte dissólvi. Et ídeo dicénte Dómino, quod oportéret eum ire Jerosólymam, et multa pati a senióribus et scribis, ac princípibus sacerdótum, et occídi, et tértia die resúrgere: cum beátus Petrus, qui supérno illustrátus lúmine, de ardentíssima Fílii Dei confessióne fervébat, contumélias illusiónum et crudelíssimæ mortis oppróbrium religióso, ut putábat, et líbero fastídio respuísset; benígna a Jesu increpatióne corréptus, et ad cupiditátem participándæ cum eo passiónis animátus est."
+	},
+	{
+		"tags":["quatuor-tempora-quadragesimae","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["hebdomada-ii-quadragesimae","dominica","antiphona"]]
+	},
+	{
+		"tags":["quatuor-tempore-quadragesimae","sabbatum","collecta"],
+		"datum":"Pópulum tuum, quǽsumus Dómine, propítius réspice: * atque ab eo flagélla tuæ iracúndiæ cleménter avérte.",
 		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]
