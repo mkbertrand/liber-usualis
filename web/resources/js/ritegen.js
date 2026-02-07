@@ -313,11 +313,11 @@ function render(data, chant) {
 						} else {
 							header = makeheader('Hymnus.');
 						}
-					} else if (uniquelyhas('antiphona-magnificat') && !data.tags.includes('repetita') && !parenttags.includes('commemorationes')) {
+					} else if (uniquelyhas('antiphona-magnificat') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes')) {
 						header = makeheader('Canticum B. Mariæ Virg.');
-					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.tags.includes('repetita')) {
+					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('repetita')) {
 						header = makeheader('Canticum Simeonis.');
-					} else if (uniquelyhas('antiphona-benedictus') && !data.tags.includes('repetita') && !parenttags.includes('commemorationes')) {
+					} else if (uniquelyhas('antiphona-benedictus') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes')) {
 						header = makeheader('Canticum Zachariæ.');
 					} else if (uniquelyhas('confiteor') && parenttags.includes('completorium')) {
 						header = makeheader('Confessio.');
@@ -409,8 +409,6 @@ function render(data, chant) {
 							}
 							return `<p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 						}
-
-
 
 						// For the first reading from a Homily
 						if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
