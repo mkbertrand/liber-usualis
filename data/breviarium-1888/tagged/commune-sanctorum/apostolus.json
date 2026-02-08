@@ -233,7 +233,8 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"nocturnale/APEXN3A1",
-		"datum":"Exaltabúntur * córnua justi, allelúja."
+		"datum":"Exaltabúntur * córnua justi, allelúja.",
+		"in-tempore-septuagesimae":"Exaltabúntur * córnua justi."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","psalmus-i"],
@@ -242,7 +243,8 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
 		"src":"nocturnale/APEXN3Aa",
-		"datum":"Lux orta est * justo, allelúja, rectis corde lætítia, allelúja."
+		"datum":"Lux orta est * justo, allelúja, rectis corde lætítia, allelúja.",
+		"in-tempore-septuagesimae":"Lux orta est * justo, rectis corde lætítia."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","psalmus-ii"],
@@ -251,7 +253,8 @@
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
 		"src":"nocturnale/APEXN3A3",
-		"datum":"Custodiébant * testimónia ejus, et præcépta ejus, allelúja."
+		"datum":"Custodiébant * testimónia ejus, et præcépta ejus, allelúja.",
+		"in-tempore-septuagesimae":"Custodiébant * testimónia ejus, et præcépta ejus."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","psalmus-iii"],
@@ -381,7 +384,8 @@
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1915",
-		"datum":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum, allelúja."
+		"datum":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum, allelúja.",
+		"in-tempore-septuagesimae":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum."
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","lectio","alia-lectio"],

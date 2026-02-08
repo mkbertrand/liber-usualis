@@ -5,9 +5,7 @@
 			["prex-duplex"],
 			["deus-in-adjutorium","ferialis"],
 			["nona","hymnus"],
-			["nona","antiphona","antiphona-v","intonata"],
 			["nona","psalmi"],
-			["nona","antiphona","antiphona-v","repetita"],
 			["nona","capitulum"],
 			["nona","dg-capituli"],
 			["nona","formula","responsorium-breve"],
@@ -40,9 +38,11 @@
 	{
 		"tags":["nona","psalmi"],
 		"datum":[
+			["nona","antiphona","antiphona-v","intonata"],
 			["/psalmi/psalmus-cxviii:129-144,gloria"],
 			["/psalmi/psalmus-cxviii:145-160,gloria"],
-			["/psalmi/psalmus-cxviii:161-176,gloria"]
+			["/psalmi/psalmus-cxviii:161-176,gloria"],
+			["nona","antiphona","antiphona-v","repetita"]
 		]
 	},
 	{

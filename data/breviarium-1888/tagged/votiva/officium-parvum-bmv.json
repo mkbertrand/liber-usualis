@@ -44,7 +44,6 @@
 			["officium-parvum-bmv","completorium","formula","formula-lectionis"],
 			["officium-parvum-bmv","completorium","adjutorium-nostrum"],
 			["officium-parvum-bmv","completorium","confiteor"],
-			["officium-parvum-bmv","completorium","antiphona"],
 			["officium-parvum-bmv","completorium","responsorium-breve","formula"]
 		],
 		"datum":""
@@ -187,9 +186,11 @@
 	{
 		"tags":["officium-parvum-bmv","prima","psalmi"],
 		"datum":[
+			["prima","antiphona","antiphona-i","intonata"],
 			["/psalmi/psalmus-liii,gloria"],
 			["/psalmi/psalmus-lxxxiv,gloria"],
-			["/psalmi/psalmus-cxvi,gloria"]
+			["/psalmi/psalmus-cxvi,gloria"],
+			["prima","antiphona","antiphona-i","repetita"]
 		]
 	},
 	{
@@ -219,9 +220,11 @@
 	{
 		"tags":["officium-parvum-bmv","tertia","psalmi"],
 		"datum":[
+			["tertia","antiphona","antiphona-ii","intonata"],
 			["/psalmi/psalmus-cxix,gloria"],
 			["/psalmi/psalmus-cxx,gloria"],
-			["/psalmi/psalmus-cxxi,gloria"]
+			["/psalmi/psalmus-cxxi,gloria"],
+			["tertia","antiphona","antiphona-ii","repetita"]
 		]
 	},
 	{
@@ -240,9 +243,11 @@
 	{
 		"tags":["officium-parvum-bmv","sexta","psalmi"],
 		"datum":[
+			["sexta","antiphona","antiphona-iii","intonata"],
 			["/psalmi/psalmus-cxxii,gloria"],
 			["/psalmi/psalmus-cxxiii,gloria"],
-			["/psalmi/psalmus-cxxiv,gloria"]
+			["/psalmi/psalmus-cxxiv,gloria"],
+			["sexta","antiphona","antiphona-iii","repetita"]
 		]
 	},
 	{
@@ -261,9 +266,11 @@
 	{
 		"tags":["officium-parvum-bmv","nona","psalmi"],
 		"datum":[
+			["nona","antiphona","antiphona-v","intonata"],
 			["/psalmi/psalmus-cxxv,gloria"],
 			["/psalmi/psalmus-cxxvi,gloria"],
-			["/psalmi/psalmus-cxxvii,gloria"]
+			["/psalmi/psalmus-cxxvii,gloria"],
+			["nona","antiphona","antiphona-v","repetita"]
 		]
 	},
 	{

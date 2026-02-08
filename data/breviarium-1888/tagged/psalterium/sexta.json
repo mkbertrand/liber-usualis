@@ -5,9 +5,7 @@
 			["prex-duplex"],
 			["deus-in-adjutorium","ferialis"],
 			["sexta","hymnus"],
-			["sexta","antiphona","antiphona-iii","intonata"],
 			["sexta","psalmi"],
-			["sexta","antiphona","antiphona-iii","repetita"],
 			["sexta","capitulum"],
 			["sexta","dg-capituli"],
 			["sexta","formula","responsorium-breve"],
@@ -40,9 +38,11 @@
 	{
 		"tags":["sexta","psalmi"],
 		"datum":[
+			["sexta","antiphona","antiphona-iii","intonata"],
 			["/psalmi/psalmus-cxviii:81-96,gloria"],
 			["/psalmi/psalmus-cxviii:97-112,gloria"],
-			["/psalmi/psalmus-cxviii:113-128,gloria"]
+			["/psalmi/psalmus-cxviii:113-128,gloria"],
+			["sexta","antiphona","antiphona-iii","repetita"]
 		]
 	},
 	{

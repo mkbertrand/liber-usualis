@@ -321,8 +321,9 @@
 .large-title {
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
+	font-weight: normal;
 	color: red;
-	font-size: 24px;
+	font-size: 26px;
 	text-align: center;
 	margin-bottom: 0;
 }
@@ -330,6 +331,7 @@
 .large-subtitle {
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
+	font-weight: normal;
 	color: red;
 	font-size: 18px;
 	text-align: center;
@@ -341,6 +343,7 @@
 .small-title {
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
+	font-weight: normal;
 	color: red;
 	font-size: 22px;
 	text-align: center;
@@ -350,10 +353,20 @@
 .section-header {
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
+	font-weight: normal;
 	color: red;
 	font-size: 22px;
 	text-align: center;
 	margin: 21px 0 0 0;
+}
+
+.item-header {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
 }
 
 .rite-text {
@@ -389,22 +402,6 @@
 .rite-text-rubric-above-paragraph {
 	margin-top: 7px;
 	margin-bottom: -7px;
-}
-
-.item-header {
-	font-variant: small-caps;
-	color: red;
-	font-size: 20px;
-	text-align: center;
-	margin: 0;
-}
-
-.psalm-subheader {
-	font-variant: small-caps;
-	color: red;
-	font-size: 18px;
-	text-align: center;
-	margin: 0;
 }
 
 .aperi-domine, .sacrosanctae {
