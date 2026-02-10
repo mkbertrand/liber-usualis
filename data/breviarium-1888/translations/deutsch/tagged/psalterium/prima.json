@@ -13,13 +13,53 @@
 		"versus":"Der Du sitzest zur Rechten des Vaters."
 	},
 	{
+		"tags":["prima","in-tempore-adventus","responsorium-breve"],
+		"incipit":"Christus, Du Sohn des lebendigen Gottes,",
+		"responsum":"Erbarme Dich unser.",
+		"versus":"Der Du kommen wirst in die Welt."
+	},
+	{
+		"tags":["prima","in-tempore-paschali","responsorium-breve"],
+		"incipit":"Christus, Du Sohn des lebendigen Gottes",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Der Du auferstanden von den Toten."
+	},
+	{
+		"tags":[
+			["prima","tempus-mariae","responsorium-breve","versus"],
+			["prima","in-tempore-nativitatis","responsorium-breve","versus"],
+			["prima","nomen-jesu","responsorium-breve","versus"],
+			["prima","infra-octavam-corporis-christi","responsorium-breve","versus"]
+		],
+		"datum":"Der Du geboren bist von der Jungfrau Maria."
+	},
+	{
+		"tags":[
+			["prima","per-octavam-epiphaniae","responsorium-breve","versus"],
+			["prima","transfiguratio","responsorium-breve","versus"]
+		],
+		"datum":"Der Du heute erschienst."
+	},
+	{
+		"tags":["prima","in-tempore-ascensionis","responsorium-breve","versus"],
+		"datum":"Der Du auffährst zum Himmel."
+	},
+	{
+		"tags":["prima","cor-jesus","responsorium-breve","versus"],
+		"datum":"Der Du littest für uns."
+	},
+	{
+		"tags":["prima","pentecostes","responsorium-breve","versus"],
+		"datum":"Der Du sitzest zur Rechten des Vaters."
+	},
+	{
 		"tags":["prima","versiculus"],
 		"datum":["V. Stehe auf, Christus, und hilf uns.","R. Und befreie uns um Deines Namens willen."]
 	},
 	{
 		"tags":["prima","preces"],
 		"datum":[
-			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			"",
 			"",
 			"",
 			"V. Und ich rufe zu Dir, o Herr.",
