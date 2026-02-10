@@ -1,0 +1,76 @@
+[
+	{
+		"tags":["officium-capituli","ritus"],
+		"datum":[
+			["martyrologium"],
+			"V. Kostbar in den Augen des Herrn",
+			"R. Ist der Tod Seiner Heiligen.",
+			{
+				"tags":["oratio-sanctae-mariae"],
+				"datum":[
+					"Heilige Maria, und alle Heiligen mögen fürbitten für uns beim Herrn, + damit uns Seine Hilfe und Rettung verdient ist, * Der lebt und herrscht von Ewigkeit zu Ewigkeit.",
+					"R. Amen."
+				]
+			},
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"",
+			"",	
+			"",
+			"V. Schaue herab auf Deine Diener, Herr, und auf Deine Werke, * und lenke Deine Kinder.",
+			"R. Und der Glanz des Herrn, unseres Gottes, sei über uns, + und lenke die Werke unserer Hände über uns, * und das Werk unserer Hände lenke.",
+			"",
+			{
+				"tags":["oratio-dirigere"],
+				"datum":[
+				"Lasset uns beten.",
+				"Beherrsche und heilige, leite und lenke, Herr Gott, König des Himmels und der Erde, heute unser Herz und Leib, + unsere Gedanken, Worte und Werke nach Deinen Gesetze, und nach der Vorschrift deines Gebotes, * damit wir jetzt, und in Ewigkeit, mit Deiner Hilfe selig und frei werden mögen, Heiland der Welt:",
+				"Der du lebst und herrscht von Ewigkeit zu Ewigkeit.",
+				"R. Amen."
+				]
+			},
+			["officium-capituli","formula","lectio-brevis","formula-lectionis"],
+			["adjutorium-nostrum"],
+			"V. Benedícite.",
+			"R. Deus.",
+			"Dóminus ✠ nos benedícat, et ab omni malo deféndat, et ad vitam perdúcat ætérnam: et fidélium ánimæ per misericórdiam Dei requiéscant in pace.",
+			"Amen.",
+			["pater-noster-secreta-post-officium"]
+		]
+	},
+	{
+		"tags":["officium-capituli","benedictio"],
+		"datum":"Dies et actus nostros * in sua pace dispónat Dóminus omnípotens."
+	},
+	{
+		"tags":[
+			["officium-capituli","per-annum","temporale","lectio-brevis","lectio"],
+			["officium-capituli","in-tempore-septuagesimae","temporale","lectio-brevis","lectio"]
+		],
+		"datum":"[II. Thess. 3. b.]/Dóminus autem dírigat corda et córpora nostra in caritáte Dei, * et patiéntia Christi."
+	},
+	{
+		"tags":["officium-capituli","in-tempore-adventus","temporale","lectio-brevis","lectio"],
+		"datum":"[Isaiæ 33.]/Dómine miserére nostri: te enim exspectávimus: + esto bráchium nostrum in mane, * et salus nostra in témpore tribulatiónis."
+	},
+	{
+		"tags":["officium-capituli","in-tempore-quadragesimae","temporale","lectio-brevis","lectio"],
+		"datum":"[Isaiæ 55. b.]/Quǽrite Dóminum, dum inveníri potest: * invocáte eum, dum prope est."
+	},
+	{
+		"tags":["officium-capituli","in-tempore-passionis","temporale","lectio-brevis","lectio"],
+		"datum":"[Isaiæ 50. c.]/Fáciem meam non avérti ab increpántibus et conspuéntibus in me. + Dóminus Deus auxiliátor meus, * ídeo non sum confúsus."
+	},
+	{
+		"tags":["officium-capituli","in-tempore-paschali","temporale","lectio-brevis","lectio"],
+		"datum":"[Coloss. 3.]/Si consurrexístis cum Christo, + quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens: * quæ sursum sunt sápite, non quæ super terram."
+	},
+	{
+		"tags":["officium-capituli","lectio-brevis","lectio"],
+		"datum":[["nona","capitulum"]]
+	}
+]
