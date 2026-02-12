@@ -153,7 +153,8 @@ def rite():
 		if 'select' in parameters:
 			if parameters['select'] == 'officium-parvum-bmv':
 				votive = list(filter(lambda i: 'votiva' in i, tags))[0]
-				tags = [votive | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}, votive | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
+				ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
+				tags = [ofp - {'omissum'} | {'primarium'}, votive | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
 			elif parameters['select'] == 'officium-defunctorum':
 				def votivize(i):
 					if 'officium-defunctorum' in i:
