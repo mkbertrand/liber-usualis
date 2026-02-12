@@ -204,7 +204,12 @@
 	},
 	{
 		"occurrence":["tempus"],
+		"excluded":["post-nativitatem"],
 		"tags":["officium-parvum-bmv","maria"]
+	},
+	{
+		"occurrence":["post-nativitatem"],
+		"tags":["officium-parvum-bmv","post-nativitatem","maria"]
 	},
 	{
 		"occurrence":[
