@@ -309,6 +309,11 @@
 				<div id="project-logo">
 					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
+				<select id="locale-selector" @change="window.location.assign('/' + $event.target.value + window.location.pathname.slice(3) + window.location.search)">
+					<option value="en" {{!'selected' if locale == 'en' else ''}}>EN</option>
+					<option value="de" {{!'selected' if locale == 'de' else ''}}>DE</option>
+					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
+				</select>
 				<button id="options-gear-wrapper" @click="optionspanel = !optionspanel">
 					<img id="options-gear" src="/resources/svg/settings-outline.svg" />
 				</button>
@@ -319,11 +324,6 @@
 				<div x-cloak id="options-panel-background" x-show="optionspanel">
 					<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
-						<div class="locale-select-container">
-							<button class="options-panel-button locale-select-button {{!'options-panel-button-on' if locale == 'en' else 'options-panel-button-off'}}" @click="window.location.assign('/en' + window.location.pathname.slice(3) + window.location.search)">EN</button>
-							<button class="options-panel-button locale-select-button {{!'options-panel-button-on' if locale == 'de' else 'options-panel-button-off'}}" @click="window.location.assign('/de' + window.location.pathname.slice(3) + window.location.search)">DE</button>
-							<button class="options-panel-button locale-select-button {{!'options-panel-button-on' if locale == 'la' else 'options-panel-button-off'}}" @click="window.location.assign('/la' + window.location.pathname.slice(3) + window.location.search)">LA</button>
-						</div>
 						% if locale != 'la':
 						<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
 						% end
