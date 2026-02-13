@@ -100,6 +100,12 @@
 		]
 	},
 	{
+		"include":["suffragium","maria"],
+		"response":[
+			{"include":["maria"],"exclude":["officium-parvum-bmv"],"response":"dele","target":0}
+		]
+	},
+	{
 		"include":["suffragium"],
 		"response":[
 			{"include":["duplex-i-classis"],"response":"dele","target":0},
@@ -521,7 +527,7 @@
 	{
 		"include":["officium-parvum-bmv","ii-vesperae"],
 		"response":[
-			{"include":["officium-parvum-bmv","i-vesperae"],"respose":"dele","target":0}
+			{"include":["officium-parvum-bmv","i-vesperae"],"response":"dele","target":0}
 		]
 	},
 	{
