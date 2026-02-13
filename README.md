@@ -20,10 +20,11 @@ pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 Note: diff-match-patch is only necessary for test_breviarium.
 ### Running
 
-To run the server (by default on localhost:8080, frontend.py is run as follows:
+To run the server (by default on localhost:8080, the server is run as follows:
 
 ```bash
-./frontend.py
+export LOG_PATH="logs.log";
+python ./server.py -o;
 ```
 Note: for full functionality, franciscan-chant-closet must be run at the same time and must be able to bind to port 40081.
 ## Author

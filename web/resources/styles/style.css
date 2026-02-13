@@ -30,6 +30,26 @@ body {
 	z-index: 2;
 }
 
+#locale-selector {
+	position: absolute;
+	top: 18px;
+	right: 60px;
+	height: 35px;
+	font-family: times;
+	font-size: 16px;
+	background-color: var(--button-color);
+	border-radius: 7px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	padding: 0 10px;
+	margin-right: 7px;
+}
+
+#locale-selector:hover {
+	background-color: var(--button-color-hover);
+}
+
 #project-logo {
 	width: 100%;
 	height: 100%;
