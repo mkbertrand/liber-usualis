@@ -370,5 +370,41 @@
 	{
 		"tags":["officium-parvum-bmv","in-tempore-adventus","sexta","capitulum"],
 		"datum":[["annuntiatio-bmv","sexta","capitulum"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","post-nativitatem","antiphona"],
+		"datum":[["circumcisio","antiphona"]],
+		"in-tempore-septuagesimae":[["circumcisio","in-tempore-septuagesimae","antiphona"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","post-nativitatem","vesperae","antiphona","antiphona-magnificat"],
+			["officium-parvum-bmv","post-nativitatem","completorium","antiphona","antiphona-nunc-dimittis"]
+		],
+		"datum":[["circumcisio","ii-vesperae","vesperae","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":["officium-parvum-bmv","post-nativitatem","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["circumcisio"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","post-nativitatem","collecta"],
+			["officium-parvum-bmv","post-nativitatem","completorium","collecta"],
+			["officium-parvum-bmv","post-nativitatem","laudes","collecta"],
+			["officium-parvum-bmv","post-nativitatem","prima","collecta"],
+			["officium-parvum-bmv","post-nativitatem","tertia","collecta"],
+			["officium-parvum-bmv","post-nativitatem","nona","collecta"]
+		],
+		"datum":[["circumcisio","laudes","collecta"]],
+		"terminatio":[["circumcisio","laudes","collecta","terminatio"]]
+	},
+	{
+		"tags":[
+			["officium-parvum-bmv","in-tempore-paschali","vesperae","antiphona","antiphona-magnificat"],
+			["officium-parvum-bmv","in-tempore-paschali","completorium","antiphona","antiphona-nunc-dimittis"],
+			["officium-parvum-bmv","in-tempore-paschali","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["bmv-sabbatum","laudes","antiphona","antiphona-benedictus","in-tempore-paschali"]]
 	}
 ]

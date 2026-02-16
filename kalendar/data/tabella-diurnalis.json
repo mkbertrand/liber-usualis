@@ -99,7 +99,8 @@
 			{"include":["duplex-majus"],"target":0,"adde":"omissum"},
 			{"include":["duplex-minus"],"target":0,"adde":"omissum"},
 			{"include":["semiduplex"],"target":0,"adde":"omissum"},
-			{"include":["maria"],"exclude":["suffragium"],"target":0,"adde":"omissum"}
+			{"include":["maria"],"exclude":["suffragium"],"target":0,"adde":"omissum"},
+			{"include":["hebdomada-sancta"],"target":0,"adde":"omissum"}
 		]
 	},
 	{
@@ -194,5 +195,11 @@
 	{
 		"include":["epiphania","infra-octavam"],
 		"remove":"habens-commemorationem-matutini"
+	},
+	{
+		"include":["suffragium","maria"],
+		"response":[
+			{"include":["maria"],"exclude":["officium-parvum-bmv"],"response":"dele","target":0}
+		]
 	}
 ]

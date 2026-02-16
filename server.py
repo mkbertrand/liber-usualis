@@ -26,6 +26,8 @@ import prioritizer
 import kalendar.datamanage
 import kalendar.display as display
 
+LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
+
 root = 'breviarium-1888'
 
 def localehunt(acceptlanguage):
@@ -151,7 +153,8 @@ def rite():
 		if 'select' in parameters:
 			if parameters['select'] == 'officium-parvum-bmv':
 				votive = list(filter(lambda i: 'votiva' in i, tags))[0]
-				tags = [votive | {'officium-parvum-bmv', 'maria', 'semiduplex', 'primarium'}, votive | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
+				ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
+				tags = [ofp - {'omissum'} | {'primarium'}, votive | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
 			elif parameters['select'] == 'officium-defunctorum':
 				def votivize(i):
 					if 'officium-defunctorum' in i:
@@ -278,6 +281,6 @@ if args.output:
 else:
 	from requestlogger import WSGILogger, ApacheFormatter
 	waitress.serve(WSGILogger(
-		bottle.default_app(), [TimedRotatingFileHandler('../logs/internal_requests.log', 'd', 7)],
+		bottle.default_app(), [TimedRotatingFileHandler(LOG_PATH, 'd', 7)],
 		ApacheFormatter(), propagate=False
 	))

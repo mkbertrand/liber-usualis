@@ -3,28 +3,66 @@
 
     inputs = {
         determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
-        nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2411.0";
+        nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2511.0";
         flake-utils.url = "github:numtide/flake-utils";
         nixos-generators = {
             url = "github:nix-community/nixos-generators";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        pyproject-nix = {
+            url = "github:pyproject-nix/pyproject.nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+        uv2nix = {
+            url = "github:pyproject-nix/uv2nix";
+            inputs.pyproject-nix.follows = "pyproject-nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+        pyproject-build-systems = {
+            url = "github:pyproject-nix/build-system-pkgs";
+            inputs.pyproject-nix.follows = "pyproject-nix";
+            inputs.uv2nix.follows = "uv2nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
-    outputs = { self, nixpkgs, flake-utils, determinate, nixos-generators,... }:
+    outputs = { self, nixpkgs, flake-utils, determinate, nixos-generators, pyproject-nix, uv2nix, pyproject-build-systems, ... }:
         flake-utils.lib.eachDefaultSystem (system:
             let
                 pkgs = import nixpkgs {
                     inherit system;
                 };
 
-                python_env = pkgs.python3.withPackages (ps: with ps; [
-                    bottle
-                    pytest
-                    diff-match-patch
-                    requests
-                    black
-                ]);
+                # uv2nix workspace
+                workspace = uv2nix.lib.workspace.loadWorkspace { workspaceRoot = ./.; };
+
+                # Create package overlay from workspace
+                overlay = workspace.mkPyprojectOverlay {
+                    sourcePreference = "wheel";
+                };
+
+                # Base Python package set from pyproject.nix
+                python = pkgs.python313;
+                pythonSet = (pkgs.callPackage pyproject-nix.build.packages {
+                    inherit python;
+                }).overrideScope (
+                    pkgs.lib.composeManyExtensions [
+                        pyproject-build-systems.overlays.default
+                        overlay
+                        # Override for packages with missing build dependencies
+                        (final: prev: {
+                            wsgi-request-logger = prev.wsgi-request-logger.overrideAttrs (old: {
+                                nativeBuildInputs = (old.nativeBuildInputs or []) ++ [
+                                    final.setuptools
+                                ];
+                            });
+                        })
+                    ]
+                );
+
+                # Create the virtual environment with all dependencies
+                python_env = pythonSet.mkVirtualEnv "libu-env" workspace.deps.default;
+
 
                 nodes = [
                     "libu"
@@ -55,7 +93,7 @@
                             nixpkgs = nixpkgs;
                             nodename = nodename;
                             format = format;
-                            python_env = python_env;
+                            inherit python_env;
                         };
                     }
                 );
@@ -76,17 +114,21 @@
                             nixpkgs = nixpkgs;
                             nodename = nodename;
                             format = format;
-                            python_env = python_env;
+                            inherit python_env;
                         };
                     }
                 );
 
             in {
+                # Export python_env so it can be used in nixos-config.nix
+                inherit python_env;
+
                 devShells.default = pkgs.mkShell {
                     name = "libu-dev-shell";
 
                     packages = [
                         python_env
+                        pkgs.uv
                         pkgs.awscli2
                     ];
                 };

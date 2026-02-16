@@ -70,7 +70,6 @@ in
             curl
             git
             file
-            python_env
         ];
 
         services.nginx = {
@@ -162,7 +161,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
                 description = "Bottle Application";
                 wantedBy = [ "multi-user.target" ];
                 serviceConfig = {
-                    ExecStart = "${python_env}/bin/python ${bottle_app.out}/lib/frontend.py";
+                    ExecStart = "${python_env}/bin/python ${bottle_app.out}/lib/server.py";
                     Restart = "always";
                     User = "bottle";
                     Group = "bottle";

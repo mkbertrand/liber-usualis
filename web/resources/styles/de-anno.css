@@ -10,4 +10,28 @@
 
 td {
 	text-align: center;
+	vertical-align: top;
+	width: 50px;
+}
+
+.big-table {
+	font-size: 16px;
+	border-collapse: collapse;
+}
+
+table.big-table th {
+	width: 100px;
+}
+
+table.big-table td {
+	width: initial;
+}
+
+.tabula-paschalis-epact {
+	color: red;
+	text-align: left;
+}
+
+tr.major-row td {
+	border-top: 1px solid black;
 }
