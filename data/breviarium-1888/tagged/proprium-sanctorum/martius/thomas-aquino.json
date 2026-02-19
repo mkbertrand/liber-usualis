@@ -4,13 +4,23 @@
 		"datum":"S. Thomæ de Aquino Confessoris et Ecclesiæ Doctoris"
 	},
 	{
-		"tags":["thomas-aquino","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1908",
-		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Thoma, divínæ legis amátor, deprecáre pro nobis Fílium Dei."
+		"tags":["thomas-aquino","vesperae","antiphona","antiphona-magnificat","n"],
+		"datum":"Thoma"
 	},
 	{
 		"tags":["thomas-aquino","collecta"],
 		"datum":"Deus, qui Ecclésiam tuam beáti Thomæ Confessóris tui mira eruditióne claríficas, et sancta operatióne fœcúndas: + da nobis, quǽsumus, et quæ dócuit, intelléctu conspícere, * et quæ egit, imitatióne complére.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["thomas-aquino","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"in-tempore-quadragesimae":[["doctor","lectio"]]
+	},
+	{
+		"tags":["thomas-aquino","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Præclárum christiáni orbis decus et Ecclésiæ lumen, beatíssimus vir Thomas, Landúlpho cómite Aquináte et Theodóra Neapolitána, nobílibus paréntibus natus, futúræ in Deíparam devotiónis afféctum adhuc infántulus osténdit. Nam chártulam ab eo invéntam, in qua salutátio Angélica scripta erat, frustra adniténte nutríce, compréssa manu válide retínuit, et a matre per vim abréptam, plorátu et gestu repétiit, ac mox rédditam deglutívit. Quintum annum agens, mónachis sancti Benedícti Cassinátibus custodiéndus tráditur. Inde Neápolim studiórum causa missus, jam adoléscens fratrum Prædicatórum órdinem suscépit. Sed matre ac frátribus id indígne feréntibus, Lutétiam Parisiórum míttitur. Quem fratres in itínere per vim raptum, in arcem castri sancti Joánnis perdúcunt: ubi várie exagitátus, ut sanctum propósitum mutáret, mulíerem étiam, quæ ad labefactándam ejus constántiam introdúcta fúerat, titióne fugávit. Mox beátus júvenis, flexis génibus ante signum crucis orans, ibíque somno corréptus, per quiétem sentíre visus est sibi ab Ángelis constríngi lumbos: quo ex témpore omni póstea libídinis sensu cáruit. Soróribus, quæ, ut eum a pio consílio removérent, in castrum vénerant, persuásit, ut, contémptis curis sæculáribus, ad exercitatiónem cœléstis vitæ se conférrent.",
+		"lectio-ii":"Emíssus e castro per fenéstram, Neápolim redúcitur: unde Romam, póstea Parísium a fratre Joánne Theutónico, órdinis Prædicatórum generáli Magístro, ductus, Albérto Magno doctóre, philosophíæ ac theologíæ óperam dedit. Vigínti quinque annos natus, magíster est appellátus, publicéque philósophos ac theólogos summa cum laude est interpretátus. Numquam se lectióni aut scriptióni dedit, nisi post oratiónem. In difficultátibus locórum sacræ Scriptúræ, ad oratiónem jejúnium adhibébat. Quin étiam sodáli suo fratri Regináldo dícere solébat, quidquid sciret non tam stúdio aut labóre suo peperísse, quam divínitus tráditum accepísse. Neápoli cum ad imáginem Crucifíxi veheméntius oráret, hanc vocem audívit: Bene scripísti de me Thoma: quam ergo mercédem accípies? Cui ille: Non áliam Dómine, nisi teípsum. Collatiónes Patrum assídue pervolutábat; et nullum fuit scriptórum genus in quo non esset diligentíssime versátus. Scripta ejus et multitúdine, et varietáte, et facilitáte explicándi res diffíciles ádeo excéllunt, ut ubérrima atque incorrúpta illíus doctrína, cum revelátis veritátibus mire conséntiens, aptíssima sit ad ómnium témporum erróres pervincéndos.",
+		"lectio-iii":"A Summo Pontífice Urbáno quarto Romam vocátus, ejus jussu ecclesiásticum lucubrávit offícium in Córporis Christi solemnitáte celebrándum; oblátos vero honóres et Neapolitánum archiepiscopátum, étiam deferénte Cleménte quarto, recusávit. A prædicatióne divíni verbi non desistébat; quod cum fáceret per octávam Paschæ in basílica sancti Petri, mulíerem, quæ ejus fímbriam tetígerat, a fluxu sánguinis liberávit. Missus a beáto Gregório décimo ad concílium Lugdunénse, in monastério Fossæ Novæ in morbum íncidit, ubi ægrótus Cántica canticórum explanávit. Ibídem óbiit quinquagenárius, anno salútis millésimo ducentésimo septuagésimo quarto, Nonis Mártii. Miráculis étiam mórtuus cláruit; quibus probátis, a Joánne vigésimo secúndo in Sanctórum númerum relátus est, anno millésimo tercentésimo vigésimo tértio; transláto postea ejus córpore Tolósam, ex mandáto beáti Urbáni quinti. Cum sanctis angélicis spirítibus non minus innocéntia quam ingénio comparátus, Doctóris Angélici nomen jure est adéptus, eídem auctoritáte sancti Pii quinti confirmátum. Leo autem décimus tértius, libentíssime excípiens postulatiónes et vota ómnium pene sacrórum antístitum orbis cathólici, ad tot præcípue philosophicórum systématum a veritáte aberrántium luem propulsándam, ad increménta scientiárum, et commúnem humáni géneris utilitátem, eum, ex Sacrórum Rítuum Congregatiónis consúlto, per Apostólicas lítteras cœléstem patrónum scholárum ómnium catholicárum declarávit et instítuit."
 	}
 ]
