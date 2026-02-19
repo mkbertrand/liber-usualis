@@ -127,7 +127,9 @@ def managesearch(query, result):
 		return result
 	else:
 		try:
-			if 'intonata' in query:
+			if 'n' in query:
+				return result
+			elif 'intonata' in query:
 				result['datum'] = result['datum'].split('*')[0].rstrip()
 				if result['datum'][-1] not in ['.',',','?','!',':',';']:
 					result['datum'] += '.'

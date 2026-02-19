@@ -4,13 +4,34 @@
 		"datum":"S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris"
 	},
 	{
-		"tags":["gregorius","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1908",
-		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Gregóri, divínæ legis amátor, deprecáre pro nobis Fílium Dei."
+		"tags":["gregorius","vesperae","antiphona","antiphona-magnificat","n"],
+		"datum":"Gregóri"
 	},
 	{
 		"tags":["gregorius","collecta"],
 		"datum":"Deus, qui ánimæ fámuli tui Gregórii ætérnæ beatitúdinis prǽmia contulísti: + concéde propítius; ut qui peccatórum nostrórum póndere prémimur, * ejus apud te précibus sublevémur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["gregorius","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"in-tempore-quadragesimae":[["doctor","lectio"]]
+	},
+	{
+		"tags":["gregorius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Gregórius Magnus, Románus, Gordiáni senatóris fílius, adoléscens philosophíæ óperam dedit; et prætório offício functus, patre mórtuo, sex monastéria in Sicília ædificávit, Romæ séptimum sancti Andréæ nómine in suis ǽdibus, prope basílicam sanctórum Joánnis et Pauli ad clivum Scauri, ubi Hilarióne ac Maximiáno magístris, mónachi vitam proféssus, póstea abbas fuit. Mox diáconus cardinális creátus, Constantinópolim a Pelágio Pontífice ad Tibérium Constantínum imperatórem legátus míttitur: apud quem memorábile étiam illud effécit, quod Eutýchium patriárcham, qui scrípserat contra veram ac tractábilem córporum resurrectiónem, ita convícit, ut ejus librum imperátor in ignem injíceret. Quare Eutýchius paulo post cum in morbum incidísset, instánte morte, pellem manus suæ tenébat, multis præséntibus, dicens: Confíteor quia omnes in hac carne resurgémus.",
+		"lectio-ii":"Romam rédiens, Pelágio pestiléntia subláto, summo ómnium consénsu Póntifex elígitur: quem honórem ne accíperet, quámdiu pótuit, recusávit. Nam aliéno vestítu in spelúnca delítuit: ubi deprehénsus indício ígneæ colúmnæ, ad sanctum Petrum consecrátur. In pontificátu multa successóribus doctrínæ ac sanctitátis exémpla relíquit. Peregrínos quotídie ad mensam adhibébat: in quibus et Ángelum, et Dóminum Angelórum peregríni fácie accépit. Paúperes et urbános et extérnos, quorum númerum descríptum habébat, benígne sustentábat. Cathólicam fidem multis locis labefactátam restítuit. Nam Donatístas in África, Ariános in Hispánia représsit: Agnoítas Alexandría ejécit. Pállium Syágrio Augustodunénsi epíscopo dare nóluit, nisi neóphytos hæréticos expélleret ex Gállia. Gothos hǽresim ariánam relíquere coégit. Missis in Británniam doctis et sanctis viris Augustíno et áliis mónachis, ínsulam ad Jesu Christi fidem convértit, vere a Beda presbýtero Ángliæ vocátus Apóstolus. Joánnis patriárchæ Constantinopolitáni audáciam fregit, qui sibi universális Ecclésiæ epíscopi nomen arrogábat. Maurítium imperatórem, eos qui mílites fuíssent, mónachos fíeri prohibéntem, a senténtia detérruit.",
+		"lectio-iii":"Ecclésiam ornávit sanctíssimis institútis et légibus. Apud sanctum Petrum coácta sýnodo, multa constítuit: in iis, Ut in Missa Kýrie eléison nóvies repeterétur: ut extra id tempus, quod continétur Septuagésima et Pascha, Allelúja dicerétur, ut adderétur in Cánone, Diésque nostros in tua pace dispónas. Litanías, Statiónes, et ecclesiásticum offícium auxit. Quátuor concíliis, Nicǽno, Constantinopolitáno, Ephesíno, Chalcedonénsi, tamquam quátuor Evangéliis honórem habéri vóluit. Epíscopis Sicíliæ, qui ex antíqua ecclesiárum consuetúdine Romam síngulis triénniis conveniébant, quinto quoque anno semel veníre indúlsit. Multos libros confécit: quos cum dictáret, testátus est Petrus diáconus, se Spíritum sanctum colúmbæ spécie in ejus cápite sæpe vidísse. Admirabília sunt quæ dixit, fecit, scripsit, decrévit, præsértim infírma semper et ægra valetúdine. Qui dénique multis éditis miráculis, pontificátus anno décimo tértio, mense sexto, die décimo, quarto Idus Mártii, qui dies festus a Græcis étiam propter insígnem hujus Pontíficis sapiéntiam ac sanctitátem præcípuo honóre celebrátur, ad cœléstem beatitúdinem evocátus est. Cujus corpus sepúltum est in basílica sancti Petri, prope Secretárium."
+	},
+	{
+		"tags":["gregorius","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 5. b.]/In illo témpore: Dixit Jesus discípulis suis: Vos estis sal terræ. Quod si sal evanúerit, in quo saliétur? Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Ex Homilia 17. in Lucæ 10. ante med.]/Considerándum nobis est, ut qui una eadémque exhortatiónis voce non súfficit simul cunctos admonére, stúdeat síngulos, in quantum valet, instrúere, privátis locutiónibus ædificáre. Debémus namque pensáre contínuo, quod sanctis Apóstolis dícitur, et per Apóstolos nobis: Vos estis sal terræ. Si ergo sal sumus, condíre mentes fidélium debémus. Vos ígitur qui pastóres estis, pensáte quia Dei animália páscitis: de quibus profécto animálibus Deo per Psalmístam dícitur: Animália tua habitábunt in ea. Et sæpe vidémus quod petra salis brutis animálibus antepónitur, ut ex eádem salis petra lámbere débeant, et meliorári. Quasi ergo inter bruta animália petra salis, debet esse sacérdos in pópulis. Curáre namque sacerdótem necésse est, quæ síngulis dicat, unumquémque quáliter admóneat: ut quisquis sacerdóti júngitur, quasi ex salis tactu ætérnæ vitæ sapóre condiátur."
+		],
+		"lectio-ii":"Sal étenim terræ non sumus, si corda audiéntium non condímus: quod profécto condiméntum ille veráciter próximo impéndit, qui prædicatiónis verbum non súbtrahit. Sed tunc vere áliis recta prædicámus, si dicta rebus et exémplis osténdimus. Nullum puto, fratres caríssimi, ab áliis majus præjudícium, quam a sacerdótibus tólerat Deus: quando eos, quos ad aliórum correctiónem pósuit, dare de se exémpla pravitátis cernit: quando ipsi peccámus, qui compéscere peccáta debúimus: nulla animárum lucra quǽrimus, ad nostra quotídie stúdia vacámus, terréna concupíscimus, humánam glóriam inténta mente captámus. Et quia eo ipso quo céteris præláti sumus, ad agénda quǽlibet majórem licéntiam habémus, suscéptæ benedictiónis ministérium vértimus ad ambitiónis arguméntum: Dei causam relínquimus, ad terréna negótia vacámus: locum sanctitátis accípimus, et terrénis áctibus implicámur.",
+		"lectio-iii":""
 	}
 ]
