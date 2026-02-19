@@ -197,6 +197,16 @@
 		"remove":"habens-commemorationem-matutini"
 	},
 	{
+		"include":["suffragium","de-cruce"],
+		"response":[
+			{"include":["vigilia","primarium"],"response":"dele","target":0},
+			{"include":["feria","in-tempore-adventus","primarium"],"response":"dele","target":0},
+			{"include":["feria","cinerum","primarium"],"response":"dele","target":0},
+			{"include":["feria","in-tempore-quadragesimae","primarium"],"response":"dele","target":0},
+			{"include":["feria","quatuor-tempora","primarium"],"response":"dele","target":0}
+		]
+	},
+	{
 		"include":["suffragium","maria"],
 		"response":[
 			{"include":["maria"],"exclude":["officium-parvum-bmv"],"response":"dele","target":0}

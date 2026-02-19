@@ -96,7 +96,12 @@
 		"include":["suffragium","de-cruce"],
 		"response":[
 			{"include":["dominica"],"response":"dele","target":0},
-			{"include":["simplex"],"response":"dele","target":0}
+			{"include":["simplex"],"response":"dele","target":0},
+			{"include":["vigilia","primarium"],"response":"dele","target":0},
+			{"include":["feria","in-tempore-adventus","primarium"],"response":"dele","target":0},
+			{"include":["feria","cinerum","primarium"],"response":"dele","target":0},
+			{"include":["feria","in-tempore-quadragesimae","primarium"],"response":"dele","target":0},
+			{"include":["feria","quatuor-tempora","primarium"],"response":"dele","target":0}
 		]
 	},
 	{

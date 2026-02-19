@@ -89,12 +89,18 @@
 	},
 	{
 		"tags":["maria","suffragium","versiculus"],
-		"datum":["V. Ora pro nobis sancta Dei Génitrix.","R. Ut digni efficiámur promissiónibus Christi."]
+		"datum":["V. Ora pro nobis sancta Dei Génitrix.","R. Ut digni efficiámur promissiónibus Christi."],
+		"post-nativitatem":["V. Post partum Virgo invioláta permansísti.","R. Dei Génitrix intercéde pro nobis."]
 	},
 	{
 		"tags":["maria","collecta"],
 		"datum":"Concéde nos fámulos tuos, quǽsumus Dómine Deus, perpétua mentis et córporis sanitáte gaudére, + et gloriósa beátæ Maríæ semper Vírginis intercessióne, * a præsénti liberári tristítia, et ætérna pérfrui lætítia.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["maria","suffragium","post-nativitatem","collecta"],
+		"datum":[["circumcisio","collecta"]],
+		"terminatio":[["circumcisio","collecta","terminatio"]]
 	},
 	{
 		"tags":["maria","matutinum","antiphona","antiphona-invitatorium"],

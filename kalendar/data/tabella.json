@@ -817,10 +817,11 @@
 		]
 	},
 	{
-		"include":["bmv-sabbatum"],
+		"include":["post-nativitatem"],
 		"recheck":false,
 		"response":[
-			{"include":["post-nativitatem"],"target":0,"response":"post-nativitatem"}
+			{"include":["bmv-sabbatum"],"target":1,"response":"post-nativitatem"},
+			{"include":["maria","suffragium"],"target":1,"response":"post-nativitatem"}
 		]
 	},
 	{
