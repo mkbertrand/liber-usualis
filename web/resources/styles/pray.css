@@ -1,7 +1,26 @@
+/* Containers and overall organization */
 #content-container-outer {
 	max-width: 100% !important;
 }
 
+#side-panel-left, #side-panel-right {
+	width: 0;
+}
+
+#rite-page-container {
+	position: relative;
+	width: 100%;
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
+}
+
+#size-change-listener {
+	position: fixed;
+	height: 0;
+	width: 100%;
+}
+
+/* Options panel and its gear button */
 #options-gear-wrapper {
 	position: absolute;
 	top: 18px;
@@ -12,71 +31,6 @@
 
 #options-gear {
 	height: 100%;
-}
-
-#rite-page-container {
-	position: relative;
-	width: 100%;
-	border-left: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
-}
-
-#side-panel-left, #side-panel-right {
-	width: 0;
-}
-
-.panel-image {
-	width: 100%;
-}
-
-#rite-container {
-	font-family: "Old Standard TT", times;
-	padding: 10px 40px 10px 40px;
-	min-height: calc(100vh - 71px - var(--top-bar-title-height));
-	background-color: var(--generic-white-background-color);
-	display: block;
-}
-
-#size-change-listener {
-	position: fixed;
-	height: 0;
-	width: 100%;
-}
-
-.rite-name {
-	text-align: center;
-}
-
-.text-container-latin {
-	margin: 0;
-	padding: 0;
-}
-
-.text-container-translation {
-	margin: -16px 0 0 0;
-	padding: 0;
-}
-
-.chant-wrapper {
-	width: 0;
-}
-
-.chant-content-translation {
-	font-size: 18px;
-	line-height: 1;
-	color: #222;
-}
-
-.decorated-wrapper {
-	display: flex;
-}
-
-.decoration-left-wrapper {
-	width: 15%;
-}
-
-.decorated-content-wrapper {
-	width: 85%;
 }
 
 #options-panel-background {
@@ -200,110 +154,6 @@
 	padding-right: 14px;
 }
 
-#bottom-easy-select-container {
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-	max-width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#bottom-easy-select-hide {
-	width: 100px;
-	height: 20px;
-	background-color: var(--button-color);
-}
-
-#bottom-easy-select-hide:hover {
-	background-color: var(--button-color-hover);
-}
-
-#bottom-easy-select-content-container {
-	background-color: rgba(249, 249, 249, .8);
-	border: 1px solid var(--border-color);
-	border-radius: 7px;
-	font-family: times;
-	padding: 7px 7px 10px 7px;
-}
-
-#bottom-easy-select-hide-icon {
-	height: 30px;
-	margin-top: -5px;
-}
-
-.bottom-easy-select-hide-icon-closed {
-	transform: rotate(180deg);
-}
-
-#date-selector-container {
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	gap: 7px;
-}
-
-#date-selector-text {
-	height: 30px;
-	font-size: 18px;
-	border: 1px solid var(--border-color);
-	border-radius: 5px;
-	cursor: pointer;
-	font-family: times;
-	color: black;
-}
-
-.date-selector-button {
-	width: 30px;
-	height: 30px;
-	padding-top: 5px;
-	text-align: center;
-	font-size: 24px;
-}
-
-.date-selector-button:hover {
-	background-color: var(--button-color-hover);
-}
-
-#options-button {
-	height: 30px;
-	text-align: center;
-	font-size: 18px;
-	background-color: var(--button-color);
-}
-
-#options-button:hover {
-	background-color: var(--button-color-hover);
-}
-
-#rite-selector-container {
-	width: 100%;
-	margin-top: 10px;
-	display: flex;
-	justify-content: center;
-	gap: 7px;
-	min-height: 35px;
-	flex-wrap: wrap;
-}
-
-.rite-selector-button {
-	background-color: var(--button-color);
-	height: 25px;
-	text-align: center;
-	font-size: 16px;
-	padding-top: 5px;
-}
-
-.rite-selector-button:hover {
-	background-color: var(--button-color-hover);
-}
-
-.rite-selector-button-selected {
-	background-color: var(--button-color-toggled) !important;
-}
-
 #bottom-panel-explanation {
 	font-size: 14px;
 	margin-top: 0;
@@ -312,8 +162,17 @@
 	font-style: italic;
 }
 
-.rite-item {
+/* Rite container and formatting for hour itself */
+#rite-container {
+	font-family: "Old Standard TT", times;
 	font-size: 20px;
+	padding: 10px 40px 10px 40px;
+	min-height: calc(100vh - 71px - var(--top-bar-title-height));
+	background-color: var(--generic-white-background-color);
+	display: block;
+}
+
+.rite-item {
 	margin: 0;
 	padding: 0;
 }
@@ -404,6 +263,7 @@
 	margin-bottom: -7px;
 }
 
+/* Formatting for specific items */
 .aperi-domine, .sacrosanctae {
 	font-size: 16px !important;
 }
@@ -434,6 +294,7 @@
 	margin-bottom: 0;
 }
 
+/* Next hour button. Child of rite-page-container. */
 #next-hour-button-container {
 	padding: 0 40px 60px 40px;
 	background-color: var(--generic-white-background-color);
@@ -469,15 +330,112 @@
 	font-size: 16px;
 }
 
+/* Bottom select panel */
+#bottom-easy-select-container {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#bottom-easy-select-hide {
+	width: 100px;
+	height: 20px;
+	background-color: var(--button-color);
+}
+
+#bottom-easy-select-hide:hover {
+	background-color: var(--button-color-hover);
+}
+
+#bottom-easy-select-content-container {
+	background-color: rgba(249, 249, 249, .8);
+	border: 1px solid var(--border-color);
+	border-radius: 7px;
+	font-family: times;
+	padding: 7px 7px 10px 7px;
+}
+
+#bottom-easy-select-hide-icon {
+	height: 30px;
+	margin-top: -5px;
+}
+
+.bottom-easy-select-hide-icon-closed {
+	transform: rotate(180deg);
+}
+
+#date-selector-container {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	gap: 7px;
+}
+
+#date-selector-text {
+	height: 30px;
+	font-size: 18px;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: times;
+	color: black;
+}
+
+.date-selector-button {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.date-selector-button:hover {
+	background-color: var(--button-color-hover);
+}
+
+#rite-selector-container {
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 7px;
+	min-height: 35px;
+	flex-wrap: wrap;
+}
+
+.rite-selector-button {
+	background-color: var(--button-color);
+	height: 25px;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 5px;
+}
+
+.rite-selector-button:hover {
+	background-color: var(--button-color-hover);
+}
+
+.rite-selector-button-selected {
+	background-color: var(--button-color-toggled) !important;
+}
+
+/* Phones */
 @media only screen and (max-width: 650px) {
+
+	#rite-container {
+		padding: 10px 30px 10px 30px;
+		font-size: 18px;
+	}
+
 	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
 		font-size: initial;
 		float: initial;
 		line-height: initial;
-	}
-
-	#rite-container {
-		padding: 10px 30px 10px 30px;
 	}
 
 	#next-hour-button-container {
@@ -489,6 +447,7 @@
 	}
 }
 
+/* Printing to pdf (or actual printers) */
 @media print {
 	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container {
 		display: none;

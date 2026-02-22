@@ -156,7 +156,10 @@ function claw(data) {
 }
 
 trivialchants = ['deus-in-adjutorium'];
-function stringrender(data) {
+function stringrender(data, translation = false) {
+	if (translation) {
+		data = data.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s)/g, '');
+	}
 	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
 		.replaceAll('É', 'E').replaceAll('Í', 'I')
 		.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
@@ -250,7 +253,7 @@ function render(data, chant) {
 					if (rendered.includes('<br>')) {
 						ret = '';
 						renderedsplit = rendered.split('<br>');
-						translationsplit = stringrender(translated).split('<br>');
+						translationsplit = stringrender(translated, true).split('<br>');
 						// Lines corresponding only to annotations are not accounted for in the translation, so there is an offset
 						annotationoffset = 0;
 						for (var i = 0; i < renderedsplit.length; i++) {
@@ -263,7 +266,7 @@ function render(data, chant) {
 						}
 						return ret;
 					}
-					return stringrender(data) + (translated == '' ? '<br>' : `<br><span class="rite-text-translation">${stringrender(translated)}</span><br>`);
+					return stringrender(data) + (translated == '' ? '<br>' : `<br><span class="rite-text-translation">${stringrender(translated, true)}</span><br>`);
 				} else {
 					return stringrender(data) + '<br>';
 				}
@@ -353,7 +356,9 @@ function render(data, chant) {
 						var alldefined = true;
 						for (var i = 0; i < translated.length; i++) {
 							if (trans[i] == '') {
-								trans[i] = unpack(translationpool[claw(data.datum[i]).tags.join('+')]);
+								tagsresp = claw(data.datum[i]).tags;
+								tagsresp.sort();
+								trans[i] = unpack(translationpool[tagsresp.join('+')]);
 								if (trans[i] == undefined) {
 									alldefined = false;
 									break;
@@ -494,23 +499,23 @@ function render(data, chant) {
 
 				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i))) {
-					ret = `${header}<div class="rite-item ${data.tags.join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}`;
+					ret = `${header}<div class="rite-item ${data.tags.concat(parenttags).join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}`;
 					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 				}
 
-				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'pater-noster-semisecreta', 'credo-semisecreta', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
+				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
 				if (fullparagraph.some(i => uniquelyhas(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
 						return '';
 					}
 					if (!ret.startsWith('<p')) {
-						ret = `<p class="rite-text ${data.tags.join(' ')}">` + ret;
+						ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
 					}
 					return `${header}${ret}</p>`;
 				}
 
-				openparagraph = ['capitulum', 'absolutio'];
+				openparagraph = ['capitulum', 'absolutio', 'pater-noster-semisecreta', 'credo-semisecreta'];
 				if (openparagraph.some(i => uniquelyhas(i))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
