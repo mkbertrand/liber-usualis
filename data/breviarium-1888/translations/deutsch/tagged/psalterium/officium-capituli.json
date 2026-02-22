@@ -1,0 +1,76 @@
+[
+	{
+		"tags":["officium-capituli","ritus"],
+		"datum":[
+			["martyrologium"],
+			"V. Kostbar in den Augen des Herrn",
+			"R. Ist der Tod Seiner Heiligen.",
+			{
+				"tags":["oratio-sanctae-mariae"],
+				"datum":[
+					"Heilige Maria, und alle Heiligen mögen fürbitten für uns beim Herrn, + damit uns Seine Hilfe und Rettung verdient ist, * Der lebt und herrscht von Ewigkeit zu Ewigkeit.",
+					"R. Amen."
+				]
+			},
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"",
+			"",	
+			"",
+			"V. Schaue herab auf Deine Diener, Herr, und auf Deine Werke, * und lenke Deine Kinder.",
+			"R. Und der Glanz des Herrn, unseres Gottes, sei über uns, + und lenke die Werke unserer Hände über uns, * und das Werk unserer Hände lenke.",
+			"",
+			{
+				"tags":["oratio-dirigere"],
+				"datum":[
+				"Lasset uns beten.",
+				"Beherrsche und heilige, leite und lenke, Herr Gott, König des Himmels und der Erde, heute unser Herz und Leib, + unsere Gedanken, Worte und Werke nach Deinen Gesetze, und nach der Vorschrift Deines Gebotes, * damit wir jetzt, und in Ewigkeit, mit Deiner Hilfe selig und frei werden mögen, Heiland der Welt:",
+				"Der Du lebst und herrscht von Ewigkeit zu Ewigkeit.",
+				"R. Amen."
+				]
+			},
+			["officium-capituli","formula","lectio-brevis","formula-lectionis"],
+			["adjutorium-nostrum"],
+			"V. Bittet um Segen.",
+			"R. Gottes Segen.",
+			"Der Herr ✠ segne uns, und bewahre uns von allem Übel, und führe uns zum ewigen Leben; und die Seelen der verstorbenen Gläubigen mögen durch die Barmherzigkeit Gottes in Frieden ruhen.",
+			"Amen.",
+			["pater-noster-secreta-post-officium"]
+		]
+	},
+	{
+		"tags":["officium-capituli","benedictio"],
+		"datum":"Unsere Tage und unser Tun * ordne der allmächtige Herr in seinem Frieden."
+	},
+	{
+		"tags":[
+			["officium-capituli","per-annum","temporale","lectio-brevis","lectio"],
+			["officium-capituli","in-tempore-septuagesimae","temporale","lectio-brevis","lectio"]
+		],
+		"datum":"Der Herr leite eure Herzen zur Liebe Gottes * und zur Geduld Christi"
+	},
+	{
+		"tags":["officium-capituli","in-tempore-adventus","temporale","lectio-brevis","lectio"],
+		"datum":"Herr, erbarme Dich unser; denn auf Dich harren wir: + sei unser Arm des Morgens, * und unser Heil zur Zeit der Trübsal."     
+	},
+	{
+		"tags":["officium-capituli","in-tempore-quadragesimae","temporale","lectio-brevis","lectio"],
+		"datum":"Suchet den Herrn, solange Er zu finden ist, * rufet ihn an, solange Er nahe ist."
+	},
+	{
+		"tags":["officium-capituli","in-tempore-passionis","temporale","lectio-brevis","lectio"],
+		"datum":"Mein Angesicht verbarg ich nicht vor denen, die mich beschimpften, und anspieen. + Der Herr Gott, ist mein Helfer, * darum wurde ich nicht zuschanden." 
+	},
+	{
+		"tags":["officium-capituli","in-tempore-paschali","temporale","lectio-brevis","lectio"],
+		"datum":"Wenn ihr nun mit Christus auferstanden seid, + so suchet, was droben ist, wo Christus ist, sitzend zur Rechten Gottes; * auf das droben trachtet, nicht das auf Erden."  
+	},
+	{
+		"tags":["officium-capituli","lectio-brevis","lectio"],
+		"datum":[["nona","capitulum"]]
+	}
+]
