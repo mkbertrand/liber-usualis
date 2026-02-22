@@ -47,6 +47,52 @@ All files within this project are released under the GNU Affero General Public L
 
 
 # deploying
+## Deploy to Linode
+### Rebuild and boot an existing Linode
+```bash
+nix build .#libu-linode --impure;
+nix-shell -p linode-cli spwgen;
+export ROOT_PASS="$(spwgen uldn 16)"
+echo "$ROOT_PASS"
+linode-cli image-upload --label "libu-nix" --description "libu deployed to NixOS" --region "us-ord" result/nixos.img.gz;
+export IMAGE_ID="$(linode-cli images list --text | awk '/libu-nix/{print $1}' | awk '{for (i=1; i<=NF; i++) last=$i} END {print last}')";
+echo "imageid: $IMAGE_ID";
+export LINODE_ID="$(linode-cli linodes list --text | grep "libu-nix" | cut -f1)";
+export CONFIG_ID="$(linode-cli linodes configs-list $LINODE_ID | awk '/[0-9]+/{print $2}')";
+echo "configid: $CONFIG_ID";
+linode-cli linodes rebuild "$LINODE_ID" --image "$IMAGE_ID" --root_pass="$ROOT_PASS";
+linode-cli linodes config-update "$LINODE_ID" "$CONFIG_ID" --kernel "linode/grub2" --booted false;
+linode-cli linodes boot "$LINODE_ID" --config_id "$CONFIG_ID";
+```
+### Create a new Linode, upload image, and boot from it
+```bash
+nix build .#libu-linode --impure;
+nix-shell -p linode-cli spwgen jq;
+export ROOT_PASS="$(spwgen uldn 16)"
+echo "$ROOT_PASS"
+
+# Upload the built NixOS image
+linode-cli image-upload --label "libu-nix" --description "libu deployed to NixOS" --region "us-ord" result/nixos.img.gz;
+export IMAGE_ID="$(linode-cli images list --text | awk '/libu-nix/{print $1}' | awk '{for (i=1; i<=NF; i++) last=$i} END {print last}')";
+echo "imageid: $IMAGE_ID";
+
+# Create a new Linode from the uploaded custom image
+export LINODE_ID="$(linode-cli linodes create \
+  --label "libu-nix" \
+  --region "us-ord" \
+  --type "g6-nanode-1" \
+  --image "$IMAGE_ID" \
+  --root_pass "$ROOT_PASS" \
+  --booted false \
+  --json | jq -r '.[0].id')"
+echo "linodeid: $LINODE_ID";
+
+# Find and update the default config to use Linode GRUB, then boot it
+export CONFIG_ID="$(linode-cli linodes configs-list "$LINODE_ID" --json | jq -r '.[0].id')"
+echo "configid: $CONFIG_ID";
+linode-cli linodes config-update "$LINODE_ID" "$CONFIG_ID" --kernel "linode/grub2" --booted false;
+linode-cli linodes boot "$LINODE_ID" --config_id "$CONFIG_ID";
+```
 ## deploy image to proxmox
 ```bash
 export PROXMOX_HOST_IP="192.168.0.11"; # use the IP of one of your proxmox hosts
@@ -87,3 +133,11 @@ aws ec2 register-image \
 
 ```
 the import-image command might take 30ish minutes to run, so there's probably a better way of creating the new IAM, maybe even just having the nixos config as a public or private flake and running nixos-rebuild switch on the ec2 instance machine with the flake as the target
+# Rebuilding
+```bash
+export host="YOUR_HOSTNAME_OR_IP_HERE";
+nixos-rebuild switch \
+  --flake ".#libu-linode" \
+  --target-host "master@$host" \
+  --use-remote-sudo
+```
