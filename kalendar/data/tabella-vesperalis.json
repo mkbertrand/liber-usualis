@@ -146,13 +146,6 @@
 		]
 	},
 	{
-		"include":["hebdomada-i-quadragesimae","dominica","primarium"],
-		"response":[
-			{"include":["duplex-majus","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["duplex-minus","primarium"],"remove":"primarium","adde":"commemoratio","target":1}
-		]
-	},
-	{
 		"include":["septem-dolores-passione","primarium"],
 		"response":[
 			{"include":["benedictus-abbas","primarium"],"remove":"primarium","adde":"commemoratio","target":0}
