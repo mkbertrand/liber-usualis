@@ -253,6 +253,19 @@
 		]
 	},
 	{
+		"tags":[
+			["formula","in-tempore-passionis","temporale","responsorium","gloria"],
+			["formula","in-tempore-passionis","temporale","responsorium","gloria","simplex-responsum"]
+		],
+		"datum":[
+			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
+			"\nV. ",["responsorium","versus"],
+			"\nR. ",["responsorium","responsum"],
+			"\nV. ",["responsorium","incipit"],
+			"\nR. ",["responsorium","responsum"]
+		]
+	},
+	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
 			"R. ",["matutinum","responsorium","incipit"]," * ",["matutinum","responsorium","responsum-i"]," * ",["matutinum","responsorium","responsum-ii"],
@@ -270,6 +283,16 @@
 			"\nV. ",["responsorium-breve","versus"],
 			"\nR. ",["responsorium-breve","responsum"],
 			"\nV. Glória Patri, et Fílio, et Spirítui sancto.",
+			"\nR. ",["responsorium-breve","incipit"],", ",["responsorium-breve","responsum"]
+		]
+	},
+	{
+		"tags":["formula","in-tempore-passionis","temporale","responsorium-breve"],
+		"datum":[
+			"R. br. ",["responsorium-breve","incipit"]," * ",["responsorium-breve","responsum"],
+			"\n",["responsorium-breve","incipit"],", ",["responsorium-breve","responsum"],
+			"\nV. ",["responsorium-breve","versus"],
+			"\nR. ",["responsorium-breve","responsum"],
 			"\nR. ",["responsorium-breve","incipit"],", ",["responsorium-breve","responsum"]
 		]
 	},

@@ -604,5 +604,25 @@
 		"response":[
 			{"include":["dominica","tempus"],"target":0,"adde":"in-dominica"}
 		]
+	},
+	{
+		"include":["cathedra-petri"],
+		"response":"crea",
+		"adde":["commemoratio","paulus","semiduplex"]
+	},
+	{
+		"include":["conversio-pauli"],
+		"response":"crea",
+		"adde":["commemoratio","petrus","semiduplex"]
+	},
+	{
+		"include":["cathedra-petri-antiochiae"],
+		"response":"crea",
+		"adde":["commemoratio","paulus","semiduplex"]
+	},
+	{
+		"include":["petrus-ad-vincula"],
+		"response":"crea",
+		"adde":["commemoratio","paulus","semiduplex"]
 	}
 ]

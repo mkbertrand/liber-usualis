@@ -80,7 +80,9 @@ def prioritize(day, rules):
 				if not 'response' in job.rule:
 					job.rule['response'] = 'mutate'
 
-				if job.rule['response'] == 'combina':
+				if job.rule['response'] == 'crea':
+					day.append(job.rule['adde'])
+				elif job.rule['response'] == 'combina':
 					day[match[0]] |= day[match[1]]
 					day.pop(match[1])
 					# We will restart this job from scratch when we've iterated through the more specific jobs

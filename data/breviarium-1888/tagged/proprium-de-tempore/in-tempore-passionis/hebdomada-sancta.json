@@ -5,7 +5,7 @@
 	},
 	{
 		"tags":["dominica-in-palmis","capitulum"],
-		"datum":"Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: + sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, * et hábitu invéntus ut homo."
+		"datum":"[Philipp. 2.]/Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: + sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, * et hábitu invéntus ut homo."
 	},
 	{
 		"tags":["dominica-in-palmis","i-vesperae","antiphona","antiphona-magnificat"],
@@ -16,6 +16,107 @@
 		"tags":["dominica-in-palmis","collecta"],
 		"datum":"Omnípotens sempitérne Deus, qui humáno géneri, ad imitándum humilitátis exémplum, Salvatórem nostrum carnem súmere, et crucem subíre fecísti: + concéde propítius; ut et patiéntiæ ipsíus habére documénta, * et resurrectiónis consórtia mereámur.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Jeremíæ Prophéta.",
+			"[Jerem. 2. c.]/Obstupéscite cœli super hoc, et portæ ejus desolámini veheménter, dicit Dóminus. Duo enim mala fecit pópulus meus: Me dereliquérunt fontem aquæ vivæ, et fodérunt sibi cistérnas, cistérnas dissipátas, quæ continére non valent aquas. Numquid servus est Ísraël, aut vernáculus? quare ergo factus est in prædam? Super eum rugiérunt leónes, et dedérunt vocem suam, posuérunt terram ejus in solitúdinem: civitátes ejus exústæ sunt, et non est qui hábitet in eis. Fílii quoque Mémpheos et Taphnes constupravérunt te usque ad vérticem. Numquid non istud factum est tibi, quia dereliquísti Dóminum Deum tuum eo témpore, quo ducébat te per viam?"
+		]
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"In die qua invocávi te Dómine, dixísti: Noli timére:",
+		"responsum":"Judicásti causam meam, et liberásti me, Dómine Deus meus.",
+		"versus":"In die tribulatiónis meæ clamávi ad te, quia exaudísti me."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Et nunc quid tibi vis in via Ægýpti, ut bibas aquam túrbidam? et quid tibi cum via Assyriórum, ut bibas aquam flúminis? Árguet te malítia tua, et avérsio tua increpábit te. Scito, et vide quia malum et amárum est reliquísse te Dóminum Deum tuum, et non esse timórem mei apud te, dicit Dóminus Deus exercítuum. A sǽculo confregísti jugum meum, rupísti víncula mea, et dixísti: Non sérviam. In omni enim colle sublími, et sub omni ligno frondóso tu prosternebáris méretrix. Ego autem plantávi te víneam eléctam, omne semen verum: quómodo ergo convérsa es mihi in pravum vínea aliéna? Si láveris te nitro, et multiplicáveris tibi herbam borith, maculáta es in iniquitáte tua coram me, dicit Dóminus Deus."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Fratres mei elongavérunt se a me: et noti mei,",
+		"responsum":"Quasi aliéni recessérunt a me.",
+		"versus":"Dereliquérunt me próximi mei, et qui me novérunt."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Quid vultis mecum judício conténdere? omnes dereliquístis me, dicit Dóminus. Frustra percússi fílios vestros, disciplínam non recepérunt: devorávit gládius vester prophétas vestros, quasi leo vastátor generátio vestra. Vidéte verbum Dómini: Numquid solitúdo factus sum Israéli, aut terra serótina? quare ergo dixit pópulus meus: Recéssimus, non veniémus ultra ad te? Numquid obliviscétur virgo ornaménti sui, aut sponsa fásciæ pectorális suæ? pópulus vero meus oblítus est mei diébus innúmeris."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Atténde Dómine ad me, et audi voces adversariórum meórum:",
+		"responsum":"Numquid rédditur pro bono malum, quia fodérunt fóveam ánimæ meæ?",
+		"versus":"Recordáre quod stéterim in conspéctu tuo, ut lóquerer pro eis bonum, et avértem indignatiónem tuam ab eis."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"[Sermo 11. de Pass. Domini.]/Desideráta nobis, dilectíssimi, et univérso optábilis mundo adest festívitas Domínicæ passiónis, quæ nos inter exsultatiónes spirituálium gaudiórum silére non pátitur. Quia etsi diffícile est, de eádem solemnitáte sǽpius digne aptéque dissérere: non est tamen líberum sacerdóti in tanto divínæ misericórdiæ sacraménto fidélibus pópulis subtráhere sermónis offícium: cum ipsa matéria ex eo quod est ineffábilis, fandi tríbuat facultátem: nec possit defícere quod dicátur, dum numquam potest satis esse quod dícitur. Succúmbat ergo humána infírmitas glóriæ Dei, et in explicándis opéribus misericórdiæ ejus, ímparem se semper invéniat. Laborémus sensu, hæreámus ingénio, deficiámus elóquio: bonum est ut nobis parum sit, quod étiam recte de Dómini majestáte sentímus."
+		]
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Conclúsit vias meas inimícus, insidiátor factus est mihi sicut leo in abscóndito, replévit et inebriávit me amaritúdine: deduxérunt in lacum mortis vitam meam, et posuérunt lápidem contra me.",
+		"responsum":"Vide Dómine iniquitátes illórum: et júdica causam ánimæ meæ, defénsor vitæ meæ.",
+		"versus":"Factus sum in derísum omni pópulo meo, cánticum eórum tota die."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Dicénte enim prophéta: Quǽrite Dóminum, et confirmámini, quǽrite fáciem ejus semper: némini præsuméndum est, quod totum quod quærit, invénerit, ne désinat propinquáre, qui cessárit accédere. Quid autem inter ómnia ópera Dei, in quibus humánæ admiratiónis fatigátur inténtio, ita contemplatiónem mentis nostræ et obléctat et súperat, sicut pássio Salvatóris? Qui ut humánum genus vínculis mortíferæ prævaricatiónis absólveret, et sæviénti diábolo poténtiam suæ majestátis occúluit, et infirmitátem nostræ humilitátis objécit. Si enim crudélis et supérbus inimícus consílium misericórdiæ Dei nosse potuísset, Judæórum ánimos mansuetúdine pótius temperáre, quam injústis ódiis studuísset accéndere: ne ómnium captivórum amítteret servitútem, dum nihil sibi debéntis perséquitur libertátem."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Salvum me fac Deus, quóniam intravérunt aquæ usque ad ánimam meam: ne avértas fáciem tuam a me:",
+		"responsum":"Quóniam tríbulor, exaúdi me Dómine Deus meus.",
+		"versus":"Inténde ánimæ meæ, et líbera eam: propter inimícos meos éripe me."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Feféllit ergo illum malígnitas sua, íntulit supplícium Fílio Dei, quod cunctis fíliis hóminum in remédium verterétur. Fudit sánguinem justum, qui reconciliándo mundo et prétium esset, et póculum. Suscépit Dóminus, quod secúndum propósitum suæ voluntátis elégit. Admísit in se ímpias manus furéntium: quæ dum próprio incúmbunt scéleri, famulátæ sunt Redemptóri. Cujus étiam circa interfectóres suos tanta erat pietátis afféctio, ut de cruce súpplicans Patri, non se vindicári, sed illis postuláret ignósci."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Noli esse mihi Dómine aliénus: parce mihi in die mala: confundántur omnes qui me persequúntur,",
+		"responsum":"Et non confúndar ego.",
+		"versus":"Confundántur omnes inimíci mei, qui quærunt ánimam meam."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 21.]/In illo témpore: Cum appropinquásset Jesus Jerosólymis, et venísset Béthphage ad montem Olivéti: tunc misit duos discípulos, dicens eis. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Liber 9. in Lucam.]/Pulchre relíctis Judǽis, habitatúrus in afféctibus Géntium, templum Dóminus ascéndit. Hoc enim templum est verum, in quo non in líttera, sed in spíritu Dóminus adorátur. Hoc Dei templum est, quod fídei séries, non lápidum structúra fundávit. Deserúntur ergo qui óderant: eligúntur qui amatúri erant. Et ídeo ad montem venit Olivéti, ut novéllas óleas in sublími virtúte plantáret, quarum mater est illa, quæ sursum est, Jerúsalem. In hoc monte est ille cœléstis agrícola: ut plantáti omnes in domo Dei, possint virítim dícere: Ego autem sicut olíva fructífera in domo Dómini."
+		]
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Dóminus mecum est tamquam bellátor fortis: proptérea persecúti sunt me, et intellígere non potuérunt: Dómine probas renes et corda:",
+		"responsum":"Tibi revelávi causam meam.",
+		"versus":"Vidísti Dómine iniquitátes eórum advérsum me: júdica judícium meum."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Et fortásse ipse mons Christus est. Quis enim álius tales fructus ferret oleárum, non curvescéntium ubertáte baccárum, sed spíritus plenitúdine Géntium fœcundárum? Ipse est per quem ascéndimus, et ad quem ascéndimus. Ipse est jánua, ipse est via, qui aperítur, et qui áperit: qui pulsátur ab ingrediéntibus, et ab eméritis adorátur. Ergo in castéllo erat, et ligátus erat pullus cum ásina: non póterat solvi nisi jussu Dómini. Solvit eum manus apostólica. Talis actus, talis vita, talis grátia. Esto talis et tu, ut possis ligátos sólvere."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Dixérunt ímpii apud se, non recte cogitántes: Circumveniámus justum, quóniam contrárius est opéribus nostris: promíttit se sciéntiam Dei habére, Fílium Dei se nóminat, et gloriátur patrem se habére Deum:",
+		"responsum":"Videámus si sermónes illíus veri sunt: et si est vere Fílius Dei, líberet eum de mánibus nostris: morte turpíssima condemnémus eum.",
+		"versus":"Tamquam nugáces æstimáti sumus ab illo, et ábstinet se a viis nostris tamquam ab immundítiis: et præfert novíssima justórum."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Nunc considerémus qui fúerint illi, qui erróre detécto, de paradíso ejécti, in castéllum sint relegáti. Et vides, quemádmodum quos mors expúlerat, vita revocáverit. Et ídeo secúndum Matthǽum, et ásinam et pullum légimus: ut quia in duóbus homínibus utérque fúerat sexus expúlsus, in duóbus animálibus sexus utérque revocétur. Ergo illic in ásina matre quasi Hevam figurávit erróris: hic autem in pullo generalitátem pópuli Gentílis expréssit: et ídeo pullo sedétur ásinæ. Et bene, in quo nemo sedit: quia nullus, ántequam Christus, natiónum pópulos vocávit ad Ecclésiam. Dénique secúndum Marcum sic habes: Quem nemo adhuc sedit hóminum."
+	},
+	{
+		"tags":["dominica-in-palmis","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"incipit":"Circumdedérunt me viri mendáces: sine causa flagéllis cecidérunt me:",
+		"responsum":"Sed tu Dómine defénsor víndica me.",
+		"versus":"Quóniam tribulátio próxima est, et non est qui ádjuvet."
 	},
 	{
 		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-i"],
@@ -64,7 +165,7 @@
 	},
 	{
 		"tags":["dominica-in-palmis","sexta","capitulum"],
-		"datum":"Humiliávit semetípsum factus obédiens usque ad mortem, mortem autem crucis. + Propter quod et Deus exaltávit illum, * et donávit illi nomen, quod est super omne nomen."
+		"datum":"[Philipp. 2.]/Humiliávit semetípsum factus obédiens usque ad mortem, mortem autem crucis. + Propter quod et Deus exaltávit illum, * et donávit illi nomen, quod est super omne nomen."
 	},
 	{
 		"tags":["dominica-in-palmis","nona","antiphona"],
@@ -73,7 +174,7 @@
 	},
 	{
 		"tags":["dominica-in-palmis","nona","capitulum"],
-		"datum":"In nómine Jesu omne genu flectátur cœléstium, terréstrium, et infernórum: + et omnis lingua confiteátur, * quia Dóminus Jesus Christus in glória est Dei Patris."
+		"datum":"[Philipp. 2. b.]/In nómine Jesu omne genu flectátur cœléstium, terréstrium, et infernórum: + et omnis lingua confiteátur, * quia Dóminus Jesus Christus in glória est Dei Patris."
 	},
 	{
 		"tags":["dominica-in-palmis","ii-vesperae","antiphona","antiphona-magnificat"],
@@ -85,27 +186,78 @@
 		"datum":"Feria II Majoris Hebdomadæ"
 	},
 	{
-		"tags":["hebdomada-sancta","feria-ii","antiphona","antiphona-i"],
+		"tags":["hebdomada-sancta","feria-ii","matutinum","benedictio"],
+		"datum":[["benedictio","evangelica-lectio"]]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 12.]/Ante sex dies Paschæ venit Jesus Bethániam, ubi Lázarus fúerat mórtuus, quem suscitávit Jesus. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tractus 50. in Joann., post init.]/Ne putárent hómines phantásma esse factum, quia mórtuus resurréxit, Lázarus unus erat ex recumbéntibus: vivébat, loquebátur, epulabátur, véritas ostendebátur, infidélitas Judæórum confundebátur. Discumbébat ergo Jesus cum Lázaro, et céteris: ministrábat Martha una ex soróribus Lázari. María vero, áltera soror Lázari, accépit libram unguénti nardi pístici pretiósi, et unxit pedes Jesu, et extérsit capíllis suis pedes ejus, et domus impléta est ex odóre unguénti. Factum audívimus: mystérium requirámus."
+		]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Viri ímpii dixérunt: Opprimámus virum justum injúste, et deglutiámus eum tamquam inférnus vivum: auferámus memóriam illíus de terra: et de spóliis ejus sortem mittámus inter nos: ipsi enim homicídæ thesaurizavérunt sibi mala.",
+		"responsum":"Insipiéntes et malígni odérunt sapiéntiam: et rei facti sunt in cogitatiónibus suis.",
+		"versus":"Hæc cogitavérunt, et erravérunt: et excæcávit illos malítia eórum."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii","matutinum","lectio","lectio-ii"],
+		"datum":"Quæcúmque ánima fidélis vis esse, cum María unge pedes Dómini pretióso unguénto. Unguéntum illud justítia fuit, ídeo libra fuit: erat autem unguéntum nardi pístici pretiósi. Quod ait, pístici, locum áliquem crédere debémus, unde hoc erat unguéntum pretiósum: nec tamen hoc vacat, et sacraménto óptime cónsonat. Pistis græce, fides latíne dícitur. Quærébas operári justítiam. Justus ex fide vivit. Unge pedes Jesu bene vivéndo: Domínica sectáre vestígia. Capíllis terge: si habes supérflua, da paupéribus, et Dómini pedes tersísti: capílli enim supérflua córporis vidéntur. Habes quod agas de supérfluis tuis: tibi supérflua sunt, sed Dómini pédibus necessária sunt. Forte in terra Dómini pedes índigent."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Oppróbrium factus sum nimis inimícis meis: vidérunt me, et movérunt cápita sua:",
+		"responsum":"Ádjuva me Dómine Deus meus.",
+		"versus":"Locúti sunt advérsum me lingua dolósa, et sermónibus ódii circumdedérunt me."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii","matutinum","lectio","lectio-iii"],
+		"datum":"De quibus enim, nisi de membris suis in fine dictúrus est: Cum uni ex mínimis meis fecístis, mihi fecístis? Supérflua vestra impendístis: sed pédibus meis obsecúti estis. Domus autem impléta est odóre: mundus implétus est fama bona: nam odor bonus, fama bona est. Qui male vivunt, et Christiáni vocántur, injúriam Christo fáciunt: de quálibus dictum est, quod per eos nomen Dómini blasphemátur. Si per tales nomen Dei blasphemátur, per bonos nomen Dómini laudátur. Audi Apóstolum: Christi bonus odor sumus, inquit, in omni loco."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-ii","matutinum","responsorium","responsorium-iii"],
+		"incipit":"Insurrexérunt in me viri iníqui absque misericórdia, quæsiérunt me interfícere: et non pepercérunt in fáciem meam spúere, et lánceis suis vulneravérunt me: et concússa sunt ómnia ossa mea:",
+		"responsum":"Ego autem existimábam me tamquam mórtuum super terram.",
+		"versus":"Effudérunt furórem suum in me: fremuérunt contra me déntibus suis."
+	},
+	{
+		"tags":[
+			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-i"],
+			["hebdomada-sancta","feria-ii","prima","antiphona","antiphona-i"]
+		],
 		"src":"gregobase/17741",
 		"datum":"Fáciem meam * non avérti ab increpántibus, et conspuéntibus in me."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-ii","antiphona","antiphona-ii"],
+		"tags":[
+			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-ii"],
+			["hebdomada-sancta","feria-ii","tertia","antiphona","antiphona-ii"]
+		],
 		"src":"gregobase/12266",
 		"datum":"Frámea suscitáre * advérsus eos, qui dispérgunt gregem meum."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-ii","antiphona","antiphona-iii"],
+		"tags":[
+			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-iii"],
+			["hebdomada-sancta","feria-ii","sexta","antiphona","antiphona-iii"]
+		],
 		"src":"gregobase/12202",
 		"datum":"Appendérunt * mercédem meam trigínta argénteis: quibus appretiátus sum ab eis."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-ii","antiphona","antiphona-iv"],
+		"tags":["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-iv"],
 		"src":"gregobase/12730",
 		"datum":"Inundavérunt aquæ * super caput meum: dixi, Périi: invocábo nomen tuum Dómine Deus."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-ii","antiphona","antiphona-v"],
+		"tags":[
+			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-v"],
+			["hebdomada-sancta","feria-ii","nona","antiphona","antiphona-v"]
+		],
 		"src":"gregobase/12587",
 		"datum":"Lábia insurgéntium, * et cogitatiónes eórum vide Dómine."
 	},
@@ -133,27 +285,72 @@
 		"datum":"Feria III Majoris Hebdomadæ"
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iii","antiphona","antiphona-i"],
+		"tags":["hebdomada-sancta","feria-iii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"De Jeremía Prophéta.",
+			"[Jerem. 11. c.]/Quid est, quod diléctus meus in domo mea fecit scélera multa? numquid carnes sanctæ aúferent a te malítias tuas, in quibus gloriáta es? Olívam úberem, pulchram, fructíferam, speciósam vocávit Dóminus nomen tuum: ad vocem loquélæ, grandis exársit ignis in ea, et combústa sunt frutéta ejus. Et Dóminus exercítuum qui plantávit te, locútus est super te malum: pro malis domus Ísraël et domus Juda, quæ fecérunt sibi ad irritándum me, libántes Báalim. Tu autem Dómine demonstrásti mihi, et cognóvi: tunc ostendísti mihi stúdia eórum. Et ego quasi agnus mansuétus, qui portátur ad víctimam: et non cognóvi quia cogitavérunt super me consília, dicéntes: Mittámus lignum in panem ejus, et eradámus eum de terra vivéntium, et nomen ejus non memorétur ámplius. Tu autem Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam."
+		]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Contumélias et terróres passus sum ab eis, qui erant pacífici mei, et custodiéntes latus meum, dicéntes: Decipiámus eum, et prævaleámus illi: sed tu Dómine mecum es tamquam bellátor fortis.",
+		"responsum":"Cadant in oppróbrium sempitérnum, ut vídeam vindíctam in eis, quia tibi revelávi causam meam.",
+		"versus":"Júdica Dómine causam ánimæ meæ, defénsor vitæ meæ."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iii","matutinum","lectio","lectio-ii"],
+		"datum":"[Jerem. 12.]/Justus quidem tu es Dómine, si dísputem tecum: verúmtamen justa loquar ad te: Quare via impiórum prosperátur: bene est ómnibus, qui prævaricántur, et iníque agunt? Plantásti eos, et radícem misérunt: profíciunt et fáciunt fructum: prope es tu ori eórum, et longe a rénibus eórum. Et tu Dómine nosti me, vidísti me, et probásti cor meum tecum: cóngrega eos quasi gregem ad víctimam, et sanctífica eos in die occisiónis. Úsquequo lugébit terra, et herba omnis regiónis siccábitur propter malítiam habitántium in ea? consúmptum est ánimal, et vólucre, quóniam dixérunt: Non vidébit novíssima nostra."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Deus Ísraël, propter te sustínui impropérium, opéruit reveréntia fáciem meam, extráneus factus sum frátribus meis, et hospes fíliis matris meæ:",
+		"responsum":"Quóniam zelus domus tuæ comédit me.",
+		"versus":"Inténde ánimæ meæ, et líbera eam, propter inimícos meos éripe me."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iii","matutinum","lectio","lectio-iii"],
+		"datum":"Relíqui domum meam, dimísi hæreditátem meam: dedi diléctam ánimam meam in manu inimicórum ejus. Facta est mihi hæréditas mea quasi leo in silva: dedit contra me vocem, ídeo odívi eam. Numquid avis díscolor hæréditas mea mihi? numquid avis tincta per totum? veníte, congregámini omnes béstiæ terræ, properáte ad devorándum. Pastóres multi demolíti sunt víneam meam, conculcavérunt partem meam: dedérunt portiónem meam desiderábilem in desértum solitúdinis. Posuérunt eam in dissipatiónem, luxítque super me: desolatióne desoláta est omnis terra, quia nullus est qui recógitet corde."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iii","matutinum","responsorium","responsorium-iii"],
+		"incipit":"Synagóga populórum circumdedérunt me: et non réddidi retribuéntibus mihi mala.",
+		"responsum":"Consumétur Dómine nequítia peccatórum, et díriges justum.",
+		"versus":"Júdica me Dómine secúndum justítiam meam, et secúndum innocéntiam meam super me."
+	},
+	{
+		"tags":[
+			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-i"],
+			["hebdomada-sancta","feria-iii","prima","antiphona","antiphona-i"]
+		],
 		"src":"gregobase/12528",
 		"datum":"Vide Dómine, * et consídera, quóniam tríbulor: velóciter exaúdi me."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iii","antiphona","antiphona-ii"],
+		"tags":[
+			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-ii"],
+			["hebdomada-sancta","feria-iii","tertia","antiphona","antiphona-ii"]
+		],
 		"src":"gregobase/12961",
 		"datum":"Discérne causam meam * Dómine: ab hómine iníquo et dolóso éripe me."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iii","antiphona","antiphona-iii"],
+		"tags":[
+			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-iii"],
+			["hebdomada-sancta","feria-iii","sexta","antiphona","antiphona-iii"]
+		],
 		"src":"gregobase/11893",
 		"datum":"Dum tribulárer * clamávi ad Dóminum de ventre ínferi, et exaudívit me."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iii","antiphona","antiphona-iv"],
+		"tags":["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-iv"],
 		"src":"gregobase/12815",
 		"datum":"Dómine vim pátior, * respónde pro me: quia néscio quid dicam inimícis meis."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iii","antiphona","antiphona-v"],
+		"tags":[
+			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-v"],
+			["hebdomada-sancta","feria-iii","nona","antiphona","antiphona-v"]
+		],
 		"src":"gregobase/12943",
 		"datum":"Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris."
 	},
@@ -182,27 +379,72 @@
 		"datum":"Feria IV Majoris Hebdomadæ"
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iv","antiphona","antiphona-i"],
+		"tags":["hebdomada-sancta","feria-iv","matutinum","lectio","lectio-i"],
+		"datum":[
+			"De Jeremía Prophéta.",
+			"[Jerem. 17. b.]/Exspectátio Ísraël Dómine: omnes, qui te derelínquunt, confundéntur: recedéntes a te, in terra scribéntur: quóniam dereliquérunt venam aquárum vivéntium Dóminum. Sana me Dómine, et sanábor: salvum me fac, et salvus ero: quóniam laus mea tu es. Ecce ipsi dicunt ad me: Ubi est verbum Dómini? véniat. Et ego non sum turbátus, te pastórem sequens: et diem hóminis non desiderávi, tu scis. Quod egréssum est de lábiis meis, rectum in conspéctu tuo fuit. Non sis tu mihi formídini, spes mea tu in die afflictiónis. Confundántur qui me persequúntur, et non confúndar ego: páveant illi, et non páveam ego: induc super eos diem afflictiónis, et dúplici contritióne cóntere eos."
+		]
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iv","matutinum","responsorium","responsorium-i"],
+		"incipit":"Locúti sunt advérsum me lingua dolósa, et sermónibus ódii circumdedérunt me: pro eo ut me dilígerent, detrahébant mihi:",
+		"responsum":"Ego autem orábam, et exaudísti me Dómine Deus meus.",
+		"versus":"Et posuérunt advérsum me mala pro bonis, et ódium pro dilectióne mea."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iv","matutinum","lectio","lectio-ii"],
+		"datum":"[Jerem. 18. b.]/Quis audívit tália horribília, quæ fecit nimis virgo Ísraël? Numquid defíciet de petra agri nix Líbani? aut evélli possunt aquæ erumpéntes frígidæ, et defluéntes? Quia oblítus est mei pópulus meus, frustra libántes, et impingéntes in viis suis, in sémitis sǽculi, ut ambulárent per eas in itínere non trito: ut fíeret terra eórum in desolatiónem, et in síbilum sempitérnum: omnis qui præteríerit per eam obstupéscet, et movébit caput suum. Sicut ventus urens dispérgam eos coram inimíco: dorsum, et non fáciem osténdam eis in die perditiónis eórum. Et dixérunt: Veníte, et cogitémus contra Jeremíam cogitatiónes: non enim períbit lex a sacerdóte, neque consílium a sapiénte, nec sermo a prophéta: veníte, et percutiámus eum lingua, et non attendámus ad univérsos sermónes ejus."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iv","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Dixérunt ímpii apud se, non recte cogitántes: Circumveniámus justum, quóniam contrárius est opéribus nostris: promíttit se sciéntiam Dei habére, Fílium Dei se nóminat, et gloriátur patrem se habére Deum:",
+		"responsum":"Videámus si sermónes illíus veri sunt: et si est vere Fílius Dei, líberet eum de mánibus nostris: morte turpíssima condemnémus eum.",
+		"versus":"Tamquam nugáces æstimáti sumus ab illo, et ábstinet se a viis nostris tamquam ab immundítiis: et præfert novíssima justórum."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iv","matutinum","lectio","lectio-iii"],
+		"datum":"Atténde Dómine ad me, et audi vocem adversariórum meórum. Numquid rédditur pro bono malum, quia fodérunt fóveam ánimæ meæ? Recordáre quod stéterim in conspéctu tuo, ut lóquerer pro eis bonum, et avérterem indignatiónem tuam ab eis. Proptérea da fílios eórum in famem, et deduc eos in manus gládii: fiant uxóres eórum absque líberis, et víduæ: et viri eárum interficiántur morte: júvenes eórum confodiántur gládio in prǽlio. Audiátur clamor de dómibus eórum: addúces enim super eos latrónem repénte: quia fodérunt fóveam ut cáperent me, et láqueos abscondérunt pédibus meis. Tu autem Dómine scis omne consílium eórum advérsum me in mortem: ne propitiéris iniquitáti eórum, et peccátum eórum a fácie tua non deleátur: fiant corruéntes in conspéctu tuo, in témpore furóris tui abútere eis."
+	},
+	{
+		"tags":["hebdomada-sancta","feria-iv","matutinum","responsorium","responsorium-iii"],
+		"incipit":"Circumdedérunt me viri mendáces: sine causa flagéllis cecidérunt me:",
+		"responsum":"Sed tu Dómine defénsor víndica me.",
+		"versus":"Quóniam tribulátio próxima est, et non est qui ádjuvet."
+	},
+	{
+		"tags":[
+			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-i"],
+			["hebdomada-sancta","feria-iv","prima","antiphona","antiphona-i"]
+		],
 		"src":"gregobase/11851",
 		"datum":"Líbera me * de sanguínibus Deus Deus meus: et exsultábit lingua mea justítiam tuam."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iv","antiphona","antiphona-ii"],
+		"tags":[
+			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-ii"],
+			["hebdomada-sancta","feria-iv","tertia","antiphona","antiphona-ii"]
+		],
 		"src":"gregobase/13255",
 		"datum":"Contumélias * et terróres passus sum ab eis: et Dóminus mecum est tamquam bellátor fortis."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iv","antiphona","antiphona-iii"],
+		"tags":[
+			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-iii"],
+			["hebdomada-sancta","feria-iv","sexta","antiphona","antiphona-iii"]
+		],
 		"src":"gregobase/20211",
 		"datum":"Ipsi vero * in vanum quæsiérunt ánimam meam, introíbunt in inferióra terræ."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iv","antiphona","antiphona-iv"],
+		"tags":["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-iv"],
 		"src":"gregobase/12639",
 		"datum":"Omnes inimíci mei * audiérunt malum meum: Dómine lætáti sunt, quóniam tu fecísti."
 	},
 	{
-		"tags":["hebdomada-sancta","feria-iv","antiphona","antiphona-v"],
+		"tags":[
+			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-v"],
+			["hebdomada-sancta","feria-iv","nona","antiphona","antiphona-v"]
+		],
 		"src":"gregobase/20210",
 		"datum":"Álliga Dómine * in vínculis natiónes Géntium, et reges eárum in compédibus."
 	},

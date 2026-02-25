@@ -126,7 +126,10 @@
 		"response":[
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
+			{"include":["in-tempore-passionis","feria","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
+			{"include":["in-tempore-passionis","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["in-tempore-passionis","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
@@ -216,5 +219,25 @@
 		"response":[
 			{"include":["maria"],"exclude":["officium-parvum-bmv"],"response":"dele","target":0}
 		]
+	},
+	{
+		"include":["cathedra-petri"],
+		"response":"crea",
+		"adde":["commemoratio","paulus","semiduplex"]
+	},
+	{
+		"include":["conversio-pauli"],
+		"response":"crea",
+		"adde":["commemoratio","petrus","semiduplex"]
+	},
+	{
+		"include":["cathedra-petri-antiochiae"],
+		"response":"crea",
+		"adde":["commemoratio","paulus","semiduplex"]
+	},
+	{
+		"include":["petrus-ad-vincula"],
+		"response":"crea",
+		"adde":["commemoratio","paulus","semiduplex"]
 	}
 ]
