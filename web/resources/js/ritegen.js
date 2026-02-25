@@ -157,6 +157,9 @@ function claw(data) {
 
 trivialchants = ['deus-in-adjutorium'];
 function stringrender(data, translation = false) {
+	if (data.match(/^\[.+?\]$/)) {
+		return `<span class='rite-text-rubric'>${rubricrender(data.slice(1, -1))}</span>`;
+	}
 	if (translation) {
 		data = data.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s)/g, '');
 	}
@@ -183,6 +186,27 @@ function stringrender(data, translation = false) {
 		.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 	return data;
 };
+
+function rubricrender(data) {
+	data = data.replaceAll(/\[(.+?)\]/g, '<span class=\'black-rubric\'>\$1</span>');
+	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
+		.replaceAll('É', 'E').replaceAll('Í', 'I')
+		.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
+		.replaceAll('Ý', 'Y');
+	data = data.replaceAll(/(?<!<)\//g, '<br>');
+	data = data.replace(/\n/g, '<br>')
+		.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
+		.replace(/N\./g, '<span class=\'red\'>N.</span>')
+		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
+		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
+		.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
+		.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
+		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
+		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
+		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
+		.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
+	return data;
+}
 
 // Obvious
 function paragraphclosed(string) {
@@ -233,10 +257,11 @@ function render(data, chant) {
 					if (plus.startsWith('<p') && !paragraphclosed(ret)) {
 						ret += '</p>';
 					}
+					// The exclusions in the second condition prevent nested paragraphs - especially important for making sure rubrics above paragraphs are handled right.
 					if (paragraphclosed(ret) && !(plus.startsWith('<div') || plus.startsWith('<p') || plus.startsWith('<h'))) {
 						if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
 							ret += `<p class="rite-text ${parenttags.join(' ')} rite-text-rubric rite-text-rubric-above-paragraph">`;
-							plus = stringrender(data[i].slice(1, -2));
+							plus = rubricrender(data[i].slice(1, -2));
 						} else {
 							ret += `<p class="rite-text ${parenttags.join(' ')}">`;
 						}
@@ -319,7 +344,9 @@ function render(data, chant) {
 						}
 					} else if (uniquelyhas('antiphona-magnificat') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-nunc-dimittis')) {
 						header = makeheader('Canticum B. Mariæ Virg.');
-					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('repetita')) {
+					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('repetita') && !data.quaesitum.includes('triduum')) {
+						header = makeheader('Canticum Simeonis.');
+					} else if (uniquelyhas('nunc-dimittis') && data.quaesitum.includes('triduum')) {
 						header = makeheader('Canticum Simeonis.');
 					} else if (uniquelyhas('antiphona-benedictus') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-magnificat')) {
 						header = makeheader('Canticum Zachariæ.');
@@ -411,24 +438,41 @@ function render(data, chant) {
 							if (annotation) {
 								reading = reading.replace(/^\[.+?\]\//g,'');
 								annotation = annotation[0].slice(1, -2);
-								return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${stringrender(annotation)}</p><p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
+								return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${rubricrender(annotation)}</p><p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 							}
 							return `<p class="rite-text ${cssclasses}">${renderinner(reading, translated, [])}`
 						}
 
-						// For the first reading from a Homily
+						// For the Lamentations of the Sacred Triduum.
+						if (data.quaesitum.includes('sabbatum-sanctum') && data.quaesitum.includes('nocturna-i') && data.quaesitum.includes('lectio-iii')) {
+							reading = [reading[0], reading[1] + '<br>' + reading[2].replace(/^(.)/, '<b class="red">\$1</b>')];
+						} else if (data.quaesitum.includes('triduum') && data.quaesitum.includes('nocturna-i')) {
+							title = '';
+							if (data.quaesitum.includes('lectio-i')) {
+								title = `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>`;
+								reading = reading.slice(1);
+							}
+							annotation = reading[0].match(/^\[.+?\]\//g);
+							if (annotation) {
+								reading[0] = reading[0].replace(/^\[.+?\]\//g,'');
+								annotation = `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${rubricrender(annotation[0].slice(1, -2))}</p>`;
+							} else {
+								annotation = '';
+							}
+							body = reading.slice(0, -1).map((i) => stringrender(i).replace(/^(.)(.+?\.\s)(.)/, '<b class="red">\$1</b>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + reading[reading.length - 1].replace(/^(.)/, '<b class="red">\$1</b>');
+							return title + annotation + `<p class="rite-text lectio-sequens">${body}</p>`;
+						}
+
+						// For the first reading from a Homily.
 						if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '))}`
-						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings
+						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings.
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' '), translated, 'lectio-incipiens ' + data.tags.join(' '))}`
-						// Weird structuring but basically this is needed since sometimes readings are begun without title.
-						} else if (data.quaesitum.includes('lectio-i')) {
-							if (Array.isArray(reading)) { reading = reading.join(' &para; ')};
-							return annotate(reading, translated, 'lectio-incipiens ' + data.tags.join(' '));
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' '), translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
+						// Note that an untitled reading may still be a first reading. This is due to the fact that most Saints lives are begun without title.
 						} else {
 							if (Array.isArray(reading)) { reading = reading.join(' &para; '); translated = translated.join(' ');};
-							return annotate(reading, translated, 'lectio-sequens ' + data.tags.join(' '));
+							return annotate(reading, translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '));
 						}
 					}
 
@@ -505,7 +549,7 @@ function render(data, chant) {
 				}
 
 				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
-				if (fullparagraph.some(i => uniquelyhas(i))) {
+				if (fullparagraph.some(i => uniquelyhas(i)) || (data.tags.includes('triduum') && data.tags.includes('collecta'))) {
 					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
 					if (ret == '') {
 						return '';
