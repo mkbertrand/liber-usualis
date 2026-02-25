@@ -13,6 +13,243 @@
 		"datum":""
 	},
 	{
+		"tags":["triduum","matutinum","nocturnae"],
+		"datum":[
+			"[In fine cujuslibet Psalmi ad Matutinum, exstinguitur una ex quindecim candelis positis in candalabro triangulari ante altare.]",
+			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","tres-antiphonae"]
+		]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/Q6F5N1A1",
+		"datum":"Zelus domus tuæ * comédit me, et oppróbria exprobrántium tibi cecidérunt super me."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxviii"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/Q6F5N1A2",
+		"datum":"Avertántur retrórsum, * et erubéscant, qui cógitant mihi mala."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxix"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/Q6F5N1A3",
+		"datum":"Deus meus * éripe me de manu peccatóris."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxx"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Avertántur retrórsum, et erubéscant.","R. Qui cógitant mihi mala."]
+	},
+	{
+		"tags":["triduum","matutinum","pater-noster-semisecreta"],
+		"datum":[
+			"[Dicitur secreto./]",
+			["pater-noster-secreta"]
+		]
+	},
+	{
+		"tags":["triduum","matutinum","absolutio"],
+		"datum":""
+	},
+	{
+		"tags":["triduum","matutinum","formula","formula-lectionis"],
+		"datum":[["formula","formula-lectionis","legitur-directe"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Íncipit Lamentátio Jeremíæ Prophétæ.",
+			"[Cap 1.]/Aleph.",
+			"Quómodo sedet sola cívitas plena pópulo: facta est quasi vídua dómina Géntium: princeps provinciárum facta est sub tribúto.",
+			"Beth. Plorans plorávit in nocte, et lácrimæ ejus in maxíllis ejus: non est qui consolétur eam ex ómnibus caris ejus: omnes amíci ejus sprevérunt eam, et facti sunt ei inimíci.",
+			"Ghimel. Migrávit Judas propter afflictiónem, et multitúdinem servitútis: habitávit inter Gentes, nec invénit réquiem: omnes persecutóres ejus apprehendérunt eam inter angústias.",
+			"Daleth. Viæ Sion lugent eo quod non sint qui véniant ad solemnitátem: omnes portæ ejus destrúctæ: sacerdótes ejus geméntes: vírgines ejus squálidæ, et ipsa oppréssa amaritúdine.",
+			"He. Facti sunt hostes ejus in cápite, inimíci ejus locupletáti sunt: quia Dóminus locútus est super eam propter multitúdinem iniquitátum ejus: párvuli ejus ducti sunt in captivitátem, ante fáciem tribulántis.",
+			"Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum."
+		]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"In monte Olivéti orávit ad Patrem: Pater, si fíeri potest, tránseat a me calix iste:",
+		"responsum":"Spíritus quidem promptus est, caro autem infírma.",
+		"versus":"Vigiláte, et oráte, ut non intrétis in tentatiónem."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":[
+			"Vau.",
+			"Et egréssus est a fília Sion omnis decor ejus: facti sunt príncipes ejus velut aríetes non inveniéntes páscua:  et abiérunt absque fortitúdine ante fáciem subsequéntis.",
+			"Zaïn. Recordáta est Jerúsalem diérum afflictiónis suæ, et prævaricatiónis ómnium desiderabílium suórum, quæ habúerat a diébus antíquis, cum cáderet pópulus ejus in manu hostíli, et non esset auxiliátor: vidérunt eam hostes, et derisérunt sábbata ejus.",
+			"Heth. Peccátum peccávit Jerúsalem, proptérea instábilis facta est: omnes, qui glorificábant eam, sprevérunt illam, quia vidérunt ignomíniam ejus: ipsa autem gemens convérsa est retrórsum.",
+			"Teth. Sordes ejus in pédibus ejus, nec ejus in pédibus ejus, nec recordáta est finis sui: depósita est veheménter, non habens consolatórem: vide Dómine afflictiónem meam, quóniam eréctus est inimícus.",
+			"Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum."
+		]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Tristis est ánima mea usque ad mortem: sustinéte hic, et vigiláte mecum: nunc vidébitis turbam, quæ circúmdabit me:",
+		"responsum":"Vos fugam capiétis, et ego vadam immolári pro vobis.",
+		"versus":"Ecce appropínquat hora, et Fílius hóminis tradétur in manus peccatórum."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":[
+			"Jod.",
+			"Manum suam misit hostis ad ómnia desiderabília ejus: quia vidit Gentes ingréssas sanctuárium suum, de quibus præcéperas ne intrárent in ecclésiam tuam.",
+			"Caph. Omnis pópulus ejus gemens, et quærens panem: dedérunt pretiósa quæque pro cibo ad refocillándam ánimam. Vide Dómine et consídera, quóniam facta sum vilis.",
+			"Lamed. O vos omnes, qui transítis per viam, atténdite, et vidéte si est dolor sicut dolor meus: quóniam vindemiávit me ut locútus est Dóminus in die iræ furóris sui.",
+			"Mem. De excélso misit ignem in óssibus meis, et erudívit me: expándit rete pédibus meis, convértit me retrórsum: pósuit me desolátam, tota die mœróre conféctam.",
+			"Nun. Vigilávit jugum iniquitátum meárum: in manu ejus convolútæ sunt, et impósitæ collo meo: infirmáta est virtus mea: dedit me Dóminus in manu, de qua non pótero súrgere.",
+			"Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum."
+		]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Ecce vídimus eum non habéntem spéciem, neque decórem: aspéctus ejus in eo non est: hic peccáta nostra portávit, et pro nobis dolet: ipse autem vulnerátus est propter iniquitátes nostras:",
+		"responsum":"Cujus livóre sanáti sumus.",
+		"versus":"Vere languóres nostros ipse tulit, et dolóres nostros ipse portávit."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/Q6F5N2A1",
+		"datum":"Liberávit Dóminus * paúperem a poténte, et ínopem, cui non erat adjútor."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxi"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/Q6F5N2A2",
+		"datum":"Cogitavérunt ímpii, * et locúti sunt nequítiam: iniquitátem in excélso locúti sunt."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxii"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/Q6F5N2A3",
+		"datum":"Exsúrge Dómine, * et júdica causam meam."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxiii"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Deus meus éripe me de manu peccatóris.","R. Et de manu contra legem agéntis, et iníqui."]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Ex Tractátu sancti Augustíni Epíscopi super Psalmos.",
+			"[In Psalmum 54. ad 1. vers.]/Exaúdi Deus oratiónem meam, et ne despéxeris deprecatiónem meam: inténde mihi, et exaúdi me. Satagéntis, sollíciti, in tribulatióne pósiti, verba sunt ista. Orat multa pátiens, de malo liberári desíderans. Súperest ut videámus in quo malo sit: et cum dícere cœ\u0301perit: agnoscámus ibi nos esse: ut communicáta tribulatióne, conjungámus oratiónem. Contristátus sum, inquit, in exercitatióne mea, et conturbátus sum. Ubi contristátus? ubi conturbátus? In exercitatióne mea, inquit. Hómines malos, quos pátitur, commemorátus est: eamdémque passiónem malórum hóminum, exercitatiónem suam dixit. Ne putétis gratis esse malos in hoc mundo, et nihil boni de illis ágere Deum. Omnis malus aut ídeo vivit, ut corrigátur: aut ídeo vivit, ut per illum bonus exerceátur."
+		]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Amícus meus ósculi me trádidit signo: quem osculátus fúero, ipse est, tenéte eum: hoc malum fecit signum, qui per ósculum adimplévit homicídium.",
+		"responsum":"Infélix prætermísit prétium sánguinis, et in fine láqueo se suspéndit.",
+		"versus":"Bonum erat ei, si natus non fuísset homo ille."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Útinam ergo qui nos modo exércent, convertántur, et nobíscum exerceántur: tamen quámdiu ita sunt ut exérceant, non eos odérimus: quia in eo quod malus est quis eórum, utrum usque in finem perseveratúrus sit, ignorámus. Et plerúmque cum tibi vidéris odísse inimícum, fratrem odísti, et nescis. Diábolus, et ángeli ejus in Scriptúris sanctis manifestáti sunt nobis, quod ad ignem ætérnum sint destináti. Ipsórum tantum desperánda est corréctio, contra quos habémus occúltam luctam: ad quam luctam nos armat Apóstolus, dicens: Non est nobis colluctátio advérsus carnem et sánguinem: id est, non advérsus hómines, quos vidétis, sed advérsus príncipes, et potestátes, et rectóres mundi, tenebrárum harum. Ne forte cum dixísset, mundi, intellígeres dǽmones esse rectóres cœli et terræ. Mundi dixit, tenebrárum harum: mundi dixit, amatórum mundi: mundi dixit, impiórum et iniquórum: mundi dixit, de quo dicit Evangélium: Et mundus eum non cognóvit."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Judas mercátor péssimus ósculo pétiit Dóminum: ille ut agnus ínnocens non negávit Judæ ósculum:",
+		"responsum":"Denariórum número Christum Judǽis trádidit.",
+		"versus":"Mélius illi erat, si natus non fuísset."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Quóniam vidi iniquitátem, et contradictiónem in civitáte. Atténde glóriam crucis ipsíus. Jam in fronte regum crux illa fixa est, cui inimíci insultavérunt. Efféctus probávit virtútem: dómuit orbem non ferro, sed ligno. Lignum crucis contuméliis dignum visum est inimícis, et ante ipsum lignum stantes caput agitábant, et dicébant: Si Fílius Dei est, descéndat de cruce. Extendébat ille manus suas ad pópulum non credéntem et contradicéntem. Si enim justus est, qui ex fide vivit, iníquus est non habet fidem. Quod ergo hic ait, iniquitátem; perfídiam intéllige. Vidébat ergo Dóminus in civitáte iniquitátem et contradictiónem, et extendébat manus suas ad pópulum non credéntem, et contradicéntem: et tamen et ipsos exspéctans dicébat: Pater, ignósce illis, quia nésciunt quid fáciunt."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Unus ex discípulis meis tradet me hódie: Væ illi per quem tradar ego:",
+		"responsum":"Mélius illi erat, si natus non fuísset.",
+		"versus":"Qui intíngit mecum manum in parópside, hic me traditúrus est in manus peccatórum."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/Q6F5N3A1",
+		"datum":"Dixi iníquis: * Nolíte loqui advérsus Deum iniquitátem."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxiv"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/Q6F5N3A2",
+		"datum":"Terra trémuit * et quiévit, dum exsúrgeret in judício Deus."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxv"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/Q6F5N3A3",
+		"datum":"In die tribulatiónis meæ * Deum exquisívi mánibus meis."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxvi"]]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Exsúrge Dómine.","R. Et júdica causam meam."]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"De Epístola prima beáti Pauli Apóstoli ad Corínthios.",
+			"[I. Cor. 11. d.]/Hoc autem præcípio: non laudans quod non in mélius, sed in detérius convenítis. Primum quidem conveniéntibus vobis in Ecclésiam, aúdio scissúras esse inter vos, et ex parte credo. Nam opórtet et hǽreses esse, ut et qui probáti sunt, manifésti fiant in vobis. Conveniéntibus ergo vobis in unum, jam non est Domínicam cœnam manducáre. Unusquísque enim suam cœnam præsúmit ad manducándum. Et álius quidem ésurit, álius autem ébrius est. Numquid domos non habétis ad manducándum et bibéndum? aut Ecclésiam Dei contémnitis, et confúnditis eos, qui non habent? Quid dicam vobis? Laudo vos? in hoc non laudo."
+		]
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Eram quasi agnus ínnocens; ductus sum ad immolándum, et nesciébam: consílium fecérunt inimíci mei advérsum me, dicéntes:",
+		"responsum":"Veníte, mittámus lignum in panem ejus, et eradámus eum de terra vivéntium.",
+		"versus":"Omnes inimíci mei advérsum me cogitábant mala mihi: verbum iníquum mandavérunt advérsum me, dicéntes."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Ego enim accépi a Dómino quod et trádidi vobis, quóniam Dóminus Jesus in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit: Accípite, et manducáte: hoc est corpus meum, quod pro vobis tradétur: hoc fácite in meam commemoratiónem. Simíliter et cálicem, postquam cœnávit, dicens: Hic calix novum testaméntum est in meo sánguine: hoc fácite quotiescúmque bibétis, in meam commemoratiónem. Quotiescúmque enim manducábitis panem hunc, et cálicem bibétis: mortem Dómini annuntiábitis donec véniat."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Una ora non potuístis vigiláre mecum, qui exhortabámini mori pro me?",
+		"responsum":"Vel Judam non vidétis, quómodo non dormit, sed festínat trádere me Judǽis?",
+		"versus":"Quid dormítis? súrgite, et oráte, ne intrétis in tentatiónem."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Ítaque quicúmque manducáverit panem hunc, vel bíberit cálicem Dómini indígne: reus erit córporis et sánguinis Dómini. Probet autem seípsum homo: et sic de pane illo edat, et de cálice bibat. Qui enim mandúcat et bibit indígne, judícium sibi mandúcat et bibit: non dijúdicans corpus Dómini. Ídeo inter vos multi infírmi et imbecílles, et dórmiunt multi. Quod si nosmetípsos dijudicarémus, non útique judicarémur. Dum judicámur autem, a Dómino corrípimur, ut non cum hoc mundo damnémur. Ítaque, fratres mei, cum convenítis ad manducándum, ínvicem exspectáte. Si quis ésurit, domi mandúcet: ut non in judícium conveniátis. Cétera autem, cum vénero, dispónam."
+	},
+	{
+		"tags":["coena-domini","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+		"incipit":"Senióres pópuli consílium fecérunt,",
+		"responsum":"Ut Jesum dolo tenérent, et occíderent: cum gládiis et fústibus exiérunt tamquam ad latrónem.",
+		"versus":"Collegérunt pontífices et pharisǽi concílium."
+	},
+	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-i"],
 		"src":"gregobase/2046",
 		"datum":"Justificéris Dómine * in sermónibus tuis, et vincas cum judicáris."
@@ -95,8 +332,24 @@
 		"sabbatum-sanctum":"V. Christus factus est pro nobis obédiens usque ad mortem. Mortem autem crucis. Propter quod et Deus exaltávit illum, et dedit illi nomen, quod est super omne nomen."
 	},
 	{
+		"tags":["triduum","laudes","preces"],
+		"datum":[
+			"[Interim dum dicitur Canticum Benedictus, exstinctis prius omnibus candelis in candelabro triangulari, præter unam, quæ posita est in summitate candelabri, exstinguuntur paulatim sex candelæ positæ a principio supra altare, ita ut in ultimo versu exstinguantur ultima candela: similiter exstinguuntur lampades et luminaria per ecclesiam. Cum repetitur Antiphona Traditur, accipitur suprema candela ex candelabro, et absconditur sub altari in cornu Epistolæ. Repetita Antiphona post Benedictus, dicitur:]",
+			["christus-factus"],
+			"[Cum incipitur V. Christus factus est, omnes genuflectunt.]",
+			"[Dicitur secreto./]",
+			["pater-noster-secreta"],
+			"[Aliquantulum altius./]",
+			["/psalmi/psalmus-l"],
+			"[Similiter voce./]",
+			["collecta"],
+			"[Dicitur sub silentio.]",
+			["collecta","terminatio"],
+			"[Finita Oratione, fit fragor et strepitus aliquantulum: mox profertur candela accensa de sub altari, et omnes surgunt, et cum silentio discedunt.]"
+		]
+	},
+	{
 		"tags":[
-			["triduum","laudes","preces"],
 			["triduum","prima","preces"],
 			["triduum","tertia","preces"],
 			["triduum","sexta","preces"],
@@ -106,6 +359,7 @@
 		],
 		"datum":[
 			["christus-factus"],
+			"[Dicitur secreto./]",
 			["pater-noster-secreta"],
 			["/psalmi/psalmus-l"],
 			["collecta"],
