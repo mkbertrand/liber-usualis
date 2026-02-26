@@ -93,6 +93,13 @@
 		]
 	},
 	{
+		"include":["quatuor-tempora","ii-vesperae"],
+		"recheck":false,
+		"response":[
+			{"include":["feria","ii-vesperae"],"response":"combina","target":0}
+		]
+	},
+	{
 		"include":["suffragium","de-cruce"],
 		"response":[
 			{"include":["dominica"],"response":"dele","target":0},

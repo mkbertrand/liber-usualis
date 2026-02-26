@@ -322,11 +322,21 @@
 	{
 		"tags":["prima","feria","antiphona"],
 		"src":"gregobase/11135",
-		"datum":"Beati * qui ámbulant in lege tua Dómine."
+		"datum":"Beati qui ámbulant * in lege tua Dómine."
 	},
 	{
 		"tags":["prima","feria","capitulum"],
 		"datum":"[Zach. 8. d.]/Pacem et veritátem dilígite, * ait Dóminus omnípotens."
+	},
+	{
+		"tags":["prima","in-tempore-quadragesimae","temporale","antiphona"],
+		"src":"gregobase/12733",
+		"datum":"Vivo ego, * dicit Dóminus: nolo mortem peccatóris, sed ut magis convertátur et vivat."
+	},
+	{
+		"tags":["prima","in-tempore-passionis","temporale","antiphona"],
+		"src":"gregobase/12847",
+		"datum":"Líbera me Dómine, * et pone me juxta te: et cujúsvis manus pugnet contra me."
 	},
 	{
 		"tags":["prima","sollemnitas","hymnus"],
