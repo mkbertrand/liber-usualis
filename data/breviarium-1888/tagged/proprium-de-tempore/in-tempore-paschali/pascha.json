@@ -58,7 +58,7 @@
 	{
 		"tags":["pascha","matutinum","nocturnae"],
 		"datum":[
-			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae","te-deum"]
+			["matutinum","nocturna","tres-psalmi","tres-antiphonae","te-deum"]
 		]
 	},
 	{
@@ -94,20 +94,32 @@
 		"datum":[["/psalmi/psalmus-iii,gloria"]]
 	},
 	{
-		"tags":["pascha","matutinum","versiculus"],
+		"tags":[
+			["pascha","dominica","matutinum","versiculus"],
+			["pascha","feria-ii","matutinum","versiculus"],
+			["pascha","feria-v","matutinum","versiculus"]
+		],
 		"datum":["V. Surréxit Dóminus de sepúlchro, allelúja.","R. Qui pro nobis pepéndit in ligno, allelúja."]
+	},
+	{
+		"tags":["pascha","dominica","matutinum","absolutio"],
+		"datum":[["matutinum","nocturna-i","absolutio"]]
+	},
+	{
+		"tags":["pascha","matutinum","benedictio"],
+		"datum":[["benedictio","evangelica-lectio"]]
 	},
 	{
 		"tags":["pascha","dominica","matutinum","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Marcum.",
-			"In illo témpore: María Magdaléne, et Maria Jacóbi, et Salóme emérunt arómata, ut veniéntes úngerent Jesum. Et réliqua.",
+			"[Marc. 16.]/In illo témpore: María Magdaléne, et Maria Jacóbi, et Salóme emérunt arómata, ut veniéntes úngerent Jesum. Et réliqua.",
 			"Homilía sancti Gregórii Papæ.",
-			"Audístis, fratres caríssimi, quod sanctæ mulíeres, quæ Dóminum fuerant secútæ, cum aromátibus ad monuméntum venérunt, et ei, quem vivéntem diléxerant, étiam mórtuo, stúdio humanitátis obsequúntur. Sed res gesta áliquid in sancta Ecclésia signat geréndum. Sic quippe necésse est ut audiámus quæ facta sunt, quátenus cogitémus étiam quæ nobis sint ex eórum imitatióne faciénda. Et nos ergo in eum, qui est mórtuus, credéntes, si odóre virtútum reférti, cum opinióne bonórum óperum Dóminum quǽrimus, ad monuméntum profécto illíus cum aromátibus venímus. Illæ autem mulíeres Ángelos vident, quæ cum aromátibus venérunt: quia vidélicet illæ mentes supérnos cives aspíciunt, quæ cum virtútum odóribus ad Dóminum per sancta desidéria proficiscúntur."
+			"[Homilia 21. in Evangelia.]/Audístis, fratres caríssimi, quod sanctæ mulíeres, quæ Dóminum fuerant secútæ, cum aromátibus ad monuméntum venérunt, et ei, quem vivéntem diléxerant, étiam mórtuo, stúdio humanitátis obsequúntur. Sed res gesta áliquid in sancta Ecclésia signat geréndum. Sic quippe necésse est ut audiámus quæ facta sunt, quátenus cogitémus étiam quæ nobis sint ex eórum imitatióne faciénda. Et nos ergo in eum, qui est mórtuus, credéntes, si odóre virtútum reférti, cum opinióne bonórum óperum Dóminum quǽrimus, ad monuméntum profécto illíus cum aromátibus venímus. Illæ autem mulíeres Ángelos vident, quæ cum aromátibus venérunt: quia vidélicet illæ mentes supérnos cives aspíciunt, quæ cum virtútum odóribus ad Dóminum per sancta desidéria proficiscúntur."
 		]
 	},
 	{
-		"tags":["pascha","matutinum","responsorium","responsorium-i"],
+		"tags":["pascha","dominica","matutinum","responsorium","responsorium-i"],
 		"src":"nocturnale/P0R1",
 		"formula":[
 			"R. ",["incipit"]," * ",["responsum"],
@@ -125,7 +137,7 @@
 		"datum":"Notándum vero nobis est, quidnam sit, quod in dextris sedére Ángelus cérnitur. Quid namque per sinístram, nisi vita præsens: quid vero per déxteram, nisi perpétua vita designátur? Unde in Cánticis canticórum scriptum est: Læva ejus sub cápite meo, et déxtera illíus amplexábitur me. Quia ergo Redémptor noster jam præséntis vitæ corruptiónem transíerat, recte Ángelus, qui nuntiáre perénnem ejus vitam vénerat, in déxtera sedébat. Qui stola cándida coopértus appáruit: quia festivitátis nostræ gaúdia nuntiávit. Candor étenim vestis, splendórem nostræ denúntiat solemnitátis. Nostræ dicámus, an suæ? Sed ut fateámur vérius, et suæ dicámus, et nostræ. Illa quippe Redemptóris nostri resurréctio et nostra festívitas fuit, quia nos ad immortalitátem redúxit: et Angelórum festívitas éxstitit, quia nos revocándo ad cœléstia, eórum númerum implévit."
 	},
 	{
-		"tags":["pascha","matutinum","responsorium","responsorium-ii"],
+		"tags":["pascha","dominica","matutinum","responsorium","responsorium-ii"],
 		"src":"nocturnale/P0R2",
 		"incipit":"Cum transísset sábbatum, María Magdaléne, et María Jacóbi, et Salóme emérunt arómata,",
 		"responsum":"Ut veniéntes úngerent Jesum, allelúja, allelúja.",
@@ -133,7 +145,7 @@
 	},
 	{
 		"tags":["pascha","dominica","matutinum","lectio","lectio-iii"],
-		"datum":"In sua ergo ac nostra festivitáte Ángelus in albis véstibus appáruit: quia dum nos per resurrectiónem Domínicam ad supérna redúcimur, cœléstis pátriæ damna reparántur. Sed quid adveniéntes féminas affátur, audiámus: Nolíte expavéscere. Ac si apérte dicat, Páveant illi, qui non amant advéntum supernórum cívium: pertiméscant, qui carnálibus desidériis pressi, ad eórum se societátem pertíngere posse despérant. Vos autem, cur pertiméscitis, quæ vestros concíves vidétis? Unde et Matthǽus Ángelum apparuísse descríbens, ait: Erat aspéctus ejus sicut fulgur, et vestiménta ejus sicut nix. In fulgóre étenim terror timóris est, in nive autem blandiméntum candóris."
+		"datum":"In sua ergo ac nostra festivitáte Ángelus in albis véstibus appáruit: quia dum nos per resurrectiónem Domínicam ad supérna redúcimur, cœléstis pátriæ damna reparántur. Sed quid adveniéntes féminas affátur, audiámus: Nolíte expavéscere. Ac si apérte dicat, Páveant illi, qui non amant advéntum supernórum cívium: pertiméscant, qui carnálibus desidériis pressi, ad eórum se societátem pertíngere posse despérant. Vos autem, cur pertiméscitis, quæ vestros concíves vidétis? Unde et Matthǽus Ángelum apparuísse descríbens, ait: Erat aspéctus ejus sicut fulgur, et vestiménta ejus sicut nix. In fúlgere étenim terror timóris est, in nive autem blandiméntum candóris."
 	},
 	{
 		"tags":["pascha","antiphona","antiphona-i"],
@@ -208,7 +220,8 @@
 			["pascha","prima","versiculus"],
 			["pascha","tertia","versiculus"],
 			["pascha","sexta","versiculus"],
-			["pascha","nona","versiculus"]
+			["pascha","nona","versiculus"],
+			["pascha","vesperae","versiculus"]
 		],
 		"datum":""
 	},
@@ -260,21 +273,13 @@
 			["/psalmi/psalmus-xc,gloria"],
 			["/psalmi/psalmus-cxxxiii,gloria"],
 			["completorium","antiphona","repetita"],
-			["/psalmi/nunc-dimittis,gloria"],
+			["nunc-dimittis"],
 			["antiphona","haec-dies"],
 			["completorium","collecta-primaria"],
 			["dominus-vobiscum","ferialis-a"],
 			["completorium","benedicamus-domino","hora-minor"],
-			{
-				"tags":["completorium","benedictio-finalis"],
-				"datum":[
-					"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
-					"R. Amen."
-				]
-			},
-			["antiphona-bmv","antiphona-bmv-temporis","occurrens"],
-			"Divínum auxílium ✠ máneat semper nobíscum.",
-			"R. Amen.",
+			["completorium","benedictio-finalis"],
+			["antiphona-bmv-pro-completorio"],
 			["prex-triplex"]
 		]
 	},
@@ -292,6 +297,35 @@
 		"feria-vi":"Feria VI infra Octavam Paschæ"
 	},
 	{
+		"tags":["pascha","feria-ii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 24. b.]/In illo témpore: Duo ex discípulis Jesu ibant ipsa die in castéllum, quod erat in spátio stadiórum sexagínta ab Jerúsalem, nómine Emmaus. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 23. in Evangelia.]/Audístis, fratres caríssimi, quia duóbus discípulis ambulántibus in via, non quidem credéntibus, sed tamen de se loquéntibus, Dóminus appáruit: sed eis spéciem, quam recognóscerent, non osténdit. Hoc ergo egit foris Dóminus in óculis córporis, quod apud ipsos agebátur intus in óculis cordis. Ipsi namque apud semetípsos intus et amábant, et dubitábant: eis autem Dóminus foris et præsens áderat, et quis esset non ostendébat. De se ergo loquéntibus præséntiam exhíbuit: sed de se dubitántibus cognitiónis suæ spéciem abscóndit."
+		]
+	},
+	{
+		"tags":["pascha","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"María Magdaléne, et áltera María ibant dilúculo ad monuméntum:",
+		"responsum":"Jesum quem quǽritis, non est hic, surréxit sicut locútus est, præcédet vos in Galilǽam, ibi eum vidébitis, allelúja, allelúja.",
+		"versus":"Et valde mane una sabbatórum véniunt ad monuméntum, orto jam sole: et introëúntes vidérunt júvenem sedéntem in dextris, qui dixit illis."
+	},
+	{
+		"tags":["pascha","feria-ii","matutinum","lectio","lectio-ii"],
+		"datum":"Verba quidem cóntulit, durítiam intelléctus increpávit, sacræ Scriptúræ mystéria, quæ de seípso erant, apéruit: et tamen quia adhuc in eórum córdibus peregrínus erat a fide, se ire lóngius finxit. Fíngere namque, compónere dícimus: unde et compositóres luti, fígulos vocámus. Nihil ergo simplex véritas per duplicitátem fecit: sed talem se eis exhíbuit in córpore, qualis apud illos erat in mente. Probándi autem erant, si hi, qui eum etsi necdum ut Deum dilígerent, saltem ut peregrínum amáre potuíssent."
+	},
+	{
+		"tags":["pascha","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Surréxit pastor bonus, qui ánimam suam pósuit pro óvibus suis, et pro grege suo mori dignátus est:",
+		"responsum":"Allelúja, allelúja, allelúja.",
+		"versus":"Étenim Pascha nostrum immolátus est Christus."
+	},
+	{
+		"tags":["pascha","feria-ii","matutinum","lectio","lectio-iii"],
+		"datum":"Sed quia esse extránei a caritáte non póterant hi, cum quibus Véritas gradiebátur: eum ad hospítium quasi peregrínum vocant. Cur autem dícimus, vocant, cum illic scriptum sit: Et coëgérunt eum? Ex quo nimírum exémplo collígitur, quia peregríni ad hospítium non solum invitándi sunt, sed étiam trahéndi. Mensam ígitur ponunt, panes cibósque ófferunt: et Deum, quem in Scriptúræ sacræ expositióne non cognóverant, in panis fractióne cognóscunt. Audiéndo ergo præcépta Dei illumináti non sunt, faciéndo illumináti sunt: quia scriptum est: Non auditóres legis justi sunt apud Deum, sed factóres legis justificabúntur. Quisquis ergo vult audíta intellígere, festínet ea, quæ jam audíre pótuit, ópere implére. Ecce Dóminus non est cógnitus dum loquerétur, et dignátus est cognósci dum páscitur."
+	},
+	{
 		"tags":["pascha","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11971",
 		"datum":"Jesus junxit se * discípulis suis in via, et ibat cum illis: óculi autem eórum tenebántur, ne eum agnóscerent: et increpávit eos, dicens: O stulti et tardi corde ad credéndum in his, quæ locúti sunt Prophétæ, allelúja."
@@ -305,6 +339,42 @@
 		"tags":["pascha","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2314",
 		"datum":"Qui sunt hi sermónes, * quos confértis ad ínvicem ambulántes, et estis tristes? allelúja."
+	},
+	{
+		"tags":[
+			["pascha","feria-iii","matutinum","versiculus"],
+			["pascha","feria-vi","matutinum","versiculus"]
+		],
+		"datum":["V. Surréxit Dóminus vere, allelúja.","R. Et appáruit Simóni, allelúja."]
+	},
+	{
+		"tags":["pascha","feria-iii","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 24. c.]/In illo témpore: Stetit Jesus in médio discipulórum, et dicit eis: Pax vobis: ego sum, nolíte timére. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Liber 10. Comment. in Lucam, cap. 24. ante finem.]/Mirum, quo modo se natúra corpórea per impenetrábile corpus infúderit invisíbili áditu, visíbili conspéctu: tangi fácilis, diffícilis æstimári. Dénique conturbáti discípuli æstimábant se spíritum vidére. Et ídeo Dóminus, ut spéciem nobis resurrectiónis osténderet, Palpáte, inquit, et vidéte, quia spíritus carnem et ossa non habet, sicut me vidétis habére. Non ergo per incorpóream natúram, sed per resurrectiónis qualitátem, impérvia usu clausa penetrávit. Nam quod tángitur, corpus est: quod palpátur, corpus est."
+		]
+	},
+	{
+		"tags":["pascha","feria-iii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Virtúte magna reddébant Apóstoli,",
+		"responsum":"Testimónium resurrectiónis Jesu Christi Dómini nostri, allelúja, allelúja.",
+		"versus":"Repléti quidem Spíritu sancto loquebántur cum fidúcia verbum Dei."
+	},
+	{
+		"tags":["pascha","feria-iii","matutinum","lectio","lectio-ii"],
+		"datum":"In córpore autem resurgémus. Seminátur enim corpus animále, surgit corpus spiritále: sed illud subtílius, hoc crássius, útpote adhuc terrénæ labis qualitáte concrétum. Nam quómodo non corpus, in quo manébant insígnia vúlnerum, vestígia cicatrícum, quæ Dóminus palpánda óbtulit? In quo non solum fidem firmat, sed étiam devotiónem ácuit, quod vúlnera suscépta pro nobis cœlo inférre máluit, abolére nóluit; ut Deo Patri nostræ prétia libertátis osténderet. Talem sibi Pater ad déxteram locat, trophǽum nostræ salútis ampléctens: tales illic Mártyres nobis cicatrícis suæ coróna monstrávit."
+	},
+	{
+		"tags":["pascha","feria-iii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"De ore prudéntis procédit mel, allelúja: dulcédo mellis est sub lingua ejus, allelúja:",
+		"responsum":"Favus distíllans lábia ejus, allelúja, allelúja.",
+		"versus":"Sapiéntia requiéscit in corde ejus, et prudéntia in sermóne oris illíus."
+	},
+	{
+		"tags":["pascha","feria-iii","matutinum","lectio","lectio-iii"],
+		"datum":"Et quóniam sermo huc noster evásit, considerémus qua grátia secúndum Joánnem credíderint Apóstoli, qui gavísi sunt; secúndum Lucam quasi incréduli redarguántur: ibi Spíritum sanctum accéperint, hic sedére in civitáte jubeántur, quoadúsque induántur virtúte ex alto. Et vidétur mihi ille quasi Apóstolus majóra et altióra tetigísse, hic sequéntia et humánis próxima: hic histórico usus circúitu, ille compéndio: quia et de illo dubitári non potest, qui testimónium pérhibet de iis, quibus ipse intérfuit, et verum est testimónium ejus: et ab hoc quoque, qui Evangelísta esse méruit, vel negligéntiæ, vel mendácii suspiciónem æquum est propulsári. Et ídeo verum putámus utrúmque, non sententiárum varietáte, nec personárum diversitáte distínctum. Nam etsi primo Lucas eos non credidísse dicat, póstea tamen credidísse demónstrat: et si prima considerémus, contrária sunt: si sequéntia, certum est conveníre."
 	},
 	{
 		"tags":["pascha","feria-iii","laudes","antiphona","antiphona-benedictus"],
@@ -322,6 +392,42 @@
 		"datum":"Vidéte manus meas * et pedes meos, quia ego ipse sum, allelúja, allelúja."
 	},
 	{
+		"tags":[
+			["pascha","feria-iv","matutinum","versiculus"],
+			["pascha","sabbatum","matutinum","versiculus"]
+		],
+		"datum":["V. Gavísi sunt discípuli, allelúja.","R. Viso Dómino, allelúja."]
+	},
+	{
+		"tags":["pascha","feria-iv","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 21.]/In illo témpore: Manifestávit se íterum Jesus discípulis ad mare Tiberíadis. Manifestávit autem sic: Erant simul Simon Petrus, et Thomas, qui dícitur Dídymus. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 24. in Evangelia.]/Léctio sancti Evangélii, quæ modo in aúribus vestris lecta est, fratres mei, quæstióne ánimum pulsat, sed pulsatióne sua vim discretiónis índicat. Quæri étenim potest, cur Petrus, qui piscátor ante conversiónem fuit, post conversiónem ad piscatiónem rédiit: et cum Véritas dicat: Nemo mittens manum suam ad arátrum, et aspíciens retro, aptus est regno Dei: cur repétiit quod derelíquit? Sed si virtus discretiónis inspícitur, cítius vidétur: quia nimírum negótium, quod ante conversiónem sine peccáto éxstitit, hoc étiam post conversiónem repétere culpa non fuit."
+		]
+	},
+	{
+		"tags":["pascha","feria-iv","matutinum","responsorium","responsorium-i"],
+		"incipit":"Ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus:",
+		"responsum":"Allelúja, allelúja, allelúja.",
+		"versus":"Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem."
+	},
+	{
+		"tags":["pascha","feria-iv","matutinum","lectio","lectio-ii"],
+		"datum":"Nam piscatórem Petrum, Matthǽum vero teloneárium scimus: et post conversiónem suam ad piscatiónem Petrus rédiit, Matthǽus vero ad telónei negótium non resédit: quia áliud est, victum per piscatiónem quǽrere, áliud autem telónei lucris pecúnias augére. Sunt enim pléraque negótia, quæ sine peccátis exhibéri aut vix, aut nullátenus possunt. Quæ ergo ad peccátum ímplicant, ad hæc necésse est, ut post conversiónem ánimus non recúrrat."
+	},
+	{
+		"tags":["pascha","feria-iv","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Ego sum vitis vera, et vos pálmites:",
+		"responsum":"Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.",
+		"versus":"Sicut diléxit me Pater, et ego diléxi vos."
+	},
+	{
+		"tags":["pascha","feria-iv","matutinum","lectio","lectio-iii"],
+		"datum":"Quæri étiam potest, cur discípulis in mari laborántibus, post resurrectiónem suam Dóminus in líttore stetit, qui ante resurrectiónem suam coram discípulis in flúctibus maris ambulávit. Cujus rei rátio festíne cognóscitur, si ipsa, quæ tunc ínerat, causa pensétur. Quid enim mare, nisi præsens sǽculum signat, quod se cásuum tumúltibus, et undis vitæ corruptíbilis illídit? Quid per soliditátem líttoris, nisi illa perpetúitas quiétis ætérnæ figurátur? Quia ergo discípuli adhuc flúctibus mortális vitæ ínerant, in mari laborábant. Quia autem Redémptor noster jam corruptiónem carnis excésserat, post resurrectiónem suam in líttore stabat."
+	},
+	{
 		"tags":["pascha","feria-iv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12153",
 		"datum":"Míttite in déxteram * navígii rete, et inveniétis, allelúja."
@@ -337,6 +443,35 @@
 		"datum":"Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja."
 	},
 	{
+		"tags":["pascha","feria-v","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 20. c.]/In illo témpore: María stabat ad monuméntum foris, plorans. Dum ergo fleret, inclinávit se, et prospéxit in monuméntum: et vidit duos Ángelos in albis sedéntes. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 25. in Evangelia.]/María Magdaléne, quæ fúerat in civitáte peccátrix, amándo veritátem, lavit lácrimis máculas críminis: et vox Veritátis implétur, qua dícitur: Dimíssa sunt ei peccáta multa, quia diléxit multum. Quæ enim prius frígida peccándo remánserat, póstmodum amándo fórtiter ardébat. Nam postquam venit ad monuméntum, ibíque corpus Domínicum non invénit, sublátum crédidit, atque discípulis nuntiávit: qui veniéntes vidérunt, atque ita esse, ut múlier díxerat, credidérunt. Et de eis prótinus scriptum est: Abiérunt ergo discípuli ad semetípsos: ac deínde subjúngitur: María autem stabat ad monuméntum foris plorans."
+		]
+	},
+	{
+		"tags":["pascha","feria-v","matutinum","responsorium","responsorium-i"],
+		"incipit":"Tulérunt Dóminum meum, et néscio ubi posuérunt eum. Dicunt ei Ángeli: Múlier, quid ploras? surréxit sicut dixit:",
+		"responsum":"Præcédet vos in Galilǽam: ibi eum vidébitis, allelúja, allelúja.",
+		"versus":"Cum ergo fleret, inclinávit se, et prospéxit in monuméntum: et vidit duos Ángelos in albis, sedéntes, qui dicunt ei."
+	},
+	{
+		"tags":["pascha","feria-v","matutinum","lectio","lectio-ii"],
+		"datum":"Qua in re pensándum est, hujus mulíeris mentem quanta vis amóris accénderat, quæ a monuménto Dómini, étiam discípulis recedéntibus, non recedébat. Exquirébat quem non invénerat: flebat inquiréndo, et amóris sui igne succénsa, ejus, quem ablátum crédidit, ardébat desidério. Unde cóntigit, ut eum sola tunc vidéret, quæ remánserat ut quǽreret: quia nimírum virtus boni óperis, perseverántia est: et voce Veritátis dícitur: Qui autem perseveráverit usque in finem, hic salvus erit."
+	},
+	{
+		"tags":["pascha","feria-v","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Congratulámini mihi omnes qui dilígitis Dóminum, quia quem quærébam, appáruit mihi:",
+		"responsum":"Et dum flerem ad monuméntum, vidi Dóminum, allelúja, allelúja.",
+		"versus":"Recedéntibus discípulis, non recedébam, et amóris ejus igne succénsa, ardébam desidério."
+	},
+	{
+		"tags":["pascha","feria-v","matutinum","lectio","lectio-iii"],
+		"datum":"María ergo cum fleret, inclinávit se, et prospéxit in monuméntum. Certe jam monuméntum vácuum víderat, jam sublátum Dóminum nuntiáverat: quid est quod se íterum inclínat, íterum vidére desíderat? Sed amánti semel aspexísse non súfficit: quia vis amóris intentiónem multíplicat inquisitiónis. Quæsívit ergo prius, et mínime invénit: perseverávit ut quǽreret; unde et cóntigit, ut inveníret: actúmque est, ut desidéria diláta créscerent, et crescéntia cáperent quod inveníssent."
+	},
+	{
 		"tags":["pascha","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11828",
 		"datum":"María stabat * ad monuméntum plorans, et vidit duos Ángelos in albis, sedéntes, et sudárium quod fúerat super caput Jesu, allelúja."
@@ -350,6 +485,35 @@
 		"tags":["pascha","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2150",
 		"datum":"Tulérunt Dóminum meum, * et néscio ubi posuérunt eum: si tu sustulísti eum, dícito mihi, allelúja: et ego eum tollam, allelúja."
+	},
+	{
+		"tags":["pascha","feria-vi","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 28. d.]/In illo témpore: Úndecim discípuli abiérunt in Galilǽam in montem, ubi constitúerat illis Jesus. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"[Lib. 4. Comment. in Matthæum, in fine.]/Post resurrectiónem Jesus in monte Galilǽæ conspícitur, ibíque adorátur: licet quidam dúbitent, et dubitátio eórum nostram aúgeat fidem. Tunc maniféstius osténditur Thomæ, et latus láncea vulnerátum, et manus fixas demónstrat clavis. Accédens Jesus locútus est eis, dicens: Data est mihi omnis potéstas in cœlo et in terra. Illi potéstas data est, qui paulo ante crucifíxus, qui sepúltus in túmulo, qui mórtuus jacúerat, qui póstea resurréxit. In cœlo autem et in terra potéstas data est: ut qui ante regnábat in cœlo, per fidem credéntium regnet et in terris."
+		]
+	},
+	{
+		"tags":["pascha","feria-vi","matutinum","responsorium","responsorium-i"],
+		"incipit":"Surgens Jesus Dóminus noster, stans in médio discipulórum suórum, dixit:",
+		"responsum":"Pax vobis, allelúja: gavísi sunt discípuli viso Dómino, allelúja.",
+		"versus":"Una ergo sabbatórum, cum fores essent clausæ, ubi erant discípuli congregáti, venit Jesus, et stetit in médio eórum, et dixit eis."
+	},
+	{
+		"tags":["pascha","feria-vi","matutinum","lectio","lectio-ii"],
+		"datum":"Eúntes autem docéte omnes Gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus sancti. Primum docent omnes Gentes, deínde doctas intíngunt aqua. Non enim potest fíeri, ut corpus baptísmi recípiat sacraméntum, nisi ante ánima fídei suscéperit veritátem. Baptizántur autem in nómine Patris, et Fílii, et Spíritus sancti: ut quorum una est divínitas, una sit largítio: noménque Trinitátis, unus Deus est."
+	},
+	{
+		"tags":["pascha","feria-vi","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Expurgáte vetus ferméntum, ut sitis nova conspérsio: étenim Pascha nostrum immolátus est Christus:",
+		"responsum":"Ítaque epulémur in Dómino, allelúja.",
+		"versus":"Mórtuus est propter delícta nostra, et resurréxit propter justificatiónem nostram."
+	},
+	{
+		"tags":["pascha","feria-vi","matutinum","lectio","lectio-iii"],
+		"datum":"Docéntes eos serváre ómnia, quæcúmque mandávi vobis. Ordo præcípuus. Jussit Apóstolis, ut primum docérent univérsas Gentes, deínde fídei intíngerent sacraménto: et post fidem ac baptísma, quæ essent observánda præcíperent. Ac ne putémus lévia esse, quæ jussa sunt, et pauca, áddidit: Ómnia quæcúmque mandávi vobis: ut quicúmque credíderint, qui in Trinitáte fúerint baptizáti, ómnia fáciant, quæ præcépta sunt. Et ecce ego vobíscum sum usque ad consummatiónem sǽculi. Qui usque ad consummatiónem sǽculi cum discípulis se futúrum esse promíttit, et illos osténdit semper esse victúros, et se numquam a credéntibus recessúrum."
 	},
 	{
 		"tags":["pascha","feria-vi","laudes","antiphona","antiphona-benedictus"],
@@ -369,6 +533,35 @@
 	{
 		"tags":["pascha","sabbatum","nomen"],
 		"datum":"Sabbato in Albis"
+	},
+	{
+		"tags":["pascha","sabbatum","matutinum","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 20.]/In illo témpore: Una sábbati María Magdaléne venit mane, cum adhuc ténebræ essent, ad monuméntum. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 22. in Evangelia.]/Léctio sancti Evangélii, quam modo fratres audístis, valde in superfície histórica est apérta: sed ejus nobis sunt mystéria sub brevitáte requirénda. María Magdaléne, cum adhuc ténebræ essent, venit ad monuméntum. Juxta históriam notátur hora: juxta intelléctum vero mýsticum, requiréntis signátur intelligéntia. María étenim auctórem ómnium, quem in carne víderat mórtuum, quærébat in monuménto: et quia hunc mínime invénit, furátum crédidit. Adhuc ergo erant ténebræ, cum venit ad monuméntum. Cucúrrit cítius, discípulis nuntiávit: sed illi præ céteris cucurrérunt, qui præ céteris amavérunt, vidélicet Petrus et Joánnes."
+		]
+	},
+	{
+		"tags":["pascha","sabbatum","matutinum","responsorium","responsorium-i"],
+		"incipit":"Christus resúrgens ex mórtuis, jam non móritur, mors illi utra non dominábitur: quod enim mórtuus peccáto, mórtuus est semel:",
+		"responsum":"Quod autem vivit, vivit Deo, allelúja, allelúja.",
+		"versus":"Mórtuus est semel propter delícta nostra, et resurréxit propter justificatiónem nostram."
+	},
+	{
+		"tags":["pascha","sabbatum","matutinum","lectio","lectio-ii"],
+		"datum":"Currébant autem duo simul: sed Joánnes præcucúrrit cítius Petro. Venit prior ad monuméntum, et íngredi non præsúmpsit. Venit ergo postérior Petrus, et intrávit. Quid fratres, quid cursus signíficat? Numquid hæc tam subtílis Evangelístæ descríptio a mystériis vacáre credénda est? Mínime. Neque enim se Joánnes et præísse, et non intrásse díceret, si in ipsa sui trepidatióne mystérium defuísse credidísset. Quid ergo per Joánnem, nisi synagóga: quid per Petrum, nisi Ecclésia designátur?"
+	},
+	{
+		"tags":["pascha","sabbatum","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Isti sunt agni novélli, qui annuntiavérunt, allelúja: modo venérunt ad fontes,",
+		"responsum":"Repléti sunt caritáte, allelúja, allelúja.",
+		"versus":"In conspéctu Agni amícti sunt stolis albis, et palmæ in mánibus eórum."
+	},
+	{
+		"tags":["pascha","sabbatum","matutinum","lectio","lectio-iii"],
+		"datum":"Nec mirum esse videátur, quod per juniórem synagóga, per seniórem vero Ecclésia signári perhibétur: quia etsi ad Dei cultum prior est synagóga, quam Ecclésia Géntium, ad usum tamen sǽculi prior est multitúdo Géntium, quam synagóga, Paulo attestánte, qui ait: Quia non prius quod spiritále est, sed quod animále. Per seniórem ergo Petrum significátur Ecclésia Géntium: per juniórem vero Joánnem synagóga Judæórum. Currunt ambo simul: quia ab ortus sui témpore usque ad occásum, pari et commúni via, etsi non pari et commúni sensu, Gentílitas cum synagóga cucúrrit. Venit synagóga prior ad monuméntum, sed mínime intrávit: quia legis quidem mandáta percépit, prophetías de incarnatióne ac passióne Domínica audívit, sed crédere in mórtuum nóluit."
 	},
 	{
 		"tags":["pascha","sabbatum","laudes","antiphona","antiphona-benedictus"],

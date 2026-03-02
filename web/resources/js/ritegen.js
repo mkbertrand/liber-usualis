@@ -346,7 +346,7 @@ function render(data, chant) {
 						header = makeheader('Canticum B. Mariæ Virg.');
 					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('repetita') && !data.quaesitum.includes('triduum')) {
 						header = makeheader('Canticum Simeonis.');
-					} else if (uniquelyhas('nunc-dimittis') && data.quaesitum.includes('triduum')) {
+					} else if (uniquelyhas('nunc-dimittis') && (data.quaesitum.includes('triduum') || data.quaesitum.includes('pascha') && !data.quaesitum.includes('i-vesperae'))) {
 						header = makeheader('Canticum Simeonis.');
 					} else if (uniquelyhas('antiphona-benedictus') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-magnificat')) {
 						header = makeheader('Canticum Zachariæ.');
