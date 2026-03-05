@@ -262,7 +262,8 @@ function render(data, chant) {
 						if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
 							ret += `<p class="rite-text ${parenttags.join(' ')} rite-text-rubric rite-text-rubric-above-paragraph">`;
 							plus = rubricrender(data[i].slice(1, -2));
-						} else {
+						// This condition determines whethere there is any paragraph structure in ret before inserting paragraphs.
+						} else if (ret.includes('<p')) {
 							ret += `<p class="rite-text ${parenttags.join(' ')}">`;
 						}
 					}
@@ -445,7 +446,7 @@ function render(data, chant) {
 
 						// For the Lamentations of the Sacred Triduum.
 						if (data.quaesitum.includes('sabbatum-sanctum') && data.quaesitum.includes('nocturna-i') && data.quaesitum.includes('lectio-iii')) {
-							reading = [reading[0], reading[1] + '<br>' + reading[2].replace(/^(.)/, '<b class="red">\$1</b>')];
+							reading = [reading[0], reading[1] + '<br>' + reading[2].replace(/^(.)/, '<span class="red">\$1</span>')];
 						} else if (data.quaesitum.includes('triduum') && data.quaesitum.includes('nocturna-i')) {
 							title = '';
 							if (data.quaesitum.includes('lectio-i')) {
@@ -459,7 +460,7 @@ function render(data, chant) {
 							} else {
 								annotation = '';
 							}
-							body = reading.slice(0, -1).map((i) => stringrender(i).replace(/^(.)(.+?\.\s)(.)/, '<b class="red">\$1</b>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + reading[reading.length - 1].replace(/^(.)/, '<b class="red">\$1</b>');
+							body = reading.slice(0, -1).map((i) => stringrender(i).replace(/^(.)(.+?\.\s)(.)/, '<span class="red">\$1</span>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + reading[reading.length - 1].replace(/^(.)/, '<span class="red">\$1</span>');
 							return title + annotation + `<p class="rite-text lectio-sequens">${body}</p>`;
 						}
 
@@ -542,30 +543,32 @@ function render(data, chant) {
 					return `${header}<div class="rite-item ${data.tags.join(' ')}">` + unpack(data.datum).map((par) => `<p class="rite-text ${data.tags.join(' ')}">${renderinner(par, translated, data.tags.concat(parenttags))}</p>`).join('') + '</div>';
 				}
 
+				ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
+				if (ret == '') {
+					return '';
+				}
+
 				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i))) {
-					ret = `${header}<div class="rite-item ${data.tags.concat(parenttags).join(' ')}">${renderinner(data.datum, translated, data.tags.concat(parenttags))}`;
+					ret = `${header}<div class="rite-item ${data.tags.concat(parenttags).join(' ')}">${ret}`;
 					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 				}
 
-				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'preces', 'confiteor', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'gloria-versorum', 'oratio-dirigere', 'rubricum'];
+				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'preces', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
 				if (fullparagraph.some(i => uniquelyhas(i)) || (data.tags.includes('triduum') && data.tags.includes('collecta'))) {
-					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
-					if (ret == '') {
-						return '';
-					}
 					if (!ret.startsWith('<p')) {
 						ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
 					}
 					return `${header}${ret}</p>`;
 				}
 
-				openparagraph = ['capitulum', 'absolutio', 'pater-noster-semisecreta', 'credo-semisecreta'];
+				closeparagraph = ['gloria-versorum'];
+				if (closeparagraph.some(i => uniquelyhas(i))) {
+					return `${ret}</p>`;
+				}
+
+				openparagraph = ['capitulum', 'absolutio', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor'];
 				if (openparagraph.some(i => uniquelyhas(i))) {
-					ret = renderinner(data.datum, translated, data.tags.concat(parenttags));
-					if (ret == '') {
-						return '';
-					}
 					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
 					if (annotation == null) {
@@ -578,7 +581,7 @@ function render(data, chant) {
 						return `${header}<p class="rite-text-rubric rite-text-rubric-above-paragraph">Capitulum. ${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
 					}
 				}
-				return header + renderinner(data.datum, translated, data.tags.concat(parenttags));
+				return header + ret;
 			} else {
 				return 'error';
 			}
