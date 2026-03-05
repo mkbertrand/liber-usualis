@@ -1,7 +1,7 @@
-<!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
+<!-- Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 <script type="text/javascript" src="/resources/js/kalendargen.js?v=1"></script>
-<div id="content-container-outer" x-data="{
+<div id="content-container" x-data="{
 	skeleton: [],
 	kalendar: [],
 	initialized: false,
@@ -90,27 +90,25 @@
 		return ret.replaceAll('..', '.').replaceAll('.</span>.', '.</span>');
 	}
 }" x-init="getKalendar();">
-	<div id="content-container-inner">
-		<h1 id="kalendar-title">Kalendarium Romanum</h1>
-		<template x-if="initialized">
-			<table class="kalendar-table">
+	<h1 id="kalendar-title">Kalendarium Romanum</h1>
+	<template x-if="initialized">
+		<table class="kalendar-table">
+			<tr>
+				<th class="kalendar-table-header kalendar-table-entry">Cyclus Epact.</th>
+				<th class="kalendar-table-header kalendar-table-entry rotated-header">L.D.</th>
+				<th class="kalendar-table-header kalendar-table-entry"></th>
+				<th class="kalendar-table-header kalendar-table-entry rotated-header">D.M.</th>
+				<th class="kalendar-table-header kalendar-table-entry">Mensis.</th>
+			</tr>
+			<template x-for="(entry, date) in skeleton">
 				<tr>
-					<th class="kalendar-table-header kalendar-table-entry">Cyclus Epact.</th>
-					<th class="kalendar-table-header kalendar-table-entry rotated-header">L.D.</th>
-					<th class="kalendar-table-header kalendar-table-entry"></th>
-					<th class="kalendar-table-header kalendar-table-entry rotated-header">D.M.</th>
-					<th class="kalendar-table-header kalendar-table-entry">Mensis.</th>
+					<td class="kalendar-table-entry red kalendar-entry-nowrap" x-html="date.includes('-excluded') ? '' : epact[entry.filter(item => item[0] == 'littera')[0][2]]"></td>
+					<td class="kalendar-table-entry" x-html="date.includes('-excluded') ? '' : litterae[entry.filter(item => item[0] == 'littera')[0][1]]"></td>
+					<td class="kalendar-table-entry" x-html="date.includes('-excluded') ? '' : dateabbreviation(entry)"></td>
+					<td class="kalendar-table-entry date-entry" x-text="date.includes('-excluded') ? '' : parseInt(date.split('-')[2])"></td>
+					<td class="kalendar-table-entry" x-html="makeentry(date, entry)"></td>
 				</tr>
-				<template x-for="(entry, date) in skeleton">
-					<tr>
-						<td class="kalendar-table-entry red kalendar-entry-nowrap" x-html="date.includes('-excluded') ? '' : epact[entry.filter(item => item[0] == 'littera')[0][2]]"></td>
-						<td class="kalendar-table-entry" x-html="date.includes('-excluded') ? '' : litterae[entry.filter(item => item[0] == 'littera')[0][1]]"></td>
-						<td class="kalendar-table-entry" x-html="date.includes('-excluded') ? '' : dateabbreviation(entry)"></td>
-						<td class="kalendar-table-entry date-entry" x-text="date.includes('-excluded') ? '' : parseInt(date.split('-')[2])"></td>
-						<td class="kalendar-table-entry" x-html="makeentry(date, entry)"></td>
-					</tr>
-				</template>
-			</table>
-		</template>
-	</div>
+			</template>
+		</table>
+	</template>
 </div>

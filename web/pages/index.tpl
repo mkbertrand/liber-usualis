@@ -34,7 +34,7 @@
 					<option value="de" {{!'selected' if locale == 'de' else ''}}>DE</option>
 				</select>
 			</div>
-			<div id="content-container-outer-home">
+			<div id="content-container-home">
 				<div id="side-panel-left">
 				</div>
 				<div id="home-screen">
