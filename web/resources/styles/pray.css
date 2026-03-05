@@ -1,6 +1,10 @@
 /* Containers and overall organization */
 #content-container-outer {
 	max-width: 100% !important;
+	position: relative;
+	max-width: 140em;
+	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
+	display: flex;
 }
 
 #side-panel-left, #side-panel-right {

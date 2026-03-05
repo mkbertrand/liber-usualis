@@ -50,7 +50,16 @@ def localehunt(acceptlanguage):
 	return langs
 
 definedlocales = os.listdir('web/locales/')
-owntemplate = ['index', 'breviarium', 'pray']
+
+def findmytemplate(page):
+	if page == 'pray':
+		return 'web/templates/pray.tpl'
+	elif page in ['index', 'breviarium']:
+		return 'web/templates/menu.tpl'
+	elif page in ['de-anno', 'kalendar', 'rubricae']:
+		return 'web/templates/latin-generic.tpl'
+	else:
+		return 'web/templates/generic.tpl'
 
 @get('/')
 def index():
@@ -90,12 +99,11 @@ def localpage(preferredlocale, page):
 		title = titles[page] if page in titles else ''
 
 		for locale in locales:
-			if page in owntemplate:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					return template(f'web/pages/{page}.tpl', locale=locale, preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
-			else:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.html') or os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					return template('web/resources/page.tpl', page=page, title=title, locale=locale, preferredlocale=preferredlocale)
+			pagetemplate = findmytemplate(page)
+			translation = ''
+			if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
+				translation = json.load(open(f'web/locales/{locale}/pages/{page}.json'))
+			return template(pagetemplate, locale=locale, preferredlocale=preferredlocale, title=title, page=page, text=translation)
 
 def flattensetlist(sets):
 	ret = set()

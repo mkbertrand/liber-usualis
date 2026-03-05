@@ -39,8 +39,8 @@
 					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 				<select id="locale-selector" @change="window.location.assign('/' + $event.target.value + window.location.pathname.slice(3) + window.location.search)">
-					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
 					<option value="en" {{!'selected' if locale == 'en' else ''}}>EN</option>
+					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
 					<option value="de" {{!'selected' if locale == 'de' else ''}}>DE</option>
 				</select>
 			</div>
