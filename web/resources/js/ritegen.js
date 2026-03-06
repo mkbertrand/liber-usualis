@@ -313,7 +313,6 @@ function render(data, chant) {
 					// Additional condition checks if the outside is a wrapper for an inside object of the same label. EG if the object is a hymnus, but the inside object is also a hymnus (which would happen if the outside object had referenced some other day's hymn) it only allows the header of Hymnus to be displayed once
 					headers = {
 						'psalmi': 'Psalmi.',
-						'preces': 'Preces.',
 						'collecta-primaria': 'Collecta.',
 						'invitatorium': 'Invitatorium.',
 						'haec-dies': 'Antiphona.'
@@ -337,6 +336,8 @@ function render(data, chant) {
 						header = makeheadingannotation('Versiculus.');
 					} else if (uniquelyhas('absolutio')) {
 						header = makeheadingannotation('Absolutio.');
+					} else if (uniquelyhas('preces') && !parenttags.includes('officium-capituli')) {
+						header = makeheader('Preces.');
 					} else if (uniquelyhas('hymnus')) {
 						if (['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
 							header = makeheadingannotation('Hymnus.');
