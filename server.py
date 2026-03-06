@@ -69,6 +69,8 @@ def findmytemplate(page):
 		return 'web/templates/pray.tpl'
 	elif page in ['index', 'breviarium']:
 		return 'web/templates/menu.tpl'
+	elif page in ['de-anno', 'kalendar', 'rubricae', 'resources']:
+		return 'web/templates/latin-generic.tpl'
 	else:
 		return 'web/templates/generic.tpl'
 
@@ -101,12 +103,16 @@ def localpage(preferredlocale, page):
 				titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
 		title = titles[page] if page in titles else ''
 
-		for locale in locales:
-			pagetemplate = findmytemplate(page)
+		pagetemplate = findmytemplate(page)
+		if pagetemplate == 'web/templates/generic.tpl':
+			for locale in locales:
+				if os.path.exists(f'web/locales/{locale}/pages/{page}.html'):
+					return template(pagetemplate, locale=locale, preferredlocale=preferredlocale, title=title, page=page)
+		else:
 			translation = ''
-			if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-				translation = json.load(open(f'web/locales/{locale}/pages/{page}.json'))
-			return template(pagetemplate, locale=locale, preferredlocale=preferredlocale, title=title, page=page, text=translation)
+			if os.path.exists(f'web/locales/{locales[0]}/pages/{page}.json'):
+				translation = json.load(open(f'web/locales/{locales[0]}/pages/{page}.json'))
+			return template(pagetemplate, locale=preferredlocale, preferredlocale=preferredlocale, title=title, page=page, text=translation)
 
 def flattensetlist(sets):
 	ret = set()
