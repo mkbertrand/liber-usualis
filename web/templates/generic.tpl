@@ -45,7 +45,12 @@
 				</select>
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
-			% include(f'web/locales/{locale}/pages/{page}.html')
+			% if os.path.exists(f'web/pages/{page}.html'):
+				% include(f'web/pages/{page}.html')
+			% elif text != '':
+				% include(f'web/pages/{page}.tpl', text=text)
+			% else:
+				% include(f'web/locales/{locale}/pages/{page}.html')
 		</div>
 	</body>
 </html>

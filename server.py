@@ -50,14 +50,25 @@ def localehunt(acceptlanguage):
 	return langs
 
 definedlocales = os.listdir('web/locales/')
+toplevelpages = [
+		'index',
+		'breviarium',
+		'de-anno',
+		'kalendar',
+		'rubricae',
+		'pray',
+		'about',
+		'credit',
+		'donate',
+		'help',
+		'resources'
+	]
 
 def findmytemplate(page):
 	if page == 'pray':
 		return 'web/templates/pray.tpl'
 	elif page in ['index', 'breviarium']:
 		return 'web/templates/menu.tpl'
-	elif page in ['de-anno', 'kalendar', 'rubricae']:
-		return 'web/templates/latin-generic.tpl'
 	else:
 		return 'web/templates/generic.tpl'
 
@@ -65,17 +76,9 @@ def findmytemplate(page):
 def index():
 	return redirect('/index')
 
-@get('/index')
-@get('/breviarium')
-@get('/rubricae')
-@get('/pray')
-@get('/kalendar')
-@get('/about')
-@get('/credit')
-@get('/donate')
-@get('/help')
-def bouncetolocale():
-	page = request.route.rule[1:]
+@get(f'/<page:re:{'|'.join(toplevelpages)}>')
+def bouncetolocale(page):
+	print(page)
 	locales = ['en']
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
@@ -83,7 +86,7 @@ def bouncetolocale():
 	finally:
 		return redirect(f'/{[loc for loc in locales if loc in definedlocales][0]}/{page}')
 
-@get(f'/<preferredlocale:re:{'|'.join(definedlocales)}>/<page>')
+@get(f'/<preferredlocale:re:{'|'.join(definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
 	locales = [preferredlocale]
 	try:
