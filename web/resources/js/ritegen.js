@@ -402,6 +402,8 @@ function render(data, chant) {
 						}
 					}
 					data.datum = unpack(data.datum).join('').split('\n');
+					// We're ok with nested responsories.
+					parenttags = parenttags.filter(tag => tag != 'responsorium');
 
 				} else if (['epiphania', 'festum', 'nocturna-iii', 'psalmus-i'].every(i => data.tags.includes(i))) {
 					header = makeheadingannotation('Psalmus XCIV.');

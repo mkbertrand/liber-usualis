@@ -50,7 +50,7 @@
 	},
 	{
 		"tags":["septem-dolores-passione","capitulum"],
-		"datum":"Quis crédidit audítui nostro? et bráchium Dómini cui revelátum est? Et ascéndet sicut virgúltum coram eo, * et sicut radix de terra sitiénti."
+		"datum":"[Isaiæ 53.]/Quis crédidit audítui nostro? et bráchium Dómini cui revelátum est? Et ascéndet sicut virgúltum coram eo, * et sicut radix de terra sitiénti."
 	},
 	{
 		"tags":["septem-dolores-passione","vesperae","hymnus"],
@@ -85,6 +85,204 @@
 		"tags":["septem-dolores-passione","collecta"],
 		"datum":"Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit: + concéde propítius; ut qui transfixiónem ejus et passiónem venerándo recólimus, * gloriósis méritis et précibus ómnium Sanctórum cruci fidéliter astántium intercedéntibus, passiónis tuæ efféctum felícem consequámur:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/Q5F6I",
+		"datum":"Dolóres gloriósæ recoléntes Vírginis, Dóminum pro nobis passum, * Veníte adorémus."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","hymnus"],
+		"src":"nocturnale/Q5F6H",
+		"datum":[
+			"Sancta Mater, istud agas,/Crucifíxi fige plagas/Cordi meo válide.",
+			"Tui nati vulneráti,/Tam dignáti pro me pati,/Pœnas mecum dívide.",
+			"Fac me tecum pie flere,/Crucifíxo condolére,/Donec ego víxero.",
+			"Juxta crucem tecum stare,/Et me tibi sociáre/In planctu desídero.","Amen."
+		]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":[["triduum","parasceve"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":[["martyr","antiphona-iii"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0915N2A1",
+		"datum":"Factum est cor meum * tamquam cera liquéscens in médio ventris mei."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Pósuit me desolátam.","R. Tota die mœróre conféctam."]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De Isaía Prophéta.",
+			"[Isaiæ 53.]/Quis crédidit audítui nostro? et bráchium Dómini cui revelátum est? Et ascéndet sicut virgúltum coram eo, et sicut radix de terra sitiénti: non est spécies ei, neque decor: et vídimus eum, et non erat aspéctus, et desiderávimus eum: Despéctum, et novíssimum virórum, virum dolórum, et sciéntem infirmitátem: et quasi abscónditus vultus ejus et despéctus, unde nec reputávimus eum. Vere languóres nostros ipse tulit, et dolóres nostros ipse portávit: et nos putávimus eum quasi leprósum, et percússum a Deo et humiliátum. Ipse autem vulnerátus est propter iniquitátes nostras, attrítus est propter scélera nostra: disciplína pacis nostræ super eum, et livóre ejus sanáti sumus."
+		]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Diléctus meus cándidus, et rubicúndus, et totus desiderábilis:",
+		"responsum":"Omnis enim figúra ejus amórem spirat, et ad redamándum próvocat caput inclinátum, manus expánsæ, pectus apértum.",
+		"versus":"Piis, o Virgo, spectas eum óculis, contémplans in eo non tam vúlnerum livórem, quam mundi salútem."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Omnes nos quasi oves errávimus, unusquísque in viam suam declinávit: et pósuit Dóminus in eo iniquitátem ómnium nostrum. Oblátus est quia ipse vóluit, et non apéruit os suum: sicut ovis ad occisiónem ducétur, et quasi agnus coram tondénte se obmutéscet, et non apériet os suum. De angústia, et de judício sublátus est: generatiónem ejus quis enarrábit? quia abscíssus est de terra vivéntium: propter scelus pópuli mei percússi eum. Et dabit ímpios pro sepultúra, et dívitem pro morte sua: eo quod iniquitátem non fécerit, neque dolus fúerit in ore ejus."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Manus ejus tornátiles, clavórum cúspide terebrátæ,",
+		"responsum":"Humánæ salútis prétio quasi hyacínthis refértæ.",
+		"versus":"Córnua in mánibus ejus: ibi abscóndita est fortitúdo ejus: sunt enim manus ejus."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Et Dóminus vóluit contérere eum in infirmitáte: si posúerit pro peccáto ánimam suam, vidébit semen longǽvum, et volúntas Dómini in manu ejus dirigétur. Pro eo quod laborávit ánima ejus, vidébit et saturábitur: in sciéntia sua justificábit ipse justus servus meus multos, et iniquitátes eórum ipse portábit. Ídeo dispértiam ei plúrimos: et fórtium dívidet spólia, pro eo quod trádidit in mortem ánimam suam, et cum scelerátis reputátus est: et ipse peccáta multórum tulit, et pro transgressóribus rogávit."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Diligébat Jesus Joánnem, quóniam speciális prærogatíva castitátis amplióri dilectióne fécerat dignum:",
+		"responsum":"Quia virgo eléctus ab ipso, virgo in ævum permánsit.",
+		"versus":"In cruce dénique moritúrus huic matrem Vírginem vírgini commendávit."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/Q5F6N1A1",
+		"datum":"Inimíci mei * dixérunt mala mihi: Quando moriétur, et períbit nomen ejus?"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xl,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0915N2A2",
+		"datum":"Deus, vitam meam * annuntiávi tibi: posuísti lácrimas meas in conspéctu tuo."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lv,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/Q5F6N2A3",
+		"datum":"Fílii hóminum, * dentes eórum arma et sagíttæ: et lingua eórum gládius acútus."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lvi,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Fácies mea intúmuit a fletu.","R. Et pálpebræ meæ caligavérunt."]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Bernárdi Abbátis.",
+			"[Ex sermone de 12 stellis.]/Martýrium Vírginis tam in Simeónis prophetía, quam in ipsa Domínicæ passiónis história commendátur. Pósitus est hic (ait sanctus senex de púero Jesu) in signum cui contradicétur; et tuam ipsíus ánimam (ad Maríam autem dicébat) pertransíbit gládius. Vere tuam, o beáta Mater, ánimam pertransívit. Alióquin non nisi eam pertránsiens, carnem Fílii tui penetráret. Et quidem posteáquam emísit spíritum tuus ille Jesus, ipsíus plane non áttigit ánimam crudélis láncea, quæ ipsíus apéruit latus, sed tuam útique ánimam pertransívit. Ipsíus nimírum ánima jam ibi non erat, sed tua plane inde nequíbat avélli."
+		]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Ténebræ factæ sunt, cum crucifixíssent Jesum Judǽi, et circa horam nonam exclamávit Jesus voce magna: Deus meus, ut quid dereliquísti me?",
+		"responsum":"Et inclináto cápite emísit spíritum.",
+		"versus":"Quis tibi nunc sensus, dum cernis tália, Virgo?"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Tuam ergo pertransívit ánimam vis dolóris, ut plusquam Mártyrem non immérito prædicémus, in qua nimírum corpóreæ sensum passiónis excésserit compassiónis afféctus. An non tibi plusquam gládius fuit sermo ille, revéra pertránsiens ánimam, et pertíngens usque ad divisiónem ánimæ et spíritus: Múlier, ecce fílius tuus? O commutatiónem! Joánnes tibi pro Jesu tráditur, servus pro Dómino, discípulus pro Magístro, fílius Zebedǽi pro Fílio Dei, homo purus pro Deo vero. Quómodo non tuam affectuosíssimam ánimam pertransíret hæc audítio, quando et nostra, licet sáxea, licet férrea péctora, sola recordátio scindit?"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Pássio Dómini,",
+		"responsum":"Ipsam ejus matrem, carnáli orbitáte gráviter percússam, vehementíssime contristávit.",
+		"versus":"Ferrum lánceæ militáris, latus quidem Salvatóris, ánimam vero transívit Vírginis matris."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Non mirémini, fratres, quod María Martyr in ánima fuísse dicátur. Mirétur qui non memínerit se audivísse Paulum inter máxima Géntium crímina memorántem, quod sine affectióne fuíssent. Longe id fuit a Maríæ viscéribus, longe sit a sérvulis ejus. Sed forte quis dicat: Numquid non eum præscíerat moritúrum? Et indubitánter. Numquid non sperábat contínuo resurrectúrum? Et fidéliter. Super hæc dóluit crucifíxum? Et veheménter. Alióquin quisnam tu frater, aut unde tibi hæc sapiéntia, ut miréris plus Maríam compatiéntem, quam Maríæ fílium patiéntem? Ille étiam mori córpore pótuit; ista cómmori corde non pótuit? Fecit illud cáritas, qua majórem nemo hábuit: fecit et hoc cáritas, cui post illam símilis áltera non fuit."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"formula":[["formula","gloria","simplex-responsum"]],
+		"incipit":"Quis mihi det te fratrem meum sugéntem úbera matris meæ, et inhæréndo láteri tuo, ut sanguis tuus sánguinem meum tangat, et tergat:",
+		"responsum":"Ut fons aquæ tuæ de scaturígine recti cordis, per venas boni óperis, in finem ætérnæ felicitátis exsíliat?",
+		"versus":"Fílii tui de longe vénient, et fíliæ tuæ de látere surgent."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0915N3A1",
+		"datum":"Intendérunt arcum, * rem amáram, ut sagíttent in occúltis immaculátum."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/Q5F6N3A2",
+		"datum":"Factus sum * sicut homo sine adjutório, inter mórtuos liber."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxvii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/Q5F6N3A3",
+		"datum":"Replévit me * amaritúdine, inebriávit me absýnthio."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cviii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Deus vitam meam annuntiávi tibi.","R. Posuísti lácrimas meas in conspéctu tuo."]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 19. c.]/In illo témpore: Stabant juxta crucem Jesu mater ejus, et soror matris ejus María Cléophæ, et María Magdaléne. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 119. in Joannem.]/Hæc nimírum est illa hora, de qua Jesus, aquam conversúrus in vinum, díxerat matri: Quid mihi et tibi est múlier? Nondum venit hora mea. Hanc ítaque horam prædíxerat, quæ tunc nondum vénerat, in qua debéret agnóscere moritúrus, de qua fúerat mortáliter natus. Tunc ergo divína factúrus, non divinitátis, sed infirmitátis matrem velut incógnitam repellébat. Nunc autem humána jam pátiens, ex qua fúerat factus homo, afféctu commendábat humáno: morális ígitur insinuátur locus. Facit quod faciéndum ádmonet, et exémplo suo suos minístros instrúxit præcéptor bonus, ut a fíliis piis impendátur cura paréntibus: tamquam lignum illud, ubi fixa erant membra moriéntis, étiam cáthedra fúerit magístri docéntis."
+		]
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Dóleo super te fili mi Jesu, decórus nimis, et amábilis super amórem mulíerem!",
+		"responsum":"Sicut enim mater únicum díligit fílium, ita ego te diligébam.",
+		"versus":"Defécit in dolóre vita mea, et anni mei in gemítibus."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","lectio","lectio-ii","include-inauthenticas","habens-commemorationem-matutini"],
+		"datum":"Ex hac sana doctrína didícerat Paulus Apóstolus quod docébat quando dicébat: Si quis autem suis, et máxime domésticis non próvidet, fidem negávit, et est infidéli detérior. Quid autem tam cuíque domésticum, quam paréntes fíliis, aut paréntibus fílii? Hujus ítaque salubérrimi præcépti ipse magíster sanctórum de seípso constituébat exémplum: quando non ut fámulæ Deus, quam creáverat, et regébat; sed ut matri homo, de qua creátus fúerat, et quam relinquébat, álterum pro se quodámmodo fílium providébat."
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Eja mater fons amóris, fac nos sentíre vim dolóris, ut tecum lugeámus:",
+		"responsum":"Et Domínicæ passiónis fructum sentiámus.",
+		"versus":"Ut sicut fílius tuus Jesus pro nobis mórtuus est, et resurréxit; ita et nos commórtui cum eódem resurgámus."
 	},
 	{
 		"tags":["septem-dolores-passione","laudes","hymnus"],
@@ -122,7 +320,7 @@
 	},
 	{
 		"tags":["septem-dolores-passione","sexta","capitulum"],
-		"datum":"Ipse vulnerátus est propter iniquitátes nostras, + attrítus est propter scélera nostra. Disciplína pacis nostræ super eum, * et livóre ejus sanáti sumus."
+		"datum":"[Isaiæ 53. b.]/Ipse vulnerátus est propter iniquitátes nostras, + attrítus est propter scélera nostra. Disciplína pacis nostræ super eum, * et livóre ejus sanáti sumus."
 	},
 	{
 		"tags":["septem-dolores-passione","sexta","responsorium-breve"],
@@ -136,7 +334,7 @@
 	},
 	{
 		"tags":["septem-dolores-passione","nona","capitulum"],
-		"datum":"Generatiónem ejus quis enarrábit? quia abscíssus est de terra vivéntium; * propter scelus pópuli mei percússi eum."
+		"datum":"[Isaiæ 53. c.]/Generatiónem ejus quis enarrábit? quia abscíssus est de terra vivéntium; * propter scelus pópuli mei percússi eum."
 	},
 	{
 		"tags":["septem-dolores-passione","nona","responsorium-breve"],
