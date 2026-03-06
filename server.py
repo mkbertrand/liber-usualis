@@ -50,23 +50,35 @@ def localehunt(acceptlanguage):
 	return langs
 
 definedlocales = os.listdir('web/locales/')
-owntemplate = ['index', 'breviarium', 'pray']
+toplevelpages = [
+		'index',
+		'breviarium',
+		'de-anno',
+		'kalendar',
+		'rubricae',
+		'pray',
+		'about',
+		'credit',
+		'donate',
+		'help',
+		'resources'
+	]
+
+def findmytemplate(page):
+	if page == 'pray':
+		return 'web/templates/pray.tpl'
+	elif page in ['index', 'breviarium']:
+		return 'web/templates/menu.tpl'
+	else:
+		return 'web/templates/generic.tpl'
 
 @get('/')
 def index():
 	return redirect('/index')
 
-@get('/index')
-@get('/breviarium')
-@get('/rubricae')
-@get('/pray')
-@get('/kalendar')
-@get('/about')
-@get('/credit')
-@get('/donate')
-@get('/help')
-def bouncetolocale():
-	page = request.route.rule[1:]
+@get(f'/<page:re:{'|'.join(toplevelpages)}>')
+def bouncetolocale(page):
+	print(page)
 	locales = ['en']
 	try:
 		locales = localehunt(request.headers.get('Accept-Language'))
@@ -74,7 +86,7 @@ def bouncetolocale():
 	finally:
 		return redirect(f'/{[loc for loc in locales if loc in definedlocales][0]}/{page}')
 
-@get(f'/<preferredlocale:re:{'|'.join(definedlocales)}>/<page>')
+@get(f'/<preferredlocale:re:{'|'.join(definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
 	locales = [preferredlocale]
 	try:
@@ -90,12 +102,11 @@ def localpage(preferredlocale, page):
 		title = titles[page] if page in titles else ''
 
 		for locale in locales:
-			if page in owntemplate:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					return template(f'web/pages/{page}.tpl', locale=locale, preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{locale}/pages/{page}.json')))
-			else:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.html') or os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
-					return template('web/resources/page.tpl', page=page, title=title, locale=locale, preferredlocale=preferredlocale)
+			pagetemplate = findmytemplate(page)
+			translation = ''
+			if os.path.exists(f'web/locales/{locale}/pages/{page}.json'):
+				translation = json.load(open(f'web/locales/{locale}/pages/{page}.json'))
+			return template(pagetemplate, locale=locale, preferredlocale=preferredlocale, title=title, page=page, text=translation)
 
 def flattensetlist(sets):
 	ret = set()
