@@ -495,7 +495,11 @@ function render(data, chant) {
 					header = makeheadingannotation(data.datum.split('\n')[0].slice(1, -1).replace(':', '. ') + '.');
 					data.datum = data.datum.substring(data.datum.indexOf('\n') + 1).replace(/^\d+\s/, '').split('\n');
 					translated = translated == null ? null : translated.split('\n').slice(1);
-					data.tags.push('textus-psalmi');
+					if (parenttags.includes('preces')) {
+						data.tags.push('textus-psalmi-precibus');
+					} else {
+						data.tags.push('textus-psalmi');
+					}
 
 				} else if (data.tags.includes('nocturna')) {
 					if (data.quaesitum.includes('nocturna-i')) {
@@ -548,14 +552,24 @@ function render(data, chant) {
 					return '';
 				}
 
-				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'collecta-primaria', 'formula-commemorationis']
+				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'preces', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i))) {
-					ret = `${header}<div class="rite-item ${data.tags.concat(parenttags).join(' ')}">${ret}`;
-					return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
+					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
+					if (annotation == null) {
+						if (!(ret.startsWith('<p') || ret.startsWith('<div'))) {
+							ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
+						}
+						ret = `${header}<div class="rite-item ${data.tags.concat(parenttags).join(' ')}">${ret}`;
+						return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
+					} else {
+						ret = ret.replace(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/,'');
+						ret = paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
+						return `${header}<div class="rite-item"><p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
+					}
 				}
 
-				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'preces', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
-				if (fullparagraph.some(i => uniquelyhas(i)) || (data.tags.includes('triduum') && data.tags.includes('collecta'))) {
+				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
+				if ((fullparagraph.some(i => uniquelyhas(i)) || (data.tags.includes('triduum') && data.tags.includes('collecta'))) && !parenttags.includes('sacrosanctae')) {
 					if (!ret.startsWith('<p')) {
 						ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
 					}
@@ -567,7 +581,7 @@ function render(data, chant) {
 					return `${ret}</p>`;
 				}
 
-				openparagraph = ['capitulum', 'absolutio', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor'];
+				openparagraph = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'textus-psalmi-precibus'];
 				if (openparagraph.some(i => uniquelyhas(i))) {
 					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);

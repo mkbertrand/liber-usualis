@@ -242,6 +242,8 @@
 	line-height: 1.25;
 	margin-top: 7px;
 	margin-bottom: 14px;
+	text-align: justify;
+	hyphens: auto;
 }
 
 .verse-number {
@@ -278,17 +280,16 @@
 
 /* Formatting for specific items */
 .aperi-domine, .sacrosanctae {
-	font-size: 16px !important;
+	font-size: 14px !important;
 }
 
-.absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter {
+.aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .formula-lectionis::first-letter {
 	color: red;
 }
 
-.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
+.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
 	float: left;
 	font-size: 94px;
-	font-weight: bold;
 	margin-right: 0.1rem;
 	color: red;
 	line-height: 0;
@@ -296,7 +297,7 @@
 	-webkit-initial-letter: 3;
 }
 
-.lectio-sequens::first-letter {
+.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter {
 	font-size: 60px !important;
 	initial-letter: 2;
 	-webkit-initial-letter: 2;
