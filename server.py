@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import bottle
 from bottle import get, route, request, static_file, error, template, redirect, abort
@@ -103,16 +103,7 @@ def localpage(preferredlocale, page):
 				titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
 		title = titles[page] if page in titles else ''
 
-		pagetemplate = findmytemplate(page)
-		if pagetemplate == 'web/templates/generic.tpl':
-			for locale in locales:
-				if os.path.exists(f'web/locales/{locale}/pages/{page}.html'):
-					return template(pagetemplate, locale=locale, preferredlocale=preferredlocale, title=title, page=page)
-		else:
-			translation = ''
-			if os.path.exists(f'web/locales/{locales[0]}/pages/{page}.json'):
-				translation = json.load(open(f'web/locales/{locales[0]}/pages/{page}.json'))
-			return template(pagetemplate, locale=preferredlocale, preferredlocale=preferredlocale, title=title, page=page, text=translation)
+		return template(findmytemplate(page), title=title, page=page, locales=locales)
 
 def flattensetlist(sets):
 	ret = set()

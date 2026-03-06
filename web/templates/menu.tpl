@@ -2,6 +2,10 @@
 
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
+% import json
+% import translationfind
+% locale = locales[0]
+
 <html lang='en'>
 	<head>
 		<title>{{title}}</title>
@@ -27,7 +31,7 @@
 		<div id="site-wrapper-home">
 			<div id="top-bar-title">
 				<div id="project-logo">
-					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 				<select id="locale-selector" onchange="window.location.assign('/' + this.value + window.location.pathname.slice(3) + window.location.search)">
 					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
@@ -36,7 +40,7 @@
 				</select>
 			</div>
 			<div id="content-container-home">
-				% include(f'web/pages/{page}.tpl', text=text)
+				% include(f'web/pages/{page}.tpl', text=json.load(open(translationfind.bestlocalized(f'/pages/{page}.json', locales))), locale=locale)
 			</div>
 		</div>
 	</body>

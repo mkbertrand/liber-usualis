@@ -3,6 +3,9 @@
 <!-- Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 % import json
+% import translationfind
+% locale = locales[0]
+% text = json.load(open(translationfind.bestlocalized(f'/pages/{page}.json', locales)))
 
 <html lang="{{locale.split('-')[0]}}">
 	<head>
@@ -307,7 +310,7 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/hamburger-menu.svg" /></button>
 				<div id="project-logo">
-					<div id="logo-link-wrapper"><a id="logo-link" href="/{{preferredlocale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
 				</div>
 				<select id="locale-selector" @change="window.location.assign('/' + $event.target.value + window.location.pathname.slice(3) + window.location.search)">
 					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
@@ -318,7 +321,7 @@
 					<img id="options-gear" src="/resources/svg/settings-outline.svg" />
 				</button>
 			</div>
-			% include('web/resources/sidemenu.tpl', preferredlocale=preferredlocale, text=json.load(open(f'web/locales/{preferredlocale}/resources/sidemenu.json')))
+			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
 
 			<div id="content-container-outer">
 				<div x-cloak id="options-panel-background" x-show="optionspanel">

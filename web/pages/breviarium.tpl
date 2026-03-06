@@ -12,10 +12,10 @@
 <p>Hi! You're on an incomplete part of the website. This navigation page is only somewhat usable. Don't worry; using this page will not break anything.</p>
 <nav id="breviarium-contents-nav" x-data="{
 	pages:[
-		{'path':'/{{preferredlocale}}/de-anno', 'name':'{{text['de-anno']}}'},
-		{'path':'/{{preferredlocale}}/kalendar', 'name':'{{text['kalendar']}}'},
-		{'path':'/{{preferredlocale}}/rubricae', 'name':'{{text['rubrics']}}'},
-		{'path':'/{{preferredlocale}}/pray', 'name':'{{text['pray']}}'}
+		{'path':'/{{locale}}/de-anno', 'name':'{{text['de-anno']}}'},
+		{'path':'/{{locale}}/kalendar', 'name':'{{text['kalendar']}}'},
+		{'path':'/{{locale}}/rubricae', 'name':'{{text['rubrics']}}'},
+		{'path':'/{{locale}}/pray', 'name':'{{text['pray']}}'}
 	]
 	}">
 	<template x-for="page in pages">
