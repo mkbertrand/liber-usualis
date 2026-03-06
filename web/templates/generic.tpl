@@ -3,7 +3,7 @@
 <!-- Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 % import json
-% import translationfind
+% import localization
 % locale = locales[0]
 
 <html lang="{{locale.split('-')[0]}}">
@@ -46,7 +46,7 @@
 				</select>
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
-			% include(translationfind.bestlocalized(f'/pages/{page}.html', locales))
+			% include(localization.bestlocalized(f'/pages/{page}.html', locales))
 		</div>
 	</body>
 </html>

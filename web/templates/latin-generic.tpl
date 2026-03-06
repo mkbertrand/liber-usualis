@@ -4,7 +4,7 @@
 
 % import json
 % import os
-% import translationfind
+% import localization
 % locale = locales[0]
 
 <html lang="{{locale.split('-')[0]}}">
@@ -50,7 +50,7 @@
 			% if os.path.exists(f'web/pages/{page}.html'):
 				% include(f'web/pages/{page}.html')
 			% else:
-				% include(f'web/pages/{page}.tpl', text=json.load(open(translationfind.bestlocalized(f'/pages/{page}.json', locales))))
+				% include(f'web/pages/{page}.tpl', text=json.load(open(localization.bestlocalized(f'/pages/{page}.json', locales))))
 		</div>
 	</body>
 </html>

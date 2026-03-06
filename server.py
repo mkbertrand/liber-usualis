@@ -14,7 +14,6 @@ from logging.handlers import TimedRotatingFileHandler
 
 import copy
 import argparse
-import re
 import os
 import json
 import traceback
@@ -26,30 +25,12 @@ import prioritizer
 import kalendar.datamanage
 import kalendar.display as display
 
+import localization
+
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
 root = 'breviarium-1888'
 
-def localehunt(acceptlanguage):
-	# Get preferred locales
-	acla = acceptlanguage.replace(', ', ',')
-	langs = []
-	index = 0
-	for la in acla.split(','):
-		match = re.search(r';q=([\d\.]+?)(,|$)', acla[acla.index(la):])
-		# index is used to slightly devalue locales that are listed later but don't come with a q value (or have an equal q value with something else)
-		if match is None:
-			langs.append([la, index * -0.001])
-		else:
-			langs.append([la.split(';')[0], float(match.groups()[0]) - index * 0.001])
-		index += 1
-
-	# Sort locales to decide what user wants
-	langs = [l[0] for l in sorted(langs, key=lambda l : l[1], reverse=True)]
-
-	return langs
-
-definedlocales = os.listdir('web/locales/')
 toplevelpages = [
 		'index',
 		'breviarium',
@@ -80,19 +61,19 @@ def index():
 
 @get(f'/<page:re:{'|'.join(toplevelpages)}>')
 def bouncetolocale(page):
-	print(page)
 	locales = ['en']
 	try:
-		locales = localehunt(request.headers.get('Accept-Language'))
-		locales.append('en')
+		locales = localization.localehunt(request.headers.get('Accept-Language'))
+		if not 'en' in locales:
+			locales.append('en')
 	finally:
-		return redirect(f'/{[loc for loc in locales if loc in definedlocales][0]}/{page}')
+		return redirect(f'/{[loc for loc in locales if loc in localization.definedlocales][0]}/{page}')
 
-@get(f'/<preferredlocale:re:{'|'.join(definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
+@get(f'/<preferredlocale:re:{'|'.join(localization.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
 	locales = [preferredlocale]
 	try:
-		locales.extend(localehunt(request.headers.get('Accept-Language')))
+		locales.extend(localization.localehunt(request.headers.get('Accept-Language')))
 	finally:
 		if not 'en' in locales:
 			locales.append('en')

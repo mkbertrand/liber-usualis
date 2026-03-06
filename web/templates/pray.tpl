@@ -3,9 +3,9 @@
 <!-- Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 % import json
-% import translationfind
+% import localization
 % locale = locales[0]
-% text = json.load(open(translationfind.bestlocalized(f'/pages/{page}.json', locales)))
+% text = json.load(open(localization.bestlocalized(f'/pages/{page}.json', locales)))
 
 <html lang="{{locale.split('-')[0]}}">
 	<head>

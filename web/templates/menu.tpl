@@ -3,7 +3,7 @@
 <!-- Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 % import json
-% import translationfind
+% import localization
 % locale = locales[0]
 
 <html lang='en'>
@@ -40,7 +40,7 @@
 				</select>
 			</div>
 			<div id="content-container-home">
-				% include(f'web/pages/{page}.tpl', text=json.load(open(translationfind.bestlocalized(f'/pages/{page}.json', locales))), locale=locale)
+				% include(f'web/pages/{page}.tpl', text=json.load(open(localization.bestlocalized(f'/pages/{page}.json', locales))), locale=locale)
 			</div>
 		</div>
 	</body>

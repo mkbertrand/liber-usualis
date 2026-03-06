@@ -43,7 +43,7 @@ Benjamin Bloomfield (whose Javascript code I 'borrowed' and whose Compline proje
 
 ## License
 
-All files within this project are released under the GNU Affero General Public License (AGPL-3.0 or later) unless otherwise indicated in the file.
+Each file within this project are released under the GNU Affero General Public License (AGPL-3.0 or later) unless otherwise indicated in the respective file.
 
 
 # deploying
