@@ -2,7 +2,7 @@
 	{
 		"tags":["martyrum-tempore-paschali","antiphona","antiphona-i"],
 		"src":"gregobase/1923",
-		"datum":"Sancti tui Dómine * florébunt sicut lílium, allelúja: et sicut odor bálsami erunt ante te, allelúja."
+		"datum":"Sancti tui * Dómine florébunt sicut lílium, allelúja: et sicut odor bálsami erunt ante te, allelúja."
 	},
 	{
 		"tags":["martyrum-tempore-paschali","antiphona","antiphona-ii"],
@@ -26,7 +26,7 @@
 	},
 	{
 		"tags":["martyrum-tempore-paschali","capitulum"],
-		"datum":"Stabunt justi in magna constántia + advérsus eos, qui se angustiavérunt, * et qui abstulérunt labóres eórum."
+		"datum":"[Sap. 3.]/Stabunt justi in magna constántia + advérsus eos, qui se angustiavérunt, * et qui abstulérunt labóres eórum."
 	},
 	{
 		"tags":[
@@ -92,6 +92,127 @@
 		"datum":"Lux perpétua * lucébit sanctis tuis Dómine, et ætérnitas témporum, allelúja."
 	},
 	{
+		"tags":["martyrum-tempore-paschali","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Exsúltent in Dómino sancti, * Allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyres","matutinum","hymnus"],
+		"datum":[
+			"Christo profúsum sánguinem,/Et Mártyrum victórias,/Dignámque cœlo laúream/Lætis sequámur vócibus.",
+			"Terróre victo sǽculi,/Pœnísque spretis córporis,/Mortis sacræ compéndio/Vitam beátam póssident.",
+			"Tradúntur igni Mártyres,/Et bestiárum déntibus:/Armáta sævit úngulis/Tortóris insáni manus.",
+			"Nudáta pendent víscera:/Sanguis sacrátus fúnditur:/Sed pérmanent immóbiles/Vitæ perénnis grátia.",
+			"Te nunc Redémptor quǽsumus,/Ut Mártyrum consórtio/Jungas precántes sérvulos/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-i","antiphona"],
+		"src":"nocturnale/APTPN1A",
+		"datum":"Stabunt justi * in magna constántia advérsus eos, qui se angustiavérunt, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Sancti et justi in Dómino gaudéte, allelúja.","R. Vos elégit Deus in hæreditátem sibi, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Beátus vir qui métuit Dóminum, allelúja:",
+		"responsum":"In mandátis ejus cupit nimis, allelúja, allelúja, allelúja.",
+		"versus":"Glória et divítiæ in domo ejus, et justítia ejus manet in sǽculum sǽculi."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Tristítia vestra, allelúja,",
+		"responsum":"Convertétur in gaúdium, allelúja, allelúja.",
+		"versus":"Mundus autem gaudébit, vos vero contristabímini, sed tristítia vestra."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Pretiósa in conspéctu Dómini, allelúja,",
+		"responsum":"Mors sanctórum ejus, allelúja.",
+		"versus":"Custódit Dóminus ómnia ossa eórum, unum ex his non conterétur."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-ii","antiphona"],
+		"src":"nocturnale/APTPN2A",
+		"datum":"Ecce * quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Lux perpétua lucébit sanctis tuis Dómine, allelúja.","R. Et ætérnitas témporum, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Ambrósii Epíscopi.",
+			"[Serm. 22.]/Dignum et cóngruum est, fratres, ut post lætítiam Paschæ, quam in Ecclésia celebrávimus, gaúdia nostra cum sanctis Martýribus conferámus: et iis annuntiémus Domínicæ resurrectiónis glóriam, qui consórtes sunt Domínicæ passiónis. Qui enim sócii sunt contuméliæ, debent et partícipes esse lætítiæ. Ita enim dicit beátus Apóstolus: Sicut sócii passiónum estis, et resurrectiónis éritis: si tolerábimus, inquit, et conregnábimus. Qui ergo toleravérunt mala propter Christum, debent et glóriam habére cum Christo."
+		]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Lux perpétua lucébit sanctis tuis Dómine,",
+		"responsum":"Et ætérnitas témporum, allelúja, allelúja.",
+		"versus":"Lætítia sempitérna erit super cápita eórum: gaúdium et exsultatiónem obtinébunt."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Annuntiémus, inquam, sanctis Martýribus Domínicæ Paschæ grátiam: ut dum sepultúræ illíus prædicámus reseráta claustra, et horum sepúlchra reseréntur: dum corpus illíus mórtuum dícimus tepéntibus venis súbito viguísse, horum quoque membra jam frígida immortalitátis calóre foveántur. Éadem enim rátio Mártyres súscitat, quæ et Dóminum suscitávit. Nam sicut viam passiónis ejus expérti sunt, ita experiéntur et vitæ. Scriptum est enim in Psalmo: Notas mihi fecísti vias vitæ. Hoc útique in resurrectióne ex persóna dícitur Salvatóris: ut qui, dum post mortem ab ínferis redit ad súperos, incípiat notam habére viam vitæ, quæ ante habebátur ignóta."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"In servis suis, allelúja,",
+		"responsum":"Consolábitur Deus, allelúja.",
+		"versus":"Judicábit Dóminus pópulum suum, et in servis suis."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Ignóta enim erat ante Christi advéntum via vitæ, quæ nullíus adhuc resurgéntis fúerat temeráta vestígio. At ubi Dóminus resurréxit, nota facta, solo attríta est plurimórum. De quibus sanctus Evangelísta ait: Multórum córpora sanctórum surrexérunt cum eo, et introiérunt in sanctam civitátem. Unde cum Dóminus in resurrectióne sua díxerit, Notas mihi fecísti vias vitæ: póssumus et nos jam dícere Dómino: Notas fecísti nobis vias vitæ. Ipse enim nobis notas fecit vias vitæ, qui nobis sémitam manifestávit ad vitam. Notas enim mihi fecit vias vitæ, cum me dócuit fidem, misericórdiam, justítiam, castitátem. His enim pervenítur itinéribus ad salútem."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Fíliæ Jerúsalem, veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus",
+		"responsum":"In die solemnitátis et lætítiæ, allelúja.",
+		"versus":"Quóniam confortávit seras portárum tuárum, benedíxit fílios tuos in te."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-iii","antiphona"],
+		"src":"nocturnale/APTPN3A",
+		"datum":"Lux perpétua * lucébit sanctis tuis Dómine, et ætérnitas témporum, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Lætítia sempitérna super cápita eórum, allelúja.","R. Gaúdium et exsultatiónem obtinébunt, allelúja."]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 15. c.]/In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis vera: et Pater meus agrícola est. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 80 in Joannem.]/Iste locus evangélicus, fratres, ubi se dicit Dóminus vitem, et discípulos suos pálmites, secúndum hoc dicit, quod est caput Ecclésiæ, nosque membra ejus, mediátor Dei, et hóminum homo Christus Jesus. Uníus quippe natúræ sunt vitis et pálmites. Propter quod cum esset Deus, cujus natúræ non sumus, factus est homo, ut in illo esset vitis humána natúra, cujus et nos hómines pálmites esse possémus."
+		]
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Ego sum vitis vera, et vos pálmites:",
+		"responsum":"Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.",
+		"versus":"Sicut diléxit me Pater, et ego diléxi vos."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Quid ergo est, Ego sum vitis vera? Numquid ut ádderet, vera, hoc ad eam vitem rétulit, unde ista similitúdo transláta est? Sic enim dícitur vitis per similitúdinem, non per proprietátem: quemádmodum dícitur ovis, agnus, leo, petra, lapis anguláris, et cétera hujúsmodi, quæ magis ipsa sunt vera, ex quibus ducúntur istæ similitúdines, non proprietátes. Sed cum dicit, Ego sum vitis vera: ab illa se útique discérnit, cui dícitur: Quómodo convérsa es in amaritúdinem vitis aliéna? Nam quo pacto est vitis vera, quæ exspectáta est ut fáceret uvam, fecit autem spinas?"
+	},
+	{
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Cándidi facti sunt Nazarǽi ejus, allelúja: splendórem Deo dedérunt, allelúja:",
+		"responsum":"Et sicut lac coaguláti sunt, allelúja, allelúja.",
+		"versus":"Candidióres nive, nitidióres lacte, rubicundióres ébore antíquo, sapphíro pulchrióres."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Ego sum, inquit, vitis vera: et Pater meus agrícola est. Numquid unum sunt agrícola et vitis? Secúndum hoc ergo vitis Christus, secúndum quod ait: Pater major me est. Secúndum autem id, quod ait: Ego, et Pater unum sumus; et ipse agrícola est: nec talis, quales sunt, qui extrínsecus operándo éxhibent ministérium; sed talis, ut det étiam intrínsecus increméntum. Nam neque qui plantat est áliquid, neque qui rigat: sed, qui increméntum dat, Deus. Sed útique Deus est Christus, quia Deus erat Verbum: unde ipse, et Pater unum sunt: et, si Verbum caro factum est, quod non erat, manet quod erat."
+	},
+	{
 		"tags":["martyrum-tempore-paschali","laudes","hymnus"],
 		"src":"gregobase/12997",
 		"datum":[
@@ -136,7 +257,7 @@
 	},
 	{
 		"tags":["martyrum-tempore-paschali","sexta","capitulum"],
-		"datum":"Ecce quómodo computáti sunt inter fílios Dei, * et inter sanctos sors illórum est."
+		"datum":"[Sap. 5.]/Ecce quómodo computáti sunt inter fílios Dei, * et inter sanctos sors illórum est."
 	},
 	{
 		"tags":["martyrum-tempore-paschali","sexta","responsorium-breve"],
@@ -150,7 +271,7 @@
 	},
 	{
 		"tags":["martyrum-tempore-paschali","nona","capitulum"],
-		"datum":"Scimus quóniam diligéntibus Deum + ómnia cooperántur in bonum, * iis, qui secúndum propósitum vocáti sunt sancti."
+		"datum":"[Rom. 8. e.]/Scimus quóniam diligéntibus Deum + ómnia cooperántur in bonum, * iis, qui secúndum propósitum vocáti sunt sancti."
 	},
 	{
 		"tags":["martyrum-tempore-paschali","nona","responsorium-breve"],
@@ -162,5 +283,25 @@
 		"tags":["martyrum-tempore-paschali","ii-vesperae","antiphona-magnificat"],
 		"src":"gregobase/2831",
 		"datum":"Sancti et justi * in Dómino gaudéte, allelúja: vos elégit Deus in hæreditátem sibi, allelúja."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-ii","lectio","alia-lectio"],
+		"lectio-i":[
+			"De Epístola sancti Cypriáni Epíscopi et Mártyris ad Mártyres et Confessóres.",
+			"[Lib. 2. Epist. 6.]/Quibus ego vos laúdibus prǽdicem, fortíssimi Mártyres? robur péctoris vestri, et perseverántiam fídei, quo præcónio vocis exórnem? Tolerástis usque ad consummatiónem glóriæ duríssimam quæstiónem: nec cessístis supplíciis, sed vobis pótius supplícia cessérunt. Finem dolóribus, quem torménta non dabant, corónæ dedérunt. Laniéna grávior ad hoc diu perseverávit, non ut stantem fidem dejíceret, sed ut hómines Dei ad Deum velócius mítteret."
+		],
+		"lectio-ii":"Vidit admírans præséntium multitúdo cœléste certámen, certámen Dei, certámen spiritále, prǽlium Christi: stetísse servos ejus voce líbera, mente incorrúpta, virtúte divína, telis quidem sæculáribus nudos, sed armis fídei ardéntis armátos. Stetérunt torti torquéntibus fortióres: et pulsántes ac laniántes úngulas, pulsáta ac laniáta membra vicérunt. Inexpugnábilem fidem superáre non pótuit sǽviens diu plaga repetíta, quamvis rupta compáge víscerum torqueréntur in servis Dei jam non membra, sed vúlnera. Fluébat sanguis, qui incéndium persecutiónis exstíngueret, qui flammas et ignes gehénnæ glorióso cruóre sopíret.",
+		"lectio-iii":"O quale illud fuit spectáculum Dómino, quam sublíme, quam magnum, quam Dei óculis sacraménto ac devotióne mílitis ejus accéptum: sicut scriptum est in Psalmis, Spíritu sancto loquénte ad nos páriter et monénte: Pretiósa est in conspéctu Dómini mors justórum ejus. Pretiósa mors hæc est, quæ emit immortalitátem prétio sui sánguinis; quæ accépit corónam de consummatióne virtútis. Quam lætus illic Christus fuit, quam libens in tálibus servis suis et pugnávit, et vicit protéctor fídei, dans credéntibus tantum, quantum se credit cápere qui sumit: certámini suo ádfuit, præliatóres atque assertóres sui nóminis eréxit, corroborávit, animávit. Et qui pro nobis mortem semel vicit, semper vincit in nobis."
+	},
+	{
+		"tags":["martyrum-tempore-paschali","martyr","matutinum","nocturna-iii","lectio","alia-homilia"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 15.]/In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 81. in Joan., sub med.]/Ne quisquam putáret saltem parvum áliquem fructum posse a semetípso pálmitem ferre: cum dixísset, Hic fert fructum multum; non ait, Quia sine me parum potéstis fácere; sed, Nihil potéstis fácere. Sive ergo parum, sive multum, sine illo fíeri non potest, sine quo nihil fíeri potest: quia etsi parum attúlerit palmes, eum purgat agrícola, ut plus áfferat. Tamen nisi in vite mánserit, et víxerit de radíce, quantúmlibet fructum a semetípso non potest ferre. Quamvis autem Christus vitis non esset, nisi homo esset: tamen istam grátiam palmítibus non præbéret, nisi étiam Deus esset."
+		],
+		"lectio-ii":"Verum quia ita sine ista grátia non potest vivi, ut et mors in potestáte sit líberi arbítrii: Si quis in me, inquit, non mánserit; mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Ligna ítaque vitis tanto sunt contemptibilióra si in vite non mánserint, quanto gloriosióra si mánserint. Dénique sicut de his étiam per Ezechiélem Prophétam Dóminus dicit, præcísa nullis agricolárum úsibus prosunt, nullis fabrílibus opéribus deputántur. Unum de duóbus pálmiti cóngruit, aut vitis, aut ignis: si in vite non est, in igne erit: ut ergo in igne non sit, in vite sit.",
+		"lectio-iii":"Si manséritis in me, inquit, et verba mea in vobis mánserint: quodcúmque voluéritis petétis, et fiet vobis. Manéndo quippe in Christo, quid velle possunt, nisi quod cónvenit Christo? Quid velle possunt manéndo in Salvatóre, nisi quod non est aliénum a salúte? Áliud quippe vólumus quia sumus in Christo: et áliud vólumus quia sumus adhuc in hoc sǽculo. De mansióne namque hujus sǽculi nobis aliquándo subrépit, ut hoc petámus, quod nobis non expedíre nescímus. Sed absit ut fiat nobis, si manémus in Christo, qui non facit quando pétimus, nisi quod éxpedit nobis."
 	}
 ]

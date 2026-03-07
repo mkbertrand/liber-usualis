@@ -36,7 +36,8 @@
 	},
 	{
 		"tags":["bmv-sabbatum","matutinum","psalmi"],
-		"datum":[["temporale","occurrens","pro-bmv-sabbato"]]
+		"datum":[["temporale","occurrens","pro-bmv-sabbato"]],
+		"in-tempore-paschali":[["temporale","occurrens","pro-bmv-sabbato"]]
 	},
 	{
 		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-i"],
