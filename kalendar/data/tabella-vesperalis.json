@@ -316,8 +316,6 @@
 		"include":["dominica-ii-classis","i-vesperae","primarium"],
 		"response":[
 			{"include":["duplex-i-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
-			{"include":["duplex-majus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["duplex-minus","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["semiduplex","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
 		]
 	},

@@ -495,7 +495,27 @@ function render(data, chant) {
 					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
-					header = makeheadingannotation(data.datum.split('\n')[0].slice(1, -1).replace(':', '. ') + '.');
+					headers = data.datum.match(/\[.+?\]/g);
+					for (i of headers) {
+						newheader = i.slice(1, -1).replace(':', '. ') + '.';
+						numeral = newheader.match(/\s([IVXLC]+)[\s|\.]/);
+						if (numeral != null) {
+							numeral = numeral[1];
+							vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
+							number = 0;
+							for (var j = 0; j < numeral.length; j++) {
+								if (j != numeral.length - 1 && vals[numeral[j]] < vals[numeral[j + 1]]) {
+										number += vals[numeral[j + 1]] - vals[numeral[j]];
+										j++;
+								} else {
+									number += vals[numeral[j]];
+								}
+							}
+							newheader = newheader.replace(numeral, number);
+						}
+						data.datum = data.datum.replace(i, '[' + newheader + ']');
+					}
+					header = makeheadingannotation(data.datum.split('\n')[0].slice(1, -1));
 					data.datum = data.datum.substring(data.datum.indexOf('\n') + 1).replace(/^\d+\s/, '').split('\n');
 					translated = translated == null ? null : translated.split('\n').slice(1);
 					if (parenttags.includes('preces')) {
@@ -555,7 +575,7 @@ function render(data, chant) {
 					return '';
 				}
 
-				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'preces', 'collecta-primaria', 'formula-commemorationis']
+				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'preces', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i))) {
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
 					if (annotation == null) {
