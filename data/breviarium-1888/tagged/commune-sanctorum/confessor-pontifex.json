@@ -98,10 +98,6 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["confessor-pontifex","matutinum","antiphona","antiphona-invitatorium"],
-		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
-	},
-	{
 		"tags":["confessor-pontifex","matutinum","nocturna-i","lectio"],
 		"datum":[
 			"De Epístola prima beáti Pauli Apóstoli ad Timótheum.",
@@ -117,6 +113,10 @@
 		"versus":"Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus."
 	},
 	{
+		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Ídeo jurejurándo fecit illum Dóminus créscere in plebem suam, allelúja."
+	},
+	{
 		"tags":["confessor-pontifex","matutinum","nocturna-i","lectio","lectio-iii"],
 		"datum":"Tu autem lóquere quæ decent sanam doctrínam: Senes ut sóbrii sint, pudíci, prudéntes, sani in fide, in dilectióne, in patiéntia: Anus simíliter in hábitu sancto, non criminatríces, non multo vino serviéntes, bene docéntes: ut prudéntiam dóceant adolescéntulas, ut viros suos ament, fílios suos díligant, prudéntes, castas, sóbrias, domus curam habéntes, benígnas, súbditas viris suis, ut non blasphemétur verbum Dei. Júvenes simíliter hortáre ut sóbrii sint. In ómnibus teípsum præbe exémplum bonórum óperum, in doctrína, in integritáte, in gravitáte, verbum sanum, irreprehensíbile: ut is, qui ex advérso est, vereátur, nihil habens malum dícere de nobis."
 	},
@@ -126,6 +126,10 @@
 		"incipit":"Jurávit Dóminus, et non pœnitébit eum:",
 		"responsum":"Tu es sacérdos in ætérnum secúndum órdinem Melchísedech.",
 		"versus":"Dixit Dóminus Dómino meo, Sede a dextris meis."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Tu es sacérdos in ætérnum secúndum órdinem Melchísedech, allelúja."
 	},
 	{
 		"tags":[
@@ -150,6 +154,10 @@
 		"versus":"Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei."
 	},
 	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Manus enim mea auxiliábitur ei, allelúja."
+	},
+	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Quidquid ígitur in hac sancta plebe potest esse virtútis et grátiæ, de hoc quasi quodam fonte lucidíssimo, ómnium rivulórum púritas emanávit. Étenim quia castitátis pollébat vigóre, quia abstinéntiæ gloriabátur angústiis, quia blandiméntis erat prǽditus lenitátis, ómnium cívium in Deum provocávit afféctum: quia Pontíficis administratióne fulgébat, plures e discípulis relíquit sui sacerdótii successóres."
 	},
@@ -161,6 +169,10 @@
 		"versus":"Invéni David servum meum, óleo sancto meo unxi eum."
 	},
 	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Manus enim mea auxiliábitur ei, allelúja."
+	},
+	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","lectio","lectio-iii"],
 		"datum":"Bene et cóngrue in hac die, quam nobis beáti Patris nostri N. ad paradísum tránsitus exsultábilem reddit, præséntis Psalmi versículum decantávimus: In memória ætérna erit justus. Digne enim in memóriam vértitur hóminum, qui ad gaúdium tránsiit Angelórum. Dicit sermo divínus: Ne laudes hóminem in vita sua: tamquam si díceret: Lauda post vitam, magnífica post consummatiónem. Dúplici enim ex causa utílius est hóminum magis memóriæ laudem dare, quam vitæ; ut illo potíssimum témpore mérita sanctitátis extóllas, quando nec laudántem adulátio movet, nec laudátum tentet elátio."
 	},
@@ -170,6 +182,10 @@
 		"incipit":"Iste est qui ante Deum magnas virtútes operátus est, et omnis terra doctrína ejus repléta est:",
 		"responsum":"Ipse intercédat pro peccátis ómnium populórum.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
+	},
+	{
+		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Ipse intercédat pro peccátis ómnium populórum, allelúja."
 	},
 	{
 		"tags":[

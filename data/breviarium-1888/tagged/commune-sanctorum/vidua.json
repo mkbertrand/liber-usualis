@@ -108,12 +108,14 @@
 	{
 		"tags":["vidua","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/MUNXIa",
-		"datum":"Laudémus Deum nostrum, * In confessióne beátæ N."
+		"datum":"Laudémus Deum nostrum, * In confessióne beátæ N.",
+		"in-tempore-paschali":"Laudémus Deum nostrum, * In confessióne beátæ N., allelúja."
 	},
 	{
 		"tags":["vidua","viduae","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/MUNXIb",
-		"datum":"Laudémus Deum nostrum, * In confessióne beatárum N. et N."
+		"datum":"Laudémus Deum nostrum, * In confessióne beatárum N. et N.",
+		"in-tempore-paschali":"Laudémus Deum nostrum, * In confessióne beatárum N. et N., allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","hymnus"],
@@ -127,6 +129,11 @@
 		"tags":["vidua","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"src":"nocturnale/MUXXN1A1",
 		"datum":"O quam pulchra * est casta generátio cum claritáte!"
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/MUXXN1A1",
+		"datum":"O quam pulchra * est casta generátio cum claritáte, allelúja!"
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","psalmus-i"],
@@ -152,7 +159,8 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
+		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-i"],
@@ -164,15 +172,13 @@
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"src":"nocturnale/MUXNN1R1",
-		"datum":"Veni elécta mea, et ponam in te thronum meum:"
+		"incipit":"Veni elécta mea, et ponam in te thronum meum:",
+		"responsum":"Quia concupívit Rex spéciem tuam.",
+		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i","responsum"],
-		"datum":"Quia concupívit Rex spéciem tuam."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i","versus"],
-		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Quia concupívit Rex spéciem tuam, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -181,15 +187,13 @@
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"src":"nocturnale/MUXXN1R2",
-		"datum":"Diffúsa est grátia in lábiis tuis:"
+		"incipit":"Diffúsa est grátia in lábiis tuis:",
+		"responsum":"Proptérea benedíxit te Deus in ætérnum.",
+		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii","responsum"],
-		"datum":"Proptérea benedíxit te Deus in ætérnum."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii","versus"],
-		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Proptérea benedíxit te Deus in ætérnum, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -198,20 +202,23 @@
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii"],
 		"src":"nocturnale/MUXXN1R3",
-		"datum":"Spécie tua et pulchritúdine tua"
+		"incipit":"Spécie tua et pulchritúdine tua",
+		"responsum":"Inténde, próspere procéde, et regna.",
+		"versus":"Diffúsa est grátia in lábiis tuis, proptéra benedíxit te Deus in ætérnum."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii","responsum"],
-		"datum":"Inténde, próspere procéde, et regna."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii","versus"],
-		"datum":"Diffúsa est grátia in lábiis tuis, proptéra benedíxit te Deus in ætérnum."
+		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Inténde, próspere procéde, et regna, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/MUXXN2A1",
+		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","psalmus-i"],
@@ -237,7 +244,8 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","versiculus"],
-		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
+		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -249,15 +257,13 @@
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"src":"nocturnale/MUXXN2R1",
-		"datum":"Propter veritátem, et mansuetúdinem, et justítiam:"
+		"incipit":"Propter veritátem, et mansuetúdinem, et justítiam:",
+		"responsum":"Et dedúcet te mirabíliter déxtera tua.",
+		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i","responsum"],
-		"datum":"Et dedúcet te mirabíliter déxtera tua."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i","versus"],
-		"datum":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et dedúcet te mirabíliter déxtera tua, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","lectio","lectio-ii"],
@@ -266,15 +272,13 @@
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"src":"nocturnale/MUXXN2R2",
-		"datum":"Dilexísti justítiam, et odísti iniquitátem:"
+		"incipit":"Dilexísti justítiam, et odísti iniquitátem:",
+		"responsum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ.",
+		"versus":"Propter veritátem, et mansuetúdinem, et justítiam."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii","responsum"],
-		"datum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii","versus"],
-		"datum":"Propter veritátem, et mansuetúdinem, et justítiam."
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -283,20 +287,23 @@
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"src":"nocturnale/MUNXN2R3",
-		"datum":"Fallax grátia, et vana est pulchritúdo:"
+		"incipit":"Fallax grátia, et vana est pulchritúdo:",
+		"responsum":"Múlier timens Deum, ipsa laudábitur.",
+		"versus":"Date ei de fructu mánuum suárum, laudent eam in portis ópera ejus."
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii","responsum"],
-		"datum":"Múlier timens Deum, ipsa laudábitur."
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii","versus"],
-		"datum":"Date ei de fructu mánuum suárum, laudent eam in portis ópera ejus."
+		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Múlier timens Deum, ipsa laudábitur, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"nocturnale/MUXXN3A1",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/MUXXN3A1",
+		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","psalmus-i"],
@@ -322,7 +329,8 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","versiculus"],
-		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
+		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -341,6 +349,10 @@
 		"versus":"Gustávit et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus."
 	},
 	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et panem otiósa non comédit, allelúja."
+	},
+	{
 		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Qua in re hoc quoque notándum est, quod invéntus thesaúrus abscónditur, ut servétur: quia stúdium cœléstis desidérii a malígnis spirítibus custodíre non súfficit, qui hoc ab humánis laúdibus non abscóndit. In præsénti étenim vita, quasi in via sumus, qua ad pátriam pérgimus. Malígni autem spíritus iter nostrum quasi quidam latrúnculi óbsident. Deprædári ergo desíderat, qui thesaúrum públice portat in via. Hoc autem dico, non ut próximi ópera nostra bona non vídeant, cum scriptum sit: Vídeant ópera vestra bona, et gloríficent Patrem vestrum, qui in cœlis est: sed ut per hoc, quod ágimus, laudes extérius non quærámus. Sic autem sit opus in público, quátenus inténtio máneat in occúlto: ut et de bono ópere próximis præbeámus exémplum, et tamen per intentiónem, qua Deo soli placére quǽrimus, semper optémus secrétum."
 	},
@@ -350,6 +362,10 @@
 		"incipit":"Regnum mundi, et omnem ornátum sǽculi contémpsi, propter amórem Dómini mei Jesu Christi:",
 		"responsum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi.",
 		"versus":"Eructávit cor meum verbum bonum: dico ego ópera mea regi."
+	},
+	{
+		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi, allelúja."
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","lectio","lectio-iii"],
