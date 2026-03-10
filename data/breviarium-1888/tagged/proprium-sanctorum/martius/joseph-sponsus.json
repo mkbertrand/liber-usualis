@@ -10,7 +10,7 @@
 		"in-tempore-paschali":"Jacob autem * génuit Joseph, virum Maríæ, de qua natus est Jesus, qui vocátur Christus, allelúja."
 	},
 	{
-		"tags":["joseph-sponsus","i-vesperae","psalmus"],
+		"tags":["joseph-sponsus","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
@@ -39,10 +39,10 @@
 	},
 	{
 		"tags":["joseph-sponsus","capitulum"],
-		"datum":"Vir fidélis multum laudábitur. * Et qui custos est Dómini sui, glorificábitur."
+		"datum":"[Parab. 28. et 27.]/Vir fidélis multum laudábitur. * Et qui custos est Dómini sui, glorificábitur."
 	},
 	{
-		"tags":["joseph-sponsus","i-vesperae","hymnus"],
+		"tags":["joseph-sponsus","vesperae","hymnus"],
 		"src":"gregobase/2235",
 		"datum":[
 			"Te, Joseph, célebrent ágmina cœ\u0301litum,/Te cuncti résonent christíadum chori,/Qui clarus méritis, junctus es ínclytæ/Casto fœ\u0301dere Vírgini.",
@@ -67,6 +67,261 @@
 		"tags":["joseph-sponsus","collecta"],
 		"datum":"Sanctíssimæ Genitrícis tuæ Sponsi, quǽsumus Dómine, méritis adjuvémur: + ut, quod possibílitas nostra non óbtinet, * ejus nobis intercessióne donétur:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0319I",
+		"datum":"Christum Dei Fílium, qui putári dignátus est fílius Joseph, * Veníte adorémus.",
+		"in-tempore-paschali":"Christum Dei Fílium, qui putári dignátus est fílius Joseph, * Veníte adorémus, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","hymnus"],
+		"src":"nocturnale/0319H",
+		"datum":[
+			"Cœ\u0301litum Joseph decus, atque nostræ/Certa spes vitæ, columénque mundi,/Quas tibi læti cánimus, benígnus/Súscipe laudes.",
+			"Te sator rerum státuit pudícæ/Vírginis sponsum, voluítque Verbi/Te patrem dici, dedit et minístrum/Esse salútis.",
+			"Tu Redemptórem stábulo jacéntem,/Quem chorus Vatum cécinit futúrum,/Áspicis gaudens, humilísque natum/Numen adóras.",
+			"Rex Deus regum, Dominátor orbis,/Cujus ad nutum tremit inferórum/Turba, cui pronus famulátur æther,/Se tibi subdit.",
+			"Laus sit excélsæ Tríadi perénnis,/Quæ tibi præbens súperos honóres,/Det tuis nobis méritis beátæ/Gaúdia vitæ.","Amen."
+		]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0319N1A1",
+		"datum":"Ascéndit Joseph * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/0319N1A1",
+		"datum":"Ascéndit Joseph * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-i,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0319N1A2",
+		"datum":"Venérunt * pastóres festinántes: et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0319N1A3",
+		"datum":"Ecce Ángelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe púerum, et matrem ejus, et fuge in Ægýptum."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Constítuit eum dóminum domus suæ.","R. Et príncipem omnis possessiónis suæ."],
+		"in-tempore-paschali":["V. Constítuit eum dóminum domus suæ, allelúja.","R. Et príncipem omnis possessiónis suæ, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De libro Génesis.",
+			"[Gen. 39.]/Joseph ígitur ductus est in Ægýptum, emítque eum Pútiphar eunúchus Pharaónis, princeps exércitus, vir Ægýptius, de manu Ismaëlitárum, a quibus perdúctus erat. Fuítque Dóminus cum eo, et erat vir in cunctis próspere agens: habitavítque in domo dómini sui, qui óptime nóverat Dóminum esse cum eo, et ómnia quæ géreret, ab eo dírigi in manu illíus. Invenítque Joseph grátiam coram dómino suo, et ministrábat ei, a quo præpósitus ómnibus gubernábat créditam sibi domum, et univérsa quæ ei trádita fúerant: benedixítque Dóminus dómui Ægýptii propter Joseph."
+		]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Fuit Dóminus cum Joseph, et dedit ei grátiam in conspéctu príncipis cárceris:",
+		"responsum":"Qui trádidit in manu illíus univérsos vinctos.",
+		"versus":"Quidquid fiébat, sub ipso erat: Dóminus enim erat cum illo, et ómnia ópera ejus dirigébat."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Qui trádidit in manu illíus univérsos vinctos, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"[Gen. 41. e.]/Plácuit Pharaóni consílium Joseph, et cunctis minístris ejus: locutúsque est ad eos: Num inveníre potérimus talem virum, qui spíritu Dei plenus sit? Dixit ergo ad Joseph: Quia osténdit tibi Deus ómnia quæ locútus es, numquid sapientiórem et consímilem tui inveníre pótero? Tu eris super domum meam, et ad tui oris impérium cunctus pópulus obédiet: uno tantum regni sólio te præcédam."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Esuriénte terra Ægýpti clamávit pópulus ad regem, aliménta petens. Quibus ille respóndit:",
+		"responsum":"Ite ad Joseph, et quidquid vobis díxerit, fácite.",
+		"versus":"Crescébat quotídie fames in omni terra, aperuítque Joseph univérsa hórrea, et vendébat Ægýptiis."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Ite ad Joseph, et quidquid vobis díxerit, fácite, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Dixítque rursus Phárao ad Joseph: Ecce, constítui te super univérsam terram Ægýpti. Tulítque ánnulum de manu sua, et dedit eum in manu ejus, vestivítque eum stola býssina, et collo torquem aúream circumpósuit. Fecítque eum ascéndere super currum suum secúndum, clamánte præcóne, ut omnes coram eo genuflécterent, et præpósitum esse scirent univérsæ terræ Ægýpti. Dixit quoque rex ad Joseph: Ego sum Phárao: absque tuo império non movébit quisquam manum aut pedem in omni terra Ægýpti."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Fecit me Dóminus quasi patrem regis, et dóminum univérsæ domus ejus: nolíte pavére:",
+		"responsum":"Pro salúte enim vestra misit me Deus ante vos in Ægýptum.",
+		"versus":"Veníte ad me, et ego dabo vobis ómnia bona Ægýpti, et comedétis medúllam terræ."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Pro salúte enim vestra misit me Deus ante vos in Ægýptum, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0319N2A1",
+		"datum":"Consúrgens Joseph, * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/0319N2A1",
+		"datum":"Consúrgens Joseph, * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-iv,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0319N2A2",
+		"datum":"Defúncto Heróde, * Ángelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: Surge, et áccipe púerum et matrem ejus, et vade in terram Ísraël: defúncti sunt enim qui quærébant ánimam púeri."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-v,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0319N2A3",
+		"datum":"Accépit Joseph * púerum et matrem ejus, et venit in terram Ísraël."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Magna est glória ejus in salutári tuo.","R. Glóriam et magnum decórem impónes super eum."],
+		"in-tempore-paschali":["V. Magna est glória ejus in salutári tuo, allelúja.","R. Glóriam et magnum decórem impónes super eum, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Bernárdi Abbatis.",
+			"[Homil. 2. super [Missus est,] prope finem.]/Quis et qualis homo fúerit beátus Joseph, cónjice ex appellatióne, qua, licet dispensatória, méruit honorári ádeo, ut pater Dei et dictus et créditus sit: cónjice et ex próprio vocábulo, quod augméntum non dúbitas interpretári. Simul et meménto magni illíus quondam Patriárchæ vénditi in Ægýpto, et scito ipsíus istum non solum vocábulum fuísse sortítum, sed et castimónium adéptum, innocéntiam assecútum et grátiam."
+		]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Ascéndit Joseph a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem:",
+		"responsum":"Eo quod esset de domo et família David.",
+		"versus":"Ut profiterétur cum María desponsáta sibi uxóre."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Eo quod esset de domo et família David, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Síquidem ille Joseph, fratérna ex invídia vénditus, et ductus in Ægýptum, Christi venditiónem præfigurávit: iste Joseph, Herodiánam invídiam fúgiens, Christum in Ægýptum portávit. Ille dómino suo fidem servans, dóminæ nóluit commiscéri: iste dóminam suam Dómini sui matrem, vírginem agnóscens, et ipse cóntinens, fidéliter custodívit. Illi data est intelligéntia in mystériis somniórum: isti datum est cónscium fíeri atque partícipem cœléstium sacramentórum."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Surge, et áccipe púerum et matrem ejus, et fuge in Ægýptum:",
+		"responsum":"Et esto ibi usque dum dicam tibi.",
+		"versus":"Ut adimplerétur quod dictum est a Dómino per Prophétam dicéntem: Ex Ægýpto vocávi Fílium meum."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et esto ibi usque dum dicam tibi, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Ille fruménta servávit non sibi, sed omni pópulo: iste panem vivum e cœlo servándum accépit tam sibi quam toti mundo. Non est dúbium, quin bonus et fidélis homo fúerit iste Joseph, cui Mater desponsáta est Salvatóris. Fidélis, inquam, servus, et prudens, quem constítuit Dóminus suæ matris solátium, suæ carnis nutrítium, solum dénique in terris magni consílii coadjutórem fidelíssimum."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Cum indúcerent púerum Jesum paréntes ejus, ut fácerent secúndum consuetúdinem legis pro eo,",
+		"responsum":"Accépit eum Símeon in ulnas suas, et benedíxit Deum.",
+		"versus":"Et erat pater ejus et mater ejus mirántes super his quæ dicebántur de illo."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Accépit eum Símeon in ulnas suas, et benedíxit Deum, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0319N3A1",
+		"datum":"Aúdiens Joseph * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/0319N3A1",
+		"datum":"Aúdiens Joseph * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0319N3A2",
+		"datum":"Admónitus in somnis, * Joseph secéssit in partes Galilǽæ: et véniens habitávit in civitáte quæ vocátur Názareth; ut adimplerétur quod dictum est per Prophétas: Quóniam Nazarǽus vocábitur."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0319N3A3",
+		"datum":"Erat puer Jesu * et mater mirántes super his, quæ dicebántur de illo; et benedíxit illis Símeon."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Justus germinábit sicut lílium.","R. Et florébit in ætérnum ante Dóminum."],
+		"in-tempore-paschali":["V. Justus germinábit sicut lílium, allelúja.","R. Et florébit in ætérnum ante Dóminum, allelúja."]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 1. c.]/Cum esset desponsáta Mater Jesu María Joseph ántequam convenírent, invénta est in útero habens de Spíritu sancto. Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"[Lib. 1. Comm. in c. 1. Matth.]/Quare non de símplici vírgine, sed de desponsáta concípitur? Primum, ut per generatiónem Joseph, orígo Maríæ monstrarétur: secúndo, ne lapidarétur a Judǽis ut adúltera: tértio, ut in Ægýptum fúgiens habéret solátium. Martyr Ignátius étiam quartam áddidit causam, cur a desponsáta concéptus sit: Ut partus, ínquiens, ejus celarétur diábolo, dum eum putat non de vírgine, sed de uxóre generátum."
+		]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Dicit mater Jesu ad illum: Fili, quid fecísti nobis sic?",
+		"responsum":"Ecce mater tuus et ego doléntes quærebámus te.",
+		"versus":"Et ait ad illos: Quid est quod me quærebátis? nesciebátis quia in his quæ Patris mei sunt, opórtet me esse?"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Ecce mater tuus et ego doléntes quærebámus te, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Ántequam convenírent, invénta est in útero habens de Spíritu sancto. Non ab álio invénta est, nisi a Joseph, qui pene licéntia maritáli futúræ uxóris ómnia nóverat. Quod autem dícitur, Ántequam convenírent; non séquitur ut póstea convénerint: sed Scriptúra quod factum non sit, osténdit."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Descéndit Jesus cum eis, et venit Názareth:",
+		"responsum":"Et erat súbditus illis.",
+		"versus":"Proficiébat sapiéntia, et ætáte, et grátia apud Deum et hómines."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et erat súbditus illis, allelúja."
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Joseph autem, vir ejus, cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam. Si quis fornicáriæ conjúngitur, unum corpus effícitur: et in lege præcéptum est non solum reos, sed et cónscios críminum obnóxios esse peccáti: quómodo Joseph, cum crimen celáret uxóris, justus scríbitur? Sed hoc testimónium Maríæ est, quod Joseph sciens illíus castitátem, et admírans quod evénerat, celat siléntio, cujus mystérium nesciébat."
 	},
 	{
 		"tags":["joseph-sponsus","antiphona","antiphona-i"],
@@ -134,7 +389,7 @@
 	},
 	{
 		"tags":["joseph-sponsus","sexta","capitulum"],
-		"datum":"Diléctus Deo et homínibus, cujus memória in benedictióne est. + In fide et lenitáte ipsíus sanctum fecit illum, * et elégit eum ex omni carne."
+		"datum":"[Eccli. 45.]/Diléctus Deo et homínibus, cujus memória in benedictióne est. + In fide et lenitáte ipsíus sanctum fecit illum, * et elégit eum ex omni carne."
 	},
 	{
 		"tags":["joseph-sponsus","sexta","responsorium-breve"],
@@ -155,7 +410,7 @@
 	},
 	{
 		"tags":["joseph-sponsus","nona","capitulum"],
-		"datum":"Profúgum justum dedúxit Sapiéntia per vias rectas, + et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: * honestávit illum in labóribus, et complévit labóres illíus."
+		"datum":"[Sap. 10. b.]/Profúgum justum dedúxit Sapiéntia per vias rectas, + et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum: * honestávit illum in labóribus, et complévit labóres illíus."
 	},
 	{
 		"tags":["joseph-sponsus","nona","responsorium-breve"],
@@ -182,6 +437,7 @@
 	{
 		"tags":["joseph-sponsus","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2431",
-		"datum":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam."
+		"datum":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.",
+		"in-tempore-paschali":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam, allelúja."
 	}
 ]
