@@ -4,18 +4,16 @@ import sys
 import pathlib
 import re
 
-path = str(pathlib.Path(__file__).parent.absolute())
-
 def psalm_line(line):
 	return line
 
 def get_and_html(file):
 	return ''.join(list(map(lambda line: psalm_line(line), open(file, 'r', encoding = 'utf-8').readlines())))
 
-def psalmget(root, psalm):
-	return get_and_html(f'{path}/data/{root}/untagged{psalm}.txt').strip() + '\n'
+def psalmget(book, psalm):
+	return get_and_html(book.joinpath(f'untagged/{psalm}.txt')).strip() + '\n'
 
-def get(root, query):
+def get(book, query):
 	pathsplit = query.rfind('/')
 	querypath = query[:pathsplit + 1]
 	query = query[pathsplit + 1:]
@@ -25,7 +23,7 @@ def get(root, query):
 		psalm = i.split(':')[0] if ':' in i else i
 		psalmcapped = ' '.join([w.capitalize() if re.match(r'^[clxvi]+$', w) is None else w.upper() for w in psalm.split('-')])
 		if ':' in i:
-			psalmtext = psalmget(root, querypath + psalm)
+			psalmtext = psalmget(book, querypath + psalm)
 			for j in i.split(':')[1].split(';'):
 				bounds = j.split('-')
 				if len(bounds) == 1:
@@ -38,7 +36,7 @@ def get(root, query):
 					add = re.search(f'{bounds[0]}(.|\\n)+\\n{bounds[1]} ', psalmtext).group()[:-(len(bounds[1]) + 1)]
 			psalmcapped += ':' + i.split(':')[1]
 		else:
-			add = psalmget(root, querypath + i)
+			add = psalmget(book, querypath + i)
 		if psalmcapped != 'Gloria' and psalmcapped != 'Requiem':
 			add = f'[{psalmcapped}]\n' + add
 		ret += add

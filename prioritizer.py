@@ -114,11 +114,12 @@ def getvespers(day, book):
 
 	assert type(day) is not datetime
 
-	implicationtable = load_data('kalendar/data/sequentes.json', book)
-	vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json', book))
+	implicationtable = load_data('sequentes.json', book)
+	vesperalrules = kalendar.datamanage.flatten(load_data('tabella-vesperalis.json', book))
 
-	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1))]
-	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
+	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1), book)]
+	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day, book)]
+
 	# Final product
 	vesperal = iivespers + ivespers
 	tags = prioritize(vesperal, vesperalrules)
@@ -133,12 +134,12 @@ def getdiurnal(day, book):
 
 	assert type(day) is not datetime
 
-	implicationtable = load_data('kalendar/data/sequentes.json', book)
-	diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json', book))
-	martyrologyrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-martyrologii.json', book))
+	implicationtable = load_data('sequentes.json', book)
+	diurnalrules = kalendar.datamanage.flatten(load_data('tabella-diurnalis.json', book))
+	martyrologyrules = kalendar.datamanage.flatten(load_data('tabella-martyrologii.json', book))
 
-	prioritized = prioritize(kalendar.datamanage.getdate(day), diurnalrules)
-	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1)), martyrologyrules)
+	prioritized = prioritize(kalendar.datamanage.getdate(day, book), diurnalrules)
+	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1), book), martyrologyrules)
 	lunarday = luna.lunardate(day + timedelta(days=1))
 	lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
 	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
@@ -177,10 +178,13 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 
+	import pathlib
+	book = pathlib.Path(__file__).parent.joinpath('data/breviarium-1888')
+
 	# Generate kalendar
 	if args.time == 'vesperale':
-		print(getvespers(datetime.strptime(args.date, '%Y-%m-%d').date()))
+		print(getvespers(datetime.strptime(args.date, '%Y-%m-%d').date(), book))
 	elif args.time == 'diurnale':
-		print(getdiurnal(datetime.strptime(args.date, '%Y-%m-%d').date()))
+		print(getdiurnal(datetime.strptime(args.date, '%Y-%m-%d').date(), book))
 	else:
 		print('Invalid option for -t')
