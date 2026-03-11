@@ -109,7 +109,7 @@ class Kalendar:
 				raise RuntimeError(f'match_unique({include!r}, {exclude!r}) got more than one match!')
 		return match
 
-	def tagsindate(self, date: date) -> set:
+	def tags_in_date(self, date: date) -> set:
 		ret: Set[str] = set()
 		for entry in self.kal.get(date, []):
 			ret |= entry
@@ -127,7 +127,7 @@ class Kalendar:
 			target = match_date
 		newdate = target
 		if obstacles is not None:
-			while not self.tagsindate(newdate).isdisjoint(obstacles):
+			while not self.tags_in_date(newdate).isdisjoint(obstacles):
 				newdate = newdate + timedelta(days=1)
 
 		# Skip transfer if it's to the same day
@@ -171,17 +171,11 @@ class Kalendar:
 			self.transfer_entry(match, obstacles=obstacles, mention=mention)
 
 
-def nearsunday(kalends: date):
+def nearest_sunday(kalends: date):
 	if kalends.isoweekday() < 4:
 		return nextsunday(kalends, weeks=-1)
 	else:
 		return nextsunday(kalends, weeks=0)
-
-def todate(text: str, year0: int) -> date:
-	m = re.match(r'(\d+)-(\d+)', text)
-	if m is None:
-		raise ValueError(f"Invalid date: {text}")
-	return date(year0, int(m.group(1)), int(m.group(2)))
 
 # N.B. This is a mutable function. It will change kal
 def apply_tabella(book, kal):
@@ -312,13 +306,13 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 		i = i + timedelta(days=1)
 	for i in range(0, 13):
 		if i == 0:
-			kalends = nearsunday(date(year - 1, 12, 1))
+			kalends = nearest_sunday(date(year - 1, 12, 1))
 		else:
-			kalends = nearsunday(date(year, i, 1))
+			kalends = nearest_sunday(date(year, i, 1))
 		if i == 12:
-			nextkalends = nearsunday(date(year + 1, 1, 1))
+			nextkalends = nearest_sunday(date(year + 1, 1, 1))
 		else:
-			nextkalends = nearsunday(date(year, i + 1, 1))
+			nextkalends = nearest_sunday(date(year, i + 1, 1))
 		j = 0
 		while kalends + timedelta(weeks=j) != nextkalends:
 			bases[f'dominica-{numerals[j]}-{mensum[(i - 1) % 12]}'] = kalends + timedelta(weeks=j)
@@ -446,13 +440,13 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 			kal.add_entry(match_date + timedelta(days=offset), entry['tags'])
 
 	# 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
-	if 'hebdomada-xxiii-pentecostes' in kal.tagsindate(xxivpentecost):
+	if 'hebdomada-xxiii-pentecostes' in kal.tags_in_date(xxivpentecost):
 		xxiiipentecostentry = kal.match_unique({'hebdomada-xxiii-pentecostes', 'dominica'}).feast
 		xxiiipentecostentry |= {'translatum', 'feria'}
 		xxiiipentecostentry -= {'semiduplex'}
 		i = 1
 		while i < 7:
-			if kal.tagsindate(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
+			if kal.tags_in_date(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
 				kal.add_entry(xxivpentecost - timedelta(days=i), xxiiipentecostentry)
 				break
 			else:
@@ -466,7 +460,7 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 		septuagesima = easter - timedelta(weeks=9)
 		i = 1
 		while i < 7:
-			if kal.tagsindate(septuagesima - timedelta(days=i)).isdisjoint(threenocturnes):
+			if kal.tags_in_date(septuagesima - timedelta(days=i)).isdisjoint(threenocturnes):
 				kal.add_entry(septuagesima - timedelta(days=i), omittedepiphanyentry)
 				break
 			else:
