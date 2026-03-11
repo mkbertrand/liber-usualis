@@ -7,6 +7,7 @@ import re
 from typing import NamedTuple
 import itertools
 import copy
+from pathlib import Path
 
 from kalendar import kalendar
 
@@ -40,7 +41,7 @@ def guaranteeset(item):
 	else:
 		return {item}
 
-def prioritize(day, rules):
+def apply_secondary_tabella(day, rules):
 	day = copy.deepcopy(day)
 	queue = [Job(rule) for rule in rules]
 	queue.reverse()
@@ -110,19 +111,19 @@ def prioritize(day, rules):
 
 	return day
 
-def getvespers(day, book):
+def get_vespers(book: Path, day):
 
 	assert type(day) is not datetime
 
 	implicationtable = load_data('sequentes.json', book)
 	vesperalrules = kalendar.datamanage.flatten(load_data('tabella-vesperalis.json', book))
 
-	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1), book)]
-	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day, book)]
+	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(book, day + timedelta(days=1))]
+	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(book, day)]
 
 	# Final product
 	vesperal = iivespers + ivespers
-	tags = prioritize(vesperal, vesperalrules)
+	tags = apply_secondary_tabella(vesperal, vesperalrules)
 	for i in tags:
 		for j in implicationtable:
 			if j['tags'].issubset(i):
@@ -130,7 +131,7 @@ def getvespers(day, book):
 
 	return [frozenset(i) for i in tags]
 
-def getdiurnal(day, book):
+def get_diurnal(book: Path, day):
 
 	assert type(day) is not datetime
 
@@ -138,8 +139,8 @@ def getdiurnal(day, book):
 	diurnalrules = kalendar.datamanage.flatten(load_data('tabella-diurnalis.json', book))
 	martyrologyrules = kalendar.datamanage.flatten(load_data('tabella-martyrologii.json', book))
 
-	prioritized = prioritize(kalendar.datamanage.getdate(day, book), diurnalrules)
-	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1), book), martyrologyrules)
+	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(book, day), diurnalrules)
+	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(book, day + timedelta(days=1)), martyrologyrules)
 	lunarday = luna.lunardate(day + timedelta(days=1))
 	lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
 	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
@@ -181,10 +182,13 @@ if __name__ == '__main__':
 	import pathlib
 	book = pathlib.Path(__file__).parent.joinpath('data/breviarium-1888')
 
-	# Generate kalendar
+	tagsets = None
 	if args.time == 'vesperale':
-		print(getvespers(datetime.strptime(args.date, '%Y-%m-%d').date(), book))
+		tagsets = get_vespers(book, datetime.strptime(args.date, '%Y-%m-%d').date())
 	elif args.time == 'diurnale':
-		print(getdiurnal(datetime.strptime(args.date, '%Y-%m-%d').date(), book))
+		tagsets = get_diurnal(book, datetime.strptime(args.date, '%Y-%m-%d').date())
 	else:
 		print('Invalid option for -t')
+	if tagsets:
+		for tagset in tagsets:
+			print(tagset)

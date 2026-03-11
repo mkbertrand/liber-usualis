@@ -11,7 +11,7 @@ import json
 
 import kalendar.datamanage as datamanage
 import kalendar.kalendar as kalendar
-from kalendar.kalendar import SearchResult, Kalendar, todate, threenocturnes, ranks, octavevigiltags, feriae, load_data, noprimarium, process
+from kalendar.kalendar import SearchResult, Kalendar, todate, threenocturnes, ranks, octavevigiltags, feriae, load_data, noprimarium, apply_tabella
 from kalendar.pascha import geteaster
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
@@ -155,7 +155,7 @@ def kalendar2(book) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	process(kal, book)
+	apply_tabella(book, kal)
 
 	ret = []
 	for (k, i) in kal.items():

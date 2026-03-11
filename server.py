@@ -29,7 +29,6 @@ LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 root = 'breviarium-1888'
 book = datamanage.get_book('breviarium-1888')
 
-print(type(book))
 toplevelpages = [
 		'index',
 		'breviarium',
@@ -107,7 +106,7 @@ def daytags(vesperal = False):
 
 	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-	tags = copy.deepcopy(prioritizer.getvespers(day, book) if parameters['time'] == 'vesperale' else prioritizer.getdiurnal(day, book))
+	tags = copy.deepcopy(prioritizer.get_vespers(book, day) if parameters['time'] == 'vesperale' else prioritizer.get_diurnal(book, day))
 
 	pile = datamanage.getpile(book, flattensetlist(tags) | {'formulae'})
 
@@ -135,7 +134,7 @@ def rite():
 		assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
 		vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
-		tags = copy.deepcopy(prioritizer.getvespers(day, book) if vesperal else prioritizer.getdiurnal(day, book))
+		tags = copy.deepcopy(prioritizer.get_vespers(book, day) if vesperal else prioritizer.get_diurnal(book, day))
 
 		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
 		if 'select' in parameters:
