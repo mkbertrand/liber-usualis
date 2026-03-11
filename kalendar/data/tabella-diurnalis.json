@@ -1,42 +1,50 @@
 [
 	{
 		"include":["tempus"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","de-cruce"]
 	},
 	{
 		"include":["in-tempore-paschali","dominica"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","de-cruce-tempore-paschali"]
 	},
 	{
 		"include":["in-tempore-paschali","feria"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","de-cruce-tempore-paschali"]
 	},
 	{
 		"include":["tempus"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","maria"]
 	},
 	{
 		"include":["post-nativitatem"],
+		"recheck":false,
 		"response":[
 			{"include":["suffragium","maria"],"adde":"post-nativitatem","target":1}
 		]
 	},
 	{
 		"include":["tempus"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","joseph"]
 	},
 	{
 		"include":["tempus"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","apostoli"]
 	},
 	{
 		"include":["tempus"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","pro-pace"]
 	},
@@ -252,7 +260,8 @@
 			{"include":["duplex-ii-classis"],"response":"dele","target":0},
 			{"include":["duplex-majus"],"response":"dele","target":0},
 			{"include":["duplex-minus"],"response":"dele","target":0},
-			{"include":["infra-octavam"],"response":"dele","target":0}
+			{"include":["infra-octavam"],"response":"dele","target":0},
+			{"include":["vigilia-epiphaniae"],"response":"dele","target":0}
 		]
 	},
 	{

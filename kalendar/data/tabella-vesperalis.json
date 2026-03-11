@@ -1,62 +1,50 @@
 [
 	{
-		"include":["per-annum","i-vesperae"],
+		"include":["tempus","i-vesperae"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","de-cruce"]
 	},
 	{
-		"include":["in-tempore-septuagesimae","i-vesperae"],
-		"response":"crea",
-		"adde":["suffragium","commemoratio","de-cruce"]
-	},
-	{
-		"include":["in-tempore-paschali","i-vesperae"],
+		"include":["in-tempore-paschali","dominica","i-vesperae"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","de-cruce-tempore-paschali"]
 	},
 	{
-		"include":["per-annum","i-vesperae"],
+		"include":["in-tempore-paschali","feria","i-vesperae"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","de-cruce-tempore-paschali"]
+	},
+	{
+		"include":["tempus","i-vesperae"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","maria"]
 	},
 	{
-		"include":["in-tempore-septuagesimae","i-vesperae"],
-		"response":"crea",
-		"adde":["suffragium","commemoratio","maria"]
-	},
-	{
-		"include":["post-nativitatem"],
+		"include":["post-nativitatem","i-vesperae"],
+		"recheck":false,
 		"response":[
 			{"include":["suffragium","maria"],"adde":"post-nativitatem","target":1}
 		]
 	},
 	{
-		"include":["per-annum","i-vesperae"],
+		"include":["tempus","i-vesperae"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","joseph"]
 	},
 	{
-		"include":["in-tempore-septuagesimae","i-vesperae"],
-		"response":"crea",
-		"adde":["suffragium","commemoratio","joseph"]
-	},
-	{
-		"include":["per-annum","i-vesperae"],
+		"include":["tempus","i-vesperae"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","apostoli"]
 	},
 	{
-		"include":["in-tempore-septuagesimae","i-vesperae"],
-		"response":"crea",
-		"adde":["suffragium","commemoratio","apostoli"]
-	},
-	{
-		"include":["per-annum","i-vesperae"],
-		"response":"crea",
-		"adde":["suffragium","commemoratio","pro-pace"]
-	},
-	{
-		"include":["in-tempore-septuagesimae","i-vesperae"],
+		"include":["tempus","i-vesperae"],
+		"recheck":false,
 		"response":"crea",
 		"adde":["suffragium","commemoratio","pro-pace"]
 	},
@@ -164,6 +152,15 @@
 			{"include":["duplex-minus"],"response":"dele","target":0},
 			{"include":["infra-octavam"],"response":"dele","target":0},
 			{"include":["in-tempore-passionis"],"response":"dele","target":0}
+		]
+	},
+	{
+		"include":["suffragium","commemoratio"],
+		"exclude":["de-cruce-tempore-paschali"],
+		"response":[
+			{"include":["in-tempore-adventus"],"response":"dele","target":0},
+			{"include":["in-tempore-passionis"],"response":"dele","target":0},
+			{"include":["in-tempore-paschali"],"response":"dele","target":0}
 		]
 	},
 	{
