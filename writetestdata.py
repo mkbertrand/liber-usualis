@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+import time
 import copy
 import warnings
 
@@ -9,6 +10,7 @@ import breviarium
 year = 2001
 root = 'breviarium-1888'
 
+start = time.time()
 warnings.filterwarnings('ignore')
 for i in range(0, 365):
 	day = date(year, 1, 1) + timedelta(days=i)
@@ -18,3 +20,4 @@ for i in range(0, 365):
 		with open(f'testdata/{day}-{j.replace("+", "-")}.json', 'w') as fileout:
 			fileout.write(datamanage.dump_data(breviarium.generate(root, day, j)))
 
+print(f'Finished writing test date ({round(time.time() - start, 3)}s)')
