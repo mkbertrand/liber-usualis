@@ -10,6 +10,7 @@ import logging
 import re
 from typing import NamedTuple, Optional, Self, Set
 import itertools
+import pathlib
 
 import kalendar.datamanage as datamanage
 from kalendar.pascha import geteaster, nextsunday
@@ -37,6 +38,9 @@ threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis'
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
 octavevigiltags = {'habens-octavam','incipit-libri'}
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
+roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
+roletags = set(roletagsordered)
+noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat'}
 
 class SearchResult(NamedTuple):
 	date: date
@@ -179,12 +183,8 @@ def todate(text: str, year0: int) -> date:
 		raise ValueError(f"Invalid date: {text}")
 	return date(year0, int(m.group(1)), int(m.group(2)))
 
-roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
-roletags = set(roletagsordered)
-noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat'}
-
 # N.B. This is a mutable function. It will change kal
-def process(kal, book):
+def apply_tabella(book, kal):
 
 	rules = datamanage.flatten(load_data('tabella.json', book))
 
@@ -287,7 +287,7 @@ def process(kal, book):
 	while len(queue) != 0:
 		resolvejob(queue.pop())
 
-def kalendar(year: int, book) -> Kalendar:
+def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 
 	adventcycle = load_data('de-adventu.json', book)
 	nativitycycle = load_data('in-tempore-nativitatis.json', book)
@@ -480,7 +480,7 @@ def kalendar(year: int, book) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	process(kal, book)
+	apply_tabella(book, kal)
 
 	return kal
 
@@ -525,10 +525,9 @@ if __name__ == "__main__":
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
 
-	import pathlib
 	book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
 	# Generate kalendar
-	ret = dict(sorted(kalendar(args.year, book).items()))
+	ret = dict(sorted(kalendar(book, args.year).items()))
 
 	# Convert datestrings to strings and sets into lists
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}

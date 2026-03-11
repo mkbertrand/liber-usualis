@@ -5,9 +5,11 @@ import json
 import pathlib
 import pytest
 import random
+import pathlib
 
 from kalendar import kalendar
 
+book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
 
 @pytest.mark.parametrize("year", random.sample(range(1582, 3000), k=10))
 def test_repeatable(year: int) -> None:
@@ -18,16 +20,16 @@ def test_repeatable(year: int) -> None:
           a fresh copy of the data files, which should live in their own object.
     TODO: Randomness seems somewhat ugly, at least as it's done here
     """
-    kal = kalendar.kalendar(year)
-    kal3 = kalendar.kalendar(random.choice(range(1582, 3000)))
-    kal2 = kalendar.kalendar(year)
+    kal = kalendar.kalendar(book, year)
+    kal3 = kalendar.kalendar(book, random.choice(range(1582, 3000)))
+    kal2 = kalendar.kalendar(book, year)
     for i in kal.kal.keys():
         assert kal.kal[i] == kal2.kal[i]
 
 class TestKalendar:
     @pytest.fixture(scope="class", params=range(1900, 2200))
     def kal(self, request) -> kalendar.Kalendar:
-        return kalendar.kalendar(request.param)
+        return kalendar.kalendar(book, request.param)
 
     def test_structure(self, kal: kalendar.Kalendar) -> None:
         """Make sure the structure is correct"""

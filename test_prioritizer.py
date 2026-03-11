@@ -6,13 +6,13 @@ from datetime import date, timedelta
 import prioritizer
 import kalendar.datamanage
 
-year = 2001
+import pathlib
 
-@pytest.mark.parametrize('dateoffset',range(0, 365))
-def test_singleprimary(dateoffset):
-	day = date(2001, 1, 1) + timedelta(days=dateoffset)
-	print(kalendar.datamanage.getdate(day))
-	print(kalendar.datamanage.getdate(day + timedelta(days = 1)))
-	result = prioritizer.getvespers(day)
+year = 2001
+book = pathlib.Path(__file__).parent.joinpath('data/breviarium-1888')
+
+@pytest.mark.parametrize('day', [date(year, 1, 1) + timedelta(days=i) for i in range(365)])
+def test_singleprimary(day):
+	result = prioritizer.get_vespers(book, day)
 	assert len(list(filter(lambda a: 'primarium' in a, result))) == 1
 	assert all([len(i & {'primarium', 'commemoratio', 'omissum', 'psalmi'}) < 2 for i in result])

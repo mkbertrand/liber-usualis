@@ -290,7 +290,7 @@ def process(book, item, selected, alternates, pile):
 def generate(book, day, hour: str):
 	hours = hour.split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	tags = copy.deepcopy(prioritizer.getvespers(day, book) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.getdiurnal(day, book))
+	tags = copy.deepcopy(prioritizer.get_vespers(book, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.get_diurnal(book, day))
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
 	pile = datamanage.getpile(book, defaultpile | primary | set(hours))
@@ -332,7 +332,7 @@ if __name__ == '__main__':
 		'-r',
 		'--root',
 		type=str,
-		default=datamanage.get_book('breviarium-1888'),
+		default='breviarium-1888',
 		help='Data Root for Content',
 	)
 
@@ -374,9 +374,9 @@ if __name__ == '__main__':
 
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
-
 	# Generate kalendar
 	day = datetime.strptime(args.date, '%Y-%m-%d').date()
+	book = datamanage.get_book(args.root)
 	ret = generate(book, day, args.hour)
 
 	if args.output == sys.stdout:
