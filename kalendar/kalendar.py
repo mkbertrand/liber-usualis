@@ -16,10 +16,8 @@ import kalendar.datamanage as datamanage
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-data_root = pathlib.Path(__file__).parent.joinpath('data')
-
-def load_data(p: str):
-	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+def load_data(p: str, book):
+	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -35,15 +33,6 @@ def load_data(p: str):
 				return obj
 
 	return recurse(data)
-
-epiphanycycle = load_data('epiphania.json')
-paschalcycle = load_data('de-paschali.json')
-adventcycle = load_data('de-adventu.json')
-nativitycycle = load_data('in-tempore-nativitatis.json')
-autumnalcycle = load_data('autumnalis.json')
-movables = load_data('motabiles.json')
-sanctoral = load_data('kalendarium.json')
-rules = datamanage.flatten(load_data('tabella.json'))
 
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
@@ -196,7 +185,9 @@ roletags = set(roletagsordered)
 noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat'}
 
 # N.B. This is a mutable function. It will change kal
-def process(kal):
+def process(kal, book):
+
+	rules = datamanage.flatten(load_data('tabella.json', book))
 
 	class Job(NamedTuple):
 		days: tuple
@@ -297,7 +288,16 @@ def process(kal):
 	while len(queue) != 0:
 		resolvejob(queue.pop())
 
-def kalendar(year: int) -> Kalendar:
+def kalendar(year: int, book) -> Kalendar:
+
+	adventcycle = load_data('de-adventu.json', book)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book)
+	epiphanycycle = load_data('epiphania.json', book)
+	paschalcycle = load_data('de-paschali.json', book)
+	autumnalcycle = load_data('autumnalis.json', book)
+	movables = load_data('motabiles.json', book)
+	sanctoral = load_data('kalendarium.json', book)
+
 	kal = Kalendar()
 
 	easter = geteaster(year)

@@ -2,7 +2,6 @@
 
 import os.path
 import json
-import pathlib
 from datetime import date, datetime, timedelta
 import re
 from typing import NamedTuple
@@ -14,10 +13,8 @@ from kalendar import kalendar
 import kalendar.datamanage
 import kalendar.luna as luna
 
-data_root = pathlib.Path(__file__).parent
-
-def load_data(p: str):
-	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+def load_data(p: str, book):
+	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -33,11 +30,6 @@ def load_data(p: str):
 				return obj
 
 	return recurse(data)
-
-implicationtable = load_data('kalendar/data/sequentes.json')
-vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json'))
-diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json'))
-martyrologyrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-martyrologii.json'))
 
 class Job(NamedTuple):
 	rule: dict
@@ -118,8 +110,13 @@ def prioritize(day, rules):
 
 	return day
 
-def getvespers(day):
+def getvespers(day, book):
+
 	assert type(day) is not datetime
+
+	implicationtable = load_data('kalendar/data/sequentes.json', book)
+	vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json', book))
+
 	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1))]
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
 	# Final product
@@ -132,8 +129,14 @@ def getvespers(day):
 
 	return [frozenset(i) for i in tags]
 
-def getdiurnal(day):
+def getdiurnal(day, book):
+
 	assert type(day) is not datetime
+
+	implicationtable = load_data('kalendar/data/sequentes.json', book)
+	diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json', book))
+	martyrologyrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-martyrologii.json', book))
+
 	prioritized = prioritize(kalendar.datamanage.getdate(day), diurnalrules)
 	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1)), martyrologyrules)
 	lunarday = luna.lunardate(day + timedelta(days=1))
