@@ -1,4 +1,4 @@
-# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import os.path
 import json
@@ -14,7 +14,7 @@ from kalendar import kalendar
 import kalendar.datamanage
 import kalendar.luna as luna
 
-def load_data(p: str, book):
+def load_data_prioritizer(p: str, book):
 	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
@@ -115,8 +115,8 @@ def get_vespers(book: Path, day):
 
 	assert type(day) is not datetime
 
-	implicationtable = load_data('sequentes.json', book)
-	vesperalrules = kalendar.datamanage.flatten(load_data('tabella-vesperalis.json', book))
+	implicationtable = load_data_prioritizer('sequentes.json', book)
+	vesperalrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-vesperalis.json', book))
 
 	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(book, day + timedelta(days=1))]
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(book, day)]
@@ -135,9 +135,9 @@ def get_diurnal(book: Path, day):
 
 	assert type(day) is not datetime
 
-	implicationtable = load_data('sequentes.json', book)
-	diurnalrules = kalendar.datamanage.flatten(load_data('tabella-diurnalis.json', book))
-	martyrologyrules = kalendar.datamanage.flatten(load_data('tabella-martyrologii.json', book))
+	implicationtable = load_data_prioritizer('sequentes.json', book)
+	diurnalrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-diurnalis.json', book))
+	martyrologyrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-martyrologii.json', book))
 
 	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(book, day), diurnalrules)
 	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(book, day + timedelta(days=1)), martyrologyrules)
