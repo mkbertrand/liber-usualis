@@ -11,6 +11,9 @@ import kalendar.display as display
 
 data_root = pathlib.Path(__file__).parent
 
+def get_book(title):
+	return data_root.joinpath('data').joinpath(title)
+
 # Reserved tags
 functiontags = {'datum', 'src', 'tags', 'from-tags', 'choose', 'with'}
 

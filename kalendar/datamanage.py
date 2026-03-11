@@ -39,10 +39,10 @@ def flatten(table):
 	return rules
 
 @functools.lru_cache(maxsize=16)
-def getyear(year):
+def getyear(year, source):
 	import kalendar.kalendar as kalendar
 	return kalendar.kalendar(year)
 
-def getdate(day):
-	year = getyear(day.year)
+def getdate(day, source):
+	year = getyear(day.year, source)
 	return year[day]

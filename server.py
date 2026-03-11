@@ -22,14 +22,14 @@ import breviarium
 import datamanage
 import prioritizer
 
-import kalendar.datamanage
-import kalendar.display as display
-
 import localization
 
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
 root = 'breviarium-1888'
+book = datamanage.get_book('breviarium-1888')
+
+print(book)
 
 toplevelpages = [
 		'index',
