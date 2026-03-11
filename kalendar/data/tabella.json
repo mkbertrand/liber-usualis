@@ -673,35 +673,6 @@
 		]
 	},
 	{
-		"include":["suffragium","de-cruce","primarium"],
-		"recheck":false,
-		"response":[
-			{"include":["duplex-i-classis"],"response":"dele","target":0},
-			{"include":["duplex-ii-classis"],"response":"dele","target":0},
-			{"include":["duplex-majus"],"response":"dele","target":0},
-			{"include":["duplex-minus"],"response":"dele","target":0},
-			{"include":["infra-octavam"],"response":"dele","target":0},
-			{"include":["semiduplex","primarium"],"response":"dele","target":0},
-			{"include":["vigilia","simplex","primarium"],"response":"commemoratio","target":0},
-			{"include":["simplex","primarium"],"response":"dele","target":0},
-			{"include":["feria","primarium"],"response":"commemoratio","target":0}
-		]
-	},
-	{
-		"include":["suffragium","primarium"],
-		"recheck":false,
-		"response":[
-			{"include":["duplex-i-classis"],"response":"dele","target":0},
-			{"include":["duplex-ii-classis"],"response":"dele","target":0},
-			{"include":["duplex-majus"],"response":"dele","target":0},
-			{"include":["duplex-minus"],"response":"dele","target":0},
-			{"include":["infra-octavam"],"response":"dele","target":0},
-			{"include":["semiduplex","primarium"],"response":"commemoratio","target":0},
-			{"include":["simplex","primarium"],"response":"commemoratio","target":0},
-			{"include":["feria","primarium"],"response":"commemoratio","target":0}
-		]
-	},
-	{
 		"include":["maria","primarium"],
 		"recheck":false,
 		"response":"tempus-mariae"
@@ -820,8 +791,7 @@
 		"include":["post-nativitatem"],
 		"recheck":false,
 		"response":[
-			{"include":["bmv-sabbatum"],"target":1,"response":"post-nativitatem"},
-			{"include":["maria","suffragium"],"target":1,"response":"post-nativitatem"}
+			{"include":["bmv-sabbatum"],"target":1,"response":"post-nativitatem"}
 		]
 	},
 	{
