@@ -7,7 +7,6 @@ from datetime import date, datetime, timedelta
 import copy
 import json
 import logging
-import pathlib
 import re
 from typing import NamedTuple, Optional, Self, Set
 import itertools
@@ -481,7 +480,7 @@ def kalendar(year: int, book) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	process(kal)
+	process(kal, book)
 
 	return kal
 
@@ -526,8 +525,10 @@ if __name__ == "__main__":
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
 
+	import pathlib
+	book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
 	# Generate kalendar
-	ret = dict(sorted(kalendar(args.year).items()))
+	ret = dict(sorted(kalendar(args.year, book).items()))
 
 	# Convert datestrings to strings and sets into lists
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
