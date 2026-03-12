@@ -201,7 +201,7 @@ def process(book, item, selected, alternates, pile):
 
 	if 'from' in item:
 		if 'martyrologium' in item['from']:
-			book = 'martyrologium-1846'
+			book = datamanage.get_book('martyrologium-1846')
 			pile = datamanage.getpile(book, item['from'] | {'dies-lunae'})
 
 		selected = copy.deepcopy(selected)
