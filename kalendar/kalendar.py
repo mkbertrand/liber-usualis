@@ -289,7 +289,7 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 	paschalcycle = load_data('de-paschali.json', book)
 	autumnalcycle = load_data('autumnalis.json', book)
 	movables = load_data('motabiles.json', book)
-	sanctoral = load_data('kalendarium.json', book)
+	kalendarium = load_data('kalendarium.json', book)
 
 	kal = Kalendar()
 
@@ -403,8 +403,8 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus','per-octavam-epiphaniae'})
 
 	octaveagenda = []
-	# Sanctorals
-	entries = copy.deepcopy(sanctoral)
+	# Kalendar (of Saints)
+	entries = copy.deepcopy(kalendarium)
 	for entry in entries:
 		matches = None
 		if type(entry['occurrence']) is list:
