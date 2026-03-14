@@ -178,9 +178,9 @@ def nearest_sunday(kalends: date):
 		return nextsunday(kalends, weeks=0)
 
 # N.B. This is a mutable function. It will change kal
-def apply_tabella(book, kal):
+def apply_tabella(kal, tabella):
 
-	rules = datamanage.flatten(load_data('tabella.json', book))
+	rules = datamanage.flatten(tabella)
 
 	class Job(NamedTuple):
 		days: tuple
@@ -474,7 +474,8 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	apply_tabella(book, kal)
+	tabella = load_data('tabella.json', book)
+	apply_tabella(kal, tabella)
 
 	return kal
 
