@@ -155,7 +155,8 @@ def kalendar2(book) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	apply_tabella(book, kal)
+	tabella = load_data('tabella.json', book)
+	apply_tabella(kal, tabella)
 
 	ret = []
 	for (k, i) in kal.items():
