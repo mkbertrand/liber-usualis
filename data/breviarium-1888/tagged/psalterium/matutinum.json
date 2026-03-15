@@ -22,7 +22,7 @@
 		"datum":[
 			["matutinum","antiphona","antiphona-invitatorium"],
 			["matutinum","antiphona","antiphona-invitatorium"],
-			"[Psalmus XCIV]/Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
+			"[Psalmus 94.]/Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
 			["matutinum","antiphona","antiphona-invitatorium"],
 			"Quóniam Deus magnus Dóminus, et Rex magnus super omnes deos: quóniam non repéllet Dóminus plebem suam, quia in manu ejus sunt omnes fines terræ, et altitúdines móntium ipse cónspicit.",
 			["matutinum","antiphona","antiphona-invitatorium", "pars"],
@@ -123,9 +123,20 @@
 		]
 	},
 	{
-		"tags":["matutinum","nocturnae","in-tempore-paschali","feria"],
+		"tags":[
+			["matutinum","nocturnae","in-tempore-paschali","feria"],
+			["matutinum","nocturnae","in-tempore-paschali","simplex"]
+		],
 		"datum":[
 			["matutinum","nocturna","duodecim-psalmi","una-antiphona","te-deum"]
+		]
+	},
+	{
+		"tags":["matutinum","nocturnae","in-tempore-paschali"],
+		"datum":[
+			["matutinum","nocturna","nocturna-i","tres-psalmi","una-antiphona"],
+			["matutinum","nocturna","nocturna-ii","tres-psalmi","una-antiphona"],
+			["matutinum","nocturna","nocturna-iii","tres-psalmi","una-antiphona","te-deum"]
 		]
 	},
 	{
@@ -158,20 +169,7 @@
 	{
 		"tags":["matutinum","nocturna","duodecim-psalmi","una-antiphona"],
 		"datum":[
-			["matutinum","antiphona","antiphona-i","intonata"],
-			["matutinum","psalmus","psalmus-i"],
-			["matutinum","psalmus","psalmus-ii"],
-			["matutinum","psalmus","psalmus-iii"],
-			["matutinum","psalmus","psalmus-iv"],
-			["matutinum","psalmus","psalmus-v"],
-			["matutinum","psalmus","psalmus-vi"],
-			["matutinum","psalmus","psalmus-vii"],
-			["matutinum","psalmus","psalmus-viii"],
-			["matutinum","psalmus","psalmus-ix"],
-			["matutinum","psalmus","psalmus-x"],
-			["matutinum","psalmus","psalmus-xi"],
-			["matutinum","psalmus","psalmus-xii"],
-			["matutinum","antiphona","antiphona-i","repetita"],
+			["matutinum","psalmi"],
 			["matutinum","versiculus"],
 			["pater-noster-semisecreta"],
 			["matutinum","absolutio"],
@@ -253,7 +251,10 @@
 		]
 	},
 	{
-		"tags":["matutinum","simplex","psalmi"],
+		"tags":[
+			["matutinum","simplex","psalmi"],
+			["matutinum","simplex","in-tempore-paschali","psalmi"]
+		],
 		"datum":[["matutinum","feria","occurrens","psalmi"]]
 	},
 	{
@@ -1458,7 +1459,7 @@
 		"datum":[
 			["matutinum","antiphona","antiphona-invitatorium"],
 			["matutinum","antiphona","antiphona-invitatorium"],
-			"[Psalmus XCIV]/Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
+			"[Psalmus 94.]/Veníte, exsultémus Dómino, jubilémus Deo salutári nostro: præoccupémus fáciem ejus in confessióne, et in psalmis jubilémus ei.",
 			["matutinum","antiphona","antiphona-invitatorium"],
 			"Quóniam Deus magnus Dóminus, et Rex magnus super omnes deos: quóniam non repéllet Dóminus plebem suam, quia in manu ejus sunt omnes fines terræ, et altitúdines móntium ipse cónspicit.",
 			["matutinum","antiphona","antiphona-invitatorium", "pars"],

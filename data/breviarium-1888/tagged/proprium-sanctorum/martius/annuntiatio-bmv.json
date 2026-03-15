@@ -57,6 +57,144 @@
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
+		"tags":["annuntiatio-bmv","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0325I",
+		"datum":"Ave María, grátia plena: * Dóminus tecum.",
+		"in-tempore-paschali":"Ave María, grátia plena: * Dóminus tecum, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","lectio","lectio-i"],
+		"lectio-i":[
+			"De Isaía Prophéta.",
+			"[Isaia 7. b.]/Et adjécit Dóminus loqui ad Achaz, dicens: Pete tibi signum a Dómino Deo tuo in profúndum inférni, sive in excélsum supra. Et dixit Achaz: Non petam, et non tentábo Dóminum. Et dixit: Audíte ergo domus David: Numquid parum vobis est, moléstos esse homínibus, quia molésti estis et Deo meo? Propter hoc dabit Dóminus ipse vobis signum. Ecce virgo concípiet, et páriet fílium, et vocábitur nomen ejus Emmánuel. Butýrum et mel cómedet, ut sciat reprobáre malum, et elígere bonum."
+		]
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Missus est Gábriel Ángelus ad Maríam Vírginem desponsátam Joseph, núntians ei verbum: et expavéscit Virgo de lúmine. Ne tímeas María: invenísti grátiam apud Dóminum:",
+		"responsum":"Ecce concípies et páries, et vocábitur Altíssimi Fílius.",
+		"versus":"Dabit ei Dóminus Deus sedem David patris ejus, et regnábit in domo Jacob in ætérnum."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Ecce concípies et páries, et vocábitur Altíssimi Fílius, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"[Isaiæ 11.]/Et egrediétur virga de radíce Jesse, et flos de radíce ejus ascéndet. Et requiéscet super eum spíritus Dómini: spíritus sapiéntiæ et intelléctus, spíritus consílii et fortitúdinis, spíritus sciéntiæ et pietátis; et replébit eum spíritus timóris Dómini: non secúndum visiónem oculórum judicábit, neque secúndum audítum aúrium árguet: sed judicábit in justítia paúperes, et árguet in æquitáte pro mansuétis terræ: et percútiet terram virga oris sui, et spíritu labiórum suórum interfíciet ímpium. Et erit justítia cíngulum lumbórum ejus: et fides cinctórium renum ejus."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Ave María, grátia plena: Dóminus tecum:",
+		"responsum":"Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei.",
+		"versus":"Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Ángelus dixi ei."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"[Isaiæ 35.]/Lætábitur desérta et ínvia, et exsultábit solitúdo, et florébit quasi lílium. Gérminans germinábit, et exsultábit lætabúnda et laudans: glória Líbani data est ei: decor Carméli et Saron, ipsi vidébunt glóriam Dómini, et decórem Dei nostri. Confortáte manus dissolútas, et génua debília roboráte. Dícite pusillánimis: Confortámini, et nolíte timére: ecce Deus vester ultiónem addúcet retributiónis: Deus ipse véniet, et salvábit vos. Tunc aperiéntur óculi cæcórum, et aures surdórum patébunt. Tunc sáliet sicut cervus claudus, et apérta erit lingua mutórum: quia scissæ sunt in desérto aquæ, et torréntes in solitúdine. Et quæ erat árida, erit in stagnum, et sítiens in fontes aquárum."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Súscipe verbum Virgo María, quod tibi a Dómino per Ángelum transmíssum est: concípies et páries Deum páriter et hóminem:",
+		"responsum":"Ut benedícta dicáris inter omnes mulíeres.",
+		"versus":"Páries quidem fílium, et virginitátis non patiéris detriméntum: efficiéris grávida, et eris mater semper intácta."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Ut benedícta dicáris inter omnes mulíeres, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Leónis Papæ.",
+			"[Serm. II. de Nativ. Domini.]/Deus omnípotens et clemens, cujus natúra bónitas, cujus volúntas poténtia, cujus opus misericórdia est; statim ut nos diabólica malígnitas venéno suæ mortificávit invídiæ, prædestináta renovándis mortálibus suæ pietátis remédia, inter ipsa mundi primórdia præsignávit; denúntians serpénti, futúrum semen mulíeris, quod nóxii cápitis elatiónem sua virtúte contéreret, Christum scílicet in carne ventúrum; Deum hominémque signans, qui natus ex Vírgine, violatórem humánæ propáginis incorrúpta nativitáte damnáret."
+		]
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Ecce virgo concípiet, et páriet fílium, dicit Dóminus:",
+		"responsum":"Et vocábitur nomen ejus Admirábilis, Deus, Fortis.",
+		"versus":"Super sólium David, et super regnum ejus sedébit in ætérnum."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et vocábitur nomen ejus Admirábilis, Deus, Fortis, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Nam quia gloriabátur diábolus, hóminem sua fraude decéptum divínis caruísse munéribus, et immortalitátis dote nudátum, duram mortis subiísse senténtiam, seque in malis suis quoddam de prævaricatóris consórtio invenísse solátium; Deum quoque justæ severitátis exigénte ratióne, erga hóminem, quem in tanto honóre condíderat, antíquam mutásse senténtiam: opus fuit, dilectíssimi, secréti dispensatióne consílii, ut incommutábilis Deus (cujus volúntas non potest sua benignitáte privári) primam pietátis suæ dispositiónem sacraménto occultióre compléret: et homo diabólicæ iniquitátis versútia actus in culpam, contra Dei propósitum non períret."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Egrediétur virga de radíce Jesse, et flos de radíce ejus ascéndet:",
+		"responsum":"Et erit justítia cíngulum lumbórum ejus, et fides cinctórium renum ejus.",
+		"versus":"Et requiéscet super eum spíritus Dómini, spíritus sapiéntiæ et intelléctus, spíritus consílii et fortitúdinis."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et erit justítia cíngulum lumbórum ejus, et fides cinctórium renum ejus, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Adveniéntibus ergo tempóribus, dilectíssimi, quæ redemptióni hóminum fúerant præstitúta, ingréditur hæc ínfima Jesus Christus Dóminus noster, de cœlésti sede descéndens, et a Patérna glória non recédens, novo órdine, nova nativitáte generátus: novo órdine, quia invisíbilis in suis, visíbilis factus est in nostris: incomprehensíbilis, vóluit comprehéndi: ante témpora manens, esse cœpit ex témpore: universitátis Dóminus, servílem formam obumbráta majestátis suæ dignitáte suscépit: impassíbilis Deus, non dedignátus est homo esse passíbilis: et immortális, mortis légibus subjacére."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Sancta et immaculáta virgínitas, quibus te laúdibus éfferam, néscio:",
+		"responsum":"Quia quem cœli cápere non póterant, tuo grémio contulísti.",
+		"versus":"Benedícta tu in muliéribus, et benedíctus fructus ventris tui."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Quia quem cœli cápere non póterant, tuo grémio contulísti."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/CBMVN3A3b",
+		"datum":[["maria","in-tempore-adventus"]]
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 1. c.]/In illo témpore: Missus est Ángelus Gábriel a Deo in civitátem Galilǽæ, cui nomen Názareth, ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Lib. 2. in Lucam.]/Latent quidem divína mystéria, nec fácile, juxta prophéticum dictum, quisquam hóminum potest scire consílium Dei. Sed tamen ex céteris factis, atque præcéptis Dómini Salvatóris póssumus intellígere, et hoc propensióris fuísse consílii, quod ea potíssimum elécta est ut Dóminum páreret, quæ erat desponsáta viro. Cur autem non ántequam desponsarétur, impléta est? Fortásse ne dicerétur quod concéperat ex adultério."
+		]
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Congratulámini mihi omnes qui dilígitis Dóminum, quia cum essem párvula, plácui Altíssimo:",
+		"responsum":"Et de meis viscéribus génui Deum et hóminem.",
+		"versus":"Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et de meis viscéribus génui Deum et hóminem, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Et ingréssus ad eam Ángelus. Disce vírginem móribus, disce vírginem verecúndia, disce oráculo, disce mystério. Trepidáre vírginum est, et ad omnes viri ingréssus pavére, omnes viri affátus veréri. Discant mulíeres propósitum pudóris imitári. Sola in penetrálibus, quam nemo virórum víderit, solus Ángelus repérerit: sola sine cómite, sola sine teste, ne quo degénere depravarétur affátu, ab Ángelo salutátur."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Gaude María Virgo, cunctas hǽreses sola interemísti, quæ Gabriélis Archángeli dictis credidísti:",
+		"responsum":"Dum Virgo Deum et hóminem genuísti, et post partum Virgo invioláta permansísti.",
+		"versus":"Beáta es quæ credidísti: quia perfécta sunt ea, quæ dicta sunt tibi a Dómino."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Dum Virgo Deum et hóminem genuísti, et post partum Virgo invioláta permansísti, allelúja."
+	},
+	{
+		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Tanti namque mandáti mystérium non hóminis fuit, sed Ángeli ore proméndum. Hódie primum audítur: Spíritus sanctus supervéniet in te. Et audítur, et créditur. Dénique, Ecce, inquit, ancílla Dómini: contíngat mihi secúndum verbum tuum. Vide humilitátem, vide devotiónem. Ancíllam se dicit Dómini, quæ mater elígitur: nec repentíno exaltáta promísso est."
+	},
+	{
 		"tags":["annuntiatio-bmv","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2387",
 		"datum":"Quómodo fiet istud * Ángele Dei, quóniam virum non cognósco? Audi María Virgo: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.",

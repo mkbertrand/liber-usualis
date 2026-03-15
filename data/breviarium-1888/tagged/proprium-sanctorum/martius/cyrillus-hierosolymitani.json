@@ -4,13 +4,34 @@
 		"datum":"S. Cyrilli Episcopi Hierosolymitani Confessoris et Ecclesiæ Doctoris"
 	},
 	{
-		"tags":["cyrillus-hierosolymitani","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1908",
-		"datum":"O Doctor óptime, * Ecclésiæ sanctæ lumen, beáte Cyrílle, divínæ legis amátor, deprecáre pro nobis Fílium Dei."
+		"tags":["cyrillus-hierosolymitani","vesperae","antiphona","antiphona-magnificat","n"],
+		"datum":"Cyrílle"
 	},
 	{
 		"tags":["cyrillus-hierosolymitani","collecta"],
 		"datum":"Da nobis, quǽsumus omnípotens Deus, beáto Cyríllo Pontífice intercedénte: te solum verum Deum, et quem misísti Jesum Christum ita cognóscere; + ut inter oves, quæ vocem ejus aúdiunt, * perpétuo connumerári mereámur.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["cyrillus-hierosolymitani","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"in-tempore-quadragesimae":[["confessor-pontifex","lectio"]]
+	},
+	{
+		"tags":["cyrillus-hierosolymitani","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Cyríllus Hierosolymitánus, a téneris annis divinárum scripturárum stúdio summópere déditus, ádeo in eárum sciéntia profécit, ut orthodóxæ fídei strénuus assértor eváserit. Monásticis institútis imbútus, perpétuæ continéntiæ, omníque severióri vivéndi ratióni se addíctum vóluit. Postquam a sancto Máximo Hierosólymæ epíscopo présbyter ordinátus fuit, munus verbi divíni fidélibus prædicándi et catechúmenos edocéndi summa cum laude implévit, atque illas vere mirándas conscrípsit catechéses, quibus totam ecclesiásticam doctrínam dilúcide et copióse compléxus, síngula religiónis dógmata contra fídei hostes sólide propugnávit. Ita vero in his enucleáte et distíncte disséruit, ut non solum jam exórtas hǽreses, sed futúras étiam quasi præságiens evérterit, quemádmodum prǽstitit asseréndo Córporis et Sánguinis Christi reálem præséntiam in mirábili Eucharístiæ sacraménto. Vita autem functo sancto Máximo, a provínciæ epíscopis in illíus locum sufféctus est.",
+		"lectio-ii":"In episcopátu injúrias multas et calamitátes, non secus ac beátus Athanásius, cui coǽvus erat, ab Arianórum factiónibus fídei causa perpéssus fuit. Hi enim ægre feréntes Cyríllum veheménter hærésibus obsístere, ipsum calúmniis aggrediúntur, et in conciliábulo depósitum e sua sede detúrbant. Quorum furóri ut se subtráheret, Tarsum Cilíciæ aufúgit, et quoad vixit Constántius, exsílii rigórem pértulit. Post illíus mortem, Juliáno Apóstata ad impérium evécto, Hierosólymam redíre pótuit, ubi ardénti zelo gregi suo ab erróribus et a vítiis revocándo óperam navávit. Sed íterum, Valénte imperatóre, exsuláre coáctus est, donec, réddita Ecclésiæ pace per Theodósium Magnum, et Arianórum crudelitáte audaciáque représsa, ab eódem imperatóre tamquam fortíssimus Christi athléta honóribus suscéptus suæ sedi restitútus fuit. Quam strénue et sanctæ sublímis offícii sui múnia impléverit, luculénter appáret ex florénti tunc témporis Hierosolymitánæ ecclésiæ statu, quem sanctus Basílius loca sancta veneratúrus, ibi aliquámdiu commorátus, descríbit.",
+		"lectio-iii":"Venerándi hujus prǽsulis sanctitátem cœléstibus signis a Deo fuísse illustrátam, memóriæ tráditum accépimus. Inter hæc recensétur præclára crucis, solis rádiis fulgentióris, apparítio, quæ episcopátus ejus inítia decorávit. Hujúsmodi prodígii éthnici et christiáni testes oculáres fuérunt cum ipso Cyríllo, qui grátiis primum in Ecclésia Deo rédditis, illud per epístolam Constántio imperatóri narrávit. Nec minus admiratióne dignum, quod Judǽis templum a Tito evérsum restauráre ex ímpio imperatóris Juliáni jussu conántibus, evénit. Veheménti enim terræmótu obórto, et ingéntibus flammárum globis e terra erumpéntibus, ómnia ópera ignis consúmpsit, ita ut Judǽi et Juliánus detérriti, ab incépto destíterint; prout scílicet indubitánter futúrum Cyríllus prædíxerat. Qui demum paulo ante óbitum Concílio œcuménico Constantinopolitáno intérfuit, in quo Macedónii hǽresis, et íterum Ariána condemnáta est. Ac Jerúsalem inde revérsus, fere septuagenárius, trigésimo quinto sui episcopátus anno sancto fine quiévit. Ejus Offícium ac Missam Leo décimus tértius Póntifex Máximus ab univérsa Ecclésia celebrári mandávit."
+	},
+	{
+		"tags":["cyrillus-hierosolymitani","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 10. c.]/In illo témpore: Dixit Jesus discípulis suis: Cum persequéntur vos in civitáte ista, fúgite in áliam. Et réliqua.",
+			"Homilía sancti Athanásii Epíscopi.",
+			"[In Apologia de fuga sua, ante med.]/In lege præcéptum erat ut constitueréntur civitátes refugiórum, ut qui quomodocúmque ad necem quæreréntur, servári possent. In consummatióne porro sæculórum cum advenísset illud ipsum Verbum Patris, quod Móysi ántea locútum fúerat, rursus hoc præcéptum dedit: Cum vos, ínquiens, persecúti fúerint in civitáte ista, fúgite in áliam. Paulóque post súbjicit: Cum vidéritis illam abominatiónem desolatiónis, quæ dicta est per Daniélem prophétam, consisténtem in loco sancto (qui legit, intélligat), tunc qui in Judǽa sunt fúgiant ad montes: et qui in tecto est, ne descéndat tóllere áliquid de domo sua: et qui in agro est, non revertátur tóllere túnicam suam."
+		],
+		"lectio-ii":"Hæc cum scirent sancti, ejúsmodi tenuérunt suæ conversatiónis institútum. Quæ enim nunc præcépit Dóminus, éadem quoque ante suum in carne advéntum locútus est in sanctis: et hoc institútum hómines ad perfectiónem ducit. Nam quod Deus jússerit, id omníno faciéndum est. Ideóque et ipsum Verbum propter nos homo factum, non indígnum putávit, cum quærerétur, quemádmodum et nos, abscóndere se; et cum persecutiónem paterétur, fúgere, et insídias declináre: cum autem a se definítum tempus ipse adduxísset, in quo corporáliter pro ómnibus pati volébat, ultro seípsum trádidit insidiántibus.",
+		"lectio-iii":"At vero sancti hómines cum hanc quoque formam a Salvatóre didicíssent, (ab ipso enim et ántea et semper omnes docebántur) advérsus persecutóres ut legítime certárent, fugiébant, et ab illis quæsíti se abscondébant. Cum enim præstitúti sibi a divína providéntia témporis finem ignorárent, nolébant insidiántibus se témere trádere: sed contra, cum scirent quod scriptum est, in mánibus Dei esse hóminum sortes, et Dóminum mortificáre et vivificáre, pótius in finem usque perseverábant, circumeúntes, ut ait Apóstolus, in melótis et péllibus caprínis, egéntes, angustiáti, in solitudínibus errántes, et in spelúncis et cavérnis terræ laténtes, quoad vel definítum mortis tempus veníret, vel qui tempus ipsum definíerat, Deus cum eis loquerétur, et insidiántes cohibéret, aut certe persecutóribus eos tráderet, utcúmque illi placuísset."
 	}
 ]

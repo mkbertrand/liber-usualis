@@ -72,12 +72,14 @@
 	},
 	{
 		"tags":["maria","vesperae","versiculus"],
-		"datum":["V. Dignáre me laudáre te, Virgo sacráta.","R. Da mihi virtútem contra hostes tuos."]
+		"datum":["V. Dignáre me laudáre te, Virgo sacráta.","R. Da mihi virtútem contra hostes tuos."],
+		"in-tempore-paschali":["V. Dignáre me laudáre te, Virgo sacráta, allelúja.","R. Da mihi virtútem contra hostes tuos, allelúja."]
 	},
 	{
 		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2321",
-		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem."
+		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.",
+		"in-tempore-paschali":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem, allelúja."
 	},
 	{
 		"tags":[
@@ -105,7 +107,8 @@
 	{
 		"tags":["maria","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/CBMVI",
-		"datum":"Sancta María Dei Génitrix Virgo, * Intercéde pro nobis."
+		"datum":"Sancta María Dei Génitrix Virgo, * Intercéde pro nobis.",
+		"in-tempore-paschali":"Sancta María Dei Génitrix Virgo, * Intercéde pro nobis, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","hymnus"],
@@ -122,6 +125,11 @@
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"src":"nocturnale/CBMVN1A1",
 		"datum":"Benedícta tu * in muliéribus, et benedíctus fructus ventris tui."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/CBMVN1A1",
+		"datum":"Benedícta tu * in muliéribus, et benedíctus fructus ventris tui, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","psalmus-i"],
@@ -147,12 +155,13 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
+		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
-			"De Parábolis Salamónis.",
+			"De Parábolis Salomónis.",
 			"[Parab. 8. b. et 9.]/Ego sapiéntia hábito in consílio, et erudítis intérsum cogitatiónibus. Timor Dómini odit malum: arrogántiam, et supérbiam, et viam pravam, et os bilíngue detéstor. Meum est consílium et ǽquitas, mea est prudéntia, mea est fortitúdo. Per me reges regnant, et legum conditóres justa decérnunt: per me príncipes ímperant, et poténtes decérnunt justítiam. Ego diligéntes me díligo: et qui mane vígilant ad me, invénient me."
 		]
 	},
@@ -163,8 +172,8 @@
 		"versus":"Benedícta tu in muliéribus, et benedíctus fructus ventris tui."
 	},
 	{
-		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-i","responsum","in-tempore-paschali"],
-		"datum":"Quia quem cœli cápere non póterant, tuo grémio contulísti, allelúja."
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Quia quem cœli cápere non póterant, tuo grémio contulísti, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -177,6 +186,10 @@
 		"versus":"Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus."
 	},
 	{
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et de meis viscéribus génui Deum et hóminem, allelúja."
+	},
+	{
 		"tags":["maria","matutinum","nocturna-i","lectio","lectio-iii"],
 		"datum":"Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei. Qui me invénerit, invéniet vitam, et haúriet salútem a Dómino: qui autem in me peccáverit, lædet ánimam suam. Omnes, qui me odérunt, díligunt mortem. Sapiéntia ædificávit sibi domum, excídit colúmnas septem. Immolávit víctimas suas, míscuit vinum, et propósuit mensam suam. Misit ancíllas suas ut vocárent ad arcem, et ad mœ\u0301nia civitátis: Si quis est párvulus, véniat ad me. Et insipiéntibus locúta est: Veníte, comédite panem meum, et bíbite vinum quod míscui vobis."
 	},
@@ -187,9 +200,18 @@
 		"versus":"Ave María, grátia plena, Dóminus tecum."
 	},
 	{
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Genuísti qui te fecit, et in ætérnum pérmanes Virgo, allelúja."
+	},
+	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"nocturnale/CBMVN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/CBMVN2A1",
+		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","psalmus-i"],
@@ -235,6 +257,10 @@
 		"versus":"Et sicut cinnamómum et bálsamum aromatízans."
 	},
 	{
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Dedi suavitátem odóris, allelúja."
+	},
+	{
 		"tags":["maria","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Magnum revéra miráculum, fratres dilectíssimi, fuit beáta semper Virgo María. Quid namque illa majus aut illústrius ullo umquam témpore invéntum est, seu aliquándo inveníri póterit? Hæc sola cœlum ac terram amplitúdine superávit. Quidnam illa sánctius? Non Prophétæ, non Apóstoli, non Mártyres, non Patriárchæ, non Ángeli, non Throni, non Dominatiónes non Séraphim, non Chérubim: non dénique áliud quídpiam inter creátas res visíbiles aut invisíbiles, majus aut excelléntius inveníri potest. Éadem ancílla Dei est et mater: éadem Virgo et Génitrix."
 	},
@@ -243,6 +269,10 @@
 		"incipit":"Quæ est ista quæ procéssit sicut sol, et formósa tamquam Jerúsalem?",
 		"responsum":"Vidérunt eam fíliæ Sion, et beátam dixérunt, er regínæ laudavérunt eam.",
 		"versus":"Et sicut dies verni circúmdabant eam flores rosárum et lília convállium."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Vidérunt eam fíliæ Sion, et beátam dixérunt, er regínæ laudavérunt eam, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -257,9 +287,18 @@
 		"versus":"Ástitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte."
 	},
 	{
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum-ii":"Unguéntum effúsum nomen tuum, allelúja."
+	},
+	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"nocturnale/CBMVN3A1",
 		"datum":"Gaude María Virgo, * cunctas hǽreses sola interemísti in univérso mundo."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/CBMVN3A1",
+		"datum":"Gaude María Virgo, * cunctas hǽreses sola interemísti in univérso mundo, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","psalmus-i"],
@@ -312,6 +351,10 @@
 		"versus":"Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem."
 	},
 	{
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Quia ex te ortus est sol justítiæ, Christus Deus noster, allelúja."
+	},
+	{
 		"tags":["maria","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Sed si caro Verbi Dei secúndum carnem nascéntis a carne Vírginis matris pronuntiátur extránea, sine causa venter qui eam portásset, úbera quæ lactássent, beatificántur. Dicit autem Apóstolus: Quia misit Deus Fílium suum factum ex mulíere, factum sub lege. Neque audiéndi sunt, qui legéndum putant: Natum ex mulíere, factum sub lege, sed, Factum est mulíere: quia concéptus ex útero virgináli, carnem non de níhilo, non aliúnde, sed matérna traxit ex carne: alióquin nec vere Fílius hóminis dicerétur, qui oríginem non habéret ex hómine. Et nos ígitur his contra Eutýchen dictis, extollámus vocem cum Ecclésia cathólica, cujus hæc múlier typum gessit, extollámus et mentem de médio turbárum, dicamúsque Salvatóri: Beátus venter qui te portávit, et úbera quæ suxísti. Vere enim beáta parens, quæ, sicut quidam ait, Eníxa est puérpera Regem, qui cœlum terrámque tenet per sǽcula."
 	},
@@ -320,6 +363,10 @@
 		"incipit":"Beátam me dicent omnes generatiónes:",
 		"responsum":"Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.",
 		"versus":"Et misericórdia ejus a progénie in progénies timéntibus eum."
+	},
+	{
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus, allelúja."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","lectio","lectio-iii"],
@@ -396,6 +443,7 @@
 	{
 		"tags":["maria","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2950",
-		"datum":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus."
+		"datum":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus.",
+		"in-tempore-paschali":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus, allelúja."
 	}
 ]

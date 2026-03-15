@@ -1,6 +1,9 @@
 [
 	{
-		"tags":["apostolorum-tempore-paschali","vesperae","hymnus"],
+		"tags":[
+			["apostolorum-tempore-paschali","vesperae","hymnus"],
+			["apostolorum-tempore-paschali","matutinum","hymnus"]
+		],
 		"src":"gregobase/2295",
 		"datum":[
 			"Tristes erant Apóstoli/De Christi acérbo fúnere,/Quem morte crudelíssima/Servi necárant ímpii.",
@@ -12,7 +15,10 @@
 		]
 	},
 	{
-		"tags":["apostolorum-tempore-paschali","in-tempore-ascensionis","vesperae","hymnus"],
+		"tags":[
+			["apostolorum-tempore-paschali","in-tempore-ascensionis","vesperae","hymnus"],
+			["apostolorum-tempore-paschali","in-tempore-ascensionis","matutinum","hymnus"]
+		],
 		"src":"gregobase/19951",
 		"datum":[
 			"Tristes erant Apóstoli/De Christi acérbo fúnere,/Quem morte crudelíssima/Servi necárant ímpii.",
@@ -22,6 +28,86 @@
 			"Ut sis perénne méntibus/Paschále Jesu gaúdium;/A morte dira críminum/Vitæ renátos líbera.",
 			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/APTPI",
+		"datum":"Regem Apostolórum Dóminum, * Veníte, adorémus, allelúja."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-i","antiphona"],
+		"src":"nocturnale/APTPN1A",
+		"datum":"Stabunt justi * in magna constántia advérsus eos, qui se angustiavérunt, allelúja."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Sancti et justi in Dómino gaudéte, allelúja.","R. Vos elégit Deus in hæreditátem sibi, allelúja."]
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Beátus vir qui métuit Dóminum, allelúja:",
+		"responsum":"In mandátis ejus cupit nimis, allelúja, allelúja, allelúja.",
+		"versus":"Glória et divítiæ in domo ejus, et justítia ejus manet in sǽculum sǽculi."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Tristítia vestra, allelúja,",
+		"responsum":"Convertétur in gaúdium, allelúja, allelúja.",
+		"versus":"Mundus autem gaudébit, vos vero contristabímini, sed tristítia vestra."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Pretiósa in conspéctu Dómini, allelúja,",
+		"responsum":"Mors sanctórum ejus, allelúja.",
+		"versus":"Custódit Dóminus ómnia ossa eórum, unum ex his non conterétur."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","antiphona"],
+		"src":"nocturnale/APTPN2A",
+		"datum":"Ecce * quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est, allelúja."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Lux perpétua lucébit sanctis tuis Dómine, allelúja.","R. Et ætérnitas témporum, allelúja."]
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Lux perpétua lucébit sanctis tuis Dómine,",
+		"responsum":"Et ætérnitas témporum, allelúja, allelúja.",
+		"versus":"Lætítia sempitérna erit super cápita eórum: gaúdium et exsultatiónem obtinébunt."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Virtúte magna reddébant Apóstoli",
+		"responsum":"Testimónium resurrectiónis Jesu Christi Dómini nostri, allelúja, allelúja.",
+		"versus":"Repléti quidem Spíritu sancto, loquebántur cum fidúcia verbum Dei."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Isti sunt agni novélli, qui annuntiavérunt, allelúja: modo venérunt ad fontes,",
+		"responsum":"Repléti sunt claritáte, allelúja, allelúja.",
+		"versus":"In conspéctu Agni amícti sunt stolis albis, et palmæ in mánibus eórum."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-iii","antiphona"],
+		"src":"nocturnale/APTPN3A",
+		"datum":"Lux perpétua * lucébit sanctis tuis Dómine, et ætérnitas témporum, allelúja."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Lætítia sempitérna super cápita eórum, allelúja.","R. Gaúdium et exsultatiónem obtinébunt, allelúja."]
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Ego sum vitis vera, et vos pálmites:",
+		"responsum":"Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.",
+		"versus":"Sicut diléxit me Pater, et ego diléxi vos."
+	},
+	{
+		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Cándidi facti sunt Nazarǽi ejus, allelúja: splendórem Deo dedérunt, allelúja:",
+		"responsum":"Et sicut lac coaguláti sunt, allelúja, allelúja.",
+		"versus":"Candidióres nive, nitidióres lacte, rubicundióres ébore antíquo, sapphíro pulchrióres."
 	},
 	{
 		"tags":["apostolorum-tempore-paschali","laudes","hymnus"],

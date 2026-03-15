@@ -148,6 +148,11 @@
 		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
 	},
 	{
+		"tags":["virgo","matutinum","antiphona","antiphona-invitatorium","in-tempore-paschali"],
+		"src":"nocturnale/MUVXId",
+		"datum":"Regem Vírginum Dóminum, * Veníte adorémus, allelúja."
+	},
+	{
 		"tags":["virgo","martyr","matutinum","hymnus"],
 		"src":"nocturnale/MUVMHa",
 		"datum":[
@@ -173,6 +178,11 @@
 		"datum":"O quam pulchra * est casta generátio cum claritáte!"
 	},
 	{
+		"tags":["virgo","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/MUXXN1A1",
+		"datum":"O quam pulchra * est casta generátio cum claritáte, allelúja!"
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-i","psalmus-i"],
 		"datum":[["/psalmi/psalmus-viii,gloria"]]
 	},
@@ -196,7 +206,8 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."]
+		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
+		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","lectio","lectio-i"],
@@ -213,11 +224,19 @@
 		"versus":"Veni elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem tuam."
 	},
 	{
+		"tags":["virgo","martyr","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et cum Ángelis in paradísum introísti, allelúja."
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"src":"nocturnale/MUXNN1R1",
 		"incipit":"Veni elécta mea, et ponam in te thronum meum:",
 		"responsum":"Quia concupívit Rex spéciem tuam.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Quia concupívit Rex spéciem tuam, allelúja."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -231,6 +250,10 @@
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
+		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Proptérea benedíxit te Deus in ætérnum, allelúja."
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-i","lectio","lectio-iii"],
 		"datum":"Si quis autem turbem se vidéri exístimat super vírgine sua, quod sit superadúlta, et ita opórtet fíeri: quod vult fáciat: non peccat, si nubat. Nam qui státuit in corde suo firmus, non habens necessitátem, potestátem autem habens suæ voluntátis, et hoc judicávit in corde suo, serváre vírginem suam, bene facit. Ígitur et qui matrimónio jungit vírginem suam, bene facit: et qui non jungit, mélius facit. Múlier alligáta est legi quanto témpore vir ejus vivit. Quod si dormíerit vir ejus, liberáta est: cui vult nubat, tantum in Dómino. Beátior autem erit, si sic permánserit, secúndum meum consílium: puto autem quod et ego Spíritum, Dei hábeam."
 	},
@@ -242,9 +265,18 @@
 		"versus":"Diffúsa est grátia in lábiis tuis, proptéra benedíxit te Deus in ætérnum."
 	},
 	{
+		"tags":["virgo","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Inténde, próspere procéde, et regna, allelúja."
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["virgo","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/MUXXN2A1",
+		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna, allelúja."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","psalmus-i"],
@@ -253,7 +285,7 @@
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-ii"],
 		"src":"nocturnale/MUXXN2A2",
-		"datum":"Adjuvábit eam * Deus vultu suo: Deus médio ejus, non commovébitur."
+		"datum":"Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","psalmus-ii"],
@@ -270,7 +302,8 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","versiculus"],
-		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."]
+		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
+		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -287,6 +320,10 @@
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
+		"tags":["virgo","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et dedúcet te mirabíliter déxtera tua, allelúja."
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Hæc nubes, áëra, Ángelos, síderaque transgrédiens, Verbum Dei in ipso sinu Patris invénit, et toto hausit péctore. Nam quis tantum, cum invénerit, relínquat boni? Unguéntum enim exinanítum est nomen tuum: proptérea adolescéntulæ dilexérunt te, et attraxérunt te. Postrémo, non meum est illud, quóniam quæ non nubunt, neque nubéntur, erunt sicut Ángeli Dei in cœlo. Nemo ergo mirétur, si Ángelis comparéntur, quæ Angelórum Dómino copulántur."
 	},
@@ -296,6 +333,10 @@
 		"incipit":"Dilexísti justítiam, et odísti iniquitátem:",
 		"responsum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ.",
 		"versus":"Propter veritátem, et mansuetúdinem, et justítiam."
+	},
+	{
+		"tags":["virgo","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ, allelúja."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -309,9 +350,18 @@
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
+		"tags":["virgo","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Afferéntur tibi in lætítia et exsultatióne, allelúja."
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"nocturnale/MUXXN3A1",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
+	},
+	{
+		"tags":["virgo","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/MUXXN3A1",
+		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum, allelúja."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","psalmus-i"],
@@ -337,7 +387,8 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","versiculus"],
-		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."]
+		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
+		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -356,6 +407,10 @@
 		"versus":"Média nocte clamor factus est: Ecce sponsus venit, exíte óbviam ei."
 	},
 	{
+		"tags":["virgo","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et veniénte Dómino, introívit cum eo ad núptias, allelúja."
+	},
+	{
 		"tags":["virgo","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Sed prius quæréndum nobis est, quid sit regnum cœlórum, aut cur decem virgínibus comparétur, quæ étiam vírgines prudéntes et fátuæ dicántur. Dum enim cœlórum regnum constat, quia reprobórum nullus ingréditur, étiam fátuis virgínibus cur símile esse perhibétur? Sed sciéndum nobis est, quod sæpe in sacro elóquio regnum cœlórum præséntis témporis Ecclésia dícitur. De quo álio in loco Dóminus dicit: Mittet Fílius hóminis Ángelos suos, et cólligent de regno ejus ómnia scándala. Neque enim in illo regno beatitúdinis, in quo pax summa est, inveníri scándala póterunt, quæ colligántur."
 	},
@@ -365,6 +420,10 @@
 		"incipit":"Média nocte clamor factus est:",
 		"responsum":"Ecce sponsus venit, exíte óbviam ei.",
 		"versus":"Prudéntes Vírgines, aptáte vestras lámpades."
+	},
+	{
+		"tags":["virgo","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Ecce sponsus venit, exíte óbviam ei, allelúja."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","lectio","lectio-iii"],

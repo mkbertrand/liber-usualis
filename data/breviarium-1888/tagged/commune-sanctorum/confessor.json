@@ -134,9 +134,19 @@
 		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
 	},
 	{
+		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","in-tempore-paschali"],
+		"src":"nocturnale/COPOId",
+		"datum":"Regem Confessórum Dóminum, * Veníte adorémus, allelúja."
+	},
+	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"src":"nocturnale/COPONA1A1",
 		"datum":"Beátus vir, * qui in lege Dómini meditábitur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper et prosperabúntur."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/COPONA1A1",
+		"datum":"Beátus vir, * qui in lege Dómini meditábitur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper et prosperabúntur, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","psalmus-i"],
@@ -175,6 +185,10 @@
 		"versus":"Dómine quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum."
 	},
 	{
+		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Intra in gaúdium Dómini tui, allelúja."
+	},
+	{
 		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-ii"],
 		"datum":"Pópuli autem vidéntes, et non intelligéntes, nec ponéntes in præcórdiis tália: quóniam grátia Dei et misericórdia est in sanctos ejus, et respéctus in eléctos illíus. Condémnat autem justus mórtuus vivos ímpios, et juvéntus celérius consummáta longam vitam injústi. Vidébunt enim finem sapiéntis, et non intélligent quid cogitáverit de illo Deus, et quare muníerit illum Dóminus. Vidébunt et contémnent eum: illos autem Dóminus irridébit. Et erunt post hæc decidéntes sine honóre, et in contumélia inter mórtuos in perpétuum: quóniam disrúmpet illos inflátos sine voce, et commovébit illos a fundaméntis, et usque ad suprémum desolabúntur."
 	},
@@ -184,6 +198,10 @@
 		"incipit":"Justus germinábit sicut lílium:",
 		"responsum":"Et florébit in ætérnum ante Dóminum.",
 		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et florébit in ætérnum ante Dóminum, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -197,9 +215,18 @@
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
+		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Et invéntus est in número sanctórum, allelúja."
+	},
+	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"nocturnale/COPON2A1",
 		"datum":"Invocántem exaudívit * Dóminus sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/COPON2A1",
+		"datum":"Invocántem exaudívit * Dóminus sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","psalmus-i"],
@@ -246,6 +273,10 @@
 		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
 	},
 	{
+		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et dedit illi claritátem ætérnam, allelúja."
+	},
+	{
 		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Quod si hic, ubi morbi, ubi insectatiónes, ubi præmatúræ mortes, ubi calúmniæ, ubi invídiæ, ubi perturbatiónes, ubi iræ, ubi cupiditátes, ubi innumerábiles insídiæ, ubi quotidiánæ sollicitúdines, ubi perpétua sibíque succidéntia mala sunt, innúmeros ex omni parte dolóres afferéntia, Paulus dixit fíeri posse, ut semper gaudeámus, si quis paúlulum ex rerum mundanárum flúctibus eréxerit caput, vitámque suam recte composúerit: multo magis, postquam hinc demigravérimus, fácile cómpotes érimus ejus boni, cum hæc ómnia subláta fúerint, advérsa valetúdo, morbi, peccándi matéria, ubi non est meum ac tuum, frígidum illud verbum, et quidquid est malórum in vitam nostram ínvehens, innúmeraque gignens bella."
 	},
@@ -255,6 +286,10 @@
 		"incipit":"Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum,",
 		"responsum":"Et ad portas paradísi coronávit eum.",
 		"versus":"Índuit eum Dóminus lorícam fídei, et ornávit eum."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et ad portas paradísi coronávit eum, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -268,9 +303,18 @@
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
 	},
 	{
+		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Quia te vidi justum coram me ex ómnibus géntibus, allelúja."
+	},
+	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"nocturnale/COPON3A1",
 		"datum":"Dómine, * iste sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
+		"src":"nocturnale/COPON3A1",
+		"datum":"Dómine, * iste sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","psalmus-i"],
@@ -319,6 +363,10 @@
 		"versus":"Ecce homo sine queréla, verus Dei cultor, ábstinens se ab omni ópere malo, et pérmanens in innocéntia sua."
 	},
 	{
+		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Ipse intercédat pro peccátis ómnium populórum, allelúja."
+	},
+	{
 		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Duo autem sunt, quæ jubéntur, et lumbos restríngere, et lucérnas tenére: ut et mundítia sit castitátis in operatióne. Redemptóri étenim nostro unum sine áltero placére nequáquam potest: si aut is qui bona agit, adhuc luxúriæ inquinaménta non déserit: aut is qui castitáte præéminet, necdum se per bona ópera exércet. Nec cástitas ergo magna est sine bono ópere, nec opus bonum est áliquod sine castitáte. Sed et si utrúmque ágitur, restat, ut quisquis ille est, spe ad supérnam pátriam tendat, et nequáquam se a vítiis pro mundi hujus honestáte contíneat."
 	},
@@ -328,6 +376,10 @@
 		"incipit":"Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris:",
 		"responsum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis.",
 		"versus":"Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit."
+	},
+	{
+		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","lectio","lectio-iii"],
