@@ -40,7 +40,7 @@ octavevigiltags = {'habens-octavam','incipit-libri'}
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
 roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
 roletags = set(roletagsordered)
-noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat'}
+noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat','translatus-originalis'}
 
 class SearchResult(NamedTuple):
 	date: date
