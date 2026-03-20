@@ -40,7 +40,7 @@ class TestKalendar:
 			assert type(entries) is list
 			assert len(entries) >= 1, f"Day {date} has no entries"
 			for entry in entries:
-				assert type(entry) is set
+				assert type(entry) is set or type(entry) is frozenset
 				assert len(entry) >= 1, "Entry has no tags"
 				for tag in entry:
 					assert type(tag) is str
