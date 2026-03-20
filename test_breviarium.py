@@ -5,6 +5,7 @@ from datetime import date, timedelta
 import warnings
 import copy
 import re
+import os
 
 import pathlib
 import diff_match_patch
@@ -43,7 +44,11 @@ def flattensetlist(sets):
 
 @pytest.mark.parametrize('day', [date(year, 1, 1) + timedelta(days=i) for i in range(365)])
 def test_match(day) -> None:
+
 	warnings.filterwarnings('ignore')
+
+	if not os.path.isdir('testresults'):
+		os.makedirs('testresults')
 
 	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
 		old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json', pathlib.Path(__file__).parent))))

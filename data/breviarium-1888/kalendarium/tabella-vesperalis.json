@@ -374,22 +374,6 @@
 		]
 	},
 	{
-		"include":["dominica-i-classis","i-vesperae","primarium"],
-		"response":[
-			{"include":["duplex-ii-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
-			{"include":["duplex-majus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
-			{"include":["duplex-minus","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1},
-			{"include":["semiduplex","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
-		]
-	},
-	{
-		"include":["dominica-ii-classis","i-vesperae","primarium"],
-		"response":[
-			{"include":["duplex-i-classis","ii-vesperae","primarium"],"remove":"primarium","adde":"commemoratio","target":0},
-			{"include":["semiduplex","ii-vesperae"],"remove":["primarium","commemoratio"],"adde":"omissum","target":1}
-		]
-	},
-	{
 		"include":["duplex-i-classis","i-vesperae","primarium"],
 		"continue":false,
 		"response":[

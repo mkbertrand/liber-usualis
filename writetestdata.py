@@ -2,6 +2,7 @@ from datetime import date, timedelta
 import time
 import copy
 import warnings
+import os
 
 import datamanage
 import prioritizer
@@ -9,6 +10,9 @@ import breviarium
 
 year = 2001
 book = datamanage.get_book('breviarium-1888')
+
+if not os.path.isdir('testdata'):
+	os.makedirs('testdata')
 
 start = time.time()
 warnings.filterwarnings('ignore')
