@@ -157,6 +157,10 @@
 		]
 	},
 	{
+		"include":["rogatio","primarium","omissum"],
+		"remove":"omissum"
+	},
+	{
 		"include":["suffragium","commemoratio"],
 		"response":[
 			{"include":["duplex-i-classis"],"response":"dele","target":0},
