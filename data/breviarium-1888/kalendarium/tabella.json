@@ -68,8 +68,8 @@
 		"include":["antiphona-major"],
 		"recheck":false,
 		"response":[
-			{"include":["feria"],"response":"combina","target":0},
-			{"include":["dominica","primarium"],"response":"combina","target":0}
+			{"include":["feria"],"response":"combina"},
+			{"include":["dominica","primarium"],"response":"combina"}
 		]
 	},
 	{
@@ -134,10 +134,24 @@
 		]
 	},
 	{
+		"include":["quatuor-tempora-adventus"],
+		"recheck":false,
+		"response":[
+			{"include":["hebdomada-iii-adventus"],"response":"combina"}
+		]
+	},
+	{
+		"include":["quatuor-tempora-quadragesimae"],
+		"recheck":false,
+		"response":[
+			{"include":["hebdomada-i-quadragesimae"],"response":"combina"}
+		]
+	},
+	{
 		"include":["quatuor-tempora-pentecostes"],
 		"recheck":false,
 		"response":[
-			{"include":["pentecostes"],"response":"combina","target":0}
+			{"include":["pentecostes"],"response":"combina"}
 		]
 	},
 	{
@@ -254,7 +268,7 @@
 		"recheck":false,
 		"response":[
 			{"include":["dominica","primarium"],"response":"omissum","target":1},
-			{"include":["feria"],"response":"combina","target":0}
+			{"include":["feria"],"response":"combina"}
 		]
 	},
 	{
@@ -455,15 +469,23 @@
 		"include":["thomas","duplex-ii-classis"],
 		"recheck":false,
 		"response":[
+			{"include":["antiphonae","feriae-v"],"response":"dele","target":1},
 			{"include":["antiphonae"],"response":"transfer","target":1,"movement":["hebdomada-iii-adventus","sabbatum"]}
+		]
+	},
+	{
+		"include":["vigilia-nativitatis"],
+		"recheck":false,
+		"response":[
+			{"include":["antiphonae","dominicae"],"response":"transfer","target":1,"movement":["hebdomada-iii-adventus","sabbatum"]}
 		]
 	},
 	{
 		"include":["antiphonae"],
 		"recheck":false,
 		"response":[
-			{"include":["feria"],"response":"combina","target":0},
-			{"include":["dominica","primarium"],"response":"combina","target":0}
+			{"include":["feria"],"response":"combina"},
+			{"include":["dominica","primarium"],"response":"combina"}
 		]
 	},
 	{
@@ -642,7 +664,8 @@
 		"include":["feria-major"],
 		"response":[
 			{"include":["bmv-sabbatum"],"response":"dele","target":1},
-			{"include":["simplex","primarium"],"response":"commemoratio","target":1}
+			{"include":["simplex","primarium"],"response":"commemoratio","target":1},
+			{"include":["feria"],"exclude":["feria-major"],"response":"omissum","target":1}
 		]
 	},
 	{
@@ -669,7 +692,7 @@
 		"include":["rogatio","primarium"],
 		"recheck":false,
 		"response":[
-			{"include":["feria","primarium"],"response":"combina","target":0}
+			{"include":["feria","primarium"],"response":"combina"}
 		]
 	},
 	{
@@ -883,14 +906,14 @@
 	{
 		"include":["scriptura"],
 		"response":[
-			{"include":["feria"],"response":"combina","target":0},
-			{"include":["dominica","semiduplex"],"response":"combina","target":0}
+			{"include":["feria"],"response":"combina"},
+			{"include":["dominica","semiduplex"],"response":"combina"}
 		]
 	},
 	{
 		"include":["pro-antiphona-magnificat"],
 		"response":[
-			{"include":["dominica","semiduplex"],"response":"combina","target":0}
+			{"include":["dominica","semiduplex"],"response":"combina"}
 		]
 	},
 	{

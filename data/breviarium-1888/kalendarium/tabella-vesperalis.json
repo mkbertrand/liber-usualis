@@ -77,6 +77,12 @@
 		"response":"dele"
 	},
 	{
+		"include":["vigilia","ii-vesperae","primarium"],
+		"response":[
+			{"include":["feria","ii-vesperae","omissum"],"remove":"omissum","adde":"primarium","target":1}
+		]
+	},
+	{
 		"include":["vigilia","ii-vesperae"],
 		"recheck":false,
 		"response":"dele"
@@ -90,6 +96,12 @@
 		"include":["sabbatum","feria","ii-vesperae"],
 		"recheck":false,
 		"response":"dele"
+	},
+	{
+		"include":["vigilia-nativitatis","i-vesperae","primarium"],
+		"response":[
+			{"include":["hebdomada-iv-adventus","dominica","commemoratio"],"remove":"commemoratio","adde":"primarium","target":1}
+		]
 	},
 	{
 		"include":["vigilia","i-vesperae"],
@@ -137,10 +149,11 @@
 		]
 	},
 	{
-		"include":["quatuor-tempora","ii-vesperae"],
+		"include":["feria","ii-vesperae"],
 		"recheck":false,
 		"response":[
-			{"include":["feria","ii-vesperae"],"response":"combina","target":0}
+			{"include":["quatuor-tempora","ii-vesperae"],"response":"combina","target":1},
+			{"include":["rogatio","feria-major","ii-vesperae"],"response":"combina","target":1}
 		]
 	},
 	{
