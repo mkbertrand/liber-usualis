@@ -721,47 +721,6 @@
 			"response":"omissum"
 		},
 		{
-			"include":["psalmi-graduales"],
-			"response":[
-				{"include":["duplex-i-classis"],"response":"dele","target":0},
-				{"include":["duplex-ii-classis"],"response":"dele","target":0},
-				{"include":["duplex-majus"],"response":"dele","target":0},
-				{"include":["duplex-minus"],"response":"dele","target":0},
-				{"include":["semiduplex"],"response":"dele","target":0}
-			]
-		},
-		{
-			"include":["psalmi-poenitentiales"],
-			"response":[
-				{"include":["duplex-i-classis"],"response":"dele","target":0},
-				{"include":["duplex-ii-classis"],"response":"dele","target":0},
-				{"include":["duplex-majus"],"response":"dele","target":0},
-				{"include":["duplex-minus"],"response":"dele","target":0},
-				{"include":["semiduplex"],"response":"dele","target":0}
-			]
-		},
-		{
-			"include":["officium-defunctorum"],
-			"exclude":["fideles-defuncti"],
-			"response":[
-				{"include":["in-tempore-nativitatis"],"response":"dele","target":0},
-				{"include":["in-tempore-paschali"],"response":"transfer","target":0,"movement":1},
-				{"include":["duplex-i-classis"],"response":"transfer","target":0,"movement":1},
-				{"include":["duplex-ii-classis"],"response":"transfer","target":0,"movement":1},
-				{"include":["duplex-majus"],"response":"transfer","target":0,"movement":1},
-				{"include":["duplex-minus"],"response":"transfer","target":0,"movement":1},
-				{"include":["semiduplex"],"response":"transfer","target":0,"movement":1},
-				{"include":["officium-defunctorum"],"response":"dele","target":1},
-				{"include":["tempus","dominica"],"target":0,"response":"dominica"},
-				{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
-				{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
-				{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
-				{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
-				{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
-				{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
-			]
-		},
-		{
 			"include":["in-tempore-adventus"],
 			"recheck":false,
 			"response":[
@@ -818,18 +777,6 @@
 		{
 			"include":["simplex"],
 			"response":[
-				{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
-				{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
-				{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
-				{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
-				{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
-				{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
-			]
-		},
-		{
-			"include":["votiva"],
-			"response":[
-				{"include":["tempus","dominica"],"target":0,"response":"feria-i"},
 				{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
 				{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
 				{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
@@ -930,6 +877,61 @@
 			"include":["hebdomada-sexagesima","feria-iii","antiphona-magnificat"],
 			"response":[
 				{"include":["hebdomada-sexagesima","feria-ii","antiphona-magnificat"],"response":"dele","target":1}
+			]
+		}
+	],
+	[
+		{
+			"include":["votiva"],
+			"response":[
+				{"include":["tempus","dominica"],"target":0,"response":"feria-i"},
+				{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
+				{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
+				{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
+				{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
+				{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
+				{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
+			]
+		},
+		{
+			"include":["psalmi-graduales"],
+			"response":[
+				{"include":["duplex-i-classis"],"response":"dele","target":0},
+				{"include":["duplex-ii-classis"],"response":"dele","target":0},
+				{"include":["duplex-majus"],"response":"dele","target":0},
+				{"include":["duplex-minus"],"response":"dele","target":0},
+				{"include":["semiduplex"],"response":"dele","target":0}
+			]
+		},
+		{
+			"include":["psalmi-poenitentiales"],
+			"response":[
+				{"include":["duplex-i-classis"],"response":"dele","target":0},
+				{"include":["duplex-ii-classis"],"response":"dele","target":0},
+				{"include":["duplex-majus"],"response":"dele","target":0},
+				{"include":["duplex-minus"],"response":"dele","target":0},
+				{"include":["semiduplex"],"response":"dele","target":0}
+			]
+		},
+		{
+			"include":["officium-defunctorum"],
+			"exclude":["fideles-defuncti"],
+			"response":[
+				{"include":["in-tempore-nativitatis"],"response":"dele","target":0},
+				{"include":["in-tempore-paschali"],"response":"dele","target":0},
+				{"include":["duplex-i-classis"],"response":"transfer","target":0,"movement":1},
+				{"include":["duplex-ii-classis"],"response":"transfer","target":0,"movement":1},
+				{"include":["duplex-majus"],"response":"transfer","target":0,"movement":1},
+				{"include":["duplex-minus"],"response":"transfer","target":0,"movement":1},
+				{"include":["semiduplex"],"response":"transfer","target":0,"movement":1},
+				{"include":["officium-defunctorum"],"response":"dele","target":1},
+				{"include":["tempus","dominica"],"target":0,"response":"dominica"},
+				{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},
+				{"include":["tempus","feria-iii"],"target":0,"response":"feria-iii"},
+				{"include":["tempus","feria-iv"],"target":0,"response":"feria-iv"},
+				{"include":["tempus","feria-v"],"target":0,"response":"feria-v"},
+				{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
+				{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
 			]
 		}
 	]
