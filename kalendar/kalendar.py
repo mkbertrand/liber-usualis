@@ -475,7 +475,8 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 				entry.add('primarium')
 
 	tabella = load_data('tabella.json', book)
-	apply_tabella(kal, tabella)
+	for i in tabella:
+		apply_tabella(kal, i)
 
 	return kal
 
