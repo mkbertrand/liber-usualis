@@ -24,4 +24,4 @@ for i in range(0, 365):
 		with open(f'testdata/{day}-{j.replace("+", "-")}.json', 'w') as fileout:
 			fileout.write(datamanage.dump_data(breviarium.generate(book, day, j)))
 
-print(f'Finished writing test date ({round(time.time() - start, 3)}s)')
+print(f'Finished writing test data ({round(time.time() - start, 3)}s)')
