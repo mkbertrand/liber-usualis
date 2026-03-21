@@ -382,7 +382,7 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 	# Nativity & Epiphany
 	for entry in nativitycycle:
 		for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
-			kal.add_entry(kal.match_unique(entry['occurrence']).date, tagset)
+			kal.add_entry(kal.match_unique(entry['basis']).date, tagset)
 
 	kal.add_entry(nextsunday(christmas), {'nativitas','dominica-infra-octavam','semiduplex','in-tempore-nativitatis'})
 	kal.add_entry(epiphanysunday, {'epiphania','dominica-infra-octavam','infra-octavam','semiduplex','per-octavam-epiphaniae'})
@@ -407,12 +407,12 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 	entries = copy.deepcopy(kalendarium)
 	for entry in entries:
 		matches = None
-		if type(entry['occurrence']) is list:
+		if type(entry['basis']) is list:
 			matches = []
-			for i in entry['occurrence']:
+			for i in entry['basis']:
 				matches.extend(kal.match(i, entry.get('excluded', set())))
 		else:
-			matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
+			matches = kal.match(entry['basis'], entry.get('excluded', set()))
 		offset = entry['offset'] if 'offset' in entry else 0
 		for match_date in set([i.date for i in matches]):
 			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
@@ -429,12 +429,12 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 	entries = copy.deepcopy(movables)
 	for entry in entries:
 		matches = None
-		if type(entry['occurrence']) is list:
+		if type(entry['basis']) is list:
 			matches = []
-			for i in entry['occurrence']:
+			for i in entry['basis']:
 				matches.extend(kal.match(i, entry.get('excluded', set())))
 		else:
-			matches = kal.match(entry['occurrence'], entry.get('excluded', set()))
+			matches = kal.match(entry['basis'], entry.get('excluded', set()))
 		offset = entry['offset'] if 'offset' in entry else 0
 		for match_date in set([i.date for i in matches]):
 			kal.add_entry(match_date + timedelta(days=offset), entry['tags'])

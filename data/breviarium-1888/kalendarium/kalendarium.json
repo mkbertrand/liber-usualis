@@ -1,1197 +1,1197 @@
 [
 	{
-		"occurrence":["dominica","hebdomada-i-epiphaniae"],
+		"basis":["dominica","hebdomada-i-epiphaniae"],
 		"offset":7,
-		"generic-occurrence":["dominica","hebdomada-ii-epiphaniae"],
+		"generic-basis":["dominica","hebdomada-ii-epiphaniae"],
 		"tags":["nomen-jesu","duplex-ii-classis","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xix-kalendas-februarii"],
+		"basis":["ad-xix-kalendas-februarii"],
 		"tags":[
 			["hilarius","duplex-minus","confessor-pontifex","doctor"],
 			["felix","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-xviii-kalendas-februarii"],
+		"basis":["ad-xviii-kalendas-februarii"],
 		"tags":[
 			["paulus-eremita","duplex-minus","confessor"],
 			["maurus","simplex","commemoratio","abbas"]
 		]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-februarii"],
+		"basis":["ad-xvii-kalendas-februarii"],
 		"tags":["marcellus-i","semiduplex","papa","martyr","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-februarii"],
+		"basis":["ad-xvi-kalendas-februarii"],
 		"tags":["antonius","duplex-minus","abbas"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-februarii"],
+		"basis":["ad-xv-kalendas-februarii"],
 		"tags":[
 			["cathedra-petri","duplex-majus","confessor-pontifex","confessor","papa","scriptura-propria"],
 			["prisca","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-februarii"],
+		"basis":["ad-xiv-kalendas-februarii"],
 		"tags":[
 			["canutus","semiduplex","martyr"],
 			["marius-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-februarii"],
+		"basis":["ad-xiii-kalendas-februarii"],
 		"tags":["fabianus-sebastianus","duplex-minus","martyr","martyres","papa"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-februarii"],
+		"basis":["ad-xii-kalendas-februarii"],
 		"tags":["agnes","duplex-minus","virgo","martyr","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-februarii"],
+		"basis":["ad-xi-kalendas-februarii"],
 		"tags":["vincentius-anastasius","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-februarii"],
+		"basis":["ad-x-kalendas-februarii"],
 		"tags":[
 			["raymundus-penafort","semiduplex","confessor"],
 			["emerentiana","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-februarii"],
+		"basis":["ad-ix-kalendas-februarii"],
 		"tags":["timotheus","duplex-minus","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-februarii"],
+		"basis":["ad-viii-kalendas-februarii"],
 		"tags":[
 			["conversio-pauli","duplex-majus","apostolus","scriptura-propria"],
 			["petrus","commemoratio","semiduplex"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-februarii"],
+		"basis":["ad-vii-kalendas-februarii"],
 		"tags":["polycarpus","duplex-minus","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-februarii"],
+		"basis":["ad-vi-kalendas-februarii"],
 		"tags":["joannes-chrysostomus","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["ad-v-kalendas-februarii"],
+		"basis":["ad-v-kalendas-februarii"],
 		"tags":["agnes","agnes-secundo","simplex","virgo","martyr"]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-februarii"],
+		"basis":["ad-iv-kalendas-februarii"],
 		"tags":["franciscus-salesius","duplex-minus","confessor-pontifex","doctor","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-februarii"],
+		"basis":["ad-iii-kalendas-februarii"],
 		"tags":["martina","semiduplex","virgo","martyr"]
 	},
 	{
-		"occurrence":["pridie-kalendas-februarii"],
+		"basis":["pridie-kalendas-februarii"],
 		"tags":["petrus-nolascus","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["kalendae-februarii"],
+		"basis":["kalendae-februarii"],
 		"tags":["ignatius","duplex-minus","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-februarii"],
+		"basis":["ad-iv-nonas-februarii"],
 		"tags":["purificatio-bmv","duplex-ii-classis","maria","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iii-nonas-februarii"],
+		"basis":["ad-iii-nonas-februarii"],
 		"tags":["blasius","simplex","episcopus-martyr"]
 	},
 	{
-		"occurrence":["pridie-nonas-februarii"],
+		"basis":["pridie-nonas-februarii"],
 		"tags":["andreas-corsinus","duplex-minus","confessor-pontifex"]
 	},
 	{
-		"occurrence":["nonae-februarii"],
+		"basis":["nonae-februarii"],
 		"tags":["agatha","duplex-minus","virgo","martyr","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-viii-idus-februarii"],
+		"basis":["ad-viii-idus-februarii"],
 		"tags":[
 			["titus","duplex-minus","confessor-pontifex"],
 			["dorothea","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-idus-februarii"],
+		"basis":["ad-vii-idus-februarii"],
 		"tags":["romualdus","abbas","duplex-minus"]
 	},
 	{
-		"occurrence":["ad-vi-idus-februarii"],
+		"basis":["ad-vi-idus-februarii"],
 		"tags":["joannes-matha","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-v-idus-februarii"],
+		"basis":["ad-v-idus-februarii"],
 		"tags":[
 			["cyrillus-alexandrini","duplex-minus","confessor-pontifex","doctor"],
 			["apollonia","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-idus-februarii"],
+		"basis":["ad-iv-idus-februarii"],
 		"tags":["scholastica","duplex-minus","virgo"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-martii"],
+		"basis":["ad-xvi-kalendas-martii"],
 		"tags":["valentinus","simplex","priest","martyr"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-martii"],
+		"basis":["ad-xv-kalendas-martii"],
 		"tags":["faustinus-jovita","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-martii"],
+		"basis":["ad-xii-kalendas-martii"],
 		"tags":["simeon","simplex","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-martii"],
+		"basis":["ad-viii-kalendas-martii"],
 		"tags":[
 			["cathedra-petri-antiochiae","duplex-majus","confessor-pontifex","confessor","papa","scriptura-propria"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-martii"],
+		"basis":["ad-vii-kalendas-martii"],
 		"tags":["petrus-damianus","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-martii"],
+		"basis":["ad-vii-kalendas-martii"],
 		"tags":["vigilia-mathiae","simplex","vigilia","vigilia-apostoli"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-martii"],
+		"basis":["ad-vi-kalendas-martii"],
 		"tags":["mathias","duplex-ii-classis","apostolus","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-martii"],
+		"basis":["ad-iv-nonas-martii"],
 		"tags":[
 			["casimirus","semiduplex","confessor"],
 			["lucius","simplex","commemoratio","papa","episcopus-martyr"]
 		]
 	},
 	{
-		"occurrence":["nonae-martii"],
+		"basis":["nonae-martii"],
 		"tags":[
 			["thomas-aquino","duplex-minus","confessor","doctor"],
 			["perpetua-felicitas","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-viii-idus-martii"],
+		"basis":["ad-viii-idus-martii"],
 		"tags":["joannes-deo","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-vii-idus-martii"],
+		"basis":["ad-vii-idus-martii"],
 		"tags":["francisca-romana","duplex-minus","vidua"]
 	},
 	{
-		"occurrence":["ad-vi-idus-martii"],
+		"basis":["ad-vi-idus-martii"],
 		"tags":["quadraginta","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-iv-idus-martii"],
+		"basis":["ad-iv-idus-martii"],
 		"tags":["gregorius","duplex-minus","confessor-pontifex","papa","doctor"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-aprilis"],
+		"basis":["ad-xvi-kalendas-aprilis"],
 		"tags":["patritius","duplex-minus","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-aprilis"],
+		"basis":["ad-xv-kalendas-aprilis"],
 		"tags":["cyrillus-hierosolymitani","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-aprilis"],
+		"basis":["ad-xiv-kalendas-aprilis"],
 		"tags":["joseph-sponsus","duplex-i-classis"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-aprilis"],
+		"basis":["ad-xii-kalendas-aprilis"],
 		"tags":["benedictus-abbas","duplex-majus","abbas"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-aprilis"],
+		"basis":["ad-viii-kalendas-aprilis"],
 		"tags":["annuntiatio-bmv","duplex-ii-classis","maria"]
 	},
 	{
-		"occurrence":["feria-vi","hebdomada-passionis"],
+		"basis":["feria-vi","hebdomada-passionis"],
 		"tags":["septem-dolores-passione","duplex-majus","maria"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-aprilis"],
+		"basis":["ad-iv-nonas-aprilis"],
 		"tags":["franciscus-paula","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["pridie-nonas-aprilis"],
+		"basis":["pridie-nonas-aprilis"],
 		"tags":["isidorus","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["nonae-aprilis"],
+		"basis":["nonae-aprilis"],
 		"tags":["vincentius-ferrerius","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-iii-idus-aprilis"],
+		"basis":["ad-iii-idus-aprilis"],
 		"tags":["leo-i","duplex-minus","papa","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["idus-aprilis"],
+		"basis":["idus-aprilis"],
 		"tags":["hermenegildus","semiduplex","martyr"]
 	},
 	{
-		"occurrence":["ad-xviii-kalendas-maji"],
+		"basis":["ad-xviii-kalendas-maji"],
 		"tags":[
 			["justinus","duplex-minus","martyr"],
 			["tiburtius-valerianus-maximus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-maji"],
+		"basis":["ad-xv-kalendas-maji"],
 		"tags":["anicetus","simplex","papa","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-maji"],
+		"basis":["ad-xi-kalendas-maji"],
 		"tags":["anselmus","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-maji"],
+		"basis":["ad-x-kalendas-maji"],
 		"tags":["soter-cajus","semiduplex","episcopi-martyres","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-maji"],
+		"basis":["ad-ix-kalendas-maji"],
 		"tags":["georgius","semiduplex","martyr"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-maji"],
+		"basis":["ad-viii-kalendas-maji"],
 		"tags":["fidelis","duplex-minus","martyr"]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-maji"],
+		"basis":["ad-vii-kalendas-maji"],
 		"tags":["marcus","duplex-ii-classis","martyr","evangelista","apostolus"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-maji"],
+		"basis":["ad-vi-kalendas-maji"],
 		"tags":["cletus-marcellinus","semiduplex","episcopi-martyres","papae","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-maji"],
+		"basis":["ad-iv-kalendas-maji"],
 		"tags":[
 			["paulus-cruce","duplex-minus","confessor"],
 			["vitalis","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-maji"],
+		"basis":["ad-iii-kalendas-maji"],
 		"tags":["petrus-martyr","duplex-minus","martyr"]
 	},
 	{
-		"occurrence":["pridie-kalendas-maji"],
+		"basis":["pridie-kalendas-maji"],
 		"tags":["catharina-senensis","duplex-minus","virgo"]
 	},
 	{
-		"occurrence":["dominica","hebdomada-iii-paschae"],
+		"basis":["dominica","hebdomada-iii-paschae"],
 		"tags":["patrocinius-joseph","duplex-ii-classis"]
 	},
 	{
-		"occurrence":["kalendae-maji"],
+		"basis":["kalendae-maji"],
 		"tags":["philippus-jacobus","duplex-ii-classis","apostolus"]
 	},
 	{
-		"occurrence":["ad-vi-nonas-maji"],
+		"basis":["ad-vi-nonas-maji"],
 		"tags":["athanasius","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["ad-v-nonas-maji"],
+		"basis":["ad-v-nonas-maji"],
 		"tags":[
 			["inventio-crucis","duplex-ii-classis"],
 			["alexandrus-i-et-soc","simplex","commemoratio","papa","martyr","martyres","confessor-pontifex"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-nonas-maji"],
+		"basis":["ad-iv-nonas-maji"],
 		"tags":["monica","duplex-minus","vidua"]
 	},
 	{
-		"occurrence":["ad-iii-nonas-maji"],
+		"basis":["ad-iii-nonas-maji"],
 		"tags":["pius-v","duplex-minus","papa","confessor-pontifex"]
 	},
 	{
-		"occurrence":["pridie-nonas-maji"],
+		"basis":["pridie-nonas-maji"],
 		"tags":["joannes-portam-latinam","duplex-majus","apostolus"]
 	},
 	{
-		"occurrence":["nonae-maji"],
+		"basis":["nonae-maji"],
 		"tags":["stanislaus","duplex-minus","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-viii-idus-maji"],
+		"basis":["ad-viii-idus-maji"],
 		"tags":["apparitio-michaelis","duplex-majus"]
 	},
 	{
-		"occurrence":["ad-vii-idus-maji"],
+		"basis":["ad-vii-idus-maji"],
 		"tags":["gregorius-nazianzenus","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["ad-vi-idus-maji"],
+		"basis":["ad-vi-idus-maji"],
 		"tags":[
 			["antoninus","duplex-minus","confessor-pontifex"],
 			["gordianus-epimachus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-idus-maji"],
+		"basis":["ad-iv-idus-maji"],
 		"tags":["nereus-achilleus-domitilla-pancratius","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["pridie-idus-maji"],
+		"basis":["pridie-idus-maji"],
 		"tags":["bonifacius","simplex","martyr"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-junii"],
+		"basis":["ad-xvii-kalendas-junii"],
 		"tags":["ubaldus","semiduplex","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-junii"],
+		"basis":["ad-xvi-kalendas-junii"],
 		"tags":["paschalis-baylon","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-junii"],
+		"basis":["ad-xv-kalendas-junii"],
 		"tags":["venantius","duplex-minus","martyr"]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-junii"],
+		"basis":["ad-xiv-kalendas-junii"],
 		"tags":[
 			["petrus-coelestinus","duplex-minus","confessor-pontifex","papa"],
 			["pudentiana","simplex","commemoratio","virgo"]
 		]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-junii"],
+		"basis":["ad-xiii-kalendas-junii"],
 		"tags":["bernardinus-senensis","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-junii"],
+		"basis":["ad-viii-kalendas-junii"],
 		"tags":[
 			["gregorius-vii","duplex-minus","confessor-pontifex","papa"],
 			["urbanus-i","simplex","commemoratio","episcopus-martyr","papa"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-junii"],
+		"basis":["ad-vii-kalendas-junii"],
 		"tags":[
 			["philippus-nerius","duplex-minus","confessor"],
 			["eleutherius","simplex","commemoratio","episcopus-martyr","papa"]
 		]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-junii"],
+		"basis":["ad-vi-kalendas-junii"],
 		"tags":[
 			["maria-magdalena-pazzis","semiduplex","virgo"],
 			["joannes-i","simplex","commemoratio","episcopus-martyr","papa"]
 		]
 	},
 	{
-		"occurrence":["ad-v-kalendas-junii"],
+		"basis":["ad-v-kalendas-junii"],
 		"tags":["augustinus-episcopus","duplex-minus","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-junii"],
+		"basis":["ad-iii-kalendas-junii"],
 		"tags":["felix-i","simplex","episcopus-martyr","papa"]
 	},
 	{
-		"occurrence":["pridie-kalendas-junii"],
+		"basis":["pridie-kalendas-junii"],
 		"tags":[
 			["angela-mericiae","duplex-minus","virgo"],
 			["petronilla","simplex","commemoratio","virgo"]
 		]
 	},
 	{
-		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
+		"basis":["feria-vi","hebdomada-ii-pentecostes"],
 		"tags":["cor-jesus","duplex-majus"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-junii"],
+		"basis":["ad-iv-nonas-junii"],
 		"tags":["marcellinus-petrus-erasmus","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["pridie-nonas-junii"],
+		"basis":["pridie-nonas-junii"],
 		"tags":["franciscus-caracciolo","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["nonae-junii"],
+		"basis":["nonae-junii"],
 		"tags":["bonifacius-episcopus","duplex-minus","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-viii-idus-junii"],
+		"basis":["ad-viii-idus-junii"],
 		"tags":["norbertus","duplex-minus","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-v-idus-junii"],
+		"basis":["ad-v-idus-junii"],
 		"tags":["primus-felicianus","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-iv-idus-junii"],
+		"basis":["ad-iv-idus-junii"],
 		"tags":["margarita-scotiae","semiduplex","vidua"]
 	},
 	{
-		"occurrence":["ad-iii-idus-junii"],
+		"basis":["ad-iii-idus-junii"],
 		"tags":["barnabas","duplex-majus","apostolus","martyr","lectiones-i-nocturnae-propriae"]
 	},
 	{
-		"occurrence":["pridie-idus-junii"],
+		"basis":["pridie-idus-junii"],
 		"tags":[
 			["joannes-facundo","duplex-minus","confessor"],
 			["basilides-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["idus-junii"],
+		"basis":["idus-junii"],
 		"tags":["antonius-padua","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-xviii-kalendas-julii"],
+		"basis":["ad-xviii-kalendas-julii"],
 		"tags":["basilius-magnus","duplex-minus","confessor-pontifex","doctor","mtv"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-julii"],
+		"basis":["ad-xvii-kalendas-julii"],
 		"tags":["vitus-modestus-crescentia","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-julii"],
+		"basis":["ad-xiv-kalendas-julii"],
 		"tags":["marcus-marcellianus","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-julii"],
+		"basis":["ad-xiii-kalendas-julii"],
 		"tags":[
 			["juliana-falconeriis","duplex-minus","virgo"],
 			["gervasius-protasius","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-julii"],
+		"basis":["ad-xii-kalendas-julii"],
 		"tags":["silverius","simplex","papa","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-julii"],
+		"basis":["ad-xi-kalendas-julii"],
 		"tags":["aloisius-gonzagae","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-julii"],
+		"basis":["ad-x-kalendas-julii"],
 		"tags":["paulinus","simplex","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-julii"],
+		"basis":["ad-ix-kalendas-julii"],
 		"tags":["vigilia-nativitatis-joannis-baptistae","simplex","vigilia"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-julii"],
+		"basis":["ad-viii-kalendas-julii"],
 		"tags":["nativitas-joannis-baptistae","duplex-i-classis","habens-octavam"]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-julii"],
+		"basis":["ad-vii-kalendas-julii"],
 		"tags":["gulielmus","duplex-minus","abbas"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-julii"],
+		"basis":["ad-vi-kalendas-julii"],
 		"tags":["joannes-paulus","duplex-minus","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-julii"],
+		"basis":["ad-iv-kalendas-julii"],
 		"tags":["leo-ii","semiduplex","confessor-pontifex","papa"]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-julii"],
+		"basis":["ad-iv-kalendas-julii"],
 		"tags":["vigilia-petri-pauli","simplex","vigilia","vigilia-apostoli"]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-julii"],
+		"basis":["ad-iii-kalendas-julii"],
 		"tags":["petrus-paulus","duplex-i-classis","apostolus","habens-octavam","martyr","martyres"]
 	},
 	{
-		"occurrence":["pridie-kalendas-julii"],
+		"basis":["pridie-kalendas-julii"],
 		"tags":[
 			["commemoratio-pauli","duplex-majus","martyr","apostolus"],
 			["commemoratio-petri","semiduplex","commemoratio","martyr","apostolus"]
 		]
 	},
 	{
-		"occurrence":["hebdomada-i-julii","dominica"],
+		"basis":["hebdomada-i-julii","dominica"],
 		"tags":["pretiosissimus-sanguis","duplex-ii-classis"]
 	},
 	{
-		"occurrence":["ad-vi-nonas-julii"],
+		"basis":["ad-vi-nonas-julii"],
 		"tags":[
 			["visitatio","duplex-ii-classis","maria"],
 			["processus-martinianus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-nonas-julii"],
+		"basis":["ad-iii-nonas-julii"],
 		"tags":["cyrillus-methodius","duplex-minus","confessor-pontifex","episcopi-confessores"]
 	},
 	{
-		"occurrence":["ad-viii-idus-julii"],
+		"basis":["ad-viii-idus-julii"],
 		"tags":["elisabeth-portugalliae","semiduplex","vidua"]
 	},
 	{
-		"occurrence":["ad-vi-idus-julii"],
+		"basis":["ad-vi-idus-julii"],
 		"tags":["septem-fratres","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-v-idus-julii"],
+		"basis":["ad-v-idus-julii"],
 		"tags":["pius-i","simplex","martyr","papa"]
 	},
 	{
-		"occurrence":["ad-iv-idus-julii"],
+		"basis":["ad-iv-idus-julii"],
 		"tags":[
 			["joannes-gualbertus","duplex-minus","abbas"],
 			["nabor-felix","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-idus-julii"],
+		"basis":["ad-iii-idus-julii"],
 		"tags":["anacletus","semiduplex","papa","martyr"]
 	},
 	{
-		"occurrence":["pridie-idus-julii"],
+		"basis":["pridie-idus-julii"],
 		"tags":["bonaventura","duplex-minus","confessor-pontifex","doctor"]
 	},
 	{
-		"occurrence":["idus-julii"],
+		"basis":["idus-julii"],
 		"tags":["henricus","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-augusti"],
+		"basis":["ad-xvii-kalendas-augusti"],
 		"tags":["bmv-carmelo","duplex-majus","maria"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-augusti"],
+		"basis":["ad-xvi-kalendas-augusti"],
 		"tags":["alexius","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-augusti"],
+		"basis":["ad-xv-kalendas-augusti"],
 		"tags":[
 			["camillus-lellis","duplex-minus","confessor"],
 			["symphorosa-filii","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-augusti"],
+		"basis":["ad-xiv-kalendas-augusti"],
 		"tags":["vincentius-paulo","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-augusti"],
+		"basis":["ad-xiii-kalendas-augusti"],
 		"tags":[
 			["hieronymus-aemilianus","duplex-minus","confessor"],
 			["margarita","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-augusti"],
+		"basis":["ad-xii-kalendas-augusti"],
 		"tags":["praxedes","simplex","virgo"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-augusti"],
+		"basis":["ad-xi-kalendas-augusti"],
 		"tags":["maria-magdalena-poenitens","duplex-minus","vidua"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-augusti"],
+		"basis":["ad-x-kalendas-augusti"],
 		"tags":[
 			["apollinaris","duplex-minus","episcopus-martyr"],
 			["liborius","simplex","commemoratio","confessor-pontifex"]
 		]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-augusti"],
+		"basis":["ad-ix-kalendas-augusti"],
 		"tags":[
 			["vigilia-jacobi","simplex","vigilia","vigilia-apostoli"],
 			["christina","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-augusti"],
+		"basis":["ad-viii-kalendas-augusti"],
 		"tags":[
 			["jacobus","duplex-ii-classis","apostolus","martyr"],
 			["christophorus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-augusti"],
+		"basis":["ad-vii-kalendas-augusti"],
 		"tags":["anna","duplex-ii-classis","vidua"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-augusti"],
+		"basis":["ad-vi-kalendas-augusti"],
 		"tags":["pantaleon","simplex","martyr"]
 	},
 	{
-		"occurrence":["ad-v-kalendas-augusti"],
+		"basis":["ad-v-kalendas-augusti"],
 		"tags":["nazarius-et-soc","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-augusti"],
+		"basis":["ad-iv-kalendas-augusti"],
 		"tags":[
 			["martha","semiduplex","virgo"],
 			["felix-ii-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-augusti"],
+		"basis":["ad-iii-kalendas-augusti"],
 		"tags":["abdon-sennen","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["pridie-kalendas-augusti"],
+		"basis":["pridie-kalendas-augusti"],
 		"tags":["ignatius-lojola","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["kalendae-augusti"],
+		"basis":["kalendae-augusti"],
 		"tags":[
 			["petrus-ad-vincula","duplex-majus","apostolus"],
 			["machabaei","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-nonas-augusti"],
+		"basis":["ad-iv-nonas-augusti"],
 		"tags":[
 			["alphonsus-liguorio","duplex-minus","doctor","confessor-pontifex"],
 			["stephanus-i","simplex","commemoratio","papa","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-nonas-augusti"],
+		"basis":["ad-iii-nonas-augusti"],
 		"tags":["inventio-stephani","semiduplex","martyr"]
 	},
 	{
-		"occurrence":["pridie-nonas-augusti"],
+		"basis":["pridie-nonas-augusti"],
 		"tags":["dominicus","duplex-majus","confessor"]
 	},
 	{
-		"occurrence":["nonae-augusti"],
+		"basis":["nonae-augusti"],
 		"tags":["maria-ad-nives","duplex-majus","maria"]
 	},
 	{
-		"occurrence":["ad-viii-idus-augusti"],
+		"basis":["ad-viii-idus-augusti"],
 		"tags":[
 			["transfiguratio","duplex-majus"],
 			["xystus-ii-felicissimus-agapitus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-idus-augusti"],
+		"basis":["ad-vii-idus-augusti"],
 		"tags":[
 			["cajetanus","duplex-minus","confessor"],
 			["donatus","simplex","commemoratio","episcopus-martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-vi-idus-augusti"],
+		"basis":["ad-vi-idus-augusti"],
 		"tags":["cyriacus-largus-smaragdus","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-v-idus-augusti"],
+		"basis":["ad-v-idus-augusti"],
 		"tags":[
 			["vigilia-laurentii","simplex","vigilia"],
 			["romanus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-idus-augusti"],
+		"basis":["ad-iv-idus-augusti"],
 		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam"]
 	},
 	{
-		"occurrence":["ad-iii-idus-augusti"],
+		"basis":["ad-iii-idus-augusti"],
 		"tags":["tibertius-susanna","simplex","commemoratio","martyr","martyres"]
 	},
 	{
-		"occurrence":["pridie-idus-augusti"],
+		"basis":["pridie-idus-augusti"],
 		"tags":["clara","duplex-minus","virgo"]
 	},
 	{
-		"occurrence":["idus-augusti"],
+		"basis":["idus-augusti"],
 		"tags":["hippolytus-cassianus","simplex","commemoratio","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-xix-kalendas-septembris"],
+		"basis":["ad-xix-kalendas-septembris"],
 		"tags":[
 			["eusebius","simplex","commemoratio","confessor"],
 			["vigilia-assumptionis","simplex","commemoratio","vigilia"]
 		]
 	},
 	{
-		"occurrence":["ad-xviii-kalendas-septembris"],
+		"basis":["ad-xviii-kalendas-septembris"],
 		"tags":["assumptio-bmv","duplex-i-classis","maria","habens-octavam"]
 	},
 	{
-		"occurrence":["assumptio-bmv","dominica-infra-octavam"],
+		"basis":["assumptio-bmv","dominica-infra-octavam"],
 		"tags":["joachim","duplex-ii-classis","confessor","mtv"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-septembris"],
+		"basis":["ad-xvii-kalendas-septembris"],
 		"tags":["hyacinthus","duplex-minus","confessor","mtv"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-septembris"],
+		"basis":["ad-xv-kalendas-septembris"],
 		"tags":["agapitus","commemoratio","martyr"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-septembris"],
+		"basis":["ad-xiii-kalendas-septembris"],
 		"tags":["bernardus","duplex-minus","abbas","doctor"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-septembris"],
+		"basis":["ad-xii-kalendas-septembris"],
 		"tags":["joanna-francisca","duplex-minus","vidua"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-septembris"],
+		"basis":["ad-xi-kalendas-septembris"],
 		"tags":["timotheus-hippolytus-symphorianus","simplex","commemoratio","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-septembris"],
+		"basis":["ad-x-kalendas-septembris"],
 		"tags":["philippus-benitius","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-septembris"],
+		"basis":["ad-x-kalendas-septembris"],
 		"tags":["vigilia-bartholomaei","simplex","vigilia","vigilia-apostoli"]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-septembris"],
+		"basis":["ad-ix-kalendas-septembris"],
 		"tags":["bartholomaeus","duplex-ii-classis","apostolus"]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-septembris"],
+		"basis":["ad-viii-kalendas-septembris"],
 		"tags":["ludovicus","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-septembris"],
+		"basis":["ad-vii-kalendas-septembris"],
 		"tags":["zephyrinus","simplex","papa","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-septembris"],
+		"basis":["ad-vi-kalendas-septembris"],
 		"tags":["josephus-calasanctius","duplex-minus","confessor","mtv"]
 	},
 	{
-		"occurrence":["ad-v-kalendas-septembris"],
+		"basis":["ad-v-kalendas-septembris"],
 		"tags":[
 			["augustinus","duplex-minus","confessor-pontifex","doctor","scriptura-propria"],
 			["hermes","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-septembris"],
+		"basis":["ad-iv-kalendas-septembris"],
 		"tags":[
 			["decollatio-joannis-baptistae","duplex-majus","martyr","scriptura-propria"],
 			["sabina","simplex","commemoratio","martyr","vidua"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-septembris"],
+		"basis":["ad-iii-kalendas-septembris"],
 		"tags":[
 			["rosa","duplex-minus","virgo"],
 			["felix-adauctus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["pridie-kalendas-septembris"],
+		"basis":["pridie-kalendas-septembris"],
 		"tags":["raymundus-nonnatus","duplex-minus","confessor","mtv"]
 	},
 	{
-		"occurrence":["kalendae-septembris"],
+		"basis":["kalendae-septembris"],
 		"tags":[
 			["aegidius","simplex","abbas"],
 			["duodecim-fratres","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-nonas-septembris"],
+		"basis":["ad-iv-nonas-septembris"],
 		"tags":["stephanus-hungariae","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["nonae-septembris"],
+		"basis":["nonae-septembris"],
 		"tags":["laurentius-justinianus","semiduplex","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-vi-idus-septembris"],
+		"basis":["ad-vi-idus-septembris"],
 		"tags":[
 			["nativitas-bmv","duplex-ii-classis","maria","habens-octavam","scriptura-propria"],
 			["adrianus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["nativitas-bmv","dominica-infra-octavam"],
+		"basis":["nativitas-bmv","dominica-infra-octavam"],
 		"tags":["nomen-bmv","duplex-majus","maria","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-v-idus-septembris"],
+		"basis":["ad-v-idus-septembris"],
 		"tags":["gorgonius","simplex","commemoratio","martyr"]
 	},
 	{
-		"occurrence":["ad-iv-idus-septembris"],
+		"basis":["ad-iv-idus-septembris"],
 		"tags":[
 			["nicolaus-tolentino","duplex-minus","confessor"],
 			["protus-hyacinthus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-xviii-kalendas-octobris"],
+		"basis":["ad-xviii-kalendas-octobris"],
 		"tags":["exaltatio-crucis","duplex-majus","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-octobris"],
+		"basis":["ad-xvii-kalendas-octobris"],
 		"tags":[
 			["nativitas-bmv","dies-octava","duplex-minus","maria","scriptura-propria"],
 			["nicomedes","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["dominica","hebdomada-iii-septembris"],
+		"basis":["dominica","hebdomada-iii-septembris"],
 		"tags":["septem-dolores-septembris","duplex-majus","maria","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-octobris"],
+		"basis":["ad-xvi-kalendas-octobris"],
 		"tags":[
 			["cornelius-cyprianus","semiduplex","martyres","episcopi-martyres"],
 			["euphemia-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-octobris"],
+		"basis":["ad-xv-kalendas-octobris"],
 		"tags":["impressio-stigmatum","duplex-minus","confessor","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-octobris"],
+		"basis":["ad-xiv-kalendas-octobris"],
 		"tags":["josephus-cupertino","duplex-minus","confessor","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-octobris"],
+		"basis":["ad-xiii-kalendas-octobris"],
 		"tags":["januarius-et-soc","duplex-minus","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-octobris"],
+		"basis":["ad-xii-kalendas-octobris"],
 		"tags":["eustachius-et-soc","duplex-minus","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-octobris"],
+		"basis":["ad-xii-kalendas-octobris"],
 		"tags":["vigilia-matthaei","simplex","vigilia","vigilia-apostoli"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-octobris"],
+		"basis":["ad-xi-kalendas-octobris"],
 		"tags":["matthaeus","duplex-ii-classis","apostolus","evangelista","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-octobris"],
+		"basis":["ad-x-kalendas-octobris"],
 		"tags":[
 			["thomas-villanova","duplex-minus","confessor-pontifex"],
 			["mauritius-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-octobris"],
+		"basis":["ad-ix-kalendas-octobris"],
 		"tags":[
 			["linus","semiduplex","papa","martyr","episcopus-martyr"],
 			["thecla","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-octobris"],
+		"basis":["ad-viii-kalendas-octobris"],
 		"tags":["bmv-mercede","duplex-majus","maria"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-octobris"],
+		"basis":["ad-vi-kalendas-octobris"],
 		"tags":["cyprianus-justina","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-v-kalendas-octobris"],
+		"basis":["ad-v-kalendas-octobris"],
 		"tags":["cosmas-damianus","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-iv-kalendas-octobris"],
+		"basis":["ad-iv-kalendas-octobris"],
 		"tags":["wenceslaus","semiduplex","martyr"]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-octobris"],
+		"basis":["ad-iii-kalendas-octobris"],
 		"tags":["dedicatio-michaelis","duplex-ii-classis","scriptura-propria"]
 	},
 	{
-		"occurrence":["pridie-kalendas-octobris"],
+		"basis":["pridie-kalendas-octobris"],
 		"tags":["hieronymus","duplex-minus","confessor","doctor","scriptura-propria"]
 	},
 	{
-		"occurrence":["dominica","hebdomada-i-octobris"],
+		"basis":["dominica","hebdomada-i-octobris"],
 		"tags":["rosarium-bmv","duplex-ii-classis","maria","scriptura-propria"]
 	},
 	{
-		"occurrence":["kalendae-octobris"],
+		"basis":["kalendae-octobris"],
 		"tags":["remigius","semiduplex","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-vi-nonas-octobris"],
+		"basis":["ad-vi-nonas-octobris"],
 		"tags":["angeli-custodes","duplex-majus","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-octobris"],
+		"basis":["ad-iv-nonas-octobris"],
 		"tags":["franciscus","duplex-majus","confessor","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iii-nonas-octobris"],
+		"basis":["ad-iii-nonas-octobris"],
 		"tags":["placidus-et-soc","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["pridie-nonas-octobris"],
+		"basis":["pridie-nonas-octobris"],
 		"tags":["bruno","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["nonae-octobris"],
+		"basis":["nonae-octobris"],
 		"tags":[
 			["marcus-ii","simplex","papa","confessor"],
 			["sergius-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-viii-idus-octobris"],
+		"basis":["ad-viii-idus-octobris"],
 		"tags":["birgitta","duplex-minus","vidua"]
 	},
 	{
-		"occurrence":["ad-vii-idus-octobris"],
+		"basis":["ad-vii-idus-octobris"],
 		"tags":["dionysius-rusticus-eleutherius","semiduplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-vi-idus-octobris"],
+		"basis":["ad-vi-idus-octobris"],
 		"tags":["franciscus-borgiae","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["ad-iii-idus-octobris"],
+		"basis":["ad-iii-idus-octobris"],
 		"tags":["eduardus","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["pridie-idus-octobris"],
+		"basis":["pridie-idus-octobris"],
 		"tags":["callistus-i","duplex-minus","papa","martyr"]
 	},
 	{
-		"occurrence":["idus-octobris"],
+		"basis":["idus-octobris"],
 		"tags":["teresia","duplex-minus","virgo"]
 	},
 	{
-		"occurrence":["ad-xvi-kalendas-novembris"],
+		"basis":["ad-xvi-kalendas-novembris"],
 		"tags":["hedwigis","semiduplex","vidua"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-novembris"],
+		"basis":["ad-xv-kalendas-novembris"],
 		"tags":["lucas","duplex-ii-classis","apostolus","evangelista","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-novembris"],
+		"basis":["ad-xiv-kalendas-novembris"],
 		"tags":["petrus-alcantara","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-novembris"],
+		"basis":["ad-xiii-kalendas-novembris"],
 		"tags":["joannes-cantius","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-novembris"],
+		"basis":["ad-xii-kalendas-novembris"],
 		"tags":[
 			["hilarion","simplex","abbas"],
 			["ursula-et-soc","simplex","commemoratio","virgo","virgines","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-novembris"],
+		"basis":["ad-viii-kalendas-novembris"],
 		"tags":["chrysanthus-et-daria","simplex","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-novembris"],
+		"basis":["ad-vii-kalendas-novembris"],
 		"tags":["evaristus","simplex","papa","martyr"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-novembris"],
+		"basis":["ad-vi-kalendas-novembris"],
 		"tags":["vigilia-simonis-et-judae","simplex","vigilia","vigilia-apostoli","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-v-kalendas-novembris"],
+		"basis":["ad-v-kalendas-novembris"],
 		"tags":["simon-et-judas","duplex-ii-classis","apostolus","scriptura-propria"]
 	},
 	{
-		"occurrence":["pridie-kalendas-novembris"],
+		"basis":["pridie-kalendas-novembris"],
 		"tags":["vigilia-omnium-sanctorum","simplex","vigilia","scriptura-propria"]
 	},
 	{
-		"occurrence":["kalendae-novembris"],
+		"basis":["kalendae-novembris"],
 		"tags":["omnes-sancti","duplex-i-classis","habens-octavam","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-novembris"],
+		"basis":["ad-iv-nonas-novembris"],
 		"tags":["fideles-defuncti","officium-defunctorum","duplex-minus"]
 	},
 	{
-		"occurrence":["pridie-nonas-novembris"],
+		"basis":["pridie-nonas-novembris"],
 		"tags":[
 			["carolus","duplex-minus","confessor-pontifex"],
 			["vitalis-agricola","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-vi-idus-novembris"],
+		"basis":["ad-vi-idus-novembris"],
 		"tags":["quatuor-coronati","simplex","commemoratio","martyr","martyres"]
 	},
 	{
-		"occurrence":["ad-v-idus-novembris"],
+		"basis":["ad-v-idus-novembris"],
 		"tags":[
 			["dedicatio-salvatoris","duplex-minus","dedicatio","scriptura-propria"],
 			["theodorus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-iv-idus-novembris"],
+		"basis":["ad-iv-idus-novembris"],
 		"tags":[
 			["andreas-avellini","duplex-minus","confessor"],
 			["tryphon-et-soc","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
-		"occurrence":["ad-iii-idus-novembris"],
+		"basis":["ad-iii-idus-novembris"],
 		"tags":[
 			["martinus","duplex-minus","confessor-pontifex","scriptura-propria"],
 			["mennas","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["pridie-idus-novembris"],
+		"basis":["pridie-idus-novembris"],
 		"tags":["martinus-i","semiduplex","papa","episcopus-martyr"]
 	},
 	{
-		"occurrence":["idus-novembris"],
+		"basis":["idus-novembris"],
 		"tags":["didacus","semiduplex","confessor"]
 	},
 	{
-		"occurrence":["ad-xviii-kalendas-decembris"],
+		"basis":["ad-xviii-kalendas-decembris"],
 		"tags":["josaphat","duplex-minus","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-decembris"],
+		"basis":["ad-xvii-kalendas-decembris"],
 		"tags":["gertrudis","duplex-minus","virgo"]
 	},
 	{
-		"occurrence":["ad-xv-kalendas-decembris"],
+		"basis":["ad-xv-kalendas-decembris"],
 		"tags":["gregorius-thaumaturgus","semiduplex","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-xiv-kalendas-decembris"],
+		"basis":["ad-xiv-kalendas-decembris"],
 		"tags":["dedicatio-petri-pauli","duplex-minus","dedicatio","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-decembris"],
+		"basis":["ad-xiii-kalendas-decembris"],
 		"tags":[
 			["elisabeth","duplex-minus","vidua"],
 			["pontianus","simplex","commemoratio","papa","martyr","episcopus-martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-decembris"],
+		"basis":["ad-xii-kalendas-decembris"],
 		"tags":["felix-valois","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["ad-xi-kalendas-decembris"],
+		"basis":["ad-xi-kalendas-decembris"],
 		"tags":["praesentatio-bmv","duplex-majus","maria","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-x-kalendas-decembris"],
+		"basis":["ad-x-kalendas-decembris"],
 		"tags":["caecilia","duplex-minus","virgo","martyr","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-ix-kalendas-decembris"],
+		"basis":["ad-ix-kalendas-decembris"],
 		"tags":[
 			["clemens-i","duplex-minus","papa","episcopus-martyr","scriptura-propria"],
 			["felicitas","simplex","commemoratio","martyr","vidua"]
 		]
 	},
 	{
-		"occurrence":["ad-viii-kalendas-decembris"],
+		"basis":["ad-viii-kalendas-decembris"],
 		"tags":[
 			["joannes-cruce","duplex-minus","confessor","mtv"],
 			["chrysogonus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["ad-vii-kalendas-decembris"],
+		"basis":["ad-vii-kalendas-decembris"],
 		"tags":["catharina","duplex-minus","virgo","martyr"]
 	},
 	{
-		"occurrence":["ad-vi-kalendas-decembris"],
+		"basis":["ad-vi-kalendas-decembris"],
 		"tags":["petrus-alexandrinus","simplex","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-iii-kalendas-decembris"],
+		"basis":["ad-iii-kalendas-decembris"],
 		"tags":[
 			["vigilia-andreae","simplex","vigilia","vigilia-apostoli","scriptura-propria"],
 			["saturninus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
-		"occurrence":["pridie-kalendas-decembris"],
+		"basis":["pridie-kalendas-decembris"],
 		"tags":["andreas","duplex-ii-classis","apostolus","scriptura-propria"]
 	},
 	{
-		"occurrence":["ad-iv-nonas-decembris"],
+		"basis":["ad-iv-nonas-decembris"],
 		"tags":["bibiana","semiduplex","virgo","martyr"]
 	},
 	{
-		"occurrence":["ad-iii-nonas-decembris"],
+		"basis":["ad-iii-nonas-decembris"],
 		"tags":["franciscus-xaverius","duplex-minus","confessor"]
 	},
 	{
-		"occurrence":["pridie-nonas-decembris"],
+		"basis":["pridie-nonas-decembris"],
 		"tags":[
 			["petrus-chrysologus","duplex-minus","confessor-pontifex","doctor","mtv"],
 			["barbara","simplex","commemoratio","virgo","martyr"]
 		]
 	},
 	{
-		"occurrence":["nonae-decembris"],
+		"basis":["nonae-decembris"],
 		"tags":["sabbas","simplex","commemoratio","abbas"]
 	},
 	{
-		"occurrence":["ad-viii-idus-decembris"],
+		"basis":["ad-viii-idus-decembris"],
 		"tags":["nicolaus","duplex-minus","confessor-pontifex"]
 	},
 	{
-		"occurrence":["ad-vii-idus-decembris"],
+		"basis":["ad-vii-idus-decembris"],
 		"tags":["ambrosius","duplex-minus","confessor-pontifex","doctor","mtv"]
 	},
 	{
-		"occurrence":["ad-vii-idus-decembris"],
+		"basis":["ad-vii-idus-decembris"],
 		"tags":["vigilia-immaculatae-conceptionis-bmv","simplex","vigilia"]
 	},
 	{
-		"occurrence":["ad-vi-idus-decembris"],
+		"basis":["ad-vi-idus-decembris"],
 		"tags":["immaculata-conceptio-bmv","duplex-i-classis","maria","habens-octavam"]
 	},
 	{
-		"occurrence":["ad-iv-idus-decembris"],
+		"basis":["ad-iv-idus-decembris"],
 		"tags":["melchiades","simplex","commemoratio","papa","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-iii-idus-decembris"],
+		"basis":["ad-iii-idus-decembris"],
 		"tags":["damasus-i","semiduplex","papa","confessor-pontifex"]
 	},
 	{
-		"occurrence":["idus-decembris"],
+		"basis":["idus-decembris"],
 		"tags":["lucia","duplex-minus","virgo","martyr"]
 	},
 	{
-		"occurrence":["ad-xvii-kalendas-januarii"],
+		"basis":["ad-xvii-kalendas-januarii"],
 		"tags":["eusebius-martyr","semiduplex","episcopus-martyr"]
 	},
 	{
-		"occurrence":["ad-xiii-kalendas-januarii"],
+		"basis":["ad-xiii-kalendas-januarii"],
 		"tags":["vigilia-thomae","simplex","vigilia","vigilia-apostoli"]
 	},
 	{
-		"occurrence":["ad-xii-kalendas-januarii"],
+		"basis":["ad-xii-kalendas-januarii"],
 		"tags":["thomas","duplex-ii-classis","apostolus"]
 	}
 ]
