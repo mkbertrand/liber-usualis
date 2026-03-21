@@ -31,10 +31,16 @@
 	{
 		"tags":["deus-in-adjutorium"],
 		"datum":[
-			"Make haste, O God, to deliver us.",
+			"Make haste, O God, to deliver me.",
 			"Make haste to help me, O Lord.",
 			"Glory be to the Father, and to the Son, and to the Holy Ghost.",
 			"As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia."
+		],
+		"in-tempore-septuagesimae":[
+			"Make haste, O God, to deliver me.",
+			"Make haste to help me, O Lord.",
+			"Glory be to the Father, and to the Son, and to the Holy Ghost.",
+			"As it was in the beginning, is now, and ever shall be, world without end. Amen. Praise to Thee be given Lord, King of eternal glory."
 		]
 	},
 	{
@@ -63,6 +69,20 @@
 		]
 	},
 	{
+		"tags":[
+			["formula","in-tempore-passionis","temporale","responsorium","gloria"],
+			["formula","in-tempore-passionis","temporale","responsorium","gloria","simplex-responsum"],
+			["formula","triduum","responsorium","gloria"]
+		],
+		"datum":[
+			"R. ",""," * ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. ","",
+			"\nR. ",""
+		]
+	},
+	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
 			"R. ",""," * ",""," * ","",
@@ -84,10 +104,34 @@
 		]
 	},
 	{
-		"tags":["benedicamus-domino"],
+		"tags":["formula","in-tempore-passionis","temporale","responsorium-breve"],
 		"datum":[
-			"Bless we the Lord.",
-			"Thanks be to God."
+			"R. br. ",""," * ","",
+			"\n",""," ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nR. ",""," ",""
+		]
+	},
+	{
+		"tags":[
+			["pater-noster-clara-voce"],
+			["pater-noster-semisecreta"]
+		],
+		"datum":[
+			"Our Father.",
+			"Who art in heaven: hallowed be thy name: thy kingdom come: thy will be done, on earth as it is in heaven. Give us this day our daily bread: and forgive us our trespasses, as we forgive those who trespass against us:",
+			"V. And lead us not into templation.",
+			"R. But deliver us from evil."
+		]
+	},
+	{
+		"tags":["credo-semisecreta"],
+		"datum":[
+			"I believe in God.",
+			"The Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord ; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins,",
+			"V. The Resurrection of the body.",
+			"R. And the Life everlasting. Amen."
 		]
 	},
 	{
@@ -97,40 +141,40 @@
 	},
 	{
 		"tags":["domine-exaudi"],
-		"datum":["V. Hear my prayer, O Lord.","R. And let my cry come unto Thee."]
+		"datum":["V. Hear my prayer, O Lord.","R. And let my cry come unto Thee."],
+		"privata":""
 	},
 	{
 		"tags":["collecta-primaria"],
 		"datum":["","Let us pray.","",""]
 	},
 	{
-		"tags":["per-dominum"],
-		"datum":["Through our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","Amen."]
+		"tags":["terminatio","per-dominum"],
+		"datum":["Through our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","R. Amen."]
 	},
 	{
-		"tags":["per-eumdem-dominum"],
-		"datum":["Through the Same our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","Amen."]
+		"tags":["terminatio","per-eumdem-dominum"],
+		"datum":["Through the Same our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","R. Amen."]
 	},
 	{
-		"tags":["per-eumdem-christum"],
-		"datum":[
-			"Through the same Christ our Lord.",
-			"R. Amen."
-		]
+		"tags":["terminatio","per-dominum-ejusdem-spiritus"],
+		"datum":["Through our Lord Jesus Christ, Thy Son, Who liveth and reigneth with Thee, in the unity of the same Holy Ghost, one God, world without end.","R. Amen."]
 	},
 	{
-		"tags":["qui-vivis"],
-		"datum":[
-			"Who livest and reignest with God the Father, in the unity of the Holy Ghost, one God, world without end.",
-			"R. Amen."
-		]
+		"tags":["terminatio","qui-vivis"],
+		"datum":["Who livest and reignest with God the Father, in the unity of the Holy Ghost, one God, world without end.","R. Amen."]
 	},
 	{
-		"tags":["qui-tecum-vivit"],
-		"datum":[
-			"Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.",
-			"R. Amen."
-		]
+		"tags":["terminatio","qui-tecum-vivit"],
+		"datum":["Who liveth and reigneth with Thee, in the unity of the Holy Ghost, one God, world without end.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","per-christum"],
+		"datum":["Through Christ our Lord.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","per-eumdem-christum"],
+		"datum":["Through the same Christ our Lord.","R. Amen."]
 	},
 	{
 		"tags":[
@@ -145,19 +189,16 @@
 		]
 	},
 	{
-		"tags":["fidelium-animae"],
-		"datum":["May the souls of the faithfully departed through the mercy of God rest in peace.","Amen."]
+		"tags":["benedicamus-domino"],
+		"datum":["Bless we the Lord.","Thanks be to God."]
 	},
 	{
-		"tags":["formula","formula-lectionis"],
-		"datum":[
-			"Sir, be pleased to give the blessing.",
-			"",
-			"Amen.",
-			"",
-			"But Thou, O Lord, have mercy on us.",
-			"Thanks be to God."
-		]
+		"tags":["fidelium-animae"],
+		"datum":["May the souls of the faithfully departed through the mercy of God rest in peace.","R. Amen."]
+	},
+	{
+		"tags":["divinum-auxilium"],
+		"datum":["God's most mighty strength alway Be His people's staff and stay.","R. Amen."]
 	},
 	{
 		"tags":["adjutorium-nostrum"],
@@ -187,29 +228,29 @@
 		]
 	},
 	{
-		"tags":["pater-noster-semisecreta"],
+		"tags":["formula","formula-lectionis"],
 		"datum":[
-			"Our Father.",
-			"Who art in heaven: hallowed be thy name: thy kingdom come: thy will be done, on earth as it is in heaven. Give us this day our daily bread: and forgive us our trespasses, as we forgive those who trespass against us:",
-			"V. And lead us not into templation.",
-			"R. But deliver us from evil."
+			"Sir, be pleased to give the blessing.",
+			"",
+			"Amen.",
+			"",
+			"But Thou, O Lord, have mercy on us.",
+			"Thanks be to God."
 		]
 	},
 	{
-		"tags":["credo-semisecreta"],
+		"tags":["formula","formula-lectionis","privata"],
 		"datum":[
-			"I believe in God.",
-			"The Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord ; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins,",
-			"V. The Resurrection of the body.",
-			"R. And the Life everlasting. Amen."
+			"Lord, be pleased to give the blessing.",
+			"",
+			"Amen.",
+			"",
+			"But Thou, O Lord, have mercy on us.",
+			"Thanks be to God."
 		]
 	},
 	{
-		"tags":["divinum-auxilium"],
-		"datum":[
-			"God's most mighty strength alway Be His people's staff and stay.",
-			"R. Amen."
-		]
+		"tags":["formula","formula-lectionis","legitur-directe"],
+		"datum":""
 	}
 ]
-
