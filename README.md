@@ -6,6 +6,8 @@ A project dedicated to making the Mass, Hours, and Rites of various editions of 
 
 The Liber Usualis codebase is primarily data-driven, with very few hard-coded elements, opting instead to have a tag-lookup system for constructing Rites.
 
+[See this document for more details](./architecture.org)
+
 ## Usage
 
 ### Installation
