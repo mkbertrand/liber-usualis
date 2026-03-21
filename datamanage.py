@@ -15,9 +15,9 @@ def get_book(title):
 	return data_root.joinpath('data').joinpath(title)
 
 # Reserved tags
-functiontags = {'datum', 'src', 'tags', 'from-tags', 'choose', 'with'}
+functiontags = {'datum', 'src', 'tags'}
 
-tagselections = {'tags', 'from-tags', 'implies', 'choose', 'with', 'quaesitum'}
+tagselections = {'tags', 'implies', 'quaesitum'}
 
 def load_data(p: str, book):
 	data = json.loads(book.joinpath(p).read_text(encoding='utf-8'))
