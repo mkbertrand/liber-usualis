@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 # Creates display Kalendars
 
@@ -11,17 +11,18 @@ import json
 
 import kalendar.datamanage as datamanage
 import kalendar.kalendar as kalendar
-from kalendar.kalendar import SearchResult, Kalendar, todate, threenocturnes, ranks, octavevigiltags, feriae, load_data, noprimarium, process
+from kalendar.kalendar import SearchResult, Kalendar, threenocturnes, ranks, octavevigiltags, feriae, load_data, noprimarium, apply_tabella
 from kalendar.pascha import geteaster
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-adventcycle = load_data('de-adventu.json')
-epiphanycycle = load_data('epiphania.json')
-paschalcycle = load_data('de-paschali.json')
-sanctoral = load_data('kalendarium.json')
-nativitycycle = load_data('in-tempore-nativitatis.json')
+def kalendar(book) -> Kalendar:
 
-def kalendar() -> Kalendar:
+	adventcycle = load_data('de-adventu.json', book)
+	epiphanycycle = load_data('epiphania.json', book)
+	paschalcycle = load_data('de-paschali.json', book)
+	sanctoral = load_data('kalendarium.json', book)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book)
+
 	kal = Kalendar()
 
 	easter = date(2001, 4, 9)
@@ -79,7 +80,14 @@ def kalendar() -> Kalendar:
 
 	return kal
 
-def kalendar2() -> Kalendar:
+def kalendar2(book) -> Kalendar:
+
+	adventcycle = load_data('de-adventu.json', book)
+	epiphanycycle = load_data('epiphania.json', book)
+	paschalcycle = load_data('de-paschali.json', book)
+	sanctoral = load_data('kalendarium.json', book)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book)
+
 	kal = Kalendar()
 
 	i = date(2001, 1, 1)
@@ -147,7 +155,8 @@ def kalendar2() -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	process(kal)
+	tabella = load_data('tabella.json', book)
+	apply_tabella(kal, tabella)
 
 	ret = []
 	for (k, i) in kal.items():
@@ -205,8 +214,10 @@ if __name__ == "__main__":
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
 
+	import pathlib
+	book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
 	# Generate kalendar
-	ret = dict(sorted(kalendar().items()))
+	ret = dict(sorted(kalendar(book).items()))
 
 	# Convert datestrings to strings and sets into lists
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}

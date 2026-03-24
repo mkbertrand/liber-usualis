@@ -5,14 +5,16 @@ from datetime import date, timedelta
 import warnings
 import copy
 import re
+import os
 
+import pathlib
 import diff_match_patch
 
 import breviarium
 import datamanage
 
 year = 2001
-root = 'breviarium-1888'
+book = datamanage.get_book('breviarium-1888')
 changes = dict()
 
 
@@ -42,11 +44,15 @@ def flattensetlist(sets):
 
 @pytest.mark.parametrize('day', [date(year, 1, 1) + timedelta(days=i) for i in range(365)])
 def test_match(day) -> None:
+
 	warnings.filterwarnings('ignore')
 
+	if not os.path.isdir('testresults'):
+		os.makedirs('testresults')
+
 	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
-		old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json'))))
-		new = re.sub(r'\[.+?\]', '[]', str(striptags(breviarium.generate(root, day, j))))
+		old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json', pathlib.Path(__file__).parent))))
+		new = re.sub(r'\[.+?\]', '[]', str(striptags(breviarium.generate(book, day, j))))
 
 		diffs = dmp.diff_main(old, new)
 		dmp.diff_cleanupSemantic(diffs)

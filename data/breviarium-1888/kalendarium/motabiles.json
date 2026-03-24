@@ -53,50 +53,6 @@
 	},
 	{
 		"occurrence":[
-			["per-annum","feria"],
-			["in-tempore-septuagesimae","feria"]
-		],
-		"excluded":["in-tempore-passionis"],
-		"tags":["suffragium","de-cruce"]
-	},
-	{
-		"occurrence":["in-tempore-paschali"],
-		"tags":["suffragium","de-cruce-tempore-paschali"]
-	},
-	{
-		"occurrence":[
-			["per-annum"],
-			["in-tempore-septuagesimae"]
-		],
-		"excluded":["in-tempore-passionis"],
-		"tags":["suffragium","maria"]
-	},
-	{
-		"occurrence":[
-			["per-annum"],
-			["in-tempore-septuagesimae"]
-		],
-		"excluded":["in-tempore-passionis"],
-		"tags":["suffragium","joseph"]
-	},
-	{
-		"occurrence":[
-			["per-annum"],
-			["in-tempore-septuagesimae"]
-		],
-		"excluded":["in-tempore-passionis"],
-		"tags":["suffragium","apostoli"]
-	},
-	{
-		"occurrence":[
-			["per-annum"],
-			["in-tempore-septuagesimae"]
-		],
-		"excluded":["in-tempore-passionis"],
-		"tags":["suffragium","pro-pace"]
-	},
-	{
-		"occurrence":[
 			["sabbatum","feria","per-annum"],
 			["sabbatum","feria","in-tempore-paschali"],
 			["sabbatum","feria","hebdomada-septuagesima"],

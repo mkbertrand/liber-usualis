@@ -1,25 +1,23 @@
 #!/usr/bin/env python3
 
-# Copyright 2024-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2024-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 from collections import defaultdict
 from datetime import date, datetime, timedelta
 import copy
 import json
 import logging
-import pathlib
 import re
 from typing import NamedTuple, Optional, Self, Set
 import itertools
+import pathlib
 
 import kalendar.datamanage as datamanage
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-data_root = pathlib.Path(__file__).parent.joinpath('data')
-
-def load_data(p: str):
-	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+def load_data(p: str, book):
+	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -36,19 +34,13 @@ def load_data(p: str):
 
 	return recurse(data)
 
-epiphanycycle = load_data('epiphania.json')
-paschalcycle = load_data('de-paschali.json')
-adventcycle = load_data('de-adventu.json')
-nativitycycle = load_data('in-tempore-nativitatis.json')
-autumnalcycle = load_data('autumnalis.json')
-movables = load_data('motabiles.json')
-sanctoral = load_data('kalendarium.json')
-rules = datamanage.flatten(load_data('tabella.json'))
-
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
 octavevigiltags = {'habens-octavam','incipit-libri'}
 feriae = ['dominica','feria-ii','feria-iii','feria-iv','feria-v','feria-vi','sabbatum']
+roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
+roletags = set(roletagsordered)
+noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat','translatus-originalis'}
 
 class SearchResult(NamedTuple):
 	date: date
@@ -117,7 +109,7 @@ class Kalendar:
 				raise RuntimeError(f'match_unique({include!r}, {exclude!r}) got more than one match!')
 		return match
 
-	def tagsindate(self, date: date) -> set:
+	def tags_in_date(self, date: date) -> set:
 		ret: Set[str] = set()
 		for entry in self.kal.get(date, []):
 			ret |= entry
@@ -135,7 +127,7 @@ class Kalendar:
 			target = match_date
 		newdate = target
 		if obstacles is not None:
-			while not self.tagsindate(newdate).isdisjoint(obstacles):
+			while not self.tags_in_date(newdate).isdisjoint(obstacles):
 				newdate = newdate + timedelta(days=1)
 
 		# Skip transfer if it's to the same day
@@ -179,24 +171,16 @@ class Kalendar:
 			self.transfer_entry(match, obstacles=obstacles, mention=mention)
 
 
-def nearsunday(kalends: date):
+def nearest_sunday(kalends: date):
 	if kalends.isoweekday() < 4:
 		return nextsunday(kalends, weeks=-1)
 	else:
 		return nextsunday(kalends, weeks=0)
 
-def todate(text: str, year0: int) -> date:
-	m = re.match(r'(\d+)-(\d+)', text)
-	if m is None:
-		raise ValueError(f"Invalid date: {text}")
-	return date(year0, int(m.group(1)), int(m.group(2)))
-
-roletagsordered = ['primarium', 'commemoratio', 'omissum', 'tempus']
-roletags = set(roletagsordered)
-noprimarium = roletags | {'psalmi-graduales', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-parvum-bmv', 'officium-defunctorum', 'votiva', 'antiphona-bmv','scriptura','pro-antiphona-magnificat'}
-
 # N.B. This is a mutable function. It will change kal
-def process(kal):
+def apply_tabella(kal, tabella):
+
+	rules = datamanage.flatten(tabella)
 
 	class Job(NamedTuple):
 		days: tuple
@@ -297,7 +281,16 @@ def process(kal):
 	while len(queue) != 0:
 		resolvejob(queue.pop())
 
-def kalendar(year: int) -> Kalendar:
+def kalendar(book: pathlib.Path, year: int) -> Kalendar:
+
+	adventcycle = load_data('de-adventu.json', book)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book)
+	epiphanycycle = load_data('epiphania.json', book)
+	paschalcycle = load_data('de-paschali.json', book)
+	autumnalcycle = load_data('autumnalis.json', book)
+	movables = load_data('motabiles.json', book)
+	kalendarium = load_data('kalendarium.json', book)
+
 	kal = Kalendar()
 
 	easter = geteaster(year)
@@ -313,13 +306,13 @@ def kalendar(year: int) -> Kalendar:
 		i = i + timedelta(days=1)
 	for i in range(0, 13):
 		if i == 0:
-			kalends = nearsunday(date(year - 1, 12, 1))
+			kalends = nearest_sunday(date(year - 1, 12, 1))
 		else:
-			kalends = nearsunday(date(year, i, 1))
+			kalends = nearest_sunday(date(year, i, 1))
 		if i == 12:
-			nextkalends = nearsunday(date(year + 1, 1, 1))
+			nextkalends = nearest_sunday(date(year + 1, 1, 1))
 		else:
-			nextkalends = nearsunday(date(year, i + 1, 1))
+			nextkalends = nearest_sunday(date(year, i + 1, 1))
 		j = 0
 		while kalends + timedelta(weeks=j) != nextkalends:
 			bases[f'dominica-{numerals[j]}-{mensum[(i - 1) % 12]}'] = kalends + timedelta(weeks=j)
@@ -410,8 +403,8 @@ def kalendar(year: int) -> Kalendar:
 	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus','per-octavam-epiphaniae'})
 
 	octaveagenda = []
-	# Sanctorals
-	entries = copy.deepcopy(sanctoral)
+	# Kalendar (of Saints)
+	entries = copy.deepcopy(kalendarium)
 	for entry in entries:
 		matches = None
 		if type(entry['occurrence']) is list:
@@ -447,13 +440,13 @@ def kalendar(year: int) -> Kalendar:
 			kal.add_entry(match_date + timedelta(days=offset), entry['tags'])
 
 	# 23rd Sunday Pentecost, 5th Sunday Epiphany Saturday transfer
-	if 'hebdomada-xxiii-pentecostes' in kal.tagsindate(xxivpentecost):
+	if 'hebdomada-xxiii-pentecostes' in kal.tags_in_date(xxivpentecost):
 		xxiiipentecostentry = kal.match_unique({'hebdomada-xxiii-pentecostes', 'dominica'}).feast
 		xxiiipentecostentry |= {'translatum', 'feria'}
 		xxiiipentecostentry -= {'semiduplex'}
 		i = 1
 		while i < 7:
-			if kal.tagsindate(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
+			if kal.tags_in_date(xxivpentecost - timedelta(days=i)).isdisjoint(threenocturnes):
 				kal.add_entry(xxivpentecost - timedelta(days=i), xxiiipentecostentry)
 				break
 			else:
@@ -467,7 +460,7 @@ def kalendar(year: int) -> Kalendar:
 		septuagesima = easter - timedelta(weeks=9)
 		i = 1
 		while i < 7:
-			if kal.tagsindate(septuagesima - timedelta(days=i)).isdisjoint(threenocturnes):
+			if kal.tags_in_date(septuagesima - timedelta(days=i)).isdisjoint(threenocturnes):
 				kal.add_entry(septuagesima - timedelta(days=i), omittedepiphanyentry)
 				break
 			else:
@@ -481,7 +474,9 @@ def kalendar(year: int) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	process(kal)
+	tabella = load_data('tabella.json', book)
+	for i in tabella:
+		apply_tabella(kal, i)
 
 	return kal
 
@@ -526,8 +521,9 @@ if __name__ == "__main__":
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
 
+	book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
 	# Generate kalendar
-	ret = dict(sorted(kalendar(args.year).items()))
+	ret = dict(sorted(kalendar(book, args.year).items()))
 
 	# Convert datestrings to strings and sets into lists
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}

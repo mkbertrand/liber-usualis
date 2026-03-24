@@ -1,23 +1,21 @@
-# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import os.path
 import json
-import pathlib
 from datetime import date, datetime, timedelta
 import re
 from typing import NamedTuple
 import itertools
 import copy
+from pathlib import Path
 
 from kalendar import kalendar
 
 import kalendar.datamanage
 import kalendar.luna as luna
 
-data_root = pathlib.Path(__file__).parent
-
-def load_data(p: str):
-	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+def load_data_prioritizer(p: str, book):
+	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -34,11 +32,6 @@ def load_data(p: str):
 
 	return recurse(data)
 
-implicationtable = load_data('kalendar/data/sequentes.json')
-vesperalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-vesperalis.json'))
-diurnalrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-diurnalis.json'))
-martyrologyrules = kalendar.datamanage.flatten(load_data('kalendar/data/tabella-martyrologii.json'))
-
 class Job(NamedTuple):
 	rule: dict
 
@@ -48,7 +41,7 @@ def guaranteeset(item):
 	else:
 		return {item}
 
-def prioritize(day, rules):
+def apply_secondary_tabella(day, rules):
 	day = copy.deepcopy(day)
 	queue = [Job(rule) for rule in rules]
 	queue.reverse()
@@ -118,13 +111,19 @@ def prioritize(day, rules):
 
 	return day
 
-def getvespers(day):
+def get_vespers(book: Path, day):
+
 	assert type(day) is not datetime
-	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.getdate(day + timedelta(days=1))]
-	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.getdate(day)]
+
+	implicationtable = load_data_prioritizer('sequentes.json', book)
+	vesperalrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-vesperalis.json', book))
+
+	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(book, day + timedelta(days=1))]
+	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(book, day)]
+
 	# Final product
 	vesperal = iivespers + ivespers
-	tags = prioritize(vesperal, vesperalrules)
+	tags = apply_secondary_tabella(vesperal, vesperalrules)
 	for i in tags:
 		for j in implicationtable:
 			if j['tags'].issubset(i):
@@ -132,10 +131,16 @@ def getvespers(day):
 
 	return [frozenset(i) for i in tags]
 
-def getdiurnal(day):
+def get_diurnal(book: Path, day):
+
 	assert type(day) is not datetime
-	prioritized = prioritize(kalendar.datamanage.getdate(day), diurnalrules)
-	martyrology = prioritize(kalendar.datamanage.getdate(day + timedelta(days=1)), martyrologyrules)
+
+	implicationtable = load_data_prioritizer('sequentes.json', book)
+	diurnalrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-diurnalis.json', book))
+	martyrologyrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-martyrologii.json', book))
+
+	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(book, day), diurnalrules)
+	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(book, day + timedelta(days=1)), martyrologyrules)
 	lunarday = luna.lunardate(day + timedelta(days=1))
 	lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
 	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
@@ -174,10 +179,16 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 
-	# Generate kalendar
+	import pathlib
+	book = pathlib.Path(__file__).parent.joinpath('data/breviarium-1888')
+
+	tagsets = None
 	if args.time == 'vesperale':
-		print(getvespers(datetime.strptime(args.date, '%Y-%m-%d').date()))
+		tagsets = get_vespers(book, datetime.strptime(args.date, '%Y-%m-%d').date())
 	elif args.time == 'diurnale':
-		print(getdiurnal(datetime.strptime(args.date, '%Y-%m-%d').date()))
+		tagsets = get_diurnal(book, datetime.strptime(args.date, '%Y-%m-%d').date())
 	else:
 		print('Invalid option for -t')
+	if tagsets:
+		for tagset in tagsets:
+			print(tagset)

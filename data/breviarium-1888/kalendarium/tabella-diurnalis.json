@@ -1,5 +1,54 @@
 [
 	{
+		"include":["tempus"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","de-cruce"]
+	},
+	{
+		"include":["in-tempore-paschali","dominica"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","de-cruce-tempore-paschali"]
+	},
+	{
+		"include":["in-tempore-paschali","feria"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","de-cruce-tempore-paschali"]
+	},
+	{
+		"include":["tempus"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","maria"]
+	},
+	{
+		"include":["post-nativitatem"],
+		"recheck":false,
+		"response":[
+			{"include":["suffragium","maria"],"adde":"post-nativitatem","target":1}
+		]
+	},
+	{
+		"include":["tempus"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","joseph"]
+	},
+	{
+		"include":["tempus"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","apostoli"]
+	},
+	{
+		"include":["tempus"],
+		"recheck":false,
+		"response":"crea",
+		"adde":["suffragium","commemoratio","pro-pace"]
+	},
+	{
 		"include":["vigilia-immaculatae-conceptionis-bmv"],
 		"remove":"commemoratio",
 		"adde":"omissum"
@@ -205,8 +254,30 @@
 		"remove":"habens-commemorationem-matutini"
 	},
 	{
+		"include":["suffragium","commemoratio"],
+		"response":[
+			{"include":["duplex-i-classis"],"response":"dele","target":0},
+			{"include":["duplex-ii-classis"],"response":"dele","target":0},
+			{"include":["duplex-majus"],"response":"dele","target":0},
+			{"include":["duplex-minus"],"response":"dele","target":0},
+			{"include":["infra-octavam"],"response":"dele","target":0},
+			{"include":["vigilia-epiphaniae"],"response":"dele","target":0}
+		]
+	},
+	{
+		"include":["suffragium","commemoratio"],
+		"exclude":["de-cruce-tempore-paschali"],
+		"response":[
+			{"include":["in-tempore-adventus"],"response":"dele","target":0},
+			{"include":["in-tempore-passionis"],"response":"dele","target":0},
+			{"include":["in-tempore-paschali"],"response":"dele","target":0}
+		]
+	},
+	{
 		"include":["suffragium","de-cruce"],
 		"response":[
+			{"include":["semiduplex","primarium"],"response":"dele","target":0},
+			{"include":["simplex","primarium"],"response":"dele","target":0},
 			{"include":["vigilia","primarium"],"response":"dele","target":0},
 			{"include":["feria","in-tempore-adventus","primarium"],"response":"dele","target":0},
 			{"include":["feria","cinerum","primarium"],"response":"dele","target":0},

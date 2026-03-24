@@ -2,7 +2,7 @@
 	{
 		"tags":["aperi-domine"],
 		"datum":[
-			"Öffne, Herr, meinen Mund zum Preise deines heiligen Namens. Reinige auch mein Herz von allen eitlen, verkehrten und fremden Gedanken; erleuchte den Verstand, entzünde das Herz, damit ich würdig, aufmerksam und andächtig dieses Stundengebet verrichte, und Erhörung vor den Augen deiner göttlichen Majestät zu finden verdiene, durch Christus, unsern Herrn. Amen.",
+			"Öffne, Herr, meinen Mund zum Preise Deines heiligen Namens. Reinige auch mein Herz von allen eitlen, verkehrten und fremden Gedanken; erleuchte den Verstand, entzünde das Herz, damit ich würdig, aufmerksam und andächtig dieses Stundengebet verrichte, und Erhörung vor den Augen deiner göttlichen Majestät zu finden verdiene, durch Christus, unsern Herrn. Amen.",
 			"Herr, in Vereinigung mit jener gotteswürdigen Absicht, in der Du selbst auf Erden Gott Lob dargebracht hast, will ich dieses Stundengebet (diese Stundengebete) verrichten."
 		]
 	},
@@ -35,7 +35,13 @@
 			"Herr, eile mir zu helfen.",
 			"Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
 			"Wie es war im Anfang, so auch jetzt und allezeit und in Ewigkeit. Amen. Alleluia."
-		]
+		],
+        "in-tempore-septuagesimae":[
+            "Gott, auf meine Hilfe habe acht.",
+			"Herr, eile mir zu helfen.",
+			"Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"Wie es war im Anfang, so auch jetzt und allezeit und in Ewigkeit. Amen. Lob sei Dir, Herr, König der ewigen Herrlichkeit."
+        ]
 	},
 	{
 		"tags":["dg-capituli"],
@@ -63,6 +69,20 @@
 		]
 	},
 	{
+		"tags":[
+			["formula","in-tempore-passionis","temporale","responsorium","gloria"],
+			["formula","in-tempore-passionis","temporale","responsorium","gloria","simplex-responsum"],
+			["formula","triduum","responsorium","gloria"]
+		],
+		"datum":[
+			"R. ",""," * ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nV. ","",
+			"\nR. ",""
+		]
+	},
+	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
 			"R. ",""," * ",""," * ","",
@@ -82,12 +102,36 @@
 			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
 			"\nR. ",""," ",""
 		]
+	},
+	{
+		"tags":["formula","in-tempore-passionis","temporale","responsorium-breve"],
+		"datum":[
+			"R. br. ",""," * ","",
+			"\n",""," ","",
+			"\nV. ","",
+			"\nR. ","",
+			"\nR. ",""," ",""
+		]
     },
 	{
-		"tags":["benedicamus-domino"],
+		"tags":[
+			["pater-noster-clara-voce"],
+			["pater-noster-semisecreta"]
+		],
 		"datum":[
-			"Lasset uns preisen den Herrn.",
-			"Dank sei Gott."
+			"Vater unser.",
+			"Im Himmel, geheiliget werde Dein Name, Dein Reich komme, Dein Wille geschehe, wie im Himmel, so auf Erden! Unser tägliches Brot gib uns heute; und vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern;",
+			"V. Und führe uns nicht in Versuchung.",
+			"R. Sondern erlöse uns von dem Bösen."
+		]
+	},
+	{
+		"tags":["credo-semisecreta"],
+		"datum":[
+			"Ich glaube an Gott.",
+			"Den Vater, den Allmächtigen, den Schöpfer des Himmels und Erde, und an Jesus Christus, Seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in die Hölle, am dritte Tage auferstanden von den Toten, aufgefahren in den Himmel; Er sitzet zur Rechten Gottes, des allmächtigen Vaters, von dannen Er kommen wird, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Vergebung der Sünden,",
+			"V. Auferstehung des Fleisches.",
+			"R. Und das ewige Leben. Amen."
 		]
 	},
 	{
@@ -97,40 +141,41 @@
 	},
 	{
 		"tags":["domine-exaudi"],
-		"datum":["V. Herr, erhöre mein Gebet.","R. Und lass mein Rufen zu Dir kommen."]
+		"datum":["V. Herr, erhöre mein Gebet.","R. Und lass mein Rufen zu Dir kommen."],
+        "privata":""
 	},
 	{
 		"tags":["collecta-primaria"],
 		"datum":["","Lasset uns beten.","",""]
 	},
 	{
-		"tags":["per-dominum"],
-		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.", "Amen."]
+		"tags":["terminatio","per-dominum"],
+		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
 	},
 	{
-		"tags":["per-eumdem-dominum"],
-		"datum":["Durch Ihn, unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","Amen."]
+		"tags":["terminatio","per-eumdem-dominum"],
+		"datum":["Durch Ihn, unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
+    },
+	{
+		"tags":["terminatio","per-dominum-ejusdem-spiritus"],
+		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit eben dieses Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
 	},
 	{
-		"tags":["per-eumdem-christum"],
-		"datum":[
-			"Durch Ihn Christus unseren Herrn.",
-			"R. Amen."
-		]
+		"tags":["terminatio","qui-vivis"],
+		"datum":["Der Du lebst und herrschest mit Gott dem Vater in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
 	},
 	{
-		"tags":["qui-vivis"],
-		"datum":[
-			"Der Du lebst und herrschest mit Gott dem Vater in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",
-			"R. Amen."
-		]
+		"tags":["terminatio","qui-tecum-vivit"],
+		"datum":["Der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
 	},
 	{
-		"tags":["qui-tecum-vivit"],
-		"datum":[
-			"Der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",
-			"R. Amen."
-		]
+		"tags":["terminatio","per-christum"],
+		"datum":["Durch Christus unseren Herrn.","R. Amen."]
+	},
+	{
+
+		"tags":["terminatio","per-eumdem-christum"],
+		"datum":["Durch Ihn Christus unseren Herrn.","R. Amen."]
 	},
 	{
 		"tags":[
@@ -143,21 +188,18 @@
 			"Lasset uns beten.",
 			""
 		]
+    },
+	{
+		"tags":["benedicamus-domino"],
+		"datum":["Lasset uns preisen den Herrn.","Dank sei Gott."]
 	},
 	{
 		"tags":["fidelium-animae"],
 		"datum":["Die Seelen der verstorbenen Gläubigen mögen durch die Barmherzigkeit Gottes in Frieden ruhen.","Amen."]
 	},
 	{
-		"tags":["formula","formula-lectionis"],
-		"datum":[
-			"Erteile, Herr, den Segen.",
-			"",
-			"Amen.",
-			"",
-			"Du aber, Herr, erbarme dich unser.",
-			"Dank sei Gott."
-		]
+		"tags":["divinum-auxilium"],
+		"datum":["Die göttliche Hilfe bleibe allezeit mit uns.","R. Amen."]
 	},
 	{
 		"tags":["adjutorium-nostrum"],
@@ -187,28 +229,29 @@
 		]
 	},
 	{
-		"tags":["pater-noster-semisecreta"],
+		"tags":["formula","formula-lectionis"],
 		"datum":[
-			"Vater unser.",
-			"Im Himmel, geheiliget werde Dein Name, Dein Reich komme, Dein Wille geschehe, wie im Himmel, so auf Erden! Unser tägliches Brot gib uns heute; und vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern;",
-			"V. Und führe uns nicht in Versuchung.",
-			"R. Sondern erlöse uns von dem Bösen."
+			"Erteile, Herr, den Segen.",
+			"",
+			"Amen.",
+			"",
+			"Du aber, Herr, erbarme Dich unser.",
+			"Dank sei Gott."
 		]
 	},
 	{
-		"tags":["credo-semisecreta"],
+		"tags":["formula","formula-lectionis","privata"],
 		"datum":[
-			"Ich glaube an Gott.",
-			"Den Vater, den Allmächtigen, den Schöpfer des Himmels und Erde, und an Jesus Christus, Seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in die Hölle, am dritte Tage auferstanden von den Toten, aufgefahren in den Himmel; Er sitzet zur Rechten Gottes, des allmächtigen Vaters, von dannen Er kommen wird, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Vergebung der Sünden,",
-			"V. Auferstehung des Fleisches.",
-			"R. Und das ewige Leben. Amen."
+			"Erteile, Herr, den Segen.",
+			"",
+			"Amen.",
+			"",
+			"Du aber, Herr, erbarme Dich unser.",
+			"Dank sei Gott."
 		]
 	},
 	{
-		"tags":["divinum-auxilium"],
-		"datum":[
-			"Die göttliche Hilfe bleibe allezeit mit uns.",
-			"R. Amen."
-		]
+		"tags":["formula","formula-lectionis","legitur-directe"],
+		"datum":""
 	}
 ]

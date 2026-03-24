@@ -170,7 +170,6 @@ function stringrender(data, translation = false) {
 	data = data.replaceAll(/(?<!<)\//g, '<br>');
 
 	data = data.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
-
 	data = data.replace(/\n/g, '<br>')
 		.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
 		.replace(/N\./g, '<span class=\'red\'>N.</span>')
@@ -495,9 +494,11 @@ function render(data, chant) {
 					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
-					headers = data.datum.match(/\[.+?\]/g);
+					console.log(data.datum);
+					headers = data.datum.match(/\[.+?\]\n/g);
+					console.log(headers);
 					for (i of headers) {
-						newheader = i.slice(1, -1).replace(':', '. ') + '.';
+						newheader = i.slice(1, -2).replace(':', '. ') + '.';
 						numeral = newheader.match(/\s([IVXLC]+)[\s|\.]/);
 						if (numeral != null) {
 							numeral = numeral[1];
@@ -513,7 +514,7 @@ function render(data, chant) {
 							}
 							newheader = newheader.replace(numeral, number);
 						}
-						data.datum = data.datum.replace(i, '[' + newheader + ']');
+						data.datum = data.datum.replace(i, '[' + newheader + ']\n');
 					}
 					header = makeheadingannotation(data.datum.split('\n')[0].slice(1, -1));
 					data.datum = data.datum.substring(data.datum.indexOf('\n') + 1).replace(/^\d+\s/, '').split('\n');

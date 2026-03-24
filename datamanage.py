@@ -11,13 +11,16 @@ import kalendar.display as display
 
 data_root = pathlib.Path(__file__).parent
 
+def get_book(title):
+	return data_root.joinpath('data').joinpath(title)
+
 # Reserved tags
-functiontags = {'datum', 'src', 'tags', 'from-tags', 'choose', 'with'}
+functiontags = {'datum', 'src', 'tags'}
 
-tagselections = {'tags', 'from-tags', 'implies', 'choose', 'with', 'quaesitum'}
+tagselections = {'tags', 'implies', 'quaesitum'}
 
-def load_data(p: str):
-	data = json.loads(data_root.joinpath(p).read_text(encoding='utf-8'))
+def load_data(p: str, book):
+	data = json.loads(book.joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -53,13 +56,13 @@ def dump_data(j):
 	return json.dumps(recurse(j))
 
 @functools.lru_cache(maxsize=32)
-def getdiscrimina(root, query):
-	return load_data(f'data/{root}/discrimina/{query}.json')
+def getdiscrimina(book, query):
+	return load_data(f'discrimina/{query}.json', book)
 
 @functools.lru_cache(maxsize=64)
-def getbreviariumfile(query):
-	logging.debug(f'Loading {query}')
-	got = load_data(query)
+def getbreviariumfile(book, query):
+	logging.debug(f'Loading {query} from {book}')
+	got = load_data(query, book)
 	if len(got) == 0:
 		return []
 
@@ -98,45 +101,44 @@ def getchantfile(src):
 
 # Has the list of files in the tagged directory to prevent multiple discoveratory traversals from having to be done
 @functools.lru_cache(maxsize=16)
-def getwalk(root):
+def getwalk(book):
 	ret = []
-	for roo,dirs,files in os.walk(data_root.joinpath(f'data/{root}/tagged')):
+	for roo,dirs,files in os.walk(book.joinpath('tagged')):
 		for i in files:
 			if not i.endswith('.json'):
 				continue
 			else:
-				ret.append((i[:-5], data_root.joinpath(f'data/{root}/tagged').joinpath(roo).joinpath(i)))
+				ret.append((i[:-5], book.joinpath('tagged').joinpath(roo).joinpath(i)))
 	return ret
 
-def getpile(root, pile):
+def getpile(book, pilequery):
 	ret = []
-	for name, file in getwalk(root):
-		if name in pile:
-			ret.extend(getbreviariumfile(file))
+	for name, file in getwalk(book):
+		if name in pilequery:
+			ret.extend(getbreviariumfile(book, file))
 	return ret
 
-root = 'breviarium-1888'
-def getname(tagset, pile):
+def getname(book, tagset, pile):
 	import breviarium
-	resp = breviarium.process(root, {'nomen'}, tagset, [], pile)
+	resp = breviarium.process(book, {'nomen'}, tagset, [], pile)
 	name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
 	if type(name) is list:
 		name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
 	return name
 
 @functools.lru_cache(maxsize=1)
-def getdisplaykalendar():
-	ret = dict(sorted(display.kalendar().items()))
+def getdisplaykalendar(book):
+	ret = dict(sorted(display.kalendar(book).items()))
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
-	kalendar = load_data('kalendar/data/kalendarium.json')
-	kalendar.extend(load_data('kalendar/data/in-tempore-nativitatis.json'))
+	kalendar = load_data('kalendarium/kalendarium.json', book)
+	kalendar.extend(load_data('kalendarium/in-tempore-nativitatis.json', book))
 
-	kalendar = display.kalendar2()
+	kalendar = display.kalendar2(book)
 	for entry in kalendar:
 		if type(entry['tags']) is frozenset:
 			entry['tags'] = [entry['tags']]
-		entry['names'] = [getname(tagset, getpile(root, tagset | {'formulae'})) for tagset in entry['tags']]
+		entry['names'] = [getname(book, tagset, getpile(book, tagset | {'formulae'})) for tagset in entry['tags']]
 		if any(i in entry['occurrence'] for i in ['feria-ii', 'feria-iii', 'feria-iv', 'feria-v', 'feria-vi', 'sabbatum']):
 			entry['occurrence'] |= {'feria'}
-		entry['occurrence-name'] = getname(entry['occurrence'], getpile(root, entry['occurrence'] | {'formulae'}))
+		entry['occurrence-name'] = getname(book, entry['occurrence'], getpile(book, entry['occurrence'] | {'formulae'}))
 	return dump_data({'skeleton': ret, 'kalendar': kalendar})

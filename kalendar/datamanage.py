@@ -1,3 +1,5 @@
+# Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 import functools
 import copy
 from typing import NamedTuple
@@ -39,10 +41,10 @@ def flatten(table):
 	return rules
 
 @functools.lru_cache(maxsize=16)
-def getyear(year):
+def get_year(book, year):
 	import kalendar.kalendar as kalendar
-	return kalendar.kalendar(year)
+	return kalendar.kalendar(book, year)
 
-def getdate(day):
-	year = getyear(day.year)
+def get_date(book, day):
+	year = get_year(book, day.year)
 	return year[day]
