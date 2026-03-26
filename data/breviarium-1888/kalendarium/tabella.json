@@ -291,18 +291,6 @@
 			]
 		},
 		{
-			"include":["in-tempore-quadragesimae","dominica"],
-			"response":[
-				{"include":["duplex-i-classis"],"response":"transfer","target":1,"movement":1},
-				{"include":["duplex-ii-classis"],"response":"transfer","target":1,"movement":1},
-				{"include":["duplex-majus"],"response":"transfer","target":1,"movement":1},
-				{"include":["doctor"],"response":"transfer","target":1,"movement":1},
-				{"include":["duplex-minus","primarium"],"response":"commemoratio","target":1},
-				{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
-				{"include":["simplex","primarium"],"response":"commemoratio","target":1}
-			]
-		},
-		{
 			"include":["dominica-i-classis","primarium"],
 			"response":[
 				{"include":["duplex-i-classis"],"response":"transfer","target":1,"movement":1},

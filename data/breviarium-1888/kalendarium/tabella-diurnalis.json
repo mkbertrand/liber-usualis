@@ -175,10 +175,7 @@
 		"response":[
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
-			{"include":["in-tempore-passionis","feria","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
-			{"include":["in-tempore-passionis","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["in-tempore-passionis","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
