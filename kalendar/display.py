@@ -156,7 +156,8 @@ def kalendar2(book) -> Kalendar:
 				entry.add('primarium')
 
 	tabella = load_data('tabella.json', book)
-	apply_tabella(kal, tabella)
+	for i in tabella:
+		apply_tabella(kal, i)
 
 	ret = []
 	for (k, i) in kal.items():
