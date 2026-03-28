@@ -7,5 +7,22 @@
 		"tags":["soter-cajus","collecta"],
 		"datum":"Beatórum Mártyrum, paritérque Pontíficum Sotéris et Caji nos, quǽsumus Dómine, festa tueántur: * et eórum comméndet orátio veneránda.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["soter-cajus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["soter-cajus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Soter, Fundis in Campánia natus, sancívit, ne sacræ vírgines vasa sacra et pallas attíngerent, neve thuris ministério in ecclésia uteréntur. Idem státuit, ut Christi corpus in Cœna Dómini sumerétur ab ómnibus, iis excéptis, qui propter grave peccátum id fácere prohiberéntur. Sedit in pontificátu annos tres, menses úndecim, dies decem et octo: martýrio coronátur sub Marco Aurélio imperatóre, et in cœmetério, quod póstea Callísti dictum est, sepelítur, more majórum mense Decémbri creátis presbýteris decem et octo, diáconis novem, epíscopis per divérsa loca úndecim.",
+		"lectio-ii":"Cajus Dálmata, ex génere Diocletiáni imperatóris, constítuit, ut his órdinum et honórum grádibus in Ecclésia ad episcopátum ascenderétur: Ostiárii, Lectóris, Exorcístæ, Acólythi, Subdiáconi, Diáconi, Presbýteri. Hic Diocletiáni crudelitátem in Christiános fúgiens, aliquámdiu in spelúnca delítuit: verum octo post annis una cum Gabíno fratre martýrii corónam consecútus est, cum sedísset annos duódecim, menses quátuor, dies quinque, creátis mense Decémbri presbýteris vigintiquínque, diáconis octo, epíscopis quinque. Sepúltus est in cœmetério Callísti, décimo Kaléndas Maji. Ejus memóriam Urbánus octávus in Urbe renovávit, dírutam ecclésiam restítuit; título, statióne, et ipsíus relíquiis decorávit.",
+		"lectio-iii":[
+			"Sermo sancti Ambrósii Epíscopi.",
+			"[Serm. 22.]/Dignum et cóngruum est, fratres, ut post lætítiam Paschæ, quam in Ecclésia celebrávimus, gaúdia nostra cum sanctis Martýribus conferámus: et iis annuntiémus Domínicæ resurrectiónis glóriam, qui consórtes sunt Domínicæ passiónis. Qui enim sócii sunt contuméliæ, debent et partícipes esse lætítiæ. Ita enim dicit beátus Apóstolus: Sicut sócii passiónum estis, et resurrectiónis éritis: si tolerábimus, inquit, et conregnábimus. Qui ergo toleravérunt mala propter Christum, debent et glóriam habére cum Christo."
+		]
+	},
+	{
+		"tags":["soter-cajus","matutinum","nocturna-iii","lectio"],
+		"datum":[["martyrum-tempore-paschali","martyr","alia-homilia","lectio"]]
 	}
 ]
