@@ -157,7 +157,13 @@
 		"exclude":["duplex-i-classis"],
 		"response":[
 			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
+			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
+			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
+			{"include":["feria-ii-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
+			{"include":["feria-ii-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
+			{"include":["feria-iv-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
+			{"include":["feria-iv-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
@@ -174,20 +180,6 @@
 		"response":[
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
-		]
-	},
-	{
-		"include":["eusebius-martyr","primarium"],
-		"response":[
-			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
-			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
-		]
-	},
-	{
-		"include":["thomas","primarium"],
-		"response":[
-			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
-			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
@@ -227,15 +219,9 @@
 		]
 	},
 	{
-		"include":["quatuor-tempora"],
+		"include":["primarium"],
 		"response":[
-			{"include":["cornelius-cyprianus"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["januarius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["eustachius-et-soc"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["thomas-de-villanova"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["linus"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["immaculata-conceptio-bmv"],"target":1,"adde":"de-quatuor-temporibus"},
-			{"include":["eusebius-martyr"],"target":1,"adde":"de-quatuor-temporibus"}
+			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"de-quatuor-temporibus"}
 		]
 	},
 	{

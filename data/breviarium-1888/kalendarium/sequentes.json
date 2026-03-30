@@ -62,5 +62,9 @@
 	{
 		"tags":["votiva"],
 		"implies":["semiduplex"]
+	},
+	{
+		"tags":["quatuor-tempora-septembris"],
+		"implies":["hebdomadae-septembris"]
 	}
 ]
