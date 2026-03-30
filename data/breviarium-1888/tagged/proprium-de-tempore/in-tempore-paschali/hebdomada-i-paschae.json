@@ -103,7 +103,10 @@
 		"datum":"Habémus, inquit, certiórem prophéticum sermónem: cui bene fácitis intendéntes tamquam lucérnæ in obscúro loco, donec dies lucéscat, et lúcifer oriátur in córdibus vestris. Sint ergo lumbi vestri accíncti, et lucérnæ ardéntes in mánibus vestris: et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis. Ecce dies advéniunt, in quibus Dóminus dicit: Pusíllum, inquit, et non vidébitis me: et íterum pusíllum, et vidébitis me. Hæc est hora, de qua dixit: Vos tristes éritis, sǽculum autem gaudébit: id est, vita ista tentatiónibus plena, in qua peregrinámur ab eo. Sed íterum, inquit, vidébo vos, et gaudébit cor vestrum, et gaúdium vestrum nemo tollet a vobis."
 	},
 	{
-		"tags":["dominica-in-albis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"tags":[
+			["dominica-in-albis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-i-paschae","feria-ii","matutinum","responsorium","responsorium-i"]
+		],
 		"datum":[["pascha","feria-iii","matutinum","responsorium","responsorium-i"]]
 	},
 	{
@@ -116,7 +119,10 @@
 		]
 	},
 	{
-		"tags":["dominica-in-albis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"tags":[
+			["dominica-in-albis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-i-paschae","feria-ii","matutinum","responsorium","responsorium-ii"]
+		],
 		"datum":[["pascha","feria-iii","matutinum","responsorium","responsorium-ii"]]
 	},
 	{
@@ -124,7 +130,10 @@
 		"datum":"Sed quia ad illud corpus, quod vidéri póterat, fides intuéntium dubitábat: osténdit eis prótinus manus et latus: palpándam carnem prǽbuit, quam clausis jánuis introdúxit. Qua in re duo mira, et juxta humánam ratiónem sibi valde contrária osténdit: dum post resurrectiónem suam corpus suum incorruptíbile, et tamen palpábile demonstrávit. Nam et corrúmpi necésse est quod palpátur: et palpári non potest quod non corrúmpitur. Sed miro modo atque inæstimábili Redémptor noster et incorruptíbile post resurrectiónem, et palpábile corpus exhíbuit: ut monstrándo incorruptíbile, invitáret ad prǽmium: et præbéndo palpábile, firmáret ad fidem. Et incorruptíbilem se ergo, et palpábilem demonstrávit: ut profécto esse post resurrectiónem osténderet corpus suum et ejúsdem natúræ, et altérius glóriæ."
 	},
 	{
-		"tags":["dominica-in-albis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"tags":[
+			["dominica-in-albis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["hebdomada-i-paschae","feria-iv","matutinum","responsorium","responsorium-i"]
+		],
 		"datum":[["pascha","feria-vi","matutinum","responsorium","responsorium-i"]]
 	},
 	{
@@ -166,6 +175,15 @@
 		"datum":"Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúja, allelúja."
 	},
 	{
+		"tags":["hebdomada-i-paschae","feria-ii","lectio"],
+		"lectio-i":[
+			"Íncipit liber Áctuum Apostolórum.",
+			"[Act. 1.]/Primum quidem sermónem feci de ómnibus o Theóphile, quæ cœpit Jesus fácere, et docére usque in diem, qua præcípiens Apóstolis per Spíritum sanctum, quos elégit, assúmptus est: quibus et prǽbuit seípsum vivum post passiónem suam in multis arguméntis, per dies quadragínta appárens eis, et loquens de regno Dei. Et convéscens, præcépit eis ab Jerosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu sancto non post multos hos dies. Ígitur qui convénerant, interrogábant eum, dicéntes: Dómine si in témpore hoc restítues regnum Ísraël? Dixit autem eis: Non est vestrum nosse témpora vel moménta, quæ Pater pósuit in sua potestáte: sed accipiétis virtútem superveniéntis Spíritus sancti in vos, et éritis mihi testes in Jerúsalem, et in omni Judǽa, et Samaría, et usque ad últimum terræ."
+		],
+		"lectio-ii":"Et cum hæc dixísset, vidéntibus illis, elevátus est: et nubes suscépit eum ab óculis eórum. Cumque intueréntur in cœlum eúntem illum, ecce duo viri astitérunt juxta illos in véstibus albis, qui et dixérunt: Viri Galilǽi quid statis aspiciéntes in cœlum? Hic Jesus qui assúmptus est a vobis in cœlum, sic véniet, quemádmodum vidístis eum eúntem in cœlum. Tunc revérsi sunt Jerosólymam a monte, qui vocátur Olivéti, qui est juxta Jerúsalem, sábbati habens iter. Et cum introíssent in cœnáculum, ascendérunt ubi manébant Petrus et Joánnes, Jacóbus et Andréas, Philíppus et Thomas, Bartholomǽus et Matthǽus, Jacóbus Alphǽi et Simon Zelótes, et Judas Jacóbi. Hi omnes erant perseverántes unanímiter in oratióne cum muliéribus, et María matre Jesu, et frátribus ejus.",
+		"lectio-iii":"In diébus illis exsúrgens Petrus in médio fratrum, dixit (erat autem turba hóminum simul fere centum vigínti). Viri fratres, opórtet impléri Scriptúram, quam prædíxit Spíritus sanctus per os David de Juda, qui fuit dux eórum, qui comprehendérunt Jesum: qui connumerátus erat in nobis, et sortítus est sortem ministérii hujus. Et hic quidem possédit agrum de mercéde iniquitátis, et suspénsus crépuit médius: et diffúsa sunt ómnia víscera ejus. Et notum factum est ómnibus habitántibus Jerúsalem, ita ut appellarétur ager ille, lingua eórum, Hacéldama, hoc est, ager sánguinis. Scriptum est enim in libro Psalmórum: Fiat commorátio eórum desérta, et non sit qui inhábitet in ea: et episcopátum ejus accípiat alter. Opórtet ergo ex his viris, qui nobíscum sunt congregáti in omni témpore, quo intrávit et exívit inter nos Dóminus Jesus, incípiens a baptísmate Joánnis usque in diem, qua assúmptus est a nobis, testem resurrectiónis ejus nobíscum fíeri unum ex istis. Et statuérunt duos, Joseph, qui vocabátur Bársabas, qui cognominátus est Justus: et Mathíam. Et orántes dixérunt: Tu Dómine, qui corda nosti ómnium, osténde, quem elégeris ex his duóbus unum accípere locum ministérii hujus, et apostolátus, de quo prævaricátus est Judas, ut abíret in locum suum. Et dedérunt sortes eis, et cécidit sors super Mathíam, et annumerátus est cum úndecim Apóstolis."
+	},
+	{
 		"tags":["hebdomada-i-paschae","feria-ii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12288",
 		"datum":"Surgens Jesus * mane prima sábbati, appáruit primo Maríæ Magdalénæ, de qua ejécerat septem dæmónia, allelúja."
@@ -176,6 +194,29 @@
 		"datum":"Pax vobis, * ego sum, allelúja: nolíte timére, allelúja."
 	},
 	{
+		"tags":["hebdomada-i-paschae","feria-iii","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 2.]/Et cum compleréntur dies Pentecóstes, erant omnes páriter in eódem loco: et factus est repénte de cœlo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum ubi erant sedéntes. Et apparuérunt illis dispertítæ linguæ tamquam ignis sedítque supra síngulos eórum: et repléti sunt omnes Spíritu sancto, et cœpérunt loqui váriis linguis, prout Spíritus sanctus dabat éloqui illis. Erant autem in Jerúsalem habitántes Judǽi, viri religiósi ex omni natióne, quæ sub cœlo est. Facta autem hac voce, convénit multitúdo, et mente confúsa est, quóniam audiébat unusquísque lingua sua illos loquéntes. Stupébant autem omnes, et mirabántur, dicéntes: Nonne ecce omnes isti, qui loquúntur, Galilǽi sunt, et quómodo nos audívimus unusquísque linguam nostram, in qua nati sumus?"
+		]
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iii","matutinum","responsorium","responsorium-i"],
+		"datum":[["pascha","feria-iv","matutinum","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iii","lectio"],
+		"lectio-ii":"Stans autem Petrus cum úndecim, levávit vocem suam, et locútus est eis: Viri Judǽi, et qui habitátis Jerúsalem univérsi, hoc vobis notum sit, et aúribus percípite verba mea. Non enim, sicut vos æstimátis, hi ébrii sunt, cum sit hora diéi tértia: sed hoc est, quod dictum est per prophétam Joël: Et erit in novíssimis diébus (dicit Dóminus) effúndam de Spíritu meo super omnem carnem: et prophetábunt fílii vestri, et fíliæ vestræ, et júvenes vestri visiónes vidébunt, et senióres vestri sómnia somniábunt. Et quidem super servos meos, et super ancíllas meas in diébus illis effúndam de Spíritu meo, et prophetábunt: et dabo prodígia in cœlo sursum, et signa in terra deórsum, sánguinem, et ignem, et vapórem fumi: sol convertétur in ténebras, et luna in sánguinem, ántequam véniat dies Dómini magnus et maniféstus. Et erit: omnis, quicúmque invocáverit nomen Dómini, salvus erit."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iii","matutinum","responsorium","responsorium-ii"],
+		"datum":[["pascha","feria-iv","matutinum","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iii","lectio"],
+		"lectio-iii":"Viri Israëlítæ, audíte verba hæc: Jesum Nazarénum, virum approbátum a Deo in vobis, virtútibus, et prodígiis, et signis, quæ fecit Deus per illum in médio vestri, sicut et vos scitis: hunc definíto consílio et præsciéntia Dei tráditum, per manus iniquórum affligéntes interemístis: quem Deus suscitávit, solútis dolóribus inférni, juxta quod impossíbile erat tenéri illum ab eo. David enim dicit in eum: Providébam Dóminum in conspéctu meo semper: quóniam a dextris est mihi ne commóvear: Propter hoc lætátum est cor meum, et exsultávit lingua mea, ínsuper et caro mea requiéscet in spe: Quóniam non derelínques ánimam meam in inférno, nec dabis Sanctum tuum vidére corruptiónem."
+	},
+	{
 		"tags":["hebdomada-i-paschae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11770",
 		"datum":"Præcédam vos * in Galilǽam, ibi me vidébitis, sicut dixi vobis, allelúja, allelúja."
@@ -184,6 +225,22 @@
 		"tags":["hebdomada-i-paschae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12184",
 		"datum":"Mitte manum tuam, * et cognósce loca clavórum, allelúja: et noli esse incrédulus, sed fidélis, allelúja."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iv","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 3.]/Petrus autem, et Joánnes ascendébant in templum ad horam oratiónis nonam. Et quidam vir, qui erat claudus ex útero matris suæ, bajulabátur; quem ponébant quotídie ad portam templi, quæ dícitur Speciósa, ut péteret eleemósynam ab introëúntibus in templum. Is cum vidísset Petrum et Joánnem incipiéntes introíre in templum, rogábat ut eleemósynam accíperet. Íntuens autem in eum Petrus cum Joánne, dixit: Réspice in nos. At ille intendébat in eos, sperans se áliquid acceptúrum ab eis. Petrus autem dixit: Argéntum et aurum non est mihi: quod autem hábeo, hoc tibi do: In nómine Jesu Christi Nazaréni surge, et ámbula."
+		],
+		"lectio-ii":"Et apprehénsa manu ejus déxtera, allevávit eum, et prótinus consolidátæ sunt bases ejus, et plantæ. Et exsíliens stetit, et ambulábat: et intrávit cum illis in templum ámbulans, et exsíliens, et laudans Deum. Et vidit omnis pópulus eum ambulántem, et laudántem Deum. Cognoscébant autem illum, quod ipse erat, qui ad eleemósynam sedébat ad Speciósam portam templi: et impléti sunt stupóre et éxtasi in eo, quod contígerat illi. Cum tenéret autem Petrum, et Joánnem, cucúrrit omnis pópulus ad eos ad pórticum, quæ appellátur Salomónis, stupéntes."
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iv","matutinum","responsorium","responsorium-ii"],
+		"datum":[["pascha","feria-vi","matutinum","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-iv","lectio"],
+		"lectio-iii":"Videns autem Petrus, respóndit ad pópulum: Viri Israëlítæ, quid mirámini in hoc, aut nos quid intuémini, quasi nostra virtúte aut potestáte fecérimus hunc ambuláre? Deus Ábraham, et Deus Ísaac, et Deus Jacob, Deus patrum nostrórum glorificávit Fílium suum Jesum, quem vos quidem tradidístis, et negástis ante fáciem Piláti, judicánte illo dimítti. Vos autem sanctum et justum negástis, et petístis virum homicídam donári vobis: auctórem vero vitæ interfecístis, quem Deus suscitávit a mórtuis, cujus nos testes sumus. Et in fide nóminis ejus, hunc, quem vos vidístis, et nostis, confirmávit nomen ejus: et fides, quæ per eum est, dedit íntegram sanitátem istam in conspéctu ómnium vestrum."
 	},
 	{
 		"tags":["hebdomada-i-paschae","feria-iv","laudes","antiphona","antiphona-benedictus"],
