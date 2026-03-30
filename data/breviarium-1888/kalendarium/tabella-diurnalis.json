@@ -156,7 +156,6 @@
 		"include":["primarium"],
 		"exclude":["duplex-i-classis"],
 		"response":[
-			{"include":["dominica","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
 			{"include":["dominica","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
@@ -165,9 +164,7 @@
 		"include":["primarium"],
 		"exclude":[["duplex-i-classis"],["in-tempore-quadragesimae"]],
 		"response":[
-			{"include":["simplex","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["simplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["vigilia","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["vigilia","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
 			{"include":["vigilia","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
@@ -175,7 +172,6 @@
 	{
 		"include":["primarium"],
 		"response":[
-			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
@@ -183,7 +179,6 @@
 	{
 		"include":["eusebius-martyr","primarium"],
 		"response":[
-			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
 			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
@@ -191,7 +186,6 @@
 	{
 		"include":["thomas","primarium"],
 		"response":[
-			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
 			{"include":["quatuor-tempora","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
@@ -251,12 +245,10 @@
 		]
 	},
 	{
-		"include":["vigilia-epiphaniae"],
-		"remove":"habens-commemorationem-matutini"
-	},
-	{
-		"include":["epiphania","infra-octavam"],
-		"remove":"habens-commemorationem-matutini"
+		"include":["commemoratio-matutini"],
+		"response":[
+			{"include":["primarium"],"exclude":[["vigilia-epiphaniae"],["epiphania"]],"target":1,"adde":"habens-commemorationem-matutini"}
+		]
 	},
 	{
 		"include":["suffragium","commemoratio"],

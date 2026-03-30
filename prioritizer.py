@@ -41,7 +41,8 @@ def guaranteeset(item):
 	else:
 		return {item}
 
-def apply_secondary_tabella(day, rules):
+def apply_secondary_tabella(day, tabella):
+	rules = kalendar.datamanage.flatten(tabella)
 	day = copy.deepcopy(day)
 	queue = [Job(rule) for rule in rules]
 	queue.reverse()
@@ -116,7 +117,7 @@ def get_vespers(book: Path, day):
 	assert type(day) is not datetime
 
 	implicationtable = load_data_prioritizer('sequentes.json', book)
-	vesperalrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-vesperalis.json', book))
+	vesperalrules = load_data_prioritizer('tabella-vesperalis.json', book)
 
 	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(book, day + timedelta(days=1))]
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(book, day)]
@@ -136,8 +137,8 @@ def get_diurnal(book: Path, day):
 	assert type(day) is not datetime
 
 	implicationtable = load_data_prioritizer('sequentes.json', book)
-	diurnalrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-diurnalis.json', book))
-	martyrologyrules = kalendar.datamanage.flatten(load_data_prioritizer('tabella-martyrologii.json', book))
+	diurnalrules = load_data_prioritizer('tabella-diurnalis.json', book)
+	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', book)
 
 	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(book, day), diurnalrules)
 	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(book, day + timedelta(days=1)), martyrologyrules)
