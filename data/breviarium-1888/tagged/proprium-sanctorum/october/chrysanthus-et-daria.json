@@ -10,6 +10,9 @@
 	},
 	{
 		"tags":["chrysanthus-et-daria","matutinum","lectio"],
-		"lectio-i":[["temporale","occurrens","lectio-i","lectio"],["temporale","occurrens","lectio-ii","lectio"],["temporale","occurrens","lectio-ii","lectio"]]
+		"include-inauthenticas":[["lectio-binaria"]],
+		"lectio-commemorationis":[["lectio-binaria"]],
+		"lectio-i":"Chrysánthus et Daría cónjuges, nóbili génere nati, fide étiam clarióres, quam Daría, maríti ópera, cum baptísmo suscéperat; Romæ innumerábilem hóminum multitúdinem, hæc mulíerum, ille virórum, ad Christum convertérunt. Quare Celerínus præféctus comprehénsos trádidit Claúdio tribúno: qui jussit a milítibus Chrysánthum vinctum cruciátibus torquéri; sed víncula ómnia resolúta sunt; mox cómpedes, in quos conjéctus fúerat, confrácti.",
+		"lectio-ii":"Deínde bovis cório inclúsum, in ardentíssimo sole constítuunt; tum pédibus ac mánibus caténa constríctis, in obscúrum cárcerem detrúdunt: ubi solútis caténis, claríssima lux locum illustrávit. Daría vero in lupánar compúlsa, leónis tutéla, dum in oratióne defíxa est, a contumélia divínitus defénsa est. Dénique in arenárium, quæ est via Salária, utérque ductus, effóssa terra, lapídibus óbruti, parem martýrii corónam adépti sunt."
 	}
 ]

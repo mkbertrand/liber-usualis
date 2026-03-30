@@ -399,6 +399,7 @@
 				{"include":["semiduplex"],"exclude":["dominica"],"response":"dele","target":1},
 				{"include":["simplex"],"response":"dele","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"omissum","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -436,6 +437,7 @@
 				{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -492,6 +494,7 @@
 				{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -552,6 +555,7 @@
 				{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -563,6 +567,7 @@
 				{"include":["semiduplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -607,6 +612,7 @@
 			"response":[
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -623,6 +629,7 @@
 			"response":[
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -637,6 +644,7 @@
 			"response":[
 				{"include":["simplex","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria-major","primarium"],"response":"commemoratio","target":1},
+				{"include":["vigilia","primarium"],"response":"commemoratio","target":1},
 				{"include":["feria","primarium"],"response":"omissum","target":1}
 			]
 		},
@@ -651,7 +659,7 @@
 		{
 			"include":["simplex","primarium"],
 			"response":[
-				{"include":["vigilia","simplex"],"response":"commemoratio","target":0},
+				{"include":["vigilia"],"response":"commemoratio","target":0},
 				{"include":["dominica","feria"],"response":"commemoratio","target":0},
 				{"include":["feria","primarium"],"exclude":["vigilia"],"response":"omissum","target":1}
 			]
@@ -759,7 +767,6 @@
 		},
 		{
 			"include":["simplex"],
-			"exclude":["vigilia"],
 			"response":"festum"
 		},
 		{

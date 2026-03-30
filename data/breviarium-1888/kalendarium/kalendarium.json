@@ -165,7 +165,7 @@
 	},
 	{
 		"occurrence":["ad-vii-kalendas-martii"],
-		"tags":["vigilia-mathiae","simplex","vigilia","vigilia-apostoli"]
+		"tags":["vigilia-mathiae","vigilia","vigilia-apostoli"]
 	},
 	{
 		"occurrence":["ad-vi-kalendas-martii"],
@@ -488,7 +488,7 @@
 	},
 	{
 		"occurrence":["ad-ix-kalendas-julii"],
-		"tags":["vigilia-nativitatis-joannis-baptistae","simplex","vigilia"]
+		"tags":["vigilia-nativitatis-joannis-baptistae","vigilia"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-julii"],
@@ -508,7 +508,7 @@
 	},
 	{
 		"occurrence":["ad-iv-kalendas-julii"],
-		"tags":["vigilia-petri-pauli","simplex","vigilia","vigilia-apostoli"]
+		"tags":["vigilia-petri-pauli","vigilia","vigilia-apostoli"]
 	},
 	{
 		"occurrence":["ad-iii-kalendas-julii"],
@@ -611,7 +611,7 @@
 	{
 		"occurrence":["ad-ix-kalendas-augusti"],
 		"tags":[
-			["vigilia-jacobi","simplex","vigilia","vigilia-apostoli"],
+			["vigilia-jacobi","vigilia","vigilia-apostoli"],
 			["christina","simplex","commemoratio","virgo","martyr"]
 		]
 	},
@@ -696,7 +696,7 @@
 	{
 		"occurrence":["ad-v-idus-augusti"],
 		"tags":[
-			["vigilia-laurentii","simplex","vigilia"],
+			["vigilia-laurentii","vigilia"],
 			["romanus","simplex","commemoratio","martyr"]
 		]
 	},
@@ -720,7 +720,7 @@
 		"occurrence":["ad-xix-kalendas-septembris"],
 		"tags":[
 			["eusebius","simplex","commemoratio","confessor"],
-			["vigilia-assumptionis","simplex","commemoratio","vigilia"]
+			["vigilia-assumptionis","commemoratio","vigilia"]
 		]
 	},
 	{
@@ -757,7 +757,7 @@
 	},
 	{
 		"occurrence":["ad-x-kalendas-septembris"],
-		"tags":["vigilia-bartholomaei","simplex","vigilia","vigilia-apostoli"]
+		"tags":["vigilia-bartholomaei","vigilia","vigilia-apostoli"]
 	},
 	{
 		"occurrence":["ad-ix-kalendas-septembris"],
@@ -877,7 +877,7 @@
 	},
 	{
 		"occurrence":["ad-xii-kalendas-octobris"],
-		"tags":["vigilia-matthaei","simplex","vigilia","vigilia-apostoli"]
+		"tags":["vigilia-matthaei","vigilia","vigilia-apostoli"]
 	},
 	{
 		"occurrence":["ad-xi-kalendas-octobris"],
@@ -1009,7 +1009,7 @@
 	},
 	{
 		"occurrence":["ad-vi-kalendas-novembris"],
-		"tags":["vigilia-simonis-et-judae","simplex","vigilia","vigilia-apostoli","scriptura-propria"]
+		"tags":["vigilia-simonis-et-judae","vigilia","vigilia-apostoli","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-v-kalendas-novembris"],
@@ -1017,7 +1017,7 @@
 	},
 	{
 		"occurrence":["pridie-kalendas-novembris"],
-		"tags":["vigilia-omnium-sanctorum","simplex","vigilia","scriptura-propria"]
+		"tags":["vigilia-omnium-sanctorum","vigilia","scriptura-propria"]
 	},
 	{
 		"occurrence":["kalendae-novembris"],
@@ -1127,7 +1127,7 @@
 	{
 		"occurrence":["ad-iii-kalendas-decembris"],
 		"tags":[
-			["vigilia-andreae","simplex","vigilia","vigilia-apostoli","scriptura-propria"],
+			["vigilia-andreae","vigilia","vigilia-apostoli","scriptura-propria"],
 			["saturninus","simplex","commemoratio","martyr"]
 		]
 	},
@@ -1164,7 +1164,7 @@
 	},
 	{
 		"occurrence":["ad-vii-idus-decembris"],
-		"tags":["vigilia-immaculatae-conceptionis-bmv","simplex","vigilia"]
+		"tags":["vigilia-immaculatae-conceptionis-bmv","vigilia"]
 	},
 	{
 		"occurrence":["ad-vi-idus-decembris"],
@@ -1188,7 +1188,7 @@
 	},
 	{
 		"occurrence":["ad-xiii-kalendas-januarii"],
-		"tags":["vigilia-thomae","simplex","vigilia","vigilia-apostoli"]
+		"tags":["vigilia-thomae","vigilia","vigilia-apostoli"]
 	},
 	{
 		"occurrence":["ad-xii-kalendas-januarii"],

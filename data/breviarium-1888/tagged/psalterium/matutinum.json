@@ -353,7 +353,21 @@
 			["matutinum","lectio-i","lectio"],
 			["matutinum","lectio-ii","lectio"],
 			["matutinum","lectio-iii","lectio"]
-		]
+		],
+		"simplex":[["matutinum","nocturna-i","lectio"]]
+	},
+	{
+		"tags":["matutinum","simplex","lectio","include-inauthenticas"],
+		"lectio-i":[["temporale","occurrens","lectio","lectio-i"]],
+		"lectio-ii":[["temporale","occurrens","lectio","lectio-ii"],["temporale","occurrens","lectio","lectio-iii"]],
+		"lectio-iii":[["matutinum","lectio"]]
+	},
+	{
+		"tags":["matutinum","simplex","lectio-binaria"],
+		"lectio-i":[["temporale","occurrens","lectio","lectio-i"],["temporale","occurrens","lectio","lectio-ii"],["temporale","occurrens","lectio","lectio-iii"]],
+		"lectio-ii":[["matutinum","lectio-i","lectio"]],
+		"lectio-iii":[["matutinum","lectio-ii","lectio"]],
+		"lectio-commemorationis":[["matutinum","nocturna-i","lectio-i","lectio"],["matutinum","nocturna-i","lectio-ii","lectio"]]
 	},
 	{
 		"tags":["matutinum","dominica","antiphona","antiphona-invitatorium"],

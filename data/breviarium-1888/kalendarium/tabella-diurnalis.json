@@ -59,9 +59,9 @@
 		"remove":["primarium","commemoratio"]
 	},
 	{
-		"include":["vigilia","simplex"],
+		"include":["vigilia"],
 		"recheck":false,
-		"exclude":["omissum"],
+		"exclude":[["omissum"],["semiduplex"],["duplex-minus"]],
 		"response":[
 			{"include":["feria"],"exclude":["feria-major"],"response":"combina","target":0},
 			{"include":["feria-major","feria-ii"],"adde":["feria-ii","feria"],"target":0},
@@ -163,11 +163,13 @@
 	},
 	{
 		"include":["primarium"],
-		"exclude":["duplex-i-classis"],
+		"exclude":[["duplex-i-classis"],["in-tempore-quadragesimae"]],
 		"response":[
 			{"include":["simplex","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
 			{"include":["simplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
-			{"include":["vigilia","simplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+			{"include":["vigilia","commemoratio"],"target":0,"adde":"habens-commemorationem-matutini"},
+			{"include":["vigilia","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["vigilia","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
@@ -196,6 +198,12 @@
 	},
 	{
 		"include":["dominica","commemoratio-matutini"],
+		"response":[
+			{"include":["simplex","commemoratio-matutini"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["feria","commemoratio-matutini"],
 		"response":[
 			{"include":["simplex","commemoratio-matutini"],"response":"dele","target":1}
 		]

@@ -10,9 +10,7 @@
 	},
 	{
 		"tags":["valentinus","matutinum","lectio"],
-		"lectio-i":[["temporale","occurrens","lectio","lectio-i"]],
-		"lectio-ii":[["temporale","occurrens","lectio","lectio-ii"],["temporale","occurrens","lectio","lectio-iii"]],
-		"lectio-iii":[["valentinus","martyr","matutinum","nocturna-ii","lectio","lectio-i"]]
+		"datum":[["valentinus","martyr","matutinum","nocturna-ii","lectio","lectio-i"]]
 	},
 	{
 		"tags":["valentinus","n"],
