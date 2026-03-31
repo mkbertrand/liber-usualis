@@ -7,5 +7,23 @@
 		"tags":["cletus-marcellinus","collecta"],
 		"datum":"Beatórum Mártyrum, paritérque Pontíficum Cleti et Marcellíni nos Dómine fóveat pretiósa conféssio: * et pia júgiter intercéssio tueátur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cletus-marcellinus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"de-rogationibus":[["martyr","lectio"]]
+	},
+	{
+		"tags":["cletus-marcellinus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Cletus Románus, patre Æmiliáno, de regióne quinta, e vico Patrício, imperatóribus Vespasiáno et Tito, Ecclésiam gubernávit. Is ex præcépto Príncipis Apostolórum in Urbe vigínti quinque presbýteros ordinávit. Primus in lítteris verbis illis usus est: Salútem et apostólicam benedictiónem. Qui Ecclésia óptime constitúta, cum ei præfuísset annos duódecim, menses septem, dies duos, Domitiáno imperatóre, secúnda post Nerónem persecutióne, martýrio coronátus est, et in Vaticáno juxta corpus beáti Petri sepúltus.",
+		"lectio-ii":"Marcellínus Románus, ab anno ducentésimo nonagésimo sexto ad annum trecentésimum quartum in immáni imperatóris Diocletiáni persecutióne Ecclésiæ prǽfuit. Multas pértulit angústias ob ímprobam eórum severitátem, qui eum redarguébant de nímia indulgéntia erga lapsos in idololatríam, quæque causa fuit, ut per calúmniam infamátus fúerit, quasi thus idólis adhibuísset. Verum hic beátus Póntifex in confessióne fídei, una cum tribus áliis Christiánis, Claúdio, Cyríno et Antoníno, cápite plexus est. Quorum projécta córpora, quum trigínta sex dies jussu imperatóris sepultúra caruíssent, beátus Marcéllus a sancto Petro in somnis admónitus, cum presbýteris et diáconis, hymnis et lumínibus adhíbitis, honorífice sepeliénda curávit in cœmetério Priscíllæ via Salária. Rexit Ecclésiam annos septem, menses úndecim, dies vigínti tres: quo témpore fecit ordinatiónes duas mense Decémbri, quibus creávit presbýteros quátuor, epíscopos per divérsa loca quinque.",
+		"lectio-iii":[
+			"Sermo sancti Ambrósii Epíscopi.",
+			"[Serm. 22.]/Dignum et cóngruum est, fratres, ut post lætítiam Paschæ, quam in Ecclésia celebrávimus, gaúdia nostra cum sanctis Martýribus conferámus: et iis annuntiémus Domínicæ resurrectiónis glóriam, qui consórtes sunt Domínicæ passiónis. Qui enim sócii sunt contuméliæ, debent et partícipes esse lætítiæ. Ita enim dicit beátus Apóstolus: Sicut sócii passiónum estis, et resurrectiónis éritis; si tolerábimus, inquit, et conregnábimus. Qui ergo toleravérunt mala propter Christum, debent et glóriam habére cum Christo."
+		]
+	},
+	{
+		"tags":["cletus-marcellinus","matutinum","nocturna-iii","lectio"],
+		"datum":[["martyrum-tempore-paschali","martyr","alia-homilia","lectio"]]
 	}
 ]

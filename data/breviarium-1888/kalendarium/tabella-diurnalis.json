@@ -221,7 +221,9 @@
 	{
 		"include":["primarium"],
 		"response":[
-			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"de-quatuor-temporibus"}
+			{"include":["quatuor-tempora","commemoratio"],"target":0,"adde":"de-quatuor-temporibus"},
+			{"include":["feria-ii-rogationis","commemoratio"],"target":0,"adde":"de-rogationibus"},
+			{"include":["feria-iv-rogationis","commemoratio"],"target":0,"adde":"de-rogationibus"}
 		]
 	},
 	{
