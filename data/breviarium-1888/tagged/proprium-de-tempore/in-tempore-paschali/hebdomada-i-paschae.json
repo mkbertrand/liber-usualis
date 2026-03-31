@@ -95,7 +95,10 @@
 		"datum":"Ad omnes quidem pértinet sermo, quos cura nostra compléctitur: verúmtamen hódie termináta sacramentórum solemnitáte, vos allóquimur novélla gérmina sanctitátis, regeneráta ex aqua et Spíritu sancto: germen pium, exámen novéllum, flos nostri honóris, et fructus labóris, gaúdium et coróna mea, omnes qui statis in Dómino. Apostólicis verbis vos álloquor: Ecce nox præcéssit, dies autem appropinquávit: abjícite ópera tenebrárum, et indúite vos arma lucis. Sicut in die honéste ambulémus: non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentióne et æmulatióne: sed induímini Dóminum Jesum Christum."
 	},
 	{
-		"tags":["dominica-in-albis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"tags":[
+			["dominica-in-albis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-i-paschae","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
 		"datum":[["pascha","feria-ii","matutinum","responsorium","responsorium-ii"]]
 	},
 	{
@@ -105,7 +108,8 @@
 	{
 		"tags":[
 			["dominica-in-albis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-			["hebdomada-i-paschae","feria-ii","matutinum","responsorium","responsorium-i"]
+			["hebdomada-i-paschae","feria-ii","matutinum","responsorium","responsorium-i"],
+			["hebdomada-i-paschae","feria-vi","matutinum","responsorium","responsorium-i"]
 		],
 		"datum":[["pascha","feria-iii","matutinum","responsorium","responsorium-i"]]
 	},
@@ -121,7 +125,8 @@
 	{
 		"tags":[
 			["dominica-in-albis","matutinum","nocturna-iii","responsorium","responsorium-i"],
-			["hebdomada-i-paschae","feria-ii","matutinum","responsorium","responsorium-ii"]
+			["hebdomada-i-paschae","feria-ii","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-i-paschae","feria-vi","matutinum","responsorium","responsorium-ii"]
 		],
 		"datum":[["pascha","feria-iii","matutinum","responsorium","responsorium-ii"]]
 	},
@@ -253,6 +258,22 @@
 		"datum":"Quia vidísti me, * Thoma, credidísti: beáti qui non vidérunt, et credidérunt, allelúja."
 	},
 	{
+		"tags":["hebdomada-i-paschae","feria-v","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 5.]/Vir autem quidam nómine Ananías, cum Saphíra uxóre sua véndidit agrum, et fraudávit de prétio agri, cónscia uxóre sua: et áfferens partem quamdam, ad pedes Apostolórum pósuit. Dixit autem Petrus: Ananía, cur tentávit sátanas cor tuum, mentíri te Spirítui sancto, et fraudáre de prétio agri? Nonne manens tibi manébat, et venúmdatum in tua erat potestáte? Quare posuísti in corde tuo hanc rem? Non es mentítus homínibus, sed Deo. Aúdiens autem Ananías hæc verba, cécidit et exspirávit. Et factus est timor magnus super omnes, qui audiérunt. Surgéntes autem júvenes amovérunt eum, et efferéntes sepeliérunt."
+		]
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-v","matutinum","responsorium","responsorium-i"],
+		"datum":[["pascha","sabbatum","matutinum","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["hebdomada-i-paschae","feria-v","lectio"],
+		"lectio-ii":"Factum est autem quasi horárum trium spátium, et uxor ipsíus, nésciens quod factum fúerat, introívit. Dixit autem ei Petrus: Dic mihi múlier, si tanti agrum vendidístis? At illa dixit: Étiam tanti. Petrus autem ad eam: Quid útique convénit vobis tentáre Spíritum Dómini? Ecce pedes eórum, qui sepeliérunt virum tuum, ad óstium, et éfferent te. Conféstim cécidit ante pedes ejus, et exspirávit. Intrántes autem júvenes invenérunt illam mórtuam: et extulérunt, et sepeliérunt ad virum suum. Et factus est timor magnus in univérsa ecclésia, et in omnes, qui audiérunt hæc.",
+		"lectio-iii":"Per manus autem Apostolórum fiébant signa et prodígia multa in plebe. Et erant unanímiter omnes in pórticu Salomónis. Ceterórum autem nemo audébat se conjúngere illis: sed magnificábat eos pópulus. Magis autem augebátur credéntium in Dómino multitúdo virórum ac mulíerum, ita ut in platéas ejícerent infírmos, et pónerent in léctulis ac grabátis, ut, veniénte Petro, saltem umbra illíus obumbráret quemquam illórum, et liberaréntur ab infirmitátibus suis. Concurrébat autem et multitúdo vicinárum civitátum Jerúsalem, afferéntes ægros, et vexátos a spirítibus immúndis: qui curabántur omnes."
+	},
+	{
 		"tags":["hebdomada-i-paschae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11986",
 		"datum":"Ardens est cor meum, * desídero vidére Dóminum meum: quæro, et non invénio, ubi posuérunt eum, allelúja, allelúja."
@@ -263,8 +284,26 @@
 		"datum":"Misi dígitum meum * in fixúras clavórum, et manum meam in latus ejus, et dixi: Dóminus meus, et Deus meus, allelúja."
 	},
 	{
+		"tags":["hebdomada-i-paschae","feria-vi","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 8. b.]/Vir autem quidam nómine Simon, qui ante fúerat in civitáte magus, sedúcens gentem Samaríæ, dicens se esse áliquem magnum: cui auscultábant omnes a mínimo usque ad máximum, dicéntes: Hic est virtus Dei, quæ vocátur magna. Attendébant autem eum, propter quod multo témpore magíis suis dementásset eos. Cum vero credidíssent Philíppo evangelizánti de regno Dei, in nómine Jesu Christi baptizabántur viri ac mulíeres. Tunc Simon et ipse crédidit: et cum baptizátus esset, adhærébat Philíppo. Videns étiam signa, et virtútes máximas fíeri, stupens admirabátur."
+		],
+		"lectio-ii":"Cum autem audíssent Apóstoli, qui erant Jerosólymis, quod recepísset Samaría verbum Dei, misérunt ad eos Petrum, et Joánnem. Qui cum veníssent, oravérunt pro ipsis, ut accíperent Spíritum sanctum: nondum enim in quemquam illórum vénerat, sed baptizáti tantum erant in nómine Dómini Jesu. Tunc imponébant manus super illos, et accipiébant Spíritum sanctum. Cum vidísset autem Simon, quia per impositiónem manus Apostolórum darétur Spíritus sanctus, óbtulit eis pecúniam, dicens: Date et mihi hanc potestátem, ut cuicúmque imposúero manus, accípiat Spíritum sanctum.",
+		"lectio-iii":"Petrus autem dixit ad eum: Pecúnia tua tecum sit in perditiónem: quóniam donum Dei existimásti pecúnia possidéri. Non est tibi pars, neque sors in sermóne isto. Cor enim tuum non est rectum coram Deo. Pœniténtiam ítaque age ab hac nequítia tua: et roga Deum, si forte remittátur tibi hæc cogitátio cordis tui. In felle enim amaritúdinis, et obligatióne iniquitátis vídeo te esse. Respóndens autem Simon, dixit: Precámini vos pro me ad Dóminum, ut nihil véniat super me horum, quæ dixístis."
+	},
+	{
 		"tags":["hebdomada-i-paschae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12052",
 		"datum":"Venérunt ad monuméntum * María Magdaléne, et áltera María, vidére sepúlchrum, allelúja."
+	},
+	{
+		"tags":["hebdomada-i-paschae","sabbatum","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 10.]/Vir autem quidam erat in Cæsaréa, nómine Cornélius, centúrio cohórtis, quæ dícitur Itálica, religiósus ac timens Deum cum omni domo sua, fáciens eleemósynas multas plebi, et déprecans Deum semper: is vidit in visu maniféste, quasi hora diéi nona, Ángelum Dei introëúntem ad se, et dicéntem sibi: Cornéli. At ille íntuens eum, timóre corréptus, dixit: Quid est, Dómine? Dixit autem illi: Oratiónes tuæ, et eleemósynæ tuæ ascendérunt in memóriam in conspéctu Dei. Et nunc mitte viros in Joppen, et accérsi Simónem quemdam, qui cognominátur Petrus: hic hospitátur apud Simónem quemdam coriárium, cujus est domus juxta mare: hic dicet tibi quid te opórteat fácere. Et cum discessísset Ángelus, qui loquebátur illi, vocávit duos domésticos suos, et mílitem metuéntem Dóminum ex his, qui illi parébant. Quibus cum narrásset ómnia, misit illos in Joppen."
+		],
+		"lectio-ii":"Póstera autem die iter illis faciéntibus, et appropinquántibus civitáti, ascéndit Petrus in superióra ut oráret circa horam sextam. Et cum esuríret, vóluit gustáre. Parántibus autem illis, cécidit super eum mentis excéssus: et vidit cœlum apértum, et descéndens vas quoddam, velut línteum magnum, quátuor inítiis submítti de cœlo in terram, in quo erant ómnia quadrupédia, et serpéntia terræ, et volatília cœli. Et facta est vox ad eum: Surge Petre, occíde, et mandúca. Ait autem Petrus: Absit Dómine, quia numquam manducávi omne commúne et immúndum. Et vox íterum secúndo ad eum: Quod Deus purificávit, tu commúne ne díxeris. Hoc autem factum est per ter: et statim recéptum est vas in cœlum. Et dum intra se hæsitáret Petrus quidnam esset vísio, quam vidísset: ecce viri, qui missi erant a Cornélio, inquiréntes domum Simónis, astitérunt ad jánuam.",
+		"lectio-iii":"Apériens autem Petrus os suum, dixit: In veritáte cómperi quia non est personárum accéptor Deus, sed in omni gente qui timet eum, et operátur justítiam, accéptus est illi. Verbum misit Deus fíliis Ísraël, annúntians pacem per Jesum Christum: (hic est ómnium Dóminus.) Vos scitis quod factum est verbum per univérsam Judǽam: incípiens enim a Galilǽa post baptísmum, quod prædicávit Joánnes, Jesum a Názareth: quómodo unxit eum Deus Spíritu sancto, et virtúte, qui pertránsiit benefaciéndo, et sanándo omnes oppréssos a diábolo, quóniam Deus erat cum illo. Et nos testes sumus ómnium quæ fecit in regióne Judæórum, et Jerúsalem, quem occidérunt suspendéntes in ligno. Hunc Deus suscitávit tértia die, et dedit eum maniféstum fíeri non omni pópulo, sed téstibus præordinátis a Deo: nobis, qui manducávimus, et bíbimus cum illo, postquam resurréxit a mórtuis."
 	}
 ]
