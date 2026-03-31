@@ -37,7 +37,10 @@
 		"datum":"Benedictiónes patris tui confortátæ sunt benedictiónibus patrum ejus: + donec veníret desidérium cóllium æternórum: * fiant in cápite Joseph, et in vértice Nazarǽi inter fratres suos."
 	},
 	{
-		"tags":["patrocinius-joseph","vesperae","hymnus"],
+		"tags":[
+			["patrocinius-joseph","vesperae","hymnus"],
+			["patrocinius-joseph","matutinum","hymnus"]
+		],
 		"src":"gregobase/2235",
 		"datum":[
 			"Te, Joseph, célebrent ágmina cœ\u0301litum,/Te cuncti résonent christíadum chori,/Qui clarus méritis, junctus es ínclytæ/Casto fœ\u0301dere Vírgini.",
@@ -60,6 +63,134 @@
 		"tags":["patrocinius-joseph","collecta"],
 		"datum":"Deus, qui ineffábili providéntia beátum Joseph sanctíssimæ Genitrícis tuæ sponsum elígere dignátus es: + præsta, quǽsumus; ut quem protectórem benerámur in terris, * intercessórem habére mereámur in cœlis:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/P2F4I",
+		"datum":"Laudémus Deum nostrum * In veneratióne beáti Joseph, protectóris nostri, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","antiphona"],
+		"src":"nocturnale/P2F4N1A",
+		"datum":"Ángelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe púerum et matrem ejus, et fuge in Ægýptum, et esto ibi usque dum dicam tibi, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","psalmus"],
+		"datum":[["joseph-sponsus","matutinum","psalmus"]]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Confitébor nómini tuo, allelúja.","R. Quóniam adjútor et protéctor factus es mihi, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"De libro Génesis.",
+			"[Gen. 39.]/Ígitur Joseph ductus est in Ægýptum, emítque eum Pútiphar eunúchus Pharaónis, princeps exércitus, vir Ægýptius, de manu Ismaëlitárum, a quibus perdúctus erat. Fuítque Dóminus cum eo, et erat vir in cunctis próspere agens: habitavítque in domo dómini sui, qui óptime nóverat Dóminum esse cum eo, et ómnia, quæ géreret, ab eo dírigi in manu illíus. Invenítque Joseph grátiam coram dómino suo, et ministrábat ei, a quo præpósitus ómnibus, gubernábat créditam sibi domum, et univérsa quæ ei trádita fúerant: benedixítque Dóminus dómui Ægýptii propter Joseph, et multiplicávit tam in ǽdibus quam in agris cunctam ejus substántiam: nec quidquam áliud nóverat, nisi panem quo vescebátur. Erat autem Joseph pulchra fácie, et decórus aspéctu."
+		]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Clamávit pópulus ad regem, aliménta petens:",
+		"responsum":"Quibus ille respóndit: Ite ad Joseph, allelúja.",
+		"versus":"Salus nostra in manu tua est: réspice nos tantum, et læti serviémus regi."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"[Gen. 41. e.]/Plácuit Pharaóni consílium, et cunctis minístris ejus, locutúsque est ad eos: Num inveníre potérimus talem virum, qui spíritu Dei plenus sit? Dixit ergo ad Joseph: Quia osténdit tibi Deus ómnia quæ locútus es, numquid sapientiórem et consímilem tui inveníre pótero? Tu eris super domum meam, et ad tui oris impérium cunctus pópulus obédiet: uno tantum regni sólio te præcédam. Dixítque rursus Phárao ad Joseph: Ecce constítui te super univérsam terram Ægýpti. Tulítque ánnulum de manu sua, et dedit eum in manu ejus: vestivítque eum stola býssina, et collo torquem aúream circumpósuit. Fecítque eum ascéndere super currum suum secúndum, clamánte præcóne, ut omnes coram eo genu flécterent, et præpósitum esse scirent univérsæ terræ Ægýpti."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Fecit me Deus quasi patrem regis, et dóminum univérsæ domus ejus:",
+		"responsum":"Exaltávit me, ut salvos fáceret multos pópulos, allelúja.",
+		"versus":"Veníte ad me, et ego dabo vobis ómnia bona Ægýpti, ut comedátis medúllam terræ."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"[Gen. 41. f.]/Dixit quoque rex ad Joseph: Ego sum Phárao: absque tuo império non movébit quisquam manum aut pedem in omni terra Ægýpti. Vertítque nomen ejus, et vocávit eum lingua ægyptíaca Salvatórem mundi. Dedítque illi uxórem Áseneth fíliam Putipháre sacerdótis Heliopóleos. Egréssus est ítaque Joseph ad terram Ægýpti (trigínta autem annórum erat quando stetit in conspéctu regis Pharaónis), et circuívit omnes regiónes Ægýpti. Venítque fertílitas septem annórum: et in manípulos redáctæ ségetes congregátæ sunt in hórrea Ægýpti. Omnis étiam frugum abundántia in síngulis úrbibus cóndita est. Tántaque fuit abundántia trítici, ut arénæ maris coæquarétur, et cópia mensúram excéderet."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Jam lætus móriar, quia vidi fáciem tuam, et supérstitem te relínquo. Non sum fraudátus aspéctu tuo:",
+		"responsum":"Ínsuper osténdit mihi Dóminus semen tuum, allelúja.",
+		"versus":"Qui pascit me ab adolescéntia mea, benedícat púeris istis, et invocétur super eos nomen meum."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","antiphona"],
+		"src":"nocturnale/P2F4N2A",
+		"datum":"Ángelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe púerum et matrem ejus, et vade in terram Ísraël: defúncti sunt enim qui quærébant ánimam púeri, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Réspice de cœlo, et vide, et vísita víneam istam, allelúja.","R. Et pérfice eam, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Bernardíni Senénsis.",
+			"[Serm. 1. de S. Joseph.]/Ómnium singulárium gratiárum alícui rationábili creatúræ communicatárum generális régula est, quod, quandocúmque divína grátia éligit áliquem ad áliquam grátiam singulárem, seu ad áliquem sublímem statum, ómnia charísmata donet, quæ illi persónæ sic eléctæ, et ejus offício necessária sunt, atque illam copióse decórant. Quod máxime verificátum est in sancto Joseph, putatívo patre Dómini nostri Jesu Christi, et vero sponso Regínæ mundi et Dóminæ Angelórum, qui ab ætérno Patre eléctus est fidélis nutrítius, atque custos principálium thesaurórum suórum, scílicet Fílii ejus et sponsæ suæ: quod offícium fidelíssime prosecútus est. Cui proptérea Dóminus ait: Serve bone et fidélis, intra in gaúdium Dómini tui."
+		]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Dedísti mihi protectiónem salútis tuæ, et déxtera tua suscépit me:",
+		"responsum":"Protéctor meus, et cornu salútis meæ, et suscéptor meus, allelúja.",
+		"versus":"Ego protéctor tuus sum, et merces tua magna nimis."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Si cómpares eum ad totam Ecclésiam Christi, nonne iste est homo eléctus et speciális, per quem et sub quo Christus est ordináte et honéste introdúctus in mundum? Si ergo Vírgini Matri tota Ecclésia sancta débitrix est, quia per eam Christum suscípere digna facta est: sic profécto post eam huic debet grátiam et reveréntiam singulárem. Ipse enim est clavis véteris testaménti, in qua patriarchális et prophetális dígnitas promíssum conséquitur fructum. Porro hic est solus, qui corporáliter possédit, quod eis divína dignátio repromísit. Mérito ígitur figurátur per illum patriárcham Joseph, qui pópulis fruménta servávit. Sed et hic illum præcéllit, quia non solum Ægýptiis panem corporális vitæ, sed ómnibus eléctis panem de cœlo, qui cœléstem vitam tríbuit, cum multa solértia enutrívit."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Státuet fílios suos sub tégmine illíus, et sub ramis ejus morábitur: protegétur sub tégmine illíus a fervóre:",
+		"responsum":"Et in glória ejus requiéscet, allelúja.",
+		"versus":"Speráte in eo, omnis congregátio pópuli: effúndite coram illo corda vestra."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"Profécto dubitándum non est, quod Christus familiaritátem, reveréntiam, atque sublimíssimam dignitátem, quam illi exhíbuit, dum ágeret in humánis, tamquam fílius patri suo, in cœlis útique non negávit, quin pótius complévit et consummávit. Unde non immérito in verbo propósito a Dómino subinfértur: Intra in gaúdium Dómini tui. Unde, licet gaúdium ætérnæ beatitúdinis in cor hóminis intret, máluit tamen Dóminus ei dícere: Intra in gaúdium: ut mýstice innuátur, quod gaúdium illud non solum in eo sit intra, sed úndique illum circúmdans et absórbens, et ipsum velut abýssus infiníta submérgens. Meménto ígitur nostri, beáte Joseph, et tuæ oratiónis suffrágio apud tuum putatívum Fílium intercéde: sed et beatíssimam Vírginem sponsam tuam nobis propítiam redde, quæ Mater est ejus, qui cum Patre et Spíritu sancto vivit et regnat per infiníta sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Si consístant advérsum me castra, non timébit cor meum:",
+		"responsum":"Si exsúrgat advérsum me prǽlium, in hoc ego sperábo, allelúja.",
+		"versus":"In te cantátio mea semper, quóniam tu adjútor fortis."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","antiphona"],
+		"src":"nocturnale/P2F4N3A",
+		"datum":"Consúrgens Joseph * accépit púerum et matrem ejus, et venit in terram Ísraël: et habitávit in civitáte quæ vocátur Názareth, allelúja."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Invocávi Dóminum, Patrem Dómini mei, allelúja.","R. Ut non derelínquat me in die tribulatiónis, allelúja."]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 3. d.]/In illo témpore: Factum est autem, cum baptizarétur omnis pópulus, et Jesu baptizáto, et oránte, apértum est cœlum. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Lib. 2. de Consensu Evang.]/Maniféstum est illud quod ait: Ut putabátur fílius Joseph: propter illos dixísse, qui eum ex Joseph, sicut álii hómines nascúntur, natum arbitrántur. Quos autem movet, quod álios progenitóres Matthǽus enúmerat, descéndens a David usque ad Joseph, álios autem Lucas ascéndens a Joseph usque ad David, fácile est ut advértant, duos patres habére potuísse Joseph: unum a quo génitus, álterum a quo fúerit adoptátus. Antíqua est enim consuetúdo adoptándi étiam in illo pópulo Dei, ut sibi fílios fácerent, quos non ipsi genuíssent. Unde intellígitur Lucas patrem Joseph, non a quo génitus, sed a quo fúerat adoptátus, suscepísse in Evangélio suo, cujus progenitóres sursum versus commémorat, donec exíret ad David."
+		]
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Joseph fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu sancto est: páriet autem fílium,",
+		"responsum":"Et vocábis nomen ejus Jesum, allelúja.",
+		"versus":"Ipse enim salvum fáciet pópulum suum a peccátis eórum."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Cum enim necésse sit, utróque Evangelísta vera narránte, et Matthǽo scílicet et Luca, ut unus eórum ejus patris oríginem tenéret, qui genúerat; alter ejus qui adoptáverat Joseph: quem probabílius intellígimus adoptántis oríginem tenuísse quam eum, qui nóluit Joseph génitum dícere ab illo cujus eum fílium esse narrábat? Matthǽus autem dicens: Ábraham génuit Ísaac, Ísaac génuit Jacob, atque ita in hoc verbo, quod est, génuit, persevérans, donec in último díceret, Jacob autem génuit Joseph, satis expréssit ad eum patrem se perduxísse oríginem generántium, a quo Joseph non adoptátus, sed génitus erat.",
+		"lectio-iii":"Quamquam si étiam Lucas génitum díceret Joseph ab Heli, nec sic nos hoc verbum perturbáre debéret, ut áliud crederémus, quam ab uno Evangelísta gignéntem, ab áltero adoptántem patrem fuísse commemorátum. Neque enim absúrde quisque dícitur non carne, sed caritáte genuísse quem fílium sibi adoptáverit. At vero étiam nos quibus dedit Deus potestátem fílios ejus fíeri, de natúra atque substántia sua non nos génuit, sicut únicum Fílium, sed útique dilectióne adoptávit."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Surge, et áccipe púerum et matrem ejus, et fuge in Ægýptum:",
+		"responsum":"Et esto ibi usque dum dicam tibi, allelúja.",
+		"versus":"Ut adimplerétur quod dictum est a Dómino per Prophétam dicéntem: Ex Ægýpto vocávi fílium meum."
 	},
 	{
 		"tags":["patrocinius-joseph","laudes","hymnus"],
