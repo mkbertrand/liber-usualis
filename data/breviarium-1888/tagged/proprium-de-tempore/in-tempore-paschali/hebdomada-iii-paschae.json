@@ -25,6 +25,13 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Íncipit liber Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 1.]/Apocalýpsis Jesu Christi, quam dedit illi Deus palam fácere servis suis, quæ opórtet fíeri cito: et significávit, mittens per Ángelum suum servo suo Joánni, qui testimónium perhíbuit verbo Dei, et testimónium Jesu Christi, quæcúmque vidit. Beátus, qui legit, et audit verba prophetíæ hujus: et servat ea, quæ in ea scripta sunt: tempus enim prope est. Joánnes septem Ecclésiis, quæ sunt in Ásia. Grátia vobis, et pax ab eo, qui est, et qui erat, et qui ventúrus est: et a septem spirítibus, qui in conspéctu throni ejus sunt: et a Jesu Christo, qui est testis fidélis, primogénitus mortuórum, et princeps regum terræ: qui diléxit nos, et lavit nos a peccátis nostris in sánguine suo, et fecit nos regnum, et sacerdótes Deo et Patri suo: ipsi glória, et impérium in sǽcula sæculórum: Amen."
+		]
+	},
+	{
 		"tags":[
 			["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
 			["hebdomada-iii-paschae","feria-v","matutinum","responsorium","responsorium-i"]
@@ -32,6 +39,10 @@
 		"incipit":"Dignus es Dómine accípere librum, et aperíre signácula ejus, allelúja: quóniam occísus es, et redemísti nos Deo",
 		"responsum":"In sánguine tuo, allelúja.",
 		"versus":"Fecísti enim nos Deo nostro regnum, et sacerdótium."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"Ecce venit cum núbibus, et vidébit eum omnis óculus, et qui eum pupugérunt. Et plangent se super eum omnes tribus terræ: Étiam: Amen. Ego sum alpha et oméga, princípium et finis, dicit Dóminus Deus: qui est, et qui erat, et qui ventúrus est, omnípotens. Ego Joánnes frater vester, et párticeps in tribulatióne, et regno, et patiéntia in Christo Jesu: fui in ínsula, quæ appellátur Patmos propter verbum Dei, et testimónium Jesu: fui in spíritu in Domínica die, et audívi post me vocem magnam tamquam tubæ, dicéntis: Quod vides, scribe in libro: et mitte septem Ecclésiis, quæ sunt in Ásia, Épheso, et Smyrnæ, et Pérgamo, et Thyatíræ, et Sardis, et Philadélphiæ, et Laodicíæ."
 	},
 	{
 		"tags":[
@@ -43,10 +54,21 @@
 		"versus":"In me omnis grátia viæ et veritátis: in me omnis spes vitæ et virtútis."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Et convérsus sum ut vidérem vocem, quæ loquebátur mecum: et convérsus vidi septem candelábra aúrea: et in médio septem candelabrórum aureórum símilem fílio hóminis, vestítum podére, et præcínctum ad mamíllas zona aúrea: caput autem ejus et capílli erant cándidi tamquam lana alba, et tamquam nix, et óculi ejus tamquam flamma ignis, et pedes ejus símiles aurichálco, sicut in camíno ardénti, et vox illíus tamquam vox aquárum multárum: et habébat in déxtera sua stellas septem: et de ore ejus gládius utráque parte acútus exíbat: et fácies ejus sicut sol lucet in virtúte sua. Et cum vidíssem eum, cécidi ad pedes ejus tamquam mórtuus. Et pósuit déxteram suam super me, dicens: Noli timére: ego sum primus, et novíssimus, et vivus, et fui mórtuus, et ecce sum vivens in sǽcula sæculórum, et hábeo claves mortis, et inférni. Scribe ergo quæ vidísti, et quæ sunt, et quæ opórtet fíeri post hæc."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
 		"incipit":"Audívi vocem de cœlo, tamquam vocem tonítrui magni, allelúja:",
 		"responsum":"Quia facta est salus, et virtus, et potéstas Christi ejus, allelúja, allelúja.",
 		"versus":"Et vox de throno exívit, dicens: Laudem dícite Deo nostro omnes sancti ejus, et qui timétis Deum pusílli et magni."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","lectio","lectio-i"],
+		"datum":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Sermo 147. de Tempore.]/Diébus his sanctis resurrectióni Dómini dedicátis, quantum donánte ipso póssumus, de carnis resurrectióne tractémus. Hæc enim est fides nostra: hoc donum in Dómini nostri Jesu Christi nobis carne promíssum est, et in ipso præcéssit exémplum. Vóluit enim nobis, quod promísit in fine, non solum prænuntiáre, sed étiam demonstráre. Illi quidem qui tunc fuérunt, cum illum vidérent, et cum expavéscerent, et spíritum se vidére créderent, soliditátem córporis tenuérunt. Locútus est enim non solum verbis ad aures eórum, sed étiam spécie ad óculos eórum: parúmque erat se præbére cernéndum, nisi étiam offérret pertractándum, atque palpándum."
+		]
 	},
 	{
 		"tags":[
@@ -58,6 +80,10 @@
 		"versus":"Et sústulit me in spíritu in montem magnum et altum."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"datum":"Ait enim: Quid turbáti estis, et cogitatiónes ascéndunt in cor vestrum? Putavérunt enim se spíritum vidére. Quid turbáti estis, inquit, et cogitatiónes ascéndunt in cor vestrum? Vidéte manus meas, et pedes meos: palpáte, et vidéte: quia spíritus ossa et carnem non habet, sicut me vidétis habére. Contra istam evidéntiam disputábant hómines. Quid enim áliud fácerent hómines, qui ea, quæ sunt hóminum, sápiunt, quam sic disputáre de Deo contra Deum? Ille enim Deus est, isti hómines sunt. Sed Deus novit cogitatiónes hóminum, quóniam vanæ sunt."
+	},
+	{
 		"tags":[
 			["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 			["hebdomada-iii-paschae","feria-vi","matutinum","responsorium","responsorium-ii"]
@@ -67,10 +93,23 @@
 		"versus":"Vidi Ángelum Dei fortem, volántem per médium cœli, voce magna clamántem et dicéntem."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"datum":"In hómine carnáli tota régula intelligéndi est consuetúdo cernéndi. Quod solent vidére, credunt: quod non solent, non credunt. Præter consuetúdinem facit Deus mirácula, quia Deus est. Majóra quidem mirácula sunt, tot quotídie hómines nasci, qui non erant: quam paucos resurrexísse, qui erant: et tamen ista mirácula non consideratióne comprehénsa sunt, sed assiduitáte viluérunt. Resurréxit Christus: absolúta est res. Corpus erat, caro erat: pepéndit in cruce, emísit ánimam, pósita est caro in sepúlchro. Exhíbuit illam vivam, qui vivébat in illa. Quare mirámur? quare non crédimus? Deus est, qui fecit."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"incipit":"Véniens a Líbano quam pulchra facta est, allelúja.",
 		"responsum":"Et odor vestimentórum ejus super ómnia arómata, allelúja, allelúja.",
 		"versus":"Favus distíllans lábia ejus, mel et lac sub lingua ejus."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-iii","lectio","lectio-i"],
+		"datum":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 16. b.]/In illo témpore: Dixit Jesus discípulis suis: Módicum, et jam non vidébitis me: et íterum módicum, et vidébitis me: quia vado ad Patrem. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 101. in Joann., sub finem.]/Módicum est hoc totum spátium, quo præsens pérvolat sǽculum. Unde dicit idem ipse Evangelísta in Epístola sua: Novíssima hora est. Ídeo namque áddidit: Quia vado ad Patrem: quod ad priórem senténtiam referéndum est, ubi ait: Módicum, et jam non vidébitis me: non ad posteriórem, ubi ait: Et íterum módicum, et vidébitis me. Eúndo quippe ad Patrem, factúrus erat ut eum non vidérent. Ac per hoc non ídeo dictum est, quia fúerat moritúrus, et donec resúrgeret, ab eórum aspéctibus recessúrus: sed quod esset itúrus ad Patrem, quod fecit posteáquam resurréxit, et, cum eis per quadragínta dies conversátus, ascéndit in cœlum."
+		]
 	},
 	{
 		"tags":[
@@ -82,8 +121,16 @@
 		"versus":"Sanctificáti sunt ergo sacerdótes et levítæ: et univérsus Ísraël deducébat arcam fœ\u0301deris Dómini in júbilo."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"datum":"Illis ergo ait: Módicum, et jam non vidébitis me; qui eum corporáliter tunc vidébant: quia itúrus erat ad Patrem, et eum deínceps mortálem visúri non erant, qualem, cum ista loquerétur, vidébant. Quod vero áddidit: Et íterum módicum, et vidébitis me: univérsæ promísit Ecclésiæ, sicut univérsæ promísit: Ecce ego vobíscum sum usque ad consummatiónem sǽculi. Non tardat Dóminus promíssum. Módicum, et vidébimus eum: ubi jam nihil rogémus, nihil interrogémus, quia nihil desiderándum remanébit, nihil quæréndum latébit."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"datum":[["apostolorum-tempore-paschali","nocturna-i","responsorium-ii"]]
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-iii","lectio","lectio-iii"],
+		"datum":"Hoc módicum longum nobis vidétur, quóniam adhuc ágitur: cum finítum fúerit, tunc sentiémus quam módicum fúerit. Non ergo sit gaúdium nostrum quale habet mundus, de quo dictum est: Mundus autem gaudébit. Nec tamen in hujus desidérii parturitióne sine gaúdio tristes simus: sed, sicut ait Apóstolus: Spe gaudéntes: In tribulatióne patiéntes: quia et ipsa partúriens, cui comparáti sumus, plus gaudet de mox futúra prole, quam tristis est de præsénti dolóre. Sed hujus sermónis iste sit finis: habent enim quæstiónem molestíssimam, quæ sequúntur: nec brevitáte coarctánda sunt, ut possint commódius, si Dóminus volúerit, explicári."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","dominica","sexta","capitulum"],
@@ -99,16 +146,31 @@
 		"datum":"Amen dico vobis, * quia plorábitis et flébitis vos: mundus autem gaudébit, vos vero contristabímini: sed tristítia vestra convertétur in gaúdium, allelúja."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-ii","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 2.]/Ángelo Éphesi Ecclésiæ scribe: Hæc dicit, qui tenet septem stellas in déxtera sua, qui ámbulat in médio septem candelabrórum aureórum: Scio ópera tua, et labórem, et patiéntiam tuam, et quia non potes sustinére malos: et tentásti eos, qui se dicunt Apóstolos esse, et non sunt: et invenísti eos mendáces: et patiéntiam habes, et sustinuísti propter nomen meum, et non defecísti. Sed hábeo advérsum te, quod caritátem tuam primam reliquísti. Memor esto ítaque unde excíderis: et age pœniténtiam, et prima ópera fac. Sin autem, vénio tibi, et movébo candelábrum tuum de loco suo, nisi pœniténtiam égeris. Sed hoc habes, quia odísti facta Nicolaitárum, quæ et ego odi. Qui habet aurem, aúdiat quid Spíritus dicat Ecclésiis: Vincénti dabo édere de ligno vitæ, quod est in paradíso Dei mei."
+		]
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-ii","matutinum","responsorium","responsorium-i"],
 		"incipit":"Vidi portam civitátis ad Oriéntem pósitam, et Apostolórum nómina et Agni super eam scripta:",
 		"responsum":"Et super muros ejus Angelórum custódiam, allelúja.",
 		"versus":"Vidi cœlum novum, et terram novam, et civitátem novam descendéntem de cœlo."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-ii","lectio"],
+		"lectio-ii":"Et Ángelo Smyrnæ Ecclésiæ scribe: Hæc dicit primus, et novíssimus, qui fuit mórtuus, et vivit: Scio tribulatiónem tuam, et paupertátem tuam, sed dives es: et blaphemáris ab his, qui se dicunt Judǽos esse, et non sunt, sed sunt synagóga sátanæ. Nihil horum tímeas quæ passúrus es. Ecce missúrus est diábolus áliquos ex vobis in cárcerem ut tentémini: et habébitis tribulatiónem diébus decem. Esto fidélis usque ad mortem, et dabo tibi corónam vitæ. Qui habet aurem, aúdiat quid Spíritus dicat Ecclésiis: Qui vícerit, non lædétur a morte secúnda."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-ii","matutinum","responsorium","responsorium-ii"],
 		"incipit":"Osténdit mihi Ángelus fontem aquæ vivæ, et dixit ad me, allelúja:",
 		"responsum":"Hic Deum adóra, allelúja, allelúja, allelúja.",
 		"versus":"Postquam audíssem et vidíssem, cécidi ut adorárem ante pedes Ángeli, qui mihi hæc ostendébat, et dixit mihi."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-ii","lectio"],
+		"lectio-iii":"Et Ángelo Pérgami Ecclésiæ scribe: Hæc dicit qui habet rhomphǽam utráque parte acútam: Scio ubi hábitas, ubi sedes est sátanæ: et tenes nomen meum, et non negásti fidem meam. Et in diébus illis Antípas testis meus fidélis, qui occísus est apud vos, ubi sátanas hábitat. Sed hábeo advérsus te pauca: quia habes illic tenéntes doctrínam Bálaam, qui docébat Balac míttere scándalum coram fíliis Ísraël, édere, et fornicári: ita habes et tu tenéntes doctrínam Nicolaitárum. Simíliter pœniténtiam age: si quo minus véniam tibi cito, et pugnábo cum illis in gládio oris mei. Qui habet aurem, aúdiat quid Spíritus dicat Ecclésiis: Vincénti dabo manna abscónditum, et dabo illi cálculum cándidum: et in cálculo nomen novum scriptum, quod nemo scit, nisi qui áccipit."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","feria-ii","laudes","antiphona","antiphona-benedictus"],
@@ -121,16 +183,31 @@
 		"datum":"Tristítia vestra * vertétur in gaúdium, allelúja: et gaúdium vestrum nemo tollet a vobis, allelúja, allelúja."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-iii","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 4.]/Post hæc vidi: et ecce óstium apértum in cœlo, et vox prima, quam audívi tamquam tubæ loquéntis mecum, dicens: Ascénde huc, et osténdam tibi quæ opórtet fíeri post hæc. Et statim fui in spíritu: et ecce sedes pósita erat in cœlo, et supra sedem sedens. Et qui sedébat, símilis erat aspéctui lápidis jáspidis, et sárdinis: et iris erat in circúitu sedis símilis visióni smarágdinæ. Et in circúitu sedis sedília vigintiquátuor: et super thronos vigintiquátuor senióres sedéntes, circumamícti vestiméntis albis, et in capítibus eórum corónæ aúreæ. Et de throno procedébant fúlgura, et voces, et tonítrua: et septem lámpades ardéntes ante thronum, qui sunt septem spíritus Dei."
+		]
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-iii","matutinum","responsorium","responsorium-i"],
 		"incipit":"Vidi Jerúsalem descendéntem de cœlo, ornátam auro mundo, et lapídibus pretiósis intéxtam:",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et erat structúra muri ejus ex lápide jáspide; ipsa vero aurum mundum, símile vitro mundo."
 	},
 	{
-		"tags":["hebdomada-iii-paschae","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"tags":["hebdomada-iii-paschae","feria-iii","lectio"],
+		"lectio-ii":"Et in conspéctu sedis tamquam mare vítreum símile crystállo: et in médio sedis, et in circúitu sedis quátuor animália plena óculis ante et retro. Et ánimal primum símile leóni, et secúndum ánimal símile vítulo, et tértium ánimal habens fáciem quasi hóminis, et quartum ánimal símile áquilæ volánti. Et quátuor animália síngula eórum habébant alas senas: et in circúitu, et intus plena sunt óculis: et réquiem non habébant die ac nocte, dicéntia: Sanctus, Sanctus, Sanctus Dóminus Deus omnípotens, qui erat, et qui est, et qui ventúrus est."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-iii","matutinum","responsorium","responsorium-ii"],
 		"incipit":"In diadémate cápitis Áaron magnificéntia Dómini sculpta erat:",
 		"responsum":"Dum perficerétur opus Dei, allelúja, allelúja, allelúja.",
 		"versus":"In veste enim podéris quam habébat, totus erat orbis terrárum, et paréntum magnália in quátuor ordínibus lápidum sculpta erant."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-iii","lectio"],
+		"lectio-iii":"Et cum darent illa animália glóriam, et honórem, et benedictiónem sedénti super thronum, vivénti in sǽcula sæculórum, procidébant vigínti quátuor senióres ante sedéntem in throno, et adorábant vivéntem in sǽcula sæculórum, et mittébant corónas suas ante thronum dicéntes: Dignus es Dómine Deus noster accípere glóriam, et honórem, et virtútem: quia tu creásti ómnia, et propter voluntátem tuam erant, et creáta sunt."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","feria-iii","laudes","antiphona","antiphona-benedictus"],
@@ -143,10 +220,22 @@
 		"datum":"Tristítia implévit * cor vestrum: et gaúdium vestrum nemo tollet a vobis, allelúja, allelúja."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-iv","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 5.]/Et vidi in déxtera sedéntis supra thronum, librum scriptum intus et foris, signátum sigíllis septem. Et vidi Ángelum fortem, prædicántem voce magna: Quis est dignus aperíre librum, et sólvere signácula ejus? Et nemo póterat neque in cœlo, neque in terra, neque subtus terram aperíre librum, neque respícere illum. Et ego flebam multum, quóniam nemo dignus invéntus est aperíre librum, nec vidére eum. Et unus de senióribus dixit mihi: Ne fléveris: ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus. Et vidi: et ecce in médio throni et quátuor animálium, et in médio seniórum, Agnum stantem tamquam occísum, habéntem córnua septem, et óculos septem: qui sunt septem spíritus Dei, missi in omnem terram. Et venit, et accépit de déxtera sedéntis in throno librum."
+		]
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-iv","matutinum","responsorium","responsorium-i"],
 		"incipit":"Platéæ tuæ Jerúsalem sternéntur auro mundo, allelúja: et cantábitur in te cánticum lætítiæ, allelúja:",
 		"responsum":"Et per omnes vicos tuos ab univérsis dicétur, allelúja, allelúja.",
 		"versus":"Luce spléndida fulgébis, et omnes fines terræ adorábunt te."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-iv","lectio"],
+		"lectio-ii":"Et cum aperuísset librum quátuor animália, et vigínti quátuor senióres cecidérunt coram Agno, habéntes sínguli cítharas, et phíalas aúreas plenas odoramentórum, quæ sunt oratiónes sanctórum: et cantábant cánticum novum, dicéntes: Dignus es Dómine accípere librum, et aperíre signácula ejus: quóniam occísus es, et redemísti nos Deo in sánguine tuo ex omni tribu, et lingua, et pópulo, et natióne: et fecísti nos Deo nostro regnum, et sacerdótes: et regnábimus super terram.",
+		"lectio-iii":"Et vidi, et audívi vocem Angelórum multórum in circúitu throni, et animálium, et seniórum: et erat númerus eórum míllia míllium, dicéntium voce magna: Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem, et glóriam, et benedictiónem. Et omnem creatúram, quæ in cœlo est, et super terram, et sub terra, et quæ sunt in mari, et quæ in eo: omnes audívi dicéntes: Sedénti in throno, et Agno: benedíctio, et honor, et glória, et potéstas in sǽcula sæculórum. Et quátuor animália dicébant: Amen. Et vigínti quátuor senióres cecidérunt in fácies suas: et adoravérunt vivéntem in sǽcula sæculórum."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","feria-iv","laudes","antiphona","antiphona-benedictus"],
@@ -159,6 +248,15 @@
 		"datum":"Tristítia vestra, * allelúja, vertétur in gaúdium, allelúja."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-v","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 15.]/Et vidi áliud signum in cœlo magnum, et mirábile, Ángelos septem, habéntes plagas septem novíssimas: Quóniam in illis consummáta est ira Dei. Et vidi tamquam mare vítreum mistum igne, et eos, qui vicérunt béstiam, et imáginem ejus, et númerum nóminis ejus, stantes super mare vítreum, habéntes cítharas Dei: et cantántes cánticum Móysi servi Dei, et cánticum Agni, dicéntes: Magna, et mirabília sunt ópera tua Dómine Deus omnípotens: justæ et veræ sunt viæ tuæ, Rex sæculórum. Quis non timébit te Dómine, et magnificábit nomen tuum? quia solus pius es: quóniam omnes gentes vénient, et adorábunt in conspéctu tuo, quóniam judícia tua manifésta sunt."
+		],
+		"lectio-ii":"Et post hæc vidi, et ecce apértum est templum tabernáculi testimónii in cœlo: et exiérunt septem Ángeli habéntes septem plagas de templo, vestíti lino mundo et cándido, et præcíncti circa péctora zonis aúreis. Et unum de quátuor animálibus dedit septem Ángelis septem phíalas aúreas, plenas iracúndiæ Dei vivéntis in sǽcula sæculórum. Et implétum est templum fumo a majestáte Dei, et de virtúte ejus: et nemo póterat introíre in templum, donec consummaréntur septem plagæ septem Angelórum.",
+		"lectio-iii":"[Apoc. 16.]/Et audívi vocem magnam de templo, dicéntem septem Ángelis: Ite, et effúndite septem phíalas iræ Dei in terram. Et ábiit primus, et effúdit phíalam suam in terram, et factum est vulnus sævum, et péssimum in hómines, qui habébant charactérem béstiæ: et in eos, qui adoravérunt imáginem ejus. Et secúndus Ángelus effúdit phíalam suam in mare, et factus est sanguis tamquam mórtui: et omnis ánima vivens mórtua est in mari. Et tértius effúdit phíalam suam super flúmina, et super fontes aquárum, et factus est sanguis. Et audívi Ángelum aquárum dicéntem: Justus es Dómine, qui es, et qui eras sanctus, qui hæc judicásti: quia sánguinem Sanctórum et Prophetárum effudérunt, et sánguinem eis dedísti bíbere: digni enim sunt."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-v","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/13087",
 		"datum":"Et intrávit * cum illis: et factum est, dum recúmberet cum illis, accépit panem et benedíxit, ac fregit, et porrigébat illis, allelúja, allelúja."
@@ -169,8 +267,26 @@
 		"datum":"Amen amen dico vobis, * íterum vidébo vos, et gaudébit cor vestrum, et gaúdium vestrum nemo tollet a vobis, allelúja."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-vi","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 19.]/Post hæc audívi quasi vocem turbárum multárum in cœlo dicéntium: Allelúja: Salus, et glória, et virtus Deo nostro est: quia vera, et justa judícia sunt ejus, qui judicávit de meretríce magna, quæ corrúpit terram in prostitutióne sua, et vindicávit sánguinem servórum suórum de mánibus ejus. Et íterum dixérunt: Allelúja. Et fumus ejus ascéndit in sǽcula sæculórum. Et cecidérunt senióres vigintiquátuor, et quátuor animália, et adoravérunt Deum sedéntem super thronum, dicéntes: Amen: Allelúja. Et vox de throno exívit, dicens: Laudem dícite Deo nostro omnes servi ejus: et qui timétis eum, pusílli et magni."
+		],
+		"lectio-ii":"Et audívi quasi vocem turbæ magnæ, et sicut vocem aquárum multárum, et sicut vocem tonitruórum magnórum, dicéntium: Allelúja: quóniam regnávit Dóminus Deus noster omnípotens. Gaudeámus, et exsultémus, et demus glóriam ei: quia venérunt núptiæ Agni, et uxor ejus præparávit se. Et datum est illi ut coopériat se býssino splendénti et cándido. Býssinum enim justificatiónes sunt Sanctórum. Et dixit mihi: Scribe: Beáti qui ad cœnam nuptiárum Agni vocáti sunt. Et dixit mihi: Hæc verba Dei vera sunt. Et cécidi ante pedes ejus, ut adorárem eum. Et dicit mihi: Vide ne féceris: consérvus tuus sum, et fratrum tuórum habéntium testimónium Jesu. Deum adóra. Testimónium enim Jesu est spíritus prophetíæ.",
+		"lectio-iii":"Et vidi cœlum apértum, et ecce equus albus, et qui sedébat super eum, vocabátur Fidélis, et Verax, et cum justítia júdicat, et pugnat. Óculi autem ejus sicut flamma ignis, et in cápite ejus diadémata multa, habens nomen scriptum, quod nemo novit nisi ipse. Et vestítus erat veste aspérsa sánguine: et vocátur nomen ejus, Verbum Dei. Et exércitus qui sunt in cœlo, sequebántur eum in equis albis, vestíti býssino albo, et mundo. Et de ore ejus procédit gládius ex utráque parte acútus: ut in ipso percútiat Gentes. Et ipse reget eas in virga férrea: et ipse calcat tórcular vini furóris iræ Dei omnipoténtis. Et habet in vestiménto, et in fémore suo scriptum: Rex regum, et Dóminus dominántium."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-vi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11845",
 		"datum":"Cognovérunt * Dóminum Jesum, allelúja, in fractióne panis, allelúja."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","sabbatum","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 22.]/Et osténdit mihi flúvium aquæ vitæ, spléndidum tamquam crystállum, procedéntem de sede Dei et Agni. In médio platéæ ejus, et ex utráque parte flúminis lignum vitæ, áfferens fructus duódecim, per menses síngulos reddens fructum suum, et fólia ligni ad sanitátem Géntium. Et omne maledíctum non erit ámplius: sed sedes Dei et Agni in illa erunt, et servi ejus sérvient illi. Et vidébunt fáciem ejus: et nomen ejus in fróntibus eórum. Et nox ultra non erit: et non egébunt lúmine lucérnæ, neque lúmine solis, quóniam Dóminus Deus illuminábit illos, et regnábunt in sǽcula sæculórum. Et dixit mihi: Hæc verba fidelíssima sunt, et vera. Et Dóminus Deus spirítuum prophetárum misit Ángelum suum osténdere servis suis quæ opórtet fíeri cito. Et ecce vénio velóciter. Beátus, qui custódit verba prophetíæ libri hujus."
+		],
+		"lectio-ii":"Et ego Joánnes, qui audívi, et vidi hæc. Et postquam audíssem, et vidíssem, cécidi ut adorárem ante pedes Ángeli, qui mihi hæc ostendébat: et dixit mihi: Vide ne féceris: consérvus enim tuus sum, et fratrum tuórum prophetárum, et eórum, qui servant verba prophetíæ libri hujus: Deum adóra. Et dicit mihi: Ne signáveris verba prophetíæ libri hujus: tempus enim prope est. Qui nocet, nóceat adhuc: et qui in sórdibus est, sordéscat adhuc: et qui justus est, justificétur adhuc: et sanctus, sanctificétur adhuc. Ecce vénio cito, et merces mea mecum est, réddere unicuíque secúndum ópera sua.",
+		"lectio-iii":"Ego sum alpha et oméga, primus et novíssimus, princípium et finis. Beáti, qui lavant stolas suas in sánguine Agni: ut sit potéstas eórum in ligno vitæ, et per portas intrent in civitátem. Foris canes, et venéfici, et impudíci, et homicídæ, et idólis serviéntes, et omnis, qui amat, et facit mendácium. Ego Jesus misi Ángelum meum, testificári vobis hæc in Ecclésiis. Ego sum radix, et genus David, stella spléndida et matutína. Et spíritus, et sponsa dicunt: Veni. Et qui audit, dicat: Veni. Et qui sitit, véniat: et qui vult, accípiat aquam vitæ, gratis. Contéstor enim omni audiénti verba prophetíæ libri hujus: Si quis apposúerit ad hæc, appónet Deus super illum plagas scriptas in libro isto. Et si quis diminúerit de verbis libri prophetíæ hujus, aúferet Deus partem ejus de libro vitæ, et de civitáte sancta, et de his, quæ scripta sunt in libro isto. Dicit qui testimónium pérhibet istórum. Étiam vénio cito: Amen. Veni Dómine Jesu. Grátia Dómini nostri Jesu Christi cum ómnibus vobis. Amen."
 	}
 ]
