@@ -9,7 +9,7 @@
 	},
 	{
 		"tags":["hebdomada-iv-paschae","dominica","capitulum"],
-		"datum":"Caríssimi: Omne datum óptimum, et omne donum perféctum desúrsum est, descéndens a Patre lúminum, + apud quem non est transmutátio, * vec vicissitúdinis obumbrátio."
+		"datum":"[Jacobi 1. c.]/Caríssimi: Omne datum óptimum, et omne donum perféctum desúrsum est, descéndens a Patre lúminum, + apud quem non est transmutátio, * vec vicissitúdinis obumbrátio."
 	},
 	{
 		"tags":[
@@ -25,17 +25,97 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":[
+			["hebdomada-iv-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomada-iv-paschae","feria-v","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Si oblítus fúero tui, allelúja, obliviscátur mei déxtera mea:",
+		"responsum":"Adhǽreat lingua mea faúcibus meis, si non memínero tui, allelúja, allelúja.",
+		"versus":"Super flúmina Babylónis illic sédimus et flévimus, dum recordarémur tui Sion."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-iv-paschae","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Vidérunt te aquæ, Deus, vidérunt te aquæ, et timuérunt:",
+		"responsum":"Multitúdo sónitus aquárum vocem dedérunt nubes, allelúja, allelúja, allelúja.",
+		"versus":"Illuxérunt coruscatiónes tuæ orbi terræ: vidit et commóta est terra."
+	},
+	{
+		"tags":["hebdomada-iv-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Narrábo nomen tuum frátribus meis, allelúja:",
+		"responsum":"In médio Ecclésiæ laudábo te, allelúja, allelúja.",
+		"versus":"Confitébor tibi in pópulis Dómine, et psalmum dicam tibi in Géntibus."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-iv-paschae","feria-iii","matutinum","responsorium","responsorium-i"],
+			["hebdomada-iv-paschae","feria-vi","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"In ecclésiis benedícite Deo, allelúja,",
+		"responsum":"Dómino de fóntibus Ísraël, allelúja, allelúja.",
+		"versus":"Psalmum dícite nómini ejus, date glóriam laudi ejus."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-iv-paschae","feria-iii","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-iv-paschae","feria-vi","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"In toto corde meo, allelúja, exquisívi te, allelúja:",
+		"responsum":"Ne repéllas me a mandátis tuis, allelúja, allelúja.",
+		"versus":"Benedíctus es tu Dómine, doce me justificatiónes tuas."
+	},
+	{
+		"tags":["hebdomada-iv-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Hymnum cantáte nobis, allelúja:",
+		"responsum":"Quómodo cantábimus cánticum Dómini in terra aliéna? allelúja, allelúja.",
+		"versus":"Illic interrogavérunt nos, qui captívos duxérunt nos, verba cantiónum."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-paschae","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-iv-paschae","feria-iv","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Deus cánticum novum cantábo tibi, allelúja:",
+		"responsum":"In psaltério decem chordárum psallam tibi, allelúja, allelúja.",
+		"versus":"Deus meus es tu, et confitébor tibi: Deus meus es tu, et exaltábo te."
+	},
+	{
+		"tags":[
+			["hebdomada-iv-paschae","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["hebdomada-iv-paschae","feria-iv","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Bonum est confitéri Dómino, allelúja:",
+		"responsum":"Et psállere, allelúja.",
+		"versus":"In decachórdo psaltério, cum cántico et cíthara."
+	},
+	{
 		"tags":["hebdomada-iv-paschae","dominica","sexta","capitulum"],
-		"datum":"Scitis fratres mei dilectíssimi. + Sit autem omnis homo velox ad audiéndum: tardus autem ad loquéndum, et tardus ad iram. * Ira enim viri justítiam Dei non operátur."
+		"datum":"[Jacobi 1. c.]/Scitis fratres mei dilectíssimi. + Sit autem omnis homo velox ad audiéndum: tardus autem ad loquéndum, et tardus ad iram. * Ira enim viri justítiam Dei non operátur."
 	},
 	{
 		"tags":["hebdomada-iv-paschae","dominica","nona","capitulum"],
-		"datum":"Propter quod abjiciéntes omnem immundítiam, et abundántiam malítiæ, + in mansuetúdine suscípite ínsitum verbum, * quod potest salváre ánimas vestras."
+		"datum":"[Jacobi 1. d.]/Propter quod abjiciéntes omnem immundítiam, et abundántiam malítiæ, + in mansuetúdine suscípite ínsitum verbum, * quod potest salváre ánimas vestras."
 	},
 	{
 		"tags":["hebdomada-iv-paschae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2168",
 		"datum":"Vado ad eum * qui misit me: sed quia hæc locútus sum vobis, tristítia implévit cor vestrum, allelúja."
+	},
+	{
+		"tags":["hebdomada-iv-paschae","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Dicant nunc, qui redémpti sunt, allelúja,",
+		"responsum":"A Dómino, allelúja, allelúja.",
+		"versus":"Quos redémit de manu inimíci, et de regiónibus congregávit eos."
+	},
+	{
+		"tags":["hebdomada-iv-paschae","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Cantáte Dómino, allelúja:",
+		"responsum":"Psalmum dícite ei, allelúja.",
+		"versus":"Afférte Dómino glóriam et honórem, afférte Dómino glóriam nómini ejus."
 	},
 	{
 		"tags":["hebdomada-iv-paschae","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],

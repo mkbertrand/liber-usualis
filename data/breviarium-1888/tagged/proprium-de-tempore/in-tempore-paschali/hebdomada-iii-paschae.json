@@ -9,7 +9,7 @@
 	},
 	{
 		"tags":["hebdomada-iii-paschae","dominica","capitulum"],
-		"datum":"Caríssimi: Óbsecro vos tamquam ádvenas et peregrínos + abstinére vos a carnálibus desidériis, * quæ mílitant advérsus ánimam."
+		"datum":"[I. Petr. 2. c.]/Caríssimi: Óbsecro vos tamquam ádvenas et peregrínos + abstinére vos a carnálibus desidériis, * quæ mílitant advérsus ánimam."
 	},
 	{
 		"tags":[
@@ -25,17 +25,90 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":[
+			["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+			["hebdomada-iii-paschae","feria-v","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Dignus es Dómine accípere librum, et aperíre signácula ejus, allelúja: quóniam occísus es, et redemísti nos Deo",
+		"responsum":"In sánguine tuo, allelúja.",
+		"versus":"Fecísti enim nos Deo nostro regnum, et sacerdótium."
+	},
+	{
+		"tags":[
+			["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-iii-paschae","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Ego sicut vitis fructificávi suavitátem odóris, allelúja:",
+		"responsum":"Transíte ad me omnes qui concupíscitis me, et a generatiónibus meis adimplémini, allelúja, allelúja.",
+		"versus":"In me omnis grátia viæ et veritátis: in me omnis spes vitæ et virtútis."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Audívi vocem de cœlo, tamquam vocem tonítrui magni, allelúja:",
+		"responsum":"Quia facta est salus, et virtus, et potéstas Christi ejus, allelúja, allelúja.",
+		"versus":"Et vox de throno exívit, dicens: Laudem dícite Deo nostro omnes sancti ejus, et qui timétis Deum pusílli et magni."
+	},
+	{
+		"tags":[
+			["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-iii-paschae","feria-vi","matutinum","responsorium","responsorium-i"]
+		],
+		"incipit":"Locútus est ad me unus ex septem Ángelis, dicens: Veni, osténdam tibi novam nuptam, sponsam Agni:",
+		"responsum":"Et vidi Jerúsalem descendéntem de cœlo, ornátam monílibus suis, allelúja, allelúja, allelúja.",
+		"versus":"Et sústulit me in spíritu in montem magnum et altum."
+	},
+	{
+		"tags":[
+			["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-iii-paschae","feria-vi","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Audívi vocem in cœlo Angelórum multórum dicéntium:",
+		"responsum":"Timéte Dóminum, et date claritátem illi, et adoráte eum qui fecit cœlum et terram, mare et fontes aquárum, allelúja, allelúja.",
+		"versus":"Vidi Ángelum Dei fortem, volántem per médium cœli, voce magna clamántem et dicéntem."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Véniens a Líbano quam pulchra facta est, allelúja.",
+		"responsum":"Et odor vestimentórum ejus super ómnia arómata, allelúja, allelúja.",
+		"versus":"Favus distíllans lábia ejus, mel et lac sub lingua ejus."
+	},
+	{
+		"tags":[
+			["hebdomada-iii-paschae","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-iii-paschae","feria-iv","matutinum","responsorium","responsorium-ii"]
+		],
+		"incipit":"Decantábat pópulus Ísraël, allelúja: et univérsa multitúdo Jacob canébat legítime:",
+		"responsum":"Et David cum cantóribus cítharam percutiébat in domo Dómini, et laudes Deo canébat, allelúja, allelúja.",
+		"versus":"Sanctificáti sunt ergo sacerdótes et levítæ: et univérsus Ísraël deducébat arcam fœ\u0301deris Dómini in júbilo."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"datum":[["apostolorum-tempore-paschali","nocturna-i","responsorium-ii"]]
+	},
+	{
 		"tags":["hebdomada-iii-paschae","dominica","sexta","capitulum"],
-		"datum":"Subjécti ígitur estóte omni humánæ creatúræ propter Deum: + sive regi quasi præcellénti: * sive dúcibus tamquam ab eo missis ad vindíctam malefactórum, laudem vero bonórum."
+		"datum":"[I. Petr. 2. c.]/Subjécti ígitur estóte omni humánæ creatúræ propter Deum: + sive regi quasi præcellénti: * sive dúcibus tamquam ab eo missis ad vindíctam malefactórum, laudem vero bonórum."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","dominica","nona","capitulum"],
-		"datum":"Servi súbditi estóte in omni timóre dóminis, + non tantum bonis et modéstis, sed étiam dýscolis. * Hæc est enim grátia in Christo Jesu Dómino nostro."
+		"datum":"[I. Petr. 2. c.]/Servi súbditi estóte in omni timóre dóminis, + non tantum bonis et modéstis, sed étiam dýscolis. * Hæc est enim grátia in Christo Jesu Dómino nostro."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/19819",
 		"datum":"Amen dico vobis, * quia plorábitis et flébitis vos: mundus autem gaudébit, vos vero contristabímini: sed tristítia vestra convertétur in gaúdium, allelúja."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-ii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Vidi portam civitátis ad Oriéntem pósitam, et Apostolórum nómina et Agni super eam scripta:",
+		"responsum":"Et super muros ejus Angelórum custódiam, allelúja.",
+		"versus":"Vidi cœlum novum, et terram novam, et civitátem novam descendéntem de cœlo."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Osténdit mihi Ángelus fontem aquæ vivæ, et dixit ad me, allelúja:",
+		"responsum":"Hic Deum adóra, allelúja, allelúja, allelúja.",
+		"versus":"Postquam audíssem et vidíssem, cécidi ut adorárem ante pedes Ángeli, qui mihi hæc ostendébat, et dixit mihi."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","feria-ii","laudes","antiphona","antiphona-benedictus"],
@@ -48,6 +121,18 @@
 		"datum":"Tristítia vestra * vertétur in gaúdium, allelúja: et gaúdium vestrum nemo tollet a vobis, allelúja, allelúja."
 	},
 	{
+		"tags":["hebdomada-iii-paschae","feria-iii","matutinum","responsorium","responsorium-i"],
+		"incipit":"Vidi Jerúsalem descendéntem de cœlo, ornátam auro mundo, et lapídibus pretiósis intéxtam:",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et erat structúra muri ejus ex lápide jáspide; ipsa vero aurum mundum, símile vitro mundo."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-ii","matutinum","responsorium","responsorium-ii"],
+		"incipit":"In diadémate cápitis Áaron magnificéntia Dómini sculpta erat:",
+		"responsum":"Dum perficerétur opus Dei, allelúja, allelúja, allelúja.",
+		"versus":"In veste enim podéris quam habébat, totus erat orbis terrárum, et paréntum magnália in quátuor ordínibus lápidum sculpta erant."
+	},
+	{
 		"tags":["hebdomada-iii-paschae","feria-iii","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12726",
 		"datum":"Et coëgérunt * illum, dicéntes: Mane nobíscum Dómine, quóniam advesperáscit, allelúja."
@@ -56,6 +141,12 @@
 		"tags":["hebdomada-iii-paschae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12906",
 		"datum":"Tristítia implévit * cor vestrum: et gaúdium vestrum nemo tollet a vobis, allelúja, allelúja."
+	},
+	{
+		"tags":["hebdomada-iii-paschae","feria-iv","matutinum","responsorium","responsorium-i"],
+		"incipit":"Platéæ tuæ Jerúsalem sternéntur auro mundo, allelúja: et cantábitur in te cánticum lætítiæ, allelúja:",
+		"responsum":"Et per omnes vicos tuos ab univérsis dicétur, allelúja, allelúja.",
+		"versus":"Luce spléndida fulgébis, et omnes fines terræ adorábunt te."
 	},
 	{
 		"tags":["hebdomada-iii-paschae","feria-iv","laudes","antiphona","antiphona-benedictus"],

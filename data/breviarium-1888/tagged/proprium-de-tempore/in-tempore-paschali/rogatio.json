@@ -3,7 +3,23 @@
 		"tags":["nomen"],
 		"feria-ii-rogationis":"Feria II in Rogationibus",
 		"feria-iii-rogationis":"Feria III in Rogationibus",
-		"feria-iv-rogationis":"Feria IV in Rogationibus Vigilia Ascensionis"
+		"feria-iv-rogationis":"Feria IV in Rogationibus. Vigilia Ascensionis"
+	},
+	{
+		"tags":["matutinum","nocturnae","feria-ii-rogationis"],
+		"datum":[["matutinum","nocturna","duodecim-psalmi","una-antiphona"],"[Hac nocte dicitur tertium Responsorium, quia non dicitur [Te Deum laudámus.] In duabus vero sequentibus Feriis dicitur.]"]
+	},
+	{
+		"tags":["feria-ii-rogationis","matutinum","responsorium","responsorium-i"],
+		"datum":[["hebdomada-iv-paschae","feria-ii","matutinum","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["feria-ii-rogationis","matutinum","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-iv-paschae","feria-ii","matutinum","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["feria-ii-rogationis","matutinum","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-iv-paschae","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"]]
 	},
 	{
 		"tags":["feria-ii-rogationis","laudes","antiphona","antiphona-benedictus"],
@@ -27,6 +43,10 @@
 		"datum":"Ipse enim Pater amat * vos, quia vos me amástis, et credidístis, allelúja."
 	},
 	{
+		"tags":["feria-iii-rogationis","matutinum","responsorium"],
+		"datum":[["hebdomada-iv-paschae","feria-iii","responsorium"]]
+	},
+	{
 		"tags":["feria-iii-rogationis","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12136",
 		"datum":"Oportébat * pati Christum, et resúrgere a mórtuis, allelúja."
@@ -35,6 +55,10 @@
 		"tags":["feria-iii-rogationis","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12035",
 		"datum":"Exívi a Patre, * et veni in mundum: íterum relínquo mundum, et vado ad Patrem, allelúja."
+	},
+	{
+		"tags":["feria-iv-rogationis","matutinum","responsorium"],
+		"datum":[["hebdomada-iv-paschae","feria-iv","responsorium"]]
 	},
 	{
 		"tags":["feria-iv-rogationis","laudes","antiphona","antiphona-benedictus"],
