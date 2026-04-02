@@ -107,7 +107,10 @@
 		]
 	},
 	{
-		"tags":["matutinum","nocturnae"],
+		"tags":[
+			["matutinum","nocturnae"],
+			["matutinum","nocturnae","ascensio"]
+		],
 		"datum":[
 			["matutinum","nocturna","nocturna-i","tres-psalmi","tres-antiphonae"],
 			["matutinum","nocturna","nocturna-ii","tres-psalmi","tres-antiphonae"],

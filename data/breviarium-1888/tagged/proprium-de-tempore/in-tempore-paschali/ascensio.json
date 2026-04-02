@@ -38,7 +38,7 @@
 	},
 	{
 		"tags":["ascensio","capitulum"],
-		"datum":"Primum quidem sermónem feci de ómnibus, o Theóphile, + quæ cœpit Jesus fácere, et docére usque in diem, qua præcípiens Apóstolis per Spíritum sanctum, quos elégit, * assúmptus est."
+		"datum":"[Act. 1.]/Primum quidem sermónem feci de ómnibus, o Theóphile, + quæ cœpit Jesus fácere, et docére usque in diem, qua præcípiens Apóstolis per Spíritum sanctum, quos elégit, * assúmptus est."
 	},
 	{
 		"tags":[
@@ -58,7 +58,8 @@
 		"tags":[
 			["ascensio","i-vesperae","versiculus"],
 			["ascensio","dies-iii","ii-vesperae","commemoratio","versiculus"],
-			["ascensio","dies-iv","commemoratio","versiculus"]
+			["ascensio","dies-iv","commemoratio","versiculus"],
+			["ascensio","matutinum","nocturna-i","versiculus"]
 		],
 		"datum":["V. Ascéndit Deus in jubilatióne, allelúja.","R. Et Dóminus in voce tubæ, allelúja."]
 	},
@@ -71,6 +72,204 @@
 		"tags":["ascensio","collecta"],
 		"datum":"Concéde, quǽsumus omnípotens Deus: + ut qui hodiérna die Unigénitum tuum Redemptórem nostrum ad cœlos ascendísse crédimus, * ipsi quoque mente in cœléstibus habitémus.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["ascensio","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Allelúja, Christum Dóminum ascendéntem in cœlum, * Veníte adorémus, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","hymnus"],
+		"datum":[
+			"Ætérne Rex altíssime,/Redémptor et fidélium,/Cui mors perémpta détulit/Summæ triúmphum glóriæ.",
+			"Ascéndis orbes síderum,/Quo te vocábat cœ\u0301litus/Colláta, non humánitus/Rerum potéstas ómnium.",
+			"Ut trina rerum, máchina,/Cœléstium, terréstrium,/Et inferórum cóndita,/Flectat genu jam súbdita.",
+			"Tremunt vidéntes Ángeli/Versam vicem mortálium:/Peccat caro, mundat caro,/Regnat Deus Dei caro.",
+			"Sis ipse nostrum gaúdium,/Manens olýmpo prǽmium,/Mundi regis qui fábricam,/Mundána vincens gaúdia.",
+			"Hinc te precántes quǽsumus,/Ignósce culpis ómnibus,/Et corda sursum súbleva/Ad te supérna grátia.",
+			"Ut cum repénte cœ\u0301peris/Clarére nube júdicis,/Pœnas repéllas débitas,/Reddas corónas pérditas.",
+			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
+		]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Eleváta est * magnificéntia tua super cœlos Deus, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Dóminus in templo * sancto suo, Dóminus in cœlo, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-x,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"A summo cœlo * egréssio ejus, et occúrsus ejus usque ad summum ejus, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xviii,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Íncipit liber Áctuum Apostolórum.",
+			"[Act. 1.]/Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere, et docére usque in diem, qua præcípiens Apóstolis per Spíritum sanctum, quos elégit, assúmptus est: quibus et prǽbuit seípsum vivum post passiónem suam in multis arguméntis, per dies quadragínta appárens eis, et loquens de regno Dei. Et convéscens, præcépit eis ab Jerosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu sancto non post multos hos dies."
+		]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Post passiónem suam per dies quadragínta appárens eis, et loquens de regno Dei, allelúja:",
+		"responsum":"Et vidéntibus illis elevátus est, allelúja: et nubes suscépit eum ab óculis eórum, allelúja.",
+		"versus":"Et convéscens præcépit eis, ab Jerosólymis ne discéderent, sed exspectárent promissiónem Patris."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"Ígitur qui convénerant, interrogábant eum, dicéntes: Dómine si in témpore hoc restítues regnum Ísraël? Dixit autem eis: Non est vestrum nosse témpora vel moménta, quæ Pater pósuit in sua potestáte: sed accipiétis virtútem superveniéntis Spíritus sancti in vos, et éritis mihi testes in Jerúsalem, et in omni Judǽa, et Samaría, et usque ad últimum terræ. Et cum hæc dixísset, vidéntibus illis elevátus est: et nubes suscépit eum ab óculis eórum."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Omnis pulchritúdo Dómini exaltáta est super sídera:",
+		"responsum":"Spécies ejus in núbibus cœli, et nomen ejus in ætérnum pérmanet, allelúja.",
+		"versus":"A summo cœlo egréssio ejus, et occúrsus ejus usque ad summum ejus."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Cumque intueréntur in cœlum eúntem illum, ecce duo viri astitérunt juxta illos in véstibus albis, qui et dixérunt: Viri Galilǽi quid statis aspiciéntes in cœlum? Hic Jesus qui assúmptus est a vobis in cœlum, sic véniet quemádmodum vidístis eum eúntem in cœlum. Tunc revérsi sunt Jerosólymam a monte, qui vocátur Olivéti, qui est juxta Jerúsalem, sábbati habens iter. Et cum introíssent in cœnáculum, ascendérunt ubi manébant Petrus et Joánnes, Jacóbus et Andréas, Philíppus et Thomas, Bartholomǽus et Matthǽus, Jacóbus Alphǽi et Simon Zelótes, et Judas Jacóbi. Hi omnes erant perseverántes unanímiter in oratióne cum muliéribus, et María matre Jesu, et frátribus ejus."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Exaltáre Dómine, allelúja,",
+		"responsum":"In virtúte tua, allelúja.",
+		"versus":"Eleváta est magnificéntia tua super cœlos Deus."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Exaltáre Dómine * in virtúte tua: cantábimus, et psallémus, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Exaltábo te * Dómine, quóniam suscepísti me, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xxix,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xlvi,gloria"]]
+	},
+	{
+		"tags":[
+			["ascensio","tertia","versiculus"],
+			["ascensio","matutinum","nocturna-ii","versiculus"]
+		],
+		"datum":["V. Ascéndens Christus in altum, allelúja.","R. Captívam duxit captivitátem, allelúja."]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Leónis Papæ.",
+			"[Sermone 1. de Ascensione Domini.]/Post beátam et gloriósam resurrectiónem Dómini nostri Jesu Christi, qua verum Dei templum Judáica impietáte resolútum, divína in tríduo poténtia suscitávit, quadragenárius hódie, dilectíssimi, sanctórum diérum explétus est númerus, sacratíssima ordinatióne dispósitus, et ad utilitátem nostræ eruditiónis impénsus: ut, dum a Dómino in hoc spátio mora præséntiæ corporális exténditur, fides resurrectiónis documéntis necessáriis munirétur. Mors enim Christi multum discipulórum corda turbáverat: et de supplício crucis, de emissióne spíritus, de exanimáti córporis sepultúra gravátis mœstitúdine méntibus, quidam diffidéntiæ torpor obrépserat."
+		]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Tempus est, ut revértar ad eum, qui me misit, dicit Dóminus: nolíte contristári, nec turbétur cor vestrum:",
+		"responsum":"Rogo pro vobis Patrem, ut ipse vos custódiat, allelúja, allelúja.",
+		"versus":"Nisi ego abíero, Paráclitus non véniet: cum assúmptus fúero, mittam vobis eum."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Unde beatíssimi Apóstoli, omnésque discípuli, qui et de éxitu crucis fúerant trépidi, et de fide resurrectiónis ambígui, ita sunt veritáte perspícua roboráti, ut, Dómino in cœlórum eúnte sublímia, non solum nulla afficeréntur tristítia, sed étiam magno gaúdio repleréntur. Et revéra magna et ineffábilis erat causa gaudéndi, cum in conspéctu sanctæ multitúdinis super ómnium creaturárum, cœléstium dignitátem humáni géneris natúra conscénderet, supergressúra Angélicos órdines, et ultra Archangelórum altitúdines elevánda: nec ullis sublimitátibus modum suæ provectiónis habitúra, nisi ætérni Patris recépta conséssu, illíus glóriæ sociarétur in throno, cujus natúræ copulabátur in Fílio."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Non turbétur cor vestrum: ego vado ad Patrem; et cum assúmptus fúero a vobis, mittam vobis, allelúja,",
+		"responsum":"Spíritum veritátis, et gaudébit cor vestrum, allelúja.",
+		"versus":"Ego rogábo Patrem, et álium Paráclitum dabit vobis."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Quia ígitur Christi ascénsio, nostra provéctio est; et quo præcéssit glória cápitis, eo spes vocátur et córporis: dignis, dilectíssimi, exsultémus gaúdiis, et pia gratiárum actióne lætémur. Hódie enim non solum paradísi possessóres firmáti sumus, sed étiam cœlórum in Christo supérna penetrávimus; amplióra adépti per ineffábilem Christi grátiam, quam per diáboli amiserámus invídiam. Nam quos viruléntus inimícus primi habitáculi felicitáte dejécit, eos sibi concorporátos Dei Fílius ad déxteram Patris collocávit: cum quo vivit et regnat in unitáte Spíritus sancti Deus, per ómnia sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Ascéndens Christus in altum, captívam duxit captivitátem,",
+		"responsum":"Dedit dona homínibus, allelúja, allelúja, allelúja.",
+		"versus":"Ascéndit Deus in jubilatióne, et Dóminus in voce tubæ."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Nimis exaltátus est, * allelúja: super omnes deos, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Dóminus in Sion, * allelúja: magnus et excélsus, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcviii,gloria"]]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Dóminus in cœlo, * allelúja: parávit sedem suam, allelúja."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cii,gloria"]]
+	},
+	{
+		"tags":[
+			["ascensio","sexta","versiculus"],
+			["ascensio","matutinum","nocturna-iii","versiculus"]
+		],
+		"datum":["V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.","R. Deum meum et Deum vestrum, allelúja."]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Mar. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 29. in Evangelia.]/Quod resurrectiónem Domínicam discípuli tarde credidérunt, non tam illórum infírmitas, quam nostra, ut ita dicam, futúra fírmitas fuit. Ipsa namque resurréctio illis dubitántibus per multa arguménta monstráta est: quæ dum nos legéntes agnóscimus, quid áliud quam de illórum dubitatióne solidámur? Minus enim mihi María Magdaléne prǽstitit, quæ cítius crédidit, quam Thomas, qui diu dubitávit. Ille étenim dubitándo, vúlnerum cicatríces tétigit, et de nostro péctore dubitatiónis vulnus amputávit."
+		]
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Ego rogábo Patrem, et álium Paráclitum dabit vobis,",
+		"responsum":"Ut máneat vobíscum in ætérnum, Spíritum veritátis, allelúja.",
+		"versus":"Si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Ad insinuándam quoque veritátem Domínicæ resurrectiónis, notándum nobis est quid Lucas réferat, dicens: Convéscens præcépit eis ab Jerosólymis ne discéderent. Et post pauca: Vidéntibus illis elevátus est, et nubes suscépit eum ab óculis eórum. Notáte verba, signáte mystéria. Convéscens elevátus est. Comédit, et ascéndit: ut vidélicet per efféctum comestiónis, véritas patésceret carnis. Marcus vero, priúsquam cœlum Dóminus ascéndat, eum de cordis atque infidelitátis durítia increpásse discípulos mémorat. Qua in re quid considerándum est, nisi quod idcírco Dóminus tunc discípulos increpávit, cum eos corporáliter relíquit, ut verba, quæ recédens díceret, in corde audiéntium árctius impréssa remanérent?"
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Ponis nubem ascénsum tuum Dómine:",
+		"responsum":"Qui ámbulas super pennas ventórum, allelúja.",
+		"versus":"Confessiónem et decórem induísti, amíctus lumen sicut vestiméntum."
+	},
+	{
+		"tags":["ascensio","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Increpáta ígitur eórum durítia, quid admonéndo dicat, audiámus: Eúntes in mundum univérsum, prædicáte Evangélium omni creatúræ. Numquid, fratres mei, sanctum Evangélium vel insensátis rebus, vel brutis animálibus fúerat prædicándum, ut de eo discípulis dicátur: Prædicáte omni creatúræ? Sed omnis creatúræ nómine signátur homo. Omnis autem creatúræ áliquid habet homo. Habet namque commúne esse cum lapídibus, vívere cum arbóribus, sentíre cum animálibus, intellígere cum Ángelis. Si ergo commúne habet áliquid cum omni creatúra homo, juxta áliquid omnis creatúra est homo. Omni ergo creatúræ prædicátur Evangélium, cum soli hómini prædicátur."
 	},
 	{
 		"tags":[
@@ -93,12 +292,8 @@
 		"versus":"Et Dóminus in voce tubæ."
 	},
 	{
-		"tags":["ascensio","tertia","versiculus"],
-		"datum":["V. Ascéndens Christus in altum, allelúja.","R. Captívam duxit captivitátem, allelúja."]
-	},
-	{
 		"tags":["ascensio","sexta","capitulum"],
-		"datum":"Et convéscens, præcépit eis ab Jerosólymis ne discéderent, + sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: * quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu sancto non post multos hos dies."
+		"datum":"[Act. 1.]/Et convéscens, præcépit eis ab Jerosólymis ne discéderent, + sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: * quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu sancto non post multos hos dies."
 	},
 	{
 		"tags":["ascensio","sexta","responsorium-breve"],
@@ -107,12 +302,8 @@
 		"versus":"Captívam duxit captivitátem."
 	},
 	{
-		"tags":["ascensio","sexta","versiculus"],
-		"datum":["V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.","R. Deum meum et Deum vestrum, allelúja."]
-	},
-	{
 		"tags":["ascensio","nona","capitulum"],
-		"datum":"Viri Galilǽi, quid statis aspiciéntes in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, * sic véniet, quemádmodum vidístis eum eúntem in cœlum."
+		"datum":"[Act. 1. b.]/Viri Galilǽi, quid statis aspiciéntes in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, * sic véniet, quemádmodum vidístis eum eúntem in cœlum."
 	},
 	{
 		"tags":["ascensio","nona","responsorium-breve"],
@@ -134,7 +325,7 @@
 			["ascensio","dominica-infra-octavam","capitulum"],
 			["ascensio","post-ascensionem","capitulum"]
 		],
-		"datum":"Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. + Ante ómnia autem, mútuam in vosmetípsis caritátem contínuam habéntes: * quia cáritas óperit multitúdinem peccatórum."
+		"datum":"[I. Petr. 4. b.]/Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. + Ante ómnia autem, mútuam in vosmetípsis caritátem contínuam habéntes: * quia cáritas óperit multitúdinem peccatórum."
 	},
 	{
 		"tags":[
@@ -158,14 +349,14 @@
 			["ascensio","dominica-infra-octavam","sexta","capitulum"],
 			["ascensio","post-ascensionem","sexta","capitulum"]
 		],
-		"datum":"Hospitáles ínvicem sine murmuratióne: + unusquísque, sicut accépit grátiam, in altérutrum illam administrántes, * sicut boni dispensatóres multifórmis grátiæ Dei."
+		"datum":"[I. Petr. 4. b.]/Hospitáles ínvicem sine murmuratióne: + unusquísque, sicut accépit grátiam, in altérutrum illam administrántes, * sicut boni dispensatóres multifórmis grátiæ Dei."
 	},
 	{
 		"tags":[
 			["ascensio","dominica-infra-octavam","nona","capitulum"],
 			["ascensio","post-ascensionem","nona","capitulum"]
 		],
-		"datum":"Si quis lóquitur, quasi sermónes Dei: + si quis minístrat, tamquam ex virtúte, quam adminístrat Deus: * ut in ómnibus honorificétur Deus per Jesum Christum Dóminum nostrum."
+		"datum":"[I. Petr. 4. c.]/Si quis lóquitur, quasi sermónes Dei: + si quis minístrat, tamquam ex virtúte, quam adminístrat Deus: * ut in ómnibus honorificétur Deus per Jesum Christum Dóminum nostrum."
 	},
 	{
 		"tags":[
