@@ -10,6 +10,17 @@
 		"datum":[["matutinum","nocturna","duodecim-psalmi","una-antiphona"],"[Hac nocte dicitur tertium Responsorium, quia non dicitur [Te Deum laudámus.] In duabus vero sequentibus Feriis dicitur.]"]
 	},
 	{
+		"tags":["feria-ii-rogationis","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 11.]/In illo témpore: Dixit Jesus discípulis suis: Quis vestrum habébit amícum et ibit ad illum média nocte, et dicet illi: Amíce, cómmoda mihi tres panes. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Liber 7. in Lucæ cap. 11.]/Álius præcépti locus est, ut ómnibus moméntis, non solum diébus, sed étiam nóctibus, orátio deferátur. Vides enim, quod iste qui média nocte perréxit, tres panes ab amíco suo póstulans, et in ipsa peténdi intentióne persístens, non defraudétur orátis. Qui sunt isti tres panes, nisi mystérii cœléstis aliméntum? Quod si díligas Dóminum Deum tuum, non solum tibi, sed étiam áliis póteris emeréri. Quis autem amícior nobis, quam qui pro nobis corpus suum trádidit?"
+		],
+		"lectio-ii":"Ab hoc média nocte panes David pétiit, et accépit. Pétiit enim, quando dicébat: Média nocte surgébam ad confiténdum tibi. Ídeo méruit hos panes, quos appósuit nobis edéndos. Pétiit cum dicit: Lavábo per síngulas noctes lectum meum. Neque enim tímuit, ne excitáret dormiéntem, quem scit semper vigilántem. Et ídeo scriptórum mémores, nóctibus ac diébus oratióni instántes, peccátis nostris véniam postulémus.",
+		"lectio-iii":"Nam si ille tam sanctus, et qui regni erat necessitátibus occupátus, sépties in die laudem Dómino dicébat, matutínis et vespertínis sacrifíciis semper inténtus: quid nos fácere opórtet, qui eo ámplius rogáre debémus, quo frequéntius carnis ac mentis fragilitáte delínquimus, ut de via lassis, et istíus ævi cursu, ac vitæ hujus anfráctu gráviter fatigátis, panis refectiónis deésse non possit, qui hóminis corda confírmet? Nec solum média nocte Dóminus, sed ómnibus prope docet vigilándum esse moméntis. Venit enim et vespertína, et secúnda, et tértia vigília: et pulsáre consuévit. Beáti ítaque servi illi, quos cum vénerit Dóminus, invénerit vigilántes."
+	},
+	{
 		"tags":["feria-ii-rogationis","matutinum","responsorium","responsorium-i"],
 		"datum":[["hebdomada-iv-paschae","feria-ii","matutinum","responsorium","responsorium-i"]]
 	},
@@ -43,8 +54,20 @@
 		"datum":"Ipse enim Pater amat * vos, quia vos me amástis, et credidístis, allelúja."
 	},
 	{
+		"tags":["feria-iii-rogationis","lectio"],
+		"lectio-i":[
+			"De Epístola prima beáti Petri Apóstoli.",
+			"[I. Petr. 4.]/Christo ígitur passo in carne, et vos eádem cogitatióne armámini: quia qui passus est in carne, désiit a peccátis: ut jam non desidériis hóminum, sed voluntáti Dei, quod réliquum est in carne vivat témporis. Súfficit enim prætéritum tempus ad voluntátem Géntium consummándam his, qui ambulavérunt in luxúriis, desidériis, vinoléntiis, comessatiónibus, potatiónibus, et illícitis idolórum cúltibus. In quo admirántur non concurréntibus vobis in eámdem luxúriæ confusiónem, blasphemántes. Qui reddent ratiónem ei, qui parátus est judicáre vivos et mórtuos. Propter hoc enim et mórtuis evangelizátum est: ut judicéntur quidem secúndum hómines in carne, vivant autem secúndum Deum in Spíritu. Ómnium autem finis appropinquávit."
+		]
+	},
+	{
 		"tags":["feria-iii-rogationis","matutinum","responsorium"],
 		"datum":[["hebdomada-iv-paschae","feria-iii","responsorium"]]
+	},
+	{
+		"tags":["feria-iii-rogationis","lectio"],
+		"lectio-ii":"Estóte ítaque prudéntes, et vigiláte in oratiónibus. Ante ómnia autem, mútuam in vobismetípsis caritátem contínuam habéntes: quia cáritas óperit multitúdinem peccatórum. Hospitáles ínvicem sine murmuratióne: Unusquísque, sicut accépit grátiam, in altérutrum illam administrántes, sicut boni dispensatóres multifórmis grátiæ Dei. Si quis lóquitur, quasi sermónes Dei: si quis minístrat, tamquam ex virtúte, quam adminístrat Deus: ut in ómnibus honorificétur Deus per Jesum Christum: cui est glória, et impérium in sǽcula sæculórum. Amen.",
+		"lectio-iii":"Caríssimi, nolíte peregrinári in fervóre, qui ad tentatiónem vobis fit, quasi novi áliquid vobis contíngat: sed communicántes Christi passiónibus gaudéte, ut et in revelatióne glóriæ ejus gaudeátis exsultántes. Si exprobrámini in nómine Christi, beáti éritis: quóniam quod est honóris, glóriæ, et virtútis Dei, et qui est ejus Spíritus, super vos requiéscit. Nemo autem vestrum patiátur ut homicída, aut fur, aut malédicus, aut alienórum appetítor. Si autem ut Christiánus, non erubéscat: gloríficet autem Deum in isto nómine. Quóniam tempus est, ut incípiat judícium a domo Dei."
 	},
 	{
 		"tags":["feria-iii-rogationis","laudes","antiphona","antiphona-benedictus"],
@@ -55,6 +78,17 @@
 		"tags":["feria-iii-rogationis","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12035",
 		"datum":"Exívi a Patre, * et veni in mundum: íterum relínquo mundum, et vado ad Patrem, allelúja."
+	},
+	{
+		"tags":["feria-iv-rogationis","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 17.]/In illo témpore: Sublevátis Jesus óculis in cœlum, dixit: Pater, venit hora, clarífica Fílium tuum. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 104. in Joann. sub med.]/Póterat Dóminus noster, unigénitus et coætérnus Patri, in forma servi, et ex forma servi, si hoc opus esset, oráre siléntio: sed ita se Patri exhibére vóluit precatórem, ut meminísset nostrum se esse doctórem. Proínde eam, quam fecit oratiónem pro nobis, notam fecit et nobis: quóniam tanti magístri non solum ad ipsos sermocinátio, sed étiam pro ipsis ad Patrem orátio, discipulórum est ædificátio: et si illórum, qui hæc dicta áderant auditúri, profécto et nostra, qui fuerámus conscrípta lectúri."
+		],
+		"lectio-ii":"Quaprópter hoc quod ait: Pater, venit hora, clarífica Fílium tuum: osténdit, omne tempus, et quid, quando fáceret, vel fíeri síneret, ab illo esse dispósitum, qui témpori súbditus non est: quóniam quæ futúra erant per síngula témpora, in Dei sapiéntia causas efficiéntes habent, in qua nulla sunt témpora. Non ergo credátur hæc hora fato urgénte venísse, sed Deo pótius ordinánte. Nec sidérea necéssitas Christi connéxuit passiónem: absit enim ut sídera mori cógerent síderum conditórem.",
+		"lectio-iii":"Clarificátum a Patre Fílium nonnúlli accípiunt in hoc, quod ei non pepércit, sed pro nobis ómnibus trádidit eum. Sed si passióne clarificátus dícitur, quanto magis resurrectióne? Nam in passióne magis ejus humílitas, quam cláritas commendátur, Apóstolo teste, qui dicit: Humiliávit semetípsum, factus obédiens usque ad mortem, mortem autem crucis. Deínde séquitur, et de ejus clarificatióne jam dicit: Propter quod et Deus illum exaltávit, et donávit ei nomen, quod est super omne nomen: ut in nómine Jesu omne genu flectátur, cœléstium, terréstrium, et infernórum. Et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris. Hæc est clarificátio Dómini nostri Jesu Christi, quæ ab ejus resurrectióne sumpsit exórdium."
 	},
 	{
 		"tags":["feria-iv-rogationis","matutinum","responsorium"],
