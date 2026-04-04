@@ -114,11 +114,14 @@ def daytags(vesperal = False):
 	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(book, 'rank', a), reverse=True)]
 	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(book, 'rank', a), reverse=True)]
 	votives = [['Officium Parvum B.M.V.', {'officium-parvum-bmv'}]]
+	lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
+	lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
 	return datamanage.dump_data({
 			'tags': tags,
 			'primary': [getname(primary, pile), primary],
 			'commemorations': commemorations,
 			'omissions': omissions,
+			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None,
 			'votives': votives
 		})
 
@@ -209,14 +212,15 @@ def rite():
 
 	try:
 		pile = datamanage.getpile(book, flattensetlist(tags) | {'formulae'})
-		usednames = [getname(tagset, pile) for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(book, 'rank', a), reverse=True)]
-		usednames.insert(0, getname(primary, pile))
 
+		lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
+		lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
 		return datamanage.dump_data({
 			'rite' : rite['datum'],
 			'translation' : translation,
-			'usedprimary': primary,
-			'usednames': usednames
+			'used-primary': [getname(primary, pile), primary],
+			'used-commemorations': [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(book, 'rank', a), reverse=True)],
+			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
 			})
 	except Exception as e:
 		traceback.print_exc()

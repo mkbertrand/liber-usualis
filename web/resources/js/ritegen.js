@@ -111,22 +111,22 @@ function riteTitle(data, size = 'large') {
 	if (data.rite.tags.includes('sacrosanctae') || data.rite.tags.includes('antiphona-bmv') || data.rite.tags.includes('officium-capituli')) {
 		return '';
 	}
-	var title = data['usednames'][0];
+	var title = data['used-primary'][0];
 	if (size == 'small') {
 		return `<h1 class="small-title">${title}</h1>`;
 	} else {
 		var subtitle = '';
-		if (data['usedprimary'].includes('duplex-i-classis')) {
+		if (data['used-primary'][1].includes('duplex-i-classis')) {
 			subtitle = 'Duplex I Classis';
-		} else if (data['usedprimary'].includes('duplex-ii-classis')) {
+		} else if (data['used-primary'][1].includes('duplex-ii-classis')) {
 			subtitle = 'Duplex II Classis';
-		} else if (data['usedprimary'].includes('duplex-majus')) {
+		} else if (data['used-primary'][1].includes('duplex-majus')) {
 			subtitle = 'Duplex Majus';
-		} else if (data['usedprimary'].includes('duplex-minus')) {
+		} else if (data['used-primary'][1].includes('duplex-minus')) {
 			subtitle = 'Duplex Minus';
-		} else if (data['usedprimary'].includes('semiduplex')) {
+		} else if (data['used-primary'][1].includes('semiduplex')) {
 			subtitle = 'Semiduplex';
-		} else if (data['usedprimary'].includes('simplex') || data['usedprimary'].includes('feria')) {
+		} else if (data['used-primary'][1].includes('simplex') || data['used-primary'][1].includes('feria')) {
 			subtitle = 'Simplex';
 		}
 		return `<h1 class="large-title">${title}</h1><h2 class="large-subtitle">${subtitle}</h2>`;
@@ -231,7 +231,8 @@ riteheaders = {
 function render(data, chant) {
 	options = {chant: chant, disabletrivialchant: true};
 	translationpool = data.translation;
-	names = data['usednames'];
+	usedcommemorations = data['used-commemorations'];
+	commmat = data['commemoratio-matutini'];
 
 	function renderinner(data, translated = null, parenttags) {
 		// We frequently want to know if some array, but not parenttags, includes some tag.
@@ -437,6 +438,11 @@ function render(data, chant) {
 
 						// Readings have initial letters, but the first-letter pseudoclass is applied to the first letter of a paragraph. Therefore the reading's annotation needs to be in a separate paragraph.
 						function annotate(reading, translated, cssclasses) {
+							// Adds extra line of annotation noting that the reading is a commemoration (i.e. not a continuation of the previous readings).
+							if (cssclasses.includes('commemoratio-matutini')) {
+								reading = `[${commmat[0]}]/${reading}`;
+								reading = reading.replace(/\]\/\[/g, '/');
+							}
 							annotation = reading.match(/^\[.+?\]\//g);
 							if (annotation) {
 								reading = reading.replace(/^\[.+?\]\//g,'');
@@ -471,7 +477,7 @@ function render(data, chant) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '))}`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings.
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' '), translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' &para; '), translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
 						// Note that an untitled reading may still be a first reading. This is due to the fact that most Saints lives are begun without title.
 						} else {
 							if (Array.isArray(reading)) { reading = reading.join(' &para; '); translated = translated.join(' ');};
@@ -482,7 +488,7 @@ function render(data, chant) {
 				} else if (data.tags.includes('commemorationes')) {
 					var ret = makeheader('Commemorationes.');
 					for (var i = 0; i < data.datum.length - 1; i++) {
-						ret += makeheadingannotation(names[i + 1] + '.') + renderinner(data.datum[i], translated, data.tags.concat(parenttags));
+						ret += makeheadingannotation(usedcommemorations[i][0] + '.') + renderinner(data.datum[i], translated, data.tags.concat(parenttags));
 					}
 					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
 
@@ -494,9 +500,7 @@ function render(data, chant) {
 					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
-					console.log(data.datum);
 					headers = data.datum.match(/\[.+?\]\n/g);
-					console.log(headers);
 					for (i of headers) {
 						newheader = i.slice(1, -2).replace(':', '. ') + '.';
 						numeral = newheader.match(/\s([IVXLC]+)[\s|\.]/);

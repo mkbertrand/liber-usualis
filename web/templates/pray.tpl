@@ -33,7 +33,7 @@
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
 		<script type="text/javascript" src="/resources/js/pray.js?v=1"></script>
-		<script type="text/javascript" src="/resources/js/ritegen.js?v=47"></script>
+		<script type="text/javascript" src="/resources/js/ritegen.js?v=48"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
 		<script type="text/javascript" src="/resources/js/gabc-chant.js?v=3"></script>
@@ -92,7 +92,7 @@
 	},
 	updateRiteAsyncLock: false,
 	async updateRite(scroll = true) {
-		lasttitle = '';
+		previousTitle = '';
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
 			newrite = '';
@@ -113,12 +113,12 @@
 					title = riteTitle(json, 'large')
 				} else {
 					title = '';
-					if (json.usednames[0] != lasttitle) {
+					if (json['used-primary'][0] != previousTitle) {
 						title = riteTitle(json, 'small');
 					}
 				}
 				newrite += title + render(json, this.chant);
-				lasttitle = json.usednames[0];
+				previousTitle = json['used-primary'][0];
 			}
 			this.rite = newrite;
 			if (scroll) {
