@@ -342,12 +342,23 @@
 				]
 			},
 			"[Aliquantulum altius./]",
-			["/psalmi/psalmus-l"],
+			["/psalmi/psalmus-l"]
+		]
+	},
+	{
+		"tags":["triduum","collecta-primaria"],
+		"laudes":[
 			"[Similiter voce./]",
 			["collecta"],
 			"[Dicitur sub silentio./]",
 			["collecta","terminatio"],
 			"[Finita Oratione, fit fragor et strepitus aliquantulum: mox profertur candela accensa de sub altari, et omnes surgunt, et cum silentio discedunt.]"
+		],
+		"datum":[
+			"[Similiter voce./]",
+			["collecta"],
+			"[Dicitur sub silentio./]",
+			["collecta","terminatio"]
 		]
 	},
 	{
@@ -370,17 +381,12 @@
 				]
 			},
 			"[Aliquantulum altius./]",
-			["/psalmi/psalmus-l"],
-			"[Similiter voce./]",
-			["collecta"],
-			"[Dicitur sub silentio./]",
-			["collecta","terminatio"]
+			["/psalmi/psalmus-l"]
 		]
 	},
 	{
 		"tags":[
 			["triduum","dominus-vobiscum"],
-			["triduum","collecta-primaria"],
 			["triduum","comemmorationes"],
 			["triduum","dominus-vobiscum","post-collectas"],
 			["triduum","benedicamus-domino"],
