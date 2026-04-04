@@ -350,7 +350,7 @@ function render(data, chant) {
 						header = makeheader('Canticum Simeonis.');
 					} else if (uniquelyhas('nunc-dimittis') && (data.quaesitum.includes('triduum') || data.quaesitum.includes('pascha') && !data.quaesitum.includes('i-vesperae'))) {
 						header = makeheader('Canticum Simeonis.');
-					} else if (uniquelyhas('antiphona-benedictus') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-magnificat')) {
+					} else if (uniquelyhas('antiphona-benedictus') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-magnificat') && !parenttags.includes('antiphona-nunc-dimittis')) {
 						header = makeheader('Canticum Zachariæ.');
 					} else if (uniquelyhas('confiteor') && parenttags.includes('completorium')) {
 						header = makeheader('Confessio.');
