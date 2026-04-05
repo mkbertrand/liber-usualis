@@ -62,7 +62,10 @@
 		]
 	},
 	{
-		"tags":["laudes","psalmi"],
+		"tags":[
+			["laudes","psalmi"],
+			["laudes","pascha","psalmi"]
+		],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
 			["laudes","psalmus-i"],
