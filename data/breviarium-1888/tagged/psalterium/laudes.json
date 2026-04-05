@@ -62,10 +62,7 @@
 		]
 	},
 	{
-		"tags":[
-			["laudes","psalmi"],
-			["laudes","pascha","psalmi"]
-		],
+		"tags":["laudes","psalmi"],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
 			["laudes","psalmus-i"],
@@ -88,7 +85,7 @@
 
 		"tags":[
 			["laudes","dominica","per-annum","psalmi","semiduplex"],
-			["laudes","in-tempore-paschali","temporale","psalmi"]
+			["laudes","post-pascha","temporale","psalmi"]
 		],
 		"datum":[
 			["laudes","antiphona","antiphona-i","intonata"],
