@@ -71,7 +71,10 @@
 		"datum":"[Isaiæ 50. c.]/Fáciem meam non avérti ab increpántibus et conspuéntibus in me. + Dóminus Deus auxiliátor meus, * ídeo non sum confúsus."
 	},
 	{
-		"tags":["officium-capituli","in-tempore-paschali","temporale","lectio-brevis","lectio"],
+		"tags":[
+			["officium-capituli","pascha","lectio-brevis","lectio"],
+			["officium-capituli","in-tempore-paschali","temporale","lectio-brevis","lectio"]
+		],
 		"datum":"[Coloss. 3.]/Si consurrexístis cum Christo, + quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens: * quæ sursum sunt sápite, non quæ super terram."
 	},
 	{

@@ -317,6 +317,10 @@ function render(data, chant) {
 						'invitatorium': 'Invitatorium.',
 						'haec-dies': 'Antiphona.'
 					};
+
+					if (!('quaesitum' in data)) {
+						data.quaesitum = [];
+					}
 					if (i in headers && !parenttags.includes(i) && data.datum != '') {
 						header = makeheader(headers[i]);
 					}

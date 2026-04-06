@@ -264,14 +264,19 @@
 		"datum":[
 			["completorium","formula","formula-lectionis","lectio-brevis"],
 			["adjutorium-nostrum"],
-			["pater-noster-secreta"],
+			["pater-noster-de-confiteor"],
 			["confiteor"],
 			"V. Convérte nos ✙ Deus salutáris noster.","R. Et avérte iram tuam a nobis.",
 			["deus-in-adjutorium","ferialis"],
-			["/psalmi/psalmus-iv,gloria"],
-			["/psalmi/psalmus-xxx:1-6,gloria"],
-			["/psalmi/psalmus-xc,gloria"],
-			["/psalmi/psalmus-cxxxiii,gloria"],
+			{
+				"tags":["psalmi"],
+				"datum":[
+					["/psalmi/psalmus-iv,gloria"],
+					["/psalmi/psalmus-xxx:1-6,gloria"],
+					["/psalmi/psalmus-xc,gloria"],
+					["/psalmi/psalmus-cxxxiii,gloria"]
+				]
+			},
 			["completorium","antiphona","repetita"],
 			["nunc-dimittis"],
 			["antiphona","haec-dies"],
