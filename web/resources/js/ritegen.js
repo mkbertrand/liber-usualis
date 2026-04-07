@@ -52,8 +52,11 @@ function defineambit(desired, choral = true) {
 		case 'psalmi-poenitentiales':
 			ambit = penitentialsambit;
 			break;
+		case 'semper-cum-opbmv':
+			ambit = fullambit.map((entry) => ({'name': entry.name, 'content': entry.content.map((item) => item.where == 'officium-parvum-bmv' ? new RiteItem(item.what, item.where, true): (item)), 'id': entry.id}));
+			break;
 		case 'diei':
-			ambit = fullambit.map((entry) => ({'name': entry.name, 'content': entry.content.filter((item) => item.where == 'diei' || item.where == 'antiphona-bmv-temporis'), 'id': entry.id}))
+			ambit = fullambit.map((entry) => ({'name': entry.name, 'content': entry.content.filter((item) => item.where == 'diei' || item.where == 'antiphona-bmv-temporis'), 'id': entry.id}));
 	}
 	if (choral) {
 		return ambit;

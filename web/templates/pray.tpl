@@ -33,7 +33,7 @@
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
 		<script type="text/javascript" src="/resources/js/pray.js?v=1"></script>
-		<script type="text/javascript" src="/resources/js/ritegen.js?v=49"></script>
+		<script type="text/javascript" src="/resources/js/ritegen.js?v=50"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
 		<script type="text/javascript" src="/resources/js/gabc-chant.js?v=3"></script>
@@ -352,7 +352,7 @@
 									<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
 								</div>
 								<div id="ambit-select-wrapper">
-									<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales']]}">
+									<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']]}">
 										<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 										<template x-for="entry in ambitEntries">
 											<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
