@@ -75,10 +75,12 @@
 	},
 	{
 		"tags":["ascensio","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/P5F5I",
 		"datum":"Allelúja, Christum Dóminum ascendéntem in cœlum, * Veníte adorémus, allelúja."
 	},
 	{
 		"tags":["ascensio","matutinum","hymnus"],
+		"src":"nocturnale/P5F5H",
 		"datum":[
 			"Ætérne Rex altíssime,/Redémptor et fidélium,/Cui mors perémpta détulit/Summæ triúmphum glóriæ.",
 			"Ascéndis orbes síderum,/Quo te vocábat cœ\u0301litus/Colláta, non humánitus/Rerum potéstas ómnium.",
@@ -92,6 +94,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/P5F5N1A1",
 		"datum":"Eleváta est * magnificéntia tua super cœlos Deus, allelúja."
 	},
 	{
@@ -100,6 +103,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/P5F5N1A2",
 		"datum":"Dóminus in templo * sancto suo, Dóminus in cœlo, allelúja."
 	},
 	{
@@ -108,6 +112,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/P5F5N1A3",
 		"datum":"A summo cœlo * egréssio ejus, et occúrsus ejus usque ad summum ejus, allelúja."
 	},
 	{
@@ -149,6 +154,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/P5F5N2A1",
 		"datum":"Exaltáre Dómine * in virtúte tua: cantábimus, et psallémus, allelúja."
 	},
 	{
@@ -157,6 +163,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/P5F5N2A2",
 		"datum":"Exaltábo te * Dómine, quóniam suscepísti me, allelúja."
 	},
 	{
@@ -165,6 +172,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/P5F5N2A3",
 		"datum":"Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ, allelúja."
 	},
 	{
@@ -213,6 +221,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/P5F5N3A1",
 		"datum":"Nimis exaltátus est, * allelúja: super omnes deos, allelúja."
 	},
 	{
@@ -221,6 +230,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/P5F5N3A2",
 		"datum":"Dóminus in Sion, * allelúja: magnus et excélsus, allelúja."
 	},
 	{
@@ -229,6 +239,7 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/P5F5N3A3",
 		"datum":"Dóminus in cœlo, * allelúja: parávit sedem suam, allelúja."
 	},
 	{
@@ -246,7 +257,7 @@
 		"tags":["ascensio","duplex-i-classis","matutinum","nocturna-iii","lectio"],
 		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Marcum.",
-			"[Mar. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
 			"Homilía sancti Gregórii Papæ.",
 			"[Homilia 29. in Evangelia.]/Quod resurrectiónem Domínicam discípuli tarde credidérunt, non tam illórum infírmitas, quam nostra, ut ita dicam, futúra fírmitas fuit. Ipsa namque resurréctio illis dubitántibus per multa arguménta monstráta est: quæ dum nos legéntes agnóscimus, quid áliud quam de illórum dubitatióne solidámur? Minus enim mihi María Magdaléne prǽstitit, quæ cítius crédidit, quam Thomas, qui diu dubitávit. Ille étenim dubitándo, vúlnerum cicatríces tétigit, et de nostro péctore dubitatiónis vulnus amputávit."
 		]
@@ -317,6 +328,72 @@
 		"datum":"O Rex glóriæ, * Dómine virtútum, qui triumphátor hódie super omnes cœlos ascendísti, ne derelínquas nos órphanos: sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja."
 	},
 	{
+		"tags":["ascensio","dies-ii","infra-octavam","nomen"],
+		"datum":"Feria VI infra Octavam Ascensionis Domini"
+	},
+	{
+		"tags":["ascensio","dies-ii","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Íncipit Epístola secúnda beáti Petri Apóstoli.",
+			"[II. Petr. 1.]/Simon Petrus, servus, et Apóstolus Jesu Christi, iis, qui coæquálem nobíscum sortíti sunt fidem in justítia Dei nostri, et Salvatóris Jesu Christi. Grátia vobis, et pax adimpleátur in cognitióne Dei, et Christi Jesu Dómini nostri: quómodo ómnia nobis divínæ virtútis suæ, quæ ad vitam et pietátem donáta sunt, per cognitiónem ejus, qui vocávit nos própria glória, et virtúte, per quem máxima, et pretiósa nobis promíssa donávit: ut per hæc efficiámini divínæ consórtes natúræ: fugiéntes ejus, quæ in mundo est, concupiscéntiæ corruptiónem."
+		],
+		"lectio-ii":"Vos autem curam omnem subinferéntes, ministráte in fide vestra virtútem, in virtúte autem sciéntiam, in sciéntia autem abstinéntiam, in abstinéntia autem patiéntiam, in patiéntia autem pietátem, in pietáte autem amórem fraternitátis, in amóre autem fraternitátis caritátem. Hæc enim si vobíscum adsint, et súperent, non vácuos, nec sine fructu vos constítuent in Dómini nostri Jesu Christi cognitióne. Cui enim non præsto sunt hæc, cæcus est, et manu tentans, obliviónem accípiens purgatiónis véterum suórum delictórum.",
+		"lectio-iii":"Quaprópter fratres magis satágite, ut per bona ópera certam vestram vocatiónem et electiónem faciátis: hæc enim faciéntes, non peccábitis aliquándo. Sic enim abundánter ministrábitur vobis intróitus in ætérnum regnum Dómini nostri, et Salvatóris Jesu Christi. Propter quod incípiam vos semper commonére de his: et quidem sciéntes et confirmátos vos in præsénti veritáte. Justum autem árbitror quámdiu sum in hoc tabernáculo, suscitáre vos in commonitióne: certus quod velox est deposítio tabernáculi mei secúndum quod et Dóminus noster Jesus Christus significávit mihi. Dabo autem óperam et frequénter habére vos post óbitum meum, ut horum memóriam faciátis."
+	},
+	{
+		"tags":["ascensio","dies-ii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Leónis Papæ.",
+			"[Serm. 2. de Ascensione Domini.]/Sacraméntum, dilectíssimi, salútis nostræ, quam prétio sánguinis sui universitátis cónditor æstimávit, a die corporális ortus usque ad éxitum passiónis, per dispensatiónem humilitátis implétum est. Et licet multa, étiam in forma servi, divinitátis signa radiáverint: próprie tamen illíus témporis áctio ad demonstrándam suscépti hóminis pertínuit veritátem. Post passiónem vero ruptis mortis vínculis, quæ vim suam in eum, qui peccáti erat néscius, incedéndo perdíderat; infírmitas in virtútem, mortálitas in immortalitátem, contumélia transívit in glóriam: quam Dóminus Jesus Christus in multis manifestísque documéntis, multórum declarávit aspéctibus, donec triúmphum victóriæ, quem reportárat a mórtuis, inférret et cœlis."
+		],
+		"lectio-ii":"Sicut ergo in solemnitáte pascháli resurréctio Dómini fuit nobis causa lætándi: ita ascénsio ejus in cœlos præséntium nobis est matéria gaudiórum, recoléntibus illum diem, et rite venerántibus, quo natúræ nostræ humílitas in Christo super omnem cœli milítiam, super omnes órdines Angelórum, et ultra ómnium altitúdinem potestátum, ad Dei Patris est provécta conséssum. Quo órdine óperum divinórum nos fundáti, nos ædificáti sumus: ut mirabílior fíeret grátia Dei, cum remótis a conspéctu hóminum, quæ mérito reveréntiam sui sentiebántur indícere, fides non defíceret, spes non fluctuáret, cáritas non tepéret.",
+		"lectio-iii":"Magnárum hic vigor est méntium, et valde fidélium lumen est animárum, incunctánter crédere, quæ corpóreo non vidéntur intúitu, et ibi fígere desidérium, quo néqueas inférre conspéctum. Hæc autem píetas unde in nostris córdibus nascerétur, aut quómodo quisquam justificarétur per fidem, si in iis tantum salus nostra consísteret, quæ obtútibus subjacérent? Unde et illi viro, qui de resurrectióne Christi videbátur ambígere, nisi in ipsíus carne vestígia passiónis et visu explorásset et tactu: Quia vidísti me, inquit Dóminus, credidísti: beáti qui non vidérunt, et credidérunt."
+	},
+	{
+		"tags":["ascensio","dies-ii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"[Ex eadem Homilia 29.]/Qui credíderit, et baptizátus fúerit, salvus erit: qui vero non credíderit, condemnábitur. Fortásse unusquísque apud semetípsum dicat: Ego jam crédidi, salvus ero. Verum dicit, si fidem opéribus tenet. Vera étenim fides est, quæ in hoc, quod verbis dicit, móribus non contradícit. Hinc est enim quod de quibúsdam falsis fidélibus Paulus dicit: Qui confiténtur se nosse Deum, factis autem negant. Hinc Joánnes ait: Qui dicit se nosse Deum, et mandáta ejus non custódit, mendax est."
+		],
+		"lectio-ii":"Quod cum ita sit, fídei nostræ veritátem in vitæ nostræ consideratióne debémus agnóscere. Tunc enim veráciter fidéles sumus, si quod verbis promíttimus, opéribus complémus. In die quippe baptísmatis, ómnibus nos antíqui hostis opéribus, atque ómnibus pompis abrenuntiáre promísimus. Ítaque unusquísque vestrum ad consideratiónem suam mentis óculos redúcat; et si servat post baptísmum, quod ante baptísmum spopóndit, certus jam, quia fidélis est, gaúdeat.",
+		"lectio-iii":"Sed ecce, si quod promísit, mínime servávit, si ad exercénda prava ópera, ad concupiscéndas mundi pompas dilápsus est: videámus, si jam scit plángere, quod errávit. Apud misericórdem namque júdicem nec ille fallax habétur, qui ad veritátem revértitur, étiam postquam mentítur: quia omnípotens Deus, dum libénter nostram pœniténtiam súscipit, ipse suo judício hoc, quod errávimus, abscóndit."
+	},
+	{
+		"tags":["ascensio","dies-iii","infra-octavam","nomen"],
+		"datum":"Sabbato infra Octavam Ascensionis Domini"
+	},
+	{
+		"tags":["ascensio","dies-iii","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola secúnda beáti Petri Apóstoli.",
+			"[II. Petr. 3.]/Hanc ecce vobis, caríssimi, secúndam scribo epístolam, in quibus vestram éxcito in commonitióne sincéram mentem: ut mémores sitis eórum, quæ prædíxi, verbórum a sanctis Prophétis, et Apostolórum vestrórum, præceptórum Dómini et Salvatóris. Hoc primum sciéntes, quod vénient in novíssimis diébus in deceptióne illusóres, juxta próprias concupiscéntias ambulántes, dicéntes: Ubi est promíssio, aut advéntus ejus? ex quo enim patres dormiérunt, ómnia sic persevérant ab inítio creatúræ. Latet enim eos hoc voléntes, quod cœli erant prius, et terra, de aqua, et per aquam consístens Dei verbo: per quæ ille tunc mundus aqua inundátus périit. Cœli autem, qui nunc sunt, et terra eódem verbo repósiti sunt, igni reserváti in diem judícii, et perditiónis impiórum hóminum."
+		],
+		"lectio-ii":"Unum vero hoc non láteat vos, caríssimi, quia unus dies apud Dóminum sicut mille anni, et mille anni sicut dies unus. Non tardat Dóminus promissiónem suam, sicut quidam exístimant: sed patiénter agit propter vos, nolens áliquos períre, sed omnes ad pœniténtiam revérti. Advéniet autem dies Dómini ut fur: in quo cœli magno ímpetu tránsient, eleménta vero calóre solvéntur, terra autem et quæ in ipsa sunt ópera, exuréntur. Cum ígitur hæc ómnia dissolvénda sint, quales opórtet vos esse in sanctis conversatiónibus, et pietátibus, exspectántes, et properántes in advéntum diéi Dómini, per quem cœli ardéntes solvéntur, et eleménta ignis ardóre tabéscent? Novos vero cœlos, et novam terram secúndum promíssa ipsíus exspectámus, in quibus justítia hábitat.",
+		"lectio-iii":"Propter quod caríssimi hæc exspectántes, satágite immaculáti, et invioláti ei inveníri in pace. Et Dómini nostri longanimitátem, salútem arbitrémini: sicut et caríssimus frater noster Paulus secúndum datam sibi sapiéntiam scripsit vobis, sicut et in ómnibus epístolis, loquens in eis de his, in quibus sunt quædam difficília intelléctu, quæ indócti, et instábiles deprávant, sicut et céteras Scriptúras, ad suam ipsórum perditiónem. Vos ígitur fratres præsciéntes custodíte, ne insipiéntium erróre tradúcti excidátis a própria firmitáte. Créscite vero in grátia, et in cognitióne Dómini nostri, et Salvatóris Jesu Christi. Ipsi glória et nunc, et in diem æternitátis. Amen."
+	},
+	{
+		"tags":["ascensio","dies-iii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Leónis Papæ.",
+			"[Ex Serm. 2. de Ascensione Domini.]/Quod ítaque Redemptóris nostri conspícuum fuit, in sacraménta transívit: et ut fides excelléntior esset ac fírmior, visióni doctrína succéssit, cujus auctoritátem supérnis illumináta rádiis credéntium corda sequeréntur. Hanc fidem ascensióne Dómini auctam, et Spíritus sancti múnere roborátam, non víncula, non cárceres, non exsília, non fames, non ignis, non laniátus ferárum, nec exquisíta persequéntium crudelitátibus supplícia terruérunt. Pro hac fide per univérsum mundum non solum viri, sed étiam féminæ: nec tantum impúbes púeri, sed étiam téneræ vírgines usque ad effusiónem sui sánguinis decertárunt. Hæc fides dæmónia ejécit, ægritúdines dépulit, mórtuos suscitávit."
+		],
+		"lectio-ii":"Unde et ipsi beáti Apóstoli, qui tot miráculis confirmáti, tot sermónibus erudíti, atrocitátem tamen Domínicæ passiónis expáverant, et veritátem resurrectiónis ejus non sine hæsitatióne suscéperant, tantum de ascensióne Dómini profecérunt, ut quidquid illis prius intúlerat metum, verterétur in gaúdium. Totam enim contemplatiónem ánimi in divinitátem ad Patris déxteram considéntis eréxerant: nec jam corpóreæ visiónis tardabántur objéctu, quo minus in id áciem mentis inténderent, quod nec a Patre descendéndo abfúerat, nec a discípulis ascendéndo discésserat. Tunc ígitur, dilectíssimi, fílius hóminis, Dei Fílius excelléntius sacratiúsque innótuit, cum in Patérnæ majestátis glóriam se recépit: et ineffábili modo cœpit esse divinitáte præséntior, qui factus est humanitáte longínquior.",
+		"lectio-iii":"Tunc ad æquálem Patri Fílium erudítior fides gréssu mentis cœpit accédere, et contrectatióne in Christo corpóreæ substántiæ, qua Patre minor est, non egére: quóniam glorificáti córporis manénte natúra, eo fides credéntium vocabátur, ubi non carnáli manu, sed spiritáli intelléctu par genitóri unigénitus tangerétur. Hinc illud est, quod post resurrectiónem suam Dóminus Maríæ Magdalénæ, persónam Ecclésiæ gerénti, cum ad contáctum ipsíus properáret accédere, dicit: Noli me tángere, nondum enim ascéndi ad Patrem meum: hoc est, Nolo ut ad me corporáliter vénias, nec ut me sensu carnis agnóscas: ad sublimióra te díffero, majóra tibi prǽparo: cum ad Patrem ascéndero, tunc me perféctius veriúsque palpábis, apprehensúra quod non tangis, et creditúra quod non cernis."
+	},
+	{
+		"tags":["ascensio","dies-iii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"[Ex eadem Homilia 29.]/Signa autem eos qui creditúri sunt, hæc sequéntur. In nómine meo dæmónia ejícient, linguis loquéntur novis, serpéntes tollent: et si mortíferum quid bíberint, non eis nocébit: super ægros manus impónent, et bene habébunt. Numquídnam, fratres mei, quia ista signa non fácitis, mínime créditis? Sed hæc necessária in exórdio Ecclésiæ fuérunt. Ut enim ad fidem crésceret multitúdo credéntium, miráculis fúerat nutriénda: quia et nos, cum arbústa plantámus, támdiu eis aquam infúndimus, quoúsque ea in terra jam coaluísse videámus: et si semel radícem fíxerint, irrigátio cessábit. Hinc est enim, quod Paulus dicit: Linguæ in signum sunt non fidélibus, sed infidélibus."
+		],
+		"lectio-ii":"Habémus de his signis atque virtútibus, quæ adhuc subtílius consideráre debeámus. Sancta quippe Ecclésia quotídie spiritáliter facit, quod tunc per Apóstolos corporáliter faciébat. Nam sacerdótes ejus cum per exorcísmi grátiam manum credéntibus impónunt, et habitáre malígnos spíritus in eórum mente contradícunt, quid áliud fáciunt, nisi dæmónia ejíciunt? Et fidéles quique, qui jam vitæ véteris sæculária verba derelínquunt, sancta autem mystéria ínsonant, conditóris sui laudes et poténtiam, quantum prǽvalent, narrant: quid áliud fáciunt, nisi novis linguis loquúntur? Qui dum bonis suis exhortatiónibus malítiam de aliénis córdibus aúferunt, serpéntes tollunt.",
+		"lectio-iii":"Et dum pestíferas suasiónes aúdiunt, sed tamen ad operatiónem pravam mínime pertrahúntur, mortíferum quidem est quod bibunt, sed non eis nocébit. Qui quóties próximos suos in bono ópere infirmári conspíciunt, dum eis tota virtúte concúrrunt, et exémplo suæ operatiónis illórum vitam róborant, qui in própria actióne títubant: quid áliud fáciunt, nisi super ægros manus impónunt, ut bene hábeant? Quæ nimírum mirácula tanto majóra sunt, quanto spiritália: tanto majóra sunt, quanto per hæc non córpora, sed ánimæ suscitántur."
+	},
+	{
 		"tags":["ascensio","dominica-infra-octavam","infra-octavam","nomen"],
 		"datum":"Dominica infra Octavam Ascensionis Domini"
 	},
@@ -345,6 +422,47 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["ascensio","dominica-infra-octavam","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Íncipit Epístola prima beáti Joánnis Apóstoli.",
+			"[I. Joann. 1.]/Quod fuit ab inítio, quod audívimus, quod vídimus óculis nostris, quod perspéximus, et manus nostræ contrectavérunt de verbo vitæ: et vita manifestáta est, et vídimus, et testámur, et annuntiámus vobis vitam ætérnam, quæ erat apud Patrem, et appáruit nobis: quod vídimus, et audívimus, annuntiámus vobis, ut et vos societátem habeátis nobíscum, et socíetas nostra sit cum Patre, et cum Fílio ejus Jesu Christo. Et hæc scríbimus vobis ut gaudeátis, et gaúdium vestrum sit plenum. Et hæc est annuntiátio, quam audívimus ab eo, et annuntiámus vobis: Quóniam Deus lux est, et ténebræ in eo non sunt ullæ."
+		],
+		"lectio-ii":"Si dixérimus quóniam societátem habémus cum eo, et in ténebris ambulámus, mentímur, et veritátem non fácimus. Si autem in luce ambulámus sicut et ipse est in luce, societátem habémus ad ínvicem, et sanguis Jesu Christi, Fílii ejus, emúndat nos ab omni peccáto. Si dixérimus quóniam peccátum non habémus, ipsi nos sedúcimus, et véritas in nobis non est. Si confiteámur peccáta nostra: fidélis est, et justus, ut remíttat nobis peccáta nostra, et emúndet nos ab omni iniquitáte. Si dixérimus quóniam non peccávimus: mendácem fácimus eum, et verbum ejus non est in nobis.",
+		"lectio-iii":"[I. Joann. 2.]/Filíoli mei, hæc scribo vobis, ut non peccétis. Sed et si quis peccáverit, advocátum habémus apud Patrem, Jesum Christum justum: et ipse est propitiátio pro peccátis nostris: non pro nostris autem tantum, sed étiam pro totíus mundi. Et in hoc scimus quóniam cognóvimus eum, si mandáta ejus observémus. Qui dicit se nosse eum, et mandáta ejus non custódit, mendax est, et in hoc véritas non est. Qui autem servat verbum ejus, vere in hoc cáritas Dei perfécta est: et in hoc scimus quóniam in ipso sumus. Qui dicit se in ipso manére, debet, sicut ille ambulávit, et ipse ambuláre."
+	},
+	{
+		"tags":["ascensio","dominica-infra-octavam","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Sermo 2. de Ascensione Domini qui est 175. de Tempore.]/Salvátor noster, dilectíssimi fratres, ascéndit in cœlum: non ergo turbémur in terra. Ibi sit mens, et hic erit réquies. Ascendámus cum Christo ínterim corde: cum dies ejus promíssus advénerit, sequémur et córpore. Scire tamen debémus, fratres, quia cum Christo non ascéndit supérbia, non avarítia, non luxúria: nullum vítium nostrum ascéndit cum médico nostro. Et ídeo si post médicum desiderámus ascéndere, debémus vítia et peccáta depónere. Omnes enim quasi quibúsdam compédibus nos premunt, et peccatórum nos rétibus ligáre conténdunt: et ídeo cum Dei adjutório, secúndum quod ait Psalmísta: Dirumpámus víncula eórum: ut secúri possímus dícere Dómino: Dirupísti víncula mea, tibi sacrificábo hóstiam laudis."
+		],
+		"lectio-ii":"Resurréctio Dómini spes nostra est: ascénsio Dómini glorificátio nostra est. Ascensiónis hódie solémnia celebrámus. Si ergo recte, si fidéliter, si devóte, si sancte, si pie ascensiónem Dómini celebrámus, ascendámus cum illo, et sursum corda habeámus. Ascendéntes autem non extollámur, nec de nostris, quasi de própriis méritis præsumámus. Sursum autem corda habére debémus ad Dóminum. Sursum enim cor non ad Dóminum, supérbia vocátur: sursum autem cor ad Dóminum, refúgium vocátur. Vidéte, fratres, magnum miráculum. Altus est Deus, érigis te, et fugit a te; humílias te, et descéndit ad te. Quare hoc? Quia excélsus est, et humília réspicit, et alta de longe cognóscit. Humília de próximo réspicit, ut attóllat: alta, id est, supérba, de longe cognóscit, ut déprimat.",
+		"lectio-iii":"Resurréxit enim Christus, ut spem nobis daret, quia surgit homo, qui móritur; ne moriéndo desperarémus, et vitam nostram in morte finítam putarémus, secúros nos fecit. Sollíciti enim erámus de ipsa ánima: et ille nobis resurgéndo, de carnis resurrectióne fidúciam dedit. Crede ergo, ut mundéris. Prius te opórtet crédere, ut póstea per fidem Deum mereáris aspícere. Deum enim vidére vis? Audi ipsum: Beáti mundo corde: quóniam ipsi Deum vidébunt. Prius ergo cógita de corde mundándo: quidquid ibi vides, quod dísplicet Deo, tolle."
+	},
+	{
+		"tags":["ascensio","dominica-infra-octavam","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 15. d.]/In illo témpore: Dixit Jesus discípulis suis: Cum vénerit Paráclitus, quem ego mittam vobis a Patre, Spíritum veritátis, qui a Patre procédit, ille testimónium perhibébit de me. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tractatus 92. in Joannem.]/Dóminus Jesus in sermóne, quem locútus est discípulis suis post cœnam, próximus passióni, tamquam itúrus, et relictúrus eos præséntia corporáli, cum ómnibus autem suis usque in consummatiónem sǽculi futúrus præséntia spiritáli, exhortátus est eos ad perferéndas persecutiónes impiórum, quos mundi nómine nuncupávit: ex quo tamen mundo étiam ipsos discípulos se elegísse dixit: ut scirent se Dei grátia esse, quod sunt; suis autem vítiis fuísse, quod fuérunt."
+		],
+		"lectio-ii":"Deínde persecutóres et suos et ipsórum, Judǽos evidénter expréssit: ut omníno apparéret étiam ipsos mundi damnábilis appellatióne conclúsos, qui persequúntur sanctos. Cumque de illis díceret, quod ignorárent eum, a quo missus est; et tamen odíssent et Fílium, et Patrem, hoc est, et eum qui missus est, et eum a quo missus est: (de quibus ómnibus in áliis sermónibus jam disserúimus) ad hoc pervénit, ubi ait: Ut adimpleátur sermo, qui in lege eórum scriptus est: Quia ódio habuérunt me gratis."
+	},
+	{
+		"tags":[
+			["ascensio","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["ascensio","post-ascensionem","matutinum","nocturna-iii","responsorium","responsorium-ii"]
+		],
+		"incipit":"Si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos.",
+		"responsum":"Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.",
+		"versus":"Non enim loquétur a semetípso: sed quæcúmque aúdiet, loquétur: et quæ ventúra sunt, annuntiábit vobis."
+	},
+	{
+		"tags":["ascensio","dominica-infra-octavam","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Deínde tamquam consequénter adjúnxit, unde modo disputáre suscépimus: Cum autem vénerit Paráclitus, quem ego mittam vobis a Patre, Spíritum veritátis, qui a Patre procédit, ille testimónium perhibébit de me: et vos testimónium perhibébitis, quia ab inítio mecum estis. Quid hoc pértinet ad illud quod díxerat: Nunc autem et vidérunt, et odérunt et me, et Patrem meum; sed ut impleátur sermo, qui in lege eórum scriptus est: Quia ódio habuérunt me gratis? An quia Paráclitus quando venit Spíritus veritátis, eos, qui vidérunt, et odérunt, testimónio manifestióre convícit? Imo vero étiam áliquos ex illis qui vidérunt, et adhuc óderant, ad fidem, quæ per dilectiónem operátur, sui manifestatióne convértit."
+	},
+	{
 		"tags":[
 			["ascensio","dominica-infra-octavam","sexta","capitulum"],
 			["ascensio","post-ascensionem","sexta","capitulum"]
@@ -365,6 +483,163 @@
 		],
 		"src":"gregobase/1981",
 		"datum":"Hæc locútus sum * vobis, ut cum vénerit hora eórum, reminiscámini quia ego dixi vobis, allelúja."
+	},
+	{
+		"tags":["ascensio","dies-v","infra-octavam","nomen"],
+		"datum":"Feria II post Dominicam infra Octavam Ascensionis Domini"
+	},
+	{
+		"tags":["ascensio","dies-v","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola prima beáti Joánnis Apóstoli.",
+			"[I. Joann. 3.]/Vidéte qualem caritátem dedit nobis Pater, ut fílii Dei nominémur et simus. Propter hoc mundus non novit nos: quia non novit eum. Caríssimi, nunc fílii Dei sumus: et nondum appáruit quid érimus. Scimus quóniam cum apparúerit, símiles ei érimus: quóniam vidébimus eum sícuti est. Et omnis, qui habet hanc spem in eo, sanctíficat se, sicut et ille sanctus est. Omnis, qui facit peccátum, et iniquitátem facit: et peccátum est iníquitas. Et scitis quia ille appáruit ut peccáta nostra tólleret: et peccátum in eo non est. Omnis, qui in eo manet, non peccat: et omnis, qui peccat, non vidit eum, nec cognóvit eum."
+		],
+		"lectio-ii":"Filíoli, nemo vos sedúcat. Qui facit justítiam, justus est: sicut et ille justus est. Qui facit peccátum, ex diábolo est: quóniam ab inítio diábolus peccat. In hoc appáruit Fílius Dei, ut dissólvat ópera diáboli. Omnis, qui natus est ex Deo, peccátum non facit: quóniam semen ipsíus in eo manet, et non potest peccáre, quóniam ex Deo natus est. In hoc manifésti sunt fílii Dei, et fílii diáboli. Omnis, qui non est justus, non est ex Deo, et qui non díligit fratrem suum: quóniam hæc est annuntiátio, quam audístis ab inítio, ut diligátis altérutrum. Non sicut Cain, qui ex malígno erat, et occídit fratrem suum. Et propter quid occídit eum? Quóniam ópera ejus malígna erant: fratris autem ejus justa.",
+		"lectio-iii":"Nolíte mirári fratres, si odit vos mundus. Nos scimus quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres. Qui non díligit, manet in morte: omnis, qui odit fratrem suum, homicída est. Et scitis quóniam omnis homicída non habet vitam ætérnam in semetípso manéntem. In hoc cognóvimus caritátem Dei, quóniam ille ánimam suam pro nobis pósuit: et nos debémus pro frátribus ánimas pónere. Qui habúerit substántiam hujus mundi, et víderit fratrem suum necessitátem habére, et claúserit víscera sua ab eo: quómodo cáritas Dei manet in eo? Filíoli mei, non diligámus verbo, neque lingua, sed ópere et veritáte."
+	},
+	{
+		"tags":["ascensio","dies-v","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Joánnis Chrysóstomi.",
+			"[Sermo de Ascensione Domini, tom. 3.]/Christus ascéndens in cœlum, nostræ natúræ primítias óbtulit Patri, et oblátum donum mirátus est Pater, quod et tanta dígnitas offerébat; et quod offerebátur, nulla mácula fœdabátur. Nam et suis mánibus suscépit oblátum, et suæ sedis fecit esse partícipem, et quod plus est, ad partem suæ déxteræ collocávit. Cognoscámus, quis est ille qui audívit, Sede ad déxteram meam: quæ natúra est, cui Deus dixit, Esto meæ párticeps sedis. Illa natúra est, quæ audívit: Terra es, et in terram ibis."
+		],
+		"lectio-ii":"Non enim ad omnem glóriam cœlos transísse suffécerat, non cum Ángelis stare: sed cœlos transívit, supra Chérubim ascéndit, ultra Séraphim elevátur, nec ante stetit, nisi sedem Domínicam meruísset. Vide quo spátio cœlum separátur a terra, imo terra quanto ab ínferis abest, et ipsum cœlum quanto ab altióre cœlo separátur, et de altióre cœlo ad Ángelos quantum spátii est, ad superióres étiam Potestátes, ad ipsam quoque Domínicam sedem. Super hæc ómnia natúra nostra eleváta est, ut homo, qui loco tam húmili tenebátur, ut descéndere non posset ultérius, ad tam excélsam sedem elevarétur, ut áltius non posset ascéndere.",
+		"lectio-iii":"Et hæc osténdens Paulus dicébat: Qui descéndit, ipse est qui ascéndit. Et íterum: Descéndit ad inferióra terræ, et ascéndit super omnes cœlos. Díscite ígitur quisnam ascéndit, et quæ natúra eleváta est. In hoc enim cúpio remorári sermóne, ut humáni géneris commemoratióne, divínam cleméntiam cum omni admiratióne discámus, quæ summum honórem, magnámque glóriam nostræ natúræ largíta est, quæ ómnibus hodiérna die méruit excélsior reperíri. Hódie Ángeli atque Archángeli natúram nostram in sede Domínica immortáli glória fulgéntem vidérunt."
+	},
+	{
+		"tags":["ascensio","dies-v","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"[Ex eadem Homilia 29.]/Et Dóminus quidem Jesus, postquam locútus est eis, assúmptus est in cœlum, et sedet a dextris Dei. In véteri testaménto cognóvimus, quod Elías sit raptus in cœlum. Sed áliud est cœlum aéreum, áliud æthéreum. Cœlum quippe aéreum terræ est próximum: unde et aves cœli dícimus, quia eas volitáre in áëre vidémus. In cœlum ítaque aéreum Elías sublevátus est, ut in secrétam quamdam terræ regiónem repénte ducerétur, ubi in magna jam carnis et spíritus quiéte víveret, quoúsque ad finem mundi rédeat, et mortis débitum solvat. Ille étenim mortem dístulit, non evásit: Redémptor autem noster, quia non dístulit, superávit, eámque resurgéndo consúmpsit, et resurrectiónis suæ glóriam ascendéndo declarávit."
+		],
+		"lectio-ii":"Notándum quoque est, quod Elías in curru légitur ascendísse: ut vidélicet apérte demonstrarétur, quia homo purus adjutório indigébat aliéno. Per Ángelos quippe facta illa et osténsa sunt adjuménta: quia nec in cœlum quidem aéreum per se ascéndere póterat, quem natúræ suæ infírmitas gravábat. Redémptor autem noster non curru, non Ángelis sublevátus légitur: quia is, qui fécerat ómnia, nimírum super ómnia sua virtúte ferebátur. Illo étenim revertebátur, ubi erat: et inde redíbat, ubi remanébat: quia cum per humanitátem ascénderet in cœlum, per divinitátem suam et terram páriter continébat et cœlum.",
+		"lectio-iii":"Sicut autem Joseph a frátribus vénditus venditiónem Redemptóris nostri figurávit: sic Henoch translátus, atque ad cœlum aéreum Elías sublevátus, ascensiónem Domínicam utérque designávit. Ascensiónis ergo suæ Dóminus prænúntios et testes hábuit, unum ante legem, álium sub lege: ut quandóque veníret ipse, qui veráciter cœlos penetráre potuísset. Unde et ipse ordo in eórum quoque utrorúmque sublevatióne per quædam increménta distínguitur. Nam Henoch translátus, Elías vero ad cœlum subvéctus esse memorátur: ut veníret póstmodum, qui nec translátus, nec subvéctus, cœlum æthéreum sua virtúte penetráret."
+	},
+	{
+		"tags":["ascensio","dies-vi","infra-octavam","nomen"],
+		"datum":"Feria III post Dominicam infra Octavam Ascensionis Domini"
+	},
+	{
+		"tags":["ascensio","dies-vi","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola prima beáti Joánnis Apóstoli.",
+			"[I. Joann. 4.]/Caríssimi, nolíte omni spirítui crédere, sed probáte spíritus si ex Deo sint: quóniam multi pseudoprophétæ exiérunt in mundum. In hoc cognóscitur spíritus Dei: omnis spíritus qui confitétur Jesum Christum in carne venísse, ex Deo est: et omnis spíritus qui solvit Jesum, ex Deo non est, et hic est antichrístus, de quo audístis quóniam venit, et nunc jam in mundo est. Vos ex Deo estis filíoli, et vicístis eum, quóniam major est qui in vobis est, quam qui in mundo. Ipsi de mundo sunt: ídeo de mundo loquúntur, et mundus eos audit. Nos ex Deo sumus. Qui novit Deum, audit nos: qui non est ex Deo, non audit nos: in hoc cognóscimus Spíritum veritátis, et spíritum erróris."
+		],
+		"lectio-ii":"Caríssimi, diligámus nos ínvicem: quia cáritas ex Deo est. Et omnis, qui díligit, ex Deo natus est, et cognóscit Deum. Qui non díligit, non novit Deum: quóniam Deus cáritas est. In hoc appáruit cáritas Dei in nobis, quóniam Fílium suum unigénitum misit Deus in mundum, ut vivámus per eum. In hoc est cáritas: non quasi nos dilexérimus Deum, sed quóniam ipse prior diléxit nos, et misit Fílium suum propitiatiónem pro peccátis nostris. Caríssimi, si sic Deus diléxit nos: et nos debémus altérutrum dilígere. Deum nemo vidit umquam. Si diligámus ínvicem, Deus in nobis manet, et cáritas ejus in nobis perfécta est. In hoc cognóscimus quóniam in eo manémus, et ipse in nobis: quóniam de Spíritu suo dedit nobis. Et nos vídimus, et testificámur quóniam Pater misit Fílium suum Salvatórem mundi.",
+		"lectio-iii":"Quisquis conféssus fúerit quóniam Jesus est Fílius Dei, Deus in eo manet, et ipse in Deo. Et nos cognóvimus, et credídimus caritáti, quam habet Deus in nobis. Deus cáritas est, et qui manet in caritáte, in Deo manet, et Deus in eo. In hoc perfécta est cáritas Dei nobíscum, ut fidúciam habeámus in die judícii: quia sicut ille est, et nos sumus in hoc mundo. Timor non est in caritáte: sed perfécta cáritas foras mittit timórem: quóniam timor pœnam habet. Qui autem timet, non est perféctus in caritáte. Nos ergo diligámus Deum, quóniam Deus prior diléxit nos. Si quis díxerit, quóniam díligo Deum, et fratrem suum óderit, mendax est. Qui enim non díligit fratrem suum quem videt, Deum, quem non videt, quómodo potest dilígere? Et hoc mandátum habémus a Deo: ut qui díligit Deum, díligat et fratrem suum."
+	},
+	{
+		"tags":["ascensio","dies-vi","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Máximi Epíscopi.",
+			"[Homilia 43, quæ est 2. de Pentecoste, ante medium.]/Méminit sánctitas vestra, quod áquilæ illi de Psaltério, cujus innovátam juventútem légimus, comparáverim Salvatórem. Est enim similitúdo non parva. Sicut enim áquila humília déserit, alta petit, cœlórum vicína conscéndit: ita et Salvátor humília inférni deséruit, paradísi altióra pétiit, cœlórum fastígia penetrávit. Et sicut áquila relíctis terrénis sórdibus, sublíme volans, purióris áëris salubritáte perfrúitur: ita et Dóminus terrenórum fæcem déserens peccatórum, in sanctis suis vólitans, purióris vitæ simplicitáte lætátur."
+		],
+		"lectio-ii":"Per ómnia ígitur áquilæ comparátio cónvenit Salvatóri. Sed quid fácimus, quod áquila prædam frequénter díripit, tollit frequénter aliénum? Nec in hoc tamen dissímilis est Salvátor. Prædam enim quodámmodo sústulit, cum hóminem, quem suscépit, inférni raptum faúcibus portávit ad cœlum, et aliénæ dominatiónis, id est, diabólicæ potestátis servum de captivitáte érutum, duxit ad altióra captívum, sicut scriptum est in Prophéta: Ascéndens in altum, captívam duxit captivitátem, dedit dona homínibus.",
+		"lectio-iii":"Ascéndit, inquit, in altum, captívam duxit captivitátem. Quam bene triúmphum Dómini Prophéta descríbit! Solébat, sicut dicunt, regum triumphántium currus captivórum pompa præcédere. Ecce Dóminum eúntem ad cœlos non præcédit, sed comitátur gloriósa captívitas, non ante vehículum dúcitur, sed ipsa évehit Salvatórem. Quodam enim mystério, dum Fílius Dei fílium hóminis sústulit ad cœlum, ipsa captívitas portátur, et portat."
+	},
+	{
+		"tags":["ascensio","dies-vi","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"[Ex eadem Homilia 29.]/Considerándum nobis est, quid est quod Marcus ait: Sedet a dextris Dei: et Stéphanus dicit: Vídeo cœlos apértos, et Fílium hóminis stantem a dextris Dei. Quid est quod hunc Marcus sedéntem, Stéphanus vero stantem se vidére testátur? Sed scitis, fratres, quia sedére judicántis est, stare vero pugnántis, vel adjuvántis."
+		],
+		"lectio-ii":"Quia ergo Redémptor noster assúmptus in cœlum, et nunc ómnia júdicat, et ad extrémum judex ómnium véniet; hunc post assumptiónem Marcus sedére descríbit, quia post ascensiónis suæ glóriam judex in fine vidébitur. Stéphanus vero hunc in labóre certáminis pósitus stantem vidit, quem adjutórem hábuit: quia ut iste in terra persecutórum infidelitátem vínceret, pro illo de cœlo illíus grátia pugnávit.",
+		"lectio-iii":"Séquitur: Illi autem profécti prædicavérunt ubíque Dómino cooperánte, et sermónem confirmánte sequéntibus signis. Quid in his considerándum est, quid memóriæ commendándum: nisi quod præcéptum obediéntia, obediéntiam vero signa secúta sunt? Sed quia auctóre Deo bréviter lectiónem evangélicam exponéndo transcúrrimus: restat, ut áliquid de ipsa tantæ consideratióne solemnitátis dicámus."
+	},
+	{
+		"tags":["ascensio","dies-vii","infra-octavam","nomen"],
+		"datum":"Feria IV post Dominicam infra Octavam Ascensionis Domini"
+	},
+	{
+		"tags":["ascensio","dies-vii","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Íncipit Epístola secúnda beáti Joánnis Apóstoli.",
+			"[II. Joann. 1.]/Sénior Eléctæ dóminæ, et natis ejus, quos ego díligo in veritáte, et non ego solus, sed et omnes qui cognovérunt veritátem, propter veritátem, quæ pérmanet in nobis, et nobíscum erit in ætérnum. Sit vobíscum grátia, misericórdia, pax a Deo Patre, et a Christo Jesu Fílio Patris in veritáte, et caritáte. Gavísus sum valde, quóniam invéni de fíliis tuis ambulántes in veritáte, sicut mandátum accépimus a Patre. Et nunc rogo te dómina, non tamquam mandátum novum scribens tibi, sed quod habúimus ab inítio, ut diligámus altérutrum."
+		],
+		"lectio-ii":"Et hæc est cáritas, ut ambulémus secúndum mandáta ejus. Hoc est enim mandátum, ut quemádmodum audístis ab inítio, in eo ambulétis: quóniam multi seductóres exiérunt in mundum, qui non confiténtur Jesum Christum venísse in carnem: hic est sedúctor, et antichrístus. Vidéte vosmetípsos, ne perdátis quæ operáti estis: sed ut mercédem plenam accipiátis. Omnis, qui recédit, et non pérmanet in doctrína Christi, Deum non habet: qui pérmanet in doctrína, hic et Patrem et Fílium habet.",
+		"lectio-iii":"Si quis venit ad vos, et hanc doctrínam non affert, nolíte recípere eum in domum, nec Ave ei dixéritis. Qui enim dicit illi Ave, commúnicat opéribus ejus malígnis. Plura habens vobis scríbere, nólui per chartam et atraméntum: spero enim me futúrum apud vos, et os ad os loqui: ut gaúdium vestrum plenum sit. Salútant te fílii soróris tuæ Eléctæ."
+	},
+	{
+		"tags":["ascensio","dies-vii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Gregórii Nysséni.",
+			"[Orat. de Ascens. Domini.]/Hodiérnam celebritátem satis per se magnam, prophéta David majórem éfficit, dum illi gaúdium e Psalmis adjúngit. Hic enim excélsus Prophéta supra seípsum egrédiens, tamquam córporis ónere nihil premátur, infert se cœléstibus potestátibus, et voces eárum nobis expónit, cum in cœlum redeúntem Dóminum ipsæ comitántes, Ángelis, qui versántur in terris, quibúsque in humánam vitam ingréssus commíssus est, ímperant ad hunc modum: Tóllite portas príncipes vestras, et elevámini portæ æternáles, et introíbit Rex glóriæ."
+		],
+		"lectio-ii":"Et quóniam ubicúmque fúerit ille, qui in seípso ómnia cóntinet, pro suscipiéntium captu seípsum dimetítur (neque enim solum inter hómines homo fit, verum étiam dum inter Ángelos versátur, ad illórum vocem sese dimíttit) idcírco janitóres intérrogant: Quis est iste Rex glóriæ? Respóndent ipsis, demonstrántque fortem et poténtem in prǽlio, qui pugnatúrus erat contra illum, qui natúram humánam in servitúte captívam detinébat, et eversúrus eum qui mortis habébat impérium: ut gravíssimo hoste superáto, genus hóminum in libertátem et pacem vindicáret.",
+		"lectio-iii":"Occúrrunt ei custódes, et portas jubent reclúdi, ut in ipsis rursum glóriam assequátur. Verum non agnóscunt eum, qui sórdidam vitæ nostræ stolam indútus est: cujus rubra sunt vestiménta ex humanórum malórum torculári. Ítaque rursus cómites ejus vócibus illis interrogántur: Quis est iste Rex glóriæ? Respondétur autem non ámplius, Fortis et potens in prǽlio; sed, Dóminus virtútum, qui mundi principátum obtínuit, qui summátim ómnia in se collégit, qui prístinum in statum cuncta restítuit: ipse est Rex glóriæ."
+	},
+	{
+		"tags":["ascensio","dies-vii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"[Ex eadem Homilia 29.]/Hoc autem nobis primum quæréndum est, quidnam sit, quod, nato Dómino, apparuérunt Ángeli, et tamen non legúntur in albis véstibus apparuísse: ascendénte autem Dómino, missi Ángeli in albis legúntur véstibus apparuísse. Sic étenim scriptum est: Vidéntibus illis elevátus est, et nubes suscépit eum ab óculis eórum. Cumque intueréntur in cœlum eúntem illum, ecce duo viri stetérunt juxta illos in véstibus albis. In albis autem véstibus gaúdium et solémnitas mentis osténditur. Quid est ergo, quod, nato Dómino, non in albis véstibus, ascendénte autem Dómino, in albis véstibus Ángeli appárent: nisi quod tunc magna solémnitas Ángelis facta est, cum cœlum Deus homo penetrávit? Quia nascénte Dómino videbátur divínitas humiliáta, ascendénte vero Dómino est humánitas exaltáta. Albæ étenim vestes exaltatióni magis cóngruunt, quam humiliatióni."
+		],
+		"lectio-ii":"In ascensióne ergo ejus Ángeli in albis véstibus vidéri debuérunt: quia qui in nativitáte sua appáruit Deus húmilis, in ascensióne sua osténsus est homo sublímis. Sed hoc nobis magnópere, fratres caríssimi, in hac solemnitáte pensándum est: quia delétum est hodiérna die chirógraphum damnatiónis nostræ, mutáta est senténtia corruptiónis nostræ. Illa enim natúra, cui dictum est: Terra es, et in terram ibis; hódie in cœlum ivit. Pro hac ipsa namque carnis nostræ sublevatióne, per figúram beátus Job Dóminum avem vocat. Quia enim ascensiónis ejus mystérium Judǽam non intellígere conspéxit, de infidelitáte ejus per figúram beátus Job senténtiam prótulit, dicens: Sémitam ignorávit avis.",
+		"lectio-iii":"Avis enim recte appellátus est Dóminus, quia corpus cárneum ad ǽthera librávit. Cujus avis sémitam ignorávit, quisquis eum ad cœlum ascendísse non crédidit. De hac solemnitáte per Psalmístam dícitur: Eleváta est magnificéntia tua super cœlos. De hac rursus ait: Ascéndit Deus in jubilatióne, et Dóminus in voce tubæ. De hac íterum dicit: Ascéndens in altum, captívam duxit captivitátem, dedit dona homínibus. Ascéndens quippe in altum, captívam duxit captivitátem: quia corruptiónem nostram virtúte suæ incorruptiónis absórbuit. Dedit vero dona homínibus, quia misso désuper Spíritu, álii sermónem sapiéntiæ, álii sermónem sciéntiæ, álii grátiam virtútum, álii grátiam curatiónum, álii génera linguárum, álii interpretatiónem tríbuit sermónum."
+	},
+	{
+		"tags":["ascensio","dies-octava","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola beáti Pauli Apóstoli ad Ephésios.",
+			"[Ephes. 4.]/Óbsecro ítaque vos ego vinctus in Dómino, ut digne ambulétis vocatióne, qua vocáti estis, cum omni humilitáte, et mansuetúdine, cum patiéntia, supportántes ínvicem in caritáte, sollíciti serváre unitátem Spíritus in vínculo pacis. Unum corpus, et unus spíritus sicut vocáti estis in una spe vocatiónis vestræ. Unus Dóminus, una fides, unum baptísma. Unus Deus et Pater ómnium, qui est super omnes, et per ómnia, et in ómnibus nobis. Unicuíque autem nostrum data est grátia secúndum mensúram donatiónis Christi. Propter quod dicit: Ascéndens in altum captívam duxit captivitátem: dedit dona homínibus."
+		],
+		"lectio-ii":"Quod autem ascéndit, quid est, nisi quia et descéndit primum in inferióres partes terræ? Qui descéndit, ipse est et qui ascéndit super omnes cœlos, ut impléret ómnia. Et ipse dedit quosdam quidem Apóstolos, quosdam autem Prophétas, álios vero Evangelístas, álios autem pastóres, et doctóres ad consummatiónem sanctórum in opus ministérii, in ædificatiónem córporis Christi: donec occurrámus omnes in unitátem fídei, et agnitiónis Fílii Dei, in virum perféctum, in mensúram ætátis plenitúdinis Christi: ut jam non simus párvuli fluctuántes, et circumferámur omni vento doctrínæ in nequítia hóminum, in astútia ad circumventiónem erróris.",
+		"lectio-iii":"Veritátem autem faciéntes in caritáte, crescámus in illo per ómnia, qui est caput Christus: ex quo totum corpus compáctum et connéxum per omnem junctúram subministratiónis, secúndum operatiónem in mensúram uniuscujúsque membri, augméntum córporis facit in ædificatiónem sui in caritáte. Hoc ígitur dico, et testíficor in Dómino, ut jam non ambulétis, sicut et Gentes ámbulant in vanitáte sensus sui, ténebris obscurátum habéntes intelléctum, alienáti a vita Dei per ignorántiam, quæ est in illis, propter cæcitátem cordis ipsórum, qui desperántes, semetípsos tradidérunt impudicítiæ, in operatiónem immundítiæ omnis in avarítiam. Vos autem non ita didicístis Christum, si tamen illum audístis, et in ipso edócti estis."
+	},
+	{
+		"tags":["ascensio","dies-octava","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Sermo 3. de Ascensione Domini, qui est 176. de Tempore.]/Ómnia, caríssimi, quæ Dóminus Jesus Christus in hoc mundo sub fragilitáte nostra mirácula édidit, nobis profíciunt: qui dum humánam conditiónem sidéribus importávit, credéntibus cœlum patére posse monstrávit: et dum victórem mortis in cœléstia elevávit, victóribus quo sequántur osténdit. Ascénsio ergo Dómini cathólicæ fídei confirmátio fuit: ut secúri in pósterum crederémus miráculi illíus donum, cujus jam in præsénti percepissémus efféctum: et fidélis quisque cum jam tanta percéperit, per ea, quæ cognóscit prǽstita, discat speráre promíssa, ac Dei sui prætéritam præsentémque bonitátem, quasi futurórum téneat cautiónem."
+		],
+		"lectio-ii":"Super excélsa ergo cœli terrénum corpus impónitur: ossa intra sepúlchri angústias paulo ante conclúsa, Angelórum cœ\u0301tibus inferúntur: in grémium immortalitátis mortális natúra transfúnditur: et ídeo sacra apostólicæ lectiónis testátur história: Cum hæc dixísset, inquit, vidéntibus illis, elevátus est. Dum audis elevátum, agnósce milítiæ cœléstis obséquium: unde hodiérna festívitas hóminis nobis et Dei sacraménta manifestávit. Sub una eadémque persóna, in eo qui élevat, divínam poténtiam; in eo autem, qui elevátur, humánam cognósce substántiam.",
+		"lectio-iii":"Ideóque omnímodis detestánda sunt venéna Orientális erróris, qui ímpia novitáte præsúmit assérere Fílium Dei ac fílium hóminis uníus esse natúræ. In altérutra enim parte, vel qui solum hóminem fuísse díxerit, negábit Conditóris glóriam: vel qui solum Deum, negábit misericórdiam Redemptóris. Quo génere non fácile Ariánus evangélicam póterit habére veritátem, ubi Fílium Dei nunc æquálem légimus, nunc minórem. Qui enim uníus natúræ Salvatórem nostrum mortífera persuasióne credíderit, solum hóminem, aut solum Deum cogétur dícere crucifíxum. Sed non ita est. Mortem enim nec solus Deus sentíre, nec solus homo superáre potuísset."
+	},
+	{
+		"tags":["ascensio","dies-octava","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 16. c.]/In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et exprobrávit incredulitátem eórum, et durítiam cordis: quia iis, qui víderant eum resurrexísse, non credidérunt. Et réliqua.",
+			"De Homilía sancti Gregórii Papæ.",
+			"[Ex eadem Homilia 29.]/De hac ascensiónis ejus glória étiam Hábacuc ait: Elevátus est sol, et luna stetit in órdine suo. Quis enim solis nómine, nisi Dóminus; et quæ lunæ nómine, nisi Ecclésia designátur? Quoúsque enim Dóminus ascéndit ad cœlos, sancta ejus Ecclésia advérsa mundi omnímodo formidávit: at postquam ejus ascensióne roboráta est, apérte prædicávit, quod occúlte crédidit. Elevátus est ergo sol, et luna stetit in órdine suo: quia cum Dóminus cœlum pétiit, sancta ejus Ecclésia in auctoritáte prædicatiónis excrévit."
+		],
+		"lectio-ii":"Hinc ejúsdem Ecclésiæ voce per Salomónem dícitur: Ecce iste venit sáliens in móntibus, et transíliens colles. Considerávit namque tantórum óperum cúlmina, et ait: Ecce iste venit sáliens in móntibus. Veniéndo quippe ad redemptiónem nostram, quosdam, ut ita dicam, saltus dedit. Vultis, fratres caríssimi, ipsos ejus saltus agnóscere? De cœlo venit in úterum, de útero venit in præsépe, de præsépe venit in crucem, de cruce venit in sepúlchrum, de sepúlchro rédiit in cœlum. Ecce ut nos post se cúrrere fáceret, quosdam pro nobis saltus manifestáta per carnem Véritas dedit: quia exsultávit ut gigas ad curréndam viam suam, ut nos ei dicerémus ex corde: Trahe nos: post te currémus in odórem unguentórum tuórum.",
+		"lectio-iii":"Unde, fratres caríssimi, opórtet ut illuc sequámur corde, ubi eum córpore ascendísse crédimus. Desidéria terréna fugiámus: nihil nos jam deléctet in ínfimis, qui Patrem habémus in cœlis. Et hoc nobis est magnópere perpendéndum: quia is qui plácidus ascéndit, terríbilis redíbit: et quidquid nobis cum mansuetúdine præcépit, hoc a nobis cum districtióne éxiget. Nemo ergo indúlta pœniténtiæ témpora parvipéndat, nemo curam sui, dum valet, ágere négligat: quia Redémptor noster tanto tunc in judícium distríctior véniet, quanto nobis ante judícium magnam patiéntiam prærogávit."
+	},
+	{
+		"tags":["ascensio","post-ascensionem","feria-vi","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Íncipit Epístola tértia beáti Joánnis Apóstoli.",
+			"[III. Joann. 1.]/Sénior Gajo caríssimo, quem ego díligo in veritáte. Caríssime, de ómnibus oratiónem fácio próspere te íngredi, et valére, sicut próspere agit ánima tua. Gavísus sum valde veniéntibus frátribus, et testimónium perhibéntibus veritáti tuæ, sicut tu in veritáte ámbulas. Majórem horum non hábeo grátiam, quam ut aúdiam fílios meos in veritáte ambuláre."
+		],
+		"lectio-ii":"Caríssime, fidéliter facis quidquid operáris in fratres, et hoc in peregrínos, qui testimónium reddidérunt caritáti tuæ in conspéctu Ecclésiæ: quos, benefáciens, dedúces digne Deo. Pro nómine enim ejus profécti sunt, nihil accipiéntes a Géntibus. Nos ergo debémus suscípere hujúsmodi, ut cooperatóres simus veritátis. Scripsíssem fórsitan Ecclésiæ: sed is, qui amat primátum gérere in eis, Diótrephes, non récipit nos. Propter hoc si vénero, commonébo ejus ópera, quæ facit: verbis malígnis gárriens in nos: et quasi non ei ista suffíciant: neque ipse súscipit fratres: et eos, qui suscípiunt, próhibet, et de Ecclésia éjicit.",
+		"lectio-iii":"Caríssime, noli imitári malum, sed quod bonum est. Qui benéfacit, ex Deo est: qui maléfacit, non vidit Deum. Demétrio testimónium rédditur ab ómnibus, et ab ipsa veritáte, sed et nos testimónium perhibémus: et nosti quóniam testimónium nostrum verum est. Multa hábui tibi scríbere: sed nólui per atraméntum et cálamum scríbere tibi. Spero autem prótinus te vidére, et os ad os loquémur. Pax tibi. Salútant te amíci. Salúta amícos nominátim."
+	},
+	{
+		"tags":["ascensio","post-ascensionem","feria-vi","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Augustíni Epíscopi.",
+			"[Ex eodem Sermone 176. in fine.]/Salvátor noster, caríssimi, si non in nostra carne diábolum triumphávit, se exércuit, non nobis vicit. Si non in nostro córpore resurréxit, conditióni nostræ resurgéndo nihil cóntulit. Hæc qui dicit, suscéptæ et assúmptæ carnis non intélligit ratiónem, confúndit órdinem, evácuat utilitátem. Si non in nostra carne perégit medicínam, solam ergo ex hómine nascéndi elégit injúriam. Recédat a sénsibus nostris tam periculósa persuásio. De nostro est quod appéndit, de suo est quod donávit. Meum testor esse quod cécidit, ut meum sit quod resurréxit. Meum testor esse quod jácuit intra túmulum, ut meum sit quod ascéndit in cœlum."
+		],
+		"lectio-ii":"In illo ítaque nostri géneris córpore nos Christi mors vivificávit, nos resurréctio eréxit, nos ascénsio consecrávit. In illo nostræ oríginis córpore cœléstibus regnis arrham nostræ conditiónis impósuit. Elaborémus ergo, caríssimi, ut quemádmodum Dóminus in hac die nostro cum córpore ad supérna conscéndit, ita nos post illum quómodo póssumus, spe ascendámus, et corde sequámur. Ipso afféctu páriter et proféctu ascendámus post illum: étiam per vítia ac passiónes nostras. Si útique unusquísque nostrum súbdere eas sibi stúdeat, ac super eas stare consuéscat, ex ipsis sibi gradum cónstruit, quo possit ad superióra conscéndere. Elevábunt nos, si fúerint infra nos.",
+		"lectio-iii":"De vítiis nostris scalam nobis fácimus, si vítia ipsa calcámus. Nam cum bonitátis auctóre non ascéndit malítia, nec cum Fílio Vírginis libído atque luxúria. Non, inquam, ascéndunt vítia post virtútum paréntem, peccáta post justum, nec infirmitátes ac morbi possunt ire post médicum. Ígitur si intráre ipsíus médici regnum vólumus, prius vúlnera nostra curémus. Ordinémus et custodiámus in nobis statum utriúsque substántiæ; ne ánimam, nobiliórem útique hóminis portiónem, tártaro pars devólvat inférior: sed secum pótius cœlo sanctificátum corpus acquírat natúra gloriósior: ipso adjuvánte, qui vivit et regnat in sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":["ascensio","post-ascensionem","feria-vi","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 15. d.]/In illo témpore: Dixit Jesus discípulis suis: Cum vénerit Paráclitus, quem ego mittam vobis a Patre, Spíritum veritátis, qui a Patre procédit, ille testimónium perhibébit de me. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 92. in Joann. circa med.]/Venit die Pentecóstes Spíritus sanctus in centum vigínti hómines congregátos, in quibus et Apóstoli omnes erant: qui illo adimpléti, cum linguis ómnium géntium loqueréntur, plures ex his, qui óderant, tanto miráculo stupefácti (quandóquidem vidérunt, loquénte Petro, tam magnum atque divínum testimónium perhibéri de Christo, ut ille, qui occísus ab eis inter mórtuos deputabátur, resurrexísse, et vívere probarétur) compúncti corde convérsi sunt, et tanti sánguinis, tam ímpie atque immániter fusi, indulgéntiam percepérunt, ipso redémpti sánguine quem fudérunt."
+		],
+		"lectio-ii":"Christi enim sanguis sic in remissiónem peccatórum ómnium fusus est, ut ipsum étiam peccátum posset delére, quo fusus est. Hoc ergo íntuens Dóminus dicébat: Ódio habuérunt me gratis: cum autem vénerit Paráclitus, ille testimónium perhibébit de me. Tamquam díceret: Ódio me habuérunt, et occidérunt vidéntes: sed tale de me Paráclitus testimónium perhibébit, ut eos fáciat in me crédere non vidéntes. Et vos, inquit, testimónium perhibébitis, quia ab inítio mecum estis. Perhibébit Spíritus sanctus, perhibébitis et vos. Quia enim ab inítio mecum estis, potéstis prædicáre quod nostis: quod ut modo non faciátis, illíus Spíritus plenitúdo nondum adest vobis.",
+		"lectio-iii":"Ille ergo testimónium perhibébit de me, et vos testimónium perhibébitis: dabit enim vobis fidúciam testimónium perhibéndi cáritas Dei diffúsa in córdibus vestris per Spíritum sanctum, qui dábitur vobis. Quæ útique Petro adhuc défuit, quando mulíeris ancíllæ interrogatióne pertérritus, non pótuit verum testimónium perhibére, sed contra suam pollicitatiónem timóre magno compúlsus est ter negáre. Timor autem iste non est in caritáte: sed perfécta cáritas foras mittit timórem. Dénique ante passiónem Dómini servílis timor ejus interrogátus est a fémina servitútis; post resurrectiónem vero Dómini, liberális ejus amor ab ipso príncipe libertátis: et ídeo ibi turbabátur, hic tranquillabátur: ibi quem diléxerat, negábat: hic quem negáverat, diligébat. Sed adhuc étiam tunc amor ipse infírmus fúerat et angústus, donec eum roboráret et dilatáret Spíritus sanctus."
 	},
 	{
 		"tags":["ascensio","post-ascensionem","feria-vi","nomen"],
