@@ -444,10 +444,10 @@ function render(data, chant) {
 						}
 
 						// Readings have initial letters, but the first-letter pseudoclass is applied to the first letter of a paragraph. Therefore the reading's annotation needs to be in a separate paragraph.
-						function annotate(reading, translated, cssclasses) {
+						function annotate(reading, translated, cssclasses, notecomm = true) {
 							// Adds extra line of annotation noting that the reading is a commemoration (i.e. not a continuation of the previous readings).
-							if (cssclasses.includes('commemoratio-matutini')) {
-								reading = `[${commmat[0]}]/${reading}`;
+							if (cssclasses.includes('commemoratio-matutini') && notecomm) {
+								reading = `[${commmat[0]}.]/${reading}`;
 								reading = reading.replace(/\]\/\[/g, '/');
 							}
 							annotation = reading.match(/^\[.+?\]\//g);
@@ -481,7 +481,7 @@ function render(data, chant) {
 
 						// For the first reading from a Homily.
 						if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
-							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '))}`
+							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[2])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '), false)}`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings.
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
 							return `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>${annotate(reading.slice(1).join(' &para; '), translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`

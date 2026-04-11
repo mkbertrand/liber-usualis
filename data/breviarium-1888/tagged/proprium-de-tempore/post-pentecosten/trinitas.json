@@ -60,6 +60,7 @@
 	},
 	{
 		"tags":["trinitas","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/H1I",
 		"datum":"Deum verum, unum in Trinitáte, et Trinitátem in Unitáte, * Venite adorémus."
 	},
 	{
@@ -102,7 +103,7 @@
 		"tags":["trinitas","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Isaía Prophéta.",
-			"In anno, quo mórtuus est rex Ozías, vidi Dóminum sedéntem super sólium excélsum et elevátum: et ea, quæ sub ipso erant, replébant templum. Séraphim stabant super illud: sex alæ uni, et sex alæ álteri: duábus velábant fáciem ejus, et duábus velábant pedes ejus, et duábus volábant. Et clamábant alter ad álterum, et dicébant: Sanctus, sanctus, sanctus, Dóminus Deus exercítuum, plena est omnis terra glória ejus. Et commóta sunt superliminária cárdinum a voce clamántis, et domus repléta est fumo."
+			"[Isaiæ 6.]/In anno, quo mórtuus est rex Ozías, vidi Dóminum sedéntem super sólium excélsum et elevátum: et ea, quæ sub ipso erant, replébant templum. Séraphim stabant super illud: sex alæ uni, et sex alæ álteri: duábus velábant fáciem ejus, et duábus velábant pedes ejus, et duábus volábant. Et clamábant alter ad álterum, et dicébant: Sanctus, sanctus, sanctus, Dóminus Deus exercítuum, plena est omnis terra glória ejus. Et commóta sunt superliminária cárdinum a voce clamántis, et domus repléta est fumo."
 		]
 	},
 	{
@@ -165,7 +166,7 @@
 		"tags":["trinitas","matutinum","nocturna-ii","lectio","lectio-i"],
 		"datum":[
 			"Ex libro S. Fulgéntii Epíscopi, de fide ad Petrum.",
-			"Fides, quam sancti Patriárchæ atque Prophétæ ante incarnatiónem Fílii Dei divínitus accepérunt, quam étiam sancti Apóstoli ab ipso Dómino in carne pósito audiérunt, et Spíritus sancti magistério instrúcti non solum sermóne prædicavérunt, verum étiam ad instructiónem salubérrimam posterórum scriptis suis índitam reliquérunt, unum Deum prǽdicat Trinitátem, id est, Patrem, et Fílium, et Spíritum sanctum. Sed Trínitas vera non esset, si una eadémque persóna dicerétur Pater et Fílius et Spíritus sanctus."
+			"[Inter Opera Augustini, tom. 3.]/Fides, quam sancti Patriárchæ atque Prophétæ ante incarnatiónem Fílii Dei divínitus accepérunt, quam étiam sancti Apóstoli ab ipso Dómino in carne pósito audiérunt, et Spíritus sancti magistério instrúcti non solum sermóne prædicavérunt, verum étiam ad instructiónem salubérrimam posterórum scriptis suis índitam reliquérunt, unum Deum prǽdicat Trinitátem, id est, Patrem, et Fílium, et Spíritum sanctum. Sed Trínitas vera non esset, si una eadémque persóna dicerétur Pater et Fílius et Spíritus sanctus."
 		]
 	},
 	{
@@ -228,9 +229,9 @@
 		"tags":["trinitas","matutinum","nocturna-iii","lectio","lectio-i"],
 		"datum":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
-			"In illo témpore: Dixit Jesus discípulis suis: Data est mihi omnis potéstas in cœlo et in terra. Eúntes ergo docéte omnes Gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus sancti. Et réliqua.",
+			"[Matth. 28. d.]/In illo témpore: Dixit Jesus discípulis suis: Data est mihi omnis potéstas in cœlo et in terra. Eúntes ergo docéte omnes Gentes, baptizántes eos in nómine Patris, et Fílii, et Spíritus sancti. Et réliqua.",
 			"Homilía sancti Gregórii Nazianzéni.",
-			"Quis catholicórum ignórat, Patrem vere esse Patrem, Fílium vere esse Fílium, et Spíritum sanctum vere esse Spíritum sanctum? sicut ipse Dóminus ad Apóstolos suos dicit: Eúntes baptizáte omnes Gentes in nómine Patris, et Fílii, et Spíritus sancti. Hæc est perfécta Trínitas in unitáte consístens, quam scílicet uníus substántiæ profitémur. Non enim nos secúndum córporum conditiónem, divisiónem in Deo fácimus: sed secúndum divínæ natúræ poténtiam, quæ in matéria non est, et nóminum persónas vere constáre crédimus, et unitátem divinitátis esse testámur."
+			"[In Tractatu de fide, post init.]/Quis catholicórum ignórat, Patrem vere esse Patrem, Fílium vere esse Fílium, et Spíritum sanctum vere esse Spíritum sanctum? sicut ipse Dóminus ad Apóstolos suos dicit: Eúntes baptizáte omnes Gentes in nómine Patris, et Fílii, et Spíritus sancti. Hæc est perfécta Trínitas in unitáte consístens, quam scílicet uníus substántiæ profitémur. Non enim nos secúndum córporum conditiónem, divisiónem in Deo fácimus: sed secúndum divínæ natúræ poténtiam, quæ in matéria non est, et nóminum persónas vere constáre crédimus, et unitátem divinitátis esse testámur."
 		]
 	},
 	{
@@ -241,23 +242,13 @@
 		"versus":"Benedíctus es Dómine in firmaménto cœli, et laudábilis et gloriósus in sǽcula."
 	},
 	{
-		"tags":["trinitas","matutinum","nocturna-iii","lectio","lectio-ii"],
+		"tags":["trinitas","matutinum","nocturna-iii","lectio","lectio-ii","habens-commemorationem-matutini","include-inauthenticas"],
 		"datum":"Nec extensiónem partis alicújus ex parte, ut quidam putavérunt, Dei Fílium dícimus: nec verbum sine re, velut sonum vocis accípimus: sed tria nómina, et tres persónas uníus esse esséntiæ, uníus majestátis atque poténtiæ crédimus. Et ídeo unum Deum confitémur: quia únitas majestátis, plúrium vocáculo deos próhibet appellári. Denique Patrem, et Fílium cathólice nominámus: duos autem Deos dícere, nec póssumus, nec debémus. Non quod Fílius Dei Deus non sit, imo verus Deus de Deo vero: sed quia non aliúnde, quam de ipso uno Patre: Dei Fílium nóvimus, perínde unum Deum dícimus. Hoc enim Prophétæ, hoc Apóstoli tradidérunt: hoc ipse Dóminus dócuit, cum dicit: Ego et Pater unum sumus. Unum ad unitátem divinitátis, ut dixi, refert: sumus autem, persónis assígnat."
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"formula":[["matutinum","dominica","per-annum","nocturna-iii","responsorium","responsorium-ii","formula"]],
 		"datum":[["matutinum","dominica","per-annum","nocturna-iii","responsorium","responsorium-ii"]]
-	},
-	{
-		"tags":["trinitas","matutinum","nocturna-iii","lectio-iii"],
-		"benedictio":[["benedictio","per-evangelica-dicta"]],
-		"lectio":[
-			"Léctio sancti Evangélii secúndum Lucam.",
-			"In illo témpore: Dixit Jesus discípulis suis: Estóte misericórdes, sicut et Pater vester miséricors est. Et réliqua.",
-			"Homilía sancti Augustíni Epíscopi.",
-			"Duo sunt ópera misericórdiæ, quæ nos líberant, quæ bréviter ipse Dóminus pósuit in Evangélio: Dimíttite, et dimittétur vobis: Date, et dábitur vobis. Dimíttite, et dimittétur vobis, ad ignoscéndum pértinet: Date, et dábitur vobis, ad præstándum benefícium pértinet. Quod ait de ignoscéndo, et tu vis tibi ignósci quod peccas, et habes álium, cui tu possis ignóscere. Rursus, quod pértinet ad tribuéndum benefícium, petit te mendícus, et tu es Dei mendícus. Omnes enim quando orámus, mendíci Dei sumus, ante jánuam magni Patrisfamílias stamus, imo et prostérnimur, súpplices ingemíscimus, áliquid voléntes accípere: et ipsum áliquid, ipse Deus est. Quid a te petit mendícus? panem. Et tu quid petis a Deo, nisi Christum, qui dicit: Ego sum panis vivus, qui de cœlo descéndi? Ignósci vobis vultis? ignóscite: Remíttite, et remittétur vobis. Accípere vultis: date, et dábitur vobis."
-		]
 	},
 	{
 		"tags":["trinitas","laudes","hymnus"],
@@ -300,7 +291,7 @@
 	},
 	{
 		"tags":["trinitas","sexta","capitulum"],
-		"datum":"Grátia Dómini nostri Jesu Christi, + et cáritas Dei, et communicátio sancti Spíritus * sit cum ómnibus vobis. Amen."
+		"datum":"[II. Cor. 13. d.]/Grátia Dómini nostri Jesu Christi, + et cáritas Dei, et communicátio sancti Spíritus * sit cum ómnibus vobis. Amen."
 	},
 	{
 		"tags":["trinitas","sexta","responsorium-breve"],
@@ -317,7 +308,7 @@
 	},
 	{
 		"tags":["trinitas","nona","capitulum"],
-		"datum":"Tres sunt, qui testimónium dant in cœlo: + Pater, Verbum, et Spíritus sanctus: * et hi tres unum sunt."
+		"datum":"[I. Joann. 5. b.]/Tres sunt, qui testimónium dant in cœlo: + Pater, Verbum, et Spíritus sanctus: * et hi tres unum sunt."
 	},
 	{
 		"tags":["trinitas","nona","responsorium-breve"],
