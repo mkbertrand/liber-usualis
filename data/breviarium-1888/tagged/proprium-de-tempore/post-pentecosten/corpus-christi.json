@@ -131,7 +131,10 @@
 		"datum":["V. Panem cœli dedit eis, allelúja.","R. Panem Angelórum manducávit homo, allelúja."]
 	},
 	{
-		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-i"],
+		"tags":[
+			["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-i"],
+			["corpus-christi","dies-octava","matutinum","nocturna-i","lectio","lectio-i"]
+		],
 		"datum":[
 			"De Epístola prima beáti Pauli Apóstoli ad Corínthios.",
 			"[I. Cor. 11. d.]/Conveniéntibus vobis in unum, jam non est Domínicam cœnam manducáre. Unusquísque enim suam cœnam præsúmit ad manducándum. Et álius quidem ésurit: álius autem ébrius est. Numquid domos non habétis ad manducándum et bibéndum? aut Ecclésiam Dei contémnitis, et confúnditis eos, qui non habent? Quid dicam vobis? Laudo vos? In hoc non laudo."
@@ -144,7 +147,10 @@
 		"versus":"Pascha nostrum immolátus est Christus: ítaque epulémur in ázymis sinceritátis et veritátis."
 	},
 	{
-		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-ii"],
+		"tags":[
+			["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-ii"],
+			["corpus-christi","dies-octava","matutinum","nocturna-i","lectio","lectio-ii"]
+		],
 		"datum":"Ego enim accépi a Dómino quod et trádidi vobis, quóniam Dóminus Jesus, in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit: Accípite, et manducáte: hoc est corpus meum, quod pro vobis tradétur: hoc fácite in meam commemoratiónem. Simíliter et cálicem, postquam cœnávit, dicens: Hic calix novum testaméntum est in meo sánguine. Hoc fácite, quotiescúmque bibétis, in meam commemoratiónem. Quotiescúmque enim manducábitis panem hunc, et cálicem bibétis, mortem Dómini annuntiábimus, donec véniat."
 	},
 	{
@@ -154,7 +160,10 @@
 		"versus":"Non Móyses dedit vobis panem de cœlo, sed Pater meus dat vobis panem de cœlo verum."
 	},
 	{
-		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-iii"],
+		"tags":[
+			["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-iii"],
+			["corpus-christi","dies-octava","matutinum","nocturna-i","lectio","lectio-iii"]
+		],
 		"datum":"Ítaque quicúmque manducáverit panem hunc, vel bíberit cálicem Dómini indígne: reus erit córporis et sánguinis Dómini. Probet autem seípsum homo: et sic de pane illo edat, et de cálice bibat. Qui enim mandúcat et bibit indígne, judícium sibi mandúcat et bibit: non dijúdicans corpus Dómini. Ídeo inter vos multi infírmi et imbecílles, et dórmiunt multi. Quod si nosmetípsos dijudicarémus, non útique judicarémur. Dum judicámur autem, a Dómino corrípimur, ut non cum hoc mundo damnémur."
 	},
 	{
@@ -369,6 +378,10 @@
 		"datum":"O sacrum convívium, * in quo Christus súmitur; recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur, allelúja."
 	},
 	{
+		"tags":["corpus-christi","infra-octavam","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
 		"tags":["corpus-christi","dominica-infra-octavam","capitulum"],
 		"datum":"[I. Joann. 3. b.]/Caríssimi: Nolíte mirári, si odit vos mundus. + Nos scimus quóniam transláti sumus de morte ad vitam, * quóniam dilígimus fratres."
 	},
@@ -381,6 +394,15 @@
 		"tags":["corpus-christi","dominica-infra-octavam","collecta"],
 		"datum":"Sancti nóminis tui Dómine timórem páriter et amórem fac nos habére perpétuum: + quia numquam tua gubernatióne destítuis, * quos in soliditáte tuæ dilectiónis instítuis.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["corpus-christi","dominica-infra-octavam","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De libro primo Regum.",
+			"[I. Reg. 4.]/Et factum est in diébus illis, convenérunt Philísthiim in pugnam: et egréssus est Ísraël óbviam Philísthiim in prǽlium, et castrametátus est juxta Lápidem adjutórii. Porro Philísthiim venérunt in Aphec, et instruxérunt áciem contra Ísraël. Ínito autem certámine, terga vertit Ísraël Philisthǽis: et cæsa sunt in illo certámine passim per agros, quasi quátuor míllia virórum. Et revérsus est pópulus ad castra: dixerúntque majóres natu de Ísraël: Quare percússit nos Dóminus hódie coram Philísthiim? Afferámus ad nos de Silo arcam fœ\u0301deris Dómini, et véniat in médium nostri, ut salvet nos de manu inimicórum nostrórum."
+		],
+		"lectio-ii":"Misit ergo pópulus in Silo, et tulérunt inde arcam fœ\u0301deris Dómini exercítuum sedéntis super Chérubim: erántque duo fílii Heli cum arca fœ\u0301deris Dei, Ophni et Phínees. Cumque venísset arca fœ\u0301deris Dómini in castra, vociferátus est omnis Ísraël clamóre grándi, et persónuit terra. Et audiérunt Philísthiim vocem clamóris, dixerúntque: Quænam est hæc vox clamóris magni in castris Hebræórum? Et cognovérunt quod arca Dómini venísset in castra.",
+		"lectio-iii":"Timuerúntque Philísthiim, dicéntes: Venit Deus in castra. Et ingemuérunt, dicéntes: Væ nobis: non enim fuit tanta exsultátio heri et nudiustértius: væ nobis. Quis nos salvábit de manu deórum sublímium istórum? hi sunt dii, qui percussérunt Ægýptum omni plaga in desérto. Confortámini, et estóte viri, Philísthiim: ne serviátis Hebrǽis, sicut et illi serviérunt vobis: confortámini, et belláte. Pugnavérunt ergo Philísthiim, et cæsus est Ísraël, et fugit unusquísque in tabernáculum suum: et facta est plaga magna nimis: et cecidérunt de Ísraël trigínta míllia péditum. Et arca Dei capta est: duo quoque fílii Heli mórtui sunt, Ophni et Phínees."
 	},
 	{
 		"tags":["corpus-christi","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
