@@ -631,8 +631,33 @@
 	},
 	{
 		"basis":"pascha",
+		"offset":61,
+		"tags":["feria","feria-vi","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
+	},
+	{
+		"basis":"pascha",
+		"offset":62,
+		"tags":["feria","sabbatum","hebdomada-i-pentecostes","post-pentecosten","per-annum"]
+	},
+	{
+		"basis":"pascha",
 		"offset":63,
 		"tags":["corpus-christi","infra-octavam","dies-iv","semiduplex","commemoratio","post-pentecosten"]
+	},
+	{
+		"basis":"pascha",
+		"offset":64,
+		"tags":["feria","feria-ii","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
+	},
+	{
+		"basis":"pascha",
+		"offset":65,
+		"tags":["feria","feria-iii","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
+	},
+	{
+		"basis":"pascha",
+		"offset":66,
+		"tags":["feria","feria-iv","hebdomada-ii-pentecostes","post-pentecosten","per-annum"]
 	},
 	{
 		"basis":"pascha",
