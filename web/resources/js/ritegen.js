@@ -233,7 +233,6 @@ riteheaders = {
 
 function render(data, chant) {
 	options = {chant: chant, disabletrivialchant: true};
-	translationpool = data.translation;
 	usedcommemorations = data['used-commemorations'];
 	commmat = data['commemoratio-matutini'];
 
@@ -243,13 +242,10 @@ function render(data, chant) {
 			return list.includes(tag) && !parenttags.includes(tag);
 		}
 		try {
-			if (translationpool != null && typeof data === 'object' && 'tags' in data) {
+			if (typeof data === 'object' && 'translation' in data) {
 				var tags = data.tags;
 				tags.sort();
-				var tran = translationpool[tags.join('+')];
-				if (tran != null) {
-					translated = JSON.parse(JSON.stringify(tran.datum));
-				}
+				translated = JSON.parse(JSON.stringify(data.translation.datum));
 			}
 
 			if (typeof data === 'object' && Array.isArray(data)) {
@@ -388,14 +384,15 @@ function render(data, chant) {
 							header = makeheadingannotation(`Responsorium ${['III', 'VI', 'IX'][nn - 1]}.`);
 						}
 					}
-					if (translationpool != null && translated != null) {
+					if (translated != null) {
 						var trans = translated;
 						var alldefined = true;
 						for (var i = 0; i < translated.length; i++) {
 							if (trans[i] == '') {
-								tagsresp = claw(data.datum[i]).tags;
-								tagsresp.sort();
-								trans[i] = unpack(translationpool[tagsresp.join('+')]);
+								resp = claw(data.datum[i]);
+								if ('translation' in resp) {
+									trans[i] = unpack(resp.translation);
+								}
 								if (trans[i] == undefined) {
 									alldefined = false;
 									break;

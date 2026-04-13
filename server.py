@@ -179,8 +179,6 @@ def rite():
 		rite = breviarium.process(book, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 		tags.append(primary)
 
-		translation = {}
-
 	except Exception as e:
 		traceback.print_exc()
 		print(e)
@@ -198,7 +196,7 @@ def rite():
 				if type(obj) is dict and 'tags' in obj:
 					tran = gettranslation(obj['tags'])
 					if tran:
-						translation['+'.join(sorted(obj['tags']))] = tran
+						obj['translation'] = tran
 				if type(obj) is dict:
 					traverse(obj['datum'])
 				elif type(obj) is list:
@@ -217,7 +215,6 @@ def rite():
 		lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
 		return datamanage.dump_data({
 			'rite' : rite['datum'],
-			'translation' : translation,
 			'used-primary': [getname(primary, pile), primary],
 			'used-commemorations': [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(book, 'rank', a), reverse=True)],
 			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
