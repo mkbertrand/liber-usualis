@@ -29,5 +29,59 @@
 	{
 		"tags":["hebdomada-ii-pentecostes","feria","feria-vi","nomen"],
 		"datum":"Feria VI post Octavam Ss. Corporis Christi"
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","feria-vi","lectio"],
+		"lectio-i":[
+			"De libro primo Regum.",
+			"[I. Reg. 8.]/Congregáti ergo univérsi majóres natu Ísraël, venérunt ad Samuélem in Rámatha. Dixerúntque ei: Ecce tu senuísti, et fílii tui non ámbulant in viis tuis: constítue nobis regem, ut júdicet nos, sicut et univérsæ habent natiónes. Displícuit sermo in óculis Samuélis, eo quod dixíssent: Da nobis regem, ut júdicet nos. Et orávit Sámuel ad Dóminum."
+		]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","feria-vi","responsorium","responsorium-i"],
+		"datum":[["hebdomada-i-pentecostes","feria-iii","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","feria-vi","lectio"],
+		"lectio-ii":"Dixit autem Dóminus ad Samuélem: Audi vocem pópuli in ómnibus quæ loquúntur tibi. Non enim te abjecérunt, sed me, ne regnem super eos. Juxta ómnia ópera sua, quæ fecérunt a die qua edúxi eos de Ægýpto usque ad diem hanc: sicut dereliquérunt me, et serviérunt diis aliénis, sic fáciunt étiam tibi. Nunc ergo vocem eórum audi: verúmtamen contestáre eos, et prædic eis jus regis, qui regnatúrus est super eos."
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","feria-vi","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-i-pentecostes","feria-iii","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","feria-vi","lectio"],
+		"lectio-iii":"Dixit ítaque Sámuel ómnia verba Dómini ad pópulum, qui petíerat a se regem, et ait: Hoc erit jus regis, qui imperatúrus est vobis: Fílios vestros tollet, et ponet in cúrribus suis, faciétque sibi équites et præcursóres quadrigárum suárum, et constítuet sibi tribúnos, et centuriónes, et aratóres agrórum suórum, et messóres ségetum, et fabros armórum et cúruum suórum. Fílias quoque vestras fáciet sibi unguentárias, et focárias, et paníficas. Agros quoque vestros, et víneas, et olivéta óptima tollet, et dabit servis suis."
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","feria-vi","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-i-pentecostes","feria-iii","responsorium","responsorium-iii"]]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","sabbatum","lectio"],
+		"lectio-i":[
+			"De libro primo Regum.",
+			"[I. Reg. 9.]/Et erat vir de Bénjamin nómine Cis, fílius Ábiel, fílii Seror, fílii Béchorath, fílii Áphia, fílii viri Jémini, fortis robóre. Et erat ei fílius vocábulo Saul, eléctus et bonus: et non erat vir de fíliis Ísraël mélior illo. Ab húmero et sursum eminébat super omnem pópulum. Períerant autem ásinæ Cis patris Saul: et dixit Cis ad Saul fílium suum: tolle tecum unum de púeris, et consúrgens vade, et quære ásinas. Qui cum transíssent per montem Éphaïm, et per terram Salísa, et non inveníssent, transiérunt étiam per terram Salim, et non erant: sed et per terram Jémini, et mínime reperérunt."
+		]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","sabbatum","responsorium","responsorium-i"],
+		"datum":[["hebdomada-i-pentecostes","feria-iv","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","sabbatum","lectio"],
+		"lectio-ii":"Cum autem veníssent in terram Suph, dixit Saul ad púerum, qui erat cum eo: Veni et revertámur, ne forte dimíserit pater meus ásinas, et sollícitus sit pro nobis. Qui ait ei: Ecce vir Dei est in civitáte hac, vir nóbilis: omne quod lóquitur, sine ambiguitáte venit. Nunc ergo eámus illuc, si forte índicet nobis de via nostra, propter quam vénimus. Dixítque Saul ad púerum suum: Ecce íbimus: quid ferémus ad virum Dei: panis defécit in sitárciis nostris: et spórtulam non habémus, ut demus hómini Dei, nec quidquam áliud. Rursum puer respóndit Sauli, et ait: Ecce invénta est in manu mea quarta pars statéris argénti, demus hómini Dei, ut índicet nobis viam nostram."
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","sabbatum","responsorium","responsorium-ii"],
+		"datum":[["hebdomada-i-pentecostes","feria-iv","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","sabbatum","lectio"],
+		"lectio-iii":"Et ascendérunt in civitátem. Cumque illi ambulárent in médio urbis, appáruit Sámuel egrédiens óbviam eis, ut ascénderet in excélsum. Dóminus autem reveláverat aurículam Samuélis ante unam diem quam veníret Saul, dicens: Hac ipsa hora, quæ nunc est, cras mittam virum ad te de terra Bénjamin, et unges eum ducem super pópulum meum de manu Philisthinórum: quia respéxi pópulum meum: venit enim clamor eórum ad me. Cumque aspexísset Sámuel Saulem, Dóminus dixit ei: Ecce vir, quem díxeram tibi, iste dominábitur pópulo meo."
+	},
+	{
+		"tags":["hebdomada-ii-pentecostes","sabbatum","responsorium","responsorium-iii"],
+		"datum":[["hebdomada-i-pentecostes","feria-iv","responsorium","responsorium-iii"]]
 	}
 ]
