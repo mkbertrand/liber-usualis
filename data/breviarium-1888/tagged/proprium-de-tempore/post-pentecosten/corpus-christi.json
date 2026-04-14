@@ -155,7 +155,7 @@
 	},
 	{
 		"tags":["corpus-christi","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"incipit":"Comedítis carnes, et saturabímini pánibus:",
+		"incipit":"Comedétis carnes, et saturabímini pánibus:",
 		"responsum":"Iste est panis, quem dedit vobis Dóminus ad vescéndum.",
 		"versus":"Non Móyses dedit vobis panem de cœlo, sed Pater meus dat vobis panem de cœlo verum."
 	},
@@ -382,6 +382,46 @@
 		"datum":[["temporale","occurrens","lectio"]]
 	},
 	{
+		"tags":["corpus-christi","dies-ii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Thomæ Aquinátis.",
+			"[In eodem Opusculo 57.]/Cónvenit ítaque devotióni fidélium, solémniter recólere institutiónem tam salutíferi, tamque mirábilis Sacraménti: ut ineffábilem modum divínæ præséntiæ in Sacraménto visíbili venerémur: et laudétur Dei poténtia, quæ in Sacraménto eódem tot mirabília operátur: nec non et de tam salúbri, tamque suávi benefício exsolvántur Deo gratiárum débitæ actiónes. Verum etsi in die Cœnæ, quando Sacraméntum prædíctum nóscitur institútum, inter Missárum solémnia de institutióne ipsíus speciális méntio habeátur: totum tamen resíduum ejúsdem diéi offícium ad Christi passiónem pértinet, circa cujus veneratiónem Ecclésia illo témpore occupátur."
+		],
+		"lectio-ii":"Ut autem íntegro celebritátis offício institutiónem tanti Sacraménti recóleret plebs fidélium: Románus Póntifex Urbánus quartus, hujus Sacraménti devotióne afféctus, pie státuit præfátæ institutiónis memóriam prima quinta féria post Octávam Pentecóstes a cunctis fidélibus celebrári: ut qui per totum anni círculum hoc Sacraménto útimur ad salútem, ejus institutiónem illo témpore speciáliter recolámus, quo Spíritus sanctus corda discipulórum edócuit ad plene cognoscénda hujus mystéria Sacraménti. Nam et in eódem témpore cœpit hoc Sacraméntum a fidélibus frequentári.",
+		"lectio-iii":"Ut autem prædícta quinta féria, et per Octávas sequéntes, ejus salutáris institutiónis honorificéntius agátur memória, et solémnitas de hoc celébrior habeátur: loco distributiónum materiálium, quæ in ecclésiis cathedrálibus largiúntur exsisténtibus Horis Canónicis noctúrnis, paritérque diúrnis, præfátus Románus Póntifex eis, qui hujúsmodi Horis in hac solemnitáte personáliter in ecclésiis interfúerint, stipéndia spirituália apostólica largitióne concéssit: quátenus per hæc fidéles ad tanti festi celebritátem avídius et copiósius convenírent."
+	},
+	{
+		"tags":["corpus-christi","dies-ii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 6. f.]/In illo témpore: Dixit Jesus turbis Judæórum: Caro mea, vere est cibus: et sanguis meus, vere est potus. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 27. in Joannem.]/Verba Dómini ex Evangélio, quæ sermónem prístinum consequúntur, audívimus. Hinc sermo debétur aúribus et méntibus vestris, et hodiérna die non importúnus est. Est enim de córpore Dómini, quod dicébat se dare ad manducándum propter ætérnam vitam. Expósuit autem modum attributiónis hujus, et doni sui, quómodo daret carnem suam manducáre, dicens: Qui mandúcat carnem meam, et bibit sánguinem meum, in me manet, et ego in illo. Signum quia manducávit et bibit, hoc est: si manet, et manétur: si hábitat, et inhabitátur: si hæret, ut non deserátur."
+		],
+		"lectio-ii":"Hoc ergo nos dócuit et admónuit mýsticis verbis, ut simus in ejus córpore sub ipso cápite in membris ejus, edéntes carnem ejus, non relinquéntes unitátem ejus. Sed qui áderant, plures non intelligéndo scandalizáti sunt: non enim cogitábant, hæc audiéndo, nisi carnem, quod ipsi erant. Apóstolus autem dicit et verum dicit: Sápere secúndum carnem, mors est. Carnem suam dat nobis Dóminus manducáre: et sápere secúndum carnem mors est. Cum de carne sua dicat, quia ibi est vita ætérna: ergo nec carnem debémus sápere secúndum carnem, sicut in his verbis: Multi ítaque audiéntes, non ex inimícis, sed ex discípulis ejus, dixérunt: Durus est hic sermo, et quis potest eum audíre?",
+		"lectio-iii":"Si discípuli durum habuérunt istum sermónem, quid inimíci? Et tamen sic oportébat ut dicerétur, quod non ab ómnibus intelligerétur. Secrétum Dei inténtos debet fácere, non advérsos: isti autem cito defecérunt, tália loquénte Dómino Jesu Christo. Non credidérunt áliquid magnum dicéntem, et verbis illis áliquam grátiam cooperiéntem: sed prout voluérunt, ita intellexérunt, et more hóminum: quia póterat Jesus, aut hoc disponébat Jesus, carnem, qua indútum erat Verbum, véluti concísam, distribúere credéntibus in se. Durus est, ínquiunt, hic sermo: quis potest eum audíre?"
+	},
+	{
+		"tags":["corpus-christi","dies-iii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Joánnis Chrysóstomi.",
+			"[Hom. 61. ad pop. Ant.]/Necessárium est, dilectíssimi, mysteriórum díscere miráculum, quodnam sit, et quare sit datum, et quæ ejus rei utílitas. Unum corpus effícimur: membra, inquit, ex carne ejus, et ex óssibus ejus: sequámur autem initiáti, quæ dicúntur. Ut ítaque non tantum per caritátem hoc fiámus, verum étiam ipsa re, in illam misceámur carnem: hoc namque per escam effícitur, quam largítus est nobis, volens osténdere desidérium quod erga nos habet. Proptérea semetípsum nobis immíscuit, et corpus suum in nos contemperávit, ut unum quid simus tamquam corpus cápiti coaptátum: ardénter enim amántium hoc est."
+		],
+		"lectio-ii":"Tamquam leónes ígitur ignem spirántes ab illa mensa recedámus, facti diábolo terríbiles, et caput nostrum mente revolvéntes, et caritátem quam erga nos osténdit. Nam paréntes quidem áliis sæpe fílios tradunt aléndos: ego autem, inquit, non ita, sed cárnibus meis alo, et meípsum vobis appóno, vos omnes generósos esse volens, et spem bonam de futúris vobis præbens: quippe qui vobis hic meípsum trádidi, multo magis id in futúro fáciam. Vólui frater vester fíeri, carni propter vos et sánguini communicávi: vobis vicíssim ipsam carnem et sánguinem, per quæ cognátus vester factus sum, trado.",
+		"lectio-iii":"Attendámus ítaque nobis ipsis, dilectíssimi, tálibus fruéntes bonis: et cum áliquid turpe dícere voluérimus, vel nos ab ira córripi vidérimus, vel álio quópiam hujúsmodi vítio, considerémus quibus facti sumus digni: talísque cogitátio nobis irrationabílium mótuum sit corréctio. Quotquot ígitur hujus partícipes córporis effícimur, quotquot sánguinem degustámus; cogitémus, quod illum sursum sedéntem, qui ab Ángelis adorátur incorruptíbili vicínus virtúti, hunc degustámus. Hei mihi, quot ad salútem nobis viæ! Nos corpus suum effécit: nobis suum communicávit corpus: et horum nos nihil a malis avértit."
+	},
+	{
+		"tags":["corpus-christi","dies-iii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 6. f.]/In illo témpore: Dixit Jesus turbis Judæórum: Caro mea, vere est cibus: et sanguis meus, vere est potus. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 27. in Joann. ante medium.]/Díximus, fratres, hoc Dóminum commendásse in manducatióne carnis suæ, et potatióne sánguinis sui, ut in illo maneámus, et ipse in nobis. Manémus autem in illo, cum sumus membra ejus: manet autem ipse in nobis, cum sumus templum ejus. Ut autem simus membra ejus, únitas nos compáginat: ut compáginet únitas, quæ facit, nisi cáritas? Et cáritas Dei unde? Apóstolum intérroga. Cáritas, inquit, Dei diffúsa est in córdibus nostris per Spíritum sanctum, qui datus est nobis."
+		],
+		"lectio-ii":"Ergo spíritus est qui vivíficat: spíritus enim facit viva membra: nec viva membra spíritus facit, nisi quæ in córpore, quod végetat ipse spíritus, invénerit. Nam spíritus, qui est in te, o homo, quo constas ut homo sis, numquid vivíficat membrum quod separátum invénerit a carne tua? Spíritum tuum dico ánimam tuam. Ánima tua non vivíficat, nisi membra quæ sunt in carne tua: unum si tollas, jam non vivificátur ex ánima tua, quia unitáti córporis tui non copulátur.",
+		"lectio-iii":"Hæc dicúntur, ut amémus unitátem, et timeámus separatiónem. Nihil enim sic debet formidáre Christiánus, quam separári a córpore Christi. Si enim separátur a córpore Christi, non est membrum ejus: si non est membrum ejus, non vegetátur spíritu ejus. Quisquis autem, inquit Apóstolus, Spíritum Christi non habet: hic non est ejus. Spíritus ergo est, qui vivíficat, caro autem non prodest quidquam. Verba, quæ ego locútus sum vobis, spíritus et vita sunt. Quid est, Spíritus et vita sunt? Spiritáliter intelligénda sunt. Intellexísti spiritáliter? Spíritus et vita sunt. Intellexísti carnáliter? Étiam sic illa spíritus et vita sunt, sed tibi non sunt."
+	},
+	{
 		"tags":["corpus-christi","dominica-infra-octavam","capitulum"],
 		"datum":"[I. Joann. 3. b.]/Caríssimi: Nolíte mirári, si odit vos mundus. + Nos scimus quóniam transláti sumus de morte ad vitam, * quóniam dilígimus fratres."
 	},
@@ -405,6 +445,35 @@
 		"lectio-iii":"Timuerúntque Philísthiim, dicéntes: Venit Deus in castra. Et ingemuérunt, dicéntes: Væ nobis: non enim fuit tanta exsultátio heri et nudiustértius: væ nobis. Quis nos salvábit de manu deórum sublímium istórum? hi sunt dii, qui percussérunt Ægýptum omni plaga in desérto. Confortámini, et estóte viri, Philísthiim: ne serviátis Hebrǽis, sicut et illi serviérunt vobis: confortámini, et belláte. Pugnavérunt ergo Philísthiim, et cæsus est Ísraël, et fugit unusquísque in tabernáculum suum: et facta est plaga magna nimis: et cecidérunt de Ísraël trigínta míllia péditum. Et arca Dei capta est: duo quoque fílii Heli mórtui sunt, Ophni et Phínees."
 	},
 	{
+		"tags":["corpus-christi","dominica-infra-octavam","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Joánnis Chrysóstomi.",
+			"[Ex Hom. 60. ad pop. Antioch.]/Quóniam Verbum dicit: Hoc est corpus meum: et assentiámur, et credámus, et intellectuálibus ipsum óculis intueámur. Nihil enim sensíbile nobis Christus trádidit: sed sensibílibus quidem rebus, at ómnia intelligibília. Ítidem et in baptísmate: per rem nempe sensíbilem aquam, donum confértur: intelligíbile vero quod perfícitur, generátio et renovátio. Si enim incorpóreus esses, nuda et incorpórea tibi dedísset ipse dona: sed quóniam ánima córpori consérta est, in sensibílibus intelligibília tibi præbet. Quot nunc dicunt: Vellem ipsíus formam aspícere, figúram, vestiménta, calceaménta? Ecce eum vides, ipsum tangis, ipsum mandúcas. Et tu quidem vestiménta cupis vidére: ipse vero tibi concédit non tantum vidére, verum et manducáre, et tángere, et intra te súmere."
+		],
+		"lectio-ii":"Ígitur accédat nemo cum naúsea, nemo resolútus, omnes accénsi, omnes fervéntes et excitáti. Nam si Judǽi stantes, et calceaménta in pédibus habéntes, et báculos mánibus gestántes, agnum cum festinatióne comedébant: te multo magis opórtet esse solértem. Nam illi quidem in Palæstínam erant profectúri, et proptérea viatórum figúram habébant: tu vero debes in cœlum migráre. Quaprópter in ómnibus opórtet te vigiláre: nec enim parva pœna propónitur indígne suméntibus. Cógita quantum advérsus proditórem indignáris, et contra eos qui illum crucifixérunt: ítaque consídera, ne tu quoque sis reus córporis et sánguinis Christi. Illi sanctíssimum corpus occidérunt, tu vero pollúta súscipis ánima, post tot benefícia. Neque enim illi satis fuit, hóminem fíeri, cólaphis cædi, et crucifígi: verum et semetípsum nobis commíscet; et non fide tantum, verum et ipsa re nos suum éfficit corpus.",
+		"lectio-iii":"Quo non opórtet ígitur esse puriórem, tali fruéntem sacrifício? quo solári rádio non splendidiórem manum, carnem hanc dividéntem? os quod igni spiritáli replétur, linguam quæ treméndo nimis sánguine rubéscit? Cógita quali sis insignítus honóre, quali mensa fruáris. Quod Ángeli vidéntes horréscunt, neque líbere audent intuéri propter emicántem inde splendórem; hoc nos páscimur, huic nos unímur, et facti sumus unum Christi corpus, et una caro. Quis loquétur poténtias Dómini, audítas fáciet omnes laudes ejus? Quis pastor oves próprio pascit cruóre? Et quid dico, pastor? Matres multæ sunt, quæ post partus dolóres, fílios áliis tradunt nutrícibus. Hoc autem ipse non est passus: sed ipse nos próprio sánguine pascit, et per ómnia nos sibi coagméntat."
+	},
+	{
+		"tags":["corpus-christi","dominica-infra-octavam","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 14. d.]/In illo témpore: Dixit Jesus pharisǽis parábolam hanc: Homo quidam fecit cœnam magnam, et vocávit multos. Et réliqua.",
+			"Homilía sancti Gregórii Papæ.",
+			"[Homilia 36. in Evangelia.]/Hoc distáre, fratres caríssimi, inter delícias córporis et cordis solet: quod corporáles delíciæ, cum non habéntur, grave in se desidérium accéndunt: cum vero ávide edúntur, comedéntem prótinus in fastídium per satietátem vertunt. At contra, spiritáles delíciæ, cum non habéntur, in fastídio sunt; cum vero habéntur, in desidério: tantóque a comedénte ámplius esuriúntur, quanto et ab esuriénte ámplius comedúntur. In illis appetítus placet, experiéntia dísplicet: in istis appetítus vilis est, et experiéntia magis placet. In illis appetítus saturitátem, satúritas fastídium génerat: in istis autem appetítus saturitátem, satúritas appetítum parit."
+		],
+		"lectio-ii":"Augent enim spiritáles delíciæ desidérium in mente, dum sátiant: quia quanto magis eárum sapor percípitur, eo ámplius cognóscitur quod avídius amétur: et idcírco non hábitæ amári non possunt, quia eárum sapor ignorátur. Quis enim amáre váleat quod ignórat? Proínde Psalmísta nos ádmonet, dicens: Gustáte et vidéte, quóniam suávis est Dóminus. Ac si apérte dicat: Suavitátem ejus non cognóscitis, si hanc mínime gustátis: sed cibum vitæ ex paláto cordis tángite, ut probántes ejus dulcédinem, amáre valeátis. Has autem homo delícias tunc amísit, cum in paradíso peccávit: extra éxiit, cum os a cibo ætérnæ dulcédinis clausit."
+	},
+	{
+		"tags":["corpus-christi","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Homo quidam fecit cœnam magnam, et misit servum suum hora cœnæ dícere invitátis, ut venírent:",
+		"responsum":"Quia paráta sunt ómnia.",
+		"versus":"Veníte, comédite panem meum, et bíbite vinum quod míscui vobis."
+	},
+	{
+		"tags":["corpus-christi","dominica-infra-octavam","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Unde nos quoque nati in hujus peregrinatiónis ærúmna, huc fastidiósi jam vénimus, nescímus quid desideráre debeámus. Tantóque se ámplius fastídii nostri morbus exággerat, quanto se magis ab esu illíus dulcédinis ánimus elóngat. Et eo jam intérnas delícias non áppetit, quo eas comédere, diu longéque desuévit. Fastídio ergo nostro tabéscimus, et longa inédiæ peste fatigámur. Et quia gustáre intus nólumus parátam dulcédinem, amámus foris míseri famem nostram."
+	},
+	{
 		"tags":["corpus-christi","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/2330",
 		"datum":"Homo quidam * fecit cœnam magnam, et vocávit multos: et misit servum suum hora cœnæ dícere invitátis ut venírent, quia ómnia paráta sunt, allelúja."
@@ -421,5 +490,85 @@
 		"tags":["corpus-christi","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/1929",
 		"datum":"Exi cito * in platéas et vicos civitátis: et paúperes ac débiles, cæcos et claudos compélle intráre, ut impleátur domus mea, allelúja."
+	},
+	{
+		"tags":["corpus-christi","dies-v","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Joánnis Chrysóstomi.",
+			"[Ex eadem Homil. 60.]/Unicuíque fidélium Christus semetípsum per mystéria commíscet, et quos génuit, per semetípsum enútrit, nec álteri tradit: per hoc tibi rursum persuádens, quod carnem tuam assúmpsit. Ne torpeámus ígitur tanta digni caritáte et honóre putáti. Nonne vidétis quanta promptitúdine párvuli papíllas cápiunt, et quanto ímpetu lábia ubéribus infígunt? Accedámus cum tanta nos quoque alacritáte ad hanc mensam, et ad úbera póculi spiritális: quinímo cum longe majóri trahámus, tamquam infántes lacténtes, spíritus grátiam: et unus sit nobis dolor hac esca privári. Non sunt humánæ virtútis ópera, hæc quæ proponúntur: qui tunc ipsa fecit in illa cœna, idem ea nunc quoque facit. Nos ministrórum tenémus locum: qui vero sanctíficat ea et immútat, ipse est. Nullus ítaque Judas assístat, nullus avárus: nam tales mensa non súscipit. Si quis est discípulus, adsit: ait enim: Cum discípulis meis fácio Pascha. Hæc est illa mensa, et minus nihil habet. Non enim illam quidem Christus, hanc autem homo pérficit: verum et hanc ipse quoque."
+		],
+		"lectio-ii":"Inhumánus accédat nemo, nemo crudélis et immiséricors, nemo prorsus immúndus. Hæc ad communicántes dico, et ad vos ministrántes. Nam et ad vos sermónem convértere necessárium est, ut multo cum stúdio hæc dona distribuátis. Non parva vobis ímminet últio, si quemquam, illíus culpæ cónscii, hujus mensæ partícipem esse concedátis: sanguis ejus de mánibus vestris exquirétur: sive quis dux milítiæ sit, sive præféctus, sive princeps diadémate coronátus, indígne autem accédat, próhibe: majórem illo potestátem habes. Proptérea vos Deus hoc insignívit honóre, ut tália discernátis. Hoc vestra dígnitas est, hoc secúritas, hoc omnis coróna; non ut albam et splendéntem túnicam circumeátis indúti. Verum et tu láice, cum sacerdótem víderis offeréntem, ne ut sacerdótem esse putes hoc faciéntem, sed Christi manum invisibíliter exténsam.",
+		"lectio-iii":"Audiámus ígitur et sacerdótes et súbditi, quali esca facti sumus digni: audiámus et horreámus. Sanctis cárnibus suis nos dedit impléri, semetípsum appósuit immolátum. Quænam ígitur erit nobis excusátio, cum tálibus pasti tália peccémus, cum lupi fiámus Agnum comedéntes, cum tamquam oves pasti more leónum diripiámus? Hoc enim mystérium non a rapína tantum, verum et ab omni vel ténui inimicítia purum esse pénitus jubet: est enim pacis mystérium. Judǽis quidem annuátim propriórum monuménta beneficiórum solemnitátes Deus alligávit: tibi vero síngulis diébus per hæc mystéria. Nullus ítaque Judas hanc mensam petat, nullus Simon. Hi namque duo propter avarítiam períerunt: hoc ígitur bárathrum fugiámus."
+	},
+	{
+		"tags":["corpus-christi","dies-v","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 6. f.]/In illo témpore: Dixit Jesus turbis Judæórum: Caro mea, vere est cibus: et sanguis meus, vere est potus. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 26. in Joann. post med.]/Hic est panis, qui de cœlo descéndit. Hunc panem significávit manna, hunc panem significávit altáre Dei. Sacraménta illa fuérunt: in signis divérsa sunt, sed in re, quæ significátur, pária sunt. Apóstolum audi: Nolo enim vos, inquit, ignoráre fratres, quia patres nostri omnes sub nube fuérunt, et omnes mare transiérunt, et omnes per Móysen baptizáti sunt in nube, et in mari: et omnes eámdem escam spiritálem manducavérunt. Spiritálem útique eámdem: nam corporálem álteram: quia illi manna, nos áliud: spiritálem vero, quam nos, sed patres nostri, non patres illórum, quibus nos símiles sumus, non quibus illi símiles fuérunt. Et adjúngit: Et omnes eúmdem potum spiritálem bibérunt. Áliud illi, áliud nos, sed spécie visíbili quidem, tamen hoc idem significánte virtúte spiritáli. Quómodo enim eúmdem potum? Bibébant, inquit, de spiritáli, sequénte petra: petra autem erat Christus. Inde panis, inde potus: Petra Christus in signo, verus Christus in verbo, et in carne. Et quómodo bibérunt? Percússa est petra de virga bis. Gémina percússio, duo ligna crucis signíficat."
+		],
+		"lectio-ii":"Norunt fidéles corpus Christi, si corpus Christi non négligant esse. Fiant corpus Christi, si volunt vívere de Spíritu Christi. De Spíritu Christi non vivit, nisi corpus Christi. Intellígite fratres mei, quid díxerim. Homo es, et spíritum habes, et corpus habes. Spíritum dico, quæ ánima vocátur, qua constas quod homo es: constas enim ex ánima, et córpore. Habes enim spíritum invisíbilem, corpus visíbile. Dic mihi, quid ex quo vivat? Spíritus tuus vivit ex córpore tuo, an corpus tuum ex spíritu tuo? Respóndet omnis, qui vivit: qui autem hoc non potest respondére, néscio si vivit. Quid respóndet omnis, qui vivit? Corpus útique meum vivit de spíritu meo. Vis ergo et tu vívere de Spíritu Christi? In córpore esto Christi.",
+		"lectio-iii":"Numquid enim corpus meum vivit de spíritu tuo? Meum vivit de spíritu meo, et tuum de spíritu tuo. Non potest vívere corpus Christi, nisi de Spíritu Christi. Inde est, quod expónens nobis Apóstolus Paulus hunc panem: Unus panis, inquit, unum corpus multi sumus. O sacraméntum pietátis, o signum unitátis, o vínculum caritátis! Qui vult vívere, habet ubi vivat, habet unde vivat. Accédat, credat, incorporétur, ut vivificétur. Non abhórreat a compáge membrórum, non sit putre membrum quod resecári mereátur, non sit distórtum, de quo erubescátur. Sit pulchrum, sit aptum, sit sanum: hǽreat córpori, vivat Deo de Deo. Nunc labóret in terra, ut póstea regnet in cœlo."
+	},
+	{
+		"tags":["corpus-christi","dies-vi","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex Epístola sancti Cypriáni Epíscopi et Mártyris ad Cæcílium.",
+			"[Liber 2. Epistola 3. sub init.]/In sacerdóte Melchísedech sacrifícii Domínici sacraméntum præfigurátum vidémus, secúndum quod Scriptúra divína testátur, et dicit: Et Melchísedech rex Salem prótulit panem et vinum. Fuit autem sacérdos Dei summi, et benedíxit Ábraham. Quod autem Melchísedech typum Christi portáret, declárat in Psalmis Spíritus sanctus, ex persóna Patris ad Fílium dicens: Ante lucíferum génui te: Tu es sacérdos in ætérnum secúndum órdinem Melchísedech. Qui ordo útique hic est de sacrifício illo véniens, et inde descéndens, quod Melchísedech sacérdos Dei summi fuit, quod panem et vinum óbtulit, quod Ábraham benedíxit."
+		],
+		"lectio-ii":"Nam quis magis sacérdos Dei summi, quam Dóminus noster Jesus Christus? qui sacrifícium Deo Patri óbtulit: et óbtulit hoc idem, quod Melchísedech obtúlerat, id est, panem et vinum, suum scílicet corpus et sánguinem. Et circa Ábraham benedíctio illa præcédens, ad nostrum pópulum pertinébat. Nam si Ábraham Deo crédidit, et deputátum est ei ad justítiam: útique quisquis Deo credit, et fide vivit, justus invenítur, et jam pridem in Ábraham fidéli benedíctus et justificátus osténditur, sicut beátus Apóstolus Paulus probat, dicens: Crédidit Ábraham Deo, et deputátum est ei ad justítiam. Cognóscitis ergo, quia qui ex fide sunt, hi sunt fílii Ábrahæ. Próvidens autem Scriptúra, quia ex fide justíficat gentes Deus, prænuntiávit Ábrahæ, quia benedicéntur in illo omnes gentes.",
+		"lectio-iii":"Ut ergo in Génesi per Melchísedech sacerdótem benedíctio circa Ábraham posset rite celebrári, præcédit ante imágo sacrifícii, in pane et vino scílicet constitúta. Quam rem perfíciens, et adímplens Dóminus, panem et cálicem mixtum vino óbtulit: et qui est plenitúdo, veritátem præfigurátæ imáginis adimplévit. Sed et per Salomónem Spíritus sanctus typum Domínici sacrifícii ante præmónstrat, immolátæ hóstiæ, et panis et vini, sed et altáris, et Apostolórum fáciens mentiónem: Sapiéntia, inquit, ædificávit sibi domum, et súbdidit colúmnas septem: mactávit suas hóstias, míscuit in cratére vinum suum, et parávit mensam suam. Et misit servos suos cónvocans cum excélsa prædicatióne ad cratérem, dicens: Qui est insípiens, declínet ad me. Et egéntibus sensu dixit: Veníte, édite de meis pánibus, et bíbite vinum quod míscui vobis."
+	},
+	{
+		"tags":["corpus-christi","dies-vi","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 6. f.]/In illo témpore: Dixit Jesus turbis Judæórum: Caro mea, vere est cibus: et sanguis meus, vere est potus. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Tractatus 26. in Joann., circa medium.]/Non sicut manducavérunt patres vestri manna, et mórtui sunt, Quare manducavérunt, et mórtui sunt? Quia quod vidébant, credébant: quod non vidébant, non intelligébant. Ídeo patres vestri, quia símiles estis illórum. Nam quantum pértinet, fratres mei, ad mortem istam visíbilem et corporálem, numquid nos non mórimur, qui manducámus panem de cœlo descendéntem? Sic sunt mórtui et illi, quemádmodum et nos sumus moritúri: quantum áttinet, ut dixi, ad mortem hujus córporis visíbilem atque carnálem."
+		],
+		"lectio-ii":"Quantum autem pértinet ad illam mortem, de qua terret Dóminus, qua mórtui sunt patres istórum: manducávit manna et Móyses, manducávit manna et Áaron, manducávit manna et Phínees, manducavérunt ibi multi, qui Dómino placuérunt, et mórtui non sunt. Quare? Quia visíbilem cibum spiritáliter intellexérunt, spiritáliter esuriérunt, spiritáliter gustavérunt, ut spiritáliter satiaréntur. Nam et nos hódie accípimus visíbilem cibum: sed áliud est sacraméntum, áliud virtus sacraménti.",
+		"lectio-iii":"Quam multi de altári accípiunt, et moriúntur, et accipiéndo moriúntur! Unde dicit Apóstolus: Judícium sibi mandúcat et bibit. Nonne buccélla Domínica venénum fuit Judæ? Et tamen accépit. Et cum accépit, in eum inimícus intrávit: non quia malum accépit, sed quia bonum male malus accépit. Vidéte ergo fratres, panem cœléstem spiritáliter manducáte, innocéntiam ad altáre apportáte. Peccáta, etsi sunt quotidiána, vel non sint mortífera; ántequam ad altáre accedátis, atténdite quod dicátis: Dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris. Si dimíttis, dimittétur tibi: secúrus accéde, panis est, non venénum."
+	},
+	{
+		"tags":["corpus-christi","dies-vii","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex libro sancti Ambrósii Epíscopi de Sacraméntis.",
+			"[Lib. 4. Cap. 4.]/Auctor sacramentórum quis est, nisi Dóminus Jesus? De cœlo ista sacraménta venérunt. Consílium enim omne de cœlo est. Vere autem magnum est et divínum miráculum, quod pópulo pluit Deus manna de cœlo, et non laborábat pópulus, et manducábat. Tu forte dicis: Meus panis est usitátus. Sed panis iste, panis est ante verba sacramentórum: ubi accésserit consecrátio, de pane fit caro Christi. Hoc ígitur astruámus. Quómodo potest, qui panis est, corpus esse Christi? Consecratióne. Consecrátio ígitur quibus verbis est, et cujus sermónibus? Dómini Jesu. Nam réliqua ómnia quæ dicúntur, laudem Deo déferunt, orátio præmíttitur pro pópulo, pro régibus, pro céteris: ubi venítur ut conficiátur venerábile Sacraméntum, jam non suis sermónibus sacérdos, sed útitur sermónibus Christi."
+		],
+		"lectio-ii":"Ergo sermo Christi hoc cónficit Sacraméntum. Quis sermo Christi? Nempe is, quo facta sunt ómnia. Jussit Dóminus, et factum est cœlum: jussit Dóminus, et facta est terra: jussit Dóminus, et facta sunt mária: jussit Dóminus, et omnis creatúra generáta est. Vides ergo quam operatórius sit sermo Christi. Si ergo tanta vis est in sermóne Dómini Jesu, ut incíperent esse quæ non erant: quanto magis operatórius est, ut quæ erant, in áliud commuténtur? Cœlum non erat, mare non erat, terra non erat. Sed audi dicéntem: Ipse dixit, et facta sunt: ipse mandávit, et creáta sunt. Ergo tibi ut respóndeam, non erat corpus Christi ante consecratiónem: sed post consecratiónem dico tibi quod jam corpus est Christi. Ipse dixit, et factum est: ipse mandávit, et creátum est.",
+		"lectio-iii":"[Cap. 5.]/Jam redi mecum ad propositiónem meam. Magnum quidem et venerábile, quod manna Judǽis pluit e cœlo. Sed intéllige quid est ámplius, manna de cœlo, an corpus Christi? Corpus Christi útique, qui auctor est cœli. Deínde manna qui manducávit, mórtuus est: qui manducáverit hoc corpus, fiet ei remíssio peccatórum, et non moriétur in ætérnum. Ergo non otióse, cum áccipis, tu dicis, Amen; jam in spíritu cónfitens quod accípias corpus Christi. Dicit tibi sacérdos, Corpus Christi: et tu dicis, Amen, hoc est, verum. Quod confitétur lingua, téneat afféctus."
+	},
+	{
+		"tags":["corpus-christi","dies-vii","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 6. f.]/In illo témpore: Dixit Jesus turbis Judæórum: Caro mea, vere est cibus: et sanguis meus, vere est potus. Et réliqua.",
+			"Homilía sancti Hilárii Epíscopi.",
+			"[Lib. 8. de Trinit., ante med.]/Non est humáno aut sǽculi sensu in Dei rebus loquéndum. Quæ scripta sunt, legámus: et quæ legérimus, intelligámus; et tunc perféctæ fídei offício fungémur. De naturáli enim in nobis Christi veritáte quæ dícimus, nisi ab eo díscimus, stulte atque ímpie dícimus. Ipse enim ait: Caro mea vere est esca, et sanguis meus vere est potus. Qui edit carnem meam, et bibit sánguinem meum, in me manet, et ego in eo. De veritáte carnis et sánguinis non relíctus est ambigéndi locus."
+		],
+		"lectio-ii":"Nunc enim et ipsíus Dómini professióne, et fide nostra vere caro est, et vere sanguis est. Et hæc accépta atque hausta id effíciunt, ut et nos in Christo, et Christus in nobis sit. An ne hoc véritas non est? Contíngat plane his verum non esse, qui Christum Jesum verum esse Deum negant. Est ergo in nobis ipse per carnem, et sumus in eo, dum secum hoc quod nos sumus, in Deo est. Quod autem in eo per sacraméntum communicátæ carnis et sánguinis simus, ipse testátur, dicens: Et hic mundus jam me non videt, vos autem me vidébitis: quóniam ego vivo, et vos vivétis: quóniam ego in Patre meo, et vos in me, et ego in vobis.",
+		"lectio-iii":"Quod autem in nobis naturális hæc únitas sit, ipse ita testátus est: Qui edit carnem meam, et bibit sánguinem meum, in me manet, et ego in eo. Non enim quis in eo erit, nisi in quo ipse fúerit: ejus tantum in se assúmptam habens carnem, qui suam súmpserit. Perféctæ autem hujus unitátis sacraméntum supérius jam docúerat, dicens: Sicut me misit vivens Pater, et ego vivo per Patrem; et qui mandúcat meam carnem, et ipse vivet per me. Vivit ergo per Patrem: et quo modo per Patrem vivit, eódem modo nos per carnem ejus vivémus."
+	},
+	{
+		"tags":["corpus-christi","dies-octava","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Cyrílli Epíscopi Jerosolymitáni.",
+			"[Catechesi mystagog. 4.]/Ipsa beáti Pauli doctrína abúnde suffícere vidétur, ut certam vobis de divínis mystériis fidem fáciat, quibus digni rédditi, concorpórei, ut ita dicam, et consanguínei Christi facti estis. Ipse enim modo clamábat, quod in nocte qua tradebátur Dóminus noster Jesus Christus, accípiens panem, et grátias agens fregit, et dedit discípulis suis, dicens: Accípite, et manducáte: hoc est corpus meum. Et accípiens cálicem, et grátias agens, dixit: Accípite, et bíbite: hic est sanguis meus. Cum ígitur ipse de pane pronuntiáverit ac díxerit: Hoc est corpus meum: quis audébit deínceps ambigére? Et cum idem ipse tam asseveránter díxerit: Hic est sanguis meus: quis umquam dubitáverit, ut dicat non esse ejus sánguinem?"
+		],
+		"lectio-ii":"Aquam olim in vinum convértit in Cana Galilǽæ, quod habet quamdam cum sánguine propinquitátem: et eum parum dignum existimábimus, cui credámus quod vinum in sánguinem transmutárit? Ad eas núptias, quibus córpora copulántur, vocátus, præter opiniónem ómnium hoc fecit miráculum: et non multo magis sic eum corpus et sánguinem suum fruénda nobis donásse persuásum fírmiter habébimus, ut ea cum omni certitúdine tamquam corpus ipsíus et sánguinem sumámus? Nam in spécie panis dat nobis corpus, et in spécie vini dat nobis sánguinem: ut, cum súmpseris, gustes corpus et sánguinem Christi, factus ejúsdem córporis et sánguinis párticeps. Sic enim effícimur Christíferi, hoc est Christum in corpóribus nostris feréntes, cum corpus ejus et sánguinem in membra nostra recípimus: sic secúndum beátum Petrum, divínæ natúræ consórtes réddimur.",
+		"lectio-iii":"Olim cum Judǽis Christus dísserens, Nisi manducavéritis, inquit, carnem meam, et bibéritis meum sánguinem, non habébitis vitam in vobis. Cum autem illi, quæ dicta fúerant, non spiritáliter accepíssent, offénsi abiérunt retro: putábant enim quod eos ad manducándas carnes hortarétur. Erant et in véteri testaménto panes propositiónis; verum illi cum fúerint véteris testaménti, finem jam accepérunt. In novo vero testaménto panis est cœléstis, et calix salutáris, qui et ánimam et corpus sanctíficant. Quamóbrem non sic hæc atténdas velim, tamquam sint nudus et simplex panis, nudum et simplex vinum: corpus enim sunt et sanguis Christi. Nam étiam si sensus illud tibi renúntiat, fides tamen te confírmet. Ne júdices rem ex gustu: sed te citra ullam dubitatiónem fides certum reddat, quod sis dignus factus, qui córporis et sánguinis Christi párticeps fíeres."
+	},
+	{
+		"tags":["corpus-christi","dies-octava","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 6. f.]/In illo témpore: Dixit Jesus turbis Judæórum: Caro mea, vere est cibus: et sanguis meus, vere est potus. Et réliqua.",
+			"Homilía sancti Cyrílli Epíscopi Alexandríni.",
+			"[Lib. 4. in Joannem, cap. 17.]/Qui mandúcat, inquit, carnem meam, et bibit sánguinem meum, in me manet, et ego in illo. Sícuti enim si quis liquefáctæ ceræ áliam ceram infúderit, álteram cum áltera per totum commísceat necésse est: sic qui carnem et sánguinem Dómini récipit, cum ipso ita conjúngitur, ut Christus in ipso, et ipse in Christo inveniátur. Símili quodam modo apud Matthǽum compéries. Símile est, inquit, regnum cœlórum ferménto, quod accéptum abscóndit múlier in farínæ satis tribus. Sicut parum, ut Paulus ait, ferménti totam massam ferméntat: sic párvula benedíctio totum hóminem in seípsam áttrahit, et sua grátia replet: et hoc modo in nobis Christus manet, et nos in Christo."
+		],
+		"lectio-ii":"Nos vero, si vitam ætérnam cónsequi vólumus, si largitórem immortalitátis habére in nobis desiderámus, ad recipiéndam benedictiónem libénter concurrámus: caveamúsque ne loco láquei damnósam religiónem diábolus nobis præténdat. Recte (inquit) dicis: scriptum tamen esse non ignorámus, judícium sibi comédere atque bíbere illum, qui de pane cómedit et de cálice bibit indígne. Ego ígitur probo meípsum, et indígnum invénio. Quando ígitur, quicúmque tu es qui ista dicis, dignus eris? quando Christo teípsum ófferes? Nam si peccándo indígnus es, et peccáre non désinis, (quis enim delícta intélligit? secúndum Psalmístam) expers omníno eris vivíficæ hujus sanctificatiónis.",
+		"lectio-iii":"Quare pias quæso cogitatiónes suscípias, studióse sanctéque vivas, et benedictiónem partícipes: quæ (mihi crede) non mortem solum, verum étiam morbos omnes depéllit. Sedat enim, cum in nobis máneat Christus, sæviéntem membrórum nostrórum legem: pietátem corróborat, perturbatiónes ánimi exstínguit, ægrótos curat, collísos redíntegrat: et sicut pastor bonus, qui ánimam suam pro óvibus pósuit, ab omni nos érigit casu."
 	}
 ]
