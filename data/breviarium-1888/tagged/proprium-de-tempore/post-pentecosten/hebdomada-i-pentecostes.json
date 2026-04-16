@@ -37,103 +37,63 @@
 		"datum":"Nolíte judicáre, * ut non judicémini: in quo enim judício judicavéritis, judicabímini, dicit Dóminus."
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-ii","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-i-pentecostes","feria-ii","lectio"],
+		"lectio-i":[
 			"Íncipit liber primus Regum.",
 			"[I. Reg. 1.]/Fuit vir unus de Ramáthaim Sophim, de monte Éphraïm, et nomen ejus Élcana, fílius Jéroham, fílii Éliu, fílii Thohu, fílii Suph, Ephrathǽus: et hábuit duas uxóres, nomen uni Anna, et nomen secúndæ Phenénna. Fuerúntque Phenénnæ fílii: Annæ autem non erant líberi. Et ascendébat vir ille de civitáte sua statútis diébus, ut adoráret, et sacrificáret Dómino exercítuum in Silo. Erant autem ibi duo fílii Heli, Ophni et Phínees, sacerdótes Dómini."
 		]
 	},
 	{
 		"tags":["hebdomada-i-pentecostes","feria-ii","responsorium","responsorium-i"],
-		"incipit":"Præparáte corda vestra Dómino, et servíte illi soli:",
-		"responsum":"Et liberábit vos de mánibus inimicórum vestrórum.",
-		"versus":"Convertímini ad eum in toto corde vestro, et auférte deos aliénos de médio vestri."
+		"datum":[["post-pentecosten","temporale","dominica","nocturna-i","responsorium","responsorium-i"]]
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-ii","lectio","lectio-ii"],
-		"datum":"Venit ergo dies, et immolávit Élcana, dedítque Phenénnæ uxóri suæ, et cunctis fíliis ejus, et filiábus partes: Annæ autem dedit partem unam tristis, quia Annam diligébat. Dóminus autem conclúserat vulvam ejus. Affligébat quoque eam ǽmula ejus, et veheménter angébat, in tantum, ut exprobráret quod Dóminus conclusísset vulvam ejus: sicque faciébat per síngulos annos, cum redeúnte témpore ascénderent ad templum Dómini: et sic provocábat eam. Porro illa flebat, et non capiébat cibum. Dixit ergo ei Élcana vir suus: Anna, cur fles? et quare non cómedis? et quam ob rem afflígitur cor tuum? numquid non ego mélior tibi sum, quam decem fílii?"
+		"tags":["hebdomada-i-pentecostes","feria-ii","lectio"],
+		"lectio-ii":"Venit ergo dies, et immolávit Élcana, dedítque Phenénnæ uxóri suæ, et cunctis fíliis ejus, et filiábus partes: Annæ autem dedit partem unam tristis, quia Annam diligébat. Dóminus autem conclúserat vulvam ejus. Affligébat quoque eam ǽmula ejus, et veheménter angébat, in tantum, ut exprobráret quod Dóminus conclusísset vulvam ejus: sicque faciébat per síngulos annos, cum redeúnte témpore ascénderent ad templum Dómini: et sic provocábat eam. Porro illa flebat, et non capiébat cibum. Dixit ergo ei Élcana vir suus: Anna, cur fles? et quare non cómedis? et quam ob rem afflígitur cor tuum? numquid non ego mélior tibi sum, quam decem fílii?"
 	},
 	{
 		"tags":["hebdomada-i-pentecostes","feria-ii","responsorium","responsorium-ii"],
-		"incipit":"Deus ómnium exaudítor est: ipse misit Ángelum suum, et tulit me de óvibus patris mei:",
-		"responsum":"Et unxit me unctióne misericórdiæ suæ.",
-		"versus":"Dóminus, qui erípuit me de ore leónis, et de manu béstiæ liberávit me."
+		"datum":[["post-pentecosten","temporale","dominica","nocturna-i","responsorium","responsorium-ii"]]
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-ii","lectio","lectio-iii"],
-		"datum":"Surréxit autem Anna postquam coméderat et bíberat in Silo. Et Heli sacerdóte sedénte super sellam ante postes templi Dómini, cum esset Anna amáro ánimo, orávit ad Dóminum, flens lárgiter, et votum vovit, dicens: Dómine exercítuum, si respíciens víderis afflictiónem fámulæ tuæ, et recordátus mei fúeris, nec oblítus ancíllæ tuæ, dederísque servæ tuæ sexum virílem: dabo eum Dómino ómnibus diébus vitæ ejus, et novácula non ascéndet super caput ejus."
+		"tags":["hebdomada-i-pentecostes","feria-ii","lectio"],
+		"lectio-iii":"Surréxit autem Anna postquam coméderat et bíberat in Silo. Et Heli sacerdóte sedénte super sellam ante postes templi Dómini, cum esset Anna amáro ánimo, orávit ad Dóminum, flens lárgiter, et votum vovit, dicens: Dómine exercítuum, si respíciens víderis afflictiónem fámulæ tuæ, et recordátus mei fúeris, nec oblítus ancíllæ tuæ, dederísque servæ tuæ sexum virílem: dabo eum Dómino ómnibus diébus vitæ ejus, et novácula non ascéndet super caput ejus."
 	},
 	{
 		"tags":["hebdomada-i-pentecostes","feria-ii","responsorium","responsorium-iii"],
-		"incipit":"Dóminus, qui erípuit me de ore leónis, et de manu béstiæ liberávit me,",
-		"responsum":"Ipse me erípiet de mánibus inimicórum meórum.",
-		"versus":"Misit Deus misericórdiam suam, et veritátem suam: ánimam meam erípuit de médio catulórum leónum."
+		"datum":[["post-pentecosten","temporale","dominica","nocturna-i","responsorium","responsorium-iii"]]
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-i-pentecostes","feria-iii","lectio"],
+		"lectio-i":[
 			"De libro primo Regum.",
 			"[I. Reg. 1. b.]/Factum est autem, cum illa multiplicáret preces coram Dómino, ut Heli observáret os ejus. Porro Anna loquebátur in corde suo, tantúmque lábia illíus movebántur, et vox pénitus non audiebátur. Æstimávit ergo eam Heli temuléntam, dixítque ei: Úsquequo ébria eris? dígere paulísper vinum, quo mades. Respóndens Anna, Nequáquam, inquit, dómine mi: nam múlier infélix nimis ego sum, vinúmque et omne quod inebriáre potest, non bibi, sed effúdi ánimam meam in conspéctu Dómini. Ne réputes ancíllam tuam quasi unam de filiábus Bélial: quia ex multitúdine dolóris et mœróris mei locúta sum usque in præsens. Tunc Heli ait ei: Vade in pace: et Deus Ísraël det tibi petitiónem tuam, quam rogásti eum. Et illa dixit: Útinam invéniat ancílla tua grátiam in óculis tuis."
 		]
 	},
 	{
 		"tags":["hebdomada-i-pentecostes","feria-iii","responsorium","responsorium-i"],
-		"incipit":"Percússit Saul mille, et David decem míllia:",
-		"responsum":"Quia manus Dómini erat cum illo: percússit Philisthǽum, et ábstulit oppróbrium ex Ístaël.",
-		"versus":"Nonne iste est David, de quo canébant in choro, dicéntes: Saul percússit mille, et David decem míllia?"
+		"datum":[["post-pentecosten","temporale","dominica","nocturna-ii","responsorium","responsorium-i"]]
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-iii","lectio","lectio-ii"],
-		"datum":"Et ábiit múlier in viam suam, et comédit, vultúsque illíus non sunt ámplius in divérsa mutáti. Et surrexérunt mane, et adoravérunt coram Dómino: reversíque sunt, et venérunt in domum suam Rámatha. Cognóvit autem Élcana Annam uxórem suam: et recordátus est ejus Dóminus. Et factum est post círculum diérum, concépit Anna, et péperit fílium, vocavítque nomen ejus Sámuel: eo quod a Dómino postulásset eum. Ascéndit autem vir ejus Élcana, et omnis domus ejus, ut immoláret Dómino hóstiam solémnem, et votum suum, et Anna non ascéndit: dixit enim viro suo: Non vadam, donec ablactétur infans, et ducam eum, ut appáreat ante conspéctum Dómini, et máneat ibi júgiter."
+		"tags":["hebdomada-i-pentecostes","feria-iii","lectio"],
+		"lectio-ii":"Et ábiit múlier in viam suam, et comédit, vultúsque illíus non sunt ámplius in divérsa mutáti. Et surrexérunt mane, et adoravérunt coram Dómino: reversíque sunt, et venérunt in domum suam Rámatha. Cognóvit autem Élcana Annam uxórem suam: et recordátus est ejus Dóminus. Et factum est post círculum diérum, concépit Anna, et péperit fílium, vocavítque nomen ejus Sámuel: eo quod a Dómino postulásset eum. Ascéndit autem vir ejus Élcana, et omnis domus ejus, ut immoláret Dómino hóstiam solémnem, et votum suum, et Anna non ascéndit: dixit enim viro suo: Non vadam, donec ablactétur infans, et ducam eum, ut appáreat ante conspéctum Dómini, et máneat ibi júgiter."
 	},
 	{
 		"tags":["hebdomada-i-pentecostes","feria-iii","responsorium","responsorium-ii"],
-		"incipit":"Montes Gélboë, nec ros nec plúvia véniant super vos,",
-		"responsum":"Ubi cecidérunt fortes Ísraël.",
-		"versus":"Omnes montes, qui estis in circúitu ejus, vísitet Dóminus: a Gélboë autem tránseat."
+		"datum":[["post-pentecosten","temporale","dominica","nocturna-ii","responsorium","responsorium-ii"]]
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-iii","lectio","lectio-iii"],
-		"datum":"Et ait ei Élcana vir suus: Fac quod bonum tibi vidétur, et mane donec abláctes eum: precórque ut ímpleat Dóminus verbum suum. Mansit ergo múlier, et lactávit fílium suum, donec amovéret eum a lacte. Et addúxit eum secum, postquam ablactáverat, in vítulis tribus, et tribus módiis farínæ, et ámphora vini, et addúxit eum ad domum Dómini in Silo. Puer autem erat adhuc infántulus: et immolavérunt vítulum, et obtulérunt púerum Heli. Et ait Anna: Óbsecro mi dómine, vivit ánima tua dómine: ego sum illa múlier, quæ steti coram te hic orans Dóminum. Pro púero isto orávi, et dedit mihi Dóminus petitiónem meam, quam postulávi eum. Idcírco et ego commodávi eum Dómino cunctis diébus, quibus fúerit commodátus Dómino. Et adoravérunt ibi Dóminum."
+		"tags":["hebdomada-i-pentecostes","feria-iii","lectio"],
+		"lectio-iii":"Et ait ei Élcana vir suus: Fac quod bonum tibi vidétur, et mane donec abláctes eum: precórque ut ímpleat Dóminus verbum suum. Mansit ergo múlier, et lactávit fílium suum, donec amovéret eum a lacte. Et addúxit eum secum, postquam ablactáverat, in vítulis tribus, et tribus módiis farínæ, et ámphora vini, et addúxit eum ad domum Dómini in Silo. Puer autem erat adhuc infántulus: et immolavérunt vítulum, et obtulérunt púerum Heli. Et ait Anna: Óbsecro mi dómine, vivit ánima tua dómine: ego sum illa múlier, quæ steti coram te hic orans Dóminum. Pro púero isto orávi, et dedit mihi Dóminus petitiónem meam, quam postulávi eum. Idcírco et ego commodávi eum Dómino cunctis diébus, quibus fúerit commodátus Dómino. Et adoravérunt ibi Dóminum."
 	},
 	{
-		"tags":["hebdomada-i-pentecostes","feria-iii","responsorium","responsorium-iii"],
-		"incipit":"Ego te tuli de domo patris tui, dicit Dóminus, et pósui te páscere gregem pópuli mei:",
-		"responsum":"Et fui tecum in ómnibus ubicúmque ambulásti, firmans regnum tuum in ætérnum.",
-		"versus":"Fecíque tibi nomen grande, juxta nomen magnórum, qui sunt in terra: et réquiem dedi tibi ab ómnibus inimícis tuis."
-	},
-	{
-		"tags":["hebdomada-i-pentecostes","feria-iv","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-i-pentecostes","feria-iv","lectio"],
+		"lectio-i":[
 			"De libro primo Regum.",
 			"[I. Reg. 2. c.]/Porro fílii Heli, fílii Bélial, nesciéntes Dóminum neque offícium sacerdótum ad pópulum: sed quicúmque immolásset víctimam, veniébat puer sacerdótis, dum coqueréntur carnes, et habébat fuscínulam tridéntem in manu sua, et mittébat eam in lebétem, vel in caldáriam, aut in ollam, sive in cácabum: et omne, quod levábat fuscínula, tollébat sacérdos sibi. Sic faciébant univérso Israéli veniéntium in Silo."
-		]
-	},
-	{
-		"tags":["hebdomada-i-pentecostes","feria-iv","responsorium","responsorium-i"],
-		"incipit":"Peccávi super númerum arénæ maris, et multiplicáta sunt peccáta mea: et non sum dignus vidére altitúdinem cœli præ multitúdine iniquitátis meæ: quóniam irritávi iram tuam,",
-		"responsum":"Et malum coram te feci.",
-		"versus":"Quóniam iniquitátem meam ego cognósco: et delíctum meum contra me est semper, quia tibi soli peccávi."
-	},
-	{
-		"tags":["hebdomada-i-pentecostes","feria-iv","lectio","lectio-ii"],
-		"datum":"Étiam ántequam adolérent ádipem, veniébat puer sacerdótis, et dicébat immolánti: Da mihi carnem, ut coquam sacerdóti: non enim accípiam a te carnem coctam, sed crudam. Dicebátque illi ímmolans: Incendátur primum juxta morem hódie adeps, et tolle tibi quantumcúmque desíderat ánima tua. Qui respóndens ajébat ei: Nequáquam: nunc enim dabis, alióquin tollam vi. Erat ergo peccátum puerórum grande nimis coram Dómino: quia retrahébant hómines a sacrifício Dómini."
-	},
-	{
-		"tags":["hebdomada-i-pentecostes","feria-iv","responsorium","responsorium-ii"],
-		"incipit":"Exaudísti Dómine oratiónem servi tui, ut ædificárem templum nómini tuo:",
-		"responsum":"Bénedic, et sanctífica domum istam in sempitérnum, Deus Ísraël.",
-		"versus":"Dómine, qui custódis pactum cum servis tuis, qui ámbulant coram te in toto corde suo."
-	},
-	{
-		"tags":["hebdomada-i-pentecostes","feria-iv","lectio","lectio-iii"],
-		"datum":"Sámuel autem ministrábat ante fáciem Dómini, puer, accínctus ephod líneo. Et túnicam parvam faciébat ei mater sua, quam afferébat statútis diébus, ascéndens cum viro suo, ut immoláret hóstiam solémnem. Et benedíxit Heli Élcanæ et uxóri ejus: dixítque ei: Reddat tibi Dóminus semen de mulíere hac, pro fœ\u0301nore quod commodásti Dómino. Et abiérunt in locum suum. Visitávit ergo Dóminus Annam, et concépit, et péperit tres fílios, et duas fílias: et magnificátus est puer Sámuel apud Dóminum."
-	},
-	{
-		"tags":["hebdomada-i-pentecostes","feria-iv","responsorium","responsorium-iii"],
-		"incipit":"Audi Dómine hymnum, et oratiónem, quam servus tuus orat coram te hódie: ut sint óculi tui apérti, et aures tuæ inténtæ,",
-		"responsum":"Super domum istam die ac nocte.",
-		"versus":"Réspice Dómine de sanctuário tuo, et de excélso cœlórum habitáculo."
+		],
+		"lectio-ii":"Étiam ántequam adolérent ádipem, veniébat puer sacerdótis, et dicébat immolánti: Da mihi carnem, ut coquam sacerdóti: non enim accípiam a te carnem coctam, sed crudam. Dicebátque illi ímmolans: Incendátur primum juxta morem hódie adeps, et tolle tibi quantumcúmque desíderat ánima tua. Qui respóndens ajébat ei: Nequáquam: nunc enim dabis, alióquin tollam vi. Erat ergo peccátum puerórum grande nimis coram Dómino: quia retrahébant hómines a sacrifício Dómini.",
+		"lectio-iii":"Sámuel autem ministrábat ante fáciem Dómini, puer, accínctus ephod líneo. Et túnicam parvam faciébat ei mater sua, quam afferébat statútis diébus, ascéndens cum viro suo, ut immoláret hóstiam solémnem. Et benedíxit Heli Élcanæ et uxóri ejus: dixítque ei: Reddat tibi Dóminus semen de mulíere hac, pro fœ\u0301nore quod commodásti Dómino. Et abiérunt in locum suum. Visitávit ergo Dóminus Annam, et concépit, et péperit tres fílios, et duas fílias: et magnificátus est puer Sámuel apud Dóminum."
 	},
 	{
 		"tags":["hebdomada-i-pentecostes","feria-vi","lectio"],
