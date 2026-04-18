@@ -107,7 +107,7 @@
 			["officium-parvum-bmv","matutinum","feria-ii"],
 			["officium-parvum-bmv","matutinum","feria-v"]
 		],
-		"antiphona":[["maria","matutinum","nocturna-i","antiphona"]],
+		"antiphona":[["maria","commune","per-annum","matutinum","nocturna-i","antiphona"]],
 		"psalmus":[["maria","matutinum","nocturna-i","psalmus"]]
 	},
 	{
@@ -115,7 +115,7 @@
 			["officium-parvum-bmv","matutinum","feria-iii"],
 			["officium-parvum-bmv","matutinum","feria-vi"]
 		],
-		"antiphona":[["matutinum","nocturna-ii","antiphona"]],
+		"antiphona":[["maria","commune","per-annum","matutinum","nocturna-ii","antiphona"]],
 		"psalmus":[["matutinum","nocturna-ii","psalmus"]]
 	},
 	{
@@ -123,7 +123,7 @@
 			["officium-parvum-bmv","matutinum","feria-iv"],
 			["officium-parvum-bmv","matutinum","sabbatum"]
 		],
-		"antiphona":[["matutinum","nocturna-iii","antiphona"]],
+		"antiphona":[["maria","commune","per-annum","matutinum","nocturna-iii","antiphona"]],
 		"psalmus":[["matutinum","nocturna-iii","psalmus"]]
 	},
 	{
