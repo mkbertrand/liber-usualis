@@ -25,11 +25,12 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["hebdomada-iv-paschae","dominica","matutinum","nocturna-i","lectio","lectio-i"],
-		"datum":[
+		"tags":["hebdomada-iv-paschae","dominica","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
 			"Íncipit Epístola cathólica beáti Jacóbi Apóstoli.",
 			"[Jacobi 1.]/Jacóbus Dei, et Dómini nostri Jesu Christi servus, duódecim tríbubus, quæ sunt in dispersióne, salútem. Omne gaúdium existimáte fratres mei, cum in tentatiónes várias incidéritis: sciéntes quod probátio fídei vestræ patiéntiam operátur. Patiéntia autem opus perféctum habet: ut sitis perfécti et íntegri in nullo deficiéntes. Si quis autem vestrum índiget sapiéntia, póstulet a Deo, qui dat ómnibus affluénter, et non impróperat: et dábitur ei. Póstulet autem in fide nihil hǽsitans."
-		]
+		],
+		"legitur-sequente":[["hebdomada-iv-paschae","feria-ii","lectio"]]
 	},
 	{
 		"tags":[

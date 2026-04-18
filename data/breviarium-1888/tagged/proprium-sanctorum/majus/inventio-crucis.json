@@ -65,7 +65,8 @@
 	{
 		"tags":[
 			["inventio-crucis","vesperae","versiculus"],
-			["inventio-crucis","nona","versiculus"]
+			["inventio-crucis","nona","versiculus"],
+			["inventio-crucis","matutinum","nocturna-i","versiculus"]
 		],
 		"in-tempore-paschali":["V. Hoc signum Crucis erit in cœlo, allelúja.","R. Cum Dóminus ad judicándum vénerit, allelúja."],
 		"datum":["V. Hoc signum Crucis erit in cœlo.","R. Cum Dóminus ad judicándum vénerit."]
@@ -82,16 +83,156 @@
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
-		"tags":["inventio-crucis","laudes","hymnus"],
-		"datum":[["laudes","in-tempore-passionis","temporale","hymnus"]]
+		"tags":["inventio-crucis","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0503I",
+		"datum":"Christum Regem crucifíxum, * Veníte adorémus, allelúja."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","hymnus"],
+		"datum":[["matutinum","in-tempore-passionis","temporale","hymnus"]]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","antiphona"],
+		"src":"nocturnale/0503N1A",
+		"datum":"Invéntæ Crucis * festa recólimus, cujus præcónium univérsum per orbem micánti lúmine fulget, allelúja."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","psalmus"],
+		"datum":[["martyr","psalmus"]]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola beáti Pauli Apóstoli ad Gálatas.",
+			"[Galat. 3. b.]/Quicúmque ex opéribus legis sunt, sub maledícto sunt. Scriptum est enim: Maledíctus omnis, qui non permánserit in ómnibus, quæ scripta sunt in Libro legis ut fácit ea. Quóniam autem in lege nemo justificátur apud Deum, maniféstum est: quia justus ex fide vivit. Lex autem non est ex fide, sed Qui fécerit ea, vivet in illis. Christus nos redémit de maledícto legis, factus pro nobis maledíctum: quia scriptum est: Maledíctus omnis qui pendet in ligno: ut in Géntibus benedíctio Ábrahæ fíeret in Christo Jesu, ut pollicitatiónem Spíritus accipiámus per fidem."
+		]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Gloriósum diem sacra venerátur Ecclésia, dum triumphále reserátur lignum:",
+		"responsum":"In quo Redémptor noster mortis víncula rumpens, cállidum áspidem superávit, allelúja, allelúja, allelúja.",
+		"versus":"In ligno pendens nostræ salútis sémitam Verbum Patris invénit."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","lectio"],
+		"lectio-ii":[
+			"De Epístola ad Philippénses.",
+			"[Philipp. 2.]/Hoc enim sentíte in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo. Humiliávit semetípsum factus obédiens usque ad mortem, mortem autem crucis. Propter quod et Deus exaltávit illum, et donávit illi nomen, quod est super omne nomen: ut in nómine Jesu omne genu flectátur cœléstium, terréstrium, et infernórum, et omnis lingua confiteátur quia Dóminus Jesus Christus in glória est Dei Patris."
+		]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Crux fidélis, inter omnes arbor una nóbilis: nulla silva talem profert, fronde, flore, gérmine:",
+		"responsum":"Dulce lignum, dulces clavos, dulce pondus sustínuit, allelúja.",
+		"versus":"Super ómnia ligna cedrórum tu sola excélsior."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","lectio"],
+		"lectio-iii":[
+			"De Epístola ad Colossénses.",
+			"[Coloss. 2. b.]/In Christo inhábitat omnis plenitúdo divinitátis corporáliter: et estis in illo repléti, qui est caput omnis principátus, et potestátis: in quo et circumcísi estis circumcisióne non manu facta in exspoliatióne córporis carnis, sed in circumcisióne Christi: consepúlti ei in baptísmo, in quo et resurrexístis per fidem operatiónis Dei, qui suscitávit illum a mórtuis. Et vos cum mórtui essétis in delíctis, et præpútio carnis vestræ, convivificávit cum illo, donans vobis ómnia delícta: delens quod advérsus nos erat chirógraphum decréti, quod erat contrárium nobis, et ipsum tulit de médio, affígens illud cruci: et exspólians principátus, et potestátes tradúxit confidénter, palam triúmphans illos in semetípso."
+		]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Hæc est arbor digníssima, in paradísi médio situáta,",
+		"responsum":"In qua salútis auctor própria morte mortem ómnium superávit, allelúja, allelúja.",
+		"versus":"Crux præcellénti decóre fúlgida, quam Hélena Constantíni mater concupiscénti ánimo requisívit."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","antiphona"],
+		"src":"nocturnale/0503N2A",
+		"datum":"Felix ille triúmphus * fit salus ægris, vitæ lignum, mortis remédium, allelúja."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","psalmus"],
+		"datum":[["martyr","psalmus"]]
 	},
 	{
 		"tags":[
+			["inventio-crucis","matutinum","nocturna-ii","versiculus"],
 			["inventio-crucis","laudes","versiculus"],
 			["inventio-crucis","tertia","versiculus"]
 		],
 		"in-tempore-paschali":["V. Adorámus te Christe, et benedícimus tibi, allelúja.", "R. Quia per Crucem tuam redemísti mundum, allelúja."],
 		"datum":["V. Adorámus te Christe, et benedícimus tibi.", "R. Quia per Crucem tuam redemísti mundum."]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Post insígnem victóriam, quam Constantínus imperátor, divínitus accépto signo Domínicæ Crucis, ex Maxéntio reportávit, Hélena Constantíni mater in somnis admónita, conquiréndæ Crucis stúdio Jerosólymam venit: ubi marmóream Véneris státuam in Crucis loco a Géntibus collocátam ad tolléndam Christi Dómini passiónis memóriam, post centum círciter octogínta annos everténdam curávit. Quod item fecit ad præsépe Salvatóris, et in loco resurrectiónis, inde Adónidis, hinc Jovis subláto simulácro."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Nos autem gloriári opórtet in Cruce Dómini nostri Jesu Christi, in quo est salus, vita, et resurréctio nostra:",
+		"responsum":"Per quem salváti et liberáti sumus, allelúja.",
+		"versus":"Tuam Crucem adorámus Dómine, et recólimus tuam gloriósam passiónem."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Ítaque loco Crucis purgáto, alte defóssæ tres cruces érutæ sunt, repertúsque seórsum ab illis Crucis Domínicæ títulus: qui cum ex tribus cui affíxus fuísset, non apparéret, eam dubitatiónem sústulit miráculum. Nam Macárius Jerosolymórum epíscopus, factis Deo précibus, síngulas cruces cuídam féminæ gravi morbo laboránti admóvit: cui cum réliquæ nihil profuíssent, adhíbita tértia Crux statim eam sanávit."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Dum sacrum pignus cœ\u0301litus revelátur, Christi fides roborátur:",
+		"responsum":"Adsunt prodígia divína in virga Móysi prímitus figuráta, allelúja, allelúja.",
+		"versus":"Ad Crucis contáctum resúrgunt mórtui, et Dei magnália reserántur."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Hélena, salutári Cruce invénta, magnificentíssimam ibi exstrúxit ecclésiam, in qua partem Crucis relíquit thecis argénteis inclúsam, partem Constantíno fílio détulit: quæ Romæ repósita fuit in ecclésia sanctæ Crucis in Jerúsalem, ædificáta in ǽdibus Sessoriánis. Clavos étiam áttulit fílio, quibus sanctíssimum Jesu Christi corpus fixum fúerat. Quo ex témpore Constantínus legem sancívit, ne crux ad supplícium cuíquam adhiberétur; ita res quæ ántea homínibus probro ac ludíbrio fúerat, veneratióni et glóriæ esse cœpit."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Hoc signum Crucis erit in cœlo, cum Dóminus ad judicándum vénerit:",
+		"responsum":"Tunc manifésta erunt abscóndita cordis nostri, allelúja, allelúja.",
+		"versus":"Cum séderit Fílius hóminis in sede majestátis suæ, et cœ\u0301perit judicáre sǽculum per ignem."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-iii","antiphona"],
+		"src":"nocturnale/0503N3A",
+		"datum":"Adorámus te * Christe, et benedícimus tibi, quia per Crucem tuam redemísti mundum, allelúja."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-iii","psalmus"],
+		"datum":[["virgo","psalmus"]]
+	},
+	{
+		"tags":[
+			["inventio-crucis","matutinum","nocturna-iii","versiculus"],
+			["inventio-crucis","sexta","versiculus"]
+		],
+		"in-tempore-paschali":["V. Omnis terra adóret te, et psallat tibi, allelúja.","R. Psalmum dicat nómini tuo Dómine, allelúja."],
+		"datum":["V. Omnis terra adóret te, et psallat tibi.","R. Psalmum dicat nómini tuo Dómine."]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 3.]/In illo témpore: Erat homo ex pharisǽis, Nicodémus nómine, princeps Judæórum. Hic venit ad Jesum nocte, et dixit ei: Rabbi, scimus quia a Deo venísti magíster. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Tract. 11. in Joannem, post initium.]/Nicodémus ex his erat, qui credíderant in nómine Jesu, vidéntes signa et prodígia quæ faciébat. Supérius enim hoc dixit: Cum autem esse Jerosólymis in Pascha in die festo, multi credidérunt in nómine ejus. Quare credidérunt in nómine ejus? Séquitur, et dicit: Vidéntes signa ejus, quæ faciébat. Et de Nicodémo quid dicit? Erat princeps Judæórum, nómine Nicodémus. Hic venit ad eum nocte, et ait illi: Rabbi, scimus quia a Deo venísti magíster. Et iste ergo credíderat in nómine ejus. Et ipse unde credíderat? Séquitur: Nemo enim potest hæc signa fácere, quæ tu facis, nisi fúerit Deus cum eo."
+		]
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Dulce lignum, dulces clavos, dulce pondus sustínuit:",
+		"responsum":"Quæ sola digna fuit portáre prétium hujus sǽculi, allelúja.",
+		"versus":"Hoc signum Crucis erit in cœlo cum Dóminus ad judicándum vénerit."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Si ergo Nicodémus de illis multis erat, qui credíderant in nómine ejus, jam in isto Nicodémo attendámus, quare Jesus non se credébat eis. Respóndit Jesus, et dixit ei: Amen, amen dico tibi, nisi quis renátus fúerit dénuo, non potest vidére regnum Dei. Ipsis ergo se credit Jesus, qui nati fúerint dénuo. Ecce illi credíderant in eum, et Jesus non se credébat eis. Tales sunt omnes catechúmeni: ipsi jam credunt in nómine Christi, sed Jesus non se credit eis.",
+		"lectio-iii":"Inténdat et intélligat cáritas vestra. Si dixérimus catechúmeno: Credis in Christum? Respóndet, Credo, et signat se Cruce Christi: portat in fronte, et non erubéscit de Cruce Dómini sui. Ecce credit in nómine ejus. Interrogémus eum: Mandúcas carnem Fílii hóminis, et bibis sánguinem Fílii hóminis? Nescit quid dícimus, quia Jesus non se crédidit ei."
+	},
+	{
+		"tags":["inventio-crucis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Sicut Móyses exaltávit serpéntem in desérto, ita exaltári opórtet Fílium hóminis:",
+		"responsum":"Ut omnis qui credit in ipsum, non péreat, sed hábeat vitam ætérnam, allelúja.",
+		"versus":"Non misit Deus Fílium suum in mundum ut júdicet mundum, sed ut salvétur mundus per ipsum."
+	},
+	{
+		"tags":["inventio-crucis","laudes","hymnus"],
+		"datum":[["laudes","in-tempore-passionis","temporale","hymnus"]]
 	},
 	{
 		"tags":["inventio-crucis","laudes","antiphona","antiphona-benedictus"],
@@ -126,11 +267,6 @@
 		"incipit":"Adorámus te Christe",
 		"responsum":"Et benedícimus tibi.",
 		"versus":"Quia per Crucem tuam redemísti mundum."
-	},
-	{
-		"tags":["inventio-crucis","sexta","versiculus"],
-		"in-tempore-paschali":["V. Omnis terra adóret te, et psallat tibi, allelúja.","R. Psalmum dicat nómini tuo Dómine, allelúja."],
-		"datum":["V. Omnis terra adóret te, et psallat tibi.","R. Psalmum dicat nómini tuo Dómine."]
 	},
 	{
 		"tags":["inventio-crucis","nona","capitulum"],

@@ -295,5 +295,28 @@
 		"include":["petrus-ad-vincula"],
 		"response":"crea",
 		"adde":["commemoratio","paulus","semiduplex"]
+	},
+	{
+		"include":["hebdomada-iv-paschae"],
+		"response":[
+			{"include":["philippus-jacobus"],"adde":"infra-hebdomadam-iv-paschae","target":1}
+		]
+	},
+	{
+		"include":["hebdomada-iv-paschae","dominica"],
+		"response":[
+			{"include":["ad-vi-nonas-maji"],"adde":"legitur-sequente","target":0}
+		]
+	},
+	{
+		"include":["joannes-portam-latinam"],
+		"response":[
+			{"include":["hebdomada-iii-paschae"],"adde":"legitur-occurrente","target":0},
+			{"include":["ascensio","dominica-infra-octavam"],"adde":"legitur-occurrente","target":0},
+			{"include":["ascensio","dies-v"],"adde":"legitur-occurrente","target":0},
+			{"include":["ascensio","dies-vi"],"adde":"legitur-occurrente","target":0},
+			{"include":["ascensio","dies-vii"],"adde":"legitur-occurrente","target":0},
+			{"include":["post-ascensionem","feria-vi"],"adde":"legitur-occurrente","target":0}
+		]
 	}
 ]
