@@ -202,7 +202,8 @@ def rite():
 				elif type(obj) is list:
 					for v in obj:
 						traverse(v)
-			traverse(copy.deepcopy(rite['datum']))
+			rite['datum'] = copy.deepcopy(rite['datum'])
+			traverse(rite['datum'])
 	except Exception as e:
 		traceback.print_exc()
 		print(e)
