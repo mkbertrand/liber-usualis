@@ -10,6 +10,13 @@
 		"datum":[["matutinum","nocturna","duodecim-psalmi","una-antiphona"],"[Hac nocte dicitur tertium Responsorium, quia non dicitur [Te Deum laudámus.] In duabus vero sequentibus Feriis dicitur.]"]
 	},
 	{
+		"tags":[
+			["feria-ii-rogationis","benedictio"],
+			["feria-iv-rogationis","benedictio"]
+		],
+		"datum":[["benedictio","evangelica-lectio"]]
+	},
+	{
 		"tags":["feria-ii-rogationis","lectio"],
 		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Lucam.",
