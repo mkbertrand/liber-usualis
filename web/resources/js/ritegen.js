@@ -201,8 +201,8 @@ function rubricrender(data) {
 		.replace(/N\./g, '<span class=\'red\'>N.</span>')
 		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
 		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-		.replace(/V\./g, '<span class=\'red\'>&#8483;.</span>')
-		.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
+		.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
+		.replace(/>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
 		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
 		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
 		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
@@ -324,7 +324,7 @@ function render(data, chant) {
 						header = makeheader(headers[i]);
 					}
 					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
-						header = makeheader('Te Deum');
+						header = makeheader('Te Deum.');
 					} else if (uniquelyhas('capitulum') && !data.tags.includes('pascha')) {
 						if (data.quaesitum.includes('officium-parvum-bmv') && !['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
 							header = makeheader('Capitulum & Versiculus.');
