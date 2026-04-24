@@ -25,6 +25,28 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["venantius","matutinum","hymnus"],
+		"src":"nocturnale/0518H",
+		"datum":[
+			"Athléta Christi nóbilis/Idóla damnat Géntium,/Deíque amóre saúcius/Vitæ perícla déspicit.",
+			"Loris revínctus ásperis,/E rupe præceps vólvitur:/Spinéta vultum lácinant:/Per saxa corpus scínditur.",
+			"Dum membra raptant Mártyris,/Languent siti satéllites:/Signo crucis Venántius/E rupe fontes élicit.",
+			"Bellátor o fortíssime,/Qui pérfidis tortóribus/E caute præbes póculum,/Nos rore grátiæ írriga.",
+			"Sit laus Patri, sit Fílio,/Tibíque sancte Spíritus:/Da per preces Venántii/Beáta nobis gaúdia.","Amen."
+		]
+	},
+	{
+		"tags":["venantius","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"de-rogationibus":[["martyr","lectio"]]
+	},
+	{
+		"tags":["venantius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Venántius Camers quíndecim annos natus, cum christiánæ religiónis accusarétur apud Antíochum, qui sub Décio imperatóre Cameríno prǽerat, in porta civitátis prǽsidi se óbtulit: quem ille pollicitatiónibus ac terróribus diu tentátum, flagris cædi et vínculis astríngi jussit: sed iis mirabíliter ab Ángelo solútus, lampádibus póstea adúritur, atque invérso ore fumo suppósito suspénditur. Ejus constántiam in torméntis demirátus Anastásius Corniculárius, et quod eum ab Ángelo íterum solútum cándida veste supra fumum ambulántem vidísset, in Christum crédidit, et a beáto Porphýrio presbýtero cum família baptizátus, paulo post martýrii palmam cum eódem proméruit.",
+		"lectio-ii":"At Venántius prǽsidi sístitur, et ab eo íterum frustra tentátus ut Christi fidem deséreret, in cárcerem conjícitur: quo Áttalus præco míttitur, qui ei dicat, se quoque Christiánum fuísse, et ei nómini proptérea renuntiásse, quod cognovísset, ináne esse fídei comméntum, quo Christiáni præséntibus se ábdicant ob vanam futurórum spem. Verum nóbilis Christi athléta cállidi hostis insídias non ignórans, diáboli minístrum a se pénitus rejécit. Quare ad prǽsidem íterum addúcto omnes contúsi sunt dentes, maxillǽque confráctæ: atque ita cæsus in sterquilínium dejícitur. Sed inde ab Ángelo quoque eréptus, rursus stetit ante júdicem: qui, Venántio adhuc loquénte, e tribunáli cécidit, et in ea voce, Verus est Venántii Deus, nostros deos destrúite, exclámans exspirávit.",
+		"lectio-iii":"Quod cum prǽsidi nuntiátum esset, extémplo Venántium leónibus óbjici jussit, qui, naturáli feritáte omíssa, ad ejus se pedes abjecérunt: ínterim ille pópulum Christi fidem edocébat. Quare inde amótus, íterum in cárcerem tráditur. Cumque postrídie prǽsidi reférret Porphýrius, se per visum noctu pópulos, quos Venántius aqua tingébat, claríssima luce fulgéntes, ipsum vero prǽsidem obscuríssima calígine opértum vidísse; præses ira incénsus, eum íllico cápite plecti ímperat: deínde Venántium per loca vépribus et cárduis cónsita trahi usque ad vésperam. Is cum semiánimis relíctus esset, mane se íterum prǽsidi præsentávit, cujus jussu statim e rupe præcipitátur: sed inde étiam divínitus eréptus, dénuo per loca áspera ad mille passus tráhitur: ubi milítibus siti æstuántibus, in próxima conválle, ex lápide, in quo et génuum formam relíquit, sicut étiam nunc in ejus ecclésia vidére licet, crucis signo a Venántio facto, aquæ manárunt. Eo miráculo plures permóti in Christum credidérunt, quos omnes præses eo loci una cum Venántio cápite feríri jussit. Fulgúra et terræmótus eo témpore ita magni fuére, ut præses aufúgeret: qui paucis tamen post diébus divínam haud valens effúgere justítiam, turpíssimam mortem oppétiit. Christiáni ínterim Venántii et aliórum córpora honorífico loco sepeliérunt, quæ Cameríni in ecclésia Venántio dicáta cóndita adhuc sunt."
+	},
+	{
 		"tags":["venantius","laudes","hymnus"],
 		"src":"gregobase/12065",
 		"datum":[

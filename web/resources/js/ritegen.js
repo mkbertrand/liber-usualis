@@ -438,7 +438,7 @@ function render(data, chant) {
 					// Adds extra line of annotation noting that the reading is a commemoration (i.e. not a continuation of the previous readings).
 					annotation = '';
 					if (data.tags.includes('lectio-commemorationis') || typeof data.datum == 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('lectio-commemorationis')) {
-						annotation = `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${abbreviateName(commmat)}.</p>`;
+						annotation = `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${(abbreviateName(commmat) + '.').replace('..', '.')}</p>`;
 					}
 
 					reading = unpack(data);

@@ -7,5 +7,12 @@
 		"tags":["bonifacius","collecta"],
 		"datum":"Da, quǽsumus omnípotens Deus: + ut qui beáti Bonifácii Mártyris tui solémnia cólimus, * ejus apud te intercessiónibus adjuvémur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["bonifacius","matutinum","lectio"],
+		"include-inauthenticas":[["lectio-binaria"]],
+		"lectio-commemorationis":[["lectio-binaria"]],
+		"lectio-i":"Bonifácius, civis Románus, quod cum Áglaë nóbili matróna impudíce versátus esset, tanto illíus intemperántiæ dolóre captus est, ut pœniténtiæ causa se ad conquirénda et sepeliénda Mártyrum córpora contúlerit. Ítaque relíctis peregrinatiónis sóciis, cum Tarsi multos propter christiánæ fídei professiónem váriis torméntis cruciátos vidísset, illórum víncula osculátus, eos veheménter hortabátur, ut constánter supplícia perférrent, quod brevem labórem sempitérna réquies consecutúra sit. Comprehénsus ígitur, férreis úngulis excarnificátus est: cui étiam inter mánuum ungues et carnem acúti cálami sunt infíxi, plumbúmque liquefáctum in os ejus infúsum. Quibus in cruciátibus ea vox tantum Bonifácii audiebátur: Grátias tibi ago Dómine Jesu Christe, Fili Dei.",
+		"lectio-ii":"Mox in ollam fervéntis picis demísso cápite conjéctus est: unde cum inviolátus exísset, ira incénsus judex eum secúri pércuti jubet. Quo témpore magnus terræmótus factus est, ita ut multi infidéles ad Christi Dómini fidem converteréntur. Eum sequénti die quæréntes sócii, cum martýrio afféctum cognovíssent, quingéntis sólidis ejus corpus redemérunt, et condítum unguéntis, linteísque involútum Romam portándum curárunt. Quod factum cum ab Ángelo Áglaë matróna, quæ et ipsa pœ\u0301nitens se piis opéribus addíxerat, cognovísset; pródiens óbviam sancto córpori, ecclésiam ejus nómine ædificávit: in qua corpus sepúltum est Nonis Júnii, cum ejus ánima prídie Idus Maji apud Tarsum Cilíciæ urbem migrásset in cœlum, Diocletiáno et Maximiáno imperatóribus."
 	}
 ]
