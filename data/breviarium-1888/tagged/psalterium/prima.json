@@ -145,7 +145,10 @@
 		"in-tempore-paschali":["V. Exsúrge, Christe, ádjuva nos, allelúja.","R. Et líbera nos propter nomen tuum, allelúja."]
 	},
 	{
-		"tags":["prima","preces"],
+		"tags":[
+			["prima","preces"],
+			["prima","feria-iv-rogationis","preces"]
+		],
 		"datum":[
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],

@@ -347,7 +347,10 @@
 		"datum":"Benedíctus * Dóminus Deus Ísraël."
 	},
 	{
-		"tags":["laudes","preces"],
+		"tags":[
+			["laudes","preces"],
+			["laudes","feria-iv-rogationis","preces"]
+		],
 		"datum":[]
 	},
 	{
