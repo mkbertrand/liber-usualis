@@ -7,5 +7,20 @@
 		"tags":["bernardinus-senensis","collecta"],
 		"datum":"Dómine Jesu, qui beáto Bernardíno Confessóri tuo exímium sancti nóminis tui amórem tribuísti: + ejus, quǽsumus, méritis et intercessióne, * spíritum nobis tuæ dilectiónis benígnus infúnde:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["bernardinus-senensis","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]],
+		"de-rogationibus":[["confessor","lectio"]]
+	},
+	{
+		"tags":["bernardinus-senensis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Bernardínus Albizésca, nóbili Senénsi família ortus, ab ineúnte ætáte non obscúra sanctitátis dedit indícia; nam a piis paréntibus honéste educátus, negléctis puerílibus ludis, inter prima grammáticæ stúdia pietátis opéribus ánimum inténdit, jejúniis, oratióni, et beatíssimæ Vírginis cúltui præcípue addíctus. Misericórdia vero in paúperes fuit insígnis: quæ quidem ómnia procedénte témpore quo mélius posset excólere, eórum número adscríbi vóluit, qui Senis in hospitáli domo beátæ Maríæ de Scala Deo insérviunt, unde complúres sanctitáte célebres viri prodiérunt. Ibi córporis afflictatióne, et ægrotántium cura, dum atrox pestiléntia grassarétur, incredíbili caritáte sese exércuit. Inter céteras autem virtútes, castitátem, egrégia forma repugnánte, sanctíssime custodívit, ádeo ut eo præsénte nemo umquam, ne impudentíssimus quidem, verbum minus honéstum proférre audéret.",
+		"lectio-ii":"Gravi morbo tentátus, eóque ad quátuor menses patientíssime toleráto, demum incólumis, de religiósæ vitæ institúto capesséndo deliberáre cœpit; quo ut sibi viam muníret, ædículam in extréma urbe condúxit; in quam cum sese abdidísset, aspérrimam omni ex parte vitam trahébat, Deum assídue orans, ut, quid sibi sequéndum esset, osténderet; quare divínitus factum est, ut beáti Francísci órdinem præ céteris optáret, in quo humilitáte, patiéntia, aliísque religiósi hóminis virtútibus excélluit. Id cum cœnóbii rector animadvérteret, jamque ántea Bernardíni doctrínam, et sacrárum Litterárum perítiam perspéctam habéret, prædicándi onus eídem impósuit: quo humíllime suscépto, cum se minus idóneum agnósceret ob vocis exilitátem ac raucitátem, Dei ope imploráta, non sine miráculo ejúsmodi impediménto liberátus est.",
+		"lectio-iii":"Cumque ea témpora vítiis criminibúsque redundárent, et cruéntis factiónibus in Itália, divína humanáque ómnia permíxta essent, Bernardínus urbes atque óppida concúrsans, in nómine Jesu, quem semper in ore et in péctore gerébat, collápsam pietátem, morésque verbo et exémplo magna ex parte restítuit: quo factum est, ut præcláræ civitátes eum sibi epíscopum a Summo Pontífice postulárent: quod ille munus invícta humilitáte constantíssime rejécit. Dénique vir Dei imménsis labóribus exhaústus, multis magnísque éditis miráculis, libris étiam pie doctéque conscríptis, cum vixísset annos sex ac sexagínta, in urbe Áquila in Vestínis beáto fine quiévit. Quem novis in dies coruscántem signis, anno post óbitum sexto, Nicoláus quintus Póntifex Máximus in sanctórum númerum rétulit."
+	},
+	{
+		"tags":["bernardinus-senensis","matutinum","nocturna-iii","lectio"],
+		"datum":[["abbas","lectio"]]
 	}
 ]

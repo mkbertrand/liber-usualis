@@ -80,6 +80,13 @@
 		]
 	},
 	{
+		"include":["feria-iii-rogationis","omissum"],
+		"recheck":false,
+		"response":[
+			{"include":["hebdomada-v-paschae","omissum"],"response":"combina","target":0}
+		]
+	},
+	{
 		"include":["vigilia","commemoratio"],
 		"remove":"omissum"
 	},
@@ -193,6 +200,10 @@
 		"response":[
 			{"include":["simplex","commemoratio-matutini"],"response":"dele","target":1}
 		]
+	},
+	{
+		"include":["petronilla","commemoratio-matutini"],
+		"response":"dele"
 	},
 	{
 		"include":["infra-octavam","commemoratio"],
