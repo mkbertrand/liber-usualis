@@ -237,10 +237,16 @@ function render(data, chant) {
 	commmat = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
 
 	function renderinner(data, translated = null, parenttags) {
-		// We frequently want to know if some array, but not parenttags, includes some tag.
+		// Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
 		function uniquelyhas(tag, list = data.tags) {
 			return list.includes(tag) && !parenttags.includes(tag);
 		}
+
+		// Same as above, but only for the bottom of the recursion.
+		function uniquelyhasbottom(tag, list = data.tags) {
+			return list.includes(tag) && (!(typeof data.datum === 'object') || !('tags' in data.datum) || !data.datum.tags.includes(tag));
+		}
+
 		try {
 			if (typeof data === 'object' && 'translation' in data) {
 				var tags = data.tags;
@@ -497,7 +503,8 @@ function render(data, chant) {
 						if (i == data.datum.length - 2) {
 							data.datum[i].tags = data.datum[i].tags.map((tag) => tag == 'formula-commemorationis' ? 'commemoratio-finalis' : tag);
 						}
-						ret += makeheadingannotation(usedcommemorations[i][0] + '.') + renderinner(data.datum[i], translated, data.tags.concat(parenttags));
+						// Regex statement adds heading annotation inside of the commemoration's div rather than before it.
+						ret += renderinner(data.datum[i], translated, data.tags.concat(parenttags)).replace(/(<div.+?>)(.+)/, `$1${makeheadingannotation(usedcommemorations[i][0] + '.')}$2`);
 					}
 					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
 
@@ -538,6 +545,8 @@ function render(data, chant) {
 						data.tags.push('textus-psalmi');
 					}
 
+				} else if (uniquelyhasbottom('collecta') && !data.tags.includes('terminatio')) {
+					console.log(data.datum);
 				} else if (data.tags.includes('nocturna')) {
 					if (data.quaesitum.includes('nocturna-i')) {
 						header = makeheader('Nocturnus I.', 'section-header');
@@ -619,7 +628,7 @@ function render(data, chant) {
 				}
 
 				openparagraph = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'commemoratio-finalis'];
-				if (openparagraph.some(i => uniquelyhas(i))) {
+				if (openparagraph.some(i => uniquelyhas(i)) || (uniquelyhasbottom('collecta') && !data.tags.includes('terminatio'))) {
 					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
 					if (annotation == null) {

@@ -287,7 +287,7 @@
 	color: red;
 }
 
-.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
+.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter {
 	float: left;
 	font-size: 94px;
 	margin-right: 0.1rem;
@@ -297,10 +297,20 @@
 	-webkit-initial-letter: 3;
 }
 
-.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter {
+.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter {
 	font-size: 60px !important;
 	initial-letter: 2;
 	-webkit-initial-letter: 2;
+}
+
+/* Technically colors all items red, but in effect since all except the Oremus are already colored red, only adds red for that. */
+.collecta-primaria::first-letter, .formula-commemorationis::first-letter, .commemoratio-finalis::first-letter, .antiphona-bmv::first-letter, .officium-capituli::first-letter {
+	color: red;
+}
+
+.collecta, .oratio-dirigere {
+	margin-top: -12px;
+	min-height: 50px;
 }
 
 .rubricum {
@@ -492,8 +502,12 @@
 		font-size: 112px;
 	}
 
-	.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter {
+	.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter {
 		font-size: 72px !important;
+	}
+
+	.collecta, .oratio-dirigere {
+		min-height: 60px;
 	}
 
 	#next-hour-button-container {
