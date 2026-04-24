@@ -589,7 +589,7 @@ function render(data, chant) {
 					return '';
 				}
 
-				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'preces', 'collecta-primaria', 'formula-commemorationis']
+				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i))) {
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
 					if (annotation == null) {
@@ -605,7 +605,7 @@ function render(data, chant) {
 					}
 				}
 
-				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-sanctae-mariae', 'oratio-dirigere', 'rubricum'];
+				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum'];
 				if ((fullparagraph.some(i => uniquelyhas(i)) || (data.tags.includes('triduum') && data.tags.includes('collecta'))) && !parenttags.includes('sacrosanctae')) {
 					if (!ret.startsWith('<p')) {
 						ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
@@ -618,7 +618,7 @@ function render(data, chant) {
 					return `${ret}</p>`;
 				}
 
-				openparagraph = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'textus-psalmi-precibus', 'commemoratio-finalis'];
+				openparagraph = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'commemoratio-finalis'];
 				if (openparagraph.some(i => uniquelyhas(i))) {
 					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);

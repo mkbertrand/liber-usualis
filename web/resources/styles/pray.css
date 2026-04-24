@@ -283,7 +283,7 @@
 	font-size: 14px !important;
 }
 
-.aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .formula-lectionis::first-letter {
+.aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .oratio-sanctae-mariae::first-letter, .formula-lectionis::first-letter {
 	color: red;
 }
 
@@ -445,10 +445,55 @@
 		font-size: 18px;
 	}
 
-	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter {
+	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
 		font-size: initial;
 		float: initial;
 		line-height: initial;
+	}
+
+	#next-hour-button-container {
+		padding: 0 30px 60px 30px;
+	}
+
+	#next-hour-forbidden-tooltip {
+		top: 5px;
+	}
+}
+
+/* Large Screens */
+@media only screen and (min-width: 2000px) {
+
+	#rite-container {
+		padding: 10px 100px 10px 100px;
+		font-size: 24px;
+	}
+
+	.large-title {
+		font-size: 30px;
+	}
+
+	.large-subtitle {
+		font-size: 20px;
+	}
+
+	.small-title {
+		font-size: 26px;
+	}
+
+	.section-header {
+		font-size: 26px;
+	}
+
+	.item-header {
+		font-size: 24px;
+	}
+
+	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
+		font-size: 112px;
+	}
+
+	.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter {
+		font-size: 72px !important;
 	}
 
 	#next-hour-button-container {
