@@ -348,7 +348,8 @@
 	{
 		"tags":[
 			["matutinum","habens-commemorationem-matutini","nocturna-iii","lectio","include-inauthenticas"],
-			["matutinum","dominica","feria","lectio","include-inauthenticas"]
+			["matutinum","dominica","feria","lectio","include-inauthenticas"],
+			["matutinum","habens-commemorationem-matutini","feria-major","lectio","include-inauthenticas"]
 		],
 		"lectio-ii":[["matutinum","nocturna-iii","lectio-ii","lectio"],["matutinum","nocturna-iii","lectio-iii","lectio"]],
 		"lectio-iii":[["commemoratio-matutini","occurrens","lectio-commemorationis","lectio"]]
