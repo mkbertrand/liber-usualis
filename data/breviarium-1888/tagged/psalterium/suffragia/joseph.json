@@ -4,11 +4,6 @@
 		"datum":"De S. Joseph"
 	},
 	{
-		"tags":["joseph","collecta"],
-		"datum":"Deus, qui ineffábili providéntia beátum Joseph sanctíssimæ Genetrícis tuæ sponsum elígere dignátus es: + præsta quǽsumus; ut quem protectórem venerámur in terris, * intercessórem habére mereámur in cœlis:",
-		"terminatio":[["terminatio","qui-vivis"]]
-	},
-	{
 		"tags":["joseph","laudes","versiculus"],
 		"datum":["V. Os justi meditábitur sapiéntiam.","R. Et lingua ejus loquétur judícium."]
 	},
@@ -31,5 +26,10 @@
 		],
 		"src":"gregobase/2431",
 		"datum":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam."
+	},
+	{
+		"tags":["joseph","collecta"],
+		"datum":"Deus, qui ineffábili providéntia beátum Joseph sanctíssimæ Genetrícis tuæ sponsum elígere dignátus es: + præsta quǽsumus; ut quem protectórem venerámur in terris, * intercessórem habére mereámur in cœlis:",
+		"terminatio":[["terminatio","qui-vivis"]]
 	}
 ]

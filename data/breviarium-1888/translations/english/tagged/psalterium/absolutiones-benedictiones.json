@@ -1,5 +1,125 @@
 [
 	{
+		"tags":[
+			["matutinum","nocturna-i","absolutio"],
+			["matutinum","feria-i","absolutio"],
+			["matutinum","feria-ii","absolutio"],
+			["matutinum","feria-v","absolutio"]
+		],
+		"datum":[
+			"Graciously hear, O Lord Jesus Christ, the prayers of Thy servants, + and have mercy upon us: * Who livest and reignest with the Father, and the Holy Ghost, world without end.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-i","benedictio"],
+			["matutinum","feria-i","benedictio"],
+			["matutinum","feria-ii","benedictio"],
+			["matutinum","feria-v","benedictio"]
+		],
+		"lectio-i":"May the Eternal Father bless us * with an eternal blessing.",
+		"lectio-ii":"May the Son, the Sole-begotten, * mercifully bless and keep us.",
+		"lectio-iii":"May the grace of God the Spirit * all our heart and mind enlighten."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-ii","absolutio"],
+			["matutinum","feria-iii","absolutio"],
+			["matutinum","feria-vi","absolutio"]
+		],
+		"datum":[
+			"May His loving-kindness and mercy help us, * Who liveth and reigneth with the Father, and the Holy Ghost, world without end.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-ii","benedictio"],
+			["matutinum","feria-iii","benedictio"],
+			["matutinum","feria-vi","benedictio"]
+		],
+		"lectio-i":"God the Father Omnipotent, * be to us merciful and clement.",
+		"lectio-ii":"May Christ to all His people give, * for ever in His sight to live.",
+		"lectio-iii":"May the Spirit’s fire Divine * in our hearts enkindled shine."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","absolutio"],
+			["matutinum","feria-iv","absolutio"],
+			["matutinum","sabbatum","absolutio"]
+		],
+		"datum":[
+			"From the bonds of our sins, * may the Almighty and merciful Lord loose us.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-i","benedictio"],
+			["matutinum","evangelica-lectio","lectio-i","benedictio"]
+		],
+		"datum":"May the Gospel’s holy lection * be our safety and protection."
+	},
+	{
+		"tags":[
+			["matutinum","feria-iv","lectio-i","benedictio"],
+			["matutinum","sabbatum","lectio-i","benedictio"]
+		],
+		"datum":"May His blessing be upon us * Who doth live and reign for ever."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","benedictio"],
+			["matutinum","feria-iv","lectio-ii","benedictio"],
+			["matutinum","sabbatum","lectio-ii","benedictio"],
+			["matutinum","evangelica-lectio","lectio-ii","benedictio"]
+		],
+		"datum":"May the divine assistance * remain always with us."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","apostolus","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","martyr","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","confessor","benedictio"]
+		],
+		"datum":"He whose feast-day we are keeping, * be our Advocate with God."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","apostolus","apostoli","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","martyr","martyres","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","confessor","confessores","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","virgo","virgines","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","vidua","viduae","benedictio"]
+		],
+		"datum":"They whose feast-day we are keeping, * be our Advocates with God."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","virgo","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","vidua","benedictio"]
+		],
+		"datum":"She whose feast-day we are keeping, * be our Advocate with God."
+	},
+	{
+		"tags":["matutinum","nocturna-iii","lectio-ii","maria","benedictio"],
+		"datum":"She whose feast-day we are keeping * Mary, blessed Maid of Maidens, be our Advocate with God."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-iii","benedictio"],
+			["matutinum","feria-iv","lectio-iii","benedictio"],
+			["matutinum","sabbatum","lectio-iii","benedictio"],
+			["matutinum","evangelica-lectio","lectio-iii","benedictio"]
+		],
+		"datum":"May He that is the Angels’ King * to that high realm His people bring."
+	},
+	{
+		"tags":["benedictio","per-evangelica-dicta"],
+		"datum":"May the Gospel’s glorious word * cleansing to our souls afford."
+	},
+	{
 		"tags":["matutinum","bmv-sabbatum","absolutio"],
 		"datum":[
 			"By the prayers of the Blessed Mary, always a Virgin, and by the prayers of all the Saints, * and for her sake and for their sakes, may the Lord lead us unto the kingdom of heaven.",
