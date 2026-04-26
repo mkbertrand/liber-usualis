@@ -498,16 +498,22 @@ function render(data, chant) {
 					}
 
 				} else if (data.tags.includes('commemorationes')) {
+
+					// If there are no Commemorations. data.datum.length will never equal 1 since even if there is only a single Commemoration, its Collect's Termination will be present as a separate element.
+					if (data.datum.length == 0) {
+						return '';
+					}
+
 					var ret = makeheader('Commemorationes.');
-					for (var i = 0; i < data.datum.length - 1; i++) {
-						if (i == data.datum.length - 2) {
-							data.datum[i].tags = data.datum[i].tags.map((tag) => tag == 'formula-commemorationis' ? 'commemoratio-finalis' : tag);
-						}
+
+					// Last two items in the data.datum array are the final Commemoration and the Termination of that Commemoration's collect.
+					for (var i = 0; i < data.datum.length - 2; i++) {
 						// Regex statement adds heading annotation inside of the commemoration's div rather than before it.
 						ret += renderinner(data.datum[i], translated, data.tags.concat(parenttags)).replace(/(<div.+?>)(.+)/, `$1${makeheadingannotation(usedcommemorations[i][0] + '.')}$2`);
 					}
-					return data.datum.length == 0 ? '' : ret + renderinner(data.datum[data.datum.length - 1], translated, data.tags.concat(parenttags));
-
+					data.datum.at(-2).tags = data.datum.at(-2).tags.map((tag) => tag == 'formula-commemorationis' ? 'commemoratio-finalis' : tag);
+					ret += `<div class="rite-item formula-commemorationis">${makeheadingannotation(usedcommemorations.at(-1)[0] + '.')}${renderinner(data.datum[i], translated, data.tags.concat(parenttags))}${renderinner(data.datum.at(-1), translated, data.tags.concat(parenttags))}</div>`;
+					return ret;
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data.tags.some(tag => trivialchants.includes(tag)))) {
 					ret = `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
 					if (data.tags.includes('hymnus') && data.tags.includes('te-deum')) {
@@ -545,8 +551,6 @@ function render(data, chant) {
 						data.tags.push('textus-psalmi');
 					}
 
-				} else if (uniquelyhasbottom('collecta') && !data.tags.includes('terminatio')) {
-					console.log(data.datum);
 				} else if (data.tags.includes('nocturna')) {
 					if (data.quaesitum.includes('nocturna-i')) {
 						header = makeheader('Nocturnus I.', 'section-header');
