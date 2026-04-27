@@ -28,15 +28,15 @@
 	{
 		"tags":["oratio-sanctae-mariae"],
 		"datum":[
-			"May Holy Mary and all the Saints plead for us with the Lord, that we may worthily be holpen and delivered by Him Who liveth and reigneth for ever and ever.",
+			"May Holy Mary and all the Saints plead for us with the Lord, + that we may worthily be holpen and delivered by Him * Who liveth and reigneth for ever and ever.",
 			"R. Amen."
 		]
 	},
 	{
 		"tags":["gloria-versorum"],
 		"datum":[
-			"Glory be to the Father, and to the Son, and to the Holy Ghost.",
-			"As it was in the beginning, is now, and ever shall be, world without end. Amen."
+			"Glory be to the Father, and to the Son, * and to the Holy Ghost.",
+			"As it was in the beginning, is now, and ever shall be, * world without end. Amen."
 		]
 	},
 	{
@@ -44,44 +44,44 @@
 		"datum":[
 			"Kyrie eleison. Christe eleison. Kyrie eleison.",
 			"",
-			"V. Look upon Thy servants, O Lord, and upon the works of Thine hands, and order the goings of their children.",
-			"R. And let the beauty of the Lord our God be upon us, and establish Thou the work of our hands upon us, yea, the work of our hands, establish Thou it.",
+			"V. Look upon Thy servants, O Lord, and upon the works of Thine hands, * and order the goings of their children.",
+			"R. And let the beauty of the Lord our God be upon us, + and establish Thou the work of our hands upon us, * yea, the work of our hands, establish Thou it.",
 			""
 		]
 	},
 	{
 		"tags":["oratio-dirigere"],
 		"datum":[
-			"O Lord God, King of heaven and earth, may it please Thee this day to order and to hallow, to rule and to govern our hearts and our bodies, our thoughts, our words, and our works, according to Thy law and in the doing of Thy commandments, that we, being holpen of Thee, may here, and for ever and ever, worthily be saved and delivered by Thee, O Saviour of the world,",
+			"O Lord God, King of heaven and earth, may it please Thee this day to order and to hallow, to rule and to govern our hearts and our bodies, + our thoughts, our words, and our works, according to Thy law and in the doing of Thy commandments, * that we, being holpen of Thee, may here, and for ever and ever, worthily be saved and delivered by Thee, O Saviour of the world,",
 			"Who livest and reignest for ever and ever.",
 			"R. Amen."
 		]
 	},
 	{
 		"tags":["officium-capituli","benedictio"],
-		"datum":"The Lord Almighty order our days and deeds in His peace."
+		"datum":"The Lord Almighty order * our days and deeds in His peace."
 	},
 	{
 		"tags":[
 			["officium-capituli","per-annum","temporale","lectio-brevis","lectio"],
 			["officium-capituli","in-tempore-septuagesimae","temporale","lectio-brevis","lectio"]
 		],
-		"datum":"And the Lord direct your hearts into the love of God, and into the patience of Christ."
+		"datum":"And the Lord direct your hearts into the love of God, * and into the patience of Christ."
 	},
 	{
 		"tags":["officium-capituli","in-tempore-adventus","temporale","lectio-brevis","lectio"],
-		"datum":"O Lord, be gracious unto us: for we have waited for Thee: be Thou our arm every morning, our salvation also in the time of trouble."
+		"datum":"O Lord, be gracious unto us: for we have waited for Thee: + be Thou our arm every morning, * our salvation also in the time of trouble."
 	},
 	{
 		"tags":["officium-capituli","in-tempore-quadragesimae","temporale","lectio-brevis","lectio"],
-		"datum":"Seek ye the Lord, while He may be found: call ye upon Him while He is near."
+		"datum":"Seek ye the Lord, while He may be found: * call ye upon Him while He is near."
 	},
 	{
 		"tags":["officium-capituli","in-tempore-passionis","temporale","lectio-brevis","lectio"],
-		"datum":"I hid not my face from shame and spitting. The Lord God will help me, therefore also shall I not be confounded."
+		"datum":"I hid not my face from shame and spitting. + The Lord God will help me, * therefore also shall I not be confounded."
 	},
 	{
 		"tags":["officium-capituli","in-tempore-paschali","temporale","lectio-brevis","lectio"],
-		"datum":"If ye be risen with Christ, seek those things which are above, where Christ sitteth at the right hand of God: set your affections on things above, not on things on the earth."
+		"datum":"If ye be risen with Christ, + seek those things which are above, where Christ sitteth at the right hand of God: * set your affections on things above, not on things on the earth."
 	}
 ]

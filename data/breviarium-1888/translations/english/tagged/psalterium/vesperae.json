@@ -1,40 +1,189 @@
 [
 	{
-		"tags":["vesperae","hora"],
-		"datum":[
-			"",
-			"",
-			"",
-			"",
-			"Thanks be to God."
-		]
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-i","antiphona"],
-		"datum":"The Lord said * to my Lord: sit at my right hand."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-ii","antiphona"],
-		"datum":"Faithful * are all of your commands: confirmed for ever and ever."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-iii","antiphona"],
-		"datum":"Your commands * I have greatly desired."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-iv","antiphona"],
-		"datum":"May the name of the Lord * be blessed forever."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-v","antiphona"],
-		"datum":"We who live, * bless the Lord."
+		"tags":["vesperae","dominica","ii-vesperae","antiphona"],
+		"antiphona-i":"The Lord said * unto my Lord: sit Thou at my right hand.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"All his commandments * are sure; they stand fast for ever and ever.",
+		"antiphona-iii":"In His Commandments * he delighteth greatly.",
+		"antiphona-iv":"Blessed be the Name * of the Lord for evermore.",
+		"antiphona-v":"We that live, * bless the Lord."
 	},
 	{
 		"tags":["vesperae","capitulum","temporale"],
-		"datum":"Blessed be God, and the Father of our Lord Jesus Christ, + the Father of mercies, and God of all consolation, * who consoles us in all our tribulation."
+		"datum":"Blessed be God, even the Father of our Lord Jesus Christ, + the Father of mercies, and the God of all comfort, * Who comforteth us in all our tribulation."
 	},
 	{
 		"tags":["vesperae","temporale","versiculus"],
-		"datum":["Direct my prayer Lord.","Like incense in your presence."]
+		"datum":["V. Let my prayer, O Lord, be set forth.","R. As incense before Thee."]
+	},
+	{
+		"tags":["vesperae","in-tempore-adventus","temporale","versiculus"],
+		"datum":["V. Drop down, ye heavens, from above, and let the skies pour down the Righteous One.","R. Let the earth open, and let her bring forth the Saviour."]
+	},
+	{
+		"tags":["vesperae","in-tempore-quadragesimae","temporale","versiculus"],
+		"datum":["V. God hath given His Angels charge over thee.","R. To keep thee in all thy ways."]
+	},
+	{
+		"tags":["vesperae","in-tempore-passionis","temporale","versiculus"],
+		"datum":["V. Deliver me, O Lord, from the evil man.","R. Preserve me from the wicked man."]
+	},
+	{
+		"tags":["vesperae","in-tempore-paschali","temporale","versiculus"],
+		"datum":["V. Lord, abide with us, Alleluia.","R. For it is toward evening, Alleluia."]
+	},
+	{
+		"tags":["vesperae","feria","feria-ii","antiphona"],
+		"antiphona-i":"The Lord hath inclined * His ear unto me.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"I believed, * therefore have I spoken.",
+		"antiphona-iii":"O praise * the Lord, all ye nations.",
+		"antiphona-iv":"I cried * and He heard me.",
+		"antiphona-v":"From whence cometh * mine help."
+	},
+	{
+		"tags":["vesperae","in-tempore-adventus","feria","capitulum"],
+		"datum":"The sceptre shall not depart from Judah, nor the law-giver from his loins, + until he that shall be sent cometh; * and unto him shall the desire of the Gentiles be."
+	},
+	{
+		"tags":["vesperae","in-tempore-quadragesimae","feria","capitulum"],
+		"datum":"The Priests, the ministers of the Lord, shall weep between the porch and the altar, and shall say: + Spare, O Lord, spare Thy people, * and give not thine heritage to reproach, that the heathen should rule over them."
+	},
+	{
+		"tags":["vesperae","in-tempore-passionis","feria","capitulum"],
+		"datum":"But: O Lord of Sabaoth, That judgest righteously, and triest the reins and the heart, + let me see Thy vengeance on them: * for unto Thee, have I revealed my cause, O Lord my God."
+	},
+	{
+		"tags":["vesperae","in-tempore-paschali","feria","capitulum"],
+		"datum":"Christ, being raised from the dead, dieth no more, death hath no more dominion over Him. + For in that He died, He died unto sin once: * but in that He liveth, He liveth unto God."
+	},
+	{
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-magnificat"],
+		"datum":"My soul doth magnify the Lord, * for God hath regarded my lowliness."
+	},
+	{
+		"tags":["vesperae","preces"],
+		"datum":[]
+	},
+	{
+		"tags":[
+			["vesperae","in-tempore-adventus","feria","preces"],
+			["vesperae","cinerum","feria","preces"],
+			["vesperae","in-tempore-quadragesimae","feria","preces"],
+			["vesperae","in-tempore-passionis","feria","preces"],
+			["vesperae","quatuor-tempora","feria","preces"],
+			["vesperae","vigilia","feria","preces"]
+		],
+		"datum":[
+			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			"",
+			"V. I said: Lord, be merciful unto me.",
+			"R. Heal my sou, for I have sinned against Thee.",
+			"V. Return, O Lord, how long?",
+			"R. And let it repent Thee concerning Thy servants.",
+			"V. Let Thy mercy, O Lord, be upon us.",
+			"R. According as we hope in Thee.",
+			"V. Let Thy priests be clothed with righteousness.",
+			"R. And let Thy Saints shout for joy.",
+			"V. O Lord, save the King.",
+			"R. And hear us in the day when we call upon Thee.",
+			"V. O Lord, save Thy people, and bless Thine inheritance.",
+			"R. And govern them, and lift them up for ever.",
+			"V. Remember Thy congregation.",
+			"R. Which Thou hast purchased of old.",
+			"V. Peace be within thy walls.",
+			"R. And prosperity within thy pallaces.",
+			"V. Let us pray for the Faithful departed.",
+			"R. O Lord, grant them eternal rest, and let the everlasting light shine upon them.",
+			"V. May they rest in peace.",
+			"R. Amen.",
+			"V. Let us pray for our absent brethren.",
+			"R. O Thou, my God, save Thy servants that trust in Thee.",
+			"V. Let us pray for the sorrowful and the captive.",
+			"R. Redeem them, O God of Israël, out of all their troubles.",
+			"V. O Lord, send them help from the sanctuary.",
+			"R. And strengthen them out of Zion.",
+			"V. Hear my prayer, O Lord.",
+			"R. And let my cry come unto Thee.",
+			"",
+			"V. Turn us again, O Lord God of Hosts.",
+			"R. And cause Thy face to shine, and we shall be saved.",
+			"V. Arise, O Christ, and help us.",
+			"R. And deliver us for Thy Name's sake.",
+			""
+		]
+	},
+	{
+		"tags":["vesperae","feria","feria-iii","antiphona"],
+		"antiphona-i":"Let us go * with gladness into the house of the Lord.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"O Thou That dwellest * in the heavens, have mercy upon us.",
+		"antiphona-iii":"Our help * is in the name of the Lord.",
+		"antiphona-iv":"Do good, O Lord, * to the good, and to them that are upright in their hearts.",
+		"antiphona-v":"We were like * them that come again from sickness."
+	},
+	{
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-magnificat"],
+		"datum":"Let my spirit rejoice * in God my Saviour."
+	},
+	{
+		"tags":["vesperae","feria","feria-iv","antiphona"],
+		"antiphona-i":"He shall not be ashamed * when he speaketh with his enemies in the gate.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"Blessed * is every one that feareth the Lord.",
+		"antiphona-iii":"Many a time * have they afflicted me from my youth up.",
+		"antiphona-iv":"Out of the depths * have I cried unto Thee, O Lord.",
+		"antiphona-v":"Let Israël hope * in the Lord."
+	},
+	{
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-magnificat"],
+		"datum":"The Lord hath regarded * my lowliness, and He That is mighty hath done in me great things."
+	},
+	{
+		"tags":["vesperae","feria","feria-v","antiphona"],
+		"antiphona-i":"And all * his meekness.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"Behold, * how good and how pleasant it is for brethren to dwell together in unity.",
+		"antiphona-iii":"Whatsoever * the Lord pleased, that did He.",
+		"antiphona-iv":"For his mercy * endureth for ever.",
+		"antiphona-v":"Sing us one of the songs * of Zion."
+	},
+	{
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-magnificat"],
+		"datum":"O God, * show strength with Thine arm: put down the mighty, and exalt them of low degree."
+	},
+	{
+		"tags":["vesperae","feria","feria-vi","antiphona"],
+		"antiphona-i":"Before the Angels * will I sing praise unto Thee, O my God.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"O Lord, * Thou hast searched me and known me.",
+		"antiphona-iii":"Preserve me, * O Lord, from the wicked man.",
+		"antiphona-iv":"Lord, * I cry unto Thee, hear me.",
+		"antiphona-v":"O Lord, let my portion * be in the land of the living."
+	},
+	{
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-magnificat"],
+		"datum":"He hath put down * the mighty, that persecute His Saints: and hath exalted them of low degree, that confess His Christ."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona"],
+		"antiphona-i":"Blessed * be the Lord my God.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-ii":"Every day * will I bless Thee, O Lord.",
+		"antiphona-iii":"While I live * will I praise the Lord.",
+		"antiphona-iv":"Let the praise of our God * be pleasant.",
+		"antiphona-v":"Praise the Lord, * O Jerusalem."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","capitulum"],
+		"datum":"O the depth of the riches and wisdom and knowledge of God: + how unsearchable are His judgments * and His ways past finding out!"
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","versiculus"],
+		"datum":["V. Let the evening prayer ascend unto Thee, O Lord.","R. And let there descend upon us Thy mercy."]
+	},
+	{
+		"tags":["dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"God hath holpen * His servant Israël: as He spake to Abraham and to his seed, to exalt them of low degree for ever and ever."
 	}
 ]

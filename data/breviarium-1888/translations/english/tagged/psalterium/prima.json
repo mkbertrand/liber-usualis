@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["prima","dominica","antiphona"],
+		"datum":"Alleluia, * alleluia, alleluia."
+	},
+	{
 		"tags":[
 			["prima","capitulum"],
 			["prima","in-tempore-paschali","feria","capitulum"]
@@ -13,8 +17,47 @@
 		"versus":"Thou That sittest at the right hand of the Father."
 	},
 	{
+		"tags":["prima","in-tempore-adventus","responsorium-breve"],
+		"versus":"Thou That art to come into the world."
+	},
+	{
+		"tags":["prima","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Thou Son of the Living God, have mercy on us",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"Thou that art arisen from the dead."
+	},
+	{
+		"tags":[
+			["prima","tempus-mariae","responsorium-breve","versus"],
+			["prima","in-tempore-nativitatis","responsorium-breve","versus"],
+			["prima","nomen-jesu","responsorium-breve","versus"],
+			["prima","infra-octavam-corporis-christi","responsorium-breve","versus"]
+		],
+		"datum":"Thou that wast born of the Virgin Mary."
+	},
+	{
+		"tags":[
+			["prima","per-octavam-epiphaniae","responsorium-breve","versus"],
+			["prima","transfiguratio","responsorium-breve","versus"]
+		],
+		"datum":"Thou That art manifested unto us this day."
+	},
+	{
+		"tags":["prima","in-tempore-ascensionis","responsorium-breve","versus"],
+		"datum":"Thou that art gone up above the stars."
+	},
+	{
+		"tags":["prima","cor-jesus","responsorium-breve","versus"],
+		"datum":"Thou that didst suffer for us."
+	},
+	{
+		"tags":["prima","pentecostes","responsorium-breve","versus"],
+		"datum":"Thou that sittest at the right hand of the Father."
+	},
+	{
 		"tags":["prima","versiculus"],
-		"datum":["V. Arise, O Christ, and help us.","R. And deliver us for Thy Name's sake."]
+		"datum":["V. Arise, O Christ, and help us.","R. And deliver us for Thy Name's sake."],
+		"in-tempore-paschali":["V. Arise, O Christ, and help us, Alleluia.","R. And deliver us for Thy Name's sake, Alleluia."]
 	},
 	{
 		"tags":["prima","preces"],
@@ -46,8 +89,84 @@
 		]
 	},
 	{
+		"tags":[
+			["prima","in-tempore-adventus","feria","preces"],
+			["prima","cinerum","feria","preces"],
+			["prima","in-tempore-quadragesimae","feria","preces"],
+			["prima","in-tempore-passionis","feria","preces"],
+			["prima","quatuor-tempora","feria","preces"],
+			["prima","vigilia","feria","preces"]
+		],
+		"datum":[
+			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			"",
+			"",
+			"V. And unto Thee have I cries, O Lord.",
+			"R. And in the morning shall my prayer come betimes before Thee.",
+			"V. Let my mouth be filled with Thy praise.",
+			"R. That I may sing of Thy glory, all the day long of Thy greatness.",
+			"V. O Lord, hide Thy face from my sins.",
+			"R. And blot out all mine iniquities.",
+			"V. Create in me a clean heart, O God.",
+			"R. And renew a right spirit within me.",
+			"V. Cast me not away from Thy presence.",
+			"R. And take not Thine holy Spirit from me.",
+			"V. Restore unto me the joy of Thy salvation.",
+			"R. And uphold me with Thy free spirit.",
+			"V. Deliver me, O Lord, from the evil man.",
+			"R. And preserve me from the wicked man.",
+			"V. Deliver me from mine enemies, O my God.",
+			"R. And defend me from them that rise up against me.",
+			"V. Deliver me from the workers of iniquity.",
+			"R. And save me from bloody men.",
+			"V. So will I sing unto Thy Name for ever.",
+			"R. That I may daily perform my vows.",
+			"V. Answer us, O God of our salvation.",
+			"R. Who art the confidence of all the ends of the earth, and of them that are afar off upon the sea.",
+			"V. Make haste, O God, to deliver me.",
+			"R. Make haste to help me, O Lord.",
+			"V. Holy God, Holy Mighty, Holy Immortal.",
+			"R. Have mercy on us.",
+			"V. Bless the Lord, O my soul.",
+			"R. And all that is within me, bless His Holy Name.",
+			"V. Bless the Lord, O my soul.",
+			"R. And forget not all his benefits.",
+			"V. Who forgiveth all thine iniquities.",
+			"R. Who healeth all thy diseases.",
+			"V. Who redeemeth thy life from destruction.",
+			"R. Who crowneth thee with loving-kindness and tender mercies.",
+			"V. Who satisfieth thy desire with good things.",
+			"R. Thy youth is renewed like the eagle's.",
+			"",
+			"",
+			"V. Vouchsafe, O Lord, this day.",
+			"R. To keep us without sin.",
+			"V. Have mercy upon us, O Lord.",
+			"R. Have mercy upon us.",
+			"V. O Lord, let Thy mercy lighten upon us.",
+			"R. As our trust is in Thee.",
+			""
+		]
+	},
+	{
 		"tags":["prima","collecta"],
-		"datum":"O Lord God Almighty, Who hast safely brought us to the beginning of this day, defend us in the same with Thy mighty power: and grant that this day we fall into no sin, but that all Our thoughts, words, and works may be ordered by Thy governance to do always that is righteous in Thy sight."
+		"datum":"O Lord God Almighty, Who hast safely brought us to the beginning of this day, + defend us in the same with Thy mighty power: and grant that this day we fall into no sin, but that all Our thoughts, words, * and works may be ordered by Thy governance to do always that is righteous in Thy sight."
+	},
+	{
+		"tags":["prima","in-tempore-paschali","temporale","antiphona"],
+		"datum":"Alleluia, * alleluia, alleluia, alleluia."
+	},
+	{
+		"tags":["prima","feria","antiphona"],
+		"datum":"Blessed * are they that walk in Thy law, O Lord."
+	},
+	{
+		"tags":["prima","in-tempore-quadragesimae","temporale","antiphona"],
+		"datum":"As I live, * saith the Lord, I have no pleasure in the death of the wicked, but rather that he turn from his way and live."
+	},
+	{
+		"tags":["prima","in-tempore-passionis","temporale","antiphona"],
+		"datum":"Deliver me, O Lord, * and set me beside Thee: and any man's hand may fight against me."
 	},
 	{
 		"tags":["prima","feria","capitulum"],

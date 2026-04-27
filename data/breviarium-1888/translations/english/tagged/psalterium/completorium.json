@@ -1,23 +1,24 @@
 [
 	{
 		"tags":["completorium","benedictio"],
-		"datum":"May the Almighty Lord grant us a quiet night and a perfect end."
+		"datum":"May the Almighty Lord grant us * a quiet night and a perfect end."
 	},
 	{
 		"tags":["completorium","lectio"],
-		"datum":"Brethren, be sober, be vigilant: because your adversary the devil as a roaring lion walketh about, seeking whom he may devour: whom resist ye, stedfast in the faith."
+		"datum":"Brethren, be sober, be vigilant: + because your adversary the devil as a roaring lion walketh about, seeking whom he may devour: * whom resist ye, stedfast in the faith."
 	},
 	{
 		"tags":["converte-nos"],
-		"datum":["Turn us, O God of our salvation.","And cause Thine anger toward us to cease."]
+		"datum":["V. Turn us, O God of our salvation.","R. And cause Thine anger toward us to cease."]
 	},
 	{
 		"tags":["completorium","antiphona"],
-		"datum":"Have mercy * upon me, O Lord, and hear my prayer."
+		"datum":"Have mercy * upon me, O Lord, and hear my prayer.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia."
 	},
 	{
 		"tags":["completorium","capitulum"],
-		"datum":"Yet Thou, O Lord, art in the midst of us, and Thine holy Name is called upon us: leave us not, O Lord our God."
+		"datum":"Yet Thou, O Lord, art in the midst of us, + and Thine holy Name is called upon us: * leave us not, O Lord our God."
 	},
 	{
 		"tags":["completorium","responsorium-breve"],
@@ -26,16 +27,24 @@
 		"versus":"Thou hast redeemed us, O Lord God of truth."
 	},
 	{
+		"tags":["completorium","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Into thine hands, O Lord I commend my spirit",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"Thou hast redeemed us, O Lord God of truth."
+	},
+	{
 		"tags":["completorium","versiculus"],
-		"datum":["V. Keep us, O Lord, as the apple of the eye.","R. Hide us under the shadow of Thy wings."]
+		"datum":["V. Keep us, O Lord, as the apple of the eye.","R. Hide us under the shadow of Thy wings."],
+		"in-tempore-paschali":["V. Keep us, O Lord, as the apple of the eye, alleluia.","R. Hide us under the shadow of Thy wings, alleluia."]
 	},
 	{
 		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
-		"datum":"O Lord, keep us * waking, guard us sleeping: that we may wake with Christ and rest in peace."
+		"datum":"O Lord, keep us * waking, guard us sleeping: that we may wake with Christ and rest in peace.",
+		"in-tempore-paschali":"O Lord, keep us * waking, guard us sleeping: that we may wake with Christ and rest in peace, alleluia."
 	},
 	{
 		"tags":["completorium","collecta"],
-		"datum":"Visit, we beseech Thee, O Lord, this habitation, and drive far from it all snares of the enemy: let Thine holy Angels dwell herein, to keep us in peace, and may Thy blessing be always upon us."
+		"datum":"Visit, we beseech Thee, O Lord, this habitation, and drive far from it all snares of the enemy: + let Thine holy Angels dwell herein, to keep us in peace, * and may Thy blessing be always upon us."
 	},
 	{
 		"tags":["completorium","preces"],

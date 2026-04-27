@@ -1,0 +1,125 @@
+[
+	{
+		"tags":["tertia","dominica","per-annum","antiphona"],
+		"datum":"Alleluia, * alleluia, alleluia."
+	},
+	{
+		"tags":["tertia","dominica","per-annum","capitulum"],
+		"datum":"God is love: + and he that dwelleth in love dwelleth in God, * and God in him."
+	},
+	{
+		"tags":["tertia","dominica","responsorium-breve"],
+		"incipit":"Incline mine heart O God",
+		"responsum":"Unto Thy testimonies.",
+		"versus":"Turn away mine eyes from beholding vanity: quicken Thou me in Thy way."
+	},
+	{
+		"tags":["tertia","dominica","versiculus"],
+		"datum":["V. I said, Lord, be merciful unto me.","R. Heal my soul, for I have sinned against Thee."]
+	},
+	{
+		"tags":["tertia","feria","antiphona"],
+		"datum":"Lead me * in the path of Thy commandments, O Lord."
+	},
+	{
+		"tags":["tertia","feria","capitulum"],
+		"datum":"Heal me, O Lord, and I shall be healed: + save me, and I shall be saved: * for Thou art my praise."
+	},
+	{
+		"tags":["tertia","feria","responsorium-breve"],
+		"incipit":"Heal my soul",
+		"responsum":"For I have sinned against Thee.",
+		"versus":"I said, Lord, be merciful unto me."
+	},
+	{
+		"tags":["tertia","feria","versiculus"],
+		"datum":["V. Be Thou mine Helper, neither leave me,","R. Nor forsake me, O God of my salvation."]
+	},
+	{
+		"tags":["tertia","in-tempore-adventus","feria","capitulum"],
+		"datum":"Behold, the days come, saith the Lord, + that I will raise unto David a righteous branch: and a King shall reign in wisdom, * and shall execute judgment and justice in the earth."
+	},
+	{
+		"tags":["tertia","in-tempore-adventus","temporale","responsorium-breve"],
+		"incipit":"Come and save us",
+		"responsum":"O Lord God of hosts.",
+		"versus":"Cause Thy face to shine, and we shall be saved."
+	},
+	{
+		"tags":["tertia","in-tempore-adventus","temporale","versiculus"],
+		"datum":["V. The heathen shall fear Thy Name, O Lord.","R. And all the kings of the earth Thy glory."]
+	},
+	{
+		"tags":["tertia","in-tempore-quadragesimae","feria","antiphona"],
+		"datum":"Behold now hath arrived * the day of repentance, to redeem sins, and save souls."
+	},
+	{
+		"tags":["tertia","in-tempore-quadragesimae","feria","capitulum"],
+		"datum":"Turn ye to Me with all your heart, with fasting, and with weeping, and with mourning. + And rend your heart and not your garments, * saith the Lord almighty."
+	},
+	{
+		"tags":["tertia","in-tempore-quadragesimae","temporale","responsorium-breve"],
+		"incipit":"He hath delivered me",
+		"responsum":"From the snare of the fowler.",
+		"versus":"And from the noisome pestilence."
+	},
+	{
+		"tags":["tertia","in-tempore-quadragesimae","temporale","versiculus"],
+		"datum":["V. He shall cover thee with His wings.","R. And under His feathers shalt thou trust."]
+	},
+	{
+		"tags":["tertia","in-tempore-passionis","feria","antiphona"],
+		"datum":"Lord, Thou hast judged * the cause of my soul. Thou hast redeemed my life, O Lord my God."
+	},
+	{
+		"tags":["tertia","in-tempore-passionis","feria","capitulum"],
+		"datum":"Lord, all that forsake Thee shall be ashamed: + they that depart from Thee shall be written in the earth: * because they have forsaken the Lord, the fountain of living waters."
+	},
+	{
+		"tags":["tertia","in-tempore-passionis","temporale","responsorium-breve"],
+		"incipit":"Deliver from the sword",
+		"responsum":"My soul, O God.",
+		"versus":"And my darling from the power of the dog."
+	},
+	{
+		"tags":["tertia","in-tempore-passionis","temporale","versiculus"],
+		"datum":["V. O Lord, save me from the lion's mouth.","R. And mine affliction from the horns of the unicorns."]
+	},
+	{
+		"tags":["tertia","in-tempore-paschali","temporale","antiphona"],
+		"datum":"Alleluia, * alleluia, alleluia, alleluia."
+	},
+	{
+		"tags":["tertia","in-tempore-paschali","feria","capitulum"],
+		"datum":"Christ, being raised from the dead, dieth no more, death hath no more dominion over Him. + For in that He died, He died unto sin once; * but in that He liveth, He liveth unto God."
+	},
+	{
+		"tags":["tertia","in-tempore-paschali","temporale","responsorium-breve"],
+		"incipit":"The Lord is risen from the grave",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"Who hung for us upon the tree."
+	},
+	{
+		"tags":["tertia","in-tempore-paschali","temporale","versiculus"],
+		"datum":["V. The Lord is risen indeed, Alleluia.","R. And hath appeared to Simon, Alleluia."]
+	},
+	{
+		"tags":[
+			["tertia","in-tempore-adventus","feria","preces"],
+			["tertia","cinerum","feria","preces"],
+			["tertia","in-tempore-quadragesimae","feria","preces"],
+			["tertia","in-tempore-passionis","feria","preces"],
+			["tertia","quatuor-tempora","feria","preces"],
+			["tertia","vigilia","feria","preces"]
+		],
+		"datum":[
+			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			"",
+			"V. Turn us again, O Lord God of hosts.",
+			"R. And cause Thy face to shine, and we shall be saved.",
+			"V. Arise, O Christ, and help us.",
+			"R. And deliver us for Thy Name's sake.",
+			""
+		]
+	}
+]

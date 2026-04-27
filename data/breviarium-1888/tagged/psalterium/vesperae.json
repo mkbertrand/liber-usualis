@@ -100,12 +100,12 @@
 		"datum":[["/psalmi/magnificat,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-i","antiphona"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/12551",
 		"datum":"Dixit Dóminus * Dómino meo: Sede a dextris meis."
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","in-tempore-paschali"],
 		"src":"gregobase/2622",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -114,7 +114,7 @@
 		"datum":[["/psalmi/psalmus-cix,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-ii","antiphona"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-ii"],
 		"src":"gregobase/4144",
 		"datum":"Fidélia * ómnia mandáta ejus: confirmáta in sǽculum sǽculi."
 	},
@@ -123,7 +123,7 @@
 		"datum":[["/psalmi/psalmus-cx,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-iii","antiphona"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/4340",
 		"datum":"In mandátis * ejus cupit nimis."
 	},
@@ -132,7 +132,7 @@
 		"datum":[["/psalmi/psalmus-cxi,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-iv","antiphona"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-iv"],
 		"src":"gregobase/11989",
 		"datum":"Sit nomen Dómini * benedíctum in sǽcula."
 	},
@@ -141,7 +141,7 @@
 		"datum":[["/psalmi/psalmus-cxii,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-v","antiphona"],
+		"tags":["vesperae","dominica","ii-vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/4316",
 		"datum":"Nos qui vívimus, * benedícimus Dómino."
 	},
@@ -236,12 +236,12 @@
 		"datum":["V. Mane nobíscum Dómine, allelúja.","R. Quóniam advesperáscit, allelúja."]
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-i","antiphona"],
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-i"],
 		"src":"gregobase/2022",
 		"datum":"Inclinávit * Dóminus aurem suam mihi."
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","feria","feria-ii","antiphona","in-tempore-paschali"],
 		"src":"gregobase/2822",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -250,7 +250,7 @@
 		"datum":[["/psalmi/psalmus-cxiv,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-ii","antiphona"],
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-ii"],
 		"src":"fcc/vepaf2a2",
 		"datum":"Crédidi, * propter quod locútus sum."
 	},
@@ -259,7 +259,7 @@
 		"datum":[["/psalmi/psalmus-cxv,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-iii","antiphona"],
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-iii"],
 		"src":"gregobase/8234",
 		"datum":"Laudáte * Dóminum omnes gentes."
 	},
@@ -268,7 +268,7 @@
 		"datum":[["/psalmi/psalmus-cxvi,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-iv","antiphona"],
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-iv"],
 		"src":"fcc/vepaf2a4",
 		"datum":"Clamávi, * et exaudívit me."
 	},
@@ -277,7 +277,7 @@
 		"datum":[["/psalmi/psalmus-cxix,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-v","antiphona"],
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-v"],
 		"src":"fcc/vepaf2a5",
 		"datum":"Unde véniet * auxílium mihi."
 	},
@@ -313,7 +313,7 @@
 		"datum":"[Rom. 6. b.]/Christus resúrgens ex mórtuis jam non móritur, mors illi ultra non dominábitur. + Quod enim mórtuus est peccáto, mórtuus est semel: * quod autem vivit, vivit Deo."
 	},
 	{
-		"tags":["vesperae","feria","feria-ii","antiphona-magnificat","antiphona"],
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-magnificat"],
 		"src":"gregobase/13046",
 		"datum":"Magníficat * ánima mea Dóminum, quia respéxit Deus humilitátem meam."
 	},
@@ -370,12 +370,12 @@
 		]
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-i","antiphona"],
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-i"],
 		"src":"fcc/vepaf3a1",
 		"datum":"In domum Dómini * lætántes íbimus."
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","feria","feria-iii","antiphona","in-tempore-paschali"],
 		"src":"fcc/vepxf3a1",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -384,7 +384,7 @@
 		"datum":[["/psalmi/psalmus-cxxi,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-ii","antiphona"],
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-ii"],
 		"src":"gregobase/2292",
 		"datum":"Qui hábitas * in cœlis, miserére nobis."
 	},
@@ -393,7 +393,7 @@
 		"datum":[["/psalmi/psalmus-cxxii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-iii","antiphona"],
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-iii"],
 		"src":"gregobase/2426",
 		"datum":"Adjutórium * nostrum in nómine Dómini."
 	},
@@ -402,7 +402,7 @@
 		"datum":[["/psalmi/psalmus-cxxiii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-iv","antiphona"],
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-iv"],
 		"src":"fcc/vepaf3a4",
 		"datum":"Bénefac * Dómine bonis, et rectis corde."
 	},
@@ -411,7 +411,7 @@
 		"datum":[["/psalmi/psalmus-cxxiv,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-v","antiphona"],
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-v"],
 		"src":"fcc/vepaf3a5",
 		"datum":"Facti sumus * sicut consoláti."
 	},
@@ -431,17 +431,17 @@
 		]
 	},
 	{
-		"tags":["vesperae","feria","feria-iii","antiphona-magnificat","antiphona"],
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-magnificat"],
 		"src":"fcc/vepaf3ma",
 		"datum":"Exsúltet * spíritus meus in Deo salutári meo."
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-i","antiphona"],
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-i"],
 		"src":"fcc/vepaf4a1",
 		"datum":"Non confundétur * cum loquétur inimícis suis in porta."
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","feria","feria-iv","antiphona","in-tempore-paschali"],
 		"src":"fcc/vepxf4a1",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -450,7 +450,7 @@
 		"datum":[["/psalmi/psalmus-cxxvi,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-ii","antiphona"],
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-ii"],
 		"src":"gregobase/2266",
 		"datum":"Beáti * omnes, qui timent Dóminum."
 	},
@@ -459,7 +459,7 @@
 		"datum":[["/psalmi/psalmus-cxxvii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-iii","antiphona"],
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-iii"],
 		"src":"fcc/vepaf4a3",
 		"datum":"Sæpe * expugnavérunt me a juventúte mea."
 	},
@@ -468,7 +468,7 @@
 		"datum":[["/psalmi/psalmus-cxxviii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-iv","antiphona"],
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-iv"],
 		"src":"gregobase/2316",
 		"datum":"De profúndis * clamávi ad te Dómine."
 	},
@@ -477,7 +477,7 @@
 		"datum":[["/psalmi/psalmus-cxxix,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-v","antiphona"],
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-v"],
 		"src":"fcc/vepaf4a5",
 		"datum":"Speret * Ísraël in Dómino."
 	},
@@ -497,17 +497,17 @@
 		]
 	},
 	{
-		"tags":["vesperae","feria","feria-iv","antiphona-magnificat","antiphona"],
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12810",
 		"datum":"Respéxit * Dóminus humilitátem meam, et fecit in me magna, qui potens est."
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-i","antiphona"],
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-i"],
 		"src":"fcc/vepaf5a1",
 		"datum":"Et omnis * mansuetúdinis ejus."
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","feria","feria-v","antiphona","in-tempore-paschali"],
 		"src":"fcc/vepxf5a1",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -516,7 +516,7 @@
 		"datum":[["/psalmi/psalmus-cxxxi,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-ii","antiphona"],
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-ii"],
 		"src":"gregobase/2540",
 		"datum":"Ecce * quam bonum, et quam jucúndum habitáre fratres in unum."
 	},
@@ -525,7 +525,7 @@
 		"datum":[["/psalmi/psalmus-cxxxii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-iii","antiphona"],
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-iii"],
 		"src":"fcc/vepaf5a3",
 		"datum":"Omnia * quæcúmque vóluit Dóminus fecit."
 	},
@@ -534,7 +534,7 @@
 		"datum":[["/psalmi/psalmus-cxxxiv,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-iv","antiphona"],
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-iv"],
 		"src":"fcc/vepaf5a4",
 		"datum":"Quóniam in ætérnum * misericórdia ejus."
 	},
@@ -543,7 +543,7 @@
 		"datum":[["/psalmi/psalmus-cxxxv,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-v","antiphona"],
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-v"],
 		"src":"fcc/vepaf5a5",
 		"datum":"Hymnum cantáte * nobis de cánticis Sion."
 	},
@@ -563,17 +563,17 @@
 		]
 	},
 	{
-		"tags":["vesperae","feria","feria-v","antiphona-magnificat","antiphona"],
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-magnificat"],
 		"src":"fcc/vepaf5ma",
 		"datum":"Fac Deus * poténtiam in bráchio tuo: dispérde supérbos, et exálta húmiles."
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-i","antiphona"],
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-i"],
 		"src":"fcc/vepaf6a1",
 		"datum":"In conspéctu * Angelórum psallam tibi Deus meus."
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","feria","feria-vi","antiphona","in-tempore-paschali"],
 		"src":"fcc/vepxf6a1",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -582,7 +582,7 @@
 		"datum":[["/psalmi/psalmus-cxxxvii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-ii","antiphona"],
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-ii"],
 		"src":"gregobase/2222",
 		"datum":"Dómine * probásti me, et cognovísti me."
 	},
@@ -591,7 +591,7 @@
 		"datum":[["/psalmi/psalmus-cxxxviii,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-iii","antiphona"],
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-iii"],
 		"src":"fcc/vepaf6a3",
 		"datum":"A viro iníquo * líbera me Dómine."
 	},
@@ -600,7 +600,7 @@
 		"datum":[["/psalmi/psalmus-cxxxix,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-iv","antiphona"],
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-iv"],
 		"src":"gregobase/2040",
 		"datum":"Dómine * clamávi ad te, exaúdi me."
 	},
@@ -609,7 +609,7 @@
 		"datum":[["/psalmi/psalmus-cxl,gloria"]]
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-v","antiphona"],
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-v"],
 		"src":"fcc/vepaf6a5",
 		"datum":"Pórtio mea * Dómine sit in terra vivéntium."
 	},
@@ -629,17 +629,17 @@
 		]
 	},
 	{
-		"tags":["vesperae","feria","feria-vi","antiphona-magnificat","antiphona"],
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-magnificat"],
 		"src":"fcc/vepaf6ma",
 		"datum":"Depósuit * poténtes, sanctos persequéntes: et exaltávit húmiles, Christum confiténtes."
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona-i","antiphona"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-i"],
 		"src":"fcc/vepaf7a1",
 		"datum":"Benedíctus * Dóminus Deus meus."
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona-i","antiphona","in-tempore-paschali"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","in-tempore-paschali"],
 		"src":"fcc/vepxf7a1",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
@@ -648,7 +648,7 @@
 		"datum":[["/psalmi/psalmus-cxliii,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona-ii","antiphona"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-ii"],
 		"src":"fcc/vepaf7a2",
 		"datum":"Per síngulos dies * benedícam te Dómine."
 	},
@@ -657,7 +657,7 @@
 		"datum":[["/psalmi/psalmus-cxliv,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona-iii","antiphona"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/13276",
 		"datum":"Laudábo * Deum meum in vita mea."
 	},
@@ -666,7 +666,7 @@
 		"datum":[["/psalmi/psalmus-cxlv,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona-iv","antiphona"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-iv"],
 		"src":"gregobase/12013",
 		"datum":"Deo nostro * jucúnda sit laudátio."
 	},
@@ -675,7 +675,7 @@
 		"datum":[["/psalmi/psalmus-cxlvi,gloria"]]
 	},
 	{
-		"tags":["vesperae","dominica","i-vesperae","antiphona-v","antiphona"],
+		"tags":["vesperae","dominica","i-vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/12844",
 		"datum":"Lauda * Jerúsalem Dóminum."
 	},
@@ -702,7 +702,7 @@
 		"datum":["V. Vespertína orátio ascéndat ad te Dómine.","R. Et descéndat super nos misericórdia tua."]
 	},
 	{
-		"tags":["dominica","i-vesperae","antiphona-magnificat","antiphona"],
+		"tags":["dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2564",
 		"datum":"Suscépit * Deus Ísraël púerum suum: sicut locútus est ad Abraham, et semen ejus: exaltáre húmiles usque in sǽculum."
 	}

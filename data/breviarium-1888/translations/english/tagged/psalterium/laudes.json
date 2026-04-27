@@ -1,0 +1,198 @@
+[
+	{
+		"tags":["laudes","dominica","per-annum","antiphona","antiphona-i"],
+		"datum":"Alleluia, * alleluia."
+	},
+	{
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-i"],
+		"datum":"Alleluia, * alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia."
+	},
+	{
+		"tags":["laudes","dominica","per-annum","antiphona","antiphona-ii"],
+		"datum":"The Three Children, * by the command of the king, were cast into the furnace, fearing not the flame of the fire, but saying: Blessed be God!"
+	},
+	{
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-ii"],
+		"datum":"Christ is risen * from the grave, even He That delivered the Three Children from the burning fiery furnace, Alleluia."
+	},
+	{
+		"tags":["laudes","dominica","per-annum","antiphona","antiphona-iii"],
+		"datum":"Alleluia, * alleluia, alleluia."
+	},
+	{
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-iii"],
+		"datum":"Alleluia, * alleluia, alleluia."
+	},
+	{
+		"tags":["laudes","dominica","capitulum"],
+		"datum":"Blessing, and glory, and wisdom, and thanksgiving, + and honour, and power, and might be unto our God * for ever and ever. Amen."
+	},
+	{
+		"tags":["laudes","dominica","versiculus"],
+		"datum":["V. The Lord reigneth, He is clothed with majesty.","R. The Lord is clothed with strength, and hath girded Himself with power."]
+	},
+	{
+		"tags":["laudes","in-tempore-adventus","temporale","versiculus"],
+		"datum":["V. The voice of one crying in the wilderness: Prepare ye the way of the Lord.","R. Make His paths straight."]
+	},
+	{
+		"tags":["laudes","in-tempore-septuagesimae","dominica","versiculus"],
+		"datum":["V. Lord, Thou hast been our refuge.","R. In all generations."]
+	},
+	{
+		"tags":["laudes","in-tempore-quadragesimae","temporale","versiculus"],
+		"datum":["V. God hath given His Angels charge over thee.","R. To keep thee in all thy ways."]
+	},
+	{
+		"tags":["laudes","in-tempore-passionis","temporale","versiculus"],
+		"datum":["V. Deliver me from mine enemies, O my God.","R. And defend me from them that rise up against me."]
+	},
+	{
+		"tags":["laudes","in-tempore-paschali","temporale","versiculus"],
+		"datum":["V. In Thy rising O Christ, Alleluia.","R. Let the heavens and the earth be glad, Alleluia."]
+	},
+	{
+		"tags":["laudes","feria","feria-ii","antiphona"],
+		"antiphona-i":"Have mercy * upon me, O God.",
+		"antiphona-ii":"Consider * my supplication, O Lord.",
+		"antiphona-iii":"O God, Thou art my God, * early will I seek Thee.",
+		"antiphona-iv":"Thine anger is turned away, * and Thou comfortest me.",
+		"antiphona-v":"Praise ye * the Lord from the heavens."
+	},
+	{
+		"tags":["laudes","feria","capitulum"],
+		"datum":"The night is far spent, the day is at hand: + let us therefore cast off the works of darkness, and let us put on the armour of light: * let us walk honestly as in the day."
+	},
+	{
+		"tags":["laudes","feria","versiculus"],
+		"datum":["V. Thou hast satisfied us early with Thy mercy.","R. We rejoice and are glad."]
+	},
+	{
+		"tags":["laudes","in-tempore-adventus","feria","capitulum"],
+		"datum":"Come ye, and let us go up to the mountain of the Lord, and to the house of the God of Jacob: + and He will teach us of His ways, and we will walk in His paths, * for out of Zion shall go forth the law, and the word of the Lord from Jerusalem."
+	},
+	{
+		"tags":["laudes","in-tempore-quadragesimae","feria","capitulum"],
+		"datum":"Cry aloud, spare not; lift up thy voice like a trumpet, + and show My people their transgressions, * and the house of Jacob their sins."
+	},
+	{
+		"tags":["laudes","in-tempore-passionis","feria","capitulum"],
+		"datum":"Come, let us put wood into his bread, + and let us cut him off from the land of the living, * that his name may be no more remembered."
+	},
+	{
+		"tags":["laudes","in-tempore-paschali","feria","capitulum"],
+		"datum":"Christ, being raised from the dead, dieth no more, death hath no more dominion over Him. + For in that He died, He died unto sin once: * but in that He liveth, He liveth unto God."
+	},
+	{
+		"tags":["laudes","feria","feria-ii","antiphona","antiphona-benedictus"],
+		"datum":"Blessed * be the Lord God of Israël."
+	},
+	{
+		"tags":[
+			["laudes","in-tempore-adventus","feria","preces"],
+			["laudes","cinerum","feria","preces"],
+			["laudes","in-tempore-quadragesimae","feria","preces"],
+			["laudes","in-tempore-passionis","feria","preces"],
+			["laudes","quatuor-tempora","feria","preces"],
+			["laudes","vigilia","feria","preces"]
+		],
+		"datum":[
+			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			"",
+			"V. I said: Lord, be merciful unto me.",
+			"R. Heal my soul, for I have sinned against Thee.",
+			"V. Return, O Lord, how long?",
+			"R. And let it repent Thee concerning Thy servants.",
+			"V. Let Thy mercy, O Lord, be upon us.",
+			"R. According as we hope in Thee.",
+			"V. Let Thy priests be clothed with righteousness.",
+			"R. And let Thy saints shout for joy.",
+			"V. O Lord, save the King.",
+			"R. And hear us in the day when we call upon Thee.",
+			"V. O Lord, save Thy people, and bless Thine inheritance.",
+			"R. And govern them, and lift them up for ever.",
+			"V. Remember Thy congregation.",
+			"R. Which Thou hast purchased of old.",
+			"V. Peace be within thy walls.",
+			"R. And prosperity within thy palaces.",
+			"V. Let us pray for the faithful departed.",
+			"R. O Lord, grant them eternal rest, and let the everlasting light shine upon them!",
+			"V. May they rest in peace.",
+			"R. Amen.",
+			"V. Let us pray for our absent brethren.",
+			"R. O Thou my God, save Thy servants that trust in Thee.",
+			"V. Let us pray for the sorrowful and the captives.",
+			"R. Redeem them, O God of Israël, out of all their troubles.",
+			"V. O Lord, send them help from the sanctuary.",
+			"R. And strengthen them out of Zion.",
+			"V. Hear my prayer, O Lord.",
+			"R. And let my cry come unto Thee.",
+			"",
+			"V. Turn us again, O Lord God of Hosts.",
+			"R. And cause Thy face to shine, and we shall be saved.",
+			"V. Arise, O Christ, and help us.",
+			"R. And deliver us for Thy Name's sake.",
+			""
+		]
+	},
+	{
+		"tags":["laudes","feria","feria-iii","antiphona"],
+		"antiphona-i":"O Lord, * blot out my transgressions.",
+		"antiphona-ii":"The health * of my countenance, and my God.",
+		"antiphona-iii":"Early * will I seek Thee, O God.",
+		"antiphona-iv":"Save us * all the days of our life, O Lord.",
+		"antiphona-v":"Praise ye * the Lord."
+	},
+	{
+		"tags":["laudes","feria","feria-iii","antiphona","antiphona-benedictus"],
+		"datum":"The Lord hath raised up * an horn of salvation for us, in the house of His servant David."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona"],
+		"antiphona-i":"Wash me * thoroughly from mine iniquity, O Lord.",
+		"antiphona-ii":"Praise becometh Thee, * O God, in Zion.",
+		"antiphona-iii":"O my God, * my lips shall praise Thee while I live.",
+		"antiphona-iv":"The Lord shall judge * the ends of the earth.",
+		"antiphona-v":"Praise God, * ye heavens of heavens."
+	},
+	{
+		"tags":["laudes","feria","feria-iv","antiphona","antiphona-benedictus"],
+		"datum":"O Lord, save us * from the hand of all that hate us."
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona"],
+		"antiphona-i":"Against Thee, Thee only, * have I sinned, have mercy upon me, O Lord!",
+		"antiphona-ii":"Lord, * Thou hast been our refuge.",
+		"antiphona-iii":"I meditate * upon Thee in the night watches.",
+		"antiphona-iv":"Let us sing * gloriously unto the Lord.",
+		"antiphona-v":"Praise God * in His Sanctuary."
+	},
+	{
+		"tags":["laudes","feria","feria-v","antiphona","antiphona-benedictus"],
+		"datum":"Let us serve the Lord * in holiness, and He will deliver us from our enemies."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona"],
+		"antiphona-i":"Uphold mine heart * with Thy free spirit, O God.",
+		"antiphona-ii":"In thy faithfulness, * answer me, O Lord.",
+		"antiphona-iii":"O Lord, * cause Thy face to shine upon us.",
+		"antiphona-iv":"O Lord I have heard * Thy speech, and was afraid.",
+		"antiphona-v":"Praise God * with the timbrel and dance."
+	},
+	{
+		"tags":["laudes","feria","feria-vi","antiphona","antiphona-benedictus"],
+		"datum":"Through the tender mercy of our God * the day-spring from on high hath visited us."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona"],
+		"antiphona-i":"Do good, * O Lord, in Thy good pleasure.",
+		"antiphona-ii":"It is a good thing * to give thanks unto the Lord.",
+		"antiphona-iii":"Let all the ends * of the earth fear the Lord.",
+		"antiphona-iv":"Ascribe ye greatness * unto our God.",
+		"antiphona-v":"Praise God * upon the loud cymbals."
+	},
+	{
+		"tags":["laudes","feria","sabbatum","antiphona","antiphona-benedictus"],
+		"datum":"Give light, O Lord, * unto them that sit in darkness, and guide our feet into the way of peace, O Thou God of Israël!"
+	}
+]
