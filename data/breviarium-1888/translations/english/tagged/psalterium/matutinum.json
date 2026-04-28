@@ -64,7 +64,7 @@
 	},
 	{
 		"tags":["matutinum","dominica","nocturna-i","antiphona","antiphona-iii"],
-		"datum":"Thou shalt keep us, * O Lord, and preserve us."
+		"datum":"Thou, O Lord, * shalt keep us, and preserve us."
 	},
 	{
 		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-i","antiphona","antiphona-iii"],
@@ -73,6 +73,311 @@
 	{
 		"tags":["matutinum","dominica","nocturna-i","versiculus"],
 		"datum":["V. I have remembered Thy name, O Lord, in the night.","R. And have kept Thy law."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-adventus","dominica","nocturna-i","versiculus"],
+			["matutinum","in-tempore-adventus","temporale","feria-ii","versiculus"],
+			["matutinum","in-tempore-adventus","temporale","feria-v","versiculus"]
+		],
+		"datum":["V. Out of Zion, the Perfection of beauty.","R. Our God shall come manifestly."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-quadragesimae","dominica","nocturna-i","versiculus"],
+			["matutinum","in-tempore-quadragesimae","temporale","feria-ii","versiculus"],
+			["matutinum","in-tempore-quadragesimae","temporale","feria-v","versiculus"]
+		],
+		"datum":["V. He hath delivered me from the snare of the fowler.","R. And from the noisome pestilence."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-passionis","dominica","nocturna-i","versiculus"],
+			["matutinum","in-tempore-passionis","temporale","feria-ii","versiculus"],
+			["matutinum","in-tempore-passionis","temporale","feria-v","versiculus"]
+		],
+		"datum":["V. O God, deliver my soul from the sword.","R. And my darling from the power of the dog."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-paschali","dominica","nocturna-i","versiculus"],
+			["matutinum","in-tempore-paschali","temporale","feria-ii","versiculus"],
+			["matutinum","in-tempore-paschali","temporale","feria-v","versiculus"]
+		],
+		"datum":["V. The Lord is risen from the grave, Alleluia.","R. Who hung for us upon the tree, Alleluia."]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Of my goods, * Thou hast no need; in Thee do I put my trust, preserve me, O Lord."
+	},
+	{
+		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Rejoice greatly, * O daughter of Jerusalem: behold, thy King cometh into thee, O Zion; fear not, for thy salvation cometh quickly."
+	},
+	{
+		"tags":["matutinum","in-tempore-paschali","dominica","nocturna-ii","antiphona"],
+		"datum":"Alleluia, * woman, whom seekest thou? Alleluia, the Living among the dead? Alleluia, alleluia."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"By the words * of Thy lips I have kept me to strait paths."
+	},
+	{
+		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Our King * Christ cometh, Whom John preached, saying; Behold the Lamb That should come!"
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"I will love Thee, * O Lord, my strength."
+	},
+	{
+		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Behold, I come * quickly, saith the Lord, and My reward is with Me, to give every man according to his work shall be."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-ii","versiculus"],
+		"datum":["V. For Thou lightest my candle, O Lord.","R. My God, enlighten my darkness."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-adventus","dominica","nocturna-ii","versiculus"],
+			["matutinum","in-tempore-adventus","temporale","feria-iii","versiculus"],
+			["matutinum","in-tempore-adventus","temporale","feria-vi","versiculus"]
+		],
+		"datum":["V. Send forth the Lamb, O Lord, the ruler of the land.","R. From the Rock of the wilderness unto the mount of the daughter of Zion."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-quadragesimae","dominica","nocturna-ii","versiculus"],
+			["matutinum","in-tempore-quadragesimae","temporale","feria-iii","versiculus"],
+			["matutinum","in-tempore-quadragesimae","temporale","feria-vi","versiculus"]
+		],
+		"datum":["V. He shall cover thee with His wings.","R. And under His feathers shalt thou trust."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-passionis","dominica","nocturna-ii","versiculus"],
+			["matutinum","in-tempore-passionis","temporale","feria-iii","versiculus"],
+			["matutinum","in-tempore-passionis","temporale","feria-vi","versiculus"]
+		],
+		"datum":["V. O Lord, save me from the lion's mouth.","R. And mine affliction from the horns of the unicorns."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-paschali","dominica","nocturna-ii","versiculus"],
+			["matutinum","in-tempore-paschali","temporale","feria-iii","versiculus"],
+			["matutinum","in-tempore-paschali","temporale","feria-vi","versiculus"]
+		],
+		"datum":["V. The Lord is risen indeed, Alleluia.","R. And hath appeared unto Simon, Alleluia."]
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"There is no speech * nor language where their voice is not heard."
+	},
+	{
+		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"The Angel Gabriel * spake unto Mary, saying: Hail, thou that art full of grace, the Lord is with thee: blessed art thou among women."
+	},
+	{
+		"tags":["matutinum","in-tempore-paschali","dominica","nocturna-iii","antiphona"],
+		"datum":"Alleluia, * Weep not, Mary, Alleluia: the Lord is risen, Alleluia, alleluia."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"The Lord hear thee * in the day of trouble"
+	},
+	{
+		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Mary said: * What manner of salutation is this? My soul is troubled. Shall I bear the King? And will He not break the seal of my virginity?"
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"O Lord, * the king shall joy in Thy strength."
+	},
+	{
+		"tags":["matutinum","in-tempore-adventus","dominica","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"In the coming * of the King, the Most High, let the hearts of men be purified to go forth to meet Him, for, behold, He will come and will not tarry."
+	},
+	{
+		"tags":["matutinum","dominica","nocturna-iii","versiculus"],
+		"datum":["V. Be Thou exalted, O Lord, in Thine own strength.","R. We will sing and praise Thy power."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-adventus","dominica","nocturna-iii","versiculus"],
+			["matutinum","in-tempore-adventus","temporale","feria-iv","versiculus"],
+			["matutinum","in-tempore-adventus","temporale","sabbatum","versiculus"]
+		],
+		"datum":["V. The Lord cometh out of His holy place.","R. He will come and save His people."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-quadragesimae","dominica","nocturna-iii","versiculus"],
+			["matutinum","in-tempore-quadragesimae","temporale","feria-iv","versiculus"],
+			["matutinum","in-tempore-quadragesimae","temporale","sabbatum","versiculus"]
+		],
+		"datum":["V. His truth shall be thy shield.","R. Thou shalt not be afraid for the terror by night."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-passionis","dominica","nocturna-iii","versiculus"],
+			["matutinum","in-tempore-passionis","temporale","feria-iv","versiculus"],
+			["matutinum","in-tempore-passionis","temporale","sabbatum","versiculus"]
+		],
+		"datum":["V. Take not away my soul with sinners, O God!","R. Nor my life with bloody men."]
+	},
+	{
+		"tags":[
+			["matutinum","in-tempore-paschali","dominica","nocturna-iii","versiculus"],
+			["matutinum","in-tempore-paschali","temporale","feria-iv","versiculus"],
+			["matutinum","in-tempore-paschali","temporale","sabbatum","versiculus"]
+		],
+		"datum":["V. The disciples were glad, Alleluia.","R. When they saw the Lord, Alleluia."]
+	},
+	{
+		"tags":["per-annum","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"One Seraph cried unto another:",
+		"responsum-i":"Holy, Holy, Holy is the Lord God of hosts:",
+		"responsum-ii":"The whole earth is full of His glory.",
+		"versus":"There are Three That bear record in heaven, the Father, the Word, and the Holy Ghost: and these Three are One."
+	},
+	{
+		"tags":["hymnus","te-deum"],
+		"datum":[
+			"We praise Thee, O God: * we acknowledge Thee to be the Lord.",
+			"All the earth doth worship Thee, * the Father everlasting.",
+			"To Thee all Angels cry aloud, * the heavens, and all the Powers therein.",
+			"To Thee Cherubim and Seraphim * continually do cry:",
+			"Holy, * Holy, * Holy, * Lord God of Sabaoth.",
+			"Heaven and earth are full * of the majesty of Thy glory.",
+			"The glorious company of the Apostles * praise Thee:",
+			"The goodly fellowship of the Prophets * praise Thee:",
+			"The white-robed army of Martyrs * praise Thee:",
+			"The holy Church throughout all the world * doth acknowledge Thee:",
+			"The Father * of an infinite Majesty:",
+			"Thine honurable, true, * and only Son:",
+			"Also the Holy Ghost, * the Comforter.",
+			"Thou art the King of glory, * O Christ!",
+			"Thou art the everlasting Son * of the Father.",
+			"When Thou tookest upon thee to deliver man, * Thou didst not abhor the Virgin's womb:",
+			"When Thou hadst overcome the sharpness of death, * Thou didst open the kingdom of heaven to all believers:",
+			"Thou sittest at the right hand of God, * in the glory of the Father:",
+			"We believe that Thou shalt come * to be our Judge:",
+			"We therefore pray Thee, help Thy servants, * whom Thou hast redeemed with Thy precious Blood.",
+			"Make them to be numbered with Thy Saints * in glory everlasting.",
+			"O Lord, save Thy people, * and bless Thine inheritance.",
+			"Govern them, * and lift them up for ever.",
+			"Day by day * we magnify Thee;",
+			"And we worship Thy name, * ever world without end.",
+			"Vouchsafe, O Lord, this day, * to keep us without sin.",
+			"Have mercy upon us, O Lord, * have mercy on us.",
+			"O Lord, let Thy mercy lighten upon us, * as our trust is in Thee.",
+			"O Lord, in Thee have I trusted: * let me never be confounded."
+		]
+	},
+	{
+		"tags":["matutinum","in-tempore-paschali","feria","antiphona","antiphona-invitatorium"],
+		"datum":"Alleluia, alleluia, * Alleluia."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","antiphona"],
+		"antiphona-invitatorium":"O come, * Let us sing unto the Lord.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-i":"The Lord is the defence * of my life.",
+		"antiphona-ii":"Worship * the Lord in His holy courts.",
+		"antiphona-iii":"In Thy righteousness * deliver me.",
+		"antiphona-iv":"For the unrighteous is deserved, * praise.",
+		"antiphona-v":"Fight against them * that fight against me.",
+		"antiphona-vi":"Show * thy way unto the Lord."
+	},
+	{
+		"tags":["matutinum","feria","feria-ii","versiculus"],
+		"datum":["V. Thy mercy, O Lord, is in the heavens.","R. And thy faithfulness reacheth unto the clouds."]
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","antiphona"],
+		"antiphona-invitatorium":"Let us make a joyful noise to * The God of our salvation.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-i":"That I sin not * with my tongue.",
+		"antiphona-ii":"Heal * my soul, O Lord, for I have sinned against Thee.",
+		"antiphona-iii":"Mine heart is overflowing * with a good matter.",
+		"antiphona-iv":"Our help * in troubles.",
+		"antiphona-v":"Great is the Lord, * and greatly to be praised.",
+		"antiphona-vi":"The God of gods, * even the Lord, hath spoken."
+	},
+	{
+		"tags":["matutinum","feria","feria-iii","versiculus"],
+		"datum":["V. Offer unto God the sacrifice of praise.","R. And pay thy vows unto the Most High."]
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","antiphona"],
+		"antiphona-invitatorium":"In Thy hand, O Lord, * are the inmost depths of the earth.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-i":"God bringeth back * the captivity of His people.",
+		"antiphona-ii":"Because * my soul trusteth in Thee.",
+		"antiphona-iii":"Judge uprightly, * O ye sons of men.",
+		"antiphona-iv":"Give us * help from trouble, O Lord.",
+		"antiphona-v":"Upon God, doth not * my soul wait?",
+		"antiphona-vi":"O bless * our God, ye people."
+	},
+	{
+		"tags":["matutinum","feria","feria-iv","versiculus"],
+		"datum":["V. O God, I have declared my life unto Thee.","R. Thou hast put my tears in Thy sight."]
+	},
+	{
+		"tags":["matutinum","feria","feria-v","antiphona"],
+		"antiphona-invitatorium":"It is the Lord That hath made us: * O come, let us worship Him.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-i":"O Lord God, * make haste to deliver me.",
+		"antiphona-ii":"Be Thou to me * my God, my protector.",
+		"antiphona-iii":"Thou hast redeemed the rod * of Thine inheritance.",
+		"antiphona-iv":"And we will call * upon Thy name, O Lord.",
+		"antiphona-v":"Thou art the God * That doest wonders.",
+		"antiphona-vi":"Be merciful * unto our sins, O Lord."
+	},
+	{
+		"tags":["matutinum","feria","feria-v","versiculus"],
+		"datum":["V. My lips shall be fain when I sing unto Thee.","R. And my soul, which Thou hast redeemed."]
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","antiphona"],
+		"antiphona-invitatorium":"Let us worship the Lord, * For He is our Maker.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-i":"Sing aloud * unto God our strength.",
+		"antiphona-ii":"Thou alone * art the Most High over all the earth.",
+		"antiphona-iii":"Thou hast been favourable, * O Lord, unto Thy land.",
+		"antiphona-iv":"Her foundation * is in the holy mountains.",
+		"antiphona-v":"Blessed * be the Lord for evermore.",
+		"antiphona-vi":"Sing * unto the Lord, and bless His name."
+	},
+	{
+		"tags":["matutinum","feria","feria-vi","versiculus"],
+		"datum":["V. Let my prayer come before Thee, O Lord.","R. Incline Thine ear unto my cry."]
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona"],
+		"antiphona-invitatorium":"O come, let us worship * The Lord our God.",
+		"in-tempore-paschali":"Alleluia, * alleluia, alleluia.",
+		"antiphona-i":"For marvellous things * hath the Lord done.",
+		"antiphona-ii":"Make a joyful noise * unto God, all ye lands."
+	},
+	{
+		"tags":[
+			["matutinum","feria","sabbatum","vigilia-nativitatis","antiphona","antiphona-ii"],
+			["matutinum","feria","sabbatum","pro-bmv-sabbato","antiphona","antiphona-ii"]
+		],
+		"datum":"It is good * to praise to the Lord."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","antiphona"],
+		"antiphona-iii":"Let my cry * come unto Thee, O God.",
+		"antiphona-iv":"Bless * the Lord, O my soul!",
+		"antiphona-v":"Visit us * with Thy salvation, O Lord.",
+		"antiphona-vi":"I will praise the Lord * greatly with my mouth."
+	},
+	{
+		"tags":["matutinum","feria","sabbatum","versiculus"],
+		"datum":["V. Hear my prayer, O Lord.","R. And let my cry come unto Thee."]
 	},
 	{
 		"tags":["invitatorium","in-tempore-passionis","temporale"],
