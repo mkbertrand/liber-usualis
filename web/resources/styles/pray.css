@@ -280,7 +280,11 @@
 
 /* Formatting for specific items */
 .aperi-domine, .sacrosanctae {
-	font-size: 14px !important;
+	font-size: 16px !important;
+}
+
+.aperi-domine.rite-text-translation, .sacrosanctae.rite-text-translation {
+	font-size: 12px !important;
 }
 
 .aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .oratio-sanctae-mariae::first-letter, .formula-lectionis::first-letter {

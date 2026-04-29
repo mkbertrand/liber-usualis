@@ -115,9 +115,12 @@ def kalendar2(book) -> Kalendar:
 
 	movables = []
 	octaveagenda = []
+	deferred_entries = []
 	# Sanctorals
 	entries = copy.deepcopy(sanctoral)
 	for entry in entries:
+		if 'dominica-infra-octavam' in entry['occurrence']:
+			deferred_entries.append(entry)
 		matches = None
 		if type(entry['occurrence']) is list:
 			matches = []
@@ -139,6 +142,11 @@ def kalendar2(book) -> Kalendar:
 
 	for i in octaveagenda:
 		octavate(i[0], i[1])
+
+	# Deferred Kalendar entries
+	for entry in deferred_entries:
+		for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
+			kal.add_entry(kal.match_unique(entry['occurrence']).date, tagset)
 
 	# Nativity & Epiphany
 	for entry in nativitycycle:

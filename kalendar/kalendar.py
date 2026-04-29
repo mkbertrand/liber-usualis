@@ -403,10 +403,13 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 	kal.add_entry(date(year, 1, 13), {'epiphania','dies-octava','duplex-minus','per-octavam-epiphaniae'})
 
 	octaveagenda = []
+	deferred_entries = []
 	# Kalendar (of Saints)
 	entries = copy.deepcopy(kalendarium)
 	for entry in entries:
 		matches = None
+		if 'dominica-infra-octavam' in entry['occurrence']:
+			deferred_entries.append(entry)
 		if type(entry['occurrence']) is list:
 			matches = []
 			for i in entry['occurrence']:
@@ -420,10 +423,14 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 				if 'habens-octavam' in tagset and 'octava-excepta' not in tagset:
 					octaveagenda.append((match_date + timedelta(days=offset), tagset))
 
-
 	# Do Octave stuff after since there may be manually entered days within Octaves or Octave-Days
 	for i in octaveagenda:
 		octavate(i[0], i[1])
+
+	# Deferred Kalendar entries
+	for entry in deferred_entries:
+		for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
+			kal.add_entry(kal.match_unique(entry['occurrence']).date, tagset)
 
 	# Movables
 	entries = copy.deepcopy(movables)

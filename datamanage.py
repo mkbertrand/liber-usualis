@@ -130,8 +130,6 @@ def getname(book, tagset, pile):
 def getdisplaykalendar(book):
 	ret = dict(sorted(display.kalendar(book).items()))
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
-	kalendar = load_data('kalendarium/kalendarium.json', book)
-	kalendar.extend(load_data('kalendarium/in-tempore-nativitatis.json', book))
 
 	kalendar = display.kalendar2(book)
 	for entry in kalendar:

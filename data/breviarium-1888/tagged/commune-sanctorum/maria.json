@@ -76,18 +76,25 @@
 		"in-tempore-paschali":["V. Dignáre me laudáre te, Virgo sacráta, allelúja.","R. Da mihi virtútem contra hostes tuos, allelúja."]
 	},
 	{
-		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2321",
-		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.",
-		"in-tempore-paschali":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem, allelúja."
-	},
-	{
 		"tags":[
+			["maria","i-vesperae","antiphona","antiphona-magnificat"],
 			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
 			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
 		],
 		"src":"gregobase/2321",
-		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam commemoratiónem."
+		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant N..",
+		"in-tempore-paschali":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant, allelúja."
+	},
+	{
+		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat","n"],
+		"datum":"tuam sanctam festivitátem"
+	},
+	{
+		"tags":[
+			["maria","suffragium","vesperae","antiphona","antiphona-magnificat","n"],
+			["maria","suffragium","laudes","antiphona","antiphona-benedictus","n"]
+		],
+		"datum":"tuam sanctam commemoratiónem"
 	},
 	{
 		"tags":["maria","suffragium","versiculus"],

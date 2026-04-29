@@ -293,12 +293,12 @@ function render(data, chant) {
 								ret += renderedsplit[i] + '<br>';
 								annotationoffset++;
 							} else {
-								ret += renderedsplit[i] + (translationsplit[i - annotationoffset] == '' ? '' : `<br><span class="rite-text-translation">${translationsplit[i - annotationoffset]}</span><br>`);
+								ret += renderedsplit[i] + (translationsplit[i - annotationoffset] == '' ? '' : `<br><span class="rite-text-translation ${parenttags.join(' ')}">${translationsplit[i - annotationoffset]}</span><br>`);
 							}
 						}
 						return ret;
 					}
-					return stringrender(data) + (translated == '' ? '<br>' : `<br><span class="rite-text-translation">${stringrender(translated, true)}</span><br>`);
+					return stringrender(data) + (translated == '' ? '<br>' : `<br><span class="rite-text-translation ${parenttags.join(' ')}">${stringrender(translated, true)}</span><br>`);
 				} else {
 					return stringrender(data) + '<br>';
 				}
