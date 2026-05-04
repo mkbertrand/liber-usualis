@@ -1,11 +1,25 @@
 [
 	{
 		"tags":["margarita-scotiae","nomen"],
-		"datum":"S. Margaritæ Reginæ Scotiæ"
+		"datum":"S. Margaritæ Reginæ Scotiæ Viduæ"
 	},
 	{
 		"tags":["margarita-scotiae","collecta"],
 		"datum":"Deus, qui beátam Margarítam regínam exímia in paúperes caritáte mirábilem effecísti: + da; ut ejus intercessióne et exémplo, * tua in córdibus nostris cáritas júgiter augeátur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["margarita-scotiae","antiphona-invitatorium","n"],
+		"datum":"Margarítæ"
+	},
+	{
+		"tags":["margarita-scotiae","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["margarita-scotiae","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Margaríta, Scotórum regína, patérno Ángliæ regum, matérno Cǽsarum sánguine claríssima, illústrior adhuc fuit christiána virtúte. Hæc in Hungária nata, ubi pater tunc témporis exsulábat, post exáctam summa cum pietáte puerílem ætátem, una cum genitóre, qui a sancto Eduárdo pátruo, Anglórum rege, ad patérni regni fastígium vocabátur, in Ángliam venit. Mox alternánte paréntum fortúna, ex Ángliæ líttore solvens, vi tempestátis expúlsa, seu vérius divínæ providéntiæ consílio dedúcta est in oram marítimam Scótiæ. Ibi cum ex matris império Malchólmo tértio Scotórum regi, egrégiis ejus dótibus capto, nupsísset, sanctimóniæ ac pietátis opéribus trigínta, quibus regnávit annis, toti regno mirífice prófuit.",
+		"lectio-ii":"Inter regáles delícias corpus afflictatiónibus, ac vigíliis mácerans, magnam noctis partem piis precatiónibus extrahébat. Præter ália jejúnia, quæ idéntidem usurpábat, íntegros quadragínta dies ante natalítia festa tanta cum severitáte jejúnare consuévit, ut ne in gravíssimis quidem dolóribus intermíserit. Divíno cúltui addictíssima, templa plúrima et cœnóbia partim ex íntegro excitávit, partim resarcívit, et sacra supelléctili, ac largo censu ditávit. Regem cónjugem ad meliórem frugem, et ad simília suis exercitatiónibus ópera salubérrimo exémplo tradúxit, liberósque omnes tam sancte et felíciter educávit, ut eórum pleríque quemádmodum et Ágatha mater, et Christína soror, sanctíssimum vitæ genus ampléxi sint. Univérsi demum regni felicitáti cónsulens, a vítiis ómnibus, quæ furtim irrépserant, pópulos expurgávit, eísque mores christiána pietáte dignos restítuit.",
+		"lectio-iii":"Nihil tamen æque in illa mirábile fuit, ac flagrantíssima cáritas erga próximos, præsértim egénos, quorum numerósis grégibus non modo stipem áffatim suppeditáre, verum étiam trecéntis quotídie matérna benignitáte dapes præbére, flexis génibus in morem ancíllæ ministráre, régiis mánibus pedes ablúere, et pressis étiam ósculis úlcera fovére, solémne hábuit. His porro aliísque piis súmptibus non régias tantum vestes, et pretiósa monília distráxit; sed ipsum non semel exhaúsit ærárium. Tolerátis demum ad patiéntiæ miráculum acerbíssimis dolóribus, ánimam seméstri córporis ægrotatióne purgátam Auctóri suo quarto Idus Júnii réddidit. Quo témporis moménto fácies ejus diutúrni morbi mácie ac pallóre fœdáta, insólita quadam venustáte reflóruit. Miris étiam post mortem prodígiis clara, et Cleméntis décimi auctoritáte in Scótiæ patrónam accépta, ubíque terrárum religiosíssime cólitur."
 	}
 ]
