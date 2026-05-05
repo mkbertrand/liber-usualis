@@ -9,7 +9,7 @@
 	},
 	{
 		"tags":["commemoratio-pauli","capitulum"],
-		"datum":"Bonum certámen certávi, cursum consummávi, fidem servávi. + In réliquo repósita est mihi coróna justítiæ, * quam reddet mihi Dóminus in illa die justus judex."
+		"datum":"[II. Tim. 4. b.]/Bonum certámen certávi, cursum consummávi, fidem servávi. + In réliquo repósita est mihi coróna justítiæ, * quam reddet mihi Dóminus in illa die justus judex."
 	},
 	{
 		"tags":["commemoratio-pauli","vesperae","hymnus"],
@@ -35,16 +35,61 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["commemoratio-pauli","matutinum","antiphona"],
+		"nocturna-i":[["conversio-pauli","matutinum","nocturna-i","antiphona"]],
+		"nocturna-ii":[["conversio-pauli","matutinum","nocturna-ii","antiphona"]],
+		"nocturna-iii":[["conversio-pauli","matutinum","nocturna-iii","antiphona"]]
+	},
+	{
+		"tags":["commemoratio-pauli","matutinum","responsorium"],
+		"nocturna-i":[["conversio-pauli","matutinum","nocturna-i","responsorium"]],
+		"nocturna-ii":[["conversio-pauli","matutinum","nocturna-ii","responsorium"]],
+		"nocturna-iii":[["conversio-pauli","matutinum","nocturna-iii","responsorium"]]
+	},
+	{
+		"tags":["commemoratio-pauli","matutinum","nocturna-iii","responsorium","responsorium-ii","formula"],
+		"datum":[["duplex-responsum"]]
+	},
+	{
+		"tags":["commemoratio-pauli","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 13.]/Erant autem in Ecclésia, quæ erat Antiochíæ, prophétæ, et doctóres, in quibus Bárnabas, et Simon, qui vocabátur Niger, et Lúcius Cyrenénsis, et Mánahen, qui erat Heródis Tetrárchæ collactáneus, et Saulus. Ministrántibus autem illis Dómino, et jejunántibus, dixit illis Spíritus sanctus: Segregáte mihi Saulum et Bárnabam in opus, ad quod assúmpsi eos. Tunc jejunántes, et orántes, imponentésque eis manus, dimisérunt illos. Et ipsi quidem missi a Spíritu sancto abiérunt Seleucíam; et inde navigavérunt Cyprum."
+		],
+		"lectio-ii":"Et cum veníssent Salamínam, prædicábant verbum Dei in synagógis Judæórum. Habébant autem et Joánnem in ministério. Et cum perambulássent univérsam ínsulam usque Paphum, invenérunt quemdam virum magum pseudoprophétam, Judǽum, cui nomen erat Barjésu, qui erat cum procónsule Sérgio Paulo viro prudénte. Hic, accersítis Bárnaba, et Saulo, desiderábat audíre verbum Dei. Resistébat autem illis Élymas magus, (sic enim interpretátur nomen ejus) quærens avértere procónsulem a fide.",
+		"lectio-iii":"Saulus autem, qui et Paulus, replétus Spíritu sancto, íntuens in eum, dixit: O plene omni dolo, et omni fallácia, fili diáboli, inimíce omnis justítiæ, non désinis subvértere vias Dómini rectas. Et nunc ecce manus Dómini super te, et eris cæcus, non videns solem usque ad tempus. Et conféstim cécidit in eum calígo, et ténebræ, et circúiens quærébat qui ei manum daret. Tunc procónsul cum vidísset factum, crédidit admírans super doctrína Dómini. Et cum a Papho navigássent Paulus, et qui cum eo erant, venérunt Pergen Pamphýliæ. Joánnes autem discédens ab eis, revérsus est Jerosólymam."
+	},
+	{
+		"tags":["commemoratio-pauli","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex libro sancti Augustíni Epíscopi de grátia et líbero arbítrio.",
+			"[Cap. 6.]/Apóstolus Paulus, quem certe invénimus sine ullis méritis bonis, imo cum multis méritis malis, Dei grátiam consecútum, reddéntis bona pro malis, videámus quid dicat, sua jam propinquánte passióne, scribens ad Timótheum: Ego enim jam ímmolor, inquit, et tempus resolutiónis meæ instat. Bonum certámen certávi, cursum consummávi, fidem servávi. Ista útique jam mérita sua bona commémorat: ut post bona mérita consequátur corónam, qui post mérita mala consecútus est grátiam. Dénique atténdite quid sequátur: Súperest, inquit, mihi coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex. Cui rédderet corónam justus judex, si non donásset grátiam miséricors pater? Et quómodo esset ista coróna justítiæ, nisi præcessísset grátia, quæ justíficat ímpium? Quómodo ista débita redderétur, nisi prius illa gratúita donarétur?"
+		],
+		"lectio-ii":"Proínde considerémus ipsa mérita Apóstoli Pauli, quibus dixit corónam redditúrum júdicem justum: et videámus utrum mérita ipsíus, tamquam ipsíus, id est, ex ipso ei comparáta, an dona sint Dei. Bonum, inquit, certámen certávi, cursum consummávi, fidem servávi. Primo ista bona ópera, si non ea præcessíssent cogitatiónes bonæ, nulla essent. Atténdite ítaque quid de ipsis cogitatiónibus dicat. Ait enim scribens ad Corínthios: Non quia idónei sumus cogitáre áliquid a nobis, tamquam a nobismetípsis; sed sufficiéntia nostra ex Deo est. Deínde síngula inspiciámus.",
+		"lectio-iii":"Bonum, inquit, certámen certávi. Quæro qua virtúte certáverit: utrum quæ illi ex semetípso fúerit, an quæ désuper data sit? Sed absit, ut tantus doctor ignoráverit legem Dei, cujus vox est in Deuteronómio: Ne dicas in corde tuo: Fortitúdo mea et poténtia manus meæ fecit mihi virtútem magnam hanc, sed memoráberis Dómini Dei tui, quia ipse tibi dat fortitúdinem fácere virtútem. Quid autem prodest bonum certámen, nisi sequátur victória? Et quis dat victóriam, nisi ille, de quo dicit ipse: Grátias Deo, qui dat nobis victóriam per Dóminum nostrum Jesum Christum?"
+	},
+	{
+		"tags":["commemoratio-pauli","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 10. b.]/In illo témpore: Dixit Jesus discípulis suis: Ecce ego mitto vos sicut oves in médio lupórum. Et réliqua.",
+			"Homilía sancti Joánnis Chrysóstomi.",
+			"[Homilia 34. in Matth., longe post init.]/Sic dícere vidétur: Nolíte turbári, si cum vos inter lupos mitto, tamquam oves et colúmbas esse júbeo. Nam etsi possum contrárium quoque præstáre, et non permíttere ut grave áliquid patiámini, nec lupis tamquam oves subjécti sitis, sed effícere ut leónibus terribilióres evadátis: tamen sic éxpedit fíeri: hoc et vos quoque illustrióres fáciet, et meam declarábit virtútem. Sic enim póstea dixit Paulo: Súfficit tibi grátia mea: nam virtus mea in infirmitáte perfícitur. Ipse ígitur vos ut tales essétis feci."
+		],
+		"lectio-ii":"Sed inspiciámus quam prudéntiam éxigit: serpéntis certe: Nam quemádmodum serpens totum seípsum tradit, nec mínimum curat, si ipsum quoque corpus incídi necésse sit, dúmmodo caput suum íntegrum servet: eódem tu quoque modo, præter fidem cétera pérdere non cures, sive pecúnias, sive corpus, sive étiam vitam ipsam profúndere necésse sit. Fides enim caput est et radix: qua serváta, etiámsi ómnia perdas, ómnia tamen rursus majóre cum glória recuperábis. Idcírco nec símplices solum jussit esse, nec prudéntes solum; sed ambo hæc in unum míscuit, ut ea in virtútem convertántur.",
+		"lectio-iii":"Quod si rebus ipsis id ita fíeri vidére desíderas, lege Áctuum Apostolórum librum: perspícies profécto, cum sæpe Judæórum pópulus in Apóstolos insurréxerit, ac dentes exacúerit, illos colúmbæ simplicitátem imitándo, et cum decénti modéstia respondéndo, iram ipsórum superásse, furórem exstinxísse, ímpetum retardásse. Nam cum illi dícerent: Nonne præcipiéndo præcépimus vobis, ne docerétis in nómine isto? quamvis innúmera possent édere mirácula, nihil tamen ásperum neque dixérunt, neque fecérunt; sed summa cum mansuetúdine respondéntes dicébant: Si justum est vos audíre magis quam Deum, judicáte. Perspexísti simplicitátem colúmbæ, vide nunc serpéntis prudéntiam. Non enim póssumus, ínquiunt, nos quæ vídimus et audívimus, non loqui."
+	},
+	{
 		"tags":["commemoratio-pauli","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["conversio-pauli","laudes","antiphona","antiphona-benedictus"]]
 	},
 	{
 		"tags":["commemoratio-pauli","sexta","capitulum"],
-		"datum":"Ne magnitúdo revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet. + Propter quod ter Dóminum rogávi, ut discéderet a me: * et dixit mihi: Súfficit tibi grátia mea."
+		"datum":"[II. Cor. 12. b.]/Ne magnitúdo revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet. + Propter quod ter Dóminum rogávi, ut discéderet a me: * et dixit mihi: Súfficit tibi grátia mea."
 	},
 	{
 		"tags":["commemoratio-pauli","nona","capitulum"],
-		"datum":"Ego enim sum mínimus Apostolórum, qui non sum dignus vocári Apóstolus, quóniam persecútus sum Ecclésiam Dei. + Grátia autem Dei sum id, quod sum, * et grátia ejus in me vácua non fuit."
+		"datum":"[I. Cor. 15. b.]/Ego enim sum mínimus Apostolórum, qui non sum dignus vocári Apóstolus, quóniam persecútus sum Ecclésiam Dei. + Grátia autem Dei sum id, quod sum, * et grátia ejus in me vácua non fuit."
 	},
 	{
 		"tags":["commemoratio-pauli","ii-vesperae","antiphona"],

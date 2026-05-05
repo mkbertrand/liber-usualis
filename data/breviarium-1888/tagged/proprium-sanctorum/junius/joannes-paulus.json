@@ -6,7 +6,7 @@
 	{
 		"tags":["joannes-paulus","i-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2220",
-		"datum":"Asistérunt * justi ante Dóminum, et ab ínvicem non sunt separáti: cálicem Dómini bibérunt, et amíci Dei appelláti sunt."
+		"datum":"Astitérunt * justi ante Dóminum, et ab ínvicem non sunt separáti: cálicem Dómini bibérunt, et amíci Dei appelláti sunt."
 	},
 	{
 		"tags":["joannes-paulus","collecta"],
@@ -37,6 +37,26 @@
 		"tags":["joannes-paulus","antiphona","antiphona-v"],
 		"src":"gregobase/2364",
 		"datum":"Joánnes et Paulus * dixérunt ad Gallicánum: Fac votum Deo cœli, et eris victor mélius quam fuísti."
+	},
+	{
+		"tags":["joannes-paulus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Isti sunt duo viri misericórdiæ, qui assístunt ante Dóminum,",
+		"responsum":"Dominatórem univérsæ terræ.",
+		"versus":"Isti sunt duæ olívæ, et duo candelábra lucéntia ante Dóminum."
+	},
+	{
+		"tags":["joannes-paulus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"datum":[["apostolus","nocturna-ii","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["joannes-paulus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Joánnes et Paulus fratres Románi, cum facultátibus a Constántia Constantíni fília, cui pie fidelitérque servíerant, sibi relíctis, Christi paúperes álerent, a Juliáno Apóstata in númerum familiárium suórum invitáti, líbere negavérunt se apud eum esse velle, qui a Jesu Christo defecísset. Quibus ille ad deliberándum decem dies præfínit, ut nisi ad eam diem ei adhærére, et Jovi sacrificáre constitúerint, sibi moriéndum esse certo sciant.",
+		"lectio-ii":"Illi intra id tempus réliqua sua bona distribuérunt paupéribus, quo expeditióres ad Dóminum migráre possent, et plures juvárent, a quibus in ætérna tabernácula reciperéntur. Die décima Terentiánus prætóriæ cohórtis præféctus, ad eos missus, cum alláta Jovis effígie, ut eam veneraréntur, imperatóris mandátum eis expónit: ut nisi Jovi cultum adhíbeant, moriántur. Qui ut erant orántes, respondérunt, se pro Christi fide, quem Deum mente et ore venerabántur, non dubitánter mortem subitúros.",
+		"lectio-iii":"At Terentiánus véritus, ne si públice interficeréntur, pópulus commoverétur, domi ubi tunc erant, abscíssis eórum capítibus, sexto Kaléndas Júlii secréto eos sepeliéndos curávit: rumorémque sparsit, Joánnem et Paulum in exsílium ejéctos esse. Verum eórum mors a spirítibus immúndis, qui multórum córpora vexábant, pervulgáta est: in quibus Terentiáni fílius et ipse oppréssus a dǽmone, ad sepúlchrum Mártyrum perdúctus, liberátus est. Quo miráculo et is in Christum crédidit, et ejus pater Terentiánus, a quo étiam horum beatórum Mártyrum vita scripta esse dícitur."
+	},
+	{
+		"tags":["joannes-paulus","matutinum","nocturna-iii","lectio"],
+		"datum":[["martyres","alia-homilia-iii","lectio"]]
 	},
 	{
 		"tags":["joannes-paulus","laudes","antiphona","antiphona-benedictus"],

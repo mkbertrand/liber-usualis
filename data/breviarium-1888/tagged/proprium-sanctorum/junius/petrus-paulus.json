@@ -34,7 +34,7 @@
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","capitulum"],
-		"datum":"Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. + Occídit autem Jacóbum fratrem Joánnis gládio. * Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
+		"datum":"[Act. 12.]/Misit Heródes rex manus, ut afflígeret quosdam de Ecclésia. + Occídit autem Jacóbum fratrem Joánnis gládio. * Videns autem quia placéret Judǽis, appósuit ut apprehénderet et Petrum."
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","vesperae","hymnus"],
@@ -57,6 +57,101 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Áctibus Apostolórum.",
+			"[Act. 3.]/Petrus autem et Joánnes ascendébant in templum ad horam oratiónis nonam. Et quidam vir, qui erat claudus ex útero matris suæ, bajulabátur: quem ponébant quotídie ad portam templi, quæ dícitur Speciósa, ut péteret eleemósynam ab introëúntibus in templum. Is cum vidísset Petrum et Joánnem incipiéntes introíre in templum, rogábat ut eleemósynam accíperet. Íntuens autem in eum Petrus cum Joánne, dixit: Réspice in nos. At ille intendébat in eos, sperans se áliquid acceptúrum ab eis."
+		]
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Simon Petre, ántequam de navi vocárem te, novi te, et super plebem meam príncipem te constítui:",
+		"responsum":"Et claves regni cœlórum trádidi tibi.",
+		"versus":"Quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"Petrus autem dixit: Argéntum et aurum non est mihi: quod autem hábeo, hoc tibi do: In nómine Jesu Christi Nazaréni surge, et ámbula. Et apprehénsa manu ejus déxtera, allevávit eum, et prótinus consolidátæ sunt bases ejus, et plantæ. Et exsíliens stetit, et ambulábat: et intrávit cum illis in templum ámbulans, et exsíliens, et laudans Deum. Et vidit omnis pópulus eum ambulántem, et laudántem Deum. Cognoscébant autem illum, quod ipse erat, qui ad eleemósynam sedébat ad Speciósam portam templi: et impléti sunt stupóre et éxtasi in eo, quod contígerat illi."
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Si díligis me, Simon Petre, pasce oves meas. Dómine tu nosti quia amo te,",
+		"responsum":"Et ánimam meam pono pro te.",
+		"versus":"Si oportúerit me mori tecum, non te negábo."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Cum tenéret autem Petrum, et Joánnem, cucúrrit omnis pópulus ad eos ad pórticum, quæ appellátur Salomónis, stupéntes. Videns autem Petrus, respóndit ad pópulum: Viri Israëlítæ, quid mirámini in hoc, aut nos quid intuémini, quasi nostra virtúte aut potestáte fecérimus hunc ambuláre? Deus Ábraham, et Deus Ísaac, et Deus Jacob, Deus patrum nostrórum glorificávit Fílium suum Jesum, quem vos quidem tradidístis, et negástis ante fáciem Piláti, judicánte illo dimítti. Vos autem sanctum, et justum negástis, et petístis virum homicídam donári vobis: auctórem vero vitæ interfecístis, quem Deus suscitávit a mórtuis, cujus nos testes sumus. Et in fide nóminis ejus, hunc, quem vos vidístis, et nostis, confirmávit nomen ejus: et fides, quæ per eum est, dedit íntegram sanitátem istam in conspéctu ómnium vestrum."
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Tu es Petrus, et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam:",
+		"responsum":"Et tibi dabo claves regni cœlórum.",
+		"versus":"Quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Leónis Papæ.",
+			"[Sermone 1. in natali Apost. Petri et Pauli.]/Ómnium quidem sanctárum solemnitátum, dilectíssimi, totus mundus est párticeps, et uníus fídei píetas éxigit, ut quidquid pro salúte universórum gestum recólitur, commúnibus ubíque gaúdiis celebrétur. Verúmtamen hodiérna festívitas, præter illam reveréntiam, quam toto terrárum orbe proméruit, speciáli et própria nostræ Urbis exsultatióne veneránda est, ut ubi præcipuórum Apostolórum glorificátus est éxitus, ibi in die martýrii eórum sit lætítiæ principátus. Isti enim sunt viri, per quos tibi Evangélium Christi Roma resplénduit, et quæ eras magístra erróris, facta es discípula veritátis."
+		]
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Dómine, si tu es, jube me veníre ad te super aquas.",
+		"responsum":"Et exténdens manum apprehéndit eum, et dixit Jesus: Módicæ fídei, quare dubitásti?",
+		"versus":"Cumque vidísset ventum válidum veniéntem, tímuit: et cum cœpísset mergi, clamávit dicens: Dómine salvum me fac."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Isti sunt patres tui, veríque pastóres, qui te regnis cœléstibus inseréndam multo mélius multóque felícius condidérunt, quam illi, quorum stúdio prima mœ\u0301nium tuórum fundaménta locáta sunt: ex quibus is, qui tibi nomen dedit, fratérna te cæde fœdávit. Isti sunt, qui te ad hanc glóriam provexérunt, ut gens sancta, pópulus eléctus, cívitas sacerdotális et régia, per sacram beáti Petri Sedem caput orbis effécta, látius præsidéres religióne divína, quam dominatióne terréna. Quamvis enim multis aucta victóriis, jus impérii tui terra maríque protúleris: minus tamen est, quod tibi béllicus labor súbdidit, quam quod pax christiána subjécit."
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Surge Petre, et índue te vestiméntis tuis, áccipe fortitúdinem ad salvándas Gentes:",
+		"responsum":"Quia cecidérunt caténæ de mánibus tuis.",
+		"versus":"Ángelus Dómini ástitit, et lumen refúlsit in habitáculo cárceris, percussóque látere Petri excitávit eum, dicens: Surge velóciter."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Dispósito namque divínitus óperi máxime congruébat, ut multa regna uno confœderaréntur império, et cito pérvios habéret pópulos prædicátio generális, quos uníus tenéret régimen civitátis. Hæc autem cívitas ignórans suæ provectiónis auctórem, cum pene ómnibus dominarétur géntibus, ómnium géntium serviébat erróribus: et magnam sibi videbátur assumpsísse religiónem, quia nullam respuébat falsitátem. Unde quantum erat per diábolum tenácius illigáta, tantum per Christum est mirabílius absolúta."
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Tu es pastor óvium, princeps Apostolórum: tibi trádidit Deus ómnia regna mundi:",
+		"responsum":"Et ídeo tibi tráditæ sunt claves regni cœlórum.",
+		"versus":"Quodcúmque ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 16. b.]/In illo témpore: Venit Jesus in partes Cæsaréæ Philíppi: et interrogábat discípulos suos, dicens: Quem dicunt hómines esse Fílium hóminis? Et réliqua.",
+			"Homilía sancti Hierónymi Presbýteri.",
+			"[Lib. 3. Comm. in Matth. cap. 16.]/Pulchre intérrogat: Quem dicunt hómines esse Fílium hóminis? quia qui de fílio hóminis loquúntur, hómines sunt: qui vero divinitátem ejus intélligunt, non hómines, sed dii appellántur. At illi dixérunt: Álii Joánnem Baptístam, álii autem Elíam. Miror quosdam intérpretes causas errórum inquírere singulórum, et disputatiónem longíssimam téxere, quare Dóminum nostrum Jesum Christum álii Joánnem putáverint, álii Elíam, álii Jeremíam, aut unum ex prophétis: cum sic potúerint erráre in Elía et Jeremía, quo modo Heródes errávit in Joánne, dicens: Quem ego decollávi Joánnem, ipse surréxit a mórtuis, et virtútes operántur in eo."
+		]
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Ego pro te rogávi Petre, ut non defíciat fides tua:",
+		"responsum":"Et tu aliquándo convérsus confírma fratres tuos.",
+		"versus":"Caro et sanguis non revelávit tibi, sed Pater meus, qui est in cœlis."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Vos autem quem me esse dícitis? Prudens lector atténde, quod ex consequéntibus, textúque sermónis, Apóstoli nequáquam hómines, sed dii appellántur. Cum enim dixísset: Quem dicunt hómines esse Fílium hóminis? subjécit: Vos autem quem me esse dícitis? Illis, quia hómines sunt, humána opinántibus, vos qui estis dii, quem me esse existimátis? Petrus ex persóna ómnium Apostolórum profitétur: Tu es Christus Fílius Dei vivi. Deum vivum appéllat, ad distinctiónem eórum deórum, qui putántur dii, sed mórtui sunt."
+	},
+	{
+		"tags":["petrus-paulus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Quem dicunt hómines esse Fílium hóminis? dixit Jesus discípulis suis. Respóndens Petrus dixit: Tu es Christus Fílius Dei vivi.",
+		"responsum":"Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.",
+		"versus":"Beátus es Simon Bar-Jona, quia caro et sanguis non revelávit tibi, sed Pater meus, qui est in cœlis."
+	},
+	{
+		"tags":["petrus-paulus","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Respóndens autem Jesus, dixit ei: Beátus es Simon Bar-Jona. Testimónio de se Apóstoli reddit vicem. Petrus díxerat: Tu es Christus Fílius Dei vivi: mercédem recépit vera conféssio: Beátus es Simon Bar-Jona. Quare? Quia non revelávit tibi caro et sanguis, sed revelávit Pater. Quod caro et sanguis reveláre non pótuit, Spíritus sancti grátia revelátum est. Ergo ex confessióne sortítur vocábulum, quod revelatiónem ex Spíritu sancto hábeat, cujus et fílius appellándus sit. Síquidem Bar-Jona in nostra lingua sonat, fílius colúmbæ."
+	},
+	{
 		"tags":["petrus-paulus","duplex-i-classis","laudes","hymnus"],
 		"src":"gregobase/1988",
 		"datum":[
@@ -72,11 +167,11 @@
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","sexta","capitulum"],
-		"datum":"Petrus quidem servabátur in cárcere. + Orátio autem fiébat sine intermissióne * ab Ecclésia ad Deum pro eo."
+		"datum":"[Act. 12.]/Petrus quidem servabátur in cárcere. + Orátio autem fiébat sine intermissióne * ab Ecclésia ad Deum pro eo."
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","nona","capitulum"],
-		"datum":"Et Petrus ad se revérsus, dixit: Nunc scio vere, quia misit Dóminus Ángelum suum, + et erípuit me de manu Heródis, * et de omni expectatióne plebis Judæórum."
+		"datum":"[Act. 12. b.]/Et Petrus ad se revérsus, dixit: Nunc scio vere, quia misit Dóminus Ángelum suum, + et erípuit me de manu Heródis, * et de omni expectatióne plebis Judæórum."
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","ii-vesperae","antiphona","antiphona-magnificat"],

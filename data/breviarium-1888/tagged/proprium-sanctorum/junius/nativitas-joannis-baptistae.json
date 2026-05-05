@@ -38,7 +38,7 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","capitulum"],
-		"datum":"Audíte ínsulæ, et atténdite pópuli de longe: + Dóminus ab útero vocávit me, * de ventre matris meæ recordátus est nóminis mei."
+		"datum":"[Isaiæ 49.]/Audíte ínsulæ, et atténdite pópuli de longe: + Dóminus ab útero vocávit me, * de ventre matris meæ recordátus est nóminis mei."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","vesperae","hymnus"],
@@ -70,10 +70,12 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0624I",
 		"datum":"Regem Præcursóris Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","hymnus"],
+		"src":"nocturnale/0624H",
 		"datum":[
 			"Antra desérti téneris sub annis/Cívium turmas fúgiens, petísti,/Ne levi posses maculáre vitam/Crímine linguæ.",
 			"Prǽbuit durum tégumen camélus/Artubus sacris, stróphium bidéntes:/Cui latex haustum, sociáta pastum/Mella locústis.",
@@ -84,6 +86,7 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0624N1A1",
 		"datum":"Priúsquam te formárem * in útero, novi te: et ántequam progrederéris, sanctificávi te."
 	},
 	{
@@ -92,6 +95,7 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0624N1A2",
 		"datum":"Ad ómnia quæ mittam te, * dicit Dóminus, ibis: ne tímeas, et quæ mandávero tibi, loquéris ad eos."
 	},
 	{
@@ -100,6 +104,7 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0624N1A3",
 		"datum":"Ne tímeas * a fácie eórum, quia ego tecum sum, dicit Dóminus."
 	},
 	{
@@ -107,40 +112,44 @@
 		"datum":[["/psalmi/psalmus-iii,gloria"]]
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","lectio","lectio-i"],
-		"datum":[
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
 			"Íncipit Jeremías Prophéta.",
-			"Verba Jeremíæ fílii Helcíæ, de sacerdótibus, qui fuérunt in Ánathoth, in Terra Bénjamin. Quod factum est verbum Dómini ad eum in diébus Josíæ fílii Amon regis Juda, in tertiodécimo anno regni ejus. Et factum est in diébus Jóakim fílii Josíæ regis Juda, usque ad consummatiónem undécimi anni Sedecíæ fílii Josíæ regis Juda, usque ad transmigratiónem Jerúsalem, in mense quinto. Et factum est verbum Dómini ad me, dicens: Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sanctificávi te, et Prophétam in Géntibus dedi te."
+			"[Jerem. 1.]/Verba Jeremíæ fílii Helcíæ, de sacerdótibus, qui fuérunt in Ánathoth, in Terra Bénjamin. Quod factum est verbum Dómini ad eum in diébus Josíæ fílii Amon regis Juda, in tertiodécimo anno regni ejus. Et factum est in diébus Jóakim fílii Josíæ regis Juda, usque ad consummatiónem undécimi anni Sedecíæ fílii Josíæ regis Juda, usque ad transmigratiónem Jerúsalem, in mense quinto. Et factum est verbum Dómini ad me, dicens: Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sanctificávi te, et Prophétam in Géntibus dedi te."
 		]
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"src":"nocturnale/0624N1R1",
 		"incipit":"Fuit homo missus a Deo, cui nomen erat Joánnes:",
 		"responsum":"Hic venit in testimónium, ut testimónium perhibéret de lúmine, et paráret Dómino plebem perféctam.",
 		"versus":"Erat Joánnes in desérto prǽdicans baptísmum pœniténtiæ."
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","lectio","lectio-ii"],
-		"datum":"Et dixi, A a a, Dómine Deus: ecce néscio loqui, quia puer ego sum. Et dixit Dóminus ad me: Noli dícere: Puer sum: quóniam ad ómnia, quæ mittam te, ibis: et univérsa quæcúmque mandávero tibi, loquéris. Ne tímeas a fácie eórum: quia tecum ego sum ut éruam te, dicit Dóminus. Et misit Dóminus manum suam, et tétigit os meum: et dixit Dóminus ad me: Ecce dedi verba mea in ore tuo: ecce constítui te hódie super Gentes, et super regna, ut evéllas, et déstruas, et dispérdas, et díssipes, et ædífices, et plantes."
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"Et dixi, A a a, Dómine Deus: ecce néscio loqui, quia puer ego sum. Et dixit Dóminus ad me: Noli dícere: Puer sum: quóniam ad ómnia, quæ mittam te, ibis: et univérsa quæcúmque mandávero tibi, loquéris. Ne tímeas a fácie eórum: quia tecum ego sum ut éruam te, dicit Dóminus. Et misit Dóminus manum suam, et tétigit os meum: et dixit Dóminus ad me: Ecce dedi verba mea in ore tuo: ecce constítui te hódie super Gentes, et super regna, ut evéllas, et déstruas, et dispérdas, et díssipes, et ædífices, et plantes."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"src":"nocturnale/0624N1R2",
 		"incipit":"Elísabeth Zacharíæ magnum virum génuit, Joánnem Baptístam Præcursórem Dómini:",
 		"responsum":"Qui viam Dómino præparávit in erémo.",
 		"versus":"Fuit homo missus a Deo, cui nomen erat Joánnes."
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","lectio","lectio-iii"],
-		"datum":"Tu ergo accínge lumbos tuos, et surge, et lóquere ad eos ómnia quæ ego præcípio tibi. Ne formídes a fácie eórum: nec enim timére te fáciam vultum eórum. Ego quippe dedi te hódie in civitátem munítam, et in colúmnam férream, et in murum ǽreum, super omnem terram, régibus Juda, princípibus ejus, et sacerdótibus, et pópulo terræ. Et bellábunt advérsum te, et non prævalébunt: quia ego tecum sum, ait Dóminus, ut líberem te."
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Tu ergo accínge lumbos tuos, et surge, et lóquere ad eos ómnia quæ ego præcípio tibi. Ne formídes a fácie eórum: nec enim timére te fáciam vultum eórum. Ego quippe dedi te hódie in civitátem munítam, et in colúmnam férream, et in murum ǽreum, super omnem terram, régibus Juda, princípibus ejus, et sacerdótibus, et pópulo terræ. Et bellábunt advérsum te, et non prævalébunt: quia ego tecum sum, ait Dóminus, ut líberem te."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"src":"nocturnale/0624N1R3",
 		"incipit":"Priúsquam te formárem in útero, novi te: et ántequam exíres de ventre, sanctificávi te:",
 		"responsum":"Et Prophétam in Géntibus dedi te.",
 		"versus":"Vir diléctus a Deo, et homínibus honorátus est."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0624N2A1",
 		"datum":"Misit Dóminus * manum suam, et tétigit os meum, et Prophétam in Géntibus dedit me Dóminus."
 	},
 	{
@@ -149,6 +158,7 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0624N2A2",
 		"datum":"Ecce dedi * verba mea in ore tuo: ecce constítui te super Gentes et regna."
 	},
 	{
@@ -157,11 +167,121 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0624N2A3",
 		"datum":"Dóminus ab útero * vocávit me, de ventre matris meæ recordátus est nóminis mei."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":[
+			["nativitas-joannis-baptistae","matutinum","nocturna-ii","versiculus"],
+			["nativitas-joannis-baptistae","tertia","versiculus"]
+		],
+		"datum":["V. Inter natos mulíerum non surréxit major.","R. Joánne Baptísta."]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Serm. 20. de Sanctis.]/Post illum sacrosánctum Dómini natális diem nullíus hóminum nativitátem légimus celebrári, nisi solíus beáti Joánnis Baptístæ. In áliis sanctis et eléctis Dei nóvimus illum diem coli, quo illos, post consummatiónem labórum, et devíctum triumphatúmque mundum, in perpétuas æternitátes præsens hæc vita partúriit. In áliis consummáta últimi diéi mérita celebrántur; in hoc étiam prima dies, et ipsa étiam hóminis inítia consecrántur: pro hac absque dúbio causa, quia per hunc Dóminus advéntum suum, ne súbito hómines insperátum non agnóscerent, vóluit esse testátum. Joánnes autem figúra fuit véteris testaménti, et in se formam prǽtulit legis: et ídeo Joánnes prænuntiávit Salvatórem, sicut lex grátiam præcucúrrit."
+		]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"src":"nocturnale/0624N2R1",
+		"incipit":"Descéndit Ángelus Dómini ad Zacharíam, dicens: Áccipe púerum in senectúte tua:",
+		"responsum":"Et habébit nomen Joánnes Baptísta.",
+		"versus":"Iste puer magnus coram Dómino: nam et manus ejus cum ipso est."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Quod autem nondum natus de secréto matérni úteri prophetávit, et expers lucis jam testis est veritátis: hoc est intelligéndum, quod latens sub velámine et carne lítteræ, et Redemptórem mundo spíritu prædicávit, et nobis Dóminum nostrum de quodam legis útero proclamávit. Ergo quia Judǽi erravérunt a ventre, id est a lege, quæ a Christo grávida erat, erravérunt a ventre, locúti sunt falsa: ídeo hic venit in testimónium, ut testimónium perhibéret de lúmine."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"src":"nocturnale/0624N2R2",
+		"incipit":"Hic est Præcúrsor diléctus, et lucérna lucens ante Dóminum:",
+		"responsum":"Ipse est enim Joánnes, qui viam Dómino præparávit in erémo; sed et Agnum Dei demonstrávit, et illuminávit mentes hóminum.",
+		"versus":"Ipse præíbit ante illum in spíritu et virtúte Elíæ."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Quod autem Joánnes in cárcere constitútus ad Christum discípulos suos órdinat; lex ad Evangélium transmíttit. Quæ lex juxta typum Joánnis, quasi ignorántiæ clausa cárcere, in obscúro et in occúlto jacébat, et Judáica cæcitáte sensus intra lítteram tenebátur inclúsus. De hoc beátus Evangelísta prolóquitur: Ille erat lucérna ardens, id est, Spíritus sancti igne succénsus, ut mundo ignorántiæ nocte possésso, lumen salútis osténderet, et quasi inter densíssimas delictórum ténebras, splendidíssimum justítiæ solem lucis suæ rádio demonstráret, et de seípso dicens: Ego vox clamántis in desérto."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"src":"nocturnale/0624N2R3",
+		"incipit":"Innuébant patri ejus, quem vellet vocári eum: et póstulans pugillárem, scripsit, dicens:",
+		"responsum":"Joánnes est nomen ejus.",
+		"versus":"Apértum est os Zacharíæ, et prophetávit, dicens."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0624N3A1",
+		"datum":"Pósuit os meum * Dóminus quasi gládium acútum: sub umbra manus suæ protéxit me."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0624N3A2",
+		"datum":"Formans me * ex útero servum sibi Dóminus, dicit: Dedi te in lucem Géntium, ut sis salus mea usque ad extrémum terræ."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0624N3A3",
+		"datum":"Reges vidébunt, * et consúrgent príncipes, et adorábunt Dóminum Deum tuum, qui elégit te."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxxiii,gloria"]]
+	},
+	{
+		"tags":[
+			["nativitas-joannis-baptistae","matutinum","nocturna-iii","versiculus"],
+			["nativitas-joannis-baptistae","sexta","versiculus"]
+		],
+		"datum":["V. Elísabeth Zacharíæ magnum virum génuit.","R. Joánnem Baptístam Præcursórem Dómini."]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 1. f.]/Elísabeth implétum est tempus pariéndi, et péperit fílium. Et audiérunt vicíni et cognáti ejus quia magnificávit Dóminus misericórdiam suam cum illa, et congratulabántur ei. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Lib. 2. Comm. in Lucæ cap. 1. ante finem.]/Péperit fílium Elísabeth, et congratulabántur vicíni. Habet sanctórum edítio lætítiam plurimórum, quia commúne est bonum. Justítia enim commúnis est virtus: et ídeo in ortu justi futúræ vitæ insígne præmíttitur, et grátia secutúræ virtútis exsultatióne vicinórum præfiguránte signátur. Pulchre autem tempus, quo fuit in útero Prophéta, descríbitur, ne Maríæ præséntia taceátur: sed tempus silétur infántiæ, eo quia infántiæ impediménta nescívit. Et ídeo in Evangélio nihil super eo légimus, nisi ortum ejus, et oráculum, exsultatiónem in útero, vocem in desérto."
+		]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"src":"nocturnale/0624N3R1",
+		"incipit":"Præcúrsor Dómini venit, de quo ipse testátur:",
+		"responsum":"Nullus major inter natos mulíerum Joánne Baptísta.",
+		"versus":"Hic est enim Prophéta, et plus quam Prophéta, de quo Salvátor ait."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-iii","lectio-ii"],
+		"benedictio":[["matutinum","nocturna-iii","lectio-ii","martyr","benedictio"]],
+		"lectio":"Neque enim ullam infántiæ sensit ætátem, qui supra natúram, supra ætátem in útero pósitus matris, a mensúra cœpit ætátis plenitúdinis Christi. Mire sanctus Evangelísta præmitténdum putávit, quod plúrimi infántem patris nómine Zacharíam appellándum putáverint: ut advértas matri non nomen alicújus displicuísse degéneris, sed id sancto infúsum Spíritu, quod ab Ángelo ante Zacharíæ fúerat prænuntiátum. Et quidem ille mutus intimáre vocábulum fílii nequívit uxóri: sed per prophetíam Elísabeth dídicit, quod non didícerat a maríto."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"src":"nocturnale/0624N3R2",
+		"incipit":"Gábriel Ángelus appáruit Zacharíæ dicens: Nascétur tibi fílius, nomen ejus Joánnes vocábitur:",
+		"responsum":"Et multi in nativitáte ejus gaudébunt.",
+		"versus":"Erit enim magnus coram Dómino, vinum et síceram non bibet."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Joánnes est, inquit, nomen ejus: hoc est, non nos ei nomen impónimus, qui jam a Deo nomen accépit. Habet vocábulum suum, quod agnóvimus, non quod elégimus. Habent hoc mérita sanctórum, ut a Deo nomen accípiant. Sic Jacob Ísraël dícitur, quia Deum vidit. Sic Dóminus noster Jesus nominátus est ántequam natus, cui non Ángelus, sed Pater nomen impósuit. Vides, Ángelos, quæ audíerint, non quæ usurpáverint, nuntiáre. Nec miréris, si nomen múlier, quod non audívit, asséruit; quando Spíritus ei sanctus, qui Ángelo mandáverat, revelávit."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-i"],
@@ -219,12 +339,8 @@
 		"versus":"Cui nomen erat Joánnes."
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","tertia","versiculus"],
-		"datum":["V. Inter natos mulíerum non surréxit major.","R. Joánne Baptísta."]
-	},
-	{
 		"tags":["nativitas-joannis-baptistae","sexta","capitulum"],
-		"datum":"Et nunc hæc dicit Dóminus, formans me ex útero servum sibi: + Dedi te in lucem Géntium, * ut sis salus mea usque ad extrémum terræ."
+		"datum":"[Isaiæ 49.]/Et nunc hæc dicit Dóminus, formans me ex útero servum sibi: + Dedi te in lucem Géntium, * ut sis salus mea usque ad extrémum terræ."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","sexta","responsorium-breve"],
@@ -233,12 +349,8 @@
 		"versus":"Joánne Baptísta."
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","sexta","versiculus"],
-		"datum":["V. Elísabeth Zacharíæ magnum virum génuit.","R. Joánnem Baptístam Præcursórem Dómini."]
-	},
-	{
 		"tags":["nativitas-joannis-baptistae","nona","capitulum"],
-		"datum":"Reges vidébunt, et consúrgent príncipes, + et adorábunt Dóminum Deum tuum, * et sanctum Ísraël, qui elégit te."
+		"datum":"[Isaiæ 49. b.]/Reges vidébunt, et consúrgent príncipes, + et adorábunt Dóminum Deum tuum, * et sanctum Ísraël, qui elégit te."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","nona","responsorium-breve"],
@@ -250,5 +362,29 @@
 		"tags":["nativitas-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2106",
 		"datum":"Puer * qui natus est nobis, plus quam, Prophéta est: hic est enim, de quo Salvátor ait: Inter natos mulíerum non surréxit major Joánne Baptísta."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","infra-octavam","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","dies-iv","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Basilíi Magni.",
+			"[Homilia 2. in Psalm. 28.]/Vox Dómini super aquas. Qualis vox? super quas aquas? Velut prophetíam accipiámus quod dictum est. Memíneris Joánnis, qui interrogátus a Judǽis: Tu quis es? quod respónsum dábimus iis, qui misérunt nos? respóndit: Ego vox clamántis in desérto. Ígitur vox Dómini est Joánnes, Ángelus a Deo missus ante fáciem Dómini, ut paráret Dómino plebem perféctam. Hæc ígitur vox super aquas, erat super Jordánem, in quo baptizábat prǽdicans pœniténtiæ baptísmum. Et non solum in Jordáne, sed étiam in Ænon prope Salim, quia aquæ multæ erant illic."
+		],
+		"lectio-ii":"Ígitur vox Dómini super aquas, Joánnes est super baptísmum. Illic et Deus majestátis intónuit. Venit enim vox de cœlo, dicens: Hic est Fílius meus diléctus, in quo mihi complácui. Tunc étiam Dóminus super aquas multas dignátus est descéndere in baptísma Joánnis, ut compléret omnem justítiam quæ in lege est. Vox Dómini in virtúte. Aufert enim debilitátes pópuli per pœniténtiæ baptísmum, per ipsum baptízans in aqua ad pœniténtiam. In virtúte est vox, dicens: Pœniténtiam ágite, appropinquávit enim regnum cœlórum: et, Fácite fructus dignos pœniténtiæ.",
+		"lectio-iii":"Vox Dómini confringéntis cedros. Potest dici, quod parans Dómino pópulum perféctum, elátas impietátes, et contra cognitiónem Dei exaltátas confríngens, ac cónterens, oblíqua faciébat recta. Qui enim omnem collem ac montem humíliat, hic erat qui confringébat cedros, et Dómino viam adæquábat, per hoc quod ad pœniténtiam inducébat altum, et elátum, et supérbum cor. Unde ejus præparatiónem suscípiens Dóminus, suo advéntu confrégit oppósitas poténtias, cedros Líbani figuráte dictas. Opórtet enim Dóminum regnáre, donec ponat inimícos sub pedes suos, et cedros istas commínuat."
+	},
+	{
+		"tags":["nativitas-joannis-baptistae","dies-iv","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 1. f.]/Elísabeth implétum est tempus pariéndi, et péperit fílium. Et audiérunt vicíni et cognáti ejus quia magnificávit Dóminus misericórdiam suam cum illa, et congratulabántur ei. Et réliqua.",
+			"De Homilía sancti Ambrósii Epíscopi.",
+			"[Lib. 2. in Luc. cap. 1. in fine.]/Et Zacharías pater ejus implétus est Spíritu sancto, et prophetábat. Vide quam bonus Deus, et fácilis indulgére peccátis. Non solum abláta restítuit, sed étiam insperáta concédit. Ille dudum mutus prophétat. Hæc enim grátia Dei máxima, quod eum, qui negáverat, confitétur. Nemo ergo diffídat, nemo véterum cónscius delictórum prǽmia divína despéret. Novit Dóminus mutáre senténtiam, si tu nóveris emendáre delíctum."
+		],
+		"lectio-ii":"Et tu puer, Prophéta Altíssimi vocáberis. Pulchre, cum de Dómino prophetáret, ad Prophétam sua verba convértit, ut hoc quoque benefícium esse Dómini designáret: ne cum públice enumeráret sua, quasi ingrátus tacuísse viderétur quæ agnoscébat in fílio. Sed fortásse áliqui quasi irrationábilem mentis excéssum putent, quod octo diérum allóquitur infántem. Verum, si teneámus, intelligémus profécto quod pótuit vocem patris natus audíre, qui Maríæ salutatiónem ántequam nascerétur audívit.",
+		"lectio-iii":"Sciébat profécto álias esse aures prophétæ, quæ Spíritu Dei, non córporis ætáte reserántur. Habébat intelligéndi sensum, qui exsultándi habébat afféctum. Simul illud advérte, quam paucis Elísabeth, quam multis Zacharías prophétet: et utérque sancto replétus Spíritu loquebátur: sed disciplína servátur, ut múlier díscere magis quæ divína sunt, stúdeat, quam docére."
 	}
 ]

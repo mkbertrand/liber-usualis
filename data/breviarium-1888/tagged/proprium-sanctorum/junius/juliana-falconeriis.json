@@ -4,7 +4,10 @@
 		"datum":"S. Julianæ de Falconeriis Virginis"
 	},
 	{
-		"tags":["juliana-falconeriis","vesperae","hymnus"],
+		"tags":[
+			["juliana-falconeriis","vesperae","hymnus"],
+			["juliana-falconeriis","matutinum","hymnus"]
+		],
 		"src":"gregobase/2832",
 		"datum":[
 			"Cœléstis Agni núptias/O Juliána, dum petis,/Domum patérnam déseris,/Chorúmque ducis Vírginum.",
@@ -18,5 +21,15 @@
 		"tags":["juliana-falconeriis","collecta"],
 		"datum":"Deus, qui beátam Juliánam Vírginem tuam extrémo morbo laborántem pretióso Fílii tui córpore mirabíliter recreáre dignátus es: + concéde quǽsumus; ut ejus intercedéntibus méritis, nos quoque eódem in mortis agóne refécti ac roboráti, * ad cœléstem pátriam perducámur.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["juliana-falconeriis","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["juliana-falconeriis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Juliána ex nóbili Falconéria família, claríssimo patre, qui templum Deíparæ ab Ángelo salutátæ ære suo magnífice a fundaméntis Floréntiæ, ut nunc vísitur, eréxit, matre Reguardáta, ambóbus jam senescéntibus ac ad id tempus sterílibus, nata est anno millésimo ducentésimo septuagésimo. Ab incunábulis non exíguum futúræ sanctitátis spécimen dedit: vagiéntibus quippe labris, suavíssima Jesu et Maríæ nómina ultro proférre audíta est. Puerítiam póstmodum ingréssa, totam se christiánis virtútibus mancipávit, in quibus ádeo excélluit, ut beátus Aléxius pátruus, cujus institútis ac exémplis instruebátur, matri dícere non dubitáverit, ipsam non féminam peperísse, sed Ángelum; nam ita modésto vultu animóque ab omni, vel levíssima erróris mácula pura fuit, ut óculos numquam in toto vitæ cursu ad hóminis fáciem intuéndam eréxerit, auditóque peccáti vocábulo contremúerit; imo scéleris narratióne percúlsa, íllico prope exánimis corrúerit. Expléto nondum décimo quinto ætátis suæ anno, re familiári, licet opulénta, terrenísque posthábitis núptiis, Deo virginitátem in mánibus divi Philíppi Benítii solémniter vovit, ab eóque ómnium prima religiósum Mantellatárum hábitum, ut dicunt, sumpsit.",
+		"lectio-ii":"Juliánæ exémplum secútæ sunt plúrimæ ex nobilióribus famíliis féminæ, ac mater ipsa fíliæ sese religióse instituéndam dedit, ita ut, aucto paulátim número, órdinem Mantellatárum institúerit, ac illi pie vivéndi leges summa prudéntia ac sanctitáte tradíderit. Ejus virtútes cum óptime perspéctas divus Benítius habéret, morti próximus, nulli mélius, quam Juliánæ, non féminas tantum, sed et totum Servórum órdinem, cujus propagátor, et moderátor exstíterat, commendátum vóluit. Verum ipsa demísse semper de se cogitábat; et cum ceterárum esset magístra, in re quaque doméstica, licet vili, soróribus famulabátur. Assiduitáte orándi íntegras insumébat dies, in éxtasim sæpíssime rapta, et si réliquum, in sedándis cívium dissídiis, criminósis a via iniquitátis retrahéndis, ac inserviéndis impendébat ægrótis, quorum quandóque sániem ex ulcéribus manántem, admóto ore, lambens, eos sanitáti restituébat. Corpus suum flagris, nodósis funículis, férreis cíngulis, vigíliis, humi nudæ cubándo, térere sólita fuit. Parcíssimo cibo, et hoc vili, quátuor hebdómadæ diébus, et réliquis duóbus solo Angelórum pane conténta, excépto die sábbati, quo pane solo et aqua nutriebátur.",
+		"lectio-iii":"Dura hujúsmodi vivéndi ratióne in stómachi morbum íncidit, quo ingravescénte, cum septuagésimum ætátis annum ágeret, ad extrémum vitæ spátium redácta est. Diutúrnæ valetúdinis incómmoda hílari vultu constantíque ánimo pértulit: de uno tantum cónqueri audíta est, quod cum cibum cápere ac retinére nullo modo posset, ab Eucharística mensa ob sacraménti reveréntiam arcerétur. Verum his in angústiis constitúta, sacerdótem rogávit, ut allátum divínum panem, quem ore súmere nequíbat, péctori saltem extérius admovéret. Précibus illíus morem gessit sacérdos: et mirum! eódem témporis moménto, divínus panis dispáruit, et Juliána seréno ac ridénti vultu exspirávit. Res supra fidem támdiu fuit, donec virgíneum de more curarétur corpus: invénta enim est circa sinístrum péctoris latus carni véluti sigíllo impréssa forma hóstiæ, quæ Christi crucifíxi effígiem repræsentábat. Hujus prodígii fama ceterorúmque miraculórum non Floréntiæ tantum, sed totíus christiáni orbis veneratiónem illi conciliávit, ac per quátuor prope íntegra sǽcula ádeo aucta est, ut tandem Benedíctus Papa décimus tértius in ejus celebritáte Offícium próprium recitári ab univérso órdine beátæ Maríæ Vírginis Servórum jússerit. Clemens vero duodécimus, munificentíssimus ejúsdem órdinis protéctor, novis in dies miráculis coruscántem, sanctárum Vírginum catálogo adscrípsit."
 	}
 ]
