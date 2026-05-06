@@ -4,8 +4,20 @@
 		"datum":"Ss. Quatuor Coronatorum Martyrum"
 	},
 	{
+		"tags":["quatuor-coronati","i-vesperae","versiculus"],
+		"datum":[["martyres","ii-vesperae","versiculus"]]
+	},
+	{
 		"tags":["quatuor-coronati","collecta"],
 		"datum":"Præsta, quǽsumus omnípotens Deus: * ut, qui gloriósos Mártyres fortes in sua confessióne cognóvimus, pios apud te in nostra intercessióne sentiámus.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["quatuor-coronati","matutinum","lectio"],
+		"datum":"Sevérus, Severiánus, Carpóphorus et Victorínus fratres, in persecutióne Diocletiáni deórum cultum líbere detestántes, plumbátis cæsi, in verbéribus vitam pro Christi nómine profudérunt. Quorum córpora cánibus objécta, cum ab illis intácta diu fuíssent, subláta a Christiánis, via Lavicána, tértio ab Urbe lápide, in arenária sepeliúntur prope sepúlchrum sanctórum Mártyrum Claúdii, Nicóstrati, Symphoriáni, Castórii et Simplícii, qui eódem imperatóre passi erant: quod, cum essent summi sculptóres, nullo modo addúci potúerant ut idolórum státuas fácerent; et ad Solis simulácrum ducti, ut illud veneraréntur, numquam commissúros se dixérunt, ut adorárent ópera mánuum hóminum. Quamóbrem in cárcerem conjécti, cum ibi multos dies in eódem propósito perstitíssent, primum scorpiónibus cæsi, deínde vivi plúmbeis lóculis inclúsi in flumen dejiciúntur. Exstat in Urbe ecclésia sub nómine sanctórum Quátuor Coronatórum, quorum diu ignóta nómina, divínitus póstea patefácta sunt: ubi non solum illórum quátuor, sed étiam horum quinque Mártyrum córpora honorífice sepúlta sunt, et eórum festívitas sexto Idus Novémbris celebrátur."
+	},
+	{
+		"tags":["quatuor-coronati","laudes","versiculus"],
+		"datum":[["martyres","i-vesperae","versiculus"]]
 	}
 ]
