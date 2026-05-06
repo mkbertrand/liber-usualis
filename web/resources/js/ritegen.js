@@ -120,24 +120,26 @@ function riteTitle(data, size = 'large') {
 	} else {
 		var subtitle = '';
 		if (data['used-primary'][1].includes('duplex-i-classis')) {
-			subtitle = 'Duplex I Classis';
+			subtitle = 'Duplex I Classis.';
 		} else if (data['used-primary'][1].includes('duplex-ii-classis')) {
-			subtitle = 'Duplex II Classis';
+			subtitle = 'Duplex II Classis.';
 		} else if (data['used-primary'][1].includes('duplex-majus')) {
-			subtitle = 'Duplex Majus';
+			subtitle = 'Duplex Majus.';
 		} else if (data['used-primary'][1].includes('duplex-minus')) {
-			subtitle = 'Duplex Minus';
+			subtitle = 'Duplex Minus.';
 		} else if (data['used-primary'][1].includes('semiduplex')) {
-			subtitle = 'Semiduplex';
+			subtitle = 'Semiduplex.';
 		} else if (data['used-primary'][1].includes('simplex') || data['used-primary'][1].includes('feria')) {
-			subtitle = 'Simplex';
+			subtitle = 'Simplex.';
 		}
-		return `<h1 class="large-title">${title}</h1><h2 class="large-subtitle">${subtitle}</h2>`;
+		return `<h1 class="large-title">${(title + '.').replaceAll(/\.\.$/g, '.')}</h1><h2 class="large-subtitle">${subtitle}</h2>`;
 	}
 }
 
 function abbreviateName(name) {
-	return name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Pontificum', 'Pont.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.');
+	name = name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Pontificum', 'Pont.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.') + '.';
+	name = name.replaceAll(/\.\.$/g, '.');
+	return name;
 }
 
 // It can be readily observed that this is just an extremely primitive version of render()
@@ -307,7 +309,7 @@ function render(data, chant) {
 
 				ret = '';
 				function makeheader(header, style = 'item-header') {
-					return `<h4 class="${style}">${header}</h4>`;
+					return `<h4 class="${style}">${rubricrender(header)}</h4>`;
 				}
 				function makeheadingannotation(annot) {
 					return `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
@@ -330,7 +332,7 @@ function render(data, chant) {
 						header = makeheader(headers[i]);
 					}
 					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
-						header = makeheader('Te Deum.');
+						header = makeheader('Hymnus [Te Deum.]');
 					} else if (uniquelyhas('capitulum') && !data.tags.includes('pascha')) {
 						if (data.quaesitum.includes('officium-parvum-bmv') && !['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
 							header = makeheader('Capitulum & Versiculus.');
@@ -443,7 +445,7 @@ function render(data, chant) {
 					// Adds extra line of annotation noting that the reading is a commemoration (i.e. not a continuation of the previous readings).
 					annotation = '';
 					if (data.tags.includes('lectio-commemorationis') || typeof data.datum == 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('lectio-commemorationis')) {
-						annotation = `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${(abbreviateName(commmat) + '.').replace('..', '.')}</p>`;
+						annotation = `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${abbreviateName(commmat)}</p>`;
 					}
 
 					reading = unpack(data);
@@ -512,10 +514,10 @@ function render(data, chant) {
 					// Last two items in the data.datum array are the final Commemoration and the Termination of that Commemoration's collect.
 					for (var i = 0; i < data.datum.length - 2; i++) {
 						// Regex statement adds heading annotation inside of the commemoration's div rather than before it.
-						ret += renderinner(data.datum[i], translated, data.tags.concat(parenttags)).replace(/(<div.+?>)(.+)/, `$1${makeheadingannotation(usedcommemorations[i][0] + '.')}$2`);
+						ret += renderinner(data.datum[i], translated, data.tags.concat(parenttags)).replace(/(<div.+?>)(.+)/, `$1${makeheadingannotation(abbreviateName(usedcommemorations[i][0]))}$2`);
 					}
 					data.datum.at(-2).tags = data.datum.at(-2).tags.map((tag) => tag == 'formula-commemorationis' ? 'commemoratio-finalis' : tag);
-					ret += `<div class="rite-item formula-commemorationis">${makeheadingannotation(usedcommemorations.at(-1)[0] + '.')}${renderinner(data.datum[i], translated, data.tags.concat(parenttags))}${renderinner(data.datum.at(-1), translated, data.tags.concat(parenttags))}</div>`;
+					ret += `<div class="rite-item formula-commemorationis">${makeheadingannotation(abbreviateName(usedcommemorations.at(-1)[0]))}${renderinner(data.datum[i], translated, data.tags.concat(parenttags))}${renderinner(data.datum.at(-1), translated, data.tags.concat(parenttags))}</div>`;
 					return ret;
 				} else if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disabletrivialchant'] && data.tags.some(tag => trivialchants.includes(tag)))) {
 					ret = `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
@@ -621,7 +623,8 @@ function render(data, chant) {
 					}
 				}
 
-				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum'];
+				// Hymnus condition essentially picks for Te Deum since all other Hymns are handled for in another condition and returned.
+				fullparagraph = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus'];
 				if ((fullparagraph.some(i => uniquelyhas(i)) || (data.tags.includes('triduum') && data.tags.includes('collecta'))) && !parenttags.includes('sacrosanctae')) {
 					if (!ret.startsWith('<p')) {
 						ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;

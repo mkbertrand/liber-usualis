@@ -16,6 +16,7 @@ var panelquotient = 0;
 var riteheight = 1;
 function dopanelsize() {
 	var height = $(window).innerHeight() - parseInt(window.getComputedStyle(document.body).getPropertyValue('--top-bar-title-height').slice(0, -2)) - 1;
+	console.log(height);
 	var minritewidth = height / 1.6;
 	var panelwidth = height * panelratio;
 	canmakepanels = panelwidth * 2 + minritewidth < $(document).width();
@@ -31,7 +32,7 @@ function dopanelsize() {
 	}
 
 	// In other words, the rite panel will never be wider than 1:1
-	ritewidth = Math.min(height, $(document).width() - 2 * panelwidth);
+	ritewidth = Math.min(height, $(document).width() - 2 * panelwidth, 1600);
 
 	$('#rite-page-container').css('width', `${ritewidth}px`);
 	$('#side-panel-left').css('width', `${panelwidth}px`);

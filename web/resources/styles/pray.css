@@ -200,7 +200,7 @@
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	font-weight: normal;
-	color: red;
+	color: black;
 	font-size: 18px;
 	text-align: center;
 	margin-top: 0;
@@ -291,7 +291,7 @@
 	color: red;
 }
 
-.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter {
+.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter, .hymnus.te-deum::first-letter {
 	float: left;
 	font-size: 94px;
 	margin-right: 0.1rem;
@@ -301,7 +301,7 @@
 	-webkit-initial-letter: 3;
 }
 
-.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter {
+.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter, .hymnus.te-deum::first-letter, .lectio-incipiens.lectio-commemorationis::first-letter {
 	font-size: 60px !important;
 	initial-letter: 2;
 	-webkit-initial-letter: 2;
@@ -315,6 +315,10 @@
 .collecta, .oratio-dirigere {
 	margin-top: -12px;
 	min-height: 50px;
+}
+
+.collecta.triduum {
+	margin-top: 7px;
 }
 
 .rubricum {
@@ -506,7 +510,7 @@
 		font-size: 112px;
 	}
 
-	.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter {
+	.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter, .hymnus.te-deum::first-letter, .lectio-incipiens.lectio-commemorationis::first-letter {
 		font-size: 72px !important;
 	}
 
