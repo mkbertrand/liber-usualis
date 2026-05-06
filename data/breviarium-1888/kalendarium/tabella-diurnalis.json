@@ -61,15 +61,22 @@
 	{
 		"include":["vigilia"],
 		"recheck":false,
+		"exclude":[["omissum"],["commemoratio"],["semiduplex"],["duplex-minus"]],
+		"response":[
+			{"include":["feria"],"exclude":["feria-major"],"response":"combina","target":0}
+		]
+	},
+	{
+		"include":["vigilia"],
+		"recheck":false,
 		"exclude":[["omissum"],["semiduplex"],["duplex-minus"]],
 		"response":[
-			{"include":["feria"],"exclude":["feria-major"],"response":"combina","target":0},
-			{"include":["feria-major","feria-ii"],"adde":["feria-ii","feria"],"target":0},
-			{"include":["feria-major","feria-iii"],"adde":["feria-iii","feria"],"target":0},
-			{"include":["feria-major","feria-iv"],"adde":["feria-iv","feria"],"target":0},
-			{"include":["feria-major","feria-v"],"adde":["feria-v","feria"],"target":0},
-			{"include":["feria-major","feria-vi"],"adde":["feria-vi","feria"],"target":0},
-			{"include":["feria-major","sabbatum"],"adde":["sabbatum","feria"],"target":0}
+			{"include":["feria","feria-ii"],"adde":["feria-ii","feria"],"target":0},
+			{"include":["feria","feria-iii"],"adde":["feria-iii","feria"],"target":0},
+			{"include":["feria","feria-iv"],"adde":["feria-iv","feria"],"target":0},
+			{"include":["feria","feria-v"],"adde":["feria-v","feria"],"target":0},
+			{"include":["feria","feria-vi"],"adde":["feria-vi","feria"],"target":0},
+			{"include":["feria","sabbatum"],"adde":["sabbatum","feria"],"target":0}
 		]
 	},
 	{
