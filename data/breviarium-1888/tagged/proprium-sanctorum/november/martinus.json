@@ -42,6 +42,142 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["martinus","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/1111I",
+		"datum":"Laudémus Deum nostrum * In confessióne beáti Martíni."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/1111N1A1",
+		"datum":"Martínus adhuc catechúmenus * hac me veste contéxit."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/1111N1A2",
+		"datum":"Sanctæ Trinitátis fidem * Martínus conféssus est, et baptísmi grátiam percépit."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/1111N1A3",
+		"datum":"Ego signo crucis, * non clýpeo protéctus, aut gálea, hóstium cúneos penetrábo secúrus."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Hic est Martínus eléctus Dei Póntifex, cui Dóminus post Apóstolos tantam grátiam conférre dignátus est,",
+		"responsum":"Ut in virtúte Trinitátis Deíficæ mererétur fíeri trium mortuórum suscitátor magníficus.",
+		"versus":"Sanctæ Trinitátis fidem Martínus conféssus est."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Dómine, si adhuc pópulo tuo sum necessárius, non recúso subíre propter eos labórem:",
+		"responsum":"Fiat volúntas tua.",
+		"versus":"Óculis ac mánibus in cœlum semper inténtus, invíctum ab oratióne spíritum non relaxábat."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"O beátum virum Martínum Antístitem,",
+		"responsum":"Qui nec mori tímuit, nec vívere recusávit!",
+		"versus":"Dómine, si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/1111N2A1",
+		"datum":"Confído in Dómino, * quod fília mea précibus tuis reddénda sit sanitáti."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1111N2A2",
+		"datum":"Tetrádius * cógnita Dei virtúte, ad baptísmi grátiam pervénit."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/1111N2A3",
+		"datum":"O ineffábilem virum, * per quem nobis tanta mirácula corúscant!"
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Martínus, Sabáriæ in Pannónia natus, cum décimum attigísset annum, invítis paréntibus ad Ecclésiam confúgiens, in catechumenórum númerum adscríbi vóluit. Quíndecim annos natus in milítiam proféctus, primum in Constántii, deínde Juliáni exércitu militávit. Qui cum nihil habéret præter arma, et vestiméntum quo tegebátur, Ambiáni, paúperi ac nudo ab eo peténti, ut Christi nómine sibi eleemósynam tribúeret, partem chlámydis dedit. Cui sequénti nocte Christus dimidiáta illa veste indútus appáruit, hanc mittens vocem: Martínus catechúmenus hac me veste contéxit."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Óculis ac mánibus in cœlum semper inténtus,",
+		"responsum":"Invíctum ab oratióne spíritum non relaxábat.",
+		"versus":"Dum sacraménta offérret beátus Martínus, globus ígneus appáruit super caput ejus."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Decem et octo annos cum habéret, baptizátus est. Quare relícta militári vita, ad Hilárium Pictaviénsem epíscopum se cóntulit, a quo in acolythórum númerum redáctus est. Post factus epíscopus Turonénsis monastérium ædificávit, ubi cum octogínta mónachis sanctíssime aliquámdiu vixit. Qui cum póstea ad Candacénsem vicum suæ diœcésis in gravem febrim incidísset, assídua Deum oratióne precabátur, ut se ex illo mortáli cárcere liberáret. Quem audiéntes discípuli, sic rogábant: Cur nos pater déseris? cui nos míseros derelínquis? Quorum voce commótus Martínus, ita Deum orábat: Dómine, si adhuc pópulo tuo sum necessárius, non recúso labórem."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Beátus Martínus óbitum suum longe ante præscívit, dixítque frátribus,",
+		"responsum":"Dissolutiónem sui córporis imminére, quia judicábat se jam resólvi.",
+		"versus":"Víribus córporis cœpit repénte destítui, convocatísque discípulis dixit."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Sed cum eum in illa veheménti febre supínum orántem vidérent discípuli, supplíciter ab eo petiérunt, ut convérso córpore tantísper, dum remítteret morbi vis, pronus conquiésceret. Quibus Martínus, Sínite me, inquit, cœlum pótius, quam terram aspícere, ut suo jam itínere itúrus ad Dóminum spíritus dirigátur. Instánte jam morte, viso humáni géneris hoste, Quid, inquit, astas, cruénta béstia? nihil in me funéste repéries. Ea in voce, unum et octogínta annos natus, ánimam Deo réddidit: quam Angelórum chorus excépit, eósque divínas canéntes laudes multi, in primísque sanctus Severínus Coloniénsis epíscopus, audiérunt."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Dixérunt discípuli ad beátum Martínum: Cur nos pater déseris, aut cui nos desolátos relínquis?",
+		"responsum":"Invádent enim gregem tuum lupi rapáces.",
+		"versus":"Scimus quidem desideráre te Christum, sed salva sunt tibi tua prǽmia: nostri pótius miserére, quos déseris."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/1111N3A1",
+		"datum":"Dóminus Jesus Christus * non purpurátum, aut diadémate reniténtem se ventúrum esse prædíxit."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-x,gloria"]]
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/1111N3A2",
+		"datum":"Sacérdos Dei Martíne, * apérti sunt tibi cœli, et regnum Patris mei."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/1111N3A3",
+		"datum":"Sacérdos Dei * Martíne, pastor egrégie, ora pro nobis Deum."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 11. d.]/In illo témpore: Dixit Jesus discípulis suis: Nemo lucérnam accéndit, et in abscóndito ponit, neque sub módio: sed supra candelábrum, ut qui ingrediúntur, lumen vídeant. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[Lib. 7. Comment. in Luc. cap. 11, post initium.]/Quia in superióribus Ecclésiam Synagógæ prǽtulit, hortátur nos, ut fidem pótius nostram ad Ecclésiam transferámus. Lucérna enim fides est, juxta quod scriptum est: Lucérna pédibus meis verbum tuum Dómine. Verbum enim Dei fides nostra est: verbum Dei lux est. Lucérna est fides. Erat lux vera quæ illúminat omnem hóminem veniéntem in hunc mundum. Lucérna autem lucére non potest, nisi aliúnde lumen accéperit."
+		]
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"O beátum virum, in cujus tránsitu Sanctórum canit númerus, Angelórum exsúltat chorus,",
+		"responsum":"Omniúmque cœléstium Virtútum occúrrit psalléntium exércitus!",
+		"versus":"Ecclésia virtúte roborátur, sacerdótes Dei revelatióne glorificántur, quem Míchaël assúmpsit cum Ángelis."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Hæc est lucérna quæ accénditur, virtus scílicet nostræ mentis et sensus, ut drachma illa possit, quæ períerat, reperíri. Nemo ergo fidem sub lege constítuat. Lex enim intra mensúram est, ultra mensúram grátia: lex obúmbrat, grátia claríficat. Et ídeo nemo fidem suam intra mensúram legis inclúdat, sed ad Ecclésiam cónferat, in qua septifórmis Spíritus relúcet grátia, quam princeps ille sacerdótum fulgóre supérnæ divinitátis illúminat, ne eam legis umbra restínguat.",
+		"lectio-iii":"Dénique lucérna illa, quam matutínis vespertinísque tempóribus ritu véteri Judæórum princeps sacerdótum solébat accéndere, velut sub módio sita legis evánuit; et cívitas illa Jerúsalem, quæ in terris est, quæ occídit prophétas, quasi in conválle fletus pósita delitéscit: illa autem Jerúsalem, quæ in cœlo est, in qua mílitat fides nostra, in illo altíssimo ómnium locáta monte, hoc est Christo, non potest ténebris et ruínis hujus mundi abscóndi, sed fulgens candóre solis ætérni, luce nos grátiæ spiritális illúminat."
+	},
+	{
+		"tags":["martinus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Martínus Ábrahæ sinu lætus excípitur: Martínus, hic pauper et módicus,",
+		"responsum":"Cœlum dives ingréditur, hymnis cœléstibus honorátur.",
+		"versus":"Martínus epíscopus migrávit a sǽculo: vivit in Christo gemma sacerdótum."
+	},
+	{
 		"tags":["martinus","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2378",
 		"datum":"O beátum Pontíficem, * qui totis viscéribus diligébat Christum Regem, et non formidábat impérii principátum: o sanctíssima ánima, quam etsi gládius persecutóribus non ábstulit, palmam tamen martýrii non amísit!"

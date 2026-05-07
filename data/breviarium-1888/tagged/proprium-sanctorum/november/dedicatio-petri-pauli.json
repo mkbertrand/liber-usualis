@@ -2,5 +2,24 @@
 	{
 		"tags":["dedicatio-petri-pauli","nomen"],
 		"datum":"In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli"
+	},
+	{
+		"tags":["dedicatio-petri-pauli","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De libro Apocalýpsis beáti Joánnis Apóstoli.",
+			"[Apoc. 21. e.]/Et erat structúra muri ejus ex lápide jáspide: ipsa vero cívitas aurum mundum símile vitro mundo. Et fundaménta muri civitátis omni lápide pretióso ornáta. Fundaméntum primum, jaspis: secúndum, sapphírus: tértium, chalcedónius: quartum, smarágdus: quintum, sárdonyx: sextum, sárdius: séptimum, chrysólithus: octávum, berýllus: nonum, topázius: décimum, chrysóprasus: undécimum, hyacínthus, duodécimum, amethýstus."
+		],
+		"lectio-ii":"Et duódecim portæ, duódecim margarítæ sunt per síngulas: et síngulæ portæ erant ex síngulis margarítis: et platéa civitátis aurum mundum, tamquam vitrum perlúcidum. Et templum non vidi in ea. Dóminus enim Deus omnípotens templum illíus est, et Agnus. Et cívitas non eget sole, neque luna, ut lúceant in ea. Nam cláritas Dei illuminávit eam, et lucérna ejus est Agnus.",
+		"lectio-iii":"Et ambulábunt gentes in lúmine ejus: et reges terræ áfferent glóriam suam, et honórem in illam. Et portæ ejus non claudéntur per diem: nox enim non erit illic. Et áfferent glóriam, et honórem géntium in illam. Non intrábit in eam áliquod coinquinátum, aut abominatiónem fáciens, et mendácium, nisi qui scripti sunt in libro vitæ Agni."
+	},
+	{
+		"tags":["dedicatio-petri-pauli","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Ex locis sacris quæ olim apud Christiános veneratiónem habuérunt, illa celebérrima et frequentíssima fuérunt, in quibus cóndita sanctórum córpora, vel áliquod Mártyrum vestígium aut monuméntum esset. In quorum número sanctórum locórum, in primis semper fuit insígnis ea Vaticáni pars, quam sancti Petri Confessiónem appellábant. Nam eo Christiáni ex ómnibus orbis terræ pártibus, tamquam ad fídei petram et Ecclésiæ fundaméntum conveniéntes, locum Príncipis Apostolórum sepúlchro consecrátum, summa religióne ac pietáte venerabántur.",
+		"lectio-ii":"Illuc Constantínus Magnus imperátor octávo die post suscéptum baptísmum venit, depositóque diadémate, et humi jacens, vim lacrimárum profúdit: mox sumpto ligóne ac bidénte, terram éruit: índeque duódecim terræ cóphinis, honóris causa duódecim Apostolórum, ablátis, ac loco basílicæ Príncipis Apostolórum designáto, ecclésiam ædificávit. Quam sanctus Silvéster Papa décimo quarto Kaléndas Decémbris, eo modo quo Lateranénsem ecclésiam quinto Idus Novémbris consecráverat, dedicávit: et in ea altáre lapídeum chrísmate delibútum eréxit; atque ex eo témpore sancívit, ne deínceps altária nisi ex lápide fíerent. Idem beátus Silvéster basílicam sancti Pauli Apóstoli in via Ostiénsi ab eódem Constantíno imperatóre magnificentíssime ædificátam dedicávit. Quas basílicas idem imperátor multis prǽdiis attribútis locupletávit, ac munéribus amplíssimis exornávit.",
+		"lectio-iii":"Porro Vaticánam basílicam vetustáte jamprídem collabéntem, ac proptérea multórum Pontíficum pietáte látius ac magnificéntius a fundaméntis eréctam, Urbánus octávus hac eádem recurrénte die anni millésimi sexcentésimi vigésimi sexti, solémni ritu consecrávit. Basílicam vero Ostiénsem, quum dira incéndii vis, anno millésimo octingentésimo vigésimo tértio pénitus consumpsísset, indeféssa quátuor Pontíficum cura splendídius quam ántea eréctam, et ab intéritu véluti vindicátam, Pius nonus auspicatíssimam nactus occasiónem qua dogma de Immaculáta beátæ Maríæ Vírginis Conceptióne nuper ab ipso proclamátum, ingéntem cardinálium et episcopórum númerum ex díssitis étiam cathólici orbis regiónibus Romam attráxerat, die décima Decémbris anni millésimi octingentésimi quinquagésimi quarti, tanta circúmdatus purpuratórum patrum et antístitum coróna solémniter dedicávit, ejúsque celebritátis memóriam hac die recoléndam decrévit."
+	},
+	{
+		"tags":["dedicatio-petri-pauli","matutinum","nocturna-iii","lectio"],
+		"datum":[["commune","dedicatio","dies-iv","lectio"]]
 	}
 ]
