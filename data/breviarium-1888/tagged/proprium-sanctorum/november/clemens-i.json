@@ -39,6 +39,41 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["clemens-i","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Oránte sancto Cleménte, appáruit ei Agnus Dei:",
+		"responsum":"De sub cujus pede fons vivus emánat, flúminis ímpetus lætíficat civitátem Dei.",
+		"versus":"Vidi supra montem Agnum stantem."
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Omnes una voce dixérunt: Ora pro nobis sancte Clemens:",
+		"responsum":"Ut digni efficiámur promissiónibus Christi.",
+		"versus":"Non meis méritis ad vos me misit Dóminus vestris corónis partícipem fíeri."
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Dedísti Dómine habitáculum Mártyri tuo Cleménti in mari, in modum templi marmórei angélicis mánibus præparátum:",
+		"responsum":"Iter præbens pópulo terræ, ut enárrent mirabília tua.",
+		"versus":"Dedísti Dómine sanctis tuis viam in mari, et in flumínibus sémitam."
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
+		"responsum":"Et dedit illi claritátem ætérnam.",
+		"versus":"Descendítque cum illo in fóveam, et in vínculis non derelíquit eum."
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Clemens Románus, Faustíni fílius, de regióne Cœ\u0301lii montis, discípulus beáti Petri, cujus méminit Paulus scribens ad Philippénses: Étiam rogo et te germáne compar, ádjuva illas quæ mecum laboravérunt in Evangélio, cum Cleménte et céteris adjutóribus meis, quorum nómina sunt in libro vitæ. Hic septem Urbis regiónes divísit septem Notáriis, síngulas síngulis attríbuens, qui passiónes Mártyrum et res ab eis gestas diligentíssime conquisítas lítteris mandárent. Multa scripsit et ipse accuráte et salutáriter, quibus christiánam religiónem illustrávit.",
+		"lectio-ii":"Cum autem doctrína ac vitæ sanctitáte multos ad Christi fidem convérteret, a Trajáno imperatóre relegátus est trans mare Pónticum in solitúdine urbis Chersónæ, in qua duo míllia Christianórum réperit, qui ab eódem Trajáno condemnáti fúerant. Qui cum in eruéndis et secándis marmóribus aquæ penúria laborárent, Clemens facta oratióne, in vicínum collem ascéndit, in cujus jugo vidit Agnum déxtero pede fontem aquæ dulcis, qui inde scatébat, attingéntem; ubi omnes sitim explevérunt: eóque miráculo multi infidéles ad Christi fidem convérsi, Cleméntis étiam sanctitátem venerári cœpérunt.",
+		"lectio-iii":"Quibus concitátus Trajánus, misit illuc, qui Cleméntem, alligáta ad ejus collum ánchora, in profúndum dejícerent. Quod cum factum esset, Christiánis ad littus orántibus, mare ad tria milliária recéssit: eóque illi accedéntes, ædículam marmóream in templi formam, et intus arcam lapídeam, ubi Mártyris corpus cónditum erat, et juxta illud ánchoram, qua mersus fúerat, invenérunt. Quo miráculo íncolæ permóti, Christi fidem suscepérunt. Ejus corpus póstea Romam, Nicoláo primo Pontífice translátum, in ecclésia ipsíus sancti Cleméntis cónditum est. Ecclésia étiam in eo ínsulæ loco, unde divínitus fons manárat, ejúsdem nómine dedicáta est. Vixit in pontificátu annos novem, menses sex, dies sex. Fecit ordinatiónes duas mense Decémbri, quibus creávit presbýteros decem, diáconos duos, epíscopos per divérsa loca quíndecim."
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-iii","lectio","include-inauthenticas","habens-commemorationem-matutini"],
+		"lectio-i":[["confessor-pontifex","alia-homilia-ii","lectio","lectio-i"]],
+		"lectio-ii":[["confessor-pontifex","alia-homilia-ii","lectio","lectio-ii"]]
+	},
+	{
 		"tags":["clemens-i","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12754",
 		"datum":"Cum iter ad mare cepísset, * pópulus voce magna clamábat: Dómine Jesu Christe, salva illum: et Clemens cum lácrimis dicébat: Súscipe Pater spíritum meum."
