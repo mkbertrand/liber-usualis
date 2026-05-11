@@ -71,6 +71,21 @@
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
+		"tags":["matutinum","nativitas","duplex-i-classis","ritus"],
+		"datum":[
+			["prex-triplex"],
+			["domine-labia"],
+			["deus-in-adjutorium","festalis"],
+			["invitatorium"],
+			["matutinum","hymnus"],
+			["matutinum","nocturnae"],
+			["laudes","collecta-primaria"],
+			["dominus-vobiscum","post-collectas"],
+			["laudes","benedicamus-domino"],
+			"[Et dicto [Benedicámus Dómino.] celebratur prima Missa post mediam noctem, ut in Ordinario: qua finita, dicuntur Laudes.]"
+		]
+	},
+	{
 		"tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/1225I",
 		"datum":"Christus natus est nobis: * Veníte adorémus."
