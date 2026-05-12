@@ -46,6 +46,61 @@
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","lectio"],
+		"datum":[["nativitas-joannis-baptistae","duplex-i-classis","lectio"]]
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Misit Heródes rex manus, ac ténuit Joánnem, et vinxit eum in cárcere, quia metuébat eum, propter Herodíadem,",
+		"responsum":"Quam túlerat fratri suo Philíppo uxórem.",
+		"versus":"Arguébat Heródem Joánnes propter Herodíadem."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Joánnes Baptísta arguébat Heródem",
+		"responsum":"Propter Herodíadem, quam túlerat fratri suo vivénti uxórem.",
+		"versus":"Misso Heródes spiculatóre, præcépit amputári caput Joánnis in cárcere."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"formula":[["duplex-responsum"]],
+		"incipit":"Puéllæ saltánti imperávit mater:",
+		"responsum-i":"Nihil áliud petas, nisi caput Joánnis.",
+		"responsum-ii":"Et contristátus est rex propter jusjurándum, et propter simul discumbéntes.",
+		"versus":"Ait puélla matri suæ: Quid petam? At illa ait:"
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex libro sancti Ambrósii Epíscopi de Virgínibus.",
+			"[Lib. 3. post initium.]/Quóniam beáti Joánnis Baptístæ non strictim prætereúnda est recordátio, ínterest ut quis, et a quibus, et quam ob causam, quo modo, et quo témpore sit occísus, advértere debeámus. Ab adúlteris justus occíditur, et a reis in júdicem capitális scéleris pœna convértitur. Deínde prǽmium saltatrícis, mors est prophétæ. Postrémo (quod étiam omnes bárbari horrére consuevérunt) inter épulas atque convívia consummándæ crudelitátis profértur edíctum: et a convívio ad cárcerem: de cárcere ad convívium ferális flagítii circumfértur obséquium. Quanta in uno facínore sunt crímina!"
+		],
+		"lectio-ii":"Quis non, cum e convívio ad cárcerem cursári vidéret, putáret prophétam jussum esse dimítti? Quis, inquam, cum audísset natálem esse Heródis, solémne convívium, puéllæ optiónem eligéndi quod vellet datam, missum ad Joánnem ob solutiónem non arbitrarétur? Quid crudelitáti cum delíciis? quid cum funéribus voluptáti? Rápitur ad pœnam prophéta conviváli témpore, conviváli præcépto, quo non cúperet vel absólvi: perímitur gládio, caput ejus affértur in disco. Hoc crudelitáti férculum debebátur, quo insatiáta épulis féritas vescerétur.",
+		"lectio-iii":"Intuére rex acerbíssime tuo spectácula digna convívio. Pórrige déxteram, ne quid sævítiæ tuæ desit, ut inter dígitos tuos rivi défluant sacri cruóris. Et quóniam non exsaturári épulis fames, non restíngui póculis pótuit inaudítæ sævítiæ sitis: bibe sánguinem scaturiéntibus adhuc venis exsécti cápitis profluéntem. Cerne óculos in ipsa morte scéleris tui testes, aversántes conspéctum deliciárum. Claudúntur lúmina non tam mortis necessitáte, quam horróre luxúriæ. Os aúreum illud exsángue, cujus senténtiam ferre non póteras, conticéscit, et adhuc timétur."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-ii","responsorium"],
+		"responsorium-i":[["martyr","nocturna-i","responsorium-ii"]],
+		"responsorium-ii":[["martyr","nocturna-i","responsorium-iii"]],
+		"responsorium-iii":[["martyr","nocturna-ii","responsorium-i"]]
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Marcum.",
+			"[Marc. 6. c.]/In illo témpore: Misit Heródes, ac ténuit Joánnem, et vinxit eum in cárcere, propter Herodíadem, uxórem Philíppi fratris sui, quia dúxerat eam. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Serm. 10. in novis. Serm.]/Cum sanctum Evangélium legerétur, crudéle spectáculum ante óculos nostros constitútum est: caput sancti Joánnis in disco, ferális missus crudelitátis propter ódium veritátis. Puélla saltat, et sævit mater: et inter lascívias et delícias convivántium témere jurátur, et ímpie quod jurátur, implétur. Factum est Joánni, quod ipse prædíxerat. De Dómino enim Jesu Christo díxerat: Illum opórtet créscere, me autem mínui. Iste minútus est in cápite, ille crevit in cruce. Ódium péperit véritas. Non pótuit æquo ánimo tolerári, quod homo Dei sanctus monébat: qui útique salútem eórum quærébat, quos sic monébat. Respondérunt illi mala pro bonis."
+		],
+		"lectio-ii":"Quid enim ille díceret, nisi quo plenus erat? Et quid illi respondérent, nisi quo pleni erant? Ille tríticum seminávit, sed spinas invénit. Dicébat regi: Non licet tibi habére uxórem fratris tui.",
+		"lectio-iii":"Vincébat enim regem libído: tenébat apud se prohíbitam uxórem fratris sui. Sed eum tamen sic libébat, ut non sævíret. Honorábat eum a quo verum audiébat: sed múlier detestábilis ódium concipiébat, quod aliquándo dato témpore páreret. Quando autem parturiébat, péperit fíliam, fíliam saltántem."
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-iii","responsorium"],
+		"responsorium-i":[["martyr","nocturna-ii","responsorium-ii"]],
+		"responsorium-ii":[["martyr","nocturna-ii","responsorium-iii"]]
+	},
+	{
 		"tags":["decollatio-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2584",
 		"datum":"Misit rex incrédulus * minístros detestábiles, et amputári jussit caput Joánnis Baptístæ."

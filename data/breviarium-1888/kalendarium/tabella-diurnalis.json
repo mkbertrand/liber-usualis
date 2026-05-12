@@ -225,6 +225,10 @@
 		"response":"dele"
 	},
 	{
+		"include":["hermes","commemoratio-matutini"],
+		"response":"dele"
+	},
+	{
 		"include":["infra-octavam","commemoratio"],
 		"response":"duplicate",
 		"remove":"commemoratio",
