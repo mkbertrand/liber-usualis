@@ -10,6 +10,9 @@
 	},
 	{
 		"tags":["hilarion","matutinum","lectio"],
-		"lectio-i":[["temporale","occurrens","lectio-i","lectio"],["temporale","occurrens","lectio-ii","lectio"],["temporale","occurrens","lectio-iii","lectio"]]
+		"include-inauthenticas":[["lectio-binaria"]],
+		"lectio-commemorationis":[["lectio-binaria"]],
+		"lectio-i":"Hilárion, ortus Tabáthæ in Palæstína ex paréntibus infidélibus, Alexandríam missus studiórum causa, ibi morum et ingénii laude flóruit: ac Jesu Christi suscépta religióne, in fide et caritáte mirabíliter profécit. Frequens enim erat in ecclésia, assíduus in jejúnio et oratióne: omnes voluptátum illécebras et terrenárum rerum cupiditátes contemnébat. Cum autem Antónii nomen in Ægýpto celebérrimum esset, ejus vidéndi stúdio in solitúdinem conténdit: apud quem duóbus ménsibus omnem ejus vitæ ratiónem dídicit. Domum revérsus, mórtuis paréntibus, facultátes suas paupéribus dilargítus est: necdum quintum décimum annum egréssus, rédiit in solitúdinem, ubi, exstrúcta exígua casa, quæ vix ipsum cáperet, humi cubábat. Nec vero saccum, quo semel amíctus est, umquam aut lavit, aut mutávit, cum supervacáneum esse díceret, mundítias in cilício quǽrere.",
+		"lectio-ii":"In sanctárum litterárum lectióne et meditatióne multus erat. Paucas ficus et succum herbárum ad victum adhibébat; nec illis ante solis occásum vescebátur. Continéntia et humilitáte fuit incredíbili. Quibus aliísque virtútibus várias horribilésque tentatiónes diáboli superávit, et innumerábiles dǽmones in multis orbis terræ pártibus ex hóminum corpóribus ejécit. Qui octogésimum annum agens, multis ædificátis monastériis, et clarus miráculis, in morbum íncidit: cujus vi cum extrémo pene spíritu conflictarétur, dicébat: Egrédere, quid times? egrédere, ánima mea, quid dúbitas? septuagínta prope annis servísti Christo, et mortem times? Quibus in verbis spíritum exhalávit."
 	}
 ]

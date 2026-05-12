@@ -5,8 +5,13 @@
 		"datum":"In Vigilia Omnium Sanctorum"
 	},
 	{
+		"tags":["vigilia-omnium-sanctorum","matutinum"],
+		"benedictio":[["evangelica-lectio","benedictio"]],
+		"lectio":[["martyres","martyr","nocturna-iii","alia-homilia","lectio"]]
+	},
+	{
 		"tags":["vigilia-omnium-sanctorum","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Dómine Deus noster, multíplica super nos grátiam tuam: + et quorum prævenímus gloriósa solémnia, * tríbue súbsequi in sancta professióne lætítiam."
+		"datum":"Dómine Deus noster, multíplica super nos grátiam tuam: + et quorum prævenímus gloriósa solémnia, * tríbue súbsequi in sancta professióne lætítiam.",
+		"terminatio":[["terminatio","per-dominum"]]
 	}
 ]

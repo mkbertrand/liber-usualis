@@ -21,8 +21,25 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["joannes-cantius","matutinum","hymnus"],
+		"src":"nocturnale/1020H",
+		"datum":[
+			"Corpus domas jejúniis,/Cædis cruénto vérbere,/Ut castra pœniténtium/Miles sequáris ínnocens.",
+			"Sequámur et nos sédulo/Gressus paréntis óptimi:/Sequámur, ut licéntiam/Carnis refrǽnet spíritus.",
+			"Rigénte bruma próvidum/Præbes amíctum paúperi,/Sitim famémque egéntium/Esca potúque súblevas.",
+			"O qui negásti némini/Opem rogánti, pátrium/Regnum tuére, póstulant/Cives Polóni et éxteri.",
+			"Sit laus Patri, sit Fílio,/Tibíque sancte Spíritus:/Preces Joánnis ímpetrent/Beáta nobis gaúdia.","Amen."
+		]
+	},
+	{
 		"tags":["joannes-cantius","matutinum","nocturna-i","lectio"],
 		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["joannes-cantius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Joánnes in óppido Kenty Cracoviénsis diœcésis, a quo Cántii cognómen duxit, Stanisláo et Anna piis et honéstis paréntibus natus, morum suavitáte, innocéntia, gravitáte ab ipsa infántia spem fecit máximæ virtútis. In universitáte Cracoviénsi philosophíæ ac theologíæ primum audítor, tum per omnes academíæ gradus ascendéndo proféssor ac doctor, sacra, quam annis multis trádidit, doctrína mentes audiéntium non illustrábat modo, sed et ad omnem pietátem inflammábat, simul docens scílicet, et fáciens. Sacérdos factus, nihil de litterárum stúdio remíttens, stúdium auxit christiánæ perfectiónis. Utque passim offéndi Deum máxime dolébat, sic eum sibi et pópulo placáre obláto quotídie non sine multis lácrimis incruénto sacrifício satagébat. Ilkusiénsem paróchiam annis áliquot egrégie administrávit; sed animárum perículo commótus póstea dimísit, ac postulánte academía ad prístinum docéndi offícium rédiit.",
+		"lectio-ii":"Quidquid témporis ab stúdio supérerat, partim salúti proximórum, sacris præsértim conciónibus curándæ, partim oratióni dabat, in qua cœléstibus quandóque visiónibus et collóquiis dignátus fertur. Christi vero passióne sic afficiebátur, ut in ea contemplánda totas intérdum noctes dúceret insómnes, ejúsque causa mélius recoléndæ Hierosólymam peregrinátus sit: ubi et martýrii desidério flagrans, Turcis ipsis Christum crucifíxum prædicáre non dubitávit. Quater étiam ad Apostolórum límina pedes, atque viária onústus sárcina Romam venit, tum ut Sedem apostólicam, cui máxime addíctus fuit, honoráret, tum ut sui (sic enim ajébat) purgatórii pœnas expósita illic quotídie peccatórum vénia redímeret. Quo in itínere a latrónibus olim spoliátus, et numquid habéret prætérea interrogátus, cum negásset, aúreos deínde áliquot suo insútos pállio recordátus, fugiéntibus hos étiam clamans óbtulit latrónibus: qui viri sancti candórem simul, et largitátem admiráti, étiam ablátos ultro reddidére. Aliénæ famæ ne quis detráheret descríptis beáti Augustíni exémplo, in paríete versículis, se atque álios perpétuo vóluit admónitos. Famélicos de suo étiam obsónio satiábat: nudos autem non emptis modo, sed detráctis quoque sibi véstibus et cálceis operiébat, demísso ipse ínterim usque ad terram pállio, ne domum núdipes redíre viderétur.",
+		"lectio-iii":"Brevis illi somnus, atque humi; vestis, quæ nuditátem, cibus, qui mortem dumtáxat arcéret. Virginálem pudicítiam, velut lílium inter spinas, áspero cilício, flagéllis atque jejúniis custodívit. Quin et per annos ante óbitum trigínta círciter et quinque ab esu cárnium perpétuo abstínuit. Tandem diérum juxta ac meritórum plenus, cum vicínæ, quam præsénsit, morti se diu diligentérque præparásset, ne qua re ámplius tenerétur, si quid domi supérerat, id omníno paupéribus distríbuit. Tum Ecclésiæ sacraméntis rite munítus, dissólvi jam cúpiens, et esse cum Christo, prídie Nativitátis ejus, in cœlum evolávit miráculis ante et post mortem clarus. Mórtuus ad próximam academíæ ecclésiam sanctæ Annæ delátus est, ibíque honorífice sepúltus. Auctáque in dies pópuli veneratióne ac frequéntia inter primários Polóniæ ac Lithuániæ Patrónos religiosíssime cólitur. Novísque corúscans miráculis, a Cleménte décimo tértio Pontífice Máximo décimo séptimo Kaléndas Augústi, anno millésimo septingentésimo sexagésimo séptimo, solémni ritu sanctórum fastis adscríptus est."
 	},
 	{
 		"tags":["joannes-cantius","ii-vesperae","hymnus"],
