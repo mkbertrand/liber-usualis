@@ -491,13 +491,13 @@ function render(data, chant) {
 
 						// For the first reading from a Homily.
 						if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
-							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[2], translated[2], [])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated.slice(3).join(' '), 'lectio-incipiens ' + data.tags.join(' '))}`
+							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[2], translated[2], [])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated[3] != '' ? translated.slice(3).join(' &para; ') : '', 'lectio-incipiens ' + data.tags.join(' '))}`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings.
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading.slice(1).join(' &para; '), translated.slice(1).join(' &para; '), (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
+							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderinner(reading[0], translated[0], [])}</p>${annotate(reading.slice(1).join(' &para; '), translated[1] != '' ? translated.slice(1).join(' &para; ') : '', (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
 						// Note that an untitled reading may still be a first reading. This is due to the fact that most Saints lives are begun without title.
 						} else {
-							if (Array.isArray(reading)) { reading = reading.join(' &para; '); translated = translated.join(' ');};
+							if (Array.isArray(reading)) { reading = reading.join(' &para; '); translated = translated[0] != '' ? translated.join(' &para; ') : '';};
 							return annotation + annotate(reading, translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '));
 						}
 					}
