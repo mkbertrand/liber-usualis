@@ -20,14 +20,52 @@
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
+		"tags":["exaltatio-crucis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Christum Regem pro nobis in Cruce exaltátum, * Veníte adorémus."
+	},
+	{
 		"tags":["exaltatio-crucis","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"src":"nocturnale/0914N1A1",
 		"datum":"Nóbile lignum * exaltátur, Christi fides rútilat, dum Crux ab ómnibus venerátur."
 	},
 	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-i","psalmus"],
+		"psalmus-i":[["/psalmi/psalmus-i,gloria"]],
+		"psalmus-ii":[["/psalmi/psalmus-ii,gloria"]],
+		"psalmus-iii":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["exaltatio-crucis","responsorium"],
+		"datum":[["inventio-crucis","responsorium"]]
+	},
+	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Gloriósum diem sacra venerátur Ecclésia, dum triumphále exaltátur lignum:"
+	},
+	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"versus":"Crux præcellénti decóre fúlgida, quam Hélena Constantíni mater concupiscénti ánimo recuperávit."
+	},
+	{
 		"tags":["exaltatio-crucis","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"nocturnale/0914N2A1",
 		"datum":"O Crucis * victória, et admirábile signum, in cœlésti cúria fac nos captáre triúmphum."
+	},
+	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-ii","psalmus"],
+		"psalmus-i":[["/psalmi/psalmus-iv,gloria"]],
+		"psalmus-ii":[["/psalmi/psalmus-x,gloria"]],
+		"psalmus-iii":[["/psalmi/psalmus-xx,gloria"]]
+	},
+	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Dum sacrum pignus cœ\u0301litus exaltátur, Christi fides roborátur:"
+	},
+	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-iii","psalmus"],
+		"psalmus-i":[["/psalmi/psalmus-xcv,gloria"]],
+		"psalmus-ii":[["/psalmi/psalmus-xcvi,gloria"]],
+		"psalmus-iii":[["/psalmi/psalmus-xcvii,gloria"]]
 	},
 	{
 		"tags":["exaltatio-crucis","responsorium-breve"],

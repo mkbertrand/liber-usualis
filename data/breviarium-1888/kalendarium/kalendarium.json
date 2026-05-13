@@ -832,10 +832,11 @@
 	},
 	{
 		"occurrence":["ad-iv-idus-septembris"],
-		"tags":[
-			["nicolaus-tolentino","duplex-minus","confessor"],
-			["protus-hyacinthus","simplex","commemoratio","martyr","martyres"]
-		]
+		"tags":["nicolaus-tolentino","duplex-minus","confessor"]
+	},
+	{
+		"occurrence":["ad-iii-idus-septembris"],
+		"tags":["protus-hyacinthus","simplex","commemoratio","martyr","martyres"]
 	},
 	{
 		"occurrence":["ad-xviii-kalendas-octobris"],
