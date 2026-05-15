@@ -4,7 +4,10 @@
 		"datum":"Impressionis Ss. Stigmatum in corpore S. Francisci"
 	},
 	{
-		"tags":["impressio-stigmatum","vesperae","hymnus"],
+		"tags":[
+			["impressio-stigmatum","vesperae","hymnus"],
+			["impressio-stigmatum","matutinum","hymnus"]
+		],
 		"src":"gregobase/20105",
 		"datum":[
 			"Iste Conféssor Dómini coléntes/Quem pie laudant pópuli per orbem,/Hac die lætus méruit beáta/Vúlnera Christi.",
@@ -22,6 +25,25 @@
 		"tags":["impressio-stigmatum","collecta"],
 		"datum":"Dómine Jesu Christe, qui frigescénte mundo, ad inflammándum corda nostra tui amóris igne, in carne beatíssimi Francísci, passiónis tuæ sacra stígmata renovásti: + concéde propítius; ut ejus méritis et précibus crucem júgiter ferámus, * et dignos fructus pœniténtiæ faciámus:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["impressio-stigmatum","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola beáti Pauli Apóstoli ad Gálatas.",
+			"[Galat. 5. d. et 6.]/Si spíritu vívimus, spíritu et ambulémus. Non efficiámur inánis glóriæ cúpidi, ínvicem provocántes, ínvicem invidéntes. Fratres, et si præoccupátus fúerit homo in áliquo delícto, vos, qui spirituáles estis, hujúsmodi instrúite in spíritu lenitátis, consíderans te ipsum, ne et tu tentéris. Alter altérius ónera portáte, et sic adimplébitis legem Christi. Nam si quis exístimat se áliquid esse, cum nihil sit, ipse se sedúcit. Opus autem suum probet unusquísque, et sic in semetípso tantum glóriam habébit, et non in áltero. Unusquísque enim onus suum portábit. Commúnicet autem is, qui catechizátur verbo, ei, qui se catechízat, in ómnibus bonis."
+		],
+		"lectio-ii":"Nolíte erráre: Deus non irridétur. Quæ enim semináverit homo, hæc et metet. Quóniam qui séminat in carne sua, de carne et metet corruptiónem: qui autem séminat in spíritu, de spíritu metet vitam ætérnam. Bonum autem faciéntes, non deficiámus; témpore enim suo metémus non deficiéntes. Ergo dum tempus habémus, operémur bonum ad omnes, máxime autem ad domésticos fídei. Vidéte quálibus lítteris scripsi vobis mea manu. Quicúmque enim volunt placére in carne, hi cogunt vos circumcídi, tantum ut crucis Christi persecutiónem non patiántur. Neque enim qui circumcidúntur, legem custódiunt: sed volunt vos circumcídi, ut in carne vestra gloriéntur.",
+		"lectio-iii":"Mihi autem absit gloriári, nisi in cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo. In Christo enim Jesu neque circumcísio áliquid valet, neque præpútium, sed nova creatúra. Et quicúmque hanc régulam secúti fúerint, pax super illos, et misericórdia, et super Ísraël Dei. De cétero nemo mihi moléstus sit: ego enim stígmata Dómini Jesu in córpore meo porto. Grátia Dómini nostri Jesu Christi, cum spíritu vestro, fratres. Amen."
+	},
+	{
+		"tags":["impressio-stigmatum","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"[Div. Bonaventura in Legenda S. Francisci, cap. 13.]/Fidélis revéra fámulus et miníster Christi Francíscus, biénnio ántequam spíritum rédderet cœlo, cum in loco excélso seórsum, qui mons Alvérniæ dícitur, quadragenárium ad honórem Archángeli Michaélis jejúnium inchoásset, supérnæ contemplatiónis dulcédine abundántius sólito superfúsus, ac cœléstium desideriórum ardentióri flamma succénsus, supernárum cœpit immissiónum cumulátius dona sentíre. Dum ígitur seráphicis desideriórum ardóribus sursum agerétur in Deum, et afféctus compassíva teneritúdine in eum transformarétur, cui ex caritáte nímia crucifígi complácuit: quodam mane circa festum Exaltatiónis sanctæ Crucis, in látere montis orans, vidit quasi spéciem uníus Séraphim sex alas tam fúlgidas quam ignítas habéntem de cœlórum sublimitáte descéndere: qui volátu celérrimo ad áëris locum viro Dei propínquum pervéniens, non solum alátus, sed et crucifíxus appáruit: manus quidem et pedes habens exténsos, et cruci affíxos, alas vero sic miro modo hinc inde dispósitas, ut duas supra caput erígeret, duas ad volándum exténderet, duábus vero réliquis totum corpus circumplecténdo veláret. Hoc videns, veheménter obstúpuit, mixtúmque dolóri gaúdium mens ejus incúrrit, dum et in gratióso ejus aspéctu sibi tam mirabíliter quam familiáriter apparéntis excessívam quamdam concipiébat lætítiam, et dira conspécta crucis affíxio ipsíus ánimam compassívi dolóris gládio pertransívit.",
+		"lectio-ii":"Intelléxit quidem illo docénte intérius, qui et apparébat extérius: quod licet passiónis infírmitas cum immortalitáte spíritus Seráphici nullátenus conveníret, ídeo tamen hujúsmodi vísio suis fúerat præsentáta conspéctibus; ut amícus ipse Christi prænósceret, se non per martýrium carnis, sed per incéndium mentis totum in Christi Jesu crucifíxi expréssam similitúdinem transformándum. Dispárens ítaque vísio post arcánum ac familiáre collóquium mentem ipsíus seráphico intérius inflammávit ardóre; carnem vero Crucifíxo confórmi extérius insignívit effígie, tamquam si ad ignis liquefactívam virtútem præámbulam sigillatíva quædam esset impréssio subsecúta. Statim namque in mánibus et pédibus ejus apparére cœpérunt signa clavórum, ipsórum capítibus in inferióri parte mánuum et superióri pedum apparéntibus, et eórum acumínibus exsisténtibus ex advérso. Dextrum quoque latus quasi láncea transfíxum rubra cicatríce obdúctum erat: quod sæpe sánguinem sacrum effúndens, túnicam et femorália respergébat.",
+		"lectio-iii":"Postquam ígitur novus homo Francíscus novo et stupéndo miráculo cláruit, cum singulári privilégio retroáctis sǽculis non concésso insignítus appáruit, sacris vidélicet stigmátibus decorátus, descéndit de monte secum ferens Crucifíxi effígiem, non in tábulis lapídeis vel lígneis manu figurátam artíficis, sed in cárneis membris descríptam dígito Dei vivi: quóniam sacraméntum regis Seráphicus vir abscóndere bonum esse óptime norat, secréti regális cónscius, signácula illa sacra pro víribus occultábat. Verum quia Dei est ad glóriam suam magna reveláre, quæ facit Dóminus ipse, qui signácula illa secréte imprésserat, mirácula quædam apérte per ipsa monstrávit, ut illórum occúlta et mira vis stígmatum, manifésta patéret claritáte signórum. Porro rem admirábilem, ac tantópere testátam, atque in pontifíciis diplomátibus præcípuis laúdibus et favóribus exaltátam, Benedíctus Papa undécimus anniversária solemnitáte celebrári vóluit: quam póstea Paulus quintus Póntifex Máximus, ut corda fidélium in Christi crucifíxi accenderéntur amórem, ad univérsam Ecclésiam propagávit."
+	},
+	{
+		"tags":["impressio-stigmatum","matutinum","nocturna-iii","lectio"],
+		"datum":[["martyr","alia-homilia","lectio"]]
 	},
 	{
 		"tags":["impressio-stigmatum","laudes","hymnus"],

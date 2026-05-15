@@ -30,7 +30,7 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","capitulum"],
-		"datum":"Cui comparábo te? vel cui assimilábo te fília Jerúsalem? cui exæquábo te, et consolábor te virgo fília Sion? magna est velut mare contrítio tua."
+		"datum":"[Thren. 2. d.]/Cui comparábo te? vel cui assimilábo te fília Jerúsalem? cui exæquábo te, et consolábor te virgo fília Sion? magna est velut mare contrítio tua."
 	},
 	{
 		"tags":["septem-dolores-septembris","vesperae","hymnus"],
@@ -44,7 +44,10 @@
 		]
 	},
 	{
-		"tags":["septem-dolores-septembris","vesperae","versiculus"],
+		"tags":[
+			["septem-dolores-septembris","vesperae","versiculus"],
+			["septem-dolores-septembris","matutinum","nocturna-i","versiculus"]
+		],
 		"datum":["V. Regína Mártyrum ora pro nobis.","R. Quæ juxta crucem Jesu constitísti."]
 	},
 	{
@@ -56,6 +59,209 @@
 		"tags":["septem-dolores-septembris","collecta"],
 		"datum":"Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit: + concéde propítius; ut qui dolóres ejus venerándo recólimus, * passiónis tuæ efféctum felícem consequámur:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0915I",
+		"datum":"Stemus juxta crucem cum María Matre Jesu, * Cujus ánimam dolóris gládius pertransívit."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","hymnus"],
+		"src":"nocturnale/0915H",
+		"datum":[
+			"Jam toto súbitus vesper eat polo,/Et sol attónitum præcípitet diem,/Dum sæve récolo ludíbrium necis,/Divinámque catástrophen.",
+			"Spectátrix áderas supplício Parens,/Malis uda, gerens cor adamántinum:/Natus funérea péndulus in cruce/Altos dum gémitus dabat.",
+			"Pendens ante óculos Natus, atrócibus/Sectus verbéribus, Natus hiántibus/Fossus vulnéribus, quot penetrántibus/Te confíxit acúleis!",
+			"Heu! sputa, álapæ, vérbera, vúlnera,/Clavi, fel áloë, spóngia, láncea,/Sitis spina, curor, quam vária pium/Cor pressére tyránnide!",
+			"Cunctis intérea stat generósior/Virgo Martýribus: prodígio novo,/In tantis móriens non móreris Parens,/Diris fixa dolóribus.",
+			"Sit summæ Tríadi glória, laus, honor,/A qua supplíciter, sollícita prece,/Posco virgínei róboris ǽmulas/Vires rebus in ásperis.","Amen."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0915N1A1",
+		"datum":"Multiplicáti sunt, * qui tríbulant me: multi insúrgunt advérsum me."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0915N1A2",
+		"datum":"Paravérunt * sagíttas suas in pháretra, ut sagíttent in obscúro rectos corde."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-x,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0915N1A3",
+		"datum":"Defécit * in dolóre vita mea, et anni mei in gemítibus."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxx,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Jeremía Prophéta.",
+			"[Thren. 1.]/Plorans plorávit in nocte, et lácrimæ ejus in maxíllis ejus: non est qui consolétur eam ex ómnibus caris ejus: omnes amíci ejus sprevérunt eam, et facti sunt ei inimíci. Vide Dómine quóniam tríbulor, conturbátus est venter meus: subvérsum est cor meum in memetípsa, quóniam amaritúdine plena sum. Foris intérficit gládius, et domi mors símilis est. Audiérunt quia ingemísco ego, et non est qui consolétur me."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Símeon vir justus et timorátus, dixit ad Maríam:",
+		"responsum":"Tuam ipsíus ánimam pertransíbit gládius.",
+		"versus":"Ne vocétis me pulchram, sed amáram, quia amaritúdine valde replévit me Omnípotens."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"[Thren. 2. d.]/Cui comparábo te? vel cui assimilábo te fília Jerúsalem? cui exæquábo te, et consolábor te virgo fília Sion? magna est enim velut mare contrítio tua: quis medébitur tui? Plausérunt super te mánibus omnes transeúntes per viam: sibilavérunt, et movérunt caput suum super fíliam Jerúsalem: Hǽccine est urbs, dicéntes, perfécti decóris, gaúdium univérsæ terræ? Aperuérunt super te os suum omnes inimíci tui: sibilavérunt, et fremuérunt déntibus, et dixérunt: Devorábimus."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Surge, et áccipe púerum et matrem ejus, et fuge in Ægýptum:",
+		"responsum":"Et esto ibi usque dum dicam tibi.",
+		"versus":"Vocávi fílium meum ex Ægýpto, ut véniat salus in Ísraël."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Fecit Dóminus quæ cogitávit, complévit sermónem suum, quem præcéperat a diébus antíquis: destrúxit, et non pepércit, et lætificávit super te inimícum, et exaltávit cornu hóstium tuórum. Clamávit cor eórum ad Dóminum super muros fíliæ Sion: Deduc quasi torréntem lácrimas per diem, et noctem: non des réquiem tibi, neque táceat pupílla óculi tui."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"formula":[["duplex-responsum"]],
+		"incipit":"Fili, quid fecísti nobis sic?",
+		"responsum-i":"Ego et pater tuus",
+		"responsum-ii":"Doléntes quærebámus te.",
+		"versus":"Quid est, quod me quærebátis? In his, quæ Patris mei sunt, opórtet me esse."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0915N2A1",
+		"datum":"Factum est cor meum * tamquam cera liquéscens in médio ventris mei."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xxi,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0915N2A2",
+		"datum":"Deus vitam meam * annuntiávi tibi: posuísti lácrimas meas in conspéctu tuo."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lv,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0915N2A3",
+		"datum":"Fuérunt * mihi lácrimæ meæ panes die ac nocte."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xli,gloria"]]
+	},
+	{
+		"tags":[
+			["septem-dolores-septembris","matutinum","nocturna-ii","versiculus"],
+			["septem-dolores-septembris","sexta","versiculus"]
+		],
+		"datum":["V. Fascículus myrrhæ diléctus meus mihi.","R. Inter úbera mea commorábitur."]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Bernárdi Abbátis.",
+			"[Ex Sermone de duodecim stellis.]/Martýrium Vírginis tam in Simeónis prophetía, quam in ipsa Domínicæ passiónis história commendátur. Pósitus est hic (ait sanctus senex de púero Jesu) in signum cui contradicétur; et tuam ipsíus ánimam (ad Maríam autem dicébat) pertransíbit gládius. Vere tuam, o beáta Mater, ánimam pertransívit: alióquin, nónnisi eam pertránsiens, carnem Fílii tui penetráret. Et quidem posteáquam emísit spíritum tuus ille Jesus, ipsíus plane non áttigit ánimam crudélis láncea, quæ ipsíus apéruit latus, sed tuam útique ánimam pertransívit. Ipsíus nimírum ánima jam ibi non erat, sed tua plane inde nequíbat avélli."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Jesum bajulántem sibi crucem",
+		"responsum":"Sequebátur turba mulíerum, quæ plangébant et lamentabántur eum.",
+		"versus":"Fíliæ Jerúsalem super vos ipsas flete, et super fílios vestros."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Tuam ergo pertransíbit ánimam vis dolóris, ut plusquam Mártyrem non immérito prædicémus, in qua nimírum corpóreæ sensum passiónis excésserit compassiónis afféctus. An non tibi plusquam gládius fuit sermo ille, revéra pertránsiens ánimam, et pertíngens usque ad divisiónem ánimæ et spíritus: Múlier, ecce fílius tuus? O commutatiónem! Joánnes tibi pro Jesu tráditur, servus pro Dómino, discípulus pro Magístro, fílius Zebedǽi pro Fílio Dei, homo purus pro Deo vero. Quómodo non tuam affectuosíssimam ánimam pertransíret hæc audítio, quando et nostra, licet sáxea, licet férrea péctora, sola recordátio scindit?"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Postquam venérunt in locum, qui dícitur Calváriæ, ibi crucifixérunt eum:",
+		"responsum":"Stabat autem juxta crucem Jesu Mater ejus.",
+		"versus":"Tunc beátam illíus ánimam dolóris gládius pertransívit."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Non mirémini, fratres, quod María Martyr in ánima fuísse dicátur. Mirétur qui non memínerit se audivísse Paulum inter máxima Géntium crímina memorántem, quod sine affectióne fuíssent. Longe id fuit a Maríæ viscéribus, longe sit a sérvulis ejus. Sed forte quis dicat: Numquid non eum præscíerat moritúrum? Et indubitánter. Numquid non sperábat contínuo resurrectúrum? Et fidéliter. Super hæc dóluit crucifíxum? Et veheménter. Alióquin quisnam tu, frater, aut unde tibi hæc sapiéntia, ut miréris plus Maríam compatiéntem, quam Maríæ Fílium patiéntem? Ille étiam mori córpore pótuit; ista cómmori corde non pótuit? Fecit illud cáritas, qua majórem nemo hábuit: fecit et hoc cáritas, cui post illam símilis áltera non fuit."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Joseph ab Arimathǽa",
+		"responsum-i":"Pétiit corpus Jesu, quod, de cruce depósitum,",
+		"responsum-ii":"Suo compléxu Mater excépit.",
+		"versus":"Dolens Sunamítis sinu et génibus suis sustínuit mórtuum fílium."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0915N3A1",
+		"datum":"Intendérunt arcum * rem amáram, ut sagíttent in occúltis immaculátum."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0915N3A2",
+		"datum":"Ánima mea * turbáta est valde: sed tu Dómine úsquequo?"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-vi,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0915N3A3",
+		"datum":"Deus adjútor * in tribulatiónibus, quæ invenérunt nos nimis."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xlv,gloria"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Per te salútem hauriámus, Virgo María.","R. Ex vulnéribus Christi."]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 19. e.]/In illo témpore: Stabant juxta crucem Jesu Mater ejus, et soror Matris ejus María Cléophæ, et María Magdaléne. Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[De Institut. Virg. cap. 7.]/Stabat juxta crucem Mater, et fugiéntibus viris, stabat intrépida. Vidéte, utrum pudórem mutáre potúerit Mater Jesu, quæ ánimum non mutávit. Spectábat piis óculis Fílii vúlnera, per quæ sciébat ómnibus futúram redemptiónem. Spectábat non degéneri Mater spectáculo, quæ non metúerat peremptórem. Pendébat in cruce Fílius: Mater se persecutóribus offerébat."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Quis tibi sensus fuit, o Mater dolórum,",
+		"responsum":"Dum Joseph síndone Fílium tuum invólvit, et pósuit eum in monuménto?",
+		"versus":"Consideráte et vidéte, si est dolor, sicut dolor meus."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","lectio","habens-commemorationem-matutini","include-inauthenticas"],
+		"lectio-ii":"[Ex ejusdem Epist. 25. ad Ecclesiam Vercellensem, prope finem.]/María Mater Dómini ante crucem Fílii stabat. Nullus me hoc dócuit, nisi sanctus Joánnes Evangelísta. Mundum álii concússum in passióne Dómini conscripsérunt, cœlum ténebris obdúctum, refugísse solem, in paradísum latrónem, sed post piam confessiónem, recéptum. Joánnes dócuit quod álii non docuérunt, quemádmodum in cruce pósitus Matrem appelláverit. Pluris putátur, quod victor suppliciórum pietátis offícia Matri exhibébat, quam quod regnum cœléste donábat. Nam si religiósum est, quod latróni donátur vénia, multo uberióris pietátis est, quod a Fílio Mater tanto afféctu honorátur."
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"In toto corde tuo gémitus Matris tuæ ne obliviscáris,",
+		"responsum":"Ut perficiátur propitiátio et benedíctio.",
+		"versus":"Ave princeps generósa, Martyrúmque prima rosa, Virginúmque lílium."
 	},
 	{
 		"tags":["septem-dolores-septembris","laudes","hymnus"],
@@ -91,7 +297,7 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","sexta","capitulum"],
-		"datum":"Plorans plorávit in nocte, + et lácrimæ ejus in maxíllis ejus: * non est qui consolétur eam ex ómnibus caris ejus."
+		"datum":"[Thren. 1.]/Plorans plorávit in nocte, + et lácrimæ ejus in maxíllis ejus: * non est qui consolétur eam ex ómnibus caris ejus."
 	},
 	{
 		"tags":["septem-dolores-septembris","sexta","responsorium-breve"],
@@ -100,12 +306,8 @@
 		"versus":"Conturbáta sunt ómnia víscera mea."
 	},
 	{
-		"tags":["septem-dolores-septembris","sexta","versiculus"],
-		"datum":["V. Fascículus myrrhæ diléctus meus mihi.","R. Inter úbera mea commorábitur."]
-	},
-	{
 		"tags":["septem-dolores-septembris","nona","capitulum"],
-		"datum":"Deduc quasi torréntem lácrimas per diem, et noctem: + non des réquiem tibi, * neque táceat pupílla óculi tui."
+		"datum":"[Thren. 2. f.]/Deduc quasi torréntem lácrimas per diem, et noctem: + non des réquiem tibi, * neque táceat pupílla óculi tui."
 	},
 	{
 		"tags":["septem-dolores-septembris","nona","responsorium-breve"],

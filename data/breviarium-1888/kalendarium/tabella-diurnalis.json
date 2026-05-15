@@ -59,6 +59,14 @@
 		"remove":["primarium","commemoratio"]
 	},
 	{
+		"include":["quatuor-tempora"],
+		"recheck":false,
+		"response":[
+			{"include":["feria"],"response":"combina","target":0},
+			{"include":["vigilia"],"remove":"commemoratio","adde":"omissum","target":1}
+		]
+	},
+	{
 		"include":["vigilia"],
 		"recheck":false,
 		"exclude":[["omissum"],["commemoratio"],["semiduplex"],["duplex-minus"]],
@@ -77,13 +85,6 @@
 			{"include":["feria","feria-v"],"adde":["feria-v","feria"],"target":0},
 			{"include":["feria","feria-vi"],"adde":["feria-vi","feria"],"target":0},
 			{"include":["feria","sabbatum"],"adde":["sabbatum","feria"],"target":0}
-		]
-	},
-	{
-		"include":["quatuor-tempora"],
-		"recheck":false,
-		"response":[
-			{"include":["feria"],"response":"combina","target":0}
 		]
 	},
 	{
@@ -200,6 +201,12 @@
 		"include":["dominica","commemoratio-matutini"],
 		"response":[
 			{"include":["simplex","commemoratio-matutini"],"response":"dele","target":1}
+		]
+	},
+	{
+		"include":["quatuor-tempora","commemoratio-matutini"],
+		"response":[
+			{"include":["vigilia","commemoratio-matutini"],"response":"dele","target":1}
 		]
 	},
 	{
