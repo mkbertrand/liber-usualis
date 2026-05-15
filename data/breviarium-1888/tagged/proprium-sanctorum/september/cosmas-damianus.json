@@ -11,5 +11,18 @@
 	{
 		"tags":["cosmas-damianus","matutinum","nocturna-i","lectio"],
 		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["cosmas-damianus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Cosmas et Damiánus, fratres Árabes, in Ægéa urbe nati, nóbiles médici, imperatóribus Diocletiáno et Maximiáno, non magis medicínæ sciéntia quam Christi virtúte, morbis étiam insanabílibus medebántur. Quorum religiónem cum Lýsias præféctus cognovísset, addúci eos ad se jubet, ac de vivéndi institúto et de fídei professióne interrogátos, cum se et Christiános esse, et christiánam fidem esse ad salútem necessáriam, líbere prædicárent, deos venerári ímperat; et si id recúsent, minátur cruciátus et necem acerbíssimam.",
+		"lectio-ii":"Verum ut se frustra hæc illis propónere intélligit: Colligáte, inquit, manus et pedes istórum, eósque exquisítis torquéte supplíciis. Quibus jussa exsequéntibus, nihilóminus Cosmas et Damiánus in senténtia persistébant. Quare ut erant vincti, in profúndum mare jaciúntur: unde cum salvi ac solúti essent egréssi, mágicis ártibus præféctus factum assígnans, in cárcerem tradit, ac postrídie edúctos, in ardéntem rogum ínjici jubet: ubi cum ab ipsis flamma refúgeret, várie et crudéliter tortos secúri pércuti vóluit. Ítaque in Jesu Christi confessióne martýrii palmam accepérunt.",
+		"lectio-iii":[
+			"Sermo sancti Augustíni Epíscopi.",
+			"[Serm. 47. de Sanctis.]/Quotiescúmque, fratres caríssimi, sanctórum Mártyrum solémnia celebrámus, ita, ipsis intercedéntibus, exspectémus a Dómino cónsequi temporália benefícia, ut ipsos Mártyres imitándo accípere mereámur ætérna. Ab ipsis enim sanctórum Mártyrum in veritáte festivitátum gaúdia celebrántur, qui ipsórum Mártyrum exémpla sequúntur. Solemnitátes enim Mártyrum exhortatiónes sunt martyriórum: ut imitári non pígeat, quod celebráre deléctat."
+		]
+	},
+	{
+		"tags":["cosmas-damianus","matutinum","nocturna-iii","lectio"],
+		"datum":[["martyres","martyr","alia-homilia","lectio"]]
 	}
 ]

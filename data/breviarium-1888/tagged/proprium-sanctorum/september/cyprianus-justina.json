@@ -10,6 +10,9 @@
 	},
 	{
 		"tags":["cyprianus-justina","matutinum","lectio"],
-		"lectio-i":[["temporale","occurrens","lectio-i","lectio"],["temporale","occurrens","lectio-ii","lectio"],["temporale","occurrens","lectio-iii","lectio"]]
+		"include-inauthenticas":[["lectio-binaria"]],
+		"lectio-commemorationis":[["lectio-binaria"]],
+		"lectio-i":"Cypriánus primum magus, póstea Martyr, cum Justínam, christiánam vírginem, quam júvenis quidam ardénter amábat, cantiónibus ac venefíciis ad ejus libídinis assénsum allícere conarétur, dǽmonem consúluit, quanam id re cónsequi posset. Cui dæmon respóndit, nullam illi artem processúram advérsus eos, qui vere Christum cólerent. Quo respónso commótus Cypriánus, veheménter dolére cœpit vitæ superióris institútum. Ítaque relíctis mágicis ártibus, se totum ad Christi Dómini fidem convértit.",
+		"lectio-ii":"Quam ob causam una cum vírgine Justína comprehénsus est, et ambo cólaphis flagellísque cæsi sunt: mox in cárcerem conjécti, si forte senténtiam commutárent. Verum inde póstea emíssi, cum in christiána religióne constantíssimi reperiréntur, in sartáginem plenam fervéntis picis, ádipis et ceræ injécti sunt. Demum Nicomedíæ secúri feriúntur. Quorum projécta córpora, cum sex dies inhumáta jacuíssent, noctu quidam nautæ clam ea in navem impósita Romam portavérunt: ac primum in prǽdio Rufínæ nóbilis féminæ sepúlta sunt: póstea transláta in Urbem, in basílica Constantiniána cóndita sunt prope baptistérium."
 	}
 ]
