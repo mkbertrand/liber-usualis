@@ -17,6 +17,29 @@
 		"terminatio":[["terminatio","qui-tecum-vivit"]]
 	},
 	{
+		"tags":["inventio-stephani","matutinum","nocturna-i","lectio"],
+		"datum":[["stephanus","dies-octava","lectio"]]
+	},
+	{
+		"tags":["inventio-stephani","matutinum","responsorium"],
+		"nocturna-i":[["stephanus","matutinum","responsorium"]],
+		"nocturna-ii":[["stephanus","matutinum","responsorium"]],
+		"nocturna-iii":[["stephanus","matutinum","responsorium"]]
+	},
+	{
+		"tags":["inventio-stephani","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Sanctórum córpora Stéphani Protomártyris, Gamaliélis, Nicodémi et Abibónis, quæ diu in obscúro ac sórdido loco jacúerant, Honório imperatóre, Luciáno presbýtero divínitus admónito, invénta sunt prope Jerosólymam. Cui Gamáliel cum in somnis apparuísset, gravi quadam et præclára senis spécie, locum jacéntium córporum commonstrávit, ímperans, ut Joánnem Jerosolymitánum antístitem adíret, agerétque cum eo, ut honéstius illa córpora sepeliréntur.",
+		"lectio-ii":"Quibus audítis Jerosolymórum antístes, finitimárum úrbium epíscopis presbyterísque convocátis, ad locum pergit: defóssos lóculos ínvenit, unde suavíssimus odor efflabátur. Cujus rei fama commóta, magna hóminum multitúdo eo convénit, multíque ex váriis morbis ægróti ac débiles, sani et íntegri domum rediérunt. Sacrum autem sancti Stéphani corpus, quod summa tunc celebritáte in sanctam ecclésiam Sion illátum est, sub Theodósio junióre Constantinópolim, inde Romam Pelágio primo Summo Pontífice translátum, in agro Veráno in sepúlchro sancti Lauréntii Mártyris collocátum est.",
+		"lectio-iii":[
+			"Ex libro sancti Augustíni Epíscopi de Civitáte Dei.",
+			"[Lib. 22. Cap. 8. circa med.]/Ad aquas Tibilitánas epíscopo afferénte Projécto relíquias Mártyris gloriosíssimi Stéphani, ad ejus memóriam veniébat magnæ multitúdinis concúrsus et occúrsus. Ibi cæca múlier, ut ad epíscopum portántem pígnora sacra ducerétur, orávit: flores, quos ferébat, dedit: recépit, óculis admóvit, prótinus vidit. Stupéntibus qui áderant, præíbat exsúltans, viam carpens, et viæ ducem ultérius non requírens. Memoráti memóriam Mártyris, quæ pósita est in castéllo Synicénsi quod Hipponénsi colóniæ vicínum est, ejúsdem loci Lucíllus epíscopus, pópulo præcedénte atque sequénte, portábat; fístula, cujus moléstia jámdiu laboráverat, et familiaríssimi sui médici, qui eam secáret, operiebátur manus, illíus piæ sárcinæ vectatióne repénte sanáta est."
+		]
+	},
+	{
+		"tags":["inventio-stephani","matutinum","nocturna-iii","lectio"],
+		"datum":[["stephanus","lectio"]]
+	},
+	{
 		"tags":["inventio-stephani","laudes","versiculus"],
 		"datum":[["stephanus","laudes","versiculus"]]
 	},
