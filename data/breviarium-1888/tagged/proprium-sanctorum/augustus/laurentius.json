@@ -34,7 +34,7 @@
 	},
 	{
 		"tags":["laurentius","capitulum"],
-		"datum":"Fratres: Qui parce séminat, parce et metet: + et qui séminat in benedictiónibus, * de benedictiónibus et metet."
+		"datum":"[II. Cor. 9. b.]/Fratres: Qui parce séminat, parce et metet: + et qui séminat in benedictiónibus, * de benedictiónibus et metet."
 	},
 	{
 		"tags":["laurentius","i-vesperae","antiphona","antiphona-magnificat"],
@@ -47,6 +47,146 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["laurentius","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0810I",
+		"datum":"Beátus Lauréntius Christi Martyr triúmphat coronátus in cœlis: * Veníte adorémus Dóminum."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0810N1A1",
+		"datum":"Quo progréderis * sine fílio pater? quo sacérdos sancte sine minístro próperas?"
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0810N1A2",
+		"datum":"Noli me derelínquere * pater sancte, quia thesaúros tuos jam expéndi, quos tradidísti mihi."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0810N1A3",
+		"datum":"Non ego te désero * fili, neque derelínquo: sed majóra tibi debéntur pro Christi fide certámina."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De libro Ecclesiástici.",
+			"[Eccli. 51.]/Confitébor tibi, Dómine Rex, et collaudábo te Deum Salvatórem meum. Confitébor nómini tuo: quóniam adjútor et protéctor factus es mihi, et liberásti corpus meum a perditióne, a láqueo linguæ iníquæ, et a lábiis operántium mendácium, et in conspéctu astántium factus es mihi adjútor. Et liberásti me secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus præparátis ad escam, de mánibus quæréntium ánimam meam, et de portis tribulatiónum, quæ circumdedérunt me: a pressúra flammæ, quæ circúmdedit me, et in médio ignis non sum æstuátus: de altitúdine ventris ínferi, et a lingua coinquináta, et a verbo mendácii, a rege iníquo, et a lingua injústa."
+		]
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Levíta Lauréntius bonum opus operátus est, qui per signum crucis cæcos illuminávit,",
+		"responsum":"Et thesaúros Ecclésiæ dedit paupéribus.",
+		"versus":"Dispérsit, dedit paupéribus: justítia ejus manet in sǽculum sǽculi."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"Laudábit usque ad mortem ánima mea Dóminum, et vita mea appropínquans erat in inférno deórsum. Circumdedérunt me úndique, et non erat qui adjuváret. Respíciens eram ad adjutórium hóminum, et non erat. Memorátus sum misericórdiæ tuæ Dómine, et operatiónis tuæ, quæ a sǽculo sunt: quóniam éruis sustinéntes te Dómine, et líberas eos de mánibus géntium. Exaltásti super terram habitatiónem meam, et pro morte defluénte deprecátus sum."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Puer meus noli timére, quia ego tecum sum, dicit Dóminus:",
+		"responsum":"Si transíeris per ignem, flamma non nocébit tibi, et odor ignis non erit in te.",
+		"versus":"Liberábo te de manu pessimórum, et éruam te de manu fórtium."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Invocávi Dóminum Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório. Laudábo nomen tuum assídue, et collaudábo illud in confessióne, et exaudíta est orátio mea. Et liberásti me de perditióne, et eripuísti me de témpore iníquo. Proptérea confitébor, et laudem dicam tibi, et benedícam nómini Dómini."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Strinxérunt córporis membra pósita super cratículam: ministrántibus prunas insúltat Levíta Christi:",
+		"responsum":"Beáte Laurénti, Martyr Christi, intercéde pro nobis.",
+		"versus":"Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0810N2A1",
+		"datum":"Beátus Lauréntius * orábat, dicens: Dómine Jesu Christe, Deus de Deo, miserére mihi servo tuo."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0810N2A2",
+		"datum":"Dixit Románus * ad beátum Lauréntium: Vídeo ante te júvenem pulchérrimum, festína me baptizáre."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0810N2A3",
+		"datum":"Beátus Lauréntius * dixit: Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Leónis Papæ.",
+			"[In Natali S. Laurentii, post initium.]/Cum furor Gentílium potestátum in electíssima quæque Christi membra sævíret, ac præcípue eos, qui órdinis erant sacerdotális, impéteret, in Levítam Lauréntium, qui non solum ministério sacramentórum, sed étiam dispensatióne ecclesiásticæ substántiæ præeminébat, ímpius persecútor efférbuit, dúplicem sibi prædam de uníus viri comprehensióne promíttens: quem si fecísset sacræ pecúniæ traditórem, fáceret étiam veræ religiónis exsórtem. Armátur ítaque gémina face homo pecúniæ cúpidus, et veritátis inimícus: avarítia, ut rápiat aurum: impietáte, ut aúferat Christum. Póstulat sibi ab immaculáto sacrárii prǽsule opes ecclesiásticas, quibus avidíssimus inhiábat, inférri. Cui Levíta castíssimus, ubi eas repósitas habéret, osténdens, numerosíssimos sanctórum paúperum óbtulit greges, in quorum victu atque vestítu inamissíbiles condíderat facultátes: quæ tanto intégrius erant salvæ, quanto sánctius probabántur expénsæ."
+		]
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Quo progréderis sine fílio pater? quo sacérdos sancte, sine diácono próperas?",
+		"responsum":"Tu numquam sine minístro sacrifícium offérre consuéveras.",
+		"versus":"Quid ergo in me displícuit paternitáti tuæ? Numquid degénerem me probásti? Experíre utrum idóneum minístrum elégeris, cui commisísti Domínici sánguinis dispensatiónem."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Fremit ergo prædo frustrátus, et in ódium religiónis, quæ talem divitiárum usum instituísset, ardéscens, direptiónem thesaúri potióris aggréditur, apud quem nullam denariórum substántiam reperísset: ut illud depósitum, quo sacrátius erat dives, auférret. Renuntiáre Christo Lauréntium jubet, et solidíssimam illam levítici ánimi fortitúdinem diris parat urgére supplíciis: quorum ubi prima nil óbtinent, vehementióra succédunt. Láceros artus, et multa vérberum sectióne conscíssos, subjécto prǽcipit igne torréri: ut per cratem férream, quæ jam de fervóre contínuo vim in se habéret uréndi, conversórum altérna mutatióne membrórum, fíeret cruciátus veheméntior, et pœna prodúctior."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Noli me derelínquere pater sancte, quia thesaúros tuos jam expéndi.",
+		"responsum":"Non ego te désero fili, neque derelínquo: sed majóra tibi debéntur pro fide Christi certámina.",
+		"versus":"Non quasi senes levióris pugnæ cursum recípimus, te autem quasi júvenem manet gloriósior de tyránno triúmphus: post tríduum me sequéris sacerdótem levíta."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Nihil óbtines, nihil próficis sæva crudélitas. Subtráhitur torméntis tuis matéria mortális, et Lauréntio in cœlos abeúnte, tu déficis flammis tuis. Superári cáritas Christi flamma non pótuit: et ségnior fuit ignis, qui foris ussit, quam qui intus accéndit. Sævísti persecútor in Mártyrem: sævísti, et auxísti palmam, dum ággeras pœnam. Nam quid non ad victóris glóriam ingénium tuum réperit, quando in honórem transiérunt triúmphi étiam instruménta supplícii? Gaudeámus ígitur dilectíssimi gaúdio spiritáli, et de felicíssimo ínclyti viri fine gloriémur in Dómino, qui est mirábilis in sanctis suis, in quibus nobis et præsídium constítuit et exémplum: atque ita per univérsum mundum clarificávit glóriam suam, ut a solis ortu usque ad occásum, leviticórum lúminum coruscánte fulgóre, quam clarificáta est Jerosólyma Stéphano, tam illústris fíeret Roma Lauréntio."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Beátus Lauréntius clamávit, et dixit: Deum meum colo, illi soli sérvio:",
+		"responsum":"Et ídeo non tímeo torménta tua.",
+		"versus":"Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0810N3A1",
+		"datum":"Strinxérunt córporis * membra pósita super cratículam: subjiciéntibus prunas insúltat Levíta Christi."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0810N3A2",
+		"datum":"Igne me examinásti, * et non est invénta in me iníquitas."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xvi,gloria"]]
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0810N3A3",
+		"datum":"Interrogátus * te Dóminum conféssus sum, assátus grátias ago."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","lectio"],
+		"datum":[["ignatius","lectio"]]
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"In cratícula te Deum non negávi,",
+		"responsum":"Et ad ignem applicátus te Dóminum Jesum Christum conféssus sum.",
+		"versus":"Probásti Dómine cor meum, et visitásti nocte."
+	},
+	{
+		"tags":["laurentius","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"O Hippólyte, si credíderis in Dóminum Jesum Christum,",
+		"responsum":"Et thesaúros tibi osténdo, et vitam ætérnam promítto.",
+		"versus":"Beátus Lauréntius Hippólyto dixit: Si credis in Dóminum Jesum Christum."
+	},
+	{
 		"tags":["laurentius","laudes","versiculus"],
 		"datum":["V. Dispérsit, dedit paupéribus.","R. Justítia ejus manet in sǽculum sǽculi."]
 	},
@@ -57,11 +197,11 @@
 	},
 	{
 		"tags":["laurentius","sexta","capitulum"],
-		"datum":"Unusquísque prout destinávit in corde suo, + non ex tristítia, aut ex necessitáte: * hílarem enim datórem díligit Deus."
+		"datum":"[II. Cor. 9. b.]/Unusquísque prout destinávit in corde suo, + non ex tristítia, aut ex necessitáte: * hílarem enim datórem díligit Deus."
 	},
 	{
 		"tags":["laurentius","nona","capitulum"],
-		"datum":"Potens est autem Deus omnem grátiam abundáre fácere in vobis: + ut in ómnibus semper omnem sufficiéntiam habéntes, abundétis in omne opus bonum, sicut scriptum est: Dispérsit, dedit paupéribus: * justítia ejus manet in sǽculum sǽculi."
+		"datum":"[II. Cor. 9. c.]/Potens est autem Deus omnem grátiam abundáre fácere in vobis: + ut in ómnibus semper omnem sufficiéntiam habéntes, abundétis in omne opus bonum, sicut scriptum est: Dispérsit, dedit paupéribus: * justítia ejus manet in sǽculum sǽculi."
 	},
 	{
 		"tags":["laurentius","ii-vesperae","versiculus"],

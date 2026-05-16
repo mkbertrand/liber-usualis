@@ -13,6 +13,25 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["cajetanus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["cajetanus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Cajetánus, nóbili Thienǽa gente Vicéntiæ ortus, statim a matre Deíparæ Vírgini oblátus est. Mira a téneris annis morum innocéntia in eo elúxit, ádeo ut Sanctus ab ómnibus nuncuparétur. Juris utriúsque laúream Patávii adéptus, Romam proféctus est: ubi inter prælátos a Júlio secúndo collocátus, et sacerdótio initiátus, tanto divíni amóris æstu succénsus est, ut relícta aula se totum Deo mancipáverit. Nosocomíis próprio ære fundátis, étiam morbo pestilénti laborántibus, suis ipse mánibus inserviébat. Proximórum salúti assídua cura incumbébat, dictus proptérea Venátor animárum.",
+		"lectio-ii":"Collápsam ecclesiasticórum disciplínam ad formam apostólicæ vitæ instauráre desíderans, órdinem Clericórum regulárium instítuit, qui, abdicáta rerum ómnium terrenárum sollicitúdine, nec réditus possidérent, nec vitæ subsídia a fidélibus péterent, sed solis eleemósynis sponte oblátis víverent. Ítaque approbánte Cleménte séptimo ad aram máximam basílicæ Vaticánæ una cum Joánne Petro Caráfa epíscopo Theatíno, qui póstea Paulus quartus Póntifex Máximus fuit, et áliis duóbus exímiæ pietátis viris, vota solémnia emísit. In Urbis direptióne a milítibus crudelíssime vexátus ut pecúniam próderet, quam dudum in cœléstes thesaúros manus paúperum deportáverant, vérbera, torménta, et cárceres invícta patiéntia sustínuit. In suscépto vitæ institúto constantíssime perseverávit, soli divínæ providéntiæ inhǽrens, quam sibi numquam defuísse aliquándo mirácula comprobárunt.",
+		"lectio-iii":"Divíni cultus stúdium, nitórem domus Dei, sacrórum rítuum observántiam, et sanctíssimæ Eucharístiæ frequentiórem usum máxime promóvit. Hǽresum monstra et látebras non semel detéxit, ac profligávit. Oratiónem ad octo passim horas júgibus lácrimis protrahébat: sæpe in éxtasim raptus, ac prophetíæ dono illústris. Romæ nocte natalítia ad præsépe Dómini, infántem Jesum accípere méruit a Deípara in ulnas suas. Corpus íntegras noctes intérdum verberatiónibus affligébat; nec umquam addúci pótuit, ut vitæ asperitátem emollíret, testátus, in cínere et cilício velle se mori. Dénique ex ánimi dolóre concépto morbo, quod offéndi plebis seditióne Deum vidéret, cœlésti visióne recreátus, Neápoli migrávit in cœlum: ibíque corpus ejus in ecclésia sancti Pauli magna religióne cólitur. Quem multis miráculis in vita et post mortem gloriósum, Clemens décimus Póntifex Máximus sanctórum número adscrípsit."
+	},
+	{
+		"tags":["cajetanus","matutinum","nocturna-iii","lectio","habens-commemorationem-matutini","include-inauthenticas"],
+		"lectio-i":[["hebdomada-xiv-pentecostes","dominica","lectio-i","lectio"],["hebdomada-xiv-pentecostes","dominica","lectio-ii","lectio"]],
+		"lectio-ii":[["hebdomada-xiv-pentecostes","dominica","lectio-iii","lectio"]]
+	},
+	{
+		"tags":["cajetanus","matutinum","nocturna-iii","lectio"],
+		"datum":[["hebdomada-xiv-pentecostes","dominica","lectio"]]
+	},
+	{
 		"tags":["cajetanus","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["hebdomada-xiv-pentecostes","dominica","laudes","antiphona","antiphona-benedictus"]]
 	}

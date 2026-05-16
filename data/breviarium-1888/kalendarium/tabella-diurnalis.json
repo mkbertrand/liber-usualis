@@ -191,6 +191,20 @@
 		]
 	},
 	{
+		"include":["vigilia-pentecostes","semiduplex"],
+		"response":[
+			{"include":["duplex-minus","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","ad-modum-simplicis"]},
+			{"include":["semiduplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","ad-modum-simplicis"]}
+		]
+	},
+	{
+		"include":["pentecostes","semiduplex"],
+		"response":[
+			{"include":["duplex-minus","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","ad-modum-simplicis"]},
+			{"include":["semiduplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","ad-modum-simplicis"]}
+		]
+	},
+	{
 		"include":["primarium"],
 		"response":[
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
@@ -359,5 +373,9 @@
 			{"include":["ascensio","dies-vii"],"adde":"legitur-occurrente","target":0},
 			{"include":["post-ascensionem","feria-vi"],"adde":"legitur-occurrente","target":0}
 		]
+	},
+	{
+		"include":["ascensio","infra-octavam","commemoratio"],
+		"adde":"temporale"
 	}
 ]

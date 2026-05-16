@@ -7,5 +7,10 @@
 		"tags":["vigilia-laurentii","collecta"],
 		"datum":"Adésto Dómine supplicatiónibus nostris: + et intercessióne beáti Lauréntii Mártyris tui, cujus prævenímus festivitátem, * perpétuam nobis misericórdiam benígnus impénde.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["vigilia-laurentii","matutinum"],
+		"benedictio":[["evangelica-lectio","benedictio"]],
+		"lectio":[["martyr","nocturna-iii","alia-homilia","lectio"]]
 	}
 ]

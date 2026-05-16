@@ -7,5 +7,19 @@
 		"tags":["cyriacus-largus-smaragdus","collecta"],
 		"datum":"Deus, qui nos ánnua sanctórum Mártyrum tuórum Cyríaci, Largi et Smarágdi solemnitáte lætíficas: + concéde propítius; ut quorum natalítia cólimus, * virtútem quoque passiónis imitémur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["cyriacus-largus-smaragdus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["cyriacus-largus-smaragdus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Cyríacus diáconus, cum Sisínio, Largo, et Smarágdo diútius inclúsus in cárcere, multa édidit mirácula, in quibus Arthémiam Diocletiáni fíliam précibus a dǽmone liberávit: missúsque ad Sáporem Persárum regem, Jobíam étiam ejus fíliam a nefário spíritu erípuit. Rege vero ejus patre cum quadringéntis ac trigínta áliis baptizátis Romam rédiit: ubi Maximiáni imperatóris jussu comprehénsus, caténis vinctus ante rhedam suam tráhitur: et post dies quátuor e cárcere edúctus, pice liquáta perfúsus, et in catásta exténsus, demum cum Largo et Smarágdo, aliísque vigínti secúri percússus est via Salária, ad hortos Sallustiános. Quorum córpora in eádem via, décimo séptimo Kaléndas Aprílis, sepúlta a Joánne presbýtero, póstea sexto Idus Augústi a Marcéllo Pontífice, et Lucína nóbili fémina líneis velis involúta, et pretiósis unguéntis condíta, in ipsíus Lucínæ prǽdium via Ostiénsi, séptimo ab Urbe lápide transláta sunt.",
+		"lectio-ii":[["martyres","alia-lectio","lectio-i","lectio"]],
+		"lectio-iii":[["martyres","alia-lectio","lectio-ii","lectio"]]
+	},
+	{
+		"tags":["cyriacus-largus-smaragdus","matutinum","nocturna-iii","lectio"],
+		"datum":[["franciscus-xaverius","lectio"]]
 	}
 ]

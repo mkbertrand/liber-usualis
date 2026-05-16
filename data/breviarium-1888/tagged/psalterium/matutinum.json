@@ -349,7 +349,8 @@
 		"tags":[
 			["matutinum","habens-commemorationem-matutini","nocturna-iii","lectio","include-inauthenticas"],
 			["matutinum","dominica","feria","lectio","include-inauthenticas"],
-			["matutinum","habens-commemorationem-matutini","feria-major","lectio","include-inauthenticas"]
+			["matutinum","habens-commemorationem-matutini","feria-major","lectio","include-inauthenticas"],
+			["matutinum","habens-commemorationem-matutini","pentecostes","lectio","include-inauthenticas"]
 		],
 		"lectio-ii":[["matutinum","nocturna-iii","lectio-ii","lectio"],["matutinum","nocturna-iii","lectio-iii","lectio"]],
 		"lectio-iii":[["commemoratio-matutini","occurrens","lectio-commemorationis","lectio"]]
@@ -361,7 +362,8 @@
 			["matutinum","lectio-ii","lectio"],
 			["matutinum","lectio-iii","lectio"]
 		],
-		"simplex":[["matutinum","nocturna-i","lectio"]]
+		"simplex":[["matutinum","nocturna-i","lectio"]],
+		"ad-modum-simplicis":[["matutinum","nocturna-ii","lectio-i","lectio"],["matutinum","nocturna-ii","lectio-ii","lectio"],["matutinum","nocturna-ii","lectio-iii","lectio"]]
 	},
 	{
 		"tags":["matutinum","simplex","lectio","include-inauthenticas"],

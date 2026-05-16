@@ -37,7 +37,10 @@
 		"datum":"Salvatórem exspectámus Dóminum nostrum Jesum Christum, + qui reformábit corpus humilitátis nostræ, * configurátum córpori claritátis suæ."
 	},
 	{
-		"tags":["transfiguratio","vesperae","hymnus"],
+		"tags":[
+			["transfiguratio","vesperae","hymnus"],
+			["transfiguratio","matutinum","hymnus"]
+		],
 		"src":"gregobase/2309",
 		"datum":[
 			"Quicúmque Christum quǽritis,/Óculos in altum tóllite:/Illic licébit vísere/Signum perénnis glóriæ.",
@@ -60,6 +63,195 @@
 		"tags":["transfiguratio","collecta"],
 		"datum":"Deus, qui fídei sacraménta in Unigéniti tui gloriósa Transfiguratióne patrum testimónio roborásti, et adoptiónem filiórum perféctam, voce delápsa in nube lúcida, mirabíliter præsignásti: + concéde propítius; ut ipsíus Regis glóriæ nos cohærédes effícias, * et ejúsdem glóriæ tríbuas esse consórtes.",
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0806I",
+		"datum":"Summum Regem glóriæ, * Christum adorémus."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0806N1A1",
+		"datum":"Paulo minus ab Ángelis * minorátus, glória et honóre coronátus est, et constitútus super ópera mánuum Dei."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0806N1A2",
+		"datum":"Revelávit * Dóminus condénsa, et in templo ejus omnes dicent glóriam."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xxviii,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":[["circumcisio","nocturna-ii","antiphona","antiphona-i"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xliv,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Gloriósus apparuísti in conspéctu Dómini.","R. Proptérea decórem índuit te Dóminus."]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Epístola secúnda beáti Petri Apóstoli.",
+			"[II. Petr. 1. b.]/Fratres: Magis satágite ut per bona ópera certam vestram vocatiónem et electiónem faciátis: hæc enim faciéntes, non peccábitis aliquándo. Sic enim abundánter ministrábitur vobis intróitus in ætérnum regnum Dómini nostri, et Salvatóris Jesu Christi. Propter quod incípiam vos semper commonére de his: et quidem sciéntes et confirmátos vos in præsénti veritáte. Justum autem árbitror, quámdiu sum in hoc tabernáculo, suscitáre vos in commonitióne: certus quod velox est deposítio tabernáculi mei, secúndum quod et Dóminus noster Jesus Christus significávit mihi."
+		]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Surge, illumináre Jerúsalem, quia venit lumen tuum:",
+		"responsum":"Et glória Dómini super te orta est.",
+		"versus":"Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"Dabo autem óperam et frequénter habére vos post óbitum meum, ut horum memóriam faciátis. Non enim doctas fábulas secúti notam fécimus vobis Dómini nostri Jesu Christi virtútem, et præséntiam: sed speculatóres facti illíus magnitúdinis. Accípiens enim a Deo Patre honórem, et glóriam, voce delápsa ad eum hujuscémodi a magnífica glória: Hic est Fílius meus diléctus, in quo mihi complácui, ipsum audíte."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"In splendénti nube Spíritus sanctus visus est, Patérna vox audíta est:",
+		"responsum":"Hic est Fílius meus diléctus, in quo mihi bene complácui, ipsum audíte.",
+		"versus":"Appáruit nubes obúmbrans, et vox Patris intónuit."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Et hanc vocem nos audívimus de cœlo allátam, cum essémus cum ipso in monte sancto. Et habémus firmiórem prophéticum sermónem: cui bene fácitis attendéntes quasi lucérnæ lucénti in caliginóso loco donec dies elucéscat, et lúcifer oriátur in córdibus vestris: hoc primum intelligéntes, quod omnis prophetía Scriptúræ própria interpretatióne non fit. Non enim voluntáte humána alláta est aliquándo prophetía: sed Spíritu sancto inspiráti, locúti sunt sancti Dei hómines."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Vidéte qualem caritátem dedit nobis Deus Pater,",
+		"responsum":"Ut fílii Dei nominémur et simus.",
+		"versus":"Scimus quóniam cum apparúerit, símiles ei érimus, quóniam vidébimus eum sícuti est."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0806N2A1",
+		"datum":"Illúminans * tu mirabíliter a móntibus ætérnis: turbáti sunt omnes insipiéntes corde."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxv,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0806N2A2",
+		"datum":"Mélior est * dies una in átriis tuis super míllia."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxiii,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0806N2A3",
+		"datum":"Gloriósa * dicta sunt de te cívitas Dei."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxxvi,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Glória et honóre coronásti eum Dómine.","R. Et constituísti eum super ópera mánuum tuárum."]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Leónis Papæ.",
+			"[Serm. de Transfigurat., ante medium.]/Áperit Dóminus coram eléctis téstibus glóriam suam, et commúnem illam cum céteris córporis formam tanto splendóre claríficat, ut et fácies ejus solis fulgóri símilis, et vestítus candóri nívium esset æquális. In qua transfiguratióne illud quidem principáliter agebátur, ut de córdibus discipulórum crucis scándalum tollerétur: nec conturbáret eórum fidem voluntáriæ humílitas passiónis, quibus reveláta esset abscónditæ excelléntia dignitátis. Sed non minóre providéntia spes sanctæ Ecclésiæ fundabátur, ut totum Christi corpus agnósceret, quali esset commutatióne donándum: ut ejus sibi honóris consórtium membra promítterent, qui in cápite præfulsísset."
+		]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Inebriáti sunt ab ubertáte domus tuæ:",
+		"responsum":"Et torrénte voluptátis tuæ potásti eos.",
+		"versus":"Quóniam apud te est fons vitæ, et in lúmine tuo vidébimus lumen."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Confirmándis vero Apóstolis, et ad omnem sciéntiam provehéndis, ália quoque in illo miráculo accéssit instrúctio. Móyses enim et Elías, lex scílicet et prophétæ, apparuérunt cum Dómino loquéntes: ut veríssime in illa quinque virórum præséntia complerétur quod dictum est: In duóbus, vel tribus téstibus stat omne verbum. Quid hoc stabílius, quid fírmius verbo, in cujus prædicatióne véteris et novi testaménti cóncinit tuba, et cum evangélica doctrína antiquárum protestatiónum instruménta concúrrunt? Adstipulántur enim sibi ínvicem utriúsque fœ\u0301deris páginæ: et quem sub velámine mysteriórum præcedéntia signa promíserant, maniféstum atque perspícuum præséntis glóriæ splendor osténdit."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Præcéptor, bonum est nos hic esse:",
+		"responsum":"Faciámus hic tria tabernácula; tibi unum, Móysi unum, et Elíæ unum.",
+		"versus":"Non enim sciébat quid díceret."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"His ergo sacramentórum revelatiónibus Petrus Apóstolus incitátus, mundána spernens, et terréna fastídiens, in æternórum desidérium quodam mentis rapiebátur excéssu: et gaúdio totíus visiónis implétus, ibi cum Jesu optábat habitáre, ubi manifésta ejus glória lætabátur. Unde et ait: Dómine, bonum est nos hic esse: si vis, faciámus hic tria tabernácula, tibi unum, Móysi unum, et Elíæ unum. Sed huic suggestióni Dóminus non respóndit: signíficans, non quidem ímprobum, sed inordinátum esse quod cúperet, cum salvári mundus, nisi Christi morte, non posset: et exémplo Dómini in hoc vocarétur credéntium fides, ut licet non oportéret de beatitúdinis promissiónibus dubitári, intelligerémus tamen inter tentatiónes hujus vitæ prius nobis tolerántiam postulándam esse, quam glóriam."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Si ministrátio mortis, lítteris deformáta in lapídibus, fuit in glória, ita ut non possent inténdere fílii Ísraël in fáciem Móysi, propter glóriam vultus ejus, quæ evacuátur;",
+		"responsum":"Multo magis ministrátio spíritus, quæ manet, erit in glória.",
+		"versus":"Amplióris enim glóriæ Christus præ Móyse dignus est hábitus, quanto ampliórem honórem habet domo, qui fabricávit eam."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0806N3A1",
+		"datum":"Thabor et Hermon * in nómine tuo exsultábunt: tuum bráchium cum poténtia."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxxviii,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0806N3A2",
+		"datum":"Lux orta est justo, * et rectis corde lætítia."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0806N3A3",
+		"datum":"Confessiónem * et decórem índuit, amíctus lúmine sicut vestiménto."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-ciii,gloria"]]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Magna est glória ejus in salutári tuo.","R. Glóriam et magnum decórem impónes super eum."]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 17.]/In illo témpore: Assúmpsit Jesus Petrum, et Jacóbum, et Joánnem, fratrem ejus, et duxit illos in montem excélsum seórsum: et transfigurátus est ante eos. Et réliqua.",
+			"Homilía sancti Joánnis Chrysóstomi.",
+			"[Homil. 57. in Matth., in init.]/Quóniam multa de perículis, multa de passióne sua, multa de morte et de cæde discipulórum locútus est Dóminus: et áspera complúra atque árdua eis injúnxit, et illa quidem in præsénti vita, et jam imminébant; bona vero in spe et exspectatióne erant: ut puta, quia servárent ánimam suam, si pérderent eam; quia in glória Patris sui ventúrus sit, et prǽmia redditúrus: ut visu étiam certióres fáceret, et osténderet quidnam sit illa glória, cum qua ventúrus est, quantum cápere póterant in hac præsénti vita, illis osténdit, eámque détegit, ne aut sua, aut Dómini morte dóleant, et máxime Petrus."
+		]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Vocávit nos Deus vocatióne sua sancta, secúndum grátiam suam, quæ manifestáta est nunc,",
+		"responsum":"Per illuminatiónem Salvatóris nostri Jesu Christi.",
+		"versus":"Qui destrúxit mortem, illuminávit autem vitam in incorruptiónem."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Et vide quid agit, cum de regno et de gehénna disserúerit. Nam in eo quod dixit: Qui ínvenit ánimam suam, perdet eam; et quicúmque perdet eam grátia mei, invéniet ipsam; et in eo quod ait: Reddet unicuíque secúndum ópera sua: et regnum et gehénnam designávit. Cum ígitur de utrísque disserúerit, regnum quidem ut óculis cernátur, concédit; gehénnam autem mínime, quóniam rudióribus atque ineptióribus illud necessárium fuísset: sed cum illi probi essent ac perspicáces, satis fuit eos a melióribus confirmári. Hoc étiam multo magis ipsum decébat; non tamen omníno illud prætermísit, sed et aliquándo atrocitátem gehénnæ quasi ante óculos propónit, véluti cum Lázari imáginem descrípsit, et ejus méminit, qui denários centum repétiit.",
+		"lectio-iii":"Tu vero Matthǽi philosophíam consídera, qui non celávit nómina eórum qui præpósiti fúerant. Quod et Joánnes sǽpius facit, cum exímias Petri laudes veríssime ac diligentíssime descríbat. Nullum enim in hoc Apostolórum consórtio livor, aut inánis glória locum habébat. Primos ígitur Apostolórum seórsum assúmpsit. Quamóbrem eos solos accépit? Quia excellentióres céteris vidélicet erant. Cur autem non íllico, sed post sex dies hoc fecit? Ne céteri scílicet discípuli seu hómines moveréntur: qua de re nec eos nominávit, quos acceptúrus erat."
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Deus, qui fecit de ténebris lumen splendéscere, illúxit in córdibus nostris,",
+		"responsum":"Ad illuminatiónem sciéntiæ claritátis Dei, in fácie Jesu Christi.",
+		"versus":"Exórtum est in ténebris lumen rectis corde, miséricors, et miserátor, et justus."
 	},
 	{
 		"tags":["transfiguratio","laudes","hymnus"],

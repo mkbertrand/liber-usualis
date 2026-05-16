@@ -56,6 +56,11 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["rogatio","collecta"],
+		"datum":[["hebdomada-v-paschae","collecta"]],
+		"terminatio":[["hebdomada-v-paschae","collecta","terminatio"]]
+	},
+	{
 		"tags":["feria-ii-rogationis","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/12455",
 		"datum":"Ipse enim Pater amat * vos, quia vos me amástis, et credidístis, allelúja."
