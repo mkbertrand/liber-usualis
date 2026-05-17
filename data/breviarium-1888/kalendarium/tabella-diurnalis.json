@@ -178,7 +178,11 @@
 			{"include":["feria-ii-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
 			{"include":["feria-ii-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
 			{"include":["feria-iv-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini"]},
-			{"include":["feria-iv-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
+			{"include":["feria-iv-rogationis","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
+			{"include":["ascensio","dominica-infra-octavam","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["ascensio","dominica-infra-octavam","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]},
+			{"include":["corpus-christi","dominica-infra-octavam","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
+			{"include":["corpus-christi","dominica-infra-octavam","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
 		]
 	},
 	{
@@ -376,6 +380,18 @@
 	},
 	{
 		"include":["ascensio","infra-octavam","commemoratio"],
+		"adde":"temporale"
+	},
+	{
+		"include":["ascensio","dominica-infra-octavam","commemoratio"],
+		"adde":"temporale"
+	},
+	{
+		"include":["ascensio","post-ascensionem","commemoratio"],
+		"adde":"temporale"
+	},
+	{
+		"include":["corpus-christi","dominica-infra-octavam","commemoratio"],
 		"adde":"temporale"
 	}
 ]
