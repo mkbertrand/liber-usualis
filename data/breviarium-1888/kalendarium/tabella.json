@@ -834,17 +834,25 @@
 			]
 		},
 		{
+			"include":["hebdomadae-augusti"],
+			"response":[
+				{"include":["liber-ii-regum"],"response":"dele","target":1},
+				{"include":["liber-iii-regum"],"response":"dele","target":1},
+				{"include":["liber-iv-regum"],"response":"dele","target":1}
+			]
+		},
+		{
 			"include":["incipit-libri","retrotranslandum"],
 			"response":[
 				{"include":["incipit-libri","scriptura"],"response":"transfer","target":0,"movement":-1},
-				{"include":["scriptura-propria"],"response":"transfer","target":0,"movement":-1}
+				{"include":["scriptura-propria","primarium"],"response":"transfer","target":0,"movement":-1}
 			]
 		},
 		{
 			"include":["incipit-libri","scriptura"],
 			"response":[
 				{"include":["incipit-libri","scriptura","translatum"],"response":"retrotranslandum","target":1},
-				{"include":["scriptura-propria"],"response":"transfer","target":0,"movement":1}
+				{"include":["scriptura-propria","primarium"],"response":"transfer","target":0,"movement":1}
 			]
 		},
 		{
@@ -857,7 +865,9 @@
 			"include":["scriptura"],
 			"response":[
 				{"include":["feria"],"response":"combina"},
-				{"include":["dominica","semiduplex"],"response":"combina"}
+				{"include":["dominica","semiduplex"],"response":"combina"},
+				{"include":["ascensio","dominica-infra-octavam","semiduplex"],"response":"combina"},
+				{"include":["ascensio","infra-octavam","semiduplex"],"exclude":["dies-iv"],"response":"combina"}
 			]
 		},
 		{
