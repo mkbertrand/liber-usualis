@@ -736,7 +736,14 @@
 	},
 	{
 		"occurrence":["ad-xv-kalendas-septembris"],
-		"tags":["agapitus","commemoratio","martyr"]
+		"tags":[
+			["assumptio-bmv","infra-octavam","dies-iv","semiduplex","maria","scriptura-propria"],
+			["agapitus","simplex","commemoratio","martyr"]
+		]
+	},
+	{
+		"occurrence":["ad-xiv-kalendas-septembris"],
+		"tags":["assumptio-bmv","infra-octavam","dies-v","semiduplex","maria","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-xiii-kalendas-septembris"],
@@ -748,7 +755,10 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-septembris"],
-		"tags":["timotheus-hippolytus-symphorianus","simplex","commemoratio","martyr","martyres"]
+		"tags":[
+			["assumptio-bmv","dies-octava","duplex-minus","maria","scriptura-propria"],
+			["timotheus-hippolytus-symphorianus","simplex","commemoratio","martyr","martyres"]
+		]
 	},
 	{
 		"occurrence":["ad-x-kalendas-septembris"],

@@ -277,5 +277,29 @@
 		"tags":["laurentius","dies-octava","collecta"],
 		"datum":"Éxcita Dómine in Ecclésia tua Spíritum, cui beátus Lauréntius Levíta servívit: + ut eódem nos repléti, studeámus amáre quod amávit, * et ópere exercére quod dócuit.",
 		"terminatio":[["terminatio","per-dominum-ejusdem-spiritus"]]
+	},
+	{
+		"tags":["laurentius","dies-octava","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["laurentius","dies-octava","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Ex Tractátu sancti Augustíni Epíscopi in Joánnem.",
+			"[Tractatus 27. in fine.]/Certi sumus, fratres, quia omnes, qui sumus in córpore Dómini, et manémus in illo, ut et ipse máneat in nobis, in hoc sǽculo necésse habémus usque in finem inter malos vívere; non inter illos dico malos, qui blasphémant Christum; raro enim jam inveniúntur, qui lingua blasphémant, sed multi, qui vita. Necésse est ergo, ut inter illos usque in finem vivámus. Sed quid est quod ait, Qui manet in me, et ego in illo? Quid, nisi quod Mártyres audiébant: Qui perseveráverit usque in finem, hic salvus erit?"
+		],
+		"lectio-ii":"Quómodo mansit in illo sanctus Lauréntius, cujus hódie festum diem celebrámus? Mansit usque ad tentatiónem, mansit usque ad tyránnicam interrogatiónem, mansit usque ad acérrimam comminatiónem, mansit usque ad peremptiónem. Parum est: usque ad immánem excruciatiónem mansit. Non enim occísus est cito, sed cruciátus est in igne. Diu vívere permíssus est: imo non diu vívere permíssus est, sed tarde mori compúlsus est. In illa ergo longa morte, in illis torméntis, quia bene manducáverat, et bene bíberat, tamquam illa esca saginátus, et illo cálice ébrius, torménta non sensit.",
+		"lectio-iii":"Díxerat autem illi Xystus Martyr sanctus, cujus diem quinto abhinc retro die celebrávimus: Noli mœrére fili: (epíscopus enim erat ille, iste diáconus) noli mœrére, inquit, sequéris me post tríduum. Tríduum autem dixit médium inter diem passiónis sancti Xysti, et diem hodiérnam passiónis sancti Lauréntii. Tríduum est médium. O consolátio! Non ait, Noli mœrére fili, désinet persecútio, et secúrus eris: sed, Noli mœrére: quo ego præcédo, tu sequéris; nec consecútio tua différtur. Tríduum médium erit, et mecum eris. Accépit oráculum, vicit diábolum, pervénit ad triúmphum."
+	},
+	{
+		"tags":["laurentius","dies-octava","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 12. d.]/In illo témpore: Dixit Jesus discípulis suis: Amen, amen dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet. Et réliqua.",
+			"Homilía sancti Joánnis Chrysóstomi.",
+			"[Homilia 66. in Joannem.]/Dulcis præsens vita est, et multæ plena voluptátis, non tamen ómnibus, sed iis tantum, qui illi sunt affíxi. Quod si quis in cœlum suspéxerit, et quæ ibi præclára sunt, contemplátus fúerit, statim hanc contémnet, ac nullíus prétii existimábit. Nam et córporum pulchritúdo, quoad púlchrius non deprehénditur, in admiratióne habétur: cum vero áliud præstántius apparúerit, illa prior despícitur. Quod si illam pulchritúdinem étiam nos intuéri voluérimus, et cœléstis regni spéciem consideráre, conféstim nos hujus sǽculi vínculis dissolvémus."
+		],
+		"lectio-ii":"Vínculum namque est terrenárum rerum afféctio: ad cujus dissolutiónem ut nos indúceret Christus, quid dicat, atténde. Qui amat ánimam suam, perdet eam: et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Ænígmati símile hoc dictum vidétur: non tamen ita est, imo vero præcípuæ sapiéntiæ plenum. Et quómodo qui amat ánimam suam, perdet eam? Qui absúrdis ejus cupiditátibus obtémperat, qui præter débitum ei indúlget: quemádmodum e contrário, qui odit eam in hoc mundo, custódit eam: hoc est, qui non paret ei, cum nóxia jubet.",
+		"lectio-iii":"Et non dixit: Qui non paret, sed, Qui odit. Sícuti enim quos ódio habémus, ne vocem quidem audíre, nec vultum eórum vidére æquo ánimo pátimur: ita et ánimæ, si quid præter Dei voluntátem nobis ímperat, veheménter aversári opórtet. Cum enim jam de morte ad eos verba factúrus esset, de morte vidélicet sua, et prævidéret eórum tristítiam et exanimatiónem, per excéssum locútus est, ínquiens: Quid dico, si mortem meam generóse non ferétis? Nisi vos ipsi moriámini, nullum vos sequétur emoluméntum."
 	}
 ]
