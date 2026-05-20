@@ -674,6 +674,11 @@
 		"adde":["commemoratio","paulus","semiduplex"]
 	},
 	{
+		"include":["commemoratio-pauli"],
+		"response":"crea",
+		"adde":["commemoratio","petrus","semiduplex"]
+	},
+	{
 		"include":["petrus-ad-vincula"],
 		"response":"crea",
 		"adde":["commemoratio","paulus","semiduplex"]
