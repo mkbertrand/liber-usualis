@@ -34,7 +34,9 @@
 	},
 	{
 		"tags":["assumptio-bmv","capitulum"],
-		"datum":"In ómnibus réquiem quæsívi, et in hæreditáte Dómini morábor. + Tunc præcépit, et dixit mihi Creátor ómnium: * et qui creávit me, requiévit in tabernáculo meo."
+		"datum":"[Eccli. 24.]/In ómnibus réquiem quæsívi, et in hæreditáte Dómini morábor. + Tunc præcépit, et dixit mihi Creátor ómnium: * et qui creávit me, requiévit in tabernáculo meo.",
+		"sexta":[["maria","commune","capitulum"]],
+		"nona":[["maria","commune","capitulum"]]
 	},
 	{
 		"tags":["assumptio-bmv","i-vesperae","versiculus"],
@@ -49,6 +51,135 @@
 		"tags":["assumptio-bmv","collecta"],
 		"datum":"Famulórum tuórum, quǽsumus Dómine, delíctis ignósce: + ut qui tibi placére de áctibus nostris non valémus; * Genitrícis Fílii tui Dómini nostri intercessióne salvémur:",
 		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Veníte adorémus Regem regum, * Cujus hódie ad æthéreum Virgo mater assúmpta est cœlum."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Exaltáta est * sancta Dei Génitrix super choros Angelórum ad cœléstia regna."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Paradísi portæ * per te nobis apértæ sunt, quæ hódie gloriósa cum Ángelis triúmphas."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":[["maria","matutinum","nocturna-i","antiphona","antiphona-i"]]
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Exaltáta est sancta Dei Génitrix.","R. Super choros Angelórum ad cœléstia regna."]
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Incípiunt Cántica canticórum.",
+			"[Cant. 1.]/Osculétur me ósculo oris sui: quia melióra sunt úbera tua vino, fragrántia unguéntis óptimis. Óleum effúsum nomen tuum: ídeo adolescéntulæ dilexérunt te. Trahe me: post te currémus in odórem unguentórum tuórum. Introdúxit me rex in cellária sua: exsultábimus et lætábimur in te, mémores úberum tuórum super vinum: recti díligunt te. Nigra sum, sed formósa, fíliæ Jerúsalem, sicut tabernácula Cedar, sicut pelles Salomónis."
+		]
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Vidi speciósam sicut colúmbam, ascendéntem désuper rivos aquárum: cujus inæstimábilis odor erat nimis in vestiméntis ejus:",
+		"responsum":"Et sicut dies verni circúmdabant eam flores rosárum et lília convállium.",
+		"versus":"Quæ est ista quæ ascéndit per desértum sicut vírgula fumi, ex aromátibus myrrhæ et thuris?"
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-ii":"Nolíte me consideráre quod fusca sim, quia decolorávit me sol: fílii matris meæ pugnavérunt contra me, posuérunt me custódem in víneis: víneam meam non custodívi. Índica mihi, quem díligit ánima mea, ubi pascas, ubi cubes in merídie, ne vagári incípiam post greges sodálium tuórum. Si ignóras te o pulchérrima inter mulíeres, egrédere, et abi post vestígia gregum, et pasce hœdos tuos juxta tabernácula pastórum. Equitátui meo in cúrribus Pharaónis assimilávi te amíca mea. Pulchræ sunt genæ tuæ sicut túrturis: collum tuum sicut monília."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Sicut cedrus exaltáta sum in Líbano, et sicut cypréssus in monte Sion: quasi myrrha elécta,",
+		"responsum":"Dedi suavitátem odóris.",
+		"versus":"Et sicut cinnamómum et bálsamum aromatízans."
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-i","lectio"],
+		"lectio-iii":"Murénulas aúreas faciémus tibi, vermiculátas argénto. Dum esset rex in accúbitu suo, nardus mea dedit odórem suum. Fascículus myrrhæ diléctus meus mihi, inter úbera mea commorábitur. Botrus Cypri diléctus meus mihi, in víneis Engáddi: Ecce tu pulchra es amíca mea, ecce tu pulchra es, óculi tui columbárum. Ecce tu pulcher es dilécte mi, et decórus. Léctulus noster flóridus: tigna domórum nostrárum cédrina, laqueária nostra cypréssina."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Quæ est ista quæ procéssit sicut sol, et formósa tamquam Jerúsalem?",
+		"responsum":"Vidérunt eam fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.",
+		"versus":"Et sicut dies verni circúmdabant eam flores rosárum et lília convállium."
+	},
+	{
+		"tags":[
+			["assumptio-bmv","matutinum","nocturna-ii","versiculus"],
+			["assumptio-bmv","tertia","versiculus"]
+		],
+		"datum":["V. Assúmpta est María in cœlum, gaudent Ángeli.","R. Laudántes benedícunt Dóminum."]
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Joánnis Damascéni.",
+			"[Orat. 2. de Dormit. B.M.V. post init.]/Hódie sacra et animáta arca Dei vivéntis, quæ suum in útero concépit Creatórem, requiéscit in templo Dómini, quod nullis est exstrúctum mánibus: et David exsúltat ejus parens, et cum eo choros ducunt Ángeli, célebrant Archángeli, Virtútes gloríficant, Principátus exsúltant, Potestátes collætántur, gaudent Dominatiónes, Throni festum diem agunt, laudant Chérubim, glóriam ejus prǽdicant Séraphim. Hódie Eden novi Adam paradísum súscipit animátum, in quo solúta est condemnátio, in quo plantátum est lignum vitæ, in quo opérta fuit nostra núditas."
+		]
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Ornátam monílibus fíliam Jerúsalem Dóminus concupívit.",
+		"responsum":"Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes: Unguéntum effúsum nomen tuum.",
+		"versus":"Ástitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte."
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Hódie Virgo immaculáta, quæ nullis terrénis inquináta est afféctibus, sed cœléstibus educáta cogitatiónibus, non in terram revérsa est; sed, cum esset animátum cœlum, in cœléstibus tabernáculis collocátur. Ex qua enim ómnibus vera vita manávit, quómodo illa mortem gustáret? Sed cedit legi latæ ab eo quem génuit; et ut fília véteris Adam, véterem senténtiam súbiit: (nam et ejus Fílius, qui est vita ipsa, eam non recusávit) ut autem Dei vivéntis Mater, ad illum ipsum digne assúmitur."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Beátam me dicent omnes generatiónes:",
+		"responsum":"Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.",
+		"versus":"Et misericórdia ejus a progénie in progénies timéntibus eum."
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Heva, quæ serpéntis suggestióni assénsum prǽbuit, partus dolóre, et mortis senténtia damnátur, et in inferórum collocátur penetrálibus. Hanc autem vere beátam, quæ Dei verbo aures prǽstitit, et Spíritus sancti operatióne repléta est, atque ad Archángeli spiritálem salutatiónem, sine voluptáte et viríli consórtio, Dei Fílium concépit, et sine dolóre áliquo péperit, ac totam se Deo consecrávit, quonam modo mors devoráret? quómodo ínferi suscíperent? quómodo corrúptio inváderet corpus illud, in quo vita suscépta est? Huic recta, plana, et fácilis ad cœlum paráta est via. Si enim, Ubi ego sum, illic et miníster meus erit, inquit vita et véritas Christus; quómodo non pótius mater cum ipso erit?"
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Beáta es Virgo María, quæ Dóminum portásti Creatórem mundi:",
+		"responsum":"Genuísti qui te fecit, et in ætérnum pérmanes Virgo.",
+		"versus":"Ave María, grátia plena: Dóminus tecum."
+	},
+	{
+		"tags":[
+			["assumptio-bmv","matutinum","nocturna-iii","versiculus"],
+			["assumptio-bmv","sexta","versiculus"]
+		],
+		"datum":["V. María Virgo assúmpta est ad æthéreum thálamum.","R. In quo Rex regum stelláto sedet sólio."]
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 10. g.]/In illo témpore: Intrávit Jesus in quoddam castéllum: et múlier quædam Martha nómine, excépit illum in domum suam. Et réliqua.",
+			"Homilía sancti Augustíni Epíscopi.",
+			"[Serm. 27. de Verb. Dom. t. 10.]/Sanctum Evangélium cum legerétur, audívimus a fémina religiósa suscéptum esse Dóminum hospítio, éaque Martha vocabátur. Et cum esset ipsa occupáta in cura ministrándi, soror ejus María sedébat ad pedes Dómini, et audiébat verbum ejus. Laborábat illa, vacábat ista. Illa erogábat, hæc implebátur. Verúmtamen Martha labórans multum in illa occupatióne et negótio ministrándi, interpellávit Dóminum: et de soróre sua conquésta est, quod eam laborántem non adjuváret."
+		]
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Diffúsa est grátia in lábiis tuis:",
+		"responsum":"Proptérea benedíxit te Deus in ætérnum.",
+		"versus":"Myrrha, et gutta, et cásia in vestiméntis tuis, a dómibus ebúrneis, ex quibus delectavérunt te fíliæ regum in honóre tuo."
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Dóminus autem pro María respóndit Marthæ: et ipse ejus factus est advocátus, qui judex fúerat interpellátus. Martha, inquit, circa multa es occupáta, quando unum est necessárium. María meliórem partem elégit, quæ non auferétur ab ea. Audívimus enim et interpellatiónem interpellántis, et senténtiam júdicis. Quæ senténtia interpellánti respóndit, suscéptam deféndit. Erat enim María inténta dulcédini verbi Dómini. Inténta erat Martha quómodo pásceret Dóminum: inténta María quómodo pascerétur a Dómino. A Martha convívium Dómino parabátur, in cujus convívio María jam jucundabátur."
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Beáta es Virgo María, Dei Génitrix, quæ credidísti Dómino: perfécta sunt in te quæ dicta sunt tibi: ecce exaltáta es super choros Angelórum:",
+		"responsum":"Intercéde pro nobis ad Dóminum Deum nostrum.",
+		"versus":"Ave María, grátia plena, Dóminus tecum."
+	},
+	{
+		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Cum ergo María suáviter audíret verbum dulcíssimum, et corde intentíssimo pascerétur, interpelláto Dómino a soróre sua, quómodo putámus eam timuísse, ne díceret ei Dóminus: Surge, et ádjuva sorórem tuam? Mira enim suavitáte tenebátur: quæ profécto major est mentis quam ventris. Excusáta est, sedit secúrior. Quómodo autem excusáta? Attendámus, inspiciámus, perscrutémur quod póssumus, ut pascámur et nos."
 	},
 	{
 		"tags":[
@@ -69,18 +200,10 @@
 		"versus":"Super choros Angelórum ad cœléstia regna."
 	},
 	{
-		"tags":["assumptio-bmv","tertia","versiculus"],
-		"datum":["V. Assúmpta est María in cœlum, gaudent Ángeli.","R. Laudántes benedícunt Dóminum."]
-	},
-	{
 		"tags":["assumptio-bmv","sexta","responsorium-breve"],
 		"incipit":"Assúmpta est María in cœlum",
 		"responsum":"Gaudent Ángeli.",
 		"versus":"Laudántes benedícunt Dóminum."
-	},
-	{
-		"tags":["assumptio-bmv","sexta","versiculus"],
-		"datum":["V. María Virgo assúmpta est ad æthéreum thálamum.","R. In quo Rex regum stelláto sedet sólio."]
 	},
 	{
 		"tags":["assumptio-bmv","nona","responsorium-breve"],

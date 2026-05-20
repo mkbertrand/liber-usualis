@@ -55,10 +55,7 @@
 	},
 	{
 		"tags":["nativitas-bmv","duplex-ii-classis","matutinum","nocturna-i","lectio"],
-		"lectio-i":[
-			"Incípiunt Cántica canticórum.",
-			"[Cant. 1.]/Osculétur me ósculo oris sui: quia melióra sunt úbera tua vino, fragrántia unguéntis óptimis. Óleum effúsum nomen tuum: ídeo adolescéntulæ dilexérunt te. Trahe me: post te currémus in odórem unguentórum tuórum. Introdúxit me rex in cellária sua: exsultábimus et lætábimur in te, mémores úberum tuórum super vinum: recti díligunt te. Nigra sum, sed formósa, fíliæ Jerúsalem, sicut tabernácula Cedar, sicut pelles Salomónis."
-		]
+		"datum":[["assumptio-bmv","duplex-i-classis","lectio"]]
 	},
 	{
 		"tags":["nativitas-bmv","matutinum","nocturna-i","responsorium","responsorium-i"],
@@ -67,18 +64,10 @@
 		"versus":"Nativitátem beátæ Maríæ Vírginis cum gaúdio celebrémus."
 	},
 	{
-		"tags":["nativitas-bmv","duplex-ii-classis","matutinum","nocturna-i","lectio"],
-		"lectio-ii":"Nolíte me consideráre quod fusca sim, quia decolorávit me sol: fílii matris meæ pugnavérunt contra me, posuérunt me custódem in víneis: víneam meam non custodívi. Índica mihi, quem díligit ánima mea, ubi pascas, ubi cubes in merídie, ne vagári incípiam post greges sodálium tuórum. Si ignóras te o pulchérrima inter mulíeres, egrédere, et abi post vestígia gregum, et pasce hœdos tuos juxta tabernácula pastórum. Equitátui meo in cúrribus Pharaónis assimilávi te amíca mea. Pulchræ sunt genæ tuæ sicut túrturis: collum tuum sicut monília."
-	},
-	{
 		"tags":["nativitas-bmv","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"incipit":"Beatíssimæ Vírginis Maríæ Nativitátem devotíssime celebrémus:",
 		"responsum":"Ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.",
 		"versus":"Cum jucunditáte Nativitátem beátæ Maríæ Vírginis devotíssime celebrémus."
-	},
-	{
-		"tags":["nativitas-bmv","duplex-ii-classis","matutinum","nocturna-i","lectio"],
-		"lectio-iii":"Murénulas aúreas faciémus tibi, vermiculátas argénto. Dum esset rex in accúbitu suo, nardus mea dedit odórem suum. Fascículus myrrhæ diléctus meus mihi, inter úbera mea commorábitur. Botrus Cypri diléctus meus mihi, in víneis Engáddi: Ecce tu pulchra es amíca mea, ecce tu pulchra es, óculi tui columbárum. Ecce tu pulcher es dilécte mi, et decórus. Léctulus noster flóridus: tigna domórum nostrárum cédrina, laqueária nostra cypréssina."
 	},
 	{
 		"tags":["nativitas-bmv","matutinum","nocturna-i","responsorium","responsorium-iii"],
@@ -228,7 +217,7 @@
 		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Matthǽum.",
 			"[Matth. 1.]/Liber generatiónis Jesu Christi fílii David, fílii Ábraham. Ábraham génuit Ísaac. Ísaac autem génuit Jacob. Et réliqua.",
-			"Homilia sancti Augustíni Epíscopi.",
+			"Homilía sancti Augustíni Epíscopi.",
 			"[Lib. 2. de consensu Evangelist. Cap. 1.]/Matthǽus Evangelísta sic orsus est: Liber generatiónis Jesu Christi fílii David, fílii Ábraham. Quo exórdio suo satis osténdit generatiónem Christi secúndum carnem se suscepísse narrándam. Secúndum hanc enim Christus fílius hóminis est: quod étiam se ipse sæpíssime appéllat, comméndans nobis quid misericórditer dignátus sit esse pro nobis. Nam illa supérna et ætérna generátio, secúndum quam Fílius Dei unigénitus est ante omnem creatúram, quia ómnia per ipsum facta sunt, ita ineffábilis est, ut de illa dictum a prophéta intelligátur: Generatiónem ejus quis enarrábit?"
 		],
 		"lectio-ii":"Exséquitur ergo humánam generatiónem Christi Matthǽus, ab Ábraham generatóres commémorans, quos perdúcit ad Joseph virum Maríæ, de qua natus est Jesus. Neque enim fas erat, ut ob hoc eum a conjúgio Maríæ separándum putáret, quod non ex ejus concúbitu, sed virgo péperit Christum. Hoc enim exémplo magnífice insinuátur fidélibus conjugátis, étiam serváta pari consénsu continéntia, posse permanére vocaríque conjúgium, non permíxto córporis sexu, sed custodíto mentis afféctu: præsértim quia nasci eis étiam fílius pótuit sine ullo compléxu carnáli, qui propter solos gignéndos fílios adhibéndus est.",

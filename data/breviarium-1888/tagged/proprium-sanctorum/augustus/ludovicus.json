@@ -7,5 +7,19 @@
 		"tags":["ludovicus","collecta"],
 		"datum":"Deus, qui beátum Ludovícum Confessórem tuum de terréno regno ad cœléstis regni glóriam transtulísti: + ejus, quǽsumus, méritis et intercessióne, * Regis regum Jesu Christi Fílii tui fácias nos esse consórtes:",
 		"terminatio":[["terminatio","qui-tecum-vivit"]]
+	},
+	{
+		"tags":["ludovicus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["ludovicus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Ludovícus nonus Gálliæ rex, duódecim annos natus, patre amísso, et in Blanchæ matris sanctíssima disciplína educátus, cum jam vigésimum annum in regno ágeret, in morbum íncidit: quo témpore cogitávit de recuperánda possessióne Jerosolymórum. Quamóbrem ubi convaluísset, vexíllum ab epíscopo Parisiénsi accépit: deínde mare cum ingénti exércitu trajíciens, primo prǽlio Saracénos fugávit. Sed cum ex pestiléntia magna mílitum multitúdo periísset, victus ipse captúsque est.",
+		"lectio-ii":"Rebus póstea cum Saracénis compósitis, liber rex exercitúsque dimíttitur. Quinque annis in Oriénte commorátus, plúrimos Christiános a barbarórum servitúte redémit, multos étiam infidéles ad Christi fidem convértit: prætérea áliquot Christianórum urbes refécit suis súmptibus. Ínterim mater ejus migrat e vita: quare domum redíre cógitur, ubi totum se dedit pietátis offíciis.",
+		"lectio-iii":"Multa ædificávit monastéria, et paúperum hospítia: beneficéntia egéntes sublevábat: frequens visébat ægrótos, quibus ipse non solum suis súmptibus ómnia suppeditábat, sed étiam, quæ opus erant, mánibus ministrábat. Vestítu vulgári utebátur, cilício ac jejúnio corpus assídue affligébat. Sed cum íterum transmisísset, bellum Saracénis illatúrus, jamque castra in eórum conspéctu posuísset, pestiléntia decéssit in illa oratióne: Introíbo in domum tuam; adorábo ad templum sanctum tuum, et confitébor nómini tuo. Ejus corpus póstea Lutétiam Parisiórum translátum est, quod in célebri sancti Dionýsii templo asservátur et cólitur; caput vero in sacra æde sanctæ Capéllæ. Ipse clarus miráculis a Bonifácio Papa octávo in sanctórum númerum est relátus."
+	},
+	{
+		"tags":["ludovicus","matutinum","nocturna-iii","lectio"],
+		"datum":[["stephanus-hungariae","lectio"]]
 	}
 ]
