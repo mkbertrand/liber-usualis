@@ -858,7 +858,7 @@
 		{
 			"include":["incipit-libri","scriptura"],
 			"response":[
-				{"include":["scriptura"],"response":"dele","target":1}
+				{"include":["scriptura"],"exclude":["dies-i-libri"],"response":"dele","target":1}
 			]
 		},
 		{
@@ -868,12 +868,6 @@
 				{"include":["dominica","semiduplex"],"response":"combina"},
 				{"include":["ascensio","dominica-infra-octavam","semiduplex"],"response":"combina"},
 				{"include":["ascensio","infra-octavam","semiduplex"],"exclude":["dies-iv"],"response":"combina"}
-			]
-		},
-		{
-			"include":["pro-antiphona-magnificat"],
-			"response":[
-				{"include":["dominica","semiduplex"],"response":"combina"}
 			]
 		},
 		{

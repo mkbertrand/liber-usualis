@@ -62,7 +62,10 @@
 	{
 		"basis":"dominica-i-augusti",
 		"offset":0,
-		"tags":["de-parabolis","incipit-libri","scriptura"]
+		"tags":[
+			["de-parabolis","incipit-libri","scriptura"],
+			["de-parabolis","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-augusti",
@@ -97,7 +100,10 @@
 	{
 		"basis":"dominica-i-augusti",
 		"offset":7,
-		"tags":["liber-ecclesiastes","incipit-libri","scriptura"]
+		"tags":[
+			["liber-ecclesiastes","incipit-libri","scriptura"],
+			["liber-ecclesiastes","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-augusti",
@@ -132,7 +138,10 @@
 	{
 		"basis":"dominica-i-augusti",
 		"offset":14,
-		"tags":["liber-sapientiae","incipit-libri","scriptura"]
+		"tags":[
+			["liber-sapientiae","incipit-libri","scriptura"],
+			["liber-sapientiae","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-augusti",
@@ -167,7 +176,10 @@
 	{
 		"basis":"dominica-i-augusti",
 		"offset":21,
-		"tags":["liber-ecclesiastici","incipit-libri","scriptura"]
+		"tags":[
+			["liber-ecclesiastici","incipit-libri","scriptura"],
+			["liber-ecclesiastici","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-augusti",
@@ -237,7 +249,10 @@
 	{
 		"basis":"dominica-i-septembris",
 		"offset":0,
-		"tags":["liber-job","incipit-libri","scriptura"]
+		"tags":[
+			["liber-job","incipit-libri","scriptura"],
+			["liber-job","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-septembris",
@@ -307,7 +322,10 @@
 	{
 		"basis":"dominica-i-septembris",
 		"offset":14,
-		"tags":["liber-tobiae","incipit-libri","scriptura"]
+		"tags":[
+			["liber-tobiae","incipit-libri","scriptura"],
+			["liber-tobiae","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-septembris",
@@ -342,7 +360,10 @@
 	{
 		"basis":"dominica-i-septembris",
 		"offset":21,
-		"tags":["liber-judith","incipit-libri","scriptura"]
+		"tags":[
+			["liber-judith","incipit-libri","scriptura"],
+			["liber-judith","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-septembris",
@@ -377,7 +398,10 @@
 	{
 		"basis":"dominica-i-septembris",
 		"offset":28,
-		"tags":["liber-esther","incipit-libri","scriptura"]
+		"tags":[
+			["liber-esther","incipit-libri","scriptura"],
+			["liber-esther","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-septembris",
@@ -414,7 +438,7 @@
 		"offset":0,
 		"tags":[
 			["liber-i-machabaeorum","incipit-libri","scriptura","autumnalis"],
-			["liber-i-machabaeorum","incipit-libri","pro-antiphona-magnificat","autumnalis"]
+			["liber-i-machabaeorum","dies-i-libri","scriptura"]
 		]
 	},
 	{
@@ -520,7 +544,10 @@
 	{
 		"basis":"dominica-i-octobris",
 		"offset":21,
-		"tags":["liber-ii-machabaeorum","incipit-libri","scriptura","autumnalis"]
+		"tags":[
+			["liber-ii-machabaeorum","incipit-libri","scriptura","autumnalis"],
+			["liber-ii-machabaeorum","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-octobris",
@@ -590,7 +617,10 @@
 	{
 		"basis":"dominica-i-novembris",
 		"offset":0,
-		"tags":["liber-ezechielis","incipit-libri","scriptura","autumnalis"]
+		"tags":[
+			["liber-ezechielis","incipit-libri","scriptura","autumnalis"],
+			["liber-ezechielis","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-novembris",
@@ -660,7 +690,10 @@
 	{
 		"basis":"dominica-i-adventus",
 		"offset":-21,
-		"tags":["liber-danielis","incipit-libri","scriptura","autumnalis"]
+		"tags":[
+			["liber-danielis","incipit-libri","scriptura","autumnalis"],
+			["liber-danielis","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-adventus",
@@ -695,7 +728,10 @@
 	{
 		"basis":"dominica-i-adventus",
 		"offset":-14,
-		"tags":["liber-osee","incipit-libri","scriptura","autumnalis"]
+		"tags":[
+			["liber-osee","incipit-libri","scriptura","autumnalis"],
+			["liber-osee","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-adventus",
@@ -730,7 +766,10 @@
 	{
 		"basis":"dominica-i-adventus",
 		"offset":-7,
-		"tags":["liber-michaeae","incipit-libri","scriptura","autumnalis"]
+		"tags":[
+			["liber-michaeae","incipit-libri","scriptura","autumnalis"],
+			["liber-michaeae","dies-i-libri","scriptura"]
+		]
 	},
 	{
 		"basis":"dominica-i-adventus",
