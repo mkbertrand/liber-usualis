@@ -141,6 +141,7 @@
 	},
 	{
 		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"formula":[["simplex-responsum"]],
 		"incipit":"Beáta es Virgo María, quæ Dóminum portásti Creatórem mundi:",
 		"responsum":"Genuísti qui te fecit, et in ætérnum pérmanes Virgo.",
 		"versus":"Ave María, grátia plena: Dóminus tecum."
@@ -219,5 +220,90 @@
 		"tags":["assumptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2700",
 		"datum":"Hódie María Virgo * cœlos ascéndit: gaudéte, quia cum Christo regnat in ætérnum."
+	},
+	{
+		"tags":["assumptio-bmv","dies-iv","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Cánticis canticórum.",
+			"[Cant. 4.]/Quam pulchra es amíca mea, quam pulchra es! Óculi tui columbárum, absque eo quod intrínsecus latet. Capílli tui sicut greges caprárum, quæ ascendérunt de monte Gálaad. Dentes tui sicut greges tonsárum, quæ ascendérunt de lavácro, omnes geméllis fœ\u0301tibus, et stérilis non est inter eas. Sicut vitta coccínea lábia tua, et elóquium tuum, dulce. Sicut fragmen mali púnici, ita genæ tuæ, absque eo quod intrínsecus latet. Sicut turris David collum tuum, quæ ædificáta est cum propugnáculis: mille clýpei pendent ex ea, omnis armatúra fórtium."
+		],
+		"lectio-ii":"Tota pulchra es amíca mea, et mácula non est in te. Veni de Líbano sponsa mea, veni de Líbano, veni: coronáberis de cápite Ámana, de vértice Sanir et Hermon, de cubílibus leónum, de móntibus pardórum. Vulnerásti cor meum soror mea sponsa, vulnerásti cor meum in uno oculórum tuórum, et in uno crine colli tui. Quam pulchræ sunt mammæ tuæ soror mea sponsa! Pulchrióra sunt úbera tua vino, et odor unguentórum tuórum super ómnia arómata.",
+		"lectio-iii":"Favus distíllans lábia tua sponsa, mel et lac sub lingua tua: et odor vestimentórum tuórum sicut odor thuris. Hortus conclúsus soror mea sponsa, hortus conclúsus, fons signátus. Emissiónes tuæ paradísus malórum punicórum cum pomórum frúctibus. Cypri cum nardo, nardus et crocus, fístula et cinnamómum cum univérsis lignis Líbani, myrrha et áloë cum ómnibus primis unguéntis. Fons hortórum: púteus aquárum vivéntium, quæ fluunt ímpetu de Líbano."
+	},
+	{
+		"tags":["assumptio-bmv","dies-iv","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Joánnis Damascéni.",
+			"[Orat. 2. de Dormitione Deiparæ, sub finem.]/Ex antíqua accépimus traditióne, quod témpore gloriósæ dormitiónis beátæ Vírginis, univérsi quidem sancti Apóstoli, qui orbem terræ ad salútem Géntium peragrábant, moménto témporis in sublíme eláti, convenérunt Jerosólymis: cumque illic essent, eis vísio appáruit angélica, et audíta est psalmódia cœléstium Potestátum; et sic cum divína glória in manus Dei sanctam trádidit ánimam. Ejus autem corpus, quod Deum ineffábili quadam ratióne suscépit, cum angélica et apostólica hymnódia elátum, in lóculo fuit depósitum Gethsémane: quo in loco Angelórum cantus mansit tres dies contínuos."
+		],
+		"lectio-ii":"Post tres autem dies angélico cantu cessánte, qui áderant Apóstoli (cum unus Thomas, qui abfúerat, post tértium diem venísset, et quod Deum suscéperat, corpus adoráre voluísset,) túmulum aperuérunt; sed omni ex parte sacrum ejus corpus nequáquam inveníre potuérunt. Cum ea autem tantum inveníssent, in quibus fúerat compósitum, et ineffábili, qui ex iis proficiscebátur, essent odóre repléti, lóculum clausérunt. Ejus mystérii obstupefácti miráculo, hoc solum cogitáre potuérunt, quod cui plácuit ex María Vírgine carnem súmere, et hóminem fíeri et nasci, cum esset Deus Verbum, et Dóminus glóriæ: quique post partum incorrúptam servávit ejus virginitátem, eídem étiam plácuit et ipsíus, postquam migrávit, immaculátum corpus, incorrúptum servátum, translatióne honoráre ante commúnem et universálem resurrectiónem.",
+		"lectio-iii":"Áderant tunc cum Apóstolis sanctíssimus Timótheus, primus epíscopus Ephesiórum, et Dionýsius Areopagíta, sicut ipse testátur in iis, quæ de beáto Hierótheo, qui ipse quoque tunc áderat, scripsit ad prædíctum Timótheum, sic dicens: Nam étiam apud ipsos a Deo afflátos sacrórum antístites, quando nos quoque, ut nosti, et multi ex sanctis nostris frátribus, ad contuéndum corpus, quod vitæ princípium dedit, et Deum suscépit, convenissémus (áderat autem et Dómini frater Jacóbus, et Petrus, supréma et antiquíssima theologórum súmmitas): et viso sacro córpore, plácuit ómnibus, prout quisque póterat, hymnis celebráre infinítam bonitátem divínæ poténtiæ."
+	},
+	{
+		"tags":["assumptio-bmv","dies-iv","matutinum","nocturna-iii","lectio","habens-commemorationem-matutini","include-inauthenticas"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 10. g.]/In illo témpore: Intrávit Jesus in quoddam castéllum: et múlier quædam Martha nómine, excépit illum in domum suam. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Ex Serm. 27. de Verbis Dom., paulo ante medium.]/Bene Martha circa corporálem Dómini, quid dicam, necessitátem, an voluntátem? ministrábat carni mortáli. Sed quis erat in carne mortáli? In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Ecce quod María audiébat. Verbum caro factum est, et habitávit in nobis. Ecce Martha cui ministrábat. Ergo María meliórem partem elégit, quæ non auferétur ab ea. Hoc enim elégit, quod semper manébit, ídeo non auferétur ab ea."
+		],
+		"lectio-ii":"Circa unum María se vóluit occupári. Jam tenébat: Mihi autem adhærére Deo bonum est. Sedébat ad pedes cápitis nostri. Quanto humílius sedébat, tanto ámplius capiébat. Cónfluit enim aqua ad humilitátem convállis, dénatat de tumóribus collis. Non ergo Dóminus opus reprehéndit, sed munus distínxit. Circa multa es occupáta: porro unum est necessárium. Jam hoc sibi María elégit."
+	},
+	{
+		"tags":["assumptio-bmv","dies-v","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Cánticis canticórum.",
+			"[Cant. 5. c.]/Adjúro vos, fíliæ Jerúsalem, si invenéritis diléctum meum, ut nuntiétis ei quia amóre lángueo. Qualis est diléctus tuus ex dilécto, o pulchérrima mulíerum? qualis est diléctus tuus ex dilécto, quia sic adjurásti nos? Diléctus meus cándidus, et rubicúndus, eléctus ex míllibus. Caput ejus aurum óptimum: comæ ejus sicut elátæ palmárum, nigræ quasi corvus. Óculi ejus sicut colúmbæ super rívulos aquárum, quæ lacte sunt lotæ, et résident juxta fluénta pleníssima."
+		],
+		"lectio-ii":"[Cant. 6.]/Diléctus meus descéndit in hortum suum ad aréolam arómatum, ut pascátur in hortis, et lília cólligat. Ego dilécto meo, et diléctus meus mihi, qui páscitur inter lília. Pulchra es amíca mea, suávis, et decóra sicut Jerúsalem: terríbilis ut castrórum ácies ordináta. Avérte óculos tuos a me, quia ipsi me avoláre fecérunt. Capílli tui sicut grex caprárum, quæ apparuérunt de Gálaad. Dentes tui sicut grex óvium, quæ ascendérunt de lavácro, omnes geméllis fœ\u0301tibus, et stérilis non est in eis.",
+		"lectio-iii":"Una est colúmba mea, perfécta mea, una est matris suæ, elécta genitríci suæ. Vidérunt eam fíliæ, et beatíssimam prædicavérunt; regínæ et concubínæ, et laudavérunt eam. Quæ est ista, quæ progréditur quasi auróra consúrgens, pulchra ut luna, elécta ut sol, terríbilis ut castrórum ácies ordináta? Descéndi in hortum nucum, ut vidérem poma convállium, et inspícerem si floruísset vínea, et germinássent mala púnica. Nescívi: ánima mea conturbávit me propter quadrígas Amínadab. Revértere, revértere, Sulamítis: revértere, revértere, ut intueámur te."
+	},
+	{
+		"tags":["assumptio-bmv","dies-v","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Bernárdi Abbátis.",
+			"[Serm. 1. de Assumpt. B.M.V.]/Virgo hódie gloriósa cœlos ascéndens, supernórum gaúdia cívium copiósis sine dúbio cumulávit augméntis. Hæc est enim cujus salutatiónis vox et ipsos exsultáre facit in gaúdio, quos matérna adhuc víscera claudunt. Quod si párvuli necdum nati ánima liquefácta est, ut María locúta est, quid putámus quænam illa fúerit cœléstium exsultátio, cum et vocem audíre, et vidére fáciem, et beáta ejus frui præséntia meruérunt?"
+		],
+		"lectio-ii":"Sed et illud quis cogitáre suffíciat, quam gloriósa hódie mundi Regína procésserit: et quanto devotiónis afféctu tota in ejus occúrsum cœléstium legiónum prodíerit multitúdo: quibus ad thronum glóriæ cánticis sit dedúcta: quam plácido vultu, quam seréna fácie, quam divínis ampléxibus suscépta a Fílio, et super omnem exaltáta creatúram, cum eo honóre, quo tanta Mater digna fuit; cum ea glória quæ tantum décuit Fílium?",
+		"lectio-iii":"Felícia prorsus óscula lábiis impréssa lacténtis, cui virgíneo mater applaudébat in grémio. Verum numquid non felicióra censébimus, quæ ab ore sedéntis in déxtera Patris hódie in beáta salutatióne suscépit, cum ascénderet ad thronum glóriæ, epithalámium canens, et dicens: Osculétur me ósculo oris sui? Christi generatiónem et Maríæ assumptiónem quis enarrábit? Quantum enim grátiæ in terris adépta est præ céteris, tantum et in cœlis óbtinet glóriæ singuláris."
+	},
+	{
+		"tags":["assumptio-bmv","dies-v","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 10. g.]/In illo témpore: Intrávit Jesus in quoddam castéllum: et múlier quædam Martha nómine, excépit illum in domum suam. Et réliqua.",
+			"De Homilía sancti Augustíni Epíscopi.",
+			"[Ex Serm. 27. de Verbis Dom.]/Transit labor multitúdinis, et rémanet cáritas unitátis. Ergo quod elégit María, non auferétur ab ea: a te autem Martha, quod elegísti; útique hoc séquitur, útique hoc subintellígitur; a te, quod elegísti, auferétur: sed bono tuo auferétur, ut, quod mélius est, detur. Auferétur enim a te labor, ut réquies detur. Tu návigas, illa jam in portu est."
+		],
+		"lectio-ii":"Vidétis ergo, caríssimi, et quantum árbitror, jam intellígitis in his duábus muliéribus, quæ ambæ fuérunt Dómino gratæ, ambæ amábiles, ambæ discípulæ: vidétis ergo, et magnum áliquid intellígitis, quicúmque intellígitis, quod audíre et scire debétis étiam qui non intellígitis, in his duábus muliéribus duas vitas esse figurátas, præséntem et futúram, laboriósam et quiétam, ærumnósam et beátam, temporálem et ætérnam.",
+		"lectio-iii":"Duæ sunt vitæ: de illis vos copiósius cogitáte. Quid hábeat hæc vita, non dico mala, non iníqua, non nefária, non luxuriósa, non ímpia; sed laboriósa, et ærúmnis plena, timóribus castigáta, tentatiónibus sollícita: hanc ipsam innocéntem vitam dico, qualem decébat habére Martham. Hanc ergo, quantum potéstis, inspícite: et de hac, ut dixi, copiósius quam lóquimur, cogitáte. Vita vero iníqua áberat ab illa domo, nec cum Martha erat, nec cum María: et si aliquándo fuit, Dómino intránte fugit."
+	},
+	{
+		"tags":["assumptio-bmv","dies-octava","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Cánticis canticórum.",
+			"[Cant. 8. b.]/Quæ est ista, quæ ascéndit de desérto, delíciis áffluens, inníxa super diléctum suum? Sub árbore malo suscitávi te: ibi corrúpta est mater tua, ibi violáta est génitrix tua. Pone me ut signáculum super cor tuum, ut signáculum super bráchium tuum: quia fortis est ut mors diléctio, dura sicut inférnus æmulátio: lámpades ejus, lámpades ignis atque flammárum."
+		],
+		"lectio-ii":"Aquæ multæ non potuérunt exstínguere caritátem, nec flúmina óbruent illam: si déderit homo omnem substántiam domus suæ pro dilectióne, quasi nihil despíciet eam. Soror nostra parva, et úbera non habet: quid faciémus soróri nostræ in die quando alloquénda est? Si murus est, ædificémus super eum propugnácula argéntea: si óstium est, compingámus illud tábulis cédrinis.",
+		"lectio-iii":"Ego murus: et úbera mea sicut turris, ex quo facta sum coram eo quasi pacem repériens. Vínea fuit pacífico in ea, quæ habet pópulos: trádidit eam custódibus, vir affert pro fructu ejus mille argénteos. Vínea mea coram me est. Mille tui pacífici, et ducénti his, qui custódiunt fructus ejus. Quæ hábitas in hortis, amíci auscúltant: fac me audíre vocem tuam. Fuge dilécte mi, et assimiláre cápreæ hinnulóque cervórum super montes arómatum."
+	},
+	{
+		"tags":["assumptio-bmv","dies-octava","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Bernárdi Abbátis.",
+			"[Serm. 4. de Assumptione, circa med.]/Non est équidem quod me magis deléctet, sed nec est quod térreat magis, quam de glória Vírginis Maríæ habére sermónem. Ecce enim si in ea laudávero virginitátem, mihi multæ vírgines post eam vidéntur offérri. Si humilitátem prædicávero, inveniéntur forte vel pauci, qui (docénte Fílio ejus) mites facti sunt et húmiles corde. Si magnificáre volúero misericórdiæ ejus multitúdinem, sunt áliqui misericórdiæ viri, étiam et mulíeres. Unum est in quo nec primam símilem visa est, nec habére sequéntem, gaúdia matris habens cum virginitátis honóre. Maríæ privilégium est, non dábitur álteri: singuláre est, sed contínuo étiam indicíbile invenítur."
+		],
+		"lectio-ii":"Verúmtamen non hoc tantum, si diligénter atténdas, sed céteras quoque virtútes singuláres prorsus invénies in María, quæ videbántur esse commúnes. Quæ enim vel angélica púritas virginitáti illi aúdeat comparári, quæ digna fuit Spíritus sancti sacrárium fíeri, et habitáculum Fílii Dei? Quanta vero, et quam pretiósa humilitátis virtus cum tanta puritáte, cum innocéntia tanta, cum consciéntia prorsus absque delícto, imo cum tantæ grátiæ plenitúdine? Unde tibi humílitas, et tanta humílitas, o beáta? Digna plane quam respíceret Dóminus, cujus decórem concupísceret Rex, cujus odóre suavíssimo ab ætérno illo patérni sinus attraherétur accúbitu.",
+		"lectio-iii":"Ecce jam quibus potúimus votis ascendéntem te ad Fílium dedúximus, et prosecúti sumus saltem a longe, Virgo benedícta. Sit pietátis tuæ, ipsam, quam apud Deum grátiam invenísti, notam fácere mundo, reis véniam, medélam ægris, pusíllis corde robur, afflíctis consolatiónem, periclitántibus adjutórium, et liberatiónem sanctis tuis précibus obtinéndo. In hac quoque die solemnitátis et lætítiæ dulcíssimum Maríæ nomen cum laude invocántibus sérvulis, per te Regína clemens, grátiæ suæ múnera largiátur Jesus Christus, Fílius tuus, Dóminus noster, qui est super ómnia Deus benedíctus in sǽcula. Amen."
+	},
+	{
+		"tags":["assumptio-bmv","dies-octava","matutinum","nocturna-iii","lectio","habens-commemorationem-matutini","include-inauthenticas"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Lucam.",
+			"[Luc. 10. g.]/In illo témpore: Intrávit Jesus in quoddam castéllum: et múlier quædam Martha nómine, excépit illum in domum suam. Et réliqua.",
+			"Homilía sancti Bernárdi Abbatis.",
+			"[Serm. 2. de Assumpt. B.M.V.]/Quid introísse eum dícimus in castéllum? Étiam in angustíssimum virginális úteri diversórium introívit. Dénique et múlier quædam excépit illum in domum suam. Felix múlier, cujus domus, Salvatóre suscépto, invénta est munda quidem, sed plane non vácua. Quis enim vácuam díxerit, quam salútat Ángelus grátia plenam? Neque hoc solum, sed adhuc quoque in eam superventúrum ásserit Spíritum sanctum. Ad quid, putas, nisi ut étiam superímpleat eam? Ad quid, nisi ut adveniénte jam Spíritu plena sibi, eódem superveniénte, nobis quoque superpléna et superéffluens fiat?"
+		],
+		"lectio-ii":"Intret ergo domum Salvátor, et frequénter vísitet eam, quam pœ\u0301nitens Lázarus mundat, ornat Martha, et María replet intérnæ dédita contemplatióni. Sed forte curiósus quisquam requírat cur in præsénti evangélica lectióne nulla prorsus Lázari méntio fiat. Árbitror sane, ne id quidem a propósita similitúdine dissidére. Virginálem étenim domum intélligi volens Spíritus, síluit non incóngrue pœniténtiam, quæ malum útique comitátur. Absit enim, ut próprii quidquam inquinaménti domus hæc aliquándo habuísse dicátur, ut in ea proínde scopa Lázari quærerétur."
 	}
 ]

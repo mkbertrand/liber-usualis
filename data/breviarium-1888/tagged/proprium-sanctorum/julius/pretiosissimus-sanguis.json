@@ -64,6 +64,170 @@
 		"terminatio":[["terminatio","per-eumdem-dominum"]]
 	},
 	{
+		"tags":["pretiosissimus-sanguis","matutinum","antiphona","antiphona-invitatorium"],
+		"src":"nocturnale/0707I",
+		"datum":"Christum Dei Fílium, qui suo nos redémit sánguine, * Veníte adorémus."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","hymnus"],
+		"src":"nocturnale/0707H",
+		"datum":[
+			"Ira justa Conditóris,/Imbre aquárum víndice,/Criminósum mersit orbem/Noë in arca sóspite:/Mira tandem vis amóris/Lavit orbem sánguine.",
+			"Tam salúbri terra felix/Irrigáta plúvia,/Ante spinis quæ scatébat,/Germinávit flósculos:/Inque néctaris sapórem/Transiére absýnthia.",
+			"Triste prótinus venénum/Dirus anguis pósuit,/Et cruénta belluárum/Désiit ferócia:/Mitis Agni vulneráti/Hæc fuit victória.",
+			"O sciéntiæ supérnæ/Altitúdo impérvia!/O suávitas benígni/Prædicánda péctoris!/Servus erat morte dignus,/Rex luit pœnam óptimus.",
+			"Quando culpis provocámus/Ultiónem júdicis,/Tunc loquéntis protegámur/Sánguinis præséntia:/Ingruéntium malórum/Tunc recédant ágmina.",
+			"Te redémptus laudet orbis/Grata servans múnera,/O salútis sempitérnæ/Dux et auctor ínclyte,/Qui tenes beáta regna/Cum Parénte et Spíritu.","Amen."
+		]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"src":"nocturnale/0707N1A1",
+		"datum":"Postquam * consummáti sunt dies octo, ut circumciderétur puer, vocátum est nomen ejus Jesus."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"src":"nocturnale/0707N1A2",
+		"datum":"Factus in agonía, * prolíxius orábat, et factus est sudor ejus sicut guttæ sánguinis decurréntis in terram."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"src":"nocturnale/0707N1A3",
+		"datum":"Judas, qui eum trádidit, * pœniténtia ductus, rétulit trigínta argénteos, dicens: Peccávi, tradens sánguinem justum."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xv,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Redemísti nos Dómine.","R. In sánguine tuo."]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Jesus, ut sanctificáret per suum sánguinem pópulum, extra portam passus est:",
+		"responsum":"Exeámus ígitur ad eum extra castra, impropérium ejus portántes.",
+		"versus":"Nondum enim usque ad sánguinem restitístis advérsus peccátum repugnántes."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Móyses sumptum sánguinem respérsit in pópulum,",
+		"responsum":"Et ait: Hic est sanguis fœ\u0301deris, quod pépigit Dóminus vobíscum.",
+		"versus":"Fide celebrávit Pascha et sánguinis effusióne, ne qui vastábat primitíva, tángeret eos."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Vos, qui aliquándo erátis longe, facti estis prope in sánguine Christi:",
+		"responsum":"Ipse enim est pax nostra, qui fecit útraque unum.",
+		"versus":"Complácuit per eum reconciliáre ómnia in ipsum, pacíficans per sánguinem crucis ejus, sive quæ in terris, sive quæ in cœlis sunt."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"src":"nocturnale/0707N2A1",
+		"datum":"Pilátus * volens pópulo satisfácere, trádidit illis Jesum flagéllis cæsum."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xxii,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0707N2A2",
+		"datum":"Videns autem * quia nihil profíceret, accépta aqua, lavit manus coram pópulo, dicens: Ínnocens ego sum a sánguine Justi hujus."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-xxix,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0707N2A3",
+		"datum":"Et respóndens * univérsus pópulus, dixit: Sanguis ejus super nos, et super fílios nostros."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
+	},
+	{
+		"tags":[
+			["pretiosissimus-sanguis","matutinum","nocturna-ii","versiculus"],
+			["pretiosissimus-sanguis","tertia","versiculus"]
+		],
+		"datum":["V. Sanguis Jesu Christi Fílii Dei.","R. Emúndat nos ab omni peccáto."]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"In timóre incolátus vestri conversámini,",
+		"responsum":"Sciéntes quod non corruptibílibus auro, vel argénto redémpti estis.",
+		"versus":"Sed pretióso sánguine, quasi agni immaculáti Christi."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Empti estis prétio magno:",
+		"responsum":"Glorificáte, et portáte Deum in córpore vestro.",
+		"versus":"Prétio empti estis, nolíte fíeri servi hóminum."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Comméndat caritátem suam Deus in nobis:",
+		"responsum":"Quóniam cum adhuc peccatóres essémus, secúndum tempus Christus pro nobis mórtuus est.",
+		"versus":"Multo ígitur magis nunc justificáti in sánguine ipsíus, salvi érimus ab ira per ipsum."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"src":"nocturnale/0707N3A1",
+		"datum":"Exívit ergo Jesus * portans corónam spíneam, et purpúreum vestiméntum, et dixit eis: Ecce homo."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lxxiii,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"src":"nocturnale/0707N3A2",
+		"datum":"Et bájulans sibi crucem, * exívit in eum, qui dícitur Calváriæ, locum: ubi crucifixérunt eum."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxxxvii,gloria"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"src":"nocturnale/0707N3A3",
+		"datum":"Ut vidérunt eum jam mórtuum, * non fregérunt ejus crura, sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xciii,gloria"]]
+	},
+	{
+		"tags":[
+			["pretiosissimus-sanguis","matutinum","nocturna-iii","versiculus"],
+			["pretiosissimus-sanguis","sexta","versiculus"]
+		],
+		"datum":["V. Christus diléxit nos.","R. Et lavit nos in sánguine suo."]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Hic est, qui venit per aquam et sánguinem, Jesus Christus:",
+		"responsum":"Non in aqua solum, sed in aqua et sánguine.",
+		"versus":"In die illa erit fons patens dómui David, et habitántibus Jerúsalem, in ablutiónem peccatóris."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Prædestinávit nos Deus in adoptiónem filiórum per Jesum Christum,",
+		"responsum":"In quo habémus redemptiónem per sánguinem ejus.",
+		"versus":"Remissiónem peccatórum secúndum divítias grátiæ ejus, quæ superabundávit in nobis."
+	},
+	{
 		"tags":["pretiosissimus-sanguis","antiphona","antiphona-i"],
 		"src":"gregobase/2015",
 		"datum":"Hi qui amícti sunt * stolis albis, qui sunt, et unde venérunt?"
@@ -126,10 +290,6 @@
 		"versus":"Ex omni tribu, et lingua, et pópulo, et natióne."
 	},
 	{
-		"tags":["pretiosissimus-sanguis","tertia","versiculus"],
-		"datum":["V. Sanguis Jesu Christi Fílii Dei.","R. Emúndat nos ab omni peccáto."]
-	},
-	{
 		"tags":["pretiosissimus-sanguis","sexta","capitulum"],
 		"datum":"Si sanguis hircórum, et taurórum, et cinis vítulæ aspérsus inquinátos sanctíficat ad emundatiónem carnis: + quanto magis sanguis Christi, qui per Spíritum sanctum semetípsum óbtulit immaculátum Deo, * emundábit consciéntiam nostram ab opéribus mórtuis, ad serviéndum Deo vivénti?"
 	},
@@ -138,10 +298,6 @@
 		"incipit":"Sanguis Jesu Christi Fílii Dei",
 		"responsum":"Emúndat nos.",
 		"versus":"Ab omni peccáto."
-	},
-	{
-		"tags":["pretiosissimus-sanguis","sexta","versiculus"],
-		"datum":["V. Christus diléxit nos.","R. Et lavit nos in sánguine suo."]
 	},
 	{
 		"tags":["pretiosissimus-sanguis","nona","capitulum"],

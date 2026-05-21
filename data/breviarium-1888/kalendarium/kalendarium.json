@@ -181,7 +181,7 @@
 	{
 		"occurrence":["nonae-martii"],
 		"tags":[
-			["thomas-aquino","duplex-minus","confessor","doctor"],
+			["thomas-aquino","duplex-minus","confessor","doctor","scriptura-propria"],
 			["perpetua-felicitas","simplex","commemoratio","martyr","martyres"]
 		]
 	},
@@ -211,19 +211,19 @@
 	},
 	{
 		"occurrence":["ad-xiv-kalendas-aprilis"],
-		"tags":["joseph-sponsus","duplex-i-classis"]
+		"tags":["joseph-sponsus","duplex-i-classis","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-xii-kalendas-aprilis"],
-		"tags":["benedictus-abbas","duplex-majus","abbas"]
+		"tags":["benedictus-abbas","duplex-majus","abbas","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-aprilis"],
-		"tags":["annuntiatio-bmv","duplex-ii-classis","maria"]
+		"tags":["annuntiatio-bmv","duplex-ii-classis","maria","scriptura-propria"]
 	},
 	{
 		"occurrence":["feria-vi","hebdomada-passionis"],
-		"tags":["septem-dolores-passione","duplex-majus","maria"]
+		"tags":["septem-dolores-passione","duplex-majus","maria","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-aprilis"],
@@ -239,7 +239,7 @@
 	},
 	{
 		"occurrence":["ad-iii-idus-aprilis"],
-		"tags":["leo-i","duplex-minus","papa","confessor-pontifex","doctor"]
+		"tags":["leo-i","duplex-minus","papa","confessor-pontifex","doctor","scriptura-propria"]
 	},
 	{
 		"occurrence":["idus-aprilis"],
@@ -258,7 +258,7 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-maji"],
-		"tags":["anselmus","duplex-minus","confessor-pontifex","doctor"]
+		"tags":["anselmus","duplex-minus","confessor-pontifex","doctor","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-maji"],
@@ -274,7 +274,7 @@
 	},
 	{
 		"occurrence":["ad-vii-kalendas-maji"],
-		"tags":["marcus","duplex-ii-classis","martyr","evangelista","apostolus"]
+		"tags":["marcus","duplex-ii-classis","martyr","evangelista","apostolus","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-vi-kalendas-maji"],
@@ -297,7 +297,7 @@
 	},
 	{
 		"occurrence":["dominica","hebdomada-iii-paschae"],
-		"tags":["patrocinius-joseph","duplex-ii-classis"]
+		"tags":["patrocinius-joseph","duplex-ii-classis","scriptura-propria"]
 	},
 	{
 		"occurrence":["kalendae-maji"],
@@ -310,7 +310,7 @@
 	{
 		"occurrence":["ad-v-nonas-maji"],
 		"tags":[
-			["inventio-crucis","duplex-ii-classis"],
+			["inventio-crucis","duplex-ii-classis","scriptura-propria"],
 			["alexander-i-et-soc","simplex","commemoratio","papa","martyr","martyres","confessor-pontifex"]
 		]
 	},
@@ -332,7 +332,7 @@
 	},
 	{
 		"occurrence":["ad-viii-idus-maji"],
-		"tags":["apparitio-michaelis","duplex-majus"]
+		"tags":["apparitio-michaelis","duplex-majus","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-vii-idus-maji"],
@@ -414,7 +414,7 @@
 	},
 	{
 		"occurrence":["feria-vi","hebdomada-ii-pentecostes"],
-		"tags":["cor-jesus","duplex-majus"]
+		"tags":["cor-jesus","duplex-majus","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-iv-nonas-junii"],
@@ -442,7 +442,7 @@
 	},
 	{
 		"occurrence":["ad-iii-idus-junii"],
-		"tags":["barnabas","duplex-majus","apostolus","martyr","lectiones-i-nocturnae-propriae"]
+		"tags":["barnabas","duplex-majus","apostolus","martyr","scriptura-propria"]
 	},
 	{
 		"occurrence":["pridie-idus-junii"],
@@ -492,7 +492,7 @@
 	},
 	{
 		"occurrence":["ad-viii-kalendas-julii"],
-		"tags":["nativitas-joannis-baptistae","duplex-i-classis","habens-octavam"]
+		"tags":["nativitas-joannis-baptistae","duplex-i-classis","habens-octavam","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-vii-kalendas-julii"],
@@ -500,35 +500,31 @@
 	},
 	{
 		"occurrence":["ad-vi-kalendas-julii"],
-		"tags":["joannes-paulus","duplex-minus","martyr","martyres","martyres-fratres"]
+		"tags":["joannes-paulus","duplex-minus","martyr","martyres","martyres-fratres","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-iv-kalendas-julii"],
-		"tags":["leo-ii","semiduplex","confessor-pontifex","papa"]
-	},
-	{
-		"occurrence":["ad-iv-kalendas-julii"],
-		"tags":["vigilia-petri-pauli","vigilia","vigilia-apostoli"]
-	},
-	{
-		"occurrence":["ad-iii-kalendas-julii"],
-		"tags":["petrus-paulus","duplex-i-classis","apostolus","apostoli","habens-octavam"]
-	},
-	{
-		"occurrence":["pridie-kalendas-julii"],
 		"tags":[
-			["commemoratio-pauli","duplex-majus","martyr","apostolus"],
-			["commemoratio-petri","semiduplex","commemoratio","martyr","apostolus"]
+			["leo-ii","semiduplex","confessor-pontifex","papa"],
+			["vigilia-petri-pauli","vigilia","vigilia-apostoli"]
 		]
 	},
 	{
+		"occurrence":["ad-iii-kalendas-julii"],
+		"tags":["petrus-paulus","duplex-i-classis","apostolus","apostoli","habens-octavam","scriptura-propria"]
+	},
+	{
+		"occurrence":["pridie-kalendas-julii"],
+		"tags":["commemoratio-pauli","duplex-majus","martyr","apostolus","scriptura-propria"]
+	},
+	{
 		"occurrence":["hebdomada-i-julii","dominica"],
-		"tags":["pretiosissimus-sanguis","duplex-ii-classis"]
+		"tags":["pretiosissimus-sanguis","duplex-ii-classis","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-vi-nonas-julii"],
 		"tags":[
-			["visitatio","duplex-ii-classis","maria"],
+			["visitatio","duplex-ii-classis","maria","scriptura-propria"],
 			["processus-martinianus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
@@ -538,7 +534,7 @@
 	},
 	{
 		"occurrence":["ad-viii-idus-julii"],
-		"tags":["elisabeth-portugalliae","semiduplex","vidua"]
+		"tags":["elisabeth-portugalliae","semiduplex","vidua","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-vi-idus-julii"],
@@ -561,7 +557,7 @@
 	},
 	{
 		"occurrence":["pridie-idus-julii"],
-		"tags":["bonaventura","duplex-minus","confessor-pontifex","doctor"]
+		"tags":["bonaventura","duplex-minus","confessor-pontifex","doctor","scriptura-propria"]
 	},
 	{
 		"occurrence":["idus-julii"],
@@ -569,7 +565,7 @@
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-augusti"],
-		"tags":["bmv-carmelo","duplex-majus","maria"]
+		"tags":["bmv-carmelo","duplex-majus","maria","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-xvi-kalendas-augusti"],
@@ -599,7 +595,7 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-augusti"],
-		"tags":["maria-magdalena-poenitens","duplex-minus","vidua"]
+		"tags":["maria-magdalena-poenitens","duplex-minus","vidua","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-x-kalendas-augusti"],
@@ -618,13 +614,13 @@
 	{
 		"occurrence":["ad-viii-kalendas-augusti"],
 		"tags":[
-			["jacobus","duplex-ii-classis","apostolus","martyr"],
+			["jacobus","duplex-ii-classis","apostolus","martyr","scriptura-propria"],
 			["christophorus","simplex","commemoratio","martyr"]
 		]
 	},
 	{
 		"occurrence":["ad-vii-kalendas-augusti"],
-		"tags":["anna","duplex-ii-classis","vidua"]
+		"tags":["anna","duplex-ii-classis","vidua","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-vi-kalendas-augusti"],
@@ -652,33 +648,33 @@
 	{
 		"occurrence":["kalendae-augusti"],
 		"tags":[
-			["petrus-ad-vincula","duplex-majus","apostolus"],
+			["petrus-ad-vincula","duplex-majus","apostolus","scriptura-propria"],
 			["machabaei","simplex","commemoratio","martyr","martyres"]
 		]
 	},
 	{
 		"occurrence":["ad-iv-nonas-augusti"],
 		"tags":[
-			["alphonsus-liguorio","duplex-minus","doctor","confessor-pontifex"],
+			["alphonsus-liguorio","duplex-minus","doctor","confessor-pontifex","scriptura-propria"],
 			["stephanus-i","simplex","commemoratio","papa","martyr"]
 		]
 	},
 	{
 		"occurrence":["ad-iii-nonas-augusti"],
-		"tags":["inventio-stephani","semiduplex","martyr"]
+		"tags":["inventio-stephani","semiduplex","martyr","scriptura-propria"]
 	},
 	{
 		"occurrence":["pridie-nonas-augusti"],
-		"tags":["dominicus","duplex-majus","confessor","mtv"]
+		"tags":["dominicus","duplex-majus","confessor","scriptura-propria","mtv"]
 	},
 	{
 		"occurrence":["nonae-augusti"],
-		"tags":["maria-ad-nives","duplex-majus","maria"]
+		"tags":["maria-ad-nives","duplex-majus","maria","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-viii-idus-augusti"],
 		"tags":[
-			["transfiguratio","duplex-majus"],
+			["transfiguratio","duplex-majus","scriptura-propria"],
 			["xystus-ii-felicissimus-agapitus","simplex","commemoratio","martyr","martyres"]
 		]
 	},
@@ -702,7 +698,7 @@
 	},
 	{
 		"occurrence":["ad-iv-idus-augusti"],
-		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam"]
+		"tags":["laurentius","duplex-ii-classis","martyr","habens-octavam","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-iii-idus-augusti"],
@@ -725,11 +721,11 @@
 	},
 	{
 		"occurrence":["ad-xviii-kalendas-septembris"],
-		"tags":["assumptio-bmv","duplex-i-classis","maria","habens-octavam"]
+		"tags":["assumptio-bmv","duplex-i-classis","maria","habens-octavam","scriptura-propria"]
 	},
 	{
 		"occurrence":["assumptio-bmv","dominica-infra-octavam"],
-		"tags":["joachim","duplex-ii-classis","confessor","mtv"]
+		"tags":["joachim","duplex-ii-classis","confessor","scriptura-propria","mtv"]
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-septembris"],
@@ -737,7 +733,14 @@
 	},
 	{
 		"occurrence":["ad-xv-kalendas-septembris"],
-		"tags":["agapitus","commemoratio","martyr"]
+		"tags":[
+			["assumptio-bmv","infra-octavam","dies-iv","semiduplex","maria","scriptura-propria"],
+			["agapitus","simplex","commemoratio","martyr"]
+		]
+	},
+	{
+		"occurrence":["ad-xiv-kalendas-septembris"],
+		"tags":["assumptio-bmv","infra-octavam","dies-v","semiduplex","maria","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-xiii-kalendas-septembris"],
@@ -749,7 +752,10 @@
 	},
 	{
 		"occurrence":["ad-xi-kalendas-septembris"],
-		"tags":["timotheus-hippolytus-symphorianus","simplex","commemoratio","martyr","martyres"]
+		"tags":[
+			["assumptio-bmv","dies-octava","duplex-minus","maria","scriptura-propria"],
+			["timotheus-hippolytus-symphorianus","simplex","commemoratio","martyr","martyres"]
+		]
 	},
 	{
 		"occurrence":["ad-x-kalendas-septembris"],
@@ -761,7 +767,7 @@
 	},
 	{
 		"occurrence":["ad-ix-kalendas-septembris"],
-		"tags":["bartholomaeus","duplex-ii-classis","apostolus"]
+		"tags":["bartholomaeus","duplex-ii-classis","apostolus","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-viii-kalendas-septembris"],
@@ -1147,7 +1153,7 @@
 	{
 		"occurrence":["pridie-nonas-decembris"],
 		"tags":[
-			["petrus-chrysologus","duplex-minus","confessor-pontifex","doctor","mtv"],
+			["petrus-chrysologus","duplex-minus","confessor-pontifex","doctor","scriptura-propria","mtv"],
 			["barbara","simplex","commemoratio","virgo","martyr"]
 		]
 	},
@@ -1161,7 +1167,7 @@
 	},
 	{
 		"occurrence":["ad-vii-idus-decembris"],
-		"tags":["ambrosius","duplex-minus","confessor-pontifex","doctor","mtv"]
+		"tags":["ambrosius","duplex-minus","confessor-pontifex","doctor","scriptura-propria","mtv"]
 	},
 	{
 		"occurrence":["ad-vii-idus-decembris"],
@@ -1169,7 +1175,7 @@
 	},
 	{
 		"occurrence":["ad-vi-idus-decembris"],
-		"tags":["immaculata-conceptio-bmv","duplex-i-classis","maria","habens-octavam"]
+		"tags":["immaculata-conceptio-bmv","duplex-i-classis","maria","habens-octavam","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-iv-idus-decembris"],
@@ -1181,7 +1187,7 @@
 	},
 	{
 		"occurrence":["idus-decembris"],
-		"tags":["lucia","duplex-minus","virgo","martyr"]
+		"tags":["lucia","duplex-minus","virgo","martyr","scriptura-propria"]
 	},
 	{
 		"occurrence":["ad-xvii-kalendas-januarii"],
@@ -1193,6 +1199,6 @@
 	},
 	{
 		"occurrence":["ad-xii-kalendas-januarii"],
-		"tags":["thomas","duplex-ii-classis","apostolus"]
+		"tags":["thomas","duplex-ii-classis","apostolus","scriptura-propria"]
 	}
 ]
