@@ -4,13 +4,22 @@
 		"datum":"In Commemoratione B.M.V. de Monte Carmelo"
 	},
 	{
-		"tags":["bmv-carmelo","i-vesperae","antiphona","antiphona-magnificat","n"],
+		"tags":[
+			["bmv-carmelo","i-vesperae","antiphona","antiphona-magnificat","n"],
+			["bmv-carmelo","matutinum","nocturna-iii","responsorium","responsorium-i","n"]
+		],
 		"datum":"tuam solémnem Commemoratiónem"
 	},
 	{
 		"tags":["bmv-carmelo","collecta"],
 		"datum":"Deus, qui beatíssimæ semper Vírginis et Genetrícis tuæ Maríæ singulári título Carméli órdinem decorásti: + concéde propítius; ut cujus hódie Commemoratiónem solémni celebrámus offício, ejus muníti præsídiis, * ad gaúdia sempitérna perveníre mereámur:",
 		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["bmv-carmelo","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Cum sacra Pentecóstes die Apóstoli, cœ\u0301litus affláti, váriis linguis loqueréntur, et invocáto augustíssimo Jesu nómine, mira multa patrárent, viri plúrimi (ut fertur), qui vestígiis sanctórum prophetárum Elíæ  ac Eliséi instíterant, et Joánnis Baptístæ præcónio ad Christi advéntum comparáti fúerant, rerum veritáte perspécta atque probáta, evangélicam fidem conféstim amplexáti sunt, ac peculiári quodam afféctu beatíssimam Vírginem (cujus collóquiis ac familiaritáte felíciter frui potuére) ádeo venerári cœpérunt, ut primi ómnium in eo montis Carméli loco, ubi Elías olim ascendéntem nébulam, Vírginis typo insígnem, conspéxerat, eídem puríssimæ Vírgini sacéllum constrúxerint.",
+		"lectio-ii":"Ad novum ergo sacéllum sæpe quotídie conveniéntes, rítibus piis, precatiónibus ac laúdibus beatíssimam Vírginem, velut singulárem órdinis tutélam, colébant. Quamóbrem fratres beátæ Maríæ de Monte Carmélo passim ab ómnibus appellári cœpérunt, eúmque títulum Summi Pontífices non modo confirmárunt, sed et indulgéntias peculiáres iis, qui eo título vel órdinem vel fratres síngulos nuncupárent, concessére. Nec vero nomenclatúram tantum magnificentíssima Virgo tríbuit et tutélam; verum et insígne sacri scapuláris, quod beáto Simóni Ánglico prǽbuit, ut cœlésti hac veste ordo ille sacer dignoscerétur, et a malis ingruéntibus protegerétur. Ac demum, cum olim in Európa ordo esset ignótus, et ob id apud Honórium tértium non pauci pro illíus exstinctióne instárent, ástitit Honório noctu piíssima Virgo María, planéque jussit, ut institútum et hómines benígne complecterétur.",
+		"lectio-iii":"Non in hoc tantum sǽculo órdinem sibi tam accéptum multis prærogatívis beatíssima Virgo insignívit; verum et in álio (cum ubíque et poténtia et misericórdia plúrimum váleat) fílios in scapuláris societátem relátos, qui abstinéntiam módicam, precésque paucas eis præscríptas frequentárunt, ac pro sui status ratióne castitátem coluérunt, matérno plane afféctu, dum igne purgatórii expiántur, solári, ac in cœléstem pátriam obténtu suo quantócius pie créditur efférre. Tot ergo tantísque benefíciis ordo cumulátus solémnem beatíssimæ Vírginis Commemoratiónem ritu perpétuo ad ejúsdem Vírginis glóriam quotánnis celebrándam instítuit."
 	},
 	{
 		"tags":["bmv-carmelo","laudes","antiphona","antiphona-benedictus"],

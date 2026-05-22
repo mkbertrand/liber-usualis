@@ -24,7 +24,10 @@
 		"datum":"Quasi stella matutína * in médio nébulæ, et quasi luna plena in diébus suis."
 	},
 	{
-		"tags":["elisabeth-portugalliae","vesperae","hymnus"],
+		"tags":[
+			["elisabeth-portugalliae","vesperae","hymnus"],
+			["elisabeth-portugalliae","matutinum","hymnus"]
+		],
 		"src":"gregobase/12024",
 		"datum":[
 			"Domáre cordins ímpetus Elísabeth/Fortis, inópsque Deo/Servíre, regno prǽtulit.",
@@ -46,6 +49,118 @@
 		"tags":["elisabeth-portugalliae","collecta"],
 		"datum":"Clementíssime Deus, qui beátam Elísabeth regínam, inter céteras egrégias dotes, béllici furóris sedándi prærogatíva decorásti: + da nobis ejus intercessióne post mortális vitæ, quam supplíciter pétimus, pacem, * ad ætérna gaúdia perveníre.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","antiphona","antiphona-invitatorium","n"],
+		"datum":"Elísabeth"
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"Eleváta est * magnificéntia Elísabeth super cœlos."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Veni elécta mea, * et ponam in te thronum meum, quia concupívit Rex spéciem tuam."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Accépit benedictiónem * a Dómino, et miesricórdiam a Deo salutári suo."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","versiculus"],
+		"datum":["V. Multæ fíliæ congregavérunt divítias.","R. Tu supergréssa es univérsas."]
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"incipit":"Regáli exórta progénie triúmphat in cœlis Elísabeth, tríplici circúmdata varietáte meritórum:",
+		"responsum":"Nam in terra in tríplici vitæ gradu pósteris imitánda virtútum relíquit exémpla.",
+		"versus":"Virginálem statum, conjugálem, et viduálem inoffénso pede cucúrrit."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"incipit":"Os suum apéruit sapiéntiæ,",
+		"responsum":"Et lex cleméntiæ in lingua ejus.",
+		"versus":"Quóniam prævenísti eam in benedictiónibus dulcédinis."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"incipit":"Desidérium ánimæ ejus tribuísti ei,",
+		"responsum":"Et voluntáte labiórum ejus non fraudásti eam.",
+		"versus":"Scuto bonæ voluntátis tuæ coronásti eam Dómine."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":"Propter veritátem, * et mansuetúdinem, et justítiam dedúcet te mirabíliter déxtera tua."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Arcum cónteret * et confrínget arma, et scuta combúret igni."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Justítia * et misericórdia plena est déxtera tua."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Virga tua, et báculus tuus.","R. Ipsa me consoláta sunt."]
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Elísabeth Aragóniæ régibus ortam, Christi anno millésimo ducentésimo septuagésimo primo, in præságium futúræ sanctimóniæ paréntes, præter morem, relícto matris aviǽque nómine, a magna ejus matértera, Thuríngiæ dómina, sancta Elísabeth, in baptísmo nominátam voluére. Ubi nata est, statim pátuit, quam felix regum regnorúmque esset futúra pacátrix: natalítia enim ejus lætítia perniciósas avi patrísque dissensiónes in concórdiam convértit. Pater vero crescéntis póstea fíliæ admirátus índolem, affirmábat fore, ut una Elísabeth réliquas Aragoniórum regum sánguine creátas féminas virtúte longe superáret. Sic cœléstem ipsíus vitam in contemnéndo córporis ornátu, in fugiéndis voluptátibus, in jejúniis frequentándis, in divínis précibus assídue recitándis, in caritátis opéribus exercéndis, venerátus, rerum suárum regníque felicitátem uníus fíliæ méritis referébat accéptam. Tandem ubíque nota, et a multis princípibus exoptáta, Dionýsio Lusitániæ regi christiánis cæremóniis rite est in matrimónium collocáta."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Audi fília, et vide, et inclína aurem tuam, et oblivíscere pópulum tuum, et domum patris tui:",
+		"responsum":"Et concupíscet Rex decórem tuum.",
+		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Juncta conjúgio, non minórem excoléndis virtútibus, quam líberis educándis óperam dabat, viro placére studens, sed magis Deo. Médiam fere anni partem solo pane tolerábat et aqua: quæ in quodam ipsíus morbo divínitus versa est in vinum, cum id a médicis præscríptum bíbere recusásset. Paúperis féminæ ulcus horréndum exosculáta, derepénte sanávit. Pecúnias paupéribus distribuéndas, ut regem latérent, hibérno témpore in rosas convértit. Vírginem cæcam a nativitáte illuminávit: multos álios solo crucis signo a gravíssimis morbis liberávit: plúrima id genus mirácula patrávit. Monastéria, collégia, et templa non modo exstrúxit, sed étiam magnífice dotávit. In regum discórdiis componéndis admirábilis fuit: in privátis publicísque mortálium sublevándis calamitátibus indeféssa."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"incipit":"Manum suam misit ad fórtia:",
+		"responsum":"Manum suam apéruit ínopi, et palmas suas exténdit ad paúperem.",
+		"versus":"Dispérsit, dedit paupéribus, justítia ejus manet in sǽculum sǽculi."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Defúncto rege Dionýsio, sicut virgínibus in prima ætáte, in matrimónio conjúgibus, ita víduis in solitúdine fuit ómnium virtútum exémplar. Íllico enim religiósis sanctæ Claræ véstibus indúta, régio fúneri constánter intérfuit, ac paulo post Compostéllam proficíscens, multa ex holosérico, argénto, auro, gemmísque donária pro regis ánima óbtulit. Inde revérsa domum, quidquid sibi carum aut pretiósum supérerat, in sacros ac pios usus convértit: absolvendóque suo vere régio Conimbricénsi vírginum cœnóbio, et aléndis paupéribus et protegéndis víduis, defendéndis pupíllis, míseris ómnibus juvándis inténta, non sibi, sed Deo, et mortálium ómnium cómmodis vivébat. Reges duos fílium et génerum pacificatúra, Stremótium nóbile óppidum véniens, morbo ex itínere contrácto, ibídem a Vírgine Deípara visitáta sanctíssime óbiit, anno millésimo trecentésimo trigésimo sexto die quarta Júlii. Post mortem multis miráculis cláruit, præsértim suavíssimo córporis jam per annos fere trecéntos incorrúpti odóre; semper étiam regínæ sanctæ cognoménto célebris. Tandem anno jubilǽi, et nostræ salútis millésimo sexcentésimo vigesimoquínto, totíus christiáni orbis concúrsu et applaúsu, ab Urbáno octávo rite inter Sanctos adscrípta est."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"incipit":"Regnum mundi, et omnem ornátum sǽculi contémpsi propter amórem Dómini mei Jesu Christi:",
+		"responsum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi.",
+		"versus":"Eructávit cor meum verbum bonum: dico ego ópera mea Regi."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":"Conféssio, * et pulchritúdo in conspéctu ejus, sánctitas et magnificéntia in sanctificatióne ejus."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":"Annuntiavérunt * cœli justítiam ejus, et vidérunt omnes pópuli glóriam ejus."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":"Judicávit * in justítia, et pópulos in æquitáte."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Ignis ante ipsam præcédet.","R. Et inflammábit in circúitu inimícos ejus."]
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"incipit":"Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus: considerávit sémitas domus suæ,",
+		"responsum":"Et loquebátur de testimóniis Dómini.",
+		"versus":"Gustávit et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus."
+	},
+	{
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"incipit":"Invocávi, et venit in me spíritus sapiéntiæ, et præpósui illam regnis et sédibus:",
+		"responsum":"Et divítias nihil esse duxi in comparatióne illíus.",
+		"versus":"Mélior est enim sapiéntia cunctis ópibus pretiosíssimis."
 	},
 	{
 		"tags":["elisabeth-portugalliae","laudes","hymnus"],

@@ -7,5 +7,19 @@
 		"tags":["alexius","collecta"],
 		"datum":"Deus, qui nos beáti Aléxii Confessóris tui ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * étiam actiónes imitémur.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["alexius","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["alexius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Aléxius Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima nocte nuptiárum peculiári Dei mónitu relínquens intáctam sponsam, illústrium orbis terræ ecclesiárum peregrinatiónem suscépit. Quibus in itinéribus cum ignótus septémdecim annos fuísset, aliquándo apud Edéssam, Sýriæ urbem, per imáginem sanctíssimæ Maríæ Vírginis, ejus nómine divulgáto, inde navi discéssit. Ad portum Románum appúlsus, a patre suo tamquam aliénus pauper hospítio accípitur: apud quem, ómnibus incógnitus, cum decem et septem annos vixísset, relícto scripto sui nóminis, sánguinis, ac totíus vitæ cursus, migrávit in cœlum, Innocéntio primo Summo Pontífice.",
+		"lectio-ii":[["confessor","alia-lectio","lectio-i","lectio"]],
+		"lectio-iii":[["confessor","alia-lectio","lectio-ii","lectio"]]
+	},
+	{
+		"tags":["alexius","matutinum","nocturna-iii","lectio"],
+		"datum":[["abbas","lectio"]]
 	}
 ]

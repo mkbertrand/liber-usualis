@@ -11,5 +11,15 @@
 		"tags":["bonaventura","collecta"],
 		"datum":"Deus, qui pópulo tuo ætérnæ salútis beátum Bonaventúram minístrum tribuísti: + præsta quǽsumus; ut quem Doctórem vitæ habúimus in terris, * intercessórem habére mereámur in cœlis.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["bonaventura","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Bonaventúra, Balneorégii in Etrúria natus, cum infans incidísset in vitæ perículum, mater ejus vovit, si inde evasísset, se eum religióni beáti Francísci dicatúram. Ítaque adoléscens in órdinem fratrum Minórum adscríbi vóluit: ubi Alexándro de Ales magístro, ad eam doctrínæ perfectiónem brevi pervénit, ut séptimo post annos libros Sententiárum Parísiis públice summa cum laude sit interpretátus: quos étiam præcláris póstea commentáriis illustrávit. Post sex annos sui órdinis Generális miníster Romæ factus, ea prudéntiæ ac sanctitátis laude ministérium gessit, ut in ómnium ore et admiratióne esset.",
+		"lectio-ii":"Multa scripsit, in quibus summam eruditiónem cum pari pietátis ardóre conjúngens, lectórem docéndo movet. Quem Gregórius décimus, ejus sanctimóniæ et sapiéntiæ fama commótus, Cardinálem et Epíscopum Albanénsem creávit. Eúmdem adhuc vivéntem beátus Thomas Aquínas sanctum appellávit. Cum enim vitam sancti Francísci scribéntem comperísset: Sinámus, inquit, sanctum pro sancto laboráre. Migrávit e vita prídie Idus Júlii, in concílio Lugdunénsi, quinquagínta tres annos natus, multis éditis miráculis. Quem Xystus quartus Póntifex Máximus rétulit in sanctórum númerum.",
+		"lectio-iii":[["doctor","lectio-i","lectio"]]
+	},
+	{
+		"tags":["bonaventura","matutinum","nocturna-iii","lectio"],
+		"datum":[["doctor","alia-homilia-ii","lectio"]]
 	}
 ]

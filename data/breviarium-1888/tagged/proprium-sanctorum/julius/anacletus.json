@@ -7,5 +7,15 @@
 		"tags":["anacletus","collecta"],
 		"datum":"Deus, qui nos beáti Anacléti Mártyris tui atque Pontíficis ánnua solemnitáte lætíficas: + concéde propítius; ut cujus natalítia cólimus, * de ejúsdem étiam protectióne gaudeámus.",
 		"terminatio":[["terminatio","per-dominum"]]
+	},
+	{
+		"tags":["anacletus","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["anacletus","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"Anaclétus Atheniénsis, Trajáno imperatóre rexit Ecclésiam. Decrévit, ut epíscopus a tribus epíscopis, neque a paucióribus consecrarétur, et clérici sacris ordínibus públice a próprio epíscopo initiaréntur: et ut in Missa, perácta consecratióne, omnes communicárent. Beáti Petri sepúlchrum ornávit, Pontificúmque sepultúræ locum attríbuit. Fecit ordinatiónes duas mense Decémbri, quibus creávit presbýteros quinque, diáconos tres, epíscopos sex. Sedit annos novem, menses tres, dies decem. Martýrio coronátus, sepúltus est in Vaticáno.",
+		"lectio-ii":[["martyr","alia-lectio","lectio-i","lectio"]],
+		"lectio-iii":[["martyr","alia-lectio","lectio-ii","lectio"]]
 	}
 ]
