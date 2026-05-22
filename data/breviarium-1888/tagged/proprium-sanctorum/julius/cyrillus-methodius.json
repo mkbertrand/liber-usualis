@@ -4,7 +4,11 @@
 		"datum":"Ss. Cyrilli et Methodii Pontificum et Confessorum"
 	},
 	{
-		"tags":["cyrillus-methodius","vesperae","hymnus"],
+		"tags":[
+			["cyrillus-methodius","vesperae","hymnus"],
+			["cyrillus-methodius","matutinum","hymnus"]
+		],
+		"src":"gregobase/2006",
 		"datum":[
 			"Sédibus cœli nítidis recéptos/Dícite athlétas géminos, fidéles;/Slávicæ duplex cólumen, decúsque/Dícite gentis.",
 			"Hos amor fratres sociávit unus,/Únaque abdúxit píetas erémo,/Ferre quo multis célerent beátæ/Pígnora vitæ.",
@@ -20,6 +24,7 @@
 	},
 	{
 		"tags":["cyrillus-methodius","i-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2516",
 		"datum":"O quam speciósi pedes * evangelizántium pacem, evangelizántium bona, dicéntium Sion: regnábit Deus tuus."
 	},
 	{
@@ -28,7 +33,22 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
+		"tags":["cyrillus-methodius","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["cyrillus-methodius","matutinum","nocturna-ii","lectio"],
+		"lectio-i":"[Ex Litteris Encyclicis Leonis PP. XIII.]/Cyríllus et Methódius fratres germáni, Thessalonícæ amplíssimo loco nati, Constantinópolim matúre concessérunt, ut in ipsa urbe Oriéntis príncipe humanitátis artes addíscerent. Utérque plúrimum brevi profecérunt; sed máxime Cyríllus, qui tantam scientiárum laudem adéptus est, ut singuláris honóris causa philósophus appellarétur. Deínde mónachum ágere Methódius cœpit; Cyríllus autem dignus est hábitus, cui Theodóra imperátrix, auctóre Ignátio Patriárcha, negótium daret erudiéndi ad fidem christiánam Cházaros trans Chersonésum incoléntes; quos præcéptis suis edóctos et Dei númine instínctos, multíplici superstitióne deléta, ad Jesum Christum adjúnxit. Recénti Christianórum communitáte óptime constitúta, Constantinópolim rédiit álacer, atque in monastérium Polychrónis, quo se jam Methódius recéperat, Cyríllus ipse secéssit. Ínterim cum res trans Chersonésum próspere gestas ad Rastiláum Moráviæ príncipem fama detulísset, is de áliquot operáriis evangélicis Constantinópoli arcesséndis cum imperatóre Michaéle tértio egit. Ígitur Cyríllus et Methódius illi expeditióni destináti, et in Moráviam célebri lætítia excépti, ánimos christiánis institutiónibus tanta vi, tamque operósa indústria excoléndos aggrediúntur, ut non longo intervállo ea gens nomen Jesu Christo libentíssime déderit. Ad eam rem non parum sciéntia váluit dictiónis Slavónicæ, quam Cyríllus ante percéperat, multúmque potuérunt sacræ utriúsque testaménti lítteræ, quas próprio pópuli sermóne reddíderat: nam Cyríllus et Methódius príncipes inveniéndi fuérunt ipsas lítteras, quibus est sermo ipsórum Slavórum signátus et expréssus, eáque de causa ejúsdem sermónis auctóres non immérito habéntur.",
+		"lectio-ii":"Cum rerum gestárum glóriam secúndus rumor Romam nuntiásset, sanctus Nicoláus primus Póntifex Máximus fratres óptimos Romam conténdere jussit. Illi Románum iter ingréssi, relíquias sancti Cleméntis primi Pontíficis Máximi, quas Cyríllus Chersónæ repérerat, secum ádvehunt. Quo núntio, Adriánus secúndus, qui Nicoláo demórtuo fúerat sufféctus, clero populóque comitánte, óbviam eis magna cum honóris significatióne progréditur. Deínde Cyríllus et Methódius de múnere apostólico in quo essent sancte laborioséque versáti ad Pontíficem Máximum, assidénte clero, réferunt; cum autem eo nómine ab ínvidis accusaréntur, quod sermónem Slavónicum in perfunctióne múnerum sacrórum usurpavíssent, causam dixére ratiónibus tam certis tamque illústribus, ut Póntifex et clerus et laudárint hómines et probárint. Tum ambo juráti se in fide beáti Petri et Pontíficum Romanórum permansúros, epíscopi ab Adriáno consecráti sunt. Sed erat provísum divínitus, ut Cyríllus vitæ cursum Romæ cónderet, virtúte magis quam ætáte matúrus. Ítaque defúncti corpus elátum fúnere público, in ipso sepúlchro quod sibi Adriánus exstrúxerat compósitum fuit; tum ad sancti Cleméntis dedúctum, et hujus prope cíneres cónditum. Cumque veherétur per urbem inter festos psalmórum cantus, non tam fúneris quam triúmphi pompa, visus est pópulus Románus libaménta honórum cœléstium viro sanctíssimo detulísse. Methódius vero in Moráviam regréssus, ibíque factus forma gregis ex ánimo, rei cathólicæ inservíre majóre in dies stúdio ínstitit. Quin étiam Pannónios, Búlgaros, Dálmatas in fide christiáni nóminis confirmávit; in Carínthiis autem ad uníus veri Dei cultum traducéndis plúrimum elaborávit.",
+		"lectio-iii":"Apud Joánnem octávum, qui Adriáno succésserat, íterum de suspécta fide violatóque more majórum accusátus, ac Romam veníre jussus, coram Joánne, et epíscopis áliquot cleróque urbáno, fácile vicit cathólicam prorsus fidem et se retinuísse constánter, et céteros diligénter edocuísse: quod vero ad linguam Slavónicam in sacris peragéndis usurpátam, se certis de causis ex vénia Adriáni Pontíficis, nec Sacris Lítteris repugnántibus, jure fecísse. Quaprópter in re præsénti compléxus Methódium Póntifex, potestátem ejus archiepiscopálem, expeditionémque Slavónicam, datis étiam lítteris, ratam esse jussit. Quare Methódius in Moráviam revérsus adsignátum sibi munus explére vigilántius perseverávit, pro quo et exsílium libénter passus est. Bohemórum príncipem ejúsque uxórem ad fidem perdúxit, et in ea gente christiánum nomen longe latéque vulgávit. Evangélii lumen in Polóniam invéxit, et, ut nonnúlli scriptóres tradunt, sede episcopáli Leópoli fundáta, in Moscóviam próprii nóminis digréssus, thronum pontificálem Kiowénsem constítuit. Demum in Moráviam revérsus est ad suos; jamque sese ábripi ad humánum éxitum séntiens, ípsemet sibi successórem designávit, clerúmque et pópulum suprémis præcéptis ad virtútem cohortátus, ea vita, quæ sibi via in cœlum fuit, placidíssime defúnctus est. Uti Cyríllum Roma, sic Methódium Morávia decedéntem summo honóre prosecúta est. Illórum vero festum, quod apud Slavóniæ pópulos jámdiu celebrári consuéverat, Leo decimustértius Póntifex Máximus cum Offício ac Missa própria in univérsa Ecclésia quotánnis agi præcépit."
+	},
+	{
+		"tags":["cyrillus-methodius","matutinum","nocturna-iii","lectio"],
+		"datum":[["evangelista","lectio"]]
+	},
+	{
 		"tags":["cyrillus-methodius","laudes","hymnus"],
+		"src":"gregobase/12688",
 		"datum":[
 			"Lux o decóra pátriæ/Slavísque amíca géntibus,/Salvéte, fratres: ánnuo/Vos efferémus cántico;",
 			"Quos Roma plaudens éxcipit,/Compléxa mater fílios,/Auget coróna prǽsulum,/Novóque firmat róbore.",
@@ -45,10 +65,12 @@
 	},
 	{
 		"tags":["cyrillus-methodius","laudes","antiphona","antiphona-benedictus"],
+		"src":"gregobase/11868",
 		"datum":"In sanctitáte * et justítia serviérunt Dómino ómnibus diébus suis: ídeo stolam glóriæ índuit illos Dóminus Deus Ísraël."
 	},
 	{
 		"tags":["cyrillus-methodius","ii-vesperae","antiphona","antiphona-magnificat"],
+		"src":"gregobase/2341",
 		"datum":"Isti sunt * viri sancti, facti amíci Dei, divínæ veritátis præcónio gloriósi: linguæ eórum claves cœli factæ sunt."
 	}
 ]
