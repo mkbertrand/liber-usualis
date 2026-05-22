@@ -70,8 +70,9 @@ def kalendar(book) -> Kalendar:
 
 	for cycle in cycles:
 		for entry in cycle:
-			kal.add_entry(bases[entry['basis']] + timedelta(days=entry['offset']), entry['tags'])
-			octavate(bases[entry['basis']] + timedelta(days=entry['offset']), entry['tags'])
+			for tagset in entry['tags'] if type(entry['tags']) is list else [entry['tags']]:
+				kal.add_entry(bases[entry['basis']] + timedelta(days=entry['offset']), tagset)
+				octavate(bases[entry['basis']] + timedelta(days=entry['offset']), tagset)
 
 	# Epiphany Sundays
 	for epiphanyweek in range(0, 6):
