@@ -202,23 +202,10 @@
 		]
 	},
 	{
-		"include":["pentecostes","semiduplex"],
-		"response":[
-			{"include":["duplex-minus","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","ad-modum-simplicis"]},
-			{"include":["semiduplex","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","ad-modum-simplicis"]}
-		]
-	},
-	{
 		"include":["primarium"],
 		"response":[
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["commemoratio-matutini","nocturna-iii"]},
 			{"include":["in-tempore-quadragesimae","feria","commemoratio"],"target":1,"response":"duplicate","remove":"commemoratio","adde":["matutinum","nocturna-iii","lectio-iii","benedictio","per-evangelica-dicta"]}
-		]
-	},
-	{
-		"include":["dominica","commemoratio-matutini"],
-		"response":[
-			{"include":["simplex","commemoratio-matutini"],"response":"dele","target":1}
 		]
 	},
 	{
@@ -228,9 +215,12 @@
 		]
 	},
 	{
-		"include":["feria","commemoratio-matutini"],
+		"include":["simplex","commemoratio-matutini"],
 		"response":[
-			{"include":["simplex","commemoratio-matutini"],"response":"dele","target":1}
+			{"include":["dominica","commemoratio-matutini"],"response":"dele","target":0},
+			{"include":["feria","commemoratio-matutini"],"response":"dele","target":0},
+			{"include":["duplex","commemoratio-matutini"],"response":"dele","target":0},
+			{"include":["semiduplex","commemoratio-matutini"],"response":"dele","target":0}
 		]
 	},
 	{
@@ -246,6 +236,13 @@
 		]
 	},
 	{
+		"include":["commemoratio-matutini"],
+		"response":[
+			{"include":["pascha"],"response":"dele","target":0},
+			{"include":["pentecostes"],"response":"dele","target":0}
+		]
+	},
+	{
 		"include":["petronilla","commemoratio-matutini"],
 		"response":"dele"
 	},
@@ -255,6 +252,10 @@
 	},
 	{
 		"include":["nabor-felix","commemoratio-matutini"],
+		"response":"dele"
+	},
+	{
+		"include":["margarita","commemoratio-matutini"],
 		"response":"dele"
 	},
 	{
