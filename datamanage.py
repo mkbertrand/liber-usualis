@@ -70,13 +70,13 @@ class LiturgicalBook:
 		self.src = src
 		self.title = title
 
-	@functools.lru_cache(maxsize=32)
-	def getdiscrimina(self, query):
-		return load_data(f'discrimina/{query}.json', self.src)
-
 	@functools.lru_cache(maxsize=64)
 	def getcategory(self, category):
 		return load_data(f'categoriae/{category}.json', self.src)
+
+	@functools.lru_cache(maxsize=32)
+	def getdiscrimina(self, query):
+		return load_data(f'discrimina/{query}.json', self.src)
 
 	# Has the list of files in the tagged directory to prevent multiple discoveratory traversals from having to be done
 	@functools.lru_cache(maxsize=16)

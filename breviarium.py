@@ -25,17 +25,6 @@ def flattensetlist(sets):
 		ret |= i
 	return ret
 
-def flatcat0(category):
-	if type(category) is set:
-		return category
-	elif type(category) is list:
-		return flattensetlist(category)
-	else:
-		raise RuntimeError()
-
-def flatcat(book, category):
-	return flatcat0(book.getcategory(category))
-
 def expandcat0(book, category):
 	if type(category) is set or type(category) is frozenset:
 		ret = set()
