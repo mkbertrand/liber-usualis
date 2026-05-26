@@ -11,7 +11,7 @@ def get_and_html(file):
 	return ''.join(list(map(lambda line: psalm_line(line), open(file, 'r', encoding = 'utf-8').readlines())))
 
 def psalmget(book, psalm):
-	return get_and_html(book.joinpath(f'untagged/{psalm}.txt')).strip() + '\n'
+	return get_and_html(book.src.joinpath(f'untagged/{psalm}.txt')).strip() + '\n'
 
 def get(book, query):
 	pathsplit = query.rfind('/')

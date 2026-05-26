@@ -26,7 +26,6 @@ import localization
 
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
-root = 'breviarium-1888'
 book = datamanage.get_book('breviarium-1888')
 
 toplevelpages = [
@@ -108,7 +107,7 @@ def daytags(vesperal = False):
 
 	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(book, day) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(book, day))
 
-	pile = datamanage.getpile(book, flattensetlist(tags) | {'formulae'})
+	pile = book.getpile(flattensetlist(tags) | {'formulae'})
 
 	primary = [i for i in tags if 'primarium' in i][0]
 	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(book, 'rank', a), reverse=True)]
@@ -166,7 +165,7 @@ def rite():
 			tags = [i | {'privata'} for i in tags]
 		primary = [i for i in tags if 'primarium' in i][0]
 		tags.remove(primary)
-		pile = datamanage.getpile(book, breviarium.defaultpile | primary | set(hours))
+		pile = book.getpile(breviarium.defaultpile | primary | set(hours))
 
 		noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
 		if noending and not 'antiphona-bmv' in primary:
@@ -189,8 +188,8 @@ def rite():
 			def gettranslation(tags):
 				translation = parameters['translation']
 				search = set(tags) | {translation}
-				translatedbook = book.joinpath(f'translations/{translation}')
-				return breviarium.search(book, search, datamanage.getpile(translatedbook, primary | set(hours) | search | breviarium.defaultpile), rootappendix=f'translations/{translation}')
+				translatedbook = datamanage.get_book(f'{book.title}-{translation}')
+				return breviarium.search(book, search, translatedbook.getpile(primary | set(hours) | search | breviarium.defaultpile), translatedbook=translatedbook)
 
 			def traverse(obj):
 				if type(obj) is dict and 'tags' in obj:
@@ -210,7 +209,7 @@ def rite():
 		abort(500, error500tpl('Error de interpretatione.'))
 
 	try:
-		pile = datamanage.getpile(book, flattensetlist(tags) | {'formulae'})
+		pile = book.getpile(flattensetlist(tags) | {'formulae'})
 
 		lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
 		lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None

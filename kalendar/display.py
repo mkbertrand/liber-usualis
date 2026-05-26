@@ -17,11 +17,11 @@ from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
 def kalendar(book) -> Kalendar:
 
-	adventcycle = load_data('de-adventu.json', book)
-	epiphanycycle = load_data('epiphania.json', book)
-	paschalcycle = load_data('de-paschali.json', book)
-	sanctoral = load_data('kalendarium.json', book)
-	nativitycycle = load_data('in-tempore-nativitatis.json', book)
+	adventcycle = load_data('de-adventu.json', book.src)
+	epiphanycycle = load_data('epiphania.json', book.src)
+	paschalcycle = load_data('de-paschali.json', book.src)
+	sanctoral = load_data('kalendarium.json', book.src)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book.src)
 
 	kal = Kalendar()
 
@@ -83,11 +83,11 @@ def kalendar(book) -> Kalendar:
 
 def kalendar2(book) -> Kalendar:
 
-	adventcycle = load_data('de-adventu.json', book)
-	epiphanycycle = load_data('epiphania.json', book)
-	paschalcycle = load_data('de-paschali.json', book)
-	sanctoral = load_data('kalendarium.json', book)
-	nativitycycle = load_data('in-tempore-nativitatis.json', book)
+	adventcycle = load_data('de-adventu.json', book.src)
+	epiphanycycle = load_data('epiphania.json', book.src)
+	paschalcycle = load_data('de-paschali.json', book.src)
+	sanctoral = load_data('kalendarium.json', book.src)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book.src)
 
 	kal = Kalendar()
 
@@ -164,7 +164,7 @@ def kalendar2(book) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	tabella = load_data('tabella.json', book)
+	tabella = load_data('tabella.json', book.src)
 	for i in tabella:
 		apply_tabella(kal, i)
 

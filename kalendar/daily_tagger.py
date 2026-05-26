@@ -14,8 +14,8 @@ from kalendar import kalendar
 import kalendar.datamanage
 import kalendar.luna as luna
 
-def load_data_prioritizer(p: str, book):
-	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
+def load_data_prioritizer(p: str, src):
+	data = json.loads(src.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -112,12 +112,12 @@ def apply_secondary_tabella(day, tabella):
 
 	return day
 
-def get_vespers(book: Path, day):
+def get_vespers(book, day):
 
 	assert type(day) is not datetime
 
-	implicationtable = load_data_prioritizer('sequentes.json', book)
-	vesperalrules = load_data_prioritizer('tabella-vesperalis.json', book)
+	implicationtable = load_data_prioritizer('sequentes.json', book.src)
+	vesperalrules = load_data_prioritizer('tabella-vesperalis.json', book.src)
 
 	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(book, day + timedelta(days=1))]
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(book, day)]
@@ -132,13 +132,13 @@ def get_vespers(book: Path, day):
 
 	return [frozenset(i) for i in tags]
 
-def get_diurnal(book: Path, day):
+def get_diurnal(book, day):
 
 	assert type(day) is not datetime
 
-	implicationtable = load_data_prioritizer('sequentes.json', book)
-	diurnalrules = load_data_prioritizer('tabella-diurnalis.json', book)
-	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', book)
+	implicationtable = load_data_prioritizer('sequentes.json', book.src)
+	diurnalrules = load_data_prioritizer('tabella-diurnalis.json', book.src)
+	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', book.src)
 
 	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(book, day), diurnalrules)
 	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(book, day + timedelta(days=1)), martyrologyrules)

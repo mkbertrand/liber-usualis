@@ -12,12 +12,12 @@ from typing import NamedTuple, Optional, Self, Set
 import itertools
 import pathlib
 
-import kalendar.datamanage as datamanage
+from kalendar.datamanage import flatten
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-def load_data(p: str, book):
-	data = json.loads(book.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
+def load_data(p: str, src):
+	data = json.loads(src.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
 	# JSON doesn't support sets. Recursively find and replace anything that
 	# looks like a list of tags with a set of tags.
@@ -180,7 +180,7 @@ def nearest_sunday(kalends: date):
 # N.B. This is a mutable function. It will change kal
 def apply_tabella(kal, tabella):
 
-	rules = datamanage.flatten(tabella)
+	rules = flatten(tabella)
 
 	class Job(NamedTuple):
 		days: tuple
@@ -283,13 +283,14 @@ def apply_tabella(kal, tabella):
 
 def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 
-	adventcycle = load_data('de-adventu.json', book)
-	nativitycycle = load_data('in-tempore-nativitatis.json', book)
-	epiphanycycle = load_data('epiphania.json', book)
-	paschalcycle = load_data('de-paschali.json', book)
-	autumnalcycle = load_data('autumnalis.json', book)
-	movables = load_data('motabiles.json', book)
-	kalendarium = load_data('kalendarium.json', book)
+	adventcycle = load_data('de-adventu.json', book.src)
+	nativitycycle = load_data('in-tempore-nativitatis.json', book.src)
+	epiphanycycle = load_data('epiphania.json', book.src)
+	paschalcycle = load_data('de-paschali.json', book.src)
+	autumnalcycle = load_data('autumnalis.json', book.src)
+	movables = load_data('motabiles.json', book.src)
+	kalendarium = load_data('kalendarium.json', book.src)
+	tabella = load_data('tabella.json', book.src)
 
 	kal = Kalendar()
 
@@ -481,7 +482,6 @@ def kalendar(book: pathlib.Path, year: int) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	tabella = load_data('tabella.json', book)
 	for i in tabella:
 		apply_tabella(kal, i)
 
@@ -528,7 +528,8 @@ if __name__ == "__main__":
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
 
-	book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
+	import datamanage
+	book = datamanage.get_book('breviarium-1888')
 	# Generate kalendar
 	ret = dict(sorted(kalendar(book, args.year).items()))
 
