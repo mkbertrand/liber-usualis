@@ -8,7 +8,7 @@ import json
 import copy
 from datetime import date, datetime, timedelta
 import functools
-import prioritizer
+import kalendar.daily_tagger
 import datamanage
 import warnings
 import logging
@@ -290,7 +290,7 @@ def process(book, item, selected, alternates, pile):
 def generate(book, day, hour: str):
 	hours = hour.split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	tags = copy.deepcopy(prioritizer.get_vespers(book, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else prioritizer.get_diurnal(book, day))
+	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(book, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(book, day))
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
 	pile = datamanage.getpile(book, defaultpile | primary | set(hours))

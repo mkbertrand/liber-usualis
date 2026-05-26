@@ -3,16 +3,16 @@
 import pytest
 from datetime import date, timedelta
 
-import prioritizer
+import kalendar.daily_tagger
 import kalendar.datamanage
 
 import pathlib
 
 year = 2001
-book = pathlib.Path(__file__).parent.joinpath('data/breviarium-1888')
+book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
 
 @pytest.mark.parametrize('day', [date(year, 1, 1) + timedelta(days=i) for i in range(365)])
 def test_singleprimary(day):
-	result = prioritizer.get_vespers(book, day)
+	result = kalendar.daily_tagger.get_vespers(book, day)
 	assert len(list(filter(lambda a: 'primarium' in a, result))) == 1
 	assert all([len(i & {'primarium', 'commemoratio', 'omissum', 'psalmi'}) < 2 for i in result])

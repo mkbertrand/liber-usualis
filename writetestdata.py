@@ -5,7 +5,6 @@ import warnings
 import os
 
 import datamanage
-import prioritizer
 import breviarium
 
 year = 2001

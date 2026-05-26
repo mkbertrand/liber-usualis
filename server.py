@@ -20,7 +20,7 @@ import traceback
 
 import breviarium
 import datamanage
-import prioritizer
+import kalendar.daily_tagger
 
 import localization
 
@@ -106,7 +106,7 @@ def daytags(vesperal = False):
 
 	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-	tags = copy.deepcopy(prioritizer.get_vespers(book, day) if parameters['time'] == 'vesperale' else prioritizer.get_diurnal(book, day))
+	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(book, day) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(book, day))
 
 	pile = datamanage.getpile(book, flattensetlist(tags) | {'formulae'})
 
@@ -137,7 +137,7 @@ def rite():
 		assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
 		vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
-		tags = copy.deepcopy(prioritizer.get_vespers(book, day) if vesperal else prioritizer.get_diurnal(book, day))
+		tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(book, day) if vesperal else kalendar.daily_tagger.get_diurnal(book, day))
 
 		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
 		if 'select' in parameters:
