@@ -19,18 +19,11 @@ import psalms
 
 defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis'}
 
-@functools.lru_cache(maxsize=64)
-def getcategory(book, category):
-	return datamanage.load_data(f'categoriae/{category}.json', book)
-
 def flattensetlist(sets):
 	ret = set()
 	for i in sets:
 		ret |= i
 	return ret
-
-def flatcat(book, category):
-	return flatcat0(getcategory(book, category))
 
 def flatcat0(category):
 	if type(category) is set:
@@ -40,9 +33,8 @@ def flatcat0(category):
 	else:
 		raise RuntimeError()
 
-@functools.lru_cache(maxsize=16)
-def expandcat(book, category):
-	return expandcat0(book, getcategory(book, category))
+def flatcat(book, category):
+	return flatcat0(book.getcategory(category))
 
 def expandcat0(book, category):
 	if type(category) is set or type(category) is frozenset:
@@ -58,12 +50,12 @@ def expandcat0(book, category):
 	else:
 		raise RuntimeError(str(category))
 
-def contradicts(book, category, tags):
-	# In other words, are there any contradictions?
-	return len(list(contradictions(book, category, tags)))
+@functools.lru_cache(maxsize=16)
+def expandcat(book, category):
+	return expandcat0(book, book.getcategory(category))
 
 def contradictions(book, category, tags):
-	category = getcategory(book, category)
+	category = book.getcategory(category)
 	if type(category) is set or type(category) is frozenset:
 		return []
 	elif type(category) is list:
@@ -73,6 +65,10 @@ def contradictions(book, category, tags):
 				yield subcat
 	else:
 		return RuntimeError()
+
+def contradicts(book, category, tags):
+	# In other words, are there any contradictions?
+	return len(list(contradictions(book, category, tags)))
 
 def prettyprint(j):
 	def recurse(obj):
@@ -107,7 +103,7 @@ def anysearch(query, pile):
 
 # Numerical rank of query tagset according to a table of tagsets. Outputs a binary number with 1 in positions where the tagset at that table position was a subset of the query.
 def discriminate(book, table: str, tags: set):
-	table = datamanage.getdiscrimina(book, table)
+	table = book.getdiscrimina(table)
 	val = 0
 	for i in range(0, len(table)):
 		if len(table[i]) == 1 and list(table[i])[0].startswith('/'):
@@ -145,12 +141,12 @@ def managesearch(query, result):
 			raise RuntimeError(f'Bad formatting for antiphon {result['datum']}')
 
 
-def search(book, query, pile, multipleresults = False, multipleresultssort = None, rootappendix = ''):
+def search(book, query, pile, multipleresults = False, multipleresultssort = None, translatedbook = None):
 
 	for i in query:
 		if '/' in i:
 			try:
-				return {'tags': {i}, 'datum':psalms.get(book.joinpath(rootappendix), i)}
+				return {'tags': {i}, 'datum':psalms.get(translatedbook if translatedbook else book, i)}
 			except FileNotFoundError:
 				return None
 
@@ -175,10 +171,10 @@ def handlecommemorations(book, item, selected, alternates):
 		ret = []
 		commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(book, 'rank', a), reverse=True)
 		for i in commemorations:
-			probablepile = datamanage.getpile(book, defaultpile | item | i)
+			probablepile = book.getpile(defaultpile | item | i)
 			ret.append(process(book, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
 		if len(commemorations) != 0:
-			probablepile = datamanage.getpile(book, defaultpile | commemorations[-1])
+			probablepile = book.getpile(defaultpile | commemorations[-1])
 			ret.append(process(book, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
 		return {'tags':{'commemorationes'}, 'datum':ret}
 
@@ -202,7 +198,7 @@ def process(book, item, selected, alternates, pile):
 	if 'from' in item:
 		if 'martyrologium' in item['from']:
 			book = datamanage.get_book('martyrologium-1846')
-			pile = datamanage.getpile(book, item['from'] | {'dies-lunae'})
+			pile = book.getpile(item['from'] | {'dies-lunae'})
 
 		selected = copy.deepcopy(selected)
 		repile = False
@@ -212,7 +208,7 @@ def process(book, item, selected, alternates, pile):
 			repile = True
 
 		if repile:
-			pile = datamanage.getpile(book, item['from'] | selected | defaultpile)
+			pile = book.getpile(item['from'] | selected | defaultpile)
 
 		result = None
 		if not any('/' in i for i in item['from']):
@@ -223,7 +219,7 @@ def process(book, item, selected, alternates, pile):
 					alternates = copy.copy(alternates)
 					alternates.append(selected - expandcat(book, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(book, 'positionales'))
-					pile = datamanage.getpile(book, defaultpile | item['from'] | selected)
+					pile = book.getpile(defaultpile | item['from'] | selected)
 					item['from'] -= expandcat(book, 'temporale')
 					break
 
@@ -237,7 +233,7 @@ def process(book, item, selected, alternates, pile):
 						selected = alternates.pop(i)
 					else:
 						selected = alternates.pop(i) | (selected & expandcat(book, 'positionales'))
-					pile = datamanage.getpile(book, defaultpile | item['from'] | selected)
+					pile = book.getpile(defaultpile | item['from'] | selected)
 					result = search(book, item['from'] | selected, pile)
 					break
 
@@ -249,7 +245,7 @@ def process(book, item, selected, alternates, pile):
 				for cclass in contradictions(book, 'temporale', item['from'] | selected):
 					selected -= cclass
 				selected |= item['from'] & expandcat(book, 'temporale')
-				pile = datamanage.getpile(book, defaultpile | item['from'] | selected)
+				pile = book.getpile(defaultpile | item['from'] | selected)
 
 			result = search(book, item['from'] | selected, pile)
 
@@ -293,7 +289,7 @@ def generate(book, day, hour: str):
 	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(book, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(book, day))
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
-	pile = datamanage.getpile(book, defaultpile | primary | set(hours))
+	pile = book.getpile(defaultpile | primary | set(hours))
 
 	lit = []
 	for hour in hours:
