@@ -259,6 +259,18 @@
 		"response":"dele"
 	},
 	{
+		"include":["liborius","commemoratio-matutini"],
+		"response":"dele"
+	},
+	{
+		"include":["christophorus","commemoratio-matutini"],
+		"response":"dele"
+	},
+	{
+		"include":["felix-ii-et-soc","commemoratio-matutini"],
+		"response":"dele"
+	},
+	{
 		"include":["infra-octavam","commemoratio"],
 		"response":"duplicate",
 		"remove":"commemoratio",
