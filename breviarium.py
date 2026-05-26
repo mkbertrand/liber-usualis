@@ -140,7 +140,6 @@ def managesearch(query, result):
 		except IndexError:
 			raise RuntimeError(f'Bad formatting for antiphon {result['datum']}')
 
-
 def search(book, query, pile, multipleresults = False, multipleresultssort = None, translatedbook = None):
 
 	for i in query:

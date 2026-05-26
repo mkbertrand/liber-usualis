@@ -104,11 +104,7 @@ class LiturgicalBook:
 			# Expands out entries where there's more than one item
 			for key, val in entrycopy.items():
 				if key not in functiontags:
-					tags = None
-					if type(entrycopy['tags']) is list:
-						tags = [j | {key} for j in entrycopy['tags']]
-					else:
-						tags = entrycopy['tags'] | {key}
+					tags = [j | {key} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {key}
 					newentry = {'tags':tags, 'datum':val}
 					if 'src' in entrycopy:
 						newentry['src'] = entrycopy['src']
