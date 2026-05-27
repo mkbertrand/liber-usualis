@@ -9,19 +9,18 @@ import copy
 from datetime import date, datetime, timedelta
 import json
 
-import kalendar.datamanage as datamanage
 import kalendar.kalendar as kalendar
 from kalendar.kalendar import SearchResult, Kalendar, threenocturnes, ranks, octavevigiltags, feriae, load_data, noprimarium, apply_tabella
 from kalendar.pascha import geteaster
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-def kalendar(book) -> Kalendar:
+def kalendar(context) -> Kalendar:
 
-	adventcycle = load_data('de-adventu.json', book.src)
-	epiphanycycle = load_data('epiphania.json', book.src)
-	paschalcycle = load_data('de-paschali.json', book.src)
-	sanctoral = load_data('kalendarium.json', book.src)
-	nativitycycle = load_data('in-tempore-nativitatis.json', book.src)
+	adventcycle = load_data('de-adventu.json', context.books[0].src)
+	epiphanycycle = load_data('epiphania.json', context.books[0].src)
+	paschalcycle = load_data('de-paschali.json', context.books[0].src)
+	sanctoral = load_data('kalendarium.json', context.books[0].src)
+	nativitycycle = load_data('in-tempore-nativitatis.json', context.books[0].src)
 
 	kal = Kalendar()
 
@@ -81,13 +80,13 @@ def kalendar(book) -> Kalendar:
 
 	return kal
 
-def kalendar2(book) -> Kalendar:
+def kalendar2(context) -> Kalendar:
 
-	adventcycle = load_data('de-adventu.json', book.src)
-	epiphanycycle = load_data('epiphania.json', book.src)
-	paschalcycle = load_data('de-paschali.json', book.src)
-	sanctoral = load_data('kalendarium.json', book.src)
-	nativitycycle = load_data('in-tempore-nativitatis.json', book.src)
+	adventcycle = load_data('de-adventu.json', context.books[0].src)
+	epiphanycycle = load_data('epiphania.json', context.books[0].src)
+	paschalcycle = load_data('de-paschali.json', context.books[0].src)
+	sanctoral = load_data('kalendarium.json', context.books[0].src)
+	nativitycycle = load_data('in-tempore-nativitatis.json', context.books[0].src)
 
 	kal = Kalendar()
 
@@ -164,7 +163,7 @@ def kalendar2(book) -> Kalendar:
 			if entry.isdisjoint(noprimarium):
 				entry.add('primarium')
 
-	tabella = load_data('tabella.json', book.src)
+	tabella = load_data('tabella.json', context.books[0].src)
 	for i in tabella:
 		apply_tabella(kal, i)
 
@@ -224,8 +223,8 @@ if __name__ == "__main__":
 	if args.verbosity:
 		logging.getLogger().setLevel(args.verbosity)
 
-	import pathlib
-	book = pathlib.Path(__file__).parent.parent.joinpath('data/breviarium-1888')
+	import datamanage
+	context = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'))
 	# Generate kalendar
 	ret = dict(sorted(kalendar(book).items()))
 

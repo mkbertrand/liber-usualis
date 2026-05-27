@@ -25,39 +25,42 @@ def flattensetlist(sets):
 		ret |= i
 	return ret
 
-def expandcat0(book, category):
-	if type(category) is set or type(category) is frozenset:
-		ret = set()
-		for i in category:
-			if i.startswith('/'):
-				ret |= expandcat(book, i[1:])
-			else:
-				ret.add(i)
-		return ret
-	elif type(category) is list:
-		return expandcat0(book, flattensetlist(category))
-	else:
-		raise RuntimeError(str(category))
+def expandcat(context, category):
+	def expandopenedcat(category):
+		if type(category) is set or type(category) is frozenset:
+			ret = set()
+			for i in category:
+				if i.startswith('/'):
+					ret |= expandcat(context, i[1:])
+				else:
+					ret.add(i)
+			return ret
+		elif type(category) is list:
+			return expandopenedcat(flattensetlist(category))
+		else:
+			raise RuntimeError(str(category))
 
-@functools.lru_cache(maxsize=16)
-def expandcat(book, category):
-	return expandcat0(book, book.getcategory(category))
+	@functools.cache
+	def expandnamedcat(category):
+		return expandopenedcat(context.getcategory(category))
 
-def contradictions(book, category, tags):
-	category = book.getcategory(category)
+	return expandnamedcat(category) if type(category) is str else expandopenedcat(category)
+
+def contradictions(context, category, tags):
+	category = context.getcategory(category)
 	if type(category) is set or type(category) is frozenset:
 		return []
 	elif type(category) is list:
 		for subcat in category:
-			subcat = expandcat0(book, subcat)
+			subcat = expandcat(context, subcat)
 			if sum([tag in tags for tag in subcat]) > 1:
 				yield subcat
 	else:
 		return RuntimeError()
 
-def contradicts(book, category, tags):
+def contradicts(context, category, tags):
 	# In other words, are there any contradictions?
-	return len(list(contradictions(book, category, tags)))
+	return len(list(contradictions(context, category, tags)))
 
 def prettyprint(j):
 	def recurse(obj):
@@ -91,12 +94,12 @@ def anysearch(query, pile):
 			yield copy.copy(i)
 
 # Numerical rank of query tagset according to a table of tagsets. Outputs a binary number with 1 in positions where the tagset at that table position was a subset of the query.
-def discriminate(book, table: str, tags: set):
-	table = book.getdiscrimina(table)
+def discriminate(context, table: str, tags: set):
+	table = context.getdiscrimen(table)
 	val = 0
 	for i in range(0, len(table)):
 		if len(table[i]) == 1 and list(table[i])[0].startswith('/'):
-			val |= (not tags.isdisjoint(expandcat(book, list(table[i])[0]))) << (len(table) - i - 1)
+			val |= (not tags.isdisjoint(expandcat(context, list(table[i])[0]))) << (len(table) - i - 1)
 		else:
 			include = set(filter(lambda a: a[0] != '!', table[i]))
 			exclude = {a[1:] for a in table[i] - include}
@@ -129,21 +132,20 @@ def managesearch(query, result):
 		except IndexError:
 			raise RuntimeError(f'Bad formatting for antiphon {result['datum']}')
 
-def search(book, query, pile, multipleresults = False, multipleresultssort = None, translatedbook = None):
-
+def search(context, query, pile, multipleresults = False, multipleresultssort = None, translatedcontext = None):
 	for i in query:
 		if '/' in i:
 			try:
-				return {'tags': {i}, 'datum':psalms.get(translatedbook if translatedbook else book, i)}
+				return {'tags': {i}, 'datum':psalms.get((translatedcontext if translatedcontext else context).books[0], i)}
 			except FileNotFoundError:
 				return None
 
-	result = list(sorted(list(anysearch(query, pile)), key=lambda a: discriminate(book, 'general', a['tags']), reverse=True))
+	result = list(sorted(list(anysearch(query, pile)), key=lambda a: discriminate(context, 'general', a['tags']), reverse=True))
 	if len(result) == 0:
 		warnings.warn(f'0 tags found for queries {list(query)}')
 		return None
-	bestvalue = discriminate(book, 'general', result[0]['tags'])
-	result = list(filter(lambda a: discriminate(book, 'general', a['tags']) == bestvalue, result))
+	bestvalue = discriminate(context, 'general', result[0]['tags'])
+	result = list(filter(lambda a: discriminate(context, 'general', a['tags']) == bestvalue, result))
 	if len(result) == 1:
 		return managesearch(query, result[0])
 	result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
@@ -155,18 +157,18 @@ def search(book, query, pile, multipleresults = False, multipleresultssort = Non
 		return list([managesearch(query, i) for i in sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort)])
 
 # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
-def handlecommemorations(book, item, selected, alternates):
+def handlecommemorations(context, item, selected, alternates):
 		ret = []
-		commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(book, 'rank', a), reverse=True)
+		commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(context, 'rank', a), reverse=True)
 		for i in commemorations:
-			probablepile = book.getpile(defaultpile | item | i)
-			ret.append(process(book, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
+			probablepile = context.getpile(defaultpile | item | i)
+			ret.append(process(context, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
 		if len(commemorations) != 0:
-			probablepile = book.getpile(defaultpile | commemorations[-1])
-			ret.append(process(book, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
+			probablepile = context.getpile(defaultpile | commemorations[-1])
+			ret.append(process(context, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
 		return {'tags':{'commemorationes'}, 'datum':ret}
 
-def process(book, item, selected, alternates, pile):
+def process(context, item, selected, alternates, pile):
 	if item is None:
 		return 'Absens'
 	if selected is None:
@@ -177,72 +179,68 @@ def process(book, item, selected, alternates, pile):
 		pile = []
 
 	if 'commemorationes' in item:
-		return handlecommemorations(book, item, selected, alternates)
+		return handlecommemorations(context, item, selected, alternates)
 
 	# Within the data, a set (represented in JSON as a list of strings) is a euphemism for from: tags
 	if type(item) is set or type(item) is frozenset:
 		item = {'from':item}
 
 	if 'from' in item:
-		if 'martyrologium' in item['from']:
-			book = datamanage.get_book('martyrologium-1846')
-			pile = book.getpile(item['from'] | {'dies-lunae'})
-
 		selected = copy.deepcopy(selected)
 		repile = False
 		# Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
-		for cclass in contradictions(book, 'positionales', item['from'] | selected):
+		for cclass in contradictions(context, 'positionales', item['from'] | selected):
 			selected -= cclass
 			repile = True
 
 		if repile:
-			pile = book.getpile(item['from'] | selected | defaultpile)
+			pile = context.getpile(item['from'] | selected | defaultpile)
 
 		result = None
 		if not any('/' in i for i in item['from']):
 			for i in range(len(alternates)):
 				# Basically if the from is explicitly calling for some day's propers, remove the other day context to facilitate this
-				if 'occurrens' in item['from'] and item['from'] & expandcat(book, 'temporale') <= alternates[i]:
+				if 'occurrens' in item['from'] and item['from'] & expandcat(context, 'temporale') <= alternates[i]:
 					item['from'] -= {'occurrens'}
 					alternates = copy.copy(alternates)
-					alternates.append(selected - expandcat(book, 'positionales'))
-					selected = alternates.pop(i) | (selected & expandcat(book, 'positionales'))
-					pile = book.getpile(defaultpile | item['from'] | selected)
-					item['from'] -= expandcat(book, 'temporale')
+					alternates.append(selected - expandcat(context, 'positionales'))
+					pile = context.getpile(defaultpile | item['from'] | selected)
+					selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
+					item['from'] -= expandcat(context, 'temporale')
 					break
 
 				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
 				# Sometimes there are explicit tagsets in alternates that specify certain things (as opposed to above when the data itself requests something)
-				elif item['from'] | (selected & expandcat(book, 'positionales')) <= alternates[i]:
+				elif item['from'] | (selected & expandcat(context, 'positionales')) <= alternates[i]:
 					alternates = copy.copy(alternates)
 					alternates.append(selected)
 
-					if contradicts(book, 'positionales', item['from'] | alternates[i] | selected):
+					if contradicts(context, 'positionales', item['from'] | alternates[i] | selected):
 						selected = alternates.pop(i)
 					else:
-						selected = alternates.pop(i) | (selected & expandcat(book, 'positionales'))
-					pile = book.getpile(defaultpile | item['from'] | selected)
-					result = search(book, item['from'] | selected, pile)
+						selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
+					pile = context.getpile(defaultpile | item['from'] | selected)
+					result = search(context, item['from'] | selected, pile)
 					break
 
 		if result is None:
 			# Only remove tags referring to propers and commons and whatnot if a different set is suggested
 			# This is different than the occurrens system because we're not asking about something on the specific day (for example, we want the ferial readings of the day)
 			# but rather we may want the readings for the Common of the Blessed Virgin which isn't specific day-to-day
-			if len(item['from'] & expandcat(book, 'temporale')) != 0:
-				for cclass in contradictions(book, 'temporale', item['from'] | selected):
+			if len(item['from'] & expandcat(context, 'temporale')) != 0:
+				for cclass in contradictions(context, 'temporale', item['from'] | selected):
 					selected -= cclass
-				selected |= item['from'] & expandcat(book, 'temporale')
-				pile = book.getpile(defaultpile | item['from'] | selected)
+				selected |= item['from'] & expandcat(context, 'temporale')
+				pile = context.getpile(defaultpile | item['from'] | selected)
 
-			result = search(book, item['from'] | selected, pile)
+			result = search(context, item['from'] | selected, pile)
 
 		# If result is still None at this point, just tell user what was searched for
 		if result is None:
 			# It has to be sorted for testing purposes
 			return str(sorted(list(item['from'] | selected)))
 		selected |= item['from']
-		response = process(book, result, selected, alternates, pile)
+		response = process(context, result, selected, alternates, pile)
 
 		if 'tags' in item:
 			response = {'tags': item['tags'], 'datum': response}
@@ -253,10 +251,10 @@ def process(book, item, selected, alternates, pile):
 		for i in item['datum']:
 			if type(i) is str:
 				if 'N.' in i:
-					i = i.replace('N. et N.', 'N.').replace('N.', search(book, item['tags'] | {'n'} | selected, pile)['datum'])
+					i = i.replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected, pile)['datum'])
 				ret.append(i)
 			else:
-				iprocessed = process(book, i, selected, alternates, pile)
+				iprocessed = process(context, i, selected, alternates, pile)
 				if iprocessed is None:
 					ret.append('Absens')
 				elif type(iprocessed) is list:
@@ -268,21 +266,21 @@ def process(book, item, selected, alternates, pile):
 
 	# Often in the text there will be an N. replaced with the celebrated Saint's name.
 	if type(item) is dict and 'N.' in item['datum']:
-		item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(book, item['tags'] | {'n'} | selected, pile)['datum'])
+		item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected, pile)['datum'])
 	return item
 
-def generate(book, day, hour: str):
+def generate(context, day, hour: str):
 	hours = hour.split('+')
 	assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(book, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(book, day))
+	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(context, day))
 	primary = list(filter(lambda i: 'primarium' in i, tags))[0]
 	tags.remove(primary)
-	pile = book.getpile(defaultpile | primary | set(hours))
+	pile = context.getpile(defaultpile | primary | set(hours))
 
 	lit = []
 	for hour in hours:
 		lit.append({'ritus', hour})
-	return process(book, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
+	return process(context, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
 
 if __name__ == '__main__':
 	import argparse
@@ -360,8 +358,8 @@ if __name__ == '__main__':
 		logging.getLogger().setLevel(args.verbosity)
 	# Generate kalendar
 	day = datetime.strptime(args.date, '%Y-%m-%d').date()
-	book = datamanage.get_book(args.root)
-	ret = generate(book, day, args.hour)
+	context = datamanage.get_context(args.root)
+	ret = generate(context, day, args.hour)
 
 	if args.output == sys.stdout:
 		prettyprint(ret)

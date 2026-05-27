@@ -281,16 +281,16 @@ def apply_tabella(kal, tabella):
 	while len(queue) != 0:
 		resolvejob(queue.pop())
 
-def kalendar(book: pathlib.Path, year: int) -> Kalendar:
+def kalendar(context: pathlib.Path, year: int) -> Kalendar:
 
-	adventcycle = load_data('de-adventu.json', book.src)
-	nativitycycle = load_data('in-tempore-nativitatis.json', book.src)
-	epiphanycycle = load_data('epiphania.json', book.src)
-	paschalcycle = load_data('de-paschali.json', book.src)
-	autumnalcycle = load_data('autumnalis.json', book.src)
-	movables = load_data('motabiles.json', book.src)
-	kalendarium = load_data('kalendarium.json', book.src)
-	tabella = load_data('tabella.json', book.src)
+	adventcycle = load_data('de-adventu.json', context.books[0].src)
+	nativitycycle = load_data('in-tempore-nativitatis.json', context.books[0].src)
+	epiphanycycle = load_data('epiphania.json', context.books[0].src)
+	paschalcycle = load_data('de-paschali.json', context.books[0].src)
+	autumnalcycle = load_data('autumnalis.json', context.books[0].src)
+	movables = load_data('motabiles.json', context.books[0].src)
+	kalendarium = load_data('kalendarium.json', context.books[0].src)
+	tabella = load_data('tabella.json', context.books[0].src)
 
 	kal = Kalendar()
 
@@ -529,9 +529,9 @@ if __name__ == "__main__":
 		logging.getLogger().setLevel(args.verbosity)
 
 	import datamanage
-	book = datamanage.get_book('breviarium-1888')
+	context = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'))
 	# Generate kalendar
-	ret = dict(sorted(kalendar(book, args.year).items()))
+	ret = dict(sorted(kalendar(context, args.year).items()))
 
 	# Convert datestrings to strings and sets into lists
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}

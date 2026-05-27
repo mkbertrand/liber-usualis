@@ -52,6 +52,12 @@ def dump_data(j):
 
 	return json.dumps(recurse(j))
 
+def flattensetlist(sets):
+	ret = set()
+	for i in sets:
+		ret |= i
+	return ret
+
 @functools.lru_cache(maxsize=1024)
 def getchantfile(src):
 	url = ''
@@ -70,13 +76,19 @@ class LiturgicalBook:
 		self.src = src
 		self.title = title
 
+	def hascategory(self, category):
+		return self.src.joinpath(f'categoriae/{category}.json').exists()
+
 	@functools.lru_cache(maxsize=64)
 	def getcategory(self, category):
 		return load_data(f'categoriae/{category}.json', self.src)
 
+	def hasdiscrimen(self, discrimen):
+		return self.src.joinpath(f'discrimina/{discrimen}.json').exists()
+
 	@functools.lru_cache(maxsize=32)
-	def getdiscrimina(self, query):
-		return load_data(f'discrimina/{query}.json', self.src)
+	def getdiscrimen(self, discrimen):
+		return load_data(f'discrimina/{discrimen}.json', self.src)
 
 	# Has the list of files in the tagged directory to prevent multiple discoveratory traversals from having to be done
 	@functools.lru_cache(maxsize=16)
@@ -123,25 +135,58 @@ class LiturgicalBook:
 def get_book(title):
 	return LiturgicalBook(data_root.joinpath('data').joinpath(title), title)
 
-def getname(book, tagset, pile):
+class LiturgicalContext:
+	def __init__(self, *books):
+		booklist = []
+		for i in books:
+			if type(i) is list:
+				booklist.extend(i)
+			else:
+				booklist.append(i)
+		self.books = booklist
+
+	def getcategory(self, category):
+		finds = [book.getcategory(category) for book in self.books if book.hascategory(category)]
+		if all(type(cat) is frozenset for cat in finds):
+			return flattensetlist(finds)
+		else:
+			ret = []
+			for i in finds:
+				ret.extend(i)
+			return ret
+
+	def getdiscrimen(self, discrimen):
+		finds = [book.getdiscrimen(discrimen) for book in self.books if book.hasdiscrimen(discrimen)]
+		ret = []
+		for i in finds:
+			ret.extend(i)
+		return ret
+
+	def getpile(self, pilequery):
+		ret = []
+		for book in self.books:
+			ret.extend(book.getpile(pilequery))
+		return ret
+
+def getname(context, tagset, pile):
 	import breviarium
-	resp = breviarium.process(book, {'nomen'}, tagset, [], pile)
+	resp = breviarium.process(context, {'nomen'}, tagset, [], pile)
 	name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
 	if type(name) is list:
 		name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
 	return name
 
 @functools.lru_cache(maxsize=1)
-def getdisplaykalendar(book):
-	ret = dict(sorted(display.kalendar(book).items()))
+def getdisplaykalendar(context):
+	ret = dict(sorted(display.kalendar(context).items()))
 	ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
 
-	kalendar = display.kalendar2(book)
+	kalendar = display.kalendar2(context)
 	for entry in kalendar:
 		if type(entry['tags']) is frozenset:
 			entry['tags'] = [entry['tags']]
-		entry['names'] = [getname(book, tagset, book.getpile(tagset | {'formulae'})) for tagset in entry['tags']]
+		entry['names'] = [getname(context, tagset, context.getpile(tagset | {'formulae'})) for tagset in entry['tags']]
 		if any(i in entry['occurrence'] for i in ['feria-ii', 'feria-iii', 'feria-iv', 'feria-v', 'feria-vi', 'sabbatum']):
 			entry['occurrence'] |= {'feria'}
-		entry['occurrence-name'] = getname(book, entry['occurrence'], book.getpile(entry['occurrence'] | {'formulae'}))
+		entry['occurrence-name'] = getname(context, entry['occurrence'], context.getpile(entry['occurrence'] | {'formulae'}))
 	return dump_data({'skeleton': ret, 'kalendar': kalendar})
