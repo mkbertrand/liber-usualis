@@ -141,6 +141,12 @@ def search(context, query, pile, multipleresults = False, multipleresultssort = 
 				return None
 
 	result = list(anysearch(query, pile))
+
+	# If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
+	if len(result) == 0:
+		warnings.warn(f'0 tags found for queries {list(query)}')
+		return None
+
 	for rule in context.getdiscrimen('general'):
 		def discrim(item):
 			tags = item['tags']
@@ -154,13 +160,8 @@ def search(context, query, pile, multipleresults = False, multipleresultssort = 
 		if any(resultvalues):
 			result = [v for i, v in enumerate(result) if resultvalues[i]]
 		if len(result) == 1:
-			break
+			return managesearch(query, result[0])
 
-	if len(result) == 0:
-		warnings.warn(f'0 tags found for queries {list(query)}')
-		return None
-	if len(result) == 1:
-		return managesearch(query, result[0])
 	result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
 	if len(result[0]['tags']) != len(result[1]['tags']):
 		return managesearch(query, result[0])
