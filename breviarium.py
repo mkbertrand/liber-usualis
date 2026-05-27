@@ -140,12 +140,25 @@ def search(context, query, pile, multipleresults = False, multipleresultssort = 
 			except FileNotFoundError:
 				return None
 
-	result = list(sorted(list(anysearch(query, pile)), key=lambda a: discriminate(context, 'general', a['tags']), reverse=True))
+	result = list(anysearch(query, pile))
+	for rule in context.getdiscrimen('general'):
+		def discrim(item):
+			tags = item['tags']
+			if len(rule) == 1 and list(rule)[0].startswith('/'):
+				return not tags.isdisjoint(expandcat(context, list(rule)[0]))
+			else:
+				include = set(filter(lambda a: a[0] != '!', rule))
+				exclude = {a[1:] for a in rule - include}
+				return include.issubset(tags) and exclude.isdisjoint(tags)
+		resultvalues = list(map(discrim, result))
+		if any(resultvalues):
+			result = [v for i, v in enumerate(result) if resultvalues[i]]
+		if len(result) == 1:
+			break
+
 	if len(result) == 0:
 		warnings.warn(f'0 tags found for queries {list(query)}')
 		return None
-	bestvalue = discriminate(context, 'general', result[0]['tags'])
-	result = list(filter(lambda a: discriminate(context, 'general', a['tags']) == bestvalue, result))
 	if len(result) == 1:
 		return managesearch(query, result[0])
 	result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
