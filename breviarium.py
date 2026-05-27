@@ -204,8 +204,8 @@ def process(context, item, selected, alternates, pile):
 					item['from'] -= {'occurrens'}
 					alternates = copy.copy(alternates)
 					alternates.append(selected - expandcat(context, 'positionales'))
-					pile = context.getpile(defaultpile | item['from'] | selected)
 					selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
+					pile = context.getpile(defaultpile | item['from'] | selected)
 					item['from'] -= expandcat(context, 'temporale')
 					break
 

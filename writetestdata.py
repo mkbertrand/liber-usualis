@@ -8,7 +8,7 @@ import datamanage
 import breviarium
 
 year = 2001
-book = datamanage.get_book('breviarium-1888')
+context = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'))
 
 if not os.path.isdir('testdata'):
 	os.makedirs('testdata')
@@ -21,6 +21,6 @@ for i in range(0, 365):
 	print(day)
 	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
 		with open(f'testdata/{day}-{j.replace("+", "-")}.json', 'w') as fileout:
-			fileout.write(datamanage.dump_data(breviarium.generate(book, day, j)))
+			fileout.write(datamanage.dump_data(breviarium.generate(context, day, j)))
 
 print(f'Finished writing test data ({round(time.time() - start, 3)}s)')
