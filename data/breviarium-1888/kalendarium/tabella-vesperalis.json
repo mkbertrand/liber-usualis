@@ -199,6 +199,18 @@
 		]
 	},
 	{
+		"include":["pascha","duplex-i-classis"],
+		"response":[
+			{"include":["commemoratio"],"remove":"commemoratio","adde":"omissum","target":1}
+		]
+	},
+	{
+		"include":["pentecostes","duplex-i-classis"],
+		"response":[
+			{"include":["commemoratio"],"remove":"commemoratio","adde":"omissum","target":1}
+		]
+	},
+	{
 		"include":["infra-octavam","dies-vii","ii-vesperae"],
 		"response":"dele"
 	},
