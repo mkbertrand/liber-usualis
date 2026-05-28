@@ -204,7 +204,7 @@ def apply_tabella(kal, tabella):
 			matchset = []
 			failsearch = False
 			for restriction in job.rule['restrict']:
-				search = [tagsetindex for tagsetindex in tagsetindices if (restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and restriction.exclude <= kal[day][tagsetindex]))]
+				search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= kal[day][tagsetindex] and not (restriction.exclude and (restriction.exclude <= kal[day][tagsetindex] if type(restriction.exclude) is frozenset else any(i <= kal[day][tagsetindex] for i in restriction.exclude)))]
 				if len(search) == 0:
 					failsearch = True
 					break
@@ -234,12 +234,23 @@ def apply_tabella(kal, tabella):
 						raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {match}')
 					else:
 						target = match[job.rule['target']]
+
+						if 'adde' in job.rule:
+							if type(job.rule['adde']) is frozenset:
+								kal[day][target] |= job.rule['adde']
+							else:
+								kal[day][target] |= {job.rule['adde']}
+						if 'remove' in job.rule:
+							if type(job.rule['remove']) is frozenset:
+								kal[day][target] -= job.rule['remove']
+							else:
+								kal[day][target] -= {job.rule['remove']}
+
 						if job.rule['response'] == 'dele':
 							kal[day].pop(target)
 							queue.append(job)
 						elif job.rule['response'] == 'transfer':
 							move = kal[day].pop(target)
-							move.add('translatum')
 							transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
 							kal[transferday].append(move)
 							queue.append(job)

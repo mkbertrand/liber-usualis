@@ -49,16 +49,6 @@
 		"adde":["suffragium","commemoratio","pro-pace"]
 	},
 	{
-		"include":["vigilia-immaculatae-conceptionis-bmv"],
-		"remove":"commemoratio",
-		"adde":"omissum"
-	},
-	{
-		"include":["vigilia-thomae"],
-		"adde":"omissum",
-		"remove":["primarium","commemoratio"]
-	},
-	{
 		"include":["quatuor-tempora"],
 		"recheck":false,
 		"response":[
@@ -73,6 +63,10 @@
 		"response":[
 			{"include":["feria"],"exclude":["feria-major"],"response":"combina","target":0}
 		]
+	},
+	{
+		"include":["vigilia","primarium","omissum"],
+		"remove":"omissum"
 	},
 	{
 		"include":["vigilia"],
