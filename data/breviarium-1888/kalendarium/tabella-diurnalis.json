@@ -116,11 +116,6 @@
 		"adde":["matutinum","antiphona","antiphona-invitatorium","pars"]
 	},
 	{
-		"include":["vigilia-mathiae","in-tempore-quadragesimae"],
-		"remove":["primarium","commemoratio"],
-		"adde":"omissum"
-	},
-	{
 		"include":["bmv-sabbatum","maria","primarium"],
 		"response":[
 			{"include":["tempus","januarius"],"adde":"januarius","target":0},
