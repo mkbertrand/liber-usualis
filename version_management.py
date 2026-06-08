@@ -1,5 +1,6 @@
 import os
 import re
+import hashlib
 
 definedlocales = os.listdir('web/locales/')
 
@@ -27,3 +28,9 @@ def bestlocalized(file, locales):
 	for l in locales:
 		if os.path.exists(f'web/locales/{l}{file}'):
 			return f'web/locales/{l}{file}'
+
+
+def get_versioned_resource(path):
+	with open('web/resources' + path) as f:
+		version = hashlib.md5(f.read().encode('utf-8')).hexdigest()
+		return f'/resources{path}?v={version}'

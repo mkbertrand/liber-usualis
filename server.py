@@ -22,7 +22,7 @@ import breviarium
 import datamanage
 import kalendar.daily_tagger
 
-import localization
+import version_management
 
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
@@ -60,17 +60,17 @@ def index():
 def bouncetolocale(page):
 	locales = ['en']
 	try:
-		locales = localization.localehunt(request.headers.get('Accept-Language'))
+		locales = version_management.localehunt(request.headers.get('Accept-Language'))
 		if not 'en' in locales:
 			locales.append('en')
 	finally:
-		return redirect(f'/{[loc for loc in locales if loc in localization.definedlocales][0]}/{page}')
+		return redirect(f'/{[loc for loc in locales if loc in version_management.definedlocales][0]}/{page}')
 
-@get(f'/<preferredlocale:re:{'|'.join(localization.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
+@get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
 	locales = [preferredlocale]
 	try:
-		locales.extend(localization.localehunt(request.headers.get('Accept-Language')))
+		locales.extend(version_management.localehunt(request.headers.get('Accept-Language')))
 	finally:
 		if not 'en' in locales:
 			locales.append('en')

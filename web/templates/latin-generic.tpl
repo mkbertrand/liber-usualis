@@ -4,7 +4,7 @@
 
 % import json
 % import os
-% import localization
+% import version_management
 % locale = locales[0]
 
 <html lang="{{locale.split('-')[0]}}">
@@ -21,9 +21,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=19">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/generic.css?v=18">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=43">
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/generic.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource(f'/styles/{page}.css')}}>
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
@@ -50,7 +50,7 @@
 			% if os.path.exists(f'web/pages/{page}.html'):
 				% include(f'web/pages/{page}.html')
 			% else:
-				% include(f'web/pages/{page}.tpl', text=json.load(open(localization.bestlocalized(f'/pages/{page}.json', locales))))
+				% include(f'web/pages/{page}.tpl', text=json.load(open(version_management.bestlocalized(f'/pages/{page}.json', locales))))
 		</div>
 	</body>
 </html>

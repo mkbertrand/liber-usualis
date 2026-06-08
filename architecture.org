@@ -159,12 +159,15 @@
    are intercepted and fetch the psalm text directly from =psalterium/= files,
    bypassing the normal search.
 
-** Localization: =localization.py=
+** Localization and Resource Versioning: =version_management.py=
 
    Locale is detected from the =Accept-Language= HTTP header. Supported locales:
    =la= (Latin), =en= (English), =de= (German). When a translation is requested,
    the server adds a language tag to search queries and loads translation files
    from =data/{book}/translations/{locale}/=.
+
+   Resource versioning is done via md5 hash included as a parameter in the resource's url.
+   These are requested by the templates as-needed.
 
 * Frontend
 
@@ -444,7 +447,7 @@
   | =datamanage.py=                                   | Data loading, caching, JSON/frozenset conversion       |
   | =prioritizer.py=                                  | Kalendar conflict resolution and tag generation        |
   | =psalms.py=                                       | Psalm number resolution                                |
-  | =localization.py=                                 | Locale detection and i18n                              |
+  | =version_management.py=                           | Locale detection and i18n                              |
   | =kalendar/=                                       | Full liturgical kalendar with solar/lunar calculations |
   | =web/templates/pray.tpl=                          | Main page template (Alpine.js root component)          |
   | =web/resources/js/ritegen.js=                     | Ritual hour templates (ambits) and rendering logic     |

@@ -3,9 +3,9 @@
 <!-- Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 % import json
-% import localization
+% import version_management
 % locale = locales[0]
-% text = json.load(open(localization.bestlocalized(f'/pages/{page}.json', locales)))
+% text = json.load(open(version_management.bestlocalized(f'/pages/{page}.json', locales)))
 
 <html lang="{{locale.split('-')[0]}}">
 	<head>
@@ -21,8 +21,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/pray.css?v=49">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=19">
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/pray.css')}}>
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
@@ -32,11 +32,11 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
-		<script type="text/javascript" src="/resources/js/pray.js?v=2"></script>
-		<script type="text/javascript" src="/resources/js/ritegen.js?v=63"></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/pray.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/ritegen.js')}}></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="/resources/js/exsurge.js"></script>
-		<script type="text/javascript" src="/resources/js/gabc-chant.js?v=3"></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/exsurge.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/gabc-chant.js')}}></script>
 	</head>
 	<body x-data="{
 	liturgylist: [],

@@ -3,7 +3,7 @@
 <!-- Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
 % import json
-% import localization
+% import version_management
 % locale = locales[0]
 
 <html lang="{{locale.split('-')[0]}}">
@@ -20,9 +20,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/style.css?v=19">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/generic.css?v=18">
-		<link rel="stylesheet" type="text/css" href="/resources/styles/{{page}}.css?v=43">
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/generic.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource(f'/styles/{page}.css')}}>
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
@@ -46,7 +46,7 @@
 				</select>
 			</div>
 			% include('web/resources/sidemenu.tpl', preferredlocale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
-			% include(localization.bestlocalized(f'/pages/{page}.html', locales))
+			% include(version_management.bestlocalized(f'/pages/{page}.html', locales))
 		</div>
 	</body>
 </html>
