@@ -267,12 +267,12 @@
 		"tags":["confessor-pontifex","sexta","responsorium-breve"],
 		"src":"gregobase/3222",
 		"incipit":"Elégit eum Dóminus",
-		"responsum":"Sacerdótem sibi.",
+		"responsum":"sacerdótem sibi.",
 		"versus":"Ad sacrificándum ei hóstiam laudis."
 	},
 	{
 		"tags":["confessor-pontifex","sexta","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Elégit eum Dóminus sacerdótem sibi",
+		"incipit":"Elégit eum Dóminus sacerdótem sibi.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Ad sacrificándum ei hóstiam laudis."
 	},
@@ -284,13 +284,13 @@
 		"tags":["confessor-pontifex","nona","responsorium-breve"],
 		"src":"gregobase/3101",
 		"incipit":"Tu es sacérdos",
-		"responsum":"In ætérnum.",
+		"responsum":"in ætérnum.",
 		"versus":"Secúndum órdinem Melchísedech."
 	},
 	{
 		"tags":["confessor-pontifex","nona","responsorium-breve","in-tempore-paschali"],
 		"src":"gregobase/3101",
-		"incipit":"Tu es sacérdos in ætérnum",
+		"incipit":"Tu es sacérdos in ætérnum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Secúndum órdinem Melchísedech."
 	},

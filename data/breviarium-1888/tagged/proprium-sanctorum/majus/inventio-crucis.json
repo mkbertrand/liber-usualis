@@ -320,14 +320,14 @@
 	},
 	{
 		"tags":["inventio-crucis","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Hoc signum Crucis erit in cœlo",
+		"incipit":"Hoc signum Crucis erit in cœlo.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Cum Dóminus ad judicándum vénerit."
 	},
 	{
 		"tags":["inventio-crucis","tertia","responsorium-breve"],
 		"incipit":"Hoc signum Crucis",
-		"responsum":"Erit in cœlo.",
+		"responsum":"erit in cœlo.",
 		"versus":"Cum Dóminus ad judicándum vénerit."
 	},
 	{
@@ -336,14 +336,14 @@
 	},
 	{
 		"tags":["inventio-crucis","sexta","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Adorámus te Christe, et benedícimus tibi",
+		"incipit":"Adorámus te Christe, et benedícimus tibi.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Quia per Crucem tuam redemísti mundum."
 	},
 	{
 		"tags":["inventio-crucis","sexta","responsorium-breve"],
-		"incipit":"Adorámus te Christe",
-		"responsum":"Et benedícimus tibi.",
+		"incipit":"Adorámus te Christe,",
+		"responsum":"et benedícimus tibi.",
 		"versus":"Quia per Crucem tuam redemísti mundum."
 	},
 	{
@@ -352,14 +352,14 @@
 	},
 	{
 		"tags":["inventio-crucis","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Omnis terra adóret te, et psallat tibi",
+		"incipit":"Omnis terra adóret te, et psallat tibi.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Psalmum dicat nómini tuo Dómine."
 	},
 	{
 		"tags":["inventio-crucis","nona","responsorium-breve"],
-		"incipit":"Omnis terra adóret te",
-		"responsum":"Et psallat tibi.",
+		"incipit":"Omnis terra adóret te,",
+		"responsum":"et psallat tibi.",
 		"versus":"Psalmum dicat nómini tuo Dómine."
 	},
 	{

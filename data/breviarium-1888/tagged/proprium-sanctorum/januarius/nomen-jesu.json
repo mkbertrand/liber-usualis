@@ -316,14 +316,14 @@
 	{
 		"tags":["nomen-jesu","tertia","responsorium-breve"],
 		"src":"gregobase/3092",
-		"incipit":"Sit nomen Dómini benedíctum,",
+		"incipit":"Sit nomen Dómini benedíctum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Ex hoc nunc, et usque in sǽculum."
 	},
 	{
 		"tags":["nomen-jesu","tertia","responsorium-breve","in-tempore-septuagesimae"],
-		"incipit":"Sit nomen Dómini,",
-		"responsum":"Benedíctum.",
+		"incipit":"Sit nomen Dómini",
+		"responsum":"benedíctum.",
 		"versus":"Ex hoc nunc, et usque in sǽculum."
 	},
 	{
@@ -337,14 +337,14 @@
 	{
 		"tags":["nomen-jesu","sexta","responsorium-breve"],
 		"src":"gregobase/3201",
-		"incipit":"Afférte Dómino glóriam et honórem,",
+		"incipit":"Afférte Dómino glóriam et honórem.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Afférte Dómino glóriam nómini ejus."
 	},
 	{
 		"tags":["nomen-jesu","sexta","responsorium-breve","in-tempore-septuagesimae"],
-		"incipit":"Afférte Dómino glóriam,",
-		"responsum":"Et honórem.",
+		"incipit":"Afférte Dómino glóriam",
+		"responsum":"et honórem.",
 		"versus":"Afférte Dómino glóriam nómini ejus."
 	},
 	{
@@ -359,14 +359,14 @@
 	{
 		"tags":["nomen-jesu","nona","responsorium-breve"],
 		"src":"gregobase/3191",
-		"incipit":"Magnificáte Dóminum mecum,",
+		"incipit":"Magnificáte Dóminum mecum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et exaltémus nomen ejus in idípsum."
 	},
 	{
 		"tags":["nomen-jesu","nona","responsorium-breve","in-tempore-septuagesimae"],
-		"incipit":"Magnificáte Dóminum,",
-		"responsum":"Mecum.",
+		"incipit":"Magnificáte Dóminum",
+		"responsum":"mecum.",
 		"versus":"Et exaltémus nomen ejus in idípsum."
 	},
 	{

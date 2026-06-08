@@ -386,12 +386,12 @@
 		"tags":["vidua","tertia","responsorium-breve"],
 		"src":"gregobase/3208",
 		"incipit":"Spécie tua",
-		"responsum":"Et pulchritúdine tua.",
+		"responsum":"et pulchritúdine tua.",
 		"versus":"Inténde, próspere procéde, et regna."
 	},
 	{
 		"tags":["vidua","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Spécie tua et pulchritúdine tua",
+		"incipit":"Spécie tua et pulchritúdine tua.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Inténde, próspere procéde, et regna."
 	},
@@ -437,13 +437,13 @@
 	{
 		"tags":["vidua","nona","responsorium-breve"],
 		"src":"gregobase/3143",
-		"incipit":"Elégit eam Deus",
+		"incipit":"Elégit eam Deus,",
 		"responsum":"Et præelégit eam.",
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
 		"tags":["vidua","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Elégit eam Deus, et præelégit eam",
+		"incipit":"Elégit eam Deus, et præelégit eam.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},

@@ -52,7 +52,7 @@
 	{
 		"tags":["tertia","dominica","responsorium-breve"],
 		"incipit":"Inclína cor meum Deus",
-		"responsum":"In testimónia tua.",
+		"responsum":"in testimónia tua.",
 		"versus":"Avérte óculos meos, ne vídeant vanitátem: in via tua vivífica me."
 	},
 	{
@@ -82,8 +82,8 @@
 	},
 	{
 		"tags":["tertia","feria","responsorium-breve"],
-		"incipit":"Sana ánimam meam",
-		"responsum":"Quia peccávi tibi.",
+		"incipit":"Sana ánimam meam,",
+		"responsum":"quia peccávi tibi.",
 		"versus":"Ego dixi, Dómine miserére mei."
 	},
 	{
@@ -97,7 +97,7 @@
 	{
 		"tags":["tertia","in-tempore-adventus","temporale","responsorium-breve"],
 		"src":"gregobase/3159",
-		"incipit":"Veni ad liberándum nos",
+		"incipit":"Veni ad liberándum nos,",
 		"responsum":"Dómine Deus virtútum.",
 		"versus":"Osténde fáciem tuam, et salvi érimus."
 	},
@@ -118,7 +118,7 @@
 		"tags":["tertia","in-tempore-quadragesimae","temporale","responsorium-breve"],
 		"src":"gregobase/3093",
 		"incipit":"Ipse liberávit me",
-		"responsum":"De láqueo venántium.",
+		"responsum":"de láqueo venántium.",
 		"versus":"Et a verbo áspero."
 	},
 	{
@@ -155,7 +155,7 @@
 	},
 	{
 		"tags":["tertia","in-tempore-paschali","temporale","responsorium-breve"],
-		"incipit":"Surréxit Dóminus de sepúlchro",
+		"incipit":"Surréxit Dóminus de sepúlchro.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Qui pro nobis pepéndit in ligno."
 	},

@@ -94,20 +94,20 @@
 	{
 		"tags":["prima","responsorium-breve"],
 		"src":"gregobase/11818",
-		"incipit":"Christe Fili Dei vivi",
-		"responsum":"Miserére nobis.",
+		"incipit":"Christe Fili Dei vivi,",
+		"responsum":"miserére nobis.",
 		"versus":"Qui sedes ad dexteram Patris."
 	},
 	{
 		"tags":["prima","in-tempore-adventus","responsorium-breve"],
-		"incipit":"Christe Fili Dei vivi",
-		"responsum":"Miserére nobis.",
+		"incipit":"Christe Fili Dei vivi,",
+		"responsum":"miserére nobis.",
 		"versus":"Qui ventúrus es in mundum."
 	},
 	{
 		"tags":["prima","in-tempore-paschali","responsorium-breve"],
 		"src":"gregobase/11818",
-		"incipit":"Christe Fili Dei vivi, miserére nobis",
+		"incipit":"Christe Fili Dei vivi, miserére nobis.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Qui surrexísti a mórtuis."
 	},

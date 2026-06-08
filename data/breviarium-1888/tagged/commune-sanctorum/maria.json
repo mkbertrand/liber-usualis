@@ -410,12 +410,12 @@
 	{
 		"tags":["maria","tertia","responsorium-breve"],
 		"incipit":"Spécie tua",
-		"responsum":"Et pulchritúdine tua.",
+		"responsum":"et pulchritúdine tua.",
 		"versus":"Inténde, próspere procéde, et regna."
 	},
 	{
 		"tags":["maria","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Spécie tua et pulchritúdine tua",
+		"incipit":"Spécie tua et pulchritúdine tua.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Inténde, próspere procéde, et regna."
 	},
@@ -431,7 +431,7 @@
 	},
 	{
 		"tags":["maria","sexta","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Adjuvábit eam Deus vultu suo",
+		"incipit":"Adjuvábit eam Deus vultu suo.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Deus in médio ejus, non commovébitur."
 	},
@@ -441,13 +441,13 @@
 	},
 	{
 		"tags":["maria","nona","responsorium-breve"],
-		"incipit":"Elégit eam Deus",
-		"responsum":"Et præelégit eam.",
+		"incipit":"Elégit eam Deus,",
+		"responsum":"et præelégit eam.",
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
 		"tags":["maria","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Elégit eam Deus, et præelégit eam",
+		"incipit":"Elégit eam Deus, et præelégit eam.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"In tabernáculo suo habitáre facit eam."
 	},

@@ -408,12 +408,19 @@ function render(data, chant) {
 							}
 						}
 						if (alldefined) {
-							translated = trans.join('').split('\n');
+							translated = trans.join('').split('\n').map((line) => {
+								pref = line.match(/^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)/)[0];
+								return line.replace(pref, pref.toUpperCase().replace('BR', 'br'));
+							});
 						} else {
 							translated = null;
 						}
 					}
-					data.datum = unpack(data.datum).join('').split('\n');
+					data.datum = unpack(data.datum).join('').split('\n').map((line) => {
+						pref = line.match(/^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)/)[0];
+						return line.replace(pref, pref.toUpperCase().replace('BR', 'br'));
+					});
+
 					// We're ok with nested responsories.
 					parenttags = parenttags.filter(tag => tag != 'responsorium');
 

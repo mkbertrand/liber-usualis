@@ -51,8 +51,8 @@
 	},
 	{
 		"tags":["nona","dominica","responsorium-breve"],
-		"incipit":"Clamávi in toto corde meo",
-		"responsum":"Exaúdi me Dómine.",
+		"incipit":"Clamávi in toto corde meo,",
+		"responsum":"exaúdi me Dómine.",
 		"versus":"Justificatiónes tuas requíram."
 	},
 	{
@@ -78,8 +78,8 @@
 	},
 	{
 		"tags":["nona","feria","responsorium-breve"],
-		"incipit":"Rédime me Dómine",
-		"responsum":"Et miserére mei.",
+		"incipit":"Rédime me Dómine,",
+		"responsum":"et miserére mei.",
 		"versus":"Pes enim meus stetit in via recta."
 	},
 	{
@@ -90,7 +90,7 @@
 		"tags":["nona","in-tempore-adventus","temporale","responsorium-breve"],
 		"src":"gregobase/3173",
 		"incipit":"Super te Jerúsalem",
-		"responsum":"Oriétur Dóminus.",
+		"responsum":"oriétur Dóminus.",
 		"versus":"Et glória ejus in te vidébitur."
 	},
 	{
@@ -114,7 +114,7 @@
 		"tags":["nona","in-tempore-quadragesimae","temporale","responsorium-breve"],
 		"src":"gregobase/3168",
 		"incipit":"Scuto circúmdabit te",
-		"responsum":"Véritas ejus.",
+		"responsum":"véritas ejus.",
 		"versus":"Non timébis a timóre noctúrno."
 	},
 	{
@@ -151,7 +151,7 @@
 	},
 	{
 		"tags":["nona","in-tempore-paschali","temporale","responsorium-breve"],
-		"incipit":"Gavísi sunt discípuli",
+		"incipit":"Gavísi sunt discípuli.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Viso Dómino."
 	},
