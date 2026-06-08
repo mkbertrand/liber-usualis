@@ -97,12 +97,16 @@
 			this.updateRiteAsyncLock = true;
 			newrite = '';
 			for (var i = 0; i < this.hour.content.length; i++) {
-				select = this.hour.content[i][1] == 'diei' ? '' : this.hour.content[i][1];
 				noending = false;
 				if (i != this.hour.content.length - 1 && (this.hour.content[i + 1][1] == 'officium-parvum-bmv' || this.hour.content[i + 1][1] == 'officium-defunctorum' || this.hour.content[i + 1][0] == 'psalmi-poenitentiales' || this.hour.content[i + 1][0] == 'litaniae-sanctorum' || this.hour.content[i + 1][0] == 'officium-capituli')) {
 					noending = true;
 				}
-				var response = await fetch(`/rite?date=${this.getLocalDate()}&time=${this.time}&hour=${this.hour.content[i][0]}&noending=${noending}&translation=${this.translation ? translation('{{locale}}') : 'none'}&privata=${this.recitation=='private' ? 'privata': 'chorali'}` + (select == '' ? '' : `&select=${select}`));
+				var response = await fetch(`/rite?date=${this.getLocalDate()}
+				&time=${this.time}
+				&hour=${this.hour.content[i][0]}&noending=${noending}
+				&translation=${this.translation ? translation('{{locale}}') : 'none'}
+				&privata=${this.recitation=='private' ? 'privata': 'chorali'}
+				&select=${this.hour.content[i][1]}`);
 				if (response.status == 500) {
 					newrite = await response.text();
 					break;
