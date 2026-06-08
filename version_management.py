@@ -30,7 +30,9 @@ def bestlocalized(file, locales):
 			return f'web/locales/{l}{file}'
 
 
-def get_versioned_resource(path):
+def get_resource_version(path):
 	with open('web/resources' + path) as f:
-		version = hashlib.md5(f.read().encode('utf-8')).hexdigest()
-		return f'/resources{path}?v={version}'
+		return hashlib.md5(f.read().encode('utf-8')).hexdigest()
+
+def get_versioned_resource(path):
+	return f'/resources{path}?v={get_resource_version(path)}'

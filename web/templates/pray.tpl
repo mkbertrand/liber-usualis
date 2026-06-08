@@ -60,6 +60,7 @@
 	ignoredatechange: false,
 	canincrementhour: true,
 	nexthour: $persist(null),
+	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
 	get Rite() {
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
@@ -102,12 +103,14 @@
 					noending = true;
 				}
 				var response = await fetch(`/rite?date=${this.getLocalDate()}
-				&time=${this.time}
-				&hour=${this.hour.content[i][0]}&noending=${noending}
-				&translation=${this.translation ? translation('{{locale}}') : 'none'}
-				&privata=${this.recitation=='private' ? 'privata': 'chorali'}
-				&select=${this.hour.content[i][1]}`);
-				if (response.status == 500) {
+					&time=${this.time}
+					&hour=${this.hour.content[i][0]}&noending=${noending}
+					&translation=${this.translation ? translation('{{locale}}') : 'none'}
+					&privata=${this.recitation=='private' ? 'privata': 'chorali'}
+					&select=${this.hour.content[i][1]}
+					&version=${this.version}
+				`);
+				if (response.status == 400 || response.status == 500) {
 					newrite = await response.text();
 					break;
 				}

@@ -124,12 +124,20 @@ def daytags(vesperal = False):
 			'votives': votives
 		})
 
+expected_version = f'{version_management.get_resource_version('/js/ritegen.js')}-{version_management.get_resource_version('/styles/pray.css')}'
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():
-	try:
-		parameters = copy.deepcopy(request.query)
+	parameters = copy.deepcopy(request.query)
 
+	# Ensure requests were made by an up-to-date client
+	try:
+		assert parameters['version'] == expected_version
+	except Exception as e:
+		print(e)
+		abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
+
+	try:
 		# Generate the actual liturgical text. Didn't use breviarium.generate because of votive office handling
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
