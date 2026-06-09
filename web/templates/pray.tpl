@@ -33,18 +33,18 @@
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/pray.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/ambit.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/ritegen.js')}}></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/exsurge.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/gabc-chant.js')}}></script>
 	</head>
 	<body x-data="{
-	liturgylist: [],
 	optionspanel: false,
-	date: null,
+	calendarDate: null,
 	time: 'diurnale',
 	liturgicalday: '',
-	hour: '',
+	hour: null,
 	choral: $persist(true),
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
@@ -53,13 +53,13 @@
 	bottompanelopen: true,
 	search: '',
 	desired: $persist('omnes'),
-	ambit: $persist([]),
+	ambit: null,
 	rite: '',
 	initialized: false,
 	dayinitialized: false,
 	ignoredatechange: false,
 	canincrementhour: true,
-	nexthour: $persist(null),
+	nextOccasion: $persist(null),
 	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
 	get Rite() {
 		if (panelsopen) {
@@ -67,13 +67,13 @@
 		}
 		return this.rite;
 	},
-	// Sets this.date with a local date which is adjusted to UTC.
-	setDate(date) {
-		this.date = new Date(new Date(date + new Date().toISOString().substring(10)).getTime() + this.date.getTimezoneOffset() * 60000);
+	// Sets this.calendarDate with a local date which is adjusted to UTC.
+	setCalendarDate(calendarDate) {
+		this.calendarDate = new Date(new Date(calendarDate + new Date().toISOString().substring(10)).getTime() + this.calendarDate.getTimezoneOffset() * 60000);
 	},
 	// Returns the date (yyyy-mm-dd) adjusted for timezone.
-	getLocalDate() {
-		return new Date(this.date.getTime() - this.date.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
+	getCalendarDate() {
+		return new Date(this.calendarDate.getTime() - this.calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
 	},
 	setRecitation(recitation) {
 		if (recitation == 'plainchant') {
@@ -87,8 +87,6 @@
 			this.chant = false;
 		}
 		this.ambit = defineambit(this.desired, this.choral);
-		this.liturgylist = ritelist(this.liturgicalday.tags, this.ambit);
-		this.slideHour(this.hour.id);
 		this.recitation = recitation;
 	},
 	updateRiteAsyncLock: false,
@@ -97,17 +95,18 @@
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
 			newrite = '';
-			for (var i = 0; i < this.hour.content.length; i++) {
+			rites = this.ambit.riteList(this.liturgicalday.tags, this.hour);
+			for (var i = 0; i < rites.length; i++) {
 				noending = false;
-				if (i != this.hour.content.length - 1 && (this.hour.content[i + 1][1] == 'officium-parvum-bmv' || this.hour.content[i + 1][1] == 'officium-defunctorum' || this.hour.content[i + 1][0] == 'psalmi-poenitentiales' || this.hour.content[i + 1][0] == 'litaniae-sanctorum' || this.hour.content[i + 1][0] == 'officium-capituli')) {
+				if (i != rites.length - 1 && (rites[i + 1][1] == 'officium-parvum-bmv' || rites[i + 1][1] == 'officium-defunctorum' || rites[i + 1][0] == 'psalmi-poenitentiales' || rites[i + 1][0] == 'litaniae-sanctorum' || rites[i + 1][0] == 'officium-capituli')) {
 					noending = true;
 				}
-				var response = await fetch(`/rite?date=${this.getLocalDate()}
+				var response = await fetch(`/rite?date=${this.getCalendarDate()}
 					&time=${this.time}
-					&hour=${this.hour.content[i][0]}&noending=${noending}
+					&hour=${rites[i][0]}&noending=${noending}
 					&translation=${this.translation ? translation('{{locale}}') : 'none'}
 					&privata=${this.recitation=='private' ? 'privata': 'chorali'}
-					&select=${this.hour.content[i][1]}
+					&select=${rites[i][1]}
 					&version=${this.version}
 				`);
 				if (response.status == 400 || response.status == 500) {
@@ -137,22 +136,12 @@
 			console.log('Simultaneous attempts to update Rite');
 		}
 	},
-	slideHour(id) {
-		for (var i = 0; i < this.liturgylist.length; i++) {
-			if (this.liturgylist[i].id == id) {
-				this.hour = this.liturgylist[i];
-				return;
-			}
-		}
-	},
 	async updateDay() {
-		var response = await fetch(`/day?date=${this.getLocalDate()}&time=${this.time}`);
+		var response = await fetch(`/day?date=${this.getCalendarDate()}&time=${this.time}`);
 		var json = await response.json();
 		var primary = json.primary[1];
-		this.liturgylist = ritelist(json.tags, this.ambit);
 		this.liturgicalday = json;
 		if (this.dayinitialized) {
-			this.slideHour(this.hour.id);
 			this.updateRite();
 		}
 		this.dayinitialized = true;
@@ -163,9 +152,9 @@
 		this.updateDay();
 	},
 	setHour(id) {
-		this.slideHour(id);
+		this.hour = id;
 		oldtime = this.time;
-		newtime = (this.hour.id == 'vesperae' || this.hour.id == 'completorium') ? 'vesperale' : 'diurnale';
+		newtime = (this.hour == 'vesperae' || this.hour == 'completorium') ? 'vesperale' : 'diurnale';
 		if (newtime != oldtime) {
 			this.setTime(newtime);
 		} else {
@@ -173,30 +162,21 @@
 		}
 	},
 	async incrementHour() {
-		for (var i = 0; i < this.liturgylist.length; i++) {
-			if (this.liturgylist[i].id == this.hour.id) {
-				if (i != this.liturgylist.length - 1) {
-					this.setHour(this.liturgylist[i + 1].id);
-				} else {
-					// Otherwise things will happen async that need to be synchronous
-					this.ignoredatechange = true;
-					this.date = new Date(this.date.getTime() + 86400000);
-					this.search = this.getLocalDate();
-					// This has the effect of actually hitting setTime() and updateDay()
-					await this.setHour(this.liturgylist[0].id);
-				}
-				return;
-			}
-		}
+		// Otherwise things will happen async that need to be synchronous
+		this.ignoredatechange = true;
+		this.calendarDate = this.nextOccasion[0];
+		this.search = this.getCalendarDate();
+		// This has the effect of actually hitting setTime() and updateDay()
+		await this.setHour(this.nextOccasion[1]);
 	},
 	canIncrementTo() {
-		if (this.nexthour == null) {
+		if (this.nextOccasion == null) {
 			return false;
 		}
-		zeroedsetdate = new Date(this.nexthour[0].getFullYear(), this.nexthour[0].getMonth(), this.nexthour[0].getDate());
+		zeroedsetdate = new Date(this.nextOccasion[0].getFullYear(), this.nextOccasion[0].getMonth(), this.nextOccasion[0].getDate());
 		currentdate = new Date();
 		zeroedcurrentdate = new Date(currentdate.getFullYear(), currentdate.getMonth(), currentdate.getDate());
-		if (this.nexthour[1] == 'matutinum' && zeroedsetdate - 86400000 == zeroedcurrentdate - 0) {
+		if (this.nextOccasion[1] == 'matutinum' && zeroedsetdate - 86400000 == zeroedcurrentdate - 0) {
 			return new Date().getHours() >= 14;
 		} else {
 			return zeroedsetdate - 0 == zeroedcurrentdate - 0;
@@ -204,49 +184,34 @@
 	},
 	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
-		zeroedsetdate = new Date(this.date.getFullYear(), this.date.getMonth(), this.date.getDate());
-		currentdate = new Date();
-		zeroedcurrentdate = new Date(currentdate.getFullYear(), currentdate.getMonth(), currentdate.getDate());
-		for (var i = 0; i < this.liturgylist.length; i++) {
-			if (this.liturgylist[i].id == this.hour.id) {
-				if (i != this.liturgylist.length - 1) {
-					this.nexthour = [this.date, this.liturgylist[i + 1].id];
-				} else {
-					this.nexthour = [new Date(this.date.getTime() + 86400000), this.liturgylist[0].id];
-				}
-				break;
-			}
-		}
+		this.nextOccasion = [this.ambit.idindex(this.hour) + 1 == this.ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, this.ambit.nextOccasion(this.hour).id]
 	},
 	setAmbit(ambit) {
 		oldambit = this.ambit;
 		this.ambit = ambit;
-		this.liturgylist = ritelist(this.liturgicalday.tags, this.ambit);
 
-		if (this.ambit.length < oldambit.length && this.ambit.length == 1) {
+		if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 1) {
 			this.setHour('matutinum');
-		} else if (this.ambit.length < oldambit.length && this.ambit.length == 2) {
-			if (this.hour.id == 'completorium') {
+		} else if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 2) {
+			if (this.hour == 'completorium') {
 				this.setHour('vesperae');
-			} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour.id)) {
+			} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour)) {
 				this.setHour('matutinum');
 			} else {
-				this.slideHour(this.hour.id);
 				this.updateRite();
 			}
 		} else {
-			this.slideHour(this.hour.id);
 			this.updateRite();
 		}
 
-		if (this.nexthour) {
-			if (this.ambit.length < oldambit.length && this.ambit.length == 1) {
-				this.nexthour[1] = 'matutinum';
-			} else if (this.ambit.length < oldambit.length && this.ambit.length == 2) {
-				if (this.hour.id == 'completorium') {
-					this.nexthour[1] = 'vesperae';
-				} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour.id)) {
-					this.nexthour[1] = 'matutinum';
+		if (this.nextOccasion) {
+			if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 1) {
+				this.nextOccasion[1] = 'matutinum';
+			} else if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 2) {
+				if (this.hour == 'completorium') {
+					this.nextOccasion[1] = 'vesperae';
+				} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour)) {
+					this.nextOccasion[1] = 'matutinum';
 				}
 			}
 		}
@@ -256,58 +221,53 @@
 	if ('{{locale}}' == 'la') {
 		translation = false;
 	}
-	if (ambit == '') {
+	if (ambit === null) {
 		ambit = defineambit(desired, choral);
 	}
-	if (nexthour && typeof nexthour[0] === 'string') {
-		nexthour[0] = new Date(nexthour[0]);
+	if (nextOccasion && typeof nextOccasion[0] === 'string') {
+		nextOccasion[0] = new Date(nextOccasion[0]);
 	}
 	if (canIncrementTo()) {
-		date = nexthour[0];
-		time = nexthour[1] == 'vesperae' || nexthour[1] == 'completorium' ? 'vesperale' : 'diurnale';
+		calendarDate = nextOccasion[0];
+		time = nextOccasion[1] == 'vesperae' || nextOccasion[1] == 'completorium' ? 'vesperale' : 'diurnale';
 	} else {
-		date = new Date();
-		if (date.getHours() >= 16) {
+		calendarDate = new Date();
+		if (calendarDate.getHours() >= 16) {
 			time = 'vesperale';
 		}
 	}
-	$watch('date', date => {if (!ignoredatechange) {updateDay()}});
+	$watch('calendarDate', calendarDate => {if (!ignoredatechange) {updateDay()}});
 	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
 	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
 	$watch('dayinitialized', dayinitialized => {
 		if (canIncrementTo()) {
-			for (var i = 0; i < liturgylist.length; i++) {
-				if (liturgylist[i].id == nexthour[1]) {
-					hour = liturgylist[i];
-					break;
-				}
-			}
+			hour = nextOccasion[1];
 		}
-		else if (liturgylist.length == 7) {
-			if (date.getHours() < 6) {
-				hour = liturgylist[0];
-			} else if (date.getHours() < 9) {
-				hour = liturgylist[1];
-			} else if (date.getHours() < 11) {
-				hour = liturgylist[2];
-			} else if (date.getHours() < 14) {
-				hour = liturgylist[3];
-			} else if (date.getHours() < 16) {
-				hour = liturgylist[4];
-			} else if (date.getHours() < 20) {
-				hour = liturgylist[5];
+		else if (ambit.occasions.length == 7) {
+			if (calendarDate.getHours() < 6) {
+				hour = ambit.occasions[0].id;
+			} else if (calendarDate.getHours() < 9) {
+				hour = ambit.occasions[1].id;
+			} else if (calendarDate.getHours() < 11) {
+				hour = ambit.occasions[2].id;
+			} else if (calendarDate.getHours() < 14) {
+				hour = ambit.occasions[3].id;
+			} else if (calendarDate.getHours() < 16) {
+				hour = ambit.occasions[4].id;
+			} else if (calendarDate.getHours() < 20) {
+				hour = ambit.occasions[5].id;
 			} else {
-				hour = liturgylist[6];
+				hour = ambit.occasions[6].id;
 			}
-		} else if (liturgylist.length == 2) {
-			if (date.getHours() < 16) {
-				hour = liturgylist[0];
+		} else if (ambit.occasions.length == 2) {
+			if (calendarDate.getHours() < 16) {
+				hour = ambit.occasions[0].id;
 			} else {
-				hour = liturgylist[1];
+				hour = ambit.occasions[1].id;
 			}
-		} else if (liturgylist.length == 1) {
-			hour = liturgylist[0];
+		} else if (ambit.occasions.length == 1) {
+			hour = ambit.occasions[0].id;
 		}
 		updateRite();
 	});
@@ -382,14 +342,14 @@
 							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 								<div id="date-selector-container">
-									<button id="date-selector-decrement" class="date-selector-button" @click="date = new Date(date.getTime() - 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-left.svg" /></button>
-									<input id="date-selector-text" type="date" x-model="search" x-init="search = getLocalDate()" @keyup.enter.window="setDate(search);">
-									<button id="date-selector-text-submit" class="date-selector-button" @click="setDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-									<button id="date-selector-increment" class="date-selector-button" @click="date = new Date(date.getTime() + 86400000); search = getLocalDate()"><img src="/resources/svg/arrow-right.svg" /></button>
+									<button id="date-selector-decrement" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-left.svg" /></button>
+									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate()" @keyup.enter.window="setCalendarDate(search);">
+									<button id="date-selector-text-submit" class="date-selector-button" @click="setCalendarDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+									<button id="date-selector-increment" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
 								<div id="rite-selector-container">
-									<template x-for="item in liturgylist">
-										<button class="rite-selector-button" :class="(item.id == hour.id) && 'rite-selector-button-selected'" @click="setHour(item.id)" x-text="item.name"></button>
+									<template x-for="occasion in ambit.occasions">
+										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @click="setHour(occasion.id)" x-text="occasion.name"></button>
 									</template>
 								</div>
 							</div>
