@@ -57,8 +57,8 @@
 	rite: '',
 	initialized: false,
 	dayinitialized: false,
-	ignoredatechange: false,
-	canincrementhour: true,
+	ignoreCalendarDateChange: false,
+	canIncrementOccasion: true,
 	nextOccasion: $persist(null),
 	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
 	get Rite() {
@@ -145,7 +145,7 @@
 			this.updateRite();
 		}
 		this.dayinitialized = true;
-		this.ignoredatechange = false;
+		this.ignoreCalendarDateChange = false;
 	},
 	setTime(time) {
 		this.time = time;
@@ -163,7 +163,7 @@
 	},
 	async incrementHour() {
 		// Otherwise things will happen async that need to be synchronous
-		this.ignoredatechange = true;
+		this.ignoreCalendarDateChange = true;
 		this.calendarDate = this.nextOccasion[0];
 		this.search = this.getCalendarDate();
 		// This has the effect of actually hitting setTime() and updateDay()
@@ -236,7 +236,7 @@
 			time = 'vesperale';
 		}
 	}
-	$watch('calendarDate', calendarDate => {if (!ignoredatechange) {updateDay()}});
+	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateDay()}});
 	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
 	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
@@ -244,30 +244,8 @@
 		if (canIncrementTo()) {
 			hour = nextOccasion[1];
 		}
-		else if (ambit.occasions.length == 7) {
-			if (calendarDate.getHours() < 6) {
-				hour = ambit.occasions[0].id;
-			} else if (calendarDate.getHours() < 9) {
-				hour = ambit.occasions[1].id;
-			} else if (calendarDate.getHours() < 11) {
-				hour = ambit.occasions[2].id;
-			} else if (calendarDate.getHours() < 14) {
-				hour = ambit.occasions[3].id;
-			} else if (calendarDate.getHours() < 16) {
-				hour = ambit.occasions[4].id;
-			} else if (calendarDate.getHours() < 20) {
-				hour = ambit.occasions[5].id;
-			} else {
-				hour = ambit.occasions[6].id;
-			}
-		} else if (ambit.occasions.length == 2) {
-			if (calendarDate.getHours() < 16) {
-				hour = ambit.occasions[0].id;
-			} else {
-				hour = ambit.occasions[1].id;
-			}
-		} else if (ambit.occasions.length == 1) {
-			hour = ambit.occasions[0].id;
+		else {
+			hour = ambit.suggestSelectedOccasion(calendarDate.getHours()).id;
 		}
 		updateRite();
 	});
@@ -357,8 +335,8 @@
 					</template>
 					<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
 						<div style="height:0;" x-intersect="determineNextHour()"></div>
-						<button id="next-hour-button" :class="canincrementhour? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canincrementhour = canIncrementTo();" @click="if (canincrementhour) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
-						<span id="next-hour-forbidden-tooltip" x-show="!canincrementhour && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
+						<button id="next-hour-button" :class="canIncrementOccasion? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canIncrementOccasion = canIncrementTo();" @click="if (canIncrementOccasion) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
+						<span id="next-hour-forbidden-tooltip" x-show="!canIncrementOccasion && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
 					</div>
 				</div>
 				<div id="side-panel-right">

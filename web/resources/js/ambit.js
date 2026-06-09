@@ -87,9 +87,14 @@ class Ambit {
 	canIncrementTo(datedOccasion) {
 		return true;
 	}
+
+	// Based on the hour of the day, suggest which occasion should be presented if no external information is available - e.g. if a user loads the page for the first time ever at 9AM, suggest he pray Terce. This is intended to be overwritten manually by individual objects in the Ambit class.
+	suggestSelectedOccasion(hour) {
+		return occasion[0];
+	}
 }
 
-fullambit = new Ambit([
+fullAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('psalmi-graduales', 'psalmi-graduales', false),
@@ -149,7 +154,25 @@ fullambit = new Ambit([
 	], 'completorium')
 ]);
 
-opbmvambit = new Ambit([
+fullAmbit.suggestSelectedOccasion = function(hour) {
+	if (hour < 6) {
+		return this.occasions[0];
+	} else if (hour < 9) {
+		return this.occasions[1];
+	} else if (hour < 11) {
+		return this.occasions[2];
+	} else if (hour < 14) {
+		return this.occasions[3];
+	} else if (hour < 16) {
+		return this.occasions[4];
+	} else if (hour < 20) {
+		return this.occasions[5];
+	} else {
+		return this.occasions[6];
+	}
+}
+
+opbmvAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', [
 		new Rite('aperi-domine', 'officium-parvum-bmv', true),
 		new Rite('matutinum', 'officium-parvum-bmv', true),
@@ -194,7 +217,9 @@ opbmvambit = new Ambit([
 	], 'completorium')
 ]);
 
-defunctambit = new Ambit([
+opbmvAmbit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
+
+defunctAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', [
 		new Rite('aperi-domine', 'officium-defunctorum', true),
 		new Rite('matutinum', 'officium-defunctorum', true),
@@ -208,36 +233,43 @@ defunctambit = new Ambit([
 	], 'vesperae')
 ]);
 
-gradualambit = new Ambit([new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum')]);
-penitentialsambit = new Ambit([new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum')])
+defunctAmbit.suggestSelectedOccasion = function(hour) {
+	if (hour < 16) {
+		return this.occasions[0];
+	} else {
+		return this.occasions[1];
+	}
+}
+gradualAmbit = new Ambit([new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum')]);
+penitentialsAmbit = new Ambit([new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum')])
 
 
 function defineambit(desired, choral = true) {
 	switch(desired) {
 		case 'omnes':
-			ambit = fullambit;
+			ambit = fullAmbit;
 			break;
 		case 'officium-parvum-bmv':
-			ambit = opbmvambit;
+			ambit = opbmvAmbit;
 			break;
 		case 'officium-defunctorum':
-			ambit = defunctambit;
+			ambit = defunctAmbit;
 			break;
 		case 'psalmi-graduales':
-			ambit = gradualambit;
+			ambit = gradualAmbit;
 			break;
 		case 'psalmi-poenitentiales':
-			ambit = penitentialsambit;
+			ambit = penitentialsAmbit;
 			break;
 		case 'semper-cum-opbmv':
-			ambit = new Ambit(fullambit.occasions.map(
+			ambit = new Ambit(fullAmbit.occasions.map(
 				(occasion) => new Occasion(occasion.name, occasion.rites.map(
 					(rite) => rite.where == 'officium-parvum-bmv' ? new Rite(rite.what, rite.where, true) : (rite)
 				), occasion.id)
 			));
 			break;
 		case 'diei':
-			ambit = new Ambit(fullambit.occasions.map(
+			ambit = new Ambit(fullAmbit.occasions.map(
 				(occasion) => new Occasion(occasion.name, occasion.rites.filter(
 					(rite) => rite.where == 'diei' || rite.where == 'antiphona-bmv-temporis'
 				), occasion.id)
