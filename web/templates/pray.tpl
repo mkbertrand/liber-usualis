@@ -93,6 +93,7 @@
 	async updateRite(scroll = true) {
 		previousTitle = '';
 		if (!this.updateRiteAsyncLock) {
+			riteRenderingOptions = {'chant': this.chant, 'disable-trivial-chant': true, 'side-by-side': true};
 			this.updateRiteAsyncLock = true;
 			newrite = '';
 			rites = this.ambit.riteList(this.liturgicalday.tags, this.hour);
@@ -123,7 +124,7 @@
 						title = riteTitle(json, 'small');
 					}
 				}
-				newrite += title + render(json, this.chant);
+				newrite += title + renderRite(json, riteRenderingOptions);
 				previousTitle = json['used-primary'][0];
 			}
 			this.rite = newrite;
@@ -147,16 +148,13 @@
 		this.dayinitialized = true;
 		this.ignoreCalendarDateChange = false;
 	},
-	setTime(time) {
-		this.time = time;
-		this.updateDay();
-	},
 	setOccasion(id) {
 		this.hour = id;
 		oldtime = this.time;
 		newtime = (this.hour == 'vesperae' || this.hour == 'completorium') ? 'vesperale' : 'diurnale';
 		if (newtime != oldtime) {
-			this.setTime(newtime);
+			this.time = newtime;
+			this.updateDay();
 		} else {
 			this.updateRite();
 		}
@@ -166,7 +164,7 @@
 		this.ignoreCalendarDateChange = true;
 		this.calendarDate = this.nextOccasion[0];
 		this.search = this.getCalendarDate();
-		// This has the effect of actually hitting setTime() and updateDay()
+		// This has the effect of actually hitting updateDay()
 		await this.setOccasion(this.nextOccasion[1]);
 	},
 	canIncrementTo() {
