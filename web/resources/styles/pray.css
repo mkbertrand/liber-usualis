@@ -108,16 +108,23 @@
 #options-panel-require-initialized-container {
 	width: 100%;
 	height: 100%;
+}
+
+#options-panel-sides {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	padding-top: 7px;
+	border-bottom: 1px solid var(--border-color);
 }
 
 #coincidences-list-container {
 	flex-grow: 0;
 	flex-basis: 50%;
+	height: 100%;
 	padding-left: 14px;
 	padding-right: 14px;
+	padding-bottom: 7px;
 }
 
 .coincidences-label {
@@ -151,6 +158,8 @@
 	flex-grow: 0;
 	flex-basis: 50%;
 	height: 100%;
+	border-left: 1px solid var(--border-color);
+	padding-bottom: 7px;
 }
 
 #ambit-select-container {
@@ -158,7 +167,15 @@
 	flex-direction: column;
 	gap: 7px;
 	height: 100%;
-	border-left: 1px solid var(--border-color);
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+#occasional-rite-selection {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	height: 100%;
 	padding-left: 14px;
 	padding-right: 14px;
 }

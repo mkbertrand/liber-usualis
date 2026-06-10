@@ -123,7 +123,7 @@ riteheaders = {
 	'ordo-commendationis-animae': 'Ordo Commendationis Animæ.',
 	'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenarium in Articulo Mortis.',
 	'benedictio-mensae': 'Benedictio Mensæ.',
-	'itinerarium': 'Itinerarium.',
+	'itinerarium': 'Itinerarium Clericorum.',
 	'officium-capituli': 'Martyrologium.'
 };
 

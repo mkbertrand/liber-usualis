@@ -259,39 +259,48 @@
 						</div>
 						<template x-if="initialized">
 							<div id="options-panel-require-initialized-container">
-								<div id="coincidences-list-container">
-									<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
-									<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-									<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalday.primary[0])"></div>
-									<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-									<template x-for="commemoration in liturgicalday.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
-										<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
-									</template>
-									<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-									<template x-for="omission in liturgicalday.omissions">
-										<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
-									</template>
-									<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
-								</div>
-								<div id="ambit-select-wrapper">
-									<div id="ambit-select-container" x-data="{ambitEntries: [
-										['omnes', 'Officium'],
-										['diei', 'Officium diei'],
-										['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
-										['officium-defunctorum', 'Officium Defunctorum'],
-										['psalmi-graduales', 'Psalmi Graduales'],
-										['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
-										['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
-										['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis.'],
-										['benedictio-mensae', 'Benedictio Mensæ'],
-										['itinerarium', 'Itinerarium'],
-										['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']
-									]}">
-										<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-										<template x-for="entry in ambitEntries">
-											<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+								<div id="options-panel-sides">
+									<div id="coincidences-list-container">
+										<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
+										<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
+										<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalday.primary[0])"></div>
+										<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
+										<template x-for="commemoration in liturgicalday.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
+											<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 										</template>
+										<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
+										<template x-for="omission in liturgicalday.omissions">
+											<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
+										</template>
+										<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
 									</div>
+									<div id="ambit-select-wrapper">
+										<div id="ambit-select-container" x-data="{ambitEntries: [
+											['omnes', 'Officium'],
+											['diei', 'Officium diei'],
+											['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
+											['officium-defunctorum', 'Officium Defunctorum'],
+											['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']
+										]}">
+											<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
+											<template x-for="entry in ambitEntries">
+												<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+											</template>
+										</div>
+									</div>
+								</div>
+								<div id="occasional-rite-selection" x-data="{ambitEntries: [
+									['psalmi-graduales', 'Psalmi Graduales'],
+									['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
+									['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
+									['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis.'],
+									['benedictio-mensae', 'Benedictio Mensæ'],
+									['itinerarium', 'Itinerarium Clericorum'],
+								]}">
+									<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
+									<template x-for="entry in ambitEntries">
+										<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+									</template>
 								</div>
 							</div>
 						</template>

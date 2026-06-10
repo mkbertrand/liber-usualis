@@ -17,8 +17,12 @@ class Occasion {
 }
 
 class Ambit {
-	constructor(occasions) {
-		this.occasions = occasions;
+	constructor(...occasions) {
+		if (occasions.length == 1 && Array.isArray(occasions[0])) {
+			this.occasions = occasions[0];
+		} else {
+			this.occasions = occasions;
+		}
 	}
 
 	idindex(id) {
@@ -183,54 +187,58 @@ fullAmbit.suggestSelectedOccasion = function(hour) {
 	}
 }
 
-opbmvAmbit = new Ambit([
-	new Occasion('Matutinum & Laudes', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('matutinum', 'officium-parvum-bmv', true),
-		new Rite('laudes', 'officium-parvum-bmv', true),
-		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'matutinum'),
-	new Occasion('Prima', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('prima', 'officium-parvum-bmv', true),
-		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'prima'),
-	new Occasion('Tertia', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('tertia', 'officium-parvum-bmv', true),
-		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'tertia'),
-	new Occasion('Sexta', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('sexta', 'officium-parvum-bmv', true),
-		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'sexta'),
-	new Occasion('Nona', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('nona', 'officium-parvum-bmv', true),
-		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'nona'),
-	new Occasion('Vesperæ', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('vesperae', 'officium-parvum-bmv', true),
-		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'vesperae'),
-	new Occasion('Completorium', [
-		new Rite('aperi-domine', 'officium-parvum-bmv', true),
-		new Rite('completorium', 'officium-parvum-bmv', true),
-		new Rite('sacrosanctae', 'officium-parvum-bmv', true)
-	], 'completorium')
-]);
+class SingleAmbit extends Ambit {
+	constructor(desired) {
+		super(
+			new Occasion('Matutinum & Laudes', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('matutinum', desired, true),
+				new Rite('laudes', desired, true),
+				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
+				new Rite('sacrosanctae', desired, true)
+			], 'matutinum'),
+			new Occasion('Prima', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('prima', desired, true),
+				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
+				new Rite('sacrosanctae', desired, true)
+			], 'prima'),
+			new Occasion('Tertia', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('tertia', desired, true),
+				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
+				new Rite('sacrosanctae', desired, true)
+			], 'tertia'),
+			new Occasion('Sexta', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('sexta', desired, true),
+				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
+				new Rite('sacrosanctae', desired, true)
+			], 'sexta'),
+			new Occasion('Nona', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('nona', desired, true),
+				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
+				new Rite('sacrosanctae', desired, true)
+			], 'nona'),
+			new Occasion('Vesperæ', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('vesperae', desired, true),
+				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
+				new Rite('sacrosanctae', desired, true)
+			], 'vesperae'),
+			new Occasion('Completorium', [
+				new Rite('aperi-domine', desired, true),
+				new Rite('completorium', desired, true),
+				new Rite('sacrosanctae', desired, true)
+			], 'completorium')
+		);
+	}
+	
+	suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
+}
 
-opbmvAmbit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
-
-defunctAmbit = new Ambit([
+defunctAmbit = new Ambit(
 	new Occasion('Matutinum & Laudes', [
 		new Rite('aperi-domine', 'officium-defunctorum', true),
 		new Rite('matutinum', 'officium-defunctorum', true),
@@ -242,7 +250,7 @@ defunctAmbit = new Ambit([
 		new Rite('vesperae', 'officium-defunctorum', true),
 		new Rite('sacrosanctae', 'officium-defunctorum', true)
 	], 'vesperae')
-]);
+);
 
 defunctAmbit.suggestSelectedOccasion = function(hour) {
 	if (hour < 16) {
@@ -252,12 +260,12 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 	}
 }
 
-gradualAmbit = new Ambit([new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum')]);
-penitentialsAmbit = new Ambit([new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum')])
-ordocommendationisAmbit = new Ambit([new Occasion('Ordo Commendationis Animæ', [new Rite('ordo-commendationis-animae', 'diei', true)], 'matutinum')])
-formulaAmbit = new Ambit([new Occasion('Formula ad Impertiendam Indulgentiam', [new Rite('formula-indulgentiam-articulo-mortis', 'diei', true)], 'matutinum')])
-benedictioMensaeAmbit = new Ambit([new Occasion('Benedictio Mensæ', [new Rite('benedictio-mensae', 'diei', true)], 'matutinum')])
-itinerariumAmbit = new Ambit([new Occasion('Itinerarium', [new Rite('itinerarium', 'diei', true)], 'matutinum')])
+gradualAmbit = new Ambit(new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum'));
+penitentialsAmbit = new Ambit(new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum'))
+ordocommendationisAmbit = new Ambit(new Occasion('Ordo Commendationis Animæ', [new Rite('ordo-commendationis-animae', 'diei', true)], 'matutinum'))
+formulaAmbit = new Ambit(new Occasion('Formula ad Impertiendam Indulgentiam', [new Rite('formula-indulgentiam-articulo-mortis', 'diei', true)], 'matutinum'))
+benedictioMensaeAmbit = new Ambit(new Occasion('Benedictio Mensæ', [new Rite('benedictio-mensae', 'diei', true)], 'matutinum'))
+itinerariumAmbit = new Ambit(new Occasion('Itinerarium Clericorum', [new Rite('itinerarium', 'diei', true)], 'matutinum'))
 
 function defineambit(desired, choral = true) {
 	switch(desired) {
@@ -265,7 +273,7 @@ function defineambit(desired, choral = true) {
 			ambit = fullAmbit;
 			break;
 		case 'officium-parvum-bmv':
-			ambit = opbmvAmbit;
+			ambit = new SingleAmbit('officium-parvum-bmv');
 			break;
 		case 'officium-defunctorum':
 			ambit = defunctAmbit;
@@ -294,6 +302,7 @@ function defineambit(desired, choral = true) {
 					(rite) => rite.where == 'officium-parvum-bmv' ? new Rite(rite.what, rite.where, true) : (rite)
 				), occasion.id)
 			));
+			ambit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
 			break;
 		case 'diei':
 			ambit = new Ambit(fullAmbit.occasions.map(
@@ -301,6 +310,7 @@ function defineambit(desired, choral = true) {
 					(rite) => rite.where == 'diei' || rite.where == 'antiphona-bmv-temporis'
 				), occasion.id)
 			));
+			ambit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
 	}
 	if (choral) {
 		return ambit;
@@ -310,4 +320,3 @@ function defineambit(desired, choral = true) {
 		));
 	}
 }
-
