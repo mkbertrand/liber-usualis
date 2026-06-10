@@ -251,9 +251,9 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 		return this.occasions[1];
 	}
 }
+
 gradualAmbit = new Ambit([new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum')]);
 penitentialsAmbit = new Ambit([new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum')])
-
 
 function defineambit(desired, choral = true) {
 	switch(desired) {
