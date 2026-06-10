@@ -112,7 +112,6 @@ def daytags(vesperal = False):
 	primary = [i for i in tags if 'primarium' in i][0]
 	commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(context, 'rank', a), reverse=True)]
 	omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(context, 'rank', a), reverse=True)]
-	votives = [['Officium Parvum B.M.V.', {'officium-parvum-bmv'}]]
 	lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
 	lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
 	return datamanage.dump_data({
@@ -120,8 +119,7 @@ def daytags(vesperal = False):
 			'primary': [getname(primary, pile), primary],
 			'commemorations': commemorations,
 			'omissions': omissions,
-			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None,
-			'votives': votives
+			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
 		})
 
 expected_version = f'{version_management.get_resource_version('/js/ritegen.js')}-{version_management.get_resource_version('/styles/pray.css')}'
@@ -149,9 +147,9 @@ def rite():
 		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
 		if 'select' in parameters:
 			if parameters['select'] == 'officium-parvum-bmv':
-				votive = list(filter(lambda i: 'votiva' in i, tags))[0]
+				templ = list(filter(lambda i: 'pro-aliis-officiis' in i, tags))[0]
 				ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
-				tags = [ofp - {'omissum'} | {'primarium'}, votive | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
+				tags = [ofp - {'omissum'} | {'primarium'}, templ | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
 			elif parameters['select'] == 'officium-defunctorum':
 				def votivize(i):
 					if 'officium-defunctorum' in i:

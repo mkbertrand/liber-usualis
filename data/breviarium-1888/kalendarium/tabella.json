@@ -291,6 +291,14 @@
 			]
 		},
 		{
+			"include":["antiphona-major"],
+			"recheck":false,
+			"response":[
+				{"include":["dies-octava"],"response":"dele","target":1},
+				{"include":["infra-octavam"],"response":"dele","target":1}
+			]
+		},
+		{
 			"include":["vigilia-nativitatis"],
 			"recheck":false,
 			"response":[
@@ -884,7 +892,7 @@
 	],
 	[
 		{
-			"include":["votiva"],
+			"include":["pro-aliis-officiis"],
 			"response":[
 				{"include":["tempus","dominica"],"target":0,"response":"feria-i"},
 				{"include":["tempus","feria-ii"],"target":0,"response":"feria-ii"},

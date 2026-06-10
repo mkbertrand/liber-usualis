@@ -653,9 +653,9 @@
 		]
 	},
 	{
-		"include":["votiva","ii-vesperae"],
+		"include":["pro-aliis-officiis","ii-vesperae"],
 		"response":[
-			{"include":["votiva","i-vesperae","in-tempore-adventus"],"target":0,"adde":"in-tempore-adventus"}
+			{"include":["pro-aliis-officiis","i-vesperae","in-tempore-adventus"],"target":0,"adde":"in-tempore-adventus"}
 		]
 	},
 	{
