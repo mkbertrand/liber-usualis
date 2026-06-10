@@ -27,6 +27,7 @@ class Ambit {
 				return i;
 			}
 		}
+		return -1;
 	}
 
 	riteList(daytags, occasion) {
@@ -90,7 +91,17 @@ class Ambit {
 
 	// Based on the hour of the day, suggest which occasion should be presented if no external information is available - e.g. if a user loads the page for the first time ever at 9AM, suggest he pray Terce. This is intended to be overwritten manually by individual objects in the Ambit class.
 	suggestSelectedOccasion(hour) {
-		return occasion[0];
+		return this.occasions[0];
+	}
+
+	// When switching between ambits with a currently selected occasion in the old ambit, suggest which occasion should be selected within the new ambit.
+	slideAmbitOccasion(newAmbit, currentOccasionID) {
+		let ind = newAmbit.idindex(currentOccasionID);
+		if (ind == -1) {
+			return this.occasions[0].id;
+		} else {
+			return newAmbit.occasions[ind].id;
+		}
 	}
 }
 

@@ -151,7 +151,7 @@
 		this.time = time;
 		this.updateDay();
 	},
-	setHour(id) {
+	setOccasion(id) {
 		this.hour = id;
 		oldtime = this.time;
 		newtime = (this.hour == 'vesperae' || this.hour == 'completorium') ? 'vesperale' : 'diurnale';
@@ -161,13 +161,13 @@
 			this.updateRite();
 		}
 	},
-	async incrementHour() {
+	async incrementOccasion() {
 		// Otherwise things will happen async that need to be synchronous
 		this.ignoreCalendarDateChange = true;
 		this.calendarDate = this.nextOccasion[0];
 		this.search = this.getCalendarDate();
 		// This has the effect of actually hitting setTime() and updateDay()
-		await this.setHour(this.nextOccasion[1]);
+		await this.setOccasion(this.nextOccasion[1]);
 	},
 	canIncrementTo() {
 		if (this.nextOccasion == null) {
@@ -189,32 +189,9 @@
 	setAmbit(ambit) {
 		oldambit = this.ambit;
 		this.ambit = ambit;
-
-		if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 1) {
-			this.setHour('matutinum');
-		} else if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 2) {
-			if (this.hour == 'completorium') {
-				this.setHour('vesperae');
-			} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour)) {
-				this.setHour('matutinum');
-			} else {
-				this.updateRite();
-			}
-		} else {
-			this.updateRite();
-		}
-
-		if (this.nextOccasion) {
-			if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 1) {
-				this.nextOccasion[1] = 'matutinum';
-			} else if (this.ambit.occasions.length < oldambit.occasions.length && this.ambit.occasions.length == 2) {
-				if (this.hour == 'completorium') {
-					this.nextOccasion[1] = 'vesperae';
-				} else if (['prima', 'tertia', 'sexta', 'nona'].includes(this.hour)) {
-					this.nextOccasion[1] = 'matutinum';
-				}
-			}
-		}
+		this.hour = oldambit.slideAmbitOccasion(this.ambit, this.hour);
+		this.updateRite();
+		this.nextOccasion = null;
 	}
 }" x-init="
 	dopanelsize();
@@ -327,7 +304,7 @@
 								</div>
 								<div id="rite-selector-container">
 									<template x-for="occasion in ambit.occasions">
-										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @click="setHour(occasion.id)" x-text="occasion.name"></button>
+										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
 									</template>
 								</div>
 							</div>
@@ -335,7 +312,7 @@
 					</template>
 					<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
 						<div style="height:0;" x-intersect="determineNextHour()"></div>
-						<button id="next-hour-button" :class="canIncrementOccasion? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canIncrementOccasion = canIncrementTo();" @click="if (canIncrementOccasion) {incrementHour()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
+						<button id="next-hour-button" :class="canIncrementOccasion? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canIncrementOccasion = canIncrementTo();" @click="if (canIncrementOccasion) {incrementOccasion()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><img id="next-hour-button-icon" src="/resources/svg/arrow-right.svg" /></span></button>
 						<span id="next-hour-forbidden-tooltip" x-show="!canIncrementOccasion && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
 					</div>
 				</div>
