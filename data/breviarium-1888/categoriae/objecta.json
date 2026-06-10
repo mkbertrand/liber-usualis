@@ -60,8 +60,6 @@
 	"preces",
 	"versi",
 	"psalmi-graduales",
-	"psalmi-poenitentiales",
-	"litaniae-sanctorum",
 	"pater-noster-secreta-post-officium",
 	"dismissio",
 	"include-inauthenticas",
@@ -69,5 +67,13 @@
 	"gloria-versorum",
 	"christus-factus",
 	"pater-noster-de-confiteor",
-	"antiphona-bmv-pro-completorio"
+	"antiphona-bmv-pro-completorio",
+	"ora",
+	"orate",
+	"libera",
+	"te-rogamus",
+	"ante-prandium",
+	"post-prandium",
+	"ante-coenam",
+	"post-coenam"
 ]

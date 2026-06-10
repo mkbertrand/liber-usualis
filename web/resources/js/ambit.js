@@ -254,6 +254,10 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 
 gradualAmbit = new Ambit([new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum')]);
 penitentialsAmbit = new Ambit([new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum')])
+ordocommendationisAmbit = new Ambit([new Occasion('Ordo Commendationis Animæ', [new Rite('ordo-commendationis-animae', 'diei', true)], 'matutinum')])
+formulaAmbit = new Ambit([new Occasion('Formula ad Impertiendam Indulgentiam', [new Rite('formula-indulgentiam-articulo-mortis', 'diei', true)], 'matutinum')])
+benedictioMensaeAmbit = new Ambit([new Occasion('Benedictio Mensæ', [new Rite('benedictio-mensae', 'diei', true)], 'matutinum')])
+itinerariumAmbit = new Ambit([new Occasion('Itinerarium', [new Rite('itinerarium', 'diei', true)], 'matutinum')])
 
 function defineambit(desired, choral = true) {
 	switch(desired) {
@@ -271,6 +275,18 @@ function defineambit(desired, choral = true) {
 			break;
 		case 'psalmi-poenitentiales':
 			ambit = penitentialsAmbit;
+			break;
+		case 'ordo-commendationis-animae':
+			ambit = ordocommendationisAmbit;
+			break;
+		case 'formula-indulgentiam-articulo-mortis':
+			ambit = formulaAmbit;
+			break;
+		case 'benedictio-mensae':
+			ambit = benedictioMensaeAmbit;
+			break;
+		case 'itinerarium':
+			ambit = itinerariumAmbit;
 			break;
 		case 'semper-cum-opbmv':
 			ambit = new Ambit(fullAmbit.occasions.map(

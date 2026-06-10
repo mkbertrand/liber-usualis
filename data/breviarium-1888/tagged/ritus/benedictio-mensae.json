@@ -1,0 +1,123 @@
+[
+	{
+		"tags":["benedictio-mensae","ritus"],
+		"datum":[
+			["benedictio-mensae","ante-prandium"],
+			["benedictio-mensae","post-prandium"],
+			["benedictio-mensae","ante-coenam"],
+			["benedictio-mensae","post-coenam"]
+		]
+	},
+	{
+		"tags":["benedictio-mensae","ante-prandium"],
+		"datum":[
+			"V. Benedícite.",
+			"R. Benedícite.",
+			"V. Óculi ómnium,",
+			"In te sperant, Dómine, et tu das escam illórum in témpore opportúno. Áperis tu manum tuam, et imples omne ánimal benedictióne.",
+			"Glória Patri, et Fílio, * et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			["pater-noster-semisecreta"],
+			"[Postea Sacerdos dicit:]",
+			"Orémus.",
+			"Bénedic Dómine nos, et hæc tua dona, quæ de tua largitáte sumus sumptúri.",
+			["terminatio","per-christum"],
+			"[Deinde Lector:]",
+			"Jube domne benedícere.",
+			"Mensæ cœléstis partícipes fáciat nos Rex ætérnæ glóriæ.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["benedictio-mensae","post-prandium"],
+		"datum":[
+			"Tu autem Dómine miserére nobis.",
+			"R. Deo grátias.",
+			"[Omnes surgunt.]",
+			"V. Confiteántur tibi Dómine ómnia ópera tua.",
+			"R. Et sancti tui benedícant tibi.",
+			"Glória Patri, et Fílio, * et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
+			"[Postea Sacerdos absolute dicat:]",
+			"Ágimus tibi grátias, omnípotens Deus, pro univérsis benefíciis tuis: Qui vivis et regnas in sǽcula sæculórum.",
+			"R. Amen.",
+			"[Deinde alternatim dicitur Psalmus./]",
+			["/psalmi/psalmus-l,gloria"],
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			["pater-noster-semisecreta"],
+			"V. Dispérsit, dedit paupéribus.",
+			"R. Justítia ejus manet in sǽculum sǽculi.",
+			"V. Benedícam Dóminum in omni témpore.",
+			"R. Semper laus ejus in ore meo.",
+			"V. In Dómino laudábitur ánima mea.",
+			"R. Aúdiant mansuéti, et læténtur.",
+			"V. Magnificáte Dóminum mecum.",
+			"R. Et exaltémus nomen ejus in idípsum.",
+			"V. Sit nomen Dómini benedíctum.",
+			"R. Ex hoc nunc et usque in sǽculum.",
+			"Retribúere dignáre Dómine ómnibus nobis bona faciéntibus propter nomen tuum vitam ætérnam.",
+			"R. Amen.",
+			"V. Benedicámus Dómino.",
+			"R. Deo grátias.",
+			["fidelium-animae"],
+			["pater-noster-secreta"],
+			"V. Deus det nobis suam pacem.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["benedictio-mensae","ante-coenam"],
+		"datum":[
+			"V. Benedícite.",
+			"R. Benedícite.",
+			"V. Edent paúperes.",
+			"R. Et saturabúntur, et laudábunt Dóminum, qui requírunt eum: vivent corda eórum in sǽculum sǽculi.",
+			"Glória Patri, et Fílio, * et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			["pater-noster-semisecreta"],
+			"[Postea Sacerdos dicit:]",
+			"Orémus.",
+			"Bénedic Dómine nos, et hæc tua dona, quæ de tua largitáte sumus sumptúri.",
+			["terminatio","per-christum"],
+			"[Deinde Lector:]",
+			"Jube domne benedícere.",
+			"Ad cœnam vitæ ætérnæ perdúcat nos Rex ætérnæ glóriæ.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["benedictio-mensae","post-coenam"],
+		"datum":[
+			"V. Memóriam fecit mirabílium suórum miséricors et miserátor Dóminus.",
+			"R. Escam dedit timéntibus se.",
+			"Glória Patri, et Fílio, * et Spirítui sancto.",
+			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
+			"[Sacérdos dicat:]",
+			"Benedíctus Deus in donis suis, et sanctus in opéribus suis: Qui vivit et regnat in sǽcula sæculórum.",
+			"R. Amen.",
+			["/psalmi/psalmus-cxvi,gloria"],
+			"Kýrie eléison. Christe eléison. Kýrie eléison.",
+			["pater-noster-semisecreta"],
+			"V. Dispérsit, dedit paupéribus.",
+			"R. Justítia ejus manet in sǽculum sǽculi.",
+			"V. Benedícam Dóminum in omni témpore.",
+			"R. Semper laus ejus in ore meo.",
+			"V. In Dómino laudábitur ánima mea.",
+			"R. Aúdiant mansuéti, et læténtur.",
+			"V. Magnificáte Dóminum mecum.",
+			"R. Et exaltémus nomen ejus in idípsum.",
+			"V. Sit nomen Dómini benedíctum.",
+			"R. Ex hoc nunc et usque in sǽculum.",
+			"Retribúere dignáre Dómine ómnibus nobis bona faciéntibus propter nomen tuum vitam ætérnam.",
+			"R. Amen.",
+			"V. Benedicámus Dómino.",
+			"R. Deo grátias.",
+			["fidelium-animae"],
+			["pater-noster-secreta"],
+			"V. Deus det nobis suam pacem.",
+			"R. Amen."
+		]
+	}
+]

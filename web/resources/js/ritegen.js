@@ -118,8 +118,12 @@ riteheaders = {
 	'vesperae': 'Ad Vesperas.',
 	'completorium': 'Ad Completorium.',
 	'psalmi-graduales': 'Psalmi Graduales.',
-	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales cum Litaniis.',
+	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales [cum Litaniis.]',
 	'litaniae-sanctorum': 'Litaniæ Sanctorum.',
+	'ordo-commendationis-animae': 'Ordo Commendationis Animæ.',
+	'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenarium in Articulo Mortis.',
+	'benedictio-mensae': 'Benedictio Mensæ.',
+	'itinerarium': 'Itinerarium.',
 	'officium-capituli': 'Martyrologium.'
 };
 
@@ -212,7 +216,11 @@ function render(data, chant) {
 						'psalmi': 'Psalmi.',
 						'collecta-primaria': 'Collecta.',
 						'invitatorium': 'Invitatorium.',
-						'haec-dies': 'Antiphona.'
+						'haec-dies': 'Antiphona.',
+						'ante-prandium': 'Ante Prandium.',
+						'post-prandium': 'Post Prandium.',
+						'ante-coenam': 'Ante Cœnam.',
+						'post-coenam': 'Post Cœnam.'
 					};
 
 					if (!('quaesitum' in data)) {

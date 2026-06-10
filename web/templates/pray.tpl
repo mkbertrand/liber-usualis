@@ -274,7 +274,19 @@
 									<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
 								</div>
 								<div id="ambit-select-wrapper">
-									<div id="ambit-select-container" x-data="{ambitEntries: [['omnes', 'Officium'], ['diei', 'Officium diei'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.'], ['officium-defunctorum', 'Officium Defunctorum'], ['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']]}">
+									<div id="ambit-select-container" x-data="{ambitEntries: [
+										['omnes', 'Officium'],
+										['diei', 'Officium diei'],
+										['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
+										['officium-defunctorum', 'Officium Defunctorum'],
+										['psalmi-graduales', 'Psalmi Graduales'],
+										['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
+										['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
+										['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis.'],
+										['benedictio-mensae', 'Benedictio Mensæ'],
+										['itinerarium', 'Itinerarium'],
+										['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']
+									]}">
 										<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 										<template x-for="entry in ambitEntries">
 											<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
