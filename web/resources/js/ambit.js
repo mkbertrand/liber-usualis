@@ -260,12 +260,9 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 	}
 }
 
-gradualAmbit = new Ambit(new Occasion('Psalmi Graduales', [new Rite('psalmi-graduales', 'diei', true)], 'matutinum'));
-penitentialsAmbit = new Ambit(new Occasion('Psalmi Pœnitentiales', [new Rite('psalmi-poenitentiales', 'diei', true)], 'matutinum'))
-ordocommendationisAmbit = new Ambit(new Occasion('Ordo Commendationis Animæ', [new Rite('ordo-commendationis-animae', 'diei', true)], 'matutinum'))
-formulaAmbit = new Ambit(new Occasion('Formula ad Impertiendam Indulgentiam', [new Rite('formula-indulgentiam-articulo-mortis', 'diei', true)], 'matutinum'))
-benedictioMensaeAmbit = new Ambit(new Occasion('Benedictio Mensæ', [new Rite('benedictio-mensae', 'diei', true)], 'matutinum'))
-itinerariumAmbit = new Ambit(new Occasion('Itinerarium Clericorum', [new Rite('itinerarium', 'diei', true)], 'matutinum'))
+function singleOccasionAmbit(name, desired) {
+	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], 'matutinum'));
+}
 
 function defineambit(desired, choral = true) {
 	switch(desired) {
@@ -279,22 +276,22 @@ function defineambit(desired, choral = true) {
 			ambit = defunctAmbit;
 			break;
 		case 'psalmi-graduales':
-			ambit = gradualAmbit;
+			ambit = singleOccasionAmbit('Psalmi Graduales', desired);
 			break;
 		case 'psalmi-poenitentiales':
-			ambit = penitentialsAmbit;
+			ambit = singleOccasionAmbit('Psalmi Pœnitentiales', desired);
 			break;
 		case 'ordo-commendationis-animae':
-			ambit = ordocommendationisAmbit;
+			ambit = singleOccasionAmbit('Ordo Commendationis Animæ', desired);
 			break;
 		case 'formula-indulgentiam-articulo-mortis':
-			ambit = formulaAmbit;
+			ambit = singleOccasionAmbit('Formula ad Impertiendam Indulgentiam', desired);
 			break;
 		case 'benedictio-mensae':
-			ambit = benedictioMensaeAmbit;
+			ambit = singleOccasionAmbit('Benedictio Mensæ', desired);
 			break;
 		case 'itinerarium':
-			ambit = itinerariumAmbit;
+			ambit = singleOccasionAmbit('Itinerarium Clericorum', desired);
 			break;
 		case 'semper-cum-opbmv':
 			ambit = new Ambit(fullAmbit.occasions.map(

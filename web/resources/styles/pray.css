@@ -51,7 +51,7 @@
 	top: 50vh;
 	transform: translate(-50%, -50%);
 	width: 30em;
-	height: 50vh;
+	min-height: 50vh;
 	max-width: 100%;
 	background-color: var(--generic-white-background-color);
 	display: flex;
@@ -178,6 +178,17 @@
 	height: 100%;
 	padding-left: 14px;
 	padding-right: 14px;
+	padding-bottom: 7px;
+}
+
+#bottom-panel-options-container {
+	margin-top: auto;
+	border-top: 1px solid var(--border-color);
+	padding-top: 7px;
+}
+
+#bottom-panel-toggle-button {
+	width: 100%;
 }
 
 #bottom-panel-explanation {

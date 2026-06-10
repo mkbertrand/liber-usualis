@@ -304,8 +304,10 @@
 								</div>
 							</div>
 						</template>
-						<button class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
-						<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
+						<div id="bottom-panel-options-container">
+							<button id="bottom-panel-toggle-button" class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
+							<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
+						</div>
 					</div>
 				</div>
 				<div id="side-panel-left">
