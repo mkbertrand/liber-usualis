@@ -352,6 +352,21 @@
 	margin-bottom: 0;
 }
 
+.side-by-side-column-container {
+	display: flex;
+	gap: 30px;
+}
+
+.left-column-latin {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.right-column-vernacular {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
 /* Next hour button. Child of rite-page-container. */
 #next-hour-button-container {
 	padding: 0 40px 60px 40px;

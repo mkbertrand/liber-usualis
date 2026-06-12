@@ -518,12 +518,12 @@ function renderRite(data, options) {
 						if (!(ret.startsWith('<p') || ret.startsWith('<div'))) {
 							ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
 						}
-						ret = `<div class="rite-item ${data.tags.concat(parenttags).join(' ')}">${header}${ret}`;
+						ret = `<div class="rite-item exclude-sbs ${data.tags.concat(parenttags).join(' ')}">${header}${ret}`;
 						return paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
 					} else {
 						ret = ret.replace(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/,'');
 						ret = paragraphclosed(ret) ? ret + '</div>' : ret + '</p></div>'
-						return `<div class="rite-item">${header}<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
+						return `<div class="rite-item exclude-sbs">${header}<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annotation[1]}</p><p class="rite-text ${data.tags.join(' ')}">${ret}`;
 					}
 				}
 
@@ -565,5 +565,42 @@ function renderRite(data, options) {
 			console.log("Some objects failed to render correctly.");
 		}
 	};
-	return renderInner(data['rite'], null, []);
+	rendered = renderInner(data['rite'], null, []);
+	if (options['side-by-side']) {
+		split = rendered.split(/((?:<\/div>)*?(?:<div[^>]+?exclude-sbs.+?>|<h4.+?<\/h4>))/);
+		console.log(split);
+		endingDivCloses = split.at(-1).match(/(?:<\/div>)*$/);
+		if (split.length != 1) {
+			split[split.length - 1] = split[split.length - 1].replace(/(?:<\/div>)*$/, '');
+		}
+		ret = '';
+		for (let i = 0; i < split.length; i ++) {
+			if (split[i] == '') {
+				continue;
+			} else if (split[i].includes('exclude-sbs') || split[i].includes('centered-header')) {
+				ret += split[i];
+			} else {
+				item = '<div class="side-by-side-column-container">';
+				leftColumn = '<div class="left-column-latin">';
+				rightColumn = '<div class="right-column-vernacular">';
+				translations = split[i].match(/<span class="rite-text-translation.+?<\/span><br>/g);
+				if (translations) {
+					for (j of translations) {
+						rightColumn += j.replaceAll('rite-text-translation', 'rite-text');
+					}
+
+					leftColumn += split[i].replaceAll(/<span class="rite-text-translation.+?<\/span><br>/g, '');
+				} else {
+					leftColumn += split[i];
+				}
+				leftColumn += '</div>';
+				rightColumn += '</div>';
+				item += leftColumn + rightColumn + '</div>';
+				ret += item;
+			}
+		}
+		ret += endingDivCloses;
+		return ret;
+	}
+	return rendered;
 };
