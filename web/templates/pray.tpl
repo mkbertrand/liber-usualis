@@ -46,7 +46,6 @@
 	search: '',
 	calendarDate: null,
 	liturgicalday: '',
-	time: 'diurnale',
 	hour: null,
 	desired: $persist('omnes'),
 	ambit: null,
@@ -55,7 +54,6 @@
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
 	rite: '',
-	dayinitialized: false,
 	initialized: false,
 	ignoreCalendarDateChange: false,
 	canIncrementOccasion: true,
@@ -66,6 +64,9 @@
 			$nextTick(() => generatepanels());
 		}
 		return this.rite;
+	},
+	getTime() {
+		return (this.hour == 'vesperae' || this.hour == 'completorium') ? 'vesperale' : 'diurnale';
 	},
 	// Sets this.calendarDate with a local date which is adjusted to UTC.
 	setCalendarDate(calendarDate) {
@@ -103,7 +104,7 @@
 					noending = true;
 				}
 				var response = await fetch(`/rite?date=${this.getCalendarDate()}
-					&time=${this.time}
+					&time=${this.getTime()}
 					&hour=${rites[i][0]}&noending=${noending}
 					&translation=${this.translation ? translation('{{locale}}') : 'none'}
 					&privata=${this.recitation=='private' ? 'privata': 'chorali'}
@@ -138,22 +139,17 @@
 		}
 	},
 	async updateDay() {
-		var response = await fetch(`/day?date=${this.getCalendarDate()}&time=${this.time}`);
+		var response = await fetch(`/day?date=${this.getCalendarDate()}&time=${this.getTime()}`);
 		var json = await response.json();
 		var primary = json.primary[1];
 		this.liturgicalday = json;
-		if (this.dayinitialized) {
-			this.updateRite();
-		}
-		this.dayinitialized = true;
+		this.updateRite();
 		this.ignoreCalendarDateChange = false;
 	},
 	setOccasion(id) {
+		oldTime = this.getTime();
 		this.hour = id;
-		oldtime = this.time;
-		newtime = (this.hour == 'vesperae' || this.hour == 'completorium') ? 'vesperale' : 'diurnale';
-		if (newtime != oldtime) {
-			this.time = newtime;
+		if (oldTime != this.getTime()) {
 			this.updateDay();
 		} else {
 			this.updateRite();
@@ -202,28 +198,19 @@
 	if (nextOccasion && typeof nextOccasion[0] === 'string') {
 		nextOccasion[0] = new Date(nextOccasion[0]);
 	}
+
 	if (canIncrementTo()) {
 		calendarDate = nextOccasion[0];
-		time = nextOccasion[1] == 'vesperae' || nextOccasion[1] == 'completorium' ? 'vesperale' : 'diurnale';
+		hour = nextOccasion[1];
 	} else {
 		calendarDate = new Date();
-		if (calendarDate.getHours() >= 16) {
-			time = 'vesperale';
-		}
+		hour = ambit.suggestSelectedOccasion(calendarDate.getHours()).id;
 	}
+
 	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateDay()}});
 	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
 	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
-	$watch('dayinitialized', dayinitialized => {
-		if (canIncrementTo()) {
-			hour = nextOccasion[1];
-		}
-		else {
-			hour = ambit.suggestSelectedOccasion(calendarDate.getHours()).id;
-		}
-		updateRite();
-	});
 	updateDay();
 	">
 		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
