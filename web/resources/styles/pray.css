@@ -280,12 +280,14 @@
 }
 
 .rite-text-translation {
-	font-style: italic;
-	color: #111;
-	font-size: 16px;
 	line-height: 1;
 	margin-top: 0;
 	padding-left: 10px;
+}
+
+.rite-text-translation.line-by-line {
+	font-size: 14px;
+	color: #222;
 }
 
 .rite-text-rubric {
@@ -311,7 +313,7 @@
 	font-size: 16px !important;
 }
 
-.aperi-domine.rite-text-translation, .sacrosanctae.rite-text-translation {
+.aperi-domine.rite-text-translation.line-by-line, .sacrosanctae.rite-text-translation.line-by-line {
 	font-size: 12px !important;
 }
 
@@ -350,6 +352,21 @@
 
 .rubricum {
 	margin-bottom: 0;
+}
+
+.side-by-side-column-container {
+	display: flex;
+	gap: 30px;
+}
+
+.left-column-latin {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.right-column-vernacular {
+	flex-basis: 0;
+	flex-grow: 1;
 }
 
 /* Next hour button. Child of rite-page-container. */

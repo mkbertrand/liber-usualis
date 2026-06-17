@@ -53,6 +53,7 @@
 	chant: $persist(false),
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
+	sidebyside: $persist(false),
 	rite: '',
 	initialized: false,
 	ignoreCalendarDateChange: false,
@@ -94,7 +95,7 @@
 	async updateRite(scroll = true) {
 		previousTitle = '';
 		if (!this.updateRiteAsyncLock) {
-			riteRenderingOptions = {'chant': this.chant, 'disable-trivial-chant': true, 'side-by-side': true};
+			riteRenderingOptions = {'chant': this.chant, 'disable-trivial-chant': true, 'translation': this.translation, 'side-by-side': this.sidebyside};
 			this.updateRiteAsyncLock = true;
 			newrite = '';
 			rites = this.ambit.riteList(this.liturgicalday.tags, this.hour);
@@ -211,6 +212,7 @@
 	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
 	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
+	$watch('sidebyside', sidebyside => updateRite());
 	updateDay();
 	">
 		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
@@ -236,6 +238,7 @@
 						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
 						% if locale != 'la':
 						<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
+						<button class="options-panel-button" @click="sidebyside = !sidebyside" :class="sidebyside? 'options-panel-button-on' : 'options-panel-button-off'">Side-by-side translation (experimental)</button>
 						% end
 						<div class="recitation-select-container">
 							<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>

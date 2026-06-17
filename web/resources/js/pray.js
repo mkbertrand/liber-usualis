@@ -16,10 +16,11 @@ var panelquotient = 0;
 var riteheight = 1;
 function dopanelsize() {
 	var height = $(window).innerHeight() - parseInt(window.getComputedStyle(document.body).getPropertyValue('--top-bar-title-height').slice(0, -2)) - 1;
-	console.log(height);
 	var minritewidth = height / 1.6;
 	var panelwidth = height * panelratio;
-	canmakepanels = panelwidth * 2 + minritewidth < $(document).width();
+
+	// Second condition checks if the screen is MUCH shorter than it is wide, in which case it presumes a mobile browser.
+	canmakepanels = panelwidth * 2 + minritewidth < $(document).width() && height * 3 > $(document).width();
 
 	if (!canmakepanels) {
 		$('#rite-page-container').css('width', '100%');
@@ -28,24 +29,25 @@ function dopanelsize() {
 		$('#content-container-outer').css('width', '100%');
 		panelsopen = false;
 		panelquotient = 0;
-		return;
+
+	} else {
+
+		// In other words, the rite panel will never be wider than 1:1
+		ritewidth = Math.min(height, $(document).width() - 2 * panelwidth, 1600);
+
+		$('#rite-page-container').css('width', `${ritewidth}px`);
+		$('#side-panel-left').css('width', `${panelwidth}px`);
+		$('#side-panel-right').css('width', `${panelwidth}px`);
+		$('#content-container-outer').css('width', `${ritewidth + panelwidth * 2}px`);
+
+		panelsopen = true;
+
+		if (panelwidth / riteheight != panelquotient) {
+			generatepanels();
+		}
+
+		panelquotient = panelwidth / riteheight;
 	}
-
-	// In other words, the rite panel will never be wider than 1:1
-	ritewidth = Math.min(height, $(document).width() - 2 * panelwidth, 1600);
-
-	$('#rite-page-container').css('width', `${ritewidth}px`);
-	$('#side-panel-left').css('width', `${panelwidth}px`);
-	$('#side-panel-right').css('width', `${panelwidth}px`);
-	$('#content-container-outer').css('width', `${ritewidth + panelwidth * 2}px`);
-
-	panelsopen = true;
-
-	if (panelwidth / riteheight != panelquotient) {
-		generatepanels();
-	}
-
-	panelquotient = panelwidth / riteheight;
 }
 
 function generatepanels() {

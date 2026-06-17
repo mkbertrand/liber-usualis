@@ -4,22 +4,22 @@
 			["antiphona-bmv","ritus","dominica"],
 			["antiphona-bmv","ritus","in-tempore-paschali"]
 		],
-		"datum":["","","","Let us pray.","",""]
+		"datum":[null,null,null,"Let us pray.",null,null]
 	},
 	{
 		"tags":[
 			["antiphona-bmv","ritus","infra-completorium","dominica"],
 			["antiphona-bmv","ritus","infra-completorium","in-tempore-paschali"]
 		],
-		"datum":["","","Let us pray.","",""]
+		"datum":[null,null,"Let us pray.",null,null]
 	},
 	{
 		"tags":["antiphona-bmv","ritus"],
-		"datum":["","","","","Let us pray.","",""]
+		"datum":[null,null,null,null,"Let us pray.",null,null]
 	},
 	{
 		"tags":["antiphona-bmv","ritus","infra-completorium"],
-		"datum":["","","","Let us pray.","",""]
+		"datum":[null,null,null,"Let us pray.",null,null]
 	},
 	{
 		"tags":["antiphona-bmv","versiculus","dominus-det"],
@@ -37,7 +37,7 @@
 		"versiculus":["V. The Angel of the Lord announced unto Mary.","R. And she conceived by the Holy Ghost."],
 		"collecta":[
 			"We beseech Thee, O Lord, pour Thy grace into our hearts; that, as we have known the Incarnation of Thy Son Christ by the message of an Angel, so by His Passion and Cross we may be brought unto the glory of the Resurrection.",
-			""
+			null
 		]
 	},
 	{
@@ -54,7 +54,7 @@
 		"versiculus":["V. Holy Virgin, my praise by thee accepted be.","R. Give me strength against thine enemies."],
 		"collecta":[
 			"Grant, we beseech Thee, O most merciful God, a succour unto the frailty of our nature, + that as we keep ever alive the memory of the holy Mother of God, * so by the help of her intercession we may be raised up from the bondage of our sins.",
-			""
+			null
 		]
 	},
 	{
@@ -63,7 +63,7 @@
 		"versiculus":["V. Be glad and rejoice, O Virgin Mary, Alleluia.","R. For the Lord is risen indeed, Alleluia."],
 		"collecta":[
 			"O God, Who art pleased to gladden the whole world by the resurrection of Thy Son our Lord Jesus Christ; grant, we beseech Thee, that by the help of His Mother the Virgin Mary, we may finally attain unto the gladness of life everlasting.",
-			""
+			null
 		]
 	},
 	{
@@ -72,7 +72,7 @@
 		"versiculus":["V. Pray for us, holy Mother of God.","R. That we may be made worthy of the promises of Christ."],
 		"collecta":[
 			"O almighty God, Who, by the co-operation of the Holy Ghost, didst make ready both the body and soul of the glorious Virgin and Mother Mary worthily to become a meet dwelling for Thy Son; + grant that as we rejoice in her memory, * so by her pitiful intercession we may be delivered from the evils that continually hang over us, and finally from everlasting death.",
-			""
+			null
 		]
 	}
 ]

@@ -41,8 +41,8 @@
 		"tags":["completorium","preces"],
 		"datum":[
 			"Kyrie eleison. Christe eleison. Kyrie eleison.",
-			"",
-			"",
+			null,
+			null,
 			"V. Gepriesen bist Du, Herr, Gott unserer Väter,",
 			"R. Lobwürdig und glorwürdig in Ewigkeit.",
 			"V. Lasset uns preisen den Vater und den Sohne mit dem Heiligen Geiste.",
@@ -57,7 +57,7 @@
 			"R. Erbarme Dich unser.",
 			"V. Deine Barmherzigkeit sei über uns, o Herr.",
 			"R. Gleichwie wir auf Dich hoffen.",
-			""
+			null
 		]
 	},
 	{

@@ -12,8 +12,8 @@
 			"Der hochheiligen und ungeteilten Dreifaltigkeit, der Menschheit unseres gekreuzigten Herrn Jesus Christus, der fruchtbaren Unversehrtheit der seligsten und glorwürdigsten, allzeit jungfräulichen Maria und allen Heiligen sei stets Lob, Ehre, Kraft und Ruhm von jeglichem Geschöpfe, uns aber Nachlass aller Sünden, von immerwährender Ewigkeit zu Ewigkeit. Amen.",
 			"Selig ist der Schoß der Jungfrau Maria, der getragen hat des ewigen Vaters Sohn.",
 			"Und selig die Brust, die genährt hat Christus den Herrn.",
-			"",
-			""
+			null,
+			null
 		]
 	},
 	{
@@ -50,9 +50,9 @@
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
-			"R. ",""," * ","",
-			"\nV. ","",
-			"\nR. ",""
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null
 		]
 	},
 	{
@@ -61,11 +61,11 @@
 			["formula","responsorium","gloria","simplex-responsum"]
 		],
 		"datum":[
-			"R. ",""," * ","",
-			"\nV. ","",
-			"\nR. ","",
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
 			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
-			"\nR. ",""
+			"\nR. ",null
 		]
 	},
 	{
@@ -75,42 +75,42 @@
 			["formula","triduum","responsorium","gloria"]
 		],
 		"datum":[
-			"R. ",""," * ","",
-			"\nV. ","",
-			"\nR. ","",
-			"\nV. ","",
-			"\nR. ",""
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. ",null,
+			"\nR. ",null
 		]
 	},
 	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
-			"R. ",""," * ",""," * ","",
-			"\nV. ","",
-			"\nR. ","",
+			"R. ",null," * ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
 			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
-			"\nR. ",""
+			"\nR. ",null
 		]
 	},
 	{
 		"tags":["formula","responsorium-breve"],
 		"datum":[
-			"R. br. ",""," * ","",
-			"\n",""," ","",
-			"\nV. ","",
-			"\nR. ","",
+			"R. br. ",null," * ",null,
+			"\n",null," ",null,
+			"\nV. ",null,
+			"\nR. ",null,
 			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
-			"\nR. ",""," ",""
+			"\nR. ",null," ",null
 		]
 	},
 	{
 		"tags":["formula","in-tempore-passionis","temporale","responsorium-breve"],
 		"datum":[
-			"R. br. ",""," * ","",
-			"\n",""," ","",
-			"\nV. ","",
-			"\nR. ","",
-			"\nR. ",""," ",""
+			"R. br. ",null," * ",null,
+			"\n",null," ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nR. ",null," ",null
 		]
     },
 	{
@@ -142,11 +142,11 @@
 	{
 		"tags":["domine-exaudi"],
 		"datum":["V. Herr, erhöre mein Gebet.","R. Und lass mein Rufen zu Dir kommen."],
-        "privata":""
+        "privata":null
 	},
 	{
 		"tags":["collecta-primaria"],
-		"datum":["","Lasset uns beten.","",""]
+		"datum":[null,"Lasset uns beten.",null,null]
 	},
 	{
 		"tags":["terminatio","per-dominum"],
@@ -183,10 +183,10 @@
 			["formula","laudes","formula-commemorationis"]
 		],
 		"datum":[
-			"",
-			"",
+			null,
+			null,
 			"Lasset uns beten.",
-			""
+			null
 		]
     },
 	{
@@ -232,9 +232,9 @@
 		"tags":["formula","formula-lectionis"],
 		"datum":[
 			"Erteile, Herr, den Segen.",
-			"",
+			null,
 			"Amen.",
-			"",
+			null,
 			"Du aber, Herr, erbarme Dich unser.",
 			"Dank sei Gott."
 		]
@@ -243,15 +243,15 @@
 		"tags":["formula","formula-lectionis","privata"],
 		"datum":[
 			"Erteile, Herr, den Segen.",
-			"",
+			null,
 			"Amen.",
-			"",
+			null,
 			"Du aber, Herr, erbarme Dich unser.",
 			"Dank sei Gott."
 		]
 	},
 	{
 		"tags":["formula","formula-lectionis","legitur-directe"],
-		"datum":""
+		"datum":null
 	}
 ]

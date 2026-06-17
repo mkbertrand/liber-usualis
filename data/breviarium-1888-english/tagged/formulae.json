@@ -12,8 +12,8 @@
 			"To the Most Holy and undivided Trinity, to the Manhood of our Lord Jesus Christ Crucified, to the fruitful Virginity of the most blessed and most glorious Mary, always a Virgin, and to the holiness of all the Saints be ascribed everlasting praise, honour, and glory, by all creatures, and to us be granted the forgiveness of all our sins, world without end. Amen.",
 			"Blessed be the womb of the Virgin Mary which bore the Son of the Eternal Father.",
 			"And blessed be the paps which gave suck to Christ our Lord.",
-			"",
-			""
+			null,
+			null
 		]
 	},
 	{
@@ -26,13 +26,13 @@
 	},
 	{
 		"tags":["credo-secreta"],
-		"datum":"I believe in God the Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord ; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins, the Resurrection of the body. And the Life everlasting. Amen."
+		"datum":"I believe in God the Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins, the Resurrection of the body. And the Life everlasting. Amen."
 	},
 	{
 		"tags":["deus-in-adjutorium"],
 		"datum":[
-			"Make haste, O God, to deliver me.",
-			"Make haste to help me, O Lord.",
+			"V. Make haste, ✠ O God, to deliver me.",
+			"R. Make haste to help me, O Lord.",
 			"Glory be to the Father, and to the Son, and to the Holy Ghost.",
 			"As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia."
 		],
@@ -50,9 +50,9 @@
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
-			"R. ",""," * ","",
-			"\nV. ","",
-			"\nR. ",""
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null
 		]
 	},
 	{
@@ -61,11 +61,11 @@
 			["formula","responsorium","gloria","simplex-responsum"]
 		],
 		"datum":[
-			"R. ",""," * ","",
-			"\nV. ","",
-			"\nR. ","",
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
 			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
-			"\nR. ",""
+			"\nR. ",null
 		]
 	},
 	{
@@ -75,42 +75,42 @@
 			["formula","triduum","responsorium","gloria"]
 		],
 		"datum":[
-			"R. ",""," * ","",
-			"\nV. ","",
-			"\nR. ","",
-			"\nV. ","",
-			"\nR. ",""
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. ",null,
+			"\nR. ",null
 		]
 	},
 	{
 		"tags":["formula","responsorium","gloria","duplex-responsum"],
 		"datum":[
-			"R. ",""," * ",""," * ","",
-			"\nV. ","",
-			"\nR. ","",
+			"R. ",null," * ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
 			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
-			"\nR. ",""
+			"\nR. ",null
 		]
 	},
 	{
 		"tags":["formula","responsorium-breve"],
 		"datum":[
-			"R. br. ",""," * ","",
-			"\n",""," ","",
-			"\nV. ","",
-			"\nR. ","",
+			"R. br. ",null," * ",null,
+			"\n",null," ",null,
+			"\nV. ",null,
+			"\nR. ",null,
 			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
-			"\nR. ",""," ",""
+			"\nR. ",null," ",null
 		]
 	},
 	{
 		"tags":["formula","in-tempore-passionis","temporale","responsorium-breve"],
 		"datum":[
-			"R. br. ",""," * ","",
-			"\n",""," ","",
-			"\nV. ","",
-			"\nR. ","",
-			"\nR. ",""," ",""
+			"R. br. ",null," * ",null,
+			"\n",null," ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nR. ",null," ",null
 		]
 	},
 	{
@@ -129,7 +129,7 @@
 		"tags":["credo-semisecreta"],
 		"datum":[
 			"I believe in God.",
-			"The Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord ; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins,",
+			"The Father Almighty, Maker of heaven and earth. And in Jesus Christ, His only Son, our Lord; Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried: He descended into hell: the third day He rose again from the dead: He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence He shall come to judge the quick and the dead. I believe in the Holy Ghost, the Holy Catholic Church, the Communion of Saints, the Forgiveness of sins,",
 			"V. The Resurrection of the body.",
 			"R. And the Life everlasting. Amen."
 		]
@@ -142,11 +142,11 @@
 	{
 		"tags":["domine-exaudi"],
 		"datum":["V. Hear my prayer, O Lord.","R. And let my cry come unto Thee."],
-		"privata":""
+		"privata":null
 	},
 	{
 		"tags":["collecta-primaria"],
-		"datum":["","Let us pray.","",""]
+		"datum":[null,"Let us pray.",null,null]
 	},
 	{
 		"tags":["terminatio","per-dominum"],
@@ -182,10 +182,10 @@
 			["formula","laudes","formula-commemorationis"]
 		],
 		"datum":[
-			"",
-			"",
+			null,
+			null,
 			"Let us pray.",
-			""
+			null
 		]
 	},
 	{
@@ -231,9 +231,9 @@
 		"tags":["formula","formula-lectionis"],
 		"datum":[
 			"Sir, be pleased to give the blessing.",
-			"",
+			null,
 			"Amen.",
-			"",
+			null,
 			"But Thou, O Lord, have mercy on us.",
 			"Thanks be to God."
 		]
@@ -242,15 +242,15 @@
 		"tags":["formula","formula-lectionis","privata"],
 		"datum":[
 			"Lord, be pleased to give the blessing.",
-			"",
+			null,
 			"Amen.",
-			"",
+			null,
 			"But Thou, O Lord, have mercy on us.",
 			"Thanks be to God."
 		]
 	},
 	{
 		"tags":["formula","formula-lectionis","legitur-directe"],
-		"datum":""
+		"datum":null
 	}
 ]

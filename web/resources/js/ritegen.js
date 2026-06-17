@@ -51,36 +51,6 @@ function claw(data) {
 }
 
 trivialchants = ['deus-in-adjutorium'];
-function stringrender(data, translation = false) {
-	if (data.match(/^\[.+?\]$/)) {
-		return `<span class='rite-text-rubric'>${rubricrender(data.slice(1, -1))}</span>`;
-	}
-	if (translation) {
-		data = data.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s)/g, '');
-	}
-	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
-		.replaceAll('É', 'E').replaceAll('Í', 'I')
-		.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
-		.replaceAll('Ý', 'Y');
-	data = data.replaceAll(/(?<!<)\//g, '<br>');
-
-	data = data.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
-	data = data.replace(/\n/g, '<br>')
-		.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
-		.replace(/N\./g, '<span class=\'red\'>N.</span>')
-		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
-		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-		.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
-		.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
-		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
-		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
-		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
-		.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
-		.replace(/\[\((.+?)\)\]\s/g, '<span class=\'rite-text-rubric small-rubric\'>(\$1) </span>')
-		.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
-	return data;
-};
-
 function rubricrender(data) {
 	data = data.replaceAll(/\[(.+?)\]/g, '<span class=\'black-rubric\'>\$1</span>');
 	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
@@ -128,8 +98,40 @@ riteheaders = {
 };
 
 function renderRite(data, options) {
+
+	function stringrender(data, translation = false) {
+		if (data.match(/^\[.+?\]$/)) {
+			return `<span class='rite-text-rubric'>${rubricrender(data.slice(1, -1))}</span>`;
+		}
+		if (translation && !options['side-by-side']) {
+			data = data.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
+		}
+		data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
+			.replaceAll('É', 'E').replaceAll('Í', 'I')
+			.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
+			.replaceAll('Ý', 'Y');
+		data = data.replaceAll(/(?<!<)\//g, '<br>');
+
+		data = data.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
+		data = data.replace(/\n/g, '<br>')
+			.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
+			.replace(/N\./g, '<span class=\'red\'>N.</span>')
+			.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
+			.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
+			.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
+			.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
+			.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
+			.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
+			.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
+			.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
+			.replace(/\[\((.+?)\)\]\s/g, '<span class=\'rite-text-rubric small-rubric\'>(\$1) </span>')
+			.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
+		return data;
+	};
+
 	usedcommemorations = data['used-commemorations'];
 	commmat = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
+	translationcssclass = options['side-by-side'] ? 'rite-text-translation side-by-side' : 'rite-text-translation line-by-line';
 
 	function renderInner(data, translated = null, parenttags) {
 		// Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
@@ -154,7 +156,7 @@ function renderRite(data, options) {
 				for (let i = 0, count = data.length; i < count; i++) {
 					plus = renderInner(data[i], Array.isArray(translated) && translated.length == count ? translated[i] : null, parenttags);
 					// Obvious function but the reason is that the start of a paragraph may be specified without saying where it should end (intended functionality)
-					if (plus.startsWith('<p') && !paragraphclosed(ret)) {
+					if (plus.startsWith('<p') && !(ret.lastIndexOf('</p') > ret.lastIndexOf('<p'))) {
 						ret += '</p>';
 					}
 					// The exclusions in the second condition prevent nested paragraphs - especially important for making sure rubrics above paragraphs are handled right.
@@ -174,8 +176,7 @@ function renderRite(data, options) {
 				if (data == '') {
 					return '';
 				}
-				if (translated != null && typeof translated === 'string' && translated != '') {
-					translated = translated.replaceAll(/\[.+?\]/g, '').trim().replaceAll(/([0-9]+)\s/g, '');
+				if (translated && typeof translated === 'string') {
 					rendered = stringrender(data);
 					if (rendered.includes('<br>')) {
 						ret = '';
@@ -188,12 +189,12 @@ function renderRite(data, options) {
 								ret += renderedsplit[i] + '<br>';
 								annotationoffset++;
 							} else {
-								ret += renderedsplit[i] + (translationsplit[i - annotationoffset] == '' ? '' : `<br><span class="rite-text-translation ${parenttags.join(' ')}">${translationsplit[i - annotationoffset]}</span><br>`);
+								ret += renderedsplit[i] + (translationsplit[i - annotationoffset] == '' ? '' : `<br><span class="${translationcssclass} ${parenttags.join(' ')}">${translationsplit[i - annotationoffset]}</span><br>`);
 							}
 						}
 						return ret;
 					}
-					return stringrender(data) + (translated == '' ? '<br>' : `<br><span class="rite-text-translation ${parenttags.join(' ')}">${stringrender(translated, true)}</span><br>`);
+					return stringrender(data) + (translated ? `<br><span class="${translationcssclass} ${parenttags.join(' ')}">${stringrender(translated, true)}</span><br>` : '');
 				} else {
 					return stringrender(data) + '<br>';
 				}
@@ -289,11 +290,11 @@ function renderRite(data, options) {
 							header = makeheadingannotation(`Responsorium ${['III', 'VI', 'IX'][nn - 1]}.`);
 						}
 					}
-					if (translated != null) {
+					if (translated) {
 						var trans = translated;
 						var alldefined = true;
 						for (var i = 0; i < translated.length; i++) {
-							if (trans[i] == '') {
+							if (!trans[i]) {
 								resp = claw(data.datum[i]);
 								if ('translation' in resp) {
 									trans[i] = unpack(resp.translation);
@@ -395,13 +396,13 @@ function renderRite(data, options) {
 
 						// For the first reading from a Homily.
 						if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
-							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderInner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderInner(reading[2], translated[2], [])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated[3] != '' ? translated.slice(3).join(' &para; ') : '', 'lectio-incipiens ' + data.tags.join(' '))}`
+							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderInner(reading[0], translated[0], [])}</p>${annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '))}</p><p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderInner(reading[2], translated[2], [])}</p>${annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated[3] ? translated.slice(3).join(' &para; ') : null, 'lectio-incipiens ' + data.tags.join(' '))}`
 						// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings.
 						} else if (Array.isArray(reading) && reading[0].length < 100) {
-							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderInner(reading[0], translated[0], [])}</p>${annotate(reading.slice(1).join(' &para; '), translated[1] != '' ? translated.slice(1).join(' &para; ') : '', (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
+							return `${annotation}<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${renderInner(reading[0], translated[0], [])}</p>${annotate(reading.slice(1).join(' &para; '), translated[1] ? translated.slice(1).join(' &para; ') : null, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '))}`
 						// Note that an untitled reading may still be a first reading. This is due to the fact that most Saints lives are begun without title.
 						} else {
-							if (Array.isArray(reading)) { reading = reading.join(' &para; '); translated = translated[0] != '' ? translated.join(' &para; ') : '';};
+							if (Array.isArray(reading)) { reading = reading.join(' &para; '); translated = translated[0] ? translated.join(' &para; ') : null;};
 							return annotation + annotate(reading, translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '));
 						}
 					}
@@ -431,29 +432,42 @@ function renderRite(data, options) {
 					return ret;
 
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
-					headers = data.datum.match(/\[.+?\]\n/g);
-					for (i of headers) {
-						newheader = i.slice(1, -2).replace(':', '. ') + '.';
-						numeral = newheader.match(/\s([IVXLC]+)[\s|\.]/);
-						if (numeral != null) {
-							numeral = numeral[1];
-							vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
-							number = 0;
-							for (var j = 0; j < numeral.length; j++) {
-								if (j != numeral.length - 1 && vals[numeral[j]] < vals[numeral[j + 1]]) {
-										number += vals[numeral[j + 1]] - vals[numeral[j]];
-										j++;
-								} else {
-									number += vals[numeral[j]];
+					function doPsalmHeadering(psalmblock) {
+						headers = psalmblock.match(/\[.+?\]\n/g);
+						for (i of headers) {
+							newheader = i.slice(1, -2).replace(':', '. ') + '.';
+							numeral = newheader.match(/\s([IVXLC]+)[\s|\.]/);
+							if (numeral) {
+								numeral = numeral[1];
+								vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
+								number = 0;
+								for (var j = 0; j < numeral.length; j++) {
+									if (j != numeral.length - 1 && vals[numeral[j]] < vals[numeral[j + 1]]) {
+											number += vals[numeral[j + 1]] - vals[numeral[j]];
+											j++;
+									} else {
+										number += vals[numeral[j]];
+									}
 								}
+								newheader = newheader.replace(numeral, number);
 							}
-							newheader = newheader.replace(numeral, number);
+							psalmblock = psalmblock.replace(i, '[' + newheader + ']\n');
 						}
-						data.datum = data.datum.replace(i, '[' + newheader + ']\n');
+						return psalmblock;
 					}
+					data.datum = doPsalmHeadering(data.datum);
+
 					header = makeheadingannotation(data.datum.split('\n')[0].slice(1, -1));
-					data.datum = data.datum.substring(data.datum.indexOf('\n') + 1).replace(/^\d+\s/, '').split('\n');
-					translated = translated == null ? null : translated.split('\n').slice(1);
+					// Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
+					data.datum = data.datum.replace(/^\[.+?]\n\d+\s/, '').split('\n');
+					if (translated) {
+						if (options['side-by-side']) {
+							translated = doPsalmHeadering(translated);
+							translated = translated.replace(/^\[.+?]\n\d+\s/, '').split('\n');
+						} else {
+							translated = translated.split('\n').slice(1);
+						}
+					}
 					if (parenttags.includes('preces')) {
 						data.tags.push('textus-psalmi-precibus');
 					} else {
@@ -514,7 +528,7 @@ function renderRite(data, options) {
 				dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria', 'formula-commemorationis']
 				if (dived.some(i => data.tags.includes(i))) {
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
-					if (annotation == null) {
+					if (!annotation) {
 						if (!(ret.startsWith('<p') || ret.startsWith('<div'))) {
 							ret = `<p class="rite-text ${data.tags.concat(parenttags).join(' ')}">` + ret;
 						}
@@ -545,7 +559,7 @@ function renderRite(data, options) {
 				if (openparagraph.some(i => uniquelyhas(i)) || (uniquelyhasbottom('collecta') && !data.tags.includes('terminatio'))) {
 					// It may seem suspicious because of nested references and the like, but we are taking advantage of the fact that the paragraph will never have more divs or the like nested in side - so if there's an annotation, it will be the first thing there.
 					annotation = ret.match(/^<span\sclass='rite-text-rubric'>(.+?)<\/span><br>/);
-					if (annotation == null) {
+					if (!annotation) {
 						if (!ret.startsWith('<p')) {
 							ret = `<p class="rite-text ${data.tags.join(' ')}">` + ret;
 						}
@@ -565,5 +579,38 @@ function renderRite(data, options) {
 			console.log("Some objects failed to render correctly.");
 		}
 	};
-	return renderInner(data['rite'], null, []);
+	ret = renderInner(data['rite'], null, []);
+	if (options['translation'] && options['side-by-side']) {
+		pat1 = /(<\/?div.*?>|(?:<h4.+?<\/h4>))/;
+		split = ret.split(pat1);
+		ret = '';
+		for (i of split) {
+			if (i == '' || pat1.test(i)) {
+				ret += i;
+			} else {
+				for (pa of i.split(/<\/p>/)) {
+					if (pa == '') {
+						continue;
+					}
+					ret += '<div class="side-by-side-column-container">';
+					leftColumn = '<div class="left-column-latin">';
+					rightColumn = '<div class="right-column-vernacular rite-text-translation side-by-side">' + pa.match(/^<p.+?>/);
+					translations = pa.match(/<span class="rite-text-translation.+?<\/span><br>/g);
+					if (translations) {
+						for (j of translations) {
+							rightColumn += j.replaceAll('rite-text-translation', 'rite-text');
+						}
+
+						leftColumn += pa.replaceAll(/<span class="rite-text-translation.+?<\/span><br>/g, '');
+					} else {
+						leftColumn += pa;
+					}
+					leftColumn += '</p></div>';
+					rightColumn += '</p></div>';
+					ret += leftColumn + rightColumn + '</div>';
+				}
+			}
+		}
+	}
+	return ret;
 };
