@@ -465,7 +465,7 @@ function renderRite(data, options) {
 							translated = doPsalmHeadering(translated);
 							translated = translated.replace(/^\[.+?]\n\d+\s/, '').split('\n');
 						} else {
-							translated = translated.split('\n').slice(1);
+							translated = translated.replaceAll(/\[.+?]/g, '').split('\n').slice(1);
 						}
 					}
 					if (parenttags.includes('preces')) {
@@ -580,6 +580,9 @@ function renderRite(data, options) {
 		}
 	};
 	ret = renderInner(data['rite'], null, []);
+
+	console.log(ret);
+	ret = ret.replaceAll(/<p\sclass="[\w\s-]+?"><\/p>/g, '');
 	if (options['translation'] && options['side-by-side']) {
 		pat1 = /(<\/?div.*?>|(?:<h4.+?<\/h4>))/;
 		split = ret.split(pat1);
