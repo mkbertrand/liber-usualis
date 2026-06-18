@@ -232,9 +232,9 @@
 		"datum":"Veníte adorémus eum: * quia ipse est Dóminus Deus noster."
 	},
 	{
-		"tags":["epiphania","festum","matutinum","nocturna-iii","psalmus-i"],
+		"tags":["epiphania","festum","matutinum","nocturna-iii","psalmus","psalmus-i"],
 		"datum":[
-			"Veníte, exsultémus Dómino: * jubilémus Deo salutári nostro:",
+			"[Psalmus 94.]/Veníte, exsultémus Dómino: * jubilémus Deo salutári nostro:",
 			"Præoccupémus fáciem ejus in confessióne: * et in psalmis jubilémus ei.",
 			["antiphona","antiphona-i","repetita"],
 			"Quóniam Deus magnus Dóminus: * et Rex magnus super omnes deos.",
@@ -248,7 +248,7 @@
 			"Quadragínta annis offénsus fui generatióni illi, * et dixi: Semper hi errant corde.",
 			"Et isti non cognovérunt vias meas, ut jurávi in ira mea: * Si introíbunt in réquiem meam.",
 			["antiphona","antiphona-i","repetita"],
-			["/psalmi/gloria"]
+			["gloria-versorum"]
 		]
 	},
 	{
@@ -256,7 +256,7 @@
 		"datum":"Homo natus est * in ea, et ipse fundávit eam Altíssimus."
 	},
 	{
-		"tags":["epiphania","matutinum","nocturna-iii","psalmus-i"],
+		"tags":["epiphania","matutinum","nocturna-iii","psalmus","psalmus-i"],
 		"datum":[["/psalmi/psalmus-lxxxvi,gloria"]]
 	},
 	{

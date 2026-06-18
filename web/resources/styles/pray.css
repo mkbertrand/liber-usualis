@@ -338,7 +338,7 @@
 }
 
 /* Technically colors all items red, but in effect since all except the Oremus are already colored red, only adds red for that. */
-.collecta-primaria::first-letter, .formula-commemorationis::first-letter, .commemoratio-finalis::first-letter, .antiphona-bmv::first-letter, .officium-capituli::first-letter {
+.collecta-primaria::first-letter, .commemorationes::first-letter, .antiphona-bmv::first-letter, .officium-capituli::first-letter {
 	color: red;
 }
 
