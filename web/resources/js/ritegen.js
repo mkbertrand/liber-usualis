@@ -102,10 +102,10 @@ const GENERAL_HEADERS = {
 };
 
 const NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
-const DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria']
-const FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus'];
+const DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria'];
+const FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus', 'lectionis-titulum', 'evangelium-matutini', 'lectio-incipiens', 'lectio-sequens'];
 const PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio'];
-const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta', 'capitulum'];
+const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta'];
 
 const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
 
@@ -142,7 +142,7 @@ function renderRite(data, options) {
 	};
 
 	usedCommemorations = data['used-commemorations'];
-	commmat = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
+	matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
 	translationcssclass = options['side-by-side'] ? 'rite-text-translation side-by-side' : 'rite-text-translation line-by-line';
 
 	rite = '';
@@ -182,10 +182,10 @@ function renderRite(data, options) {
 		rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
 	}
 
-	function renderInner(data, translated = null, parenttags) {
+	function renderInner(data, translated = null, parentTags) {
 		// Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
 		function uniquelyhas(tag, list = data.tags) {
-			return list.includes(tag) && !parenttags.includes(tag);
+			return list.includes(tag) && !parentTags.includes(tag);
 		}
 
 		// Same as above, but only for the bottom of the recursion.
@@ -200,10 +200,10 @@ function renderRite(data, options) {
 			}
 
 			// Manages splitting up strings that include line breaks so that the translation is divided properly.
-			if (typeof data === 'string' && data.match(/[^\]]\//)) {
-				data = data.split(/[^\]]\//);
+			if (typeof data === 'string' && data.match(/(?<!\]|\[[^\]]+?)\//)) {
+				data = data.split(/(?<!\]|\[[^\]]+?)\//);
 				if (translated) {
-					translated = translated.split(/[^\]]\//);
+					translated = translated.split(/(?<!\]|\[[^\]]+?)\//);
 				}
 			}
 
@@ -213,15 +213,20 @@ function renderRite(data, options) {
 					if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
 						makeHeadingAnnotation(data[i].slice(1, -2));
 					} else {
-						renderInner(data[i], Array.isArray(translated) && translated.length == data.length ? translated[i] : null, parenttags);
+						renderInner(data[i], Array.isArray(translated) && translated.length == data.length ? translated[i] : null, parentTags);
 					}
 				}
 
 			} else if (typeof data === 'string') {
-				if (!paragraphOpen) {
-					openParagraph(parenttags.join(' '));
+				annot = data.match(/^\[(.+?)\]\//)
+				if (annot) {
+					makeHeadingAnnotation(rubricRender(annot[1]));
+					data = data.replace(annot[0], '');
 				}
-				rite += stringRender(data) + (translated ? `<br><span class="${translationcssclass} ${parenttags.join(' ')}">${stringRender(translated, true)}</span><br>` : '<br>');
+				if (!paragraphOpen) {
+					openParagraph(parentTags.join(' '));
+				}
+				rite += stringRender(data) + (translated ? `<br><span class="${translationcssclass} ${parentTags.join(' ')}">${stringRender(translated, true)}</span><br>` : '<br>');
 
 			} else if (typeof data === 'object' && 'tags' in data) {
 				if (unpack(data) == '') {
@@ -244,7 +249,7 @@ function renderRite(data, options) {
 						makeCenteredHeader('Antiphona B.M.V.');
 					} else {
 						for (let i of data.tags) {
-							if (i in RITE_HEADERS && !parenttags.includes(i)) {
+							if (i in RITE_HEADERS && !parentTags.includes(i)) {
 								makeCenteredHeader(RITE_HEADERS[i], 'section-header');
 							}
 						}
@@ -254,42 +259,42 @@ function renderRite(data, options) {
 						if (!('quaesitum' in data)) {
 							data.quaesitum = [];
 						}
-						if (i in GENERAL_HEADERS && !parenttags.includes(i) && data.datum != '') {
+						if (i in GENERAL_HEADERS && !parentTags.includes(i) && data.datum != '') {
 							makeCenteredHeader(GENERAL_HEADERS[i]);
 						}
 					}
 					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
 						makeCenteredHeader('Hymnus [Te Deum.]');
 					} else if (uniquelyhas('capitulum') && !data.tags.includes('pascha')) {
-						if (data.quaesitum.includes('officium-parvum-bmv') && !['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
+						if (data.quaesitum.includes('officium-parvum-bmv') && !['vesperae', 'laudes'].some(tag => parentTags.includes(tag))) {
 							makeCenteredHeader('Capitulum & Versiculus.');
-						} else if (['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
+						} else if (['vesperae', 'laudes'].some(tag => parentTags.includes(tag))) {
 							makeCenteredHeader('Capitulum, Hymnus & Versiculus.');
 						} else {
 							makeCenteredHeader('Capitulum, Responsorium Breve & Versiculus.');
 						}
 					} else if (uniquelyhas('versiculus') && ['officium-defunctorum', 'coena-domini', 'parasceve', 'sabbatum-sanctum'].some(tag => data.tags.includes(tag))) {
 						makeCenteredHeader('Versiculus.');
-					} else if (uniquelyhas('versiculus') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-bmv')) {
+					} else if (uniquelyhas('versiculus') && !parentTags.includes('commemorationes') && !parentTags.includes('antiphona-bmv')) {
 						makeHeadingAnnotation('Versiculus.');
 					} else if (uniquelyhas('absolutio')) {
 						makeHeadingAnnotation('Absolutio.');
-					} else if (uniquelyhas('preces') && !parenttags.includes('officium-capituli')) {
+					} else if (uniquelyhas('preces') && !parentTags.includes('officium-capituli')) {
 						makeCenteredHeader('Preces.');
 					} else if (uniquelyhas('hymnus')) {
-						if (['vesperae', 'laudes'].some(tag => parenttags.includes(tag))) {
+						if (['vesperae', 'laudes'].some(tag => parentTags.includes(tag))) {
 							makeHeadingAnnotation('Hymnus.');
 						} else {
 							makeCenteredHeader('Hymnus.');
 						}
-					} else if (uniquelyhas('confiteor') && parenttags.includes('completorium')) {
+					} else if (uniquelyhas('confiteor') && parentTags.includes('completorium')) {
 						makeCenteredHeader('Confessio.');
-					} else if (!data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes')) {
-						if (uniquelyhas('antiphona-magnificat') && !parenttags.includes('antiphona-nunc-dimittis')) {
+					} else if (!data.quaesitum.includes('repetita') && !parentTags.includes('commemorationes')) {
+						if (uniquelyhas('antiphona-magnificat') && !parentTags.includes('antiphona-nunc-dimittis')) {
 							makeCenteredHeader('Canticum B. Mariæ Virg.');
 						} else if ((uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('triduum')) || (uniquelyhas('nunc-dimittis') && (data.quaesitum.includes('triduum') || data.quaesitum.includes('pascha') && !data.quaesitum.includes('i-vesperae')))) {
 							makeCenteredHeader('Canticum Simeonis.');
-						} else if (uniquelyhas('antiphona-prior-benedictus') && !parenttags.includes('antiphona-magnificat') && !parenttags.includes('antiphona-nunc-dimittis')) {
+						} else if (uniquelyhas('antiphona-prior-benedictus') && !parentTags.includes('antiphona-magnificat') && !parentTags.includes('antiphona-nunc-dimittis')) {
 							makeCenteredHeader('Canticum Zachariæ.');
 						}
 					}
@@ -298,7 +303,7 @@ function renderRite(data, options) {
 				// Handle objects that have chant.
 				if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disable-trivial-chant'] && data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
 					closeParagraph();
-					rite += `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
+					rite += `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;
 					return;
 
 				// Handle Responsories and Short Responsories.
@@ -355,7 +360,7 @@ function renderRite(data, options) {
 					});
 
 					// We're ok with nested responsories.
-					parenttags = parenttags.filter(tag => tag != 'responsorium');
+					parentTags = parentTags.filter(tag => tag != 'responsorium');
 
 				// Handle headers for Lessons.
 				} else if (data.tags.includes('formula-lectionis') && data.datum != '' && !(typeof data.datum !== 'string' && 'tags' in data.datum && data.datum.tags.includes('formula-lectionis'))) {
@@ -415,7 +420,7 @@ function renderRite(data, options) {
 							translated = translated.replaceAll(/\[.+?]/g, '').split('\n').slice(1);
 						}
 					}
-					if (parenttags.includes('preces')) {
+					if (parentTags.includes('preces')) {
 						data.tags.push('textus-psalmi-precibus');
 					} else {
 						data.tags.push('textus-psalmi');
@@ -423,69 +428,60 @@ function renderRite(data, options) {
 
 				// Handle Lessons.
 				} else if (data.tags.includes('lectio') && !(typeof data.datum === 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('commemoratio-matutini'))) {
-					// Adds extra line of annotation noting that the reading is a commemoration (i.e. not a continuation of the previous readings).
+					// Adds extra line of annotation noting that the lesson is a commemoration (i.e. not a continuation of the previous lessons).
 					if (data.tags.includes('lectio-commemorationis') || typeof data.datum == 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('lectio-commemorationis')) {
-						makeHeadingAnnotation(abbreviateName(commmat));
+						makeHeadingAnnotation(abbreviateName(matinsCommemoration));
 					}
 
-					reading = unpack(data);
+					lesson = unpack(data);
 					if (!translated) {
 						if (typeof data === 'object' && 'datum' in data && typeof data.datum === 'object' && 'translation' in data.datum) {
 							translated = unpack(data.datum.translation);
-						} else if (Array.isArray(reading)) {
-							translated = Array(reading.length).fill('', 0);
+						} else if (Array.isArray(lesson)) {
+							translated = Array(lesson.length).fill('', 0);
 						}
-					}
-
-					// Readings have initial letters, but the first-letter pseudoclass is applied to the first letter of a paragraph. Therefore the reading's annotation needs to be in a separate paragraph.
-					function annotate(reading, translated, cssclasses) {
-						annotation = reading.match(/^\[.+?\]\//g);
-						if (annotation) {
-							reading = reading.replace(/^\[.+?\]\//g,'');
-							makeHeadingAnnotation(annotation[0].slice(1, -2))
-						}
-						openParagraph(cssclasses);
-						renderInner(reading, translated, []);
 					}
 
 					// For the Lamentations of the Sacred Triduum.
 					if (data.quaesitum.includes('sabbatum-sanctum') && data.quaesitum.includes('nocturna-i') && data.quaesitum.includes('lectio-iii')) {
-						reading = [reading[0], reading[1] + '<br>' + reading[2].replace(/^(.)/, '<span class="red">\$1</span>')];
+						lesson = [lesson[0], lesson[1] + '<br>' + lesson[2].replace(/^(.)/, '<span class="red">\$1</span>')];
 					} else if (data.quaesitum.includes('triduum') && data.quaesitum.includes('nocturna-i')) {
 						if (data.quaesitum.includes('lectio-i')) {
-							rite += `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringRender(reading[0])}</p>`;
-							reading = reading.slice(1);
+							rite += `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringRender(lesson[0])}</p>`;
+							lesson = lesson.slice(1);
 						}
-						annotation = reading[0].match(/^\[.+?\]\//g);
+						annotation = lesson[0].match(/^\[.+?\]\//g);
 						if (annotation) {
 							makeHeadingAnnotation(annotation[0].slice(1, -2));
-							reading[0] = reading[0].replace(/^\[.+?\]\//g,'');
+							lesson[0] = lesson[0].replace(/^\[.+?\]\//g,'');
 						}
-						body = reading.slice(0, -1).map((i) => stringRender(i).replace(/^(.)(.+?\.\s)(.)/, '<span class="red">\$1</span>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + reading[reading.length - 1].replace(/^(.)/, '<span class="red">\$1</span>');
+						body = lesson.slice(0, -1).map((i) => stringRender(i).replace(/^(.)(.+?\.\s)(.)/, '<span class="red">\$1</span>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + lesson[lesson.length - 1].replace(/^(.)/, '<span class="red">\$1</span>');
 						rite += `<p class="rite-text lectio-sequens">${body}</p>`;
 						return;
 					}
 
-					// For the first reading from a Homily.
-					if (Array.isArray(reading) && reading[0].length < 100 && reading[0].includes('Evangélii')) {
+					// For the first lesson from a Homily.
+					if (Array.isArray(lesson) && lesson[0].length < 100 && lesson[0].includes('Evangélii')) {
 						openParagraph('lectionis-titulum');
-						renderInner(reading[0], translated[0], parenttags);
-						annotate(reading[1], translated[1], 'evangelium-matutini ' + data.tags.join(' '));
+						renderInner(lesson[0], translated[0], [...data.tags, ...parentTags, 'lectionis-titulum']);
+						closeParagraph();
+						renderInner(lesson[1], translated[1], ['evangelium-matutini']);
 						openParagraph('lectionis-titulum');
-						renderInner(reading[2], translated[2], parenttags);
-						annotate(reading.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated[3] ? translated.slice(3).join(' &para; ') : null, 'lectio-incipiens ' + data.tags.join(' '));
-					// Cheeky heuristic to guess if the first item is a title or if this reading is really some conjoined readings.
-					} else if (Array.isArray(reading) && reading[0].length < 100) {
+						renderInner(lesson[2], translated[2], [...data.tags, ...parentTags, 'lectionis-titulum']);
+						renderInner(lesson.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translated[3] ? translated.slice(3).join(' &para; ') : null, ['lectio-incipiens']);
+					// Cheeky heuristic to guess if the first item is a title or if this lesson is really some conjoined lessons.
+					} else if (Array.isArray(lesson) && lesson[0].length < 100) {
 						openParagraph('lectionis-titulum');
-						renderInner(reading[0], translated[0], parenttags);
-						annotate(reading.slice(1).join(' &para; '), translated[1] ? translated.slice(1).join(' &para; ') : null, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '));
-					// Note that an untitled reading may still be a first reading. This is due to the fact that most Saints lives are begun without title.
+						renderInner(lesson[0], translated[0], [...data.tags, ...parentTags, 'lectionis-titulum']);
+						renderInner(lesson.slice(1).join(' &para; '), translated[1] ? translated.slice(1).join(' &para; ') : null, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
+					// Note that an untitled lesson may still be a first lesson. This is due to the fact that most Saints lives are begun without title.
 					} else {
-						if (Array.isArray(reading)) {
-							reading = reading.join(' &para; ');
+						if (Array.isArray(lesson)) {
+							lesson = lesson.join(' &para; ');
 							translated = translated[0] ? translated.join(' &para; ') : null;
 						};
-						annotate(reading, translated, (data.quaesitum.includes('lectio-i') ? 'lectio-incipiens ' : 'lectio-sequens ') + data.tags.join(' '));
+						closeParagraph();
+						renderInner(lesson, translated, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
 					}
 					return;
 
@@ -518,10 +514,10 @@ function renderRite(data, options) {
 					for (var i = 0; i < data.datum.length - 1; i++) {
 						openDiv('', 'formula-commemorationis');
 						makeHeadingAnnotation(abbreviateName(usedCommemorations[i][0]));
-						renderInner(data.datum[i], translated, data.tags.concat(parenttags));
+						renderInner(data.datum[i], translated, data.tags.concat(parentTags));
 						if (i != data.datum.length - 2) { closeDiv('formula-commemorationis'); }
 					}
-					renderInner(data.datum.at(-1), translated, data.tags.concat(parenttags));
+					renderInner(data.datum.at(-1), translated, data.tags.concat(parentTags));
 					closeDiv('formula-commemorationis');
 					return;
 
@@ -561,34 +557,34 @@ function renderRite(data, options) {
 				for (let name of DIVED_ELEMENTS) {
 					if (uniquelyhas(name)) {
 						openDiv('', name);
-						renderInner(data.datum, translated, data.tags.concat(parenttags));
+						renderInner(data.datum, translated, data.tags.concat(parentTags));
 						closeDiv(name);
 						return;
 					}
 				}
 				for (let name of FULLY_PARAGRAPHED_ELEMENTS) {
 					if (uniquelyhas(name)) {
-						openParagraph(data.tags.concat(parenttags).join(' '));
-						renderInner(data.datum, translated, data.tags.concat(parenttags));
+						openParagraph(data.tags.concat(parentTags).join(' '));
+						renderInner(data.datum, translated, data.tags.concat(parentTags));
 						closeParagraph();
 						return;
 					}
 				}
 				for (let name of PARAGRAPH_CLOSING_ELEMENTS) {
 					if (uniquelyhas(name)) {
-						renderInner(data.datum, translated, data.tags.concat(parenttags));
+						renderInner(data.datum, translated, data.tags.concat(parentTags));
 						closeParagraph();
 						return;
 					}
 				}
 				for (let name of PARAGRAPH_OPENING_ELEMENTS) {
 					if (uniquelyhas(name)) {
-						openParagraph(data.tags.concat(parenttags).join(' '));
-						renderInner(data.datum, translated, data.tags.concat(parenttags));
+						openParagraph(data.tags.concat(parentTags).join(' '));
+						renderInner(data.datum, translated, data.tags.concat(parentTags));
 						return;
 					}
 				}
-				renderInner(data.datum, translated, parenttags);
+				renderInner(data.datum, translated, parentTags);
 			}
 		} catch(err) {
 			console.log(err);
