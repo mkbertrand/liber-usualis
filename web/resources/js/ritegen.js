@@ -50,8 +50,7 @@ function claw(data) {
 	}
 }
 
-trivialchants = ['deus-in-adjutorium'];
-function rubricrender(data) {
+function rubricRender(data) {
 	data = data.replaceAll(/\[(.+?)\]/g, '<span class=\'black-rubric\'>\$1</span>');
 	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
 		.replaceAll('É', 'E').replaceAll('Í', 'I')
@@ -72,13 +71,7 @@ function rubricrender(data) {
 	return data;
 }
 
-// Obvious
-function paragraphclosed(string) {
-	// Less than or equal because both equal implies value of -1 which implies no paragraphs at all
-	return string.lastIndexOf('</p') >= string.lastIndexOf('<p');
-}
-
-riteheaders = {
+const RITE_HEADERS = {
 	'matutinum': 'Ad Matutinum.',
 	'laudes': 'Ad Laudes.',
 	'prima': 'Ad Primam.',
@@ -97,11 +90,30 @@ riteheaders = {
 	'officium-capituli': 'Martyrologium.'
 };
 
+const GENERAL_HEADERS = {
+	'psalmi': 'Psalmi.',
+	'collecta-primaria': 'Collecta.',
+	'invitatorium': 'Invitatorium.',
+	'haec-dies': 'Antiphona.',
+	'ante-prandium': 'Ante Prandium.',
+	'post-prandium': 'Post Prandium.',
+	'ante-coenam': 'Ante Cœnam.',
+	'post-coenam': 'Post Cœnam.'
+};
+
+const NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
+const DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria']
+const FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus'];
+const PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio'];
+const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta', 'capitulum'];
+
+const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
+
 function renderRite(data, options) {
 
-	function stringrender(data, translation = false) {
+	function stringRender(data, translation = false) {
 		if (data.match(/^\[.+?\]$/)) {
-			return `<span class='rite-text-rubric'>${rubricrender(data.slice(1, -1))}</span>`;
+			return `<span class='rite-text-rubric'>${rubricRender(data.slice(1, -1))}</span>`;
 		}
 		if (translation && !options['side-by-side']) {
 			data = data.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
@@ -163,17 +175,13 @@ function renderRite(data, options) {
 
 	function makeCenteredHeader(header, style = 'item-header') {
 		closeParagraph();
-		rite += `<h4 class="centered-header ${style}">${rubricrender(header)}</h4>`;
+		rite += `<h4 class="centered-header ${style}">${rubricRender(header)}</h4>`;
 	}
 	function makeHeadingAnnotation(annot) {
 		closeParagraph();
 		rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
 	}
 
-	dived = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria']
-	fullyParagraphed = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus'];
-	closesParagraph = ['gloria-versorum'];
-	opensParagraph = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta', 'capitulum'];
 	function renderInner(data, translated = null, parenttags) {
 		// Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
 		function uniquelyhas(tag, list = data.tags) {
@@ -213,7 +221,7 @@ function renderRite(data, options) {
 				if (!paragraphOpen) {
 					openParagraph(parenttags.join(' '));
 				}
-				rite += stringrender(data) + (translated ? `<br><span class="${translationcssclass} ${parenttags.join(' ')}">${stringrender(translated, true)}</span><br>` : '<br>');
+				rite += stringRender(data) + (translated ? `<br><span class="${translationcssclass} ${parenttags.join(' ')}">${stringRender(translated, true)}</span><br>` : '<br>');
 
 			} else if (typeof data === 'object' && 'tags' in data) {
 				if (unpack(data) == '') {
@@ -236,29 +244,18 @@ function renderRite(data, options) {
 						makeCenteredHeader('Antiphona B.M.V.');
 					} else {
 						for (let i of data.tags) {
-							if (i in riteheaders && !parenttags.includes(i)) {
-								makeCenteredHeader(riteheaders[i], 'section-header');
+							if (i in RITE_HEADERS && !parenttags.includes(i)) {
+								makeCenteredHeader(RITE_HEADERS[i], 'section-header');
 							}
 						}
 					}
 				} else {
 					for (let i of data.tags) {
-						headers = {
-							'psalmi': 'Psalmi.',
-							'collecta-primaria': 'Collecta.',
-							'invitatorium': 'Invitatorium.',
-							'haec-dies': 'Antiphona.',
-							'ante-prandium': 'Ante Prandium.',
-							'post-prandium': 'Post Prandium.',
-							'ante-coenam': 'Ante Cœnam.',
-							'post-coenam': 'Post Cœnam.'
-						};
-
 						if (!('quaesitum' in data)) {
 							data.quaesitum = [];
 						}
-						if (i in headers && !parenttags.includes(i) && data.datum != '') {
-							makeCenteredHeader(headers[i]);
+						if (i in GENERAL_HEADERS && !parenttags.includes(i) && data.datum != '') {
+							makeCenteredHeader(GENERAL_HEADERS[i]);
 						}
 					}
 					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
@@ -285,21 +282,21 @@ function renderRite(data, options) {
 						} else {
 							makeCenteredHeader('Hymnus.');
 						}
-					} else if (uniquelyhas('antiphona-magnificat') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-nunc-dimittis')) {
-						makeCenteredHeader('Canticum B. Mariæ Virg.');
-					} else if (uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('repetita') && !data.quaesitum.includes('triduum')) {
-						makeCenteredHeader('Canticum Simeonis.');
-					} else if (uniquelyhas('nunc-dimittis') && (data.quaesitum.includes('triduum') || data.quaesitum.includes('pascha') && !data.quaesitum.includes('i-vesperae'))) {
-						makeCenteredHeader('Canticum Simeonis.');
-					} else if (uniquelyhas('antiphona-prior-benedictus') && !data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes') && !parenttags.includes('antiphona-magnificat') && !parenttags.includes('antiphona-nunc-dimittis')) {
-						makeCenteredHeader('Canticum Zachariæ.');
 					} else if (uniquelyhas('confiteor') && parenttags.includes('completorium')) {
 						makeCenteredHeader('Confessio.');
+					} else if (!data.quaesitum.includes('repetita') && !parenttags.includes('commemorationes')) {
+						if (uniquelyhas('antiphona-magnificat') && !parenttags.includes('antiphona-nunc-dimittis')) {
+							makeCenteredHeader('Canticum B. Mariæ Virg.');
+						} else if ((uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('triduum')) || (uniquelyhas('nunc-dimittis') && (data.quaesitum.includes('triduum') || data.quaesitum.includes('pascha') && !data.quaesitum.includes('i-vesperae')))) {
+							makeCenteredHeader('Canticum Simeonis.');
+						} else if (uniquelyhas('antiphona-prior-benedictus') && !parenttags.includes('antiphona-magnificat') && !parenttags.includes('antiphona-nunc-dimittis')) {
+							makeCenteredHeader('Canticum Zachariæ.');
+						}
 					}
 				}
 
 				// Handle objects that have chant.
-				if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disable-trivial-chant'] && data.tags.some(tag => trivialchants.includes(tag)))) {
+				if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disable-trivial-chant'] && data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
 					closeParagraph();
 					rite += `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parenttags).join('+')}"></gabc-chant>`;
 					return;
@@ -309,7 +306,7 @@ function renderRite(data, options) {
 				} if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
 					// This is a string if no responsory was found
 					if (typeof data.datum[1] === 'string') {
-						rite += stringrender(data.datum[1].replace(", 'incipit'",''));
+						rite += stringRender(data.datum[1].replace(", 'incipit'",''));
 					}
 					if (data.quaesitum.includes('responsorium-breve')) {
 						makeHeadingAnnotation('Responsorium Breve.');
@@ -320,13 +317,13 @@ function renderRite(data, options) {
 						} else if (data.quaesitum.includes('nocturna-iii')) {
 							nn = 3
 						}
-						if (data.quaesitum.includes('responsorium-i')) {
-							makeHeadingAnnotation(`Responsorium ${['I', 'IV', 'VII'][nn - 1]}.`);
-						} else if (data.quaesitum.includes('responsorium-ii')) {
-							makeHeadingAnnotation(`Responsorium ${['II', 'V', 'VIII'][nn - 1]}.`);
+						respPosition = 1;
+						if (data.quaesitum.includes('responsorium-ii')) {
+							respPosition = 2;
 						} else if (data.quaesitum.includes('responsorium-iii')) {
-							makeHeadingAnnotation(`Responsorium ${['III', 'VI', 'IX'][nn - 1]}.`);
+							respPosition = 3;
 						}
+						makeHeadingAnnotation(`Responsorium ${NUMERALS[3 * nn + respPosition - 4]}.`);
 					}
 					if (translated) {
 						var trans = translated;
@@ -371,13 +368,14 @@ function renderRite(data, options) {
 						} else if (data.quaesitum.includes('nocturna-iii')) {
 							nn = 3
 						}
-						if (data.quaesitum.includes('lectio-i')) {
-							makeCenteredHeader(`Lectio ${['I', 'IV', 'VII'][nn - 1]}.`);
-						} else if (data.quaesitum.includes('lectio-ii')) {
-							makeCenteredHeader(`Lectio ${['II', 'V', 'VIII'][nn - 1]}.`);
+
+						lessonPosition = 1;
+						if (data.quaesitum.includes('lectio-ii')) {
+							lessonPosition = 2;
 						} else if (data.quaesitum.includes('lectio-iii')) {
-							makeCenteredHeader(`Lectio ${['III', 'VI', 'IX'][nn - 1]}.`);
+							lessonPosition = 3;
 						}
+						makeCenteredHeader(`Lectio ${NUMERALS[3 * nn + lessonPosition - 4]}.`);
 					}
 
 				// Handle Psalms.
@@ -393,8 +391,8 @@ function renderRite(data, options) {
 								number = 0;
 								for (var j = 0; j < numeral.length; j++) {
 									if (j != numeral.length - 1 && vals[numeral[j]] < vals[numeral[j + 1]]) {
-											number += vals[numeral[j + 1]] - vals[numeral[j]];
-											j++;
+										number += vals[numeral[j + 1]] - vals[numeral[j]];
+										j++;
 									} else {
 										number += vals[numeral[j]];
 									}
@@ -455,7 +453,7 @@ function renderRite(data, options) {
 						reading = [reading[0], reading[1] + '<br>' + reading[2].replace(/^(.)/, '<span class="red">\$1</span>')];
 					} else if (data.quaesitum.includes('triduum') && data.quaesitum.includes('nocturna-i')) {
 						if (data.quaesitum.includes('lectio-i')) {
-							rite += `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringrender(reading[0])}</p>`;
+							rite += `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringRender(reading[0])}</p>`;
 							reading = reading.slice(1);
 						}
 						annotation = reading[0].match(/^\[.+?\]\//g);
@@ -463,7 +461,7 @@ function renderRite(data, options) {
 							makeHeadingAnnotation(annotation[0].slice(1, -2));
 							reading[0] = reading[0].replace(/^\[.+?\]\//g,'');
 						}
-						body = reading.slice(0, -1).map((i) => stringrender(i).replace(/^(.)(.+?\.\s)(.)/, '<span class="red">\$1</span>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + reading[reading.length - 1].replace(/^(.)/, '<span class="red">\$1</span>');
+						body = reading.slice(0, -1).map((i) => stringRender(i).replace(/^(.)(.+?\.\s)(.)/, '<span class="red">\$1</span>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + reading[reading.length - 1].replace(/^(.)/, '<span class="red">\$1</span>');
 						rite += `<p class="rite-text lectio-sequens">${body}</p>`;
 						return;
 					}
@@ -497,13 +495,13 @@ function renderRite(data, options) {
 						return;
 					}
 					else if (typeof unpack(data.datum) === 'string' && unpack(data.datum).startsWith('[')) {
-						rite += stringrender(unpack(data.datum));
+						rite += stringRender(unpack(data.datum));
 						return;
 					}
 					openDiv('', 'hymnus');
 					for (let i of unpack(data.datum)) {
 						openParagraph('hymnus');
-						rite += stringrender(i);
+						rite += stringRender(i);
 						closeParagraph();
 
 					}
@@ -511,25 +509,18 @@ function renderRite(data, options) {
 					return;
 
 				// Handle Commemorations.
+				// This will not be reached if there are no Commemorations since the empty string in data.datum would cause renderInner() to stop.
 				} else if (data.tags.includes('commemorationes')) {
-
-					// If there are no commemorations, data.datum.length will never equal 1 since even if there is only a single Commemoration, its Collect's Termination will be present as a separate element.
-					if (data.datum.length == 0) {
-						return;
-					}
 
 					makeCenteredHeader('Commemorationes.');
 
 					// Last two items in the data.datum array are the final Commemoration and the Termination of that Commemoration's collect.
-					for (var i = 0; i < data.datum.length - 2; i++) {
+					for (var i = 0; i < data.datum.length - 1; i++) {
 						openDiv('', 'formula-commemorationis');
 						makeHeadingAnnotation(abbreviateName(usedCommemorations[i][0]));
 						renderInner(data.datum[i], translated, data.tags.concat(parenttags));
-						closeDiv('formula-commemorationis');
+						if (i != data.datum.length - 2) { closeDiv('formula-commemorationis'); }
 					}
-					openDiv('', 'formula-commemorationis');
-					makeHeadingAnnotation(abbreviateName(usedCommemorations.at(-1)[0]));
-					renderInner(data.datum.at(-2), translated, data.tags.concat(parenttags));
 					renderInner(data.datum.at(-1), translated, data.tags.concat(parenttags));
 					closeDiv('formula-commemorationis');
 					return;
@@ -537,40 +528,37 @@ function renderRite(data, options) {
 				// Handle the Martyrology proper.
 				} else if (data.tags.includes('martyrologium')) {
 					openParagraph('martyrologium');
-					rite += stringrender(unpack(data.datum[0])) + ' ' + stringrender(unpack(data.datum[1]));
+					rite += stringRender(unpack(data.datum[0])) + ' ' + stringRender(unpack(data.datum[1]));
 					prae = unpack(data.datum[2]);
 					if (prae != '') {
 						openParagraph('martyrologium');
-						rite += stringrender(prae);
+						rite += stringRender(prae);
 					}
 					martyrology = unpack(data.datum[3]);
 					if (typeof martyrology === 'string') {
 						openParagraph('martyrologium');
-						rite += stringrender(martyrology);
+						rite += stringRender(martyrology);
 					} else {
 						for (let i of unpack(data.datum[3])) {
 							openParagraph('martyrologium');
-							rite += `<p class="rite-text martyrologium">${stringrender(i)}</p>`;
+							rite += `<p class="rite-text martyrologium">${stringRender(i)}</p>`;
 						}
 					}
 					openParagraph('martyrologium');
-					rite += stringrender(unpack(data.datum[4])) + '<br>' + stringrender(unpack(data.datum[5]));
+					rite += stringRender(unpack(data.datum[4])) + '<br>' + stringRender(unpack(data.datum[5]));
 					closeParagraph();
 					return;
 
 				// Handle Chapters.
 				} else if (uniquelyhasbottom('capitulum') && !data.tags.includes('pascha')) {
 					annotationsearch = /^\[(.+?)\]\//;
-					annotation = 'Capitulum' + (annotationsearch.test(data.datum) ? ' ' + data.datum.match(annotationsearch)[1] : '');
-					if (!annotation.endsWith('.')) {
-						annotation += '.';
-					}
+					annotation = 'Capitulum.' + (annotationsearch.test(data.datum) ? ' ' + data.datum.match(annotationsearch)[1] : '');
 					makeHeadingAnnotation(annotation);
 					data.datum = data.datum.replace(annotationsearch, '');
 
 				}
 
-				for (let name of dived) {
+				for (let name of DIVED_ELEMENTS) {
 					if (uniquelyhas(name)) {
 						openDiv('', name);
 						renderInner(data.datum, translated, data.tags.concat(parenttags));
@@ -578,7 +566,7 @@ function renderRite(data, options) {
 						return;
 					}
 				}
-				for (let name of fullyParagraphed) {
+				for (let name of FULLY_PARAGRAPHED_ELEMENTS) {
 					if (uniquelyhas(name)) {
 						openParagraph(data.tags.concat(parenttags).join(' '));
 						renderInner(data.datum, translated, data.tags.concat(parenttags));
@@ -586,20 +574,18 @@ function renderRite(data, options) {
 						return;
 					}
 				}
-				for (let name of closesParagraph) {
+				for (let name of PARAGRAPH_CLOSING_ELEMENTS) {
 					if (uniquelyhas(name)) {
 						renderInner(data.datum, translated, data.tags.concat(parenttags));
 						closeParagraph();
 						return;
 					}
 				}
-				if (!data.tags.includes('terminatio')) {
-					for (let name of opensParagraph) {
-						if (uniquelyhas(name)) {
-							openParagraph(data.tags.concat(parenttags).join(' '));
-							renderInner(data.datum, translated, data.tags.concat(parenttags));
-							return;
-						}
+				for (let name of PARAGRAPH_OPENING_ELEMENTS) {
+					if (uniquelyhas(name)) {
+						openParagraph(data.tags.concat(parenttags).join(' '));
+						renderInner(data.datum, translated, data.tags.concat(parenttags));
+						return;
 					}
 				}
 				renderInner(data.datum, translated, parenttags);
