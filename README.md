@@ -39,6 +39,14 @@ Albert-Emanuel Milani
 
 Jacob Heilman
 
+Volzus
+
+David Villafana
+
+Chandrayee
+
+Ezekiel Warren
+
 ## Additional Credit
 
 Benjamin Bloomfield (whose Javascript code I 'borrowed' and whose Compline project initially inspired this project)
