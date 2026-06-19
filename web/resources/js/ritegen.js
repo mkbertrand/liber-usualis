@@ -177,9 +177,14 @@ function renderRite(data, options) {
 		closeParagraph();
 		rite += `<h4 class="centered-header ${style}">${rubricRender(header)}</h4>`;
 	}
+
 	function makeHeadingAnnotation(annot) {
 		closeParagraph();
 		rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
+	}
+
+	function appendText(text) {
+		rite += text;
 	}
 
 	function renderInner(data, translated = null, parentTags) {
@@ -229,7 +234,7 @@ function renderRite(data, options) {
 				if (!paragraphOpen) {
 					openParagraph(parentTags.join(' '));
 				}
-				rite += stringRender(data) + (translated ? `<br><span class="${translationcssclass} ${parentTags.join(' ')}">${stringRender(translated, true)}</span><br>` : '<br>');
+				appendText(stringRender(data) + (translated ? `<br><span class="${translationcssclass} ${parentTags.join(' ')}">${stringRender(translated, true)}</span><br>` : '<br>'));
 
 			} else if (typeof data === 'object' && 'tags' in data) {
 				if (unpack(data) == '') {
@@ -314,7 +319,7 @@ function renderRite(data, options) {
 				} if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
 					// This is a string if no responsory was found
 					if (typeof data.datum[1] === 'string') {
-						rite += stringRender(data.datum[1].replace(", 'incipit'",''));
+						appendText(stringRender(data.datum[1].replace(", 'incipit'",'')));
 					}
 					if (data.quaesitum.includes('responsorium-breve')) {
 						makeHeadingAnnotation('Responsorium Breve.');
@@ -494,13 +499,13 @@ function renderRite(data, options) {
 						return;
 					}
 					else if (typeof unpack(data.datum) === 'string' && unpack(data.datum).startsWith('[')) {
-						rite += stringRender(unpack(data.datum));
+						appendText(stringRender(unpack(data.datum)));
 						return;
 					}
 					openDiv('', 'hymnus');
 					for (let i of unpack(data.datum)) {
 						openParagraph('hymnus');
-						rite += stringRender(i);
+						appendText(stringRender(i));
 						closeParagraph();
 
 					}
@@ -527,24 +532,24 @@ function renderRite(data, options) {
 				// Handle the Martyrology proper.
 				} else if (data.tags.includes('martyrologium')) {
 					openParagraph('martyrologium');
-					rite += stringRender(unpack(data.datum[0])) + ' ' + stringRender(unpack(data.datum[1]));
+					appendText(stringRender(unpack(data.datum[0])) + ' ' + stringRender(unpack(data.datum[1])));
 					prae = unpack(data.datum[2]);
 					if (prae != '') {
 						openParagraph('martyrologium');
-						rite += stringRender(prae);
+						appendText(stringRender(prae));
 					}
 					martyrology = unpack(data.datum[3]);
 					if (typeof martyrology === 'string') {
 						openParagraph('martyrologium');
-						rite += stringRender(martyrology);
+						appendText(stringRender(martyrology));
 					} else {
 						for (let i of unpack(data.datum[3])) {
 							openParagraph('martyrologium');
-							rite += `<p class="rite-text martyrologium">${stringRender(i)}</p>`;
+							appendText(stringRender(i));
 						}
 					}
 					openParagraph('martyrologium');
-					rite += stringRender(unpack(data.datum[4])) + '<br>' + stringRender(unpack(data.datum[5]));
+					appendText(stringRender(unpack(data.datum[4])) + '<br>' + stringRender(unpack(data.datum[5])));
 					closeParagraph();
 					return;
 				}
