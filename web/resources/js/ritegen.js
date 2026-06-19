@@ -309,9 +309,15 @@ function renderRite(data, options) {
 				}
 
 				// Handle objects that have chant.
-				if (typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disable-trivial-chant'] && data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
-					closeParagraph();
+				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && !(options['disable-trivial-chant'] && data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
+					openDiv('', 'gabc-chant-container');
+					openDiv('', 'gabc-chant');
 					rite += `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;
+					closeDiv('', 'gabc-chant');
+					openDiv('', 'gabc-chant-replaced-text');
+					renderInner(data, translated, parentTags);
+					closeDiv('gabc-chant-replaced-text');
+					closeDiv('gabc-chant-container');
 					return;
 
 				// Handle Responsories and Short Responsories.
