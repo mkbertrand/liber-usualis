@@ -317,7 +317,7 @@
 	font-size: 12px !important;
 }
 
-.aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .oratio-sanctae-mariae::first-letter, .formula-lectionis::first-letter {
+.aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .oratio-sanctae-mariae::first-letter, .formula-lectionis::first-letter, .invitatorium::first-letter {
 	color: red;
 }
 
@@ -338,7 +338,7 @@
 }
 
 /* Technically colors all items red, but in effect since all except the Oremus are already colored red, only adds red for that. */
-.collecta-primaria::first-letter, .formula-commemorationis::first-letter, .commemoratio-finalis::first-letter, .antiphona-bmv::first-letter, .officium-capituli::first-letter {
+.collecta-primaria::first-letter, .commemorationes::first-letter, .antiphona-bmv::first-letter, .officium-capituli::first-letter {
 	color: red;
 }
 
