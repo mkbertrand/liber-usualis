@@ -1,5 +1,9 @@
 [
 	{
+        "tags":["sexta","dominica","per-annum","antiphona"],
+		"datum":null
+	},
+	{
 		"tags":["sexta","temporale","capitulum"],
 		"datum":"Einer trage des anderen Last, und so werdet ihr das Gesetz Christi erfüllen."
 	},
@@ -72,6 +76,10 @@
 	{
 		"tags":["sexta","in-tempore-passionis","temporale","versiculus"],
 		"datum":["V. Lass nicht zugrunde gehen mit den Gottlosen, o Gott, meine Seele.","R. Und mit den Männern des Blutes mein Leben."]
+    },
+	{
+		"tags":["sexta","in-tempore-paschali","temporale","antiphona"],
+		"datum":null
 	},
 	{
 		"tags":["sexta","in-tempore-paschali","feria","capitulum"],
