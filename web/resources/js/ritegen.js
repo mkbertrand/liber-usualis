@@ -111,21 +111,21 @@ const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
 
 function renderRite(data, options) {
 
-	function stringRender(data, translation = false) {
-		if (data.match(/^\[.+?\]$/)) {
-			return `<span class='rite-text-rubric'>${rubricRender(data.slice(1, -1))}</span>`;
+	function stringRender(text, translation = false) {
+		if (text.match(/^\[.+?\]$/)) {
+			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
 		}
 		if (translation && !options['side-by-side']) {
-			data = data.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
+			text = text.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
 		}
-		data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
+		text = text.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
 			.replaceAll('É', 'E').replaceAll('Í', 'I')
 			.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
 			.replaceAll('Ý', 'Y');
-		data = data.replaceAll(/(?<!<)\//g, '<br>');
+		text = text.replaceAll(/(?<!<)\//g, '<br>');
 
-		data = data.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
-		data = data.replace(/\n/g, '<br>')
+		text = text.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
+		text = text.replace(/\n/g, '<br>')
 			.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
 			.replace(/N\./g, '<span class=\'red\'>N.</span>')
 			.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
@@ -138,7 +138,7 @@ function renderRite(data, options) {
 			.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
 			.replace(/\[\((.+?)\)\]\s/g, '<span class=\'rite-text-rubric small-rubric\'>(\$1) </span>')
 			.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
-		return data;
+		return text;
 	};
 
 	usedCommemorations = data['used-commemorations'];
@@ -220,6 +220,9 @@ function renderRite(data, options) {
 			} else if (typeof data === 'string') {
 				annot = data.match(/^\[(.+?)\]\//)
 				if (annot) {
+					if (parentTags.includes('capitulum')) {
+						annot[1] = 'Capitulum. ' + annot[1];
+					}
 					makeHeadingAnnotation(rubricRender(annot[1]));
 					data = data.replace(annot[0], '');
 				}
@@ -332,7 +335,7 @@ function renderRite(data, options) {
 					}
 					if (translated) {
 						var trans = translated;
-						var alldefined = true;
+						var allDefined = true;
 						for (var i = 0; i < translated.length; i++) {
 							if (!trans[i]) {
 								resp = claw(data.datum[i]);
@@ -340,12 +343,12 @@ function renderRite(data, options) {
 									trans[i] = unpack(resp.translation);
 								}
 								if (trans[i] == undefined) {
-									alldefined = false;
+									allDefined = false;
 									break;
 								}
 							}
 						}
-						if (alldefined) {
+						if (allDefined) {
 							translated = trans.join('').split('\n').map((line) => {
 								pref = line.match(/^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)/)[0];
 								return line.replace(pref, pref.toUpperCase().replace('BR', 'br'));
@@ -385,11 +388,11 @@ function renderRite(data, options) {
 
 				// Handle Psalms.
 				} else if (data.tags.join(' ').includes('/psalmi/')) {
-					function doPsalmHeadering(psalmblock) {
-						headers = psalmblock.match(/\[.+?\]\n/g);
+					function doPsalmHeadering(psalmBlock) {
+						headers = psalmBlock.match(/\[.+?\]\n/g);
 						for (let i of headers) {
-							newheader = i.slice(1, -2).replace(':', '. ') + '.';
-							numeral = newheader.match(/\s([IVXLC]+)[\s|\.]/);
+							newHeader = i.slice(1, -2).replace(':', '. ') + '.';
+							numeral = newHeader.match(/\s([IVXLC]+)[\s|\.]/);
 							if (numeral) {
 								numeral = numeral[1];
 								vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
@@ -402,11 +405,11 @@ function renderRite(data, options) {
 										number += vals[numeral[j]];
 									}
 								}
-								newheader = newheader.replace(numeral, number);
+								newHeader = newHeader.replace(numeral, number);
 							}
-							psalmblock = psalmblock.replace(i, '[' + newheader + ']\n');
+							psalmBlock = psalmBlock.replace(i, '[' + newHeader + ']\n');
 						}
-						return psalmblock;
+						return psalmBlock;
 					}
 					data.datum = doPsalmHeadering(data.datum);
 
@@ -544,14 +547,6 @@ function renderRite(data, options) {
 					rite += stringRender(unpack(data.datum[4])) + '<br>' + stringRender(unpack(data.datum[5]));
 					closeParagraph();
 					return;
-
-				// Handle Chapters.
-				} else if (uniquelyhasbottom('capitulum') && !data.tags.includes('pascha')) {
-					annotationsearch = /^\[(.+?)\]\//;
-					annotation = 'Capitulum.' + (annotationsearch.test(data.datum) ? ' ' + data.datum.match(annotationsearch)[1] : '');
-					makeHeadingAnnotation(annotation);
-					data.datum = data.datum.replace(annotationsearch, '');
-
 				}
 
 				for (let name of DIVED_ELEMENTS) {
