@@ -2,7 +2,7 @@
 	{
 		"tags":["aperi-domine"],
 		"datum":[
-			"Öffne, Herr, meinen Mund zum Preise Deines heiligen Namens. Reinige auch mein Herz von allen eitlen, verkehrten und fremden Gedanken; erleuchte den Verstand, entzünde das Herz, damit ich würdig, aufmerksam und andächtig dieses Stundengebet verrichte, und Erhörung vor den Augen deiner göttlichen Majestät zu finden verdiene, durch Christus, unsern Herrn. Amen.",
+			"Öffne, Herr, meinen Mund zum Preise Deines heiligen Namens. Reinige auch mein Herz von allen eitlen, verkehrten und fremden Gedanken; erleuchte den Verstand, entzünde das Herz, damit ich würdig, aufmerksam und andächtig dieses Stundengebet verrichte, und Erhörung vor den Augen Deiner göttlichen Majestät zu finden verdiene, durch Christus, unsern Herrn. Amen.",
 			"Herr, in Vereinigung mit jener gotteswürdigen Absicht, in der Du selbst auf Erden Gott Lob dargebracht hast, will ich dieses Stundengebet (diese Stundengebete) verrichten."
 		]
 	},
@@ -50,7 +50,7 @@
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
-			"R. ",null," * ",null,
+		    "R. ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null
 		]
@@ -150,32 +150,32 @@
 	},
 	{
 		"tags":["terminatio","per-dominum"],
-		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
+		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",null]
 	},
 	{
 		"tags":["terminatio","per-eumdem-dominum"],
-		"datum":["Durch Ihn, unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
+		"datum":["Durch Ihn, unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",null]
     },
 	{
 		"tags":["terminatio","per-dominum-ejusdem-spiritus"],
-		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit eben dieses Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
+		"datum":["Durch unsern Herrn Jesus Christus, Deinen Sohn, der mit Dir lebt und herrscht in der Einheit eben dieses Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",null]
 	},
 	{
 		"tags":["terminatio","qui-vivis"],
-		"datum":["Der Du lebst und herrschest mit Gott dem Vater in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
+		"datum":["Der Du lebst und herrschest mit Gott dem Vater in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",null]
 	},
 	{
 		"tags":["terminatio","qui-tecum-vivit"],
-		"datum":["Der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.","R. Amen."]
+		"datum":["Der mit Dir lebt und herrscht in der Einheit des Heiligen Geistes, Gott von Ewigkeit zu Ewigkeit.",null]
 	},
 	{
 		"tags":["terminatio","per-christum"],
-		"datum":["Durch Christus unseren Herrn.","R. Amen."]
+		"datum":["Durch Christus unseren Herrn.",null]
 	},
 	{
 
 		"tags":["terminatio","per-eumdem-christum"],
-		"datum":["Durch Ihn Christus unseren Herrn.","R. Amen."]
+		"datum":["Durch Ihn Christus unseren Herrn.",null]
 	},
 	{
 		"tags":[
@@ -195,11 +195,11 @@
 	},
 	{
 		"tags":["fidelium-animae"],
-		"datum":["Die Seelen der verstorbenen Gläubigen mögen durch die Barmherzigkeit Gottes in Frieden ruhen.","Amen."]
+		"datum":["Die Seelen der verstorbenen Gläubigen mögen durch die Barmherzigkeit Gottes in Frieden ruhen.",null]
 	},
 	{
 		"tags":["divinum-auxilium"],
-		"datum":["Die göttliche Hilfe bleibe allezeit mit uns.","R. Amen."]
+		"datum":["Die göttliche Hilfe bleibe allezeit mit uns.",null]
 	},
 	{
 		"tags":["adjutorium-nostrum"],
@@ -210,12 +210,12 @@
 		"datum":[
 			"Ich bekenne Gott, dem Allmächtigen, der seligen, allzeit reinen Jungfrau Maria, dem heiligen Erzengel Michael, dem heiligen Johannes dem Täufer, den heiligen Aposteln Petrus und Paulus, allen Heiligen und euch, Brüder, dass ich viel gesündiget habe in Gedanken, Worten und Werken, durch meine Schuld, durch meine Schuld, durch meine übergroße Schuld. Darum bitte ich die selige, allzeit reine Jungfrau Maria, den heiligen Erzengel Michael, den heiligen Johannes den Täufer, die heiligen Apostel Petrus und Paulus, alle Heiligen und euch, Brüder, für mich zu beten bei Gott unseren Herrn.",
 			"Der allmächtige Gott erbarme sich deiner, er lasse dir die Sünden nach und führe dich zum ewigen Leben.",
-			"Amen.",
+			null,
 			"Ich bekenne Gott, dem Allmächtigen, der seligen, allzeit reinen Jungfrau Maria, dem heiligen Erzengel Michael, dem heiligen Johannes dem Täufer, den heiligen Aposteln Petrus und Paulus, allen Heiligen und dir, Pater, dass ich viel gesündiget habe in Gedanken, Worten und Werken, durch meine Schuld, durch meine Schuld, durch meine übergroße Schuld. Darum bitte ich die selige, allzeit reine Jungfrau Maria, den heiligen Erzengel Michael, den heiligen Johannes den Täufer, die heiligen Apostel Petrus und Paulus, alle Heiligen und dich, Pater, für mich zu beten bei Gott unseren Herrn.",
 			"Der allmächtige Gott erbarme sich euer, er lasse euch die Sünden nach und führe euch zum ewigen Leben.",
-			"Amen.",
+			null,
 			"Nachlass, Vergebung und Verzeihung unserer Sünden gewähre uns der allmächtige und barmherzige Herr.",
-			"Amen."
+			null
 		]
 	},
 	{
@@ -223,9 +223,9 @@
 		"datum":[
 			"Ich bekenne Gott, dem Allmächtigen, der seligen, allzeit reinen Jungfrau Maria, dem heiligen Erzengel Michael, dem heiligen Johannes dem Täufer, den heiligen Aposteln Petrus und Paulus, allen Heiligen, dass ich viel gesündiget habe in Gedanken, Worten und Werken, durch meine Schuld, durch meine Schuld, durch meine übergroße Schuld. Darum bitte ich die selige, allzeit reine Jungfrau Maria, den heiligen Erzengel Michael, den heiligen Johannes den Täufer, die heiligen Apostel Petrus und Paulus und alle Heiligen, für mich zu beten bei Gott unseren Herrn.",
 			"Der allmächtige Gott erbarme sich unser, er lasse uns die Sünden nach und führe uns zum ewigen Leben.",
-			"Amen.",
+			null,
 			"Nachlass, Vergebung und Verzeihung unserer Sünden gewähre uns der allmächtige und barmherzige Herr.",
-			"Amen."
+			null
 		]
 	},
 	{
@@ -233,7 +233,7 @@
 		"datum":[
 			"Erteile, Herr, den Segen.",
 			null,
-			"Amen.",
+			null,
 			null,
 			"Du aber, Herr, erbarme Dich unser.",
 			"Dank sei Gott."
@@ -244,7 +244,7 @@
 		"datum":[
 			"Erteile, Herr, den Segen.",
 			null,
-			"Amen.",
+			null,
 			null,
 			"Du aber, Herr, erbarme Dich unser.",
 			"Dank sei Gott."

@@ -13,7 +13,8 @@
 	},
 	{
 		"tags":["completorium","antiphona"],
-		"datum":"Erbarme Dich * meiner, o Herr, und erhöre mein Gebet."
+		"datum":"Erbarme Dich * meiner, o Herr, und erhöre mein Gebet.",
+        "in-tempore-paschali":null
 	},
 	{
 		"tags":["completorium","capitulum"],
@@ -21,26 +22,34 @@
 	},
 	{
 		"tags":["completorium","responsorium-breve"],
-		"incipit":"In Deine Hände, Herr",
-		"responsum":"befehl ich meinen Geist.",
+		"incipit":"In Deine Hände, Herr.",
+		"responsum":"Befehle ich meinen Geist.",
+		"versus":"Du hast uns erlöst, Herr, Gott der Wahrheit."
+    },
+	{
+		"tags":["completorium","responsorium-breve","in-tempore-paschali"],
+		"incipit":"In Deine Hände, Herr, befehle ich meinen Geist.",
+		"responsum":null,
 		"versus":"Du hast uns erlöst, Herr, Gott der Wahrheit."
 	},
 	{
 		"tags":["completorium","versiculus"],
-		"datum":["V. Behüte uns Herr, wie den Augapfel.","R. Unter dem Schatten Deiner Flügel schütze uns."]
+		"datum":["V. Behüte uns Herr, wie den Augapfel.","R. Unter dem Schatten Deiner Flügel schütze uns."],
+        "in-tempore-paschali":["V. Behüte uns Herr, wie den Augapfel, allelúja.","R. Unter dem Schatten Deiner Flügel schütze uns, allelúja."]
 	},
 	{
 		"tags":["completorium","antiphona","antiphona-nunc-dimittis"],
-		"datum":"Bewahre uns, * o Herr, wenn wir wachen; beschütze uns, wenn wir schlafen, auf dass wir wachen mit Christus und ruhen in Frieden."
+		"datum":"Bewahre uns, * o Herr, wenn wir wachen; beschütze uns, wenn wir schlafen, auf dass wir wachen mit Christus und ruhen in Frieden.",
+        "in-tempore-paschali":"Bewahre uns, * o Herr, wenn wir wachen; beschütze uns, wenn wir schlafen, auf dass wir wachen mit Christus und ruhen in Frieden, allelúja."
 	},
 	{
 		"tags":["completorium","collecta"],
-		"datum":"Suche heim, wir bitten Dich, o Herr, diese Wohnstätte und vertreibe weit daraus alle Nachstellungen des bösen Feindes; ✙ Deine heiligen Engel mögen daselbst wohnen und uns in Frieden beschützen, * und Dein Segen sei über uns immerdar."
+		"datum":"Suche heim, wir bitten Dich, o Herr, diese Wohnstätte und vertreibe weit daraus alle Nachstellungen des bösen Feindes; Deine heiligen Engel mögen daselbst wohnen und uns in Frieden beschützen, * und Dein Segen sei über uns immerdar."
 	},
 	{
 		"tags":["completorium","preces"],
 		"datum":[
-			"Kyrie eleison. Christe eleison. Kyrie eleison.",
+			null,
 			null,
 			null,
 			"V. Gepriesen bist Du, Herr, Gott unserer Väter,",

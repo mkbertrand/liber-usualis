@@ -3,7 +3,7 @@
 		"tags":["officium-capituli","ritus"],
 		"datum":[
 			null,
-			"V. Kostbar in den Augen des Herrn",
+			"V. Kostbar in den Augen des Herrn.",
 			"R. Ist der Tod Seiner Heiligen.",
 			null,
 			"V. Gott, auf meine Hilfe habe acht.",
@@ -14,13 +14,14 @@
 			"R. Herr, eile mir zu helfen.",
 			null,
 			null,
+            "Lasset uns beten.",
 			null,
 			null,
 			null,
 			"V. Bittet um Segen.",
 			"R. Gottes Segen.",
 			"Der Herr ✠ segne uns, und bewahre uns von allem Übel, und führe uns zum ewigen Leben; und die Seelen der verstorbenen Gläubigen mögen durch die Barmherzigkeit Gottes in Frieden ruhen.",
-			"Amen.",
+			null,
 			null
 		]
 	},
@@ -28,7 +29,7 @@
 		"tags":["oratio-sanctae-mariae"],
 		"datum":[
 			"Heilige Maria, und alle Heiligen mögen fürbitten für uns beim Herrn, + damit uns Seine Hilfe und Rettung verdient ist, * Der lebt und herrscht von Ewigkeit zu Ewigkeit.",
-			"R. Amen."
+			null
 		]
 	},
 	{
@@ -51,10 +52,9 @@
 	{
 		"tags":["oratio-dirigere"],
 		"datum":[
-			"Lasset uns beten.",
 			"Beherrsche und heilige, leite und lenke, Herr Gott, König des Himmels und der Erde, heute unsere Herzen und Leiber, + unsere Gedanken, Worte und Werke nach Deinen Gesetze, und nach der Vorschrift Deines Gebotes, * damit wir jetzt, und in Ewigkeit, mit Deiner Hilfe selig und frei werden mögen, Heiland der Welt:",
 			"Der Du lebst und herrscht von Ewigkeit zu Ewigkeit.",
-			"R. Amen."
+			null
 		]
 	},
 	{
@@ -88,4 +88,3 @@
 		"tags":["officium-capituli","lectio-brevis","lectio"],
 		"datum":[["nona","capitulum"]]
 	}
-]

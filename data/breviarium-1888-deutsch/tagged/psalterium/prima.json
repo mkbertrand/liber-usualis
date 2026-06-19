@@ -1,5 +1,9 @@
 [
 	{
+		"tags":["prima","dominica","antiphona"],
+		"datum":null
+	},
+	{
 		"tags":[
 			["prima","capitulum"],
 			["prima","in-tempore-paschali","feria","capitulum"]
@@ -14,14 +18,12 @@
 	},
 	{
 		"tags":["prima","in-tempore-adventus","responsorium-breve"],
-		"incipit":"Christus, Du Sohn des lebendigen Gottes,",
-		"responsum":"Erbarme Dich unser.",
 		"versus":"Der Du kommen wirst in die Welt."
 	},
 	{
 		"tags":["prima","in-tempore-paschali","responsorium-breve"],
 		"incipit":"Christus, Du Sohn des lebendigen Gottes",
-		"responsum":"Allelúja, allelúja.",
+		"responsum":null,
 		"versus":"Der Du auferstanden von den Toten."
 	},
 	{
@@ -54,7 +56,8 @@
 	},
 	{
 		"tags":["prima","versiculus"],
-		"datum":["V. Stehe auf, Christus, und hilf uns.","R. Und befreie uns um Deines Namens willen."]
+		"datum":["V. Stehe auf, Christus, und hilf uns.","R. Und befreie uns um Deines Namens willen."],
+		"in-tempore-paschali":["V. Stehe auf, Christus, und hilf uns.","R. Und befreie uns um Deines Namens willen, allelúja."]
 	},
 	{
 		"tags":["prima","preces"],
@@ -80,14 +83,90 @@
 			"R. Ohne Sünde uns bewahren.",
 			"V. Erbarme Dich unser, o Herr.",
 			"R. Erbarme Dich unser.",
-			"V. Deine Barmherzigkeit sei über uns, o Herr.",
+			"V. Deine Barmherzigkeit, o Herr, sei über uns.",
+			"R. Gleichwie wir auf Dich hoffen.",
+			null
+		]
+	},
+	{
+		"tags":[
+			["prima","in-tempore-adventus","feria","preces"],
+			["prima","cinerum","feria","preces"],
+			["prima","in-tempore-quadragesimae","feria","preces"],
+			["prima","in-tempore-passionis","feria","preces"],
+			["prima","quatuor-tempora","feria","preces"],
+			["prima","vigilia","feria","preces"]
+		],
+		"datum":[
+			null,
+			null,
+			null,
+			"V. Und ich rufe zu Dir, o Herr.",
+			"R. Und am Morgen kommet mein Gebet vor Dir.",
+			"V. Mein Mund sei erfüllt von Lob.",
+			"R. Dass ich besinge Deine Herrlichkeit, Deine Größe den ganzen Tag.",
+			"V. Herr, wende ab Dein Angesicht von meinen Sünden.",
+			"R. Und alle meine Missetaten tilge.",
+			"V. Ein reines Herz erschaff in mir, o Gott.",
+			"R. Und den rechten Geist erneuere in meinen Inneren.",
+			"V. Verwirf mich nicht vor Deinem Angesicht.",
+			"R. Und Deinen Heiligen Geist nimm nicht von mir.",
+			"V. Gib mir wieder die Freude Deines Heiles.",
+			"R. Und mit fürstlichen Geiste bekräftige mich.",
+			"V. Rette mich, o Herr, vom bösen Menschen.",
+			"R. Vom gottlosen Manne rette mich.",
+			"V. Errette mich von meinen Feinden, o mein Gott.",
+			"R. Und von denen, die gegen mich aufstehen, befreie mich.",
+			"V. Errette mich von den Übeltätern.",
+			"R. Und von den Männern des Blutes erlöse mich.",
+			"V. So will ich lobsingen Deinem Namen ewiglich.",
+			"R. Auf dass ich meine Gelübde erfülle von Tag zu Tag.",
+			"V. Erhöre uns, o Gott, unser Heiland!.",
+			"R. Du Hoffnung aller Enden der Erde und des Meeres in der Ferne!",
+			"V. Gott, auf meine Hilfe habe acht.",
+			"R. Herr, eile mir zu helfen.",
+			"V. Heiliger Gott, heiliger Starker, heiliger Unsterblicher.",
+			"R. Erbarme Dich unser.",
+		    "V. Lobe meine Seele, den Herrn.",
+            "R. Und alles, was in mir ist, Seinen heiligen Namen.",
+			"V. Lobe, meine Seele, den Herrn.",
+            "R. Und vergiss nicht alle Seine Wohltaten.",
+			"V. Der alle deine Missetat vergibt.",
+            "R. Der alle deine Schwachheit heilet.",
+			"V. Der vom Untergang dein Leben errettet.", 
+            "R. Der dich krönet mit Barmherzigkeit und Erbarmungen.",
+			"V. Der erfüllt mit Güte dein Verlangen.", 
+            "R. Dass deine Jugend sich erneuert wie die des Adlers.",
+			null,
+			null,
+		    "V. Wollest Du, Herr, an diesem Tage.",
+			"R. Ohne Sünde uns bewahren.",
+			"V. Erbarme Dich unser, o Herr.",
+			"R. Erbarme Dich unser.",
+			"V. Deine Barmherzigkeit, o Herr, sei über uns.",
 			"R. Gleichwie wir auf Dich hoffen.",
 			null
 		]
 	},
 	{
 		"tags":["prima","collecta"],
-    "datum": "Herr, allmächtiger Gott, der Du uns bis zum Beginn dieses Tages geführt hast, + bewahre uns heute durch Deine Kraft, damit wir an diesem Tag in keine Sünde verfallen, und unsere Worte, Gedanken und Werke allezeit darauf gerichtet seien, * Deine Gerechtigkeit zu erfüllen,"
+		"datum":"Herr, allmächtiger Gott, der Du uns bis zum Beginn dieses Tages geführt hast, + bewahre uns heute durch Deine Kraft, damit wir an diesem Tag in keine Sünde verfallen, und unsere Worte, Gedanken und Werke allezeit darauf gerichtet seien, * Deine Gerechtigkeit zu erfüllen."
+	},
+	{
+		"tags":["prima","in-tempore-paschali","temporale","antiphona"],
+		"datum":null
+	},
+	{
+		"tags":["prima","feria","antiphona"],
+		"datum":"Selig, die da wandeln * in Deinem Gesetze, o Herr."
+	},
+	{
+		"tags":["prima","in-tempore-quadragesimae","temporale","antiphona"],
+		"datum":"So wahr ich lebe, * spricht der Herr, Gott, ich habe kein Wohlgefallen am Tod des Gottlosen, sondern dass der Gottlose sich bekehre von seinem Wege und lebe."
+	},
+	{
+		"tags":["prima","in-tempore-passionis","temporale","antiphona"],
+		"datum":"Befreie mich, Herr, * und stelle mich neben Dich, und es mag streiten wider mich eines Jeglichen Hand."
 	},
 	{
 		"tags":["prima","feria","capitulum"],
