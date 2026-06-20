@@ -102,7 +102,7 @@ const GENERAL_HEADERS = {
 };
 
 const NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
-const DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria'];
+const DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria', 'antiphona-bmv'];
 const FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'responsorium', 'responsorium-breve', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus', 'lectionis-titulum', 'evangelium-matutini', 'lectio-incipiens', 'lectio-sequens'];
 const PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio'];
 const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta'];
@@ -569,7 +569,7 @@ function renderRite(data, options) {
 					}
 				}
 				for (let name of FULLY_PARAGRAPHED_ELEMENTS) {
-					if (uniquelyhas(name)) {
+					if (uniquelyhas(name) && !data.tags.includes('dominus-det')) {
 						openParagraph(data.tags.concat(parentTags).join(' '));
 						renderInner(data.datum, translated, data.tags.concat(parentTags));
 						closeParagraph();
