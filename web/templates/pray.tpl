@@ -309,7 +309,7 @@
 							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 								<div id="date-selector-container">
 									<button id="date-selector-decrement" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-left.svg" /></button>
-									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate()" @keyup.enter.window="setCalendarDate(search);">
+									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate()">
 									<button id="date-selector-text-submit" class="date-selector-button" @click="setCalendarDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
 									<button id="date-selector-increment" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
