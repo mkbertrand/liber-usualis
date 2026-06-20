@@ -1,29 +1,29 @@
 [
 	{
-		"tags":["apostoli","suffragium","nomen"],
+		"tags":["de-sanctis-apostolis","suffragium","nomen"],
 		"datum":"De Apostolis"
 	},
 	{
-		"tags":["apostoli","vesperae","versiculus"],
+		"tags":["de-sanctis-apostolis","suffragium","vesperae","versiculus"],
 		"datum":["V. Constítues eos príncipes super omnem terram.","R. Mémores erunt nóminis tui Dómine."]
 	},
 	{
-		"tags":["apostoli","vesperae","antiphona","antiphona-magnificat"],
+		"tags":["de-sanctis-apostolis","suffragium","vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/2974",
 		"datum":"Petrus Apóstolus, * et Paulus Doctor Géntium, ipsi nos docuérunt legem tuam Dómine."
 	},
 	{
-		"tags":["apostoli","collecta"],
+		"tags":["de-sanctis-apostolis","suffragium","collecta"],
 		"datum":"Deus, cujus déxtera beátum Petrum ambulántem in flúctibus, ne mergerétur, eréxit, et coapóstolum ejus Paulum, tértio naufragántem, de profúndo pélagi liberávit: + exaúdi nos propítius, et concéde; * ut ambórum méritis æternitátis glóriam consequámur:",
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
 	{
-		"tags":["apostoli","laudes","versiculus"],
+		"tags":["de-sanctis-apostolis","suffragium","laudes","versiculus"],
 		"datum":["V. In omnem terram exívit sonus eórum.","R. Et in fines orbis terræ verba eórum."]
 	},
 	{
-		"tags":["apostoli","laudes","antiphona","antiphona-benedictus"],
+		"tags":["de-sanctis-apostolis","suffragium","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12007",
 		"datum":"Gloriósi príncipes terræ, * quómodo in vita sua dilexérunt se, ita et in morte non sunt separáti."
 	}
-] 
+]

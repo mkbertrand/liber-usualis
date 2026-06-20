@@ -215,5 +215,29 @@
 	{
 		"occurrence":["tempus"],
 		"tags":["pro-aliis-officiis"]
+	},
+	{
+		"occurrence":["feria-ii"],
+		"tags":["votiva","de-sanctis-angelis"]
+	},
+	{
+		"occurrence":["feria-iii"],
+		"tags":["votiva","apostolus","de-sanctis-apostolis"]
+	},
+	{
+		"occurrence":["feria-iv"],
+		"tags":["votiva","de-joseph"]
+	},
+	{
+		"occurrence":["feria-v"],
+		"tags":["votiva","corpus-christi","de-eucharistiae-sacramento"]
+	},
+	{
+		"occurrence":["feria-vi"],
+		"tags":["votiva","de-passione"]
+	},
+	{
+		"occurrence":["sabbatum"],
+		"tags":["votiva","de-immaculata-conceptione"]
 	}
 ]

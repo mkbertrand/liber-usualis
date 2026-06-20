@@ -183,28 +183,28 @@
 			["petrus-paulus","infra-octavam","vesperae","versiculus"],
 			["petrus-paulus","dies-octava","vesperae","versiculus"]
 		],
-		"datum":[["apostoli","vesperae","versiculus"]]
+		"datum":[["de-sanctis-apostolis","suffragium","vesperae","versiculus"]]
 	},
 	{
 		"tags":[
 			["petrus-paulus","infra-octavam","vesperae","antiphona","antiphona-magnificat"],
 			["petrus-paulus","dies-octava","vesperae","antiphona","antiphona-magnificat"]
 		],
-		"datum":[["apostoli","vesperae","antiphona","antiphona-magnificat"]]
+		"datum":[["de-sanctis-apostolis","suffragium","vesperae","antiphona","antiphona-magnificat"]]
 	},
 	{
 		"tags":[
 			["petrus-paulus","infra-octavam","laudes","antiphona","antiphona-benedictus"],
 			["petrus-paulus","dies-octava","laudes","antiphona","antiphona-benedictus"]
 		],
-		"datum":[["apostoli","laudes","antiphona","antiphona-benedictus"]]
+		"datum":[["de-sanctis-apostolis","suffragium","laudes","antiphona","antiphona-benedictus"]]
 	},
 	{
 		"tags":[
 			["petrus-paulus","infra-octavam","laudes","versiculus"],
 			["petrus-paulus","dies-octava","laudes","versiculus"]
 		],
-		"datum":[["apostoli","laudes","versiculus"]]
+		"datum":[["de-sanctis-apostolis","suffragium","laudes","versiculus"]]
 	},
 	{
 		"tags":["petrus-paulus","infra-octavam","matutinum","nocturna-i","lectio"],
@@ -262,7 +262,7 @@
 	},
 	{
 		"tags":["petrus-paulus","dies-octava","collecta"],
-		"datum":[["apostoli","collecta"]],
-		"terminatio":[["apostoli","collecta","terminatio"]]
+		"datum":[["de-sanctis-apostolis","suffragium","collecta"]],
+		"terminatio":[["de-sanctis-apostolis","suffragium","collecta","terminatio"]]
 	}
 ]

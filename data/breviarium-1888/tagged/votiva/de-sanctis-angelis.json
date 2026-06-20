@@ -1,38 +1,207 @@
 [
 	{
+		"tags":["de-sanctis-angelis","nomen"],
+		"datum":"Officium Votivum de Sanctis Angelis"
+	},
+	{
+		"tags":["de-sanctis-angelis","antiphona","antiphona-i"],
+		"datum":[["apparitio-michaelis","antiphona","antiphona-iv"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","vesperae","psalmus"],
+		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","antiphona","antiphona-ii"],
+		"datum":"Ángelis suis * Deus mandávit de te, ut custódiant te in ómnibus viis tuis.",
+		"in-tempore-paschali":"Ángelis suis * Deus mandávit de te, ut custódiant te in ómnibus viis tuis, allelúja."
+	},
+	{
+		"tags":["de-sanctis-angelis","antiphona","antiphona-iii"],
+		"datum":[["angeli-custodes","antiphona","antiphona-iii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","antiphona","antiphona-iv"],
+		"datum":[["angeli-custodes","antiphona","antiphona-v"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","antiphona","antiphona-v"],
+		"datum":[["apparitio-michaelis","antiphona","antiphona-v"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","capitulum"],
+		"datum":[["angeli-custodes","capitulum"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","hymnus"],
+		"datum":[["apparitio-michaelis","hymnus"]]
+	},
+	{
+		"tags":[
+			["de-sanctis-angelis","i-vesperae","versiculus"],
+			["de-sanctis-angelis","laudes","versiculus"]
+		],
+		"datum":[["apparitio-michaelis","ii-vesperae","versiculus"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["angeli-custodes","antiphona"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","collecta"],
+		"datum":[["apparitio-michaelis","collecta"]],
+		"terminatio":[["apparitio-michaelis","collecta","terminatio"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["angeli-custodes","antiphona"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":[["dedicatio-michaelis","matutinum","nocturna-iii","antiphona","antiphona-iii"]]
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-i","psalmus","psalmus-i"],
 		"datum":[["/psalmi/psalmus-viii,gloria"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":"Gábriel Archángelus * locútus est Maríæ dicens: Ecce concípies in útero et páries Fílium et vocábis nomen ejus Jesum."
 	},
 	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-i","psalmus","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-x,gloria"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Benedícite Deum cœli, * dixit Ángelus Ráphaël, et coram ómnibus vivéntibus confitémini ei, quia fecit vobíscum misericórdiam suam."
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-i","psalmus","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-xiv,gloria"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","versiculus"],
+		"datum":[["apparitio-michaelis","versiculus"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"datum":[["apparitio-michaelis","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"datum":[["angeli-custodes","matutinum","nocturna-i","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"datum":[["apparitio-michaelis","matutinum","nocturna-iii","responsorium","responsorium-i"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":[["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-iii"]]
 	},
 	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","psalmus","psalmus-i"],
 		"datum":[["/psalmi/psalmus-xviii,gloria"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":[["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-iii"]]
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","psalmus","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":[["dedicatio-michaelis","matutinum","nocturna-i","antiphona","antiphona-ii"]]
 	},
 	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","psalmus","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-xxxiii,gloria"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"incipit":"Omnes Ángeli stabant in circúitu throni, et seniórum, et quátuor animálium:",
+		"responsum":"Et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum.",
+		"versus":"Adoráte Dóminum omnes Ángeli ejus."
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum, allelúja."
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"datum":[["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"datum":[["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-iii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":[["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-i"]]
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","psalmus","psalmus-i"],
 		"datum":[["/psalmi/psalmus-xcv,gloria"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":[["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-ii"]]
 	},
 	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","psalmus","psalmus-ii"],
 		"datum":[["/psalmi/psalmus-xcvi,gloria"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":[["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-iii"]]
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","psalmus","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-cii,gloria"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"datum":[["angeli-custodes","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"datum":[["angeli-custodes","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","laudes","antiphona","antiphona-benedictus"],
+		"datum":"Ángelus, qui loquebátur * in me, suscitávit me, quasi virum qui suscitátur a somno suo.",
+		"in-tempore-paschali":"Ángelus, qui loquebátur * in me, suscitávit me, quasi virum qui suscitátur a somno suo, allelúja."
+	},
+	{
+		"tags":["de-sanctis-angelis","responsorium-breve"],
+		"datum":[["apparitio-michaelis","responsorium-breve"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","versiculus"],
+		"tertia":[["apparitio-michaelis","versiculus"]],
+		"sexta":[["apparitio-michaelis","versiculus"]],
+		"nona":[["apparitio-michaelis","versiculus"]],
+		"ii-vesperae":[["apparitio-michaelis","versiculus"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","capitulum"],
+		"sexta":[["apparitio-michaelis","capitulum"]],
+		"nona":[["apparitio-michaelis","capitulum"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","ii-vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxxxvii,gloria"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Sancti Ángeli * qui Deo in cœlis semper assístitis, deféndite nos in prǽlio, ut non pereámus in treméndo judício.",
+		"in-tempore-paschali":"Sancti Ángeli * qui Deo in cœlis semper assístitis, deféndite nos in prǽlio, ut non pereámus in treméndo judício, allelúja."
 	}
 ]

@@ -40,7 +40,7 @@
 		"include":["tempus","i-vesperae"],
 		"recheck":false,
 		"response":"crea",
-		"adde":["suffragium","commemoratio","apostoli"]
+		"adde":["suffragium","commemoratio","de-sanctis-apostolis"]
 	},
 	{
 		"include":["tempus","i-vesperae"],
@@ -694,5 +694,15 @@
 		"include":["petrus-ad-vincula"],
 		"response":"crea",
 		"adde":["commemoratio","paulus","semiduplex"]
+	},
+	{
+		"include":["votiva"],
+		"response":[
+			{"include":["duplex-i-classis","primarium"],"response":"dele","target":0},
+			{"include":["duplex-ii-classis","primarium"],"response":"dele","target":0},
+			{"include":["duplex-majus","primarium"],"response":"dele","target":0},
+			{"include":["duplex-minus","primarium"],"response":"dele","target":0},
+			{"include":["semiduplex","primarium"],"response":"dele","target":0}
+		]
 	}
 ]

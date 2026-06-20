@@ -11,7 +11,8 @@
 	{
 		"tags":["corpus-christi","vesperae","antiphona","antiphona-i"],
 		"src":"gregobase/2546",
-		"datum":"Sacérdos in ætérnum * Christus Dóminus secúndum órdinem Melchísedech, panem et vinum óbtulit."
+		"datum":"Sacérdos in ætérnum * Christus Dóminus secúndum órdinem Melchísedech, panem et vinum óbtulit.",
+		"in-tempore-paschali":"Sacérdos in ætérnum * Christus Dóminus secúndum órdinem Melchísedech, panem et vinum óbtulit, allelúja."
 	},
 	{
 		"tags":["corpus-christi","vesperae","psalmus","psalmus-i"],
@@ -20,7 +21,8 @@
 	{
 		"tags":["corpus-christi","vesperae","antiphona","antiphona-ii"],
 		"src":"gregobase/2459",
-		"datum":"Miserátor Dóminus * escam dedit timéntibus se in memóriam suórum mirabílium."
+		"datum":"Miserátor Dóminus * escam dedit timéntibus se in memóriam suórum mirabílium.",
+		"in-tempore-paschali":"Miserátor Dóminus * escam dedit timéntibus se in memóriam suórum mirabílium, allelúja."
 	},
 	{
 		"tags":["corpus-christi","vesperae","psalmus","psalmus-ii"],
@@ -29,7 +31,8 @@
 	{
 		"tags":["corpus-christi","vesperae","antiphona","antiphona-iii"],
 		"src":"gregobase/1877",
-		"datum":"Cálicem salutáris * accípiam, et sacrificábo hóstiam laudis."
+		"datum":"Cálicem salutáris * accípiam, et sacrificábo hóstiam laudis.",
+		"in-tempore-paschali":"Cálicem salutáris * accípiam, et sacrificábo hóstiam laudis, allelúja."
 	},
 	{
 		"tags":["corpus-christi","vesperae","psalmus","psalmus-iii"],
@@ -38,7 +41,8 @@
 	{
 		"tags":["corpus-christi","vesperae","antiphona","antiphona-iv"],
 		"src":"gregobase/1921",
-		"datum":"Sicut novéllæ olivárum, * Ecclésiæ fílii sint in circúitu mensæ Dómini."
+		"datum":"Sicut novéllæ olivárum, * Ecclésiæ fílii sint in circúitu mensæ Dómini.",
+		"in-tempore-paschali":"Sicut novéllæ olivárum, * Ecclésiæ fílii sint in circúitu mensæ Dómini, allelúja."
 	},
 	{
 		"tags":["corpus-christi","vesperae","psalmus","psalmus-iv"],
@@ -47,7 +51,8 @@
 	{
 		"tags":["corpus-christi","vesperae","antiphona","antiphona-v"],
 		"src":"gregobase/2339",
-		"datum":"Qui pacem * ponit fines Ecclésiæ, fruménti ádipe sátiat nos Dóminus."
+		"datum":"Qui pacem * ponit fines Ecclésiæ, fruménti ádipe sátiat nos Dóminus.",
+		"in-tempore-paschali":"Qui pacem * ponit fines Ecclésiæ, fruménti ádipe sátiat nos Dóminus, allelúja."
 	},
 	{
 		"tags":["corpus-christi","vesperae","psalmus","psalmus-v"],
@@ -71,7 +76,8 @@
 	},
 	{
 		"tags":["corpus-christi","vesperae","versiculus"],
-		"datum":["V. Panem de cœlo præstitísti eis, allelúja.","R. Omne delectaméntum in se habéntem, allelúja."]
+		"datum":["V. Panem de cœlo præstitísti eis, allelúja.","R. Omne delectaméntum in se habéntem, allelúja."],
+		"votiva-extra-tempore-paschali":["V. Panem de cœlo præstitísti eis.","R. Omne delectaméntum in se habéntem."]
 	},
 	{
 		"tags":["corpus-christi","i-vesperae","antiphona","antiphona-magnificat"],
@@ -128,7 +134,8 @@
 			["corpus-christi","matutinum","nocturna-i","versiculus"],
 			["corpus-christi","dominica-infra-octavam","laudes","versiculus"]
 		],
-		"datum":["V. Panem cœli dedit eis, allelúja.","R. Panem Angelórum manducávit homo, allelúja."]
+		"datum":["V. Panem cœli dedit eis, allelúja.","R. Panem Angelórum manducávit homo, allelúja."],
+		"votiva-extra-tempore-paschali":["V. Panem cœli dedit eis.","R. Panem Angelórum manducávit homo."]
 	},
 	{
 		"tags":[
@@ -202,7 +209,8 @@
 			["corpus-christi","tertia","versiculus"],
 			["corpus-christi","dominica-infra-octavam","vesperae","versiculus"]
 		],
-		"datum":["V. Cibávit illos ex ádipe fruménti, allelúja.","R. Et de petra, melle saturávit eos, allelúja."]
+		"datum":["V. Cibávit illos ex ádipe fruménti, allelúja.","R. Et de petra, melle saturávit eos, allelúja."],
+		"votiva-extra-tempore-paschali":["V. Cibávit illos ex ádipe fruménti.","R. Et de petra, melle saturávit eos."]
 	},
 	{
 		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -266,7 +274,8 @@
 			["corpus-christi","matutinum","nocturna-iii","versiculus"],
 			["corpus-christi","sexta","versiculus"]
 		],
-		"datum":["V. Edúcas panem de terra, allelúja.","R. Et vinum lætíficet cor hóminis, allelúja."]
+		"datum":["V. Edúcas panem de terra, allelúja.","R. Et vinum lætíficet cor hóminis, allelúja."],
+		"votiva-extra-tempore-paschali":["V. Edúcas panem de terra.","R. Et vinum lætíficet cor hóminis."]
 	},
 	{
 		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -300,27 +309,32 @@
 	{
 		"tags":["corpus-christi","antiphona","antiphona-i"],
 		"src":"gregobase/2793",
-		"datum":"Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam, allelúja."
+		"datum":"Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam, allelúja.",
+		"votiva-extra-tempore-paschali":"Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam."
 	},
 	{
 		"tags":["corpus-christi","antiphona","antiphona-ii"],
 		"src":"gregobase/2731",
-		"datum":"Angelórum esca * nutrivísti pópulum tuum, et panem de cœlo præstitísti eis, allelúja."
+		"datum":"Angelórum esca * nutrivísti pópulum tuum, et panem de cœlo præstitísti eis, allelúja.",
+		"votiva-extra-tempore-paschali":"Angelórum esca * nutrivísti pópulum tuum, et panem de cœlo præstitísti eis."
 	},
 	{
 		"tags":["corpus-christi","antiphona","antiphona-iii"],
 		"src":"gregobase/2057",
-		"datum":"Pinguis est panis * Christi, et præbébit delícias régibus, allelúja."
+		"datum":"Pinguis est panis * Christi, et præbébit delícias régibus, allelúja.",
+		"votiva-extra-tempore-paschali":"Pinguis est panis * Christi, et præbébit delícias régibus."
 	},
 	{
 		"tags":["corpus-christi","antiphona","antiphona-iv"],
 		"src":"gregobase/2572",
-		"datum":"Sacerdótes sancti * incénsum et panes ófferunt Deo, allelúja."
+		"datum":"Sacerdótes sancti * incénsum et panes ófferunt Deo, allelúja.",
+		"votiva-extra-tempore-paschali":"Sacerdótes sancti * incénsum et panes ófferunt Deo."
 	},
 	{
 		"tags":["corpus-christi","antiphona","antiphona-v"],
 		"src":"gregobase/13297",
-		"datum":"Vincénti dabo * manna abscónditum, et nomen novum, allelúja."
+		"datum":"Vincénti dabo * manna abscónditum, et nomen novum, allelúja.",
+		"votiva-extra-tempore-paschali":"Vincénti dabo * manna abscónditum, et nomen novum."
 	},
 	{
 		"tags":["corpus-christi","laudes","hymnus"],
@@ -339,17 +353,25 @@
 			["corpus-christi","laudes","versiculus"],
 			["corpus-christi","nona","versiculus"]
 		],
-		"datum":["V. Pósuit fines tuos pacem, allelúja.","R. Et ádipe fruménti sátiat te, allelúja."]
+		"datum":["V. Pósuit fines tuos pacem, allelúja.","R. Et ádipe fruménti sátiat te, allelúja."],
+		"votiva-extra-tempore-paschali":["V. Pósuit fines tuos pacem.","R. Et ádipe fruménti sátiat te."]
 	},
 	{
 		"tags":["corpus-christi","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/11844",
-		"datum":"Ego sum * panis vivus, qui de cœlo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum, allelúja."
+		"datum":"Ego sum * panis vivus, qui de cœlo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum, allelúja.",
+		"votiva-extra-tempore-paschali":"Ego sum * panis vivus, qui de cœlo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum."
 	},
 	{
 		"tags":["corpus-christi","tertia","responsorium-breve"],
 		"incipit":"Panem cœli dedit eis.",
 		"responsum":"Allelúja, allelúja.",
+		"versus":"Panem Angelórum manducávit homo."
+	},
+	{
+		"tags":["corpus-christi","tertia","responsorium-breve","votiva-extra-tempore-paschali"],
+		"incipit":"Panem cœli",
+		"responsum":"dedit eis.",
 		"versus":"Panem Angelórum manducávit homo."
 	},
 	{
@@ -363,6 +385,12 @@
 		"versus":"Et de petra, melle saturávit eos."
 	},
 	{
+		"tags":["corpus-christi","sexta","responsorium-breve","votiva-extra-tempore-paschali"],
+		"incipit":"Cibávit illos",
+		"responsum":"ex ádipe fruménti.",
+		"versus":"Et de petra, melle saturávit eos."
+	},
+	{
 		"tags":["corpus-christi","nona","capitulum"],
 		"datum":"[I. Cor. 11. f.]/Quicúmque manducáverit panem hunc, vel bíberit cálicem Dómini indígne: * reus erit Córporis et Sánguinis Dómini."
 	},
@@ -373,9 +401,16 @@
 		"versus":"Et vinum lætíficet cor hóminis."
 	},
 	{
+		"tags":["corpus-christi","nona","responsorium-breve","votiva-extra-tempore-paschali"],
+		"incipit":"Edúcas panem",
+		"responsum":"de terra.",
+		"versus":"Et vinum lætíficet cor hóminis."
+	},
+	{
 		"tags":["corpus-christi","ii-vesperae","antiphona","antiphona-magnificat"],
 		"src":"gregobase/13329",
-		"datum":"O sacrum convívium, * in quo Christus súmitur; recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur, allelúja."
+		"datum":"O sacrum convívium, * in quo Christus súmitur; recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur, allelúja.",
+		"votiva-extra-tempore-paschali":"O sacrum convívium, * in quo Christus súmitur; recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur."
 	},
 	{
 		"tags":["corpus-christi","infra-octavam","matutinum","nocturna-i","lectio"],

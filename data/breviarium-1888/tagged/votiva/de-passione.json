@@ -1,0 +1,210 @@
+[
+	{
+		"tags":["de-passione","nomen"],
+		"datum":"Officium Votivum de Passione D.N.J.C."
+	},
+	{
+		"tags":["de-passione","vesperae","antiphona","antiphona-i"],
+		"datum":"Cálicem salutáris * accípiam, et nomen Dómini invocábo.",
+		"in-tempore-paschali":"Cálicem salutáris * accípiam, et nomen Dómini invocábo, allelúja."
+	},
+	{
+		"tags":["de-passione","vesperae","psalmus-i"],
+		"datum":[["/psalmi/psalmus-cxv,gloria"]]
+	},
+	{
+		"tags":["de-passione","vesperae","antiphona","antiphona-ii"],
+		"datum":"Cum his * qui odérunt pacem, eram pacíficus: dum loquébar illis, impugnábant me gratis.",
+		"in-tempore-paschali":"Cum his * qui odérunt pacem, eram pacíficus: dum loquébar illis, impugnábant me gratis, allelúja."
+	},
+	{
+		"tags":["de-passione","vesperae","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-cxix,gloria"]]
+	},
+	{
+		"tags":["de-passione","vesperae","antiphona","antiphona-iii"],
+		"datum":"Ab homínibus * iníquis líbera me Dómine.",
+		"in-tempore-paschali":"Ab homínibus * iníquis líbera me Dómine, allelúja."
+	},
+	{
+		"tags":["de-passione","vesperae","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-cxxxix,gloria"]]
+	},
+	{
+		"tags":["de-passione","vesperae","antiphona","antiphona-iv"],
+		"datum":"Custódi me * a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem.",
+		"in-tempore-paschali":"Custódi me * a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem, allelúja."
+	},
+	{
+		"tags":["de-passione","vesperae","psalmus-iv"],
+		"datum":[["/psalmi/psalmus-cxl,gloria"]]
+	},
+	{
+		"tags":["de-passione","vesperae","antiphona","antiphona-v"],
+		"datum":"Considerábam * ad déxteram, et vidébam, et non erat qui cognósceret me.",
+		"in-tempore-paschali":"Considerábam * ad déxteram, et vidébam, et non erat qui cognósceret me, allelúja."
+	},
+	{
+		"tags":["de-passione","vesperae","psalmus-v"],
+		"datum":[["/psalmi/psalmus-cxli,gloria"]]
+	},
+	{
+		"tags":["de-passione","capitulum"],
+		"datum":[["inventio-crucis","capitulum"]]
+	},
+	{
+		"tags":["de-passione","i-vesperae","hymnus"],
+		"datum":[
+			"Mœréntes óculi, spárgite lácrimas,/Et luctu résonent íntima córdium:/Illátas réfero Númini ab ímpiis/Pœnas, et fera vúlnera.",
+			"Accíncta, heu! gládiis turba satéllitum/Arréptum Dóminum fústibus ímpetit,/Nunc cædit cólaphis, nunc quatit hórridis/Divínum caput íctibus.",
+			"Haud finis scéleri: tráditur ímprobo/Christus carnífici; nec mora, bárbarus/In regem súperum non timet ímpio/Ausu vértere déxteram.",
+			"Audíte, o pópuli, Numen amábile,/Manánte ex húmeris úndique sánguine,/Lictóris rábidi sústinet ímpetum,/Et vocem premit ínnocens.",
+			"Quis non illácrimet? Jam nova cóndidit/Torménta indómitæ gentis iníquitas:/Infígit cérebro, proh dolor! éfferis/Sertum vépribus ásperum.",
+			"Heu crimen! tráhitur fúnibus ímprobis/Funésti Dóminus supplícii ad locum;/Illic oppétiit fúnere, spíritum/Patri restítuens suo.",
+			"Passo pro míseris tam fera vúlnera/In terris résonet débita glória;/Sacrúmque assídue nomen in ǽthera/Humánum genus éfferat.","Amen."
+		]
+	},
+	{
+		"tags":[
+			["de-passione","i-vesperae","versiculus"],
+			["de-passione","matutinum","nocturna-i","versiculus"]
+		],
+		"datum":["V. Oblátus est quia ipse vóluit.","R. Et livóre ejus sanáti sumus."],
+		"in-tempore-paschali":["V. Oblátus est quia ipse vóluit, allelúja.","R. Et livóre ejus sanáti sumus, allelúja."]
+	},
+	{
+		"tags":["de-passione","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["triduum","sabbatum-sanctum","laudes","antiphona","antiphona-v"]]
+	},
+	{
+		"tags":["de-passione","collecta"],
+		"datum":"Dómine Jesu Christe, qui de cœlis ad terram de sinu Patris descendísti, et sánguinem tuum pretiósum in remissiónem peccatórum nostrórum fudísti: te humíliter deprecámur; ut in die judícii, ad déxteram tuam audíre mereámur: Veníte benedícti:",
+		"terminatio":[["terminatio","qui-vivis"]]
+	},
+	{
+		"tags":["de-passione","completorium","hymnus"],
+		"datum":[
+			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
+			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
+			"Sit laus Patri, ac Paráclito,/Natóque Patris único/Nostræ dedit qui pródigus/Prétium salútis sánguinem.","Amen."
+		]
+	},
+	{
+		"tags":["de-passione","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["inventio-crucis","antiphona"]]
+	},
+	{
+		"tags":["de-passione","matutinum","hymnus"],
+		"datum":[
+			"Áspice, infámi Deus ipse ligno/Pendet, effúso mádidus cruóre:/Áspice, immíti manus alma clavo/Fínditur alte.",
+			"Hunc, velut pravi scéleris minístrum,/Inter indígnos médium latrónes/Cerne: crudélis fuit ista gentis/Dira volúntas.",
+			"Pallet heu! vultus; caput ecce lassum/Fléctitur: clausis óculis Redémptor/Spíritum sacro méritis onústum/Fundit ab ore.",
+			"O cor, æs durum súperas, geméndo/Ni scelus tergas; tua culpa Christum/Stípiti affíxit, tua culpa morti/Súbdidit atræ.",
+			"Sit Deo ætérnum decus omne in ævum,/Qui pius nostri géneris Redémptor,/Críminis labem míseris nocéntem/Sánguine tersit.","Amen."
+		]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":[["triduum","parasceve","matutinum","nocturna-i","antiphona","antiphona-i"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","psalmus-i"],
+		"datum":[["/psalmi/psalmus-ii,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","antiphona","antiphona-ii"],
+		"datum":[["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-i"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-iii,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":"Divisérunt * sibi vestiménta mea, et super vestem meam misérunt sortem."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-xxi,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":[["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-i"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-xl,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":"Aliéni insurrexérunt * in me, et fortes quæsiérunt ánimam meam."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-liii,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":"Conculcavérunt me * inimíci mei tota die; advérsum me omnes cogitatiónes eórum in malum."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lv,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","versiculus"],
+		"datum":["V. Próprio Fílio suo non pepércit Deus.","R. Sed pro nobis ómnibus trádidit illum."],
+		"in-tempore-paschali":["V. Próprio Fílio suo non pepércit Deus, allelúja.","R. Sed pro nobis ómnibus trádidit illum, allelúja."]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","antiphona","antiphona-i"],
+		"datum":[["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-iii"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","psalmus-i"],
+		"datum":[["/psalmi/psalmus-lvi,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":[["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-i"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","psalmus-ii"],
+		"datum":[["/psalmi/psalmus-lxiii,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":[["triduum","sabbatum-sanctum","antiphona"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","psalmus-iii"],
+		"datum":[["/psalmi/psalmus-lxxxvii,gloria"]]
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","versiculus"],
+		"datum":["V. Factus est obédiens usque ad mortem.","R. Mortem autem crucis."],
+		"in-tempore-paschali":["V. Factus est obédiens usque ad mortem, allelúja.","R. Mortem autem crucis, allelúja."]
+	},
+	{
+		"tags":["de-passione","laudes","hymnus"],
+		"datum":[
+			"Sævo dolórum túrbine/Jactátur, atris óbrutus/Pœnis, acérba sústinens/Redémptor affíxus cruci.",
+			"Pedes manúsque horríbili/Clavi cruéntant vúlnere:/Cor, vultus, artus, péctora/Sacro redúndant sánguine.",
+			"Flet, orat, et clamans obit:/Cor Matris ictum cóncidit:/Heu Mater! heu Fili! dolor/Ingráta frangat péctora.",
+			"Montes, sepúlchra, sáxaque/Scindúntur: arva, flúmina,/Rupes, et æquor cóntremunt,/Templíque velum scínditur.",
+			"Sol, luna, cœlum, sídera/Plangunt, et orbis íngemit:/O vos viri, vos párvuli,/Nuptæ, puéllæ, plángite.",
+			"Astáte mœréntes cruci,/Pedes beátos úngite,/Laváte fletu, térgite/Comis, et ore lámbite.",
+			"Tu caritátis víctima,/Ut nostra tollas crímina,/Nobis salúbri pérficis/Adoptiónem sánguine.",
+			"Nostra ergo pax et gaúdium/Sis vita, Jesu, et prǽmium;/Sis ductor et lux in via,/Merces, coróna in pátria.","Amen."
+		]
+	},
+	{
+		"tags":["de-passione","laudes","versiculus"],
+		"datum":["V. Ipse vulnerátus est propter iniquitátes nostras.","R. Et attrítus est propter scélera nostra."],
+		"in-tempore-paschali":["V. Ipse vulnerátus est propter iniquitátes nostras, allelúja.","R. Et attrítus est propter scélera nostra, allelúja."]
+	},
+	{
+		"tags":["de-passione","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["cor-jesus","ii-vesperae","antiphona"]]
+	}
+]

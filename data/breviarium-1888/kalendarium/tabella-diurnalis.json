@@ -40,7 +40,7 @@
 		"include":["tempus"],
 		"recheck":false,
 		"response":"crea",
-		"adde":["suffragium","commemoratio","apostoli"]
+		"adde":["suffragium","commemoratio","de-sanctis-apostolis"]
 	},
 	{
 		"include":["tempus"],
@@ -404,5 +404,15 @@
 	{
 		"include":["corpus-christi","dominica-infra-octavam","commemoratio"],
 		"adde":"temporale"
+	},
+	{
+		"include":["votiva"],
+		"response":[
+			{"include":["duplex-i-classis","primarium"],"response":"dele","target":0},
+			{"include":["duplex-ii-classis","primarium"],"response":"dele","target":0},
+			{"include":["duplex-majus","primarium"],"response":"dele","target":0},
+			{"include":["duplex-minus","primarium"],"response":"dele","target":0},
+			{"include":["semiduplex","primarium"],"response":"dele","target":0}
+		]
 	}
 ]

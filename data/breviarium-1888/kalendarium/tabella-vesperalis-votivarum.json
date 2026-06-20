@@ -1,0 +1,14 @@
+[
+	{
+		"include":["votiva","i-vesperae"],
+		"adde":["primarium","semiduplex"]
+	},
+	{
+		"include":["votiva","primarium"],
+		"response":[
+			{"include":["simplex","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["feria-major","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["feria","primarium"],"remove":"primarium","adde":"omissum","target":1}
+		]
+	}
+]

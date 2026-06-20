@@ -136,13 +136,15 @@ def rite():
 		abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
 
 	try:
-		# Generate the actual liturgical text. Didn't use breviarium.generate because of votive office handling
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
 		assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
 		vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
-		tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if vesperal else kalendar.daily_tagger.get_diurnal(context, day))
+		if 'select' in parameters and parameters['select'] == 'votiva':
+			tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votive = True) if vesperal else kalendar.daily_tagger.get_diurnal(context, day, votive = True))
+		else:
+			tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if vesperal else kalendar.daily_tagger.get_diurnal(context, day))
 
 		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
 		if 'select' in parameters:

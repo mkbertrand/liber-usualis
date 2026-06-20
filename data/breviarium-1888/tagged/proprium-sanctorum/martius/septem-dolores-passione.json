@@ -166,7 +166,8 @@
 	{
 		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"src":"nocturnale/Q5F6N1A1",
-		"datum":"Inimíci mei * dixérunt mala mihi: Quando moriétur, et períbit nomen ejus?"
+		"datum":"Inimíci mei * dixérunt mala mihi: Quando moriétur, et períbit nomen ejus?",
+		"in-tempore-paschali":"Inimíci mei * dixérunt mala mihi: Quando moriétur, et períbit nomen ejus? Allelúja."
 	},
 	{
 		"tags":["septem-dolores-passione","matutinum","nocturna-ii","psalmus-i"],
@@ -184,7 +185,8 @@
 	{
 		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-iii"],
 		"src":"nocturnale/Q5F6N2A3",
-		"datum":"Fílii hóminum, * dentes eórum arma et sagíttæ: et lingua eórum gládius acútus."
+		"datum":"Fílii hóminum, * dentes eórum arma et sagíttæ: et lingua eórum gládius acútus.",
+		"in-tempore-paschali":"Fílii hóminum, * dentes eórum arma et sagíttæ: et lingua eórum gládius acútus, allelúja."
 	},
 	{
 		"tags":["septem-dolores-passione","matutinum","nocturna-ii","psalmus-iii"],
@@ -230,8 +232,7 @@
 	},
 	{
 		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0915N3A1",
-		"datum":"Intendérunt arcum, * rem amáram, ut sagíttent in occúltis immaculátum."
+		"datum":[["septem-dolores-septembris","antiphona"]]
 	},
 	{
 		"tags":["septem-dolores-passione","matutinum","nocturna-iii","psalmus-i"],

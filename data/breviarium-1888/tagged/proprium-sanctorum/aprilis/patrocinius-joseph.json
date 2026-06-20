@@ -20,17 +20,20 @@
 	{
 		"tags":["patrocinius-joseph","antiphona","antiphona-iii"],
 		"src":"gregobase/12446",
-		"datum":"Ascéndit autem * Joseph a Galilǽa de civitáte Názareth, in Judǽam in civitátem David, quæ vocátur Béthlehem, allelúja."
+		"in-tempore-paschali":"Ascéndit autem * Joseph a Galilǽa de civitáte Názareth, in Judǽam in civitátem David, quæ vocátur Béthlehem, allelúja.",
+		"datum":"Ascéndit autem * Joseph a Galilǽa de civitáte Názareth, in Judǽam in civitátem David, quæ vocátur Béthlehem."
 	},
 	{
 		"tags":["patrocinius-joseph","antiphona","antiphona-iv"],
 		"src":"gregobase/12205",
-		"datum":"Et venérunt festinántes, * et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio, allelúja."
+		"in-tempore-paschali":"Et venérunt festinántes, * et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio, allelúja.",
+		"datum":"Et venérunt festinántes, * et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio."
 	},
 	{
 		"tags":["patrocinius-joseph","antiphona","antiphona-v"],
 		"src":"gregobase/2005",
-		"datum":"Et ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph, allelúja."
+		"in-tempore-paschali":"Et ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph, allelúja.",
+		"datum":"Et ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph."
 	},
 	{
 		"tags":["patrocinius-joseph","capitulum"],
@@ -52,7 +55,8 @@
 	},
 	{
 		"tags":["patrocinius-joseph","i-vesperae","versiculus"],
-		"datum":["V. Constítuit eum dóminum domus suæ, allelúja.","R. Et príncipem omnis possessiónis suæ, allelúja."]
+		"in-tempore-paschali":["V. Constítuit eum dóminum domus suæ, allelúja.","R. Et príncipem omnis possessiónis suæ, allelúja."],
+		"datum":["V. Constítuit eum dóminum domus suæ.","R. Et príncipem omnis possessiónis suæ."]
 	},
 	{
 		"tags":["patrocinius-joseph","i-vesperae","antiphona","antiphona-magnificat"],
@@ -67,7 +71,8 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/P2F4I",
-		"datum":"Laudémus Deum nostrum * In veneratióne beáti Joseph, protectóris nostri, allelúja."
+		"in-tempore-paschali":"Laudémus Deum nostrum * In veneratióne beáti Joseph, protectóris nostri, allelúja.",
+		"datum":"Laudémus Deum nostrum * In veneratióne beáti Joseph, protectóris nostri."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","antiphona"],
@@ -79,8 +84,12 @@
 		"datum":[["joseph-sponsus","matutinum","psalmus"]]
 	},
 	{
-		"tags":["patrocinius-joseph","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Confitébor nómini tuo, allelúja.","R. Quóniam adjútor et protéctor factus es mihi, allelúja."]
+		"tags":[
+			["patrocinius-joseph","matutinum","nocturna-i","versiculus"],
+			["patrocinius-joseph","tertia","versiculus"]
+		],
+		"in-tempore-paschali":["V. Confitébor nómini tuo, allelúja.","R. Quóniam adjútor et protéctor factus es mihi, allelúja."],
+		"datum":["V. Confitébor nómini tuo.","R. Quóniam adjútor et protéctor factus es mihi."]
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","lectio","lectio-i"],
@@ -92,8 +101,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"incipit":"Clamávit pópulus ad regem, aliménta petens:",
-		"responsum":"Quibus ille respóndit: Ite ad Joseph, allelúja.",
+		"responsum":"Quibus ille respóndit: Ite ad Joseph.",
 		"versus":"Salus nostra in manu tua est: réspice nos tantum, et læti serviémus regi."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Quibus ille respóndit: Ite ad Joseph, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","lectio","lectio-ii"],
@@ -102,8 +115,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"incipit":"Fecit me Deus quasi patrem regis, et dóminum univérsæ domus ejus:",
-		"responsum":"Exaltávit me, ut salvos fáceret multos pópulos, allelúja.",
+		"responsum":"Exaltávit me, ut salvos fáceret multos pópulos.",
 		"versus":"Veníte ad me, et ego dabo vobis ómnia bona Ægýpti, ut comedátis medúllam terræ."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Exaltávit me, ut salvos fáceret multos pópulos, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -112,8 +129,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-iii"],
 		"incipit":"Jam lætus móriar, quia vidi fáciem tuam, et supérstitem te relínquo. Non sum fraudátus aspéctu tuo:",
-		"responsum":"Ínsuper osténdit mihi Dóminus semen tuum, allelúja.",
+		"responsum":"Ínsuper osténdit mihi Dóminus semen tuum.",
 		"versus":"Qui pascit me ab adolescéntia mea, benedícat púeris istis, et invocétur super eos nomen meum."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Ínsuper osténdit mihi Dóminus semen tuum, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","antiphona"],
@@ -122,7 +143,8 @@
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","versiculus"],
-		"datum":["V. Réspice de cœlo, et vide, et vísita víneam istam, allelúja.","R. Et pérfice eam, allelúja."]
+		"in-tempore-paschali":["V. Réspice de cœlo, et vide, et vísita víneam istam, allelúja.","R. Et pérfice eam, allelúja."],
+		"datum":["V. Réspice de cœlo, et vide, et vísita víneam istam.","R. Et pérfice eam."]
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -134,8 +156,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"incipit":"Dedísti mihi protectiónem salútis tuæ, et déxtera tua suscépit me:",
-		"responsum":"Protéctor meus, et cornu salútis meæ, et suscéptor meus, allelúja.",
+		"responsum":"Protéctor meus, et cornu salútis meæ, et suscéptor meus.",
 		"versus":"Ego protéctor tuus sum, et merces tua magna nimis."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Protéctor meus, et cornu salútis meæ, et suscéptor meus, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","lectio","lectio-ii"],
@@ -144,8 +170,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"incipit":"Státuet fílios suos sub tégmine illíus, et sub ramis ejus morábitur: protegétur sub tégmine illíus a fervóre:",
-		"responsum":"Et in glória ejus requiéscet, allelúja.",
+		"responsum":"Et in glória ejus requiéscet.",
 		"versus":"Speráte in eo, omnis congregátio pópuli: effúndite coram illo corda vestra."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et in glória ejus requiéscet, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -154,8 +184,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"incipit":"Si consístant advérsum me castra, non timébit cor meum:",
-		"responsum":"Si exsúrgat advérsum me prǽlium, in hoc ego sperábo, allelúja.",
+		"responsum":"Si exsúrgat advérsum me prǽlium, in hoc ego sperábo.",
 		"versus":"In te cantátio mea semper, quóniam tu adjútor fortis."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Si exsúrgat advérsum me prǽlium, in hoc ego sperábo, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-iii","antiphona"],
@@ -164,7 +198,8 @@
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-iii","versiculus"],
-		"datum":["V. Invocávi Dóminum, Patrem Dómini mei, allelúja.","R. Ut non derelínquat me in die tribulatiónis, allelúja."]
+		"in-tempore-paschali":["V. Invocávi Dóminum, Patrem Dómini mei, allelúja.","R. Ut non derelínquat me in die tribulatiónis, allelúja."],
+		"datum":["V. Invocávi Dóminum, Patrem Dómini mei.","R. Ut non derelínquat me in die tribulatiónis."]
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -178,8 +213,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-iii","responsorium","responsorium-i"],
 		"incipit":"Joseph fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu sancto est: páriet autem fílium,",
-		"responsum":"Et vocábis nomen ejus Jesum, allelúja.",
+		"responsum":"Et vocábis nomen ejus Jesum.",
 		"versus":"Ipse enim salvum fáciet pópulum suum a peccátis eórum."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et vocábis nomen ejus Jesum, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-iii","lectio"],
@@ -189,8 +228,12 @@
 	{
 		"tags":["patrocinius-joseph","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"incipit":"Surge, et áccipe púerum et matrem ejus, et fuge in Ægýptum:",
-		"responsum":"Et esto ibi usque dum dicam tibi, allelúja.",
+		"responsum":"Et esto ibi usque dum dicam tibi.",
 		"versus":"Ut adimplerétur quod dictum est a Dómino per Prophétam dicéntem: Ex Ægýpto vocávi fílium meum."
+	},
+	{
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et esto ibi usque dum dicam tibi, allelúja."
 	},
 	{
 		"tags":["patrocinius-joseph","laudes","hymnus"],
@@ -205,54 +248,73 @@
 	},
 	{
 		"tags":["patrocinius-joseph","laudes","versiculus"],
-		"datum":["V. Dedísti mihi protectiónem salútis tuæ, allelúja.","R. Et déxtera tua suscépit me, allelúja."]
+		"in-tempore-paschali":["V. Dedísti mihi protectiónem salútis tuæ, allelúja.","R. Et déxtera tua suscépit me, allelúja."],
+		"datum":["V. Dedísti mihi protectiónem salútis tuæ.","R. Et déxtera tua suscépit me."]
 	},
 	{
 		"tags":["patrocinius-joseph","laudes","antiphona","antiphona-benedictus"],
 		"src":"gregobase/12819",
-		"datum":"Joseph fili David, * noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est, allelúja."
+		"in-tempore-paschali":"Joseph fili David, * noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est, allelúja.",
+		"datum":"Joseph fili David, * noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est."
 	},
 	{
-		"tags":["patrocinius-joseph","tertia","responsorium-breve"],
+		"tags":["patrocinius-joseph","tertia","responsorium-breve","in-tempore-paschali"],
 		"incipit":"Constítuit eum dóminum domus suæ.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et príncipem omnis possessiónis suæ."
 	},
 	{
-		"tags":["patrocinius-joseph","tertia","versiculus"],
-		"datum":["V. Confitébor nómini tuo, allelúja.","R. Quóniam adjútor et protéctor factus es mihi, allelúja."]
+		"tags":["patrocinius-joseph","tertia","responsorium-breve"],
+		"incipit":"Constítuit eum",
+		"responsum":"dóminum domus suæ.",
+		"versus":"Et príncipem omnis possessiónis suæ."
 	},
 	{
 		"tags":["patrocinius-joseph","sexta","capitulum"],
 		"datum":"[Gen. 49. c.]/Deus patris tui erit adjútor tuus, + et Omnípotens benedícet tibi * benedictiónibus cœli désuper."
 	},
 	{
-		"tags":["patrocinius-joseph","sexta","responsorium-breve"],
+		"tags":["patrocinius-joseph","sexta","responsorium-breve","in-tempore-paschali"],
 		"incipit":"Confitébor nómini tuo.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Quóniam adjútor et protéctor factus es mihi."
 	},
 	{
+		"tags":["patrocinius-joseph","sexta","responsorium-breve"],
+		"incipit":"Confitébor",
+		"responsum":"nómini tuo.",
+		"versus":"Quóniam adjútor et protéctor factus es mihi."
+	},
+	{
 		"tags":["patrocinius-joseph","sexta","versiculus"],
-		"datum":["V. Justus germinábit sicut lílium, allelúja.","R. Et florébit in ætérnum ante Dóminum, allelúja."]
+		"in-tempore-paschali":["V. Justus germinábit sicut lílium, allelúja.","R. Et florébit in ætérnum ante Dóminum, allelúja."],
+		"datum":["V. Justus germinábit sicut lílium.","R. Et florébit in ætérnum ante Dóminum."]
 	},
 	{
 		"tags":["patrocinius-joseph","nona","capitulum"],
 		"datum":"[Gen. 49. c.]/Fílius accréscens Joseph, + fílius accréscens, et decórus aspéctu: * fíliæ discurrérunt super murum."
 	},
 	{
-		"tags":["patrocinius-joseph","nona","responsorium-breve"],
+		"tags":["patrocinius-joseph","nona","responsorium-breve","in-tempore-paschali"],
 		"incipit":"Justus germinábit sicut lílium.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et florébit in ætérnum ante Dóminum."
 	},
 	{
+		"tags":["patrocinius-joseph","nona","responsorium-breve"],
+		"incipit":"Justus germinábit",
+		"responsum":"sicut lílium.",
+		"versus":"Et florébit in ætérnum ante Dóminum."
+	},
+	{
 		"tags":["patrocinius-joseph","nona","versiculus"],
-		"datum":["V. Plantátus in domo Dómini, allelúja.","R. In átriis domus Dei nostri, allelúja."]
+		"in-tempore-paschali":["V. Plantátus in domo Dómini, allelúja.","R. In átriis domus Dei nostri, allelúja."],
+		"datum":["V. Plantátus in domo Dómini.","R. In átriis domus Dei nostri."]
 	},
 	{
 		"tags":["patrocinius-joseph","ii-vesperae","versiculus"],
-		"datum":["V. Sub umbra illíus, quem desideráveram, sedi, allelúja.","R. Et fructus ejus dulcis gútturi meo, allelúja."]
+		"in-tempore-paschali":["V. Sub umbra illíus, quem desideráveram, sedi, allelúja.","R. Et fructus ejus dulcis gútturi meo, allelúja."],
+		"datum":["V. Sub umbra illíus, quem desideráveram, sedi.","R. Et fructus ejus dulcis gútturi meo."]
 	},
 	{
 		"tags":["patrocinius-joseph","ii-vesperae","antiphona","antiphona-magnificat"],

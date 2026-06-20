@@ -113,12 +113,14 @@ def apply_secondary_tabella(day, tabella):
 
 	return day
 
-def get_vespers(context, day):
+def get_vespers(context, day, votive = False):
 
 	assert type(day) is not datetime
 
 	implicationtable = load_data_prioritizer('sequentes.json', context.books[0].src)
 	vesperalrules = load_data_prioritizer('tabella-vesperalis.json', context.books[0].src)
+	if votive:
+		vesperalrules += load_data_prioritizer('tabella-vesperalis-votivarum.json', context.books[0].src)
 
 	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(context, day + timedelta(days=1))]
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(context, day)]
@@ -133,13 +135,16 @@ def get_vespers(context, day):
 
 	return [frozenset(i) for i in tags]
 
-def get_diurnal(context, day):
+def get_diurnal(context, day, votive = False):
 
 	assert type(day) is not datetime
 
 	implicationtable = load_data_prioritizer('sequentes.json', context.books[0].src)
 	diurnalrules = load_data_prioritizer('tabella-diurnalis.json', context.books[0].src)
 	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', context.books[0].src)
+
+	if votive:
+		diurnalrules += load_data_prioritizer('tabella-diurnalis-votivarum.json', context.books[0].src)
 
 	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(context, day), diurnalrules)
 	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(context, day + timedelta(days=1)), martyrologyrules)

@@ -20,7 +20,8 @@
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-iii"],
 		"src":"gregobase/2727",
-		"datum":"Ángeli eórum * semper vident fáciem Patris mei, qui est in cœlis."
+		"datum":"Ángeli eórum * semper vident fáciem Patris mei, qui est in cœlis.",
+		"in-tempore-paschali":"Ángeli eórum * semper vident fáciem Patris mei, qui est in cœlis, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-iv"],
@@ -30,7 +31,8 @@
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-v"],
 		"src":"gregobase/1998",
-		"datum":"Laudáte Deum * omnes Ángeli ejus, laudáte eum omnes virtútes ejus."
+		"datum":"Laudáte Deum * omnes Ángeli ejus, laudáte eum omnes virtútes ejus.",
+		"in-tempore-paschali":"Laudáte Deum * omnes Ángeli ejus, laudáte eum omnes virtútes ejus, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","capitulum"],
@@ -68,7 +70,8 @@
 	{
 		"tags":["angeli-custodes","matutinum","antiphona","antiphona-invitatorium"],
 		"src":"nocturnale/1002I",
-		"datum":"Regem Angelórum Dóminum, * Veníte adorémus."
+		"datum":"Regem Angelórum Dóminum, * Veníte adorémus.",
+		"in-tempore-paschali":"Regem Angelórum Dóminum, * Veníte adorémus, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-i"],
@@ -114,6 +117,10 @@
 		"incipit":"Respóndit Ángelus Dómini, et dixit: Dómine exercítuum,",
 		"responsum":"Úsquequo tu non miseréberis Jerúsalem et úrbium Juda, quibus irátus est?",
 		"versus":"Iste enim septuagésimus annus est."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Úsquequo tu non miseréberis Jerúsalem et úrbium Juda, quibus irátus est? Allelúja."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -164,6 +171,10 @@
 		"versus":"Benedíctus Deus eórum, qui misit Ángelum suum, et éruit servos suos qui credidérunt in eum."
 	},
 	{
+		"tags":["angeli-custodes","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et non tétigit eos omníno ignis, neque contristávit, allelúja."
+	},
+	{
 		"tags":["angeli-custodes","matutinum","nocturna-ii","lectio","lectio-iii"],
 		"datum":"In ipso ítaque, fratres, affectuóse diligámus Ángelos ejus, tamquam futúros aliquándo cohærédes nostros, ínterim vero actóres et tutóres a Patre pósitos, et præpósitos nobis. Quid sub tantis custódibus timeámus? Nec superári, nec sedúci, minus autem sedúcere possunt, qui custódiunt nos in ómnibus viis nostris. Fidéles sunt, prudéntes sunt, poténtes sunt: quid trepidámus? Tantum sequámur eos, adhæreámus eis, et in protectióne Dei cœli commorémur. Quóties ergo gravíssima cérnitur urgére tentátio, et tribulátio véhemens imminére, ínvoca custódem tuum, ductórem tuum, adjutórem tuum in opportunitátibus, in tribulatióne: incláma eum, et dic: Dómine salva nos, perímus."
 	},
@@ -176,7 +187,8 @@
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-i"],
 		"src":"nocturnale/1002N3A1",
-		"datum":"Misit Dóminus * Ángelum suum, qui percússit omnem virum robústum, et bellatórem, et príncipem exércitus regis Assyriórum."
+		"datum":"Misit Dóminus * Ángelum suum, qui percússit omnem virum robústum, et bellatórem, et príncipem exércitus regis Assyriórum.",
+		"in-tempore-paschali":"Misit Dóminus * Ángelum suum, qui percússit omnem virum robústum, et bellatórem, et príncipem exércitus regis Assyriórum, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-ii"],
@@ -216,6 +228,10 @@
 		"incipit":"Tu Dómine, qui misísti Ángelum tuum sub Ezechía rege Juda, et interfecísti de castris Sennácherib centum octogínta quinque  míllia:",
 		"responsum":"Et nunc Dominátor cœlórum mitte Ángelum tuum bonum ante nos, in timóre et tremóre magnitúdinis bráchii tui.",
 		"versus":"Ut métuant qui cum blasphémia véniunt advérsus sanctum pópulum tuum."
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et nunc Dominátor cœlórum mitte Ángelum tuum bonum ante nos, in timóre et tremóre magnitúdinis bráchii tui, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-iii","lectio","lectio-iii"],
