@@ -298,7 +298,7 @@ function renderRite(data, options) {
 					} else if (uniquelyhas('confiteor') && parentTags.includes('completorium')) {
 						makeCenteredHeader('Confessio.');
 					} else if (!data.quaesitum.includes('repetita') && !parentTags.includes('commemorationes')) {
-						if (uniquelyhas('antiphona-magnificat') && !parentTags.includes('antiphona-nunc-dimittis')) {
+						if (uniquelyhas('antiphona-magnificat') && !parentTags.includes('antiphona-nunc-dimittis') && !parentTags.includes('antiphona-benedictus')) {
 							makeCenteredHeader('Canticum B. Mariæ Virg.');
 						} else if ((uniquelyhas('antiphona-nunc-dimittis') && !data.quaesitum.includes('triduum')) || (uniquelyhas('nunc-dimittis') && (data.quaesitum.includes('triduum') || data.quaesitum.includes('pascha') && !data.quaesitum.includes('i-vesperae')))) {
 							makeCenteredHeader('Canticum Simeonis.');

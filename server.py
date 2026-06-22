@@ -141,7 +141,7 @@ def rite():
 		assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
 		vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
 
-		if 'select' in parameters and parameters['select'] == 'votiva':
+		if True or 'select' in parameters and parameters['select'] == 'votiva':
 			tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votive = True) if vesperal else kalendar.daily_tagger.get_diurnal(context, day, votive = True))
 		else:
 			tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if vesperal else kalendar.daily_tagger.get_diurnal(context, day))
