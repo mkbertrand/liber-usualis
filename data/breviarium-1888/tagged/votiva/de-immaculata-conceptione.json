@@ -12,6 +12,13 @@
 		"in-tempore-paschali":["V. Immaculáta Concéptio tua Dei Génitrix Virgo, allelúja.","R. Gaúdium annuntiávit univérso mundo, allelúja."]
 	},
 	{
+		"tags":["de-immaculata-conceptione","matutinum","nocturna-i","lectio"],
+		"de-quatuor-temporibus":[["immaculata-conceptio-bmv","lectio"]],
+		"in-tempore-quadragesimae":[["immaculata-conceptio-bmv","lectio"]],
+		"de-rogationibus":[["immaculata-conceptio-bmv","lectio"]],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
 		"tags":["de-immaculata-conceptione","matutinum","lectio"],
 		"nocturna-ii":[["immaculata-conceptio-bmv","dies-iii","infra-octavam","lectio"]],
 		"nocturna-iii":[["immaculata-conceptio-bmv","dies-iii","infra-octavam","lectio"]]

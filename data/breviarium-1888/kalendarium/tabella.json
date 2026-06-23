@@ -953,6 +953,19 @@
 				{"include":["tempus","feria-vi"],"target":0,"response":"feria-vi"},
 				{"include":["tempus","sabbatum"],"target":0,"response":"sabbatum"}
 			]
+		},
+		{
+			"include":["votiva"],
+			"response":[
+				{"include":["duplex-i-classis","primarium"],"response":"dele","target":0},
+				{"include":["duplex-ii-classis","primarium"],"response":"dele","target":0},
+				{"include":["duplex-majus","primarium"],"response":"dele","target":0},
+				{"include":["duplex-minus","primarium"],"response":"dele","target":0},
+				{"include":["semiduplex","primarium"],"response":"dele","target":0},
+				{"include":["antiphona-major","primarium"],"response":"dele","target":0},
+				{"include":["feria-iv","cinerum","primarium"],"response":"dele","target":0},
+				{"include":["in-tempore-passionis","primarium"],"response":"dele","target":0}
+			]
 		}
 	]
 ]

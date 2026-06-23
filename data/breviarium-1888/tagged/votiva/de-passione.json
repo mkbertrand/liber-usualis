@@ -128,6 +128,23 @@
 		"datum":[["/psalmi/psalmus-xxi,gloria"]]
 	},
 	{
+		"tags":[
+			["de-passione","matutinum","de-quatuor-temporibus","nocturna-i","lectio"],
+			["de-passione","matutinum","in-tempore-quadragesimae","nocturna-i","lectio"],
+			["de-passione","matutinum","in-rogationibus","nocturna-i","lectio"]
+		],
+		"lectio-i":[
+			"De Epístola beáti Pauli Apóstoli ad Romános.",
+			"[Rom. 5.]/Comméndat caritátem suam Deus in nobis: quóniam cum adhuc peccatóres essémus, secúndum tempus, Christus pro nobis mórtuus est: multo ígitur magis nunc justificáti in sánguine ipsíus, salvi érimus ab ira per ipsum. Si enim cum inimíci essémus, reconciliáti sumus Deo per mortem Fílii ejus: multo magis reconciliáti, salvi érimus in vita ipsíus. Non solum autem: sed et gloriámur in Deo per Dóminum nostrum Jesum Christum, per quem nunc reconciliatiónem accépimus. Si enim uníus delícto mors regnávit per unum: multo magis abundántiam grátiæ, et donatiónis, et justítiæ accipiéntes, in via regnábunt per unum Jesum Christum."
+		],
+		"lectio-ii":"Ígitur, sicut per uníus delíctum in omnes hómines in condemnatiónem: sic et per uníus justítiam in omnes hómines in justificatiónem vitæ. Sicut enim per inobediéntiam uníus hóminis, peccatóres constitúti sunt multi: ita et per uníus obeditiónem, justi constituéntur multi. Lex autem subintrávit ut abundáret delíctum. Ubi autem abundávit delíctum, superabundávit grátia. Ut sicut regnávit peccátum in mortem: ita et grátia regnet per justítiam in vitam ætérnam, per Jesum Christum Dóminum nostrum.",
+		"lectio-iii":"[Rom. 6.]/Quid ergo dicémus? permanébimus in peccáto ut grátia abúndet? Absit. Qui enim mórtui sumus peccáto, quómodo adhuc vivémus in illo? An ignorátis quia quicúmque baptizáti sumus in Christo Jesu, in morte ipsíus baptizáti sumus? Consepúlti enim sumus cum illo per baptísmum in mortem: ut quómodo Christus surréxit a mórtuis per glóriam Patris, ita et nos in novitáte vitæ ambulémus. Si enim complantáti facti sumus similitúdini mortis ejus: simul et resurrectiónis érimus. Hoc sciéntes, quia vetus homo noster simul crucifíxus est, ut destruátur corpus peccáti, et ultra non serviámus peccáto. Qui enim mórtuus est, justificátus est a peccáto. Si autem mórtui sumus cum Christo: crédimus quia simul étiam vivémus cum Christo."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","lectio"],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
 		"tags":["de-passione","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"incipit":"Vínea mea elécta, ego te plantávi, dicit Dóminus: et tu facta es mihi nimis amára:",
 		"responsum":"Quia parásti crucem Salvatóri tuo.",
