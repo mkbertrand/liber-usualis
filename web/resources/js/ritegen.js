@@ -487,6 +487,7 @@ function renderRite(data, options) {
 					} else if (Array.isArray(lesson) && lesson[0].length < 100) {
 						openParagraph('lectionis-titulum');
 						renderInner(lesson[0], translated[0], [...data.tags, ...parentTags, 'lectionis-titulum']);
+						closeParagraph();
 						renderInner(lesson.slice(1).join(' &para; '), translated[1] ? translated.slice(1).join(' &para; ') : null, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
 					// Note that an untitled lesson may still be a first lesson. This is due to the fact that most Saints lives are begun without title.
 					} else {
