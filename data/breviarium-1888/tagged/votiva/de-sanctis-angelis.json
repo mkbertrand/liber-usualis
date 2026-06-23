@@ -125,6 +125,13 @@
 		"datum":[["/psalmi/psalmus-xxxiii,gloria"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"De Sermóne sancti Gregórii Papæ.",
+			"[Ex Homilia 34. in Evang.]/Quia Angelórum nómina interpretándo perstrínximus, súperest, ut ipsa officiórum vocábula bréviter exsequámur. Virtútes étenim vocántur illi nimírum spíritus, per quos signa et mirácula frequéntius fiunt. Potestátes étiam vocántur hi, qui hoc poténtius céteris in suo órdine percepérunt, ut eórum ditióni virtútes advérsæ subjéctæ sint, quorum potestáte refrænántur, nec corda hóminum tantum tentáre præváleant, quantum volunt."
+		]
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"incipit":"Omnes Ángeli stabant in circúitu throni, et seniórum, et quátuor animálium:",
 		"responsum":"Et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum.",
@@ -135,12 +142,20 @@
 		"responsum":"Et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum, allelúja."
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","lectio"],
+		"lectio-ii":"Principátus étiam vocántur, qui ipsis quoque bonis Angelórum spirítibus præsunt, qui subjéctis áliis dum quæque sunt agénda dispónunt, eis ad explénda divína ministéria principántur. Dominatiónes autem vocántur, qui étiam potestátes principátuum dissimilitúdine alta transcéndunt. Nam principári est inter réliquos priórem exsístere: dominári vero est étiam subjéctos quosque possidére. Throni quoque illa ágmina sunt vocáta, quibus ad exercénda judícia semper Deus omnípotens prǽsidet. Unde et per Psalmístam dícitur: Sedes super thronum, qui júdicas æquitátem."
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"datum":[["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"datum":[["apparitio-michaelis","matutinum","nocturna-i","responsorium","responsorium-iii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-ii","lectio"],
+		"lectio-iii":"Chérubim quoque plenitúdo sciéntiæ dícitur; et sublimióra illa ágmina idcírco Chérubim vocáta sunt, quia tanto perfectióri sciéntia plena sunt, quanto claritátem Dei vicínius contemplántur. Séraphim étiam vocántur illa spirítuum sanctórum ágmina, quæ ex singulári propinquitáte Conditóris sui incomparábili ardent amóre. Séraphim namque ardéntes vel incendéntes vocántur; quorum profécto flamma amor est: quia quo subtílius claritátem divinitátis ejus aspíciunt, eo valídius in ejus amóre flamméscunt."
 	},
 	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","antiphona","antiphona-i"],
@@ -167,12 +182,29 @@
 		"datum":[["/psalmi/psalmus-cii,gloria"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Joánnem.",
+			"[Joann. 1.]/In illo témpore: Vidit Jesus Nathánaël veniéntem ad se, et dicit de eo: Ecce vere Israëlíta, in quo dolus non est. Et réliqua.",
+			"Homilía sancti Bernárdi Abbatis.",
+			"[In Ps. [Qui hábitat.] Sermo 11.]/Quæ vero sunt sanctórum Angelórum viæ? Profécto illæ, quas Unigénitus enarrávit dicens: Vidébitis Ángelos ascendéntes et descendéntes super Fílium hóminis. Ascénsio ígitur et descénsio viæ illórum; ascénsio propter se, descénsio vel pótius condescénsio propter nos. Sic beáti illi spíritus ascéndunt per contemplatiónem Dei, descéndunt per compassiónem tui, ut custódiant te in ómnibus viis tuis. Ascéndunt ad vultum ejus, descéndunt ad nutum ejus: Quóniam Ángelis suis mandávit de te. Nec tamen vel descendéndo visióne glóriæ fraudántur, quia semper vident fáciem Patris."
+		]
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","responsorium","responsorium-i"],
 		"datum":[["angeli-custodes","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
 	},
 	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","lectio"],
+		"lectio-ii":"Cum ascéndunt ad contemplatiónem, inquírunt veritátem, de qua et desiderándo satiántur, et satiándo desíderant. Cum vero misericórdiam, ut custódiant nos in ómnibus viis nostris. Administratórii enim spíritus sunt, missi in ministérium propter nos. Plane minístri nostri, non dómini nostri. Et in hoc Unigéniti formam imitántur, qui non venit ministrári, sed ministráre, qui stetit inter discípulos tamquam qui minístrat. Fructus angelicárum viárum, quod ad ipsos spectat, sua ipsórum beatitúdo, et obediéntia est cáritas: quod autem ad nos pértinet, inde quidem obténtus divínæ grátiæ, hinc vero custódia viæ nostræ: síquidem Ángelis suis mandávit de te, ut custódiant te in ómnibus indigéntiis tuis."
+	},
+	{
 		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"datum":[["angeli-custodes","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
+	},
+	{
+		"tags":["de-sanctis-angelis","matutinum","nocturna-iii","lectio"],
+		"lectio-iii":"Ínterim ergo mandávit Ángelis suis Deus, non quidem ut amóveant te a viis tuis, sed in eis ipsis te custódiant, et quasi per vias suas, vias tuas dírigant in vias ipsíus. Quonam modo, inquis? Nempe ut quod Ángelus ex sola caritáte púrius agit, ut própria saltem necessitáte compúlsus et admónitus, descéndas, et condescéndas; exhibére scílicet próximo misericórdiam: et rursum cum eódem Ángelo levans desidéria tua, tota ánimi cupiditáte ascéndere stúdeas ad summam et perpétuam Veritátem. Hinc enim monémur leváre corda nostra cum mánibus; hinc audímus quotídie: Sursum corda. Hinc quoque negligéntes argúimur, et dícitur nobis: Fílii hóminum, úsquequo gravi corde? ut quid dilígitis vanitátem et quǽritis mendácium? Exonerátum enim cor et leve levátur magis, ut quærat et díligat veritátem."
 	},
 	{
 		"tags":["de-sanctis-angelis","laudes","antiphona","antiphona-benedictus"],

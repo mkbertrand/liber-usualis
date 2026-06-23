@@ -14,6 +14,50 @@
 		"datum":[["infra-octavam-corporis-christi","hymnus"]]
 	},
 	{
+		"tags":[
+			["de-eucharistiae-sacramento","januarius","matutinum","lectio"],
+			["de-eucharistiae-sacramento","februarius","matutinum","lectio"]
+		],
+		"nocturna-ii":[["corpus-christi","dies-iii","lectio"]],
+		"nocturna-iii":[["corpus-christi","dies-ii","lectio"]]
+	},
+	{
+		"tags":[
+			["de-eucharistiae-sacramento","martius","matutinum","lectio"],
+			["de-eucharistiae-sacramento","aprilis","matutinum","lectio"]
+		],
+		"nocturna-ii":[["corpus-christi","dominica-infra-octavam","lectio"]],
+		"nocturna-iii":[["corpus-christi","dies-iii","lectio"]]
+	},
+	{
+		"tags":[
+			["de-eucharistiae-sacramento","majus","matutinum","lectio"],
+			["de-eucharistiae-sacramento","junius","matutinum","lectio"]
+		],
+		"datum":[["corpus-christi","dies-v","lectio"]]
+	},
+	{
+		"tags":[
+			["de-eucharistiae-sacramento","majus","matutinum","lectio"],
+			["de-eucharistiae-sacramento","junius","matutinum","lectio"]
+		],
+		"datum":[["corpus-christi","dies-vi","lectio"]]
+	},
+	{
+		"tags":[
+			["de-eucharistiae-sacramento","september","matutinum","lectio"],
+			["de-eucharistiae-sacramento","october","matutinum","lectio"]
+		],
+		"datum":[["corpus-christi","dies-vii","lectio"]]
+	},
+	{
+		"tags":[
+			["de-eucharistiae-sacramento","november","matutinum","lectio"],
+			["de-eucharistiae-sacramento","december","matutinum","lectio"]
+		],
+		"datum":[["corpus-christi","dies-octava","lectio"]]
+	},
+	{
 		"tags":["de-eucharistiae-sacramento","prima","responsorium-breve","versus"],
 		"datum":[["infra-octavam-corporis-christi","prima","responsorium-breve","versus"]]
 	}
