@@ -91,7 +91,8 @@
 	},
 	{
 		"tags":["corpus-christi","antiphona","antiphona-invitatorium"],
-		"datum":"Christum Regem adorémus dominántem Géntibus: * Qui se manducántibus dat spíritus pinguédinem."
+		"datum":"Christum Regem adorémus dominántem Géntibus: * Qui se manducántibus dat spíritus pinguédinem.",
+		"in-tempore-paschali":"Christum Regem adorémus dominántem Géntibus: * Qui se manducántibus dat spíritus pinguédinem, allelúja."
 	},
 	{
 		"tags":["corpus-christi","matutinum","hymnus"],
@@ -106,8 +107,9 @@
 		]
 	},
 	{
-		"tags":["corpus-christi","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"datum":"Fructum salutíferum * gustándum dedit Dóminus mortis suæ témpore."
+		"tags":["corpus-christi","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Fructum salutíferum * gustándum dedit Dóminus mortis suæ témpore.",
+		"in-tempore-paschali":"Fructum salutíferum * gustándum dedit Dóminus mortis suæ témpore, allelúja."
 	},
 	{
 		"tags":["corpus-christi","matutinum","nocturna-i","psalmus-i"],
@@ -154,6 +156,10 @@
 		"versus":"Pascha nostrum immolátus est Christus: ítaque epulémur in ázymis sinceritátis et veritátis."
 	},
 	{
+		"tags":["corpus-christi","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et edent carnes, et ázymos panes, allelúja."
+	},
+	{
 		"tags":[
 			["corpus-christi","duplex-i-classis","matutinum","nocturna-i","lectio","lectio-ii"],
 			["corpus-christi","dies-octava","matutinum","nocturna-i","lectio","lectio-ii"]
@@ -165,6 +171,10 @@
 		"incipit":"Comedétis carnes, et saturabímini pánibus:",
 		"responsum":"Iste est panis, quem dedit vobis Dóminus ad vescéndum.",
 		"versus":"Non Móyses dedit vobis panem de cœlo, sed Pater meus dat vobis panem de cœlo verum."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Iste est panis, quem dedit vobis Dóminus ad vescéndum, allelúja."
 	},
 	{
 		"tags":[
@@ -180,8 +190,13 @@
 		"versus":"Si quis manducáverit ex hoc pane, vivet in ætérnum."
 	},
 	{
-		"tags":["corpus-christi","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"datum":"Memor sit Dóminus * sacrifícii nostri, et holocaústum nostrum pingue fiat."
+		"tags":["corpus-christi","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Et ambulávit in fortitúdine cibi illíus usque ad montem Dei, allelúja."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Memor sit Dóminus * sacrifícii nostri, et holocaústum nostrum pingue fiat.",
+		"in-tempore-paschali":"Memor sit Dóminus * sacrifícii nostri, et holocaústum nostrum pingue fiat, alléluja."
 	},
 	{
 		"tags":["corpus-christi","matutinum","nocturna-ii","psalmus-i"],
@@ -226,6 +241,10 @@
 		"versus":"Dixérunt viri tabernáculi mei: Quis det de cárnibus ejus, ut saturémur?"
 	},
 	{
+		"tags":["corpus-christi","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Accípite, et comédite: hoc est corpus meum, allelúja."
+	},
+	{
 		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"O pretiósum et admirándum convívium, salutíferum, et omni suavitáte replétum! Quid enim hoc convívio pretiósius esse potest? in quo non carnes vitulórum et hircórum, ut olim in lege, sed nobis Christus suméndus propónitur verus Deus. Quid hoc sacraménto mirabílius? In ipso namque panis et vinum in Christi corpus et sánguinem substantiáliter convertúntur: ideóque Christus Deus, et homo perféctus sub módici panis et vini spécie continétur. Manducátur ítaque a fidélibus, sed mínime lacerátur: quinímo divíso Sacraménto, sub quálibet divisiónis partícula ínteger persevérat. Accidéntia autem sine subjécto in eódem subsístunt, ut fides locum hábeat, dum visíbile invisibíliter súmitur aliéna spécie occultátum: et sensus a deceptióne reddántur immúnes, qui de accidéntibus júdicant sibi notis."
 	},
@@ -234,6 +253,10 @@
 		"incipit":"Accépit Jesus cálicem, postquam cœnávit, dicens: Hic calix novum testaméntum est in meo sánguine:",
 		"responsum":"Hoc fácite in meam commemoratiónem.",
 		"versus":"Memória memor ero, et tabéscet in me ánima mea."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Hoc fácite in meam commemoratiónem, allelúja."
 	},
 	{
 		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -246,8 +269,13 @@
 		"versus":"Ego sum panis vivus, qui de cœlo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum."
 	},
 	{
-		"tags":["corpus-christi","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"datum":"Introíbo * ad altáre Dei: sumam Christum, qui rénovat juventútem meam."
+		"tags":["corpus-christi","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Hic est panis de cœlo descéndens, ut si quis ex ipso mandúcet, non moriátur, allelúja."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Introíbo * ad altáre Dei: sumam Christum, qui rénovat juventútem meam.",
+		"in-tempore-paschali":"Introíbo * ad altáre Dei: sumam Christum, qui rénovat juventútem meam, allelúja."
 	},
 	{
 		"tags":["corpus-christi","matutinum","nocturna-iii","psalmus-i"],
@@ -293,6 +321,10 @@
 		"versus":"Non est ália nátio tam grandis, quæ hábeat deos appropinquántes sibi, sicut Deus noster adest nobis."
 	},
 	{
+		"tags":["corpus-christi","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"In me manet, et ego in eo, allelúja."
+	},
+	{
 		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Qui mandúcat carnem meam, et bibit meum sánguinem, in me manet, et ego in illo. Hoc est ergo manducáre illam escam, et illum bíbere potum, in Christo manére, et illum manéntem in se habére. Ac per hoc, qui non manet in Christo, et in quo non manet Christus, proculdúbio nec mandúcat spiritáliter carnem ejus, nec bibit ejus sánguinem, licet carnáliter et visibíliter premat déntibus Sacraméntum córporis et sánguinis Christi: sed magis tantæ rei sacraméntum ad judícium sibi mandúcat et bibit, quia immúndus præsúmpsit ad Christi accédere Sacraménta, quæ áliquis non digne sumit, nisi qui mundus est; de quibus dícitur: Beáti mundo corde, quóniam ipsi Deum vidébunt."
 	},
@@ -301,6 +333,10 @@
 		"incipit":"Misit me vivens Pater, et ego vivo propter Patrem:",
 		"responsum":"Et qui mandúcat me, vivet propter me.",
 		"versus":"Cibávit illum Dóminus pane vitæ et intelléctus."
+	},
+	{
+		"tags":["corpus-christi","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et qui mandúcat me, vivet propter me, allelúja."
 	},
 	{
 		"tags":["corpus-christi","duplex-i-classis","matutinum","nocturna-iii","lectio","lectio-iii"],

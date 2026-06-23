@@ -700,6 +700,16 @@
 			"response":"tempus-mariae"
 		},
 		{
+			"include":["officium-parvum-bmv"],
+			"recheck":false,
+			"response":"tempus-mariae"
+		},
+		{
+			"include":["votiva","maria"],
+			"recheck":false,
+			"response":"tempus-mariae"
+		},
+		{
 			"include":[],
 			"exclude":["tempus"],
 			"recheck":false,

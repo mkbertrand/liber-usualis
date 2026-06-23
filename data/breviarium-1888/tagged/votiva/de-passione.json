@@ -134,10 +134,18 @@
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
 	},
 	{
+		"tags":["de-passione","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Quia parásti crucem Salvatóri tuo, allelúja."
+	},
+	{
 		"tags":["de-passione","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"incipit":"Ego edúxi te de Ægýpto, demérso Pharaóne in Mare rubrum, et ante te præívi in colúmna nubis:",
 		"responsum":"Et tu me tradidísti princípibus sacerdótum, et me duxísti ad prætórium Piláti.",
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et tu me tradidísti princípibus sacerdótum, et me duxísti ad prætórium Piláti, allelúja."
 	},
 	{
 		"tags":["de-passione","matutinum","nocturna-i","responsorium","responsorium-iii"],
@@ -146,6 +154,10 @@
 		"responsum-i":"Et tu me flagellátum tradidísti,",
 		"responsum-ii":"Qui tamquam agnus coram tondénte se obmútui, et non apérui os meum.",
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum-ii":"Qui tamquam agnus coram tondénte se obmútui, et non apérui os meum, allelúja."
 	},
 	{
 		"tags":["de-passione","matutinum","nocturna-ii","antiphona","antiphona-i"],
@@ -186,10 +198,18 @@
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
 	},
 	{
+		"tags":["de-passione","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et tu dedísti cápiti meo spíneam corónam, et percussísti arúndine caput meum, allelúja."
+	},
+	{
 		"tags":["de-passione","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"incipit":"Ego duxi te per desértum quadragínta annis, et manna cibávi te:",
 		"responsum":"Et tu me cecidísti álapis et flagéllis.",
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et tu me cecidísti álapis et flagéllis, allelúja."
 	},
 	{
 		"tags":["de-passione","matutinum","nocturna-ii","responsorium","responsorium-iii"],
@@ -198,6 +218,10 @@
 		"responsum-i":"Et tu me suspendísti in patíbulo crucis,",
 		"responsum-ii":"In qua expándi manus meas ad pópulum non credéntem et contradicéntem.",
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum-ii":"In qua expándi manus meas ad pópulum non credéntem et contradicéntem, allelúja."
 	},
 	{
 		"tags":["de-passione","matutinum","nocturna-iii","antiphona","antiphona-i"],
@@ -238,12 +262,20 @@
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
 	},
 	{
+		"tags":["de-passione","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Et tu me potásti felle et acéto, allelúja."
+	},
+	{
 		"tags":["de-passione","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"formula":[["duplex-responsum"]],
 		"incipit":"Ego ante te apérui mare:",
 		"responsum-i":"Et tu aperuísti láncea latus Salvatóri tuo,",
 		"responsum-ii":"Qui redémit mundum in sánguine suo.",
 		"versus":"Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi."
+	},
+	{
+		"tags":["de-passione","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum-ii":"Qui redémit mundum in sánguine suo, allelúja."
 	},
 	{
 		"tags":["de-passione","antiphona","antiphona-i"],
@@ -297,6 +329,28 @@
 		"datum":[["cor-jesus","ii-vesperae","antiphona","antiphona-magnificat"]]
 	},
 	{
+		"tags":["de-passione","prima","hymnus"],
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			"Sit laus Patri, ac Paráclito,/Natóque Patris único/Nostræ dedit qui pródigus/Prétium salútis sánguinem.","Amen."
+		]
+	},
+	{
+		"tags":["de-passione","prima","responsorium-breve","versus"],
+		"datum":"Qui pro nobis pati dignátus es."
+	},
+	{
+		"tags":["de-passione","tertia","hymnus"],
+		"datum":[
+			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
+			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
+			"Sit laus Patri, ac Paráclito,/Natóque Patris único/Nostræ dedit qui pródigus/Prétium salútis sánguinem.","Amen."
+		]
+	},
+	{
 		"tags":["de-passione","tertia","responsorium-breve"],
 		"incipit":"Oblátus est,",
 		"responsum":"quia ipse vóluit.",
@@ -307,6 +361,14 @@
 		"incipit":"Oblátus est, quia ipse vóluit.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et livóre ejus sanáti sumus."
+	},
+	{
+		"tags":["de-passione","sexta","hymnus"],
+		"datum":[
+			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
+			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
+			"Sit laus Patri, ac Paráclito,/Natóque Patris único/Nostræ dedit qui pródigus/Prétium salútis sánguinem.","Amen."
+		]
 	},
 	{
 		"tags":["de-passione","sexta","capitulum"],
@@ -323,6 +385,14 @@
 		"incipit":"Próprio Fílio suo non pepércit Deus.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Sed pro nobis ómnibus trádidit illum."
+	},
+	{
+		"tags":["de-passione","nona","hymnus"],
+		"datum":[
+			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
+			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
+			"Sit laus Patri, ac Paráclito,/Natóque Patris único/Nostræ dedit qui pródigus/Prétium salútis sánguinem.","Amen."
+		]
 	},
 	{
 		"tags":["de-passione","nona","capitulum"],
@@ -342,6 +412,7 @@
 	},
 	{
 		"tags":["de-passione","ii-vesperae","antiphona","antiphona-magnificat"],
-		"datum":"Depónens Joseph * corpus Jesu invólvit síndone, et pósuit eum in monuménto excíso. Fuit planctus magnus in illa die; mulíeres autem sedéntes contra sepúlchrum dolébant, sicut doléri solet in morte primogéniti."
+		"datum":"Depónens Joseph * corpus Jesu invólvit síndone, et pósuit eum in monuménto excíso. Fuit planctus magnus in illa die; mulíeres autem sedéntes contra sepúlchrum dolébant, sicut doléri solet in morte primogéniti.",
+		"in-tempore-paschali":"Depónens Joseph * corpus Jesu invólvit síndone, et pósuit eum in monuménto excíso. Fuit planctus magnus in illa die; mulíeres autem sedéntes contra sepúlchrum dolébant, sicut doléri solet in morte primogéniti, allelúja."
 	}
 ]

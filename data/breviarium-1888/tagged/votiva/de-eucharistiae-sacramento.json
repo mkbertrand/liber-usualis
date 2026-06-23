@@ -2,5 +2,19 @@
 	{
 		"tags":["de-eucharistiae-sacramento","nomen"],
 		"datum":"Officium Votiva de Ss. Eucharistiæ Sacramento."
+	},
+	{
+		"tags":[
+			["de-eucharistiae-sacramento","completorium","hymnus"],
+			["de-eucharistiae-sacramento","prima","hymnus"],
+			["de-eucharistiae-sacramento","tertia","hymnus"],
+			["de-eucharistiae-sacramento","sexta","hymnus"],
+			["de-eucharistiae-sacramento","nona","hymnus"]
+		],
+		"datum":[["infra-octavam-corporis-christi","hymnus"]]
+	},
+	{
+		"tags":["de-eucharistiae-sacramento","prima","responsorium-breve","versus"],
+		"datum":[["infra-octavam-corporis-christi","prima","responsorium-breve","versus"]]
 	}
 ]

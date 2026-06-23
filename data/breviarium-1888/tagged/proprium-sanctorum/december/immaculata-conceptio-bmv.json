@@ -9,27 +9,32 @@
 	{
 		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-i"],
 		"src":"gregobase/2922",
-		"datum":"Tota pulchra * es María, et mácula originális non est in te."
+		"datum":"Tota pulchra * es María, et mácula originális non est in te.",
+		"in-tempore-paschali":"Tota pulchra * es María, et mácula originális non est in te, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-ii"],
 		"src":"gregobase/2930",
-		"datum":"Vestiméntum tuum * cándidum quasi nix, et fácies tua sicut sol."
+		"datum":"Vestiméntum tuum * cándidum quasi nix, et fácies tua sicut sol.",
+		"in-tempore-paschali":"Vestiméntum tuum * cándidum quasi nix, et fácies tua sicut sol, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-iii"],
 		"src":"gregobase/2747",
-		"datum":"Tu glória Jerúsalem, * tu lætítia Ísraël, tu honorificéntia pópuli nostri."
+		"datum":"Tu glória Jerúsalem, * tu lætítia Ísraël, tu honorificéntia pópuli nostri.",
+		"in-tempore-paschali":"Tu glória Jerúsalem, * tu lætítia Ísraël, tu honorificéntia pópuli nostri, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-iv"],
 		"src":"gregobase/2370",
-		"datum":"Benedícta es tu, * Virgo María, a Dómino Deo excélso præ ómnibus muliéribus super terram."
+		"datum":"Benedícta es tu, * Virgo María, a Dómino Deo excélso præ ómnibus muliéribus super terram.",
+		"in-tempore-paschali":"Benedícta es tu, * Virgo María, a Dómino Deo excélso præ ómnibus muliéribus super terram, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","antiphona","antiphona-v"],
 		"src":"gregobase/2078",
-		"datum":"Trahe nos * Virgo immaculáta, post te currémus in odórem unguentórum tuórum."
+		"datum":"Trahe nos * Virgo immaculáta, post te currémus in odórem unguentórum tuórum.",
+		"in-tempore-paschali":"Trahe nos * Virgo immaculáta, post te currémus in odórem unguentórum tuórum, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","capitulum"],
@@ -54,7 +59,8 @@
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","antiphona","antiphona-invitatorium"],
-		"datum":"Immaculátam Conceptiónem Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum."
+		"datum":"Immaculátam Conceptiónem Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.",
+		"in-tempore-paschali":"Immaculátam Conceptiónem Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","hymnus"],
@@ -67,8 +73,9 @@
 		]
 	},
 	{
-		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"datum":"Admirábile est nomen tuum * Dómine in univérsa terra, quia in Vírgine María dignum tibi habitáculum præparásti."
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Admirábile est nomen tuum * Dómine in univérsa terra, quia in Vírgine María dignum tibi habitáculum præparásti.",
+		"in-tempore-paschali":"Admirábile est nomen tuum * Dómine in univérsa terra, quia in Vírgine María dignum tibi habitáculum præparásti, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","antiphona","antiphona-ii"],
@@ -80,7 +87,8 @@
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Deus omnípotens præcínxit me virtúte.","R. Et pósuit immaculátam viam meam."]
+		"datum":["V. Deus omnípotens præcínxit me virtúte.","R. Et pósuit immaculátam viam meam."],
+		"in-tempore-paschali":["V. Deus omnípotens præcínxit me virtúte, allelúja.","R. Et pósuit immaculátam viam meam, allelúja."]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","lectio","lectio-i"],
@@ -96,6 +104,10 @@
 		"versus":"Erípuit Dóminus ánimam tuam de morte, et contra inimícum factus est protéctor tuus."
 	},
 	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+		"responsum":"Ne tímeas María, invenísti grátiam apud Deum, allelúja."
+	},
+	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","lectio","lectio-ii"],
 		"datum":"Vidit ígitur múlier quod bonum esset lignum ad vescéndum, et pulchrum óculis, aspectúque delectábile: et tulit de fructu illíus, et comédit: dedítque viro suo, qui comédit. Et apérti sunt óculi ambórum: cumque cognovíssent se esse nudos, consuérunt fólia ficus, et fecérunt sibi perizómata. Et cum audíssent vocem Dómini Dei deambulántis in paradíso ad auram post merídiem, abscóndit se Adam et uxor ejus a fácie Dómini Dei in médio ligni paradísi."
 	},
@@ -104,6 +116,10 @@
 		"incipit":"Transíte ad me omnes qui concupíscitis me:",
 		"responsum":"Et narrábo vobis quanta fecit Deus ánimæ meæ.",
 		"versus":"Vivit Dóminus, quóniam adimplévit in me misericórdiam suam."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Et narrábo vobis quanta fecit Deus ánimæ meæ, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","lectio","lectio-iii"],
@@ -116,8 +132,13 @@
 		"versus":"Veni de Líbano, sponsa mea, veni coronáberis coróna gratiárum."
 	},
 	{
-		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"datum":"Diffúsa est grátia * in Conceptióne ejus, et speciósa appáruit inter fílias hóminum."
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Mel et lac sub lingua illíus, allelúja."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Diffúsa est grátia * in Conceptióne ejus, et speciósa appáruit inter fílias hóminum.",
+		"in-tempore-paschali":"Diffúsa est grátia * in Conceptióne ejus, et speciósa appáruit inter fílias hóminum, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","antiphona","antiphona-ii"],
@@ -129,7 +150,8 @@
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","versiculus"],
-		"datum":["V. In hoc cognóvi quóniam voluísti me.","R. Quóniam non gaudébit inimícus meus super me."]
+		"datum":["V. In hoc cognóvi quóniam voluísti me.","R. Quóniam non gaudébit inimícus meus super me."],
+		"in-tempore-paschali":["V. In hoc cognóvi quóniam voluísti me, allelúja.","R. Quóniam non gaudébit inimícus meus super me, allelúja."]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -145,6 +167,10 @@
 		"versus":"Deus enim creávit me in justítia, et apprehéndit manum meam, et servávit me."
 	},
 	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium-i","in-tempore-paschali"],
+		"responsum":"Nondum erant abýssi, et ego jam concépta eram, allelúja."
+	},
+	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Non immérito ígitur veníre de Líbano jubétur, quia Líbanus candidátio interpretátur. Erat enim candidáta multis meritórum virtútibus, et dealbáta nive candídior, Spíritus sancti munéribus, simplicitátem colúmbæ in ómnibus repræséntans, quóniam, quidquid in ea gestum est, totum púritas et simplícitas, totum véritas et grátia fuit; totum misericórdia et justítia, quæ de cœlo prospéxit: et ídeo immaculáta, quia in nullo corrúpta. Circúmdedit enim virum in útero, sicut Jeremías sanctus testátur, et non aliúnde accépit. Fáciet, inquit, Dóminus novum super terram, et múlier circúmdabit virum. Vere novum, et ómnium novitátum superéminens nóvitas virtútum, quando Deus (quem ferre non potest mundus, neque vidére áliquis, ut vívere possit) sic ingréssus est hospítium ventris, ut córporis claustrum nescíret: sicque gestátus, ut totus Deus in eo esset: et sic exívit inde, ut esset (sicut Ezéchiel fatétur) porta omníno clausa. Unde cánitur in eísdem Cánticis de ea: Hortus conclúsus, fons signátus, emissiónes tuæ paradísus. Vere hortus deliciárum, in quo cónsita sunt univérsa florum génera, et odoraménta virtútum: sicque conclúsus, ut nésciat violári, neque corrúmpi ullis insidiárum fraúdibus. Fons ítaque signátus sigíllo totíus Trinitátis."
 	},
@@ -153,6 +179,10 @@
 		"incipit":"Nihil inquinátum in eam incúrrit:",
 		"responsum":"Candor est lucis ætérnæ et spéculum sine mácula.",
 		"versus":"Est enim hæc speciósior sole, et luci comparáta invenítur púrior."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Candor est lucis ætérnæ et spéculum sine mácula, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","lectio","lectio-iii"],
@@ -166,8 +196,13 @@
 		"versus":"Índuit eam Dóminus vestiméntis salútis, induménto justítiæ, et quasi sponsam ornávit eam monálibus suis."
 	},
 	{
-		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"datum":"Sanctimónia et magnificéntia * in Conceptióne ejus; annuntiáte in ómnibus pópulis glóriam ejus."
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium-iii","in-tempore-paschali"],
+		"responsum":"Et in cápite ejus coróna stellárum duódecim, allelúja."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Sanctimónia et magnificéntia * in Conceptióne ejus; annuntiáte in ómnibus pópulis glóriam ejus.",
+		"in-tempore-paschali":"Sanctimónia et magnificéntia * in Conceptióne ejus; annuntiáte in ómnibus pópulis glóriam ejus, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","antiphona","antiphona-ii"],
@@ -179,7 +214,8 @@
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","versiculus"],
-		"datum":["V. Exaltábo te Dómine, quóniam suscepísti me.","R. Nec delectásti inimícos meos super me."]
+		"datum":["V. Exaltábo te Dómine, quóniam suscepísti me.","R. Nec delectásti inimícos meos super me."],
+		"in-tempore-paschali":["V. Exaltábo te Dómine, quóniam suscepísti me, allelúja.","R. Nec delectásti inimícos meos super me, allelúja."]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -197,6 +233,10 @@
 		"versus":"Áperi mihi, soror mea, amíca mea, colúmba mea, immaculáta mea."
 	},
 	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","responsorium-i","in-tempore-paschali"],
+		"responsum":"Emissiónes tuæ paradísus, o María, allelúja."
+	},
+	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","lectio","lectio-ii"],
 		"datum":"Ave Dei mons præpínguis et umbrósus in quo enutrítus agnus rationális peccáta atque infirmitátes nostras portávit: mons, e quo devolútus ille, nulla manu præcísus lapis, contrívit aras idolórum, et factus est in caput ánguli, mirábilis in óculis nostris. Ave sanctus Dei thronus, divínum donárium, domus glóriæ, perpúlchrum ornaméntum, cimélium eléctum, et totíus orbis propitiatórium, cœlúmque Dei glóriam enárrans. Ave urna ex puro auro confláta, et suavíssimam animárum nostrárum dulcédinem, Christum scílicet, qui manna est, cóntinens. O puríssima et omni laude et obséquio digníssima Virgo, Deo dicátum donárium omni creaturárum conditióni præcéllens, terra non secta, inarátus ager, vitis floridíssima, fons aquas effúndens, virgo génerans: et mater viri néscia, innocéntiæ thesaúrus abscónditus, et sanctimóniæ decus; acceptíssimis tuis ac matérna auctoritáte válidis précibus ad Dóminum ac Deum ómnium Conditórem Fílium tuum ex te sine patre génitum, ecclesiástici órdinis gubernácula fac dírigas, et ad portum tranquíllum perdúcas."
 	},
@@ -205,6 +245,10 @@
 		"incipit":"Magníficat ánima mea Dóminum:",
 		"responsum":"Quia fecit mihi magna qui potens est, et sanctum nomen ejus.",
 		"versus":"Ecce enim ex hoc beátam me dicent omnes generatiónes."
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","responsorium-ii","in-tempore-paschali"],
+		"responsum":"Quia fecit mihi magna qui potens est, et sanctum nomen ejus, allelúja."
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","lectio","lectio-iii"],
@@ -223,8 +267,15 @@
 		"versus":"Et pósuit immaculátam viam meam."
 	},
 	{
+		"tags":["immaculata-conceptio-bmv","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Deus omnípotens præcínxit me virtúte.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Et pósuit immaculátam viam meam."
+	},
+	{
 		"tags":["immaculata-conceptio-bmv","tertia","versiculus"],
-		"datum":["V. In hoc cognóvi quóniam voluísti me.","R. Quóniam non gaudébit inimícus meus super me."]
+		"datum":["V. In hoc cognóvi quóniam voluísti me.","R. Quóniam non gaudébit inimícus meus super me."],
+		"in-tempore-paschali":["V. In hoc cognóvi quóniam voluísti me, allelúja.","R. Quóniam non gaudébit inimícus meus super me, allelúja."]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","sexta","capitulum"],
@@ -238,8 +289,15 @@
 		"versus":"Quóniam non gaudébit inimícus meus super me."
 	},
 	{
+		"tags":["immaculata-conceptio-bmv","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"In hoc cognóvi, quóniam voluísti me.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Quóniam non gaudébit inimícus meus super me."
+	},
+	{
 		"tags":["immaculata-conceptio-bmv","sexta","versiculus"],
-		"datum":["V. Exaltábo te Dómine, quóniam suscepísti me.","R. Nec delectásti inimícos meos super me."]
+		"datum":["V. Exaltábo te Dómine, quóniam suscepísti me.","R. Nec delectásti inimícos meos super me."],
+		"in-tempore-paschali":["V. Exaltábo te Dómine, quóniam suscepísti me, allelúja.","R. Nec delectásti inimícos meos super me, allelúja."]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","nona","capitulum"],
@@ -253,8 +311,15 @@
 		"versus":"Nec delectásti inimícos meos super me."
 	},
 	{
+		"tags":["immaculata-conceptio-bmv","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Exaltábo te Dómine, quóniam suscepísti me.",
+		"responsum":"Allelúja, allelúja.",
+		"versus":"Nec delectásti inimícos meos super me."
+	},
+	{
 		"tags":["immaculata-conceptio-bmv","nona","versiculus"],
-		"datum":["V. Immaculáta Concéptio tua Dei Génitrix Virgo.","R. Gaúdium annuntiávit univérso mundo."]
+		"datum":["V. Immaculáta Concéptio tua Dei Génitrix Virgo.","R. Gaúdium annuntiávit univérso mundo."],
+		"in-tempore-paschali":["V. Immaculáta Concéptio tua Dei Génitrix Virgo, allelúja.","R. Gaúdium annuntiávit univérso mundo, allelúja."]
 	},
 	{
 		"tags":["immaculata-conceptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],

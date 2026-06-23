@@ -13,7 +13,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","vesperae","antiphona"],
-		"datum":[["maria","antiphona"]]
+		"datum":[["maria","antiphona","per-annum"]]
 	},
 	{
 		"tags":[
@@ -21,7 +21,7 @@
 			["officium-parvum-bmv","matutinum","versiculus"],
 			["officium-parvum-bmv","tertia","versiculus"]
 		],
-		"datum":[["maria","laudes","versiculus"]]
+		"datum":[["maria","laudes","versiculus","per-annum"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","vesperae","antiphona","antiphona-magnificat"],
@@ -140,7 +140,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-i"],
-		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-i"]]
+		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-i","per-annum"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","lectio","lectio-ii"],
@@ -148,7 +148,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-ii"],
-		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-iii"]]
+		"datum":[["maria","matutinum","nocturna-i","responsorium","responsorium-iii","per-annum"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","lectio","lectio-iii"],
@@ -156,8 +156,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","responsorium","responsorium-iii"],
-		"formula":[["formula","duplex-responsum"]],
-		"datum":[["bmv-sabbatum","matutinum","responsorium","responsorium-ii"]]
+		"formula":[["formula","duplex-responsum","per-annum","bmv-sabbatum","responsorium","responsorium-ii"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","antiphona"],
