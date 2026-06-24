@@ -9,10 +9,11 @@ class Rite {
 }
 
 class Occasion {
-	constructor(name, rites, id) {
+	constructor(name, rites, id, title) {
 		this.name = name;
 		this.rites = rites;
 		this.id = id;
+		this.title = title;
 	}
 }
 
@@ -119,7 +120,7 @@ fullAmbit = new Ambit([
 		new Rite('litaniae-sanctorum', 'litaniae-sanctorum', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'matutinum'),
+	], 'matutinum', 'diei'),
 	new Occasion('Prima', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('prima', 'diei', true),
@@ -127,28 +128,28 @@ fullAmbit = new Ambit([
 		new Rite('officium-capituli', 'diei', true),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'prima'),
+	], 'prima', 'diei'),
 	new Occasion('Tertia', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('tertia', 'diei', true),
 		new Rite('tertia', 'officium-parvum-bmv', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'tertia'),
+	], 'tertia', 'diei'),
 	new Occasion('Sexta', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('sexta', 'diei', true),
 		new Rite('sexta', 'officium-parvum-bmv', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'sexta'),
+	], 'sexta', 'diei'),
 	new Occasion('Nona', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('nona', 'diei', true),
 		new Rite('nona', 'officium-parvum-bmv', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'nona'),
+	], 'nona', 'diei'),
 	new Occasion('Vesperæ', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('vesperae', 'officium-parvum-bmv', false),
@@ -156,13 +157,13 @@ fullAmbit = new Ambit([
 		new Rite('vesperae', 'officium-defunctorum', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'vesperae'),
+	], 'vesperae', 'diei'),
 	new Occasion('Completorium', [
 		new Rite('aperi-domine', 'diei', true),
 		new Rite('completorium', 'diei', true),
 		new Rite('completorium', 'officium-parvum-bmv', false),
 		new Rite('sacrosanctae', 'diei', true)
-	], 'completorium')
+	], 'completorium', 'diei')
 ]);
 
 fullAmbit.suggestSelectedOccasion = function(hour) {
@@ -192,42 +193,42 @@ class SingleAmbit extends Ambit {
 				new Rite('laudes', desired, true),
 				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 				new Rite('sacrosanctae', desired, true)
-			], 'matutinum'),
+			], 'matutinum', desired),
 			new Occasion('Prima', [
 				new Rite('aperi-domine', desired, true),
 				new Rite('prima', desired, true),
 				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 				new Rite('sacrosanctae', desired, true)
-			], 'prima'),
+			], 'prima', desired),
 			new Occasion('Tertia', [
 				new Rite('aperi-domine', desired, true),
 				new Rite('tertia', desired, true),
 				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 				new Rite('sacrosanctae', desired, true)
-			], 'tertia'),
+			], 'tertia', desired),
 			new Occasion('Sexta', [
 				new Rite('aperi-domine', desired, true),
 				new Rite('sexta', desired, true),
 				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 				new Rite('sacrosanctae', desired, true)
-			], 'sexta'),
+			], 'sexta', desired),
 			new Occasion('Nona', [
 				new Rite('aperi-domine', desired, true),
 				new Rite('nona', desired, true),
 				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 				new Rite('sacrosanctae', desired, true)
-			], 'nona'),
+			], 'nona', desired),
 			new Occasion('Vesperæ', [
 				new Rite('aperi-domine', desired, true),
 				new Rite('vesperae', desired, true),
 				new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
 				new Rite('sacrosanctae', desired, true)
-			], 'vesperae'),
+			], 'vesperae', desired),
 			new Occasion('Completorium', [
 				new Rite('aperi-domine', desired, true),
 				new Rite('completorium', desired, true),
 				new Rite('sacrosanctae', desired, true)
-			], 'completorium')
+			], 'completorium', desired)
 		);
 	}
 	
@@ -240,12 +241,12 @@ defunctAmbit = new Ambit(
 		new Rite('matutinum', 'officium-defunctorum', true),
 		new Rite('laudes', 'officium-defunctorum', true),
 		new Rite('sacrosanctae', 'officium-defunctorum', true)
-	], 'matutinum'),
+	], 'matutinum', 'officium-defunctorum'),
 	new Occasion('Vesperæ', [
 		new Rite('aperi-domine', 'officium-defunctorum', true),
 		new Rite('vesperae', 'officium-defunctorum', true),
 		new Rite('sacrosanctae', 'officium-defunctorum', true)
-	], 'vesperae')
+	], 'vesperae', 'officium-defunctorum')
 );
 
 defunctAmbit.suggestSelectedOccasion = function(hour) {
@@ -257,7 +258,7 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 }
 
 function singleOccasionAmbit(name, desired) {
-	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], 'matutinum'));
+	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], 'matutinum', 'diei'));
 }
 
 function defineambit(desired, choral = true) {
@@ -293,7 +294,7 @@ function defineambit(desired, choral = true) {
 			ambit = new Ambit(fullAmbit.occasions.map(
 				(occasion) => new Occasion(occasion.name, occasion.rites.map(
 					(rite) => rite.where == 'officium-parvum-bmv' ? new Rite(rite.what, rite.where, true) : (rite)
-				), occasion.id)
+				), occasion.id, occasion.title)
 			));
 			ambit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
 			break;
@@ -301,7 +302,7 @@ function defineambit(desired, choral = true) {
 			ambit = new Ambit(fullAmbit.occasions.map(
 				(occasion) => new Occasion(occasion.name, occasion.rites.filter(
 					(rite) => rite.where == 'diei' || rite.where == 'antiphona-bmv-temporis'
-				), occasion.id)
+				), occasion.id, occasion.title)
 			));
 			ambit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;
 	}
@@ -309,7 +310,7 @@ function defineambit(desired, choral = true) {
 		return ambit;
 	} else {
 		ret = new Ambit(ambit.occasions.map(
-			(occasion) => new Occasion(occasion.name, (occasion.id == 'matutinum' ? occasion.rites : occasion.rites.filter((rite) => rite.what != 'antiphona-bmv')), occasion.id)
+			(occasion) => new Occasion(occasion.name, (occasion.id == 'matutinum' ? occasion.rites : occasion.rites.filter((rite) => rite.what != 'antiphona-bmv')), occasion.id, occasion.title)
 		));
 		ret.suggestSelectedOccasion = ambit.suggestSelectedOccasion;
 		return ret;

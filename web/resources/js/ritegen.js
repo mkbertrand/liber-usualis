@@ -1,26 +1,26 @@
 // Copyright 2024-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
-function riteTitle(data, size = 'large') {
-	if (data.rite.tags.includes('sacrosanctae') || data.rite.tags.includes('antiphona-bmv') || data.rite.tags.includes('officium-capituli')) {
-		return '';
-	}
-	var title = data['used-primary'][0];
+function riteTitle(title, tags, size = 'large') {
 	if (size == 'small') {
 		return `<h1 class="small-title">${title}</h1>`;
 	} else {
 		var subtitle = '';
-		if (data['used-primary'][1].includes('duplex-i-classis')) {
-			subtitle = 'Duplex I Classis.';
-		} else if (data['used-primary'][1].includes('duplex-ii-classis')) {
-			subtitle = 'Duplex II Classis.';
-		} else if (data['used-primary'][1].includes('duplex-majus')) {
+		if (tags.includes('duplex-i-classis')) {
+			subtitle = 'Duplex I. Classis.';
+		} else if (tags.includes('duplex-ii-classis')) {
+			subtitle = 'Duplex II. Classis.';
+		} else if (tags.includes('duplex-majus')) {
 			subtitle = 'Duplex Majus.';
-		} else if (data['used-primary'][1].includes('duplex-minus')) {
+		} else if (tags.includes('duplex-minus')) {
 			subtitle = 'Duplex Minus.';
-		} else if (data['used-primary'][1].includes('semiduplex')) {
+		} else if (tags.includes('semiduplex')) {
 			subtitle = 'Semiduplex.';
-		} else if (data['used-primary'][1].includes('simplex') || data['used-primary'][1].includes('feria')) {
-			subtitle = 'Simplex.';
+		} else if (tags.includes('simplex') || tags.includes('feria')) {
+			subtitle = 'Simplex.'
+		}
+
+		if (tags.includes('mtv')) {
+			subtitle += ' (m.t.v.)'
 		}
 		return `<h1 class="large-title">${(title + '.').replaceAll(/\.\.$/g, '.')}</h1><h2 class="large-subtitle">${subtitle}</h2>`;
 	}

@@ -122,6 +122,49 @@ def daytags(vesperal = False):
 			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
 		})
 
+def adjust_tags(day, vesperal, select):
+	if select == 'votiva':
+		tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votive = True) if vesperal else kalendar.daily_tagger.get_diurnal(context, day, votive = True))
+	else:
+		tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if vesperal else kalendar.daily_tagger.get_diurnal(context, day))
+
+	# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
+	if select == 'officium-parvum-bmv':
+		templ = list(filter(lambda i: 'pro-aliis-officiis' in i, tags))[0]
+		ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
+		tags = [ofp - {'omissum'} | {'primarium'}, templ | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
+	elif select == 'officium-defunctorum':
+		def votivize(i):
+			if 'officium-defunctorum' in i:
+				if 'duplex-minus' in i:
+					return i | {'officium-defunctorum', 'primarium'}
+				else:
+					return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
+			else:
+				return i - {'primarium', 'commemoratio', 'psalmi'}
+		tags = [votivize(i) for i in tags]
+		if not any('officium-defunctorum' in i for i in tags):
+			tags.append({'officium-defunctorum','semiduplex','primarium'})
+	elif select == 'antiphona-bmv-temporis':
+		tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
+		tags[0] |= {'primarium'}
+
+	return tags
+
+@get('/title')
+def title():
+	parameters = copy.deepcopy(request.query)
+	try:
+		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
+		hours = parameters['hour'].replace(' ', '+').split('+')
+		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium'}), parameters['select'] if 'select' in parameters else 'diei')
+		primary = [i for i in tags if 'primarium' in i][0]
+		pile = context.getpile(breviarium.defaultpile | primary | set(hours))
+		return datamanage.dump_data([getname(primary, pile), primary])
+	except Exception as e:
+		print(e)
+		abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
+
 expected_version = f'{version_management.get_resource_version('/js/ritegen.js')}-{version_management.get_resource_version('/styles/pray.css')}'
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
@@ -138,36 +181,7 @@ def rite():
 	try:
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
-		assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
-		vesperal = not set(hours).isdisjoint({'vesperae', 'completorium'}) or ('time' in parameters and parameters['time'] == 'vesperale')
-
-		if 'select' in parameters and parameters['select'] == 'votiva':
-			tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votive = True) if vesperal else kalendar.daily_tagger.get_diurnal(context, day, votive = True))
-		else:
-			tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if vesperal else kalendar.daily_tagger.get_diurnal(context, day))
-
-		# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
-		if 'select' in parameters:
-			if parameters['select'] == 'officium-parvum-bmv':
-				templ = list(filter(lambda i: 'pro-aliis-officiis' in i, tags))[0]
-				ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
-				tags = [ofp - {'omissum'} | {'primarium'}, templ | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
-			elif parameters['select'] == 'officium-defunctorum':
-				def votivize(i):
-					if 'officium-defunctorum' in i:
-						if 'duplex-minus' in i:
-							return i | {'officium-defunctorum', 'primarium'}
-						else:
-							return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
-					else:
-						return i - {'primarium', 'commemoratio', 'psalmi'}
-				tags = [votivize(i) for i in tags]
-				if not any('officium-defunctorum' in i for i in tags):
-					tags.append({'officium-defunctorum','semiduplex','primarium'})
-			elif parameters['select'] == 'antiphona-bmv-temporis':
-				tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
-				tags[0] |= {'primarium'}
-
+		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium'}), parameters['select'] if 'select' in parameters else 'diei')
 		private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 		if private:
 			tags = [i | {'privata'} for i in tags]

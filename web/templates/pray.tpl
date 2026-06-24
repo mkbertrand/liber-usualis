@@ -49,14 +49,11 @@
 	hour: null,
 	desired: $persist('omnes'),
 	ambit: null,
-	choral: $persist(true),
-	chant: $persist(false),
 	recitation: $persist('recto-tono'),
 	translation: $persist(false),
 	sidebyside: $persist(false),
 	rite: '',
 	initialized: false,
-	ignoreCalendarDateChange: false,
 	canIncrementOccasion: true,
 	nextOccasion: $persist(null),
 	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
@@ -77,27 +74,30 @@
 	getCalendarDate() {
 		return new Date(this.calendarDate.getTime() - this.calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
 	},
+	choral() {
+		return this.recitation != 'private';
+	},
+	chant() {
+		return this.recitation == 'plainchant';
+	},
 	setRecitation(recitation) {
-		if (recitation == 'plainchant') {
-			this.choral = true;
-			this.chant = true;
-		} else if (recitation == 'recto-tono') {
-			this.choral = true;
-			this.chant = false;
-		} else if (recitation == 'private') {
-			this.choral = false;
-			this.chant = false;
-		}
-		this.ambit = defineambit(this.desired, this.choral);
 		this.recitation = recitation;
+		this.ambit = defineambit(this.desired, this.choral());
 	},
 	updateRiteAsyncLock: false,
 	async updateRite(scroll = true) {
-		previousTitle = '';
 		if (!this.updateRiteAsyncLock) {
-			riteRenderingOptions = {'chant': this.chant, 'disable-trivial-chant': true, 'translation': this.translation, 'side-by-side': this.sidebyside};
 			this.updateRiteAsyncLock = true;
-			newrite = '';
+
+			riteRenderingOptions = {'chant': this.chant(), 'disable-trivial-chant': true, 'translation': this.translation, 'side-by-side': this.sidebyside};
+
+			var response = await fetch(`/title?date=${this.getCalendarDate()}
+				&hour=${this.hour}
+				&select=${this.ambit.occasions[this.ambit.idindex(this.hour)].title}
+			`);
+			let titleJSON = await response.json();
+			newRite = riteTitle(titleJSON[0], titleJSON[1], 'large');
+			previousTitle = titleJSON[0];
 			rites = this.ambit.riteList(this.liturgicalday.tags, this.hour);
 			for (var i = 0; i < rites.length; i++) {
 				noending = false;
@@ -105,31 +105,24 @@
 					noending = true;
 				}
 				var response = await fetch(`/rite?date=${this.getCalendarDate()}
-					&time=${this.getTime()}
 					&hour=${rites[i][0]}&noending=${noending}
 					&translation=${this.translation ? translation('{{locale}}') : 'none'}
-					&privata=${this.recitation=='private' ? 'privata': 'chorali'}
+					&privata=${!this.choral() ? 'privata': 'chorali'}
 					&select=${rites[i][1]}
 					&version=${this.version}
 				`);
 				if (response.status == 400 || response.status == 500) {
-					newrite = await response.text();
+					newRite = await response.text();
 					break;
 				}
 				var json = await response.json();
-				// If this is the first item in the updated rite, wipe the slate clean. Otherwise just append.
-				if (i == 0) {
-					title = riteTitle(json, 'large')
-				} else {
-					title = '';
-					if (json['used-primary'][0] != previousTitle) {
-						title = riteTitle(json, 'small');
-					}
+				if (!json.rite.tags.includes('aperi-domine') && !json.rite.tags.includes('sacrosanctae') && !json.rite.tags.includes('antiphona-bmv') && !json.rite.tags.includes('officium-capituli') && json['used-primary'][0] != previousTitle) {
+					newRite += riteTitle(json['used-primary'][0], json['used-primary'][1], 'small');
+					previousTitle = json['used-primary'][0];
 				}
-				newrite += title + renderRite(json, riteRenderingOptions);
-				previousTitle = json['used-primary'][0];
+				newRite += renderRite(json, riteRenderingOptions);
 			}
-			this.rite = newrite;
+			this.rite = newRite;
 			if (scroll) {
 				window.scrollTo({top:0});
 			}
@@ -139,6 +132,7 @@
 			console.log('Simultaneous attempts to update Rite');
 		}
 	},
+	ignoreCalendarDateChange: false,
 	async updateDay() {
 		var response = await fetch(`/day?date=${this.getCalendarDate()}&time=${this.getTime()}`);
 		var json = await response.json();
@@ -194,7 +188,7 @@
 		translation = false;
 	}
 	if (ambit === null) {
-		ambit = defineambit(desired, choral);
+		ambit = defineambit(desired, choral());
 	}
 	if (nextOccasion && typeof nextOccasion[0] === 'string') {
 		nextOccasion[0] = new Date(nextOccasion[0]);
@@ -209,7 +203,7 @@
 	}
 
 	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateDay()}});
-	$watch('desired', desired => setAmbit(defineambit(desired, choral)));
+	$watch('desired', desired => setAmbit(defineambit(desired, choral())));
 	$watch('recitation', recitation => updateRite(false));
 	$watch('translation', translation => updateRite());
 	$watch('sidebyside', sidebyside => updateRite());
