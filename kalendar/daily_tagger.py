@@ -144,13 +144,15 @@ def get_diurnal(context, day, votive = False):
 	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', context.books[0].src)
 
 	if votive:
-		diurnalrules += load_data_prioritizer('tabella-diurnalis-votivarum.json', context.books[0].src)
+		diurnalrules.insert(1, load_data_prioritizer('tabella-diurnalis-votivarum.json', context.books[0].src))
 
-	prioritized = apply_secondary_tabella(kalendar.datamanage.get_date(context, day), diurnalrules)
+	daytags = kalendar.datamanage.get_date(context, day)
+	for tabella in diurnalrules:
+		daytags = apply_secondary_tabella(daytags, tabella)
 	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(context, day + timedelta(days=1)), martyrologyrules)
 	lunarday = luna.lunardate(day + timedelta(days=1))
 	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
-	tags = prioritized + martyrology
+	tags = daytags + martyrology
 	for i in tags:
 		for j in implicationtable:
 			if j['tags'].issubset(i):

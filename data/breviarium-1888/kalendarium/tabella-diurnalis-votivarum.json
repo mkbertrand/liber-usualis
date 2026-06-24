@@ -7,6 +7,7 @@
 		"include":["votiva"],
 		"response":[
 			{"include":["simplex","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
+			{"include":["vigilia","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria-major","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","primarium"],"remove":"primarium","adde":"omissum","target":1}
 		]
