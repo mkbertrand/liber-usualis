@@ -261,7 +261,7 @@ function singleOccasionAmbit(name, desired) {
 	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], 'matutinum', 'diei'));
 }
 
-function defineambit(desired, choral = true) {
+function defineAmbit(desired, choral = true) {
 	switch(desired) {
 		case 'omnes':
 			ambit = fullAmbit;
@@ -315,4 +315,90 @@ function defineambit(desired, choral = true) {
 		ret.suggestSelectedOccasion = ambit.suggestSelectedOccasion;
 		return ret;
 	}
+}
+
+let lastParams = null;
+let lastResult = null;
+function resolveParameters(parameters) {
+	if (lastParams && Object.entries(parameters).every(i => i[0] in lastParams && lastParams[i[0]] == i[1])) {
+		return lastResult;
+	} else {
+		lastParams = parameters;
+		let resolved = {...parameters, 'chant': parameters.recitation == 'plainchant', 'choral': parameters.recitation != 'private'};
+		resolved['ambit'] = defineAmbit(parameters.desired, parameters.choral);
+		lastResult = resolved;
+		return resolved;
+	}
+}
+
+let dayParametersExpectation = null;
+let cachedDays = new Object();
+async function getLiturgicalDay(calendarDate, time, parameters) {
+	if (!dayParametersExpectation || !Object.entries(parameters).every(i => i[0] in dayParametersExpectation && dayParametersExpectation[i[0]] == i[1])) {
+		cachedDays = new Object();
+		dayParametersExpectation = parameters;
+	}
+
+	async function fetchLiturgicalDay() {
+		return fetch(`/day?date=${calendarDate}&time=${time}`).then(response => response.json());
+	}
+
+	key = calendarDate + time;
+	if (!(key in cachedDays)) {
+		cachedDays[key] = await fetchLiturgicalDay();
+	}
+	return cachedDays[key];
+}
+
+let riteParametersExpectation = null;
+let cachedRites = new Object();
+
+async function getRite(calendarDate, occasion, parameters, version) {
+	if (!riteParametersExpectation || !Object.entries(parameters).every(i => i[0] in riteParametersExpectation && riteParametersExpectation[i[0]] == i[1])) {
+		cachedRites = new Object();
+		riteParametersExpectation = parameters;
+	}
+
+	async function fetchRite() {
+		let resolvedParameters = resolveParameters(parameters);
+		var response = await fetch(`/title?date=${calendarDate}
+			&hour=${occasion}
+			&select=${resolvedParameters.ambit.occasions[resolvedParameters.ambit.idindex(occasion)].title}
+		`);
+		let titleJSON = await response.json();
+		ret = riteTitle(titleJSON[0], titleJSON[1], 'large');
+		previousTitle = titleJSON[0];
+		liturgicalDay = await getLiturgicalDay(calendarDate, occasion, parameters);
+		rites = resolvedParameters.ambit.riteList(liturgicalDay.tags, occasion);
+		for (var i = 0; i < rites.length; i++) {
+			noending = false;
+			if (i != rites.length - 1 && (rites[i + 1][1] == 'officium-parvum-bmv' || rites[i + 1][1] == 'officium-defunctorum' || rites[i + 1][0] == 'psalmi-poenitentiales' || rites[i + 1][0] == 'litaniae-sanctorum' || rites[i + 1][0] == 'officium-capituli')) {
+				noending = true;
+			}
+			var response = await fetch(`/rite?date=${calendarDate}
+				&hour=${rites[i][0]}&noending=${noending}
+				&translation=${resolvedParameters.translation ? translation('{{locale}}') : 'none'}
+				&privata=${!resolvedParameters.choral ? 'privata': 'chorali'}
+				&select=${rites[i][1]}
+				&version=${version}
+			`);
+			if (response.status == 400 || response.status == 500) {
+				ret = await response.text();
+				break;
+			}
+			var json = await response.json();
+			if (!json.rite.tags.includes('aperi-domine') && !json.rite.tags.includes('sacrosanctae') && !json.rite.tags.includes('antiphona-bmv') && !json.rite.tags.includes('officium-capituli') && json['used-primary'][0] != previousTitle) {
+				ret += riteTitle(json['used-primary'][0], json['used-primary'][1], 'small');
+				previousTitle = json['used-primary'][0];
+			}
+			ret += renderRite(json, resolvedParameters);
+		}
+		return ret;
+	}
+
+	key = calendarDate + occasion;
+	if (!(key in cachedRites)) {
+		cachedRites[key] = await fetchRite();
+	}
+	return cachedRites[key];
 }

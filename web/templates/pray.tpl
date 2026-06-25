@@ -45,18 +45,20 @@
 	bottompanelopen: true,
 	search: '',
 	calendarDate: null,
-	liturgicalday: '',
+	liturgicalDay: '',
 	hour: null,
-	desired: $persist('omnes'),
-	ambit: null,
-	recitation: $persist('recto-tono'),
-	translation: $persist(false),
-	sidebyside: $persist(false),
+	parameters: $persist({
+		'desired': 'omnes',
+		'recitation': 'recto-tono',
+		'translation': false,
+		'side-by-side': false,
+		'display-trivial-chants': false,
+	}),
+	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
 	rite: '',
 	initialized: false,
 	canIncrementOccasion: true,
 	nextOccasion: $persist(null),
-	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
 	get Rite() {
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
@@ -74,55 +76,15 @@
 	getCalendarDate() {
 		return new Date(this.calendarDate.getTime() - this.calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
 	},
-	choral() {
-		return this.recitation != 'private';
-	},
-	chant() {
-		return this.recitation == 'plainchant';
-	},
-	setRecitation(recitation) {
-		this.recitation = recitation;
-		this.ambit = defineambit(this.desired, this.choral());
+	setParameters(k, v) {
+		this.parameters = {...this.parameters, [k]: v};
 	},
 	updateRiteAsyncLock: false,
 	async updateRite(scroll = true) {
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
 
-			riteRenderingOptions = {'chant': this.chant(), 'disable-trivial-chant': true, 'translation': this.translation, 'side-by-side': this.sidebyside};
-
-			var response = await fetch(`/title?date=${this.getCalendarDate()}
-				&hour=${this.hour}
-				&select=${this.ambit.occasions[this.ambit.idindex(this.hour)].title}
-			`);
-			let titleJSON = await response.json();
-			newRite = riteTitle(titleJSON[0], titleJSON[1], 'large');
-			previousTitle = titleJSON[0];
-			rites = this.ambit.riteList(this.liturgicalday.tags, this.hour);
-			for (var i = 0; i < rites.length; i++) {
-				noending = false;
-				if (i != rites.length - 1 && (rites[i + 1][1] == 'officium-parvum-bmv' || rites[i + 1][1] == 'officium-defunctorum' || rites[i + 1][0] == 'psalmi-poenitentiales' || rites[i + 1][0] == 'litaniae-sanctorum' || rites[i + 1][0] == 'officium-capituli')) {
-					noending = true;
-				}
-				var response = await fetch(`/rite?date=${this.getCalendarDate()}
-					&hour=${rites[i][0]}&noending=${noending}
-					&translation=${this.translation ? translation('{{locale}}') : 'none'}
-					&privata=${!this.choral() ? 'privata': 'chorali'}
-					&select=${rites[i][1]}
-					&version=${this.version}
-				`);
-				if (response.status == 400 || response.status == 500) {
-					newRite = await response.text();
-					break;
-				}
-				var json = await response.json();
-				if (!json.rite.tags.includes('aperi-domine') && !json.rite.tags.includes('sacrosanctae') && !json.rite.tags.includes('antiphona-bmv') && !json.rite.tags.includes('officium-capituli') && json['used-primary'][0] != previousTitle) {
-					newRite += riteTitle(json['used-primary'][0], json['used-primary'][1], 'small');
-					previousTitle = json['used-primary'][0];
-				}
-				newRite += renderRite(json, riteRenderingOptions);
-			}
-			this.rite = newRite;
+			this.rite = getRite(this.getCalendarDate(), this.hour, this.parameters, this.version);
 			if (scroll) {
 				window.scrollTo({top:0});
 			}
@@ -133,11 +95,8 @@
 		}
 	},
 	ignoreCalendarDateChange: false,
-	async updateDay() {
-		var response = await fetch(`/day?date=${this.getCalendarDate()}&time=${this.getTime()}`);
-		var json = await response.json();
-		var primary = json.primary[1];
-		this.liturgicalday = json;
+	async updateLiturgicalDay() {
+		this.liturgicalDay = await getLiturgicalDay(this.getCalendarDate(), this.getTime(), this.parameters);
 		this.updateRite();
 		this.ignoreCalendarDateChange = false;
 	},
@@ -145,7 +104,7 @@
 		oldTime = this.getTime();
 		this.hour = id;
 		if (oldTime != this.getTime()) {
-			this.updateDay();
+			this.updateLiturgicalDay();
 		} else {
 			this.updateRite();
 		}
@@ -155,7 +114,7 @@
 		this.ignoreCalendarDateChange = true;
 		this.calendarDate = this.nextOccasion[0];
 		this.search = this.getCalendarDate();
-		// This has the effect of actually hitting updateDay()
+		// This has the effect of actually hitting updateLiturgicalDay()
 		await this.setOccasion(this.nextOccasion[1]);
 	},
 	canIncrementTo() {
@@ -173,22 +132,12 @@
 	},
 	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
-		this.nextOccasion = [this.ambit.idindex(this.hour) + 1 == this.ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, this.ambit.nextOccasion(this.hour).id]
-	},
-	setAmbit(ambit) {
-		oldambit = this.ambit;
-		this.ambit = ambit;
-		this.hour = oldambit.slideAmbitOccasion(this.ambit, this.hour);
-		this.updateRite();
-		this.nextOccasion = null;
+		this.nextOccasion = [resolveParameters(this.parameters).ambit.idindex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).id]
 	}
 }" x-init="
 	dopanelsize();
 	if ('{{locale}}' == 'la') {
-		translation = false;
-	}
-	if (ambit === null) {
-		ambit = defineambit(desired, choral());
+		setParameters('translation', false);
 	}
 	if (nextOccasion && typeof nextOccasion[0] === 'string') {
 		nextOccasion[0] = new Date(nextOccasion[0]);
@@ -199,15 +148,16 @@
 		hour = nextOccasion[1];
 	} else {
 		calendarDate = new Date();
-		hour = ambit.suggestSelectedOccasion(calendarDate.getHours()).id;
+		hour = resolveParameters(parameters).ambit.suggestSelectedOccasion(calendarDate.getHours()).id;
 	}
 
-	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateDay()}});
-	$watch('desired', desired => setAmbit(defineambit(desired, choral())));
-	$watch('recitation', recitation => updateRite(false));
-	$watch('translation', translation => updateRite());
-	$watch('sidebyside', sidebyside => updateRite());
-	updateDay();
+	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateLiturgicalDay()}});
+	$watch('parameters', (parameters, oldParameters) => {
+		hour = resolveParameters(oldParameters).ambit.slideAmbitOccasion(resolveParameters(parameters).ambit, hour);
+		updateRite();
+		nextOccasion = null;
+	});
+	updateLiturgicalDay();
 	">
 		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
 			<div id="top-bar-title">
@@ -231,13 +181,13 @@
 					<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
 						% if locale != 'la':
-						<button class="options-panel-button" @click="translation = !translation" :class="translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
-						<button class="options-panel-button" @click="sidebyside = !sidebyside" :class="sidebyside? 'options-panel-button-on' : 'options-panel-button-off'">Side-by-side translation (experimental)</button>
+						<button class="options-panel-button" @click="setParameters('translation', !resolveParameters(parameters).translation)" :class="resolveParameters(parameters).translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
+						<button class="options-panel-button" @click="setParameters('side-by-side', !resolveParameters(parameters)['side-by-side'])" :class="resolveParameters(parameters)['side-by-side']? 'options-panel-button-on' : 'options-panel-button-off'">Side-by-side translation (experimental)</button>
 						% end
 						<div class="recitation-select-container">
-							<button class="options-panel-button recitation-select-button" @click="setRecitation('plainchant');" :class="recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
-							<button class="options-panel-button recitation-select-button" @click="setRecitation('recto-tono');" :class="recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
-							<button class="options-panel-button recitation-select-button" @click="setRecitation('private');" :class="recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-private']}}</button>
+							<button class="options-panel-button recitation-select-button" @click="setParameters('recitation', 'plainchant');" :class="resolveParameters(parameters).recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
+							<button class="options-panel-button recitation-select-button" @click="setParameters('recitation', 'recto-tono');" :class="resolveParameters(parameters).recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
+							<button class="options-panel-button recitation-select-button" @click="setParameters('recitation', 'private');" :class="resolveParameters(parameters).recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-private']}}</button>
 						</div>
 						<template x-if="initialized">
 							<div id="options-panel-require-initialized-container">
@@ -245,13 +195,13 @@
 									<div id="coincidences-list-container">
 										<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
 										<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-										<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalday.primary[0])"></div>
+										<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalDay.primary[0])"></div>
 										<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-										<template x-for="commemoration in liturgicalday.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
+										<template x-for="commemoration in liturgicalDay.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
 											<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 										</template>
 										<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-										<template x-for="omission in liturgicalday.omissions">
+										<template x-for="omission in liturgicalDay.omissions">
 											<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
 										</template>
 										<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
@@ -266,7 +216,7 @@
 										]}">
 											<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 											<template x-for="entry in ambitEntries">
-												<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+												<button class="options-panel-button" :class="resolveParameters(parameters).desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="setParameters('desired', entry[0])"></button>
 											</template>
 										</div>
 									</div>
@@ -281,7 +231,7 @@
 								]}">
 									<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 									<template x-for="entry in ambitEntries">
-										<button class="options-panel-button" :class="desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="desired = entry[0]"></button>
+										<button class="options-panel-button" :class="resolveParameters(parameters).desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="setParameters('desired', entry[0])"></button>
 									</template>
 								</div>
 							</div>
@@ -308,7 +258,7 @@
 									<button id="date-selector-increment" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
 								<div id="rite-selector-container">
-									<template x-for="occasion in ambit.occasions">
+									<template x-for="occasion in resolveParameters(parameters).ambit.occasions">
 										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
 									</template>
 								</div>
