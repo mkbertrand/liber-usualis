@@ -65,8 +65,8 @@
 		}
 		return this.rite;
 	},
-	getTime() {
-		return (this.hour == 'vesperae' || this.hour == 'completorium') ? 'vesperale' : 'diurnale';
+	getTime(occasion) {
+		return (occasion == 'vesperae' || occasion == 'completorium') ? 'vesperale' : 'diurnale';
 	},
 	// Sets this.calendarDate with a local date which is adjusted to UTC.
 	setCalendarDate(calendarDate) {
@@ -96,14 +96,14 @@
 	},
 	ignoreCalendarDateChange: false,
 	async updateLiturgicalDay() {
-		this.liturgicalDay = await getLiturgicalDay(this.getCalendarDate(), this.getTime(), this.parameters);
+		this.liturgicalDay = await getLiturgicalDay(this.getCalendarDate(), this.getTime(this.hour), this.parameters);
 		this.updateRite();
 		this.ignoreCalendarDateChange = false;
 	},
 	setOccasion(id) {
-		oldTime = this.getTime();
+		oldTime = this.getTime(this.hour);
 		this.hour = id;
-		if (oldTime != this.getTime()) {
+		if (oldTime != this.getTime(this.hour)) {
 			this.updateLiturgicalDay();
 		} else {
 			this.updateRite();
