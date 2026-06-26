@@ -65,16 +65,13 @@
 		}
 		return this.rite;
 	},
-	getTime(occasion) {
-		return (occasion == 'vesperae' || occasion == 'completorium') ? 'vesperale' : 'diurnale';
-	},
 	// Sets this.calendarDate with a local date which is adjusted to UTC.
 	setCalendarDate(calendarDate) {
 		this.calendarDate = new Date(new Date(calendarDate + new Date().toISOString().substring(10)).getTime() + this.calendarDate.getTimezoneOffset() * 60000);
 	},
 	// Returns the date (yyyy-mm-dd) adjusted for timezone.
-	getCalendarDate() {
-		return new Date(this.calendarDate.getTime() - this.calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
+	getCalendarDate(calendarDate) {
+		return new Date(calendarDate.getTime() - calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
 	},
 	setParameters(k, v) {
 		this.parameters = {...this.parameters, [k]: v};
@@ -84,7 +81,7 @@
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
 
-			this.rite = getRite(this.getCalendarDate(), this.hour, this.parameters, this.version);
+			this.rite = getRite(this.getCalendarDate(this.calendarDate), this.hour, this.parameters, this.version);
 			if (scroll) {
 				window.scrollTo({top:0});
 			}
@@ -96,14 +93,14 @@
 	},
 	ignoreCalendarDateChange: false,
 	async updateLiturgicalDay() {
-		this.liturgicalDay = await getLiturgicalDay(this.getCalendarDate(), this.getTime(this.hour), this.parameters);
+		this.liturgicalDay = await getLiturgicalDay(this.getCalendarDate(this.calendarDate), getTime(this.hour), this.parameters);
 		this.updateRite();
 		this.ignoreCalendarDateChange = false;
 	},
 	setOccasion(id) {
-		oldTime = this.getTime(this.hour);
+		oldTime = getTime(this.hour);
 		this.hour = id;
-		if (oldTime != this.getTime(this.hour)) {
+		if (oldTime != getTime(this.hour)) {
 			this.updateLiturgicalDay();
 		} else {
 			this.updateRite();
@@ -113,7 +110,7 @@
 		// Otherwise things will happen async that need to be synchronous
 		this.ignoreCalendarDateChange = true;
 		this.calendarDate = this.nextOccasion[0];
-		this.search = this.getCalendarDate();
+		this.search = this.getCalendarDate(this.calendarDate);
 		// This has the effect of actually hitting updateLiturgicalDay()
 		await this.setOccasion(this.nextOccasion[1]);
 	},
@@ -132,7 +129,8 @@
 	},
 	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
-		this.nextOccasion = [resolveParameters(this.parameters).ambit.idindex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).id]
+		this.nextOccasion = [resolveParameters(this.parameters).ambit.idindex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).id];
+		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters, this.version);
 	}
 }" x-init="
 	dopanelsize();
@@ -252,14 +250,14 @@
 							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 								<div id="date-selector-container">
-									<button id="date-selector-decrement" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-left.svg" /></button>
-									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate()">
-									<button id="date-selector-text-submit" class="date-selector-button" @click="setCalendarDate(search);"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-									<button id="date-selector-increment" class="date-selector-button" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate()"><img src="/resources/svg/arrow-right.svg" /></button>
+									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-left.svg" /></button>
+									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate(calendarDate)">
+									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters, version)" @click="setCalendarDate(search)"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
 								<div id="rite-selector-container">
 									<template x-for="occasion in resolveParameters(parameters).ambit.occasions">
-										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
+										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @mouseover.throttle="getRite(getCalendarDate(calendarDate), occasion.id, parameters, version)" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
 									</template>
 								</div>
 							</div>
