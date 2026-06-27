@@ -157,7 +157,7 @@ def title():
 	try:
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
-		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium'}), parameters['select'] if 'select' in parameters else 'diei')
+		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei')
 		primary = [i for i in tags if 'primarium' in i][0]
 		pile = context.getpile(breviarium.defaultpile | primary | set(hours))
 		return datamanage.dump_data([getname(primary, pile), primary])
@@ -181,7 +181,7 @@ def rite():
 	try:
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
-		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium'}), parameters['select'] if 'select' in parameters else 'diei')
+		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei')
 		private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 		if private:
 			tags = [i | {'privata'} for i in tags]

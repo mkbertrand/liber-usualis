@@ -257,6 +257,17 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 	}
 }
 
+benedictioMensaeAmbit = new Ambit(
+	new Occasion('Pro Prandio', [
+		new Rite('pro-prandio', 'diei', true),
+	], 'matutinum', 'diei'),
+	new Occasion('Pro Cœna', [
+		new Rite('pro-coena', 'diei', true),
+	], 'vesperae', 'diei')
+);
+
+benedictioMensaeAmbit.suggestSelectedOccasion = defunctAmbit.suggestSelectedOccasion;
+
 function singleOccasionAmbit(name, desired) {
 	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], 'matutinum', 'diei'));
 }
@@ -285,7 +296,7 @@ function defineAmbit(desired, choral = true) {
 			ambit = singleOccasionAmbit('Formula ad Impertiendam Indulgentiam', desired);
 			break;
 		case 'benedictio-mensae':
-			ambit = singleOccasionAmbit('Benedictio Mensæ', desired);
+			ambit = benedictioMensaeAmbit;
 			break;
 		case 'itinerarium':
 			ambit = singleOccasionAmbit('Itinerarium Clericorum', desired);

@@ -85,7 +85,8 @@ const RITE_HEADERS = {
 	'litaniae-sanctorum': 'Litaniæ Sanctorum.',
 	'ordo-commendationis-animae': 'Ordo Commendationis Animæ.',
 	'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenarium in Articulo Mortis.',
-	'benedictio-mensae': 'Benedictio Mensæ.',
+	'pro-prandio': 'Benedictio Mensæ.',
+	'pro-coena': 'Benedictio Mensæ.',
 	'itinerarium': 'Itinerarium Clericorum.',
 	'officium-capituli': 'Martyrologium.'
 };
@@ -94,11 +95,7 @@ const GENERAL_HEADERS = {
 	'psalmi': 'Psalmi.',
 	'collecta-primaria': 'Collecta.',
 	'invitatorium': 'Invitatorium.',
-	'haec-dies': 'Antiphona.',
-	'ante-prandium': 'Ante Prandium.',
-	'post-prandium': 'Post Prandium.',
-	'ante-coenam': 'Ante Cœnam.',
-	'post-coenam': 'Post Cœnam.'
+	'haec-dies': 'Antiphona.'
 };
 
 const NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
@@ -216,7 +213,7 @@ function renderRite(data, options) {
 				for (let i = 0; i < data.length; i++) {
 					// For some rubric texts, they're whole lines.
 					if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
-						makeHeadingAnnotation(data[i].slice(1, -2));
+						makeHeadingAnnotation(rubricRender(data[i].slice(1, -2)));
 					} else {
 						renderInner(data[i], Array.isArray(translated) && translated.length == data.length ? translated[i] : null, parentTags);
 					}
@@ -271,7 +268,17 @@ function renderRite(data, options) {
 							makeCenteredHeader(GENERAL_HEADERS[i]);
 						}
 					}
-					if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
+					if (data.tags.includes('benedictio-mensae')) {
+						if (data.tags.includes('ante-prandium')) {
+							makeCenteredHeader('[Ante Prandium.]');
+						} else if (data.tags.includes('post-prandium')) {
+							makeCenteredHeader('[Post Prandium.]');
+						} else if (data.tags.includes('ante-coenam')) {
+							makeCenteredHeader('[Ante Cœnam.]');
+						} else if (data.tags.includes('post-coenam')) {
+							makeCenteredHeader('[Post Cœnam.]');
+						}
+					} else if (data.tags.includes('te-deum') && data.tags.includes('hymnus')) {
 						makeCenteredHeader('Hymnus [Te Deum.]');
 					} else if (uniquelyhas('capitulum') && !data.tags.includes('pascha')) {
 						if (data.quaesitum.includes('officium-parvum-bmv') && !['vesperae', 'laudes'].some(tag => parentTags.includes(tag))) {

@@ -17,7 +17,7 @@ import functools
 
 import psalms
 
-defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis'}
+defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
 
 def flattensetlist(sets):
 	ret = set()

@@ -8,5 +8,11 @@
 	["responsorium-i","responsorium-ii","responsorium-iii"],
 	["ritus","nocturna","responsorium"],
 	["formula","incipit","responsum","responsum-i","responsum-ii","versus","responsum-iii","versus-i","versus-ii","versus-iii"],
-	["/objecta"]
+	["/objecta"],
+	[
+		"ante-prandium",
+		"post-prandium",
+		"ante-coenam",
+		"post-coenam"
+	]
 ]

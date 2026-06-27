@@ -14,15 +14,27 @@
 			["domine-exaudi"],
 			["dominus-vobiscum"],
 			"Orémus.",
-			"Clementíssime Deus, Pater misericordiárum, et Deus totíus consolatiónis, qui néminem vis períre in te credéntem atque sperántem: secúndum multitúdinem miseratiónum tuárum réspice propítius fámulum tuum N. quem tibi vera fides et spes christiána comméndant. Vísita eum in salutári tuo, et per Unigéniti tui passiónem et mortem, ómnium ei delictórum suórum remissiónem et véniam cleménter indúlge, ut ejus ánima in hora éxitus sui te júdicem propitiátum invéniat, et in sánguine ejúsdem Fílii tui ab omni mácula ablúta, transíre ad vitam mereátur perpétuam.",
+			{
+				"tags":["formula-indulgentiam-articulo-mortis","collecta","collecta-i"],
+				"datum":"Clementíssime Deus, Pater misericordiárum, et Deus totíus consolatiónis, qui néminem vis períre in te credéntem atque sperántem: secúndum multitúdinem miseratiónum tuárum réspice propítius fámulum tuum N. quem tibi vera fides et spes christiána comméndant. Vísita eum in salutári tuo, et per Unigéniti tui passiónem et mortem, ómnium ei delictórum suórum remissiónem et véniam cleménter indúlge, ut ejus ánima in hora éxitus sui te júdicem propitiátum invéniat, et in sánguine ejúsdem Fílii tui ab omni mácula ablúta, transíre ad vitam mereátur perpétuam."
+			},
 			["terminatio","per-eumdem-christum"],
 			"Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, ómnibus Sanctis, et tibi Pater: quia peccávi nimis, cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, omnes Sanctos, et te Pater, oráre pro me ad Dóminum Deum nostrum.",
 			"Misereátur vestri omnípotens Deus, et dimíssis peccátis vestris, perdúcat vos ad vitam ætérnam.",
 			"R. Amen.",
-			"Dóminus noster Jesus Christus, Fílius Dei vivi, qui beáto Petro Apóstolo suo dedit potestátem ligándi atque solvéndi, per suam piíssimam misericórdiam recípiat confessiónem tuam, et restítuat tibi stolam primam, quam in baptísmate recepísti: et ego, facultáte mihi ab apostólica sede tribúta, indulgéntiam plenáriam et remissiónem ómnium peccatórum tibi concédo. In nómine Patris ✠, et Fílii, et Spíritus sancti.","R. Amen.",
-			"Per sacrosáncta humánæ reparatiónis mystéria, remíttat tibi omnípotens Deus omnes præséntis et futúræ vitæ pœnas, paradísi portas apériat, et ad gaúdia sempitérna perdúcat.","R. Amen.",
+			"[Tunc dicto ab uno e Clericis adstantibus, [Confíteor,] Sacerdos dicat [Misereátur,] ac deinde:/]",
+			{
+				"tags":["formula-indulgentiam-articulo-mortis","collecta","collecta-ii"],
+				"datum":"Dóminus noster Jesus Christus, Fílius Dei vivi, qui beáto Petro Apóstolo suo dedit potestátem ligándi atque solvéndi, per suam piíssimam misericórdiam recípiat confessiónem tuam, et restítuat tibi stolam primam, quam in baptísmate recepísti: et ego, facultáte mihi ab apostólica sede tribúta, indulgéntiam plenáriam et remissiónem ómnium peccatórum tibi concédo. In nómine Patris ✠, et Fílii, et Spíritus sancti."
+			},
+			"R. Amen.",
+			{
+				"tags":["formula-indulgentiam-articulo-mortis","collecta","collecta-ii"],
+				"datum":"Per sacrosáncta humánæ reparatiónis mystéria, remíttat tibi omnípotens Deus omnes præséntis et futúræ vitæ pœnas, paradísi portas apériat, et ad gaúdia sempitérna perdúcat."
+			},
+			"R. Amen.",
 			"Benedícat te omnípotens Deus Pater ✠, et Fílius, et Spíritus sanctus.",
-			"[Si vero Infirmus sit adeo morti proximus, ut neque confessionis generalis faciendæ, neque præmissarum precum recitandarum suppetat tempus, statim sacerdos benedictionem ei impertiatur, dicendo: [Dóminus noster, etc.]/Et si mors proxime urgeat, dicat.]",
+			"[Si vero Infirmus sit adeo morti proximus, ut neque confessionis generalis faciendæ, neque præmissarum precum recitandarum suppetat tempus, statim sacerdos benedictionem ei impertiatur, dicendo: [Dóminus noster, etc.]/Et si mors proxime urgeat, dicat./]",
 			"Indulgéntiam plenáriam et remissiónem peccatórum tibi concédo, in nómine Patris ✠, et Fílii, et Spíritus sancti.","R. Amen."
 		],
 		"pro-femina":[

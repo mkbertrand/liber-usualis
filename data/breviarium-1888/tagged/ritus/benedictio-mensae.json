@@ -1,11 +1,9 @@
 [
 	{
-		"tags":["benedictio-mensae","ritus"],
+		"tags":["ante-prandium","versus-benedictionis"],
 		"datum":[
-			["benedictio-mensae","ante-prandium"],
-			["benedictio-mensae","post-prandium"],
-			["benedictio-mensae","ante-coenam"],
-			["benedictio-mensae","post-coenam"]
+			"V. Óculi ómnium,",
+			"R. In te sperant, Dómine, et tu das escam illórum in témpore opportúno. Áperis tu manum tuam, et imples omne ánimal benedictióne."
 		]
 	},
 	{
@@ -13,21 +11,33 @@
 		"datum":[
 			"V. Benedícite.",
 			"R. Benedícite.",
-			"V. Óculi ómnium,",
-			"In te sperant, Dómine, et tu das escam illórum in témpore opportúno. Áperis tu manum tuam, et imples omne ánimal benedictióne.",
-			"Glória Patri, et Fílio, * et Spirítui sancto.",
-			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
+			["ante-prandium","versus-benedictionis"],
+			["gloria-versorum"],
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],
-			"[Postea Sacerdos dicit:]",
+			"[Postea Sacerdos dicit:/]",
 			"Orémus.",
-			"Bénedic Dómine nos, et hæc tua dona, quæ de tua largitáte sumus sumptúri.",
+			{
+				"tags":["ante-prandium","collecta"],
+				"datum":"Bénedic Dómine nos, et hæc tua dona, quæ de tua largitáte sumus sumptúri."
+			},
 			["terminatio","per-christum"],
-			"[Deinde Lector:]",
+			"[Deinde Lector:/]",
 			"Jube domne benedícere.",
 			"Mensæ cœléstis partícipes fáciat nos Rex ætérnæ glóriæ.",
 			"R. Amen."
 		]
+	},
+	{
+		"tags":["post-prandium","versus-benedictionis"],
+		"datum":[
+			"V. Confiteántur tibi Dómine ómnia ópera tua.",
+			"R. Et sancti tui benedícant tibi."
+		]
+	},
+	{
+		"tags":["post-prandium","psalmus"],
+		"datum":[["/psalmi/psalmus-l,gloria"]]
 	},
 	{
 		"tags":["benedictio-mensae","post-prandium"],
@@ -35,15 +45,17 @@
 			"Tu autem Dómine miserére nobis.",
 			"R. Deo grátias.",
 			"[Omnes surgunt.]",
-			"V. Confiteántur tibi Dómine ómnia ópera tua.",
-			"R. Et sancti tui benedícant tibi.",
-			"Glória Patri, et Fílio, * et Spirítui sancto.",
-			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
-			"[Postea Sacerdos absolute dicat:]",
-			"Ágimus tibi grátias, omnípotens Deus, pro univérsis benefíciis tuis: Qui vivis et regnas in sǽcula sæculórum.",
+			["post-prandium","versus-benedictionis"],
+			["gloria-versorum"],
+			"[Postea Sacerdos absolute dicat:/]",
+			{
+				"tags":["post-prandium","collecta","collecta-i"],
+				"datum":"Ágimus tibi grátias, omnípotens Deus, pro univérsis benefíciis tuis:"
+			},
+			"Qui vivis et regnas in sǽcula sæculórum.",
 			"R. Amen.",
 			"[Deinde alternatim dicitur Psalmus./]",
-			["/psalmi/psalmus-l,gloria"],
+			["post-prandium","psalmus"],
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],
 			"V. Dispérsit, dedit paupéribus.",
@@ -56,14 +68,25 @@
 			"R. Et exaltémus nomen ejus in idípsum.",
 			"V. Sit nomen Dómini benedíctum.",
 			"R. Ex hoc nunc et usque in sǽculum.",
-			"Retribúere dignáre Dómine ómnibus nobis bona faciéntibus propter nomen tuum vitam ætérnam.",
+			"[Deinde sine [Orémus.]/]",
+			{
+				"tags":["post-prandium","collecta","collecta-ii"],
+				"datum":"Retribúere dignáre Dómine ómnibus nobis bona faciéntibus propter nomen tuum vitam ætérnam."
+			},
 			"R. Amen.",
-			"V. Benedicámus Dómino.",
-			"R. Deo grátias.",
+			["hora-minor","benedicamus-domino"],
 			["fidelium-animae"],
+			"[Dicitur secreto./]",
 			["pater-noster-secreta"],
 			"V. Deus det nobis suam pacem.",
 			"R. Amen."
+		]
+	},
+	{
+		"tags":["ante-coenam","versus-benedictionis"],
+		"datum":[
+			"V. Edent paúperes.",
+			"R. Et saturabúntur, et laudábunt Dóminum, qui requírunt eum: vivent corda eórum in sǽculum sǽculi."
 		]
 	},
 	{
@@ -71,31 +94,41 @@
 		"datum":[
 			"V. Benedícite.",
 			"R. Benedícite.",
-			"V. Edent paúperes.",
-			"R. Et saturabúntur, et laudábunt Dóminum, qui requírunt eum: vivent corda eórum in sǽculum sǽculi.",
-			"Glória Patri, et Fílio, * et Spirítui sancto.",
-			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
+			["ante-coenam","versus-benedictionis"],
+			["gloria-versorum"],
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
 			["pater-noster-semisecreta"],
-			"[Postea Sacerdos dicit:]",
+			"[Postea Sacerdos dicit:/]",
 			"Orémus.",
-			"Bénedic Dómine nos, et hæc tua dona, quæ de tua largitáte sumus sumptúri.",
+			{
+				"tags":["ante-coenam","collecta"],
+				"datum":"Bénedic Dómine nos, et hæc tua dona, quæ de tua largitáte sumus sumptúri."
+			},
 			["terminatio","per-christum"],
-			"[Deinde Lector:]",
+			"[Deinde Lector:/]",
 			"Jube domne benedícere.",
 			"Ad cœnam vitæ ætérnæ perdúcat nos Rex ætérnæ glóriæ.",
 			"R. Amen."
 		]
 	},
 	{
-		"tags":["benedictio-mensae","post-coenam"],
+		"tags":["post-coenam","versus-benedictionis"],
 		"datum":[
 			"V. Memóriam fecit mirabílium suórum miséricors et miserátor Dóminus.",
-			"R. Escam dedit timéntibus se.",
-			"Glória Patri, et Fílio, * et Spirítui sancto.",
-			"Sicut erat in princípio, et nunc, et semper: * et in sǽcula sæculórum. Amen.",
-			"[Sacérdos dicat:]",
-			"Benedíctus Deus in donis suis, et sanctus in opéribus suis: Qui vivit et regnat in sǽcula sæculórum.",
+			"R. Escam dedit timéntibus se."
+		]
+	},
+	{
+		"tags":["benedictio-mensae","post-coenam"],
+		"datum":[
+			["post-coenam","versus-benedictionis"],
+			["gloria-versorum"],
+			"[Postea Sacerdos absolute dicat:/]",
+			{
+				"tags":["post-coenam","collecta","collecta-i"],
+				"datum":"Benedíctus Deus in donis suis, et sanctus in opéribus suis:"
+			},
+			"Qui vivit et regnat in sǽcula sæculórum.",
 			"R. Amen.",
 			["/psalmi/psalmus-cxvi,gloria"],
 			"Kýrie eléison. Christe eléison. Kýrie eléison.",
@@ -110,14 +143,131 @@
 			"R. Et exaltémus nomen ejus in idípsum.",
 			"V. Sit nomen Dómini benedíctum.",
 			"R. Ex hoc nunc et usque in sǽculum.",
-			"Retribúere dignáre Dómine ómnibus nobis bona faciéntibus propter nomen tuum vitam ætérnam.",
+			"[Deinde sine [Orémus.]/]",
+			{
+				"tags":["post-coenam","collecta","collecta-ii"],
+				"datum":"Retribúere dignáre Dómine ómnibus nobis bona faciéntibus propter nomen tuum vitam ætérnam."
+			},
 			"R. Amen.",
-			"V. Benedicámus Dómino.",
-			"R. Deo grátias.",
+			["hora-minor","benedicamus-domino"],
 			["fidelium-animae"],
 			["pater-noster-secreta"],
 			"V. Deus det nobis suam pacem.",
 			"R. Amen."
 		]
+	},
+	{
+		"tags":[
+			["in-tempore-nativitatis","ante-prandium","versus-benedictionis"],
+			["in-tempore-nativitatis","ante-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Verbum caro factum est, allelúja.","R. Et habitávit in nobis, allelúja."]
+	},
+	{
+		"tags":[
+			["in-tempore-nativitatis","post-prandium","psalmus"],
+			["sollemnitas","post-prandium","psalmus"]
+		],
+		"datum":[["/psalmi/psalmus-xcvii,gloria"]]
+	},
+	{
+		"tags":[
+			["in-tempore-nativitatis","post-prandium","versus-benedictionis"],
+			["in-tempore-nativitatis","post-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Notum fecit Dóminus, allelúja.","R. Salutáre suum, allelúja."]
+	},
+	{
+		"tags":[
+			["per-octavam-epiphaniae","ante-prandium","versus-benedictionis"],
+			["per-octavam-epiphaniae","ante-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Reges Tharsis et ínsulæ múnera ófferent, allelúja.","R. Reges Árabum et Saba dona addúcent, allelúja."]
+	},
+	{
+		"tags":[
+			["per-octavam-epiphaniae","post-prandium","versus-benedictionis"],
+			["per-octavam-epiphaniae","post-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Omnes de Saba vénient, allelúja.","R. Aurum et thus deferéntes, allelúja."]
+	},
+	{
+		"tags":["per-octavam-epiphaniae","post-prandium","psalmus"],
+		"datum":[["/psalmi/psalmus-lxxi,gloria"]]
+	},
+	{
+		"tags":[
+			["triduum","benedictio-mensae","ante-prandium"],
+			["triduum","benedictio-mensae","ante-coenam"]
+		],
+		"datum":[
+			["christus-factus"],
+			"[Dicitur secreto./]",
+			["pater-noster-secreta"],
+			"[Quo dicto, sine pronuntiatione aliqua Sacerdos signo Crucis benedicit mensam: nec dicitur [Jube domne.] nec [Tu autem.]]"
+		]
+	},
+	{
+		"tags":[
+			["triduum","benedictio-mensae","post-prandium"],
+			["triduum","benedictio-mensae","post-coenam"]
+		],
+		"datum":[
+			["christus-factus"],
+			["/psalmi/psalmus-l"],
+			"[Dicitur secreto./]",
+			["pater-noster-secreta"],
+			["collecta"],
+			"[Et non pronuntiatur [Qui tecum.] nec [Fidélium ánimæ.] sed secreto dicitur.]",
+			["pater-noster-secreta"]
+		]
+	},
+	{
+		"tags":["pascha","i-vesperae","pro-coena","versus-benedictionis"],
+		"datum":["V. Véspere autem sábbati, quæ lucéscit in prima sábbati, allelúja.","R. Venit María Magdaléne, et áltera María vidére sepúlchrum, allelúja."]
+	},
+	{
+		"tags":["pascha","versus-benedictionis"],
+		"datum":["V. Hæc dies quam fecit Dóminus, allelúja.","R. Exsultémus et lætémur in ea, allelúja."]
+	},
+	{
+		"tags":["pascha","post-prandium","psalmus"],
+		"datum":[["/psalmi/psalmus-cxvii,gloria"]]
+	},
+	{
+		"tags":[
+			["in-tempore-ascensionis","ante-prandium","versus-benedictionis"],
+			["in-tempore-ascensionis","ante-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Ascéndit Deus in jubilatióne, allelúja.","R. Et Dóminus in voce tubæ, allelúja."]
+	},
+	{
+		"tags":[
+			["in-tempore-ascensionis","post-prandium","versus-benedictionis"],
+			["in-tempore-ascensionis","post-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Ascéndens Christus in altum, allelúja.","R. Captívam duxit captivitátem, allelúja."]
+	},
+	{
+		"tags":["in-tempore-ascensionis","post-prandium","psalmus"],
+		"datum":[["/psalmi/psalmus-xlvi,gloria"]]
+	},
+	{
+		"tags":[
+			["pentecostes","ante-prandium","versus-benedictionis"],
+			["pentecostes","ante-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Spíritus Dómini replévit orbem terrárum, allelúja.","R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja."]
+	},
+	{
+		"tags":[
+			["pentecostes","post-prandium","versus-benedictionis"],
+			["pentecostes","post-coenam","versus-benedictionis"]
+		],
+		"datum":["V. Repléti sunt omnes Spíritu sancto, allelúja.","R. Et cœpérunt loqui, allelúja."]
+	},
+	{
+		"tags":["pentecostes","post-prandium","psalmus"],
+		"datum":[["/psalmi/psalmus-xlvii,gloria"]]
 	}
 ]
