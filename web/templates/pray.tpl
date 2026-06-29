@@ -179,61 +179,70 @@
 					<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
 						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
 						% if locale != 'la':
-						<button class="options-panel-button" @click="setParameters('translation', !resolveParameters(parameters).translation)" :class="resolveParameters(parameters).translation? 'options-panel-button-on' : 'options-panel-button-off'">{{text['translation-toggle']}}</button>
-						<button class="options-panel-button" @click="setParameters('side-by-side', !resolveParameters(parameters)['side-by-side'])" :class="resolveParameters(parameters)['side-by-side']? 'options-panel-button-on' : 'options-panel-button-off'">Side-by-side translation (experimental)</button>
+						<div>
+							<input type="checkbox" id="translation-toggle" @click="setParameters('translation', !resolveParameters(parameters).translation)" />
+							<label for="translation-toggle">{{text['translation-toggle']}}</label>
+						</div>
+						<div>
+							<input type="checkbox" id="side-by-side-toggle" @click="setParameters('side-by-side', !resolveParameters(parameters)['side-by-side'])" :disabled="!resolveParameters(parameters).translation" />
+							<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">Side-by-side translation (experimental)</label>
+						</div>
 						% end
-						<div class="recitation-select-container">
-							<button class="options-panel-button recitation-select-button" @click="setParameters('recitation', 'plainchant');" :class="resolveParameters(parameters).recitation == 'plainchant'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-plainchant']}}</button>
-							<button class="options-panel-button recitation-select-button" @click="setParameters('recitation', 'recto-tono');" :class="resolveParameters(parameters).recitation == 'recto-tono'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-recto-tono']}}</button>
-							<button class="options-panel-button recitation-select-button" @click="setParameters('recitation', 'private');" :class="resolveParameters(parameters).recitation == 'private'? 'options-panel-button-on' : 'options-panel-button-off'">{{text['recitation-select-private']}}</button>
+						<div x-data="{recitation: parameters.recitation}" x-init="$watch('recitation', recitation => setParameters('recitation', recitation))">
+							<div>
+								<input type="radio" value="plainchant" id="recitation-select-plainchant" x-model="recitation" />
+								<label for="recitation-select-plainchant">{{text['recitation-select-plainchant']}}</label>
+							</div>
+							<div>
+								<input type="radio" value="recto-tono" id="recitation-select-recto-tono" x-model="recitation" />
+								<label for="recitation-select-recto-tono">{{text['recitation-select-recto-tono']}}</label>
+							</div>
+							<div>
+								<input type="radio" value="private" id="recitation-select-private" x-model="recitation" />
+								<label for="recitation-select-private">{{text['recitation-select-private']}}</label>
+							</div>
 						</div>
 						<template x-if="initialized">
 							<div id="options-panel-require-initialized-container">
-								<div id="options-panel-sides">
-									<div id="coincidences-list-container">
-										<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
-										<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-										<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalDay.primary[0])"></div>
-										<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-										<template x-for="commemoration in liturgicalDay.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
-											<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
-										</template>
-										<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-										<template x-for="omission in liturgicalDay.omissions">
-											<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
-										</template>
-										<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
-									</div>
-									<div id="ambit-select-wrapper">
-										<div id="ambit-select-container" x-data="{ambitEntries: [
-											['omnes', 'Officium'],
-											['diei', 'Officium diei'],
-											['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
-											['officium-defunctorum', 'Officium Defunctorum'],
-											['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']
-										]}">
-											<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-											<template x-for="entry in ambitEntries">
-												<button class="options-panel-button" :class="resolveParameters(parameters).desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="setParameters('desired', entry[0])"></button>
-											</template>
-										</div>
-									</div>
-								</div>
-								<div id="occasional-rite-selection" x-data="{ambitEntries: [
-									['psalmi-graduales', 'Psalmi Graduales'],
-									['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
-									['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
-									['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis.'],
-									['benedictio-mensae', 'Benedictio Mensæ'],
-									['itinerarium', 'Itinerarium Clericorum'],
-								]}">
-									<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-									<template x-for="entry in ambitEntries">
-										<button class="options-panel-button" :class="resolveParameters(parameters).desired == entry[0] ? 'options-panel-button-on' : 'options-panel-button-off'" x-text="entry[1]" @click="setParameters('desired', entry[0])"></button>
+								<div id="coincidences-list-container">
+									<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
+									<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
+									<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalDay.primary[0])"></div>
+									<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
+									<template x-for="commemoration in liturgicalDay.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
+										<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
 									</template>
+									<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
+									<template x-for="omission in liturgicalDay.omissions">
+										<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
+									</template>
+									<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
 								</div>
 							</div>
 						</template>
+						<div id="desired-select-wrapper">
+							<div id="desired-select-container" x-data="{ambitEntries: [
+								['omnes', 'Officium'],
+								['diei', 'Officium diei'],
+								['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
+								['officium-defunctorum', 'Officium Defunctorum'],
+								['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.'],
+								['psalmi-graduales', 'Psalmi Graduales'],
+								['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
+								['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
+								['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis.'],
+								['benedictio-mensae', 'Benedictio Mensæ'],
+								['itinerarium', 'Itinerarium Clericorum']
+							], desired: parameters.desired}" x-init="$watch('desired', desired => setParameters('desired', desired))">
+								<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
+								<template x-for="entry in ambitEntries">
+									<div>
+										<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" x-model="desired" />
+										<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
+									</div>
+								</template>
+							</div>
+						</div>
 						<div id="bottom-panel-options-container">
 							<button id="bottom-panel-toggle-button" class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
 							<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>

@@ -40,7 +40,7 @@ body {
 	font-family: times;
 	font-size: 16px;
 	background-color: var(--button-color);
-	border-radius: 7px;
+	border-radius: 3px;
 	border: none;
 	color: black;
 	cursor: pointer;
@@ -146,7 +146,7 @@ tspan[style="font-family:'Exsurge Characters';fill:#f00;"] {
 button {
 	font-family: times;
 	background-color: var(--button-color);
-	border-radius: 7px;
+	border-radius: 3px;
 	color: black;
 	cursor: pointer;
 	border: none;
