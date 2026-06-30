@@ -105,7 +105,9 @@ def daytags(vesperal = False):
 
 	day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 
-	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(context, day))
+	votives = parameters['votives'].replace(' ', '+').split('+')
+
+	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(context, day, votives))
 
 	pile = context.getpile(flattensetlist(tags) | {'formulae'})
 

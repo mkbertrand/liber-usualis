@@ -6,8 +6,8 @@
 			{"include":["duplex-ii-classis","primarium"],"response":"dele","target":0},
 			{"include":["duplex-majus","primarium"],"response":"dele","target":0},
 			{"include":["duplex-minus","primarium"],"response":"dele","target":0},
-			{"include":["antiphona-major","primarium"],"response":"dele","target":0},
-			{"include":["feria-iv","cinerum","primarium"],"response":"dele","target":0},
+			{"include":["antiphona-major","primarium","ii-vesperae"],"response":"dele","target":0},
+			{"include":["feria-iv","cinerum","primarium","ii-vesperae"],"response":"dele","target":0},
 			{"include":["in-tempore-passionis","primarium"],"response":"dele","target":0}
 		]
 	},

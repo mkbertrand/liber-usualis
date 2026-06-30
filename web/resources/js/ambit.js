@@ -355,8 +355,10 @@ async function getLiturgicalDay(calendarDate, time, parameters) {
 		dayParametersExpectation = JSON.stringify(parameters);
 	}
 
+	let resolvedParameters = resolveParameters(parameters);
+
 	async function fetchLiturgicalDay() {
-		return fetch(`/day?date=${calendarDate}&time=${time}`).then(response => response.json());
+		return fetch(`/day?date=${calendarDate}&time=${time}&votives=${resolvedParameters.votives}`).then(response => response.json());
 	}
 
 	let key = calendarDate + time;
