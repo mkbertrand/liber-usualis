@@ -35,4 +35,7 @@ def get_resource_version(path):
 		return hashlib.md5(f.read().encode('utf-8')).hexdigest()
 
 def get_versioned_resource(path):
-	return f'/resources{path}?v={get_resource_version(path)}'
+	if os.path.exists(f'web/resources{path}'):
+		return f'/resources{path}?v={get_resource_version(path)}'
+	else:
+		return f'/resources{path}'

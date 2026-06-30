@@ -14,7 +14,7 @@ const panelratio = 3/10;
 var panelsopen = false;
 var panelquotient = 0;
 var riteheight = 1;
-function dopanelsize() {
+function doPanelSize() {
 	var height = $(window).innerHeight() - parseInt(window.getComputedStyle(document.body).getPropertyValue('--top-bar-title-height').slice(0, -2)) - 1;
 	var minritewidth = height / 1.6;
 	var panelwidth = height * panelratio;

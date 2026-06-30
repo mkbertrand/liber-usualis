@@ -1,0 +1,31 @@
+#rite-container {
+	padding: 10px 30px 10px 30px;
+	font-size: 18px;
+}
+
+.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
+	font-size: initial;
+	float: initial;
+	line-height: initial;
+}
+
+#next-hour-button-container {
+	padding: 0 30px 60px 30px;
+}
+
+#next-hour-forbidden-tooltip {
+	top: 5px;
+}
+
+#options-panel-wrapper-mobile {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	background-color: var(--generic-white-background-color);
+	z-index: 1;
+}
+
+#options-panel {
+	padding-bottom: 100px;
+}
