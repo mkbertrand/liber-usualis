@@ -41,28 +41,32 @@
 			["de-eucharistiae-sacramento","majus","matutinum","lectio"],
 			["de-eucharistiae-sacramento","junius","matutinum","lectio"]
 		],
-		"datum":[["corpus-christi","dies-v","lectio"]]
+		"nocturna-ii":[["corpus-christi","dies-v","lectio"]],
+		"nocturna-iii":[["corpus-christi","dies-v","lectio"]]
 	},
 	{
 		"tags":[
 			["de-eucharistiae-sacramento","julius","matutinum","lectio"],
 			["de-eucharistiae-sacramento","augustus","matutinum","lectio"]
 		],
-		"datum":[["corpus-christi","dies-vi","lectio"]]
+		"nocturna-ii":[["corpus-christi","dies-vi","lectio"]],
+		"nocturna-iii":[["corpus-christi","dies-vi","lectio"]]
 	},
 	{
 		"tags":[
 			["de-eucharistiae-sacramento","september","matutinum","lectio"],
 			["de-eucharistiae-sacramento","october","matutinum","lectio"]
 		],
-		"datum":[["corpus-christi","dies-vii","lectio"]]
+		"nocturna-ii":[["corpus-christi","dies-vii","lectio"]],
+		"nocturna-iii":[["corpus-christi","dies-vii","lectio"]]
 	},
 	{
 		"tags":[
 			["de-eucharistiae-sacramento","november","matutinum","lectio"],
 			["de-eucharistiae-sacramento","december","matutinum","lectio"]
 		],
-		"datum":[["corpus-christi","dies-octava","lectio"]]
+		"nocturna-ii":[["corpus-christi","dies-octava","lectio"]],
+		"nocturna-iii":[["corpus-christi","dies-octava","lectio"]]
 	},
 	{
 		"tags":["de-eucharistiae-sacramento","prima","responsorium-breve","versus"],
