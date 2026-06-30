@@ -55,7 +55,7 @@
 		'recitation': 'recto-tono',
 		'translation': false,
 		'side-by-side': false,
-		'display-trivial-chants': false,
+		'display-trivial-chants': false
 	}),
 	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
 	rite: '',
@@ -133,6 +133,9 @@
 		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters, this.version);
 	}
 }" x-init="
+	if (!('votives' in parameters)) {
+		parameters.votives = {'de-sanctis-angelis': false, 'de-sanctis-apostolis': false, 'de-joseph': false, 'de-eucharistiae-sacramento': false, 'de-passione': false, 'de-immaculata-conceptione': false};
+	}
 	% if not mobile:
 	doPanelSize();
 	% end

@@ -69,4 +69,22 @@
 			</template>
 		</div>
 	</div>
+	<div x-data="{votiveEntries: [
+		['de-sanctis-angelis', 'De Ss. Angelis.'],
+		['de-sanctis-apostolis', 'De Ss. Apostolis.'],
+		['de-joseph', 'De S. Joseph.'],
+		['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'],
+		['de-passione', 'De Passione D.N.J.C.'],
+		['de-immaculata-conceptione', 'De Immaculata Conceptione.']
+	]}">
+		<h3 class="options-panel-section-head">Votive Offices.</h3>
+		<div id="votive-office-selection-inner">
+			<template x-for="entry in votiveEntries">
+				<div class="votive-office-entry">
+					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" x-model="parameters.votives[entry[0]]"/>
+					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
+				</div>
+			</template>
+		</div>
+	</div>
 </div>

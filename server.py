@@ -122,11 +122,9 @@ def daytags(vesperal = False):
 			'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
 		})
 
-def adjust_tags(day, vesperal, select):
-	if select == 'votiva':
-		tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votive = True) if vesperal else kalendar.daily_tagger.get_diurnal(context, day, votive = True))
-	else:
-		tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if vesperal else kalendar.daily_tagger.get_diurnal(context, day))
+def adjust_tags(day, vesperal, select, votives):
+	# Votives are simply a list of which votives the user wishes to be said if applicable. Providing a votive does not force its usage on inapplicable days.
+	tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(context, day, votives = votives))
 
 	# Handle the Little Office of the BVM and the Office of the Dead (temporary code)
 	if select == 'officium-parvum-bmv':
@@ -154,10 +152,11 @@ def adjust_tags(day, vesperal, select):
 @get('/title')
 def title():
 	parameters = copy.deepcopy(request.query)
+	votives = parameters['votives'].replace(' ', '+').split('+')
 	try:
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
-		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei')
+		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
 		primary = [i for i in tags if 'primarium' in i][0]
 		pile = context.getpile(breviarium.defaultpile | primary | set(hours))
 		return datamanage.dump_data([getname(primary, pile), primary])
@@ -181,7 +180,8 @@ def rite():
 	try:
 		day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
 		hours = parameters['hour'].replace(' ', '+').split('+')
-		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei')
+		votives = parameters['votives'].replace(' ', '+').split('+')
+		tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
 		private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
 		if private:
 			tags = [i | {'privata'} for i in tags]

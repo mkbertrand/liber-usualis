@@ -113,38 +113,49 @@ def apply_secondary_tabella(day, tabella):
 
 	return day
 
-def get_vespers(context, day, votive = False):
+def get_vespers(context, day, votives = []):
 
 	assert type(day) is not datetime
 
 	implicationtable = load_data_prioritizer('sequentes.json', context.books[0].src)
-	vesperalrules = load_data_prioritizer('tabella-vesperalis.json', context.books[0].src)
-	if votive:
-		vesperalrules += load_data_prioritizer('tabella-vesperalis-votivarum.json', context.books[0].src)
+	vesperalrules = []
+	for votive in votives:
+		vesperalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
+	if votives:
+		vesperalrules.append(load_data_prioritizer('tabella-vesperalis-votivarum.json', context.books[0].src))
+	
+
+	vesperalrules.extend(load_data_prioritizer('tabella-vesperalis.json', context.books[0].src))
 
 	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(context, day + timedelta(days=1))]
 	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(context, day)]
 
 	# Final product
 	vesperal = iivespers + ivespers
-	tags = apply_secondary_tabella(vesperal, vesperalrules)
-	for i in tags:
+	for tabella in vesperalrules:
+		vesperal = apply_secondary_tabella(vesperal, tabella)
+
+	for i in vesperal:
 		for j in implicationtable:
 			if j['tags'].issubset(i):
 				i |= j['implies']
 
-	return [frozenset(i) for i in tags]
+	return [frozenset(i) for i in vesperal]
 
-def get_diurnal(context, day, votive = False):
+def get_diurnal(context, day, votives = []):
 
 	assert type(day) is not datetime
 
 	implicationtable = load_data_prioritizer('sequentes.json', context.books[0].src)
-	diurnalrules = load_data_prioritizer('tabella-diurnalis.json', context.books[0].src)
 	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', context.books[0].src)
 
-	if votive:
-		diurnalrules.insert(1, load_data_prioritizer('tabella-diurnalis-votivarum.json', context.books[0].src))
+	diurnalrules = []
+	for votive in votives:
+		diurnalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
+	if votives:
+		diurnalrules.append(load_data_prioritizer('tabella-diurnalis-votivarum.json', context.books[0].src))
+
+	diurnalrules.extend(load_data_prioritizer('tabella-diurnalis.json', context.books[0].src))
 
 	daytags = kalendar.datamanage.get_date(context, day)
 	for tabella in diurnalrules:

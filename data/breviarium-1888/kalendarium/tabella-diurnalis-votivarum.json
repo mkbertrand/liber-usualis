@@ -1,15 +1,21 @@
 [
 	{
 		"include":["votiva"],
-		"adde":["primarium","semiduplex","votiva-extra-tempore-paschali"]
+		"adde":["votiva-extra-tempore-paschali"]
 	},
 	{
-		"include":["votiva"],
+		"include":["votiva","primarium"],
 		"response":[
 			{"include":["simplex","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["vigilia","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria-major","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","primarium"],"remove":"primarium","adde":"omissum","target":1}
+		]
+	},
+	{
+		"include":["votiva","maria","primarium"],
+		"response":[
+			{"include":["bmv-sabbatum","commemoratio"],"remove":"commemoratio","adde":"omissum","target":1}
 		]
 	},
 	{

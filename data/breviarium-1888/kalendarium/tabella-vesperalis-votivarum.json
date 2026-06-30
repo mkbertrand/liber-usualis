@@ -1,7 +1,15 @@
 [
 	{
-		"include":["votiva","i-vesperae"],
-		"adde":["primarium","semiduplex"]
+		"include":["votiva"],
+		"response":[
+			{"include":["duplex-i-classis","primarium"],"response":"dele","target":0},
+			{"include":["duplex-ii-classis","primarium"],"response":"dele","target":0},
+			{"include":["duplex-majus","primarium"],"response":"dele","target":0},
+			{"include":["duplex-minus","primarium"],"response":"dele","target":0},
+			{"include":["antiphona-major","primarium"],"response":"dele","target":0},
+			{"include":["feria-iv","cinerum","primarium"],"response":"dele","target":0},
+			{"include":["in-tempore-passionis","primarium"],"response":"dele","target":0}
+		]
 	},
 	{
 		"include":["votiva","primarium"],
@@ -9,6 +17,12 @@
 			{"include":["simplex","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria-major","primarium"],"remove":"primarium","adde":"commemoratio","target":1},
 			{"include":["feria","primarium"],"remove":"primarium","adde":"omissum","target":1}
+		]
+	},
+	{
+		"include":["votiva","maria","primarium"],
+		"response":[
+			{"include":["bmv-sabbatum","commemoratio"],"remove":"commemoratio","adde":"omissum","target":1}
 		]
 	}
 ]

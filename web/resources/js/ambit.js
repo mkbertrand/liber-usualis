@@ -331,12 +331,13 @@ function defineAmbit(desired, choral = true) {
 let lastParams = null;
 let lastResult = null;
 function resolveParameters(parameters) {
-	if (lastParams && Object.entries(parameters).every(i => i[0] in lastParams && lastParams[i[0]] == i[1])) {
+	if (lastParams == JSON.stringify(parameters)) {
 		return lastResult;
 	} else {
-		lastParams = JSON.parse(JSON.stringify(parameters));
+		lastParams = JSON.stringify(parameters);
 		let resolved = {...parameters, 'chant': parameters.recitation == 'plainchant', 'choral': parameters.recitation != 'private'};
 		resolved['ambit'] = defineAmbit(parameters.desired, parameters.choral);
+		resolved.votives = Object.entries(resolved.votives).filter(i => i[1]).map(i => i[0]).join('+');
 		lastResult = resolved;
 		return resolved;
 	}
@@ -349,9 +350,9 @@ function getTime(occasion) {
 let dayParametersExpectation = null;
 let cachedDays = new Object();
 async function getLiturgicalDay(calendarDate, time, parameters) {
-	if (!dayParametersExpectation || !Object.entries(parameters).every(i => i[0] in dayParametersExpectation && dayParametersExpectation[i[0]] == i[1])) {
+	if (dayParametersExpectation != JSON.stringify(parameters)) {
 		cachedDays = new Object();
-		dayParametersExpectation = JSON.parse(JSON.stringify(parameters));
+		dayParametersExpectation = JSON.stringify(parameters);
 	}
 
 	async function fetchLiturgicalDay() {
@@ -369,9 +370,9 @@ let riteParametersExpectation = null;
 let cachedRites = new Object();
 
 async function getRite(calendarDate, occasion, parameters, version) {
-	if (!riteParametersExpectation || !Object.entries(parameters).every(i => i[0] in riteParametersExpectation && riteParametersExpectation[i[0]] == i[1])) {
+	if (riteParametersExpectation != JSON.stringify(parameters)) {
 		cachedRites = new Object();
-		riteParametersExpectation = JSON.parse(JSON.stringify(parameters));
+		riteParametersExpectation = JSON.stringify(parameters);
 	}
 
 	async function fetchRite() {
@@ -379,6 +380,7 @@ async function getRite(calendarDate, occasion, parameters, version) {
 		var response = await fetch(`/title?date=${calendarDate}
 			&hour=${occasion}
 			&select=${resolvedParameters.ambit.occasions[resolvedParameters.ambit.idindex(occasion)].title}
+			&votives=${resolvedParameters.votives}
 		`);
 		let titleJSON = await response.json();
 		let ret = riteTitle(titleJSON[0], titleJSON[1], 'large');
@@ -391,6 +393,7 @@ async function getRite(calendarDate, occasion, parameters, version) {
 				&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}
 				&privata=${!resolvedParameters.choral ? 'privata': 'chorali'}
 				&select=${rites[i][1]}
+				&votives=${resolvedParameters.votives}
 				&version=${version}
 			`);
 			if (response.status == 400 || response.status == 500) {
