@@ -81,7 +81,7 @@ def localpage(preferredlocale, page):
 				titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
 		title = titles[page] if page in titles else ''
 
-		return template(findmytemplate(page), title=title, page=page, locales=locales)
+		return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']))
 
 def flattensetlist(sets):
 	ret = set()

@@ -334,7 +334,7 @@ function resolveParameters(parameters) {
 	if (lastParams && Object.entries(parameters).every(i => i[0] in lastParams && lastParams[i[0]] == i[1])) {
 		return lastResult;
 	} else {
-		lastParams = parameters;
+		lastParams = JSON.parse(JSON.stringify(parameters));
 		let resolved = {...parameters, 'chant': parameters.recitation == 'plainchant', 'choral': parameters.recitation != 'private'};
 		resolved['ambit'] = defineAmbit(parameters.desired, parameters.choral);
 		lastResult = resolved;
@@ -351,7 +351,7 @@ let cachedDays = new Object();
 async function getLiturgicalDay(calendarDate, time, parameters) {
 	if (!dayParametersExpectation || !Object.entries(parameters).every(i => i[0] in dayParametersExpectation && dayParametersExpectation[i[0]] == i[1])) {
 		cachedDays = new Object();
-		dayParametersExpectation = parameters;
+		dayParametersExpectation = JSON.parse(JSON.stringify(parameters));
 	}
 
 	async function fetchLiturgicalDay() {
@@ -371,7 +371,7 @@ let cachedRites = new Object();
 async function getRite(calendarDate, occasion, parameters, version) {
 	if (!riteParametersExpectation || !Object.entries(parameters).every(i => i[0] in riteParametersExpectation && riteParametersExpectation[i[0]] == i[1])) {
 		cachedRites = new Object();
-		riteParametersExpectation = parameters;
+		riteParametersExpectation = JSON.parse(JSON.stringify(parameters));
 	}
 
 	async function fetchRite() {
@@ -388,7 +388,7 @@ async function getRite(calendarDate, occasion, parameters, version) {
 		for (var i = 0; i < rites.length; i++) {
 			let response = await fetch(`/rite?date=${calendarDate}
 				&hour=${rites[i][0]}&noending=${i != rites.length - 1 && (rites[i + 1][1] == 'officium-parvum-bmv' || rites[i + 1][1] == 'officium-defunctorum' || rites[i + 1][0] == 'psalmi-poenitentiales' || rites[i + 1][0] == 'litaniae-sanctorum' || rites[i + 1][0] == 'officium-capituli')}
-				&translation=${resolvedParameters.translation ? translation('{{locale}}') : 'none'}
+				&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}
 				&privata=${!resolvedParameters.choral ? 'privata': 'chorali'}
 				&select=${rites[i][1]}
 				&version=${version}

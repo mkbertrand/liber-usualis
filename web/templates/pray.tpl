@@ -23,6 +23,9 @@
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/pray.css')}}>
+		% if mobile:
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/pray-mobile.css')}}>
+		% end
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
@@ -72,9 +75,6 @@
 	// Returns the date (yyyy-mm-dd) adjusted for timezone.
 	getCalendarDate(calendarDate) {
 		return new Date(calendarDate.getTime() - calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
-	},
-	setParameters(k, v) {
-		this.parameters = {...this.parameters, [k]: v};
 	},
 	updateRiteAsyncLock: false,
 	async updateRite(scroll = true) {
@@ -133,9 +133,12 @@
 		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters, this.version);
 	}
 }" x-init="
-	dopanelsize();
-	if ('{{locale}}' == 'la') {
-		setParameters('translation', false);
+	% if not mobile:
+	doPanelSize();
+	% end
+	parameters.locale = '{{locale}}';
+	if (parameters.locale == 'la') {
+		parameters.translation = false;
 	}
 	if (nextOccasion && typeof nextOccasion[0] === 'string') {
 		nextOccasion[0] = new Date(nextOccasion[0]);
@@ -175,82 +178,21 @@
 			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
 
 			<div id="content-container-outer">
+				% if not mobile:
 				<div x-cloak id="options-panel-background" x-show="optionspanel">
-					<div id="options-panel" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-						<h3 id="options-panel-title">{{text['options-panel-title']}}</h3>
-						% if locale != 'la':
-						<div>
-							<input type="checkbox" id="translation-toggle" @click="setParameters('translation', !resolveParameters(parameters).translation)" />
-							<label for="translation-toggle">{{text['translation-toggle']}}</label>
-						</div>
-						<div>
-							<input type="checkbox" id="side-by-side-toggle" @click="setParameters('side-by-side', !resolveParameters(parameters)['side-by-side'])" :disabled="!resolveParameters(parameters).translation" />
-							<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">Side-by-side translation (experimental)</label>
-						</div>
-						% end
-						<div x-data="{recitation: parameters.recitation}" x-init="$watch('recitation', recitation => setParameters('recitation', recitation))">
-							<div>
-								<input type="radio" value="plainchant" id="recitation-select-plainchant" x-model="recitation" />
-								<label for="recitation-select-plainchant">{{text['recitation-select-plainchant']}}</label>
-							</div>
-							<div>
-								<input type="radio" value="recto-tono" id="recitation-select-recto-tono" x-model="recitation" />
-								<label for="recitation-select-recto-tono">{{text['recitation-select-recto-tono']}}</label>
-							</div>
-							<div>
-								<input type="radio" value="private" id="recitation-select-private" x-model="recitation" />
-								<label for="recitation-select-private">{{text['recitation-select-private']}}</label>
-							</div>
-						</div>
-						<template x-if="initialized">
-							<div id="options-panel-require-initialized-container">
-								<div id="coincidences-list-container">
-									<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
-									<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-									<div id="primary-entry" class="coincidence-entry" x-text="abbreviateName(liturgicalDay.primary[0])"></div>
-									<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-									<template x-for="commemoration in liturgicalDay.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
-										<div class="coincidence-entry" x-text="abbreviateName(commemoration[0])"></div>
-									</template>
-									<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-									<template x-for="omission in liturgicalDay.omissions">
-										<div class="coincidence-entry" x-text="abbreviateName(omission[0])"></div>
-									</template>
-									<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
-								</div>
-							</div>
-						</template>
-						<div id="desired-select-wrapper">
-							<div id="desired-select-container" x-data="{ambitEntries: [
-								['omnes', 'Officium'],
-								['diei', 'Officium diei'],
-								['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
-								['officium-defunctorum', 'Officium Defunctorum'],
-								['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.'],
-								['psalmi-graduales', 'Psalmi Graduales'],
-								['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
-								['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
-								['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis.'],
-								['benedictio-mensae', 'Benedictio Mensæ'],
-								['itinerarium', 'Itinerarium Clericorum']
-							], desired: parameters.desired}" x-init="$watch('desired', desired => setParameters('desired', desired))">
-								<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-								<template x-for="entry in ambitEntries">
-									<div>
-										<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" x-model="desired" />
-										<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
-									</div>
-								</template>
-							</div>
-						</div>
-						<div id="bottom-panel-options-container">
-							<button id="bottom-panel-toggle-button" class="options-panel-button" @click="bottompanel = !bottompanel; if(bottompanel) {bottompanelopen=true;}" :class="bottompanel? 'options-panel-button-on' : 'options-panel-button-off'">{{text['bottom-panel-toggle']}}</button>
-							<p id="bottom-panel-explanation">{{text['bottom-panel-explanation']}}</p>
-						</div>
+					<div id="options-panel-wrapper" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
+						% include('web/resources/options-panel.tpl', locale=locale, text=text)
 					</div>
 				</div>
-				<div id="side-panel-left">
-				</div>
+				% else:
+					<div x-cloak id="options-panel-wrapper-mobile" x-show="optionspanel">
+						% include('web/resources/options-panel.tpl', locale=locale, text=text)
+					</div>
+				% end
+				% if not mobile:
+					<div id="side-panel-left">
+					</div>
+				% end
 				<div id="rite-page-container">
 					<div x-show="initialized" id="rite-container" x-html="Rite">
 					</div>
@@ -278,9 +220,11 @@
 						<span id="next-hour-forbidden-tooltip" x-show="!canIncrementOccasion && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
 					</div>
 				</div>
+				% if not mobile:
 				<div id="side-panel-right">
 				</div>
-				<div id="size-change-listener" x-resize="dopanelsize()"></div>
+				<div id="size-change-listener" x-resize="doPanelSize()"></div>
+				% end
 			</div>
 		</div>
 	</body>
