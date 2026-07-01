@@ -195,69 +195,64 @@ def process(context, item, selected, alternates, pile):
 	if 'commemorationes' in item:
 		return handlecommemorations(context, item, selected, alternates)
 
-	# Within the data, a set (represented in JSON as a list of strings) is a euphemism for from: tags
+	# An entry within an item that is a tagset is calling to search further for sub-items.
 	if type(item) is set or type(item) is frozenset:
-		item = {'from':item}
-
-	if 'from' in item:
 		selected = copy.deepcopy(selected)
 		repile = False
 		# Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
-		for cclass in contradictions(context, 'positionales', item['from'] | selected):
+		for cclass in contradictions(context, 'positionales', item | selected):
 			selected -= cclass
 			repile = True
 
 		if repile:
-			pile = context.getpile(item['from'] | selected | defaultpile)
+			pile = context.getpile(item | selected | defaultpile)
 
 		result = None
-		if not any('/' in i for i in item['from']):
+		if not any('/' in i for i in item):
 			for i in range(len(alternates)):
-				# Basically if the from is explicitly calling for some day's propers, remove the other day context to facilitate this
-				if 'occurrens' in item['from'] and item['from'] & expandcat(context, 'temporale') <= alternates[i]:
-					item['from'] -= {'occurrens'}
+				# Basically if the tagset is explicitly calling for some day's propers, remove the other day context to facilitate this
+				if 'occurrens' in item and item & expandcat(context, 'temporale') <= alternates[i]:
+					item -= {'occurrens'}
 					alternates = copy.copy(alternates)
 					alternates.append(selected - expandcat(context, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-					pile = context.getpile(defaultpile | item['from'] | selected)
-					item['from'] -= expandcat(context, 'temporale')
+					pile = context.getpile(defaultpile | item | selected)
+					item -= expandcat(context, 'temporale')
 					break
 
-				# If there is an alternate with a specific object and position, it should be imposed on the from tag even if it doesn't otherwise want a different day's item
+				# If there is an alternate with a specific object and position, it should be imposed on this tagset even if the tagset doesn't otherwise want a different day's item
 				# Sometimes there are explicit tagsets in alternates that specify certain things (as opposed to above when the data itself requests something)
-				elif item['from'] | (selected & expandcat(context, 'positionales')) <= alternates[i]:
+				elif item | (selected & expandcat(context, 'positionales')) <= alternates[i]:
 					alternates = copy.copy(alternates)
 					alternates.append(selected)
 
-					if contradicts(context, 'positionales', item['from'] | alternates[i] | selected):
+					if contradicts(context, 'positionales', item | alternates[i] | selected):
 						selected = alternates.pop(i)
 					else:
 						selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-					pile = context.getpile(defaultpile | item['from'] | selected)
-					result = search(context, item['from'] | selected, pile)
+					pile = context.getpile(defaultpile | item | selected)
+					result = search(context, item | selected, pile)
 					break
 
 		if result is None:
 			# Only remove tags referring to propers and commons and whatnot if a different set is suggested
 			# This is different than the occurrens system because we're not asking about something on the specific day (for example, we want the ferial readings of the day)
 			# but rather we may want the readings for the Common of the Blessed Virgin which isn't specific day-to-day
-			if len(item['from'] & expandcat(context, 'temporale')) != 0:
-				for cclass in contradictions(context, 'temporale', item['from'] | selected):
+			if len(item & expandcat(context, 'temporale')) != 0:
+				for cclass in contradictions(context, 'temporale', item | selected):
 					selected -= cclass
-				selected |= item['from'] & expandcat(context, 'temporale')
-				pile = context.getpile(defaultpile | item['from'] | selected)
+				selected |= item & expandcat(context, 'temporale')
+				pile = context.getpile(defaultpile | item | selected)
 
-			result = search(context, item['from'] | selected, pile)
+			result = search(context, item | selected, pile)
 
 		# If result is still None at this point, just tell user what was searched for
 		if result is None:
 			# It has to be sorted for testing purposes
-			return str(sorted(list(item['from'] | selected)))
-		selected |= item['from']
+			return str(sorted(list(item | selected)))
+		selected |= item
 		response = process(context, result, selected, alternates, pile)
 
-		if 'tags' in item:
-			response = {'tags': item['tags'], 'datum': response}
 		return response
 
 	elif type(item['datum']) is list:

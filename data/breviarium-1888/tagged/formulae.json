@@ -366,10 +366,7 @@
 	{
 		"tags":["formula","formula-lectionis"],
 		"datum":[
-			{
-				"datum":"Jube, domne, benedícere.",
-				"tags":["jube-domne"]
-			},
+			"Jube, domne, benedícere.",
 			["benedictio"],
 			"R. Amen.",
 			["lectio","include-inauthenticas"],
@@ -380,10 +377,7 @@
 	{
 		"tags":["formula","formula-lectionis","privata"],
 		"datum":[
-			{
-				"datum":"Jube, Dómine, benedícere.",
-				"tags":["jube-domne"]
-			},
+			"Jube, Dómine, benedícere.",
 			["benedictio"],
 			"R. Amen.",
 			["lectio","include-inauthenticas"],

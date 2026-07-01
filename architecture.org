@@ -108,17 +108,16 @@
     =alternates= is the list of other tag sets (commemorations etc.) available for
     cross-referencing, and =pile= is the flat list of candidate entries.
 
-    1. If =item= contains a =from= key (or is a bare set of tags, which is
-       normalised to ={'from': tags}=), treat it as a search request:
-       a. Remove positional contradictions between =from= and =selected= (using
+    1. If =item= is a bare set of tags, treat it as a search request:
+       a. Remove positional contradictions between itself and =selected= (using
           =categoriae/positionales.json=) so searches don't carry conflicting
           positional tags.
-       b. If the =occurrens= tag is present and =from= explicitly references a
+       b. If the =occurrens= tag is present and tagset explicitly references a
           feast from =alternates=, swap =selected= for that alternate's tag set so
           the search is conducted in the right context.
-       c. If a specific position/context combination from =from= exactly matches
+       c. If a specific position/context combination from the tagset exactly matches
           an alternate, switch to that alternate's tag set.
-       d. If =from= carries temporale tags that contradict =selected=, remove the
+       d. If the tagset carries temporale tags that contradict =selected=, remove the
           contradiction and search under the new context.
        e. Call =search()= with the resolved query (see [[*Search & Discrimination]]
           below).
