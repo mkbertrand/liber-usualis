@@ -198,13 +198,10 @@ def process(context, item, selected, alternates, pile):
 	# An entry within an item that is a tagset is calling to search further for sub-items.
 	if type(item) is set or type(item) is frozenset:
 		selected = copy.deepcopy(selected)
-		repile = False
 		# Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
-		for cclass in contradictions(context, 'positionales', item | selected):
-			selected -= cclass
-			repile = True
-
-		if repile:
+		contras = set().union(*contradictions(context, 'positionales', item | selected))
+		selected -= contras
+		if contras:
 			pile = context.getpile(item | selected | defaultpile)
 
 		result = None
@@ -239,8 +236,7 @@ def process(context, item, selected, alternates, pile):
 			# This is different than the occurrens system because we're not asking about something on the specific day (for example, we want the ferial readings of the day)
 			# but rather we may want the readings for the Common of the Blessed Virgin which isn't specific day-to-day
 			if len(item & expandcat(context, 'temporale')) != 0:
-				for cclass in contradictions(context, 'temporale', item | selected):
-					selected -= cclass
+				selected -= set().union(*contradictions(context, 'temporale', item | selected))
 				selected |= item & expandcat(context, 'temporale')
 				pile = context.getpile(defaultpile | item | selected)
 
