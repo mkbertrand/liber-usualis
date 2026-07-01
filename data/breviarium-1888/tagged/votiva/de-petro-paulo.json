@@ -1,0 +1,53 @@
+[
+	{
+		"tags":["de-petro-paulo","nomen"],
+		"datum":"Officium Votivum de Sanctis Apostolis Petro et Paulo"
+	},
+	{
+		"tags":[
+			["de-petro-paulo","vesperae","versiculus"],
+			["de-petro-paulo","laudes","versiculus"]
+		],
+		"datum":[["de-sanctis-apostolis","suffragium","versiculus"]]
+	},
+	{
+		"tags":["de-petro-paulo","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["de-sanctis-apostolis","suffragium","antiphona","antiphona-magnificat"]]
+	},
+	{
+		"tags":["de-petro-paulo","collecta"],
+		"datum":[["de-sanctis-apostolis","suffragium","collecta"]],
+		"terminatio":[["de-sanctis-apostolis","suffragium","collecta","terminatio"]]
+	},
+	{
+		"tags":["de-petro-paulo","matutinum","nocturna-i","lectio"],
+		"de-quatuor-temporibus":[["cathedra-petri","lectio"]],
+		"in-tempore-quadragesimae":[["cathedra-petri","lectio"]],
+		"de-rogationibus":[["cathedra-petri","lectio"]],
+		"datum":[["temporale","occurrens","lectio"]]
+	},
+	{
+		"tags":["de-petro-paulo","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermo sancti Leónis Papæ.",
+			"[Ex Homilia 82. in Nativ. Ss. Apost. Petri et Pauli.]/Nerónis furor per ómnium vitiórum inflammátus excéssum in hunc eum usque torréntem suæ præcipitávit insániæ, ut primus nómini christiáno atrocitátem generális persecutiónis inférret, quasi per sanctórum Apostolórum Petri et Pauli neces grátia Dei posset exstíngui; quibus hoc ipsum erat máximum lucrum, ut contémptus vitæ hujus occíduæ, percéptio fíeret felicitátis ætérnæ. Pretiósa est ergo in conspéctu Dómini mors sanctórum ejus: nec ullo crudelitátis génere déstrui potest sacraménto crucis Christi fundáta relígio. Non minúitur persecutiónibus Ecclésia, sed augétur: et semper Domínicus ager ségete ditióri vestítur, dum grana, quæ síngula cadunt, multiplicáta nascúntur. Unde duo ista præclára divíni séminis gérmina in quantam sóbolem germinárint, beatórum míllia Mártyrum protestántur, qui apostolicórum ǽmuli triumphórum, Urbem nostram purpurátis, et longe latéque rutilántibus pópulis ambiérunt, et quasi ex multárum honóre gemmárum consérto uno diadémate coronárunt."
+		],
+		"lectio-ii":"De quorum præsídio, dilectíssimi, divínitus nobis ad exémplum patiéntiæ et confirmatiónem fídei præparáto, universáliter quidem in ómnium Sanctórum commemoratióne lætándum est: sed in horum excelléntia Patrum mérito est excelléntius gloriándum, quos grátia Dei in tantum ápicem inter ómnia Ecclésiæ membra provéxit, ut eos in córpore, cui caput est Christus, quasi géminum constitúeret lumen oculórum. De quorum méritis atque virtútibus, quæ omnem loquéndi súperant facultátem, nihil divérsum, nihil debémus sentíre discrétum: quia illos et eléctio pares, et labor símiles, et finis fecit æquáles.",
+		"lectio-iii":"Sicut autem et nos expérti sumus, et nostri probavére majóres, crédimus atque confídimus, inter omnes labóres istíus vitæ, ad obtinéndam misericórdiam Dei semper nos speciálium patronórum oratiónibus adjuvándos: ut quantum própriis peccátis deprímimur, tantum apostólicis méritis erigámur. Per Dóminum nostrum Jesum Christum, cui est cum Patre et sancto Spíritu éadem potéstas, una divínitas, in sǽcula sæculórum. Amen."
+	},
+	{
+		"tags":["de-petro-paulo","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
+			"Léctio sancti Evangélii secúndum Matthǽum.",
+			"[Matth. 19. d.]/In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti sumus te: quid ergo erit nobis? Et réliqua.",
+			"Homilía sancti Ambrósii Epíscopi.",
+			"[In Ps. 118. Serm. 8. post initium.]/Ecce nos ómnia derelíquimus, et secúti sumus te. Hoc est, non quæsívimus quæ sǽculi sunt, non quæsívimus partem de possessiónibus, sed te elégimus portiónem. Reliquísti ergo ómnia, Petre, quæ habébas; unde habes quod habére te dicis? Surgit claudus, et sono tui sermónis erígitur: sanitátem áliis donas, qui indigébas ipse tuæ salútis auxílio. Reliquísti ergo quæ habébas, et cepísti, quæ non habébas. Christus tibi pórtio, Christus tibi posséssio est: illíus nomen tibi muníficum, illíus nomen tibi est fructuósum, illíus nomen tibi tribúta depéndit, et bona tribúta, non pecúniæ, sed grátiæ."
+		],
+		"lectio-ii":"Quicúmque relíquerit patrem, aut matrem, aut domum, aut fratres, aut soróres, céntuplum accípiet in hoc sǽculo, et vitam ætérnam possidébit. Multos quidem in hoc sǽculo, qui sua paupéribus donavérunt, uberióre thesaúro locupletátos fuísse cognóvimus. Est pulchérrimus locus, ut étiam ad misericórdiam provocéntur. Sed non debent a Dómino sæculárem hujúsmodi exígere mercédem, nec speráre quæ mundi sunt; sed magis, quia iis, qui ómnia relíquerint, Deus pórtio est. Ipse est útique merces perfécta virtútum, qui non céntupli enumeratióne, sed perféctæ plenitúdinis æstimatióne censétur. Ego, inquit, Deus tuus sum. Non dixit, Ero, sed: Jam sum, jam inhábito, jam possídeo.",
+		"lectio-iii":"Habes homo inter multa propósita, étiam hujúsmodi portiónem. Propósuit tibi Dóminus in portióne possessiónes, in portióne aurum, in portióne argéntum, in portióne honóres, in portióne nobilitátem, propósuit étiam in portióne seípsum. Habes ígitur plúrimas portiónes; élige quam putas; non te númerus pertúrbet, sed éxcitet grátia; non te labor avértat, sed fructus invítet."
+	},
+	{
+		"tags":["de-petro-paulo","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["de-sanctis-apostolis","suffragium","antiphona","antiphona-benedictus"]]
+	}
+]
