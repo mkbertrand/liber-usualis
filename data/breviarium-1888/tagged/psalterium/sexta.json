@@ -19,15 +19,11 @@
 		]
 	},
 	{
-		"tags":[
-			["sexta","duplex-minus","hymnus"],
-			["sexta","semiduplex","hymnus"]
-		],
-		"src":"gregobase/12355",
+		"tags":["sexta","hymnus"],
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
 			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			["terminatio","praesta-pater"]
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","praesta-pater"]]}
 		]
 	},
 	{
@@ -58,18 +54,6 @@
 	{
 		"tags":["sexta","temporale","versiculus"],
 		"datum":["V. Dóminus regit me, et nihil mihi déerit.","R. In loco páscuæ ibi me collocávit."]
-	},
-	{
-		"tags":[
-			["sexta","feria","hymnus"],
-			["sexta","simplex","hymnus"]
-		],
-		"src":"gregobase/11789",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			["terminatio","praesta-pater"]
-		]
 	},
 	{
 		"tags":["sexta","feria","antiphona"],
@@ -158,116 +142,5 @@
 	{
 		"tags":["sexta","preces"],
 		"datum":[["tertia","preces"]]
-	},
-	{
-		"tags":["sexta","sollemnitas","hymnus"],
-		"src":"gregobase/2239",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["sexta","in-tempore-adventus","hymnus"],
-		"src":"gregobase/19236",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":[
-			["sexta","in-tempore-nativitatis","hymnus"],
-			["sexta","infra-octavam-corporis-christi","hymnus"]
-		],
-		"src":"gregobase/19630",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","per-octavam-epiphaniae","hymnus"],
-		"src":"gregobase/19634",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","in-tempore-quadragesimae","hymnus"],
-		"src":"gregobase/19870",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["sexta","in-tempore-passionis","hymnus"],
-		"src":"gregobase/19871",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["sexta","in-tempore-paschali","hymnus"],
-		"src":"gregobase/19872",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","in-tempore-ascensionis","hymnus"],
-		"src":"gregobase/19946",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","pentecostes","hymnus"],
-		"src":"gregobase/19949",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","tempus-mariae","hymnus"],
-		"src":"gregobase/19873",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","transfiguratio","hymnus"],
-		"src":"gregobase/20012",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Jesu, tibi sit glória,/Qui te revélas párvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["sexta","septem-dolores-septembris","hymnus"],
-		"src":"gregobase/20103",
-		"datum":[
-			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
-			"Exstíngue flammas lítium,/Aufer calórem nóxium,/Confer salútem córporum,/Verámque pacem córdium.",
-			"Jesu, tibi sit glória,/Qui passus es pro sérvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
 	}
 ]

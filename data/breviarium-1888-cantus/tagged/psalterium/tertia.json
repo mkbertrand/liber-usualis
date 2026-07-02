@@ -1,0 +1,63 @@
+[
+	{
+		"tags":[
+			["tertia","feria","hymnus"],
+			["tertia","simplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Nunc(h) san(h')cte(h) no(h)bis(h) Spí(h')ri(g)tus,(g) (,) U(h)num(h') Pa(h)tri(h) cum(g) Fí(h')li(h)o,(h.) (;) Di(h)gná(h')re(h) prom(g)ptus(f) ín(g')ge(f)ri(e) (,) No(f)stro(g') re(g)fú(g)sus(f) pé(h')cto(g)ri.(g.) (::)"
+	},
+	{
+		"tags":[
+			["tertia","duplex-minus","hymnus"],
+			["tertia","semiduplex","hymnus"]
+		],
+		"datum":"mode:2;%%(f3) Nunc(f) san(e')cte(f) no(h)bis(hg) Spí(fg)ri(f)tus,(e'_[oh:h]) (,) U(f)num(e') Pa(f)tri(h) cum(hg) Fí(f')li(f)o,(eh..) (;) Di(h)gná(ij)re(ji) prom(j)ptus(ih) ín(i)ge(hg)ri(fe__) (,) No(e)stro(f) re(hg)fú(hi)sus(hg) pé(f')cto(e)ri.(f.) (::)"
+	},
+	{
+		"tags":["tertia","sollemnitas","hymnus"],
+		"datum":"mode:8;%%(c3) Nunc(e) san(e)cte(fg) no(g)bis(ef) Spí(hg)ri(fg)tus,(gvFE.) (;) U(e)num(g') Pa(h)tri(i) cum(iji) Fí(g')li(h)o,(i.) (:) Di(g)gná(i')re(i) promp(j)tus(i) ín(hg)ge(fe)ri(f!gwhg.) (;) No(e)stro(e) re(fh)fú(hg)sus(fe) pé(f!gwhg)cto(fe)ri.(e.) (::)"
+	},
+	{
+		"tags":["tertia","in-tempore-adventus","hymnus"],
+		"datum":"mode:1;(c4) Nunc(e) san(c')cte(e) no(g)bis(h) Spí(i')ri(h)tus,(h) (,) U(g)num(h') Pa(i)tri(j) cum(ig) Fí(h')li(i)o,(h.) (;) Di(h)gná(h')re(i) prom(g)ptus(eg) ín(f')ge(e)ri,(d) (,) No(e)stro(c') re(e)fú(g)sus(h) pé(i')cto(h)ri.(h.) (::)"
+	},
+	{
+		"tags":[
+			["tertia","in-tempore-nativitatis","hymnus"],
+			["tertia","infra-octavam-corporis-christi","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Nunc(g) san(g')cte(f) no(e)bis(d) Spí(fhg)ri(f)tus,(g'_) (,) U(hjji)num(h') Pa(g)tri(h) cum(ig) Fí(h')li(g)o,(f.) (;) Di(g)gná(g')re(f) prom(g)ptus(h) ín(j')ge(g)ri(hih.) (,) No(h)stro(h') re(g)fú(fvED')sus(f) pé(hg)cto(f)ri.(g.) (::)"
+	},
+	{
+		"tags":["tertia","per-octavam-epiphaniae","hymnus"],
+		"datum":"mode:8;%%(c3) Nunc(d) san(e)cte(fh) no(h)bis(e) Spí(f')ri(d)tus,(e'_) (,) U(h)num(h') Pa(f)tri(h) cum(e) Fí(f)li(de)o,(e.) (;) Di(h)gná(h')re(i) prom(j)ptus(h) ín(i')ge(h)ri(f_e) (,) No(e)stro(e') re(d)fú(c)sus(d) pé(f)cto(de)ri.(e.) (::)"
+	},
+	{
+		"tags":["tertia","in-tempore-quadragesimae","hymnus"],
+		"datum":"mode:1;%%(c4) Nunc(e) san(g)cte(gh) no(h)bis(gf) Spí(g')ri(g)tus,(h.) (,) U(g)num(e') Pa(f)tri(g) cum(fe) Fí(d')li(c)o,(e.) (;) Di(e)gná(g)re(gh) prom(hg)ptus(e[ll:1]d) ín(f')ge(e)ri,(d.) (,) No(c)stro(e) re(fg)fú(fe)sus(c) pé(ef)cto(d)ri.(d.) (::)"
+	},
+	{
+		"tags":["tertia","in-tempore-passionis","hymnus"],
+		"datum":"mode:2;%%(f3) Nunc(e) san(f)cte(gh) no(g)bis(fe) Spí(f')ri(g)tus,(f.) (,) U(f)num(g') Pa(h)tri(ih) cum(g) Fí(f!gwh)li(h)o,(g.) (;) Di(g)gná(i)re(ij) prom(ji)ptus(hg) ín(f!gwh)ge(h)ri,(g.) (,) No(e)stro(f) re(gh)fú(g)sus(fe) pé(fg)cto(gf)ri.(f.) (::)"
+	},
+	{
+		"tags":["tertia","in-tempore-paschali","hymnus"],
+		"datum":"mode:8;%%(c4) Nunc(g) san(h')cte(g) no(h)bis(i) Spí(j')ri(h)tus,(i) (,) U(i)num(i') Pa(j)tri(h) cum(g) Fí(h')li(j)o,(i!jw!kvJI.) (;) Di(h)gná(i')re(j) prom(k)ptus(i) ín(j')ge(j)ri(i) (,) No(h)stro(i') re(j)fú(i)sus(h) pé(i')cto(h)ri.(g.) (::)"
+	},
+	{
+		"tags":["tertia","in-tempore-ascensionis","hymnus"],
+		"datum":"mode:4;%%(c4) Nunc(f) san(e!fwg'!hv)cte(g) no(fd)bis(f) Spí(efg)ri(f)tus,(e.) (;) U(g)num(hj) Pa(h)tri(gf) cum(g) Fí(g')li(f)o,(e[ll:1]d..) (:) Di(cd)gná(d)re(dc) prom(d)ptus(fe) ín(de)ge(e)ri(e.) (;) No(g)stro(gh) re(g)fú(fd)sus(f) pé(efg)cto(f)ri.(e.) (::)"
+	},
+	{
+		"tags":["tertia","tempus-mariae","hymnus"],
+		"datum":"mode:2;%%(c4) Nunc(h) san(h_g)cte(e[ll:1]d) no(g)bis(hj) Spí(ji)ri(h)tus,(i.) (;) U(hk)num(k) Pa(i)tri(ji) cum(h) Fí(ih)li(g)o,(h.) (:) Di(k)gná(k')re(i) prom(k)ptus(klk) ín(ji)ge(hi)ri(ivHG.) (;) No(ji)stro(jk) re(i)fú(ji)sus(h) pé(ih)cto(g)ri.(h.) (::)"
+	},
+	{
+		"tags":["tertia","transfiguratio","hymnus"],
+		"datum":"mode:4;%%(c4) Nunc(f) san(e!fwg'!hv)cte(g) no(fd)bis(f) Spí(efg)ri(f)tus,(e.) (;) U(g)num(hj) Pa(h)tri(gf) cum(g) Fí(g')li(f)o,(e[ll:1]d..) (:) Di(cd)gná(d)re(dc) prom(d)ptus(fe) ín(de)ge(e)ri(e.) (;) No(g)stro(gh) re(g)fú(fd)sus(f) pé(efg)cto(f)ri.(e.) (::)"
+	},
+	{
+		"tags":["tertia","septem-dolores-septembris","hymnus"],
+		"datum":"mode:2;%%(f3) Nunc(e) san(f)cte(gh) no(g)bis(fe) Spí(f')ri(g)tus,(f.) (,) U(f)num(g') Pa(h)tri(ih) cum(g) Fí(f!gwh)li(h)o,(g.) (;) Di(g)gná(i)re(ij) prom(ji)ptus(hg) ín(f!gwh)ge(h)ri,(g.) (,) No(e)stro(f) re(gh)fú(g)sus(fe) pé(fg)cto(gf)ri.(f.) (::)"
+	}
+]

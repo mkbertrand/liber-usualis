@@ -19,15 +19,11 @@
 		]
 	},
 	{
-		"tags":[
-			["tertia","duplex-minus","hymnus"],
-			["tertia","semiduplex","hymnus"]
-		],
-		"src":"gregobase/12527",
+		"tags":["tertia","hymnus"],
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
 			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","praesta-pater"]]}
 		]
 	},
 	{
@@ -58,18 +54,6 @@
 	{
 		"tags":["tertia","dominica","versiculus"],
 		"datum":["V. Ego dixi, Dómine miserére mei.","R. Sana ánimam meam, quia peccávi tibi."]
-	},
-	{
-		"tags":[
-			["tertia","feria","hymnus"],
-			["tertia","simplex","hymnus"]
-		],
-		"src":"gregobase/2578",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
-		]
 	},
 	{
 		"tags":["tertia","feria","antiphona"],
@@ -187,108 +171,6 @@
 			"V. Exsúrge Christe, ádjuva nos.",
 			"R. Et líbera nos propter nomen tuum.",
 			["domine-exaudi"]
-		]
-	},
-	{
-		"tags":["tertia","sollemnitas","hymnus"],
-		"src":"gregobase/12715",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["tertia","in-tempore-adventus","hymnus"],
-		"src":"gregobase/2889",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":[
-			["tertia","in-tempore-nativitatis","hymnus"],
-			["tertia","infra-octavam-corporis-christi","hymnus"]
-		],
-		"src":"gregobase/19629",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["tertia","per-octavam-epiphaniae","hymnus"],
-		"src":"gregobase/19633",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["tertia","in-tempore-quadragesimae","hymnus"],
-		"src":"gregobase/2044",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["tertia","in-tempore-passionis","hymnus"],
-		"src":"gregobase/2408",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["tertia","in-tempore-paschali","hymnus"],
-		"src":"gregobase/19860",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["tertia","in-tempore-ascensionis","hymnus"],
-		"src":"gregobase/19944",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["tertia","tempus-mariae","hymnus"],
-		"src":"gregobase/2964",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["tertia","transfiguratio","hymnus"],
-		"src":"gregobase/20011",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Jesu, tibi sit glória,/Qui te revélas párvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["tertia","septem-dolores-septembris","hymnus"],
-		"src":"gregobase/20102",
-		"datum":[
-			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
-			"Os, lingua, mens, sensus, vigor/Confessiónem pérsonent,/Flamméscat igne cáritas,/Accéndat ardor próximos.",
-			"Jesu, tibi sit glória,/Qui passus es pro sérvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
 	}
 ]

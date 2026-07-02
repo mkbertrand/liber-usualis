@@ -1,0 +1,67 @@
+[
+	{
+		"tags":[
+			["sexta","feria","hymnus"],
+			["sexta","simplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Re(h)ctor(h') po(h)tens,(h) ve(h)rax(h') De(g)us,(g) (,) Qui(h) tém(h')pe(h)ras(h) re(g)rum(h') vi(h)ces,(h.) (;) Splen(h)dó(h')re(h) ma(g)n<i>e</i>() il(f)lú(g')mi(f)nas,(e) (,) Et(f) í(g')gni(g)bus(g) me(f)rí(h')di(g)em:(g.) (::)"
+	},
+	{
+		"tags":[
+			["sexta","duplex-minus","hymnus"],
+			["sexta","semiduplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Re(gh)ctor(f') po(g)tens,(g) ve(h)rax(f') De(g)us,(g) (,) Qui(g) tém(h')pe(i)ras(j) re(ih)rum(g') vi(i)ces,(i.) (;) Splen(h!iwj)dó(i')re(h) ma(g)n<i>e</i>() il(h)lú(f')mi(h)nas,(h) (,) Et(g) í(f')gni(h)bus(h) me(g)rí(f')di(g)em:(g.) (::)"
+	},
+	{
+		"tags":["sexta","sollemnitas","hymnus"],
+		"datum":"mode:8;%%(c3) Re(e)ctor(e) pot(fg)ens,(g) ve(ef)rax(hg) De(fg)us,(gvFE.) (;) Qui(e) tém(g')pe(h)ras(i) re(iji)rum(g') vi(h)ces,(i.) (:) Splen(g)dó(i')re(i) man<i>e</i>(j) il(i)lú(hg)mi(fe)nas,(f!gwhg.) (;) Et(e) í(e)gni(fh)bus(hg) me(fe)rí(f!gwhg)di(fe)em :(e.) (::)"
+	},
+	{
+		"tags":["sexta","in-tempore-adventus","hymnus"],
+		"datum":"mode:1;%%(c4) Re(e)ctor(c') po(e)tens,(g) ve(h)rax(i') De(h)us,(h) (,) Qui(g) tém(h')pe(i)ras(j) re(ig)rum(h') vi(i)ces,(h.) (;) Splen(h)dó(h')re(i) ma(g)ne(g) il(eg)lú(f')mi(e)nas,(d) Et(e) í(c')gni(e)bus(g) me(h)rí(i')di(h)em:(h.) (::)"
+	},
+	{
+		"tags":[
+			["sexta","in-tempore-nativitatis","hymnus"],
+			["sexta","infra-octavam-corporis-christi","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Re(g)ctor(g') po(f)tens,(e) ve(d)rax(fhg) De(f)us,(g'_) (,) Qui(hjji) tém(h')pe(g)ras(h) re(ig)rum(h') vi(g)ces,(f.) (;) Splen(g)dó(g')re(f) ma(g)n<i>e</i>(h) il(h)lú(j')mi(g)nas,(hih.) (,) Et(h) í(h')gni(g)bus(fvED') me(f)rí(hg)di(f)em:(g.) (::)"
+	},
+	{
+		"tags":["sexta","per-octavam-epiphaniae","hymnus"],
+		"datum":"mode:8;%%(c3) Re(d)ctor(e) po(fh)tens,(h) ve(e)rax(f') De(d)us,(e'_) (,) Qui(h) tém(h')pe(f)ras(h) re(e)rum(f) vi(de)ces,(e.) (;) Splen(h)dó(h')re(i) ma(j)n<i>e</i>(h) il(h)lú(i')mi(h)nas,(f_e) (,) Et(e) í(e')gni(d)bus(c) me(d)rí(f)di(de)em:(e.) (::)"
+	},
+	{
+		"tags":["sexta","in-tempore-quadragesimae","hymnus"],
+		"datum":"mode:1;%%(c4) Re(e)ctor(g) po(gh)tens,(h) ve(gf)rax(g') De(g)us,(h.) (,) Qui(g) tém(e')pe(f)ras(g) re(fe)rum(d') vi(c)ces,(e.) (;) Splen(e)dó(g)re(gh) ma(hg)n<i>e</i> il(d)lú(f')mi(e)nas,(d.) (,) Et(c) í(e)gni(fg)bus(fe) me(c)rí(ef)di(d)em:(d.) (::)"
+	},
+	{
+		"tags":["sexta","in-tempore-passionis","hymnus"],
+		"datum":"mode:2;%%(f3) Re(e)ctor(f) po(gh)tens,(g) ve(fe)rax(f') De(g)us,(f.) (,) Qui(f) tém(g')pe(h)ras(ih) re(g)rum(f!gwh) vi(h)ces,(g.) (;) Splen(g)dó(i)re(ij) ma(ji)n<i>e</i>(h) il(g)lú(f!gwh)mi(h)nas,(g.) (,) Et(e) í(f)gni(gh)bus(g) me(fe)rí(fg)di(gf)em:(f.) (::)"
+	},
+	{
+		"tags":["sexta","in-tempore-paschali","hymnus"],
+		"datum":"mode:8;%%(c4) Re(g)ctor(h') po(g)tens,(h) ve(i)rax(j') De(h)us,(i) (,) Qui(i) tém(i')pe(j)ras(h) re(g)rum(h') vi(j)ces,(i!jw!kvJI.) (;) Splen(h)dó(i')re(j) ma(k)n<i>e</i>(i) il(i)lú(j')mi(j)nas,(i) (,) Et(h) í(i')gni(j)bus(i) me(h)rí(i')di(h)em:(g.) (::)"
+	},
+	{
+		"tags":["sexta","in-tempore-ascensionis","hymnus"],
+		"datum":"mode:4;%%(c4) Re(f)ctor(e!fwg'!hv) po(g)tens,(fd) ve(f)rax(efg) De(f)us,(e.) (;) Qui(g) tém(hj)pe(h)ras(gf) re(g)rum(g') vi(f)ces,(e[ll:1]d..) (:) Splen(cd)dó(d)re(dc) ma(d)n<i>e</i>(f) il(e)lú(de)mi(e)nas,(e.) (;) Et(g) í(gh)gni(g)bus(fd) me(f)rí(efg)di(f)em:(e.) (::)"
+	},
+	{
+		"tags":["sexta","pentecostes","hymnus"],
+		"datum":"mode:1;%%(c4) Re(d)ctor(d') po(f)tens,(d) ve(c)rax(f') De(g)us,(h.) (,) Qui(hg) tém(j)pe(jk)ras(j) re(ji)rum(h') vi(g)ces,(h.) (;) Splen(d)dó(h)re(hih) ma(g)n<i>e</i>(g) il(e)lú(f)mi(ed)nas,(d_e) (,) Et(c) í(ed)gni(g)bus(ghg) me(fe)rí(d')di(c)em:(d.) (::)"
+	},
+	{
+		"tags":["sexta","tempus-mariae","hymnus"],
+		"datum":"mode:2;%%(c4) Re(h)ctor(h_g) po(e[ll:1]d)tens,(g) ve(hj)rax(ji) De(h)us,(i.) (;) Qui(hk) tém(k)pe(i)ras(ji) re(h)rum(ih) vi(g)ces,(h.) (:) Splen(k)dó(k')re(i) ma(k)n<i>e</i>(k) il(lk)lú(ji)mi(hi)nas,(ivHG.) (;) Et(ji) í(jk)gni(i)bus(ji) me(h)rí(ih)di(g)em:(h.) (::)"
+	},
+	{
+		"tags":["sexta","transfiguratio","hymnus"],
+		"datum":"mode:4;%%(c4) Re(f)ctor(e!fwg'!hv) po(g)tens,(fd) ve(f)rax(efg) De(f)us,(e.) (;) Qui(g) tém(hj)pe(h)ras(gf) re(g)rum(g') vi(f)ces,(e[ll:1]d..) (:) Splen(cd)dó(d)re(dc) ma(d)n<i>e</i>(f) il(e)lú(de)mi(e)nas,(e.) (;) Et(g) í(gh)gni(g)bus(fd) me(f)rí(efg)di(f)em:(e.) (::)"
+	},
+	{
+		"tags":["sexta","septem-dolores-septembris","hymnus"],
+		"datum":"mode:2;%%(f3) RE(e)ctor(f) po(gh)tens,(g) ve(fe)rax(f') De(g)us,(f.) (,) Qui(f) tém(g')pe(h)ras(ih) re(g)rum(f!gwh) vi(h)ces,(g.) (;) Splen(g)dó(i)re(ij) ma(ji)n<i>e</i>(h) il(g)lú(f!gwh)mi(h)nas,(g.) (,) Et(e) í(f)gni(gh)bus(g) me(fe)rí(fg)di(gf)em:(f.) (::)"
+	}
+]

@@ -60,15 +60,11 @@
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":[
-			["completorium","duplex-minus","hymnus"],
-			["completorium","semiduplex","hymnus"]
-		],
-		"src":"gregobase/1843",
+		"tags":["completorium","hymnus"],
 		"datum":[
 			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
 			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","praesta-pater"]]}
 		]
 	},
 	{
@@ -175,129 +171,6 @@
 		"datum":[
 			"Benedícat et custódiat nos omnípotens et miséricors Dóminus, ✠ Pater, et Fílius, et Spíritus sanctus.",
 			"R. Amen."
-		]
-	},
-	{
-		"tags":[
-			["completorium","feria","hymnus"],
-			["completorium","simplex","hymnus"]
-		],
-		"src":"gregobase/13354",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["completorium","sollemnitas","hymnus"],
-		"src":"gregobase/2998",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["completorium","in-tempore-adventus","hymnus"],
-		"src":"gregobase/2498",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":[
-			["completorium","in-tempore-nativitatis","hymnus"],
-			["completorium","infra-octavam-corporis-christi","hymnus"]
-		],
-		"src":"gregobase/13339",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","per-octavam-epiphaniae","hymnus"],
-		"src":"gregobase/12897",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","in-tempore-quadragesimae","hymnus"],
-		"src":"gregobase/12673",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["completorium","in-tempore-passionis","hymnus"],
-		"src":"gregobase/19859",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["completorium","in-tempore-paschali","hymnus"],
-		"src":"gregobase/19861",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","in-tempore-ascensionis","hymnus"],
-		"src":"gregobase/12191",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","pentecostes","hymnus"],
-		"src":"gregobase/12101",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","tempus-mariae","hymnus"],
-		"src":"gregobase/11857",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","transfiguratio","hymnus"],
-		"src":"gregobase/20014",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Jesu, tibi sit glória,/Qui te revélas párvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["completorium","septem-dolores-septembris","hymnus"],
-		"src":"gregobase/20100",
-		"datum":[
-			"Te lucis ante términum,/Rerum Creátor póscimus,/Ut pro tua cleméntia/Sis præsul et custódia.",
-			"Procul recédant sómnia,/Et nóctium phantásmata;/Hostémque nostrum cómprime,/Ne polluántur córpora.",
-			"Jesu, tibi sit glória,/Qui passus es pro sérvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
 		]
 	},
 	{

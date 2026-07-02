@@ -12,7 +12,14 @@ function chomp(gabc, tags) {
 
 	// Remove commented text falling before content
 	gabc = gabc.substring(gabc.search(/\([cf]\d\)/));
-	gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>').replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>').replaceAll(/<.?sc>/g, '').replaceAll(/\[.*?\]/g, '').replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3').replaceAll('<sp>*</sp>', '*').replace(/<c>.+?<\/c>/, '').replaceAll(/<e>(.+?)<\/e>\(.\)/g, '<i>$1</i>()');
+	gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>')
+		.replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>')
+		.replaceAll(/<.?sc>/g, '')
+		.replaceAll(/\[.*?\]/g, '')
+		.replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3')
+		.replaceAll('<sp>*</sp>', '*')
+		.replace(/<c>.+?<\/c>/, '')
+		.replaceAll(/<e>(.+?)<\/e>\(.\)/g, '<i>$1</i>()');
 
 	gabcdata = '';
 	if (mode) {

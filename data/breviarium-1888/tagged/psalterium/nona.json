@@ -19,15 +19,11 @@
 		]
 	},
 	{
-		"tags":[
-			["nona","duplex-minus","hymnus"],
-			["nona","semiduplex","hymnus"]
-		],
-		"src":"gregobase/12799",
+		"tags":["nona","hymnus"],
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
 			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			["terminatio","praesta-pater"]
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","praesta-pater"]]}
 		]
 	},
 	{
@@ -58,18 +54,6 @@
 	{
 		"tags":["nona","temporale","versiculus"],
 		"datum":["V. Ab occúltis meis munda me Dómine.","R. Et ab aliénis parce servo tuo."]
-	},
-	{
-		"tags":[
-			["nona","feria","hymnus"],
-			["nona","simplex","hymnus"]
-		],
-		"src":"gregobase/13226",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			["terminatio","praesta-pater"]
-		]
 	},
 	{
 		"tags":["nona","feria","antiphona"],
@@ -162,116 +146,5 @@
 	{
 		"tags":["nona","preces"],
 		"datum":[["tertia","preces"]]
-	},
-	{
-		"tags":["nona","sollemnitas","hymnus"],
-		"src":"gregobase/1836",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["nona","in-tempore-adventus","hymnus"],
-		"src":"gregobase/19314",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":[
-			["nona","in-tempore-nativitatis","hymnus"],
-			["nona","infra-octavam-corporis-christi","hymnus"]
-		],
-		"src":"gregobase/19631",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","per-octavam-epiphaniae","hymnus"],
-		"src":"gregobase/19635",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Jesu, tibi sit glória,/Qui apparuísti Géntibus,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","in-tempore-quadragesimae","hymnus"],
-		"src":"gregobase/19883",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["nona","in-tempore-passionis","hymnus"],
-		"src":"gregobase/19884",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			["terminatio","praesta-pater"]
-		]
-	},
-	{
-		"tags":["nona","in-tempore-paschali","hymnus"],
-		"src":"gregobase/19885",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","in-tempore-ascensionis","hymnus"],
-		"src":"gregobase/19947",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Jesu, tibi sit glória,/Qui victor in cœlum redis,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","pentecostes","hymnus"],
-		"src":"gregobase/19950",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sæculórum sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","tempus-mariae","hymnus"],
-		"src":"gregobase/19886",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Jesu tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","transfiguratio","hymnus"],
-		"src":"gregobase/20013",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Jesu, tibi sit glória,/Qui te revélas párvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":["nona","septem-dolores-septembris","hymnus"],
-		"src":"gregobase/20104",
-		"datum":[
-			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
-			"Largíre lumen véspere,/Quo vita nusquam décidat,/Sed prǽmium mortis sacræ/Perénnis instet glória.",
-			"Jesu, tibi sit glória,/Qui passus es pro sérvulis,/Cum Patre et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
 	}
 ]

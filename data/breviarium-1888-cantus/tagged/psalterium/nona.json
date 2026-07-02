@@ -1,0 +1,67 @@
+[
+	{
+		"tags":[
+			["nona","feria","hymnus"],
+			["nona","simplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Re(h)rum(h') De(h)us(h) te(h)nax(h') vi(g)gor,(g) (,) Im(h)mó(h')tus(h) in(h) te(g) pér(h')ma(h)nens,(h.) (;) Lu(h)cis(h') di(h)úr(g)nae(f) tém(g')po(f)ra(e) (,) Suc(f)cés(g')si(g)bus(g) de(f)tér(h')mi(g)nans:(g.) (::)"
+	},
+	{
+		"tags":[
+			["nona","duplex-minus","hymnus"],
+			["nona","semiduplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Re(g)rum(g') De(h)us(g) te(f)nax(g') vi(h)gor,(g_h) (,) Im(j)mó(j')tus(j) in(jk) te(ji) pér(h')ma(j)nens,(jkJI.) (;) Lu(h)cis(i') di(j)úr(h)nae(g) tém(h')po(g)ra(f_e) (,) Suc(d)cés(e')si(f)bus(g) de(f)tér(h')mi(g)nans:(g.) (::)"
+	},
+	{
+		"tags":["nona","sollemnitas","hymnus"],
+		"datum":"mode:8;%%(c3) Re(e)rum(e) De(fg)us(g) te(ef)nax(hg) vi(fg)gor,(gvFE.) (;) Im(e)mó(g')tus(h) in(i) te(iji) pér(g')ma(h)nens,(i.) (:) Lu(g)cis(i') di(i)úr(j)nae(i) tém(hg)po(fe)ra(f!gwhg.) (;) Suc(e)cés(e)si(fh)bus(hg) de(fe)tér(f!gwhg)mi(fe)nans:(e.) (::)"
+	},
+	{
+		"tags":["nona","in-tempore-adventus","hymnus"],
+		"datum":"mode:1;%%(c4) Re(e)rum,(c') De(e)us,(g) te(h)nax(i') vi(h)gor,(h) (,) Im(g)mó(h')tus(i) in(j) te(ig) pér(h')ma(i)nens,(h.) (;) Lu(h)cis(h') di(i)úr(g)næ(eg) tém(f')po(e)ra(d) Suc(e)cés(c')si(e)bus(g) de(h)tér(i')mi(h)nans:(h.) (::)"
+	},
+	{
+		"tags":[
+			["nona","in-tempore-nativitatis","hymnus"],
+			["nona","infra-octavam-corporis-christi","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Re(g)rum(g') De(f)us(e) te(d)nax(fhg) vi(f)gor,(g'_) (,) Im(hjji)mó(h')tus(g) in(h) te(ig) pér(h')ma(g)nens,(f.) (;) Lu(g)cis(g') di(f)úr(g)næ(h) tém(j')po(g)ra(hih.) (,) Suc(h)cés(h')si(g)bus(fvED') de(f)tér(hg)mi(f)nans:(g.) (::)"
+	},
+	{
+		"tags":["nona","per-octavam-epiphaniae","hymnus"],
+		"datum":"mode:8;%%(c3) Re(d)rum(e) De(fh)us(h) te(e)nax(f') vi(d)gor,(e'_) (,) Im(h)mó(h')tus(f) in(h) te(e) pér(f)ma(de)nens,(e.) (;) Lu(h)cis(h') di(i)úr(j)næ(h) tém(i')po(h)ra(f_e) (,) Suc(e)cés(e')si(d)bus(c) de(d)tér(f)mi(de)nans:(e.) (::)"
+	},
+	{
+		"tags":["nona","in-tempore-quadragesimae","hymnus"],
+		"datum":"mode:1;%%(c4) Re(e)rum(g) De(gh)us(h) te(gf)nax(g') vi(g)gor,(h.) (,)  Im(g)mó(e')tus(f) in(g) te(fe) pér(d')ma(c)nens,(e.) (;)  Lu(e)cis(g) di(gh)úr(hg)nae(e[ll:1]d) tém(f')po(e)ra(d.) (,) Suc(c)cés(e)si(fg)bus(fe) de(c)tér(ef)mi(d)nans:(d.) (::)"
+	},
+	{
+		"tags":["nona","in-tempore-passionis","hymnus"],
+		"datum":"mode:2;%%(f3) Re(e)rum(f) De(gh)us(g) te(fe)nax(f') vi(g)gor,(f.) (,)  Im(f)mó(g')tus(h) in(ih) te(g) pér(f!gwh)ma(h)nens,(g.) (;)  Lu(g)cis(i) di(ij)úr(ji)nae(hg) tém(f!gwh)po(h)ra(g.) (,) Suc(e)cés(f)si(gh)bus(g) de(fe)tér(fg)mi(gf)nans:(f.) (::)"
+	},
+	{
+		"tags":["nona","in-tempore-paschali","hymnus"],
+		"datum":"mode:8;%%(c4) RE(g)rum(h') De(g)us(h) te(i)nax(j') vi(h)gor,(i) (,)  Im(i)mó(i')tus(j) in(h) te(g) pér(h')ma(j)nens,(i!jw!kvJI.) (;)  Lu(h)cis(i') di(j)úr(k)nae(i) tém(j')po(j)ra(i) (,) Suc(h)cés(i')si(j)bus(i) de(h)tér(i')mi(h)nans:(g.) (::)"
+	},
+	{
+		"tags":["nona","in-tempore-ascensionis","hymnus"],
+		"datum":"mode:4;%%(c4) Re(f)rum(e!fwg'!hv) De(g)us(fd) te(f)nax(efg) vi(f)gor,(e.) (;) Im(g)mó(hj)tus(h) in(gf) te(g) pér(g')ma(f)nens,(e[ll:1]d..) (:) Lu(cd)cis(d) di(dc)úr(d)nae(fe) tém(de)po(e)ra(e.) (;) Suc(g)cés(gh)si(g)bus(fd) de(f)tér(efg)mi(f)nans:(e.) (::)"
+	},
+	{
+		"tags":["nona","pentecostes","hymnus"],
+		"datum":"mode:1;%%(c4) Re(d)rum(d') De(f)us(d) te(c)nax(f') vi(g)gor,(h.) (,) Im(hg)mó(j)tus(jk) in(j) te(ji) pér(h')ma(g)nens,(h.) (;) Lu(d)cis(h) di(hih)úr(g)nae(ge) tém(f)po(ed)ra(d_e) (,) Suc(c)cés(ed)si(g)bus(ghg) de(fe)tér(d')mi(c)nans:(d.) (::)"
+	},
+	{
+		"tags":["nona","tempus-mariae","hymnus"],
+		"datum":"mode:2;%%(c4) Re(h)rum(h_g) De(e[ll:1]d)us(g) te(hj)nax(ji) vi(h)gor,(i.) (;) Im(hk)mó(k)tus(i) in(ji) te(h) pér(ih)ma(g)nens,(h.) (:) Lu(k)cis(k') di(i)úr(k)nae(klk) tém(ji)po(hi)ra(ivHG.) (;) Suc(ji)cés(jk)si(i)bus(ji) de(h)tér(ih)mi(g)nans:(h.) (::)"
+	},
+	{
+		"tags":["nona","transfiguratio","hymnus"],
+		"datum":"mode:4;%%(c4) Re(f)rum(e!fwg'!hv) De(g)us(fd) te(f)nax(efg) vi(f)gor,(e.) (;) Im(g)mó(hj)tus(h) in(gf) te(g) pér(g')ma(f)nens,(e[ll:1]d..) (:) Lu(cd)cis(d) di(dc)úr(d)nae(fe) tém(de)po(e)ra(e.) (;) Suc(g)cés(gh)si(g)bus(fd) de(f)tér(efg)mi(f)nans:(e.) (::)"
+	},
+	{
+		"tags":["nona","septem-dolores-septembris","hymnus"],
+		"datum":"mode:2;%%(f3) Re(e)rum(f) De(gh)us(g) te(fe)nax(f') vi(g)gor,(f.) (,)  Im(f)mó(g')tus(h) in(ih) te(g) pér(f!gwh)ma(h)nens,(g.) (;)  Lu(g)cis(i) di(ij)úr(ji)nae(hg) tém(f!gwh)po(h)ra(g.) (,) Suc(e)cés(f)si(gh)bus(g) de(fe)tér(fg)mi(gf)nans:(f.) (::)"
+	}
+]

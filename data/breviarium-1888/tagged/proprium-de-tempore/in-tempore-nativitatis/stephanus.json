@@ -26,20 +26,6 @@
 		"datum":"Christum natum, qui beátum hódie coronávit Stéphanum, * Veníte adorémus."
 	},
 	{
-		"tags":[
-			["stephanus","vesperae","hymnus"],
-			["stephanus","matutinum","hymnus"]
-		],
-		"src":"gregobase/2126",
-		"datum":[
-			"Deus tuórum mílitum/Sors et coróna, prǽmium,/Laudes canéntes Mártyris/Absólve nexu críminis.",
-			"Hic nempe mundi gaúdia,/Et blanda fraudum pábula/Imbúta felle députans,/Pervénit ad cœléstia.",
-			"Pœnas cucúrrit fórtiter,/Et sústulit viríliter,/Fundénsque pro te sánguinem,/Ætérna dona póssidet.",
-			"Ob hoc precátu súpplici/Te póscimus, piíssime;/In hoc triúmpho Mártyris/Dimítte noxam sérvulis.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
 		"tags":["stephanus","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"De Áctibus Apostolórum.",
@@ -170,16 +156,6 @@
 	{
 		"tags":["stephanus","capitulum"],
 		"datum":"[Act. 6. b.]/Stéphanus autem plenus grátia et fortitúdine, * faciébat prodígia et signa magna in pópulo."
-	},
-	{
-		"tags":["stephanus","laudes","hymnus"],
-		"src":"gregobase/12618",
-		"datum":[
-			"Invícte Martyr, únicum/Patris secútus Fílium,/Victis triúmphas hóstibus./Victor fruens cœléstibus.",
-			"Tui precátus múnere/Nostrum reátum dílue,/Arcens mali contágium,/Vitæ repéllens tǽdium.",
-			"Solúta sunt jam víncula/Tui sacráti córporis:/Nos solve vinclis sǽculi,/Dono supérni Núminis.",
-			"Jesu, tibi sit glória,/Qui natus es de Vírgine,/Cum Patre, et almo Spíritu,/In sempitérna sǽcula.","Amen."
-		]
 	},
 	{
 		"tags":["stephanus","laudes","versiculus"],

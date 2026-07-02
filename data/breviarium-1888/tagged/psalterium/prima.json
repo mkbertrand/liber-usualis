@@ -18,6 +18,16 @@
 		]
 	},
 	{
+		"tags":["prima","hymnus"],
+		"datum":[
+			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
+			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
+			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
+			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","deo-patri"]]}
+		]
+	},
+	{
 		"tags":["prima","dominica","antiphona"],
 		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
@@ -234,16 +244,6 @@
 		"tags":["prima","collecta"],
 		"datum":"Dómine Deus omnípotens, qui ad princípium hujus diéi nos perveníre fecísti: + tua nos hódie salva virtúte; ut in hac die ad nullum declinémus peccátum, sed semper ad tuam justítiam faciéndam nostra procédant elóquia, * dirigántur cogitatiónes et ópera.",
 		"terminatio":[["terminatio","per-dominum"]]
-	},
-	{
-		"tags":["prima","hymnus"],
-		"datum":[
-			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
-			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
-			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
-			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
-			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","deo-patri"]]}
-		]
 	},
 	{
 		"tags":["prima","in-tempore-paschali","temporale","antiphona"],

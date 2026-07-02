@@ -1,0 +1,67 @@
+[
+	{
+		"tags":[
+			["completorium","feria","hymnus"],
+			["completorium","simplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Te(h) lu(j')cis(j) an(j)te(j) tér(k')mi(j)num,(i) (,) Re(h)rum(h') Cre(h)á(h)tor,(h) pó(i')sci(h)mus,(g.) (;) Ut(i) pro(h') tu(g)a(g) cle(f)mén(g')ti(h)a,(h) (,) Sis(j) prae(j')sul(j) et(j) cu(h)stó(i')di(h)a.(g.) (::)"
+	},
+	{
+		"tags":[
+			["completorium","duplex-minus","hymnus"],
+			["completorium","semiduplex","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Te(g) lu(i')cis(h) an(j)te(j) tér(j')mi(i)num,(h) (,) Re(h)rum(j') Cre(j)á(j)tor,(g) pó(h')sci(g)mus,(f.) (;) Ut(h) pro(h') tu(g)a(j) cle(i)mén(h')ti(g)a,(hih') (,) Sis(h) prae(h')sul(g) et(f) cu(g)stó(h')di(g)a.(g.) (::)"
+	},
+	{
+		"tags":["completorium","sollemnitas","hymnus"],
+		"datum":"mode:4;%%(c4) Te(f) lu(e')cis(g) an(hg)te(f) tér(gh)mi(gvFE)num,(e.) (,) Re(dh)rum(hi) Cre(h)á(h)tor,(hg) pó(hj)sci(hg)mus,(h.) (;) Ut(h) pro(h') tu(g)a(hg) cle(f)mén(g)ti(fe)a,(d.) (,) Sis(f) prae(e')sul(g) et(hg) cu(f)stó(gh)di(gvFE)a.(e.) (::)"
+	},
+	{
+		"tags":["completorium","in-tempore-adventus","hymnus"],
+		"datum":"mode:2;%%(f3) Te(ef) lu(f)cis(fh) an(e)te(fh) tér(hg)mi(f)num,(g'_[oh:h]) (,) Re(i)rum(hg) Cre(f)á(g)tor,(hg) pó(f')sci(e)mus,(f.) (;) Ut(fi) pro(f) tu(fi)a(h) cle(hg)mén(fg)ti(f)a,(e'_[oh:h]) (,) Sis(e) prae(f')sul(g) et(hg) cu(f)stó(gf)di(e)a.(f.) (::)"
+	},
+	{
+		"tags":[
+			["completorium","in-tempore-nativitatis","hymnus"],
+			["completorium","infra-octavam-corporis-christi","hymnus"]
+		],
+		"datum":"mode:8;%%(c4) Te(g) lu(g')cis(f) an(e)te(d) tér(fhg)mi(f)num,(g'_) (,) Re(hjji)rum(h') Cre(g)á(h)tor,(ig) pó(h')sci(g)mus,(f.) (;) Ut(g) pro(g') tu(f)a(g) cle(h)mén(j')ti(g)a,(hih.) (,) Sis(h) prae(h')sul(g) et(fvED') cu(f)stó(hg)di(f)a.(g.) (::)"
+	},
+	{
+		"tags":["completorium","per-octavam-epiphaniae","hymnus"],
+		"datum":"mode:8;%%(c3) Te(d) lu(e)cis(fh) an(h)te(e) tér(f')mi(d)num,(e'_) (,) Re(h)rum(h') Cre(f)á(h)tor,(e) pó(f)sci(de)mus,(e.) (;) Ut(h) pro(h') tu(i)a(j) cle(h)mén(i')ti(h)a,(f_e) (,) Sis(e) prae(e')sul(d) et(c) cu(d)stó(f)di(de)a.(e.) (::)"
+	},
+	{
+		"tags":["completorium","in-tempore-quadragesimae","hymnus"],
+		"datum":"mode:2;%%(f3) Te(g) lu(h)cis(fe) an(f)te(g) tér(h')mi(f)num,(f') (,) Re(e)rum(f') Cre(h)á(g)tor,(e) pó(f')sci(h)mus,(g.) (;) Ut(h) pro(i') tu(h)a(g) cle(fg)mén(h')ti(f)a,(f') (,) Sis(g) prae(h)sul(gvFE) et(f) cu(g)stó(h')di(f)a.(f.) (::)"
+	},
+	{
+		"tags":["completorium","in-tempore-passionis","hymnus"],
+		"datum":"mode:2;%%(f3) Te(e) lu(f)cis(gh) an(g)te(fe) tér(f')mi(g)num,(f.) (,) Re(f)rum(g') Cre(h)á(ih)tor,(g) pó(f!gwh)sci(h)mus,(g.) (;) Ut(g) pro(i) tu(ij)a(ji) cle(hg)mén(f!gwh)ti(h)a,(g.) (,) Sis(e) prae(f)sul(gh) et(g) cu(fe)stó(fg)di(gf)a.(f.) (::)"
+	},
+	{
+		"tags":["completorium","in-tempore-paschali","hymnus"],
+		"datum":"mode:8;%%(c4) Te(g) lu(h')cis(g) an(h)te(i) tér(j')mi(h)num,(i) (,) Re(i)rum(i') Cre(j)á(h)tor,(g) pó(h')sci(j)mus,(i!jw!kvJI.) (;) Ut(h) pro(i') tu(j)a(k) cle(i)mén(j')ti(j)a,(i) (,) Sis(h) prae(i')sul(j) et(i) cu(h)stó(i')di(h)a.(g.) (::)"
+	},
+	{
+		"tags":["completorium","in-tempore-ascensionis","hymnus"],
+		"datum":"mode:4;%%(c4) Te(f) lu(e!fwg'!hv)cis(g) an(fd)te(f) tér(e!fg)mi(f)num,(e.) (;) Re(g)rum(hj) Cre(h)á(gf)tor,(g) pó(g')sci(f)mus,(ed..) (:) Ut(cd) pro(d) tu(dc)a(d) cle(fe)mén(de)ti(e)a,(e.) (;) Sis(g) prae(gh)sul(g) et(fd) cu(f)stó(e!fg)di(f)a.(e.) (::)"
+	},
+	{
+		"tags":["completorium","pentecostes","hymnus"],
+		"datum":"mode:1;%%(c4) Te(d) lu(d')cis(f) an(d)te(c) tér(f')mi(g)num,(h.) (,) Re(hg)rum(j) Cre(jk)á(j)tor,(ji) pó(h')sci(g)mus,(h.) (;) Ut(d) pro(h) tu(hih)a(g) cle(ge)mén(f)ti(ed)a,(d_e) (,) Sis(c) prae(ed)sul(g) et(ghg) cu(fe)stó(d')di(c)a.(d.) (::)"
+	},
+	{
+		"tags":["completorium","tempus-mariae","hymnus"],
+		"datum":"mode:2;%%(c4) Te(h) lu(h_g)cis(ed) an(g)te(hj) tér(ji)mi(h)num,(i.) (;) Re(hk)rum(k) Cre(i)á(ji)tor,(h) pó(ih)sci(g)mus,(h.) (:) Ut(k) pro(k') tu(i)a(k) cle(klk)mén(ji)ti(hi)a,(ivHG.) (;) Sis(ji) prae(jk)sul(i) et(ji) cu(h)stó(ih)di(g)a.(h.) (::)"
+	},
+	{
+		"tags":["completorium","transfiguratio","hymnus"],
+		"datum":"mode:4;%%(c4) Te(f) lu(e!fwg'!hv)cis(g) an(fd)te(f) tér(e!fg)mi(f)num,(e.) (;) Re(g)rum(hj) Cre(h)á(gf)tor,(g) pó(g')sci(f)mus,(ed..) (:) Ut(cd) pro(d) tu(dc)a(d) cle(fe)mén(de)ti(e)a,(e.) (;) Sis(g) prae(gh)sul(g) et(fd) cu(f)stó(e!fg)di(f)a.(e.) (::)"
+	},
+	{
+		"tags":["completorium","septem-dolores-septembris","hymnus"],
+		"datum":"mode:2;%%(f3) Te(e) lu(f)cis(gh) an(g)te(fe) tér(f')mi(g)num,(f.) (,) Re(f)rum(g') Cre(h)á(ih)tor,(g) pó(f!gwh)sci(h)mus,(g.) (;) Ut(g) pro(i) tu(ij)a(ji) cle(hg)mén(f!gwh)ti(h)a,(g.) (,) Sis(e) prae(f)sul(gh) et(g) cu(fe)stó(fg)di(gf)a.(f.) (::)"
+	}
+]
