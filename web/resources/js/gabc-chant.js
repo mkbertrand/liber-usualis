@@ -3,7 +3,6 @@
 
 
 function chomp(gabc, tags) {
-	console.log(gabc);
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 
 	mode = gabc.match(/mode:(.+?)(?:;|\n)/);
