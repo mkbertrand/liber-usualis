@@ -250,17 +250,13 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":[
-			["prima","feria","hymnus"],
-			["prima","simplex","hymnus"]
-		],
-		"src":"gregobase/11944",
+		"tags":["prima","hymnus"],
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
 			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
 			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
 			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
-			["terminatio","deo-patri"]
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","deo-patri"]]}
 		]
 	},
 	{
@@ -341,28 +337,6 @@
 		"tags":["prima","in-tempore-passionis","temporale","antiphona"],
 		"src":"gregobase/12847",
 		"datum":"Líbera me Dómine, * et pone me juxta te: et cujúsvis manus pugnet contra me."
-	},
-	{
-		"tags":["prima","sollemnitas","hymnus"],
-		"src":"gregobase/2995",
-		"datum":[
-			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
-			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
-			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
-			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
-			["terminatio","deo-patri"]
-		]
-	},
-	{
-		"tags":["prima","in-tempore-adventus","hymnus"],
-		"src":"gregobase/19235",
-		"datum":[
-			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
-			"Linguam refrǽnans témperet,/Ne litis horror ínsonet:/Visum fovéndo cóntegat,/Ne vanitátes haúriat.",
-			"Sint pura cordis íntima,/Absístat et vecórdia:/Carnis terat supérbiam/Potus cibíque párcitas.",
-			"Ut cum dies abscésserit,/Noctémque sors redúxerit,/Mundi per abstinéntiam/Ipsi canámus glóriam.",
-			["terminatio","deo-patri"]
-		]
 	},
 	{
 		"tags":[

@@ -231,6 +231,28 @@ def rite():
 						traverse(v)
 			rite['datum'] = copy.deepcopy(rite['datum'])
 			traverse(rite['datum'])
+		
+		def get_chant(tags):
+			chant_books = []
+			for book in context.books:
+				if datamanage.data_root.joinpath('data').joinpath(f'{book.title}-cantus').exists():
+					chant_books.append(datamanage.get_book(f'{book.title}-cantus'))
+			chant_context =  datamanage.LiturgicalContext(chant_books)
+			return breviarium.search(context, tags, chant_context.getpile(primary | set(hours) | tags | breviarium.defaultpile))
+
+		def traverse_chant(obj):
+			if type(obj) is dict and 'quaesitum' in obj:
+				tran = get_chant(obj['quaesitum'])
+				if tran:
+					obj['cantus'] = tran
+			if type(obj) is dict:
+				traverse_chant(obj['datum'])
+			elif type(obj) is list:
+				for v in obj:
+					traverse_chant(v)
+		rite['datum'] = copy.deepcopy(rite['datum'])
+		traverse_chant(rite['datum'])
+			
 	except Exception as e:
 		traceback.print_exc()
 		print(e)

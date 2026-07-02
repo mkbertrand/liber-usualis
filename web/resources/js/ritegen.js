@@ -315,8 +315,20 @@ function renderRite(data, options) {
 					}
 				}
 
+				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
+					openDiv('', 'gabc-chant-container');
+					openDiv('', 'gabc-chant');
+					console.log(unpack(data.cantus));
+					rite += `<gabc-chant tags="${data.tags.concat(parentTags).join('+')}">${unpack(data.cantus)}</gabc-chant>`;
+					closeDiv('', 'gabc-chant');
+					openDiv('', 'gabc-chant-replaced-text');
+					renderInner(data, translated, parentTags);
+					closeDiv('gabc-chant-replaced-text');
+					closeDiv('gabc-chant-container');
+					return;
+
 				// Handle objects that have chant.
-				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
+				} else if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'src' in data && data['src'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
 					openDiv('', 'gabc-chant-container');
 					openDiv('', 'gabc-chant');
 					rite += `<gabc-chant id="/chant/${data['src']}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;

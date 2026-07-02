@@ -182,7 +182,7 @@ def handlecommemorations(context, item, selected, alternates):
 			ret.append(process(context, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
 		return {'tags':{'commemorationes'}, 'datum':ret}
 
-def process(context, item, selected, alternates, pile):
+def process(context, item, selected, alternates, pile, pilemod = []):
 	if item is None:
 		return 'Absens'
 	if selected is None:
@@ -195,6 +195,12 @@ def process(context, item, selected, alternates, pile):
 	if 'commemorationes' in item:
 		return handlecommemorations(context, item, selected, alternates)
 
+	if type(item) is dict and 'quaere' in item:
+		item['quaere'] = frozenset(item['quaere'])
+		pilemod = [{'tags': item['quaere'], 'datum': item['datum']}]
+		pile += pilemod
+		item = item['quaere']
+
 	# An entry within an item that is a tagset is calling to search further for sub-items.
 	if type(item) is set or type(item) is frozenset:
 		selected = copy.deepcopy(selected)
@@ -202,7 +208,7 @@ def process(context, item, selected, alternates, pile):
 		contras = set().union(*contradictions(context, 'positionales', item | selected))
 		selected -= contras
 		if contras:
-			pile = context.getpile(item | selected | defaultpile)
+			pile = context.getpile(item | selected | defaultpile) + pilemod
 
 		result = None
 		if not any('/' in i for i in item):
@@ -213,7 +219,7 @@ def process(context, item, selected, alternates, pile):
 					alternates = copy.copy(alternates)
 					alternates.append(selected - expandcat(context, 'positionales'))
 					selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-					pile = context.getpile(defaultpile | item | selected)
+					pile = context.getpile(defaultpile | item | selected) + pilemod
 					item -= expandcat(context, 'temporale')
 					break
 
@@ -227,7 +233,7 @@ def process(context, item, selected, alternates, pile):
 						selected = alternates.pop(i)
 					else:
 						selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-					pile = context.getpile(defaultpile | item | selected)
+					pile = context.getpile(defaultpile | item | selected) + pilemod
 					result = search(context, item | selected, pile)
 					break
 
@@ -238,7 +244,7 @@ def process(context, item, selected, alternates, pile):
 			if len(item & expandcat(context, 'temporale')) != 0:
 				selected -= set().union(*contradictions(context, 'temporale', item | selected))
 				selected |= item & expandcat(context, 'temporale')
-				pile = context.getpile(defaultpile | item | selected)
+				pile = context.getpile(defaultpile | item | selected) + pilemod
 
 			result = search(context, item | selected, pile)
 
