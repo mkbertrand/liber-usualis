@@ -31,6 +31,10 @@ function chomp(gabc, tags) {
 	// Make sure asterisks are formatted right
 	gabc = gabc.replace(/(\([,:;]+?\))\s*?\*\s/, '*$1 ');
 
+
+  if (tags.includes('hymnus') && !tags.includes('te-deum')) {
+    gabc = gabc.match(/([\s\S]+?)(?:\d\.)?\(::\)/)[1] + '(::)';
+  }
 	if (tags.includes('deus-in-adjutorium')) {
 		return gabcdata + gabc.substring(0, gabc.search(/\(Z\-?\)/));
 
@@ -157,8 +161,10 @@ class ChantElement extends HTMLElement {
 			this.init();
 		} else {
 			fetch($(this).attr('id'))
+        .then(grabError)
+        .catch(err => this.innerText = '')
 				.then(data => data.text())
-				.then(gabc => chomp(gabc, $(this).attr('tags')))
+				.then(resp => chomp(resp, $(this).attr('tags')))
 				.then(text => {this.setGabc(text); this.init();});
 		}
 	}

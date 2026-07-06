@@ -1,0 +1,29 @@
+[
+  {
+		"tags":[
+			["laudes","dominica","hymnus"],
+			["laudes","dominica","autumnalis","hymnus"]
+		],
+		"datum":"/gregobase/13348"
+  },
+  {
+		"tags":["laudes","dominica","post-pentecosten","hymnus"],
+		"datum":"/gregobase/12721"
+  },
+  {
+		"tags":["laudes","temporale","hymnus"],
+		"in-tempore-adventus":"/gregobase/11919",
+		"in-tempore-quadragesimae":"/gregobase/12159",
+		"in-tempore-passionis":"/gregobase/13250",
+		"in-tempore-paschali":"/gregobase/12353"
+  },
+  {
+		"tags":["laudes","feria","hymnus"],
+		"feria-ii":"/gregobase/15781",
+		"feria-iii":"/gregobase/12157",
+		"feria-iv":"/gregobase/12147",
+		"feria-v":"/gregobase/12882",
+		"feria-vi":"/gregobase/13176",
+		"sabbatum":"/gregobase/12329"
+  }
+]

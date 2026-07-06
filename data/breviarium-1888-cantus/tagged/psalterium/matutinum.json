@@ -1,0 +1,28 @@
+[
+  {
+		"tags":["matutinum","dominica","hymnus"],
+    "datum":"/nocturnale/EXF1Hw_dcrochu",
+		"post-pentecosten":"/nocturnale/EXF1Hs_dcrochu"
+  },
+  {
+		"tags":["matutinum","temporale","hymnus"],
+		"in-tempore-adventus":"/nocturnale/EXA1H_dcrochu",
+		"in-tempore-quadragesimae":"/nocturnale/Q1H_marteo",
+		"in-tempore-passionis":"/nocturnale/EXQ5H_dcrochu",
+		"in-tempore-paschali":"/nocturnale/EXP1H_dcrochu"
+  },
+  {
+		"tags":["hymnus","te-deum"],
+		"datum":"/gregobase/2305",
+		"solemnis":"/gregobase/2809"
+  },
+  {
+		"tags":["matutinum","feria","hymnus"],
+		"feria-ii":"/nocturnale/F2H",
+		"feria-iii":"/nocturnale/F3H",
+		"feria-iv":"/nocturnale/F4H",
+		"feria-v":"/nocturnale/F5H",
+		"feria-vi":"/nocturnale/F6H",
+		"sabbatum":"nocturnale/EXF7H_sandhofe"
+  }
+]

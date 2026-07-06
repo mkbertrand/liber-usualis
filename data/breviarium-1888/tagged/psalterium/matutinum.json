@@ -398,7 +398,6 @@
 	},
 	{
 		"tags":["matutinum","post-pentecosten","dominica","hymnus"],
-		"src":"nocturnale/EXF1Hs",
 		"datum":[
 			"Nocte surgéntes vigilémus omnes,/Semper in psalmis meditémur, atque/Voce concórdi Dómino canámus/Dúlciter hymnos.",
 			"Ut pio Regi páriter canéntes,/Cum suis sanctis mereámur aulam/Íngredi cœli, simul et perénnem/Dúcere vitam.",
@@ -407,7 +406,6 @@
 	},
 	{
 		"tags":["matutinum","in-tempore-adventus","temporale","hymnus"],
-		"src":"nocturnale/EXA1H",
 		"datum":[
 			"Verbum supérnum pródiens,/E Patris ætérni sinu/Qui natus orbi súbvenis,/Labénte cursu témporis.",
 			"Illúmina nunc péctora,/Tuóque amóre cóncrema;/Ut cor cadúca déserens/Cœli volúptas ímpleat:",
@@ -423,7 +421,6 @@
 	},
 	{
 		"tags":["matutinum","in-tempore-quadragesimae","temporale","hymnus"],
-		"src":"nocturnale/Q1H",
 		"datum":[
 			"Ex more docti mýstico/Servémus hoc jejúnium,/Deno diérum círculo/Ducto quater notíssimo.",
 			"Lex et prophétæ prímitus/Hoc prætulérunt, póstmodum/Christus sacrávit, ómnium/Rex atque factor témporum.",
@@ -443,7 +440,6 @@
 	},
 	{
 		"tags":["matutinum","in-tempore-passionis","temporale","hymnus"],
-		"src":"nocturnale/EXQ5H",
 		"datum":[
 			"Pange lingua gloriósi/Laúream certáminis,/Et super Crucis trophǽo/Dic triúmphum nóbilem:/Quáliter Redémptor orbis/Immolátus vícerit.",
 			"De paréntis protoplásti/Fraude Factor cóndolens,/Quando pomi noxiális/In necem morsu ruit:/Ipse lignum tunc notávit,/Damna ligni ut sólveret.",
@@ -460,7 +456,6 @@
 	},
 	{
 		"tags":["matutinum","in-tempore-paschali","temporale","hymnus"],
-		"src":"nocturnale/EXP1H",
 		"datum":[
 			"Rex sempitérne cœ\u0301litum,/Rerum Creátor ómnium,/Æquális ante sǽcula/Semper Parénti Fílius:",
 			"Nascénte qui mundo faber/Imáginem vultus tui/Tradens Adámo, nóbilem/Limo jugásti spíritum.",
@@ -767,42 +762,6 @@
 	},
 	{
 		"tags":["hymnus","te-deum"],
-		"src":"gregobase/2305",
-		"datum":[
-			"Te Deum laudámus: * te Dóminum confitémur.",
-			"Te ætérnum Patrem * omnis terra venerátur.",
-			"Tibi omnes Ángeli, * tibi cœli, et univérsæ potestátes:",
-			"Tibi Chérubim et Séraphim, * incessábili voce proclámant:",
-			"[(Fit reverentia)] Sanctus, * Sanctus, * Sanctus * Dóminus Deus Sábaoth.",
-			"Pleni sunt cœli et terra * majestátis glóriæ tuæ.",
-			"Te gloriósus * Apostolórum chorus,",
-			"Te Prophetárum * laudábilis númerus,",
-			"Te Mártyrum candidátus * laudat exércitus.",
-			"Te per orbem terrárum * sancta confitétur Ecclésia,",
-			"Patrem * imménsæ majestátis,",
-			"Venerándum tuum verum * et únicum Fílium,",
-			"Sanctum quoque * Paráclitum Spíritum.",
-			"Tu rex glóriæ * Christe.",
-			"Tu Patris * sempitérnus es Fílius.",
-			"[(Fit reverentia)] Tu ad liberándum susceptúrus hóminem: * non horruísti Vírginis úterum.",
-			"Tu devícto mortis acúleo: * aperuísti credéntibus regna cœlórum.",
-			"Tu ad déxteram Dei sedes, * in glória Patris.",
-			"Judex créderis * esse ventúrus.",
-			"[(Flexis genibus)] Te ergo quǽsumus, tuis fámulis súbveni: * quos pretióso sánguine redemísti.",
-			"Ætérna fac cum sanctis tuis: * in glória numerári.",
-			"Salvum fac pópulum tuum Dómine, * et bénedic hæreditáti tuæ.",
-			"Et rege eos, * et extólle illos usque in ætérnum.",
-			"Per síngulos dies * benedícimus te.",
-			"Et laudámus nomen tuum in sǽculum, * et in sǽculum sǽculi.",
-			"Dignáre Dómine die isto * sine peccáto nos custodíre.",
-			"Miserére nostri Dómine: * miserére nostri.",
-			"Fiat misericórdia tua Dómine super nos, * quemádmodum sperávimus in te.",
-			"In te Dómine sperávi: * non confúndar in ætérnum."
-		]
-	},
-	{
-		"tags":["hymnus","te-deum","solemnis"],
-		"src":"gregobase/2809",
 		"datum":[
 			"Te Deum laudámus: * te Dóminum confitémur.",
 			"Te ætérnum Patrem * omnis terra venerátur.",
@@ -842,7 +801,6 @@
 	},
 	{
 		"tags":["matutinum","feria","feria-ii","hymnus"],
-		"src":"nocturnale/EXF2H",
 		"datum":[
 			"Somno reféctis ártubus,/Spreto cubíli súrgimus:/Nobis, Pater, canéntibus/Adésse te depóscimus.",
 			"Te lingua primum cóncinat,/Te mentis ardor ámbiat:/Ut áctuum sequéntium/Tu, sancte, sis exórdium.",
@@ -950,7 +908,6 @@
 	},
 	{
 		"tags":["matutinum","feria","feria-iii","hymnus"],
-		"src":"nocturnale/F3H",
 		"datum":[
 			"Consors patérni lúminis,/Lux ipse lucis, et dies,/Noctem canéndo rúmpimus:/Assíste postulántibus.",
 			"Aufer tenébras méntium,/Fuga catérvas dǽmonum,/Expélle somnoléntiam,/Ne pigritántes óbruat.",
@@ -1052,7 +1009,6 @@
 	},
 	{
 		"tags":["matutinum","feria","feria-iv","hymnus"],
-		"src":"nocturnale/EXF4H",
 		"datum":[
 			"Rerum Creátor óptime,/Rectórque noster áspice:/Nos a quiéte nóxia/Mersos sopóre líbera.",
 			"Te, sancte Christe, póscimus,/Ignósce culpis ómnibus:/Ad confiténdum súrgimus,/Morásque noctis rúmpimus.",
@@ -1155,7 +1111,6 @@
 	},
 	{
 		"tags":["matutinum","feria","feria-v","hymnus"],
-		"src":"nocturnale/F5H",
 		"datum":[
 			"Nox atra rerum cóntegit/Terræ colóres ómnium:/Nos confiténtes póscimus/Te, juste judex córdium:",
 			"Ut aúferas piácula,/Sordésque mentis ábluas:/Donésque Christe grátiam,/Ut arceántur crímina.",
@@ -1258,7 +1213,6 @@
 	},
 	{
 		"tags":["matutinum","feria","feria-vi","hymnus"],
-		"src":"nocturnale/EXF6H",
 		"datum":[
 			"Tu Trinitátis Únitas,/Orbem poténter quæ regis,/Atténde laudis cánticum,/Quod excubántes psállimus.",
 			"Nam léctulo consúrgimus/Noctis quiéto témpore,/Ut flagitémus ómnium/A te medélam vúlnerum.",
@@ -1362,7 +1316,6 @@
 	},
 	{
 		"tags":["matutinum","feria","sabbatum","hymnus"],
-		"src":"nocturnale/EXF7H",
 		"datum":[
 			"Summæ Parens cleméntiæ,/Mundi regis qui máchinam,/Uníus et substántiæ,/Trinúsque personís Deus:",
 			"Nostros pius cum cánticis/Fletus benígne súscipe:/Ut corde puro sórdium/Te perfruámur lárgius.",

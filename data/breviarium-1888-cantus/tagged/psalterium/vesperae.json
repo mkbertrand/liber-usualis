@@ -1,0 +1,25 @@
+[
+  {
+		"tags":["vesperae","dominica","ii-vesperae","hymnus"],
+		"datum":"/gregobase/2014"
+  },
+  {
+		"tags":["vesperae","temporale","hymnus"],
+		"in-tempore-adventus":"/gregobase/2134",
+		"in-tempore-quadragesimae":"/gregobase/1830",
+		"in-tempore-passionis":"/gregobase/2120",
+		"in-tempore-paschali":"/gregobase/2932"
+  },
+  {
+		"tags":["vesperae","feria","hymnus"],
+		"feria-ii":"/gregobase/2655",
+		"feria-iii":"/gregobase/1924",
+		"feria-iv":"/gregobase/12615",
+		"feria-v":"/gregobase/12274",
+		"feria-vi":"/gregobase/13191"
+  },
+  {
+		"tags":["vesperae","dominica","i-vesperae","hymnus"],
+		"datum":"/gregobase/2077"
+  }
+]

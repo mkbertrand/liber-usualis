@@ -315,11 +315,48 @@ function renderRite(data, options) {
 					}
 				}
 
+				// Handle hymns (excluding the Te Deum which just gets rendered like normal.)
+				if (uniquelyhas('hymnus') && !data.tags.includes('te-deum')) {
+					if (unpack(data.datum) == '') {
+						return;
+					}
+					else if (typeof unpack(data.datum) === 'string' && unpack(data.datum).startsWith('[')) {
+						appendText(stringRender(unpack(data.datum)));
+						return;
+					}
+					openDiv('', 'hymnus');
+
+          if (options.chant && data.cantus) {
+            openDiv('', 'gabc-chant');
+            let cantusUnpack = unpack(data.cantus);
+            if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
+              rite += `<gabc-chant id="/chant${cantusUnpack}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;
+            } else {
+              rite += `<gabc-chant tags="${data.tags.concat(parentTags).join('+')}">${cantusUnpack}</gabc-chant>`;
+            }
+            closeDiv('', 'gabc-chant');
+            data.datum.shift();
+          }
+
+					for (let i of unpack(data.datum)) {
+						openParagraph('hymnus');
+						appendText(stringRender(i));
+						closeParagraph();
+
+					}
+					closeDiv('hymnus');
+					return;
+        }
+
 				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
 					openDiv('', 'gabc-chant-container');
 					openDiv('', 'gabc-chant');
-					console.log(unpack(data.cantus));
-					rite += `<gabc-chant tags="${data.tags.concat(parentTags).join('+')}">${unpack(data.cantus)}</gabc-chant>`;
+          let cantusUnpack = unpack(data.cantus);
+          if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
+            rite += `<gabc-chant id="/chant${cantusUnpack}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;
+          } else {
+            rite += `<gabc-chant tags="${data.tags.concat(parentTags).join('+')}">${cantusUnpack}</gabc-chant>`;
+          }
 					closeDiv('', 'gabc-chant');
 					openDiv('', 'gabc-chant-replaced-text');
 					renderInner(data, translated, parentTags);
@@ -517,25 +554,6 @@ function renderRite(data, options) {
 						closeParagraph();
 						renderInner(lesson, translated, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
 					}
-					return;
-
-				// Handle hymns (excluding the Te Deum which just gets rendered like normal.)
-				} else if (uniquelyhas('hymnus') && !data.tags.includes('te-deum')) {
-					if (unpack(data.datum) == '') {
-						return;
-					}
-					else if (typeof unpack(data.datum) === 'string' && unpack(data.datum).startsWith('[')) {
-						appendText(stringRender(unpack(data.datum)));
-						return;
-					}
-					openDiv('', 'hymnus');
-					for (let i of unpack(data.datum)) {
-						openParagraph('hymnus');
-						appendText(stringRender(i));
-						closeParagraph();
-
-					}
-					closeDiv('hymnus');
 					return;
 
 				// Handle Commemorations.

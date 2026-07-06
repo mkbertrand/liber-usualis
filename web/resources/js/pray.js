@@ -53,3 +53,11 @@ function doPanelSize() {
 function generatepanels() {
 	riteheight = $('#rite-container').height();
 }
+
+function grabError(response) {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  } else {
+    return response;
+  }
+}
