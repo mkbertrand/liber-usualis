@@ -1,0 +1,24 @@
+[
+  {
+		"tags":[
+			["apostolus","vesperae","hymnus"],
+			["apostolus","laudes","hymnus"]
+		],
+		"datum":"/gregobase/2194"
+  },
+  {
+		"tags":["apostolus","matutinum","hymnus"],
+		"datum":"/nocturnale/EXAPEXH"
+  },
+  {
+		"tags":[
+			["apostolorum-tempore-paschali","vesperae","hymnus"],
+			["apostolorum-tempore-paschali","matutinum","hymnus"]
+		],
+		"datum":"/gregobase/2295"
+  },
+  {
+		"tags":["apostolorum-tempore-paschali","laudes","hymnus"],
+		"datum":"/gregobase/11809"
+  }
+]

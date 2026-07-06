@@ -59,24 +59,12 @@
 	},
 	{
 		"tags":["vidua","hymnus"],
-		"src":"gregobase/2492",
 		"datum":[
 			"Fortem viríli péctore/Laudémus omnes féminam,/Quæ sanctitátis glória/Ubíque fulget ínclyta.",
 			"Hæc sancto amóre saúcia,/Dum mundi amórem nóxium/Horréscit, ad cœléstia/Iter perégit árduum.",
 			"Carnem domans jejúniis,/Dulcíque mentem pábulo/Oratiónis nútriens,/Cœli potítur gaúdiis.",
 			"Rex Christe virtus fórtium,/Qui magna solus éfficis,/Hujus precátu, quǽsumus,/Audi benígnus súpplices.",
-			["terminatio","deo-patri"]
-		]
-	},
-	{
-		"tags":["vidua","hymnus","in-tempore-paschali"],
-		"src":"gregobase/2024",
-		"datum":[
-			"Fortem viríli péctore/Laudémus omnes féminam,/Quæ sanctitátis glória/Ubíque fulget ínclyta.",
-			"Hæc sancto amóre saúcia,/Dum mundi amórem nóxium/Horréscit, ad cœléstia/Iter perégit árduum.",
-			"Carnem domans jejúniis,/Dulcíque mentem pábulo/Oratiónis nútriens,/Cœli potítur gaúdiis.",
-			"Rex Christe virtus fórtium,/Qui magna solus éfficis,/Hujus precátu, quǽsumus,/Audi benígnus súpplices.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":[["terminatio","deo-patri"]]}
 		]
 	},
 	{
@@ -119,7 +107,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","hymnus"],
-		"src":"nocturnale/MUVMHb",
 		"datum":[
 			"Hujus orátu Deus alme nobis/Débitas pœnas scélerum remítte;/Ut tibi puro resonémus almum/Péctore carmen.",
 			"Sit decus Patri, genitǽque Proli,/Et tibi compar utriúsque virtus/Spíritus semper, Deus unus omni/Témporis ævo.","Amen."

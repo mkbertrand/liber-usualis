@@ -1,0 +1,30 @@
+[
+  {
+		"tags":[
+			["martyr","vesperae","hymnus"],
+			["martyr","matutinum","hymnus"]
+		],
+		"datum":"/gregobase/2702"
+  },
+  {
+		"tags":["martyr","laudes","hymnus"],
+		"datum":"/gregobase/12434"
+  },
+  {
+		"tags":["martyres","hymnus"],
+		"vesperae":"/gregobase/2571",
+    "datum":"/nocturnale/EXPMEXH_dcrochu",
+		"laudes":"/gregobase/2790"
+  },
+  {
+		"tags":[
+			["martyrum-tempore-paschali","martyres","vesperae","hymnus"],
+			["martyrum-tempore-paschali","martyres","laudes","hymnus"]
+		],
+		"datum":"/gregobase/13113"
+  },
+  {
+		"tags":["martyrum-tempore-paschali","martyres","matutinum","hymnus"],
+    "datum":"/nocturnale/EXPMEXH_dcrochu"
+  }
+]

@@ -316,7 +316,7 @@ function renderRite(data, options) {
 				}
 
 				// Handle hymns (excluding the Te Deum which just gets rendered like normal.)
-				if (uniquelyhas('hymnus') && !data.tags.includes('te-deum')) {
+				if (uniquelyhasbottom('hymnus') && !data.tags.includes('te-deum')) {
 					if (unpack(data.datum) == '') {
 						return;
 					}

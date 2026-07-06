@@ -55,10 +55,9 @@
 	},
 	{
 		"tags":[
-			["dedicatio","i-vesperae","hymnus"],
+			["dedicatio","vesperae","hymnus"],
 			["dedicatio","matutinum","hymnus"]
 		],
-		"src":"gregobase/2200",
 		"datum":[
 			"Cœléstis urbs Jerúsalem,/Beáta pacis vísio,/Quæ celsa de vivéntibus/Saxis ad astra tólleris,/Sponsǽque ritu cíngeris/Mille Angelórum míllibus.",
 			"O sorte nupta próspera,/Dotáta Patris glória,/Respérsa sponsi grátia,/Regína formosíssima,/Christo jugáta Príncipi,/Cœli corúsca cívitas.",
@@ -346,7 +345,6 @@
 	},
 	{
 		"tags":["dedicatio","laudes","hymnus"],
-		"src":"gregobase/2948",
 		"datum":[
 			"Alto ex Olýmpi vértice/Summi Paréntis Fílius,/Ceu monte deséctus lapis/Terras in imas décidens,/Domus supérnæ, et ínfimæ,/Utrúmque junxit ángulum.",
 			"Sed illa sedes cœ\u0301litum/Semper resúltat laúdibus,/Deúmque Trinum et Únicum/Jugi canóre prǽdicat:/Illi canéntes júngimur/Almæ Siónis ǽmuli.",

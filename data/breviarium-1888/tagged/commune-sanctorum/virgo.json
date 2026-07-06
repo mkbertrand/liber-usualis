@@ -58,27 +58,12 @@
 			["virgo","vesperae","hymnus"],
 			["virgo","laudes","hymnus"]
 		],
-		"src":"gregobase/2587",
 		"datum":[
 			"Jesu, coróna Vírginum,/Quem mater illa cóncipit,/Quæ sola Virgo párturit:/Hæc vota clemens áccipe.",
 			"Qui pergis inter lília,/Septus choréis Vírginum,/Sponsus decórus glória,/Sponsísque reddens prǽmia.",
 			"Quocúmque tendis, Vírgines/Sequúntur, atque laúdibus/Post te canéntes cúrsitant,/Hymnósque dulces pérsonant.",
 			"Te deprecámur súpplices;/Nostris ut addas sénsibus,/Nescíre prorsus ómnia/Corruptiónis vúlnera.",
-			"Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":[
-			["virgo","vesperae","hymnus","in-tempore-paschali"],
-			["virgo","laudes","hymnus","in-tempore-paschali"]
-		],
-		"src":"gregobase/2143",
-		"datum":[
-			"Jesu, coróna Vírginum,/Quem mater illa cóncipit,/Quæ sola Virgo párturit:/Hæc vota clemens áccipe.",
-			"Qui pergis inter lília,/Septus choréis Vírginum,/Sponsus decórus glória,/Sponsísque reddens prǽmia.",
-			"Quocúmque tendis, Vírgines/Sequúntur, atque laúdibus/Post te canéntes cúrsitant,/Hymnósque dulces pérsonant.",
-			"Te deprecámur súpplices;/Nostris ut addas sénsibus,/Nescíre prorsus ómnia/Corruptiónis vúlnera.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":["Virtus, honor, laus, glória/Deo Patri cum Fílio,/Sancto simul Paráclito,/In sæculórum sǽcula.","Amen."]}
 		]
 	},
 	{
@@ -154,7 +139,6 @@
 	},
 	{
 		"tags":["virgo","martyr","matutinum","hymnus"],
-		"src":"nocturnale/MUVMHa",
 		"datum":[
 			"Vírginis Proles, Opiféxque Matris,/Virgo quem gessit, peperítque Virgo;/Vírginis partos cánimus decóra/Morte triúmphos.",
 			"Hæc enim palmæ dúplicis beáta/Sorte, dum gestit frágilem domáre/Córporis sexum, dómuit cruéntum/Cæde tyránnum.",
@@ -165,7 +149,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","hymnus"],
-		"src":"nocturnale/MUVMHa",
 		"datum":[
 			"Vírginis Proles, Opiféxque Matris,/Virgo quem gessit, peperítque Virgo;/Vírginis festum cánimus beátæ/Áccipe votum.",
 			"Hujus orátu Deus alme nobis/Débitas pœnas scélerum remítte;/Ut tibi puro resonémus almum/Péctore carmen.",

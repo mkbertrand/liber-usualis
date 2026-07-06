@@ -35,7 +35,6 @@
 	},
 	{
 		"tags":["martyres","vesperae","hymnus"],
-		"src":"gregobase/2571",
 		"datum":[
 			"Sanctórum méritis ínclyta gaúdia/Pangámus sócii, géstaque fórtia:/Gliscens fert ánimus prómere cántibus/Victórum genus óptimum.",
 			"Hi sunt, quos fátue mundus abhórruit;/Hunc fructu vácuum, flóribus áridum/Contempsére tui nóminis ásseclæ/Jesu Rex bone cœ\u0301litum.",
@@ -71,16 +70,6 @@
 		"tags":["martyres","collecta","alia-collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis."
-	},
-	{
-		"tags":["martyres","laudes","hymnus"],
-		"src":"gregobase/2790",
-		"datum":[
-			"Rex glorióse Mártyrum,/Coróna confiténtium,/Qui respuéntes térrea/Perdúcis ad cœléstia.",
-			"Aurem benígnam prótinus/Inténde nostris vócibus:/Trophǽa sacra pángimus:/Ignósce quod delíquimus.",
-			"Tu vincis inter Mártyres,/Parcísque Confessóribus:/Tu vince nostra crímina,/Largítor indulgéntiæ.",
-			["terminatio","deo-patri"]
-		]
 	},
 	{
 		"tags":["martyres","matutinum","antiphona","antiphona-invitatorium"],
@@ -267,6 +256,15 @@
 	{
 		"tags":["martyres","matutinum","nocturna-iii","lectio","lectio-iii"],
 		"datum":"Sed cum tot signa perturbatiónis dicta sint, opórtet, ut eórum consideratiónem bréviter per síngula perstringámus: quia necésse est, ut ália e cœlo, ália e terra, ália ab eleméntis, ália ab homínibus patiámur. Ait enim: Surget gens contra gentem, ecce perturbátio hóminum: erunt terræmótus magni per loca, ecce respéctus iræ désuper: erunt pestiléntiæ, ecce inæquálitas córporum: erit fames, ecce sterílitas terræ: terrorésque de cœlo et tempestátes, ecce inæquálitas áëris. Quia ergo ómnia consummánda sunt, ante consummatiónem ómnia perturbántur: et qui in cunctis delíquimus, in cunctis ferímur: ut impleátur quod dícitur, Et pugnábit pro eo orbis terrárum contra insensátos."
+	},
+	{
+		"tags":["martyres","laudes","hymnus"],
+		"datum":[
+			"Rex glorióse Mártyrum,/Coróna confiténtium,/Qui respuéntes térrea/Perdúcis ad cœléstia.",
+			"Aurem benígnam prótinus/Inténde nostris vócibus:/Trophǽa sacra pángimus:/Ignósce quod delíquimus.",
+			"Tu vincis inter Mártyres,/Parcísque Confessóribus:/Tu vince nostra crímina,/Largítor indulgéntiæ.",
+			["terminatio","deo-patri"]
+		]
 	},
 	{
 		"tags":[

@@ -53,14 +53,13 @@
 			["apostolus","vesperae","hymnus"],
 			["apostolus","laudes","hymnus"]
 		],
-		"src":"gregobase/2194",
 		"datum":[
 			"Exsúltet orbis gaúdiis:/Cœlum resúltet laúdibus:/Apostolórum glóriam/Tellus et astra cóncinunt.",
 			"Vos sæculórum júdices,/Et vera mundi lúmina,/Votis precámur córdium:/Audíte voces súpplicum.",
 			"Qui templa cœli claúditis,/Serásque verbo sólvitis,/Nos a reátu nóxios/Solvi jubéte, quǽsumus.",
 			"Præcépta quorum prótinus/Languor salúsque séntiunt;/Sanáte mentes lánguidas:/Augéte nos virtútibus:",
 			"Ut, cum redíbit árbiter/In fine Christus sǽculi,/Nos sempitérni gaúdii/Concédat esse cómpotes.",
-			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":["Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."]}
 		]
 	},
 	{
@@ -88,13 +87,12 @@
 	},
 	{
 		"tags":["apostolus","matutinum","hymnus"],
-		"src":"nocturnale/EXAPEXH",
 		"datum":[
 			"Ætérna Christi múnera,/Apostolórum glóriam,/Palmas et hymnos débitos/Lætis canámus méntibus.",
 			"Ecclesiárum Príncipes,/Belli triumpháles duces,/Cœléstis aulæ mílites,/Et vera mundi lúmina.",
 			"Devóta sanctórum fides,/Invícta spes credéntium,/Perfécta Christi cáritas/Mundi tyránnum cónterit.",
 			"In his Patérna glória,/In his triúmphat Fílius,/In his volúntas Spíritus,/Cœlum replétur gaúdio.",
-			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":["Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."]}
 		]
 	},
 	{

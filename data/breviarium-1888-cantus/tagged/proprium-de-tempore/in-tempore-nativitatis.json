@@ -1,0 +1,24 @@
+[
+  {
+		"tags":[
+			["nativitas","vesperae","hymnus"],
+			["nativitas","matutinum","hymnus"]
+		],
+		"datum":"/gregobase/3001"
+  },
+  {
+		"tags":["nativitas","laudes","hymnus"],
+		"datum":"/gregobase/2628"
+  },
+  {
+		"tags":["innocentes","matutinum","hymnus"],
+		"datum":"/nocturnale/1228H"
+  },
+  {
+		"tags":[
+			["innocentes","laudes","hymnus"],
+			["innocentes","vesperae","hymnus"]
+		],
+		"datum":"/gregobase/1963"
+  }
+]
