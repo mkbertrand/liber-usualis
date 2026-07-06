@@ -4,8 +4,7 @@
 		"datum":"S. Joannis Cantii Confessoris"
 	},
 	{
-		"tags":["joannes-cantius","vesperae","hymnus"],
-		"src":"gregobase/2644",
+		"tags":["joannes-cantius","i-vesperae","hymnus"],
 		"datum":[
 			"Gentis Polónæ glória,/Cleríque splendor nóbilis,/Decus Lycǽi, et pátriæ/Pater, Joánnes ínclyte,",
 			"Legem supérni Núminis/Doces magíster, et facis./Nil scire prodest: sédulo/Legem nitámur éxsequi.",
@@ -22,7 +21,6 @@
 	},
 	{
 		"tags":["joannes-cantius","matutinum","hymnus"],
-		"src":"nocturnale/1020H",
 		"datum":[
 			"Corpus domas jejúniis,/Cædis cruénto vérbere,/Ut castra pœniténtium/Miles sequáris ínnocens.",
 			"Sequámur et nos sédulo/Gressus paréntis óptimi:/Sequámur, ut licéntiam/Carnis refrǽnet spíritus.",
@@ -43,7 +41,6 @@
 	},
 	{
 		"tags":["joannes-cantius","ii-vesperae","hymnus"],
-		"src":"gregobase/13082",
 		"datum":[
 			"Te deprecánte, córporum/Lues recédit, ímprobi/Morbi fugántur, prístina/Rédeunt salútis múnera.",
 			"Phthisi, febríque, et úlcere/Diram redáctos ad necem,/Sacrátas morti víctimas,/Ejus rapis e faúcibus.",

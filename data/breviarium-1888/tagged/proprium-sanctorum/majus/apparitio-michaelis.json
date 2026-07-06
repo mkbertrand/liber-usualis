@@ -42,30 +42,15 @@
 	},
 	{
 		"tags":[
-			["apparitio-michaelis","vesperae","hymnus","in-tempore-paschali"],
-			["apparitio-michaelis","matutinum","hymnus","in-tempore-paschali"]
-		],
-		"src":"gregobase/19938",
-		"datum":[
-			"Te, splendor et virtus Patris,/Te vita, Jesu, córdium,/Ab ore qui pendent tuo,/Laudámus inter Ángelos.",
-			"Tibi mille densa míllium/Ducum coróna mílitat:/Sed éxplicat victor crucem/Míchaël salútis sígnifer.",
-			"Dracónis hic dirum caput/In ima pellit tártara,/Ducémque cum rebéllibus/Cœlésti ab arce fúlminat.",
-			"Contra ducem supérbiæ/Sequámur hunc nos príncipem,/Ut detur ex Agni throno/Nobis coróna glóriæ.",
-			"Deo Patri sit glória,/Et Fílio, qui a mórtuis/Surréxit, ac Paráclito,/In sempitérna sǽcula.","Amen."
-		]
-	},
-	{
-		"tags":[
 			["apparitio-michaelis","vesperae","hymnus"],
 			["apparitio-michaelis","matutinum","hymnus"]
 		],
-		"src":"gregobase/19939",
 		"datum":[
 			"Te splendor et virtus Patris,/Te vita, Jesu, córdium,/Ab ore qui pendent tuo,/Laudámus inter Ángelos.",
 			"Tibi mille densa míllium/Ducum coróna mílitat:/Sed éxplicat victor crucem/Míchaël salútis sígnifer.",
 			"Dracónis hic dirum caput/In ima pellit tártara,/Ducémque cum rebéllibus/Cœlésti ab arce fúlminat.",
 			"Contra ducem supérbiæ/Sequámur hunc nos príncipem,/Ut detur ex Agni throno/Nobis coróna glóriæ.",
-			"Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."
+			{"quaere":["terminatio","octo-octo-octo-octo"],"datum":["Patri, simúlque Fílio,/Tibíque sancte Spíritus,/Sicut fuit, sit júgiter/Sæclum per omne glória.","Amen."]}
 		]
 	},
 	{
@@ -279,7 +264,6 @@
 	},
 	{
 		"tags":["apparitio-michaelis","laudes","hymnus"],
-		"src":"gregobase/12915",
 		"datum":[
 			"Christe, sanctórum decus Angelórum,/Gentis humánæ Sator et Redémptor,/Cœ\u0301litum nobis tríbuas beátas/Scándere sedes.",
 			"Ángelus pacis Míchaël in ædes/Cœ\u0301litus nostras véniat, serénæ/Auctor ut pacis lacrimósa in orcum/Bella reléget.",

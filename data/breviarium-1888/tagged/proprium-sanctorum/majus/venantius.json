@@ -4,8 +4,7 @@
 		"datum":"S. Venantii Martyris"
 	},
 	{
-		"tags":["venantius","i-vesperae","hymnus"],
-		"src":"gregobase/2236",
+		"tags":["venantius","vesperae","hymnus"],
 		"datum":[
 			"Martyr Dei Venántius,/Lux et decus Camértium,/Tortóre victo et júdice,/Lætus triúmphum cóncinit.",
 			"Annis puer, post víncula,/Post cárceres, post vérbera,/Longa fame freméntibus/Cibus datur leónibus.",
@@ -26,7 +25,6 @@
 	},
 	{
 		"tags":["venantius","matutinum","hymnus"],
-		"src":"nocturnale/0518H",
 		"datum":[
 			"Athléta Christi nóbilis/Idóla damnat Géntium,/Deíque amóre saúcius/Vitæ perícla déspicit.",
 			"Loris revínctus ásperis,/E rupe præceps vólvitur:/Spinéta vultum lácinant:/Per saxa corpus scínditur.",
@@ -48,7 +46,6 @@
 	},
 	{
 		"tags":["venantius","laudes","hymnus"],
-		"src":"gregobase/12065",
 		"datum":[
 			"Dum nocte pulsa lúcifer/Diem propínquam núntiat,/Nobis refert Venántius/Lucis beátæ múnera.",
 			"Nam críminum calíginem,/Stygísque noctem dépulit,/Veróque cives lúmine/Divinitátis ímbuit.",
