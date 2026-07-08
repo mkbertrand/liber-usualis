@@ -66,7 +66,9 @@ def getchantfile(src):
         return requests.get(f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc', stream=True).text
     else:
         # Quick sanitization to make sure nobody is up to shady business.
-        loc = DATA_CHANT.joinpath(src + '.gabc').resolve()
+        src = src.split('/')
+        loc = DATA_CHANT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc').resolve()
+        print(loc)
         if not loc.is_relative_to(DATA_CHANT):
             raise ValueError('Invalid Path')
         else:
