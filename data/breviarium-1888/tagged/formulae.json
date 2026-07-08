@@ -118,20 +118,7 @@
 		"datum":"Credo in Deum, Patrem omnipoténtem, Creatórem cœli et terræ. Et in Jesum Christum, Fílium ejus únicum, Dóminum nostrum: qui concéptus est de Spíritu sancto, natus ex María Vírgine, passus sub Póntio Piláto, crucifíxus, mórtuus, et sepúltus: descéndit ad ínferos: tértia die resurréxit a mórtuis: ascéndit ad cœlos, sedet ad déxteram Dei Patris omnipoténtis: inde ventúrus est judicáre vivos et mórtuos. Credo in Spíritum sanctum, sanctam Ecclésiam cathólicam, sanctórum communiónem, remissiónem peccatórum, carnis resurrectiónem, vitam ætérnam. Amen."
 	},
 	{
-		"tags":["deus-in-adjutorium","ferialis"],
-		"src":"gregobase/15354",
-		"datum":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."],
-		"in-tempore-septuagesimae":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Laus tibi Dómine, Rex ætérnæ glóriæ."]
-	},
-	{
-		"tags":["deus-in-adjutorium","festalis"],
-		"src":"gregobase/7417",
-		"datum":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."],
-		"in-tempore-septuagesimae":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Laus tibi Dómine, Rex ætérnæ glóriæ."]
-	},
-	{
-		"tags":["deus-in-adjutorium","solemnis"],
-		"src":"gregobase/7402",
+		"tags":["deus-in-adjutorium"],
 		"datum":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja."],
 		"in-tempore-septuagesimae":["V. Deus ✠ in adjutórium meum inténde.","R. Dómine ad adjuvándum me festína.","Glória Patri, et Fílio, et Spirítui sancto.","Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Laus tibi Dómine, Rex ætérnæ glóriæ."]
 	},
@@ -396,5 +383,17 @@
 	{
 		"tags":["n"],
 		"datum":"N."
+	},
+	{
+		"tags":["benedicamus-domino"],
+		"datum":["Benedicámus Dómino.","Deo grátias."]
+	},
+	{
+		"tags":[
+			["hebdomada-septuagesima","dominica","i-vesperae","vesperae","benedicamus-domino"],
+			["pascha","vesperae","benedicamus-domino"],
+			["pascha","laudes","benedicamus-domino"]
+		],
+		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
 	}
 ]
