@@ -68,7 +68,6 @@ def getchantfile(src):
         # Quick sanitization to make sure nobody is up to shady business.
         src = src.split('/')
         loc = DATA_CHANT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc').resolve()
-        print(loc)
         if not loc.is_relative_to(DATA_CHANT):
             raise ValueError('Invalid Path')
         else:
