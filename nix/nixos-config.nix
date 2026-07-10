@@ -28,7 +28,7 @@ let
       cp -r . $out/lib/
     '';
   };
-  domain = "thomism.com";
+  domain = "alphonsus.cc";
 in
 {
   config = {
