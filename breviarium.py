@@ -115,6 +115,8 @@ def managesearch(query, result):
         return result
     else:
         try:
+            if not '*' in result['datum']:
+                return result
             if 'n' in query:
                 return result
             elif 'intonata' in query:
@@ -130,7 +132,7 @@ def managesearch(query, result):
                 result['tags'] |= {'pars'}
             return result
         except IndexError:
-            raise RuntimeError(f'Bad formatting for antiphon {result['datum']}')
+            return result
 
 def search(context, query, pile, multipleresults = False, multipleresultssort = None, translatedcontext = None):
     for i in query:
