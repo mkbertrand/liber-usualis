@@ -114,34 +114,16 @@
 		"datum":[["/psalmi/canticum-trium-puerorum"]]
 	},
 	{
-		"tags":["laudes","dominica","per-annum","antiphona","antiphona-i"],
-		"src":"gregobase/18321",
-		"datum":"Allelúja, * allelúja."
+		"tags":["laudes","dominica","per-annum","antiphona"],
+		"antiphona-i":"Allelúja, * allelúja.",
+		"antiphona-ii":"Tres púeri * jussu regis in fornácem missi sunt, non timéntes flammam ignis, dicéntes: Benedíctus Deus.",
+		"antiphona-iii":"Allelúja, * allelúja, allelúja."
 	},
 	{
-		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-i"],
-		"src":"fcc/lapxf1a1",
-		"datum":"Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja."
-	},
-	{
-		"tags":["laudes","dominica","per-annum","antiphona","antiphona-ii"],
-		"src":"gregobase/13305",
-		"datum":"Tres púeri * jussu regis in fornácem missi sunt, non timéntes flammam ignis, dicéntes: Benedíctus Deus."
-	},
-	{
-		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-ii"],
-		"src":"fcc/lapxf1a2",
-		"datum":"Surréxit Christus * de sepúlchro, qui liberávit tres púeros de camíno ignis ardéntis, allelúja."
-	},
-	{
-		"tags":["laudes","dominica","per-annum","antiphona","antiphona-iii"],
-		"src":"gregobase/18322",
-		"datum":"Allelúja, * allelúja, allelúja."
-	},
-	{
-		"tags":["laudes","in-tempore-paschali","temporale","antiphona","antiphona-iii"],
-		"src":"fcc/lapxf1a3",
-		"datum":"Allelúja, * allelúja, allelúja."
+		"tags":["laudes","in-tempore-paschali","temporale","antiphona"],
+		"antiphona-i":"Allelúja, * allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja, allelúja.",
+		"antiphona-ii":"Surréxit Christus * de sepúlchro, qui liberávit tres púeros de camíno ignis ardéntis, allelúja.",
+		"antiphona-iii":"Allelúja, * allelúja, allelúja."
 	},
 	{
 		"tags":["laudes","dominica","capitulum"],
@@ -261,7 +243,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-i"],
-		"src":"fcc/lapaf2a1",
 		"datum":"Miserére * mei Deus."
 	},
 	{
@@ -270,7 +251,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-ii"],
-		"src":"fcc/lapaf2a2",
 		"datum":"Intéllige * clamórem meum Dómine."
 	},
 	{
@@ -279,12 +259,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-iii"],
-		"src":"fcc/lapaf2a3",
 		"datum":"Deus Deus meus * ad te de luce vígilo."
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-iv"],
-		"src":"fcc/lapaf2a4",
 		"datum":"Convérsus est * furor tuus Dómine, et consolátus es me."
 	},
 	{
@@ -293,7 +271,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-v"],
-		"src":"fcc/lapaf2a5",
 		"datum":"Laudáte * Dóminum de cœlis."
 	},
 	{
@@ -336,7 +313,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-ii","antiphona","antiphona-benedictus"],
-		"src":"gregobase/18855",
 		"datum":"Benedíctus * Dóminus Deus Ísraël."
 	},
 	{
@@ -396,12 +372,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-i"],
-		"src":"fcc/lapaf3a1",
 		"datum":"Dele Dómine * iniquitátem meam."
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-ii"],
-		"src":"fcc/lapaf3a2",
 		"datum":"Salutáre * vultus mei, et Deus meus."
 	},
 	{
@@ -410,12 +384,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-iii"],
-		"src":"fcc/lapaf3a3",
 		"datum":"Ad te de luce * vígilo Deus."
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-iv"],
-		"src":"fcc/lapaf3a4",
 		"datum":"Cunctis diébus * vitæ nostræ salvos nos fac Dómine."
 	},
 	{
@@ -424,7 +396,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-v"],
-		"src":"fcc/lapaf3a5",
 		"datum":"Omnes Ángeli ejus * laudáte Dóminum de cœlis."
 	},
 	{
@@ -439,17 +410,14 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iii","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11804",
 		"datum":"Eréxit nobis * Dóminus cornu salútis in domo David púeri sui."
 	},
 	{
 		"tags":["laudes","feria","feria-iv","antiphona","antiphona-i"],
-		"src":"fcc/lapaf4a1",
 		"datum":"Ámplius lava me * Dómine ab injustítia mea."
 	},
 	{
 		"tags":["laudes","feria","feria-iv","antiphona","antiphona-ii"],
-		"src":"fcc/lapaf4a2",
 		"datum":"Te decet * hymnus Deus in Sion."
 	},
 	{
@@ -458,12 +426,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iv","antiphona","antiphona-iii"],
-		"src":"fcc/lapaf4a3",
 		"datum":"Lábia mea * laudábunt te in vita mea, Deus meus."
 	},
 	{
 		"tags":["laudes","feria","feria-iv","antiphona","antiphona-iv"],
-		"src":"fcc/lapaf4a4",
 		"datum":"Dóminus judicábit * fines terræ."
 	},
 	{
@@ -472,7 +438,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iv","antiphona","antiphona-v"],
-		"src":"fcc/lapaf4a5",
 		"datum":"Cœli cœlórum * laudáte Deum."
 	},
 	{
@@ -487,17 +452,14 @@
 	},
 	{
 		"tags":["laudes","feria","feria-iv","antiphona","antiphona-benedictus"],
-		"src":"fcc/lapaf4be",
 		"datum":"De manu ómnium * qui odérunt nos, líbera nos Dómine."
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-i"],
-		"src":"fcc/lapaf5a1",
 		"datum":"Tibi soli peccávi, * Dómine miserére mei."
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-ii"],
-		"src":"fcc/lapaf5a2",
 		"datum":"Dómine, * refúgium factus es nobis."
 	},
 	{
@@ -506,12 +468,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-iii"],
-		"src":"fcc/lapaf5a3",
 		"datum":"In matutínis * meditábor in te."
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-iv"],
-		"src":"fcc/lapaf5a4",
 		"datum":"Cantémus * Dómino glorióse."
 	},
 	{
@@ -520,7 +480,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-v"],
-		"src":"fcc/lapaf5a5",
 		"datum":"In sanctis ejus * laudáte Deum."
 	},
 	{
@@ -535,17 +494,14 @@
 	},
 	{
 		"tags":["laudes","feria","feria-v","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12907",
 		"datum":"In sanctitáte * serviámus Dómino, et liberábit nos ab inimícis nostris."
 	},
 	{
 		"tags":["laudes","feria","feria-vi","antiphona","antiphona-i"],
-		"src":"fcc/lapaf6a1",
 		"datum":"Spíritu principáli * confírma cor meum Deus."
 	},
 	{
 		"tags":["laudes","feria","feria-vi","antiphona","antiphona-ii"],
-		"src":"fcc/lapaf6a2",
 		"datum":"In veritáte * tua exaúdi me Dómine."
 	},
 	{
@@ -554,12 +510,10 @@
 	},
 	{
 		"tags":["laudes","feria","feria-vi","antiphona","antiphona-iii"],
-		"src":"fcc/lapaf6a3",
 		"datum":"Illúmina Dómine * vultum tuum super nos."
 	},
 	{
 		"tags":["laudes","feria","feria-vi","antiphona","antiphona-iv"],
-		"src":"fcc/lapaf6a4",
 		"datum":"Dómine * audívi audítum tuum et tímui."
 	},
 	{
@@ -568,7 +522,6 @@
 	},
 	{
 		"tags":["laudes","feria","feria-vi","antiphona","antiphona-v"],
-		"src":"fcc/lapaf6a5",
 		"datum":"In týmpano * et choro, in chordis et órgano laudáte Deum."
 	},
 	{
@@ -584,17 +537,14 @@
 	},
 	{
 		"tags":["laudes","feria","feria-vi","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12053",
 		"datum":"Per víscera * misericórdiæ Dei nostri visitávit nos Óriens ex alto."
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-i"],
-		"src":"fcc/lapaf7a1",
 		"datum":"Benígne fac * in bona voluntáte tua Dómine."
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-ii"],
-		"src":"fcc/lapaf7a2",
 		"datum":"Bonum est * confíteri Dómino."
 	},
 	{
@@ -603,12 +553,10 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-iii"],
-		"src":"fcc/lapaf7a3",
 		"datum":"Métuant Dóminum * omnes fines terræ."
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-iv"],
-		"src":"fcc/lapaf7a4",
 		"datum":"Date magnitúdinem * Deo nostro."
 	},
 	{
@@ -617,7 +565,6 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-v"],
-		"src":"fcc/lapaf7a5",
 		"datum":"In cýmbalis benesonántibus * laudáte Deum."
 	},
 	{
@@ -631,7 +578,6 @@
 	},
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-benedictus"],
-		"src":"fcc/lapaf7be",
 		"datum":"Illumináre * Dómine his, qui in ténebris sedent, et dírige pedes nostros in viam pacis, Deus Ísraël."
 	}
 ]

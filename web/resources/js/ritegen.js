@@ -353,9 +353,9 @@ function renderRite(data, options) {
 					openDiv('', 'gabc-chant');
           let cantusUnpack = unpack(data.cantus);
           if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
-            rite += `<gabc-chant id="/chant${cantusUnpack}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;
+            rite += `<gabc-chant id="/chant${cantusUnpack}" tags="${data.quaesitum.join('+')}"></gabc-chant>`;
           } else {
-            rite += `<gabc-chant tags="${data.tags.concat(parentTags).join('+')}">${cantusUnpack}</gabc-chant>`;
+            rite += `<gabc-chant tags="${data.quaesitum.join('+')}">${cantusUnpack}</gabc-chant>`;
           }
 					closeDiv('', 'gabc-chant');
 					openDiv('', 'gabc-chant-replaced-text');

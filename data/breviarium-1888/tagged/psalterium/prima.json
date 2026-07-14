@@ -29,7 +29,6 @@
 	},
 	{
 		"tags":["prima","dominica","antiphona"],
-		"src":"gregobase/19869",
 		"datum":"Allelúja, * allelúja, allelúja."
 	},
 	{
@@ -247,7 +246,6 @@
 	},
 	{
 		"tags":["prima","in-tempore-paschali","temporale","antiphona"],
-		"src":"gregobase/18552",
 		"datum":"Allelúja, * allelúja, allelúja, allelúja."
 	},
 	{
@@ -307,7 +305,6 @@
 	},
 	{
 		"tags":["prima","feria","antiphona"],
-		"src":"gregobase/11135",
 		"datum":"Beati qui ámbulant * in lege tua Dómine."
 	},
 	{
@@ -315,13 +312,11 @@
 		"datum":"[Zach. 8. d.]/Pacem et veritátem dilígite, * ait Dóminus omnípotens."
 	},
 	{
-		"tags":["prima","in-tempore-quadragesimae","temporale","antiphona"],
-		"src":"gregobase/12733",
+		"tags":["prima","in-tempore-quadragesimae","feria","antiphona"],
 		"datum":"Vivo ego, * dicit Dóminus: nolo mortem peccatóris, sed ut magis convertátur et vivat."
 	},
 	{
-		"tags":["prima","in-tempore-passionis","temporale","antiphona"],
-		"src":"gregobase/12847",
+		"tags":["prima","in-tempore-passionis","feria","antiphona"],
 		"datum":"Líbera me Dómine, * et pone me juxta te: et cujúsvis manus pugnet contra me."
 	},
 	{

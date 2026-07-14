@@ -26,11 +26,13 @@ euouaes = {
   '4 E c4': 'E(h) u(g) o(h) u(ih) a(gf) e.(e.) (::)',
   '4 g c4': 'E(h) u(h) o(h) u(h) a(h) e.(g.) (::)',
   '5 a c3': 'E(h) u(h) o(i) u(g) a(h) e.(f.) (::)',
+  '5 a c4': 'E(j) u(j) o(k) u(i) a(j) e.(h.) (::)',
   '6 C c2': 'E(h) u(h) o(f) u(gh) a(g) e.(f.) (::)',
   '6 F c4': 'E(h) u(h) o(f) u(gh) a(g) e.(f.) (::)',
   '7 a c2': 'E(g) u(g) o(h) u(g) a(f) e.(ed..) (::)',
   '7 a c3': 'E(i) u(i) o(j) u(i) a(h) e.(gf..) (::)',
   '7 b c3': 'E(i) u(i) o(j) u(i) a(h) e.(g.) (::)',
+  '7 c c2': 'E(g) u(g) o(h) u(g) a(f) e.(ef..) (::)',
   '7 c c3': 'E(i) u(i) o(j) u(i) a(h) e.(gh..) (::)',
   '7 c2 c3': 'E(i) u(i) o(j) u(i) a(h) e.(ih..) (::)',
   '7 d c2': 'E(g) u(g) o(h) u(g) a(f) e.(eg..) (::)',
@@ -40,7 +42,8 @@ euouaes = {
   '8 G c3': 'E(h) u(h) o(g) u(h) a(f) e.(e.) (::)',
   '8 G c4': 'E(j) u(j) o(i) u(j) a(h) e.(g.) (::)',
   '8 G* c3': 'E(h) u(h) o(g) u(h) a(f) e.(e.) (::)',
-  '8 G* c4': 'E(j) u(j) o(i) u(j) a(h) e.(g.) (::)'
+  '8 G* c4': 'E(j) u(j) o(i) u(j) a(h) e.(g.) (::)',
+  'T. pereg. c4': 'E(g) u(g) o(g) u(d) a(f) e.(ed..) (::)'
 };
 
 function chomp(gabc, tags) {

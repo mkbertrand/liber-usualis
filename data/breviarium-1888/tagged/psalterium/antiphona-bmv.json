@@ -58,19 +58,7 @@
 		]
 	},
 	{
-		"tags":[
-			["antiphona-bmv","alma-redemptoris","antiphona","ante-nativitatem","solemnis"],
-			["antiphona-bmv","alma-redemptoris","antiphona","post-nativitatem","solemnis"]
-		],
-		"src":"gregobase/11878",
-		"datum":"Alma * Redemptóris Mater, quæ pérvia cœli/Porta manes, et stella maris, succúrre cadénti,/Súrgere qui curat, pópulo: tu quæ genuísti,/Natúra miránte, tuum sanctum Genitórem,/Virgo prius ac postérius, Gábrielis ab ore/Sumens illud Ave, peccatórum miserére."
-	}, 
-	{
-		"tags":[
-			["antiphona-bmv","alma-redemptoris","ante-nativitatem","antiphona"],
-			["antiphona-bmv","alma-redemptoris","post-nativitatem","antiphona"]
-		],
-		"src":"gregobase/1851",
+		"tags":["antiphona-bmv","alma-redemptoris","antiphona"],
 		"datum":"Alma * Redemptóris Mater, quæ pérvia cœli/Porta manes, et stella maris, succúrre cadénti,/Súrgere qui curat, pópulo: tu quæ genuísti,/Natúra miránte, tuum sanctum Genitórem,/Virgo prius ac postérius, Gábrielis ab ore/Sumens illud Ave, peccatórum miserére."
 	}, 
 	{
@@ -90,13 +78,7 @@
 		]
 	},
 	{
-		"tags":["antiphona-bmv","ave-regina-coelorum","antiphona","solemnis"],
-		"src":"gregobase/2602",
-		"datum":"Ave * Regína cœlórum,/Ave Dómina Angelórum:/Salve radix, salve porta,/Ex qua mundo lux est orta./Gaude Virgo gloriósa,/Super omnes speciósa,/Vale, o valde decóra,/Et pro nobis Christum exóra."
-	},
-	{
 		"tags":["antiphona-bmv","ave-regina-coelorum","antiphona"],
-		"src":"gregobase/2153",
 		"datum":"Ave Regína cœlórum, * /Ave Dómina Angelórum:/Salve radix, salve porta,/Ex qua mundo lux est orta./Gaude Virgo gloriósa,/Super omnes speciósa,/Vale, o valde decóra,/Et pro nobis Christum exóra."
 	},
 	{
@@ -108,13 +90,7 @@
 		]
 	},
 	{
-		"tags":["antiphona-bmv","regina-coeli","antiphona","solemnis"],
-		"src":"gregobase/1976",
-		"datum":"Regína cœli * lætáre, allelúja,/Quia quem meruísti portáre, allelúja,/Resurréxit, sicut dixit, allelúja,/Ora pro nobis Deum, allelúja."
-	},
-	{
 		"tags":["antiphona-bmv","regina-coeli","antiphona"],
-		"src":"gregobase/2290",
 		"datum":"Regína cœli * lætáre, allelúja,/Quia quem meruísti portáre, allelúja,/Resurréxit, sicut dixit, allelúja,/Ora pro nobis Deum, allelúja."
 	},
 	{
@@ -126,13 +102,7 @@
 		]
 	},
 	{
-		"tags":["antiphona-bmv","salve-regina","antiphona","solemnis"],
-		"src":"gregobase/2715",
-		"datum":"Salve * Regína, mater misericórdiæ, vita, dulcédo et spes nostra, salve. Ad te clamámus, éxsules fílii Hevæ. Ad te suspirámus, geméntes et flentes in hac lacrimárum valle. Eja ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Jesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, o pia, o dulcis Virgo María."
-	},
-	{
 		"tags":["antiphona-bmv","salve-regina","antiphona"],
-		"src":"gregobase/2435",
 		"datum":"Salve Regína, * mater misericórdiæ, vita, dulcédo et spes nostra, salve. Ad te clamámus, éxsules fílii Hevæ. Ad te suspirámus, geméntes et flentes in hac lacrimárum valle. Eja ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte. Et Jesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, o pia, o dulcis Virgo María."
 	},
 	{
