@@ -25,7 +25,7 @@
 	{
 		"occurrence":["ad-v-kalendas-januarii"],
 		"tags":[
-			["innocentes","duplex-ii-classis","festum","martyres","habens-octavam","octava-excepta","in-tempore-nativitatis"],
+			["innocentes","duplex-ii-classis","festum","martyr","martyres","habens-octavam","octava-excepta","in-tempore-nativitatis"],
 			["nativitas","semiduplex","infra-octavam","dies-iv","in-tempore-nativitatis","commemoratio"],
 			["stephanus","semiduplex","martyr","infra-octavam","dies-iii","in-tempore-nativitatis","commemoratio"],
 			["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-ii","in-tempore-nativitatis","commemoratio"]
@@ -38,7 +38,7 @@
 			["nativitas","semiduplex","infra-octavam","dies-v","in-tempore-nativitatis","commemoratio"],
 			["stephanus","semiduplex","martyr","infra-octavam","dies-iv","in-tempore-nativitatis","commemoratio"],
 			["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iii","in-tempore-nativitatis","commemoratio"],
-			["innocentes","semiduplex","martyres","infra-octavam","dies-ii","in-tempore-nativitatis","commemoratio"]
+			["innocentes","semiduplex","martyr","martyres","infra-octavam","dies-ii","in-tempore-nativitatis","commemoratio"]
 		]
 	},
 	{
@@ -47,7 +47,7 @@
 			["nativitas","semiduplex","infra-octavam","dies-vi","in-tempore-nativitatis"],
 			["stephanus","semiduplex","martyr","infra-octavam","dies-v","in-tempore-nativitatis","commemoratio"],
 			["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-iv","in-tempore-nativitatis","commemoratio"],
-			["innocentes","semiduplex","martyres","infra-octavam","dies-iii","in-tempore-nativitatis","commemoratio"]
+			["innocentes","semiduplex","martyr","martyres","infra-octavam","dies-iii","in-tempore-nativitatis","commemoratio"]
 		]
 	},
 	{
@@ -57,7 +57,7 @@
 			["nativitas","semiduplex","infra-octavam","dies-vii","in-tempore-nativitatis","commemoratio"],
 			["stephanus","semiduplex","martyr","infra-octavam","dies-vi","in-tempore-nativitatis","commemoratio"],
 			["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-v","in-tempore-nativitatis","commemoratio"],
-			["innocentes","semiduplex","martyres","infra-octavam","dies-iv","in-tempore-nativitatis","commemoratio"]
+			["innocentes","semiduplex","martyr","martyres","infra-octavam","dies-iv","in-tempore-nativitatis","commemoratio"]
 		]
 	},
 	{
@@ -66,7 +66,7 @@
 			["circumcisio","festum","duplex-ii-classis","dies-octava","in-tempore-nativitatis"],
 			["stephanus","semiduplex","martyr","infra-octavam","dies-vii","in-tempore-nativitatis","commemoratio"],
 			["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vi","in-tempore-nativitatis","commemoratio"],
-			["innocentes","semiduplex","martyres","infra-octavam","dies-v","in-tempore-nativitatis","commemoratio"]
+			["innocentes","semiduplex","martyr","martyres","infra-octavam","dies-v","in-tempore-nativitatis","commemoratio"]
 		]
 	},
 	{
@@ -74,19 +74,19 @@
 		"tags":[
 			["stephanus","duplex-minus","martyr","dies-octava","in-tempore-nativitatis"],
 			["joannes-apostolus","semiduplex","apostolus","evangelista","infra-octavam","dies-vii","in-tempore-nativitatis","commemoratio"],
-			["innocentes","semiduplex","martyres","infra-octavam","dies-vi","in-tempore-nativitatis","commemoratio"]
+			["innocentes","semiduplex","martyr","martyres","infra-octavam","dies-vi","in-tempore-nativitatis","commemoratio"]
 		]
 	},
 	{
 		"occurrence":["ad-iii-nonas-januarii"],
 		"tags":[
 			["joannes-apostolus","duplex-minus","apostolus","evangelista","dies-octava","in-tempore-nativitatis"],
-			["innocentes","semiduplex","martyres","infra-octavam","dies-vii","in-tempore-nativitatis","commemoratio"]
+			["innocentes","semiduplex","martyr","martyres","infra-octavam","dies-vii","in-tempore-nativitatis","commemoratio"]
 		]
 	},
 	{
 		"occurrence":["pridie-nonas-januarii"],
-		"tags":["innocentes","duplex-minus","martyres","dies-octava","in-tempore-nativitatis"]
+		"tags":["innocentes","duplex-minus","martyr","martyres","dies-octava","in-tempore-nativitatis"]
 	},
 	{
 		"occurrence":["nonae-januarii"],

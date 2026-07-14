@@ -1,7 +1,6 @@
 [
 	{
 		"tags":["martyr","antiphona","antiphona-i"],
-		"src":"gregobase/1854",
 		"datum":"Qui me conféssus fúerit * coram homínibus, confitébor et ego eum coram Patre meo."
 	},
 	{
@@ -10,7 +9,6 @@
 	},
 	{
 		"tags":["martyr","antiphona","antiphona-ii"],
-		"src":"gregobase/12251",
 		"datum":"Qui séquitur me, * non ámbulat in ténebris, sed habébit lumen vitæ, dicit Dóminus."
 	},
 	{
@@ -19,7 +17,6 @@
 	},
 	{
 		"tags":["martyr","antiphona","antiphona-iii"],
-		"src":"gregobase/2805",
 		"datum":"Qui mihi minístrat, * me sequátur: et ubi ego sum, illic sit et miníster meus."
 	},
 	{
@@ -28,7 +25,6 @@
 	},
 	{
 		"tags":["martyr","antiphona","antiphona-iv"],
-		"src":"gregobase/2466",
 		"datum":"Si quis mihi ministráverit, * honorificábit eum Pater meus, qui est in cœlis, dicit Dóminus."
 	},
 	{
@@ -37,7 +33,6 @@
 	},
 	{
 		"tags":["martyr","antiphona","antiphona-v"],
-		"src":"gregobase/2671",
 		"datum":"Volo Pater, * ut ubi ego sum, illic sit et miníster meus."
 	},
 	{
@@ -70,27 +65,14 @@
 	},
 	{
 		"tags":["martyr","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2340",
 		"datum":"Iste sanctus * pro lege Dei sui certávit usque ad mortem, et a verbis impiórum non tímuit: fundátus enim erat supra firmam petram."
 	},
 	{
-		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium","simplex"],
-		"src":"nocturnale/UMEXIa",
-		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
-	},
-	{
 		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/UMEXIb",
-		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
-	},
-	{
-		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium","solemnis"],
-		"src":"nocturnale/UMEXIc",
-		"datum":"Regem Mártyrum, Dóminum, * Veníte, adorémus."
+		"datum":"Regem Mártyrum Dóminum, * Veníte, adorémus."
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/UMEXN1A1",
 		"datum":"In lege Dómini * fuit volúntas ejus die ac nocte."
 	},
 	{
@@ -99,7 +81,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/UMEXN1A2",
 		"datum":"Prǽdicans * præcéptum Dómini constitútus est in monte sancto ejus."
 	},
 	{
@@ -108,7 +89,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/UMEXN1A3",
 		"datum":"Voce mea * ad Dóminum clamávi: et exaudívit me de monte sancto suo."
 	},
 	{
@@ -153,7 +133,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/UMEXN2A1",
 		"datum":"Fílii hóminum * scitóte quia Dóminus sanctum suum mirificávit."
 	},
 	{
@@ -162,7 +141,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/UMEXN2A2",
 		"datum":"Scuto bonæ voluntátis * tuæ coronásti eum Dómine."
 	},
 	{
@@ -171,7 +149,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/UMEXN2A3",
 		"datum":"In univérsa terra * glória et honóre coronásti eum."
 	},
 	{
@@ -223,7 +200,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/UMEXN3A1",
 		"datum":"Justus Dóminus, * et justítiam diléxit: æquitátem vidit vultus ejus."
 	},
 	{
@@ -232,7 +208,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/UMEXN3A2",
 		"datum":"Habitábit * in tabernáculo tuo: requiéscet in monte sancto tuo."
 	},
 	{
@@ -241,7 +216,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/UMEXN3A3",
 		"datum":"Posuísti Dómine * super caput ejus corónam de lápide pretióso."
 	},
 	{
@@ -312,7 +286,6 @@
 	},
 	{
 		"tags":["martyr","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2855",
 		"datum":"Qui odit * ánimam suam in hoc mundo, in vitam ætérnam custódit eam."
 	},
 	{
@@ -350,7 +323,6 @@
 	},
 	{
 		"tags":["martyr","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2879",
 		"datum":"Qui vult veníre post me, * ábneget semetípsum, et tollat crucem suam, et sequátur me."
 	},
 	{

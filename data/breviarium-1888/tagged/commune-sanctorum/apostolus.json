@@ -1,7 +1,6 @@
 [
 	{
 		"tags":["apostolus","antiphona","antiphona-i"],
-		"src":"gregobase/2300",
 		"datum":"Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos."
 	},
 	{
@@ -10,7 +9,6 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-ii"],
-		"src":"gregobase/2104",
 		"datum":"Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis."
 	},
 	{
@@ -19,7 +17,6 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iii"],
-		"src":"gregobase/2202",
 		"datum":"Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus."
 	},
 	{
@@ -28,7 +25,6 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-iv"],
-		"src":"gregobase/1893",
 		"datum":"Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt."
 	},
 	{
@@ -37,7 +33,6 @@
 	},
 	{
 		"tags":["apostolus","antiphona","antiphona-v"],
-		"src":"gregobase/2594",
 		"datum":"In patiéntia vestra * possidébitis ánimas vestras."
 	},
 	{
@@ -72,17 +67,10 @@
 	},
 	{
 		"tags":["apostolus","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2112",
 		"datum":"Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et ante reges et prǽsides ducémini propter me in testimónium illis, et Géntibus."
 	},
 	{
-		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
-		"src":"nocturnale/APEXIa",
-		"datum":"Regem Apostolórum Dóminum, * Veníte adorémus."
-	},
-	{
 		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/APEXIb",
 		"datum":"Regem Apostolórum Dóminum, * Veníte adorémus."
 	},
 	{
@@ -97,7 +85,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/APEXN1A1",
 		"datum":"In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum."
 	},
 	{
@@ -106,7 +93,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/APEXN1A2",
 		"datum":"Clamavérunt justi, * et Dóminus exaudívit eos."
 	},
 	{
@@ -115,7 +101,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/APEXN1A3",
 		"datum":"Constítues * eos príncipes super omnem terram: mémores erunt nóminis tui Dómine."
 	},
 	{
@@ -160,7 +145,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/APEXN2A1",
 		"datum":"Príncipes populórum * congregáti sunt cum Deo Ábraham."
 	},
 	{
@@ -169,7 +153,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/APEXN2A2",
 		"datum":"Dedísti hæreditátem * timéntibus nomen tuum Dómine."
 	},
 	{
@@ -178,7 +161,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/APEXN2A3",
 		"datum":"Annuntiavérunt * ópera Dei, et facta ejus intellexérunt."
 	},
 	{
@@ -230,7 +212,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/APEXN3A1",
 		"datum":"Exaltabúntur * córnua justi, allelúja.",
 		"in-tempore-septuagesimae":"Exaltabúntur * córnua justi."
 	},
@@ -240,7 +221,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/APEXN3Aa",
 		"datum":"Lux orta est * justo, allelúja, rectis corde lætítia, allelúja.",
 		"in-tempore-septuagesimae":"Lux orta est * justo, rectis corde lætítia."
 	},
@@ -250,7 +230,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/APEXN3A3",
 		"datum":"Custodiébant * testimónia ejus, et præcépta ejus, allelúja.",
 		"in-tempore-septuagesimae":"Custodiébant * testimónia ejus, et præcépta ejus."
 	},
@@ -306,7 +285,6 @@
 	},
 	{
 		"tags":["apostolus","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12597",
 		"datum":"Vos qui reliquístis * ómnia, et secúti estis me, céntuplum accipiétis, et vitam ætérnam possidébitis."
 	},
 	{
@@ -340,12 +318,10 @@
 	},
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/1973",
 		"datum":"Jurávit Dóminus, * et non pœnitébit eum: Tu es sacérdos in ætérnum."
 	},
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2751",
 		"datum":"Cóllocet eum * Dóminus cum princípibus pópuli sui."
 	},
 	{
@@ -354,7 +330,6 @@
 	},
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/1861",
 		"datum":"Dirupísti Dómine * víncula mea: tibi sacrificábo hóstiam laudis."
 	},
 	{
@@ -363,7 +338,6 @@
 	},
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/2337",
 		"datum":"Eúntes ibant * et flebant, mitténtes sémina sua."
 	},
 	{
@@ -372,7 +346,6 @@
 	},
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2079",
 		"datum":"Confortátus est * principátus eórum, et honoráti sunt amíci sui Deus."
 	},
 	{
@@ -381,7 +354,6 @@
 	},
 	{
 		"tags":["apostolus","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1915",
 		"datum":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum, allelúja.",
 		"in-tempore-septuagesimae":"Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum."
 	},

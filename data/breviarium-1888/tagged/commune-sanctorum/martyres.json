@@ -1,7 +1,6 @@
 [
 	{
 		"tags":["martyres","antiphona","antiphona-i"],
-		"src":"gregobase/1821",
 		"datum":"Omnes sancti, * quanta passi sunt torménta, ut secúri pervenírent ad palmam martýrii."
 	},
 	{
@@ -10,22 +9,18 @@
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-ii"],
-		"src":"gregobase/2338",
 		"datum":"Cum palma * ad regna pervenérunt sancti, corónas decóris meruérunt de manu Dei."
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-iii"],
-		"src":"gregobase/2746",
 		"datum":"Córpora sanctórum * in pace sepúlta sunt: et vivent nómina eórum in ætérnum."
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-iv"],
-		"src":"gregobase/2051",
 		"datum":"Mártyres Dómini * Dóminum benedícite in ætérnum."
 	},
 	{
 		"tags":["martyres","antiphona","antiphona-v"],
-		"src":"gregobase/1897",
 		"datum":"Mártyrum chorus * laudáte Dóminum de cœlis, allelúja.",
 		"in-tempore-septuagesimae":"Mártyrum chorus * laudáte Dóminum de cœlis."
 	},
@@ -53,7 +48,6 @@
 	},
 	{
 		"tags":["martyres","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2682",
 		"datum":"Istórum est enim * regnum cœlórum, qui contempsérunt vitam mundi, et pervenérunt ad prǽmia regni, et lavérunt stolas suas in sánguine Agni."
 	},
 	{
@@ -70,10 +64,6 @@
 		"tags":["martyres","collecta","alia-collecta"],
 		"terminatio":[["terminatio","per-dominum"]],
 		"datum":"Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis."
-	},
-	{
-		"tags":["martyres","matutinum","antiphona","antiphona-invitatorium"],
-		"datum":"Regem Mártyrum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["martyres","matutinum","hymnus"],
@@ -276,7 +266,6 @@
 	},
 	{
 		"tags":["martyres","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2177",
 		"datum":"Vestri capílli cápitis * omnes numeráti sunt: nolíte timére: multis passéribus melióres estis vos."
 	},
 	{
