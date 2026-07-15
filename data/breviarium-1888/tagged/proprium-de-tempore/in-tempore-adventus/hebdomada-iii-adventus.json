@@ -9,7 +9,6 @@
 			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-i"],
 			["hebdomada-iii-adventus","prima","antiphona","antiphona-i"]
 		],
-		"src":"gregobase/2145",
 		"datum":"Véniet Dóminus, * et non tardábit, et illuminábit abscóndita tenebrárum, et manifestábit se ad omnes gentes, allelúja."
 	},
 	{
@@ -18,7 +17,6 @@
 			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-ii"],
 			["hebdomada-iii-adventus","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"gregobase/2116",
 		"datum":"Jerúsalem gaude * gaúdio magno, quia véniet tibi Salvátor, allelúja."
 	},
 	{
@@ -27,7 +25,6 @@
 			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-iii"],
 			["hebdomada-iii-adventus","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"gregobase/2830",
 		"datum":"Dabo in Sion * salútem, et in Jerúsalem glóriam meam, allelúja."
 	},
 	{
@@ -35,7 +32,6 @@
 			["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-iv"],
 			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-iv"]
 		],
-		"src":"gregobase/2443",
 		"datum":"Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera in vias planas: veni Dómine, et noli tardáre, allelúja."
 	},
 	{
@@ -44,7 +40,6 @@
 			["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-v"],
 			["hebdomada-iii-adventus","nona","antiphona","antiphona-v"]
 		],
-		"src":"gregobase/1937",
 		"datum":"Juste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini."
 	},
 	{
@@ -53,7 +48,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2616",
 		"datum":"Ante me * non est formátus Deus, et post me non erit: quia mihi curvábitur omne genu, et confitébitur omnis lingua."
 	},
 	{
@@ -191,7 +185,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12671",
 		"datum":"Super sólium * David, et super regnum ejus sedébit in ætérnum, allelúja."
 	},
 	{
@@ -204,7 +197,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/13018",
 		"datum":"Beáta es María, * quæ credidísti Dómino: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja."
 	},
 	{
@@ -224,12 +216,10 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11920",
 		"datum":"Egrediétur * virga de radíce Jesse, et replébitur omnis terra glória Dómini: et vidébit omnis caro salutáre Dei."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2950",
 		"datum":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus."
 	},
 	{
@@ -249,12 +239,10 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11750",
 		"datum":"Tu Béthlehem * terra Juda, non eris mínima: ex te enim éxiet Dux, qui regat pópulum meum Ísraël."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/13009",
 		"datum":"Eleváre, eleváre, * consúrge Jerúsalem: solve víncula colli tui, captíva fília Sion."
 	},
 	{
@@ -295,12 +283,10 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11910",
 		"datum":"Vigiláte * ánimo, in próximo est Dóminus Deus noster."
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/12631",
 		"datum":"Lætámini * cum Jerúsalem, et exsultáte in ea omnes qui dilígitis eam, in ætérnum."
 	}
 ]

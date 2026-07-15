@@ -51,30 +51,13 @@
 		"versus":"Crástina die delébitur iníquitas terræ, et regnábit super nos Salvátor mundi."
 	},
 	{
-		"tags":["vigilia-nativitatis","antiphona","antiphona-i"],
-		"src":"gregobase/2256",
-		"datum":"Judǽa et Jerúsalem * nolíte timére: cras egrediémini, et Dóminus erit vobíscum, allelúja."
+		"tags":["vigilia-nativitatis","antiphona"],
+		"antiphona-i":"Judǽa et Jerúsalem * nolíte timére: cras egrediémini, et Dóminus erit vobíscum, allelúja.",
+		"antiphona-ii":"Hódie sciétis * quia véniet Dóminus: et mane vidébitis glóriam ejus.",
+		"antiphona-iii":"Crástina die * delébitur iníquitas terræ: et regnábit super nos Salvátor mundi.",
+		"antiphona-iv":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja.",
+		"antiphona-v":"Crástina erit * vobis salus, dicit Dóminus Deus exercítuum."
 	},	
-	{
-		"tags":["vigilia-nativitatis","antiphona","antiphona-ii"],
-		"src":"gregobase/2345",
-		"datum":"Hódie sciétis * quia véniet Dóminus: et mane vidébitis glóriam ejus."
-	},
-	{
-		"tags":["vigilia-nativitatis","antiphona","antiphona-iii"],
-		"src":"gregobase/2461",
-		"datum":"Crástina die * delébitur iníquitas terræ: et regnábit super nos Salvátor mundi."
-	},
-	{
-		"tags":["vigilia-nativitatis","antiphona","antiphona-iv"],
-		"src":"gregobase/2837",
-		"datum":"Dóminus véniet, * occúrrite illi, dicéntes: Magnum princípium, et regni ejus non erit finis: Deus, fortis, dominátor, princeps pacis, allelúja."
-	},
-	{
-		"tags":["vigilia-nativitatis","antiphona","antiphona-v"],
-		"src":"gregobase/2081",
-		"datum":"Crástina erit * vobis salus, dicit Dóminus Deus exercítuum."
-	},
 	{	
 		"tags":["vigilia-nativitatis","capitulum"],
 		"datum":"[Rom. 1.]/Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, + quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, * qui factus est ei ex sémine David secúndum carnem."
