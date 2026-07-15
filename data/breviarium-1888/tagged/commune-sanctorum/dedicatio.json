@@ -1,7 +1,6 @@
 [
 	{
 		"tags":["dedicatio","antiphona","antiphona-i"],
-		"src":"gregobase/2758",
 		"datum":"Domum tuam Dómine * decet sanctitúdo in longitúdinem diérum.",
 		"in-tempore-paschali":"Domum tuam Dómine * decet sanctitúdo in longitúdinem diérum, allelúja."
 	},
@@ -11,7 +10,6 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-ii"],
-		"src":"gregobase/2508",
 		"datum":"Domus mea * domus oratiónis vocábitur.",
 		"in-tempore-paschali":"Domus mea * domus oratiónis vocábitur, allelúja."
 	},
@@ -21,7 +19,6 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-iii"],
-		"src":"gregobase/2834",
 		"datum":"Hæc est domus Dómini * fírmiter ædificáta, bene fundáta est supra firmam petram.",
 		"in-tempore-paschali":"Hæc est domus Dómini * fírmiter ædificáta, bene fundáta est supra firmam petram, allelúja."
 	},
@@ -31,7 +28,6 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-iv"],
-		"src":"gregobase/2869",
 		"datum":"Bene fundáta est * domus Dómini supra firmam petram.",
 		"in-tempore-paschali":"Bene fundáta est * domus Dómini supra firmam petram."
 	},
@@ -41,7 +37,6 @@
 	},
 	{
 		"tags":["dedicatio","antiphona","antiphona-v"],
-		"src":"gregobase/2776",
 		"datum":"Lápides pretiósi * omnes muri tui, et turres Jerúsalem gemmis ædificabúntur.",
 		"in-tempore-paschali":"Lápides pretiósi * omnes muri tui, et turres Jerúsalem gemmis ædificabúntur, allelúja."
 	},
@@ -78,7 +73,6 @@
 	},
 	{
 		"tags":["dedicatio","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2315",
 		"datum":"Sanctificávit Dóminus * tabernáculum suum: quia hæc est domus Dei, in qua invocábitur nomen ejus, de quo scriptum est: Et erit nomen meum ibi, dicit Dóminus.",
 		"in-tempore-paschali":"Sanctificávit Dóminus * tabernáculum suum: quia hæc est domus Dei, in qua invocábitur nomen ejus, de quo scriptum est: Et erit nomen meum ibi, dicit Dóminus, allelúja."
 	},
@@ -94,18 +88,15 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/CDEDI",
 		"datum":"Domum Dei decet sanctitúdo: * Sponsum ejus Christum adorémus in ea.",
 		"in-tempore-paschali":"Domum Dei decet sanctitúdo: * Sponsum ejus Christum adorémus in ea, allelúja."
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/CDEDN1A1",
 		"datum":"Tóllite * portas príncipes vestras, et elevámini portæ æternáles."
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/CDEDN1A1",
 		"datum":"Tóllite * portas príncipes vestras, et elevámini portæ æternáles, allelúja."
 	},
 	{
@@ -114,7 +105,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/CDEDN1A2",
 		"datum":"Erit mihi * Dóminus in Deum, et lapis iste vocábitur domus Dei."
 	},
 	{
@@ -123,7 +113,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/CDEDN1A3",
 		"datum":"Ædificávit * Móyses altáre Dómino Deo."
 	},
 	{
@@ -188,12 +177,10 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/CDEDN2A1",
 		"datum":"Non est hic áliud, * nisi domus Dei, et porta cœli."
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/CDEDN2A1",
 		"datum":"Non est hic áliud, * nisi domus Dei, et porta cœli, allelúja."
 	},
 	{
@@ -202,7 +189,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/CDEDN2A2",
 		"datum":"Vidit Jacob scalam, * súmmitas ejus cœlos tangébat, et descendéntes Ángelos, et dixit: Vere locus iste sanctus est."
 	},
 	{
@@ -211,7 +197,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/CDEDN2A3",
 		"datum":"Eréxit Jacob * lápidem in títulum, fundens óleum désuper."
 	},
 	{
@@ -273,12 +258,10 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/CDEDN3A1",
 		"datum":"Qui hábitat in adjutório Altíssimi, * in protectióne Dei cœli commorábitur."
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/CDEDN3A1",
 		"datum":"Qui hábitat in adjutório Altíssimi, * in protectióne Dei cœli commorábitur, allelúja."
 	},
 	{
@@ -287,7 +270,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/CDEDN3A2",
 		"datum":"Templum Dómini * sanctum est, Dei structúra est, Dei ædificátio est."
 	},
 	{
@@ -296,7 +278,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/CDEDN3A3",
 		"datum":"Benedícta * glória Dómini, de loco sancto suo, allelúja.",
 		"in-tempore-septuagesimae":"Benedícta * glória Dómini, de loco sancto suo."
 	},
@@ -420,7 +401,6 @@
 	},
 	{
 		"tags":["dedicatio","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2416",
 		"datum":"O quam metuéndus est * locus iste: vere non est hic áliud, nisi domus Dei, et porta cœli.",
 		"in-tempore-paschali":"O quam metuéndus est * locus iste: vere non est hic áliud, nisi domus Dei, et porta cœli, allelúja."
 	},

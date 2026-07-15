@@ -13,20 +13,14 @@
 	},
 	{
 		"tags":["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1902",
-		"datum":"Beáta Mater, * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis ad Dóminum."
-	},
-	{
-		"tags":["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat","post-nativitatem"],
-		"src":"gregobase/2916",
-		"datum":"Magnum hæreditátis mystérium: * templum Dei factus est úterus nesciéntis virum: non est pollútus ex ea carnem assúmens: omnes gentes vénient dicéntes: Glória tibi Dómine."
+		"datum":"Beáta Mater, * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis ad Dóminum.",
+		"post-nativitatem":"Magnum hæreditátis mystérium: * templum Dei factus est úterus nesciéntis virum: non est pollútus ex ea carnem assúmens: omnes gentes vénient dicéntes: Glória tibi Dómine."
 	},
 	{
 		"tags":[
 			["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat","in-tempore-paschali"],
 			["bmv-sabbatum","laudes","antiphona","antiphona-benedictus","in-tempore-paschali"]
 		],
-		"src":"gregobase/14963",
 		"datum":"Regína cœli, * lætáre, allelúja: quia quem meruísti portáre, allelúja: resurréxit sicut dixit, allelúja: ora pro nobis Deum, allelúja."
 	},
 	{
@@ -63,7 +57,6 @@
 	},
 	{
 		"tags":["bmv-sabbatum","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/19326",
 		"datum":"Beáta Dei Génitrix María, * Virgo perpétua, templum Dómini, sacrárium Spíritus sancti: sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu."
 	},
 	{

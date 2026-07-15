@@ -5,7 +5,6 @@
 	},
 	{
 		"tags":["maria","antiphona","antiphona-i"],
-		"src":"gregobase/2000",
 		"datum":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis.",
 		"in-tempore-paschali":"Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suavitátis, allelúja."
 	},
@@ -15,7 +14,6 @@
 	},
 	{
 		"tags":["maria","antiphona","antiphona-ii"],
-		"src":"gregobase/2514",
 		"datum":"Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.",
 		"in-tempore-paschali":"Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me, allelúja."
 	},
@@ -25,7 +23,6 @@
 	},
 	{
 		"tags":["maria","antiphona","antiphona-iii"],
-		"src":"gregobase/2007",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum.",
 		"in-tempore-paschali":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum, allelúja."
 	},
@@ -35,7 +32,6 @@
 	},
 	{
 		"tags":["maria","antiphona","antiphona-iv"],
-		"src":"gregobase/2056",
 		"datum":"Jam hiems tránsiit: * imber ábiit, et recéssit: surge amíca mea, et veni.",
 		"in-tempore-paschali":"Jam hiems tránsiit: * imber ábiit, et recéssit: surge amíca mea, et veni, allelúja."
 	},
@@ -45,7 +41,6 @@
 	},
 	{
 		"tags":["maria","antiphona","antiphona-v"],
-		"src":"gregobase/18381",
 		"datum":"Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génitrix.",
 		"in-tempore-paschali":"Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génitrix, allelúja."
 	},
@@ -80,7 +75,6 @@
 			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
 			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/2321",
 		"datum":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant N..",
 		"in-tempore-paschali":"Sancta María * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant, allelúja."
 	},
@@ -112,7 +106,6 @@
 	},
 	{
 		"tags":["maria","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/CBMVI",
 		"datum":"Sancta María Dei Génitrix Virgo, * Intercéde pro nobis.",
 		"in-tempore-paschali":"Sancta María Dei Génitrix Virgo, * Intercéde pro nobis, allelúja."
 	},
@@ -128,12 +121,10 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/CBMVN1A1",
 		"datum":"Benedícta tu * in muliéribus, et benedíctus fructus ventris tui."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/CBMVN1A1",
 		"datum":"Benedícta tu * in muliéribus, et benedíctus fructus ventris tui, allelúja."
 	},
 	{
@@ -142,7 +133,6 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/CBMVN1A2",
 		"datum":"Sicut myrrha * elécta odórem dedísti suavitátis sancta Dei Génitrix."
 	},
 	{
@@ -151,7 +141,6 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/MUVXN1A2",
 		"datum":"Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis."
 	},
 	{
@@ -210,12 +199,10 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna, allelúja."
 	},
 	{
@@ -224,7 +211,6 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/MUXXN2A2",
 		"datum":"Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur."
 	},
 	{
@@ -233,7 +219,6 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/CBMVN2A3",
 		"datum":"Sicut læténtium * ómnium nostrum habitátio est in te, sancta Dei Génitrix."
 	},
 	{
@@ -297,12 +282,10 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/CBMVN3A1",
 		"datum":"Gaude María Virgo, * cunctas hǽreses sola interemísti in univérso mundo."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/CBMVN3A1",
 		"datum":"Gaude María Virgo, * cunctas hǽreses sola interemísti in univérso mundo, allelúja."
 	},
 	{
@@ -311,7 +294,6 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/CBMVN3A2",
 		"datum":"Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos."
 	},
 	{
@@ -320,12 +302,10 @@
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/CBMVN3A3",
 		"datum":"Post partum * Virgo invioláta permansísti, Dei Génitrix intercéde pro nobis."
 	},
 	{
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-iii","in-tempore-adventus"],
-		"src":"nocturnale/CBMVN3A3b",
 		"datum":"Ángelus Dómini * nuntiávit Maríæ, et concépit de Spíritu sancto."
 	},
 	{
@@ -400,7 +380,6 @@
 	},
 	{
 		"tags":["maria","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13018",
 		"datum":"Beáta es María, * quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja.",
 		"in-tempore-septuagesimae":"Beáta es María, * quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino."
 	},
@@ -450,7 +429,6 @@
 	},
 	{
 		"tags":["maria","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2950",
 		"datum":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus.",
 		"in-tempore-paschali":"Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus, allelúja."
 	}

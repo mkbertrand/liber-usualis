@@ -1,7 +1,6 @@
 [
 	{
 		"tags":["confessor","antiphona","antiphona-i"],
-		"src":"gregobase/2080",
 		"datum":"Dómine quinque talénta * tradidísti mihi: ecce ália quinque superlucrátus sum.",
 		"in-tempore-paschali":"Dómine quinque talénta * tradidísti mihi: ecce ália quinque superlucrátus sum, allelúja."
 	},
@@ -11,7 +10,6 @@
 	},
 	{
 		"tags":["confessor","antiphona","antiphona-ii"],
-		"src":"gregobase/2179",
 		"datum":"Euge serve bone, * in módico fidélis, intra in gaúdium Dómini tui.",
 		"in-tempore-paschali":"Euge serve bone, * in módico fidélis, intra in gaúdium Dómini tui, allelúja."
 	},
@@ -21,7 +19,6 @@
 	},
 	{
 		"tags":["confessor","antiphona","antiphona-iii"],
-		"src":"gregobase/2570",
 		"datum":"Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.",
 		"in-tempore-paschali":"Fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam, allelúja."
 	},
@@ -31,7 +28,6 @@
 	},
 	{
 		"tags":["confessor","antiphona","antiphona-iv"],
-		"src":"gregobase/2182",
 		"datum":"Beátus ille servus, * quem cum vénerit Dóminus ejus, et pulsáverit jánuam, invénerit vigilántem.",
 		"in-tempore-paschali":"Beátus ille servus, * quem cum vénerit Dóminus ejus, et pulsáverit jánuam, invénerit vigilántem, allelúja."
 	},
@@ -41,7 +37,6 @@
 	},
 	{
 		"tags":["confessor","antiphona","antiphona-v"],
-		"src":"gregobase/2677",
 		"datum":"Serve bone * et fidélis, intra in gaúdium Dómini tui.",
 		"in-tempore-paschali":"Serve bone * et fidélis, intra in gaúdium Dómini tui, allelúja."
 	},
@@ -89,7 +84,6 @@
 	},
 	{
 		"tags":["confessor","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2586",
 		"datum":"Similábo eum * viro sapiénti, qui ædificávit domum suam supra petram.",
 		"in-tempore-paschali":"Similábo eum * viro sapiénti, qui ædificávit domum suam supra petram, allelúja."
 	},
@@ -114,36 +108,19 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","simplex"],
-		"src":"nocturnale/COPOIa",
-		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
-	},
-	{
-		"tags":[
-			["confessor","matutinum","antiphona","antiphona-invitatorium","semiduplex"],
-			["confessor","matutinum","antiphona","antiphona-invitatorium","duplex-minus"]
-		],
-		"src":"nocturnale/COPOIb",
-		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
-	},
-	{
-		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","sollemnitas"],
-		"src":"nocturnale/COPOIc",
+		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium"],
 		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
 	},
 	{
 		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","in-tempore-paschali"],
-		"src":"nocturnale/COPOId",
 		"datum":"Regem Confessórum Dóminum, * Veníte adorémus, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/COPONA1A1",
 		"datum":"Beátus vir, * qui in lege Dómini meditábitur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper et prosperabúntur."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/COPONA1A1",
 		"datum":"Beátus vir, * qui in lege Dómini meditábitur: volúntas ejus pérmanet die ac nocte, et ómnia quæcúmque fáciet, semper et prosperabúntur, allelúja."
 	},
 	{
@@ -152,7 +129,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/COPONA1A2",
 		"datum":"Beátus iste sanctus, * qui confísus est in Dómino, prædicávit præcéptum Dómini, constítues est in monte sancto ejus."
 	},
 	{
@@ -161,7 +137,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/COPONA1A3",
 		"datum":"Tu es glória mea, * tu es suscéptor meus Dómine: tu exáltans caput meum, et exaudísti me de monte sancto tuo."
 	},
 	{
@@ -218,12 +193,10 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/COPON2A1",
 		"datum":"Invocántem exaudívit * Dóminus sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/COPON2A1",
 		"datum":"Invocántem exaudívit * Dóminus sanctum suum, Dóminus exaudívit eum, et constítuit eum in pace, allelúja."
 	},
 	{
@@ -232,7 +205,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/COPON2A2",
 		"datum":"Læténtur omnes, * qui sperant in te Dómine: quóniam tu benedixísti justo, scuto bonæ voluntátis tuæ coronásti eum."
 	},
 	{
@@ -241,7 +213,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/COPON2A3",
 		"datum":"Dómine Dóminus noster, * quam admirábile est nomen tuum in univérsa terra! quia glória et honóre coronásti sanctum tuum, et constituísti eum super ópera mánuum tuárum."
 	},
 	{
@@ -306,12 +277,10 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/COPON3A1",
 		"datum":"Dómine, * iste sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/COPON3A1",
 		"datum":"Dómine, * iste sanctus habitábit in tabernáculo tuo, operátus est justítiam, requiéscet in monte sancto tuo, allelúja."
 	},
 	{
@@ -320,7 +289,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/COPON3A2",
 		"datum":"Vitam pétiit * a te, et tribuísti ei Dómine: glóriam et magnum decórem imposuísti super eum: posuísti in cápite ejus corónam de lápide pretióso."
 	},
 	{
@@ -329,7 +297,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/COPON3A3",
 		"datum":"Hic accípiet * benedictiónem a Dómino, et misericórdiam a Deo salutári suo: quia hæc est generátio quæréntium Dóminum."
 	},
 	{
@@ -407,7 +374,6 @@
 	},
 	{
 		"tags":["confessor","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2808",
 		"datum":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui.",
 		"in-tempore-paschali":"Euge serve bone * et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam, intra in gaúdium Dómini tui, allelúja."
 	},
@@ -460,7 +426,6 @@
 	},
 	{
 		"tags":["confessor","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2251",
 		"datum":"Hic vir despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu.",
 		"in-tempore-paschali":"Hic vir despíciens * mundum et terréna, triúmphans, divítias cœlo cóndidit ore, manu, allelúja."
 	},

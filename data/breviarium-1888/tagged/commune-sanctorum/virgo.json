@@ -1,7 +1,6 @@
 [
 	{
 		"tags":["virgo","antiphona","antiphona-i"],
-		"src":"gregobase/2281",
 		"datum":"Hæc est Virgo sápiens, * et una de número prudéntum.",
 		"in-tempore-paschali":"Hæc est Virgo sápiens, * et una de número prudéntum, allelúja."
 	},
@@ -11,7 +10,6 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-ii"],
-		"src":"gregobase/2798",
 		"datum":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit.",
 		"in-tempore-paschali":"Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit, allelúja."
 	},
@@ -21,7 +19,6 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-iii"],
-		"src":"gregobase/2836",
 		"datum":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum.",
 		"in-tempore-paschali":"Hæc est quæ nescívit * torum in delícto: habébit fructum in respectióne animárum sanctárum, allelúja."
 	},
@@ -31,7 +28,6 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-iv"],
-		"src":"gregobase/2115",
 		"datum":"Veni elécta mea, * et ponam in te thronum meum, allelúja.",
 		"in-tempore-septuagesimae":"Veni elécta mea, * et ponam in te thronum meum."
 	},
@@ -41,7 +37,6 @@
 	},
 	{
 		"tags":["virgo","antiphona","antiphona-v"],
-		"src":"gregobase/2151",
 		"datum":"Ista est speciósa * inter fílias Jerúsalem.",
 		"in-tempore-paschali":"Ista est speciósa * inter fílias Jerúsalem, allelúja."
 	},
@@ -81,7 +76,6 @@
 	},
 	{
 		"tags":["virgo","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2042",
 		"datum":"Veni sponsa Christi: * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.",
 		"in-tempore-paschali":"Veni sponsa Christi: * áccipe corónam, quam tibi Dóminus præparávit in ætérnum, allelúja."
 	},
@@ -90,7 +84,6 @@
 			["virgo","virgines","vesperae","antiphona","antiphona-magnificat"],
 			["virgo","virgines","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/2919",
 		"datum":"Prudéntes Vírgines * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.",
 		"in-tempore-paschali":"Prudéntes Vírgines * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei, allelúja."
 	},
@@ -115,27 +108,9 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["virgo","matutinum","sollemnitas","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/MUVXIc",
-		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
-	},
-	{
-		"tags":[
-			["virgo","matutinum","duplex","antiphona","antiphona-invitatorium"],
-			["virgo","matutinum","semiduplex","antiphona","antiphona-invitatorium"]
-		],
-		"src":"nocturnale/MUVXIb",
-		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
-	},
-	{
-		"tags":["virgo","matutinum","simplex","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/MUVXIa",
-		"datum":"Regem Vírginum Dóminum, * Veníte adorémus."
-	},
-	{
-		"tags":["virgo","matutinum","antiphona","antiphona-invitatorium","in-tempore-paschali"],
-		"src":"nocturnale/MUVXId",
-		"datum":"Regem Vírginum Dóminum, * Veníte adorémus, allelúja."
+		"tags":["virgo","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"Regem Vírginum Dóminum, * Veníte adorémus.",
+		"in-tempore-paschali":"Regem Vírginum Dóminum, * Veníte adorémus, allelúja."
 	},
 	{
 		"tags":["virgo","martyr","matutinum","hymnus"],
@@ -157,12 +132,10 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/MUXXN1A1",
 		"datum":"O quam pulchra * est casta generátio cum claritáte!"
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/MUXXN1A1",
 		"datum":"O quam pulchra * est casta generátio cum claritáte, allelúja!"
 	},
 	{
@@ -171,7 +144,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/MUVXN1A2",
 		"datum":"Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis."
 	},
 	{
@@ -180,7 +152,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/MUXXN1A3",
 		"datum":"Revértere, * revértere Sunamítis: revértere, revértere, ut intueámur te."
 	},
 	{
@@ -253,12 +224,10 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/MUXXN2A1",
 		"datum":"Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna, allelúja."
 	},
 	{
@@ -267,7 +236,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/MUXXN2A2",
 		"datum":"Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur."
 	},
 	{
@@ -276,7 +244,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/MUXXN2A3",
 		"datum":"Aquæ multæ * non potuérunt exstínguere caritátem."
 	},
 	{
@@ -338,12 +305,10 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/MUXXN3A1",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum."
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/MUXXN3A1",
 		"datum":"Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum, allelúja."
 	},
 	{
@@ -352,7 +317,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/MUXXN3A2",
 		"datum":"Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum."
 	},
 	{
@@ -361,7 +325,6 @@
 	},
 	{
 		"tags":["virgo","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/MUXXN3A3",
 		"datum":"Veni sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum."
 	},
 	{
@@ -423,7 +386,6 @@
 	},
 	{
 		"tags":["virgo","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/18848",
 		"datum":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam.",
 		"in-tempore-paschali":"Símile est regnum cœlórum * hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam, allelúja."
 	},
