@@ -4,32 +4,21 @@
 		"datum":"In Circumcisione D.N.J.C."
 	},
 	{
-		"tags":["circumcisio","antiphona","antiphona-i"],
-		"src":"gregobase/2008",
-		"datum":"O admirábile commércium: * Creátor géneris humáni, animátum corpus sumens, de Vírgine nasci dignátus est: et procédens homo sine sémine, largítus est nobis suam Deitátem."
+		"tags":["circumcisio","antiphona"],
+		"antiphona-i":"O admirábile commércium: * Creátor géneris humáni, animátum corpus sumens, de Vírgine nasci dignátus est: et procédens homo sine sémine, largítus est nobis suam Deitátem."
 	},
 	{
 		"tags":["circumcisio","vesperae","psalmus"],
 		"datum":[["maria","vesperae","i-vesperae"]]
 	},
 	{
-		"tags":["circumcisio","antiphona","antiphona-ii"],
-		"src":"gregobase/2973",
-		"datum":"Quando natus es * ineffabíliter ex Vírgine, tunc implétæ sunt Scriptúræ, sicut plúvia in vellus descendísti, ut salvum fáceres genus humánum: te laudámus Deus noster."
-	},
-	{
-		"tags":["circumcisio","antiphona","antiphona-iii"],
-		"src":"gregobase/1903",
-		"datum":"Rubum quem víderat Móyses * incombústum, conservátum agnóvimus tuam laudábilem virginitátem: Dei Génitrix, intercéde pro nobis."
-	},
-	{
-		"tags":["circumcisio","antiphona","antiphona-iv"],
-		"src":"gregobase/2195",
-		"datum":"Germinávit radix Jesse, * orta est stella ex Jacob: Virgo péperit Salvatórem: te laudámus Deus noster."
+		"tags":["circumcisio","antiphona"],
+		"antiphona-ii":"Quando natus es * ineffabíliter ex Vírgine, tunc implétæ sunt Scriptúræ, sicut plúvia in vellus descendísti, ut salvum fáceres genus humánum: te laudámus Deus noster.",
+		"antiphona-iii":"Rubum quem víderat Móyses * incombústum, conservátum agnóvimus tuam laudábilem virginitátem: Dei Génitrix, intercéde pro nobis.",
+		"antiphona-iv":"Germinávit radix Jesse, * orta est stella ex Jacob: Virgo péperit Salvatórem: te laudámus Deus noster."
 	},
 	{
 		"tags":["circumcisio","antiphona","antiphona-v"],
-		"src":"gregobase/2234",
 		"datum":"Ecce María génuit * nobis Salvatórem, quem Joánnes videns exclamávit, dicens, Ecce Agnus Dei, ecce qui tollit peccáta mundi, allelúja.",
 		"in-tempore-septuagesimae":"Ecce María génuit * nobis Salvatórem, quem Joánnes videns exclamávit, dicens, Ecce Agnus Dei, ecce qui tollit peccáta mundi."
 	},
@@ -53,7 +42,6 @@
 	},
 	{
 		"tags":["circumcisio","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2010",
 		"datum":"Propter nímiam * caritátem suam, qua diléxit nos Deus, Fílium suum misit in similitúdinem carnis peccáti, allelúja."
 	},
 	{
@@ -75,7 +63,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0101N1A2",
 		"datum":"In sole pósuit * tabernáculum suum: et ipse tamquam sponsus procédens de thálamo suo."
 	},
 	{
@@ -84,7 +71,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0101N1A3",
 		"datum":"Elevámini * portæ æternáles, et introíbit Rex glóriæ."
 	},
 	{
@@ -133,7 +119,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0101N2A1",
 		"datum":"Speciósus forma * præ fíliis hóminum, diffúsa est grátia in lábiis tuis."
 	},
 	{
@@ -142,7 +127,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0101N2A2",
 		"datum":"Homo natus est * in ea, et ipse fundávit eam Altíssimus."
 	},
 	{
@@ -151,7 +135,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0101N2A3",
 		"datum":"Exsultábunt ómnia ligna * silvárum ante fáciem Dómini, quóniam venit."
 	},
 	{
@@ -197,7 +180,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0101N3A1",
 		"datum":"In princípio, * et ante sǽcula Deus erat Verbum, et ipse natus est hódie Salvátor mundi."
 	},
 	{
@@ -206,7 +188,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0101N3A2",
 		"datum":"Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie nasci dignátus est."
 	},
 	{
@@ -215,7 +196,6 @@
 	},
 	{
 		"tags":["circumcisio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0101N3A3",
 		"datum":"Nato Dómino, * Angelórum chorus canébat, dicens: Salus Deo nostro, sedénti super thronum, et Agno."
 	},
 	{
@@ -263,7 +243,6 @@
 	},
 	{
 		"tags":["circumcisio","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13319",
 		"datum":"Mirábile mystérium * declarátur hódie: innovántur natúræ, Deus homo factus est: id quod fuit assúmpsit; non commixtiónem passus, neque divisiónem."
 	},
 	{
@@ -284,7 +263,6 @@
 	},
 	{
 		"tags":["circumcisio","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2916",
 		"datum":"Magnum * hæreditátis mystérium: templum Dei factus est úterus nesciéntis virum: non est pollútus ex ea carnem assúmens: omnes gentes vénient, dicéntes: Glória tibi Dómine."
 	}
 ]

@@ -12,33 +12,19 @@
 		"datum":"Dominica infra Octavam Epiphaniæ Domini"
 	},
 	{
-		"tags":["epiphania","antiphona","antiphona-i"],
-		"src":"gregobase/2271",
-		"datum":"Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie mundo appáruit."
+		"tags":["epiphania","antiphona"],
+		"antiphona-i":"Ante lucíferum génitus, * et ante sǽcula, Dóminus Salvátor noster hódie mundo appáruit."
 	},
 	{
 		"tags":["epiphania","i-vesperae","psalmus"],
 		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
 	},
 	{
-		"tags":["epiphania","antiphona","antiphona-ii"],
-		"src":"gregobase/2692",
-		"datum":"Venit lumen tuum * Jerúsalem, et glória Dómini super te orta est, et ambulábunt Gentes in lúmine tuo, allelúja."
-	},
-	{
-		"tags":["epiphania","antiphona","antiphona-iii"],
-		"src":"gregobase/2464",
-		"datum":"Apértis thesaúris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, allelúja."
-	},
-	{
-		"tags":["epiphania","antiphona","antiphona-iv"],
-		"src":"gregobase/2004",
-		"datum":"Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja."
-	},
-	{
-		"tags":["epiphania","antiphona","antiphona-v"],
-		"src":"gregobase/1968",
-		"datum":"Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt."
+		"tags":["epiphania","antiphona"],
+		"antiphona-ii":"Venit lumen tuum * Jerúsalem, et glória Dómini super te orta est, et ambulábunt Gentes in lúmine tuo, allelúja.",
+		"antiphona-iii":"Apértis thesaúris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, allelúja.",
+		"antiphona-iv":"Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja.",
+		"antiphona-v":"Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt."
 	},
 	{
 		"tags":["epiphania","capitulum"],
@@ -66,7 +52,6 @@
 	},
 	{
 		"tags":["epiphania","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2368",
 		"datum":"Magi * vidéntes stellam, dixérunt ad ínvicem: Hoc signum magni Regis est: eámus et inquirámus eum, et offerámus ei múnera, aurum, thus, et myrrham, allelúja."
 	},
 	{
@@ -85,12 +70,10 @@
 	},
 	{
 		"tags":["epiphania","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0106I",
 		"datum":"Christus appáruit nobis, * Veníte adorémus."
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0106N1A1",
 		"datum":"Afférte Dómino * fílii Dei, adoráte Dóminum in aula sancta ejus."
 	},
 	{
@@ -99,7 +82,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0106N1A2",
 		"datum":"Flúminis ímpetus * lætíficat, allelúja, civitátem Dei, allelúja."
 	},
 	{
@@ -108,7 +90,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0106N1A3",
 		"datum":"Psállite Deo nostro, * psállite: psállite Regi nostro, psállite sapiénter."
 	},
 	{
@@ -164,7 +145,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0106N2A1",
 		"datum":"Omnis terra adóret te, * et psallat tibi: psalmum dicat nómini tuo Dómine."
 	},
 	{
@@ -173,7 +153,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0106N2A2",
 		"datum":"Reges Tharsis * et ínsulæ múnera ófferent Regi Dómino."
 	},
 	{
@@ -182,7 +161,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0106N2A3",
 		"datum":"Omnes Gentes * quascúmque fecísti, vénient, et adorábunt coram te Dómine."
 	},
 	{
@@ -227,7 +205,6 @@
 	},
 	{
 		"tags":["epiphania","festum","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0106N3A1",
 		"datum":"Veníte adorémus eum: * quia ipse est Dóminus Deus noster."
 	},
 	{
@@ -260,7 +237,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0106N3A2",
 		"datum":"Adoráte Dóminum, * allelúja: in aula sancta ejus, allelúja."
 	},
 	{
@@ -269,7 +245,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0106N3A3",
 		"datum":"Adoráte Deum, * allelúja: omnes Ángeli ejus, allelúja."
 	},
 	{
@@ -335,7 +310,6 @@
 	},
 	{
 		"tags":["epiphania","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2382",
 		"datum":"Hódie * cœlésti sponso juncta est Ecclésia, quóniam in Jordáne lavit Christus ejus crímina: currunt cum munéribus Magi ad regáles núptias, et ex aqua facto vino lætántur convívæ, allelúja."
 	},
 	{
@@ -377,7 +351,6 @@
 	},
 	{
 		"tags":["epiphania","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2199",
 		"datum":"Tribus miráculis * ornátum diem sanctum cólimus: hódie stella Magos duxit ad præsépium: hódie vinum ex aqua factum est ad núptias: hódie in Jordáne a Joánne Christus baptizári vóluit, ut salváret nos, allelúja."
 	},
 	{
@@ -415,12 +388,10 @@
 	},
 	{
 		"tags":["epiphania","dies-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12046",
 		"datum":"Ab Oriénte * venérunt Magi in Béthlehem adoráre Dóminum: et apértis thesaúris suis, pretiósa múnera obtulérunt: aurum, sicut Regi magno; thus, sicut Deo vero; myrrham sepultúræ ejus, allelúja."
 	},
 	{
 		"tags":["epiphania","dies-ii","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2817",
 		"datum":"Vidéntes stellam Magi, * gavísi sunt gaúdio magno: et intrántes domum, obtulérunt Dómino aurem, thus, et myrrham, allelúja."
 	},
 	{
@@ -454,12 +425,10 @@
 	},
 	{
 		"tags":["epiphania","dies-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11912",
 		"datum":"Tria sunt múnera, * quæ obtulérunt Magi Dómino, aurum, thus, et myrrham, Fílio Dei, Regi magno, allelúja."
 	},
 	{
 		"tags":["epiphania","dies-iii","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1881",
 		"datum":"Lux de luce * apparuísti Christe, cui Magi múnera ófferunt, allelúja, allelúja, allelúja."
 	},
 	{
@@ -493,12 +462,10 @@
 	},
 	{
 		"tags":["epiphania","dies-iv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11894",
 		"datum":"Vídimus stellam ejus * in Oriénte, et vénimus cum munéribus adoráre Dóminum."
 	},
 	{
 		"tags":["epiphania","dies-iv","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2812",
 		"datum":"Interrogábat * Magos Heródes: Quod signum vidístis super natum Regem? Stellam vídimus fulgéntem, cujus splendor illúminat mundum."
 	},
 	{
@@ -532,12 +499,10 @@
 	},
 	{
 		"tags":["epiphania","dies-v","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11887",
 		"datum":"Omnes natiónes * vénient a longe, portántes múnera sua, allelúja."
 	},
 	{
 		"tags":["epiphania","dies-v","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2944",
 		"datum":"Omnes de Saba * vénient, aurum et thus deferéntes, allelúja, allelúja."
 	},
 	{
@@ -571,12 +536,10 @@
 	},
 	{
 		"tags":["epiphania","dies-vi","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11968",
 		"datum":"Vénient ad te, * qui detrahébant tibi, et adorábunt vestígia pedum tuórum."
 	},
 	{
 		"tags":["epiphania","dies-vi","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1960",
 		"datum":"Admóniti Magi * in somnis, per áliam viam revérsi sunt in regiónem suam."
 	},
 	{
@@ -588,7 +551,6 @@
 			["epiphania","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
 			["epiphania","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/2342",
 		"datum":"Remánsit * puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus, existimántes illum esse in comitátu: et requirébant eum inter cognátos et notos."
 	},
 	{
@@ -647,7 +609,6 @@
 	},
 	{
 		"tags":["epiphania","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2418",
 		"datum":"Fili, quid fecísti * nobis sic? Ego et pater tuus doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in iis, quæ Patris mei sunt, opórtet me esse?"
 	},
 	{

@@ -8,33 +8,19 @@
 		"datum":"Nativitatis D.N.J.C."
 	},
 	{
-		"tags":["nativitas","i-vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2996",
-		"datum":"Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra."
+		"tags":["nativitas","i-vesperae","antiphona"],
+		"antiphona-i":"Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra."
 	},
 	{
 		"tags":["nativitas","i-vesperae","psalmus"],
 		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
 	},
 	{
-		"tags":["nativitas","i-vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/3011",
-		"datum":"Magnificátus est * Rex pacíficus super omnes reges univérsæ terrae."
-	},
-	{
-		"tags":["nativitas","i-vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2997",
-		"datum":"Compléti sunt * dies Maríæ, ut páreret Fílium suum primogénitum."
-	},
-	{
-		"tags":["nativitas","i-vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/3005",
-		"datum":"Scitóte * quia prope est regnum Dei: amen dico vobis, quia non tardábit."
-	},
-	{
-		"tags":["nativitas","i-vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/3006",
-		"datum":"Leváte cápita vestra: * ecce appropínquat redémptio vestra."
+		"tags":["nativitas","i-vesperae","antiphona"],
+		"antiphona-ii":"Magnificátus est * Rex pacíficus super omnes reges univérsæ terrae.",
+		"antiphona-iii":"Compléti sunt * dies Maríæ, ut páreret Fílium suum primogénitum.",
+		"antiphona-iv":"Scitóte * quia prope est regnum Dei: amen dico vobis, quia non tardábit.",
+		"antiphona-v":"Leváte cápita vestra: * ecce appropínquat redémptio vestra."
 	},
 	{
 		"tags":["nativitas","i-vesperae","capitulum"],
@@ -61,7 +47,6 @@
 	},
 	{
 		"tags":["nativitas","i-vesperae","antiphona","antiphona-magnificat"],
-		"src": "gregobase/3002",
 		"datum":"Cum ortus fúerit * sol de cœlo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo."
 	},
 	{
@@ -86,12 +71,10 @@
 	},
 	{
 		"tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/1225I",
 		"datum":"Christus natus est nobis: * Veníte adorémus."
-        },
+  },
 	{
 		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/1225N1A1",
 		"datum":"Dóminus dixit * ad me: Fílius meus es tu, ego hódie génui te."
 	},
 	{
@@ -100,7 +83,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/1225N1A2",
 		"datum":"Tamquam sponsus * Dóminus procédens de thálamo suo."
 	},
 	{
@@ -109,7 +91,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/1225N1A3",
 		"datum":"Diffúsa est * grátia in lábiis tuis, proptérea benedíxit te Deus in ætérnum."
 	},
 	{
@@ -162,7 +143,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/1225N2A1",
 		"datum":"Suscépimus * Deus misericórdiam tuam in médio templi tui."
 	},
 	{
@@ -171,7 +151,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1225N2A2",
 		"datum":"Oriétur * in diébus Dómini abundántia pacis, et dominábitur."
 	},
 	{
@@ -180,7 +159,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1225N2A3",
 		"datum":"Véritas de terra * orta est, et justítia de cœlo prospéxit."
 	},
 	{
@@ -231,7 +209,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/1225N3A1",
 		"datum":"Ipse invocábit * me, allelúja: Pater meus es tu, allelúja."
 	},
 	{
@@ -240,7 +217,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1225N3A2",
 		"datum":"Læténtur cœli, * et exsúltet terra ante fáciem Dómini quóniam venit."
 	},
 	{
@@ -249,7 +225,6 @@
 	},
 	{
 		"tags":["nativitas","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1225N3A3",
 		"datum":"Notum fecit * Dóminus, allelúja, salutáre suum, allelúja."
 	},
 	{
@@ -288,7 +263,7 @@
 		]
 	},
 	{
-		"tags":["nativitas","duplex-i-classis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"tags":["nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"src":"nocturnale/1225N3R2",
 		"incipit":"Verbum caro factum est, et habitávit in nobis:",
 		"responsum":"Et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre, plenum grátiæ et veritátis.",
@@ -305,29 +280,12 @@
 		]
 	},
 	{
-		"tags":["nativitas","antiphona","antiphona-i"],
-		"src":"gregobase/2204",
-		"datum":"Quem vidístis * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja."
-	},
-	{
-		"tags":["nativitas","antiphona","antiphona-ii"],
-		"src":"gregobase/2653",
-		"datum":"Génuit puérpera * Regem, cui nomen ætérnum, et gaúdia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja."
-	},
-	{
-		"tags":["nativitas","antiphona","antiphona-iii"],
-		"src":"gregobase/2421",
-		"datum":"Angelus ad pastóres * ait: Annúntio vobis gaúdium magnum: quia natus est vobis hódie Salvátor mundi, allelúja."
-	},
-	{
-		"tags":["nativitas","antiphona","antiphona-iv"],
-		"src":"gregobase/2840",
-		"datum":"Facta est cum Ángelo * multitúdo cœléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus, bonæ voluntátis, allelúja."
-	},
-	{
-		"tags":["nativitas","antiphona","antiphona-v"],
-		"src":"gregobase/2913",
-		"datum":"Párvulus fílius * hódie natus est nobis: et vocábitur Deus, fortis, allelúja, allelúja."
+		"tags":["nativitas","antiphona"],
+		"antiphona-i":"Quem vidístis * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja.",
+		"antiphona-ii":"Génuit puérpera * Regem, cui nomen ætérnum, et gaúdia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.",
+		"antiphona-iii":"Angelus ad pastóres * ait: Annúntio vobis gaúdium magnum: quia natus est vobis hódie Salvátor mundi, allelúja.",
+		"antiphona-iv":"Facta est cum Ángelo * multitúdo cœléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus, bonæ voluntátis, allelúja.",
+		"antiphona-v":"Párvulus fílius * hódie natus est nobis: et vocábitur Deus, fortis, allelúja, allelúja."
 	},
 	{	
 		"tags":["nativitas","capitulum"],
@@ -355,7 +313,6 @@
 	},
 	{
 		"tags":["nativitas","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2782",
 		"datum":"Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allelúja."
 	},
 	{
@@ -405,7 +362,6 @@
 	},
 	{
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2728",
 		"datum":"Tecum princípium * in die virtútis tuæ, in splendóribus sanctórum, ex útero ante lucíferum génui te."
 	},
 	{
@@ -414,7 +370,6 @@
 	},
 	{
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2736",
 		"datum":"Redemptiónem * misit Dóminus pópulo suo: mandávit in ætérnum testaméntum suum."
 	},
 	{
@@ -423,7 +378,6 @@
 	},
 	{
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2058",
 		"datum":"Exórtum est * in ténebris lumen rectis corde: miséricors, et miserátor, et justus Dóminus."
 	},
 	{
@@ -432,7 +386,6 @@
 	},
 	{
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/2277",
 		"datum":"Apud Dóminum * misericórdia, et copiósa apud eum redémptio."
 	},
 	{
@@ -441,7 +394,6 @@
 	},
 	{
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2766",
 		"datum":"De fructu * ventris tui ponam super sedem tuam."
 	},
 	{
@@ -450,23 +402,25 @@
 	},
 	{
 		"tags":["nativitas","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2486",
 		"datum":"Hódie * Christus natus est: hódie Salvátor appáruit: hódie in terra canunt Ángeli, lætántur Archángeli: hódie exsúltant justi, dicéntes: Glória in excélsis Deo, allelúja."
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","infra-octavam","nomen"],
 		"datum":"Dominica infra Octavam Nativitatis D.N.J.C."
 	},
+  {
+    "tags":["nativitas","dominica-infra-octavam","i-vesperae","psalmi"],
+    "datum":[["nativitas","festum","ii-vesperae","psalmi"]]
+  },
 	{
 		"tags":["nativitas","dominica-infra-octavam","capitulum"],
 		"datum":"[Galat. 4.]/Fratres: Quanto témpore hæres párvulus est, nihil differt a servo, cum sit dóminus ómnium: + sed sub tutóribus et actóribus est * usque ad præfinítum tempus a patre."
 	},
 	{
 		"tags":[
-			["nativitas","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
-			["nativitas","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"]
-		],
-		"src":"gregobase/2544",
+      ["nativitas","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+      ["nativitas","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"]
+    ],
 		"datum":"Dum médium siléntium * tenérent ómnia, et nox in suo cursu médium iter perágeret, omnípotens sermo tuus Dómine a regálibus sédibus venit, allelúja."
 	},
 	{
@@ -475,57 +429,57 @@
 		"terminatio":[["terminatio","qui-tecum-vivit"]]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-i"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":[
 			"Íncipit Epístola Beáti Pauli Apóstoli ad Romános.",
 			"[Rom. 1.]/Paulus servus Jesu Christi, vocátus Apóstolus, segregátus in Evangélium Dei, quod ante promíserat per prophétas suos in Scriptúris sanctis de Fílio suo, qui factus est ei ex sémine David secúndum carnem, qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis, ex resurrectióne mortuórum Jesu Christi Dómini nostri: per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus Géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi: ómnibus qui sunt Romæ, diléctis Dei, vocátis sanctis. Grátia vobis, et pax a Deo Patre nostro, et Dómino Jesu Christo."
 		]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-i"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i","responsorium","responsorium-i"],
 		"datum":[["nativitas","matutinum","nocturna-i","responsorium","responsorium-ii"]]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-ii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i","lectio","lectio-ii"],
 		"datum":"Primum quidem grátias ago Deo meo per Jesum Christum pro ómnibus vobis: quia fides vestra annuntiátur in univérso mundo. Testis enim mihi est Deus, cui sérvio in spíritu meo in Evangélio Fílii ejus, quod sine intermissióne memóriam vestri fácio semper in oratiónibus meis: óbsecrans, si quómodo tandem aliquándo prósperum iter hábeam in voluntáte Dei veniéndi ad vos. Desídero enim vidére vos: ut áliquid impértiar vobis grátiæ spirituális ad confirmándos vos: id est, simul consolári in vobis per eam, quæ ínvicem est, fidem vestram atque meam."
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-ii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i","responsorium","responsorium-ii"],
 		"datum":[["nativitas","matutinum","nocturna-i","responsorium","responsorium-iii"]]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","lectio","lectio-iii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i","lectio","lectio-iii"],
 		"datum":"Nolo autem vos ignoráre fratres: quia sæpe propósui veníre ad vos, (et prohíbitus sum usque adhuc) ut áliquem fructum hábeam et in vobis, sicut et in céteris géntibus: Græcis, ac Bárbaris, sapiéntibus, et insipiéntibus débitor sum ita (quod in me) promptum est et vobis, qui Romæ estis, evangelizáre. Non enim erubésco Evangélium. Virtus enim Dei est in salútem omni credénti, Judǽo primum, et Græco. Justítia enim Dei in eo revelátur ex fide in fidem: sicut scriptum est: Justus autem ex fide vivit. Revelátur enim ira Dei de cœlo super omnem impietátem et injustítiam hóminum eórum, qui veritátem Dei in injustítia détinent: quia quod notum est Dei, maniféstum est in illis. Deus enim illis manifestávit."
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-i","responsorium","responsorium-iii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-i","responsorium","responsorium-iii"],
 		"datum":[["nativitas","matutinum","nocturna-ii","responsorium","responsorium-i"]]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-i"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii","lectio","lectio-i"],
 		"datum":[
 			"Sermo sancti Leónis Papæ.",
 			"[Serm. 9. de Nativ. Dom.]/Excédit quidem, dilectíssimi, multúmque superéminet humáni elóquii facultátem divíni óperis magnitúdo: et inde óritur difficúltas fandi, unde adest rátio non tacéndi. Quia in Christo Jesu Fílio Dei non solum ad divínam esséntiam, sed étiam ad humánam spectat natúram quod dictum est per prophétam: Generatiónem ejus quis enarrábit? Utrámque enim substántiam in unam convenísse persónam, nisi fides credat, sermo non éxplicat. Et ídeo numquam matéria déficit laudis, quia numquam súfficit cópia laudatóris."
 		]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-i"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-i"],
 		"datum":[["nativitas","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-ii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii","lectio","lectio-ii"],
 		"datum":"Gaudeámus ígitur, quod ad eloquéndum tantæ misericórdiæ sacraméntum ímpares sumus: et cum salútis nostræ altitúdinem prómere non valeámus, sentiámus nobis bonum esse, quod víncimur. Nemo enim ad cognitiónem veritátis magis propínquat, quam qui intélligit in rebus divínis, étiam si multum profíciat, semper sibi superésse quod quærat. Nam qui se ad id, in quod tendit, pervenísse præsúmit, non quæsíta réperit, sed in inquisitióne déficit."
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 		"datum":[["nativitas","matutinum","nocturna-ii","responsorium","responsorium-iii"]]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","lectio","lectio-iii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii","lectio","lectio-iii"],
 		"datum":"Ne autem infirmitátis nostræ perturbémur angústiis, evangélicæ nos et prophéticæ ádjuvant voces: quibus ita accéndimur, et docémur ut nos Nativitátem Dómini, qua Verbum caro factum est, non tam prætéritam recólere, quam præséntem videámur inspícere. Quod enim pastóribus pro gregum suórum custódia vigilántibus nuntiávit Ángelus, étiam nostrum implévit audítum: et ídeo Domínicis óvibus prǽsumus, quia verba divínitus édita cordis aure servámus: tamquam et in hodiérna festivitáte dicátur: Evangelízo vobis gaúdium magnum, quod erit omni pópulo, quia natus est vobis hódie Salvátor, qui est Christus Dóminus, in civitáte David."
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"datum":[["nativitas","matutinum","nocturna-iii","responsorium","responsorium-i"]]
 	},
 	{
@@ -538,7 +492,7 @@
 		]
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"],
 		"datum":[["nativitas","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
 	},
 	{
@@ -546,7 +500,7 @@
 		"datum":"Et tuam ipsíus ánimam pertransíbit gládius. Nec líttera, nec história docet, ex hac vita Maríam corporális necis passióne migrásse. Non enim ánima, sed corpus materiáli gládio transverberátur. Et ídeo prudéntiam Maríæ haud ignáram mystérii cœléstis osténdit. Vivum enim verbum Dei, et válidum, et acútius omni gládio acutíssimo, pénetrans usque ad divisiónem ánimæ et spíritus, ártuum quoque et medallárum, cogitatiónes cordis et secréta scrutátur animórum, quia nuda et apérta sunt ómnia Dei Fílio, quem consciéntiæ secréta non fallunt."
 	},
 	{
-		"tags":["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"],
 		"src":"nocturnale/N1F1N3R2",
 		"incipit":"O Regem cœli, cui tália famulántur obséquia: stábulo pónitur, qui cóntinet mundum:",
 		"responsum":"Jacet in præsépio, et in cœlis regnat.",
@@ -566,40 +520,17 @@
 	},
 	{
 		"tags":["nativitas","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2178",
 		"datum":"Puer Jesus * proficiébat ætáte et sapiéntia coram Deo et homínibus."
 	},
 	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-i"],
-		"datum":[["nocturna","tres-psalmi","tres-antiphonae","nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-i"]]
-	},
-	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-ii"],
-		"datum":[["nocturna","tres-psalmi","tres-antiphonae","nativitas","novem-lectiones","dominica-infra-octavam","matutinum","nocturna-ii"]]
-	},
-	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-i"],
-		"datum":[
+		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio"],
+		"lectio-i":[
 			"Léctio sancti Evangélii secúndum Lucam.",
 			"[Luc. 2. b.]/In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum quod factum est, quod Dóminus osténdit nobis. Et venérunt festinántes. Et réliqua.",
 			"Homilía sancti Ambrósii Epíscopi.",
 			"[Lib. 2. in cap. 2. Lucæ, circa med.]/Vides festináre pastóres. Nemo enim cum desídia Christum requírit. Vides pastóres Ángelo credidísse: et tu Patri, Fílio, Spirítui sancto, Ángelis, Prophétis, et Apóstolis crédere non vis? Vide, quam signánter Scriptúra singulórum libret moménta verbórum. Festínant, inquit, Verbum vidére. Étenim cum caro Dómini vidétur, Verbum vidétur, quod est Fílius."
-		]
-	},
-	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"datum":[["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-i"]]
-	},
-	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-ii"],
-		"datum":"Non medíocre fídei tibi hoc videátur exémplum, quod vilis sit persóna pastórum. Certe quo vílior ad prudéntiam, eo pretiósior ad fidem. Non gymnásia choris reférta sapiéntum, sed plebum Dóminus símplicem requisívit, quæ phaleráre audíta, et fucáre nescíret. Simplícitas enim quǽritur, non ambítio desiderátur."
-	},
-	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"datum":[["nativitas","dominica-infra-octavam","matutinum","nocturna-iii","responsorium","responsorium-ii"]]
-	},
-	{
-		"tags":["nativitas","infra-octavam","matutinum","nocturna-iii","lectio","lectio-iii"],
-		"datum":"Nec contemnénda putes quasi vília verba pastórum. A pastóribus enim María fidem cólligit. A pastóribus pópulus ad Dei reveréntiam congregátur. Miráti étiam sunt omnes qui audiérunt, de iis, quæ dicebántur a pastóribus ad ipsos. María autem conservábat ómnia verba hæc, cónferens in corde suo. Discámus sanctæ Vírginis in ómnibus castitátem, quæ non minus ore pudíca, quam córpore, arguménta fídei conferébat in corde."
+		],
+		"lectio-ii":"Non medíocre fídei tibi hoc videátur exémplum, quod vilis sit persóna pastórum. Certe quo vílior ad prudéntiam, eo pretiósior ad fidem. Non gymnásia choris reférta sapiéntum, sed plebum Dóminus símplicem requisívit, quæ phaleráre audíta, et fucáre nescíret. Simplícitas enim quǽritur, non ambítio desiderátur.",
+		"lectio-iii":"Nec contemnénda putes quasi vília verba pastórum. A pastóribus enim María fidem cólligit. A pastóribus pópulus ad Dei reveréntiam congregátur. Miráti étiam sunt omnes qui audiérunt, de iis, quæ dicebántur a pastóribus ad ipsos. María autem conservábat ómnia verba hæc, cónferens in corde suo. Discámus sanctæ Vírginis in ómnibus castitátem, quæ non minus ore pudíca, quam córpore, arguménta fídei conferébat in corde."
 	}
 ]

@@ -12,7 +12,6 @@
 			["joannes-apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
 			["joannes-apostolus","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/2174",
 		"datum":"Iste est Joánnes, * qui supra pectus Dómini in cœna recúbuit: beátus Apóstolus, cui reveláta sunt secréta cœléstia."
 	},
 	{
@@ -128,29 +127,12 @@
 		"datum":"Ergo una bona est, sed adhuc mísera: áltera mélior, et beáta. Ista significáta est per Apóstolum Petrum, illa per Joánnem. Tota hic ágitur ista usque in hujus sǽculi finem, et illic ínvenit finem: différtur illa complénda post hujus sǽculi finem, sed in futúro sǽculo non habet finem. Ídeo dícitur huic: Séquere me. De illo autem: Sic eum volo manére, donec véniam: quid ad te? tu me séquere. Quid enim est hoc? Quantum sápio, quantum cápio, quid est hoc? nisi tu me séquere per imitatiónem perferéndi temporália mala: ille máneat, donec sempitérna vénio redditúrus bona."
 	},
 	{
-		"tags":["joannes-apostolus","antiphona","antiphona-i"],
-		"src":"gregobase/1906",
-		"datum":"Valde honorándus est * beátus Joánnes, qui supra pectus Dómini in cœna recúbuit."
-	},
-	{
-		"tags":["joannes-apostolus","antiphona","antiphona-ii"],
-		"src":"gregobase/2569",
-		"datum":"Hic est discípulus ille, * qui testimónium pérhibet de his: et scimus quia verum est testimónium ejus."
-	},
-	{
-		"tags":["joannes-apostolus","antiphona","antiphona-iii"],
-		"src":"gregobase/2499",
-		"datum":"Hic est discípulus meus: * sic eum volo manére, donec véniam."
-	},
-	{
-		"tags":["joannes-apostolus","antiphona","antiphona-iv"],
-		"src":"gregobase/13076",
-		"datum":"Sunt de hic stántibus, * qui non gustábunt mortem, donec vídeant Fílium hóminis in regno suo."
-	},
-	{
-		"tags":["joannes-apostolus","antiphona","antiphona-v"],
-		"src":"gregobase/2409",
-		"datum":"Ecce puer meus * eléctus, quem elégi, pósui super eum spíritum meum."
+		"tags":["joannes-apostolus","antiphona"],
+		"antiphona-i":"Valde honorándus est * beátus Joánnes, qui supra pectus Dómini in cœna recúbuit.",
+		"antiphona-ii":"Hic est discípulus ille, * qui testimónium pérhibet de his: et scimus quia verum est testimónium ejus.",
+		"antiphona-iii":"Hic est discípulus meus: * sic eum volo manére, donec véniam.",
+		"antiphona-iv":"Sunt de hic stántibus, * qui non gustábunt mortem, donec vídeant Fílium hóminis in regno suo.",
+		"antiphona-v":"Ecce puer meus * eléctus, quem elégi, pósui super eum spíritum meum."
 	},
 	{
 		"tags":["joannes-apostolus","capitulum"],
@@ -170,7 +152,6 @@
 	},
 	{
 		"tags":["joannes-apostolus","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2471",
 		"datum":"Éxiit * sermo inter fratres, quod discípulus ille non móritur; et non dixit Jesus, Non móritur: sed, Sic eum volo manére, donec véniam."
 	},
 	{

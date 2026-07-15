@@ -12,7 +12,6 @@
 			["stephanus","i-vesperae","antiphona","antiphona-magnificat"],
 			["stephanus","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/2825",
 		"datum":"Stéphanus autem * plenus grátia et fortitúdine, faciébat signa magna in pópulo."
 	},
 	{
@@ -22,7 +21,6 @@
 	},
 	{
 		"tags":["stephanus","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/1226I",
 		"datum":"Christum natum, qui beátum hódie coronávit Stéphanum, * Veníte adorémus."
 	},
 	{
@@ -129,29 +127,12 @@
 		"datum":"Álii istum volunt esse Zacharíam, qui occísus est a Joas rege Judæ inter templum et altáre, sicut Regum narrat história. Sed observándum, quod ille Zacharías non sit fílius Barachíæ, sed fílius Joíadæ sacerdótis: unde et Scriptúra refert: Non fuit recordátus Joas patris ejus Joíadæ, quia sibi fecísset bona. Cum ergo et Zacharíam teneámus et occisiónis conséntiat locus: quǽrimus, quare Barachíæ dicátur fílius, et non Joíadæ? Barachía lingua nostra Benedíctus Dómini dícitur, et sacerdótis Joíadæ justítia Hebrǽo nómine demonstrátur. In Evangélio, quo utúntur Nazaréni, pro fílio Barachíæ, fílium Joíadæ reperímus scriptum."
 	},
 	{
-		"tags":["stephanus","antiphona","antiphona-i"],
-		"src":"gregobase/1972",
-		"datum":"Lapidavérunt Stéphanum, * et ipse invocábat Dóminum, dicens: Ne státuas illis hoc peccátum."
-	},
-	{
-		"tags":["stephanus","antiphona","antiphona-ii"],
-		"src":"gregobase/2160",
-		"datum":"Lápides torréntis * illi dulces fuérunt: ipsum sequúntur omnes ánimæ justæ."
-	},
-	{
-		"tags":["stephanus","antiphona","antiphona-iii"],
-		"src":"gregobase/2787",
-		"datum":"Adhǽsit ánima mea * post te, quia caro mea lapidáta est pro te, Deus meus."
-	},
-	{
-		"tags":["stephanus","antiphona","antiphona-iv"],
-		"src":"gregobase/2373",
-		"datum":"Stéphanus vidit * cœlos apértos, vidit, et introívit: beátus homo cui cœli patébant."
-	},
-	{
-		"tags":["stephanus","antiphona","antiphona-v"],
-		"src":"gregobase/2048",
-		"datum":"Ecce vídeo * cœlos apértos, et Jesum stantem a dextris virtútis Dei."
+		"tags":["stephanus","antiphona"],
+		"antiphona-i":"Lapidavérunt Stéphanum, * et ipse invocábat Dóminum, dicens: Ne státuas illis hoc peccátum.",
+		"antiphona-ii":"Lápides torréntis * illi dulces fuérunt: ipsum sequúntur omnes ánimæ justæ.",
+		"antiphona-iii":"Adhǽsit ánima mea * post te, quia caro mea lapidáta est pro te, Deus meus.",
+		"antiphona-iv":"Stéphanus vidit * cœlos apértos, vidit, et introívit: beátus homo cui cœli patébant.",
+		"antiphona-v":"Ecce vídeo * cœlos apértos, et Jesum stantem a dextris virtútis Dei."
 	},
 	{
 		"tags":["stephanus","capitulum"],
@@ -178,7 +159,6 @@
 	},
 	{
 		"tags":["stephanus","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1962",
 		"datum":"Sepeliérunt Stéphanum * viri timoráti, et fecérunt planctum magnum super eum."
 	},
 	{
