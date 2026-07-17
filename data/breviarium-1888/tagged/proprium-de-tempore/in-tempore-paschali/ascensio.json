@@ -8,33 +8,19 @@
 		"datum":"Ascensionis Domini"
 	},
 	{
-		"tags":["ascensio","antiphona","antiphona-i"],
-		"src":"gregobase/1888",
-		"datum":"Viri Galilǽi, * quid aspícitis in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, sic véniet, allelúja."
+		"tags":["ascensio","antiphona"],
+		"antiphona-i":"Viri Galilǽi, * quid aspícitis in cœlum? Hic Jesus, qui assúmptus est a vobis in cœlum, sic véniet, allelúja."
 	},
 	{
 		"tags":["ascensio","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
-		"tags":["ascensio","antiphona","antiphona-ii"],
-		"src":"gregobase/2651",
-		"datum":"Cumque intueréntur * in cœlum eúntem illum, dixérunt, allelúja."
-	},
-	{
-		"tags":["ascensio","antiphona","antiphona-iii"],
-		"src":"gregobase/1971",
-		"datum":"Elevátis mánibus * benedíxit eis, et ferebátur in cœlum, allelúja."
-	},
-	{
-		"tags":["ascensio","antiphona","antiphona-iv"],
-		"src":"gregobase/2072",
-		"datum":"Exaltáte Regem regum, * et hymnum dícite Deo, allelúja."
-	},
-	{
-		"tags":["ascensio","antiphona","antiphona-v"],
-		"src":"gregobase/2362",
-		"datum":"Vidéntibus illis * elevátus est, et nubes suscépit eum in cœlo, allelúja."
+		"tags":["ascensio","antiphona"],
+		"antiphona-ii":"Cumque intueréntur * in cœlum eúntem illum, dixérunt, allelúja.",
+		"antiphona-iii":"Elevátis mánibus * benedíxit eis, et ferebátur in cœlum, allelúja.",
+		"antiphona-iv":"Exaltáte Regem regum, * et hymnum dícite Deo, allelúja.",
+		"antiphona-v":"Vidéntibus illis * elevátus est, et nubes suscépit eum in cœlo, allelúja."
 	},
 	{
 		"tags":["ascensio","capitulum"],
@@ -64,7 +50,6 @@
 	},
 	{
 		"tags":["ascensio","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2941",
 		"datum":"Pater, * manifestávi nomen tuum homínibus quos dedísti mihi: nunc autem pro eis rogo, non pro mundo, quia ad te vénio, allelúja."
 	},
 	{
@@ -74,7 +59,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/P5F5I",
 		"datum":"Allelúja, Christum Dóminum ascendéntem in cœlum, * Veníte adorémus, allelúja."
 	},
 	{
@@ -92,7 +76,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/P5F5N1A1",
 		"datum":"Eleváta est * magnificéntia tua super cœlos Deus, allelúja."
 	},
 	{
@@ -101,7 +84,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/P5F5N1A2",
 		"datum":"Dóminus in templo * sancto suo, Dóminus in cœlo, allelúja."
 	},
 	{
@@ -110,7 +92,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/P5F5N1A3",
 		"datum":"A summo cœlo * egréssio ejus, et occúrsus ejus usque ad summum ejus, allelúja."
 	},
 	{
@@ -152,7 +133,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/P5F5N2A1",
 		"datum":"Exaltáre Dómine * in virtúte tua: cantábimus, et psallémus, allelúja."
 	},
 	{
@@ -161,7 +141,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/P5F5N2A2",
 		"datum":"Exaltábo te * Dómine, quóniam suscepísti me, allelúja."
 	},
 	{
@@ -170,7 +149,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/P5F5N2A3",
 		"datum":"Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ, allelúja."
 	},
 	{
@@ -219,7 +197,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/P5F5N3A1",
 		"datum":"Nimis exaltátus est, * allelúja: super omnes deos, allelúja."
 	},
 	{
@@ -228,7 +205,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/P5F5N3A2",
 		"datum":"Dóminus in Sion, * allelúja: magnus et excélsus, allelúja."
 	},
 	{
@@ -237,7 +213,6 @@
 	},
 	{
 		"tags":["ascensio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/P5F5N3A3",
 		"datum":"Dóminus in cœlo, * allelúja: parávit sedem suam, allelúja."
 	},
 	{
@@ -291,7 +266,6 @@
 	},
 	{
 		"tags":["ascensio","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13029",
 		"datum":"Ascéndo ad Patrem meum, * et Patrem vestrum: Deum meum, et Deum vestrum, allelúja."
 	},
 	{
@@ -322,7 +296,6 @@
 	},
 	{
 		"tags":["ascensio","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1916",
 		"datum":"O Rex glóriæ, * Dómine virtútum, qui triumphátor hódie super omnes cœlos ascendísti, ne derelínquas nos órphanos: sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja."
 	},
 	{
@@ -408,7 +381,6 @@
 			["ascensio","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
 			["ascensio","post-ascensionem","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/1850",
 		"datum":"Cum vénerit Paráclitus, * quem ego mittam vobis Spíritum veritátis, qui a Patre procédit, ille testimónium perhibébit de me, allelúja."
 	},
 	{
@@ -479,7 +451,6 @@
 			["ascensio","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
 			["ascensio","post-ascensionem","ii-vesperae","antiphona","antiphona-magnificat"]
 		],
-		"src":"gregobase/1981",
 		"datum":"Hæc locútus sum * vobis, ut cum vénerit hora eórum, reminiscámini quia ego dixi vobis, allelúja."
 	},
 	{
