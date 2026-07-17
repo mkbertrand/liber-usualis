@@ -125,6 +125,7 @@
 		},
 		{
 			"include":["infra-octavam","i-vesperae"],
+      "exclude":[["corpus-christi","dominica-infra-octavam"]],
 			"recheck":false,
 			"response":"dele"
 		},

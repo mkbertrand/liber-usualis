@@ -232,10 +232,10 @@ def rite():
             rite['datum'] = copy.deepcopy(rite['datum'])
             traverse(rite['datum'])
         
-        def get_chant(tags):
+        def get_chant(tagset):
             chant_context =  datamanage.LiturgicalContext([datamanage.LiturgicalBook(datamanage.data_root.joinpath('data-chant/gregobase'), 'gregobase')])
             warnings.simplefilter('ignore')
-            return breviarium.search(DEFAULT_CONTEXT, tags, chant_context.getpile(primary | set(hours) | tags | breviarium.defaultpile))
+            return breviarium.search(DEFAULT_CONTEXT, tagset, chant_context.getpile(primary | set(hours) | flattensetlist(tags) | tagset | breviarium.defaultpile))
 
         def traverse_chant(obj):
             if type(obj) is dict and 'quaesitum' in obj:

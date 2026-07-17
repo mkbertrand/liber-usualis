@@ -4,33 +4,19 @@
 		"datum":"In Festo Ss. Trinitatis"
 	},
 	{
-		"tags":["trinitas","antiphona","antiphona-i"],
-		"src":"gregobase/2284",
-		"datum":"Glória tibi Trínitas * æquális, una Déitas, et ante ómnia sǽcula, et nunc et in perpétuum."
+		"tags":["trinitas","antiphona"],
+		"antiphona-i":"Glória tibi Trínitas * æquális, una Déitas, et ante ómnia sǽcula, et nunc et in perpétuum."
 	},
 	{
 		"tags":["trinitas","i-vesperae","psalmus"],
 		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
 	},
 	{
-		"tags":["trinitas","antiphona","antiphona-ii"],
-		"src":"gregobase/2475",
-		"datum":"Laus et perénnis glória * Deo Patri, et Fílio, sancto simul Paráclito, in sæculórum sǽcula."
-	},
-	{
-		"tags":["trinitas","antiphona","antiphona-iii"],
-		"src":"gregobase/2434",
-		"datum":"Glória laudis * résonet in ore ómnium, Patri, genitǽque Proli, Spirítui sancto páriter resúltet laude perénni."
-	},
-	{
-		"tags":["trinitas","antiphona","antiphona-iv"],
-		"src":"gregobase/2296",
-		"datum":"Laus Deo Patri, * parilíque Proli, et tibi sancte stúdio perénni Spíritus, nostro résonat ab ore, omne per ævum."
-	},
-	{
-		"tags":["trinitas","antiphona","antiphona-v"],
-		"src":"gregobase/2650",
-		"datum":"Ex quo ómnia, * per quem ómnia, in quo ómnia: ipsi glória in sǽcula."
+		"tags":["trinitas","antiphona"],
+		"antiphona-ii":"Laus et perénnis glória * Deo Patri, et Fílio, sancto simul Paráclito, in sæculórum sǽcula.",
+		"antiphona-iii":"Glória laudis * résonet in ore ómnium, Patri, genitǽque Proli, Spirítui sancto páriter resúltet laude perénni.",
+		"antiphona-iv":"Laus Deo Patri, * parilíque Proli, et tibi sancte stúdio perénni Spíritus, nostro résonat ab ore, omne per ævum.",
+		"antiphona-v":"Ex quo ómnia, * per quem ómnia, in quo ómnia: ipsi glória in sǽcula."
 	},
 	{
 		"tags":["trinitas","capitulum"],
@@ -50,7 +36,6 @@
 	},
 	{
 		"tags":["trinitas","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2935",
 		"datum":"Grátias * tibi Deus, grátias tibi vera et una Trínitas, una et summa Déitas, sancta et una Únitas."
 	},
 	{
@@ -60,7 +45,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/H1I",
 		"datum":"Deum verum, unum in Trinitáte, et Trinitátem in Unitáte, * Venite adorémus."
 	},
 	{
@@ -73,7 +57,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/H1N1A1",
 		"datum":"Adésto unus Deus * omnípotens, Pater, Fílius, et Spíritus sanctus."
 	},
 	{
@@ -82,7 +65,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/H1N1A2",
 		"datum":"Te unum * in substántia, Trinitátem in persónis confitémur."
 	},
 	{
@@ -91,7 +73,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/H1N1A3",
 		"datum":"Te semper * idem esse, vívere, et intellígere, profitémur."
 	},
 	{
@@ -136,7 +117,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/H1N2A1",
 		"datum":"Te invocámus, * te laudámus, te adorémus, o beáta Trínitas."
 	},
 	{
@@ -145,7 +125,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/H1N2A2",
 		"datum":"Spes nostra, * salus nostra, honor noster, o beata Trínitas."
 	},
 	{
@@ -154,7 +133,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/H1N2A3",
 		"datum":"Líbera nos, * salva nos, vivífica nos, o beáta Trínitas."
 	},
 	{
@@ -199,7 +177,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/H1N3A1",
 		"datum":"Cáritas Pater est, * grátia Fílius, communicátio Spíritus sanctus, o beáta Trínitas."
 	},
 	{
@@ -208,7 +185,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/H1N3A2",
 		"datum":"Verax est Pater, * véritas Fílius, véritas Spíritus sanctus, o beáta Trínitas."
 	},
 	{
@@ -217,7 +193,6 @@
 	},
 	{
 		"tags":["trinitas","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/H1N3A3",
 		"datum":"Pater, * et Fílius, et Spíritus sanctus una substántia est, o beáta Trínitas."
 	},
 	{
@@ -259,7 +234,6 @@
 	},
 	{
 		"tags":["trinitas","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/19972",
 		"datum":"Benedícta sit sancta, * creátrix et gubernátrix ómnium, sancta et indivídua Trínitas, nunc et semper, et per infínita sǽcula sæculórum."
 	},
 	{
@@ -324,7 +298,6 @@
 	},
 	{
 		"tags":["trinitas","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2759",
 		"datum":"Te Deum * Patrem ingénitum, te Fílium unigénitum, te Spíritum sanctum Paráclitum, sanctam et indivíduam Trinitátem, toto corde et ore confitémur, laudámus, atque benedícimus: tibi glória in sǽcula."
 	}
 ]

@@ -1,4 +1,4 @@
-// Copyright 2024-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+// Copyright 2023-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 // Additional credit to Benjamin Bloomfield as this file is a modification of his original (except for chomp())
 
 euouaes = {
@@ -55,7 +55,7 @@ function chomp(gabc, tags) {
 	}
 
 	// Remove commented text falling before content
-	gabc = gabc.substring(gabc.search(/\([cf]\d\)/));
+	gabc = gabc.substring(gabc.search(/\n\((.+?)\)/));
 	gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>')
 		.replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>')
 		.replaceAll(/<.?sc>/g, '')
@@ -113,7 +113,7 @@ function chomp(gabc, tags) {
 			gabcdata = '%%\n';
 			firstsyllable = gabc.match(/[\wáǽœÆŒéíóúý]+\(/)[0];
 			gabc = gabc.replace(firstsyllable, firstsyllable.charAt(0).toUpperCase() + firstsyllable.slice(1).toLowerCase());
-		} else if (!(tags.includes('formula-commemorationis') || tags.includes('suffragium'))) {
+		} else if (!(tags.includes('commemoratio') || tags.includes('suffragium'))) {
 			gabc = gabc + euouae;
 		}
 		
@@ -212,6 +212,7 @@ class ChantElement extends HTMLElement {
         .then(grabError)
         .catch(err => this.innerText = '')
 				.then(data => data.text())
+        .catch(console.log)
 				.then(resp => chomp(resp, $(this).attr('tags')))
 				.then(text => {this.setGabc(text); this.init();});
 		}
