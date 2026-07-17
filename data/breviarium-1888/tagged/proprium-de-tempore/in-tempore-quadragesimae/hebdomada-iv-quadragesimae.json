@@ -9,7 +9,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","dominica","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2786",
 		"datum":"Nemo te condemnávit múlier? * nemo Dómine: nec ego te condemnábo: jam ámplius noli peccáre."
 	},
 	{
@@ -150,58 +149,27 @@
 		"versus":"Apériam in parábolis os meum: loquar propositiónes ab inítio sǽculi."
 	},
 	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-i"],
-		"src":"gregobase/13341",
-		"datum":"Tunc acceptábis * sacrifícium justítiæ, si avérteris fáciem tuam a peccátis meis."
+		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona"],
+		"antiphona-i":"Tunc acceptábis * sacrifícium justítiæ, si avérteris fáciem tuam a peccátis meis.",
+		"antiphona-ii":"Bonum est * speráre in Dómino, quam speráre in princípibus.",
+		"antiphona-iii":"Benedícat nos Deus, * Deus noster, benedícat nos Deus.",
+		"antiphona-iv":"Potens es Dómine * erípere nos de manu forti: líbera nos Deus noster.",
+		"antiphona-v":"Reges terræ * et omnes pópuli laudáte Deum.",
+		"antiphona-benedictus":"Cum sublevásset óculos * Jesus, et vidísset máximam multitúdinem veniéntem ad se, dixit ad Philíppum: Unde emémus panes, ut mandúcent hi? hoc autem dicébat tentans eum: ipse enim sciébat quid esset factúrus."
 	},
 	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-ii"],
-		"src":"gregobase/13252",
-		"datum":"Bonum est * speráre in Dómino, quam speráre in princípibus."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-iii"],
-		"src":"gregobase/20206",
-		"datum":"Benedícat nos Deus, * Deus noster, benedícat nos Deus."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/12880",
-		"datum":"Potens es Dómine * erípere nos de manu forti: líbera nos Deus noster."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-v"],
-		"src":"gregobase/13024",
-		"datum":"Reges terræ * et omnes pópuli laudáte Deum."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2754",
-		"datum":"Cum sublevásset óculos * Jesus, et vidísset máximam multitúdinem veniéntem ad se, dixit ad Philíppum: Unde emémus panes, ut mandúcent hi? hoc autem dicébat tentans eum: ipse enim sciébat quid esset factúrus."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","prima","antiphona"],
-		"src":"gregobase/2049",
-		"datum":"Accépit ergo * Jesus panes, et cum grátias egísset, distríbuit discumbéntibus."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","tertia","antiphona"],
-		"src":"gregobase/2470",
-		"datum":"De quinque pánibus * et duóbus píscibus satiávit Dóminus quinque míllia hóminum."
-	},
-	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","sexta","antiphona"],
-		"src":"gregobase/2619",
-		"datum":"Satiávit Dóminus * quinque míllia hóminum de quinque pánibus et duóbus píscibus."
+		"tags":["hebdomada-iv-quadragesimae","dominica","antiphona"],
+		"prima":"Accépit ergo * Jesus panes, et cum grátias egísset, distríbuit discumbéntibus.",
+		"tertia":"De quinque pánibus * et duóbus píscibus satiávit Dóminus quinque míllia hóminum.",
+		"sexta":"Satiávit Dóminus * quinque míllia hóminum de quinque pánibus et duóbus píscibus."
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","dominica","sexta","capitulum"],
 		"datum":"[Galat. 4. d.]/Lætáre stérilis quæ non paris: + erúmpe et clama quæ non párturis: * quia multi fílii desértæ, magis quam ejus quæ habet virum."
 	},
 	{
-		"tags":["hebdomada-iv-quadragesimae","dominica","nona","antiphona"],
-		"src":"gregobase/1939",
-		"datum":"Illi ergo * hómines cum vidíssent quod fécerat Jesus signum, intra se dicébant: quia hic est vere Prophéta, qui ventúrus est in mundum."
+		"tags":["hebdomada-iv-quadragesimae","dominica","antiphona"],
+		"nona":"Illi ergo * hómines cum vidíssent quod fécerat Jesus signum, intra se dicébant: quia hic est vere Prophéta, qui ventúrus est in mundum."
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","dominica","nona","capitulum"],
@@ -209,7 +177,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2196",
 		"datum":"Súbiit ergo * in montem Jesus, et ibi sedébat cum discípulis suis."
 	},
 	{
@@ -253,7 +220,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/1863",
 		"datum":"Auférte ista hinc, * dicit Dóminus: et nolíte fácere domum Patris mei domum negotiatiónis."
 	},
 	{
@@ -263,7 +229,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2093",
 		"datum":"Sólvite templum hoc, * dicit Dóminus; et post tríduum reædificábo illud: hoc autem dicébat de templo córporis sui."
 	},
 	{
@@ -302,7 +267,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2729",
 		"datum":"Quid me quǽritis * interfícere, hóminem qui vera locútus sum vobis?"
 	},
 	{
@@ -312,7 +276,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2323",
 		"datum":"Nemo in eum misit manum: * quia nondum vénerat hora ejus."
 	},
 	{
@@ -333,7 +296,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-iv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2541",
 		"datum":"Rabbi, quid peccávit * homo iste, quod cæcus natus est? Respóndit Jesus, et dixit: Neque hic peccávit, neque paréntes ejus: sed ut manifesténtur ópera Dei in illo."
 	},
 	{
@@ -343,7 +305,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2601",
 		"datum":"Ille homo * qui dícitur Jesus, lutum fecit ex sputo, et linívit óculos meos, et modo vídeo."
 	},
 	{
@@ -364,7 +325,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-v","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2859",
 		"datum":"Ibat Jesus * in civitátem, quæ vocátur Naïm: et ecce defúnctus efferebátur fílius únicus matris suæ."
 	},
 	{
@@ -374,7 +334,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-v","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2773",
 		"datum":"Prophéta magnus * surréxit in nobis, et quia Deus visitávit plebem suam."
 	},
 	{
@@ -395,7 +354,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-vi","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12696",
 		"datum":"Lázarus amícus noster * dormit: eámus, et a somno excitémus eum."
 	},
 	{
@@ -405,7 +363,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","feria-vi","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/19817",
 		"datum":"Dómine, * si fuísses hic, Lázarus non esset mórtuus: ecce jam fœtet quatriduánus in monuménto."
 	},
 	{
@@ -426,7 +383,6 @@
 	},
 	{
 		"tags":["hebdomada-iv-quadragesimae","sabbatum","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2865",
 		"datum":"Qui séquitur me, * non ámbulat in ténebris: sed habébit lumen vitæ, dicit Dóminus."
 	},
 	{

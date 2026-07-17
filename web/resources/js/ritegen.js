@@ -348,7 +348,7 @@ function renderRite(data, options) {
 					return;
         }
 
-				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag)))) {
+				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
 					openDiv('', 'gabc-chant-container');
 					openDiv('', 'gabc-chant');
           let cantusUnpack = unpack(data.cantus);

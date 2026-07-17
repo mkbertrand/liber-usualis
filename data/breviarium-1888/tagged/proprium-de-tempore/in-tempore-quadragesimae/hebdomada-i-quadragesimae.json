@@ -9,7 +9,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2119",
 		"datum":"Tunc invocábis, * et Dóminus exaúdiet: clamábis, et dicet: Ecce adsum."
 	},
 	{
@@ -150,58 +149,27 @@
 		"versus":"Super áspidem et basilíscum ambulábis, et conculcábis leónem et dracónem."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-i"],
-		"src":"gregobase/11969",
-		"datum":"Cor mundum * crea in me Deus, et spíritum rectum ínnova in viscéribus meis."
+		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona"],
+		"antiphona-i":"Cor mundum * crea in me Deus, et spíritum rectum ínnova in viscéribus meis.",
+		"antiphona-ii":"O Dómine * salvum me fac: o Dómine bene prosperáre.",
+		"antiphona-iii":"Sic benedícam * te in vita mea Dómine: et in nómine tuo levábo manus meas.",
+		"antiphona-iv":"In spíritu * humilitátis, et in ánimo contríto suscipiámur Dómine a te: et sic fiat sacrifícium nostrum, ut a te suscipiátur hódie, et pláceat tibi Dómine Deus.",
+		"antiphona-v":"Laudáte Deum * cœli cœlórum, et aquæ omnes.",
+		"antiphona-benedictus":"Ductus est Jesus * in desértum a Spíritu, ut tentarétur a diábolo: et cum jejunásset quadragínta diébus, et quadragínta nóctibus, póstea esúriit."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-ii"],
-		"src":"gregobase/12188",
-		"datum":"O Dómine * salvum me fac: o Dómine bene prosperáre."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-iii"],
-		"src":"gregobase/12001",
-		"datum":"Sic benedícam * te in vita mea Dómine: et in nómine tuo levábo manus meas."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/11966",
-		"datum":"In spíritu * humilitátis, et in ánimo contríto suscipiámur Dómine a te: et sic fiat sacrifícium nostrum, ut a te suscipiátur hódie, et pláceat tibi Dómine Deus."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-v"],
-		"src":"gregobase/11734",
-		"datum":"Laudáte Deum * cœli cœlórum, et aquæ omnes."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11900",
-		"datum":"Ductus est Jesus * in desértum a Spíritu, ut tentarétur a diábolo: et cum jejunásset quadragínta diébus, et quadragínta nóctibus, póstea esúriit."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","prima","antiphona"],
-		"src":"gregobase/2549",
-		"datum":"Jesus autem * cum jejunásset quadragínta diébus et quadragínta nóctibus, póstea esúriit."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","tertia","antiphona"],
-		"src":"gregobase/2506",
-		"datum":"Tunc assúmpsit * eum diábolus in sanctam civitátem, et státuit eum supra pinnáculum templi, et dixit ei: Si Fílius Dei es, mitte te deórsum."
-	},
-	{
-		"tags":["hebdomada-i-quadragesimae","dominica","sexta","antiphona"],
-		"src":"gregobase/2573",
-		"datum":"Non in solo pane * vivit homo, sed in omni verbo, quod procédit de ore Dei."
+		"tags":["hebdomada-i-quadragesimae","dominica","antiphona"],
+		"prima":"Jesus autem * cum jejunásset quadragínta diébus et quadragínta nóctibus, póstea esúriit.",
+		"tertia":"Tunc assúmpsit * eum diábolus in sanctam civitátem, et státuit eum supra pinnáculum templi, et dixit ei: Si Fílius Dei es, mitte te deórsum.",
+		"sexta":"Non in solo pane * vivit homo, sed in omni verbo, quod procédit de ore Dei."
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","sexta","capitulum"],
 		"datum":"[II. Cor. 6.]/Ecce nunc tempus acceptábile, ecce nunc dies salútis: + némini dantes ullam offensiónem, * ut non vituperétur ministérium nostrum."
 	},
 	{
-		"tags":["hebdomada-i-quadragesimae","dominica","nona","antiphona"],
-		"src":"gregobase/2799",
-		"datum":"Dóminum Deum tuum * adorábis, et illi soli sérvies."
+		"tags":["hebdomada-i-quadragesimae","dominica","antiphona"],
+		"nona":"Dóminum Deum tuum * adorábis, et illi soli sérvies."
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","nona","capitulum"],
@@ -209,7 +177,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2399",
 		"datum":"Ecce nunc tempus * acceptábile, ecce nunc dies salútis: in his ergo diébus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia, in jejúniis, in vigíliis, et in caritáte non ficta."
 	},
 	{
@@ -229,7 +196,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-ii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/11877",
 		"datum":"Veníte benedícti * Patris mei, percípite regnum, quod vobis parátum est ab orígine mundi."
 	},
 	{
@@ -239,7 +205,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/11778",
 		"datum":"Quod uni * ex mínimis meis fecístis, mihi fecístis, dicit Dóminus."
 	},
 	{
@@ -260,7 +225,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13318",
 		"datum":"Intrávit Jesus * in templum Dei, et ejiciébat omnes vendéntes et eméntes: et mensas nummulariórum, et cáthedras vendéntium colúmbas evértit."
 	},
 	{
@@ -270,7 +234,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2624",
 		"datum":"Scriptum est enim, * quia domus mea, domus oratiónis est cunctis géntibus: vos autem fecístis illam spelúncam latrónum: et erat quotídie docens in templo."
 	},
 	{
@@ -306,7 +269,6 @@
 	},
 	{
 		"tags":["quatuor-tempora-quadragesimae","feria-iv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12492",
 		"datum":"Generátio * hæc prava et pervérsa signum quærit: et signum non dábitur ei, nisi signum Jonæ prophétæ."
 	},
 	{
@@ -316,7 +278,6 @@
 	},
 	{
 		"tags":["quatuor-tempora-quadragesimae","feria-iv","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/12734",
 		"datum":"Sicut fuit Jonas * in ventre ceti tribus diébus et tribus nóctibus, ita erit Fílius hóminis in corde terræ."
 	},
 	{
@@ -346,7 +307,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-v","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12575",
 		"datum":"Egréssus Jesus * secéssit in partes Tyri et Sidónis: et ecce múlier Chananǽa a fínibus illis egréssa, clamábat dicens: Miserére mei, fili David."
 	},
 	{
@@ -356,7 +316,6 @@
 	},
 	{
 		"tags":["hebdomada-i-quadragesimae","feria-v","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2385",
 		"datum":"O múlier, * magna est fides tua: fiat tibi sicut petísti."
 	},
 	{
@@ -377,7 +336,6 @@
 	},
 	{
 		"tags":["quatuor-tempora-quadragesimae","feria-vi","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2045",
 		"datum":"Ángelus Dómini * descendébat de cœlo, et movebátur aqua, et sanabátur unus."
 	},
 	{
@@ -387,7 +345,6 @@
 	},
 	{
 		"tags":["quatuor-tempora-quadragesimae","feria-vi","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2543",
 		"datum":"Qui me sanum fecit, * ille mihi præcépit: Tolle grabátum tuum, et ámbula in pace."
 	},
 	{
