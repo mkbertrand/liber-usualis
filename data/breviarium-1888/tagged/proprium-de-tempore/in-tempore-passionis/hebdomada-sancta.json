@@ -9,7 +9,6 @@
 	},
 	{
 		"tags":["dominica-in-palmis","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2291",
 		"datum":"Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti."
 	},
 	{
@@ -119,58 +118,27 @@
 		"versus":"Quóniam tribulátio próxima est, et non est qui ádjuvet."
 	},
 	{
-		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-i"],
-		"src":"gregobase/12358",
-		"datum":"Dóminus Deus * auxiliátor meus: et ídeo non sum confúsus."
+		"tags":["dominica-in-palmis","laudes","antiphona"],
+		"antiphona-i":"Dóminus Deus * auxiliátor meus: et ídeo non sum confúsus.",
+		"antiphona-ii":"Circumdántes * circumdedérunt me: et in nómine Dómini vindicábor in eis.",
+		"antiphona-iii":"Júdica causam meam: * defénde, quia potens es Dómine.",
+		"antiphona-iv":"Cum Ángelis * et púeris fidéles inveniámur, triumphatóri mortis clamántes: Hosánna in excélsis.",
+		"antiphona-v":"Confundántur * qui me persequúntur, et non confúndar ego, Dómine Deus meus.",
+		"antiphona-benedictus":"Turba multa, * quæ convénerat ad diem festum, clamábat Dómino: Benedíctus qui venit in nómine Dómini, Hosánna in excélsis."
 	},
 	{
-		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-ii"],
-		"src":"gregobase/13342",
-		"datum":"Circumdántes * circumdedérunt me: et in nómine Dómini vindicábor in eis."
-	},
-	{
-		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-iii"],
-		"src":"gregobase/12704",
-		"datum":"Júdica causam meam: * defénde, quia potens es Dómine."
-	},
-	{
-		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/12829",
-		"datum":"Cum Ángelis * et púeris fidéles inveniámur, triumphatóri mortis clamántes: Hosánna in excélsis."
-	},
-	{
-		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-v"],
-		"src":"gregobase/12328",
-		"datum":"Confundántur * qui me persequúntur, et non confúndar ego, Dómine Deus meus."
-	},
-	{
-		"tags":["dominica-in-palmis","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13225",
-		"datum":"Turba multa, * quæ convénerat ad diem festum, clamábat Dómino: Benedíctus qui venit in nómine Dómini, Hosánna in excélsis."
-	},
-	{
-		"tags":["dominica-in-palmis","prima","antiphona"],
-		"src":"gregobase/20209",
-		"datum":"Púeri Hebræórum * tolléntes ramos olivárum, obviavérunt Dómino clamántes et dicéntes: Hosánna in excélsis."
-	},
-	{
-		"tags":["dominica-in-palmis","tertia","antiphona"],
-		"src":"gregobase/12140",
-		"datum":"Púeri Hebræórum * vestiménta prosternébant in via, et clamábant dicéntes: Hosánna Fílio David: benedíctus qui venit in nómine Dómini."
-	},
-	{
-		"tags":["dominica-in-palmis","sexta","antiphona"],
-		"src":"gregobase/2099",
-		"datum":"Tibi revelávi * causam meam, defénsor vitæ meæ, Dómine Deus meus."
+		"tags":["dominica-in-palmis","antiphona"],
+		"prima":"Púeri Hebræórum * tolléntes ramos olivárum, obviavérunt Dómino clamántes et dicéntes: Hosánna in excélsis.",
+		"tertia":"Púeri Hebræórum * vestiménta prosternébant in via, et clamábant dicéntes: Hosánna Fílio David: benedíctus qui venit in nómine Dómini.",
+		"sexta":"Tibi revelávi * causam meam, defénsor vitæ meæ, Dómine Deus meus."
 	},
 	{
 		"tags":["dominica-in-palmis","sexta","capitulum"],
 		"datum":"[Philipp. 2.]/Humiliávit semetípsum factus obédiens usque ad mortem, mortem autem crucis. + Propter quod et Deus exaltávit illum, * et donávit illi nomen, quod est super omne nomen."
 	},
 	{
-		"tags":["dominica-in-palmis","nona","antiphona"],
-		"src":"gregobase/2439",
-		"datum":"Invocábo * nomen tuum Dómine: ne avértas fáciem tuam a clamóre meo."
+		"tags":["dominica-in-palmis","antiphona"],
+		"nona":"Invocábo * nomen tuum Dómine: ne avértas fáciem tuam a clamóre meo."
 	},
 	{
 		"tags":["dominica-in-palmis","nona","capitulum"],
@@ -178,7 +146,6 @@
 	},
 	{
 		"tags":["dominica-in-palmis","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2162",
 		"datum":"Scriptum est enim: * Percútiam pastórem, et dispergéntur oves gregis: postquam autem resurréxero, præcédam vos in Galilǽam: ibi me vidébitis, dicit Dóminus."
 	},
 	{
@@ -229,7 +196,6 @@
 			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-i"],
 			["hebdomada-sancta","feria-ii","prima","antiphona","antiphona-i"]
 		],
-		"src":"gregobase/17741",
 		"datum":"Fáciem meam * non avérti ab increpántibus, et conspuéntibus in me."
 	},
 	{
@@ -237,7 +203,6 @@
 			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-ii"],
 			["hebdomada-sancta","feria-ii","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"gregobase/12266",
 		"datum":"Frámea suscitáre * advérsus eos, qui dispérgunt gregem meum."
 	},
 	{
@@ -245,12 +210,10 @@
 			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-iii"],
 			["hebdomada-sancta","feria-ii","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"gregobase/12202",
 		"datum":"Appendérunt * mercédem meam trigínta argénteis: quibus appretiátus sum ab eis."
 	},
 	{
 		"tags":["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/12730",
 		"datum":"Inundavérunt aquæ * super caput meum: dixi, Périi: invocábo nomen tuum Dómine Deus."
 	},
 	{
@@ -258,7 +221,6 @@
 			["hebdomada-sancta","feria-ii","laudes","antiphona","antiphona-v"],
 			["hebdomada-sancta","feria-ii","nona","antiphona","antiphona-v"]
 		],
-		"src":"gregobase/12587",
 		"datum":"Lábia insurgéntium, * et cogitatiónes eórum vide Dómine."
 	},
 	{
@@ -272,7 +234,6 @@
 	},
 	{
 		"tags":["hebdomada-sancta","feria-ii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/13330",
 		"datum":"Non habéres * in me potestátem, nisi désuper tibi datum fuísset."
 	},
 	{
@@ -322,7 +283,6 @@
 			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-i"],
 			["hebdomada-sancta","feria-iii","prima","antiphona","antiphona-i"]
 		],
-		"src":"gregobase/12528",
 		"datum":"Vide Dómine, * et consídera, quóniam tríbulor: velóciter exaúdi me."
 	},
 	{
@@ -330,7 +290,6 @@
 			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-ii"],
 			["hebdomada-sancta","feria-iii","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"gregobase/12961",
 		"datum":"Discérne causam meam * Dómine: ab hómine iníquo et dolóso éripe me."
 	},
 	{
@@ -338,12 +297,10 @@
 			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-iii"],
 			["hebdomada-sancta","feria-iii","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"gregobase/11893",
 		"datum":"Dum tribulárer * clamávi ad Dóminum de ventre ínferi, et exaudívit me."
 	},
 	{
 		"tags":["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/12815",
 		"datum":"Dómine vim pátior, * respónde pro me: quia néscio quid dicam inimícis meis."
 	},
 	{
@@ -351,12 +308,10 @@
 			["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-v"],
 			["hebdomada-sancta","feria-iii","nona","antiphona","antiphona-v"]
 		],
-		"src":"gregobase/12943",
 		"datum":"Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris."
 	},
 	{
 		"tags":["hebdomada-sancta","feria-iii","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13168",
 		"datum":"Ante diem festum * Paschæ, sciens Jesus quia venit hora ejus, cum dilexísset suos, in finem diléxit eos."
 	},
 	{
@@ -366,7 +321,6 @@
 	},
 	{
 		"tags":["hebdomada-sancta","feria-iii","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/12169",
 		"datum":"Potestátem hábeo * ponéndi ánimam meam, et íterum suméndi eam."
 	},
 	{
@@ -416,7 +370,6 @@
 			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-i"],
 			["hebdomada-sancta","feria-iv","prima","antiphona","antiphona-i"]
 		],
-		"src":"gregobase/11851",
 		"datum":"Líbera me * de sanguínibus Deus Deus meus: et exsultábit lingua mea justítiam tuam."
 	},
 	{
@@ -424,7 +377,6 @@
 			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-ii"],
 			["hebdomada-sancta","feria-iv","tertia","antiphona","antiphona-ii"]
 		],
-		"src":"gregobase/13255",
 		"datum":"Contumélias * et terróres passus sum ab eis: et Dóminus mecum est tamquam bellátor fortis."
 	},
 	{
@@ -432,12 +384,10 @@
 			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-iii"],
 			["hebdomada-sancta","feria-iv","sexta","antiphona","antiphona-iii"]
 		],
-		"src":"gregobase/20211",
 		"datum":"Ipsi vero * in vanum quæsiérunt ánimam meam, introíbunt in inferióra terræ."
 	},
 	{
 		"tags":["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/12639",
 		"datum":"Omnes inimíci mei * audiérunt malum meum: Dómine lætáti sunt, quóniam tu fecísti."
 	},
 	{
@@ -445,12 +395,10 @@
 			["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-v"],
 			["hebdomada-sancta","feria-iv","nona","antiphona","antiphona-v"]
 		],
-		"src":"gregobase/20210",
 		"datum":"Álliga Dómine * in vínculis natiónes Géntium, et reges eárum in compédibus."
 	},
 	{
 		"tags":["hebdomada-sancta","feria-iv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12070",
 		"datum":"Simon dormis? * non potuísti una hora vigiláre mecum?"
 	},
 	{
@@ -460,7 +408,6 @@
 	},
 	{
 		"tags":["hebdomada-sancta","feria-iv","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/12012",
 		"datum":"Ancílla dixit * Petro: Vere tu ex illis es: nam et loquéla tua maniféstum te facit."
 	},
 	{

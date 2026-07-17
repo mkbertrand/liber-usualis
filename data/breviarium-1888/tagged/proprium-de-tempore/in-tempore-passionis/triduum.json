@@ -23,7 +23,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F5N1A1",
 		"datum":"Zelus domus tuæ * comédit me, et oppróbria exprobrántium tibi cecidérunt super me."
 	},
 	{
@@ -32,7 +31,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F5N1A2",
 		"datum":"Avertántur retrórsum, * et erubéscant, qui cógitant mihi mala."
 	},
 	{
@@ -41,7 +39,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F5N1A3",
 		"datum":"Deus meus * éripe me de manu peccatóris."
 	},
 	{
@@ -120,7 +117,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F5N2A1",
 		"datum":"Liberávit Dóminus * paúperem a poténte, et ínopem, cui non erat adjútor."
 	},
 	{
@@ -129,7 +125,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F5N2A2",
 		"datum":"Cogitavérunt ímpii, * et locúti sunt nequítiam: iniquitátem in excélso locúti sunt."
 	},
 	{
@@ -138,7 +133,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F5N2A3",
 		"datum":"Exsúrge Dómine, * et júdica causam meam."
 	},
 	{
@@ -184,7 +178,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F5N3A1",
 		"datum":"Dixi iníquis: * Nolíte loqui advérsus Deum iniquitátem."
 	},
 	{
@@ -193,7 +186,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F5N3A2",
 		"datum":"Terra trémuit * et quiévit, dum exsúrgeret in judício Deus."
 	},
 	{
@@ -202,7 +194,6 @@
 	},
 	{
 		"tags":["coena-domini","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F5N3A3",
 		"datum":"In die tribulatiónis meæ * Deum exquisívi mánibus meis."
 	},
 	{
@@ -248,7 +239,6 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-i"],
-		"src":"gregobase/2046",
 		"datum":"Justificéris Dómine * in sermónibus tuis, et vincas cum judicáris."
 	},
 	{
@@ -257,7 +247,6 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-ii"],
-		"src":"gregobase/2709",
 		"datum":"Dóminus * tamquam ovis ad víctimam ductus est, et non apéruit os suum."
 	},
 	{
@@ -266,7 +255,6 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-iii"],
-		"src":"gregobase/2792",
 		"datum":"Contrítum est * cor meum in médio mei, contremuérunt ómnia ossa mea."
 	},
 	{
@@ -277,7 +265,6 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/2641",
 		"datum":"Exhortátus es * in virtúte tua, et in refectióne sancta tua Dómine."
 	},
 	{
@@ -286,7 +273,6 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-v"],
-		"src":"gregobase/2545",
 		"datum":"Oblátus est * quia ipse vóluit, et peccáta nostra ipse portávit."
 	},
 	{
@@ -308,19 +294,11 @@
 	},
 	{
 		"tags":["coena-domini","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2458",
 		"datum":"Tráditor autem * dedit eis signum, dicens: Quem osculátus fúero, ipse est, tenéte eum."
 	},
 	{
 		"tags":["triduum","laudes","benedictus"],
 		"datum":[["/psalmi/benedictus"]]
-	},
-	{
-		"tags":["christus-factus","laudes"],
-		"src":"gregobase/1862",
-		"coena-domini":"V. Christus factus est pro nobis obédiens usque ad mortem.",
-		"parasceve":"V. Christus factus est pro nobis obédiens usque ad mortem, mortem autem crucis.",
-		"sabbatum-sanctum":"V. Christus factus est pro nobis obédiens usque ad mortem, mortem autem crucis: propter quod et Deus exaltávit illum, et dedit illi nomen, quod est super omne nomen."
 	},
 	{
 		"tags":["christus-factus"],
@@ -523,7 +501,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F6N1A1",
 		"datum":"Astitérunt reges terræ, * et príncipes convenérunt in unum, advérsus Dóminum, et advérsus Christum ejus.",
 		"in-tempore-paschali":"Astitérunt reges terræ, * et príncipes convenérunt in unum, advérsus Dóminum, et advérsus Christum ejus, allelúja."
 	},
@@ -533,7 +510,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F6N1A2",
 		"datum":"Divisérunt sibi * vestiménta mea, et super vestem meam misérunt sortem."
 	},
 	{
@@ -542,7 +518,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F6N1A3",
 		"datum":"Insurrexérunt in me * testes iníqui, et mentíta est iníquitas sibi."
 	},
 	{
@@ -609,7 +584,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F6N2A1",
 		"datum":"Vim faciébant, * qui quærébant ánimam meam."
 	},
 	{
@@ -618,7 +592,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F6N2A2",
 		"datum":"Confundántur * et revereántur, qui quærunt ánimam meam, ut aúferant eam."
 	},
 	{
@@ -627,7 +600,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F6N2A3",
 		"datum":"Aliéni * insurrexérunt in me, et fortes quæsiérunt ánimam meam."
 	},
 	{
@@ -673,7 +645,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F6N3A1",
 		"datum":"Ab insurgéntibus in me * líbera me Dómine, quia occupavérunt ánimam meam."
 	},
 	{
@@ -682,7 +653,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F6N3A2",
 		"datum":"Longe fecísti * notos meos a me: tráditus sum, et non egrediébar."
 	},
 	{
@@ -691,7 +661,6 @@
 	},
 	{
 		"tags":["parasceve","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F6N3A3",
 		"datum":"Captábunt * in ánimam justi, et sánguinem innocéntem condemnábunt."
 	},
 	{
@@ -737,12 +706,10 @@
 	},
 	{
 		"tags":["parasceve","laudes","antiphona","antiphona-i"],
-		"src":"gregobase/2555",
 		"datum":"Próprio * Fílio suo non pepércit Deus, sed pro nobis ómnibus trádidit illum."
 	},
 	{
 		"tags":["parasceve","laudes","antiphona","antiphona-ii"],
-		"src":"gregobase/2753",
 		"datum":"Anxiátus est super me * spíritus meus, in me turbátum est cor meum."
 	},
 	{
@@ -751,12 +718,10 @@
 	},
 	{
 		"tags":["parasceve","laudes","antiphona","antiphona-iii"],
-		"src":"gregobase/2552",
 		"datum":"Ait latro ad latrónem: * Nos quidem digna factis recípimus, hic autem quid fecit? Meménto mei Dómine, dum véneris in regnum tuum."
 	},
 	{
 		"tags":["parasceve","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/2827",
 		"datum":"Cum conturbáta fúerit * ánima mea Dómine, misericórdiæ memor eris."
 	},
 	{
@@ -765,7 +730,6 @@
 	},
 	{
 		"tags":["parasceve","laudes","antiphona","antiphona-v"],
-		"src":"gregobase/1827",
 		"datum":"Meménto mei * Dómine, dum véneris in regnum tuum."
 	},
 	{
@@ -774,7 +738,6 @@
 	},
 	{
 		"tags":["parasceve","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2896",
 		"datum":"Posuérunt * super caput ejus causam ipsíus scriptam: Jesus Nazarénus, Rex Judæórum."
 	},
 	{
@@ -787,7 +750,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F7N1A1",
 		"datum":"In pace in idípsum, * dórmiam et requiéscam."
 	},
 	{
@@ -796,7 +758,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F7N1A2",
 		"datum":"Habitábit * in tabernáculo tuo, requiéscet in monte sancto tuo."
 	},
 	{
@@ -805,7 +766,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F7N1A3",
 		"datum":"Caro mea * requiéscet in spe."
 	},
 	{
@@ -872,7 +832,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F7N2A1",
 		"datum":"Elevámini * portæ æternáles, et introíbit Rex glóriæ."
 	},
 	{
@@ -881,7 +840,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F7N2A2",
 		"datum":"Credo vidére * bona Dómini in terra vivéntium."
 	},
 	{
@@ -890,7 +848,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F7N2A3",
 		"datum":"Dómine * abstraxísti ab ínferis ánimam meam."
 	},
 	{
@@ -936,7 +893,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/Q6F7N3A1",
 		"datum":"Deus ádjuvat me, * et Dóminus suscéptor est ánimæ meæ."
 	},
 	{
@@ -945,7 +901,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/Q6F7N3A2",
 		"datum":"In pace factus est * locus ejus, et in Sion habitátio ejus."
 	},
 	{
@@ -954,7 +909,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/Q6F7N3A3",
 		"datum":"Factus sum * sicut homo sine adjutório, inter mórtuos liber."
 	},
 	{
@@ -1000,12 +954,10 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-i"],
-		"src":"gregobase/1957",
 		"datum":"O mors, * ero mors tua, morsus tuus ero inférne."
 	},
 	{
 		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-ii"],
-		"src":"gregobase/2212",
 		"datum":"Plangent eum * quasi unigénitum, quia ínnocens Dóminus occísus est."
 	},
 	{
@@ -1014,12 +966,10 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-iii"],
-		"src":"gregobase/2263",
 		"datum":"Atténdite * univérsi pópuli, et vidéte dolórem meum."
 	},
 	{
 		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-iv"],
-		"src":"gregobase/2253",
 		"datum":"A porta ínferi * érue Dómine ánimam meam."
 	},
 	{
@@ -1028,7 +978,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-v"],
-		"src":"gregobase/1901",
 		"datum":"O vos omnes * qui transítis per viam, atténdite et vidéte, si est dolor sicut dolor meus."
 	},
 	{
@@ -1037,7 +986,6 @@
 	},
 	{
 		"tags":["sabbatum-sanctum","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2288",
 		"datum":"Mulíeres * sedéntes ad monuméntum lamentabántur, flentes Dóminum."
 	}
 ]
