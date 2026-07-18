@@ -14,7 +14,7 @@ import psalms
 data_root = Path(__file__).parent
 
 # Reserved tags
-functiontags = {'datum', 'src', 'tags'}
+functiontags = {'datum', 'tags'}
 
 tagselections = {'tags', 'implies', 'quaesitum'}
 
@@ -117,8 +117,6 @@ class LiturgicalBook:
                 if key not in functiontags:
                     tags = [j | {key} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {key}
                     newentry = {'tags':tags, 'datum':val}
-                    if 'src' in entrycopy:
-                        newentry['src'] = entrycopy['src']
                     ret.append(newentry)
             if 'datum' in entry:
                 ret.append({k: v for k, v in entry.items() if k in functiontags})
