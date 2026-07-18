@@ -21,7 +21,6 @@
 			["purificatio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
 			["purificatio-bmv","i-vesperae","antiphona","antiphona-magnificat","in-tempore-septuagesimae"]
 		],
-		"src":"gregobase/1979",
 		"datum":"Senex * púerum portábat, puer autem senem regébat: quem virgo péperit, et post partum virgo permánsit: ipsum quem génuit, adorávit."
 	},
 	{
@@ -31,7 +30,6 @@
 	},
 	{
 		"tags":["purificatio-bmv","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0202I",
 		"datum":"Ecce venit ad templum sanctum suum Dominátor Dóminus: * Gaude et lætáre Sion, occúrrens Deo tuo."
 	},
 	{
@@ -134,33 +132,15 @@
 		"datum":"Sed qui vult dimítti, véniat in templum, véniat in Jerúsalem, exspéctet Christum Dómini, accípiat in mánibus Verbum Dei, complectátur opéribus velut quibúsdam suæ fídei bráchiis: tunc dimittétur, ut non vídeat mortem, qui víderit vitam. Vides úberem in omnes grátiam, Dómini generatióne diffúsam, et prophetíam incrédulis negátam esse, non justis. Ecce et Símeon prophétat, in ruínam et resurrectiónem plurimórum venísse Dóminum Jesum Christum: ut justórum iniquorúmque mérita discérnat, et pro nostrórum qualitáte factórum, judex verus et justus aut supplícia decérnat, aut prǽmia."
 	},
 	{
-		"tags":["purificatio-bmv","antiphona","antiphona-i"],
-		"src":"gregobase/2652",
-		"datum":"Símeon justus * et timorátus exspectábat redemptiónem Ísraël, et Spíritus sanctus erat in eo."
-	},
-	{
-		"tags":["purificatio-bmv","antiphona","antiphona-ii"],
-		"src":"gregobase/1853",
-		"datum":"Respónsum accépit Símeon * a Spíritu sancto, non visúrum se mortem, nisi vidéret Dóminum."
-	},
-	{
-		"tags":["purificatio-bmv","antiphona","antiphona-iii"],
-		"src":"gregobase/1944",
-		"datum":"Accípiens Símeon * púerum in mánibus, grátias agens benedíxit Dóminum."
-	},
-	{
-		"tags":["purificatio-bmv","antiphona","antiphona-iv"],
-		"src":"gregobase/1846",
-		"datum":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Ísraël."
-	},
-	{
-		"tags":["purificatio-bmv","antiphona","antiphona-v"],
-		"src":"gregobase/2505",
-		"datum":"Obtulérunt * pro eo Dómino par túrturum aut duos pullos columbárum."
+		"tags":["purificatio-bmv","antiphona"],
+		"antiphona-i":"Símeon justus * et timorátus exspectábat redemptiónem Ísraël, et Spíritus sanctus erat in eo.",
+		"antiphona-ii":"Respónsum accépit Símeon * a Spíritu sancto, non visúrum se mortem, nisi vidéret Dóminum.",
+		"antiphona-iii":"Accípiens Símeon * púerum in mánibus, grátias agens benedíxit Dóminum.",
+		"antiphona-iv":"Lumen ad revelatiónem Géntium, * et glóriam plebis tuæ Ísraël.",
+		"antiphona-v":"Obtulérunt * pro eo Dómino par túrturum aut duos pullos columbárum."
 	},
 	{
 		"tags":["purificatio-bmv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13145",
 		"datum":"Cum indúcerent * púerum Jesum paréntes ejus, accépit eum Símeon in ulnas suas, et benedíxit Deum, dicens: Nunc dimíttis servum tuum in pace."
 	},
 	{
@@ -170,7 +150,6 @@
 	},
 	{
 		"tags":["purificatio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2750",
 		"datum":"Hódie * beáta Virgo María púerum Jesum præsentávit in templo, et Símeon replétus Spíritu sancto accépit eum in ulnas suas, et benedíxit Deum in ætérnum."
 	}
 ]

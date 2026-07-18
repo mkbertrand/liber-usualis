@@ -5,31 +5,26 @@
 	},
 	{
 		"tags":["annuntiatio-bmv","antiphona","antiphona-i"],
-		"src":"gregobase/2503",
 		"datum":"Missus est * Gábriel Ángelus ad Maríam Vírginem desponsátam Joseph.",
 		"in-tempore-paschali":"Missus est * Gábriel Ángelus ad Maríam Vírginem desponsátam Joseph, allelúja."
 	},
 	{
 		"tags":["annuntiatio-bmv","antiphona","antiphona-ii"],
-		"src":"gregobase/1953",
 		"datum":"Ave María, * grátia plena, Dóminus tecum: benedícta tu in muliéribus.",
 		"in-tempore-paschali":"Ave María, * grátia plena, Dóminus tecum: benedícta tu in muliéribus, allelúja."
 	},
 	{
 		"tags":["annuntiatio-bmv","antiphona","antiphona-iii"],
-		"src":"gregobase/2627",
 		"datum":"Ne tímeas María: * invenísti grátiam apud Dóminum: ecce concípies et páries fílium.",
 		"in-tempore-paschali":"Ne tímeas María: * invenísti grátiam apud Dóminum: ecce concípies et páries fílium, allelúja."
 	},
 	{
 		"tags":["annuntiatio-bmv","antiphona","antiphona-iv"],
-		"src":"gregobase/2088",
 		"datum":"Dabit ei Dóminus * sedem David patris ejus, et regnábit in ætérnum.",
 		"in-tempore-paschali":"Dabit ei Dóminus * sedem David patris ejus, et regnábit in ætérnum, allelúja."
 	},
 	{
 		"tags":["annuntiatio-bmv","antiphona","antiphona-v"],
-		"src":"gregobase/1948",
 		"datum":"Ecce ancílla Dómini: * fiat mihi secúndum verbum tuum.",
 		"in-tempore-paschali":"Ecce ancílla Dómini: * fiat mihi secúndum verbum tuum, allelúja."
 	},
@@ -47,7 +42,6 @@
 	},
 	{
 		"tags":["annuntiatio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1859",
 		"datum":"Spíritus sanctus * in te descéndet María, et virtus Altíssimi obumbrábit tibi.",
 		"in-tempore-paschali":"Spíritus sanctus * in te descéndet María, et virtus Altíssimi obumbrábit tibi, allelúja."
 	},
@@ -58,7 +52,6 @@
 	},
 	{
 		"tags":["annuntiatio-bmv","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0325I",
 		"datum":"Ave María, grátia plena: * Dóminus tecum.",
 		"in-tempore-paschali":"Ave María, grátia plena: * Dóminus tecum, allelúja."
 	},
@@ -155,7 +148,6 @@
 	},
 	{
 		"tags":["annuntiatio-bmv","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/CBMVN3A3b",
 		"datum":[["maria","in-tempore-adventus"]]
 	},
 	{
@@ -197,7 +189,6 @@
 	},
 	{
 		"tags":["annuntiatio-bmv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2387",
 		"datum":"Quómodo fiet istud * Ángele Dei, quóniam virum non cognósco? Audi María Virgo: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.",
 		"in-tempore-paschali":"Quómodo fiet istud * Ángele Dei, quóniam virum non cognósco? Audi María Virgo: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi, allelúja."
 	},
@@ -211,7 +202,6 @@
 	},
 	{
 		"tags":["annuntiatio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1839",
 		"datum":"Gábriel Ángelus * locútus est Maríæ, dicens: Ave grátia plena, Dóminus tecum: benedícta tu in muliéribus.",
 		"in-tempore-paschali":"Gábriel Ángelus * locútus est Maríæ, dicens: Ave grátia plena, Dóminus tecum: benedícta tu in muliéribus, allelúja."
 	}

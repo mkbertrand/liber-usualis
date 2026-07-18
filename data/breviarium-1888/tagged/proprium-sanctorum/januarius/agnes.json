@@ -4,33 +4,19 @@
 		"datum":"S. Agnetis Virginis et Martyris"
 	},
 	{
-		"tags":["agnes","antiphona","antiphona-i"],
-		"src":"gregobase/2210",
-		"datum":"Ingréssa Agnes * turpitúdinis locum, Ángelum Dómini præparátum invénit."
+		"tags":["agnes","antiphona"],
+		"antiphona-i":"Ingréssa Agnes * turpitúdinis locum, Ángelum Dómini præparátum invénit."
 	},
 	{
 		"tags":["agnes","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
-		"tags":["agnes","antiphona","antiphona-ii"],
-		"src":"gregobase/2906",
-		"datum":"Mecum enim hábeo * custódem córporis mei, Ángelum Dómini."
-	},
-	{
-		"tags":["agnes","antiphona","antiphona-iii"],
-		"src":"gregobase/1889",
-		"datum":"Ánnulo suo * subarrhávit me Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna."
-	},
-	{
-		"tags":["agnes","antiphona","antiphona-iv"],
-		"src":"gregobase/2039",
-		"datum":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo."
-	},
-	{
-		"tags":["agnes","antiphona","antiphona-v"],
-		"src":"gregobase/1832",
-		"datum":"Congaudéte mecum, * et congratulámini, quia cum his ómnibus lúcidas sedes accépi."
+		"tags":["agnes","antiphona"],
+		"antiphona-ii":"Mecum enim hábeo * custódem córporis mei, Ángelum Dómini.",
+		"antiphona-iii":"Ánnulo suo * subarrhávit me Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna.",
+		"antiphona-iv":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.",
+		"antiphona-v":"Congaudéte mecum, * et congratulámini, quia cum his ómnibus lúcidas sedes accépi."
 	},
 	{
 		"tags":["agnes","capitulum"],
@@ -38,7 +24,6 @@
 	},
 	{
 		"tags":["agnes","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2814",
 		"datum":"Beáta Agnes * in médio flammárum expánsis mánibus orábat: Te déprecor omnípotens, adoránde, colénde, Pater metuénde, quia per sanctum Fílium tuum evási minas sacrílegi tyránni, et carnis spurcítias immaculáto calle transívi: et ecce vénio ad te, quem amávi, quem quæsívi, quem semper optávi."
 	},
 	{
@@ -48,7 +33,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0121N1A1",
 		"datum":"Discéde a me * pábulum mortis, quia jam ab álio amatóre prævénta sum."
 	},
 	{
@@ -57,7 +41,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0121N1A2",
 		"datum":"Déxteram meam * et collum meum cinxit lapídibus pretiósis, trádidit aúribus meis inæstimábiles margarítas."
 	},
 	{
@@ -66,7 +49,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0121N1A3",
 		"datum":"Pósuit signum * in fáciem meam, ut nullum præter eum amatórem admíttam."
 	},
 	{
@@ -93,7 +75,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0121N2A1",
 		"datum":"Índuit me Dóminus * cýclade auro texta, et imménsis monílibus ornávit me."
 	},
 	{
@@ -102,7 +83,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0121N2A2",
 		"datum":"Mel et lac * ex ejus ore suscépi, et sanguis ejus ornávit genas meas."
 	},
 	{
@@ -111,7 +91,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0121N2A3",
 		"datum":"Ipsi soli * servo fidem, ipsi me tota devotióne commítto."
 	},
 	{
@@ -153,7 +132,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0121N3A1",
 		"datum":"Cujus pulchritúdinem * sol et luna mirántur, ipsi soli servo fidem."
 	},
 	{
@@ -162,7 +140,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0121N3A2",
 		"datum":"Christus circúmdedit me * vernántibus atque coruscántibus gemmis pretiósis."
 	},
 	{
@@ -171,7 +148,6 @@
 	},
 	{
 		"tags":["agnes","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0121N3A3",
 		"datum":"Ipsi sum desponsáta, * cui Ángeli sérviunt, cujus pulchritúdinem sol et luna mirántur."
 	},
 	{
@@ -209,7 +185,6 @@
 	},
 	{
 		"tags":["agnes","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12687",
 		"datum":"Ecce quod concupívi, * jam vídeo: quod sperávi, jam téneo: ipsi sum juncta in cœlis, quem in terris pósita, tota devotióne diléxi."
 	},
 	{
@@ -226,7 +201,6 @@
 	},
 	{
 		"tags":["agnes","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2159",
 		"datum":"Stans beáta Agnes * in médio flammæ, expánsis mánibus orábat ad Dóminum: Omnípotens, adoránde, colénde, treménde, benedíco te, et glorífico nomen tuum in ætérnum."
 	}
 ]

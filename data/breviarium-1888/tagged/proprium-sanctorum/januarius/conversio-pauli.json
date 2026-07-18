@@ -5,33 +5,19 @@
 	},
 	{
 		"tags":["conversio-pauli","antiphona","antiphona-i"],
-		"src":"gregobase/2098",
 		"datum":"Ego plantávi, * Apóllo rigávit, Deus autem increméntum dedit, allelúja.",
 		"in-tempore-septuagesimae":"Ego plantávi, * Apóllo rigávit, Deus autem increméntum dedit."
 	},
 	{
-		"tags":["conversio-pauli","antiphona","antiphona-ii"],
-		"src":"gregobase/2725",
-		"datum":"Libénter gloriábor * in infirmitátibus meis, ut inhábitet in me virtus Christi."
-	},
-	{
-		"tags":["conversio-pauli","antiphona","antiphona-iii"],
-		"src":"gregobase/2843",
-		"datum":"Grátia Dei * in me vácua non fuit, sed grátia ejus semper in me manet."
-	},
-	{
-		"tags":["conversio-pauli","antiphona","antiphona-iv"],
-		"src":"gregobase/1912",
-		"datum":"Damásci, præpósitus * Gentis Arétæ regis vóluit me comprehéndere: a frátribus per murum demíssus sum in sporta, et sic evási manus ejus in nómine Dómini."
-	},
-	{
-		"tags":["conversio-pauli","antiphona","antiphona-v"],
-		"src":"gregobase/2262",
-		"datum":"Ter virgis cæsus sum, * semel lapidátus sum, ter naufrágium pértuli pro Christi nómine."
+		"tags":["conversio-pauli","antiphona"],
+		"antiphona-ii":"Libénter gloriábor * in infirmitátibus meis, ut inhábitet in me virtus Christi.",
+		"antiphona-iii":"Grátia Dei * in me vácua non fuit, sed grátia ejus semper in me manet.",
+		"antiphona-iv":"Damásci, præpósitus * Gentis Arétæ regis vóluit me comprehéndere: a frátribus per murum demíssus sum in sporta, et sic evási manus ejus in nómine Dómini.",
+		"antiphona-v":"Ter virgis cæsus sum, * semel lapidátus sum, ter naufrágium pértuli pro Christi nómine."
 	},
 	{
 		"tags":["conversio-pauli","capitulum"],
-		"datum":"Saulus adhuc spirans minárum, et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, + et pétiit ab eo epístolas in Damáscum ad synagógas: * ut si quos invenísset hujus viæ viros, ac mulíeres, vinctos perdúceret in Jerúsalem."
+		"datum":"[Act. 9.]/Saulus adhuc spirans minárum, et cædis in discípulos Dómini, accéssit ad príncipem sacerdótum, + et pétiit ab eo epístolas in Damáscum ad synagógas: * ut si quos invenísset hujus viæ viros, ac mulíeres, vinctos perdúceret in Jerúsalem."
 	},
 	{
 		"tags":[
@@ -52,7 +38,6 @@
 	},
 	{
 		"tags":["conversio-pauli","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2598",
 		"datum":"Vade Ananía, * et quære Saulum: ecce enim orat: quia vas electiónis est mihi, ut portet nomen meum coram Géntibus, et régibus, et fíliis Ísraël."
 	},
 	{
@@ -62,23 +47,13 @@
 	},
 	{
 		"tags":["conversio-pauli","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0125I",
 		"datum":"Laudémus Deum nostrum, * In conversióne Doctóris Géntium."
 	},
 	{
-		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0125N1A1",
-		"datum":"Qui operátus est Petro * in apostolátum, operátus est et mihi inter Gentes: et cognovérunt grátiam, quæ data est mihi a Christo Dómino."
-	},
-	{
-		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0125N1A2",
-		"datum":"Scio cui crédidi, * et certus sum, quia potens est depósitum meum serváre in illum diem justus judex."
-	},
-	{
-		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0125N1A3",
-		"datum":"Mihi vívere Christus est, * et mori lucrum: gloriári me opórtet in cruce Dómini nostri Jesu Christi."
+		"tags":["conversio-pauli","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Qui operátus est Petro * in apostolátum, operátus est et mihi inter Gentes: et cognovérunt grátiam, quæ data est mihi a Christo Dómino.",
+		"antiphona-ii":"Scio cui crédidi, * et certus sum, quia potens est depósitum meum serváre in illum diem justus judex.",
+		"antiphona-iii":"Mihi vívere Christus est, * et mori lucrum: gloriári me opórtet in cruce Dómini nostri Jesu Christi."
 	},
 	{
 		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-i"],
@@ -114,19 +89,10 @@
 		"versus":"Scio cui crédidi, et certus sum quia potens est depósitum meum serváre in illum diem."
 	},
 	{
-		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0125N2A1",
-		"datum":"Tu es vas * electiónis sancte Paule Apóstole, prædicátor veritátis in univérso mundo."
-	},
-	{
-		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0125N2A2",
-		"datum":"Magnus sanctus Paulus * vas electiónis, vere digne est glorificándus, qui et méruit thronum duodécimum possidére."
-	},
-	{
-		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0125N2A3",
-		"datum":"Bonum certámen certávi, * cursum consummávi, fidem servávi."
+		"tags":["conversio-pauli","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Tu es vas * electiónis sancte Paule Apóstole, prædicátor veritátis in univérso mundo.",
+		"antiphona-ii":"Magnus sanctus Paulus * vas electiónis, vere digne est glorificándus, qui et méruit thronum duodécimum possidére.",
+		"antiphona-iii":"Bonum certámen certávi, * cursum consummávi, fidem servávi."
 	},
 	{
 		"tags":["conversio-pauli","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -162,19 +128,10 @@
 		"versus":"Osténdens quia hic est Christus Fílius Dei."
 	},
 	{
-		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0125N3A1",
-		"datum":"Saulus, * qui et Paulus, magnus prædicátor, a Deo confortátus convalescébat, et confundébat Judǽos."
-	},
-	{
-		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0125N3A2",
-		"datum":"Ne magnitúdo * revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet: propter quod ter Dóminum rogávi, ut auferrétur a me, et dixit mihi Dóminus: Súfficit tibi Paule grátia mea."
-	},
-	{
-		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0125N3A3",
-		"datum":"Repósita est mihi * coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex."
+		"tags":["conversio-pauli","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Saulus, * qui et Paulus, magnus prædicátor, a Deo confortátus convalescébat, et confundébat Judǽos.",
+		"antiphona-ii":"Ne magnitúdo * revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet: propter quod ter Dóminum rogávi, ut auferrétur a me, et dixit mihi Dóminus: Súfficit tibi Paule grátia mea.",
+		"antiphona-iii":"Repósita est mihi * coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex."
 	},
 	{
 		"tags":["conversio-pauli","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -209,20 +166,18 @@
 	},
 	{
 		"tags":["conversio-pauli","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12436",
 		"datum":"Vos qui secúti estis me, * sedébitis super sedes, judicántes duódecim tribus Ísraël, dicit Dóminus."
 	},
 	{
 		"tags":["conversio-pauli","sexta","capitulum"],
-		"datum":"Surréxit autem Saulus de terra, apertísque óculis nihil vidébat. + Ad manus autem illum trahéntes, introduxérunt Damáscum. * Et erat ibi tribus diébus non videns, et non manducávit, neque bibit."
+		"datum":"[Act. 9. b.]/Surréxit autem Saulus de terra, apertísque óculis nihil vidébat. + Ad manus autem illum trahéntes, introduxérunt Damáscum. * Et erat ibi tribus diébus non videns, et non manducávit, neque bibit."
 	},
 	{
 		"tags":["conversio-pauli","nona","capitulum"],
-		"datum":"Saulus autem multo magis convalescébat, + et confundébat Judǽos, qui habitábant Damásci, * affírmans quóniam hic est Christus."
+		"datum":"[Act. 9. d.]/Saulus autem multo magis convalescébat, + et confundébat Judǽos, qui habitábant Damásci, * affírmans quóniam hic est Christus."
 	},
 	{
 		"tags":["conversio-pauli","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2937",
 		"datum":"Sancte Paule Apóstole, * prædicátor veritátis, et Doctor Géntium, intercéde pro nobis ad Deum, qui te elégit."
 	}
 ]

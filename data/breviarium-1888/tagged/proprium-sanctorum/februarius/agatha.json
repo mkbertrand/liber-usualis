@@ -13,7 +13,6 @@
 	},
 	{
 		"tags":["agatha","vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2462",
 		"datum":"Stans beáta Ágatha * in médio cárceris, expánsis mánibus orábat ad Dóminum: Dómine Jesu Christe, magíster bone, grátias tibi ago, qui me fecísti víncere torménta carníficum: jube me Dómine ad tuam immarcescíbilem glóriam felíciter perveníre."
 	},
 	{
@@ -22,23 +21,17 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["agatha","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0205N1A1",
-		"datum":"Ingénua sum, * et ex spectábili génere, ut omnis parentéla mea testátur."
+		"tags":["agatha","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Ingénua sum, * et ex spectábili génere, ut omnis parentéla mea testátur."
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-i","psalmus"],
 		"datum":[["agnes","psalmus"]]
 	},
 	{
-		"tags":["agatha","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0205N1A2",
-		"datum":"Summa ingenúitas * ista est in qua sérvitus Christi comprobátur."
-	},
-	{
-		"tags":["agatha","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0205N1A3",
-		"datum":"Ancílla Christi sum, * ídeo me osténdo servílem habére persónam."
+		"tags":["agatha","matutinum","nocturna-i","antiphona"],
+		"antiphona-ii":"Summa ingenúitas * ista est in qua sérvitus Christi comprobátur.",
+		"antiphona-iii":"Ancílla Christi sum, * ídeo me osténdo servílem habére persónam."
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-i","responsorium","responsorium-i"],
@@ -59,23 +52,17 @@
 		"versus":"Nam et ego Apóstolus ejus sum, et in nómine ejus scias te esse curándam."
 	},
 	{
-		"tags":["agatha","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0205N2A1",
-		"datum":"Ágatha sancta dixit: * Si feras mihi promíttis, audíto Christi nómine mansuéscunt."
+		"tags":["agatha","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Ágatha sancta dixit: * Si feras mihi promíttis, audíto Christi nómine mansuéscunt."
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-ii","psalmus"],
 		"datum":[["agnes","psalmus"]]
 	},
 	{
-		"tags":["agatha","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0205N2A2",
-		"datum":"Si ignem adhíbeas, * rorem mihi salvíficum de cœlo Ángeli ministrábunt."
-	},
-	{
-		"tags":["agatha","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0205N2A3",
-		"datum":"Ágatha lætíssime * et gloriánter ibat ad cárcerem, quasi ad épulas invitáta: et agónem suum Dómino précibus commendábat."
+		"tags":["agatha","matutinum","nocturna-ii","antiphona"],
+		"antiphona-ii":"Si ignem adhíbeas, * rorem mihi salvíficum de cœlo Ángeli ministrábunt.",
+		"antiphona-iii":"Ágatha lætíssime * et gloriánter ibat ad cárcerem, quasi ad épulas invitáta: et agónem suum Dómino précibus commendábat."
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -109,7 +96,6 @@
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0205N3A1",
 		"datum":"Nisi diligénter * perféceris corpus meum a carnifícibus attrectári, non potest ánima mea in paradísum Dómini cum palma intráre martýrii."
 	},
 	{
@@ -118,7 +104,6 @@
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0205N3A2",
 		"datum":"Vidísti Dómine agónem meum, * quómodo pugnávi in stádio: sed quia nólui obedíre mandátis príncipum, jussa sum in mamílla torquéri."
 	},
 	{
@@ -127,7 +112,6 @@
 	},
 	{
 		"tags":["agatha","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0205N3A3",
 		"datum":"Propter fidem castitátis * jussa sum suspéndi in equúleo: ádjuva me Dómine Deus meus in tortúra mamillárum meárum."
 	},
 	{
@@ -164,33 +148,15 @@
 		"datum":"Cum ergo de illis eunúchis díxerit, qui nisi étiam ipsi mente se contíneant, frustra et inutíliter tales sunt; ac de illis, qui ut regnum cœlórum consequántur, se cóntinent, subjúnxit rursus, dicens: Qui potest cápere, cápiat: ut alacrióres effíciat eo ipso, quod grave esse opus osténdit, et ineffábili benignitáte  sua nóluit eam rem intra necessitátem legis conclúdere: idque dicéndo, adhuc magis possíbilem esse demónstrat, ut voluntátis stúdium plus augeátur."
 	},
 	{
-		"tags":["agatha","antiphona","antiphona-i"],
-		"src":"gregobase/2425",
-		"datum":"Quis es tu, * qui venísti ad me curáre vúlnera mea? Ego sum Apóstolus Christi: nihil in me dúbites fília."
-	},
-	{
-		"tags":["agatha","antiphona","antiphona-ii"],
-		"src":"gregobase/1955",
-		"datum":"Medicínam carnálem * córpori meo numquam exhíbui, sed hábeo Dóminum Jesum Christum, qui solo sermóne restaúrat univérsa."
-	},
-	{
-		"tags":["agatha","antiphona","antiphona-iii"],
-		"src":"gregobase/2318",
-		"datum":"Grátias tibi ago * Dómine Jesu Christe, quia memor es mei, et misísti ad me Apóstolum tuum curáre vúlnera mea."
-	},
-	{
-		"tags":["agatha","antiphona","antiphona-iv"],
-		"src":"gregobase/13323",
-		"datum":"Benedíco te * Pater Dómini mei Jesu Christi: quia per Apóstolum tuum mamíllam meam meo péctori restituísti."
-	},
-	{
-		"tags":["agatha","antiphona","antiphona-v"],
-		"src":"gregobase/2530",
-		"datum":"Qui me dignátus est * ab omni plaga curáre, et mamíllam meam meo péctori restitúere, ipsum ínvoco Deum vivum."
+		"tags":["agatha","antiphona"],
+		"antiphona-i":"Quis es tu, * qui venísti ad me curáre vúlnera mea? Ego sum Apóstolus Christi: nihil in me dúbites fília.",
+		"antiphona-ii":"Medicínam carnálem * córpori meo numquam exhíbui, sed hábeo Dóminum Jesum Christum, qui solo sermóne restaúrat univérsa.",
+		"antiphona-iii":"Grátias tibi ago * Dómine Jesu Christe, quia memor es mei, et misísti ad me Apóstolum tuum curáre vúlnera mea.",
+		"antiphona-iv":"Benedíco te * Pater Dómini mei Jesu Christi: quia per Apóstolum tuum mamíllam meam meo péctori restituísti.",
+		"antiphona-v":"Qui me dignátus est * ab omni plaga curáre, et mamíllam meam meo péctori restitúere, ipsum ínvoco Deum vivum."
 	},
 	{
 		"tags":["agatha","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12170",
 		"datum":"Paganórum * multitúdo fúgiens ad sepúlchrum vírginis, tulérunt velum ejus contra ignem: ut comprobáret Dóminus, quod a perículis incéndii méritis beátæ Ágathæ Mártyris suæ eos liberáret."
 	}
 ]

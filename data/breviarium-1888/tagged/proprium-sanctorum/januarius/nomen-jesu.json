@@ -4,33 +4,19 @@
 		"datum":"In Festo Ss. Nominis Jesu"
 	},
 	{
-		"tags":["nomen-jesu","vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2597",
-		"datum":"Omnis * qui invocáverit nomen Dómini, salvus erit."
+		"tags":["nomen-jesu","vesperae","antiphona"],
+		"antiphona-i":"Omnis * qui invocáverit nomen Dómini, salvus erit."
 	},
 	{
 		"tags":["nomen-jesu","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
-		"tags":["nomen-jesu","vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2775",
-		"datum":"Sanctum et terríbile * nomen ejus, inítium sapiéntiæ timor Dómini."
-	},
-	{
-		"tags":["nomen-jesu","vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2795",
-		"datum":"Ego autem * in Dómino gaudébo, et exsultábo in Deo Jesu meo."
-	},
-	{
-		"tags":["nomen-jesu","vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/2925",
-		"datum":"A solis ortu * usque ad occásum laudábile nomen Dómini."
-	},
-	{
-		"tags":["nomen-jesu","vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2213",
-		"datum":"Sacrificábo * hóstiam laudis, et nomen Dómini invocábo."
+		"tags":["nomen-jesu","vesperae","antiphona"],
+		"antiphona-ii":"Sanctum et terríbile * nomen ejus, inítium sapiéntiæ timor Dómini.",
+		"antiphona-iii":"Ego autem * in Dómino gaudébo, et exsultábo in Deo Jesu meo.",
+		"antiphona-iv":"A solis ortu * usque ad occásum laudábile nomen Dómini.",
+		"antiphona-v":"Sacrificábo * hóstiam laudis, et nomen Dómini invocábo."
 	},
 	{
 		"tags":["nomen-jesu","vesperae","psalmus","psalmus-v"],
@@ -57,7 +43,6 @@
 	},
 	{
 		"tags":["nomen-jesu","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2618",
 		"datum":"Fecit * mihi magna qui potens est, et sanctum nomen ejus, allelúja.",
 		"in-tempore-septuagesimae":"Fecit * mihi magna qui potens est, et sanctum nomen ejus."
 	},
@@ -78,7 +63,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/N2I",
 		"datum":"Admirábile nomen Jesu, quod est super omne nomen, * Veníte, adorémus."
 	},
 	{
@@ -93,7 +77,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/N2N1A1",
 		"datum":"Dómine * Dóminus noster, quam admirábile est nomen tuum in univérsa terra!"
 	},
 	{
@@ -102,7 +85,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/N2N1A2",
 		"datum":"In nómine Jesu * omne genu flectátur cœléstium, terréstrium, et infernórum."
 	},
 	{
@@ -111,7 +93,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/N2N1A3",
 		"datum":"Confitémini Dómino, * et invocáte nomen ejus: mementóte, quóniam excélsum est nomen ejus."
 	},
 	{
@@ -156,17 +137,14 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/N2N2A1",
 		"datum":"Mémores erunt * nóminis tui Dómine in omni generatióne et generatiónem."
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/N2N2A2",
 		"datum":"Magnificáte * Dóminum mecum, et exaltémus nomen ejus in idípsum."
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/N2N2A3",
 		"datum":"Omnes gentes, * quascúmque fecísti, vénient, et adorábunt coram te Dómine, et glorificábunt nomen tuum."
 	},
 	{
@@ -211,17 +189,14 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/N2N3A1",
 		"datum":"Cantáte Dómino, * et benedícite nómini ejus: annuntiáte de die in diem salutáre ejus."
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/N2N3A2",
 		"datum":"Secúndum nomen tuum Deus, * sic et laus tua in fines terræ: justítia plena est déxtera tua."
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/N2N3A3",
 		"datum":"Cantáte Dómino, * psalmum dícite nómini ejus: iter fácite ei, qui ascéndit super occásum, Dóminus nomen illi."
 	},
 	{
@@ -263,29 +238,12 @@
 		"datum":"Mérito sane, dum circumcíditur puer, qui natus est nobis, Salvátor vocátur: quod vidélicet ex hoc jam cœ\u0301perit operári salútem nostram, immaculátum illum pro nobis sánguinem fundens. Neque enim jam quǽrere est Christiánis, cur volúerit Dóminus Christus circumcídi. Propter hoc síquidem circumcísus est, propter quod natus, propter quod passus. Nihil horum propter se, sed ómnia propter eléctos. Nec in peccáto génitus, nec a peccáto circumcísus, nec mórtuus est pro peccáto suo: magis autem propter delícta nostra. Quod vocátum est, inquit, ab Ángelo, priúsquam in útero conciperétur. Vocátum plane, non impósitum. Nempe hoc ei nomen est ab ætérno. A natúra própria habet, ut sit Salvátor: innátum est ei nomen hoc, non índitum ab humána, vel angélica creatúra."
 	},
 	{
-		"tags":["nomen-jesu","antiphona","antiphona-i"],
-		"src":"gregobase/2465",
-		"datum":"Óleum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te."
-	},
-	{
-		"tags":["nomen-jesu","antiphona","antiphona-ii"],
-		"src":"gregobase/2762",
-		"datum":"Scitóte, * quia Dóminus ipse est Deus, cujus nomen in ætérnum."
-	},
-	{
-		"tags":["nomen-jesu","antiphona","antiphona-iii"],
-		"src":"gregobase/2055",
-		"datum":"Sitívit * ánima mea ad nomen sanctum tuum Dómine."
-	},
-	{
-		"tags":["nomen-jesu","antiphona","antiphona-iv"],
-		"src":"gregobase/13237",
-		"datum":"Benedíctum nomen * glóriæ tuæ sanctum, et laudábile, et superexaltátum in sǽcula."
-	},
-	{
-		"tags":["nomen-jesu","antiphona","antiphona-v"],
-		"src":"gregobase/2144",
-		"datum":"Júvenes et vírgines, * senes cum junióribus laudáte nomen Dómini, quia exaltátum est nomen ejus solíus."
+		"tags":["nomen-jesu","antiphona"],
+		"antiphona-i":"Óleum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te.",
+		"antiphona-ii":"Scitóte, * quia Dóminus ipse est Deus, cujus nomen in ætérnum.",
+		"antiphona-iii":"Sitívit * ánima mea ad nomen sanctum tuum Dómine.",
+		"antiphona-iv":"Benedíctum nomen * glóriæ tuæ sanctum, et laudábile, et superexaltátum in sǽcula.",
+		"antiphona-v":"Júvenes et vírgines, * senes cum junióribus laudáte nomen Dómini, quia exaltátum est nomen ejus solíus."
 	},
 	{
 		"tags":["nomen-jesu","laudes","hymnus"],
@@ -306,7 +264,6 @@
 	},
 	{
 		"tags":["nomen-jesu","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13137",
 		"datum":"Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum, allelúja.",
 		"in-tempore-septuagesimae":"Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum."
 	},
@@ -372,7 +329,6 @@
 	},
 	{
 		"tags":["nomen-jesu","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2547",
 		"datum":"Vocábis * nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum, allelúja.",
 		"in-tempore-septuagesimae":"Vocábis * nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum."
 	}

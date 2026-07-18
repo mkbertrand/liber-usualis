@@ -5,7 +5,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2663",
 		"datum":"Jacob autem * génuit Joseph, virum Maríæ, de qua natus est Jesus, qui vocátur Christus.",
 		"in-tempore-paschali":"Jacob autem * génuit Joseph, virum Maríæ, de qua natus est Jesus, qui vocátur Christus, allelúja."
 	},
@@ -15,25 +14,21 @@
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2146",
 		"datum":"Missus est * Ángelus Gábriel a Deo ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David: et nomen Vírginis María.",
 		"in-tempore-paschali":"Missus est * Ángelus Gábriel a Deo ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David: et nomen Vírginis María, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2778",
 		"datum":"Cum esset desponsáta * mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto.",
 		"in-tempore-paschali":"Cum esset desponsáta * mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu sancto, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/1865",
 		"datum":"Joseph vir ejus, * cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam.",
 		"in-tempore-paschali":"Joseph vir ejus, * cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2673",
 		"datum":"Ángelus Dómini * appáruit Joseph, dicens: Joseph fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu sancto est: páriet autem fílium, et vocábis nomen ejus Jesum.",
 		"in-tempore-paschali":"Ángelus Dómini * appáruit Joseph, dicens: Joseph fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu sancto est: páriet autem fílium, et vocábis nomen ejus Jesum, allelúja."
 	},
@@ -58,7 +53,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2664",
 		"datum":"Exsúrgens Joseph a somno, * fecit sicut præcépit ei Ángelus Dómini, et accépit cónjugem suam.",
 		"in-tempore-paschali":"Exsúrgens Joseph a somno, * fecit sicut præcépit ei Ángelus Dómini, et accépit cónjugem suam, allelúja."
 	},
@@ -69,7 +63,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0319I",
 		"datum":"Christum Dei Fílium, qui putári dignátus est fílius Joseph, * Veníte adorémus.",
 		"in-tempore-paschali":"Christum Dei Fílium, qui putári dignátus est fílius Joseph, * Veníte adorémus, allelúja."
 	},
@@ -84,14 +77,9 @@
 		]
 	},
 	{
-		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0319N1A1",
-		"datum":"Ascéndit Joseph * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María."
-	},
-	{
-		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/0319N1A1",
-		"datum":"Ascéndit Joseph * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María, allelúja."
+		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Ascéndit Joseph * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María.",
+		"in-tempore-paschali":"Ascéndit Joseph * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-i","psalmus-i"],
@@ -99,7 +87,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0319N1A2",
 		"datum":"Venérunt * pastóres festinántes: et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio."
 	},
 	{
@@ -108,7 +95,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0319N1A3",
 		"datum":"Ecce Ángelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe púerum, et matrem ejus, et fuge in Ægýptum."
 	},
 	{
@@ -166,14 +152,9 @@
 		"responsum":"Pro salúte enim vestra misit me Deus ante vos in Ægýptum, allelúja."
 	},
 	{
-		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0319N2A1",
-		"datum":"Consúrgens Joseph, * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis."
-	},
-	{
-		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/0319N2A1",
-		"datum":"Consúrgens Joseph, * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis, allelúja."
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Consúrgens Joseph, * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis.",
+		"in-tempore-paschali":"Consúrgens Joseph, * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum: et erat ibi usque ad óbitum Heródis, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-ii","psalmus-i"],
@@ -181,7 +162,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0319N2A2",
 		"datum":"Defúncto Heróde, * Ángelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: Surge, et áccipe púerum et matrem ejus, et vade in terram Ísraël: defúncti sunt enim qui quærébant ánimam púeri."
 	},
 	{
@@ -190,7 +170,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0319N2A3",
 		"datum":"Accépit Joseph * púerum et matrem ejus, et venit in terram Ísraël."
 	},
 	{
@@ -248,14 +227,9 @@
 		"responsum":"Accépit eum Símeon in ulnas suas, et benedíxit Deum, allelúja."
 	},
 	{
-		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0319N3A1",
-		"datum":"Aúdiens Joseph * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire."
-	},
-	{
-		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/0319N3A1",
-		"datum":"Aúdiens Joseph * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire, allelúja."
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Aúdiens Joseph * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire.",
+		"in-tempore-paschali":"Aúdiens Joseph * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire, allelúja."
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-iii","psalmus-i"],
@@ -263,7 +237,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0319N3A2",
 		"datum":"Admónitus in somnis, * Joseph secéssit in partes Galilǽæ: et véniens habitávit in civitáte quæ vocátur Názareth; ut adimplerétur quod dictum est per Prophétas: Quóniam Nazarǽus vocábitur."
 	},
 	{
@@ -272,7 +245,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0319N3A3",
 		"datum":"Erat puer Jesu * et mater mirántes super his, quæ dicebántur de illo; et benedíxit illis Símeon."
 	},
 	{
@@ -364,7 +336,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12158",
 		"datum":"Ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph.",
 		"in-tempore-paschali":"Ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur fílius Joseph, allelúja."
 	},
@@ -434,7 +405,6 @@
 	},
 	{
 		"tags":["joseph-sponsus","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2431",
 		"datum":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.",
 		"in-tempore-paschali":"Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam, allelúja."
 	}
