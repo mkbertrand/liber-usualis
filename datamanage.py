@@ -184,7 +184,7 @@ class SecondaryLiturgicalContext(LiturgicalContext):
     def get_untagged(self, query):
         return {'tags': {query}, 'datum':psalms.get(self.content_books[0], query)}
 
-def getname(context, tagset):
+def get_name(context, tagset):
     import breviarium
     resp = breviarium.process(context, {'nomen'}, tagset, [])
     name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
@@ -201,8 +201,8 @@ def getdisplaykalendar(context):
     for entry in kalendar:
         if type(entry['tags']) is frozenset:
             entry['tags'] = [entry['tags']]
-        entry['names'] = [getname(context, tagset) for tagset in entry['tags']]
+        entry['names'] = [get_name(context, tagset) for tagset in entry['tags']]
         if any(i in entry['occurrence'] for i in ['feria-ii', 'feria-iii', 'feria-iv', 'feria-v', 'feria-vi', 'sabbatum']):
             entry['occurrence'] |= {'feria'}
-        entry['occurrence-name'] = getname(context, entry['occurrence'])
+        entry['occurrence-name'] = get_name(context, entry['occurrence'])
     return dump_data({'skeleton': ret, 'kalendar': kalendar})
