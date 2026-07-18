@@ -146,7 +146,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/MUXNN1R1",
 		"incipit":"Veni elécta mea, et ponam in te thronum meum:",
 		"responsum":"Quia concupívit Rex spéciem tuam.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
@@ -161,7 +160,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/MUXXN1R2",
 		"incipit":"Diffúsa est grátia in lábiis tuis:",
 		"responsum":"Proptérea benedíxit te Deus in ætérnum.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
@@ -176,7 +174,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/MUXXN1R3",
 		"incipit":"Spécie tua et pulchritúdine tua",
 		"responsum":"Inténde, próspere procéde, et regna.",
 		"versus":"Diffúsa est grátia in lábiis tuis, proptéra benedíxit te Deus in ætérnum."
@@ -227,7 +224,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/MUXXN2R1",
 		"incipit":"Propter veritátem, et mansuetúdinem, et justítiam:",
 		"responsum":"Et dedúcet te mirabíliter déxtera tua.",
 		"versus":"Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna."
@@ -242,7 +238,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/MUXXN2R2",
 		"incipit":"Dilexísti justítiam, et odísti iniquitátem:",
 		"responsum":"Proptérea unxit te Deus, Deus tuus óleo lætítiæ.",
 		"versus":"Propter veritátem, et mansuetúdinem, et justítiam."
@@ -257,7 +252,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/MUNXN2R3",
 		"incipit":"Fallax grátia, et vana est pulchritúdo:",
 		"responsum":"Múlier timens Deum, ipsa laudábitur.",
 		"versus":"Date ei de fructu mánuum suárum, laudent eam in portis ópera ejus."
@@ -310,7 +304,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/MUNXN3R1",
 		"incipit":"Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus: considerávit sémitas domus suæ,",
 		"responsum":"Et panem otiósa non comédit.",
 		"versus":"Gustávit et vidit quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus."
@@ -325,7 +318,6 @@
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/MUVXN3R2",
 		"incipit":"Regnum mundi, et omnem ornátum sǽculi contémpsi, propter amórem Dómini mei Jesu Christi:",
 		"responsum":"Quem vidi, quem amávi, in quem crédidi, quem diléxi.",
 		"versus":"Eructávit cor meum verbum bonum: dico ego ópera mea regi."
@@ -350,7 +342,6 @@
 	},
 	{
 		"tags":["vidua","tertia","responsorium-breve"],
-		"src":"gregobase/3208",
 		"incipit":"Spécie tua",
 		"responsum":"et pulchritúdine tua.",
 		"versus":"Inténde, próspere procéde, et regna."
@@ -376,7 +367,6 @@
 	},
 	{
 		"tags":["vidua","sexta","responsorium-breve"],
-		"src":"gregobase/8710",
 		"incipit":"Adjuvábit eam",
 		"responsum":"Deus vultu suo.",
 		"versus":"Deus in médio ejus, non commovébitur."
@@ -402,7 +392,6 @@
 	},
 	{
 		"tags":["vidua","nona","responsorium-breve"],
-		"src":"gregobase/3143",
 		"incipit":"Elégit eam Deus,",
 		"responsum":"Et præelégit eam.",
 		"versus":"In tabernáculo suo habitáre facit eam."

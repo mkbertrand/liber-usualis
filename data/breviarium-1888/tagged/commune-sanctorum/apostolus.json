@@ -116,7 +116,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/APEXN1R1",
 		"incipit":"Ecce ego mitto vos sicut oves in médio lupórum, dicit Dóminus:",
 		"responsum":"Estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ.",
 		"versus":"Dum lucem habétis, crédite in lucem, ut fílii lucis sitis."
@@ -127,7 +126,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/APEXN1R2",
 		"incipit":"Tóllite jugum meum super vos, dicit Dóminus, et díscite a me, quia mitis sum, et húmilis corde:",
 		"responsum":"Jugum enim meum suáve est, et onus meum leve.",
 		"versus":"Et inveniétis réquiem, animábus vestris."
@@ -138,7 +136,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/APEXN1R3",
 		"incipit":"Dum steréritis ante reges et prǽsides, nolíte cogitáre quómodo quid loquámini:",
 		"responsum":"Dábitur enim vobis in illa hora, quid loquámini.",
 		"versus":"Non enim vos estis qui loquímini: sed Spíritus Patris vestri, qui lóquitur in vobis."
@@ -183,7 +180,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/APEXN2R1",
 		"incipit":"Vidi conjúnctos viros, habéntes spléndidas vestes, et Angelus Dómini locútus est ad me, dicens:",
 		"responsum":"Isti sunt viri sancti facti amíci Dei.",
 		"versus":"Vidi Angelum Dei fortem, volántem per médium cœlum, voce magna clamántem et dicéntem."
@@ -194,7 +190,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/APEXN2R2",
 		"incipit":"Beáti estis, cum maledíxerint vobis hómines, et persecúti vos fúerint, díxerint omne malum advérsum vos, mentiéntes, propter me:",
 		"responsum":"Gaudéte et exsultáte, quóniam merces vestra copiósa est in cœlis.",
 		"versus":"Cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis."
@@ -205,7 +200,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/APEXN2R3",
 		"incipit":"Isti sunt triumphatóres et amíci Dei, qui contemnéntes jussa príncipum, meruérunt prǽmia ætérna:",
 		"responsum":"Modo coronántur, et accípiunt palmam.",
 		"versus":"Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni."
@@ -255,7 +249,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/APEXN3R1",
 		"incipit":"Isti sunt qui vivéntes in carne, plantavérunt Ecclésiam sánguine suo:",
 		"responsum":"Cálicem Dómini bibérunt, et amíci Dei facti sunt.",
 		"versus":"In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum."
@@ -266,7 +259,6 @@
 	},
 	{
 		"tags":["apostolus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/APEXN3R2",
 		"incipit":"Isti sunt viri sancti, quos elégit Dóminus in caritáte non ficta, et dedit illis glóriam sempitérnam:",
 		"responsum":"Quorum doctrína fulget Ecclésia, ut sole luna.",
 		"versus":"Sancti per fidem vicérunt regna operáti sunt justítiam."
@@ -289,7 +281,6 @@
 	},
 	{
 		"tags":["apostolus","tertia","responsorium-breve"],
-		"src":"gregobase/3187",
 		"incipit":"In omnem terram",
 		"responsum":"exívit sonus eórum.",
 		"versus":"Et in fines orbis terræ verba eórum."
@@ -300,7 +291,6 @@
 	},
 	{
 		"tags":["apostolus","sexta","responsorium-breve"],
-		"src":"gregobase/3055",
 		"incipit":"Constítues eos príncipes",
 		"responsum":"super omnem terram.",
 		"versus":"Mémores erunt nóminis tui Dómine."
@@ -311,7 +301,6 @@
 	},
 	{
 		"tags":["apostolus","nona","responsorium-breve"],
-		"src":"gregobase/3166",
 		"incipit":"Nimis honoráti sunt",
 		"responsum":"amíci tui Deus.",
 		"versus":"Nimis confortátus est principátus eórum."

@@ -152,7 +152,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/COPON1R1",
 		"incipit":"Euge serve bone et fidélis, quia in pauca fuísti fidélis, supra multa te constítuam:",
 		"responsum":"Intra in gaúdium Dómini tui.",
 		"versus":"Dómine quinque talénta tradidísti mihi, ecce ália quinque superlucrátus sum."
@@ -167,7 +166,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/CONPN1R2",
 		"incipit":"Justus germinábit sicut lílium:",
 		"responsum":"Et florébit in ætérnum ante Dóminum.",
 		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
@@ -182,7 +180,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/CONPN1R3",
 		"incipit":"Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum:",
 		"responsum":"Et invéntus est in número sanctórum.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
@@ -236,7 +233,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/CONPN2R1",
 		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
 		"responsum":"Et dedit illi claritátem ætérnam.",
 		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
@@ -251,7 +247,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/COPON2R2",
 		"incipit":"Amávit eum Dóminus, et ornávit eum: stolam glóriæ índuit eum,",
 		"responsum":"Et ad portas paradísi coronávit eum.",
 		"versus":"Índuit eum Dóminus lorícam fídei, et ornávit eum."
@@ -266,7 +261,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/CONPN2R3",
 		"incipit":"Iste homo perfécit ómnia quæ locútus est ei Deus, et dixit ad eum: Ingrédere in réquiem meam:",
 		"responsum":"Quia te vidi justum coram me ex ómnibus géntibus.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
@@ -322,7 +316,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/CONPN3R1",
 		"incipit":"Iste est qui ante Deum magnas virtútes operátus est, et de omni corde suo laudávit Dóminum:",
 		"responsum":"Ipse intercédat pro peccátis ómnium populórum.",
 		"versus":"Ecce homo sine queréla, verus Dei cultor, ábstinens se ab omni ópere malo, et pérmanens in innocéntia sua."
@@ -337,7 +330,6 @@
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/COPON3R2",
 		"incipit":"Sint lumbi vestri præcíncti, et lucérnæ ardéntes in mánibus vestris:",
 		"responsum":"Et vos símiles homínibus exspectántibus dóminum suum, quando revertátur a núptiis.",
 		"versus":"Vigiláte ergo, quia nescítis qua hora Dóminus vester ventúrus sit."
@@ -379,7 +371,6 @@
 	},
 	{
 		"tags":["confessor","tertia","responsorium-breve"],
-		"src":"gregobase/3089",
 		"incipit":"Amávit eum Dóminus,",
 		"responsum":"et ornávit eum.",
 		"versus":"Stolam glóriæ índuit eum."
@@ -396,7 +387,6 @@
 	},
 	{
 		"tags":["confessor","sexta","responsorium-breve"],
-		"src":"gregobase/3084",
 		"incipit":"Os justi",
 		"responsum":"meditábitur sapiéntiam.",
 		"versus":"Et lingua ejus loquétur judícium."
@@ -413,7 +403,6 @@
 	},
 	{
 		"tags":["confessor","nona","responsorium-breve"],
-		"src":"gregobase/3110",
 		"incipit":"Lex Dei ejus",
 		"responsum":"in corde ipsíus.",
 		"versus":"Et non supplantabúntur gressus ejus."

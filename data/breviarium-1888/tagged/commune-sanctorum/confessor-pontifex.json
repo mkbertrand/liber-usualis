@@ -76,7 +76,6 @@
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/COPON1R2",
 		"incipit":"Ecce sacérdos magnus, qui in diébus suis plácuit Deo:",
 		"responsum":"Ídeo jurejurándo fecit illum Dóminus créscere in plebem suam.",
 		"versus":"Benedictiónem ómnium géntium dedit illi, et testaméntum suum confirmávit super caput ejus."
@@ -91,7 +90,6 @@
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/COPON1R3",
 		"incipit":"Jurávit Dóminus, et non pœnitébit eum:",
 		"responsum":"Tu es sacérdos in ætérnum secúndum órdinem Melchísedech.",
 		"versus":"Dixit Dóminus Dómino meo, Sede a dextris meis."
@@ -117,7 +115,6 @@
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/COPON2R1",
 		"incipit":"Invéni David, servum meum, óleo sancto meo unxi eum:",
 		"responsum":"Manus enim mea auxiliábitur ei.",
 		"versus":"Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei."
@@ -132,7 +129,6 @@
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/COPON2R2",
 		"incipit":"Pósui adjutórium super poténtem, et exaltávi eléctum de plebe mea:",
 		"responsum":"Manus enim mea auxiliábitur ei.",
 		"versus":"Invéni David servum meum, óleo sancto meo unxi eum."
@@ -147,7 +143,6 @@
 	},
 	{
 		"tags":["confessor-pontifex","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/COPON2R3",
 		"incipit":"Iste est qui ante Deum magnas virtútes operátus est, et omnis terra doctrína ejus repléta est:",
 		"responsum":"Ipse intercédat pro peccátis ómnium populórum.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
@@ -207,7 +202,6 @@
 	},
 	{
 		"tags":["confessor-pontifex","sexta","responsorium-breve"],
-		"src":"gregobase/3222",
 		"incipit":"Elégit eum Dóminus",
 		"responsum":"sacerdótem sibi.",
 		"versus":"Ad sacrificándum ei hóstiam laudis."
@@ -224,14 +218,12 @@
 	},
 	{
 		"tags":["confessor-pontifex","nona","responsorium-breve"],
-		"src":"gregobase/3101",
 		"incipit":"Tu es sacérdos",
 		"responsum":"in ætérnum.",
 		"versus":"Secúndum órdinem Melchísedech."
 	},
 	{
 		"tags":["confessor-pontifex","nona","responsorium-breve","in-tempore-paschali"],
-		"src":"gregobase/3101",
 		"incipit":"Tu es sacérdos in ætérnum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Secúndum órdinem Melchísedech."

@@ -104,7 +104,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/UMEXN1R1",
 		"incipit":"Iste sanctus pro lege Dei sui certávit usque ad mortem, et a verbis impiórum non tímuit:",
 		"responsum":"Fundátus enim erat supra firmam petram.",
 		"versus":"Iste est qui contémpsit vitam mundi, et pervénit ad cœléstia regna."
@@ -115,7 +114,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/UMEXN1R2",
 		"incipit":"Justus germinábit sicut lílium:",
 		"responsum":"Et florébit in ætérnum ante Dóminum.",
 		"versus":"Plantátus in domo Dómini, in átriis domus Dei nostri."
@@ -126,7 +124,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/UMEXN1R3",
 		"incipit":"Iste cognóvit justítiam, et vidit mirabília magna, et exorávit Altíssimum:",
 		"responsum":"Et invéntus est in número sanctórum.",
 		"versus":"Iste est qui contémpserint vitam mundi, et pervénit ad cœléstia regna."
@@ -171,7 +168,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/UMEXN2R1",
 		"incipit":"Honéstum fecit illum Dóminus, et custodívit eum ab inimícis, et a seductóribus tutávit illum:",
 		"responsum":"Et dedit illi claritátem ætérnam.",
 		"versus":"Descendítque cum illo in fóveam, et in vínculis non derelíquit eum."
@@ -182,7 +178,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/UMEXN2R2",
 		"incipit":"Desidérium ánimæ ejus tribuísti ei Dómine,",
 		"responsum":"Et voluntáte labiórum ejus non fraudásti eum.",
 		"versus":"Quóniam prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso."
@@ -193,7 +188,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/UMEXN2R3",
 		"incipit":"Stola jucunditátis índuit eum Dóminus:",
 		"responsum":"Et corónam pulchritúdinis pósuit super caput ejus.",
 		"versus":"Cibávit illum Dóminus pane vitæ et intelléctus: et aqua sapiéntiæ salutáris potávit illum."
@@ -240,7 +234,6 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/UMEXN3R1",
 		"incipit":"Coróna aúrea super caput ejus,",
 		"responsum":"Expréssa signo sanctitátis, glória honóris, et opus fortitúdinis.",
 		"versus":"Quóniam prævenísti eum in benedictiónibus dulcédinis, posuísti in cápite ejus corónam de lápide pretióso."
@@ -251,14 +244,12 @@
 	},
 	{
 		"tags":["martyr","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/UMEXN3R2a",
 		"incipit":"Hic est vere Martyr, qui pro Christi nómine sánguinem suum fudit:",
 		"responsum":"Qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsívit, sed ad cœléstia regna pervénit.",
 		"versus":"Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei."
 	},
 	{
 		"tags":["martyr","episcopus-martyr","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/UMEXN3R2b",
 		"incipit":"Dómine prævenísti eum in benedictiónibus dulcédinis:",
 		"responsum":"Posuísti in cápite ejus corónam de lápide pretióso.",
 		"versus":"Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi."
@@ -290,7 +281,6 @@
 	},
 	{
 		"tags":["martyr","tertia","responsorium-breve"],
-		"src":"gregobase/3108",
 		"incipit":"Glória et honóre",
 		"responsum":"coronásti eum Dómine.",
 		"versus":"Et constituísti eum super ópera mánuum tuárum."
@@ -301,7 +291,6 @@
 	},
 	{
 		"tags":["martyr","sexta","responsorium-breve"],
-		"src":"gregobase/3097",
 		"incipit":"Posuísti Dómine",
 		"responsum":"super caput ejus.",
 		"versus":"Corónam de lápide pretióso."
@@ -312,7 +301,6 @@
 	},
 	{
 		"tags":["martyr","nona","responsorium-breve"],
-		"src":"gregobase/12441",
 		"incipit":"Magna est glória ejus",
 		"responsum":"in salutári tuo.",
 		"versus":"Glóriam et magnum decórem impónes super eum."

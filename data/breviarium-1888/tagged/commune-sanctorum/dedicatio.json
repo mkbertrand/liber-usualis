@@ -136,7 +136,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/CDEDN1R1",
 		"incipit":"In dedicatióne templi decantábat pópulus laudem:",
 		"responsum":"Et in ore eórum dulcis resonábat sonus.",
 		"versus":"Fundáta est domus Dómini supra vérticem móntium, et vénient ad eam omnes Gentes."
@@ -151,7 +150,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/CDEDN1R2",
 		"incipit":"Fundáta est domus Dómini supra vérticem móntium, et exaltáta est super omnes colles:",
 		"responsum":"Et vénient ad eam omnes Gentes, et dicent: Glória tibi Dómine.",
 		"versus":"Veniéntes autem autem vénient cum exsultatióne, portántes manípulos suos."
@@ -166,7 +164,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/CDEDN1R3",
 		"incipit":"Bénedic Dómine domum istam, quam ædificávi nómini tuo veniéntium in loco isto,",
 		"responsum":"Exaúdi preces in excélso sólio glóriæ tuæ.",
 		"versus":"Dómine, si convérsus fúerit pópulus tuus, et oráverit ad sanctuárium tuum."
@@ -217,7 +214,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/CDEDN2R1",
 		"incipit":"Orántibus in loco isto,",
 		"responsum":"Dimítte peccáta pópuli tui Deus, et osténde eis viam bonam, per quam ámbulent, et da glóriam in loco isto.",
 		"versus":"Qui regis Ísraël inténde, qui dedúcis velut ovem Joseph, qui sedes super Chérubim."
@@ -232,7 +228,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/CDEDN2R2",
 		"incipit":"O quam metuéndus est locus iste:",
 		"responsum":"Vere non est hic áliud, nisi domus Dei, et porta cœli.",
 		"versus":"Hæc est domus Dómini fírmiter ædificáta, bene fundáta est supra firmam petram."
@@ -247,7 +242,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/CDEDN2R3",
 		"incipit":"Mane surgens Jacob erigébat lápidem in títulum, fundens óleum désuper, votum vovit Dómino:",
 		"responsum":"Vere locus iste sanctus est, et ego nesciébam.",
 		"versus":"Cumque evigilásset Jacob de somno, ait."
@@ -296,7 +290,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/CDEDN3R1",
 		"incipit":"Domus mea, domus oratiónis vocábitur, dicit Dóminus: in ea omnis qui petit, áccipit; et qui quærit, ínvenit:",
 		"responsum":"Et pulsánti aperiétur.",
 		"versus":"Pétite, et accipiétis: quǽeite, et inveniétis."
@@ -311,7 +304,6 @@
 	},
 	{
 		"tags":["dedicatio","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/CDEDN3R2",
 		"incipit":"Lápides pretiósi omnes muri tui:",
 		"responsum":"Et turres Jerúsalem gemmis ædificabúntur.",
 		"versus":"Portæ Jerúsalem ex sapphíro et smarágdo ædificabúntur, et ex lápide pretióso omnis circúitus muri ejus."
@@ -341,14 +333,12 @@
 	},
 	{
 		"tags":["dedicatio","tertia","responsorium-breve"],
-		"src":"gregobase/3121",
 		"incipit":"Domum tuam Dómine",
 		"responsum":"decet sanctitúdo.",
 		"versus":"In longitúdinem diérum."
 	},
 	{
 		"tags":["dedicatio","tertia","responsorium-breve","in-tempore-paschali"],
-		"src":"gregobase/3121",
 		"incipit":"Domum tuam Dómine decet sanctitúdo.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"In longitúdinem diérum."
@@ -364,14 +354,12 @@
 	},
 	{
 		"tags":["dedicatio","sexta","responsorium-breve"],
-		"src":"gregobase/1065",
 		"incipit":"Locus iste sanctus est,",
 		"responsum":"in quo orat sacérdos.",
 		"versus":"Pro delíctis et peccátis pópuli."
 	},
 	{
 		"tags":["dedicatio","sexta","responsorium-breve","in-tempore-paschali"],
-		"src":"gregobase/1065",
 		"incipit":"Locus iste sanctus est, in quo orat sacérdos.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Pro delíctis et peccátis pópuli."
@@ -382,14 +370,12 @@
 	},
 	{
 		"tags":["dedicatio","nona","responsorium-breve"],
-		"src":"gregobase/3188",
 		"incipit":"Hæc est domus Dómini",
 		"responsum":"fírmiter ædificáta.",
 		"versus":"Bene fundáta est supra firmam petram."
 	},
 	{
 		"tags":["dedicatio","nona","responsorium-breve","in-tempore-paschali"],
-		"src":"gregobase/3188",
 		"incipit":"Hæc est domus Dómini fírmiter ædificáta.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Bene fundáta est supra firmam petram."
