@@ -7,7 +7,9 @@ import os
 import copy
 import logging
 import requests
+
 import kalendar.display as display
+import psalms
 
 data_root = Path(__file__).parent
 
@@ -128,7 +130,7 @@ class LiturgicalBook:
                 ret.append({k: v for k, v in entry.items() if k in functiontags})
         return ret
 
-    def getpile(self, pilequery):
+    def get_pile(self, pilequery):
         ret = []
         for name, file in self.getwalk():
             if name in pilequery:
@@ -165,11 +167,28 @@ class LiturgicalContext:
             ret.extend(i)
         return ret
 
-    def getpile(self, pilequery):
+    def get_pile(self, pilequery):
         ret = []
         for book in self.books:
-            ret.extend(book.getpile(pilequery))
+            ret.extend(book.get_pile(pilequery))
         return ret
+
+    def get_untagged(self, query):
+        return {'tags': {query}, 'datum':psalms.get(self.books[0], query)}
+
+class SecondaryLiturgicalContext(LiturgicalContext):
+    def __init__(self, books, content_books):
+        super().__init__(books)
+        self.content_books = content_books
+
+    def get_pile(self, pilequery):
+        ret = []
+        for book in self.content_books:
+            ret.extend(book.get_pile(pilequery))
+        return ret
+
+    def get_untagged(self, query):
+        return {'tags': {query}, 'datum':psalms.get(self.content_books[0], query)}
 
 def getname(context, tagset):
     import breviarium

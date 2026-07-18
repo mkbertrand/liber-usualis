@@ -134,16 +134,16 @@ def managesearch(query, result):
         except IndexError:
             return result
 
-def search(context, query, multipleresults = False, multipleresultssort = None, translatedcontext = None, pilemod = []):
+def search(context, query, multipleresults = False, multipleresultssort = None, pilemod = []):
     for i in query:
         if '/' in i:
             try:
-                return {'tags': {i}, 'datum':psalms.get((translatedcontext if translatedcontext else context).books[0], i)}
+                return context.get_untagged(i)
             except FileNotFoundError:
                 return None
 
     pilequery = query | defaultpile
-    pile = context.getpile(pilequery) + pilemod if not translatedcontext else translatedcontext.getpile(pilequery) + pilemod
+    pile = context.get_pile(pilequery) + pilemod
     result = list(anysearch(query, pile))
 
     # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result

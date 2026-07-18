@@ -212,8 +212,8 @@ def rite():
                 for book in DEFAULT_CONTEXT.books:
                     if datamanage.data_root.joinpath('data').joinpath(f'{book.title}-{translation}').exists():
                         translatedbooks.append(datamanage.get_book(f'{book.title}-{translation}'))
-                translatedcontext = datamanage.LiturgicalContext(translatedbooks)
-                return breviarium.search(DEFAULT_CONTEXT, search, translatedcontext=translatedcontext)
+                translated_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, translatedbooks)
+                return breviarium.search(translated_context, search)
 
             def traverse(obj):
                 if type(obj) is dict and 'tags' in obj:
@@ -229,9 +229,9 @@ def rite():
             traverse(rite['datum'])
         
         def get_chant(tagset):
-            chant_context =  datamanage.LiturgicalContext([datamanage.LiturgicalBook(datamanage.data_root.joinpath('data-chant/gregobase'), 'gregobase')])
+            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.LiturgicalBook(datamanage.data_root.joinpath('data-chant/gregobase'), 'gregobase')])
             warnings.simplefilter('ignore')
-            return breviarium.search(DEFAULT_CONTEXT, tagset, translatedcontext=chant_context)
+            return breviarium.search(chant_context, tagset)
 
         def traverse_chant(obj):
             if type(obj) is dict and 'quaesitum' in obj:
