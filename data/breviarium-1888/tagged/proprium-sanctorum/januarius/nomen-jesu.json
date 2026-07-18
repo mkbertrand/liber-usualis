@@ -108,7 +108,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/N2N1R1",
 		"incipit":"Ecce concípies, et páries fílium, et vocábis nomen ejus Jesum:",
 		"responsum":"Ipse enim salvum fáciet pópulum suum a peccátis eórum.",
 		"versus":"Vocátum est nomen ejus Jesus, quod vocátum est ab Ángelo, priúsquam in útero conciperétur."
@@ -119,7 +118,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/N2N1R2",
 		"incipit":"Benedíctum est nomen tuum, Deus patrum nostrórum, qui cum irátus fúeris, misericórdiæ recordáberis,",
 		"responsum":"Et in témpore tribulatiónis peccáta dimíttis.",
 		"versus":"Et benedíctum nomen majestátis tuæ in ætérnum, qui facis mirabília solus."
@@ -130,7 +128,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/N2N1R3",
 		"incipit":"Laudábo nomen tuum assídue,",
 		"responsum":"Et collaudábo illud in confessióne.",
 		"versus":"Lætábor et exsultábo in te: psallam nómini tuo, Altíssime."
@@ -160,7 +157,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/N2N2R1",
 		"incipit":"Sperent in te, qui novérunt nomen tuum:",
 		"responsum":"Quóniam non dereliquísti quæréntes te Dómine.",
 		"versus":"Exsúrge Dómine, ádjuva nos, et líbera nos propter nomen tuum."
@@ -171,7 +167,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/N2N2R2",
 		"incipit":"Confiteámur nómini tuo magno,",
 		"responsum":"Quóniam terríbile et sanctum est.",
 		"versus":"Hi in cúrribus, et hi in equis, nos autem in nómine Dómini Dei nostri invocábimus."
@@ -182,7 +177,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/N2N2R3",
 		"incipit":"Læténtur omnes, qui sperant in te Dómine, in ætérnum exsultábunt, et habitábis in eis, et gloriabúntur in te omnes,",
 		"responsum":"Qui díligunt nomen tuum.",
 		"versus":"Dómine in lúmine vultus tui ambulábunt, et in nómine tuo exsultábunt tota die."
@@ -217,7 +211,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/N2N3R1",
 		"incipit":"Tribulatiónem et dolórem invéni:",
 		"responsum":"Et nomen Dómini invocávi.",
 		"versus":"Turris fortíssima nomen Dómini, in ipso sperávi, et adjútus sum."
@@ -228,7 +221,6 @@
 	},
 	{
 		"tags":["nomen-jesu","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/N2N3R2",
 		"incipit":"Exspectábo nomen tuum Dómine,",
 		"responsum":"Quóniam bonum est in conspéctu sanctórum tuórum.",
 		"versus":"Ut confiteámur nómini sancto tuo, et gloriémur in laude tua."
@@ -269,7 +261,6 @@
 	},
 	{
 		"tags":["nomen-jesu","tertia","responsorium-breve"],
-		"src":"gregobase/3092",
 		"incipit":"Sit nomen Dómini benedíctum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Ex hoc nunc, et usque in sǽculum."
@@ -290,7 +281,6 @@
 	},
 	{
 		"tags":["nomen-jesu","sexta","responsorium-breve"],
-		"src":"gregobase/3201",
 		"incipit":"Afférte Dómino glóriam et honórem.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Afférte Dómino glóriam nómini ejus."
@@ -312,7 +302,6 @@
 	},
 	{
 		"tags":["nomen-jesu","nona","responsorium-breve"],
-		"src":"gregobase/3191",
 		"incipit":"Magnificáte Dóminum mecum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Et exaltémus nomen ejus in idípsum."
