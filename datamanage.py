@@ -54,12 +54,6 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-def flattensetlist(sets):
-    ret = set()
-    for i in sets:
-        ret |= i
-    return ret
-
 DATA_CHANT = Path('data-chant').resolve()
 
 @functools.lru_cache(maxsize=1024)
@@ -153,7 +147,7 @@ class LiturgicalContext:
     def getcategory(self, category):
         finds = [book.getcategory(category) for book in self.books if book.hascategory(category)]
         if all(type(cat) is frozenset for cat in finds):
-            return flattensetlist(finds)
+            return set().union(*finds)
         else:
             ret = []
             for i in finds:

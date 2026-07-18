@@ -36,12 +36,6 @@ def striptags(j):
 
 	return recurse(j)
 
-def flattensetlist(sets):
-	ret = set()
-	for i in sets:
-		ret |= i
-	return ret
-
 @pytest.mark.parametrize('day', [date(year, 1, 1) + timedelta(days=i) for i in range(365)])
 def test_match(day) -> None:
 

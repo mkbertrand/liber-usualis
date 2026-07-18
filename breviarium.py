@@ -19,12 +19,6 @@ import psalms
 
 defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
 
-def flattensetlist(sets):
-    ret = set()
-    for i in sets:
-        ret |= i
-    return ret
-
 def expandcat(context, category):
     def expandopenedcat(category):
         if type(category) is set or type(category) is frozenset:
@@ -36,7 +30,7 @@ def expandcat(context, category):
                     ret.add(i)
             return ret
         elif type(category) is list:
-            return expandopenedcat(flattensetlist(category))
+            return expandopenedcat(set().union(*category))
         else:
             raise RuntimeError(str(category))
 

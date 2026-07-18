@@ -83,12 +83,6 @@ def localpage(preferredlocale, page):
 
         return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']))
 
-def flattensetlist(sets):
-    ret = set()
-    for i in sets:
-        ret |= i
-    return ret
-
 def getname(tagset):
     resp = breviarium.process(DEFAULT_CONTEXT, {'nomen'}, tagset, [])
     name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
