@@ -84,7 +84,6 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","completorium","antiphona","antiphona-nunc-dimittis"],
-		"src":"gregobase/18315",
 		"datum":"Sub tuum præsídium * confúgimus, sancta Dei Génitrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis líbera nos semper, Virgo gloriósa et benedícta."
 	},
 	{
@@ -94,7 +93,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","antiphona","antiphona-invitatorium"],
-		"datum":"Ave María, grátia plena: * Dóminus tecum."
+    "datum":[["bmv-sabbatum","antiphona","antiphona-invitatorium"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","matutinum","nocturnae"],
@@ -174,7 +173,7 @@
 	},
 	{
 		"tags":["officium-parvum-bmv","laudes","antiphona","antiphona-benedictus"],
-		"datum":"Beáta Dei Génitrix María, * Virgo perpétua, templum Dómini, sacrárium Spíritus sancti: sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu."
+    "datum":[["bmv-sabbatum","antiphona","antiphona-benedictus"]]
 	},
 	{
 		"tags":["officium-parvum-bmv","laudes","collecta"],
@@ -302,7 +301,6 @@
 			["officium-parvum-bmv","in-tempore-adventus","completorium","antiphona","antiphona-nunc-dimittis"],
 			["officium-parvum-bmv","in-tempore-adventus","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/12304",
 		"datum":"Spíritus sanctus * in te descéndet María: ne tímeas, habébis in útero Fílium Dei, allelúja."
 	},
 	{
