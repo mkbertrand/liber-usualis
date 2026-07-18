@@ -83,7 +83,7 @@ function chomp(gabc, tags) {
 		return gabcdata + gabc.substring(0, gabc.search(/\(Z\-?\)/));
 
 	} else if (tags.includes('antiphona')) {
-    clef = gabc.match(/^\((.+?)\)/)
+    clef = gabc.match(/^\((.+?)\)/m)
     let euouae = '';
     if (clef) {
       // If clef has a middle letter (very very rare) remove it.
@@ -102,7 +102,6 @@ function chomp(gabc, tags) {
 		if (!tags.includes('in-tempore-septuagesimae') && gabc.includes('<i>Post Septuag.</i>')) {
 			gabc = gabc.substring(0, gabc.indexOf('<i>Post Septuag.</i>')).trim();
 		}
-
 		if (tags.includes('intonata')) {
 			gabc = gabc.substring(0, gabc.indexOf('*')) + '(::) ' + euouae;
 		} else if (tags.includes('pars')) {
@@ -204,7 +203,7 @@ class ChantElement extends HTMLElement {
 		ChantElement.gabc = "";
 
 		if (this.innerText != "") {
-			var gabc = chomp(this.innerText, $(this).attr('tags'));
+			var gabc = chomp(this.innerText, $(this).attr('tags').split('+'));
 			this.setGabc(gabc);
 			this.init();
 		} else {
@@ -213,7 +212,7 @@ class ChantElement extends HTMLElement {
         .catch(err => this.innerText = '')
 				.then(data => data.text())
         .catch(console.log)
-				.then(resp => chomp(resp, $(this).attr('tags')))
+				.then(resp => chomp(resp, $(this).attr('tags').split('+')))
 				.then(text => {this.setGabc(text); this.init();});
 		}
 	}
