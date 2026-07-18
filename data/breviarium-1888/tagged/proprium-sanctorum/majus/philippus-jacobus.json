@@ -4,33 +4,15 @@
 		"datum":"Ss. Philippi et Jacobi Apostolorum"
 	},
 	{
-		"tags":["philippus-jacobus","antiphona","antiphona-i"],
-		"src":"gregobase/2396",
-		"datum":"Dómine, * osténde nobis Patrem, et súfficit nobis, allelúja."
-	},
-	{
-		"tags":["philippus-jacobus","antiphona","antiphona-ii"],
-		"src":"gregobase/2696",
-		"datum":"Philíppe, * qui videt me, videt et Patrem meum, allelúja."
-	},
-	{
-		"tags":["philippus-jacobus","antiphona","antiphona-iii"],
-		"src":"gregobase/2029",
-		"datum":"Tanto témpore * vobíscum sum, et non cognovístis me? Philíppe, qui videt me, videt et Patrem meum, allelúja."
-	},
-	{
-		"tags":["philippus-jacobus","antiphona","antiphona-iv"],
-		"src":"gregobase/2637",
-		"datum":"Si cognovissétis me, * et Patrem meum útique cognovissétis, et ámodo cognoscétis eum, et vidístis eum, allelúja, allelúja, allelúja."
-	},
-	{
-		"tags":["philippus-jacobus","antiphona","antiphona-v"],
-		"src":"gregobase/2137",
-		"datum":"Si dilígitis me, * mandáta mea serváte, allelúja, allelúja, allelúja."
+		"tags":["philippus-jacobus","antiphona"],
+		"antiphona-i":"Dómine, * osténde nobis Patrem, et súfficit nobis, allelúja.",
+		"antiphona-ii":"Philíppe, * qui videt me, videt et Patrem meum, allelúja.",
+		"antiphona-iii":"Tanto témpore * vobíscum sum, et non cognovístis me? Philíppe, qui videt me, videt et Patrem meum, allelúja.",
+		"antiphona-iv":"Si cognovissétis me, * et Patrem meum útique cognovissétis, et ámodo cognoscétis eum, et vidístis eum, allelúja, allelúja, allelúja.",
+		"antiphona-v":"Si dilígitis me, * mandáta mea serváte, allelúja, allelúja, allelúja."
 	},
 	{
 		"tags":["philippus-jacobus","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1931",
 		"datum":"Non turbétur * cor vestrum, neque formídet: créditis in Deum, et in me crédite: in domo Patris mei mansiónes multæ sunt, allelúja, allelúja."
 	},
 	{
@@ -62,12 +44,10 @@
 	},
 	{
 		"tags":["philippus-jacobus","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12015",
 		"datum":"Ego sum via, * véritas, et vita: nemo venit ad Patrem, nisi per me, allelúja."
 	},
 	{
 		"tags":["philippus-jacobus","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2558",
 		"datum":"Si manséritis in me, * et verba mea in vobis mánserint, quodcúmque petiéritis, fiet vobis, allelúja, allelúja, allelúja."
 	}
 ]

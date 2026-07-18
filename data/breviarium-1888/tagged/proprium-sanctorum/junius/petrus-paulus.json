@@ -8,29 +8,12 @@
 		"datum":"Ss. Petri et Pauli"
 	},
 	{
-		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-i"],
-		"src":"gregobase/1866",
-		"datum":"Petrus et Joánnes * ascendébant in templum ad horam oratiónis nonam."
-	},
-	{
-		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-ii"],
-		"src":"gregobase/2580",
-		"datum":"Argéntum et aurum * non est mihi: quod autem hábeo, hoc tibi do."
-	},
-	{
-		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-iii"],
-		"src":"gregobase/2589",
-		"datum":"Dixit Ángelus ad Petrum: * Circúmda tibi vestiméntum tuum, et séquere me."
-	},
-	{
-		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-iv"],
-		"src":"gregobase/2557",
-		"datum":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja."
-	},
-	{
-		"tags":["petrus-paulus","duplex-i-classis","antiphona","antiphona-v"],
-		"src":"gregobase/1950",
-		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
+		"tags":["petrus-paulus","duplex-i-classis","antiphona"],
+		"antiphona-i":"Petrus et Joánnes * ascendébant in templum ad horam oratiónis nonam.",
+		"antiphona-ii":"Argéntum et aurum * non est mihi: quod autem hábeo, hoc tibi do.",
+		"antiphona-iii":"Dixit Ángelus ad Petrum: * Circúmda tibi vestiméntum tuum, et séquere me.",
+		"antiphona-iv":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja.",
+		"antiphona-v":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","capitulum"],
@@ -47,7 +30,6 @@
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2717",
 		"datum":"Tu es pastor óvium, * princeps Apostolórum: tibi tráditæ sunt claves regni cœlórum."
 	},
 	{
@@ -160,7 +142,6 @@
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2689",
 		"datum":"Quodcúmque * ligáveris super terram, erit ligátum et in cœlis: et quodcúmque sólveris super terram, erit solútum et in cœlis: dicit Dóminus Simóni Petro."
 	},
 	{
@@ -173,7 +154,6 @@
 	},
 	{
 		"tags":["petrus-paulus","duplex-i-classis","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1918",
 		"datum":"Hódie * Simon Petrus ascéndit crucis patíbulum, allelúja: hódie claviculárius regni gaúdens migrávit ad Christum: hódie Paulus Apóstolus, lumen orbis terræ inclináto cápite pro Christi nómine martýrio coronátus est, allelúja."
 	},
 	{

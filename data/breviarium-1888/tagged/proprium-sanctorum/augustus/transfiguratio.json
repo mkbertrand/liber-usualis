@@ -4,33 +4,19 @@
 		"datum":"In Transfiguratione D.N.J.C."
 	},
 	{
-		"tags":["transfiguratio","antiphona","antiphona-i"],
-		"src":"gregobase/2500",
-		"datum":"Assúmpsit Jesus * Petrum, et Jacóbum, et Joánnem fratrem ejus, et duxit eos in montem excélsum seórsum, et transfigurátus est ante eos."
+		"tags":["transfiguratio","antiphona"],
+		"antiphona-i":"Assúmpsit Jesus * Petrum, et Jacóbum, et Joánnem fratrem ejus, et duxit eos in montem excélsum seórsum, et transfigurátus est ante eos."
 	},
 	{
 		"tags":["transfiguratio","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
-		"tags":["transfiguratio","antiphona","antiphona-ii"],
-		"src":"gregobase/2687",
-		"datum":"Resplénduit fácies ejus * sicut sol, vestiménta autem ejus facta sunt alba sicut nix, allelúja."
-	},
-	{
-		"tags":["transfiguratio","antiphona","antiphona-iii"],
-		"src":"gregobase/2347",
-		"datum":"Et ecce apparuérunt * eis Móyses et Elías, loquéntes cum Jesu."
-	},
-	{
-		"tags":["transfiguratio","antiphona","antiphona-iv"],
-		"src":"gregobase/2455",
-		"datum":"Respóndens autem Petrus, * dixit ad Jesum: Dómine, bonum est nos hic esse."
-	},
-	{
-		"tags":["transfiguratio","antiphona","antiphona-v"],
-		"src":"gregobase/2487",
-		"datum":"Adhuc eo loquénte, * ecce nubes lúcida obumbrávit eos."
+		"tags":["transfiguratio","antiphona"],
+		"antiphona-ii":"Resplénduit fácies ejus * sicut sol, vestiménta autem ejus facta sunt alba sicut nix, allelúja.",
+		"antiphona-iii":"Et ecce apparuérunt * eis Móyses et Elías, loquéntes cum Jesu.",
+		"antiphona-iv":"Respóndens autem Petrus, * dixit ad Jesum: Dómine, bonum est nos hic esse.",
+		"antiphona-v":"Adhuc eo loquénte, * ecce nubes lúcida obumbrávit eos."
 	},
 	{
 		"tags":["transfiguratio","capitulum"],
@@ -55,7 +41,6 @@
 	},
 	{
 		"tags":["transfiguratio","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2357",
 		"datum":"Christus Jesus * splendor Patris, et figúra substántiæ ejus, portans ómnia verbo virtútis suæ, purgatiónem peccatórum fáciens, in monte excélso gloriósus apparére hódie dignátus est."
 	},
 	{
@@ -71,12 +56,10 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0806I",
 		"datum":"Summum Regem glóriæ, * Christum adorémus."
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0806N1A1",
 		"datum":"Paulo minus ab Ángelis * minorátus, glória et honóre coronátus est, et constitútus super ópera mánuum Dei."
 	},
 	{
@@ -85,7 +68,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0806N1A2",
 		"datum":"Revelávit * Dóminus condénsa, et in templo ejus omnes dicent glóriam."
 	},
 	{
@@ -139,7 +121,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0806N2A1",
 		"datum":"Illúminans * tu mirabíliter a móntibus ætérnis: turbáti sunt omnes insipiéntes corde."
 	},
 	{
@@ -148,7 +129,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0806N2A2",
 		"datum":"Mélior est * dies una in átriis tuis super míllia."
 	},
 	{
@@ -157,7 +137,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0806N2A3",
 		"datum":"Gloriósa * dicta sunt de te cívitas Dei."
 	},
 	{
@@ -203,7 +182,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0806N3A1",
 		"datum":"Thabor et Hermon * in nómine tuo exsultábunt: tuum bráchium cum poténtia."
 	},
 	{
@@ -212,7 +190,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0806N3A2",
 		"datum":"Lux orta est justo, * et rectis corde lætítia."
 	},
 	{
@@ -221,7 +198,6 @@
 	},
 	{
 		"tags":["transfiguratio","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0806N3A3",
 		"datum":"Confessiónem * et decórem índuit, amíctus lúmine sicut vestiménto."
 	},
 	{
@@ -273,7 +249,6 @@
 	},
 	{
 		"tags":["transfiguratio","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13061",
 		"datum":"Et ecce * vox de nube dicens: Hic est Fílius meus diléctus, in quo mihi complácui: ipsum audíte, allelúja."
 	},
 	{
@@ -316,7 +291,6 @@
 	},
 	{
 		"tags":["transfiguratio","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2577",
 		"datum":"Et audiéntes * discípuli cecidérunt in fáciem suam, et timuérunt valde: et accéssit Jesus, et tétigit eos, dixítque eis: Súrgite, et nolíte timére, allelúja."
 	}
 ]

@@ -4,33 +4,19 @@
 		"datum":"Pretiosissimi Sanguinis D.N.J.C."
 	},
 	{
-		"tags":["pretiosissimus-sanguis","vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2248",
-		"datum":"Quis est iste * qui venit de Edom, tinctis véstibus de Bosra? iste formósus in stola sua."
+		"tags":["pretiosissimus-sanguis","vesperae","antiphona"],
+		"antiphona-i":"Quis est iste * qui venit de Edom, tinctis véstibus de Bosra? iste formósus in stola sua."
 	},
 	{
 		"tags":["pretiosissimus-sanguis","vesperae","psalmus"],
 		"datum":[["apostolus","i-vesperae","vesperae","psalmus"]]
 	},
 	{
-		"tags":["pretiosissimus-sanguis","vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2069",
-		"datum":"Ego * qui loquor justítiam, et propugnátor sum ad salvándum."
-	},
-	{
-		"tags":["pretiosissimus-sanguis","vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2225",
-		"datum":"Vestítus erat * veste aspérsa sánguine, et vocátur nomen ejus Verbum Dei."
-	},
-	{
-		"tags":["pretiosissimus-sanguis","vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/2066",
-		"datum":"Quare ergo * rubrum est induméntum tuum, et vestiménta tua sicut calcántium in torculári?"
-	},
-	{
-		"tags":["pretiosissimus-sanguis","vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2511",
-		"datum":"Tórcular * calcávi solus, et de géntibus non est vir mecum."
+		"tags":["pretiosissimus-sanguis","vesperae","antiphona"],
+		"antiphona-ii":"Ego * qui loquor justítiam, et propugnátor sum ad salvándum.",
+		"antiphona-iii":"Vestítus erat * veste aspérsa sánguine, et vocátur nomen ejus Verbum Dei.",
+		"antiphona-iv":"Quare ergo * rubrum est induméntum tuum, et vestiménta tua sicut calcántium in torculári?",
+		"antiphona-v":"Tórcular * calcávi solus, et de géntibus non est vir mecum."
 	},
 	{
 		"tags":["pretiosissimus-sanguis","capitulum"],
@@ -54,7 +40,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2509",
 		"datum":"Accessístis * ad Sion montem, et civitátem Dei vivéntis, Jerúsalem cœléstem, et testaménti novi mediatórem Jesum, et sánguinis aspersiónem mélius loquéntem quam Abel."
 	},
 	{
@@ -64,7 +49,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0707I",
 		"datum":"Christum Dei Fílium, qui suo nos redémit sánguine, * Veníte adorémus."
 	},
 	{
@@ -80,7 +64,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0707N1A1",
 		"datum":"Postquam * consummáti sunt dies octo, ut circumciderétur puer, vocátum est nomen ejus Jesus."
 	},
 	{
@@ -89,7 +72,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0707N1A2",
 		"datum":"Factus in agonía, * prolíxius orábat, et factus est sudor ejus sicut guttæ sánguinis decurréntis in terram."
 	},
 	{
@@ -98,7 +80,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0707N1A3",
 		"datum":"Judas, qui eum trádidit, * pœniténtia ductus, rétulit trigínta argénteos, dicens: Peccávi, tradens sánguinem justum."
 	},
 	{
@@ -144,7 +125,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0707N2A1",
 		"datum":"Pilátus * volens pópulo satisfácere, trádidit illis Jesum flagéllis cæsum."
 	},
 	{
@@ -153,7 +133,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0707N2A2",
 		"datum":"Videns autem * quia nihil profíceret, accépta aqua, lavit manus coram pópulo, dicens: Ínnocens ego sum a sánguine Justi hujus."
 	},
 	{
@@ -162,7 +141,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0707N2A3",
 		"datum":"Et respóndens * univérsus pópulus, dixit: Sanguis ejus super nos, et super fílios nostros."
 	},
 	{
@@ -211,7 +189,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0707N3A1",
 		"datum":"Exívit ergo Jesus * portans corónam spíneam, et purpúreum vestiméntum, et dixit eis: Ecce homo."
 	},
 	{
@@ -220,7 +197,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0707N3A2",
 		"datum":"Et bájulans sibi crucem, * exívit in eum, qui dícitur Calváriæ, locum: ubi crucifixérunt eum."
 	},
 	{
@@ -229,7 +205,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0707N3A3",
 		"datum":"Ut vidérunt eum jam mórtuum, * non fregérunt ejus crura, sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua."
 	},
 	{
@@ -277,29 +252,12 @@
 		"versus":"Remissiónem peccatórum secúndum divítias grátiæ ejus, quæ superabundávit in nobis."
 	},
 	{
-		"tags":["pretiosissimus-sanguis","antiphona","antiphona-i"],
-		"src":"gregobase/2015",
-		"datum":"Hi qui amícti sunt * stolis albis, qui sunt, et unde venérunt?"
-	},
-	{
-		"tags":["pretiosissimus-sanguis","antiphona","antiphona-ii"],
-		"src":"gregobase/2397",
-		"datum":"Hi sunt, * qui venérunt de tribulatióne magna; et lavérunt stolas suas in sánguine Agni."
-	},
-	{
-		"tags":["pretiosissimus-sanguis","antiphona","antiphona-iii"],
-		"src":"gregobase/2379",
-		"datum":"Ídeo sunt * ante thronum Dei, et sérviunt ei die, ac nocte."
-	},
-	{
-		"tags":["pretiosissimus-sanguis","antiphona","antiphona-iv"],
-		"src":"gregobase/1945",
-		"datum":"Et ipsi vicérunt * dracónem propter sánguinem Agni, et propter testaméntum Verbi sui."
-	},
-	{
-		"tags":["pretiosissimus-sanguis","antiphona","antiphona-v"],
-		"src":"gregobase/2414",
-		"datum":"Beáti * qui lavant stolas suas in sánguine Agni."
+		"tags":["pretiosissimus-sanguis","antiphona"],
+		"antiphona-i":"Hi qui amícti sunt * stolis albis, qui sunt, et unde venérunt?",
+		"antiphona-ii":"Hi sunt, * qui venérunt de tribulatióne magna; et lavérunt stolas suas in sánguine Agni.",
+		"antiphona-iii":"Ídeo sunt * ante thronum Dei, et sérviunt ei die, ac nocte.",
+		"antiphona-iv":"Et ipsi vicérunt * dracónem propter sánguinem Agni, et propter testaméntum Verbi sui.",
+		"antiphona-v":"Beáti * qui lavant stolas suas in sánguine Agni."
 	},
 	{
 		"tags":["pretiosissimus-sanguis","laudes","hymnus"],
@@ -324,7 +282,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2894",
 		"datum":"Erit sanguis Agni * vobis in signum, dicit Dóminus: et vidébo sánguinem, et transíbo vos, nec erit in vobis plaga dispérdens."
 	},
 	{
@@ -367,7 +324,6 @@
 	},
 	{
 		"tags":["pretiosissimus-sanguis","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2444",
 		"datum":"Habébitis autem * hunc diem in monuméntum: et celebrábitis eum solémnem Dómino in generatiónibus vestris cultu sempitérno."
 	}
 ]

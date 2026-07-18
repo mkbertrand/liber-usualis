@@ -4,29 +4,12 @@
 		"datum":"In Solemnitate Sacratissimi Rosarii B.M.V."
 	},
 	{
-		"tags":["rosarium-bmv","vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2921",
-		"datum":"Quæ est ista, * speciósa sicut colúmba, quasi rosa plantáta super rivos aquárum?"
-	},
-	{
-		"tags":["rosarium-bmv","vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2193",
-		"datum":"Virgo potens, * sicut turris David; mille clýpei pendent ex ea, omnis armatúra fórtium."
-	},
-	{
-		"tags":["rosarium-bmv","vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2844",
-		"datum":"Ave María, * grátia plena, Dóminus tecum, benedícta tu in muliéribus."
-	},
-	{
-		"tags":["rosarium-bmv","vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/2312",
-		"datum":"Benedíxit te Dóminus * in virtúte sua, quia per te ad níhilum redégit inimícos nostros."
-	},
-	{
-		"tags":["rosarium-bmv","vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2701",
-		"datum":"Vidérunt eam * fíliæ Sion vernántem in flóribus rosárum, et beatíssimam prædicavérunt."
+		"tags":["rosarium-bmv","vesperae","antiphona"],
+		"antiphona-i":"Quæ est ista, * speciósa sicut colúmba, quasi rosa plantáta super rivos aquárum?",
+		"antiphona-ii":"Virgo potens, * sicut turris David; mille clýpei pendent ex ea, omnis armatúra fórtium.",
+		"antiphona-iii":"Ave María, * grátia plena, Dóminus tecum, benedícta tu in muliéribus.",
+		"antiphona-iv":"Benedíxit te Dóminus * in virtúte sua, quia per te ad níhilum redégit inimícos nostros.",
+		"antiphona-v":"Vidérunt eam * fíliæ Sion vernántem in flóribus rosárum, et beatíssimam prædicavérunt."
 	},
 	{
 		"tags":["rosarium-bmv","capitulum"],
@@ -49,7 +32,6 @@
 	},
 	{
 		"tags":["rosarium-bmv","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2960",
 		"datum":"Beáta es, * Virgo María, Dei Génitrix, quæ credidísti Dómino; perfécta sunt in te quæ dicta sunt tibi, intercéde pro nobis ad Dóminum Deum nostrum."
 	},
 	{
@@ -59,7 +41,6 @@
 	},
 	{
 		"tags":["rosarium-bmv","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/1007I",
 		"datum":"Solemnitátem Rosárii Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum."
 	},
 	{
@@ -74,19 +55,10 @@
 		]
 	},
 	{
-		"tags":["rosarium-bmv","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/1007N1A1",
-		"datum":"Ángelus Gábriel * nuntiávit Maríæ: et concépit de Spíritu sancto."
-	},
-	{
-		"tags":["rosarium-bmv","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/1007N1A2",
-		"datum":"Intrávit María * in domum Zacharíæ, et salutávit Elísabeth."
-	},
-	{
-		"tags":["rosarium-bmv","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/1007N1A3",
-		"datum":"Péperit * Fílium suum primogénitum, et reclinávit eum in præsépio."
+		"tags":["rosarium-bmv","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Ángelus Gábriel * nuntiávit Maríæ: et concépit de Spíritu sancto.",
+		"antiphona-ii":"Intrávit María * in domum Zacharíæ, et salutávit Elísabeth.",
+		"antiphona-iii":"Péperit * Fílium suum primogénitum, et reclinávit eum in præsépio."
 	},
 	{
 		"tags":["rosarium-bmv","matutinum","nocturna-i","versiculus"],
@@ -124,19 +96,10 @@
 		"datum":[["maria","matutinum","nocturna-ii","responsorium","responsorium-ii"]]
 	},
 	{
-		"tags":["rosarium-bmv","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/1007N2A1",
-		"datum":"Cum indúcerent * Jesum paréntes ejus, ut sísterent eum Dómino, Símeon accépit eum in ulnas suas, et benedíxit Deum."
-	},
-	{
-		"tags":["rosarium-bmv","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1007N2A2",
-		"datum":"Requiréntes Jesum * paréntes ejus, invenérunt illum post tríduum in médio doctórum."
-	},
-	{
-		"tags":["rosarium-bmv","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1007N2A3",
-		"datum":"Cœpit contristári, * et factus est sudor ejus in horto, sicut guttæ sánguinis."
+		"tags":["rosarium-bmv","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Cum indúcerent * Jesum paréntes ejus, ut sísterent eum Dómino, Símeon accépit eum in ulnas suas, et benedíxit Deum.",
+		"antiphona-ii":"Requiréntes Jesum * paréntes ejus, invenérunt illum post tríduum in médio doctórum.",
+		"antiphona-iii":"Cœpit contristári, * et factus est sudor ejus in horto, sicut guttæ sánguinis."
 	},
 	{
 		"tags":[
@@ -175,19 +138,10 @@
 		"datum":[["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii"]]
 	},
 	{
-		"tags":["rosarium-bmv","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/1007N3A1",
-		"datum":"Apprehéndit * Pilátus Jesum, et flagellávit."
-	},
-	{
-		"tags":["rosarium-bmv","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1007N3A2",
-		"datum":"Mílites * plecténtes corónam de spinis, imposuérunt super caput ejus."
-	},
-	{
-		"tags":["rosarium-bmv","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1007N3A3",
-		"datum":"Crucis impérium * super húmerum ejus: regnávit a ligno Deus."
+		"tags":["rosarium-bmv","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Apprehéndit * Pilátus Jesum, et flagellávit.",
+		"antiphona-ii":"Mílites * plecténtes corónam de spinis, imposuérunt super caput ejus.",
+		"antiphona-iii":"Crucis impérium * super húmerum ejus: regnávit a ligno Deus."
 	},
 	{
 		"tags":[
@@ -226,29 +180,12 @@
 		"datum":"Quidquid horum cógito, Deum cógito, et per ómnia est Deus meus. Hæc ego meditári dixi sapiéntiam, et prudéntiam judicávi eructáre memóriam suavitátis: quóniam in hujuscémodi núcleis virga sacerdotális copiósa prodúxit, quam in supérnis haúriens, ubérius nobis María refúdit. In supérnis plane et ultra Ángelos, quæ Verbum ex ipso Patris corde suscépit."
 	},
 	{
-		"tags":["rosarium-bmv","antiphona","antiphona-i"],
-		"src":"gregobase/20110",
-		"datum":"Lætáre * Vírgo Mater; surréxit Christus de sepúlchro."
-	},
-	{
-		"tags":["rosarium-bmv","antiphona","antiphona-ii"],
-		"src":"gregobase/20111",
-		"datum":"Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ."
-	},
-	{
-		"tags":["rosarium-bmv","antiphona","antiphona-iii"],
-		"src":"gregobase/20108",
-		"datum":"Spíritus Dómini * replévit orbem terrárum."
-	},
-	{
-		"tags":["rosarium-bmv","antiphona","antiphona-iv"],
-		"src":"gregobase/13000",
-		"datum":"Assúmpta est * María in cœlum; gaudent Ángeli; laudántes benedícunt Dóminum, allelúja."
-	},
-	{
-		"tags":["rosarium-bmv","antiphona","antiphona-v"],
-		"src":"gregobase/20109",
-		"datum":"Exaltáta est * Virgo María super choros Angelórum, et in cápite ejus coróna stellárum duódecim."
+		"tags":["rosarium-bmv","antiphona"],
+		"antiphona-i":"Lætáre * Vírgo Mater; surréxit Christus de sepúlchro.",
+		"antiphona-ii":"Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ.",
+		"antiphona-iii":"Spíritus Dómini * replévit orbem terrárum.",
+		"antiphona-iv":"Assúmpta est * María in cœlum; gaudent Ángeli; laudántes benedícunt Dóminum, allelúja.",
+		"antiphona-v":"Exaltáta est * Virgo María super choros Angelórum, et in cápite ejus coróna stellárum duódecim."
 	},
 	{
 		"tags":["rosarium-bmv","laudes","hymnus"],
@@ -270,7 +207,6 @@
 	},
 	{
 		"tags":["rosarium-bmv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13287",
 		"datum":"Solemnitátem hodiérnam * sanctíssimi Rosárii Genitrícis Dei Maríæ devóte celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum."
 	},
 	{
@@ -312,7 +248,6 @@
 	},
 	{
 		"tags":["rosarium-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1871",
 		"datum":"Beáta Mater * et intácta Virgo, gloriósa Regína mundi, séntiant omnes tuum juvámen quicúmque célebrant tuam sanctíssimi Rosárii solemnitátem."
 	}
 ]

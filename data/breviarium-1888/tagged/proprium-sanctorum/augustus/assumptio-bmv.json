@@ -8,29 +8,12 @@
 		"datum":"Assumptionis"
 	},
 	{
-		"tags":["assumptio-bmv","antiphona","antiphona-i"],
-		"src":"gregobase/2561",
-		"datum":"Assúmpta est * María in cœlum: gaudent Ángeli, laudántes benedícunt Dóminum."
-	},
-	{
-		"tags":["assumptio-bmv","antiphona","antiphona-ii"],
-		"src":"gregobase/2912",
-		"datum":"María Virgo * assúmpta est ad ætéreum thálamum, in quo Rex regum stelláto sedet sólio."
-	},
-	{
-		"tags":["assumptio-bmv","antiphona","antiphona-iii"],
-		"src":"gregobase/2963",
-		"datum":"In odórem * unguentórum tuórum cúrrimus: adolescéntulæ dilexérunt te nimis."
-	},
-	{
-		"tags":["assumptio-bmv","antiphona","antiphona-iv"],
-		"src":"gregobase/2947",
-		"datum":"Benedícta fília * tu a Dómino: quia per te fructum vitæ communicávimus."
-	},
-	{
-		"tags":["assumptio-bmv","antiphona","antiphona-v"],
-		"src":"gregobase/2861",
-		"datum":"Pulchra es, * et decóra, fília Jerúsalem: terríbilis ut castrórum ácies ordináta."
+		"tags":["assumptio-bmv","antiphona"],
+		"antiphona-i":"Assúmpta est * María in cœlum: gaudent Ángeli, laudántes benedícunt Dóminum.",
+		"antiphona-ii":"María Virgo * assúmpta est ad ætéreum thálamum, in quo Rex regum stelláto sedet sólio.",
+		"antiphona-iii":"In odórem * unguentórum tuórum cúrrimus: adolescéntulæ dilexérunt te nimis.",
+		"antiphona-iv":"Benedícta fília * tu a Dómino: quia per te fructum vitæ communicávimus.",
+		"antiphona-v":"Pulchra es, * et decóra, fília Jerúsalem: terríbilis ut castrórum ácies ordináta."
 	},
 	{
 		"tags":["assumptio-bmv","capitulum"],
@@ -44,7 +27,6 @@
 	},
 	{
 		"tags":["assumptio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2183",
 		"datum":"Virgo prudentíssima, * quo progréderis, quasi auróra valde rútilans? Fília Sion tota formósa et suávis es, pulchra ut luna, elécta ut sol."
 	},
 	{
@@ -57,16 +39,10 @@
 		"datum":"Veníte adorémus Regem regum, * Cujus hódie ad æthéreum Virgo mater assúmpta est cœlum."
 	},
 	{
-		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"datum":"Exaltáta est * sancta Dei Génitrix super choros Angelórum ad cœléstia regna."
-	},
-	{
-		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"datum":"Paradísi portæ * per te nobis apértæ sunt, quæ hódie gloriósa cum Ángelis triúmphas."
-	},
-	{
-		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"datum":[["maria","matutinum","nocturna-i","antiphona","antiphona-i"]]
+		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Exaltáta est * sancta Dei Génitrix super choros Angelórum ad cœléstia regna.",
+		"antiphona-ii":"Paradísi portæ * per te nobis apértæ sunt, quæ hódie gloriósa cum Ángelis triúmphas.",
+		"antiphona-iii":[["maria","matutinum","nocturna-i","antiphona","antiphona-i"]]
 	},
 	{
 		"tags":["assumptio-bmv","matutinum","nocturna-i","versiculus"],
@@ -191,7 +167,6 @@
 	},
 	{
 		"tags":["assumptio-bmv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2730",
 		"datum":"Quæ est ista, * quæ ascéndit sicut auróra consúrgens, pulchra ut luna, elécta ut sol, terríbilis ut castrórum ácies ordináta?"
 	},
 	{
@@ -218,7 +193,6 @@
 	},
 	{
 		"tags":["assumptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2700",
 		"datum":"Hódie María Virgo * cœlos ascéndit: gaudéte, quia cum Christo regnat in ætérnum."
 	},
 	{

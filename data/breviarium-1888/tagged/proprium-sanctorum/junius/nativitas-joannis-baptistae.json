@@ -8,33 +8,19 @@
 		"datum":"Nativitatis S. Joannis Baptistæ"
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-i"],
-		"src":"gregobase/2603",
-		"datum":"Ipse præíbit * ante illum in spíritu et virtúte Elíæ paráre Dómino plebem perféctam."
+		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona"],
+		"antiphona-i":"Ipse præíbit * ante illum in spíritu et virtúte Elíæ paráre Dómino plebem perféctam."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","vesperae","psalmus"],
 		"datum":[["apostolus","vesperae","i-vesperae","psalmus"]]
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-ii"],
-		"src":"gregobase/2457",
-		"datum":"Joánnes * est nomen ejus: vinum et síceram non bibet, et multi in nativitáte ejus gaudébunt."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-iii"],
-		"src":"gregobase/2490",
-		"datum":"Ex útero senectútis * et stérili Joánnes natus est præcúrsor Dómini."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-iv"],
-		"src":"gregobase/2130",
-		"datum":"Iste puer * magnus coram Dómino: nam et manus ejus cum ipso est."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-v"],
-		"src":"gregobase/2480",
-		"datum":"Nazarǽus * vocábitur puer iste: vinum et síceram non bibet, et omne immúndum non manducábit ex útero matris suæ."
+		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona"],
+		"antiphona-ii":"Joánnes * est nomen ejus: vinum et síceram non bibet, et multi in nativitáte ejus gaudébunt.",
+		"antiphona-iii":"Ex útero senectútis * et stérili Joánnes natus est præcúrsor Dómini.",
+		"antiphona-iv":"Iste puer * magnus coram Dómino: nam et manus ejus cum ipso est.",
+		"antiphona-v":"Nazarǽus * vocábitur puer iste: vinum et síceram non bibet, et omne immúndum non manducábit ex útero matris suæ."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","capitulum"],
@@ -59,7 +45,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2911",
 		"datum":"Ingrésso * Zacharía templum Dómini, appáruit ei Gábriel Ángelus, stans a dextris altáris incénsi."
 	},
 	{
@@ -69,7 +54,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0624I",
 		"datum":"Regem Præcursóris Dóminum, * Veníte adorémus."
 	},
 	{
@@ -84,7 +68,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0624N1A1",
 		"datum":"Priúsquam te formárem * in útero, novi te: et ántequam progrederéris, sanctificávi te."
 	},
 	{
@@ -93,7 +76,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0624N1A2",
 		"datum":"Ad ómnia quæ mittam te, * dicit Dóminus, ibis: ne tímeas, et quæ mandávero tibi, loquéris ad eos."
 	},
 	{
@@ -102,7 +84,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0624N1A3",
 		"datum":"Ne tímeas * a fácie eórum, quia ego tecum sum, dicit Dóminus."
 	},
 	{
@@ -147,7 +128,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0624N2A1",
 		"datum":"Misit Dóminus * manum suam, et tétigit os meum, et Prophétam in Géntibus dedit me Dóminus."
 	},
 	{
@@ -156,7 +136,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0624N2A2",
 		"datum":"Ecce dedi * verba mea in ore tuo: ecce constítui te super Gentes et regna."
 	},
 	{
@@ -165,7 +144,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0624N2A3",
 		"datum":"Dóminus ab útero * vocávit me, de ventre matris meæ recordátus est nóminis mei."
 	},
 	{
@@ -217,7 +195,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0624N3A1",
 		"datum":"Pósuit os meum * Dóminus quasi gládium acútum: sub umbra manus suæ protéxit me."
 	},
 	{
@@ -226,7 +203,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0624N3A2",
 		"datum":"Formans me * ex útero servum sibi Dóminus, dicit: Dedi te in lucem Géntium, ut sis salus mea usque ad extrémum terræ."
 	},
 	{
@@ -235,7 +211,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0624N3A3",
 		"datum":"Reges vidébunt, * et consúrgent príncipes, et adorábunt Dóminum Deum tuum, qui elégit te."
 	},
 	{
@@ -282,29 +257,12 @@
 		"lectio-iii":"Joánnes est, inquit, nomen ejus: hoc est, non nos ei nomen impónimus, qui jam a Deo nomen accépit. Habet vocábulum suum, quod agnóvimus, non quod elégimus. Habent hoc mérita sanctórum, ut a Deo nomen accípiant. Sic Jacob Ísraël dícitur, quia Deum vidit. Sic Dóminus noster Jesus nominátus est ántequam natus, cui non Ángelus, sed Pater nomen impósuit. Vides, Ángelos, quæ audíerint, non quæ usurpáverint, nuntiáre. Nec miréris, si nomen múlier, quod non audívit, asséruit; quando Spíritus ei sanctus, qui Ángelo mandáverat, revelávit."
 	},
 	{
-		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-i"],
-		"src":"gregobase/1990",
-		"datum":"Elísabeth Zacharíæ * magnum virum génuit, Joánnem Baptístam præcursórem Dómini."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-ii"],
-		"src":"gregobase/2867",
-		"datum":"Innuébant patri ejus, * quem vellet vocári eum: et scripsit, dicens: Joánnes est nomen ejus."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-iii"],
-		"src":"gregobase/1829",
-		"datum":"Joánnes vocábitur * nomen ejus: et in nativitáte ejus multi gaudébunt."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-iv"],
-		"src":"gregobase/2031",
-		"datum":"Inter natos mulíerum * non surréxit major Joánne Baptísta."
-	},
-	{
-		"tags":["nativitas-joannis-baptistae","antiphona","antiphona-v"],
-		"src":"gregobase/2352",
-		"datum":"Tu puer, * Prophéta Altíssimi vocáberis: præíbis ante Dóminum paráre vias ejus."
+		"tags":["nativitas-joannis-baptistae","antiphona"],
+		"antiphona-i":"Elísabeth Zacharíæ * magnum virum génuit, Joánnem Baptístam præcursórem Dómini.",
+		"antiphona-ii":"Innuébant patri ejus, * quem vellet vocári eum: et scripsit, dicens: Joánnes est nomen ejus.",
+		"antiphona-iii":"Joánnes vocábitur * nomen ejus: et in nativitáte ejus multi gaudébunt.",
+		"antiphona-iv":"Inter natos mulíerum * non surréxit major Joánne Baptísta.",
+		"antiphona-v":"Tu puer, * Prophéta Altíssimi vocáberis: præíbis ante Dóminum paráre vias ejus."
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","laudes","hymnus"],
@@ -326,7 +284,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/2575",
 		"datum":"Apértum est * os Zacharíæ, et prophetávit, dicens: Benedíctus Deus Ísraël."
 	},
 	{
@@ -357,7 +314,6 @@
 	},
 	{
 		"tags":["nativitas-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2106",
 		"datum":"Puer * qui natus est nobis, plus quam, Prophéta est: hic est enim, de quo Salvátor ait: Inter natos mulíerum non surréxit major Joánne Baptísta."
 	},
 	{

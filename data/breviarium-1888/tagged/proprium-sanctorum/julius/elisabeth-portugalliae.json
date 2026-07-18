@@ -4,24 +4,11 @@
 		"datum":"S. Elisabeth Reg. Portugalliæ Viduæ"
 	},
 	{
-		"tags":["elisabeth-portugalliae","antiphona","antiphona-ii"],
-		"src":"gregobase/19994",
-		"datum":"Et concupíscet Rex * decórem tuum, quia ipse est Dóminus Deus tuus."
-	},
-	{
-		"tags":["elisabeth-portugalliae","antiphona","antiphona-iii"],
-		"src":"gregobase/19995",
-		"datum":"Potens in ópere * et sermóne, lenívit iracúndiam Dómini, et conciliávit cor patris ad fílium."
-	},
-	{
-		"tags":["elisabeth-portugalliae","antiphona","antiphona-iv"],
-		"src":"gregobase/19996",
-		"datum":"Quasi arcus refúlgens * inter nébulas glóriæ, et quasi flos rosárum in diébus vernis."
-	},
-	{
-		"tags":["elisabeth-portugalliae","antiphona","antiphona-v"],
-		"src":"gregobase/19997",
-		"datum":"Quasi stella matutína * in médio nébulæ, et quasi luna plena in diébus suis."
+		"tags":["elisabeth-portugalliae","antiphona"],
+		"antiphona-ii":"Et concupíscet Rex * decórem tuum, quia ipse est Dóminus Deus tuus.",
+		"antiphona-iii":"Potens in ópere * et sermóne, lenívit iracúndiam Dómini, et conciliávit cor patris ad fílium.",
+		"antiphona-iv":"Quasi arcus refúlgens * inter nébulas glóriæ, et quasi flos rosárum in diébus vernis.",
+		"antiphona-v":"Quasi stella matutína * in médio nébulæ, et quasi luna plena in diébus suis."
 	},
 	{
 		"tags":[
@@ -41,7 +28,6 @@
 	},
 	{
 		"tags":["elisabeth-portugalliae","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1874",
 		"datum":"Et nunc * reges intellígite, erudímini qui judicátis terram."
 	},
 	{
@@ -50,20 +36,14 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["elisabeth-portugalliae","matutinum","antiphona","antiphona-invitatorium","n"],
-		"datum":"Elísabeth"
+		"tags":["elisabeth-portugalliae","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":"Laudémus Deum nostrum * In sanctis opéribus beátæ Elísabeth."
 	},
 	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"datum":"Eleváta est * magnificéntia Elísabeth super cœlos."
-	},
-	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"datum":"Veni elécta mea, * et ponam in te thronum meum, quia concupívit Rex spéciem tuam."
-	},
-	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"datum":"Accépit benedictiónem * a Dómino, et miesricórdiam a Deo salutári suo."
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Eleváta est * magnificéntia Elísabeth super cœlos.",
+		"antiphona-ii":"Veni elécta mea, * et ponam in te thronum meum, quia concupívit Rex spéciem tuam.",
+		"antiphona-iii":"Accépit benedictiónem * a Dómino, et misericórdiam a Deo salutári suo."
 	},
 	{
 		"tags":["elisabeth-portugalliae","matutinum","nocturna-i","versiculus"],
@@ -88,16 +68,10 @@
 		"versus":"Scuto bonæ voluntátis tuæ coronásti eam Dómine."
 	},
 	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"datum":"Propter veritátem, * et mansuetúdinem, et justítiam dedúcet te mirabíliter déxtera tua."
-	},
-	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"datum":"Arcum cónteret * et confrínget arma, et scuta combúret igni."
-	},
-	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"datum":"Justítia * et misericórdia plena est déxtera tua."
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Propter veritátem, * et mansuetúdinem, et justítiam dedúcet te mirabíliter déxtera tua.",
+		"antiphona-ii":"Arcum cónteret * et confrínget arma, et scuta combúret igni.",
+		"antiphona-iii":"Justítia * et misericórdia plena est déxtera tua."
 	},
 	{
 		"tags":["elisabeth-portugalliae","matutinum","nocturna-ii","versiculus"],
@@ -134,16 +108,10 @@
 		"versus":"Eructávit cor meum verbum bonum: dico ego ópera mea Regi."
 	},
 	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"datum":"Conféssio, * et pulchritúdo in conspéctu ejus, sánctitas et magnificéntia in sanctificatióne ejus."
-	},
-	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"datum":"Annuntiavérunt * cœli justítiam ejus, et vidérunt omnes pópuli glóriam ejus."
-	},
-	{
-		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"datum":"Judicávit * in justítia, et pópulos in æquitáte."
+		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Conféssio, * et pulchritúdo in conspéctu ejus, sánctitas et magnificéntia in sanctificatióne ejus.",
+		"antiphona-ii":"Annuntiavérunt * cœli justítiam ejus, et vidérunt omnes pópuli glóriam ejus.",
+		"antiphona-iii":"Judicávit * in justítia, et pópulos in æquitáte."
 	},
 	{
 		"tags":["elisabeth-portugalliae","matutinum","nocturna-iii","versiculus"],
@@ -175,12 +143,10 @@
 	},
 	{
 		"tags":["elisabeth-portugalliae","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13105",
 		"datum":"Tu glória Jerúsalem, * tu lætítia Ísraël, tu honorificéntia pópuli tui."
 	},
 	{
 		"tags":["elisabeth-portugalliae","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2001",
 		"datum":"Elísabeth * pacis et pátriæ mater, in cœlo triúmphans, dona nobis pacem."
 	}
 ]

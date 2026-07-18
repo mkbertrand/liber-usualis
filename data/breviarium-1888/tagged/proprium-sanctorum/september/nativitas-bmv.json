@@ -8,29 +8,12 @@
 		"datum":"Nativitatis B.M.V."
 	},
 	{
-		"tags":["nativitas-bmv","antiphona","antiphona-i"],
-		"src":"gregobase/2062",
-		"datum":"Natívitas gloriósæ Vírginis Maríæ * ex sémine Ábrahæ, ortæ de tribu Juda, clara ex stirpe David."
-	},
-	{
-		"tags":["nativitas-bmv","antiphona","antiphona-ii"],
-		"src":"gregobase/2862",
-		"datum":"Natívitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclyta cunctas illústrat ecclésias."
-	},
-	{
-		"tags":["nativitas-bmv","antiphona","antiphona-iii"],
-		"src":"gregobase/2748",
-		"datum":"Regáli ex progénie * María exórta refúlget: cujus précibus nos adjuvári mente et spíritu devotíssime póscimus."
-	},
-	{
-		"tags":["nativitas-bmv","antiphona","antiphona-iv"],
-		"src":"gregobase/2154",
-		"datum":"Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genitrícis Dei Maríæ."
-	},
-	{
-		"tags":["nativitas-bmv","antiphona","antiphona-v"],
-		"src":"gregobase/1835",
-		"datum":"Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum."
+		"tags":["nativitas-bmv","antiphona"],
+		"antiphona-i":"Natívitas gloriósæ Vírginis Maríæ * ex sémine Ábrahæ, ortæ de tribu Juda, clara ex stirpe David.",
+		"antiphona-ii":"Natívitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclyta cunctas illústrat ecclésias.",
+		"antiphona-iii":"Regáli ex progénie * María exórta refúlget: cujus précibus nos adjuvári mente et spíritu devotíssime póscimus.",
+		"antiphona-iv":"Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genitrícis Dei Maríæ.",
+		"antiphona-v":"Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum."
 	},
 	{
 		"tags":[
@@ -41,7 +24,6 @@
 	},
 	{
 		"tags":["nativitas-bmv","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2956",
 		"datum":"Gloriósæ * Vírginis Maríæ ortum digníssimum recolámus, quæ et Genitrícis dignitátem obtínuit, et virginálem pudicítiam non amísit."
 	},
 	{
@@ -133,12 +115,10 @@
 	},
 	{
 		"tags":["nativitas-bmv","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13064",
 		"datum":"Nativitátem hodiérnam * perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja."
 	},
 	{
 		"tags":["nativitas-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1985",
 		"datum":"Natívitas tua, * Dei Génitrix Virgo, gaúdium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster: qui solvens maledictiónem, dedit benedictiónem, et confúndens mortem, donávit nobis vitam sempitérnam."
 	},
 	{

@@ -4,29 +4,12 @@
 		"datum":"S. Andreæ Apostoli"
 	},
 	{
-		"tags":["andreas","antiphona","antiphona-i"],
-		"src":"gregobase/2880",
-		"datum":"Salve crux pretiósa, * súscipe discípulum ejus, qui pepéndit in te magíster meus Christus."
-	},
-	{
-		"tags":["andreas","antiphona","antiphona-ii"],
-		"src":"gregobase/1822",
-		"datum":"Beátus Andréas * orábat, dicens: Dómine Rex ætérnæ glóriæ, súscipe me pendéntem in patíbulo."
-	},
-	{
-		"tags":["andreas","antiphona","antiphona-iii"],
-		"src":"gregobase/2838",
-		"datum":"Andréas Christi fámulus, * dignus Dei Apóstolus, germánus Petri, et in passióne sócius."
-	},
-	{
-		"tags":["andreas","antiphona","antiphona-iv"],
-		"src":"gregobase/2537",
-		"datum":"Maximílla Christo amábilis * tulit corpus Apóstoli, óptimo loco cum aromátibus sepelívit."
-	},
-	{
-		"tags":["andreas","antiphona","antiphona-v"],
-		"src":"gregobase/2336",
-		"datum":"Qui persequebántur justum, * demersísti eos Dómine in inférno, et in ligno crucis dux justi fuísti."
+		"tags":["andreas","antiphona"],
+		"antiphona-i":"Salve crux pretiósa, * súscipe discípulum ejus, qui pepéndit in te magíster meus Christus.",
+		"antiphona-ii":"Beátus Andréas * orábat, dicens: Dómine Rex ætérnæ glóriæ, súscipe me pendéntem in patíbulo.",
+		"antiphona-iii":"Andréas Christi fámulus, * dignus Dei Apóstolus, germánus Petri, et in passióne sócius.",
+		"antiphona-iv":"Maximílla Christo amábilis * tulit corpus Apóstoli, óptimo loco cum aromátibus sepelívit.",
+		"antiphona-v":"Qui persequebántur justum, * demersísti eos Dómine in inférno, et in ligno crucis dux justi fuísti."
 	},
 	{
 		"tags":["andreas","capitulum"],
@@ -34,7 +17,6 @@
 	},
 	{
 		"tags":["andreas","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1961",
 		"datum":"Unus ex duóbus, * qui secúti sunt Dóminum, erat Andréas, frater Simónis Petri, allelúja."
 	},
 	{
@@ -43,19 +25,10 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["andreas","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/1130N1A1",
-		"datum":"Vidit * Dóminus Petrum et Andréam, et vocávit eos."
-	},
-	{
-		"tags":["andreas","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/1130N1A2",
-		"datum":"Veníte post me, * dicit Dóminus, fáciam vos fíeri piscatóres hóminum."
-	},
-	{
-		"tags":["andreas","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/1130N1A3",
-		"datum":"Relíctis rétibus suis, * secúti sunt Dóminum Redemptórem."
+		"tags":["andreas","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Vidit * Dóminus Petrum et Andréam, et vocávit eos.",
+		"antiphona-ii":"Veníte post me, * dicit Dóminus, fáciam vos fíeri piscatóres hóminum.",
+		"antiphona-iii":"Relíctis rétibus suis, * secúti sunt Dóminum Redemptórem."
 	},
 	{
 		"tags":["andreas","matutinum","nocturna-i","lectio","lectio-i"],
@@ -94,19 +67,10 @@
 		"versus":"Salve crux, quæ in córpore Christi dedicáta es: et ex membris ejus tamquam margarítis ornáta."
 	},
 	{
-		"tags":["andreas","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/1130N2A1",
-		"datum":"Dignum sibi Dóminus * computávit Mártyrem, quem vocávit Apóstolum, dum esset in mari, allelúja."
-	},
-	{
-		"tags":["andreas","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1130N2A2",
-		"datum":"Diléxit Andréam Dóminus * in odórem suavitátis."
-	},
-	{
-		"tags":["andreas","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1130N2A3",
-		"datum":"Bíduo vivens * pendébat in cruce beátus Andréas pro Christi nómine, et docébat pópulum."
+		"tags":["andreas","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Dignum sibi Dóminus * computávit Mártyrem, quem vocávit Apóstolum, dum esset in mari, allelúja.",
+		"antiphona-ii":"Diléxit Andréam Dóminus * in odórem suavitátis.",
+		"antiphona-iii":"Bíduo vivens * pendébat in cruce beátus Andréas pro Christi nómine, et docébat pópulum."
 	},
 	{
 		"tags":["andreas","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -142,19 +106,10 @@
 		"versus":"Deus ultiónum Dóminus, Deus ultiónum líbere egit: exaltáre qui júdicas terram, redde retributiónem supérbis."
 	},
 	{
-		"tags":["andreas","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/1130N3A1",
-		"datum":"Non me permíttas Dómine, * fámulum tuum a te separári: tempus est ut commendétur terræ corpus meum, et me ad te veníre júbeas."
-	},
-	{
-		"tags":["andreas","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1130N3A2",
-		"datum":"Andréas vero * rogábat pópulum, ut non impedíret passiónem ipsíus."
-	},
-	{
-		"tags":["andreas","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1130N3A3",
-		"datum":"Áccipe me * ab homínibus, et redde me magístro meo: ut per te me recípiat, qui per te me redémit, allelúja."
+		"tags":["andreas","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Non me permíttas Dómine, * fámulum tuum a te separári: tempus est ut commendétur terræ corpus meum, et me ad te veníre júbeas.",
+		"antiphona-ii":"Andréas vero * rogábat pópulum, ut non impedíret passiónem ipsíus.",
+		"antiphona-iii":"Áccipe me * ab homínibus, et redde me magístro meo: ut per te me recípiat, qui per te me redémit, allelúja."
 	},
 	{
 		"tags":["andreas","matutinum","nocturna-iii","lectio","lectio-i"],
@@ -189,7 +144,6 @@
 	},
 	{
 		"tags":["andreas","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12195",
 		"datum":"Concéde nobis * hóminem justum, redde nobis hóminem sanctum: ne interfícias hóminem Deo carum, justum, mansuétum, et pium."
 	},
 	{
@@ -202,7 +156,6 @@
 	},
 	{
 		"tags":["andreas","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2576",
 		"datum":"Cum pervenísset * beátus Andréas ad locum, ubi crux paráta erat, exclamávit et dixit: O bona crux, diu desideráta, et jam concupiscénti ánimo præparáta: secúrus et gaudens vénio ad te, ita et tu exsúltans suscípias me discípulum ejus, qui pepéndit in te."
 	}
 ]

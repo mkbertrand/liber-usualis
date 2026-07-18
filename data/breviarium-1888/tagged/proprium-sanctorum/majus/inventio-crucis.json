@@ -9,30 +9,25 @@
 	},
 	{
 		"tags":["inventio-crucis","antiphona","antiphona-i"],
-		"src":"gregobase/2164",
 		"in-tempore-paschali":"O magnum pietátis opus: * mors mórtua tunc est, in ligno quando mórtua vita fuit, allelúja.",
 		"datum":"O magnum pietátis opus: * mors mórtua tunc est, in ligno quando mórtua vita fuit."
 	},
 	{
 		"tags":["inventio-crucis","antiphona","antiphona-ii"],
-		"src":"gregobase/2529",
 		"in-tempore-paschali":"Salva nos * Christe Salvátor per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis, allelúja.",
 		"datum":"Salva nos * Christe Salvátor per virtútem Crucis: qui salvásti Petrum in mari, miserére nobis."
 	},
 	{
 		"tags":["inventio-crucis","antiphona","antiphona-iii"],
-		"src":"gregobase/2623",
 		"datum":"Ecce Crucem Dómini, * fúgite partes advérsæ, vicit leo de tribu Juda, radix David, allelúja."
 	},
 	{
 		"tags":["inventio-crucis","antiphona","antiphona-iv"],
-		"src":"gregobase/2945",
 		"in-tempore-paschali":"Nos autem gloriári * opórtet in Cruce Dómini nostri Jesu Christi, allelúja.",
 		"datum":"Nos autem gloriári * opórtet in Cruce Dómini nostri Jesu Christi."
 	},
 	{
 		"tags":["inventio-crucis","antiphona","antiphona-v"],
-		"src":"gregobase/2868",
 		"in-tempore-paschali":"Per signum Crucis * de inimícis nostris líbera nos Deus noster, allelúja.",
 		"datum":"Per signum Crucis * de inimícis nostris líbera nos Deus noster."
 	},
@@ -72,7 +67,6 @@
 	},
 	{
 		"tags":["inventio-crucis","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1907",
 		"in-tempore-paschali":"O Crux, * splendídior cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis: quæ sola fuísti digna portáre taléntum mundi: dulce lignum, dulces clavos, dúlcia ferens póndera: salva præséntem catérvam in tuis hódie laúdibus congregátam, allelúja, allelúja.",
 		"datum":"O Crux, * splendídior cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis: quæ sola fuísti digna portáre taléntum mundi: dulce lignum, dulces clavos, dúlcia ferens póndera: salva præséntem catérvam in tuis hódie laúdibus congregátam."
 	},
@@ -83,7 +77,6 @@
 	},
 	{
 		"tags":["inventio-crucis","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0503I",
 		"in-tempore-paschali":"Christum Regem crucifíxum, * Veníte adorémus, allelúja.",
 		"datum":"Christum Regem crucifíxum, * Veníte adorémus."
 	},
@@ -93,12 +86,10 @@
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-i","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/0503N1A",
 		"datum":"Invéntæ Crucis * festa recólimus, cujus præcónium univérsum per orbem micánti lúmine fulget, allelúja."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0503N1A",
 		"datum":"Invéntæ Crucis * festa recólimus, cujus præcónium univérsum per orbem micánti lúmine fulget."
 	},
 	{
@@ -107,12 +98,10 @@
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0914N1A2",
 		"datum":"Sancta Crux * extóllitur a cunctis régibus, virga régia erígitur, in qua Salvátor triumphávit."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0914N1A2",
 		"datum":"O Crux * venerábilis, quæ salútem attulísti míseris, quibus te éfferam præcóniis, quóniam vitam nobis cœ\u0301litum præparásti?"
 	},
 	{
@@ -168,12 +157,10 @@
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-ii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/0503N2A",
 		"datum":"Felix ille triúmphus * fit salus ægris, vitæ lignum, mortis remédium, allelúja."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0503N2A",
 		"datum":"Felix ille triúmphus * fit salus ægris, vitæ lignum, mortis remédium."
 	},
 	{
@@ -182,12 +169,10 @@
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0914N2A2",
 		"datum":"Funéstæ mortis * damnátur supplícium, dum Christus in Cruce nostra destrúxit víncula críminum."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0914N2A3",
 		"datum":"Rex exaltátur in ǽthera, * cum nóbile trophǽum Crucis ab univérsis Christícolis adorátur per sǽcula."
 	},
 	{
@@ -243,22 +228,18 @@
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-iii","antiphona","in-tempore-paschali"],
-		"src":"nocturnale/0503N3A",
 		"datum":"Adorámus te * Christe, et benedícimus tibi, quia per Crucem tuam redemísti mundum, allelúja."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0914N3A1",
 		"datum":"Adorámus te * Christe, et benedícimus tibi, quia per Crucem tuam redemísti mundum."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0914N3A2",
 		"datum":"Per lignum * servi facti sumus, et per sanctam Crucem liberáti sumus: fructus árboris sedúxit nos: Fílius Dei redémit nos, allelúja."
 	},
 	{
 		"tags":["inventio-crucis","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0914N3A3",
 		"datum":"Salvátor mundi * salva nos: qui per Crucem et sánguinem tuum redemísti nos, auxiliáre nobis, te deprecámur Deus noster."
 	},
 	{
@@ -313,7 +294,6 @@
 	},
 	{
 		"tags":["inventio-crucis","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13034",
 		"in-tempore-paschali":"Super ómnia * ligna cedrórum tu sola excélsior, in qua vita mundi pepéndit, in qua Christus triumphávit, et mors mortem superávit in ætérnum, allelúja.",
 		"datum":"Super ómnia * ligna cedrórum tu sola excélsior, in qua vita mundi pepéndit, in qua Christus triumphávit, et mors mortem superávit in ætérnum."
 	},
@@ -363,7 +343,6 @@
 	},
 	{
 		"tags":["inventio-crucis","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2884",
 		"in-tempore-paschali":"Crucem sanctam súbiit, * qui inférnum confrégit: accínctus est poténtia, surréxit die tértia, allelúja.",
 		"datum":"Crucem sanctam súbiit, * qui inférnum confrégit: accínctus est poténtia, surréxit die tértia."
 	}

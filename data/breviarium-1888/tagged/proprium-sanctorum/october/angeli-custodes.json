@@ -5,7 +5,6 @@
 	},
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-i"],
-		"src":"gregobase/2562",
 		"datum":"Ángelis suis * Deus mandávit de te, ut custódiant te in ómnibus viis tuis."
 	},
 	{
@@ -14,23 +13,19 @@
 	},
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-ii"],
-		"src":"gregobase/2476",
 		"datum":"Laudémus Dóminum, * quem laudant Ángeli, quem Chérubim et Séraphim, Sanctus, Sanctus, Sanctus proclámant."
 	},
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-iii"],
-		"src":"gregobase/2727",
 		"datum":"Ángeli eórum * semper vident fáciem Patris mei, qui est in cœlis.",
 		"in-tempore-paschali":"Ángeli eórum * semper vident fáciem Patris mei, qui est in cœlis, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-iv"],
-		"src":"gregobase/2252",
 		"datum":"Benedíctus Deus, * qui misit Ángelum suum, et éruit servos suos, qui credidérunt in eum."
 	},
 	{
 		"tags":["angeli-custodes","antiphona","antiphona-v"],
-		"src":"gregobase/1998",
 		"datum":"Laudáte Deum * omnes Ángeli ejus, laudáte eum omnes virtútes ejus.",
 		"in-tempore-paschali":"Laudáte Deum * omnes Ángeli ejus, laudáte eum omnes virtútes ejus, allelúja."
 	},
@@ -58,7 +53,6 @@
 	},
 	{
 		"tags":["angeli-custodes","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2525",
 		"datum":"Omnes sunt * administratórii spíritus in ministérium missi propter eos, qui hæreditátem cápiunt salútis."
 	},
 	{
@@ -68,28 +62,21 @@
 	},
 	{
 		"tags":["angeli-custodes","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/1002I",
 		"datum":"Regem Angelórum Dóminum, * Veníte adorémus.",
 		"in-tempore-paschali":"Regem Angelórum Dóminum, * Veníte adorémus, allelúja."
 	},
 	{
-		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/1002N1A1",
-		"datum":"Dóminus Deus * cœli et terræ, ipse mittet Ángelum suum coram te."
+		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Dóminus Deus * cœli et terræ, ipse mittet Ángelum suum coram te."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","psalmus"],
 		"datum":[["de-sanctis-angelis","matutinum","psalmus"]]
 	},
 	{
-		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/1002N1A2",
-		"datum":"Deus meus * misit Ángelum suum, et conclúsit ora leónum, et non nocuérunt mihi."
-	},
-	{
-		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/1002N1A2",
-		"datum":"Bene ambulétis, * et Dóminus sit in itínere vestro, et Ángelus ejus comitétur vobíscum."
+		"tags":["angeli-custodes","matutinum","nocturna-i","antiphona"],
+		"antiphona-ii":"Deus meus * misit Ángelum suum, et conclúsit ora leónum, et non nocuérunt mihi.",
+		"antiphona-iii":"Bene ambulétis, * et Dóminus sit in itínere vestro, et Ángelus ejus comitétur vobíscum."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-i"],
@@ -132,19 +119,10 @@
 		"versus":"Stetit Ángelus juxta aram templi, habens thuríbulum aúreum in manu sua."
 	},
 	{
-		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/1002N2A1",
-		"datum":"Cum essem vobíscum, * per voluntátem Dei eram: ipsum benedícite, et cantáte ei."
-	},
-	{
-		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1002N2A2",
-		"datum":"Tollens se Ángelus Dómini, * qui præcedébat castra Ísraël, ábiit post eos."
-	},
-	{
-		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1002N2A3",
-		"datum":"Immíttet Ángelus Dómini * in circúitu timéntium eum, et erípiet eos."
+		"tags":["angeli-custodes","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Cum essem vobíscum, * per voluntátem Dei eram: ipsum benedícite, et cantáte ei.",
+		"antiphona-ii":"Tollens se Ángelus Dómini, * qui præcedébat castra Ísraël, ábiit post eos.",
+		"antiphona-iii":"Immíttet Ángelus Dómini * in circúitu timéntium eum, et erípiet eos."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-ii","lectio","lectio-i"],
@@ -185,18 +163,15 @@
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/1002N3A1",
 		"datum":"Misit Dóminus * Ángelum suum, qui percússit omnem virum robústum, et bellatórem, et príncipem exércitus regis Assyriórum.",
 		"in-tempore-paschali":"Misit Dóminus * Ángelum suum, qui percússit omnem virum robústum, et bellatórem, et príncipem exércitus regis Assyriórum, allelúja."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1002N3A2",
 		"datum":"Adoráte Dóminum * omnes Ángeli ejus: audívit, et lætáta est Sion."
 	},
 	{
 		"tags":["angeli-custodes","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1002N3A3",
 		"datum":"Benedícite Dómino * omnes Ángeli ejus, poténtes virtúte, faciéntes verbum illíus, ad audiéndam vocem sermónum ejus."
 	},
 	{
@@ -249,7 +224,6 @@
 	},
 	{
 		"tags":["angeli-custodes","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13230",
 		"datum":"Revérsus est Ángelus * qui loquebátur in me, et suscitávit me; quasi virum qui suscitátur a somno suo."
 	},
 	{
@@ -267,7 +241,6 @@
 	},
 	{
 		"tags":["angeli-custodes","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2860",
 		"datum":"Sancti Ángeli * Custódes nostri, deféndite nos in prǽlio, ut non pereámus in treméndo judício."
 	}
 ]

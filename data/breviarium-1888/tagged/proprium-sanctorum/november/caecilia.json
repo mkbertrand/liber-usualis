@@ -4,33 +4,15 @@
 		"datum":"S. Cæciliæ Virginis et Martyris"
 	},
 	{
-		"tags":["caecilia","antiphona","antiphona-i"],
-		"src":"gregobase/2184",
-		"datum":"Cantántibus órganis * Cæcília Dómino decantábat, dicens: Fiat cor meum immaculátum, ut non confúndar."
-	},
-	{
-		"tags":["caecilia","antiphona","antiphona-ii"],
-		"src":"gregobase/2554",
-		"datum":"Valeriánus * in cubículo Cæcíliam cum Ángelo orántem invénit."
-	},
-	{
-		"tags":["caecilia","antiphona","antiphona-iii"],
-		"src":"gregobase/2402",
-		"datum":"Cæcília fámula tua, * Domine, quasi apis tibi argumentósa desérvit."
-	},
-	{
-		"tags":["caecilia","antiphona","antiphona-iv"],
-		"src":"gregobase/2039",
-		"datum":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo."
-	},
-	{
-		"tags":["caecilia","antiphona","antiphona-v"],
-		"src":"gregobase/2016",
-		"datum":"Triduánas a Dómino * popósci indúcias, ut domum meam ecclésiam consecrárem."
+		"tags":["caecilia","antiphona"],
+		"antiphona-i":"Cantántibus órganis * Cæcília Dómino decantábat, dicens: Fiat cor meum immaculátum, ut non confúndar.",
+		"antiphona-ii":"Valeriánus * in cubículo Cæcíliam cum Ángelo orántem invénit.",
+		"antiphona-iii":"Cæcília fámula tua, * Domine, quasi apis tibi argumentósa desérvit.",
+		"antiphona-iv":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.",
+		"antiphona-v":"Triduánas a Dómino * popósci indúcias, ut domum meam ecclésiam consecrárem."
 	},
 	{
 		"tags":["caecilia","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2853",
 		"datum":"Est secrétum * Valeriáne, quod tibi volo dícere: Ángelum Dei hábeo amatórem, qui nímio zelo custódit corpus meum."
 	},
 	{
@@ -39,19 +21,10 @@
 		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
-		"tags":["caecilia","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/1122N1A1",
-		"datum":"Cæcília virgo * Almáchium superábat: Tibúrtium et Valeriánum ad corónas vocábat."
-	},
-	{
-		"tags":["caecilia","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/1122N1A2",
-		"datum":"Expánsis mánibus * orábat ad Dóminum, ut eam eríperet de inimícis."
-	},
-	{
-		"tags":["caecilia","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/1122N1A3",
-		"datum":"Cilício * Cæcília membra domábat, Deum gemítibus exorábat."
+		"tags":["caecilia","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Cæcília virgo * Almáchium superábat: Tibúrtium et Valeriánum ad corónas vocábat.",
+		"antiphona-ii":"Expánsis mánibus * orábat ad Dóminum, ut eam eríperet de inimícis.",
+		"antiphona-iii":"Cilício * Cæcília membra domábat, Deum gemítibus exorábat."
 	},
 	{
 		"tags":["caecilia","matutinum","nocturna-i","lectio"],
@@ -76,19 +49,10 @@
 		"versus":"Expánsis mánibus orábat ad Dóminum, et cor ejus igne cœlésti ardébat."
 	},
 	{
-		"tags":["caecilia","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/1122N2A1",
-		"datum":"Dómine * Jesu Christe, seminátor casti consílii, súscipe séminum fructus, quos in Cæcília seminásti."
-	},
-	{
-		"tags":["caecilia","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1122N2A2",
-		"datum":"Beáta Cæcília * dixit ad Tibúrtium: Hódie te fáteor meum cognátum, quia amor Dei te fecit esse contemptórem idolórum."
-	},
-	{
-		"tags":["caecilia","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1122N2A3",
-		"datum":"Fiat Dómine cor meum * et corpus meum immaculátum, ut non confúndar."
+		"tags":["caecilia","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Dómine * Jesu Christe, seminátor casti consílii, súscipe séminum fructus, quos in Cæcília seminásti.",
+		"antiphona-ii":"Beáta Cæcília * dixit ad Tibúrtium: Hódie te fáteor meum cognátum, quia amor Dei te fecit esse contemptórem idolórum.",
+		"antiphona-iii":"Fiat Dómine cor meum * et corpus meum immaculátum, ut non confúndar."
 	},
 	{
 		"tags":["caecilia","matutinum","nocturna-ii","lectio"],
@@ -121,19 +85,10 @@
 		"versus":"Nam sponsum, quem quasi leónem ferócem accépit, ad te quasi agnum mansuetíssimum destinávit."
 	},
 	{
-		"tags":["caecilia","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/1122N3A1",
-		"datum":"Crédimus Christum * Fílium Dei verum Deum esse, qui sibi talem elégit fámulam."
-	},
-	{
-		"tags":["caecilia","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1122N3A2",
-		"datum":"Nos sciéntes * sanctum nomen ejus, omníno negáre non póssumus."
-	},
-	{
-		"tags":["caecilia","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1122N3A3",
-		"datum":"Tunc Valeriánus * perréxit, et signo quod accéperat, invénit sanctum Urbánum."
+		"tags":["caecilia","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":"Crédimus Christum * Fílium Dei verum Deum esse, qui sibi talem elégit fámulam.",
+		"antiphona-ii":"Nos sciéntes * sanctum nomen ejus, omníno negáre non póssumus.",
+		"antiphona-iii":"Tunc Valeriánus * perréxit, et signo quod accéperat, invénit sanctum Urbánum."
 	},
 	{
 		"tags":["caecilia","matutinum","nocturna-iii","lectio"],
@@ -166,12 +121,10 @@
 	},
 	{
 		"tags":["caecilia","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12405",
 		"datum":"Dum auróra * finem daret, Cæcília exclamávit, dicens: Eja mílites Christi, abjícite ópera tenebrárum, et induímini arma lucis."
 	},
 	{
 		"tags":["caecilia","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2380",
 		"datum":"Virgo gloriósa * semper Evangélium Christi gerébat in pectóre suo, et non diébus neque nóctibus a collóquiis divínis et oratióne cessábat."
 	}
 ]

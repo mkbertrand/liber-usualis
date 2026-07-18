@@ -4,33 +4,15 @@
 		"datum":"S. Luciæ Virginis et Martyris"
 	},
 	{
-		"tags":["lucia","antiphona","antiphona-i"],
-		"src":"gregobase/2738",
-		"datum":"Oránte sancta Lúcia, * appáruit ei beáta Agatha, et consolabátur ancíllam Christi."
-	},
-	{
-		"tags":["lucia","antiphona","antiphona-ii"],
-		"src":"gregobase/2240",
-		"datum":"Lúcia virgo * quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?"
-	},
-	{
-		"tags":["lucia","antiphona","antiphona-iii"],
-		"src":"gregobase/1926",
-		"datum":"Per te Lúcia virgo * cívitas Syracusána decorábitur a Dómino Jesu Christo."
-	},
-	{
-		"tags":["lucia","antiphona","antiphona-iv"],
-		"src":"gregobase/2039",
-		"datum":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo."
-	},
-	{
-		"tags":["lucia","antiphona","antiphona-v"],
-		"src":"gregobase/2704",
-		"datum":"Soror mea Lúcia, * virgo Deo devóta, quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?"
+		"tags":["lucia","antiphona"],
+		"antiphona-i":"Oránte sancta Lúcia, * appáruit ei beáta Agatha, et consolabátur ancíllam Christi.",
+		"antiphona-ii":"Lúcia virgo * quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?",
+		"antiphona-iii":"Per te Lúcia virgo * cívitas Syracusána decorábitur a Dómino Jesu Christo.",
+		"antiphona-iv":"Benedíco te * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.",
+		"antiphona-v":"Soror mea Lúcia, * virgo Deo devóta, quid a me petis, quod ipsa póteris præstáre contínuo matri tuæ?"
 	},
 	{
 		"tags":["lucia","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1987",
 		"datum":"In tua patiéntia * possedísti ánimam tuam, Lúcia sponsa Christi: odísti quæ in mundo sunt, et corúscas cum Ángelis: sánguine próprio inimícum vicísti."
 	},
 	{
@@ -93,12 +75,10 @@
 	},
 	{
 		"tags":["lucia","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/13242",
 		"datum":"Colúmna es * immóbilis, Lúcia sponsa Christi: quia omnis plebs te exspéctat, ut accípias corónam vitæ, allelúja."
 	},
 	{
 		"tags":["lucia","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2757",
 		"datum":"Tanto póndere eam fixit * Spíritus sanctus, ut virgo Christi immóbilis permanéret."
 	}
 ]

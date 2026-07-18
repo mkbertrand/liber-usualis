@@ -8,29 +8,12 @@
 		"datum":"S. Laurentii"
 	},
 	{
-		"tags":["laurentius","antiphona","antiphona-i"],
-		"src":"gregobase/2872",
-		"datum":"Lauréntius ingréssus est * Martyr, et conféssus est nomen Dómini Jesu Christi."
-	},
-	{
-		"tags":["laurentius","antiphona","antiphona-ii"],
-		"src":"gregobase/2893",
-		"datum":"Lauréntius * bonum opus operátus est, qui per signum crucis cæcos illuminávit."
-	},
-	{
-		"tags":["laurentius","antiphona","antiphona-iii"],
-		"src":"gregobase/2141",
-		"datum":"Adhǽsit ánima mea * post te, quia caro mea igne cremáta est pro te Deus meus."
-	},
-	{
-		"tags":["laurentius","antiphona","antiphona-iv"],
-		"src":"gregobase/2071",
-		"datum":"Misit Dóminus * Ángelum suum, et liberávit me de médio ignis, et non sum æstuátus."
-	},
-	{
-		"tags":["laurentius","antiphona","antiphona-v"],
-		"src":"gregobase/2743",
-		"datum":"Beátus Lauréntius * orábat, dicens: Grátias tibi ago Dómine, quia jánuas tuas íngredi mérui."
+		"tags":["laurentius","antiphona"],
+		"antiphona-i":"Lauréntius ingréssus est * Martyr, et conféssus est nomen Dómini Jesu Christi.",
+		"antiphona-ii":"Lauréntius * bonum opus operátus est, qui per signum crucis cæcos illuminávit.",
+		"antiphona-iii":"Adhǽsit ánima mea * post te, quia caro mea igne cremáta est pro te Deus meus.",
+		"antiphona-iv":"Misit Dóminus * Ángelum suum, et liberávit me de médio ignis, et non sum æstuátus.",
+		"antiphona-v":"Beátus Lauréntius * orábat, dicens: Grátias tibi ago Dómine, quia jánuas tuas íngredi mérui."
 	},
 	{
 		"tags":["laurentius","capitulum"],
@@ -38,7 +21,6 @@
 	},
 	{
 		"tags":["laurentius","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2388",
 		"datum":"Levíta Lauréntius * bonum opus operátus est, qui per signum crucis cæcos illuminávit, et thesaúros Ecclésiæ dedit paupéribus."
 	},
 	{
@@ -48,22 +30,18 @@
 	},
 	{
 		"tags":["laurentius","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0810I",
 		"datum":"Beátus Lauréntius Christi Martyr triúmphat coronátus in cœlis: * Veníte adorémus Dóminum."
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0810N1A1",
 		"datum":"Quo progréderis * sine fílio pater? quo sacérdos sancte sine minístro próperas?"
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0810N1A2",
 		"datum":"Noli me derelínquere * pater sancte, quia thesaúros tuos jam expéndi, quos tradidísti mihi."
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0810N1A3",
 		"datum":"Non ego te désero * fili, neque derelínquo: sed majóra tibi debéntur pro Christi fide certámina."
 	},
 	{
@@ -101,17 +79,14 @@
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0810N2A1",
 		"datum":"Beátus Lauréntius * orábat, dicens: Dómine Jesu Christe, Deus de Deo, miserére mihi servo tuo."
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0810N2A2",
 		"datum":"Dixit Románus * ad beátum Lauréntium: Vídeo ante te júvenem pulchérrimum, festína me baptizáre."
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0810N2A3",
 		"datum":"Beátus Lauréntius * dixit: Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
 	},
 	{
@@ -149,7 +124,6 @@
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0810N3A1",
 		"datum":"Strinxérunt córporis * membra pósita super cratículam: subjiciéntibus prunas insúltat Levíta Christi."
 	},
 	{
@@ -158,7 +132,6 @@
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0810N3A2",
 		"datum":"Igne me examinásti, * et non est invénta in me iníquitas."
 	},
 	{
@@ -167,7 +140,6 @@
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0810N3A3",
 		"datum":"Interrogátus * te Dóminum conféssus sum, assátus grátias ago."
 	},
 	{
@@ -192,7 +164,6 @@
 	},
 	{
 		"tags":["laurentius","laudes","antiphona","antiphona-benedictus"],
-		"src":"gregobase/12226",
 		"datum":"In cratícula * te Deum non negávi, et ad ignem applicátus te Christum conféssus sum: probásti cor meum, et visitásti nocte: igne me examinásti, et non est invénta in me iníquitas."
 	},
 	{
@@ -209,7 +180,6 @@
 	},
 	{
 		"tags":["laurentius","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2955",
 		"datum":"Beátus Lauréntius * dum in cratícula superpósitus urerétur, ad impiíssimum tyránnum dixit: Assátum est jam, versa, et mandúca: nam facultátes Ecclésiæ, quas requíris, in cœléstes thesaúros manus paúperum deportavérunt."
 	},
 	{

@@ -4,29 +4,12 @@
 		"datum":"Septem Dolorum B.M.V."
 	},
 	{
-		"tags":["septem-dolores-septembris","antiphona","antiphona-i"],
-		"src":"gregobase/2228",
-		"datum":"Quo ábiit diléctus tuus, * o pulchérrima mulíerum? quo declinávit diléctus tuus, et quærémus eum tecum."
-	},
-	{
-		"tags":["septem-dolores-septembris","antiphona","antiphona-ii"],
-		"src":"gregobase/1878",
-		"datum":"Recédite a me, * amáre flebo, nolíte incúmbere, ut consolémini me."
-	},
-	{
-		"tags":["septem-dolores-septembris","antiphona","antiphona-iii"],
-		"src":"gregobase/2646",
-		"datum":"Non est ei spécies, * neque decor, et vídimus eum, et non erat aspéctus."
-	},
-	{
-		"tags":["septem-dolores-septembris","antiphona","antiphona-iv"],
-		"src":"gregobase/1967",
-		"datum":"A planta pedis * usque ad vérticem cápitis, non est in eo sánitas."
-	},
-	{
-		"tags":["septem-dolores-septembris","antiphona","antiphona-v"],
-		"src":"gregobase/2900",
-		"datum":"Fulcíte me flóribus, * stipáte me malis, quia amóre lángueo."
+		"tags":["septem-dolores-septembris","antiphona"],
+		"antiphona-i":"Quo ábiit diléctus tuus, * o pulchérrima mulíerum? quo declinávit diléctus tuus, et quærémus eum tecum.",
+		"antiphona-ii":"Recédite a me, * amáre flebo, nolíte incúmbere, ut consolémini me.",
+		"antiphona-iii":"Non est ei spécies, * neque decor, et vídimus eum, et non erat aspéctus.",
+		"antiphona-iv":"A planta pedis * usque ad vérticem cápitis, non est in eo sánitas.",
+		"antiphona-v":"Fulcíte me flóribus, * stipáte me malis, quia amóre lángueo."
 	},
 	{
 		"tags":["septem-dolores-septembris","capitulum"],
@@ -51,7 +34,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","i-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2343",
 		"datum":"Nolíte * me consideráre, quod fusca sim, quia decolorávit me sol, fílii matris meæ pugnavérunt contra me."
 	},
 	{
@@ -67,7 +49,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/0915I",
 		"datum":"Stemus juxta crucem cum María Matre Jesu, * Cujus ánimam dolóris gládius pertransívit."
 	},
 	{
@@ -83,7 +64,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/0915N1A1",
 		"datum":"Multiplicáti sunt, * qui tríbulant me: multi insúrgunt advérsum me."
 	},
 	{
@@ -92,7 +72,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/0915N1A2",
 		"datum":"Paravérunt * sagíttas suas in pháretra, ut sagíttent in obscúro rectos corde."
 	},
 	{
@@ -101,7 +80,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/0915N1A3",
 		"datum":"Defécit * in dolóre vita mea, et anni mei in gemítibus."
 	},
 	{
@@ -145,7 +123,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/0915N2A1",
 		"datum":"Factum est cor meum * tamquam cera liquéscens in médio ventris mei."
 	},
 	{
@@ -154,7 +131,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0915N2A2",
 		"datum":"Deus vitam meam * annuntiávi tibi: posuísti lácrimas meas in conspéctu tuo."
 	},
 	{
@@ -163,7 +139,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0915N2A3",
 		"datum":"Fuérunt * mihi lácrimæ meæ panes die ac nocte."
 	},
 	{
@@ -213,7 +188,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/0915N3A1",
 		"datum":"Intendérunt arcum * rem amáram, ut sagíttent in occúltis immaculátum."
 	},
 	{
@@ -222,7 +196,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/0915N3A2",
 		"datum":"Ánima mea * turbáta est valde: sed tu Dómine úsquequo?"
 	},
 	{
@@ -231,7 +204,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/0915N3A3",
 		"datum":"Deus adjútor * in tribulatiónibus, quæ invenérunt nos nimis."
 	},
 	{
@@ -324,7 +296,6 @@
 	},
 	{
 		"tags":["septem-dolores-septembris","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/1980",
 		"datum":"Oppréssit me dolor, * et fácies mea intúmuit a fletu, et pálpebræ meæ caligavérunt."
 	}
 ]

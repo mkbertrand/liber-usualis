@@ -4,36 +4,18 @@
 		"datum":"S. Martini Episcopi et Confessoris"
 	},
 	{
-		"tags":["martinus","antiphona","antiphona-i"],
-		"src":"gregobase/2785",
-		"datum":"Dixérunt discípuli * ad beátum Martínum: Cur nos pater déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces."
-	},
-	{
-		"tags":["martinus","antiphona","antiphona-ii"],
-		"src":"gregobase/2585",
-		"datum":"Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua."
-	},
-	{
-		"tags":["martinus","antiphona","antiphona-iii"],
-		"src":"gregobase/2968",
-		"datum":"O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!"
-	},
-	{
-		"tags":["martinus","antiphona","antiphona-iv"],
-		"src":"gregobase/2155",
-		"datum":"Óculis ac mánibus * in cœlum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja."
-	},
-	{
-		"tags":["martinus","antiphona","antiphona-v"],
-		"src":"gregobase/2192",
-		"datum":"Martínus Ábrahæ sinu * lætus excípitur: Martínus, hic pauper et módicus, cœlum dives ingréditur, hymnis cœléstibus honorátur."
+		"tags":["martinus","antiphona"],
+		"antiphona-i":"Dixérunt discípuli * ad beátum Martínum: Cur nos pater déseris, aut cui nos desolátos relínquis? Invádent enim gregem tuum lupi rapáces.",
+		"antiphona-ii":"Dómine, * si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua.",
+		"antiphona-iii":"O virum ineffábilem, * nec labóre victum, nec morte vincéndum, qui nec mori tímuit, nec vívere recusávit!",
+		"antiphona-iv":"Óculis ac mánibus * in cœlum semper inténtus, invíctum ab oratióne spíritum non relaxábat, allelúja.",
+		"antiphona-v":"Martínus Ábrahæ sinu * lætus excípitur: Martínus, hic pauper et módicus, cœlum dives ingréditur, hymnis cœléstibus honorátur."
 	},
 	{
 		"tags":[
 			["martinus","i-vesperae","antiphona","antiphona-magnificat"],
 			["martinus","laudes","antiphona","antiphona-benedictus"]
 		],
-		"src":"gregobase/2887",
 		"datum":"O beátum virum, * cujus ánima paradísum póssidet: unde exsúltant Ángeli, lætántur Archángeli, chorus Sanctórum proclámat, turba Vírginum invítat, Mane nobíscum in ætérnum."
 	},
 	{
@@ -43,23 +25,13 @@
 	},
 	{
 		"tags":["martinus","matutinum","antiphona","antiphona-invitatorium"],
-		"src":"nocturnale/1111I",
 		"datum":"Laudémus Deum nostrum * In confessióne beáti Martíni."
 	},
 	{
-		"tags":["martinus","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"src":"nocturnale/1111N1A1",
-		"datum":"Martínus adhuc catechúmenus * hac me veste contéxit."
-	},
-	{
-		"tags":["martinus","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"src":"nocturnale/1111N1A2",
-		"datum":"Sanctæ Trinitátis fidem * Martínus conféssus est, et baptísmi grátiam percépit."
-	},
-	{
-		"tags":["martinus","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"src":"nocturnale/1111N1A3",
-		"datum":"Ego signo crucis, * non clýpeo protéctus, aut gálea, hóstium cúneos penetrábo secúrus."
+		"tags":["martinus","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Martínus adhuc catechúmenus * hac me veste contéxit.",
+		"antiphona-ii":"Sanctæ Trinitátis fidem * Martínus conféssus est, et baptísmi grátiam percépit.",
+		"antiphona-iii":"Ego signo crucis, * non clýpeo protéctus, aut gálea, hóstium cúneos penetrábo secúrus."
 	},
 	{
 		"tags":["martinus","matutinum","nocturna-i","responsorium","responsorium-i"],
@@ -80,19 +52,10 @@
 		"versus":"Dómine, si adhuc pópulo tuo sum necessárius, non recúso labórem: fiat volúntas tua."
 	},
 	{
-		"tags":["martinus","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"src":"nocturnale/1111N2A1",
-		"datum":"Confído in Dómino, * quod fília mea précibus tuis reddénda sit sanitáti."
-	},
-	{
-		"tags":["martinus","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1111N2A2",
-		"datum":"Tetrádius * cógnita Dei virtúte, ad baptísmi grátiam pervénit."
-	},
-	{
-		"tags":["martinus","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1111N2A3",
-		"datum":"O ineffábilem virum, * per quem nobis tanta mirácula corúscant!"
+		"tags":["martinus","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Confído in Dómino, * quod fília mea précibus tuis reddénda sit sanitáti.",
+		"antiphona-ii":"Tetrádius * cógnita Dei virtúte, ad baptísmi grátiam pervénit.",
+		"antiphona-iii":"O ineffábilem virum, * per quem nobis tanta mirácula corúscant!"
 	},
 	{
 		"tags":["martinus","matutinum","nocturna-ii","lectio"],
@@ -126,7 +89,6 @@
 	},
 	{
 		"tags":["martinus","matutinum","nocturna-iii","antiphona","antiphona-i"],
-		"src":"nocturnale/1111N3A1",
 		"datum":"Dóminus Jesus Christus * non purpurátum, aut diadémate reniténtem se ventúrum esse prædíxit."
 	},
 	{
@@ -135,7 +97,6 @@
 	},
 	{
 		"tags":["martinus","matutinum","nocturna-iii","antiphona","antiphona-ii"],
-		"src":"nocturnale/1111N3A2",
 		"datum":"Sacérdos Dei Martíne, * apérti sunt tibi cœli, et regnum Patris mei."
 	},
 	{
@@ -144,7 +105,6 @@
 	},
 	{
 		"tags":["martinus","matutinum","nocturna-iii","antiphona","antiphona-iii"],
-		"src":"nocturnale/1111N3A3",
 		"datum":"Sacérdos Dei * Martíne, pastor egrégie, ora pro nobis Deum."
 	},
 	{
@@ -179,7 +139,6 @@
 	},
 	{
 		"tags":["martinus","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2378",
 		"datum":"O beátum Pontíficem, * qui totis viscéribus diligébat Christum Regem, et non formidábat impérii principátum: o sanctíssima ánima, quam etsi gládius persecutóribus non ábstulit, palmam tamen martýrii non amísit!"
 	}
 ]

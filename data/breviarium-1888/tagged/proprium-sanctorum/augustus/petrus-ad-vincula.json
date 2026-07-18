@@ -4,29 +4,12 @@
 		"datum":"S. Petri ad Vincula"
 	},
 	{
-		"tags":["petrus-ad-vincula","antiphona","antiphona-i"],
-		"src":"gregobase/2593",
-		"datum":"Heródes rex * appósuit ut apprehénderet et Petrum: quem cum apprehendísset, misit in cárcerem, volens post Pascha prodúcere eum pópulo."
-	},
-	{
-		"tags":["petrus-ad-vincula","antiphona","antiphona-ii"],
-		"src":"gregobase/2553",
-		"datum":"Petrus quidem * servabátur in cárcere, orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo."
-	},
-	{
-		"tags":["petrus-ad-vincula","antiphona","antiphona-iii"],
-		"src":"gregobase/2589",
-		"datum":"Dixit Ángelus * ad Petrum: Circúmda tibi vestiméntum tuum, et séquere me."
-	},
-	{
-		"tags":["petrus-ad-vincula","antiphona","antiphona-iv"],
-		"src":"gregobase/2557",
-		"datum":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja."
-	},
-	{
-		"tags":["petrus-ad-vincula","antiphona","antiphona-v"],
-		"src":"gregobase/1950",
-		"datum":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
+		"tags":["petrus-ad-vincula","antiphona"],
+		"antiphona-i":"Heródes rex * appósuit ut apprehénderet et Petrum: quem cum apprehendísset, misit in cárcerem, volens post Pascha prodúcere eum pópulo.",
+		"antiphona-ii":"Petrus quidem * servabátur in cárcere, orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo.",
+		"antiphona-iii":"Dixit Ángelus * ad Petrum: Circúmda tibi vestiméntum tuum, et séquere me.",
+		"antiphona-iv":"Misit Dóminus * Ángelum suum, et liberávit me de manu Heródis, allelúja.",
+		"antiphona-v":"Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam."
 	},
 	{
 		"tags":["petrus-ad-vincula","capitulum"],
@@ -110,7 +93,6 @@
 	},
 	{
 		"tags":["petrus-ad-vincula","ii-vesperae","antiphona","antiphona-magnificat"],
-		"src":"gregobase/2012",
 		"datum":"Solve * jubénte Deo terrárum Petre caténas, qui facis ut páteant cœléstia regna beátis."
 	}
 ]
