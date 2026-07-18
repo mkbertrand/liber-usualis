@@ -109,14 +109,12 @@
 	},
 	{
 		"tags":["epiphania","festum","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/0106N1R1",
 		"incipit":"Hódie in Jordáne baptizáto Dómino apérti sunt cœli, et sicut colúmba super eum Spíritus mansit, et vox Patris intónuit:",
 		"responsum":"Hic est Fílius meus diléctus, in quo mihi bene complácui.",
 		"versus":"Descéndit Spíritus sanctus corporáli spécie sicut colúmba in ipsum, et vox de cœlo facta est."
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-i","responsorium","responsorium-i"],
-		"src":"nocturnale/0106N1R1b",
 		"incipit":"Tria sunt múnera pretiósa, quæ obtulérunt Magi Dómino in die ista, et habent in se divína mystéria:",
 		"responsum":"In auro, ut ostendátur Regis poténtia: in thure, Sacerdótem magnum consídera: et in myrrha, Domínicam sepultúram.",
 		"versus":"Salútis nostræ auctórem Magi veneráti sunt in cunábulis, et de thesaúris suis mýsticas ei múnerum spécies obtulérunt."
@@ -127,7 +125,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"src":"nocturnale/0106N1R2",
 		"incipit":"In colúmbæ spécie Spíritus sanctus visus est, Patérna vox audíta est:",
 		"responsum":"Hic est Fílius meus diléctus, in quo mihi bene complácui.",
 		"versus":"Cœli apérti sunt super eum, et vox Patris intónuit."
@@ -138,7 +135,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-i","responsorium","responsorium-iii"],
-		"src":"nocturnale/0106N1R3",
 		"incipit":"Reges Tharsis et ínsulæ múnera ófferent:",
 		"responsum":"Reges Árabum et Saba dona Dómino Deo addúcent.",
 		"versus":"Omnes de Saba vénient, aurum et thus deferéntes."
@@ -176,7 +172,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-ii","responsorium","responsorium-i"],
-		"src":"nocturnale/0106N2R1",
 		"incipit":"Illumináre, illumináre Jerúsalem, quia venit lux tua:",
 		"responsum":"Et glória Dómini super te orta est.",
 		"versus":"Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui."
@@ -187,7 +182,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"src":"nocturnale/0106N2R2",
 		"incipit":"Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes,",
 		"responsum":"Allelúja, allelúja, allelúja.",
 		"versus":"Reges Tharsis et ínsulæ múnera ófferent, reges Árabum et Saba dona addúcent."
@@ -198,7 +192,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-		"src":"nocturnale/0106N2R3",
 		"incipit":"Magi véniunt ab Oriénte Jerosólymam, quæréntes, et dicéntes: Ubi est qui natus est, cujus stellam vídimus?",
 		"responsum":"Et vénimus adoráre Dóminum.",
 		"versus":"Vídimus stellam ejus in Oriénte."
@@ -269,7 +262,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/0106N3R1",
 		"incipit":"Stella, quam víderant Magi in Oriénte, antecedébat eos, donec venírent ad locum, ubi puer erat.",
 		"responsum":"Vidéntes autem eam, gavísi sunt gaúdio magno.",
 		"versus":"Et intrántes domum, invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum."
@@ -280,7 +272,6 @@
 	},
 	{
 		"tags":["epiphania","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/0106N3R2",
 		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
 		"incipit":"Vidéntes stellam Magi, gavísi sunt gaúdio magno:",
 		"responsum-i":"Et intrántes domum invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum:",
@@ -314,7 +305,6 @@
 	},
 	{
 		"tags":["epiphania","tertia","responsorium-breve"],
-		"src":"gregobase/3083",
 		"incipit":"Reges Tharsis et ínsulæ múnera ófferent.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Reges Árabum et Saba dona addúcent."
@@ -329,7 +319,6 @@
 	},
 	{
 		"tags":["epiphania","sexta","responsorium-breve"],
-		"src":"gregobase/3161",
 		"incipit":"Omnes de Saba vénient.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Aurum et thus deferéntes."
@@ -340,7 +329,6 @@
 	},
 	{
 		"tags":["epiphania","nona","responsorium-breve"],
-		"src":"gregobase/3206",
 		"incipit":"Adoráte Dóminum.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"In aula sancta ejus."

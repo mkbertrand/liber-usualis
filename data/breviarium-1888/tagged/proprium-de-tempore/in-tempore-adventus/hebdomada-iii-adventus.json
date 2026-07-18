@@ -67,7 +67,6 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
 			["hebdomada-iii-adventus","feria","feria-ii","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"nocturnale/A3N1R1",
 		"incipit":"Ecce apparébit Dóminus super nubem cándidam,",
 		"responsum":"Et cum eo sanctórum míllia: et habébit in vestiménto, et in fémore suo scriptum: Rex regum, et Dóminus dominántium.",
 		"versus":"Apparébit in finem, et non mentiétur; si moram fécerit, exspécta eum, quia véniens véniet."
@@ -81,7 +80,6 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
 			["hebdomada-iii-adventus","feria","feria-ii","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"nocturnale/A3N1R2",
 		"incipit":"Béthlehem cívitas Dei summi, ex te éxiet Dominátor Ísraël, et egréssus ejus sicut a princípio diérum æternitátis, et magnificábitur in médio univérsæ terræ:",
 		"responsum":"Et pax erit in terra nostra, dum vénerit.",
 		"versus":"Loquétur pacem in Géntibus, et potéstas ejus a mari usque ad mare."
@@ -95,7 +93,6 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
 			["hebdomada-iii-adventus","feria","feria-ii","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"nocturnale/A3N1R3",
 		"incipit":"Qui ventúrus est, véniet, et non tardábit: et jam non erit timor in fínibus nostris:",
 		"responsum":"Quóniam ipse est Salvátor noster.",
 		"versus":"Depónet omnes iniquitátes nostras, et projíciet in profúndum maris ómnia peccáta nostra."
@@ -112,7 +109,6 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
 			["hebdomada-iii-adventus","feria","feria-iii","matutinum","responsorium","responsorium-i"]
 		],
-		"src":"nocturnale/A3N2R1",
 		"incipit":"Ægýpte noli flere, quia Dominátor tuus véniet tibi, ante cujus conspéctum movebúntur abýssi,",
 		"responsum":"Liberáre pópulum suum de manu poténtiæ.",
 		"versus":"Ecce véniet Dóminus exercítuum, Deus tuus cum potestáte magna."
@@ -126,7 +122,6 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
 			["hebdomada-iii-adventus","feria","feria-iii","matutinum","responsorium","responsorium-ii"]
 		],
-		"src":"nocturnale/A3N2R2",
 		"incipit":"Prope est ut véniat tempus ejus, et dies ejus non elongabúntur:",
 		"responsum":"Miserébitur Dóminus Jacob, et Ísraël salvábitur.",
 		"versus":"Revértere virgo Ísraël, revértere ad civitátes tuas."
@@ -140,7 +135,6 @@
 			["hebdomada-iii-adventus","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 			["hebdomada-iii-adventus","feria","feria-iii","matutinum","responsorium","responsorium-iii"]
 		],
-		"src":"nocturnale/A3N2R3",
 		"incipit":"Descéndet Dóminus sicut plúvia in vellus:",
 		"responsum":"Oriétur in diébus ejus justítia, et abundántia pacis.",
 		"versus":"Et adorábunt eum omnes reges, omnes gentes sérvient ei."
@@ -156,7 +150,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
-		"src":"nocturnale/A3N3R1",
 		"incipit":"Veni Dómine, et noli tardáre: reláxa facínora plebi tuæ,",
 		"responsum":"Et révoca dispérsos in terram suam.",
 		"versus":"Éxcita Dómine poténtiam tuam, et veni, ut salvos fácias nos."
@@ -167,7 +160,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"src":"nocturnale/A3N3R2",
 		"incipit":"Ecce radix Jesse descéndet in salútem populórum, ipsum Gentes deprecabúntur:",
 		"responsum":"Et erit nomen ejus gloriósum.",
 		"versus":"Dabit ei Dóminus Deus sedem David patris ejus, et regnábit in domo Jacob in ætérnum."
@@ -178,7 +170,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
-		"src":"nocturnale/A3N3R3",
 		"incipit":"Docébit nos Dóminus vias suas, et ambulábimus in sémitis ejus:",
 		"responsum":"Quia de Sion exíbit lex, et verbum Dómini de Jerúsalem.",
 		"versus":"Veníte, ascendámus ad montem Dómini, et ad domum Dei Jacob."
@@ -254,7 +245,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","matutinum","responsorium","responsorium-i"],
-		"src":"nocturnale/A3F5R1",
 		"incipit":"Egrediétur Dóminus et præliábitur contra Gentes:",
 		"responsum":"Et stabunt pedes ejus supra montes olivárum ad Oriéntem.",
 		"versus":"Et elevábitur supra omnes colles, et fluent ad eum omnes Gentes."
@@ -265,7 +255,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","matutinum","responsorium","responsorium-ii"],
-		"src":"nocturnale/A3F5R2",
 		"incipit":"Præcúrsor pro nobis ingréditur Agnus sine mácula,",
 		"responsum":"Secúndum órdinem Melchísedech Póntifex factus in ætérnum, et in sǽculum sǽculi.",
 		"versus":"Ipse est rex justítiæ, cujus generátio non habet finem."
@@ -276,7 +265,6 @@
 	},
 	{
 		"tags":["hebdomada-iii-adventus","feria","feria-v","matutinum","responsorium","responsorium-iii"],
-		"src":"nocturnale/A3F5R3",
 		"incipit":"Vidébunt Gentes justum tuum, et cuncti reges ínclytum tuum:",
 		"responsum":"Et vocábitur tibi nomen novum, quod os Dómini nominávit.",
 		"versus":"Et eris coróna glóriæ in manu Dómini, et diadéma regni in manu Dei tui."

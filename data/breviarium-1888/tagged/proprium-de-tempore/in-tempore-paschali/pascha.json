@@ -113,7 +113,6 @@
 	},
 	{
 		"tags":["pascha","dominica","matutinum","responsorium","responsorium-i"],
-		"src":"nocturnale/P0R1",
 		"formula":[
 			"R. ",["incipit"]," * ",["responsum"],
 			"\nV. ",["versus"],
@@ -131,7 +130,6 @@
 	},
 	{
 		"tags":["pascha","dominica","matutinum","responsorium","responsorium-ii"],
-		"src":"nocturnale/P0R2",
 		"incipit":"Cum transísset sábbatum, María Magdaléne, et María Jacóbi, et Salóme emérunt arómata,",
 		"responsum":"Ut veniéntes úngerent Jesum, allelúja, allelúja.",
 		"versus":"Et valde mane una sabbatórum, véniunt ad monuméntum, orto jam sole."
