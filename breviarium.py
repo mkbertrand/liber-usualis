@@ -134,7 +134,7 @@ def managesearch(query, result):
         except IndexError:
             return result
 
-def search(context, query, pile, multipleresults = False, multipleresultssort = None, translatedcontext = None):
+def search(context, query, multipleresults = False, multipleresultssort = None, translatedcontext = None, pilemod = []):
     for i in query:
         if '/' in i:
             try:
@@ -142,11 +142,13 @@ def search(context, query, pile, multipleresults = False, multipleresultssort = 
             except FileNotFoundError:
                 return None
 
+    pilequery = query | defaultpile
+    pile = context.getpile(pilequery) + pilemod if not translatedcontext else translatedcontext.getpile(pilequery) + pilemod
     result = list(anysearch(query, pile))
 
     # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
     if len(result) == 0:
-        warnings.warn(f'0 tags found for queries {list(query)}')
+        warnings.warn(f'0 tags found for queries {list(query)} when searching {pilequery}')
         return None
 
     for rule in context.getdiscrimen('general'):
@@ -177,22 +179,18 @@ def handlecommemorations(context, item, selected, alternates):
         ret = []
         commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(context, 'rank', a), reverse=True)
         for i in commemorations:
-            probablepile = context.getpile(defaultpile | item | i)
-            ret.append(process(context, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates, probablepile))
+            ret.append(process(context, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates))
         if len(commemorations) != 0:
-            probablepile = context.getpile(defaultpile | commemorations[-1])
-            ret.append(process(context, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates, probablepile))
+            ret.append(process(context, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates))
         return {'tags':{'commemorationes'}, 'datum':ret}
 
-def process(context, item, selected, alternates, pile, pilemod = []):
+def process(context, item, selected, alternates, pilemod = []):
     if item is None:
         return 'Absens'
     if selected is None:
         selected = frozenset()
     if alternates is None:
         alternates = []
-    if pile is None:
-        pile = []
 
     if 'commemorationes' in item:
         return handlecommemorations(context, item, selected, alternates)
@@ -200,7 +198,6 @@ def process(context, item, selected, alternates, pile, pilemod = []):
     if type(item) is dict and 'quaere' in item:
         item['quaere'] = frozenset(item['quaere'])
         pilemod = [{'tags': item['quaere'], 'datum': item['datum']}]
-        pile += pilemod
         item = item['quaere']
 
     # An entry within an item that is a tagset is calling to search further for sub-items.
@@ -209,8 +206,6 @@ def process(context, item, selected, alternates, pile, pilemod = []):
         # Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
         contras = set().union(*contradictions(context, 'positionales', item | selected))
         selected -= contras
-        if contras:
-            pile = context.getpile(item | selected | defaultpile) + pilemod
 
         result = None
         if not any('/' in i for i in item):
@@ -221,7 +216,6 @@ def process(context, item, selected, alternates, pile, pilemod = []):
                     alternates = copy.copy(alternates)
                     alternates.append(selected - expandcat(context, 'positionales'))
                     selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-                    pile = context.getpile(defaultpile | item | selected) + pilemod
                     item -= expandcat(context, 'temporale')
                     break
 
@@ -235,8 +229,7 @@ def process(context, item, selected, alternates, pile, pilemod = []):
                         selected = alternates.pop(i)
                     else:
                         selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-                    pile = context.getpile(defaultpile | item | selected) + pilemod
-                    result = search(context, item | selected, pile)
+                    result = search(context, item | selected, pilemod=pilemod)
                     break
 
         if result is None:
@@ -246,16 +239,15 @@ def process(context, item, selected, alternates, pile, pilemod = []):
             if len(item & expandcat(context, 'temporale')) != 0:
                 selected -= set().union(*contradictions(context, 'temporale', item | selected))
                 selected |= item & expandcat(context, 'temporale')
-                pile = context.getpile(defaultpile | item | selected) + pilemod
 
-            result = search(context, item | selected, pile)
+            result = search(context, item | selected, pilemod=pilemod)
 
         # If result is still None at this point, just tell user what was searched for
         if result is None:
             # It has to be sorted for testing purposes
             return str(sorted(list(item | selected)))
         selected |= item
-        response = process(context, result, selected, alternates, pile)
+        response = process(context, result, selected, alternates)
 
         return response
 
@@ -264,10 +256,10 @@ def process(context, item, selected, alternates, pile, pilemod = []):
         for i in item['datum']:
             if type(i) is str:
                 if 'N.' in i:
-                    i = i.replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected, pile)['datum'])
+                    i = i.replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected)['datum'])
                 ret.append(i)
             else:
-                iprocessed = process(context, i, selected, alternates, pile)
+                iprocessed = process(context, i, selected, alternates)
                 if iprocessed is None:
                     ret.append('Absens')
                 elif type(iprocessed) is list:
@@ -279,7 +271,7 @@ def process(context, item, selected, alternates, pile, pilemod = []):
 
     # Often in the text there will be an N. replaced with the celebrated Saint's name.
     if type(item) is dict and 'N.' in item['datum']:
-        item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected, pile)['datum'])
+        item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected)['datum'])
     return item
 
 def generate(context, day, hour: str):
@@ -288,12 +280,11 @@ def generate(context, day, hour: str):
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(context, day))
     primary = list(filter(lambda i: 'primarium' in i, tags))[0]
     tags.remove(primary)
-    pile = context.getpile(defaultpile | primary | set(hours))
 
     lit = []
     for hour in hours:
         lit.append({'ritus', hour})
-    return process(context, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
+    return process(context, {'tags':{'ritus'},'datum':lit}, primary, tags)
 
 if __name__ == '__main__':
     import argparse

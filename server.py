@@ -89,8 +89,8 @@ def flattensetlist(sets):
         ret |= i
     return ret
 
-def getname(tagset, pile):
-    resp = breviarium.process(DEFAULT_CONTEXT, {'nomen'}, tagset, [], pile)
+def getname(tagset):
+    resp = breviarium.process(DEFAULT_CONTEXT, {'nomen'}, tagset, [])
     name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
     if type(name) is list:
         name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
@@ -109,19 +109,17 @@ def daytags(vesperal = False):
 
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CONTEXT, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_CONTEXT, day, votives))
 
-    pile = DEFAULT_CONTEXT.getpile(flattensetlist(tags) | {'formulae'})
-
     primary = [i for i in tags if 'primarium' in i][0]
-    commemorations = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)]
-    omissions = [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)]
+    commemorations = [[getname(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)]
+    omissions = [[getname(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return datamanage.dump_data({
             'tags': tags,
-            'primary': [getname(primary, pile), primary],
+            'primary': [getname(primary), primary],
             'commemorations': commemorations,
             'omissions': omissions,
-            'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
+            'commemoratio-matutini': [getname(lectiocomm), lectiocomm] if lectiocomm else None
         })
 
 def adjust_tags(day, vesperal, select, votives):
@@ -160,8 +158,7 @@ def title():
         hours = parameters['hour'].replace(' ', '+').split('+')
         tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
         primary = [i for i in tags if 'primarium' in i][0]
-        pile = DEFAULT_CONTEXT.getpile(breviarium.defaultpile | primary | set(hours))
-        return datamanage.dump_data([getname(primary, pile), primary])
+        return datamanage.dump_data([getname(primary), primary])
     except Exception as e:
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
@@ -189,7 +186,6 @@ def rite():
             tags = [i | {'privata'} for i in tags]
         primary = [i for i in tags if 'primarium' in i][0]
         tags.remove(primary)
-        pile = DEFAULT_CONTEXT.getpile(breviarium.defaultpile | primary | set(hours))
 
         noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
         if noending and not 'antiphona-bmv' in primary:
@@ -199,7 +195,7 @@ def rite():
         for hour in hours:
             lit.append({'ritus', hour})
 
-        rite = breviarium.process(DEFAULT_CONTEXT, {'tags':{'ritus'},'datum':lit}, primary, tags, pile)
+        rite = breviarium.process(DEFAULT_CONTEXT, {'tags':{'ritus'},'datum':lit}, primary, tags)
         tags.append(primary)
 
     except Exception as e:
@@ -217,7 +213,7 @@ def rite():
                     if datamanage.data_root.joinpath('data').joinpath(f'{book.title}-{translation}').exists():
                         translatedbooks.append(datamanage.get_book(f'{book.title}-{translation}'))
                 translatedcontext = datamanage.LiturgicalContext(translatedbooks)
-                return breviarium.search(DEFAULT_CONTEXT, search, translatedcontext.getpile(primary | set(hours) | search | breviarium.defaultpile), translatedcontext=translatedcontext)
+                return breviarium.search(DEFAULT_CONTEXT, search, translatedcontext=translatedcontext)
 
             def traverse(obj):
                 if type(obj) is dict and 'tags' in obj:
@@ -235,7 +231,7 @@ def rite():
         def get_chant(tagset):
             chant_context =  datamanage.LiturgicalContext([datamanage.LiturgicalBook(datamanage.data_root.joinpath('data-chant/gregobase'), 'gregobase')])
             warnings.simplefilter('ignore')
-            return breviarium.search(DEFAULT_CONTEXT, tagset, chant_context.getpile(primary | set(hours) | flattensetlist(tags) | tagset | breviarium.defaultpile))
+            return breviarium.search(DEFAULT_CONTEXT, tagset, translatedcontext=chant_context)
 
         def traverse_chant(obj):
             if type(obj) is dict and 'quaesitum' in obj:
@@ -256,15 +252,13 @@ def rite():
         abort(500, error500tpl('Error de interpretatione.'))
 
     try:
-        pile = DEFAULT_CONTEXT.getpile(flattensetlist(tags) | {'formulae'})
-
         lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
         lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
         return datamanage.dump_data({
             'rite' : rite['datum'],
-            'used-primary': [getname(primary, pile), primary],
-            'used-commemorations': [[getname(tagset, pile), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)],
-            'commemoratio-matutini': [getname(lectiocomm, pile), lectiocomm] if lectiocomm else None
+            'used-primary': [getname(primary), primary],
+            'used-commemorations': [[getname(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)],
+            'commemoratio-matutini': [getname(lectiocomm), lectiocomm] if lectiocomm else None
             })
     except Exception as e:
         traceback.print_exc()

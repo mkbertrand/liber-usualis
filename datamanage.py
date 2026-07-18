@@ -105,7 +105,7 @@ class LiturgicalBook:
                     ret.append((i[:-5], self.src.joinpath('tagged').joinpath(roo).joinpath(i)))
         return ret
 
-    @functools.lru_cache(maxsize=64)
+    @functools.cache
     def getbreviariumfile(self, query):
         logging.debug(f'Loading {query} from {self.title}')
         got = load_data(query, self.src)
@@ -171,9 +171,9 @@ class LiturgicalContext:
             ret.extend(book.getpile(pilequery))
         return ret
 
-def getname(context, tagset, pile):
+def getname(context, tagset):
     import breviarium
-    resp = breviarium.process(context, {'nomen'}, tagset, [], pile)
+    resp = breviarium.process(context, {'nomen'}, tagset, [])
     name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
     if type(name) is list:
         name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
@@ -188,8 +188,8 @@ def getdisplaykalendar(context):
     for entry in kalendar:
         if type(entry['tags']) is frozenset:
             entry['tags'] = [entry['tags']]
-        entry['names'] = [getname(context, tagset, context.getpile(tagset | {'formulae'})) for tagset in entry['tags']]
+        entry['names'] = [getname(context, tagset) for tagset in entry['tags']]
         if any(i in entry['occurrence'] for i in ['feria-ii', 'feria-iii', 'feria-iv', 'feria-v', 'feria-vi', 'sabbatum']):
             entry['occurrence'] |= {'feria'}
-        entry['occurrence-name'] = getname(context, entry['occurrence'], context.getpile(entry['occurrence'] | {'formulae'}))
+        entry['occurrence-name'] = getname(context, entry['occurrence'])
     return dump_data({'skeleton': ret, 'kalendar': kalendar})
