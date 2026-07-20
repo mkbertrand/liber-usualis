@@ -1,6 +1,34 @@
 // Copyright 2023-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 // Additional credit to Benjamin Bloomfield as this file is a modification of his original (except for chomp())
 
+const GABC_CHANT_CONTEXT = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
+
+GABC_CHANT_CONTEXT.setFont("'Old Standard TT'", 22);
+
+GABC_CHANT_CONTEXT.dropCapTextColor = 'red';
+GABC_CHANT_CONTEXT.dropCapTextSize = '80';
+
+GABC_CHANT_CONTEXT.annotationTextColor = 'red';
+GABC_CHANT_CONTEXT.annotationTextFont = GABC_CHANT_CONTEXT.lyricTextFont;
+
+GABC_CHANT_CONTEXT.rubricColor = 'red';
+GABC_CHANT_CONTEXT.staffLineColor = 'red';
+
+GABC_CHANT_CONTEXT.condenseLineAmount = 1;
+// For some reason, setting the property directly doesn't work for glyph scaling specifically :D
+GABC_CHANT_CONTEXT.setGlyphScaling(1/12);
+GABC_CHANT_CONTEXT.minLyricWordSpacing *= 1;
+GABC_CHANT_CONTEXT.accidentalSpaceMultiplier = 1.5;
+GABC_CHANT_CONTEXT.intraNeumeSpacing = 5;
+
+GABC_CHANT_CONTEXT.specialCharProperties['font-family'] = "'Versiculum'";
+GABC_CHANT_CONTEXT.specialCharProperties['font-variant'] = 'normal';
+GABC_CHANT_CONTEXT.specialCharProperties['font-size'] = (GABC_CHANT_CONTEXT.lyricTextSize * 1.2) + 'px';
+GABC_CHANT_CONTEXT.specialCharProperties['font-weight'] = '400';
+GABC_CHANT_CONTEXT.specialCharText = function(char) {
+  return char.toLowerCase();
+};
+
 euouaes = {
   '1 a c4': 'E(h) u(h) o(g) u(f) a(g) e.(h.) (::)',
   '1 a2 c4': 'E(h) u(h) o(g) u(f) a(g) e.(gh..) (::)',
@@ -80,7 +108,7 @@ function chomp(gabc, tags) {
     gabc = gabc.match(/([\s\S]+?)(?:\d\.)?\(::\)/)[1] + '(::)';
   }
 	if (tags.includes('deus-in-adjutorium')) {
-		return gabcdata + gabc.substring(0, gabc.search(/\(Z\-?\)/));
+		this.gabc = gabc.substring(0, gabc.search(/\(Z\-?\)/));
 
 	} else if (tags.includes('antiphona')) {
     clef = gabc.match(/^\((.+?)\)/m)
@@ -117,12 +145,77 @@ function chomp(gabc, tags) {
 		}
 		
 		gabcdata = (tags.includes('repetita') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
-		return gabcdata + gabc;
+	}
 
-	} else {
-		return gabcdata + gabc;
+  gabc = gabc.replace(/<v>\\([VRA])bar<\/v>/g,function(match,barType) {
+    return barType + '/.';
+  }).replace(/(<b>[^<]+)<sp>'(?:oe|œ)<\/sp>/g,'$1œ</b>\u0301<b>') // character doesn't work in the bold version of this font.
+  .replace(/<b><\/b>/g,'')
+  .replace(/<sp>'(?:ae|æ)<\/sp>/g,'ǽ')
+  .replace(/<sp>'(?:oe|œ)<\/sp>/g,'œ́')
+  .replace(/<v>\\greheightstar<\/v>/g,'*')
+  .replace(/<\/?i>/g,'_')
+  .replace(/<\/?nlba>/g,'');
+  return gabcdata + gabc;
+}
+
+var chantPromises = new Map();
+
+function getChantPromise(src) {
+  var promise = chantPromises.get(src);
+  if (!promise) {
+    promise = fetch(src);
+    chantPromises.set(promise);
+  }
+  return promise;
+}
+
+class ChantElement extends HTMLElement {
+		
+	chantLayout() {
+		if (typeof this.score !== 'undefined') {
+			this.score.layoutChantLines(GABC_CHANT_CONTEXT, $(this).parent().parent().width());
+			$(this).html(this.score.createSvg(GABC_CHANT_CONTEXT));
+		}
+	}
+	
+  async connectedCallback() {
+    try {
+      if (!this.gabc) {
+        if (!this.src) {
+          console.log(this);
+        }
+        this.gabc = await getChantPromise(this.src).then(data => data.text());
+      }
+      var gabc = chomp(this.gabc, this.tags);
+      var mappings = exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, gabc);
+      this.score = new exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !gabc.includes('initial-style:0;'));
+      if (gabc.includes('mode:')) {
+        var modeloc = gabc.indexOf('mode:');
+        this.score.annotation = new exsurge.Annotation(GABC_CHANT_CONTEXT, gabc.substring(modeloc + 5, gabc.indexOf(';', modeloc)) + '.');
+      }
+      this.score.performLayout(GABC_CHANT_CONTEXT);
+      this.chantLayout();
+    } catch(err) {
+      console.log(err);
+    }
+  }
+
+	constructor() {
+		super();
+    console.log(this.innerText);
+		if (this.innerText != '') {
+			this.gabc = this.innerText;
+      console.log(this.gabc);
+      this.innerText = '';
+		} else {
+      this.src = $(this).attr('src');
+    }
+
+    this.tags = $(this).attr('tags').split('+');
 	}
 }
+window.customElements.define('gabc-chant', ChantElement);
 
 $(document).ready(function() {
 	const resizeObserver = new ResizeObserver(() =>{
@@ -130,91 +223,3 @@ $(document).ready(function() {
 			Promise.resolve(new Promise(((resolve, reject) => elem.chantLayout()))))});
 	resizeObserver.observe(document.getElementById('site-wrapper'));
 });
-	
-class ChantElement extends HTMLElement {
-		
-	getGabc() {
-		return this.gabc;
-	}
-	
-	chantLayout() {
-		if (typeof this.score !== 'undefined') {
-			this.score.layoutChantLines(this.ctxt, $(this).parent().parent().width());
-			$(this).html(this.score.createSvg(this.ctxt));
-		}
-	}
-	
-	setGabc(gabc) {
-		this.gabc = gabc;
-		var gabc = this.gabc;
-		gabc = gabc.replace(/<v>\\([VRA])bar<\/v>/g,function(match,barType) {
-			return barType + '/.';
-		}).replace(/(<b>[^<]+)<sp>'(?:oe|œ)<\/sp>/g,'$1œ</b>\u0301<b>') // character doesn't work in the bold version of this font.
-		.replace(/<b><\/b>/g,'')
-		.replace(/<sp>'(?:ae|æ)<\/sp>/g,'ǽ')
-		.replace(/<sp>'(?:oe|œ)<\/sp>/g,'œ́')
-		.replace(/<v>\\greheightstar<\/v>/g,'*')
-		.replace(/<\/?i>/g,'_')
-		.replace(/<\/?nlba>/g,'');
-
-		var mappings = exsurge.Gabc.createMappingsFromSource(this.ctxt, gabc);
-		this.score = new exsurge.ChantScore(this.ctxt, mappings, !gabc.includes('initial-style:0;'));
-		if (gabc.includes('mode:')) {
-			var modeloc = gabc.indexOf('mode:');
-			this.score.annotation = new exsurge.Annotation(this.ctxt, gabc.substring(modeloc + 5, gabc.indexOf(';', modeloc)) + '.');
-		}
-		this.score.performLayout(this.ctxt);
-		this.chantLayout();
-	}
-	
-	init() {
-	}
-	
-	constructor() {
-		super();
-		
-		this.ctxt = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
-
-		this.ctxt.setFont("'Old Standard TT'", 22);
-
-		this.ctxt.dropCapTextColor = 'red';
-		this.ctxt.dropCapTextSize = '80';
-
-		this.ctxt.annotationTextColor = 'red';
-		this.ctxt.annotationTextFont = this.ctxt.lyricTextFont;
-
-		this.ctxt.rubricColor = 'red';
-		this.ctxt.staffLineColor = 'red';
-
-		this.ctxt.condenseLineAmount = 1;
-		// For some reason, setting the property directly doesn't work for glyph scaling specifically :D
-		this.ctxt.setGlyphScaling(1/12);
-		this.ctxt.minLyricWordSpacing *= 1;
-		this.ctxt.accidentalSpaceMultiplier = 1.5;
-		this.ctxt.intraNeumeSpacing = 5;
-
-		this.ctxt.specialCharProperties['font-family'] = "'Versiculum'";
-		this.ctxt.specialCharProperties['font-variant'] = 'normal';
-		this.ctxt.specialCharProperties['font-size'] = (this.ctxt.lyricTextSize * 1.2) + 'px';
-		this.ctxt.specialCharProperties['font-weight'] = '400';
-		this.ctxt.specialCharText = function(char) {
-			return char.toLowerCase();
-		};
-		ChantElement.gabc = "";
-
-		if (this.innerText != "") {
-			var gabc = chomp(this.innerText, $(this).attr('tags').split('+'));
-			this.setGabc(gabc);
-			this.init();
-		} else {
-			fetch($(this).attr('id'))
-        .then(grabError)
-        .catch(err => this.innerText = '')
-				.then(data => data.text())
-        .catch(console.log)
-				.then(resp => chomp(resp, $(this).attr('tags').split('+')))
-				.then(text => {this.setGabc(text); this.init();});
-		}
-	}
-}
-window.customElements.define('gabc-chant', ChantElement);

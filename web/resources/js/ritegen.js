@@ -184,6 +184,19 @@ function renderRite(data, options) {
 		rite += text;
 	}
 
+  function renderGabc(replacedText, quaesitum, cantus, translated = null, parentTags) {
+    openDiv('', 'gabc-chant-container');
+    openDiv('', 'gabc-chant');
+    let cantusUnpack = unpack(cantus);
+    if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
+      rite += `<gabc-chant src="/chant${cantusUnpack}" tags="${quaesitum.join('+')}"></gabc-chant>`;
+    } else {
+      rite += `<gabc-chant tags="${quaesitum.join('+')}">${cantusUnpack}</gabc-chant>`;
+    }
+    closeDiv('', 'gabc-chant');
+    closeDiv('gabc-chant-container');
+  }
+
 	function renderInner(data, translated = null, parentTags) {
 		// Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
 		function uniquelyhas(tag, list = data.tags) {
@@ -327,14 +340,7 @@ function renderRite(data, options) {
 					openDiv('', 'hymnus');
 
           if (options.chant && data.cantus) {
-            openDiv('', 'gabc-chant');
-            let cantusUnpack = unpack(data.cantus);
-            if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
-              rite += `<gabc-chant id="/chant${cantusUnpack}" tags="${data.tags.concat(parentTags).join('+')}"></gabc-chant>`;
-            } else {
-              rite += `<gabc-chant tags="${data.tags.concat(parentTags).join('+')}">${cantusUnpack}</gabc-chant>`;
-            }
-            closeDiv('', 'gabc-chant');
+            renderGabc(data.datum[0], data.quaesitum, data.cantus, translated, parentTags);
             data.datum.shift();
           }
 
@@ -350,20 +356,8 @@ function renderRite(data, options) {
 
 				// Handle objects that have chant.
 				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
-					openDiv('', 'gabc-chant-container');
-					openDiv('', 'gabc-chant');
-          let cantusUnpack = unpack(data.cantus);
-          if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
-            rite += `<gabc-chant id="/chant${cantusUnpack}" tags="${data.quaesitum.join('+')}"></gabc-chant>`;
-          } else {
-            rite += `<gabc-chant tags="${data.quaesitum.join('+')}">${cantusUnpack}</gabc-chant>`;
-          }
-					closeDiv('', 'gabc-chant');
-					openDiv('', 'gabc-chant-replaced-text');
-					renderInner(data, translated, parentTags);
-					closeDiv('gabc-chant-replaced-text');
-					closeDiv('gabc-chant-container');
-					return;
+          renderGabc(data.datum, data.quaesitum, data.cantus, translated, parentTags);
+          return;
 
 				// Handle Responsories and Short Responsories.
 				// If data.datum is an array, that means that the responsory isn't actually nested down another layer.
