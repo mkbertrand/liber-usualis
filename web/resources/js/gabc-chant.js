@@ -29,50 +29,8 @@ GABC_CHANT_CONTEXT.specialCharText = function(char) {
   return char.toLowerCase();
 };
 
-euouaes = {
-  '1 a c4': 'E(h) u(h) o(g) u(f) a(g) e.(h.) (::)',
-  '1 a2 c4': 'E(h) u(h) o(g) u(f) a(g) e.(gh..) (::)',
-  '1 a3 c4': 'E(h) u(h) o(g) u(f) a(gh) e.(gh..) (::)',
-  '1 D c4': 'E(h) u(h) o(g) u(f) a(gh) e.(gFED.) (::)',
-  '1 D2 c4': 'E(h) u(h) o(g) u(f) a(gf) e.(d.) (::)',
-  '1 f c4': 'E(h) u(h) o(g) u(f) a(gh) e.(gf..) (::)',
-  '1 g c4': 'E(h) u(h) o(g) u(f) a(gh) e.(g.) (::)',
-  '1 g2 c4': 'E(h) u(h) o(g) u(f) a(g) e.(ghg.) (::)',
-  '1 g3 c4': 'E(h) u(h) o(g) u(f) a(g) e.(g.) (::)',
-  '2 A c3': 'E(h) u(h) o(h) u(g) a(e) e.(f.) (::)',
-  '2 D f3': 'E(h) u(h) o(h) u(g) a(e) e.(f.) (::)',
-  '3 a c3': 'E(h) u(h) o(h) u(f) a(h) e.(gf..) (::)',
-  '3 a c4': 'E(j) u(j) o(j) u(h) a(j) e.(ih..) (::)',
-  '3 a2 c4': 'E(j) u(j) o(ji) u(hi) a(h) e.(gh..) (::)',
-  '3 b c4': 'E(j) u(j) o(j) u(h) a(j) e.(i.) (::)',
-  '3 g c4': 'E(j) u(j) o(ji) u(hi) a(h) e.(g.) (::)',
-  '3 g2 c4': 'E(j) u(h) o(j) u(i) a(h) e.(g.) (::)',
-  '4 A c3': 'E(i) u(h) o(i) u(j) a(h) e.(f.) (::)',
-  '4 A c4': 'E(k) u(j) o(k) u(l) a(j) e.(h.) (::)',
-  '4 A* c3': 'E(i) u(h) o(i) u(j) a(h) e.(f.) (::)',
-  '4 c c3': 'E(i) u(i) o(i) u(i) a(i) e.(h.) (::)',
-  '4 E c4': 'E(h) u(g) o(h) u(ih) a(gf) e.(e.) (::)',
-  '4 g c4': 'E(h) u(h) o(h) u(h) a(h) e.(g.) (::)',
-  '5 a c3': 'E(h) u(h) o(i) u(g) a(h) e.(f.) (::)',
-  '5 a c4': 'E(j) u(j) o(k) u(i) a(j) e.(h.) (::)',
-  '6 C c2': 'E(h) u(h) o(f) u(gh) a(g) e.(f.) (::)',
-  '6 F c4': 'E(h) u(h) o(f) u(gh) a(g) e.(f.) (::)',
-  '7 a c2': 'E(g) u(g) o(h) u(g) a(f) e.(ed..) (::)',
-  '7 a c3': 'E(i) u(i) o(j) u(i) a(h) e.(gf..) (::)',
-  '7 b c3': 'E(i) u(i) o(j) u(i) a(h) e.(g.) (::)',
-  '7 c c2': 'E(g) u(g) o(h) u(g) a(f) e.(ef..) (::)',
-  '7 c c3': 'E(i) u(i) o(j) u(i) a(h) e.(gh..) (::)',
-  '7 c2 c3': 'E(i) u(i) o(j) u(i) a(h) e.(ih..) (::)',
-  '7 d c2': 'E(g) u(g) o(h) u(g) a(f) e.(eg..) (::)',
-  '7 d c3': 'E(i) u(i) o(j) u(i) a(h) e.(gi..) (::)',
-  '8 c c3': 'E(h) u(h) o(f) u(h) a(i) e.(h.) (::)',
-  '8 c c4': 'E(j) u(j) o(h) u(j) a(k) e.(j.) (::)',
-  '8 G c3': 'E(h) u(h) o(g) u(h) a(f) e.(e.) (::)',
-  '8 G c4': 'E(j) u(j) o(i) u(j) a(h) e.(g.) (::)',
-  '8 G* c3': 'E(h) u(h) o(g) u(h) a(f) e.(e.) (::)',
-  '8 G* c4': 'E(j) u(j) o(i) u(j) a(h) e.(g.) (::)',
-  'T. pereg. c4': 'E(g) u(g) o(g) u(d) a(f) e.(ed..) (::)'
-};
+euouaes = {};
+fetch('/chant/gregobase/euouae.json').then(data => data.json()).then(json => euouaes = json);
 
 function chomp(gabc, tags) {
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');

@@ -29,18 +29,18 @@ LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 DEFAULT_CONTEXT = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'), datamanage.get_book('martyrologium-1846'))
 
 toplevelpages = [
-        'index',
-        'breviarium',
-        'de-anno',
-        'kalendar',
-        'rubricae',
-        'pray',
-        'about',
-        'credit',
-        'donate',
-        'help',
-        'resources'
-    ]
+    'index',
+    'breviarium',
+    'de-anno',
+    'kalendar',
+    'rubricae',
+    'pray',
+    'about',
+    'credit',
+    'donate',
+    'help',
+    'resources'
+]
 
 def findmytemplate(page):
     if page == 'pray':
@@ -257,6 +257,10 @@ def kal():
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
         return datamanage.getdisplaykalendar(DEFAULT_CONTEXT)
+
+@get('/chant/gregobase/euouae.json')
+def euouae():
+    return static_file('gregobase/untagged/euouae.json', root='data-chant/')
 
 @get('/chant/<url:path>')
 def chant(url):
