@@ -96,8 +96,6 @@ function chomp(gabc, tags) {
 		} else if (tags.includes('repetita')) {
 			gabc = gabc.replace('*', '');
 			gabcdata = '%%\n';
-			firstsyllable = gabc.match(/[\wáǽœÆŒéíóúý]+\(/)[0];
-			gabc = gabc.replace(firstsyllable, firstsyllable.charAt(0).toUpperCase() + firstsyllable.slice(1).toLowerCase());
 		} else if (!(tags.includes('commemoratio') || tags.includes('suffragium'))) {
 			gabc = gabc + euouae;
 		}

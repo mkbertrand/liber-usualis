@@ -178,7 +178,7 @@ def handlecommemorations(context, item, selected, alternates):
             ret.append(process(context, {'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates))
         return {'tags':{'commemorationes'}, 'datum':ret}
 
-def process(context, item, selected, alternates, pilemod = []):
+def process(context, item, selected, alternates, pilemod = [], permit_empty = True):
     if item is None:
         return 'Absens'
     if selected is None:
@@ -237,9 +237,11 @@ def process(context, item, selected, alternates, pilemod = []):
             result = search(context, item | selected, pilemod=pilemod)
 
         # If result is still None at this point, just tell user what was searched for
-        if result is None:
+        if result is None and permit_empty:
             # It has to be sorted for testing purposes
             return str(sorted(list(item | selected)))
+        elif result is None:
+            return None
         selected |= item
         response = process(context, result, selected, alternates)
 

@@ -56,19 +56,22 @@ def dump_data(j):
 
 DATA_CHANT = Path('data-chant').resolve()
 
-@functools.lru_cache(maxsize=1024)
-def getchantfile(src):
-    if 'nocturnale' in src:
-        return requests.get(f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc', stream=True).text
-    else:
+def retrieve_untagged_file(src: Path) -> str:
         # Quick sanitization to make sure nobody is up to shady business.
-        src = src.split('/')
-        loc = DATA_CHANT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc').resolve()
+        loc = src.resolve()
         if not loc.is_relative_to(DATA_CHANT):
             raise ValueError('Invalid Path')
         else:
             with open(loc, 'r') as f:
                 return f.read()
+
+@functools.lru_cache(maxsize=1024)
+def getchantfile(src):
+    if 'nocturnale' in src:
+        return requests.get(f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc', stream=True).text
+    else:
+        src = src.split('/')
+        return retrieve_untagged_file(DATA_CHANT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc'))
 
 class LiturgicalBook:
     def __init__(self, src, title):
@@ -180,7 +183,10 @@ class SecondaryLiturgicalContext(LiturgicalContext):
         return ret
 
     def get_untagged(self, query):
-        return {'tags': {query}, 'datum':psalms.get(self.content_books[0], query)}
+        if query.startswith('/psalmi'):
+            return {'tags': {query}, 'datum':psalms.get(self.content_books[0], query)}
+        else:
+            return {'tags': {query}, 'datum': retrieve_untagged_file(self.content_books[0].src.joinpath(f'untagged/{query}.gabc'))}
 
 def get_name(context, tagset):
     import breviarium

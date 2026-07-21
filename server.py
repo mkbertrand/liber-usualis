@@ -218,7 +218,7 @@ def rite():
         def get_chant(tagset):
             chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.LiturgicalBook(datamanage.data_root.joinpath('data-chant/gregobase'), 'gregobase')])
             warnings.simplefilter('ignore')
-            return breviarium.search(chant_context, tagset)
+            return breviarium.process(chant_context, tagset, None, None, permit_empty = False)
 
         def traverse_chant(obj):
             if type(obj) is dict and 'quaesitum' in obj:
