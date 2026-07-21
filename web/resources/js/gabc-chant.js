@@ -43,7 +43,7 @@ function chomp(gabc, tags) {
 	// Remove commented text falling before content
 	gabc = gabc.substring(gabc.search(/\n\((.+?)\)/));
 	gabc = gabc.replaceAll('<sp>V/</sp>.', '<v>\\Vbar</v>')
-		.replaceAll('<sp>R/</sp>.', '<v>\\Rbar</v>')
+		.replaceAll(/<sp>R\/<\/sp>.?/g, '<v>\\Rbar</v>')
 		.replaceAll(/<.?sc>/g, '')
 		.replaceAll(/\[.*?\]/g, '')
 		.replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3')
