@@ -175,16 +175,13 @@ class ChantElement extends HTMLElement {
 	chantLayout() {
 		if (typeof this.score !== 'undefined') {
 			this.score.layoutChantLines(GABC_CHANT_CONTEXT, $(this).parent().parent().width());
-			$(this).html(this.score.createSvg(GABC_CHANT_CONTEXT));
+			$(this).html(this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated);
 		}
 	}
 	
   async connectedCallback() {
     try {
       if (!this.gabc) {
-        if (!this.src) {
-          console.log(this);
-        }
         this.gabc = await getChantPromise(this.src).then(data => data.text());
       }
       var gabc = chomp(this.gabc, this.tags);
@@ -196,6 +193,12 @@ class ChantElement extends HTMLElement {
       }
       this.score.performLayout(GABC_CHANT_CONTEXT);
       this.chantLayout();
+
+      if (this.translated) {
+        this.translated = `<p class="rite-text rite-text-translation line-by-line">${this.translated}</p>`;
+      } else {
+        this.translated = '';
+      }
     } catch(err) {
       console.log(err);
     }
@@ -203,6 +206,9 @@ class ChantElement extends HTMLElement {
 
 	constructor() {
 		super();
+
+    this.translated = $(this).attr('translated');
+    console.log(this.translated);
 
     if ($(this).attr('gabc')) {
       this.gabc = $(this).attr('gabc');

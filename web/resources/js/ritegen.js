@@ -226,7 +226,12 @@ function renderRite(data, options) {
     openDiv('', 'gabc-chant');
     let cantusUnpack = unpack(cantus);
     if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
-      rite += `<gabc-chant src="/chant${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated ? translated : ''}">`;
+      if (!translated) {
+        translated = '';
+      } else if (Array.isArray(translated)) {
+        translated = translated.join(' ');
+      }
+      rite += `<gabc-chant src="/chant${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated}">`;
     } else {
       rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}">`;
     }
