@@ -106,14 +106,9 @@ const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clar
 
 const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
 
-function renderRite(data, options) {
-
-	function stringRender(text, translation = false) {
+function stringRenderExposed(text) {
 		if (text.match(/^\[.+?\]$/)) {
 			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
-		}
-		if (translation && !options['side-by-side']) {
-			text = text.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
 		}
 		text = text.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
 			.replaceAll('É', 'E').replaceAll('Í', 'I')
@@ -136,6 +131,15 @@ function renderRite(data, options) {
 			.replace(/\[\((.+?)\)\]\s/g, '<span class=\'rite-text-rubric small-rubric\'>(\$1) </span>')
 			.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 		return text;
+}
+function renderRite(data, options) {
+
+	function stringRender(text, translation = false) {
+		if (translation && !options['side-by-side']) {
+			text = text.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
+		}
+
+    return stringRenderExposed(text);
 	};
 
 	usedCommemorations = data['used-commemorations'];

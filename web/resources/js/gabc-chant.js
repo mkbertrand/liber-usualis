@@ -153,7 +153,7 @@ class ChantElement extends HTMLElement {
       this.chantLayout();
 
       if (this.translated) {
-        this.translated = `<p class="rite-text rite-text-translation line-by-line">${this.translated}</p>`;
+        this.translated = `<p class="rite-text rite-text-translation line-by-line">${stringRenderExposed(this.translated)}</p>`;
       } else {
         this.translated = '';
       }
@@ -166,7 +166,6 @@ class ChantElement extends HTMLElement {
 		super();
 
     this.translated = $(this).attr('translated');
-    console.log(this.translated);
 
     if ($(this).attr('gabc')) {
       this.gabc = $(this).attr('gabc');
