@@ -203,11 +203,9 @@ class ChantElement extends HTMLElement {
 
 	constructor() {
 		super();
-    console.log(this.innerText);
-		if (this.innerText != '') {
-			this.gabc = this.innerText;
-      console.log(this.gabc);
-      this.innerText = '';
+
+    if ($(this).attr('gabc')) {
+      this.gabc = $(this).attr('gabc');
 		} else {
       this.src = $(this).attr('src');
     }

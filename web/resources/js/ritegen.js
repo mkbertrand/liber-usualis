@@ -140,13 +140,31 @@ function renderRite(data, options) {
 
 	usedCommemorations = data['used-commemorations'];
 	matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
-	translationcssclass = options['side-by-side'] ? 'rite-text-translation side-by-side' : 'rite-text-translation line-by-line';
 
 	rite = '';
 
 	openDivs = [];
 	paragraphOpen = false;
+  textAbove = false;
+  latinBuffer = '';
+  vernacularBuffer = '';
+
+	function closeParagraph() {
+		if (paragraphOpen) {
+			paragraphOpen = false;
+      if (options['side-by-side']) {
+        latinBuffer += '</div>';
+        vernacularBuffer += '</div>';
+        rite += latinBuffer + vernacularBuffer + '</div>';
+      } else {
+        rite += '</p>';
+      }
+		}
+    textAbove = false;
+	}
+
 	function openDiv(style, name) {
+		closeParagraph();
 		rite += `<div class="rite-item ${style} ${name}">`;
 		openDivs.push(name);
 	}
@@ -160,14 +178,13 @@ function renderRite(data, options) {
 	function openParagraph(style) {
 		closeParagraph();
 		paragraphOpen = true;
-		rite += `<p class="rite-text ${style}">`;
-	}
-
-	function closeParagraph() {
-		if (paragraphOpen) {
-			paragraphOpen = false;
-			rite += '</p>';
-		}
+    if (options['side-by-side']) {
+      latinBuffer = `<div class="left-column-latin"><p class="rite-text ${style}">`;
+      vernacularBuffer = `<div class="right-column-vernacular"><p class="rite-text ${style} rite-text-translation side-by-side">`;
+      rite += '<div class="side-by-side-column-container">';
+    } else {
+      rite += `<p class="rite-text ${style}">`;
+    }
 	}
 
 	function makeCenteredHeader(header, style = 'item-header') {
@@ -180,19 +197,43 @@ function renderRite(data, options) {
 		rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
 	}
 
-	function appendText(text) {
-		rite += text;
+	function appendText(text, translated = null, translationclasses = []) {
+    if (options['side-by-side']) {
+      if (textAbove) {
+        latinBuffer += '<br>';
+      }
+      latinBuffer += stringRender(text);
+      if (textAbove && translated) {
+        vernacularBuffer += '<br>';
+      }
+      if (translated) {
+        vernacularBuffer += stringRender(translated, true);
+      }
+    } else {
+      if (textAbove) {
+        rite += '<br>';
+      }
+      rite += stringRender(text);
+      if (translated) {
+				rite += `<br><span class="rite-text-translation line-by-line ${translationclasses.join(' ')}">${stringRender(translated, true)}</span>`;
+      }
+    }
+    textAbove = true;
 	}
 
-  function renderGabc(replacedText, quaesitum, cantus, translated = null, parentTags) {
+  function renderGabc(replaced, quaesitum, cantus, translated = null, tags) {
     openDiv('', 'gabc-chant-container');
     openDiv('', 'gabc-chant');
     let cantusUnpack = unpack(cantus);
     if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
-      rite += `<gabc-chant src="/chant${cantusUnpack}" tags="${quaesitum.join('+')}"></gabc-chant>`;
+      rite += `<gabc-chant src="/chant${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated ? translated : ''}">`;
     } else {
-      rite += `<gabc-chant tags="${quaesitum.join('+')}">${cantusUnpack}</gabc-chant>`;
+      rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}">`;
     }
+    openParagraph(tags.join(' '));
+    renderInner(replaced, translated, tags);
+
+    rite += '</gabc-chant>';
     closeDiv('', 'gabc-chant');
     closeDiv('gabc-chant-container');
   }
@@ -244,9 +285,15 @@ function renderRite(data, options) {
 				if (!paragraphOpen) {
 					openParagraph(parentTags.join(' '));
 				}
-				appendText(stringRender(data) + (translated ? `<br><span class="${translationcssclass} ${parentTags.join(' ')}">${stringRender(translated, true)}</span><br>` : '<br>'));
+        appendText(data, translated, parentTags);
 
 			} else if (typeof data === 'object' && 'tags' in data) {
+
+        // Tagged objects may lack quaesitum if aren't the direct result of tagged searches in the backend.
+        if (!('quaesitum' in data)) {
+          data.quaesitum = data.tags;
+        }
+
 				if (unpack(data) == '') {
 					return;
 				}
@@ -274,9 +321,6 @@ function renderRite(data, options) {
 					}
 				} else {
 					for (let i of data.tags) {
-						if (!('quaesitum' in data)) {
-							data.quaesitum = [];
-						}
 						if (i in GENERAL_HEADERS && !parentTags.includes(i) && data.datum != '') {
 							makeCenteredHeader(GENERAL_HEADERS[i]);
 						}
@@ -334,21 +378,19 @@ function renderRite(data, options) {
 						return;
 					}
 					else if (typeof unpack(data.datum) === 'string' && unpack(data.datum).startsWith('[')) {
-						appendText(stringRender(unpack(data.datum)));
+						appendText(unpack(data.datum));
 						return;
 					}
 					openDiv('', 'hymnus');
 
           if (options.chant && data.cantus) {
-            renderGabc(data.datum[0], data.quaesitum, data.cantus, translated, parentTags);
+            renderGabc(data.datum[0], data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
             data.datum.shift();
           }
 
 					for (let i of unpack(data.datum)) {
 						openParagraph('hymnus');
-						appendText(stringRender(i));
-						closeParagraph();
-
+						appendText(i);
 					}
 					closeDiv('hymnus');
 					return;
@@ -356,7 +398,7 @@ function renderRite(data, options) {
 
 				// Handle objects that have chant.
 				if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
-          renderGabc(data.datum, data.quaesitum, data.cantus, translated, parentTags);
+          renderGabc(data.datum, data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
           return;
 
 				// Handle Responsories and Short Responsories.
@@ -364,7 +406,7 @@ function renderRite(data, options) {
 				} if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
 					// This is a string if no responsory was found
 					if (typeof data.datum[1] === 'string') {
-						appendText(stringRender(data.datum[1].replace(", 'incipit'",'')));
+						appendText(data.datum[1].replace(", 'incipit'",''));
 					}
 					if (data.quaesitum.includes('responsorium-breve')) {
 						makeHeadingAnnotation('Responsorium Breve.');
@@ -466,12 +508,10 @@ function renderRite(data, options) {
 					header = makeHeadingAnnotation(data.datum.split('\n')[0].slice(1, -1));
 					// Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
 					data.datum = data.datum.replace(/^\[.+?]\n\d+\s/, '').split('\n');
-					if (translated) {
-						if (options['side-by-side']) {
-							translated = doPsalmHeadering(translated).replace(/^\[.+?]\n\d+\s/, '').split('\n');
-						} else {
-							translated = translated.replaceAll(/\[.+?]/g, '').split('\n').slice(1);
-						}
+          if (translated && options['side-by-side']) {
+            translated = doPsalmHeadering(translated).replace(/^\[.+?]\n\d+\s/, '').split('\n');
+          } else if (translated) {
+            translated = translated.replaceAll(/\[.+?]/g, '').split('\n').slice(1);
 					}
 					if (parentTags.includes('preces')) {
 						data.tags.push('textus-psalmi-precibus');
@@ -497,10 +537,18 @@ function renderRite(data, options) {
 
 					// For the Lamentations of the Sacred Triduum.
 					if (data.quaesitum.includes('sabbatum-sanctum') && data.quaesitum.includes('nocturna-i') && data.quaesitum.includes('lectio-iii')) {
-						lesson = [lesson[0], lesson[1] + '<br>' + lesson[2].replace(/^(.)/, '<span class="red">\$1</span>')];
+            openParagraph('lectionis-titulum');
+            appendText(lesson[0]);
+            closeParagraph();
+            openParagraph('lectio-sequens');
+            renderInner(lesson[1] + '/' + lesson[2], null, [...data.tags, ...parentTags, 'lectio-sequens']);
+            closeParagraph();
+            return;
 					} else if (data.quaesitum.includes('triduum') && data.quaesitum.includes('nocturna-i')) {
 						if (data.quaesitum.includes('lectio-i')) {
-							rite += `<p class="rite-text lectionis-titulum ${data.tags.join(' ')}">${stringRender(lesson[0])}</p>`;
+              openParagraph(`lectionis-titulum ${data.tags.join(' ')}`);
+              appendText(lesson[0]);
+              closeParagraph();
 							lesson = lesson.slice(1);
 						}
 						annotation = lesson[0].match(/^\[.+?\]\//g);
@@ -509,7 +557,9 @@ function renderRite(data, options) {
 							lesson[0] = lesson[0].replace(/^\[.+?\]\//g,'');
 						}
 						body = lesson.slice(0, -1).map((i) => stringRender(i).replace(/^(.)(.+?\.\s)(.)/, '<span class="red">\$1</span>\$2<span class="red">\$3</span>')).join('<br>') + '<br>' + lesson[lesson.length - 1].replace(/^(.)/, '<span class="red">\$1</span>');
-						rite += `<p class="rite-text lectio-sequens">${body}</p>`;
+            openParagraph('lectio-sequens');
+            appendText(body);
+            closeParagraph();
 						return;
 					}
 
@@ -559,24 +609,25 @@ function renderRite(data, options) {
 				// Handle the Martyrology proper.
 				} else if (data.tags.includes('martyrologium')) {
 					openParagraph('martyrologium');
-					appendText(stringRender(unpack(data.datum[0])) + ' ' + stringRender(unpack(data.datum[1])));
+					appendText(unpack(data.datum[0]) + ' ' + unpack(data.datum[1]));
 					prae = unpack(data.datum[2]);
 					if (prae != '') {
 						openParagraph('martyrologium');
-						appendText(stringRender(prae));
+						appendText(prae);
 					}
 					martyrology = unpack(data.datum[3]);
 					if (typeof martyrology === 'string') {
 						openParagraph('martyrologium');
-						appendText(stringRender(martyrology));
+						appendText(martyrology);
 					} else {
 						for (let i of unpack(data.datum[3])) {
 							openParagraph('martyrologium');
-							appendText(stringRender(i));
+							appendText(i);
 						}
 					}
 					openParagraph('martyrologium');
-					appendText(stringRender(unpack(data.datum[4])) + '<br>' + stringRender(unpack(data.datum[5])));
+					appendText(unpack(data.datum[4]));
+          appendText(unpack(data.datum[5]));
 					closeParagraph();
 					return;
 				}
@@ -621,38 +672,5 @@ function renderRite(data, options) {
 	}
 
 	renderInner(data['rite'], null, []);
-
-	if (options['translation'] && options['side-by-side']) {
-		pat1 = /(<\/?div.*?>|(?:<h4.+?<\/h4>))/;
-		split = rite.split(pat1);
-		rite = '';
-		for (i of split) {
-			if (i == '' || pat1.test(i)) {
-				rite += i;
-			} else {
-				for (pa of i.split(/<\/p>/)) {
-					if (pa == '') {
-						continue;
-					}
-					rite += '<div class="side-by-side-column-container">';
-					leftColumn = '<div class="left-column-latin">';
-					rightColumn = '<div class="right-column-vernacular rite-text-translation side-by-side">' + pa.match(/^<p.+?>/);
-					translations = pa.match(/<span class="rite-text-translation.+?<\/span><br>/g);
-					if (translations) {
-						for (j of translations) {
-							rightColumn += j.replaceAll('rite-text-translation', 'rite-text');
-						}
-
-						leftColumn += pa.replaceAll(/<span class="rite-text-translation.+?<\/span><br>/g, '');
-					} else {
-						leftColumn += pa;
-					}
-					leftColumn += '</p></div>';
-					rightColumn += '</p></div>';
-					rite += leftColumn + rightColumn + '</div>';
-				}
-			}
-		}
-	}
-	return rite;
+  return rite;
 };

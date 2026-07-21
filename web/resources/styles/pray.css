@@ -214,15 +214,12 @@
 	font-size: 8px;
 }
 
-.rite-text-translation {
-	line-height: 1;
-	margin-top: 0;
-	padding-left: 10px;
-}
-
 .rite-text-translation.line-by-line {
 	font-size: 14px;
 	color: #222;
+	margin-top: 0;
+	line-height: 1;
+	padding-left: 10px;
 }
 
 .rite-text-rubric {

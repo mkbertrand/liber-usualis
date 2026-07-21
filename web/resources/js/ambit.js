@@ -339,6 +339,7 @@ function resolveParameters(parameters) {
 		resolved['ambit'] = defineAmbit(parameters.desired, parameters.choral);
 		resolved.votives = Object.entries(resolved.votives).filter(i => i[1]).map(i => i[0]).join('+');
 		lastResult = resolved;
+    resolved['side-by-side'] = resolved['side-by-side'] && resolved.translation;
 		return resolved;
 	}
 }
