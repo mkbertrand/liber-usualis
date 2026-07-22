@@ -2,10 +2,10 @@ import json
 import subprocess
 from pathlib import Path
 
-DEST_ROOT = Path('data-chant')
+from datamanage import DATA_ROOT
 
 for book in json.load(open('books.json')):
-    destination = DEST_ROOT.joinpath(book['loc'])
+    destination = DATA_ROOT.joinpath('generated').joinpath(book['loc'])
     if destination.exists():
         subprocess.run(['git', '-C', destination, 'pull'], check=True)
     else:

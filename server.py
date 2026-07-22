@@ -197,7 +197,7 @@ def rite():
                 search = set(tags) | {translation}
                 translatedbooks = []
                 for book in DEFAULT_CONTEXT.books:
-                    if datamanage.data_root.joinpath('data').joinpath(f'{book.title}-{translation}').exists():
+                    if datamanage.DATA_ROOT.joinpath(f'{book.title}-{translation}').exists():
                         translatedbooks.append(datamanage.get_book(f'{book.title}-{translation}'))
                 translated_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, translatedbooks)
                 return breviarium.search(translated_context, search)
@@ -216,7 +216,7 @@ def rite():
             traverse(rite['datum'])
         
         def get_chant(tagset):
-            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.LiturgicalBook(datamanage.data_root.joinpath('data-chant/gregobase'), 'gregobase')])
+            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant')])
             warnings.simplefilter('ignore')
             return breviarium.process(chant_context, tagset, None, None, permit_empty = False)
 
@@ -258,9 +258,9 @@ def kal():
         warnings.simplefilter('ignore')
         return datamanage.getdisplaykalendar(DEFAULT_CONTEXT)
 
-@get('/chant/gregobase/euouae.json')
+@get('/chant/liber-usualis-chant/euouae.json')
 def euouae():
-    return static_file('gregobase/untagged/euouae.json', root='data-chant/')
+    return static_file('generated/liber-usualis-chant/untagged/euouae.json', root=datamanage.DATA_ROOT)
 
 @get('/chant/<url:path>')
 def chant(url):

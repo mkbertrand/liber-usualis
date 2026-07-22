@@ -30,7 +30,7 @@ GABC_CHANT_CONTEXT.specialCharText = function(char) {
 };
 
 euouaes = {};
-fetch('/chant/gregobase/euouae.json').then(data => data.json()).then(json => euouaes = json);
+fetch('/chant/liber-usualis-chant/euouae.json').then(data => data.json()).then(json => euouaes = json);
 
 function chomp(gabc, tags) {
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');

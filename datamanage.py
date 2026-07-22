@@ -11,7 +11,7 @@ import requests
 import kalendar.display as display
 import psalms
 
-data_root = Path(__file__).parent
+DATA_ROOT = Path(__file__).parent.joinpath('data').resolve()
 
 # Reserved tags
 functiontags = {'datum', 'tags'}
@@ -54,12 +54,10 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-DATA_CHANT = Path('data-chant').resolve()
-
 def retrieve_untagged_file(src: Path) -> str:
         # Quick sanitization to make sure nobody is up to shady business.
         loc = src.resolve()
-        if not loc.is_relative_to(DATA_CHANT):
+        if not loc.is_relative_to(DATA_ROOT):
             raise ValueError('Invalid Path')
         else:
             with open(loc, 'r') as f:
@@ -71,7 +69,7 @@ def getchantfile(src):
         return requests.get(f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc', stream=True).text
     else:
         src = src.split('/')
-        return retrieve_untagged_file(DATA_CHANT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc'))
+        return retrieve_untagged_file(DATA_ROOT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc'))
 
 class LiturgicalBook:
     def __init__(self, src, title):
@@ -133,7 +131,7 @@ class LiturgicalBook:
         return ret
 
 def get_book(title):
-    return LiturgicalBook(data_root.joinpath('data').joinpath(title), title)
+    return LiturgicalBook(DATA_ROOT.joinpath(title), title)
 
 class LiturgicalContext:
     def __init__(self, *books):
