@@ -30,7 +30,7 @@ GABC_CHANT_CONTEXT.specialCharText = function(char) {
 };
 
 euouaes = {};
-fetch('/chant/liber-usualis-chant/euouae.json').then(data => data.json()).then(json => euouaes = json);
+fetch('/chant/liber-usualis-chant/untagged/euouae.json').then(data => data.json()).then(json => euouaes = json);
 
 function chomp(gabc, tags) {
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
@@ -91,7 +91,7 @@ function chomp(gabc, tags) {
 		if (tags.includes('intonata')) {
 			gabc = gabc.substring(0, gabc.indexOf('*')) + '(::) ' + euouae;
 		} else if (tags.includes('pars')) {
-			gabc = gabc.replace(/^(\(..\)\s).+?\*(\(.*?\))?\s?/, '$1');
+      gabc = `(${clef})` + gabc.trim().replace(/^.+\*\(.?\)/, '');
 			gabcdata = '%%\n';
 		} else if (tags.includes('repetita')) {
 			gabc = gabc.replace('*', '');
@@ -100,7 +100,7 @@ function chomp(gabc, tags) {
 			gabc = gabc + euouae;
 		}
 		
-		gabcdata = (tags.includes('repetita') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
+		gabcdata = (tags.includes('repetita') || tags.includes('pars') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
 	}
 
   gabc = gabc.replace(/<v>\\([VRA])bar<\/v>/g,function(match,barType) {

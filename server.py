@@ -216,7 +216,7 @@ def rite():
             traverse(rite['datum'])
         
         def get_chant(tagset):
-            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant'), datamanage.get_book('generated/fcc')])
+            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant'), datamanage.get_book('generated/fcc'), datamanage.get_book('generated/liber-usualis-chant/nocturnale')])
             warnings.simplefilter('ignore')
             return breviarium.process(chant_context, tagset, None, None, permit_empty = False)
 
@@ -258,13 +258,9 @@ def kal():
         warnings.simplefilter('ignore')
         return datamanage.getdisplaykalendar(DEFAULT_CONTEXT)
 
-@get('/chant/liber-usualis-chant/euouae.json')
-def euouae():
-    return static_file('generated/liber-usualis-chant/untagged/euouae.json', root=datamanage.DATA_ROOT)
-
-@get('/chant/<url:path>')
-def chant(url):
-    return datamanage.getchantfile(url)
+@get('/chant/<file:path>')
+def chant(file):
+    return static_file(file, root=datamanage.DATA_ROOT.joinpath('generated'))
 
 @get('/resources/<file:path>')
 def resources(file):

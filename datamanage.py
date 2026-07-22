@@ -1,4 +1,4 @@
-# Copyright 2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+# Copyright 2025-2026 (AGPL-4.0-or-later), Miles K. Bertrand et al.
 
 from pathlib import Path
 import json
@@ -54,6 +54,7 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
+@functools.cache
 def retrieve_untagged_file(src: Path) -> str:
         # Quick sanitization to make sure nobody is up to shady business.
         loc = src.resolve()
@@ -62,14 +63,6 @@ def retrieve_untagged_file(src: Path) -> str:
         else:
             with open(loc, 'r') as f:
                 return f.read()
-
-@functools.lru_cache(maxsize=1024)
-def getchantfile(src):
-    if 'nocturnale' in src:
-        return requests.get(f'https://nocturnale.marteo.fr/static/gabc/{src[src.index('/') + 1:]}.gabc', stream=True).text
-    else:
-        src = src.split('/')
-        return retrieve_untagged_file(DATA_ROOT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc'))
 
 VALID_ENDINGS = '.gabc', '.json', '.txt'
 
@@ -197,7 +190,7 @@ class SecondaryLiturgicalContext(LiturgicalContext):
                 untagged = book.has_untagged(query)
                 if untagged:
                     return {'tags': {query}, 'datum': retrieve_untagged_file(untagged)}
-            return None
+            raise Exception(f'No file found for {query}')
 
 def get_name(context, tagset):
     import breviarium

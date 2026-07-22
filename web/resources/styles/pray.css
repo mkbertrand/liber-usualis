@@ -436,35 +436,6 @@
 
 	#rite-container {
 		padding: 10px 100px 10px 100px;
-		font-size: 24px;
-	}
-
-	.large-title {
-		font-size: 30px;
-	}
-
-	.large-subtitle {
-		font-size: 20px;
-	}
-
-	.small-title {
-		font-size: 26px;
-	}
-
-	.section-header {
-		font-size: 26px;
-	}
-
-	.item-header {
-		font-size: 24px;
-	}
-
-	.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
-		font-size: 112px;
-	}
-
-	.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter, .hymnus.te-deum::first-letter, .lectio-incipiens.lectio-commemorationis::first-letter {
-		font-size: 72px !important;
 	}
 
 	.collecta, .oratio-dirigere {
