@@ -71,6 +71,8 @@ def getchantfile(src):
         src = src.split('/')
         return retrieve_untagged_file(DATA_ROOT.joinpath(src[0]).joinpath('untagged').joinpath('/'.join(src[1:]) + '.gabc'))
 
+VALID_ENDINGS = '.gabc', '.json', '.txt'
+
 class LiturgicalBook:
     def __init__(self, src, title):
         self.src = src
@@ -130,6 +132,13 @@ class LiturgicalBook:
                 ret.extend(self.getbreviariumfile(file))
         return ret
 
+    def has_untagged(self, query):
+        cand = [self.src.joinpath('untagged' + query + ending) for ending in VALID_ENDINGS if self.src.joinpath('untagged' + query + ending).exists()]
+        if cand:
+            return cand[0]
+        else:
+            return None
+
 def get_book(title):
     return LiturgicalBook(DATA_ROOT.joinpath(title), title)
 
@@ -184,7 +193,11 @@ class SecondaryLiturgicalContext(LiturgicalContext):
         if query.startswith('/psalmi'):
             return {'tags': {query}, 'datum':psalms.get(self.content_books[0], query)}
         else:
-            return {'tags': {query}, 'datum': retrieve_untagged_file(self.content_books[0].src.joinpath(f'untagged/{query}.gabc'))}
+            for book in self.content_books:
+                untagged = book.has_untagged(query)
+                if untagged:
+                    return {'tags': {query}, 'datum': retrieve_untagged_file(untagged)}
+            return None
 
 def get_name(context, tagset):
     import breviarium

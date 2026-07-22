@@ -216,7 +216,7 @@ def rite():
             traverse(rite['datum'])
         
         def get_chant(tagset):
-            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant')])
+            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant'), datamanage.get_book('generated/fcc')])
             warnings.simplefilter('ignore')
             return breviarium.process(chant_context, tagset, None, None, permit_empty = False)
 
