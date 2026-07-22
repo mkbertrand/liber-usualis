@@ -49,7 +49,7 @@ function chomp(gabc, tags) {
 		.replaceAll(/(\(.+?)(\|.+?)(\))/g, '$1$3')
 		.replaceAll('<sp>*</sp>', '*')
 		.replace(/<c>.+?<\/c>/, '')
-		.replaceAll(/<e>(.+?)<\/e>\(.\)/g, '<i>$1</i>()');
+		.replaceAll(/<e>(.+?)<\/e>/g, '<i>$1</i>');
 
 	gabcdata = '';
 	if (mode) {
