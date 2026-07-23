@@ -22,9 +22,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
-		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/pray.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/pray/css/pray.css')}}>
 		% if mobile:
-		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/pray-mobile.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/pray/css/pray-mobile.css')}}>
 		% end
 		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
@@ -35,14 +35,14 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/pray.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/ambit.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/ritegen.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/pray.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/ambit.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/ritegen.js')}}></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/exsurge.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/gabc-chant.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/jquery.hypher.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/la-hypher.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/exsurge.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/gabc-chant.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/jquery.hypher.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/la-hypher.js')}}></script>
 	</head>
 	<body x-data="{
 	optionspanel: false,
@@ -59,7 +59,7 @@
 		'side-by-side': false,
 		'display-trivial-chants': false
 	}),
-	version: '{{version_management.get_resource_version('/js/ritegen.js')}}-{{version_management.get_resource_version('/styles/pray.css')}}',
+	version: '{{version_management.get_resource_version('/pray/js/ritegen.js')}}-{{version_management.get_resource_version('/pray/css/pray.css')}}',
 	rite: '',
 	initialized: false,
 	canIncrementOccasion: true,

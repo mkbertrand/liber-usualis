@@ -155,7 +155,7 @@ def title():
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
 
-expected_version = f'{version_management.get_resource_version('/js/ritegen.js')}-{version_management.get_resource_version('/styles/pray.css')}'
+expected_version = f'{version_management.get_resource_version('/pray/js/ritegen.js')}-{version_management.get_resource_version('/pray/css/pray.css')}'
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
