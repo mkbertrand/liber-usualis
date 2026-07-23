@@ -135,29 +135,29 @@ function stringRenderExposed(text) {
 
 function renderRite(data, options) {
 
-	function stringRender(text, translation = false) {
-		if (translation && !options['side-by-side']) {
-			text = text.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
-		}
+  function stringRender(text, translation = false) {
+    if (translation && !options['side-by-side']) {
+      text = text.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
+    }
 
     return stringRenderExposed(text);
-	};
+  };
 
-	usedCommemorations = data['used-commemorations'];
-	matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
+  usedCommemorations = data['used-commemorations'];
+  matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
 
-	rite = '';
+  rite = '';
 
-	openDivs = [];
-	paragraphOpen = false;
+  openDivs = [];
+  paragraphOpen = false;
   textAbove = false;
   latinBuffer = '';
   vernacularBuffer = '';
   antiphon_mode = null;
 
-	function closeParagraph() {
-		if (paragraphOpen) {
-			paragraphOpen = false;
+  function closeParagraph() {
+    if (paragraphOpen) {
+      paragraphOpen = false;
       if (options['side-by-side']) {
         latinBuffer += '</div>';
         vernacularBuffer += '</div>';
@@ -165,25 +165,25 @@ function renderRite(data, options) {
       } else {
         rite += '</p>';
       }
-		}
+    }
     textAbove = false;
-	}
+  }
 
-	function openDiv(style, name) {
-		closeParagraph();
-		rite += `<div class="rite-item ${style} ${name}">`;
-		openDivs.push(name);
-	}
+  function openDiv(style, name) {
+    closeParagraph();
+    rite += `<div class="rite-item ${style} ${name}">`;
+    openDivs.push(name);
+  }
 
-	function closeDiv(name) {
-		openDivs.pop();
-		closeParagraph();
-		rite += '</div>';
-	}
+  function closeDiv(name) {
+    openDivs.pop();
+    closeParagraph();
+    rite += '</div>';
+  }
 
-	function openParagraph(style) {
-		closeParagraph();
-		paragraphOpen = true;
+  function openParagraph(style) {
+    closeParagraph();
+    paragraphOpen = true;
     if (options['side-by-side']) {
       latinBuffer = `<div class="left-column-latin"><p class="rite-text ${style}">`;
       vernacularBuffer = `<div class="right-column-vernacular"><p class="rite-text ${style} rite-text-translation side-by-side">`;
@@ -191,19 +191,19 @@ function renderRite(data, options) {
     } else {
       rite += `<p class="rite-text ${style}">`;
     }
-	}
+  }
 
-	function makeCenteredHeader(header, style = 'item-header') {
-		closeParagraph();
-		rite += `<h4 class="centered-header ${style}">${rubricRender(header)}</h4>`;
-	}
+  function makeCenteredHeader(header, style = 'item-header') {
+    closeParagraph();
+    rite += `<h4 class="centered-header ${style}">${rubricRender(header)}</h4>`;
+  }
 
-	function makeHeadingAnnotation(annot) {
-		closeParagraph();
-		rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
-	}
+  function makeHeadingAnnotation(annot) {
+    closeParagraph();
+    rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
+  }
 
-	function appendText(text, translated = null, translationclasses = []) {
+  function appendText(text, translated = null, translationclasses = []) {
     if (options['side-by-side']) {
       if (textAbove) {
         latinBuffer += '<br>';
@@ -221,11 +221,11 @@ function renderRite(data, options) {
       }
       rite += stringRender(text);
       if (translated) {
-				rite += `<br><span class="rite-text-translation line-by-line ${translationclasses.join(' ')}">${stringRender(translated, true)}</span>`;
+        rite += `<br><span class="rite-text-translation line-by-line ${translationclasses.join(' ')}">${stringRender(translated, true)}</span>`;
       }
     }
     textAbove = true;
-	}
+  }
 
   function renderGabc(replaced, quaesitum, cantus, translated = null, tags) {
     openDiv('', 'gabc-chant-container');
@@ -249,53 +249,53 @@ function renderRite(data, options) {
     closeDiv('gabc-chant-container');
   }
 
-	function renderInner(data, translated = null, parentTags) {
-		// Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
-		function uniquelyhas(tag, list = data.tags) {
-			return list.includes(tag) && !parentTags.includes(tag);
-		}
+  function renderInner(data, translated = null, parentTags) {
+    // Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
+    function uniquelyhas(tag, list = data.tags) {
+      return list.includes(tag) && !parentTags.includes(tag);
+    }
 
-		// Same as above, but only for the bottom of the recursion.
-		function uniquelyhasbottom(tag, list = data.tags) {
-			return list.includes(tag) && (!(typeof data.datum === 'object') || !('tags' in data.datum) || !data.datum.tags.includes(tag));
-		}
+    // Same as above, but only for the bottom of the recursion.
+    function uniquelyhasbottom(tag, list = data.tags) {
+      return list.includes(tag) && (!(typeof data.datum === 'object') || !('tags' in data.datum) || !data.datum.tags.includes(tag));
+    }
 
-		try {
+    try {
 
-			if (typeof data === 'object' && 'translation' in data) {
-				translated = JSON.parse(JSON.stringify(data.translation.datum));
-			}
+      if (typeof data === 'object' && 'translation' in data) {
+        translated = JSON.parse(JSON.stringify(data.translation.datum));
+      }
 
-			// Manages splitting up strings that include line breaks so that the translation is divided properly.
-			if (typeof data === 'string' && data.match(/(?<!\]|\[[^\]]+?)\//)) {
-				data = data.split(/(?<!\]|\[[^\]]+?)\//);
-				if (translated) {
-					translated = translated.split(/(?<!\]|\[[^\]]+?)\//);
-				}
-			}
+      // Manages splitting up strings that include line breaks so that the translation is divided properly.
+      if (typeof data === 'string' && data.match(/(?<!\]|\[[^\]]+?)\//)) {
+        data = data.split(/(?<!\]|\[[^\]]+?)\//);
+        if (translated) {
+          translated = translated.split(/(?<!\]|\[[^\]]+?)\//);
+        }
+      }
 
-			if (typeof data === 'object' && Array.isArray(data)) {
-				for (let i = 0; i < data.length; i++) {
-					// For some rubric texts, they're whole lines.
-					if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
-						makeHeadingAnnotation(rubricRender(data[i].slice(1, -2)));
-					} else {
-						renderInner(data[i], Array.isArray(translated) && translated.length == data.length ? translated[i] : null, parentTags);
-					}
-				}
+      if (typeof data === 'object' && Array.isArray(data)) {
+        for (let i = 0; i < data.length; i++) {
+          // For some rubric texts, they're whole lines.
+          if (typeof data[i] === 'string' && data[i].match(/^\[.+?\/\]$/)) {
+            makeHeadingAnnotation(rubricRender(data[i].slice(1, -2)));
+          } else {
+            renderInner(data[i], Array.isArray(translated) && translated.length == data.length ? translated[i] : null, parentTags);
+          }
+        }
         return;
-			} else if (typeof data === 'string') {
-				annot = data.match(/^\[(.+?)\]\//)
-				if (annot) {
-					if (parentTags.includes('capitulum')) {
-						annot[1] = 'Capitulum. ' + annot[1];
-					}
-					makeHeadingAnnotation(rubricRender(annot[1]));
-					data = data.replace(annot[0], '');
-				}
-				if (!paragraphOpen) {
-					openParagraph(parentTags.join(' '));
-				}
+      } else if (typeof data === 'string') {
+        annot = data.match(/^\[(.+?)\]\//)
+        if (annot) {
+          if (parentTags.includes('capitulum')) {
+            annot[1] = 'Capitulum. ' + annot[1];
+          }
+          makeHeadingAnnotation(rubricRender(annot[1]));
+          data = data.replace(annot[0], '');
+        }
+        if (!paragraphOpen) {
+          openParagraph(parentTags.join(' '));
+        }
         appendText(data, translated, parentTags);
         return;
       }
