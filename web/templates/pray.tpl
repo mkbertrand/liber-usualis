@@ -41,6 +41,8 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/exsurge.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/gabc-chant.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/jquery.hypher.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js/la-hypher.js')}}></script>
 	</head>
 	<body x-data="{
 	optionspanel: false,
