@@ -249,7 +249,7 @@ function renderRite(data, options) {
     closeDiv('gabc-chant-container');
   }
 
-  function renderInner(data, translated = null, parentTags) {
+  function renderInner(data, translated, parentTags) {
     // Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
     function uniquelyhas(tag, list = data.tags) {
       return list.includes(tag) && !parentTags.includes(tag);
@@ -415,7 +415,7 @@ function renderRite(data, options) {
         }
       }
       // Handle objects that have chant.
-      if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options['chant'] && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
+      if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options.chant && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
         renderGabc(data.datum, data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
         return;
 
@@ -681,13 +681,13 @@ function renderRite(data, options) {
         }
       }
       renderInner(data.datum, translated, parentTags);
-		} catch(err) {
-			console.log(err);
-			console.log(data);
-			console.log("Some objects failed to render correctly.");
-		}
-	}
+    } catch(err) {
+      console.log(err);
+      console.log(data);
+      console.log("Some objects failed to render correctly.");
+    }
+  }
 
-	renderInner(data['rite'], null, []);
+  renderInner(data['rite'], null, []);
   return rite;
 };
