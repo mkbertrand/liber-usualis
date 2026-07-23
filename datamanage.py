@@ -54,7 +54,7 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-@functools.cache
+@functools.lru_cache(maxsize=128)
 def retrieve_untagged_file(src: Path) -> str:
         # Quick sanitization to make sure nobody is up to shady business.
         loc = src.resolve()
@@ -97,7 +97,7 @@ class LiturgicalBook:
                     ret.append((i[:-5], self.src.joinpath('tagged').joinpath(roo).joinpath(i)))
         return ret
 
-    @functools.cache
+    @functools.lru_cache(maxsize=1024)
     def getbreviariumfile(self, query):
         logging.debug(f'Loading {query} from {self.title}')
         got = load_data(query, self.src)
