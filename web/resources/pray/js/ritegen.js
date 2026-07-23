@@ -498,36 +498,13 @@ function renderRite(data, options) {
 
       // Handle Psalms.
       } else if (data.tags.join(' ').includes('/psalmi/')) {
-        function doPsalmHeadering(psalmBlock) {
-          headers = psalmBlock.match(/\[.+?\]\n/g);
-          for (let i of headers) {
-            newHeader = i.slice(1, -2).replace(':', '. ') + '.';
-            numeral = newHeader.match(/\s([IVXLC]+)[\s|\.]/);
-            if (numeral) {
-              numeral = numeral[1];
-              vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
-              number = 0;
-              for (var j = 0; j < numeral.length; j++) {
-                if (j != numeral.length - 1 && vals[numeral[j]] < vals[numeral[j + 1]]) {
-                  number += vals[numeral[j + 1]] - vals[numeral[j]];
-                  j++;
-                } else {
-                  number += vals[numeral[j]];
-                }
-              }
-              newHeader = newHeader.replace(numeral, number);
-            }
-            psalmBlock = psalmBlock.replace(i, '[' + newHeader + ']\n');
-          }
-          return psalmBlock;
-        }
-        data.datum = doPsalmHeadering(data.datum);
+        data.datum = formatPsalm(data.datum);
 
         header = makeHeadingAnnotation(data.datum.split('\n')[0].slice(1, -1));
         // Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
         data.datum = data.datum.replace(/^\[.+?]\n\d+\s/, '').split('\n');
         if (translated && options['side-by-side']) {
-          translated = doPsalmHeadering(translated).replace(/^\[.+?]\n\d+\s/, '').split('\n');
+          translated = formatPsalm(translated).replace(/^\[.+?]\n\d+\s/, '').split('\n');
         } else if (translated) {
           translated = translated.replaceAll(/\[.+?]/g, '').split('\n').slice(1);
         }
