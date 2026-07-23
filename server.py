@@ -18,6 +18,8 @@ import os
 import json
 import traceback
 
+import functools
+
 import breviarium
 import datamanage
 import kalendar.daily_tagger
@@ -27,6 +29,9 @@ import version_management
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
 DEFAULT_CONTEXT = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'), datamanage.get_book('martyrologium-1846'))
+DEUTSCH_TRANSLATED_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('breviarium-1888-deutsch')])
+ENGLISH_TRANSLATED_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('breviarium-1888-english')])
+CHANT_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant'), datamanage.get_book('generated/fcc'), datamanage.get_book('generated/liber-usualis-chant/nocturnale')])
 
 toplevelpages = [
     'index',
@@ -151,6 +156,7 @@ def title():
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
 
 expected_version = f'{version_management.get_resource_version('/js/ritegen.js')}-{version_management.get_resource_version('/styles/pray.css')}'
+
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():
@@ -196,10 +202,11 @@ def rite():
                 translation = parameters['translation']
                 search = set(tags) | {translation}
                 translatedbooks = []
-                for book in DEFAULT_CONTEXT.books:
-                    if datamanage.DATA_ROOT.joinpath(f'{book.title}-{translation}').exists():
-                        translatedbooks.append(datamanage.get_book(f'{book.title}-{translation}'))
-                translated_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, translatedbooks)
+                translated_context = None
+                if translation == 'deutsch':
+                    translated_context = DEUTSCH_TRANSLATED_CONTEXT
+                else:
+                    translated_context = ENGLISH_TRANSLATED_CONTEXT
                 return breviarium.search(translated_context, search)
 
             def traverse(obj):
@@ -215,29 +222,29 @@ def rite():
             rite['datum'] = copy.deepcopy(rite['datum'])
             traverse(rite['datum'])
         
-        def get_chant(tagset):
-            chant_context = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant'), datamanage.get_book('generated/fcc'), datamanage.get_book('generated/liber-usualis-chant/nocturnale')])
-            warnings.simplefilter('ignore')
-            return breviarium.process(chant_context, tagset, None, None, permit_empty = False)
+        if 'chant' in parameters and parameters['chant'] == 'true':
+            @functools.lru_cache(maxsize=64)
+            def get_chant(tagset: frozenset):
+                warnings.simplefilter('ignore')
+                return breviarium.process(CHANT_CONTEXT, tagset, None, None, permit_empty = False)
 
-        def traverse_chant(obj):
-            if type(obj) is dict and 'quaesitum' in obj:
-                tran = get_chant(obj['quaesitum'])
-                if tran:
-                    obj['cantus'] = tran
-            if type(obj) is dict:
-                traverse_chant(obj['datum'])
-            elif type(obj) is list:
-                for v in obj:
-                    traverse_chant(v)
-        rite['datum'] = copy.deepcopy(rite['datum'])
-        traverse_chant(rite['datum'])
+            def traverse_chant(obj):
+                if type(obj) is dict and 'quaesitum' in obj:
+                    tran = get_chant(frozenset(obj['quaesitum']))
+                    if tran:
+                        obj['cantus'] = tran
+                if type(obj) is dict:
+                    traverse_chant(obj['datum'])
+                elif type(obj) is list:
+                    for v in obj:
+                        traverse_chant(v)
+            rite['datum'] = copy.deepcopy(rite['datum'])
+            traverse_chant(rite['datum'])
             
     except Exception as e:
         traceback.print_exc()
         print(e)
         abort(500, error500tpl('Error de interpretatione.'))
-
     try:
         lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
         lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None

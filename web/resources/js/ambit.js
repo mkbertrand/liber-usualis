@@ -395,6 +395,7 @@ async function getRite(calendarDate, occasion, parameters, version) {
 				&hour=${rites[i][0]}&noending=${i != rites.length - 1 && (rites[i + 1][1] == 'officium-parvum-bmv' || rites[i + 1][1] == 'officium-defunctorum' || rites[i + 1][0] == 'psalmi-poenitentiales' || rites[i + 1][0] == 'litaniae-sanctorum' || rites[i + 1][0] == 'officium-capituli')}
 				&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}
 				&privata=${!resolvedParameters.choral ? 'privata': 'chorali'}
+				&chant=${resolvedParameters.recitation == 'plainchant' ? 'true': 'false'}
 				&select=${rites[i][1]}
 				&votives=${resolvedParameters.votives}
 				&version=${version}
