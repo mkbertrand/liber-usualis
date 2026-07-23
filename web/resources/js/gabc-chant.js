@@ -115,15 +115,35 @@ function chomp(gabc, tags) {
   return gabcdata + gabc;
 }
 
-var chantPromises = new Map();
+renderQueue = []
+var processing = false;
 
-function getChantPromise(src) {
-  var promise = chantPromises.get(src);
-  if (!promise) {
-    promise = fetch(src);
-    chantPromises.set(promise);
+function scheduleTask(task) {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(task, {timeout: 200});
+  } else {
+    setTimeout(task, 0);
   }
-  return promise;
+}
+
+function processRenderQueue() {
+  if (renderQueue.length == 0) {
+    processing = false;
+    return;
+  }
+  processing = true;
+  task = renderQueue.shift();
+  scheduleTask(() => {
+    task();
+    processRenderQueue();
+  });
+}
+
+function queueRenderTask(renderTask) {
+  renderQueue.push(renderTask);
+  if (!processing) {
+    processRenderQueue();
+  }
 }
 
 class ChantElement extends HTMLElement {
@@ -135,11 +155,8 @@ class ChantElement extends HTMLElement {
 		}
 	}
 	
-  async connectedCallback() {
+  renderChant() {
     try {
-      if (!this.gabc) {
-        this.gabc = await getChantPromise(this.src).then(data => data.text());
-      }
       var gabc = chomp(this.gabc, this.tags);
       var mappings = exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, gabc);
       this.score = new exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !gabc.includes('initial-style:0;'));
@@ -160,17 +177,15 @@ class ChantElement extends HTMLElement {
     }
   }
 
+  connectedCallback() {
+    queueRenderTask(() => this.renderChant());
+  }
+
 	constructor() {
 		super();
 
     this.translated = $(this).attr('translated');
-
-    if ($(this).attr('gabc')) {
-      this.gabc = $(this).attr('gabc');
-		} else {
-      this.src = $(this).attr('src');
-    }
-
+    this.gabc = $(this).attr('gabc');
     this.tags = $(this).attr('tags').split('+');
 	}
 }
