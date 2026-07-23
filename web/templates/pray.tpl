@@ -35,10 +35,10 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 		</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/pray-window.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/ambit.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/ritegen.js')}}></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/exsurge.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/gabc-chant.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/jquery.hypher.js')}}></script>
