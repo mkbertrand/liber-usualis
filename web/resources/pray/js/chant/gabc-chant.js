@@ -33,7 +33,6 @@ euouaes = {};
 fetch('/chant/liber-usualis-chant/untagged/euouae.json').then(data => data.json()).then(json => euouaes = json);
 
 function chomp(gabc, tags) {
-  console.log(tags);
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 
 	mode = gabc.match(/mode:(.+?)(?:;|\n)/);
@@ -149,6 +148,15 @@ function queueRenderTask(renderTask) {
   }
 }
 
+const CHANT_VISIBILITY_OBSERVER = new IntersectionObserver((entries) => {
+  for (entry of entries) {
+    if (entry.isIntersecting) {
+      CHANT_VISIBILITY_OBSERVER.unobserve(entry.target);
+      entry.target.onVisible();
+    }
+  }
+}, {rootMargin: '200px'});
+
 class ChantElement extends HTMLElement {
 		
 	chantLayout() {
@@ -181,6 +189,13 @@ class ChantElement extends HTMLElement {
   }
 
   connectedCallback() {
+    CHANT_VISIBILITY_OBSERVER.observe(this);
+  }
+
+  disconnectedCallback() {
+    CHANT_VISIBILITY_OBSERVER.unobserve(this);
+  }
+  onVisible() {
     queueRenderTask(() => this.renderChant());
   }
 
