@@ -1,5 +1,8 @@
 // Copyright 2024-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+invitatoria = {};
+fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json?v=2').then(data => data.json()).then(json => invitatoria = json);
+
 function riteTitle(title, tags, size = 'large') {
 	if (size == 'small') {
 		return `<h1 class="small-title">${title}</h1>`;
@@ -626,6 +629,23 @@ function renderRite(data, options) {
         appendText(unpack(data.datum[4]));
         appendText(unpack(data.datum[5]));
         closeParagraph();
+        return;
+      } else if (options.chant && data.tags.includes('invitatorium')) {
+        openDiv('', 'invitatorium');
+        // The first instance of the Invitatory antiphon has to be rendered first in order to define antiphonMode.
+        renderInner(data.datum[0], translated ? translated[i] : null, data.tags.concat(parentTags));
+        var invIndex = 0;
+        var invitatorium = invitatoria[antiphonMode];
+        for (let i = 1; i < data.datum.length; i++) {
+          if (typeof data.datum[i] == 'object') {
+            renderInner(data.datum[i], translated ? translated[i] : null, data.tags.concat(parentTags));
+          } else if (invitatorium) {
+            renderGabc(data.datum[i], data.quaesitum, invitatorium[invIndex++], translated ? translated[i] : null, parentTags);
+          } else {
+            renderInner(data.datum[i], translated ? translated[i] : null, data.tags.concat(parentTags));
+          }
+        }
+        closeDiv('', 'invitatorium');
         return;
       }
 

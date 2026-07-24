@@ -33,6 +33,7 @@ euouaes = {};
 fetch('/chant/liber-usualis-chant/untagged/euouae.json').then(data => data.json()).then(json => euouaes = json);
 
 function chomp(gabc, tags) {
+  console.log(tags);
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 
 	mode = gabc.match(/mode:(.+?)(?:;|\n)/);
@@ -101,7 +102,9 @@ function chomp(gabc, tags) {
 		}
 		
 		gabcdata = (tags.includes('repetita') || tags.includes('pars') ? 'initial-style:0;\n' : 'initial-style:1;\n') + gabcdata;
-	}
+	} else if (tags.includes('invitatorium')) {
+    gabcdata = 'initial-style:0;\n' + gabcdata;
+  }
 
   gabc = gabc.replace(/<v>\\([VRA])bar<\/v>/g,function(match,barType) {
     return barType + '/.';
