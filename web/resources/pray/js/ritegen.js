@@ -232,16 +232,12 @@ function renderRite(data, options) {
     openDiv('', 'gabc-chant-container');
     openDiv('', 'gabc-chant');
     let cantusUnpack = unpack(cantus);
-    if (typeof cantusUnpack === 'string' && cantusUnpack.startsWith('/')) {
-      if (!translated) {
-        translated = '';
-      } else if (Array.isArray(translated)) {
-        translated = translated.join(' ');
-      }
-      rite += `<gabc-chant src="/chant${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated}">`;
-    } else {
-      rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}">`;
+    if (!translated) {
+      translated = '';
+    } else if (Array.isArray(translated)) {
+      translated = translated.join(' ');
     }
+    rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated}">`;
     openParagraph(tags.join(' '));
     renderInner(replaced, translated, tags);
 
