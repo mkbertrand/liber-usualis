@@ -83,7 +83,7 @@ function isDactylic(text, position) {
     return true;
   } else if (monosyllabic) {
     return LONGS.some(i => text[position - 3].includes(i));
-  } else if (position == 1){
+  } else if (position <= 1){
     return false;
   } else {
     return LONGS.some(i => text[position - 2].includes(i));
