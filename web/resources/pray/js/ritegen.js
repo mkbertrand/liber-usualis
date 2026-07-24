@@ -238,7 +238,7 @@ function renderRite(data, options) {
     if (!translated) {
       translated = '';
     } else if (Array.isArray(translated)) {
-      translated = translated.join(' ');
+      translated = translated.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
     }
     rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated}">`;
     openParagraph(tags.join(' '));
@@ -419,14 +419,9 @@ function renderRite(data, options) {
         return;
       }
 
-      // Handle objects that have chant.
-      if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options.chant && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
-        renderGabc(data.datum, data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
-        return;
-
       // Handle Responsories and Short Responsories.
       // If data.datum is an array, that means that the responsory isn't actually nested down another layer.
-      } if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
+      if ((data.tags.includes('responsorium') || data.tags.includes('responsorium-breve')) && Array.isArray(data.datum)) {
         // This is a string if no responsory was found
         if (typeof data.datum[1] === 'string') {
           appendText(data.datum[1].replace(", 'incipit'",''));
@@ -472,6 +467,26 @@ function renderRite(data, options) {
             translated = null;
           }
         }
+        if (options.chant && data.cantus) {
+          var trans = data.cantus.datum;
+          var allDefined = true;
+          for (var i = 0; i < data.cantus.datum.length; i++) {
+            if (trans[i] === null) {
+              resp = claw(data.datum[i]);
+              if ('cantus' in resp) {
+                trans[i] = unpack(resp.cantus);
+              }
+              if (trans[i] == undefined) {
+                allDefined = false;
+                break;
+              }
+            } else {
+              trans[i] = unpack(trans[i]);
+            }
+          }
+          data.cantus = allDefined ? trans.join('') : null;
+          console.log(data.cantus);
+        }
         data.datum = unpack(data.datum).join('').split('\n').map((line) => {
           pref = line.match(/^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)/)[0];
           return line.replace(pref, pref.toUpperCase().replace('BR', 'br'));
@@ -479,6 +494,12 @@ function renderRite(data, options) {
 
         // We're ok with nested responsories.
         parentTags = parentTags.filter(tag => tag != 'responsorium');
+      }
+
+      // Handle objects that have chant.
+      if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options.chant && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
+        renderGabc(data.datum, data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
+        return;
 
       // Handle headers for Lessons.
       } else if (data.tags.includes('formula-lectionis') && data.datum != '' && !(typeof data.datum !== 'string' && 'tags' in data.datum && data.datum.tags.includes('formula-lectionis'))) {

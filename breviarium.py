@@ -254,6 +254,8 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
                 if 'N.' in i:
                     i = i.replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected)['datum'])
                 ret.append(i)
+            elif i is None:
+                ret.append(None)
             else:
                 iprocessed = process(context, i, selected, alternates)
                 if iprocessed is None:
