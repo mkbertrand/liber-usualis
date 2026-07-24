@@ -199,6 +199,7 @@
 	},
 	{
 		"tags":[
+			["pascha","antiphona","prima"],
 			["pascha","antiphona","tertia"],
 			["pascha","antiphona","sexta"],
 			["pascha","antiphona","nona"]
@@ -213,14 +214,6 @@
 			["pascha","responsorium-breve","nona"]
 		],
 		"datum":""
-	},
-	{
-		"tags":["prima","pascha","psalmi"],
-		"datum":[
-			["/psalmi/psalmus-liii,gloria"],
-			["/psalmi/psalmus-cxviii:1-16,gloria"],
-			["/psalmi/psalmus-cxviii:17-32,gloria"]
-		]
 	},
 	{
 		"tags":["pascha","vesperae","psalmus"],
@@ -242,13 +235,15 @@
 			{
 				"tags":["psalmi"],
 				"datum":[
+          ["completorium","antiphona","intonata"],
 					["/psalmi/psalmus-iv,gloria"],
 					["/psalmi/psalmus-xxx:1-6,gloria"],
 					["/psalmi/psalmus-xc,gloria"],
-					["/psalmi/psalmus-cxxxiii,gloria"]
+					["/psalmi/psalmus-cxxxiii,gloria"],
+          ["completorium","antiphona","repetita"]
 				]
 			},
-			["completorium","antiphona","repetita"],
+      ["antiphona","antiphona-nunc-dimittis"],
 			["nunc-dimittis"],
 			["antiphona","haec-dies"],
 			["completorium","collecta-primaria"],
@@ -261,7 +256,9 @@
 	},
 	{
 		"tags":["pascha","completorium","antiphona"],
-		"datum":"Allelúja, * allelúja, allelúja, allelúja."
+    "intonata":"",
+		"repetita":"Allelúja, allelúja, allelúja, allelúja.",
+    "antiphona-nunc-dimittis":""
 	},
 	{
 		"tags":["pascha","nomen"],
