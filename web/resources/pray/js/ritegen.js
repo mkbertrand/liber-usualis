@@ -153,7 +153,8 @@ function renderRite(data, options) {
   textAbove = false;
   latinBuffer = '';
   vernacularBuffer = '';
-  antiphon_mode = null;
+  antiphonMode = null;
+  antiphonClef = null;
 
   function closeParagraph() {
     if (paragraphOpen) {
@@ -267,8 +268,9 @@ function renderRite(data, options) {
       }
 
       // Manages splitting up strings that include line breaks so that the translation is divided properly.
-      if (typeof data === 'string' && data.match(/(?<!\]|\[[^\]]+?)\//)) {
-        data = data.split(/(?<!\]|\[[^\]]+?)\//);
+      // Splits lines denoted by /, but ignores </ (pre-formatted html indicator) or ]/ (annotation).
+      if (typeof data === 'string' && data.match(/(?<!\]|\<)\//)) {
+        data = data.split(/(?<!\]|\<)\//);
         if (translated) {
           translated = translated.split(/(?<!\]|\[[^\]]+?)\//);
         }
@@ -303,7 +305,19 @@ function renderRite(data, options) {
       if (!('quaesitum' in data)) {
         data.quaesitum = data.tags;
       }
-
+      
+      // These checks are done before removing empty items since empty antiphons can still confer tone upon the following Psalms.
+      if (data.tags.includes('antiphona') && options.chant && 'cantus' in data && data.cantus) {
+        mode = unpack(data.cantus).match(/mode:(.+?)(?:;|\n)/);
+        clef = unpack(data.cantus).replace('%%', '\n%%\n').match(/^\((.+?)\)/m);
+        if (mode && clef && !data.quaesitum.includes('repetita')) {
+          antiphonMode = mode[1];
+          antiphonClef = clef[1];
+        } else {
+          antiphonMode = null;
+          antiphonClef = null;
+        }
+      }
       if (unpack(data) == '') {
         return;
       }
@@ -406,14 +420,6 @@ function renderRite(data, options) {
         return;
       }
 
-      if (data.tags.includes('antiphona') && options.chant && 'cantus' in data && data.cantus) {
-        mode = unpack(data.cantus).match(/mode:(.+?)(?:;|\n)/);
-        if (mode) {
-          antiphon_mode = mode[1];
-        } else {
-          antiphon_mode = null;
-        }
-      }
       // Handle objects that have chant.
       if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options.chant && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
         renderGabc(data.datum, data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
@@ -498,7 +504,7 @@ function renderRite(data, options) {
 
       // Handle Psalms.
       } else if (data.tags.join(' ').includes('/psalmi/')) {
-        data.datum = formatPsalm(data.datum);
+        data.datum = formatPsalm(data.datum, antiphonMode, antiphonClef);
 
         header = makeHeadingAnnotation(data.datum.split('\n')[0].slice(1, -1));
         // Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
