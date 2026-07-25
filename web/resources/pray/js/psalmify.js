@@ -70,7 +70,7 @@ function accentationData(blankChant) {
   return [blankChant.length - 3 * acc, acc];
 }
 
-LONGS = ['á', 'é', 'í', 'ó', 'ú', 'ý', 'ǽ'];
+LONGS = ['á', 'é', 'í', 'ó', 'ú', 'ý', 'ǽ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ý', 'Ǽ'];
 
 function isDactylic(text, position) {
   var monosyllabic = text[position - 1] == ' ';

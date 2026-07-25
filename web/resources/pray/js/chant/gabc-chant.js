@@ -156,7 +156,7 @@ const CHANT_VISIBILITY_OBSERVER = new IntersectionObserver((entries) => {
       entry.target.onVisible();
     }
   }
-}, {rootMargin: '200px'});
+}, {rootMargin: '400px'});
 
 class ChantElement extends HTMLElement {
 		
