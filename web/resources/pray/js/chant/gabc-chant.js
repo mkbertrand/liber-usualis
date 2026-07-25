@@ -33,7 +33,6 @@ euouaes = {};
 fetch('/chant/liber-usualis-chant/untagged/euouae.json').then(data => data.json()).then(json => euouaes = json);
 
 function chomp(gabc, tags) {
-  console.log(gabc);
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 
 	mode = gabc.match(/mode:(.+?)(?:;|\n)/);

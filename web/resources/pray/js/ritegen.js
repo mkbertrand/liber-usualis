@@ -39,6 +39,8 @@ function abbreviateName(name) {
 function unpack(data) {
 	if (typeof data === 'string') {
 		return data;
+  } else if (data === null) {
+    return null;
 	} else if (typeof data === 'object') {
 		return Array.isArray(data) ? data.map((d) => unpack(d)).flat() : unpack(data.datum);
 	}
@@ -468,9 +470,9 @@ function renderRite(data, options) {
           }
         }
         if (options.chant && data.cantus) {
-          var trans = data.cantus.datum;
+          var trans = unpack(data.cantus.datum);
           var allDefined = true;
-          for (var i = 0; i < data.cantus.datum.length; i++) {
+          for (var i = 0; i < unpack(data.cantus.datum).length; i++) {
             if (trans[i] === null) {
               resp = claw(data.datum[i]);
               if ('cantus' in resp) {
@@ -485,7 +487,6 @@ function renderRite(data, options) {
             }
           }
           data.cantus = allDefined ? trans.join('') : null;
-          console.log(data.cantus);
         }
         data.datum = unpack(data.datum).join('').split('\n').map((line) => {
           pref = line.match(/^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)/)[0];
