@@ -98,7 +98,7 @@ class LiturgicalBook:
         return ret
 
     @functools.lru_cache(maxsize=1024)
-    def getbreviariumfile(self, query):
+    def get_tagged(self, query):
         logging.debug(f'Loading {query} from {self.title}')
         got = load_data(query, self.src)
         if len(got) == 0:
@@ -108,21 +108,24 @@ class LiturgicalBook:
         for entry in got:
             entrycopy = copy.deepcopy(entry)
 
-            # Expands out entries where there's more than one item
+            # Expands out entries where there's more than one item. e.g. responsories won't usually have a datum, but essentially represent multiple tagged entries.
             for key, val in entrycopy.items():
                 if key not in functiontags:
-                    tags = [j | {key} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {key}
+                    tags = [j | {key, self.title} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {key, self.title}
                     newentry = {'tags':tags, 'datum':val}
                     ret.append(newentry)
+
+            # Adds the book title to tag lists.
+            entrycopy['tags'] = [j | {self.title} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {self.title}
             if 'datum' in entry:
-                ret.append({k: v for k, v in entry.items() if k in functiontags})
+                ret.append({k: v for k, v in entrycopy.items() if k in functiontags})
         return ret
 
     def get_pile(self, pilequery):
         ret = []
         for name, file in self.getwalk():
             if name in pilequery:
-                ret.extend(self.getbreviariumfile(file))
+                ret.extend(self.get_tagged(file))
         return ret
 
     def has_untagged(self, query):
@@ -131,6 +134,9 @@ class LiturgicalBook:
             return cand[0]
         else:
             return None
+
+def get_generated_book(title):
+    return LiturgicalBook(DATA_ROOT.joinpath('generated').joinpath(title), title)
 
 def get_book(title):
     return LiturgicalBook(DATA_ROOT.joinpath(title), title)
@@ -160,6 +166,8 @@ class LiturgicalContext:
         ret = []
         for i in finds:
             ret.extend(i)
+        for tag in self.get_book_tags():
+            ret.append(frozenset({tag}))
         return ret
 
     def get_pile(self, pilequery):
@@ -169,7 +177,15 @@ class LiturgicalContext:
         return ret
 
     def get_untagged(self, query):
-        return {'tags': {query}, 'datum':psalms.get(self.books[0], query)}
+        for book in self.books:
+            try:
+                return {'tags': {query}, 'datum':psalms.get(book, query)}
+            except:
+                pass
+
+    def get_book_tags(self):
+        for book in self.books:
+            yield book.title
 
 class SecondaryLiturgicalContext(LiturgicalContext):
     def __init__(self, books, content_books):
@@ -191,6 +207,10 @@ class SecondaryLiturgicalContext(LiturgicalContext):
                 if untagged:
                     return {'tags': {query}, 'datum': retrieve_untagged_file(untagged)}
             raise Exception(f'No file found for {query}')
+
+    def get_book_tags(self):
+        for book in self.content_books:
+            yield book.title
 
 def get_name(context, tagset):
     import breviarium

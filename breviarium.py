@@ -130,7 +130,7 @@ def managesearch(query, result):
 
 def search(context, query, multipleresults = False, multipleresultssort = None, pilemod = []):
     for i in query:
-        if '/' in i:
+        if i.startswith('/'):
             try:
                 return context.get_untagged(i)
             except FileNotFoundError:
@@ -138,7 +138,7 @@ def search(context, query, multipleresults = False, multipleresultssort = None, 
 
     pilequery = query | defaultpile
     pile = context.get_pile(pilequery) + pilemod
-    result = list(anysearch(query, pile))
+    result = list(anysearch(query | set(context.get_book_tags()), pile))
 
     # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
     if len(result) == 0:

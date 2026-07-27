@@ -31,7 +31,7 @@ LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 DEFAULT_CONTEXT = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'), datamanage.get_book('martyrologium-1846'))
 DEUTSCH_TRANSLATED_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('breviarium-1888-deutsch')])
 ENGLISH_TRANSLATED_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('breviarium-1888-english')])
-CHANT_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('generated/liber-usualis-chant'), datamanage.get_book('generated/fcc'), datamanage.get_book('generated/liber-usualis-chant/nocturnale')])
+CHANT_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_generated_book('liber-usualis-chant'), datamanage.get_generated_book('fcc'), datamanage.get_generated_book('liber-usualis-chant/nocturnale')])
 
 toplevelpages = [
     'index',
