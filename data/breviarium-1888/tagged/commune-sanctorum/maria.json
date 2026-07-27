@@ -383,49 +383,17 @@
 		"datum":"Beáta es María, * quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja.",
 		"in-tempore-septuagesimae":"Beáta es María, * quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino."
 	},
-	{
-		"tags":["maria","tertia","responsorium-breve"],
-		"incipit":"Spécie tua",
-		"responsum":"et pulchritúdine tua.",
-		"versus":"Inténde, próspere procéde, et regna."
-	},
-	{
-		"tags":["maria","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Spécie tua et pulchritúdine tua.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"Inténde, próspere procéde, et regna."
-	},
+  {
+    "tags":["maria","responsorium-breve"],
+    "datum":[["virgo","responsorium-breve"]]
+  },
 	{
 		"tags":["maria","sexta","capitulum"],
 		"datum":"[Eccli. 24. b.]/Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. + Et radicávi in pópulo honorificáto, et in parte Dei mei hæréditas illíus, * et in plenitúdine sanctórum deténtio mea."
 	},
 	{
-		"tags":["maria","sexta","responsorium-breve"],
-		"incipit":"Adjuvábit eam",
-		"responsum":"Deus vultu suo.",
-		"versus":"Deus in médio ejus, non commovébitur."
-	},
-	{
-		"tags":["maria","sexta","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Adjuvábit eam Deus vultu suo.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"Deus in médio ejus, non commovébitur."
-	},
-	{
 		"tags":["maria","nona","capitulum"],
 		"datum":"[Eccli. 24. b.]/In platéis sicut cinnamómum, et bálsamum aromatízans odórem dedi: + quasi myrrha elécta: * dedi suavitátem odóris."
-	},
-	{
-		"tags":["maria","nona","responsorium-breve"],
-		"incipit":"Elégit eam Deus,",
-		"responsum":"et præelégit eam.",
-		"versus":"In tabernáculo suo habitáre facit eam."
-	},
-	{
-		"tags":["maria","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Elégit eam Deus, et præelégit eam.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
 		"tags":["maria","ii-vesperae","antiphona","antiphona-magnificat"],

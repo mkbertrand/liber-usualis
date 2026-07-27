@@ -340,18 +340,10 @@
 		"datum":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus.",
 		"in-tempore-paschali":"Date ei * de fructu mánuum suárum, et laudent eam in portis ópera ejus, allelúja."
 	},
-	{
-		"tags":["vidua","tertia","responsorium-breve"],
-		"incipit":"Spécie tua",
-		"responsum":"et pulchritúdine tua.",
-		"versus":"Inténde, próspere procéde, et regna."
-	},
-	{
-		"tags":["vidua","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Spécie tua et pulchritúdine tua.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"Inténde, próspere procéde, et regna."
-	},
+  {
+    "tags":["vidua","responsorium-breve"],
+    "datum":[["virgo","responsorium-breve"]]
+  },
 	{
 		"tags":["vidua","tertia","versiculus"],
 		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
@@ -366,18 +358,6 @@
 		"datum":"[Parab. 31. c.]/Manum suam apéruit ínopi, + et palmas suas exténdit ad paúperem. * Non timébit dómui suæ a frigóribus nivis."
 	},
 	{
-		"tags":["vidua","sexta","responsorium-breve"],
-		"incipit":"Adjuvábit eam",
-		"responsum":"Deus vultu suo.",
-		"versus":"Deus in médio ejus, non commovébitur."
-	},
-	{
-		"tags":["vidua","sexta","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Adjuvábit eam Deus vultu suo.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"Deus in médio ejus, non commovébitur."
-	},
-	{
 		"tags":["vidua","sexta","versiculus"],
 		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
 		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
@@ -389,18 +369,6 @@
 	{
 		"tags":["vidua","nona","capitulum"],
 		"datum":"[Parab. 31. d.]/Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. + Fallax grátia, et vana est pulchritúdo: * múlier timens Dóminum, ipsa laudábitur."
-	},
-	{
-		"tags":["vidua","nona","responsorium-breve"],
-		"incipit":"Elégit eam Deus,",
-		"responsum":"Et præelégit eam.",
-		"versus":"In tabernáculo suo habitáre facit eam."
-	},
-	{
-		"tags":["vidua","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Elégit eam Deus, et præelégit eam.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"In tabernáculo suo habitáre facit eam."
 	},
 	{
 		"tags":[
