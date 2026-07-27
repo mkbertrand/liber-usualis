@@ -316,7 +316,7 @@
 			["formula","formula-lectionis","lectio-ii"],
 			["formula","responsorium","responsorium-ii"],
 			["formula","formula-lectionis","lectio-iii"],
-			["formula","responsorium","responsorium-iii","gloria"]
+			["formula","responsorium","responsorium-iii","cum-gloria"]
 		]
 	},
 	{
@@ -331,7 +331,7 @@
 			["formula","formula-lectionis","lectio-ii"],
 			["formula","responsorium","responsorium-ii"],
 			["formula","formula-lectionis","lectio-iii","lectiones-diei-illi"],
-			["formula","responsorium","responsorium-iii","gloria"]
+			["formula","responsorium","responsorium-iii","cum-gloria"]
 		]
 	},
 	{
@@ -340,7 +340,7 @@
 			["formula","formula-lectionis","lectio-i"],
 			["formula","responsorium","responsorium-i"],
 			["formula","formula-lectionis","lectio-ii"],
-			["formula","responsorium","responsorium-ii","gloria"],
+			["formula","responsorium","responsorium-ii","cum-gloria"],
 			["formula","formula-lectionis","lectio-iii"],
 			["hymnus","te-deum"]
 		]
@@ -729,7 +729,7 @@
 	},
 	{
 		"tags":["per-annum","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
-		"formula":[["formula","responsorium","gloria","duplex-responsum"]],
+		"formula":[["formula","responsorium","cum-gloria","duplex-responsum"]],
 		"incipit":"Duo Séraphim clamábant alter ad álterum:",
 		"responsum-i":"Sanctus, sanctus, sanctus Dóminus Deus Sábaoth:",
 		"responsum-ii":"Plena est omnis terra glória ejus.",
