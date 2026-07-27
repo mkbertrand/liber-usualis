@@ -261,10 +261,8 @@
 		"datum":"Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confiténtur unánimes, beáta Trínitas, unus Deus."
 	},
 	{
-		"tags":["omnes-sancti","tertia","responsorium-breve"],
-		"incipit":"Lætámini in Dómino,",
-		"responsum":"et exsultáte justi.",
-		"versus":"Et gloriámini omnes recti corde."
+		"tags":["omnes-sancti","responsorium-breve"],
+    "datum":[["martyres","responsorium-breve"]]
 	},
 	{
 		"tags":["omnes-sancti","tertia","versiculus"],
@@ -275,24 +273,12 @@
 		"datum":"[Apoc. 7. c.]/Post hæc vidi turbam magnam, quam dinumeráre nemo póterat + ex ómnibus géntibus, et tríbubus, et pópulis, et linguis, stantes ante thronum Dei, in conspéctu Agni, amícti stolis albis, * et palmæ in mánibus eórum."
 	},
 	{
-		"tags":["omnes-sancti","sexta","responsorium-breve"],
-		"incipit":"Exsúltent justi",
-		"responsum":"in conspéctu Dei.",
-		"versus":"Et delecténtur in lætítia."
-	},
-	{
 		"tags":["omnes-sancti","sexta","versiculus"],
 		"datum":["V. Justi autem in perpétuum vivent.","R. Et apud Dóminum est merces eórum."]
 	},
 	{
 		"tags":["omnes-sancti","nona","capitulum"],
 		"datum":"[Apoc. 7. c.]/Benedíctio, et cláritas, et sapiéntia, et gratiárum áctio, + honor, virtus, et fortitúdo Deo nostro, * in sǽcula sæculórum. Amen."
-	},
-	{
-		"tags":["omnes-sancti","nona","responsorium-breve"],
-		"incipit":"Justi autem",
-		"responsum":"in perpétuum vivent.",
-		"versus":"Et apud Dóminum est merces eórum."
 	},
 	{
 		"tags":["omnes-sancti","ii-vesperae","psalmus-v"],
