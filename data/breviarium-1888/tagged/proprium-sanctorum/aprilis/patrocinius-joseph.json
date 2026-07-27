@@ -251,16 +251,8 @@
 		"datum":"Joseph fili David, * noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu sancto est."
 	},
 	{
-		"tags":["patrocinius-joseph","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Constítuit eum dóminum domus suæ.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"Et príncipem omnis possessiónis suæ."
-	},
-	{
-		"tags":["patrocinius-joseph","tertia","responsorium-breve"],
-		"incipit":"Constítuit eum",
-		"responsum":"dóminum domus suæ.",
-		"versus":"Et príncipem omnis possessiónis suæ."
+		"tags":["patrocinius-joseph","responsorium-breve"],
+    "datum":[["joseph-sponsus","responsorium-breve"]]
 	},
 	{
 		"tags":["patrocinius-joseph","sexta","capitulum"],
@@ -286,18 +278,6 @@
 	{
 		"tags":["patrocinius-joseph","nona","capitulum"],
 		"datum":"[Gen. 49. c.]/Fílius accréscens Joseph, + fílius accréscens, et decórus aspéctu: * fíliæ discurrérunt super murum."
-	},
-	{
-		"tags":["patrocinius-joseph","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"Justus germinábit sicut lílium.",
-		"responsum":"Allelúja, allelúja.",
-		"versus":"Et florébit in ætérnum ante Dóminum."
-	},
-	{
-		"tags":["patrocinius-joseph","nona","responsorium-breve"],
-		"incipit":"Justus germinábit",
-		"responsum":"sicut lílium.",
-		"versus":"Et florébit in ætérnum ante Dóminum."
 	},
 	{
 		"tags":["patrocinius-joseph","nona","versiculus"],
