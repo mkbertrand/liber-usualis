@@ -138,7 +138,8 @@ def search(context, query, multipleresults = False, multipleresultssort = None, 
 
     pilequery = query | defaultpile
     pile = context.get_pile(pilequery) + pilemod
-    result = list(anysearch(query | set(context.get_book_tags()), pile))
+    query |= set(context.get_book_tags())
+    result = list(anysearch(query, pile))
 
     # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
     if len(result) == 0:
