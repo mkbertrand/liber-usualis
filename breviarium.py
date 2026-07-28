@@ -2,20 +2,9 @@
 
 # Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
-import os
-import pathlib
-import json
 import copy
-from datetime import date, datetime, timedelta
-import functools
 import kalendar.daily_tagger
-import datamanage
 import warnings
-import logging
-import sys
-import functools
-
-import psalms
 
 defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
 
@@ -34,7 +23,6 @@ def expandcat(context, category):
         else:
             raise RuntimeError(str(category))
 
-    @functools.cache
     def expandnamedcat(category):
         return expandopenedcat(context.getcategory(category))
 
@@ -51,10 +39,6 @@ def contradictions(context, category, tags):
                 yield subcat
     else:
         return RuntimeError()
-
-def contradicts(context, category, tags):
-    # In other words, are there any contradictions?
-    return len(list(contradictions(context, category, tags)))
 
 def prettyprint(j):
     def recurse(obj):
@@ -215,12 +199,12 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
                     break
 
                 # If there is an alternate with a specific object and position, it should be imposed on this tagset even if the tagset doesn't otherwise want a different day's item
-                # Sometimes there are explicit tagsets in alternates that specify certain things (as opposed to above when the data itself requests something)
+                # Sometimes there are explicit tagsets in alternates that specify certain things (as oppo/sed to above when the data itself requests something)
                 elif item | (selected & expandcat(context, 'positionales')) <= alternates[i]:
                     alternates = copy.copy(alternates)
                     alternates.append(selected)
 
-                    if contradicts(context, 'positionales', item | alternates[i] | selected):
+                    if len(list(contradictions(context, 'positionales', item | alternates[i] | selected))):
                         selected = alternates.pop(i)
                     else:
                         selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
@@ -287,6 +271,11 @@ def generate(context, day, hour: str):
 
 if __name__ == '__main__':
     import argparse
+    from datetime import date, datetime, timedelta
+    import logging
+    import sys
+
+    import datamanage
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,

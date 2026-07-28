@@ -23,15 +23,16 @@ import functools
 import breviarium
 import datamanage
 import kalendar.daily_tagger
+from composer import Thesaurus, ContingentThesaurus
 
 import version_management
 
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
-DEFAULT_CONTEXT = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'), datamanage.get_book('martyrologium-1846'))
-DEUTSCH_TRANSLATED_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('breviarium-1888-deutsch')])
-ENGLISH_TRANSLATED_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_book('breviarium-1888-english')])
-CHANT_CONTEXT = datamanage.SecondaryLiturgicalContext(DEFAULT_CONTEXT.books, [datamanage.get_generated_book('liber-usualis-chant'), datamanage.get_generated_book('fcc'), datamanage.get_generated_book('liber-usualis-chant/nocturnale')])
+DEFAULT_THESAURUS = Thesaurus(datamanage.get_book('breviarium-1888'), datamanage.get_book('martyrologium-1846'))
+DEUTSCH_THESAURUS = ContingentThesaurus(DEFAULT_THESAURUS.books, [datamanage.get_book('breviarium-1888-deutsch')])
+ENGLISH_THESAURUS = ContingentThesaurus(DEFAULT_THESAURUS.books, [datamanage.get_book('breviarium-1888-english')])
+CHANT_THESAURUS = ContingentThesaurus(DEFAULT_THESAURUS.books, [datamanage.get_generated_book('liber-usualis-chant'), datamanage.get_generated_book('fcc'), datamanage.get_generated_book('liber-usualis-chant/nocturnale')])
 
 toplevelpages = [
     'index',
@@ -99,24 +100,24 @@ def daytags(vesperal = False):
 
     votives = parameters['votives'].replace(' ', '+').split('+')
 
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CONTEXT, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_CONTEXT, day, votives))
+    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_THESAURUS, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_THESAURUS, day, votives))
 
     primary = [i for i in tags if 'primarium' in i][0]
-    commemorations = [[datamanage.get_name(DEFAULT_CONTEXT, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)]
-    omissions = [[datamanage.get_name(DEFAULT_CONTEXT, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)]
+    commemorations = [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_THESAURUS, 'rank', a), reverse=True)]
+    omissions = [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_THESAURUS, 'rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return datamanage.dump_data({
             'tags': tags,
-            'primary': [datamanage.get_name(DEFAULT_CONTEXT, primary), primary],
+            'primary': [datamanage.get_name(DEFAULT_THESAURUS, primary), primary],
             'commemorations': commemorations,
             'omissions': omissions,
-            'commemoratio-matutini': [datamanage.get_name(DEFAULT_CONTEXT, lectiocomm), lectiocomm] if lectiocomm else None
+            'commemoratio-matutini': [datamanage.get_name(DEFAULT_THESAURUS, lectiocomm), lectiocomm] if lectiocomm else None
         })
 
 def adjust_tags(day, vesperal, select, votives):
     # Votives are simply a list of which votives the user wishes to be said if applicable. Providing a votive does not force its usage on inapplicable days.
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CONTEXT, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CONTEXT, day, votives = votives))
+    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_THESAURUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_THESAURUS, day, votives = votives))
 
     # Handle the Little Office of the BVM and the Office of the Dead (temporary code)
     if select == 'officium-parvum-bmv':
@@ -150,7 +151,7 @@ def title():
         hours = parameters['hour'].replace(' ', '+').split('+')
         tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
         primary = [i for i in tags if 'primarium' in i][0]
-        return datamanage.dump_data([datamanage.get_name(DEFAULT_CONTEXT, primary), primary])
+        return datamanage.dump_data([datamanage.get_name(DEFAULT_THESAURUS, primary), primary])
     except Exception as e:
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
@@ -188,7 +189,7 @@ def rite():
         for hour in hours:
             lit.append({'ritus', hour})
 
-        rite = breviarium.process(DEFAULT_CONTEXT, {'tags':{'ritus'},'datum':lit}, primary, tags)
+        rite = breviarium.process(DEFAULT_THESAURUS, {'tags':{'ritus'},'datum':lit}, primary, tags)
         tags.append(primary)
 
     except Exception as e:
@@ -202,12 +203,12 @@ def rite():
                 translation = parameters['translation']
                 search = set(tags) | {translation}
                 translatedbooks = []
-                translated_context = None
+                translated_thesaurus = None
                 if translation == 'deutsch':
-                    translated_context = DEUTSCH_TRANSLATED_CONTEXT
+                    translated_thesaurus = DEUTSCH_THESAURUS
                 else:
-                    translated_context = ENGLISH_TRANSLATED_CONTEXT
-                return breviarium.search(translated_context, search)
+                    translated_thesaurus = ENGLISH_THESAURUS
+                return breviarium.search(translated_thesaurus, search)
 
             def traverse(obj):
                 if type(obj) is dict and 'tags' in obj:
@@ -226,7 +227,7 @@ def rite():
             @functools.lru_cache(maxsize=64)
             def get_chant(tagset: frozenset):
                 warnings.simplefilter('ignore')
-                return breviarium.process(CHANT_CONTEXT, tagset, None, None, permit_empty = False)
+                return breviarium.process(CHANT_THESAURUS, tagset, None, None, permit_empty = False)
 
             def traverse_chant(obj):
                 if type(obj) is dict and 'quaesitum' in obj:
@@ -250,9 +251,9 @@ def rite():
         lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
         return datamanage.dump_data({
             'rite' : rite['datum'],
-            'used-primary': [datamanage.get_name(DEFAULT_CONTEXT, primary), primary],
-            'used-commemorations': [[datamanage.get_name(DEFAULT_CONTEXT, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_CONTEXT, 'rank', a), reverse=True)],
-            'commemoratio-matutini': [datamanage.get_name(DEFAULT_CONTEXT, lectiocomm), lectiocomm] if lectiocomm else None
+            'used-primary': [datamanage.get_name(DEFAULT_THESAURUS, primary), primary],
+            'used-commemorations': [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_THESAURUS, 'rank', a), reverse=True)],
+            'commemoratio-matutini': [datamanage.get_name(DEFAULT_THESAURUS, lectiocomm), lectiocomm] if lectiocomm else None
             })
     except Exception as e:
         traceback.print_exc()
@@ -263,7 +264,7 @@ def rite():
 def kal():
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
-        return datamanage.getdisplaykalendar(DEFAULT_CONTEXT)
+        return datamanage.getdisplaykalendar(DEFAULT_THESAURUS)
 
 @get('/chant/<file:path>')
 def chant(file):

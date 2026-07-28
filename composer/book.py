@@ -4,6 +4,7 @@ import logging
 import functools
 
 from composer.util import load_data
+from pathlib import Path
 
 VALID_ENDINGS = '.gabc', '.json', '.txt'
 
@@ -37,7 +38,7 @@ class Book:
         return ret
 
     @functools.lru_cache(maxsize=1024)
-    def get_tagged(self, query):
+    def get_tagged_file(self, query):
         logging.debug(f'Loading {query} from {self.title}')
         got = load_data(query, self.src)
         if len(got) == 0:
@@ -64,7 +65,7 @@ class Book:
         ret = []
         for name, file in self.getwalk():
             if name in pilequery:
-                ret.extend(self.get_tagged(file))
+                ret.extend(self.get_tagged_file(file))
         return ret
 
     def has_untagged(self, query):
@@ -73,3 +74,13 @@ class Book:
             return cand[0]
         else:
             return None
+
+    @functools.lru_cache(maxsize=128)
+    def retrieve_untagged_file(self, src: Path) -> str:
+            # Quick sanitization to make sure nobody is up to shady business.
+            loc = src.resolve()
+            if not loc.is_relative_to(self.src.joinpath('untagged')):
+                raise ValueError('Invalid Path')
+            else:
+                with open(loc, 'r') as f:
+                    return f.read()

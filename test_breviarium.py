@@ -13,8 +13,10 @@ import diff_match_patch
 import breviarium
 import datamanage
 
+from composer import Thesaurus
+
 year = 2001
-context = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'))
+thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
 changes = dict()
 
 
@@ -46,7 +48,7 @@ def test_match(day) -> None:
 
 	for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
 		old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json', pathlib.Path(__file__).parent))))
-		new = re.sub(r'\[.+?\]', '[]', str(striptags(breviarium.generate(context, day, j))))
+		new = re.sub(r'\[.+?\]', '[]', str(striptags(breviarium.generate(thesaurus, day, j))))
 
 		diffs = dmp.diff_main(old, new)
 		dmp.diff_cleanupSemantic(diffs)

@@ -16,196 +16,197 @@ import kalendar.luna as luna
 lunardaynames = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
 
 def load_data_prioritizer(p: str, src):
-	data = json.loads(src.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
+    data = json.loads(src.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
 
-	# JSON doesn't support sets. Recursively find and replace anything that
-	# looks like a list of tags with a set of tags.
-	def recurse(obj):
-		match obj:
-			case dict():
-				return {datetime.strptime(k, '%Y-%m-%d').date() if re.search(r'^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
-			case list():
-				if all(type(x) is str for x in obj):
-					return frozenset(obj)
-				return [recurse(v) for v in obj]
-			case _:
-				return obj
+    # JSON doesn't support sets. Recursively find and replace anything that
+    # looks like a list of tags with a set of tags.
+    def recurse(obj):
+        match obj:
+            case dict():
+                return {datetime.strptime(k, '%Y-%m-%d').date() if re.search(r'^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
+            case list():
+                if all(type(x) is str for x in obj):
+                    return frozenset(obj)
+                return [recurse(v) for v in obj]
+            case _:
+                return obj
 
-	return recurse(data)
+    return recurse(data)
 
 class Job(NamedTuple):
-	rule: dict
+    rule: dict
 
 def guaranteeset(item):
-	if type(item) is set or type(item) is frozenset:
-		return item
-	else:
-		return {item}
+    if type(item) is set or type(item) is frozenset:
+        return item
+    else:
+        return {item}
 
 def apply_secondary_tabella(day, tabella):
-	rules = kalendar.datamanage.flatten(tabella)
-	day = copy.deepcopy(day)
-	queue = [Job(rule) for rule in rules]
-	queue.reverse()
-	ruleskip = [False] * len(rules)
+    rules = kalendar.datamanage.flatten(tabella)
+    day = copy.deepcopy(day)
+    queue = [Job(rule) for rule in rules]
+    queue.reverse()
+    ruleskip = [False] * len(rules)
 
-	def resolvejob(job):
+    def resolvejob(job):
 
-		if ruleskip[job.rule['number']]:
-			return
-		# If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
-		if not rules[job.rule['number'] - 1]['recheck']:
-			ruleskip[job.rule['number'] - 1] = True
+        if ruleskip[job.rule['number']]:
+            return
+        # If we have reached a rule following a rule which shouldn't be rechecked, mark it off as done
+        if not rules[job.rule['number'] - 1]['recheck']:
+            ruleskip[job.rule['number'] - 1] = True
 
-		tagsetindices = range(len(day))
-		matchset = []
-		for restriction in job.rule['restrict']:
-			search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= day[tagsetindex] and not (restriction.exclude and (restriction.exclude <= day[tagsetindex] if type(restriction.exclude) is frozenset else any(i <= day[tagsetindex] for i in restriction.exclude)))]
-			if len(search) == 0:
-				return
-			else:
-				matchset.append(search)
+        tagsetindices = range(len(day))
+        matchset = []
+        for restriction in job.rule['restrict']:
+            search = [tagsetindex for tagsetindex in tagsetindices if restriction.include <= day[tagsetindex] and not (restriction.exclude and (restriction.exclude <= day[tagsetindex] if type(restriction.exclude) is frozenset else any(i <= day[tagsetindex] for i in restriction.exclude)))]
+            if len(search) == 0:
+                return
+            else:
+                matchset.append(search)
 
-		matches = list(itertools.product(*matchset))
+        matches = list(itertools.product(*matchset))
 
-		for match in matches:
-			if len(set(match)) == len(job.rule['restrict']):
+        for match in matches:
+            if len(set(match)) == len(job.rule['restrict']):
 
-				# In instructions to add/switch around tags, the mutate response is assumed (as opposed to duplicate to make a modified copy of that tagset)
-				if not 'response' in job.rule:
-					job.rule['response'] = 'mutate'
+                # In instructions to add/switch around tags, the mutate response is assumed (as opposed to duplicate to make a modified copy of that tagset)
+                if not 'response' in job.rule:
+                    job.rule['response'] = 'mutate'
 
-				if job.rule['response'] == 'crea':
-					day.append(job.rule['adde'])
-				elif job.rule['response'] == 'combina':
-					day[match[0]] |= day[match[1]]
-					day.pop(match[1])
-					# We will restart this job from scratch when we've iterated through the more specific jobs
-					queue.append(job)
-					queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-				elif job.rule['response'] == 'errora':
-					raise RuntimeError(f'Unexpected coincidence in {day} involving {match}')
-				else:
-					target = match[job.rule['target']]
-					if job.rule['response'] == 'dele':
-						day.pop(target)
-						queue.append(job)
-					else:
-						newset = copy.deepcopy(day[target])
-						if 'remove' in job.rule:
-							newset -= guaranteeset(job.rule['remove'])
-						if 'adde' in job.rule:
-							newset |= guaranteeset(job.rule['adde'])
-						if job.rule['response'] == 'duplicate':
-							if not newset in day:
-								day.append(newset)
-						elif job.rule['response'] == 'mutate':
-							day[target] = newset
-						else:
-							raise RuntimeError(f'Unknown instruction {job.rule})')
-						if not job.rule['continue']:
-							queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
-				if job.rule['continue']:
-					return
+                if job.rule['response'] == 'crea':
+                    day.append(job.rule['adde'])
+                elif job.rule['response'] == 'combina':
+                    day[match[0]] |= day[match[1]]
+                    day.pop(match[1])
+                    # We will restart this job from scratch when we've iterated through the more specific jobs
+                    queue.append(job)
+                    queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                elif job.rule['response'] == 'errora':
+                    raise RuntimeError(f'Unexpected coincidence in {day} involving {match}')
+                else:
+                    target = match[job.rule['target']]
+                    if job.rule['response'] == 'dele':
+                        day.pop(target)
+                        queue.append(job)
+                    else:
+                        newset = copy.deepcopy(day[target])
+                        if 'remove' in job.rule:
+                            newset -= guaranteeset(job.rule['remove'])
+                        if 'adde' in job.rule:
+                            newset |= guaranteeset(job.rule['adde'])
+                        if job.rule['response'] == 'duplicate':
+                            if not newset in day:
+                                day.append(newset)
+                        elif job.rule['response'] == 'mutate':
+                            day[target] = newset
+                        else:
+                            raise RuntimeError(f'Unknown instruction {job.rule})')
+                        if not job.rule['continue']:
+                            queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                if job.rule['continue']:
+                    return
 
-	while len(queue) != 0:
-		resolvejob(queue.pop())
+    while len(queue) != 0:
+        resolvejob(queue.pop())
 
-	return day
+    return day
 
-def get_vespers(context, day, votives = []):
+def get_vespers(thesaurus, day, votives = []):
 
-	assert type(day) is not datetime
+    assert type(day) is not datetime
 
-	implicationtable = load_data_prioritizer('sequentes.json', context.books[0].src)
-	vesperalrules = []
-	for votive in votives:
-		vesperalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
-	if votives:
-		vesperalrules.append(load_data_prioritizer('tabella-vesperalis-votivarum.json', context.books[0].src))
-	
+    implicationtable = load_data_prioritizer('sequentes.json', thesaurus.books[0].src)
+    vesperalrules = []
+    for votive in votives:
+        vesperalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
+    if votives:
+        vesperalrules.append(load_data_prioritizer('tabella-vesperalis-votivarum.json', thesaurus.books[0].src))
+    
 
-	vesperalrules.extend(load_data_prioritizer('tabella-vesperalis.json', context.books[0].src))
+    vesperalrules.extend(load_data_prioritizer('tabella-vesperalis.json', thesaurus.books[0].src))
 
-	ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(context, day + timedelta(days=1))]
-	iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(context, day)]
+    ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(thesaurus, day + timedelta(days=1))]
+    iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(thesaurus, day)]
 
-	# Final product
-	vesperal = iivespers + ivespers
-	for tabella in vesperalrules:
-		vesperal = apply_secondary_tabella(vesperal, tabella)
+    # Final product
+    vesperal = iivespers + ivespers
+    for tabella in vesperalrules:
+        vesperal = apply_secondary_tabella(vesperal, tabella)
 
-	for i in vesperal:
-		for j in implicationtable:
-			if j['tags'].issubset(i):
-				i |= j['implies']
+    for i in vesperal:
+        for j in implicationtable:
+            if j['tags'].issubset(i):
+                i |= j['implies']
 
-	return [frozenset(i) for i in vesperal]
+    return [frozenset(i) for i in vesperal]
 
-def get_diurnal(context, day, votives = []):
+def get_diurnal(thesaurus, day, votives = []):
 
-	assert type(day) is not datetime
+    assert type(day) is not datetime
 
-	implicationtable = load_data_prioritizer('sequentes.json', context.books[0].src)
-	martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', context.books[0].src)
+    implicationtable = load_data_prioritizer('sequentes.json', thesaurus.books[0].src)
+    martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', thesaurus.books[0].src)
 
-	diurnalrules = []
-	for votive in votives:
-		diurnalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
-	if votives:
-		diurnalrules.append(load_data_prioritizer('tabella-diurnalis-votivarum.json', context.books[0].src))
+    diurnalrules = []
+    for votive in votives:
+        diurnalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
+    if votives:
+        diurnalrules.append(load_data_prioritizer('tabella-diurnalis-votivarum.json', thesaurus.books[0].src))
 
-	diurnalrules.extend(load_data_prioritizer('tabella-diurnalis.json', context.books[0].src))
+    diurnalrules.extend(load_data_prioritizer('tabella-diurnalis.json', thesaurus.books[0].src))
 
-	daytags = kalendar.datamanage.get_date(context, day)
-	for tabella in diurnalrules:
-		daytags = apply_secondary_tabella(daytags, tabella)
-	martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(context, day + timedelta(days=1)), martyrologyrules)
-	lunarday = luna.lunardate(day + timedelta(days=1))
-	martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
-	tags = daytags + martyrology
-	for i in tags:
-		for j in implicationtable:
-			if j['tags'].issubset(i):
-				i |= j['implies']
-	return [frozenset(i) for i in tags]
+    daytags = kalendar.datamanage.get_date(thesaurus, day)
+    for tabella in diurnalrules:
+        daytags = apply_secondary_tabella(daytags, tabella)
+    martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(thesaurus, day + timedelta(days=1)), martyrologyrules)
+    lunarday = luna.lunardate(day + timedelta(days=1))
+    martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
+    tags = daytags + martyrology
+    for i in tags:
+        for j in implicationtable:
+            if j['tags'].issubset(i):
+                i |= j['implies']
+    return [frozenset(i) for i in tags]
 
 if __name__ == '__main__':
-	import argparse
+    import argparse
 
-	parser = argparse.ArgumentParser(
-		formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-		description='Daily Vespers specification generator',
-	)
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description='Daily Vespers specification generator',
+    )
 
-	parser.add_argument(
-		'-d',
-		'--date',
-		type=str,
-		default=str(date.today()),
-		help='Date to generate',
-	)
+    parser.add_argument(
+        '-d',
+        '--date',
+        type=str,
+        default=str(date.today()),
+        help='Date to generate',
+    )
 
-	parser.add_argument(
-		'-t',
-		'--time',
-		type=str,
-		default='vesperale',
-		help='Whether to generate vesperale or diurnale'
-	)
+    parser.add_argument(
+        '-t',
+        '--time',
+        type=str,
+        default='vesperale',
+        help='Whether to generate vesperale or diurnale'
+    )
 
-	args = parser.parse_args()
+    args = parser.parse_args()
 
-	import datamanage
-	context = datamanage.LiturgicalContext(datamanage.get_book('breviarium-1888'))
+    import datamanage
+    from composer import Thesaurus
+    thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
 
-	tagsets = None
-	if args.time == 'vesperale':
-		tagsets = get_vespers(context, datetime.strptime(args.date, '%Y-%m-%d').date())
-	elif args.time == 'diurnale':
-		tagsets = get_diurnal(context, datetime.strptime(args.date, '%Y-%m-%d').date())
-	else:
-		print('Invalid option for -t')
-	if tagsets:
-		for tagset in tagsets:
-			print(tagset)
+    tagsets = None
+    if args.time == 'vesperale':
+        tagsets = get_vespers(thesaurus, datetime.strptime(args.date, '%Y-%m-%d').date())
+    elif args.time == 'diurnale':
+        tagsets = get_diurnal(thesaurus, datetime.strptime(args.date, '%Y-%m-%d').date())
+    else:
+        print('Invalid option for -t')
+    if tagsets:
+        for tagset in tagsets:
+            print(tagset)

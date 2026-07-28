@@ -21,4 +21,3 @@ def load_data(p: str, src):
                 return obj
 
     return recurse(data)
-

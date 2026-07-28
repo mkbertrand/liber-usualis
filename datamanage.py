@@ -6,10 +6,10 @@ import functools
 import os
 import copy
 import logging
-import requests
 
 import kalendar.display as display
-import psalms
+
+from composer import Book
 
 DATA_ROOT = Path(__file__).parent.joinpath('data').resolve()
 
@@ -18,6 +18,7 @@ functiontags = {'datum', 'tags'}
 
 tagselections = {'tags', 'implies', 'quaesitum'}
 
+@functools.lru_cache(maxsize=32)
 def load_data(p: str, src):
     data = json.loads(src.joinpath(p).read_text(encoding='utf-8'))
 
@@ -54,163 +55,11 @@ def dump_data(j):
 
     return json.dumps(recurse(j))
 
-@functools.lru_cache(maxsize=128)
-def retrieve_untagged_file(src: Path) -> str:
-        # Quick sanitization to make sure nobody is up to shady business.
-        loc = src.resolve()
-        if not loc.is_relative_to(DATA_ROOT):
-            raise ValueError('Invalid Path')
-        else:
-            with open(loc, 'r') as f:
-                return f.read()
-
-VALID_ENDINGS = '.gabc', '.json', '.txt'
-
-class LiturgicalBook:
-    def __init__(self, src, title):
-        self.src = src
-        self.title = title
-
-    def hascategory(self, category):
-        return self.src.joinpath(f'categoriae/{category}.json').exists()
-
-    @functools.lru_cache(maxsize=64)
-    def getcategory(self, category):
-        return load_data(f'categoriae/{category}.json', self.src)
-
-    def hasdiscrimen(self, discrimen):
-        return self.src.joinpath(f'discrimina/{discrimen}.json').exists()
-
-    @functools.lru_cache(maxsize=32)
-    def getdiscrimen(self, discrimen):
-        return load_data(f'discrimina/{discrimen}.json', self.src)
-
-    # Has the list of files in the tagged directory to prevent multiple discoveratory traversals from having to be done
-    @functools.lru_cache(maxsize=16)
-    def getwalk(self):
-        ret = []
-        for roo,dirs,files in os.walk(self.src.joinpath('tagged')):
-            for i in files:
-                if not i.endswith('.json'):
-                    continue
-                else:
-                    ret.append((i[:-5], self.src.joinpath('tagged').joinpath(roo).joinpath(i)))
-        return ret
-
-    @functools.lru_cache(maxsize=1024)
-    def get_tagged(self, query):
-        logging.debug(f'Loading {query} from {self.title}')
-        got = load_data(query, self.src)
-        if len(got) == 0:
-            return []
-
-        ret = []
-        for entry in got:
-            entrycopy = copy.deepcopy(entry)
-
-            # Expands out entries where there's more than one item. e.g. responsories won't usually have a datum, but essentially represent multiple tagged entries.
-            for key, val in entrycopy.items():
-                if key not in functiontags:
-                    tags = [j | {key, self.title} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {key, self.title}
-                    newentry = {'tags':tags, 'datum':val}
-                    ret.append(newentry)
-
-            # Adds the book title to tag lists.
-            entrycopy['tags'] = [j | {self.title} for j in entrycopy['tags']] if type(entrycopy['tags']) is list else entrycopy['tags'] | {self.title}
-            if 'datum' in entry:
-                ret.append({k: v for k, v in entrycopy.items() if k in functiontags})
-        return ret
-
-    def get_pile(self, pilequery):
-        ret = []
-        for name, file in self.getwalk():
-            if name in pilequery:
-                ret.extend(self.get_tagged(file))
-        return ret
-
-    def has_untagged(self, query):
-        cand = [self.src.joinpath('untagged' + query + ending) for ending in VALID_ENDINGS if self.src.joinpath('untagged' + query + ending).exists()]
-        if cand:
-            return cand[0]
-        else:
-            return None
-
 def get_generated_book(title):
-    return LiturgicalBook(DATA_ROOT.joinpath('generated').joinpath(title), title)
+    return Book(DATA_ROOT.joinpath('generated').joinpath(title), title)
 
 def get_book(title):
-    return LiturgicalBook(DATA_ROOT.joinpath(title), title)
-
-class LiturgicalContext:
-    def __init__(self, *books):
-        booklist = []
-        for i in books:
-            if type(i) is list:
-                booklist.extend(i)
-            else:
-                booklist.append(i)
-        self.books = booklist
-
-    def getcategory(self, category):
-        finds = [book.getcategory(category) for book in self.books if book.hascategory(category)]
-        if all(type(cat) is frozenset for cat in finds):
-            return set().union(*finds)
-        else:
-            ret = []
-            for i in finds:
-                ret.extend(i)
-            return ret
-
-    def getdiscrimen(self, discrimen):
-        finds = [book.getdiscrimen(discrimen) for book in self.books if book.hasdiscrimen(discrimen)]
-        ret = []
-        for i in finds:
-            ret.extend(i)
-        for tag in self.get_book_tags():
-            ret.append(frozenset({tag}))
-        return ret
-
-    def get_pile(self, pilequery):
-        ret = []
-        for book in self.books:
-            ret.extend(book.get_pile(pilequery))
-        return ret
-
-    def get_untagged(self, query):
-        for book in self.books:
-            try:
-                return {'tags': {query}, 'datum':psalms.get(book, query)}
-            except:
-                pass
-
-    def get_book_tags(self):
-        for book in self.books:
-            yield book.title
-
-class SecondaryLiturgicalContext(LiturgicalContext):
-    def __init__(self, books, content_books):
-        super().__init__(books)
-        self.content_books = content_books
-
-    def get_pile(self, pilequery):
-        ret = []
-        for book in self.content_books:
-            ret.extend(book.get_pile(pilequery))
-        return ret
-
-    def get_untagged(self, query):
-        if query.startswith('/psalmi'):
-            return {'tags': {query}, 'datum':psalms.get(self.content_books[0], query)}
-        else:
-            for book in self.content_books:
-                untagged = book.has_untagged(query)
-                if untagged:
-                    return {'tags': {query}, 'datum': retrieve_untagged_file(untagged)}
-            raise Exception(f'No file found for {query}')
-
-    def get_book_tags(self):
-        for book in self.content_books:
-            yield book.title
+    return Book(DATA_ROOT.joinpath(title), title)
 
 def get_name(context, tagset):
     import breviarium
