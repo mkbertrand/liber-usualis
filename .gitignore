@@ -6,7 +6,7 @@ kalendars/testdata/**
 kalendar/lunar_chart.json
 *.swp
 *.swo
-testdata/*
+composer/testdata/*
 testresults/*
 .direnv/
 data/generated/
