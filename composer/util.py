@@ -1,3 +1,5 @@
+# Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 import functools
 import json
 
@@ -21,3 +23,30 @@ def load_data(p: str, src):
                 return obj
 
     return recurse(data)
+
+# Certain hard-coded modifications to the resultants of searches for antiphons and adds some tags
+def transform_search(query, result):
+    if 'tags' in result:
+        result['quaesitum'] = query
+    if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
+        return result
+    else:
+        try:
+            if not '*' in result['datum']:
+                return result
+            if 'n' in query:
+                return result
+            elif 'intonata' in query:
+                result['datum'] = result['datum'].split('*')[0].rstrip()
+                if result['datum'][-1] not in ['.',',','?','!',':',';']:
+                    result['datum'] += '.'
+                result['tags'] |= {'intonata'}
+            elif 'repetita' in query:
+                result['datum'] = result['datum'].split('* ')[0] + result['datum'].split('* ')[1]
+                result['tags'] |= {'repetita'}
+            elif 'pars' in query:
+                result['datum'] = result['datum'].split('*')[1].lstrip()
+                result['tags'] |= {'pars'}
+            return result
+        except IndexError:
+            return result

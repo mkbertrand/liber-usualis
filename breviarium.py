@@ -4,7 +4,6 @@
 
 import copy
 import kalendar.daily_tagger
-import warnings
 
 def prettyprint(j):
     def recurse(obj):
@@ -26,102 +25,10 @@ def prettyprint(j):
                         print(' ' + i)
     recurse(j)
 
-def anysearch(query, pile):
-    for i in pile:
-        if type(i['tags']) is list:
-            for j in i['tags']:
-                if j.issubset(query):
-                    ret = copy.copy(i)
-                    ret['tags'] = j
-                    yield ret
-        elif i['tags'].issubset(query):
-            yield copy.copy(i)
-
-# Numerical rank of query tagset according to a table of tagsets. Outputs a binary number with 1 in positions where the tagset at that table position was a subset of the query.
-def discriminate(context, table: str, tags: set):
-    table = context.getdiscrimen(table)
-    val = 0
-    for i in range(0, len(table)):
-        if len(table[i]) == 1 and list(table[i])[0].startswith('/'):
-            val |= (not tags.isdisjoint(context.expand_cat(list(table[i])[0]))) << (len(table) - i - 1)
-        else:
-            include = set(filter(lambda a: a[0] != '!', table[i]))
-            exclude = {a[1:] for a in table[i] - include}
-            # Adds 1 or 0 lower on the number as the position in the table increases using binary operators. The higher the position in the table (IE the farther down in the table), the lower precedence something is.
-            val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
-    return val
-
-# Certain hard-coded modifications to the resultants of searches for antiphons and adds some tags
-def managesearch(query, result):
-    if 'tags' in result:
-        result['quaesitum'] = query
-    if not 'tags' in result or not 'antiphona' in result['tags'] or result['datum'] == '' or not type(result['datum']) is str:
-        return result
-    else:
-        try:
-            if not '*' in result['datum']:
-                return result
-            if 'n' in query:
-                return result
-            elif 'intonata' in query:
-                result['datum'] = result['datum'].split('*')[0].rstrip()
-                if result['datum'][-1] not in ['.',',','?','!',':',';']:
-                    result['datum'] += '.'
-                result['tags'] |= {'intonata'}
-            elif 'repetita' in query:
-                result['datum'] = result['datum'].split('* ')[0] + result['datum'].split('* ')[1]
-                result['tags'] |= {'repetita'}
-            elif 'pars' in query:
-                result['datum'] = result['datum'].split('*')[1].lstrip()
-                result['tags'] |= {'pars'}
-            return result
-        except IndexError:
-            return result
-
-def search(context, query, multipleresults = False, multipleresultssort = None, pilemod = []):
-    for i in query:
-        if i.startswith('/'):
-            try:
-                return context.get_untagged(i)
-            except FileNotFoundError:
-                return None
-
-    pile = context.get_pile(query) + pilemod
-    query |= set(context.get_book_tags())
-    result = list(anysearch(query, pile))
-
-    # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
-    if len(result) == 0:
-        warnings.warn(f'0 tags found for queries {list(query)} when searching {query}')
-        return None
-
-    for rule in context.getdiscrimen('general'):
-        def discrim(item):
-            tags = item['tags']
-            if len(rule) == 1 and list(rule)[0].startswith('/'):
-                return not tags.isdisjoint(context.expand_cat(list(rule)[0]))
-            else:
-                include = set(filter(lambda a: a[0] != '!', rule))
-                exclude = {a[1:] for a in rule - include}
-                return include.issubset(tags) and exclude.isdisjoint(tags)
-        resultvalues = list(map(discrim, result))
-        if any(resultvalues):
-            result = [v for i, v in enumerate(result) if resultvalues[i]]
-        if len(result) == 1:
-            return managesearch(query, result[0])
-
-    result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
-    if len(result[0]['tags']) != len(result[1]['tags']):
-        return managesearch(query, result[0])
-    elif not multipleresults:
-        raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[0]}\n{result[1]}')
-    else:
-        return list([managesearch(query, i) for i in sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort)])
-
 # Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
 def handlecommemorations(context, item, selected, alternates):
         ret = []
-        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:discriminate(context, 'rank', a), reverse=True)
+        commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:context.discriminate('rank', a), reverse=True)
         for i in commemorations:
             ret.append(process(context, {'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates))
         if len(commemorations) != 0:
@@ -173,7 +80,7 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
                         selected = alternates.pop(i)
                     else:
                         selected = alternates.pop(i) | (selected & context.expand_cat('positionales'))
-                    result = search(context, item | selected, pilemod=pilemod)
+                    result = context.search(item | selected, pilemod=pilemod)
                     break
 
         if result is None:
@@ -184,7 +91,7 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
                 selected -= set().union(*context.contradicted_cats('temporale', item | selected))
                 selected |= item & context.expand_cat('temporale')
 
-            result = search(context, item | selected, pilemod=pilemod)
+            result = context.search(item | selected, pilemod=pilemod)
 
         # If result is still None at this point, just tell user what was searched for
         if result is None and permit_empty:
@@ -202,7 +109,7 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
         for i in item['datum']:
             if type(i) is str:
                 if 'N.' in i:
-                    i = i.replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected)['datum'])
+                    i = i.replace('N. et N.', 'N.').replace('N.', context.search(item['tags'] | {'n'} | selected)['datum'])
                 ret.append(i)
             elif i is None:
                 ret.append(None)
@@ -219,7 +126,7 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
 
     # Often in the text there will be an N. replaced with the celebrated Saint's name.
     if type(item) is dict and 'N.' in item['datum']:
-        item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected)['datum'])
+        item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', context.search(item['tags'] | {'n'} | selected)['datum'])
     return item
 
 def generate(context, day, hours):

@@ -1,6 +1,23 @@
+# Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
+import copy
+import warnings
+
 import composer.psalms as psalms
+from composer.util import transform_search
 
 DEFAULT_PILE = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
+
+def anysearch(query, pile):
+    for i in pile:
+        if type(i['tags']) is list:
+            for j in i['tags']:
+                if j.issubset(query):
+                    ret = copy.copy(i)
+                    ret['tags'] = j
+                    yield ret
+        elif i['tags'].issubset(query):
+            yield copy.copy(i)
 
 class Thesaurus:
     def __init__(self, *books):
@@ -79,6 +96,61 @@ class Thesaurus:
                     yield subcat
         else:
             return RuntimeError()
+
+    # Numerical rank of query tagset according to a table of tagsets. Outputs a binary number with 1 in positions where the tagset at that table position was a subset of the query.
+    def discriminate(self, table: str, tags: set):
+        table = self.getdiscrimen(table)
+        val = 0
+        for i in range(0, len(table)):
+            if len(table[i]) == 1 and list(table[i])[0].startswith('/'):
+                val |= (not tags.isdisjoint(self.expand_cat(list(table[i])[0]))) << (len(table) - i - 1)
+            else:
+                include = set(filter(lambda a: a[0] != '!', table[i]))
+                exclude = {a[1:] for a in table[i] - include}
+                # Adds 1 or 0 lower on the number as the position in the table increases using binary operators. The higher the position in the table (IE the farther down in the table), the lower precedence something is.
+                val |= include.issubset(tags) and exclude.isdisjoint(tags) << (len(table) - i - 1)
+        return val
+
+    def search(self, query, multipleresults = False, multipleresultssort = None, pilemod = []):
+        for i in query:
+            if i.startswith('/'):
+                try:
+                    return self.get_untagged(i)
+                except FileNotFoundError:
+                    return None
+
+        pile = self.get_pile(query) + pilemod
+        query |= set(self.get_book_tags())
+        result = list(anysearch(query, pile))
+
+        # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
+        if len(result) == 0:
+            warnings.warn(f'0 tags found for queries {list(query)} when searching {query}')
+            return None
+
+        for rule in self.getdiscrimen('general'):
+            def discrim(item):
+                tags = item['tags']
+                if len(rule) == 1 and list(rule)[0].startswith('/'):
+                    return not tags.isdisjoint(self.expand_cat(list(rule)[0]))
+                else:
+                    include = set(filter(lambda a: a[0] != '!', rule))
+                    exclude = {a[1:] for a in rule - include}
+                    return include.issubset(tags) and exclude.isdisjoint(tags)
+            resultvalues = list(map(discrim, result))
+            if any(resultvalues):
+                result = [v for i, v in enumerate(result) if resultvalues[i]]
+            if len(result) == 1:
+                return transform_search(query, result[0])
+
+        result = list(sorted(result, key=lambda a: len(a['tags']), reverse=True))
+        if len(result[0]['tags']) != len(result[1]['tags']):
+            return transform_search(query, result[0])
+        elif not multipleresults:
+            raise RuntimeError(f'Multiple equiprobable results for queries {query}:\n{result[0]}\n{result[1]}')
+        else:
+            return list([transform_search(query, i) for i in sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort)])
+
 
 class ContingentThesaurus(Thesaurus):
     def __init__(self, books, content_books):

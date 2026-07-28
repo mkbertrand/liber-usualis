@@ -103,8 +103,8 @@ def daytags(vesperal = False):
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_THESAURUS, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_THESAURUS, day, votives))
 
     primary = [i for i in tags if 'primarium' in i][0]
-    commemorations = [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_THESAURUS, 'rank', a), reverse=True)]
-    omissions = [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_THESAURUS, 'rank', a), reverse=True)]
+    commemorations = [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_THESAURUS.discriminate('rank', a), reverse=True)]
+    omissions = [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_THESAURUS.discriminate('rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return datamanage.dump_data({
@@ -201,14 +201,14 @@ def rite():
         if 'translation' in parameters and parameters['translation'] != 'none':
             def gettranslation(tags):
                 translation = parameters['translation']
-                search = set(tags) | {translation}
+                query = set(tags) | {translation}
                 translatedbooks = []
                 translated_thesaurus = None
                 if translation == 'deutsch':
                     translated_thesaurus = DEUTSCH_THESAURUS
                 else:
                     translated_thesaurus = ENGLISH_THESAURUS
-                return breviarium.search(translated_thesaurus, search)
+                return translated_thesaurus.search(query)
 
             def traverse(obj):
                 if type(obj) is dict and 'tags' in obj:
@@ -252,7 +252,7 @@ def rite():
         return datamanage.dump_data({
             'rite' : rite['datum'],
             'used-primary': [datamanage.get_name(DEFAULT_THESAURUS, primary), primary],
-            'used-commemorations': [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:breviarium.discriminate(DEFAULT_THESAURUS, 'rank', a), reverse=True)],
+            'used-commemorations': [[datamanage.get_name(DEFAULT_THESAURUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_THESAURUS.discriminate('rank', a), reverse=True)],
             'commemoratio-matutini': [datamanage.get_name(DEFAULT_THESAURUS, lectiocomm), lectiocomm] if lectiocomm else None
             })
     except Exception as e:
