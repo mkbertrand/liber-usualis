@@ -24,6 +24,24 @@ def load_data(p: str, src):
 
     return recurse(data)
 
+def dump_data(j):
+
+    # JSON doesn't like sets, so turn sets back into lists for JSON encoding.
+    def recurse(obj, key=None):
+        match obj:
+            case dict():
+                return {k: recurse(v, key=k) for k, v in obj.items()}
+            case list():
+                return [recurse(v) for v in obj]
+            case set() | frozenset():
+                if all(type(x) is str for x in obj):
+                    return list(obj)
+                return [recurse(v) for v in obj]
+            case _:
+                return obj
+
+    return json.dumps(recurse(j))
+
 # Certain hard-coded modifications to the resultants of searches for antiphons and adds some tags
 def transform_search(query, result):
     if 'tags' in result:

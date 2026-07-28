@@ -41,8 +41,9 @@ if __name__ == '__main__':
     import logging
     import sys
 
-    from composer import Corpus
-    import datamanage
+    from composer import Corpus, Book
+    import composer.util
+    from pathlib import Path
 
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -117,12 +118,12 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
     # Generate kalendar
     day = datetime.strptime(args.date, '%Y-%m-%d').date()
-    context = Corpus(datamanage.get_book(args.root))
+    context = Corpus(Book(Path(__file__).parent.parent.joinpath('data').joinpath(args.root), ''))
     ret = generate(context, day, args.hour.split('+'))
 
     if args.output == sys.stdout:
         prettyprint(ret)
     else:
         # Write JSON output
-        args.output.write(datamanage.dump_data(ret) + '\n')
+        args.output.write(util.dump_data(ret) + '\n')
 

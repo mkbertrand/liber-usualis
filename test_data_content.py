@@ -5,13 +5,15 @@ import re
 
 import datamanage
 
+from composer import util
+
 files = []
-for name, file in datamanage.getwalk('breviarium-1888'):
+for name, file in datamanage.get_book('breviarium-1888').getwalk():
     files.append(file)
 
 @pytest.mark.parametrize('file', files)
 def test_data(file) -> None:
-    pile = datamanage.load_data(file)
+    pile = util.load_data('', file)
     for entry in pile:
         tags = entry['tags']
         for k, v in entry.items():
@@ -37,7 +39,7 @@ def idoes(txt):
             oes.add(f)
 
 for file in files:
-    pile = datamanage.load_data(file)
+    pile = util.load_data('', file)
     for entry in pile:
         for k, v in entry.items():
             if type(v) is list:

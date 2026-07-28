@@ -14,6 +14,7 @@ import composer.breviarium
 import datamanage
 
 from composer import Corpus
+import composer.util
 
 year = 2001
 corpus = Corpus(datamanage.get_book('breviarium-1888'))
@@ -22,7 +23,7 @@ changes = dict()
 
 dmp = diff_match_patch.diff_match_patch()
 
-# Basically a copy of datamanage#dump_data but removes tags since these are liable to change without affecting the content being tested
+# Basically a copy of util#dump_data but removes tags since these are liable to change without affecting the content being tested
 def striptags(j):
 
     def recurse(obj, key=None):
@@ -57,10 +58,10 @@ def test_match(day, update_golden) -> None:
 
         if update_golden:
             with open(f'composer/testdata/{day}-{'-'.join(j)}.json', 'w') as f:
-                f.write(datamanage.dump_data(current))
+                f.write(util.dump_data(current))
             pytest.skip('Updated file')
         else:
-            old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{'-'.join(j)}.json', pathlib.Path(__file__).parent))))
+            old = re.sub(r'\[.+?\]', '[]', str(striptags(composer.util.load_data(f'testdata/{day}-{'-'.join(j)}.json', pathlib.Path(__file__).parent))))
             new = re.sub(r'\[.+?\]', '[]', str(striptags(current)))
 
             diffs = dmp.diff_main(old, new)

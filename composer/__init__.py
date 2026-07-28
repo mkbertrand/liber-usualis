@@ -2,3 +2,4 @@
 
 from .book import Book
 from .corpus import Corpus, ContingentCorpus
+import composer.util

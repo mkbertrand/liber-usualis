@@ -20,10 +20,10 @@ import traceback
 
 import functools
 
-import breviarium
 import datamanage
 import kalendar.daily_tagger
 from composer import Corpus, ContingentCorpus
+from composer import util
 
 import version_management
 
@@ -107,7 +107,7 @@ def daytags(vesperal = False):
     omissions = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
-    return datamanage.dump_data({
+    return util.dump_data({
             'tags': tags,
             'primary': [DEFAULT_CORPUS.get_name(primary), primary],
             'commemorations': commemorations,
@@ -151,7 +151,7 @@ def title():
         hours = parameters['hour'].replace(' ', '+').split('+')
         tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
         primary = [i for i in tags if 'primarium' in i][0]
-        return datamanage.dump_data([DEFAULT_CORPUS.get_name(primary), primary])
+        return util.dump_data([DEFAULT_CORPUS.get_name(primary), primary])
     except Exception as e:
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
@@ -249,7 +249,7 @@ def rite():
     try:
         lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
         lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
-        return datamanage.dump_data({
+        return util.dump_data({
             'rite' : rite['datum'],
             'used-primary': [DEFAULT_CORPUS.get_name(primary), primary],
             'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
