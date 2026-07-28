@@ -48,6 +48,38 @@ class Thesaurus:
         for book in self.books:
             yield book.title
 
+    def expand_cat(self, category):
+        def expandopenedcat(category):
+            if type(category) is set or type(category) is frozenset:
+                ret = set()
+                for i in category:
+                    if i.startswith('/'):
+                        ret |= self.expand_cat(i[1:])
+                    else:
+                        ret.add(i)
+                return ret
+            elif type(category) is list:
+                return expandopenedcat(set().union(*category))
+            else:
+                raise RuntimeError(str(category))
+
+        def expandnamedcat(category):
+            return expandopenedcat(self.getcategory(category))
+
+        return expandnamedcat(category) if type(category) is str else expandopenedcat(category)
+
+    def contradicted_cats(self, category, tags):
+        category = self.getcategory(category)
+        if type(category) is set or type(category) is frozenset:
+            return []
+        elif type(category) is list:
+            for subcat in category:
+                subcat = self.expand_cat(subcat)
+                if sum([tag in tags for tag in subcat]) > 1:
+                    yield subcat
+        else:
+            return RuntimeError()
+
 class ContingentThesaurus(Thesaurus):
     def __init__(self, books, content_books):
         super().__init__(books)

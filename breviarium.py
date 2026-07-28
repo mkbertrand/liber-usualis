@@ -6,38 +6,6 @@ import copy
 import kalendar.daily_tagger
 import warnings
 
-def expandcat(context, category):
-    def expandopenedcat(category):
-        if type(category) is set or type(category) is frozenset:
-            ret = set()
-            for i in category:
-                if i.startswith('/'):
-                    ret |= expandcat(context, i[1:])
-                else:
-                    ret.add(i)
-            return ret
-        elif type(category) is list:
-            return expandopenedcat(set().union(*category))
-        else:
-            raise RuntimeError(str(category))
-
-    def expandnamedcat(category):
-        return expandopenedcat(context.getcategory(category))
-
-    return expandnamedcat(category) if type(category) is str else expandopenedcat(category)
-
-def contradictions(context, category, tags):
-    category = context.getcategory(category)
-    if type(category) is set or type(category) is frozenset:
-        return []
-    elif type(category) is list:
-        for subcat in category:
-            subcat = expandcat(context, subcat)
-            if sum([tag in tags for tag in subcat]) > 1:
-                yield subcat
-    else:
-        return RuntimeError()
-
 def prettyprint(j):
     def recurse(obj):
         match obj:
@@ -75,7 +43,7 @@ def discriminate(context, table: str, tags: set):
     val = 0
     for i in range(0, len(table)):
         if len(table[i]) == 1 and list(table[i])[0].startswith('/'):
-            val |= (not tags.isdisjoint(expandcat(context, list(table[i])[0]))) << (len(table) - i - 1)
+            val |= (not tags.isdisjoint(context.expand_cat(list(table[i])[0]))) << (len(table) - i - 1)
         else:
             include = set(filter(lambda a: a[0] != '!', table[i]))
             exclude = {a[1:] for a in table[i] - include}
@@ -118,7 +86,7 @@ def search(context, query, multipleresults = False, multipleresultssort = None, 
             except FileNotFoundError:
                 return None
 
-    pile = context.get_pile(pilequery) + pilemod
+    pile = context.get_pile(query) + pilemod
     query |= set(context.get_book_tags())
     result = list(anysearch(query, pile))
 
@@ -131,7 +99,7 @@ def search(context, query, multipleresults = False, multipleresultssort = None, 
         def discrim(item):
             tags = item['tags']
             if len(rule) == 1 and list(rule)[0].startswith('/'):
-                return not tags.isdisjoint(expandcat(context, list(rule)[0]))
+                return not tags.isdisjoint(context.expand_cat(list(rule)[0]))
             else:
                 include = set(filter(lambda a: a[0] != '!', rule))
                 exclude = {a[1:] for a in rule - include}
@@ -180,31 +148,31 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
     if type(item) is set or type(item) is frozenset:
         selected = copy.deepcopy(selected)
         # Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
-        contras = set().union(*contradictions(context, 'positionales', item | selected))
+        contras = set().union(*context.contradicted_cats('positionales', item | selected))
         selected -= contras
 
         result = None
         if not any('/' in i for i in item):
             for i in range(len(alternates)):
                 # Basically if the tagset is explicitly calling for some day's propers, remove the other day context to facilitate this
-                if 'occurrens' in item and item & expandcat(context, 'temporale') <= alternates[i]:
+                if 'occurrens' in item and item & context.expand_cat('temporale') <= alternates[i]:
                     item -= {'occurrens'}
                     alternates = copy.copy(alternates)
-                    alternates.append(selected - expandcat(context, 'positionales'))
-                    selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
-                    item -= expandcat(context, 'temporale')
+                    alternates.append(selected - context.expand_cat('positionales'))
+                    selected = alternates.pop(i) | (selected & context.expand_cat('positionales'))
+                    item -= context.expand_cat('temporale')
                     break
 
                 # If there is an alternate with a specific object and position, it should be imposed on this tagset even if the tagset doesn't otherwise want a different day's item
                 # Sometimes there are explicit tagsets in alternates that specify certain things (as oppo/sed to above when the data itself requests something)
-                elif item | (selected & expandcat(context, 'positionales')) <= alternates[i]:
+                elif item | (selected & context.expand_cat('positionales')) <= alternates[i]:
                     alternates = copy.copy(alternates)
                     alternates.append(selected)
 
-                    if len(list(contradictions(context, 'positionales', item | alternates[i] | selected))):
+                    if len(list(context.contradicted_cats('positionales', item | alternates[i] | selected))):
                         selected = alternates.pop(i)
                     else:
-                        selected = alternates.pop(i) | (selected & expandcat(context, 'positionales'))
+                        selected = alternates.pop(i) | (selected & context.expand_cat('positionales'))
                     result = search(context, item | selected, pilemod=pilemod)
                     break
 
@@ -212,9 +180,9 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
             # Only remove tags referring to propers and commons and whatnot if a different set is suggested
             # This is different than the occurrens system because we're not asking about something on the specific day (for example, we want the ferial readings of the day)
             # but rather we may want the readings for the Common of the Blessed Virgin which isn't specific day-to-day
-            if len(item & expandcat(context, 'temporale')) != 0:
-                selected -= set().union(*contradictions(context, 'temporale', item | selected))
-                selected |= item & expandcat(context, 'temporale')
+            if len(item & context.expand_cat('temporale')) != 0:
+                selected -= set().union(*context.contradicted_cats('temporale', item | selected))
+                selected |= item & context.expand_cat('temporale')
 
             result = search(context, item | selected, pilemod=pilemod)
 
