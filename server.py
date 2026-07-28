@@ -136,7 +136,24 @@ def rite():
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
 
     try:
-        return datamanage.rite_request(
+        rites = request.query.get('rites', None)
+        if rites:
+            ret = []
+            rites = rites.split('_')
+            for rite in rites:
+                ritesplit = rite.split('.')
+                ret.append(datamanage.rite_request(
+                    request.query.get('date'),
+                    ritesplit[0],
+                    request.query.get('votives', ''),
+                    ritesplit[2],
+                    request.query.get('privata', '') == 'privata',
+                    ritesplit[1],
+                    request.query.get('translation', 'none'),
+                    request.query.get('chant', 'false') == 'true'
+                ))
+            return util.dump_data(ret)
+        return util.dump_data(datamanage.rite_request(
             request.query.get('date'),
             request.query.get('hour'),
             request.query.get('votives', ''),
@@ -145,7 +162,7 @@ def rite():
             request.query.get('noending', 'false') == 'true',
             request.query.get('translation', 'none'),
             request.query.get('chant', 'false') == 'true'
-        )
+        ))
     except Exception as e:
         traceback.print_exc()
         print(e)

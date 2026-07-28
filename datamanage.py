@@ -120,12 +120,12 @@ def rite_request(date, rites, votives, select, private, noending, translation, c
         traverse_chant(rite['datum'])
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
-    return util.dump_data({
+    return {
         'rite' : rite['datum'],
         'used-primary': [DEFAULT_CORPUS.get_name(primary), primary],
         'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
-        })
+        }
 
 @functools.lru_cache(maxsize=1)
 def getdisplaykalendar(context):
