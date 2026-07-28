@@ -426,6 +426,10 @@
 			"response":"dele"
 		},
 		{
+			"include":["romanus","commemoratio-matutini"],
+			"response":"dele"
+		},
+		{
 			"include":["commemoratio-matutini"],
 			"response":[
 				{"include":["primarium"],"exclude":[["vigilia-epiphaniae"],["epiphania"]],"target":1,"adde":"habens-commemorationem-matutini"}
