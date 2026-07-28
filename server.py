@@ -9,6 +9,7 @@ from datetime import datetime, date
 import waitress
 import logging
 import warnings
+import traceback
 
 from logging.handlers import TimedRotatingFileHandler
 
@@ -16,23 +17,16 @@ import copy
 import argparse
 import os
 import json
-import traceback
 
 import functools
 
 import datamanage
 import kalendar.daily_tagger
-from composer import Corpus, ContingentCorpus
 from composer import util
 
 import version_management
 
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
-
-DEFAULT_CORPUS = Corpus(datamanage.get_book('breviarium-1888'), datamanage.get_book('martyrologium-1846'))
-DEUTSCH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [datamanage.get_book('breviarium-1888-deutsch')])
-ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [datamanage.get_book('breviarium-1888-english')])
-CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [datamanage.get_generated_book('liber-usualis-chant'), datamanage.get_generated_book('fcc'), datamanage.get_generated_book('liber-usualis-chant/nocturnale')])
 
 toplevelpages = [
     'index',
@@ -100,47 +94,20 @@ def daytags(vesperal = False):
 
     votives = parameters['votives'].replace(' ', '+').split('+')
 
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives))
+    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(datamanage.DEFAULT_CORPUS, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(datamanage.DEFAULT_CORPUS, day, votives))
 
     primary = [i for i in tags if 'primarium' in i][0]
-    commemorations = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
-    omissions = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
+    commemorations = [[datamanage.DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:datamanage.DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
+    omissions = [[datamanage.DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:datamanage.DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return util.dump_data({
             'tags': tags,
-            'primary': [DEFAULT_CORPUS.get_name(primary), primary],
+            'primary': [datamanage.DEFAULT_CORPUS.get_name(primary), primary],
             'commemorations': commemorations,
             'omissions': omissions,
-            'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
+            'commemoratio-matutini': [datamanage.DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
         })
-
-def adjust_tags(day, vesperal, select, votives):
-    # Votives are simply a list of which votives the user wishes to be said if applicable. Providing a votive does not force its usage on inapplicable days.
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives = votives))
-
-    # Handle the Little Office of the BVM and the Office of the Dead (temporary code)
-    if select == 'officium-parvum-bmv':
-        templ = list(filter(lambda i: 'pro-aliis-officiis' in i, tags))[0]
-        ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
-        tags = [ofp - {'omissum'} | {'primarium'}, templ | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
-    elif select == 'officium-defunctorum':
-        def votivize(i):
-            if 'officium-defunctorum' in i:
-                if 'duplex-minus' in i:
-                    return i | {'officium-defunctorum', 'primarium'}
-                else:
-                    return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
-            else:
-                return i - {'primarium', 'commemoratio', 'psalmi'}
-        tags = [votivize(i) for i in tags]
-        if not any('officium-defunctorum' in i for i in tags):
-            tags.append({'officium-defunctorum','semiduplex','primarium'})
-    elif select == 'antiphona-bmv-temporis':
-        tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
-        tags[0] |= {'primarium'}
-
-    return tags
 
 @get('/title')
 def title():
@@ -149,9 +116,9 @@ def title():
     try:
         day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
         hours = parameters['hour'].replace(' ', '+').split('+')
-        tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
+        tags = datamanage.adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
         primary = [i for i in tags if 'primarium' in i][0]
-        return util.dump_data([DEFAULT_CORPUS.get_name(primary), primary])
+        return util.dump_data([datamanage.DEFAULT_CORPUS.get_name(primary), primary])
     except Exception as e:
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
@@ -161,100 +128,24 @@ expected_version = f'{version_management.get_resource_version('/pray/js/ritegen.
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():
-    parameters = copy.deepcopy(request.query)
-
     # Ensure requests were made by an up-to-date client
     try:
-        assert parameters['version'] == expected_version
+        assert request.query.get('version', expected_version) == expected_version
     except Exception as e:
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
 
     try:
-        day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
-        hours = parameters['hour'].replace(' ', '+').split('+')
-        votives = parameters['votives'].replace(' ', '+').split('+')
-        tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
-        private = (parameters['privata'] == 'privata') if 'privata' in parameters else False
-        if private:
-            tags = [i | {'privata'} for i in tags]
-        primary = [i for i in tags if 'primarium' in i][0]
-        tags.remove(primary)
-
-        noending = (parameters['noending'] == 'true') if 'noending' in parameters else False
-        if noending and not 'antiphona-bmv' in primary:
-            tags.append({'fidelium-animae', 'hoc-omissum'} | set(hours))
-            tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'} | set(hours))
-        lit = []
-        for hour in hours:
-            lit.append({'ritus', hour})
-
-        rite = DEFAULT_CORPUS.process({'tags':{'ritus'},'datum':lit}, primary, tags)
-        tags.append(primary)
-
-    except Exception as e:
-        traceback.print_exc()
-        print(e)
-        abort(500, error500tpl('Error incognitus.'))
-
-    try:
-        if 'translation' in parameters and parameters['translation'] != 'none':
-            def gettranslation(tags):
-                translation = parameters['translation']
-                query = set(tags) | {translation}
-                translatedbooks = []
-                translated_corpus = None
-                if translation == 'deutsch':
-                    translated_corpus = DEUTSCH_CORPUS
-                else:
-                    translated_corpus = ENGLISH_CORPUS
-                return translated_corpus.search(query)
-
-            def traverse(obj):
-                if type(obj) is dict and 'tags' in obj:
-                    tran = gettranslation(obj['tags'])
-                    if tran:
-                        obj['translation'] = tran
-                if type(obj) is dict:
-                    traverse(obj['datum'])
-                elif type(obj) is list:
-                    for v in obj:
-                        traverse(v)
-            rite['datum'] = copy.deepcopy(rite['datum'])
-            traverse(rite['datum'])
-        
-        if 'chant' in parameters and parameters['chant'] == 'true':
-            @functools.lru_cache(maxsize=64)
-            def get_chant(tagset: frozenset):
-                warnings.simplefilter('ignore')
-                return CHANT_CORPUS.process(tagset, None, None, permit_empty = False)
-
-            def traverse_chant(obj):
-                if type(obj) is dict and 'quaesitum' in obj:
-                    tran = get_chant(frozenset(obj['quaesitum']))
-                    if tran:
-                        obj['cantus'] = tran
-                if type(obj) is dict:
-                    traverse_chant(obj['datum'])
-                elif type(obj) is list:
-                    for v in obj:
-                        traverse_chant(v)
-            rite['datum'] = copy.deepcopy(rite['datum'])
-            traverse_chant(rite['datum'])
-            
-    except Exception as e:
-        traceback.print_exc()
-        print(e)
-        abort(500, error500tpl('Error de interpretatione.'))
-    try:
-        lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
-        lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
-        return util.dump_data({
-            'rite' : rite['datum'],
-            'used-primary': [DEFAULT_CORPUS.get_name(primary), primary],
-            'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
-            'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
-            })
+        return datamanage.rite_request(
+            request.query.get('date'),
+            request.query.get('hour'),
+            request.query.get('votives', ''),
+            request.query.get('select', 'diei'),
+            request.query.get('privata', '') == 'privata',
+            request.query.get('noending', 'false') == 'true',
+            request.query.get('translation', 'none'),
+            request.query.get('chant', 'false') == 'true'
+        )
     except Exception as e:
         traceback.print_exc()
         print(e)
@@ -264,7 +155,7 @@ def rite():
 def kal():
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
-        return datamanage.getdisplaykalendar(DEFAULT_CORPUS)
+        return datamanage.getdisplaykalendar(datamanage.DEFAULT_CORPUS)
 
 @get('/chant/<file:path>')
 def chant(file):
