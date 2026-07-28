@@ -6,8 +6,6 @@ import copy
 import kalendar.daily_tagger
 import warnings
 
-defaultpile = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
-
 def expandcat(context, category):
     def expandopenedcat(category):
         if type(category) is set or type(category) is frozenset:
@@ -120,14 +118,13 @@ def search(context, query, multipleresults = False, multipleresultssort = None, 
             except FileNotFoundError:
                 return None
 
-    pilequery = query | defaultpile
     pile = context.get_pile(pilequery) + pilemod
     query |= set(context.get_book_tags())
     result = list(anysearch(query, pile))
 
     # If there is a non-zero amount of results discrimination is guaranteed to yield at least one result
     if len(result) == 0:
-        warnings.warn(f'0 tags found for queries {list(query)} when searching {pilequery}')
+        warnings.warn(f'0 tags found for queries {list(query)} when searching {query}')
         return None
 
     for rule in context.getdiscrimen('general'):

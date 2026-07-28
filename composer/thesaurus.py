@@ -1,5 +1,7 @@
 import composer.psalms as psalms
 
+DEFAULT_PILE = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
+
 class Thesaurus:
     def __init__(self, *books):
         booklist = []
@@ -32,7 +34,7 @@ class Thesaurus:
     def get_pile(self, pilequery):
         ret = []
         for book in self.books:
-            ret.extend(book.get_pile(pilequery))
+            ret.extend(book.get_pile(pilequery | DEFAULT_PILE))
         return ret
 
     def get_untagged(self, query):
@@ -54,7 +56,7 @@ class ContingentThesaurus(Thesaurus):
     def get_pile(self, pilequery):
         ret = []
         for book in self.content_books:
-            ret.extend(book.get_pile(pilequery))
+            ret.extend(book.get_pile(pilequery | DEFAULT_PILE))
         return ret
 
     def get_untagged(self, query):
