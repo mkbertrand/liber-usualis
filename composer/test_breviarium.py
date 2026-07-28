@@ -13,10 +13,10 @@ import diff_match_patch
 import breviarium
 import datamanage
 
-from composer import Thesaurus
+from composer import Corpus
 
 year = 2001
-thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
+corpus = Corpus(datamanage.get_book('breviarium-1888'))
 changes = dict()
 
 
@@ -53,7 +53,7 @@ def test_match(day, update_golden) -> None:
         os.makedirs('composer/testdata')
 
     for j in [['matutinum'], ['laudes', 'prima', 'tertia', 'sexta', 'nona'], ['vesperae', 'completorium']]:
-        current = breviarium.generate(thesaurus, day, j)
+        current = breviarium.generate(corpus, day, j)
 
         if update_golden:
             with open(f'composer/testdata/{day}-{'-'.join(j)}.json', 'w') as f:

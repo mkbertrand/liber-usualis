@@ -21,7 +21,7 @@ def anysearch(query, pile):
         elif i['tags'].issubset(query):
             yield copy.copy(i)
 
-class Thesaurus(Bookshelf):
+class Corpus(Bookshelf):
     def __init__(self, *books):
         booklist = []
         for i in books:
@@ -157,7 +157,7 @@ class Thesaurus(Bookshelf):
             return list([transform_search(query, i) for i in sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort)])
 
 
-class ContingentThesaurus(Thesaurus):
+class ContingentCorpus(Corpus):
     def __init__(self, books, content_books):
         super().__init__(books)
         self.content_books = content_books
