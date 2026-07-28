@@ -8,10 +8,9 @@ import random
 import pathlib
 
 from kalendar import kalendar
-import datamanage
-from composer import Thesaurus
+import kalendar.datamanage
 
-thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
+bookshelf = kalendar.datamanage.get_bookshelf('breviarium-1888')
 
 @pytest.mark.parametrize("year", random.sample(range(1582, 3000), k=10))
 def test_repeatable(year: int) -> None:
@@ -21,16 +20,16 @@ def test_repeatable(year: int) -> None:
 	TODO: Since we can't really guarantee that this test runs first, we need to do it on a fresh copy of the data files, which should live in their own object.
 	TODO: Randomness seems somewhat ugly, at least as it's done here
 	"""
-	kal = kalendar.kalendar(thesaurus, year)
-	kal3 = kalendar.kalendar(thesaurus, random.choice(range(1582, 3000)))
-	kal2 = kalendar.kalendar(thesaurus, year)
+	kal = kalendar.kalendar(bookshelf, year)
+	kal3 = kalendar.kalendar(bookshelf, random.choice(range(1582, 3000)))
+	kal2 = kalendar.kalendar(bookshelf, year)
 	for i in kal.kal.keys():
 		assert kal.kal[i] == kal2.kal[i]
 
 class TestKalendar:
 	@pytest.fixture(scope="class", params=range(1900, 2200))
 	def kal(self, request) -> (kalendar.Kalendar, int):
-		return (kalendar.kalendar(thesaurus, request.param), request.param)
+		return (kalendar.kalendar(bookshelf, request.param), request.param)
 
 	def test_structure(self, kal: kalendar.Kalendar) -> None:
 		"""Make sure the structure is correct"""

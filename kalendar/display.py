@@ -14,13 +14,13 @@ from kalendar.kalendar import SearchResult, Kalendar, threenocturnes, ranks, oct
 from kalendar.pascha import geteaster
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
-def kalendar(thesaurus) -> Kalendar:
+def kalendar(bookshelf) -> Kalendar:
 
-    adventcycle = load_data('de-adventu.json', thesaurus.books[0].src)
-    epiphanycycle = load_data('epiphania.json', thesaurus.books[0].src)
-    paschalcycle = load_data('de-paschali.json', thesaurus.books[0].src)
-    sanctoral = load_data('kalendarium.json', thesaurus.books[0].src)
-    nativitycycle = load_data('in-tempore-nativitatis.json', thesaurus.books[0].src)
+    adventcycle = load_data('de-adventu.json', bookshelf.book_srcs()[0])
+    epiphanycycle = load_data('epiphania.json', bookshelf.book_srcs()[0])
+    paschalcycle = load_data('de-paschali.json', bookshelf.book_srcs()[0])
+    sanctoral = load_data('kalendarium.json', bookshelf.book_srcs()[0])
+    nativitycycle = load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
 
     kal = Kalendar()
 
@@ -80,13 +80,13 @@ def kalendar(thesaurus) -> Kalendar:
 
     return kal
 
-def kalendar2(thesaurus) -> Kalendar:
+def kalendar2(bookshelf) -> Kalendar:
 
-    adventcycle = load_data('de-adventu.json', thesaurus.books[0].src)
-    epiphanycycle = load_data('epiphania.json', thesaurus.books[0].src)
-    paschalcycle = load_data('de-paschali.json', thesaurus.books[0].src)
-    sanctoral = load_data('kalendarium.json', thesaurus.books[0].src)
-    nativitycycle = load_data('in-tempore-nativitatis.json', thesaurus.books[0].src)
+    adventcycle = load_data('de-adventu.json', bookshelf.book_srcs()[0])
+    epiphanycycle = load_data('epiphania.json', bookshelf.book_srcs()[0])
+    paschalcycle = load_data('de-paschali.json', bookshelf.book_srcs()[0])
+    sanctoral = load_data('kalendarium.json', bookshelf.book_srcs()[0])
+    nativitycycle = load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
 
     kal = Kalendar()
 
@@ -163,7 +163,7 @@ def kalendar2(thesaurus) -> Kalendar:
             if entry.isdisjoint(noprimarium):
                 entry.add('primarium')
 
-    tabella = load_data('tabella.json', thesaurus.books[0].src)
+    tabella = load_data('tabella.json', bookshelf.book_srcs()[0])
     for i in tabella:
         apply_tabella(kal, i)
 
@@ -223,9 +223,8 @@ if __name__ == "__main__":
     if args.verbosity:
         logging.getLogger().setLevel(args.verbosity)
 
-    import datamanage
-    from composer import Thesaurus
-    thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
+    import kalendar.datamanage
+    bookshelf = kalendar.datamanage.get_bookshelf('breviarium-1888')
     # Generate kalendar
     ret = dict(sorted(kalendar(book).items()))
 

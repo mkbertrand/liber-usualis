@@ -113,22 +113,22 @@ def apply_secondary_tabella(day, tabella):
 
     return day
 
-def get_vespers(thesaurus, day, votives = []):
+def get_vespers(bookshelf, day, votives = []):
 
     assert type(day) is not datetime
 
-    implicationtable = load_data_prioritizer('sequentes.json', thesaurus.books[0].src)
+    implicationtable = load_data_prioritizer('sequentes.json', bookshelf.book_srcs()[0])
     vesperalrules = []
     for votive in votives:
         vesperalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
     if votives:
-        vesperalrules.append(load_data_prioritizer('tabella-vesperalis-votivarum.json', thesaurus.books[0].src))
+        vesperalrules.append(load_data_prioritizer('tabella-vesperalis-votivarum.json', bookshelf.book_srcs()[0]))
     
 
-    vesperalrules.extend(load_data_prioritizer('tabella-vesperalis.json', thesaurus.books[0].src))
+    vesperalrules.extend(load_data_prioritizer('tabella-vesperalis.json', bookshelf.book_srcs()[0]))
 
-    ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(thesaurus, day + timedelta(days=1))]
-    iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(thesaurus, day)]
+    ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(bookshelf, day + timedelta(days=1))]
+    iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(bookshelf, day)]
 
     # Final product
     vesperal = iivespers + ivespers
@@ -142,25 +142,25 @@ def get_vespers(thesaurus, day, votives = []):
 
     return [frozenset(i) for i in vesperal]
 
-def get_diurnal(thesaurus, day, votives = []):
+def get_diurnal(bookshelf, day, votives = []):
 
     assert type(day) is not datetime
 
-    implicationtable = load_data_prioritizer('sequentes.json', thesaurus.books[0].src)
-    martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', thesaurus.books[0].src)
+    implicationtable = load_data_prioritizer('sequentes.json', bookshelf.book_srcs()[0])
+    martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', bookshelf.book_srcs()[0])
 
     diurnalrules = []
     for votive in votives:
         diurnalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
     if votives:
-        diurnalrules.append(load_data_prioritizer('tabella-diurnalis-votivarum.json', thesaurus.books[0].src))
+        diurnalrules.append(load_data_prioritizer('tabella-diurnalis-votivarum.json', bookshelf.book_srcs()[0]))
 
-    diurnalrules.extend(load_data_prioritizer('tabella-diurnalis.json', thesaurus.books[0].src))
+    diurnalrules.extend(load_data_prioritizer('tabella-diurnalis.json', bookshelf.book_srcs()[0]))
 
-    daytags = kalendar.datamanage.get_date(thesaurus, day)
+    daytags = kalendar.datamanage.get_date(bookshelf, day)
     for tabella in diurnalrules:
         daytags = apply_secondary_tabella(daytags, tabella)
-    martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(thesaurus, day + timedelta(days=1)), martyrologyrules)
+    martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(bookshelf, day + timedelta(days=1)), martyrologyrules)
     lunarday = luna.lunardate(day + timedelta(days=1))
     martyrology[0].add('luna-' + lunardaynames[lunarday - 1])
     tags = daytags + martyrology
@@ -196,15 +196,13 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    import datamanage
-    from composer import Thesaurus
-    thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
+    bookshelf = kalendar.datamanage.get_bookshelf('breviarium-1888')
 
     tagsets = None
     if args.time == 'vesperale':
-        tagsets = get_vespers(thesaurus, datetime.strptime(args.date, '%Y-%m-%d').date())
+        tagsets = get_vespers(bookshelf, datetime.strptime(args.date, '%Y-%m-%d').date())
     elif args.time == 'diurnale':
-        tagsets = get_diurnal(thesaurus, datetime.strptime(args.date, '%Y-%m-%d').date())
+        tagsets = get_diurnal(bookshelf, datetime.strptime(args.date, '%Y-%m-%d').date())
     else:
         print('Invalid option for -t')
     if tagsets:

@@ -3,6 +3,8 @@
 import copy
 import warnings
 
+from bookshelf import Bookshelf
+
 import composer.psalms as psalms
 from composer.util import transform_search
 
@@ -19,7 +21,7 @@ def anysearch(query, pile):
         elif i['tags'].issubset(query):
             yield copy.copy(i)
 
-class Thesaurus:
+class Thesaurus(Bookshelf):
     def __init__(self, *books):
         booklist = []
         for i in books:
@@ -28,6 +30,9 @@ class Thesaurus:
             else:
                 booklist.append(i)
         self.books = booklist
+
+    def book_srcs(self):
+        return [book.src for book in self.books]
 
     def getcategory(self, category):
         finds = [book.getcategory(category) for book in self.books if book.hascategory(category)]

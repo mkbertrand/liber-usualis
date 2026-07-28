@@ -12,7 +12,7 @@ from typing import NamedTuple, Optional, Self, Set
 import itertools
 import pathlib
 
-from kalendar.datamanage import flatten
+from kalendar.datamanage import flatten, get_bookshelf
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
@@ -292,16 +292,16 @@ def apply_tabella(kal, tabella):
     while len(queue) != 0:
         resolvejob(queue.pop())
 
-def kalendar(thesaurus: pathlib.Path, year: int) -> Kalendar:
+def kalendar(bookshelf: pathlib.Path, year: int) -> Kalendar:
 
-    adventcycle = load_data('de-adventu.json', thesaurus.books[0].src)
-    nativitycycle = load_data('in-tempore-nativitatis.json', thesaurus.books[0].src)
-    epiphanycycle = load_data('epiphania.json', thesaurus.books[0].src)
-    paschalcycle = load_data('de-paschali.json', thesaurus.books[0].src)
-    autumnalcycle = load_data('autumnalis.json', thesaurus.books[0].src)
-    movables = load_data('motabiles.json', thesaurus.books[0].src)
-    kalendarium = load_data('kalendarium.json', thesaurus.books[0].src)
-    tabella = load_data('tabella.json', thesaurus.books[0].src)
+    adventcycle = load_data('de-adventu.json', bookshelf.book_srcs()[0])
+    nativitycycle = load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
+    epiphanycycle = load_data('epiphania.json', bookshelf.book_srcs()[0])
+    paschalcycle = load_data('de-paschali.json', bookshelf.book_srcs()[0])
+    autumnalcycle = load_data('autumnalis.json', bookshelf.book_srcs()[0])
+    movables = load_data('motabiles.json', bookshelf.book_srcs()[0])
+    kalendarium = load_data('kalendarium.json', bookshelf.book_srcs()[0])
+    tabella = load_data('tabella.json', bookshelf.book_srcs()[0])
 
     kal = Kalendar()
 
@@ -539,11 +539,9 @@ if __name__ == "__main__":
     if args.verbosity:
         logging.getLogger().setLevel(args.verbosity)
 
-    import datamanage
-    from composer import Thesaurus
-    thesaurus = Thesaurus(datamanage.get_book('breviarium-1888'))
+    bookshelf = get_bookshelf('breviarium-1888')
     # Generate kalendar
-    ret = dict(sorted(kalendar(thesaurus, args.year).items()))
+    ret = dict(sorted(kalendar(bookshelf, args.year).items()))
 
     # Convert datestrings to strings and sets into lists
     ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
