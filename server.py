@@ -103,16 +103,16 @@ def daytags(vesperal = False):
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives))
 
     primary = [i for i in tags if 'primarium' in i][0]
-    commemorations = [[datamanage.get_name(DEFAULT_CORPUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
-    omissions = [[datamanage.get_name(DEFAULT_CORPUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
+    commemorations = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
+    omissions = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return datamanage.dump_data({
             'tags': tags,
-            'primary': [datamanage.get_name(DEFAULT_CORPUS, primary), primary],
+            'primary': [DEFAULT_CORPUS.get_name(primary), primary],
             'commemorations': commemorations,
             'omissions': omissions,
-            'commemoratio-matutini': [datamanage.get_name(DEFAULT_CORPUS, lectiocomm), lectiocomm] if lectiocomm else None
+            'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
         })
 
 def adjust_tags(day, vesperal, select, votives):
@@ -151,7 +151,7 @@ def title():
         hours = parameters['hour'].replace(' ', '+').split('+')
         tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
         primary = [i for i in tags if 'primarium' in i][0]
-        return datamanage.dump_data([datamanage.get_name(DEFAULT_CORPUS, primary), primary])
+        return datamanage.dump_data([DEFAULT_CORPUS.get_name(primary), primary])
     except Exception as e:
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
@@ -189,7 +189,7 @@ def rite():
         for hour in hours:
             lit.append({'ritus', hour})
 
-        rite = breviarium.process(DEFAULT_CORPUS, {'tags':{'ritus'},'datum':lit}, primary, tags)
+        rite = DEFAULT_CORPUS.process({'tags':{'ritus'},'datum':lit}, primary, tags)
         tags.append(primary)
 
     except Exception as e:
@@ -227,7 +227,7 @@ def rite():
             @functools.lru_cache(maxsize=64)
             def get_chant(tagset: frozenset):
                 warnings.simplefilter('ignore')
-                return breviarium.process(CHANT_CORPUS, tagset, None, None, permit_empty = False)
+                return CHANT_CORPUS.process(tagset, None, None, permit_empty = False)
 
             def traverse_chant(obj):
                 if type(obj) is dict and 'quaesitum' in obj:
@@ -251,9 +251,9 @@ def rite():
         lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
         return datamanage.dump_data({
             'rite' : rite['datum'],
-            'used-primary': [datamanage.get_name(DEFAULT_CORPUS, primary), primary],
-            'used-commemorations': [[datamanage.get_name(DEFAULT_CORPUS, tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
-            'commemoratio-matutini': [datamanage.get_name(DEFAULT_CORPUS, lectiocomm), lectiocomm] if lectiocomm else None
+            'used-primary': [DEFAULT_CORPUS.get_name(primary), primary],
+            'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
+            'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
             })
     except Exception as e:
         traceback.print_exc()

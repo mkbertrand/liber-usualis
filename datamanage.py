@@ -61,14 +61,6 @@ def get_generated_book(title):
 def get_book(title):
     return Book(DATA_ROOT.joinpath(title), title)
 
-def get_name(context, tagset):
-    import breviarium
-    resp = breviarium.process(context, {'nomen'}, tagset, [])
-    name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
-    if type(name) is list:
-        name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
-    return name
-
 @functools.lru_cache(maxsize=1)
 def getdisplaykalendar(context):
     ret = dict(sorted(display.kalendar(context).items()))
@@ -78,8 +70,8 @@ def getdisplaykalendar(context):
     for entry in kalendar:
         if type(entry['tags']) is frozenset:
             entry['tags'] = [entry['tags']]
-        entry['names'] = [get_name(context, tagset) for tagset in entry['tags']]
+        entry['names'] = [context.get_name(tagset) for tagset in entry['tags']]
         if any(i in entry['occurrence'] for i in ['feria-ii', 'feria-iii', 'feria-iv', 'feria-v', 'feria-vi', 'sabbatum']):
             entry['occurrence'] |= {'feria'}
-        entry['occurrence-name'] = get_name(context, entry['occurrence'])
+        entry['occurrence-name'] = context.get_name(entry['occurrence'])
     return dump_data({'skeleton': ret, 'kalendar': kalendar})

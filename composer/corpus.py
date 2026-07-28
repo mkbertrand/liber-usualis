@@ -156,6 +156,116 @@ class Corpus(Bookshelf):
         else:
             return list([transform_search(query, i) for i in sorted(filter(lambda a : len(a['tags']) == len(result[-1]['tags']), result), multipleresultssort)])
 
+# Special commemoration handling. Commemorations are hard because they rely on eachother and differ in number by day.
+    def handlecommemorations(self, item, selected, alternates):
+            ret = []
+            commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:self.discriminate('rank', a), reverse=True)
+            for i in commemorations:
+                ret.append(self.process({'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates))
+            if len(commemorations) != 0:
+                ret.append(self.process({'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates))
+            return {'tags':{'commemorationes'}, 'datum':ret}
+
+    def process(self, item, selected, alternates, pilemod = [], permit_empty = True):
+        if item is None:
+            return 'Absens'
+        if selected is None:
+            selected = frozenset()
+        if alternates is None:
+            alternates = []
+
+        if 'commemorationes' in item:
+            return self.handlecommemorations(item, selected, alternates)
+
+        if type(item) is dict and 'quaere' in item:
+            item['quaere'] = frozenset(item['quaere'])
+            pilemod = [{'tags': item['quaere'], 'datum': item['datum']}]
+            item = item['quaere']
+
+        # An entry within an item that is a tagset is calling to search further for sub-items.
+        if type(item) is set or type(item) is frozenset:
+            selected = copy.deepcopy(selected)
+            # Only remove positional tags when they are contradicted (for example, when the nona reading is requested by officium-capituli, remove officium-capituli)
+            contras = set().union(*self.contradicted_cats('positionales', item | selected))
+            selected -= contras
+
+            result = None
+            if not any('/' in i for i in item):
+                for i in range(len(alternates)):
+                    # Basically if the tagset is explicitly calling for some day's propers, remove the other day self to facilitate this
+                    if 'occurrens' in item and item & self.expand_cat('temporale') <= alternates[i]:
+                        item -= {'occurrens'}
+                        alternates = copy.copy(alternates)
+                        alternates.append(selected - self.expand_cat('positionales'))
+                        selected = alternates.pop(i) | (selected & self.expand_cat('positionales'))
+                        item -= self.expand_cat('temporale')
+                        break
+
+                    # If there is an alternate with a specific object and position, it should be imposed on this tagset even if the tagset doesn't otherwise want a different day's item
+                    # Sometimes there are explicit tagsets in alternates that specify certain things (as oppo/sed to above when the data itself requests something)
+                    elif item | (selected & self.expand_cat('positionales')) <= alternates[i]:
+                        alternates = copy.copy(alternates)
+                        alternates.append(selected)
+
+                        if len(list(self.contradicted_cats('positionales', item | alternates[i] | selected))):
+                            selected = alternates.pop(i)
+                        else:
+                            selected = alternates.pop(i) | (selected & self.expand_cat('positionales'))
+                        result = self.search(item | selected, pilemod=pilemod)
+                        break
+
+            if result is None:
+                # Only remove tags referring to propers and commons and whatnot if a different set is suggested
+                # This is different than the occurrens system because we're not asking about something on the specific day (for example, we want the ferial readings of the day)
+                # but rather we may want the readings for the Common of the Blessed Virgin which isn't specific day-to-day
+                if len(item & self.expand_cat('temporale')) != 0:
+                    selected -= set().union(*self.contradicted_cats('temporale', item | selected))
+                    selected |= item & self.expand_cat('temporale')
+
+                result = self.search(item | selected, pilemod=pilemod)
+
+            # If result is still None at this point, just tell user what was searched for
+            if result is None and permit_empty:
+                # It has to be sorted for testing purposes
+                return str(sorted(list(item | selected)))
+            elif result is None:
+                return None
+            selected |= item
+            response = self.process(result, selected, alternates)
+
+            return response
+
+        elif type(item['datum']) is list:
+            ret = []
+            for i in item['datum']:
+                if type(i) is str:
+                    if 'N.' in i:
+                        i = i.replace('N. et N.', 'N.').replace('N.', self.search(item['tags'] | {'n'} | selected)['datum'])
+                    ret.append(i)
+                elif i is None:
+                    ret.append(None)
+                else:
+                    iprocessed = self.process(i, selected, alternates)
+                    if iprocessed is None:
+                        ret.append('Absens')
+                    elif type(iprocessed) is list:
+                        ret.extend(iprocessed)
+                    else:
+                        ret.append(iprocessed)
+            item['datum'] = ret if len(ret) != 1 else ret[0]
+            return item
+
+        # Often in the text there will be an N. replaced with the celebrated Saint's name.
+        if type(item) is dict and 'N.' in item['datum']:
+            item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', self.search(item['tags'] | {'n'} | selected)['datum'])
+        return item
+
+    def get_name(self, tagset):
+        resp = self.process({'nomen'}, tagset, [])
+        name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
+        if type(name) is list:
+            name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
+        return name
 
 class ContingentCorpus(Corpus):
     def __init__(self, books, content_books):
