@@ -33,7 +33,7 @@ def generate(context, day, hours):
     lit = []
     for hour in hours:
         lit.append({'ritus', hour})
-    return process(context, {'tags':{'ritus'},'datum':lit}, primary, tags)
+    return context.process({'tags':{'ritus'},'datum':lit}, primary, tags)
 
 if __name__ == '__main__':
     import argparse
@@ -41,6 +41,7 @@ if __name__ == '__main__':
     import logging
     import sys
 
+    from composer import Corpus
     import datamanage
 
     parser = argparse.ArgumentParser(
@@ -88,19 +89,19 @@ if __name__ == '__main__':
 
     match datetime.now().hour:
         case 0 | 2 | 3 | 4 | 5:
-            defaulthour = 'ante-officium+matutinum+laudes+post-officium'
+            defaulthour = 'aperi-domine+matutinum+laudes+sacrosanctae'
         case 6 | 7:
-            defaulthour = 'ante-officium+prima+post-officium'
+            defaulthour = 'aperi-domine+prima+sacrosanctae'
         case 8 | 9 | 10:
-            defaulthour = 'ante-officium+tertia+post-officium'
+            defaulthour = 'aperi-domine+tertia+sacrosanctae'
         case 11 | 12 | 13:
-            defaulthour = 'ante-officium+sexta+post-officium'
+            defaulthour = 'aperi-domine+sexta+sacrosanctae'
         case 14 | 15:
-            defaulthour = 'ante-officium+nona+post-officium'
+            defaulthour = 'aperi-domine+nona+sacrosanctae'
         case 16 | 17 | 18 | 19:
-            defaulthour = 'ante-officium+vesperae+post-officium'
+            defaulthour = 'aperi-domine+vesperae+sacrosanctae'
         case 20 | 21 | 22 | 23:
-            defaulthour = 'ante-officium+completorium+post-officium'
+            defaulthour = 'aperi-domine+completorium+sacrosanctae'
 
     parser.add_argument(
         '-hr',
@@ -116,7 +117,7 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
     # Generate kalendar
     day = datetime.strptime(args.date, '%Y-%m-%d').date()
-    context = datamanage.get_context(args.root)
+    context = Corpus(datamanage.get_book(args.root))
     ret = generate(context, day, args.hour.split('+'))
 
     if args.output == sys.stdout:
