@@ -222,9 +222,7 @@ def process(context, item, selected, alternates, pilemod = [], permit_empty = Tr
         item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', search(context, item['tags'] | {'n'} | selected)['datum'])
     return item
 
-def generate(context, day, hour: str):
-    hours = hour.split('+')
-    assert set(hours).isdisjoint({'vesperae', 'completorium'}) or set(hours).isdisjoint({'matutinum', 'laudes', 'tertia', 'sexta', 'nona'})
+def generate(context, day, hours):
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(context, day))
     primary = list(filter(lambda i: 'primarium' in i, tags))[0]
     tags.remove(primary)
@@ -316,7 +314,7 @@ if __name__ == '__main__':
     # Generate kalendar
     day = datetime.strptime(args.date, '%Y-%m-%d').date()
     context = datamanage.get_context(args.root)
-    ret = generate(context, day, args.hour)
+    ret = generate(context, day, args.hour.split('+'))
 
     if args.output == sys.stdout:
         prettyprint(ret)

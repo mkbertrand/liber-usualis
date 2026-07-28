@@ -52,15 +52,15 @@ def test_match(day, update_golden) -> None:
     if not os.path.isdir('composer/testdata'):
         os.makedirs('composer/testdata')
 
-    for j in ['matutinum', 'laudes+prima+tertia+sexta+nona', 'vesperae+completorium']:
+    for j in [['matutinum'], ['laudes', 'prima', 'tertia', 'sexta', 'nona'], ['vesperae', 'completorium']]:
         current = breviarium.generate(thesaurus, day, j)
 
         if update_golden:
-            with open(f'composer/testdata/{day}-{j.replace("+", "-")}.json', 'w') as f:
+            with open(f'composer/testdata/{day}-{'-'.join(j)}.json', 'w') as f:
                 f.write(datamanage.dump_data(current))
             pytest.skip('Updated file')
         else:
-            old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{j.replace("+", "-")}.json', pathlib.Path(__file__).parent))))
+            old = re.sub(r'\[.+?\]', '[]', str(striptags(datamanage.load_data(f'testdata/{day}-{'-'.join(j)}.json', pathlib.Path(__file__).parent))))
             new = re.sub(r'\[.+?\]', '[]', str(striptags(current)))
 
             diffs = dmp.diff_main(old, new)
@@ -70,11 +70,9 @@ def test_match(day, update_golden) -> None:
             changelog = ''
             for (op, item) in diffs:
                 if op == dmp.DIFF_DELETE:
-                    # print(f'- {item.replace('\\', '')}\n')
                     changelog += f'- {item.replace('\\', '')}\n\n'
                     change = True
                 elif op == dmp.DIFF_INSERT:
-                    # print(f'+ {item.replace('\\', '')}')
                     changelog += f'+ {item.replace('\\', '')}\n'
                     change = True
                 # Don't print if there's an equal section since this is superfluous
@@ -82,11 +80,11 @@ def test_match(day, update_golden) -> None:
             if change:
                 print(changelog)
                 if hash(changelog) in changes:
-                    print(f'{day}-{j.replace("+", "-")} has the same changes as {changes[hash(changelog)]}')
+                    print(f'{day}-{'-'.join(j)} has the same changes as {changes[hash(changelog)]}')
                 else:
-                    changes[hash(changelog)] = f'{day}-{j.replace("+", "-")}'
+                    changes[hash(changelog)] = f'{day}-{'-'.join(j)}'
                     print(changes)
-                    with open(f'testresults/{day}-{j.replace("+", "-")}.txt', 'w') as fileout:
+                    with open(f'testresults/{day}-{'-'.join(j)}.txt', 'w') as fileout:
                         fileout.write(changelog)
 
             assert not change
