@@ -65,10 +65,6 @@ def bouncetolocale(page):
     finally:
         return redirect(f'/{[loc for loc in locales if loc in version_management.definedlocales][0]}/{page}')
 
-@get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:pray>/<date>/<time>')
-def pray(preferredlocale, page, date, time):
-    return localpage(preferredlocale, page)
-
 @get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
     locales = [preferredlocale]
@@ -85,6 +81,10 @@ def localpage(preferredlocale, page):
         title = titles[page] if page in titles else ''
 
         return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']))
+
+@get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/pray/<date>/<time>')
+def pray(preferredlocale, date, time):
+    return localpage(preferredlocale, 'pray')
 
 def error500tpl(error):
     return template('web/resources/error500.tpl', error=error)

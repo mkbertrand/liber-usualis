@@ -71,9 +71,11 @@
 		}
 		return this.rite;
 	},
-	// Sets this.calendarDate with a local date which is adjusted to UTC.
+	// Sets this.calendarDate with a local date which is adjusted to UTC. Takes a string date as an argument.
 	setCalendarDate(calendarDate) {
 		this.calendarDate = new Date(new Date(calendarDate + new Date().toISOString().substring(10)).getTime() + this.calendarDate.getTimezoneOffset() * 60000);
+    console.log(`/pray/${calendarDate}/vesperae`);
+    history.pushState('', '', `/{{locale}}/pray/${calendarDate}/${this.hour}`);
 	},
 	// Returns the date (yyyy-mm-dd) adjusted for timezone.
 	getCalendarDate(calendarDate) {
@@ -103,6 +105,7 @@
 	setOccasion(id) {
 		oldTime = getTime(this.hour);
 		this.hour = id;
+    history.pushState('', '', `/{{locale}}/pray/${this.getCalendarDate(this.calendarDate)}/${this.hour}`);
 		if (oldTime != getTime(this.hour)) {
 			this.updateLiturgicalDay();
 		} else {
@@ -140,7 +143,7 @@
 		parameters.votives = {'de-sanctis-angelis': false, 'de-sanctis-apostolis': false, 'de-joseph': false, 'de-eucharistiae-sacramento': false, 'de-passione': false, 'de-immaculata-conceptione': false};
 	}
 	% if not mobile:
-	doPanelSize();
+    doPanelSize();
 	% end
 	parameters.locale = '{{locale}}';
 	if (parameters.locale == 'la') {
@@ -152,8 +155,7 @@
   
   var urlGovernedOccasion = window.location.href.match(/pray\/(.+?)\/(.+)$/);
   if (urlGovernedOccasion && urlGovernedOccasion.length == 3) {
-		calendarDate = new Date();
-    setCalendarDate(urlGovernedOccasion[1]);
+		calendarDate = new Date(new Date(urlGovernedOccasion[1] + new Date().toISOString().substring(10)).getTime() + new Date().getTimezoneOffset() * 60000);
     hour = urlGovernedOccasion[2];
   } else if (canIncrementTo()) {
 		calendarDate = nextOccasion[0];
@@ -166,6 +168,7 @@
 	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateLiturgicalDay()}});
 	$watch('parameters', (parameters, oldParameters) => {
 		hour = resolveParameters(oldParameters).ambit.slideAmbitOccasion(resolveParameters(parameters).ambit, hour);
+    history.pushState('', '', `/{{locale}}/pray/${getCalendarDate(calendarDate)}/${hour}`);
 		updateRite();
 		nextOccasion = null;
 	});
@@ -212,10 +215,10 @@
 							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 								<div id="date-selector-container">
-									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-left.svg" /></button>
+									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); history.pushState('', '', `/{{locale}}/pray/${getCalendarDate(calendarDate)}/${hour}`); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-left.svg" /></button>
 									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate(calendarDate)">
 									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters, version)" @click="setCalendarDate(search)"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-right.svg" /></button>
+									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); history.pushState('', '', `/{{locale}}/pray/${getCalendarDate(calendarDate)}/${hour}`); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
 								<div id="rite-selector-container">
 									<template x-for="occasion in resolveParameters(parameters).ambit.occasions">
