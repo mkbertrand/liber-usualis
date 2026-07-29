@@ -149,8 +149,13 @@
 	if (nextOccasion && typeof nextOccasion[0] === 'string') {
 		nextOccasion[0] = new Date(nextOccasion[0]);
 	}
-
-	if (canIncrementTo()) {
+  
+  var urlGovernedOccasion = window.location.href.match(/pray\/(.+?)\/(.+)$/);
+  if (urlGovernedOccasion && urlGovernedOccasion.length == 3) {
+		calendarDate = new Date();
+    setCalendarDate(urlGovernedOccasion[1]);
+    hour = urlGovernedOccasion[2];
+  } else if (canIncrementTo()) {
 		calendarDate = nextOccasion[0];
 		hour = nextOccasion[1];
 	} else {

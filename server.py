@@ -65,6 +65,10 @@ def bouncetolocale(page):
     finally:
         return redirect(f'/{[loc for loc in locales if loc in version_management.definedlocales][0]}/{page}')
 
+@get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:pray>/<date>/<time>')
+def pray(preferredlocale, page, date, time):
+    return localpage(preferredlocale, page)
+
 @get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
     locales = [preferredlocale]
