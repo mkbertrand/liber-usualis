@@ -149,6 +149,14 @@
 	padding: 0;
 }
 
+.date-header {
+  font-family: "Old Standard TT", times;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: -14px;
+}
+
 .large-title {
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;

@@ -386,7 +386,7 @@ async function getRite(calendarDate, occasion, parameters, version) {
 			&votives=${resolvedParameters.votives}
 		`);
 		let titleJSON = await response.json();
-		let ret = riteTitle(titleJSON[0], titleJSON[1], 'large');
+		let ret = dateHeader(calendarDate) + riteTitle(titleJSON[0], titleJSON[1], 'large');
 		let previousTitle = titleJSON[0];
 		let liturgicalDay = await getLiturgicalDay(calendarDate, getTime(occasion), parameters);
 		let rites = resolvedParameters.ambit.riteList(liturgicalDay.tags, occasion);

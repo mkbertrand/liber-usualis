@@ -3,6 +3,12 @@
 invitatoria = {};
 fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json?v=2').then(data => data.json()).then(json => invitatoria = json);
 
+const MONTHS = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maji', 'Junii', 'Julii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris'];
+function dateHeader(date) {
+  date = date.split('-');
+  return `<h4 class="date-header">Die ${parseInt(date[2])} ${MONTHS[(parseInt(date[1]) - 1) % 12]} ${date[0]}.</h4>`;
+}
+
 function riteTitle(title, tags, size = 'large') {
 	if (size == 'small') {
 		return `<h1 class="small-title">${title}</h1>`;
