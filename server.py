@@ -30,7 +30,6 @@ LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
 toplevelpages = [
     'index',
-    'breviarium',
     'de-anno',
     'kalendar',
     'rubricae',
@@ -45,7 +44,7 @@ toplevelpages = [
 def findmytemplate(page):
     if page == 'pray':
         return 'web/templates/pray.tpl'
-    elif page in ['index', 'breviarium']:
+    elif page in ['index']:
         return 'web/templates/menu.tpl'
     elif page in ['de-anno', 'kalendar', 'rubricae', 'resources']:
         return 'web/templates/latin-generic.tpl'
