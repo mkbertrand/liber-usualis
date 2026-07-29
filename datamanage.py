@@ -73,55 +73,23 @@ def rite_request(date, rites, votives, select, private, noending, translation, c
     for hour in hours:
         lit.append({'ritus', hour})
 
-    rite = DEFAULT_CORPUS.process({'tags':{'ritus'},'datum':lit}, primary, tags)
+    rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':lit}, primary, tags)
     tags.append(primary)
 
     if translation != 'none':
-        def gettranslation(tags):
-            query = set(tags) | {translation}
-            translatedbooks = []
-            translated_corpus = None
-            if translation == 'deutsch':
-                translated_corpus = DEUTSCH_CORPUS
-            else:
-                translated_corpus = ENGLISH_CORPUS
-            return translated_corpus.search(query)
-
-        def traverse(obj):
-            if type(obj) is dict and 'tags' in obj:
-                tran = gettranslation(obj['tags'])
-                if tran:
-                    obj['translation'] = tran
-            if type(obj) is dict:
-                traverse(obj['datum'])
-            elif type(obj) is list:
-                for v in obj:
-                    traverse(v)
-        rite['datum'] = copy.deepcopy(rite['datum'])
-        traverse(rite['datum'])
+        translated_corpus = None
+        if translation == 'deutsch':
+            translated_corpus = DEUTSCH_CORPUS
+        else:
+            translated_corpus = ENGLISH_CORPUS
+        rite = rite.superimpose(translated_corpus, 'translation')
     
     if chant:
-        @functools.lru_cache(maxsize=64)
-        def get_chant(tagset: frozenset):
-            warnings.simplefilter('ignore')
-            return CHANT_CORPUS.process(tagset, None, None, permit_empty = False)
-
-        def traverse_chant(obj):
-            if type(obj) is dict and 'quaesitum' in obj:
-                tran = get_chant(frozenset(obj['quaesitum']))
-                if tran:
-                    obj['cantus'] = tran
-            if type(obj) is dict:
-                traverse_chant(obj['datum'])
-            elif type(obj) is list:
-                for v in obj:
-                    traverse_chant(v)
-        rite['datum'] = copy.deepcopy(rite['datum'])
-        traverse_chant(rite['datum'])
+        rite = rite.superimpose(CHANT_CORPUS, 'cantus')
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return {
-        'rite' : rite['datum'],
+        'rite' : rite.rite['datum'],
         'used-primary': [DEFAULT_CORPUS.get_name(primary), primary],
         'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None

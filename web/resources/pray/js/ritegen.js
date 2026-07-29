@@ -537,9 +537,9 @@ function renderRite(data, options) {
         // Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
         data.datum = data.datum.replace(/^\[.+?]\n\d+\s/, '').split('\n');
         if (translated && options['side-by-side']) {
-          translated = formatPsalm(translated).replace(/^\[.+?]\n\d+\s/, '').split('\n');
+          translated = formatPsalm(unpack(translated)).replace(/^\[.+?]\n\d+\s/, '').split('\n');
         } else if (translated) {
-          translated = translated.replaceAll(/\[.+?]/g, '').split('\n').slice(1);
+          translated = unpack(translated).replaceAll(/\[.+?]/g, '').split('\n').slice(1);
         }
         if (parentTags.includes('preces')) {
           data.tags.push('textus-psalmi-precibus');

@@ -2,4 +2,5 @@
 
 from .book import Book
 from .corpus import Corpus, ContingentCorpus
+from .rite import Rite
 import composer.util

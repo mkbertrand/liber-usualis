@@ -7,6 +7,7 @@ from bookshelf import Bookshelf
 
 import composer.psalms as psalms
 from composer.util import transform_search
+from composer.rite import Rite
 
 DEFAULT_PILE = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
 
@@ -62,7 +63,7 @@ class Corpus(Bookshelf):
     def get_untagged(self, query):
         for book in self.books:
             try:
-                return {'tags': {query}, 'datum':psalms.get(book, query)}
+                return psalms.get(book, query)
             except:
                 pass
 
@@ -120,7 +121,7 @@ class Corpus(Bookshelf):
         for i in query:
             if i.startswith('/'):
                 try:
-                    return self.get_untagged(i)
+                    return {'tags': {i}, 'datum':self.get_untagged(i), 'quaesitum': query}
                 except FileNotFoundError:
                     return None
 
@@ -260,6 +261,9 @@ class Corpus(Bookshelf):
             item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', self.search(item['tags'] | {'n'} | selected)['datum'])
         return item
 
+    def compose(self, query, selected, alternates) -> Rite:
+        return Rite(self.process(query, selected, alternates))
+
     def get_name(self, tagset):
         resp = self.process({'nomen'}, tagset, [])
         name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
@@ -285,7 +289,7 @@ class ContingentCorpus(Corpus):
             for book in self.content_books:
                 untagged = book.has_untagged(query)
                 if untagged:
-                    return {'tags': {query}, 'datum': book.retrieve_untagged_file(untagged)}
+                    return book.retrieve_untagged_file(untagged)
             raise Exception(f'No file found for {query}')
 
     def get_book_tags(self):
