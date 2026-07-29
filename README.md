@@ -26,9 +26,11 @@ To run the server (by default on localhost:8080, the server is run as follows:
 
 ```bash
 export LOG_PATH="logs.log";
-python ./server.py -o;
+python3 server.py;
 ```
-Note: for full functionality, franciscan-chant-closet must be run at the same time and must be able to bind to port 40081.
+
+To run the server with output in the terminal, add the -o flag. To change the port, add the -a flag with the port.
+
 ## Author
 
 Miles Bertrand
@@ -50,6 +52,9 @@ Ezekiel Warren
 ## Additional Credit
 
 Benjamin Bloomfield (whose Javascript code I 'borrowed' and whose Compline project initially inspired this project)
+Divinum Officium Project.
+Gregobase.
+Nocturnale Romanum.
 
 ## License
 

@@ -50,9 +50,13 @@
 
    Before any text is fetched, the backend must determine *which* feast or occasion governs a given date, as well as other seasonal considerations. This is handled in two primary stages.
 
+*** Stage 0: Data Intake
+
+    Data is grouped logically according to source into directories referred to as books, which are exposed to the program by being placed in the data/ directory (for books managed by the liber-usualis repository) or in the data/generated/ directory (for books that are managed by other repositories). Books can be added to data/generated/ by creating a books.json file with a list of books with their local name (loc), Github link (src), and branch (branch). Running sync-books.py automatically clones any missing book repos into data/generated and updates those books. Books are used accessed across the pipeline in two main ways. The abstract class Bookshelf exposes the method book_srcs() and is used for Kalendar, and the class Corpus extends Bookshelf. This avoids kalendar depending on composer, while allowing composer to pass corpus objects to kalendar.
+
 *** Stage 1: Annual Kalendar Generation
 
-    =kalendar/= contains a full liturgical kalendar system, including lunar and solar calculations. The typical entry point for retrieving the relevant tag sets of a day is through =datamanage.get_date(book, day)=, which requests a complete year from =kalendar.kalendar(book, year)=. The =kalendar= module operates by first assembling the tag sets of the provided book (a url pointing to the kalendar data) into their normal locations throughout the year, and applying certain limited hard-coded rules. Next, year-based tables from =tabella.json= are sequentially applied by queuing the rules in order to resolve conflicts between feasts, determine the primary tag set for a given date (i.e. which feast or occasion this day's order follows) as well as picking between various other tag sets which account for the numerous special cases of the Roman Rite, translating (moving) feasts as-needed, etc. The finished annual kalendar is then cached and the relevant tag sets for the requested day are returned.
+    =kalendar/= contains a full liturgical kalendar system, including lunar and solar calculations. The typical entry point for retrieving the relevant tag sets of a day is through =datamanage.get_date(bookshelf, day)=, which requests a complete year from =kalendar.kalendar(bookshelf, year)=. The =kalendar= module operates by first assembling the tag sets of the provided books (or rather, their srcs) into their normal locations throughout the year, and applying certain limited hard-coded rules. Next, year-based tables from =tabella.json= are sequentially applied by queuing the rules in order to resolve conflicts between feasts, determine the primary tag set for a given date (i.e. which feast or occasion this day's order follows) as well as picking between various other tag sets which account for the numerous special cases of the Roman Rite, translating (moving) feasts as-needed, etc. The finished annual kalendar is then cached and the relevant tag sets for the requested day are returned.
 
 *** Stage 2: Prioritization
 
@@ -78,35 +82,12 @@
 
     The prioritizer module contains two separate functions: =get_vespers(book, day)= and =get_diurnal(book, day)=. The first exclusively applies the =tabella-vesperalis.json= table, while the second applies both the =tabella-diurnalis.json= and the =tabella-martyrologii.json= tables. The =get_vespers= function must further resolve conflicts between the second Vespers of the day as well as the first Vespers of the next day since these always overlap. The =get_diurnal= function is mostly dedicated to arranging Matins readings since these are often drawn from sources other than the primary feast, as well as handling the Martyrology, which is arranged according to the feast of the next date. The Martyrology tagset also receives a lunar day tag (e.g. =luna-secunda=) derived from =kalendar.luna= for the following day.
 
-** Data Loading: =datamanage.py=
+*** Stage 3: Composition
 
-   Once the relevant tags are known, =getpile(book, pilequery)= consults
-   =getwalk(book)= (LRU-cached per book, maxsize=16) for all JSON files under
-   =data/{book}/tagged/=, then loads those whose filename stems (sans =.json=)
-   appear in =pilequery=, and returns a flat list of all candidate entries.
-
-   Individual file loads go through =getbreviariumfile(book, path)= (LRU-cached,
-   maxsize=1024). Beyond basic loading, =getbreviariumfile= expands entries that
-   carry extra keys beyond =tags=, =datum=, and =src=: each extra key becomes a
-   separate entry in the pile with that key added as a tag. This allows a single
-   JSON entry to expose multiple tag-addressed sub-fields.
-
-   =load_data= is key-aware when converting JSON lists to frozensets: a list is
-   only converted to a frozenset when its key is one of =tags=, =implies=, or
-   =quaesitum= (or when there is no key context). This prevents content lists
-   from being misidentified as tag sets.
-
-** Liturgical Generation: =breviarium.py=
-
-   The core of the backend. The =process(book, item, selected, alternates, pile)=
-   function recursively assembles liturgical content.
-
-*** Core algorithm
-
-    =process(book, item, selected, alternates, pile)= is the recursive content
+    =corpus.process(item, selected, alternates)= is the recursive content
     assembler. =selected= is the active tag set (primary feast + positional tags),
     =alternates= is the list of other tag sets (commemorations etc.) available for
-    cross-referencing, and =pile= is the flat list of candidate entries.
+    cross-referencing.
 
     1. If =item= is a bare set of tags, treat it as a search request:
        a. Remove positional contradictions between itself and =selected= (using
@@ -152,8 +133,11 @@
     (=intonata=, =repetita=, =pars=) and attaches a =quaesitum= field recording
     the original query for diagnostics.
 
-** Psalm Resolution: =psalms.py=
-
+** Untagged Resolution: =get_untagged()=
+    
+   =corpus.get_untagged(query)= searches across the books contained in corpus and identifies
+   the matching untagged file (either .json, .txt, or .gabc). If it is in the =/psalmi folder,
+   it is passed to =psalms.py=.
    Psalm numbers are resolved separately. Queries containing =/psalmi-...= tags
    are intercepted and fetch the psalm text directly from =psalterium/= files,
    bypassing the normal search.
