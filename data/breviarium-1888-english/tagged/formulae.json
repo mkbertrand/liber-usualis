@@ -57,8 +57,8 @@
 	},
 	{
 		"tags":[
-			["formula","responsorium","gloria"],
-			["formula","responsorium","gloria","simplex-responsum"]
+			["formula","responsorium","cum-gloria"],
+			["formula","responsorium","cum-gloria","simplex-responsum"]
 		],
 		"datum":[
 			"R. ",null," * ",null,
@@ -70,9 +70,9 @@
 	},
 	{
 		"tags":[
-			["formula","in-tempore-passionis","temporale","responsorium","gloria"],
-			["formula","in-tempore-passionis","temporale","responsorium","gloria","simplex-responsum"],
-			["formula","triduum","responsorium","gloria"]
+			["formula","in-tempore-passionis","temporale","responsorium","cum-gloria"],
+			["formula","in-tempore-passionis","temporale","responsorium","cum-gloria","simplex-responsum"],
+			["formula","triduum","responsorium","cum-gloria"]
 		],
 		"datum":[
 			"R. ",null," * ",null,
@@ -83,7 +83,7 @@
 		]
 	},
 	{
-		"tags":["formula","responsorium","gloria","duplex-responsum"],
+		"tags":["formula","responsorium","cum-gloria","duplex-responsum"],
 		"datum":[
 			"R. ",null," * ",null," * ",null,
 			"\nV. ",null,
@@ -252,5 +252,9 @@
 	{
 		"tags":["formula","formula-lectionis","legitur-directe"],
 		"datum":null
-	}
+	},
+	{
+		"tags":["n"],
+		"datum":"N."
+  }
 ]

@@ -52,18 +52,18 @@
 	},
 	{
 		"tags":["martyres","episcopi-martyres","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Beatórum Mártyrum paritérque Pontíficum N. et N. nos, quǽsumus Dómine, festa tueántur: et eórum comméndet orátio veneránda."
+		"datum":"Beatórum Mártyrum paritérque Pontíficum N. et N. nos, quǽsumus Dómine, festa tueántur: et eórum comméndet orátio veneránda.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["martyres","collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalítia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére."
+		"datum":"Deus, qui nos concédis sanctórum Mártyrum tuórum N. et N. natalítia cólere: da nobis in ætérna beatitúdine de eórum societáte gaudére.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["martyres","collecta","alia-collecta"],
-		"terminatio":[["terminatio","per-dominum"]],
-		"datum":"Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis."
+		"datum":"Deus, qui nos ánnua sanctórum Mártyrum tuórum N. et N. solemnitáte lætíficas: concéde propítius; ut quorum gaudémus méritis, accendámur exémplis.",
+		"terminatio":[["terminatio","per-dominum"]]
 	},
 	{
 		"tags":["martyres","matutinum","hymnus"],
@@ -295,24 +295,12 @@
 		"versus":"Et apud Dóminum est merces eórum."
 	},
 	{
-		"tags":["martyres","ii-vesperae","antiphona","antiphona-i"],
-		"datum":"Isti sunt sancti, * qui pro testaménto Dei sua córpora tradidérunt, et in sánguine Agni lavérunt stolas suas."
-	},
-	{
-		"tags":["martyres","ii-vesperae","antiphona","antiphona-ii"],
-		"datum":"Sancti per fidem * vicérunt regna, operáti sunt justítiam, adépti sunt repromissiónes."
-	},
-	{
-		"tags":["martyres","ii-vesperae","antiphona","antiphona-iii"],
-		"datum":"Sanctórum velut áquilæ * juvéntus renovábitur: florébunt sicut lílium in civitáte Dómini."
-	},
-	{
-		"tags":["martyres","ii-vesperae","antiphona","antiphona-iv"],
-		"datum":"Abstérget Deus * omnem lácrimam ab óculis sanctórum: et jam non erit ámplius neque luctus, neque clamor, sed nec ullus dolor: quóniam prióra transiérunt."
-	},
-	{
-		"tags":["martyres","ii-vesperae","antiphona","antiphona-v"],
-		"datum":"In cœléstibus regnis * sanctórum habitátio est, et in ætérnum réquies eórum."
+		"tags":["martyres","ii-vesperae","antiphona"],
+		"antiphona-i":"Isti sunt sancti, * qui pro testaménto Dei sua córpora tradidérunt, et in sánguine Agni lavérunt stolas suas.",
+		"antiphona-ii":"Sancti per fidem * vicérunt regna, operáti sunt justítiam, adépti sunt repromissiónes.",
+		"antiphona-iii":"Sanctórum velut áquilæ * juvéntus renovábitur: florébunt sicut lílium in civitáte Dómini.",
+		"antiphona-iv":"Abstérget Deus * omnem lácrimam ab óculis sanctórum: et jam non erit ámplius neque luctus, neque clamor, sed nec ullus dolor: quóniam prióra transiérunt.",
+		"antiphona-v":"In cœléstibus regnis * sanctórum habitátio est, et in ætérnum réquies eórum."
 	},
 	{
 		"tags":["martyres","ii-vesperae","psalmus-v"],
