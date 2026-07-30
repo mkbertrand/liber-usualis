@@ -548,7 +548,7 @@ function renderRite(data, options) {
         }
 
       // Handle Lessons.
-      } else if (data.tags.includes('lectio') && !(typeof data.datum === 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('commemoratio-matutini'))) {
+      } else if (uniquelyhasbottom('lectio') && !(typeof data.datum === 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('commemoratio-matutini'))) {
         // Adds extra line of annotation noting that the lesson is a commemoration (i.e. not a continuation of the previous lessons).
         if (data.tags.includes('lectio-commemorationis') || typeof data.datum == 'object' && !Array.isArray(data.datum) && data.datum.tags.includes('lectio-commemorationis')) {
           makeHeadingAnnotation(abbreviateName(matinsCommemoration));
@@ -590,7 +590,11 @@ function renderRite(data, options) {
           closeParagraph();
           return;
         }
-        translated = unpack(translated);
+        if (Array.isArray(data.datum) && data.datum.every(item => typeof item === 'object' && 'tags' in item && item.tags.includes('lectio'))) {
+          translated = data.datum.map(item => 'translation' in item ? unpack(item.translation) : null);
+        } else {
+          translated = unpack(translated);
+        }
         // For the first lesson from a Homily.
         if (Array.isArray(lesson) && lesson[0].length < 100 && lesson[0].includes('Evangélii')) {
           openParagraph('lectionis-titulum');

@@ -257,7 +257,7 @@ class Corpus(Bookshelf):
             return item
 
         # Often in the text there will be an N. replaced with the celebrated Saint's name.
-        if type(item) is dict and 'N.' in item['datum']:
+        if type(item) is dict and item['datum'] and 'N.' in item['datum']:
             item['datum'] = item['datum'].replace('N. et N.', 'N.').replace('N.', self.search(item['tags'] | {'n'} | selected)['datum'])
         return item
 
