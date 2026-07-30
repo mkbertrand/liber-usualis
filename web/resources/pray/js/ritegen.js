@@ -590,7 +590,7 @@ function renderRite(data, options) {
           closeParagraph();
           return;
         }
-
+        translated = unpack(translated);
         // For the first lesson from a Homily.
         if (Array.isArray(lesson) && lesson[0].length < 100 && lesson[0].includes('Evangélii')) {
           openParagraph('lectionis-titulum');
@@ -605,12 +605,12 @@ function renderRite(data, options) {
           openParagraph('lectionis-titulum');
           renderInner(lesson[0], translated[0], [...data.tags, ...parentTags, 'lectionis-titulum']);
           closeParagraph();
-          renderInner(lesson.slice(1).join(' &para; '), translated[1] ? translated.slice(1).join(' &para; ') : null, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
+          renderInner(lesson.slice(1).join(' &para; '), translated[1] && Array.isArray(translated) ? translated.slice(1).join(' &para; ') : null, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
         // Note that an untitled lesson may still be a first lesson. This is due to the fact that most Saints lives are begun without title.
         } else {
           if (Array.isArray(lesson)) {
             lesson = lesson.join(' &para; ');
-            translated = translated[0] ? translated.join(' &para; ') : null;
+            translated = translated[0] && Array.isArray(translated) ? translated.join(' &para; ') : null;
           };
           closeParagraph();
           renderInner(lesson, translated, [data.quaesitum.includes('lectio-i') ? 'lectio-incipiens' : 'lectio-sequens']);
