@@ -452,9 +452,9 @@ function renderRite(data, options) {
           makeHeadingAnnotation(`Responsorium ${NUMERALS[3 * nn + respPosition - 4]}.`);
         }
         if (translated) {
-          var trans = translated;
+          var trans = unpack(translated);
           var allDefined = true;
-          for (var i = 0; i < translated.length; i++) {
+          for (var i = 0; i < unpack(translated).length; i++) {
             if (!trans[i]) {
               resp = claw(data.datum[i]);
               if ('translation' in resp) {
