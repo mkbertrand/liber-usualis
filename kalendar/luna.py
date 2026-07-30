@@ -12,7 +12,7 @@ def leapyear(year):
 def goldnumber(year):
 	return year % 19 + 1
 
-epactsymbols = ['i', 'ii', 'iii', 'iv', 'v',
+EPACT_SYMBOLS = ['i', 'ii', 'iii', 'iv', 'v',
 		'vi', 'vii', 'viii', 'ix', 'x',
 		'xi', 'xii', 'xiii', 'xiv', 'xv',
 		'xvi', 'xvii', 'xviii', 'xix', 'xx',
@@ -26,16 +26,16 @@ def epact(year):
 	if epact == 25 and goldnumber(year) > 11:
 		return '25'
 	else:
-		return epactsymbols[epact - 1]
+		return EPACT_SYMBOLS[epact - 1]
 
 # F-r and F-n correspond to F rubra and F nigra
-litterae = {
+LITTERAE = {
 		'i': 'a', 'ii': 'b', 'iii': 'c', 'iv': 'd', 'v': 'e', 'vi': 'f', 'vii': 'g', 'viii': 'h', 'ix':  'i', 'x': 'k', 'xi': 'l', 'xii': 'm', 'xiii': 'n', 'xiv': 'p', 'xv': 'q', 'xvi': 'r', 'xvii': 's', 'xviii': 't', 'xix': 'u',
 		'xx': 'A', 'xxi': 'B', 'xxii': 'C', 'xxiii': 'D', 'xxiv': 'E', 'xxv': 'F-r', '25': 'F-n', 'xxvi': 'G', 'xxvii': 'H', 'xxviii': 'M', 'xxix': 'N', '*': 'P'
 		}
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'A', 'B', 'C', 'D', 'E', 'F-r', 'F-n', 'G', 'H', 'M', 'N', 'P']
 def littera(year):
-	return litterae[epact(year)]
+	return LITTERAE[epact(year)]
 
 def gen_lunar_chart():
 	locations = {
