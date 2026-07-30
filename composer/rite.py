@@ -18,6 +18,10 @@ class Rite:
                 tran = get_relevant(frozenset(obj['quaesitum']))
                 if tran:
                     obj[tag] = tran
+            elif type(obj) is dict and 'tags' in obj:
+                tran = get_relevant(frozenset(obj['tags']))
+                if tran:
+                    obj[tag] = tran
             if type(obj) is dict:
                 traverse_rite(obj['datum'])
             elif type(obj) is list:
