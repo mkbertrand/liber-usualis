@@ -99,7 +99,7 @@ class Ambit {
 	slideAmbitOccasion(newAmbit, currentOccasionID) {
 		let ind = newAmbit.idindex(currentOccasionID);
 		if (ind == -1) {
-			return this.occasions[0].id;
+			return newAmbit.occasions[0].id;
 		} else {
 			return newAmbit.occasions[ind].id;
 		}
@@ -260,16 +260,16 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 benedictioMensaeAmbit = new Ambit(
 	new Occasion('Pro Prandio', [
 		new Rite('pro-prandio', 'diei', true),
-	], 'matutinum', 'diei'),
+	], 'pro-prandio', 'diei'),
 	new Occasion('Pro Cœna', [
 		new Rite('pro-coena', 'diei', true),
-	], 'vesperae', 'diei')
+	], 'pro-coena', 'diei')
 );
 
 benedictioMensaeAmbit.suggestSelectedOccasion = defunctAmbit.suggestSelectedOccasion;
 
 function singleOccasionAmbit(name, desired) {
-	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], 'matutinum', 'diei'));
+	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], desired, 'diei'));
 }
 
 function defineAmbit(desired, choral = true) {
