@@ -54,7 +54,7 @@ def test_match(day, update_golden) -> None:
         os.makedirs('testdata')
 
     for j in [['matutinum'], ['laudes', 'prima', 'tertia', 'sexta', 'nona'], ['vesperae', 'completorium']]:
-        current = breviarium.generate(corpus, day, j)
+        current = breviarium.generate(corpus, day, j).rite
 
         if update_golden:
             with open(f'testdata/{day}-{'-'.join(j)}.json', 'w') as f:

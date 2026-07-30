@@ -11,7 +11,7 @@ class Rite:
         @functools.lru_cache(maxsize=64)
         def get_relevant(tagset: frozenset):
             warnings.simplefilter('ignore')
-            return corpus.process(tagset, None, None, permit_empty = False)
+            return corpus._process(tagset, None, None, permit_empty = False)
 
         def traverse_rite(obj):
             if type(obj) is dict and 'quaesitum' in obj:

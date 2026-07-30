@@ -4,6 +4,7 @@
 
 import copy
 import kalendar.daily_tagger
+from composer import Rite
 
 def prettyprint(j):
     def recurse(obj):
@@ -25,7 +26,7 @@ def prettyprint(j):
                         print(' ' + i)
     recurse(j)
 
-def generate(corpus, day, hours):
+def generate(corpus, day, hours) -> Rite:
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(corpus, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(corpus, day))
     primary = list(filter(lambda i: 'primarium' in i, tags))[0]
     tags.remove(primary)
@@ -33,7 +34,7 @@ def generate(corpus, day, hours):
     lit = []
     for hour in hours:
         lit.append({'ritus', hour})
-    return corpus.process({'tags':{'ritus'},'datum':lit}, primary, tags)
+    return corpus.compose({'tags':{'ritus'},'datum':lit}, primary, tags)
 
 if __name__ == '__main__':
     import argparse
@@ -119,7 +120,7 @@ if __name__ == '__main__':
     # Generate kalendar
     day = datetime.strptime(args.date, '%Y-%m-%d').date()
     corpus = Corpus(Book(Path(__file__).parent.joinpath('data').joinpath(args.root), ''))
-    ret = generate(corpus, day, args.hour.split('+'))
+    ret = generate(corpus, day, args.hour.split('+')).rite
 
     if args.output == sys.stdout:
         prettyprint(ret)

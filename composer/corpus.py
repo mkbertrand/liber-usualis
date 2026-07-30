@@ -162,12 +162,12 @@ class Corpus(Bookshelf):
             ret = []
             commemorations = sorted(list(filter(lambda a : 'commemoratio' in a, alternates)), key=lambda a:self.discriminate('rank', a), reverse=True)
             for i in commemorations:
-                ret.append(self.process({'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates))
+                ret.append(self._process({'formula','formula-commemorationis'}, i | (item - {'commemorationes'}), alternates))
             if len(commemorations) != 0:
-                ret.append(self.process({'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates))
+                ret.append(self._process({'collecta','terminatio','commemoratio'}, commemorations[-1] | (item - {'commemorationes'}), alternates))
             return {'tags':{'commemorationes'}, 'datum':ret}
 
-    def process(self, item, selected, alternates, pilemod = [], permit_empty = True):
+    def _process(self, item, selected, alternates, pilemod = [], permit_empty = True):
         if item is None:
             return 'Absens'
         if selected is None:
@@ -232,7 +232,7 @@ class Corpus(Bookshelf):
             elif result is None:
                 return None
             selected |= item
-            response = self.process(result, selected, alternates)
+            response = self._process(result, selected, alternates)
 
             return response
 
@@ -246,7 +246,7 @@ class Corpus(Bookshelf):
                 elif i is None:
                     ret.append(None)
                 else:
-                    iprocessed = self.process(i, selected, alternates)
+                    iprocessed = self._process(i, selected, alternates)
                     if iprocessed is None:
                         ret.append('Absens')
                     elif type(iprocessed) is list:
@@ -262,10 +262,10 @@ class Corpus(Bookshelf):
         return item
 
     def compose(self, query, selected, alternates) -> Rite:
-        return Rite(self.process(query, selected, alternates))
+        return Rite(self._process(query, selected, alternates))
 
     def get_name(self, tagset):
-        resp = self.process({'nomen'}, tagset, [])
+        resp = self._process({'nomen'}, tagset, [])
         name = resp['datum'] if 'datum' in resp else '+'.join(tagset)
         if type(name) is list:
             name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
