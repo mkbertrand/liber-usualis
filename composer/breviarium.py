@@ -25,15 +25,15 @@ def prettyprint(j):
                         print(' ' + i)
     recurse(j)
 
-def generate(context, day, hours):
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(context, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(context, day))
+def generate(corpus, day, hours):
+    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(corpus, day) if not set(hours).isdisjoint({'vesperae', 'completorium'}) else kalendar.daily_tagger.get_diurnal(corpus, day))
     primary = list(filter(lambda i: 'primarium' in i, tags))[0]
     tags.remove(primary)
 
     lit = []
     for hour in hours:
         lit.append({'ritus', hour})
-    return context.process({'tags':{'ritus'},'datum':lit}, primary, tags)
+    return corpus.process({'tags':{'ritus'},'datum':lit}, primary, tags)
 
 if __name__ == '__main__':
     import argparse
@@ -118,8 +118,8 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
     # Generate kalendar
     day = datetime.strptime(args.date, '%Y-%m-%d').date()
-    context = Corpus(Book(Path(__file__).parent.parent.joinpath('data').joinpath(args.root), ''))
-    ret = generate(context, day, args.hour.split('+'))
+    corpus = Corpus(Book(Path(__file__).parent.parent.joinpath('data').joinpath(args.root), ''))
+    ret = generate(corpus, day, args.hour.split('+'))
 
     if args.output == sys.stdout:
         prettyprint(ret)
