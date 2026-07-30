@@ -10,17 +10,18 @@ from datetime import date, datetime, timedelta
 import json
 
 import kalendar.kalendar as kalendar
-from kalendar.kalendar import SearchResult, Kalendar, threenocturnes, ranks, octavevigiltags, feriae, load_data, noprimarium, apply_tabella
+import kalendar.datamanage as datamanage
+from kalendar.kalendar import SearchResult, Kalendar, threenocturnes, ranks, octavevigiltags, feriae, noprimarium, apply_tabella
 from kalendar.pascha import geteaster
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
 
 def kalendar(bookshelf) -> Kalendar:
 
-    adventcycle = load_data('de-adventu.json', bookshelf.book_srcs()[0])
-    epiphanycycle = load_data('epiphania.json', bookshelf.book_srcs()[0])
-    paschalcycle = load_data('de-paschali.json', bookshelf.book_srcs()[0])
-    sanctoral = load_data('kalendarium.json', bookshelf.book_srcs()[0])
-    nativitycycle = load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
+    adventcycle = datamanage.load_data('de-adventu.json', bookshelf.book_srcs()[0])
+    epiphanycycle = datamanage.load_data('epiphania.json', bookshelf.book_srcs()[0])
+    paschalcycle = datamanage.load_data('de-paschali.json', bookshelf.book_srcs()[0])
+    sanctoral = datamanage.load_data('kalendarium.json', bookshelf.book_srcs()[0])
+    nativitycycle = datamanage.load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
 
     kal = Kalendar()
 
@@ -82,11 +83,11 @@ def kalendar(bookshelf) -> Kalendar:
 
 def kalendar2(bookshelf) -> Kalendar:
 
-    adventcycle = load_data('de-adventu.json', bookshelf.book_srcs()[0])
-    epiphanycycle = load_data('epiphania.json', bookshelf.book_srcs()[0])
-    paschalcycle = load_data('de-paschali.json', bookshelf.book_srcs()[0])
-    sanctoral = load_data('kalendarium.json', bookshelf.book_srcs()[0])
-    nativitycycle = load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
+    adventcycle = datamanage.load_data('de-adventu.json', bookshelf.book_srcs()[0])
+    epiphanycycle = datamanage.load_data('epiphania.json', bookshelf.book_srcs()[0])
+    paschalcycle = datamanage.load_data('de-paschali.json', bookshelf.book_srcs()[0])
+    sanctoral = datamanage.load_data('kalendarium.json', bookshelf.book_srcs()[0])
+    nativitycycle = datamanage.load_data('in-tempore-nativitatis.json', bookshelf.book_srcs()[0])
 
     kal = Kalendar()
 
@@ -163,7 +164,7 @@ def kalendar2(bookshelf) -> Kalendar:
             if entry.isdisjoint(noprimarium):
                 entry.add('primarium')
 
-    tabella = load_data('tabella.json', bookshelf.book_srcs()[0])
+    tabella = datamanage.load_data('tabella.json', bookshelf.book_srcs()[0])
     for i in tabella:
         apply_tabella(kal, i)
 

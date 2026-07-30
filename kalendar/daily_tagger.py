@@ -10,28 +10,10 @@ import copy
 from pathlib import Path
 
 
-import kalendar.datamanage
+import kalendar.datamanage as datamanage
 import kalendar.luna as luna
 
 LUNAR_DAY_NAMES = ['prima', 'secunda', 'tertia', 'quarta', 'quinta', 'sexta', 'septima', 'octava', 'nona', 'decima', 'undecima', 'duodecima', 'tertia-decima', 'quarta-decima', 'quinta-decima', 'sexta-decima', 'septima-decima', 'duodevicesima', 'undevicesima', 'vicesima', 'vicesima-prima', 'vicesima-secunda', 'vicesima-tertia', 'vicesima-quarta', 'vicesima-quinta', 'vicesima-sexta', 'vicesima-septima', 'vicesima-octava', 'vicesima-nona', 'tricesima']
-
-def load_data_prioritizer(p: str, src):
-    data = json.loads(src.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
-
-    # JSON doesn't support sets. Recursively find and replace anything that
-    # looks like a list of tags with a set of tags.
-    def recurse(obj):
-        match obj:
-            case dict():
-                return {datetime.strptime(k, '%Y-%m-%d').date() if re.search(r'^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
-            case list():
-                if all(type(x) is str for x in obj):
-                    return frozenset(obj)
-                return [recurse(v) for v in obj]
-            case _:
-                return obj
-
-    return recurse(data)
 
 class Job(NamedTuple):
     rule: dict
@@ -43,7 +25,7 @@ def guaranteeset(item):
         return {item}
 
 def apply_secondary_tabella(day, tabella):
-    rules = kalendar.datamanage.flatten(tabella)
+    rules = datamanage.flatten(tabella)
     day = copy.deepcopy(day)
     prioritization_stack = [Job(rule) for rule in rules]
     prioritization_stack.reverse()
@@ -117,18 +99,18 @@ def get_vespers(bookshelf, day, votives = []):
 
     assert type(day) is not datetime
 
-    implicationtable = load_data_prioritizer('sequentes.json', bookshelf.book_srcs()[0])
+    implicationtable = datamanage.load_data('sequentes.json', bookshelf.book_srcs()[0])
     vesperalrules = []
     for votive in votives:
         vesperalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
     if votives:
-        vesperalrules.append(load_data_prioritizer('tabella-vesperalis-votivarum.json', bookshelf.book_srcs()[0]))
+        vesperalrules.append(datamanage.load_data('tabella-vesperalis-votivarum.json', bookshelf.book_srcs()[0]))
     
 
-    vesperalrules.extend(load_data_prioritizer('tabella-vesperalis.json', bookshelf.book_srcs()[0]))
+    vesperalrules.extend(datamanage.load_data('tabella-vesperalis.json', bookshelf.book_srcs()[0]))
 
-    ivespers = [i | {'i-vesperae'} for i in kalendar.datamanage.get_date(bookshelf, day + timedelta(days=1))]
-    iivespers = [i | {'ii-vesperae'} for i in kalendar.datamanage.get_date(bookshelf, day)]
+    ivespers = [i | {'i-vesperae'} for i in datamanage.get_date(bookshelf, day + timedelta(days=1))]
+    iivespers = [i | {'ii-vesperae'} for i in datamanage.get_date(bookshelf, day)]
 
     # Final product
     vesperal = iivespers + ivespers
@@ -146,21 +128,21 @@ def get_diurnal(bookshelf, day, votives = []):
 
     assert type(day) is not datetime
 
-    implicationtable = load_data_prioritizer('sequentes.json', bookshelf.book_srcs()[0])
-    martyrologyrules = load_data_prioritizer('tabella-martyrologii.json', bookshelf.book_srcs()[0])
+    implicationtable = datamanage.load_data('sequentes.json', bookshelf.book_srcs()[0])
+    martyrologyrules = datamanage.load_data('tabella-martyrologii.json', bookshelf.book_srcs()[0])
 
     diurnalrules = []
     for votive in votives:
         diurnalrules.append([{'include':frozenset({'votiva', votive}),'adde': frozenset({'primarium', 'semiduplex'})}])
     if votives:
-        diurnalrules.append(load_data_prioritizer('tabella-diurnalis-votivarum.json', bookshelf.book_srcs()[0]))
+        diurnalrules.append(datamanage.load_data('tabella-diurnalis-votivarum.json', bookshelf.book_srcs()[0]))
 
-    diurnalrules.extend(load_data_prioritizer('tabella-diurnalis.json', bookshelf.book_srcs()[0]))
+    diurnalrules.extend(datamanage.load_data('tabella-diurnalis.json', bookshelf.book_srcs()[0]))
 
-    daytags = kalendar.datamanage.get_date(bookshelf, day)
+    daytags = datamanage.get_date(bookshelf, day)
     for tabella in diurnalrules:
         daytags = apply_secondary_tabella(daytags, tabella)
-    martyrology = apply_secondary_tabella(kalendar.datamanage.get_date(bookshelf, day + timedelta(days=1)), martyrologyrules)
+    martyrology = apply_secondary_tabella(datamanage.get_date(bookshelf, day + timedelta(days=1)), martyrologyrules)
     lunarday = luna.lunardate(day + timedelta(days=1))
     martyrology[0].add('luna-' + LUNAR_DAY_NAMES[lunarday - 1])
     tags = daytags + martyrology
@@ -196,7 +178,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    bookshelf = kalendar.datamanage.get_bookshelf('breviarium-1888')
+    bookshelf = datamanage.get_bookshelf('breviarium-1888')
 
     tagsets = None
     if args.time == 'vesperale':

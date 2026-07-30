@@ -2,12 +2,32 @@
 
 import functools
 import copy
+import json
+import re
 from typing import NamedTuple
 from bookshelf import Bookshelf
 
 from pathlib import Path
 
 BOOK_ROOT = Path(__file__).parent.parent.joinpath('data').resolve()
+
+def load_data(p: str, root):
+    data = json.loads(root.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
+
+    # JSON doesn't support sets. Recursively find and replace anything that
+    # looks like a list of tags with a set of tags.
+    def recurse(obj):
+        match obj:
+            case dict():
+                return {datetime.strptime(k, '%Y-%m-%d').date() if re.search(r'^\d{4}-\d{2}-\d{2}$',k) is not None else k: recurse(v) for k, v in obj.items()}
+            case list():
+                if all(type(x) is str for x in obj):
+                    return frozenset(obj)
+                return [recurse(v) for v in obj]
+            case _:
+                return obj
+
+    return recurse(data)
 
 class Restriction(NamedTuple):
     include: set

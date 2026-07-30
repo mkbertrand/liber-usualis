@@ -12,27 +12,9 @@ from typing import NamedTuple, Optional, Self, Set
 import itertools
 import pathlib
 
-from kalendar.datamanage import flatten, get_bookshelf
+from kalendar.datamanage import load_data, flatten, get_bookshelf
 from kalendar.pascha import geteaster, nextsunday
 from kalendar.dies import leapyear, menses, mensum, numerals, latindate
-
-def load_data(p: str, src):
-    data = json.loads(src.joinpath('kalendarium').joinpath(p).read_text(encoding='utf-8'))
-
-    # JSON doesn't support sets. Recursively find and replace anything that
-    # looks like a list of tags with a set of tags.
-    def recurse(obj):
-        match obj:
-            case dict():
-                return {k: recurse(v) for k, v in obj.items()}
-            case list():
-                if all(type(x) is str for x in obj):
-                    return frozenset(obj)
-                return [recurse(v) for v in obj]
-            case _:
-                return obj
-
-    return recurse(data)
 
 threenocturnes = {'semiduplex','duplex-minus','duplex-majus','duplex-ii-classis','duplex-i-classis'}
 ranks = {'feria','commemoratio','simplex'} | threenocturnes
