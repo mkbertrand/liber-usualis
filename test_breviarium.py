@@ -10,7 +10,7 @@ import os
 import pathlib
 import diff_match_patch
 
-import composer.breviarium
+import breviarium
 import datamanage
 
 from composer import Corpus
@@ -50,15 +50,15 @@ def test_match(day, update_golden) -> None:
 
     if not os.path.isdir('testresults'):
         os.makedirs('testresults')
-    if not os.path.isdir('composer/testdata'):
-        os.makedirs('composer/testdata')
+    if not os.path.isdir('testdata'):
+        os.makedirs('testdata')
 
     for j in [['matutinum'], ['laudes', 'prima', 'tertia', 'sexta', 'nona'], ['vesperae', 'completorium']]:
-        current = composer.breviarium.generate(corpus, day, j)
+        current = breviarium.generate(corpus, day, j)
 
         if update_golden:
-            with open(f'composer/testdata/{day}-{'-'.join(j)}.json', 'w') as f:
-                f.write(util.dump_data(current))
+            with open(f'testdata/{day}-{'-'.join(j)}.json', 'w') as f:
+                f.write(composer.util.dump_data(current))
             pytest.skip('Updated file')
         else:
             old = re.sub(r'\[.+?\]', '[]', str(striptags(composer.util.load_data(f'testdata/{day}-{'-'.join(j)}.json', pathlib.Path(__file__).parent))))

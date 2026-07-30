@@ -118,7 +118,7 @@ if __name__ == '__main__':
         logging.getLogger().setLevel(args.verbosity)
     # Generate kalendar
     day = datetime.strptime(args.date, '%Y-%m-%d').date()
-    corpus = Corpus(Book(Path(__file__).parent.parent.joinpath('data').joinpath(args.root), ''))
+    corpus = Corpus(Book(Path(__file__).parent.joinpath('data').joinpath(args.root), ''))
     ret = generate(corpus, day, args.hour.split('+'))
 
     if args.output == sys.stdout:
