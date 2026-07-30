@@ -130,10 +130,10 @@ export IMAGE_PATH="$(realpath result/* | head -n1)";
 aws configure; # setup your aws auth if it's not already configured
 aws s3 mb s3://nixos-iam-bucket; # create the nixos iam bucket in s3
 aws s3 cp "$IMAGE_PATH" s3://nixos-iam-bucket; # copy the result of nixos-generators nix build to the s3 bucket
-aws s3api put-bucket-policy --bucket nixos-iam-bucket --policy file://bucket-policy.json; # add the bucket policy
-aws iam create-role --role-name vmimport --assume-role-policy-document file://vmimport-trust-policy.json # First create the role with the trust policy
-aws iam put-role-policy --role-name vmimport --policy-name vmimport-policy --policy-document file://vmimport-policy.json # Then attach the permission policy (not the trust policy)
-aws ec2 import-snapshot --description "Imported nixos VHD" --disk-container file://containers.json | cat; # import the image as an iam
+aws s3api put-bucket-policy --bucket nixos-iam-bucket --policy file://nix/bucket-policy.json; # add the bucket policy
+aws iam create-role --role-name vmimport --assume-role-policy-document file://nix/vmimport-trust-policy.json # First create the role with the trust policy
+aws iam put-role-policy --role-name vmimport --policy-name vmimport-policy --policy-document file://nix/vmimport-policy.json # Then attach the permission policy (not the trust policy)
+aws ec2 import-snapshot --description "Imported nixos VHD" --disk-container file://nix/containers.json | cat; # import the image as an iam
 aws ec2 describe-import-image-tasks --import-task-ids import-snap-4621525fac5e4474t | cat; # monitor the import progress with this, using the task id from the previous command
 aws ec2 register-image \
     --name "nixos-libu" \
@@ -144,7 +144,7 @@ aws ec2 register-image \
     --ena-support \
     --imds-support='v2.0' \
     --sriov-net-support simple \
-    --block-device-mappings "file://block-mapping.json"
+    --block-device-mappings "file://nix/block-mapping.json"
 
 ```
 the import-image command might take 30ish minutes to run, so there's probably a better way of creating the new IAM, maybe even just having the nixos config as a public or private flake and running nixos-rebuild switch on the ec2 instance machine with the flake as the target

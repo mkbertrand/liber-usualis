@@ -78,7 +78,7 @@
           inherit format;
           modules = [
             determinate.nixosModules.default
-            ./nixos-config.nix
+            ./nix/nixos-config.nix
           ];
           specialArgs = {
             inherit self nixpkgs nodename format python_env;
@@ -91,7 +91,7 @@
           system = nixosSystem;
           modules = [
             determinate.nixosModules.default
-            ./nixos-config.nix
+            ./nix/nixos-config.nix
             ./${format}-hw.nix
           ];
           specialArgs = {
