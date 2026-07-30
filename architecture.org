@@ -4,15 +4,9 @@
 
 * Overview
 
-  Liber Usualis is a data-driven liturgical text generation system for the Roman
-  Catholic Divine Office (Breviary). Given a date and a liturgical hour, it
-  generates the correct text (and optionally chant notation) for praying that
-  hour of the Office, following the rules of a given edition of the Roman Rite
-  (currently 1888).
+  Liber Usualis is a data-driven liturgical text generation system for the Roman Catholic Divine Office (Breviary). Given a date and a liturgical hour, it generates the correct text (along with translation and chant if desired) for praying that hour of the Office, following the rules of a given edition of the Roman Rite (currently 1888).
 
-  The system is explicitly designed to be *data-driven*: almost no liturgical
-  logic is hard-coded. Instead, the content is stored in tagged JSON data files,
-  and a tag-lookup system assembles the correct texts at runtime.
+  The system is explicitly designed to be *data-driven*: almost no liturgical logic is hard-coded. Instead, the content is stored in tagged JSON data files, and a tag-lookup system assembles the correct texts at runtime.
 
 ** Technology Stack
 
@@ -35,32 +29,26 @@
      omissions, and available votives. The frontend uses these tag sets to
      determine which liturgical hours are available.
    - ~GET /rite?date=...&time=...&hour=HOUR&select=...&translation=LANG&privata=...&noending=...~ —
-     Returns fully rendered liturgical content for a specific hour.
+     Returns fully composed liturgical content for a specific hour.
    - ~GET /kalendar~ — Returns the kalendar skeleton for navigation.
 
-   The server also proxies chant notation files from external sources under
-   =/chant/...=.
-
-   Note: =server.py= contains its own inline rite generation logic (rather than
-   calling =breviarium.generate()=) in order to handle votive office selection and
-   the =noending= parameter. The =breviarium.generate()= function is primarily
-   used as a command-line entry point.
-
-** Kalendar & Prioritization: =prioritizer.py= and =kalendar/=
-
-   Before any text is fetched, the backend must determine *which* feast or occasion governs a given date, as well as other seasonal considerations. This is handled in two primary stages.
+   Note: =server.py= invokes =datamanage.rite_request()= (rather than calling =breviarium.generate()=) in order to handle votive office selection and the =noending= parameter. The =breviarium.generate()= function is primarily used as the entry point for =test_breviarium=.
 
 *** Stage 0: Data Intake
 
     Data is grouped logically according to source into directories referred to as books, which are exposed to the program by being placed in the data/ directory (for books managed by the liber-usualis repository) or in the data/generated/ directory (for books that are managed by other repositories). Books can be added to data/generated/ by creating a books.json file with a list of books with their local name (loc), Github link (src), and branch (branch). Running sync-books.py automatically clones any missing book repos into data/generated and updates those books. Books are used accessed across the pipeline in two main ways. The abstract class Bookshelf exposes the method book_srcs() and is used for Kalendar, and the class Corpus extends Bookshelf. This avoids kalendar depending on composer, while allowing composer to pass corpus objects to kalendar.
 
+** Kalendar & Daily Tagger: =kalendar/=
+
+   Before any text is fetched, the backend must determine *which* feast or occasion governs a given date, as well as other seasonal considerations. This is handled in two primary stages.
+
 *** Stage 1: Annual Kalendar Generation
 
     =kalendar/= contains a full liturgical kalendar system, including lunar and solar calculations. The typical entry point for retrieving the relevant tag sets of a day is through =datamanage.get_date(bookshelf, day)=, which requests a complete year from =kalendar.kalendar(bookshelf, year)=. The =kalendar= module operates by first assembling the tag sets of the provided books (or rather, their srcs) into their normal locations throughout the year, and applying certain limited hard-coded rules. Next, year-based tables from =tabella.json= are sequentially applied by queuing the rules in order to resolve conflicts between feasts, determine the primary tag set for a given date (i.e. which feast or occasion this day's order follows) as well as picking between various other tag sets which account for the numerous special cases of the Roman Rite, translating (moving) feasts as-needed, etc. The finished annual kalendar is then cached and the relevant tag sets for the requested day are returned.
 
-*** Stage 2: Prioritization
+*** Stage 2: Daily tagging
 
-    The kalendar data for the given date is then passed through the *prioritizer*, which applies
+    The kalendar data for the given date is then passed through the *daily tagger*, which applies
     secondary rule tables to resolve further conflicts between feasts.
 
     Rule tables live in =data/{book}/kalendarium/=:
@@ -77,16 +65,18 @@
       (merge), =mutate= (modify in place), =duplicate= (create modified copy),
       =dele= (delete), or =errora= (raise conflict).
 
-    The output of the prioritizer is a list of =frozenset= objects, one per
+    The output of the daily tagger is a list of =frozenset= objects, one per
     commemorated service (primary feast, commemorations, omissions, votive options).
 
-    The prioritizer module contains two separate functions: =get_vespers(book, day)= and =get_diurnal(book, day)=. The first exclusively applies the =tabella-vesperalis.json= table, while the second applies both the =tabella-diurnalis.json= and the =tabella-martyrologii.json= tables. The =get_vespers= function must further resolve conflicts between the second Vespers of the day as well as the first Vespers of the next day since these always overlap. The =get_diurnal= function is mostly dedicated to arranging Matins readings since these are often drawn from sources other than the primary feast, as well as handling the Martyrology, which is arranged according to the feast of the next date. The Martyrology tagset also receives a lunar day tag (e.g. =luna-secunda=) derived from =kalendar.luna= for the following day.
+    The daily_tagger module contains two separate functions: =get_vespers(book, day)= and =get_diurnal(book, day)=. The first exclusively applies the =tabella-vesperalis.json= table, while the second applies both the =tabella-diurnalis.json= and the =tabella-martyrologii.json= tables. The =get_vespers= function must further resolve conflicts between the second Vespers of the day as well as the first Vespers of the next day since these always overlap. The =get_diurnal= function is mostly dedicated to arranging Matins readings since these are often drawn from sources other than the primary feast, as well as handling the Martyrology, which is arranged according to the feast of the next date. The Martyrology tagset also receives a lunar day tag (e.g. =luna-secunda=) derived from =kalendar.luna= for the following day.
+
+** Composition & Superimposition: =composer/=
+
+   With the list of desired tags for the occasion, the backend can then use those tags to identify and compose the rite, as well as superimpose secondary sources like translations and chant.
 
 *** Stage 3: Composition
 
-    =corpus.process(item, selected, alternates)= is the recursive content
-    assembler. =selected= is the active tag set (primary feast + positional tags),
-    =alternates= is the list of other tag sets (commemorations etc.) available for
+    =corpus._process(item, selected, alternates, pilemod, permit_empty)= is the recursive content assembler; though it is invoked through =corpus.compose(item, selected, alternates)= which is always the entry point. =selected= is the active tag set (primary feast + positional tags), =alternates= is the list of other tag sets (commemorations etc.) available for
     cross-referencing.
 
     1. If =item= is a bare set of tags, treat it as a search request:
@@ -109,8 +99,7 @@
     3. If =item['datum']= is a string, return it as-is (possibly substituting
        saint names, abbreviated as =N.=).
 
-    The result is a nested JSON structure mirroring the hierarchy of the liturgical
-    hour (hour → sections → individual items).
+    The result of _process() is a nested JSON structure mirroring the hierarchy of the liturgical hour (hour → sections → individual items). =compose()= returns this wrapped in a Rite object to allow superimposition.
 
 *** Search & Discrimination
 
@@ -141,6 +130,10 @@
    Psalm numbers are resolved separately. Queries containing =/psalmi-...= tags
    are intercepted and fetch the psalm text directly from =psalterium/= files,
    bypassing the normal search.
+
+*** Stage 4: Superimposition
+
+   =rite.superimpose(corpus, tag) takes a =ContingentCorpus=, a specialized corpus which provides unstructured content meant to be added to an already-structured Rite, and tag, which indicates what any superimposed content should be called in the returned rite. =superimpose()= recurses through the structured rite dictionary and searches the specified corpus for items that match the main content of the rite. For example, a translation is applied by recursing through a rite object and re-using the search indices of the Latin to search the translated corpus for the matching translation content. This returns a new Rite object with relevant content from the contingent corpus applied to its structure.
 
 ** Localization and Resource Versioning: =version_management.py=
 
@@ -178,7 +171,7 @@
    Preferences (=choral=, =chant=, =recitation=, =translation=) are persisted to
    =localStorage=.
 
-** Ritual Templates: =web/resources/js/ritegen.js=
+** Ritual Templates: =web/resources/js/ambit.js=
 
    An *ambit* is a template that defines which elements appear in a given type of
    office. Several ambits are defined:
@@ -225,9 +218,7 @@
 
 ** Chant Rendering
 
-   When chant notation is enabled, the frontend requests chant files (GABC format)
-   via =/chant/...= (proxied by the server). These are rendered in-browser by
-   =exsurge.js=.
+   When chant notation is enabled, the frontend is able to apply chant by detecting items in the structured rite that include a =cantus= tag. Content under the =cantus= tag (which comes from the superimposition step) is in GABC format and ready to use without further API calls. The chants are passed to the DOM within gabc-chant elements, which lazy render upon entry into the viewport using =exsurge.js=.
 
 ** HTTP API (Frontend → Backend)
 
@@ -292,8 +283,6 @@
    - =tags=: A list of tags (or a list of tag lists for entries matching multiple
      distinct contexts).
    - =datum=: The content (text, or a list of sub-items for structured content).
-   - =src= (optional): Reference to a chant source (=gregobase/12345=,
-     =nocturnale/A1F2R1=, etc.).
 
    Example entries:
 
@@ -329,12 +318,10 @@
 
    1. *Kalendar lookup* — =kalendar= returns base tags for the date (saint's name,
       week of season, day of week, etc.).
-   2. *Prioritization* — =prioritizer= applies rule tables to resolve conflicts,
+   2. *Daily tagging* — =daily_tagger= applies rule tables to resolve conflicts,
       producing a list of =frozenset= objects (one per service: primary,
       commemoration, omission).
-   3. *Implication (sequentes)* — =data/{book}/kalendarium/sequentes.json= defines derived
-      tags: if certain tags are present, additional tags are automatically added.
-      For example, =in-tempore-passionis= implies =in-tempore-quadragesimae=.
+   3. *Implication (sequentes)* — =data/{book}/kalendarium/sequentes.json= defines derived tags: if certain tags are present, additional tags are automatically added. For example, =in-tempore-passionis= implies =in-tempore-quadragesimae=.
 
 ** Tag Matching (Search)
 
@@ -394,17 +381,18 @@
   1. server.py receives request
      └── parse date (Dec 8 = Immaculate Conception), hour = matutinum
 
-  2. prioritizer.get_diurnal(book, date(1888, 12, 8))
+  2. daily_tagger.get_diurnal(corpus, date(1888, 12, 8))
      └── returns [frozenset({'immaculata-conceptio-bmv', 'duplex-majus', 'primarium'}), ...]
 
-  3. breviarium.process() begins
+  3. corpus.compose() begins and calls corpus._process()
      └── for each item in the matutinum ambit template:
          a. Build query: primary tags ∪ positional tags
             e.g. {'immaculata-conceptio-bmv', 'duplex-majus', 'matutinum', 'antiphona', 'antiphona-invitatorium'}
-         b. Load pile: relevant JSON files from tagged/
-            (proprium-sanctorum/december/immaculata-conceptio-bmv.json, formulae.json, psalterium/, ...)
-         c. search(query, pile): find entry whose tags ⊆ query with highest discrimina score
-         d. Recurse into sub-items if datum is a list
+         b. search(query, pile): find entry whose tags ⊆ query with highest discrimina score
+         c. Recurse into sub-items if datum is a list
+
+  3. rite.superimpose() injects secondary unstructured content into the structured rite
+     └── recurses through the structured rite and fetches secondary content from the specified ContingentCorpus
 
   4. Assemble and return JSON:
      {
@@ -426,20 +414,20 @@
   | File / Directory                                  | Purpose                                                |
   |---------------------------------------------------+--------------------------------------------------------|
   | =server.py=                                       | HTTP routing and request handling                      |
-  | =breviarium.py=                                   | Core liturgical text generation engine                 |
-  | =datamanage.py=                                   | Data loading, caching, JSON/frozenset conversion       |
-  | =prioritizer.py=                                  | Kalendar conflict resolution and tag generation        |
-  | =psalms.py=                                       | Psalm number resolution                                |
+  | =datamanage.py=                                   | Management of corpora and rite composition work        |
+  | =composer.corpus.py=                              | Core liturgical text generation engine                 |
+  | =composer.psalms.py=                              | Psalm number resolution                                |
   | =version_management.py=                           | Locale detection and i18n                              |
+  | =kalendar/daily_tagger.py=                        | Kalendar conflict resolution and tag generation        |
   | =kalendar/=                                       | Full liturgical kalendar with solar/lunar calculations |
   | =web/templates/pray.tpl=                          | Main page template (Alpine.js root component)          |
-  | =web/resources/js/ritegen.js=                     | Ritual hour templates (ambits) and rendering logic     |
-  | =web/resources/js/pray.js=                        | Event handlers and state management                    |
+  | =web/resources/pray/js/ritegen.js=                | Ritual hour templates (ambits) and rendering logic     |
+  | =web/resources/pray/js/pray.js=                   | Event handlers and state management                    |
   | =web/locales/{locale}/=                           | UI string translations                                 |
   | =data/{book}/tagged/=                             | All tagged liturgical content (JSON)                   |
   | =data/{book}/categoriae/=                         | Tag classification and mutual-exclusion groups         |
   | =data/{book}/discrimina/=                         | Search ranking tables                                  |
-  | =data/{book}/translations/=                       | Content translations                                   |
+  | =data/{book}-{translation}/=                      | Content translations                                   |
   | =data/{book}/kalendarium/sequentes.json=          | Implied-tag rules                                      |
   | =data/{book}/kalendarium/tabella-diurnalis.json=  | Daytime office prioritization rules                    |
   | =data/{book}/kalendarium/tabella-vesperalis.json= | Vespers prioritization rules                           |
