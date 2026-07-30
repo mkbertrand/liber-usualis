@@ -187,8 +187,8 @@ def apply_tabella(kal, tabella):
         rule: dict
         parentnumber: int = -1
 
-    queue = [Job(tuple(kal.keys()), rule) for rule in rules]
-    queue.reverse()
+    prioritization_stack = [Job(tuple(kal.keys()), rule) for rule in rules]
+    prioritization_stack.reverse()
     ruleskip = [False] * len(rules)
 
     def resolvejob(job):
@@ -228,8 +228,8 @@ def apply_tabella(kal, tabella):
                                     break
                         kal[day].pop(match[1])
                         # We will restart this job from scratch when we've iterated through the more specific jobs
-                        queue.append(job)
-                        queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                        prioritization_stack.append(job)
+                        prioritization_stack.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
                     elif job.rule['response'] == 'errora':
                         raise RuntimeError(f'Unexpected coincidence on day {kal[day]} involving {match}')
                     else:
@@ -248,33 +248,33 @@ def apply_tabella(kal, tabella):
 
                         if job.rule['response'] == 'dele':
                             kal[day].pop(target)
-                            queue.append(job)
+                            prioritization_stack.append(job)
                         elif job.rule['response'] == 'transfer':
                             move = kal[day].pop(target)
                             transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
                             kal[transferday].append(move)
-                            queue.append(job)
+                            prioritization_stack.append(job)
                             parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
-                            queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
-                            queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
+                            prioritization_stack.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
+                            prioritization_stack.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
                         elif type(job.rule['response']) is frozenset and 'movement' in job.rule:
                             transferday = (day + timedelta(days=job.rule['movement'])) if type(job.rule['movement']) is int else kal.match_unique(job.rule['movement']).date
                             if job.rule['response'] in kal[transferday]:
                                 continue
                             kal[transferday].append(job.rule['response'])
-                            queue.append(job)
+                            prioritization_stack.append(job)
                             parentnumber = job.parentnumber if job.parentnumber != -1 else job.rule['number']
-                            queue.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
-                            queue.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
+                            prioritization_stack.extend([Job([transferday], rules[num], parentnumber) for num in range(job.parentnumber, job.rule['number'] - 1, -1)])
+                            prioritization_stack.extend([Job([day, transferday], rules[num], parentnumber) for num in range(job.rule['number'] - 1, -1, -1)])
                         elif type(job.rule['response']) is frozenset:
                             if job.rule['response'] <= kal[day][target]:
                                 continue
                             if job.rule['response'] & roletags:
                                 kal[day][target] -= roletags
                             kal[day][target] |= job.rule['response']
-                            queue.append(job)
+                            prioritization_stack.append(job)
                             if not job.rule['continue']:
-                                queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                                prioritization_stack.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
                         elif not type(job.rule['response']) is str:
                             raise RuntimeError(type(job.rule['response']))
                         else:
@@ -283,14 +283,14 @@ def apply_tabella(kal, tabella):
                             if job.rule['response'] in roletags:
                                 kal[day][target] -= roletags
                             kal[day][target].add(job.rule['response'])
-                            queue.append(job)
+                            prioritization_stack.append(job)
                             if not job.rule['continue']:
-                                queue.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                                prioritization_stack.extend([Job([day], rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
                     if job.rule['continue']:
                         return
 
-    while len(queue) != 0:
-        resolvejob(queue.pop())
+    while len(prioritization_stack) != 0:
+        resolvejob(prioritization_stack.pop())
 
 def kalendar(bookshelf: pathlib.Path, year: int) -> Kalendar:
 

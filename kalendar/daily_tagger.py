@@ -45,8 +45,8 @@ def guaranteeset(item):
 def apply_secondary_tabella(day, tabella):
     rules = kalendar.datamanage.flatten(tabella)
     day = copy.deepcopy(day)
-    queue = [Job(rule) for rule in rules]
-    queue.reverse()
+    prioritization_stack = [Job(rule) for rule in rules]
+    prioritization_stack.reverse()
     ruleskip = [False] * len(rules)
 
     def resolvejob(job):
@@ -81,15 +81,15 @@ def apply_secondary_tabella(day, tabella):
                     day[match[0]] |= day[match[1]]
                     day.pop(match[1])
                     # We will restart this job from scratch when we've iterated through the more specific jobs
-                    queue.append(job)
-                    queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                    prioritization_stack.append(job)
+                    prioritization_stack.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
                 elif job.rule['response'] == 'errora':
                     raise RuntimeError(f'Unexpected coincidence in {day} involving {match}')
                 else:
                     target = match[job.rule['target']]
                     if job.rule['response'] == 'dele':
                         day.pop(target)
-                        queue.append(job)
+                        prioritization_stack.append(job)
                     else:
                         newset = copy.deepcopy(day[target])
                         if 'remove' in job.rule:
@@ -104,12 +104,12 @@ def apply_secondary_tabella(day, tabella):
                         else:
                             raise RuntimeError(f'Unknown instruction {job.rule})')
                         if not job.rule['continue']:
-                            queue.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
+                            prioritization_stack.extend([Job(rules[num]) for num in range(job.rule['number'] - 1, -1, -1)])
                 if job.rule['continue']:
                     return
 
-    while len(queue) != 0:
-        resolvejob(queue.pop())
+    while len(prioritization_stack) != 0:
+        resolvejob(prioritization_stack.pop())
 
     return day
 
