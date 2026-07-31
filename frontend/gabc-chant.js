@@ -1,15 +1,17 @@
 // Copyright 2023-2025 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 // Additional credit to Benjamin Bloomfield as this file is a modification of his original (except for chomp())
 
-const GABC_CHANT_CONTEXT = new exsurge.ChantContext(exsurge.TextMeasuringStrategy.Canvas);
+import * as Exsurge from 'exsurge';
+
+const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
 GABC_CHANT_CONTEXT.setFont("'Old Standard TT'", 22);
 
-GABC_CHANT_CONTEXT.dropCapTextColor = 'red';
-GABC_CHANT_CONTEXT.dropCapTextSize = '80';
+GABC_CHANT_CONTEXT.textStyles.dropCap.color = 'red';
+GABC_CHANT_CONTEXT.textStyles.dropCap.size = '80';
 
-GABC_CHANT_CONTEXT.annotationTextColor = 'red';
-GABC_CHANT_CONTEXT.annotationTextFont = GABC_CHANT_CONTEXT.lyricTextFont;
+GABC_CHANT_CONTEXT.textStyles.annotation.color = 'red';
+GABC_CHANT_CONTEXT.textStyles.annotation.font = GABC_CHANT_CONTEXT.textStyles.al.font;
 
 GABC_CHANT_CONTEXT.rubricColor = 'red';
 GABC_CHANT_CONTEXT.staffLineColor = 'red';
@@ -169,11 +171,11 @@ class ChantElement extends HTMLElement {
   renderChant() {
     try {
       var gabc = chomp(this.gabc, this.tags);
-      var mappings = exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, gabc);
-      this.score = new exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !gabc.includes('initial-style:0;'));
+      var mappings = Exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, gabc);
+      this.score = new Exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !gabc.includes('initial-style:0;'));
       if (gabc.includes('mode:')) {
         var modeloc = gabc.indexOf('mode:');
-        this.score.annotation = new exsurge.Annotation(GABC_CHANT_CONTEXT, gabc.substring(modeloc + 5, gabc.indexOf(';', modeloc)) + '.');
+        this.score.annotation = new Exsurge.Annotation(GABC_CHANT_CONTEXT, gabc.substring(modeloc + 5, gabc.indexOf(';', modeloc)) + '.');
       }
       this.score.performLayout(GABC_CHANT_CONTEXT);
       this.chantLayout();
@@ -207,11 +209,28 @@ class ChantElement extends HTMLElement {
     this.tags = $(this).attr('tags').split('+');
 	}
 }
-window.customElements.define('gabc-chant', ChantElement);
-
 $(document).ready(function() {
 	const resizeObserver = new ResizeObserver(() =>{
 		$('gabc-chant').each((index, elem) =>
 			Promise.resolve(new Promise(((resolve, reject) => elem.chantLayout()))))});
 	resizeObserver.observe(document.getElementById('site-wrapper'));
 });
+
+export function initChantElement() {
+  customElements.define('gabc-chant', ChantElement);
+  const resize = () => {
+    document.querySelectorAll('gabc-chant').forEach(elem => elem.chantLayout());
+  };
+
+  const resizeObserver = new ResizeObserver(resize);
+
+  const startObserve = () => {
+    resizeObserver.observe(document.getElementById('site-wrapper'));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startObserve);
+  } else {
+    startObserve();
+  }
+}

@@ -42,8 +42,7 @@
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/la-hypher.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/psalmify.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/ritegen.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/exsurge.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/gabc-chant.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/js-dist/pray.js')}}></script>
 	</head>
 	<body x-data="{
 	optionspanel: false,

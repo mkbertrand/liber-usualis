@@ -16,6 +16,8 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 git clone https://github.com/mkbertrand/liber-usualis
 git clone https://github.com/mkbertrand/franciscan-chant-closet
 cd liber-usualis
+npm install github:bbloomf/exsurge
+esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/js-dist
 pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 ```
 
@@ -25,8 +27,9 @@ Note: diff-match-patch is only necessary for test_breviarium.
 To run the server (by default on localhost:8080, the server is run as follows:
 
 ```bash
-export LOG_PATH="logs.log";
-python3 server.py;
+export LOG_PATH="logs.log"
+python3 sync-books.py
+python3 server.py
 ```
 
 To run the server with output in the terminal, add the -o flag. To change the port, add the -a flag with the port.
