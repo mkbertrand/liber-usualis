@@ -152,11 +152,8 @@ export function renderRite(data) {
   matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
 
   rite = '';
-
   openDivs = [];
   paragraphOpen = false;
-  latinBuffer = '';
-  vernacularBuffer = '';
   riteParagraphBuffer = [];
   antiphonMode = null;
   antiphonClef = null;
@@ -215,7 +212,6 @@ export function renderRite(data) {
     } else if (Array.isArray(translated)) {
       var translatedString = translated.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
     }
-    console.log(translatedString);
     rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translatedString}">`;
     openParagraph(tags.join(' '));
     renderInner(replaced, translated, tags);
