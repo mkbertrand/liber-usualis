@@ -180,8 +180,9 @@ class ChantElement extends HTMLElement {
       this.score.performLayout(GABC_CHANT_CONTEXT);
       this.chantLayout();
 
+      // This code to be refactored to use the rendered translation already included in the element before gabc write.
       if (this.translated) {
-        this.translated = `<p class="rite-text rite-text-translation line-by-line">${stringRenderExposed(this.translated)}</p>`;
+        //this.translated = `<p class="rite-text rite-text-translation line-by-line">${stringRenderExposed(this.translated)}</p>`;
       } else {
         this.translated = '';
       }

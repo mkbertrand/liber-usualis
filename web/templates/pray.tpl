@@ -41,7 +41,6 @@
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/jquery.hypher.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/la-hypher.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/psalmify.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/ritegen.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/js-dist/pray.js')}}></script>
 	</head>
 	<body x-data="{
@@ -59,7 +58,6 @@
 		'side-by-side': false,
 		'display-trivial-chants': false
 	}),
-	version: '{{version_management.get_resource_version('/pray/js/ritegen.js')}}-{{version_management.get_resource_version('/pray/css/pray.css')}}',
 	rite: '',
 	initialized: false,
 	canIncrementOccasion: true,
@@ -83,7 +81,7 @@
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
 
-			this.rite = getRite(this.getCalendarDate(this.calendarDate), this.hour, this.parameters, this.version);
+			this.rite = getRite(this.getCalendarDate(this.calendarDate), this.hour, this.parameters);
 			if (scroll) {
 				window.scrollTo({top:0});
 			}
@@ -132,7 +130,7 @@
 	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
 		this.nextOccasion = [resolveParameters(this.parameters).ambit.idindex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).id];
-		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters, this.version);
+		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters);
 	}
 }" x-init="
 	if (!('votives' in parameters)) {
@@ -191,12 +189,12 @@
 				% if not mobile:
 				<div x-cloak id="options-panel-background" x-show="optionspanel">
 					<div id="options-panel-wrapper" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-						% include('web/resources/options-panel.tpl', locale=locale, text=text)
+						% include('web/resources/pray/options-panel.tpl', locale=locale, text=text)
 					</div>
 				</div>
 				% else:
 					<div x-cloak id="options-panel-wrapper-mobile" x-show="optionspanel">
-						% include('web/resources/options-panel.tpl', locale=locale, text=text)
+						% include('web/resources/pray/options-panel.tpl', locale=locale, text=text)
 					</div>
 				% end
 				% if not mobile:
@@ -211,14 +209,14 @@
 							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 								<div id="date-selector-container">
-									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-left.svg" /></button>
+									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters);"><img src="/resources/svg/arrow-left.svg" /></button>
 									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate(calendarDate)">
-									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters, version)" @click="setCalendarDate(search)"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, version);"><img src="/resources/svg/arrow-right.svg" /></button>
+									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters)" @click="setCalendarDate(search)"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters);"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
 								<div id="rite-selector-container">
 									<template x-for="occasion in resolveParameters(parameters).ambit.occasions">
-										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @mouseover.throttle="getRite(getCalendarDate(calendarDate), occasion.id, parameters, version)" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
+										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @mouseover.throttle="getRite(getCalendarDate(calendarDate), occasion.id, parameters)" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
 									</template>
 								</div>
 							</div>

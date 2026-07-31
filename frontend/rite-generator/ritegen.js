@@ -4,12 +4,12 @@ invitatoria = {};
 fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json?v=2').then(data => data.json()).then(json => invitatoria = json);
 
 const MONTHS = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maji', 'Junii', 'Julii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris'];
-function dateHeader(date) {
+export function dateHeader(date) {
   date = date.split('-');
   return `<h4 class="date-header">Die ${parseInt(date[2])} ${MONTHS[(parseInt(date[1]) - 1) % 12]} ${date[0]}.</h4>`;
 }
 
-function riteTitle(title, tags, size = 'large') {
+export function riteTitle(title, tags, size = 'large') {
 	if (size == 'small') {
 		return `<h1 class="small-title">${title}</h1>`;
 	} else {
@@ -35,7 +35,7 @@ function riteTitle(title, tags, size = 'large') {
 	}
 }
 
-function abbreviateName(name) {
+export function abbreviateName(name) {
 	name = name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Pontificum', 'Pont.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.') + '.';
 	name = name.replaceAll(/\.\.$/g, '.');
 	return name;
@@ -144,7 +144,7 @@ function stringRenderExposed(text) {
 		return text;
 }
 
-function renderRite(data, options) {
+export function renderRite(data, options) {
 
   function stringRender(text, translation = false) {
     if (translation && !options['side-by-side']) {
@@ -164,6 +164,7 @@ function renderRite(data, options) {
   textAbove = false;
   latinBuffer = '';
   vernacularBuffer = '';
+  riteParagraphBuffer = [];
   antiphonMode = null;
   antiphonClef = null;
 
@@ -175,7 +176,7 @@ function renderRite(data, options) {
         vernacularBuffer += '</div>';
         rite += latinBuffer + vernacularBuffer + '</div>';
       } else {
-        rite += '</p>';
+        rite += riteParagraphBuffer.join('<br>') + '</p>';
       }
     }
     textAbove = false;
@@ -228,13 +229,10 @@ function renderRite(data, options) {
         vernacularBuffer += stringRender(translated, true);
       }
     } else {
-      if (textAbove) {
-        rite += '<br>';
+      if (!translated) {
+        translated = '';
       }
-      rite += stringRender(text);
-      if (translated) {
-        rite += `<br><span class="rite-text-translation line-by-line ${translationclasses.join(' ')}">${stringRender(translated, true)}</span>`;
-      }
+      riteParagraphBuffer.append(stringRender(text) + `<br><span class="rite-text-translation line-by-line ${translationclasses.join(' ')}">${stringRender(translated, true)}</span>`);
     }
     textAbove = true;
   }

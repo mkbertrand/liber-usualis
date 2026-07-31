@@ -126,18 +126,9 @@ def title():
         print(e)
         abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
 
-expected_version = f'{version_management.get_resource_version('/pray/js/ritegen.js')}-{version_management.get_resource_version('/pray/css/pray.css')}'
-
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():
-    # Ensure requests were made by an up-to-date client
-    try:
-        assert request.query.get('version', expected_version) == expected_version
-    except Exception as e:
-        print(e)
-        abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
-
     try:
         rites = request.query.get('rites', None)
         if rites:
