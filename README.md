@@ -17,7 +17,7 @@ git clone https://github.com/mkbertrand/liber-usualis
 git clone https://github.com/mkbertrand/franciscan-chant-closet
 cd liber-usualis
 npm install github:bbloomf/exsurge
-esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/js-dist
+npm run build
 pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 ```
 

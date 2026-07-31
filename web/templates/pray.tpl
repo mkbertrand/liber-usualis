@@ -22,7 +22,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
-		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/pray/css/pray.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/pray.css')}}>
 		% if mobile:
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/pray/css/pray-mobile.css')}}>
 		% end
@@ -41,7 +41,7 @@
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/jquery.hypher.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/chant/la-hypher.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/psalmify.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/js-dist/pray.js')}}></script>
+		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
 	</head>
 	<body x-data="{
 	optionspanel: false,
@@ -202,7 +202,12 @@
 					</div>
 				% end
 				<div id="rite-page-container">
-					<div x-show="initialized" id="rite-container" x-html="Rite" :class="parameters.recitation == 'plainchant' ? 'chant-shown' : 'chant-hidden'">
+					<div x-show="initialized" id="rite-container" x-html="Rite" :class="{
+            'chant-shown': parameters.recitation == 'plainchant',
+            'chant-hidden': parameters.recitation != 'plainchant',
+            'side-by-side': parameters['side-by-side'],
+            'line-by-line': !parameters['side-by-side']
+            }">
 					</div>
 					<template x-if="bottompanel">
 						<div id="bottom-easy-select-container">

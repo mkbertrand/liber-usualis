@@ -1,0 +1,204 @@
+/* Rite container and formatting for hour itself */
+#rite-container {
+	font-family: "Old Standard TT", times;
+	font-size: 20px;
+	padding: 10px 40px 10px 40px;
+	min-height: calc(100vh - 71px - var(--top-bar-title-height));
+	background-color: var(--generic-white-background-color);
+	display: block;
+}
+
+.rite-item {
+	margin: 0;
+	padding: 0;
+}
+
+.date-header {
+  font-family: "Old Standard TT", times;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: -14px;
+  font-size: 16px;
+}
+
+.large-title {
+	font-family: "Old Standard TT", times;
+	font-variant: small-caps;
+	font-weight: normal;
+	color: red;
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.large-subtitle {
+	font-family: "Old Standard TT", times;
+	font-variant: small-caps;
+	font-weight: normal;
+	color: black;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.25;
+}
+
+.small-title {
+	font-family: "Old Standard TT", times;
+	font-variant: small-caps;
+	font-weight: normal;
+	color: red;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.section-header {
+	font-family: "Old Standard TT", times;
+	font-variant: small-caps;
+	font-weight: normal;
+	color: red;
+	font-size: 22px;
+	text-align: center;
+	margin: 0;
+}
+
+.item-header {
+	font-variant: small-caps;
+	font-weight: normal;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+}
+
+.rite-text {
+	font-family: "Old Standard TT", times;
+	line-height: 1.25;
+	margin-top: 7px;
+	margin-bottom: 14px;
+	text-align: justify;
+	hyphens: auto;
+}
+
+.verse-number {
+	color: red;
+	font-size: 8px;
+}
+
+.rite-text-translation.line-by-line {
+	font-size: 14px;
+	color: #222;
+	margin-top: 0;
+	line-height: 1;
+	padding-left: 10px;
+}
+
+.rite-text-rubric {
+	color: red;
+	font-size: 16px;
+}
+
+.black-rubric {
+	color: black;
+}
+
+.small-rubric {
+	font-size: 14px !important;
+}
+
+.rite-text-rubric-above-paragraph {
+	margin-top: 7px;
+	margin-bottom: -7px;
+	font-size: 16px;
+}
+
+/* Formatting for specific items */
+.aperi-domine, .sacrosanctae {
+	font-size: 16px !important;
+}
+
+.aperi-domine.rite-text-translation.line-by-line, .sacrosanctae.rite-text-translation.line-by-line {
+	font-size: 12px !important;
+}
+
+.aperi-domine::first-letter, .sacrosanctae::first-letter, .absolutio::first-letter, .lectionis-titulum::first-letter, .evangelium-matutini::first-letter, .hymnus::first-letter, .capitulum::first-letter, .antiphona::first-letter, .martyrologium::first-letter, .pater-noster-secreta::first-letter, .ave-maria-secreta::first-letter, .credo-secreta::first-letter, .preces:first-letter, .pater-noster-clara-voce::first-letter, .pater-noster-semisecreta::first-letter, .credo-semisecreta::first-letter, .confiteor::first-letter, .oratio-sanctae-mariae::first-letter, .formula-lectionis::first-letter, .invitatorium::first-letter, .pro-prandio::first-letter, .pro-coena::first-letter, .itinerarium::first-letter, .formula-indulgentiam-articulo-mortis::first-letter {
+	color: red;
+}
+
+.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter, .hymnus.te-deum::first-letter {
+	float: left;
+	font-size: 94px;
+	margin-right: 0.1rem;
+	color: red;
+	line-height: 0;
+	initial-letter: 3;
+	-webkit-initial-letter: 3;
+}
+
+.lectio-sequens::first-letter, .textus-psalmi-precibus::first-letter, .collecta::first-letter, .oratio-dirigere::first-letter, .hymnus.te-deum::first-letter, .lectio-incipiens.lectio-commemorationis::first-letter {
+	font-size: 60px !important;
+	initial-letter: 2;
+	-webkit-initial-letter: 2;
+}
+
+/* Technically colors all items red, but in effect since all except the Oremus are already colored red, only adds red for that. */
+.collecta-primaria::first-letter, .commemorationes::first-letter, .antiphona-bmv::first-letter, .officium-capituli::first-letter {
+	color: red;
+}
+
+.collecta, .oratio-dirigere {
+	min-height: 50px;
+}
+
+.collecta.triduum {
+	margin-top: 7px;
+}
+
+.rubricum {
+	margin-bottom: 0;
+}
+
+.side-by-side-column-container {
+	display: flex;
+	gap: 30px;
+}
+
+.left-column-latin {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.right-column-vernacular {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+#rite-container.chant-shown .chantelement-text-content {
+  display: none;
+}
+
+#rite-container.chant-hidden .chantelement-chant-content {
+  display: none;
+}
+
+/* Large Screens */
+@media only screen and (min-width: 2000px) {
+
+	#rite-container {
+		padding: 10px 100px 10px 100px;
+	}
+
+	.collecta, .oratio-dirigere {
+		min-height: 60px;
+	}
+
+	#next-hour-button-container {
+		padding: 0 30px 60px 30px;
+	}
+
+	#next-hour-forbidden-tooltip {
+		top: 5px;
+	}
+}

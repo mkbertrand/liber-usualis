@@ -177,6 +177,7 @@ export function renderRite(data, options) {
         rite += latinBuffer + vernacularBuffer + '</div>';
       } else {
         rite += riteParagraphBuffer.join('<br>') + '</p>';
+        riteParagraphBuffer = [];
       }
     }
     textAbove = false;
@@ -232,7 +233,7 @@ export function renderRite(data, options) {
       if (!translated) {
         translated = '';
       }
-      riteParagraphBuffer.append(stringRender(text) + `<br><span class="rite-text-translation line-by-line ${translationclasses.join(' ')}">${stringRender(translated, true)}</span>`);
+      riteParagraphBuffer.push(`<span class="rite-text-line"><span class="rite-text-latin">${stringRender(text)}</span><span class="rite-text-translation">${stringRender(translated, true)}</span></span>`);
     }
     textAbove = true;
   }
@@ -249,7 +250,7 @@ export function renderRite(data, options) {
     rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated}">`;
     openParagraph(tags.join(' '));
     renderInner(replaced, translated, tags);
-
+    closeParagraph();
     rite += '</gabc-chant>';
     closeDiv('', 'gabc-chant');
     closeDiv('gabc-chant-container');

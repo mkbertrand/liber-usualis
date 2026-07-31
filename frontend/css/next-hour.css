@@ -1,0 +1,35 @@
+/* Next hour button. Child of rite-page-container. */
+#next-hour-button-container {
+	padding: 0 40px 60px 40px;
+	background-color: var(--generic-white-background-color);
+}
+
+#next-hour-button {
+	float: right;
+	font-family: "Old Standard TT", times;
+	font-size: 16px;
+	background-color: transparent;
+}
+
+#next-hour-button:hover {
+	background-color: var(--button-color-hover);
+}
+
+#next-hour-button-icon {
+	position: relative;
+	top: 4px;
+	height: 20px;
+	padding-left: 4px;
+}
+
+.next-hour-button-forbidden:hover {
+	background-color: transparent !important;
+	cursor: not-allowed;
+}
+
+#next-hour-forbidden-tooltip {
+	position: relative;
+	top: 6px;
+	font-family: "Old Standard TT", times;
+	font-size: 16px;
+}
