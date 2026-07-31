@@ -143,8 +143,7 @@ def rite():
                     ritesplit[2],
                     request.query.get('privata', '') == 'privata',
                     ritesplit[1],
-                    request.query.get('translation', 'none'),
-                    request.query.get('chant', 'false') == 'true'
+                    request.query.get('translation', 'none')
                 ))
             return util.dump_data(ret)
         return util.dump_data(datamanage.rite_request(
@@ -154,8 +153,7 @@ def rite():
             request.query.get('select', 'diei'),
             request.query.get('privata', '') == 'privata',
             request.query.get('noending', 'false') == 'true',
-            request.query.get('translation', 'none'),
-            request.query.get('chant', 'false') == 'true'
+            request.query.get('translation', 'none')
         ))
     except Exception as e:
         traceback.print_exc()

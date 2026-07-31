@@ -311,6 +311,7 @@
 	flex-grow: 1;
 }
 
+
 /* Next hour button. Child of rite-page-container. */
 #next-hour-button-container {
 	padding: 0 40px 60px 40px;
@@ -326,6 +327,14 @@
 
 #next-hour-button:hover {
 	background-color: var(--button-color-hover);
+}
+
+#rite-container.chant-shown .chantelement-text-content {
+  display: none;
+}
+
+#rite-container.chant-hidden .chantelement-chant-content {
+  display: none;
 }
 
 #next-hour-button-icon {

@@ -202,7 +202,7 @@
 					</div>
 				% end
 				<div id="rite-page-container">
-					<div x-show="initialized" id="rite-container" x-html="Rite">
+					<div x-show="initialized" id="rite-container" x-html="Rite" :class="parameters.recitation == 'plainchant' ? 'chant-shown' : 'chant-hidden'">
 					</div>
 					<template x-if="bottompanel">
 						<div id="bottom-easy-select-container">

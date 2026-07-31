@@ -312,7 +312,7 @@ export function renderRite(data, options) {
       }
       
       // These checks are done before removing empty items since empty antiphons can still confer tone upon the following Psalms.
-      if (data.tags.includes('antiphona') && options.chant && 'cantus' in data && data.cantus) {
+      if (data.tags.includes('antiphona') && 'cantus' in data && data.cantus) {
         mode = unpack(data.cantus).match(/mode:(.+?)(?:;|\n)/);
         clef = unpack(data.cantus).replace('%%', '\n%%\n').match(/^\((.+?)\)/m);
         if (mode && clef && !data.quaesitum.includes('repetita')) {
@@ -412,7 +412,7 @@ export function renderRite(data, options) {
         }
         openDiv('', 'hymnus');
 
-        if (options.chant && data.cantus) {
+        if (data.cantus) {
           renderGabc(data.datum[0], data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
           data.datum.shift();
         }
@@ -473,7 +473,7 @@ export function renderRite(data, options) {
             translated = null;
           }
         }
-        if (options.chant && data.cantus) {
+        if (data.cantus) {
           var trans = unpack(data.cantus.datum);
           var allDefined = true;
           for (var i = 0; i < unpack(data.cantus.datum).length; i++) {
@@ -502,7 +502,7 @@ export function renderRite(data, options) {
       }
 
       // Handle objects that have chant.
-      if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && options.chant && 'cantus' in data && data['cantus'] != undefined && (options['display-trivial-chant'] || !data.tags.some(tag => TRIVIAL_CHANTS.includes(tag))) && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
+      if (!openDivs.includes('gabc-chant-container') && typeof data === 'object' && 'cantus' in data && data['cantus'] != undefined && !(data.quaesitum.includes('antiphona') && JSON.stringify(data.datum).includes('"cantus"'))) {
         renderGabc(data.datum, data.quaesitum, data.cantus, translated, [...data.tags, ...parentTags]);
         return;
 
@@ -660,7 +660,7 @@ export function renderRite(data, options) {
         appendText(unpack(data.datum[5]));
         closeParagraph();
         return;
-      } else if (options.chant && data.tags.includes('invitatorium')) {
+      } else if (data.tags.includes('invitatorium')) {
         openDiv('', 'invitatorium');
         // The first instance of the Invitatory antiphon has to be rendered first in order to define antiphonMode.
         renderInner(data.datum[0], translated ? translated[i] : null, data.tags.concat(parentTags));

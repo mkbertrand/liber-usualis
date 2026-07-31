@@ -164,7 +164,7 @@ class ChantElement extends HTMLElement {
 	chantLayout() {
 		if (typeof this.score !== 'undefined') {
 			this.score.layoutChantLines(GABC_CHANT_CONTEXT, $(this).parent().parent().width());
-			$(this).html(this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated);
+			this.innerHTML = `<div class="chantelement-chant-content">${this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated}</div><div class="chantelement-text-content">${this.plainContent}</div>`;
 		}
 	}
 	
@@ -208,6 +208,7 @@ class ChantElement extends HTMLElement {
     this.translated = $(this).attr('translated');
     this.gabc = $(this).attr('gabc');
     this.tags = $(this).attr('tags').split('+');
+    this.plainContent = this.innerHTML.toString();
 	}
 }
 $(document).ready(function() {

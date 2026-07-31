@@ -56,7 +56,7 @@ def adjust_tags(day, vesperal, select, votives):
     return tags
 
 @functools.lru_cache(maxsize=30)
-def rite_request(date, rites, votives, select, private, noending, translation, chant):
+def rite_request(date, rites, votives, select, private, noending, translation):
     day = datetime.strptime(date, '%Y-%m-%d').date()
     hours = rites.replace(' ', '+').split('+')
     votives = votives.replace(' ', '+').split('+')
@@ -84,8 +84,7 @@ def rite_request(date, rites, votives, select, private, noending, translation, c
             translated_corpus = ENGLISH_CORPUS
         rite = rite.superimpose(translated_corpus, 'translation')
     
-    if chant:
-        rite = rite.superimpose(CHANT_CORPUS, 'cantus')
+    rite = rite.superimpose(CHANT_CORPUS, 'cantus')
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return {
