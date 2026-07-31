@@ -58,8 +58,6 @@ const FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta',
 const PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio'];
 const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta'];
 
-const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
-
 export function renderRite(data) {
 
   usedCommemorations = data['used-commemorations'];
