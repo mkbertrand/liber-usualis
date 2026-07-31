@@ -1,6 +1,6 @@
 // Copyright 2024-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
-import {abbreviateName, stringRender} from './rendering-utils.js';
+import {abbreviateName, rubricRender, stringRender} from './rendering-utils.js';
 
 invitatoria = {};
 fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json?v=2').then(data => data.json()).then(json => invitatoria = json);
@@ -23,27 +23,6 @@ function claw(data) {
 	} else {
 		return claw(data.datum);
 	}
-}
-
-function rubricRender(data) {
-	data = data.replaceAll(/\[(.+?)\]/g, '<span class=\'black-rubric\'>\$1</span>');
-	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
-		.replaceAll('É', 'E').replaceAll('Í', 'I')
-		.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
-		.replaceAll('Ý', 'Y');
-	data = data.replaceAll(/(?<!<)\//g, '<br>');
-	data = data.replace(/\n/g, '<br>')
-		.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
-		.replace(/N\./g, '<span class=\'red\'>N.</span>')
-		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
-		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-		.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
-		.replace(/>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
-		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
-		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
-		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
-		.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
-	return data;
 }
 
 const RITE_HEADERS = {

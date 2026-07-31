@@ -36,6 +36,27 @@ export function abbreviateName(name) {
 	return name;
 }
 
+export function rubricRender(data) {
+	data = data.replaceAll(/\[(.+?)\]/g, '<span class=\'black-rubric\'>\$1</span>');
+	data = data.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
+		.replaceAll('É', 'E').replaceAll('Í', 'I')
+		.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
+		.replaceAll('Ý', 'Y');
+	data = data.replaceAll(/(?<!<)\//g, '<br>');
+	data = data.replace(/\n/g, '<br>')
+		.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
+		.replace(/N\./g, '<span class=\'red\'>N.</span>')
+		.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
+		.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
+		.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
+		.replace(/>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
+		.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
+		.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
+		.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
+		.replace(/\*/g, '<span class=\'red\'>&ast;</span>');
+	return data;
+}
+
 export function stringRender(text, translation = false) {
 		if (text.match(/^\[.+?\]$/)) {
 			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
@@ -64,4 +85,3 @@ export function stringRender(text, translation = false) {
 			.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 		return text;
 }
-
