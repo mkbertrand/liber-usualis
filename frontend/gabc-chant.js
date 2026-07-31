@@ -2,7 +2,7 @@
 // Additional credit to Benjamin Bloomfield as this file is a modification of his original (except for chomp())
 
 import * as Exsurge from 'exsurge';
-import {stringRender} from './rite-generator/ritegen.js';
+import {stringRender} from './rite-renderer/rendering-utils.js';
 
 const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
