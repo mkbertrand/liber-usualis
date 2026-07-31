@@ -117,7 +117,7 @@ const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clar
 
 const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
 
-function stringRender(text, translation = false) {
+export function stringRender(text, translation = false) {
 		if (text.match(/^\[.+?\]$/)) {
 			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
 		}
@@ -146,7 +146,7 @@ function stringRender(text, translation = false) {
 		return text;
 }
 
-export function renderRite(data, options) {
+export function renderRite(data) {
 
   usedCommemorations = data['used-commemorations'];
   matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
@@ -210,9 +210,12 @@ export function renderRite(data, options) {
     let cantusUnpack = unpack(cantus);
     if (!translated) {
       var translatedString = '';
+    } else if (typeof translated === 'string') {
+      var translatedString = translated;
     } else if (Array.isArray(translated)) {
       var translatedString = translated.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
     }
+    console.log(translatedString);
     rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translatedString}">`;
     openParagraph(tags.join(' '));
     renderInner(replaced, translated, tags);

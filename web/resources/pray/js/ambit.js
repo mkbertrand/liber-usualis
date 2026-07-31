@@ -409,7 +409,7 @@ async function getRite(calendarDate, occasion, parameters) {
 				ret += Pray.riteTitle(json[i]['used-primary'][0], json[i]['used-primary'][1], 'small');
 				previousTitle = json[i]['used-primary'][0];
 			}
-			ret += Pray.renderRite(json[i], resolvedParameters);
+			ret += Pray.renderRite(json[i]);
 		}
 		return ret;
 	}

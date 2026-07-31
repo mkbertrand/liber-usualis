@@ -190,6 +190,14 @@ span.rite-text-latin {
 	padding-left: 10px;
 }
 
+span.rite-text.chant-translation {
+	font-size: 14px;
+	color: #222;
+	margin-top: 0;
+	line-height: 1;
+	padding-left: 10px;
+}
+
 #rite-container.line-by-line span.rite-text-translation span.line-starting-symbol {
   display: none;
 }
