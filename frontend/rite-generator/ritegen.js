@@ -117,7 +117,7 @@ const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clar
 
 const TRIVIAL_CHANTS = ['deus-in-adjutorium'];
 
-function stringRenderExposed(text) {
+function stringRender(text, translation = false) {
 		if (text.match(/^\[.+?\]$/)) {
 			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
 		}
@@ -128,12 +128,14 @@ function stringRenderExposed(text) {
 		text = text.replaceAll(/(?<!<)\//g, '<br>');
 
 		text = text.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
-		text = text.replace(/\n/g, '<br>')
+		text = text
+      .replace(/\n/g, '<br>')
+			.replace(/^V\./g, '<span class="red line-starting-symbol">&#8483;.</span>')
+			.replace(/^R\. br./g, '<span class="red line-starting-symbol">&#8479;. br.</span>')
+			.replace(/^R\./g, '<span class="red line-starting-symbol">&#8479;.</span>')
 			.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
 			.replace(/N\./g, '<span class=\'red\'>N.</span>')
-			.replace(/R\. br./g, '<span class=\'red\'>&#8479;. br.</span>')
 			.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
-			.replace(/^V\./g, '<span class=\'red\'>&#8483;.</span>')
 			.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
 			.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
 			.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
@@ -146,14 +148,6 @@ function stringRenderExposed(text) {
 
 export function renderRite(data, options) {
 
-  function stringRender(text, translation = false) {
-    if (translation && !options['side-by-side']) {
-      text = text.replaceAll(/^(V\.\s|R\.\sbr.\s|R\.\s|\d+)/g, '');
-    }
-
-    return stringRenderExposed(text);
-  };
-
   usedCommemorations = data['used-commemorations'];
   matinsCommemoration = data['commemoratio-matutini'] ? data['commemoratio-matutini'][0] : null;
 
@@ -161,7 +155,6 @@ export function renderRite(data, options) {
 
   openDivs = [];
   paragraphOpen = false;
-  textAbove = false;
   latinBuffer = '';
   vernacularBuffer = '';
   riteParagraphBuffer = [];
@@ -171,16 +164,9 @@ export function renderRite(data, options) {
   function closeParagraph() {
     if (paragraphOpen) {
       paragraphOpen = false;
-      if (options['side-by-side']) {
-        latinBuffer += '</div>';
-        vernacularBuffer += '</div>';
-        rite += latinBuffer + vernacularBuffer + '</div>';
-      } else {
-        rite += riteParagraphBuffer.join('<br>') + '</p>';
-        riteParagraphBuffer = [];
-      }
+      rite += riteParagraphBuffer.join('') + '</p>';
+      riteParagraphBuffer = [];
     }
-    textAbove = false;
   }
 
   function openDiv(style, name) {
@@ -198,13 +184,7 @@ export function renderRite(data, options) {
   function openParagraph(style) {
     closeParagraph();
     paragraphOpen = true;
-    if (options['side-by-side']) {
-      latinBuffer = `<div class="left-column-latin"><p class="rite-text ${style}">`;
-      vernacularBuffer = `<div class="right-column-vernacular"><p class="rite-text ${style} rite-text-translation side-by-side">`;
-      rite += '<div class="side-by-side-column-container">';
-    } else {
-      rite += `<p class="rite-text ${style}">`;
-    }
+    rite += `<p class="rite-text ${style}">`;
   }
 
   function makeCenteredHeader(header, style = 'item-header') {
@@ -218,24 +198,10 @@ export function renderRite(data, options) {
   }
 
   function appendText(text, translated = null, translationclasses = []) {
-    if (options['side-by-side']) {
-      if (textAbove) {
-        latinBuffer += '<br>';
-      }
-      latinBuffer += stringRender(text);
-      if (textAbove && translated) {
-        vernacularBuffer += '<br>';
-      }
-      if (translated) {
-        vernacularBuffer += stringRender(translated, true);
-      }
-    } else {
-      if (!translated) {
-        translated = '';
-      }
-      riteParagraphBuffer.push(`<span class="rite-text-line"><span class="rite-text-latin">${stringRender(text)}</span><span class="rite-text-translation">${stringRender(translated, true)}</span></span>`);
+    if (!translated) {
+      translated = '';
     }
-    textAbove = true;
+    riteParagraphBuffer.push(`<span class="rite-text-line"><span class="rite-text-latin">${stringRender(text)}</span><span class="rite-text-translation">${stringRender(translated, true)}</span></span>`);
   }
 
   function renderGabc(replaced, quaesitum, cantus, translated = null, tags) {
@@ -243,11 +209,11 @@ export function renderRite(data, options) {
     openDiv('', 'gabc-chant');
     let cantusUnpack = unpack(cantus);
     if (!translated) {
-      translated = '';
+      var translatedString = '';
     } else if (Array.isArray(translated)) {
-      translated = translated.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
+      var translatedString = translated.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
     }
-    rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translated}">`;
+    rite += `<gabc-chant gabc="${cantusUnpack}" tags="${quaesitum.join('+')}" translated="${translatedString}">`;
     openParagraph(tags.join(' '));
     renderInner(replaced, translated, tags);
     closeParagraph();
@@ -535,10 +501,8 @@ export function renderRite(data, options) {
         header = makeHeadingAnnotation(data.datum.split('\n')[0].slice(1, -1));
         // Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
         data.datum = data.datum.replace(/^\[.+?]\n\d+\s/, '').split('\n');
-        if (translated && options['side-by-side']) {
+        if (translated) {
           translated = formatPsalm(unpack(translated)).replace(/^\[.+?]\n\d+\s/, '').split('\n');
-        } else if (translated) {
-          translated = unpack(translated).replaceAll(/\[.+?]/g, '').split('\n').slice(1);
         }
         if (parentTags.includes('preces')) {
           data.tags.push('textus-psalmi-precibus');

@@ -205,8 +205,8 @@
 					<div x-show="initialized" id="rite-container" x-html="Rite" :class="{
             'chant-shown': parameters.recitation == 'plainchant',
             'chant-hidden': parameters.recitation != 'plainchant',
-            'side-by-side': parameters['side-by-side'],
-            'line-by-line': !parameters['side-by-side']
+            'side-by-side': parameters['side-by-side'] && parameters.translation,
+            'line-by-line': !parameters['side-by-side'] && parameters.translation
             }">
 					</div>
 					<template x-if="bottompanel">
