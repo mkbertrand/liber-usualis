@@ -85,3 +85,40 @@ export function stringRender(text, translation = false) {
 			.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
 		return text;
 }
+
+export function tags(element) {
+  if (typeof element === 'object' && !Array.isArray(element)) {
+    return new Set(element.tags);
+  } else {
+    return new Set();
+  }
+}
+
+export function quaesitum(element) {
+  if (typeof element === 'object' && !Array.isArray(element) && 'quaesitum' in element) {
+    return new Set(element.quaesitum);
+  } else {
+    return tags(element);
+  }
+}
+
+// It can be readily observed that this is just an extremely primitive version of render()
+export function unpack(data) {
+	if (typeof data === 'string') {
+		return data;
+  } else if (data === null) {
+    return null;
+	} else if (typeof data === 'object') {
+		return Array.isArray(data) ? data.map((d) => unpack(d)).flat() : unpack(data.datum);
+	}
+};
+
+// Digs out nested data recursively (useful for translation)
+export function claw(data) {
+	if (typeof data.datum === 'string' || Array.isArray(data.datum)) {
+		return data;
+	} else {
+		return claw(data.datum);
+	}
+}
+
