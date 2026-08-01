@@ -57,7 +57,7 @@ export function rubricRender(data) {
 	return data;
 }
 
-export function stringRender(text, translation = false) {
+export function stringRender(text) {
 		if (text.match(/^\[.+?\]$/)) {
 			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
 		}

@@ -84,7 +84,7 @@ class RiteRenderer {
     if (!translation) {
       translation = '';
     }
-    this.rite += `<span class="rite-text-line"><span class="rite-text-latin">${stringRender(text)}</span><span class="rite-text-translation">${stringRender(translation, true)}</span></span>`;
+    this.rite += `<span class="rite-text-line"><span class="rite-text-latin">${stringRender(text)}</span><span class="rite-text-translation">${stringRender(translation)}</span></span>`;
   }
 
   renderGabc(replaced, quaesitum, cantus, translation = null, tags) {
@@ -431,7 +431,6 @@ class RiteRenderer {
     }
     for (var i = 0; i < element.datum.length - 1; i++) {
       this.openDiv('', 'formula-commemorationis');
-      console.log('hi');
       this.makeHeadingAnnotation(abbreviateName(this.usedCommemorations[i][0]));
       this.recurseRite(element.datum[i], translation, parentTags.union(tags(element)));
       if (i != element.datum.length - 2) { this.closeDiv('formula-commemorationis'); }
@@ -522,7 +521,6 @@ class RiteRenderer {
     } else if (typeof element === 'string') {
       let annot = element.match(/^\[(.+?)\]\//)
       if (annot) {
-        console.log(parentTags);
         if (parentTags.has('capitulum')) {
           annot[1] = 'Capitulum. ' + annot[1];
         }
