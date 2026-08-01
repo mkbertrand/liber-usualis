@@ -223,6 +223,7 @@ class RiteRenderer {
     if (!uniquelyhasbottom('hymnus') || tags(element).has('te-deum')) {
       return false;
     }
+
     if (typeof unpack(element) === 'string' && unpack(element).startsWith('[')) {
       this.appendText(unpack(element));
       return true;
@@ -315,7 +316,7 @@ class RiteRenderer {
   }
 
   tryChant(element, translation, parentTags) {
-    if (this.openDivs.includes('gabc-chant-container') || typeof element !== 'object' || !('cantus' in element) || element['cantus'] === undefined || (quaesitum(element).has('antiphona') && JSON.stringify(element.datum).includes('"cantus"'))) {
+    if (this.openDivs.includes('gabc-chant-container') || typeof element !== 'object' || !('cantus' in element) || element['cantus'] === undefined || (!quaesitum(element).isDisjointFrom(new Set(['antiphona', 'hymnus'])) && JSON.stringify(element.datum).includes('"cantus"'))) {
       return false;
     }
     this.renderGabc(element.datum, quaesitum(element), element.cantus, translation, parentTags.union(tags(element)));
