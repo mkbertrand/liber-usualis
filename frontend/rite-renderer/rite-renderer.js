@@ -219,7 +219,7 @@ class RiteRenderer {
       return tagset.has(tag) && !tags(element.datum).has(tag);
     }
 
-    // Handle hymns (excluding the Te Deum which just gets rendered like normal.)
+    // Ignore nested hymns and Te Deum.
     if (!uniquelyhasbottom('hymnus') || tags(element).has('te-deum')) {
       return false;
     }
