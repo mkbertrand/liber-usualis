@@ -40,27 +40,30 @@
     }:
     let
       # Helper function to create python_env for a given system
-      mkPythonEnv = system:
+      mkPythonEnv =
+        system:
         let
           pkgs = import nixpkgs { inherit system; };
           workspace = uv2nix.lib.workspace.loadWorkspace { workspaceRoot = ./.; };
           overlay = workspace.mkPyprojectOverlay { sourcePreference = "wheel"; };
           python = pkgs.python313;
-          pythonSet = (pkgs.callPackage pyproject-nix.build.packages {
-            inherit python;
-          }).overrideScope (
-            pkgs.lib.composeManyExtensions [
-              pyproject-build-systems.overlays.default
-              overlay
-              (final: prev: {
-                wsgi-request-logger = prev.wsgi-request-logger.overrideAttrs (old: {
-                  nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [
-                    final.setuptools
-                  ];
-                });
-              })
-            ]
-          );
+          pythonSet =
+            (pkgs.callPackage pyproject-nix.build.packages {
+              inherit python;
+            }).overrideScope
+              (
+                pkgs.lib.composeManyExtensions [
+                  pyproject-build-systems.overlays.default
+                  overlay
+                  (final: prev: {
+                    wsgi-request-logger = prev.wsgi-request-logger.overrideAttrs (old: {
+                      nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [
+                        final.setuptools
+                      ];
+                    });
+                  })
+                ]
+              );
         in
         pythonSet.mkVirtualEnv "libu-env" workspace.deps.default;
 
@@ -69,10 +72,18 @@
       python_env = mkPythonEnv nixosSystem;
 
       nodes = [ "libu" ];
-      formats = [ "docker" "proxmox" "iso" "install-iso" "linode" "amazon" ];
+      formats = [
+        "docker"
+        "proxmox"
+        "iso"
+        "install-iso"
+        "linode"
+        "amazon"
+      ];
 
       # For nixos-generators packages
-      configuration = nodename: format:
+      configuration =
+        nodename: format:
         nixos-generators.nixosGenerate {
           system = nixosSystem;
           inherit format;
@@ -81,27 +92,41 @@
             ./nix/nixos-config.nix
           ];
           specialArgs = {
-            inherit self nixpkgs nodename format python_env;
+            inherit
+              self
+              nixpkgs
+              nodename
+              format
+              python_env
+              ;
           };
         };
 
       # For nixosConfigurations (nixos-rebuild)
-      generators = nodename: format:
+      generators =
+        nodename: format: hardwareModule:
         nixpkgs.lib.nixosSystem {
           system = nixosSystem;
           modules = [
             determinate.nixosModules.default
             ./nix/nixos-config.nix
-            ./${format}-hw.nix
+            hardwareModule
           ];
           specialArgs = {
-            inherit self nixpkgs nodename format python_env;
+            inherit
+              self
+              nixpkgs
+              nodename
+              format
+              python_env
+              ;
           };
         };
 
     in
     # Merge per-system outputs with top-level nixosConfigurations
-    flake-utils.lib.eachDefaultSystem (system:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs { inherit system; };
         systemPythonEnv = mkPythonEnv system;
@@ -120,7 +145,8 @@
 
         # Image packages (nixos-generators)
         packages = builtins.listToAttrs (
-          builtins.concatMap (format:
+          builtins.concatMap (
+            format:
             map (nodename: {
               name = "${nodename}-${format}";
               value = configuration nodename format;
@@ -128,15 +154,9 @@
           ) formats
         );
       }
-    ) // {
-      # Top-level nixosConfigurations (required for nixos-rebuild)
-      nixosConfigurations = builtins.listToAttrs (
-        builtins.concatMap (format:
-          map (nodename: {
-            name = "${nodename}-${format}";
-            value = generators nodename format;
-          }) nodes
-        ) formats
-      );
+    )
+    // {
+      # Top-level configuration for the supported nixos-rebuild target.
+      nixosConfigurations.libu-linode = generators "libu" "linode" ./nix/linode-hw.nix;
     };
 }

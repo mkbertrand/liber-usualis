@@ -4,6 +4,7 @@
   format,
   nodename,
   python_env,
+  self,
   ...
 }:
 let
@@ -19,7 +20,7 @@ let
 
   bottle_app = pkgs.stdenv.mkDerivation {
     name = "bottle_app";
-    src = ./.;
+    src = self;
     buildInputs = [
       app_pkgs
     ];
@@ -28,7 +29,7 @@ let
       cp -r . $out/lib/
     '';
   };
-  domain = "alphonsus.cc";
+  domain = "breviarium.io";
 in
 {
   config = {
@@ -135,7 +136,7 @@ in
         "www.${domain}" = {
           enableACME = true; # Use Let's Encrypt
           forceSSL = true; # Redirect HTTP to HTTPS
-          globalRedirect = "liberusualis.org";
+          globalRedirect = domain;
         };
 
         # "ec2-3-144-118-245.us-east-2.compute.amazonaws.com" = {
@@ -180,7 +181,7 @@ in
         serviceConfig = {
           Type = "oneshot";
           RemainAfterExit = true;
-          ExecStart = "${pkgs.rsync}/bin/rsync -a --delete ${bottle_app.out}/lib/ /var/lib/libu/";
+          ExecStart = "${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${bottle_app.out}/lib/ /var/lib/libu/";
           User = "root";
           Group = "root";
         };
@@ -224,7 +225,11 @@ in
     ];
 
     nix.settings = {
-      trusted-users = [ "master" "@wheel" "root" ];
+      trusted-users = [
+        "master"
+        "@wheel"
+        "root"
+      ];
       experimental-features = [
         "nix-command"
         "flakes"
