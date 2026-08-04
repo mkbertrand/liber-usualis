@@ -9,10 +9,13 @@ before making non-trivial backend, frontend, or data-shape changes.
 - Keep liturgical behavior data-driven. Prefer tagged JSON data, rule tables,
   category files, discrimina tables, and sequentes rules over hard-coded feast,
   date, or text-selection logic.
-- Preserve the main backend flow: request parsing in `server.py`, kalendar lookup
-  in `kalendar/`, prioritization in `prioritizer.py`, data loading in
-  `datamanage.py`, content assembly/search in `breviarium.py`, and psalm lookup in
-  `psalms.py`.
+- Preserve the main backend flow: request parsing in `server.py`, request
+  orchestration in root `datamanage.py`, annual and daily rule application in
+  `kalendar/kalendar.py` and `kalendar/daily_tagger.py`, tagged-content loading in
+  `composer/book.py`, content assembly/search in `composer/corpus.py`,
+  superimposition in `composer/rite.py`, and psalm lookup in
+  `composer/psalms.py`. Root `breviarium.py` is a CLI and test-facing consumer of
+  that flow, not the composition engine.
 - Keep HTTP concerns at the edge. `server.py` should parse parameters, call pure
   domain functions, and serialize results; avoid placing reusable liturgical
   rules or search logic in route handlers unless `architecture.org` explicitly
@@ -26,8 +29,9 @@ before making non-trivial backend, frontend, or data-shape changes.
   that silently allows mutually exclusive tags from `data/{book}/categoriae/` to
   coexist in a resolved query.
 - Keep frontend state and rendering aligned with `architecture.org`: Bottle
-  templates provide the page shell, Alpine manages UI state, `pray.js` handles
-  events, and `ritegen.js` defines ritual ambits/rendering structure.
+  templates provide the page shell and Alpine state, `ambit.js` defines ritual
+  structure and request composition, `ritegen.js` renders rites, and
+  `pray-window.js` contains window and panel helpers.
 - Update `architecture.org` in the same change when you intentionally alter module
   responsibilities, endpoint behavior, data flow, tag semantics, or file layout.
 
@@ -38,9 +42,10 @@ before making non-trivial backend, frontend, or data-shape changes.
   return new values rather than mutating inputs or relying on hidden globals.
 - Use immutable values for domain data: `frozenset` for tag sets, tuples for fixed
   sequences, and copied dictionaries/lists when deriving modified structures.
-- Avoid classes unless they provide a clear architectural benefit. Prefer plain
-  dictionaries, typed tuples, dataclasses with `frozen=True`, or simple module-level
-  functions for domain records and transformations.
+- Preserve the established `Book`, `Corpus`, `ContingentCorpus`, `Rite`, and
+  `Bookshelf` boundaries. Outside those architectural abstractions, prefer plain
+  dictionaries, typed tuples, frozen dataclasses, or module-level functions over
+  new stateful classes.
 - Keep side effects isolated at boundaries: file/network I/O in data-loading or
   server layers, caching in clearly named loader functions, and rendering or HTTP
   serialization at the outer edge.
@@ -71,14 +76,16 @@ before making non-trivial backend, frontend, or data-shape changes.
 - Keep JSON content files declarative. Do not encode procedural behavior in content
   strings or ad hoc keys when an existing tag, rule table, category, or discrimina
   mechanism can express it.
-- Preserve the expected entry shape: `tags`, `datum`, optional `src`, and the
-  documented expansion behavior for extra keys in `datamanage.py`.
+- Preserve the expected entry shape: `tags`, `datum`, and the documented expansion
+  of other keys into separately tagged entries in `composer/book.py`. Do not
+  restore `src`-based chant fetching; chant is a contingent corpus applied through
+  `Rite.superimpose()`.
 - When adding tags, verify that they belong in the appropriate category file if
   they participate in positional, temporal, object, or feast classification.
 - When multiple entries can match a query, prefer fixing tags or discrimina rules
   over adding special-case search code.
-- Keep translations parallel to source content through language tags and the
-  existing translation lookup mechanism.
+- Keep translations parallel to source content through matching tags and the
+  existing contingent-corpus superimposition mechanism.
 
 ## Testing And Verification
 
