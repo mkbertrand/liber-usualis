@@ -15,7 +15,7 @@
 			"@context":"https://schema.org",
 			"@type":"WebSite",
 			"name":"Liber Usualis",
-			"url":"https://liberusualis.org/"
+			"url":"https://breviarium.io/"
 		}
 		</script>
 		<meta charset="utf-8">
