@@ -5,10 +5,6 @@
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2605.0";
     flake-utils.url = "github:numtide/flake-utils";
-    nixos-generators = {
-      url = "github:nix-community/nixos-generators";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     pyproject-nix = {
       url = "github:pyproject-nix/pyproject.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +28,6 @@
       nixpkgs,
       flake-utils,
       determinate,
-      nixos-generators,
       pyproject-nix,
       uv2nix,
       pyproject-build-systems,
@@ -71,57 +66,41 @@
       nixosSystem = "x86_64-linux";
       python_env = mkPythonEnv nixosSystem;
 
-      nodes = [ "libu" ];
-      formats = [
-        "docker"
-        "proxmox"
-        "iso"
-        "install-iso"
-        "linode"
-        "amazon"
-      ];
-
-      # For nixos-generators packages
-      configuration =
-        nodename: format:
-        nixos-generators.nixosGenerate {
-          system = nixosSystem;
-          inherit format;
-          modules = [
-            determinate.nixosModules.default
-            ./nix/nixos-config.nix
-          ];
-          specialArgs = {
-            inherit
-              self
-              nixpkgs
-              nodename
-              format
-              python_env
-              ;
-          };
+      imageConfiguration = nixpkgs.lib.nixosSystem {
+        system = nixosSystem;
+        modules = [
+          determinate.nixosModules.default
+          ./nix/nixos-config.nix
+          ./nix/image-formats.nix
+        ];
+        specialArgs = {
+          inherit self nixpkgs python_env;
+          nodename = "libu";
+          format = null;
         };
+      };
 
-      # For nixosConfigurations (nixos-rebuild)
-      generators =
-        nodename: format: hardwareModule:
-        nixpkgs.lib.nixosSystem {
-          system = nixosSystem;
-          modules = [
-            determinate.nixosModules.default
-            ./nix/nixos-config.nix
-            hardwareModule
-          ];
-          specialArgs = {
-            inherit
-              self
-              nixpkgs
-              nodename
-              format
-              python_env
-              ;
-          };
+      imagePackages = {
+        libu-proxmox = imageConfiguration.config.system.build.images.proxmox;
+        libu-iso = imageConfiguration.config.system.build.images.iso;
+        libu-install-iso = imageConfiguration.config.system.build.images.iso-installer;
+        libu-linode = imageConfiguration.config.system.build.images.linode;
+        libu-amazon = imageConfiguration.config.system.build.images.amazon;
+      };
+
+      linodeConfiguration = nixpkgs.lib.nixosSystem {
+        system = nixosSystem;
+        modules = [
+          determinate.nixosModules.default
+          ./nix/nixos-config.nix
+          ./nix/linode-hw.nix
+        ];
+        specialArgs = {
+          inherit self nixpkgs python_env;
+          nodename = "libu";
+          format = "linode";
         };
+      };
 
     in
     # Merge per-system outputs with top-level nixosConfigurations
@@ -140,23 +119,17 @@
             systemPythonEnv
             pkgs.uv
             pkgs.awscli2
+            pkgs.jq
           ];
         };
 
-        # Image packages (nixos-generators)
-        packages = builtins.listToAttrs (
-          builtins.concatMap (
-            format:
-            map (nodename: {
-              name = "${nodename}-${format}";
-              value = configuration nodename format;
-            }) nodes
-          ) formats
-        );
+        packages = nixpkgs.lib.optionalAttrs (system == nixosSystem) imagePackages;
       }
     )
     // {
-      # Top-level configuration for the supported nixos-rebuild target.
-      nixosConfigurations.libu-linode = generators "libu" "linode" ./nix/linode-hw.nix;
+      nixosConfigurations = {
+        libu-images = imageConfiguration;
+        libu-linode = linodeConfiguration;
+      };
     };
 }

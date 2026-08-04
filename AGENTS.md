@@ -99,6 +99,7 @@ before making non-trivial backend, frontend, or data-shape changes.
   changed behavior.
 - For data-only changes, validate that affected JSON parses and that representative
   `/day` or `/rite` generation paths still resolve without ambiguity.
+- Do not run any nix builds or nix check commands unless part of debugging an issue related to the requested change, they will be manually verified by the developer after the changes are made.
 
 ## Change Discipline
 

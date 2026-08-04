@@ -22,7 +22,7 @@
    | Frontend       | Alpine.js 3.x, jQuery, Exsurge.js                            |
    | Templates      | Bottle templates                                             |
    | Data           | Tagged JSON plus untagged text and GABC resources            |
-   | Infrastructure | Nix flakes and NixOS generators                              |
+   | Infrastructure | Nix flakes and native nixpkgs image builders                 |
 
 * Backend
 
@@ -361,8 +361,13 @@
   =/var/lib/libu=. Deployment preserves an operator-provided =books.json= and
   =data/generated/= while replacing the tracked application. Operators must run
   =sync-books.py= separately when generated books need to be installed or updated.
-  Generator packages support the formats listed in =flake.nix=; the Linode hardware
-  module backs the supported =nixos-rebuild= configuration.
+  =nix/image-formats.nix= customizes nixpkgs' native image variants. The
+  =libu-images= NixOS configuration exposes Linode, Proxmox, Amazon, application
+  ISO, and installer ISO images through =system.build.images= and
+  =nixos-rebuild build-image=. Package aliases preserve the corresponding
+  =nix build .#libu-*= commands. Docker output is not provided. The separate Linode
+  hardware module backs the installed host's =nixos-rebuild= configuration and is
+  not included in generated images because its filesystem UUIDs are host-specific.
 
 * Key File Index
 
@@ -390,3 +395,4 @@
   | =data/{book}/kalendarium/=                   | Annual, daily, and implication rules         |
   | =flake.nix=                                  | Development and deployment outputs           |
   | =nix/nixos-config.nix=                       | NixOS service and nginx configuration        |
+  | =nix/image-formats.nix=                      | Native image-variant customization           |

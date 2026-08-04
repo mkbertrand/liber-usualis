@@ -67,14 +67,33 @@ Each file within this project are released under the GNU Affero General Public L
 
 
 # deploying
+
+All image outputs target `x86_64-linux` and use the image builders included in
+nixpkgs. Existing package aliases remain available:
+
+| Output | Artifact |
+| --- | --- |
+| `libu-linode` | gzip-compressed raw Linode image |
+| `libu-proxmox` | Proxmox VMA archive |
+| `libu-amazon` | Amazon-compatible VHD |
+| `libu-iso` | bootable application ISO |
+| `libu-install-iso` | NixOS installer ISO |
+
+Build an alias with `nix build .#libu-linode`, or use the native image interface:
+
+```bash
+nixos-rebuild build-image --flake .#libu-images --image-variant linode
+```
+
 ## Deploy to Linode
 ### Rebuild and boot an existing Linode
 ```bash
-nix build .#libu-linode --impure;
+nix build .#libu-linode;
 nix-shell -p linode-cli spwgen;
+export IMAGE_PATH="$(realpath result/*.img.gz)";
 export ROOT_PASS="$(spwgen uldn 16)"
 echo "$ROOT_PASS"
-linode-cli image-upload --label "libu-nix" --description "libu deployed to NixOS" --region "us-ord" result/nixos.img.gz;
+linode-cli image-upload --label "libu-nix" --description "libu deployed to NixOS" --region "us-ord" "$IMAGE_PATH";
 export IMAGE_ID="$(linode-cli images list --text | awk '/libu-nix/{print $1}' | awk '{for (i=1; i<=NF; i++) last=$i} END {print last}')";
 echo "imageid: $IMAGE_ID";
 export LINODE_ID="$(linode-cli linodes list --text | grep "libu-nix" | cut -f1)";
@@ -86,13 +105,14 @@ linode-cli linodes boot "$LINODE_ID" --config_id "$CONFIG_ID";
 ```
 ### Create a new Linode, upload image, and boot from it
 ```bash
-nix build .#libu-linode --impure;
+nix build .#libu-linode;
 nix-shell -p linode-cli spwgen jq;
+export IMAGE_PATH="$(realpath result/*.img.gz)";
 export ROOT_PASS="$(spwgen uldn 16)"
 echo "$ROOT_PASS"
 
 # Upload the built NixOS image
-linode-cli image-upload --label "libu-nix" --description "libu deployed to NixOS" --region "us-ord" result/nixos.img.gz;
+linode-cli image-upload --label "libu-nix" --description "libu deployed to NixOS" --region "us-ord" "$IMAGE_PATH";
 export IMAGE_ID="$(linode-cli images list --text | awk '/libu-nix/{print $1}' | awk '{for (i=1; i<=NF; i++) last=$i} END {print last}')";
 echo "imageid: $IMAGE_ID";
 
@@ -115,11 +135,12 @@ linode-cli linodes boot "$LINODE_ID" --config_id "$CONFIG_ID";
 ```
 ## deploy image to proxmox
 ```bash
+nix build .#libu-proxmox;
 export PROXMOX_HOST_IP="192.168.0.11"; # use the IP of one of your proxmox hosts
 export VM_ID="107"; # use whatever VM_ID is not already in use
-export IMAGE_PATH="$(realpath result/* | tail -n1)";
-scp $IMAGE_PATH root@$PROXMOX_HOST_IP:/var/lib/vz/dump/ && \
-ssh root@$PROXMOX_HOST_IP "if pvesh get /nodes/\$(hostname -s)/qemu/$VM_ID --noborder 2>/dev/null; then \
+export IMAGE_PATH="$(realpath result/*.vma.zst)";
+scp "$IMAGE_PATH" "root@$PROXMOX_HOST_IP:/var/lib/vz/dump/" && \
+ssh "root@$PROXMOX_HOST_IP" "if pvesh get /nodes/\$(hostname -s)/qemu/$VM_ID --noborder 2>/dev/null; then \
   echo 'VM $VM_ID exists, deleting...' && \
   qm stop $VM_ID && \
   qm destroy $VM_ID --purge; \
@@ -128,18 +149,25 @@ qmrestore /var/lib/vz/dump/$(basename $IMAGE_PATH) $VM_ID --unique true && \
 qm start $VM_ID"
 ```
 ## deploy image to aws ec2
-not tested yet [see this](https://github.com/nix-community/nixos-generators/issues/343)
+not tested yet
+
+The following commands use `aws` and `jq`, which are available in `nix develop`.
+
 ```bash
 nix build .#libu-amazon;
-export IMAGE_PATH="$(realpath result/* | head -n1)";
+export IMAGE_PATH="$(realpath result/*.vhd)";
+export IMAGE_NAME="$(basename "$IMAGE_PATH")";
 aws configure; # setup your aws auth if it's not already configured
 aws s3 mb s3://nixos-iam-bucket; # create the nixos iam bucket in s3
-aws s3 cp "$IMAGE_PATH" s3://nixos-iam-bucket; # copy the result of nixos-generators nix build to the s3 bucket
+aws s3 cp "$IMAGE_PATH" s3://nixos-iam-bucket; # copy the native nixpkgs image to the S3 bucket
 aws s3api put-bucket-policy --bucket nixos-iam-bucket --policy file://nix/bucket-policy.json; # add the bucket policy
 aws iam create-role --role-name vmimport --assume-role-policy-document file://nix/vmimport-trust-policy.json # First create the role with the trust policy
 aws iam put-role-policy --role-name vmimport --policy-name vmimport-policy --policy-document file://nix/vmimport-policy.json # Then attach the permission policy (not the trust policy)
-aws ec2 import-snapshot --description "Imported nixos VHD" --disk-container file://nix/containers.json | cat; # import the image as an iam
-aws ec2 describe-import-image-tasks --import-task-ids import-snap-4621525fac5e4474t | cat; # monitor the import progress with this, using the task id from the previous command
+jq --arg key "$IMAGE_NAME" '.UserBucket.S3Key = $key' nix/containers.json > /tmp/libu-containers.json;
+export IMPORT_TASK_ID="$(aws ec2 import-snapshot --description "Imported nixos VHD" --disk-container file:///tmp/libu-containers.json --query 'ImportTaskId' --output text)";
+aws ec2 wait snapshot-imported --import-task-ids "$IMPORT_TASK_ID";
+export SNAPSHOT_ID="$(aws ec2 describe-import-snapshot-tasks --import-task-ids "$IMPORT_TASK_ID" --query 'ImportSnapshotTasks[0].SnapshotTaskDetail.SnapshotId' --output text)";
+jq --arg snapshot "$SNAPSHOT_ID" '.[0].Ebs.SnapshotId = $snapshot' nix/block-mapping.json > /tmp/libu-block-mapping.json;
 aws ec2 register-image \
     --name "nixos-libu" \
     --architecture "x86_64" \
@@ -149,10 +177,11 @@ aws ec2 register-image \
     --ena-support \
     --imds-support='v2.0' \
     --sriov-net-support simple \
-    --block-device-mappings "file://nix/block-mapping.json"
+    --block-device-mappings "file:///tmp/libu-block-mapping.json"
 
 ```
-the import-image command might take 30ish minutes to run, so there's probably a better way of creating the new IAM, maybe even just having the nixos config as a public or private flake and running nixos-rebuild switch on the ec2 instance machine with the flake as the target
+The snapshot import may take around 30 minutes. An alternative is to deploy the
+public or private flake to an existing NixOS EC2 instance with `nixos-rebuild`.
 # Rebuilding
 ```bash
 export host="YOUR_HOSTNAME_OR_IP_HERE";

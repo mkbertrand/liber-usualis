@@ -1,7 +1,7 @@
 {
   lib,
   nixpkgs,
-  format,
+  format ? null,
   nodename,
   python_env,
   self,
@@ -38,7 +38,7 @@ in
     system.stateVersion = "26.05";
 
     networking = {
-      hostName = "nixos-${nodename}-${format}";
+      hostName = lib.mkDefault ("nixos-${nodename}" + lib.optionalString (format != null) "-${format}");
       firewall = {
         enable = true;
         allowedTCPPorts = [
@@ -235,45 +235,5 @@ in
       ];
     };
 
-  }
-  // lib.optionalAttrs (format == "proxmox") {
-    proxmox = lib.mkDefault {
-      qemuConf = {
-        bios = "seabios";
-        virtio0 = "local-zfs:vm-102-disk-0"; # WARN: replace with whatever storage you have set up
-        name = "nixos-${nodename}-${format}";
-      };
-      cloudInit.defaultStorage = "local-zfs"; # WARN: replace with whatever storage you have set up
-    };
-    networking = {
-      defaultGateway = "192.168.0.1";
-      nameservers = [
-        "8.8.8.8"
-        "8.8.4.4"
-      ]; # Google's public DNS servers, or replace with your own
-      useDHCP = false;
-      interfaces.ens18.ipv4.addresses = [
-        {
-          address = "192.168.0.36";
-          prefixLength = 24;
-        }
-      ];
-      hostName = "nixos-${nodename}-${format}";
-      firewall = {
-        enable = true;
-        allowedTCPPorts = [
-          22
-          80
-          443
-        ];
-      };
-    };
-  }
-  // lib.optionalAttrs (format == "amazon") {
-    virtualisation.diskSize = 4 * 1024;
-    boot.loader.grub = {
-      enable = true;
-      device = "/dev/xvda"; # Common for AWS instances
-    };
   };
 }
