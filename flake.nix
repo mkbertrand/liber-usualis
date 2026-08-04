@@ -3,7 +3,7 @@
 
   inputs = {
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
-    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2511.0";
+    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2605.0";
     flake-utils.url = "github:numtide/flake-utils";
     nixos-generators = {
       url = "github:nix-community/nixos-generators";

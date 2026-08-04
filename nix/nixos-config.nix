@@ -21,9 +21,7 @@ let
   bottle_app = pkgs.stdenv.mkDerivation {
     name = "bottle_app";
     src = self;
-    buildInputs = [
-      app_pkgs
-    ];
+    buildInputs = app_pkgs;
     buildPhase = ''
       mkdir -p $out/lib
       cp -r . $out/lib/
@@ -37,6 +35,7 @@ in
     # set ntp
     services.chrony.enable = lib.mkDefault true;
     time.timeZone = lib.mkDefault "America/Chicago";
+    system.stateVersion = "26.05";
 
     networking = {
       hostName = "nixos-${nodename}-${format}";
