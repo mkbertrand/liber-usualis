@@ -15,8 +15,7 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 ```bash
 git clone https://github.com/mkbertrand/liber-usualis
 cd liber-usualis
-npm install github:bbloomf/exsurge
-npm install hypher
+npm install
 npm run build
 pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 ```
