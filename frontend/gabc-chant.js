@@ -164,7 +164,7 @@ class ChantElement extends HTMLElement {
 		
 	chantLayout() {
 		if (typeof this.score !== 'undefined') {
-			this.score.layoutChantLines(GABC_CHANT_CONTEXT, $(this).parent().parent().width());
+			this.score.layoutChantLines(GABC_CHANT_CONTEXT, this.parentElement.parentElement.clientWidth);
 			this.innerHTML = `<div class="chantelement-chant-content">${this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated}</div><div class="chantelement-text-content">${this.plainContent}</div>`;
 		}
 	}
@@ -205,18 +205,12 @@ class ChantElement extends HTMLElement {
 	constructor() {
 		super();
 
-    this.translated = $(this).attr('translated');
-    this.gabc = $(this).attr('gabc');
-    this.tags = $(this).attr('tags').split('+');
+    this.translated = this.getAttribute('translated');
+    this.gabc = this.getAttribute('gabc');
+    this.tags = this.getAttribute('tags').split('+');
     this.plainContent = this.innerHTML.toString();
 	}
 }
-$(document).ready(function() {
-	const resizeObserver = new ResizeObserver(() =>{
-		$('gabc-chant').each((index, elem) =>
-			Promise.resolve(new Promise(((resolve, reject) => elem.chantLayout()))))});
-	resizeObserver.observe(document.getElementById('site-wrapper'));
-});
 
 export function initChantElement() {
   customElements.define('gabc-chant', ChantElement);
