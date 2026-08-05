@@ -14,7 +14,6 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 
 ```bash
 git clone https://github.com/mkbertrand/liber-usualis
-git clone https://github.com/mkbertrand/franciscan-chant-closet
 cd liber-usualis
 npm install github:bbloomf/exsurge
 npm install hypher
