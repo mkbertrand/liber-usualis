@@ -1,3 +1,6 @@
+import Hypher from 'hypher';
+import laPatterns from './la-hypher.js';
+
 psalmTones = {};
 fetch('/chant/liber-usualis-chant/untagged/toni-psalmorum.json?v=2').then(data => data.json()).then(json => psalmTones = json);
 
@@ -38,7 +41,7 @@ function getPsalmTone(tone, clef) {
 
 // hyphenateText() is used instead of hyphenate() since hyphenateText() can take whole sections of text.
 // The second argument is the minimum character count of the word to be hyphenated; it defaults to four.
-const HYPH = Hypher.languages['la_VA'];
+const HYPH = new Hypher(laPatterns);
 
 function formatHeader(header) {
   header = header.slice(1, -2).replace(':', '. ') + '.';

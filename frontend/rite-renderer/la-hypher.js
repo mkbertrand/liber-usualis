@@ -1,10 +1,4 @@
-(function () {
-
-var module = {
-    exports: null
-};
-
-module.exports = {
+export default {
 	'id': ['la', 'la_VA'],
 	'leftmin': 1,
 	'rightmin': 1,
@@ -26,14 +20,3 @@ module.exports = {
 		16 : "_supe3r2a6s7tis__supe3r2á6s7tis__tran4s3eremini__tran4s3erentur__tran4s3erémini__tran4s3eréntur_"
 	}
 };
-var h = new window['Hypher'](module.exports);
-
-if (typeof module.exports.id === 'string') {
-    module.exports.id = [module.exports.id];
-}
-
-for (var i = 0; i < module.exports.id.length; i += 1) {
-  window['Hypher']['languages'][module.exports.id[i]] = h;
-}
-}());
-

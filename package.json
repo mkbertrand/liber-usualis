@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "exsurge": "github:bbloomf/exsurge"
+    "exsurge": "github:bbloomf/exsurge",
+    "hypher": "^0.2.5"
   },
   "name": "liber-usualis",
   "description": "A project dedicated to making the Mass, Hours, and Rites of various editions of the Roman Rite easily accessible and beautifully formatted with or without their chants.",
