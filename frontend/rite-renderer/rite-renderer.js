@@ -2,10 +2,8 @@
 
 import {abbreviateName, rubricRender, stringRender, tags, quaesitum, unpack, claw} from './rendering-utils.js';
 
+import {chomp} from './chomp.js';
 import {formatPsalm} from './psalmify.js';
-
-invitatoria = {};
-fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json?v=2').then(data => data.json()).then(json => invitatoria = json);
 
 const RITE_HEADERS = {
 	'matutinum': 'Ad Matutinum.',
@@ -36,7 +34,7 @@ const NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
 
 class RiteRenderer {
   
-  constructor(structuredRite) {
+  constructor(structuredRite, resources) {
     this.usedCommemorations = structuredRite['used-commemorations'];
     this.matinsCommemoration = structuredRite['commemoratio-matutini'] ? structuredRite['commemoratio-matutini'][0] : null;
     
@@ -48,6 +46,7 @@ class RiteRenderer {
     this.antiphonMode = null;
     this.antiphonClef = null;
     this.paragraphStyle = '';
+    this.resources = resources;
   }
 
   closeParagraph() {
@@ -110,7 +109,7 @@ class RiteRenderer {
     } else if (Array.isArray(translation)) {
       var translationString = translation.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
     }
-    this.rite += `<gabc-chant gabc="${cantusUnpack}" tags="${[...quaesitum].join('+')}" translated="${translationString}">`;
+    this.rite += `<gabc-chant gabc="${chomp(cantusUnpack, quaesitum, this.resources)}" translated="${translationString}">`;
     this.openParagraph([...tags].join(' '));
     this.recurseRite(replaced, translation, tags);
     this.closeParagraph();
@@ -339,7 +338,7 @@ class RiteRenderer {
     if (!element.tags.join(' ').includes('/psalmi/')) {
       return false;
     }
-    element.datum = formatPsalm(element.datum, this.antiphonMode, this.antiphonClef);
+    element.datum = formatPsalm(element.datum, this.resources, this.antiphonMode, this.antiphonClef);
 
     this.makeHeadingAnnotation(element.datum.split('\n')[0].slice(1, -1));
     // Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
@@ -489,7 +488,7 @@ class RiteRenderer {
     // The first instance of the Invitatory antiphon has to be rendered first in order to define antiphonMode.
     this.recurseRite(element.datum[0], translation ? translation[0] : null, parentTags.union(tags(element)));
     let invIndex = 0;
-    let invitatorium = invitatoria[this.antiphonMode];
+    let invitatorium = this.resources.invitatoria[this.antiphonMode];
     for (let i = 1; i < element.datum.length; i++) {
       if (typeof element.datum[i] == 'object') {
         this.recurseRite(element.datum[i], translation ? translation[i] : null, parentTags.union(tags(element)));
@@ -611,8 +610,8 @@ class RiteRenderer {
   }
 }
 
-export function renderRite(rite) {
-  let renderer = new RiteRenderer(rite);
+export function renderRite(rite, resources) {
+  let renderer = new RiteRenderer(rite, resources);
   renderer.recurseRite(rite.rite, null, new Set());
   return renderer.rite;
 }

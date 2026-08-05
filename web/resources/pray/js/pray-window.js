@@ -98,7 +98,7 @@ async function getLiturgicalDay(calendarDate, time, parameters) {
 let riteParametersExpectation = null;
 let cachedRites = new Object();
 
-async function getRite(calendarDate, occasion, parameters) {
+async function getRite(calendarDate, occasion, parameters, resources) {
 	if (riteParametersExpectation != JSON.stringify(parameters)) {
 		cachedRites = new Object();
 		riteParametersExpectation = JSON.stringify(parameters);
@@ -135,7 +135,7 @@ async function getRite(calendarDate, occasion, parameters) {
 				ret += Pray.riteTitle(json[i]['used-primary'][0], json[i]['used-primary'][1], 'small');
 				previousTitle = json[i]['used-primary'][0];
 			}
-			ret += Pray.renderRite(json[i]);
+			ret += Pray.renderRite(json[i], resources);
 		}
 		return ret;
 	}

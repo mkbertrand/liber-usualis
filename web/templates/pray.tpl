@@ -58,6 +58,7 @@
 	initialized: false,
 	canIncrementOccasion: true,
 	nextOccasion: $persist(null),
+  resources: new Pray.CorpusResources(),
 	get Rite() {
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
@@ -77,7 +78,7 @@
 		if (!this.updateRiteAsyncLock) {
 			this.updateRiteAsyncLock = true;
 
-			this.rite = getRite(this.getCalendarDate(this.calendarDate), this.hour, this.parameters);
+			this.rite = getRite(this.getCalendarDate(this.calendarDate), this.hour, this.parameters, this.resources);
 			if (scroll) {
 				window.scrollTo({top:0});
 			}
@@ -126,9 +127,10 @@
 	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
 		this.nextOccasion = [resolveParameters(this.parameters).ambit.idindex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).id];
-		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters);
+		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters, this.resources);
 	}
 }" x-init="
+  resources.load();
 	if (!('votives' in parameters)) {
 		parameters.votives = {'de-sanctis-angelis': false, 'de-sanctis-apostolis': false, 'de-joseph': false, 'de-eucharistiae-sacramento': false, 'de-passione': false, 'de-immaculata-conceptione': false};
 	}
@@ -210,14 +212,14 @@
 							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><img id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" src="/resources/svg/arrow-down.svg" /></button>
 							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
 								<div id="date-selector-container">
-									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters);"><img src="/resources/svg/arrow-left.svg" /></button>
+									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, resources)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters, resources);"><img src="/resources/svg/arrow-left.svg" /></button>
 									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate(calendarDate)">
-									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters)" @click="setCalendarDate(search)"><img src="/resources/svg/arrow-clockwise.svg" /></button>
-									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters);"><img src="/resources/svg/arrow-right.svg" /></button>
+									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters, resources)" @click="setCalendarDate(search)"><img src="/resources/svg/arrow-clockwise.svg" /></button>
+									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, resources)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters, resources);"><img src="/resources/svg/arrow-right.svg" /></button>
 								</div>
 								<div id="rite-selector-container">
 									<template x-for="occasion in resolveParameters(parameters).ambit.occasions">
-										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @mouseover.throttle="getRite(getCalendarDate(calendarDate), occasion.id, parameters)" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
+										<button class="rite-selector-button" :class="(occasion.id == hour) && 'rite-selector-button-selected'" @mouseover.throttle="getRite(getCalendarDate(calendarDate), occasion.id, parameters, resources)" @click="setOccasion(occasion.id)" x-text="occasion.name"></button>
 									</template>
 								</div>
 							</div>

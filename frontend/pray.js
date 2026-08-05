@@ -4,5 +4,6 @@ import { dateHeader, riteTitle, abbreviateName } from './rite-renderer/rendering
 import { renderRite } from './rite-renderer/rite-renderer.js';
 import { lineByLine } from './rite-renderer/line-by-line.js';
 import { defineAmbit } from './ambit.js';
-export { dateHeader, riteTitle, abbreviateName, renderRite, lineByLine, defineAmbit };
+import { CorpusResources } from './corpus-resources.js';
+export { dateHeader, riteTitle, abbreviateName, renderRite, lineByLine, defineAmbit, CorpusResources };
 initChantElement();

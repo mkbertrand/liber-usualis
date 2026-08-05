@@ -1,10 +1,7 @@
 import Hypher from 'hypher';
 import laPatterns from './la-hypher.js';
 
-psalmTones = {};
-fetch('/chant/liber-usualis-chant/untagged/toni-psalmorum.json?v=2').then(data => data.json()).then(json => psalmTones = json);
-
-function getPsalmTone(tone, clef) {
+function getPsalmTone(tone, clef, resources) {
   if (!tone) {
     return null;
   } else if (tone == 'T. pereg.') {
@@ -13,7 +10,7 @@ function getPsalmTone(tone, clef) {
   // If there's a middle character to the clef, ignore it for our purposes.
   clef = clef.at(0) + clef.at(-1);
 
-  var mode = psalmTones[tone[0]];
+  var mode = resources.psalmTones[tone[0]];
   var possibleVariants = mode.filter((variant) => tone in variant);
 
   var variant = possibleVariants[0];
@@ -143,9 +140,9 @@ function accentMark(syllables, accentationData, cursor) {
   return syllables;
 }
 
-export function formatPsalm(psalm, psalmTone = null, clef = null) {
+export function formatPsalm(psalm, resources = null, psalmTone = null, clef = null) {
 
-  var tone = getPsalmTone(psalmTone, clef);
+  var tone = getPsalmTone(psalmTone, clef, resources);
 
   var ret = '';
 
