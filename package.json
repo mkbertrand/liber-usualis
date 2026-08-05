@@ -6,7 +6,6 @@
   "description": "A project dedicated to making the Mass, Hours, and Rites of various editions of the Roman Rite easily accessible and beautifully formatted with or without their chants.",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css",

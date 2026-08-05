@@ -39,16 +39,25 @@ class RiteRenderer {
     this.matinsCommemoration = structuredRite['commemoratio-matutini'] ? structuredRite['commemoratio-matutini'][0] : null;
     
     this.rite = '';
+    this.leftBuffer = [];
+    this.rightBuffer = [];
     this.openDivs = [];
     this.paragraphOpen = false;
     this.antiphonMode = null;
     this.antiphonClef = null;
+    this.paragraphStyle = '';
   }
 
   closeParagraph() {
-    if (this.paragraphOpen) {
+    if (this.paragraphOpen && this.leftBuffer.length == 0) {
       this.paragraphOpen = false;
-      this.rite += '</p>';
+    } else if (this.paragraphOpen) {
+      this.paragraphOpen = false;
+      let leftColumn = this.leftBuffer.join('<br>');
+      let rightColumn = this.rightBuffer.join('<br>');
+      this.rite += `<div class="rite-text-container ${this.paragraphStyle}"><p class="rite-text rite-text-latin">${leftColumn}</p><p class="rite-text rite-text-translation">${rightColumn}</p></div>`;
+      this.leftBuffer = [];
+      this.rightBuffer = [];
     }
   }
 
@@ -67,7 +76,7 @@ class RiteRenderer {
   openParagraph(style) {
     this.closeParagraph();
     this.paragraphOpen = true;
-    this.rite += `<p class="rite-text ${style}">`;
+    this.paragraphStyle = style;
   }
 
   makeCenteredHeader(header, style = 'item-header') {
@@ -80,11 +89,12 @@ class RiteRenderer {
     this.rite += `<p class="rite-text-rubric rite-text-rubric-above-paragraph">${annot}</p>`;
   }
 
-  appendText(text, translation = null, translationclasses = []) {
+  appendText(text, translation = null) {
     if (!translation) {
       translation = '';
     }
-    this.rite += `<span class="rite-text-line"><span class="rite-text-latin">${stringRender(text)}</span><span class="rite-text-translation">${stringRender(translation)}</span></span>`;
+    this.leftBuffer.push(stringRender(text));
+    this.rightBuffer.push(stringRender(translation));
   }
 
   renderGabc(replaced, quaesitum, cantus, translation = null, tags) {
@@ -535,7 +545,7 @@ class RiteRenderer {
       if (Array.isArray(translation)) {
         translation = null;
       }
-      this.appendText(element, translation, parentTags);
+      this.appendText(element, translation);
       return;
     }
 
@@ -575,7 +585,7 @@ class RiteRenderer {
     }
     for (let name of FULLY_PARAGRAPHED_ELEMENTS) {
       if (uniquelyhas(name) && !tags(element).has('dominus-det')) {
-        this.openParagraph(element.tags.concat(parentTags).join(' '));
+        this.openParagraph([...tags(element).union(parentTags)].join(' '));
         this.recurseRite(element.datum, translation, parentTags.union(tags(element)));
         this.closeParagraph();
         return;
@@ -590,7 +600,7 @@ class RiteRenderer {
     }
     for (let name of PARAGRAPH_OPENING_ELEMENTS) {
       if (uniquelyhas(name)) {
-        this.openParagraph(element.tags.concat(parentTags).join(' '));
+        this.openParagraph([...tags(element).union(parentTags)].join(' '));
         this.recurseRite(element.datum, translation, parentTags.union(tags(element)));
         return;
       }

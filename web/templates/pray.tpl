@@ -66,7 +66,7 @@
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
 		}
-		return this.rite;
+		return this.parameters['side-by-side'] || !this.initialized ? this.rite : this.rite.then(Pray.lineByLine);
 	},
 	// Sets this.calendarDate with a local date which is adjusted to UTC.
 	setCalendarDate(calendarDate) {
