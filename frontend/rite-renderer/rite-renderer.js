@@ -2,6 +2,8 @@
 
 import {abbreviateName, rubricRender, stringRender, tags, quaesitum, unpack, claw} from './rendering-utils.js';
 
+import {formatPsalm} from './psalmify.js';
+
 invitatoria = {};
 fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json?v=2').then(data => data.json()).then(json => invitatoria = json);
 

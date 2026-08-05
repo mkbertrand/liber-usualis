@@ -126,7 +126,7 @@ function accentMark(syllables, accentationData, cursor) {
     if (syllables[cursor] == ' ') {
       cursor--;
     }
-    syllables[cursor] = `<b>${syllables[cursor]}</b>`;
+    syllables[cursor] = `<span class="accent-start">${syllables[cursor]}</span>`;
     cursor -= 1;
   }
 
@@ -134,13 +134,13 @@ function accentMark(syllables, accentationData, cursor) {
     if (syllables[cursor] == ' ') {
       cursor--;
     }
-    syllables[cursor] = `<i>${syllables[cursor]}</i>`;
+    syllables[cursor] = `<span class="preceding-syllable">${syllables[cursor]}</span>`;
     cursor--;
   }
   return syllables;
 }
 
-function formatPsalm(psalm, psalmTone = null, clef = null) {
+export function formatPsalm(psalm, psalmTone = null, clef = null) {
 
   var tone = getPsalmTone(psalmTone, clef);
 

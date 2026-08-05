@@ -152,6 +152,14 @@
   display: none;
 }
 
+#rite-container.chant-shown span.preceding-syllable {
+  font-style: italic;
+}
+
+#rite-container.chant-shown span.accent-start {
+  font-weight: bold;
+}
+
 #rite-container.side-by-side div.rite-text-container {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
