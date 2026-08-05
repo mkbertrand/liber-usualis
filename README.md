@@ -54,8 +54,11 @@ Ezekiel Warren
 ## Additional Credit
 
 Benjamin Bloomfield (whose Javascript code I 'borrowed' and whose Compline project initially inspired this project)
+
 Divinum Officium Project.
+
 Gregobase.
+
 Nocturnale Romanum.
 
 ## License
