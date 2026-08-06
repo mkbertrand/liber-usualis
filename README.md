@@ -15,22 +15,28 @@ The Liber Usualis codebase is primarily data-driven, with very few hard-coded el
 ```bash
 git clone https://github.com/mkbertrand/liber-usualis
 cd liber-usualis
-npm install
+npm ci
 npm run build
 pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 ```
 
 Note: diff-match-patch is only necessary for test_breviarium.
 
-Entering the Nix development shell links files from the pinned
+Entering the Nix development shell provides Node.js and links files from the pinned
 `liber-usualis-chant` repository into `data/generated/liber-usualis-chant` and
 from the `databased` branch of `franciscan-chant-closet` into
 `data/generated/fcc`. Matching files are replaced while other generated content
-is preserved:
+is preserved. It also copies the Nix-built frontend bundles into
+`web/resources/dist`, so the application is ready to run:
 
 ```bash
 nix develop
 ```
+
+Nix application and image builds generate the frontend bundles automatically.
+The focused frontend output is available with `nix build .#frontend-assets`. Run
+`npm ci` and `npm run build` only when rebuilding the bundles during frontend
+development.
 
 ### Running
 

@@ -4,6 +4,7 @@
   format ? null,
   nodename,
   python_env,
+  frontend_assets,
   self,
   ...
 }:
@@ -25,6 +26,8 @@ let
     buildPhase = ''
       mkdir -p $out/lib
       cp -r . $out/lib/
+      mkdir -p $out/lib/web/resources/dist
+      cp -r ${frontend_assets}/. $out/lib/web/resources/dist/
     '';
   };
   domain = "liberusualis.org";
