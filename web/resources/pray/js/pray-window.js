@@ -15,30 +15,30 @@ var panelsopen = false;
 var panelquotient = 0;
 var riteheight = 1;
 function doPanelSize() {
-	var height = $(window).innerHeight() - parseInt(window.getComputedStyle(document.body).getPropertyValue('--top-bar-title-height').slice(0, -2)) - 1;
+	var height = window.innerHeight - parseInt(window.getComputedStyle(document.body).getPropertyValue('--top-bar-title-height').slice(0, -2)) - 1;
 	var minritewidth = height / 1.6;
 	var panelwidth = height * panelratio;
 
 	// Second condition checks if the screen is MUCH shorter than it is wide, in which case it presumes a mobile browser.
-	canmakepanels = panelwidth * 2 + minritewidth < $(document).width() && height * 3 > $(document).width();
+	canmakepanels = panelwidth * 2 + minritewidth < document.documentElement.clientWidth && height * 3 > document.documentElement.clientWidth;
 
 	if (!canmakepanels) {
-		$('#rite-page-container').css('width', '100%');
-		$('#side-panel-left').css('width', 0);
-		$('#side-panel-right').css('width', 0);
-		$('#content-container-outer').css('width', '100%');
+    document.getElementById('rite-page-container').style.width = '100%';
+    document.getElementById('side-panel-left').style.width = '0';
+    document.getElementById('side-panel-right').style.width = '0';
+    document.getElementById('content-container-outer').style.width = '100%';
 		panelsopen = false;
 		panelquotient = 0;
 
 	} else {
 
 		// In other words, the rite panel will never be wider than 1:1
-		ritewidth = Math.min(height, $(document).width() - 2 * panelwidth, 1600);
+		ritewidth = Math.min(height, document.documentElement.clientWidth - 2 * panelwidth, 1600);
 
-		$('#rite-page-container').css('width', `${ritewidth}px`);
-		$('#side-panel-left').css('width', `${panelwidth}px`);
-		$('#side-panel-right').css('width', `${panelwidth}px`);
-		$('#content-container-outer').css('width', `${ritewidth + panelwidth * 2}px`);
+    document.getElementById('rite-page-container').style.width = `${ritewidth}px`;
+    document.getElementById('side-panel-left').style.width = `${panelwidth}px`;
+    document.getElementById('side-panel-right').style.width = `${panelwidth}px`;
+    document.getElementById('content-container-outer').style.width = `${ritewidth + panelwidth * 2}px`;
 
 		panelsopen = true;
 
@@ -51,7 +51,7 @@ function doPanelSize() {
 }
 
 function generatepanels() {
-	riteheight = $('#rite-container').height();
+	riteheight = document.getElementById('rite-container').clientHeight;
 }
 
 let lastParams = null;
