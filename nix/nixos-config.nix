@@ -27,7 +27,7 @@ let
       cp -r . $out/lib/
     '';
   };
-  domain = "breviarium.io";
+  domain = "liberusualis.org";
 in
 {
   config = {
