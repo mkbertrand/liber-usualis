@@ -2,7 +2,15 @@
   description = "mutli-use flake for devshell and building the application";
 
   inputs = {
+    chant = {
+      url = "github:mkbertrand/liber-usualis-chant/master";
+      flake = false;
+    };
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/0.1";
+    fcc = {
+      url = "github:mkbertrand/franciscan-chant-closet/databased";
+      flake = false;
+    };
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2605.0";
     flake-utils.url = "github:numtide/flake-utils";
     pyproject-nix = {
@@ -28,6 +36,8 @@
       nixpkgs,
       flake-utils,
       determinate,
+      chant,
+      fcc,
       pyproject-nix,
       uv2nix,
       pyproject-build-systems,
@@ -121,6 +131,12 @@
             pkgs.awscli2
             pkgs.jq
           ];
+          shellHook = ''
+            mkdir -p "$PWD/data/generated/liber-usualis-chant" "$PWD/data/generated/fcc"
+            chmod -R u+w "$PWD/data/generated/liber-usualis-chant" "$PWD/data/generated/fcc"
+            ${pkgs.coreutils}/bin/cp -Rsf ${chant}/. "$PWD/data/generated/liber-usualis-chant/"
+            ${pkgs.coreutils}/bin/cp -Rsf ${fcc}/. "$PWD/data/generated/fcc/"
+          '';
         };
 
         packages = nixpkgs.lib.optionalAttrs (system == nixosSystem) imagePackages;

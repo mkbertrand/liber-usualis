@@ -104,8 +104,12 @@
 
    Repository-managed books live directly under =data/=. Externally maintained
    books are synchronized into =data/generated/= by =sync-books.py= according to
-   the optional repository-root =books.json=. Both paths are ignored by Git, so
-   synchronization is a separate operator step rather than part of a pure build.
+   the optional repository-root =books.json=. In development, the flake instead
+   pins =liber-usualis-chant= and the =databased= branch of
+   =franciscan-chant-closet=. The development shell recursively links their files
+   into =data/generated/liber-usualis-chant= and =data/generated/fcc=,
+   respectively. Matching files are replaced while unrelated generated content is
+   preserved. The generated path and operator configuration are ignored by Git.
 
    A =Book= identifies a source directory and a book-title tag. A =Corpus= searches
    one or more primary books. A =ContingentCorpus= retains the primary-book context
@@ -358,9 +362,11 @@
 
   Deployment modules and provider policy files live under =nix/=. The flake passes
   its tracked source to =nix/nixos-config.nix= for installation under
-  =/var/lib/libu=. Deployment preserves an operator-provided =books.json= and
-  =data/generated/= while replacing the tracked application. Operators must run
-  =sync-books.py= separately when generated books need to be installed or updated.
+  =/var/lib/libu=. The development shell merges symlinks to the flake-pinned chant
+  books into =data/generated/liber-usualis-chant= and =data/generated/fcc=.
+  Deployment preserves an operator-provided =books.json= and =data/generated/=
+  while replacing the tracked application. Operators must run =sync-books.py=
+  separately when generated books need to be installed or updated.
   =nix/image-formats.nix= customizes nixpkgs' native image variants. The
   =libu-images= NixOS configuration exposes Linode, Proxmox, Amazon, application
   ISO, and installer ISO images through =system.build.images= and

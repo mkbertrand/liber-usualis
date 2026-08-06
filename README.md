@@ -21,6 +21,17 @@ pip install bottle pytest diff-match-patch waitress wsgi-request-logger
 ```
 
 Note: diff-match-patch is only necessary for test_breviarium.
+
+Entering the Nix development shell links files from the pinned
+`liber-usualis-chant` repository into `data/generated/liber-usualis-chant` and
+from the `databased` branch of `franciscan-chant-closet` into
+`data/generated/fcc`. Matching files are replaced while other generated content
+is preserved:
+
+```bash
+nix develop
+```
+
 ### Running
 
 To run the server (by default on localhost:8080, the server is run as follows:

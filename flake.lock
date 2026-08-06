@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "chant": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1785550235,
+        "narHash": "sha256-onSYkspDduG1IUWK8ojuxao6YSYS8MuyPZm/1hOK7NY=",
+        "owner": "mkbertrand",
+        "repo": "liber-usualis-chant",
+        "rev": "029bb445ff956f0237bf896c344b1e3673db9e51",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mkbertrand",
+        "ref": "master",
+        "repo": "liber-usualis-chant",
+        "type": "github"
+      }
+    },
     "determinate": {
       "inputs": {
         "determinate-nixd-aarch64-darwin": "determinate-nixd-aarch64-darwin",
@@ -55,6 +72,23 @@
       "original": {
         "type": "file",
         "url": "https://install.determinate.systems/determinate-nixd/tag/v3.15.2/x86_64-linux"
+      }
+    },
+    "fcc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784731615,
+        "narHash": "sha256-5UwZ8O55YxXWhca5aT3ojOE3au98p31epmVmCerMo4s=",
+        "owner": "mkbertrand",
+        "repo": "franciscan-chant-closet",
+        "rev": "d3eac65033416f117e85b97cd2ed53f3e1222a66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mkbertrand",
+        "ref": "databased",
+        "repo": "franciscan-chant-closet",
+        "type": "github"
       }
     },
     "flake-compat": {
@@ -281,7 +315,9 @@
     },
     "root": {
       "inputs": {
+        "chant": "chant",
         "determinate": "determinate",
+        "fcc": "fcc",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs_3",
         "pyproject-build-systems": "pyproject-build-systems",

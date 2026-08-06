@@ -80,8 +80,9 @@ class Book:
     @functools.lru_cache(maxsize=128)
     def retrieve_untagged_file(self, src: Path) -> str:
             # Quick sanitization to make sure nobody is up to shady business.
-            loc = src.resolve()
-            if not loc.is_relative_to(self.src.joinpath('untagged')):
+            loc = Path(os.path.abspath(src))
+            root = Path(os.path.abspath(self.src.joinpath('untagged')))
+            if not loc.is_relative_to(root):
                 raise ValueError('Invalid Path')
             else:
                 with open(loc, 'r') as f:
