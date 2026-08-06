@@ -45,11 +45,14 @@
 	hour: null,
 	parameters: $persist({
 		'desired': 'omnes',
-		'recitation': 'recto-tono',
-		'translation': false,
-		'side-by-side': false,
-		'display-trivial-chants': false
+		'priest': true,
+		'translation': false
 	}),
+  displayParameters: $persist({
+    'chant': false,
+		'display-trivial-chants': false,
+		'side-by-side': false
+  }),
 	rite: '',
 	initialized: false,
 	canIncrementOccasion: true,
@@ -59,7 +62,7 @@
 		if (panelsopen) {
 			$nextTick(() => generatepanels());
 		}
-		return this.parameters['side-by-side'] || !this.initialized ? this.rite : this.rite.then(Pray.lineByLine);
+		return this.displayParameters['side-by-side'] || !this.initialized ? this.rite : this.rite.then(Pray.lineByLine);
 	},
 	// Sets this.calendarDate with a local date which is adjusted to UTC.
 	setCalendarDate(calendarDate) {
@@ -197,10 +200,10 @@
 				% end
 				<div id="rite-page-container">
 					<div x-show="initialized" id="rite-container" x-html="Rite" :class="{
-            'chant-shown': parameters.recitation == 'plainchant',
-            'chant-hidden': parameters.recitation != 'plainchant',
-            'side-by-side': parameters['side-by-side'] && parameters.translation,
-            'line-by-line': !parameters['side-by-side'] && parameters.translation
+            'chant-shown': displayParameters.chant,
+            'chant-hidden': !displayParameters.chant,
+            'side-by-side': displayParameters['side-by-side'] && parameters.translation,
+            'line-by-line': !displayParameters['side-by-side'] && parameters.translation
             }">
 					</div>
 					<template x-if="bottompanel">

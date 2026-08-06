@@ -24,24 +24,18 @@
 		<label for="translation-toggle">{{text['translation-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="side-by-side-toggle" x-model="parameters['side-by-side']" :disabled="!resolveParameters(parameters).translation" />
+		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters['side-by-side']" :disabled="!resolveParameters(parameters).translation" />
 		<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">Side-by-side translation (experimental)</label>
 	</div>
 	% end
 	<div>
-		<div>
-			<input type="radio" value="plainchant" id="recitation-select-plainchant" x-model="parameters.recitation" />
-			<label for="recitation-select-plainchant">{{text['recitation-select-plainchant']}}</label>
-		</div>
-		<div>
-			<input type="radio" value="recto-tono" id="recitation-select-recto-tono" x-model="parameters.recitation" />
-			<label for="recitation-select-recto-tono">{{text['recitation-select-recto-tono']}}</label>
-		</div>
-		<div>
-			<input type="radio" value="private" id="recitation-select-private" x-model="parameters.recitation" />
-			<label for="recitation-select-private">{{text['recitation-select-private']}}</label>
-		</div>
+		<input type="checkbox" id="chant-toggle" x-model="displayParameters.chant" />
+		<label for="chant-toggle">Display chant</label>
 	</div>
+  <div>
+		<input type="checkbox" id="priest-toggle" x-model="parameters.priest" />
+		<label for="priest-toggle">In choir</label>
+  </div>
 	<div>
 		<input type="checkbox" value="bottompanel" id="bottom-panel-toggle" x-model="bottompanel" />
 		<label for="bottom-panel-toggle">{{text['bottom-panel-toggle']}}</label>

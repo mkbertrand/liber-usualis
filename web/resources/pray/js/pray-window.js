@@ -61,11 +61,11 @@ function resolveParameters(parameters) {
 		return lastResult;
 	} else {
 		lastParams = JSON.stringify(parameters);
-		let resolved = {...parameters, 'chant': parameters.recitation == 'plainchant', 'choral': parameters.recitation != 'private'};
-		resolved['ambit'] = Pray.defineAmbit(parameters.desired, parameters.choral);
+		let resolved = {...parameters};
+		resolved['ambit'] = Pray.defineAmbit(parameters.desired, parameters.priest);
 		resolved.votives = Object.entries(resolved.votives).filter(i => i[1]).map(i => i[0]).join('+');
 		lastResult = resolved;
-    resolved['side-by-side'] = resolved['side-by-side'] && resolved.translation;
+    console.log(resolved);
 		return resolved;
 	}
 }
@@ -122,7 +122,7 @@ async function getRite(calendarDate, occasion, parameters, resources) {
       ritesarg.push(`${rites[i][0]}.${noending}.${rites[i][1]}`)
     }
     ritesarg = ritesarg.join('_');
-    var response = await fetch(`/rite?date=${calendarDate}&rites=${ritesarg}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.choral ? 'privata': 'chorali'}&chant=${resolvedParameters.recitation == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}
+    var response = await fetch(`/rite?date=${calendarDate}&rites=${ritesarg}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}
     `);
 
     if (response.status == 400 || response.status == 500) {
