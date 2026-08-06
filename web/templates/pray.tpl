@@ -20,21 +20,18 @@
 		</script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei.png">
+		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei-icon.png">
+		<link rel="apple-touch-icon" href="/resources/agnus-dei-apple-touch-icon.png">
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/pray.css')}}>
 		% if mobile:
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/pray/css/pray-mobile.css')}}>
 		% end
-		<link rel="apple-touch-icon" href="/resources/agnus-dei.png">
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
-		</style>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/pray-window.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
 	</head>
@@ -169,7 +166,7 @@
 			<div id="top-bar-title">
 				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen"><img id="sidebar-nav-toggle" src="/resources/svg/hamburger-menu.svg" /></button>
 				<div id="project-logo">
-					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.png" alt="LIBER USUALIS"></a></div>
+					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
 				</div>
 				<select id="locale-selector" @change="window.location.assign('/' + $event.target.value + window.location.pathname.slice(3) + window.location.search)">
 					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
