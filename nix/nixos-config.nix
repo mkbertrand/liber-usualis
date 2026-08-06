@@ -1,9 +1,10 @@
 {
   lib,
   nixpkgs,
-  format,
+  format ? null,
   nodename,
   python_env,
+  self,
   ...
 }:
 let
@@ -19,16 +20,14 @@ let
 
   bottle_app = pkgs.stdenv.mkDerivation {
     name = "bottle_app";
-    src = ./.;
-    buildInputs = [
-      app_pkgs
-    ];
+    src = self;
+    buildInputs = app_pkgs;
     buildPhase = ''
       mkdir -p $out/lib
       cp -r . $out/lib/
     '';
   };
-  domain = "thomism.com";
+  domain = "liberusualis.org";
 in
 {
   config = {
@@ -36,9 +35,10 @@ in
     # set ntp
     services.chrony.enable = lib.mkDefault true;
     time.timeZone = lib.mkDefault "America/Chicago";
+    system.stateVersion = "26.05";
 
     networking = {
-      hostName = "nixos-${nodename}-${format}";
+      hostName = lib.mkDefault ("nixos-${nodename}" + lib.optionalString (format != null) "-${format}");
       firewall = {
         enable = true;
         allowedTCPPorts = [
@@ -135,7 +135,7 @@ in
         "www.${domain}" = {
           enableACME = true; # Use Let's Encrypt
           forceSSL = true; # Redirect HTTP to HTTPS
-          globalRedirect = "liberusualis.org";
+          globalRedirect = domain;
         };
 
         # "ec2-3-144-118-245.us-east-2.compute.amazonaws.com" = {
@@ -180,7 +180,7 @@ in
         serviceConfig = {
           Type = "oneshot";
           RemainAfterExit = true;
-          ExecStart = "${pkgs.rsync}/bin/rsync -a --delete ${bottle_app.out}/lib/ /var/lib/libu/";
+          ExecStart = "${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${bottle_app.out}/lib/ /var/lib/libu/";
           User = "root";
           Group = "root";
         };
@@ -224,52 +224,16 @@ in
     ];
 
     nix.settings = {
-      trusted-users = [ "master" "@wheel" "root" ];
+      trusted-users = [
+        "master"
+        "@wheel"
+        "root"
+      ];
       experimental-features = [
         "nix-command"
         "flakes"
       ];
     };
 
-  }
-  // lib.optionalAttrs (format == "proxmox") {
-    proxmox = lib.mkDefault {
-      qemuConf = {
-        bios = "seabios";
-        virtio0 = "local-zfs:vm-102-disk-0"; # WARN: replace with whatever storage you have set up
-        name = "nixos-${nodename}-${format}";
-      };
-      cloudInit.defaultStorage = "local-zfs"; # WARN: replace with whatever storage you have set up
-    };
-    networking = {
-      defaultGateway = "192.168.0.1";
-      nameservers = [
-        "8.8.8.8"
-        "8.8.4.4"
-      ]; # Google's public DNS servers, or replace with your own
-      useDHCP = false;
-      interfaces.ens18.ipv4.addresses = [
-        {
-          address = "192.168.0.36";
-          prefixLength = 24;
-        }
-      ];
-      hostName = "nixos-${nodename}-${format}";
-      firewall = {
-        enable = true;
-        allowedTCPPorts = [
-          22
-          80
-          443
-        ];
-      };
-    };
-  }
-  // lib.optionalAttrs (format == "amazon") {
-    virtualisation.diskSize = 4 * 1024;
-    boot.loader.grub = {
-      enable = true;
-      device = "/dev/xvda"; # Common for AWS instances
-    };
   };
 }
