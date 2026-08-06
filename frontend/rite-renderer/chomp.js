@@ -1,3 +1,5 @@
+import {getPsalmTone} from './psalmify.js';
+
 export function chomp(gabc, tags, resources) {
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 
@@ -40,8 +42,14 @@ export function chomp(gabc, tags, resources) {
     if (clef) {
       // If clef has a middle letter (very very rare) remove it.
       clef = '' + clef[1][0] + clef[1].at(-1);
-      ending = mode + ' ' + clef;
-      euouae = ending in resources.euouaes ? resources.euouaes[ending] : '';
+      let tone = getPsalmTone(mode, clef, resources);
+      if (tone) {
+        let ending = tone.terminatio.filter(syl => !syl.includes('r'));
+        while (ending.length != 6) {
+          ending.unshift(tone.tenor.at(-1));
+        }
+        euouae = ['E', 'u', 'o', 'u', 'a', 'e.'].map((c, i) => `${c}(${ending[i]})`).join(' ') + ' (::)';
+      }
     }
 
 		if (gabc.includes('<i>T. P.</i>')) {

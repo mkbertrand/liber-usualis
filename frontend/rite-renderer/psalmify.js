@@ -1,7 +1,28 @@
 import Hypher from 'hypher';
 import laPatterns from './la-hypher.js';
 
-function getPsalmTone(tone, clef, resources) {
+function adjustToKey(item, currentKey, endKey) {
+  let diff = 2 * (endKey.at(-1) - currentKey.at(-1));
+  if (diff == 0) {
+    return item;
+  } else {
+    let newItem = [];
+    for (let i = 0; i < item.length; i++) {
+      let newItemComp = '';
+      for (let j = 0; j < item[i].length; j++) {
+        if (item[i][j] >= 'a' && item[i][j] <= 'l') {
+          newItemComp += String.fromCharCode(item[i][j].charCodeAt(0) + diff);
+        } else {
+          newItemComp += item[i][j];
+        }
+      }
+      newItem.push(newItemComp);
+    }
+    return newItem;
+  }
+}
+
+export function getPsalmTone(tone, clef, resources) {
   if (!tone) {
     return null;
   } else if (tone == 'T. pereg.') {
@@ -21,19 +42,17 @@ function getPsalmTone(tone, clef, resources) {
       }
     }
   }
-  var ret = {
-    'initium': variant.initium,
-    'flexa': variant.flexa,
-    'medians': variant.medians,
-    'terminatio': variant[tone]
-  };
-  if (variant.clavis == clef) {
-    return ret;
-  } else {
-    diff = 2 * (clef[1] - variant.clavis[1]);
-    // TODO: adjustments.
-    return ret;
+  if (variant === undefined) {
+    return undefined;
   }
+
+  return {
+    'initium': adjustToKey(variant.initium, variant.clavis, clef),
+    'tenor': adjustToKey(variant.tenor, variant.clavis, clef),
+    'flexa': adjustToKey(variant.flexa, variant.clavis, clef),
+    'medians': adjustToKey(variant.medians, variant.clavis, clef),
+    'terminatio': adjustToKey(variant[tone], variant.clavis, clef)
+  };
 }
 
 // hyphenateText() is used instead of hyphenate() since hyphenateText() can take whole sections of text.

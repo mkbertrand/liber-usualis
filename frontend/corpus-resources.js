@@ -9,8 +9,7 @@ export class CorpusResources {
   async load() {
     Promise.allSettled([
       fetch('/chant/liber-usualis-chant/nocturnale/untagged/invitatoria.json').then(data => data.json()).then(json => this.invitatoria = json),
-      fetch('/chant/liber-usualis-chant/untagged/toni-psalmorum.json').then(data => data.json()).then(json => this.psalmTones = json),
-      fetch('/chant/liber-usualis-chant/untagged/euouae.json').then(data => data.json()).then(json => this.euouaes = json)
+      fetch('/chant/liber-usualis-chant/untagged/toni-psalmorum.json?v=3').then(data => data.json()).then(json => this.psalmTones = json)
     ]).then(() => this.ready = true);
   }
 }
