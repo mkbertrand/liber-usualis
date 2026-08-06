@@ -46,7 +46,7 @@
 	parameters: $persist({
 		'desired': 'omnes',
 		'priest': true,
-		'translation': false
+		'translation': true
 	}),
   displayParameters: $persist({
     'chant': false,
