@@ -181,7 +181,7 @@ class RiteRenderer {
       this.makeCenteredHeader('Confessio.');
     } else if (uniquelyhas('responsorium-breve')) {
       this.makeHeadingAnnotation('Responsorium Breve.');
-    } else if (uniquelyhas('responsorium')) {
+    } else if (uniquelyhas('responsorium') && uniquelyhas('formula')) {
       let nn = 1;
       if (quaesitum(element).has('nocturna-ii')) {
         nn = 2
@@ -344,7 +344,7 @@ class RiteRenderer {
     // Removes the header from the actual text and removes the numbering from the first line of the Psalm so that the initial letter is done on the word rather than the number.
     element.datum = element.datum.replace(/^\[.+?]\n\d+\s/, '').split('\n');
     if (translation) {
-      translation = formatPsalm(unpack(translation)).replace(/^\[.+?]\n\d+\s/, '').split('\n');
+      translation = formatPsalm(unpack(translation)).replace(/^\[.+?]\n\d+\s/, '').replaceAll(/\[.+?]\n/g, '\n').split('\n');
     }
     if (parentTags.has('preces')) {
       element.tags.push('textus-psalmi-precibus');
@@ -606,7 +606,7 @@ class RiteRenderer {
         return;
       }
     }
-    this.recurseRite(element.datum, translation, parentTags);
+    this.recurseRite(element.datum, translation, parentTags.union(tags(element)));
   }
 }
 
