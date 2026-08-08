@@ -67,10 +67,23 @@ def bouncetolocale(page):
 
 @get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:pray>/<date>/<time>')
 def pray(preferredlocale, page, date, time):
-    return localpage(preferredlocale, page)
+    rite = datamanage.rite_request(
+        date,
+        time,
+        '',
+        'diei',
+        False,
+        False,
+        'none'
+    )
+    from node_manager import RenderWorker
+    r = RenderWorker()
+    ritehtml = r.render(rite)
+    r.close()
+    return localpage(preferredlocale, page, ritehtml)
 
 @get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
-def localpage(preferredlocale, page):
+def localpage(preferredlocale, page, data=None):
     locales = [preferredlocale]
     try:
         locales.extend(version_management.localehunt(request.headers.get('Accept-Language')))
