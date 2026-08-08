@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "core-js": "^3.50.0",
     "exsurge": "github:bbloomf/exsurge",
     "hypher": "^0.2.5"
   },
@@ -9,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css",
+    "build": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css && esbuild render.js --bundle --minify --outfile=render-build.js --platform=node",
     "watch": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css"
   },
   "repository": {

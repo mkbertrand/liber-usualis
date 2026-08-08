@@ -8,7 +8,7 @@ from composer import util
 class RenderWorker:
     def __init__(self):
         self._process = subprocess.Popen(
-            ['node', 'render.js'],
+            ['node', 'render-build.js'],
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
@@ -38,7 +38,7 @@ class RenderWorker:
                 continue
             with self._pending_lock:
                 q = self._pending.pop(ret['id'], None)
-                q.put(ret)
+                q.put(ret['ret'])
 
     def _err_read(self):
         for line in self._process.stderr:
@@ -46,7 +46,7 @@ class RenderWorker:
 
     def render(self, rite):
         request_id = next(self._id_counter)
-        request = json.dumps({'rite': util.dump_data(rite), 'id':request_id}) + '\n'
+        request = util.dump_data({'content':rite, 'id':request_id}) + '\n'
         q = queue.Queue(maxsize=1)
         with self._pending_lock:
             self._pending[request_id] = q

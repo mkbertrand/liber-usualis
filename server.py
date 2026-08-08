@@ -83,7 +83,7 @@ def pray(preferredlocale, page, date, time):
     return localpage(preferredlocale, page, ritehtml)
 
 @get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
-def localpage(preferredlocale, page, data=None):
+def localpage(preferredlocale, page, data=''):
     locales = [preferredlocale]
     try:
         locales.extend(version_management.localehunt(request.headers.get('Accept-Language')))
@@ -97,7 +97,7 @@ def localpage(preferredlocale, page, data=None):
                 titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
         title = titles[page] if page in titles else ''
 
-        return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']))
+        return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), data=data)
 
 def error500tpl(error):
     return template('web/resources/error500.tpl', error=error)
