@@ -124,19 +124,7 @@ async function getRite(calendarDate, occasion, parameters, resources) {
     var response = await fetch(`/rite?date=${calendarDate}&rites=${ritesarg}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}
     `);
 
-    if (response.status == 400 || response.status == 500) {
-      return await response.text();
-    }
-
-    let json = await response.json();
-		for (var i = 0; i < rites.length; i++) {
-			if (!json[i].rite.tags.includes('aperi-domine') && !json[i].rite.tags.includes('sacrosanctae') && !json[i].rite.tags.includes('antiphona-bmv') && !json[i].rite.tags.includes('officium-capituli') && json[i]['used-primary'][0] != previousTitle) {
-				ret += Pray.riteTitle(json[i]['used-primary'][0], json[i]['used-primary'][1], 'small');
-				previousTitle = json[i]['used-primary'][0];
-			}
-			ret += Pray.renderRite(json[i], resources);
-		}
-		return ret;
+    return await response.text();
 	}
 
 	let key = calendarDate + occasion;

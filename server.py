@@ -28,6 +28,9 @@ import version_management
 
 LOG_PATH = os.getenv("LOG_PATH", '../logs/internal_requests.log')
 
+from node_manager import RenderWorker
+RENDER_WORKER = RenderWorker()
+
 toplevelpages = [
     'index',
     'de-anno',
@@ -76,11 +79,7 @@ def pray(preferredlocale, page, date, time):
         False,
         'none'
     )
-    from node_manager import RenderWorker
-    r = RenderWorker()
-    ritehtml = r.render(rite)
-    r.close()
-    return localpage(preferredlocale, page, ritehtml)
+    return localpage(preferredlocale, page, RENDER_WORKER.render(rite))
 
 @get(f'/<preferredlocale:re:{'|'.join(version_management.definedlocales)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page, data=''):
@@ -144,30 +143,21 @@ def title():
 def rite():
     try:
         rites = request.query.get('rites', None)
-        if rites:
-            ret = []
-            rites = rites.split('_')
-            for rite in rites:
-                ritesplit = rite.split('.')
-                ret.append(datamanage.rite_request(
-                    request.query.get('date'),
-                    ritesplit[0],
-                    request.query.get('votives', ''),
-                    ritesplit[2],
-                    request.query.get('privata', '') == 'privata',
-                    ritesplit[1],
-                    request.query.get('translation', 'none')
-                ))
-            return util.dump_data(ret)
-        return util.dump_data(datamanage.rite_request(
-            request.query.get('date'),
-            request.query.get('hour'),
-            request.query.get('votives', ''),
-            request.query.get('select', 'diei'),
-            request.query.get('privata', '') == 'privata',
-            request.query.get('noending', 'false') == 'true',
-            request.query.get('translation', 'none')
-        ))
+        ret = []
+        rites = rites.split('_')
+        for rite in rites:
+            ritesplit = rite.split('.')
+            ret.append(datamanage.rite_request(
+                request.query.get('date'),
+                ritesplit[0],
+                request.query.get('votives', ''),
+                ritesplit[2],
+                request.query.get('privata', '') == 'privata',
+                ritesplit[1],
+                request.query.get('translation', 'none')
+            ))
+
+        return RENDER_WORKER.render(ret)
     except Exception as e:
         traceback.print_exc()
         print(e)

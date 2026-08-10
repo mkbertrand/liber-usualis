@@ -1,5 +1,5 @@
 import readLine from 'readline'
-import { renderRite } from './frontend/rite-renderer/rite-renderer.js';
+import { renderRites } from './frontend/rite-renderer/rite-renderer.js';
 import 'core-js/actual/set/index.js';
 import fs from 'fs';
 
@@ -19,7 +19,7 @@ rl.on('line', (line) => {
     return;
   }
   try {
-    process.stdout.write(JSON.stringify({'id': request.id, 'ret': renderRite(request.content, resources)}) + '\n');
+    process.stdout.write(JSON.stringify({'id': request.id, 'ret': renderRites(request.content, resources)}) + '\n');
   } catch (e) {
     process.stderr.write(e.stack + '\n');
     return;

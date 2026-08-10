@@ -1,6 +1,7 @@
 // Copyright 2024-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import {abbreviateName, rubricRender, stringRender, tags, quaesitum, unpack, claw} from './rendering-utils.js';
+import {riteTitle } from './rendering-utils.js';
 
 import {chomp} from './chomp.js';
 import {formatPsalm} from './psalmify.js';
@@ -614,4 +615,18 @@ export function renderRite(rite, resources) {
   let renderer = new RiteRenderer(rite, resources);
   renderer.recurseRite(rite.rite, null, new Set());
   return renderer.rite;
+}
+
+export function renderRites(rites, resources) {
+  let ret = '';
+  let previousTitle = '';
+
+  for (var i = 0; i < rites.length; i++) {
+    if (!rites[i].rite.tags.includes('aperi-domine') && !rites[i].rite.tags.includes('sacrosanctae') && !rites[i].rite.tags.includes('antiphona-bmv') && !rites[i].rite.tags.includes('officium-capituli') && rites[i]['used-primary'][0] != previousTitle) {
+      ret += riteTitle(rites[i]['used-primary'][0], rites[i]['used-primary'][1], 'small');
+      previousTitle = rites[i]['used-primary'][0];
+    }
+    ret += renderRite(rites[i], resources);
+  }
+  return ret;
 }

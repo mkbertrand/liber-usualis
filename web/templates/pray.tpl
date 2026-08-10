@@ -196,7 +196,7 @@
 					</div>
 				% end
 				<div id="rite-page-container">
-					<div x-show="initialized" id="rite-container" :class="{
+					<div x-show="initialized" id="rite-container" x-html="Rite" :class="{
             'chant-shown': displayParameters.chant,
             'chant-hidden': !displayParameters.chant,
             'side-by-side': displayParameters['side-by-side'] && parameters.translation,
