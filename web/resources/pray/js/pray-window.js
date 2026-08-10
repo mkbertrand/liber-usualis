@@ -65,7 +65,6 @@ function resolveParameters(parameters) {
 		resolved['ambit'] = Pray.defineAmbit(parameters.desired, parameters.priest);
 		resolved.votives = Object.entries(resolved.votives).filter(i => i[1]).map(i => i[0]).join('+');
 		lastResult = resolved;
-    console.log(resolved);
 		return resolved;
 	}
 }

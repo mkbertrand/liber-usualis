@@ -82,6 +82,9 @@ class ChantElement extends HTMLElement {
 	
   renderChant() {
     try {
+      this.translated = this.getAttribute('translated');
+      this.gabc = this.getAttribute('gabc');
+      this.plainContent = this.innerHTML.toString();
       var mappings = Exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, this.gabc);
       this.score = new Exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !this.gabc.includes('initial-style:0;'));
       if (this.gabc.includes('mode:')) {
@@ -111,14 +114,6 @@ class ChantElement extends HTMLElement {
   onVisible() {
     queueRenderTask(() => this.renderChant());
   }
-
-	constructor() {
-		super();
-
-    this.translated = this.getAttribute('translated');
-    this.gabc = this.getAttribute('gabc');
-    this.plainContent = this.innerHTML.toString();
-	}
 }
 
 export function initChantElement() {
