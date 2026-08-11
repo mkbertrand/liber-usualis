@@ -109,11 +109,8 @@
 	},
 	{
 		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium"],
-		"datum":"Regem Confessórum Dóminum, * Veníte adorémus."
-	},
-	{
-		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium","in-tempore-paschali"],
-		"datum":"Regem Confessórum Dóminum, * Veníte adorémus, allelúja."
+		"datum":"Regem Confessórum Dóminum, * Veníte adorémus.",
+		"in-tempore-paschali":"Regem Confessórum Dóminum, * Veníte adorémus, allelúja."
 	},
 	{
 		"tags":["confessor","matutinum","nocturna-i","antiphona","antiphona-i"],
