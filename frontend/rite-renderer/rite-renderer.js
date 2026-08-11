@@ -365,7 +365,7 @@ class RiteRenderer {
     }
 
     // Adds extra line of annotation noting that the lesson is a commemoration (i.e. not a continuation of the previous lessons).
-    if (tags(element).has('lectio-commemorationis') || tags(element.datum).has('lectio-commemorationis')) {
+    if (quaesitum(element).has('lectio-commemorationis') || quaesitum(element.datum).has('lectio-commemorationis')) {
       this.makeHeadingAnnotation(abbreviateName(this.matinsCommemoration));
     }
 
