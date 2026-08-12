@@ -935,7 +935,7 @@
 		},
 		{
 			"include":["officium-defunctorum"],
-			"exclude":["fideles-defuncti"],
+			"exclude":[["fideles-defuncti"],["omissum"]],
 			"response":[
 				{"include":["in-tempore-nativitatis"],"response":"dele","target":0},
 				{"include":["in-tempore-paschali"],"response":"dele","target":0},

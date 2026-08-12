@@ -40,11 +40,11 @@ class Ambit {
 		if (typeof occasion === 'string') {
 			occasion = this.occasions[this.idindex(occasion)];
 		}
-		let included = ['diei', 'antiphona-bmv-temporis'];
+		let included = ['primarium', 'antiphona-bmv-temporis'];
 		if (daytags.some(i => i.includes('officium-parvum-bmv') && !i.includes('omissum'))) {
 			included.push('officium-parvum-bmv');
 		}
-		if (daytags.some(i => i.includes('officium-defunctorum'))) {
+		if (daytags.some(i => i.includes('officium-defunctorum') && !i.includes('omissum'))) {
 			included.push('officium-defunctorum');
 		}
 		if (daytags.some(i => i.includes('psalmi-graduales'))) {
@@ -108,62 +108,62 @@ class Ambit {
 
 fullAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', [
-		new Rite('aperi-domine', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
 		new Rite('psalmi-graduales', 'psalmi-graduales', false),
 		new Rite('matutinum', 'officium-parvum-bmv', false),
 		new Rite('laudes', 'officium-parvum-bmv', false),
-		new Rite('matutinum', 'diei', true),
-		new Rite('laudes', 'diei', true),
+		new Rite('matutinum', 'primarium', true),
+		new Rite('laudes', 'primarium', true),
 		new Rite('matutinum', 'officium-defunctorum', false),
 		new Rite('laudes', 'officium-defunctorum', false),
 		new Rite('psalmi-poenitentiales', 'psalmi-poenitentiales', false),
 		new Rite('litaniae-sanctorum', 'litaniae-sanctorum', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'matutinum', 'diei'),
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'matutinum', 'primarium'),
 	new Occasion('Prima', [
-		new Rite('aperi-domine', 'diei', true),
-		new Rite('prima', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
+		new Rite('prima', 'primarium', true),
 		new Rite('prima', 'officium-parvum-bmv', false),
-		new Rite('officium-capituli', 'diei', true),
+		new Rite('officium-capituli', 'primarium', true),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'prima', 'diei'),
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'prima', 'primarium'),
 	new Occasion('Tertia', [
-		new Rite('aperi-domine', 'diei', true),
-		new Rite('tertia', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
+		new Rite('tertia', 'primarium', true),
 		new Rite('tertia', 'officium-parvum-bmv', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'tertia', 'diei'),
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'tertia', 'primarium'),
 	new Occasion('Sexta', [
-		new Rite('aperi-domine', 'diei', true),
-		new Rite('sexta', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
+		new Rite('sexta', 'primarium', true),
 		new Rite('sexta', 'officium-parvum-bmv', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'sexta', 'diei'),
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'sexta', 'primarium'),
 	new Occasion('Nona', [
-		new Rite('aperi-domine', 'diei', true),
-		new Rite('nona', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
+		new Rite('nona', 'primarium', true),
 		new Rite('nona', 'officium-parvum-bmv', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'nona', 'diei'),
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'nona', 'primarium'),
 	new Occasion('Vesperæ', [
-		new Rite('aperi-domine', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
 		new Rite('vesperae', 'officium-parvum-bmv', false),
-		new Rite('vesperae', 'diei', true),
+		new Rite('vesperae', 'primarium', true),
 		new Rite('vesperae', 'officium-defunctorum', false),
 		new Rite('antiphona-bmv', 'antiphona-bmv-temporis', true),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'vesperae', 'diei'),
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'vesperae', 'primarium'),
 	new Occasion('Completorium', [
-		new Rite('aperi-domine', 'diei', true),
-		new Rite('completorium', 'diei', true),
+		new Rite('aperi-domine', 'primarium', true),
+		new Rite('completorium', 'primarium', true),
 		new Rite('completorium', 'officium-parvum-bmv', false),
-		new Rite('sacrosanctae', 'diei', true)
-	], 'completorium', 'diei')
+		new Rite('sacrosanctae', 'primarium', true)
+	], 'completorium', 'primarium')
 ]);
 
 fullAmbit.suggestSelectedOccasion = function(hour) {
@@ -259,17 +259,17 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 
 benedictioMensaeAmbit = new Ambit(
 	new Occasion('Pro Prandio', [
-		new Rite('pro-prandio', 'diei', true),
-	], 'pro-prandio', 'diei'),
+		new Rite('pro-prandio', 'primarium', true),
+	], 'pro-prandio', 'primarium'),
 	new Occasion('Pro Cœna', [
-		new Rite('pro-coena', 'diei', true),
-	], 'pro-coena', 'diei')
+		new Rite('pro-coena', 'primarium', true),
+	], 'pro-coena', 'primarium')
 );
 
 benedictioMensaeAmbit.suggestSelectedOccasion = defunctAmbit.suggestSelectedOccasion;
 
 function singleOccasionAmbit(name, desired) {
-	return new Ambit(new Occasion(name, [new Rite(desired, 'diei', true)], desired, 'diei'));
+	return new Ambit(new Occasion(name, [new Rite(desired, 'primarium', true)], desired, 'primarium'));
 }
 
 export function defineAmbit(desired, choral = true) {
@@ -312,7 +312,7 @@ export function defineAmbit(desired, choral = true) {
 		case 'diei':
 			ambit = new Ambit(fullAmbit.occasions.map(
 				(occasion) => new Occasion(occasion.name, occasion.rites.filter(
-					(rite) => rite.where == 'diei' || rite.where == 'antiphona-bmv-temporis'
+					(rite) => rite.where == 'primarium' || rite.where == 'antiphona-bmv-temporis'
 				), occasion.id, occasion.title)
 			));
 			ambit.suggestSelectedOccasion = fullAmbit.suggestSelectedOccasion;

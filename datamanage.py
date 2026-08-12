@@ -28,49 +28,30 @@ DEUTSCH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-18
 ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-english')])
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
 
-def adjust_tags(day, vesperal, select, votives):
-    # Votives are simply a list of which votives the user wishes to be said if applicable. Providing a votive does not force its usage on inapplicable days.
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives = votives))
-
-    # Handle the Little Office of the BVM and the Office of the Dead (temporary code)
-    if select == 'officium-parvum-bmv':
-        ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
-        tags = [ofp - {'omissum'} | {'primarium'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
-    elif select == 'officium-defunctorum':
-        def votivize(i):
-            if 'officium-defunctorum' in i:
-                return i | {'officium-defunctorum', 'primarium'}
-            else:
-                return i - {'primarium'}
-        tags = [votivize(i) for i in tags]
-        if not any('officium-defunctorum' in i for i in tags):
-            tags.append({'officium-defunctorum','semiduplex','primarium'})
-    elif select == 'antiphona-bmv-temporis':
-        tags = list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))
-        tags[0] |= {'primarium'}
-
-    return tags
-
 @functools.lru_cache(maxsize=30)
 def rite_request(date, rites, votives, select, private, noending, translation):
     day = datetime.strptime(date, '%Y-%m-%d').date()
     hours = rites.replace(' ', '+').split('+')
     votives = votives.replace(' ', '+').split('+')
-    tags = adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), select, votives)
+    vesperal = not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
+    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives = votives))
     if private:
         tags = [i | {'privata'} for i in tags]
-    primary = [i for i in tags if 'primarium' in i][0]
-    tags.remove(primary)
+    if not any('officium-defunctorum' in tagset for tagset in tags):
+        time = [tagset - {'tempus'} for tagset in tags if 'tempus' in tagset][0]
+        tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
+    used_primary = [i for i in tags if select in i][0]
+    tags.remove(used_primary)
 
-    if noending and not 'antiphona-bmv' in primary:
+    if noending and not 'antiphona-bmv' in used_primary:
         tags.append({'fidelium-animae', 'hoc-omissum'} | set(hours))
         tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'} | set(hours))
     lit = []
     for hour in hours:
         lit.append({'ritus', hour})
 
-    rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':lit}, primary, tags)
-    tags.append(primary)
+    rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':lit}, used_primary, tags)
+    tags.append(used_primary)
 
     if translation != 'none':
         translated_corpus = None
@@ -85,7 +66,7 @@ def rite_request(date, rites, votives, select, private, noending, translation):
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return {
         'rite' : rite.rite['datum'],
-        'used-primary': [DEFAULT_CORPUS.get_name(primary), primary],
+        'used-primary': [DEFAULT_CORPUS.get_name(used_primary), used_primary],
         'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
         }
