@@ -247,7 +247,10 @@
 		"datum":[["/psalmi/psalmus-xlvii,gloria"]]
 	},
 	{
-		"tags":["virgo","matutinum","nocturna-ii","versiculus"],
+		"tags":[
+      ["virgo","matutinum","nocturna-ii","versiculus"],
+      ["virgo","tertia","versiculus"]
+    ],
 		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
 		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
 	},
@@ -325,7 +328,10 @@
 		"datum":[["/psalmi/psalmus-xcvii,gloria"]]
 	},
 	{
-		"tags":["virgo","matutinum","nocturna-iii","versiculus"],
+		"tags":[
+      ["virgo","matutinum","nocturna-iii","versiculus"],
+      ["virgo","sexta","versiculus"]
+    ],
 		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
 		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
@@ -393,11 +399,6 @@
 		"versus":"Inténde, próspere procéde, et regna."
 	},
 	{
-		"tags":["virgo","tertia","versiculus"],
-		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
-		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
-	},
-	{
 		"tags":["virgo","sexta","capitulum"],
 		"datum":"[II. Cor. 11.]/Ǽmulor enim vos Dei æmulatióne. + Despóndi enim vos uni viro * vírginem castam exhibére Christo."
 	},
@@ -412,11 +413,6 @@
 		"incipit":"Adjuvábit eam Deus vultu suo.",
 		"responsum":"Allelúja, allelúja.",
 		"versus":"Deus in médio ejus, non commovébitur."
-	},
-	{
-		"tags":["virgo","sexta","versiculus"],
-		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
-		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
 	{
 		"tags":["virgo","martyr","nona","capitulum"],
