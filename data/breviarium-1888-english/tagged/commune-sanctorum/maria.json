@@ -34,14 +34,25 @@
 		"in-tempore-paschali":["V. Holy Virgin, my praise by thee accepted be, Alleluia.","R. Give me strength against thine enemies, Alleluia."]
 	},
 	{
-		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat"],
-		"datum":"O Holy Mary, * be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God; may all that are keeping this thine holy Feast-day feel the might of thine assistance.",
-		"in-tempore-paschali":"O Holy Mary, * be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God; may all that are keeping this thine holy Feast-day feel the might of thine assistance, Alleluia."
+		"tags":[
+			["maria","i-vesperae","antiphona","antiphona-magnificat"],
+			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
+			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":"O Holy Mary, * be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God; may all that are keeping N. feel the might of thine assistance.",
+		"in-tempore-paschali":"O Holy Mary, * be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God; may all that are keeping N. feel the might of thine assistance, Alleluia."
 	},
-	{
-		"tags":["maria","suffragium","antiphona"],
-		"datum":"O Holy Mary, * be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God; may all that are keeping this thine holy commemoration feel the might of thine assistance."
-	},
+  {
+		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat","n"],
+    "datum":"this thine holy Feast-day"
+  },
+  {
+		"tags":[
+			["maria","suffragium","vesperae","antiphona","antiphona-magnificat","n"],
+			["maria","suffragium","laudes","antiphona","antiphona-benedictus","n"]
+		],
+    "datum":"this thine holy commemoration"
+  },
 	{
 		"tags":["maria","suffragium","versiculus"],
 		"datum":["V. Pray for us O holy Mother of God.","R. That we should be made worthy of the promises of Christ."],
@@ -240,48 +251,12 @@
 		"in-tempore-septuagesimae":"O Mary! Blessest art thou * that hast believed, for there shall be a performance of those things which were told thee from the Lord."
 	},
 	{
-		"tags":["maria","tertia","responsorium-breve"],
-		"incipit":"In thy comeliness",
-		"responsum":"And in thy beauty.",
-		"versus":"Go forward, fare prosperously, and reign."
-	},
-	{
-		"tags":["maria","tertia","responsorium-breve","in-tempore-paschali"],
-		"incipit":"In thy comeliness and in thy beauty.",
-		"responsum":"Alleluia, alleluia.",
-		"versus":"Go forward, fare prosperously, and reign."
-	},
-	{
 		"tags":["maria","sexta","capitulum"],
 		"datum":"And so I was established in Zion, and likewise in the holy city was I given to rest, and in Jerusalem was my power. + And I took root among the honourable people, even in the portion of my God as His own inheritance, * and mine abiding was in the full assembly of the Saints."
 	},
 	{
-		"tags":["maria","sexta","responsorium-breve"],
-		"incipit":"God shall help her",
-		"responsum":"With His countenance.",
-		"versus":"God is in the midst of her, she shall not be moved."
-	},
-	{
-		"tags":["maria","sexta","responsorium-breve","in-tempore-paschali"],
-		"incipit":"God shall help her with His countenance.",
-		"responsum":"Alleluia, alleluia.",
-		"versus":"God is in the midst of her, she shall not be moved."
-	},
-	{
 		"tags":["maria","nona","capitulum"],
 		"datum":"In the broad ways I gave a sweet smell like cinnamon and aromatic balm; + like the best myrrh, * I yielded a pleasant odour."
-	},
-	{
-		"tags":["maria","nona","responsorium-breve"],
-		"incipit":"God hath chosen her,",
-		"responsum":"And forechosen her.",
-		"versus":"He hath made her to her to dwell in His tabernacle."
-	},
-	{
-		"tags":["maria","nona","responsorium-breve","in-tempore-paschali"],
-		"incipit":"God hath chosen her, and forechosen her.",
-		"responsum":"Alleluia, alleluia.",
-		"versus":"He hath made her to her to dwell in His tabernacle."
 	},
 	{
 		"tags":["maria","ii-vesperae","antiphona","antiphona-magnificat"],
