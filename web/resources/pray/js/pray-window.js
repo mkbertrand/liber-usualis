@@ -65,7 +65,6 @@ function resolveParameters(parameters) {
 		resolved['ambit'] = Pray.defineAmbit(parameters.desired, parameters.priest);
 		resolved.votives = Object.entries(resolved.votives).filter(i => i[1]).map(i => i[0]).join('+');
 		lastResult = resolved;
-    console.log(resolved);
 		return resolved;
 	}
 }
@@ -118,7 +117,7 @@ async function getRite(calendarDate, occasion, parameters, resources) {
 		let rites = resolvedParameters.ambit.riteList(liturgicalDay.tags, occasion);
     var ritesarg = [];
 		for (var i = 0; i < rites.length; i++) {
-      var noending = i != rites.length - 1 && (rites[i + 1][1] == 'officium-parvum-bmv' || rites[i + 1][1] == 'officium-defunctorum' || rites[i + 1][0] == 'psalmi-poenitentiales' || rites[i + 1][0] == 'litaniae-sanctorum' || rites[i + 1][0] == 'officium-capituli');
+      let noending = i != rites.length - 1 && ['officium-parvum-bmv', 'officium-defunctorum', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-capituli'].includes(rites[i + 1][1]);
       ritesarg.push(`${rites[i][0]}.${noending}.${rites[i][1]}`)
     }
     ritesarg = ritesarg.join('_');

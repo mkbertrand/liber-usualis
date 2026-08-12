@@ -142,7 +142,7 @@ def rite():
                     request.query.get('votives', ''),
                     ritesplit[2],
                     request.query.get('privata', '') == 'privata',
-                    ritesplit[1],
+                    ritesplit[1] == 'true',
                     request.query.get('translation', 'none')
                 ))
             return util.dump_data(ret)
