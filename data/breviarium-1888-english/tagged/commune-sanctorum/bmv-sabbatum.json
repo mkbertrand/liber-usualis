@@ -1,13 +1,47 @@
 [
+  {
+		"tags":[
+			["bmv-sabbatum","i-vesperae","versiculus"],
+			["bmv-sabbatum","matutinum","versiculus"]
+		],
+		"datum":["V. Grace is poured into thy lips.","R. Therefore God hath blessed thee for ever."],
+		"in-tempore-paschali":["V. Grace is poured into thy lips, Alleluia.","R. Therefore God hath blessed thee for ever, Alleluia."]
+  },
 	{
 		"tags":["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat"],
-		"datum":"Blessed Mother * and inviolate Maiden! glorious Queen of the world! Plead for us with the Lord!"
+		"datum":"Blessed Mother * and inviolate Maiden! glorious Queen of the world! Plead for us with the Lord!",
+    "post-nativitatem":"Herein is a great mystery of heirship; * the womb of her that knew not a man is become the temple of God: in taking of her flesh He was not defiled: all nations shall come and say, Glory be to Thee, O Lord!"
 	},
+  {
+		"tags":[
+			["bmv-sabbatum","i-vesperae","antiphona","antiphona-magnificat","in-tempore-paschali"],
+			["bmv-sabbatum","laudes","antiphona","antiphona-benedictus","in-tempore-paschali"]
+		],
+		"datum":"Thou Queen of Heaven, * rejoice! Alleluia. For He That thee for Son was given, Alleluia. As He promised is arisen, Alleluia. Mother, pray to Him for us, Alleluia."
+  },
+  {
+		"tags":["bmv-sabbatum","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":"Hail Mary, full of grace: * The Lord is with thee.",
+    "in-tempore-paschali":"Hail Mary, full of grace: * The Lord is with thee, Alleluia."
+  },
 	{
 		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-ii"],
-		"incipit":"Indeed thou art happy, O sacred Virgin Mary, and worthy of all praise:",
-		"responsum-i":"For from thee hath arisen the son of justice,",
-		"responsum-ii":"Christ our God.",
-		"versus":"Pray for the people, intervene for the clerics, intercede for the devoted female sex: so that all should know your help, whoever celebrates your holy commemoration."
-	}
+		"incipit":"O Holy Virgin Mary, happy indeed art thou, and right worthy of all praise,",
+		"responsum-i":"For out of thee rose the Sun of righteousness,",
+    "responsum-ii":"even Christ our God.",
+		"versus":"Pray for the people, plead for the clergy, make intercession for all woman vowed to God. May all that are keeping this thine holy Feast-day feel the might of thine assistance."
+	},
+  {
+		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-ii","responsum-ii","in-tempore-paschali"],
+    "responsum-ii":"even Christ our God, Alleluia."
+  },
+  {
+		"tags":["bmv-sabbatum","laudes","versiculus"],
+    "datum":["V. Blessed art thou among women.","R. And blessed is the fruit of thy womb."],
+    "in-tempore-paschali":["V. Blessed art thou among women, Alleluia.","R. And blessed is the fruit of thy womb, Alleluia."]
+  },
+  {
+		"tags":["bmv-sabbatum","laudes","antiphona","antiphona-benedictus"],
+    "datum":"O Blessed Mary, Mother of God, * Virgin for ever, temple of the Lord, sanctuary of the Holy Ghost, thou, without any ensample before thee, didst make thyself well-pleasing in the sight of our Lord Jesus Christ: pray for the people, plead for the clergy, make intercession for all women vowed to God."
+  }
 ]
