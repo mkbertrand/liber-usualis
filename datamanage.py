@@ -34,18 +34,14 @@ def adjust_tags(day, vesperal, select, votives):
 
     # Handle the Little Office of the BVM and the Office of the Dead (temporary code)
     if select == 'officium-parvum-bmv':
-        templ = list(filter(lambda i: 'pro-aliis-officiis' in i, tags))[0]
         ofp = list(filter(lambda i: 'officium-parvum-bmv' in i, tags))[0]
-        tags = [ofp - {'omissum'} | {'primarium'}, templ | {'pro-sanctis', 'commemoratio'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
+        tags = [ofp - {'omissum'} | {'primarium'}, list(filter(lambda i: 'antiphona-bmv-temporis' in i, tags))[0]]
     elif select == 'officium-defunctorum':
         def votivize(i):
             if 'officium-defunctorum' in i:
-                if 'duplex-minus' in i:
-                    return i | {'officium-defunctorum', 'primarium'}
-                else:
-                    return i | {'officium-defunctorum', 'semiduplex', 'primarium'}
+                return i | {'officium-defunctorum', 'primarium'}
             else:
-                return i - {'primarium', 'commemoratio', 'psalmi'}
+                return i - {'primarium'}
         tags = [votivize(i) for i in tags]
         if not any('officium-defunctorum' in i for i in tags):
             tags.append({'officium-defunctorum','semiduplex','primarium'})

@@ -119,7 +119,7 @@ def title():
     try:
         day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
         hours = parameters['hour'].replace(' ', '+').split('+')
-        tags = datamanage.adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'diei', votives)
+        tags = datamanage.adjust_tags(day, not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'}), parameters['select'] if 'select' in parameters else 'primarium', votives)
         primary = [i for i in tags if 'primarium' in i][0]
         return util.dump_data([datamanage.DEFAULT_CORPUS.get_name(primary), primary])
     except Exception as e:
@@ -150,7 +150,7 @@ def rite():
             request.query.get('date'),
             request.query.get('hour'),
             request.query.get('votives', ''),
-            request.query.get('select', 'diei'),
+            request.query.get('select', 'primarium'),
             request.query.get('privata', '') == 'privata',
             request.query.get('noending', 'false') == 'true',
             request.query.get('translation', 'none')

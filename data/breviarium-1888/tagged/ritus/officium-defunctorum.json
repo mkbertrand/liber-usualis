@@ -111,6 +111,13 @@
 		"datum":"Fidélium Deus ómnium cónditor et redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: + ut indulgéntiam quam semper optavérunt, * piis supplicatiónibus consequántur:",
 		"terminatio":[["terminatio","qui-vivis"]]
 	},
+  {
+    "tags":[
+      ["officium-defunctorum","vesperae","commemorationes"],
+      ["officium-defunctorum","laudes","commemorationes"]
+    ],
+    "datum":""
+  },
 	{
 		"tags":["officium-defunctorum","dominus-vobiscum","post-collectas"],
 		"datum":["V. Réquiem ætérnam dona eis Dómine.", "R. Et lux perpétua lúceat eis."]

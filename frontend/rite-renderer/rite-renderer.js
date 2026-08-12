@@ -36,6 +36,9 @@ class RiteRenderer {
   
   constructor(structuredRite, resources) {
     this.usedCommemorations = structuredRite['used-commemorations'];
+    if (structuredRite['used-primary'][1].includes('officium-parvum-bmv')) {
+      this.usedCommemorations = [['De Sanctis.']];
+    }
     this.matinsCommemoration = structuredRite['commemoratio-matutini'] ? structuredRite['commemoratio-matutini'][0] : null;
     
     this.rite = '';

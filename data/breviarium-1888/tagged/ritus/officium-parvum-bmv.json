@@ -39,6 +39,16 @@
 		],
 		"datum":"Kýrie eléison. Christe eléison. Kýrie eléison."
 	},
+  {
+    "tags":[
+      ["officium-parvum-bmv","vesperae","commemorationes"],
+      ["officium-parvum-bmv","laudes","commemorationes"]
+    ],
+    "datum":[
+      ["pro-sanctis","commemoratio","formula","formula-commemorationis"],
+      ["pro-sanctis","commemoratio","collecta","terminatio"]
+    ]
+  },
 	{
 		"tags":[
 			["officium-parvum-bmv","completorium","formula","formula-lectionis"],

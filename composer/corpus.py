@@ -175,9 +175,6 @@ class Corpus(Bookshelf):
         if alternates is None:
             alternates = []
 
-        if 'commemorationes' in item:
-            return self.handlecommemorations(item, selected, alternates)
-
         if type(item) is dict and 'quaere' in item:
             item['quaere'] = frozenset(item['quaere'])
             pilemod = [{'tags': item['quaere'], 'datum': item['datum']}]
@@ -224,6 +221,9 @@ class Corpus(Bookshelf):
                     selected |= item & self.expand_cat('temporale')
 
                 result = self.search(item | selected, pilemod=pilemod)
+
+            if result is None and 'commemorationes' in item:
+                return self.handlecommemorations(item, selected, alternates)
 
             # If result is still None at this point, just tell user what was searched for
             if result is None and permit_empty:
