@@ -63,7 +63,10 @@
 		]
 	},
 	{
-		"tags":["vidua","i-vesperae","versiculus"],
+		"tags":[
+      ["vidua","i-vesperae","versiculus"],
+      ["vidua","matutinum","nocturna-i","versiculus"]
+    ],
 		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
 		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
@@ -131,11 +134,6 @@
 	{
 		"tags":["vidua","matutinum","nocturna-i","psalmus-iii"],
 		"datum":[["/psalmi/psalmus-xxiii,gloria"]]
-	},
-	{
-		"tags":["vidua","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Spécie tua et pulchritúdine tua.","R. Inténde, próspere procéde, et regna."],
-		"in-tempore-paschali":["V. Spécie tua et pulchritúdine tua, allelúja.","R. Inténde, próspere procéde, et regna, allelúja."]
 	},
 	{
 		"tags":["vidua","matutinum","nocturna-i","lectio","lectio-i"],
@@ -211,7 +209,10 @@
 		"datum":[["/psalmi/psalmus-xlvii,gloria"]]
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-ii","versiculus"],
+		"tags":[
+      ["vidua","matutinum","nocturna-ii","versiculus"],
+      ["vidua","tertia","versiculus"]
+    ],
 		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
 		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
 	},
@@ -289,7 +290,10 @@
 		"datum":[["/psalmi/psalmus-xcvii,gloria"]]
 	},
 	{
-		"tags":["vidua","matutinum","nocturna-iii","versiculus"],
+		"tags":[
+      ["vidua","matutinum","nocturna-iii","versiculus"],
+      ["vidua","sexta","versiculus"]
+    ],
 		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
 		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
 	},
@@ -331,7 +335,11 @@
 		"datum":"Thesaúrus autem cœléste est desidérium: ager vero, in quo thesaúrus abscónditur, disciplína stúdii cœléstis. Quem profécto agrum vénditis ómnibus cómparat, qui voluptátibus carnis renúntians, cuncta sua terréna desidéria per disciplínæ cœléstis custódiam calcat: ut nihil jam, quod caro blandítur, líbeat; nihil quod carnálem vitam trucídat, spíritus  perhorréscat."
 	},
 	{
-		"tags":["vidua","laudes","versiculus"],
+		"tags":[
+      ["vidua","laudes","versiculus"],
+			["vidua","nona","versiculus"],
+			["vidua","ii-vesperae","versiculus"]
+		],
 		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."],
 		"in-tempore-paschali":["V. Diffúsa est grátia in lábiis tuis, allelúja.","R. Proptérea benedíxit te Deus in ætérnum, allelúja."]
 	},
@@ -345,11 +353,6 @@
     "datum":[["virgo","responsorium-breve"]]
   },
 	{
-		"tags":["vidua","tertia","versiculus"],
-		"datum":["V. Adjuvábit eam Deus vultu suo.","R. Deus in médio ejus, non commovébitur."],
-		"in-tempore-paschali":["V. Adjuvábit eam Deus vultu suo, allelúja.","R. Deus in médio ejus, non commovébitur, allelúja."]
-	},
-	{
 		"tags":["vidua","martyr","sexta","capitulum"],
 		"datum":"[Eccli. 51.]/Liberásti me secúndum multitúdinem misericórdiæ nóminis tui a rugiéntibus, præparátis ad escam, + de mánibus quæréntium ánimam meam, * et de multis tribulatiónibus quæ circumdedérunt me."
 	},
@@ -358,25 +361,12 @@
 		"datum":"[Parab. 31. c.]/Manum suam apéruit ínopi, + et palmas suas exténdit ad paúperem. * Non timébit dómui suæ a frigóribus nivis."
 	},
 	{
-		"tags":["vidua","sexta","versiculus"],
-		"datum":["V. Elégit eam Deus, et præelégit eam.","R. In tabernáculo suo habitáre facit eam."],
-		"in-tempore-paschali":["V. Elégit eam Deus, et præelégit eam, allelúja.","R. In tabernáculo suo habitáre facit eam, allelúja."]
-	},
-	{
 		"tags":["vidua","martyr","nona","capitulum"],
 		"datum":"[Eccli. 51.]/Laudábit usque ad mortem ánima mea Dóminum, + quóniam éruis sustinéntes te, et líberas eos de manu angústiæ, * Dómine Deus noster."
 	},
 	{
 		"tags":["vidua","nona","capitulum"],
 		"datum":"[Parab. 31. d.]/Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas. + Fallax grátia, et vana est pulchritúdo: * múlier timens Dóminum, ipsa laudábitur."
-	},
-	{
-		"tags":[
-			["vidua","nona","versiculus"],
-			["vidua","ii-vesperae","versiculus"]
-		],
-		"datum":["V. Diffúsa est grátia in lábiis tuis.","R. Proptérea benedíxit te Deus in ætérnum."],
-		"in-tempore-paschali":["V. Diffúsa est grátia in lábiis tuis, allelúja.","R. Proptérea benedíxit te Deus in ætérnum, allelúja."]
 	},
 	{
 		"tags":["vidua","ii-vesperae","antiphona","antiphona-magnificat"],
