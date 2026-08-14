@@ -4,8 +4,6 @@ from pathlib import Path
 import json
 import functools
 import copy
-import traceback
-import warnings
 from datetime import datetime, date
 
 import kalendar.display as display
@@ -29,11 +27,11 @@ ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-18
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
 
 @functools.lru_cache(maxsize=30)
-def rite_request(date, rites, votives, select, private, noending, translation):
+def rite_request(date, item, votives, select, private, translation):
     day = datetime.strptime(date, '%Y-%m-%d').date()
-    hours = rites.replace(' ', '+').split('+')
+    rite_tags = frozenset(item.replace(' ', '+').split('+'))
     votives = votives.replace(' ', '+').split('+')
-    vesperal = not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
+    vesperal = not set(rite_tags).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives = votives))
     if private:
         tags = [i | {'privata'} for i in tags]
@@ -42,12 +40,9 @@ def rite_request(date, rites, votives, select, private, noending, translation):
         tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
     used_primary = [i for i in tags if select in i][0]
     tags.remove(used_primary)
+    used_primary -= {'omissum'}
 
-    lit = []
-    for hour in hours:
-        lit.append({'officium', hour})
-    print(tags)
-    rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':lit}, used_primary, tags)
+    rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':[rite_tags]}, used_primary, tags)
     tags.append(used_primary)
 
     if translation != 'none':
@@ -62,7 +57,7 @@ def rite_request(date, rites, votives, select, private, noending, translation):
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return {
-        'rite' : rite.rite['datum'],
+        'text' : rite.rite['datum'],
         'used-primary': [DEFAULT_CORPUS.get_name(used_primary), used_primary],
         'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None

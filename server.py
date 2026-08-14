@@ -119,13 +119,12 @@ def title():
     try:
         day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
         hours = parameters['hour'].replace(' ', '+').split('+')
-        select = parameters['select'] if 'select' in parameters else 'primarium'
         vesperal = not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
         tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(datamanage.DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(datamanage.DEFAULT_CORPUS, day, votives = votives))
         if not any('officium-defunctorum' in tagset for tagset in tags):
             time = [tagset - {'tempus'} for tagset in tags if 'tempus' in tagset][0]
             tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
-        used_primary = [i for i in tags if select in i][0]
+        used_primary = [i for i in tags if 'primarium' in i][0]
         return util.dump_data([datamanage.DEFAULT_CORPUS.get_name(used_primary), used_primary])
     except Exception as e:
         print(e)
@@ -147,17 +146,15 @@ def rite():
                     request.query.get('votives', ''),
                     ritesplit[2],
                     request.query.get('privata', '') == 'privata',
-                    ritesplit[1] == 'true',
                     request.query.get('translation', 'none')
                 ))
             return util.dump_data(ret)
         return util.dump_data(datamanage.rite_request(
             request.query.get('date'),
-            request.query.get('hour'),
+            request.query.get('rite'),
             request.query.get('votives', ''),
             request.query.get('select', 'primarium'),
             request.query.get('privata', '') == 'privata',
-            request.query.get('noending', 'false') == 'true',
             request.query.get('translation', 'none')
         ))
     except Exception as e:

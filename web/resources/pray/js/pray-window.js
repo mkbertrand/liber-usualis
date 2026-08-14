@@ -107,21 +107,13 @@ async function getRite(calendarDate, occasion, parameters, resources) {
 		let resolvedParameters = resolveParameters(parameters);
 		var response = await fetch(`/title?date=${calendarDate}
 			&hour=${occasion}
-			&select=${resolvedParameters.ambit.occasions[resolvedParameters.ambit.idindex(occasion)].title}
 			&votives=${resolvedParameters.votives}
 		`);
 		let titleJSON = await response.json();
 		let ret = Pray.dateHeader(calendarDate) + Pray.riteTitle(titleJSON[0], titleJSON[1], 'large');
 		let previousTitle = titleJSON[0];
 		let liturgicalDay = await getLiturgicalDay(calendarDate, getTime(occasion), parameters);
-		let rites = resolvedParameters.ambit.riteList(liturgicalDay.tags, occasion);
-    var ritesarg = [];
-		for (var i = 0; i < rites.length; i++) {
-      let noending = i != rites.length - 1 && ['officium-parvum-bmv', 'officium-defunctorum', 'psalmi-poenitentiales', 'litaniae-sanctorum', 'officium-capituli'].includes(rites[i + 1][1]);
-      ritesarg.push(`${rites[i][0]}.${noending}.${rites[i][1]}`)
-    }
-    ritesarg = ritesarg.join('_');
-    var response = await fetch(`/rite?date=${calendarDate}&rites=${ritesarg}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}
+    var response = await fetch(`/rite?date=${calendarDate}&rite=${occasion}+${resolvedParameters.ambit.type}&select=${resolvedParameters.ambit.select}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}
     `);
 
     if (response.status == 400 || response.status == 500) {
@@ -129,13 +121,13 @@ async function getRite(calendarDate, occasion, parameters, resources) {
     }
 
     let json = await response.json();
-		for (var i = 0; i < rites.length; i++) {
+		for (var i = 0; i < 0; i++) {
 			if (!json[i].rite.tags.includes('aperi-domine') && !json[i].rite.tags.includes('sacrosanctae') && !json[i].rite.tags.includes('antiphona-bmv') && !json[i].rite.tags.includes('officium-capituli') && json[i]['used-primary'][0] != previousTitle) {
 				ret += Pray.riteTitle(json[i]['used-primary'][0], json[i]['used-primary'][1], 'small');
 				previousTitle = json[i]['used-primary'][0];
 			}
-			ret += Pray.renderRite(json[i], resources);
 		}
+    ret += Pray.renderRite(json, resources);
 		return ret;
 	}
 

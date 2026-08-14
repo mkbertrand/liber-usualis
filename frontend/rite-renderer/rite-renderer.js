@@ -613,6 +613,6 @@ class RiteRenderer {
 
 export function renderRite(rite, resources) {
   let renderer = new RiteRenderer(rite, resources);
-  renderer.recurseRite(rite.rite, null, new Set());
+  renderer.recurseRite(rite.text, null, new Set());
   return renderer.rite;
 }
