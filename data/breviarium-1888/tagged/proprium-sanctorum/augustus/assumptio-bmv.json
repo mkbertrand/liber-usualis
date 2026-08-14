@@ -22,7 +22,11 @@
 		"nona":[["maria","commune","capitulum"]]
 	},
 	{
-		"tags":["assumptio-bmv","i-vesperae","versiculus"],
+		"tags":[
+      ["assumptio-bmv","vesperae","versiculus"],
+      ["assumptio-bmv","matutinum","nocturna-i","versiculus"],
+			["assumptio-bmv","laudes","versiculus"]
+		],
 		"datum":["V. Exaltáta est sancta Dei Génitrix.","R. Super choros Angelórum ad cœléstia regna."]
 	},
 	{
@@ -45,10 +49,6 @@
 		"antiphona-iii":[["maria","matutinum","nocturna-i","antiphona","antiphona-i"]]
 	},
 	{
-		"tags":["assumptio-bmv","matutinum","nocturna-i","versiculus"],
-		"datum":["V. Exaltáta est sancta Dei Génitrix.","R. Super choros Angelórum ad cœléstia regna."]
-	},
-	{
 		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-i","lectio"],
 		"lectio-i":[
 			"Incípiunt Cántica canticórum.",
@@ -67,9 +67,7 @@
 	},
 	{
 		"tags":["assumptio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii"],
-		"incipit":"Sicut cedrus exaltáta sum in Líbano, et sicut cypréssus in monte Sion: quasi myrrha elécta,",
-		"responsum":"Dedi suavitátem odóris.",
-		"versus":"Et sicut cinnamómum et bálsamum aromatízans."
+    "datum":[["maria","nocturna-ii","responsorium-i","responsorium"]]
 	},
 	{
 		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-i","lectio"],
@@ -107,9 +105,7 @@
 	},
 	{
 		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-		"incipit":"Beátam me dicent omnes generatiónes:",
-		"responsum":"Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.",
-		"versus":"Et misericórdia ejus a progénie in progénies timéntibus eum."
+    "datum":[["maria","nocturna-iii","responsorium-ii","responsorium"]]
 	},
 	{
 		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-ii","lectio"],
@@ -118,9 +114,7 @@
 	{
 		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii"],
 		"formula":[["simplex-responsum"]],
-		"incipit":"Beáta es Virgo María, quæ Dóminum portásti Creatórem mundi:",
-		"responsum":"Genuísti qui te fecit, et in ætérnum pérmanes Virgo.",
-		"versus":"Ave María, grátia plena: Dóminus tecum."
+    "datum":[["maria","nocturna-i","responsorium-iii","responsorium"]]
 	},
 	{
 		"tags":[
@@ -157,13 +151,6 @@
 	{
 		"tags":["assumptio-bmv","duplex-i-classis","matutinum","nocturna-iii","lectio"],
 		"lectio-iii":"Cum ergo María suáviter audíret verbum dulcíssimum, et corde intentíssimo pascerétur, interpelláto Dómino a soróre sua, quómodo putámus eam timuísse, ne díceret ei Dóminus: Surge, et ádjuva sorórem tuam? Mira enim suavitáte tenebátur: quæ profécto major est mentis quam ventris. Excusáta est, sedit secúrior. Quómodo autem excusáta? Attendámus, inspiciámus, perscrutémur quod póssumus, ut pascámur et nos."
-	},
-	{
-		"tags":[
-			["assumptio-bmv","laudes","versiculus"],
-			["assumptio-bmv","ii-vesperae","versiculus"]
-		],
-		"datum":["V. Exaltáta est sancta Dei Génitrix.","R. Super choros Angelórum ad cœléstia regna."]
 	},
 	{
 		"tags":["assumptio-bmv","laudes","antiphona","antiphona-benedictus"],
