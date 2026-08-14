@@ -36,7 +36,7 @@ class Ambit {
 	}
 
 	riteList(daytags, occasion) {
-
+    return [[occasion, 'primarium']];
 		if (typeof occasion === 'string') {
 			occasion = this.occasions[this.idindex(occasion)];
 		}
@@ -75,10 +75,6 @@ class Ambit {
 			}
 		}
 		return lit;
-	}
-
-	fullRiteList(daytags) {
-		return this.occasions.map((occasion) => this.riteList(daytags, occasion));
 	}
 
 	// In the case that you are switching from one ambit to another, you will want a way to pick which occasion will be selected.

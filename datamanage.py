@@ -43,13 +43,10 @@ def rite_request(date, rites, votives, select, private, noending, translation):
     used_primary = [i for i in tags if select in i][0]
     tags.remove(used_primary)
 
-    if noending and not 'antiphona-bmv' in used_primary:
-        tags.append({'fidelium-animae', 'hoc-omissum'} | set(hours))
-        tags.append({'pater-noster-secreta-post-officium', 'hoc-omissum'} | set(hours))
     lit = []
     for hour in hours:
-        lit.append({'ritus', hour})
-
+        lit.append({'officium', hour})
+    print(tags)
     rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':lit}, used_primary, tags)
     tags.append(used_primary)
 

@@ -9,7 +9,7 @@ import composer.psalms as psalms
 from composer.util import transform_search
 from composer.rite import Rite
 
-DEFAULT_PILE = {'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
+DEFAULT_PILE = {'officium', 'formulae', 'litaniae-sanctorum','absolutiones-benedictiones', 'dies-lunae', 'nomen-temporis', 'benedictio-mensae'}
 
 def anysearch(query, pile):
     for i in pile:

@@ -36,9 +36,7 @@ class RiteRenderer {
   
   constructor(structuredRite, resources) {
     this.usedCommemorations = structuredRite['used-commemorations'];
-    if (structuredRite['used-primary'][1].includes('officium-parvum-bmv')) {
-      this.usedCommemorations = [['De Sanctis.']];
-    }
+    this.usedCommemorations.push('De Sanctis.');
     this.matinsCommemoration = structuredRite['commemoratio-matutini'] ? structuredRite['commemoratio-matutini'][0] : null;
     
     this.rite = '';
@@ -388,7 +386,7 @@ class RiteRenderer {
       this.closeParagraph();
       this.openParagraph('lectio-sequens');
       this.recurseRite(lesson[1] + '/' + lesson[2], null, parentTags.union(tags(element)).union(new Set(['lectio-sequens'])));
-      closeParagraph();
+      this.closeParagraph();
       return true;
     } else if (quaesitum(element).isSupersetOf(new Set(['triduum', 'nocturna-i']))) {
       if (quaesitum(element).has('lectio-i')) {

@@ -153,7 +153,7 @@
 				{"include":["duplex-ii-classis"],"target":0,"adde":"omissum"},
 				{"include":["duplex-majus"],"target":0,"adde":"omissum"},
 				{"include":["duplex-minus"],"target":0,"adde":"omissum"},
-				{"include":["semiduplex"],"target":0,"adde":"omissum"},
+				{"include":["semiduplex","primarium"],"target":0,"adde":"omissum"},
 				{"include":["maria"],"exclude":[["suffragium"],["votiva"]],"target":0,"adde":"omissum"},
 				{"include":["hebdomada-sancta"],"target":0,"adde":"omissum"}
 			]
@@ -435,5 +435,17 @@
 				{"include":["primarium"],"exclude":[["vigilia-epiphaniae"],["epiphania"]],"target":1,"adde":"habens-commemorationem-matutini"}
 			]
 		}
-	]
+	],
+  [
+    {
+      "include":["primarium"],
+      "response":[
+        {"include":["officium-parvum-bmv"],"exclude":["omissum"],"adde":["cum-opbmv"],"target":0},
+        {"include":["officium-defunctorum"],"adde":["cum-officio-defunctorum"],"target":0},
+        {"include":["psalmi-graduales"],"adde":["cum-psalmis-gradualibus"],"target":0},
+        {"include":["psalmi-poenitentiales"],"adde":["cum-psalmis-poenitentialibus"],"target":0},
+        {"include":["litaniae-sanctorum"],"adde":["cum-litaniis"],"target":0}
+      ]
+    }
+  ]
 ]
