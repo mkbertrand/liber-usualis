@@ -38,10 +38,17 @@ def rite_request(date, item, votives, select, private, translation):
     if not any('officium-defunctorum' in tagset for tagset in tags):
         time = [tagset - {'tempus'} for tagset in tags if 'tempus' in tagset][0]
         tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
+
+    # We could use the cum-opbmv tag to have separate functionality defined in a data-driven way but this is probably cleaner.
+    if 'cum-opbmv' in rite_tags:
+        tags = [i - {'omissum'} if 'officium-parvum-bmv' in i else i for i in tags]
+
     used_primary = [i for i in tags if select in i][0]
     tags.remove(used_primary)
     used_primary -= {'omissum'}
 
+    print(rite_tags)
+    print(used_primary)
     rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':[rite_tags]}, used_primary, tags)
     tags.append(used_primary)
 

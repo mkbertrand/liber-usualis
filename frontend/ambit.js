@@ -100,7 +100,7 @@ export function defineAmbit(desired) {
 		case 'omnes':
 			return sevenHourTemplater('officium', 'primarium', '');
 		case 'officium-parvum-bmv':
-			return sevenHourTemplater('officium', 'officium-parvum-bmv', '');
+			return sevenHourTemplater('ritus', 'officium-parvum-bmv', '');
 		case 'officium-defunctorum':
 			return defunctAmbit;
 		case 'psalmi-graduales':

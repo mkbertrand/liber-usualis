@@ -161,6 +161,16 @@
     "datum":""
   },
   {
+    "tags":[
+      ["ritus","sine-ritibus","officium-parvum-bmv"],
+      ["ritus","sine-ritibus","officium-defunctorum"],
+      ["ritus","sine-ritibus","psalmi-graduales"],
+      ["ritus","sine-ritibus","psalmi-poenitentiales"],
+      ["ritus","sine-ritibus","litaniae-sanctorum"]
+    ],
+    "datum":""
+  },
+  {
     "tags":["officium","triduum"],
     "matutinum":[
       ["aperi-domine"],
