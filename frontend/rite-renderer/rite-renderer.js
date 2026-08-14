@@ -421,7 +421,7 @@ class RiteRenderer {
       this.recurseRite(lesson[1], translation[1], new Set(['evangelium-matutini']));
       this.openParagraph('lectionis-titulum');
       this.recurseRite(lesson[2], translation[2], parentTags.union(tags(element)).union(new Set(['lectionis-titulum'])));
-      this.recurseRite(lesson.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), translation[3] ? translation.slice(3).join(' &para; ') : null, new Set(['lectio-incipiens']));
+      this.recurseRite(lesson.slice(3).map((re, i) => i == 0 ? re : re.replace(/\]\//, '] ')).join(' &para; '), Array.isArray(translation) && translation[3] ? translation.slice(3).join(' &para; ') : null, new Set(['lectio-incipiens']));
     // Cheeky heuristic to guess if the first item is a title or if this lesson is really some conjoined lessons.
     } else if (Array.isArray(lesson) && lesson[0].length < 100) {
       this.openParagraph('lectionis-titulum');
