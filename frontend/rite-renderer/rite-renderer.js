@@ -409,7 +409,7 @@ class RiteRenderer {
       return true;
     }
     if (Array.isArray(element.datum) && element.datum.every(item => tags(item).has('lectio'))) {
-      translation = element.datum.map(item => 'translation' in item ? unpack(item.translation) : null);
+      translation = unpack(element.datum.map(item => 'translation' in item ? item.translation : null));
     } else {
       translation = unpack(translation);
     }
