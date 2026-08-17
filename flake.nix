@@ -72,9 +72,40 @@
         in
         pythonSet.mkVirtualEnv "libu-env" workspace.deps.default;
 
+      mkFrontendAssets =
+        system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+        in
+        pkgs.buildNpmPackage {
+          pname = "liber-usualis-frontend";
+          version = "1.0.0";
+          src = self;
+
+          npmDeps = pkgs.importNpmLock {
+            npmRoot = self;
+            packageSourceOverrides."node_modules/exsurge" = pkgs.fetchFromGitHub {
+              owner = "bbloomf";
+              repo = "exsurge";
+              rev = "0c39f61eb17c59228202bcbdfe0f92c47dfc8f34";
+              hash = "sha256-zc9cfuzCHkxpKmdR5EyobB29UY1mNVbeMlZx1FoVvuE=";
+            };
+          };
+          npmConfigHook = pkgs.importNpmLock.npmConfigHook;
+          npmBuildScript = "build";
+
+          installPhase = ''
+            runHook preInstall
+            mkdir -p "$out"
+            cp -r web/resources/dist/. "$out/"
+            runHook postInstall
+          '';
+        };
+
       # NixOS configuration helpers (always x86_64-linux)
       nixosSystem = "x86_64-linux";
       python_env = mkPythonEnv nixosSystem;
+      frontend_assets = mkFrontendAssets nixosSystem;
 
       imageConfiguration = nixpkgs.lib.nixosSystem {
         system = nixosSystem;
@@ -84,7 +115,12 @@
           ./nix/image-formats.nix
         ];
         specialArgs = {
-          inherit self nixpkgs python_env;
+          inherit
+            self
+            nixpkgs
+            python_env
+            frontend_assets
+            ;
           nodename = "libu";
           format = null;
         };
@@ -106,7 +142,12 @@
           ./nix/linode-hw.nix
         ];
         specialArgs = {
-          inherit self nixpkgs python_env;
+          inherit
+            self
+            nixpkgs
+            python_env
+            frontend_assets
+            ;
           nodename = "libu";
           format = "linode";
         };
@@ -119,6 +160,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
         systemPythonEnv = mkPythonEnv system;
+        frontendAssets = mkFrontendAssets system;
       in
       {
         python_env = systemPythonEnv;
@@ -130,16 +172,24 @@
             pkgs.uv
             pkgs.awscli2
             pkgs.jq
+            pkgs.nodejs
           ];
           shellHook = ''
             mkdir -p "$PWD/data/generated/liber-usualis-chant" "$PWD/data/generated/fcc"
+            mkdir -p "$PWD/web/resources/dist"
             chmod -R u+w "$PWD/data/generated/liber-usualis-chant" "$PWD/data/generated/fcc"
             ${pkgs.coreutils}/bin/cp -Rsf ${chant}/. "$PWD/data/generated/liber-usualis-chant/"
             ${pkgs.coreutils}/bin/cp -Rsf ${fcc}/. "$PWD/data/generated/fcc/"
+            ${pkgs.coreutils}/bin/rm -f "$PWD/web/resources/dist"/{pray.js,pray.js.map,pray.css,pray.css.map}
+            ${pkgs.coreutils}/bin/cp ${frontendAssets}/* "$PWD/web/resources/dist/"
+            ${pkgs.coreutils}/bin/chmod u+w "$PWD/web/resources/dist"/*
           '';
         };
 
-        packages = nixpkgs.lib.optionalAttrs (system == nixosSystem) imagePackages;
+        packages = {
+          frontend-assets = frontendAssets;
+        }
+        // nixpkgs.lib.optionalAttrs (system == nixosSystem) imagePackages;
       }
     )
     // {

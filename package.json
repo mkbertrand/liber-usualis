@@ -1,7 +1,10 @@
 {
   "dependencies": {
-    "exsurge": "github:bbloomf/exsurge",
+    "exsurge": "github:bbloomf/exsurge#0c39f61eb17c59228202bcbdfe0f92c47dfc8f34",
     "hypher": "^0.2.5"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1"
   },
   "name": "liber-usualis",
   "description": "A project dedicated to making the Mass, Hours, and Rites of various editions of the Roman Rite easily accessible and beautifully formatted with or without their chants.",
@@ -9,8 +12,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css",
-    "watch": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css"
+    "build": "rm -rf web/resources/dist && mkdir -p web/resources/dist && esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css",
+    "watch": "rm -rf web/resources/dist && mkdir -p web/resources/dist && esbuild frontend/pray.js frontend/css/pray.css --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray --watch"
   },
   "repository": {
     "type": "git",

@@ -261,7 +261,7 @@
    the next occasion, and asynchronous refreshes. Alpine watchers refresh the day
    or rite when date and preference state changes.
 
-** Ritual Structure and Requests: =web/resources/pray/js/ambit.js=
+** Ritual Structure and Requests: =frontend/ambit.js=
 
    =Rite=, =Occasion=, and =Ambit= describe which backend rites make up a displayed
    occasion. =fullAmbit= defines the normal sequence from Matins through Compline;
@@ -284,12 +284,13 @@
 
 ** Rendering and Window Helpers
 
-   =web/resources/pray/js/ritegen.js= converts structured rite responses into HTML
-   and recognizes inline =translation= and =cantus= content.
+   =frontend/rite-renderer/rite-renderer.js= converts structured rite responses
+   into HTML and recognizes inline =translation= and =cantus= content.
 
-   =web/resources/pray/js/psalmify.js= formats psalm text. Files under
-   =web/resources/pray/js/chant/= render GABC lazily with Exsurge and provide Latin
-   hyphenation support.
+   =frontend/rite-renderer/psalmify.js= formats psalm text, and
+   =frontend/gabc-chant.js= renders GABC lazily with Exsurge. The frontend sources
+   are bundled from =frontend/pray.js= into =web/resources/dist/pray.js=; styles
+   are bundled from =frontend/css/pray.css= into =web/resources/dist/pray.css=.
 
    =web/resources/pray/js/pray-window.js= maps UI locales to translation books and
    handles responsive panel sizing. It does not own the primary Alpine event flow.
@@ -356,14 +357,17 @@
 
 * Infrastructure
 
-  =flake.nix=, =flake.lock=, =pyproject.toml=, and =uv.lock= remain at the repository
-  root because they describe the complete source and Python workspace. Root
-  =.envrc= and =.python-version= provide project-level tool discovery.
+  =flake.nix=, =flake.lock=, =package.json=, =package-lock.json=,
+  =pyproject.toml=, and =uv.lock= remain at the repository root because they
+  describe the complete source, frontend, and Python workspace. Root =.envrc= and
+  =.python-version= provide project-level tool discovery.
 
   Deployment modules and provider policy files live under =nix/=. The flake passes
-  its tracked source to =nix/nixos-config.nix= for installation under
-  =/var/lib/libu=. The development shell merges symlinks to the flake-pinned chant
-  books into =data/generated/liber-usualis-chant= and =data/generated/fcc=.
+  its tracked source and the =buildNpmPackage=-generated frontend bundles to
+  =nix/nixos-config.nix= for installation under =/var/lib/libu=. The development
+  shell provides Node.js, copies the generated bundles into =web/resources/dist=,
+  and merges symlinks to the flake-pinned chant books into
+  =data/generated/liber-usualis-chant= and =data/generated/fcc=.
   Deployment preserves an operator-provided =books.json= and =data/generated/=
   while replacing the tracked application. Operators must run =sync-books.py=
   separately when generated books need to be installed or updated.
@@ -391,8 +395,9 @@
   | =composer/rite.py=                           | Translation and chant superimposition        |
   | =composer/psalms.py=                         | Psalm reference resolution                   |
   | =web/templates/pray.tpl=                     | Page shell and Alpine state                  |
-  | =web/resources/pray/js/ambit.js=             | Ritual structure and HTTP request composition |
-  | =web/resources/pray/js/ritegen.js=           | Rite rendering                               |
+  | =frontend/ambit.js=                          | Ritual structure and HTTP request composition |
+  | =frontend/rite-renderer/rite-renderer.js=    | Rite rendering                               |
+  | =frontend/pray.js=                           | Frontend bundle entry point                  |
   | =web/resources/pray/js/pray-window.js=       | Window and panel helpers                     |
   | =data/{book}/tagged/=                        | Tagged liturgical content                    |
   | =data/{book}/untagged/=                      | Untagged text and GABC resources             |
