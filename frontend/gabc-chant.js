@@ -18,7 +18,7 @@ GABC_CHANT_CONTEXT.staffLineColor = 'red';
 
 GABC_CHANT_CONTEXT.condenseLineAmount = 1;
 // For some reason, setting the property directly doesn't work for glyph scaling specifically :D
-GABC_CHANT_CONTEXT.setGlyphScaling(1/14);
+GABC_CHANT_CONTEXT.setGlyphScaling(1/12);
 GABC_CHANT_CONTEXT.minLyricWordSpacing *= 1;
 GABC_CHANT_CONTEXT.accidentalSpaceMultiplier = 1.5;
 GABC_CHANT_CONTEXT.intraNeumeSpacing = 5;
