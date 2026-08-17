@@ -203,7 +203,8 @@
             'chant-shown': displayParameters.chant,
             'chant-hidden': !displayParameters.chant,
             'side-by-side': displayParameters['side-by-side'] && parameters.translation,
-            'line-by-line': !displayParameters['side-by-side'] && parameters.translation
+            'line-by-line': !displayParameters['side-by-side'] && parameters.translation,
+            'no-translation': !parameters.translation
             }">
 					</div>
 					<template x-if="bottompanel">

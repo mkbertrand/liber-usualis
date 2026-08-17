@@ -191,6 +191,10 @@ span.rite-text.chant-translation {
 	padding-left: 10px;
 }
 
+#rite-container.no-translation :is(.rite-text-translation, .chant-translation) {
+  display: none;
+}
+
 #rite-container.line-by-line .rite-text-translation span.line-starting-symbol {
   display: none;
 }
