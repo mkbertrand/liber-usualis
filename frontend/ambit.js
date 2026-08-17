@@ -8,10 +8,11 @@ class Occasion {
 }
 
 class Ambit {
-	constructor(occasions, select, type = 'ritus') {
+	constructor(occasions, select, type, opt = '') {
     this.occasions = occasions;
     this.select = select;
     this.type = type;
+    this.opt = opt;
 	}
 
 	idindex(id) {
@@ -44,16 +45,16 @@ class Ambit {
 	}
 }
 
-const sevenHourTemplater = (type, select, mods) => {
+const sevenHourTemplater = (type, select, opt) => {
   let ambit = new Ambit([
-    new Occasion('Matutinum & Laudes', 'matutinum-laudes' + mods),
-    new Occasion('Prima', 'prima' + mods),
-    new Occasion('Tertia', 'tertia' + mods),
-    new Occasion('Sexta', 'sexta' + mods),
-    new Occasion('Nona', 'nona' + mods),
-    new Occasion('Vesperae', 'vesperae' + mods),
-    new Occasion('Completorium', 'completorium' + mods)
-  ], select, type);
+    new Occasion('Matutinum & Laudes', 'matutinum-laudes'),
+    new Occasion('Prima', 'prima'),
+    new Occasion('Tertia', 'tertia'),
+    new Occasion('Sexta', 'sexta'),
+    new Occasion('Nona', 'nona'),
+    new Occasion('Vesperae', 'vesperae'),
+    new Occasion('Completorium', 'completorium')
+  ], select, type, opt);
   ambit.suggestSelectedOccasion = function(hour) {
     if (hour < 6) {
       return this.occasions[0];
@@ -77,12 +78,12 @@ const sevenHourTemplater = (type, select, mods) => {
 defunctAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', 'matutinum-laudes'),
 	new Occasion('Vesperae', 'vesperae')
-], 'officium-defunctorum', 'officium');
+], 'officium-defunctorum', 'officium', '');
 
 benedictioMensaeAmbit = new Ambit([
 	new Occasion('Pro Prandio', 'pro-prandio'),
 	new Occasion('Pro Cœna', 'pro-coena')
-], 'primarium', 'ritus');
+], 'primarium', 'ritus', '');
 
 defunctAmbit.suggestSelectedOccasion = function(hour) {
 	if (hour < 16) {
@@ -93,7 +94,7 @@ defunctAmbit.suggestSelectedOccasion = function(hour) {
 }
 
 function singleOccasionAmbit(name, desired) {
-  return new Ambit([new Occasion(name, desired)], 'primarium');
+  return new Ambit([new Occasion(name, desired)], 'primarium', 'ritus', '');
 }
 
 export function defineAmbit(desired) {
@@ -103,9 +104,9 @@ export function defineAmbit(desired) {
 		case 'officium-parvum-bmv':
 			return sevenHourTemplater('officium', 'officium-parvum-bmv', '');
 		case 'semper-cum-opbmv':
-      return sevenHourTemplater('officium', 'primarium', '+cum-opbmv');
+      return sevenHourTemplater('officium', 'primarium', 'cum-opbmv');
 		case 'diei':
-      return sevenHourTemplater('officium', 'primarium', '+sine-ritibus');
+      return sevenHourTemplater('officium', 'primarium', 'sine-ritibus');
 		case 'officium-defunctorum':
 			return defunctAmbit;
 		case 'benedictio-mensae':

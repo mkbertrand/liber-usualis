@@ -125,19 +125,19 @@ def rite():
                 ret.append(datamanage.rite_request(
                     request.query.get('date'),
                     ritesplit[0],
-                    request.query.get('votives', ''),
+                    request.query.get('opt', ''),
                     ritesplit[2],
-                    request.query.get('privata', '') == 'privata',
-                    request.query.get('translation', 'none')
+                    request.query.get('translation', 'none'),
+                    request.query.get('votives', '')
                 ))
             return util.dump_data(ret)
         return util.dump_data(datamanage.rite_request(
             request.query.get('date'),
             request.query.get('rite'),
-            request.query.get('votives', ''),
+            request.query.get('opt', ''),
             request.query.get('select', 'primarium'),
-            request.query.get('privata', '') == 'privata',
-            request.query.get('translation', 'none')
+            request.query.get('translation', 'none'),
+            request.query.get('votives', '')
         ))
     except Exception as e:
         traceback.print_exc()

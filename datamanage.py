@@ -27,14 +27,14 @@ ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-18
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
 
 @functools.lru_cache(maxsize=30)
-def rite_request(date, item, votives, select, private, translation):
+def rite_request(date, item, opt, select, translation, votives):
     day = datetime.strptime(date, '%Y-%m-%d').date()
     rite_tags = frozenset(item.replace(' ', '+').split('+'))
+    options = frozenset(opt.replace(' ', '+').split('+'))
+    rite_tags |= options
     votives = votives.replace(' ', '+').split('+')
     vesperal = not set(rite_tags).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives = votives))
-    if private:
-        tags = [i | {'privata'} for i in tags]
     if not any('officium-defunctorum' in tagset for tagset in tags):
         time = [tagset - {'tempus'} for tagset in tags if 'tempus' in tagset][0]
         tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
