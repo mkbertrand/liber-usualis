@@ -89,7 +89,7 @@ def localpage(preferredlocale, page):
 def error500tpl(error):
     return template('web/resources/error500.tpl', error=error)
 
-@get('/day')
+@get('/api/ordo')
 def daytags(vesperal = False):
     parameters = copy.deepcopy(request.query)
 
@@ -113,7 +113,7 @@ def daytags(vesperal = False):
         })
 
 # Returns raw JSON so that frontend can format it as it will
-@get('/rite')
+@get('/api/composer')
 def rite():
     try:
         rites = request.query.get('rites', None)
@@ -144,13 +144,13 @@ def rite():
         print(e)
         abort(500, error500tpl('Error incognitus.'))
 
-@get('/kalendar')
+@get('/api/kalendar')
 def kal():
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
         return datamanage.getdisplaykalendar(datamanage.DEFAULT_CORPUS)
 
-@get('/chant/<file:path>')
+@get('/api/chant/<file:path>')
 def chant(file):
     return static_file(file, root=datamanage.DATA_ROOT.joinpath('generated'))
 

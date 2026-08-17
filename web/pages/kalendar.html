@@ -6,7 +6,7 @@
 	kalendar: [],
 	initialized: false,
 	async getKalendar() {
-		var response = await fetch(`/kalendar`);
+		var response = await fetch(`/api/kalendar`);
 		var json = await response.json();
 		this.skeleton = json.skeleton;
 		newskeleton = new Object();
