@@ -5,7 +5,8 @@ import {getPsalmTone} from './psalmify.js';
 export function chomp(gabc, tags, resources) {
 	gabc = gabc.replace('<v>\\greheightstar</v>', '*');
 
-	mode = gabc.match(/mode:(.+?)(?:;|\n)/);
+	let clef;
+	let mode = gabc.match(/mode:(.+?)(?:;|\n)/);
 	if (mode) {
 		mode = mode[1];
 	}
@@ -21,7 +22,7 @@ export function chomp(gabc, tags, resources) {
 		.replace(/<c>.+?<\/c>/, '')
 		.replaceAll(/<e>(.+?)<\/e>/g, '<i>$1</i>');
 
-	gabcdata = '';
+	let gabcdata = '';
 	if (mode) {
 		gabcdata = 'mode:' + mode + ';\n%%\n';
 	} else {
@@ -36,7 +37,7 @@ export function chomp(gabc, tags, resources) {
     gabc = gabc.match(/([\s\S]+?)(?:\d\.)?\(::\)/)[1] + '(::)';
   }
 	if (tags.has('deus-in-adjutorium')) {
-		this.gabc = gabc.substring(0, gabc.search(/\(Z\-?\)/));
+		gabc = gabc.substring(0, gabc.search(/\(Z\-?\)/));
 
 	} else if (tags.has('antiphona')) {
     clef = gabc.match(/^\((.+?)\)/m)

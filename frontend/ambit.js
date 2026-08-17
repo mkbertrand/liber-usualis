@@ -74,12 +74,12 @@ const sevenHourTemplater = (type, select, opt) => {
   return ambit;
 }
 
-defunctAmbit = new Ambit([
+const defunctAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', 'matutinum-laudes'),
 	new Occasion('Vesperae', 'vesperae')
 ], 'officium-defunctorum', 'officium', '');
 
-benedictioMensaeAmbit = new Ambit([
+const benedictioMensaeAmbit = new Ambit([
 	new Occasion('Pro Prandio', 'pro-prandio'),
 	new Occasion('Pro Cœna', 'pro-coena')
 ], 'primarium', 'ritus', '');

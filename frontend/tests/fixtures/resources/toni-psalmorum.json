@@ -1,0 +1,147 @@
+{
+  "1": [
+    {
+      "initium": ["f", "gh"],
+      "tenor":["h"],
+      "flexa": ["h", "gr", "g."],
+      "medians": ["ixi", "hr", "h", "g", "hr", "h."],
+      "1 a": ["g", "f", "g", "hr", "h."],
+      "1 a2": ["g", "f", "g", "gr", "gh.."],
+      "1 a3": ["g", "f", "gh", "gr", "gh.."],
+      "1 D": ["g", "f", "gh", "gr", "gFED."],
+      "1 D2": ["g", "f", "gr", "gf", "d."],
+      "1 f": ["g", "f", "gh", "gr", "gf.."],
+      "1 g": ["g", "f", "gh", "gr", "g."],
+      "1 g2": ["g", "f", "g", "gr", "ghg."],
+      "1 g3": ["g", "f", "g", "gr", "g."],
+      "clavis": "c4"
+    }
+  ],
+  "2": [
+    {
+      "initium": ["e", "f", "h"],
+      "tenor":["h"],
+      "flexa": ["h", "fr", "f."],
+      "medians": ["i", "hr", "h."],
+      "2 A": ["g", "e", "fr", "f."],
+      "clavis": "c3"
+    },
+    {
+      "initium": ["e", "f", "h"],
+      "tenor":["h"],
+      "flexa": ["h", "fr", "f."],
+      "medians": ["i", "hr", "h."],
+      "2 D": ["g", "e", "fr", "f."],
+      "clavis": "f3"
+    }
+  ],
+  "3": [
+    {
+      "initium": ["g", "hj"],
+      "tenor":["j"],
+      "flexa": ["j", "hr", "h."],
+      "medians": ["k", "jr", "j", "jr", "ih", "j."],
+      "3 a": ["h", "j", "jr", "ih.."],
+      "3 a2": ["ji", "hi", "h", "gr", "gh.."],
+      "3 b": ["h", "j", "jr", "i."],
+      "3 g": ["ji", "hi", "h", "gr", "g."],
+      "3 g2": ["h", "j", "i", "h", "gr", "g."],
+      "clavis": "c4"
+    }
+  ],
+  "4": [
+    {
+      "initium": ["i", "hi"],
+      "tenor":["i"],
+      "flexa": ["i", "hr", "h."],
+      "medians": ["h", "i", "j", "ir", "i."],
+      "4 A": ["h", "i", "j", "h", "fr", "f."],
+      "4 A*": ["h", "i", "j", "h", "fr", "fg.."],
+      "4 c": ["i", "hr", "h."],
+      "clavis": "c3"
+    },
+    {
+      "initium": ["h", "gh"],
+      "tenor":["h"],
+      "flexa": ["h", "gr", "g."],
+      "medians": ["g", "h", "i", "hr", "h."],
+      "4 E": ["g", "h", "ih", "gr", "gf", "e."],
+      "4 g": ["h", "gr", "g."],
+      "clavis": "c4"
+    }
+  ],
+  "5": [
+    {
+      "initium": ["d", "f", "h"],
+      "tenor":["h"],
+      "flexa": ["h", "fr", "f."],
+      "medians": ["i", "hr", "h."],
+      "5 a": ["i", "gr", "g", "h", "fr", "f."],
+      "clavis": "c3"
+    }
+  ],
+  "6": [
+    {
+      "initium": ["f", "gh"],
+      "tenor":["h"],
+      "flexa": ["h", "gr", "g."],
+      "medians": ["g", "h", "fr", "f."],
+      "6 C": ["f", "gh", "g", "fr", "f."],
+      "clavis": "c2"
+    },
+    {
+      "initium": ["f", "gh"],
+      "tenor":["h"],
+      "flexa": ["h", "gr", "g."],
+      "medians": ["g", "h", "fr", "f."],
+      "6 F": ["f", "gh", "g", "fr", "f."],
+      "clavis": "c4"
+    }
+  ],
+  "7": [
+    {
+      "initium": ["hg", "hi"],
+      "tenor":["i"],
+      "flexa": ["i", "hr", "h."],
+      "medians": ["k", "jr", "j", "i", "jr", "j."],
+      "7 a": ["j", "ir", "i", "h", "hr", "gf.."],
+      "7 b": ["j", "ir", "i", "h", "hr", "g."],
+      "7 c": ["j", "ir", "i", "h", "hr", "gh.."],
+      "7 c2": ["j", "ir", "i", "h", "hr", "ih.."],
+      "7 d": ["j", "ir", "i", "h", "hr", "gi.."],
+      "clavis": "c3"
+    }
+  ],
+  "8": [
+    {
+      "initium": ["g", "h", "j"],
+      "tenor":["j"],
+      "flexa": ["j", "hr", "h."],
+      "medians": ["k", "jr", "j."],
+      "8 c": ["h", "j", "k", "jr", "j."],
+      "8 G": ["i", "j", "h", "gr", "g."],
+      "8 G*": ["i", "j", "h", "gr", "gh.."],
+      "clavis": "c4"
+    }
+  ],
+  "p": [
+    {
+      "initium": ["ixhi"],
+      "tenor":["h","g"],
+      "flexa": ["h", "gr", "g."],
+      "medians": ["g", "ixi", "h", "g", "fr", "f."],
+      "p": ["d", "f", "fr", "ed.."],
+      "clavis": "c4"
+    }
+  ],
+  "d": [
+    {
+      "initium": ["e", "f", "h"],
+      "tenor":["h"],
+      "flexa": [],
+      "medians": ["i", "i", "fr", "f."],
+      "d": ["e", "f", "g", "fr", "f."],
+      "clavis": ["c3"]
+    }
+  ]
+}

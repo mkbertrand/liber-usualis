@@ -38,7 +38,7 @@ export function getPsalmTone(tone, clef, resources) {
 
   var variant = possibleVariants[0];
   if (possibleVariants.length != 1) {
-    for (possibleVariant of possibleVariants) {
+    for (const possibleVariant of possibleVariants) {
       if (possibleVariant.clavis == clef) {
         variant = possibleVariant;
       }
@@ -63,11 +63,11 @@ const HYPH = new Hypher(laPatterns);
 
 function formatHeader(header) {
   header = header.slice(1, -2).replace(':', '. ') + '.';
-  numeral = header.match(/\s([IVXLC]+)[\s|\.]/);
+  let numeral = header.match(/\s([IVXLC]+)[\s|\.]/);
   if (numeral) {
     numeral = numeral[1];
-    vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
-    number = 0;
+    const vals = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
+    var number = 0;
     for (var j = 0; j < numeral.length; j++) {
       if (j != numeral.length - 1 && vals[numeral[j]] < vals[numeral[j + 1]]) {
         number += vals[numeral[j + 1]] - vals[numeral[j]];
@@ -82,8 +82,8 @@ function formatHeader(header) {
 
 // The first value is the number of preparatory syllables and the second value is the number of accents.
 function accentationData(blankChant) {
-  acc = 0;
-  for (s of blankChant) {
+  let acc = 0;
+  for (const s of blankChant) {
     if (s.includes('r')) {
       acc ++;
     }
@@ -91,7 +91,7 @@ function accentationData(blankChant) {
   return [blankChant.length - 3 * acc, acc];
 }
 
-LONGS = ['á', 'é', 'í', 'ó', 'ú', 'ý', 'ǽ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ý', 'Ǽ'];
+const LONGS = ['á', 'é', 'í', 'ó', 'ú', 'ý', 'ǽ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ý', 'Ǽ'];
 
 function isDactylic(text, position) {
   var monosyllabic = text[position - 1] == ' ';
@@ -114,10 +114,10 @@ function isDactylic(text, position) {
 const PUNCTUATION = [',', '.', ';', ':', '!', '?'];
 
 function hyphenateTextRight(text) {
-  ret = '';
-  for (word of text.split(' ')) {
-    punct = '';
-    for (p of PUNCTUATION) {
+  let ret = '';
+  for (let word of text.split(' ')) {
+    let punct = '';
+    for (const p of PUNCTUATION) {
       if (word.endsWith(p)) {
         punct = p;
         word = word.slice(0, -1);
@@ -167,11 +167,11 @@ export function formatPsalm(psalm, resources = null, psalmTone = null, clef = nu
 
   var ret = '';
 
-  for (p of psalm.split(/(\[.+?\]\n)/).slice(1)) {
+  for (const p of psalm.split(/(\[.+?\]\n)/).slice(1)) {
     if (p.startsWith('[')) {
       ret += formatHeader(p);
     } else if (tone) {
-      for (line of p.split('\n')) {
+      for (let line of p.split('\n')) {
         if (line == '') {
           ret += '\n';
           continue;
@@ -184,7 +184,7 @@ export function formatPsalm(psalm, resources = null, psalmTone = null, clef = nu
           annot = '';
         }
 
-        syllables = hyphenateTextRight(line).split(/(\s)/).map(str => str.split(/\u00AD/)).flat();
+        var syllables = hyphenateTextRight(line).split(/(\s)/).map(str => str.split(/\u00AD/)).flat();
 
         syllables = accentMark(syllables, accentationData(tone.terminatio), syllables.length - 1);
         if (!line.startsWith('Magníficat')) {
