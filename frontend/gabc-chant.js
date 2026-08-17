@@ -5,7 +5,7 @@ import {stringRender} from './rite-renderer/rendering-utils.js';
 
 const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
-GABC_CHANT_CONTEXT.setFont("'Old Standard TT'", 22);
+GABC_CHANT_CONTEXT.setFont("'Old Standard TT'", '22');
 
 GABC_CHANT_CONTEXT.textStyles.dropCap.color = 'red';
 GABC_CHANT_CONTEXT.textStyles.dropCap.size = '80';
@@ -18,7 +18,7 @@ GABC_CHANT_CONTEXT.staffLineColor = 'red';
 
 GABC_CHANT_CONTEXT.condenseLineAmount = 1;
 // For some reason, setting the property directly doesn't work for glyph scaling specifically :D
-GABC_CHANT_CONTEXT.setGlyphScaling(1/12);
+GABC_CHANT_CONTEXT.setGlyphScaling(1/16);
 GABC_CHANT_CONTEXT.minLyricWordSpacing *= 1;
 GABC_CHANT_CONTEXT.accidentalSpaceMultiplier = 1.5;
 GABC_CHANT_CONTEXT.intraNeumeSpacing = 5;
@@ -73,13 +73,28 @@ const CHANT_VISIBILITY_OBSERVER = new IntersectionObserver((entries) => {
 
 class ChantElement extends HTMLElement {
 		
+  // AI-authored because look how tedious this is.
 	chantLayout() {
-		if (typeof this.score !== 'undefined') {
-			this.score.layoutChantLines(GABC_CHANT_CONTEXT, this.parentElement.parentElement.clientWidth);
-			this.innerHTML = `<div class="chantelement-chant-content">${this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated}</div><div class="chantelement-text-content">${this.plainContent}</div>`;
-		}
-	}
-	
+    if (typeof this.score === 'undefined') return;
+
+    this.score.layoutChantLines(GABC_CHANT_CONTEXT, this.parentElement.parentElement.clientWidth);
+
+    let chantDiv = this.querySelector('.chantelement-chant-content');
+    if (!chantDiv) {
+      chantDiv = document.createElement('div');
+      chantDiv.className = 'chantelement-chant-content';
+      this.insertBefore(chantDiv, this.firstChild);
+    }
+    chantDiv.innerHTML = this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated;
+
+    if (!this.querySelector('.chantelement-text-content')) {
+      const textDiv = document.createElement('div');
+      textDiv.className = 'chantelement-text-content';
+      textDiv.innerHTML = this.plainContent;
+      this.appendChild(textDiv);
+    }
+  }
+
   renderChant() {
     try {
       var mappings = Exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, this.gabc);

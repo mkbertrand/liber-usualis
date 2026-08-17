@@ -110,11 +110,11 @@ class RiteRenderer {
     } else if (Array.isArray(translation)) {
       var translationString = translation.join(' ').replace(/\sV\./g, ' <span class=\'red\'>&#8483;.</span>');
     }
-    this.rite += `<gabc-chant gabc="${chomp(cantusUnpack, quaesitum, this.resources)}" translated="${translationString}">`;
+    this.rite += `<gabc-chant gabc="${chomp(cantusUnpack, quaesitum, this.resources)}" translated="${translationString}"><div class="chantelement-text-content">`;
     this.openParagraph([...tags].join(' '));
     this.recurseRite(replaced, translation, tags);
     this.closeParagraph();
-    this.rite += '</gabc-chant>';
+    this.rite += '</div></gabc-chant>';
     this.closeDiv('', 'gabc-chant');
     this.closeDiv('gabc-chant-container');
   }
