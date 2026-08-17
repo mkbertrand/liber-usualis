@@ -33,16 +33,10 @@
 		"datum":"Beátus Lauréntius Christi Martyr triúmphat coronátus in cœlis: * Veníte adorémus Dóminum."
 	},
 	{
-		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-i"],
-		"datum":"Quo progréderis * sine fílio pater? quo sacérdos sancte sine minístro próperas?"
-	},
-	{
-		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-ii"],
-		"datum":"Noli me derelínquere * pater sancte, quia thesaúros tuos jam expéndi, quos tradidísti mihi."
-	},
-	{
-		"tags":["laurentius","matutinum","nocturna-i","antiphona","antiphona-iii"],
-		"datum":"Non ego te désero * fili, neque derelínquo: sed majóra tibi debéntur pro Christi fide certámina."
+		"tags":["laurentius","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":"Quo progréderis * sine fílio pater? quo sacérdos sancte sine minístro próperas?",
+		"antiphona-ii":"Noli me derelínquere * pater sancte, quia thesaúros tuos jam expéndi, quos tradidísti mihi.",
+		"antiphona-iii":"Non ego te désero * fili, neque derelínquo: sed majóra tibi debéntur pro Christi fide certámina."
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-i","lectio"],
@@ -78,16 +72,10 @@
 		"versus":"Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
 	},
 	{
-		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-i"],
-		"datum":"Beátus Lauréntius * orábat, dicens: Dómine Jesu Christe, Deus de Deo, miserére mihi servo tuo."
-	},
-	{
-		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-ii"],
-		"datum":"Dixit Románus * ad beátum Lauréntium: Vídeo ante te júvenem pulchérrimum, festína me baptizáre."
-	},
-	{
-		"tags":["laurentius","matutinum","nocturna-ii","antiphona","antiphona-iii"],
-		"datum":"Beátus Lauréntius * dixit: Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
+		"tags":["laurentius","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":"Beátus Lauréntius * orábat, dicens: Dómine Jesu Christe, Deus de Deo, miserére mihi servo tuo.",
+		"antiphona-ii":"Dixit Románus * ad beátum Lauréntium: Vídeo ante te júvenem pulchérrimum, festína me baptizáre.",
+		"antiphona-iii":"Beátus Lauréntius * dixit: Mea nox obscúrum non habet, sed ómnia in luce claréscunt."
 	},
 	{
 		"tags":["laurentius","matutinum","nocturna-ii","lectio"],
