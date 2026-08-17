@@ -47,8 +47,6 @@ def rite_request(date, item, votives, select, private, translation):
     tags.remove(used_primary)
     used_primary -= {'omissum'}
 
-    print(rite_tags)
-    print(used_primary)
     rite = DEFAULT_CORPUS.compose({'tags':{'ritus'},'datum':[rite_tags]}, used_primary, tags)
     tags.append(used_primary)
 

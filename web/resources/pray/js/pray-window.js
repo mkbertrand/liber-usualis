@@ -110,25 +110,14 @@ async function getRite(calendarDate, occasion, parameters, resources) {
 			&votives=${resolvedParameters.votives}
 		`);
 		let titleJSON = await response.json();
-		let ret = Pray.dateHeader(calendarDate) + Pray.riteTitle(titleJSON[0], titleJSON[1], 'large');
-		let previousTitle = titleJSON[0];
-		let liturgicalDay = await getLiturgicalDay(calendarDate, getTime(occasion), parameters);
-    var response = await fetch(`/rite?date=${calendarDate}&rite=${occasion}+${resolvedParameters.ambit.type}&select=${resolvedParameters.ambit.select}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}
-    `);
+    var response = await fetch(`/rite?date=${calendarDate}&rite=${occasion}+${resolvedParameters.ambit.type}&select=${resolvedParameters.ambit.select}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}`);
 
     if (response.status == 400 || response.status == 500) {
       return await response.text();
     }
 
     let json = await response.json();
-		for (var i = 0; i < 0; i++) {
-			if (!json[i].rite.tags.includes('aperi-domine') && !json[i].rite.tags.includes('sacrosanctae') && !json[i].rite.tags.includes('antiphona-bmv') && !json[i].rite.tags.includes('officium-capituli') && json[i]['used-primary'][0] != previousTitle) {
-				ret += Pray.riteTitle(json[i]['used-primary'][0], json[i]['used-primary'][1], 'small');
-				previousTitle = json[i]['used-primary'][0];
-			}
-		}
-    ret += Pray.renderRite(json, resources);
-		return ret;
+    return Pray.dateHeader(calendarDate) + Pray.riteTitle(titleJSON[0], titleJSON[1], 'large') + Pray.renderRite(json, resources);
 	}
 
 	let key = calendarDate + occasion;

@@ -117,7 +117,7 @@
 		zeroedsetdate = new Date(this.nextOccasion[0].getFullYear(), this.nextOccasion[0].getMonth(), this.nextOccasion[0].getDate());
 		currentdate = new Date();
 		zeroedcurrentdate = new Date(currentdate.getFullYear(), currentdate.getMonth(), currentdate.getDate());
-		if (this.nextOccasion[1] == 'matutinum' && zeroedsetdate - 86400000 == zeroedcurrentdate - 0) {
+		if (this.nextOccasion[1] == 'matutinum-laudes' && zeroedsetdate - 86400000 == zeroedcurrentdate - 0) {
 			return new Date().getHours() >= 14;
 		} else {
 			return zeroedsetdate - 0 == zeroedcurrentdate - 0;

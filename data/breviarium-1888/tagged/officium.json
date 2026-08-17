@@ -1,6 +1,6 @@
 [
   {
-    "tags":["officium","matutinum"],
+    "tags":["officium","matutinum-laudes"],
     "datum":[
       ["aperi-domine"],
       ["ritus","matutinum","officium-parvum-bmv","occurrens"],
@@ -12,7 +12,7 @@
     ]
   },
   {
-    "tags":["officium","matutinum","cum-officio-defunctorum"],
+    "tags":["officium","matutinum-laudes","cum-officio-defunctorum"],
     "datum":[
       ["aperi-domine"],
       ["ritus","matutinum","officium-parvum-bmv","occurrens"],
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "tags":["officium","matutinum","cum-psalmis-gradualibus"],
+    "tags":["officium","matutinum-laudes","cum-psalmis-gradualibus"],
     "datum":[
       ["aperi-domine"],
       ["ritus","psalmi-graduales"],
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "tags":["officium","matutinum","cum-psalmis-poenitentialibus"],
+    "tags":["officium","matutinum-laudes","cum-psalmis-poenitentialibus"],
     "datum":[
       ["aperi-domine"],
       ["ritus","matutinum","officium-parvum-bmv","occurrens"],
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "tags":["officium","matutinum","cum-litaniis"],
+    "tags":["officium","matutinum-laudes","cum-litaniis"],
     "datum":[
       ["aperi-domine"],
       ["ritus","matutinum","officium-parvum-bmv","occurrens"],
@@ -172,7 +172,7 @@
   },
   {
     "tags":["officium","triduum"],
-    "matutinum":[
+    "matutinum-laudes":[
       ["aperi-domine"],
       ["ritus","matutinum"],
       ["ritus","laudes"],
@@ -214,5 +214,59 @@
     "tags":["sine-dismissione"],
     "fidelium-animae":"",
     "pater-noster-secreta-post-officium":""
+  },
+  {
+    "tags":["officium","officium-parvum-bmv"],
+    "matutinum-laudes":[
+      ["aperi-domine"],
+      ["ritus","matutinum"],
+      ["ritus","laudes"],
+      ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
+      ["sacrosanctae"]
+    ],
+    "prima":[
+      ["aperi-domine"],
+      ["ritus","prima"],
+      ["sacrosanctae"]
+    ],
+    "tertia":[
+      ["aperi-domine"],
+      ["ritus","tertia"],
+      ["sacrosanctae"]
+    ],
+    "sexta":[
+      ["aperi-domine"],
+      ["ritus","sexta"],
+      ["sacrosanctae"]
+    ],
+    "nona":[
+      ["aperi-domine"],
+      ["ritus","nona"],
+      ["sacrosanctae"]
+    ],
+    "vesperae":[
+      ["aperi-domine"],
+      ["ritus","vesperae"],
+      ["sacrosanctae"]
+    ],
+    "completorium":[
+      ["aperi-domine"],
+      ["ritus","completorium"],
+      ["sacrosanctae"]
+    ]
+  },
+  {
+    "tags":["officium","officium-defunctorum"],
+    "matutinum-laudes":[
+      ["aperi-domine"],
+      ["ritus","matutinum"],
+      ["ritus","laudes"],
+      ["sacrosanctae"]
+    ],
+    "vesperae":[
+      ["aperi-domine"],
+      ["ritus","vesperae"],
+      ["sacrosanctae"]
+    ]
   }
 ]

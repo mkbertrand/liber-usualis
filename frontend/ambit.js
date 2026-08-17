@@ -34,6 +34,7 @@ class Ambit {
 
 	// When switching between ambits with a currently selected occasion in the old ambit, suggest which occasion should be selected within the new ambit.
 	slideAmbitOccasion(newAmbit, currentOccasionID) {
+    console.log(currentOccasionID);
 		let ind = newAmbit.idindex(currentOccasionID);
 		if (ind == -1) {
 			return newAmbit.occasions[0].rite;
@@ -45,7 +46,7 @@ class Ambit {
 
 const sevenHourTemplater = (type, select, mods) => {
   let ambit = new Ambit([
-    new Occasion('Matutinum & Laudes', 'matutinum' + mods),
+    new Occasion('Matutinum & Laudes', 'matutinum-laudes' + mods),
     new Occasion('Prima', 'prima' + mods),
     new Occasion('Tertia', 'tertia' + mods),
     new Occasion('Sexta', 'sexta' + mods),
@@ -74,9 +75,9 @@ const sevenHourTemplater = (type, select, mods) => {
 }
 
 defunctAmbit = new Ambit([
-	new Occasion('Matutinum & Laudes', 'matutinum'),
+	new Occasion('Matutinum & Laudes', 'matutinum-laudes'),
 	new Occasion('Vesperae', 'vesperae')
-], 'officium-defunctorum', 'ritus');
+], 'officium-defunctorum', 'officium');
 
 benedictioMensaeAmbit = new Ambit([
 	new Occasion('Pro Prandio', 'pro-prandio'),
@@ -100,7 +101,7 @@ export function defineAmbit(desired) {
 		case 'omnes':
 			return sevenHourTemplater('officium', 'primarium', '');
 		case 'officium-parvum-bmv':
-			return sevenHourTemplater('ritus', 'officium-parvum-bmv', '');
+			return sevenHourTemplater('officium', 'officium-parvum-bmv', '');
 		case 'officium-defunctorum':
 			return defunctAmbit;
 		case 'psalmi-graduales':

@@ -130,9 +130,13 @@ class RiteRenderer {
         this.makeCenteredHeader('Nocturnus.', 'section-header');
     } else if (tags(element).isSupersetOf(new Set(['ritus', 'antiphona-bmv']))) {
         this.makeCenteredHeader('Antiphona B.M.V.');
-    } else if (tags(element).has('ritus')) {
+    } else if (uniquelyhas('ritus')) {
       for (let header in RITE_HEADERS) {
-        if (uniquelyhas(header)) {
+        if (tags(element).has(header) && quaesitum(element).has('officium-parvum-bmv')) {
+          this.makeCenteredHeader('Officium Parvum B.M.V./' + RITE_HEADERS[header], 'section-header');
+        } else if (tags(element).has(header) && quaesitum(element).has('officium-defunctorum')) {
+          this.makeCenteredHeader('Officium Defunctorum./' + RITE_HEADERS[header], 'section-header');
+        } else if (tags(element).has(header)) {
           this.makeCenteredHeader(RITE_HEADERS[header], 'section-header');
         }
       }
