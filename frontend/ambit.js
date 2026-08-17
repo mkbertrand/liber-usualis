@@ -15,9 +15,9 @@ class Ambit {
     this.opt = opt;
 	}
 
-	idindex(id) {
+	riteIndex(rite) {
 		for (var i = 0; i < this.occasions.length; i++) {
-			if (this.occasions[i].id == id) {
+			if (this.occasions[i].rite == rite) {
 				return i;
 			}
 		}
@@ -25,7 +25,7 @@ class Ambit {
 	}
 
 	nextOccasion(current) {
-		return this.occasions[(this.idindex(current) + 1) % this.occasions.length];
+		return this.occasions[(this.riteIndex(current) + 1) % this.occasions.length];
 	}
 
 	// Based on the hour of the day, suggest which occasion should be presented if no external information is available - e.g. if a user loads the page for the first time ever at 9AM, suggest he pray Terce. This is intended to be overwritten manually by individual objects in the Ambit class.
@@ -35,8 +35,7 @@ class Ambit {
 
 	// When switching between ambits with a currently selected occasion in the old ambit, suggest which occasion should be selected within the new ambit.
 	slideAmbitOccasion(newAmbit, currentOccasionID) {
-    console.log(currentOccasionID);
-		let ind = newAmbit.idindex(currentOccasionID);
+		let ind = newAmbit.riteIndex(currentOccasionID);
 		if (ind == -1) {
 			return newAmbit.occasions[0].rite;
 		} else {

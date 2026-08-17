@@ -125,7 +125,7 @@
 	},
 	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
 	determineNextHour() {
-		this.nextOccasion = [resolveParameters(this.parameters).ambit.idindex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).rite];
+		this.nextOccasion = [resolveParameters(this.parameters).ambit.riteIndex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).rite];
 		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters, this.resources);
 	}
 }" x-init="
