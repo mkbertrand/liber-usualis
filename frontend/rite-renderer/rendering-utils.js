@@ -1,3 +1,5 @@
+// Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 const MONTHS = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maji', 'Junii', 'Julii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris'];
 export function dateHeader(date) {
   date = date.split('-');

@@ -1,3 +1,5 @@
+// Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 export function lineByLine(rite) {
   let riteSplit = rite.split(/(<div class="rite-text-container.+?>.+?<\/div>)/);
   let riteRet = [];

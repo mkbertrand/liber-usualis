@@ -1,3 +1,5 @@
+// Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 import * as Exsurge from 'exsurge';
 import { initChantElement } from './gabc-chant.js';
 import { dateHeader, riteTitle, abbreviateName } from './rite-renderer/rendering-utils.js';

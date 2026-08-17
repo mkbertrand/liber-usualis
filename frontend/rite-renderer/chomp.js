@@ -1,3 +1,5 @@
+// Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 import {getPsalmTone} from './psalmify.js';
 
 export function chomp(gabc, tags, resources) {

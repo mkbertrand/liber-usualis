@@ -1,3 +1,5 @@
+// Copyright 2025-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+
 function translation(locale) {
 	if (locale == 'en') {
 		return ['english'];
