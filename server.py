@@ -112,24 +112,6 @@ def daytags(vesperal = False):
             'commemoratio-matutini': [datamanage.DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
         })
 
-@get('/title')
-def title():
-    parameters = copy.deepcopy(request.query)
-    votives = parameters['votives'].replace(' ', '+').split('+')
-    try:
-        day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
-        hours = parameters['hour'].replace(' ', '+').split('+')
-        vesperal = not set(hours).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
-        tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(datamanage.DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(datamanage.DEFAULT_CORPUS, day, votives = votives))
-        if not any('officium-defunctorum' in tagset for tagset in tags):
-            time = [tagset - {'tempus'} for tagset in tags if 'tempus' in tagset][0]
-            tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
-        used_primary = [i for i in tags if 'primarium' in i][0]
-        return util.dump_data([datamanage.DEFAULT_CORPUS.get_name(used_primary), used_primary])
-    except Exception as e:
-        print(e)
-        abort(400, text='Necesse est tibi reinitializare paginam. Error hoc datus est tibi propter versionem nimis veterem.')
-
 # Returns raw JSON so that frontend can format it as it will
 @get('/rite')
 def rite():

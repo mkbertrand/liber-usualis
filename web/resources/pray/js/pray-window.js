@@ -105,11 +105,6 @@ async function getRite(calendarDate, occasion, parameters, resources) {
 
 	async function fetchRite() {
 		let resolvedParameters = resolveParameters(parameters);
-		var response = await fetch(`/title?date=${calendarDate}
-			&hour=${occasion}
-			&votives=${resolvedParameters.votives}
-		`);
-		let titleJSON = await response.json();
     var response = await fetch(`/rite?date=${calendarDate}&rite=${occasion}+${resolvedParameters.ambit.type}&select=${resolvedParameters.ambit.select}&translation=${resolvedParameters.translation ? translation(parameters.locale) : 'none'}&privata=${!resolvedParameters.priest ? 'privata': 'chorali'}&chant=${resolvedParameters.priest == 'plainchant' ? 'true': 'false'}&votives=${resolvedParameters.votives}`);
 
     if (response.status == 400 || response.status == 500) {
@@ -117,7 +112,7 @@ async function getRite(calendarDate, occasion, parameters, resources) {
     }
 
     let json = await response.json();
-    return Pray.dateHeader(calendarDate) + Pray.riteTitle(titleJSON[0], titleJSON[1], 'large') + Pray.renderRite(json, resources);
+    return Pray.dateHeader(calendarDate) + Pray.riteTitle(json['used-primary'][0], json['used-primary'][1], 'large') + Pray.renderRite(json, resources);
 	}
 
 	let key = calendarDate + occasion;

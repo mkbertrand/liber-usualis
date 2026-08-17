@@ -102,8 +102,14 @@ export function defineAmbit(desired) {
 			return sevenHourTemplater('officium', 'primarium', '');
 		case 'officium-parvum-bmv':
 			return sevenHourTemplater('officium', 'officium-parvum-bmv', '');
+		case 'semper-cum-opbmv':
+      return sevenHourTemplater('officium', 'primarium', '+cum-opbmv');
+		case 'diei':
+      return sevenHourTemplater('officium', 'primarium', '+sine-ritibus');
 		case 'officium-defunctorum':
 			return defunctAmbit;
+		case 'benedictio-mensae':
+			return benedictioMensaeAmbit;
 		case 'psalmi-graduales':
 			return singleOccasionAmbit('Psalmi Graduales', desired);
 		case 'psalmi-poenitentiales':
@@ -112,13 +118,7 @@ export function defineAmbit(desired) {
 			return singleOccasionAmbit('Ordo Commendationis Animæ', desired);
 		case 'formula-indulgentiam-articulo-mortis':
 			return singleOccasionAmbit('Formula ad Impertiendam Indulgentiam', desired);
-		case 'benedictio-mensae':
-			return benedictioMensaeAmbit;
 		case 'itinerarium':
 			return singleOccasionAmbit('Itinerarium Clericorum', desired);
-		case 'semper-cum-opbmv':
-      return sevenHourTemplater('officium', 'primarium', '+cum-opbmv');
-		case 'diei':
-      return sevenHourTemplater('officium', 'primarium', '+sine-ritibus');
 	}
 }
