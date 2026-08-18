@@ -87,8 +87,8 @@
             packageSourceOverrides."node_modules/exsurge" = pkgs.fetchFromGitHub {
               owner = "bbloomf";
               repo = "exsurge";
-              rev = "0c39f61eb17c59228202bcbdfe0f92c47dfc8f34";
-              hash = "sha256-zc9cfuzCHkxpKmdR5EyobB29UY1mNVbeMlZx1FoVvuE=";
+              rev = "v1.26.1";
+              hash = "sha256-9dwIZvmhu2RmNQ0KXMhw/dWegkOiYwdl5tmvoI2fVpE=";
             };
           };
           npmConfigHook = pkgs.importNpmLock.npmConfigHook;
