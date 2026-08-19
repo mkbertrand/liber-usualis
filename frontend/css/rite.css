@@ -116,7 +116,7 @@
 }
 
 
-:is(.textus-psalmi, .lectio-incipiens, .lectio-sequens, .epiphania-venite-incipit, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum) p.rite-text::first-letter {
+:is(.textus-psalmi.psalmus-i, .lectio-incipiens, .lectio-sequens, .epiphania-venite-incipit, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum) p.rite-text::first-letter {
 	float: left;
 	font-size: 94px;
 	margin-right: 0.1rem;
@@ -126,8 +126,19 @@
 	-webkit-initial-letter: 3;
 }
 
-:is(.lectio-sequens, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum, .lectio-incipiens.lectio-commemorationis) p.rite-text::first-letter {
+:is(.lectio-sequens, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum, .lectio-incipiens.lectio-commemorationis, .textus-psalmi.psalmus-i.nocturna-ii, .textus-psalmi.psalmus-i.nocturna-iii) p.rite-text::first-letter {
 	font-size: 60px !important;
+	initial-letter: 2;
+	-webkit-initial-letter: 2;
+}
+
+/* Only the first Psalm of a set is a drop cap at all; psalmus-i/nocturna-i/ii/iii come from the same tags used for the "Nocturnus I/II/III." headers. */
+.textus-psalmi:not(.psalmus-i) p.rite-text::first-letter {
+	float: left;
+	font-size: 60px;
+	margin-right: 0.1rem;
+	color: red;
+	line-height: 0;
 	initial-letter: 2;
 	-webkit-initial-letter: 2;
 }
