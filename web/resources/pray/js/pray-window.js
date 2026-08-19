@@ -10,52 +10,6 @@ function translation(locale) {
 	}
 }
 
-// Featured art panels will be 3:10
-const panelratio = 3/10;
-
-var panelsopen = false;
-var panelquotient = 0;
-var riteheight = 1;
-function doPanelSize() {
-	var height = window.innerHeight - parseInt(window.getComputedStyle(document.body).getPropertyValue('--top-bar-title-height').slice(0, -2)) - 1;
-	var minritewidth = height / 1.6;
-	var panelwidth = height * panelratio;
-
-	// Second condition checks if the screen is MUCH shorter than it is wide, in which case it presumes a mobile browser.
-	canmakepanels = panelwidth * 2 + minritewidth < document.documentElement.clientWidth && height * 3 > document.documentElement.clientWidth;
-
-	if (!canmakepanels) {
-    document.getElementById('rite-page-container').style.width = '100%';
-    document.getElementById('side-panel-left').style.width = '0';
-    document.getElementById('side-panel-right').style.width = '0';
-    document.getElementById('content-container-outer').style.width = '100%';
-		panelsopen = false;
-		panelquotient = 0;
-
-	} else {
-
-		// In other words, the rite panel will never be wider than 1:1
-		ritewidth = Math.min(height, document.documentElement.clientWidth - 2 * panelwidth, 1600);
-
-    document.getElementById('rite-page-container').style.width = `${ritewidth}px`;
-    document.getElementById('side-panel-left').style.width = `${panelwidth}px`;
-    document.getElementById('side-panel-right').style.width = `${panelwidth}px`;
-    document.getElementById('content-container-outer').style.width = `${ritewidth + panelwidth * 2}px`;
-
-		panelsopen = true;
-
-		if (panelwidth / riteheight != panelquotient) {
-			generatepanels();
-		}
-
-		panelquotient = panelwidth / riteheight;
-	}
-}
-
-function generatepanels() {
-	riteheight = document.getElementById('rite-container').clientHeight;
-}
-
 let lastParams = null;
 let lastResult = null;
 function resolveParameters(parameters) {

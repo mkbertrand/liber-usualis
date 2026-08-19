@@ -10,6 +10,7 @@
 	max-width: 140em;
 	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
 	display: flex;
+	justify-content: center;
 }
 
 #side-panel-left, #side-panel-right {
@@ -18,15 +19,9 @@
 
 #rite-page-container {
 	position: relative;
-	width: 100%;
+	width: min(calc(100vh - var(--top-bar-title-height) - 1px), 1600px, 100%);
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);
-}
-
-#size-change-listener {
-	position: fixed;
-	height: 0;
-	width: 100%;
 }
 
 /* Printing to pdf (or actual printers) */

@@ -30,7 +30,6 @@
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/pray-window.js')}}></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
@@ -59,9 +58,6 @@
 	nextOccasion: $persist(null),
   resources: new Pray.CorpusResources(),
 	get Rite() {
-		if (panelsopen) {
-			$nextTick(() => generatepanels());
-		}
 		return this.displayParameters['side-by-side'] || !this.initialized ? this.rite : this.rite.then(Pray.lineByLine);
 	},
 	// Sets this.calendarDate with a local date which is adjusted to UTC.
@@ -133,9 +129,6 @@
 	if (!('votives' in parameters)) {
 		parameters.votives = {'de-sanctis-angelis': false, 'de-sanctis-apostolis': false, 'de-joseph': false, 'de-eucharistiae-sacramento': false, 'de-passione': false, 'de-immaculata-conceptione': false};
 	}
-	% if not mobile:
-	doPanelSize();
-	% end
 	parameters.locale = '{{locale}}';
 	if (parameters.locale == 'la') {
 		parameters.translation = false;
@@ -234,7 +227,6 @@
 				% if not mobile:
 				<div id="side-panel-right">
 				</div>
-				<div id="size-change-listener" x-resize="doPanelSize()"></div>
 				% end
 			</div>
 		</div>
