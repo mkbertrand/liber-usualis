@@ -31,7 +31,6 @@ def rite_request(date, item, opt, select, translation, votives):
     day = datetime.strptime(date, '%Y-%m-%d').date()
     rite_tags = frozenset(item.replace(' ', '+').split('+'))
     options = frozenset(opt.replace(' ', '+').split('+'))
-    rite_tags |= options
     votives = votives.replace(' ', '+').split('+')
     vesperal = not set(rite_tags).isdisjoint({'vesperae', 'completorium', 'pro-coena'})
     tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives = votives) if vesperal else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives = votives))
@@ -43,6 +42,7 @@ def rite_request(date, item, opt, select, translation, votives):
     if 'cum-opbmv' in rite_tags:
         tags = [i - {'omissum'} if 'officium-parvum-bmv' in i else i for i in tags]
 
+    tags = [tagset | options for tagset in tags]
     used_primary = [i for i in tags if select in i][0]
     tags.remove(used_primary)
     used_primary -= {'omissum'}
