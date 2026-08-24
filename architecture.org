@@ -310,14 +310,20 @@
 
     Two entries can also compete on equal footing when neither is a subset of
     the other's requirements (e.g. the default =versiculus= annotation versus
-    the item-header used specifically in the Office of the Dead or Holy Week) --
-    tag-count specificity alone cannot break that tie, and =Corpus.search()=
-    raises rather than guessing. =discrimina/general.json= resolves it: a
-    handful of rules near the top of the table (e.g. =[\"caput\",
-    \"officium-defunctorum\"]=) require the =caput= tag alongside the
-    disambiguating one, so they only ever apply to =caput= candidates -- real
-    body content never carries =caput=, so these rules are inert for every
-    other search.
+    the item-header used specifically in the Office of the Dead or Holy Week),
+    where tag-count specificity alone cannot break the tie and =Corpus.search()=
+    would raise rather than guess. In practice this is already resolved by
+    =discrimina/general.json= itself -- an existing standalone
+    =[\"officium-defunctorum\"]= rule, and an existing =[\"/proprium-de-tempore\"]=
+    category rule that covers =coena-domini=/=parasceve=/=sabbatum-sanctum= as
+    members of that category -- so no =caput=-specific discrimina rules were
+    needed. Confirming this requires searching with the real composed
+    =quaesitum= (which includes the full day's temporale/rank/season context)
+    against the full discrimina table, not a hand-built query containing only
+    the tags that seem relevant: an artificially thin query can under-populate
+    the candidate pile (via =Book.get_pile()='s filename-based inclusion) and
+    make working disambiguation look broken, or make broken disambiguation look
+    like it degrades safely instead of raising.
 
 * Frontend
 
