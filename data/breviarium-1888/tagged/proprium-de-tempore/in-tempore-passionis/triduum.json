@@ -48,6 +48,18 @@
 		"datum":[["/psalmi/psalmus-lxx"]]
 	},
 	{
+		"tags":["versiculus","coena-domini"],
+		"caput":"Versiculus."
+	},
+	{
+		"tags":["versiculus","parasceve"],
+		"caput":"Versiculus."
+	},
+	{
+		"tags":["versiculus","sabbatum-sanctum"],
+		"caput":"Versiculus."
+	},
+	{
 		"tags":["coena-domini","matutinum","nocturna-i","versiculus"],
 		"datum":["V. Avertántur retrórsum, et erubéscant.","R. Qui cógitant mihi mala."]
 	},
