@@ -1,4 +1,8 @@
 [
+  {
+    "tags":["preces","officium-capituli"],
+    "caput":""
+  },
 	{
 		"tags":["officium-capituli","ritus"],
 		"datum":[
@@ -19,10 +23,6 @@
 			"V. Deus in adjutórium meum inténde.",
 			"R. Dómine ad adjuvándum me festína.",
 			["gloria-versorum"],
-			{
-				"tags":["preces","officium-capituli"],
-				"caput":""
-			},
 			{
 				"tags":["officium-capituli","preces"],
 				"datum":[
