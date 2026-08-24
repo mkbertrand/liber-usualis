@@ -98,15 +98,7 @@ class RiteRenderer {
   }
 
   doHeadering(element, uniquelyhas) {
-    // Headers are resolved entirely by the backend (data/breviarium-1888's 'caput' entries,
-    // superimposed via HEADER_CORPUS) rather than computed here. Rite.superimpose() matches
-    // every node independently via its accumulated quaesitum, so a node nested inside the
-    // header's own content (e.g. the Gloria Patri repeat inside a "cum-gloria" responsory)
-    // can inherit the same match without genuinely being the header's origin. Require that
-    // at least one of the caput entry's own (non-level) tags is also uniquely the element's
-    // own tag to guard against that. A caput entry with empty text is a deliberate
-    // suppression (e.g. the repeated antiphon, or content inside a commemoration) and
-    // renders nothing.
+    // Apply headers (added during a superimposition step) where relevant.
     if (element.caput && [...tags(element.caput)].some((t) => t !== 'caput' && t !== 'sectio' && t !== 'annotatio' && uniquelyhas(t))) {
       const header = unpack(element.caput);
       if (!header) return;
