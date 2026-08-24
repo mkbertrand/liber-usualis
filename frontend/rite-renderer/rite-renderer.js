@@ -200,25 +200,25 @@ class RiteRenderer {
         respPosition = 3;
       }
       this.makeHeadingAnnotation(`Responsorium ${NUMERALS[3 * nn + respPosition - 4]}.`);
-      } else if (uniquelyhas('formula-lectionis')) {
-        if (quaesitum(element).has('lectio-brevis')) {
-          this.makeCenteredHeader('Lectio Brevis.');
-        } else {
-          let nn = 1;
-          if (quaesitum(element).has('nocturna-ii')) {
-            nn = 2;
-          } else if (quaesitum(element).has('nocturna-iii')) {
-            nn = 3;
-          }
-
-          let lessonPosition = 1;
-          if (quaesitum(element).has('lectio-ii')) {
-            lessonPosition = 2;
-          } else if (quaesitum(element).has('lectio-iii')) {
-            lessonPosition = 3;
-          }
-          this.makeCenteredHeader(`Lectio ${NUMERALS[3 * nn + lessonPosition - 4]}.`);
+    } else if (uniquelyhas('formula-lectionis')) {
+      if (quaesitum(element).has('lectio-brevis')) {
+        this.makeCenteredHeader('Lectio Brevis.');
+      } else {
+        let nn = 1;
+        if (quaesitum(element).has('nocturna-ii')) {
+          nn = 2;
+        } else if (quaesitum(element).has('nocturna-iii')) {
+          nn = 3;
         }
+
+        let lessonPosition = 1;
+        if (quaesitum(element).has('lectio-ii')) {
+          lessonPosition = 2;
+        } else if (quaesitum(element).has('lectio-iii')) {
+          lessonPosition = 3;
+        }
+        this.makeCenteredHeader(`Lectio ${NUMERALS[3 * nn + lessonPosition - 4]}.`);
+      }
     } else if (!quaesitum(element).has('repetita') && !parentTags.has('commemorationes')) {
       if (uniquelyhas('antiphona-magnificat') && !parentTags.has('antiphona-nunc-dimittis') && !parentTags.has('antiphona-benedictus')) {
         this.makeCenteredHeader('Canticum B. Mariæ Virg.');
