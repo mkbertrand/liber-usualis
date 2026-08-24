@@ -22,6 +22,26 @@
 		]
 	},
 	{
+		"tags":["vesperae","ritus","sectio"],
+		"caput":"Ad Vesperas."
+	},
+	{
+		"tags":["vesperae","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Vesperas."
+	},
+	{
+		"tags":["vesperae","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Vesperas."
+	},
+	{
+		"tags":["vesperae","hymnus","annotatio"],
+		"caput":"Hymnus."
+	},
+	{
+		"tags":["vesperae","commemorationes"],
+		"caput":"Commemorationes."
+	},
+	{
 		"tags":["vesperae","psalmi","simplex"],
 		"datum":[["vesperae","psalmi","feria","occurrens"]]
 	},
@@ -646,5 +666,13 @@
 	{
 		"tags":["dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Suscépit * Deus Ísraël púerum suum: sicut locútus est ad Abraham, et semen ejus: exaltáre húmiles usque in sǽculum."
+	},
+	{
+		"tags":["vesperae","capitulum"],
+		"caput":"Capitulum, Hymnus & Versiculus."
+	},
+	{
+		"tags":["vesperae","capitulum","pascha"],
+		"caput":""
 	}
 ]

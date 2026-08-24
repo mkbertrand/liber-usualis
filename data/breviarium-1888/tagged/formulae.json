@@ -407,5 +407,21 @@
 			["pascha","laudes","benedicamus-domino"]
 		],
 		"datum":["Benedicámus Dómino, allelúja, allelúja.","Deo grátias, allelúja, allelúja."]
+	},
+	{
+		"tags":["psalmi"],
+		"caput":"Psalmi."
+	},
+	{
+		"tags":["collecta-primaria"],
+		"caput":"Collecta."
+	},
+	{
+		"tags":["hymnus"],
+		"caput":"Hymnus."
+	},
+	{
+		"tags":["responsorium-breve","annotatio"],
+		"caput":"Responsorium Breve."
 	}
 ]

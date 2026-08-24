@@ -299,13 +299,6 @@ class CaputCorpus(Corpus):
             return None
         return super().search(query | self.LEVELS, multipleresults, multipleresultssort, pilemod)
 
-    def _process(self, item, selected, alternates, pilemod = [], permit_empty = True):
-        # The commemorationes special case in Corpus._process() ignores permit_empty and
-        # is only meaningful for body-content composition, never for header lookup.
-        if (type(item) is set or type(item) is frozenset) and 'commemorationes' in item:
-            return None
-        return super()._process(item, selected, alternates, pilemod, permit_empty)
-
 class ContingentCorpus(Corpus):
     def __init__(self, books, content_books):
         super().__init__(books)

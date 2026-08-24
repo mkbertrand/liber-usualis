@@ -1,5 +1,21 @@
 [
 	{
+		"tags":["benedictio-mensae","ante-prandium"],
+		"caput":"[Ante Prandium.]"
+	},
+	{
+		"tags":["benedictio-mensae","post-prandium"],
+		"caput":"[Post Prandium.]"
+	},
+	{
+		"tags":["benedictio-mensae","ante-coenam"],
+		"caput":"[Ante Cœnam.]"
+	},
+	{
+		"tags":["benedictio-mensae","post-coenam"],
+		"caput":"[Post Cœnam.]"
+	},
+	{
 		"tags":["ante-prandium","versus-benedictionis"],
 		"datum":[
 			"V. Óculi ómnium,",

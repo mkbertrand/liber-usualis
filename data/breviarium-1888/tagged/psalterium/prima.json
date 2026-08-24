@@ -18,6 +18,18 @@
 		]
 	},
 	{
+		"tags":["prima","ritus","sectio"],
+		"caput":"Ad Primam."
+	},
+	{
+		"tags":["prima","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Primam."
+	},
+	{
+		"tags":["prima","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Primam."
+	},
+	{
 		"tags":["prima","hymnus"],
 		"datum":[
 			"Jam lucis orto sídere/Deum precémur súpplices,/Ut in diúrnis áctibus/Nos servet a nocéntibus.",
@@ -317,5 +329,13 @@
 	{
 		"tags":["prima","dismissio"],
 		"datum":""
+	},
+	{
+		"tags":["prima","capitulum"],
+		"caput":"Capitulum, Responsorium Breve & Versiculus."
+	},
+	{
+		"tags":["prima","capitulum","pascha"],
+		"caput":""
 	}
 ]

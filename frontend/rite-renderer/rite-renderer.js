@@ -5,32 +5,10 @@ import {abbreviateName, rubricRender, stringRender, tags, quaesitum, unpack, cla
 import {chomp} from './chomp.js';
 import {formatPsalm} from './psalmify.js';
 
-const RITE_HEADERS = {
-	'matutinum': 'Ad Matutinum.',
-	'laudes': 'Ad Laudes.',
-	'prima': 'Ad Primam.',
-	'tertia': 'Ad Tertiam.',
-	'sexta': 'Ad Sextam.',
-	'nona': 'Ad Nonam.',
-	'vesperae': 'Ad Vesperas.',
-	'completorium': 'Ad Completorium.',
-	'psalmi-graduales': 'Psalmi Graduales.',
-	'psalmi-poenitentiales': 'Septem Psalmi Pœnitentiales [cum Litaniis.]',
-	'litaniae-sanctorum': 'Litaniæ Sanctorum.',
-	'ordo-commendationis-animae': 'Ordo Commendationis Animæ.',
-	'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenarium in Articulo Mortis.',
-	'pro-prandio': 'Benedictio Mensæ.',
-	'pro-coena': 'Benedictio Mensæ.',
-	'itinerarium': 'Itinerarium Clericorum.',
-	'officium-capituli': 'Martyrologium.'
-};
-
 const DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria', 'antiphona-bmv'];
 const FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus', 'lectionis-titulum', 'evangelium-matutini', 'lectio-incipiens', 'lectio-sequens'];
 const PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio'];
 const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta'];
-
-const NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
 
 class RiteRenderer {
   
@@ -123,7 +101,12 @@ class RiteRenderer {
     // Headers resolved by the backend (data/breviarium-1888's 'caput' entries, superimposed
     // via HEADER_CORPUS) take precedence over the rules below, which remain as a fallback
     // for sections not yet migrated to that data-driven mechanism.
-    if (element.caput) {
+    // Rite.superimpose() matches every node independently via its accumulated quaesitum, so
+    // a node nested inside the header's own content (e.g. the Gloria Patri repeat inside a
+    // "cum-gloria" responsory) can inherit the same match without genuinely being the
+    // header's origin. Require that at least one of the caput entry's own (non-level) tags
+    // is also uniquely the element's own tag, exactly as the tag-based rules below already do.
+    if (element.caput && [...tags(element.caput)].some((t) => t !== 'caput' && t !== 'sectio' && t !== 'annotatio' && uniquelyhas(t))) {
       if (tags(element.caput).has('annotatio')) {
         this.makeHeadingAnnotation(unpack(element.caput));
       } else if (tags(element.caput).has('sectio')) {
@@ -133,105 +116,15 @@ class RiteRenderer {
       }
       return;
     }
-    if (quaesitum(element).isSupersetOf(new Set(['nocturna', 'nocturna-i']))) {
-      this.makeCenteredHeader('Nocturnus I.', 'section-header');
-    } else if (quaesitum(element).isSupersetOf(new Set(['nocturna', 'nocturna-ii']))) {
-      this.makeCenteredHeader('Nocturnus II.', 'section-header');
-    } else if (quaesitum(element).isSupersetOf(new Set(['nocturna', 'nocturna-iii']))) {
-      this.makeCenteredHeader('Nocturnus III.', 'section-header');
-    } else if (tags(element).has('nocturna')) {
-        this.makeCenteredHeader('Nocturnus.', 'section-header');
-    } else if (tags(element).isSupersetOf(new Set(['ritus', 'antiphona-bmv']))) {
-        this.makeCenteredHeader('Antiphona B.M.V.');
-    } else if (uniquelyhas('ritus')) {
-      for (let header in RITE_HEADERS) {
-        if (tags(element).has(header) && quaesitum(element).has('officium-parvum-bmv')) {
-          this.makeCenteredHeader('Officium Parvum B.M.V./' + RITE_HEADERS[header], 'section-header');
-        } else if (tags(element).has(header) && quaesitum(element).has('officium-defunctorum')) {
-          this.makeCenteredHeader('Officium Defunctorum./' + RITE_HEADERS[header], 'section-header');
-        } else if (tags(element).has(header)) {
-          this.makeCenteredHeader(RITE_HEADERS[header], 'section-header');
-        }
-      }
-    } else if (uniquelyhas('psalmi')) {
-      this.makeCenteredHeader('Psalmi.');
-    } else if (uniquelyhas('collecta-primaria')) {
-      this.makeCenteredHeader('Collecta.');
-    } else if (uniquelyhas('invitatorium')) {
-      this.makeCenteredHeader('Invitatorium.');
-    } else if (uniquelyhas('haec-dies')) {
-      this.makeCenteredHeader('Antiphona.');
-    } else if (uniquelyhas('commemorationes')) {
-      this.makeCenteredHeader('Commemorationes.');
-    } else if (tags(element).isSupersetOf(new Set(['benedictio-mensae', 'ante-prandium']))) {
-      this.makeCenteredHeader('[Ante Prandium.]');
-    } else if (tags(element).isSupersetOf(new Set(['benedictio-mensae', 'post-prandium']))) {
-      this.makeCenteredHeader('[Post Prandium.]');
-    } else if (tags(element).isSupersetOf(new Set(['benedictio-mensae', 'ante-coenam']))) {
-      this.makeCenteredHeader('[Ante Cœnam.]');
-    } else if (tags(element).isSupersetOf(new Set(['benedictio-mensae', 'post-coenam']))) {
-      this.makeCenteredHeader('[Post Cœnam.]');
-    } else if (tags(element).isSupersetOf(new Set(['te-deum', 'hymnus']))) {
-      this.makeCenteredHeader('Hymnus [Te Deum.]');
-    } else if (uniquelyhas('capitulum') && !quaesitum(element).has('pascha')) {
-      if (!parentTags.isDisjointFrom(new Set(['vesperae', 'laudes']))) {
-        this.makeCenteredHeader('Capitulum, Hymnus & Versiculus.');
-      } else if (quaesitum(element).has('officium-parvum-bmv')) {
-        this.makeCenteredHeader('Capitulum & Versiculus.');
-      } else {
-        this.makeCenteredHeader('Capitulum, Responsorium Breve & Versiculus.');
-      }
-    } else if (uniquelyhas('versiculus') && !tags(element).isDisjointFrom(new Set(['officium-defunctorum', 'coena-domini', 'parasceve', 'sabbatum-sanctum']))) {
+    // The remaining rules cover headers whose text depends on the ABSENCE of context
+    // (e.g. "not within a commemoration"), which a subset-matching tag search cannot
+    // express, so they stay as frontend logic rather than 'caput' data.
+    if (uniquelyhas('versiculus') && !tags(element).isDisjointFrom(new Set(['officium-defunctorum', 'coena-domini', 'parasceve', 'sabbatum-sanctum']))) {
       this.makeCenteredHeader('Versiculus.');
     } else if (uniquelyhas('versiculus') && parentTags.isDisjointFrom(new Set(['commemorationes', 'antiphona-bmv']))) {
       this.makeHeadingAnnotation('Versiculus.');
-    } else if (uniquelyhas('absolutio')) {
-      this.makeHeadingAnnotation('Absolutio.');
     } else if (uniquelyhas('preces') && !parentTags.has('officium-capituli')) {
       this.makeCenteredHeader('Preces.');
-    } else if (uniquelyhas('hymnus')) {
-      if (!parentTags.isDisjointFrom(new Set(['vesperae', 'laudes']))) {
-        this.makeHeadingAnnotation('Hymnus.');
-      } else {
-        this.makeCenteredHeader('Hymnus.');
-      }
-    } else if (uniquelyhas('confiteor') && parentTags.has('completorium')) {
-      this.makeCenteredHeader('Confessio.');
-    } else if (uniquelyhas('responsorium-breve')) {
-      this.makeHeadingAnnotation('Responsorium Breve.');
-    } else if (uniquelyhas('responsorium') && uniquelyhas('formula')) {
-      let nn = 1;
-      if (quaesitum(element).has('nocturna-ii')) {
-        nn = 2
-      } else if (quaesitum(element).has('nocturna-iii')) {
-        nn = 3
-      }
-      let respPosition = 1;
-      if (quaesitum(element).has('responsorium-ii')) {
-        respPosition = 2;
-      } else if (quaesitum(element).has('responsorium-iii')) {
-        respPosition = 3;
-      }
-      this.makeHeadingAnnotation(`Responsorium ${NUMERALS[3 * nn + respPosition - 4]}.`);
-    } else if (uniquelyhas('formula-lectionis')) {
-      if (quaesitum(element).has('lectio-brevis')) {
-        this.makeCenteredHeader('Lectio Brevis.');
-      } else {
-        let nn = 1;
-        if (quaesitum(element).has('nocturna-ii')) {
-          nn = 2;
-        } else if (quaesitum(element).has('nocturna-iii')) {
-          nn = 3;
-        }
-
-        let lessonPosition = 1;
-        if (quaesitum(element).has('lectio-ii')) {
-          lessonPosition = 2;
-        } else if (quaesitum(element).has('lectio-iii')) {
-          lessonPosition = 3;
-        }
-        this.makeCenteredHeader(`Lectio ${NUMERALS[3 * nn + lessonPosition - 4]}.`);
-      }
     } else if (!quaesitum(element).has('repetita') && !parentTags.has('commemorationes')) {
       if (uniquelyhas('antiphona-magnificat') && !parentTags.has('antiphona-nunc-dimittis') && !parentTags.has('antiphona-benedictus')) {
         this.makeCenteredHeader('Canticum B. Mariæ Virg.');

@@ -21,6 +21,26 @@
 		]
 	},
 	{
+		"tags":["laudes","ritus","sectio"],
+		"caput":"Ad Laudes."
+	},
+	{
+		"tags":["laudes","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Laudes."
+	},
+	{
+		"tags":["laudes","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Laudes."
+	},
+	{
+		"tags":["laudes","hymnus","annotatio"],
+		"caput":"Hymnus."
+	},
+	{
+		"tags":["laudes","commemorationes"],
+		"caput":"Commemorationes."
+	},
+	{
 		"tags":["laudes","antiphona-prior-benedictus"],
 		"duplex":[["laudes","antiphona","antiphona-benedictus"]],
 		"datum":[["laudes","antiphona","antiphona-benedictus","intonata"]]
@@ -579,5 +599,13 @@
 	{
 		"tags":["laudes","feria","sabbatum","antiphona","antiphona-benedictus"],
 		"datum":"Illumináre * Dómine his, qui in ténebris sedent, et dírige pedes nostros in viam pacis, Deus Ísraël."
+	},
+	{
+		"tags":["laudes","capitulum"],
+		"caput":"Capitulum, Hymnus & Versiculus."
+	},
+	{
+		"tags":["laudes","capitulum","pascha"],
+		"caput":""
 	}
 ]

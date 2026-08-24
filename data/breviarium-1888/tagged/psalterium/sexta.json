@@ -19,6 +19,18 @@
 		]
 	},
 	{
+		"tags":["sexta","ritus","sectio"],
+		"caput":"Ad Sextam."
+	},
+	{
+		"tags":["sexta","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Sextam."
+	},
+	{
+		"tags":["sexta","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Sextam."
+	},
+	{
 		"tags":["sexta","hymnus"],
 		"datum":[
 			"Rector potens, verax Deus,/Qui témperas rerum vices,/Splendóre mane illúminas,/Et ígnibus merídiem:",
@@ -135,5 +147,13 @@
 	{
 		"tags":["sexta","preces"],
 		"datum":[["tertia","preces"]]
+	},
+	{
+		"tags":["sexta","capitulum"],
+		"caput":"Capitulum, Responsorium Breve & Versiculus."
+	},
+	{
+		"tags":["sexta","capitulum","pascha"],
+		"caput":""
 	}
 ]

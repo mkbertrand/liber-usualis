@@ -19,6 +19,18 @@
 		]
 	},
 	{
+		"tags":["nona","ritus","sectio"],
+		"caput":"Ad Nonam."
+	},
+	{
+		"tags":["nona","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Nonam."
+	},
+	{
+		"tags":["nona","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Nonam."
+	},
+	{
 		"tags":["nona","hymnus"],
 		"datum":[
 			"Rerum Deus tenax vigor,/Immótus in te pérmanens,/Lucis diúrnæ témpora/Succéssibus detérminans:",
@@ -139,5 +151,13 @@
 	{
 		"tags":["nona","preces"],
 		"datum":[["tertia","preces"]]
+	},
+	{
+		"tags":["nona","capitulum"],
+		"caput":"Capitulum, Responsorium Breve & Versiculus."
+	},
+	{
+		"tags":["nona","capitulum","pascha"],
+		"caput":""
 	}
 ]

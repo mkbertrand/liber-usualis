@@ -252,9 +252,25 @@
     expands, via =Book.get_tagged_file()='s normal key-expansion, into a
     standalone entry tagged with the entry's own tags plus =caput=, living
     alongside the body content it heads without being referenced from any
-    =datum= list. =CaputCorpus.search()= adds =caput= to every query and never
-    resolves untagged (=/=-prefixed) references or the =commemorationes=
-    special case, so only genuine header entries are ever candidates.
+    =datum= list. =CaputCorpus.search()= never resolves untagged (=/=-prefixed)
+    references, so only genuine tagged header entries are ever candidates.
+
+    An entry's render level -- the default centered =item-header=, the larger
+    =section-header= (=sectio=), or an inline =makeHeadingAnnotation= (=annotatio=)
+    -- is carried as an additional tag on the entry itself. =CaputCorpus.LEVELS=
+    (=caput=, =sectio=, =annotatio=) is injected into every query
+    unconditionally, mirroring how =Corpus.search()= always adds book tags, so
+    an entry can require one of the level tags without that tag ever needing to
+    already exist in a node's real liturgical context.
+
+    Each =caput= entry lives alongside the specific content it heads: e.g. the
+    Invitatorium and Te Deum headers sit next to their entries in
+    =psalterium/matutinum.json=, and the four Responsory/Lectio-absolution
+    headers sit in =psalterium/absolutiones-benedictiones.json= next to the
+    absolutions themselves. A header tied to no single hour (Psalmi., Collecta.,
+    the default Hymnus., Responsorium Breve.) lives in the book-wide
+    =tagged/formulae.json=, which =DEFAULT_PILE= (=composer/corpus.py=) already
+    includes in every search regardless of query.
 
     Because =Rite.superimpose()= tests every node's own accumulated =quaesitum=
     (or =tags=) independently, a =caput= entry's tags must uniquely identify one
@@ -264,11 +280,22 @@
     composition descends past the office or nocturn boundary (both are grouped
     with =responsorium= in =categoriae/positionales.json=), so a =caput= entry
     keyed on, say, =matutinum+ritus= or =nocturna+nocturna-i= matches only that
-    one boundary node.
+    one boundary node. Where a header's own content recurses into a nested
+    occurrence of the same tags (e.g. the Gloria Patri repeat inside a
+    "cum-gloria" responsory, which inherits =responsorium=/=formula= via
+    =quaesitum= without carrying them as its own tags),
+    =frontend/rite-renderer/rite-renderer.js='s =doHeadering()= additionally
+    requires that at least one of the matched =caput= entry's own tags is also
+    uniquely the target element's own tag (via the existing =uniquelyhas()=
+    check), so only the header's true origin renders it.
 
-    =frontend/rite-renderer/rite-renderer.js='s =doHeadering()= renders
-    =element.caput= when present, ahead of its own tag-based rules, which
-    remain as a fallback for sections not yet migrated to =caput= data.
+    A handful of headers depend on the *absence* of context (e.g. "not within a
+    commemoration", "not the repeated antiphon"), which a subset-matching tag
+    search cannot express, and remain frontend logic in =doHeadering()= rather
+    than =caput= data: the default (non-defunctorum/triduum) Versiculus
+    annotation, Preces. (suppressed within =officium-capituli=), and the
+    Magnificat/Nunc Dimittis/Benedictus canticle names (suppressed on the
+    repeated antiphon and within commemorations).
 
 * Frontend
 

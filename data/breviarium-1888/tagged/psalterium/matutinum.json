@@ -58,6 +58,10 @@
 		]
 	},
 	{
+		"tags":["matutinum","invitatorium"],
+		"caput":"Invitatorium."
+	},
+	{
 		"tags":["matutinum","nocturnae","feria"],
 		"datum":[["matutinum","nocturna","duodecim-psalmi","sex-antiphonae"]]
 	},
@@ -794,6 +798,10 @@
 		]
 	},
 	{
+		"tags":["hymnus","te-deum"],
+		"caput":"Hymnus [Te Deum.]"
+	},
+	{
 		"tags":["matutinum","feria","feria-ii","antiphona","antiphona-invitatorium"],
 		"datum":"Veníte, * Exsultémus Dómino."
 	},
@@ -1375,5 +1383,81 @@
 			"Quadragínta annis próximus fui generatióni huic, et dixi, Semper hi errant corde: ipsi vero non cognovérunt vias meas, quibus jurávi in ira mea, si introíbunt in réquiem meam.",
 			["matutinum","antiphona","antiphona-invitatorium"]
 		]
+	},
+	{
+		"tags":["responsorium","formula","annotatio"],
+		"caput":"Responsorium I."
+	},
+	{
+		"tags":["responsorium","formula","responsorium-ii","annotatio"],
+		"caput":"Responsorium II."
+	},
+	{
+		"tags":["responsorium","formula","responsorium-iii","annotatio"],
+		"caput":"Responsorium III."
+	},
+	{
+		"tags":["responsorium","formula","nocturna-ii","annotatio"],
+		"caput":"Responsorium IV."
+	},
+	{
+		"tags":["responsorium","formula","nocturna-ii","responsorium-ii","annotatio"],
+		"caput":"Responsorium V."
+	},
+	{
+		"tags":["responsorium","formula","nocturna-ii","responsorium-iii","annotatio"],
+		"caput":"Responsorium VI."
+	},
+	{
+		"tags":["responsorium","formula","nocturna-iii","annotatio"],
+		"caput":"Responsorium VII."
+	},
+	{
+		"tags":["responsorium","formula","nocturna-iii","responsorium-ii","annotatio"],
+		"caput":"Responsorium VIII."
+	},
+	{
+		"tags":["responsorium","formula","nocturna-iii","responsorium-iii","annotatio"],
+		"caput":"Responsorium IX."
+	},
+	{
+		"tags":["formula-lectionis","lectio-brevis"],
+		"caput":"Lectio Brevis."
+	},
+	{
+		"tags":["formula-lectionis"],
+		"caput":"Lectio I."
+	},
+	{
+		"tags":["formula-lectionis","lectio-ii"],
+		"caput":"Lectio II."
+	},
+	{
+		"tags":["formula-lectionis","lectio-iii"],
+		"caput":"Lectio III."
+	},
+	{
+		"tags":["formula-lectionis","nocturna-ii"],
+		"caput":"Lectio IV."
+	},
+	{
+		"tags":["formula-lectionis","nocturna-ii","lectio-ii"],
+		"caput":"Lectio V."
+	},
+	{
+		"tags":["formula-lectionis","nocturna-ii","lectio-iii"],
+		"caput":"Lectio VI."
+	},
+	{
+		"tags":["formula-lectionis","nocturna-iii"],
+		"caput":"Lectio VII."
+	},
+	{
+		"tags":["formula-lectionis","nocturna-iii","lectio-ii"],
+		"caput":"Lectio VIII."
+	},
+	{
+		"tags":["formula-lectionis","nocturna-iii","lectio-iii"],
+		"caput":"Lectio IX."
 	}
 ]

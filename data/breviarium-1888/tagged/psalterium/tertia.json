@@ -19,6 +19,18 @@
 		]
 	},
 	{
+		"tags":["tertia","ritus","sectio"],
+		"caput":"Ad Tertiam."
+	},
+	{
+		"tags":["tertia","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Tertiam."
+	},
+	{
+		"tags":["tertia","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Tertiam."
+	},
+	{
 		"tags":["tertia","hymnus"],
 		"datum":[
 			"Nunc sancte nobis Spíritus,/Unum Patri cum Fílio,/Dignáre promptus íngeri/Nostro refúsus péctori.",
@@ -165,5 +177,13 @@
 			"R. Et líbera nos propter nomen tuum.",
 			["domine-exaudi"]
 		]
+	},
+	{
+		"tags":["tertia","capitulum"],
+		"caput":"Capitulum, Responsorium Breve & Versiculus."
+	},
+	{
+		"tags":["tertia","capitulum","pascha"],
+		"caput":""
 	}
 ]

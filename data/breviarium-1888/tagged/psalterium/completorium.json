@@ -27,6 +27,22 @@
 		]
 	},
 	{
+		"tags":["completorium","ritus","sectio"],
+		"caput":"Ad Completorium."
+	},
+	{
+		"tags":["completorium","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Completorium."
+	},
+	{
+		"tags":["completorium","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Completorium."
+	},
+	{
+		"tags":["confiteor","completorium"],
+		"caput":"Confessio."
+	},
+	{
 		"tags":["completorium","benedictio"],
 		"datum":"Noctem quiétam, et finem perféctum * concédat nobis Dóminus omnípotens."
 	},
@@ -176,5 +192,13 @@
 		"tags":["antiphona-bmv-pro-completorio","purificatio-bmv","ii-vesperae"],
 		"datum":[["antiphona-bmv","ave-regina-coelorum","ritus","infra-completorium"]],
 		"in-dominica":[["antiphona-bmv","ave-regina-coelorum","ritus","infra-completorium","dominica"]]
+	},
+	{
+		"tags":["completorium","capitulum"],
+		"caput":"Capitulum, Responsorium Breve & Versiculus."
+	},
+	{
+		"tags":["completorium","capitulum","pascha"],
+		"caput":""
 	}
 ]
