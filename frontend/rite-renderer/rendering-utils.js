@@ -123,4 +123,3 @@ export function claw(data) {
 		return claw(data.datum);
 	}
 }
-

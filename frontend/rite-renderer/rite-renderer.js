@@ -101,7 +101,7 @@ class RiteRenderer {
     // Apply headers (added during a superimposition step) where relevant.
     if (element.caput && [...tags(element.caput)].some((t) => t !== 'caput' && t !== 'sectio' && t !== 'annotatio' && uniquelyhas(t))) {
       const header = unpack(element.caput);
-      if (!header) return;
+      if (!header || Array.isArray(header)) return;
       if (tags(element.caput).has('annotatio')) {
         this.makeHeadingAnnotation(header);
       } else if (tags(element.caput).has('sectio')) {
