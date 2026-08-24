@@ -5,6 +5,8 @@ function translation(locale) {
 		return ['english'];
 	} else if (locale == 'de') {
 		return ['deutsch'];
+	} else if (locale == 'nl') {
+		return ['nederlands'];
 	} else {
 		return ['english'];
 	}
