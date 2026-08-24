@@ -11,7 +11,7 @@ import kalendar.daily_tagger
 
 from composer import Book
 from composer import util
-from composer import Corpus, ContingentCorpus
+from composer import Corpus, ContingentCorpus, CaputCorpus
 
 DATA_ROOT = Path(__file__).parent.joinpath('data').resolve()
 
@@ -26,6 +26,7 @@ DEUTSCH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-18
 ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-english')])
 NEDERLANDS_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-nederlands')])
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
+HEADER_CORPUS = CaputCorpus(DEFAULT_CORPUS.books)
 
 @functools.lru_cache(maxsize=30)
 def rite_request(date, item, opt, select, translation, votives):
@@ -62,6 +63,7 @@ def rite_request(date, item, opt, select, translation, votives):
         rite = rite.superimpose(translated_corpus, 'translation')
     
     rite = rite.superimpose(CHANT_CORPUS, 'cantus')
+    rite = rite.superimpose(HEADER_CORPUS, 'caput')
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
     return {

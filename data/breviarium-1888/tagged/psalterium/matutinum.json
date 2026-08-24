@@ -11,6 +11,26 @@
 		]
 	},
 	{
+		"tags":["matutinum","ritus","sectio"],
+		"caput":"Ad Matutinum."
+	},
+	{
+		"tags":["nocturna","nocturna-i","sectio"],
+		"caput":"Nocturnus I."
+	},
+	{
+		"tags":["nocturna","nocturna-ii","sectio"],
+		"caput":"Nocturnus II."
+	},
+	{
+		"tags":["nocturna","nocturna-iii","sectio"],
+		"caput":"Nocturnus III."
+	},
+	{
+		"tags":["nocturna","sectio"],
+		"caput":"Nocturnus."
+	},
+	{
 		"tags":["matutinum","domine-labia"],
 		"datum":[
 			"[Deinde clara voce:]/V. Dómine, +︎ lábia mea apéries.",

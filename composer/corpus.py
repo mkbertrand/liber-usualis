@@ -271,6 +271,41 @@ class Corpus(Bookshelf):
             name = (name[0] + name[1]['datum']) if 'datum' in name[1] else '+'.join(tagset)
         return name
 
+class CaputCorpus(Corpus):
+    # Searches only entries tagged 'caput' within the primary corpus's own books.
+    # This lets section headers ('caput' entries) live alongside the body content they
+    # head, in the same tagged/ files, while still being resolvable independently
+    # for attachment via Rite.superimpose() rather than composed into 'datum'.
+
+    # The full vocabulary of header-level tags. An entry always carries 'caput' and may
+    # additionally carry one of the other two to select its render level; because
+    # search() injects all three into every query unconditionally (below), any entry can
+    # freely require one as part of its own tags without that tag ever needing to already
+    # be part of a node's real liturgical context.
+    LEVELS = frozenset({'caput', 'sectio', 'annotatio'})
+
+    def get_pile(self, pilequery):
+        def has_caput(entry):
+            tags = entry['tags']
+            if type(tags) is list:
+                return any('caput' in t for t in tags)
+            return 'caput' in tags
+        return [entry for entry in super().get_pile(pilequery) if has_caput(entry)]
+
+    def search(self, query, multipleresults = False, multipleresultssort = None, pilemod = []):
+        # Header lookups never resolve untagged resources (e.g. /psalmi/... references);
+        # only tagged 'caput' entries are relevant here.
+        if any(i.startswith('/') for i in query):
+            return None
+        return super().search(query | self.LEVELS, multipleresults, multipleresultssort, pilemod)
+
+    def _process(self, item, selected, alternates, pilemod = [], permit_empty = True):
+        # The commemorationes special case in Corpus._process() ignores permit_empty and
+        # is only meaningful for body-content composition, never for header lookup.
+        if (type(item) is set or type(item) is frozenset) and 'commemorationes' in item:
+            return None
+        return super()._process(item, selected, alternates, pilemod, permit_empty)
+
 class ContingentCorpus(Corpus):
     def __init__(self, books, content_books):
         super().__init__(books)

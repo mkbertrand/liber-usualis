@@ -121,6 +121,7 @@
    - =DEFAULT_CORPUS= from the 1888 breviary and 1846 Martyrology
    - =ENGLISH_CORPUS= and =DEUTSCH_CORPUS= from translation books
    - =CHANT_CORPUS= from generated chant books
+   - =HEADER_CORPUS=, a =CaputCorpus= over =DEFAULT_CORPUS='s own books, for section headers
 
 ** Stages 1 and 2: Kalendar and Daily Tagging
 
@@ -240,6 +241,34 @@
    Generated chant books live under =data/generated/=. The frontend receives
    translated and chanted content inline in the rite tree; it does not perform a
    second translation lookup.
+
+*** Section Headers
+
+    Section headers (e.g. "Ad Matutinum.", "Nocturnus I.") are superimposed under
+    =caput= from =HEADER_CORPUS=, a =CaputCorpus= (=composer/corpus.py=) rather
+    than being computed by the frontend or composed into =datum=. =CaputCorpus=
+    searches the same books and files as =DEFAULT_CORPUS=, filtered to entries
+    tagged =caput=: an entry's =caput= key (e.g. =\"caput\": \"Ad Matutinum.\"=)
+    expands, via =Book.get_tagged_file()='s normal key-expansion, into a
+    standalone entry tagged with the entry's own tags plus =caput=, living
+    alongside the body content it heads without being referenced from any
+    =datum= list. =CaputCorpus.search()= adds =caput= to every query and never
+    resolves untagged (=/=-prefixed) references or the =commemorationes=
+    special case, so only genuine header entries are ever candidates.
+
+    Because =Rite.superimpose()= tests every node's own accumulated =quaesitum=
+    (or =tags=) independently, a =caput= entry's tags must uniquely identify one
+    node to avoid attaching the same header throughout a whole subtree. This
+    normally falls out of the existing =positionales= contradiction handling:
+    e.g. bare =ritus= and bare =nocturna= are stripped from =selected= as soon as
+    composition descends past the office or nocturn boundary (both are grouped
+    with =responsorium= in =categoriae/positionales.json=), so a =caput= entry
+    keyed on, say, =matutinum+ritus= or =nocturna+nocturna-i= matches only that
+    one boundary node.
+
+    =frontend/rite-renderer/rite-renderer.js='s =doHeadering()= renders
+    =element.caput= when present, ahead of its own tag-based rules, which
+    remain as a fallback for sections not yet migrated to =caput= data.
 
 * Frontend
 

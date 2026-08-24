@@ -120,6 +120,19 @@ class RiteRenderer {
   }
 
   doHeadering(element, parentTags, uniquelyhas) {
+    // Headers resolved by the backend (data/breviarium-1888's 'caput' entries, superimposed
+    // via HEADER_CORPUS) take precedence over the rules below, which remain as a fallback
+    // for sections not yet migrated to that data-driven mechanism.
+    if (element.caput) {
+      if (tags(element.caput).has('annotatio')) {
+        this.makeHeadingAnnotation(unpack(element.caput));
+      } else if (tags(element.caput).has('sectio')) {
+        this.makeCenteredHeader(unpack(element.caput), 'section-header');
+      } else {
+        this.makeCenteredHeader(unpack(element.caput));
+      }
+      return;
+    }
     if (quaesitum(element).isSupersetOf(new Set(['nocturna', 'nocturna-i']))) {
       this.makeCenteredHeader('Nocturnus I.', 'section-header');
     } else if (quaesitum(element).isSupersetOf(new Set(['nocturna', 'nocturna-ii']))) {
