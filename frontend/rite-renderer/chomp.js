@@ -42,7 +42,6 @@ export function chomp(gabc, tags, resources) {
 	} else if (tags.has('antiphona')) {
     clef = gabc.match(/(?:^|%)\((.+?)\)/m)
     let euouae = '';
-    console.log(clef);
     if (clef) {
       // If clef has a middle letter (very very rare) remove it.
       clef = '' + clef[1][0] + clef[1].at(-1);
@@ -55,7 +54,6 @@ export function chomp(gabc, tags, resources) {
         euouae = ['E', 'u', 'o', 'u', 'a', 'e.'].map((c, i) => `${c}(${ending[i]})`).join(' ') + ' (::)';
       }
     }
-    console.log(clef);
 
 		if (gabc.includes('<i>T. P.</i>')) {
 			if (tags.has('in-tempore-paschali')) {
