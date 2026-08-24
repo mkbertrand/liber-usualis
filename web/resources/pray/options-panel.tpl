@@ -25,16 +25,16 @@
 	</div>
 	<div>
 		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters['side-by-side']" :disabled="!resolveParameters(parameters).translation" />
-		<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">Side-by-side translation (experimental)</label>
+		<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">{{text['side-by-side-toggle']}}</label>
 	</div>
 	% end
 	<div>
 		<input type="checkbox" id="chant-toggle" x-model="displayParameters.chant" />
-		<label for="chant-toggle">Display chant</label>
+		<label for="chant-toggle">{{text['chant-toggle']}}</label>
 	</div>
   <div>
 		<input type="checkbox" id="priest-toggle" x-model="parameters.priest" />
-		<label for="priest-toggle">In choir</label>
+		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
 	<div>
 		<input type="checkbox" value="bottompanel" id="bottom-panel-toggle" x-model="bottompanel" />
@@ -71,7 +71,7 @@
 		['de-passione', 'De Passione D.N.J.C.'],
 		['de-immaculata-conceptione', 'De Immaculata Conceptione.']
 	]}">
-		<h3 class="options-panel-section-head">Votive Offices.</h3>
+		<h3 class="options-panel-section-head">{{text['votive-office-select-title']}}</h3>
 		<div id="votive-office-selection-inner">
 			<template x-for="entry in votiveEntries">
 				<div class="votive-office-entry">
