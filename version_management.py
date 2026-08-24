@@ -2,7 +2,7 @@ import os
 import re
 import hashlib
 
-definedlocales = os.listdir('web/locales/')
+DEFINED_LOCALES = os.listdir('web/locales/')
 
 def localehunt(acceptlanguage):
 	# Get preferred locales

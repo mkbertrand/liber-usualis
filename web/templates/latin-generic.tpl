@@ -37,11 +37,7 @@
 				<div id="project-logo">
 					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
 				</div>
-				<select id="locale-selector" @change="window.location.assign('/' + $event.target.value + window.location.pathname.slice(3) + window.location.search)">
-					<option value="en" {{!'selected' if locale == 'en' else ''}}>EN</option>
-					<option value="la" {{!'selected' if locale == 'la' else ''}}>LA</option>
-					<option value="de" {{!'selected' if locale == 'de' else ''}}>DE</option>
-				</select>
+        % include('web/resources/locale-selector.tpl', locale=locale)
 			</div>
 			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
 			% if os.path.exists(f'web/pages/{page}.html'):
