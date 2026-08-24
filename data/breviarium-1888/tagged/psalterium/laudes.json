@@ -41,6 +41,10 @@
 		"caput":"Commemorationes."
 	},
 	{
+		"tags":["antiphona-prior-benedictus"],
+		"caput":"Canticum Zachariæ."
+	},
+	{
 		"tags":["laudes","antiphona-prior-benedictus"],
 		"duplex":[["laudes","antiphona","antiphona-benedictus"]],
 		"datum":[["laudes","antiphona","antiphona-benedictus","intonata"]]

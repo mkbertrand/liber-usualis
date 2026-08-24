@@ -289,13 +289,35 @@
     uniquely the target element's own tag (via the existing =uniquelyhas()=
     check), so only the header's true origin renders it.
 
-    A handful of headers depend on the *absence* of context (e.g. "not within a
-    commemoration", "not the repeated antiphon"), which a subset-matching tag
-    search cannot express, and remain frontend logic in =doHeadering()= rather
-    than =caput= data: the default (non-defunctorum/triduum) Versiculus
-    annotation, Preces. (suppressed within =officium-capituli=), and the
-    Magnificat/Nunc Dimittis/Benedictus canticle names (suppressed on the
-    repeated antiphon and within commemorations).
+    Headers that depend on the *absence* of context (e.g. "not within a
+    commemoration", "not the repeated antiphon") are expressed as a second,
+    more specific =caput= entry with an empty =datum=, rather than as negative
+    conditions in frontend code: subset-matching tag search can express "when
+    this extra tag IS present, override the default," never "unless it is
+    present," so the override entry's specificity (one more tag than the
+    default) is what suppresses the header, and =doHeadering()= simply renders
+    nothing when the resolved =caput= text is empty. For example, the default
+    =versiculus= header (=tagged/formulae.json=) is overridden by an empty
+    entry requiring =commemoratio= too, and the default Magnificat canticle
+    name (=psalterium/vesperae.json=) is overridden by empty entries requiring
+    =repetita= or =commemoratio=. Note that a commemoration's own ancestor tag
+    (=commemorationes=, from =Corpus.handlecommemorations()=) is deliberately
+    stripped from =selected= before composing the commemoration's content, so
+    it never reaches a descendant's =quaesitum=; the tag that actually appears
+    there, and that these override entries key on, is =commemoratio=
+    (singular), part of the literal request each commemorated item is composed
+    with (see =formula-commemorationis= entries in =tagged/formulae.json=).
+
+    Two entries can also compete on equal footing when neither is a subset of
+    the other's requirements (e.g. the default =versiculus= annotation versus
+    the item-header used specifically in the Office of the Dead or Holy Week) --
+    tag-count specificity alone cannot break that tie, and =Corpus.search()=
+    raises rather than guessing. =discrimina/general.json= resolves it: a
+    handful of rules near the top of the table (e.g. =[\"caput\",
+    \"officium-defunctorum\"]=) require the =caput= tag alongside the
+    disambiguating one, so they only ever apply to =caput= candidates -- real
+    body content never carries =caput=, so these rules are inert for every
+    other search.
 
 * Frontend
 

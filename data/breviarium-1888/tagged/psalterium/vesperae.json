@@ -42,6 +42,18 @@
 		"caput":"Commemorationes."
 	},
 	{
+		"tags":["antiphona-magnificat"],
+		"caput":"Canticum B. Mariæ Virg."
+	},
+	{
+		"tags":["antiphona-magnificat","repetita"],
+		"caput":""
+	},
+	{
+		"tags":["antiphona-magnificat","commemoratio"],
+		"caput":""
+	},
+	{
 		"tags":["vesperae","psalmi","simplex"],
 		"datum":[["vesperae","psalmi","feria","occurrens"]]
 	},

@@ -43,6 +43,30 @@
 		"caput":"Confessio."
 	},
 	{
+		"tags":["antiphona-nunc-dimittis"],
+		"caput":"Canticum Simeonis."
+	},
+	{
+		"tags":["antiphona-nunc-dimittis","repetita"],
+		"caput":""
+	},
+	{
+		"tags":["antiphona-nunc-dimittis","triduum"],
+		"caput":""
+	},
+	{
+		"tags":["nunc-dimittis","triduum"],
+		"caput":"Canticum Simeonis."
+	},
+	{
+		"tags":["nunc-dimittis","pascha"],
+		"caput":"Canticum Simeonis."
+	},
+	{
+		"tags":["nunc-dimittis","pascha","i-vesperae"],
+		"caput":""
+	},
+	{
 		"tags":["completorium","benedictio"],
 		"datum":"Noctem quiétam, et finem perféctum * concédat nobis Dóminus omnípotens."
 	},

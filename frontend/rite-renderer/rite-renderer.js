@@ -97,41 +97,25 @@ class RiteRenderer {
     this.closeDiv('gabc-chant-container');
   }
 
-  doHeadering(element, parentTags, uniquelyhas) {
-    // Headers resolved by the backend (data/breviarium-1888's 'caput' entries, superimposed
-    // via HEADER_CORPUS) take precedence over the rules below, which remain as a fallback
-    // for sections not yet migrated to that data-driven mechanism.
-    // Rite.superimpose() matches every node independently via its accumulated quaesitum, so
-    // a node nested inside the header's own content (e.g. the Gloria Patri repeat inside a
-    // "cum-gloria" responsory) can inherit the same match without genuinely being the
-    // header's origin. Require that at least one of the caput entry's own (non-level) tags
-    // is also uniquely the element's own tag, exactly as the tag-based rules below already do.
+  doHeadering(element, uniquelyhas) {
+    // Headers are resolved entirely by the backend (data/breviarium-1888's 'caput' entries,
+    // superimposed via HEADER_CORPUS) rather than computed here. Rite.superimpose() matches
+    // every node independently via its accumulated quaesitum, so a node nested inside the
+    // header's own content (e.g. the Gloria Patri repeat inside a "cum-gloria" responsory)
+    // can inherit the same match without genuinely being the header's origin. Require that
+    // at least one of the caput entry's own (non-level) tags is also uniquely the element's
+    // own tag to guard against that. A caput entry with empty text is a deliberate
+    // suppression (e.g. the repeated antiphon, or content inside a commemoration) and
+    // renders nothing.
     if (element.caput && [...tags(element.caput)].some((t) => t !== 'caput' && t !== 'sectio' && t !== 'annotatio' && uniquelyhas(t))) {
+      const header = unpack(element.caput);
+      if (!header) return;
       if (tags(element.caput).has('annotatio')) {
-        this.makeHeadingAnnotation(unpack(element.caput));
+        this.makeHeadingAnnotation(header);
       } else if (tags(element.caput).has('sectio')) {
-        this.makeCenteredHeader(unpack(element.caput), 'section-header');
+        this.makeCenteredHeader(header, 'section-header');
       } else {
-        this.makeCenteredHeader(unpack(element.caput));
-      }
-      return;
-    }
-    // The remaining rules cover headers whose text depends on the ABSENCE of context
-    // (e.g. "not within a commemoration"), which a subset-matching tag search cannot
-    // express, so they stay as frontend logic rather than 'caput' data.
-    if (uniquelyhas('versiculus') && !tags(element).isDisjointFrom(new Set(['officium-defunctorum', 'coena-domini', 'parasceve', 'sabbatum-sanctum']))) {
-      this.makeCenteredHeader('Versiculus.');
-    } else if (uniquelyhas('versiculus') && parentTags.isDisjointFrom(new Set(['commemorationes', 'antiphona-bmv']))) {
-      this.makeHeadingAnnotation('Versiculus.');
-    } else if (uniquelyhas('preces') && !parentTags.has('officium-capituli')) {
-      this.makeCenteredHeader('Preces.');
-    } else if (!quaesitum(element).has('repetita') && !parentTags.has('commemorationes')) {
-      if (uniquelyhas('antiphona-magnificat') && !parentTags.has('antiphona-nunc-dimittis') && !parentTags.has('antiphona-benedictus')) {
-        this.makeCenteredHeader('Canticum B. Mariæ Virg.');
-      } else if ((uniquelyhas('antiphona-nunc-dimittis') && !quaesitum(element).has('triduum')) || (uniquelyhas('nunc-dimittis') && (quaesitum(element).has('triduum') || quaesitum(element).has('pascha') && !quaesitum(element).has('i-vesperae')))) {
-        this.makeCenteredHeader('Canticum Simeonis.');
-      } else if (uniquelyhas('antiphona-prior-benedictus') && !parentTags.has('antiphona-magnificat') && !parentTags.has('antiphona-nunc-dimittis')) {
-        this.makeCenteredHeader('Canticum Zachariæ.');
+        this.makeCenteredHeader(header);
       }
     }
   }
@@ -477,7 +461,7 @@ class RiteRenderer {
       return;
     }
     
-    this.doHeadering(element, parentTags, uniquelyhas);
+    this.doHeadering(element, uniquelyhas);
     if (this.tryHymn(element, translation, parentTags)) return;
     if (this.tryResponsory(element, translation, parentTags)) return;
     if (this.tryCommemorations(element, translation, parentTags)) return;
