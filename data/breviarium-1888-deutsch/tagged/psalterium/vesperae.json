@@ -1,33 +1,12 @@
 [
 	{
-		"tags":["vesperae","hora"],
-		"datum":[
-			null,
-			null,
-			null,
-			null,
-			"Dank sei Gott."
-		]
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-i","antiphona"],
-		"datum":"Es sprach der Herr zu meinem Herrn: * Setze dich zu meiner Rechten."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-ii","antiphona"],
-		"datum":"Getreu * sind alle Seine Gebote, bestätiget auf immer und ewig."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-iii","antiphona"],
-		"datum":"An Seinen Geboten * werde ich große Lust haben."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-iv","antiphona"],
-		"datum":"Der Name des Herrn * sei gebenedeit von nun an bis in Ewigkeit."
-	},
-	{
-		"tags":["vesperae","dominica","ii-vesperae","antiphona-v","antiphona"],
-		"datum":"Wir, die leben, * preisen den Herrn,."
+		"tags":["vesperae","dominica","ii-vesperae","antiphona"],
+		"antiphona-i":"Es sprach der Herr zu meinem Herrn: * Setze dich zu meiner Rechten.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Getreu * sind alle Seine Gebote, bestätiget auf immer und ewig.",
+		"antiphona-iii":"An Seinen Geboten * werde ich große Lust haben.",
+		"antiphona-iv":"Der Name des Herrn * sei gebenedeit von nun an bis in Ewigkeit.",
+		"antiphona-v":"Wir, die leben, * preisen den Herrn."
 	},
 	{
 		"tags":["vesperae","capitulum","temporale"],
@@ -36,5 +15,175 @@
 	{
 		"tags":["vesperae","temporale","versiculus"],
 		"datum":["V. Lass mein Gebet, o Herr.","R. Wie Weihrauch vor Dein Angesicht kommen."]
+	},
+	{
+		"tags":["vesperae","in-tempore-adventus","temporale","versiculus"],
+		"datum":["V. Tauet ihr Himmel von oben, die Wolken mögen regnen den Gerechten.","R. Die Erde öffne sich, und sprosse den Heiland."]
+	},
+	{
+		"tags":["vesperae","in-tempore-quadragesimae","temporale","versiculus"],
+		"datum":["V. Denn Seinen Engeln hat Er deinethalben befohlen.","R. Dich zu behüten auf allen deinen Wegen."]
+	},
+	{
+		"tags":["vesperae","in-tempore-passionis","temporale","versiculus"],
+		"datum":["V. Rette mich, o Herr, vom bösen Menschen.","R. Vom gottlosen Manne rette mich."]
+	},
+	{
+		"tags":["vesperae","in-tempore-paschali","temporale","versiculus"],
+		"datum":["V. Bleib bei uns, Alleluja.","R. Denn es wird Abend, Alleluja."] 
+	},
+	{
+		"tags":["vesperae","feria","feria-ii","antiphona"],
+		"antiphona-i":"Der Herr neigte * Sein Ohr zu mir.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Ich glaubte * darum sprach ich.",
+		"antiphona-iii":"Lobet * den Herrn, alle Völker.",
+		"antiphona-iv":"Ich rief * und Er erhörte mich.",
+		"antiphona-v":"Von dorther kommt * meine Hilfe."
+	},
+	{
+		"tags":["vesperae","in-tempore-adventus","feria","capitulum"],
+		"datum":"Nicht wird das Zepter von Juda weichen, noch der Heerführer von seinen Lenden, + bis der kommt, der gesandt werden soll, * und auf ihn werden die Völker harren."  
+	},
+	{
+		"tags":["vesperae","in-tempore-quadragesimae","feria","capitulum"],
+		"datum":"Zwischen Vorhalle und Altar sollen weinen die Priester, des Herrn Diener, und sagen: + Schone, Herr, schone Deines Volkes, * und gib Dein Eigenthum nicht der Schmach hin, dass die Völker darüber herrschen."   
+	},
+	{
+		"tags":["vesperae","in-tempore-passionis","feria","capitulum"],
+		"datum":"Du aber, Herr Sabaoth, der Du gerecht richtest und Nieren und Herzen prüfst, + lass mich Deine Rache an ihnen schauen; * denn Dir habe ich meine Sache offenbart."  
+	},
+	{
+		"tags":["vesperae","in-tempore-paschali","feria","capitulum"],
+		"datum":"Christus, nachdem Er von den Toten auferstanden ist, stirbt nicht mehr, der Tod wird nicht mehr über Ihn herrschen. + Denn da Er der Sünde gestorben, ist Er einmal gestorben; und da Er lebt, lebt Er für Gott."
+	},
+	{
+		"tags":["vesperae","feria","feria-ii","antiphona","antiphona-magnificat"],
+		"datum":"Hochpreiset meine Seele den Herrn, * denn Gott hat herabgeschauet auf meine Niedrigkeit."
+	},
+	{
+		"tags":["vesperae","preces"],
+		"datum":[]
+	},
+	{
+		"tags":[
+			["vesperae","in-tempore-adventus","feria","preces"],
+			["vesperae","cinerum","feria","preces"],
+			["vesperae","in-tempore-quadragesimae","feria","preces"],
+			["vesperae","in-tempore-passionis","feria","preces"],
+			["vesperae","quatuor-tempora","feria","preces"],
+			["vesperae","vigilia","feria","preces"]
+		],
+		"datum":[
+			null,
+			null,
+			"V. Ich sprach: Herr, erbarme Dich meiner!",
+			"R. Mache gesund meine Seele, denn ich habe wider Dich gesündiget.",
+			"V. Kehre wieder, o Herr! Wie lange noch?",
+			"R. Und lass Dich erbitten über Deine Knechte.",
+			"V. Deine Barmherzigkeit, Herr, sei über uns.",
+			"R. Gleichwie wir auf Dich hoffen.",
+			"V. Lass Deine Priester Gerechtigkeit ankleiden.",
+			"R. Und lass Deine Heiligen frohlocken!",
+			"V. Herr, hilf dem Könige!",
+			"R. Und erhöre uns am Tage, da wir Dich anrufen.",
+			"V. Hilf, Herr, Deinem Volke und segne Deine Erben.",
+			"R. Und regiere sie und erhöre sie ewiglich.",
+			"V. Gedenke Deine Gemeinde.",
+			"R. Die Du besessen hast vom Anfang her.",
+			"V. Es werde Friede in Deiner Kraft.",
+			"R. Und Überfluss in Deinen Türmen.",
+			"V. Lasset uns beten für die verstorbenen Gläubigen.",
+			"R. Herr, gib ihnen die ewige Ruhe, und das ewige Licht leuchte ihnen.",
+			"V. Lass sie ruhen im Frieden.",
+			null,
+			"V. Lasset uns beten für unsere abwesenden Brüder.",
+			"R. Erlöse Deine Diener, mein Gott, die auf Dich hoffen.",
+			"V. Lasset uns beten für alle Bedrängten und Gefangenen.",
+			"R. Erlöse sie, Gott Israels, aus allen ihren Bedrängnissen.",
+			"V. Sende ihnen Hilfe, o Herr, aus Deinem Heiligtum.",
+			"R. Und von Sion aus beschütze sie.",
+			"V. Herr, erhöre mein Gebet.",
+			"R. Und lass mein rufen zu Dir kommen.",
+			null,
+			"V. Herr, Gott der Heerscharen, bekehre uns.",
+			"R. Und zeige Dein Antlitz, und es wird uns geholfen sein.",
+			"V. Stehe auf, Christus, und hilf uns.",
+			"R. Und erlöse uns um Deines Namens willen.",
+			null
+		]
+	},
+	{
+		"tags":["vesperae","feria","feria-iii","antiphona"],
+		"antiphona-i":"Lasset uns freudig gehen * zum Hause des Herrn.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Der Du wohnest * im Himmel, erbarme Dich unser.",
+		"antiphona-iii":"Unsere Hilfe * ist im Namen des Herrn.",
+		"antiphona-iv":"Tue Gutes, Herr, den Guten * und denen, die aufrichtigen Herzens sind.",
+		"antiphona-v":"Wir waren gleich denen, * die Trost haben."
+	},
+	{
+		"tags":["vesperae","feria","feria-iii","antiphona","antiphona-magnificat"],
+		"datum":"Let my spirit rejoice * in God my Saviour."
+	},
+	{
+		"tags":["vesperae","feria","feria-iv","antiphona"],
+		"antiphona-i":"Er wird nicht zuschanden, * wenn er mit seinen Feinden im Tore spricht.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Selig * alle, die den Herrn fürchten.",
+		"antiphona-iii":"Oft * drängten sie mich von meiner Jugend auf.",
+		"antiphona-iv":"Aus den Tiefen * rufe ich zu Dir, o Herr.",
+		"antiphona-v":"Es hoffe Israel * auf den Herrn."
+	},
+	{
+		"tags":["vesperae","feria","feria-iv","antiphona","antiphona-magnificat"],
+		"datum":"Der Herr * hat herabgeschaut auf meine Niedrigkeit, und Großes hat an mir getan, der mächtig ist."
+	},
+	{
+		"tags":["vesperae","feria","feria-v","antiphona"],
+		"antiphona-i":"Gedenke, Herr, * aller Sanftmut Davids.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Siehe, * wie gut und lieblich ist es wenn Brüder beisammen wohnen in Eintracht.",
+		"antiphona-iii":"Alles, * was Er will, macht der Herr.",
+		"antiphona-iv":"Denn in Ewigkeit * währet Seine Barmherzigkeit.",
+		"antiphona-v":"Singet uns ein Lied * aus Sions Liedern."
+	},
+	{
+		"tags":["vesperae","feria","feria-v","antiphona","antiphona-magnificat"],
+		"datum":"Übe, o Gott, * Macht mit Deinem Arme; zerstreue die Stolzen und erhöhe die Niedrigen."
+	},
+	{
+		"tags":["vesperae","feria","feria-vi","antiphona"],
+		"antiphona-i":"Vor dem Angesichte * der Engel will ich Dir lobsingen, mein Gott.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Herr, * Du erforschet mich und kennest mich.",
+		"antiphona-iii":"Vom gottlosen Manne * rette mich, o Herr.",
+		"antiphona-iv":"Herr, * zu Dir rufe ich, erhöre mich.",
+		"antiphona-v":"Mein Teil, * o Herr, sei im Lande der Lebendigen."
+	},
+	{
+		"tags":["vesperae","feria","feria-vi","antiphona","antiphona-magnificat"],
+		"datum":"Gestürzt sind * die Mächtigen, die Heilige verfolgen; und erhoben die Niedrigen, die Christus bekennen."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","antiphona"],
+		"antiphona-i":"Gepriesen * sei der Herr, mein Gott.",
+		"in-tempore-paschali":null,
+		"antiphona-ii":"Alltäglich * will ich Dich preisen, o Herr.",
+		"antiphona-iii":"Ich will loben den Herrn, * so lange ich lebe.",
+		"antiphona-iv":"Liebliches und zierliches Lob * sei unserem Gott",
+		"antiphona-v":"Lobe, * Jerusalem, den Herrn."
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","capitulum"],
+		"datum":"O Tiefe des Reichtumes, der Weisheit und Erkenntnis Gottes! + Wie unbegreiflich sind Seine Gericht * und wie unerforschlich Seine Wege!"
+	},
+	{
+		"tags":["vesperae","dominica","i-vesperae","versiculus"],
+		"datum":["V. Mein Abendgebet steige zu Dir empor, o Herr.","R. Und es steige herab über uns Deine Barmherzigkeit."]
+	},
+	{
+		"tags":["dominica","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":"Angenommen * hat sich Gott Israel, Seines Knechtes, wie Er zu Abraham und Seinen Nachkommen gesprochen; Er werde erhöhen die Niedrigen in Ewigkeit."
 	}
 ]
