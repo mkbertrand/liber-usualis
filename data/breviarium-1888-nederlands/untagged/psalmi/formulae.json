@@ -1,0 +1,260 @@
+[
+	{
+		"tags":["aperi-domine"],
+		"datum":[
+			"Open, Heer, mijn mond om uw heilige Naam lof te zingen; zuiver ook mijn hart van alle ijdele, slechte en verstrooiende gedachten; verlicht mijn verstand, ontvlam mijn hart, opdat ik waardig, aandachtig en met toewijding dit officie kan bidden en verhoring moge vinden voor het aanschijn van uw goddelijke Majesteit. Door Christus onzen Heer. Amen.",
+			"Heer, in vereniging met die goddelijke mening, waarmede Gij zelf op aarde God lof hebt gebracht, wil ik deze getijden voor U verrichten"
+		]
+	},
+	{
+		"tags":["sacrosanctae"],
+		"datum":[
+			"Aan de allerheiligste Drievuldigheid, één in wezen; aan de mensheid van onzen gekruisigden Heer Jesus Christus; aan de zeer heilige en roemrijke, altijddurende en vruchtbare ongeschondenheid van de Maagd Maria; en aan geheel de menigte der heiligen, zij eeuwige lof, eer, macht en heerlijkheid gebracht door ieder schepsel; en ons worde vergiffenis geschonken van al onze zonden; door de ongemeten eeuwen der eeuwen. Amen.",
+			"Gelukkig de schoot van de Maagd Maria, die den Zoon van den eeuwigen Vader heeft gedragen.",
+			"En gelukkig de borsten, welke Christus den Heer hebben gevoed.",
+			null,
+			null
+		]
+	},
+	{
+		"tags":["pater-noster-secreta"],
+		"datum":"Onze Vader, die in de hemel zijt: uw Naam worde geheiligd, uw rijk kome, uw wil geschiede op aarde zoalsin de hemel. Geef ons heden ons dagelijks brood, en vergeef ons onze schulden, zoals ook wij vergeven aan onze schuldenaren; en leid ons niet in bekoring, maar verlos ons van het kwade. Amen."
+	},
+	{
+		"tags":["ave-maria-secreta"],
+		"datum":"Wees gegroet, Maria, vol van genade, de Heer is met u. Gij zijt de gezegende onder de vrouwen en gezegend is Jezus, de vrucht van uw schoot. Heilige Maria, Moeder van God, bid voor ons, zondaars, nu en in het uur van onze dood. Amen."
+	},
+	{
+		"tags":["credo-secreta"],
+		"datum":"Ik geloof in God den almachtigen Vader, Schepper van hemel en aarde. En in Jesus Christus, zijn enigen Zoon, onzen Heer; die ontvangen is van den Heiligen Geest, geboren uit de Maagd Maria; die geleden heeft onder Pontius Pilatus, is gekruisigd, gestorven en begraven; die nedergedaald is ter helle, de derde dag verrezen uit de doden; die opgestegen is ten hemel, zit aan de rechterhand van God den almachtigen Vader; vandaar zal Hij komen oordelen de levenden en de doden. Ik geloof in den Heiligen Geest; de heilige katholieke Kerk; de gemeenschap van de heiligen; de vergeving van de zonden; de verrijzenis van het lichaam; het eeuwig leven. Amen."
+	},
+	{
+		"tags":["deus-in-adjutorium"],
+		"datum":[
+			"V. God, kom mij te hulp",
+			"R. Heer, haast u mij te helpen",
+			"Eer aan de Vader en de Zoon en de heilige Geest.",
+			"Zoals het was in het begin en nu en altijd en in de eeuwen der eeuwen. Amen. Alleluia"
+		],
+		"in-tempore-septuagesimae":[
+			"God, kom mij te hulp",
+			"Heer, haast u mij te helpen",
+			"Eer aan de Vader en de Zoon en de heilige Geest.",
+			"Zoals het was in het begin en nu en altijd en in de eeuwen der eeuwen. Amen. Lof zij U, Heer, Koning der eeuweige heerlijkheid."
+		]
+	},
+	{
+		"tags":["dg-capituli"],
+		"datum":"R. Gode zij dank."
+	},
+	{
+		"tags":["formula","responsorium"],
+		"datum":[
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null
+		]
+	},
+	{
+		"tags":[
+			["formula","responsorium","cum-gloria"],
+			["formula","responsorium","cum-gloria","simplex-responsum"]
+		],
+		"datum":[
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
+			"\nR. ",null
+		]
+	},
+	{
+		"tags":[
+			["formula","in-tempore-passionis","temporale","responsorium","cum-gloria"],
+			["formula","in-tempore-passionis","temporale","responsorium","cum-gloria","simplex-responsum"],
+			["formula","triduum","responsorium","cum-gloria"]
+		],
+		"datum":[
+			"R. ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. ",null,
+			"\nR. ",null
+		]
+	},
+	{
+		"tags":["formula","responsorium","cum-gloria","duplex-responsum"],
+		"datum":[
+			"R. ",null," * ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. Eer aan de Vader en de Zoon en de heilige Geest.",
+			"\nR. ",null
+		]
+	},
+	{
+		"tags":["formula","responsorium-breve"],
+		"datum":[
+			"R. br. ",null," * ",null,
+			"\n",null," ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. Eer aan de Vader en de Zoon en de heilige Geest.",
+			"\nR. ",null," ",null
+		]
+	},
+	{
+		"tags":["formula","in-tempore-passionis","temporale","responsorium-breve"],
+		"datum":[
+			"R. br. ",null," * ",null,
+			"\n",null," ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nR. ",null," ",null
+		]
+	},
+	{
+		"tags":[
+			["pater-noster-clara-voce"],
+			["pater-noster-semisecreta"]
+		],
+		"datum":[
+			"Onze Vader.",
+			"Die in de hemel zijt: uw Naam worde geheiligd, uw rijk kome, uw wil geschiede op aarde zoalsin de hemel. Geef ons heden ons dagelijks brood, en vergeef ons onze schulden, zoals ook wij vergeven aan onze schuldenaren;",
+			"V. En leid ons niet in bekoring.",
+			"R. Maar verlos ons van het kwade."
+		]
+	},
+	{
+		"tags":["credo-semisecreta"],
+		"datum":[
+			"Ik geloof in God.",
+			"Den almachtigen Vader, Schepper van hemel en aarde. En in Jesus Christus, zijn enigen Zoon, onzen Heer; die ontvangen is van den Heiligen Geest, geboren uit de Maagd Maria; die geleden heeft onder Pontius Pilatus, is gekruisigd, gestorven en begraven; die nedergedaald is ter helle, de derde dag verrezen uit de doden; die opgestegen is ten hemel, zit aan de rechterhand van God den almachtigen Vader; vandaar zal Hij komen oordelen de levenden en de doden. Ik geloof in den Heiligen Geest; de heilige katholieke Kerk; de gemeenschap van de heiligen; de vergeving van de zonden;",
+			"V. De verrijzenis van het lichaam,",
+			"R. Het eeuwige leven. Amen."
+		]
+	},
+	{
+		"tags":["dominus-vobiscum"],
+		"datum":["V. De Heer zij met u.","R. En met uw geest."],
+		"privata":["V. Heer, verhoor mijn gebed.","R. En mijn geroep kome tot U."]
+	},
+	{
+		"tags":["domine-exaudi"],
+		"datum":["V. Heer, verhoor mijn gebed.","R. En mijn geroep kome tot U."],
+		"privata":null
+	},
+	{
+		"tags":["collecta-primaria"],
+		"datum":[null,"Laat ons bidden.",null,null]
+	},
+	{
+		"tags":["terminatio","per-dominum"],
+		"datum":["Door onzen Heer Jesus Christus uw Zoon, die met U leeft en heerst in de eenheid des Heiligen Geestes, God, door alle eeuwen der eeuwen.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","per-eumdem-dominum"],
+		"datum":["Door denzelfden Jesus Christus onzen Heer uw Zoon, die met U leeft en heerst in de eenheid des Heiligen Geestes, God, door alle eeuwen der eeuwen..","R. Amen."]
+	},
+	{
+		"tags":["terminatio","per-dominum-ejusdem-spiritus"],
+		"datum":["Door onzen Heer Jesus Christus uw Zoon, die met U leeft en heerst in de eenheid van dien Heiligen Geest, God, door alle eeuwen der eeuwen.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","qui-vivis"],
+		"datum":["Gij die leeft en heerst met God den Vader in de eenheid van den Heiligen Geest, God, door alle eeuwen der eeuwen.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","qui-tecum-vivit"],
+		"datum":["Die met U leeft en heerst in de eenheid des Heiligen Geestes, God, door alle eeuwen der eeuwen","R. Amen."]
+	},
+	{
+		"tags":["terminatio","per-christum"],
+		"datum":["door Christus onzen Heer.","R. Amen."]
+	},
+	{
+		"tags":["terminatio","per-eumdem-christum"],
+		"datum":["Door denzelfden Christus onzen Heer.","R. Amen."]
+	},
+	{
+		"tags":[
+			["formula","vesperae","formula-commemorationis"],
+			["formula","laudes","formula-commemorationis"]
+		],
+		"datum":[
+			null,
+			null,
+			"Laat ons bidden.",
+			null
+		]
+	},
+	{
+		"tags":["benedicamus-domino"],
+		"datum":["Zegenen wij den Heer.","Gode zij dank."]
+	},
+	{
+		"tags":["fidelium-animae"],
+		"datum":["Dat de zielen der overleden gelovigen door de barmhartigheid Gods rusten in vrede.","R. Amen."]
+	},
+	{
+		"tags":["divinum-auxilium"],
+		"datum":["Moge Gods hulp voortdurend met ons blijven.","R. Amen."]
+	},
+	{
+		"tags":["adjutorium-nostrum"],
+		"datum":["Onze hulp is in de Naam des Heren.","Die hemel en aarde gemaakt heeft."]
+	},
+	{
+		"tags":["confiteor"],
+		"datum":[
+			"Ik belijd voor God almachtig, voor de heilige Maria altijd Maagd, voor den heiligen aartsengel Michaël, voor den heiligen Joannes den Doper, voor de heilige apostelen Petrus en Paulus, voor alle heiligen en voor u, broeders, dat ik zeer gezondigd heb in gedachte, woord en werk, door mijn schuld, door mijn schuld, door mijn allergrootste schuld. Daarom vraag ik de heilige Maria altijd Maagd, den heiligen aartsengel Michaël, den heiligen Joannes den Doper, de heilige apostelen Petrus en Paulus, alle heiligen en u, broeders, voor mij te bidden tot den Heer, onzen God.",
+			"De almachtige God ontferme Zich over u, vergeve uw zonden, en geleide u ten eeuwigen leven.",
+			"Amen.",
+			"Ik belijd voor God almachtig, voor de heilige Maria altijd Maagd, voor den heiligen aartsengel Michaël, voor den heiligen Joannes den Doper, voor de heilige apostelen Petrus en Paulus, voor alle heiligen en voor u, vader, dat ik zeer gezondigd heb in gedachte, woord en werk, door mijn schuld, door mijn schuld, door mijn allergrootste schuld. Daarom vraag ik de heilige Maria altijd Maagd, den heiligen aartsengel Michaël, den heiligen Joannes den Doper, de heilige apostelen Petrus en Paulus, alle heiligen en u, vader, voor mij te bidden tot den Heer onzen God.",
+			"De almachtige God ontferme Zich over u, vergeve uw zonden, en geleide u ten eeuwigen leven.",
+			"Amen.",
+			"Vergeving, vrijspraak en kwijtschelding onzer zonden verlene ons de almachtige en barmhartige God.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["confiteor","privata"],
+		"datum":[
+			"Ik belijd voor God almachtig, voor de heilige Maria altijd Maagd, voor den heiligen aartsengel Michaël, voor den heiligen Joannes den Doper, voor de heilige apostelen Petrus en Paulus en voor alle heiligen, dat ik zeer gezondigd heb ingedachte, woord en werk, door mijn schuld, door mijn schuld, door mijn allergrootste schuld. Daarom vraag ik de heilige Maria altijd Maagd, den heiligen aartsengel Michaël, den heiligen Joannes den Doper, de heilige apostelen Petrus en Paulus en alle heiligen, voor mij te bidden tot den Heer onzen God.",
+			"De almachtige God ontferme Zich over ons, vergeve onze zonden, en geleide ons ten eeuwigen leven.",
+			"Amen.",
+			"Vergeving, vrijspraak en kwijtschelding onzer zonden verlene ons de almachtige en barmhartige God.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["formula","formula-lectionis"],
+		"datum":[
+			"Geef uw zegen, heer.",
+			null,
+			"Amen.",
+			null,
+			"Gij, Heer, ontferm U over ons.",
+			"R. Gode zij dank."
+		]
+	},
+	{
+		"tags":["formula","formula-lectionis","privata"],
+		"datum":[
+			"Geef mij, Heer, uw zegen.",
+			null,
+			"Amen.",
+			null,
+			"Gij, Heer, ontferm U over ons.",
+			"R. Gode zij dank."
+		]
+	},
+	{
+		"tags":["formula","formula-lectionis","legitur-directe"],
+		"datum":null
+	},
+	{
+		"tags":["n"],
+		"datum":"N."
+  }
+]
