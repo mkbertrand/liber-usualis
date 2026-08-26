@@ -288,8 +288,8 @@ class CaputCorpus(Corpus):
         def has_caput(entry):
             tags = entry['tags']
             if type(tags) is list:
-                return any('caput' in t for t in tags)
-            return 'caput' in tags
+                return any({'caput', 'nomen', 'basis-nominis'} & t for t in tags)
+            return {'caput', 'nomen', 'basis-nominis'} & tags
         return [entry for entry in super().get_pile(pilequery) if has_caput(entry)]
 
     def search(self, query, multipleresults = False, multipleresultssort = None, pilemod = []):

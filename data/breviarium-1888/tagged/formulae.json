@@ -435,5 +435,9 @@
 	{
 		"tags":["preces"],
 		"caput":"Preces."
-	}
+	},
+  {
+    "tags":["formula-commemorationis","formula","annotatio"],
+    "caput":[["nomen"]]
+  }
 ]

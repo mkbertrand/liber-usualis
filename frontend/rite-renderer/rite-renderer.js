@@ -13,10 +13,6 @@ const PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clar
 class RiteRenderer {
   
   constructor(structuredRite, resources) {
-    this.usedCommemorations = structuredRite['used-commemorations'];
-    this.usedCommemorations.push('De Sanctis.');
-    this.matinsCommemoration = structuredRite['commemoratio-matutini'] ? structuredRite['commemoratio-matutini'][0] : null;
-    
     this.rite = '';
     this.leftBuffer = [];
     this.rightBuffer = [];
@@ -103,7 +99,7 @@ class RiteRenderer {
       const header = unpack(element.caput);
       if (!header || Array.isArray(header)) return;
       if (tags(element.caput).has('annotatio')) {
-        this.makeHeadingAnnotation(header);
+        this.makeHeadingAnnotation(abbreviateName(header));
       } else if (tags(element.caput).has('sectio')) {
         this.makeCenteredHeader(header, 'section-header');
       } else {
@@ -251,11 +247,6 @@ class RiteRenderer {
       return false;
     }
 
-    // Adds extra line of annotation noting that the lesson is a commemoration (i.e. not a continuation of the previous lessons).
-    if (quaesitum(element).has('lectio-commemorationis') || quaesitum(element.datum).has('lectio-commemorationis')) {
-      this.makeHeadingAnnotation(abbreviateName(this.matinsCommemoration));
-    }
-
     let lesson = unpack(element);
     if (!translation) {
       if (typeof element === 'object' && 'datum' in element && typeof element.datum === 'object' && 'translation' in element.datum) {
@@ -330,7 +321,6 @@ class RiteRenderer {
     }
     for (var i = 0; i < element.datum.length - 1; i++) {
       this.openDiv('', 'formula-commemorationis');
-      this.makeHeadingAnnotation(abbreviateName(this.usedCommemorations[i][0]));
       this.recurseRite(element.datum[i], translation, parentTags.union(tags(element)));
       if (i != element.datum.length - 2) { this.closeDiv('formula-commemorationis'); }
     }
