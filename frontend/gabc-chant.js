@@ -102,6 +102,11 @@ class ChantElement extends HTMLElement {
   }
 
   renderChant() {
+    if (typeof this.score !== 'undefined') {
+      this.chantLayout();
+      return;
+    }
+
     try {
       var mappings = Exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, this.gabc);
       this.score = new Exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !this.gabc.includes('initial-style:0;'));
@@ -129,6 +134,7 @@ class ChantElement extends HTMLElement {
   disconnectedCallback() {
     CHANT_VISIBILITY_OBSERVER.unobserve(this);
   }
+
   onVisible() {
     queueRenderTask(() => this.renderChant());
   }
@@ -159,4 +165,13 @@ export function initChantElement() {
   } else {
     startObserve();
   }
+
+  window.addEventListener('beforeprint', () => {
+    document.querySelectorAll('gabc-chant').forEach(elem => {
+      elem.renderChant();
+    });
+
+    // called to flush layout change - otherwise the final chant wouldn't render properly.
+    void document.body.offsetHeight;
+  });
 }
