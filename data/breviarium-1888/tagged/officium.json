@@ -1,6 +1,9 @@
 [
   {
-    "tags":["officium","matutinum-laudes"],
+    "tags":[
+      ["officium","matutinum-laudes"],
+      ["officium","matutinum-laudes","sine-ritibus"]
+    ],
     "datum":[
       ["aperi-domine"],
       ["ritus","matutinum","officium-parvum-bmv","occurrens"],
@@ -73,14 +76,20 @@
     ]
   },
   {
-    "tags":["officium","tertia"],
+    "tags":[
+      ["officium","tertia"],
+      ["officium","tertia","sine-ritibus"]
+    ],
     "datum":[
       ["aperi-domine"],
       ["ritus","tertia"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
       ["sacrosanctae"]
-    ],
-    "cum-opbmv":[
+    ]
+  },
+  {
+    "tags":["officium","tertia","cum-opbmv"],
+    "datum":[
       ["aperi-domine"],
       ["ritus","tertia","sine-dismissione"],
       ["ritus","tertia","officium-parvum-bmv","occurrens"],
@@ -89,14 +98,20 @@
     ]
   },
   {
-    "tags":["officium","sexta"],
+    "tags":[
+      ["officium","sexta"],
+      ["officium","sexta","sine-ritibus"]
+    ],
     "datum":[
       ["aperi-domine"],
       ["ritus","sexta"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
       ["sacrosanctae"]
-    ],
-    "cum-opbmv":[
+    ]
+  },
+  {
+    "tags":["officium","sexta","cum-opbmv"],
+    "datum":[
       ["aperi-domine"],
       ["ritus","sexta","sine-dismissione"],
       ["ritus","sexta","officium-parvum-bmv","occurrens"],
@@ -105,14 +120,20 @@
     ]
   },
   {
-    "tags":["officium","nona"],
+    "tags":[
+      ["officium","nona"],
+      ["officium","nona","sine-ritibus"]
+    ],
     "datum":[
       ["aperi-domine"],
       ["ritus","nona"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
       ["sacrosanctae"]
-    ],
-    "cum-opbmv":[
+    ]
+  },
+  {
+    "tags":["officium","nona","cum-opbmv"],
+    "datum":[
       ["aperi-domine"],
       ["ritus","nona","sine-dismissione"],
       ["ritus","nona","officium-parvum-bmv","occurrens"],
@@ -121,15 +142,21 @@
     ]
   },
   {
-    "tags":["officium","vesperae"],
+    "tags":[
+      ["officium","vesperae"],
+      ["officium","vesperae","sine-ritibus"]
+    ],
     "datum":[
       ["aperi-domine"],
       ["ritus","vesperae","officium-parvum-bmv","occurrens","sine-dismissione"],
       ["ritus","vesperae"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
       ["sacrosanctae"]
-    ],
-    "cum-officio-defunctorum":[
+    ]
+  },
+  {
+    "tags":["officium","vesperae","cum-officio-defunctorum"],
+    "datum":[
       ["aperi-domine"],
       ["ritus","vesperae","officium-parvum-bmv","occurrens","sine-dismissione"],
       ["ritus","vesperae","sine-dismissione"],
