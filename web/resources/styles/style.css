@@ -26,21 +26,53 @@
 }
 
 :root {
-	--generic-white-background-color: #ffffff;
+	--panel-background-color: #ffffff;
 	--border-color: #efe9e9;
 	--button-color: #eee;
 	--button-color-hover: #e0b0b0;
 	--button-color-toggled: #e6b0b0;
+	--site-background-color: #f9f9ee;
+	--panel-text-color: #000000;
+	--panel-text-color-muted: #333333;
+	--overlay-background-color: rgba(249, 249, 249, .7);
+	--overlay-background-color-strong: rgba(249, 249, 249, .8);
 	--top-bar-title-height: 75px;
+
+	/* Variables used for the actual page content. */
+	--content-background-color: #ffffff;
+	--content-border: #efe9e9;
+	--content-hover: #e0b0b0;
+	--content-text-color: #000000;
+	--content-text-color-muted: #222222;
+	--rubric: red;
+	--native-scheme: light;
 }
 
-html {
+[data-theme="dark"] {
+	--panel-background-color: #202126;
+	--border-color: #3a3b44;
+	--button-color: #26272c;
+	--button-color-hover: #313239;
+	--button-color-toggled: #393a42;
+	--site-background-color: #1a1a1e;
+	--panel-text-color: #cfcbbc;
+	--panel-text-color-muted: #85816f;
+	--overlay-background-color: rgba(26, 26, 30, .7);
+	--overlay-background-color-strong: rgba(26, 26, 30, .85);
+
+	--content-background-color: #e8e1d0;
+	--content-border: #c9c0a8;
+	--content-hover: #c9a0a0;
+	--content-text-color: #2a2a26;
+	--content-text-color-muted: #544f42;
+	--rubric: #cc2819;
+	--native-scheme: dark;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f9f9ee;
+	background-color: var(--site-background-color);
 }
 
 #site-wrapper {
@@ -53,29 +85,41 @@ body {
 	top: 0;
 	width: 100%;
 	height: var(--top-bar-title-height) !important;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--panel-background-color);
 	border-bottom: 1px solid var(--border-color);
 	z-index: 2;
 }
 
-/* Menu for picking language manually */
+/* Menu for picking language manually. Lives in the sidebar nav's footer
+   (sidemenu.tpl), alongside the dark mode toggle. */
 #locale-selector {
-	position: absolute;
-	top: 18px;
-	right: 60px;
 	height: 35px;
 	font-family: times;
 	font-size: 16px;
 	background-color: var(--button-color);
 	border-radius: 3px;
 	border: none;
-	color: black;
+	color: var(--panel-text-color);
 	cursor: pointer;
 	padding: 0 10px;
-	margin-right: 7px;
 }
 
 #locale-selector:hover {
+	background-color: var(--button-color-hover);
+}
+
+/* Site-wide dark mode toggle. Lives in the sidebar nav's footer alongside
+   the locale selector. */
+#dark-mode-toggle {
+	height: 35px;
+	width: 35px;
+	padding: 7px;
+	border-radius: 3px;
+	background-color: transparent;
+	color: var(--panel-text-color);
+}
+
+#dark-mode-toggle:hover {
 	background-color: var(--button-color-hover);
 }
 
@@ -114,14 +158,28 @@ body {
 	position: fixed;
 	top: calc(var(--top-bar-title-height) + 1px);
 	left: 0;
-	height: 100%;
-	background-color: var(--generic-white-background-color);
+	width: 160px;
+	height: calc(100% - var(--top-bar-title-height) - 1px);
+	box-sizing: border-box;
+	background-color: var(--panel-background-color);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	border-right: 1px solid var(--border-color);
 	z-index: 3;
 	gap: 10px;
+}
+
+/* Pinned to the bottom of the sidebar's flex column regardless of how many
+   nav links precede it. */
+#sidebar-nav-footer {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
 }
 
 .nav-element-link {
@@ -132,7 +190,7 @@ body {
 	text-align: center;
 	font-family: times;
 	font-size: 20px;
-	color: black;
+	color: var(--panel-text-color);
 	text-decoration: none;
 }
 
@@ -141,7 +199,7 @@ body {
 }
 
 .red {
-	color: red !important;
+	color: var(--rubric) !important;
 }
 
 @font-face {
@@ -174,7 +232,7 @@ button {
 	font-family: times;
 	background-color: var(--button-color);
 	border-radius: 3px;
-	color: black;
+	color: var(--panel-text-color);
 	cursor: pointer;
 	border: none;
 }

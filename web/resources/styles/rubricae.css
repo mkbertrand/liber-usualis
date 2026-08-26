@@ -3,7 +3,7 @@
 }
 
 h1 {
-	color: red;
+	color: var(--rubric);
 	font-size: 30px !important;
 	letter-spacing: .05em;
 	font-weight: normal;
@@ -12,7 +12,7 @@ h1 {
 
 h3 {
 	text-align: center !important;
-	color: red;
+	color: var(--rubric);
 	font-size: 20px !important;
 	font-weight: normal;
 	margin-top: 6px;

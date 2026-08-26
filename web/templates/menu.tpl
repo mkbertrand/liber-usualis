@@ -25,16 +25,20 @@
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/menu.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource(f'/styles/{page}.css')}}>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
-	<body>
-		<div id="site-wrapper-home">
+	<body x-data="{darkMode: $persist(false).as('dark-mode')}" :data-theme="darkMode ? 'dark' : 'light'">
+		<div id="site-wrapper-home" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
 			<div id="top-bar-title">
+				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen">
+				% include('web/resources/svg/hamburger-menu.tpl')
+			</button>
 				<div id="project-logo">
 					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
 				</div>
-        % include('web/resources/locale-selector.tpl', locale=locale)
 			</div>
+			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
 			<div id="content-container-home">
 				% include(f'web/pages/{page}.tpl', text=json.load(open(version_management.bestlocalized(f'/pages/{page}.json', locales))), locale=locale)
 			</div>

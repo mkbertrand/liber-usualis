@@ -12,4 +12,8 @@
 		<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
 	</template>
 
+	<div id="sidebar-nav-footer">
+		% include('web/resources/locale-selector.tpl', locale=locale)
+		% include('web/resources/dark-mode-toggle.tpl')
+	</div>
 </nav>

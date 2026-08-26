@@ -21,11 +21,12 @@
 }
 
 #bottom-easy-select-content-container {
-	background-color: rgba(249, 249, 249, .8);
+	background-color: var(--overlay-background-color-strong);
 	border: 1px solid var(--border-color);
 	border-radius: 3px;
 	font-family: times;
 	padding: 7px 7px 10px 7px;
+	color: var(--panel-text-color);
 }
 
 #bottom-easy-select-hide-icon {
@@ -51,7 +52,9 @@
 	border-radius: 3px;
 	cursor: pointer;
 	font-family: times;
-	color: black;
+	color: var(--panel-text-color);
+	background-color: var(--button-color);
+	color-scheme: var(--native-scheme);
 }
 
 .date-selector-button {

@@ -1,7 +1,7 @@
 #kalendar-title {
 	font-family: 'times';
 	text-align: center;
-	color: red;
+	color: var(--rubric);
 	font-size: 30px;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -11,7 +11,7 @@
 
 .month-name-title {
 	font-family: 'times';
-	color: red;
+	color: var(--rubric);
 	font-weight: normal;
 	font-size: 20px;
 	margin-top: 5px;
@@ -24,16 +24,16 @@
 	font-family: 'times';
 	border-spacing: 0;
 	border-collapse: collapse;
-	border-top: 1px solid red;
-	border-bottom: 1px solid red;
+	border-top: 1px solid var(--rubric);
+	border-bottom: 1px solid var(--rubric);
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .kalendar-table-header {
-	color: red;
+	color: var(--rubric);
 	font-weight: normal;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid var(--rubric);
 	vertical-align: middle !important;
 	font-size: 16px;
 }
@@ -45,8 +45,8 @@
 
 .kalendar-table-entry {
 	vertical-align: top;
-	border-left: 1px solid red;
-	border-right: 1px solid red;
+	border-left: 1px solid var(--rubric);
+	border-right: 1px solid var(--rubric);
 	font-size: 16px;
 	padding-left: 5px;
 	padding-right: 5px;
