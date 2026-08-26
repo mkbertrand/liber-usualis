@@ -26,21 +26,53 @@
 }
 
 :root {
-	--generic-white-background-color: #ffffff;
+	--panel-background-color: #ffffff;
 	--border-color: #efe9e9;
 	--button-color: #eee;
 	--button-color-hover: #e0b0b0;
 	--button-color-toggled: #e6b0b0;
+	--site-background-color: #f9f9ee;
+	--panel-text-color: #000000;
+	--panel-text-color-muted: #333333;
+	--overlay-background-color: rgba(249, 249, 249, .7);
+	--overlay-background-color-strong: rgba(249, 249, 249, .8);
 	--top-bar-title-height: 75px;
+
+	/* Variables used for the actual page content. */
+	--content-background-color: #ffffff;
+	--content-border: #efe9e9;
+	--content-hover: #e0b0b0;
+	--content-text-color: #000000;
+	--content-text-color-muted: #222222;
+	--rubric: red;
+	--native-scheme: light;
 }
 
-html {
+[data-theme="dark"] {
+	--panel-background-color: #202126;
+	--border-color: #3a3b44;
+	--button-color: #26272c;
+	--button-color-hover: #313239;
+	--button-color-toggled: #393a42;
+	--site-background-color: #1a1a1e;
+	--panel-text-color: #cfcbbc;
+	--panel-text-color-muted: #85816f;
+	--overlay-background-color: rgba(26, 26, 30, .7);
+	--overlay-background-color-strong: rgba(26, 26, 30, .85);
+
+	--content-background-color: #e8e1d0;
+	--content-border: #c9c0a8;
+	--content-hover: #c9a0a0;
+	--content-text-color: #2a2a26;
+	--content-text-color-muted: #544f42;
+	--rubric: #cc2819;
+	--native-scheme: dark;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f9f9ee;
+	background-color: var(--site-background-color);
 }
 
 #site-wrapper {
@@ -53,7 +85,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: var(--top-bar-title-height) !important;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--panel-background-color);
 	border-bottom: 1px solid var(--border-color);
 	z-index: 2;
 }
@@ -69,7 +101,7 @@ body {
 	background-color: var(--button-color);
 	border-radius: 3px;
 	border: none;
-	color: black;
+	color: var(--panel-text-color);
 	cursor: pointer;
 	padding: 0 10px;
 	margin-right: 7px;
@@ -77,6 +109,33 @@ body {
 
 #locale-selector:hover {
 	background-color: var(--button-color-hover);
+}
+
+/* Site-wide dark mode toggle. Shares the top bar's right-hand slot with the
+   options gear (pray.tpl only) and the locale selector (every page); when a
+   gear is present it takes the locale selector's usual spot and pushes the
+   selector further left, since the gear otherwise always sits at right:18px. */
+#dark-mode-toggle {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	height: 35px;
+	width: 35px;
+	padding: 7px;
+	background-color: transparent;
+	color: var(--panel-text-color);
+}
+
+#dark-mode-toggle:hover {
+	background-color: var(--button-color-hover);
+}
+
+#top-bar-title:has(#options-gear-wrapper) #dark-mode-toggle {
+	right: 60px;
+}
+
+#top-bar-title:has(#options-gear-wrapper) #locale-selector {
+	right: 103px;
 }
 
 /* Logo stuff */
@@ -115,7 +174,7 @@ body {
 	top: calc(var(--top-bar-title-height) + 1px);
 	left: 0;
 	height: 100%;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--panel-background-color);
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
@@ -132,7 +191,7 @@ body {
 	text-align: center;
 	font-family: times;
 	font-size: 20px;
-	color: black;
+	color: var(--panel-text-color);
 	text-decoration: none;
 }
 
@@ -141,7 +200,7 @@ body {
 }
 
 .red {
-	color: red !important;
+	color: var(--rubric) !important;
 }
 
 @font-face {
@@ -174,7 +233,7 @@ button {
 	font-family: times;
 	background-color: var(--button-color);
 	border-radius: 3px;
-	color: black;
+	color: var(--panel-text-color);
 	cursor: pointer;
 	border: none;
 }

@@ -1,7 +1,8 @@
 /* Next hour button. Child of rite-page-container. */
 #next-hour-button-container {
 	padding: 0 40px 60px 40px;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--content-background-color);
+	color: var(--content-text-color);
 }
 
 #next-hour-button {
@@ -9,10 +10,11 @@
 	font-family: "Old Standard TT", times;
 	font-size: 16px;
 	background-color: transparent;
+	color: var(--content-text-color);
 }
 
 #next-hour-button:hover {
-	background-color: var(--button-color-hover);
+	background-color: var(--content-hover);
 }
 
 #next-hour-button-icon {

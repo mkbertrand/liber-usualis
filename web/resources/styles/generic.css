@@ -4,7 +4,8 @@
 	max-width: 140em;
 	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
 	padding: 10px 40px;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--content-background-color);
+	color: var(--content-text-color);
 	font-size: 18px;
 	font-family: times;
 }
@@ -12,7 +13,7 @@
 h1 {
 	font-family: 'times';
 	text-align: center;
-	color: red;
+	color: var(--rubric);
 	font-size: 30px;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -22,7 +23,7 @@ h1 {
 h2 {
 	font-family: 'times';
 	text-align: center;
-	color: red;
+	color: var(--rubric);
 	font-size: 24px;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -35,7 +36,7 @@ h2 {
 h3 {
 	font-family: 'times';
 	text-align: left;
-	color: black;
+	color: var(--content-text-color);
 	font-size: 20px;
 	font-variant: small-caps;
 	font-weight: normal;

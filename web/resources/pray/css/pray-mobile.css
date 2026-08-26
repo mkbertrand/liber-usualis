@@ -26,7 +26,7 @@
 	width: 100%;
 	height: 100%;
 	overflow-y: auto;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--panel-background-color);
 	z-index: 1;
 }
 

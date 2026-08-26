@@ -5,16 +5,22 @@ import {stringRender} from './rite-renderer/rendering-utils.js';
 
 const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
+// Exsurge writes these as SVG presentation attributes on live DOM nodes (via
+// createSvg()/innerHTML), so CSS custom properties resolve here exactly as
+// they would in a stylesheet, including re-resolving on a theme change.
+GABC_CHANT_CONTEXT.textColor = 'var(--content-text-color)';
+GABC_CHANT_CONTEXT.neumeLineColor = 'var(--content-text-color)';
+
 GABC_CHANT_CONTEXT.setFont("'Old Standard TT'", '22');
 
-GABC_CHANT_CONTEXT.textStyles.dropCap.color = 'red';
+GABC_CHANT_CONTEXT.textStyles.dropCap.color = 'var(--rubric)';
 GABC_CHANT_CONTEXT.textStyles.dropCap.size = '80';
 
-GABC_CHANT_CONTEXT.textStyles.annotation.color = 'red';
+GABC_CHANT_CONTEXT.textStyles.annotation.color = 'var(--rubric)';
 GABC_CHANT_CONTEXT.textStyles.annotation.font = GABC_CHANT_CONTEXT.textStyles.al.font;
 
-GABC_CHANT_CONTEXT.rubricColor = 'red';
-GABC_CHANT_CONTEXT.staffLineColor = 'red';
+GABC_CHANT_CONTEXT.rubricColor = 'var(--rubric)';
+GABC_CHANT_CONTEXT.staffLineColor = 'var(--rubric)';
 
 GABC_CHANT_CONTEXT.condenseLineAmount = 1;
 // For some reason, setting the property directly doesn't work for glyph scaling specifically :D

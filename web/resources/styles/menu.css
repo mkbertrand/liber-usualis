@@ -23,13 +23,24 @@ body {
 
 #home-screen {
 	position: relative;
-	background-color: var(--generic-white-background-color);
+	background-color: var(--content-background-color);
+	color: var(--content-text-color);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	height: 100%;
 	width: calc(min(100vw, 75vh));
 	padding: 10px 40px;
+}
+
+/* .nav-element-link is shared with the sidebar (a chrome surface, --panel-text-color
+   is appropriate there); here it sits on #home-screen's book-toned surface. */
+#home-screen .nav-element-link {
+	color: var(--content-text-color);
+}
+
+#home-screen .nav-element-link:hover {
+	background-color: var(--content-hover);
 }
 
 #side-panel-left, #side-panel-right {
@@ -40,7 +51,7 @@ body {
 
 #main-title-label {
 	text-align: center;
-	color: red;
+	color: var(--rubric);
 	font-size: 30px;
 	font-variant: small-caps;
 	font-weight: normal;

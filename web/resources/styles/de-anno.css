@@ -1,5 +1,5 @@
 h1 {
-	color: red;
+	color: var(--rubric);
 	font-size: 30px !important;
 	letter-spacing: .05em;
 	font-weight: normal;
@@ -8,7 +8,7 @@ h1 {
 
 h3 {
 	text-align: center !important;
-	color: red;
+	color: var(--rubric);
 	font-size: 20px !important;
 	font-weight: normal;
 	margin-top: 6px;
@@ -24,13 +24,13 @@ p {
 }
 
 .aureus {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid var(--content-text-color);
+	border-bottom: 1px solid var(--content-text-color);
 }
 
 .just-red {
 	font-weight: normal;
-	color: red;
+	color: var(--rubric);
 }
 
 td {
@@ -53,10 +53,10 @@ table.big-table td {
 }
 
 .tabula-paschalis-epact {
-	color: red;
+	color: var(--rubric);
 	text-align: left;
 }
 
 tr.major-row td {
-	border-top: 1px solid black;
+	border-top: 1px solid var(--content-text-color);
 }

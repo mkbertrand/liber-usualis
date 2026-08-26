@@ -4,7 +4,8 @@
 	font-size: 20px;
 	padding: 10px 40px 10px 40px;
 	min-height: calc(100vh - 71px - var(--top-bar-title-height));
-	background-color: var(--generic-white-background-color);
+	background-color: var(--content-background-color);
+	color: var(--content-text-color);
 	display: block;
 }
 
@@ -26,7 +27,7 @@
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	font-weight: normal;
-	color: red;
+	color: var(--rubric);
 	font-size: 26px;
 	text-align: center;
 	margin-bottom: 0;
@@ -36,7 +37,7 @@
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	font-weight: normal;
-	color: black;
+	color: var(--content-text-color);
 	font-size: 18px;
 	text-align: center;
 	margin-top: 0;
@@ -48,7 +49,7 @@
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	font-weight: normal;
-	color: red;
+	color: var(--rubric);
 	font-size: 22px;
 	text-align: center;
 	margin-bottom: 0;
@@ -58,7 +59,7 @@
 	font-family: "Old Standard TT", times;
 	font-variant: small-caps;
 	font-weight: normal;
-	color: red;
+	color: var(--rubric);
 	font-size: 22px;
 	text-align: center;
 	margin: 0;
@@ -67,7 +68,7 @@
 .item-header {
 	font-variant: small-caps;
 	font-weight: normal;
-	color: red;
+	color: var(--rubric);
 	font-size: 20px;
 	text-align: center;
 	margin: 0;
@@ -83,17 +84,17 @@
 }
 
 .verse-number {
-	color: red;
+	color: var(--rubric);
 	font-size: 8px;
 }
 
 .rite-text-rubric {
-	color: red;
+	color: var(--rubric);
 	font-size: 16px;
 }
 
 .black-rubric {
-	color: black;
+	color: var(--content-text-color);
 }
 
 .small-rubric {
@@ -112,7 +113,7 @@
 }
 
 :is(.aperi-domine, .sacrosanctae, .absolutio, .lectionis-titulum, .evangelium-matutini, .hymnus, .capitulum, .antiphona, .martyrologium, .pater-noster-secreta, .ave-maria-secreta, .credo-secreta, .preces:first-letter, .pater-noster-clara-voce, .pater-noster-semisecreta, .credo-semisecreta, .confiteor, .oratio-sanctae-mariae, .formula-lectionis, .invitatorium, .pro-prandio, .pro-coena, .itinerarium, .formula-indulgentiam-articulo-mortis, .collecta-primaria, .commemorationes, .antiphona-bmv, .officium-capituli) p.rite-text::first-letter {
-  color: red;
+  color: var(--rubric);
 }
 
 
@@ -120,7 +121,7 @@
 	float: left;
 	font-size: 94px;
 	margin-right: 0.1rem;
-	color: red;
+	color: var(--rubric);
 	line-height: 0;
 	initial-letter: 3;
 	-webkit-initial-letter: 3;
@@ -177,7 +178,7 @@ p.rite-text-translation {
 
 #rite-container.line-by-line .rite-text-translation {
 	font-size: 0.8em;
-	color: #222;
+	color: var(--content-text-color-muted);
 	margin-top: 0;
 	line-height: 1;
 	padding-left: 10px;
@@ -185,7 +186,7 @@ p.rite-text-translation {
 
 span.rite-text.chant-translation {
 	font-size: 14px;
-	color: #222;
+	color: var(--content-text-color-muted);
 	margin-top: 0;
 	line-height: 1;
 	padding-left: 10px;

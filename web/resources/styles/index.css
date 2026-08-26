@@ -8,7 +8,7 @@
 
 #breviarium-title {
 	text-align: center;
-	color: red;
+	color: var(--rubric);
 	font-size: 30px;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -18,7 +18,7 @@
 
 .breviarium-subtitle {
 	text-align: center;
-	color: red;
+	color: var(--rubric);
 	font-size: 24px;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -27,7 +27,7 @@
 
 .breviarium-subtitle-2 {
 	text-align: center;
-	color: black;
+	color: var(--content-text-color);
 	font-size: 20px;
 	font-variant: small-caps;
 	font-weight: normal;
@@ -68,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-	color: black;
+	color: var(--content-text-color);
 	text-decoration: none;
   margin: 0;
   padding: 10px;
