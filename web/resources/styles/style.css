@@ -90,11 +90,9 @@ body {
 	z-index: 2;
 }
 
-/* Menu for picking language manually */
+/* Menu for picking language manually. Lives in the sidebar nav's footer
+   (sidemenu.tpl), alongside the dark mode toggle. */
 #locale-selector {
-	position: absolute;
-	top: 18px;
-	right: 60px;
 	height: 35px;
 	font-family: times;
 	font-size: 16px;
@@ -104,38 +102,25 @@ body {
 	color: var(--panel-text-color);
 	cursor: pointer;
 	padding: 0 10px;
-	margin-right: 7px;
 }
 
 #locale-selector:hover {
 	background-color: var(--button-color-hover);
 }
 
-/* Site-wide dark mode toggle. Shares the top bar's right-hand slot with the
-   options gear (pray.tpl only) and the locale selector (every page); when a
-   gear is present it takes the locale selector's usual spot and pushes the
-   selector further left, since the gear otherwise always sits at right:18px. */
+/* Site-wide dark mode toggle. Lives in the sidebar nav's footer alongside
+   the locale selector. */
 #dark-mode-toggle {
-	position: absolute;
-	top: 18px;
-	right: 18px;
 	height: 35px;
 	width: 35px;
 	padding: 7px;
+	border-radius: 3px;
 	background-color: transparent;
 	color: var(--panel-text-color);
 }
 
 #dark-mode-toggle:hover {
 	background-color: var(--button-color-hover);
-}
-
-#top-bar-title:has(#options-gear-wrapper) #dark-mode-toggle {
-	right: 60px;
-}
-
-#top-bar-title:has(#options-gear-wrapper) #locale-selector {
-	right: 103px;
 }
 
 /* Logo stuff */
@@ -173,14 +158,28 @@ body {
 	position: fixed;
 	top: calc(var(--top-bar-title-height) + 1px);
 	left: 0;
-	height: 100%;
+	width: 160px;
+	height: calc(100% - var(--top-bar-title-height) - 1px);
+	box-sizing: border-box;
 	background-color: var(--panel-background-color);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	border-right: 1px solid var(--border-color);
 	z-index: 3;
 	gap: 10px;
+}
+
+/* Pinned to the bottom of the sidebar's flex column regardless of how many
+   nav links precede it. */
+#sidebar-nav-footer {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
 }
 
 .nav-element-link {

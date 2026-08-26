@@ -39,8 +39,6 @@
 				<div id="project-logo">
 					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
 				</div>
-        % include('web/resources/locale-selector.tpl', locale=locale)
-				% include('web/resources/dark-mode-toggle.tpl')
 			</div>
 			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
 			% if os.path.exists(f'web/pages/{page}.html'):
