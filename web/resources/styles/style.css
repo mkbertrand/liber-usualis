@@ -158,7 +158,7 @@ body {
 	position: fixed;
 	top: calc(var(--top-bar-title-height) + 1px);
 	left: 0;
-	width: 160px;
+	min-width: 160px;
 	height: calc(100% - var(--top-bar-title-height) - 1px);
 	box-sizing: border-box;
 	background-color: var(--panel-background-color);
@@ -183,9 +183,9 @@ body {
 }
 
 .nav-element-link {
-	width: 100px;
+	min-width: 100px;
 	height: 40px;
-	padding-top: 15px;
+	padding: 12px 5px 0 5px;
 	display: block;
 	text-align: center;
 	font-family: times;
