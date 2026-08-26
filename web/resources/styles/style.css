@@ -144,7 +144,8 @@ body {
 /* Side bar which is opened from the top bar */
 #sidebar-nav-toggle-wrapper {
 	position: fixed;
-	height: 35px;
+	height: 40px;
+  width: 40px;
 	margin-top: 18px;
 	margin-left: 18px;
 	background-color: transparent;
