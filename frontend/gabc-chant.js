@@ -1,7 +1,35 @@
 // Copyright 2023-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import * as Exsurge from 'exsurge';
-import {stringRender} from './rite-renderer/rendering-utils.js';
+
+function stringRender(text) {
+		if (text.match(/^\[.+?\]$/)) {
+			return `<span class='rite-text-rubric'>${rubricRender(text.slice(1, -1))}</span>`;
+		}
+		text = text.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
+			.replaceAll('É', 'E').replaceAll('Í', 'I')
+			.replaceAll('Ó', 'O').replaceAll('Ú', 'U')
+			.replaceAll('Ý', 'Y');
+		text = text.replaceAll(/(?<!<)\//g, '<br>');
+
+		text = text.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
+		text = text
+      .replace(/\n/g, '<br>')
+			.replace(/^V\./g, '<span class="red line-starting-symbol">&#8483;.</span>')
+			.replace(/^R\. br./g, '<span class="red line-starting-symbol">&#8479;. br.</span>')
+			.replace(/^R\./g, '<span class="red line-starting-symbol">&#8479;.</span>')
+			.replace(/&para;/g, '<span class=\'red\'>&para;</span>')
+			.replace(/N\./g, '<span class=\'red\'>N.</span>')
+			.replace(/R\./g, '<span class=\'red\'>&#8479;.</span>')
+			.replace(/<br>V\./g, '<br><span class=\'red\'>&#8483;.</span>')
+			.replace(/✠/g, '<span class=\'red\'>&malt;</span>')
+			.replace(/✙/g, '<span class=\'red\'>&#10009;</span>')
+			.replace(/\+/g, '<span class=\'red\'>&dagger;</span>')
+			.replace(/\*/g, '<span class=\'red\'>&ast;</span>')
+			.replace(/\[\((.+?)\)\]\s/g, '<span class=\'rite-text-rubric small-rubric\'>(\$1) </span>')
+			.replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
+		return text;
+}
 
 const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
