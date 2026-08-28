@@ -14,7 +14,6 @@ def date_header(date: str) -> str:
     year, month, day = date.split('-')
     return f'<h4 class="date-header">Die {int(day)} {MONTHS[(int(month) - 1) % 12]} {year}.</h4>'
 
-
 def rite_title(title: str, tagset: frozenset[str], size: str = 'large') -> str:
     if size == 'small':
         return f'<h1 class="small-title">{title}</h1>'
@@ -40,7 +39,6 @@ def rite_title(title: str, tagset: frozenset[str], size: str = 'large') -> str:
     title_text = re.sub(r'\.\.$', '.', title + '.')
     return f'<h1 class="large-title">{title_text}</h1><h2 class="large-subtitle">{subtitle}</h2>'
 
-
 _ABBREVIATIONS = (
     ('Martyris', 'Mart.'),
     ('Martyrum', 'Mm.'),
@@ -53,7 +51,6 @@ _ABBREVIATIONS = (
     ('Sociorum', 'Soc.'),
 )
 
-
 def abbreviate_name(name: str) -> str:
     for full, short in _ABBREVIATIONS:
         name = name.replace(full, short)
@@ -61,15 +58,12 @@ def abbreviate_name(name: str) -> str:
     name = re.sub(r'\.\.$', '.', name)
     return name
 
-
 _ACCENT_FLATTEN = (('Á', 'A'), ('Ǽ', 'Æ'), ('É', 'E'), ('Í', 'I'), ('Ó', 'O'), ('Ú', 'U'), ('Ý', 'Y'))
-
 
 def _flatten_uppercase_accents(text: str) -> str:
     for accented, plain in _ACCENT_FLATTEN:
         text = text.replace(accented, plain)
     return text
-
 
 def rubric_render(data: str) -> str:
     data = re.sub(r'\[(.+?)\]', r"<span class='black-rubric'>\1</span>", data)
@@ -90,7 +84,6 @@ def rubric_render(data: str) -> str:
     data = data.replace('+', "<span class='red'>&dagger;</span>")
     data = data.replace('*', "<span class='red'>&ast;</span>")
     return data
-
 
 def string_render(text: str) -> str:
     if re.fullmatch(r'\[.+?\]', text):
@@ -116,18 +109,15 @@ def string_render(text: str) -> str:
     text = re.sub(r'\[(.+?)\]', r"<span class='rite-text-rubric'>\1</span>", text)
     return text
 
-
 def tags(element: Union[str, list, dict, None]) -> frozenset[str]:
     if isinstance(element, dict):
         return frozenset(element.get('tags') or ())
     return frozenset()
 
-
 def quaesitum(element: Union[str, list, dict, None]) -> frozenset[str]:
     if isinstance(element, dict) and 'quaesitum' in element:
         return frozenset(element['quaesitum'])
     return tags(element)
-
 
 # It can be readily observed that this is just an extremely primitive version of render_rite().
 def unpack(data: Union[str, list, dict, None]) -> Union[str, list, None]:
@@ -147,7 +137,6 @@ def unpack(data: Union[str, list, dict, None]) -> Union[str, list, None]:
     if isinstance(data, dict):
         return unpack(data.get('datum'))
     return None
-
 
 # Digs out nested data recursively (useful for translation).
 def claw(data: dict) -> dict:

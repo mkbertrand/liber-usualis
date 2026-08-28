@@ -28,24 +28,20 @@ HYPH = Hyphenator(PATTERNS, LEFTMIN, RIGHTMIN)
 # each a list of GABC pitch-letter syllable strings.
 PsalmTone = dict[str, list[str]]
 
-
 def _at(seq: list, idx: int) -> Any:
     if 0 <= idx < len(seq):
         return seq[idx]
     return None
 
-
 def _wrap_at(seq: list[str], idx: int, css_class: str) -> None:
     if 0 <= idx < len(seq):
         seq[idx] = f'<span class="{css_class}">{seq[idx]}</span>'
-
 
 def _index_of(seq: list, value: Any) -> int:
     try:
         return seq.index(value)
     except ValueError:
         return -1
-
 
 def _js_number(value: Any) -> Union[int, float]:
     # Mirrors JS's Number(x) coercion: a non-numeric string becomes NaN
@@ -57,7 +53,6 @@ def _js_number(value: Any) -> Union[int, float]:
         return int(value)
     except (TypeError, ValueError):
         return math.nan
-
 
 def adjust_to_key(item: list[str], current_key: Union[str, list], end_key: Union[str, list]) -> list[str]:
     diff = 2 * (_js_number(end_key[-1]) - _js_number(current_key[-1]))
@@ -76,7 +71,6 @@ def adjust_to_key(item: list[str], current_key: Union[str, list], end_key: Union
                 new_component += ch
         new_item.append(new_component)
     return new_item
-
 
 def get_psalm_tone(tone: Optional[str], clef: str, resources: dict[str, Any]) -> Optional[PsalmTone]:
     if not tone:
@@ -106,9 +100,7 @@ def get_psalm_tone(tone: Optional[str], clef: str, resources: dict[str, Any]) ->
         'terminatio': adjust_to_key(variant[tone], variant['clavis'], clef),
     }
 
-
 _ROMAN_VALUES = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
-
 
 def format_header(header: str) -> str:
     header = header[1:-2].replace(':', '. ', 1) + '.'
@@ -127,15 +119,12 @@ def format_header(header: str) -> str:
         header = header.replace(numeral, str(number), 1)
     return f'[{header}]\n'
 
-
 # The first value is the number of preparatory syllables and the second value is the number of accents.
 def accentation_data(blank_chant: list[str]) -> tuple[int, int]:
     acc = sum(1 for s in blank_chant if 'r' in s)
     return (len(blank_chant) - 3 * acc, acc)
 
-
 LONGS = ['á', 'é', 'í', 'ó', 'ú', 'ý', 'ǽ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ý', 'Ǽ']
-
 
 def is_dactylic(text: list[str], position: int) -> bool:
     monosyllabic = _at(text, position - 1) == ' '
@@ -155,9 +144,7 @@ def is_dactylic(text: list[str], position: int) -> bool:
         val = _at(text, position - 2)
         return val is not None and any(long in val for long in LONGS)
 
-
 PUNCTUATION = [',', '.', ';', ':', '!', '?']
-
 
 def hyphenate_text_right(text: str) -> str:
     ret = ''
@@ -170,7 +157,6 @@ def hyphenate_text_right(text: str) -> str:
                 break
         ret += SOFT_HYPHEN.join(HYPH.hyphenate(word)) + punct + ' '
     return ret[:-1]
-
 
 def accent_mark(syllables: list[str], accentation: tuple[int, int], cursor: int) -> list[str]:
     preparatory, accents = accentation
@@ -197,7 +183,6 @@ def accent_mark(syllables: list[str], accentation: tuple[int, int], cursor: int)
         cursor -= 1
 
     return syllables
-
 
 def format_psalm(
     psalm: str,

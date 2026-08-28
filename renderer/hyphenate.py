@@ -20,7 +20,6 @@ Patterns = dict[str, str]
 _DIGITS = frozenset('0123456789')
 SOFT_HYPHEN = '­'
 
-
 class Hyphenator:
     def __init__(self, patterns: Patterns, leftmin: int, rightmin: int) -> None:
         self.trie: TrieNode = _create_trie(patterns)
@@ -62,7 +61,6 @@ class Hyphenator:
                 result[-1] += original_characters[i]
         return result
 
-
 def _create_trie(pattern_object: Patterns) -> TrieNode:
     tree: TrieNode = {'_points': []}
     for size_key, blob in pattern_object.items():
@@ -76,7 +74,6 @@ def _create_trie(pattern_object: Patterns) -> TrieNode:
                 node = node.setdefault(char, {})
             node['_points'] = [int(p) if p else 0 for p in points]
     return tree
-
 
 def _split_on_nondigits(pattern: str) -> list[str]:
     # Mirrors JS String.prototype.split(/\D/): splits at every non-digit
