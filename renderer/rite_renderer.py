@@ -51,8 +51,6 @@ FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'cred
 PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio']
 PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta']
 
-_RESPONSORY_PREFIX = re.compile(r'^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)')
-
 def _json_default(value: Any) -> Any:
     # element.get('datum') can contain frozensets (this module works from
     # rite_request()'s raw Python objects, not JSON-round-tripped ones), which
@@ -63,7 +61,7 @@ def _json_default(value: Any) -> Any:
         return sorted(value)
     raise TypeError(f'Object of type {type(value).__name__} is not JSON serializable')
 
-def _js_empty_string_equals(value: Any) -> bool:
+def _is_empty(value: Any) -> bool:
     # Mirrors JS's `x == ''` loose equality where x came from unpack(): true
     # for a literal empty string, or a list that stringifies to '' via
     # Array.prototype.join(',') -- an empty list, or a single-element list
@@ -74,20 +72,6 @@ def _js_empty_string_equals(value: Any) -> bool:
     if isinstance(value, list):
         return ','.join('' if v is None else v for v in value) == ''
     return False
-
-def _uppercase_responsory_prefix(line: str) -> str:
-    match = _RESPONSORY_PREFIX.match(line)
-    pref = match.group(0)
-    return line.replace(pref, pref.upper().replace('BR', 'br'), 1)
-
-def _at(seq: Optional[Union[str, list]], idx: int) -> Any:
-    # JS array/string indexing returns undefined past the end (or before
-    # the start via negative indices going further negative) rather than
-    # raising -- relevant here because a lesson's translation array isn't
-    # always the same length as the lesson's own segment array.
-    if seq is None or not (0 <= idx < len(seq)):
-        return None
-    return seq[idx]
 
 def _split_outside_brackets(text: str) -> list[str]:
     # Mirrors JS's /(?<!\]|\[[^\]]+?)\// -- a variable-width lookbehind
@@ -263,7 +247,14 @@ class RiteRenderer:
                     if trans[i] is None:
                         all_defined = False
                         break
-            translation = [_uppercase_responsory_prefix(line) for line in ''.join(trans).split('\n')] if all_defined else None
+            translation = [
+                line.replace(
+                    pref := re.match(r'^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)', line).group(0),
+                    pref.upper().replace('BR', 'br'),
+                    1,
+                )
+                for line in ''.join(trans).split('\n')
+            ] if all_defined else None
 
         cantus = element.get('cantus')
         if cantus is not None:
@@ -281,7 +272,14 @@ class RiteRenderer:
                     trans[i] = unpack(trans[i])
             cantus = ''.join(trans) if all_defined else None
 
-        new_datum = [_uppercase_responsory_prefix(line) for line in ''.join(unpack(datum)).split('\n')]
+        new_datum = [
+            line.replace(
+                pref := re.match(r'^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)', line).group(0),
+                pref.upper().replace('BR', 'br'),
+                1,
+            )
+            for line in ''.join(unpack(datum)).split('\n')
+        ]
 
         if cantus is not None:
             self.render_gabc(new_datum, quaesitum(element), cantus, translation, parent_tags | element_tags)
@@ -382,21 +380,24 @@ class RiteRenderer:
         else:
             translation = unpack(translation)
 
+        if not isinstance(translation, list) or len(translation) != len(lesson):
+            translation = [None] * len(lesson)
+
         # For the first lesson from a Homily.
         if isinstance(lesson, list) and len(lesson[0]) < 100 and 'Evangélii' in lesson[0]:
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[0], _at(translation, 0), parent_tags | element_tags | {'lectionis-titulum'})
+            self.recurse_rite(lesson[0], translation[0], parent_tags | element_tags | {'lectionis-titulum'})
             self.close_paragraph()
-            self.recurse_rite(lesson[1], _at(translation, 1), frozenset({'evangelium-matutini'}))
+            self.recurse_rite(lesson[1], translation[1], frozenset({'evangelium-matutini'}))
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[2], _at(translation, 2), parent_tags | element_tags | {'lectionis-titulum'})
+            self.recurse_rite(lesson[2], translation[2], parent_tags | element_tags | {'lectionis-titulum'})
             rest = [seg if i == 0 else re.sub(r'\]/', '] ', seg, count=1) for i, seg in enumerate(lesson[3:])]
             rest_translation = ' &para; '.join(translation[3:]) if isinstance(translation, list) and len(translation) > 3 and translation[3] is not None else None
             self.recurse_rite(' &para; '.join(rest), rest_translation, frozenset({'lectio-incipiens'}))
         # Cheeky heuristic to guess if the first item is a title or if this lesson is really some conjoined lessons.
         elif isinstance(lesson, list) and len(lesson[0]) < 100:
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[0], _at(translation, 0), parent_tags | element_tags | {'lectionis-titulum'})
+            self.recurse_rite(lesson[0], translation[0], parent_tags | element_tags | {'lectionis-titulum'})
             self.close_paragraph()
             rest_translation = ' &para; '.join(translation[1:]) if isinstance(translation, list) and len(translation) > 1 and translation[1] is not None else None
             tag = 'lectio-incipiens' if 'lectio-i' in element_tags else 'lectio-sequens'
@@ -435,7 +436,7 @@ class RiteRenderer:
         self.open_paragraph('martyrologium')
         self.append_text(unpack(datum[0]) + ' ' + unpack(datum[1]))
         prae = unpack(datum[2])
-        if not _js_empty_string_equals(prae):
+        if not _is_empty(prae):
             self.open_paragraph('martyrologium')
             self.append_text(prae)
         martyrology = unpack(datum[3])
@@ -526,7 +527,7 @@ class RiteRenderer:
                 self.antiphon_mode = None
                 self.antiphon_clef = None
 
-        if _js_empty_string_equals(unpack(element)):
+        if _is_empty(unpack(element)):
             return
 
         self.do_headering(element, uniquelyhas)
