@@ -16,9 +16,11 @@
 # for later cache hits.
 #
 # JS truthiness treats empty arrays/dicts as truthy (only None/''/0/False
-# are falsy); Python treats empty containers as falsy. _truthy() below
-# replicates JS semantics wherever a value that might be a list/dict (not
-# just a plain flag or string) is checked in a boolean context.
+# are falsy); Python treats empty containers as falsy. Every value checked
+# for JS-style truthiness in this module is a RiteNode/Translation (str,
+# list, dict, or None -- never a bare int/float/bool), so `x is not None
+# and x != ''` (an empty list or dict is deliberately left truthy) replaces
+# what a generic _truthy() helper would otherwise do, at each such check.
 
 import json
 import re
@@ -51,7 +53,6 @@ PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce
 
 _RESPONSORY_PREFIX = re.compile(r'^(?:R\.\sbr\.\s|R\.\s|V\.\s|)(.)')
 
-
 def _json_default(value: Any) -> Any:
     # element.get('datum') can contain frozensets (this module works from
     # rite_request()'s raw Python objects, not JSON-round-tripped ones), which
@@ -61,7 +62,6 @@ def _json_default(value: Any) -> Any:
     if isinstance(value, (set, frozenset)):
         return sorted(value)
     raise TypeError(f'Object of type {type(value).__name__} is not JSON serializable')
-
 
 def _js_empty_string_equals(value: Any) -> bool:
     # Mirrors JS's `x == ''` loose equality where x came from unpack(): true
@@ -75,22 +75,10 @@ def _js_empty_string_equals(value: Any) -> bool:
         return ','.join('' if v is None else v for v in value) == ''
     return False
 
-
-def _truthy(value: Any) -> bool:
-    if value is None or value is False:
-        return False
-    if isinstance(value, str):
-        return value != ''
-    if isinstance(value, (int, float)):
-        return value != 0
-    return True
-
-
 def _uppercase_responsory_prefix(line: str) -> str:
     match = _RESPONSORY_PREFIX.match(line)
     pref = match.group(0)
     return line.replace(pref, pref.upper().replace('BR', 'br'), 1)
-
 
 def _at(seq: Optional[Union[str, list]], idx: int) -> Any:
     # JS array/string indexing returns undefined past the end (or before
@@ -100,7 +88,6 @@ def _at(seq: Optional[Union[str, list]], idx: int) -> Any:
     if seq is None or not (0 <= idx < len(seq)):
         return None
     return seq[idx]
-
 
 def _split_outside_brackets(text: str) -> list[str]:
     # Mirrors JS's /(?<!\]|\[[^\]]+?)\// -- a variable-width lookbehind
@@ -125,7 +112,6 @@ def _split_outside_brackets(text: str) -> list[str]:
         prev = ch
     parts.append(current)
     return parts
-
 
 class RiteRenderer:
     def __init__(self, resources: Resources) -> None:
@@ -177,7 +163,7 @@ class RiteRenderer:
         self._emit(f'<p class="rite-text-rubric rite-text-rubric-above-paragraph">{annot}</p>')
 
     def append_text(self, text: str, translation: Translation = None) -> None:
-        if not _truthy(translation):
+        if translation is None:
             translation = ''
         self.left_buffer.append(string_render(text))
         self.right_buffer.append(string_render(translation))
@@ -193,7 +179,7 @@ class RiteRenderer:
         self.open_div('', 'gabc-chant-container')
         self.open_div('', 'gabc-chant')
         cantus_unpack = unpack(cantus)
-        if not _truthy(translation):
+        if translation is None:
             translation_string = ''
         elif isinstance(translation, str):
             translation_string = translation
@@ -212,9 +198,9 @@ class RiteRenderer:
     def do_headering(self, element: Union[str, list, dict, None], uniquelyhas: Callable[[str], bool]) -> None:
         # Apply headers (added during a superimposition step) where relevant.
         caput = element.get('caput') if isinstance(element, dict) else None
-        if _truthy(caput) and any(t not in ('caput', 'sectio', 'annotatio') and uniquelyhas(t) for t in tags(caput)):
+        if caput is not None and any(t not in ('caput', 'sectio', 'annotatio') and uniquelyhas(t) for t in tags(caput)):
             header = unpack(caput)
-            if not _truthy(header) or isinstance(header, list):
+            if header is None or isinstance(header, list):
                 return
             caput_tags = tags(caput)
             if 'annotatio' in caput_tags:
@@ -242,7 +228,7 @@ class RiteRenderer:
 
         cantus = element.get('cantus')
         working_element = element
-        if _truthy(cantus):
+        if cantus is not None:
             datum = element['datum']
             self.render_gabc(datum[0], quaesitum(element), cantus, translation, parent_tags | element_tags)
             working_element = {**element, 'datum': datum[1:]}
@@ -266,11 +252,11 @@ class RiteRenderer:
             self.close_paragraph()
             return True
 
-        if _truthy(translation):
+        if translation is not None:
             trans = unpack(translation)
             all_defined = True
             for i in range(len(trans)):
-                if not _truthy(trans[i]):
+                if trans[i] is None:
                     resp = claw(datum[i])
                     if 'translation' in resp:
                         trans[i] = unpack(resp['translation'])
@@ -280,7 +266,7 @@ class RiteRenderer:
             translation = [_uppercase_responsory_prefix(line) for line in ''.join(trans).split('\n')] if all_defined else None
 
         cantus = element.get('cantus')
-        if _truthy(cantus):
+        if cantus is not None:
             trans = unpack(cantus)
             all_defined = True
             for i in range(len(trans)):
@@ -297,7 +283,7 @@ class RiteRenderer:
 
         new_datum = [_uppercase_responsory_prefix(line) for line in ''.join(unpack(datum)).split('\n')]
 
-        if _truthy(cantus):
+        if cantus is not None:
             self.render_gabc(new_datum, quaesitum(element), cantus, translation, parent_tags | element_tags)
             return True
 
@@ -331,7 +317,7 @@ class RiteRenderer:
         self.make_heading_annotation(formatted.split('\n')[0][1:-1])
         new_datum = re.sub(r'^\[.+?]\n\d+\s', '', formatted, count=1).split('\n')
 
-        if _truthy(translation):
+        if translation is not None:
             translation = re.sub(
                 r'\[.+?]\n', '\n',
                 re.sub(r'^\[.+?]\n\d+\s', '', format_psalm(unpack(translation)), count=1),
@@ -353,12 +339,12 @@ class RiteRenderer:
             return False
 
         lesson = unpack(element)
-        if not _truthy(translation):
+        if translation is None:
             datum = element.get('datum') if isinstance(element, dict) else None
             if isinstance(datum, dict) and 'translation' in datum:
                 translation = unpack(datum['translation'])
             elif isinstance(lesson, list):
-                translation = [''] * len(lesson)
+                translation = [None] * len(lesson)
 
         element_quaesitum = quaesitum(element)
 
@@ -405,21 +391,21 @@ class RiteRenderer:
             self.open_paragraph('lectionis-titulum')
             self.recurse_rite(lesson[2], _at(translation, 2), parent_tags | element_tags | {'lectionis-titulum'})
             rest = [seg if i == 0 else re.sub(r'\]/', '] ', seg, count=1) for i, seg in enumerate(lesson[3:])]
-            rest_translation = ' &para; '.join(translation[3:]) if isinstance(translation, list) and _truthy(translation[3] if len(translation) > 3 else None) else None
+            rest_translation = ' &para; '.join(translation[3:]) if isinstance(translation, list) and len(translation) > 3 and translation[3] is not None else None
             self.recurse_rite(' &para; '.join(rest), rest_translation, frozenset({'lectio-incipiens'}))
         # Cheeky heuristic to guess if the first item is a title or if this lesson is really some conjoined lessons.
         elif isinstance(lesson, list) and len(lesson[0]) < 100:
             self.open_paragraph('lectionis-titulum')
             self.recurse_rite(lesson[0], _at(translation, 0), parent_tags | element_tags | {'lectionis-titulum'})
             self.close_paragraph()
-            rest_translation = ' &para; '.join(translation[1:]) if isinstance(translation, list) and len(translation) > 1 and _truthy(translation[1]) else None
+            rest_translation = ' &para; '.join(translation[1:]) if isinstance(translation, list) and len(translation) > 1 and translation[1] is not None else None
             tag = 'lectio-incipiens' if 'lectio-i' in element_tags else 'lectio-sequens'
             self.recurse_rite(' &para; '.join(lesson[1:]), rest_translation, frozenset({tag}))
         # Note that an untitled lesson may still be a first lesson. This is due to the fact that most Saints lives are begun without title.
         else:
             if isinstance(lesson, list):
                 joined_translation = None
-                if isinstance(translation, list) and _truthy(translation[0] if translation else None):
+                if isinstance(translation, list) and translation and translation[0] is not None:
                     joined_translation = ' &para; '.join(translation)
                 lesson = ' &para; '.join(lesson)
                 translation = joined_translation
@@ -473,17 +459,17 @@ class RiteRenderer:
         self.open_div('', 'invitatorium')
         datum = element['datum']
         # The first instance of the Invitatory antiphon has to be rendered first in order to define antiphonMode.
-        self.recurse_rite(datum[0], translation[0] if _truthy(translation) else None, parent_tags | element_tags)
+        self.recurse_rite(datum[0], translation[0] if translation is not None else None, parent_tags | element_tags)
         inv_index = 0
         invitatorium = self.resources.get('invitatoria', {}).get(self.antiphon_mode)
         for i in range(1, len(datum)):
             if isinstance(datum[i], dict):
-                self.recurse_rite(datum[i], translation[i] if _truthy(translation) else None, parent_tags | element_tags)
+                self.recurse_rite(datum[i], translation[i] if translation is not None else None, parent_tags | element_tags)
             elif invitatorium:
-                self.render_gabc(datum[i], quaesitum(element), invitatorium[inv_index], translation[i] if _truthy(translation) else None, parent_tags)
+                self.render_gabc(datum[i], quaesitum(element), invitatorium[inv_index], translation[i] if translation is not None else None, parent_tags)
                 inv_index += 1
             else:
-                self.recurse_rite(datum[i], translation[i] if _truthy(translation) else None, parent_tags | element_tags)
+                self.recurse_rite(datum[i], translation[i] if translation is not None else None, parent_tags | element_tags)
         self.close_div()
         return True
 
@@ -500,7 +486,7 @@ class RiteRenderer:
         # Splits lines denoted by /, but ignores </ (pre-formatted html indicator) or ]/ (annotation).
         if isinstance(element, str) and re.search(r'(?<!\]|<)/', element):
             element = re.split(r'(?<!\]|<)/', element)
-            if _truthy(translation):
+            if translation is not None:
                 translation = _split_outside_brackets(translation)
 
         if isinstance(element, list):
@@ -529,7 +515,7 @@ class RiteRenderer:
             return
 
         # These checks are done before removing empty items since empty antiphons can still confer tone upon the following Psalms.
-        if 'antiphona' in tags(element) and 'cantus' in element and _truthy(element.get('cantus')):
+        if 'antiphona' in tags(element) and 'cantus' in element and element.get('cantus') is not None:
             cantus_unpacked = unpack(element['cantus'])
             mode_match = re.search(r'mode:(.+?)(?:;|\n)', cantus_unpacked)
             clef_match = re.search(r'^\((.+?)\)', cantus_unpacked.replace('%%', '\n%%\n'), re.MULTILINE)
@@ -584,7 +570,6 @@ class RiteRenderer:
                 self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
                 return
         self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
-
 
 def render_rite(date: str, rite: dict[str, Any], resources: Resources) -> str:
     # dateHeader() and riteTitle() are never called except immediately
