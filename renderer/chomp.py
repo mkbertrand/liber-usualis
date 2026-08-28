@@ -15,7 +15,6 @@ import re
 from typing import Any
 
 from renderer.psalmify import get_psalm_tone
-from renderer.rendering_utils import TagSet
 
 
 def _search_index(text: str, pattern: str, flags: re.RegexFlag = re.RegexFlag(0)) -> int:
@@ -23,7 +22,7 @@ def _search_index(text: str, pattern: str, flags: re.RegexFlag = re.RegexFlag(0)
     return m.start() if m else -1
 
 
-def chomp(gabc: str, tags: TagSet, resources: dict[str, Any]) -> str:
+def chomp(gabc: str, tags: frozenset[str], resources: dict[str, Any]) -> str:
     gabc = gabc.replace('<v>\\greheightstar</v>', '*', 1)
 
     mode_match = re.search(r'mode:(.+?)(?:;|\n)', gabc)

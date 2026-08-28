@@ -8,85 +8,14 @@
 import re
 from typing import Any, Union
 
-# A composed rite tree node: a literal string leaf, a list of sibling nodes,
-# a dict node ({'tags', 'datum', 'quaesitum'?, 'cantus'?, 'caput'?,
-# 'translation'?}), or absent/None.
-RiteNode = Union[str, list, dict, None]
-
-
-# TEMPORARY, for testing: stands in for plain frozenset as the TagSet
-# representation. A plain frozenset's iteration order is CPython's internal
-# hash-bucket order, unrelated to insertion order; the JS original combines
-# tags with a `Set`, whose `.union()` (see the ES2024 polyfill in
-# frontend/tests/setup.mjs) deterministically preserves the receiver's
-# existing order followed by the argument's new-only elements in the
-# argument's order. Since several places in rite_renderer.py join a TagSet
-# directly into a `class="..."` HTML attribute, the hash-order mismatch was
-# producing systematically different (though functionally inert) class
-# token order from the JS renderer on every rendered rite. TagSet replicates
-# frozenset's interface (membership, isdisjoint, issuperset, union via `|`)
-# while preserving JS Set.union's ordering semantics, so `class="..."`
-# output can be verified byte-for-byte against the JS renderer.
-class TagSet:
-    __slots__ = ('_order', '_members')
-
-    def __init__(self, iterable: Any = ()) -> None:
-        order: list[str] = []
-        members: set = set()
-        for item in iterable:
-            if item not in members:
-                members.add(item)
-                order.append(item)
-        self._order: tuple = tuple(order)
-        self._members: frozenset = frozenset(members)
-
-    def __iter__(self):
-        return iter(self._order)
-
-    def __contains__(self, item: Any) -> bool:
-        return item in self._members
-
-    def __len__(self) -> int:
-        return len(self._order)
-
-    def __bool__(self) -> bool:
-        return bool(self._order)
-
-    def __or__(self, other: Any) -> 'TagSet':
-        return TagSet(self._order + tuple(other))
-
-    def __ror__(self, other: Any) -> 'TagSet':
-        return TagSet(tuple(other) + self._order)
-
-    def isdisjoint(self, other: Any) -> bool:
-        return self._members.isdisjoint(other)
-
-    def issuperset(self, other: Any) -> bool:
-        return self._members.issuperset(other)
-
-    def __eq__(self, other: Any) -> bool:
-        if isinstance(other, TagSet):
-            return self._members == other._members
-        try:
-            return self._members == frozenset(other)
-        except TypeError:
-            return NotImplemented
-
-    def __hash__(self) -> int:
-        return hash(self._members)
-
-    def __repr__(self) -> str:
-        return f'TagSet({self._order!r})'
-
 MONTHS = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maji', 'Junii', 'Julii', 'Augusti', 'Septembris', 'Octobris', 'Novembris', 'Decembris']
-
 
 def date_header(date: str) -> str:
     year, month, day = date.split('-')
     return f'<h4 class="date-header">Die {int(day)} {MONTHS[(int(month) - 1) % 12]} {year}.</h4>'
 
 
-def rite_title(title: str, tagset: TagSet, size: str = 'large') -> str:
+def rite_title(title: str, tagset: frozenset[str], size: str = 'large') -> str:
     if size == 'small':
         return f'<h1 class="small-title">{title}</h1>'
 
@@ -188,20 +117,20 @@ def string_render(text: str) -> str:
     return text
 
 
-def tags(element: RiteNode) -> TagSet:
+def tags(element: Union[str, list, dict, None]) -> frozenset[str]:
     if isinstance(element, dict):
-        return TagSet(element.get('tags') or ())
-    return TagSet()
+        return frozenset(element.get('tags') or ())
+    return frozenset()
 
 
-def quaesitum(element: RiteNode) -> TagSet:
+def quaesitum(element: Union[str, list, dict, None]) -> frozenset[str]:
     if isinstance(element, dict) and 'quaesitum' in element:
-        return TagSet(element['quaesitum'])
+        return frozenset(element['quaesitum'])
     return tags(element)
 
 
 # It can be readily observed that this is just an extremely primitive version of render_rite().
-def unpack(data: RiteNode) -> Union[str, list, None]:
+def unpack(data: Union[str, list, dict, None]) -> Union[str, list, None]:
     if isinstance(data, str):
         return data
     if data is None:
