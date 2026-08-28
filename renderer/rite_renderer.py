@@ -28,6 +28,8 @@ from renderer.rendering_utils import (
     RiteNode,
     TagSet,
     abbreviate_name,
+    date_header,
+    rite_title,
     rubric_render,
     string_render,
     tags,
@@ -587,7 +589,12 @@ class RiteRenderer:
         self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
 
 
-def render_rite(rite: dict[str, Any], resources: Resources) -> str:
+def render_rite(date: str, rite: dict[str, Any], resources: Resources) -> str:
+    # dateHeader() and riteTitle() are never called except immediately
+    # before renderRite() (see pray-window.js's getRite()), so that
+    # orchestration lives here rather than being left for every caller to
+    # repeat.
     renderer = RiteRenderer(resources)
     renderer.recurse_rite(rite['text'], None, TagSet())
-    return ''.join(renderer.rite)
+    title, title_tags = rite['used-primary']
+    return date_header(date) + rite_title(title, title_tags, 'large') + ''.join(renderer.rite)
