@@ -114,23 +114,8 @@ def daytags(vesperal = False):
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/api/composer')
-def rite():
+def composer():
     try:
-        rites = request.query.get('rites', None)
-        if rites:
-            ret = []
-            rites = rites.split('_')
-            for rite in rites:
-                ritesplit = rite.split('.')
-                ret.append(datamanage.rite_request(
-                    request.query.get('date'),
-                    ritesplit[0],
-                    request.query.get('opt', ''),
-                    ritesplit[2],
-                    request.query.get('translation', 'none'),
-                    request.query.get('votives', '')
-                ))
-            return util.dump_data(ret)
         return util.dump_data(datamanage.rite_request(
             request.query.get('date'),
             request.query.get('rite'),
@@ -139,6 +124,22 @@ def rite():
             request.query.get('translation', 'none'),
             request.query.get('votives', '')
         ))
+    except Exception as e:
+        traceback.print_exc()
+        print(e)
+        abort(500, error500tpl('Error incognitus.'))
+
+RESOURCES = dict()
+with open('data/generated/liber-usualis-chant/nocturnale/untagged/invitatoria.json', 'r') as f:
+    RESOURCES['invitatoria'] = json.loads(f.read())
+with open('data/generated/liber-usualis-chant/untagged/toni-psalmorum.json', 'r') as f:
+    RESOURCES['psalmTones'] = json.loads(f.read())
+
+@get('/api/rite')
+def rite() -> str:
+    from renderer import render_rite
+    try:
+        return render_rite(request.query.get('date'), datamanage.rite_request(request.query.get('date'), request.query.get('rite'), request.query.get('opt', ''), request.query.get('select', 'primarium'), request.query.get('translation', 'none'), request.query.get('votives', '')), RESOURCES)
     except Exception as e:
         traceback.print_exc()
         print(e)
