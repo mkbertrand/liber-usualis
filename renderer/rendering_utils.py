@@ -111,16 +111,6 @@ def string_render(text: str) -> str:
     text = re.sub(r'\[(.+?)\]', r"<span class='rite-text-rubric'>\1</span>", text)
     return text
 
-def tags(element: Union[str, list, dict, None]) -> frozenset[str]:
-    if isinstance(element, dict):
-        return frozenset(element.get('tags') or ())
-    return frozenset()
-
-def quaesitum(element: Union[str, list, dict, None]) -> frozenset[str]:
-    if isinstance(element, dict) and 'quaesitum' in element:
-        return frozenset(element['quaesitum'])
-    return tags(element)
-
 # It can be readily observed that this is just an extremely primitive version of render_rite().
 def unpack(data: Union[str, list, dict, None]) -> Union[str, list, None]:
     if isinstance(data, str):

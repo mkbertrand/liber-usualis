@@ -34,8 +34,6 @@ from renderer.rendering_utils import (
     rite_title,
     rubric_render,
     string_render,
-    tags,
-    quaesitum,
     unpack,
     claw,
 )
@@ -184,25 +182,22 @@ class RiteRenderer:
     def do_headering(self, element: Union[str, list, dict, None], uniquelyhas: Callable[[str], bool]) -> None:
         # Apply headers (added during a superimposition step) where relevant.
         caput = element.get('caput') if isinstance(element, dict) else None
-        if caput is not None and any(t not in ('caput', 'sectio', 'annotatio') and uniquelyhas(t) for t in tags(caput)):
+        if caput is not None and any(t not in ('caput', 'sectio', 'annotatio') and uniquelyhas(t) for t in caput['tags']):
             header = unpack(caput)
             if header is None or isinstance(header, list):
                 return
-            caput_tags = tags(caput)
-            if 'annotatio' in caput_tags:
+            if 'annotatio' in caput['tags']:
                 self.make_heading_annotation(abbreviate_name(header))
-            elif 'sectio' in caput_tags:
+            elif 'sectio' in caput['tags']:
                 self.make_centered_header(header, 'section-header')
             else:
                 self.make_centered_header(header)
 
     def try_hymn(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        element_tags = tags(element)
-
         def uniquely_has_bottom(tag: str) -> bool:
-            return tag in element_tags and tag not in tags(element.get('datum'))
+            return tag in element['tags'] and not (isinstance(element['datum'], dict) and tag in element['datum']['tags'])
 
-        if not uniquely_has_bottom('hymnus') or 'te-deum' in element_tags:
+        if not uniquely_has_bottom('hymnus') or 'te-deum' in element['tags']:
             return False
 
         unpacked = unpack(element)
@@ -216,7 +211,7 @@ class RiteRenderer:
         working_element = element
         if cantus is not None:
             datum = element['datum']
-            self.render_gabc(datum[0], quaesitum(element), cantus, translation, parent_tags | element_tags)
+            self.render_gabc(datum[0], element['quaesitum'], cantus, translation, parent_tags | element['tags'])
             working_element = {**element, 'datum': datum[1:]}
 
         for i in unpack(working_element):
@@ -226,14 +221,13 @@ class RiteRenderer:
         return True
 
     def try_responsory(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        element_tags = tags(element)
-        if not (('responsorium' in element_tags or 'responsorium-breve' in element_tags) and isinstance(element.get('datum'), list)):
+        if not (('responsorium' in element['tags'] or 'responsorium-breve' in element['tags']) and isinstance(element.get('datum'), list)):
             return False
 
         datum = element['datum']
 
         if isinstance(datum[1], str):
-            self.open_paragraph(' '.join(element_tags))
+            self.open_paragraph(' '.join(element['tags']))
             self.append_text(datum[1].replace(", 'incipit'", ''))
             self.close_paragraph()
             return True
@@ -284,12 +278,12 @@ class RiteRenderer:
         ]
 
         if cantus is not None:
-            self.render_gabc(new_datum, quaesitum(element), cantus, translation, parent_tags | element_tags)
+            self.render_gabc(new_datum, element['quaesitum'], cantus, translation, parent_tags | element['tags'])
             return True
 
-        self.open_paragraph(' '.join(element_tags))
+        self.open_paragraph(' '.join(element['tags']))
         # We're ok with nested responsories.
-        self.recurse_rite(new_datum, translation, parent_tags | element_tags)
+        self.recurse_rite(new_datum, translation, parent_tags | element['tags'])
         self.close_paragraph()
         return True
 
@@ -300,17 +294,16 @@ class RiteRenderer:
             or 'cantus' not in element
             or element.get('cantus') is None
             or (
-                not quaesitum(element).isdisjoint({'antiphona', 'hymnus'})
+                not element['quaesitum'].isdisjoint({'antiphona', 'hymnus'})
                 and '"cantus"' in json.dumps(element.get('datum'), ensure_ascii=False, default=_json_default)
             )
         ):
             return False
-        self.render_gabc(element['datum'], quaesitum(element), element['cantus'], translation, parent_tags | tags(element))
+        self.render_gabc(element['datum'], element['quaesitum'], element['cantus'], translation, parent_tags | element['tags'])
         return True
 
     def try_psalmify(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        element_tags = element.get('tags') or ()
-        if '/psalmi/' not in ' '.join(element_tags):
+        if '/psalmi/' not in ' '.join(element['tags']):
             return False
 
         formatted = format_psalm(element['datum'], self.resources, self.antiphon_mode, self.antiphon_clef)
@@ -324,18 +317,17 @@ class RiteRenderer:
             ).split('\n')
 
         extra_tag = 'textus-psalmi-precibus' if 'preces' in parent_tags else 'textus-psalmi'
-        new_element = {**element, 'tags': frozenset(element_tags) | {extra_tag}}
+        new_element = {**element, 'tags': frozenset(element['tags']) | {extra_tag}}
 
-        self.recurse_rite(new_datum, translation, parent_tags | tags(new_element))
+        self.recurse_rite(new_datum, translation, parent_tags | new_element['tags'])
         return True
 
     def try_lesson(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        element_tags = tags(element)
 
         def uniquely_has_bottom(tag: str) -> bool:
-            return tag in element_tags and tag not in tags(element.get('datum'))
+            return tag in element['tags'] and not (isinstance(element['datum'], dict) and tag in element['datum']['tags'])
 
-        if not uniquely_has_bottom('lectio') or 'commemoratio-matutini' in tags(element.get('datum')):
+        if not uniquely_has_bottom('lectio') or (isinstance(element['datum'], dict) and 'commemoratio-matutini' in element['datum']['tags']):
             return False
 
         lesson = unpack(element)
@@ -346,7 +338,7 @@ class RiteRenderer:
             elif isinstance(lesson, list):
                 translation = [None] * len(lesson)
 
-        element_quaesitum = quaesitum(element)
+        element_quaesitum = element['quaesitum']
 
         # For the Lamentations of the Sacred Triduum.
         if element_quaesitum.issuperset({'sabbatum-sanctum', 'nocturna-i', 'lectio-iii'}):
@@ -354,7 +346,7 @@ class RiteRenderer:
             self.append_text(lesson[0])
             self.close_paragraph()
             self.open_paragraph('lectio-sequens')
-            self.recurse_rite(lesson[1] + '/' + lesson[2], None, parent_tags | element_tags | {'lectio-sequens'})
+            self.recurse_rite(lesson[1] + '/' + lesson[2], None, parent_tags | element['tags'] | {'lectio-sequens'})
             self.close_paragraph()
             return True
         elif element_quaesitum.issuperset({'triduum', 'nocturna-i'}):
@@ -377,7 +369,7 @@ class RiteRenderer:
             return True
 
         datum = element.get('datum')
-        if isinstance(datum, list) and all('lectio' in tags(item) for item in datum):
+        if isinstance(datum, list) and all(isinstance(item, dict) and 'lectio' in item['tags'] for item in datum):
             translation = unpack([item.get('translation') if isinstance(item, dict) and 'translation' in item else None for item in datum])
         else:
             translation = unpack(translation)
@@ -388,21 +380,21 @@ class RiteRenderer:
         # For the first lesson from a Homily.
         if isinstance(lesson, list) and len(lesson[0]) < 100 and 'Evangélii' in lesson[0]:
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[0], translation[0], parent_tags | element_tags | {'lectionis-titulum'})
+            self.recurse_rite(lesson[0], translation[0], parent_tags | element['tags'] | {'lectionis-titulum'})
             self.close_paragraph()
             self.recurse_rite(lesson[1], translation[1], frozenset({'evangelium-matutini'}))
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[2], translation[2], parent_tags | element_tags | {'lectionis-titulum'})
+            self.recurse_rite(lesson[2], translation[2], parent_tags | element['tags'] | {'lectionis-titulum'})
             rest = [seg if i == 0 else re.sub(r'\]/', '] ', seg, count=1) for i, seg in enumerate(lesson[3:])]
             rest_translation = ' &para; '.join(translation[3:]) if isinstance(translation, list) and len(translation) > 3 and translation[3] is not None else None
             self.recurse_rite(' &para; '.join(rest), rest_translation, frozenset({'lectio-incipiens'}))
         # Cheeky heuristic to guess if the first item is a title or if this lesson is really some conjoined lessons.
         elif isinstance(lesson, list) and len(lesson[0]) < 100:
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[0], translation[0], parent_tags | element_tags | {'lectionis-titulum'})
+            self.recurse_rite(lesson[0], translation[0], parent_tags | element['tags'] | {'lectionis-titulum'})
             self.close_paragraph()
             rest_translation = ' &para; '.join(translation[1:]) if isinstance(translation, list) and len(translation) > 1 and translation[1] is not None else None
-            tag = 'lectio-incipiens' if 'lectio-i' in element_tags else 'lectio-sequens'
+            tag = 'lectio-incipiens' if 'lectio-i' in element['tags'] else 'lectio-sequens'
             self.recurse_rite(' &para; '.join(lesson[1:]), rest_translation, frozenset({tag}))
         # Note that an untitled lesson may still be a first lesson. This is due to the fact that most Saints lives are begun without title.
         else:
@@ -413,26 +405,25 @@ class RiteRenderer:
                 lesson = ' &para; '.join(lesson)
                 translation = joined_translation
             self.close_paragraph()
-            tag = 'lectio-incipiens' if 'lectio-i' in element_tags else 'lectio-sequens'
+            tag = 'lectio-incipiens' if 'lectio-i' in element['tags'] else 'lectio-sequens'
             self.recurse_rite(lesson, translation, frozenset({tag}))
         return True
 
     def try_commemorations(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        element_tags = tags(element)
-        if 'commemorationes' not in element_tags:
+        if 'commemorationes' not in element['tags']:
             return False
         datum = element['datum']
         for i in range(len(datum) - 1):
             self.open_div('', 'formula-commemorationis')
-            self.recurse_rite(datum[i], translation, parent_tags | element_tags)
+            self.recurse_rite(datum[i], translation, parent_tags | element['tags'])
             if i != len(datum) - 2:
                 self.close_div()
-        self.recurse_rite(datum[-1], translation, parent_tags | element_tags)
+        self.recurse_rite(datum[-1], translation, parent_tags | element['tags'])
         self.close_div()
         return True
 
     def try_martyrology(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        if 'martyrologium' not in tags(element):
+        if 'martyrologium' not in element['tags']:
             return False
         datum = element['datum']
         self.open_paragraph('martyrologium')
@@ -456,30 +447,29 @@ class RiteRenderer:
         return True
 
     def try_invitatory(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
-        element_tags = tags(element)
-        if 'invitatorium' not in element_tags:
+        if 'invitatorium' not in element['tags']:
             return False
         self.open_div('', 'invitatorium')
         datum = element['datum']
         # The first instance of the Invitatory antiphon has to be rendered first in order to define antiphonMode.
-        self.recurse_rite(datum[0], translation[0] if translation is not None else None, parent_tags | element_tags)
+        self.recurse_rite(datum[0], translation[0] if translation is not None else None, parent_tags | element['tags'])
         inv_index = 0
         invitatorium = self.resources.get('invitatoria', {}).get(self.antiphon_mode)
         for i in range(1, len(datum)):
             if isinstance(datum[i], dict):
-                self.recurse_rite(datum[i], translation[i] if translation is not None else None, parent_tags | element_tags)
+                self.recurse_rite(datum[i], translation[i] if translation is not None else None, parent_tags | element['tags'])
             elif invitatorium:
-                self.render_gabc(datum[i], quaesitum(element), invitatorium[inv_index], translation[i] if translation is not None else None, parent_tags)
+                self.render_gabc(datum[i], element['quaesitum'], invitatorium[inv_index], translation[i] if translation is not None else None, parent_tags)
                 inv_index += 1
             else:
-                self.recurse_rite(datum[i], translation[i] if translation is not None else None, parent_tags | element_tags)
+                self.recurse_rite(datum[i], translation[i] if translation is not None else None, parent_tags | element['tags'])
         self.close_div()
         return True
 
     def recurse_rite(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> None:
         # Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
         def uniquelyhas(tag: str, tagset: Optional[frozenset[str]] = None) -> bool:
-            tagset = tagset if tagset is not None else tags(element)
+            tagset = tagset if tagset is not None else element['tags']
             return tag in tagset and tag not in parent_tags
 
         if isinstance(element, dict) and 'translation' in element:
@@ -517,12 +507,14 @@ class RiteRenderer:
             self.append_text(element, translation)
             return
 
+        if not 'quaesitum' in element:
+            element['quaesitum'] = element['tags']
         # These checks are done before removing empty items since empty antiphons can still confer tone upon the following Psalms.
-        if 'antiphona' in tags(element) and 'cantus' in element and element.get('cantus') is not None:
+        if 'antiphona' in element['tags'] and 'cantus' in element and element.get('cantus') is not None:
             cantus_unpacked = unpack(element['cantus'])
             mode_match = re.search(r'mode:(.+?)(?:;|\n)', cantus_unpacked)
             clef_match = re.search(r'^\((.+?)\)', cantus_unpacked.replace('%%', '\n%%\n'), re.MULTILINE)
-            if mode_match and clef_match and 'repetita' not in quaesitum(element):
+            if mode_match and clef_match and 'repetita' not in element['quaesitum']:
                 self.antiphon_mode = mode_match.group(1)
                 self.antiphon_clef = clef_match.group(1)
             else:
@@ -553,26 +545,26 @@ class RiteRenderer:
         for name in DIVED_ELEMENTS:
             if uniquelyhas(name):
                 self.open_div('', name)
-                self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
+                self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
                 self.close_div()
                 return
         for name in FULLY_PARAGRAPHED_ELEMENTS:
-            if uniquelyhas(name) and 'dominus-det' not in tags(element):
-                self.open_paragraph(' '.join(tags(element) | parent_tags))
-                self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
+            if uniquelyhas(name) and 'dominus-det' not in element['tags']:
+                self.open_paragraph(' '.join(parent_tags | element['tags']))
+                self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
                 self.close_paragraph()
                 return
         for name in PARAGRAPH_CLOSING_ELEMENTS:
             if uniquelyhas(name):
-                self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
+                self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
                 self.close_paragraph()
                 return
         for name in PARAGRAPH_OPENING_ELEMENTS:
             if uniquelyhas(name):
-                self.open_paragraph(' '.join(tags(element) | parent_tags))
-                self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
+                self.open_paragraph(' '.join(parent_tags | element['tags']))
+                self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
                 return
-        self.recurse_rite(element.get('datum'), translation, parent_tags | tags(element))
+        self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
 
 def render_rite(date: str, rite: dict[str, Any], resources: Resources) -> str:
     # dateHeader() and riteTitle() are never called except immediately
