@@ -98,7 +98,7 @@ before making non-trivial backend, frontend, or data-shape changes.
   obvious, inspect the repository and use the smallest command that validates the
   changed behavior.
 - For data-only changes, validate that affected JSON parses and that representative
-  `/day` or `/rite` generation paths still resolve without ambiguity.
+  `/api/ordo` or `/api/composer` generation paths still resolve without ambiguity.
 - Do not run any nix builds or nix check commands unless part of debugging an issue related to the requested change, they will be manually verified by the developer after the changes are made.
 
 ## Change Discipline
@@ -113,3 +113,8 @@ before making non-trivial backend, frontend, or data-shape changes.
 - Before considering work complete, check that the change preserves functional
   purity where practical, keeps side effects at boundaries, and does not hard-code
   liturgical decisions that belong in data.
+
+## Convention
+- Do not use idiomatic, creative, or imaginative names for variables, functions, etc. Use names that follow convention.
+- For CSS variables and HTML class names and ids, use names that clearly describe function.
+- For Python code, include type hints wherever relevant.
