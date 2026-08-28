@@ -1,0 +1,243 @@
+# Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+#
+# Python port of frontend/rite-renderer/psalmify.js. A few JS/Python semantic
+# gaps are handled explicitly rather than left to translate implicitly:
+#   - JS array indexing with a negative or out-of-range index yields
+#     `undefined` (reads) or is a silent no-op (writes); Python would instead
+#     wrap around (reads) or raise (out-of-range writes on some structures).
+#     _at()/_wrap_at() below replicate the JS "out of bounds -> nothing"
+#     behavior exactly rather than letting Python's own indexing rules apply.
+#   - JS's `.replace(str, ...)` (no /g flag) replaces only the first
+#     occurrence, unlike Python's str.replace() which replaces all by
+#     default -- every such call below passes count=1 to match.
+#   - JS's `.indexOf()` returns -1 when not found, unlike Python's
+#     list.index() which raises; _index_of() below matches JS.
+
+import math
+import re
+from typing import Any, Optional, Union
+
+from renderer.hyphenate import Hyphenator
+from renderer.la_hypher import PATTERNS, LEFTMIN, RIGHTMIN
+
+SOFT_HYPHEN = '­'
+
+HYPH = Hyphenator(PATTERNS, LEFTMIN, RIGHTMIN)
+
+# One "tone" resolved for a psalm: initium/tenor/flexa/medians/terminatio,
+# each a list of GABC pitch-letter syllable strings.
+PsalmTone = dict[str, list[str]]
+
+
+def _at(seq: list, idx: int) -> Any:
+    if 0 <= idx < len(seq):
+        return seq[idx]
+    return None
+
+
+def _wrap_at(seq: list[str], idx: int, css_class: str) -> None:
+    if 0 <= idx < len(seq):
+        seq[idx] = f'<span class="{css_class}">{seq[idx]}</span>'
+
+
+def _index_of(seq: list, value: Any) -> int:
+    try:
+        return seq.index(value)
+    except ValueError:
+        return -1
+
+
+def _js_number(value: Any) -> Union[int, float]:
+    # Mirrors JS's Number(x) coercion: a non-numeric string becomes NaN
+    # rather than raising. Relevant for at least one real data quirk: mode
+    # 'd''s clavis is a one-element list (["c3"]) rather than a plain string
+    # like every other mode, so .at(-1) on it yields "c3" itself, not a
+    # digit -- JS silently produces NaN there rather than crashing.
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return math.nan
+
+
+def adjust_to_key(item: list[str], current_key: Union[str, list], end_key: Union[str, list]) -> list[str]:
+    diff = 2 * (_js_number(end_key[-1]) - _js_number(current_key[-1]))
+    if diff == 0:  # NaN == 0 is False, same as JS -- NaN falls through below.
+        return item
+    is_nan = math.isnan(diff)
+    new_item = []
+    for component in item:
+        new_component = ''
+        for ch in component:
+            if 'a' <= ch <= 'l':
+                # Mirrors JS String.fromCharCode(NaN), which coerces to the
+                # NUL character rather than raising.
+                new_component += '\x00' if is_nan else chr(ord(ch) + int(diff))
+            else:
+                new_component += ch
+        new_item.append(new_component)
+    return new_item
+
+
+def get_psalm_tone(tone: Optional[str], clef: str, resources: dict[str, Any]) -> Optional[PsalmTone]:
+    if not tone:
+        return None
+    if tone == 'T. pereg.':
+        tone = 'p'
+    # If there's a middle character to the clef, ignore it for our purposes.
+    clef = clef[0] + clef[-1]
+
+    mode = resources['psalmTones'][tone[0]]
+    possible_variants = [v for v in mode if tone in v]
+
+    variant = possible_variants[0] if possible_variants else None
+    if len(possible_variants) != 1:
+        for candidate in possible_variants:
+            if candidate.get('clavis') == clef:
+                variant = candidate
+
+    if variant is None:
+        return None
+
+    return {
+        'initium': adjust_to_key(variant['initium'], variant['clavis'], clef),
+        'tenor': adjust_to_key(variant['tenor'], variant['clavis'], clef),
+        'flexa': adjust_to_key(variant['flexa'], variant['clavis'], clef),
+        'medians': adjust_to_key(variant['medians'], variant['clavis'], clef),
+        'terminatio': adjust_to_key(variant[tone], variant['clavis'], clef),
+    }
+
+
+_ROMAN_VALUES = {'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
+
+
+def format_header(header: str) -> str:
+    header = header[1:-2].replace(':', '. ', 1) + '.'
+    numeral_match = re.search(r'\s([IVXLC]+)[\s|.]', header)
+    if numeral_match:
+        numeral = numeral_match.group(1)
+        number = 0
+        j = 0
+        while j < len(numeral):
+            if j != len(numeral) - 1 and _ROMAN_VALUES[numeral[j]] < _ROMAN_VALUES[numeral[j + 1]]:
+                number += _ROMAN_VALUES[numeral[j + 1]] - _ROMAN_VALUES[numeral[j]]
+                j += 2
+            else:
+                number += _ROMAN_VALUES[numeral[j]]
+                j += 1
+        header = header.replace(numeral, str(number), 1)
+    return f'[{header}]\n'
+
+
+# The first value is the number of preparatory syllables and the second value is the number of accents.
+def accentation_data(blank_chant: list[str]) -> tuple[int, int]:
+    acc = sum(1 for s in blank_chant if 'r' in s)
+    return (len(blank_chant) - 3 * acc, acc)
+
+
+LONGS = ['á', 'é', 'í', 'ó', 'ú', 'ý', 'ǽ', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ý', 'Ǽ']
+
+
+def is_dactylic(text: list[str], position: int) -> bool:
+    monosyllabic = _at(text, position - 1) == ' '
+
+    # If there are two monosyllabic words next to each other, then not dactylic.
+    if (monosyllabic and _at(text, position - 3) == ' ') or position == 2:
+        return False
+    # If there is a two syllable word after a monosyllabic word, then dactylic.
+    elif (monosyllabic and _at(text, position - 4) == ' ') or position == 3:
+        return True
+    elif monosyllabic:
+        val = _at(text, position - 3)
+        return val is not None and any(long in val for long in LONGS)
+    elif position <= 1:
+        return False
+    else:
+        val = _at(text, position - 2)
+        return val is not None and any(long in val for long in LONGS)
+
+
+PUNCTUATION = [',', '.', ';', ':', '!', '?']
+
+
+def hyphenate_text_right(text: str) -> str:
+    ret = ''
+    for word in text.split(' '):
+        punct = ''
+        for p in PUNCTUATION:
+            if word.endswith(p):
+                punct = p
+                word = word[:-1]
+                break
+        ret += SOFT_HYPHEN.join(HYPH.hyphenate(word)) + punct + ' '
+    return ret[:-1]
+
+
+def accent_mark(syllables: list[str], accentation: tuple[int, int], cursor: int) -> list[str]:
+    preparatory, accents = accentation
+    for _ in range(accents):
+        # If the syllable under the cursor is actually a space, move to the previous syllable.
+        if _at(syllables, cursor) == ' ':
+            cursor -= 1
+        dactylic = is_dactylic(syllables, cursor)
+        if _at(syllables, cursor - 1) == ' ':
+            cursor -= 1
+        if dactylic:
+            cursor -= 2
+        else:
+            cursor -= 1
+        if _at(syllables, cursor) == ' ':
+            cursor -= 1
+        _wrap_at(syllables, cursor, 'accent-start')
+        cursor -= 1
+
+    for _ in range(preparatory):
+        if _at(syllables, cursor) == ' ':
+            cursor -= 1
+        _wrap_at(syllables, cursor, 'preceding-syllable')
+        cursor -= 1
+
+    return syllables
+
+
+def format_psalm(
+    psalm: str,
+    resources: Optional[dict[str, Any]] = None,
+    psalm_tone: Optional[str] = None,
+    clef: Optional[str] = None,
+) -> str:
+    tone = get_psalm_tone(psalm_tone, clef, resources)
+
+    ret = ''
+
+    for p in re.split(r'(\[.+?\]\n)', psalm)[1:]:
+        if p.startswith('['):
+            ret += format_header(p)
+        elif tone:
+            for line in p.split('\n'):
+                if line == '':
+                    ret += '\n'
+                    continue
+
+                annot_match = re.match(r'\d+\s(?:\[.+?\]\s)?', line)
+                if annot_match:
+                    annot = annot_match.group(0)
+                    line = line.replace(annot, '', 1)
+                else:
+                    annot = ''
+
+                syllables = []
+                for chunk in re.split(r'(\s)', hyphenate_text_right(line)):
+                    syllables.extend(chunk.split(SOFT_HYPHEN))
+
+                syllables = accent_mark(syllables, accentation_data(tone['terminatio']), len(syllables) - 1)
+                if not line.startswith('Magníficat'):
+                    syllables = accent_mark(syllables, accentation_data(tone['medians']), _index_of(syllables, '*') - 2)
+                if '+' in syllables:
+                    syllables = accent_mark(syllables, accentation_data(tone['flexa']), syllables.index('+') - 2)
+                line = ''.join(syllables)
+                ret += annot + line + '\n'
+
+            ret = ret[:-1]
+        else:
+            ret += p
+    return ret

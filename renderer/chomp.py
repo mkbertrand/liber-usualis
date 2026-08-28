@@ -1,0 +1,113 @@
+# Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
+#
+# Python port of frontend/rite-renderer/chomp.js. A few JS/Python semantic
+# gaps are handled explicitly:
+#   - JS String.prototype.substring(start) / .substring(start, end) clamps a
+#     negative index to 0 rather than wrapping like Python slicing does, and
+#     .search()/.indexOf() return -1 (not raise) when nothing matches. The
+#     _search_index()-based substring calls below replicate that clamping
+#     rather than letting a -1 flow into ordinary Python slicing.
+#   - JS's `.replace(pattern, ...)` without a /g flag replaces only the
+#     first match, whether pattern is a literal string or a non-global
+#     regex; every such call below passes count=1 to match.
+
+import re
+from typing import Any
+
+from renderer.psalmify import get_psalm_tone
+from renderer.rendering_utils import TagSet
+
+
+def _search_index(text: str, pattern: str, flags: re.RegexFlag = re.RegexFlag(0)) -> int:
+    m = re.search(pattern, text, flags)
+    return m.start() if m else -1
+
+
+def chomp(gabc: str, tags: TagSet, resources: dict[str, Any]) -> str:
+    gabc = gabc.replace('<v>\\greheightstar</v>', '*', 1)
+
+    mode_match = re.search(r'mode:(.+?)(?:;|\n)', gabc)
+    mode = mode_match.group(1) if mode_match else None
+
+    # Remove commented text falling before content.
+    start = max(_search_index(gabc, r'\n\(.+?\)'), 0)
+    gabc = gabc[start:]
+
+    gabc = gabc.replace('<sp>V/</sp>.', '<v>\\Vbar</v>')
+    gabc = re.sub(r'<sp>R/</sp>.?', '<v>\\\\Rbar</v>', gabc)
+    gabc = re.sub(r'<.?sc>', '', gabc)
+    gabc = re.sub(r'\[.*?\]', '', gabc)
+    gabc = re.sub(r'(\(.+?)(\|.+?)(\))', r'\1\3', gabc)
+    gabc = gabc.replace('<sp>*</sp>', '*')
+    gabc = re.sub(r'<c>.+?</c>', '', gabc, count=1)
+    gabc = re.sub(r'<e>(.+?)</e>', r'<i>\1</i>', gabc)
+
+    if mode:
+        gabcdata = 'mode:' + mode + ';\n%%\n'
+    else:
+        gabcdata = '%%\n'
+
+    # Make sure asterisks are formatted right.
+    gabc = re.sub(r'(\([,:;]+?\))\s*?\*\s', r'*\1 ', gabc, count=1)
+
+    if 'hymnus' in tags and 'te-deum' not in tags:
+        m = re.search(r'([\s\S]+?)(?:\d\.)?\(::\)', gabc)
+        gabc = m.group(1) + '(::)'
+
+    if 'deus-in-adjutorium' in tags:
+        end = max(_search_index(gabc, r'\(Z\-?\)'), 0)
+        gabc = gabc[:end]
+
+    elif 'antiphona' in tags:
+        clef_match = re.search(r'(?:^|%)\((.+?)\)', gabc, re.MULTILINE)
+        clef = None
+        euouae = ''
+        if clef_match:
+            captured = clef_match.group(1)
+            # If clef has a middle letter (very very rare) remove it.
+            clef = captured[0] + captured[-1]
+            tone = get_psalm_tone(mode, clef, resources)
+            if tone:
+                ending = [syl for syl in tone['terminatio'] if 'r' not in syl]
+                while len(ending) != 6:
+                    ending.insert(0, tone['tenor'][-1])
+                euouae = ' '.join(f'{c}({ending[i]})' for i, c in enumerate(['E', 'u', 'o', 'u', 'a', 'e.'])) + ' (::)'
+
+        if '<i>T. P.</i>' in gabc:
+            if 'in-tempore-paschali' in tags:
+                gabc = gabc.replace('<i>T. P.</i>', '', 1)
+            else:
+                gabc = gabc[:gabc.index('<i>T. P.</i>')].strip()
+
+        if 'in-tempore-septuagesimae' not in tags and '<i>Post Septuag.</i>' in gabc:
+            gabc = gabc[:gabc.index('<i>Post Septuag.</i>')].strip()
+
+        if 'intonata' in tags:
+            end = max(gabc.find('*'), 0)
+            gabc = gabc[:end] + '(::) ' + euouae
+        elif 'pars' in tags:
+            gabc = re.sub(r'^(?:\*\s)?\(.?\)', '', gabc.strip(), count=1)
+            if clef:
+                gabc = f'({clef}) ' + gabc
+            gabcdata = '%%\n'
+        elif 'repetita' in tags:
+            gabc = gabc.replace('*', '', 1)
+            gabcdata = '%%\n'
+        elif not ('commemoratio' in tags or 'suffragium' in tags):
+            gabc = gabc + euouae
+
+        gabcdata = ('initial-style:0;\n' if ('repetita' in tags or 'pars' in tags) else 'initial-style:1;\n') + gabcdata
+    elif 'invitatorium' in tags:
+        gabcdata = 'initial-style:0;\n' + gabcdata
+
+    gabc = re.sub(r'<v>\\([VRA])bar</v>', lambda m: m.group(1) + '/.', gabc)
+    # Character doesn't work in the bold version of this font.
+    gabc = re.sub(r"(<b>[^<]+)<sp>'(?:oe|œ)</sp>", '\\1œ</b>\u0301<b>', gabc)
+    gabc = re.sub(r'<b></b>', '', gabc)
+    gabc = re.sub(r"<sp>'(?:ae|æ)</sp>", 'ǽ', gabc)
+    gabc = re.sub(r"<sp>'(?:oe|œ)</sp>", 'œ́', gabc)
+    gabc = re.sub(r'<v>\\greheightstar</v>', '*', gabc)
+    gabc = re.sub(r'</?i>', '_', gabc)
+    gabc = re.sub(r'</?nlba>', '', gabc)
+
+    return gabcdata + gabc
