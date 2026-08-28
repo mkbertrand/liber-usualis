@@ -101,7 +101,7 @@ async function getLiturgicalDay(calendarDate, time, parameters) {
 let riteParametersExpectation = null;
 let cachedRites = new Object();
 
-async function getRite(calendarDate, occasion, parameters, resources) {
+async function getRite(calendarDate, occasion, parameters) {
 	if (riteParametersExpectation != JSON.stringify(parameters)) {
 		cachedRites = new Object();
 		riteParametersExpectation = JSON.stringify(parameters);
