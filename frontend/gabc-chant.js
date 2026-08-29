@@ -7,6 +7,7 @@ import {
   notifyChantRelayout,
   stopChantPlayback,
 } from './chant-player.js';
+import {bindScoreToContext} from './chant-context.js';
 
 export {stopChantPlayback};
 
@@ -89,6 +90,7 @@ class ChantElement extends HTMLElement {
 	chantLayout() {
     if (typeof this.score === 'undefined') return;
 
+    bindScoreToContext(GABC_CHANT_CONTEXT, this.score);
     this.score.layoutChantLines(GABC_CHANT_CONTEXT, this.parentElement.parentElement.clientWidth);
 
     let chantDiv = this.querySelector('.chantelement-chant-content');
