@@ -7,7 +7,6 @@ import re
 from typing import Any, Callable, Optional, Union
 
 from renderer.rendering_utils import abbreviate_name, date_header, rite_title, rubric_render, string_render, unpack, claw
-)
 from renderer.chomp import chomp
 from renderer.psalmify import format_psalm
 
@@ -32,6 +31,21 @@ def _is_empty(value: Any) -> bool:
     if isinstance(value, list):
         return ','.join('' if v is None else v for v in value) == ''
     return False
+
+# In JS, `seq[idx]` works whether `seq` is an array or a string (indexing a
+# string returns a single character), and returns `undefined` -- not a
+# crash -- when idx is out of range. A lesson's translation is sometimes a
+# list of per-segment strings and sometimes just one plain string (both are
+# valid, differently-shaped real data), and `tryLesson`'s Homily/heuristic
+# branches index into it (translation[0], translation[1], ...) without
+# checking which shape it is -- e.g. for a plain-string translation,
+# translation[0] in JS is just that string's first character. Replicating
+# only the list case here silently drops a valid string translation
+# instead of taking its first character like JS does.
+def _js_index(seq: Any, idx: int) -> Any:
+    if isinstance(seq, (str, list)) and 0 <= idx < len(seq):
+        return seq[idx]
+    return None
 
 def _split_outside_brackets(text: str) -> list[str]:
     # Mirrors JS's /(?<!\]|\[[^\]]+?)\// -- a variable-width lookbehind
@@ -277,7 +291,7 @@ class RiteRenderer:
             ).split('\n')
 
         extra_tag = 'textus-psalmi-precibus' if 'preces' in parent_tags else 'textus-psalmi'
-        new_element = {**element, 'tags': frozenset(element['tags']) | {extra_tag}}
+        new_element = {**element, 'tags': element['tags'] | {extra_tag}}
 
         self.recurse_rite(new_datum, translation, parent_tags | new_element['tags'])
         return True
@@ -334,26 +348,32 @@ class RiteRenderer:
         else:
             translation = unpack(translation)
 
-        if not isinstance(translation, list) or len(translation) != len(lesson):
-            translation = [None] * len(lesson)
+        # lesson and translation are two independently-produced values that
+        # are NOT guaranteed to be the same shape or length (that's real,
+        # legitimate data -- see the St. Cajetan's day case, and the
+        # Purification lesson where translation is a plain string rather
+        # than a list). JS tolerates this by indexing past the end (or
+        # into a plain string) and getting `undefined`/a character back
+        # rather than raising; _js_index() replicates that instead of
+        # discarding a perfectly good (just differently-shaped) translation.
 
         # For the first lesson from a Homily.
         if isinstance(lesson, list) and len(lesson[0]) < 100 and 'Evangélii' in lesson[0]:
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[0], translation[0], parent_tags | element['tags'] | {'lectionis-titulum'})
+            self.recurse_rite(lesson[0], _js_index(translation, 0), parent_tags | element['tags'] | {'lectionis-titulum'})
             self.close_paragraph()
-            self.recurse_rite(lesson[1], translation[1], frozenset({'evangelium-matutini'}))
+            self.recurse_rite(lesson[1], _js_index(translation, 1), frozenset({'evangelium-matutini'}))
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[2], translation[2], parent_tags | element['tags'] | {'lectionis-titulum'})
+            self.recurse_rite(lesson[2], _js_index(translation, 2), parent_tags | element['tags'] | {'lectionis-titulum'})
             rest = [seg if i == 0 else re.sub(r'\]/', '] ', seg, count=1) for i, seg in enumerate(lesson[3:])]
-            rest_translation = ' &para; '.join(translation[3:]) if isinstance(translation, list) and len(translation) > 3 and translation[3] is not None else None
+            rest_translation = ' &para; '.join('' if v is None else v for v in translation[3:]) if isinstance(translation, list) and len(translation) > 3 and translation[3] is not None else None
             self.recurse_rite(' &para; '.join(rest), rest_translation, frozenset({'lectio-incipiens'}))
         # Cheeky heuristic to guess if the first item is a title or if this lesson is really some conjoined lessons.
         elif isinstance(lesson, list) and len(lesson[0]) < 100:
             self.open_paragraph('lectionis-titulum')
-            self.recurse_rite(lesson[0], translation[0], parent_tags | element['tags'] | {'lectionis-titulum'})
+            self.recurse_rite(lesson[0], _js_index(translation, 0), parent_tags | element['tags'] | {'lectionis-titulum'})
             self.close_paragraph()
-            rest_translation = ' &para; '.join(translation[1:]) if isinstance(translation, list) and len(translation) > 1 and translation[1] is not None else None
+            rest_translation = ' &para; '.join('' if v is None else v for v in translation[1:]) if isinstance(translation, list) and len(translation) > 1 and translation[1] is not None else None
             tag = 'lectio-incipiens' if 'lectio-i' in element['tags'] else 'lectio-sequens'
             self.recurse_rite(' &para; '.join(lesson[1:]), rest_translation, frozenset({tag}))
         # Note that an untitled lesson may still be a first lesson. This is due to the fact that most Saints lives are begun without title.
@@ -361,7 +381,7 @@ class RiteRenderer:
             if isinstance(lesson, list):
                 joined_translation = None
                 if isinstance(translation, list) and translation and translation[0] is not None:
-                    joined_translation = ' &para; '.join(translation)
+                    joined_translation = ' &para; '.join('' if v is None else v for v in translation)
                 lesson = ' &para; '.join(lesson)
                 translation = joined_translation
             self.close_paragraph()
@@ -510,7 +530,8 @@ class RiteRenderer:
                 return
         for name in FULLY_PARAGRAPHED_ELEMENTS:
             if uniquelyhas(name) and 'dominus-det' not in element['tags']:
-                self.open_paragraph(' '.join(parent_tags | element['tags']))
+                # JS: [...tags(element).union(parentTags)].join(' ') -- element's own tags first, parentTags appended.
+                self.open_paragraph(' '.join(element['tags'] | parent_tags))
                 self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
                 self.close_paragraph()
                 return
@@ -521,7 +542,8 @@ class RiteRenderer:
                 return
         for name in PARAGRAPH_OPENING_ELEMENTS:
             if uniquelyhas(name):
-                self.open_paragraph(' '.join(parent_tags | element['tags']))
+                # JS: [...tags(element).union(parentTags)].join(' ') -- element's own tags first, parentTags appended.
+                self.open_paragraph(' '.join(element['tags'] | parent_tags))
                 self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
                 return
         self.recurse_rite(element.get('datum'), translation, parent_tags | element['tags'])
