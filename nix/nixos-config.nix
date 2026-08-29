@@ -5,6 +5,8 @@
   nodename,
   python_env,
   frontend_assets,
+  chant,
+  fcc,
   self,
   ...
 }:
@@ -183,7 +185,13 @@ in
         serviceConfig = {
           Type = "oneshot";
           RemainAfterExit = true;
-          ExecStart = "${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${bottle_app.out}/lib/ /var/lib/libu/";
+          ExecStart = pkgs.writeShellScript "bottle-app-setup" ''
+            set -euo pipefail
+            ${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${bottle_app.out}/lib/ /var/lib/libu/
+            ${pkgs.coreutils}/bin/mkdir -p /var/lib/libu/data/generated/liber-usualis-chant /var/lib/libu/data/generated/fcc
+            ${pkgs.rsync}/bin/rsync -a --delete ${chant}/ /var/lib/libu/data/generated/liber-usualis-chant/
+            ${pkgs.rsync}/bin/rsync -a --delete ${fcc}/ /var/lib/libu/data/generated/fcc/
+          '';
           User = "root";
           Group = "root";
         };
