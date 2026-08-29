@@ -31,7 +31,7 @@
 
 /* Printing to pdf (or actual printers) */
 @media print {
-	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container, .chant-player-slider {
+	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container {
 		display: none;
 	}
 }

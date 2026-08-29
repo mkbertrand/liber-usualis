@@ -19,6 +19,7 @@ import {
   indexAtTime,
   defaultTranspose,
   pitchToHz,
+  indexNearestPoint,
 } from '../chant-player.js';
 
 function pitch(step, octave = 4) {
@@ -123,6 +124,13 @@ test('cumulativeStarts and indexAtTime map slider ratios onto notes', () => {
   assert.equal(indexAtTime(starts, total, 2.9), 1);
   assert.equal(indexAtTime(starts, total, 3), 2);
   assert.equal(indexAtTime(starts, total, 4), 2);
+});
+
+test('indexNearestPoint picks the closest point in the plane', () => {
+  const points = [{x: 0, y: 0}, {x: 10, y: 0}, {x: 10, y: 10}];
+  assert.equal(indexNearestPoint(points, 1, 0), 0);
+  assert.equal(indexNearestPoint(points, 9, 1), 1);
+  assert.equal(indexNearestPoint(points, 11, 11), 2);
 });
 
 test('defaultTranspose centers the chant near G4 and pitchToHz is A440 equal temperament', () => {

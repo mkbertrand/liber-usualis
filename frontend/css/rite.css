@@ -155,17 +155,11 @@
 
 #rite-container.chant-playback .chantelement-chant-content {
   cursor: pointer;
+  touch-action: pan-y;
 }
 
-.chant-player-slider {
-  display: none;
-  width: 100%;
-  margin: 4px 0 10px 0;
-  accent-color: var(--rubric);
-}
-
-#rite-container.chant-playback gabc-chant.chant-active .chant-player-slider {
-  display: block;
+#rite-container.chant-playback gabc-chant.chant-seeking .chantelement-chant-content {
+  cursor: grabbing;
 }
 
 svg.ChantScore use.active,

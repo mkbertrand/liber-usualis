@@ -3,9 +3,7 @@
 import * as Exsurge from 'exsurge';
 import {stringRender} from './rite-renderer/rendering-utils.js';
 import {
-  createChantSlider,
-  handleChantClick,
-  handleSliderInput,
+  attachChantPointerControls,
   notifyChantRelayout,
   stopChantPlayback,
 } from './chant-player.js';
@@ -103,7 +101,6 @@ class ChantElement extends HTMLElement {
     const svg = this.score.createSvgNode(GABC_CHANT_CONTEXT);
     const children = [svg];
     if (this.translatedNode) children.push(this.translatedNode);
-    children.push(this.slider);
     chantDiv.replaceChildren(...children);
 
     if (!this.querySelector('.chantelement-text-content')) {
@@ -162,9 +159,7 @@ class ChantElement extends HTMLElement {
     this.translatedText = this.getAttribute('translated');
     this.gabc = this.getAttribute('gabc');
     this.plainContent = this.innerHTML.toString();
-    this.slider = createChantSlider();
-    this.slider.addEventListener('input', (event) => handleSliderInput(this, event));
-    this.addEventListener('click', (event) => handleChantClick(this, event));
+    attachChantPointerControls(this);
 	}
 }
 

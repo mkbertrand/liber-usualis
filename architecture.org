@@ -374,12 +374,12 @@
 
     =frontend/rite-renderer/psalmify.js= formats psalm text, and
     =frontend/gabc-chant.js= renders GABC lazily with Exsurge. When chant display
-    and the =play-chant= option are both enabled, clicking a rendered score plays
+    and the =play-chant= option are both enabled, tapping a rendered score plays
     it through =frontend/chant-player.js=, a Web Audio sequencer over the Exsurge
-    note list; a range slider under the active chant seeks the playhead.
-    Playback is presentation-only. The frontend sources are bundled from
-    =frontend/pray.js= into =web/resources/dist/pray.js=; styles are bundled from
-    =frontend/css/pray.css= into =web/resources/dist/pray.css=.
+    note list. Horizontal drag seeks the playhead to the nearest note; vertical
+    swipe still scrolls the page. Playback is presentation-only. The frontend
+    sources are bundled from =frontend/pray.js= into =web/resources/dist/pray.js=;
+    styles are bundled from =frontend/css/pray.css= into =web/resources/dist/pray.css=.
 
    =web/resources/pray/js/pray-window.js= maps UI locales to translation books and
    handles responsive panel sizing. It does not own the primary Alpine event flow.

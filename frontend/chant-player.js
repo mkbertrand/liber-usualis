@@ -215,17 +215,18 @@ function silence() {
 
 function playFrequency(hz, durationSec, when) {
   const context = getContext();
+  const startAt = Math.max(when, context.currentTime);
   const oscillator = context.createOscillator();
   const envelope = context.createGain();
   oscillator.setPeriodicWave(wave);
-  oscillator.frequency.setValueAtTime(hz, when);
+  oscillator.frequency.setValueAtTime(hz, startAt);
   oscillator.connect(envelope);
   envelope.connect(context.destination);
-  envelope.gain.setValueAtTime(0, when);
-  envelope.gain.setTargetAtTime(0.33, when, 0.05 / 3);
-  envelope.gain.setTargetAtTime(0, when + Math.max(durationSec, 0.05), 0.3 / 3);
-  oscillator.start(when);
-  oscillator.stop(when + durationSec + 0.8);
+  envelope.gain.setValueAtTime(0, startAt);
+  envelope.gain.setTargetAtTime(0.33, startAt, 0.05 / 3);
+  envelope.gain.setTargetAtTime(0, startAt + Math.max(durationSec, 0.05), 0.3 / 3);
+  oscillator.start(startAt);
+  oscillator.stop(startAt + durationSec + 0.8);
   voices.push({oscillator, envelope});
 }
 
@@ -369,8 +370,11 @@ export function seekToIndex(index) {
   highlightItem(active.notes[i]);
 }
 
-function resumeOrStart(element, startNote) {
-  getContext().resume();
+async function resumeOrStart(element, startNote) {
+  const context = getContext();
+  if (context.state !== 'running') await context.resume();
+  if (!isPlaybackEnabled() || context.state !== 'running') return;
+  if (active?.element === element && active.playing) return;
   if (active?.element === element && startNote == null) {
     if (active.total === 0) return;
     if (active.elapsed >= active.total) {
@@ -441,6 +445,7 @@ export function attachChantPointerControls(element) {
     startY = event.clientY;
     seeking = false;
     scrolling = false;
+    getContext().resume();
   });
 
   element.addEventListener('pointermove', (event) => {
