@@ -332,14 +332,15 @@
    The Bottle template loads localized page text and the versioned pray resources.
    Its Alpine =x-data= object owns the interactive state, including:
 
-   | Property        | Purpose                                                   |
-   |-----------------+-----------------------------------------------------------|
-   | =calendarDate=  | Civil date currently being viewed                         |
-   | =liturgicalDay= | Resolved =/day= response                                   |
-   | =hour=          | Selected occasion identifier                              |
-   | =parameters=    | Persisted office, recitation, and translation preferences |
-   | =rite=          | Rendered rite markup                                       |
-   | =nextOccasion=  | Persisted next occasion and date                           |
+    | Property             | Purpose                                                          |
+    |----------------------+------------------------------------------------------------------|
+    | =calendarDate=       | Civil date currently being viewed                                |
+    | =liturgicalDay=      | Resolved =/day= response                                         |
+    | =hour=               | Selected occasion identifier                                     |
+    | =parameters=         | Persisted office, recitation, and translation preferences        |
+    | =displayParameters=  | Persisted display toggles: chant, play-chant, side-by-side       |
+    | =rite=               | Rendered rite markup                                             |
+    | =nextOccasion=       | Persisted next occasion and date                                 |
 
    The template methods coordinate date changes, occasion changes, incrementing to
    the next occasion, and asynchronous refreshes. Alpine watchers refresh the day
@@ -371,10 +372,14 @@
    =frontend/rite-renderer/rite-renderer.js= converts structured rite responses
    into HTML and recognizes inline =translation= and =cantus= content.
 
-   =frontend/rite-renderer/psalmify.js= formats psalm text, and
-   =frontend/gabc-chant.js= renders GABC lazily with Exsurge. The frontend sources
-   are bundled from =frontend/pray.js= into =web/resources/dist/pray.js=; styles
-   are bundled from =frontend/css/pray.css= into =web/resources/dist/pray.css=.
+    =frontend/rite-renderer/psalmify.js= formats psalm text, and
+    =frontend/gabc-chant.js= renders GABC lazily with Exsurge. When chant display
+    and the =play-chant= option are both enabled, clicking a rendered score plays
+    it through =frontend/chant-player.js=, a Web Audio sequencer over the Exsurge
+    note list; a range slider under the active chant seeks the playhead.
+    Playback is presentation-only. The frontend sources are bundled from
+    =frontend/pray.js= into =web/resources/dist/pray.js=; styles are bundled from
+    =frontend/css/pray.css= into =web/resources/dist/pray.css=.
 
    =web/resources/pray/js/pray-window.js= maps UI locales to translation books and
    handles responsive panel sizing. It does not own the primary Alpine event flow.
@@ -481,6 +486,8 @@
   | =web/templates/pray.tpl=                     | Page shell and Alpine state                  |
   | =frontend/ambit.js=                          | Ritual structure and HTTP request composition |
   | =frontend/rite-renderer/rite-renderer.js=    | Rite rendering                               |
+  | =frontend/gabc-chant.js=                     | Exsurge GABC custom element                  |
+  | =frontend/chant-player.js=                   | Click-to-play Web Audio sequencer            |
   | =frontend/pray.js=                           | Frontend bundle entry point                  |
   | =web/resources/pray/js/pray-window.js=       | Window and panel helpers                     |
   | =data/{book}/tagged/=                        | Tagged liturgical content                    |
