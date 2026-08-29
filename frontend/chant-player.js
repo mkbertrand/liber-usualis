@@ -445,6 +445,7 @@ export function attachChantPointerControls(element) {
     startY = event.clientY;
     seeking = false;
     scrolling = false;
+    if (event.pointerType === 'mouse') event.preventDefault();
     getContext().resume();
   });
 
@@ -460,6 +461,7 @@ export function attachChantPointerControls(element) {
       }
       seeking = true;
       element.classList.add('chant-seeking');
+      window.getSelection?.()?.removeAllRanges();
       element.setPointerCapture?.(event.pointerId);
       ensureBound(element);
       pauseChantPlayback();

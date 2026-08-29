@@ -156,6 +156,8 @@
 #rite-container.chant-playback .chantelement-chant-content {
   cursor: pointer;
   touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 #rite-container.chant-playback gabc-chant.chant-seeking .chantelement-chant-content {
