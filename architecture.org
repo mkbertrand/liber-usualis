@@ -103,13 +103,14 @@
 ** Stage 0: Books and Corpora
 
    Repository-managed books live directly under =data/=. Externally maintained
-   books are synchronized into =data/generated/= by =sync-books.py= according to
-   the optional repository-root =books.json=. In development, the flake instead
-   pins =liber-usualis-chant= and the =databased= branch of
-   =franciscan-chant-closet=. The development shell recursively links their files
-   into =data/generated/liber-usualis-chant= and =data/generated/fcc=,
-   respectively. Matching files are replaced while unrelated generated content is
-   preserved. The generated path and operator configuration are ignored by Git.
+   books are synchronized into =data/generated/=. The flake pins
+   =liber-usualis-chant= and the =databased= branch of
+   =franciscan-chant-closet= and installs their files into
+   =data/generated/liber-usualis-chant= and =data/generated/fcc= in both the
+   development shell and production. Matching files are replaced while unrelated
+   generated content is preserved. =sync-books.py= remains available for non-Nix
+   checkouts using an optional repository-root =books.json=. The generated path
+   and operator configuration are ignored by Git.
 
    A =Book= identifies a source directory and a book-title tag. A =Corpus= searches
    one or more primary books. A =ContingentCorpus= retains the primary-book context
@@ -332,14 +333,15 @@
    The Bottle template loads localized page text and the versioned pray resources.
    Its Alpine =x-data= object owns the interactive state, including:
 
-   | Property        | Purpose                                                   |
-   |-----------------+-----------------------------------------------------------|
-   | =calendarDate=  | Civil date currently being viewed                         |
-   | =liturgicalDay= | Resolved =/day= response                                   |
-   | =hour=          | Selected occasion identifier                              |
-   | =parameters=    | Persisted office, recitation, and translation preferences |
-   | =rite=          | Rendered rite markup                                       |
-   | =nextOccasion=  | Persisted next occasion and date                           |
+    | Property             | Purpose                                                          |
+    |----------------------+------------------------------------------------------------------|
+    | =calendarDate=       | Civil date currently being viewed                                |
+    | =liturgicalDay=      | Resolved =/day= response                                         |
+    | =hour=               | Selected occasion identifier                                     |
+    | =parameters=         | Persisted office, recitation, and translation preferences        |
+    | =displayParameters=  | Persisted display toggles: chant, play-chant, side-by-side       |
+    | =rite=               | Rendered rite markup                                             |
+    | =nextOccasion=       | Persisted next occasion and date                                 |
 
    The template methods coordinate date changes, occasion changes, incrementing to
    the next occasion, and asynchronous refreshes. Alpine watchers refresh the day
@@ -371,10 +373,14 @@
    =frontend/rite-renderer/rite-renderer.js= converts structured rite responses
    into HTML and recognizes inline =translation= and =cantus= content.
 
-   =frontend/rite-renderer/psalmify.js= formats psalm text, and
-   =frontend/gabc-chant.js= renders GABC lazily with Exsurge. The frontend sources
-   are bundled from =frontend/pray.js= into =web/resources/dist/pray.js=; styles
-   are bundled from =frontend/css/pray.css= into =web/resources/dist/pray.css=.
+    =frontend/rite-renderer/psalmify.js= formats psalm text, and
+    =frontend/gabc-chant.js= renders GABC lazily with Exsurge. When chant display
+    and the =play-chant= option are both enabled, tapping a rendered score plays
+    it through =frontend/chant-player.js=, a Web Audio sequencer over the Exsurge
+    note list. Horizontal drag seeks the playhead to the nearest note; vertical
+    swipe still scrolls the page. Playback is presentation-only. The frontend
+    sources are bundled from =frontend/pray.js= into =web/resources/dist/pray.js=;
+    styles are bundled from =frontend/css/pray.css= into =web/resources/dist/pray.css=.
 
    =web/resources/pray/js/pray-window.js= maps UI locales to translation books and
    handles responsive panel sizing. It does not own the primary Alpine event flow.
@@ -446,15 +452,15 @@
   describe the complete source, frontend, and Python workspace. Root =.envrc= and
   =.python-version= provide project-level tool discovery.
 
-  Deployment modules and provider policy files live under =nix/=. The flake passes
-  its tracked source and the =buildNpmPackage=-generated frontend bundles to
-  =nix/nixos-config.nix= for installation under =/var/lib/libu=. The development
-  shell provides Node.js, copies the generated bundles into =web/resources/dist=,
-  and merges symlinks to the flake-pinned chant books into
-  =data/generated/liber-usualis-chant= and =data/generated/fcc=.
-  Deployment preserves an operator-provided =books.json= and =data/generated/=
-  while replacing the tracked application. Operators must run =sync-books.py=
-  separately when generated books need to be installed or updated.
+   Deployment modules and provider policy files live under =nix/=. The flake passes
+   its tracked source, the =buildNpmPackage=-generated frontend bundles, and the
+   flake-pinned chant books to =nix/nixos-config.nix= for installation under
+   =/var/lib/libu=. The development shell provides Node.js, copies the generated
+   bundles into =web/resources/dist=, and merges the same flake-pinned chant books
+   into =data/generated/liber-usualis-chant= and =data/generated/fcc=.
+   Deployment preserves an operator-provided =books.json= and any generated books
+   other than those two trees while replacing the tracked application and the
+   pinned chant books.
   =nix/image-formats.nix= customizes nixpkgs' native image variants. The
   =libu-images= NixOS configuration exposes Linode, Proxmox, Amazon, application
   ISO, and installer ISO images through =system.build.images= and
@@ -481,6 +487,8 @@
   | =web/templates/pray.tpl=                     | Page shell and Alpine state                  |
   | =frontend/ambit.js=                          | Ritual structure and HTTP request composition |
   | =frontend/rite-renderer/rite-renderer.js=    | Rite rendering                               |
+  | =frontend/gabc-chant.js=                     | Exsurge GABC custom element                  |
+  | =frontend/chant-player.js=                   | Click-to-play Web Audio sequencer            |
   | =frontend/pray.js=                           | Frontend bundle entry point                  |
   | =web/resources/pray/js/pray-window.js=       | Window and panel helpers                     |
   | =data/{book}/tagged/=                        | Tagged liturgical content                    |

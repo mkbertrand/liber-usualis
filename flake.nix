@@ -120,6 +120,8 @@
             nixpkgs
             python_env
             frontend_assets
+            chant
+            fcc
             ;
           nodename = "libu";
           format = null;
@@ -147,6 +149,8 @@
             nixpkgs
             python_env
             frontend_assets
+            chant
+            fcc
             ;
           nodename = "libu";
           format = "linode";

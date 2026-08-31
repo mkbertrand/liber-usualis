@@ -29,8 +29,12 @@
 	</div>
 	% end
 	<div>
-		<input type="checkbox" id="chant-toggle" x-model="displayParameters.chant" />
+		<input type="checkbox" id="chant-toggle" x-model="displayParameters.chant" @change="if (!displayParameters.chant) Pray.stopChantPlayback()" />
 		<label for="chant-toggle">{{text['chant-toggle']}}</label>
+	</div>
+	<div>
+		<input type="checkbox" id="play-chant-toggle" x-model="displayParameters['play-chant']" :disabled="!displayParameters.chant" @change="if (!displayParameters['play-chant']) Pray.stopChantPlayback()" />
+		<label for="play-chant-toggle" :class="displayParameters.chant ? '' : 'option-disabled'">{{text['play-chant-toggle']}}</label>
 	</div>
   <div>
 		<input type="checkbox" id="priest-toggle" x-model="parameters.priest" />
