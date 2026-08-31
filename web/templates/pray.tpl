@@ -52,7 +52,8 @@
   displayParameters: $persist({
     'chant': false,
 		'display-trivial-chants': false,
-		'side-by-side': false
+		'side-by-side': false,
+		'play-chant': false
   }),
 	rite: '',
 	initialized: false,
@@ -132,6 +133,9 @@
 	if (!('votives' in parameters)) {
 		parameters.votives = {'de-sanctis-angelis': false, 'de-sanctis-apostolis': false, 'de-joseph': false, 'de-eucharistiae-sacramento': false, 'de-passione': false, 'de-immaculata-conceptione': false};
 	}
+	if (!('play-chant' in displayParameters)) {
+		displayParameters['play-chant'] = false;
+	}
 	% if not mobile:
 	doPanelSize();
 	% end
@@ -198,6 +202,7 @@
 					<div x-show="initialized" id="rite-container" x-html="Rite" :class="{
             'chant-shown': displayParameters.chant,
             'chant-hidden': !displayParameters.chant,
+            'chant-playback': displayParameters.chant && displayParameters['play-chant'],
             'side-by-side': displayParameters['side-by-side'] && parameters.translation,
             'line-by-line': !displayParameters['side-by-side'] && parameters.translation,
             'no-translation': !parameters.translation

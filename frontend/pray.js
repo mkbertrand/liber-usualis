@@ -1,9 +1,9 @@
 // Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import * as Exsurge from 'exsurge';
-import { initChantElement } from './gabc-chant.js';
+import { initChantElement, stopChantPlayback } from './gabc-chant.js';
 import { defineAmbit } from './ambit.js';
-export { defineAmbit };
+export { defineAmbit, stopChantPlayback };
 initChantElement();
 
 export function abbreviateName(name) {

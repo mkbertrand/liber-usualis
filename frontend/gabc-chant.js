@@ -31,11 +31,20 @@ function stringRender(text) {
 		return text;
 }
 
+import {
+  attachChantPointerControls,
+  notifyChantRelayout,
+  stopChantPlayback,
+} from './chant-player.js';
+import {bindScoreToContext} from './chant-context.js';
+
+export {stopChantPlayback};
+
 const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
 // Exsurge writes these as SVG presentation attributes on live DOM nodes (via
-// createSvg()/innerHTML), so CSS custom properties resolve here exactly as
-// they would in a stylesheet, including re-resolving on a theme change.
+// createSvgNode()), so CSS custom properties resolve here exactly as they
+// would in a stylesheet, including re-resolving on a theme change.
 GABC_CHANT_CONTEXT.textColor = 'var(--content-text-color)';
 GABC_CHANT_CONTEXT.neumeLineColor = 'var(--content-text-color)';
 
@@ -107,10 +116,10 @@ const CHANT_VISIBILITY_OBSERVER = new IntersectionObserver((entries) => {
 
 class ChantElement extends HTMLElement {
 		
-  // AI-authored because look how tedious this is.
 	chantLayout() {
     if (typeof this.score === 'undefined') return;
 
+    bindScoreToContext(GABC_CHANT_CONTEXT, this.score);
     this.score.layoutChantLines(GABC_CHANT_CONTEXT, this.parentElement.parentElement.clientWidth);
 
     let chantDiv = this.querySelector('.chantelement-chant-content');
@@ -119,7 +128,11 @@ class ChantElement extends HTMLElement {
       chantDiv.className = 'chantelement-chant-content';
       this.insertBefore(chantDiv, this.firstChild);
     }
-    chantDiv.innerHTML = this.score.createSvg(GABC_CHANT_CONTEXT) + this.translated;
+
+    const svg = this.score.createSvgNode(GABC_CHANT_CONTEXT);
+    const children = [svg];
+    if (this.translatedNode) children.push(this.translatedNode);
+    chantDiv.replaceChildren(...children);
 
     if (!this.querySelector('.chantelement-text-content')) {
       const textDiv = document.createElement('div');
@@ -127,6 +140,8 @@ class ChantElement extends HTMLElement {
       textDiv.innerHTML = this.plainContent;
       this.appendChild(textDiv);
     }
+
+    notifyChantRelayout(this);
   }
 
   renderChant() {
@@ -143,13 +158,14 @@ class ChantElement extends HTMLElement {
         this.score.annotation = new Exsurge.Annotation(GABC_CHANT_CONTEXT, this.gabc.substring(modeloc + 5, this.gabc.indexOf(';', modeloc)) + '.');
       }
       this.score.performLayout(GABC_CHANT_CONTEXT);
-      this.chantLayout();
 
-      if (this.translated) {
-        this.translated = `<span class="rite-text chant-translation">${stringRender(this.translated)}</span`;
-      } else {
-        this.translated = '';
+      if (this.translatedText) {
+        this.translatedNode = document.createElement('span');
+        this.translatedNode.className = 'rite-text chant-translation';
+        this.translatedNode.innerHTML = stringRender(this.translatedText);
       }
+
+      this.chantLayout();
     } catch(err) {
       console.log(err);
     }
@@ -161,6 +177,7 @@ class ChantElement extends HTMLElement {
 
   disconnectedCallback() {
     CHANT_VISIBILITY_OBSERVER.unobserve(this);
+    if (this.classList.contains('chant-active')) stopChantPlayback();
   }
 
   onVisible() {
@@ -170,9 +187,10 @@ class ChantElement extends HTMLElement {
 	constructor() {
 		super();
 
-    this.translated = this.getAttribute('translated');
+    this.translatedText = this.getAttribute('translated');
     this.gabc = this.getAttribute('gabc');
     this.plainContent = this.innerHTML.toString();
+    attachChantPointerControls(this);
 	}
 }
 
@@ -195,6 +213,7 @@ export function initChantElement() {
   }
 
   window.addEventListener('beforeprint', () => {
+    stopChantPlayback();
     document.querySelectorAll('gabc-chant').forEach(elem => {
       elem.renderChant();
     });

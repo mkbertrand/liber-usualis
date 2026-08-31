@@ -33,7 +33,8 @@ is preserved. It also copies the Nix-built frontend bundles into
 nix develop
 ```
 
-Nix application and image builds generate the frontend bundles automatically.
+Nix application and image builds generate the frontend bundles automatically
+and install the same pinned chant books into `data/generated/`.
 The focused frontend output is available with `nix build .#frontend-assets`. Run
 `npm ci` and `npm run build` only when rebuilding the bundles during frontend
 development.
@@ -199,7 +200,7 @@ aws ec2 register-image \
 ```
 The snapshot import may take around 30 minutes. An alternative is to deploy the
 public or private flake to an existing NixOS EC2 instance with `nixos-rebuild`.
-# Rebuilding
+# Rebuilding/Deploying with Nix
 ```bash
 export host="YOUR_HOSTNAME_OR_IP_HERE";
 nixos-rebuild switch \
