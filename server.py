@@ -129,17 +129,17 @@ def composer():
         print(e)
         abort(500, error500tpl('Error incognitus.'))
 
-RESOURCES = dict()
-with open('data/generated/liber-usualis-chant/nocturnale/untagged/invitatoria.json', 'r') as f:
-    RESOURCES['invitatoria'] = json.loads(f.read())
-with open('data/generated/liber-usualis-chant/untagged/toni-psalmorum.json', 'r') as f:
-    RESOURCES['psalmTones'] = json.loads(f.read())
-
 @get('/api/rite')
 def rite() -> str:
-    from renderer import render_rite
     try:
-        return render_rite(request.query.get('date'), datamanage.rite_request(request.query.get('date'), request.query.get('rite'), request.query.get('opt', ''), request.query.get('select', 'primarium'), request.query.get('translation', 'none'), request.query.get('votives', '')), RESOURCES)
+        return datamanage.rendered_rite_request(
+            request.query.get('date'),
+            request.query.get('rite'),
+            request.query.get('opt', ''),
+            request.query.get('select', 'primarium'),
+            request.query.get('translation', 'none'),
+            request.query.get('votives', '')
+        )
     except Exception as e:
         traceback.print_exc()
         print(e)
