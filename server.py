@@ -151,10 +151,6 @@ def kal():
         warnings.simplefilter('ignore')
         return datamanage.getdisplaykalendar(datamanage.DEFAULT_CORPUS)
 
-@get('/api/chant/<file:path>')
-def chant(file):
-    return static_file(file, root=datamanage.DATA_ROOT.joinpath('generated'))
-
 @get('/resources/<file:path>')
 def resources(file):
     return static_file(file, root='web/resources/')
