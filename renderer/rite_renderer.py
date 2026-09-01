@@ -297,10 +297,8 @@ class RiteRenderer:
         elif isinstance(lesson, str) and not isinstance(translation, str):
             translation = None
 
-        element_quaesitum = element['quaesitum']
-
         # For the Lamentations of the Sacred Triduum.
-        if element_quaesitum.issuperset({'sabbatum-sanctum', 'nocturna-i', 'lectio-iii'}):
+        if element['quaesitum'].issuperset({'sabbatum-sanctum', 'nocturna-i', 'lectio-iii'}):
             self.open_paragraph('lectionis-titulum')
             self.append_text(lesson[0])
             self.close_paragraph()
@@ -308,8 +306,8 @@ class RiteRenderer:
             self.recurse_rite(lesson[1] + '/' + lesson[2], None, parent_tags | element['tags'] | {'lectio-sequens'})
             self.close_paragraph()
             return True
-        elif element_quaesitum.issuperset({'triduum', 'nocturna-i'}):
-            if 'lectio-i' in element_quaesitum:
+        elif element['quaesitum'].issuperset({'triduum', 'nocturna-i'}):
+            if 'lectio-i' in element['quaesitum']:
                 self.open_paragraph(f"lectionis-titulum {' '.join(element.get('tags') or ())}")
                 self.append_text(lesson[0])
                 self.close_paragraph()
@@ -350,7 +348,7 @@ class RiteRenderer:
         else:
             if isinstance(lesson, list):
                 joined_translation = None
-                if isinstance(translation, list) and translation and translation[0] is not None:
+                if translation[0] is not None:
                     joined_translation = ' &para; '.join('' if v is None else v for v in translation)
                 lesson = ' &para; '.join(lesson)
                 translation = joined_translation
