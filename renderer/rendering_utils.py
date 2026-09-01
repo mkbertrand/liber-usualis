@@ -125,6 +125,27 @@ def unpack(data: Union[str, list, dict, None]) -> Union[str, list, None]:
         return unpack(data.get('datum'))
     return None
 
+def unpack_superimposed(data: Union[str, list, dict, None], imposed: str) -> Union[str, list, None]:
+    if data is None or isinstance(data, str):
+        return None
+    elif isinstance(data, list):
+        result: list[Any] = []
+        for item in data:
+            unpacked = unpack_superimposed(item, imposed)
+            if isinstance(unpacked, list):
+                result.extend(unpacked)
+            else:
+                result.append(unpacked)
+            return result
+    elif isinstance(data, dict):
+        rec = unpack_superimposed(data['datum'], imposed)
+        if rec is not None and not all([r is None for r in rec]):
+            return rec
+        elif imposed in data:
+            return data[imposed]['datum']
+        else:
+            return None
+
 # Digs out nested data recursively (useful for translation).
 def claw(data: dict) -> dict:
     datum = data.get('datum')
