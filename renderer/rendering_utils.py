@@ -136,7 +136,7 @@ def unpack_superimposed(data: Union[str, list, dict, None], imposed: str) -> Uni
                 result.extend(unpacked)
             else:
                 result.append(unpacked)
-            return result
+        return result
     elif isinstance(data, dict):
         rec = unpack_superimposed(data['datum'], imposed)
         if rec is not None and not all([r is None for r in rec]):
