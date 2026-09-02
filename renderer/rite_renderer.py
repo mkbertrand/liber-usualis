@@ -456,7 +456,8 @@ class RiteRenderer:
             return
 
         if not 'quaesitum' in element:
-            element['quaesitum'] = element['tags']
+            element = {**element, 'quaesitum': element['tags']}
+
         # These checks are done before removing empty items since empty antiphons can still confer tone upon the following Psalms.
         if 'antiphona' in element['tags'] and 'cantus' in element and element.get('cantus') is not None:
             cantus_unpacked = unpack(element['cantus'])
