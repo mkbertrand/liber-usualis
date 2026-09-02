@@ -29,11 +29,6 @@ NEDERLANDS_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
 HEADER_CORPUS = CaputCorpus(DEFAULT_CORPUS.books)
 
-RENDER_RESOURCES = {
-    'invitatoria': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
-    'psalmTones': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
-}
-
 @functools.lru_cache(maxsize=30)
 def rite_request(date, item, opt, select, translation, votives):
     day = datetime.strptime(date, '%Y-%m-%d').date()
@@ -79,10 +74,17 @@ def rite_request(date, item, opt, select, translation, votives):
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
         }
 
+@functools.lru_cache(maxsize=1)
+def render_resources():
+    return {
+        'invitatoria': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
+        'psalmTones': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
+    }
+
 @functools.lru_cache(maxsize=30)
 def rendered_rite_request(date, item, opt, select, translation, votives):
     rite = rite_request(date, item, opt, select, translation, votives)
-    return render_rite(date, rite, RENDER_RESOURCES)
+    return render_rite(date, rite, render_resources())
 
 @functools.lru_cache(maxsize=1)
 def getdisplaykalendar(context):
