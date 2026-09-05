@@ -114,23 +114,8 @@ def daytags(vesperal = False):
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/api/composer')
-def rite():
+def composer():
     try:
-        rites = request.query.get('rites', None)
-        if rites:
-            ret = []
-            rites = rites.split('_')
-            for rite in rites:
-                ritesplit = rite.split('.')
-                ret.append(datamanage.rite_request(
-                    request.query.get('date'),
-                    ritesplit[0],
-                    request.query.get('opt', ''),
-                    ritesplit[2],
-                    request.query.get('translation', 'none'),
-                    request.query.get('votives', '')
-                ))
-            return util.dump_data(ret)
         return util.dump_data(datamanage.rite_request(
             request.query.get('date'),
             request.query.get('rite'),
@@ -144,15 +129,27 @@ def rite():
         print(e)
         abort(500, error500tpl('Error incognitus.'))
 
+@get('/api/rite')
+def rite() -> str:
+    try:
+        return datamanage.rendered_rite_request(
+            request.query.get('date'),
+            request.query.get('rite'),
+            request.query.get('opt', ''),
+            request.query.get('select', 'primarium'),
+            request.query.get('translation', 'none'),
+            request.query.get('votives', '')
+        )
+    except Exception as e:
+        traceback.print_exc()
+        print(e)
+        abort(500, error500tpl('Error incognitus.'))
+
 @get('/api/kalendar')
 def kal():
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
         return datamanage.getdisplaykalendar(datamanage.DEFAULT_CORPUS)
-
-@get('/api/chant/<file:path>')
-def chant(file):
-    return static_file(file, root=datamanage.DATA_ROOT.joinpath('generated'))
 
 @get('/resources/<file:path>')
 def resources(file):

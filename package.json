@@ -12,7 +12,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --import ./frontend/tests/setup.mjs --test frontend/tests/",
+    "test": "node --test frontend/tests/",
     "build": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css",
     "watch": "esbuild frontend/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife --global-name=Pray && esbuild frontend/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css"
   },

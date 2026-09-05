@@ -48,11 +48,11 @@
 	},
 	{
 		"tags":["antiphona-nunc-dimittis","repetita"],
-		"caput":""
+		"caput":null
 	},
 	{
 		"tags":["antiphona-nunc-dimittis","triduum"],
-		"caput":""
+		"caput":null
 	},
 	{
 		"tags":["nunc-dimittis","triduum"],
@@ -64,7 +64,7 @@
 	},
 	{
 		"tags":["nunc-dimittis","pascha","i-vesperae"],
-		"caput":""
+		"caput":null
 	},
 	{
 		"tags":["completorium","benedictio"],
@@ -223,6 +223,6 @@
 	},
 	{
 		"tags":["completorium","capitulum","pascha"],
-		"caput":""
+		"caput":null
 	}
 ]
