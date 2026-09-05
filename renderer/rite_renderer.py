@@ -5,14 +5,11 @@
 import json
 import html
 import re
-from typing import Any, Callable, Optional, Union
+from typing import Callable, Any
 
-from renderer.rendering_utils import abbreviate_name, date_header, rite_title, rubric_render, string_render, unpack, claw, unpack_superimposed
+from renderer.rendering_utils import RiteElement, Tagset, Translation, Chant, Resources, abbreviate_name, date_header, rite_title, rubric_render, string_render, unpack, claw, unpack_superimposed
 from renderer.chomp import chomp
 from renderer.psalmify import format_psalm
-
-Translation = Union[str, list, None]
-Resources = dict[str, Any]
 
 DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'nocturna', 'psalmi', 'preces', 'collecta-primaria', 'antiphona-bmv']
 FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus', 'lectionis-titulum', 'evangelium-matutini', 'lectio-incipiens', 'lectio-sequens']
@@ -64,10 +61,10 @@ class RiteRenderer:
         self.right_buffer: list[str] = []
         self.open_divs: list[str] = []
         self.paragraph_open: bool = False
-        self.antiphon_mode: Optional[str] = None
-        self.antiphon_clef: Optional[str] = None
+        self.antiphon_mode: str | None = None
+        self.antiphon_clef: str | None = None
         self.paragraph_style: str = ''
-        self.resources = resources
+        self.resources: Resources = resources
 
     def _emit(self, html: str) -> None:
         self.rite.append(html)
@@ -114,11 +111,11 @@ class RiteRenderer:
 
     def render_gabc(
         self,
-        replaced: Union[str, list, dict, None],
-        quaesitum_tags: frozenset[str],
-        cantus: Union[str, list, dict, None],
+        replaced: RiteElement,
+        quaesitum_tags: Tagset,
+        cantus: Chant,
         translation: Translation,
-        tag_set: frozenset[str],
+        tag_set: Tagset,
     ) -> None:
         self.open_div('', 'gabc-chant-container')
         self.open_div('', 'gabc-chant')
@@ -139,7 +136,7 @@ class RiteRenderer:
         self.close_div()
         self.close_div()
 
-    def do_headering(self, element: Union[str, list, dict, None], uniquelyhas: Callable[[str], bool]) -> None:
+    def do_headering(self, element: RiteElement, uniquelyhas: Callable[[str], bool]) -> None:
         # Apply headers (added during a superimposition step) where relevant.
         caput = element.get('caput') if isinstance(element, dict) else None
         if caput is not None and any(t not in ('caput', 'sectio', 'annotatio') and uniquelyhas(t) for t in caput['tags']):
@@ -153,7 +150,7 @@ class RiteRenderer:
             else:
                 self.make_centered_header(header)
 
-    def try_hymn(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_hymn(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         def uniquely_has_bottom(tag: str) -> bool:
             return tag in element['tags'] and not (isinstance(element['datum'], dict) and tag in element['datum']['tags'])
 
@@ -180,7 +177,7 @@ class RiteRenderer:
         self.close_div()
         return True
 
-    def try_responsory(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_responsory(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         if not (('responsorium' in element['tags'] or 'responsorium-breve' in element['tags']) and isinstance(element.get('datum'), list)):
             return False
 
@@ -247,7 +244,7 @@ class RiteRenderer:
         self.close_paragraph()
         return True
 
-    def try_chant(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_chant(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         if (
             'gabc-chant-container' in self.open_divs
             or not isinstance(element, dict)
@@ -262,7 +259,7 @@ class RiteRenderer:
         self.render_gabc(element['datum'], element['quaesitum'], element['cantus'], translation, parent_tags | element['tags'])
         return True
 
-    def try_psalmify(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_psalmify(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         if '/psalmi/' not in ' '.join(element['tags']):
             return False
 
@@ -282,7 +279,7 @@ class RiteRenderer:
         self.recurse_rite(new_datum, translation, parent_tags | new_element['tags'])
         return True
 
-    def try_lesson(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_lesson(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
 
         def uniquely_has_bottom(tag: str) -> bool:
             return tag in element['tags'] and not (isinstance(element['datum'], dict) and tag in element['datum']['tags'])
@@ -358,7 +355,7 @@ class RiteRenderer:
             self.recurse_rite(lesson, translation, frozenset({tag}))
         return True
 
-    def try_commemorations(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_commemorations(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         if 'commemorationes' not in element['tags']:
             return False
         datum = element['datum']
@@ -371,7 +368,7 @@ class RiteRenderer:
         self.close_div()
         return True
 
-    def try_martyrology(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_martyrology(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         if 'martyrologium' not in element['tags']:
             return False
         datum = element['datum']
@@ -395,7 +392,7 @@ class RiteRenderer:
         self.close_paragraph()
         return True
 
-    def try_invitatory(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> bool:
+    def try_invitatory(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> bool:
         if 'invitatorium' not in element['tags']:
             return False
         self.open_div('', 'invitatorium')
@@ -415,9 +412,9 @@ class RiteRenderer:
         self.close_div()
         return True
 
-    def recurse_rite(self, element: Union[str, list, dict, None], translation: Translation, parent_tags: frozenset[str]) -> None:
+    def recurse_rite(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> None:
         # Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
-        def uniquelyhas(tag: str, tagset: Optional[frozenset[str]] = None) -> bool:
+        def uniquelyhas(tag: str, tagset: Tagset | None = None) -> bool:
             tagset = tagset if tagset is not None else element['tags']
             return tag in tagset and tag not in parent_tags
 
