@@ -1,0 +1,135 @@
+[
+	{
+		"tags":[
+			["matutinum","nocturna-i","absolutio"],
+			["matutinum","feria-i","absolutio"],
+			["matutinum","feria-ii","absolutio"],
+			["matutinum","feria-v","absolutio"]
+		],
+		"datum":[
+			"Erhöre, o Herr Jesus Christus, die Bitten Deiner Diener, + und erbarme Dich unser, * der Du mit dem Vater und dem Heiligen Geiste lebst und herrschst in alle Ewigkeit.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-i","benedictio"],
+			["matutinum","feria-i","benedictio"],
+			["matutinum","feria-ii","benedictio"],
+			["matutinum","feria-v","benedictio"]
+		],
+		"lectio-i":"Mit stetigem Segen * segne uns der ewige Vater.",
+		"lectio-ii":"Der eingeborene Sohn Gottes * würdige sich, uns zu segnen und beizustehen.",
+		"lectio-iii":"Des Heiligen Geistes Gnade * erleuchte unsere Sinne und Herzen."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-ii","absolutio"],
+			["matutinum","feria-iii","absolutio"],
+			["matutinum","feria-vi","absolutio"]
+		],
+		"datum":[
+			"Die Güte und Barmherzigkeit dessen möge uns beistehen, * der mit dem Vater und dem Heiligen Geiste lebt und herrscht in alle Ewigkeit.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-ii","benedictio"],
+			["matutinum","feria-iii","benedictio"],
+			["matutinum","feria-vi","benedictio"]
+		],
+		"lectio-i":"Gott der allmächtige Vater, * sei uns gnädig und gütig.",
+		"lectio-ii":"Christus verleihe * uns die Freuden des ewigen Lebens.",
+		"lectio-iii":"Das Feuer Seiner Liebe * entzünde Gott in unseren Herzen."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","absolutio"],
+			["matutinum","feria-iv","absolutio"],
+			["matutinum","sabbatum","absolutio"]
+		],
+		"datum":[
+			"Von den Fesseln unserer Sünden * erlöse uns der allmächtige und barmherzige Herr.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-i","benedictio"],
+			["matutinum","evangelica-lectio","lectio-i","benedictio"]
+		],
+		"datum":"Die Lesung des Evangeliums * sei unser Heil und Schutz."
+	},
+	{
+		"tags":[
+			["matutinum","feria-iv","lectio-i","benedictio"],
+			["matutinum","sabbatum","lectio-i","benedictio"]
+		],
+		"datum":"Jener möge uns segnen, * der ohne Ende lebt und herrscht."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","benedictio"],
+			["matutinum","feria-iv","lectio-ii","benedictio"],
+			["matutinum","sabbatum","lectio-ii","benedictio"],
+			["matutinum","evangelica-lectio","lectio-ii","benedictio"]
+		],
+		"datum":"Die göttliche Hilfe * bleibe allezeit mit uns."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","apostolus","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","martyr","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","confessor","benedictio"]
+		],
+		"datum":"Der, dessen Fest wir feiern, * möge fürbitten für uns beim Herrn."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","apostolus","apostoli","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","martyr","martyres","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","confessor","confessores","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","virgo","virgines","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","vidua","viduae","benedictio"]
+		],
+		"datum":"Die, deren Fest wir feiern, * mögen fürbitten für uns beim Herrn."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-ii","virgo","benedictio"],
+			["matutinum","nocturna-iii","lectio-ii","vidua","benedictio"]
+		],
+		"datum":"Die, deren Fest wir feiern, * möge fürbitten für uns beim Herrn."
+	},
+	{
+		"tags":["matutinum","nocturna-iii","lectio-ii","maria","benedictio"],
+		"datum":"Die, deren Fest wir feiern, * die Jungfrau der Jungfrauen selbst, möge fürbitten für uns beim Herrn."
+	},
+	{
+		"tags":[
+			["matutinum","nocturna-iii","lectio-iii","benedictio"],
+			["matutinum","feria-iv","lectio-iii","benedictio"],
+			["matutinum","sabbatum","lectio-iii","benedictio"],
+			["matutinum","evangelica-lectio","lectio-iii","benedictio"]
+		],
+		"datum":"In die Gemeinschaft der himmlischen Scharen * führe uns der König der Engel."
+	},
+	{
+		"tags":["benedictio","per-evangelica-dicta"],
+		"datum":"Durch die Worte des Evangeliums * mögen getilgt werden unsere Sünden."
+	},
+	{
+		"tags":["matutinum","bmv-sabbatum","absolutio"],
+		"datum":[
+			"Durch die Bitten und Verdienste der seligsten, allzeit jungfräulichen Maria und aller Heiligen führe uns der Herr in das Himmelreich.",
+			"R. Amen."
+		]
+	},
+	{
+		"tags":["matutinum","bmv-sabbatum","benedictio"],
+		"lectio-i":"Es segne uns, mit ihrem milden Kinde, * die Jungfrau Maria",
+		"lectio-ii":"Die Jungfrau der Jungfrauen selbst * möge fürbitten für uns beim Herrn.",
+		"lectio-iii":"Durch die Jungfrau Mutter verleihe uns der Herr * Heil und Frieden."
+	}
+]
