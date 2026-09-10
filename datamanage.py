@@ -12,6 +12,7 @@ import kalendar.daily_tagger
 from composer import Book
 from composer import util
 from composer import Corpus, ContingentCorpus, CaputCorpus
+from renderer import render_rite
 
 DATA_ROOT = Path(__file__).parent.joinpath('data').resolve()
 
@@ -72,6 +73,18 @@ def rite_request(date, item, opt, select, translation, votives):
         'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
         }
+
+@functools.lru_cache(maxsize=1)
+def render_resources():
+    return {
+        'invitatoria': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
+        'psalmTones': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
+    }
+
+@functools.lru_cache(maxsize=30)
+def rendered_rite_request(date, item, opt, select, translation, votives):
+    rite = rite_request(date, item, opt, select, translation, votives)
+    return render_rite(date, rite, render_resources())
 
 @functools.lru_cache(maxsize=1)
 def getdisplaykalendar(context):

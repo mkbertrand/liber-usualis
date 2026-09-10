@@ -47,11 +47,11 @@
 	},
 	{
 		"tags":["antiphona-magnificat","repetita"],
-		"caput":""
+		"caput":null
 	},
 	{
 		"tags":["antiphona-magnificat","commemoratio"],
-		"caput":""
+		"caput":null
 	},
 	{
 		"tags":["vesperae","psalmi","simplex"],
@@ -685,6 +685,6 @@
 	},
 	{
 		"tags":["vesperae","capitulum","pascha"],
-		"caput":""
+		"caput":null
 	}
 ]
