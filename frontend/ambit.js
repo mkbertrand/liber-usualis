@@ -77,7 +77,7 @@ const sevenHourTemplater = (type, select, opt) => {
 const defunctAmbit = new Ambit([
 	new Occasion('Matutinum & Laudes', 'matutinum-laudes'),
 	new Occasion('Vesperae', 'vesperae')
-], 'officium-defunctorum', 'officium', '');
+], 'officium-defunctorum', 'ritus', '');
 
 const benedictioMensaeAmbit = new Ambit([
 	new Occasion('Pro Prandio', 'pro-prandio'),
@@ -101,7 +101,7 @@ export function defineAmbit(desired) {
 		case 'omnes':
 			return sevenHourTemplater('officium', 'primarium', '');
 		case 'officium-parvum-bmv':
-			return sevenHourTemplater('officium', 'officium-parvum-bmv', '');
+			return sevenHourTemplater('ritus', 'officium-parvum-bmv', '');
 		case 'semper-cum-opbmv':
       return sevenHourTemplater('officium', 'primarium', 'cum-opbmv');
 		case 'diei':

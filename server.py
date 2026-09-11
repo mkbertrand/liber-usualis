@@ -65,10 +65,6 @@ def bouncetolocale(page):
     finally:
         return redirect(f'/{[loc for loc in locales if loc in version_management.DEFINED_LOCALES][0]}/{page}')
 
-@get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<page:re:pray>/<date>/<time>')
-def pray(preferredlocale, page, date, time):
-    return localpage(preferredlocale, page)
-
 @get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<page:re:{'|'.join(toplevelpages)}>')
 def localpage(preferredlocale, page):
     locales = [preferredlocale]
@@ -90,27 +86,12 @@ def error500tpl(error):
     return template('web/resources/error500.tpl', error=error)
 
 @get('/api/ordo')
-def daytags(vesperal = False):
-    parameters = copy.deepcopy(request.query)
-
-    day = datetime.strptime(parameters['date'], '%Y-%m-%d').date()
-
-    votives = parameters['votives'].replace(' ', '+').split('+')
-
-    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(datamanage.DEFAULT_CORPUS, day, votives) if parameters['time'] == 'vesperale' else kalendar.daily_tagger.get_diurnal(datamanage.DEFAULT_CORPUS, day, votives))
-
-    primary = [i for i in tags if 'primarium' in i][0]
-    commemorations = [[datamanage.DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:datamanage.DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
-    omissions = [[datamanage.DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:datamanage.DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
-    lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
-    lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
-    return util.dump_data({
-            'tags': tags,
-            'primary': [datamanage.DEFAULT_CORPUS.get_name(primary), primary],
-            'commemorations': commemorations,
-            'omissions': omissions,
-            'commemoratio-matutini': [datamanage.DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
-        })
+def ordo(vesperal = False):
+    return util.dump_data(datamanage.ordo(
+        request.query.get('date'),
+        request.query.get('time'),
+        request.query.get('votives', '')
+    ))
 
 # Returns raw JSON so that frontend can format it as it will
 @get('/api/composer')
@@ -144,6 +125,39 @@ def rite() -> str:
         traceback.print_exc()
         print(e)
         abort(500, error500tpl('Error incognitus.'))
+
+PRAYER_TYPES = ['officium', 'ritus']
+@get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<prayer_type:re:{'|'.join(PRAYER_TYPES)}>/<date>/<occasion>')
+def pray(preferredlocale, prayer_type, date, occasion):
+    locales = [preferredlocale]
+    try:
+        locales.extend(version_management.localehunt(request.headers.get('Accept-Language')))
+    finally:
+        if not 'en' in locales:
+            locales.append('en')
+
+        titles = ''
+        for locale in locales:
+            if os.path.exists(f'web/locales/{locale}/resources/page-titles.json'):
+                titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
+        title = titles['pray'] if 'pray' in titles else ''
+
+        match locales[0]:
+            case 'en':
+                translation = 'english'
+            case 'de':
+                translation = 'deutsch'
+            case 'nl':
+                translation = 'nederlands'
+            case _:
+                translation = 'none'
+        options = request.query.get('opt', '')
+        # Shorthand for select (for ergonomics)
+        select = request.query.get('s', 'primarium')
+        # Shorthand for votives (for ergonomics)
+        votives = request.query.get('v', '')
+
+        return template(findmytemplate('pray'), title=title, page='pray', locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), date=date, prayer_type=prayer_type, occasion=occasion, options=options, select=select, translation=translation, votives=votives)
 
 @get('/api/kalendar')
 def kal():

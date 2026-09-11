@@ -1,4 +1,4 @@
-<nav id="sidebar-nav" x-show="sidebarnavopen" x-transition x-data="{
+<nav id="sidebar-nav" x-show="sidebarnavopen" x-cloak x-transition x-data="{
 	pages:[
 		{'path':'/{{locale}}/index', 'name':'{{text['index']}}'},
 		{'path':'/{{locale}}/pray', 'name':'{{text['pray']}}'},

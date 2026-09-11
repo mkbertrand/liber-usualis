@@ -1,5 +1,5 @@
 <div id="options-panel">
-	<template x-if="initialized">
+	<template>
 		<div id="options-panel-require-initialized-container">
 			<div id="coincidences-list-container">
 				<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
@@ -20,12 +20,12 @@
 	<h3 class="options-panel-section-head">{{text['options-panel-title']}}</h3>
 	% if locale != 'la':
 	<div>
-		<input type="checkbox" id="translation-toggle" x-model="parameters.translation" />
+		<input type="checkbox" id="translation-toggle" x-model="displayParameters.showTranslation" />
 		<label for="translation-toggle">{{text['translation-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters['side-by-side']" :disabled="!resolveParameters(parameters).translation" />
-		<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">{{text['side-by-side-toggle']}}</label>
+		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters['side-by-side']" :disabled="!displayParameters.showTranslation" />
+		<label for="side-by-side-toggle" :class="displayParameters.showTranslation ? '' : 'option-disabled'">{{text['side-by-side-toggle']}}</label>
 	</div>
 	% end
 	<div>
@@ -41,7 +41,7 @@
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
 	<div>
-		<input type="checkbox" value="bottompanel" id="bottom-panel-toggle" x-model="bottompanel" />
+		<input type="checkbox" value="bottomPanelEnabled" id="bottom-panel-toggle" x-model="bottomPanelEnabled" />
 		<label for="bottom-panel-toggle">{{text['bottom-panel-toggle']}}</label>
 	</div>
 	<div id="desired-select-wrapper">
@@ -49,14 +49,7 @@
 			['omnes', 'Officium'],
 			['diei', 'Officium diei'],
 			['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
-			['officium-defunctorum', 'Officium Defunctorum'],
-			['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.'],
-			['psalmi-graduales', 'Psalmi Graduales'],
-			['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
-			['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
-			['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis'],
-			['benedictio-mensae', 'Benedictio Mensæ'],
-			['itinerarium', 'Itinerarium Clericorum']
+			['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']
 		]}">
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 			<template x-for="entry in ambitEntries">
@@ -67,6 +60,22 @@
 			</template>
 		</div>
 	</div>
+  <div id="rite-selector-container" x-data="{rites: [
+			['psalmi-graduales', 'Psalmi Graduales'],
+			['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
+			['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
+			['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis'],
+			['pro-prandio', 'Benedictio Mensæ (pro prandio)'],
+			['pro-coena', 'Benedictio Mensæ (pro cœna)'],
+			['itinerarium', 'Itinerarium Clericorum']
+  ]}">
+    <h3 class="options-panel-section-head">Rites</h3>
+    <a href="/{{locale}}/officium/{{date}}/matutinum-laudes?s=officium-defunctorum">Officium Defunctorum (Ad Matutinum et Laudes)</a>
+    <a href="/{{locale}}/officium/{{date}}/vesperae?s=officium-defunctorum">Officium Defunctorum (Ad Vesperas)</a>
+    <template x-for="entry in rites">
+      <a :href="'/{{locale}}/ritus/{{date}}/' + entry[0]" x-text="entry[1]" />
+    </template>
+  </div>
 	<div x-data="{votiveEntries: [
 		['de-sanctis-angelis', 'De Ss. Angelis.'],
 		['de-sanctis-apostolis', 'De Ss. Apostolis.'],

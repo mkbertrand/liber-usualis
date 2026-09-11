@@ -147,6 +147,17 @@ class ChantElement extends HTMLElement {
       return;
     }
 
+    if (this.gabc === undefined) {
+      // Elements upgraded synchronously by the HTML parser (gabc-chant is
+      // already defined before <body> parses) have their constructor run
+      // before the parser appends the token's attributes/children, so
+      // these can't be read in the constructor - read them lazily here,
+      // by which point the element is fully parsed.
+      this.translatedText = this.getAttribute('translated');
+      this.gabc = this.getAttribute('gabc');
+      this.plainContent = this.innerHTML.toString();
+    }
+
     try {
       var mappings = Exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, this.gabc);
       this.score = new Exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !this.gabc.includes('initial-style:0;'));
@@ -184,9 +195,6 @@ class ChantElement extends HTMLElement {
 	constructor() {
 		super();
 
-    this.translatedText = this.getAttribute('translated');
-    this.gabc = this.getAttribute('gabc');
-    this.plainContent = this.innerHTML.toString();
     attachChantPointerControls(this);
 	}
 }
@@ -200,7 +208,7 @@ export function initChantElement() {
   const resizeObserver = new ResizeObserver(resize);
 
   const startObserve = () => {
-    resizeObserver.observe(document.getElementById('site-wrapper'));
+    resizeObserver.observe(document.querySelector('main'));
   }
 
   if (document.readyState === 'loading') {

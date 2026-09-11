@@ -1,0 +1,42 @@
+[
+  {
+    "tags":["cursus"],
+    "datum":[
+      {
+        "caput":"Matutinum & Laudes",
+        "datum":"matutinum-laudes"
+      },
+      {
+        "caput":"Prima",
+        "datum":"prima"
+      },
+      {
+        "caput":"Tertia",
+        "datum":"tertia"
+      },
+      {
+        "caput":"Sexta",
+        "datum":"sexta"
+      },
+      {
+        "caput":"Nona",
+        "datum":"nona"
+      },
+      {
+        "caput":"Vesperæ",
+        "datum":"vesperae"
+      },
+      {
+        "caput":"Completorium",
+        "datum":"completorium"
+      }
+    ]
+  },
+  {
+    "tags":["cursus","officium-defunctorum"],
+    "datum":[
+      "matutinum-laudes",
+      "vesperae"
+    ]
+  }
+]
