@@ -83,9 +83,9 @@
       </div>
     </div>
     % else:
-      <div x-cloak id="options-panel-wrapper-mobile" x-show="optionspanel">
-        % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
-      </div>
+    <div x-cloak id="options-panel-wrapper-mobile" x-show="optionspanel">
+      % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
+    </div>
     % end
     <main id="rite-container" x-html="displayParameters.sideBySide? rite : Pray.lineByLine(rite)" :class="{
       'chant-shown': displayParameters.chant,
@@ -113,7 +113,7 @@
             % end
           </div>
         </div>
-      </template>
-    </div>
+      </div>
+    </template>
   </body>
 </html>
