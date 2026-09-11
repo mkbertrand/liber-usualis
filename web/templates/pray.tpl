@@ -51,11 +51,12 @@
       'desired': 'omnes',
       'priest': true
     }),
+    rite: document.querySelector('main').innerHTML,
     displayParameters: $persist({
       'chant': false,
       'display-trivial-chants': false,
       'showTranslation': true,
-      'side-by-side': false,
+      'sideBySide': false,
       'play-chant': false
     }),
     getURLGoverned() {
@@ -63,7 +64,9 @@
       console.log(pathVariables[3]);
       return {'locale': pathVariables[1], 'prayerType': pathVariables[2], 'date': Temporal.PlainDate.from(pathVariables[3]), 'occasion': pathVariables[4]};
     }
-    }" x-init="console.log(getURLGoverned())">
+    }" x-init="
+    console.log(getURLGoverned())
+  ">
     % include('web/resources/top-bar.tpl', locale=locale, options=True)
     % include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
     <div id="content-container-outer">
@@ -78,12 +81,12 @@
         % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
       </div>
     % end
-    <main id="rite-container" :class="{
+    <main id="rite-container" x-html="displayParameters.sideBySide? rite : Pray.lineByLine(rite)" :class="{
       'chant-shown': displayParameters.chant,
       'chant-hidden': !displayParameters.chant,
       'chant-playback': displayParameters.chant && displayParameters['play-chant'],
-      'side-by-side': displayParameters['side-by-side'] && parameters.translation,
-      'line-by-line': !displayParameters['side-by-side'] && parameters.translation,
+      'side-by-side': displayParameters.sideBySide && parameters.translation,
+      'line-by-line': !displayParameters.sideBySide && parameters.translation,
       'no-translation': !displayParameters.showTranslation
     }">
       {{!rite}}

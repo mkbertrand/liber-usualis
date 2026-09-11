@@ -24,7 +24,7 @@
 		<label for="translation-toggle">{{text['translation-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters['side-by-side']" :disabled="!displayParameters.showTranslation" />
+		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters.sideBySide" :disabled="!displayParameters.showTranslation" />
 		<label for="side-by-side-toggle" :class="displayParameters.showTranslation ? '' : 'option-disabled'">{{text['side-by-side-toggle']}}</label>
 	</div>
 	% end
