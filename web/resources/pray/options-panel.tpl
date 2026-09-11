@@ -88,7 +88,7 @@
 		<div id="votive-office-selection-inner">
 			<template x-for="entry in votiveEntries">
 				<div class="votive-office-entry">
-					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" x-model="parameters.votives[entry[0]]"/>
+					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="contentParameters().votives.includes(entry[0])" @change="toggleVotive(entry[0])"/>
 					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
 				</div>
 			</template>
