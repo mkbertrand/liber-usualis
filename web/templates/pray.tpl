@@ -140,19 +140,17 @@
     </template>
     <script defer>
       document.addEventListener('alpine:init', () => {
-          Alpine.store('theme', {
-              current: document.documentElement.getAttribute('data-theme') || 'light',
-
-              toggle() {
-                  this.current = this.current === 'dark' ? 'light' : 'dark';
-                  localStorage.setItem('theme', this.current);
-              },
-
-              set(value) {
-                  this.current = value;
-                  localStorage.setItem('theme', value);
-              }
-          });
+        Alpine.store('theme', {
+          current: document.documentElement.getAttribute('data-theme') || 'light',
+          toggle() {
+            this.current = this.current === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', this.current);
+          },
+          set(value) {
+            this.current = value;
+            localStorage.setItem('theme', value);
+          }
+        });
       });
     </script>
   </body>
