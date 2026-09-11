@@ -46,15 +46,15 @@
 	</div>
 	<div id="desired-select-wrapper">
 		<div id="desired-select-container" x-data="{ambitEntries: [
-			['omnes', 'Officium'],
-			['diei', 'Officium diei'],
-			['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
-			['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.']
+			['omnes', 'Officium', 'primarium', ''],
+			['diei', 'Officium diei', 'primarium', 'sine-ritibus'],
+			['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''],
+			['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']
 		]}">
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 			<template x-for="entry in ambitEntries">
 				<div>
-					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" x-model="parameters.desired" />
+					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="contentParameters().select == entry[2] && contentParameters().opt == entry[3]" @change="setDesired(entry[2], entry[3])" />
 					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
 				</div>
 			</template>

@@ -153,7 +153,7 @@ def pray(preferredlocale, prayer_type, date, select, occasion):
                 translation = 'nederlands'
             case _:
                 translation = 'none'
-        options = request.query.get('opt', '')
+        options = request.get_cookie('opt', '')
         if select is None:
             select = 'primarium'
         # Shorthand for votives (for ergonomics)

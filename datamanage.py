@@ -63,7 +63,7 @@ def rite_request(date, item, opt, select, translation, votives):
         tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
 
     # We could use the cum-opbmv tag to have separate functionality defined in a data-driven way but this is probably cleaner.
-    if 'cum-opbmv' in rite_tags:
+    if 'cum-opbmv' in options:
         tags = [i - {'omissum'} if 'officium-parvum-bmv' in i else i for i in tags]
 
     tags = [tagset | options for tagset in tags]

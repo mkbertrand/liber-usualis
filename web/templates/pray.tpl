@@ -48,7 +48,6 @@
     bottomPanelEnabled: $persist(false),
     bottomPanelOpen: true,
     parameters: $persist({
-      'desired': 'omnes',
       'priest': true
     }),
     rite: document.querySelector('main').innerHTML,
@@ -64,7 +63,9 @@
       let params = new URLSearchParams(window.location.search);
       let votivestr = params.get('v');
       let votives = votivestr ? votivestr.split('+') : [];
-      return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives};
+      let optMatch = document.cookie.match(/(?:^|;\s*)opt=([^;]*)/);
+      let opt = optMatch ? decodeURIComponent(optMatch[1]) : '';
+      return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives, 'opt': opt};
     },
     makeURL(locale=this.contentParameters().locale, prayerType=this.contentParameters().prayerType, date=this.contentParameters().date, select=this.contentParameters().select, occasion=this.contentParameters().occasion, votives=this.contentParameters().votives) {
       return `/${locale}/${prayerType}/${date}${select == 'primarium' ? '' : '/' + select}/${occasion}${votives.length == 0 ? '' : '?v=' + votives.join('+')}`;
@@ -73,6 +74,15 @@
       let current = this.contentParameters();
       let votives = current.votives.includes(tag) ? current.votives.filter(v => v != tag) : [...current.votives, tag];
       window.location.href = this.makeURL(current.locale, current.prayerType, current.date, current.select, current.occasion, votives);
+    },
+    async setDesired(select, opt) {
+      let current = this.contentParameters();
+      if (opt) {
+        await cookieStore.set({name: 'opt', value: opt, path: '/'});
+      } else {
+        await cookieStore.delete({name: 'opt', path: '/'});
+      }
+      window.location.href = this.makeURL(current.locale, current.prayerType, current.date, select, current.occasion, current.votives);
     }
     }" x-init="
     console.log(contentParameters());
