@@ -37,7 +37,7 @@
 		<label for="play-chant-toggle" :class="displayParameters.chant ? '' : 'option-disabled'">{{text['play-chant-toggle']}}</label>
 	</div>
   <div>
-		<input type="checkbox" id="priest-toggle" x-model="parameters.priest" />
+		<input type="checkbox" id="priest-toggle" :checked="!contentParameters().opt.includes('privata')" @change="togglePriest()" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
 	<div>
@@ -54,7 +54,7 @@
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 			<template x-for="entry in ambitEntries">
 				<div>
-					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="contentParameters().select == entry[2] && contentParameters().opt == entry[3]" @change="setDesired(entry[2], entry[3])" />
+					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="contentParameters().select == entry[2] && contentParameters().opt.filter(t => t != 'privata').join('+') == entry[3]" @change="setDesired(entry[2], entry[3])" />
 					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
 				</div>
 			</template>

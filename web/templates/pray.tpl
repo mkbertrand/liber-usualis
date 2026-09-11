@@ -47,9 +47,6 @@
     optionspanel: false,
     bottomPanelEnabled: $persist(false),
     bottomPanelOpen: true,
-    parameters: $persist({
-      'priest': true
-    }),
     rite: document.querySelector('main').innerHTML,
     displayParameters: $persist({
       'chant': false,
@@ -64,7 +61,7 @@
       let votivestr = params.get('v');
       let votives = votivestr ? votivestr.split('+') : [];
       let optMatch = document.cookie.match(/(?:^|;\s*)opt=([^;]*)/);
-      let opt = optMatch ? decodeURIComponent(optMatch[1]) : '';
+      let opt = optMatch ? decodeURIComponent(optMatch[1]).split('+').filter(t => t) : [];
       return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives, 'opt': opt};
     },
     makeURL(locale=this.contentParameters().locale, prayerType=this.contentParameters().prayerType, date=this.contentParameters().date, select=this.contentParameters().select, occasion=this.contentParameters().occasion, votives=this.contentParameters().votives) {
@@ -75,14 +72,26 @@
       let votives = current.votives.includes(tag) ? current.votives.filter(v => v != tag) : [...current.votives, tag];
       window.location.href = this.makeURL(current.locale, current.prayerType, current.date, current.select, current.occasion, votives);
     },
-    async setDesired(select, opt) {
-      let current = this.contentParameters();
+    async setOpt(tags) {
+      let opt = tags.filter(t => t).join('+');
       if (opt) {
         await cookieStore.set({name: 'opt', value: opt, path: '/'});
       } else {
         await cookieStore.delete({name: 'opt', path: '/'});
       }
+    },
+    async setDesired(select, optTag) {
+      let current = this.contentParameters();
+      let tags = current.opt.filter(t => t == 'privata');
+      if (optTag) tags.push(optTag);
+      await this.setOpt(tags);
       window.location.href = this.makeURL(current.locale, current.prayerType, current.date, select, current.occasion, current.votives);
+    },
+    async togglePriest() {
+      let current = this.contentParameters();
+      let tags = current.opt.includes('privata') ? current.opt.filter(t => t != 'privata') : [...current.opt, 'privata'];
+      await this.setOpt(tags);
+      window.location.href = this.makeURL(current.locale, current.prayerType, current.date, current.select, current.occasion, current.votives);
     }
     }" x-init="
     console.log(contentParameters());
@@ -106,8 +115,8 @@
       'chant-shown': displayParameters.chant,
       'chant-hidden': !displayParameters.chant,
       'chant-playback': displayParameters.chant && displayParameters['play-chant'],
-      'side-by-side': displayParameters.sideBySide && parameters.translation,
-      'line-by-line': !displayParameters.sideBySide && parameters.translation,
+      'side-by-side': displayParameters.sideBySide,
+      'line-by-line': !displayParameters.sideBySide,
       'no-translation': !displayParameters.showTranslation
     }">
       {{!rite}}
