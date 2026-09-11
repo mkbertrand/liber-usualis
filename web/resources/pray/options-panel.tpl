@@ -70,8 +70,8 @@
 			['itinerarium', 'Itinerarium Clericorum']
   ]}">
     <h3 class="options-panel-section-head">Rites</h3>
-    <a href="/{{locale}}/officium/{{date}}/matutinum-laudes?s=officium-defunctorum">Officium Defunctorum (Ad Matutinum et Laudes)</a>
-    <a href="/{{locale}}/officium/{{date}}/vesperae?s=officium-defunctorum">Officium Defunctorum (Ad Vesperas)</a>
+    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
+    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae">Officium Defunctorum (Ad Vesperas)</a>
     <template x-for="entry in rites">
       <a :href="'/{{locale}}/ritus/{{date}}/' + entry[0]" x-text="entry[1]" />
     </template>

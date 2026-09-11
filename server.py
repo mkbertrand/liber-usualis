@@ -127,8 +127,10 @@ def rite() -> str:
         abort(500, error500tpl('Error incognitus.'))
 
 PRAYER_TYPES = ['officium', 'ritus']
-@get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<prayer_type:re:{'|'.join(PRAYER_TYPES)}>/<date>/<occasion>')
-def pray(preferredlocale, prayer_type, date, occasion):
+SELECT = ['officium-parvum-bmv', 'officium-defunctorum']
+
+@get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<prayer_type:re:{'|'.join(PRAYER_TYPES)}>/<date>/<select:re:{'|'.join(SELECT)}>/<occasion>')
+def pray(preferredlocale, prayer_type, date, select, occasion):
     locales = [preferredlocale]
     try:
         locales.extend(version_management.localehunt(request.headers.get('Accept-Language')))
@@ -152,12 +154,16 @@ def pray(preferredlocale, prayer_type, date, occasion):
             case _:
                 translation = 'none'
         options = request.query.get('opt', '')
-        # Shorthand for select (for ergonomics)
-        select = request.query.get('s', 'primarium')
+        if select is None:
+            select = 'primarium'
         # Shorthand for votives (for ergonomics)
         votives = request.query.get('v', '')
 
         return template(findmytemplate('pray'), title=title, page='pray', locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), date=date, prayer_type=prayer_type, occasion=occasion, options=options, select=select, translation=translation, votives=votives)
+
+@get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<prayer_type:re:{'|'.join(PRAYER_TYPES)}>/<date>/<occasion>')
+def pray_select(preferredlocale, prayer_type, date, occasion):
+    return pray(preferredlocale, prayer_type, date, None, occasion)
 
 @get('/api/kalendar')
 def kal():
