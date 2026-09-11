@@ -38,7 +38,6 @@
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
 		<script defer type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    % include('web/resources/theme-store.tpl')
     <script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
 	</head>
@@ -139,5 +138,22 @@
         </div>
       </div>
     </template>
+    <script defer>
+      document.addEventListener('alpine:init', () => {
+          Alpine.store('theme', {
+              current: document.documentElement.getAttribute('data-theme') || 'light',
+
+              toggle() {
+                  this.current = this.current === 'dark' ? 'light' : 'dark';
+                  localStorage.setItem('theme', this.current);
+              },
+
+              set(value) {
+                  this.current = value;
+                  localStorage.setItem('theme', value);
+              }
+          });
+      });
+    </script>
   </body>
 </html>
