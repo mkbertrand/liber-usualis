@@ -33,11 +33,11 @@
 		<label for="chant-toggle">{{text['chant-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="play-chant-toggle" x-model="displayParameters['play-chant']" :disabled="!displayParameters.chant" @change="if (!displayParameters['play-chant']) Pray.stopChantPlayback()" />
+		<input type="checkbox" id="play-chant-toggle" x-model="displayParameters.playChant" :disabled="!displayParameters.chant" @change="if (!displayParameters.playChant) Pray.stopChantPlayback()" />
 		<label for="play-chant-toggle" :class="displayParameters.chant ? '' : 'option-disabled'">{{text['play-chant-toggle']}}</label>
 	</div>
   <div>
-		<input type="checkbox" id="priest-toggle" :checked="!contentParameters().opt.includes('privata')" @change="togglePriest()" />
+		<input type="checkbox" id="priest-toggle" :checked="!$store.router.contentParameters().opt.includes('privata')" @change="$store.router.togglePriest()" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
 	<div>
@@ -54,7 +54,7 @@
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 			<template x-for="entry in ambitEntries">
 				<div>
-					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="contentParameters().select == entry[2] && contentParameters().opt.filter(t => t != 'privata').join('+') == entry[3]" @change="setDesired(entry[2], entry[3])" />
+					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="$store.router.contentParameters().select == entry[2] && $store.router.contentParameters().opt.filter(t => t != 'privata').join('+') == entry[3]" @change="$store.router.setDesired(entry[2], entry[3])" />
 					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
 				</div>
 			</template>
@@ -88,7 +88,7 @@
 		<div id="votive-office-selection-inner">
 			<template x-for="entry in votiveEntries">
 				<div class="votive-office-entry">
-					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="contentParameters().votives.includes(entry[0])" @change="toggleVotive(entry[0])"/>
+					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="$store.router.contentParameters().votives.includes(entry[0])" @change="$store.router.toggleVotive(entry[0])"/>
 					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
 				</div>
 			</template>
