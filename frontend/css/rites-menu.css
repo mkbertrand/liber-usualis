@@ -1,0 +1,74 @@
+/* Rites dropdown, opened from its own top-bar icon (left of the options gear) -
+   a lightweight anchored menu, not a modal pane like the options panel. */
+#rites-menu-toggle-wrapper {
+	position: absolute;
+	top: 18px;
+	right: 66px;
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+}
+
+#rites-menu-icon {
+	height: 100%;
+}
+
+#rites-menu-wrapper {
+	position: fixed;
+	top: calc(var(--top-bar-title-height) + 9px);
+	right: 18px;
+	width: 340px;
+	max-width: calc(100vw - 36px);
+	box-sizing: border-box;
+	background-color: var(--panel-background-color);
+	border: 1px solid var(--border-color);
+	border-radius: 3px;
+	padding: 18px 20px;
+	font-family: "Old Standard TT", times;
+	color: var(--panel-text-color);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#rites-menu-title {
+	text-align: center;
+	font-variant: small-caps;
+	color: var(--rubric);
+	margin: 0;
+	font-weight: normal;
+}
+
+.rites-menu-group {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.rites-menu-group-label {
+	font-variant: small-caps;
+	font-size: 13px;
+	color: var(--panel-text-color-muted);
+}
+
+.rites-menu-pair {
+	display: flex;
+	gap: 24px;
+}
+
+.rites-menu-list {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+
+.rite-link {
+	color: var(--panel-text-color);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.rite-link:hover {
+	color: var(--rubric);
+}
