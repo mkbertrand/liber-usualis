@@ -117,7 +117,7 @@
             let params = new URLSearchParams(window.location.search);
             let votivestr = params.get('v');
             // For whatever reason, + is replaced with space
-            let votives = votivestr ? votivestr.split(' ') : [];
+            let votives = votivestr ? votivestr.replaceAll(' ', '+').split('+') : [];
             let optMatch = document.cookie.match(/(?:^|;\s*)opt=([^;]*)/);
             let opt = optMatch ? decodeURIComponent(optMatch[1]).split('+').filter(t => t) : [];
             return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives, 'opt': opt};
@@ -125,10 +125,10 @@
           makeURL({locale=this.contentParameters().locale, prayerType=this.contentParameters().prayerType, date=this.contentParameters().date, select=this.contentParameters().select, occasion=this.contentParameters().occasion, votives=this.contentParameters().votives} = {}) {
             return `/${locale}/${prayerType}/${date}${select == 'primarium' ? '' : '/' + select}/${occasion}${votives.length == 0 ? '' : '?v=' + votives.join('+')}`;
           },
-          toggleVotive(tag) {
+          async toggleVotive(tag) {
             let current = this.contentParameters();
             let votives = current.votives.includes(tag) ? current.votives.filter(v => v != tag) : [...current.votives, tag];
-            window.location.href = this.makeURL({votives: votives});
+            await this.navigateRite(this.makeURL({votives: votives}));
           },
           async setOpt(tags) {
             let opt = tags.filter(t => t).join('+');
@@ -157,7 +157,7 @@
           },
           async fetchRite(path) {
             let contentParams = this.contentParameters(path=path);
-            return fetch(`/api/rite?loc=${contentParams.locale}&date=${contentParams.date}&s=${contentParams.select}&occasion=${contentParams.occasion}+${contentParams.prayerType}&v=${contentParams.votives}`).then(resp => resp.text());
+            return fetch(`/api/rite?loc=${contentParams.locale}&date=${contentParams.date}&s=${contentParams.select}&occasion=${contentParams.occasion}+${contentParams.prayerType}&v=${contentParams.votives.join('+')}`).then(resp => resp.text());
           },
           async loadRite(path) {
             this.rite = await this.fetchRite(path);
