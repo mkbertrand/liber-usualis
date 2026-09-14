@@ -167,13 +167,17 @@
             history.pushState({}, '', path);
             await this.loadRite(path);
           }
-        })
+        });
         Alpine.directive('rite-link', (el) => {
           el.addEventListener('click', (e) => {
           e.preventDefault();
           Alpine.store('router').navigateRite(new URL(el.href).pathname);
           });
         });
+      });
+      window.addEventListener('popstate', () => {
+        Alpine.store('router').displayPath = location.pathname;
+        Alpine.store('router').navigateRite(location.pathname);
       });
     </script>
   </body>

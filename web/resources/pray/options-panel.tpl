@@ -54,7 +54,7 @@
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 			<template x-for="entry in ambitEntries">
 				<div>
-					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="$store.router.contentParameters().select == entry[2] && $store.router.contentParameters().opt.filter(t => t != 'privata').join('+') == entry[3]" @change="$store.router.setDesired(entry[2], entry[3])" />
+					<input type="radio" name="desired" autocomplete="off" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="$store.router.contentParameters().select == entry[2] && $store.router.contentParameters().opt.filter(t => t != 'privata').join('+') == entry[3]" @change="$store.router.setDesired(entry[2], entry[3])" />
 					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
 				</div>
 			</template>
