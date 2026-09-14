@@ -2,8 +2,7 @@
 
 import * as Exsurge from 'exsurge';
 import { initChantElement, stopChantPlayback } from './gabc-chant.js';
-import { defineAmbit } from './ambit.js';
-export { defineAmbit, stopChantPlayback };
+export { stopChantPlayback };
 initChantElement();
 
 export function abbreviateName(name) {
