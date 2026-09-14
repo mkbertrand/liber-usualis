@@ -12,13 +12,11 @@
 	display: flex;
 }
 
-#side-panel-left, #side-panel-right {
-	width: 0;
-}
-
 #rite-page-container {
 	position: relative;
 	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);
 }

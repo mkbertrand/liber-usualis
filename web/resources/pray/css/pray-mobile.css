@@ -3,6 +3,14 @@
 	font-size: 18px;
 }
 
+/* Never cap/center the content column on mobile - a landscape tablet (this app treats
+   iPad as mobile) can exceed the desktop max-width, and constraining it there would
+   waste screen space rather than help readability the way it does on a desktop monitor. */
+#rite-page-container {
+	max-width: none;
+	margin: 0;
+}
+
 .textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
 	font-size: initial;
 	float: initial;
@@ -15,10 +23,6 @@
 
 #next-hour-button-container {
 	padding: 0 30px 60px 30px;
-}
-
-#next-hour-forbidden-tooltip {
-	top: 5px;
 }
 
 #options-panel-wrapper-mobile {
