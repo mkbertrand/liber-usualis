@@ -253,6 +253,7 @@
           },
           async loadRite(path) {
             this.rite = await this.fetchRite(path);
+            window.scrollTo(0, 0);
           },
           async navigateRite(path) {
             this.displayPath = path;
