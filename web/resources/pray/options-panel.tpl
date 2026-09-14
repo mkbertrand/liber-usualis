@@ -72,8 +72,10 @@
     <h3 class="options-panel-section-head">Rites</h3>
     <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes" x-rite-link>Officium Defunctorum (Ad Matutinum et Laudes)</a>
     <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae" x-rite-link>Officium Defunctorum (Ad Vesperas)</a>
+    % for rite in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis'], ['pro-prandio', 'Benedictio Mensæ (pro prandio)'], ['pro-coena', 'Benedictio Mensæ (pro cœna)'], ['itinerarium', 'Itinerarium Clericorum']]:
+    <a href="/{{locale}}/ritus/{{date}}/{{rite[0]}}" x-rite-link>{{!rite[1]}}</a>
+    % end
     <template x-for="entry in rites">
-      <a :href="'/{{locale}}/ritus/{{date}}/' + entry[0]" x-rite-link x-text="entry[1]" />
     </template>
   </div>
 	<div x-data="{votiveEntries: [
