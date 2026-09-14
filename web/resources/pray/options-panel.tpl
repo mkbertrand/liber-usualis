@@ -70,10 +70,10 @@
 			['itinerarium', 'Itinerarium Clericorum']
   ]}">
     <h3 class="options-panel-section-head">Rites</h3>
-    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
-    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae">Officium Defunctorum (Ad Vesperas)</a>
+    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes" x-rite-link>Officium Defunctorum (Ad Matutinum et Laudes)</a>
+    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae" x-rite-link>Officium Defunctorum (Ad Vesperas)</a>
     <template x-for="entry in rites">
-      <a :href="'/{{locale}}/ritus/{{date}}/' + entry[0]" x-text="entry[1]" />
+      <a :href="'/{{locale}}/ritus/{{date}}/' + entry[0]" x-rite-link x-text="entry[1]" />
     </template>
   </div>
 	<div x-data="{votiveEntries: [
@@ -88,7 +88,7 @@
 		<div id="votive-office-selection-inner">
 			<template x-for="entry in votiveEntries">
 				<div class="votive-office-entry">
-					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="$store.router.contentParameters().votives.includes(entry[0])" @change="$store.router.toggleVotive(entry[0])"/>
+					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="$store.router.contentParameters().votives.includes(entry[0])" @change="$store.router.toggleVotive(entry[0])" />
 					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
 				</div>
 			</template>

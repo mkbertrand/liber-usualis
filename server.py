@@ -113,13 +113,23 @@ def composer():
 @get('/api/rite')
 def rite() -> str:
     try:
+        match request.query.get('loc', 'none'):
+            case 'en':
+                translation = 'english'
+            case 'de':
+                translation = 'deutsch'
+            case 'nl':
+                translation = 'nederlands'
+            case _:
+                translation = 'none'
+
         return datamanage.rendered_rite_request(
             request.query.get('date'),
-            request.query.get('rite'),
-            request.query.get('opt', ''),
-            request.query.get('select', 'primarium'),
-            request.query.get('translation', 'none'),
-            request.query.get('votives', '')
+            request.query.get('occasion'),
+            request.get_cookie('opt', ''),
+            request.query.get('s', 'primarium'),
+            translation,
+            request.query.get('v', '')
         )
     except Exception as e:
         traceback.print_exc()
