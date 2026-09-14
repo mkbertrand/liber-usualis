@@ -24,7 +24,7 @@
 	background-color: var(--overlay-background-color-strong);
 	border: 1px solid var(--border-color);
 	border-radius: 3px;
-	font-family: times;
+	font-family: "Old Standard TT", times;
 	padding: 7px 7px 10px 7px;
 	color: var(--panel-text-color);
 }
@@ -51,7 +51,7 @@
 	border: 1px solid var(--border-color);
 	border-radius: 3px;
 	cursor: pointer;
-	font-family: times;
+	font-family: "Old Standard TT", times;
 	color: var(--panel-text-color);
 	background-color: var(--button-color);
 	color-scheme: var(--native-scheme);
@@ -63,6 +63,8 @@
 	padding-top: 5px;
 	text-align: center;
 	font-size: 24px;
+	color: var(--content-text-color);
+  text-decoration: none;
 }
 
 .date-selector-button:hover {
@@ -83,7 +85,10 @@
 	background-color: var(--button-color);
 	height: 25px;
 	text-align: center;
+  padding-top: 7px;
 	font-size: 16px;
+	color: var(--content-text-color);
+  text-decoration: none;
 }
 
 .rite-selector-button:hover {
