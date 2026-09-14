@@ -71,7 +71,7 @@
 	background-color: var(--button-color-hover);
 }
 
-#rite-selector-container {
+#cursus-rite-selector-container {
 	width: 100%;
 	margin-top: 10px;
 	display: flex;
@@ -81,7 +81,7 @@
 	flex-wrap: wrap;
 }
 
-.rite-selector-button {
+.cursus-rite-selector-button {
 	background-color: var(--button-color);
 	height: 25px;
 	text-align: center;
@@ -91,11 +91,11 @@
   text-decoration: none;
 }
 
-.rite-selector-button:hover {
+.cursus-rite-selector-button:hover {
 	background-color: var(--button-color-hover);
 }
 
-.rite-selector-button-selected {
+.cursus-rite-selector-button-selected {
 	background-color: var(--button-color-toggled) !important;
 }
 
