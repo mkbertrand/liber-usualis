@@ -11,6 +11,21 @@
 % from datetime import datetime, timedelta
 % pdate = datetime.strptime(date, '%Y-%m-%d').date()
 % ordo = datamanage.ordo(date, 'vesperale' if occasion in {'vesperae', 'completorium', 'pro-coena'} else 'diurnale', votives)
+% CURSUS_OCCASIONS = ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium']
+% CURSUS_OCCASION_NAMES = {'matutinum-laudes': 'Matutinum &amp; Laudes', 'prima': 'Prima', 'tertia': 'Tertia', 'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium'}
+% if prayer_type == 'officium' and select != 'officium-defunctorum' and occasion in CURSUS_OCCASIONS:
+%   _cursus_idx = CURSUS_OCCASIONS.index(occasion)
+%   if _cursus_idx == len(CURSUS_OCCASIONS) - 1:
+%     next_hour_date, next_hour_occasion = pdate + timedelta(days=1), CURSUS_OCCASIONS[0]
+%   else:
+%     next_hour_date, next_hour_occasion = pdate, CURSUS_OCCASIONS[_cursus_idx + 1]
+%   end
+%   next_hour_select = select
+% else:
+%   next_hour_date, next_hour_occasion, next_hour_select = pdate, CURSUS_OCCASIONS[0], 'primarium'
+% end
+% next_hour_occasion_name = CURSUS_OCCASION_NAMES[next_hour_occasion]
+% next_hour_href = f"/{locale}/officium/{next_hour_date}{'' if next_hour_select == 'primarium' else f'/{next_hour_select}'}/{next_hour_occasion}{'' if len(votives) == 0 else f'?v={votives}'}"
 
 <html lang="{{locale.split('-')[0]}}" x-data :data-theme="$store.theme.current">
 	<head>
@@ -68,16 +83,34 @@
       % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
     </div>
     % end
-    <main id="rite-container" x-html="displayParameters.sideBySide? $store.router.rite : Pray.lineByLine($store.router.rite)" :class="{
+    <div id="rite-page-container">
+    <main id="rite-container" x-html="(displayParameters.showTranslation && !displayParameters.sideBySide) ? Pray.lineByLine($store.router.rite) : $store.router.rite" :class="{
       'chant-shown': displayParameters.chant,
       'chant-hidden': !displayParameters.chant,
       'chant-playback': displayParameters.chant && displayParameters.playChant,
-      'side-by-side': displayParameters.sideBySide,
-      'line-by-line': !displayParameters.sideBySide,
+      'side-by-side': displayParameters.showTranslation && displayParameters.sideBySide,
+      'line-by-line': displayParameters.showTranslation && !displayParameters.sideBySide,
       'no-translation': !displayParameters.showTranslation
     }">
       {{!rite}}
     </main>
+    <div id="next-hour-button-container" x-intersect.margin.0px.0px.400px.0px="$store.router.recordCursusPosition()">
+      <a
+        id="next-hour-button"
+        href="{{next_hour_href}}"
+        :href="$store.router.nextHourURL()"
+        :class="!$store.router.canGoToNextHour() && 'next-hour-button-forbidden'"
+        :title="$store.router.canGoToNextHour() ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
+        @click.prevent="$store.router.canGoToNextHour() && $store.router.navigateRite($store.router.nextHourURL())"
+      >
+        <span>
+          <span id="next-hour-kicker">{{text['next-hour']}}</span>
+          <span id="next-hour-occasion" x-text="$store.router.CURSUS_OCCASION_NAMES[$store.router.nextHourTarget().occasion]">{{next_hour_occasion_name}}</span>
+        </span>
+        <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
+      </a>
+    </div>
+    </div>
     <template x-if="bottomPanelEnabled">
       <div id="bottom-easy-select-container">
         <button id="bottom-easy-select-hide" @click="bottomPanelOpen = !bottomPanelOpen"><svg id="bottom-easy-select-hide-icon" :class="!bottomPanelOpen && 'bottom-easy-select-hide-icon-closed'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><path fill="currentColor" d="M38.998 15.98 24.003 30.597 9.007 15.98a1.434 1.434 0 0 0-2.004 0 1.365 1.365 0 0 0 0 1.95l15.952 15.554a1.5 1.5 0 0 0 2.095 0l15.952-15.551a1.365 1.365 0 0 0 0-1.956 1.434 1.434 0 0 0-2.004 0z"></path></svg></button>
@@ -112,6 +145,15 @@
         Alpine.store('router', {
           rite: document.querySelector('main').innerHTML,
           displayPath: window.location.pathname,
+          CURSUS_OCCASIONS: ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium'],
+          CURSUS_OCCASION_NAMES: {
+            'matutinum-laudes': 'Matutinum & Laudes', 'prima': 'Prima', 'tertia': 'Tertia',
+            'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium'
+          },
+          // Last-viewed position within the normal seven-hour cursus, kept independent of
+          // whatever's currently on screen (e.g. Officium Defunctorum, a votive Rite) so the
+          // next-hour button can resume the cursus instead of advancing from a detour.
+          lastCursusHour: JSON.parse(localStorage.getItem('lastCursusHour') || 'null'),
           contentParameters(path=this.displayPath) {
             let pathVariables = path.match(/\/(?<locale>[a-z]{2})\/(?<prayerType>officium|ritus)\/(?<date>\d{4}-\d{1,2}-\d{1,2})(?:\/(?<select>officium-parvum-bmv|officium-defunctorum))?\/(?<occasion>[a-z-]+)/).groups;
             let params = new URLSearchParams(window.location.search);
@@ -124,6 +166,56 @@
           },
           makeURL({locale=this.contentParameters().locale, prayerType=this.contentParameters().prayerType, date=this.contentParameters().date, select=this.contentParameters().select, occasion=this.contentParameters().occasion, votives=this.contentParameters().votives} = {}) {
             return `/${locale}/${prayerType}/${date}${select == 'primarium' ? '' : '/' + select}/${occasion}${votives.length == 0 ? '' : '?v=' + votives.join('+')}`;
+          },
+          // The normal seven-hour cursus spans every "desired" ambit (omnes/diei/
+          // officium-parvum-bmv/semper-cum-opbmv) - only Officium Defunctorum and the
+          // standalone Rites fall outside it.
+          isCursus(params = this.contentParameters()) {
+            return params.prayerType == 'officium' && params.select != 'officium-defunctorum'
+              && this.CURSUS_OCCASIONS.includes(params.occasion);
+          },
+          recordCursusPosition() {
+            let current = this.contentParameters();
+            if (this.isCursus(current)) {
+              this.lastCursusHour = {
+                date: current.date.toString(), select: current.select,
+                occasion: current.occasion, votives: current.votives
+              };
+              localStorage.setItem('lastCursusHour', JSON.stringify(this.lastCursusHour));
+            }
+          },
+          nextHourTarget() {
+            let current = this.contentParameters();
+            let base;
+            if (this.isCursus(current)) {
+              base = current;
+            } else if (this.lastCursusHour) {
+              base = {...this.lastCursusHour, date: Temporal.PlainDate.from(this.lastCursusHour.date)};
+            } else {
+              base = {date: Temporal.Now.plainDateISO(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
+            }
+            let idx = this.CURSUS_OCCASIONS.indexOf(base.occasion);
+            let wrapping = idx == this.CURSUS_OCCASIONS.length - 1;
+            return {
+              date: wrapping ? base.date.add({days: 1}) : base.date,
+              occasion: wrapping ? this.CURSUS_OCCASIONS[0] : this.CURSUS_OCCASIONS[idx + 1],
+              select: base.select,
+              votives: base.votives
+            };
+          },
+          nextHourURL() {
+            let target = this.nextHourTarget();
+            return this.makeURL({date: target.date, occasion: target.occasion, select: target.select, votives: target.votives});
+          },
+          // Whether it's licit to jump ahead yet - mirrors the old canIncrementTo(): only
+          // today's next hour, or (from 2pm on) tomorrow's anticipated Matutinum & Laudes.
+          canGoToNextHour() {
+            let target = this.nextHourTarget();
+            let today = Temporal.Now.plainDateISO();
+            if (target.occasion == 'matutinum-laudes' && Temporal.PlainDate.compare(target.date, today.add({days: 1})) == 0) {
+              return Temporal.Now.plainTimeISO().hour >= 14;
+            }
+            return Temporal.PlainDate.compare(target.date, today) == 0;
           },
           async toggleVotive(tag) {
             let current = this.contentParameters();

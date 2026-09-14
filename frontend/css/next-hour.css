@@ -1,37 +1,64 @@
-/* Next hour button. Child of rite-page-container. */
+/* Next hour button. Sibling of rite-container, not a child - #rite-container's
+   content is replaced wholesale on every client-side navigation, so anything
+   living inside it would be wiped out on the next swap. */
 #next-hour-button-container {
-	padding: 0 40px 60px 40px;
 	background-color: var(--content-background-color);
 	color: var(--content-text-color);
 }
 
 #next-hour-button {
-	float: right;
-	font-family: "Old Standard TT", times;
-	font-size: 16px;
+	width: 50%;
+	margin-left: auto;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 20px;
+	border: 1px solid var(--content-border);
+	border-radius: 3px;
 	background-color: transparent;
+	font-family: "Old Standard TT", times;
 	color: var(--content-text-color);
+	text-decoration: none;
+	cursor: pointer;
 }
 
 #next-hour-button:hover {
 	background-color: var(--content-hover);
 }
 
+#next-hour-kicker {
+	display: block;
+	font-variant: small-caps;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	color: var(--rubric);
+}
+
+#next-hour-occasion {
+	display: block;
+	font-variant: small-caps;
+	font-size: 20px;
+	margin-top: 2px;
+}
+
 #next-hour-button-icon {
-	position: relative;
-	top: 4px;
+	flex-shrink: 0;
 	height: 20px;
-	padding-left: 4px;
+	width: 20px;
+}
+
+.next-hour-button-forbidden {
+	cursor: not-allowed;
+	opacity: 0.5;
 }
 
 .next-hour-button-forbidden:hover {
 	background-color: transparent !important;
-	cursor: not-allowed;
 }
 
-#next-hour-forbidden-tooltip {
-	position: relative;
-	top: 6px;
-	font-family: "Old Standard TT", times;
-	font-size: 16px;
+@media (max-width: 600px) {
+	#next-hour-button {
+		width: 100%;
+	}
 }
