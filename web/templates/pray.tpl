@@ -90,7 +90,7 @@
           </div>
           <div id="rite-selector-container">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
-            <a class="{{'rite-selector-button rite-selector-button-selected' if item[0] == occasion else 'rite-selector-button'}}" href="/{{locale}}/officium/{{pdate}}{{'' if select == 'primarium' else f'/{select}'}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link :href="$store.router.makeURL({occasion: '{{item[0]}}'})">{{!item[1]}}</a>
+            <a class="rite-selector-button" :class="$store.router.contentParameters().prayerType == 'officium' && $store.router.contentParameters().select != 'officium-defunctorum' && $store.router.contentParameters().occasion == '{{item[0]}}' ? 'rite-selector-button-selected' : ''" href="/{{locale}}/officium/{{pdate}}{{'' if select == 'primarium' else f'/{select}'}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link :href="$store.router.makeURL({prayerType: 'officium', select: $store.router.contentParameters().select == 'officium-defunctorum' ? 'primarium' : $store.router.contentParameters().select, occasion: '{{item[0]}}'})">{{!item[1]}}</a>
             % end
           </div>
         </div>
@@ -166,7 +166,6 @@
         })
         Alpine.directive('rite-link', (el) => {
           el.addEventListener('click', (e) => {
-          console.log('Clicked');
           e.preventDefault();
           Alpine.store('router').navigateRite(new URL(el.href).pathname);
           });

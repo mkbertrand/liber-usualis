@@ -62,10 +62,10 @@
 	</div>
   <div id="rite-selector-container">
     <h3 class="options-panel-section-head">Rites</h3>
-    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes" x-rite-link>Officium Defunctorum (Ad Matutinum et Laudes)</a>
-    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae" x-rite-link>Officium Defunctorum (Ad Vesperas)</a>
+    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes" x-rite-link :href="$store.router.makeURL({prayerType: 'officium', select: 'officium-defunctorum', occasion: 'matutinum-laudes'})">Officium Defunctorum (Ad Matutinum et Laudes)</a>
+    <a href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae" x-rite-link :href="$store.router.makeURL({prayerType: 'officium', select: 'officium-defunctorum', occasion: 'vesperae'})">Officium Defunctorum (Ad Vesperas)</a>
     % for rite in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis'], ['pro-prandio', 'Benedictio Mensæ (pro prandio)'], ['pro-coena', 'Benedictio Mensæ (pro cœna)'], ['itinerarium', 'Itinerarium Clericorum']]:
-    <a href="/{{locale}}/ritus/{{date}}/{{rite[0]}}" x-rite-link>{{!rite[1]}}</a>
+    <a href="/{{locale}}/ritus/{{date}}/{{rite[0]}}" x-rite-link :href="$store.router.makeURL({prayerType: 'ritus', select: 'primarium', occasion: '{{rite[0]}}'})">{{!rite[1]}}</a>
     % end
   </div>
 	<div x-data="{votiveEntries: [
