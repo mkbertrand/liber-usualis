@@ -143,13 +143,17 @@
             let tags = current.opt.filter(t => t == 'privata');
             if (optTag) tags.push(optTag);
             await this.setOpt(tags);
-            window.location.href = this.makeURL({select: select});
+            if (current.select != select) {
+              await this.navigateRite(this.makeURL({select: select}));
+            } else {
+              await this.loadRite(this.displayPath);
+            }
           },
           async togglePriest() {
             let current = this.contentParameters();
             let tags = current.opt.includes('privata') ? current.opt.filter(t => t != 'privata') : [...current.opt, 'privata'];
             await this.setOpt(tags);
-            window.location.href = this.makeURL();
+            await this.loadRite(this.displayPath);
           },
           async fetchRite(path) {
             let contentParams = this.contentParameters(path=path);
@@ -161,7 +165,7 @@
           async navigateRite(path) {
             this.displayPath = path;
             history.pushState({}, '', path);
-            this.loadRite(path);
+            await this.loadRite(path);
           }
         })
         Alpine.directive('rite-link', (el) => {
