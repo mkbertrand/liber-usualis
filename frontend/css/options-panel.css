@@ -94,4 +94,6 @@
 
 .rite-link {
   display: block;
+	color: var(--content-text-color);
+  text-decoration: none;
 }

@@ -2,6 +2,7 @@
 @import "./rite.css";
 @import "./next-hour.css";
 @import "./bottom-panel.css";
+@import "./rites-menu.css";
 
 /* Containers and overall organization */
 #content-container-outer {
@@ -29,7 +30,7 @@
 
 /* Printing to pdf (or actual printers) */
 @media print {
-	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container {
+	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container, #rites-menu-wrapper {
 		display: none;
 	}
 }

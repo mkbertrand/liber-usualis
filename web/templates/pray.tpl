@@ -59,6 +59,7 @@
   <body x-data="{
     sidebarnavopen: false,
     optionspanel: false,
+    ritesMenuOpen: false,
     bottomPanelEnabled: $persist(false),
     bottomPanelOpen: true,
     displayParameters: $persist({
@@ -70,6 +71,7 @@
     })
     }">
     % include('web/resources/top-bar.tpl', locale=locale, options=True)
+    % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
     % include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
     <div id="content-container-outer">
     % if not mobile:
