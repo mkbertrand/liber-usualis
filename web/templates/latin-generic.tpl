@@ -30,7 +30,21 @@
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
 		<script defer type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    % include('web/resources/theme-store.tpl')
+    <script defer>
+      document.addEventListener('alpine:init', () => {
+        Alpine.store('theme', {
+          current: document.documentElement.getAttribute('data-theme') || 'light',
+          toggle() {
+            this.current = this.current === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', this.current);
+          },
+          set(value) {
+            this.current = value;
+            localStorage.setItem('theme', value);
+          }
+        });
+        });
+    </script>
 	</head>
 	<body>
 		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
