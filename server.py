@@ -79,8 +79,16 @@ def localpage(preferredlocale, page):
             if os.path.exists(f'web/locales/{locale}/resources/page-titles.json'):
                 titles = json.load(open(f'web/locales/{locale}/resources/page-titles.json'))
         title = titles[page] if page in titles else ''
+        mobile = any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad'])
 
-        return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']))
+        if page == 'pray':
+            # Bare /<locale>/pray: no date/occasion was chosen. Render the normal pray
+            # template with no rite composed server-side; the client picks one (based on
+            # local time) and soft-navigates there - see pray.tpl and its router store.
+            return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=mobile,
+                             date=None, prayer_type=None, occasion=None, options='', select='primarium',
+                             translation='none', votives='')
+        return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=mobile)
 
 def error500tpl(error):
     return template('web/resources/error500.tpl', error=error)
@@ -169,7 +177,7 @@ def pray(preferredlocale, prayer_type, date, select, occasion):
         # Shorthand for votives (for ergonomics)
         votives = request.query.get('v', '')
 
-        return template(findmytemplate('pray'), title=title, page='pray', locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), date=date, prayer_type=prayer_type, occasion=occasion, options=options, select=select, translation=translation, votives=votives)
+        return template('web/templates/pray.tpl', title=title, page='pray', locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), date=date, prayer_type=prayer_type, occasion=occasion, options=options, select=select, translation=translation, votives=votives)
 
 @get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<prayer_type:re:{'|'.join(PRAYER_TYPES)}>/<date>/<occasion>')
 def pray_select(preferredlocale, prayer_type, date, occasion):
