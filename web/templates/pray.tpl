@@ -117,14 +117,14 @@
       <a
         id="next-hour-button"
         href="{{next_hour_href}}"
-        :href="$store.router.makeURL($store.router.nextHour())"
-        :class="!$store.router.canGoToNextHour() && 'next-hour-button-forbidden'"
-        :title="$store.router.canGoToNextHour() ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
-        @click.prevent="$store.router.canGoToNextHour() && $store.router.navigateRite($store.router.makeURL($store.router.nextHour()))"
+        :href="$store.router.makeURL($store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()))"
+        :class="!$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) && 'next-hour-button-forbidden'"
+        :title="$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
+        @click.prevent="$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) && $store.router.navigateRite($store.router.makeURL($store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour())))"
       >
         <span>
           <span id="next-hour-kicker">{{text['next-hour']}}</span>
-          <span id="next-hour-occasion" x-text="$store.router.CURSUS_OCCASION_NAMES[$store.router.nextHour().occasion]">{{next_hour_occasion_name}}</span>
+          <span id="next-hour-occasion" x-text="$store.router.CURSUS_OCCASION_NAMES[$store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()).occasion]">{{next_hour_occasion_name}}</span>
         </span>
         <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
       </a>
@@ -166,12 +166,19 @@
           displayPath: window.location.pathname,
           CURSUS_OCCASIONS: ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium'],
           CURSUS_OCCASION_NAMES: {
-            'matutinum-laudes': 'Matutinum & Laudes', 'prima': 'Prima', 'tertia': 'Tertia',
+            'matutinum-laudes': 'Matutinum &amp; Laudes', 'prima': 'Prima', 'tertia': 'Tertia',
             'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium'
           },
-          // Last completed hour within the normal seven hour cursus
-          lastCursusHour: JSON.parse(localStorage.getItem('lastCursusHour') || 'null'),
 
+          // Last completed hour within the normal seven hour cursus
+          lastCompletedHour() {
+            let lastCompleted = JSON.parse(localStorage.getItem('lastCursusHour') || 'null')
+            if (lastCompleted) {
+              return {...lastCompleted, date: Temporal.PlainDate.from(lastCompleted.date)};
+            } else {
+              return {date: Temporal.Now.plainDateISO(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
+            }
+          },
           suggestOccasion() {
             let hour = Temporal.Now.plainTimeISO().hour;
             if (hour < 6 || hour > 21) return 'matutinum-laudes';
@@ -209,33 +216,25 @@
           recordCursusPosition() {
             let current = this.contentParameters();
             if (this.isCursus(current)) {
-              this.lastCursusHour = {
+              let lastCursusHour = {
                 date: current.date.toString(), select: current.select,
                 occasion: current.occasion, votives: current.votives
               };
-              localStorage.setItem('lastCursusHour', JSON.stringify(this.lastCursusHour));
+              localStorage.setItem('lastCursusHour', JSON.stringify(lastCursusHour));
             }
           },
-          nextHour() {
-            let base;
-            if (this.isRitePath(window.location.pathname) && this.isCursus()) {
-              base = this.contentParameters();
-            } else if (this.lastCursusHour) {
-              base = {...this.lastCursusHour, date: Temporal.PlainDate.from(this.lastCursusHour.date)};
-            } else {
-              base = {date: Temporal.Now.plainDateISO(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
-            }
-            let idx = this.CURSUS_OCCASIONS.indexOf(base.occasion);
+          nextHour(current) {
+            let idx = this.CURSUS_OCCASIONS.indexOf(current.occasion);
             let wrapping = idx == this.CURSUS_OCCASIONS.length - 1;
             return {
-              date: wrapping ? base.date.add({days: 1}) : base.date,
+              date: wrapping ? current.date.add({days: 1}) : current.date,
               occasion: wrapping ? this.CURSUS_OCCASIONS[0] : this.CURSUS_OCCASIONS[idx + 1],
-              select: base.select,
-              votives: base.votives
+              select: current.select,
+              votives: current.votives
             };
           },
-          canGoToNextHour() {
-            let target = this.nextHour();
+          canIncrementHour(current) {
+            let target = this.nextHour(current);
             let today = Temporal.Now.plainDateISO();
             if (target.occasion == 'matutinum-laudes' && Temporal.PlainDate.compare(target.date, today.add({days: 1})) == 0) {
               return Temporal.Now.plainTimeISO().hour >= 14;
@@ -280,14 +279,19 @@
             this.rite = await this.fetchRite(path);
             window.scrollTo(0, 0);
           },
-          async navigateRite(path, navigationType='soft') {
+          async navigateRite(path, navigationType='soft', action='push') {
             this.displayPath = path;
-            history.pushState({navigationType: navigationType}, '', path);
+            if (action == 'push') {
+              history.pushState({navigationType: navigationType}, '', path);
+            } else {
+              history.replaceState({navigationType: navigationType}, '', path);
+            }
             await this.loadRite(path);
           },
           async redirect() {
             let locale = window.location.pathname.match(/^\/([a-z]{2})\//)?.[1] || 'en';
-            if (!this.lastCursusHour || !this.canGoToNextHour()) {
+            // We're checking if we actually have a last completed hour recorded - since the function lastCompletedHour() returns a default value rather than null.
+            if (!localStorage.getItem('lastCursusHour') || !this.canIncrementHour(this.lastCompletedHour())) {
               await this.navigateRite(this.makeURL({
                 locale: locale,
                 prayerType: 'officium',
@@ -295,13 +299,17 @@
                 select: 'primarium',
                 occasion: this.suggestOccasion(),
                 votives: []
-              }));
+              }), navigationType='soft', action='replace');
             } else {
-              await this.navigateRite(this.makeURL({...this.nextHour(), locale: locale, prayerType: 'officium'}));
+            console.log(this.lastCompletedHour());
+            console.log(this.nextHour(this.lastCompletedHour()));
+              await this.navigateRite(this.makeURL({...this.nextHour(this.lastCompletedHour()), locale: locale, prayerType: 'officium'}), navigationType='soft', action='replace');
             }
           },
           init() {
-            if (!this.isRitePath(window.location.pathname)) {
+            const [navEntry] = performance.getEntriesByType('navigation');
+            // Note: If no navigationType is available, this condition will be false, so redirection will not occur.
+            if (!this.isRitePath(window.location.pathname) || (navEntry?.type === 'reload' && history.state?.navigationType === 'soft')) {
               this.redirect();
             }
           }
