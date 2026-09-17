@@ -9,13 +9,9 @@
 % import datamanage
 % from datetime import datetime, timedelta
 % CURSUS_OCCASIONS = ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium']
-% CURSUS_OCCASION_NAMES = {'matutinum-laudes': 'Matutinum &amp; Laudes', 'prima': 'Prima', 'tertia': 'Tertia', 'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium'}
+% RITE_TITLES = {'matutinum-laudes': 'Matutinum \N{AMPERSAND} Laudes', 'prima': 'Prima', 'tertia': 'Tertia', 'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium', 'psalmi-graduales': 'Psalmi Graduales', 'psalmi-poenitentiales': 'Psalmi Pœnitentiales', 'ordo-commendationis-animae': 'Ordo Commendationis Animæ', 'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis', 'pro-prandio': 'Benedictio Mensæ (Pro Prandio)', 'pro-coena': 'Benedictio Mensæ (Pro Cœna)', 'itinerarium': 'Itinerarium Clericorum'}
 % if date is None:
-%   # Bare /<locale>/pray: no date/occasion/etc was given, so there's nothing to compose a
-%   # rite from - the client picks one (based on local time) and soft-navigates there, see
-%   # Alpine.store('router').init() below. These are just safe placeholders so this
-%   # (invisible, momentary) initial render doesn't crash; nothing here does the expensive
-%   # rite composition.
+%   # For bare navigation (just navigation to /pray)
 %   rite = ''
 %   pdate = datetime.now().date()
 %   date = str(pdate)
@@ -25,9 +21,15 @@
 %   votives = ''
 %   next_hour_href = '#'
 %   next_hour_occasion_name = ''
+%   day_title = ''
+%   rite_title_for_head = ''
 % else:
 %   rite = datamanage.rendered_rite_request(date, occasion + '+' + prayer_type, options, select, translation, votives)
 %   pdate = datetime.strptime(date, '%Y-%m-%d').date()
+%   # Frontend navigation just steals the title from the generated rite (sorry, I think that making a call to /api/ordo would in fact suck even more)
+%   # so requesting this way relies on the same source of truth and also is cheap since the rite request will've been memoized anyway
+%   day_title = datamanage.rite_request(date, occasion + '+' + prayer_type, options, select, translation, votives)['used-primary'][0]
+%   rite_title_for_head = RITE_TITLES.get(occasion, occasion)
 %   if prayer_type == 'officium' and select != 'officium-defunctorum' and occasion in CURSUS_OCCASIONS:
 %     _cursus_idx = CURSUS_OCCASIONS.index(occasion)
 %     if _cursus_idx == len(CURSUS_OCCASIONS) - 1:
@@ -39,13 +41,17 @@
 %   else:
 %     next_hour_date, next_hour_occasion, next_hour_select = pdate, CURSUS_OCCASIONS[0], 'primarium'
 %   end
-%   next_hour_occasion_name = CURSUS_OCCASION_NAMES[next_hour_occasion]
+%   next_hour_occasion_name = RITE_TITLES[next_hour_occasion]
 %   next_hour_href = f"/{locale}/officium/{next_hour_date}{'' if next_hour_select == 'primarium' else f'/{next_hour_select}'}/{next_hour_occasion}{'' if len(votives) == 0 else f'?v={votives}'}"
 % end
 
 <html lang="{{locale.split('-')[0]}}" x-data :data-theme="$store.theme.current">
 	<head>
+		% if rite_title_for_head == '':
 		<title>{{text['title']}}</title>
+		% else:
+		<title>{{rite_title_for_head}} | {{day_title}} | Liber Usualis</title>
+		% end
 		<script type="application/ld+json">
 		{
 			"@context":"https://schema.org",
@@ -123,7 +129,7 @@
       >
         <span>
           <span id="next-hour-kicker">{{text['next-hour']}}</span>
-          <span id="next-hour-occasion" x-text="$store.router.CURSUS_OCCASION_NAMES[$store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()).occasion]">{{!next_hour_occasion_name}}</span>
+          <span id="next-hour-occasion" x-text="$store.router.RITE_TITLES[$store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()).occasion]">{{!next_hour_occasion_name}}</span>
         </span>
         <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
       </a>
@@ -164,9 +170,14 @@
           rite: document.querySelector('main').innerHTML,
           displayPath: window.location.pathname,
           CURSUS_OCCASIONS: ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium'],
-          CURSUS_OCCASION_NAMES: {
-            'matutinum-laudes': 'Matutinum &amp; Laudes', 'prima': 'Prima', 'tertia': 'Tertia',
-            'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium'
+          RITE_TITLES: {
+            'matutinum-laudes': 'Matutinum & Laudes', 'prima': 'Prima', 'tertia': 'Tertia',
+            'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium',
+            'psalmi-graduales': 'Psalmi Graduales', 'psalmi-poenitentiales': 'Psalmi Pœnitentiales',
+            'ordo-commendationis-animae': 'Ordo Commendationis Animæ',
+            'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis',
+            'pro-prandio': 'Benedictio Mensæ (Pro Prandio)', 'pro-coena': 'Benedictio Mensæ (Pro Cœna)',
+            'itinerarium': 'Itinerarium Clericorum'
           },
 
           // Last completed hour within the normal seven hour cursus
@@ -276,6 +287,12 @@
           },
           async loadRite(path) {
             this.rite = await this.fetchRite(path);
+            // day_title, straight from the same <h1 class="large-title"> the page displays -
+            // no separate /api/ordo round-trip needed. Strip the single trailing period
+            // rite_title() (renderer/rendering_utils.py) always appends.
+            let match = this.rite.match(/<h1 class="large-title">(.*?)<\/h1>/);
+            let dayTitle = match ? match[1].replace(/\.$/, '') : '';
+            document.title = `${this.RITE_TITLES[this.contentParameters(path).occasion]} | ${dayTitle} | Liber Usualis`;
             window.scrollTo(0, 0);
           },
           async navigateRite(path, navigationType='soft', action='push') {
