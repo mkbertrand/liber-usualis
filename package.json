@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "exsurge": "github:bbloomf/exsurge#0c39f61eb17c59228202bcbdfe0f92c47dfc8f34",
-    "hypher": "^0.2.5"
+    "exsurge": "github:bbloomf/exsurge#0c39f61eb17c59228202bcbdfe0f92c47dfc8f34"
   },
   "devDependencies": {
     "esbuild": "0.28.1"

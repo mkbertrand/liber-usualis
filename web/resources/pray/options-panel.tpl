@@ -1,22 +1,4 @@
 <div id="options-panel">
-	<template>
-		<div id="options-panel-require-initialized-container">
-			<div id="coincidences-list-container">
-				<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
-				<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-				<div id="primary-entry" class="coincidence-entry" x-text="Pray.abbreviateName(liturgicalDay.primary[0])"></div>
-				<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-				<template x-for="commemoration in liturgicalDay.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
-					<div class="coincidence-entry" x-text="Pray.abbreviateName(commemoration[0])"></div>
-				</template>
-				<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-				<template x-for="omission in liturgicalDay.omissions">
-					<div class="coincidence-entry" x-text="Pray.abbreviateName(omission[0])"></div>
-				</template>
-				<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
-			</div>
-		</div>
-	</template>
 	<h3 class="options-panel-section-head">{{text['options-panel-title']}}</h3>
 	% if locale != 'la':
 	<div>

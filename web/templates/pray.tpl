@@ -28,7 +28,6 @@
 % else:
 %   rite = datamanage.rendered_rite_request(date, occasion + '+' + prayer_type, options, select, translation, votives)
 %   pdate = datetime.strptime(date, '%Y-%m-%d').date()
-%   ordo = datamanage.ordo(date, 'vesperale' if occasion in {'vesperae', 'completorium', 'pro-coena'} else 'diurnale', votives)
 %   if prayer_type == 'officium' and select != 'officium-defunctorum' and occasion in CURSUS_OCCASIONS:
 %     _cursus_idx = CURSUS_OCCASIONS.index(occasion)
 %     if _cursus_idx == len(CURSUS_OCCASIONS) - 1:
