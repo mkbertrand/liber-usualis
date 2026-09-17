@@ -301,8 +301,6 @@
                 votives: []
               }), navigationType='soft', action='replace');
             } else {
-            console.log(this.lastCompletedHour());
-            console.log(this.nextHour(this.lastCompletedHour()));
               await this.navigateRite(this.makeURL({...this.nextHour(this.lastCompletedHour()), locale: locale, prayerType: 'officium'}), navigationType='soft', action='replace');
             }
           },
