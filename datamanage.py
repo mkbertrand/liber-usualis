@@ -47,7 +47,6 @@ def ordo(date: str, time: str, votives: str):
         'commemorations': commemorations,
         'omissions': omissions,
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None,
-        'cursus': DEFAULT_CORPUS.compose({'cursus'}, primary, [])
     }
 
 @functools.lru_cache(maxsize=30)
