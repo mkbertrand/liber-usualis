@@ -28,15 +28,18 @@
 :root {
 	--panel-background-color: #ffffff;
 	--border-color: #efe9e9;
-	--button-color: #eee;
-	--button-color-hover: #e0b0b0;
-	--button-color-toggled: #e6b0b0;
 	--site-background-color: #fcf5eb;
 	--panel-text-color: #000000;
 	--panel-text-color-muted: #333333;
 	--overlay-background-color: rgba(249, 249, 249, .7);
 	--overlay-background-color-strong: rgba(249, 249, 249, .8);
-	--top-bar-title-height: 75px;
+
+	--top-bar-title-height: 85px;
+  --component-border-radius: 5px;
+	--button-color: #eee;
+	--button-color-hover: #e0b0b0;
+	--button-color-toggled: #e6b0b0;
+  --button-text-color: black;
 
 	/* Variables used for the actual page content. */
 	--content-background-color: #ffffff;
@@ -92,10 +95,73 @@ body {
 	width: 100%;
 	height: var(--top-bar-title-height) !important;
 	background-color: var(--panel-background-color);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--panel-background-color);
+  box-shadow: 0px 1px 3px #dedede80;
 	z-index: 2;
+  padding: 9px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
 }
 
+#top-bar-left-aligned-container, #top-bar-right-aligned-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Logo stuff */
+#project-logo {
+	height: 100%;
+}
+
+#logo-link-wrapper {
+	width: fit-content;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	object-fit: contain;
+	width: auto;
+	height: 100%;
+}
+
+#pray-navigation-link, #pray-navigation-link:visited {
+  background-color: var(--button-color);
+  border-radius: var(--component-border-radius);
+  height: 100%;
+  aspect-ratio: 5 / 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Arsenal";
+  font-size: 24px;
+  color: var(--button-text-color);
+}
+
+.navigation-link, #navigation-link:visited {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Arsenal";
+  font-size: 18px;
+  color: var(--button-text-color);
+}
+
+#top-bar-right-aligned-container {
+  justify-content: flex-end;
+}
+
+.top-bar-button-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Menu for picking language manually. Lives in the sidebar nav's footer
    (sidemenu.tpl), alongside the dark mode toggle. */
 #locale-selector {
@@ -103,7 +169,7 @@ body {
 	font-family: times;
 	font-size: 16px;
 	background-color: var(--button-color);
-	border-radius: 3px;
+	border-radius: var(--component-border-radius);
 	border: none;
 	color: var(--panel-text-color);
 	cursor: pointer;
@@ -127,24 +193,6 @@ body {
 
 #dark-mode-toggle:hover {
 	background-color: var(--button-color-hover);
-}
-
-/* Logo stuff */
-#project-logo {
-	width: 100%;
-	height: 100%;
-}
-
-#logo-link-wrapper {
-	width: fit-content;
-	height: 100%;
-	margin: 0 auto;
-}
-
-#logo {
-	object-fit: contain;
-	width: auto;
-	height: 100%;
 }
 
 /* Side bar which is opened from the top bar */
