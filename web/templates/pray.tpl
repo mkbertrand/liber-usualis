@@ -122,14 +122,14 @@
       <a
         id="next-hour-button"
         href="{{next_hour_href}}"
-        :href="$store.router.makeURL($store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()))"
+        :href="Pray.makePath(Pray.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()))"
         :class="!$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) && 'next-hour-button-forbidden'"
         :title="$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
-        @click.prevent="$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) && $store.router.navigateRite($store.router.makeURL($store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour())))"
+        @click.prevent="$store.router.canIncrementHour($store.router.contentParameters() || $store.router.lastCompletedHour()) && $store.router.navigateRite(Pray.makePath(Pray.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour())))"
       >
         <span>
           <span id="next-hour-kicker">{{text['next-hour']}}</span>
-          <span id="next-hour-occasion" x-text="$store.router.RITE_TITLES[$store.router.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()).occasion]">{{!next_hour_occasion_name}}</span>
+          <span id="next-hour-occasion" x-text="$store.router.RITE_TITLES[Pray.nextHour($store.router.contentParameters() || $store.router.lastCompletedHour()).occasion]">{{!next_hour_occasion_name}}</span>
         </span>
         <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
       </a>
@@ -140,14 +140,14 @@
         <button id="bottom-easy-select-hide" @click="bottomPanelOpen = !bottomPanelOpen"><svg id="bottom-easy-select-hide-icon" :class="!bottomPanelOpen && 'bottom-easy-select-hide-icon-closed'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><path fill="currentColor" d="M38.998 15.98 24.003 30.597 9.007 15.98a1.434 1.434 0 0 0-2.004 0 1.365 1.365 0 0 0 0 1.95l15.952 15.554a1.5 1.5 0 0 0 2.095 0l15.952-15.551a1.365 1.365 0 0 0 0-1.956 1.434 1.434 0 0 0-2.004 0z"></path></svg></button>
         <div id="bottom-easy-select-content-container" x-show="bottomPanelOpen" x-transition>
           <div id="date-selector-container" x-data="{search: '{{date}}'}" x-init="$watch('$store.router.displayPath', () => { search = $store.router.contentParameters().date?.toString() ?? search })">
-            <a id="date-selector-decrement" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate - timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="$store.router.makeURL({date: $store.router.contentParameters().date.subtract({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"></path><path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path></g></svg></a>
+            <a id="date-selector-decrement" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate - timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...$store.router.contentParameters(), date: $store.router.contentParameters().date.subtract({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"></path><path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path></g></svg></a>
             <input id="date-selector-text" type="date" x-model="search">
-            <a id="date-selector-text-submit" class="date-selector-button" x-rite-link:hard :href="$store.router.makeURL({date:search})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789"></path><path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708"></path></g></svg></a>
-            <a id="date-selector-increment" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate + timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="$store.router.makeURL({date: $store.router.contentParameters().date.add({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg></a>
+            <a id="date-selector-text-submit" class="date-selector-button" x-rite-link:hard :href="Pray.makePath({...$store.router.contentParameters(), date:search})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789"></path><path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708"></path></g></svg></a>
+            <a id="date-selector-increment" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate + timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...$store.router.contentParameters(), date: $store.router.contentParameters().date.add({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg></a>
           </div>
           <div id="cursus-rite-selector-container">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
-            <a class="cursus-rite-selector-button" :class="$store.router.contentParameters().prayerType == 'officium' && $store.router.contentParameters().select != 'officium-defunctorum' && $store.router.contentParameters().occasion == '{{item[0]}}' ? 'cursus-rite-selector-button-selected' : ''" href="/{{locale}}/officium/{{pdate}}{{'' if select == 'primarium' else f'/{select}'}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="$store.router.makeURL({prayerType: 'officium', select: $store.router.contentParameters().select == 'officium-defunctorum' ? 'primarium' : $store.router.contentParameters().select, occasion: '{{item[0]}}'})">{{!item[1]}}</a>
+            <a class="cursus-rite-selector-button" :class="$store.router.contentParameters().prayerType == 'officium' && $store.router.contentParameters().select != 'officium-defunctorum' && $store.router.contentParameters().occasion == '{{item[0]}}' ? 'cursus-rite-selector-button-selected' : ''" href="/{{locale}}/officium/{{pdate}}{{'' if select == 'primarium' else f'/{select}'}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...$store.router.contentParameters(), prayerType: 'officium', select: $store.router.contentParameters().select == 'officium-defunctorum' ? 'primarium' : $store.router.contentParameters().select, occasion: '{{item[0]}}'})">{{!item[1]}}</a>
             % end
           </div>
         </div>
@@ -199,11 +199,8 @@
             if (hour < 20) return 'vesperae';
             return 'completorium';
           },
-          isRitePath(path) {
-            return /\/[a-z]{2}\/(officium|ritus)\/\d{4}-\d{1,2}-\d{1,2}(\/|$)/.test(path);
-          },
           contentParameters(path=this.displayPath) {
-            if (!this.isRitePath(path)) return {};
+            if (!Pray.isRitePath(path)) return {};
             let pathVariables = path.match(/\/(?<locale>[a-z]{2})\/(?<prayerType>officium|ritus)\/(?<date>\d{4}-\d{1,2}-\d{1,2})(?:\/(?<select>officium-parvum-bmv|officium-defunctorum))?\/(?<occasion>[a-z-]+)/).groups;
             let params = new URLSearchParams(window.location.search);
             let votivestr = params.get('v');
@@ -213,19 +210,9 @@
             let opt = optMatch ? decodeURIComponent(optMatch[1]).split('+').filter(t => t) : [];
             return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives, 'opt': opt};
           },
-          makeURL({locale=this.contentParameters().locale, prayerType=this.contentParameters().prayerType, date=this.contentParameters().date, select=this.contentParameters().select, occasion=this.contentParameters().occasion, votives=this.contentParameters().votives} = {}) {
-            return `/${locale}/${prayerType}/${date}${select == 'primarium' ? '' : '/' + select}/${occasion}${votives.length == 0 ? '' : '?v=' + votives.join('+')}`;
-          },
-          // The normal seven-hour cursus spans every "desired" ambit (omnes/diei/
-          // officium-parvum-bmv/semper-cum-opbmv) - only Officium Defunctorum and the
-          // standalone Rites fall outside it.
-          isCursus(params = this.contentParameters()) {
-            return params.prayerType == 'officium' && params.select != 'officium-defunctorum'
-              && this.CURSUS_OCCASIONS.includes(params.occasion);
-          },
           recordCursusPosition() {
             let current = this.contentParameters();
-            if (this.isCursus(current)) {
+            if (Pray.isCursus(current)) {
               let lastCursusHour = {
                 date: current.date.toString(), select: current.select,
                 occasion: current.occasion, votives: current.votives
@@ -233,18 +220,8 @@
               localStorage.setItem('lastCursusHour', JSON.stringify(lastCursusHour));
             }
           },
-          nextHour(current) {
-            let idx = this.CURSUS_OCCASIONS.indexOf(current.occasion);
-            let wrapping = idx == this.CURSUS_OCCASIONS.length - 1;
-            return {
-              date: wrapping ? current.date.add({days: 1}) : current.date,
-              occasion: wrapping ? this.CURSUS_OCCASIONS[0] : this.CURSUS_OCCASIONS[idx + 1],
-              select: current.select,
-              votives: current.votives
-            };
-          },
           canIncrementHour(current) {
-            let target = this.nextHour(current);
+            let target = Pray.nextHour(current);
             let today = Temporal.Now.plainDateISO();
             if (target.occasion == 'matutinum-laudes' && Temporal.PlainDate.compare(target.date, today.add({days: 1})) == 0) {
               return Temporal.Now.plainTimeISO().hour >= 14;
@@ -254,7 +231,7 @@
           async toggleVotive(tag) {
             let current = this.contentParameters();
             let votives = current.votives.includes(tag) ? current.votives.filter(v => v != tag) : [...current.votives, tag];
-            await this.navigateRite(this.makeURL({votives: votives}));
+            await this.navigateRite(Pray.makePath({...current, votives: votives}));
           },
           async setOpt(tags) {
             let opt = tags.filter(t => t).join('+');
@@ -270,7 +247,7 @@
             if (optTag) tags.push(optTag);
             await this.setOpt(tags);
             if (current.select != select) {
-              await this.navigateRite(this.makeURL({select: select}));
+              await this.navigateRite(Pray.makePath({...current, select: select}));
             } else {
               await this.loadRite(this.displayPath);
             }
@@ -308,7 +285,7 @@
             let locale = window.location.pathname.match(/^\/([a-z]{2})\//)?.[1] || 'en';
             // We're checking if we actually have a last completed hour recorded - since the function lastCompletedHour() returns a default value rather than null.
             if (!localStorage.getItem('lastCursusHour') || !this.canIncrementHour(this.lastCompletedHour())) {
-              await this.navigateRite(this.makeURL({
+              await this.navigateRite(Pray.makePath({
                 locale: locale,
                 prayerType: 'officium',
                 date: Temporal.Now.plainDateISO().toString(),
@@ -317,13 +294,13 @@
                 votives: []
               }), navigationType='soft', action='replace');
             } else {
-              await this.navigateRite(this.makeURL({...this.nextHour(this.lastCompletedHour()), locale: locale, prayerType: 'officium'}), navigationType='soft', action='replace');
+              await this.navigateRite(Pray.makePath({...Pray.nextHour(this.lastCompletedHour()), locale: locale, prayerType: 'officium'}), navigationType='soft', action='replace');
             }
           },
           init() {
             const [navEntry] = performance.getEntriesByType('navigation');
             // Note: If no navigationType is available, this condition will be false, so redirection will not occur.
-            if (!this.isRitePath(window.location.pathname) || (navEntry?.type === 'reload' && history.state?.navigationType === 'soft')) {
+            if (!Pray.isRitePath(window.location.pathname) || (navEntry?.type === 'reload' && history.state?.navigationType === 'soft')) {
               this.redirect();
             }
           }
@@ -339,7 +316,7 @@
       });
       window.addEventListener('popstate', () => {
         let router = Alpine.store('router');
-        if (router.isRitePath(location.pathname)) {
+        if (Pray.isRitePath(location.pathname)) {
           router.displayPath = location.pathname;
           router.navigateRite(location.pathname);
         } else {

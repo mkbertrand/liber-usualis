@@ -39,3 +39,6 @@ export function lineByLine(rite) {
   }
   return riteRet.join('');
 }
+
+import { isRitePath, contentParameters, makePath, isCursus, nextHour } from './pray-store.js';
+export { isRitePath, contentParameters, makePath, isCursus, nextHour };
