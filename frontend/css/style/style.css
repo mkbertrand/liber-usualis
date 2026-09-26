@@ -64,6 +64,15 @@ body {
 	width: 100%;
 }
 
+#content-container {
+	position: relative;
+	min-height: 50vh;
+	max-width: 140em;
+	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
+	padding: 10px 40px;
+	background-color: var(--content-background-color);
+}
+
 @media print {
 	#top-bar-title {
 		display: none;
