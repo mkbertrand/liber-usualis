@@ -9,8 +9,8 @@ h1 {
 }
 
 h2 {
-  font-family: "Arsenal", sans-serif;
-  color: var(--content-text-color);
+	font-family: "Old Standard TT", times;
+	color: var(--rubric);
 	font-size: 24px;
 	font-weight: normal;
 }
@@ -20,14 +20,15 @@ h2 {
 }
 
 h3 {
-  font-family: "Arsenal", sans-serif;
+	font-family: "Old Standard TT", times;
 	color: var(--content-text-color);
 	font-size: 20px;
 	font-weight: normal;
 }
 
 p, ol, ul {
-  font-family: "Arsenal", sans-serif;
+	font-family: "Old Standard TT", times;
 	font-size: 18px;
 	color: var(--content-text-color);
 }
+
