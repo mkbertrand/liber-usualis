@@ -79,7 +79,6 @@
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
 	</head>
   <body x-data="{
-    sidebarnavopen: false,
     optionspanel: false,
     ritesMenuOpen: false,
     bottomPanelEnabled: $persist(false),
@@ -92,9 +91,8 @@
       'playChant': false
     })
     }">
-    % include('web/resources/top-bar.tpl', locale=locale, options=True)
+    % include('web/resources/top-bar.tpl', locale=locale, options=True, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
-    % include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
     <div id="content-container-outer">
     % if not mobile:
     <div x-cloak id="options-panel-background" x-show="optionspanel">

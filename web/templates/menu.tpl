@@ -48,9 +48,8 @@
     </script>
 	</head>
 	<body>
-		<div id="site-wrapper-home" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
-			% include('web/resources/top-bar.tpl', locale=locale, options=False)
-			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
+		<div id="site-wrapper-home" x-cloak x-data="{locale: '{{locale}}'}">
+			% include('web/resources/top-bar.tpl', locale=locale, options=False, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
 			<div id="content-container-home">
 				% include(f'web/pages/{page}.tpl', text=json.load(open(version_management.bestlocalized(f'/pages/{page}.json', locales))), locale=locale)
 			</div>

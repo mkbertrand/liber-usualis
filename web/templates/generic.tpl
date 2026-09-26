@@ -46,9 +46,8 @@
     </script>
 	</head>
 	<body>
-		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
-			% include('web/resources/top-bar.tpl', locale=locale, options=False)
-			% include('web/resources/sidemenu.tpl', preferredlocale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
+		<div id="site-wrapper" x-cloak x-data="{locale: '{{locale}}'}">
+			% include('web/resources/top-bar.tpl', locale=locale, options=False, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
 			% include(version_management.bestlocalized(f'/pages/{page}.html', locales))
 		</div>
 	</body>
