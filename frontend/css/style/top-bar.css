@@ -1,0 +1,106 @@
+/* Top bar and its items' style */
+#top-bar-title {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--top-bar-title-height) !important;
+	background-color: var(--panel-background-color);
+	border-bottom: 1px solid var(--panel-background-color);
+  box-shadow: 0px 1px 3px #dedede80;
+	z-index: 2;
+  padding: 9px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+}
+
+#top-bar-left-aligned-container, #top-bar-right-aligned-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Logo stuff */
+#project-logo {
+	height: 100%;
+}
+
+#logo-link-wrapper {
+	width: fit-content;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	object-fit: contain;
+	width: auto;
+	height: 100%;
+}
+
+#pray-navigation-link, #pray-navigation-link:visited {
+  background-color: var(--button-color);
+  border-radius: var(--component-border-radius);
+  height: 100%;
+  aspect-ratio: 5 / 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Arsenal", sans-serif;
+  font-size: 24px;
+  color: var(--button-text-color);
+}
+
+.navigation-link, #navigation-link:visited {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Arsenal", sans-serif;
+  font-size: 18px;
+  color: var(--button-text-color);
+}
+
+#top-bar-right-aligned-container {
+  justify-content: flex-end;
+}
+
+.top-bar-button-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Menu for picking language manually. Lives in the top bar alongside the
+   dark mode toggle. */
+#locale-selector {
+	height: 35px;
+	font-family: times;
+	font-size: 16px;
+	background-color: var(--button-color);
+	border-radius: var(--component-border-radius);
+	border: none;
+	color: var(--panel-text-color);
+	cursor: pointer;
+	padding: 0 10px;
+}
+
+#locale-selector:hover {
+	background-color: var(--button-color-hover);
+}
+
+/* Site-wide dark mode toggle. Lives in the top bar alongside the locale
+   selector. */
+#dark-mode-toggle {
+	height: 35px;
+	width: 35px;
+	padding: 7px;
+	border-radius: 3px;
+	background-color: transparent;
+	color: var(--panel-text-color);
+}
+
+#dark-mode-toggle:hover {
+	background-color: var(--button-color-hover);
+}

@@ -380,7 +380,9 @@
     note list. Horizontal drag seeks the playhead to the nearest note; vertical
     swipe still scrolls the page. Playback is presentation-only. The frontend
     sources are bundled from =frontend/pray.js= into =web/resources/dist/pray.js=;
-    styles are bundled from =frontend/css/pray.css= into =web/resources/dist/pray.css=.
+    styles are bundled from =frontend/css/pray/pray.css= into =web/resources/dist/pray.css=.
+    Site-wide styles (fonts, theme variables, top bar) are bundled from
+    =frontend/css/style/style.css= into =web/resources/dist/style.css=.
 
    =web/resources/pray/js/pray-window.js= maps UI locales to translation books and
    handles responsive panel sizing. It does not own the primary Alpine event flow.

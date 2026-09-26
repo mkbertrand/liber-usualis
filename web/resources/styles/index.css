@@ -3,7 +3,7 @@
 }
 
 #presents-small-text {
-  font-family:"Arsenal";
+  font-family:"Arsenal", sans-serif;
   margin: -10px 0 -20px 0;
 }
 
@@ -109,6 +109,21 @@
   gap: 7px;
 }
 
+.nav-element-link {
+	min-width: 100px;
+	height: 40px;
+	padding: 12px 5px 0 5px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: var(--panel-text-color);
+	text-decoration: none;
+}
+
+.nav-element-link:hover {
+	background-color: var(--button-color-hover);
+}
 .nav-element-text {
 	font-family: "Old Standard TT", times;
+  font-size: 20px;
 }

@@ -184,7 +184,7 @@
             chmod -R u+w "$PWD/data/generated/liber-usualis-chant" "$PWD/data/generated/fcc"
             ${pkgs.coreutils}/bin/cp -Rsf ${chant}/. "$PWD/data/generated/liber-usualis-chant/"
             ${pkgs.coreutils}/bin/cp -Rsf ${fcc}/. "$PWD/data/generated/fcc/"
-            ${pkgs.coreutils}/bin/rm -f "$PWD/web/resources/dist"/{pray.js,pray.js.map,pray.css,pray.css.map}
+            ${pkgs.coreutils}/bin/rm -f "$PWD/web/resources/dist"/{pray.js,pray.js.map,pray.css,pray.css.map,style.css,style.css.map}
             ${pkgs.coreutils}/bin/cp ${frontendAssets}/* "$PWD/web/resources/dist/"
             ${pkgs.coreutils}/bin/chmod u+w "$PWD/web/resources/dist"/*
           '';

@@ -22,7 +22,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei-icon.png">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei-apple-touch-icon.png">
-		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/style.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/menu.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource(f'/styles/{page}.css')}}>
 		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
