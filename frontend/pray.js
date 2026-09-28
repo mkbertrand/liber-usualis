@@ -40,5 +40,13 @@ export function lineByLine(rite) {
   return riteRet.join('');
 }
 
-import { isRitePath, contentParameters, makePath, isCursus, nextHour } from './pray-store.js';
-export { isRitePath, contentParameters, makePath, isCursus, nextHour };
+import { makePrayStore, loadRite, navigateRite, lastCompletedHour } from './pray-store.js';
+
+document.addEventListener('alpine:init', () => {
+  window.Alpine.store('pray', makePrayStore());
+});
+
+import { isRitePath, contentParameters, makePath, isCursus, nextHour, RITE_TITLES } from './routing.js';
+export { isRitePath, contentParameters, makePath, isCursus, nextHour, loadRite, navigateRite, RITE_TITLES, lastCompletedHour };
+import { toggleVotive, setDesired, togglePriest, canSay, canIncrementHour, markAsDone } from './pray-actions.js';
+export { toggleVotive, setDesired, togglePriest, canSay, canIncrementHour, markAsDone };

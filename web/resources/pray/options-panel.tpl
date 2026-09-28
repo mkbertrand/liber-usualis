@@ -19,7 +19,7 @@
 		<label for="play-chant-toggle" :class="displayParameters.chant ? '' : 'option-disabled'">{{text['play-chant-toggle']}}</label>
 	</div>
   <div>
-		<input type="checkbox" id="priest-toggle" :checked="!$store.router.contentParameters().opt.includes('privata')" @change="$store.router.togglePriest()" />
+		<input type="checkbox" id="priest-toggle" :checked="!$store.pray.opt.includes('privata')" @change="Pray.togglePriest($store.pray)" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
 	<div>
@@ -36,7 +36,7 @@
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
 			<template x-for="entry in ambitEntries">
 				<div>
-					<input type="radio" name="desired" autocomplete="off" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="$store.router.contentParameters().select == entry[2] && $store.router.contentParameters().opt.filter(t => t != 'privata').join('+') == entry[3]" @change="$store.router.setDesired(entry[2], entry[3])" />
+					<input type="radio" name="desired" autocomplete="off" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="Pray.contentParameters($store.pray.displayPath).select == entry[2] && $store.pray.opt.filter(t => t != 'privata').join('+') == entry[3]" @change="Pray.setDesired($store.pray, entry[2], entry[3])" />
 					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
 				</div>
 			</template>
@@ -54,7 +54,7 @@
 		<div id="votive-office-selection-inner">
 			<template x-for="entry in votiveEntries">
 				<div class="votive-office-entry">
-					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="$store.router.contentParameters().votives.includes(entry[0])" @change="$store.router.toggleVotive(entry[0])" />
+					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="Pray.contentParameters($store.pray.displayPath).votives.includes(entry[0])" @change="Pray.toggleVotive($store.pray, entry[0])" />
 					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
 				</div>
 			</template>
