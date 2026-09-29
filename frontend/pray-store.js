@@ -10,7 +10,9 @@ export function makePrayStore() {
   return {
     rite: document.querySelector('main').innerHTML,
     displayPath: window.location.pathname,
-    opt: getOpt()
+    opt: getOpt(),
+    // Null suggests that a hardlink was manually pasted into the browser. This is handled within the user flow and is 'corrected' over to either hard or soft.
+    navigationType: history.state?.navigationType
   }
 }
 
@@ -48,12 +50,16 @@ export async function loadRite(prayState, path) {
   window.scrollTo(0, 0);
 }
 
-export async function navigateRite(prayState, path, navigationType='soft', action='push') {
+export async function navigateRite(prayState, path, navigationType=null, action='push') {
   prayState.displayPath = path;
   if (action == 'push') {
     history.pushState({navigationType: navigationType}, '', path);
   } else {
     history.replaceState({navigationType: navigationType}, '', path);
+  }
+  // NavigationType is only changed if explicitly specified by some action since hard vs soft navigationType significantly changes user flow; but many actions are the same between and therefore don't specify a type.
+  if (navigationType) {
+    prayState.navigationType = navigationType;
   }
   await loadRite(prayState, path);
 }
