@@ -129,32 +129,32 @@
     </div>
     % end
     <div id="rite-page-container">
-    <main id="rite-container" x-html="(displayParameters.showTranslation && !displayParameters.sideBySide) ? Pray.lineByLine($store.router.rite) : $store.pray.rite" :class="{
-      'chant-shown': displayParameters.chant,
-      'chant-hidden': !displayParameters.chant,
-      'chant-playback': displayParameters.chant && displayParameters.playChant,
-      'side-by-side': displayParameters.showTranslation && displayParameters.sideBySide,
-      'line-by-line': displayParameters.showTranslation && !displayParameters.sideBySide,
-      'no-translation': !displayParameters.showTranslation
-    }">
-      {{!rite}}
-    </main>
-    <div id="next-hour-button-container" x-intersect.margin.0px.0px.400px.0px="Pray.markAsDone($store.pray)" x-data="{now: Temporal.Now.plainDateTimeISO()}">
-      <a
-        id="next-hour-button"
-        href="{{next_hour_href}}"
-        :href="Pray.makePath(Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray)))"
-        :class="!Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) && 'next-hour-button-forbidden'"
-        :title="Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
-        @click.prevent="Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) && Pray.navigateRite($store.pray, Pray.makePath(Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray))))"
-      >
-        <span>
-          <span id="next-hour-kicker">{{text['next-hour']}}</span>
-          <span id="next-hour-occasion" x-text="Pray.RITE_TITLES[Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray)).occasion]">{{!next_hour_occasion_name}}</span>
-        </span>
-        <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
-      </a>
-    </div>
+      <main id="rite-container" x-html="(displayParameters.showTranslation && !displayParameters.sideBySide) ? Pray.lineByLine($store.router.rite) : $store.pray.rite" :class="{
+        'chant-shown': displayParameters.chant,
+        'chant-hidden': !displayParameters.chant,
+        'chant-playback': displayParameters.chant && displayParameters.playChant,
+        'side-by-side': displayParameters.showTranslation && displayParameters.sideBySide,
+        'line-by-line': displayParameters.showTranslation && !displayParameters.sideBySide,
+        'no-translation': !displayParameters.showTranslation
+      }">
+        {{!rite}}
+      </main>
+      <div id="next-hour-button-container" x-intersect.margin.0px.0px.400px.0px="Pray.markAsDone($store.pray)" x-data="{now: Temporal.Now.plainDateTimeISO()}">
+        <a
+          id="next-hour-button"
+          href="{{next_hour_href}}"
+          :href="Pray.makePath(Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray)))"
+          :class="!Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) && 'next-hour-button-forbidden'"
+          :title="Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
+          @click.prevent="Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) && Pray.navigateRite($store.pray, Pray.makePath(Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray))))"
+        >
+          <span>
+            <span id="next-hour-kicker">{{text['next-hour']}}</span>
+            <span id="next-hour-occasion" x-text="Pray.RITE_TITLES[Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray)).occasion]">{{!next_hour_occasion_name}}</span>
+          </span>
+          <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
+        </a>
+      </div>
     </div>
     <template x-if="bottomPanelEnabled">
       <div id="bottom-easy-select-container">
