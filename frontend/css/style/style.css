@@ -1,5 +1,6 @@
 @import "./font-faces.css";
 @import "./top-bar.css";
+@import "./components.css";
 
 :root {
 	--panel-background-color: #ffffff;

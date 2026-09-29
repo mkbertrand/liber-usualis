@@ -51,6 +51,10 @@
   color: var(--button-text-color);
 }
 
+.navigation-link:hover {
+  cursor: pointer;
+}
+
 .navigation-link, #navigation-link:visited {
   height: 100%;
   display: inline-flex;
@@ -58,6 +62,8 @@
   justify-content: center;
   text-align: center;
   text-decoration: none;
+  border: none;
+  background-color: transparent;
   font-family: "Arsenal", sans-serif;
   font-size: 18px;
   color: var(--button-text-color);
@@ -93,14 +99,6 @@
 /* Site-wide dark mode toggle. Lives in the top bar alongside the locale
    selector. */
 #dark-mode-toggle {
-	height: 35px;
-	width: 35px;
-	padding: 7px;
-	border-radius: 3px;
-	background-color: transparent;
-	color: var(--panel-text-color);
-}
-
-#dark-mode-toggle:hover {
-	background-color: var(--button-color-hover);
+  height: 40px;
+  aspect-ratio: 1/1;
 }

@@ -1,0 +1,12 @@
+.ui-button {
+  border: none;
+	padding: 7px;
+	border-radius: var(--component-border-radius);
+	background-color: transparent;
+	color: var(--panel-text-color);
+}
+
+.ui-button:hover {
+  cursor: pointer;
+	background-color: var(--button-color-hover);
+}
