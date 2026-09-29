@@ -1,11 +1,11 @@
 /* Options panel and its gear button */
-#options-gear-wrapper {
-	position: absolute;
-	top: 18px;
-	right: 18px;
-	height: 40px;
-	width: 40px;
+#options-gear-button {
+	height: 35px;
+	width: 35px;
+	padding: 7px;
+	border-radius: 3px;
 	background-color: transparent;
+	color: var(--panel-text-color);
 }
 
 #options-gear {

@@ -8,7 +8,7 @@ function getOpt() {
 
 export function makePrayStore() {
   return {
-    rite: '',
+    rite: document.querySelector('main').innerHTML,
     displayPath: window.location.pathname,
     opt: getOpt()
   }

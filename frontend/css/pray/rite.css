@@ -3,7 +3,7 @@
 	font-family: "Old Standard TT", times;
 	font-size: 20px;
 	padding: 10px 40px 10px 40px;
-	min-height: calc(100vh - 71px - var(--top-bar-title-height));
+	min-height: calc(100vh - 71px - var(--top-bar-title-height) - var(--second-bar-height));
 	background-color: var(--content-background-color);
 	color: var(--content-text-color);
 	display: block;

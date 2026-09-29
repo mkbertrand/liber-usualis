@@ -1,0 +1,25 @@
+:root {
+  --second-bar-height: 60px;
+}
+
+/* Fixed directly below the fixed top bar. */
+#second-bar-container {
+  position: fixed;
+  top: var(--top-bar-title-height);
+  left: 0;
+  width: 100%;
+  height: var(--second-bar-height);
+  box-sizing: border-box;
+  background-color: var(--panel-background-color);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1;
+}
+
+#second-bar {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}

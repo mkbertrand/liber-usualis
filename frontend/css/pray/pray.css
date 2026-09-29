@@ -1,3 +1,4 @@
+@import "./second-bar.css";
 @import "./options-panel.css";
 @import "./rite.css";
 @import "./next-hour.css";
@@ -9,7 +10,7 @@
 	max-width: 100% !important;
 	position: relative;
 	max-width: 140em;
-	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
+	margin: calc(var(--top-bar-title-height) + var(--second-bar-height)) auto 0 auto;
 	display: flex;
 }
 
