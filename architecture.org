@@ -19,7 +19,7 @@
    | Layer          | Technology                                                  |
    |----------------+-------------------------------------------------------------|
    | Backend        | Python 3.13, Bottle, Waitress                                |
-   | Frontend       | Alpine.js 3.x, jQuery, Exsurge.js                            |
+   | Frontend       | @preact/signals-core, Exsurge.js, esbuild                     |
    | Templates      | Bottle templates                                             |
    | Data           | Tagged JSON plus untagged text and GABC resources            |
    | Infrastructure | Nix flakes and native nixpkgs image builders                 |
@@ -330,22 +330,38 @@
 
 ** Page Shell and State: =web/templates/pray.tpl=
 
-   The Bottle template loads localized page text and the versioned pray resources.
-   Its Alpine =x-data= object owns the interactive state, including:
+   The Bottle template renders the page shell, the first rite server-side, and
+   working fallback =href=s for every link, then loads the deferred
+   =web/resources/dist/pray.js= bundle. Its state is held in
+   =@preact/signals-core= signals:
 
-    | Property             | Purpose                                                          |
-    |----------------------+------------------------------------------------------------------|
-    | =calendarDate=       | Civil date currently being viewed                                |
-    | =liturgicalDay=      | Resolved =/day= response                                         |
-    | =hour=               | Selected occasion identifier                                     |
-    | =parameters=         | Persisted office, recitation, and translation preferences        |
-    | =displayParameters=  | Persisted display toggles: chant, play-chant, side-by-side       |
-    | =rite=               | Rendered rite markup                                             |
-    | =nextOccasion=       | Persisted next occasion and date                                 |
+   - =frontend/pray-store.js= (=makePrayStore()=) owns rite and routing state:
+     =displayPath= (path and query string), =rite=, the =opt= cookie tags,
+     =navigationType=, the last completed cursus hour, and =now=. Derived values
+     (=contentParams=, and =nextHourButton= built by the pure =nextHourTarget()=) are =computed=
+     signals. Its actions (=navigateRite=, =toggleVotive=, =setDesired=,
+     =togglePriest=, =markHourAsDone=, =redirect=, =handlePopstate=) perform the
+     history, cookie, storage, and =/api/rite= side effects.
+   - =frontend/pray-display.js= (=makeDisplayStore()=) owns display-only state:
+     the persisted display toggles and bottom-panel setting (stored under legacy
+     =_x_=-prefixed =localStorage= keys), and which panels are open.
+   - =frontend/routing.js= holds pure path functions: parsing a rite path into
+     content parameters, building paths, cursus order, and suggested occasion.
+   - =frontend/pray-view.js= (=bindPrayPage()=) binds the server-rendered markup
+     to both stores. Each binding is an =effect= (state to DOM) or an event
+     listener (DOM to state), found by element id or data attribute. Links
+     marked =data-rite-link= navigate in-page; =data-rite-link="hard"= keeps the
+     chosen rite on reload, while soft navigation lets a reload move on to a more
+     relevant rite. =frontend/dom-bindings.js= provides the generic show/hide,
+     focus-trap, and outside-click helpers.
 
-   The template methods coordinate date changes, occasion changes, incrementing to
-   the next occasion, and asynchronous refreshes. Alpine watchers refresh the day
-   or rite when date and preference state changes.
+** Theme and Other Pages
+
+   =web/resources/themer.tpl=, included in every template's =<head>=, applies the
+   stored or system theme as =data-theme= before the page is drawn and handles
+   clicks on the top bar's =#dark-mode-toggle=; CSS shows the matching icon.
+   Other pages are server-rendered Bottle templates; the kalendar page builds its
+   table from =/api/kalendar= with =web/resources/js/kalendargen.js=.
 
 ** Ritual Structure and Requests: =frontend/ambit.js=
 
@@ -383,9 +399,6 @@
     styles are bundled from =frontend/css/pray/pray.css= into =web/resources/dist/pray.css=.
     Site-wide styles (fonts, theme variables, top bar) are bundled from
     =frontend/css/style/style.css= into =web/resources/dist/style.css=.
-
-   =web/resources/pray/js/pray-window.js= maps UI locales to translation books and
-   handles responsive panel sizing. It does not own the primary Alpine event flow.
 
 * Tagging System
 
@@ -436,15 +449,15 @@
   A normal frontend request for Matins follows this sequence:
 
   #+BEGIN_EXAMPLE
-  1. pray.tpl initializes Alpine state for the selected civil date.
-  2. ambit.js requests /day?date=...&time=diurnale&votives=....
-  3. daily_tagger returns resolved service tag sets.
-  4. ambit.js filters the Matins Occasion and requests /title.
-  5. ambit.js sends one packed /rite request for the included Rite items.
-  6. datamanage.rite_request() selects the primary and alternate tag sets.
-  7. Corpus.compose() recursively searches tagged content and returns a Rite.
-  8. Requested translation and chant corpora are superimposed on that Rite.
-  9. server.py serializes the result; ritegen.js renders each returned rite.
+  1. A rite link calls navigateRite() in frontend/pray-store.js, which pushes the
+     URL and requests /api/rite?loc=...&date=...&s=...&occasion=matutinum-laudes+officium&v=....
+  2. server.py maps the locale to a translation and reads the opt cookie.
+  3. datamanage.rite_request() resolves the day's tag sets with daily_tagger
+     (vesperal for Vespers and Compline) and selects the primary and alternates.
+  4. Corpus.compose() recursively searches tagged content and returns a Rite.
+  5. Requested translation, chant, and header corpora are superimposed on that Rite.
+  6. renderer/rite_renderer.py renders the Rite to HTML, which the store sets as
+     the rite signal; pray-view.js writes it into <main>.
   #+END_EXAMPLE
 
 * Infrastructure
@@ -486,7 +499,7 @@
   | =composer/corpus.py=                         | Search, discrimination, and composition      |
   | =composer/rite.py=                           | Translation and chant superimposition        |
   | =composer/psalms.py=                         | Psalm reference resolution                   |
-  | =web/templates/pray.tpl=                     | Page shell and Alpine state                  |
+  | =web/templates/pray.tpl=                     | Page shell; state in =frontend/pray-store.js= |
   | =frontend/ambit.js=                          | Ritual structure and HTTP request composition |
   | =frontend/rite-renderer/rite-renderer.js=    | Rite rendering                               |
   | =frontend/gabc-chant.js=                     | Exsurge GABC custom element                  |

@@ -102,3 +102,9 @@
   height: 40px;
   aspect-ratio: 1/1;
 }
+
+/* Shows the icon for switching to the other theme. */
+:root[data-theme="dark"] .dark-mode-toggle-moon-icon,
+:root:not([data-theme="dark"]) .dark-mode-toggle-sun-icon {
+  display: none;
+}

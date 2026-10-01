@@ -29,7 +29,7 @@ before making non-trivial backend, frontend, or data-shape changes.
   that silently allows mutually exclusive tags from `data/{book}/categoriae/` to
   coexist in a resolved query.
 - Keep frontend state and rendering aligned with `architecture.org`: Bottle
-  templates provide the page shell and Alpine state, `ambit.js` defines ritual
+  templates provide the page shell, `frontend/` modules hold state in signals, `ambit.js` defines ritual
   structure and request composition, `ritegen.js` renders rites, and
   `pray-window.js` contains window and panel helpers.
 - Update `architecture.org` in the same change when you intentionally alter module

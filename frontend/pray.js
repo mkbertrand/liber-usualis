@@ -11,40 +11,18 @@ export function abbreviateName(name) {
 	return name;
 }
 
-export function lineByLine(rite) {
-  let riteSplit = rite.split(/(<div class="rite-text-container.+?>.+?<\/div>)/);
-  let riteRet = [];
-  for (let i = 0; i < riteSplit.length; i++) {
-    if (i % 2 == 0) {
-      riteRet.push(riteSplit[i]);
-    } else {
-      let style = riteSplit[i].match(/"rite-text-container (.*?)"/)[1];
-      let latinColumn = riteSplit[i].match(/<p class="rite-text rite-text-latin.+?>(.*?)<\/p>/)[1];
-      let transColumn = riteSplit[i].match(/<p class="rite-text rite-text-translation.+?>(.*?)<\/p>/)[1];
-      let latinColumnLines = latinColumn.split('<br>');
-      let transColumnLines = transColumn.split('<br>');
-      let para = `<div class="rite-text-container ${style}"><p class="rite-text">`;
-      for (let j = 0; j < latinColumnLines.length; j++) {
-        para += latinColumnLines[j];
-        if (transColumnLines[j]) {
-          para += `<br><span class="rite-text-translation">${transColumnLines[j]}</span>`;
-        }
-        if (j != latinColumnLines.length - 1) {
-          para += '<br>';
-        }
-      }
-      para += '</p></div>';
-      riteRet.push(para);
-    }
-  }
-  return riteRet.join('');
-}
+import { makePrayStore } from './pray-store.js';
+import { makeDisplayStore, persistDisplayStore } from './pray-display.js';
+import { bindPrayPage } from './pray-view.js';
+export { lineByLine } from './rite-markup.js';
 
-import { makePrayStore, ordo, canSay, canIncrementHour } from './pray-store.js';
-
-document.addEventListener('alpine:init', () => {
-  window.Alpine.store('pray', makePrayStore());
-});
-
-import { isRitePath, contentParameters, makePath, isCursus, nextHour, RITE_TITLES } from './routing.js';
-export { isRitePath, contentParameters, makePath, isCursus, nextHour, RITE_TITLES, ordo, canSay, canIncrementHour };
+// Runs once the document is parsed (the bundle is loaded with defer)
+const store = makePrayStore();
+const display = makeDisplayStore();
+persistDisplayStore(display);
+bindPrayPage(store, display);
+// Keeps time-dependent state (whether the next hour may be said yet) current while the page stays open
+setInterval(() => {
+  store.now.value = Temporal.Now.plainDateTimeISO();
+}, 60 * 1000);
+store.init();

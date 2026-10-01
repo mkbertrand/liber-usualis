@@ -1,4 +1,4 @@
-const CURSUS_OCCASIONS = ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium'];
+export const CURSUS_OCCASIONS = ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium'];
 export const RITE_TITLES = {
   'matutinum-laudes': 'Matutinum & Laudes', 'prima': 'Prima', 'tertia': 'Tertia',
   'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium',
@@ -13,11 +13,12 @@ export function isRitePath(path) {
   return /\/[a-z]{2}\/(officium|ritus)\/\d{4}-\d{1,2}-\d{1,2}(\/|$)/.test(path);
 }
 
+// path may include the query string (?v=...), which carries the votives
 export function contentParameters(path) {
-  if (!isRitePath(path)) return {};
-  let pathVariables = path.match(/\/(?<locale>[a-z]{2})\/(?<prayerType>officium|ritus)\/(?<date>\d{4}-\d{1,2}-\d{1,2})(?:\/(?<select>officium-parvum-bmv|officium-defunctorum))?\/(?<occasion>[a-z-]+)/).groups;
-  let params = new URLSearchParams(window.location.search);
-  let votivestr = params.get('v');
+  let [pathname, search = ''] = path.split('?');
+  if (!isRitePath(pathname)) return {};
+  let pathVariables = pathname.match(/\/(?<locale>[a-z]{2})\/(?<prayerType>officium|ritus)\/(?<date>\d{4}-\d{1,2}-\d{1,2})(?:\/(?<select>officium-parvum-bmv|officium-defunctorum))?\/(?<occasion>[a-z-]+)/).groups;
+  let votivestr = new URLSearchParams(search).get('v');
   // For whatever reason, + is replaced with space
   let votives = votivestr ? votivestr.replaceAll(' ', '+').split('+') : [];
   return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives};
@@ -41,4 +42,28 @@ export function nextHour(current) {
     select: current.select,
     votives: current.votives
   };
+}
+
+export function shiftDatePath(params, days) {
+  return makePath({...params, date: params.date.add({days: days})});
+}
+
+// The Office of the Dead has its own hours, so choosing a cursus hour from it returns to the Office of the day
+export function cursusHourPath(params, occasion) {
+  return makePath({...params, prayerType: 'officium', select: params.select == 'officium-defunctorum' ? 'primarium' : params.select, occasion: occasion});
+}
+
+export function isCurrentCursusHour(params, occasion) {
+  return params.prayerType == 'officium' && params.select != 'officium-defunctorum' && params.occasion == occasion;
+}
+
+export function suggestOccasion(now) {
+  let hour = now.hour;
+  if (hour < 6 || hour > 21) return 'matutinum-laudes';
+  if (hour < 8) return 'prima';
+  if (hour < 11) return 'tertia';
+  if (hour < 14) return 'sexta';
+  if (hour < 16) return 'nona';
+  if (hour < 20) return 'vesperae';
+  return 'completorium';
 }

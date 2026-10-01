@@ -1,50 +1,71 @@
-import { contentParameters, RITE_TITLES, makePath, nextHour, isCursus } from './routing.js';
-
-// Wraps getting document cookies
-function getOpt() {
-  let optMatch = document.cookie.match(/(?:^|;\s*)opt=([^;]*)/);
-  return optMatch ? decodeURIComponent(optMatch[1]).split('+').filter(t => t) : [];
-}
+import { signal, computed, batch } from '@preact/signals-core';
+import { contentParameters, isRitePath, RITE_TITLES, makePath, nextHour, isCursus, suggestOccasion } from './routing.js';
 
 async function fetchRite(path) {
   let contentParams = contentParameters(path);
   return fetch(`/api/rite?loc=${contentParams.locale}&date=${contentParams.date}&s=${contentParams.select}&occasion=${contentParams.occasion}+${contentParams.prayerType}&v=${contentParams.votives.join('+')}`).then(resp => resp.text());
 }
 
-export function makePrayStore() {
+// Day title straight from the rendered rite's <h1 class="large-title">, without the trailing period
+// rite_title() (renderer/rendering_utils.py) always appends
+function dayTitle(rite) {
+  let match = rite.match(/<h1 class="large-title">(.*?)<\/h1>/);
+  return match ? match[1].replace(/\.$/, '') : '';
+}
 
-  let displayPath = window.location.pathname;
-  let contentParams = () => contentParameters(displayPath);
-  let rite = document.querySelector('main').innerHTML;
-  let opt = getOpt();
+export function makePrayStore() {
+  // Path including the query string, since votives live in ?v=
+  const displayPath = signal(window.location.pathname + window.location.search);
+  // Document is hydrated (after a manner of speaking) so initial value of rite should be the already-provided HTML
+  const rite = signal(document.querySelector('main').innerHTML);
+  const opt = signal((() => {
+    let optMatch = document.cookie.match(/(?:^|;\s*)opt=([^;]*)/);
+    return optMatch ? decodeURIComponent(optMatch[1]).split('+').filter(t => t) : [];
+  })());
   // Null suggests that a hardlink was manually pasted into the browser. This is handled within the user flow and is 'corrected' over to either hard or soft.
-  let navigationType = history.state?.navigationType;
+  const navigationType = signal(history.state?.navigationType ?? null);
+
+  const lastCursusHour = signal((() => {
+    try {
+      let lastCompleted = JSON.parse(localStorage.getItem('lastCursusHour') || 'null');
+      return lastCompleted ? {...lastCompleted, date: Temporal.PlainDate.from(lastCompleted.date)} : null;
+    } catch {
+      return null;
+    }
+  })());
+  const now = signal(Temporal.Now.plainDateTimeISO());
+
+  const onRitePage = computed(() => isRitePath(displayPath.value));
+  const contentParams = computed(() => contentParameters(displayPath.value));
+  const nextHourButton = computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value));
 
   async function loadRite(path) {
-    rite = await fetchRite(path);
-    displayPath = path;
-    let match = rite.match(/<h1 class="large-title">(.*?)<\/h1>/);
-    let dayTitle = match ? match[1].replace(/\.$/, '') : '';
-    document.title = `${RITE_TITLES[contentParameters(path).occasion]} | ${dayTitle} | Liber Usualis`;
+    let html = await fetchRite(path);
+    // A later navigation has superseded this one
+    if (displayPath.value != path) return;
+    rite.value = html;
+    document.title = `${RITE_TITLES[contentParameters(path).occasion]} | ${dayTitle(html)} | Liber Usualis`;
     window.scrollTo(0, 0);
   }
 
-  async function navigateRite(path, navigationType=null, action='push') {
-    displayPath = path;
-    if (action == 'push') {
-      history.pushState({navigationType: navigationType}, '', path);
-    } else {
-      history.replaceState({navigationType: navigationType}, '', path);
-    }
+  async function navigateRite(path, newNavigationType=null, action='push') {
     // NavigationType is only changed if explicitly specified by some action since hard vs soft navigationType significantly changes user flow; but many actions are the same between and therefore don't specify a type.
-    if (navigationType) {
-      navigationType = navigationType;
+    batch(() => {
+      if (newNavigationType) {
+        navigationType.value = newNavigationType;
+      }
+      displayPath.value = path;
+    });
+    if (action == 'push') {
+      history.pushState({navigationType: navigationType.value}, '', path);
+    } else {
+      history.replaceState({navigationType: navigationType.value}, '', path);
     }
     await loadRite(path);
   }
 
   async function setOpt(tags) {
-    opt = tags;
+    opt.value = tags;
     let cookie = tags.filter(t => t).join('+');
     if (cookie) {
       await cookieStore.set({name: 'opt', value: cookie, path: '/'});
@@ -53,53 +74,87 @@ export function makePrayStore() {
     }
   }
 
+  async function redirect() {
+    let locale = window.location.pathname.match(/^\/([a-z]{2})\//)?.[1] || 'en';
+    let currentNow = now.value;
+    if (lastCursusHour.value === null || !canIncrementHour(lastCursusHour.value, currentNow)) {
+      await navigateRite(makePath({
+        locale: locale,
+        prayerType: 'officium',
+        date: currentNow.toPlainDate(),
+        select: 'primarium',
+        occasion: suggestOccasion(currentNow),
+        votives: []
+      }), 'soft', 'replace');
+    } else {
+      await navigateRite(makePath({...nextHour(lastCursusHour.value), locale: locale, prayerType: 'officium'}), 'soft', 'replace');
+    }
+  }
+
   return {
+    displayPath: displayPath,
+    rite: rite,
+    opt: opt,
+    navigationType: navigationType,
+    now: now,
+    onRitePage: onRitePage,
     contentParams: contentParams,
-    rite: () => rite,
-    opt: () => opt,
-    navigationType: () => navigationType,
+    nextHourButton: nextHourButton,
     navigateRite: navigateRite,
-    lastCompletedHour: () => {
-      let lastCompleted = JSON.parse(localStorage.getItem('lastCursusHour') || 'null')
-      if (lastCompleted) {
-        return {...lastCompleted, date: Temporal.PlainDate.from(lastCompleted.date)};
-      } else {
-        return {...contentParameters(displayPath), prayerType: 'officium', date: Temporal.Now.plainDateISO(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
+    redirect: redirect,
+    // Redirects a bare /pray visit, or a reload of a page reached by soft navigation, to the most relevant rite
+    init: () => {
+      const [navEntry] = performance.getEntriesByType('navigation');
+      if (!onRitePage.value || (navEntry?.type === 'reload' && navigationType.value === 'soft')) {
+        redirect();
       }
     },
+    // Back/forward only re-displays the entry; it must not push a new one
+    handlePopstate: async () => {
+      if (!isRitePath(window.location.pathname)) {
+        await redirect();
+        return;
+      }
+      let path = window.location.pathname + window.location.search;
+      batch(() => {
+        navigationType.value = history.state?.navigationType ?? null;
+        displayPath.value = path;
+      });
+      await loadRite(path);
+    },
     markHourAsDone: () => {
-      let current = contentParams();
+      let current = contentParams.value;
       if (!isCursus(current)) {
         return;
       }
-
-      let lastCursusHour = {
-        date: current.date.toString(), prayerType: current.prayerType, select: current.select,
-        occasion: current.occasion, votives: current.votives
-      };
-      localStorage.setItem('lastCursusHour', JSON.stringify(lastCursusHour));
+      let hour = {date: current.date, prayerType: current.prayerType, select: current.select, occasion: current.occasion, votives: current.votives};
+      lastCursusHour.value = hour;
+      try {
+        localStorage.setItem('lastCursusHour', JSON.stringify({...hour, date: hour.date.toString()}));
+      } catch {
+        // Some browsers throw an Error if localStorage is disabled (who does this?????)
+      }
     },
     toggleVotive: async (tag) => {
-      let current = contentParams();
+      let current = contentParams.value;
       let votives = current.votives.includes(tag) ? current.votives.filter(v => v != tag) : [...current.votives, tag];
       await navigateRite(makePath({...current, votives: votives}));
     },
     setDesired: async (select, optTag) => {
-      let current = contentParams();
-      let tags = opt.filter(t => t == 'privata');
+      let current = contentParams.value;
+      let tags = opt.value.filter(t => t == 'privata');
       if (optTag) tags.push(optTag);
       await setOpt(tags);
       if (current.select != select) {
         await navigateRite(makePath({...current, select: select}));
       } else {
-        await loadRite(displayPath);
+        await loadRite(displayPath.value);
       }
     },
     togglePriest: async () => {
-      let current = contentParams();
-      let tags = opt.includes('privata') ? opt.filter(t => t != 'privata') : [...opt, 'privata'];
+      let tags = opt.value.includes('privata') ? opt.value.filter(t => t != 'privata') : [...opt.value, 'privata'];
       await setOpt(tags);
-      await loadRite(displayPath);
+      await loadRite(displayPath.value);
     }
   }
 }
@@ -120,4 +175,18 @@ export function canSay(params, now) {
 
 export function canIncrementHour(current, now) {
   return canSay(nextHour(current), now);
+}
+
+// What the next-hour button offers: the hour after the current one when on a cursus hour, otherwise the hour
+// after the last one prayed (today's Matins and Lauds counts as prayed when none has been recorded yet).
+// path is null off a rite page, where there is no locale to build it from.
+export function nextHourTarget(current, lastCursusHour, now) {
+  let reference = isCursus(current) ? current : lastCursusHour ?? {...current, prayerType: 'officium', date: now.toPlainDate(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
+  let target = nextHour(reference);
+  return {
+    // Stored hours carry no locale, and ones recorded before prayerType was stored lack it; the cursus is always the Office
+    path: current.locale ? makePath({...target, locale: current.locale, prayerType: 'officium'}) : null,
+    occasion: target.occasion,
+    allowed: canSay(target, now)
+  };
 }

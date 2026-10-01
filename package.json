@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@preact/signals-core": "^1.14.4",
     "exsurge": "github:bbloomf/exsurge#0c39f61eb17c59228202bcbdfe0f92c47dfc8f34"
   },
   "devDependencies": {

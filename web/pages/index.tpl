@@ -38,17 +38,10 @@
     </div>
   % end
   <hr style="width:100%">
-	<nav id="center-nav" x-data="{
-		pages:[
-			{'path':'/{{locale}}/about', 'name':'{{text['about']}}'},
-			{'path':'/{{locale}}/help', 'name':'{{text['help']}}'},
-			{'path':'/{{locale}}/credit', 'name':'{{text['credit']}}'},
-			{'path':'/{{locale}}/donate', 'name':'{{text['donate']}}'},
-		]
-		}">
-		<template x-for="page in pages">
-			<a class="nav-element-link" :href="page.path"><span class="nav-element-text" x-text="page.name"></span></a>
-		</template>
+	<nav id="center-nav">
+		% for nav_page in ['about', 'help', 'credit', 'donate']:
+		<a class="nav-element-link" href="/{{locale}}/{{nav_page}}"><span class="nav-element-text">{{text[nav_page]}}</span></a>
+		% end
 	</nav>
 </div>
 <div id="side-panel-right">

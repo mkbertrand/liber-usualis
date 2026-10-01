@@ -2,62 +2,51 @@
 	<h3 class="options-panel-section-head">{{text['options-panel-title']}}</h3>
 	% if locale != 'la':
 	<div>
-		<input type="checkbox" id="translation-toggle" x-model="displayParameters.showTranslation" />
+		<input type="checkbox" id="translation-toggle" />
 		<label for="translation-toggle">{{text['translation-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters.sideBySide" :disabled="!displayParameters.showTranslation" />
-		<label for="side-by-side-toggle" :class="displayParameters.showTranslation ? '' : 'option-disabled'">{{text['side-by-side-toggle']}}</label>
+		<input type="checkbox" id="side-by-side-toggle" />
+		<label for="side-by-side-toggle">{{text['side-by-side-toggle']}}</label>
 	</div>
 	% end
 	<div>
-		<input type="checkbox" id="chant-toggle" x-model="displayParameters.chant" @change="if (!displayParameters.chant) Pray.stopChantPlayback()" />
+		<input type="checkbox" id="chant-toggle" />
 		<label for="chant-toggle">{{text['chant-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="play-chant-toggle" x-model="displayParameters.playChant" :disabled="!displayParameters.chant" @change="if (!displayParameters.playChant) Pray.stopChantPlayback()" />
-		<label for="play-chant-toggle" :class="displayParameters.chant ? '' : 'option-disabled'">{{text['play-chant-toggle']}}</label>
+		<input type="checkbox" id="play-chant-toggle" />
+		<label for="play-chant-toggle">{{text['play-chant-toggle']}}</label>
 	</div>
   <div>
-		<input type="checkbox" id="priest-toggle" :checked="!$store.pray.opt().includes('privata')" @change="$store.pray.togglePriest()" />
+		<input type="checkbox" id="priest-toggle" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
 	<div>
-		<input type="checkbox" value="bottomPanelEnabled" id="bottom-panel-toggle" x-model="bottomPanelEnabled" />
+		<input type="checkbox" id="bottom-panel-toggle" />
 		<label for="bottom-panel-toggle">{{text['bottom-panel-toggle']}}</label>
 	</div>
 	<div id="desired-select-wrapper">
-		<div id="desired-select-container" x-data="{ambitEntries: [
-			['omnes', 'Officium', 'primarium', ''],
-			['diei', 'Officium diei', 'primarium', 'sine-ritibus'],
-			['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''],
-			['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']
-		]}">
+		<div id="desired-select-container">
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-			<template x-for="entry in ambitEntries">
+			% # [id, label, select, opt tag]
+			% for ambit_entry in [['omnes', 'Officium', 'primarium', ''], ['diei', 'Officium diei', 'primarium', 'sine-ritibus'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''], ['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']]:
 				<div>
-					<input type="radio" name="desired" autocomplete="off" :value="entry[0]" :id="`desired-select-${entry[0]}`" :checked="$store.pray.contentParams().select == entry[2] && $store.pray.opt().filter(t => t != 'privata').join('+') == entry[3]" @change="$store.pray.setDesired(entry[2], entry[3])" />
-					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
+					<input type="radio" name="desired" autocomplete="off" value="{{ambit_entry[0]}}" id="desired-select-{{ambit_entry[0]}}" data-select="{{ambit_entry[2]}}" data-opt-tag="{{ambit_entry[3]}}" />
+					<label for="desired-select-{{ambit_entry[0]}}">{{ambit_entry[1]}}</label>
 				</div>
-			</template>
+			% end
 		</div>
 	</div>
-	<div x-data="{votiveEntries: [
-		['de-sanctis-angelis', 'De Ss. Angelis.'],
-		['de-sanctis-apostolis', 'De Ss. Apostolis.'],
-		['de-joseph', 'De S. Joseph.'],
-		['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'],
-		['de-passione', 'De Passione D.N.J.C.'],
-		['de-immaculata-conceptione', 'De Immaculata Conceptione.']
-	]}">
+	<div>
 		<h3 class="options-panel-section-head">{{text['votive-office-select-title']}}</h3>
 		<div id="votive-office-selection-inner">
-			<template x-for="entry in votiveEntries">
+			% for votive_entry in [['de-sanctis-angelis', 'De Ss. Angelis.'], ['de-sanctis-apostolis', 'De Ss. Apostolis.'], ['de-joseph', 'De S. Joseph.'], ['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'], ['de-passione', 'De Passione D.N.J.C.'], ['de-immaculata-conceptione', 'De Immaculata Conceptione.']]:
 				<div class="votive-office-entry">
-					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" :checked="$store.pray.contentParams().votives.includes(entry[0])" @change="$store.pray.toggleVotive(entry[0])" />
-					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
+					<input type="checkbox" value="{{votive_entry[0]}}" id="votive-select-{{votive_entry[0]}}" data-votive="{{votive_entry[0]}}" />
+					<label for="votive-select-{{votive_entry[0]}}">{{votive_entry[1]}}</label>
 				</div>
-			</template>
+			% end
 		</div>
 	</div>
 </div>

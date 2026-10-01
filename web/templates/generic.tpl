@@ -7,7 +7,7 @@
 % import version_management
 % locale = locales[0]
 
-<html lang="{{locale.split('-')[0]}}" x-data :data-theme="$store.theme.current">
+<html lang="{{locale.split('-')[0]}}">
 	<head>
 		<title>{{title}}</title>
 		<script type="application/ld+json">
@@ -30,28 +30,9 @@
     % if Path(f'/web/resources/styles/{page}.css').exists():
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource(f'/styles/{page}.css')}}>
     % end
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
-		<script defer type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script defer>
-      document.addEventListener('alpine:init', () => {
-        Alpine.store('theme', {
-          current: document.documentElement.getAttribute('data-theme') || 'light',
-          toggle() {
-            this.current = this.current === 'dark' ? 'light' : 'dark';
-            localStorage.setItem('theme', this.current);
-          },
-          set(value) {
-            this.current = value;
-            localStorage.setItem('theme', value);
-          }
-        });
-        });
-    </script>
 	</head>
 	<body>
-		<div id="site-wrapper" x-cloak x-data="{locale: '{{locale}}'}">
+		<div id="site-wrapper">
 			% include('web/resources/top-bar.tpl', locale=locale, options=False, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
 			% include(version_management.bestlocalized(f'/pages/{page}.html', locales))
 		</div>
