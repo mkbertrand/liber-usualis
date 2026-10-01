@@ -4,7 +4,6 @@
 import { effect, computed } from '@preact/signals-core';
 import { makePath, RITE_TITLES, shiftDatePath, cursusHourPath, isCurrentCursusHour } from './routing.js';
 import { setDisplayParameter } from './pray-display.js';
-import { lineByLine } from './rite-markup.js';
 import { stopChantPlayback } from './gabc-chant.js';
 import { setShown, trapFocus, closeOnOutsideClick, toggleOnClick, labelFor } from './dom-bindings.js';
 
@@ -38,6 +37,36 @@ function bindRitesMenu(store, display) {
       display.ritesMenuOpen.value = false;
     });
   }
+}
+
+// Modifies actual HTMl to alternate between Latin and English lines. A single HTML fragment can't represent both the side-by-side and line-by-line displays without breaking initial lettering (believe me, I tried)
+function lineByLine(rite) {
+  let riteSplit = rite.split(/(<div class="rite-text-container.+?>.+?<\/div>)/);
+  let riteRet = [];
+  for (let i = 0; i < riteSplit.length; i++) {
+    if (i % 2 == 0) {
+      riteRet.push(riteSplit[i]);
+    } else {
+      let style = riteSplit[i].match(/"rite-text-container (.*?)"/)[1];
+      let latinColumn = riteSplit[i].match(/<p class="rite-text rite-text-latin.+?>(.*?)<\/p>/)[1];
+      let transColumn = riteSplit[i].match(/<p class="rite-text rite-text-translation.+?>(.*?)<\/p>/)[1];
+      let latinColumnLines = latinColumn.split('<br>');
+      let transColumnLines = transColumn.split('<br>');
+      let para = `<div class="rite-text-container ${style}"><p class="rite-text">`;
+      for (let j = 0; j < latinColumnLines.length; j++) {
+        para += latinColumnLines[j];
+        if (transColumnLines[j]) {
+          para += `<br><span class="rite-text-translation">${transColumnLines[j]}</span>`;
+        }
+        if (j != latinColumnLines.length - 1) {
+          para += '<br>';
+        }
+      }
+      para += '</p></div>';
+      riteRet.push(para);
+    }
+  }
+  return riteRet.join('');
 }
 
 function bindRite(store, display) {
