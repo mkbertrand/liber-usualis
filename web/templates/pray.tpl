@@ -81,7 +81,8 @@
 		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
 	</head>
   <body x-data="{
-    optionspanel: false,
+    optionsPanel: false,
+    ordoPanel: false,
     ritesMenuOpen: false,
     bottomPanelEnabled: $persist(false),
     bottomPanelOpen: true,
@@ -98,17 +99,17 @@
       <div id="second-bar">
         <div id="second-bar-right-aligned-container" class="second-bar-container">
           <div class="top-bar-button-container">
-            <button class="navigation-link">
-              Ordo
-            </button>
-          </div>
-          <div class="top-bar-button-container">
             <button class="navigation-link" @click="ritesMenuOpen = !ritesMenuOpen">
               More Rites
             </button>
           </div>
           <div class="top-bar-button-container">
-            <button id="options-gear-button" class="ui-button" @click="optionspanel = !optionspanel">
+            <button class="navigation-link" @click="ordoPanel = !ordoPanel">
+              Ordo
+            </button>
+          </div>
+          <div class="top-bar-button-container">
+            <button id="options-gear-button" class="ui-button" @click="optionsPanel = !optionsPanel">
               <svg id="options-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%"><path d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
             </button>
           </div>
@@ -117,19 +118,29 @@
     </div>
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
     <div id="content-container-outer">
-    % if not mobile:
-    <div x-cloak id="options-panel-background" x-show="optionspanel">
-      <div id="options-panel-wrapper" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
+    <div x-cloak id="options-panel-background" x-show="optionsPanel">
+      <div id="options-panel-wrapper"
+      % if not mobile:
+        x-trap.noscroll="optionsPanel" @click.outside="optionsPanel = false"
+      % end
+      >
         % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
       </div>
     </div>
-    % else:
-    <div x-cloak id="options-panel-wrapper-mobile" x-show="optionspanel">
-      % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
+    <div x-cloak id="ordo-panel-background" x-show="ordoPanel">
+      <div id="ordo-panel-wrapper"
+      % if not mobile:
+        x-trap.noscroll="ordoPanel" @click.outside="ordoPanel = false"
+      % end
+      >
+        <div id="ordo-panel">
+          <h2>Ordo.</h2>
+          <p x-text="Pray.ordo($store.pray.contentParams().date, 'diurnale', $store.pray.contentParams().votives)"></p>
+        </div>
+      </div>
     </div>
-    % end
     <div id="rite-page-container">
-      <main id="rite-container" x-html="(displayParameters.showTranslation && !displayParameters.sideBySide) ? Pray.lineByLine($store.router.rite) : $store.pray.rite" :class="{
+      <main id="rite-container" x-html="(displayParameters.showTranslation && !displayParameters.sideBySide) ? Pray.lineByLine($store.router.rite()) : $store.pray.rite()" :class="{
         'chant-shown': displayParameters.chant,
         'chant-hidden': !displayParameters.chant,
         'chant-playback': displayParameters.chant && displayParameters.playChant,
@@ -139,18 +150,18 @@
       }">
         {{!rite}}
       </main>
-      <div id="next-hour-button-container" x-intersect.margin.0px.0px.400px.0px="Pray.markAsDone($store.pray)" x-data="{now: Temporal.Now.plainDateTimeISO()}">
+      <div id="next-hour-button-container" x-intersect.margin.0px.0px.400px.0px="$store.pray.markHourAsDone()" x-data="{now: Temporal.Now.plainDateTimeISO()}">
         <a
           id="next-hour-button"
           href="{{next_hour_href}}"
-          :href="Pray.makePath(Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray)))"
-          :class="!Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) && 'next-hour-button-forbidden'"
-          :title="Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
-          @click.prevent="Pray.canIncrementHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray), now) && Pray.navigateRite($store.pray, Pray.makePath(Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray))))"
+          :href="Pray.makePath(Pray.nextHour($store.pray.contentParams() || $store.pray.lastCompletedHour()))"
+          :class="!Pray.canIncrementHour($store.pray.contentParams() || $store.pray.lastCompletedHour(), now) && 'next-hour-button-forbidden'"
+          :title="Pray.canIncrementHour($store.pray.contentParams() || $store.pray.lastCompletedHour(), now) ? '' : '{{text['next-hour-forbidden-tooltip']}}'"
+          @click.prevent="Pray.canIncrementHour($store.pray.contentParams() || $store.pray.lastCompletedHour(), now) && $store.pray.navigateRite(Pray.makePath(Pray.nextHour($store.pray.contentParams() || $store.pray.lastCompletedHour())))"
         >
           <span>
             <span id="next-hour-kicker">{{text['next-hour']}}</span>
-            <span id="next-hour-occasion" x-text="Pray.RITE_TITLES[Pray.nextHour(Pray.contentParameters($store.pray.displayPath) || Pray.lastCompletedHour($store.pray)).occasion]">{{!next_hour_occasion_name}}</span>
+            <span id="next-hour-occasion" x-text="Pray.RITE_TITLES[Pray.nextHour($store.pray.contentParams() || $store.pray.lastCompletedHour()).occasion]">{{!next_hour_occasion_name}}</span>
           </span>
           <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
         </a>
@@ -160,15 +171,15 @@
       <div id="bottom-easy-select-container">
         <button id="bottom-easy-select-hide" @click="bottomPanelOpen = !bottomPanelOpen"><svg id="bottom-easy-select-hide-icon" :class="!bottomPanelOpen && 'bottom-easy-select-hide-icon-closed'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><path fill="currentColor" d="M38.998 15.98 24.003 30.597 9.007 15.98a1.434 1.434 0 0 0-2.004 0 1.365 1.365 0 0 0 0 1.95l15.952 15.554a1.5 1.5 0 0 0 2.095 0l15.952-15.551a1.365 1.365 0 0 0 0-1.956 1.434 1.434 0 0 0-2.004 0z"></path></svg></button>
         <div id="bottom-easy-select-content-container" x-show="bottomPanelOpen" x-transition>
-          <div id="date-selector-container" x-data="{search: '{{date}}'}" x-init="$watch('$store.router.displayPath', () => { search = Pray.contentParameters($store.pray.displayPath).date?.toString() ?? search })">
-            <a id="date-selector-decrement" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate - timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...Pray.contentParameters($store.pray.displayPath), date: Pray.contentParameters($store.pray.displayPath).date.subtract({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"></path><path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path></g></svg></a>
+          <div id="date-selector-container" x-data="{search: '{{date}}'}" x-init="$watch('$store.router.displayPath', () => { search = $store.pray.contentParams().date?.toString() ?? search })">
+            <a id="date-selector-decrement" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate - timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...$store.pray.contentParams(), date: $store.pray.contentParams().date.subtract({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"></path><path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path></g></svg></a>
             <input id="date-selector-text" type="date" x-model="search">
-            <a id="date-selector-text-submit" class="date-selector-button" x-rite-link:hard :href="Pray.makePath({...Pray.contentParameters($store.pray.displayPath), date:search})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789"></path><path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708"></path></g></svg></a>
-            <a id="date-selector-increment" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate + timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...Pray.contentParameters($store.pray.displayPath), date: Pray.contentParameters($store.pray.displayPath).date.add({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg></a>
+            <a id="date-selector-text-submit" class="date-selector-button" x-rite-link:hard :href="Pray.makePath({...$store.pray.contentParams(), date:search})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789"></path><path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708"></path></g></svg></a>
+            <a id="date-selector-increment" class="date-selector-button" href="/{{locale}}/{{prayer_type}}/{{pdate + timedelta(days=1)}}{{'' if select == 'primarium' else f'/{select}'}}/{{occasion}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...$store.pray.contentParams(), date: $store.pray.contentParams().date.add({days:1})})"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg></a>
           </div>
           <div id="cursus-rite-selector-container">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
-            <a class="cursus-rite-selector-button" :class="Pray.contentParameters($store.pray.displayPath).prayerType == 'officium' && Pray.contentParameters($store.pray.displayPath).select != 'officium-defunctorum' && Pray.contentParameters($store.pray.displayPath).occasion == '{{item[0]}}' ? 'cursus-rite-selector-button-selected' : ''" href="/{{locale}}/officium/{{pdate}}{{'' if select == 'primarium' else f'/{select}'}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...Pray.contentParameters($store.pray.displayPath), prayerType: 'officium', select: Pray.contentParameters($store.pray.displayPath).select == 'officium-defunctorum' ? 'primarium' : Pray.contentParameters($store.pray.displayPath).select, occasion: '{{item[0]}}'})">{{!item[1]}}</a>
+            <a class="cursus-rite-selector-button" :class="$store.pray.contentParams().prayerType == 'officium' && $store.pray.contentParams().select != 'officium-defunctorum' && $store.pray.contentParams().occasion == '{{item[0]}}' ? 'cursus-rite-selector-button-selected' : ''" href="/{{locale}}/officium/{{pdate}}{{'' if select == 'primarium' else f'/{select}'}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" x-rite-link:hard :href="Pray.makePath({...$store.pray.contentParams(), prayerType: 'officium', select: $store.pray.contentParams().select == 'officium-defunctorum' ? 'primarium' : $store.pray.contentParams().select, occasion: '{{item[0]}}'})">{{!item[1]}}</a>
             % end
           </div>
         </div>
