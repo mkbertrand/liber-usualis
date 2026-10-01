@@ -14,7 +14,7 @@ function dayTitle(rite) {
 }
 
 export function makePrayStore() {
-  // Path including the query string, since votives live in ?v=
+  // Always a rite path once init() has run, since a bare /pray visit is redirected; bindings rely on this
   const displayPath = signal(window.location.pathname + window.location.search);
   // Document is hydrated (after a manner of speaking) so initial value of rite should be the already-provided HTML
   const rite = signal(document.querySelector('main').innerHTML);
@@ -35,9 +35,7 @@ export function makePrayStore() {
   })());
   const now = signal(Temporal.Now.plainDateTimeISO());
 
-  const onRitePage = computed(() => isRitePath(displayPath.value));
   const contentParams = computed(() => contentParameters(displayPath.value));
-  const nextHourButton = computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value));
 
   async function loadRite(path) {
     let html = await fetchRite(path);
@@ -97,15 +95,14 @@ export function makePrayStore() {
     opt: opt,
     navigationType: navigationType,
     now: now,
-    onRitePage: onRitePage,
     contentParams: contentParams,
-    nextHourButton: nextHourButton,
+    nextHourButton: computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value)),
     navigateRite: navigateRite,
     redirect: redirect,
     // Redirects a bare /pray visit, or a reload of a page reached by soft navigation, to the most relevant rite
     init: () => {
       const [navEntry] = performance.getEntriesByType('navigation');
-      if (!onRitePage.value || (navEntry?.type === 'reload' && navigationType.value === 'soft')) {
+      if (!isRitePath(window.location.pathname) || (navEntry?.type === 'reload' && navigationType.value === 'soft')) {
         redirect();
       }
     },
@@ -179,13 +176,12 @@ export function canIncrementHour(current, now) {
 
 // What the next-hour button offers: the hour after the current one when on a cursus hour, otherwise the hour
 // after the last one prayed (today's Matins and Lauds counts as prayed when none has been recorded yet).
-// path is null off a rite page, where there is no locale to build it from.
 export function nextHourTarget(current, lastCursusHour, now) {
   let reference = isCursus(current) ? current : lastCursusHour ?? {...current, prayerType: 'officium', date: now.toPlainDate(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
   let target = nextHour(reference);
   return {
     // Stored hours carry no locale, and ones recorded before prayerType was stored lack it; the cursus is always the Office
-    path: current.locale ? makePath({...target, locale: current.locale, prayerType: 'officium'}) : null,
+    path: makePath({...target, locale: current.locale, prayerType: 'officium'}),
     occasion: target.occasion,
     allowed: canSay(target, now)
   };

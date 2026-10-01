@@ -30,7 +30,6 @@ function bindRitesMenu(store, display) {
 
   for (let link of menu.querySelectorAll('.rite-link')) {
     effect(() => {
-      if (!store.onRitePage.value) return;
       link.href = makePath({...store.contentParams.value, prayerType: link.dataset.prayerType, select: link.dataset.select, occasion: link.dataset.occasion});
     });
     link.addEventListener('click', () => {
@@ -103,10 +102,7 @@ function bindNextHour(store) {
 
   effect(() => {
     let target = store.nextHourButton.value;
-    // Off a rite page the server-rendered href stays until the redirect lands on one
-    if (target.path) {
-      button.href = target.path;
-    }
+    button.href = target.path;
     occasionName.textContent = RITE_TITLES[target.occasion];
     button.classList.toggle('next-hour-button-forbidden', !target.allowed);
     button.title = target.allowed ? '' : forbiddenTitle;
@@ -114,7 +110,7 @@ function bindNextHour(store) {
   button.addEventListener('click', (event) => {
     event.preventDefault();
     let target = store.nextHourButton.value;
-    if (target.allowed && target.path) {
+    if (target.allowed) {
       store.navigateRite(target.path);
     }
   });
@@ -146,12 +142,11 @@ function bindBottomPanel(store, display) {
   let dateSubmit = document.getElementById('date-selector-text-submit');
 
   let setSubmitHref = () => {
-    if (store.onRitePage.value && dateInput.value) {
+    if (dateInput.value) {
       dateSubmit.href = makePath({...store.contentParams.value, date: dateInput.value});
     }
   };
   effect(() => {
-    if (!store.onRitePage.value) return;
     let params = store.contentParams.value;
     decrement.href = shiftDatePath(params, -1);
     increment.href = shiftDatePath(params, 1);
@@ -163,7 +158,6 @@ function bindBottomPanel(store, display) {
 
   for (let button of document.querySelectorAll('.cursus-rite-selector-button')) {
     effect(() => {
-      if (!store.onRitePage.value) return;
       let params = store.contentParams.value;
       button.href = cursusHourPath(params, button.dataset.occasion);
       button.classList.toggle('cursus-rite-selector-button-selected', isCurrentCursusHour(params, button.dataset.occasion));
@@ -211,7 +205,6 @@ function bindOptionsPanel(store, display) {
 
   for (let radio of document.querySelectorAll('input[name="desired"]')) {
     effect(() => {
-      if (!store.onRitePage.value) return;
       radio.checked = store.contentParams.value.select == radio.dataset.select && store.opt.value.filter(t => t != 'privata').join('+') == radio.dataset.optTag;
     });
     radio.addEventListener('change', () => store.setDesired(radio.dataset.select, radio.dataset.optTag));
@@ -219,7 +212,6 @@ function bindOptionsPanel(store, display) {
 
   for (let checkbox of document.querySelectorAll('input[data-votive]')) {
     effect(() => {
-      if (!store.onRitePage.value) return;
       checkbox.checked = store.contentParams.value.votives.includes(checkbox.dataset.votive);
     });
     checkbox.addEventListener('change', () => store.toggleVotive(checkbox.dataset.votive));

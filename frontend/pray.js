@@ -11,9 +11,10 @@ initChantElement();
 const store = makePrayStore();
 const display = makeDisplayStore();
 persistDisplayStore(display);
+// Before binding, so that every binding's first run already sees a rite path
+store.init();
 bindPrayPage(store, display);
 // Keeps time-dependent state (whether the next hour may be said yet) current while the page stays open
 setInterval(() => {
   store.now.value = Temporal.Now.plainDateTimeISO();
 }, 60 * 1000);
-store.init();
