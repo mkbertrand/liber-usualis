@@ -44,19 +44,6 @@ export function nextHour(current) {
   };
 }
 
-export function shiftDatePath(params, days) {
-  return makePath({...params, date: params.date.add({days: days})});
-}
-
-// The Office of the Dead has its own hours, so choosing a cursus hour from it returns to the Office of the day
-export function cursusHourPath(params, occasion) {
-  return makePath({...params, prayerType: 'officium', select: params.select == 'officium-defunctorum' ? 'primarium' : params.select, occasion: occasion});
-}
-
-export function isCurrentCursusHour(params, occasion) {
-  return params.prayerType == 'officium' && params.select != 'officium-defunctorum' && params.occasion == occasion;
-}
-
 export function suggestOccasion(now) {
   let hour = now.hour;
   if (hour < 6 || hour > 21) return 'matutinum-laudes';

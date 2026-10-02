@@ -45,19 +45,13 @@ export function trapFocus(container) {
   };
 }
 
-// Sets isOpen to false on any click outside element. Clicks on toggleButton are left to its own handler,
+// Calls close on any click outside element while isOpen. Clicks on toggleButton are left to its own handler,
 // which would otherwise see the panel closed here and immediately reopen it.
-export function closeOnOutsideClick(element, isOpen, toggleButton) {
+export function closeOnOutsideClick(element, isOpen, close, toggleButton) {
   document.addEventListener('click', (event) => {
     if (!isOpen.value) return;
     if (element.contains(event.target) || toggleButton?.contains(event.target)) return;
-    isOpen.value = false;
-  });
-}
-
-export function toggleOnClick(button, isOpen) {
-  button.addEventListener('click', () => {
-    isOpen.value = !isOpen.value;
+    close();
   });
 }
 

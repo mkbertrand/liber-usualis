@@ -343,8 +343,13 @@
      =togglePriest=, =markHourAsDone=, =redirect=, =handlePopstate=) perform the
      history, cookie, storage, and =/api/rite= side effects.
    - =frontend/pray-display.js= (=makeDisplayStore()=) owns display-only state:
-     the persisted display toggles and bottom-panel setting (stored under legacy
-     =_x_=-prefixed =localStorage= keys), and which panels are open.
+     the persisted display toggles (stored under a legacy =_x_=-prefixed
+     =localStorage= key) and which panels are open.
+   - =frontend/pray-ordo.js= defines =OrdoModel= (=createModel=), the ordo panel's
+     browsing state: a date and votives that start from the page's rite, and the
+     =/api/ordo= responses for that date's diurnal and vesperal offices. =pray-view.js=
+     creates one, with the panel's bindings, each time the panel opens and disposes it
+     when it closes, so browsing never changes the page until a rite link is followed.
    - =frontend/routing.js= holds pure path functions: parsing a rite path into
      content parameters, building paths, cursus order, and suggested occasion.
    - =frontend/pray-view.js= (=bindPrayPage()=) binds the server-rendered markup

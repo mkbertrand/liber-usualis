@@ -3,7 +3,6 @@
 @import "./ordo-panel.css";
 @import "./rite.css";
 @import "./next-hour.css";
-@import "./bottom-panel.css";
 @import "./rites-menu.css";
 
 /* Containers and overall organization */
@@ -32,7 +31,7 @@
 
 /* Printing to pdf (or actual printers) */
 @media print {
-	#options-panel, #side-panel-left, #side-panel-right, #bottom-easy-select-container, #next-hour-button-container, #rites-menu-wrapper {
+	#options-panel, #side-panel-left, #side-panel-right, #next-hour-button-container, #rites-menu-wrapper {
 		display: none;
 	}
 }

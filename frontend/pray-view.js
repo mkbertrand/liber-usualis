@@ -1,16 +1,16 @@
 // Binds the pray page's server-rendered markup to the pray and display stores.
 // Each binding is a signal effect (state -> DOM) and/or an event listener (DOM -> state).
 
-import { effect, computed } from '@preact/signals-core';
-import { makePath, RITE_TITLES, shiftDatePath, cursusHourPath, isCurrentCursusHour } from './routing.js';
-import { setDisplayParameter } from './pray-display.js';
+import { effect, computed, untracked, createModel } from '@preact/signals-core';
+import { makePath, RITE_TITLES } from './routing.js';
 import { stopChantPlayback } from './gabc-chant.js';
-import { setShown, trapFocus, closeOnOutsideClick, toggleOnClick, labelFor } from './dom-bindings.js';
+import { setShown, trapFocus, closeOnOutsideClick, labelFor } from './dom-bindings.js';
+import { OrdoModel, ordoSummary, ordoRitePath } from './pray-ordo.js';
 
 // A panel shown over an overlay. Wrappers marked data-trap-focus (desktop only) trap focus and lock page scroll.
-function bindOverlayPanel(background, wrapper, isOpen, toggleButton) {
-  toggleOnClick(toggleButton, isOpen);
-  closeOnOutsideClick(wrapper, isOpen, toggleButton);
+function bindOverlayPanel(background, wrapper, toggleButton, isOpen, toggle, close) {
+  toggleButton.addEventListener('click', toggle);
+  closeOnOutsideClick(wrapper, isOpen, close, toggleButton);
   let trapsFocus = wrapper.hasAttribute('data-trap-focus');
   effect(() => {
     let open = isOpen.value;
@@ -24,17 +24,15 @@ function bindOverlayPanel(background, wrapper, isOpen, toggleButton) {
 function bindRitesMenu(store, display) {
   let menu = document.getElementById('rites-menu-wrapper');
   let toggleButton = document.getElementById('rites-menu-toggle-button');
-  toggleOnClick(toggleButton, display.ritesMenuOpen);
-  closeOnOutsideClick(menu, display.ritesMenuOpen, toggleButton);
+  toggleButton.addEventListener('click', display.toggleRitesMenu);
+  closeOnOutsideClick(menu, display.ritesMenuOpen, display.closeRitesMenu, toggleButton);
   effect(() => setShown(menu, display.ritesMenuOpen.value));
 
   for (let link of menu.querySelectorAll('.rite-link')) {
     effect(() => {
       link.href = makePath({...store.contentParams.value, prayerType: link.dataset.prayerType, select: link.dataset.select, occasion: link.dataset.occasion});
     });
-    link.addEventListener('click', () => {
-      display.ritesMenuOpen.value = false;
-    });
+    link.addEventListener('click', display.closeRitesMenu);
   }
 }
 
@@ -123,48 +121,6 @@ function bindNextHour(store) {
   }, {rootMargin: '0px 0px 400px 0px'}).observe(container);
 }
 
-function bindBottomPanel(store, display) {
-  let container = document.getElementById('bottom-easy-select-container');
-  let hideButton = document.getElementById('bottom-easy-select-hide');
-  let hideIcon = document.getElementById('bottom-easy-select-hide-icon');
-  let content = document.getElementById('bottom-easy-select-content-container');
-
-  effect(() => setShown(container, display.bottomPanelEnabled.value));
-  toggleOnClick(hideButton, display.bottomPanelOpen);
-  effect(() => {
-    setShown(content, display.bottomPanelOpen.value);
-    hideIcon.classList.toggle('bottom-easy-select-hide-icon-closed', !display.bottomPanelOpen.value);
-  });
-
-  let decrement = document.getElementById('date-selector-decrement');
-  let increment = document.getElementById('date-selector-increment');
-  let dateInput = document.getElementById('date-selector-text');
-  let dateSubmit = document.getElementById('date-selector-text-submit');
-
-  let setSubmitHref = () => {
-    if (dateInput.value) {
-      dateSubmit.href = makePath({...store.contentParams.value, date: dateInput.value});
-    }
-  };
-  effect(() => {
-    let params = store.contentParams.value;
-    decrement.href = shiftDatePath(params, -1);
-    increment.href = shiftDatePath(params, 1);
-    // Navigating resets the picker to the displayed date
-    dateInput.value = params.date.toString();
-    setSubmitHref();
-  });
-  dateInput.addEventListener('input', setSubmitHref);
-
-  for (let button of document.querySelectorAll('.cursus-rite-selector-button')) {
-    effect(() => {
-      let params = store.contentParams.value;
-      button.href = cursusHourPath(params, button.dataset.occasion);
-      button.classList.toggle('cursus-rite-selector-button-selected', isCurrentCursusHour(params, button.dataset.occasion));
-    });
-  }
-}
-
 function bindCheckbox(input, isChecked, onChange) {
   effect(() => {
     input.checked = isChecked();
@@ -177,7 +133,7 @@ function bindDisplayParameterCheckbox(display, inputId, key, dependsOn) {
   // Translation toggles are omitted for Latin
   if (!input) return;
   bindCheckbox(input, () => display.displayParameters.value[key], (checked) => {
-    setDisplayParameter(display, key, checked);
+    display.setDisplayParameter(key, checked);
     if (!checked && (key == 'chant' || key == 'playChant')) {
       stopChantPlayback();
     }
@@ -199,9 +155,6 @@ function bindOptionsPanel(store, display) {
   bindDisplayParameterCheckbox(display, 'play-chant-toggle', 'playChant', 'chant');
 
   bindCheckbox(document.getElementById('priest-toggle'), () => !store.opt.value.includes('privata'), () => store.togglePriest());
-  bindCheckbox(document.getElementById('bottom-panel-toggle'), () => display.bottomPanelEnabled.value, (checked) => {
-    display.bottomPanelEnabled.value = checked;
-  });
 
   for (let radio of document.querySelectorAll('input[name="desired"]')) {
     effect(() => {
@@ -231,14 +184,71 @@ function bindRiteLinks(store) {
   });
 }
 
+function bindOrdoTime(response, idPrefix) {
+  let primarium = document.getElementById(`${idPrefix}-primarium`);
+  let rank = document.getElementById(`${idPrefix}-primarium-rank`);
+  let commemorations = document.getElementById(`${idPrefix}-commemorations`);
+  effect(() => {
+    let summary = response.value ? ordoSummary(response.value) : {primarium: '', rank: '', commemorations: ''};
+    primarium.textContent = summary.primarium;
+    rank.textContent = summary.rank;
+    commemorations.textContent = summary.commemorations;
+  });
+}
+
+// The ordo panel's bindings for one browsing session. Created when the panel opens; disposing it disposes every
+// effect created here, including the OrdoModel's.
+const OrdoPanelSession = createModel((pageParams) => {
+  const ordo = new OrdoModel(pageParams);
+  // Event listeners aren't effects, so they are removed through this when the session is disposed
+  const listeners = new AbortController();
+  effect(() => () => listeners.abort());
+
+  let datePicker = document.getElementById('ordo-date-picker');
+  effect(() => {
+    datePicker.value = ordo.date.value.toString();
+  });
+  // Clearing the picker leaves its value empty; keep the current date until a full date is chosen
+  datePicker.addEventListener('change', () => {
+    if (datePicker.value) {
+      ordo.setDate(Temporal.PlainDate.from(datePicker.value));
+    }
+  }, {signal: listeners.signal});
+  document.getElementById('ordo-date-previous').addEventListener('click', () => ordo.setDate(ordo.date.value.subtract({days: 1})), {signal: listeners.signal});
+  document.getElementById('ordo-date-next').addEventListener('click', () => ordo.setDate(ordo.date.value.add({days: 1})), {signal: listeners.signal});
+
+  bindOrdoTime(ordo.daytime, 'ordo-daytime');
+  bindOrdoTime(ordo.evening, 'ordo-evening');
+
+  for (let link of document.querySelectorAll('.ordo-rite-link')) {
+    effect(() => {
+      link.href = ordoRitePath(ordo.date.value, ordo.votives.value, pageParams, link.dataset.occasion);
+    });
+  }
+  return {};
+});
+
+// Browsing in the panel changes only its session; the page changes only when one of its rite links is followed
+function bindOrdo(store, display) {
+  effect(() => {
+    if (!display.ordoPanelOpen.value) return;
+    // Untracked, so the page changing while the panel is open doesn't restart the session
+    let session = untracked(() => new OrdoPanelSession(store.contentParams.value));
+    return () => session[Symbol.dispose]();
+  });
+  for (let link of document.querySelectorAll('.ordo-rite-link')) {
+    link.addEventListener('click', display.closeOrdoPanel);
+  }
+}
+
 export function bindPrayPage(store, display) {
-  bindOverlayPanel(document.getElementById('options-panel-background'), document.getElementById('options-panel-wrapper'), display.optionsPanelOpen, document.getElementById('options-gear-button'));
-  bindOverlayPanel(document.getElementById('ordo-panel-background'), document.getElementById('ordo-panel-wrapper'), display.ordoPanelOpen, document.getElementById('ordo-panel-toggle-button'));
+  bindOverlayPanel(document.getElementById('options-panel-background'), document.getElementById('options-panel-wrapper'), document.getElementById('options-gear-button'), display.optionsPanelOpen, display.toggleOptionsPanel, display.closeOptionsPanel);
+  bindOverlayPanel(document.getElementById('ordo-panel-background'), document.getElementById('ordo-panel-wrapper'), document.getElementById('ordo-panel-toggle-button'), display.ordoPanelOpen, display.toggleOrdoPanel, display.closeOrdoPanel);
   bindRitesMenu(store, display);
   bindRite(store, display);
   bindNextHour(store);
-  bindBottomPanel(store, display);
   bindOptionsPanel(store, display);
   bindRiteLinks(store);
+  bindOrdo(store, display);
   window.addEventListener('popstate', () => store.handlePopstate());
 }

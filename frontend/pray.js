@@ -2,7 +2,7 @@
 
 import { initChantElement } from './gabc-chant.js';
 import { makePrayStore } from './pray-store.js';
-import { makeDisplayStore, persistDisplayStore } from './pray-display.js';
+import { makeDisplayStore } from './pray-display.js';
 import { bindPrayPage } from './pray-view.js';
 
 initChantElement();
@@ -10,7 +10,7 @@ initChantElement();
 // Runs once the document is parsed (the bundle is loaded with defer)
 const store = makePrayStore();
 const display = makeDisplayStore();
-persistDisplayStore(display);
+display.persist();
 // Before binding, so that every binding's first run already sees a rite path
 store.init();
 bindPrayPage(store, display);

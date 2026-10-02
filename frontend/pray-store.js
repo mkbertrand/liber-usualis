@@ -156,13 +156,6 @@ export function makePrayStore() {
   }
 }
 
-async function fetchOrdo(date, time, votives) {
-  return fetch(`/api/ordo?date=${date}&time=${time}&votives=${votives.join('+')}`)
-}
-export async function ordo(date, time, votives) {
-  return await fetchOrdo(date, time, votives).then(response => response.json());
-}
-
 export function canSay(params, now) {
   if (params.occasion == 'matutinum-laudes' && Temporal.PlainDate.compare(params.date, now.toPlainDate().add({days: 1})) == 0) {
     return now.hour >= 14;

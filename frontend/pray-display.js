@@ -1,8 +1,7 @@
 import { signal, effect } from '@preact/signals-core';
 
-// Legacy key names, kept so that settings saved under them carry over
+// Legacy key name, kept so that settings saved under it carry over
 const DISPLAY_PARAMETERS_KEY = '_x_displayParameters';
-const BOTTOM_PANEL_ENABLED_KEY = '_x_bottomPanelEnabled';
 
 const DEFAULT_DISPLAY_PARAMETERS = {
   'chant': false,
@@ -30,21 +29,40 @@ function writeJSON(key, value) {
 }
 
 export function makeDisplayStore() {
+  const displayParameters = signal({...DEFAULT_DISPLAY_PARAMETERS, ...readJSON(DISPLAY_PARAMETERS_KEY, {})});
+  const optionsPanelOpen = signal(false);
+  const ordoPanelOpen = signal(false);
+  const ritesMenuOpen = signal(false);
+
   return {
-    displayParameters: signal({...DEFAULT_DISPLAY_PARAMETERS, ...readJSON(DISPLAY_PARAMETERS_KEY, {})}),
-    bottomPanelEnabled: signal(readJSON(BOTTOM_PANEL_ENABLED_KEY, false)),
-    bottomPanelOpen: signal(true),
-    optionsPanelOpen: signal(false),
-    ordoPanelOpen: signal(false),
-    ritesMenuOpen: signal(false),
+    displayParameters: displayParameters,
+    optionsPanelOpen: optionsPanelOpen,
+    ordoPanelOpen: ordoPanelOpen,
+    ritesMenuOpen: ritesMenuOpen,
+    setDisplayParameter: (key, value) => {
+      displayParameters.value = {...displayParameters.value, [key]: value};
+    },
+    toggleOptionsPanel: () => {
+      optionsPanelOpen.value = !optionsPanelOpen.value;
+    },
+    closeOptionsPanel: () => {
+      optionsPanelOpen.value = false;
+    },
+    toggleOrdoPanel: () => {
+      ordoPanelOpen.value = !ordoPanelOpen.value;
+    },
+    closeOrdoPanel: () => {
+      ordoPanelOpen.value = false;
+    },
+    toggleRitesMenu: () => {
+      ritesMenuOpen.value = !ritesMenuOpen.value;
+    },
+    closeRitesMenu: () => {
+      ritesMenuOpen.value = false;
+    },
+    // Saves the display parameters whenever they change
+    persist: () => {
+      effect(() => writeJSON(DISPLAY_PARAMETERS_KEY, displayParameters.value));
+    }
   };
-}
-
-export function setDisplayParameter(display, key, value) {
-  display.displayParameters.value = {...display.displayParameters.value, [key]: value};
-}
-
-export function persistDisplayStore(display) {
-  effect(() => writeJSON(DISPLAY_PARAMETERS_KEY, display.displayParameters.value));
-  effect(() => writeJSON(BOTTOM_PANEL_ENABLED_KEY, display.bottomPanelEnabled.value));
 }

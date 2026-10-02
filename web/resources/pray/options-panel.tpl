@@ -22,10 +22,6 @@
 		<input type="checkbox" id="priest-toggle" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
-	<div>
-		<input type="checkbox" id="bottom-panel-toggle" />
-		<label for="bottom-panel-toggle">{{text['bottom-panel-toggle']}}</label>
-	</div>
 	<div id="desired-select-wrapper">
 		<div id="desired-select-container">
 			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>

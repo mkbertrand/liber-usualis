@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { makePath, cursusHourPath, isCurrentCursusHour, suggestOccasion } from '../routing.js';
+import { makePath, suggestOccasion } from '../routing.js';
 
 // Dates only need to stringify here, so plain strings stand in for Temporal.PlainDate
 const vesperae = {locale: 'en', prayerType: 'officium', date: '2026-10-01', select: 'primarium', occasion: 'vesperae', votives: []};
@@ -11,19 +11,6 @@ const vesperae = {locale: 'en', prayerType: 'officium', date: '2026-10-01', sele
 test('makePath omits the primary select and empty votives', () => {
 	assert.equal(makePath(vesperae), '/en/officium/2026-10-01/vesperae');
 	assert.equal(makePath({...vesperae, select: 'officium-parvum-bmv', votives: ['de-joseph', 'de-passione']}), '/en/officium/2026-10-01/officium-parvum-bmv/vesperae?v=de-joseph+de-passione');
-});
-
-test('cursusHourPath keeps the select, except leaving the Office of the Dead', () => {
-	assert.equal(cursusHourPath({...vesperae, select: 'officium-parvum-bmv'}, 'prima'), '/en/officium/2026-10-01/officium-parvum-bmv/prima');
-	assert.equal(cursusHourPath({...vesperae, select: 'officium-defunctorum'}, 'prima'), '/en/officium/2026-10-01/prima');
-	assert.equal(cursusHourPath({...vesperae, prayerType: 'ritus', occasion: 'itinerarium'}, 'nona'), '/en/officium/2026-10-01/nona');
-});
-
-test('isCurrentCursusHour only matches the displayed hour of the cursus', () => {
-	assert.equal(isCurrentCursusHour(vesperae, 'vesperae'), true);
-	assert.equal(isCurrentCursusHour(vesperae, 'completorium'), false);
-	assert.equal(isCurrentCursusHour({...vesperae, select: 'officium-defunctorum'}, 'vesperae'), false);
-	assert.equal(isCurrentCursusHour({...vesperae, prayerType: 'ritus'}, 'vesperae'), false);
 });
 
 test('suggestOccasion follows the hour of the day', () => {
