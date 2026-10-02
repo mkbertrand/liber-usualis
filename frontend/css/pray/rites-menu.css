@@ -14,30 +14,21 @@
 }
 
 #rites-menu-wrapper {
+	/* left and top are set by the page's script to place it under its button */
 	position: fixed;
-	top: calc(var(--top-bar-title-height) + 9px);
-	right: 18px;
-	width: 340px;
+	width: 300px;
 	max-width: calc(100vw - 36px);
 	box-sizing: border-box;
 	background-color: var(--panel-background-color);
 	border: 1px solid var(--border-color);
 	border-radius: 3px;
 	padding: 18px 20px;
-	font-family: "Old Standard TT", times;
+	font-family: "Arsenal", sans-serif;
 	color: var(--panel-text-color);
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-}
-
-#rites-menu-title {
-	text-align: center;
-	font-variant: small-caps;
-	color: var(--rubric);
-	margin: 0;
-	font-weight: normal;
 }
 
 .rites-menu-group {
@@ -47,9 +38,8 @@
 }
 
 .rites-menu-group-label {
-	font-variant: small-caps;
 	font-size: 13px;
-	color: var(--panel-text-color-muted);
+	color: var(--panel-text-color);
 }
 
 .rites-menu-pair {
@@ -63,12 +53,9 @@
 	gap: 9px;
 }
 
-.rite-link {
-	color: var(--panel-text-color);
+/* Same color whether or not visited */
+.rite-link, .rite-link:visited {
+	color: var(--link-color);
 	text-decoration: underline;
 	text-underline-offset: 2px;
-}
-
-.rite-link:hover {
-	color: var(--rubric);
 }

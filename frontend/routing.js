@@ -44,6 +44,19 @@ export function nextHour(current) {
   };
 }
 
+// An hour of the office on date, with params' locale and votives. Only the Little Office carries over from params'
+// select; anything else (including the Office of the Dead) opens the Office of the day.
+export function officeHourPath(params, date, occasion) {
+  return makePath({
+    locale: params.locale,
+    prayerType: 'officium',
+    date: date,
+    select: params.select == 'officium-parvum-bmv' ? 'officium-parvum-bmv' : 'primarium',
+    occasion: occasion,
+    votives: params.votives
+  });
+}
+
 export function suggestOccasion(now) {
   let hour = now.hour;
   if (hour < 6 || hour > 21) return 'matutinum-laudes';

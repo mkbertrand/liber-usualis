@@ -163,6 +163,14 @@ export function canSay(params, now) {
   return Temporal.PlainDate.compare(params.date, now.toPlainDate()) == 0;
 }
 
+// The day other rite links lead to. Soft navigation onto Matins and Lauds anticipated the evening before still
+// belongs to the current calendar day, so links lead to that day's rites rather than the anticipated day's.
+export function riteLinksDate(params, navigationType, now) {
+  let today = now.toPlainDate();
+  let anticipatedMatins = isCursus(params) && params.occasion == 'matutinum-laudes' && Temporal.PlainDate.compare(params.date, today.add({days: 1})) == 0;
+  return navigationType == 'soft' && anticipatedMatins ? today : params.date;
+}
+
 export function canIncrementHour(current, now) {
   return canSay(nextHour(current), now);
 }

@@ -26,6 +26,10 @@ h3 {
 	font-weight: normal;
 }
 
+h4 {
+  font-family: "Old Standard TT", times;
+}
+
 p, ol, ul {
 	font-family: "Old Standard TT", times;
 	font-size: 18px;

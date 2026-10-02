@@ -79,12 +79,21 @@
     % include('web/resources/top-bar.tpl', locale=locale, options=True, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
     <div id="second-bar-container">
       <div id="second-bar">
-        <div id="second-bar-right-aligned-container" class="second-bar-container">
+        <div id="second-bar-center-aligned-container" class="second-bar-container">
+          % hour_select = '/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''
+          % hour_votives = '' if len(votives) == 0 else f'?v={votives}'
+          % for hour in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
+          <a class="navigation-link second-bar-hour-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
+          % end
+          % # Shown by the page's script once the next day's Matins may be said, which depends on the reader's local time
+          <a id="second-bar-next-matins-link" class="navigation-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
           <div class="top-bar-button-container">
             <button id="rites-menu-toggle-button" class="navigation-link">
               More Rites
             </button>
           </div>
+        </div>
+        <div id="second-bar-right-aligned-container" class="second-bar-container">
           <div class="top-bar-button-container">
             <button id="ordo-panel-toggle-button" class="navigation-link">
               Ordo
@@ -126,7 +135,7 @@
           <h3>Rites.</h3>
           <div id="ordo-rite-links">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
-            <a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link="hard" data-occasion="{{item[0]}}">{{!item[1]}}</a>
+            <a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link data-occasion="{{item[0]}}">{{!item[1]}}</a>
             % end
           </div>
         </div>

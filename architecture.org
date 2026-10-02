@@ -355,9 +355,10 @@
    - =frontend/pray-view.js= (=bindPrayPage()=) binds the server-rendered markup
      to both stores. Each binding is an =effect= (state to DOM) or an event
      listener (DOM to state), found by element id or data attribute. Links
-     marked =data-rite-link= navigate in-page; =data-rite-link="hard"= keeps the
-     chosen rite on reload, while soft navigation lets a reload move on to a more
-     relevant rite. =frontend/dom-bindings.js= provides the generic show/hide,
+     marked =data-rite-link= navigate in-page and keep the current navigation
+     type: hard keeps the chosen rite on reload, while soft lets a reload move on
+     to a more relevant rite. A link may name a type with =data-rite-link="hard"=
+     or ="soft"=. =frontend/dom-bindings.js= provides the generic show/hide,
      focus-trap, and outside-click helpers.
 
 ** Theme and Other Pages

@@ -20,13 +20,29 @@
   height: 100%;
   padding: 9px;
   box-sizing: border-box;
+  /* Equal outer columns keep the hours centered in the bar regardless of the controls' width */
+  display: grid;
+  grid-template-columns: 1fr minmax(0, max-content) 1fr;
+  gap: 20px;
+}
+
+#second-bar-center-aligned-container, #second-bar-right-aligned-container {
   display: flex;
   gap: 20px;
-  justify-content: right;
+}
+
+#second-bar-center-aligned-container {
+  grid-column: 2;
+  /* On narrow screens the hours scroll sideways so the controls on the right always stay reachable */
+  overflow-x: auto;
+}
+
+#second-bar-center-aligned-container > * {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 #second-bar-right-aligned-container {
+  grid-column: 3;
   justify-content: flex-end;
-  display: flex;
-  gap: 20px;
 }

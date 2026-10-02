@@ -55,6 +55,15 @@ export function closeOnOutsideClick(element, isOpen, close, toggleButton) {
   });
 }
 
+// Places a position: fixed element under anchor with their right edges aligned, kept at least margin pixels inside
+// the window
+export function positionUnderRightAligned(element, anchor, margin = 8) {
+  let anchorRect = anchor.getBoundingClientRect();
+  let left = anchorRect.right - element.offsetWidth;
+  element.style.left = `${Math.min(Math.max(left, margin), window.innerWidth - element.offsetWidth - margin)}px`;
+  element.style.top = `${anchorRect.bottom + 4}px`;
+}
+
 export function labelFor(input) {
   return document.querySelector(`label[for="${input.id}"]`);
 }

@@ -2,9 +2,10 @@
 // Each binding is a signal effect (state -> DOM) and/or an event listener (DOM -> state).
 
 import { effect, computed, untracked, createModel } from '@preact/signals-core';
-import { makePath, RITE_TITLES } from './routing.js';
+import { makePath, RITE_TITLES, officeHourPath } from './routing.js';
+import { canSay, riteLinksDate } from './pray-store.js';
 import { stopChantPlayback } from './gabc-chant.js';
-import { setShown, trapFocus, closeOnOutsideClick, labelFor } from './dom-bindings.js';
+import { setShown, trapFocus, closeOnOutsideClick, positionUnderRightAligned, labelFor } from './dom-bindings.js';
 import { OrdoModel, ordoSummary, ordoRitePath } from './pray-ordo.js';
 
 // A panel shown over an overlay. Wrappers marked data-trap-focus (desktop only) trap focus and lock page scroll.
@@ -26,11 +27,27 @@ function bindRitesMenu(store, display) {
   let toggleButton = document.getElementById('rites-menu-toggle-button');
   toggleButton.addEventListener('click', display.toggleRitesMenu);
   closeOnOutsideClick(menu, display.ritesMenuOpen, display.closeRitesMenu, toggleButton);
-  effect(() => setShown(menu, display.ritesMenuOpen.value));
+  // Fixed rather than inside the button's group, which scrolls sideways and would clip it; so it is placed under
+  // the button on opening and follows it if the window resizes or the group scrolls
+  let hoursGroup = document.getElementById('second-bar-center-aligned-container');
+  effect(() => {
+    let open = display.ritesMenuOpen.value;
+    setShown(menu, open);
+    if (!open) return;
+    let reposition = () => positionUnderRightAligned(menu, toggleButton);
+    reposition();
+    window.addEventListener('resize', reposition);
+    hoursGroup.addEventListener('scroll', reposition);
+    return () => {
+      window.removeEventListener('resize', reposition);
+      hoursGroup.removeEventListener('scroll', reposition);
+    };
+  });
 
   for (let link of menu.querySelectorAll('.rite-link')) {
     effect(() => {
-      link.href = makePath({...store.contentParams.value, prayerType: link.dataset.prayerType, select: link.dataset.select, occasion: link.dataset.occasion});
+      let params = store.contentParams.value;
+      link.href = makePath({...params, date: riteLinksDate(params, store.navigationType.value, store.now.value), prayerType: link.dataset.prayerType, select: link.dataset.select, occasion: link.dataset.occasion});
     });
     link.addEventListener('click', display.closeRitesMenu);
   }
@@ -64,6 +81,24 @@ function lineByLine(rite) {
     }
   }
   return riteRet.join('');
+}
+
+// The hours of the day given by riteLinksDate, plus the next day's Matins once it may be said
+function bindHourLinks(store) {
+  for (let link of document.querySelectorAll('.second-bar-hour-link')) {
+    effect(() => {
+      let params = store.contentParams.value;
+      link.href = officeHourPath(params, riteLinksDate(params, store.navigationType.value, store.now.value), link.dataset.occasion);
+    });
+  }
+  let nextMatins = document.getElementById('second-bar-next-matins-link');
+  effect(() => {
+    let params = store.contentParams.value;
+    let date = riteLinksDate(params, store.navigationType.value, store.now.value).add({days: 1});
+    nextMatins.href = officeHourPath(params, date, 'matutinum-laudes');
+    nextMatins.title = date.toString();
+    setShown(nextMatins, canSay({...params, date: date, occasion: 'matutinum-laudes'}, store.now.value));
+  });
 }
 
 function bindRite(store, display) {
@@ -171,8 +206,9 @@ function bindOptionsPanel(store, display) {
   }
 }
 
-// Links marked data-rite-link navigate within the page instead of reloading it.
-// data-rite-link="hard" keeps the chosen rite on reload; otherwise ("soft") a reload may move on to a more relevant rite.
+// Links marked data-rite-link navigate within the page instead of reloading it, keeping the current navigation type
+// unless the link names one (data-rite-link="hard" keeps the chosen rite on reload; "soft" lets a reload move on to
+// a more relevant rite).
 function bindRiteLinks(store) {
   document.addEventListener('click', (event) => {
     let link = event.target.closest('a[data-rite-link]');
@@ -180,7 +216,7 @@ function bindRiteLinks(store) {
     if (!link || event.button != 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     let url = new URL(link.href);
-    store.navigateRite(url.pathname + url.search, link.dataset.riteLink || 'soft');
+    store.navigateRite(url.pathname + url.search, link.dataset.riteLink || null);
   });
 }
 
@@ -247,6 +283,7 @@ export function bindPrayPage(store, display) {
   bindRitesMenu(store, display);
   bindRite(store, display);
   bindNextHour(store);
+  bindHourLinks(store);
   bindOptionsPanel(store, display);
   bindRiteLinks(store);
   bindOrdo(store, display);

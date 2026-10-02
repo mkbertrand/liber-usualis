@@ -1,5 +1,5 @@
 import { signal, effect, batch, createModel } from '@preact/signals-core';
-import { makePath } from './routing.js';
+import { officeHourPath } from './routing.js';
 
 async function fetchOrdo(date, time, votives) {
   return fetch(`/api/ordo?date=${date}&time=${time}&votives=${votives.join('+')}`)
@@ -37,17 +37,9 @@ export function ordoSummary(response) {
   };
 }
 
-// An hour of the office for the browsed date and votives. Only the Little Office carries over from the page's select;
-// anything else (including the Office of the Dead) opens the Office of the day.
+// An hour of the office for the browsed date and votives, with the page's locale and Little Office select
 export function ordoRitePath(date, votives, pageParams, occasion) {
-  return makePath({
-    locale: pageParams.locale,
-    prayerType: 'officium',
-    date: date,
-    select: pageParams.select == 'officium-parvum-bmv' ? 'officium-parvum-bmv' : 'primarium',
-    occasion: occasion,
-    votives: votives
-  });
+  return officeHourPath({...pageParams, votives: votives}, date, occasion);
 }
 
 // One browsing session of the ordo, created from the page's rite when the panel opens and disposed when it closes

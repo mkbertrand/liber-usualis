@@ -1,5 +1,4 @@
 <div id="rites-menu-wrapper" style="display: none">
-  <h3 id="rites-menu-title">{{text['rites-menu-title']}}</h3>
     <a class="rite-link" href="/{{locale}}/officium/{{date}}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
     <a class="rite-link" href="/{{locale}}/officium/{{date}}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
   % for rites_menu_entry in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis']]:

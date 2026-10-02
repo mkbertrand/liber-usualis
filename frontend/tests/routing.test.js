@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { makePath, suggestOccasion } from '../routing.js';
+import { makePath, suggestOccasion, officeHourPath } from '../routing.js';
 
 // Dates only need to stringify here, so plain strings stand in for Temporal.PlainDate
 const vesperae = {locale: 'en', prayerType: 'officium', date: '2026-10-01', select: 'primarium', occasion: 'vesperae', votives: []};
@@ -18,4 +18,11 @@ test('suggestOccasion follows the hour of the day', () => {
 	for (const [hour, occasion] of expected) {
 		assert.equal(suggestOccasion({hour: hour}), occasion, `hour ${hour}`);
 	}
+});
+
+test('officeHourPath keeps only the Little Office from the select, with the given date and the params votives', () => {
+	assert.equal(officeHourPath({...vesperae, votives: ['de-joseph']}, '2026-10-02', 'matutinum-laudes'), '/en/officium/2026-10-02/matutinum-laudes?v=de-joseph');
+	assert.equal(officeHourPath({...vesperae, select: 'officium-parvum-bmv'}, '2026-10-01', 'prima'), '/en/officium/2026-10-01/officium-parvum-bmv/prima');
+	assert.equal(officeHourPath({...vesperae, select: 'officium-defunctorum'}, '2026-10-01', 'prima'), '/en/officium/2026-10-01/prima');
+	assert.equal(officeHourPath({...vesperae, prayerType: 'ritus', occasion: 'itinerarium'}, '2026-10-01', 'nona'), '/en/officium/2026-10-01/nona');
 });
