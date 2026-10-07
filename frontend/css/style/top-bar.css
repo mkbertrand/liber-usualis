@@ -10,13 +10,21 @@
 	z-index: 2;
   padding: 9px;
   box-sizing: border-box;
-  display: flex;
-  gap: 20px;
+  display: flow-root;
+}
+
+#top-bar-left-aligned-container {
+  float: left;
+}
+
+#top-bar-right-aligned-container {
+  float: right;
 }
 
 #top-bar-left-aligned-container, #top-bar-right-aligned-container {
   display: flex;
   gap: 20px;
+	height: 100%;
 }
 
 /* Logo stuff */
@@ -67,10 +75,6 @@
   font-family: "Arsenal", sans-serif;
   font-size: 18px;
   color: var(--button-text-color);
-}
-
-#top-bar-right-aligned-container {
-  justify-content: flex-end;
 }
 
 .top-bar-button-container {
