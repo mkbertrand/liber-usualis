@@ -19,14 +19,15 @@ setInterval(() => {
   store.now.value = Temporal.Now.plainDateTimeISO();
 }, 60 * 1000);
 
-if (!canSay(store.contentParams.value, store.now.value) && !store.navigationType.value != 'hard') {
+// If hard navigation is specified as hard already, this is because this navigation really comes from the user's history rather than a link (where navigationType would be null)
+if (!canSay(store.contentParams.value, store.now.value) && store.navigationType.value != 'hard') {
   makeBanner(
     store,
     'outdated-liturgical-content-banner',
     'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
     [
       {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.redirect(); }},
-      {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.navigationType.value = 'hard'; }}
+      {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.setNavigationType('hard'); }}
     ]
   );
 }

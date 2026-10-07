@@ -100,6 +100,11 @@ export function makePrayStore() {
     nextHourButton: computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value)),
     navigateRite: navigateRite,
     redirect: redirect,
+    // Changes the navigation type without navigating, recording it in the current history entry so it survives a reload
+    setNavigationType: (newNavigationType) => {
+      navigationType.value = newNavigationType;
+      history.replaceState({...history.state, navigationType: newNavigationType}, '');
+    },
     // Redirects a bare /pray visit, or a reload of a page reached by soft navigation, to the most relevant rite
     init: () => {
       const [navEntry] = performance.getEntriesByType('navigation');
