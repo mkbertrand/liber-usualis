@@ -20,6 +20,13 @@ setInterval(() => {
 }, 60 * 1000);
 
 if (!canSay(store.contentParams.value, store.now.value)) {
-  console.log('Cannot say!');
-  makeBanner(store, 'test', 'This hour cannot be said!', []);
+  makeBanner(
+    store,
+    'outdated-liturgical-content-banner',
+    'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
+    [
+      {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.redirect(); }},
+      {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => {}}
+    ]
+  );
 }

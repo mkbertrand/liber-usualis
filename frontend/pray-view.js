@@ -295,16 +295,21 @@ const bannerTemplate = document.querySelector('#system-banner');
 const bannerAnswerTemplate = document.querySelector('#system-banner-answer');
 export function makeBanner(store, bannerID, bannerContent, answers) {
   const bannerClone = document.importNode(bannerTemplate.content, true);
-  bannerClone.id = bannerID;
+  let banner = bannerClone.querySelector('.system-banner');
+  banner.id = bannerID;
   let content = bannerClone.querySelector('.system-banner-content');
   content.textContent = bannerContent;
   let answerContainer = bannerClone.querySelector('.system-banner-answer-container');
-  for (answer of answers) {
+  for (let answer of answers) {
     const bannerButtonClone = document.importNode(bannerAnswerTemplate.content, true);
-    bannerButtonClone.textContent = answer.content;
-    bannerButtonClone.id = answer.id;
+    let bannerButton = bannerButtonClone.querySelector('button');
+    bannerButton.textContent = answer.content;
+    bannerButton.id = answer.id;
     answerContainer.appendChild(bannerButtonClone);
+    bannerButton.addEventListener('click', async () => { document.getElementById(bannerID).remove(); await answer.action(); });
   }
+  let bannerCloseButton = bannerClone.querySelector('.system-banner-close');
+  bannerCloseButton.addEventListener('click', () => { document.getElementById(bannerID).remove(); });
 
   bannerContainer.appendChild(bannerClone);
 }

@@ -110,8 +110,10 @@
     <div id="system-banner-container">
       <template id="system-banner">
         <div class="system-banner">
-          <p class="system-banner-content"></p>
-          <div class="system-banner-answer-container">
+          <div class="system-banner-content-container">
+            <p class="system-banner-content"></p>
+            <div class="system-banner-answer-container">
+            </div>
           </div>
           <button class="system-banner-close ui-button">Dismiss</button>
         </div>

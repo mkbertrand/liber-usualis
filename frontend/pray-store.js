@@ -73,6 +73,7 @@ export function makePrayStore() {
   }
 
   async function redirect() {
+    console.log('Redirecting...');
     let locale = window.location.pathname.match(/^\/([a-z]{2})\//)?.[1] || 'en';
     let currentNow = now.value;
     if (lastCursusHour.value === null || !canIncrementHour(lastCursusHour.value, currentNow)) {
