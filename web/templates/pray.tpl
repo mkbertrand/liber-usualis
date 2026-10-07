@@ -107,6 +107,19 @@
         </div>
       </div>
     </div>
+    <div id="system-banner-container">
+      <template id="system-banner">
+        <div class="system-banner">
+          <p class="system-banner-content"></p>
+          <div class="system-banner-answer-container">
+          </div>
+          <button class="system-banner-close ui-button">Dismiss</button>
+        </div>
+      </template>
+      <template id="system-banner-answer">
+        <button class="system-banner-answer ui-button"></button>
+      </template>
+    </div>
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
     <div id="content-container-outer">
     % # On mobile the panels are full-screen sheets (see pray-mobile.css), so they neither trap focus nor lock scrolling.

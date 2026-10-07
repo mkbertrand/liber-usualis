@@ -1,0 +1,15 @@
+#system-banner-container {
+  position: fixed;
+	top: calc(var(--top-bar-title-height) + var(--second-bar-height) + 3px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 2;
+}
+
+.system-banner {
+  width: 100%;
+  background-color: var(--panel-background-color);
+  display: flex;
+}

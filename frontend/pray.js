@@ -1,9 +1,9 @@
 // Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import { initChantElement } from './gabc-chant.js';
-import { makePrayStore } from './pray-store.js';
+import { makePrayStore, canSay } from './pray-store.js';
 import { makeDisplayStore } from './pray-display.js';
-import { bindPrayPage } from './pray-view.js';
+import { bindPrayPage, makeBanner } from './pray-view.js';
 
 initChantElement();
 
@@ -18,3 +18,8 @@ bindPrayPage(store, display);
 setInterval(() => {
   store.now.value = Temporal.Now.plainDateTimeISO();
 }, 60 * 1000);
+
+if (!canSay(store.contentParams.value, store.now.value)) {
+  console.log('Cannot say!');
+  makeBanner(store, 'test', 'This hour cannot be said!', []);
+}
