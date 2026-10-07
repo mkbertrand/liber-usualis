@@ -72,22 +72,26 @@ export function makePrayStore() {
     }
   }
 
-  async function redirect() {
-    console.log('Redirecting...');
+  function bestHour() {
     let locale = window.location.pathname.match(/^\/([a-z]{2})\//)?.[1] || 'en';
     let currentNow = now.value;
     if (lastCursusHour.value === null || !canIncrementHour(lastCursusHour.value, currentNow)) {
-      await navigateRite(makePath({
+      return {
         locale: locale,
         prayerType: 'officium',
         date: currentNow.toPlainDate(),
         select: 'primarium',
         occasion: suggestOccasion(currentNow),
         votives: []
-      }), 'soft', 'replace');
+      }
     } else {
-      await navigateRite(makePath({...nextHour(lastCursusHour.value), locale: locale, prayerType: 'officium'}), 'soft', 'replace');
+      return {...nextHour(lastCursusHour.value), locale: locale, prayerType: 'officium'};
     }
+  }
+
+  async function redirect() {
+    console.log('Redirecting...');
+    await navigateRite(makePath(bestHour()), 'soft', 'replace');
   }
 
   return {
@@ -99,6 +103,7 @@ export function makePrayStore() {
     contentParams: contentParams,
     nextHourButton: computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value)),
     navigateRite: navigateRite,
+    bestHour: bestHour,
     redirect: redirect,
     // Changes the navigation type without navigating, recording it in the current history entry so it survives a reload
     setNavigationType: (newNavigationType) => {
@@ -108,7 +113,7 @@ export function makePrayStore() {
     // Redirects a bare /pray visit, or a reload of a page reached by soft navigation, to the most relevant rite
     init: () => {
       const [navEntry] = performance.getEntriesByType('navigation');
-      if (!isRitePath(window.location.pathname) || (navEntry?.type === 'reload' && navigationType.value === 'soft')) {
+      if (!isRitePath(window.location.pathname)) {
         redirect();
       }
     },

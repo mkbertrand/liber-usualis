@@ -20,14 +20,26 @@ setInterval(() => {
 }, 60 * 1000);
 
 // If hard navigation is specified as hard already, this is because this navigation really comes from the user's history rather than a link (where navigationType would be null)
-if (!canSay(store.contentParams.value, store.now.value) && store.navigationType.value != 'hard') {
-  makeBanner(
-    store,
-    'outdated-liturgical-content-banner',
-    'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
-    [
-      {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.redirect(); }},
-      {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.setNavigationType('hard'); }}
-    ]
-  );
+if (store.navigationType.value != 'hard') {
+  if (canSay(store.contentParams.value, store.now.value) && (store.bestHour().occasion != store.contentParams.value.occasion || !store.bestHour().date.equals(store.contentParams.value.date))) {
+    makeBanner(
+      store,
+      'suboptimal-liturgical-content-banner',
+      'Would you like to view your current liturgical content, or remain here?',
+      [
+        {id: 'suboptimal-liturgical-content-banner-yes', content: 'See my next hour.', action: async () => { await store.redirect(); }},
+        {id: 'suboptimal-liturgical-content-banner-no', content: 'Remain here.', action: () => {}}
+      ]
+    );
+  } else if (!canSay(store.contentParams.value, store.now.value)) {
+    makeBanner(
+      store,
+      'outdated-liturgical-content-banner',
+      'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
+      [
+        {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.redirect(); }},
+        {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.setNavigationType('hard'); }}
+      ]
+    );
+  }
 }
