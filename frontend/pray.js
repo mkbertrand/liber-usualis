@@ -19,14 +19,14 @@ setInterval(() => {
   store.now.value = Temporal.Now.plainDateTimeISO();
 }, 60 * 1000);
 
-if (!canSay(store.contentParams.value, store.now.value)) {
+if (!canSay(store.contentParams.value, store.now.value) && !store.navigationType.value != 'hard') {
   makeBanner(
     store,
     'outdated-liturgical-content-banner',
     'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
     [
       {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.redirect(); }},
-      {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => {}}
+      {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.navigationType.value = 'hard'; }}
     ]
   );
 }
