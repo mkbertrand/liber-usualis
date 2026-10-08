@@ -28,12 +28,11 @@ export function rankName(tags) {
   return RANK_NAMES.find(([tag]) => tags.includes(tag))?.[1] ?? '';
 }
 
-// The parts of an /api/ordo response shown in the ordo panel
 export function ordoSummary(response) {
   return {
     primarium: response.primary[0],
     rank: rankName(response.primary[1]),
-    commemorations: response.commemorations.map(([name]) => name).join(', ')
+    commemorations: response.commemorations.filter(([, tags]) => !tags.includes('suffragium')).map(([name]) => name)
   };
 }
 

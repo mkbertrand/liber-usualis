@@ -18,7 +18,7 @@
 	max-width: 100%;
 	background-color: var(--panel-background-color);
 	border-radius: var(--border-radius);
-	border: 1px solid var(--border-color);
+  box-shadow: var(--panel-shadow);
 }
 
 #ordo-panel {
@@ -27,4 +27,5 @@
 	gap: 7px;
 	padding: 21px 21px 7px 21px;
 	color: var(--panel-text-color);
+  font-family: "Arsenal", sans-serif;
 }

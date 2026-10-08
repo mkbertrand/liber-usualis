@@ -137,21 +137,19 @@
     <div id="ordo-panel-background" style="display: none">
       <div id="ordo-panel-wrapper"{{!'' if mobile else ' data-trap-focus'}}>
         <div id="ordo-panel">
-          <h2>Ordo.</h2>
+          <h2>Ordo</h2>
           <div id="ordo-date-controls">
             <button id="ordo-date-previous" type="button" aria-label="Previous day">‹</button>
             <input id="ordo-date-picker" type="date" value="{{date}}" aria-label="Date">
             <button id="ordo-date-next" type="button" aria-label="Next day">›</button>
           </div>
-          <p>Daytime</p>
-          <p id="ordo-daytime-primarium"></p>
-          <p id="ordo-daytime-primarium-rank"></p>
+          <h3>Daytime</h3>
+          <p><span id="ordo-daytime-primarium"></span> &mdash; <span id="ordo-daytime-primarium-rank"></span></p>
           <p id="ordo-daytime-commemorations"></p>
-          <p>Evening</p>
-          <p id="ordo-evening-primarium"></p>
-          <p id="ordo-evening-primarium-rank"></p>
+          <h3>Evening</h3>
+          <p><span id="ordo-evening-primarium"></span> &mdash; <span id="ordo-evening-primarium-rank"></span></p>
           <p id="ordo-evening-commemorations"></p>
-          <h3>Rites.</h3>
+          <h3>Rites</h3>
           <div id="ordo-rite-links">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
             % # Choosing a rite from the ordo is a deliberate choice of day, so it pins the page (hard navigation)

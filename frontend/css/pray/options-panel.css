@@ -28,7 +28,7 @@
 	max-width: 100%;
 	background-color: var(--panel-background-color);
 	border-radius: var(--border-radius);
-	border: 1px solid var(--border-color);
+  box-shadow: var(--panel-shadow);
 }
 
 #options-panel {

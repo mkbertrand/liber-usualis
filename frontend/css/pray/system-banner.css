@@ -10,23 +10,33 @@
 
 .system-banner {
   background-color: var(--panel-background-color);
+  margin-left: 3px;
+  margin-right: 3px;
+  height: 60px;
   /* Same layout as the second bar: equal outer columns keep the content centered regardless of the close button's width */
   padding: 9px;
   display: grid;
   grid-template-columns: 1fr minmax(0, max-content) 1fr;
   gap: 20px;
-  align-items: center;
+  /* Items stretch to the full row height, so buttons fill it; the text centers itself within that height */
+  align-items: stretch;
   border: 1px solid var(--border-color);
+  border-radius: var(--component-border-radius);
+}
+
+.system-banner-content-container, .system-banner-answer-container {
+  display: flex;
+  gap: 20px;
 }
 
 .system-banner-content-container {
   grid-column: 2;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .system-banner-content {
+  margin: 0;
+  display: flex;
+  align-items: center;
   font-family: "Arsenal", sans-serif;
 }
 

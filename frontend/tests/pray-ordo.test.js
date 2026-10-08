@@ -13,19 +13,19 @@ test('rankName prefers the most specific rank tag', () => {
 	assert.equal(rankName(['suffragium', 'maria']), '');
 });
 
-test('ordoSummary takes the primary office, its rank, and the commemorations in order', () => {
+test('ordoSummary takes the primary office, its rank, and the commemorations in order, without suffrages', () => {
 	// Shape of /api/ordo for 2026-10-01, vesperale
 	const response = {
 		primary: ['Ss. Angelorum Custodum', ['i-vesperae', 'duplex', 'primarium', 'duplex-majus', 'angeli-custodes']],
-		commemorations: [['S. Remigii Episcopi et Confessoris', ['ii-vesperae', 'semiduplex', 'commemoratio']], ['De Pace', ['suffragium', 'commemoratio']]],
+		commemorations: [['S. Remigii Episcopi et Confessoris', ['ii-vesperae', 'semiduplex', 'commemoratio']], ['Ss. Placidi et Sociorum Martyrum', ['i-vesperae', 'simplex', 'commemoratio']], ['De Pace', ['suffragium', 'pro-pace', 'commemoratio']]],
 		omissions: []
 	};
 	assert.deepEqual(ordoSummary(response), {
 		primarium: 'Ss. Angelorum Custodum',
 		rank: 'Duplex majus',
-		commemorations: 'S. Remigii Episcopi et Confessoris, De Pace'
+		commemorations: ['S. Remigii Episcopi et Confessoris', 'Ss. Placidi et Sociorum Martyrum']
 	});
-	assert.equal(ordoSummary({...response, commemorations: []}).commemorations, '');
+	assert.deepEqual(ordoSummary({...response, commemorations: [['De S. Maria', ['suffragium', 'maria', 'commemoratio']]]}).commemorations, []);
 });
 
 test('ordoRitePath uses the browsed date and votives, keeping only the Little Office from the page', () => {

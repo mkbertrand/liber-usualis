@@ -17,7 +17,7 @@
 	border: 1px solid var(--content-border);
 	border-radius: 3px;
 	background-color: transparent;
-	font-family: "Old Standard TT", times;
+  font-family: "Arsenal", sans-serif;
 	color: var(--content-text-color);
 	text-decoration: none;
 	cursor: pointer;
@@ -32,12 +32,10 @@
 	font-variant: small-caps;
 	font-size: 14px;
 	letter-spacing: 0.04em;
-	color: var(--rubric);
 }
 
 #next-hour-occasion {
 	display: block;
-	font-variant: small-caps;
 	font-size: 20px;
 	margin-top: 2px;
 }

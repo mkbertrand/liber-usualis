@@ -225,10 +225,11 @@ function bindOrdoTime(response, idPrefix) {
   let rank = document.getElementById(`${idPrefix}-primarium-rank`);
   let commemorations = document.getElementById(`${idPrefix}-commemorations`);
   effect(() => {
-    let summary = response.value ? ordoSummary(response.value) : {primarium: '', rank: '', commemorations: ''};
+    let summary = response.value ? ordoSummary(response.value) : {primarium: '', rank: '', commemorations: []};
     primarium.textContent = summary.primarium;
     rank.textContent = summary.rank;
-    commemorations.textContent = summary.commemorations;
+    // One commemoration per line
+    commemorations.replaceChildren(...summary.commemorations.flatMap((name, index) => index == 0 ? [name] : [document.createElement('br'), name]));
   });
 }
 
