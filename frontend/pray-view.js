@@ -310,13 +310,15 @@ const bannerAnswerTemplate = document.querySelector('#system-banner-answer');
 // Offered while the user has pinned (hard navigation) a rite other than the one that would be chosen for them now
 function bindReturnToCurrent(store) {
   let button = document.getElementById('return-to-current-button');
+  // Localized tooltip with a {date} placeholder
+  let titleTemplate = button.dataset.titleTemplate;
   effect(() => {
     let params = store.contentParams.value;
     // bestHour() reads the clock and the last prayed hour, so this reruns when either changes
     let current = store.bestHour();
     let onCurrent = current.occasion == params.occasion && Temporal.PlainDate.compare(current.date, params.date) == 0;
     setShown(button, store.navigationType.value == 'hard' && !onCurrent);
-    button.title = `Pinned to ${params.date}; return to the current hour`;
+    button.title = titleTemplate.replace('{date}', params.date.toString());
   });
   button.addEventListener('click', store.returnToCurrent);
 }

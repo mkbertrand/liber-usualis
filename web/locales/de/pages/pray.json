@@ -16,5 +16,19 @@
   "votive-office-select-title":"Votiva",
 	"options-panel-button":"Optionen",
 	"next-hour":"Nächste Hore",
-	"next-hour-forbidden-tooltip":"Die nächste Hore kann nicht rechtmäßig aufgesagt werden."
+	"next-hour-forbidden-tooltip":"Die nächste Hore kann nicht rechtmäßig aufgesagt werden.",
+	"ordo-panel-title":"Ordo",
+	"ordo-daytime-title":"Tag",
+	"ordo-evening-title":"Abend",
+	"ordo-rites-title":"Riten",
+	"ordo-psalmi-label":"Psalmen von",
+	"ordo-commemorations-label":"Kommemorationen",
+	"ordo-omissions-label":"Ausgelassen",
+	"ordo-previous-day":"Vorheriger Tag",
+	"ordo-next-day":"Nächster Tag",
+	"ordo-date":"Datum",
+	"more-rites-button":"Weitere Riten",
+	"ordo-button":"Ordo",
+	"return-to-current-button":"Zur aktuellen Hore",
+	"return-to-current-tooltip":"Angeheftet an den {date}; zur aktuellen Hore zurückkehren"
 }

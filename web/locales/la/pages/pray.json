@@ -16,5 +16,19 @@
   "votive-office-select-title":"Votiva",
 	"options-panel-button":"Optiones",
 	"next-hour":"Hora sequens",
-	"next-hour-forbidden-tooltip":"Non licit horam sequentem recitare."
+	"next-hour-forbidden-tooltip":"Non licit horam sequentem recitare.",
+	"ordo-panel-title":"Ordo",
+	"ordo-daytime-title":"Interdiu",
+	"ordo-evening-title":"Vespere",
+	"ordo-rites-title":"Ritus",
+	"ordo-psalmi-label":"Psalmi de",
+	"ordo-commemorations-label":"Commemorationes",
+	"ordo-omissions-label":"Omittuntur",
+	"ordo-previous-day":"Dies prior",
+	"ordo-next-day":"Dies sequens",
+	"ordo-date":"Dies",
+	"more-rites-button":"Alii ritus",
+	"ordo-button":"Ordo",
+	"return-to-current-button":"Ad horam praesentem",
+	"return-to-current-tooltip":"Fixum in die {date}; ad horam praesentem redire"
 }

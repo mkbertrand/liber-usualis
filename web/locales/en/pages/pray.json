@@ -16,5 +16,19 @@
   "votive-office-select-title":"Votive Offices",
 	"options-panel-button":"Options",
 	"next-hour":"Next Hour",
-	"next-hour-forbidden-tooltip":"The next Hour cannot licitly be said."
+	"next-hour-forbidden-tooltip":"The next Hour cannot licitly be said.",
+	"ordo-panel-title":"Ordo",
+	"ordo-daytime-title":"Daytime",
+	"ordo-evening-title":"Evening",
+	"ordo-rites-title":"Rites",
+	"ordo-psalmi-label":"Psalms of",
+	"ordo-commemorations-label":"Commemorations",
+	"ordo-omissions-label":"Omitted",
+	"ordo-previous-day":"Previous day",
+	"ordo-next-day":"Next day",
+	"ordo-date":"Date",
+	"more-rites-button":"More Rites",
+	"ordo-button":"Ordo",
+	"return-to-current-button":"Return to current",
+	"return-to-current-tooltip":"Pinned to {date}; return to the current hour"
 }
