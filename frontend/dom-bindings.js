@@ -7,16 +7,35 @@ export function setShown(element, shown) {
   element.style.display = shown ? '' : 'none';
 }
 
+// Page scrolling is locked while any trap is active. Traps can overlap (opening one panel straight from another), so
+// the page's own styles are saved by the first lock and restored only when the last is released.
+let scrollLocks = 0;
+let unlockedStyles = null;
+
+function lockScroll() {
+  let root = document.documentElement;
+  if (scrollLocks == 0) {
+    unlockedStyles = {overflow: root.style.overflow, paddingRight: root.style.paddingRight};
+    // Pad by the scrollbar's width so the page doesn't shift sideways when the scrollbar disappears
+    root.style.paddingRight = `${window.innerWidth - root.clientWidth}px`;
+    root.style.overflow = 'hidden';
+  }
+  scrollLocks++;
+}
+
+function unlockScroll() {
+  scrollLocks--;
+  if (scrollLocks == 0) {
+    document.documentElement.style.overflow = unlockedStyles.overflow;
+    document.documentElement.style.paddingRight = unlockedStyles.paddingRight;
+  }
+}
+
 // Keeps Tab focus inside container and stops the page behind it from scrolling.
 // Returns a function that releases the trap and returns focus to where it was.
 export function trapFocus(container) {
   let previouslyFocused = document.activeElement;
-  let root = document.documentElement;
-  let previousOverflow = root.style.overflow;
-  let previousPaddingRight = root.style.paddingRight;
-  // Pad by the scrollbar's width so the page doesn't shift sideways when the scrollbar disappears
-  root.style.paddingRight = `${window.innerWidth - root.clientWidth}px`;
-  root.style.overflow = 'hidden';
+  lockScroll();
 
   let focusableElements = () => [...container.querySelectorAll(FOCUSABLE_SELECTOR)].filter(element => element.offsetParent !== null);
   focusableElements()[0]?.focus();
@@ -39,9 +58,11 @@ export function trapFocus(container) {
 
   return () => {
     document.removeEventListener('keydown', onKeydown);
-    root.style.overflow = previousOverflow;
-    root.style.paddingRight = previousPaddingRight;
-    previouslyFocused?.focus?.();
+    unlockScroll();
+    // If another trap has taken focus since (a panel opened straight from this one), leave it there
+    if (container.contains(document.activeElement) || document.activeElement == document.body) {
+      previouslyFocused?.focus?.();
+    }
   };
 }
 
