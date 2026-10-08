@@ -27,7 +27,7 @@ if (store.navigationType.value != 'hard') {
       'suboptimal-liturgical-content-banner',
       'Would you like to view your current liturgical content, or remain here?',
       [
-        {id: 'suboptimal-liturgical-content-banner-yes', content: 'See my next hour.', action: async () => { await store.redirect(); }},
+        {id: 'suboptimal-liturgical-content-banner-yes', content: 'See my next hour.', action: async () => { await store.returnToCurrent(); }},
         {id: 'suboptimal-liturgical-content-banner-no', content: 'Remain here.', action: () => {}}
       ]
     );
@@ -37,7 +37,7 @@ if (store.navigationType.value != 'hard') {
       'outdated-liturgical-content-banner',
       'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
       [
-        {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.redirect(); }},
+        {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.returnToCurrent(); }},
         {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.setNavigationType('hard'); }}
       ]
     );

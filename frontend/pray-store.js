@@ -14,7 +14,7 @@ function dayTitle(rite) {
 }
 
 export function makePrayStore() {
-  // Always a rite path once init() has run, since a bare /pray visit is redirected; bindings rely on this
+  // Always a rite path once init() has run, since a bare /pray visit is immediately redirected; bindings rely on this
   const displayPath = signal(window.location.pathname + window.location.search);
   // Document is hydrated (after a manner of speaking) so initial value of rite should be the already-provided HTML
   const rite = signal(document.querySelector('main').innerHTML);
@@ -89,11 +89,6 @@ export function makePrayStore() {
     }
   }
 
-  async function redirect() {
-    console.log('Redirecting...');
-    await navigateRite(makePath(bestHour()), 'soft', 'replace');
-  }
-
   return {
     displayPath: displayPath,
     rite: rite,
@@ -104,7 +99,6 @@ export function makePrayStore() {
     nextHourButton: computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value)),
     navigateRite: navigateRite,
     bestHour: bestHour,
-    redirect: redirect,
     // Leaves a pinned rite for the most relevant one; a new history entry, so Back returns to where the user was
     returnToCurrent: async () => {
       await navigateRite(makePath(bestHour()), 'soft');
@@ -118,13 +112,13 @@ export function makePrayStore() {
     init: () => {
       const [navEntry] = performance.getEntriesByType('navigation');
       if (!isRitePath(window.location.pathname)) {
-        redirect();
+        navigateRite(makePath(bestHour()), 'soft', 'replace');
       }
     },
     // Back/forward only re-displays the entry; it must not push a new one
     handlePopstate: async () => {
       if (!isRitePath(window.location.pathname)) {
-        await redirect();
+        await navigateRite(makePath(bestHour()), 'soft', 'replace');
         return;
       }
       let path = window.location.pathname + window.location.search;
