@@ -288,12 +288,27 @@ export function bindPrayPage(store, display) {
   bindRiteLinks(store);
   bindOrdo(store, display);
   bindBanners(store);
+  bindReturnToCurrent(store);
   window.addEventListener('popstate', () => store.handlePopstate());
 }
 
 const bannerContainer = document.querySelector('#system-banner-container');
 const bannerTemplate = document.querySelector('#system-banner');
 const bannerAnswerTemplate = document.querySelector('#system-banner-answer');
+// Offered while the user has pinned (hard navigation) a rite other than the one that would be chosen for them now
+function bindReturnToCurrent(store) {
+  let button = document.getElementById('return-to-current-button');
+  effect(() => {
+    let params = store.contentParams.value;
+    // bestHour() reads the clock and the last prayed hour, so this reruns when either changes
+    let current = store.bestHour();
+    let onCurrent = current.occasion == params.occasion && Temporal.PlainDate.compare(current.date, params.date) == 0;
+    setShown(button, store.navigationType.value == 'hard' && !onCurrent);
+    button.title = `Pinned to ${params.date}; return to the current hour`;
+  });
+  button.addEventListener('click', store.returnToCurrent);
+}
+
 // Banners belong to the rite they were shown for, so navigating to another rite removes them all
 function bindBanners(store) {
   let bannerPath = store.displayPath.peek();

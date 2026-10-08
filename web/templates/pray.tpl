@@ -79,6 +79,10 @@
     % include('web/resources/top-bar.tpl', locale=locale, options=True, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
     <div id="second-bar-container">
       <div id="second-bar">
+        <div id="second-bar-left-aligned-container" class="second-bar-container">
+          % # Shown by the page's script while the user is pinned (hard navigation) to a rite other than the current one
+          <button id="return-to-current-button" class="navigation-link" type="button" style="display: none">Return to current</button>
+        </div>
         <div id="second-bar-center-aligned-container" class="second-bar-container">
           % hour_select = '/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''
           % hour_votives = '' if len(votives) == 0 else f'?v={votives}'
@@ -150,7 +154,8 @@
           <h3>Rites.</h3>
           <div id="ordo-rite-links">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
-            <a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link data-occasion="{{item[0]}}">{{!item[1]}}</a>
+            % # Choosing a rite from the ordo is a deliberate choice of day, so it pins the page (hard navigation)
+            <a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link="hard" data-occasion="{{item[0]}}">{{!item[1]}}</a>
             % end
           </div>
         </div>

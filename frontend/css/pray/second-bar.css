@@ -26,9 +26,14 @@
   gap: 20px;
 }
 
-#second-bar-center-aligned-container, #second-bar-right-aligned-container {
+#second-bar-left-aligned-container, #second-bar-center-aligned-container, #second-bar-right-aligned-container {
   display: flex;
   gap: 20px;
+}
+
+#second-bar-left-aligned-container {
+  grid-column: 1;
+  justify-content: flex-start;
 }
 
 #second-bar-center-aligned-container {

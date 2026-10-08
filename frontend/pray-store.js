@@ -105,6 +105,10 @@ export function makePrayStore() {
     navigateRite: navigateRite,
     bestHour: bestHour,
     redirect: redirect,
+    // Leaves a pinned rite for the most relevant one; a new history entry, so Back returns to where the user was
+    returnToCurrent: async () => {
+      await navigateRite(makePath(bestHour()), 'soft');
+    },
     // Changes the navigation type without navigating, recording it in the current history entry so it survives a reload
     setNavigationType: (newNavigationType) => {
       navigationType.value = newNavigationType;
