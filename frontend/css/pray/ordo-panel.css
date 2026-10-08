@@ -29,3 +29,10 @@
 	color: var(--panel-text-color);
   font-family: "Arsenal", sans-serif;
 }
+
+#ordo-date-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+}

@@ -1,12 +1,27 @@
 import { signal, effect, batch, createModel } from '@preact/signals-core';
 import { officeHourPath } from './routing.js';
 
-async function fetchOrdo(date, time, votives) {
-  return fetch(`/api/ordo?date=${date}&time=${time}&votives=${votives.join('+')}`)
-}
+// /api/ordo responses for one set of votives, by date and time. Kept across ordo panel sessions; any change of votives
+// discards them all. Holds the pending promise, so simultaneous requests for a day share one fetch.
+let ordoCache = new Map();
+let ordoCacheVotives = null;
 
-export async function ordo(date, time, votives) {
-  return await fetchOrdo(date, time, votives).then(response => response.json());
+export function ordo(date, time, votives) {
+  let votivesKey = votives.join('+');
+  if (votivesKey != ordoCacheVotives) {
+    ordoCache = new Map();
+    ordoCacheVotives = votivesKey;
+  }
+  let cache = ordoCache;
+  let key = `${date}|${time}`;
+  if (!cache.has(key)) {
+    // A failed request isn't kept, so the day can be fetched again
+    cache.set(key, fetch(`/api/ordo?date=${date}&time=${time}&votives=${votivesKey}`).then(response => response.json()).catch(error => {
+      cache.delete(key);
+      throw error;
+    }));
+  }
+  return cache.get(key);
 }
 
 // Most specific first, since a feast carries both its class and the broader rank (e.g. duplex and duplex-i-classis)
