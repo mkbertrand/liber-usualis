@@ -287,12 +287,26 @@ export function bindPrayPage(store, display) {
   bindOptionsPanel(store, display);
   bindRiteLinks(store);
   bindOrdo(store, display);
+  bindBanners(store);
   window.addEventListener('popstate', () => store.handlePopstate());
 }
 
 const bannerContainer = document.querySelector('#system-banner-container');
 const bannerTemplate = document.querySelector('#system-banner');
 const bannerAnswerTemplate = document.querySelector('#system-banner-answer');
+// Banners belong to the rite they were shown for, so navigating to another rite removes them all
+function bindBanners(store) {
+  let bannerPath = store.displayPath.peek();
+  effect(() => {
+    let path = store.displayPath.value;
+    if (path == bannerPath) return;
+    bannerPath = path;
+    for (let banner of bannerContainer.querySelectorAll('.system-banner')) {
+      banner.remove();
+    }
+  });
+}
+
 export function makeBanner(store, bannerID, bannerContent, answers) {
   const bannerClone = document.importNode(bannerTemplate.content, true);
   let banner = bannerClone.querySelector('.system-banner');
