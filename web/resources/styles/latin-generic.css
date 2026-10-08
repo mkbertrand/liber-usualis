@@ -36,3 +36,6 @@ p, ol, ul {
 	color: var(--content-text-color);
 }
 
+table {
+	font-family: "Old Standard TT", times;
+}
