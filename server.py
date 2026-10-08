@@ -46,7 +46,7 @@ def findmytemplate(page):
         return 'web/templates/pray.tpl'
     elif page in ['index']:
         return 'web/templates/menu.tpl'
-    elif page in ['de-anno', 'kalendar', 'rubricae', 'resources']:
+    elif page in ['de-anno', 'kalendar', 'rubricae']:
         return 'web/templates/latin-generic.tpl'
     else:
         return 'web/templates/generic.tpl'

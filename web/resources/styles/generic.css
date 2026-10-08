@@ -31,3 +31,8 @@ p, ol, ul {
 	font-size: 18px;
 	color: var(--content-text-color);
 }
+
+a {
+  font-family: "Arsenal", sans-serif;
+	font-size: 18px;
+}
