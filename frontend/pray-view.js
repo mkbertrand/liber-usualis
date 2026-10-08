@@ -103,7 +103,10 @@ function bindHourLinks(store) {
 
 function bindRite(store, display) {
   let main = document.getElementById('rite-container');
-  let lineByLineMode = computed(() => display.displayParameters.value.showTranslation && !display.displayParameters.value.sideBySide);
+  // Display preferences are shared by every locale, so a translation saved as shown elsewhere is ignored where there is none
+  let hasTranslation = main.dataset.hasTranslation == 'true';
+  let showTranslation = computed(() => hasTranslation && display.displayParameters.value.showTranslation);
+  let lineByLineMode = computed(() => showTranslation.value && !display.displayParameters.value.sideBySide);
   let riteHTML = computed(() => lineByLineMode.value ? lineByLine(store.rite.value) : store.rite.value);
 
   // Only replace the markup when it actually changes, since doing so re-creates every chant element
@@ -118,12 +121,13 @@ function bindRite(store, display) {
 
   effect(() => {
     let parameters = display.displayParameters.value;
+    let translated = showTranslation.value;
     main.classList.toggle('chant-shown', parameters.chant);
     main.classList.toggle('chant-hidden', !parameters.chant);
     main.classList.toggle('chant-playback', parameters.chant && parameters.playChant);
-    main.classList.toggle('side-by-side', parameters.showTranslation && parameters.sideBySide);
-    main.classList.toggle('line-by-line', parameters.showTranslation && !parameters.sideBySide);
-    main.classList.toggle('no-translation', !parameters.showTranslation);
+    main.classList.toggle('side-by-side', translated && parameters.sideBySide);
+    main.classList.toggle('line-by-line', translated && !parameters.sideBySide);
+    main.classList.toggle('no-translation', !translated);
   });
 }
 

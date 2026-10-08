@@ -129,7 +129,8 @@
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
     <div id="content-container-outer">
       <div id="rite-page-container">
-        <main id="rite-container">
+        % # Latin pages have no translation (and hide its options), whatever display preferences were saved elsewhere
+        <main id="rite-container" data-has-translation="{{'false' if locale == 'la' else 'true'}}">
           {{!rite}}
         </main>
         <div id="next-hour-button-container">
