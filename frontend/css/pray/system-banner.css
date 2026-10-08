@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
-  z-index: 2;
+  /* Above the rite, below the panel overlays (2) */
+  z-index: 1;
 }
 
 .system-banner {

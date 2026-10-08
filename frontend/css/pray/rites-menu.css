@@ -25,7 +25,8 @@
 	padding: 18px 20px;
 	font-family: "Arsenal", sans-serif;
 	color: var(--panel-text-color);
-	z-index: 2;
+	/* A dropdown over the rite and banners; same layer as the top bar */
+	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;

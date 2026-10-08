@@ -1,11 +1,15 @@
 #ordo-panel-background {
+	/* Placed explicitly: covers the page below the header, wherever the element sits in the markup */
 	position: fixed;
-	width: 100%;
-	height: 100%;
+	top: calc(var(--top-bar-title-height) + var(--second-bar-height));
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color: var(--overlay-background-color);
 	margin: 0;
 	padding: 0;
-	z-index: 1;
+	/* Above the second bar and banners (1), below the top bar and rites menu (3) */
+	z-index: 2;
 }
 
 #ordo-panel-wrapper {
@@ -35,4 +39,9 @@
 	justify-content: center;
 	align-items: center;
 	gap: 7px;
+}
+
+#ordo-panel h2, h3 {
+  text-align: center;
+  font-weight: normal;
 }

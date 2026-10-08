@@ -7,7 +7,8 @@
 	background-color: var(--panel-background-color);
 	border-bottom: 1px solid var(--panel-background-color);
   box-shadow: var(--panel-shadow);
-	z-index: 2;
+	/* Above the pray page's panel overlays (2) and everything beneath them */
+	z-index: 3;
   padding: 9px;
   box-sizing: border-box;
   display: flow-root;

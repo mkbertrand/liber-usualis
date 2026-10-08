@@ -128,6 +128,22 @@
     </div>
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
     <div id="content-container-outer">
+      <div id="rite-page-container">
+        <main id="rite-container">
+          {{!rite}}
+        </main>
+        <div id="next-hour-button-container">
+          <a
+            id="next-hour-button"
+            href="{{next_hour_href}}"
+            data-forbidden-title="{{text['next-hour-forbidden-tooltip']}}"
+          >
+            <span>{{text['next-hour']}}: <span id="next-hour-occasion">{{!next_hour_occasion_name}}</span></span>
+            <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
+          </a>
+        </div>
+      </div>
+    </div>
     % # On mobile the panels are full-screen sheets (see pray-mobile.css), so they neither trap focus nor lock scrolling.
     <div id="options-panel-background" style="display: none">
       <div id="options-panel-wrapper"{{!'' if mobile else ' data-trap-focus'}}>
@@ -157,21 +173,6 @@
             % end
           </div>
         </div>
-      </div>
-    </div>
-    <div id="rite-page-container">
-      <main id="rite-container">
-        {{!rite}}
-      </main>
-      <div id="next-hour-button-container">
-        <a
-          id="next-hour-button"
-          href="{{next_hour_href}}"
-          data-forbidden-title="{{text['next-hour-forbidden-tooltip']}}"
-        >
-          <span>{{text['next-hour']}}: <span id="next-hour-occasion">{{!next_hour_occasion_name}}</span></span>
-          <svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg>
-        </a>
       </div>
     </div>
   </body>
