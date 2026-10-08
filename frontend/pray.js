@@ -19,26 +19,29 @@ setInterval(() => {
   store.now.value = Temporal.Now.plainDateTimeISO();
 }, 60 * 1000);
 
+// Localized text for the messages built here, written into the page by pray.tpl
+const text = JSON.parse(document.getElementById('pray-script-text').textContent);
+
 // If hard navigation is specified as hard already, this is because this navigation really comes from the user's history rather than a link (where navigationType would be null)
 if (store.navigationType.value != 'hard') {
   if (canSay(store.contentParams.value, store.now.value) && (store.bestHour().occasion != store.contentParams.value.occasion || !store.bestHour().date.equals(store.contentParams.value.date))) {
     makeBanner(
       store,
       'suboptimal-liturgical-content-banner',
-      'Would you like to view your current liturgical content, or remain here?',
+      text['suboptimal-content-banner-message'],
       [
-        {id: 'suboptimal-liturgical-content-banner-yes', content: 'See my next hour.', action: async () => { await store.returnToCurrent(); }},
-        {id: 'suboptimal-liturgical-content-banner-no', content: 'Remain here.', action: () => {}}
+        {id: 'suboptimal-liturgical-content-banner-yes', content: text['suboptimal-content-banner-go'], action: async () => { await store.returnToCurrent(); }},
+        {id: 'suboptimal-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => {}}
       ]
     );
   } else if (!canSay(store.contentParams.value, store.now.value)) {
     makeBanner(
       store,
       'outdated-liturgical-content-banner',
-      'The following liturgical content cannot be said! Would you like to view current liturgical content, or remain here?',
+      text['outdated-content-banner-message'],
       [
-        {id: 'outdated-liturgical-content-banner-yes', content: 'See current content.', action: async () => { await store.returnToCurrent(); }},
-        {id: 'outdated-liturgical-content-banner-no', content: 'Remain here.', action: () => { store.setNavigationType('hard'); }}
+        {id: 'outdated-liturgical-content-banner-yes', content: text['outdated-content-banner-go'], action: async () => { await store.returnToCurrent(); }},
+        {id: 'outdated-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => { store.setNavigationType('hard'); }}
       ]
     );
   }

@@ -25,5 +25,11 @@
   "play-chant-toggle":"Sonator cantus",
   "priest-toggle":"In choro",
 	"selection-title":"Officium recitandum",
-  "votive-office-select-title":"Votiva"
+  "votive-office-select-title":"Votiva",
+	"banner-dismiss":"Dimitte",
+	"banner-remain-here":"Hic mane.",
+	"suboptimal-content-banner-message":"Visne officium tuum praesens videre, an hic manere?",
+	"suboptimal-content-banner-go":"Horam sequentem vide.",
+	"outdated-content-banner-message":"Hoc officium nunc dici non potest! Visne officium tuum praesens videre, an hic manere?",
+	"outdated-content-banner-go":"Officium praesens vide."
 }

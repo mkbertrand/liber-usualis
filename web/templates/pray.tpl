@@ -119,13 +119,16 @@
             <div class="system-banner-answer-container">
             </div>
           </div>
-          <button class="system-banner-close ui-button">Dismiss</button>
+          <button class="system-banner-close ui-button">{{text['banner-dismiss']}}</button>
         </div>
       </template>
       <template id="system-banner-answer">
         <button class="system-banner-answer ui-button"></button>
       </template>
     </div>
+    % # Localized text for messages the page's script builds itself. "</" is escaped so no string can end this block early.
+    % script_text_keys = ['banner-remain-here', 'suboptimal-content-banner-message', 'suboptimal-content-banner-go', 'outdated-content-banner-message', 'outdated-content-banner-go']
+    <script type="application/json" id="pray-script-text">{{!json.dumps({key: text[key] for key in script_text_keys}, ensure_ascii=False).replace('</', '<\\/')}}</script>
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
     <div id="content-container-outer">
       <div id="rite-page-container">

@@ -30,5 +30,11 @@
 	"more-rites-button":"Weitere Riten",
 	"ordo-button":"Ordo",
 	"return-to-current-button":"Zur aktuellen Hore",
-	"return-to-current-tooltip":"Angeheftet an den {date}; zur aktuellen Hore zurückkehren"
+	"return-to-current-tooltip":"Angeheftet an den {date}; zur aktuellen Hore zurückkehren",
+	"banner-dismiss":"Schließen",
+	"banner-remain-here":"Hier bleiben.",
+	"suboptimal-content-banner-message":"Möchten Sie Ihren aktuellen liturgischen Inhalt sehen oder hier bleiben?",
+	"suboptimal-content-banner-go":"Meine nächste Hore anzeigen.",
+	"outdated-content-banner-message":"Der folgende liturgische Inhalt kann jetzt nicht gebetet werden! Möchten Sie den aktuellen liturgischen Inhalt sehen oder hier bleiben?",
+	"outdated-content-banner-go":"Aktuellen Inhalt anzeigen."
 }

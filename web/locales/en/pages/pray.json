@@ -30,5 +30,11 @@
 	"more-rites-button":"More Rites",
 	"ordo-button":"Ordo",
 	"return-to-current-button":"Return to current",
-	"return-to-current-tooltip":"Pinned to {date}; return to the current hour"
+	"return-to-current-tooltip":"Pinned to {date}; return to the current hour",
+	"banner-dismiss":"Dismiss",
+	"banner-remain-here":"Remain here.",
+	"suboptimal-content-banner-message":"Would you like to view your current office, or remain here?",
+	"suboptimal-content-banner-go":"See the next hour.",
+	"outdated-content-banner-message":"The following liturgical content cannot be said! Would you like to view your current office, or remain here?",
+	"outdated-content-banner-go":"See current content."
 }

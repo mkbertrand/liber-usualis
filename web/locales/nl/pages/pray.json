@@ -30,5 +30,11 @@
 	"more-rites-button":"Meer riten",
 	"ordo-button":"Ordo",
 	"return-to-current-button":"Naar het huidige getijde",
-	"return-to-current-tooltip":"Vastgezet op {date}; terug naar het huidige getijde"
+	"return-to-current-tooltip":"Vastgezet op {date}; terug naar het huidige getijde",
+	"banner-dismiss":"Sluiten",
+	"banner-remain-here":"Hier blijven.",
+	"suboptimal-content-banner-message":"Wilt u uw huidige liturgische inhoud bekijken, of hier blijven?",
+	"suboptimal-content-banner-go":"Mijn volgende getijde bekijken.",
+	"outdated-content-banner-message":"De volgende liturgische inhoud kan nu niet worden gebeden! Wilt u de huidige liturgische inhoud bekijken, of hier blijven?",
+	"outdated-content-banner-go":"Huidige inhoud bekijken."
 }
