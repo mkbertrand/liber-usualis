@@ -47,7 +47,10 @@ export function ordoSummary(response) {
   return {
     primarium: response.primary[0],
     rank: rankName(response.primary[1]),
-    commemorations: response.commemorations.filter(([, tags]) => !tags.includes('suffragium')).map(([name]) => name)
+    commemorations: response.commemorations.filter(([, tags]) => !tags.includes('suffragium')).map(([name]) => name),
+    omissions: response.omissions.map(([name]) => name),
+    // Vesperal only: the office whose psalms are said, when it isn't the primary one
+    psalmi: response.psalmi ? response.psalmi[0] : null
   };
 }
 

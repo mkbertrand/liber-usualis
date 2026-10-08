@@ -18,12 +18,15 @@ test('ordoSummary takes the primary office, its rank, and the commemorations in 
 	const response = {
 		primary: ['Ss. Angelorum Custodum', ['i-vesperae', 'duplex', 'primarium', 'duplex-majus', 'angeli-custodes']],
 		commemorations: [['S. Remigii Episcopi et Confessoris', ['ii-vesperae', 'semiduplex', 'commemoratio']], ['Ss. Placidi et Sociorum Martyrum', ['i-vesperae', 'simplex', 'commemoratio']], ['De Pace', ['suffragium', 'pro-pace', 'commemoratio']]],
-		omissions: []
+		omissions: [],
+		psalmi: null
 	};
 	assert.deepEqual(ordoSummary(response), {
 		primarium: 'Ss. Angelorum Custodum',
 		rank: 'Duplex majus',
-		commemorations: ['S. Remigii Episcopi et Confessoris', 'Ss. Placidi et Sociorum Martyrum']
+		commemorations: ['S. Remigii Episcopi et Confessoris', 'Ss. Placidi et Sociorum Martyrum'],
+		omissions: [],
+		psalmi: null
 	});
 	assert.deepEqual(ordoSummary({...response, commemorations: [['De S. Maria', ['suffragium', 'maria', 'commemoratio']]]}).commemorations, []);
 });
@@ -75,4 +78,17 @@ test('ordo does not keep a failed request', async () => {
 	} finally {
 		globalThis.fetch = originalFetch;
 	}
+});
+
+test('ordoSummary gives the omissions and, when another office supplies them, the vesperal psalms', () => {
+	// Shape of /api/ordo for 2026-01-13, vesperale
+	const response = {
+		primary: ['S. Hilarii Episcopi Confessoris et Ecclesiæ Doctoris', ['i-vesperae', 'duplex', 'duplex-minus', 'primarium']],
+		commemorations: [],
+		omissions: [['Feria III infra Hebdomadam I post Epiphaniam', ['feria-iii', 'omissum']]],
+		psalmi: ['In Octava Epiphaniæ Domini', ['ii-vesperae', 'duplex', 'psalmi', 'vesperae']]
+	};
+	const summary = ordoSummary(response);
+	assert.deepEqual(summary.omissions, ['Feria III infra Hebdomadam I post Epiphaniam']);
+	assert.equal(summary.psalmi, 'In Octava Epiphaniæ Domini');
 });

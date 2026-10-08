@@ -40,16 +40,30 @@
 	flex-direction: column;
 	gap: 7px;
 	padding: 21px 21px 7px 21px;
-	font-family: "Old Standard TT", times;
 	color: var(--panel-text-color);
+	font-family: "Arsenal", sans-serif;
 }
 
-.options-panel-section-head {
-	text-align: center;
-	font-variant: small-caps;
-	color: var(--rubric);
+/* Same text styling and spacing as the ordo panel: the panel's gap alone spaces its text */
+#options-panel h2, #options-panel h3 {
 	margin: 0;
+	text-align: center;
 	font-weight: normal;
+}
+
+/* A rule under the panel's title separates it from the contents */
+#options-panel h2 {
+	padding-bottom: 7px;
+}
+
+/* Each section heading is set apart by the same extra space */
+#options-panel h3 {
+	margin-top: 14px;
+}
+
+/* Wrappers around a section's heading and options, so each option row takes the panel's gap */
+.options-panel-section {
+	display: contents;
 }
 
 .option-disabled {
@@ -84,10 +98,4 @@
 
 .permitted-entry {
 	cursor: pointer;
-}
-
-#desired-select-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
 }

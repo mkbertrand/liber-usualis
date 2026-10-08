@@ -1,5 +1,6 @@
 <div id="options-panel">
-	<h3 class="options-panel-section-head">{{text['options-panel-title']}}</h3>
+	<h2>{{text['options-panel-title']}}</h2>
+	<h3>{{text['display-title']}}</h3>
 	% if locale != 'la':
 	<div>
 		<input type="checkbox" id="translation-toggle" />
@@ -22,9 +23,9 @@
 		<input type="checkbox" id="priest-toggle" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
-	<div id="desired-select-wrapper">
-		<div id="desired-select-container">
-			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
+	<div id="desired-select-wrapper" class="options-panel-section">
+		<div id="desired-select-container" class="options-panel-section">
+			<h3>{{text['selection-title']}}</h3>
 			% # [id, label, select, opt tag]
 			% for ambit_entry in [['omnes', 'Officium', 'primarium', ''], ['diei', 'Officium diei', 'primarium', 'sine-ritibus'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''], ['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']]:
 				<div>
@@ -34,9 +35,9 @@
 			% end
 		</div>
 	</div>
-	<div>
-		<h3 class="options-panel-section-head">{{text['votive-office-select-title']}}</h3>
-		<div id="votive-office-selection-inner">
+	<div class="options-panel-section">
+		<h3>{{text['votive-office-select-title']}}</h3>
+		<div id="votive-office-selection-inner" class="options-panel-section">
 			% for votive_entry in [['de-sanctis-angelis', 'De Ss. Angelis.'], ['de-sanctis-apostolis', 'De Ss. Apostolis.'], ['de-joseph', 'De S. Joseph.'], ['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'], ['de-passione', 'De Passione D.N.J.C.'], ['de-immaculata-conceptione', 'De Immaculata Conceptione.']]:
 				<div class="votive-office-entry">
 					<input type="checkbox" value="{{votive_entry[0]}}" id="votive-select-{{votive_entry[0]}}" data-votive="{{votive_entry[0]}}" />

@@ -220,16 +220,27 @@ function bindRiteLinks(store) {
   });
 }
 
+// A paragraph of the ordo cloned from its <template>, listing names one per line
+function ordoSection(templateId, names) {
+  let section = document.getElementById(templateId).content.firstElementChild.cloneNode(true);
+  section.querySelector('.ordo-section-names').replaceChildren(...names.flatMap((name, index) => index == 0 ? [name] : [document.createElement('br'), name]));
+  return section;
+}
+
 function bindOrdoTime(response, idPrefix) {
   let primarium = document.getElementById(`${idPrefix}-primarium`);
   let rank = document.getElementById(`${idPrefix}-primarium-rank`);
-  let commemorations = document.getElementById(`${idPrefix}-commemorations`);
+  let details = document.getElementById(`${idPrefix}-details`);
   effect(() => {
-    let summary = response.value ? ordoSummary(response.value) : {primarium: '', rank: '', commemorations: []};
+    let summary = response.value ? ordoSummary(response.value) : {primarium: '', rank: '', commemorations: [], omissions: [], psalmi: null};
     primarium.textContent = summary.primarium;
     rank.textContent = summary.rank;
-    // One commemoration per line
-    commemorations.replaceChildren(...summary.commemorations.flatMap((name, index) => index == 0 ? [name] : [document.createElement('br'), name]));
+    // Only the paragraphs that have something to say
+    details.replaceChildren(...[
+      summary.psalmi && ordoSection('ordo-psalmi-template', [summary.psalmi]),
+      summary.commemorations.length > 0 && ordoSection('ordo-commemorations-template', summary.commemorations),
+      summary.omissions.length > 0 && ordoSection('ordo-omissions-template', summary.omissions)
+    ].filter(section => section));
   });
 }
 

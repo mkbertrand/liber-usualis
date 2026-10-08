@@ -161,10 +161,20 @@
           </div>
           <h3>Daytime</h3>
           <p><span id="ordo-daytime-primarium"></span> &mdash; <span id="ordo-daytime-primarium-rank"></span></p>
-          <p id="ordo-daytime-commemorations"></p>
+          <div id="ordo-daytime-details"></div>
           <h3>Evening</h3>
           <p><span id="ordo-evening-primarium"></span> &mdash; <span id="ordo-evening-primarium-rank"></span></p>
-          <p id="ordo-evening-commemorations"></p>
+          <div id="ordo-evening-details"></div>
+          % # Paragraphs the page's script adds to a day's details only when they apply
+          <template id="ordo-psalmi-template">
+            <p class="ordo-section"><span class="ordo-section-label">Psalms of</span> <span class="ordo-section-names"></span></p>
+          </template>
+          <template id="ordo-commemorations-template">
+            <p class="ordo-section"><span class="ordo-section-label">Commemorations</span><br><span class="ordo-section-names"></span></p>
+          </template>
+          <template id="ordo-omissions-template">
+            <p class="ordo-section"><span class="ordo-section-label">Omitted</span><br><span class="ordo-section-names"></span></p>
+          </template>
           <h3>Rites</h3>
           <div id="ordo-rite-links">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:

@@ -68,6 +68,8 @@
     - =commemorations= - ranked name/tag-set pairs
     - =omissions= - ranked omitted name/tag-set pairs
     - =commemoratio-matutini= - the Matins commemoration, when present
+    - =psalmi= - vesperal only: the office whose psalms are said, when the vesperal
+      rules take them from an office other than the primary one; otherwise null
 
 *** =GET /title=
 

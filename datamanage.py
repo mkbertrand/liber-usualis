@@ -41,12 +41,17 @@ def ordo(date: str, time: str, votives: str):
     omissions = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
     lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
     lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
+    # The office whose psalms are said at Vespers, when the vesperal rules (tabella-vesperalis.json) take them from
+    # an office other than the primary one
+    psalmi = [i for i in tags if 'psalmi' in i]
+    psalmi = psalmi[0] if len(psalmi) != 0 else None
     return {
         'tags': tags,
         'primary': [DEFAULT_CORPUS.get_name(primary), primary],
         'commemorations': commemorations,
         'omissions': omissions,
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None,
+        'psalmi': [DEFAULT_CORPUS.get_name(psalmi), psalmi] if psalmi else None,
     }
 
 @functools.lru_cache(maxsize=30)
