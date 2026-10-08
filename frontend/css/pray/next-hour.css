@@ -27,15 +27,7 @@
 	background-color: var(--content-hover);
 }
 
-#next-hour-kicker {
-	display: block;
-	font-variant: small-caps;
-	font-size: 14px;
-	letter-spacing: 0.04em;
-}
-
-#next-hour-occasion {
-	display: block;
+#next-hour-text {
 	font-size: 20px;
 	margin-top: 2px;
 }

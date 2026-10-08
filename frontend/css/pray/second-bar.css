@@ -11,8 +11,15 @@
   height: var(--second-bar-height);
   box-sizing: border-box;
   background-color: var(--panel-background-color);
-  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--panel-shadow);
   z-index: 1;
+}
+
+/* With the second bar below it, the two bars read as one header: a line between them, and the shadow only beneath
+   the second bar. This file is only bundled for pages that have a second bar. */
+#top-bar-title {
+  box-shadow: none;
+  border-bottom-color: var(--border-color);
 }
 
 #second-bar {
