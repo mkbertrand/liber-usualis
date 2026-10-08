@@ -1,6 +1,6 @@
 .ui-button {
   border: none;
-	padding: 7px;
+	padding: 12px;
 	border-radius: var(--component-border-radius);
 	background-color: transparent;
 	color: var(--panel-text-color);
@@ -9,4 +9,12 @@
 .ui-button:hover {
   cursor: pointer;
 	background-color: var(--button-color-hover);
+}
+
+/* Inline Phosphor icons */
+.icon {
+	display: block;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
 }

@@ -83,29 +83,55 @@
   align-items: center;
   justify-content: center;
 }
-/* Menu for picking language manually. Lives in the top bar alongside the
-   dark mode toggle. */
+/* Language picker: an icon button like the dark mode toggle, opening a menu of locales */
 #locale-selector {
-	height: 35px;
-	font-family: times;
-	font-size: 16px;
-	background-color: var(--button-color);
-	border-radius: var(--component-border-radius);
-	border: none;
-	color: var(--panel-text-color);
-	cursor: pointer;
-	padding: 0 10px;
+  position: relative;
 }
 
-#locale-selector:hover {
-	background-color: var(--button-color-hover);
+#locale-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 4px;
+  background-color: var(--panel-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--component-border-radius);
+  box-shadow: var(--panel-shadow);
+}
+
+/* The display rule above would otherwise override the hidden attribute */
+#locale-menu[hidden] {
+  display: none;
+}
+
+.locale-menu-option {
+  padding: 7px 10px;
+  border: none;
+  border-radius: var(--component-border-radius);
+  background-color: transparent;
+  color: var(--panel-text-color);
+  font-family: "Arsenal", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.locale-menu-option:hover {
+  background-color: var(--button-color-hover);
+}
+
+.locale-menu-option[aria-current="true"] {
+  font-weight: bold;
 }
 
 /* Site-wide dark mode toggle. Lives in the top bar alongside the locale
    selector. */
-#dark-mode-toggle {
-  height: 40px;
-  aspect-ratio: 1/1;
+#dark-mode-toggle, #locale-selector-button {
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Shows the icon for switching to the other theme. */

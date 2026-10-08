@@ -6,6 +6,11 @@
 @import "./next-hour.css";
 @import "./rites-menu.css";
 
+:root {
+	/* Width of the rite page, and of anything aligned with it (banners). pray-mobile.css removes the limit. */
+	--rite-page-max-width: 1100px;
+}
+
 /* Containers and overall organization */
 #content-container-outer {
 	max-width: 100% !important;
@@ -18,7 +23,9 @@
 #rite-page-container {
 	position: relative;
 	width: 100%;
-	max-width: 1100px;
+	/* Borders inside the width, so anything sized by the variable lines up with the page's edges */
+	box-sizing: border-box;
+	max-width: var(--rite-page-max-width);
 	margin: 0 auto;
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);

@@ -1,7 +1,13 @@
 #system-banner-container {
   position: fixed;
-	top: calc(var(--top-bar-title-height) + var(--second-bar-height) + 3px);
-  width: 100%;
+	top: calc(var(--top-bar-title-height) + var(--second-bar-height));
+  /* As wide as the rite page and centered over it, like #rite-page-container */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: var(--rite-page-max-width);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -10,9 +16,7 @@
 }
 
 .system-banner {
-  background-color: var(--panel-background-color);
-  margin-left: 3px;
-  margin-right: 3px;
+  background-color: color-mix(in srgb, var(--rubric) 12%, var(--panel-background-color));
   height: 60px;
   /* Same layout as the second bar: equal outer columns keep the content centered regardless of the close button's width */
   padding: 9px;
@@ -21,7 +25,7 @@
   gap: 20px;
   /* Items stretch to the full row height, so buttons fill it; the text centers itself within that height */
   align-items: stretch;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   border-radius: var(--component-border-radius);
 }
 

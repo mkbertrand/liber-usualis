@@ -1,11 +1,9 @@
 /* Options panel and its gear button */
+/* Padding sized so the button fits the second bar's height */
 #options-gear-button {
-	height: 35px;
-	width: 35px;
-}
-
-#options-gear {
-	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	padding: 9px;
 }
 
 #options-panel-background {

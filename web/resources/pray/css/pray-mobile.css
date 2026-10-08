@@ -6,8 +6,11 @@
 /* Never cap/center the content column on mobile - a landscape tablet (this app treats
    iPad as mobile) can exceed the desktop max-width, and constraining it there would
    waste screen space rather than help readability the way it does on a desktop monitor. */
+:root {
+	--rite-page-max-width: none;
+}
+
 #rite-page-container {
-	max-width: none;
 	margin: 0;
 }
 

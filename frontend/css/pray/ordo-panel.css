@@ -35,10 +35,30 @@
 }
 
 #ordo-date-controls {
+	/* The day buttons and the date picker share one height */
+	--ordo-date-control-height: 28px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 7px;
+}
+
+#ordo-date-controls button, #ordo-date-picker {
+	height: var(--ordo-date-control-height);
+	box-sizing: border-box;
+}
+
+#ordo-date-controls button {
+	width: var(--ordo-date-control-height);
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ordo-date-icon {
+	width: 16px;
+	height: 16px;
 }
 
 /* The panel's gap alone spaces its text, so default margins are removed */
