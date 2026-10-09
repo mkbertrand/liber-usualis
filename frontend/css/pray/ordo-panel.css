@@ -88,3 +88,11 @@
 .ordo-rite-link, .ordo-rite-link:visited {
 	color: var(--link-color);
 }
+
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
+@media (max-width: 1139px) {
+  #ordo-panel-background {
+    top: var(--top-bar-title-height);
+    bottom: var(--second-bar-height);
+  }
+}

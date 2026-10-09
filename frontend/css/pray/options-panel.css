@@ -110,3 +110,11 @@
 	min-width: 0;
 	margin-left: 12px;
 }
+
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
+@media (max-width: 1139px) {
+  #options-panel-background {
+    top: var(--top-bar-title-height);
+    bottom: var(--second-bar-height);
+  }
+}

@@ -10,6 +10,8 @@
 	--panel-text-color-muted: #333333;
 	--link-color: #0000ee;
 	--panel-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 3px 8px rgba(0, 0, 0, .05);
+	/* The same shadow cast upwards, for bars fixed to the bottom of the screen */
+	--panel-shadow-upward: 0 -1px 2px rgba(0, 0, 0, .06), 0 -3px 8px rgba(0, 0, 0, .05);
 	--overlay-background-color: rgba(249, 249, 249, .7);
 	--overlay-background-color-strong: rgba(249, 249, 249, .8);
 
@@ -41,6 +43,7 @@
 	--panel-text-color-muted: #85816f;
 	--link-color: #8ab4f8;
 	--panel-shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 3px 10px rgba(0, 0, 0, .35);
+	--panel-shadow-upward: 0 -1px 2px rgba(0, 0, 0, .5), 0 -3px 10px rgba(0, 0, 0, .35);
 	--overlay-background-color: rgba(26, 26, 30, .7);
 	--overlay-background-color-strong: rgba(26, 26, 30, .85);
 

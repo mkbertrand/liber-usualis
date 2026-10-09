@@ -44,7 +44,8 @@ function bindRitesMenu(store, display) {
     };
   });
 
-  for (let link of menu.querySelectorAll('.rite-link')) {
+  // Every copy of the rite links: in this menu and in the hour picker
+  for (let link of document.querySelectorAll('.rite-link')) {
     effect(() => {
       let params = store.contentParams.value;
       link.href = makePath({...params, date: riteLinksDate(params, store.navigationType.value, store.now.value), prayerType: link.dataset.prayerType, select: link.dataset.select, occasion: link.dataset.occasion});
@@ -85,20 +86,22 @@ function lineByLine(rite) {
 
 // The hours of the day given by riteLinksDate, plus the next day's Matins once it may be said
 function bindHourLinks(store) {
-  for (let link of document.querySelectorAll('.second-bar-hour-link')) {
+  // Every copy: in the second bar and in the hour picker
+  for (let link of document.querySelectorAll('.hour-link')) {
     effect(() => {
       let params = store.contentParams.value;
       link.href = officeHourPath(params, riteLinksDate(params, store.navigationType.value, store.now.value), link.dataset.occasion);
     });
   }
-  let nextMatins = document.getElementById('second-bar-next-matins-link');
-  effect(() => {
-    let params = store.contentParams.value;
-    let date = riteLinksDate(params, store.navigationType.value, store.now.value).add({days: 1});
-    nextMatins.href = officeHourPath(params, date, 'matutinum-laudes');
-    nextMatins.title = date.toString();
-    setShown(nextMatins, canSay({...params, date: date, occasion: 'matutinum-laudes'}, store.now.value) && store.navigationType.value == 'soft');
-  });
+  for (let nextMatins of document.querySelectorAll('.next-matins-link')) {
+    effect(() => {
+      let params = store.contentParams.value;
+      let date = riteLinksDate(params, store.navigationType.value, store.now.value).add({days: 1});
+      nextMatins.href = officeHourPath(params, date, 'matutinum-laudes');
+      nextMatins.title = date.toString();
+      setShown(nextMatins, canSay({...params, date: date, occasion: 'matutinum-laudes'}, store.now.value) && store.navigationType.value == 'soft');
+    });
+  }
 }
 
 function bindRite(store, display) {
@@ -339,6 +342,7 @@ export function bindPrayPage(store, display) {
   bindOrdo(store, display);
   bindBanners(store);
   bindReturnToCurrent(store);
+  bindHourPicker(store, display);
   window.addEventListener('popstate', () => store.handlePopstate());
 }
 
@@ -347,18 +351,45 @@ const bannerTemplate = document.querySelector('#system-banner');
 const bannerAnswerTemplate = document.querySelector('#system-banner-answer');
 // Offered while the user has pinned (hard navigation) a rite other than the one that would be chosen for them now
 function bindReturnToCurrent(store) {
-  let button = document.getElementById('return-to-current-button');
-  // Localized tooltip with a {date} placeholder
-  let titleTemplate = button.dataset.titleTemplate;
-  effect(() => {
-    let params = store.contentParams.value;
-    // bestHour() reads the clock and the last prayed hour, so this reruns when either changes
-    let current = store.bestHour();
-    let onCurrent = current.occasion == params.occasion && Temporal.PlainDate.compare(current.date, params.date) == 0;
-    setShown(button, store.navigationType.value == 'hard' && !onCurrent);
-    button.title = titleTemplate.replace('{date}', params.date.toString());
+  // Every copy: in the second bar and in the hour picker
+  for (let button of document.querySelectorAll('.return-to-current-button')) {
+    // Localized tooltip with a {date} placeholder
+    let titleTemplate = button.dataset.titleTemplate;
+    effect(() => {
+      let params = store.contentParams.value;
+      // bestHour() reads the clock and the last prayed hour, so this reruns when either changes
+      let current = store.bestHour();
+      let onCurrent = current.occasion == params.occasion && Temporal.PlainDate.compare(current.date, params.date) == 0;
+      setShown(button, store.navigationType.value == 'hard' && !onCurrent);
+      button.title = titleTemplate.replace('{date}', params.date.toString());
+    });
+    button.addEventListener('click', store.returnToCurrent);
+  }
+}
+
+// The bottom bar's hour picker: a sheet of the day's hours and the other rites, used instead of the second bar's
+// row of hours on narrow screens
+function bindHourPicker(store, display) {
+  let button = document.getElementById('hour-picker-button');
+  let sheet = document.getElementById('hour-picker');
+  let current = document.getElementById('hour-picker-current');
+  button.addEventListener('click', display.toggleHourPicker);
+  closeOnOutsideClick(sheet, display.hourPickerOpen, display.closeHourPicker, button);
+  // Choosing anything in the sheet (an hour, a rite, returning to the current hour) closes it
+  sheet.addEventListener('click', (event) => {
+    if (event.target.closest('a, button')) {
+      display.closeHourPicker();
+    }
   });
-  button.addEventListener('click', store.returnToCurrent);
+  effect(() => {
+    let open = display.hourPickerOpen.value;
+    setShown(sheet, open);
+    button.setAttribute('aria-expanded', open);
+  });
+  effect(() => {
+    let occasion = store.contentParams.value.occasion;
+    current.textContent = RITE_TITLES[occasion] ?? occasion;
+  });
 }
 
 // Banners belong to the rite they were shown for, so navigating to another rite removes them all

@@ -367,6 +367,12 @@
      to a more relevant rite. A link may name a type with =data-rite-link="hard"=
      or ="soft"=. =frontend/dom-bindings.js= provides the generic show/hide,
      focus-trap, and outside-click helpers.
+   - On narrow screens (below the compact top bar's 1140px breakpoint) the second
+     bar moves to the bottom and shows an hour picker in place of its row of hours.
+     The picker's sheet holds the day's hours, the anticipated Matins, "Return to
+     current", and the other rites; it reuses the same bindings, which cover every
+     copy of these controls, and =web/resources/pray/rite-links.tpl= supplies the
+     rite links to both the rites menu and the sheet.
 
 ** Theme and Other Pages
 

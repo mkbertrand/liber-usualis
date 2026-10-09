@@ -82,16 +82,20 @@
       <div id="second-bar">
         <div id="second-bar-left-aligned-container" class="second-bar-container">
           % # Shown by the page's script while the user is pinned (hard navigation) to a rite other than the current one
-          <button id="return-to-current-button" class="navigation-link ui-button ui-button-secondary" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
+          <button id="return-to-current-button" class="return-to-current-button navigation-link ui-button ui-button-secondary" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
         </div>
         <div id="second-bar-center-aligned-container" class="second-bar-container">
+          % # Shown instead of the hours when the second bar is at the bottom of a narrow screen
+          <button id="hour-picker-button" class="ui-button ui-button-secondary" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="hour-picker">
+            <span id="hour-picker-button-label"><span id="hour-picker-current">{{!RITE_TITLES.get(occasion, occasion)}}</span> <svg class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,164.24a6,6,0,0,1-8.48,0L128,88.49,52.24,164.24a6,6,0,0,1-8.48-8.48l80-80a6,6,0,0,1,8.48,0l80,80A6,6,0,0,1,212.24,164.24Z"/></svg></span>
+          </button>
           % hour_select = '/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''
           % hour_votives = '' if len(votives) == 0 else f'?v={votives}'
           % for hour in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
-          <a class="navigation-link second-bar-hour-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
+          <a class="hour-link navigation-link second-bar-hour-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
           % end
           % # Shown by the page's script once the next day's Matins may be said, which depends on the reader's local time
-          <a id="second-bar-next-matins-link" class="navigation-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
+          <a id="second-bar-next-matins-link" class="next-matins-link navigation-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
           <div class="top-bar-button-container">
             <button id="rites-menu-toggle-button" class="navigation-link">
               <span>{{text['more-rites-button']}} <svg class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"/></svg></span>
@@ -127,6 +131,19 @@
     % script_text_keys = ['banner-remain-here', 'suboptimal-content-banner-message', 'suboptimal-content-banner-go', 'outdated-content-banner-message', 'outdated-content-banner-go']
     <script type="application/json" id="pray-script-text">{{!json.dumps({key: text[key] for key in script_text_keys}, ensure_ascii=False).replace('</', '<\\/')}}</script>
     % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
+    % # The day's hours and the other rites, opened from the hour picker button when the second bar is at the bottom
+    <div id="hour-picker" style="display: none">
+      <button id="hour-picker-return-to-current-button" class="return-to-current-button ui-button ui-button-secondary" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
+      <div id="hour-picker-hours">
+        % for hour in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
+        <a class="hour-link hour-picker-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
+        % end
+        <a id="hour-picker-next-matins-link" class="next-matins-link hour-picker-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
+      </div>
+      <div id="hour-picker-rites">
+        % include('web/resources/pray/rite-links.tpl', locale=locale, date=date)
+      </div>
+    </div>
     <div id="content-container-outer">
       <div id="rite-page-container">
         % # Latin pages have no translation (and hide its options), whatever display preferences were saved elsewhere

@@ -35,12 +35,14 @@ export function makeDisplayStore() {
   const optionsPanelOpen = signal(false);
   const ordoPanelOpen = signal(false);
   const ritesMenuOpen = signal(false);
+  const hourPickerOpen = signal(false);
 
   return {
     displayParameters: displayParameters,
     optionsPanelOpen: optionsPanelOpen,
     ordoPanelOpen: ordoPanelOpen,
     ritesMenuOpen: ritesMenuOpen,
+    hourPickerOpen: hourPickerOpen,
     setDisplayParameter: (key, value) => {
       displayParameters.value = {...displayParameters.value, [key]: value};
     },
@@ -61,6 +63,12 @@ export function makeDisplayStore() {
     },
     closeRitesMenu: () => {
       ritesMenuOpen.value = false;
+    },
+    toggleHourPicker: () => {
+      hourPickerOpen.value = !hourPickerOpen.value;
+    },
+    closeHourPicker: () => {
+      hourPickerOpen.value = false;
     },
     // Saves the display parameters whenever they change
     persist: () => {

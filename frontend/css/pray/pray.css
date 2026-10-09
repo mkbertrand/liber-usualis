@@ -47,3 +47,10 @@
 	}
 }
 
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
+@media (max-width: 1139px) {
+  #content-container-outer {
+    margin-top: var(--top-bar-title-height);
+    padding-bottom: var(--second-bar-height);
+  }
+}

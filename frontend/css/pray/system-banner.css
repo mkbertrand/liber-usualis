@@ -45,3 +45,10 @@
   align-items: center;
   gap: 9px;
 }
+
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
+@media (max-width: 1139px) {
+  #system-banner-container {
+    top: var(--top-bar-title-height);
+  }
+}
