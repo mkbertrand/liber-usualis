@@ -112,18 +112,6 @@ def rendered_rite_request(date, item, opt, select, translation, votives):
     return render_rite(date, rite, render_resources())
 
 @functools.lru_cache(maxsize=1)
-def render_resources():
-    return {
-        'invitatoria': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
-        'psalmTones': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
-    }
-
-@functools.lru_cache(maxsize=30)
-def rendered_rite_request(date, item, opt, select, translation, votives):
-    rite = rite_request(date, item, opt, select, translation, votives)
-    return render_rite(date, rite, render_resources())
-
-@functools.lru_cache(maxsize=1)
 def getdisplaykalendar(context):
     ret = dict(sorted(display.kalendar(context).items()))
     ret = {str(k): [list(ent) for ent in v] for k, v in ret.items()}
