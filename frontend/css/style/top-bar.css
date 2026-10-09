@@ -116,13 +116,9 @@
 /* On the pray page the call to pray has done its job, so it steps back to a quiet "you are here" state, keeping its
    size and position */
 #pray-navigation-link[aria-current="page"] {
-  background-color: transparent;
+  background-color: var(--button-color-secondary-hover);
   color: var(--panel-text-color);
   box-shadow: none;
-}
-
-#pray-navigation-link[aria-current="page"]:hover {
-  background-color: var(--button-color-secondary-hover);
 }
 
 .navigation-link:hover {
