@@ -95,6 +95,9 @@ export function makePrayStore() {
     opt: opt,
     navigationType: navigationType,
     now: now,
+    updateNow: () => {
+      now.value = Temporal.Now.plainDateTimeISO();
+    },
     contentParams: contentParams,
     nextHourButton: computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value)),
     navigateRite: navigateRite,
@@ -163,6 +166,13 @@ export function makePrayStore() {
       await loadRite(displayPath.value);
     }
   }
+}
+
+// The next moment canSay's answer can change: midnight, when the date moves on, and 14:00, from which the next day's
+// Matins and Lauds may be anticipated
+export function nextCanSayChange(now) {
+  let today = now.toPlainDate();
+  return now.hour < 14 ? today.toPlainDateTime({hour: 14}) : today.add({days: 1}).toPlainDateTime();
 }
 
 export function canSay(params, now) {
