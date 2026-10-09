@@ -150,8 +150,10 @@ function bindNextHour(store) {
   let occasionName = document.getElementById('next-hour-occasion');
   let forbiddenTitle = button.dataset.forbiddenTitle;
 
+  // Follows the rite on the page, so it changes together with the text above it
   effect(() => {
     let target = store.nextHourButton.value;
+    if (!target) return;
     button.href = target.path;
     occasionName.textContent = RITE_TITLES[target.occasion];
     button.classList.toggle('next-hour-button-forbidden', !target.allowed);
@@ -160,7 +162,7 @@ function bindNextHour(store) {
   button.addEventListener('click', (event) => {
     event.preventDefault();
     let target = store.nextHourButton.value;
-    if (target.allowed) {
+    if (target?.allowed) {
       store.navigateRite(target.path);
     }
   });

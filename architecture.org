@@ -338,7 +338,10 @@
    =@preact/signals-core= signals:
 
    - =frontend/pray-store.js= (=makePrayStore()=) owns rite and routing state:
-     =displayPath= (path and query string), =rite=, the =opt= cookie tags,
+     =displayPath= (path and query string, moved as soon as a navigation starts),
+     =ritePath= (the rite whose text is on the page, moved together with =rite=
+     once it loads; the next-hour button and marking an hour prayed follow it),
+     =rite=, the =opt= cookie tags,
      =navigationType=, the last completed cursus hour, and =now=. Derived values
      (=contentParams=, and =nextHourButton= built by the pure =nextHourTarget()=) are =computed=
      signals. Its actions (=navigateRite=, =toggleVotive=, =setDesired=,

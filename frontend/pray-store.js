@@ -36,12 +36,19 @@ export function makePrayStore() {
   const now = signal(Temporal.Now.plainDateTimeISO());
 
   const contentParams = computed(() => contentParameters(displayPath.value));
+  // The rite whose text is on the page. displayPath moves as soon as a navigation starts, so links follow at once;
+  // this moves with the text itself, for what belongs to the rite shown (the next-hour button, marking it prayed).
+  const ritePath = signal(displayPath.value);
+  const riteParams = computed(() => contentParameters(ritePath.value));
 
   async function loadRite(path) {
     let html = await fetchRite(path);
     // A later navigation has superseded this one
     if (displayPath.value != path) return;
-    rite.value = html;
+    batch(() => {
+      rite.value = html;
+      ritePath.value = path;
+    });
     document.title = `${RITE_TITLES[contentParameters(path).occasion]} | ${dayTitle(html)} | Liber Usualis`;
     window.scrollTo(0, 0);
   }
@@ -99,7 +106,8 @@ export function makePrayStore() {
       now.value = Temporal.Now.plainDateTimeISO();
     },
     contentParams: contentParams,
-    nextHourButton: computed(() => nextHourTarget(contentParams.value, lastCursusHour.value, now.value)),
+    // Null until a rite is on the page (a bare /pray visit before its first rite loads)
+    nextHourButton: computed(() => isRitePath(ritePath.value) ? nextHourTarget(riteParams.value, lastCursusHour.value, now.value) : null),
     navigateRite: navigateRite,
     bestHour: bestHour,
     // Leaves a pinned rite for the most relevant one; a new history entry, so Back returns to where the user was
@@ -132,7 +140,7 @@ export function makePrayStore() {
       await loadRite(path);
     },
     markHourAsDone: () => {
-      let current = contentParams.value;
+      let current = riteParams.value;
       if (!isCursus(current)) {
         return;
       }
