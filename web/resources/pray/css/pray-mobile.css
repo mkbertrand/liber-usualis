@@ -14,12 +14,6 @@
 	margin: 0;
 }
 
-.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
-	font-size: initial;
-	float: initial;
-	line-height: initial;
-}
-
 .rite-text-rubric-above-paragraph {
   font-size: 16px !important;
 }

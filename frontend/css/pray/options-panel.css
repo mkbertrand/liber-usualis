@@ -97,3 +97,16 @@
 .permitted-entry {
 	cursor: pointer;
 }
+
+/* An option followed on the same line by a slider that fills the rest of it */
+.options-panel-option-with-range {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.options-panel-option-with-range input[type="range"] {
+	flex: 1;
+	min-width: 0;
+	margin-left: 12px;
+}

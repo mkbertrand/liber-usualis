@@ -8,7 +8,9 @@ const DEFAULT_DISPLAY_PARAMETERS = {
   'displayTrivialChants': false,
   'showTranslation': true,
   'sideBySide': false,
-  'playChant': false
+  'playChant': false,
+  // The Latin column's share in side-by-side layout; null keeps the stylesheet's --side-by-side-latin-share
+  'sideBySideLatinShare': null
 };
 
 function readJSON(key, fallback) {

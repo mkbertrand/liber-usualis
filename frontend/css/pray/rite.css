@@ -1,3 +1,10 @@
+:root {
+	--rite-text-line-height: 1.25;
+	/* Old Standard TT's metrics, as fractions of its font size (from the font's OS/2 and hhea tables) */
+	--old-standard-cap-height: 0.712;
+	--old-standard-ascent: 0.762;
+}
+
 /* Rite container and formatting for hour itself */
 #rite-container {
 	font-family: "Old Standard TT", times;
@@ -76,7 +83,7 @@
 
 .rite-text {
 	font-family: "Old Standard TT", times;
-	line-height: 1.25;
+	line-height: var(--rite-text-line-height);
 	margin-top: 7px;
 	margin-bottom: 14px;
 	text-align: justify;
@@ -117,20 +124,36 @@
 }
 
 
-:is(.textus-psalmi, .lectio-incipiens, .lectio-sequens, .epiphania-venite-incipit, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum) p.rite-text::first-letter {
-	float: left;
-	font-size: 94px;
-	margin-right: 0.1rem;
-	color: var(--rubric);
-	line-height: 0;
-	initial-letter: 3;
-	-webkit-initial-letter: 3;
+/* Initial letters spanning --initial-letter-lines lines: three, or two for the classes below. The capital reaches from
+   the top of the first line's capitals to the last line's baseline, so its font size, in the paragraph's ems, is
+   1em + (lines - 1) x line height / cap height. */
+:is(.textus-psalmi, .lectio-incipiens, .lectio-sequens, .epiphania-venite-incipit, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum) p.rite-text {
+	--initial-letter-lines: 3;
 }
 
-:is(.lectio-sequens, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum, .lectio-incipiens.lectio-commemorationis) p.rite-text::first-letter {
-	font-size: 60px !important;
-	initial-letter: 2;
-	-webkit-initial-letter: 2;
+:is(.lectio-sequens, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum, .lectio-incipiens.lectio-commemorationis) p.rite-text {
+	--initial-letter-lines: 2;
+}
+
+:is(.textus-psalmi, .lectio-incipiens, .lectio-sequens, .epiphania-venite-incipit, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum) p.rite-text::first-letter {
+	font-size: calc(1em + (var(--initial-letter-lines) - 1) * var(--rite-text-line-height) * 1em / var(--old-standard-cap-height));
+	margin-right: 0.1rem;
+	color: var(--rubric);
+	initial-letter: var(--initial-letter-lines);
+	-webkit-initial-letter: var(--initial-letter-lines);
+}
+
+/* Without initial-letter support (Firefox), the letter is floated and placed by hand. Firefox sizes a floated first
+   letter to its glyph (capital top to baseline), so with the size above the float already ends on the last line's
+   baseline, and exactly that many lines wrap beside it; the top margin lowers its capital to the first line's
+   capitals. The letter's own em is the large size, k times the paragraph's: k = 1 + (lines - 1) x line height / cap
+   height. */
+@supports not ((initial-letter: 1) or (-webkit-initial-letter: 1)) {
+	:is(.textus-psalmi, .lectio-incipiens, .lectio-sequens, .epiphania-venite-incipit, .textus-psalmi-precibus, .collecta, .oratio-dirigere, .hymnus.te-deum) p.rite-text::first-letter {
+		--initial-letter-scale: calc(1 + (var(--initial-letter-lines) - 1) * var(--rite-text-line-height) / var(--old-standard-cap-height));
+		float: left;
+		margin-top: calc(1em * ((var(--rite-text-line-height) - 1) / 2 + var(--old-standard-ascent) - var(--old-standard-cap-height)) / var(--initial-letter-scale));
+	}
 }
 
 .collecta, .oratio-dirigere {
@@ -179,9 +202,13 @@ svg.ChantScore text.active {
 }
 
 #rite-container.side-by-side div.rite-text-container {
+  --side-by-side-column-gap: 30px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  column-gap: 30px;
+  /* The width left after the gap, split by --side-by-side-latin-share */
+  grid-template-columns:
+    calc((100% - var(--side-by-side-column-gap)) * var(--side-by-side-latin-share))
+    calc((100% - var(--side-by-side-column-gap)) * (1 - var(--side-by-side-latin-share)));
+  column-gap: var(--side-by-side-column-gap);
   width: 100%;
 }
 
@@ -191,6 +218,12 @@ p.rite-text-latin {
 
 p.rite-text-translation {
   grid-column: 2;
+}
+
+/* Smaller to fit its narrower column. Measured: the English and German columns end level with the Latin at 1em for a
+   0.5 share, 0.9em for 0.55 and 0.8em for 0.6, i.e. 2 x (1 - share) em */
+#rite-container.side-by-side p.rite-text-translation {
+  font-size: calc(2em * (1 - var(--side-by-side-latin-share)));
 }
 
 #rite-container.line-by-line .rite-text-translation {

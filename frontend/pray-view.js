@@ -119,6 +119,16 @@ function bindRite(store, display) {
     }
   });
 
+  // The reader's side-by-side split, if they have chosen one, overrides the stylesheet's default
+  effect(() => {
+    let share = display.displayParameters.value.sideBySideLatinShare;
+    if (share == null) {
+      document.documentElement.style.removeProperty('--side-by-side-latin-share');
+    } else {
+      document.documentElement.style.setProperty('--side-by-side-latin-share', share);
+    }
+  });
+
   effect(() => {
     let parameters = display.displayParameters.value;
     let translated = showTranslation.value;
@@ -187,11 +197,35 @@ function bindDisplayParameterCheckbox(display, inputId, key, dependsOn) {
   }
 }
 
+// Only meaningful in side-by-side layout, so disabled when the translation is off or shown line by line
+function bindSideBySideShareSlider(display) {
+  let slider = document.getElementById('side-by-side-latin-share');
+  // Translation options are omitted for Latin
+  if (!slider) return;
+  // Read with no reader's choice applied, so it is the stylesheet's default
+  let defaultShare = getComputedStyle(document.documentElement).getPropertyValue('--side-by-side-latin-share').trim();
+  // A share saved before the slider's range changed is brought within it, so the layout matches what the slider shows
+  let saved = display.displayParameters.value.sideBySideLatinShare;
+  if (saved != null) {
+    let withinRange = Math.min(Math.max(saved, Number(slider.min)), Number(slider.max));
+    if (withinRange != saved) {
+      display.setDisplayParameter('sideBySideLatinShare', withinRange);
+    }
+  }
+  effect(() => {
+    let parameters = display.displayParameters.value;
+    slider.value = parameters.sideBySideLatinShare ?? defaultShare;
+    slider.disabled = !(parameters.showTranslation && parameters.sideBySide);
+  });
+  slider.addEventListener('input', () => display.setDisplayParameter('sideBySideLatinShare', Number(slider.value)));
+}
+
 function bindOptionsPanel(store, display) {
   bindDisplayParameterCheckbox(display, 'translation-toggle', 'showTranslation');
   bindDisplayParameterCheckbox(display, 'side-by-side-toggle', 'sideBySide', 'showTranslation');
   bindDisplayParameterCheckbox(display, 'chant-toggle', 'chant');
   bindDisplayParameterCheckbox(display, 'play-chant-toggle', 'playChant', 'chant');
+  bindSideBySideShareSlider(display);
 
   bindCheckbox(document.getElementById('priest-toggle'), () => !store.opt.value.includes('privata'), () => store.togglePriest());
 

@@ -6,9 +6,10 @@
 		<input type="checkbox" id="translation-toggle" />
 		<label for="translation-toggle">{{text['translation-toggle']}}</label>
 	</div>
-	<div>
+	<div class="options-panel-option-with-range">
 		<input type="checkbox" id="side-by-side-toggle" />
 		<label for="side-by-side-toggle">{{text['side-by-side-toggle']}}</label>
+		<input type="range" id="side-by-side-latin-share" min="0.5" max="0.65" step="0.01" title="{{text['side-by-side-latin-share']}}" aria-label="{{text['side-by-side-latin-share']}}" />
 	</div>
 	% end
 	<div>
