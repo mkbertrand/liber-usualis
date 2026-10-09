@@ -3,42 +3,14 @@
    living inside it would be wiped out on the next swap. */
 #next-hour-button-container {
 	background-color: var(--content-background-color);
-	color: var(--content-text-color);
-}
-
-#next-hour-button {
-	width: 50%;
-	margin-left: auto;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 14px 20px;
-	border: 1px solid var(--content-border);
-	border-radius: var(--component-border-radius);
-	background-color: transparent;
-  font-family: "Old Standard TT", times;
-	color: var(--content-text-color);
-	text-decoration: none;
-	cursor: pointer;
-}
-
-#next-hour-button:hover {
-	background-color: var(--content-hover);
-}
-
-#next-hour-text {
-  font-size: 16px;
-	margin-top: 2px;
+  display: flex;
+  justify-content: right;
+  padding: 9px;
 }
 
 .next-hour-button-forbidden {
-	cursor: not-allowed;
+	cursor: not-allowed !important;
 	opacity: 0.5;
-}
-
-.next-hour-button-forbidden:hover {
-	background-color: transparent !important;
 }
 
 @media (max-width: 600px) {

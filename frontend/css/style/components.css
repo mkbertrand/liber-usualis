@@ -4,6 +4,8 @@
 	border-radius: var(--component-border-radius);
 	color: var(--panel-text-color);
   font-family: "Old Standard TT", times;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .ui-button.icon-button {
@@ -27,7 +29,6 @@
 
 .ui-button.ui-button-secondary {
 	background-color: transparent;
-  font-size: 16px;
 }
 
 .ui-button.ui-button-secondary:hover {
