@@ -55,7 +55,7 @@
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  font-family: "Arsenal", sans-serif;
+  font-family: "Old Standard TT", times;
   font-size: 24px;
 }
 
@@ -72,7 +72,7 @@
   text-decoration: none;
   border: none;
   background-color: transparent;
-  font-family: "Arsenal", sans-serif;
+  font-family: "Old Standard TT", times;
   font-size: 16px;
   color: var(--panel-text-color);
 }
@@ -112,7 +112,7 @@
   border-radius: var(--component-border-radius);
   background-color: transparent;
   color: var(--panel-text-color);
-  font-family: "Arsenal", sans-serif;
+  font-family: "Old Standard TT", times;
   font-size: 16px;
   text-align: left;
   cursor: pointer;

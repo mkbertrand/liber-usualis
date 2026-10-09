@@ -17,7 +17,7 @@
 	border: 1px solid var(--content-border);
 	border-radius: var(--component-border-radius);
 	background-color: transparent;
-  font-family: "Arsenal", sans-serif;
+  font-family: "Old Standard TT", times;
 	color: var(--content-text-color);
 	text-decoration: none;
 	cursor: pointer;

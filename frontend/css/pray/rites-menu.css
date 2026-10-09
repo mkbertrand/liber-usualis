@@ -23,7 +23,7 @@
 	border: 1px solid var(--border-color);
 	border-radius: var(--component-border-radius);
 	padding: 18px 20px;
-	font-family: "Arsenal", sans-serif;
+	font-family: "Old Standard TT", times;
 	color: var(--panel-text-color);
 	/* A dropdown over the rite and banners; same layer as the top bar */
 	z-index: 3;
