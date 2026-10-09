@@ -6,10 +6,52 @@
 % import version_management
 % locale = locales[0]
 % text = json.load(open(version_management.bestlocalized(f'/pages/{page}.json', locales)))
+% import datamanage
+% from datetime import datetime, timedelta
+% CURSUS_OCCASIONS = ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'vesperae', 'completorium']
+% RITE_TITLES = {'matutinum-laudes': 'Matutinum \N{AMPERSAND} Laudes', 'prima': 'Prima', 'tertia': 'Tertia', 'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium', 'psalmi-graduales': 'Psalmi Graduales', 'psalmi-poenitentiales': 'Psalmi Pœnitentiales', 'ordo-commendationis-animae': 'Ordo Commendationis Animæ', 'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis', 'pro-prandio': 'Benedictio Mensæ (Pro Prandio)', 'pro-coena': 'Benedictio Mensæ (Pro Cœna)', 'itinerarium': 'Itinerarium Clericorum'}
+% if date is None:
+%   # For bare navigation (just navigation to /pray)
+%   rite = ''
+%   pdate = datetime.now().date()
+%   date = str(pdate)
+%   occasion = 'matutinum-laudes'
+%   prayer_type = 'officium'
+%   select = 'primarium'
+%   votives = ''
+%   next_hour_href = '#'
+%   next_hour_occasion_name = ''
+%   day_title = ''
+%   rite_title_for_head = ''
+% else:
+%   rite = datamanage.rendered_rite_request(date, occasion + '+' + prayer_type, options, select, translation, votives)
+%   pdate = datetime.strptime(date, '%Y-%m-%d').date()
+%   # Frontend navigation just steals the title from the generated rite (sorry, I think that making a call to /api/ordo would in fact suck even more)
+%   # so requesting this way relies on the same source of truth and also is cheap since the rite request will've been memoized anyway
+%   day_title = datamanage.rite_request(date, occasion + '+' + prayer_type, options, select, translation, votives)['used-primary'][0]
+%   rite_title_for_head = RITE_TITLES.get(occasion, occasion)
+%   if prayer_type == 'officium' and select != 'officium-defunctorum' and occasion in CURSUS_OCCASIONS:
+%     _cursus_idx = CURSUS_OCCASIONS.index(occasion)
+%     if _cursus_idx == len(CURSUS_OCCASIONS) - 1:
+%       next_hour_date, next_hour_occasion = pdate + timedelta(days=1), CURSUS_OCCASIONS[0]
+%     else:
+%       next_hour_date, next_hour_occasion = pdate, CURSUS_OCCASIONS[_cursus_idx + 1]
+%     end
+%     next_hour_select = select
+%   else:
+%     next_hour_date, next_hour_occasion, next_hour_select = pdate, CURSUS_OCCASIONS[0], 'primarium'
+%   end
+%   next_hour_occasion_name = RITE_TITLES[next_hour_occasion]
+%   next_hour_href = f"/{locale}/officium/{next_hour_date}{'' if next_hour_select == 'primarium' else f'/{next_hour_select}'}/{next_hour_occasion}{'' if len(votives) == 0 else f'?v={votives}'}"
+% end
 
 <html lang="{{locale.split('-')[0]}}">
 	<head>
+		% if rite_title_for_head == '':
 		<title>{{text['title']}}</title>
+		% else:
+		<title>{{rite_title_for_head}} | {{day_title}} | Liber Usualis</title>
+		% end
 		<script type="application/ld+json">
 		{
 			"@context":"https://schema.org",
@@ -18,226 +60,147 @@
 			"url":"https://liberusualis.org/"
 		}
 		</script>
+    % include('web/resources/themer.tpl')
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei-icon.png">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei-apple-touch-icon.png">
-		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/styles/style.css')}}>
+		<link rel="preload" href="/resources/fonts/OldStandardTT-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/style.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/pray.css')}}>
 		% if mobile:
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/pray/css/pray-mobile.css')}}>
 		% end
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
-		<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/pray/js/pray-window.js')}}></script>
-		<script type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
+    <script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>
+		<script defer type="text/javascript" src={{version_management.get_versioned_resource('/dist/pray.js')}}></script>
 	</head>
-	<body x-data="{
-	optionspanel: false,
-	bottompanel: $persist(false),
-	bottompanelopen: true,
-	darkMode: $persist(false).as('dark-mode'),
-	search: '',
-	calendarDate: null,
-	liturgicalDay: '',
-	hour: null,
-	parameters: $persist({
-		'desired': 'omnes',
-		'priest': true,
-		'translation': true
-	}),
-  displayParameters: $persist({
-    'chant': false,
-		'display-trivial-chants': false,
-		'side-by-side': false,
-		'play-chant': false
-  }),
-	rite: '',
-	initialized: false,
-	canIncrementOccasion: true,
-	nextOccasion: $persist(null),
-	get Rite() {
-		if (panelsopen) {
-			$nextTick(() => generatepanels());
-		}
-		return this.displayParameters['side-by-side'] || !this.initialized ? this.rite : this.rite.then(Pray.lineByLine);
-	},
-	// Sets this.calendarDate with a local date which is adjusted to UTC.
-	setCalendarDate(calendarDate) {
-		this.calendarDate = new Date(new Date(calendarDate + new Date().toISOString().substring(10)).getTime() + this.calendarDate.getTimezoneOffset() * 60000);
-	},
-	// Returns the date (yyyy-mm-dd) adjusted for timezone.
-	getCalendarDate(calendarDate) {
-		return new Date(calendarDate.getTime() - calendarDate.getTimezoneOffset() * 60000).toISOString().substring(0, 10);
-	},
-	updateRiteAsyncLock: false,
-	async updateRite(scroll = true) {
-		if (!this.updateRiteAsyncLock) {
-			this.updateRiteAsyncLock = true;
-
-			this.rite = getRite(this.getCalendarDate(this.calendarDate), this.hour, this.parameters);
-			if (scroll) {
-				window.scrollTo({top:0});
-			}
-			this.initialized = true;
-			this.updateRiteAsyncLock = false;
-		} else {
-			console.log('Simultaneous attempts to update Rite');
-		}
-	},
-	ignoreCalendarDateChange: false,
-	async updateLiturgicalDay() {
-		this.liturgicalDay = await getLiturgicalDay(this.getCalendarDate(this.calendarDate), getTime(this.hour), this.parameters);
-		this.updateRite();
-		this.ignoreCalendarDateChange = false;
-	},
-	setOccasion(id) {
-		oldTime = getTime(this.hour);
-		this.hour = id;
-		if (oldTime != getTime(this.hour)) {
-			this.updateLiturgicalDay();
-		} else {
-			this.updateRite();
-		}
-	},
-	async incrementOccasion() {
-		// Otherwise things will happen async that need to be synchronous
-		this.ignoreCalendarDateChange = true;
-		this.calendarDate = this.nextOccasion[0];
-		this.search = this.getCalendarDate(this.calendarDate);
-		// This has the effect of actually hitting updateLiturgicalDay()
-		await this.setOccasion(this.nextOccasion[1]);
-	},
-	canIncrementTo() {
-		if (this.nextOccasion == null) {
-			return false;
-		}
-		zeroedsetdate = new Date(this.nextOccasion[0].getFullYear(), this.nextOccasion[0].getMonth(), this.nextOccasion[0].getDate());
-		currentdate = new Date();
-		zeroedcurrentdate = new Date(currentdate.getFullYear(), currentdate.getMonth(), currentdate.getDate());
-		if (this.nextOccasion[1] == 'matutinum-laudes' && zeroedsetdate - 86400000 == zeroedcurrentdate - 0) {
-			return new Date().getHours() >= 14;
-		} else {
-			return zeroedsetdate - 0 == zeroedcurrentdate - 0;
-		}
-	},
-	// Not biased as to whether the 'next hour' can be said or not. That's for canIncrementTo to determine.
-	determineNextHour() {
-		this.nextOccasion = [resolveParameters(this.parameters).ambit.riteIndex(this.hour) + 1 == resolveParameters(this.parameters).ambit.occasions.length ? new Date(this.calendarDate.getTime() + 86400000) : this.calendarDate, resolveParameters(this.parameters).ambit.nextOccasion(this.hour).rite];
-		getRite(this.getCalendarDate(this.nextOccasion[0]), this.nextOccasion[1], this.parameters);
-	}
-}" x-init="
-	if (!('votives' in parameters)) {
-		parameters.votives = {'de-sanctis-angelis': false, 'de-sanctis-apostolis': false, 'de-joseph': false, 'de-eucharistiae-sacramento': false, 'de-passione': false, 'de-immaculata-conceptione': false};
-	}
-	if (!('play-chant' in displayParameters)) {
-		displayParameters['play-chant'] = false;
-	}
-	% if not mobile:
-	doPanelSize();
-	% end
-	parameters.locale = '{{locale}}';
-	if (parameters.locale == 'la') {
-		parameters.translation = false;
-	}
-	if (nextOccasion && typeof nextOccasion[0] === 'string') {
-		nextOccasion[0] = new Date(nextOccasion[0]);
-	}
-  
-  var urlGovernedOccasion = window.location.href.match(/pray\/(.+?)\/(.+)$/);
-  if (urlGovernedOccasion && urlGovernedOccasion.length == 3) {
-		calendarDate = new Date();
-    setCalendarDate(urlGovernedOccasion[1]);
-    hour = urlGovernedOccasion[2];
-  } else if (canIncrementTo()) {
-		calendarDate = nextOccasion[0];
-		hour = nextOccasion[1];
-	} else {
-		calendarDate = new Date();
-		hour = resolveParameters(parameters).ambit.suggestSelectedOccasion(calendarDate.getHours()).rite;
-	}
-
-	$watch('calendarDate', calendarDate => {if (!ignoreCalendarDateChange) {updateLiturgicalDay()}});
-	$watch('parameters', (parameters, oldParameters) => {
-		hour = resolveParameters(oldParameters).ambit.slideAmbitOccasion(resolveParameters(parameters).ambit, hour);
-		updateRite();
-		nextOccasion = null;
-	});
-	updateLiturgicalDay();
-	" :data-theme="darkMode ? 'dark' : 'light'">
-		<div id="site-wrapper" x-cloak x-data="{sidebarnavopen: false, locale: '{{locale}}'}">
-			<div id="top-bar-title">
-				<button id="sidebar-nav-toggle-wrapper" @click="sidebarnavopen = !sidebarnavopen">
-				% include('web/resources/svg/hamburger-menu.tpl')
-			</button>
-				<div id="project-logo">
-					<div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
-				</div>
-				<button id="options-gear-wrapper" @click="optionspanel = !optionspanel">
-					<svg id="options-gear" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%"><path d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-				</button>
-			</div>
-			% include('web/resources/sidemenu.tpl', locale=locale, text=json.load(open(f'web/locales/{locale}/resources/sidemenu.json')))
-
-			<div id="content-container-outer">
-				% if not mobile:
-				<div x-cloak id="options-panel-background" x-show="optionspanel">
-					<div id="options-panel-wrapper" x-trap.noscroll="optionspanel" @click.outside="optionspanel = false">
-						% include('web/resources/pray/options-panel.tpl', locale=locale, text=text)
-					</div>
-				</div>
-				% else:
-					<div x-cloak id="options-panel-wrapper-mobile" x-show="optionspanel">
-						% include('web/resources/pray/options-panel.tpl', locale=locale, text=text)
-					</div>
-				% end
-				% if not mobile:
-					<div id="side-panel-left">
-					</div>
-				% end
-				<div id="rite-page-container">
-					<div x-show="initialized" id="rite-container" x-html="Rite" :class="{
-            'chant-shown': displayParameters.chant,
-            'chant-hidden': !displayParameters.chant,
-            'chant-playback': displayParameters.chant && displayParameters['play-chant'],
-            'side-by-side': displayParameters['side-by-side'] && parameters.translation,
-            'line-by-line': !displayParameters['side-by-side'] && parameters.translation,
-            'no-translation': !parameters.translation
-            }">
-					</div>
-					<template x-if="bottompanel">
-						<div id="bottom-easy-select-container">
-							<button id="bottom-easy-select-hide" @click="bottompanelopen = !bottompanelopen"><svg id="bottom-easy-select-hide-icon" :class="!bottompanelopen && 'bottom-easy-select-hide-icon-closed'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><path fill="currentColor" d="M38.998 15.98 24.003 30.597 9.007 15.98a1.434 1.434 0 0 0-2.004 0 1.365 1.365 0 0 0 0 1.95l15.952 15.554a1.5 1.5 0 0 0 2.095 0l15.952-15.551a1.365 1.365 0 0 0 0-1.956 1.434 1.434 0 0 0-2.004 0z"></path></svg></button>
-							<div id="bottom-easy-select-content-container" x-show="bottompanelopen" x-transition>
-								<div id="date-selector-container">
-									<button id="date-selector-decrement" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() - 86400000)), hour, parameters)" @click="calendarDate = new Date(calendarDate.getTime() - 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() - 86399999)), hour, parameters);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"></path><path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path></g></svg></button>
-									<input id="date-selector-text" type="date" x-model="search" x-init="search = getCalendarDate(calendarDate)">
-									<button id="date-selector-text-submit" class="date-selector-button" @mouseover.throttle="getRite(search, hour, parameters)" @click="setCalendarDate(search)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M3.17 6.706a5 5 0 0 1 7.103-3.16.5.5 0 1 0 .454-.892A6 6 0 1 0 13.455 5.5a.5.5 0 0 0-.91.417 5 5 0 1 1-9.375.789"></path><path fill-rule="evenodd" d="M8.147.146a.5.5 0 0 1 .707 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 1 1-.707-.708L10.293 3 8.147.854a.5.5 0 0 1 0-.708"></path></g></svg></button>
-									<button id="date-selector-increment" class="date-selector-button" @mouseover.throttle="getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters)" @click="calendarDate = new Date(calendarDate.getTime() + 86400000); search = getCalendarDate(calendarDate); getRite(getCalendarDate(new Date(calendarDate.getTime() + 86400000)), hour, parameters);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg></button>
-								</div>
-								<div id="rite-selector-container">
-									<template x-for="occasion in resolveParameters(parameters).ambit.occasions">
-										<button class="rite-selector-button" :class="(occasion.rite == hour) && 'rite-selector-button-selected'" @mouseover.throttle="getRite(getCalendarDate(calendarDate), occasion.rite, parameters)" @click="setOccasion(occasion.rite)" x-text="occasion.name"></button>
-									</template>
-								</div>
-							</div>
-						</div>
-					</template>
-					<div x-show="initialized" id="next-hour-button-container" x-data="{showtooltip: false}">
-						<div style="height:0;" x-intersect="determineNextHour()"></div>
-						<button id="next-hour-button" :class="canIncrementOccasion? 'next-hour-button-allowed' : 'next-hour-button-forbidden'" @mouseenter="canIncrementOccasion = canIncrementTo();" @click="if (canIncrementOccasion) {incrementOccasion()} else {showtooltip = true}" @mouseleave="showtooltip = false" @scroll.window="showtooltip = false">{{text['next-hour']}}<span><svg id="next-hour-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%"><g fill="currentColor" transform="scale(3)"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8"></path></g></svg></span></button>
-						<span id="next-hour-forbidden-tooltip" x-show="!canIncrementOccasion && showtooltip">{{text['next-hour-forbidden-tooltip']}}</span>
-					</div>
-				</div>
-				% if not mobile:
-				<div id="side-panel-right">
-				</div>
-				<div id="size-change-listener" x-resize="doPanelSize()"></div>
-				% end
-			</div>
-		</div>
-	</body>
+  <body>
+    % include('web/resources/top-bar.tpl', locale=locale, options=True, text=json.load(open(f'web/locales/{locale}/resources/top-bar.json')))
+    % # Icons from Phosphor Icons (https://phosphoricons.com), MIT License
+    <div id="second-bar-container">
+      <div id="second-bar">
+        <div id="second-bar-left-aligned-container" class="second-bar-container">
+          % # Shown by the page's script while the user is pinned (hard navigation) to a rite other than the current one
+          <button id="return-to-current-button" class="return-to-current-button navigation-link ui-button ui-button-secondary" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
+        </div>
+        <div id="second-bar-center-aligned-container" class="second-bar-container">
+          % # Shown instead of the hours when the second bar is at the bottom of a narrow screen
+          <button id="hour-picker-button" class="ui-button ui-button-secondary" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="hour-picker">
+            <span id="hour-picker-button-label"><span id="hour-picker-current">{{!RITE_TITLES.get(occasion, occasion)}}</span> <svg class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,164.24a6,6,0,0,1-8.48,0L128,88.49,52.24,164.24a6,6,0,0,1-8.48-8.48l80-80a6,6,0,0,1,8.48,0l80,80A6,6,0,0,1,212.24,164.24Z"/></svg></span>
+          </button>
+          % hour_select = '/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''
+          % hour_votives = '' if len(votives) == 0 else f'?v={votives}'
+          % for hour in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
+          <a class="hour-link navigation-link second-bar-hour-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
+          % end
+          % # Shown by the page's script once the next day's Matins may be said, which depends on the reader's local time
+          <a id="second-bar-next-matins-link" class="next-matins-link navigation-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
+          <div class="top-bar-button-container">
+            <button id="rites-menu-toggle-button" class="navigation-link">
+              <span>{{text['more-rites-button']}} <svg class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"/></svg></span>
+            </button>
+          </div>
+        </div>
+        <div id="second-bar-right-aligned-container" class="second-bar-container">
+          <div class="top-bar-button-container">
+            <button id="ordo-panel-toggle-button" class="ui-button ui-button-secondary">
+              {{text['ordo-button']}}
+            </button>
+          </div>
+          <div class="top-bar-button-container">
+            <button id="options-gear-button" class="ui-button icon-button ui-button-secondary" aria-label="{{text['options-panel-button']}}">
+              <svg class="icon options-gear-icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,82a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162ZM214,130.84c.06-1.89.06-3.79,0-5.68L229.33,106a6,6,0,0,0,1.11-5.29A105.34,105.34,0,0,0,219.76,74.9a6,6,0,0,0-4.53-3l-24.45-2.71q-1.93-2.07-4-4l-2.72-24.46a6,6,0,0,0-3-4.53,105.65,105.65,0,0,0-25.77-10.66A6,6,0,0,0,150,26.68l-19.2,15.37c-1.89-.06-3.79-.06-5.68,0L106,26.67a6,6,0,0,0-5.29-1.11A105.34,105.34,0,0,0,74.9,36.24a6,6,0,0,0-3,4.53L69.23,65.22q-2.07,1.94-4,4L40.76,72a6,6,0,0,0-4.53,3,105.65,105.65,0,0,0-10.66,25.77A6,6,0,0,0,26.68,106l15.37,19.2c-.06,1.89-.06,3.79,0,5.68L26.67,150.05a6,6,0,0,0-1.11,5.29A105.34,105.34,0,0,0,36.24,181.1a6,6,0,0,0,4.53,3l24.45,2.71q1.94,2.07,4,4L72,215.24a6,6,0,0,0,3,4.53,105.65,105.65,0,0,0,25.77,10.66,6,6,0,0,0,5.29-1.11L125.16,214c1.89.06,3.79.06,5.68,0l19.21,15.38a6,6,0,0,0,3.75,1.31,6.2,6.2,0,0,0,1.54-.2,105.34,105.34,0,0,0,25.76-10.68,6,6,0,0,0,3-4.53l2.71-24.45q2.07-1.93,4-4l24.46-2.72a6,6,0,0,0,4.53-3,105.49,105.49,0,0,0,10.66-25.77,6,6,0,0,0-1.11-5.29Zm-3.1,41.63-23.64,2.63a6,6,0,0,0-3.82,2,75.14,75.14,0,0,1-6.31,6.31,6,6,0,0,0-2,3.82l-2.63,23.63A94.28,94.28,0,0,1,155.14,218l-18.57-14.86a6,6,0,0,0-3.75-1.31h-.36a78.07,78.07,0,0,1-8.92,0,6,6,0,0,0-4.11,1.3L100.87,218a94.13,94.13,0,0,1-17.34-7.17L80.9,187.21a6,6,0,0,0-2-3.82,75.14,75.14,0,0,1-6.31-6.31,6,6,0,0,0-3.82-2l-23.63-2.63A94.28,94.28,0,0,1,38,155.14l14.86-18.57a6,6,0,0,0,1.3-4.11,78.07,78.07,0,0,1,0-8.92,6,6,0,0,0-1.3-4.11L38,100.87a94.13,94.13,0,0,1,7.17-17.34L68.79,80.9a6,6,0,0,0,3.82-2,75.14,75.14,0,0,1,6.31-6.31,6,6,0,0,0,2-3.82l2.63-23.63A94.28,94.28,0,0,1,100.86,38l18.57,14.86a6,6,0,0,0,4.11,1.3,78.07,78.07,0,0,1,8.92,0,6,6,0,0,0,4.11-1.3L155.13,38a94.13,94.13,0,0,1,17.34,7.17l2.63,23.64a6,6,0,0,0,2,3.82,75.14,75.14,0,0,1,6.31,6.31,6,6,0,0,0,3.82,2l23.63,2.63A94.28,94.28,0,0,1,218,100.86l-14.86,18.57a6,6,0,0,0-1.3,4.11,78.07,78.07,0,0,1,0,8.92,6,6,0,0,0,1.3,4.11L218,155.13A94.13,94.13,0,0,1,210.85,172.47Z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="system-banner-container">
+      <template id="system-banner">
+        <div class="system-banner">
+          <p class="system-banner-content"></p>
+          <div class="system-banner-answer-container">
+          </div>
+        </div>
+      </template>
+      <template id="system-banner-answer">
+        <button class="system-banner-answer ui-button"></button>
+      </template>
+    </div>
+    % script_text_keys = ['banner-remain-here', 'suboptimal-content-banner-message', 'suboptimal-content-banner-go', 'outdated-content-banner-message', 'outdated-content-banner-go']
+    <script type="application/json" id="pray-script-text">{{!json.dumps({key: text[key] for key in script_text_keys}, ensure_ascii=False).replace('</', '<\\/')}}</script>
+    % include('web/resources/pray/rites-menu.tpl', locale=locale, date=date, text=text)
+    % # The day's hours and the other rites, opened from the hour picker button when the second bar is at the bottom
+    <div id="hour-picker" style="display: none">
+      <button id="hour-picker-return-to-current-button" class="return-to-current-button ui-button ui-button-secondary" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
+      <div id="hour-picker-hours">
+        % for hour in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
+        <a class="hour-link hour-picker-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
+        % end
+        <a id="hour-picker-next-matins-link" class="next-matins-link hour-picker-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
+      </div>
+      <div id="hour-picker-rites">
+        % include('web/resources/pray/rite-links.tpl', locale=locale, date=date)
+      </div>
+    </div>
+    <div id="content-container-outer">
+      <div id="rite-page-container">
+        % # Latin pages have no translation (and hide its options), whatever display preferences were saved elsewhere
+        <main id="rite-container" data-has-translation="{{'false' if locale == 'la' else 'true'}}">
+          {{!rite}}
+        </main>
+        <div id="next-hour-button-container">
+          <a
+            id="next-hour-button"
+            class="ui-button ui-button-primary"
+            href="{{next_hour_href}}"
+            data-forbidden-title="{{text['next-hour-forbidden-tooltip']}}"
+          >
+            <span>{{text['next-hour']}}: <span id="next-hour-occasion">{{!next_hour_occasion_name}}</span> <svg id="next-hour-button-icon" class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    % # On mobile the panels are full-screen sheets (see pray-mobile.css), so they neither trap focus nor lock scrolling.
+    <div id="options-panel-background" style="display: none">
+      <div id="options-panel-wrapper"{{!'' if mobile else ' data-trap-focus'}}>
+        % include('web/resources/pray/options-panel.tpl', locale=locale, text=text, date=date)
+      </div>
+    </div>
+    <div id="ordo-panel-background" style="display: none">
+      <div id="ordo-panel-wrapper"{{!'' if mobile else ' data-trap-focus'}}>
+        <div id="ordo-panel">
+          <h2>{{text['ordo-panel-title']}}</h2>
+          <div id="ordo-date-controls">
+            <button id="ordo-date-previous" type="button" aria-label="{{text['ordo-previous-day']}}"><svg class="icon small-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"/></svg></button>
+            <input id="ordo-date-picker" type="date" value="{{date}}" aria-label="{{text['ordo-date']}}">
+            <button id="ordo-date-next" type="button" aria-label="{{text['ordo-next-day']}}"><svg class="icon small-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></button>
+          </div>
+          <h3>{{text['ordo-daytime-title']}}</h3>
+          <p><span id="ordo-daytime-primarium"></span> &mdash; <span id="ordo-daytime-primarium-rank"></span></p>
+          <div id="ordo-daytime-details"></div>
+          <h3>{{text['ordo-evening-title']}}</h3>
+          <p><span id="ordo-evening-primarium"></span> &mdash; <span id="ordo-evening-primarium-rank"></span></p>
+          <div id="ordo-evening-details"></div>
+          % # Paragraphs the page's script adds to a day's details only when they apply
+          <template id="ordo-psalmi-template">
+            <p class="ordo-section"><span class="ordo-section-label">{{text['ordo-psalmi-label']}}</span> <span class="ordo-section-names"></span></p>
+          </template>
+          <template id="ordo-commemorations-template">
+            <p class="ordo-section"><span class="ordo-section-label">{{text['ordo-commemorations-label']}}</span><br><span class="ordo-section-names"></span></p>
+          </template>
+          <template id="ordo-omissions-template">
+            <p class="ordo-section"><span class="ordo-section-label">{{text['ordo-omissions-label']}}</span><br><span class="ordo-section-names"></span></p>
+          </template>
+          <h3>{{text['ordo-rites-title']}}</h3>
+          <div id="ordo-rite-links">
+            % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
+            % # Choosing a rite from the ordo is a deliberate choice of day, so it pins the page (hard navigation)
+            <p><a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link="hard" data-occasion="{{item[0]}}">{{!item[1]}}</a></p>
+            % end
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

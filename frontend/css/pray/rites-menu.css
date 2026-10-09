@@ -1,0 +1,62 @@
+/* Rites dropdown, opened from its own top-bar icon (left of the options gear) -
+   a lightweight anchored menu, not a modal pane like the options panel. */
+#rites-menu-toggle-wrapper {
+	height: 35px;
+	width: 35px;
+	padding: 7px;
+	border-radius: var(--component-border-radius);
+	background-color: transparent;
+	color: var(--panel-text-color);
+}
+
+#rites-menu-icon {
+	height: 100%;
+}
+
+#rites-menu-wrapper {
+	/* left and top are set by the page's script to place it under its button */
+	position: fixed;
+	width: 300px;
+	max-width: calc(100vw - 36px);
+	box-sizing: border-box;
+	background-color: var(--panel-background-color);
+	border: 1px solid var(--border-color);
+	border-radius: var(--component-border-radius);
+	padding: 18px 20px;
+	font-family: "Old Standard TT", times;
+	color: var(--panel-text-color);
+	/* A dropdown over the rite and banners; same layer as the top bar */
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.rites-menu-group {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.rites-menu-group-label {
+	font-size: 13px;
+	color: var(--panel-text-color);
+}
+
+.rites-menu-pair {
+	display: flex;
+	gap: 24px;
+}
+
+.rites-menu-list {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+
+/* Same color whether or not visited */
+.rite-link, .rite-link:visited {
+	color: var(--link-color);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}

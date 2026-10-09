@@ -1,6 +1,42 @@
 % import version_management
-<select id="locale-selector" onchange="window.location.assign('/' + this.value + window.location.pathname.slice(3) + window.location.search)">
-  % for loc in version_management.DEFINED_LOCALES:
-    <option value={{loc}} {{!'selected' if loc == locale else ''}}>{{loc.upper()}}</option>
-  % end
-</select>
+% # Each language in its own language, so it is recognisable whatever the current locale
+% LOCALE_NAMES = {'de': 'Deutsch', 'en': 'English', 'la': 'Latina', 'nl': 'Nederlands'}
+<div id="locale-selector">
+  <button id="locale-selector-button" class="ui-button icon-button ui-button-secondary" type="button" aria-label="{{text['locale-selector-label']}}" aria-haspopup="true" aria-expanded="false" aria-controls="locale-menu">
+    <svg class="icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm81.57,64H169.19a132.58,132.58,0,0,0-25.73-50.67A90.29,90.29,0,0,1,209.57,90ZM218,128a89.7,89.7,0,0,1-3.83,26H171.81a155.43,155.43,0,0,0,0-52h42.36A89.7,89.7,0,0,1,218,128Zm-90,87.83a110,110,0,0,1-15.19-19.45A124.24,124.24,0,0,1,99.35,166h57.3a124.24,124.24,0,0,1-13.46,30.38A110,110,0,0,1,128,215.83ZM96.45,154a139.18,139.18,0,0,1,0-52h63.1a139.18,139.18,0,0,1,0,52ZM38,128a89.7,89.7,0,0,1,3.83-26H84.19a155.43,155.43,0,0,0,0,52H41.83A89.7,89.7,0,0,1,38,128Zm90-87.83a110,110,0,0,1,15.19,19.45A124.24,124.24,0,0,1,156.65,90H99.35a124.24,124.24,0,0,1,13.46-30.38A110,110,0,0,1,128,40.17Zm-15.46-.84A132.58,132.58,0,0,0,86.81,90H46.43A90.29,90.29,0,0,1,112.54,39.33ZM46.43,166H86.81a132.58,132.58,0,0,0,25.73,50.67A90.29,90.29,0,0,1,46.43,166Zm97,50.67A132.58,132.58,0,0,0,169.19,166h40.38A90.29,90.29,0,0,1,143.46,216.67Z"/></svg>
+  </button>
+  <div id="locale-menu" hidden>
+    % for loc in sorted(version_management.DEFINED_LOCALES):
+    <button class="locale-menu-option" type="button" lang="{{loc}}" data-locale="{{loc}}"{{!' aria-current="true"' if loc == locale else ''}}><svg class="icon small-icon inline-icon locale-menu-current-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg> {{LOCALE_NAMES.get(loc, loc.upper())}}</button>
+    % end
+  </div>
+</div>
+<script>
+  (function() {
+    const button = document.getElementById('locale-selector-button');
+    const menu = document.getElementById('locale-menu');
+    function setOpen(open) {
+      menu.hidden = !open;
+      button.setAttribute('aria-expanded', open);
+    }
+    button.addEventListener('click', () => setOpen(menu.hidden));
+    // Same page in the chosen locale (paths start with /{locale}/)
+    menu.addEventListener('click', (event) => {
+      const option = event.target.closest('[data-locale]');
+      if (option) {
+        window.location.assign('/' + option.dataset.locale + window.location.pathname.slice(3) + window.location.search);
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (!menu.hidden && !menu.contains(event.target) && !button.contains(event.target)) {
+        setOpen(false);
+      }
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key == 'Escape' && !menu.hidden) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+  })();
+</script>

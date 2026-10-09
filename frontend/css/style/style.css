@@ -1,0 +1,104 @@
+@import "./font-faces.css";
+@import "./top-bar.css";
+@import "./components.css";
+
+:root {
+	--panel-background-color: #ffffff;
+	--border-color: #efe9e9;
+	--site-background-color: #fcf5eb;
+	--panel-text-color: #000000;
+	--panel-text-color-muted: #333333;
+	--link-color: #0000ee;
+	--panel-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 3px 8px rgba(0, 0, 0, .05);
+	/* The same shadow cast upwards, for bars fixed to the bottom of the screen */
+	--panel-shadow-upward: 0 -1px 2px rgba(0, 0, 0, .06), 0 -3px 8px rgba(0, 0, 0, .05);
+	--overlay-background-color: rgba(249, 249, 249, .7);
+	--overlay-background-color-strong: rgba(249, 249, 249, .8);
+
+	--top-bar-title-height: 85px;
+  --component-border-radius: 5px;
+	--button-color-primary: #25498a;
+	--button-text-color-primary: #efebec;
+	--button-color-primary-hover: #25499a;
+  --button-color-secondary-hover: #eee;
+
+	/* Variables used for the actual page content. */
+	--content-background-color: #ffffff;
+	--content-border: #efe9e9;
+	--content-hover: #e0b0b0;
+	--content-text-color: #000000;
+	--content-text-color-muted: #222222;
+	--rubric: red;
+	--native-scheme: light;
+}
+
+[data-theme="dark"] {
+	--panel-background-color: #202126;
+	--border-color: #3a3b44;
+	--button-color-primary: #25499a;
+	--button-color-primary-hover: #25498a;
+	--button-color-secondary-hover: #313239;
+	--site-background-color: #1a1a1e;
+	--panel-text-color: #efebec;
+	--panel-text-color-muted: #85816f;
+	--link-color: #8ab4f8;
+	--panel-shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 3px 10px rgba(0, 0, 0, .35);
+	--panel-shadow-upward: 0 -1px 2px rgba(0, 0, 0, .5), 0 -3px 10px rgba(0, 0, 0, .35);
+	--overlay-background-color: rgba(26, 26, 30, .7);
+	--overlay-background-color-strong: rgba(26, 26, 30, .85);
+
+	--content-background-color: #e8e1d0;
+	--content-border: #c9c0a8;
+	--content-hover: #c9a0a0;
+	--content-text-color: #2a2a26;
+	--content-text-color-muted: #544f42;
+	--rubric: #cc2819;
+	--native-scheme: dark;
+}
+
+html {
+  /* Fix safari resizing text */
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--site-background-color);
+}
+
+#site-wrapper {
+	width: 100%;
+}
+
+#content-container {
+	position: relative;
+	min-height: 100vh;
+	max-width: 140em;
+	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
+	padding: 10px 40px;
+	background-color: var(--content-background-color);
+}
+
+@media print {
+	#top-bar-title {
+		display: none;
+	}
+
+	#content-container {
+		margin: 0;
+	}
+}
+
+.red {
+	color: var(--rubric) !important;
+}
+
+tspan[style="font-family:'Exsurge Characters';fill:#f00;"] {
+	font-family: 'Versiculum'!important;
+	font-variant:normal;
+	font-size: 130%;
+	text-transform: lowercase;
+}
+

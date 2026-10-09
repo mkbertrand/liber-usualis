@@ -1,0 +1,63 @@
+#ordo-panel {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	padding: 21px 21px 7px 21px;
+	color: var(--panel-text-color);
+  font-family: "Old Standard TT", times;
+}
+
+#ordo-date-controls {
+	/* The day buttons and the date picker share one height */
+	--ordo-date-control-height: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+}
+
+#ordo-date-controls button, #ordo-date-picker {
+	height: var(--ordo-date-control-height);
+	box-sizing: border-box;
+}
+
+#ordo-date-controls button {
+	width: var(--ordo-date-control-height);
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* The panel's gap alone spaces its text, so default margins are removed */
+#ordo-panel h2, #ordo-panel h3, #ordo-panel p {
+  margin: 0;
+}
+
+#ordo-panel h2, #ordo-panel h3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+/* A rule under the panel's title separates it from the contents */
+#ordo-panel h2 {
+	padding-bottom: 7px;
+}
+
+/* Each section heading is set apart by the same extra space */
+#ordo-panel h3 {
+  margin-top: 14px;
+}
+
+/* Their paragraphs take the panel's gap like any other text, and an empty container takes no space */
+#ordo-daytime-details, #ordo-evening-details {
+  display: contents;
+}
+
+.ordo-section-label {
+	font-style: italic;
+}
+
+.ordo-rite-link, .ordo-rite-link:visited {
+	color: var(--link-color);
+}

@@ -1,6 +1,7 @@
 // Copyright 2023-2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import * as Exsurge from 'exsurge';
+
 function stringRender(text) {
   text = text.replaceAll('Á', 'A').replaceAll('Ǽ', 'Æ')
     .replaceAll('É', 'E').replaceAll('Í', 'I')
@@ -26,6 +27,15 @@ function stringRender(text) {
     .replace(/\[(.+?)\]/g, '<span class=\'rite-text-rubric\'>\$1</span>');
   return text;
 }
+
+import {
+  attachChantPointerControls,
+  notifyChantRelayout,
+  stopChantPlayback,
+} from './chant-player.js';
+import {bindScoreToContext} from './chant-context.js';
+
+export {stopChantPlayback};
 
 const GABC_CHANT_CONTEXT = new Exsurge.ChantContext(Exsurge.TextMeasuringStrategy.Canvas);
 
@@ -137,6 +147,17 @@ class ChantElement extends HTMLElement {
       return;
     }
 
+    if (this.gabc === undefined) {
+      // Elements upgraded synchronously by the HTML parser (gabc-chant is
+      // already defined before <body> parses) have their constructor run
+      // before the parser appends the token's attributes/children, so
+      // these can't be read in the constructor - read them lazily here,
+      // by which point the element is fully parsed.
+      this.translatedText = this.getAttribute('translated');
+      this.gabc = this.getAttribute('gabc');
+      this.plainContent = this.innerHTML.toString();
+    }
+
     try {
       var mappings = Exsurge.Gabc.createMappingsFromSource(GABC_CHANT_CONTEXT, this.gabc);
       this.score = new Exsurge.ChantScore(GABC_CHANT_CONTEXT, mappings, !this.gabc.includes('initial-style:0;'));
@@ -174,9 +195,6 @@ class ChantElement extends HTMLElement {
 	constructor() {
 		super();
 
-    this.translatedText = this.getAttribute('translated');
-    this.gabc = this.getAttribute('gabc');
-    this.plainContent = this.innerHTML.toString();
     attachChantPointerControls(this);
 	}
 }
@@ -190,7 +208,7 @@ export function initChantElement() {
   const resizeObserver = new ResizeObserver(resize);
 
   const startObserve = () => {
-    resizeObserver.observe(document.getElementById('site-wrapper'));
+    resizeObserver.observe(document.querySelector('main'));
   }
 
   if (document.readyState === 'loading') {

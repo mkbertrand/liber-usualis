@@ -1,0 +1,20 @@
+/* Next hour button. Sibling of rite-container, not a child - #rite-container's
+   content is replaced wholesale on every client-side navigation, so anything
+   living inside it would be wiped out on the next swap. */
+#next-hour-button-container {
+	background-color: var(--content-background-color);
+  display: flex;
+  justify-content: right;
+  padding: 9px;
+}
+
+.next-hour-button-forbidden {
+	cursor: not-allowed !important;
+	opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+	#next-hour-button {
+		width: 100%;
+	}
+}

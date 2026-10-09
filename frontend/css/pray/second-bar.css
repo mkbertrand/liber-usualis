@@ -1,0 +1,170 @@
+:root {
+  --second-bar-height: 66px;
+}
+
+/* Fixed directly below the fixed top bar. */
+#second-bar-container {
+  position: fixed;
+  top: var(--top-bar-title-height);
+  left: 0;
+  width: 100%;
+  height: var(--second-bar-height);
+  box-sizing: border-box;
+  background-color: var(--panel-background-color);
+  box-shadow: var(--panel-shadow);
+  z-index: 1;
+}
+
+/* With the second bar below it, the two bars read as one header: a line between them, and the shadow only beneath
+   the second bar. This file is only bundled for pages that have a second bar. */
+#top-bar-title {
+  box-shadow: none;
+  border-bottom-color: var(--border-color);
+}
+
+#second-bar {
+  width: 100%;
+  height: 100%;
+  padding: 9px;
+  box-sizing: border-box;
+  /* Equal outer columns keep the hours centered in the bar regardless of the controls' width */
+  display: grid;
+  grid-template-columns: 1fr minmax(0, max-content) 1fr;
+  gap: var(--menu-element-gap);
+}
+
+#second-bar-left-aligned-container, #second-bar-center-aligned-container, #second-bar-right-aligned-container {
+  display: flex;
+  gap: var(--menu-element-gap);
+}
+
+#second-bar-left-aligned-container {
+  grid-column: 1;
+  justify-content: flex-start;
+}
+
+#second-bar-center-aligned-container {
+  grid-column: 2;
+  /* On narrow screens the hours scroll sideways so the controls on the right always stay reachable */
+  overflow-x: auto;
+}
+
+#second-bar-center-aligned-container > * {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+#second-bar-right-aligned-container {
+  grid-column: 3;
+  justify-content: flex-end;
+}
+
+/* Only used when the second bar is at the bottom (below) */
+#hour-picker-button {
+  display: none;
+}
+
+#hour-picker {
+  display: none;
+}
+
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
+@media (max-width: 1139px) {
+  #second-bar-container {
+    top: auto;
+    bottom: 0;
+    box-shadow: var(--panel-shadow-upward);
+  }
+
+  /* With the second bar gone from below it, the top bar casts its own shadow again */
+  #top-bar-title {
+    box-shadow: var(--panel-shadow);
+    border-bottom-color: var(--panel-background-color);
+  }
+
+  /* The hour picker on the left, Ordo and options on the right; the row of hours, More Rites and "Return to
+     current" are in the hour picker instead */
+  #second-bar {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  #second-bar-left-aligned-container {
+    display: none;
+  }
+
+  #second-bar-center-aligned-container {
+    grid-column: 1;
+    overflow: visible;
+  }
+
+  #second-bar-center-aligned-container > :not(#hour-picker-button) {
+    display: none;
+  }
+
+  #second-bar-right-aligned-container {
+    grid-column: 2;
+  }
+
+  #hour-picker-button {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Long rite names are cut short rather than pushing Ordo and options off the bar */
+  #hour-picker-button-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  #hour-picker-current {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* A sheet rising from the bottom bar */
+  #hour-picker {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: var(--second-bar-height);
+    max-height: calc(100vh - var(--top-bar-title-height) - var(--second-bar-height));
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 9px 21px;
+    background-color: var(--panel-background-color);
+    box-shadow: var(--panel-shadow-upward);
+    font-family: "Old Standard TT", times;
+    /* Above the banners and the rite, like the rites menu */
+    z-index: 3;
+  }
+
+  #hour-picker-hours, #hour-picker-rites {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hour-picker-rites {
+    padding-top: 9px;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .hour-picker-link, #hour-picker-rites .rite-link {
+    padding: 8px 0;
+    color: var(--panel-text-color);
+    text-decoration: none;
+  }
+
+  #hour-picker-return-to-current-button {
+    align-self: flex-start;
+  }
+}

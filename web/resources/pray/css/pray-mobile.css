@@ -3,10 +3,15 @@
 	font-size: 18px;
 }
 
-.textus-psalmi::first-letter, .lectio-incipiens::first-letter, .lectio-sequens::first-letter, .epiphania-venite-incipit::first-letter, .textus-psalmi-precibus::first-letter {
-	font-size: initial;
-	float: initial;
-	line-height: initial;
+/* Never cap/center the content column on mobile - a landscape tablet (this app treats
+   iPad as mobile) can exceed the desktop max-width, and constraining it there would
+   waste screen space rather than help readability the way it does on a desktop monitor. */
+:root {
+	--rite-page-max-width: none;
+}
+
+#rite-page-container {
+	margin: 0;
 }
 
 .rite-text-rubric-above-paragraph {
@@ -17,19 +22,16 @@
 	padding: 0 30px 60px 30px;
 }
 
-#next-hour-forbidden-tooltip {
-	top: 5px;
-}
-
-#options-panel-wrapper-mobile {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow-y: auto;
-	background-color: var(--panel-background-color);
-	z-index: 1;
-}
-
-#options-panel {
-	padding-bottom: 100px;
+/* Touch devices get the panels as a sheet between the bars at every width, including wide tablets where the second
+   bar stays at the top */
+#options-panel-wrapper, #ordo-panel-wrapper {
+	position: absolute;
+	inset: 0;
+	transform: none;
+	width: auto;
+	max-width: none;
+	min-height: 0;
+	max-height: none;
+	border-radius: 0;
+	box-shadow: none;
 }

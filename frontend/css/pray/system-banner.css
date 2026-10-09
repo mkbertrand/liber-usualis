@@ -1,0 +1,54 @@
+#system-banner-container {
+  position: fixed;
+	top: calc(var(--top-bar-title-height) + var(--second-bar-height));
+  /* As wide as the rite page and centered over it, like #rite-page-container */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: var(--rite-page-max-width);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* Above the rite, below the panel overlays (2) */
+  z-index: 1;
+}
+
+.system-banner {
+  background-color: var(--panel-background-color);
+  /* A minimum, so a banner whose text wraps on a narrow screen grows instead of overflowing */
+  min-height: 60px;
+  padding: 9px;
+  /* Message on the left, answers on the right, all centered vertically */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px 20px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--component-border-radius);
+  box-shadow: var(--panel-shadow);
+}
+
+.system-banner-content {
+  margin: 0;
+  font-family: "Old Standard TT", times;
+  color: var(--panel-text-color);
+  font-size: 16px;
+}
+
+.system-banner-answer-container {
+  /* Kept at the right, including when it wraps onto its own row */
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
+@media (max-width: 1139px) {
+  #system-banner-container {
+    top: var(--top-bar-title-height);
+  }
+}

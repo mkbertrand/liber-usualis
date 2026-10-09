@@ -1,88 +1,50 @@
 <div id="options-panel">
-	<template x-if="initialized">
-		<div id="options-panel-require-initialized-container">
-			<div id="coincidences-list-container">
-				<h3 class="options-panel-section-head">{{text['coincidences-list-title']}}</h3>
-				<h4 class="coincidences-label">{{text['coincidences-list-primary']}}</h4>
-				<div id="primary-entry" class="coincidence-entry" x-text="Pray.abbreviateName(liturgicalDay.primary[0])"></div>
-				<h4 class="coincidences-label">{{text['coincidences-list-commemorations']}}</h4>
-				<template x-for="commemoration in liturgicalDay.commemorations.filter((commemoration) => !commemoration[1].includes('suffragium'))">
-					<div class="coincidence-entry" x-text="Pray.abbreviateName(commemoration[0])"></div>
-				</template>
-				<h4 class="coincidences-label">{{text['coincidences-list-omissions']}}</h4>
-				<template x-for="omission in liturgicalDay.omissions">
-					<div class="coincidence-entry" x-text="Pray.abbreviateName(omission[0])"></div>
-				</template>
-				<h4 class="coincidences-label">{{text['coincidences-list-votives']}}</h3>
-			</div>
-		</div>
-	</template>
-	<h3 class="options-panel-section-head">{{text['options-panel-title']}}</h3>
+	<h2>{{text['options-panel-title']}}</h2>
+	<h3>{{text['display-title']}}</h3>
 	% if locale != 'la':
 	<div>
-		<input type="checkbox" id="translation-toggle" x-model="parameters.translation" />
+		<input type="checkbox" id="translation-toggle" />
 		<label for="translation-toggle">{{text['translation-toggle']}}</label>
 	</div>
-	<div>
-		<input type="checkbox" id="side-by-side-toggle" x-model="displayParameters['side-by-side']" :disabled="!resolveParameters(parameters).translation" />
-		<label for="side-by-side-toggle" :class="resolveParameters(parameters).translation ? '' : 'option-disabled'">{{text['side-by-side-toggle']}}</label>
+	<div class="options-panel-option-with-range">
+		<input type="checkbox" id="side-by-side-toggle" />
+		<label for="side-by-side-toggle">{{text['side-by-side-toggle']}}</label>
+		<input type="range" id="side-by-side-latin-share" min="0.5" max="0.65" step="0.01" title="{{text['side-by-side-latin-share']}}" aria-label="{{text['side-by-side-latin-share']}}" />
 	</div>
 	% end
 	<div>
-		<input type="checkbox" id="chant-toggle" x-model="displayParameters.chant" @change="if (!displayParameters.chant) Pray.stopChantPlayback()" />
+		<input type="checkbox" id="chant-toggle" />
 		<label for="chant-toggle">{{text['chant-toggle']}}</label>
 	</div>
 	<div>
-		<input type="checkbox" id="play-chant-toggle" x-model="displayParameters['play-chant']" :disabled="!displayParameters.chant" @change="if (!displayParameters['play-chant']) Pray.stopChantPlayback()" />
-		<label for="play-chant-toggle" :class="displayParameters.chant ? '' : 'option-disabled'">{{text['play-chant-toggle']}}</label>
+		<input type="checkbox" id="play-chant-toggle" />
+		<label for="play-chant-toggle">{{text['play-chant-toggle']}}</label>
 	</div>
   <div>
-		<input type="checkbox" id="priest-toggle" x-model="parameters.priest" />
+		<input type="checkbox" id="priest-toggle" />
 		<label for="priest-toggle">{{text['priest-toggle']}}</label>
   </div>
-	<div>
-		<input type="checkbox" value="bottompanel" id="bottom-panel-toggle" x-model="bottompanel" />
-		<label for="bottom-panel-toggle">{{text['bottom-panel-toggle']}}</label>
-	</div>
-	<div id="desired-select-wrapper">
-		<div id="desired-select-container" x-data="{ambitEntries: [
-			['omnes', 'Officium'],
-			['diei', 'Officium diei'],
-			['officium-parvum-bmv', 'Officium Parvum B.M.V.'],
-			['officium-defunctorum', 'Officium Defunctorum'],
-			['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.'],
-			['psalmi-graduales', 'Psalmi Graduales'],
-			['psalmi-poenitentiales', 'Psalmi Pœnitentiales'],
-			['ordo-commendationis-animae', 'Ordo Commendationis Animæ'],
-			['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis'],
-			['benedictio-mensae', 'Benedictio Mensæ'],
-			['itinerarium', 'Itinerarium Clericorum']
-		]}">
-			<h3 class="options-panel-section-head">{{text['selection-title']}}</h3>
-			<template x-for="entry in ambitEntries">
+	<div id="desired-select-wrapper" class="options-panel-section">
+		<div id="desired-select-container" class="options-panel-section">
+			<h3>{{text['selection-title']}}</h3>
+			% # [id, label, select, opt tag]
+			% for ambit_entry in [['omnes', 'Officium', 'primarium', ''], ['diei', 'Officium diei', 'primarium', 'sine-ritibus'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''], ['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']]:
 				<div>
-					<input type="radio" :value="entry[0]" :id="`desired-select-${entry[0]}`" x-model="parameters.desired" />
-					<label :for="`desired-select-${entry[0]}`" x-text="entry[1]" />
+					<input type="radio" name="desired" autocomplete="off" value="{{ambit_entry[0]}}" id="desired-select-{{ambit_entry[0]}}" data-select="{{ambit_entry[2]}}" data-opt-tag="{{ambit_entry[3]}}" />
+					<label for="desired-select-{{ambit_entry[0]}}">{{ambit_entry[1]}}</label>
 				</div>
-			</template>
+			% end
 		</div>
 	</div>
-	<div x-data="{votiveEntries: [
-		['de-sanctis-angelis', 'De Ss. Angelis.'],
-		['de-sanctis-apostolis', 'De Ss. Apostolis.'],
-		['de-joseph', 'De S. Joseph.'],
-		['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'],
-		['de-passione', 'De Passione D.N.J.C.'],
-		['de-immaculata-conceptione', 'De Immaculata Conceptione.']
-	]}">
-		<h3 class="options-panel-section-head">{{text['votive-office-select-title']}}</h3>
-		<div id="votive-office-selection-inner">
-			<template x-for="entry in votiveEntries">
+	<div class="options-panel-section">
+		<h3>{{text['votive-office-select-title']}}</h3>
+		<div id="votive-office-selection-inner" class="options-panel-section">
+			% for votive_entry in [['de-sanctis-angelis', 'De Ss. Angelis.'], ['de-sanctis-apostolis', 'De Ss. Apostolis.'], ['de-joseph', 'De S. Joseph.'], ['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'], ['de-passione', 'De Passione D.N.J.C.'], ['de-immaculata-conceptione', 'De Immaculata Conceptione.']]:
 				<div class="votive-office-entry">
-					<input type="checkbox" :value="entry[0]" :id="`votive-select-${entry[0]}`" x-model="parameters.votives[entry[0]]"/>
-					<label :for="`votive-select-${entry[0]}`" x-text="entry[1]"></label>
+					<input type="checkbox" value="{{votive_entry[0]}}" id="votive-select-{{votive_entry[0]}}" data-votive="{{votive_entry[0]}}" />
+					<label for="votive-select-{{votive_entry[0]}}">{{votive_entry[1]}}</label>
 				</div>
-			</template>
+			% end
 		</div>
 	</div>
 </div>

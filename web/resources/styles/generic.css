@@ -1,17 +1,5 @@
-#content-container {
-	position: relative;
-	min-height: 100%;
-	max-width: 140em;
-	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
-	padding: 10px 40px;
-	background-color: var(--content-background-color);
-	color: var(--content-text-color);
-	font-size: 18px;
-	font-family: times;
-}
-
 h1 {
-	font-family: 'times';
+	font-family: "Old Standard TT", times;
 	text-align: center;
 	color: var(--rubric);
 	font-size: 30px;
@@ -21,11 +9,9 @@ h1 {
 }
 
 h2 {
-	font-family: 'times';
-	text-align: center;
-	color: var(--rubric);
+  font-family: "Old Standard TT", times;
+  color: var(--content-text-color);
 	font-size: 24px;
-	font-variant: small-caps;
 	font-weight: normal;
 }
 
@@ -34,10 +20,19 @@ h2 {
 }
 
 h3 {
-	font-family: 'times';
-	text-align: left;
+  font-family: "Old Standard TT", times;
 	color: var(--content-text-color);
 	font-size: 20px;
-	font-variant: small-caps;
 	font-weight: normal;
+}
+
+p, ol, ul {
+  font-family: "Old Standard TT", times;
+	font-size: 18px;
+	color: var(--content-text-color);
+}
+
+a {
+  font-family: "Old Standard TT", times;
+	font-size: 18px;
 }

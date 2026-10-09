@@ -30,6 +30,31 @@ CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber
 HEADER_CORPUS = CaputCorpus(DEFAULT_CORPUS.books)
 
 @functools.lru_cache(maxsize=30)
+def ordo(date: str, time: str, votives: str):
+    day = datetime.strptime(date, '%Y-%m-%d').date()
+    votives = votives.replace(' ', '+').split('+')
+
+    tags = copy.deepcopy(kalendar.daily_tagger.get_vespers(DEFAULT_CORPUS, day, votives) if time == 'vesperale' else kalendar.daily_tagger.get_diurnal(DEFAULT_CORPUS, day, votives))
+
+    primary = [i for i in tags if 'primarium' in i][0]
+    commemorations = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
+    omissions = [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'omissum' in a and not 'officium-parvum-bmv' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)]
+    lectiocomm = [i for i in tags if 'commemoratio-matutini' in i]
+    lectiocomm = lectiocomm[0] if len(lectiocomm) != 0 else None
+    # The office whose psalms are said at Vespers, when the vesperal rules (tabella-vesperalis.json) take them from
+    # an office other than the primary one
+    psalmi = [i for i in tags if 'psalmi' in i]
+    psalmi = psalmi[0] if len(psalmi) != 0 else None
+    return {
+        'tags': tags,
+        'primary': [DEFAULT_CORPUS.get_name(primary), primary],
+        'commemorations': commemorations,
+        'omissions': omissions,
+        'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None,
+        'psalmi': [DEFAULT_CORPUS.get_name(psalmi), psalmi] if psalmi else None,
+    }
+
+@functools.lru_cache(maxsize=30)
 def rite_request(date, item, opt, select, translation, votives):
     day = datetime.strptime(date, '%Y-%m-%d').date()
     rite_tags = frozenset(item.replace(' ', '+').split('+'))
@@ -42,7 +67,7 @@ def rite_request(date, item, opt, select, translation, votives):
         tags.append({'officium-defunctorum', 'omissum', 'semiduplex'} | time)
 
     # We could use the cum-opbmv tag to have separate functionality defined in a data-driven way but this is probably cleaner.
-    if 'cum-opbmv' in rite_tags:
+    if 'cum-opbmv' in options:
         tags = [i - {'omissum'} if 'officium-parvum-bmv' in i else i for i in tags]
 
     tags = [tagset | options for tagset in tags]
@@ -72,7 +97,19 @@ def rite_request(date, item, opt, select, translation, votives):
         'used-primary': [DEFAULT_CORPUS.get_name(used_primary), used_primary],
         'used-commemorations': [[DEFAULT_CORPUS.get_name(tagset), tagset] for tagset in sorted(list(filter(lambda a : 'commemoratio' in a, tags)), key=lambda a:DEFAULT_CORPUS.discriminate('rank', a), reverse=True)],
         'commemoratio-matutini': [DEFAULT_CORPUS.get_name(lectiocomm), lectiocomm] if lectiocomm else None
-        }
+    }
+
+@functools.lru_cache(maxsize=1)
+def render_resources():
+    return {
+        'invitatoria': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
+        'psalmTones': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
+    }
+
+@functools.lru_cache(maxsize=30)
+def rendered_rite_request(date, item, opt, select, translation, votives):
+    rite = rite_request(date, item, opt, select, translation, votives)
+    return render_rite(date, rite, render_resources())
 
 @functools.lru_cache(maxsize=1)
 def render_resources():

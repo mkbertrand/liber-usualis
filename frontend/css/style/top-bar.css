@@ -1,0 +1,219 @@
+/* Top bar and its items' style */
+#top-bar-title {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--top-bar-title-height) !important;
+	background-color: var(--panel-background-color);
+	border-bottom: 1px solid var(--panel-background-color);
+  box-shadow: var(--panel-shadow);
+	/* Above the pray page's panel overlays (2) and everything beneath them */
+	z-index: 3;
+  padding: 9px;
+  box-sizing: border-box;
+  /* Logo and Pray, then the menu (site links, then actions at the right end) */
+  display: flex;
+  gap: var(--menu-element-gap);
+}
+
+:root {
+  --menu-element-gap: 15px;
+}
+
+#top-bar-left-aligned-container, #top-bar-navigation, #top-bar-right-aligned-container {
+  display: flex;
+  gap: var(--menu-element-gap);
+	height: 100%;
+}
+
+#top-bar-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--menu-element-gap);
+}
+
+#top-bar-menu-button {
+  display: none;
+}
+
+/* Below the width the full bar needs in its longest locale (Dutch, about 1120px), the site links and actions move
+   into a dropdown opened by the menu button */
+@media (max-width: 1139px) {
+  #top-bar-menu-button {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    margin-left: auto;
+  }
+
+  #top-bar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: min(320px, 100%);
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 9px;
+    padding: 9px;
+    background-color: var(--panel-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 var(--component-border-radius) var(--component-border-radius);
+    box-shadow: var(--panel-shadow);
+  }
+
+  .top-bar-menu-open #top-bar-menu {
+    display: flex;
+  }
+
+  #top-bar-navigation {
+    height: auto;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #top-bar-navigation .navigation-link {
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  #top-bar-right-aligned-container {
+    height: auto;
+    padding-top: 9px;
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+/* Logo stuff */
+#project-logo {
+	height: 100%;
+}
+
+#logo-link-wrapper {
+	width: fit-content;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	object-fit: contain;
+	width: auto;
+	height: 100%;
+}
+
+#pray-navigation-link, #pray-navigation-link:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Old Standard TT", times;
+  font-size: 24px;
+}
+
+/* On the pray page the call to pray has done its job, so it steps back to a quiet "you are here" state, keeping its
+   size and position */
+#pray-navigation-link[aria-current="page"] {
+  background-color: var(--button-color-secondary-hover);
+  color: var(--panel-text-color);
+  box-shadow: none;
+}
+
+.navigation-link:hover {
+  cursor: pointer;
+}
+
+.navigation-link, #navigation-link:visited {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Old Standard TT", times;
+  font-size: 16px;
+  color: var(--panel-text-color);
+}
+
+.top-bar-button-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#donate-button {
+  background-color: #1a8917;
+	box-shadow: 0 2px 6px color-mix(in srgb, #1a8917 35%, transparent);
+}
+
+#donate-button:hover {
+  background-color: #1a9917;
+}
+
+/* Language picker: an icon button like the dark mode toggle, opening a menu of locales */
+#locale-selector {
+  position: relative;
+}
+
+#locale-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 4px;
+  background-color: var(--panel-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--component-border-radius);
+  box-shadow: var(--panel-shadow);
+}
+
+/* The display rule above would otherwise override the hidden attribute */
+#locale-menu[hidden] {
+  display: none;
+}
+
+.locale-menu-option {
+  padding: 7px 10px;
+  border: none;
+  border-radius: var(--component-border-radius);
+  background-color: transparent;
+  color: var(--panel-text-color);
+  font-family: "Old Standard TT", times;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.locale-menu-option:hover {
+  background-color: var(--button-color-secondary-hover);
+}
+
+/* Only the current locale shows its caret. Scoped to the option so it outranks the shared .inline-icon display. */
+.locale-menu-option .locale-menu-current-icon {
+  display: none;
+}
+
+.locale-menu-option[aria-current="true"] .locale-menu-current-icon {
+  display: inline-block;
+}
+
+/* Site-wide dark mode toggle. Lives in the top bar alongside the locale
+   selector. */
+/* Fixed size, so the click area doesn't depend on the icon's size */
+#dark-mode-toggle, #locale-selector-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Shows the icon for switching to the other theme. */
+:root[data-theme="dark"] .dark-mode-toggle-moon-icon,
+:root:not([data-theme="dark"]) .dark-mode-toggle-sun-icon {
+  display: none;
+}

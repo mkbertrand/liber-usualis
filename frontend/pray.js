@@ -1,42 +1,74 @@
 // Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
-import * as Exsurge from 'exsurge';
+import { effect } from '@preact/signals-core';
 import { initChantElement } from './gabc-chant.js';
-import { defineAmbit } from './ambit.js';
-export { defineAmbit };
+import { makePrayStore, canSay, nextCanSayChange } from './pray-store.js';
+import { makeDisplayStore } from './pray-display.js';
+import { bindPrayPage, makeBanner } from './pray-view.js';
+
 initChantElement();
 
-export function abbreviateName(name) {
-	name = name.replaceAll('Martyris', 'Mart.').replaceAll('Martyrum', 'Mm.').replaceAll('Confessoris', 'Conf.').replaceAll('Episcopi', 'Ep.').replaceAll('Pontificum', 'Pont.').replaceAll('Ecclesiæ Doctoris', 'Eccl. Doct.').replaceAll('Virginis', 'Virg.').replaceAll('Viduæ', 'Vid.').replaceAll('Sociorum', 'Soc.') + '.';
-	name = name.replaceAll(/\.\.$/g, '.');
-	return name;
+// Runs once the document is parsed (the bundle is loaded with defer)
+const store = makePrayStore();
+const display = makeDisplayStore();
+display.persist();
+// Before binding, so that every binding's first run already sees a rite path
+store.init();
+bindPrayPage(store, display);
+// Soft navigation promises current content, so the clock is advanced exactly when what may be said can change. Hard
+// navigation makes no such promise, so nothing is scheduled. Rescheduled each time the clock moves.
+effect(() => {
+  if (store.navigationType.value != 'soft') return;
+  let timeout = setTimeout(store.updateNow, store.now.value.until(nextCanSayChange(store.now.value)).total('milliseconds'));
+  return () => clearTimeout(timeout);
+});
+// Timers in a hidden tab can be delayed, so the clock is caught up whenever the page is shown again
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState == 'visible') {
+    store.updateNow();
+  }
+});
+
+// Localized text for the messages built here, written into the page by pray.tpl
+const text = JSON.parse(document.getElementById('pray-script-text').textContent);
+
+// If hard navigation is specified as hard already, this is because this navigation really comes from the user's history rather than a link (where navigationType would be null)
+if (store.navigationType.value != 'hard') {
+  if (canSay(store.contentParams.value, store.now.value) && (store.bestHour().occasion != store.contentParams.value.occasion || !store.bestHour().date.equals(store.contentParams.value.date))) {
+    makeBanner(
+      store,
+      'suboptimal-liturgical-content-banner',
+      text['suboptimal-content-banner-message'],
+      [
+        {id: 'suboptimal-liturgical-content-banner-yes', content: text['suboptimal-content-banner-go'], action: async () => { await store.returnToCurrent(); }, role: 'primary'},
+        {id: 'suboptimal-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => {}, role: 'secondary'}
+      ]
+    );
+  } else if (!canSay(store.contentParams.value, store.now.value)) {
+    showOutdatedBanner();
+  }
 }
 
-export function lineByLine(rite) {
-  let riteSplit = rite.split(/(<div class="rite-text-container.+?>.+?<\/div>)/);
-  let riteRet = [];
-  for (let i = 0; i < riteSplit.length; i++) {
-    if (i % 2 == 0) {
-      riteRet.push(riteSplit[i]);
-    } else {
-      let style = riteSplit[i].match(/"rite-text-container (.*?)"/)[1];
-      let latinColumn = riteSplit[i].match(/<p class="rite-text rite-text-latin.+?>(.*?)<\/p>/)[1];
-      let transColumn = riteSplit[i].match(/<p class="rite-text rite-text-translation.+?>(.*?)<\/p>/)[1];
-      let latinColumnLines = latinColumn.split('<br>');
-      let transColumnLines = transColumn.split('<br>');
-      let para = `<div class="rite-text-container ${style}"><p class="rite-text">`;
-      for (let j = 0; j < latinColumnLines.length; j++) {
-        para += latinColumnLines[j];
-        if (transColumnLines[j]) {
-          para += `<br><span class="rite-text-translation">${transColumnLines[j]}</span>`;
-        }
-        if (j != latinColumnLines.length - 1) {
-          para += '<br>';
-        }
-      }
-      para += '</p></div>';
-      riteRet.push(para);
-    }
-  }
-  return riteRet.join('');
+function showOutdatedBanner() {
+  makeBanner(
+    store,
+    'outdated-liturgical-content-banner',
+    text['outdated-content-banner-message'],
+    [
+      {id: 'outdated-liturgical-content-banner-yes', content: text['outdated-content-banner-go'], action: async () => { await store.returnToCurrent(); }, role: 'primary'},
+      {id: 'outdated-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => { store.setNavigationType('hard'); }, role: 'secondary'}
+    ]
+  );
 }
+
+// In soft navigation, a rite that stops being sayable while it is shown gets the same banner as one that already was
+let previous = null;
+effect(() => {
+  let path = store.displayPath.value;
+  let sayable = canSay(store.contentParams.value, store.now.value);
+  let becameOutdated = previous != null && previous.path == path && previous.sayable && !sayable;
+  previous = {path: path, sayable: sayable};
+  if (becameOutdated && store.navigationType.value == 'soft') {
+    showOutdatedBanner();
+  }
+});

@@ -1,5 +1,5 @@
 #kalendar-title {
-	font-family: 'times';
+	font-family: "Old Standard TT", times;
 	text-align: center;
 	color: var(--rubric);
 	font-size: 30px;
@@ -10,7 +10,7 @@
 }
 
 .month-name-title {
-	font-family: 'times';
+	font-family: "Old Standard TT", times;
 	color: var(--rubric);
 	font-weight: normal;
 	font-size: 20px;
@@ -21,7 +21,7 @@
 }
 
 .kalendar-table {
-	font-family: 'times';
+	font-family: "Old Standard TT", times;
 	border-spacing: 0;
 	border-collapse: collapse;
 	border-top: 1px solid var(--rubric);

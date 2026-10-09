@@ -1,0 +1,85 @@
+/* Options panel and its gear button */
+/* Fixed size to fit the second bar's height, so the click area doesn't depend on the icon's size */
+#options-gear-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#options-panel {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	padding: 21px 21px 7px 21px;
+	color: var(--panel-text-color);
+	font-family: "Old Standard TT", times;
+}
+
+/* Same text styling and spacing as the ordo panel: the panel's gap alone spaces its text */
+#options-panel h2, #options-panel h3 {
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+/* A rule under the panel's title separates it from the contents */
+#options-panel h2 {
+	padding-bottom: 7px;
+}
+
+/* Each section heading is set apart by the same extra space */
+#options-panel h3 {
+	margin-top: 14px;
+}
+
+/* Wrappers around a section's heading and options, so each option row takes the panel's gap */
+.options-panel-section {
+	display: contents;
+}
+
+.option-disabled {
+	color: var(--panel-text-color-muted);
+}
+
+#coincidences-list-container {
+	flex-grow: 0;
+	flex-basis: 50%;
+	height: 100%;
+}
+
+.coincidences-label {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-style: italic;
+	color: var(--rubric);
+}
+
+.coincidence-entry {
+	margin-left: 5px;
+	cursor: not-allowed;
+	font-size: 16px;
+}
+
+.non-dicitur {
+	color: var(--panel-text-color-muted);
+	font-size: 14px;
+	font-style: italic;
+}
+
+.permitted-entry {
+	cursor: pointer;
+}
+
+/* An option followed on the same line by a slider that fills the rest of it */
+.options-panel-option-with-range {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.options-panel-option-with-range input[type="range"] {
+	flex: 1;
+	min-width: 0;
+	margin-left: 12px;
+}

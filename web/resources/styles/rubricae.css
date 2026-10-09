@@ -2,31 +2,6 @@
 	margin-bottom: 20px;
 }
 
-h1 {
-	color: var(--rubric);
-	font-size: 30px !important;
-	letter-spacing: .05em;
-	font-weight: normal;
-	font-variant: small-caps;
-}
-
-h3 {
-	text-align: center !important;
-	color: var(--rubric);
-	font-size: 20px !important;
-	font-weight: normal;
-	margin-top: 6px;
-	margin-bottom: 0;
-}
-
-p {
-	margin-top: 6px;
-	margin-bottom: 0;
-	font-size: 18px;
-	text-align: justify;
-	hyphens: auto;
-}
-
 ol {
 	margin-top: 6px;
 	margin-bottom: 0;
@@ -37,14 +12,6 @@ ul {
 	list-style-type: none;
 	margin-left: 0;
 	padding-left: 0;
-}
-
-h4 {
-	text-align: center;
-	font-weight: normal;
-	font-size: 20px;
-	margin-top: 6px;
-	margin-bottom: 0;
 }
 
 table {
