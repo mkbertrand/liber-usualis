@@ -97,7 +97,7 @@ function bindHourLinks(store) {
     let date = riteLinksDate(params, store.navigationType.value, store.now.value).add({days: 1});
     nextMatins.href = officeHourPath(params, date, 'matutinum-laudes');
     nextMatins.title = date.toString();
-    setShown(nextMatins, canSay({...params, date: date, occasion: 'matutinum-laudes'}, store.now.value));
+    setShown(nextMatins, canSay({...params, date: date, occasion: 'matutinum-laudes'}, store.now.value) && store.navigationType.value == 'soft');
   });
 }
 

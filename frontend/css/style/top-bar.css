@@ -144,8 +144,13 @@
   background-color: var(--button-color-secondary-hover);
 }
 
-.locale-menu-option[aria-current="true"] {
-  font-weight: bold;
+/* Only the current locale shows its caret. Scoped to the option so it outranks the shared .inline-icon display. */
+.locale-menu-option .locale-menu-current-icon {
+  display: none;
+}
+
+.locale-menu-option[aria-current="true"] .locale-menu-current-icon {
+  display: inline-block;
 }
 
 /* Site-wide dark mode toggle. Lives in the top bar alongside the locale

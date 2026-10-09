@@ -7,7 +7,7 @@
   </button>
   <div id="locale-menu" hidden>
     % for loc in sorted(version_management.DEFINED_LOCALES):
-    <button class="locale-menu-option" type="button" lang="{{loc}}" data-locale="{{loc}}"{{!' aria-current="true"' if loc == locale else ''}}>{{LOCALE_NAMES.get(loc, loc.upper())}}</button>
+    <button class="locale-menu-option" type="button" lang="{{loc}}" data-locale="{{loc}}"{{!' aria-current="true"' if loc == locale else ''}}><svg class="icon small-icon inline-icon locale-menu-current-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg> {{LOCALE_NAMES.get(loc, loc.upper())}}</button>
     % end
   </div>
 </div>
