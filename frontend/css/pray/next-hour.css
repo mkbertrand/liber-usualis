@@ -15,7 +15,7 @@
 	justify-content: space-between;
 	padding: 14px 20px;
 	border: 1px solid var(--content-border);
-	border-radius: 3px;
+	border-radius: var(--component-border-radius);
 	background-color: transparent;
   font-family: "Arsenal", sans-serif;
 	color: var(--content-text-color);
@@ -28,14 +28,8 @@
 }
 
 #next-hour-text {
-	font-size: 20px;
+  font-size: 16px;
 	margin-top: 2px;
-}
-
-#next-hour-button-icon {
-	flex-shrink: 0;
-	height: 20px;
-	width: 20px;
 }
 
 .next-hour-button-forbidden {

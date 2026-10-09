@@ -5,7 +5,7 @@ import { effect, computed, untracked, createModel } from '@preact/signals-core';
 import { makePath, RITE_TITLES, officeHourPath } from './routing.js';
 import { canSay, riteLinksDate } from './pray-store.js';
 import { stopChantPlayback } from './gabc-chant.js';
-import { setShown, trapFocus, closeOnOutsideClick, positionUnderRightAligned, labelFor } from './dom-bindings.js';
+import { setShown, trapFocus, closeOnOutsideClick, positionUnderLeftAligned, labelFor } from './dom-bindings.js';
 import { OrdoModel, ordoSummary, ordoRitePath } from './pray-ordo.js';
 
 // A panel shown over an overlay. Wrappers marked data-trap-focus (desktop only) trap focus and lock page scroll.
@@ -34,7 +34,7 @@ function bindRitesMenu(store, display) {
     let open = display.ritesMenuOpen.value;
     setShown(menu, open);
     if (!open) return;
-    let reposition = () => positionUnderRightAligned(menu, toggleButton);
+    let reposition = () => positionUnderLeftAligned(menu, toggleButton);
     reposition();
     window.addEventListener('resize', reposition);
     hoursGroup.addEventListener('scroll', reposition);
@@ -355,8 +355,5 @@ export function makeBanner(store, bannerID, bannerContent, answers) {
     answerContainer.appendChild(bannerButtonClone);
     bannerButton.addEventListener('click', async () => { document.getElementById(bannerID).remove(); await answer.action(); });
   }
-  let bannerCloseButton = bannerClone.querySelector('.system-banner-close');
-  bannerCloseButton.addEventListener('click', () => { document.getElementById(bannerID).remove(); });
-
   bannerContainer.appendChild(bannerClone);
 }

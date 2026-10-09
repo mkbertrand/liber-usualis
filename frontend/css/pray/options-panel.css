@@ -1,9 +1,9 @@
 /* Options panel and its gear button */
-/* Padding sized so the button fits the second bar's height */
+/* Fixed size to fit the second bar's height, so the click area doesn't depend on the icon's size */
 #options-gear-button {
 	display: inline-flex;
 	align-items: center;
-	padding: 9px;
+	justify-content: center;
 }
 
 #options-panel-background {
@@ -29,7 +29,7 @@
 	min-height: 50vh;
 	max-width: 100%;
 	background-color: var(--panel-background-color);
-	border-radius: var(--border-radius);
+	border-radius: var(--component-border-radius);
   box-shadow: var(--panel-shadow);
 }
 

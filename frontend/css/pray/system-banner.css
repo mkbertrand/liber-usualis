@@ -17,35 +17,30 @@
 
 .system-banner {
   background-color: color-mix(in srgb, var(--rubric) 12%, var(--panel-background-color));
-  height: 60px;
-  /* Same layout as the second bar: equal outer columns keep the content centered regardless of the close button's width */
+  /* A minimum, so a banner whose text wraps on a narrow screen grows instead of overflowing */
+  min-height: 60px;
   padding: 9px;
-  display: grid;
-  grid-template-columns: 1fr minmax(0, max-content) 1fr;
-  gap: 20px;
-  /* Items stretch to the full row height, so buttons fill it; the text centers itself within that height */
-  align-items: stretch;
+  /* Message on the left, answers on the right, all centered vertically */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px 20px;
   border: 2px solid var(--border-color);
   border-radius: var(--component-border-radius);
 }
 
-.system-banner-content-container, .system-banner-answer-container {
-  display: flex;
-  gap: 20px;
-}
-
-.system-banner-content-container {
-  grid-column: 2;
-}
-
 .system-banner-content {
   margin: 0;
-  display: flex;
-  align-items: center;
   font-family: "Arsenal", sans-serif;
+  color: var(--panel-text-color);
+  font-size: 16px;
 }
 
-.system-banner-close {
-  grid-column: 3;
-  justify-self: end;
+.system-banner-answer-container {
+  /* Kept at the right, including when it wraps onto its own row */
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }

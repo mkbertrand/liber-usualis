@@ -1,20 +1,46 @@
 .ui-button {
   border: none;
-	padding: 12px;
+	padding: 12px 24px;
 	border-radius: var(--component-border-radius);
-	background-color: transparent;
 	color: var(--panel-text-color);
+  font-family: "Arsenal", sans-serif;
+}
+
+.ui-button.icon-button {
+  padding: 12px;
 }
 
 .ui-button:hover {
   cursor: pointer;
+}
+
+.ui-button.ui-button-primary {
 	background-color: var(--button-color-hover);
 }
 
-/* Inline Phosphor icons */
+.ui-button.ui-button-secondary {
+	background-color: transparent;
+  font-size: 16px;
+}
+
+.ui-button.ui-button-secondary:hover {
+}
+
+/* Inline Phosphor icons: light weight at 24px, whose 1.125px strokes match the stems of 16px Arsenal */
 .icon {
 	display: block;
 	width: 24px;
 	height: 24px;
 	flex-shrink: 0;
+}
+
+.small-icon {
+	width: 16px;
+	height: 16px;
+}
+
+/* An icon set in a line of text, centered on the text rather than laid out beside it */
+.inline-icon {
+	display: inline-block;
+	vertical-align: middle;
 }

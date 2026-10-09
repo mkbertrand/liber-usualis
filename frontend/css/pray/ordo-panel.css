@@ -21,7 +21,7 @@
 	min-height: 50vh;
 	max-width: 100%;
 	background-color: var(--panel-background-color);
-	border-radius: var(--border-radius);
+	border-radius: var(--component-border-radius);
   box-shadow: var(--panel-shadow);
 }
 
@@ -54,11 +54,6 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.ordo-date-icon {
-	width: 16px;
-	height: 16px;
 }
 
 /* The panel's gap alone spaces its text, so default margins are removed */

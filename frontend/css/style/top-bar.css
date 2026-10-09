@@ -46,10 +46,6 @@
 }
 
 #pray-navigation-link, #pray-navigation-link:visited {
-  background-color: var(--button-color);
-  border-radius: var(--component-border-radius);
-  height: 100%;
-  aspect-ratio: 5 / 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +53,7 @@
   text-decoration: none;
   font-family: "Arsenal", sans-serif;
   font-size: 24px;
-  color: var(--button-text-color);
+  color: var(--panel-text-color);
 }
 
 .navigation-link:hover {
@@ -74,8 +70,8 @@
   border: none;
   background-color: transparent;
   font-family: "Arsenal", sans-serif;
-  font-size: 18px;
-  color: var(--button-text-color);
+  font-size: 16px;
+  color: var(--panel-text-color);
 }
 
 .top-bar-button-container {
@@ -129,9 +125,11 @@
 
 /* Site-wide dark mode toggle. Lives in the top bar alongside the locale
    selector. */
+/* Fixed size, so the click area doesn't depend on the icon's size */
 #dark-mode-toggle, #locale-selector-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Shows the icon for switching to the other theme. */
