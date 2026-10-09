@@ -59,6 +59,18 @@
   font-size: 24px;
 }
 
+/* On the pray page the call to pray has done its job, so it steps back to a quiet "you are here" state, keeping its
+   size and position */
+#pray-navigation-link[aria-current="page"] {
+  background-color: transparent;
+  color: var(--panel-text-color);
+  box-shadow: none;
+}
+
+#pray-navigation-link[aria-current="page"]:hover {
+  background-color: var(--button-color-secondary-hover);
+}
+
 .navigation-link:hover {
   cursor: pointer;
 }
@@ -82,6 +94,16 @@
   align-items: center;
   justify-content: center;
 }
+
+#donate-button {
+  background-color: #1a8917;
+	box-shadow: 0 2px 6px color-mix(in srgb, #1a8917 35%, transparent);
+}
+
+#donate-button:hover {
+  background-color: #1a9917;
+}
+
 /* Language picker: an icon button like the dark mode toggle, opening a menu of locales */
 #locale-selector {
   position: relative;
@@ -119,7 +141,7 @@
 }
 
 .locale-menu-option:hover {
-  background-color: var(--button-color-hover);
+  background-color: var(--button-color-secondary-hover);
 }
 
 .locale-menu-option[aria-current="true"] {

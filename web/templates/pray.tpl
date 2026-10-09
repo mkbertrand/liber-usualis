@@ -82,7 +82,7 @@
       <div id="second-bar">
         <div id="second-bar-left-aligned-container" class="second-bar-container">
           % # Shown by the page's script while the user is pinned (hard navigation) to a rite other than the current one
-          <button id="return-to-current-button" class="navigation-link" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
+          <button id="return-to-current-button" class="navigation-link ui-button ui-button-secondary" type="button" data-title-template="{{text['return-to-current-tooltip']}}" style="display: none">{{text['return-to-current-button']}}</button>
         </div>
         <div id="second-bar-center-aligned-container" class="second-bar-container">
           % hour_select = '/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''
@@ -180,7 +180,7 @@
           <div id="ordo-rite-links">
             % for item in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
             % # Choosing a rite from the ordo is a deliberate choice of day, so it pins the page (hard navigation)
-            <a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link="hard" data-occasion="{{item[0]}}">{{!item[1]}}</a>
+            <p><a class="ordo-rite-link" href="/{{locale}}/officium/{{pdate}}{{'/officium-parvum-bmv' if select == 'officium-parvum-bmv' else ''}}/{{item[0]}}{{'' if len(votives) == 0 else f'?v={votives}'}}" data-rite-link="hard" data-occasion="{{item[0]}}">{{!item[1]}}</a></p>
             % end
           </div>
         </div>

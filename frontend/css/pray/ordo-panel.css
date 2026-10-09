@@ -84,3 +84,7 @@
 .ordo-section-label {
 	font-style: italic;
 }
+
+.ordo-rite-link, .ordo-rite-link:visited {
+	color: var(--link-color);
+}
