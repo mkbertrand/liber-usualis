@@ -1,30 +1,3 @@
-#ordo-panel-background {
-	/* Placed explicitly: covers the page below the header, wherever the element sits in the markup */
-	position: fixed;
-	top: calc(var(--top-bar-title-height) + var(--second-bar-height));
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: var(--overlay-background-color);
-	margin: 0;
-	padding: 0;
-	/* Above the second bar and banners (1), below the top bar and rites menu (3) */
-	z-index: 2;
-}
-
-#ordo-panel-wrapper {
-	position: fixed;
-	left: 50vw;
-	top: 50vh;
-	transform: translate(-50%, -50%);
-	width: 30em;
-	min-height: 50vh;
-	max-width: 100%;
-	background-color: var(--panel-background-color);
-	border-radius: var(--component-border-radius);
-  box-shadow: var(--panel-shadow);
-}
-
 #ordo-panel {
 	display: flex;
 	flex-direction: column;
@@ -87,12 +60,4 @@
 
 .ordo-rite-link, .ordo-rite-link:visited {
 	color: var(--link-color);
-}
-
-/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
-@media (max-width: 1139px) {
-  #ordo-panel-background {
-    top: var(--top-bar-title-height);
-    bottom: var(--second-bar-height);
-  }
 }

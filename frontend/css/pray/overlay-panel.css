@@ -1,0 +1,53 @@
+/* The options and ordo panels: one set of rules, so the two always look and behave the same */
+#options-panel-background, #ordo-panel-background {
+	/* Placed explicitly: covers the page below the header, wherever the element sits in the markup */
+	position: fixed;
+	top: calc(var(--top-bar-title-height) + var(--second-bar-height));
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--overlay-background-color);
+	margin: 0;
+	padding: 0;
+	/* Above the second bar and banners (1), below the top bar and rites menu (3) */
+	z-index: 2;
+}
+
+/* A dialog centered on the screen, scrolling inside if it is taller than the space below the header */
+#options-panel-wrapper, #ordo-panel-wrapper {
+	position: fixed;
+	left: 50vw;
+	top: calc((100vh + var(--top-bar-title-height) + var(--second-bar-height)) / 2);
+	transform: translate(-50%, -50%);
+	width: 30em;
+	min-height: 65vh;
+	max-width: 100%;
+	max-height: calc(100vh - var(--top-bar-title-height) - var(--second-bar-height) - 40px);
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	box-sizing: border-box;
+	background-color: var(--panel-background-color);
+	border-radius: var(--component-border-radius);
+	box-shadow: var(--panel-shadow);
+}
+
+/* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom, and the
+   panel is a sheet filling the space between the bars, so both bars (and the buttons that close it) stay visible */
+@media (max-width: 1139px) {
+	#options-panel-background, #ordo-panel-background {
+		top: var(--top-bar-title-height);
+		bottom: var(--second-bar-height);
+	}
+
+	#options-panel-wrapper, #ordo-panel-wrapper {
+		position: absolute;
+		inset: 0;
+		transform: none;
+		width: auto;
+		max-width: none;
+		min-height: 0;
+		max-height: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
