@@ -252,6 +252,19 @@ function bindOptionsPanel(store, display) {
 // Links marked data-rite-link navigate within the page instead of reloading it, keeping the current navigation type
 // unless the link names one (data-rite-link="hard" keeps the chosen rite on reload; "soft" lets a reload move on to
 // a more relevant rite).
+// Pointing at (or focusing) a rite link or the next-hour button starts fetching its rite, so it's ready on click
+function bindRitePrefetch(store) {
+  let prefetch = (event) => {
+    let link = event.target.closest?.('a[data-rite-link], #next-hour-button');
+    if (link?.href) {
+      let url = new URL(link.href);
+      store.prefetchRite(url.pathname + url.search);
+    }
+  };
+  document.addEventListener('pointerover', prefetch);
+  document.addEventListener('focusin', prefetch);
+}
+
 function bindRiteLinks(store) {
   document.addEventListener('click', (event) => {
     let link = event.target.closest('a[data-rite-link]');
@@ -341,6 +354,7 @@ export function bindPrayPage(store, display) {
   bindHourLinks(store);
   bindOptionsPanel(store, display);
   bindRiteLinks(store);
+  bindRitePrefetch(store);
   bindOrdo(store, display);
   bindBanners(store);
   bindReturnToCurrent(store);

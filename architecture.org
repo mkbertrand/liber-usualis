@@ -347,6 +347,10 @@
      signals. Its actions (=navigateRite=, =toggleVotive=, =setDesired=,
      =togglePriest=, =markHourAsDone=, =redirect=, =handlePopstate=) perform the
      history, cookie, storage, and =/api/rite= side effects.
+     =/api/rite= responses are kept by date and occasion for the current context
+     (locale, select, votives, and the =opt= cookie) and discarded when it changes;
+     the server-rendered rite is the first entry, and pointing at a rite link
+     prefetches its rite through =prefetchRite()=.
      =now= changes only through =updateNow()=. In soft navigation =pray.js=
      schedules it for the next moment what may be said can change (midnight and
      14:00, from =nextCanSayChange()=), and shows the outdated-content banner

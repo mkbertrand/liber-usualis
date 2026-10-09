@@ -41,8 +41,48 @@ export function makePrayStore() {
   const ritePath = signal(displayPath.value);
   const riteParams = computed(() => contentParameters(ritePath.value));
 
+  // /api/rite responses for one context, by date and occasion. The context is everything else that changes a
+  // response: locale, select, votives, and the opt cookie (read by the server, not sent in the query). Any change of
+  // context discards them all. Holds the pending promise, so a hover's prefetch and the click share one request.
+  let riteCache = new Map();
+  let riteCacheContext = null;
+
+  function riteContext(params) {
+    return [params.locale, params.select, params.votives.join('+'), opt.value.join('+')].join('|');
+  }
+
+  function riteKey(params) {
+    return `${params.date}|${params.occasion}+${params.prayerType}`;
+  }
+
+  function cachedRite(path) {
+    let params = contentParameters(path);
+    let context = riteContext(params);
+    if (context != riteCacheContext) {
+      riteCache = new Map();
+      riteCacheContext = context;
+    }
+    let cache = riteCache;
+    let key = riteKey(params);
+    if (!cache.has(key)) {
+      // A failed request isn't kept, so the rite can be fetched again
+      cache.set(key, fetchRite(path).catch(error => {
+        cache.delete(key);
+        throw error;
+      }));
+    }
+    return cache.get(key);
+  }
+
+  // The rite rendered into the page by the server is the first entry
+  if (isRitePath(displayPath.value)) {
+    let params = contentParameters(displayPath.value);
+    riteCacheContext = riteContext(params);
+    riteCache.set(riteKey(params), Promise.resolve(rite.value));
+  }
+
   async function loadRite(path) {
-    let html = await fetchRite(path);
+    let html = await cachedRite(path);
     // A later navigation has superseded this one
     if (displayPath.value != path) return;
     batch(() => {
@@ -109,6 +149,13 @@ export function makePrayStore() {
     // Null until a rite is on the page (a bare /pray visit before its first rite loads)
     nextHourButton: computed(() => isRitePath(ritePath.value) ? nextHourTarget(riteParams.value, lastCursusHour.value, now.value) : null),
     navigateRite: navigateRite,
+    // Starts fetching a rite the reader is about to choose. A rite of another context is left alone, so merely
+    // pointing at it doesn't discard the current context's rites.
+    prefetchRite: (path) => {
+      if (isRitePath(path) && riteContext(contentParameters(path)) == riteCacheContext) {
+        cachedRite(path);
+      }
+    },
     bestHour: bestHour,
     // Leaves a pinned rite for the most relevant one; a new history entry, so Back returns to where the user was
     returnToCurrent: async () => {
