@@ -66,7 +66,6 @@
 		<link rel="icon" type="image/x-icon" href="/resources/agnus-dei-icon.png">
 		<link rel="apple-touch-icon" href="/resources/agnus-dei-apple-touch-icon.png">
 		<link rel="preload" href="/resources/fonts/OldStandardTT-Regular.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/resources/fonts/Arsenal-Regular.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/style.css')}}>
 		<link rel="stylesheet" type="text/css" href={{version_management.get_versioned_resource('/dist/pray.css')}}>
 		% if mobile:

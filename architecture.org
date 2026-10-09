@@ -341,6 +341,9 @@
      =displayPath= (path and query string, moved as soon as a navigation starts),
      =ritePath= (the rite whose text is on the page, moved together with =rite=
      once it loads; the next-hour button and marking an hour prayed follow it),
+     =riteNavigationType= (the navigation type of that rite, moved with it, or at
+     once by =setNavigationType()=; the next-hour button is always forbidden in
+     hard navigation),
      =rite=, the =opt= cookie tags,
      =navigationType=, the last completed cursus hour, and =now=. Derived values
      (=contentParams=, and =nextHourButton= built by the pure =nextHourTarget()=) are =computed=

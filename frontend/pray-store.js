@@ -40,6 +40,9 @@ export function makePrayStore() {
   // this moves with the text itself, for what belongs to the rite shown (the next-hour button, marking it prayed).
   const ritePath = signal(displayPath.value);
   const riteParams = computed(() => contentParameters(ritePath.value));
+  // The navigation type of the rite on the page: moves with ritePath when a navigation finishes loading, or at once
+  // when the type is changed without navigating
+  const riteNavigationType = signal(navigationType.value);
 
   // /api/rite responses for one context, by date and occasion. The context is everything else that changes a
   // response: locale, select, votives, and the opt cookie (read by the server, not sent in the query). Any change of
@@ -88,6 +91,7 @@ export function makePrayStore() {
     batch(() => {
       rite.value = html;
       ritePath.value = path;
+      riteNavigationType.value = navigationType.value;
     });
     document.title = `${RITE_TITLES[contentParameters(path).occasion]} | ${dayTitle(html)} | Liber Usualis`;
     window.scrollTo(0, 0);
@@ -147,7 +151,7 @@ export function makePrayStore() {
     },
     contentParams: contentParams,
     // Null until a rite is on the page (a bare /pray visit before its first rite loads)
-    nextHourButton: computed(() => isRitePath(ritePath.value) ? nextHourTarget(riteParams.value, lastCursusHour.value, now.value) : null),
+    nextHourButton: computed(() => isRitePath(ritePath.value) ? nextHourTarget(riteParams.value, lastCursusHour.value, now.value, riteNavigationType.value) : null),
     navigateRite: navigateRite,
     // Starts fetching a rite the reader is about to choose. A rite of another context is left alone, so merely
     // pointing at it doesn't discard the current context's rites.
@@ -163,7 +167,10 @@ export function makePrayStore() {
     },
     // Changes the navigation type without navigating, recording it in the current history entry so it survives a reload
     setNavigationType: (newNavigationType) => {
-      navigationType.value = newNavigationType;
+      batch(() => {
+        navigationType.value = newNavigationType;
+        riteNavigationType.value = newNavigationType;
+      });
       history.replaceState({...history.state, navigationType: newNavigationType}, '');
     },
     // Redirects a bare /pray visit, or a reload of a page reached by soft navigation, to the most relevant rite
@@ -250,14 +257,15 @@ export function canIncrementHour(current, now) {
 }
 
 // What the next-hour button offers: the hour after the current one when on a cursus hour, otherwise the hour
-// after the last one prayed (today's Matins and Lauds counts as prayed when none has been recorded yet).
-export function nextHourTarget(current, lastCursusHour, now) {
+// after the last one prayed (today's Matins and Lauds counts as prayed when none has been recorded yet). Hard navigation
+// pins the reader to the rite they chose, so the next hour is never offered there.
+export function nextHourTarget(current, lastCursusHour, now, navigationType) {
   let reference = isCursus(current) ? current : lastCursusHour ?? {...current, prayerType: 'officium', date: now.toPlainDate(), select: 'primarium', occasion: 'matutinum-laudes', votives: []};
   let target = nextHour(reference);
   return {
     // Stored hours carry no locale, and ones recorded before prayerType was stored lack it; the cursus is always the Office
     path: makePath({...target, locale: current.locale, prayerType: 'officium'}),
     occasion: target.occasion,
-    allowed: canSay(target, now)
+    allowed: navigationType != 'hard' && canSay(target, now)
   };
 }

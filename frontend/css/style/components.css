@@ -35,7 +35,7 @@
 	background-color: var(--button-color-secondary-hover);
 }
 
-/* Inline Phosphor icons: light weight at 24px, whose 1.125px strokes match the stems of 16px Arsenal */
+/* Inline Phosphor icons: light weight at 24px */
 .icon {
 	display: block;
 	width: 24px;
