@@ -16,7 +16,7 @@
 }
 
 .system-banner {
-  background-color: color-mix(in srgb, var(--rubric) 12%, var(--panel-background-color));
+  background-color: var(--panel-background-color);
   /* A minimum, so a banner whose text wraps on a narrow screen grows instead of overflowing */
   min-height: 60px;
   padding: 9px;

@@ -15,9 +15,10 @@
 
 	--top-bar-title-height: 85px;
   --component-border-radius: 5px;
-	--button-color: #eee;
-	--button-color-hover: #e0b0b0;
-	--button-color-toggled: #e6b0b0;
+	--button-color-primary: #25498a;
+	--button-text-color-primary: #efebec;
+	--button-color-primary-hover: #25499a;
+  --button-color-secondary-hover: #eee;
 
 	/* Variables used for the actual page content. */
 	--content-background-color: #ffffff;
@@ -32,9 +33,9 @@
 [data-theme="dark"] {
 	--panel-background-color: #202126;
 	--border-color: #3a3b44;
-	--button-color: #26272c;
-	--button-color-hover: #313239;
-	--button-color-toggled: #393a42;
+	--button-color-primary: #26272c;
+	--button-color-primary-hover: #313239;
+	--button-color-secondary-hover: #313239;
 	--site-background-color: #1a1a1e;
 	--panel-text-color: #efebec;
 	--panel-text-color-muted: #85816f;

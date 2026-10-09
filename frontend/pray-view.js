@@ -352,6 +352,7 @@ export function makeBanner(store, bannerID, bannerContent, answers) {
     let bannerButton = bannerButtonClone.querySelector('button');
     bannerButton.textContent = answer.content;
     bannerButton.id = answer.id;
+    bannerButton.classList.add(answer.role == 'primary' ? 'ui-button-primary' : 'ui-button-secondary');
     answerContainer.appendChild(bannerButtonClone);
     bannerButton.addEventListener('click', async () => { document.getElementById(bannerID).remove(); await answer.action(); });
   }

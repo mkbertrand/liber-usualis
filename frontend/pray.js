@@ -30,8 +30,8 @@ if (store.navigationType.value != 'hard') {
       'suboptimal-liturgical-content-banner',
       text['suboptimal-content-banner-message'],
       [
-        {id: 'suboptimal-liturgical-content-banner-yes', content: text['suboptimal-content-banner-go'], action: async () => { await store.returnToCurrent(); }},
-        {id: 'suboptimal-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => {}}
+        {id: 'suboptimal-liturgical-content-banner-yes', content: text['suboptimal-content-banner-go'], action: async () => { await store.returnToCurrent(); }, role: 'primary'},
+        {id: 'suboptimal-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => {}, role: 'secondary'}
       ]
     );
   } else if (!canSay(store.contentParams.value, store.now.value)) {
@@ -40,8 +40,8 @@ if (store.navigationType.value != 'hard') {
       'outdated-liturgical-content-banner',
       text['outdated-content-banner-message'],
       [
-        {id: 'outdated-liturgical-content-banner-yes', content: text['outdated-content-banner-go'], action: async () => { await store.returnToCurrent(); }},
-        {id: 'outdated-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => { store.setNavigationType('hard'); }}
+        {id: 'outdated-liturgical-content-banner-yes', content: text['outdated-content-banner-go'], action: async () => { await store.returnToCurrent(); }, role: 'primary'},
+        {id: 'outdated-liturgical-content-banner-no', content: text['banner-remain-here'], action: () => { store.setNavigationType('hard'); }, role: 'secondary'}
       ]
     );
   }

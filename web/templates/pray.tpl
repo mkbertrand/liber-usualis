@@ -121,7 +121,7 @@
         </div>
       </template>
       <template id="system-banner-answer">
-        <button class="system-banner-answer ui-button ui-button-secondary"></button>
+        <button class="system-banner-answer ui-button"></button>
       </template>
     </div>
     % script_text_keys = ['banner-remain-here', 'suboptimal-content-banner-message', 'suboptimal-content-banner-go', 'outdated-content-banner-message', 'outdated-content-banner-go']

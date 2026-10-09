@@ -30,12 +30,12 @@
   /* Equal outer columns keep the hours centered in the bar regardless of the controls' width */
   display: grid;
   grid-template-columns: 1fr minmax(0, max-content) 1fr;
-  gap: 20px;
+  gap: var(--menu-element-gap);
 }
 
 #second-bar-left-aligned-container, #second-bar-center-aligned-container, #second-bar-right-aligned-container {
   display: flex;
-  gap: 20px;
+  gap: var(--menu-element-gap);
 }
 
 #second-bar-left-aligned-container {

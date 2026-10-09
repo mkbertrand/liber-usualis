@@ -15,7 +15,14 @@
 }
 
 .ui-button.ui-button-primary {
-	background-color: var(--button-color-hover);
+	background-color: var(--button-color-primary);
+  color: var(--button-text-color-primary);
+	/* A soft shadow in the button's own color, so it follows the theme */
+	box-shadow: 0 2px 6px color-mix(in srgb, var(--button-color-primary) 35%, transparent);
+}
+
+.ui-button.ui-button-primary:hover {
+	background-color: var(--button-color-primary-hover);
 }
 
 .ui-button.ui-button-secondary {
@@ -24,6 +31,7 @@
 }
 
 .ui-button.ui-button-secondary:hover {
+	background-color: var(--button-color-secondary-hover);
 }
 
 /* Inline Phosphor icons: light weight at 24px, whose 1.125px strokes match the stems of 16px Arsenal */

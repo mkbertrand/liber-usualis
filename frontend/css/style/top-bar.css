@@ -22,9 +22,13 @@
   float: right;
 }
 
+:root {
+  --menu-element-gap: 15px;
+}
+
 #top-bar-left-aligned-container, #top-bar-right-aligned-container {
   display: flex;
-  gap: 20px;
+  gap: var(--menu-element-gap);
 	height: 100%;
 }
 
@@ -53,7 +57,6 @@
   text-decoration: none;
   font-family: "Arsenal", sans-serif;
   font-size: 24px;
-  color: var(--panel-text-color);
 }
 
 .navigation-link:hover {
