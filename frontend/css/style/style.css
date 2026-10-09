@@ -74,7 +74,7 @@ body {
 
 #content-container {
 	position: relative;
-	min-height: 50vh;
+	min-height: 100vh;
 	max-width: 140em;
 	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
 	padding: 10px 40px;
