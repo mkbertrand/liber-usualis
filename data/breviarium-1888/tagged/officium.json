@@ -1,13 +1,20 @@
 [
   {
-    "tags":[
-      ["officium","matutinum-laudes"],
-      ["officium","matutinum-laudes","sine-ritibus"]
-    ],
+    "tags":["officium","matutinum-laudes"],
     "datum":[
       ["aperi-domine"],
       ["ritus","matutinum","officium-parvum-bmv","occurrens"],
       ["ritus","laudes","officium-parvum-bmv","occurrens","sine-dismissione"],
+      ["ritus","matutinum"],
+      ["ritus","laudes"],
+      ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
+      ["sacrosanctae"]
+    ]
+  },
+  {
+    "tags":["officium","matutinum-laudes","sine-ritibus"],
+    "datum":[
+      ["aperi-domine"],
       ["ritus","matutinum"],
       ["ritus","laudes"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
@@ -70,6 +77,13 @@
       ["aperi-domine"],
       ["ritus","prima","sine-dismissione"],
       ["ritus","prima","officium-parvum-bmv","occurrens","sine-dismissione"],
+      ["ritus","officium-capituli"],
+      ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
+      ["sacrosanctae"]
+    ],
+    "sine-ritibus":[
+      ["aperi-domine"],
+      ["ritus","prima","sine-dismissione"],
       ["ritus","officium-capituli"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
       ["sacrosanctae"]
@@ -171,6 +185,11 @@
       ["ritus","completorium"],
       ["ritus","completorium","officium-parvum-bmv","occurrens"],
       ["sacrosanctae"]
+    ],
+    "sine-ritibus":[
+      ["aperi-domine"],
+      ["ritus","completorium"],
+      ["sacrosanctae"]
     ]
   },
   {
@@ -185,16 +204,6 @@
   },
   {
     "tags":["ritus","omissum"],
-    "datum":""
-  },
-  {
-    "tags":[
-      ["ritus","sine-ritibus","officium-parvum-bmv"],
-      ["ritus","sine-ritibus","officium-defunctorum"],
-      ["ritus","sine-ritibus","psalmi-graduales"],
-      ["ritus","sine-ritibus","psalmi-poenitentiales"],
-      ["ritus","sine-ritibus","litaniae-sanctorum"]
-    ],
     "datum":""
   },
   {

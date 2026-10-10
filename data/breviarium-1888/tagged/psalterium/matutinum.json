@@ -15,6 +15,14 @@
 		"caput":"Ad Matutinum."
 	},
 	{
+		"tags":["matutinum","ritus","officium-parvum-bmv","sectio"],
+		"caput":"Officium Parvum B.M.V./Ad Matutinum."
+	},
+	{
+		"tags":["matutinum","ritus","officium-defunctorum","sectio"],
+		"caput":"Officium Defunctorum./Ad Matutinum."
+	},
+	{
 		"tags":["nocturna","nocturna-i","sectio"],
 		"caput":"Nocturnus I."
 	},
