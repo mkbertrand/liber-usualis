@@ -87,7 +87,7 @@ def localpage(preferredlocale, page):
             # local time) and soft-navigates there - see pray.tpl and its router store.
             return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=mobile,
                              date=None, prayer_type=None, occasion=None, options='', select='primarium',
-                             translation='none', votives='')
+                             translation='none', votives='', server_rendered=True)
         return template(findmytemplate(page), title=title, page=page, locales=locales, mobile=mobile)
 
 def error500tpl(error):
@@ -177,7 +177,9 @@ def pray(preferredlocale, prayer_type, date, select, occasion):
         # Shorthand for votives (for ergonomics)
         votives = request.query.get('v', '')
 
-        return template('web/templates/pray.tpl', title=title, page='pray', locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), date=date, prayer_type=prayer_type, occasion=occasion, options=options, select=select, translation=translation, votives=votives)
+        server_rendered = datamanage.is_server_rendered(datetime.strptime(date, '%Y-%m-%d').date(), datetime.now().date())
+
+        return template('web/templates/pray.tpl', title=title, page='pray', locales=locales, mobile=any(k in request.headers.get('User-Agent', '').lower() for k in ['mobile', 'android', 'iphone', 'ipad']), date=date, prayer_type=prayer_type, occasion=occasion, options=options, select=select, translation=translation, votives=votives, server_rendered=server_rendered)
 
 @get(f'/<preferredlocale:re:{'|'.join(version_management.DEFINED_LOCALES)}>/<prayer_type:re:{'|'.join(PRAYER_TYPES)}>/<date>/<occasion>')
 def pray_select(preferredlocale, prayer_type, date, occasion):

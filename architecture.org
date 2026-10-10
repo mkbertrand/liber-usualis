@@ -60,7 +60,10 @@
    =web/templates/pray.tpl= calls =datamanage.rendered_rite_request()= and
    =datamanage.rite_request()= directly to render the first rite, its day title,
    and the next-hour link server-side. Both calls hit the same memoized results as
-   =/api/rite=.
+   =/api/rite=. They are made only for dates within =datamanage.SERVER_RENDERED_RANGE=
+   (a year) of today (=datamanage.is_server_rendered()=); further dates are left for
+   the page's script to load, so crawlers that follow links without running scripts
+   cannot make the server compose an unbounded series of days.
 
 ** HTTP API: =server.py=
 
@@ -81,6 +84,10 @@
       office when omitted); the =v= query parameter carries plus-separated votive
       tags; the =opt= cookie carries option tags. The locale chooses the
       translation (=en= English, =de= German, =nl= Dutch, otherwise none).
+      A rite page more than a year from today is served without its rite, its
+      day title, or the links that lead to the next day (the next-hour button and
+      the anticipated Matins links), and is marked =noindex, nofollow=; the page's
+      script loads the rite through =/api/rite= and fills these in.
 
 *** =GET /api/rite=
 

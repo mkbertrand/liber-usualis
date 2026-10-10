@@ -23,6 +23,15 @@
 %   next_hour_occasion_name = ''
 %   day_title = ''
 %   rite_title_for_head = ''
+% elif not server_rendered:
+%   # Too far from today to compose here (see datamanage.is_server_rendered); the page's script loads the rite and
+%   # sets the title and the next-day links, which are left out so link-following crawlers go no further
+%   rite = ''
+%   pdate = datetime.strptime(date, '%Y-%m-%d').date()
+%   next_hour_href = None
+%   next_hour_occasion_name = ''
+%   day_title = ''
+%   rite_title_for_head = ''
 % else:
 %   rite = datamanage.rendered_rite_request(date, occasion + '+' + prayer_type, options, select, translation, votives)
 %   pdate = datetime.strptime(date, '%Y-%m-%d').date()
@@ -51,6 +60,9 @@
 		<title>{{text['title']}}</title>
 		% else:
 		<title>{{rite_title_for_head}} | {{day_title}} | Liber Usualis</title>
+		% end
+		% if not server_rendered:
+		<meta name="robots" content="noindex, nofollow">
 		% end
 		<script type="application/ld+json">
 		{
@@ -94,7 +106,11 @@
           <a class="hour-link navigation-link second-bar-hour-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
           % end
           % # Shown by the page's script once the next day's Matins may be said, which depends on the reader's local time
-          <a id="second-bar-next-matins-link" class="next-matins-link navigation-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
+          % if server_rendered:
+          <a id="second-bar-next-matins-link" class="next-matins-link navigation-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (antic.)</a>
+          % else:
+          <a id="second-bar-next-matins-link" class="next-matins-link navigation-link" data-rite-link style="display: none">Matutinum &amp; Laudes (antic.)</a>
+          % end
           <div class="top-bar-button-container">
             <button id="rites-menu-toggle-button" class="navigation-link">
               <span>{{text['more-rites-button']}} <svg class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,100.24l-80,80a6,6,0,0,1-8.48,0l-80-80a6,6,0,0,1,8.48-8.48L128,167.51l75.76-75.75a6,6,0,0,1,8.48,8.48Z"/></svg></span>
@@ -137,7 +153,11 @@
         % for hour in [['matutinum-laudes', 'Matutinum &amp; Laudes'], ['prima', 'Prima'], ['tertia', 'Tertia'], ['sexta', 'Sexta'], ['nona', 'Nona'], ['vesperae', 'Vesperæ'], ['completorium', 'Completorium']]:
         <a class="hour-link hour-picker-link" href="/{{locale}}/officium/{{pdate}}{{hour_select}}/{{hour[0]}}{{hour_votives}}" data-rite-link data-occasion="{{hour[0]}}">{{!hour[1]}}</a>
         % end
-        <a id="hour-picker-next-matins-link" class="next-matins-link hour-picker-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (anticipata)</a>
+        % if server_rendered:
+        <a id="hour-picker-next-matins-link" class="next-matins-link hour-picker-link" href="/{{locale}}/officium/{{pdate + timedelta(days=1)}}{{hour_select}}/matutinum-laudes{{hour_votives}}" title="{{pdate + timedelta(days=1)}}" data-rite-link style="display: none">Matutinum &amp; Laudes (antic.)</a>
+        % else:
+        <a id="hour-picker-next-matins-link" class="next-matins-link hour-picker-link" data-rite-link style="display: none">Matutinum &amp; Laudes (antic.)</a>
+        % end
       </div>
       <div id="hour-picker-rites">
         % include('web/resources/pray/rite-links.tpl', locale=locale, date=date)
@@ -146,14 +166,16 @@
     <div id="content-container-outer">
       <div id="rite-page-container">
         % # Latin pages have no translation (and hide its options), whatever display preferences were saved elsewhere
-        <main id="rite-container" data-has-translation="{{'false' if locale == 'la' else 'true'}}">
+        <main id="rite-container" data-has-translation="{{'false' if locale == 'la' else 'true'}}" data-server-rendered="{{'true' if rite else 'false'}}">
           {{!rite}}
         </main>
         <div id="next-hour-button-container">
           <a
             id="next-hour-button"
             class="ui-button ui-button-primary"
+            % if next_hour_href:
             href="{{next_hour_href}}"
+            % end
             data-forbidden-title="{{text['next-hour-forbidden-tooltip']}}"
           >
             <span>{{text['next-hour']}}: <span id="next-hour-occasion">{{!next_hour_occasion_name}}</span> <svg id="next-hour-button-icon" class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></span>

@@ -16,8 +16,11 @@ function dayTitle(rite) {
 export function makePrayStore() {
   // Always a rite path once init() has run, since a bare /pray visit is immediately redirected; bindings rely on this
   const displayPath = signal(window.location.pathname + window.location.search);
-  // Document is hydrated (after a manner of speaking) so initial value of rite should be the already-provided HTML
-  const rite = signal(document.querySelector('main').innerHTML);
+  // Document is hydrated (after a manner of speaking) so initial value of rite should be the already-provided HTML. Rites
+  // far from today are left for this script to load (datamanage.is_server_rendered()).
+  const main = document.querySelector('main');
+  const serverRendered = main.dataset.serverRendered == 'true';
+  const rite = signal(main.innerHTML);
   const opt = signal((() => {
     let optMatch = document.cookie.match(/(?:^|;\s*)opt=([^;]*)/);
     return optMatch ? decodeURIComponent(optMatch[1]).split('+').filter(t => t) : [];
@@ -78,7 +81,7 @@ export function makePrayStore() {
   }
 
   // The rite rendered into the page by the server is the first entry
-  if (isRitePath(displayPath.value)) {
+  if (serverRendered && isRitePath(displayPath.value)) {
     let params = contentParameters(displayPath.value);
     riteCacheContext = riteContext(params);
     riteCache.set(riteKey(params), Promise.resolve(rite.value));
@@ -173,11 +176,12 @@ export function makePrayStore() {
       });
       history.replaceState({...history.state, navigationType: newNavigationType}, '');
     },
-    // Redirects a bare /pray visit, or a reload of a page reached by soft navigation, to the most relevant rite
+    // Redirects a bare /pray visit to the most relevant rite, and loads a rite the server left out
     init: () => {
-      const [navEntry] = performance.getEntriesByType('navigation');
       if (!isRitePath(window.location.pathname)) {
         navigateRite(makePath(bestHour()), 'soft', 'replace');
+      } else if (!serverRendered) {
+        loadRite(displayPath.value);
       }
     },
     // Back/forward only re-displays the entry; it must not push a new one

@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 import functools
 import copy
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 import kalendar.display as display
 import kalendar.daily_tagger
@@ -28,6 +28,13 @@ ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-18
 NEDERLANDS_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-nederlands')])
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
 HEADER_CORPUS = CaputCorpus(DEFAULT_CORPUS.books)
+
+# Rite pages further than this from today are not composed on the server; the page's script loads their rite instead.
+# Crawlers that follow links without running scripts then reach only cheap pages once they leave this range.
+SERVER_RENDERED_RANGE = timedelta(days=366)
+
+def is_server_rendered(day: date, today: date) -> bool:
+    return abs(day - today) <= SERVER_RENDERED_RANGE
 
 @functools.lru_cache(maxsize=30)
 def ordo(date: str, time: str, votives: str):
