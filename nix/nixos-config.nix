@@ -21,8 +21,8 @@ let
     btop
   ];
 
-  bottle_app = pkgs.stdenv.mkDerivation {
-    name = "bottle_app";
+  libu_app = pkgs.stdenv.mkDerivation {
+    name = "libu";
     src = self;
     buildInputs = app_pkgs;
     buildPhase = ''
@@ -59,8 +59,8 @@ in
       isNormalUser = true;
       extraGroups = [
         "wheel"
-        "bottle"
-      ]; # Enable 'sudo' for the user, bottle for shared /var/lib/libu access
+        "libu"
+      ]; # Enable 'sudo' for the user, libu for shared /var/lib/libu access
       packages = with pkgs; [
         curl
         git
@@ -106,7 +106,7 @@ in
 
         #                 # this is the catch-all host for local testing
         #                 "_" = {
-        #                     # Proxy to bottle application
+        #                     # Proxy to the application
         #                     locations."/".proxyPass = "http://127.0.0.1:8080";
         #                     # If you need to include additional proxy parameters
         #                     locations."/".extraConfig = ''
@@ -123,7 +123,7 @@ in
           enableACME = true; # Use Let's Encrypt
           forceSSL = true; # Redirect HTTP to HTTPS
 
-          # Proxy to bottle application
+          # Proxy to the application
           locations."/".proxyPass = "http://127.0.0.1:8080";
 
           # If you need to include additional proxy parameters
@@ -148,7 +148,7 @@ in
         #   enableACME = true; # Use Let's Encrypt
         #   forceSSL = true; # Redirect HTTP to HTTPS
         #
-        #   # Proxy to bottle application
+        #   # Proxy to the application
         #   locations."/".proxyPass = "http://127.0.0.1:8080";
         #
         #   # If you need to include additional proxy parameters
@@ -178,16 +178,16 @@ in
     };
 
     systemd.services = {
-      bottle_app_setup = {
-        description = "Copy Bottle Application to /var/lib/libu";
+      libu-setup = {
+        description = "Copy the application to /var/lib/libu";
         wantedBy = [ "multi-user.target" ];
-        before = [ "bottle_app.service" ];
+        before = [ "libu.service" ];
         serviceConfig = {
           Type = "oneshot";
           RemainAfterExit = true;
-          ExecStart = pkgs.writeShellScript "bottle-app-setup" ''
+          ExecStart = pkgs.writeShellScript "libu-setup" ''
             set -euo pipefail
-            ${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${bottle_app.out}/lib/ /var/lib/libu/
+            ${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${libu_app.out}/lib/ /var/lib/libu/
             ${pkgs.coreutils}/bin/mkdir -p /var/lib/libu/data/generated/liber-usualis-chant /var/lib/libu/data/generated/fcc
             ${pkgs.rsync}/bin/rsync -a --delete ${chant}/ /var/lib/libu/data/generated/liber-usualis-chant/
             ${pkgs.rsync}/bin/rsync -a --delete ${fcc}/ /var/lib/libu/data/generated/fcc/
@@ -197,41 +197,40 @@ in
         };
         # Fix permissions after copy
         postStart = ''
-          ${pkgs.coreutils}/bin/chown -R bottle:bottle /var/lib/libu
+          ${pkgs.coreutils}/bin/chown -R libu:libu /var/lib/libu
           ${pkgs.coreutils}/bin/chmod -R 0775 /var/lib/libu
         '';
       };
-      bottle_app = {
-        description = "Bottle Application";
+      libu = {
+        description = "Liber Usualis server";
         wantedBy = [ "multi-user.target" ];
-        after = [ "bottle_app_setup.service" ];
-        requires = [ "bottle_app_setup.service" ];
+        after = [ "libu-setup.service" ];
+        requires = [ "libu-setup.service" ];
         serviceConfig = {
           ExecStart = "${python_env}/bin/python /var/lib/libu/server.py";
           Restart = "always";
-          User = "bottle";
-          Group = "bottle";
+          User = "libu";
+          Group = "libu";
           WorkingDirectory = "/var/lib/libu";
           Environment = [
             "PATH=${lib.makeBinPath app_pkgs}:$PATH"
             "PYTHONPATH=/var/lib/libu:$PYTHONPATH"
-            "LOG_PATH=/var/lib/libu/log.log"
           ];
         };
       };
     };
 
     # Create user and group for the service
-    users.users.bottle = {
+    users.users.libu = {
       isSystemUser = true;
-      group = "bottle";
+      group = "libu";
       createHome = true;
     };
-    users.groups.bottle = { };
+    users.groups.libu = { };
 
-    # Create /var/lib/libu with proper permissions for bottle and master
+    # Create /var/lib/libu with proper permissions for libu and master
     systemd.tmpfiles.rules = [
-      "d /var/lib/libu 0775 bottle bottle -"
+      "d /var/lib/libu 0775 libu libu -"
     ];
 
     nix.settings = {

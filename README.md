@@ -17,7 +17,7 @@ git clone https://github.com/mkbertrand/liber-usualis
 cd liber-usualis
 npm ci
 npm run build
-pip install bottle pytest diff-match-patch waitress wsgi-request-logger
+pip install fastapi jinja2 uvicorn httpx pytest diff-match-patch
 ```
 
 Note: diff-match-patch is only necessary for test_breviarium.
@@ -41,15 +41,14 @@ development.
 
 ### Running
 
-To run the server (by default on localhost:8080, the server is run as follows:
+To run the server (by default on 127.0.0.1:8080), the server is run as follows:
 
 ```bash
-export LOG_PATH="logs.log"
 python3 sync-books.py
 python3 server.py
 ```
 
-To run the server with output in the terminal, add the -o flag. To change the port, add the -a flag with the port.
+Requests and errors are logged to the terminal. To change the host address, add the -a flag with the address; to change the port, add the -p flag with the port.
 
 ## Author
 

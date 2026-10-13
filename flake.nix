@@ -60,13 +60,6 @@
                 pkgs.lib.composeManyExtensions [
                   pyproject-build-systems.overlays.default
                   overlay
-                  (final: prev: {
-                    wsgi-request-logger = prev.wsgi-request-logger.overrideAttrs (old: {
-                      nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [
-                        final.setuptools
-                      ];
-                    });
-                  })
                 ]
               );
         in

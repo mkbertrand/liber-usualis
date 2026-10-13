@@ -19,9 +19,9 @@
 
    | Layer          | Technology                                                    |
    |----------------+---------------------------------------------------------------|
-   | Backend        | Python 3.13, Bottle, Waitress                                 |
+   | Backend        | Python 3.13, FastAPI, uvicorn                                 |
    | Frontend       | @preact/signals-core, Exsurge.js, Temporal polyfill, esbuild  |
-   | Templates      | Bottle templates                                              |
+   | Templates      | Jinja2                                                        |
    | Data           | Tagged JSON plus untagged text and GABC resources             |
    | Infrastructure | Nix flakes and native nixpkgs image builders                  |
 
@@ -56,10 +56,10 @@
    kalendar code. Both =Corpus= and the kalendar's lightweight =KalendarCorpus=
    satisfy that interface, so =kalendar/= does not depend on =composer/=.
 
-   One documented exception to keeping domain calls out of the presentation layer:
-   =web/templates/pray.tpl= calls =datamanage.rendered_rite_request()= and
-   =datamanage.rite_request()= directly to render the first rite, its day title,
-   and the next-hour link server-side. Both calls hit the same memoized results as
+   Templates contain no domain calls; =server.py= builds their context. For rite
+   pages, =server.pray_context()= calls =datamanage.rendered_rite_request()= and
+   =datamanage.rite_request()= to render the first rite, its day title, and the
+   next-hour link server-side. Both calls hit the same memoized results as
    =/api/rite=. They are made only for dates within =datamanage.SERVER_RENDERED_RANGE=
    (a year) of today (=datamanage.is_server_rendered()=); further dates are left for
    the page's script to load, so crawlers that follow links without running scripts
@@ -74,9 +74,9 @@
       falling back to English.
     - =GET /<locale>/<page>= renders a top-level page (=index=, =de-anno=,
       =kalendar=, =rubricae=, =pray=, =about=, =donate=,
-      =resources=). =index= uses =web/templates/menu.tpl=; =de-anno=, =kalendar=,
-      and =rubricae= use =latin-generic.tpl=; =pray= uses =pray.tpl=; the rest use
-      =generic.tpl=. A bare =/<locale>/pray= renders the pray page with no rite;
+      =resources=). =index= uses =web/templates/menu.jinja=; =de-anno=, =kalendar=,
+      and =rubricae= use =latin-generic.jinja=; =pray= uses =pray.jinja=; the rest
+      use =generic.jinja=. A bare =/<locale>/pray= renders the pray page with no rite;
       the client then chooses the most relevant one and navigates to it.
     - =GET /<locale>/<officium|ritus>/<date>/<occasion>= and
       =GET /<locale>/<officium|ritus>/<date>/<select>/<occasion>= render a rite
@@ -128,9 +128,13 @@
       =used-commemorations=, =commemoratio-matutini=). Its parameters are =date=,
       =rite=, =opt=, =select=, =translation=, and =votives=.
     - =GET /api/kalendar= returns the navigation skeleton and display kalendar.
-    - =GET /resources/<path>= serves frontend resources.
-    - =GET /favicon.ico=, =GET /robots.txt=, and =GET /logs/internal_requests=
-      serve static files.
+    - =GET /resources/<path>= serves frontend resources, and =GET /robots.txt=
+      serves =web/resources/robots.txt=.
+    - Unknown paths, locales, and page names return a plain =Error 404=.
+    - =server.py= defines the FastAPI =app= and runs it with uvicorn when executed
+      directly (=-a= host, default =127.0.0.1=; =-p= port, default =8080=). Requests
+      are logged by uvicorn to standard output, and errors are printed as
+      tracebacks; under systemd both go to the journal.
 
 ** Stage 0: Books and Corpora
 
@@ -400,9 +404,9 @@
 
 * Frontend
 
-** Page Shell and State: =web/templates/pray.tpl=
+** Page Shell and State: =web/templates/pray.jinja=
 
-   The Bottle template renders the page shell, the first rite server-side, and
+   The Jinja template renders the page shell, the first rite server-side, and
    working fallback =href=s for every link, then loads the deferred
    =web/resources/dist/pray.js= bundle (after the Temporal polyfill). Localized
    strings the script needs are written into a =pray-script-text= JSON block. Its
@@ -456,7 +460,7 @@
      bar moves to the bottom and shows an hour picker in place of its row of hours.
      The picker's sheet holds the day's hours, the anticipated Matins, "Return to
      current", and the other rites; it reuses the same bindings, which cover every
-     copy of these controls, and =web/resources/pray/rite-links.tpl= supplies the
+     copy of these controls, and =web/resources/pray/rite-links.jinja= supplies the
      rite links to both the rites menu and the sheet.
 
 ** Chant and Styles
@@ -479,17 +483,17 @@
 
 ** Theme, Localization, and Other Pages
 
-   =web/resources/themer.tpl=, included in every template's =<head>=, applies the
+   =web/resources/themer.jinja=, included in every template's =<head>=, applies the
    stored or system theme as =data-theme= before the page is drawn and handles
    clicks on the top bar's =#dark-mode-toggle=; CSS shows the matching icon. The
-   shared top bar (=web/resources/top-bar.tpl=) includes the locale selector
-   (=web/resources/locale-selector.tpl=), which reopens the same path in the chosen
+   shared top bar (=web/resources/top-bar.jinja=) includes the locale selector
+   (=web/resources/locale-selector.jinja=), which reopens the same path in the chosen
    locale.
 
    Interface text lives in =web/locales/{locale}/= (=pages/= for each page,
    =resources/= for shared pieces); =version_management.bestlocalized()= falls
    back through the request's locales when a file is missing. Page bodies live in
-   =web/pages/=. Other pages are server-rendered Bottle templates; the kalendar
+   =web/pages/=. Other pages are server-rendered Jinja templates; the kalendar
    page builds its table from =/api/kalendar= with
    =web/resources/js/kalendargen.js=.
 
@@ -561,7 +565,8 @@
      rite signal; pray-view.js writes it into <main>.
   #+END_EXAMPLE
 
-  Loading a rite URL directly follows steps 2 to 6 inside =pray.tpl=, which writes
+  Loading a rite URL directly follows steps 2 to 6 in =server.pray_context()=, whose
+  result =pray.jinja= writes
   the HTML into the page before any script runs.
 
 * Testing
@@ -589,6 +594,13 @@
   Deployment preserves an operator-provided =books.json= and any generated books
   other than those two trees while replacing the tracked application and the
   pinned chant books.
+
+  On a deployed host, the oneshot =libu-setup= service copies the application and
+  chant books into =/var/lib/libu=, and the =libu= service then runs =server.py=
+  there as the =libu= system user. nginx terminates TLS and proxies to it on
+  =127.0.0.1:8080=. The application writes its logs only to standard output, so
+  they are read with =journalctl -u libu=; nginx keeps its own logs under
+  =/var/log/nginx=.
 
   =nix/image-formats.nix= customizes nixpkgs' native image variants. The
   =libu-images= NixOS configuration exposes Linode, Proxmox, Amazon, application
@@ -618,7 +630,7 @@
   | =renderer/rite_renderer.py=                  | Rite rendering to HTML                          |
   | =renderer/psalmify.py=                       | Psalm formatting and pointing                   |
   | =renderer/chomp.py=                          | GABC preparation for display                    |
-  | =web/templates/pray.tpl=                     | Pray page shell and first server-side rite      |
+  | =web/templates/pray.jinja=                   | Pray page shell and first server-side rite      |
   | =frontend/pray.js=                           | Frontend bundle entry point                     |
   | =frontend/pray-store.js=                     | Rite and routing state                          |
   | =frontend/pray-display.js=                   | Display preferences and panel state             |

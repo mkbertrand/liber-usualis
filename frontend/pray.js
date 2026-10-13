@@ -29,7 +29,7 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
-// Localized text for the messages built here, written into the page by pray.tpl
+// Localized text for the messages built here, written into the page by pray.jinja
 const text = JSON.parse(document.getElementById('pray-script-text').textContent);
 
 // If hard navigation is specified as hard already, this is because this navigation really comes from the user's history rather than a link (where navigationType would be null)

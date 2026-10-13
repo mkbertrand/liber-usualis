@@ -1,0 +1,49 @@
+<div id="options-panel">
+	<h2>{{ text['options-panel-title'] }}</h2>
+	<h3>{{ text['display-title'] }}</h3>
+	{% if locale != 'la' %}
+	<div>
+		<input type="checkbox" id="translation-toggle" />
+		<label for="translation-toggle">{{ text['translation-toggle'] }}</label>
+	</div>
+	<div class="options-panel-option-with-range">
+		<input type="checkbox" id="side-by-side-toggle" />
+		<label for="side-by-side-toggle">{{ text['side-by-side-toggle'] }}</label>
+		<input type="range" id="side-by-side-latin-share" min="0.5" max="0.65" step="0.01" title="{{ text['side-by-side-latin-share'] }}" aria-label="{{ text['side-by-side-latin-share'] }}" />
+	</div>
+	{% endif %}
+	<div>
+		<input type="checkbox" id="chant-toggle" />
+		<label for="chant-toggle">{{ text['chant-toggle'] }}</label>
+	</div>
+	<div>
+		<input type="checkbox" id="play-chant-toggle" />
+		<label for="play-chant-toggle">{{ text['play-chant-toggle'] }}</label>
+	</div>
+  <div>
+		<input type="checkbox" id="priest-toggle" />
+		<label for="priest-toggle">{{ text['priest-toggle'] }}</label>
+  </div>
+	<div id="desired-select-wrapper" class="options-panel-section">
+		<div id="desired-select-container" class="options-panel-section">
+			<h3>{{ text['selection-title'] }}</h3>
+			{% for ambit_id, ambit_label, ambit_select, ambit_opt_tag in [['omnes', 'Officium', 'primarium', ''], ['diei', 'Officium diei', 'primarium', 'sine-ritibus'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''], ['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']] %}
+				<div>
+					<input type="radio" name="desired" autocomplete="off" value="{{ ambit_id }}" id="desired-select-{{ ambit_id }}" data-select="{{ ambit_select }}" data-opt-tag="{{ ambit_opt_tag }}" />
+					<label for="desired-select-{{ ambit_id }}">{{ ambit_label }}</label>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="options-panel-section">
+		<h3>{{ text['votive-office-select-title'] }}</h3>
+		<div id="votive-office-selection-inner" class="options-panel-section">
+			{% for votive, votive_name in [['de-sanctis-angelis', 'De Ss. Angelis.'], ['de-sanctis-apostolis', 'De Ss. Apostolis.'], ['de-joseph', 'De S. Joseph.'], ['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'], ['de-passione', 'De Passione D.N.J.C.'], ['de-immaculata-conceptione', 'De Immaculata Conceptione.']] %}
+				<div class="votive-office-entry">
+					<input type="checkbox" value="{{ votive }}" id="votive-select-{{ votive }}" data-votive="{{ votive }}" />
+					<label for="votive-select-{{ votive }}">{{ votive_name }}</label>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

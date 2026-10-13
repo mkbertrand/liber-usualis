@@ -28,7 +28,7 @@ before making non-trivial backend, frontend, or data-shape changes.
 - Respect positional and temporal contradiction handling. Do not introduce code
   that silently allows mutually exclusive tags from `data/{book}/categoriae/` to
   coexist in a resolved query.
-- Keep frontend state and rendering aligned with `architecture.org`: Bottle
+- Keep frontend state and rendering aligned with `architecture.org`: Jinja
   templates provide the page shell, `frontend/` modules hold state in signals, `ambit.js` defines ritual
   structure and request composition, `ritegen.js` renders rites, and
   `pray-window.js` contains window and panel helpers.

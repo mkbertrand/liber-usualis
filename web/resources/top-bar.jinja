@@ -1,27 +1,27 @@
-% # Icons from Phosphor Icons (https://phosphoricons.com), MIT License
+{# Icons from Phosphor Icons (https://phosphoricons.com), MIT License #}
 <div id="top-bar-title">
   <div id="top-bar-left-aligned-container">
     <div id="project-logo">
-      <div id="logo-link-wrapper"><a id="logo-link" href="/{{locale}}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
+      <div id="logo-link-wrapper"><a id="logo-link" href="/{{ locale }}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
     </div>
-    <a id="pray-navigation-link" class="ui-button ui-button-primary" href="/{{locale}}/pray"{{!' aria-current="page"' if page == 'pray' else ''}}>{{text['pray']}}</a>
+    <a id="pray-navigation-link" class="ui-button ui-button-primary" href="/{{ locale }}/pray"{% if page == 'pray' %} aria-current="page"{% endif %}>{{ top_bar_text['pray'] }}</a>
   </div>
-  % # On narrow screens this becomes a dropdown opened by the menu button below
+  {# On narrow screens this becomes a dropdown opened by the menu button below #}
   <div id="top-bar-menu">
     <nav id="top-bar-navigation">
-      <a class="navigation-link" href="/{{locale}}/de-anno">{{text['de-anno']}}</a>
-      <a class="navigation-link" href="/{{locale}}/rubricae">{{text['rubricae']}}</a>
-      <a class="navigation-link" href="/{{locale}}/kalendar">{{text['kalendar']}}</a>
-      <a class="navigation-link" href="/{{locale}}/ordo">{{text['ordo']}}</a>
-      <a class="navigation-link" href="/{{locale}}/about">{{text['about']}}</a>
-      <a class="navigation-link" href="/{{locale}}/resources">{{text['resources']}}</a>
+      <a class="navigation-link" href="/{{ locale }}/de-anno">{{ top_bar_text['de-anno'] }}</a>
+      <a class="navigation-link" href="/{{ locale }}/rubricae">{{ top_bar_text['rubricae'] }}</a>
+      <a class="navigation-link" href="/{{ locale }}/kalendar">{{ top_bar_text['kalendar'] }}</a>
+      <a class="navigation-link" href="/{{ locale }}/ordo">{{ top_bar_text['ordo'] }}</a>
+      <a class="navigation-link" href="/{{ locale }}/about">{{ top_bar_text['about'] }}</a>
+      <a class="navigation-link" href="/{{ locale }}/resources">{{ top_bar_text['resources'] }}</a>
     </nav>
     <div id="top-bar-right-aligned-container">
       <div class="top-bar-button-container">
-        <a id="donate-button" class="ui-button ui-button-primary" href="/{{locale}}/donate">{{text['donate']}}</a>
+        <a id="donate-button" class="ui-button ui-button-primary" href="/{{ locale }}/donate">{{ top_bar_text['donate'] }}</a>
       </div>
       <div class="top-bar-button-container">
-        % include('web/resources/locale-selector.tpl', locale=locale)
+        {% include 'web/resources/locale-selector.jinja' %}
       </div>
       <div class="top-bar-button-container">
         <button id="dark-mode-toggle" class="ui-button icon-button ui-button-secondary" type="button">
@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <button id="top-bar-menu-button" class="ui-button icon-button ui-button-secondary" type="button" aria-label="{{text['menu-button']}}" aria-expanded="false" aria-controls="top-bar-menu">
+  <button id="top-bar-menu-button" class="ui-button icon-button ui-button-secondary" type="button" aria-label="{{ top_bar_text['menu-button'] }}" aria-expanded="false" aria-controls="top-bar-menu">
     <svg class="icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></svg>
   </button>
 </div>
