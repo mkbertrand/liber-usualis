@@ -6,11 +6,11 @@
   <p>The Liber Usualis Project is dedicated to making the liturgy accessible for priests, choirs, and the laity. While centered around the text of the Roman Breviary, Liber Usualis also integrates translations and chant in order to increase accessibility and meet the needs of end-users. On the frontend, the Liber Usualis website is responsive, fast, and clean in order to direct attention to the content that matters. On the backend, Liber Usualis follows a data-centric approach, allowing quick changes and implementation of new features without major structural changes to the data pipeline.</p>
   <h2>History.</h2>
   <p>The development of Libu began more than three years ago, prompted initially by my desire to integrate chant content into the Breviary text, similar to how a Liber Usualis book would present it. While it began as a patchwork of PHP scripts (which thankfully cannot be found on Github) for chant markup, it quickly moved towards the bottom-up development of a new Breviary application heavily inspired in concept (though not in architecture) by <a href="https://divinumofficium.com">Divinum Officium</a>. Additionally, a complete transcription of the 1888 Roman Breviary was undertaken in order to improve over the accuracy of Divinum Officium’s text (this proved to be the hardest task of them all).</p>
-  <p>While Divinum Officium is an amazing resource, it’s limited by its design, being hard to maintain and upgrade.  A totally new design was needed in order to allow implementation of regional variations and other important features, and we felt that Divinum Officium’s arcane Perl codebase would be impossible to base a new design off of.  Liber Usualis’s Python codebase currently sits around 2700 lines, with another 1700 lines of Javascript frontend.  This rewrite has led to a 7x reduction in lines of code and more importantly a codebase which is easy to modify and understand.</p>
+  <p>While Divinum Officium is an amazing resource, it’s limited by its design, being hard to maintain and upgrade.  A totally new design was needed in order to allow implementation of regional variations and other important features, and we felt that Divinum Officium’s arcane Perl codebase would be impossible to base a new design off of.  Liber Usualis’s Python codebase currently sits around 3,600 lines, with another 2,000 lines of Javascript frontend.  This rewrite has led to a more than 5x reduction in lines of code and more importantly a codebase which is easy to modify and understand.</p>
   <h2>Current state of affairs.</h2>
   <p>Currently, the website is usable for the entire daily Office except for the Martyrology (which can always be found on Divinum Officium), but lacks most in the way of translations. I am currently working on the English translations, while a German friend of mine is working on the German translation.  The chant is almost entirely complete except for the Matins Responsories, meaning that Liber Usualis is ready for clerics looking to introduce the Divine Office to their parishes.  The website itself is also fully functional and allows selection of most features implemented in the backend.</p>
 	<h2>Future Development.</h2>
-	<p>The two most immediate concerns of mine are working towards the completion of Matins and the Martyrology, and filling out the English translation in order to allow those without the ability to read Latin to more comfortably and fruitfully pray the Breviary. However, there are a number of other agenda items which will be forthcoming:</p>
+	<p>The two most immediate concerns of mine are working towards the completion of the Matins chants and the Martyrology, and filling out the English translation in order to allow those without the ability to read Latin to more comfortably and fruitfully pray the Breviary. However, there are a number of other agenda items which will be forthcoming:</p>
   <h3>Short and medium-term goals.</h3>
 	<ul>
     <li>Finishing the Martyrology.</li>
@@ -38,5 +38,35 @@
     <li>Or a computer programmer (especially one who's versed in AI workflows),</li>
   </ul>
   <p>We would love to have your help bringing the liturgy to more people. If you're not on this list but you have a pulse and a desire to help, you are likely also able to contribute substantially.</p>
-	<p>The source code can be found at <a href="https://github.com/mkbertrand/liber-usualis">github.com/mkbertrand/liberusualis</a>. Additionally, financial contributions make the work of this site far more feasible in the future. If you are interested in getting involved, you can contact me at <a href="mailto:mileskbertrand@liberusualis.org">mileskbertrand@liberusualis.org</a>. You can also join our Discord community at <a href="https://discord.gg/gJMxqJBnQN">https://discord.gg/gJMxqJBnQN</a>. Currently, the server has a small but very active community of around 40 members, and I hope that as the website grows, we can continue building a community of users who can give feedback and, if interested, work on the website.</p>
+	<p>The source code can be found at <a href="https://github.com/mkbertrand/liber-usualis">github.com/mkbertrand/liber-usualis</a>. Additionally, financial contributions make the work of this site far more feasible in the future. If you are interested in getting involved, you can contact me at <a href="mailto:mileskbertrand@liberusualis.org">mileskbertrand@liberusualis.org</a>. You can also join our Discord community at <a href="https://discord.gg/gJMxqJBnQN">https://discord.gg/gJMxqJBnQN</a>. Currently, the server has a community of around 50 members, and I hope that as the website grows, we can continue building a community of users who can give feedback and, if interested, work on the website.</p>
+	<h2>Credit.</h2>
+	<p>The Liber Usualis Project continues to rely on many people for support and ideas, and owes credit to many different individuals and projects for its inspiration and development.</p>
+	<h3>Contributors.</h3>
+	<dl>
+		<dt>Miles Bertrand</dt>
+		<dd>Lead Developer</dd>
+		<dt>Volzus</dt>
+		<dd>Contributor</dd>
+		<dt>David Villafana</dt>
+		<dd>Contributor</dd>
+		<dt>Albert Emanuel Milani</dt>
+		<dd>Contributor</dd>
+		<dt>Jacob Heilman</dt>
+		<dd>Contributor</dd>
+		<dt>Chandrayee</dt>
+		<dd>Contributor</dd>
+		<dt>Ezekiel Warren</dt>
+		<dd>Logo Design</dd>
+	</dl>
+	<h3>Additional credit.</h3>
+	<dl>
+		<dt>The Divinum Officium Project</dt>
+		<dd>The Divine Office application tout court, which is the comparison-text for proofreading the transcriptions for this website's content.</dd>
+		<dt>Gregobase</dt>
+		<dd>The source for most of the chants used in the website.</dd>
+		<dt>Nocturnale Romanum</dt>
+		<dd>The source for most of the chants given for Matins.</dd>
+		<dt>Benjamin Bloomfield</dt>
+		<dd>Author of a number of chant related projects whose Javascript I have used.</dd>
+	</dl>
 </div>

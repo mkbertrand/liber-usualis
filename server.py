@@ -4,7 +4,6 @@
 
 import bottle
 from bottle import get, route, request, static_file, error, template, redirect, abort
-import requests
 from datetime import datetime, date
 import waitress
 import logging
@@ -35,7 +34,6 @@ toplevelpages = [
     'rubricae',
     'pray',
     'about',
-    'credit',
     'donate',
     'help',
     'resources'

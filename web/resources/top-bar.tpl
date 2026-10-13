@@ -16,7 +16,6 @@
       <a class="navigation-link" href="/{{locale}}/about">{{text['about']}}</a>
       <a class="navigation-link" href="/{{locale}}/resources">{{text['resources']}}</a>
       <a class="navigation-link" href="/{{locale}}/help">{{text['help']}}</a>
-      <a class="navigation-link" href="/{{locale}}/credit">{{text['credit']}}</a>
     </nav>
     <div id="top-bar-right-aligned-container">
       <div class="top-bar-button-container">
