@@ -35,7 +35,6 @@ toplevelpages = [
     'pray',
     'about',
     'donate',
-    'help',
     'resources'
 ]
 

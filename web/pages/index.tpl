@@ -22,7 +22,7 @@
   </div>
   <hr style="width:100%">
 	<nav id="center-nav">
-		% for nav_page in ['about', 'help', 'donate']:
+		% for nav_page in ['about', 'donate']:
 		<a class="nav-element-link" href="/{{locale}}/{{nav_page}}"><span class="nav-element-text">{{text[nav_page]}}</span></a>
 		% end
 	</nav>

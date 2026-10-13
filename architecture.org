@@ -73,7 +73,7 @@
       best locale from =Accept-Language= (=version_management.localehunt()=),
       falling back to English.
     - =GET /<locale>/<page>= renders a top-level page (=index=, =de-anno=,
-      =kalendar=, =rubricae=, =pray=, =about=, =donate=, =help=,
+      =kalendar=, =rubricae=, =pray=, =about=, =donate=,
       =resources=). =index= uses =web/templates/menu.tpl=; =de-anno=, =kalendar=,
       and =rubricae= use =latin-generic.tpl=; =pray= uses =pray.tpl=; the rest use
       =generic.tpl=. A bare =/<locale>/pray= renders the pray page with no rite;

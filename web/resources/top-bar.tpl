@@ -15,7 +15,6 @@
       <a class="navigation-link" href="/{{locale}}/ordo">{{text['ordo']}}</a>
       <a class="navigation-link" href="/{{locale}}/about">{{text['about']}}</a>
       <a class="navigation-link" href="/{{locale}}/resources">{{text['resources']}}</a>
-      <a class="navigation-link" href="/{{locale}}/help">{{text['help']}}</a>
     </nav>
     <div id="top-bar-right-aligned-container">
       <div class="top-bar-button-container">
