@@ -82,14 +82,10 @@
           version = "1.0.0";
           src = self;
 
+          # Every dependency, including Exsurge (a GitHub tarball, since its fork isn't on npm), is fetched as pinned by
+          # package-lock.json
           npmDeps = pkgs.importNpmLock {
             npmRoot = self;
-            packageSourceOverrides."node_modules/exsurge" = pkgs.fetchFromGitHub {
-              owner = "bbloomf";
-              repo = "exsurge";
-              rev = "v1.26.1";
-              hash = "sha256-9dwIZvmhu2RmNQ0KXMhw/dWegkOiYwdl5tmvoI2fVpE=";
-            };
           };
           npmConfigHook = pkgs.importNpmLock.npmConfigHook;
           npmBuildScript = "build";
