@@ -15,6 +15,8 @@ DIVED_ELEMENTS = ['aperi-domine', 'sacrosanctae', 'ritus', 'invitatorium', 'noct
 FULLY_PARAGRAPHED_ELEMENTS = ['pater-noster-secreta', 'ave-maria-secreta', 'credo-secreta', 'deus-in-adjutorium', 'antiphona', 'textus-psalmi', 'versiculus', 'dominus-vobiscum', 'benedicamus-domino', 'fidelium-animae', 'benedictio-finalis', 'formula-lectionis', 'oratio-dirigere', 'rubricum', 'hymnus', 'lectionis-titulum', 'evangelium-matutini', 'lectio-incipiens', 'lectio-sequens']
 PARAGRAPH_CLOSING_ELEMENTS = ['gloria-versorum', 'terminatio']
 PARAGRAPH_OPENING_ELEMENTS = ['capitulum', 'absolutio', 'pater-noster-clara-voce', 'pater-noster-semisecreta', 'credo-semisecreta', 'confiteor', 'oratio-sanctae-mariae', 'textus-psalmi-precibus', 'collecta']
+# Litany responses (ora pro nobis, libera nos Domine, ...) finish the invocation before them on the same line
+LITANY_RESPONSE_ELEMENTS = ['ora', 'orate', 'libera', 'te-rogamus']
 
 # Default case for json dumps to use for frozensets while still throwing contentful error
 def _json_default(value: Any) -> Any:
@@ -108,6 +110,11 @@ class RiteRenderer:
             translation = ''
         self.left_buffer.append(string_render(text))
         self.right_buffer.append(string_render(translation))
+
+    def append_to_last_line(self, text: str, translation: Translation = None) -> None:
+        self.left_buffer[-1] = f'{self.left_buffer[-1]} {string_render(text)}'
+        if translation:
+            self.right_buffer[-1] = f'{self.right_buffer[-1]} {string_render(translation)}'.lstrip()
 
     def render_gabc(
         self,
@@ -412,6 +419,15 @@ class RiteRenderer:
         self.close_div()
         return True
 
+    def try_litany_response(self, element: RiteElement, translation: Translation) -> bool:
+        if element['tags'].isdisjoint(LITANY_RESPONSE_ELEMENTS) or not isinstance(element['datum'], str):
+            return False
+        # A response opening a paragraph has no invocation to follow and is rendered as an ordinary line
+        if not self.paragraph_open or len(self.left_buffer) == 0:
+            return False
+        self.append_to_last_line(element['datum'], translation if isinstance(translation, str) else None)
+        return True
+
     def recurse_rite(self, element: RiteElement, translation: Translation, parent_tags: Tagset) -> None:
         # Sometimes an element will have the same kind of thing nested in it recursively. For example, a collecta item may actually be a call to a different day's collecta. In this case, only return true if it's the outer.
         def uniquelyhas(tag: str, tagset: Tagset | None = None) -> bool:
@@ -472,6 +488,8 @@ class RiteRenderer:
             return
 
         self.do_headering(element, uniquelyhas)
+        if self.try_litany_response(element, translation):
+            return
         if self.try_hymn(element, translation, parent_tags):
             return
         if self.try_responsory(element, translation, parent_tags):
