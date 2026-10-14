@@ -29,7 +29,7 @@
 		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/dist/style.css') }}>
 		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/dist/pray.css') }}>
 		{% if mobile %}
-		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/pray/css/pray-mobile.css') }}>
+		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/styles/pray-mobile.css') }}>
 		{% endif %}
     <script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>
 		<script defer type="text/javascript" src={{ versioned_resource('/dist/pray.js') }}></script>
@@ -90,7 +90,16 @@
       </template>
     </div>
     <script type="application/json" id="pray-script-text">{{ script_text|tojson }}</script>
-    {% include 'web/resources/pray/rites-menu.jinja' %}
+    <div id="rites-menu-wrapper" style="display: none">
+      <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
+      <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
+      {% for rite_occasion, rite_name in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales cum Litaniis'], ['litaniae-sanctorum', 'Litaniæ Sanctorum'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis']] %}
+      <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/{{ rite_occasion }}" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="{{ rite_occasion }}">{{ rite_name }}</a>
+      {% endfor %}
+      <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/pro-prandio" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="pro-prandio">Benedictio Mensæ (Pro Prandio)</a>
+      <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/pro-coena" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="pro-coena">Benedictio Mensæ (Pro Cœna)</a>
+      <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/itinerarium" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="itinerarium">Itinerarium Clericorum</a>
+    </div>
     {# The day's hours and the other rites, opened from the hour picker button when the second bar is at the bottom #}
     <div id="hour-picker" style="display: none">
       <button id="hour-picker-return-to-current-button" class="return-to-current-button ui-button ui-button-secondary" type="button" data-title-template="{{ text['return-to-current-tooltip'] }}" style="display: none">{{ text['return-to-current-button'] }}</button>
@@ -105,7 +114,14 @@
         {% endif %}
       </div>
       <div id="hour-picker-rites">
-        {% include 'web/resources/pray/rite-links.jinja' %}
+        <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
+        <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
+        {% for rite_occasion, rite_name in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales cum Litaniis'], ['litaniae-sanctorum', 'Litaniæ Sanctorum'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis']] %}
+        <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/{{ rite_occasion }}" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="{{ rite_occasion }}">{{ rite_name }}</a>
+        {% endfor %}
+        <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/pro-prandio" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="pro-prandio">Benedictio Mensæ (Pro Prandio)</a>
+        <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/pro-coena" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="pro-coena">Benedictio Mensæ (Pro Cœna)</a>
+        <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/itinerarium" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="itinerarium">Itinerarium Clericorum</a>
       </div>
     </div>
     <div id="content-container-outer">
@@ -131,7 +147,55 @@
     {# On mobile the panels are full-screen sheets (see pray-mobile.css), so they neither trap focus nor lock scrolling. #}
     <div id="options-panel-background" style="display: none">
       <div id="options-panel-wrapper"{% if not mobile %} data-trap-focus{% endif %}>
-        {% include 'web/resources/pray/options-panel.jinja' %}
+        <div id="options-panel">
+          <h2>{{ text['options-panel-title'] }}</h2>
+          <h3>{{ text['display-title'] }}</h3>
+          {% if locale != 'la' %}
+          <div>
+            <input type="checkbox" id="translation-toggle" />
+            <label for="translation-toggle">{{ text['translation-toggle'] }}</label>
+          </div>
+          <div class="options-panel-option-with-range">
+            <input type="checkbox" id="side-by-side-toggle" />
+            <label for="side-by-side-toggle">{{ text['side-by-side-toggle'] }}</label>
+            <input type="range" id="side-by-side-latin-share" min="0.5" max="0.65" step="0.01" title="{{ text['side-by-side-latin-share'] }}" aria-label="{{ text['side-by-side-latin-share'] }}" />
+          </div>
+          {% endif %}
+          <div>
+            <input type="checkbox" id="chant-toggle" />
+            <label for="chant-toggle">{{ text['chant-toggle'] }}</label>
+          </div>
+          <div>
+            <input type="checkbox" id="play-chant-toggle" />
+            <label for="play-chant-toggle">{{ text['play-chant-toggle'] }}</label>
+          </div>
+          <div>
+            <input type="checkbox" id="priest-toggle" />
+            <label for="priest-toggle">{{ text['priest-toggle'] }}</label>
+          </div>
+          <div id="desired-select-wrapper" class="options-panel-section">
+            <div id="desired-select-container" class="options-panel-section">
+              <h3>{{ text['selection-title'] }}</h3>
+              {% for ambit_id, ambit_label, ambit_select, ambit_opt_tag in [['omnes', 'Officium', 'primarium', ''], ['diei', 'Officium diei', 'primarium', 'sine-ritibus'], ['officium-parvum-bmv', 'Officium Parvum B.M.V.', 'officium-parvum-bmv', ''], ['semper-cum-opbmv', 'Officium diei cum Officio Parvo B.M.V.', 'primarium', 'cum-opbmv']] %}
+                <div>
+                  <input type="radio" name="desired" autocomplete="off" value="{{ ambit_id }}" id="desired-select-{{ ambit_id }}" data-select="{{ ambit_select }}" data-opt-tag="{{ ambit_opt_tag }}" />
+                  <label for="desired-select-{{ ambit_id }}">{{ ambit_label }}</label>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="options-panel-section">
+            <h3>{{ text['votive-office-select-title'] }}</h3>
+            <div id="votive-office-selection-inner" class="options-panel-section">
+              {% for votive, votive_name in [['de-sanctis-angelis', 'De Ss. Angelis.'], ['de-sanctis-apostolis', 'De Ss. Apostolis.'], ['de-joseph', 'De S. Joseph.'], ['de-eucharistiae-sacramento', 'De Ss. Eucharistiæ Sacramento.'], ['de-passione', 'De Passione D.N.J.C.'], ['de-immaculata-conceptione', 'De Immaculata Conceptione.']] %}
+                <div class="votive-office-entry">
+                  <input type="checkbox" value="{{ votive }}" id="votive-select-{{ votive }}" data-votive="{{ votive }}" />
+                  <label for="votive-select-{{ votive }}">{{ votive_name }}</label>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="ordo-panel-background" style="display: none">

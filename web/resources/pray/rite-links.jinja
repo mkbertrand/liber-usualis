@@ -1,8 +1,0 @@
-<a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
-<a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
-{% for rite_occasion, rite_name in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales cum Litaniis'], ['litaniae-sanctorum', 'Litaniæ Sanctorum'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis']] %}
-<a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/{{ rite_occasion }}" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="{{ rite_occasion }}">{{ rite_name }}</a>
-{% endfor %}
-<a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/pro-prandio" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="pro-prandio">Benedictio Mensæ (Pro Prandio)</a>
-<a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/pro-coena" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="pro-coena">Benedictio Mensæ (Pro Cœna)</a>
-<a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/itinerarium" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="itinerarium">Itinerarium Clericorum</a>
