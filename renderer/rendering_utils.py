@@ -14,7 +14,7 @@ MONTHS = ['Januarii', 'Februarii', 'Martii', 'Aprilis', 'Maji', 'Junii', 'Julii'
 
 def date_header(date: str) -> str:
     year, month, day = date.split('-')
-    return f'<h4 class="date-header">Die {int(day)} {MONTHS[(int(month) - 1) % 12]} {year}.</h4>'
+    return f'<p class="date-header">Die {int(day)} {MONTHS[(int(month) - 1) % 12]} {year}.</p>'
 
 def rite_title(title: str, tagset: frozenset[str], size: str = 'large') -> str:
     if size == 'small':
@@ -39,7 +39,7 @@ def rite_title(title: str, tagset: frozenset[str], size: str = 'large') -> str:
         subtitle += ' (m.t.v.)'
 
     title_text = re.sub(r'\.\.$', '.', title + '.')
-    return f'<h1 class="large-title">{title_text}</h1><h2 class="large-subtitle">{subtitle}</h2>'
+    return f'<h1 class="large-title">{title_text}</h1><p class="large-subtitle">{subtitle}</p>'
 
 _ABBREVIATIONS = (
     ('Martyris', 'Mart.'),

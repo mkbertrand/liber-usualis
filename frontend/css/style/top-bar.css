@@ -103,14 +103,15 @@
 	height: 100%;
 }
 
+/* Centered at the icon buttons' height (24px icon plus 12px padding on each side) instead of filling the bar */
 #pray-navigation-link, #pray-navigation-link:visited {
+  align-self: center;
+  height: 48px;
+  padding-block: 0;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  text-decoration: none;
-  font-family: "Old Standard TT", times;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* On the pray page the call to pray has done its job, so it steps back to a quiet "you are here" state, keeping its
