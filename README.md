@@ -150,6 +150,26 @@ echo "configid: $CONFIG_ID";
 linode-cli linodes config-update "$LINODE_ID" "$CONFIG_ID" --kernel "linode/grub2" --booted false;
 linode-cli linodes boot "$LINODE_ID" --config_id "$CONFIG_ID";
 ```
+### Serve a different domain
+nginx serves the `libu.domain` NixOS option, which defaults to `liberusualis.org`.
+To deploy under another domain (for example a test host) without adding that host
+to this repository, extend one of the configurations from a separate flake:
+
+```nix
+{
+  inputs.libu.url = "github:mkbertrand/liber-usualis";
+  outputs = { libu, ... }: {
+    nixosConfigurations.libu-test = libu.nixosConfigurations.libu-images.extendModules {
+      modules = [ { libu.domain = "test.liberusualis.org"; } ];
+    };
+  };
+}
+```
+
+Images are then built with
+`nixos-rebuild build-image --flake .#libu-test --image-variant linode`. To manage
+the installed host with `nixos-rebuild switch`, extend `libu-linode` instead, with
+a module overriding `fileSystems` and `swapDevices` for that host's disks.
 ## deploy image to proxmox
 ```bash
 nix build .#libu-proxmox;

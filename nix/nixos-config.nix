@@ -1,4 +1,5 @@
 {
+  config,
   lib,
   nixpkgs,
   format ? null,
@@ -32,9 +33,15 @@ let
       cp -r ${frontend_assets}/. $out/lib/web/resources/dist/
     '';
   };
-  domain = "liberusualis.org";
+  domain = config.libu.domain;
 in
 {
+  options.libu.domain = lib.mkOption {
+    type = lib.types.str;
+    default = "liberusualis.org";
+    description = "Domain served by nginx; www.<domain> redirects to it.";
+  };
+
   config = {
 
     # set ntp
@@ -174,7 +181,7 @@ in
     # Let's Encrypt configuration
     security.acme = {
       acceptTerms = true;
-      defaults.email = "mkbertrand@gmail.com"; # Replace with your email
+      defaults.email = "mileskbertrand@liberusualis.org";
     };
 
     systemd.services = {

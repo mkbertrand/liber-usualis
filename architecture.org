@@ -598,7 +598,8 @@
   On a deployed host, the oneshot =libu-setup= service copies the application and
   chant books into =/var/lib/libu=, and the =libu= service then runs =server.py=
   there as the =libu= system user. nginx terminates TLS and proxies to it on
-  =127.0.0.1:8080=. The application writes its logs only to standard output, so
+  =127.0.0.1:8080= for the domain in the =libu.domain= option (default
+  =liberusualis.org=), redirecting =www.<domain>= to it. The application writes its logs only to standard output, so
   they are read with =journalctl -u libu=; nginx keeps its own logs under
   =/var/log/nginx=.
 
