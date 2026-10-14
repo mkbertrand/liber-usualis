@@ -79,6 +79,11 @@
     padding: 10px;
   }
 
+  /* Left-aligned like the links below it and the Donate button */
+  #top-bar-navigation #pray-navigation-link {
+    align-self: flex-start;
+  }
+
   #top-bar-right-aligned-container {
     height: auto;
     padding-top: 9px;

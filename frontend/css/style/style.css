@@ -25,7 +25,6 @@
 	/* Variables used for the actual page content. */
 	--content-background-color: #ffffff;
 	--content-border: #efe9e9;
-	--content-hover: #e0b0b0;
 	--content-text-color: #000000;
 	--content-text-color-muted: #222222;
 	--rubric: red;
@@ -49,7 +48,6 @@
 
 	--content-background-color: #e8e1d0;
 	--content-border: #c9c0a8;
-	--content-hover: #c9a0a0;
 	--content-text-color: #2a2a26;
 	--content-text-color-muted: #544f42;
 	--rubric: #cc2819;

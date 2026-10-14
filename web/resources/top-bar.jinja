@@ -4,11 +4,11 @@
     <div id="project-logo">
       <div id="logo-link-wrapper"><a id="logo-link" href="/{{ locale }}/index"><img id="logo" src="/resources/agnus-dei.webp" alt="LIBER USUALIS"></a></div>
     </div>
-    <a id="pray-navigation-link" class="ui-button ui-button-primary" href="/{{ locale }}/pray"{% if page == 'pray' %} aria-current="page"{% endif %}>{{ top_bar_text['pray'] }}</a>
   </div>
   {# On narrow screens this becomes a dropdown opened by the menu button below #}
   <div id="top-bar-menu">
     <nav id="top-bar-navigation">
+      <a id="pray-navigation-link" class="ui-button ui-button-primary" href="/{{ locale }}/pray"{% if page == 'pray' %} aria-current="page"{% endif %}>{{ top_bar_text['pray'] }}</a>
       <a class="navigation-link" href="/{{ locale }}/de-anno">{{ top_bar_text['de-anno'] }}</a>
       <a class="navigation-link" href="/{{ locale }}/rubricae">{{ top_bar_text['rubricae'] }}</a>
       <a class="navigation-link" href="/{{ locale }}/kalendar">{{ top_bar_text['kalendar'] }}</a>
