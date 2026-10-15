@@ -25,13 +25,14 @@ import version_management
 
 TOP_LEVEL_PAGES = [
     'index',
-    'de-anno',
-    'kalendar',
-    'rubricae',
     'pray',
+    'de-anno',
+    'rubricae',
+    'kalendar',
+    'ordo',
     'about',
-    'donate',
-    'resources'
+    'resources',
+    'donate'
 ]
 PRAYER_TYPES = ['officium', 'ritus']
 SELECT = ['officium-parvum-bmv', 'officium-defunctorum']
@@ -90,7 +91,7 @@ def page_context(page: str, locales: list[str]) -> tuple[str, dict[str, Any]]:
             'body_template': 'web/pages/index.jinja',
             'text': load_json(version_management.bestlocalized(f'/pages/{page}.json', locales)),
         }
-    elif page in ['de-anno', 'kalendar', 'rubricae']:
+    elif page in ['de-anno', 'kalendar', 'rubricae', 'ordo']:
         if os.path.exists(f'web/pages/{page}.html'):
             return 'web/templates/latin-generic.jinja', {'body_template': f'web/pages/{page}.html'}
         return 'web/templates/latin-generic.jinja', {
