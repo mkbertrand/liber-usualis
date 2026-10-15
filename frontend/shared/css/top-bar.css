@@ -79,11 +79,6 @@
     padding: 10px;
   }
 
-  /* Left-aligned like the links below it and the Donate button */
-  #top-bar-navigation #pray-navigation-link {
-    align-self: flex-start;
-  }
-
   #top-bar-right-aligned-container {
     height: auto;
     padding-top: 9px;
@@ -100,31 +95,13 @@
 	width: fit-content;
 	height: 100%;
 	margin: 0 auto;
+  padding-right: 3px;
 }
 
 #logo {
 	object-fit: contain;
 	width: auto;
 	height: 100%;
-}
-
-/* Centered at the icon buttons' height (24px icon plus 12px padding on each side) instead of filling the bar */
-#pray-navigation-link, #pray-navigation-link:visited {
-  align-self: center;
-  height: 48px;
-  padding-block: 0;
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-  font-size: 20px;
-}
-
-/* On the pray page the call to pray has done its job, so it steps back to a quiet "you are here" state, keeping its
-   size and position */
-#pray-navigation-link[aria-current="page"] {
-  background-color: var(--button-color-secondary-hover);
-  color: var(--panel-text-color);
-  box-shadow: none;
 }
 
 .navigation-link:hover {
