@@ -1,6 +1,6 @@
 <!-- Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
 
-<script type="text/javascript" src="/resources/js/kalendargen.js?v=2"></script>
+<script defer type="text/javascript" src={{ versioned_resource('/dist/kalendar.js') }}></script>
 <div id="content-container">
 	<h1 id="kalendar-title">Kalendarium Romanum.</h1>
 	<table id="kalendar-table" class="kalendar-table" style="display: none">
@@ -13,6 +13,3 @@
 		</tr>
 	</table>
 </div>
-<script type="text/javascript">
-	renderKalendar(document.getElementById('kalendar-table'));
-</script>

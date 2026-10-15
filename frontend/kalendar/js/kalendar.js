@@ -188,7 +188,8 @@ function kalendarCell(html, extraClass) {
 	return cell;
 }
 
-async function renderKalendar(table) {
+async function renderKalendar() {
+  const table = document.getElementById('kalendar-table');
 	let response = await fetch('/api/kalendar');
 	let json = await response.json();
 	for (let [date, occurrences] of kalendarRows(json.skeleton)) {
@@ -206,3 +207,5 @@ async function renderKalendar(table) {
 	}
 	table.style.display = '';
 }
+
+renderKalendar();
