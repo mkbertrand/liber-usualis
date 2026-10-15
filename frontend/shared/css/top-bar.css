@@ -130,7 +130,7 @@
 
 #donate-button {
   background-color: #1a8917;
-	box-shadow: 0 2px 6px color-mix(in srgb, #1a8917 35%, transparent);
+	box-shadow: 0 1px 4px color-mix(in srgb, #1a8917 22%, transparent);
 }
 
 #donate-button:hover {
