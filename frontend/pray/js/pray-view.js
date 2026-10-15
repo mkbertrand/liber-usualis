@@ -2,11 +2,13 @@
 // Each binding is a signal effect (state -> DOM) and/or an event listener (DOM -> state).
 
 import { effect, computed, untracked, createModel } from '@preact/signals-core';
-import { makePath, RITE_TITLES, officeHourPath } from './routing.js';
+import { RITE_TITLES } from './routing.js';
+import { makePath, officeHourPath } from '../../shared/js/rite-paths.js';
 import { canSay, riteLinksDate } from './pray-store.js';
 import { stopChantPlayback } from './gabc-chant.js';
 import { setShown, trapFocus, closeOnOutsideClick, positionUnderLeftAligned, labelFor } from './dom-bindings.js';
-import { OrdoModel, ordoSummary, ordoRitePath } from './pray-ordo.js';
+import { OrdoModel } from '../../shared/js/ordo-model.js';
+import { bindOrdo } from '../../shared/js/ordo-view.js';
 
 // A panel shown over an overlay. Wrappers marked data-trap-focus (desktop only) trap focus and lock page scroll.
 function bindOverlayPanel(background, wrapper, toggleButton, isOpen, toggle, close) {
@@ -276,30 +278,6 @@ function bindRiteLinks(prayStore) {
   });
 }
 
-// A paragraph of the ordo cloned from its <template>, listing names one per line
-function ordoSection(templateId, names) {
-  let section = document.getElementById(templateId).content.firstElementChild.cloneNode(true);
-  section.querySelector('.ordo-section-names').replaceChildren(...names.flatMap((name, index) => index == 0 ? [name] : [document.createElement('br'), name]));
-  return section;
-}
-
-function bindOrdoTime(response, idPrefix) {
-  let primarium = document.getElementById(`${idPrefix}-primarium`);
-  let rank = document.getElementById(`${idPrefix}-primarium-rank`);
-  let details = document.getElementById(`${idPrefix}-details`);
-  effect(() => {
-    let summary = response.value ? ordoSummary(response.value) : {primarium: '', rank: '', commemorations: [], omissions: [], psalmi: null};
-    primarium.textContent = summary.primarium;
-    rank.textContent = summary.rank;
-    // Only the paragraphs that have something to say
-    details.replaceChildren(...[
-      summary.psalmi && ordoSection('ordo-psalmi-template', [summary.psalmi]),
-      summary.commemorations.length > 0 && ordoSection('ordo-commemorations-template', summary.commemorations),
-      summary.omissions.length > 0 && ordoSection('ordo-omissions-template', summary.omissions)
-    ].filter(section => section));
-  });
-}
-
 // The ordo panel's bindings for one browsing session. Created when the panel opens; disposing it disposes every
 // effect created here, including the OrdoModel's.
 const OrdoPanelSession = createModel((pageParams) => {
@@ -307,33 +285,11 @@ const OrdoPanelSession = createModel((pageParams) => {
   // Event listeners aren't effects, so they are removed through this when the session is disposed
   const listeners = new AbortController();
   effect(() => () => listeners.abort());
-
-  let datePicker = document.getElementById('ordo-date-picker');
-  effect(() => {
-    datePicker.value = ordo.date.value.toString();
-  });
-  // Clearing the picker leaves its value empty; keep the current date until a full date is chosen
-  datePicker.addEventListener('change', () => {
-    if (datePicker.value) {
-      ordo.setDate(Temporal.PlainDate.from(datePicker.value));
-    }
-  }, {signal: listeners.signal});
-  document.getElementById('ordo-date-previous').addEventListener('click', () => ordo.setDate(ordo.date.value.subtract({days: 1})), {signal: listeners.signal});
-  document.getElementById('ordo-date-next').addEventListener('click', () => ordo.setDate(ordo.date.value.add({days: 1})), {signal: listeners.signal});
-
-  bindOrdoTime(ordo.daytime, 'ordo-daytime');
-  bindOrdoTime(ordo.evening, 'ordo-evening');
-
-  for (let link of document.querySelectorAll('.ordo-rite-link')) {
-    effect(() => {
-      link.href = ordoRitePath(ordo.date.value, ordo.votives.value, pageParams, link.dataset.occasion);
-    });
-  }
+  bindOrdo(ordo, pageParams, listeners.signal);
   return {};
 });
 
-// Browsing in the panel changes only its session; the page changes only when one of its rite links is followed
-function bindOrdo(prayStore, displayStore) {
+function bindOrdoPanel(prayStore, displayStore) {
   effect(() => {
     if (!displayStore.ordoPanelOpen.value) return;
     // Untracked, so the page changing while the panel is open doesn't restart the session
@@ -355,7 +311,7 @@ export function bindPrayPage(prayStore, liturgyStore, displayStore) {
   bindOptionsPanel(prayStore, liturgyStore, displayStore);
   bindRiteLinks(prayStore);
   bindRitePrefetch(prayStore);
-  bindOrdo(prayStore, displayStore);
+  bindOrdoPanel(prayStore, displayStore);
   bindBanners(prayStore);
   bindReturnToCurrent(prayStore);
   bindHourPicker(prayStore, displayStore);

@@ -415,8 +415,9 @@
    - =frontend/shared/js/liturgy-store.js= (=makeLiturgyStore()=) owns liturgical
      preferences shared across pages: currently the preferred votive offices,
      persisted in =localStorage= under =votivePreferences= and changed through
-     =setVotives()= and =toggleVotive()=. It knows nothing of the pray page; the
-     page's =pray.js= creates it and passes it to the pray store and the bindings.
+     =setVotives()= and =toggleVotive()=. It knows nothing of any page; each page's
+     entry script that needs it creates it (=pray.js= passes it to the pray store
+     and the bindings; the ordo page reads its votives).
    - =frontend/pray/js/pray-store.js= (=makePrayStore(liturgyStore)=) owns rite and
      routing state: =displayPath= (path and query string, moved as soon as a
      navigation starts), =ritePath= (the rite whose text is on the page, moved
@@ -445,14 +446,19 @@
    - =frontend/pray/js/pray-display.js= (=makeDisplayStore()=) owns display-only
      state: the persisted display toggles (stored under a legacy =_x_=-prefixed
      =localStorage= key) and which panels and menus are open.
-   - =frontend/pray/js/pray-ordo.js= defines =OrdoModel= (=createModel=), the ordo
-     panel's browsing state: a date and votives that start from the page's rite, and
-     the =/api/ordo= responses for that date's diurnal and vesperal offices.
-     =pray-view.js= creates one, with the panel's bindings, each time the panel
-     opens and disposes it when it closes, so browsing never changes the page until
-     a rite link is followed.
-   - =frontend/pray/js/routing.js= holds pure path functions: parsing a rite path
-     into content parameters, building paths, cursus order, and suggested occasion.
+   - =frontend/shared/js/ordo-model.js= defines =OrdoModel= (=createModel=), the
+     ordo's browsing state: a date and votives given when it is created, and the
+     =/api/ordo= responses for that date's diurnal and vesperal offices.
+     =frontend/shared/js/ordo-view.js= (=bindOrdo()=) binds the ordo's markup (date
+     controls, both offices, and links to the day's hours) to a model by element id.
+     Both are shared by the pray page's ordo panel and the ordo page. =pray-view.js=
+     creates a model, with its bindings, each time the panel opens, starting from
+     the page's rite, and disposes it when the panel closes, so browsing never
+     changes the page until a rite link is followed.
+   - =frontend/pray/js/routing.js= holds the pray page's pure path functions:
+     parsing a rite path into content parameters, cursus order, and suggested
+     occasion. Building a rite page's path (=makePath()=, =officeHourPath()=) is in
+     =frontend/shared/js/rite-paths.js=, since the ordo links to rite pages too.
    - =frontend/pray/js/pray-view.js= (=bindPrayPage()=) binds the server-rendered
      markup to the pray, liturgy, and display stores. Each binding is an =effect=
      (state to DOM) or an event listener (DOM to state), found by element id or data
@@ -503,8 +509,12 @@
    =web/pages/=. Other pages are server-rendered Jinja templates; the kalendar page
    builds its table from =/api/kalendar= with =frontend/kalendar/js/kalendar.js=,
    bundled into =web/resources/dist/kalendar.js= and loaded deferred, which renders
-   the table once the document is parsed. The =ordo= page is currently a
-   placeholder.
+   the table once the document is parsed. The ordo page (=web/pages/ordo.jinja=)
+   shows one day's diurnal and vesperal offices and links to its hours, through
+   =frontend/ordo/js/ordo.js= bundled into =web/resources/dist/ordo.js=. Its date
+   is kept in the =date= query parameter (left out for today). It has no votive
+   options of its own: the ordo and the hour links use the liturgy store's
+   preferred votives.
 
 * Tagging System
 
@@ -584,8 +594,9 @@
     against golden output, =test_data_content.py= checks the data files,
     =test_ordo.py= covers =datamanage.ordo()=, and =kalendar/= has its own
     kalendar, daily-tagger, and Easter tests.
-  - Frontend tests run with =npm test= (=node --test frontend/pray/js/tests/=) and cover
-    routing, the pray store's pure functions, the ordo panel, and chant.
+  - Frontend tests run with =npm test= (=node --test frontend/pray/js/tests/
+    frontend/shared/js/tests/=) and cover routing, the pray store's pure functions,
+    the ordo model, and chant.
 
 * Infrastructure
 
@@ -646,8 +657,11 @@
   | =frontend/pray/js/pray-store.js=             | Rite and routing state                          |
   | =frontend/pray/js/pray-display.js=           | Display preferences and panel state             |
   | =frontend/pray/js/pray-view.js=              | DOM bindings for the pray page                  |
-  | =frontend/pray/js/pray-ordo.js=              | Ordo panel model and =/api/ordo= access         |
-  | =frontend/pray/js/routing.js=                | Pure rite-path functions                        |
+  | =frontend/shared/js/ordo-model.js=           | Ordo model and =/api/ordo= access               |
+  | =frontend/shared/js/ordo-view.js=            | DOM bindings for the ordo panel and page        |
+  | =frontend/pray/js/routing.js=                | Pure rite-path parsing and cursus order         |
+  | =frontend/shared/js/rite-paths.js=           | Rite page path building                         |
+  | =frontend/ordo/js/ordo.js=                   | Ordo page bundle entry point                    |
   | =frontend/pray/js/gabc-chant.js=             | Exsurge GABC custom element                     |
   | =frontend/pray/js/chant-player.js=           | Click-to-play Web Audio sequencer               |
   | =frontend/pray/css/=                         | Bundled pray-page styles                        |

@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { rankName, ordoSummary, ordoRitePath, ordo } from '../pray-ordo.js';
+import { rankName, ordoSummary, ordoRitePath, ordo } from '../ordo-model.js';
 
 test('rankName prefers the most specific rank tag', () => {
 	assert.equal(rankName(['duplex', 'festum', 'duplex-i-classis', 'nativitas']), 'Duplex I. classis');

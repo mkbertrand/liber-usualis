@@ -24,9 +24,6 @@ export function contentParameters(path) {
   return {'locale': pathVariables.locale, 'prayerType': pathVariables.prayerType, 'date': Temporal.PlainDate.from(pathVariables.date), 'select': pathVariables.select || 'primarium', 'occasion': pathVariables.occasion, 'votives': votives};
 }
 
-export function makePath(params) {
-  return `/${params.locale}/${params.prayerType}/${params.date}${params.select == 'primarium' ? '' : '/' + params.select}/${params.occasion}${params.votives.length == 0 ? '' : '?v=' + params.votives.join('+')}`;
-}
 export function isCursus(params) {
   return params.prayerType == 'officium' && params.select != 'officium-defunctorum'
     && CURSUS_OCCASIONS.includes(params.occasion);
@@ -42,19 +39,6 @@ export function nextHour(current) {
     select: current.select,
     votives: current.votives
   };
-}
-
-// An hour of the office on date, with params' locale and votives. Only the Little Office carries over from params'
-// select; anything else (including the Office of the Dead) opens the Office of the day.
-export function officeHourPath(params, date, occasion) {
-  return makePath({
-    locale: params.locale,
-    prayerType: 'officium',
-    date: date,
-    select: params.select == 'officium-parvum-bmv' ? 'officium-parvum-bmv' : 'primarium',
-    occasion: occasion,
-    votives: params.votives
-  });
 }
 
 export function suggestOccasion(now) {

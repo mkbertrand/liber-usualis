@@ -47,6 +47,7 @@ PRAY_SCRIPT_TEXT_KEYS = ['banner-remain-here', 'suboptimal-content-banner-messag
 templates = Environment(loader=FileSystemLoader('.'), autoescape=True, trim_blocks=True, lstrip_blocks=True, keep_trailing_newline=True)
 templates.globals['versioned_resource'] = version_management.get_versioned_resource
 templates.globals['DEFINED_LOCALES'] = version_management.DEFINED_LOCALES
+templates.globals['CURSUS_LINKS'] = CURSUS_LINKS
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 app.mount('/resources', StaticFiles(directory='web/resources'), name='resources')
@@ -162,7 +163,6 @@ def pray_context(locale: str, locales: list[str], rite_date: str | None, prayer_
         'hour_select': '/officium-parvum-bmv' if select == 'officium-parvum-bmv' else '',
         'hour_votives': '' if len(votives) == 0 else f'?v={votives}',
         'script_text': {key: text[key] for key in PRAY_SCRIPT_TEXT_KEYS},
-        'CURSUS_LINKS': CURSUS_LINKS,
     }
 
 def render(template_name: str, **context: Any) -> HTMLResponse:

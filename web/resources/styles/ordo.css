@@ -1,0 +1,55 @@
+#ordo-date-controls {
+	/* The day buttons and the date picker share one height */
+	--ordo-date-control-height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+	margin-bottom: 12px;
+}
+
+#ordo-date-controls button, #ordo-date-picker {
+	height: var(--ordo-date-control-height);
+	box-sizing: border-box;
+}
+
+#ordo-date-controls button {
+	width: var(--ordo-date-control-height);
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#ordo-date-picker {
+	font-family: "Old Standard TT", times;
+	font-size: 18px;
+}
+
+#ordo-day {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+#ordo-day h2, #ordo-day p {
+	text-align: center;
+  color: var(--content-text-color);
+}
+
+#ordo-day h2 {
+	margin: 24px 0 6px 0;
+  color: var(--content-text-color);
+}
+
+/* Their paragraphs are spaced like any other text, and an empty container takes no space */
+#ordo-daytime-details, #ordo-evening-details {
+	display: contents;
+}
+
+.ordo-section-label {
+	font-style: italic;
+}
+
+#ordo-rite-links p {
+	margin: 4px 0;
+}

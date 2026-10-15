@@ -1,5 +1,5 @@
 import { signal, effect, batch, createModel } from '@preact/signals-core';
-import { officeHourPath } from './routing.js';
+import { officeHourPath } from './rite-paths.js';
 
 // /api/ordo responses for one set of votives, by date and time. Kept across ordo panel sessions; any change of votives
 // discards them all. Holds the pending promise, so simultaneous requests for a day share one fetch.

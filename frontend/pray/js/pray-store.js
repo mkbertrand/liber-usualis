@@ -1,5 +1,6 @@
 import { signal, computed, batch } from '@preact/signals-core';
-import { contentParameters, isRitePath, RITE_TITLES, makePath, nextHour, isCursus, suggestOccasion } from './routing.js';
+import { contentParameters, isRitePath, RITE_TITLES, nextHour, isCursus, suggestOccasion } from './routing.js';
+import { makePath } from '../../shared/js/rite-paths.js';
 
 async function fetchRite(path) {
   let contentParams = contentParameters(path);

@@ -1,3 +1,36 @@
+<!-- Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al. -->
+
+<script src='https://cdn.jsdelivr.net/npm/temporal-polyfill@0.3.0/global.min.js'></script>
+<script defer type="text/javascript" src={{ versioned_resource('/dist/ordo.js') }}></script>
 <div id="content-container">
   <h1>Ordo.</h1>
+  <div id="ordo-date-controls">
+    <button id="ordo-date-previous" type="button" aria-label="Dies prior"><svg class="icon small-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"/></svg></button>
+    <input id="ordo-date-picker" type="date" aria-label="Dies">
+    <button id="ordo-date-next" type="button" aria-label="Dies sequens"><svg class="icon small-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></button>
+  </div>
+  <div id="ordo-day">
+    <h2>Diurnale.</h2>
+    <p><span id="ordo-daytime-primarium"></span> &mdash; <span id="ordo-daytime-primarium-rank"></span></p>
+    <div id="ordo-daytime-details"></div>
+    <h2>Vesperale.</h2>
+    <p><span id="ordo-evening-primarium"></span> &mdash; <span id="ordo-evening-primarium-rank"></span></p>
+    <div id="ordo-evening-details"></div>
+    {# Paragraphs the page's script adds to a day's details only when they apply #}
+    <template id="ordo-psalmi-template">
+      <p class="ordo-section"><span class="ordo-section-label">Psalmi de</span> <span class="ordo-section-names"></span></p>
+    </template>
+    <template id="ordo-commemorations-template">
+      <p class="ordo-section"><span class="ordo-section-label">Commemorationes</span><br><span class="ordo-section-names"></span></p>
+    </template>
+    <template id="ordo-omissions-template">
+      <p class="ordo-section"><span class="ordo-section-label">Omissiones</span><br><span class="ordo-section-names"></span></p>
+    </template>
+    <h2>Horæ.</h2>
+    <div id="ordo-rite-links">
+      {% for hour, hour_name in CURSUS_LINKS %}
+      <p><a class="ordo-rite-link" href="/{{ locale }}/pray" data-occasion="{{ hour }}">{{ hour_name|safe }}</a></p>
+      {% endfor %}
+    </div>
+  </div>
 </div>

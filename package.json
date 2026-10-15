@@ -12,8 +12,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test frontend/pray/js/tests/",
-    "build": "esbuild frontend/kalendar/js/kalendar.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife && esbuild frontend/pray/js/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife && esbuild frontend/pray/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css && esbuild frontend/shared/css/style.css --bundle --minify --sourcemap --external:/resources/* --outfile=web/resources/dist/style.css",
+    "test": "node --test frontend/pray/js/tests/ frontend/shared/js/tests/",
+    "build": "esbuild frontend/kalendar/js/kalendar.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife && esbuild frontend/ordo/js/ordo.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife && esbuild frontend/pray/js/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife && esbuild frontend/pray/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css && esbuild frontend/shared/css/style.css --bundle --minify --sourcemap --external:/resources/* --outfile=web/resources/dist/style.css",
     "watch": "esbuild frontend/pray/js/pray.js --bundle --minify --sourcemap --outdir=web/resources/dist --format=iife && esbuild frontend/pray/css/pray.css --bundle --minify --sourcemap --outfile=web/resources/dist/pray.css && esbuild frontend/shared/css/style.css --bundle --minify --sourcemap --external:/resources/* --outfile=web/resources/dist/style.css"
   },
   "repository": {
