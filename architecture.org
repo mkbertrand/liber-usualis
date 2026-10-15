@@ -73,10 +73,10 @@
       best locale from =Accept-Language= (=version_management.localehunt()=),
       falling back to English.
     - =GET /<locale>/<page>= renders a top-level page (=index=, =de-anno=,
-      =kalendar=, =rubricae=, =pray=, =about=, =donate=,
-      =resources=). =index= uses =web/templates/menu.jinja=; =de-anno=, =kalendar=,
-      and =rubricae= use =latin-generic.jinja=; =pray= uses =pray.jinja=; the rest
-      use =generic.jinja=. A bare =/<locale>/pray= renders the pray page with no rite;
+      =kalendar=, =rubricae=, =ordo=, =pray=, =about=, =donate=, =resources=).
+      =index= uses =web/templates/menu.jinja=; =de-anno=, =kalendar=, =rubricae=,
+      and =ordo= use =latin-generic.jinja=; =pray= uses =pray.jinja=; the rest use
+      =generic.jinja=. A bare =/<locale>/pray= renders the pray page with no rite;
       the client then chooses the most relevant one and navigates to it.
     - =GET /<locale>/<officium|ritus>/<date>/<occasion>= and
       =GET /<locale>/<officium|ritus>/<date>/<select>/<occasion>= render a rite
@@ -412,74 +412,81 @@
    strings the script needs are written into a =pray-script-text= JSON block. Its
    state is held in =@preact/signals-core= signals:
 
-   - =frontend/pray-store.js= (=makePrayStore()=) owns rite and routing state:
-     =displayPath= (path and query string, moved as soon as a navigation starts),
-     =ritePath= (the rite whose text is on the page, moved together with =rite=
-     once it loads; the next-hour button and marking an hour prayed follow it),
-     =riteNavigationType= (the navigation type of that rite, moved with it, or at
-     once by =setNavigationType()=; the next-hour button is always forbidden in
-     hard navigation),
-     =rite=, the =opt= cookie tags,
+   - =frontend/shared/js/liturgy-store.js= (=makeLiturgyStore()=) owns liturgical
+     preferences shared across pages: currently the preferred votive offices,
+     persisted in =localStorage= under =votivePreferences= and changed through
+     =setVotives()= and =toggleVotive()=. It knows nothing of the pray page; the
+     page's =pray.js= creates it and passes it to the pray store and the bindings.
+   - =frontend/pray/js/pray-store.js= (=makePrayStore(liturgyStore)=) owns rite and
+     routing state: =displayPath= (path and query string, moved as soon as a
+     navigation starts), =ritePath= (the rite whose text is on the page, moved
+     together with =rite= once it loads; the next-hour button and marking an hour
+     prayed follow it), =riteNavigationType= (the navigation type of that rite,
+     moved with it, or at once by =setNavigationType()=; the next-hour button is
+     always forbidden in hard navigation), =rite=, the =opt= cookie tags,
      =navigationType=, the last completed cursus hour, and =now=. Derived values
-     (=contentParams=, and =nextHourButton= built by the pure =nextHourTarget()=) are =computed=
-     signals. Its actions (=navigateRite=, =returnToCurrent=, =toggleVotive=,
-     =setDesired=, =togglePriest=, =markHourAsDone=, =setNavigationType=, =init=,
-     =handlePopstate=) perform the history, cookie, storage, and =/api/rite= side
-     effects; =init()= sends a bare =/pray= visit to the most relevant rite
-     (=bestHour()=).
-     =/api/rite= responses are kept by date and occasion for the current context
-     (locale, select, votives, and the =opt= cookie) and discarded when it changes;
-     the server-rendered rite is the first entry, and pointing at a rite link
-     prefetches its rite through =prefetchRite()=.
-     =now= changes only through =updateNow()=. In soft navigation =pray.js=
-     schedules it for the next moment what may be said can change (midnight and
-     14:00, from =nextCanSayChange()=), and shows the outdated-content banner
-     when the displayed rite stops being sayable; hard navigation schedules
+     (=contentParams=, and =nextHourButton= built by the pure =nextHourTarget()=)
+     are =computed= signals. Its actions (=navigateRite=, =returnToCurrent=,
+     =toggleVotive=, =setDesired=, =togglePriest=, =markHourAsDone=,
+     =setNavigationType=, =init=, =handlePopstate=) perform the history, cookie,
+     storage, and =/api/rite= side effects; =init()= sends a bare =/pray= visit to
+     the most relevant rite (=bestHour()=), which takes its votives from the liturgy
+     store's preference. The URL's =v= parameter decides the votives of the rite
+     shown; =toggleVotive= saves the new preference to the liturgy store and then
+     navigates to the rite with those votives. =/api/rite= responses are kept by
+     date and occasion for the current context (locale, select, votives, and the
+     =opt= cookie) and discarded when it changes; the server-rendered rite is the
+     first entry, and pointing at a rite link prefetches its rite through
+     =prefetchRite()=. =now= changes only through =updateNow()=. In soft navigation
+     =pray.js= schedules it for the next moment what may be said can change
+     (midnight and 14:00, from =nextCanSayChange()=), and shows the outdated-content
+     banner when the displayed rite stops being sayable; hard navigation schedules
      nothing.
-   - =frontend/pray-display.js= (=makeDisplayStore()=) owns display-only state:
-     the persisted display toggles (stored under a legacy =_x_=-prefixed
+   - =frontend/pray/js/pray-display.js= (=makeDisplayStore()=) owns display-only
+     state: the persisted display toggles (stored under a legacy =_x_=-prefixed
      =localStorage= key) and which panels and menus are open.
-   - =frontend/pray-ordo.js= defines =OrdoModel= (=createModel=), the ordo panel's
-     browsing state: a date and votives that start from the page's rite, and the
-     =/api/ordo= responses for that date's diurnal and vesperal offices. =pray-view.js=
-     creates one, with the panel's bindings, each time the panel opens and disposes it
-     when it closes, so browsing never changes the page until a rite link is followed.
-   - =frontend/routing.js= holds pure path functions: parsing a rite path into
-     content parameters, building paths, cursus order, and suggested occasion.
-   - =frontend/pray-view.js= (=bindPrayPage()=) binds the server-rendered markup
-     to both stores. Each binding is an =effect= (state to DOM) or an event
-     listener (DOM to state), found by element id or data attribute. It also
-     rearranges the rite's parallel columns for line-by-line display
-     (=lineByLine()=). Links marked =data-rite-link= navigate in-page and keep the
-     current navigation type: hard keeps the chosen rite on reload, while soft lets
-     a reload move on to a more relevant rite. A link may name a type with
+   - =frontend/pray/js/pray-ordo.js= defines =OrdoModel= (=createModel=), the ordo
+     panel's browsing state: a date and votives that start from the page's rite, and
+     the =/api/ordo= responses for that date's diurnal and vesperal offices.
+     =pray-view.js= creates one, with the panel's bindings, each time the panel
+     opens and disposes it when it closes, so browsing never changes the page until
+     a rite link is followed.
+   - =frontend/pray/js/routing.js= holds pure path functions: parsing a rite path
+     into content parameters, building paths, cursus order, and suggested occasion.
+   - =frontend/pray/js/pray-view.js= (=bindPrayPage()=) binds the server-rendered
+     markup to the pray, liturgy, and display stores. Each binding is an =effect=
+     (state to DOM) or an event listener (DOM to state), found by element id or data
+     attribute. It also rearranges the rite's parallel columns for line-by-line
+     display (=lineByLine()=). Links marked =data-rite-link= navigate in-page and
+     keep the current navigation type: hard keeps the chosen rite on reload, while
+     soft lets a reload move on to a more relevant rite. A link may name a type with
      =data-rite-link="hard"= or ="soft"=; links followed from the ordo panel are
-     hard. =frontend/dom-bindings.js= provides the generic show/hide, focus-trap,
-     outside-click, and positioning helpers.
+     hard. =frontend/pray/js/dom-bindings.js= provides the generic show/hide,
+     focus-trap, outside-click, and positioning helpers.
    - On narrow screens (below the compact top bar's 1140px breakpoint) the second
      bar moves to the bottom and shows an hour picker in place of its row of hours.
      The picker's sheet holds the day's hours, the anticipated Matins, "Return to
      current", and the other rites; it reuses the same bindings, which cover every
-     copy of these controls, and =web/resources/pray/rite-links.jinja= supplies the
-     rite links to both the rites menu and the sheet.
+     copy of these controls. =pray.jinja= writes the rite links twice, into the
+     rites menu (=#rites-menu-wrapper=) and the sheet (=#hour-picker-rites=).
 
 ** Chant and Styles
 
-   =frontend/gabc-chant.js= defines the =<gabc-chant>= element, which renders its
-   GABC lazily with Exsurge, sharing one configured Exsurge context
-   (=frontend/chant-context.js= binds each score to it). When chant
-   display and the =play-chant= option are both enabled, tapping a rendered score
-   plays it through =frontend/chant-player.js=, a Web Audio sequencer over the
+   =frontend/pray/js/gabc-chant.js= defines the =<gabc-chant>= element, which
+   renders its GABC lazily with Exsurge, sharing one configured Exsurge context
+   (=frontend/pray/js/chant-context.js= binds each score to it). When chant display
+   and the =play-chant= option are both enabled, tapping a rendered score plays it
+   through =frontend/pray/js/chant-player.js=, a Web Audio sequencer over the
    Exsurge note list. Horizontal drag seeks the playhead to the nearest note;
    vertical swipe still scrolls the page. Playback is presentation-only.
 
-   The frontend sources are bundled from =frontend/pray.js= into
+   The frontend sources are bundled from =frontend/pray/js/pray.js= into
    =web/resources/dist/pray.js=; pray-page styles are bundled from
-   =frontend/css/pray/pray.css= into =web/resources/dist/pray.css=. Site-wide
-   styles (fonts, theme variables, top bar, shared components) are bundled from
-   =frontend/css/style/style.css= into =web/resources/dist/style.css=. Unbundled
+   =frontend/pray/css/pray.css= into =web/resources/dist/pray.css=. Site-wide styles
+   (fonts, theme variables, top bar, shared components) are bundled from
+   =frontend/shared/css/style.css= into =web/resources/dist/style.css=. Unbundled
    per-page styles live in =web/resources/styles/=, and
-   =web/resources/pray/css/pray-mobile.css= is added for mobile user agents.
+   =web/resources/styles/pray-mobile.css= is added for mobile user agents.
 
 ** Theme, Localization, and Other Pages
 
@@ -487,15 +494,17 @@
    stored or system theme as =data-theme= before the page is drawn and handles
    clicks on the top bar's =#dark-mode-toggle=; CSS shows the matching icon. The
    shared top bar (=web/resources/top-bar.jinja=) includes the locale selector
-   (=web/resources/locale-selector.jinja=), which reopens the same path in the chosen
-   locale.
+   (=web/resources/locale-selector.jinja=), which reopens the same path in the
+   chosen locale.
 
    Interface text lives in =web/locales/{locale}/= (=pages/= for each page,
-   =resources/= for shared pieces); =version_management.bestlocalized()= falls
-   back through the request's locales when a file is missing. Page bodies live in
-   =web/pages/=. Other pages are server-rendered Jinja templates; the kalendar
-   page builds its table from =/api/kalendar= with
-   =web/resources/js/kalendargen.js=.
+   =resources/= for shared pieces); =version_management.bestlocalized()= falls back
+   through the request's locales when a file is missing. Page bodies live in
+   =web/pages/=. Other pages are server-rendered Jinja templates; the kalendar page
+   builds its table from =/api/kalendar= with =frontend/kalendar/js/kalendar.js=,
+   bundled into =web/resources/dist/kalendar.js= and loaded deferred, which renders
+   the table once the document is parsed. The =ordo= page is currently a
+   placeholder.
 
 * Tagging System
 
@@ -552,8 +561,8 @@
   A normal frontend request for Matins follows this sequence:
 
   #+BEGIN_EXAMPLE
-  1. A rite link calls navigateRite() in frontend/pray-store.js, which pushes the
-     URL and requests /api/rite?loc=...&date=...&s=...&occasion=matutinum-laudes+officium&v=...
+  1. A rite link calls navigateRite() in frontend/pray/js/pray-store.js, which
+     pushes the URL and requests /api/rite?loc=...&date=...&s=...&occasion=matutinum-laudes+officium&v=...
      (unless the rite is already cached, e.g. prefetched on hover).
   2. server.py maps the locale to a translation and reads the opt cookie.
   3. datamanage.rite_request() resolves the day's tag sets with daily_tagger
@@ -575,7 +584,7 @@
     against golden output, =test_data_content.py= checks the data files,
     =test_ordo.py= covers =datamanage.ordo()=, and =kalendar/= has its own
     kalendar, daily-tagger, and Easter tests.
-  - Frontend tests run with =npm test= (=node --test frontend/tests/=) and cover
+  - Frontend tests run with =npm test= (=node --test frontend/pray/js/tests/=) and cover
     routing, the pray store's pure functions, the ordo panel, and chant.
 
 * Infrastructure
@@ -632,15 +641,18 @@
   | =renderer/psalmify.py=                       | Psalm formatting and pointing                   |
   | =renderer/chomp.py=                          | GABC preparation for display                    |
   | =web/templates/pray.jinja=                   | Pray page shell and first server-side rite      |
-  | =frontend/pray.js=                           | Frontend bundle entry point                     |
-  | =frontend/pray-store.js=                     | Rite and routing state                          |
-  | =frontend/pray-display.js=                   | Display preferences and panel state             |
-  | =frontend/pray-view.js=                      | DOM bindings for the pray page                  |
-  | =frontend/pray-ordo.js=                      | Ordo panel model and =/api/ordo= access         |
-  | =frontend/routing.js=                        | Pure rite-path functions                        |
-  | =frontend/gabc-chant.js=                     | Exsurge GABC custom element                     |
-  | =frontend/chant-player.js=                   | Click-to-play Web Audio sequencer               |
-  | =frontend/css/=                              | Bundled pray-page and site-wide styles          |
+  | =frontend/pray/js/pray.js=                   | Pray page bundle entry point                    |
+  | =frontend/shared/js/liturgy-store.js=        | Shared liturgical preferences (votives)         |
+  | =frontend/pray/js/pray-store.js=             | Rite and routing state                          |
+  | =frontend/pray/js/pray-display.js=           | Display preferences and panel state             |
+  | =frontend/pray/js/pray-view.js=              | DOM bindings for the pray page                  |
+  | =frontend/pray/js/pray-ordo.js=              | Ordo panel model and =/api/ordo= access         |
+  | =frontend/pray/js/routing.js=                | Pure rite-path functions                        |
+  | =frontend/pray/js/gabc-chant.js=             | Exsurge GABC custom element                     |
+  | =frontend/pray/js/chant-player.js=           | Click-to-play Web Audio sequencer               |
+  | =frontend/pray/css/=                         | Bundled pray-page styles                        |
+  | =frontend/shared/css/=                       | Bundled site-wide styles                        |
+  | =frontend/kalendar/js/kalendar.js=           | Kalendar page table                             |
   | =web/locales/{locale}/=                      | Localized interface text                        |
   | =data/{book}/tagged/=                        | Tagged liturgical content                       |
   | =data/{book}/untagged/=                      | Untagged text and GABC resources                |
