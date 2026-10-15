@@ -1,6 +1,7 @@
 // Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
 import { effect } from '@preact/signals-core';
+import { makeLiturgyStore } from './../../shared/js/liturgy-store.js';
 import { initChantElement } from './gabc-chant.js';
 import { makePrayStore, canSay, nextCanSayChange } from './pray-store.js';
 import { makeDisplayStore } from './pray-display.js';
@@ -9,12 +10,13 @@ import { bindPrayPage, makeBanner } from './pray-view.js';
 initChantElement();
 
 // Runs once the document is parsed (the bundle is loaded with defer)
-const store = makePrayStore();
+const liturgyStore = makeLiturgyStore();
+const store = makePrayStore(liturgyStore);
 const display = makeDisplayStore();
 display.persist();
 // Before binding, so that every binding's first run already sees a rite path
 store.init();
-bindPrayPage(store, display);
+bindPrayPage(store, liturgyStore, display);
 // Soft navigation promises current content, so the clock is advanced exactly when what may be said can change. Hard
 // navigation makes no such promise, so nothing is scheduled. Rescheduled each time the clock moves.
 effect(() => {

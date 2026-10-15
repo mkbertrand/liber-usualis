@@ -225,7 +225,7 @@ function bindSideBySideShareSlider(display) {
   slider.addEventListener('input', () => display.setDisplayParameter('sideBySideLatinShare', Number(slider.value)));
 }
 
-function bindOptionsPanel(store, display) {
+function bindOptionsPanel(store, liturgyStore, display) {
   bindDisplayParameterCheckbox(display, 'translation-toggle', 'showTranslation');
   bindDisplayParameterCheckbox(display, 'side-by-side-toggle', 'sideBySide', 'showTranslation');
   bindDisplayParameterCheckbox(display, 'chant-toggle', 'chant');
@@ -243,7 +243,7 @@ function bindOptionsPanel(store, display) {
 
   for (let checkbox of document.querySelectorAll('input[data-votive]')) {
     effect(() => {
-      checkbox.checked = store.contentParams.value.votives.includes(checkbox.dataset.votive);
+      checkbox.checked = liturgyStore.votives.value.includes(checkbox.dataset.votive);
     });
     checkbox.addEventListener('change', () => store.toggleVotive(checkbox.dataset.votive));
   }
@@ -345,14 +345,14 @@ function bindOrdo(store, display) {
   }
 }
 
-export function bindPrayPage(store, display) {
+export function bindPrayPage(store, liturgyStore, display) {
   bindOverlayPanel(document.getElementById('options-panel-background'), document.getElementById('options-panel-wrapper'), document.getElementById('options-gear-button'), display.optionsPanelOpen, display.toggleOptionsPanel, display.closeOptionsPanel);
   bindOverlayPanel(document.getElementById('ordo-panel-background'), document.getElementById('ordo-panel-wrapper'), document.getElementById('ordo-panel-toggle-button'), display.ordoPanelOpen, display.toggleOrdoPanel, display.closeOrdoPanel);
   bindRitesMenu(store, display);
   bindRite(store, display);
   bindNextHour(store);
   bindHourLinks(store);
-  bindOptionsPanel(store, display);
+  bindOptionsPanel(store, liturgyStore, display);
   bindRiteLinks(store);
   bindRitePrefetch(store);
   bindOrdo(store, display);

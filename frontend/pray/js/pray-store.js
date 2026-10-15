@@ -13,7 +13,7 @@ function dayTitle(rite) {
   return match ? match[1].replace(/\.$/, '') : '';
 }
 
-export function makePrayStore() {
+export function makePrayStore(liturgyStore) {
   // Always a rite path once init() has run, since a bare /pray visit is immediately redirected; bindings rely on this
   const displayPath = signal(window.location.pathname + window.location.search);
   // Document is hydrated (after a manner of speaking) so initial value of rite should be the already-provided HTML. Rites
@@ -136,10 +136,10 @@ export function makePrayStore() {
         date: currentNow.toPlainDate(),
         select: 'primarium',
         occasion: suggestOccasion(currentNow),
-        votives: []
+        votives: liturgyStore.votives.value
       }
     } else {
-      return {...nextHour(lastCursusHour.value), locale: locale, prayerType: 'officium'};
+      return {...nextHour(lastCursusHour.value), locale: locale, prayerType: 'officium', votives: liturgyStore.votives.value };
     }
   }
 
@@ -212,8 +212,8 @@ export function makePrayStore() {
     },
     toggleVotive: async (tag) => {
       let current = contentParams.value;
-      let votives = current.votives.includes(tag) ? current.votives.filter(v => v != tag) : [...current.votives, tag];
-      await navigateRite(makePath({...current, votives: votives}));
+      liturgyStore.toggleVotive(tag);
+      await navigateRite(makePath({...current, votives: liturgyStore.votives.value}));
     },
     setDesired: async (select, optTag) => {
       let current = contentParams.value;
