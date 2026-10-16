@@ -148,7 +148,10 @@ class RiteRenderer:
         caput = element.get('caput') if isinstance(element, dict) else None
         if caput is not None and any(t not in ('caput', 'sectio', 'annotatio') and uniquelyhas(t) for t in caput['tags']):
             header = unpack(caput)
-            if header is None or isinstance(header, list):
+            # Composite names (e.g. "Dominica " + basis-nominis) unpack to their parts
+            if isinstance(header, list) and all(isinstance(part, str) for part in header):
+                header = ''.join(header)
+            if not isinstance(header, str):
                 return
             if 'annotatio' in caput['tags']:
                 self.make_heading_annotation(abbreviate_name(header))

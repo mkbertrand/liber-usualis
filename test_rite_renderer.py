@@ -41,3 +41,13 @@ def test_litany_response_opening_a_paragraph_is_its_own_line() -> None:
 def test_non_response_elements_still_start_a_new_line() -> None:
     latin, _ = render_lines(['Kýrie eléison.', {'tags': frozenset({'litaniae-sanctorum', 'formula'}), 'datum': 'Christe eléison.'}])
     assert latin == ['Kýrie eléison.', 'Christe eléison.']
+
+def test_composite_commemoration_name_renders_as_heading() -> None:
+    caput = {'tags': frozenset({'formula-commemorationis', 'formula', 'caput', 'annotatio'}), 'datum': {'tags': frozenset({'dominica', 'nomen'}), 'datum': [
+        'Dominica ', {'tags': frozenset({'basis-nominis', 'hebdomada-vi-epiphaniae'}), 'datum': 'VI quæ superfuit post Epiphaniam'}
+    ]}}
+    element = {'tags': frozenset({'formula-commemorationis', 'formula'}), 'datum': 'Orémus.', 'caput': caput}
+    renderer = RiteRenderer({})
+    renderer.recurse_rite(element, None, frozenset({'ritus'}))
+    renderer.close_paragraph()
+    assert 'Dominica VI quæ superfuit post Epiphaniam' in ''.join(renderer.rite)
