@@ -156,13 +156,16 @@
     ]
   },
   {
-    "tags":[
-      ["officium","vesperae"],
-      ["officium","vesperae","sine-ritibus"]
-    ],
+    "tags":["officium","vesperae"],
     "datum":[
       ["aperi-domine"],
       ["ritus","vesperae","officium-parvum-bmv","occurrens","sine-dismissione"],
+      ["ritus","vesperae"],
+      ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
+      ["sacrosanctae"]
+    ],
+    "sine-ritibus":[
+      ["aperi-domine"],
       ["ritus","vesperae"],
       ["ritus","antiphona-bmv","antiphona-bmv-temporis","occurrens"],
       ["sacrosanctae"]
