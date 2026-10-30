@@ -52,3 +52,10 @@ def test_json_endpoints_are_served_as_json() -> None:
     assert response.status_code == 200
     assert response.headers['content-type'] == 'application/json'
     assert 'tags' in response.json()
+
+def test_head_requests_answer_like_get() -> None:
+    for path in ['/', '/robots.txt', '/en/about', '/api/ordo?date=2026-10-30&time=diurnale', '/en/nonexistent']:
+        head = client.head(path)
+        get = client.get(path)
+        assert head.status_code == get.status_code, path
+        assert head.content == b'', path

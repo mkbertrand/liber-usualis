@@ -188,20 +188,20 @@ async def http_error(request: Request, exc: StarletteHTTPException) -> Response:
         return HTMLResponse('Error 404', status_code=404)
     return await http_exception_handler(request, exc)
 
-@app.get('/robots.txt')
+@app.api_route('/robots.txt', methods=['GET', 'HEAD'])
 def robots() -> FileResponse:
     return FileResponse('web/resources/robots.txt', media_type='text/plain')
 
-@app.get('/')
+@app.api_route('/', methods=['GET', 'HEAD'])
 def index() -> RedirectResponse:
     return RedirectResponse('/index', status_code=303)
 
-@app.get('/api/ordo')
+@app.api_route('/api/ordo', methods=['GET', 'HEAD'])
 def ordo(date: str | None = None, time: str | None = None, votives: str = '') -> Response:
     return Response(util.dump_data(datamanage.ordo(date, time, votives)), media_type='application/json')
 
 # Returns raw JSON so that frontend can format it as it will
-@app.get('/api/composer')
+@app.api_route('/api/composer', methods=['GET', 'HEAD'])
 def composer(date: str | None = None, rite: str | None = None, opt: str = '', select: str = 'primarium', translation: str = 'none', votives: str = '') -> Response:
     try:
         return Response(util.dump_data(datamanage.rite_request(date, rite, opt, select, translation, votives)), media_type='application/json')
@@ -209,7 +209,7 @@ def composer(date: str | None = None, rite: str | None = None, opt: str = '', se
         traceback.print_exc()
         return error_page('Error incognitus.')
 
-@app.get('/api/rite')
+@app.api_route('/api/rite', methods=['GET', 'HEAD'])
 def rite(date: str | None = None, occasion: str | None = None, loc: str = 'none', s: str = 'primarium', v: str = '', opt: str = Cookie('')) -> HTMLResponse:
     try:
         return HTMLResponse(datamanage.rendered_rite_request(date, occasion, opt, s, translation_for_locale(loc), v))
@@ -217,20 +217,20 @@ def rite(date: str | None = None, occasion: str | None = None, loc: str = 'none'
         traceback.print_exc()
         return error_page('Error incognitus.')
 
-@app.get('/api/kalendar')
+@app.api_route('/api/kalendar', methods=['GET', 'HEAD'])
 def kal() -> Response:
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
         return Response(datamanage.getdisplaykalendar(datamanage.DEFAULT_CORPUS), media_type='application/json')
 
-@app.get('/{page}')
+@app.api_route('/{page}', methods=['GET', 'HEAD'])
 def bounce_to_locale(page: str, accept_language: str | None = Header(None)) -> RedirectResponse:
     if page not in TOP_LEVEL_PAGES:
         raise HTTPException(status_code=404)
     locales = request_locales(None, accept_language)
     return RedirectResponse(f'/{[loc for loc in locales if loc in version_management.DEFINED_LOCALES][0]}/{page}', status_code=303)
 
-@app.get('/{preferred_locale}/{page}')
+@app.api_route('/{preferred_locale}/{page}', methods=['GET', 'HEAD'])
 def local_page(preferred_locale: str, page: str, accept_language: str | None = Header(None), user_agent: str = Header('')) -> HTMLResponse:
     if preferred_locale not in version_management.DEFINED_LOCALES or page not in TOP_LEVEL_PAGES:
         raise HTTPException(status_code=404)
@@ -241,11 +241,11 @@ def local_page(preferred_locale: str, page: str, accept_language: str | None = H
     template_name, context = page_context(page, locales)
     return render(template_name, **shell_context(page, locales), **context)
 
-@app.get('/{preferred_locale}/{prayer_type}/{rite_date}/{occasion}')
+@app.api_route('/{preferred_locale}/{prayer_type}/{rite_date}/{occasion}', methods=['GET', 'HEAD'])
 def pray(preferred_locale: str, prayer_type: str, rite_date: str, occasion: str, v: str = '', opt: str = Cookie(''), accept_language: str | None = Header(None), user_agent: str = Header('')) -> HTMLResponse:
     return pray_page(preferred_locale, prayer_type, rite_date, 'primarium', occasion, v, opt, accept_language, user_agent)
 
-@app.get('/{preferred_locale}/{prayer_type}/{rite_date}/{select}/{occasion}')
+@app.api_route('/{preferred_locale}/{prayer_type}/{rite_date}/{select}/{occasion}', methods=['GET', 'HEAD'])
 def pray_select(preferred_locale: str, prayer_type: str, rite_date: str, select: str, occasion: str, v: str = '', opt: str = Cookie(''), accept_language: str | None = Header(None), user_agent: str = Header('')) -> HTMLResponse:
     if select not in SELECT:
         raise HTTPException(status_code=404)

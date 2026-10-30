@@ -173,9 +173,20 @@ may also set `libu.domain`, which nginx serves and which defaults to
 ```
 
 Images are then built with
-`nixos-rebuild build-image --flake .#libu-private --image-variant linode`. To manage
-the installed host with `nixos-rebuild switch`, extend `libu-linode` instead, with
-a module overriding `fileSystems` and `swapDevices` for that host's disks.
+`nixos-rebuild build-image --flake .#libu-private --image-variant linode`.
+
+A host installed from an image is updated with `nixos-rebuild switch` against the
+configuration its image variant was built from, which adds the variant's module
+(disks, boot loader, host name) to the private configuration. In the private flake:
+
+```nix
+nixosConfigurations.libu-private-linode = libu-private.extendModules {
+  modules = [ libu-private.config.image.modules.linode ];
+};
+```
+
+`libu-linode` is only for a host whose disks match `nix/linode-hw.nix`; switching an
+image-installed Linode to it leaves the host unbootable.
 ## deploy image to proxmox
 ```bash
 nix build .#libu-proxmox;
@@ -226,11 +237,12 @@ aws ec2 register-image \
 The snapshot import may take around 30 minutes. An alternative is to deploy the
 private flake to an existing NixOS EC2 instance with `nixos-rebuild`.
 # Rebuilding/Deploying with Nix
-From the private flake's directory, with a configuration extending `libu-linode`:
+From the private flake's directory, with the host configuration described in
+[Private deployment flake](#private-deployment-flake):
 ```bash
 export host="YOUR_HOSTNAME_OR_IP_HERE";
 nixos-rebuild switch \
-  --flake ".#libu-private" \
+  --flake ".#libu-private-linode" \
   --target-host "master@$host" \
-  --use-remote-sudo
+  --sudo
 ```

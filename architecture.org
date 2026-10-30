@@ -67,6 +67,9 @@
 
 ** HTTP API: =server.py=
 
+   Every route also answers =HEAD= (headers only, as for =GET=), so uptime monitors
+   and link checkers see the same status a browser does.
+
 *** Pages
 
     - =GET /= redirects to =/index=; =GET /<page>= redirects to the same page in the
@@ -610,7 +613,7 @@
 
   On a deployed host, the oneshot =libu-setup= service copies the application
   into =/var/lib/libu=, and the =libu= service then runs =server.py=
-  there as the =libu= system user. nginx terminates TLS and proxies to it on
+  there as the =libu= system user; a new application build restarts both. nginx terminates TLS and proxies to it on
   =127.0.0.1:8080= for the domain in the =libu.domain= option (default
   =liberusualis.org=), redirecting =www.<domain>= to it. The repository holds no
   SSH keys: the =libu.authorizedKeys= option, which has no default and must be

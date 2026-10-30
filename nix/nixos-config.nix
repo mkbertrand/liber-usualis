@@ -86,7 +86,6 @@ in
         tree
         wget
       ];
-      initialHashedPassword = "$6$YRItpShEzQ4/hiUt$cYKAIWY906xWz2ZqbgSq6F070it0NOPfqGF.sbEuSMtiVdMpx43i4RelYeQP/DfIgAy/G/7isuCgGnmdH09QB1";
       openssh.authorizedKeys.keys = config.libu.authorizedKeys;
     };
     users.groups.master = { };
@@ -96,8 +95,14 @@ in
       wheelNeedsPassword = false;
     };
 
-    # Enable the OpenSSH daemon.
-    services.openssh.enable = true;
+    # Key-only logins: master has no password
+    services.openssh = {
+      enable = true;
+      settings = {
+        PasswordAuthentication = false;
+        KbdInteractiveAuthentication = false;
+      };
+    };
 
     environment.systemPackages = with pkgs; [
       neovim
@@ -217,6 +222,8 @@ in
         wantedBy = [ "multi-user.target" ];
         after = [ "libu-setup.service" ];
         requires = [ "libu-setup.service" ];
+        # A deploy that changes only the application leaves this unit's command unchanged; restart it anyway
+        restartTriggers = [ libu_app ];
         serviceConfig = {
           ExecStart = "${python_env}/bin/python /var/lib/libu/server.py";
           Restart = "always";
