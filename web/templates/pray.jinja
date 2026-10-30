@@ -7,7 +7,7 @@
 		{% if rite_title_for_head == '' %}
 		<title>{{ text['title'] }}</title>
 		{% else %}
-		<title>{{ rite_title_for_head }} | {{ day_title }} | Liber Usualis</title>
+		<title>{{ rite_title_for_head }} | {{ day_title }}</title>
 		{% endif %}
 		{% if not server_rendered %}
 		<meta name="robots" content="noindex, nofollow">
@@ -17,9 +17,10 @@
 			"@context":"https://schema.org",
 			"@type":"WebSite",
 			"name":"Liber Usualis",
-			"url":"https://liberusualis.org/"
+			"url":"{{ SITE_URL }}/"
 		}
 		</script>
+		<link rel="canonical" href="{{ SITE_URL }}{{ canonical_path }}">
     {% include 'web/resources/themer.jinja' %}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">

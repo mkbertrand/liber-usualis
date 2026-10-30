@@ -42,12 +42,15 @@ CURSUS_OCCASIONS = ['matutinum-laudes', 'prima', 'tertia', 'sexta', 'nona', 'ves
 RITE_TITLES = {'matutinum-laudes': 'Matutinum \N{AMPERSAND} Laudes', 'prima': 'Prima', 'tertia': 'Tertia', 'sexta': 'Sexta', 'nona': 'Nona', 'vesperae': 'Vesperæ', 'completorium': 'Completorium', 'psalmi-graduales': 'Psalmi Graduales', 'psalmi-poenitentiales': 'Psalmi Pœnitentiales', 'ordo-commendationis-animae': 'Ordo Commendationis Animæ', 'formula-indulgentiam-articulo-mortis': 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis', 'pro-prandio': 'Benedictio Mensæ (Pro Prandio)', 'pro-coena': 'Benedictio Mensæ (Pro Cœna)', 'itinerarium': 'Itinerarium Clericorum'}
 # The hours as linked from the pray page, labelled as HTML
 CURSUS_LINKS = [('matutinum-laudes', 'Matutinum &amp; Laudes'), ('prima', 'Prima'), ('tertia', 'Tertia'), ('sexta', 'Sexta'), ('nona', 'Nona'), ('vesperae', 'Vesperæ'), ('completorium', 'Completorium')]
+# The site's public address, for metadata and canonical links whichever domain serves the page
+SITE_URL = 'https://breviary.cc'
 PRAY_SCRIPT_TEXT_KEYS = ['banner-remain-here', 'suboptimal-content-banner-message', 'suboptimal-content-banner-go', 'outdated-content-banner-message', 'outdated-content-banner-go']
 
 templates = Environment(loader=FileSystemLoader('.'), autoescape=True, trim_blocks=True, lstrip_blocks=True, keep_trailing_newline=True)
 templates.globals['versioned_resource'] = version_management.get_versioned_resource
 templates.globals['DEFINED_LOCALES'] = version_management.DEFINED_LOCALES
 templates.globals['CURSUS_LINKS'] = CURSUS_LINKS
+templates.globals['SITE_URL'] = SITE_URL
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 app.mount('/resources', StaticFiles(directory='web/resources'), name='resources')
@@ -77,11 +80,12 @@ def page_title(page: str, locales: list[str]) -> str:
 def is_mobile(user_agent: str) -> bool:
     return any(k in user_agent.lower() for k in MOBILE_USER_AGENT_KEYWORDS)
 
-def shell_context(page: str, locales: list[str]) -> dict[str, Any]:
+def shell_context(page: str, locales: list[str], canonical_path: str) -> dict[str, Any]:
     locale = locales[0]
     return {
         'page': page,
         'locale': locale,
+        'canonical_path': canonical_path,
         'title': page_title(page, locales),
         'top_bar_text': load_json(f'web/locales/{locale}/resources/top-bar.json'),
     }
@@ -236,10 +240,10 @@ def local_page(preferred_locale: str, page: str, accept_language: str | None = H
         raise HTTPException(status_code=404)
     locales = request_locales(preferred_locale, accept_language)
     if page == 'pray':
-        return render('web/templates/pray.jinja', **shell_context(page, locales), mobile=is_mobile(user_agent),
+        return render('web/templates/pray.jinja', **shell_context(page, locales, f'/{preferred_locale}/{page}'), mobile=is_mobile(user_agent),
                       **pray_context(locales[0], locales, None, None, None, '', 'primarium', 'none', '', True, date.today()))
     template_name, context = page_context(page, locales)
-    return render(template_name, **shell_context(page, locales), **context)
+    return render(template_name, **shell_context(page, locales, f'/{preferred_locale}/{page}'), **context)
 
 @app.api_route('/{preferred_locale}/{prayer_type}/{rite_date}/{occasion}', methods=['GET', 'HEAD'])
 def pray(preferred_locale: str, prayer_type: str, rite_date: str, occasion: str, v: str = '', opt: str = Cookie(''), accept_language: str | None = Header(None), user_agent: str = Header('')) -> HTMLResponse:
@@ -256,8 +260,10 @@ def pray_page(preferred_locale: str, prayer_type: str, rite_date: str, select: s
         raise HTTPException(status_code=404)
     locales = request_locales(preferred_locale, accept_language)
     today = date.today()
-    server_rendered = datamanage.is_server_rendered(datetime.strptime(rite_date, '%Y-%m-%d').date(), today)
-    return render('web/templates/pray.jinja', **shell_context('pray', locales), mobile=is_mobile(user_agent),
+    pdate = datetime.strptime(rite_date, '%Y-%m-%d').date()
+    server_rendered = datamanage.is_server_rendered(pdate, today)
+    canonical_path = f"/{preferred_locale}/{prayer_type}/{pdate}{'' if select == 'primarium' else f'/{select}'}/{occasion}{f'?v={votives}' if votives else ''}"
+    return render('web/templates/pray.jinja', **shell_context('pray', locales, canonical_path), mobile=is_mobile(user_agent),
                   **pray_context(locales[0], locales, rite_date, prayer_type, occasion, options, select, translation_for_locale(locales[0]), votives, server_rendered, today))
 
 if __name__ == '__main__':

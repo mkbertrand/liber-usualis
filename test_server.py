@@ -59,3 +59,17 @@ def test_head_requests_answer_like_get() -> None:
         get = client.get(path)
         assert head.status_code == get.status_code, path
         assert head.content == b'', path
+
+def test_pages_link_their_canonical_address() -> None:
+    for path, canonical in [
+        ('/en/about', 'https://breviary.cc/en/about'),
+        ('/en/ordo', 'https://breviary.cc/en/ordo'),
+        ('/en/index', 'https://breviary.cc/en/index'),
+        ('/en/pray', 'https://breviary.cc/en/pray'),
+        ('/en/officium/2026-10-30/vesperae?v=de-joseph', 'https://breviary.cc/en/officium/2026-10-30/vesperae?v=de-joseph'),
+        ('/la/officium/2026-11-2/officium-defunctorum/vesperae', 'https://breviary.cc/la/officium/2026-11-02/officium-defunctorum/vesperae'),
+    ]:
+        response = client.get(path)
+        assert response.status_code == 200, path
+        assert f'<link rel="canonical" href="{canonical}">' in response.text, path
+        assert '"url":"https://breviary.cc/"' in response.text, path

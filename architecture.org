@@ -70,6 +70,12 @@
    Every route also answers =HEAD= (headers only, as for =GET=), so uptime monitors
    and link checkers see the same status a browser does.
 
+   Every page links its canonical address, =SITE_URL= (=https://breviary.cc=) plus
+   the page's path, whichever domain serves it; rite pages leave out the
+   =primarium= select and zero-pad the date, as =makePath()= does, and the pray
+   page's script updates the link on each soft navigation. The schema.org
+   =WebSite= metadata in each template uses the same =SITE_URL=.
+
 *** Pages
 
     - =GET /= redirects to =/index=; =GET /<page>= redirects to the same page in the
