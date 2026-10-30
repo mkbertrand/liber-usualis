@@ -40,7 +40,20 @@ in
     description = "Domain served by nginx; www.<domain> redirects to it.";
   };
 
+  # No default: each deployment's private flake supplies the keys allowed to log in as master
+  options.libu.authorizedKeys = lib.mkOption {
+    type = lib.types.listOf lib.types.str;
+    description = "SSH public keys authorized for the master user.";
+  };
+
   config = {
+
+    assertions = [
+      {
+        assertion = config.libu.authorizedKeys != [ ];
+        message = "libu.authorizedKeys must list at least one SSH public key.";
+      }
+    ];
 
     # set ntp
     services.chrony.enable = lib.mkDefault true;
@@ -74,11 +87,7 @@ in
         wget
       ];
       initialHashedPassword = "$6$YRItpShEzQ4/hiUt$cYKAIWY906xWz2ZqbgSq6F070it0NOPfqGF.sbEuSMtiVdMpx43i4RelYeQP/DfIgAy/G/7isuCgGnmdH09QB1";
-      openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHANoftEQ3KqBK2UegRTWFVmLyJSYqzYAhbLgIqrtS7T master@vm-nixos-mywebsite"
-        "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAG8NzNAYDdt66g3YlH9/JpemTq87v5auOVQMJ128U78Kwyc9Dq8vYELxpglHWg4ILwmNp8mgAC9tDnmNI24PY1RgQG7Mq2cIciPPf8B8ebR3v0nMi5KHRR5cCf7FXpPqbPMAuqzz748gnCkpGypdquz2Psywxe02b/jwLDNrhoKORmJiA== vir@nixos"
-        "ADD YOUR PUBKEY HERE"
-      ];
+      openssh.authorizedKeys.keys = config.libu.authorizedKeys;
     };
     users.groups.master = { };
 

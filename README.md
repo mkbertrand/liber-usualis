@@ -90,10 +90,16 @@ nixpkgs. Existing package aliases remain available:
 | `libu-iso` | bootable application ISO |
 | `libu-install-iso` | NixOS installer ISO |
 
-Build an alias with `nix build .#libu-linode`, or use the native image interface:
+This repository holds no SSH keys. Every deployment sets `libu.authorizedKeys`
+(the keys allowed to log in as `master`) in a private flake, so these outputs only
+evaluate from one; see [Private deployment flake](#private-deployment-flake). Run
+the commands below from that flake's directory, building its configuration
+instead of the alias (e.g.
+`nix build .#nixosConfigurations.libu-private.config.system.build.images.linode`
+for `nix build .#libu-linode`), or use the native image interface:
 
 ```bash
-nixos-rebuild build-image --flake .#libu-images --image-variant linode
+nixos-rebuild build-image --flake .#libu-private --image-variant linode
 ```
 
 ## Deploy to Linode
@@ -144,24 +150,30 @@ echo "configid: $CONFIG_ID";
 linode-cli linodes config-update "$LINODE_ID" "$CONFIG_ID" --kernel "linode/grub2" --booted false;
 linode-cli linodes boot "$LINODE_ID" --config_id "$CONFIG_ID";
 ```
-### Serve a different domain
-nginx serves the `libu.domain` NixOS option, which defaults to `liberusualis.org`.
-To deploy under another domain (for example a test host) without adding that host
-to this repository, extend one of the configurations from a separate flake:
+### Private deployment flake
+Per-deployment settings live in a separate flake that is kept out of this
+repository. It must set `libu.authorizedKeys`; evaluation fails without it. It
+may also set `libu.domain`, which nginx serves and which defaults to
+`liberusualis.org` (for example a test host):
 
 ```nix
 {
   inputs.libu.url = "github:mkbertrand/liber-usualis";
   outputs = { libu, ... }: {
-    nixosConfigurations.libu-test = libu.nixosConfigurations.libu-images.extendModules {
-      modules = [ { libu.domain = "test.liberusualis.org"; } ];
+    nixosConfigurations.libu-private = libu.nixosConfigurations.libu-images.extendModules {
+      modules = [
+        {
+          libu.authorizedKeys = [ "ssh-ed25519 AAAA... you@yourmachine" ];
+          libu.domain = "test.liberusualis.org";
+        }
+      ];
     };
   };
 }
 ```
 
 Images are then built with
-`nixos-rebuild build-image --flake .#libu-test --image-variant linode`. To manage
+`nixos-rebuild build-image --flake .#libu-private --image-variant linode`. To manage
 the installed host with `nixos-rebuild switch`, extend `libu-linode` instead, with
 a module overriding `fileSystems` and `swapDevices` for that host's disks.
 ## deploy image to proxmox
@@ -212,12 +224,13 @@ aws ec2 register-image \
 
 ```
 The snapshot import may take around 30 minutes. An alternative is to deploy the
-public or private flake to an existing NixOS EC2 instance with `nixos-rebuild`.
+private flake to an existing NixOS EC2 instance with `nixos-rebuild`.
 # Rebuilding/Deploying with Nix
+From the private flake's directory, with a configuration extending `libu-linode`:
 ```bash
 export host="YOUR_HOSTNAME_OR_IP_HERE";
 nixos-rebuild switch \
-  --flake ".#libu-linode" \
+  --flake ".#libu-private" \
   --target-host "master@$host" \
   --use-remote-sudo
 ```
