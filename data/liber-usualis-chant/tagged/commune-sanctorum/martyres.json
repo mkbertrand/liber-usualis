@@ -1,0 +1,69 @@
+[
+  {
+    "tags":["martyres","antiphona"],
+		"antiphona-i":[["/antiphonae/1821"]],
+		"antiphona-ii":[["/antiphonae/2338"]],
+		"antiphona-iii":[["/antiphonae/2746"]],
+		"antiphona-iv":[["/antiphonae/2051"]],
+		"antiphona-v":[["/antiphonae/1897"]]
+  },
+  {
+		"tags":["martyres","hymnus"],
+		"vesperae":[["/hymni/2571"]],
+    "datum":[["/hymni/EXPMEXH_dcrochu"]],
+		"laudes":[["/hymni/2790"]]
+  },
+  {
+		"tags":["martyres","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2682"]]
+  },
+  {
+		"tags":["martyres","matutinum","nocturna-i","antiphona"],
+    "antiphona-i":[["/antiphonae/PMEXN1A1"]],
+    "antiphona-ii":[["/antiphonae/PMEXN1A2"]],
+    "antiphona-iii":[["/antiphonae/PMEXN1A3"]]
+  },
+  {
+		"tags":["martyres","matutinum","nocturna-ii","antiphona"],
+    "antiphona-i":[["/antiphonae/PMEXN2A1"]],
+    "antiphona-ii":[["/antiphonae/PMEXN2A2"]],
+    "antiphona-iii":[["/antiphonae/PMEXN2A3"]]
+  },
+  {
+		"tags":["martyres","matutinum","nocturna-iii","antiphona"],
+    "antiphona-i":[["/antiphonae/PMEXN3A1"]],
+    "antiphona-ii":[["/antiphonae/PMEXN3A2"]],
+    "antiphona-iii":[["/antiphonae/PMEXN3A3"]]
+  },
+  {
+		"tags":["martyres","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2177"]]
+  },
+  {
+		"tags":["martyres","tertia","responsorium-breve"],
+    "incipit":"Læ(f)tá(g)mi(f)ni(f) in(f') Dó(g)mi(gh)no,(hg..)",
+    "responsum":"Et(g) ex(f)sul(gh)tá(gv_[oh:h]FD)te(fg) ju(g.)sti.(f.) (::)",
+    "versus":"Et(ixhi) glo(h)ri(h)á(gh)mi(g)ni(g'_[oh:h]) (,) o(h)mnes(g') re(g)cti(f) cor(g_[uh:l]h)de.(hg..)"
+  },
+  {
+		"tags":["martyres","sexta","responsorium-breve"],
+    "incipit":"Ex(f)súl(g')tent(f) ju(g_[uh:l]h)sti(hg..)",
+    "responsum":"In(f) con(gh)spé(gv_[oh:h]FD)ctu(fg) De(g.)i.(f.) (::)",
+    "versus":"Et(ixhi) de(h)le(h)ctén(gh)tur(g'_[oh:h]) (,) in(g) læ(f')tí(g)ti(gh)a.(hg..)"
+  },
+  {
+		"tags":["martyres","nona","responsorium-breve"],
+    "incipit":"Ju(f)sti(f) au(g_[uh:l]h)tem(hg..)",
+    "responsum":"In(f) per(gh)pé(g)tu(fd)um(fg) vi(g.)vent.(f.) (::)",
+    "versus":"Et(ixhi) a(h)pud(h) Dó(gh)mi(g)num(g'_[oh:h]) (,) est(g) mer(h)ces(g') e(f)ó(g_[uh:l]h)rum.(hg..)"
+  },
+  {
+    "tags":["martyres","ii-vesperae","antiphona"],
+    "antiphona-i":[["/antiphonae/2186"]],
+    "antiphona-ii":[["/antiphonae/2482"]],
+    "antiphona-iii":[["/antiphonae/2198"]],
+    "antiphona-iv":[["/antiphonae/2665"]],
+    "antiphona-v":[["/antiphonae/1886"]],
+    "antiphona-magnificat":[["/antiphonae/1958"]]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+		"tags":["cathedra-petri","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2717"]]
+  },
+  {
+		"tags":[
+			["cathedra-petri","vesperae","hymnus"],
+			["cathedra-petri","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/8160"]]
+  },
+  {
+		"tags":["cathedra-petri","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0118I"]]
+  },
+  {
+		"tags":["cathedra-petri","laudes","hymnus"],
+		"datum":[["/hymni/13301"]]
+  }
+]

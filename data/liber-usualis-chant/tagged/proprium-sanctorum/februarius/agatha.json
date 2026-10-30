@@ -1,0 +1,36 @@
+[
+  {
+		"tags":["agatha","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2462"]]
+  },
+  {
+		"tags":["agatha","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/0205N1A1"]],
+		"antiphona-ii":[["/antiphonae/0205N1A2"]],
+		"antiphona-iii":[["/antiphonae/0205N1A3"]]
+  },
+  {
+		"tags":["agatha","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/0205N2A1"]],
+		"antiphona-ii":[["/antiphonae/0205N2A2"]],
+		"antiphona-iii":[["/antiphonae/0205N2A3"]]
+  },
+  {
+		"tags":["agatha","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/0205N3A1"]],
+		"antiphona-ii":[["/antiphonae/0205N3A2"]],
+		"antiphona-iii":[["/antiphonae/0205N3A3"]]
+  },
+  {
+		"tags":["agatha","antiphona"],
+		"antiphona-i":[["/antiphonae/2425"]],
+		"antiphona-ii":[["/antiphonae/1955"]],
+		"antiphona-iii":[["/antiphonae/2318"]],
+		"antiphona-iv":[["/antiphonae/13323"]],
+		"antiphona-v":[["/antiphonae/2530"]]
+  },
+  {
+		"tags":["agatha","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12170"]]
+  }
+]

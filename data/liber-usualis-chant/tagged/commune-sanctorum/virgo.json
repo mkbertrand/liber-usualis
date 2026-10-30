@@ -1,0 +1,101 @@
+[
+  {
+		"tags":["virgo","antiphona"],
+		"antiphona-i":[["/antiphonae/2281"]],
+		"antiphona-ii":[["/antiphonae/2798"]],
+		"antiphona-iii":[["/antiphonae/2836"]],
+		"antiphona-iv":[["/antiphonae/2115"]],
+		"antiphona-v":[["/antiphonae/2151"]]
+  },
+  {
+		"tags":[
+			["virgo","vesperae","hymnus"],
+			["virgo","laudes","hymnus"]
+		],
+		"datum":[["/hymni/2587"]]
+  },
+  {
+		"tags":["virgo","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2042"]]
+  },
+  {
+		"tags":[
+			["virgo","virgines","vesperae","antiphona","antiphona-magnificat"],
+			["virgo","virgines","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/2919"]]
+  },
+  {
+		"tags":["virgo","matutinum","antiphona","antiphona-invitatorium"],
+		"simplex":[["/invitatoria/MUVXIa"]],
+		"datum":[["/invitatoria/MUVXIb"]],
+		"sollemnitas":[["/invitatoria/MUVXIc"]],
+		"in-tempore-paschali":[["/invitatoria/MUVXId"]]
+  },
+  {
+		"tags":["virgo","matutinum","hymnus"],
+		"martyr":[["/hymni/MUVMHa"]],
+		"datum":[["/hymni/MUVMHa"]]
+  },
+  {
+		"tags":["virgo","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN1A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN1A1"]],
+		"antiphona-ii":[["/antiphonae/MUVXN1A2"]],
+		"antiphona-iii":[["/antiphonae/MUXXN1A3"]]
+  },
+  {
+		"tags":["virgo","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN2A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN2A1"]],
+		"antiphona-ii":[["/antiphonae/MUXXN2A2"]],
+		"antiphona-iii":[["/antiphonae/MUXXN2A3"]]
+  },
+  {
+		"tags":["virgo","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN3A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN3A1"]],
+		"antiphona-ii":[["/antiphonae/MUXXN3A2"]],
+		"antiphona-iii":[["/antiphonae/MUXXN3A3"]]
+  },
+  {
+		"tags":["virgo","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/18848"]]
+  },
+  {
+		"tags":["virgo","tertia","responsorium-breve"],
+    "incipit":"Spé(f)ci(f)e(f) tu(g_[uh:l]h)a(hg..)",
+    "responsum":"Et(g) pul(f)chri(gh)tú(g)di(fd)ne(fg) tu(g.)a.(f.) (::)",
+    "versus":"In(h)tén(ixhi)de,(h) pró(gh)spe(g)re(g'_[oh:h]) (,) pro(g)cé(h)de,(g') et(f) re(g_[uh:l]h)gna.(hg..)"
+  },
+  {
+		"tags":["virgo","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Spé(f)ci(f)e(f) tu(g)a(f'_) (,) et(f) pul(f)chri(f)tú(f)di(f)ne(e') tu(g)a:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"In(f)tén(f)de,(f) pró(g)spe(f)re(f'_) (,) pro(f)cé(f)de,(f) et(e') re(g)gna.(h.)"
+  },
+  {
+		"tags":["virgo","sexta","responsorium-breve"],
+    "incipit":"Ad(f)ju(f)vá(g')bit(f) e(g_[uh:l]h)am(hg..)",
+    "responsum":"De(f)us(gh) vul(gv_[oh:h]FD)tu(fg) su(g.)o.(f.) (::)",
+    "versus":"De(ixhi)us(h) in(h) mé(h)di(h)o(h) e(gh)jus(g'_[oh:h]) (,) non(h) com(g)mo(f')vé(g)bi(gh)tur.(hg..)"
+  },
+  {
+		"tags":["virgo","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Ad(f)ju(f)vá(f)bit(f) e(g)am(f'_) (,) De(f)us(f) vul(f)tu(e') su(g)o:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"De(f)us(f) in(f) mé(f)di(f)o(f) e(g)jus,(f'_) (,) non(f) com(f)mo(e)vé(g')bi(g)tur.(h.)"
+  },
+  {
+		"tags":["virgo","nona","responsorium-breve"],
+    "incipit":"E(f)lé(f)git(f) e(g')am(f) De(g_[uh:l]h)us,(hg..)",
+    "responsum":"Et(f) præ(gh)e(g)lé(fd)git(fg) e(g.)am.(f.) (::)",
+    "versus":"In(ixhi) ta(h)ber(h)ná(h)cu(h)lo(h) su(gh)o(g'_[oh:h]) (,) ha(g)bi(g)tá(h)re(g') fa(g)cit(f) e(g_[uh:l]h)am.(hg..)"
+  },
+  {
+		"tags":["virgo","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"E(f)lé(f)git(f) e(f)am(f) De(g)us,(f) (,) et(f) præ(f)e(f)lé(f)git(e) e(g)am.(h)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"In(f) ta(f)ber(f)ná(f)cu(f)lo(f) su(g)o(f) ha(f)bi(f)tá(f)re(f) fa(f)cit(e) e(g)am.(h)"
+  }
+]

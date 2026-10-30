@@ -1,0 +1,86 @@
+[
+  {
+		"tags":["nativitas","i-vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2996"]],
+		"antiphona-ii":[["/antiphonae/3011"]],
+		"antiphona-iii":[["/antiphonae/2997"]],
+		"antiphona-iv":[["/antiphonae/3005"]],
+		"antiphona-v":[["/antiphonae/3006"]],
+		"antiphona-magnificat": [["/antiphonae/3002"]]
+  },
+  {
+		"tags":["nativitas","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/1225I"]]
+  },
+  {
+		"tags":["nativitas","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/1225N1A1"]],
+		"antiphona-ii":[["/antiphonae/1225N1A2"]],
+		"antiphona-iii":[["/antiphonae/1225N1A3"]]
+  },
+  {
+		"tags":["nativitas","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/1225N2A1"]],
+		"antiphona-ii":[["/antiphonae/1225N2A2"]],
+		"antiphona-iii":[["/antiphonae/1225N2A3"]]
+  },
+  {
+		"tags":["nativitas","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/1225N3A1"]],
+		"antiphona-ii":[["/antiphonae/1225N3A2"]],
+		"antiphona-iii":[["/antiphonae/1225N3A3"]]
+  },
+  {
+		"tags":["nativitas","antiphona"],
+		"antiphona-i":[["/antiphonae/2204"]],
+		"antiphona-ii":[["/antiphonae/2653"]],
+		"antiphona-iii":[["/antiphonae/2421"]],
+		"antiphona-iv":[["/antiphonae/2840"]],
+		"antiphona-v":[["/antiphonae/2913"]]
+  },
+  {
+		"tags":["nativitas","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2782"]]
+  },
+  {
+		"tags":["nativitas","tertia","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Ver(f)bum(f) ca(f)ro(e) fa(g')ctum(g) est:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) ha(f)bi(f)tá(g)vit(f) in(e') no(g)bis.(h.)"
+  },
+  {
+		"tags":["nativitas","sexta","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"No(f)tum(f) fe(f)cit(e) Dó(g')mi(g)nus:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Sa(f)lu(f)tá(f)re(e') su(g)um.(h.)"
+  },
+  {
+		"tags":["nativitas","nona","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Vi(f)dé(g)runt(f) o(f)mnes(f) fi(f)nes(e') ter(g)rae:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Sa(f)lu(f)tá(g)re(f) De(f)i(e') no(g)stri.(h.)"
+  },
+  {
+		"tags":["nativitas","ii-vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2728"]],
+		"antiphona-ii":[["/antiphonae/2736"]],
+		"antiphona-iii":[["/antiphonae/2058"]],
+		"antiphona-iv":[["/antiphonae/2277"]],
+		"antiphona-v":[["/antiphonae/2766"]],
+		"antiphona-magnificat":[["/antiphonae/2486"]]
+  },
+  {
+		"tags":[
+			["nativitas","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+			["nativitas","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/2544"]]
+  },
+  {
+		"tags":["nativitas","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2178"]]
+  }
+]

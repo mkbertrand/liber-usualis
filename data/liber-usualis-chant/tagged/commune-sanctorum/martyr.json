@@ -1,0 +1,140 @@
+[
+  {
+		"tags":["martyr","antiphona"],
+		"antiphona-i":[["/antiphonae/1854"]],
+		"antiphona-ii":[["/antiphonae/12251"]],
+		"antiphona-iii":[["/antiphonae/2805"]],
+		"antiphona-iv":[["/antiphonae/2466"]],
+		"antiphona-v":[["/antiphonae/2671"]]
+  },
+  {
+		"tags":[
+			["martyr","vesperae","hymnus"],
+			["martyr","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/2702"]]
+  },
+  {
+		"tags":["martyr","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2340"]]
+  },
+  {
+		"tags":["martyr","matutinum","antiphona","antiphona-invitatorium"],
+		"simplex":[["/invitatoria/UMEXIa"]],
+		"datum":[["/invitatoria/UMEXIb"]],
+		"solemnis":[["/invitatoria/UMEXIc"]]
+  },
+  {
+		"tags":["martyr","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/UMEXN1A1"]],
+		"antiphona-ii":[["/antiphonae/UMEXN1A2"]],
+		"antiphona-iii":[["/antiphonae/UMEXN1A3"]]
+  },
+  {
+		"tags":["martyr","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/UMEXN2A1"]],
+		"antiphona-ii":[["/antiphonae/UMEXN2A2"]],
+		"antiphona-iii":[["/antiphonae/UMEXN2A3"]]
+  },
+  {
+		"tags":["martyr","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/UMEXN3A1"]],
+		"antiphona-ii":[["/antiphonae/UMEXN3A2"]],
+		"antiphona-iii":[["/antiphonae/UMEXN3A3"]]
+  },
+  {
+		"tags":["martyr","laudes","hymnus"],
+		"datum":[["/hymni/12434"]]
+  },
+  {
+		"tags":["martyr","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2855"]]
+  },
+  {
+		"tags":["martyr","tertia","responsorium-breve"],
+    "incipit":"Gló(f)ri(f)a(f) et(g') ho(f)nó(g_[uh:l]h)re(hg..)",
+    "responsum":"Co(f)ro(gh)ná(g)sti(fd) e(f)um,(g) Dó(g')mi(f)ne.(f.) (::)",
+    "versus":"Et(ixhi) con(h)sti(h)tu(h)í(h)sti(h) e(gh)um(g'_[oh:h]) (,) su(g)per(g) ó(h)pe(g)ra(g) má(g)nu(g)um(g') tu(f)á(g_[uh:l]h)rum.(hg..)"
+  },
+  {
+		"tags":["martyr","sexta","responsorium-breve"],
+    "incipit":"Po(f)su(f)í(g)sti(f') Dó(g)mi(gh)ne(hg..)",
+    "responsum":"Su(f)per(gh) ca(gv_[oh:h]FD)put(fg) e(g.)jus.(f.) (::)",
+    "versus":"Co(h)ró(ixhi)nam(g'_[oh:h]) (,) de(g) lá(h)pi(g)de(g') pre(g)ti(f)ó(g_[uh:l]h)so.(hg..)"
+  },
+  {
+		"tags":["martyr","nona","responsorium-breve"],
+    "incipit":"Ma(f)gna(f) est(f) gló(g')ri(f)a(f) e(g_h)jus(hg..)",
+    "responsum":"In(g) sa(f)lu(gh)tá(gv_FD)ri(fg) tu(g.)o.(f.) (::)",
+    "versus":"Gló(ixhi)ri(h)am(h) et(h) ma(h)gnum(h) de(h)có(gh)rem(g'_) (,) im(g)pó(h)nes(g') su(g)per(f) e(g_h)um.(hg..)"
+  },
+  {
+		"tags":["martyr","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2879"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","antiphona"],
+		"antiphona-i":[["/antiphonae/1923"]],
+		"antiphona-ii":[["/antiphonae/2105"]],
+		"antiphona-iii":[["/antiphonae/2788"]],
+		"antiphona-iv":[["/antiphonae/2943"]],
+		"antiphona-v":[["/antiphonae/2720"]]
+  },
+  {
+		"tags":[
+			["martyrum-tempore-paschali","martyres","vesperae","hymnus"],
+			["martyrum-tempore-paschali","martyres","laudes","hymnus"]
+		],
+		"datum":[["/hymni/13113"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2510"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":[["/invitatoria/MRTPI"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","martyres","matutinum","hymnus"],
+    "datum":[["/hymni/EXPMEXH_dcrochu"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-i","antiphona"],
+		"datum":[["/antiphonae/APTPN1A"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-ii","antiphona"],
+		"datum":[["/antiphonae/APTPN2A"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","matutinum","nocturna-iii","antiphona"],
+		"datum":[["/antiphonae/APTPN3A"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2680"]]
+  },
+  {
+		"tags":["martyrum-tempore-paschali","tertia","responsorium-breve"],
+    "incipit":"San(f)cti(f) et(f) ju(g)sti(f'_) (,) in(f) Dó(f)mi(f)no(f) gau(e')dé(g)te:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Vos(f) e(f)lé(f)git(f) De(g)us(f'_) (,) in(f) hæ(f)re(f)di(f)tá(f)tem(e') si(g)bi.(h.)"
+  },
+  {
+		"tags":["martyrum-tempore-paschali","sexta","responsorium-breve"],
+    "incipit":"Lux(f) per(f)pé(g)tu(f)a(f'_) (,) lu(f)cé(f)bit(f) san(f)ctis(f) tu(f)is(e) Dó(g')mi(g)ne:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) æ(f)tér(g)ni(f)tas(e) tém(g')po(g)rum.(h.)"
+  },
+  {
+		"tags":["martyrum-tempore-paschali","nona","responsorium-breve"],
+    "incipit":"Læ(f)tí(f)ti(f)a(f) sem(f)pi(f)tér(g)na(f'_) (,) su(f)per(f) cá(f)pi(f)ta(f) e(e')ó(g)rum:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Gaú(fg)di(f)um(f'_) (,) et(f) ex(f)sul(f)ta(f)ti(f)ó(f)nem(f) ob(f)ti(e')né(g)bunt.(h.)"
+  },
+  {
+		"tags":["martyrum-tempore-paschali","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2831"]]
+  }
+]

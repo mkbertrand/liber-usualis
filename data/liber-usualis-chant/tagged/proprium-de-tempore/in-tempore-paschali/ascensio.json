@@ -1,0 +1,88 @@
+[
+  {
+		"tags":["ascensio","antiphona"],
+		"antiphona-i":[["/antiphonae/1888"]],
+		"antiphona-ii":[["/antiphonae/2651"]],
+		"antiphona-iii":[["/antiphonae/1971"]],
+		"antiphona-iv":[["/antiphonae/2072"]],
+		"antiphona-v":[["/antiphonae/2362"]]
+  },
+  {
+		"tags":[
+			["ascensio","vesperae","hymnus"],
+			["ascensio","laudes","hymnus"]
+		],
+		"datum":[["/hymni/2828"]]
+  },
+  {
+		"tags":["ascensio","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2941"]]
+  },
+  {
+		"tags":["ascensio","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/P5F5I"]]
+  },
+  {
+		"tags":["ascensio","matutinum","hymnus"],
+		"datum":[["/hymni/P5F5H"]]
+  },
+  {
+		"tags":["ascensio","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/P5F5N1A1"]],
+		"antiphona-ii":[["/antiphonae/P5F5N1A2"]],
+		"antiphona-iii":[["/antiphonae/P5F5N1A3"]]
+  },
+  {
+		"tags":["ascensio","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/P5F5N2A1"]],
+		"antiphona-ii":[["/antiphonae/P5F5N2A2"]],
+		"antiphona-iii":[["/antiphonae/P5F5N2A3"]]
+  },
+  {
+		"tags":["ascensio","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/P5F5N3A1"]],
+		"antiphona-ii":[["/antiphonae/P5F5N3A2"]],
+		"antiphona-iii":[["/antiphonae/P5F5N3A3"]]
+  },
+  {
+		"tags":["ascensio","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13029"]]
+  },
+  {
+		"tags":["ascensio","tertia","responsorium-breve"],
+    "incipit":"A(f)scén(f)dit(f) De(g)us(f'_) (,) in(f) ju(f)bi(f)la(f)ti(e')ó(g)ne:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) Dó(g)mi(f)nus(f) in(f) vo(f)ce(e') tu(g)bæ.(h.)"
+  },
+  {
+		"tags":["ascensio","sexta","responsorium-breve"],
+    "incipit":"A(f)scén(f)dens(f) Chri(g)stus(f) in(e') al(g)tum:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Ca(f)ptí(f)vam(f) du(g)xit(f) ca(f)pti(f)vi(e')tá(g)tem.(h.)"
+  },
+  {
+		"tags":["ascensio","nona","responsorium-breve"],
+    "incipit":"A(f)scén(f)do(f) ad(f) Pa(f)trem(f) me(g)um,(f'_) (,) et(f) Pa(f)trem(e') ve(g)strum:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"De(f)um(f) me(g)um,(f'_) (,) et(f) De(f)um(e') ve(g)strum.(h.)"
+  },
+  {
+		"tags":["ascensio","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1916"]]
+  },
+  {
+		"tags":[
+			["ascensio","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+			["ascensio","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
+			["ascensio","post-ascensionem","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/1850"]]
+  },
+  {
+		"tags":[
+			["ascensio","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
+			["ascensio","post-ascensionem","ii-vesperae","antiphona","antiphona-magnificat"]
+		],
+		"datum":[["/antiphonae/1981"]]
+  }
+]

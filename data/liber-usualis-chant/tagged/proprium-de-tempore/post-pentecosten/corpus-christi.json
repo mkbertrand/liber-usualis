@@ -1,0 +1,91 @@
+[
+  {
+		"tags":["corpus-christi","vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2546"]],
+		"antiphona-ii":[["/antiphonae/2459"]],
+		"antiphona-iii":[["/antiphonae/1877"]],
+		"antiphona-iv":[["/antiphonae/1921"]],
+		"antiphona-v":[["/antiphonae/2339"]]
+  },
+  {
+		"tags":["corpus-christi","hymnus"],
+		"vesperae":[["/hymni/1310"]],
+    "matutinum":[["/hymni/H1F5H"]],
+		"laudes":[["/hymni/12107"]]
+  },
+  {
+		"tags":["corpus-christi","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2826"]]
+  },
+  {
+		"tags":["corpus-christi","antiphona","antiphona-invitatorium"],
+    "datum":[["/invitatoria/H1F5I"]]
+  },
+  {
+		"tags":["corpus-christi","matutinum","nocturna-i","antiphona"],
+    "antiphona-i":[["/antiphonae/H1F5N1A1"]],
+    "antiphona-ii":[["/antiphonae/H1F5N1A2"]],
+    "antiphona-iii":[["/antiphonae/H1F5N1A3"]]
+  },
+  {
+		"tags":["corpus-christi","matutinum","nocturna-ii","antiphona"],
+    "antiphona-i":[["/antiphonae/H1F5N2A1"]],
+    "antiphona-ii":[["/antiphonae/H1F5N2A2"]],
+    "antiphona-iii":[["/antiphonae/H1F5N2A3"]]
+  },
+  {
+		"tags":["corpus-christi","matutinum","nocturna-iii","antiphona"],
+    "antiphona-i":[["/antiphonae/H1F5N3A1"]],
+    "antiphona-ii":[["/antiphonae/H1F5N3A2"]],
+    "antiphona-iii":[["/antiphonae/H1F5N3A3"]]
+  },
+  {
+		"tags":["corpus-christi","antiphona"],
+		"antiphona-i":[["/antiphonae/2793"]],
+		"antiphona-ii":[["/antiphonae/2731"]],
+		"antiphona-iii":[["/antiphonae/2057"]],
+		"antiphona-iv":[["/antiphonae/2572"]],
+		"antiphona-v":[["/antiphonae/13297"]]
+  },
+  {
+		"tags":["corpus-christi","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/11844"]]
+  },
+  {
+		"tags":["corpus-christi","tertia","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Pa(f)nem(f) cœ(g)li(f) de(f)dit(e') e(g)is:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Pa(f)nem(f) An(f)ge(f)ló(g)rum(f'_) (,) man(f)du(f)cá(f)vit(e') ho(g)mo.(h.)"
+  },
+  {
+		"tags":["corpus-christi","sexta","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Ci(f)bá(f)vit(f) il(g)los(f'_) (,) ex(f) á(f)di(f)pe(f) fru(e')mén(g)ti:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) de(f) pe(f)tra,(f) mel(g)le(f'_) (,) sa(f)tu(f)rá(f)vit(e') e(g)os.(h.)"
+  },
+  {
+		"tags":["corpus-christi","nona","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"E(f)dú(f)cas(f) pa(g)nem(f) de(e') ter(g)ra:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) vi(g)num(f'_) (,) læ(f)tí(f)fi(f)cet(f) cor(e) hó(g')mi(g)nis.(h.)"
+  },
+  {
+		"tags":["corpus-christi","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/13329"]]
+  },
+  {
+		"tags":["corpus-christi","dominica-infra-octavam","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2957"]]
+  },
+  {
+		"tags":["corpus-christi","dominica-infra-octavam","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2330"]]
+  },
+  {
+		"tags":["corpus-christi","dominica-infra-octavam","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1929"]]
+  }
+]

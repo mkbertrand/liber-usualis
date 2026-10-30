@@ -1,0 +1,97 @@
+[
+  {
+    "tags":["confessor","antiphona"],
+		"antiphona-i":[["/antiphonae/2080"]],
+		"antiphona-ii":[["/antiphonae/2179"]],
+		"antiphona-iii":[["/antiphonae/2570"]],
+		"antiphona-iv":[["/antiphonae/2182"]],
+		"antiphona-v":[["/antiphonae/2677"]]
+  },
+  {
+		"tags":[
+			["confessor","vesperae","hymnus"],
+			["confessor","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/2407"]]
+  },
+  {
+		"tags":["confessor","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2586"]]
+  },
+  {
+		"tags":["confessor","matutinum","antiphona","antiphona-invitatorium"],
+		"simplex":[["/invitatoria/COPOIa"]],
+		"datum":[["/invitatoria/COPOIb"]],
+		"sollemnitas":[["/invitatoria/COPOIc"]],
+		"in-tempore-paschali":[["/invitatoria/COPOId"]]
+  },
+  {
+		"tags":["confessor","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/COPON1A1"]],
+		"in-tempore-paschali":[["/antiphonae/COPON1A1"]],
+		"antiphona-ii":[["/antiphonae/COPON1A2"]],
+		"antiphona-iii":[["/antiphonae/COPON1A3"]]
+  },
+  {
+		"tags":["confessor","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/COPON2A1"]],
+		"in-tempore-paschali":[["/antiphonae/COPON2A1"]],
+		"antiphona-ii":[["/antiphonae/COPON2A2"]],
+		"antiphona-iii":[["/antiphonae/COPON2A3"]]
+  },
+  {
+		"tags":["confessor","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/COPON3A1"]],
+		"in-tempore-paschali":[["/antiphonae/COPON3A1"]],
+		"antiphona-ii":[["/antiphonae/COPON3A2"]],
+		"antiphona-iii":[["/antiphonae/COPON3A3"]]
+  },
+  {
+		"tags":["confessor","laudes","hymnus"],
+		"datum":[["/hymni/17926"]]
+  },
+  {
+		"tags":["confessor","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2808"]]
+  },
+  {
+		"tags":["confessor","tertia","responsorium-breve"],
+    "incipit":"A(f)má(f)vit(f) e(g)um(f') Dó(g)mi(gh)nus,(hg..)",
+    "responsum":"Et(f) or(gh)ná(gv_[oh:h]FD)vit(fg) e(g.)um.(f.) (::)",
+    "versus":"Sto(ixhi)lam(h) gló(gh)ri(g)ae(g'_[oh:h]) (,) ín(h)du(g')it(f) e(g_[uh:l]h)um.(hg..)"
+  },
+  {
+		"tags":["confessor","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"A(f)má(f)vit(f) e(f)um(f) Dó(g)mi(f)nus,(f'_) (,) et(f) or(f)ná(f)vit(e') e(g)um:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Sto(f)lam(f) gló(g)ri(f)ae(f'_) (,) ín(f)du(f)it(e') e(g)um.(h.)"
+  },
+  {
+		"tags":["confessor","sexta","responsorium-breve"],
+    "incipit":"Os(f) ju(g_[uh:l]h)sti(hg..)",
+    "responsum":"Me(f)di(g)tá(g')bi(f)tur(gh) sa(gv_[oh:h]FD)pi(fg)én(g)ti(f)am.(f.) (::)",
+    "versus":"Et(ixhi) lin(h)gua(h) e(gh)jus(g'_[oh:h]) (,) lo(g)qué(h)tur(g) ju(f')dí(g)ci(gh)um.(hg..)"
+  },
+  {
+		"tags":["confessor","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Os(f) ju(g)sti(f'_) (,) me(f)di(f)tá(f)bi(f)tur(f) sa(f)pi(e)én(g')ti(g)am:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) lin(f)gua(f) e(g)jus(f'_) (,) lo(f)qué(f)tur(f) ju(e)dí(g')ci(g)um.(h.)"
+  },
+  {
+		"tags":["confessor","nona","responsorium-breve"],
+    "incipit":"Lex(f) De(g')i(f) e(g_[uh:l]h)jus(hg..)",
+    "responsum":"In(f) cor(gh)de(gv_[oh:h]FD) i(fg)psí(g.)us.(f.) (::)",
+    "versus":"Et(ixhi) non(h) sup(h)plan(h)ta(h)bún(gh)tur(g'_[oh:h]) (,) gres(g)sus(f) e(g_[uh:l]h)jus.(hg..)"
+  },
+  {
+		"tags":["confessor","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Lex(f) De(f)i(f) e(g)jus(f'_) (,) in(f) cor(f)de(f) í(e')psi(g)us:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) non(f) sup(f)plan(f)ta(f)bún(g)tur(f'_) (,) gres(f)sus(e') e(g)jus.(h.)"
+  },
+  {
+		"tags":["confessor","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2251"]]
+  }
+]

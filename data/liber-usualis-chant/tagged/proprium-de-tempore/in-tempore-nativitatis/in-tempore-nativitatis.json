@@ -1,0 +1,24 @@
+[
+  {
+		"tags":[
+			["nativitas","vesperae","hymnus"],
+			["nativitas","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/3001"]]
+  },
+  {
+		"tags":["nativitas","laudes","hymnus"],
+		"datum":[["/hymni/2628"]]
+  },
+  {
+		"tags":["innocentes","matutinum","hymnus"],
+		"datum":[["/hymni/1228H"]]
+  },
+  {
+		"tags":[
+			["innocentes","laudes","hymnus"],
+			["innocentes","vesperae","hymnus"]
+		],
+		"datum":[["/hymni/1963"]]
+  }
+]

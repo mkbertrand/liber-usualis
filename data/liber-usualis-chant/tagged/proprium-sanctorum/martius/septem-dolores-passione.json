@@ -1,0 +1,77 @@
+[
+  {
+		"tags":["septem-dolores-passione","antiphona"],
+		"antiphona-i":[["/antiphonae/2961"]],
+		"antiphona-ii":[["/antiphonae/2131"]],
+		"antiphona-iii":[["/antiphonae/2852"]],
+		"antiphona-iv":[["/antiphonae/2774"]],
+		"antiphona-v":[["/antiphonae/2900"]]
+  },
+  {
+    "tags":["septem-dolores-passione","hymnus"],
+		"vesperae":[["/hymni/2163"]],
+		"matutinum":[["/hymni/Q5F6H"]],
+		"laudes":[["/hymni/12383"]]
+  },
+  {
+		"tags":["septem-dolores-passione","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2559"]]
+  },
+  {
+		"tags":["septem-dolores-passione","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/Q5F6I"]]
+  },
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","antiphona","antiphona-iii"],
+		"datum":[["/antiphonae/0915N2A1"]]
+	},
+  {
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-i"],
+		"datum":[["/antiphonae/Q5F6N2A1"]]
+  },
+  {
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-ii"],
+		"datum":[["/antiphonae/0915N2A2"]]
+  },
+  {
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-iii"],
+		"datum":[["/antiphonae/Q5F6N2A3"]]
+  },
+  {
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":[["/antiphonae/Q5F6N3A2"]]
+  },
+  {
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-iii"],
+		"datum":[["/antiphonae/Q5F6N3A3"]]
+  },
+  {
+		"tags":[
+			["septem-dolores-passione","laudes","antiphona","antiphona-benedictus"],
+			["septem-dolores-passione","ii-vesperae","antiphona","antiphona-magnificat"]
+		],
+		"datum":[["/antiphonae/2927"]]
+  },
+  {
+		"tags":["septem-dolores-passione","prima","responsorium-breve","versus"],
+    "datum":"Qui(h) pas(ixhi)sus(g) es(g) pro(f) hó(g)mi(gh)ne.(hg)"
+  },
+  {
+		"tags":["septem-dolores-passione","tertia","responsorium-breve"],
+    "incipit":"Po(f)su(f)it(g_h) me(hg..)",
+    "responsum":"De(fd)so(fg)lá(g.)tam.(f.) (::)",
+    "versus":"To(ixhi)ta(h) di(gh)e(g'_) (,) mœ(g)ró(h)re(g') con(f)fé(g_h)ctam.(hg..)"
+  },
+  {
+		"tags":["septem-dolores-passione","sexta","responsorium-breve"],
+    "incipit":"Fa(f)ci(f)es(f) me(g_h)a(hg..)",
+    "responsum":"In(f)tú(gh)mu(g)it(fd) a(fg) fle(g.)tu.(f.) (::)",
+    "versus":"Et(h) pál(ixhi)pe(h)bræ(h) me(gh)æ(g'_) (,) ca(h)li(g')ga(f)vé(g_h)runt.(hg..)"
+  },
+  {
+		"tags":["septem-dolores-passione","nona","responsorium-breve"],
+    "incipit":"De(f)us(f) vi(g')tam(f) me(g_h)am(hg..)",
+    "responsum":"An(g)nun(f)ti(gh)á(gv_FD)vi(fg) ti(g.)bi.(f.) (::)",
+    "versus":"Po(h)su(h)í(ixhi)sti(h) lá(h)cri(h)mas(h) me(gh)as(g'_) (,) in(g) con(h)spé(g')ctu(f) tu(g_h)o.(hg..)"
+  }
+]

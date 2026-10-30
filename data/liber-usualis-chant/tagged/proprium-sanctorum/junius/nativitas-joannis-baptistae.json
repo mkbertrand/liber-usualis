@@ -1,0 +1,82 @@
+[
+  {
+		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2603"]],
+		"antiphona-ii":[["/antiphonae/2457"]],
+		"antiphona-iii":[["/antiphonae/2490"]],
+		"antiphona-iv":[["/antiphonae/2130"]],
+		"antiphona-v":[["/antiphonae/2480"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","hymnus"],
+		"vesperae":[["/hymni/2539"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2911"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0624I"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","hymnus"],
+		"matutinum":[["/hymni/0624H"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/0624N1A1"]],
+		"antiphona-ii":[["/antiphonae/0624N1A2"]],
+		"antiphona-iii":[["/antiphonae/0624N1A3"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/0624N2A1"]],
+		"antiphona-ii":[["/antiphonae/0624N2A2"]],
+		"antiphona-iii":[["/antiphonae/0624N2A3"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/0624N3A1"]],
+		"antiphona-ii":[["/antiphonae/0624N3A2"]],
+		"antiphona-iii":[["/antiphonae/0624N3A3"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","antiphona"],
+		"antiphona-i":[["/antiphonae/1990"]],
+		"antiphona-ii":[["/antiphonae/2867"]],
+		"antiphona-iii":[["/antiphonae/1829"]],
+		"antiphona-iv":[["/antiphonae/2031"]],
+		"antiphona-v":[["/antiphonae/2352"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","hymnus"],
+		"laudes":[["/hymni/1978"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2575"]]
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","tertia","responsorium-breve"],
+    "incipit":"Fu(f)it(f) ho(g_[uh:l]h)mo(hg..)",
+    "responsum":"Mis(fg'h)sus(gvFD) a(fg) De(g.)o.(f.) (::)",
+    "versus":"Cu(ixhi)i(h) no(gh)men(g'_[oh:h]) (,) e(h)rat(g') Jo(f)án(g_[uh:l]h)nes.(hg..)"
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","sexta","responsorium-breve"],
+    "incipit":"In(f)ter(f) na(g)tos(f') mu(f)lí(g)e(gh)rum(hg..)",
+    "responsum":"Non(f) sur(gh)ré(gv_[oh:h]FD)xit(fg) ma(g.)jor.(f.) (::)",
+    "versus":"Jo(h)án(ixhi)ne(g') Ba(f)ptí(g_[uh:l]h)sta.(hg..)"
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","nona","responsorium-breve"],
+    "incipit":"E(f)lí(f)sa(f)beth(f) Za(g')cha(f)rí(g_[uh:l]h)æ(hg..)",
+    "responsum":"Ma(f)gnum(gh) vi(gv_[oh:h]FD)rum(fg) gé(g)nu(f)it.(f.) (::)",
+    "versus":"Jo(h)án(ixhi)nem(h) Ba(h)ptí(gh)stam(g'_[oh:h]) (,) Præ(g)cur(h)só(g)rem(f') Dó(g)mi(gh)ni.(hg..)"
+  },
+  {
+		"tags":["nativitas-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2106"]]
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+		"tags":["apparitio-michaelis","antiphona"],
+		"antiphona-i":[["/antiphonae/2648"]],
+		"antiphona-ii":[["/antiphonae/1868"]],
+		"antiphona-iii":[["/antiphonae/2245"]],
+		"antiphona-iv":[["/antiphonae/2074"]],
+		"antiphona-v":[["/antiphonae/2791"]]
+  },
+  {
+		"tags":[
+			["apparitio-michaelis","vesperae","hymnus"],
+			["apparitio-michaelis","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/19939"]]
+  },
+  {
+		"tags":["apparitio-michaelis","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2640"]]
+  },
+  {
+		"tags":["apparitio-michaelis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0324I"]]
+  },
+  {
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","antiphona"],
+		"datum":[["/antiphonae/0929N1A1"]]
+  },
+  {
+		"tags":["apparitio-michaelis","matutinum","nocturna-ii","antiphona"],
+		"datum":[["/antiphonae/0929N2A1"]]
+  },
+  {
+		"tags":["apparitio-michaelis","matutinum","nocturna-iii","antiphona"],
+		"datum":[["/antiphonae/0929N3A1"]]
+  },
+  {
+		"tags":["apparitio-michaelis","laudes","hymnus"],
+		"datum":[["/hymni/12915"]]
+  },
+  {
+		"tags":["apparitio-michaelis","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/11856"]]
+  },
+  {
+		"tags":["apparitio-michaelis","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Ste(f)tit(f) An(g)ge(f)lus(f'_) (,) jux(f)ta(f) a(f)ram(e') tem(g)pli:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Ha(f)bens(f) thu(f)rí(f)bu(f)lum(f) aú(g)re(f)um(f'_) (,) in(f) ma(f)nu(e') su(g)a.(h.)"
+  },
+  {
+		"tags":["apparitio-michaelis","tertia","responsorium-breve"],
+    "incipit":"Ste(f)tit(f') An(g)ge(gh)lus(hg..)",
+    "responsum":"Jux(f)ta(gh) a(gv_[oh:h]FD)ram(fg) tem(g.)pli.(f.) (::)",
+    "versus":"Ha(ixhi)bens(h) thu(h)rí(h)bu(h)lum(h) aú(gh)re(g)um(g'_[oh:h]) (,) in(h) ma(g')nu(f) su(g_[uh:l]h)a.(hg..)"
+  },
+  {
+		"tags":["apparitio-michaelis","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"A(f)scén(f)dit(f) fu(f)mus(f) a(f)ró(g)ma(f)tum(f'_) (,) in(f) con(f)spé(f)ctu(e) Dó(g')mi(g)ni.(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"De(f) ma(f)nu(e) An(g')ge(g)li.(h.)"
+  },
+  {
+		"tags":["apparitio-michaelis","sexta","responsorium-breve"],
+    "incipit":"A(f)scén(f)dit(f) fu(g)mus(f) a(f')ró(g)ma(gh)tum(hg..)",
+    "responsum":"In(f) con(gh)spé(gv_[oh:h]FD)ctu(fg) Dó(g)mi(f)ni.(f.) (::)",
+    "versus":"De(ixhi) ma(g)nu(f') An(g)ge(gh)li.(hg..)"
+  },
+  {
+		"tags":["apparitio-michaelis","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"In(f) con(f)spé(f)ctu(f) An(f)ge(f)ló(g)rum(f'_) (,) psal(f)lam(f) ti(f)bi(f) De(f)us(e') me(g)us:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Ad(f)o(f)rá(f)bo(f) ad(f) tem(f)plum(f) san(f)ctum(f) tu(g)um,(f'_) (,) et(f) con(f)fi(f)té(f)bor(f) nó(f)mi(f)ni(e') tu(g)o.(h.)"
+  },
+  {
+		"tags":["apparitio-michaelis","nona","responsorium-breve"],
+    "incipit":"In(f) con(f)spé(g)ctu(f) An(f)ge(f)ló(g_[uh:l]h)rum(hg..)",
+    "responsum":"Psal(g)lam(f) ti(gh)bi(g) De(fd)us(fg) me(g.)us.(f.) (::)",
+    "versus":"Ad(h)o(h)rá(ixhi)bo(h) ad(h) tem(h)plum(h) san(h)ctum(h) tu(gh)um,(g'_[oh:h]) (,) et(g) con(g)fi(g)té(g)bor(g) nó(h)mi(g')ni(f) tu(g_[uh:l]h)o.(hg..)"
+  },
+  {
+		"tags":["apparitio-michaelis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2625"]]
+  }
+]

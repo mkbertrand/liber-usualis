@@ -1,0 +1,25 @@
+[
+  {
+		"tags":[
+			["innocentes","i-vesperae","antiphona","antiphona-magnificat"],
+			["innocentes","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/2548"]]
+  },
+  {
+		"tags":["innocentes","matutinum","nocturna-iii","antiphona","antiphona-ii"],
+		"datum":[["/antiphonae/1228N3A2"]]
+  },
+  {
+		"tags":["innocentes","antiphona"],
+		"antiphona-i":[["/antiphonae/2449"]],
+		"antiphona-ii":[["/antiphonae/1879"]],
+		"antiphona-iii":[["/antiphonae/2703"]],
+		"antiphona-iv":[["/antiphonae/12471"]],
+		"antiphona-v":[["/antiphonae/2939"]]
+  },
+  {
+		"tags":["innocentes","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2833"]]
+  }
+]

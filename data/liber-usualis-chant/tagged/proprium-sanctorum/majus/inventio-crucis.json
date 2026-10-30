@@ -1,0 +1,87 @@
+[
+  {
+		"tags":["inventio-crucis","antiphona"],
+		"antiphona-i":[["/antiphonae/2164"]],
+		"antiphona-ii":[["/antiphonae/2529"]],
+		"antiphona-iii":[["/antiphonae/2623"]],
+		"antiphona-iv":[["/antiphonae/2945"]],
+		"antiphona-v":[["/antiphonae/2868"]]
+  },
+  {
+		"tags":["inventio-crucis","vesperae","hymnus"],
+		"datum":[["/hymni/12999"]]
+  },
+  {
+		"tags":["inventio-crucis","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1907"]]
+  },
+  {
+		"tags":["inventio-crucis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0503I"]]
+  },
+  {
+		"tags":["inventio-crucis","matutinum","nocturna-i","antiphona"],
+		"in-tempore-paschali":[["/antiphonae/0503N1A"]],
+		"antiphona-i":[["/antiphonae/0503N1A"]],
+		"antiphona-ii":[["/antiphonae/0914N1A2"]],
+		"antiphona-iii":[["/antiphonae/0914N1A2"]]
+  },
+  {
+		"tags":["inventio-crucis","matutinum","nocturna-ii","antiphona"],
+		"in-tempore-paschali":[["/antiphonae/0503N2A"]],
+		"antiphona-i":[["/antiphonae/0503N2A"]],
+		"antiphona-ii":[["/antiphonae/0914N2A2"]],
+		"antiphona-iii":[["/antiphonae/0914N2A3"]]
+  },
+  {
+		"tags":["inventio-crucis","matutinum","nocturna-iii","antiphona"],
+		"in-tempore-paschali":[["/antiphonae/0503N3A"]],
+		"antiphona-i":[["/antiphonae/0914N3A1"]],
+		"antiphona-ii":[["/antiphonae/0914N3A2"]],
+		"antiphona-iii":[["/antiphonae/0914N3A3"]]
+  },
+  {
+		"tags":["inventio-crucis","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13034"]]
+  },
+  {
+		"tags":["inventio-crucis","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Hoc(f) si(f)gnum(f) Cru(g)cis(f'_) (,) e(f)rit(f) in(e') cœ(g)lo:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Cum(f) Dó(g)mi(f)nus(f'_) (,) ad(f) ju(f)di(f)cán(f)dum(e) vé(g')ne(g)rit.(h.)"
+  },
+  {
+		"tags":["inventio-crucis","tertia","responsorium-breve"],
+    "incipit":"Hoc(f) si(g')gnum(f) Cru(g_[uh:l]h)cis(hg..)",
+    "responsum":"E(fg'h)rit(gv_[oh:h]FD) in(fg) cœ(g.)lo.(f.) (::)",
+    "versus":"Cum(h) Dó(ixhi)mi(g)nus(g'_[oh:h]) (,) ad(g) ju(g)di(h)cán(g)dum(f') vé(g)ne(gh)rit.(hg..)"
+  },
+  {
+		"tags":["inventio-crucis","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Ad(f)o(f)rá(f)mus(f) te(f) Chri(g)ste,(f'_) (,) et(f) be(f)ne(f)dí(f)ci(f)mus(e') ti(g)bi:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Qui(f)a(f) per(f) Cru(f)cem(f) tu(g)am(f'_) (,) red(f)e(f)mí(f)sti(e') mun(g)dum.(h.)"
+  },
+  {
+		"tags":["inventio-crucis","sexta","responsorium-breve"],
+    "incipit":"Ad(f)o(f)rá(g')mus(f) te(f) Chri(g_[uh:l]h)ste,(hg..)",
+    "responsum":"Et(g) be(f)ne(gh)dí(g)ci(fd)mus(fg) ti(g.)bi.(f.) (::)",
+    "versus":"Qui(ixhi)a(h) per(h) Cru(h)cem(h) tu(gh)am(g'_[oh:h]) (,) red(g)e(h)mí(g')sti(f) mun(g_[uh:l]h)dum.(hg..)"
+  },
+  {
+		"tags":["inventio-crucis","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"O(f)mnis(f) ter(f)ra(f) ad(f)ó(g)ret(f) te,(f'_) (,) et(f) psal(f)lat(e') ti(g)bi:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Psal(f)mum(f) di(g)cat(f'_) (,) nó(f)mi(f)ni(f) tu(f)o(e) Dó(g')mi(g)ne.(h.)"
+  },
+  {
+		"tags":["inventio-crucis","nona","responsorium-breve"],
+    "incipit":"O(f)mnis(f) ter(g)ra(f') ad(f)ó(g)ret(gh) te,(hg..)",
+    "responsum":"Et(fg'h) psal(gv_[oh:h]FD)lat(fg) ti(g.)bi.(f.)",
+    "versus":"Psal(ixhi)mum(h) di(gh)cat(g'_[oh:h]) (,) nó(g)mi(g)ni(g') tu(h)o(gf) Dó(g)mi(gh)ne.(hg..)"
+  },
+  {
+		"tags":["inventio-crucis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2884"]]
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+		"tags":["deus-in-adjutorium"],
+		"ferialis":[["/etc/15354"]],
+		"festalis":[["/etc/7417"]],
+		"solemnis":[["/etc/7402"]]
+  },
+  {
+    "tags":["formula","responsorium-breve"],
+    "datum":[
+      "mode:6;\n%%\n(c4) ", null, " *(;) ", null,
+      " ", null, " (;) ", null,
+      " <v>\\Vbar</v> ", null, " (:) <v>\\Rbar</v> ", null,
+      " <v>\\Vbar</v> Gló(h)ri(h)a(h) Pa(ixhi)tri,(h'_) (,) et(h) Fí(gh)li(g)o,(g'_) (,) et(g) Spi(g)rí(h')tu(g)i(f') sanc(g)to.(gh..) (::)",
+      " <v>\\Rbar</v> ", null, " (;) ", null
+    ]
+  },
+  {
+    "tags":[
+      ["formula","responsorium-breve","in-tempore-adventus","temporale"],
+      ["formula","responsorium-breve","in-tempore-adventus","prima"],
+      ["formula","responsorium-breve","in-tempore-adventus","completorium"]
+    ],
+    "datum":[
+      "mode:4;\n%%\n(f3) ", null, " *(;) ", null,
+      " ", null, " (;) ", null,
+      " <v>\\Vbar</v> ", null, " (:) <v>\\Rbar</v> ", null,
+      " <v>\\Vbar</v> Gló(i)ri(i)a(i) Pa(ij)tri,(j'_) (,) et(j) Fí(i)li(j)o,(g'_) (,) et(h) Spi(h)rí(h)tu(h)i(hf) sanc(gh)to.(i.) (::)",
+      " <v>\\Rbar</v> ", null, " (;) ", null
+    ]
+  },
+  {
+		"tags":["formula","in-tempore-passionis","responsorium-breve","temporale"],
+    "datum":[
+      "mode:6;\n%%\n(c4) ", null, " *(;) ", null,
+      " ", null, " (;) ", null,
+      " <v>\\Vbar</v> ", null, " (:) <v>\\Rbar</v> ", null,
+      " <v>\\Rbar</v> ", null, " (;) ", null
+    ]
+  },
+  {
+    "tags":[
+      ["formula","responsorium-breve","in-tempore-paschali"],
+      ["formula","responsorium-breve","cum-alleluja"]
+    ],
+    "datum":[
+      "mode:6;\n%%\n(c4) ", null, " *(;) ", null,
+      " ", null, " (;) ", null,
+      " <v>\\Vbar</v> ", null, " (:) <v>\\Rbar</v> ", null,
+      " <v>\\Vbar</v> Gló(f)ri(f)a(e') Pa(g)tri,(h'_) (,) et(h) Fí(ixhi)li(h)o,(h'_) (,) et(h) Spi(h)rí(h')tu(g)i(h') sanc(g)to.(gf..) (::)",
+      " <v>\\Rbar</v> ", null, " (;) ", null
+    ]
+  },
+  {
+		"tags":["sollemnitas","benedicamus-domino"],
+		"i-vesperae":[["/etc/4567"]],
+		"laudes":[["/etc/612"]],
+		"ii-vesperae":[["/etc/4568"]]
+  },
+  {
+		"tags":["sollemnitas","ii-vesperae","benedicamus-domino","modus-quintus"],
+		"datum":[["/etc/7522"]]
+  },
+  {
+		"tags":["duplex-minus","benedicamus-domino"],
+		"i-vesperae":[["/etc/7866"]],
+		"laudes":[["/etc/10336"]],
+		"ii-vesperae":[["/etc/8245"]]
+  },
+  {
+		"tags":[
+			["semiduplex","dominica","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/16976"]]
+  },
+  {
+		"tags":[
+			["semiduplex","dominica","in-tempore-adventus","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-adventus","laudes","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-quadragesimae","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-quadragesimae","laudes","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-passionis","vesperae","benedicamus-domino"],
+			["semiduplex","dominica","in-tempore-passionis","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/9841"]]
+  },
+  {
+		"tags":[
+			["dominica","in-tempore-paschali","vesperae","benedicamus-domino"],
+			["dominica","in-tempore-paschali","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/8121"]]
+  },
+  {
+		"tags":["semiduplex","benedicamus-domino"],
+		"laudes":[["/etc/10172"]],
+		"vesperae":[["/etc/15698"]]
+  },
+  {
+		"tags":[
+			["maria","vesperae","benedicamus-domino"],
+			["maria","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/10399"]]
+  },
+  {
+		"tags":[
+			["simplex","vesperae","benedicamus-domino"],
+			["simplex","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/15743"]]
+  },
+  {
+		"tags":[
+			["bmv-sabbatum","maria","vesperae","benedicamus-domino"],
+			["bmv-sabbatum","maria","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/17674"]]
+  },
+  {
+		"tags":[
+			["feria","vesperae","benedicamus-domino"],
+			["feria","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/15741"]]
+  },
+  {
+		"tags":["hora-minor","benedicamus-domino"],
+		"datum":[["/etc/18844"]]
+  },
+  {
+		"tags":[
+			["hebdomada-septuagesima","dominica","i-vesperae","vesperae","benedicamus-domino"],
+			["pascha","vesperae","benedicamus-domino"],
+			["pascha","laudes","benedicamus-domino"]
+		],
+		"datum":[["/etc/19811"]],
+		"duplex-i-classis":[["/etc/19812"]]
+  },
+  {
+    "tags":["n"],
+    "datum":"N."
+  }
+]

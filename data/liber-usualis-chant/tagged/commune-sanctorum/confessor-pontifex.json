@@ -1,0 +1,61 @@
+[
+  {
+		"tags":["confessor-pontifex","antiphona"],
+		"antiphona-i":[["/antiphonae/1914"]],
+		"antiphona-ii":[["/antiphonae/2613"]],
+		"antiphona-iii":[["/antiphonae/2858"]],
+		"antiphona-iv":[["/antiphonae/2009"]],
+		"antiphona-v":[["/antiphonae/2592"]]
+  },
+  {
+		"tags":[
+			["confessor-pontifex","vesperae","hymnus"],
+			["confessor-pontifex","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/2334"]]
+  },
+  {
+		"tags":["confessor-pontifex","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2223"]]
+  },
+  {
+		"tags":["confessor-pontifex","laudes","hymnus"],
+		"datum":[["/hymni/17925"]]
+  },
+  {
+		"tags":["confessor-pontifex","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2306"]]
+  },
+  {
+		"tags":["confessor-pontifex","sexta","responsorium-breve"],
+    "incipit":"E(f)lé(f)git(f) e(g)um(f') Dó(g)mi(gh)nus(hg..)",
+    "responsum":"Sa(f)cer(gh)dó(gv_[oh:h]FD)tem(fg) si(g.)bi.(f.) (::)",
+    "versus":"Ad(ixhi) sa(h)cri(h)fi(h)cán(h)dum(h) e(gh)i(g'_[oh:h]) (,) hó(h)sti(g')am(f) lau(g_[uh:l]h)dis.(hg..)"
+  },
+  {
+		"tags":["confessor-pontifex","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"E(f)lé(f)git(f) e(f)um(f) Dó(g)mi(f)nus(f'_) (,) sa(f)cer(f)dó(f)tem(e') si(g)bi:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Ad(f) sa(f)cri(f)fi(f)cán(f)dum(f) e(g)i(f'_) (,) hó(f)sti(f)am(e') lau(g)dis.(h.)"
+  },
+  {
+		"tags":["confessor-pontifex","nona","responsorium-breve"],
+    "incipit":"Tu(f) es(g') sa(f)cér(g_[uh:l]h)dos(hg..)",
+    "responsum":"In(fd) æ(fg)tér(g.)num.(f.) (::)",
+    "versus":"Se(h)cún(ixhi)dum(h) ór(gh)di(g)nem(g) Mel(gf)chí(g)se(gh)dech.(hg..)"
+  },
+  {
+		"tags":["confessor-pontifex","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Tu(f) es(f) sa(f)cér(g)dos(f'_) (,) in(f) æ(e')tér(g)num:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Se(f)cún(f)dum(f) ór(g)di(f)nem(f) Mel(e)chí(g')se(g)dech.(h.)"
+  },
+  {
+		"tags":["confessor-pontifex","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2933"]]
+  },
+  {
+		"tags":["confessor-pontifex","papa","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1820"]]
+  }
+]

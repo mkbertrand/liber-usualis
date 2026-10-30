@@ -1,0 +1,67 @@
+[
+  {
+		"tags":["trinitas","antiphona"],
+		"antiphona-i":[["/antiphonae/2284"]],
+		"antiphona-ii":[["/antiphonae/2475"]],
+		"antiphona-iii":[["/antiphonae/2434"]],
+		"antiphona-iv":[["/antiphonae/2296"]],
+		"antiphona-v":[["/antiphonae/2650"]]
+  },
+  {
+		"tags":["trinitas","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2935"]]
+  },
+  {
+		"tags":["trinitas","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/H1I"]]
+  },
+  {
+		"tags":["trinitas","hymnus"],
+		"matutinum":[["/hymni/H1H"]],
+		"laudes":[["/hymni/2878"]]
+  },
+  {
+		"tags":["trinitas","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/H1N1A1"]],
+		"antiphona-ii":[["/antiphonae/H1N1A2"]],
+		"antiphona-iii":[["/antiphonae/H1N1A3"]]
+  },
+  {
+		"tags":["trinitas","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/H1N2A1"]],
+		"antiphona-ii":[["/antiphonae/H1N2A2"]],
+		"antiphona-iii":[["/antiphonae/H1N2A3"]]
+  },
+  {
+		"tags":["trinitas","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/H1N3A1"]],
+		"antiphona-ii":[["/antiphonae/H1N3A2"]],
+		"antiphona-iii":[["/antiphonae/H1N3A3"]]
+  },
+  {
+		"tags":["trinitas","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/19972"]]
+  },
+  {
+		"tags":["trinitas","tertia","responsorium-breve"],
+    "incipit":"Be(f)ne(f)di(f)cá(f)mus(f) Pa(g)trem(f') et(f) Fí(g)li(gh)um(hg..)",
+    "responsum":"Cum(fg'h) san(gv_[oh:h]FD)cto(fg) Spí(g)ri(f)tu.(f.) (::)",
+    "versus":"Lau(h)dé(ixhi)mus(h'_) (,) et(h) su(h)per(h)ex(h)al(h)té(h)mus(h) e(gh)um(g) in(f') sǽ(g)cu(gh)la.(hg..)"
+  },
+  {
+		"tags":["trinitas","sexta","responsorium-breve"],
+    "incipit":"Be(f)ne(f)dí(g)ctus(f) es(f') Dó(g)mi(gh)ne(hg..)",
+    "responsum":"In(g) fir(f)ma(gh)mén(gv_[oh:h]FD)to(fg) cœ(g.)li.(f.) (::)",
+    "versus":"Et(h) lau(h)dá(ixhi)bi(h)lis(h'_) (,) et(h) glo(h)ri(h)ó(gh)sus(g) in(f') sǽ(g)cu(gh)la.(hg..)"
+  },
+  {
+		"tags":["trinitas","nona","responsorium-breve"],
+    "incipit":"Ver(f)bo(f') Dó(g)mi(gh)ni(hg..)",
+    "responsum":"Cœ(fg'h)li(gv_[oh:h]FD) fir(fg)má(g)ti(f) sunt.(f.) (::)",
+    "versus":"Et(h) Spí(ixhi)ri(h)tu(h) o(h)ris(h) e(gh)jus,(g'_[oh:h]) (,) o(g)mnis(g) vir(h)tus(g') e(f)ó(g_[uh:l]h)rum.(hg..)"
+  },
+  {
+		"tags":["trinitas","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2759"]]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+		"tags":["pentecostes","antiphona"],
+		"antiphona-i":[["/antiphonae/19943"]],
+		"antiphona-ii":[["/antiphonae/2393"]],
+		"antiphona-iii":[["/antiphonae/2527"]],
+		"antiphona-iv":[["/antiphonae/2550"]],
+		"antiphona-v":[["/antiphonae/2311"]]
+  },
+	{
+		"tags":[
+			["pentecostes","vesperae","hymnus"],
+			["pentecostes","tertia","hymnus"]
+		],
+		"datum":"mode:8;%%(c3) VE(e)ni(f) Cre(e[ll:1]d)á(e)tor(fe) Spí(h')ri(i)tus,(h.) (;) Men(h)tes(e') tu(f)ó(h)rum(ih) ví(i')si(j)ta :(i.) (:) Im(h)ple(ij) su(hg)pér(fe)na(hi) grá(e')ti(f)a(h.) (;) Quae(gh) tu(f) cre(e[ll:1]d)á(f)sti(fgf) pé(e')cto(d)ra.(e.) (::)"
+	},
+  {
+		"tags":["pentecostes","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/3003"]]
+  },
+  {
+		"tags":["pentecostes","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/P7I"]]
+  },
+  {
+		"tags":["pentecostes","hymnus"],
+		"matutinum":[["/hymni/P7H"]],
+		"laudes":[["/hymni/2926"]]
+  },
+  {
+		"tags":["pentecostes","matutinum","antiphona"],
+		"antiphona-i":[["/antiphonae/P7A1"]],
+		"antiphona-ii":[["/antiphonae/P7A2"]],
+		"antiphona-iii":[["/antiphonae/P7A3"]]
+  },
+  {
+		"tags":["pentecostes","festum","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2375"]]
+  },
+  {
+		"tags":["pentecostes","tertia","responsorium-breve"],
+    "incipit":"Spí(f)ri(f)tus(f) Dó(g)mi(f)ni(f'_) (,) re(f)plé(f)vit(f) or(f)bem(f) ter(e')rá(g)rum:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) hoc(f) quod(f) cón(f)ti(f)net(f) ó(g)mni(f)a,(f'_) (,) sci(f)én(f)ti(f)am(f) ha(f)bet(e') vo(g)cis.(h.)"
+  },
+  {
+		"tags":["pentecostes","sexta","responsorium-breve"],
+    "incipit":"Spí(f)ri(f)tus(f) Pa(e)rá(g')cli(g)tus:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Do(f)cé(f)bit</nlba>(f) vos(e) ó(g')mni(g)a.(h.)"
+  },
+  {
+		"tags":["pentecostes","nona","responsorium-breve"],
+    "incipit":"Re(f)plé(f)ti(f) sunt(f) o(g)mnes(f'_) (,) Spí(f)ri(f)tu(e') san(g)cto:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) cœ(f)pé(f)runt(e') lo(g)qui.(h.)"
+  },
+  {
+		"tags":["pentecostes","festum","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2249"]]
+  },
+  {
+		"tags":["pentecostes","feria-ii","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/11948"]]
+  },
+  {
+		"tags":["pentecostes","feria-ii","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2899"]]
+  },
+  {
+		"tags":["pentecostes","feria-iii","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12812"]]
+  },
+  {
+		"tags":["pentecostes","feria-iii","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2864"]]
+  },
+  {
+		"tags":["pentecostes","feria-iv","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12949"]]
+  },
+  {
+		"tags":["pentecostes","feria-iv","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2047"]]
+  },
+  {
+		"tags":["pentecostes","feria-v","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12178"]]
+  },
+  {
+		"tags":["pentecostes","feria-v","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2574"]]
+  },
+  {
+		"tags":["pentecostes","feria-vi","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13321"]]
+  },
+  {
+		"tags":["pentecostes","feria-vi","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2488"]]
+  },
+  {
+		"tags":["pentecostes","sabbatum","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12491"]]
+  }
+]

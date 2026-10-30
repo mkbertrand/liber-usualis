@@ -1,0 +1,26 @@
+[
+  {
+		"tags":["visitatio","antiphona"],
+		"antiphona-i":[["/antiphonae/2841"]],
+		"antiphona-ii":[["/antiphonae/1994"]],
+		"antiphona-iii":[["/antiphonae/2845"]],
+		"antiphona-iv":[["/antiphonae/1840"]],
+		"antiphona-v":[["/antiphonae/1975"]]
+  },
+  {
+		"tags":["visitatio","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2469"]]
+  },
+  {
+		"tags":["visitatio","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0702I"]]
+  },
+  {
+		"tags":["visitatio","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12507"]]
+  },
+  {
+		"tags":["visitatio","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2350"]]
+  }
+]

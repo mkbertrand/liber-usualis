@@ -1,0 +1,86 @@
+[
+  {
+		"tags":["pretiosissimus-sanguis","vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2248"]],
+		"antiphona-ii":[["/antiphonae/2069"]],
+		"antiphona-iii":[["/antiphonae/2225"]],
+		"antiphona-iv":[["/antiphonae/2066"]],
+		"antiphona-v":[["/antiphonae/2511"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","hymnus"],
+		"vesperae":[["/hymni/2839"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2509"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0701I"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","hymnus"],
+		"matutinum":[["/hymni/0701H"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/0701N1A1"]],
+		"antiphona-ii":[["/antiphonae/0701N1A2"]],
+		"antiphona-iii":[["/antiphonae/0701N1A3"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/0701N2A1"]],
+		"antiphona-ii":[["/antiphonae/0701N2A2"]],
+		"antiphona-iii":[["/antiphonae/0701N2A3"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/0701N3A1"]],
+		"antiphona-ii":[["/antiphonae/0701N3A2"]],
+		"antiphona-iii":[["/antiphonae/0701N3A3"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","antiphona"],
+		"antiphona-i":[["/antiphonae/2015"]],
+		"antiphona-ii":[["/antiphonae/2397"]],
+		"antiphona-iii":[["/antiphonae/2379"]],
+		"antiphona-iv":[["/antiphonae/1945"]],
+		"antiphona-v":[["/antiphonae/2414"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","hymnus"],
+		"laudes":[["/hymni/2294"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2894"]]
+  },
+  {
+		"tags":["pretiosissimus-sanguis","prima","responsorium-breve","versus"],
+    "datum":"Qui(ixhi) tu(h)o(h) nos(h) sán(gh)gui(g)ne(g) (,) re(g)de(f)mís(gh)ti.(hg)"
+  },
+  {
+		"tags":["pretiosissimus-sanguis","tertia","responsorium-breve"],
+    "incipit":"Re(f)de(f)mí(g)sti(f) nos(f') Dó(g)mi(gh)ne(hg..)",
+    "responsum":"In(fg) sán(hg)gui(fd)ne(fg) tu(g.)o.(f.) (::)",
+    "versus":"Ex(h) o(h)mni(h) tri(ixhi)bu,(h) et(h) lin(gh)gua,(g'_[oh:h]) (,) et(g) pó(h)pu(g)lo,(g') et(g) na(g')ti(f)ó(g_[uh:l]h)ne.(hg..)"
+  },
+  {
+		"tags":["pretiosissimus-sanguis","sexta","responsorium-breve"],
+    "incipit":"San(f)guis(f) Je(f)su(f) Chri(g)sti(f') Fí(f)li(f)i(f) De(g_[uh:l]h)i(hg..)",
+    "responsum":"E(fd)mún(fg)dat(g) nos.(f.) (::)",
+    "versus":"Ab(h) o(ixhi)mni(g') pec(f)cá(g_[uh:l]h)to.(hg..)"
+  },
+  {
+		"tags":["pretiosissimus-sanguis","nona","responsorium-breve"],
+    "incipit":"Chri(f)stus(f) di(f)lé(g)xit(f) nos,(f') et(f) la(g)vit(gh) nos(hg..)",
+    "responsum":"In(fg) sán(hg)gui(fd)ne(fg) su(g.)o.(f.) (::)",
+    "versus":"Et(h) fe(ixhi)cit(h) nos(h) re(h)gnum,(h) et(h) sa(h)cer(h)dó(gh)tes(g'_[oh:h]) (,) De(h)o(g') et(f) Pa(g_[uh:l]h)tri.(hg..)"
+  },
+  {
+		"tags":["pretiosissimus-sanguis","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2444"]]
+  }
+]

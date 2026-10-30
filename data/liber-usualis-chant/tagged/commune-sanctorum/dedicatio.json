@@ -1,0 +1,94 @@
+[
+  {
+    "tags":["dedicatio","antiphona"],
+		"antiphona-i":[["/antiphonae/2758"]],
+		"antiphona-ii":[["/antiphonae/2508"]],
+		"antiphona-iii":[["/antiphonae/2834"]],
+		"antiphona-iv":[["/antiphonae/2869"]],
+		"antiphona-v":[["/antiphonae/2776"]]
+  },
+  {
+		"tags":[
+			["dedicatio","vesperae","hymnus"],
+			["dedicatio","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/2200"]]
+  },
+  {
+		"tags":["dedicatio","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2315"]]
+  },
+  {
+		"tags":["dedicatio","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/CDEDI"]]
+  },
+  {
+		"tags":["dedicatio","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/CDEDN1A1"]],
+		"in-tempore-paschali":[["/antiphonae/CDEDN1A1"]],
+		"antiphona-ii":[["/antiphonae/CDEDN1A2"]],
+		"antiphona-iii":[["/antiphonae/CDEDN1A3"]]
+  },
+  {
+		"tags":["dedicatio","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/CDEDN2A1"]],
+		"in-tempore-paschali":[["/antiphonae/CDEDN2A1"]],
+		"antiphona-ii":[["/antiphonae/CDEDN2A2"]],
+		"antiphona-iii":[["/antiphonae/CDEDN2A3"]]
+  },
+  {
+		"tags":["dedicatio","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/CDEDN3A1"]],
+		"in-tempore-paschali":[["/antiphonae/CDEDN3A1"]],
+		"antiphona-ii":[["/antiphonae/CDEDN3A2"]],
+		"antiphona-iii":[["/antiphonae/CDEDN3A3"]]
+  },
+  {
+		"tags":["dedicatio","laudes","hymnus"],
+		"datum":[["/hymni/2948"]]
+  },
+  {
+		"tags":["dedicatio","tertia","responsorium-breve"],
+    "incipit":"Do(f)mum(f) tu(g)am(f') Dó(g)mi(gh)ne(hg..)",
+    "responsum":"De(f)cet(gh) san(gv_[oh:h]FD)cti(fg)tú(g.)do.(f.) (::)",
+    "versus":"In(ixhi) lon(h)gi(h)tú(gh)di(g)nem(g') di(f)é(g_[uh:l]h)rum.(hg..)"
+  },
+  {
+		"tags":["dedicatio","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Do(f)mum(f) tu(f)am(f) Dó(g)mi(f)ne(f'_) (,) de(f)cet(f) san(f)cti(e')tú(g)do:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"In(f) lon(f)gi(f)tú(g)di(f)nem(f) di(e')é(g)rum.(h.)"
+  },
+  {
+		"tags":["dedicatio","sexta","responsorium-breve"],
+    "incipit":"Lo(f)cus(f) i(g)ste(f') san(g)ctus(gh) est,(hg..)",
+    "responsum":"In(f) quo(gh) o(g)rat(fd) sa(fg)cér(g.)dos.(f.) (::)",
+    "versus":"Pro(ixhi) de(h)lí(gh)ctis(g'_[oh:h]) (,) et(g) pec(h)cá(g)tis(f') pó(g)pu(gh)li.(hg..)"
+  },
+  {
+		"tags":["dedicatio","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Lo(f)cus(f) i(f)ste(f) san(g)ctus(f) est,(f'_) (,) in(f) quo(f) o(f)rat(f) sa(e')cér(g)dos:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Pro(f) de(f)lí(g)ctis(f'_) (,) et(f) pec(f)cá(f)tis(e) pó(g')pu(g)li.(h.)"
+  },
+  {
+		"tags":["dedicatio","nona","responsorium-breve"],
+    "incipit":"Hæc(f) est(f) do(g)mus(f') Dó(g)mi(gh)ni(hg..)",
+    "responsum":"Fír(g)mi(f)ter(gh) æ(g)di(fd)fi(fg)cá(g.)ta.(f.) (::)",
+    "versus":"Be(ixhi)ne(h) fun(h)dá(gh)ta(g) est(g'_[oh:h]) (,) su(h)pra(g') fir(g)mam(f) pe(g_[uh:l]h)tram.(hg..)"
+  },
+  {
+		"tags":["dedicatio","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Hæc(f) est(f) do(f)mus(f) Dó(g)mi(f)ni(f'_) (,) fír(f)mi(f)ter(f) æ(f)di(f)fi(e')cá(g)ta:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Be(f)ne(f) fun(f)dá(g)ta(f) est(f'_) (,) su(f)pra(f) fir(f)mam(e') pe(g)tram.(h.)"
+  },
+  {
+		"tags":["dedicatio","laudes","antiphona","antiphona-benedictus"],
+    "datum":[["/antiphonae/2526"]]
+  },
+  {
+		"tags":["dedicatio","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2416"]]
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+		"tags":["nomen-jesu","vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2597"]],
+		"antiphona-ii":[["/antiphonae/2775"]],
+		"antiphona-iii":[["/antiphonae/2795"]],
+		"antiphona-iv":[["/antiphonae/2925"]],
+		"antiphona-v":[["/antiphonae/2213"]]
+  },
+  {
+		"tags":["nomen-jesu","hymnus"],
+		"vesperae":[["/hymni/1911"]],
+		"matutinum":[["/hymni/N2H"]],
+		"laudes":[["/hymni/11869"]]
+  },
+  {
+		"tags":["nomen-jesu","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2618"]]
+  },
+  {
+		"tags":["nomen-jesu","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/N2I"]]
+  },
+  {
+		"tags":["nomen-jesu","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/N2N1A1"]],
+		"antiphona-ii":[["/antiphonae/N2N1A2"]],
+		"antiphona-iii":[["/antiphonae/N2N1A3"]]
+  },
+  {
+		"tags":["nomen-jesu","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/N2N2A1"]],
+		"antiphona-ii":[["/antiphonae/N2N2A2"]],
+		"antiphona-iii":[["/antiphonae/N2N2A3"]]
+  },
+  {
+		"tags":["nomen-jesu","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/N2N3A1"]],
+		"antiphona-ii":[["/antiphonae/N2N3A2"]],
+		"antiphona-iii":[["/antiphonae/N2N3A3"]]
+  },
+  {
+		"tags":["nomen-jesu","antiphona"],
+		"antiphona-i":[["/antiphonae/2465"]],
+		"antiphona-ii":[["/antiphonae/2762"]],
+		"antiphona-iii":[["/antiphonae/2055"]],
+		"antiphona-iv":[["/antiphonae/13237"]],
+		"antiphona-v":[["/antiphonae/2144"]]
+  },
+  {
+		"tags":["nomen-jesu","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13137"]]
+  },
+  {
+		"tags":["nomen-jesu","tertia","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Sit(f) no(f)men(f) Dó(g)mi(f)ni(f) be(f)ne(e')dí(g)ctum:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Ex(f) hoc(g) nunc,(f.) (,) et(f) us(f)que(f) in(e) sǽ(g')cu(g)lum.(h.)"
+  },
+  {
+		"tags":["nomen-jesu","tertia","responsorium-breve","in-tempore-septuagesimae"],
+    "formula":[["per-annum","responsorium-breve","formula"]],
+    "incipit":"Sit(f) no(g)men(f) Dó(g)mi(gh)ni(hg)",
+    "responsum":"Be(fd)ne(fg)dí(g)ctum.(f) (::)",
+    "versus":"Ex(h) hoc(ixhi) nunc,(g) (,) et(g) us(h)que(g) in(f) sǽ(g)cu(gh)lum.(hg)"
+  },
+  {
+		"tags":["nomen-jesu","sexta","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Af(f)fér(f)te(f) Dó(g)mi(f)no(f'_) (,) gló(f)ri(f)am(f) et(f) ho(e')nó(g)rem:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Af(f)fér(f)te(f) Dó(g)mi(f)no(f'_) (,) gló(f)ri(f)am(f) nó(f)mi(f)ni(e') e(g)jus.(h.)"
+  },
+  {
+		"tags":["nomen-jesu","sexta","responsorium-breve","in-tempore-septuagesimae"],
+    "formula":[["per-annum","responsorium-breve","formula"]],
+    "incipit":"Af(g)fér(f)te(f) Dó(g)mi(f)no(f) gló(g)ri(gh)am(hg)",
+    "responsum":"Et(fd) ho(fg)nó(g)rem.(f.) (::)",
+    "versus":"Af(h)fér(ixhi)te(h) Dó(gh)mi(g)no(g) (,) gló(g)ri(g)am(g) nó(h)mi(g)ni(f) e(gh)jus.(hg)"
+  },
+  {
+		"tags":["nomen-jesu","nona","responsorium-breve"],
+    "formula":[["cum-alleluja","responsorium-breve","formula"]],
+    "incipit":"Ma(f)gni(f)fi(f)cá(g)te(f) Dó(f)mi(f)num(e') me(g)cum:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) ex(f)al(f)té(f)mus(f) no(f)men(f) e(g)jus(f'_) (,) in(f) id(e')í(g)psum.(h.)"
+  },
+  {
+		"tags":["nomen-jesu","nona","responsorium-breve","in-tempore-septuagesimae"],
+    "formula":[["per-annum","responsorium-breve","formula"]],
+    "incipit":"Ma(g)gni(f)fi(f)cá(g)te(f) Dó(g)mi(gh)num(hg)",
+    "responsum":"Me(fd/fg)cum.(gf) (::)",
+    "versus":"Et(ixhi) ex(h)al(h)té(h)mus(h) no(h)men(h) e(gh)jus(g) (,) in(g) id(f)í(gh)psum.(hg)"
+  },
+  {
+		"tags":["nomen-jesu","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2547"]]
+  }
+]

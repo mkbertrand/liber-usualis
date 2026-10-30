@@ -1,0 +1,25 @@
+[
+  {
+		"tags":[
+			["stephanus","i-vesperae","antiphona","antiphona-magnificat"],
+			["stephanus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/2825"]]
+  },
+  {
+		"tags":["stephanus","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/1226I"]]
+  },
+  {
+		"tags":["stephanus","antiphona"],
+		"antiphona-i":[["/antiphonae/1972"]],
+		"antiphona-ii":[["/antiphonae/2160"]],
+		"antiphona-iii":[["/antiphonae/2787"]],
+		"antiphona-iv":[["/antiphonae/2373"]],
+		"antiphona-v":[["/antiphonae/2048"]]
+  },
+  {
+		"tags":["stephanus","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1962"]]
+  }
+]

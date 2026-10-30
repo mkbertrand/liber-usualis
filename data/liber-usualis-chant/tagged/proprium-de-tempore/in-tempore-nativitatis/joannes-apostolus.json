@@ -1,0 +1,21 @@
+[
+  {
+		"tags":[
+			["joannes-apostolus","i-vesperae","vesperae","antiphona","antiphona-magnificat"],
+			["joannes-apostolus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/2174"]]
+  },
+  {
+		"tags":["joannes-apostolus","antiphona"],
+		"antiphona-i":[["/antiphonae/1906"]],
+		"antiphona-ii":[["/antiphonae/2569"]],
+		"antiphona-iii":[["/antiphonae/2499"]],
+		"antiphona-iv":[["/antiphonae/13076"]],
+		"antiphona-v":[["/antiphonae/2409"]]
+  },
+  {
+		"tags":["joannes-apostolus","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2471"]]
+  }
+]

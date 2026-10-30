@@ -1,0 +1,80 @@
+[
+  {
+    "tags":["maria","antiphona"],
+		"antiphona-i":[["/antiphonae/2000"]],
+		"antiphona-ii":[["/antiphonae/2514"]],
+		"antiphona-iii":[["/antiphonae/2007"]],
+		"antiphona-iv":[["/antiphonae/2056"]],
+		"antiphona-v":[["/antiphonae/18381"]]
+  },
+  {
+		"tags":["maria","hymnus"],
+		"vesperae":[["/hymni/2232"]],
+		"matutinum":[["/hymni/CBMVH"]],
+		"laudes":[["/hymni/2885"]]
+  },
+  {
+		"tags":[
+			["maria","i-vesperae","antiphona","antiphona-magnificat"],
+			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
+			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
+		],
+    "datum":"mode:4 E;%%(c4) SAn(e!fwg)cta(dc) Ma(de)rí(e)a,(e.) *(,) suc(gh)cúr(hg)re(e[ll:1]d) mí(e!fw!gv_[oh:h]FE)se(de)ris,(e.) (;) ju(h)va(g) pu(fe)sil(d)lá(efe)ni(de)mes,(e.) (;) ré(e[ll:1]d)fo(dc)ve(c) flé(e!fw!gv_[oh:h]FE)bi(de)les :(e.) (:) o(d!f'h)ra(g) pro(fe) pó(dc)pu(df)lo,(efED.) (;) in(d)tér(dh)ve(ixhih)ni(g) pro(gh) cle(gf)ro,(e[ll:1]d..) (;) in(d)ter(fh)cé(h)de(g) pro(fe) de(dc)vó(df)to(efE'D) (,) fe(fh)mí(hvGF')ne(g)o(gf) se(e.)xu :(e.) (:) sén(c)ti(df)ant(fd) o(e_[uh:l]f)mnes(g) tu(gh)um(gf) ju(de)vá(dd)men,(c.) *(;) qui(cd)cúm(fe)que(fg) cé(gh)le(g)brant(g'_[oh:h]) N. (::) <i>T. P.</i> Al(g)le(gf)lú(e.){ia}.(e.) (::)"
+  },
+  {
+		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat","n"],
+    "datum":"tu(g)am(g) san(gh)ctam(g) fe(gf)sti(g)vi(ghg)tá(e.)tem.(e.)"
+  },
+  {
+		"tags":[
+			["maria","suffragium","vesperae","antiphona","antiphona-magnificat","n"],
+			["maria","suffragium","laudes","antiphona","antiphona-benedictus","n"]
+		],
+    "datum":"tu(g)am(g) san(gh)ctam(g) com(g)me(g)mo(gf)ra(g)ti(ghg)ó(e.)nem.(e.)"
+  },
+  {
+		"tags":["bmv-carmelo","i-vesperae","antiphona","antiphona-magnificat","n"],
+    "datum":"tu(g)am(g) so(g)lé(gh)mnem(g') com(g)me(g)mo(gf)ra(g)ti(ghg)ó(e.)nem.(e.) (::)"
+  },
+  {
+		"tags":["nomen-bmv","i-vesperae","antiphona","antiphona-magnificat","n"],
+    "datum":"tu(g)i(g) san(g')cti(f) Nó(gh)mi(g)nis(g') com(g)me(g)mo(gf)ra(g)ti(ghg)ó(e.)nem.(e.)"
+  },
+  {
+		"tags":["maria","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/CBMVI"]]
+  },
+  {
+		"tags":["maria","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/CBMVN1A1"]],
+		"in-tempore-paschali":[["/antiphonae/CBMVN1A1"]],
+		"antiphona-ii":[["/antiphonae/CBMVN1A2"]],
+		"antiphona-iii":[["/antiphonae/MUVXN1A2"]]
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN2A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN2A1"]],
+		"antiphona-ii":[["/antiphonae/MUXXN2A2"]],
+		"antiphona-iii":[["/antiphonae/CBMVN2A3"]]
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/CBMVN3A1"]],
+		"in-tempore-paschali":[["/antiphonae/CBMVN3A1"]],
+		"antiphona-ii":[["/antiphonae/CBMVN3A2"]],
+		"antiphona-iii":[["/antiphonae/CBMVN3A3a"]]
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-iii","in-tempore-adventus"],
+		"datum":[["/antiphonae/CBMVN3A3b"]]
+  },
+  {
+		"tags":["maria","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13018"]]
+  },
+  {
+		"tags":["maria","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2950"]]
+  }
+]

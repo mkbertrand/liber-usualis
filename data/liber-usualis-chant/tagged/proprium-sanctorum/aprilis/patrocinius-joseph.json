@@ -1,0 +1,55 @@
+[
+  {
+		"tags":["patrocinius-joseph","antiphona"],
+		"antiphona-i":[["/antiphonae/2663"]],
+		"antiphona-ii":[["/antiphonae/2146"]],
+		"antiphona-iii":[["/antiphonae/12446"]],
+		"antiphona-iv":[["/antiphonae/12205"]],
+		"antiphona-v":[["/antiphonae/2005"]]
+  },
+  {
+		"tags":[
+			["patrocinius-joseph","vesperae","hymnus"],
+			["patrocinius-joseph","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/2235"]]
+  },
+  {
+		"tags":["patrocinius-joseph","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/12798"]]
+  },
+  {
+		"tags":["patrocinius-joseph","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/P2F4I"]]
+  },
+  {
+		"tags":["patrocinius-joseph","matutinum","nocturna-i","antiphona"],
+		"datum":[["/antiphonae/P2F4N1A"]]
+  },
+  {
+		"tags":["patrocinius-joseph","matutinum","nocturna-ii","antiphona"],
+		"datum":[["/antiphonae/P2F4N2A"]]
+  },
+  {
+		"tags":["patrocinius-joseph","matutinum","nocturna-iii","antiphona"],
+		"datum":[["/antiphonae/P2F4N3A"]]
+  },
+  {
+		"tags":["patrocinius-joseph","laudes","hymnus"],
+		"datum":[["/hymni/11972"]]
+  },
+  {
+		"tags":["patrocinius-joseph","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12819"]]
+  },
+  {
+		"tags":["patrocinius-joseph","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Con(f)fi(f)té(g)bor(f) nó(f)mi(f)ni(e') tu(g)o:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Quó(f)ni(f)am(f) ad(f)jú(f)tor(f) et(f) pro(f)té(g)ctor(f'_) (,) fa(f)ctus(f) es(e') mi(g)hi.(h.)"
+  },
+  {
+		"tags":["patrocinius-joseph","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/12371"]]
+  }
+]

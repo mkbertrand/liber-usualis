@@ -1,0 +1,69 @@
+[
+  {
+		"tags":["immaculata-conceptio-bmv","antiphona"],
+		"antiphona-i":[["/antiphonae/2922"]],
+		"antiphona-ii":[["/antiphonae/2930"]],
+		"antiphona-iii":[["/antiphonae/2747"]],
+		"antiphona-iv":[["/antiphonae/2370"]],
+		"antiphona-v":[["/antiphonae/2078"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2695"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":[["/invitatoria/1208I"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","matutinum","hymnus"],
+    "datum":[["/hymni/1208H"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","antiphona"],
+    "antiphona-i":[["/antiphonae/1208N1A1"]],
+    "in-tempore-paschali":[["/antiphonae/1208N1A1"]],
+    "antiphona-ii":[["/antiphonae/1208N1A2"]],
+    "antiphona-iii":[["/antiphonae/1208N1A3"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","antiphona"],
+    "antiphona-i":[["/antiphonae/1208N2A1"]],
+    "in-tempore-paschali":[["/antiphonae/1208N2A1"]],
+    "antiphona-ii":[["/antiphonae/1208N2A2"]],
+    "antiphona-iii":[["/antiphonae/1208N2A3"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","antiphona"],
+    "antiphona-i":[["/antiphonae/1208N3A1"]],
+    "in-tempore-paschali":[["/antiphonae/1208N3A1"]],
+    "antiphona-ii":[["/antiphonae/1208N3A2"]],
+    "antiphona-iii":[["/antiphonae/1208N3A3"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2152"]]
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","tertia","responsorium-breve"],
+    "incipit":"De(f)us(f) o(f')mní(g)pot(gh)ens(hg..)",
+    "responsum":"Præ(f)cín(gh)xit(g) me(fd) vir(fg)tú(g.)te.(f.) (::)",
+    "versus":"Et(h) pó(ixhi)su(h)it(h) im(h)ma(h)cu(h)lá(gh)tam(g'_[oh:h]) (,) vi(g)am(f) me(g_[uh:l]h)am.(hg..)"
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","sexta","responsorium-breve"],
+    "incipit":"In(f) hoc(g') co(f)gnó(g_[uh:l]h)vi(hg..)",
+    "responsum":"Quó(g)ni(f)am(gh) vo(gv_[oh:h]FD)lu(fg)í(g)sti(f) me.(f.) (::)",
+    "versus":"Quó(ixhi)ni(h)am(h) non(h) gau(h)dé(gh)bit(g'_[oh:h]) (,) in(g)i(g)mí(h)cus(g') me(g)us(f') su(g)per(gh) me.(hg..)"
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","nona","responsorium-breve"],
+    "incipit":"Ex(f)al(f)tá(g)bo(f) te(f') Dó(g)mi(gh)ne,(hg..)",
+    "responsum":"Quó(g)ni(f)am(gh) sus(gv_[oh:h]FD)ce(fg)pí(g)sti(f) me.(f.) (::)",
+    "versus":"Nec(ixhi) de(h)le(h)ctá(gh)sti(g'_[oh:h]) (,) in(g)i(g)mí(h)cos(g') me(g)os(f') su(g)per(gh) me.(hg..)"
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2494"]]
+  }
+]

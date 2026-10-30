@@ -1,0 +1,86 @@
+[
+  {
+		"tags":["rosarium-bmv","vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2921"]],
+		"antiphona-ii":[["/antiphonae/2193"]],
+		"antiphona-iii":[["/antiphonae/2844"]],
+		"antiphona-iv":[["/antiphonae/2312"]],
+		"antiphona-v":[["/antiphonae/2701"]]
+  },
+  {
+		"tags":["rosarium-bmv","hymnus"],
+		"i-vesperae":[["/hymni/2615"]]
+  },
+  {
+		"tags":["rosarium-bmv","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2960"]]
+  },
+  {
+		"tags":["rosarium-bmv","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/1007I"]]
+  },
+  {
+		"tags":["rosarium-bmv","hymnus"],
+		"matutinum":[["/hymni/1007H"]]
+  },
+  {
+		"tags":["rosarium-bmv","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/1007N1A1"]],
+		"antiphona-ii":[["/antiphonae/1007N1A2"]],
+		"antiphona-iii":[["/antiphonae/1007N1A3"]]
+  },
+  {
+		"tags":["rosarium-bmv","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/1007N2A1"]],
+		"antiphona-ii":[["/antiphonae/1007N2A2"]],
+		"antiphona-iii":[["/antiphonae/1007N2A3"]]
+  },
+  {
+		"tags":["rosarium-bmv","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/1007N3A1"]],
+		"antiphona-ii":[["/antiphonae/1007N3A2"]],
+		"antiphona-iii":[["/antiphonae/1007N3A3"]]
+  },
+  {
+		"tags":["rosarium-bmv","antiphona"],
+		"antiphona-i":[["/antiphonae/20110"]],
+		"antiphona-ii":[["/antiphonae/20111"]],
+		"antiphona-iii":[["/antiphonae/20108"]],
+		"antiphona-iv":[["/antiphonae/13000"]],
+		"antiphona-v":[["/antiphonae/20109"]]
+  },
+  {
+		"tags":["rosarium-bmv","hymnus"],
+		"laudes":[["/hymni/12800"]]
+  },
+  {
+		"tags":["rosarium-bmv","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13287"]]
+  },
+  {
+		"tags":["rosarium-bmv","tertia","responsorium-breve"],
+    "incipit":"San(f)cta(f) De(g)i(f') Gé(g)ni(gh)trix,(hg..)",
+    "responsum":"Sem(f)per(gh) Vir(g)go(fd) Ma(fg)rí(g.)a.(f.) (::)",
+    "versus":"In(ixhi)ter(h)cé(h)de(h) pro(h) no(gh)bis(g'_) (,) ad(g) Dó(h)mi(g)num(g) De(g')um(f) no(g_h)strum.(hg..)"
+  },
+  {
+		"tags":["rosarium-bmv","sexta","responsorium-breve"],
+    "incipit":"Post(f) par(g')tum(f) Vir(g_[uh:l]h)go(hg..)",
+    "responsum":"In(g)vi(f)o(gh)lá(g)ta(fd) per(f)man(g)sí(g.)sti.(f.) (::)",
+    "versus":"De(ixhi)i(h) Gé(gh)ni(g)trix(g'_[oh:h]) (,) in(g)ter(g)cé(h)de(g') pro(f) no(g_[uh:l]h)bis.(hg..)"
+  },
+  {
+		"tags":["rosarium-bmv","nona","responsorium-breve"],
+    "incipit":"Spe(f)ci(f)ó(g)sa(f') fa(g)cta(gh) es(hg..)",
+    "responsum":"Et(fd) su(gh)á(g.)vis.(f.) (::)",
+    "versus":"In(ixhi) de(h)lí(h)ci(h)is(h) tu(gh)is,(g'_[oh:h]) (,) san(g)cta(g') De(h)i(gf) Gé(g)ni(gh)trix.(hg..)"
+  },
+  {
+		"tags":["rosarium-bmv","hymnus"],
+		"ii-vesperae":[["/hymni/2698"]]
+  },
+  {
+		"tags":["rosarium-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1871"]]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+		"tags":["assumptio-bmv","antiphona"],
+		"antiphona-i":[["/antiphonae/2561"]],
+		"antiphona-ii":[["/antiphonae/2912"]],
+		"antiphona-iii":[["/antiphonae/2963"]],
+		"antiphona-iv":[["/antiphonae/2947"]],
+		"antiphona-v":[["/antiphonae/2861"]]
+  },
+  {
+		"tags":["assumptio-bmv","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2183"]]
+  },
+  {
+		"tags":["assumptio-bmv","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":[["/invitatoria/0815I"]]
+  },
+  {
+		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona"],
+    "antiphona-i":[["/antiphonae/0815N1A1"]],
+    "antiphona-ii":[["/antiphonae/0815N1A2"]]
+  },
+  {
+		"tags":["assumptio-bmv","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2730"]]
+  },
+  {
+		"tags":["assumptio-bmv","tertia","responsorium-breve"],
+    "incipit":"Ex(fg)al(f)tá(g)ta(gh) est(hg..)",
+    "responsum":"San(f)cta(gh) De(gv_[oh:h]FD)i(fg) Gé(g)ni(f)trix.(f.) (::)",
+    "versus":"Su(ixhi)per(h) cho(h)ros(h) An(h)ge(h)ló(gh)rum(g'_[oh:h]) (,) ad(g) cœ(g)lé(h)sti(g')a(f) re(g_[uh:l]h)gna.(hg..)"
+  },
+  {
+		"tags":["assumptio-bmv","sexta","responsorium-breve"],
+    "incipit":"As(f)súm(f)pta(f) est(f) Ma(f)rí(g)a(f') in(f) cœ(g_[uh:l]h)lum,(hg..)",
+    "responsum":"Gau(fg'h)dent(gv_[oh:h]FD) An(fg)ge(g)li.(f.) (::)",
+    "versus":"Lau(h)dán(ixhi)tes(g'_[oh:h]) (,) be(g)ne(h)dí(g)cunt(f') Dó(g)mi(gh)num.(hg..)"
+  },
+  {
+		"tags":["assumptio-bmv","nona","responsorium-breve"],
+    "incipit":"Ma(f)rí(f)a(f) Vir(g)go(f') as(f)súm(g)pta(gh) est(hg..)",
+    "responsum":"Ad(f) æ(gh)thé(g)re(fd)um(fg) thá(g)la(f)mum.(f.) (::)",
+    "versus":"In(ixhi) quo(h) Rex(h) re(gh)gum(g'_[oh:h]) (,) stel(g)lá(h)to(g) se(g)det(f') só(g)li(gh)o.(hg..)"
+  },
+  {
+		"tags":["assumptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2700"]]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+		"tags":["nativitas-bmv","antiphona"],
+		"antiphona-i":[["/antiphonae/2062"]],
+		"antiphona-ii":[["/antiphonae/2862"]],
+		"antiphona-iii":[["/antiphonae/2748"]],
+		"antiphona-iv":[["/antiphonae/2154"]],
+		"antiphona-v":[["/antiphonae/1835"]]
+  },
+  {
+		"tags":["nativitas-bmv","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2956"]]
+  },
+  {
+		"tags":["nativitas-bmv","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":[["/invitatoria/0908I"]]
+  },
+  {
+		"tags":["nativitas-bmv","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/13064"]]
+  },
+  {
+		"tags":["nativitas-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1985"]]
+  }
+]

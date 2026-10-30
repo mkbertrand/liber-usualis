@@ -1,0 +1,24 @@
+[
+  {
+		"tags":[
+			["officium-parvum-bmv","completorium","hymnus"],
+			["officium-parvum-bmv","prima","hymnus"],
+			["officium-parvum-bmv","tertia","hymnus"],
+			["officium-parvum-bmv","sexta","hymnus"],
+			["officium-parvum-bmv","nona","hymnus"]
+		],
+		"datum":[["/hymni/18845"]]
+  },
+  {
+		"tags":["officium-parvum-bmv","completorium","antiphona","antiphona-nunc-dimittis"],
+		"datum":[["/antiphonae/18315"]]
+  },
+  {
+		"tags":[
+			["officium-parvum-bmv","in-tempore-adventus","vesperae","antiphona","antiphona-magnificat"],
+			["officium-parvum-bmv","in-tempore-adventus","completorium","antiphona","antiphona-nunc-dimittis"],
+			["officium-parvum-bmv","in-tempore-adventus","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/12304"]]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+		"tags":["joseph-sponsus","i-vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/2663"]],
+		"antiphona-ii":[["/antiphonae/2146"]],
+		"antiphona-iii":[["/antiphonae/2778"]],
+		"antiphona-iv":[["/antiphonae/1865"]],
+		"antiphona-v":[["/antiphonae/2673"]],
+		"antiphona-magnificat":[["/antiphonae/2664"]]
+  },
+  {
+    "tags":["joseph-sponsus","hymnus"],
+		"vesperae":[["/hymni/2235"]],
+		"matutinum":[["/hymni/0319H"]],
+		"laudes":[["/hymni/12237"]]
+  },
+  {
+		"tags":["joseph-sponsus","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0319I"]]
+  },
+  {
+		"tags":["joseph-sponsus","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/0319N1A1"]],
+		"in-tempore-paschali":[["/antiphonae/0319N1A1"]],
+		"antiphona-ii":[["/antiphonae/0319N1A2"]],
+		"antiphona-iii":[["/antiphonae/0319N1A3"]]
+  },
+  {
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/0319N2A1"]],
+		"in-tempore-paschali":[["/antiphonae/0319N2A1"]],
+		"antiphona-ii":[["/antiphonae/0319N2A2"]],
+		"antiphona-iii":[["/antiphonae/0319N2A3"]]
+  },
+  {
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/0319N3A1"]],
+		"in-tempore-paschali":[["/antiphonae/0319N3A1"]],
+		"antiphona-ii":[["/antiphonae/0319N3A2"]],
+		"antiphona-iii":[["/antiphonae/0319N3A3"]]
+  },
+  {
+    "tags":["joseph-sponsus","antiphona"],
+		"antiphona-i":[["/antiphonae/2690"]],
+		"antiphona-ii":[["/antiphonae/2607"]],
+		"antiphona-iii":[["/antiphonae/2796"]],
+		"antiphona-iv":[["/antiphonae/2244"]],
+		"antiphona-v":[["/antiphonae/2147"]]
+  },
+  {
+		"tags":["joseph-sponsus","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12158"]]
+  },
+  {
+		"tags":["joseph-sponsus","tertia","responsorium-breve"],
+    "incipit":"Con(f)stí(g')tu(f)it(f) e(g_h)um(hg..)",
+    "responsum":"Dó(g)mi(f)num(gh) do(gv_FD)mus(fg) su(g.)æ.(f.) (::)",
+    "versus":"Et(h) prín(ixhi)ci(g)pem(g'_) (,) o(g)mnis(g') pos(g)ses(g)si(h)ó(g')nis(f) su(g_h)æ.(hg..)"
+  },
+  {
+		"tags":["joseph-sponsus","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Con(f)stí(f)tu(f)it(f) e(g)um(f'_) (,) dó(f)mi(f)num(f) do(f)mus(e') su(g)æ:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) prín(g)ci(f)pem(f'_) (,) o(f)mnis(f) pos(f)ses(f)si(f)ó(f)nis(e') su(g)æ.(h.)"
+  },
+  {
+		"tags":["joseph-sponsus","sexta","responsorium-breve"],
+    "incipit":"Ma(f)gna(f) est(f) gló(g')ri(f)a(f) e(g_h)jus(hg..)",
+    "responsum":"In(g) sa(f)lu(gh)tá(gv_FD)ri(fg) tu(g.)o.(f.) (::)",
+    "versus":"Gló(ixhi)ri(h)am(h) et(h) ma(h)gnum(h) de(h)có(gh)rem(g'_) (,) im(g)pó(h)nes(g') su(g)per(f) e(g_h)um.(hg..)"
+  },
+  {
+		"tags":["joseph-sponsus","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Ma(f)gna(f) est(f) gló(f)ri(f)a(f) e(g)jus(f'_) (,) in(f) sa(f)lu(f)tá(f)ri(e') tu(g)o:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Gló(f)ri(f)am(f) et(f) ma(f)gnum(f) de(f)có(g)rem(f'_) (,) im(f)pó(f)nes(f) su(f)per(e') e(g)um.(h.)"
+  },
+  {
+		"tags":["joseph-sponsus","nona","responsorium-breve"],
+    "incipit":"Ju(f)stus(f) ger(g')mi(f)ná(g_[uh:l]h)bit(hg..)",
+    "responsum":"Sic(fg'h)ut(gv_[oh:h]FD) lí(fg)li(g)um.(f.) (::)",
+    "versus":"Et(h) flo(h)ré(ixhi)bit(h) in(h) æ(h)tér(gh)num(g'_[oh:h]) (,) an(g)te(f') Dó(g)mi(gh)num.(hg..)"
+  },
+  {
+		"tags":["joseph-sponsus","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Ju(f)stus(f) ger(f)mi(f)ná(g)bit(f'_) (,) sic(f)ut(e) lí(g')li(g)um:(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) flo(f)ré(f)bit(f) in(f) æ(f)tér(g)num(f'_) (,) an(f)te(e) Dó(g')mi(g)num.(h.)"
+  },
+  {
+		"tags":["joseph-sponsus","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2431"]]
+  }
+]

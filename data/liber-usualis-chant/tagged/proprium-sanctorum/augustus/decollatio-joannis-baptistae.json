@@ -1,0 +1,21 @@
+[
+  {
+		"tags":["decollatio-joannis-baptistae","antiphona"],
+		"antiphona-i":[["/antiphonae/2185"]],
+		"antiphona-ii":[["/antiphonae/2693"]],
+		"antiphona-iii":[["/antiphonae/2723"]],
+		"antiphona-iv":[["/antiphonae/2507"]],
+		"antiphona-v":[["/antiphonae/2489"]]
+  },
+  {
+		"tags":[
+			["decollatio-joannis-baptistae","i-vesperae","antiphona","antiphona-magnificat"],
+			["decollatio-joannis-baptistae","laudes","antiphona","antiphona-benedictus"]
+		],
+		"datum":[["/antiphonae/2304"]]
+  },
+  {
+		"tags":["decollatio-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2584"]]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+		"tags":[
+			["apostolus","vesperae","hymnus"],
+			["apostolus","laudes","hymnus"]
+		],
+		"datum":[["/hymni/2194"]]
+  },
+  {
+		"tags":["apostolus","matutinum","hymnus"],
+		"datum":[["/hymni/EXAPEXH_dcrochu"]]
+  },
+  {
+		"tags":["apostolus","antiphona"],
+		"antiphona-i":[["/antiphonae/2300"]],
+		"antiphona-ii":[["/antiphonae/2104"]],
+		"antiphona-iii":[["/antiphonae/2202"]],
+		"antiphona-iv":[["/antiphonae/1893"]],
+		"antiphona-v":[["/antiphonae/2594"]]
+  },
+  {
+		"tags":["apostolus","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2112"]]
+  },
+  {
+		"tags":["apostolus","matutinum","antiphona","antiphona-invitatorium"],
+		"sollemnitas":[["/invitatoria/APEXIa"]],
+		"datum":[["/invitatoria/APEXIb"]]
+  },
+  {
+		"tags":["apostolus","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/APEXN1A1"]],
+		"antiphona-ii":[["/antiphonae/APEXN1A2"]],
+		"antiphona-iii":[["/antiphonae/APEXN1A3"]]
+  },
+  {
+		"tags":["apostolus","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/APEXN2A1"]],
+		"antiphona-ii":[["/antiphonae/APEXN2A2"]],
+		"antiphona-iii":[["/antiphonae/APEXN2A3"]]
+  },
+  {
+		"tags":["apostolus","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/APEXN3A1"]],
+		"antiphona-ii":[["/antiphonae/APEXN3A2"]],
+		"antiphona-iii":[["/antiphonae/APEXN3A3"]]
+  },
+  {
+		"tags":["apostolus","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/12597"]]
+  },
+  {
+		"tags":["apostolus","tertia","responsorium-breve"],
+    "incipit":"In(f) o(g')mnem(f) ter(g_[uh:l]h)ram(hg..)",
+    "responsum":"Ex(g)í(f)vit(gh) so(g)nus(fd) e(fg)ó(g.)rum.(f.) (::)",
+    "versus":"Et(ixhi) in(h) fi(h)nes(h) or(h)bis(h) ter(gh)ræ(g'_[oh:h]) (,) ver(h)ba(g') e(f)ó(g_[uh:l]h)rum.(hg..)"
+  },
+  {
+		"tags":["apostolus","sexta","responsorium-breve"],
+    "incipit":"Con(f)stí(f)tu(f)es(f) e(g)os(f') prín(g)ci(gh)pes(hg..)",
+    "responsum":"Su(f)per(gh) o(gv_[oh:h]FD)mnem(fg) ter(g.)ram.(f.) (::)",
+    "versus":"Mé(ixhi)mo(h)res(h) e(gh)runt(g'_[oh:h]) (,) nó(g)mi(g)nis(g) tu(h)i(gf) Dó(g)mi(gh)ne.(hg..)"
+  },
+  {
+		"tags":["apostolus","nona","responsorium-breve"],
+    "incipit":"Ni(f)mis(f) ho(g)no(f')rá(g)ti(gh) sunt(hg..)",
+    "responsum":"A(g)mí(f)ci(gh) tu(gv_[oh:h]FD)i(fg) De(g.)us.(f.) (::)",
+    "versus":"Ni(ixhi)mis(h) con(h)for(h)tá(gh)tus(g) est(g'_[oh:h]) (,) prin(g)ci(g)pá(h)tus(g') e(f)ó(g_[uh:l]h)rum.(hg..)"
+  },
+  {
+		"tags":["apostolus","ii-vesperae","antiphona"],
+		"antiphona-i":[["/antiphonae/1973"]],
+		"antiphona-ii":[["/antiphonae/2751"]],
+		"antiphona-iii":[["/antiphonae/1861"]],
+		"antiphona-iv":[["/antiphonae/2337"]],
+		"antiphona-v":[["/antiphonae/2079"]],
+		"antiphona-magnificat":[["/antiphonae/1915"]]
+  },
+  {
+		"tags":[
+			["apostolorum-tempore-paschali","vesperae","hymnus"],
+			["apostolorum-tempore-paschali","matutinum","hymnus"]
+		],
+		"datum":[["/hymni/2295"]]
+  },
+  {
+		"tags":["apostolorum-tempore-paschali","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/APTPI"]]
+  },
+  {
+		"tags":["apostolorum-tempore-paschali","laudes","hymnus"],
+		"datum":[["/hymni/11809"]]
+  }
+]

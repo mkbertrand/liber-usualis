@@ -1,0 +1,36 @@
+[
+  {
+		"tags":["vigilia-nativitatis","matutinum","antiphona","antiphona-invitatorium"],
+    "datum":[["/invitatoria/1224I"]]
+  },
+  {
+		"tags":["vigilia-nativitatis","antiphona"],
+		"antiphona-i":[["/antiphonae/2256"]],
+		"antiphona-ii":[["/antiphonae/2345"]],
+		"antiphona-iii":[["/antiphonae/2461"]],
+		"antiphona-iv":[["/antiphonae/2837"]],
+		"antiphona-v":[["/antiphonae/2081"]]
+  },
+  {
+		"tags":["vigilia-nativitatis","laudes","antiphona","antiphona-benedictus"],
+    "datum":[["/antiphonae/11917"]]
+  },
+  {
+		"tags":["vigilia-nativitatis","tertia","responsorium-breve"],
+    "incipit":"Ho(fg)di(f)e(f') sci(f)é(g_[uh:l]h)tis(hg..)",
+    "responsum":"Qui(f)a(gh) vé(g)ni(fd)et(fg) Dó(g)mi(f)nus.(f.) (::) Hó(fg)di(f)e.(f') (::)",
+    "versus":"Et(h) ma(ixhi)ne(h) vi(h)dé(gh)bi(g)tis(g'_[oh:h]) (,) gló(h)ri(g')am(f) e(g_[uh:l]h)jus.(hg..)"
+  },
+  {
+		"tags":["vigilia-nativitatis","sexta","responsorium-breve"],
+    "incipit":"Crá(f)sti(f)na(f) di(g_[uh:l]h)e(hg..)",
+    "responsum":"De(g)lé(g)bi(f)tur(gh) in(g)í(fd)qui(f)tas(g) ter(g.)rae.(f.) (::)",
+    "versus":"Et(h) re(h)gná(ixhi)bit(h) su(gh)per(g) nos(g'_[oh:h]) (,) Sal(h)vá(g')tor(f) mun(g_[uh:l]h)di.(hg..)"
+  },
+  {
+		"tags":["vigilia-nativitatis","nona","responsorium-breve"],
+    "incipit":"Crá(f)sti(gh)na(hg..)",
+    "responsum":"E(f)rit(gh) vo(gv_[oh:h]FD)bis(fg) sa(g.)lus.(f.) (::)",
+    "versus":"Di(ixhi)cit(h) Dó(gh)mi(g)nus(g'_[oh:h]) (,) De(h)us(g') ex(g)er(f')cí(g)tu(gh)um.(hg..)"
+  }
+]

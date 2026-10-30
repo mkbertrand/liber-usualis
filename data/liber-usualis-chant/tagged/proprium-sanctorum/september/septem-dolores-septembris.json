@@ -1,0 +1,78 @@
+[
+  {
+		"tags":["septem-dolores-septembris","antiphona"],
+		"antiphona-i":[["/antiphonae/2228"]],
+		"antiphona-ii":[["/antiphonae/1878"]],
+		"antiphona-iii":[["/antiphonae/2646"]],
+		"antiphona-iv":[["/antiphonae/1967"]],
+		"antiphona-v":[["/antiphonae/2900"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","hymnus"],
+		"vesperae":[["/hymni/4095"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","i-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2343"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":[["/invitatoria/0915I"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","hymnus"],
+		"matutinum":[["/hymni/0915H"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/0915N1A1"]],
+		"antiphona-ii":[["/antiphonae/0915N1A2"]],
+		"antiphona-iii":[["/antiphonae/0915N1A3"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/0915N2A1"]],
+		"antiphona-ii":[["/antiphonae/0915N2A2"]],
+		"antiphona-iii":[["/antiphonae/0915N2A3"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/0915N3A1"]],
+		"antiphona-ii":[["/antiphonae/0915N3A2"]],
+		"antiphona-iii":[["/antiphonae/0915N3A3"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","hymnus"],
+		"laudes":[["/hymni/13067"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","laudes","antiphona","antiphona-benedictus"],
+    "datum":[["/antiphonae/13316"]]
+  },
+  {
+		"tags":["septem-dolores-septembris","prima","responsorium-breve","versus"],
+    "datum":"Qui(h) pas(ixhi)sus(g) es(g) (,) prop(g)ter(g) nos(h)tram(g) sa(f)lú(gh)tem.(hg)"
+  },
+  {
+		"tags":["septem-dolores-septembris","tertia","responsorium-breve"],
+    "incipit":"O(f) vos(f) o(g_[uh:l]h)mnes,(hg..)",
+    "responsum":"Qui(f) trans(gh)í(g)tis(fd) per(fg) vi(g.)am.(f.) (::)",
+    "versus":"At(h)tén(ixhi)di(h)te(h) et(h) vi(h)dé(gh)te,(g'_[oh:h]) (,) si(g) est(g) do(g)lor(g) sic(h)ut(g) do(g')lor(f) me(g_[uh:l]h)us.(hg..)"
+  },
+  {
+		"tags":["septem-dolores-septembris","sexta","responsorium-breve"],
+    "incipit":"De(f)fe(f)cé(g_[uh:l]h)runt(hg..)",
+    "responsum":"Præ(g) lá(f')cri(g)mis(gh) ó(g)cu(fd)li(fg) me(g.)i.(f.) (::)",
+    "versus":"Con(ixhi)tur(h)bá(gh)ta(g) sunt(g'_[oh:h]) (,) ó(g)mni(g)a(g) ví(h)sce(g')ra(f) me(g_[uh:l]h)a.(hg..)"
+  },
+  {
+		"tags":["septem-dolores-septembris","nona","responsorium-breve"],
+    "incipit":"Fa(f)scí(g')cu(f)lus(f) myr(g_[uh:l]h)rhæ(hg..)",
+    "responsum":"Di(g')lé(f)ctus(gh) me(gv_[oh:h]FD)us(fg) mi(g.)hi.(f.) (::)",
+    "versus":"In(ixhi)ter(h) ú(h)be(h)ra(h) me(gh)a(g'_[oh:h]) (,) com(g)mo(f')rá(g)bi(gh)tur.(hg..)"
+  },
+  {
+		"tags":["septem-dolores-septembris","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/1980"]]
+  }
+]

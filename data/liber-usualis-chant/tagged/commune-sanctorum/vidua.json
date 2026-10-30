@@ -1,0 +1,56 @@
+[
+  {
+    "tags":["vidua","antiphona"],
+		"antiphona-i":[["/antiphonae/2000"]],
+		"antiphona-ii":[["/antiphonae/2963"]],
+		"antiphona-iii":[["/antiphonae/2056"]],
+		"antiphona-iv":[["/antiphonae/2115"]],
+		"antiphona-v":[["/antiphonae/2474"]]
+  },
+  {
+		"tags":["vidua","hymnus"],
+		"datum":[["/hymni/2492"]]
+  },
+  {
+		"tags":["vidua","vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/18848"]]
+  },
+  {
+		"tags":["vidua","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"mode:2 d;%%(f3) Lau(ef~)dé(f)mus(f_0/ghf/foe) De(f)um(hg~) nos(h_iHG)trum,(g.) *(;) In(i) con(ij~)fes(kxj_0/kij)si(hg/hi)ó(hv_GF)ne(f_0/ghf/gffoe.) (,) be(ef)á(fi_ih)tæ(gf) N.(ghf/ef/f.) (::)",
+		"viduae":"mode:2 d;%%(f3) Lau(ef~)dé(f)mus(f_0//ghf/fe) De(f)um(hg~) nos(h_iHG)trum,(g.) *(;) In(i) con(ij~)fes(kxj_0//kij)si(hg/hi)ó(hv_GF)ne(f_0//ghf/gffoe.) (,) be(e)a(f)tá(fi_ih)rum(gf) N.(ghf/ef/f) et(ef) <i><c>N.</c></i>(fr/f@gwhgh/ggof.) (::)"
+  },
+  {
+		"tags":["vidua","matutinum","hymnus"],
+		"datum":[["/hymni/MUVMHb"]]
+  },
+  {
+		"tags":["vidua","matutinum","nocturna-i","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN1A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN1A1"]],
+		"antiphona-ii":[["/antiphonae/MUNXN1A2"]],
+		"antiphona-iii":[["/antiphonae/MUXXN1A3"]]
+  },
+  {
+		"tags":["vidua","matutinum","nocturna-ii","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN2A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN2A1"]],
+		"antiphona-ii":[["/antiphonae/MUXXN2A2"]],
+		"antiphona-iii":[["/antiphonae/MUXXN2A3"]]
+  },
+  {
+		"tags":["vidua","matutinum","nocturna-iii","antiphona"],
+		"antiphona-i":[["/antiphonae/MUXXN3A1"]],
+		"in-tempore-paschali":[["/antiphonae/MUXXN3A1"]],
+		"antiphona-ii":[["/antiphonae/MUXXN3A2"]],
+		"antiphona-iii":[["/antiphonae/MUXXN3A3"]]
+  },
+  {
+		"tags":["vidua","laudes","antiphona","antiphona-benedictus"],
+		"datum":[["/antiphonae/2681"]]
+  },
+  {
+		"tags":["vidua","ii-vesperae","antiphona","antiphona-magnificat"],
+		"datum":[["/antiphonae/2275"]]
+  }
+]
