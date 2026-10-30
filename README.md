@@ -165,6 +165,8 @@ may also set `libu.domain`, which nginx serves and which defaults to
         {
           libu.authorizedKeys = [ "ssh-ed25519 AAAA... you@yourmachine" ];
           libu.domain = "test.liberusualis.org";
+          # Optional: former domains that redirect, path included, to libu.domain
+          libu.redirectDomains = [ "liberusualis.org" ];
         }
       ];
     };

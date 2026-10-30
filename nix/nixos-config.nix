@@ -40,6 +40,13 @@ in
     description = "Domain served by nginx; www.<domain> redirects to it.";
   };
 
+  options.libu.redirectDomains = lib.mkOption {
+    type = lib.types.listOf lib.types.str;
+    default = [ ];
+    example = [ "liberusualis.org" ];
+    description = "Former domains whose requests, and those of their www. names, redirect permanently to the same path on libu.domain.";
+  };
+
   # No default: each deployment's private flake supplies the keys allowed to log in as master
   options.libu.authorizedKeys = lib.mkOption {
     type = lib.types.listOf lib.types.str;
@@ -187,7 +194,14 @@ in
         #   globalRedirect = "ec2-3-144-118-245.us-east-2.compute.amazonaws.com";
         # };
 
-      };
+      }
+      // lib.genAttrs config.libu.redirectDomains (redirectDomain: {
+        # One certificate covers the domain and its www. name; globalRedirect keeps the request's path and query
+        serverAliases = [ "www.${redirectDomain}" ];
+        enableACME = true;
+        forceSSL = true;
+        globalRedirect = domain;
+      });
     };
 
     # Let's Encrypt configuration

@@ -621,7 +621,9 @@
   into =/var/lib/libu=, and the =libu= service then runs =server.py=
   there as the =libu= system user; a new application build restarts both. nginx terminates TLS and proxies to it on
   =127.0.0.1:8080= for the domain in the =libu.domain= option (default
-  =liberusualis.org=), redirecting =www.<domain>= to it. The repository holds no
+  =liberusualis.org=), redirecting =www.<domain>= to it. Each domain in
+  =libu.redirectDomains= (and its =www.= name) gets its own certificate and
+  redirects permanently to the same path and query on =libu.domain=. The repository holds no
   SSH keys: the =libu.authorizedKeys= option, which has no default and must be
   non-empty, lists the keys allowed to log in as =master=, so every deployment
   extends a configuration from a private flake that sets it. The application writes its logs only to standard output, so
