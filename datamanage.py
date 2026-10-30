@@ -16,9 +16,6 @@ from renderer import render_rite
 
 DATA_ROOT = Path(__file__).parent.joinpath('data').resolve()
 
-def get_generated_book(title):
-    return Book(DATA_ROOT.joinpath('generated').joinpath(title), title)
-
 def get_book(title):
     return Book(DATA_ROOT.joinpath(title), title)
 
@@ -26,7 +23,7 @@ DEFAULT_CORPUS = Corpus(get_book('breviarium-1888'), get_book('martyrologium-184
 DEUTSCH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-deutsch')])
 ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-english')])
 NEDERLANDS_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-nederlands')])
-CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_generated_book('liber-usualis-chant'), get_generated_book('fcc'), get_generated_book('liber-usualis-chant/nocturnale')])
+CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('liber-usualis-chant'), get_book('fcc'), get_book('liber-usualis-chant/nocturnale')])
 HEADER_CORPUS = CaputCorpus(DEFAULT_CORPUS.books)
 
 # Rite pages further than this from today are not composed on the server; the page's script loads their rite instead.
@@ -109,8 +106,8 @@ def rite_request(date, item, opt, select, translation, votives):
 @functools.lru_cache(maxsize=1)
 def render_resources():
     return {
-        'invitatoria': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
-        'psalmTones': json.loads(DATA_ROOT.joinpath('generated', 'liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
+        'invitatoria': json.loads(DATA_ROOT.joinpath('liber-usualis-chant', 'nocturnale', 'untagged', 'invitatoria.json').read_text(encoding='utf-8')),
+        'psalmTones': json.loads(DATA_ROOT.joinpath('liber-usualis-chant', 'untagged', 'toni-psalmorum.json').read_text(encoding='utf-8')),
     }
 
 @functools.lru_cache(maxsize=30)

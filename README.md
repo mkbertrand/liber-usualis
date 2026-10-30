@@ -22,19 +22,14 @@ pip install fastapi jinja2 uvicorn httpx pytest diff-match-patch
 
 Note: diff-match-patch is only necessary for test_breviarium.
 
-Entering the Nix development shell provides Node.js and links files from the pinned
-`liber-usualis-chant` repository into `data/generated/liber-usualis-chant` and
-from the `databased` branch of `franciscan-chant-closet` into
-`data/generated/fcc`. Matching files are replaced while other generated content
-is preserved. It also copies the Nix-built frontend bundles into
-`web/resources/dist`, so the application is ready to run:
+Entering the Nix development shell provides Node.js and copies the Nix-built
+frontend bundles into `web/resources/dist`, so the application is ready to run:
 
 ```bash
 nix develop
 ```
 
-Nix application and image builds generate the frontend bundles automatically
-and install the same pinned chant books into `data/generated/`.
+Nix application and image builds generate the frontend bundles automatically.
 The focused frontend output is available with `nix build .#frontend-assets`. Run
 `npm ci` and `npm run build` only when rebuilding the bundles during frontend
 development.
@@ -44,7 +39,6 @@ development.
 To run the server (by default on 127.0.0.1:8080), the server is run as follows:
 
 ```bash
-python3 sync-books.py
 python3 server.py
 ```
 

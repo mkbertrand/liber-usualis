@@ -6,8 +6,6 @@
   nodename,
   python_env,
   frontend_assets,
-  chant,
-  fcc,
   self,
   ...
 }:
@@ -194,10 +192,7 @@ in
           RemainAfterExit = true;
           ExecStart = pkgs.writeShellScript "libu-setup" ''
             set -euo pipefail
-            ${pkgs.rsync}/bin/rsync -a --delete --exclude=/books.json --exclude=/data/generated/ ${libu_app.out}/lib/ /var/lib/libu/
-            ${pkgs.coreutils}/bin/mkdir -p /var/lib/libu/data/generated/liber-usualis-chant /var/lib/libu/data/generated/fcc
-            ${pkgs.rsync}/bin/rsync -a --delete ${chant}/ /var/lib/libu/data/generated/liber-usualis-chant/
-            ${pkgs.rsync}/bin/rsync -a --delete ${fcc}/ /var/lib/libu/data/generated/fcc/
+            ${pkgs.rsync}/bin/rsync -a --delete ${libu_app.out}/lib/ /var/lib/libu/
           '';
           User = "root";
           Group = "root";

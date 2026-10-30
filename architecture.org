@@ -138,15 +138,11 @@
 
 ** Stage 0: Books and Corpora
 
-   Repository-managed books live directly under =data/=. Externally maintained
-   books are synchronized into =data/generated/=. The flake pins
-   =liber-usualis-chant= and the =databased= branch of
-   =franciscan-chant-closet= and installs their files into
-   =data/generated/liber-usualis-chant= and =data/generated/fcc= in both the
-   development shell and production. Matching files are replaced while unrelated
-   generated content is preserved. =sync-books.py= remains available for non-Nix
-   checkouts using an optional repository-root =books.json=. The generated path
-   and operator configuration are ignored by Git.
+   All books live directly under =data/= and are tracked in this repository. The
+   chant books =data/liber-usualis-chant= and =data/fcc= were imported with
+   =git subtree= from =liber-usualis-chant= and the =databased= branch of
+   =franciscan-chant-closet=, keeping their histories; they are edited here like
+   any other book.
 
    A =Book= identifies a source directory and a book-title tag. A =Corpus= searches
    one or more primary books. A =ContingentCorpus= retains the primary-book context
@@ -285,7 +281,8 @@
    - =data/breviarium-1888-deutsch/=
    - =data/breviarium-1888-nederlands/=
 
-   Generated chant books live under =data/generated/=. The renderer receives
+   The chant books are =data/liber-usualis-chant/= (with its =nocturnale/=) and
+   =data/fcc/=. The renderer receives
    translated and chanted content inline in the rite tree; it does not perform a
    second translation lookup.
 
@@ -399,8 +396,7 @@
      project's tuned patterns.
 
    The chant resources the renderer needs (invitatory tones and psalm tones from
-   the generated chant book) are read on first use by =datamanage.render_resources()=,
-   so importing =datamanage= does not require the generated books to be present.
+   =data/liber-usualis-chant=) are read on first use by =datamanage.render_resources()=.
 
 * Frontend
 
@@ -563,7 +559,8 @@
    |-- breviarium-1888-deutsch/
    |-- breviarium-1888-nederlands/
    |-- martyrologium-1846/
-   `-- generated/
+   |-- liber-usualis-chant/
+   `-- fcc/
    #+END_EXAMPLE
 
 * End-to-End Example
@@ -606,17 +603,13 @@
   =.python-version= provide project-level tool discovery.
 
   Deployment modules and provider policy files live under =nix/=. The flake passes
-  its tracked source, the =buildNpmPackage=-generated frontend bundles, and the
-  flake-pinned chant books to =nix/nixos-config.nix= for installation under
-  =/var/lib/libu=. The development shell provides Node.js, copies the generated
-  bundles into =web/resources/dist=, and merges the same flake-pinned chant books
-  into =data/generated/liber-usualis-chant= and =data/generated/fcc=.
-  Deployment preserves an operator-provided =books.json= and any generated books
-  other than those two trees while replacing the tracked application and the
-  pinned chant books.
+  its tracked source, including every book under =data/=, and the
+  =buildNpmPackage=-generated frontend bundles to =nix/nixos-config.nix= for
+  installation under =/var/lib/libu=. The development shell provides Node.js and
+  copies the generated bundles into =web/resources/dist=.
 
-  On a deployed host, the oneshot =libu-setup= service copies the application and
-  chant books into =/var/lib/libu=, and the =libu= service then runs =server.py=
+  On a deployed host, the oneshot =libu-setup= service copies the application
+  into =/var/lib/libu=, and the =libu= service then runs =server.py=
   there as the =libu= system user. nginx terminates TLS and proxies to it on
   =127.0.0.1:8080= for the domain in the =libu.domain= option (default
   =liberusualis.org=), redirecting =www.<domain>= to it. The application writes its logs only to standard output, so
