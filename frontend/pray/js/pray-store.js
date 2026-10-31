@@ -97,7 +97,7 @@ export function makePrayStore(liturgyStore) {
       ritePath.value = path;
       riteNavigationType.value = navigationType.value;
     });
-    document.title = `${RITE_TITLES[contentParameters(path).occasion]} | ${dayTitle(html)} | Liber Usualis`;
+    document.title = `${RITE_TITLES[contentParameters(path).occasion]} | ${dayTitle(html)}`;
     // Same form as the server's canonical path, on the site's address that the server rendered
     let canonical = document.querySelector('link[rel="canonical"]');
     canonical.href = new URL(makePath(contentParameters(path)), canonical.href).href;
