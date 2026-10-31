@@ -44,16 +44,34 @@ def test_rite_far_from_today_is_left_to_the_client() -> None:
         assert 'data-server-rendered="false"' in response.text
         assert '<meta name="robots" content="noindex, nofollow">' in response.text
 
-def test_sitemap_lists_only_server_rendered_rites() -> None:
+def test_sitemap_index_lists_only_server_rendered_dates() -> None:
     response = client.get('/sitemap.xml')
     assert response.status_code == 200
     assert response.headers['content-type'] == 'application/xml'
+    assert '<sitemapindex ' in response.text
     locs = re.findall(r'<loc>([^<]*)</loc>', response.text)
     assert len(locs) < 50000
-    assert 'https://breviary.cc/en/about' in locs
-    rite_dates = {date.fromisoformat(m) for m in re.findall(r'/officium/(\d{4}-\d{2}-\d{2})/', response.text)}
-    assert rite_dates == set(datamanage.server_rendered_dates(date.today()))
+    assert 'https://breviary.cc/sitemaps/en.xml' in locs
+    sitemap_dates = {date.fromisoformat(m) for m in re.findall(r'/sitemaps/en/(\d{4}-\d{2}-\d{2})\.xml', response.text)}
+    assert sitemap_dates == set(datamanage.server_rendered_dates(date.today()))
+
+def test_locale_sitemap_lists_top_level_pages() -> None:
+    response = client.get('/sitemaps/de.xml')
+    assert response.status_code == 200
+    assert '<loc>https://breviary.cc/de/about</loc>' in response.text
+    assert '/en/' not in response.text
+    assert client.get('/sitemaps/xx.xml').status_code == 404
+
+def test_dated_sitemap_lists_the_hours_of_that_day() -> None:
+    response = client.get(f'/sitemaps/la/{date.today()}.xml')
+    assert response.status_code == 200
+    locs = re.findall(r'<loc>([^<]*)</loc>', response.text)
+    assert len(locs) == 7
     assert f'https://breviary.cc/la/officium/{date.today()}/completorium' in locs
+
+def test_dated_sitemap_outside_the_range_is_not_found() -> None:
+    for path in [f'/sitemaps/en/{date.today() + timedelta(days=800)}.xml', '/sitemaps/en/garbage.xml', f'/sitemaps/xx/{date.today()}.xml']:
+        assert client.get(path).status_code == 404, path
 
 def test_robots_points_to_the_sitemap() -> None:
     assert 'Sitemap: https://breviary.cc/sitemap.xml' in client.get('/robots.txt').text
