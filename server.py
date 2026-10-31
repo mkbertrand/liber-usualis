@@ -9,6 +9,7 @@ import traceback
 import warnings
 from datetime import date, datetime, timedelta
 from typing import Any
+from xml.sax.saxutils import escape
 
 import uvicorn
 from fastapi import Cookie, FastAPI, Header, HTTPException, Request
@@ -195,6 +196,46 @@ async def http_error(request: Request, exc: StarletteHTTPException) -> Response:
 @app.api_route('/robots.txt', methods=['GET', 'HEAD'])
 def robots() -> FileResponse:
     return FileResponse('web/resources/robots.txt', media_type='text/plain')
+
+def sitemap_index_paths(locales: list[str], dates: tuple[date, ...]) -> tuple[str, ...]:
+    pages = tuple(f'/sitemaps/{locale}.xml' for locale in locales)
+    rites = tuple(f'/sitemaps/{locale}/{day}.xml' for locale in locales for day in dates)
+    return pages + rites
+
+def locale_page_paths(locale: str) -> tuple[str, ...]:
+    return tuple(f'/{locale}/{page}' for page in TOP_LEVEL_PAGES)
+
+def locale_rite_paths(locale: str, day: date) -> tuple[str, ...]:
+    return tuple(f'/{locale}/officium/{day}/{occasion}' for occasion in CURSUS_OCCASIONS)
+
+def sitemap_xml(root: str, entry: str, paths: tuple[str, ...]) -> str:
+    entries = ''.join(f'<{entry}><loc>{escape(SITE_URL + path)}</loc></{entry}>' for path in paths)
+    return f'<?xml version="1.0" encoding="UTF-8"?>\n<{root} xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{entries}</{root}>\n'
+
+def sitemap_response(root: str, entry: str, paths: tuple[str, ...]) -> Response:
+    return Response(sitemap_xml(root, entry, paths), media_type='application/xml')
+
+# Lists only rite pages within datamanage.SERVER_RENDERED_RANGE, since further ones are composed by script and not indexed
+@app.api_route('/sitemap.xml', methods=['GET', 'HEAD'])
+def sitemap_index() -> Response:
+    paths = sitemap_index_paths(sorted(version_management.DEFINED_LOCALES), datamanage.server_rendered_dates(date.today()))
+    return sitemap_response('sitemapindex', 'sitemap', paths)
+
+@app.api_route('/sitemaps/{locale}.xml', methods=['GET', 'HEAD'])
+def locale_sitemap(locale: str) -> Response:
+    if locale not in version_management.DEFINED_LOCALES:
+        raise HTTPException(status_code=404)
+    return sitemap_response('urlset', 'url', locale_page_paths(locale))
+
+@app.api_route('/sitemaps/{locale}/{rite_date}.xml', methods=['GET', 'HEAD'])
+def dated_sitemap(locale: str, rite_date: str) -> Response:
+    try:
+        day = date.fromisoformat(rite_date)
+    except ValueError:
+        raise HTTPException(status_code=404)
+    if locale not in version_management.DEFINED_LOCALES or not datamanage.is_server_rendered(day, date.today()):
+        raise HTTPException(status_code=404)
+    return sitemap_response('urlset', 'url', locale_rite_paths(locale, day))
 
 @app.api_route('/', methods=['GET', 'HEAD'])
 def index() -> RedirectResponse:
