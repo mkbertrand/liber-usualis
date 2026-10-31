@@ -1,9 +1,11 @@
 # Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+import re
 from datetime import date, timedelta
 
 from fastapi.testclient import TestClient
 
+import datamanage
 from server import app
 
 client = TestClient(app, follow_redirects=False)
@@ -41,6 +43,20 @@ def test_rite_far_from_today_is_left_to_the_client() -> None:
         assert response.status_code == 200, rite_date
         assert 'data-server-rendered="false"' in response.text
         assert '<meta name="robots" content="noindex, nofollow">' in response.text
+
+def test_sitemap_lists_only_server_rendered_rites() -> None:
+    response = client.get('/sitemap.xml')
+    assert response.status_code == 200
+    assert response.headers['content-type'] == 'application/xml'
+    locs = re.findall(r'<loc>([^<]*)</loc>', response.text)
+    assert len(locs) < 50000
+    assert 'https://breviary.cc/en/about' in locs
+    rite_dates = {date.fromisoformat(m) for m in re.findall(r'/officium/(\d{4}-\d{2}-\d{2})/', response.text)}
+    assert rite_dates == set(datamanage.server_rendered_dates(date.today()))
+    assert f'https://breviary.cc/la/officium/{date.today()}/completorium' in locs
+
+def test_robots_points_to_the_sitemap() -> None:
+    assert 'Sitemap: https://breviary.cc/sitemap.xml' in client.get('/robots.txt').text
 
 def test_rite_api_failure_returns_the_error_page() -> None:
     response = client.get('/api/rite', params={'loc': 'en', 'date': 'garbage', 's': 'primarium', 'occasion': 'prima+officium', 'v': ''})

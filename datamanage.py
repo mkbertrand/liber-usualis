@@ -33,6 +33,9 @@ SERVER_RENDERED_RANGE = timedelta(days=366)
 def is_server_rendered(day: date, today: date) -> bool:
     return abs(day - today) <= SERVER_RENDERED_RANGE
 
+def server_rendered_dates(today: date) -> tuple[date, ...]:
+    return tuple(today + timedelta(days=offset) for offset in range(-SERVER_RENDERED_RANGE.days, SERVER_RENDERED_RANGE.days + 1))
+
 @functools.lru_cache(maxsize=30)
 def ordo(date: str, time: str, votives: str):
     day = datetime.strptime(date, '%Y-%m-%d').date()

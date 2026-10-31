@@ -9,6 +9,7 @@ import traceback
 import warnings
 from datetime import date, datetime, timedelta
 from typing import Any
+from xml.sax.saxutils import escape
 
 import uvicorn
 from fastapi import Cookie, FastAPI, Header, HTTPException, Request
@@ -195,6 +196,21 @@ async def http_error(request: Request, exc: StarletteHTTPException) -> Response:
 @app.api_route('/robots.txt', methods=['GET', 'HEAD'])
 def robots() -> FileResponse:
     return FileResponse('web/resources/robots.txt', media_type='text/plain')
+
+def sitemap_paths(locales: list[str], dates: tuple[date, ...]) -> tuple[str, ...]:
+    pages = tuple(f'/{locale}/{page}' for locale in locales for page in TOP_LEVEL_PAGES)
+    rites = tuple(f'/{locale}/officium/{day}/{occasion}' for locale in locales for day in dates for occasion in CURSUS_OCCASIONS)
+    return pages + rites
+
+def sitemap_xml(paths: tuple[str, ...]) -> str:
+    urls = ''.join(f'<url><loc>{escape(SITE_URL + path)}</loc></url>' for path in paths)
+    return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n'
+
+# Lists only rite pages within datamanage.SERVER_RENDERED_RANGE, since further ones are composed by script and not indexed
+@app.api_route('/sitemap.xml', methods=['GET', 'HEAD'])
+def sitemap() -> Response:
+    paths = sitemap_paths(sorted(version_management.DEFINED_LOCALES), datamanage.server_rendered_dates(date.today()))
+    return Response(sitemap_xml(paths), media_type='application/xml')
 
 @app.api_route('/', methods=['GET', 'HEAD'])
 def index() -> RedirectResponse:
