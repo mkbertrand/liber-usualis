@@ -124,7 +124,8 @@ export function makePrayStore(liturgyStore) {
     opt.value = tags;
     let cookie = tags.filter(t => t).join('+');
     if (cookie) {
-      await cookieStore.set({name: 'opt', value: cookie, path: '/'});
+      // cookieStore defaults to strict, which withholds the cookie from page loads reached from another site
+      await cookieStore.set({name: 'opt', value: cookie, path: '/', sameSite: 'lax'});
     } else {
       await cookieStore.delete({name: 'opt', path: '/'});
     }

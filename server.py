@@ -263,8 +263,12 @@ def pray_page(preferred_locale: str, prayer_type: str, rite_date: str, select: s
     pdate = datetime.strptime(rite_date, '%Y-%m-%d').date()
     server_rendered = datamanage.is_server_rendered(pdate, today)
     canonical_path = f"/{preferred_locale}/{prayer_type}/{pdate}{'' if select == 'primarium' else f'/{select}'}/{occasion}{f'?v={votives}' if votives else ''}"
-    return render('web/templates/pray.jinja', **shell_context('pray', locales, canonical_path), mobile=is_mobile(user_agent),
-                  **pray_context(locales[0], locales, rite_date, prayer_type, occasion, options, select, translation_for_locale(locales[0]), votives, server_rendered, today))
+    response = render('web/templates/pray.jinja', **shell_context('pray', locales, canonical_path), mobile=is_mobile(user_agent),
+                      **pray_context(locales[0], locales, rite_date, prayer_type, occasion, options, select, translation_for_locale(locales[0]), votives, server_rendered, today))
+    # The rite depends on the opt cookie as well as the address, so a stored copy (which browsers reuse on Back/Forward
+    # and restored tabs regardless of freshness) may have been rendered with other options
+    response.headers['Cache-Control'] = 'no-store'
+    return response
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Server')

@@ -73,3 +73,9 @@ def test_pages_link_their_canonical_address() -> None:
         assert response.status_code == 200, path
         assert f'<link rel="canonical" href="{canonical}">' in response.text, path
         assert '"url":"https://breviary.cc/"' in response.text, path
+
+def test_rite_pages_are_not_stored() -> None:
+    # Browsers reuse stored pages on Back/Forward, but the rite depends on the opt cookie, not only on the address
+    response = client.get(f'/en/officium/{date.today()}/vesperae', cookies={'opt': 'sine-ritibus'})
+    assert response.status_code == 200
+    assert response.headers['cache-control'] == 'no-store'
