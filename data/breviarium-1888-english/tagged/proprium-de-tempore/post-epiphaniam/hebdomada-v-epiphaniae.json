@@ -21,5 +21,14 @@
   {
 		"tags":["hebdomada-v-epiphaniae","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
     "datum":"Gather ye together first the tares, * saith the master, and bind them in bundles to burn them; but gather the wheat into my barn."
-  }
+  },
+	{
+		"tags":["hebdomada-v-epiphaniae","dominica","matutinum","nocturna-ii","lectio"],
+		"lectio-i":[
+			"Sermon by St. Austin, Bishop.",
+			"This is a saying made for man, and worthy of all acceptation, that Christ Jesus came into this world to save sinners. Listen to the words of the Gospel The Son of man is come to seek, and to save that which was lost. If man had not been lost, the Son of man would not have come. Wherefore, man had been lost; God came made Man, and man was found; man had perished by his own free will God made Man came by grace which setteth free."
+		],
+		"lectio-ii":"Dost thou ask how free-will availeth to evil? Call to mind a sinner: Dost thou ask what God made Man availeth to help? Consider in Him the grace which setteth free. There is no example which so showeth what availeth the free will of man, when it is taken possession of by pride, to use it without God's help, of evil is there no greater and plainer example, than the first man. The first man fell and where had he been if the second Man had not come? As the first was man, so was the second Man, and therefore is this saying a saying. made for man.",
+		"lectio-iii":"Neither is there any example which so showeth what availeth the tenderness of the grace and the abundance of the All-might of God, as the Man That is the Mediator between God and men, the Man Christ Jesus. For what do we say, my brethren? I speak to them that have been bred up in the Catholic Church, or who have been reconciled to that Church. We know and hold that the Mediator between God and men, the Man Christ Jesus, as touching upon His Manhood, is of the same nature as we. For our flesh is not of one nature, and His Flesh of another nature, neither our soul of one nature and His Soul of another nature. He took upon Himself the same nature which He had freely ordained to save."
+	}
 ]

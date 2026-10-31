@@ -1,0 +1,103 @@
+[
+	{
+		"tags":["vigilia-nativitatis","matutinum","antiphona","antiphona-invitatorium"],
+		"datum":"This day ye shall know * that the Lord cometh and in the morning, then ye shall see His glory."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-i"],
+		"datum":[
+			"A Lesson from the Holy Gospel according to Matthew.",
+			"When as his mother Mary was espoused to Joseph, before they came together, she was found with child, of the Holy Ghost. And so on.",
+			"Homily by St. Jerome, Priest.",
+			"Why was the Lord conceived of an espoused virgin rather than of a free? First, for the sake of the genealogy of Mary, which we have obtained by that of Joseph. Secondly, because she was thus saved from being stoned by the Jews as an adulteress. Thirdly, that Himself and His mother might have a guardian on their journey into Egypt. To these, Ignatius, the martyr of Antioch, has added a fourth reason namely, that the birth might take place unknown to the devil, who would naturally suppose that Mary had conceived by Joseph."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-i"],
+		"incipit":"Sanctify yourselves today, and be ready; for on the morrow, ye shall see",
+		"responsum":"The majesty of God upon you.",
+		"versus":"This day ye shall know that the Lord cometh, and in the morning, then ye shall see."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-ii"],
+		"datum":"Before they came together, she was found with child of the Holy Ghost. She was found, that is, by Joseph, but by no one else. He had already almost an husband's privilege to know all that concerned her. Before they came together. This doth not imply that they ever did come together the Scripture merely showeth the absolute fact that up to this time they had not done so."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-ii"],
+		"incipit":"Stand still, and ye shall see the help of the Lord with you; O Judah and Jerusalem, fear not.",
+		"responsum":"Tomorrow ye shall go out, and the Lord will be with you.",
+		"versus":"Sanctify yourselves, O ye children of Israel, and be ready."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","lectio","lectio-iii"],
+		"datum":"Then Joseph her husband, being a just man, and not willing to make her a public example, was minded to put her away privily. If any man be joined to a fornicatress they become one body; and according to the law they that are privy to a crime are thereby guilty. How then can it be that Joseph is described as a just man, at the very time he was compounding the criminality of his espoused? It must have been that he knew her to be pure, and yet understood not the mystery of her pregnancy, but, while he wondered at that which had happened, was willing to hold his peace."
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-iii"],
+		"incipit":"Sanctify yourselves, O ye children of Israel, saith the Lord, for on the morrow the Lord will come down.",
+		"responsum":"And will take away from you all sickness.",
+		"versus":"On the morrow the sins of the earth shall be washed away, and the Saviour of the world will be our King."
+	},
+	{
+		"tags":["vigilia-nativitatis","antiphona"],
+		"antiphona-i":"O Judah and Jerusalem, * fear not: tomorrow ye shall go out, and the Lord will be with you.",
+		"antiphona-ii":"This day ye shall know * that the Lord cometh and in the morning, then ye shall see His glory.",
+		"antiphona-iii":"On the morrow * the sins of the earth shall be washed away, and the Saviour of the world will be our King.",
+		"antiphona-iv":"The Lord cometh! * Go ye out to meet Him, and say How great is His dominion, and of His kingdom there shall be no end! He is the Mighty God, the Ruler, the Prince of Peace, Alleluia!",
+		"antiphona-v":"On the morrow * ye shall be saved, saith the Lord God of hosts."
+	},
+	{
+		"tags":["vigilia-nativitatis","laudes","versiculus"],
+		"datum":[
+			"V. Tomorrow the iniquity of the earth shall be blotted out.",
+			"R. And the Saviour of the world shall reign over us."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","laudes","antiphona","antiphona-benedictus"],
+		"datum":"The Saviour of the world * shall rise like the sun, and come down into the womb of the Virgin as the showers upon the grass. Alleluia."
+	},
+	{
+		"tags":["vigilia-nativitatis","collecta"],
+		"datum":"O God, thou Who gladden us year after year with the expectation of our redemption, grant that we, who now welcome with joy thy only-begotten Son as our Redeemer, may also gaze upon Him without fear when He comes as our judge, our Lord Jesus Christ."
+	},
+	{
+		"tags":["vigilia-nativitatis","tertia","responsorium-breve"],
+		"incipit":"This day ye shall know",
+		"responsum":"That the Lord cometh.",
+		"versus":"And in the morning, then ye shall see His glory."
+	},
+	{
+		"tags":["vigilia-nativitatis","tertia","versiculus"],
+		"datum":[
+			"V. Stand ye still.",
+			"R. And ye shall see the salvation of the Lord with you."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","sexta","responsorium-breve"],
+		"incipit":"On the morrow",
+		"responsum":"the sins of the earth shall be washed away.",
+		"versus":"And the Saviour of the world will be our King."
+	},
+	{
+		"tags":["vigilia-nativitatis","sexta","versiculus"],
+		"datum":[
+			"V. On the morrow ye shall be saved.",
+			"R. Saith the Lord God of hosts."
+		]
+	},
+	{
+		"tags":["vigilia-nativitatis","nona","responsorium-breve"],
+		"incipit":"On the morrow",
+		"responsum":"Ye shall be saved.",
+		"versus":"Saith the Lord God of hosts."
+	},
+	{
+		"tags":["vigilia-nativitatis","nona","versiculus"],
+		"datum":[
+			"V. Tomorrow the iniquity of the earth shall be blotted out.",
+			"R. And the Saviour of the world shall reign over us."
+		]
+	}
+]
