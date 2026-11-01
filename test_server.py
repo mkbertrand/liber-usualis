@@ -76,6 +76,11 @@ def test_dated_sitemap_outside_the_range_is_not_found() -> None:
 def test_robots_points_to_the_sitemap() -> None:
     assert 'Sitemap: https://breviary.cc/sitemap.xml' in client.get('/robots.txt').text
 
+def test_favicon_is_served() -> None:
+    response = client.get('/favicon.ico')
+    assert response.status_code == 200
+    assert response.headers['content-type'] == 'image/x-icon'
+
 def test_rite_api_failure_returns_the_error_page() -> None:
     response = client.get('/api/rite', params={'loc': 'en', 'date': 'garbage', 's': 'primarium', 'occasion': 'prima+officium', 'v': ''})
     assert response.status_code == 500

@@ -197,6 +197,10 @@ async def http_error(request: Request, exc: StarletteHTTPException) -> Response:
 def robots() -> FileResponse:
     return FileResponse('web/resources/robots.txt', media_type='text/plain')
 
+@app.api_route('/favicon.ico', methods=['GET', 'HEAD'])
+def favicon() -> FileResponse:
+    return FileResponse('web/resources/favicon.ico', media_type='image/x-icon')
+
 def sitemap_index_paths(locales: list[str], dates: tuple[date, ...]) -> tuple[str, ...]:
     pages = tuple(f'/sitemaps/{locale}.xml' for locale in locales)
     rites = tuple(f'/sitemaps/{locale}/{day}.xml' for locale in locales for day in dates)

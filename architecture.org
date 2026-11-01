@@ -137,8 +137,10 @@
       =used-commemorations=, =commemoratio-matutini=). Its parameters are =date=,
       =rite=, =opt=, =select=, =translation=, and =votives=.
     - =GET /api/kalendar= returns the navigation skeleton and display kalendar.
-    - =GET /resources/<path>= serves frontend resources, and =GET /robots.txt=
-      serves =web/resources/robots.txt=, which points crawlers to the sitemap.
+    - =GET /resources/<path>= serves frontend resources, =GET /robots.txt=
+      serves =web/resources/robots.txt=, which points crawlers to the sitemap, and
+      =GET /favicon.ico= serves =web/resources/favicon.ico= for clients that request
+      it at the root.
     - =GET /sitemap.xml= is a sitemap index. It lists =/sitemaps/<locale>.xml= (that
       locale's top-level pages) and =/sitemaps/<locale>/<date>.xml= (that day's
       cursus hours) for every date in =datamanage.server_rendered_dates()=. Dated
