@@ -147,5 +147,59 @@
 	{
 		"tags":["transfiguratio","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"And when the disciples heard it, they fell on their face, * and were sore afraid and Jesus came and touched them, and said unto them: Arise, and be not afraid, alleluia."
+	},
+	{
+		"tags":["transfiguratio","capitulum"],
+		"datum":"We look for the Saviour, the Lord Jesus Christ, Who shall change our vile body, that it may be fashioned like unto His glorious Body."
+	},
+	{
+		"tags":[["transfiguratio","vesperae","hymnus"],["transfiguratio","matutinum","hymnus"]],
+		"datum":[
+			"All ye who would the Christ descry,/Lift up your eyes to him on high:/There mortal gaze hath strength to see/The token of his majesty.",
+			"A wondrous sign we there behold,/That knows not death nor groweth old,/Sublime, most high, that cannot fade,/That was ere earth and heaven were made.",
+			"Here is the King the gentiles fear,/The Jews' most mighty King is here/Promised to Abraham of yore,/And to his seed forevermore.",
+			"'Tis he the prophets' words foretold,/And by their signs shown forth of old;/The Father's witness hath ordained/That we should hear with faith unfeigned.",
+			"Jesu, to thee our praise we pay,/To little ones revealed today,/With Father and blest Spirit One/Until the ages' course is done./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["transfiguratio","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Lesson from the second letter of St. Peter the Apostle",
+			"Wherefore, brethren, labour the more, that by good works you may make sure your calling and election. For doing these things, you shall not sin at any time. For so an entrance shall be ministered to you abundantly into the everlasting kingdom of our Lord and Saviour Jesus Christ. For which cause I will begin to put you always in remembrance of these things: though indeed you know them, and are confirmed in the present truth. But I think it meet as long as I am in this tabernacle, to stir you up by putting you in remembrance. Being assured that the laying away of this my tabernacle is at hand, according as our Lord Jesus Christ also hath signified to me."
+		],
+		"lectio-ii":"And I will endeavour, that you frequently have after my decease, whereby you may keep a memory of these things. For we have not by following artificial fables, made known to you the power, and presence of our Lord Jesus Christ; but we were eyewitnesses of his greatness. For he received from God the Father, honour and glory: this voice coming down to him from the excellent glory: This is my beloved Son, in whom I am well pleased; hear ye him.",
+		"lectio-iii":"And this voice we heard brought from heaven, when we were with him in the holy mount. And we have the more firm prophetical word: whereunto you do well to attend, as to a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts: Understanding this first, that no prophecy of scripture is made by private interpretation. For prophecy came not by the will of man at any time: but the holy men of God spoke, inspired by the Holy Ghost."
+	},
+	{
+		"tags":["transfiguratio","laudes","hymnus"],
+		"datum":[
+			"Light of the anxious heart,/Jesus, thou dost appear,/To bid the gloom of guilt depart,/And shed thy sweetness here.",
+			"Joyous is he, with whom,/God's Word, thou dost abide;/Sweet light of our eternal home,/To fleshly sense denied.",
+			"Brightness of God above!/Unfathomable grace!/thy presence be a fount of love/Within thy chosen place.",
+			"To thee, whom children see,/The Father ever blest,/The Holy Spirit, One and Three,/Be endless praise addrest./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["transfiguratio","sexta","capitulum"],
+		"datum":"Ye all, with open face beholding as in a glass the glory of the Lord, are changed into the same image, from glory to glory, even as by the Spirit of the Lord."
+	},
+	{
+		"tags":["transfiguratio","sexta","responsorium-breve"],
+		"incipit":"Thou hast crowned him with glory and honour, O Lord.",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"And madest him to have dominion over the works of thy hands."
+	},
+	{
+		"tags":["transfiguratio","nona","capitulum"],
+		"datum":"He carried me away in the Spirit to a great and high mountain, and showed me the holy city Jerusalem, descending out of heaven from God, having the glory of God. And the Lamb is the Light thereof."
+	},
+	{
+		"tags":["transfiguratio","nona","responsorium-breve"],
+		"incipit":"His glory is great in thy salvation.",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"Honour and great majesty shalt Thou lay upon him."
 	}
 ]

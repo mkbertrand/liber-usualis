@@ -171,5 +171,46 @@
 	{
 		"tags":["trinitas","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"With all our heart * and with all our voice do we acknowledge thee, praise thee, and bless thee, O God the Father the Unbegotten, O God the Only-Begotten Son, O God the Holy Ghost the Comforter, One Holy and Undivided Trinity, To thee be glory for ever."
+	},
+	{
+		"tags":["trinitas","matutinum","hymnus"],
+		"datum":[
+			"O God, by whose command is swayed/This ordered world which thou hast made;/Parent of heavenly clemency,/In nature One, in persons Three;",
+			"Assist us while our minds we raise,/Inflamed with thy immortal praise;/That with our sober thoughts, we may/Forever our thanksgiving pay.",
+			"May age by age thy wonders tell,/Eternal praise thy works reveal,/And sing with the celestial host/The Father, Son, and Holy Ghost./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Lesson from the book of Isaias",
+			"In the year that king Ozias died, I saw the Lord sitting upon a throne high and elevated: and his train filled the temple. Upon it stood the seraphims: the one had six wings, and the other had six wings: with two they covered his face, and with two they covered his feet, and with two they hew. And they cried one to another, and said: Holy, holy, holy, the Lord God of hosts, all the earth is full of his glory. And the lintels of the doors were moved at the voice of him that cried, and the house was filled with smoke."
+		]
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"And I said: Woe is me, because I have held my peace; because I am a man of unclean lips, and I dwell in the midst of a people that hath unclean lips, and I have seen with my eyes the King the Lord of hosts. And one of the seraphims flew to me, and in his hand was a live coal, which he had taken with the tongs off the altar. And he touched my mouth, and said: Behold this hath touched thy lips, and thy iniquities shall be taken away, and thy sin shall be cleansed. And I heard the voice of the Lord, saying: Whom shall I send? and who shall go for us? And I said: Lo, here am I, send me."
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"And he said: Go, and thou shalt say to this people: Hearing, hear, and understand not: and see the vision, and know it not. Blind the heart of this people, and make their ears heavy, and shut their eyes: lest they see with their eyes, and hear with their ears, and understand with their heart, and be converted and I heal them. And I said: How long, O Lord? And he said: Until the cities be wasted without inhabitant, and the houses without man, and the land shall be left desolate. And the Lord shall remove men far away, and she shall be multiplied that was left in the midst of the earth."
+	},
+	{
+		"tags":["trinitas","laudes","hymnus"],
+		"datum":[
+			"O thou, who dost all nature sway,/Dread Trinity in Unity,/Accept the trembling praise we pay/To thy eternal majesty.",
+			"The star that heralds in the dawn/Is slowly fading in the skies;/The darkness melts; O thou true light,/Upon our darkened souls arise.",
+			"To God the Father glory be,/And to the sole-begotten Son,/And Holy Ghost co-equally,/While everlasting ages run./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["trinitas","sexta","capitulum"],
+		"datum":"The grace of our Lord Jesus Christ, and the charity of God, and the communication of the Holy Ghost be with you all. Amen."
+	},
+	{
+		"tags":["trinitas","nona","capitulum"],
+		"datum":"There are Three That bear record in heaven: the Father, the Word, and the Holy Ghost, and these Three are One."
 	}
 ]

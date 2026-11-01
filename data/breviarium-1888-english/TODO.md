@@ -13,12 +13,16 @@ text without any sign of it, so imported scriptural antiphons and responsories m
 checking against Bute; e.g. the Pentecost antiphon "The charity of God * is poured forth in our
 hearts…" is Douay. Imported texts keep Divinum Officium's spelling (e.g. Caesar, offense).
 
-## 1. Missing: Divinum Officium's English is not Bute
+## 1. Imported from Divinum Officium's other translations
 
-Divinum Officium has these texts, but in another translation, so they need Bute's text from another source.
+Filled from Divinum Officium as it stands, to be replaced with Bute's text when it is transcribed. Divinum
+Officium's scripture is Douay (its numbered verses were run together into one passage), its hymns are Britt's
+and others', and some collects and antiphons are later or modern translations. Grouped by kind of text.
 
-### Divinum Officium's English is its numbered Douay scripture text (953)
+### lectio-simplex (930)
 
+- `commune-sanctorum/bmv-sabbatum.json`
+  - `bmv-sabbatum, matutinum, lectio, lectio-iii` — `aprilis`
 - `proprium-de-tempore/hebdomadae-augusti.json`
   - `de-parabolis, incipit-libri, lectio` — `lectio-i`
   - `de-parabolis, incipit-libri, lectio` — `lectio-ii`
@@ -301,7 +305,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `liber-ii-machabaeorum, dies-iv-libri, matutinum, lectio` — `lectio-i`
   - `liber-ii-machabaeorum, dies-iv-libri, matutinum, lectio` — `lectio-ii`
   - `liber-ii-machabaeorum, dies-iv-libri, matutinum, lectio` — `lectio-iii`
-  - `liber-ii-machabaeorum, dies-v-libri, matutinum, lectio` — `lectio-i`
   - `liber-ii-machabaeorum, dies-v-libri, matutinum, lectio` — `lectio-ii`
   - `liber-ii-machabaeorum, dies-v-libri, matutinum, lectio` — `lectio-iii`
   - `liber-ii-machabaeorum, dies-vi-libri, matutinum, lectio` — `lectio-i`
@@ -341,10 +344,8 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `liber-job, dies-iii-libri, matutinum, lectio` — `lectio-i`
   - `liber-job, dies-iii-libri, matutinum, lectio` — `lectio-ii`
   - `liber-job, dies-iii-libri, matutinum, lectio` — `lectio-iii`
-  - `liber-job, dies-iv-libri, matutinum, lectio` — `lectio-i`
   - `liber-job, dies-iv-libri, matutinum, lectio` — `lectio-ii`
   - `liber-job, dies-iv-libri, matutinum, lectio` — `lectio-iii`
-  - `liber-job, dies-v-libri, matutinum, lectio` — `lectio-i`
   - `liber-job, dies-v-libri, matutinum, lectio` — `lectio-ii`
   - `liber-job, dies-v-libri, matutinum, lectio` — `lectio-iii`
   - `liber-job, dies-vi-libri, matutinum, lectio` — `lectio-i`
@@ -492,8 +493,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `hebdomada-iv-adventus, feria, feria-vi, matutinum, lectio` — `lectio-i`
   - `hebdomada-iv-adventus, feria, feria-vi, matutinum, lectio` — `lectio-ii`
   - `hebdomada-iv-adventus, feria, feria-vi, matutinum, lectio` — `lectio-iii`
-- `proprium-de-tempore/in-tempore-adventus/in-tempore-adventus.json`
-  - `in-tempore-adventus, feriae-ii, laudes, antiphona, antiphona-iv` — `datum`
 - `proprium-de-tempore/in-tempore-paschali/ascensio.json`
   - `epistola-ii-petri, lectio` — `lectio-i`
   - `epistola-ii-petri, lectio` — `lectio-ii`
@@ -602,16 +601,9 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `hebdomada-sancta, feria-iv, matutinum, lectio, lectio-i` — `datum`
   - `hebdomada-sancta, feria-iv, matutinum, lectio, lectio-ii` — `datum`
   - `hebdomada-sancta, feria-iv, matutinum, lectio, lectio-iii` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/triduum.json`
-  - `coena-domini, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
-  - `coena-domini, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
-  - `coena-domini, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
-  - `parasceve, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
-  - `parasceve, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
-  - `parasceve, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
-  - `sabbatum-sanctum, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
-  - `sabbatum-sanctum, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
-  - `sabbatum-sanctum, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
+- `proprium-de-tempore/in-tempore-septuagesimae/cinerum.json`
+  - `cinerum, feria-v, matutinum, lectio, lectio-i` — `datum`
+  - `cinerum, feria-vi, matutinum, lectio, lectio-i` — `datum`
 - `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-quinquagesima.json`
   - `hebdomada-quinquagesima, feria-ii, matutinum, lectio, lectio-i` — `datum`
   - `hebdomada-quinquagesima, feria-ii, matutinum, lectio, lectio-ii` — `datum`
@@ -799,7 +791,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `hebdomada-i-pentecostes, feria-iii, lectio` — `lectio-i`
   - `hebdomada-i-pentecostes, feria-iii, lectio` — `lectio-ii`
   - `hebdomada-i-pentecostes, feria-iii, lectio` — `lectio-iii`
-  - `hebdomada-i-pentecostes, feria-iv, lectio` — `lectio-i`
   - `hebdomada-i-pentecostes, feria-iv, lectio` — `lectio-ii`
   - `hebdomada-i-pentecostes, feria-iv, lectio` — `lectio-iii`
   - `hebdomada-i-pentecostes, feria-vi, lectio` — `lectio-i`
@@ -948,13 +939,11 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `hebdomada-viii-pentecostes, feria-ii, matutinum, lectio` — `lectio-i`
   - `hebdomada-viii-pentecostes, feria-ii, matutinum, lectio` — `lectio-ii`
   - `hebdomada-viii-pentecostes, feria-ii, matutinum, lectio` — `lectio-iii`
-  - `hebdomada-viii-pentecostes, feria-iii, matutinum, lectio` — `lectio-i`
   - `hebdomada-viii-pentecostes, feria-iii, matutinum, lectio` — `lectio-ii`
   - `hebdomada-viii-pentecostes, feria-iii, matutinum, lectio` — `lectio-iii`
   - `hebdomada-viii-pentecostes, feria-iv, matutinum, lectio` — `lectio-i`
   - `hebdomada-viii-pentecostes, feria-iv, matutinum, lectio` — `lectio-ii`
   - `hebdomada-viii-pentecostes, feria-iv, matutinum, lectio` — `lectio-iii`
-  - `hebdomada-viii-pentecostes, feria-v, matutinum, lectio` — `lectio-i`
   - `hebdomada-viii-pentecostes, feria-v, matutinum, lectio` — `lectio-ii`
   - `hebdomada-viii-pentecostes, feria-v, matutinum, lectio` — `lectio-iii`
   - `hebdomada-viii-pentecostes, feria-vi, matutinum, lectio` — `lectio-i`
@@ -1001,23 +990,8 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `hebdomada-xi-pentecostes, sabbatum, matutinum, lectio` — `lectio-i`
   - `hebdomada-xi-pentecostes, sabbatum, matutinum, lectio` — `lectio-ii`
   - `hebdomada-xi-pentecostes, sabbatum, matutinum, lectio` — `lectio-iii`
-- `proprium-sanctorum/aprilis/patrocinius-joseph.json`
-  - `patrocinius-joseph, matutinum, nocturna-i, versiculus` — `datum`
-- `proprium-sanctorum/majus/cor-jesus.json`
-  - `cor-jesus, matutinum, nocturna-i, antiphona, antiphona-i` — `datum`
-- `proprium-sanctorum/martius/septem-dolores-passione.json`
-  - `septem-dolores-passione, antiphona, antiphona-iv` — `datum`
-- `psalterium/prima.json`
-  - `prima, in-tempore-passionis, feria, antiphona` — `datum`
-- `ritus/officium-defunctorum.json`
-  - `officium-defunctorum, matutinum, nocturna-ii, lectio, lectio-i` — `datum`
-  - `officium-defunctorum, matutinum, nocturna-ii, lectio, lectio-ii` — `datum`
-  - `officium-defunctorum, matutinum, nocturna-ii, lectio, lectio-iii` — `datum`
-  - `officium-defunctorum, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
-  - `officium-defunctorum, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
-  - `officium-defunctorum, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
 
-### First-nocturn scripture lessons in Divinum Officium's English are Douay (280)
+### lectio-nocturna-i (258)
 
 - `commune-sanctorum/confessor-pontifex.json`
   - `confessor-pontifex, matutinum, nocturna-i, lectio` — `datum`
@@ -1060,8 +1034,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `hebdomada-iv-adventus, dominica, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
   - `hebdomada-iv-adventus, dominica, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
 - `proprium-de-tempore/in-tempore-nativitatis/circumcisio.json`
-  - `circumcisio, matutinum, nocturna-i, lectio, lectio-i` — `datum`
-  - `circumcisio, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
   - `circumcisio, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
 - `proprium-de-tempore/in-tempore-nativitatis/innocentes.json`
   - `innocentes, matutinum, nocturna-i, lectio, lectio-i` — `datum`
@@ -1089,9 +1061,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `silvestrus-i, matutinum, nocturna-i, lectio` — `lectio-ii`
   - `silvestrus-i, matutinum, nocturna-i, lectio` — `lectio-iii`
 - `proprium-de-tempore/in-tempore-nativitatis/stephanus.json`
-  - `stephanus, matutinum, nocturna-i, lectio, lectio-i` — `datum`
-  - `stephanus, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
-  - `stephanus, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
   - `stephanus, dies-octava, matutinum, nocturna-i, lectio` — `lectio-i`
   - `stephanus, dies-octava, matutinum, nocturna-i, lectio` — `lectio-ii`
   - `stephanus, dies-octava, matutinum, nocturna-i, lectio` — `lectio-iii`
@@ -1138,20 +1107,9 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `dominica-in-palmis, matutinum, nocturna-i, lectio, lectio-i` — `datum`
   - `dominica-in-palmis, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
   - `dominica-in-palmis, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/triduum.json`
-  - `coena-domini, matutinum, nocturna-i, lectio, lectio-i` — `datum`
-  - `coena-domini, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
-  - `coena-domini, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
-  - `parasceve, matutinum, nocturna-i, lectio, lectio-i` — `datum`
-  - `parasceve, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
-  - `parasceve, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
-  - `sabbatum-sanctum, matutinum, nocturna-i, lectio, lectio-i` — `datum`
-  - `sabbatum-sanctum, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
-  - `sabbatum-sanctum, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
 - `proprium-de-tempore/in-tempore-quadragesimae/hebdomada-i-quadragesimae.json`
   - `hebdomada-i-quadragesimae, dominica, matutinum, nocturna-i, lectio, lectio-i` — `datum`
   - `hebdomada-i-quadragesimae, dominica, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
-  - `hebdomada-i-quadragesimae, dominica, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
 - `proprium-de-tempore/in-tempore-quadragesimae/hebdomada-ii-quadragesimae.json`
   - `hebdomada-ii-quadragesimae, dominica, matutinum, nocturna-i, lectio, lectio-i` — `datum`
   - `hebdomada-ii-quadragesimae, dominica, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
@@ -1216,10 +1174,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `patrocinius-joseph, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
   - `patrocinius-joseph, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
 - `proprium-sanctorum/augustus/assumptio-bmv.json`
-  - `assumptio-bmv, dies-iv, matutinum, nocturna-i, lectio` — `lectio-i`
-  - `assumptio-bmv, dies-iv, matutinum, nocturna-i, lectio` — `lectio-ii`
-  - `assumptio-bmv, dies-iv, matutinum, nocturna-i, lectio` — `lectio-iii`
-  - `assumptio-bmv, dies-v, matutinum, nocturna-i, lectio` — `lectio-i`
   - `assumptio-bmv, dies-v, matutinum, nocturna-i, lectio` — `lectio-ii`
   - `assumptio-bmv, dies-v, matutinum, nocturna-i, lectio` — `lectio-iii`
   - `assumptio-bmv, dies-octava, matutinum, nocturna-i, lectio` — `lectio-i`
@@ -1369,31 +1323,21 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `officium-defunctorum, matutinum, nocturna-i, lectio, lectio-i` — `datum`
   - `officium-defunctorum, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
   - `officium-defunctorum, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
-- `votiva/de-passione.json`
-  - `de-passione, matutinum, de-quatuor-temporibus, nocturna-i, lectio` — `lectio-i`
-  - `de-passione, matutinum, de-quatuor-temporibus, nocturna-i, lectio` — `lectio-ii`
-  - `de-passione, matutinum, de-quatuor-temporibus, nocturna-i, lectio` — `lectio-iii`
 
-### Chapters in Divinum Officium's English are Douay (167)
+### capitulum (150)
 
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
   - `epiphania, capitulum` — `datum`
   - `epiphania, sexta, capitulum` — `datum`
   - `epiphania, nona, capitulum` — `datum`
   - `epiphania, dominica-infra-octavam, capitulum` — `datum`
-  - `epiphania, dominica-infra-octavam, sexta, capitulum` — `datum`
   - `epiphania, dominica-infra-octavam, nona, capitulum` — `datum`
-- `proprium-de-tempore/in-tempore-adventus/hebdomada-i-adventus.json`
-  - `hebdomada-i-adventus, dominica, sexta, capitulum` — `datum`
-  - `hebdomada-i-adventus, dominica, nona, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-adventus/hebdomada-ii-adventus.json`
   - `hebdomada-ii-adventus, dominica, capitulum` — `datum`
-  - `hebdomada-ii-adventus, dominica, sexta, capitulum` — `datum`
   - `hebdomada-ii-adventus, dominica, nona, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-adventus/hebdomada-iii-adventus.json`
   - `hebdomada-iii-adventus, dominica, capitulum` — `datum`
   - `hebdomada-iii-adventus, dominica, sexta, capitulum` — `datum`
-  - `hebdomada-iii-adventus, dominica, nona, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-adventus/hebdomada-iv-adventus.json`
   - `hebdomada-iv-adventus, dominica, capitulum` — `datum`
   - `hebdomada-iv-adventus, dominica, sexta, capitulum` — `datum`
@@ -1418,7 +1362,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `nativitas, sexta, capitulum` — `datum`
   - `nativitas, nona, capitulum` — `datum`
   - `nativitas, dominica-infra-octavam, capitulum` — `datum`
-  - `nativitas, dominica-infra-octavam, sexta, capitulum` — `datum`
   - `nativitas, dominica-infra-octavam, nona, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-nativitatis/stephanus.json`
   - `stephanus, capitulum` — `datum`
@@ -1463,8 +1406,6 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `dominica-in-palmis, capitulum` — `datum`
   - `dominica-in-palmis, sexta, capitulum` — `datum`
   - `dominica-in-palmis, nona, capitulum` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/triduum.json`
-  - `triduum, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-quadragesimae/hebdomada-i-quadragesimae.json`
   - `hebdomada-i-quadragesimae, dominica, capitulum` — `datum`
   - `hebdomada-i-quadragesimae, dominica, sexta, capitulum` — `datum`
@@ -1583,28 +1524,8 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `septem-dolores-septembris, capitulum` — `datum`
   - `septem-dolores-septembris, sexta, capitulum` — `datum`
   - `septem-dolores-septembris, nona, capitulum` — `datum`
-- `psalterium/completorium.json`
-  - `completorium, capitulum` — `caput`
-- `psalterium/laudes.json`
-  - `laudes, capitulum` — `caput`
-- `psalterium/nona.json`
-  - `nona, capitulum` — `caput`
-- `psalterium/prima.json`
-  - `prima, capitulum` — `caput`
-- `psalterium/sexta.json`
-  - `sexta, capitulum` — `caput`
-- `psalterium/tertia.json`
-  - `tertia, capitulum` — `caput`
-- `psalterium/vesperae.json`
-  - `vesperae, capitulum` — `caput`
-- `ritus/officium-defunctorum.json`
-  - `officium-defunctorum, capitulum` — `datum`
-- `ritus/officium-parvum-bmv.json`
-  - `capitulum, officium-parvum-bmv` — `caput`
-- `votiva/de-passione.json`
-  - `de-passione, sexta, capitulum` — `datum`
 
-### Hymns in Divinum Officium's English are Britt's translations (122)
+### hymnus (85)
 
 - `commune-sanctorum/confessor.json`
   - `confessor, vesperae, hymnus` — `datum`
@@ -1621,13 +1542,8 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `martyres, matutinum, hymnus` — `datum`
 - `commune-sanctorum/martyrum-tempore-paschali.json`
   - `martyrum-tempore-paschali, martyres, matutinum, hymnus` — `datum`
-- `commune-sanctorum/vidua.json`
-  - `vidua, matutinum, hymnus` — `datum`
 - `commune-sanctorum/virgo.json`
   - `virgo, martyr, matutinum, hymnus` — `datum`
-  - `virgo, matutinum, hymnus` — `datum`
-- `formulae.json`
-  - `hymnus` — `caput`
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
   - `epiphania, vesperae, hymnus` — `datum`
   - `epiphania, laudes, hymnus` — `datum`
@@ -1640,18 +1556,9 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
 - `proprium-de-tempore/in-tempore-paschali/ascensio.json`
   - `ascensio, vesperae, hymnus` — `datum`
   - `ascensio, matutinum, hymnus` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/pascha.json`
-  - `pascha, hymnus, matutinum` — `datum`
 - `proprium-de-tempore/in-tempore-paschali/pentecostes.json`
-  - `pentecostes, vesperae, hymnus` — `datum`
   - `pentecostes, matutinum, hymnus` — `datum`
   - `pentecostes, laudes, hymnus` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/triduum.json`
-  - `triduum, hymnus` — `prima`
-  - `triduum, hymnus` — `tertia`
-  - `triduum, hymnus` — `sexta`
-  - `triduum, hymnus` — `nona`
-  - `triduum, hymnus` — `completorium`
 - `proprium-de-tempore/post-pentecosten/corpus-christi.json`
   - `corpus-christi, vesperae, hymnus` — `datum`
   - `corpus-christi, matutinum, hymnus` — `datum`
@@ -1709,12 +1616,7 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
 - `proprium-sanctorum/majus/apparitio-michaelis.json`
   - `apparitio-michaelis, laudes, hymnus` — `datum`
 - `proprium-sanctorum/majus/cor-jesus.json`
-  - `cor-jesus, vesperae, hymnus` — `datum`
-  - `cor-jesus, matutinum, hymnus` — `datum`
   - `cor-jesus, laudes, hymnus` — `datum`
-- `proprium-sanctorum/majus/inventio-crucis.json`
-  - `inventio-crucis, vesperae, hymnus` — `in-tempore-paschali`
-  - `inventio-crucis, vesperae, hymnus` — `datum`
 - `proprium-sanctorum/majus/venantius.json`
   - `venantius, vesperae, hymnus` — `datum`
   - `venantius, matutinum, hymnus` — `datum`
@@ -1742,46 +1644,106 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `rosarium-bmv, matutinum, hymnus` — `datum`
   - `rosarium-bmv, laudes, hymnus` — `datum`
   - `rosarium-bmv, ii-vesperae, hymnus` — `datum`
-- `proprium-sanctorum/october/teresia.json`
-  - `teresia, vesperae, hymnus` — `datum`
-  - `teresia, matutinum, hymnus` — `datum`
 - `proprium-sanctorum/september/impressio-stigmatum.json`
   - `impressio-stigmatum, vesperae, hymnus` — `datum`
   - `impressio-stigmatum, laudes, hymnus` — `datum`
 - `proprium-sanctorum/september/septem-dolores-septembris.json`
   - `septem-dolores-septembris, vesperae, hymnus` — `datum`
   - `septem-dolores-septembris, matutinum, hymnus` — `datum`
-  - `septem-dolores-septembris, laudes, hymnus` — `datum`
-- `psalterium/laudes.json`
-  - `laudes, hymnus, annotatio` — `caput`
-  - `laudes, dominica, post-pentecosten, hymnus` — `datum`
-  - `laudes, in-tempore-adventus, temporale, hymnus` — `datum`
-  - `laudes, in-tempore-quadragesimae, temporale, hymnus` — `datum`
-  - `laudes, in-tempore-passionis, temporale, hymnus` — `datum`
-  - `laudes, in-tempore-paschali, temporale, hymnus` — `datum`
-- `psalterium/matutinum.json`
-  - `matutinum, post-pentecosten, dominica, hymnus` — `datum`
-  - `matutinum, in-tempore-adventus, temporale, hymnus` — `datum`
-  - `matutinum, in-tempore-quadragesimae, temporale, hymnus` — `datum`
-  - `matutinum, in-tempore-passionis, temporale, hymnus` — `datum`
-  - `matutinum, in-tempore-paschali, temporale, hymnus` — `datum`
-  - `hymnus, te-deum` — `caput`
 - `psalterium/vesperae.json`
-  - `vesperae, hymnus, annotatio` — `caput`
-  - `vesperae, in-tempore-adventus, temporale, hymnus` — `datum`
-  - `vesperae, in-tempore-quadragesimae, temporale, hymnus` — `datum`
-  - `vesperae, in-tempore-passionis, temporale, hymnus` — `datum`
-  - `vesperae, in-tempore-paschali, temporale, hymnus` — `datum`
   - `vesperae, dominica, i-vesperae, hymnus` — `datum`
 - `ritus/officium-parvum-bmv.json`
   - `officium-parvum-bmv, completorium, hymnus` — `datum`
-- `votiva/de-passione.json`
-  - `de-passione, vesperae, hymnus` — `datum`
-  - `de-passione, matutinum, hymnus` — `datum`
-  - `de-passione, laudes, hymnus` — `datum`
 
-### Divinum Officium's antiphona texts in Sancti/05-03 differ from Bute where they overlap the existing English (22)
+### other (54)
 
+- `formulae.json`
+  - `gloria` — `datum`
+- `proprium-de-tempore/in-tempore-nativitatis/nativitas.json`
+  - `nativitas, matutinum, nocturna-iii, lectio-iii` — `lectio`
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `christus-factus` — `sabbatum-sanctum`
+- `proprium-sanctorum/december/immaculata-conceptio-bmv.json`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i` — `incipit`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i` — `versus`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i, in-tempore-paschali` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii` — `incipit`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii` — `versus`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii, in-tempore-paschali` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii, in-tempore-paschali` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i` — `incipit`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i` — `versus`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii` — `incipit`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii` — `versus`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii, in-tempore-paschali` — `responsum`
+- `ritus/benedictio-mensae.json`
+  - `post-coenam, versus-benedictionis` — `datum`
+  - `in-tempore-nativitatis, ante-prandium, versus-benedictionis` — `datum`
+  - `in-tempore-nativitatis, post-prandium, versus-benedictionis` — `datum`
+  - `per-octavam-epiphaniae, post-prandium, versus-benedictionis` — `datum`
+  - `in-tempore-ascensionis, ante-prandium, versus-benedictionis` — `datum`
+  - `in-tempore-ascensionis, post-prandium, versus-benedictionis` — `datum`
+  - `pentecostes, post-prandium, versus-benedictionis` — `datum`
+- `ritus/officium-defunctorum.json`
+  - `officium-defunctorum, benedicamus-domino` — `datum`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-i` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-i` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-i` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-ii` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-ii` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-ii` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-iii` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-iii` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-i, responsorium-iii` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-i` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-i` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-i` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-ii` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-ii` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-ii` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-iii` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-iii` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-iii` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-i` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-i` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-i` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-ii` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-ii` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-ii` — `versus`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-iii` — `incipit`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-iii` — `responsum`
+  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-iii` — `versus`
+
+### antiphona (43)
+
+- `proprium-de-tempore/hebdomadae-augusti.json`
+  - `liber-ecclesiastici, dies-i-libri, dominica, i-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/in-tempore-adventus/in-tempore-adventus.json`
+  - `in-tempore-adventus, feriae-ii, laudes, antiphona, antiphona-iv` — `datum`
+- `proprium-de-tempore/in-tempore-passionis/hebdomada-sancta.json`
+  - `dominica-in-palmis, i-vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `dominica-in-palmis, laudes, antiphona` — `antiphona-i`
+  - `dominica-in-palmis, laudes, antiphona` — `antiphona-ii`
+  - `dominica-in-palmis, laudes, antiphona` — `antiphona-iii`
+  - `dominica-in-palmis, laudes, antiphona` — `antiphona-iv`
+  - `dominica-in-palmis, laudes, antiphona` — `antiphona-v`
+  - `dominica-in-palmis, laudes, antiphona` — `antiphona-benedictus`
+  - `dominica-in-palmis, antiphona` — `prima`
+  - `dominica-in-palmis, antiphona` — `tertia`
+  - `dominica-in-palmis, antiphona` — `sexta`
+  - `dominica-in-palmis, antiphona` — `nona`
+  - `dominica-in-palmis, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/post-epiphaniam/hebdomada-ii-epiphaniae.json`
+  - `hebdomada-ii-epiphaniae, dominica, laudes, antiphona, antiphona-benedictus` — `datum`
+  - `hebdomada-ii-epiphaniae, dominica, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-sanctorum/julius/visitatio.json`
+  - `visitatio, antiphona` — `antiphona-iv`
+- `proprium-sanctorum/majus/cor-jesus.json`
+  - `cor-jesus, matutinum, nocturna-i, antiphona, antiphona-i` — `datum`
 - `proprium-sanctorum/majus/inventio-crucis.json`
   - `inventio-crucis, antiphona, antiphona-i` — `in-tempore-paschali`
   - `inventio-crucis, antiphona, antiphona-i` — `datum`
@@ -1805,24 +1767,96 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `inventio-crucis, laudes, antiphona, antiphona-benedictus` — `datum`
   - `inventio-crucis, ii-vesperae, antiphona, antiphona-magnificat` — `in-tempore-paschali`
   - `inventio-crucis, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-sanctorum/martius/perpetua-felicitas.json`
+  - `perpetua-felicitas, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-sanctorum/martius/septem-dolores-passione.json`
+  - `septem-dolores-passione, antiphona, antiphona-iv` — `datum`
+- `psalterium/prima.json`
+  - `prima, in-tempore-passionis, feria, antiphona` — `datum`
 
-### Divinum Officium's antiphona texts in Tempora/Quad6-0 differ from Bute where they overlap the existing English (12)
+### responsorium-breve (42)
 
-- `proprium-de-tempore/in-tempore-passionis/hebdomada-sancta.json`
-  - `dominica-in-palmis, i-vesperae, antiphona, antiphona-magnificat` — `datum`
-  - `dominica-in-palmis, laudes, antiphona` — `antiphona-i`
-  - `dominica-in-palmis, laudes, antiphona` — `antiphona-ii`
-  - `dominica-in-palmis, laudes, antiphona` — `antiphona-iii`
-  - `dominica-in-palmis, laudes, antiphona` — `antiphona-iv`
-  - `dominica-in-palmis, laudes, antiphona` — `antiphona-v`
-  - `dominica-in-palmis, laudes, antiphona` — `antiphona-benedictus`
-  - `dominica-in-palmis, antiphona` — `prima`
-  - `dominica-in-palmis, antiphona` — `tertia`
-  - `dominica-in-palmis, antiphona` — `sexta`
-  - `dominica-in-palmis, antiphona` — `nona`
-  - `dominica-in-palmis, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-sanctorum/augustus/transfiguratio.json`
+  - `transfiguratio, sexta, responsorium-breve` — `incipit`
+  - `transfiguratio, sexta, responsorium-breve` — `responsum`
+  - `transfiguratio, sexta, responsorium-breve` — `versus`
+  - `transfiguratio, nona, responsorium-breve` — `incipit`
+  - `transfiguratio, nona, responsorium-breve` — `responsum`
+  - `transfiguratio, nona, responsorium-breve` — `versus`
+- `proprium-sanctorum/december/immaculata-conceptio-bmv.json`
+  - `immaculata-conceptio-bmv, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `immaculata-conceptio-bmv, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `immaculata-conceptio-bmv, tertia, responsorium-breve, in-tempore-paschali` — `versus`
+  - `immaculata-conceptio-bmv, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `immaculata-conceptio-bmv, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `immaculata-conceptio-bmv, sexta, responsorium-breve, in-tempore-paschali` — `versus`
+  - `immaculata-conceptio-bmv, nona, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `immaculata-conceptio-bmv, nona, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `immaculata-conceptio-bmv, nona, responsorium-breve, in-tempore-paschali` — `versus`
+- `proprium-sanctorum/majus/apparitio-michaelis.json`
+  - `apparitio-michaelis, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `apparitio-michaelis, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `apparitio-michaelis, tertia, responsorium-breve, in-tempore-paschali` — `versus`
+  - `apparitio-michaelis, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `apparitio-michaelis, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `apparitio-michaelis, sexta, responsorium-breve, in-tempore-paschali` — `versus`
+  - `apparitio-michaelis, nona, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `apparitio-michaelis, nona, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `apparitio-michaelis, nona, responsorium-breve, in-tempore-paschali` — `versus`
+- `proprium-sanctorum/majus/inventio-crucis.json`
+  - `inventio-crucis, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `inventio-crucis, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `inventio-crucis, tertia, responsorium-breve, in-tempore-paschali` — `versus`
+  - `inventio-crucis, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `inventio-crucis, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `inventio-crucis, sexta, responsorium-breve, in-tempore-paschali` — `versus`
+  - `inventio-crucis, nona, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `inventio-crucis, nona, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `inventio-crucis, nona, responsorium-breve, in-tempore-paschali` — `versus`
+- `proprium-sanctorum/martius/joseph-sponsus.json`
+  - `joseph-sponsus, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `joseph-sponsus, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `joseph-sponsus, tertia, responsorium-breve, in-tempore-paschali` — `versus`
+  - `joseph-sponsus, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `joseph-sponsus, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `joseph-sponsus, sexta, responsorium-breve, in-tempore-paschali` — `versus`
+  - `joseph-sponsus, nona, responsorium-breve, in-tempore-paschali` — `incipit`
+  - `joseph-sponsus, nona, responsorium-breve, in-tempore-paschali` — `responsum`
+  - `joseph-sponsus, nona, responsorium-breve, in-tempore-paschali` — `versus`
 
-### Divinum Officium's English is a modern translation (addresses God as You) (8)
+### lectio-nocturna-iii (22)
+
+- `proprium-de-tempore/in-tempore-paschali/ascensio.json`
+  - `ascensio, duplex-i-classis, matutinum, nocturna-iii, lectio` — `lectio-ii`
+  - `ascensio, dominica-infra-octavam, matutinum, nocturna-iii, lectio` — `lectio-ii`
+  - `ascensio, dies-octava, matutinum, nocturna-iii, lectio` — `lectio-ii`
+- `proprium-de-tempore/in-tempore-paschali/vigilia-pentecostes.json`
+  - `vigilia-pentecostes, matutinum, nocturna-iii, lectio` — `lectio-ii`
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `coena-domini, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
+  - `coena-domini, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
+  - `coena-domini, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
+  - `parasceve, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
+  - `parasceve, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
+  - `parasceve, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
+  - `sabbatum-sanctum, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
+  - `sabbatum-sanctum, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
+  - `sabbatum-sanctum, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
+- `proprium-de-tempore/post-pentecosten/corpus-christi.json`
+  - `corpus-christi, dies-ii, matutinum, nocturna-iii, lectio` — `lectio-iii`
+  - `corpus-christi, dies-vi, matutinum, nocturna-iii, lectio` — `lectio-iii`
+  - `corpus-christi, dies-vii, matutinum, nocturna-iii, lectio` — `lectio-ii`
+  - `corpus-christi, dies-octava, matutinum, nocturna-iii, lectio` — `lectio-ii`
+- `proprium-sanctorum/julius/joannes-gualbertus.json`
+  - `joannes-gualbertus, matutinum, nocturna-iii, lectio` — `lectio-i`
+- `proprium-sanctorum/september/januarius-et-soc.json`
+  - `januarius-et-soc, matutinum, nocturna-iii, lectio` — `lectio-iii`
+- `ritus/officium-defunctorum.json`
+  - `officium-defunctorum, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
+  - `officium-defunctorum, matutinum, nocturna-iii, lectio, lectio-ii` — `datum`
+  - `officium-defunctorum, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
+
+### collecta (9)
 
 - `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-quinquagesima.json`
   - `hebdomada-quinquagesima, collecta` — `datum`
@@ -1836,71 +1870,62 @@ Divinum Officium has these texts, but in another translation, so they need Bute'
   - `chrysanthus-et-daria, collecta` — `datum`
 - `proprium-sanctorum/october/rosarium-bmv.json`
   - `rosarium-bmv, collecta` — `datum`
+- `proprium-sanctorum/september/nicolaus-tolentino.json`
+  - `nicolaus-tolentino, collecta` — `datum`
 - `proprium-sanctorum/september/protus-hyacinthus.json`
   - `protus-hyacinthus, collecta` — `datum`
 - `ritus/officium-defunctorum.json`
   - `fideles-defuncti, officium-defunctorum, collecta` — `datum`
 
-### Divinum Officium's antiphona texts in Commune/C1p differ from Bute where they overlap the existing English (5)
+### lectio-nocturna-ii (8)
 
-- `officium.json`
-  - `ritus, prima, antiphona-bmv, privata` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/pascha.json`
-  - `pascha, i-vesperae, completorium, antiphona` — `datum`
-  - `pascha, antiphona, prima` — `datum`
-  - `pascha, completorium, antiphona` — `intonata`
-  - `pascha, completorium, antiphona` — `antiphona-nunc-dimittis`
+- `proprium-de-tempore/in-tempore-paschali/ascensio.json`
+  - `ascensio, dies-ii, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-de-tempore/post-pentecosten/hebdomada-iii-pentecostes.json`
+  - `hebdomada-iii-pentecostes, dominica, matutinum, nocturna-ii, lectio` — `lectio-i`
+- `proprium-sanctorum/junius/nativitas-joannis-baptistae.json`
+  - `nativitas-joannis-baptistae, dies-iv, matutinum, nocturna-ii, lectio` — `lectio-i`
+- `proprium-sanctorum/october/franciscus.json`
+  - `franciscus, matutinum, nocturna-ii, lectio` — `lectio-ii`
+- `proprium-sanctorum/september/nomen-bmv.json`
+  - `nomen-bmv, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `ritus/officium-defunctorum.json`
+  - `officium-defunctorum, matutinum, nocturna-ii, lectio, lectio-i` — `datum`
+  - `officium-defunctorum, matutinum, nocturna-ii, lectio, lectio-ii` — `datum`
+  - `officium-defunctorum, matutinum, nocturna-ii, lectio, lectio-iii` — `datum`
 
-### Divinum Officium's responsorium-breve texts in Commune/C1p differ from Bute where they overlap the existing English (5)
+### versiculus (2)
 
-- `proprium-de-tempore/in-tempore-paschali/pascha.json`
-  - `pascha, responsorium-breve, prima` — `datum`
-- `ritus/officium-parvum-bmv.json`
-  - `officium-parvum-bmv, prima, responsorium-breve, formula` — `datum`
-  - `officium-parvum-bmv, tertia, responsorium-breve, formula` — `datum`
-  - `officium-parvum-bmv, sexta, responsorium-breve, formula` — `datum`
-  - `officium-parvum-bmv, nona, responsorium-breve, formula` — `datum`
+- `proprium-sanctorum/martius/septem-dolores-passione.json`
+  - `septem-dolores-passione, matutinum, nocturna-ii, versiculus` — `datum`
+  - `septem-dolores-passione, tertia, versiculus` — `datum`
 
-### Divinum Officium's antiphona texts in Tempora/Epi2-0 differ from Bute where they overlap the existing English (2)
+## 2. Still missing
 
-- `proprium-de-tempore/post-epiphaniam/hebdomada-ii-epiphaniae.json`
-  - `hebdomada-ii-epiphaniae, dominica, laudes, antiphona, antiphona-benedictus` — `datum`
-  - `hebdomada-ii-epiphaniae, dominica, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
+Divinum Officium has no usable English for these: no close match to this book's Latin, no English section,
+a commune text with an N. placeholder where this book names the saint, unresolved markup, or a text divided
+differently from the Latin.
 
-### Divinum Officium's antiphona texts in Tempora/084-0 differ from Bute where they overlap the existing English (1)
-
-- `proprium-de-tempore/hebdomadae-augusti.json`
-  - `liber-ecclesiastici, dies-i-libri, dominica, i-vesperae, antiphona, antiphona-magnificat` — `datum`
-
-### Divinum Officium's antiphona texts in Sancti/10-11 differ from Bute where they overlap the existing English (1)
-
-- `proprium-sanctorum/julius/visitatio.json`
-  - `visitatio, antiphona` — `antiphona-iv`
-
-### Divinum Officium's antiphona texts in Commune/C7b differ from Bute where they overlap the existing English (1)
-
-- `proprium-sanctorum/martius/perpetua-felicitas.json`
-  - `perpetua-felicitas, vesperae, antiphona, antiphona-magnificat` — `datum`
-
-### Divinum Officium's collecta texts in Commune/C5-1 differ from Bute where they overlap the existing English (1)
-
-- `proprium-sanctorum/september/nicolaus-tolentino.json`
-  - `nicolaus-tolentino, collecta` — `datum`
-
-## 2. Missing: no usable Divinum Officium text
-
-Divinum Officium has no English for these, its Latin differs from this book's, or its text could not be divided like the Latin.
-
-### No close Divinum Officium Latin match (377)
+### No close DO Latin match (503)
 
 - `commune-sanctorum/maria.json`
   - `maria, matutinum, nocturna-ii, responsorium, responsorium-iii, in-tempore-paschali` — `responsum-ii`
   - `maria, matutinum, nocturna-iii, responsorium, responsorium-i, versus, n` — `datum`
 - `commune-sanctorum/virgo.json`
   - `virgo, laudes, versiculus` — `in-tempore-paschali`
+- `cursus.json`
+  - `cursus, officium-defunctorum` — `datum`
 - `formulae.json`
+  - `deus-in-adjutorium, matutinum` — `datum`
+  - `deus-in-adjutorium, matutinum` — `in-tempore-septuagesimae`
+  - `terminatio, deo-patri` — `datum`
+  - `terminatio, praesta-pater` — `datum`
+  - `hebdomada-septuagesima, dominica, i-vesperae, vesperae, benedicamus-domino` — `datum`
+  - `psalmi` — `caput`
+  - `collecta-primaria` — `caput`
   - `responsorium-breve, annotatio` — `caput`
   - `versiculus, annotatio` — `caput`
+  - `preces` — `caput`
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
   - `epiphania, matutinum, nocturna-i, antiphona, antiphona-i` — `datum`
   - `epiphania, matutinum, nocturna-i, antiphona, antiphona-ii` — `datum`
@@ -1908,12 +1933,14 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `epiphania, matutinum, nocturna-ii, antiphona, antiphona-ii` — `datum`
   - `epiphania, matutinum, nocturna-ii, antiphona, antiphona-iii` — `datum`
   - `epiphania, festum, matutinum, nocturna-iii, antiphona, antiphona-i` — `datum`
+  - `epiphania, dominica-infra-octavam, sexta, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-adventus/hebdomada-i-adventus.json`
   - `hebdomada-i-adventus, dominica, matutinum, nocturna-i, responsorium, responsorium-i` — `incipit`
   - `hebdomada-i-adventus, dominica, matutinum, nocturna-i, responsorium, responsorium-i` — `responsum-i`
   - `hebdomada-i-adventus, dominica, matutinum, nocturna-i, responsorium, responsorium-i` — `responsum-ii`
   - `hebdomada-i-adventus, dominica, matutinum, nocturna-i, responsorium, responsorium-i` — `responsum-iii`
   - `hebdomada-i-adventus, dominica, matutinum, nocturna-i, responsorium, responsorium-i` — `versus-i`
+  - `hebdomada-i-adventus, dominica, sexta, capitulum` — `datum`
 - `proprium-de-tempore/in-tempore-adventus/in-tempore-adventus.json`
   - `matutinum, hebdomada-i-adventus, antiphona, antiphona-invitatorium` — `datum`
   - `matutinum, hebdomada-iii-adventus, antiphona, antiphona-invitatorium` — `datum`
@@ -1944,11 +1971,17 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `in-tempore-adventus, feriae-v, laudes, antiphona, antiphona-v` — `datum`
   - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-ii` — `datum`
   - `hebdomada-iii-adventus, sabbatum, laudes, antiphona, antiphona-iv` — `datum`
+- `proprium-de-tempore/in-tempore-nativitatis/circumcisio.json`
+  - `circumcisio, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
 - `proprium-de-tempore/in-tempore-nativitatis/nativitas.json`
   - `nativitas, matutinum, nocturna-ii, antiphona, antiphona-i` — `datum`
   - `nativitas, matutinum, nocturna-ii, antiphona, antiphona-ii` — `datum`
   - `nativitas, matutinum, nocturna-ii, antiphona, antiphona-iii` — `datum`
   - `nativitas, matutinum, nocturna-iii, antiphona, antiphona-ii` — `datum`
+- `proprium-de-tempore/in-tempore-nativitatis/stephanus.json`
+  - `stephanus, matutinum, nocturna-i, lectio, lectio-i` — `datum`
+  - `stephanus, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
+  - `stephanus, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
 - `proprium-de-tempore/in-tempore-paschali/ascensio.json`
   - `ascensio, post-ascensionem, feria-vi, matutinum, nocturna-ii, lectio` — `lectio-ii`
   - `ascensio, post-ascensionem, feria-vi, matutinum, nocturna-ii, lectio` — `lectio-iii`
@@ -1960,7 +1993,9 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `hebdomada-iii-paschae, dominica, matutinum, nocturna-i, responsorium, responsorium-iii` — `versus`
 - `proprium-de-tempore/in-tempore-paschali/pascha.json`
   - `pascha, dominica, i-vesperae, collecta` — `datum`
+  - `dismissio, pascha, i-vesperae, vesperae` — `datum`
   - `pascha, dominica, matutinum, versiculus` — `datum`
+  - `haec-dies` — `caput`
   - `pascha, completorium, antiphona` — `repetita`
   - `pascha, feria-iii, matutinum, versiculus` — `datum`
   - `pascha, feria-iv, matutinum, versiculus` — `datum`
@@ -1979,6 +2014,8 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `versiculus, coena-domini` — `caput`
   - `versiculus, parasceve` — `caput`
   - `versiculus, sabbatum-sanctum` — `caput`
+  - `christus-factus` — `coena-domini`
+  - `christus-factus` — `parasceve`
   - `sabbatum-sanctum, laudes, antiphona, antiphona-i` — `datum`
   - `sabbatum-sanctum, laudes, antiphona, antiphona-ii` — `datum`
   - `sabbatum-sanctum, laudes, antiphona, antiphona-v` — `datum`
@@ -2052,6 +2089,10 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `patrocinius-joseph, ii-vesperae, versiculus` — `datum`
 - `proprium-sanctorum/augustus/alphonsus-liguorio.json`
   - `alphonsus-liguorio, vesperae, antiphona, antiphona-magnificat, n` — `datum`
+- `proprium-sanctorum/augustus/assumptio-bmv.json`
+  - `assumptio-bmv, dies-iv, matutinum, nocturna-i, lectio` — `lectio-i`
+  - `assumptio-bmv, dies-iv, matutinum, nocturna-i, lectio` — `lectio-ii`
+  - `assumptio-bmv, dies-iv, matutinum, nocturna-i, lectio` — `lectio-iii`
 - `proprium-sanctorum/augustus/augustinus.json`
   - `augustinus, vesperae, antiphona, antiphona-magnificat, n` — `datum`
 - `proprium-sanctorum/augustus/bernardus.json`
@@ -2088,17 +2129,22 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `immaculata-conceptio-bmv, matutinum, nocturna-i, responsorium, responsorium-iii, in-tempore-paschali` — `responsum`
   - `immaculata-conceptio-bmv, matutinum, nocturna-ii, versiculus` — `in-tempore-paschali`
   - `immaculata-conceptio-bmv, matutinum, nocturna-iii, versiculus` — `in-tempore-paschali`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i, in-tempore-paschali` — `responsum`
   - `immaculata-conceptio-bmv, tertia, versiculus` — `in-tempore-paschali`
   - `immaculata-conceptio-bmv, sexta, versiculus` — `in-tempore-paschali`
   - `immaculata-conceptio-bmv, nona, versiculus` — `in-tempore-paschali`
 - `proprium-sanctorum/december/petrus-chrysologus.json`
   - `petrus-chrysologus, vesperae, antiphona-magnificat, n` — `datum`
+- `proprium-sanctorum/december/vigilia-immaculatae-conceptionis-bmv.json`
+  - `vigilia-immaculatae-conceptionis-bmv` — `datum`
 - `proprium-sanctorum/februarius/cyrillus-alexandrini.json`
   - `cyrillus-alexandrini, vesperae, antiphona-magnificat, n` — `datum`
 - `proprium-sanctorum/februarius/petrus-damianus.json`
   - `petrus-damianus, vesperae, antiphona-magnificat, n` — `datum`
 - `proprium-sanctorum/februarius/titus.json`
   - `titus, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-sanctorum/februarius/valentinus.json`
+  - `valentinus, n` — `datum`
 - `proprium-sanctorum/januarius/cathedra-petri.json`
   - `cathedra-petri, collecta` — `datum`
   - `cathedra-petri, matutinum, nocturna-iii, lectio` — `lectio-ii`
@@ -2167,6 +2213,8 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `gregorius-nazianzenus, antiphona, antiphona-magnificat, n` — `datum`
   - `gregorius-nazianzenus, collecta` — `datum`
 - `proprium-sanctorum/majus/inventio-crucis.json`
+  - `inventio-crucis, vesperae, hymnus` — `in-tempore-paschali`
+  - `inventio-crucis, vesperae, hymnus` — `datum`
   - `inventio-crucis, vesperae, versiculus` — `in-tempore-paschali`
   - `inventio-crucis, matutinum, nocturna-iii, versiculus` — `in-tempore-paschali`
   - `inventio-crucis, matutinum, nocturna-iii, lectio` — `lectio-ii`
@@ -2202,12 +2250,16 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `dedicatio-salvatoris, matutinum, nocturna-ii, lectio` — `lectio-iii`
 - `proprium-sanctorum/november/elisabeth.json`
   - `vidua, matutinum, antiphona, antiphona-invitatorium, n` — `datum`
+- `proprium-sanctorum/november/gregorius-thaumaturgus.json`
+  - `gregorius-thaumaturgus` — `nomen`
 - `proprium-sanctorum/november/martinus.json`
   - `martinus, matutinum, nocturna-iii, lectio` — `lectio-ii`
   - `martinus, matutinum, nocturna-iii, lectio` — `lectio-iii`
 - `proprium-sanctorum/november/praesentatio-bmv.json`
   - `praesentatio-bmv, vesperae, antiphona, antiphona-magnificat` — `datum`
   - `praesentatio-bmv, matutinum, nocturna-iii, responsorium, responsorium-i, versus, n` — `datum`
+- `proprium-sanctorum/october/birgitta.json`
+  - `birgitta, n` — `datum`
 - `proprium-sanctorum/october/chrysanthus-et-daria.json`
   - `chrysanthus-et-daria, matutinum, lectio` — `lectio-i`
   - `chrysanthus-et-daria, matutinum, lectio` — `lectio-ii`
@@ -2222,16 +2274,49 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `nativitas-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-i`
 - `proprium-sanctorum/september/nomen-bmv.json`
   - `nomen-bmv, i-vesperae, antiphona, antiphona-magnificat, n` — `datum`
+- `proprium-sanctorum/september/septem-dolores-septembris.json`
+  - `septem-dolores-septembris, laudes, hymnus` — `datum`
+- `psalterium/absolutiones-benedictiones.json`
+  - `absolutio, annotatio` — `caput`
 - `psalterium/antiphona-bmv.json`
   - `antiphona-bmv, versiculus, dominus-det, privata` — `datum`
   - `antiphona-bmv, ritus` — `caput`
   - `antiphona-bmv, alma-redemptoris, antiphona` — `datum`
 - `psalterium/completorium.json`
+  - `completorium, ritus, sectio` — `caput`
+  - `completorium, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `completorium, ritus, officium-defunctorum, sectio` — `caput`
+  - `confiteor, completorium` — `caput`
   - `antiphona-nunc-dimittis` — `caput`
+  - `nunc-dimittis, triduum` — `caput`
+  - `nunc-dimittis, pascha` — `caput`
   - `completorium, lectio-brevis, lectio` — `datum`
+  - `completorium, converte-nos` — `datum`
+  - `completorium, capitulum` — `caput`
 - `psalterium/laudes.json`
+  - `laudes, ritus, sectio` — `caput`
+  - `laudes, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `laudes, ritus, officium-defunctorum, sectio` — `caput`
+  - `laudes, commemorationes` — `caput`
   - `antiphona-prior-benedictus` — `caput`
+  - `laudes, dominica, post-pentecosten, hymnus` — `datum`
+  - `laudes, in-tempore-adventus, temporale, hymnus` — `datum`
+  - `laudes, in-tempore-quadragesimae, temporale, hymnus` — `datum`
+  - `laudes, in-tempore-paschali, temporale, hymnus` — `datum`
+  - `laudes, capitulum` — `caput`
 - `psalterium/matutinum.json`
+  - `matutinum, ritus, sectio` — `caput`
+  - `matutinum, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `matutinum, ritus, officium-defunctorum, sectio` — `caput`
+  - `nocturna, nocturna-i, sectio` — `caput`
+  - `nocturna, nocturna-ii, sectio` — `caput`
+  - `nocturna, nocturna-iii, sectio` — `caput`
+  - `nocturna, sectio` — `caput`
+  - `matutinum, invitatorium` — `caput`
+  - `matutinum, post-pentecosten, dominica, hymnus` — `datum`
+  - `matutinum, in-tempore-adventus, temporale, hymnus` — `datum`
+  - `matutinum, in-tempore-quadragesimae, temporale, hymnus` — `datum`
+  - `matutinum, in-tempore-paschali, temporale, hymnus` — `datum`
   - `responsorium, formula, annotatio` — `caput`
   - `responsorium, formula, responsorium-ii, annotatio` — `caput`
   - `responsorium, formula, responsorium-iii, annotatio` — `caput`
@@ -2241,36 +2326,111 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `responsorium, formula, nocturna-iii, annotatio` — `caput`
   - `responsorium, formula, nocturna-iii, responsorium-ii, annotatio` — `caput`
   - `responsorium, formula, nocturna-iii, responsorium-iii, annotatio` — `caput`
+  - `formula-lectionis, lectio-brevis` — `caput`
+  - `formula-lectionis` — `caput`
+  - `formula-lectionis, lectio-ii` — `caput`
+  - `formula-lectionis, lectio-iii` — `caput`
+  - `formula-lectionis, nocturna-ii` — `caput`
+  - `formula-lectionis, nocturna-ii, lectio-ii` — `caput`
+  - `formula-lectionis, nocturna-ii, lectio-iii` — `caput`
+  - `formula-lectionis, nocturna-iii` — `caput`
+  - `formula-lectionis, nocturna-iii, lectio-ii` — `caput`
+  - `formula-lectionis, nocturna-iii, lectio-iii` — `caput`
+- `psalterium/nona.json`
+  - `nona, ritus, sectio` — `caput`
+  - `nona, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `nona, ritus, officium-defunctorum, sectio` — `caput`
+  - `nona, capitulum` — `caput`
+- `psalterium/officium-capituli.json`
+  - `officium-capituli, ritus, sectio` — `caput`
 - `psalterium/prima.json`
+  - `prima, ritus, sectio` — `caput`
+  - `prima, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `prima, ritus, officium-defunctorum, sectio` — `caput`
   - `prima, in-tempore-adventus, responsorium-breve` — `incipit`
   - `prima, in-tempore-adventus, responsorium-breve` — `responsum`
   - `prima, in-tempore-quadragesimae, feria, antiphona` — `datum`
+  - `prima, capitulum` — `caput`
+- `psalterium/sexta.json`
+  - `sexta, ritus, sectio` — `caput`
+  - `sexta, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `sexta, ritus, officium-defunctorum, sectio` — `caput`
+  - `sexta, capitulum` — `caput`
 - `psalterium/suffragia/pro-pace.json`
   - `pro-pace, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `psalterium/tertia.json`
+  - `tertia, ritus, sectio` — `caput`
+  - `tertia, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `tertia, ritus, officium-defunctorum, sectio` — `caput`
+  - `tertia, capitulum` — `caput`
 - `psalterium/vesperae.json`
+  - `vesperae, ritus, sectio` — `caput`
+  - `vesperae, ritus, officium-parvum-bmv, sectio` — `caput`
+  - `vesperae, ritus, officium-defunctorum, sectio` — `caput`
+  - `vesperae, commemorationes` — `caput`
   - `antiphona-magnificat` — `caput`
+  - `vesperae, in-tempore-adventus, temporale, hymnus` — `datum`
+  - `vesperae, in-tempore-quadragesimae, temporale, hymnus` — `datum`
+  - `vesperae, in-tempore-passionis, temporale, hymnus` — `datum`
+  - `vesperae, in-tempore-paschali, temporale, hymnus` — `datum`
+  - `vesperae, capitulum` — `caput`
+- `ritus/benedictio-mensae.json`
+  - `ante-prandium, versus-benedictionis` — `datum`
+  - `post-prandium, versus-benedictionis` — `datum`
+  - `ante-coenam, versus-benedictionis` — `datum`
+  - `per-octavam-epiphaniae, ante-prandium, versus-benedictionis` — `datum`
+  - `pascha, versus-benedictionis` — `datum`
+  - `pentecostes, ante-prandium, versus-benedictionis` — `datum`
+- `ritus/formula-indulgentiam-articulo-mortis.json`
+  - `formula-indulgentiam-articulo-mortis, ritus, sectio` — `caput`
 - `ritus/itinerarium.json`
   - `antiphona, in-viam-pacis` — `datum`
+  - `itinerarium, ritus, sectio` — `caput`
+- `ritus/litaniae-sanctorum.json`
+  - `litaniae-sanctorum, ora` — `datum`
+  - `litaniae-sanctorum, orate` — `datum`
+  - `litaniae-sanctorum, libera` — `datum`
+  - `litaniae-sanctorum, te-rogamus` — `datum`
+  - `litaniae-sanctorum, ritus, sectio` — `caput`
 - `ritus/officium-defunctorum.json`
   - `versiculus, officium-defunctorum` — `caput`
   - `officium-defunctorum, collecta` — `datum`
   - `officium-defunctorum, collecta` — `terminatio`
+- `ritus/officium-parvum-bmv.json`
+  - `capitulum, officium-parvum-bmv` — `caput`
 - `ritus/ordo-commendationis-animae.json`
+  - `ordo-commendationis-animae, ora` — `datum`
+  - `ordo-commendationis-animae, orate` — `datum`
+  - `ordo-commendationis-animae, libera` — `datum`
   - `ordo-commendationis-animae, responsorium` — `incipit`
   - `ordo-commendationis-animae, responsorium` — `responsum-i`
   - `ordo-commendationis-animae, responsorium` — `responsum-ii`
   - `ordo-commendationis-animae, responsorium` — `versus`
+  - `ordo-commendationis-animae, ritus, sectio` — `caput`
+- `ritus/pro-coena.json`
+  - `pro-coena, ritus, sectio` — `caput`
+- `ritus/pro-prandio.json`
+  - `pro-prandio, ritus, sectio` — `caput`
 - `ritus/pro-sanctis.json`
   - `pro-sanctis, commemoratio, collecta` — `datum`
+- `ritus/psalmi-graduales.json`
+  - `psalmi-graduales, ritus, sectio` — `caput`
 - `ritus/psalmi-poenitentiales.json`
   - `antiphona, ne-reminiscaris` — `datum`
+  - `psalmi-poenitentiales, ritus, sectio` — `caput`
 - `votiva/de-immaculata-conceptione.json`
   - `de-immaculata-conceptione, vesperae, versiculus` — `in-tempore-paschali`
 - `votiva/de-passione.json`
   - `de-passione, vesperae, antiphona, antiphona-iii` — `in-tempore-paschali`
+  - `de-passione, vesperae, hymnus` — `datum`
   - `de-passione, i-vesperae, versiculus` — `datum`
   - `de-passione, i-vesperae, versiculus` — `in-tempore-paschali`
   - `de-passione, collecta` — `datum`
+  - `de-passione, terminatio, octo-octo-octo-octo` — `datum`
+  - `de-passione, matutinum, hymnus` — `datum`
+  - `de-passione, matutinum, de-quatuor-temporibus, nocturna-i, lectio` — `lectio-i`
+  - `de-passione, matutinum, de-quatuor-temporibus, nocturna-i, lectio` — `lectio-ii`
+  - `de-passione, matutinum, de-quatuor-temporibus, nocturna-i, lectio` — `lectio-iii`
   - `de-passione, matutinum, nocturna-i, responsorium, responsorium-i` — `incipit`
   - `de-passione, matutinum, nocturna-i, responsorium, responsorium-i` — `responsum`
   - `de-passione, matutinum, nocturna-i, responsorium, responsorium-i` — `versus`
@@ -2324,6 +2484,7 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `de-passione, antiphona, antiphona-iii` — `in-tempore-paschali`
   - `de-passione, antiphona, antiphona-iv` — `datum`
   - `de-passione, antiphona, antiphona-iv` — `in-tempore-paschali`
+  - `de-passione, laudes, hymnus` — `datum`
   - `de-passione, laudes, versiculus` — `datum`
   - `de-passione, laudes, versiculus` — `in-tempore-paschali`
   - `de-passione, prima, responsorium-breve, versus` — `datum`
@@ -2333,6 +2494,7 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `de-passione, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
   - `de-passione, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
   - `de-passione, tertia, responsorium-breve, in-tempore-paschali` — `versus`
+  - `de-passione, sexta, capitulum` — `datum`
   - `de-passione, sexta, responsorium-breve` — `incipit`
   - `de-passione, sexta, responsorium-breve` — `responsum`
   - `de-passione, sexta, responsorium-breve` — `versus`
@@ -2375,233 +2537,145 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `de-sanctis-apostolis, matutinum, nocturna-iii, lectio` — `lectio-ii`
   - `de-sanctis-apostolis, matutinum, nocturna-iii, lectio` — `lectio-iii`
 
-### Not a text type Divinum Officium translates from Bute (181)
+### No English in DO (no English section) (89)
 
-- `commune-sanctorum/tempus-mariae.json`
-  - `tempus-mariae, terminatio, octo-octo-octo-octo` — `datum`
-- `cursus.json`
-  - `cursus, officium-defunctorum` — `datum`
+- `commune-sanctorum/vidua.json`
+  - `vidua, matutinum, hymnus` — `datum`
+- `commune-sanctorum/virgo.json`
+  - `virgo, matutinum, hymnus` — `datum`
 - `formulae.json`
-  - `deus-in-adjutorium, matutinum` — `datum`
-  - `deus-in-adjutorium, matutinum` — `in-tempore-septuagesimae`
-  - `terminatio, deo-patri` — `datum`
-  - `terminatio, praesta-pater` — `datum`
-  - `gloria` — `datum`
-  - `domine-exaudi` — `privata`
-  - `hoc-omissum` — `datum`
-  - `hebdomada-septuagesima, dominica, i-vesperae, vesperae, benedicamus-domino` — `datum`
-  - `psalmi` — `caput`
-  - `collecta-primaria` — `caput`
-  - `preces` — `caput`
-- `officium.json`
-  - `ritus, omissum` — `datum`
-  - `sine-dismissione` — `fidelium-animae`
-  - `sine-dismissione` — `pater-noster-secreta-post-officium`
+  - `hymnus` — `caput`
+- `proprium-de-tempore/hebdomadae-augusti.json`
+  - `liber-ecclesiastici, dies-viii-libri, dominica, i-vesperae, antiphona, antiphona-magnificat` — `datum`
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
-  - `epiphania, festum, domine-labia` — `datum`
-- `proprium-de-tempore/in-festo-epiphaniae/per-octavam-epiphaniae.json`
-  - `per-octavam-epiphaniae, terminatio, octo-octo-octo-octo` — `datum`
+  - `epiphania, i-vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `epiphania, sexta, responsorium-breve` — `incipit`
+  - `epiphania, sexta, responsorium-breve` — `responsum`
+  - `epiphania, sexta, responsorium-breve` — `versus`
+- `proprium-de-tempore/in-tempore-adventus/hebdomada-i-adventus.json`
+  - `hebdomada-i-adventus, dominica, nona, capitulum` — `datum`
+  - `hebdomada-i-adventus, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/in-tempore-adventus/hebdomada-ii-adventus.json`
+  - `hebdomada-ii-adventus, dominica, sexta, capitulum` — `datum`
+- `proprium-de-tempore/in-tempore-adventus/hebdomada-iii-adventus.json`
+  - `hebdomada-iii-adventus, dominica, nona, capitulum` — `datum`
+- `proprium-de-tempore/in-tempore-adventus/hebdomada-iv-adventus.json`
+  - `hebdomada-iv-adventus, feria, feria-iii, laudes, antiphona, antiphona-benedictus` — `datum`
+- `proprium-de-tempore/in-tempore-adventus/in-tempore-adventus.json`
+  - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-iii` — `datum`
+  - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-iv` — `datum`
+  - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-v` — `datum`
 - `proprium-de-tempore/in-tempore-nativitatis/nativitas.json`
-  - `nativitas, matutinum, nocturna-iii, lectio-iii` — `benedictio`
-  - `nativitas, matutinum, nocturna-iii, lectio-iii` — `lectio`
-- `proprium-de-tempore/in-tempore-nativitatis/vigilia-epiphaniae.json`
-  - `vigilia-epiphaniae, prima, preces` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/in-tempore-ascensionis.json`
-  - `in-tempore-ascensionis, terminatio, octo-octo-octo-octo` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/in-tempore-paschali.json`
-  - `in-tempore-paschali, terminatio, octo-octo-octo-octo` — `datum`
+  - `nativitas, sexta, responsorium-breve` — `incipit`
+  - `nativitas, sexta, responsorium-breve` — `responsum`
+  - `nativitas, sexta, responsorium-breve` — `versus`
+  - `nativitas, dominica-infra-octavam, sexta, capitulum` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/hebdomada-i-paschae.json`
+  - `dominica-in-albis, vesperae, versiculus` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/hebdomada-iii-paschae.json`
+  - `hebdomada-iii-paschae, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
 - `proprium-de-tempore/in-tempore-paschali/pascha.json`
-  - `dismissio, pascha, i-vesperae, vesperae` — `datum`
-  - `haec-dies` — `caput`
-  - `pascha, dg-capituli` — `datum`
+  - `pascha, feria-iv, vesperae, antiphona, antiphona-magnificat` — `datum`
 - `proprium-de-tempore/in-tempore-paschali/pentecostes.json`
-  - `pentecostes, terminatio, octo-octo-octo-octo` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/triduum.json`
-  - `triduum, domine-labia` — `datum`
-  - `triduum, matutinum, absolutio` — `datum`
-  - `christus-factus` — `coena-domini`
-  - `christus-factus` — `parasceve`
-  - `christus-factus` — `sabbatum-sanctum`
-  - `triduum, dominus-vobiscum` — `datum`
-  - `triduum, completorium, formula-lectionis` — `datum`
-- `proprium-sanctorum/augustus/transfiguratio.json`
-  - `transfiguratio, terminatio, octo-octo-octo-octo` — `datum`
-- `proprium-sanctorum/december/immaculata-conceptio-bmv.json`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i` — `incipit`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i` — `versus`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-i, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii` — `incipit`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii` — `versus`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-ii, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii` — `incipit`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii` — `versus`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i` — `incipit`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i` — `versus`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-i, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii` — `incipit`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii` — `responsum`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii` — `versus`
-  - `immaculata-conceptio-bmv, matutinum, nocturna-iii, responsorium-ii, in-tempore-paschali` — `responsum`
-- `proprium-sanctorum/december/vigilia-immaculatae-conceptionis-bmv.json`
-  - `vigilia-immaculatae-conceptionis-bmv` — `datum`
-- `proprium-sanctorum/februarius/valentinus.json`
-  - `valentinus, n` — `datum`
-- `proprium-sanctorum/november/gregorius-thaumaturgus.json`
-  - `gregorius-thaumaturgus` — `nomen`
-- `proprium-sanctorum/october/birgitta.json`
-  - `birgitta, n` — `datum`
+  - `pentecostes, vesperae, hymnus` — `datum`
+- `proprium-de-tempore/in-tempore-passionis/hebdomada-passionis.json`
+  - `hebdomada-passionis, feria-v, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/in-tempore-passionis/hebdomada-sancta.json`
+  - `hebdomada-sancta, feria-iv, laudes, antiphona, antiphona-iii` — `datum`
+  - `hebdomada-sancta, feria-iv, laudes, antiphona, antiphona-v` — `datum`
+  - `hebdomada-sancta, feria-iv, laudes, antiphona, antiphona-benedictus` — `datum`
+- `proprium-de-tempore/in-tempore-quadragesimae/hebdomada-i-quadragesimae.json`
+  - `hebdomada-i-quadragesimae, dominica, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
+- `proprium-de-tempore/in-tempore-quadragesimae/hebdomada-iii-quadragesimae.json`
+  - `hebdomada-iii-quadragesimae, dominica, laudes, antiphona` — `antiphona-iii`
+- `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-quinquagesima.json`
+  - `hebdomada-quinquagesima, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-septuagesima.json`
+  - `hebdomada-septuagesima, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `hebdomada-septuagesima, feria-iv, vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `hebdomada-septuagesima, feria-v, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-sexagesima.json`
+  - `hebdomada-sexagesima, feria-ii, vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `hebdomada-sexagesima, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `hebdomada-sexagesima, feria-iv, vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/post-pentecosten/hebdomada-vii-pentecostes.json`
+  - `hebdomada-vii-pentecostes, dominica, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `proprium-de-tempore/post-pentecosten/post-pentecosten.json`
+  - `post-pentecosten, temporale, dominica, nocturna-iii, responsorium, responsorium-i` — `incipit`
+  - `post-pentecosten, temporale, dominica, nocturna-iii, responsorium, responsorium-i` — `responsum`
+  - `post-pentecosten, temporale, dominica, nocturna-iii, responsorium, responsorium-i` — `versus`
+- `proprium-sanctorum/augustus/assumptio-bmv.json`
+  - `assumptio-bmv, dies-iv, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini, include-inauthenticas` — `lectio-ii`
+- `proprium-sanctorum/augustus/bartholomaeus.json`
+  - `bartholomaeus, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-sanctorum/augustus/petrus-ad-vincula.json`
+  - `petrus-ad-vincula, antiphona` — `antiphona-v`
+- `proprium-sanctorum/januarius/canutus.json`
+  - `canutus, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `canutus, matutinum, nocturna-ii, lectio` — `lectio-ii`
+  - `canutus, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-sanctorum/januarius/hilarius.json`
+  - `hilarius, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-sanctorum/januarius/maurus.json`
+  - `maurus, matutinum, lectio` — `datum`
+- `proprium-sanctorum/januarius/nomen-jesu.json`
+  - `nomen-jesu, laudes, versiculus` — `datum`
+  - `nomen-jesu, sexta, responsorium-breve` — `incipit`
+  - `nomen-jesu, sexta, responsorium-breve` — `responsum`
+  - `nomen-jesu, sexta, responsorium-breve` — `versus`
+  - `nomen-jesu, sexta, responsorium-breve, in-tempore-septuagesimae` — `incipit`
+  - `nomen-jesu, sexta, responsorium-breve, in-tempore-septuagesimae` — `responsum`
+  - `nomen-jesu, sexta, responsorium-breve, in-tempore-septuagesimae` — `versus`
+- `proprium-sanctorum/julius/bonaventura.json`
+  - `bonaventura, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `bonaventura, matutinum, nocturna-ii, lectio` — `lectio-ii`
+- `proprium-sanctorum/julius/elisabeth-portugalliae.json`
+  - `elisabeth-portugalliae, matutinum, nocturna-ii, responsorium, responsorium-ii` — `incipit`
+  - `elisabeth-portugalliae, matutinum, nocturna-ii, responsorium, responsorium-ii` — `responsum`
+  - `elisabeth-portugalliae, matutinum, nocturna-ii, responsorium, responsorium-ii` — `versus`
+  - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-ii` — `incipit`
+  - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-ii` — `responsum`
+  - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-ii` — `versus`
+- `proprium-sanctorum/junius/joannes-paulus.json`
+  - `joannes-paulus, antiphona` — `antiphona-i`
+  - `joannes-paulus, antiphona` — `antiphona-ii`
+  - `joannes-paulus, antiphona` — `antiphona-iii`
+  - `joannes-paulus, antiphona` — `antiphona-iv`
+  - `joannes-paulus, antiphona` — `antiphona-v`
+- `proprium-sanctorum/junius/petrus-paulus.json`
+  - `petrus-paulus, duplex-i-classis, antiphona` — `antiphona-v`
+- `proprium-sanctorum/majus/cor-jesus.json`
+  - `cor-jesus, vesperae, hymnus` — `datum`
+  - `cor-jesus, matutinum, hymnus` — `datum`
+- `proprium-sanctorum/majus/joannes-i.json`
+  - `joannes-i, matutinum, lectio` — `datum`
+- `proprium-sanctorum/martius/annuntiatio-bmv.json`
+  - `annuntiatio-bmv, matutinum, nocturna-i, responsorium, responsorium-ii` — `incipit`
+  - `annuntiatio-bmv, matutinum, nocturna-i, responsorium, responsorium-ii` — `responsum`
+  - `annuntiatio-bmv, matutinum, nocturna-i, responsorium, responsorium-ii` — `versus`
+- `proprium-sanctorum/martius/gregorius.json`
+  - `gregorius, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini` — `lectio-i`
+  - `gregorius, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini` — `lectio-ii`
+- `proprium-sanctorum/november/clemens-i.json`
+  - `clemens-i, collecta` — `datum`
+- `proprium-sanctorum/october/teresia.json`
+  - `teresia, vesperae, hymnus` — `datum`
+  - `teresia, matutinum, hymnus` — `datum`
+- `proprium-sanctorum/september/nativitas-bmv.json`
+  - `nativitas-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-ii`
+  - `nativitas-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-iii`
 - `proprium-sanctorum/september/septem-dolores-septembris.json`
   - `septem-dolores-septembris, terminatio, octo-octo-octo-octo` — `datum`
-- `psalterium/absolutiones-benedictiones.json`
-  - `absolutio, annotatio` — `caput`
-- `psalterium/completorium.json`
-  - `completorium, ritus, sectio` — `caput`
-  - `completorium, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `completorium, ritus, officium-defunctorum, sectio` — `caput`
-  - `confiteor, completorium` — `caput`
-  - `nunc-dimittis, triduum` — `caput`
-  - `nunc-dimittis, pascha` — `caput`
-  - `completorium, converte-nos` — `datum`
-  - `completorium, duplex, preces` — `datum`
 - `psalterium/laudes.json`
-  - `laudes, ritus, sectio` — `caput`
-  - `laudes, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `laudes, ritus, officium-defunctorum, sectio` — `caput`
-  - `laudes, commemorationes` — `caput`
+  - `laudes, hymnus, annotatio` — `caput`
+  - `laudes, in-tempore-passionis, temporale, hymnus` — `datum`
 - `psalterium/matutinum.json`
-  - `matutinum, ritus, sectio` — `caput`
-  - `matutinum, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `matutinum, ritus, officium-defunctorum, sectio` — `caput`
-  - `nocturna, nocturna-i, sectio` — `caput`
-  - `nocturna, nocturna-ii, sectio` — `caput`
-  - `nocturna, nocturna-iii, sectio` — `caput`
-  - `nocturna, sectio` — `caput`
-  - `matutinum, invitatorium` — `caput`
-  - `formula-lectionis, lectio-brevis` — `caput`
-  - `formula-lectionis` — `caput`
-  - `formula-lectionis, lectio-ii` — `caput`
-  - `formula-lectionis, lectio-iii` — `caput`
-  - `formula-lectionis, nocturna-ii` — `caput`
-  - `formula-lectionis, nocturna-ii, lectio-ii` — `caput`
-  - `formula-lectionis, nocturna-ii, lectio-iii` — `caput`
-  - `formula-lectionis, nocturna-iii` — `caput`
-  - `formula-lectionis, nocturna-iii, lectio-ii` — `caput`
-  - `formula-lectionis, nocturna-iii, lectio-iii` — `caput`
-- `psalterium/nona.json`
-  - `nona, ritus, sectio` — `caput`
-  - `nona, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `nona, ritus, officium-defunctorum, sectio` — `caput`
-- `psalterium/officium-capituli.json`
-  - `officium-capituli, ritus, sectio` — `caput`
-- `psalterium/prima.json`
-  - `prima, ritus, sectio` — `caput`
-  - `prima, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `prima, ritus, officium-defunctorum, sectio` — `caput`
-  - `prima, duplex, preces` — `datum`
-  - `prima, dismissio` — `datum`
-- `psalterium/sexta.json`
-  - `sexta, ritus, sectio` — `caput`
-  - `sexta, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `sexta, ritus, officium-defunctorum, sectio` — `caput`
-- `psalterium/tertia.json`
-  - `tertia, ritus, sectio` — `caput`
-  - `tertia, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `tertia, ritus, officium-defunctorum, sectio` — `caput`
+  - `matutinum, in-tempore-passionis, temporale, hymnus` — `datum`
+  - `hymnus, te-deum` — `caput`
 - `psalterium/vesperae.json`
-  - `vesperae, ritus, sectio` — `caput`
-  - `vesperae, ritus, officium-parvum-bmv, sectio` — `caput`
-  - `vesperae, ritus, officium-defunctorum, sectio` — `caput`
-  - `vesperae, commemorationes` — `caput`
-- `ritus/benedictio-mensae.json`
-  - `benedictio-mensae, ante-prandium` — `caput`
-  - `benedictio-mensae, post-prandium` — `caput`
-  - `benedictio-mensae, ante-coenam` — `caput`
-  - `benedictio-mensae, post-coenam` — `caput`
-  - `ante-prandium, versus-benedictionis` — `datum`
-  - `post-prandium, versus-benedictionis` — `datum`
-  - `ante-coenam, versus-benedictionis` — `datum`
-  - `post-coenam, versus-benedictionis` — `datum`
-  - `in-tempore-nativitatis, ante-prandium, versus-benedictionis` — `datum`
-  - `in-tempore-nativitatis, post-prandium, versus-benedictionis` — `datum`
-  - `per-octavam-epiphaniae, ante-prandium, versus-benedictionis` — `datum`
-  - `per-octavam-epiphaniae, post-prandium, versus-benedictionis` — `datum`
-  - `pascha, i-vesperae, pro-coena, versus-benedictionis` — `datum`
-  - `pascha, versus-benedictionis` — `datum`
-  - `in-tempore-ascensionis, ante-prandium, versus-benedictionis` — `datum`
-  - `in-tempore-ascensionis, post-prandium, versus-benedictionis` — `datum`
-  - `pentecostes, ante-prandium, versus-benedictionis` — `datum`
-  - `pentecostes, post-prandium, versus-benedictionis` — `datum`
-- `ritus/formula-indulgentiam-articulo-mortis.json`
-  - `formula-indulgentiam-articulo-mortis, ritus, sectio` — `caput`
-- `ritus/itinerarium.json`
-  - `itinerarium, ritus, sectio` — `caput`
-- `ritus/litaniae-sanctorum.json`
-  - `litaniae-sanctorum, ora` — `datum`
-  - `litaniae-sanctorum, orate` — `datum`
-  - `litaniae-sanctorum, libera` — `datum`
-  - `litaniae-sanctorum, te-rogamus` — `datum`
-  - `litaniae-sanctorum, ritus, sectio` — `caput`
-- `ritus/officium-defunctorum.json`
-  - `officium-defunctorum, prex-duplex` — `datum`
-  - `officium-defunctorum, vesperae, deus-in-adjutorium` — `datum`
-  - `officium-defunctorum, vesperae, commemorationes` — `datum`
-  - `officium-defunctorum, dominus-vobiscum, post-collectas` — `datum`
-  - `officium-defunctorum, benedicamus-domino` — `datum`
-  - `officium-defunctorum, fidelium-animae` — `datum`
-  - `officium-defunctorum, pater-noster-secreta-post-officium` — `datum`
-  - `officium-defunctorum, matutinum, prex-triplex` — `datum`
-  - `officium-defunctorum, matutinum, absolutio` — `datum`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-i` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-i` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-i` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-ii` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-ii` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-ii` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-iii` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-iii` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-i, responsorium-iii` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-i` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-i` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-i` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-ii` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-ii` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-ii` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-iii` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-iii` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-ii, responsorium-iii` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-i` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-i` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-i` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-ii` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-ii` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-ii` — `versus`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-iii` — `incipit`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-iii` — `responsum`
-  - `officium-defunctorum, matutinum, nocturna-iii, responsorium-iii` — `versus`
-- `ritus/officium-parvum-bmv.json`
-  - `officium-parvum-bmv, completorium, formula, formula-lectionis` — `datum`
-- `ritus/ordo-commendationis-animae.json`
-  - `ordo-commendationis-animae, ora` — `datum`
-  - `ordo-commendationis-animae, orate` — `datum`
-  - `ordo-commendationis-animae, libera` — `datum`
-  - `ordo-commendationis-animae, ritus, sectio` — `caput`
-- `ritus/pro-coena.json`
-  - `pro-coena, ritus, sectio` — `caput`
-- `ritus/pro-prandio.json`
-  - `pro-prandio, ritus, sectio` — `caput`
-- `ritus/psalmi-graduales.json`
-  - `psalmi-graduales, ritus, sectio` — `caput`
-- `ritus/psalmi-poenitentiales.json`
-  - `psalmi-poenitentiales, ritus, sectio` — `caput`
-- `votiva/de-passione.json`
-  - `de-passione, terminatio, octo-octo-octo-octo` — `datum`
+  - `vesperae, hymnus, annotatio` — `caput`
 
-### Divinum Officium's English is a commune text with an N. placeholder where the Latin names the saint (81)
+### DO's English is a commune text with an N. placeholder where the Latin names the saint (81)
 
 - `proprium-de-tempore/in-tempore-nativitatis/silvestrus-i.json`
   - `silvestrus-i, collecta` — `datum`
@@ -2764,113 +2838,104 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
 - `proprium-sanctorum/september/vigilia-matthaei.json`
   - `vigilia-matthaei, collecta` — `datum`
 
-### No English in Divinum Officium (no English section) (70)
+### DO's English contains unresolved markup (72)
 
-- `proprium-de-tempore/hebdomadae-augusti.json`
-  - `liber-ecclesiastici, dies-viii-libri, dominica, i-vesperae, antiphona, antiphona-magnificat` — `datum`
+- `formulae.json`
+  - `domine-exaudi` — `privata`
+  - `hoc-omissum` — `datum`
+- `officium.json`
+  - `ritus, prima, antiphona-bmv, privata` — `datum`
+  - `ritus, omissum` — `datum`
+  - `sine-dismissione` — `fidelium-animae`
+  - `sine-dismissione` — `pater-noster-secreta-post-officium`
+- `proprium-de-tempore/hebdomadae-septembris.json`
+  - `liber-tobiae, incipit-libri, matutinum, nocturna-ii, lectio, lectio-i` — `datum`
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
-  - `epiphania, i-vesperae, antiphona, antiphona-magnificat` — `datum`
-  - `epiphania, sexta, responsorium-breve` — `incipit`
-  - `epiphania, sexta, responsorium-breve` — `responsum`
-  - `epiphania, sexta, responsorium-breve` — `versus`
-- `proprium-de-tempore/in-tempore-adventus/hebdomada-i-adventus.json`
-  - `hebdomada-i-adventus, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/in-tempore-adventus/hebdomada-iv-adventus.json`
-  - `hebdomada-iv-adventus, feria, feria-iii, laudes, antiphona, antiphona-benedictus` — `datum`
-- `proprium-de-tempore/in-tempore-adventus/in-tempore-adventus.json`
-  - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-iii` — `datum`
-  - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-iv` — `datum`
-  - `in-tempore-adventus, feriae-vi, laudes, antiphona, antiphona-v` — `datum`
-- `proprium-de-tempore/in-tempore-nativitatis/nativitas.json`
-  - `nativitas, sexta, responsorium-breve` — `incipit`
-  - `nativitas, sexta, responsorium-breve` — `responsum`
-  - `nativitas, sexta, responsorium-breve` — `versus`
-- `proprium-de-tempore/in-tempore-paschali/hebdomada-i-paschae.json`
-  - `dominica-in-albis, vesperae, versiculus` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/hebdomada-iii-paschae.json`
-  - `hebdomada-iii-paschae, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
+  - `epiphania, festum, domine-labia` — `datum`
+- `proprium-de-tempore/in-tempore-nativitatis/vigilia-epiphaniae.json`
+  - `vigilia-epiphaniae, prima, preces` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/hebdomada-v-paschae.json`
+  - `hebdomada-v-paschae, dominica, matutinum, nocturna-ii, lectio` — `lectio-iii`
 - `proprium-de-tempore/in-tempore-paschali/pascha.json`
-  - `pascha, feria-iv, vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/hebdomada-passionis.json`
-  - `hebdomada-passionis, feria-v, vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/in-tempore-passionis/hebdomada-sancta.json`
-  - `hebdomada-sancta, feria-iv, laudes, antiphona, antiphona-iii` — `datum`
-  - `hebdomada-sancta, feria-iv, laudes, antiphona, antiphona-v` — `datum`
-  - `hebdomada-sancta, feria-iv, laudes, antiphona, antiphona-benedictus` — `datum`
-- `proprium-de-tempore/in-tempore-quadragesimae/hebdomada-iii-quadragesimae.json`
-  - `hebdomada-iii-quadragesimae, dominica, laudes, antiphona` — `antiphona-iii`
-- `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-quinquagesima.json`
-  - `hebdomada-quinquagesima, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-septuagesima.json`
-  - `hebdomada-septuagesima, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
-  - `hebdomada-septuagesima, feria-iv, vesperae, antiphona, antiphona-magnificat` — `datum`
-  - `hebdomada-septuagesima, feria-v, vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-sexagesima.json`
-  - `hebdomada-sexagesima, feria-ii, vesperae, antiphona, antiphona-magnificat` — `datum`
-  - `hebdomada-sexagesima, feria-iii, vesperae, antiphona, antiphona-magnificat` — `datum`
-  - `hebdomada-sexagesima, feria-iv, vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/post-pentecosten/hebdomada-vii-pentecostes.json`
-  - `hebdomada-vii-pentecostes, dominica, ii-vesperae, antiphona, antiphona-magnificat` — `datum`
-- `proprium-de-tempore/post-pentecosten/post-pentecosten.json`
-  - `post-pentecosten, temporale, dominica, nocturna-iii, responsorium, responsorium-i` — `incipit`
-  - `post-pentecosten, temporale, dominica, nocturna-iii, responsorium, responsorium-i` — `responsum`
-  - `post-pentecosten, temporale, dominica, nocturna-iii, responsorium, responsorium-i` — `versus`
-- `proprium-sanctorum/augustus/assumptio-bmv.json`
-  - `assumptio-bmv, dies-iv, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini, include-inauthenticas` — `lectio-ii`
-- `proprium-sanctorum/augustus/bartholomaeus.json`
-  - `bartholomaeus, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `proprium-sanctorum/augustus/petrus-ad-vincula.json`
-  - `petrus-ad-vincula, antiphona` — `antiphona-v`
-- `proprium-sanctorum/januarius/canutus.json`
-  - `canutus, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `canutus, matutinum, nocturna-ii, lectio` — `lectio-ii`
-  - `canutus, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `proprium-sanctorum/januarius/hilarius.json`
-  - `hilarius, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `proprium-sanctorum/januarius/maurus.json`
-  - `maurus, matutinum, lectio` — `datum`
-- `proprium-sanctorum/januarius/nomen-jesu.json`
-  - `nomen-jesu, laudes, versiculus` — `datum`
-  - `nomen-jesu, sexta, responsorium-breve` — `incipit`
-  - `nomen-jesu, sexta, responsorium-breve` — `responsum`
-  - `nomen-jesu, sexta, responsorium-breve` — `versus`
-  - `nomen-jesu, sexta, responsorium-breve, in-tempore-septuagesimae` — `incipit`
-  - `nomen-jesu, sexta, responsorium-breve, in-tempore-septuagesimae` — `responsum`
-  - `nomen-jesu, sexta, responsorium-breve, in-tempore-septuagesimae` — `versus`
-- `proprium-sanctorum/julius/bonaventura.json`
-  - `bonaventura, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `bonaventura, matutinum, nocturna-ii, lectio` — `lectio-ii`
-- `proprium-sanctorum/julius/elisabeth-portugalliae.json`
-  - `elisabeth-portugalliae, matutinum, nocturna-ii, responsorium, responsorium-ii` — `incipit`
-  - `elisabeth-portugalliae, matutinum, nocturna-ii, responsorium, responsorium-ii` — `responsum`
-  - `elisabeth-portugalliae, matutinum, nocturna-ii, responsorium, responsorium-ii` — `versus`
-  - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-ii` — `incipit`
-  - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-ii` — `responsum`
-  - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-ii` — `versus`
-- `proprium-sanctorum/junius/joannes-paulus.json`
-  - `joannes-paulus, antiphona` — `antiphona-i`
-  - `joannes-paulus, antiphona` — `antiphona-ii`
-  - `joannes-paulus, antiphona` — `antiphona-iii`
-  - `joannes-paulus, antiphona` — `antiphona-iv`
-  - `joannes-paulus, antiphona` — `antiphona-v`
-- `proprium-sanctorum/junius/petrus-paulus.json`
-  - `petrus-paulus, duplex-i-classis, antiphona` — `antiphona-v`
-- `proprium-sanctorum/majus/joannes-i.json`
-  - `joannes-i, matutinum, lectio` — `datum`
-- `proprium-sanctorum/martius/annuntiatio-bmv.json`
-  - `annuntiatio-bmv, matutinum, nocturna-i, responsorium, responsorium-ii` — `incipit`
-  - `annuntiatio-bmv, matutinum, nocturna-i, responsorium, responsorium-ii` — `responsum`
-  - `annuntiatio-bmv, matutinum, nocturna-i, responsorium, responsorium-ii` — `versus`
-- `proprium-sanctorum/martius/gregorius.json`
-  - `gregorius, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini` — `lectio-i`
-  - `gregorius, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini` — `lectio-ii`
-- `proprium-sanctorum/november/clemens-i.json`
-  - `clemens-i, collecta` — `datum`
-- `proprium-sanctorum/september/nativitas-bmv.json`
-  - `nativitas-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-ii`
-  - `nativitas-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-iii`
+  - `pascha, i-vesperae, completorium, antiphona` — `datum`
+  - `pascha, dg-capituli` — `datum`
+  - `pascha, hymnus, matutinum` — `datum`
+  - `pascha, laudes, versiculus` — `datum`
+  - `pascha, antiphona, prima` — `datum`
+  - `pascha, responsorium-breve, prima` — `datum`
+  - `pascha, completorium, antiphona` — `intonata`
+  - `pascha, completorium, antiphona` — `antiphona-nunc-dimittis`
+- `proprium-de-tempore/in-tempore-paschali/pentecostes.json`
+  - `pentecostes, feria-ii, matutinum, lectio, lectio-iii` — `datum`
+  - `pentecostes, feria-iv, matutinum, lectio, lectio-iii` — `datum`
+  - `pentecostes, feria-vi, matutinum, responsorium, responsorium-ii` — `versus`
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `triduum, domine-labia` — `datum`
+  - `triduum, matutinum, absolutio` — `datum`
+  - `triduum, capitulum` — `datum`
+  - `triduum, dominus-vobiscum` — `datum`
+  - `triduum, hymnus` — `prima`
+  - `triduum, hymnus` — `tertia`
+  - `triduum, hymnus` — `sexta`
+  - `triduum, hymnus` — `nona`
+  - `triduum, hymnus` — `completorium`
+  - `triduum, vesperae, versiculus` — `datum`
+  - `triduum, completorium, formula-lectionis` — `datum`
+- `proprium-de-tempore/post-pentecosten/corpus-christi.json`
+  - `corpus-christi, matutinum, nocturna-i, responsorium, responsorium-iii` — `responsum`
+  - `corpus-christi, matutinum, nocturna-i, responsorium, responsorium-iii, in-tempore-paschali` — `responsum`
+  - `corpus-christi, matutinum, nocturna-ii, antiphona, antiphona-iii` — `datum`
+  - `corpus-christi, duplex-i-classis, matutinum, nocturna-ii, lectio, lectio-ii` — `datum`
+  - `corpus-christi, duplex-i-classis, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
+  - `corpus-christi, antiphona, antiphona-iv` — `datum`
+  - `corpus-christi, antiphona, antiphona-iv` — `votiva-extra-tempore-paschali`
+  - `corpus-christi, dies-ii, matutinum, nocturna-ii, lectio` — `lectio-ii`
+  - `corpus-christi, dies-ii, matutinum, nocturna-iii, lectio` — `lectio-i`
+  - `corpus-christi, dies-iii, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `corpus-christi, dies-vii, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `corpus-christi, dies-octava, matutinum, nocturna-iii, lectio` — `lectio-i`
+- `proprium-de-tempore/post-pentecosten/hebdomada-xi-pentecostes.json`
+  - `hebdomada-xi-pentecostes, dominica, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `hebdomada-xi-pentecostes, dominica, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-de-tempore/post-pentecosten/trinitas.json`
+  - `trinitas, matutinum, nocturna-ii, lectio, lectio-i` — `datum`
+- `proprium-sanctorum/aprilis/fidelis.json`
+  - `fidelis, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `proprium-sanctorum/aprilis/justinus.json`
+  - `justinus, matutinum, nocturna-iii, lectio` — `lectio-i`
+- `proprium-sanctorum/julius/pretiosissimus-sanguis.json`
+  - `pretiosissimus-sanguis, matutinum, nocturna-i, responsorium, responsorium-iii` — `versus`
+- `proprium-sanctorum/junius/paulinus.json`
+  - `paulinus, matutinum, lectio` — `lectio-i`
+- `proprium-sanctorum/martius/cyrillus-hierosolymitani.json`
+  - `cyrillus-hierosolymitani, matutinum, nocturna-iii, lectio` — `lectio-iii`
+- `psalterium/completorium.json`
+  - `completorium, duplex, preces` — `datum`
+- `psalterium/prima.json`
+  - `prima, duplex, preces` — `datum`
+  - `prima, dismissio` — `datum`
+- `ritus/benedictio-mensae.json`
+  - `benedictio-mensae, ante-prandium` — `caput`
+  - `benedictio-mensae, post-prandium` — `caput`
+  - `benedictio-mensae, ante-coenam` — `caput`
+  - `benedictio-mensae, post-coenam` — `caput`
+- `ritus/officium-defunctorum.json`
+  - `officium-defunctorum, prex-duplex` — `datum`
+  - `officium-defunctorum, vesperae, deus-in-adjutorium` — `datum`
+  - `officium-defunctorum, capitulum` — `datum`
+  - `officium-defunctorum, vesperae, commemorationes` — `datum`
+  - `officium-defunctorum, fidelium-animae` — `datum`
+  - `officium-defunctorum, pater-noster-secreta-post-officium` — `datum`
+  - `officium-defunctorum, matutinum, prex-triplex` — `datum`
+  - `officium-defunctorum, matutinum, absolutio` — `datum`
+- `ritus/officium-parvum-bmv.json`
+  - `officium-parvum-bmv, completorium, formula, formula-lectionis` — `datum`
+  - `officium-parvum-bmv, prima, responsorium-breve, formula` — `datum`
+  - `officium-parvum-bmv, tertia, responsorium-breve, formula` — `datum`
+  - `officium-parvum-bmv, sexta, responsorium-breve, formula` — `datum`
+  - `officium-parvum-bmv, nona, responsorium-breve, formula` — `datum`
 
-### The Latin entry has its own formula, which the English entry would need too (62)
+### The Latin entry has its own formula, which the English entry would need too (65)
 
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
   - `epiphania, matutinum, nocturna-iii, responsorium, responsorium-ii` — `responsum-i`
@@ -2917,6 +2982,10 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `decollatio-joannis-baptistae, matutinum, nocturna-i, responsorium, responsorium-iii` — `responsum-i`
   - `decollatio-joannis-baptistae, matutinum, nocturna-i, responsorium, responsorium-iii` — `responsum-ii`
   - `decollatio-joannis-baptistae, matutinum, nocturna-i, responsorium, responsorium-iii` — `versus`
+- `proprium-sanctorum/december/immaculata-conceptio-bmv.json`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii` — `incipit`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii` — `responsum`
+  - `immaculata-conceptio-bmv, matutinum, nocturna-ii, responsorium-iii` — `versus`
 - `proprium-sanctorum/februarius/purificatio-bmv.json`
   - `purificatio-bmv, matutinum, nocturna-ii, responsorium, responsorium-iii` — `incipit`
   - `purificatio-bmv, matutinum, nocturna-ii, responsorium, responsorium-iii` — `responsum`
@@ -2950,132 +3019,46 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `fideles-defuncti, officium-defunctorum, matutinum, nocturna-iii, responsorium-iii, responsorium` — `versus-i`
   - `fideles-defuncti, officium-defunctorum, matutinum, nocturna-iii, responsorium-iii, responsorium` — `versus-ii`
 
-### No English in Divinum Officium (Divinum Officium divides the responsory differently (incipit, responsum); Divinum Officium's responsory is not laid out as R. * V.; no English section) (39)
+### DO English has 1 parts, the Latin 2 (21)
 
-- `proprium-sanctorum/augustus/transfiguratio.json`
-  - `transfiguratio, sexta, responsorium-breve` — `incipit`
-  - `transfiguratio, sexta, responsorium-breve` — `responsum`
-  - `transfiguratio, sexta, responsorium-breve` — `versus`
-  - `transfiguratio, nona, responsorium-breve` — `incipit`
-  - `transfiguratio, nona, responsorium-breve` — `responsum`
-  - `transfiguratio, nona, responsorium-breve` — `versus`
+- `proprium-de-tempore/in-tempore-adventus/vigilia-nativitatis.json`
+  - `vigilia-nativitatis, matutinum, versiculus` — `datum`
+- `proprium-sanctorum/aprilis/patrocinius-joseph.json`
+  - `patrocinius-joseph, matutinum, nocturna-i, versiculus` — `datum`
+  - `patrocinius-joseph, laudes, versiculus` — `datum`
+- `proprium-sanctorum/augustus/assumptio-bmv.json`
+  - `assumptio-bmv, dies-v, matutinum, nocturna-i, lectio` — `lectio-i`
+- `proprium-sanctorum/augustus/laurentius.json`
+  - `laurentius, dies-iv, matutinum, nocturna-ii, lectio` — `lectio-i`
 - `proprium-sanctorum/december/immaculata-conceptio-bmv.json`
-  - `immaculata-conceptio-bmv, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `immaculata-conceptio-bmv, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, tertia, responsorium-breve, in-tempore-paschali` — `versus`
-  - `immaculata-conceptio-bmv, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `immaculata-conceptio-bmv, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, sexta, responsorium-breve, in-tempore-paschali` — `versus`
-  - `immaculata-conceptio-bmv, nona, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `immaculata-conceptio-bmv, nona, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `immaculata-conceptio-bmv, nona, responsorium-breve, in-tempore-paschali` — `versus`
-- `proprium-sanctorum/majus/apparitio-michaelis.json`
-  - `apparitio-michaelis, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `apparitio-michaelis, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `apparitio-michaelis, tertia, responsorium-breve, in-tempore-paschali` — `versus`
-  - `apparitio-michaelis, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `apparitio-michaelis, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `apparitio-michaelis, sexta, responsorium-breve, in-tempore-paschali` — `versus`
-  - `apparitio-michaelis, nona, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `apparitio-michaelis, nona, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `apparitio-michaelis, nona, responsorium-breve, in-tempore-paschali` — `versus`
-- `proprium-sanctorum/majus/inventio-crucis.json`
-  - `inventio-crucis, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `inventio-crucis, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `inventio-crucis, tertia, responsorium-breve, in-tempore-paschali` — `versus`
-  - `inventio-crucis, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `inventio-crucis, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `inventio-crucis, sexta, responsorium-breve, in-tempore-paschali` — `versus`
-  - `inventio-crucis, nona, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `inventio-crucis, nona, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `inventio-crucis, nona, responsorium-breve, in-tempore-paschali` — `versus`
-- `proprium-sanctorum/martius/joseph-sponsus.json`
-  - `joseph-sponsus, tertia, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `joseph-sponsus, tertia, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `joseph-sponsus, tertia, responsorium-breve, in-tempore-paschali` — `versus`
-  - `joseph-sponsus, sexta, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `joseph-sponsus, sexta, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `joseph-sponsus, sexta, responsorium-breve, in-tempore-paschali` — `versus`
-
-### Divinum Officium's English contains unresolved markup (26)
-
-- `proprium-de-tempore/hebdomadae-septembris.json`
-  - `liber-tobiae, incipit-libri, matutinum, nocturna-ii, lectio, lectio-i` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/hebdomada-v-paschae.json`
-  - `hebdomada-v-paschae, dominica, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `proprium-de-tempore/in-tempore-paschali/pascha.json`
-  - `pascha, laudes, versiculus` — `datum`
-- `proprium-de-tempore/in-tempore-paschali/pentecostes.json`
-  - `pentecostes, feria-ii, matutinum, lectio, lectio-iii` — `datum`
-  - `pentecostes, feria-iv, matutinum, lectio, lectio-iii` — `datum`
-  - `pentecostes, feria-vi, matutinum, responsorium, responsorium-ii` — `versus`
-- `proprium-de-tempore/in-tempore-passionis/triduum.json`
-  - `triduum, vesperae, versiculus` — `datum`
-- `proprium-de-tempore/post-pentecosten/corpus-christi.json`
-  - `corpus-christi, matutinum, nocturna-i, responsorium, responsorium-iii` — `responsum`
-  - `corpus-christi, matutinum, nocturna-i, responsorium, responsorium-iii, in-tempore-paschali` — `responsum`
-  - `corpus-christi, matutinum, nocturna-ii, antiphona, antiphona-iii` — `datum`
-  - `corpus-christi, duplex-i-classis, matutinum, nocturna-ii, lectio, lectio-ii` — `datum`
-  - `corpus-christi, duplex-i-classis, matutinum, nocturna-iii, lectio, lectio-iii` — `datum`
-  - `corpus-christi, antiphona, antiphona-iv` — `datum`
-  - `corpus-christi, antiphona, antiphona-iv` — `votiva-extra-tempore-paschali`
-  - `corpus-christi, dies-ii, matutinum, nocturna-ii, lectio` — `lectio-ii`
-  - `corpus-christi, dies-ii, matutinum, nocturna-iii, lectio` — `lectio-i`
-  - `corpus-christi, dies-iii, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `corpus-christi, dies-vii, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `corpus-christi, dies-octava, matutinum, nocturna-iii, lectio` — `lectio-i`
-- `proprium-de-tempore/post-pentecosten/hebdomada-iii-pentecostes.json`
-  - `hebdomada-iii-pentecostes, dominica, matutinum, nocturna-ii, lectio` — `lectio-i`
-- `proprium-de-tempore/post-pentecosten/hebdomada-xi-pentecostes.json`
-  - `hebdomada-xi-pentecostes, dominica, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `hebdomada-xi-pentecostes, dominica, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `proprium-de-tempore/post-pentecosten/trinitas.json`
-  - `trinitas, matutinum, nocturna-ii, lectio, lectio-i` — `datum`
-- `proprium-sanctorum/aprilis/justinus.json`
-  - `justinus, matutinum, nocturna-iii, lectio` — `lectio-i`
+  - `immaculata-conceptio-bmv, dies-ii, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `immaculata-conceptio-bmv, dies-iii, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `immaculata-conceptio-bmv, dies-v, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `immaculata-conceptio-bmv, dies-vii, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
+  - `immaculata-conceptio-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-i`
+- `proprium-sanctorum/februarius/ignatius.json`
+  - `ignatius, matutinum, nocturna-ii, lectio` — `lectio-i`
+- `proprium-sanctorum/januarius/nomen-jesu.json`
+  - `nomen-jesu, matutinum, nocturna-iii, versiculus` — `datum`
+  - `nomen-jesu, sexta, versiculus` — `in-tempore-septuagesimae`
 - `proprium-sanctorum/julius/pretiosissimus-sanguis.json`
-  - `pretiosissimus-sanguis, matutinum, nocturna-i, responsorium, responsorium-iii` — `versus`
-- `proprium-sanctorum/martius/cyrillus-hierosolymitani.json`
-  - `cyrillus-hierosolymitani, matutinum, nocturna-iii, lectio` — `lectio-iii`
+  - `pretiosissimus-sanguis, matutinum, nocturna-iii, versiculus` — `datum`
+- `proprium-sanctorum/majus/cor-jesus.json`
+  - `cor-jesus, matutinum, nocturna-iii, lectio` — `lectio-iii`
+- `proprium-sanctorum/majus/inventio-crucis.json`
+  - `inventio-crucis, matutinum, nocturna-ii, versiculus` — `in-tempore-paschali`
+- `proprium-sanctorum/martius/annuntiatio-bmv.json`
+  - `annuntiatio-bmv, vesperae, versiculus` — `datum`
+- `proprium-sanctorum/september/cornelius-cyprianus.json`
+  - `cornelius-cyprianus, matutinum, nocturna-ii, lectio` — `lectio-iii`
+- `ritus/benedictio-mensae.json`
+  - `pascha, i-vesperae, pro-coena, versus-benedictionis` — `datum`
+- `ritus/officium-defunctorum.json`
+  - `officium-defunctorum, dominus-vobiscum, post-collectas` — `datum`
+- `votiva/de-passione.json`
+  - `de-passione, matutinum, nocturna-ii, versiculus` — `datum`
 
-### Divinum Officium's English has unbalanced brackets or quotes (21)
-
-- `commune-sanctorum/bmv-sabbatum.json`
-  - `bmv-sabbatum, matutinum, lectio, lectio-iii` — `aprilis`
-- `proprium-de-tempore/in-tempore-paschali/ascensio.json`
-  - `ascensio, duplex-i-classis, matutinum, nocturna-iii, lectio` — `lectio-ii`
-  - `ascensio, dies-ii, matutinum, nocturna-ii, lectio` — `lectio-iii`
-  - `ascensio, dominica-infra-octavam, matutinum, nocturna-iii, lectio` — `lectio-ii`
-  - `ascensio, dies-octava, matutinum, nocturna-iii, lectio` — `lectio-ii`
-- `proprium-de-tempore/in-tempore-paschali/vigilia-pentecostes.json`
-  - `vigilia-pentecostes, matutinum, nocturna-iii, lectio` — `lectio-ii`
-- `proprium-de-tempore/in-tempore-septuagesimae/cinerum.json`
-  - `cinerum, feria-v, matutinum, lectio, lectio-i` — `datum`
-  - `cinerum, feria-vi, matutinum, lectio, lectio-i` — `datum`
-- `proprium-de-tempore/post-pentecosten/corpus-christi.json`
-  - `corpus-christi, dies-ii, matutinum, nocturna-iii, lectio` — `lectio-iii`
-  - `corpus-christi, dies-vi, matutinum, nocturna-iii, lectio` — `lectio-iii`
-  - `corpus-christi, dies-vii, matutinum, nocturna-iii, lectio` — `lectio-ii`
-  - `corpus-christi, dies-octava, matutinum, nocturna-iii, lectio` — `lectio-ii`
-- `proprium-sanctorum/aprilis/fidelis.json`
-  - `fidelis, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `proprium-sanctorum/julius/joannes-gualbertus.json`
-  - `joannes-gualbertus, matutinum, nocturna-iii, lectio` — `lectio-i`
-- `proprium-sanctorum/junius/nativitas-joannis-baptistae.json`
-  - `nativitas-joannis-baptistae, dies-iv, matutinum, nocturna-ii, lectio` — `lectio-i`
-- `proprium-sanctorum/junius/paulinus.json`
-  - `paulinus, matutinum, lectio` — `lectio-i`
-- `proprium-sanctorum/martius/septem-dolores-passione.json`
-  - `septem-dolores-passione, matutinum, nocturna-ii, versiculus` — `datum`
-  - `septem-dolores-passione, tertia, versiculus` — `datum`
-- `proprium-sanctorum/october/franciscus.json`
-  - `franciscus, matutinum, nocturna-ii, lectio` — `lectio-ii`
-- `proprium-sanctorum/september/januarius-et-soc.json`
-  - `januarius-et-soc, matutinum, nocturna-iii, lectio` — `lectio-iii`
-- `proprium-sanctorum/september/nomen-bmv.json`
-  - `nomen-bmv, matutinum, nocturna-ii, lectio` — `lectio-iii`
-
-### No English in Divinum Officium (Divinum Officium's responsory is not laid out as R. * V.; no English section) (18)
+### No English in DO (DO responsory is not laid out as R. * V.; no English section) (18)
 
 - `proprium-sanctorum/augustus/transfiguratio.json`
   - `transfiguratio, tertia, responsorium-breve` — `incipit`
@@ -3100,39 +3083,7 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `nativitas-joannis-baptistae, nona, responsorium-breve` — `responsum`
   - `nativitas-joannis-baptistae, nona, responsorium-breve` — `versus`
 
-### Divinum Officium's English has 1 parts, the Latin 2 (17)
-
-- `proprium-de-tempore/in-tempore-adventus/vigilia-nativitatis.json`
-  - `vigilia-nativitatis, matutinum, versiculus` — `datum`
-- `proprium-sanctorum/aprilis/patrocinius-joseph.json`
-  - `patrocinius-joseph, laudes, versiculus` — `datum`
-- `proprium-sanctorum/augustus/laurentius.json`
-  - `laurentius, dies-iv, matutinum, nocturna-ii, lectio` — `lectio-i`
-- `proprium-sanctorum/december/immaculata-conceptio-bmv.json`
-  - `immaculata-conceptio-bmv, dies-ii, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `immaculata-conceptio-bmv, dies-iii, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `immaculata-conceptio-bmv, dies-v, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `immaculata-conceptio-bmv, dies-vii, infra-octavam, matutinum, nocturna-ii, lectio` — `lectio-i`
-  - `immaculata-conceptio-bmv, dies-octava, matutinum, nocturna-ii, lectio` — `lectio-i`
-- `proprium-sanctorum/februarius/ignatius.json`
-  - `ignatius, matutinum, nocturna-ii, lectio` — `lectio-i`
-- `proprium-sanctorum/januarius/nomen-jesu.json`
-  - `nomen-jesu, matutinum, nocturna-iii, versiculus` — `datum`
-  - `nomen-jesu, sexta, versiculus` — `in-tempore-septuagesimae`
-- `proprium-sanctorum/julius/pretiosissimus-sanguis.json`
-  - `pretiosissimus-sanguis, matutinum, nocturna-iii, versiculus` — `datum`
-- `proprium-sanctorum/majus/cor-jesus.json`
-  - `cor-jesus, matutinum, nocturna-iii, lectio` — `lectio-iii`
-- `proprium-sanctorum/majus/inventio-crucis.json`
-  - `inventio-crucis, matutinum, nocturna-ii, versiculus` — `in-tempore-paschali`
-- `proprium-sanctorum/martius/annuntiatio-bmv.json`
-  - `annuntiatio-bmv, vesperae, versiculus` — `datum`
-- `proprium-sanctorum/september/cornelius-cyprianus.json`
-  - `cornelius-cyprianus, matutinum, nocturna-ii, lectio` — `lectio-iii`
-- `votiva/de-passione.json`
-  - `de-passione, matutinum, nocturna-ii, versiculus` — `datum`
-
-### No English in Divinum Officium (Divinum Officium divides the responsory differently (responsum)) (15)
+### No English in DO (DO divides the responsory differently (responsum)) (15)
 
 - `proprium-sanctorum/julius/elisabeth-portugalliae.json`
   - `elisabeth-portugalliae, matutinum, nocturna-iii, responsorium, responsorium-i` — `incipit`
@@ -3153,7 +3104,7 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `inventio-crucis, matutinum, nocturna-ii, responsorium, responsorium-iii` — `responsum`
   - `inventio-crucis, matutinum, nocturna-ii, responsorium, responsorium-iii` — `versus`
 
-### No English in Divinum Officium (Divinum Officium's responsory is not laid out as R. * V.) (12)
+### No English in DO (DO responsory is not laid out as R. * V.) (12)
 
 - `proprium-sanctorum/julius/pretiosissimus-sanguis.json`
   - `pretiosissimus-sanguis, tertia, responsorium-breve` — `incipit`
@@ -3170,12 +3121,14 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `cor-jesus, nona, responsorium-breve` — `responsum`
   - `cor-jesus, nona, responsorium-breve` — `versus`
 
-### No English in Divinum Officium (English and Latin line counts differ) (8)
+### No English in DO (English and Latin line counts differ) (9)
 
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
   - `epiphania, matutinum, nocturna-iii, responsorium, responsorium-ii` — `incipit`
   - `epiphania, matutinum, nocturna-iii, responsorium, responsorium-ii` — `responsum-ii`
   - `epiphania, matutinum, nocturna-iii, responsorium, responsorium-ii` — `versus`
+- `proprium-de-tempore/in-tempore-nativitatis/nativitas.json`
+  - `nativitas, matutinum, nocturna-iii, lectio-iii` — `benedictio`
 - `proprium-de-tempore/in-tempore-septuagesimae/hebdomada-quinquagesima.json`
   - `hebdomada-quinquagesima, dominica, matutinum, nocturna-iii, responsorium, responsorium-iii` — `incipit`
   - `hebdomada-quinquagesima, dominica, matutinum, nocturna-iii, responsorium, responsorium-iii` — `responsum-i`
@@ -3183,6 +3136,21 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `hebdomada-quinquagesima, dominica, matutinum, nocturna-iii, responsorium, responsorium-iii` — `versus`
 - `proprium-sanctorum/julius/pretiosissimus-sanguis.json`
   - `pretiosissimus-sanguis, matutinum, nocturna-ii, lectio` — `lectio-iii`
+
+### DO English has 5 parts, the Latin 2 (6)
+
+- `commune-sanctorum/tempus-mariae.json`
+  - `tempus-mariae, terminatio, octo-octo-octo-octo` — `datum`
+- `proprium-de-tempore/in-festo-epiphaniae/per-octavam-epiphaniae.json`
+  - `per-octavam-epiphaniae, terminatio, octo-octo-octo-octo` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/in-tempore-ascensionis.json`
+  - `in-tempore-ascensionis, terminatio, octo-octo-octo-octo` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/in-tempore-paschali.json`
+  - `in-tempore-paschali, terminatio, octo-octo-octo-octo` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/pentecostes.json`
+  - `pentecostes, terminatio, octo-octo-octo-octo` — `datum`
+- `proprium-sanctorum/augustus/transfiguratio.json`
+  - `transfiguratio, terminatio, octo-octo-octo-octo` — `datum`
 
 ### Another part of this responsory could not be imported (6)
 
@@ -3196,68 +3164,118 @@ Divinum Officium has no English for these, its Latin differs from this book's, o
   - `pretiosissimus-sanguis, matutinum, nocturna-i, responsorium, responsorium-iii` — `incipit`
   - `pretiosissimus-sanguis, matutinum, nocturna-i, responsorium, responsorium-iii` — `responsum`
 
-### No English in Divinum Officium (Divinum Officium divides the responsory differently (responsum, versus); Divinum Officium's responsory is not laid out as R. * V.; missing file English/Tempora/Epi1-0b; no English section) (3)
+### DO English has 3 parts, the Latin 2 (4)
+
+- `proprium-de-tempore/hebdomadae-octobris.json`
+  - `liber-ii-machabaeorum, dies-v-libri, matutinum, lectio` — `lectio-i`
+- `proprium-de-tempore/in-tempore-nativitatis/circumcisio.json`
+  - `circumcisio, matutinum, nocturna-i, lectio, lectio-i` — `datum`
+- `proprium-de-tempore/in-tempore-paschali/ascensio.json`
+  - `ascensio, dies-vi, matutinum, nocturna-ii, lectio` — `lectio-i`
+- `proprium-de-tempore/post-pentecosten/hebdomada-viii-pentecostes.json`
+  - `hebdomada-viii-pentecostes, feria-iii, matutinum, lectio` — `lectio-i`
+
+### DO English has 4 parts, the Latin 2 (4)
+
+- `proprium-de-tempore/hebdomadae-septembris.json`
+  - `liber-job, dies-iv-libri, matutinum, lectio` — `lectio-i`
+  - `liber-job, dies-v-libri, matutinum, lectio` — `lectio-i`
+- `proprium-de-tempore/post-pentecosten/hebdomada-i-pentecostes.json`
+  - `hebdomada-i-pentecostes, feria-iv, lectio` — `lectio-i`
+- `proprium-de-tempore/post-pentecosten/hebdomada-viii-pentecostes.json`
+  - `hebdomada-viii-pentecostes, feria-v, matutinum, lectio` — `lectio-i`
+
+### No English in DO (DO divides the responsory differently (responsum, versus); DO responsory is not laid out as R. * V.; missing file English/Tempora/Epi1-0b; no English section) (3)
 
 - `proprium-de-tempore/in-festo-epiphaniae/epiphania.json`
   - `epiphania, tertia, responsorium-breve` — `incipit`
   - `epiphania, tertia, responsorium-breve` — `responsum`
   - `epiphania, tertia, responsorium-breve` — `versus`
 
-### No English in Divinum Officium (Divinum Officium divides the responsory differently (versus); no English section) (3)
+### No English in DO (DO divides the responsory differently (versus); no English section) (3)
 
 - `proprium-de-tempore/in-tempore-adventus/hebdomada-iv-adventus.json`
   - `hebdomada-iv-adventus, dominica, matutinum, nocturna-iii, responsorium, responsorium-iii` — `incipit`
   - `hebdomada-iv-adventus, dominica, matutinum, nocturna-iii, responsorium, responsorium-iii` — `responsum`
   - `hebdomada-iv-adventus, dominica, matutinum, nocturna-iii, responsorium, responsorium-iii` — `versus`
 
-### No English in Divinum Officium (Divinum Officium divides the responsory differently (responsum, versus)) (3)
+### No English in DO (DO divides the responsory differently (responsum, versus)) (3)
 
 - `proprium-de-tempore/in-tempore-paschali/pentecostes.json`
   - `pentecostes, tertia, responsorium-breve` — `incipit`
   - `pentecostes, tertia, responsorium-breve` — `responsum`
   - `pentecostes, tertia, responsorium-breve` — `versus`
 
-### No English in Divinum Officium (Divinum Officium divides the responsory differently (incipit, responsum); Divinum Officium divides the responsory differently (responsum, versus); Divinum Officium's responsory is not laid out as R. * V.; no English section) (3)
-
-- `proprium-sanctorum/martius/joseph-sponsus.json`
-  - `joseph-sponsus, nona, responsorium-breve, in-tempore-paschali` — `incipit`
-  - `joseph-sponsus, nona, responsorium-breve, in-tempore-paschali` — `responsum`
-  - `joseph-sponsus, nona, responsorium-breve, in-tempore-paschali` — `versus`
-
-### Divinum Officium's English has 5 parts, the Latin 4 (2)
+### DO English has 5 parts, the Latin 4 (2)
 
 - `proprium-de-tempore/in-tempore-nativitatis/nativitas.json`
   - `nativitas, duplex-i-classis, matutinum, nocturna-iii, lectio-i` — `lectio`
 - `proprium-de-tempore/in-tempore-paschali/ascensio.json`
   - `ascensio, dies-vii, matutinum, nocturna-iii, lectio` — `lectio-i`
 
-### No English in Divinum Officium (English and Latin line counts differ; no English section) (2)
+### DO English has 2 parts, the Latin 5 (2)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `coena-domini, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
+  - `parasceve, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
+
+### No English in DO (English and Latin line counts differ; no English section) (2)
 
 - `proprium-de-tempore/post-pentecosten/corpus-christi.json`
   - `corpus-christi, matutinum, nocturna-ii, responsorium, responsorium-iii, in-tempore-paschali` — `responsum`
   - `corpus-christi, laudes, antiphona, antiphona-benedictus` — `votiva-extra-tempore-paschali`
 
-### Divinum Officium's English has 3 parts, the Latin 2 (1)
-
-- `proprium-de-tempore/in-tempore-paschali/ascensio.json`
-  - `ascensio, dies-vi, matutinum, nocturna-ii, lectio` — `lectio-i`
-
-### Divinum Officium's English has 1 parts, the Latin 4 (1)
+### DO English has 1 parts, the Latin 4 (1)
 
 - `proprium-de-tempore/in-tempore-paschali/hebdomada-iii-paschae.json`
   - `hebdomada-iii-paschae, dominica, matutinum, nocturna-iii, lectio, lectio-i` — `datum`
 
-### Divinum Officium's English has 3 parts, the Latin 4 (1)
+### DO English has 3 parts, the Latin 7 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `coena-domini, matutinum, nocturna-i, lectio, lectio-i` — `datum`
+
+### DO English has 2 parts, the Latin 6 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `coena-domini, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
+
+### DO English has 3 parts, the Latin 6 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `parasceve, matutinum, nocturna-i, lectio, lectio-i` — `datum`
+
+### DO English has 2 parts, the Latin 10 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `parasceve, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
+
+### DO English has 3 parts, the Latin 11 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `sabbatum-sanctum, matutinum, nocturna-i, lectio, lectio-i` — `datum`
+
+### DO English has 2 parts, the Latin 7 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `sabbatum-sanctum, matutinum, nocturna-i, lectio, lectio-ii` — `datum`
+
+### DO English has 2 parts, the Latin 3 (1)
+
+- `proprium-de-tempore/in-tempore-passionis/triduum.json`
+  - `sabbatum-sanctum, matutinum, nocturna-i, lectio, lectio-iii` — `datum`
+
+### DO English has 3 parts, the Latin 4 (1)
 
 - `proprium-sanctorum/augustus/laurentius.json`
   - `laurentius, dies-iv, matutinum, nocturna-iii, lectio, habens-commemorationem-matutini, include-inauthenticas` — `lectio-i`
 
-### No English in Divinum Officium (conditional English section; no English section) (1)
+### No English in DO (conditional English section; no English section) (1)
 
 - `proprium-sanctorum/januarius/conversio-pauli.json`
   - `conversio-pauli, laudes, antiphona, antiphona-benedictus` — `datum`
 
-### No English in Divinum Officium (conditional English section) (1)
+### No English in DO (conditional English section) (1)
 
 - `proprium-sanctorum/september/januarius-et-soc.json`
   - `januarius-et-soc, matutinum, nocturna-iii, lectio` — `lectio-i`

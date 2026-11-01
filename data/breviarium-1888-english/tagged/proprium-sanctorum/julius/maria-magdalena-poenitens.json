@@ -70,5 +70,36 @@
 	{
 		"tags":["maria-magdalena-poenitens","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"A woman * in the city, which was a sinner, brought an alabaster box of ointment, and stood at the Lord's feet, behind him, weeping, and began to wash his feet with tears, and did wipe them with the hairs of her head."
+	},
+	{
+		"tags":["maria-magdalena-poenitens","vesperae","hymnus"],
+		"datum":[
+			"Father of lights! one glance of thine,/Whose eyes the universe control,/Fills Magdalene with holy love,/And melts the ice within her soul.",
+			"Her precious ointment forth she brings/Upon those sacred feet to pour;/She washes them with burning tears,/And with her hair she wipes them o'er.",
+			"Impassioned, to the cross she clings,/Nor fears beside the tomb to stay;/Nor dreads the soldiers' savage mien,/For love has cast all fear away.",
+			"O Christ, thou very love itself!/Blest hope of man, through thee forgiven!/So touch our spirits from above,/So purify our souls for heaven.",
+			"* To God the Father, with the Son/And Holy Paraclete, with thee,/As evermore hath been before,/Be glory through eternity./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["maria-magdalena-poenitens","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"De Canticis Canticorum",
+			"In my bed by night I sought him whom my soul loveth: I sought him, and found him not. I will rise, and will go about the city: in the streets and the broad ways I will seek him whom my soul loveth: I sought him, and I found him not. The watchmen who keep the city, found me: Have you seen him, whom my soul loveth? When I had a little passed by them, I found him whom my soul loveth: I held him: and I will not let him go, till I bring him into my mother's house, and into the chamber of her that bore me."
+		],
+		"lectio-ii":"Who shall give thee to me for my brother, sucking the breasts of my mother, that I may find thee without, and kiss thee, and now no man may despise me? I will take hold of thee, and bring thee Into my mother's house: there thou shalt teach me, and I will give thee a cup of spiced wine and new wine of my pomegranates. His left hand under my head, and his right hand shall embrace me. I adjure you, O daughters of Jerusalem, that you stir not up, nor awake my love till she please.",
+		"lectio-iii":"Who is this that cometh up from the desert, flowing with delights, leaning upon her beloved? Under the apple tree I raised thee up: there thy mother was corrupted, there she was defloured that bore thee. Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames. Many waters cannot quench charity, neither can the floods drown it: if a man should give all the substance of his house for love, he shall despise it as nothing."
+	},
+	{
+		"tags":["maria-magdalena-poenitens","laudes","hymnus"],
+		"datum":[
+			"Son of the Highest, deign to cast/On us a pitying eye;/Thou, who repentant Magdalene/Didst call to endless joy.",
+			"Again the royal treasury/Receives its long-lost coin;/The gem is found, and, cleansed from mire,/Doth all the stars outshine.",
+			"O Jesus, balm of every wound!/The sinner's only stay!/Wash thou in Magdalene's pure tears/Our guilty spots away.",
+			"Mother of God! the sons of Eve/Weeping thine aid implore:/Oh, land us from the storms of life/Safe on th' eternal shore.",
+			"Glory, for graces manifold,/To the one only Lord;/Whose mercy doth our souls forgive,/Whose bounty doth reward./Amen.",
+			"Amen."
+		]
 	}
 ]

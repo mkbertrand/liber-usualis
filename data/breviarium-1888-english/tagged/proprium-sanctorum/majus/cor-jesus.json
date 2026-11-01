@@ -204,5 +204,42 @@
 		"tags":["cor-jesus","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"But when they came to Jesus * and saw that He was dead already, they brake not His Legs but one of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water.",
 		"in-tempore-paschali":"But when they came to Jesus * and saw that He was dead already, they brake not His Legs but one of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water."
+	},
+	{
+		"tags":["cor-jesus","capitulum"],
+		"datum":"Behold, God is my saviour, I will deal confidently, and will not fear: O because the Lord is my strength, and my praise, and he is become my salvation. You shall draw waters with joy out of the saviour's fountains:"
+	},
+	{
+		"tags":["cor-jesus","matutinum","nocturna-i","antiphona","antiphona-i"],
+		"datum":"What is a man that thou shouldst magnify him? or why dost thou set thy heart upon him?"
+	},
+	{
+		"tags":["cor-jesus","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Lesson from the book of Isaias",
+			"And thou shalt say in that day: I will give thanks to thee, O Lord, for thou wast angry with me: thy wrath is turned away, and thou hast comforted me. Behold, God is my saviour, I will deal confidently, and will not fear: O because the Lord is my strength, and my praise, and he is become my salvation. You shall draw waters with joy out of the saviour's fountains: And you shall say in that day: Praise ye the Lord, and call upon his name: make his works known among the people: remember that his name is high. Sing ye to the Lord, for he hath done great things: show this forth in all the earth. Rejoice, and praise, O thou habitation of Sion: for great is he that is in the midst of thee, the Holy One of Israel."
+		],
+		"lectio-ii":"In that day shall this canticle be sung the land of Juda. Sion the city of our strength a saviour, a wall and a bulwark shall be set therein. Open ye the gates, and let the just nation, that keepeth the truth, enter in. The old error is passed away: thou wilt keep peace: peace, because we have hoped in thee. You have hoped in the Lord for evermore, in the Lord God mighty for ever. For he shall bring down them that dwell on high, the high city he shall lay low. He shall bring it down even to the ground, he shall pull it down even to the dust. The foot shall tread it down, the feet of the poor, the steps of the needy.",
+		"lectio-iii":"The way of the just is right, the path of the just is right to walk in. And in the way of thy judgments, O Lord, we have patiently waited for thee: thy name, and thy remembrance are the desire of the soul. My soul hath desired thee in the night: yea, and with my spirit within me in the morning early I will watch to thee. When thou shalt do thy judgments on the earth, the inhabitants of the world shall learn justice."
+	},
+	{
+		"tags":["cor-jesus","laudes","hymnus"],
+		"datum":[
+			"Jesus, behind thy temple's veil,/Hid in an ark of gold,/On stones engraven, lay the law/thy finger wrote of old.",
+			"But in thy body's temple new,/thy life-blood's throbbing shrine,/Held, upon fleshly tables graved,/The law of love divine.",
+			"And when that heart in death was stilled,/Each temple's veil was riven:/And lo, within thy love's red shrine,/To us to look was given.",
+			"There make us gaze and see the love/Which drew thee, for our sake,/O great high-priest, thyself to God/A sacrifice to make.",
+			"Thou, Saviour, cause that every soul/Which thou hast loved so well,/May will within thine open heart/In life and death to dwell.",
+			"Grant it, O Father, only Son,/And Spirit, God of grace,/To whom all worship shall be done,/In every time and place./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["cor-jesus","sexta","capitulum"],
+		"datum":"And you shall say in that day: Praise ye the Lord, and call upon his name: make his works known among the people: remember that his name is high."
+	},
+	{
+		"tags":["cor-jesus","nona","capitulum"],
+		"datum":"Sing ye to the Lord, for he hath done great things: show this forth in all the earth. Rejoice, and praise, O thou habitation of Sion: for great is he that is in the midst of thee, the Holy One of Israel."
 	}
 ]

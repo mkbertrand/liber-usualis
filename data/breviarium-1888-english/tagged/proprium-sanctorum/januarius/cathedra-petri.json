@@ -57,5 +57,30 @@
 			"V. The Lord chose him as a priest unto himself.",
 			"R. To offer up unto Him the sacrifice of praise."
 		]
+	},
+	{
+		"tags":[["cathedra-petri","vesperae","hymnus"],["cathedra-petri","matutinum","hymnus"]],
+		"datum":[
+			"Peter, whatever thou shalt bind on earth,/The same is bound above the starry sky;/What here thy delegated power doth loose,/Is loosed in heaven's supremest court on high:/To judgement shalt thou come, when the world's end is nigh.",
+			"Praise to the Father, through all ages be;/Praise to the consubstantial sovereign Son,/And Holy Ghost, one glorious Trinity;/To whom all majesty and might belong;/So sing we now, and such be our eternal song./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Lesson from the first letter of St. Peter the Apostle",
+			"Peter, an apostle of Jesus Christ, to the strangers dispersed through Pontus, Galatia, Cappadocia, Asia, and Bithynia, elect, According to the foreknowledge of God the Father, unto the sanctification of the Spirit, unto obedience and sprinkling of the blood of Jesus Christ: Grace unto you and peace be multiplied. Blessed be the God and Father of our Lord Jesus Christ, who according to his great mercy hath regenerated us unto a lively hope, by the resurrection of Jesus Christ from the dead, Unto an inheritance incorruptible, and undefiled, and that can not fade, reserved in heaven for you, Who, by the power of God, are kept by faith unto salvation, ready to be revealed in the last time."
+		],
+		"lectio-ii":"Wherein you shall greatly rejoice, if now you must be for a little time made sorrowful in diverse temptations: That the trial of your faith much more precious than gold which is tried by the fire may be found unto praise and glory and honour at the appearing of Jesus Christ: Whom having not seen, you love: in whom also now, though you see him not, you believe: and believing shall rejoice with joy unspeakable and glorified; Receiving the end of your faith, even the salvation of your souls.",
+		"lectio-iii":"Of which salvation the prophets have inquired and diligently searched, who prophesied of the grace to come in you. Searching what or what manner of time the Spirit of Christ in them did signify: when it foretold those sufferings that are in Christ, and the glories that should follow: To whom it was revealed, that not to themselves, but to you they ministered those things which are now declared to you by them that have preached the gospel to you, the Holy Ghost being sent down from heaven, on whom the angels desire to look."
+	},
+	{
+		"tags":["cathedra-petri","laudes","hymnus"],
+		"datum":[
+			"Peter, blest shepherd, hearken to our cry,/And with a word unloose our guilty chain;/Thou! who hast power to open the gates on high/To men below, and power to shut them fast again.",
+			"Praise, blessing, majesty, through endless days,/Be to the Trinity immortal given;/Who in pure unity profoundly sways/Eternally alike all things in earth and heaven./Amen.",
+			"Amen."
+		]
 	}
 ]

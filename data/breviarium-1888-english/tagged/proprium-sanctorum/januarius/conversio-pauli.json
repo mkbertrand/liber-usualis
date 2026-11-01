@@ -121,5 +121,40 @@
 	{
 		"tags":["conversio-pauli","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"O Holy Apostle Paul, * Preacher of the truth, and Teacher of the Gentiles, pray for us to God Who hath chosen thee."
+	},
+	{
+		"tags":["conversio-pauli","capitulum"],
+		"datum":"And Saul, as yet breathing out threatenings and slaughter against the disciples of the Lord, went to the high priest, and asked of him letters to Damascus, to the synagogues: that if he found any men and women of this way, he might bring them bound to Jerusalem."
+	},
+	{
+		"tags":[["conversio-pauli","vesperae","hymnus"],["conversio-pauli","matutinum","hymnus"]],
+		"datum":[
+			"Our souls' great teacher, Paul, our guide in wisdom's ways,/Teach us, our fainting hearts, to heaven's glad clime to raise,/Till faith in clearest light her bright meridian gains,/And love with sun-like fire within each bosom reigns.",
+			"All honour, might, and power, and hymns of joy we bring,/While to the Trinity eternal praise we sing;/He rules the universe in wondrous Unity,/And shall, throughout the days of all eternity./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"From the Acts of the Apostles.",
+			"And Saul, as yet breathing out threatenings and slaughter against the disciples of the Lord, went to the high priest, And asked of him letters to Damascus, to the synagogues: that if he found any men and women of this way, he might bring them bound to Jerusalem. And as he went on his journey, it came to pass that he drew nigh to Damascus; and suddenly a light from heaven shined round about him. And falling on the ground, he heard a voice saying to him: Saul, Saul, why persecutest thou me? Who said: Who art thou, Lord? And he: I am Jesus whom thou persecutest. It is hard for thee to kick against the goad."
+		]
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"And he trembling and astonished, said: Lord, what wilt thou have me to do? And the Lord said to him: Arise, and go into the city, and there it shall be told thee what thou must do. Now the men who went in company with him, stood amazed, hearing indeed a voice, but seeing no man. And Saul arose from the ground; and when his eyes were opened, he saw nothing. But they leading him by the hands, brought him to Damascus. And he was there three days, without sight, and he did neither eat nor drink."
+	},
+	{
+		"tags":["conversio-pauli","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"Now there was a certain disciple at Damascus, named Ananias. And the Lord said to him in a vision: Ananias. And he said: Behold I am here, Lord. And the Lord said to him: Arise, and go into the street that is called Straight, and seek in the house of Judas, one named Saul of Tarsus. For behold he prayeth. And he saw a man named Ananias coming in, and putting his hands upon him, that he might receive his sight. But Ananias answered: Lord, I have heard by many of this man, how much evil he hath done to thy saints in Jerusalem. And here he hath authority from the chief priests to bind all that invoke thy name. And the Lord said to him: Go thy way; for this man is to me a vessel of election, to carry my name before the Gentiles, and kings, and the children of Israel. For I will shew him how great things he must suffer for my name's sake."
+	},
+	{
+		"tags":["conversio-pauli","sexta","capitulum"],
+		"datum":"And Saul arose from the ground; and when his eyes were opened, he saw nothing. But they leading him by the hands, brought him to Damascus. And he was there three days, without sight, and he did neither eat nor drink."
+	},
+	{
+		"tags":["conversio-pauli","nona","capitulum"],
+		"datum":"But Saul increased much more in strength, and confounded the Jews who dwelt at Damascus, affirming that this is the Christ."
 	}
 ]

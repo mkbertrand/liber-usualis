@@ -191,5 +191,49 @@
 	{
 		"tags":["septem-dolores-septembris","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Sorrow hath crushed me; * My face is swollen with weeping, and on mine eyelids is the shadow of death."
+	},
+	{
+		"tags":["septem-dolores-septembris","capitulum"],
+		"datum":"To what shall I compare thee? or to what shall I liken thee, O daughter of Jerusalem? to what shall I equal thee, that I may comfort thee, O virgin daughter of Sion? for great as the sea is thy destruction: who shall heal thee?"
+	},
+	{
+		"tags":["septem-dolores-septembris","vesperae","hymnus"],
+		"datum":[
+			"What a sea of tears and sorrow/Did the soul of Mary toss/To and fro upon its billows,/While she wept her bitter loss;/In her arms her Jesus holding,/Torn so newly from the cross.",
+			"Oh, that mournful Virgin-Mother!/See her tears how fast they flow/Down upon his mangled body,/Wounded side, and thorny brow;/While his hands and feet she kisses—/Picture of immortal woe.",
+			"Oft and oft his arms and bosom/Fondly straining to her own;/Oft her pallid lips imprinting/On each wound of her dear Son;/Till at last, in swoons of anguish,/Sense and consciousness are gone.",
+			"Gentle Mother, we beseech thee/By thy tears and troubles sore;/By the death of thy dear offspring,/By the bloody wounds he bore;/Touch our hearts with that true sorrow/Which afflicted thee of yore.",
+			"To the Father everlasting,/And the Son who reigns on high,/With the co-eternal Spirit,/Trinity in Unity,/Be salvation, honour, blessing/Now and through eternity./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","hymnus"],
+		"datum":[
+			"Now let the darkling eve mount suddenly on high,/The sun affrighted reave his splendours from the sky,/While I in silence grieve o'er the mocked agony/And the divine catastrophe.",
+			"Grief-drenched, thou dost appear with heart of adamant,/O Mother; and dost hear the great hierophant,/Upon his wooden bier locked in the arms of death,/Utter in groans his parting breath.",
+			"What lookest thou upon, mangled and bruised and torn?/Ah, 'tis the very Son thy yearning breast hath borne!/Surely, each breaking moan and each deep-mouthèd wound/Its fellow in thy heart hath found!",
+			"Surely, the taunts and woes, the scourge, the dripping thorn,/The spitting and the blows, the gall, the lance, the scorn—/Surely, each torment throws a poison-dart at thee,/Crushed by their manifold tyranny.",
+			"Yet thou with patient mien beneath his cross dost stand,/Nobler in this, I ween, than all the martyr-band:/A thousand deaths, O Queen, upon thy spirit lie,/Yet thou, O marvel! dost not die.",
+			"O Holy Trinity, let earth and heaven raise/Their song of laud to thee the while my spirit prays:—/When evil comes to me, the strength do thou impart/That erst upheld thy Mother's heart!/Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"Lesson from the book of Lamentations",
+			"Weeping she hath wept in the night, and her tears are on her cheeks: there is none to comfort her among all them that were dear to her: all her friends have despised her, and are become her enemies. Behold, O Lord, for I am in distress, my bowels are troubled: my heart is turned within me, for I am full of bitterness: abroad the sword destroyeth, and at home there is death alike. They have heard that I sigh, and there is none to comfort me."
+		],
+		"lectio-ii":"To what shall I compare thee? or to what shall I liken thee, O daughter of Jerusalem? to what shall I equal thee, that I may comfort thee, O virgin daughter of Sion? for great as the sea is thy destruction: who shall heal thee? All they that passed by the way have clapped their hands at thee: they have hissed, and wagged their heads at the daughter of Jerusalem, saying: Is this the city of perfect beauty, the joy of all the earth? All thy enemies have opened their mouth against thee: they have hissed, and gnashed with the teeth, and have said: We will swallow her up.",
+		"lectio-iii":"The Lord hath done that which he purposed, he hath fulfilled his word, which he commanded in the days of old: he hath destroyed, and hath not spared, and he hath caused the enemy to rejoice over thee, and hath set up the horn of thy adversaries. Their heart cried to the Lord upon the walls of the daughter of Sion: Let tears run down like a torrent day and night: give thyself no rest, and let not the apple of thy eye cease."
+	},
+	{
+		"tags":["septem-dolores-septembris","sexta","capitulum"],
+		"datum":"She weepeth sore in the night, and her tears are upon her cheeks. Among all her lovers she hath none to comfort her."
+	},
+	{
+		"tags":["septem-dolores-septembris","nona","capitulum"],
+		"datum":"The tears run down like a river day and night. Give thyself no rest, neither let the apple of thine eye cease."
 	}
 ]

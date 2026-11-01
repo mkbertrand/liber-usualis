@@ -70,5 +70,18 @@
 	{
 		"tags":["visitatio","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"All generations shall call me blessed, * for God hath regarded the lowliness of His hand-maiden."
+	},
+	{
+		"tags":["visitatio","antiphona"],
+		"antiphona-iv":"Blessed art thou among women, and blessed is the Fruit of thy womb:"
+	},
+	{
+		"tags":["visitatio","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"From the Song of Songs",
+			"I am the flower of the field, and the lily of the valleys. As the lily among thorns, so is my love among the daughters. As the apple tree among the trees of the woods, so is my beloved among the sons. I sat down under his shadow, whom I desired: and his fruit was sweet to my palate. He brought me into the cellar of wine, he set in order charity in me. Stay me up with flowers, compass me about with apples: because I languish with love. His left hand is under my head, and his right hand shall embrace me. I adjure you, O ye daughters of Jerusalem, by the roes, and the harts of the, fields, that you stir not up, nor make the beloved to awake, till she please"
+		],
+		"lectio-ii":"The voice of my beloved, behold he cometh leaping upon the mountains, skipping over the hills. My beloved is like a roe, or a young hart. Behold he standeth behind our wall, looking through the windows, looking through the lattices. Behold my beloved speaketh to me: Arise, make haste, my love, my dove, my beautiful one, and come. For winter is now past, the rain is over and gone. The flowers have appeared in our land, the time of pruning is come: the voice of the turtle is heard in our land: The fig tree hath put forth her green figs: the vines in flower yield their sweet smell.",
+		"lectio-iii":"Arise, my love, my beautiful one, and come: My dove in the clefts of the rock, in the hollow places of the wall, shew me thy face, let thy voice sound in my ears: for thy voice is sweet, and thy face comely. 15 Catch us the little foxes that destroy the vines: for our vineyard hath flourished. My beloved to me, and I to him who feedeth among the lilies, Till the day break, and the shadows retire. Return: be like, my beloved, to a roe, or to a young hart upon the mountains of Bether."
 	}
 ]

@@ -210,5 +210,62 @@
 	{
 		"tags":["apparitio-michaelis","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"O thou Prince most glorious, * Michael the Archangel, remember us and here, and everywhere, always entreat for us the countenance of the Son of God. (Alleluia, Alleluia.)"
+	},
+	{
+		"tags":["apparitio-michaelis","capitulum"],
+		"datum":"God gave unto Jesus Christ to show unto His servants the things which must shortly come to pass and He sent and signified it by His Angel unto His servant John, who bare witness of the Word of God and of the testimony of Jesus Christ, of all the things which he saw."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"Lesson from the book of Daniel",
+			"I beheld till thrones were placed, and the Ancient of days sat: his garment was white as snow, and the hair of his head like clean wool: his throne like flames of fire: the wheels of it like a burning fire. A swift stream of fire issued forth from before him: thousands of thousands ministered to him, and ten thousand times a hundred thousand stood before him: the judgment sat, and the books were opened. I beheld because of the voice of the great words which that horn spoke: and I saw that the beast was slain, and the body thereof was destroyed, and given to the fire to be burnt:"
+		]
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":"And in the four and twentieth day of the first month I was by the great river which is the Tigris. And I lifted up my eyes, and I saw: and behold a man clothed in linen, and his loins were girded with the finest gold: And his body was like the chrysolite, and his face as the appearance of lightning, and his eyes as a burning lamp: and his arms, and all downward even to the feet, like in appearance to glittering brass: and the voice of his word like the voice of a multitude. And I Daniel alone saw the vision: for the men that were with me saw it not: but an exceeding great terror fell upon them, and they fled away, and hid themselves. And I being left alone saw this great vision: and there remained no strength in me, and the appearance of my countenance was changed in me, and I fainted away, and retained no strength."
+	},
+	{
+		"tags":["apparitio-michaelis","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"And I heard the voice of his words: and when I heard, I lay in a consternation, upon my face, and my face was close to the ground. And behold a hand touched me, and lifted me up upon my knees, and upon the joints of my hands. And he said to me: Daniel, thou man of desires, understand the words that I speak to thee, and stand upright: for I am sent now to thee. And when he had said this word to me, I stood trembling. And he said to me: Fear not, Daniel: for from the first day that thou didst set thy heart to understand, to afflict thyself in the sight of thy God, thy words have been heard: and I am come for thy words. But the prince of the kingdom of the Persians resisted me one and twenty days: and behold Michael, one of the chief princes, came to help me, and I remained there by the king of the Persians. But I am come to teach thee what things shall befall thy people in the latter days, for as yet the vision is for days."
+	},
+	{
+		"tags":["apparitio-michaelis","laudes","hymnus"],
+		"datum":[
+			"Christ, of the angels praise and adoration,/Father and Saviour thou, of every nation,/Graciously grant us all to gain a station,/Where thou art reigning.",
+			"Angel all peaceful, to our dwellings send us,/Michael, from heaven coming to befriend us,/Breathing serenest peace may he attend us,/Grim war dispelling.",
+			"Angel of strength, who triumphed, tumults quelling,/Gabriel send us, ancient foes expelling,/Oft in these temples may he make his dwelling,/Dear unto heaven.",
+			"Angel physician, health on man bestowing,/Raphael send us from the skies all glowing,/All sickness curing, wisest counsel showing/In doubt and danger.",
+			"May the fair Mother of the Light be o'er us,/Virgin of peace, with all the angel chorus,/And may the heavenly army go before us,/Guiding and guarding.",
+			"O may the Godhead, endless bliss possessing,/Father, Son, Spirit, grant to us this blessing;/All his creation joins his praise confessing,/Now and forever./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["apparitio-michaelis","tertia","responsorium-breve","in-tempore-paschali"],
+		"incipit":"An Angel stood at the Altar of the Temple.",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"Having a golden censer in his hand."
+	},
+	{
+		"tags":["apparitio-michaelis","sexta","capitulum"],
+		"datum":"I heard the voice of many Angels round about the throne, and the living creatures and the elders and the number of them was thousands of thousands, saying with a loud voice: Salvation unto our God."
+	},
+	{
+		"tags":["apparitio-michaelis","sexta","responsorium-breve","in-tempore-paschali"],
+		"incipit":"The smoke of the incense ascended up before the Lord.",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"Out of the Angel's hand."
+	},
+	{
+		"tags":["apparitio-michaelis","nona","capitulum"],
+		"datum":"The was a great war in heaven Michael and his angels fought against the dragon and the dragon fought, and his angels prevailed not, neither was their place found anymore in heaven."
+	},
+	{
+		"tags":["apparitio-michaelis","nona","responsorium-breve","in-tempore-paschali"],
+		"incipit":"Before the Angels will I sing praise unto thee, O my God.",
+		"responsum":"Alleluia, alleluia.",
+		"versus":"I will worship toward thy holy Temple, and praise thy Name."
 	}
 ]

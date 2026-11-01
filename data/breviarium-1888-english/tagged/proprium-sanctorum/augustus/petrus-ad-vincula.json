@@ -24,5 +24,22 @@
 	{
 		"tags":["petrus-ad-vincula","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Thou to whom God hath given the keys * of the kingdom of heaven, loosen the chains which bind the sordid souls of the earthly."
+	},
+	{
+		"tags":["petrus-ad-vincula","vesperae","hymnus"],
+		"datum":[
+			"In wondrous mode set free, lo, at the Lord's command/The galling iron chain doth fall from Peter's hand,/From Peter, shepherd blest, who doth with gentle sway,/His faithful children lead in virtue's fragrant way,/And e'er with watchful love the tempter drive away.",
+			"Now to the Father be eternal glory done;/Our songs we raise to thee, O everlasting Son;/O Spirit from on high, thy throne we bow before;/To thee be honour, praise, and glory evermore:/The Holy Trinity we worship and adore./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["petrus-ad-vincula","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"From the Acts of the Apostles.",
+			"And at the same time, Herod the king stretched forth his hands, to afflict some of the church. And he killed James, the brother of John, with the sword. And seeing that it pleased the Jews, he proceeded to take up Peter also. Now it was in the days of the Azymes. And when he had apprehended him, he cast him into prison, delivering him to four files of soldiers to be kept, intending, after the pasch, to bring him forth to the people. Peter therefore was kept in prison. But prayer was made without ceasing by the church unto God for him."
+		],
+		"lectio-ii":"And when Herod would have brought him forth, the same night Peter was sleeping between two soldiers, bound with two chains: and the keepers before the door kept the prison. And behold an angel of the Lord stood by him: and a light shined in the room: and he striking Peter on the side, raised him up, saying: Arise quickly. And the chains fell off from his hands. And the angel said to him: Gird thyself, and put on thy sandals. And he did so. And he said to him: Cast thy garment about thee, and follow me.",
+		"lectio-iii":"And going out, he followed him, and he knew not that it was true which was done by the angel: but thought he saw a vision. And passing through the first and the second ward, they came to the iron gate that leadeth to the city, which of itself opened to them. And going out, they passed on through one street: and immediately the angel departed from him. And Peter coming to himself, said: Now I know in very deed, that the Lord hath sent his angel, and hath delivered me out of the hand of Herod, and from all the expectation of the people of the Jews."
 	}
 ]

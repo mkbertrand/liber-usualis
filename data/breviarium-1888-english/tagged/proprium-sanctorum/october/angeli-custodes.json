@@ -158,5 +158,51 @@
 	{
 		"tags":["angeli-custodes","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"Holy Angels, * our Keepers, shield us in the battle, that we perish not in the awful judgment."
+	},
+	{
+		"tags":["angeli-custodes","capitulum"],
+		"datum":"Behold I will send my angel, who shall go before thee, and keep thee in thy journey, and bring thee into the place that I have prepared. Take notice of him, and hear his voice.",
+		"sexta":"Take notice of him, and hear his voice, and do not think him one to be contemned: for he will not forgive when thou hast sinned, and my name is in him.",
+		"nona":"But if thou wilt hear his voice, and do all that I speak, I will be an enemy to thy enemies, and will afflict them that afflict thee. And my angel shall go before thee."
+	},
+	{
+		"tags":[["angeli-custodes","vesperae","hymnus"],["angeli-custodes","matutinum","hymnus"]],
+		"datum":[
+			"Angel-guardians of men, spirits and powers we sing,/Whom our Father hath sent, aids to our weakly frame,/Heavenly friends and guides, help from on high to bring,/Lest we fail through the foeman's wile.",
+			"He, the spoiler of souls, angel-traitor of old,/Cast in merited wrath out of his honoured place,/Burns with envy and hate, seeking their souls to gain/Whom God's mercy invites to heaven.",
+			"Therefore come to our help, watchful ward of our lives:/Turn aside from the land God to thy care confides/Sickness and woe of soul, yea, and what else of ill/Peace of heart to its folk denies.",
+			"Now to the Holy Three praise evermore resound:/Under whose hand divine resteth the triple world/Governed in wondrous wise: glory be theirs and might/While the ages unending run./Amen.",
+			"Amen."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-i"],
+		"datum":[
+			"From the Book of Exodus",
+			"Behold I will send my angel, who shall go before thee, and keep thee in thy journey, and bring thee into the place that I have prepared. Take notice of him, and hear his voice, and do not think him one to be contemned: for he will not forgive when thou hast sinned, and my name is in him. But if thou wilt hear his voice, and do all that I speak, I will be an enemy to thy enemies, and will afflict them that afflict thee. And my angel shall go before thee, and shall bring thee in unto the Amorrhite, and the Hethite, and the Pherezite, and the Chanaanite, and the Hevite, and the Jebusite, whom I will destroy."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-ii"],
+		"datum":[
+			"From Zacharias the Prophet",
+			"In the four and twentieth day of the eleventh month which is called Sabath, in the second year of Darius, the word of the Lord came to Zacharias the son of Barachias, the son of Addo, the prophet, saying: I saw by night, and behold a man riding upon a red horse, and he stood among the myrtle trees, that were in the bottom: and behind him were horses, red, speckled, and white. And I said: What are these, my Lord? and the angel that spoke in me, said to me: I will shew thee what these are: And the man that stood among the myrtle trees answered, and said: These are they, whom the Lord hath sent to walk through the earth. And they answered the angel of the Lord, that stood among the myrtle trees, and said: We have walked through the earth, and behold all the earth is inhabited, and is at rest."
+		]
+	},
+	{
+		"tags":["angeli-custodes","matutinum","nocturna-i","lectio","lectio-iii"],
+		"datum":"And I lifted up my eyes, and saw, and behold a man, with a measuring line in his hand. And I said: Whither goest thou? and he said to me: To measure Jerusalem, and to see how great is the breadth thereof, and how great the length thereof. And behold the angel that spoke in me went forth, and another angel went out to meet him. And he said to him: Run, speak to this young man, saying: Jerusalem shall be inhabited without walls, by reason of the multitude of men, and of the beasts in the midst thereof. And I will be to it, saith the Lord, a wall of fire round about: and I will be in glory in the midst thereof."
+	},
+	{
+		"tags":["angeli-custodes","laudes","hymnus"],
+		"datum":[
+			"Ruler of the dread immense!/Maker of this mighty frame!/Whose eternal providence/Guides it, as from thee it came:",
+			"Low before thy throne we bend;/Hear our supplicating cries;/And thy light celestial send/With the freshly dawning skies.",
+			"King of kings, and Lord most high!/This of thy dear love we pray:/May thy guardian angel nigh,/Keep us from all sin this day.",
+			"May he crush the deadly wiles/Of the envious serpent's art,/Ever spreading cunning toils/Round about the thoughtless heart.",
+			"May he scatter ruthless war/Ere to this our land it come;/Plague and famine drive away,/Fix securely peace at home.",
+			"Father, Son, and Holy Ghost,/One eternal Trinity!/Guard by thy angelic host/Us who put our trust in thee./Amen.",
+			"Amen."
+		]
 	}
 ]

@@ -47,5 +47,14 @@
 	{
 		"tags":["exaltatio-crucis","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":"O blessed art thou, O Cross * thou which wast counted the only tree worthy to bear the Lord and King of heaven. Alleluia."
+	},
+	{
+		"tags":["exaltatio-crucis","matutinum","nocturna-i","lectio"],
+		"lectio-i":[
+			"From the Book of Numbers",
+			"And when king Arad the Chanaanite, who dwelt towards the south, had heard this, to wit, that Israel was come by the way of the spies, he fought against them, and overcoming them carried off their spoils. But Israel binding himself by vow to the Lord, said: If thou wilt deliver this people into my hand, I will utterly destroy their cities. And the Lord heard the prayers of Israel, and delivered up the Chanaanite, and they cut them off and destroyed their cities: and they called the name of that place Horma, that is to say, Anathema."
+		],
+		"lectio-ii":"And they marched from mount Hor, by the way that leadeth to the Red Sea, to compass the land of Edom. And the people began to be weary of their journey and labour: And speaking against God and Moses, they said: Why didst thou bring us out of Egypt, to die in the wilderness? There is no bread, nor have we any waters: our soul now loatheth this very light food. Wherefore the Lord sent among the people fiery serpents.",
+		"lectio-iii":"The serpents bit them and killed many of them. Upon which they came to Moses, and said: We have sinned, because we have spoken against the Lord and thee: pray that he may take away these serpents from us. And Moses prayed for the people. And the Lord said to him: Make a brazen serpent, and set it up for a sign: whosoever being struck shall look on it, shall live. Moses therefore made a brazen serpent, and set it up for a sign: which when they that were bitten looked upon, they were healed."
 	}
 ]
