@@ -1,5 +1,7 @@
 // Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 
+// Safari has no Temporal; first, so the global exists before any other module runs
+import 'temporal-polyfill/global';
 import { effect } from '@preact/signals-core';
 import { makeLiturgyStore } from './../../shared/js/liturgy-store.js';
 import { initChantElement } from './gabc-chant.js';

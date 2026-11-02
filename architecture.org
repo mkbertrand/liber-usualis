@@ -421,7 +421,8 @@
 
    The Jinja template renders the page shell, the first rite server-side, and
    working fallback =href=s for every link, then loads the deferred
-   =web/resources/dist/pray.js= bundle (after the Temporal polyfill). Localized
+   =web/resources/dist/pray.js= bundle, which includes the Temporal polyfill
+   (=temporal-polyfill=, imported first by =pray.js= and =ordo.js=). Localized
    strings the script needs are written into a =pray-script-text= JSON block. Its
    state is held in =@preact/signals-core= signals:
 

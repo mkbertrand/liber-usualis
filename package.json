@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@preact/signals-core": "^1.14.4",
-    "exsurge": "https://github.com/bbloomf/exsurge/archive/0ca721380a9ea178d2bb76a9a78a5203b201827c.tar.gz"
+    "exsurge": "https://github.com/bbloomf/exsurge/archive/0ca721380a9ea178d2bb76a9a78a5203b201827c.tar.gz",
+    "temporal-polyfill": "^0.3.0"
   },
   "devDependencies": {
     "esbuild": "0.28.1"
