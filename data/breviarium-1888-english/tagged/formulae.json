@@ -47,6 +47,10 @@
 		"tags":["dg-capituli"],
 		"datum":"R. Thanks be to God."
 	},
+  {
+    "tags":["gloria"],
+		"datum":"Glory be to the Father, and to the Son, and to the Holy Ghost."
+  },
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
@@ -64,7 +68,7 @@
 			"R. ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null,
-			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
+      "\nV. ",null,
 			"\nR. ",null
 		]
 	},
@@ -88,7 +92,7 @@
 			"R. ",null," * ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null,
-			"\nV. Glory be to the Father, and to the Son, and to the Holy Ghost.",
+      "\nV. ",null,
 			"\nR. ",null
 		]
 	},
@@ -256,9 +260,5 @@
 	{
 		"tags":["n"],
 		"datum":"N."
-  },
-	{
-		"tags":["gloria"],
-		"datum":"Glory be to the Father, and to the Son, and to the Holy Ghost."
-	}
+  }
 ]

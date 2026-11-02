@@ -152,7 +152,7 @@
 	},
   {
     "tags":["gloria"],
-    "datum":"\nV. Glória Patri, et Fílio, et Spirítui sancto."
+    "datum":"Glória Patri, et Fílio, et Spirítui sancto."
   },
 	{
 		"tags":[
@@ -163,7 +163,7 @@
 			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
 			"\nV. ",["responsorium","versus"],
 			"\nR. ",["responsorium","responsum"],
-      ["gloria"],
+      "\nV. ",["gloria"],
 			"\nR. ",["responsorium","responsum"]
 		]
 	},
@@ -187,14 +187,14 @@
 			"R. ",["matutinum","responsorium","incipit"]," * ",["matutinum","responsorium","responsum-i"]," * ",["matutinum","responsorium","responsum-ii"],
 			"\nV. ",["matutinum","responsorium","versus"],
 			"\nR. ",["matutinum","responsorium","responsum-i"],
-      ["gloria"],
+      "\nV. ",["gloria"],
 			"\nR. ",["matutinum","responsorium","responsum-ii"]
 		],
 		"in-tempore-paschali":[
 			"R. ",["matutinum","responsorium","incipit"]," * ",["matutinum","responsorium","responsum-i"]," * ",["matutinum","responsorium","responsum-ii"],
 			"\nV. ",["matutinum","responsorium","versus"],
 			"\nR. ",["matutinum","responsorium","responsum-i"]," allelúja.",
-      ["gloria"],
+      "\nV. ",["gloria"],
 			"\nR. ",["matutinum","responsorium","responsum-ii"]
 		]
 	},

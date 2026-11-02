@@ -233,7 +233,7 @@ class RiteRenderer:
                         break
                 else:
                     trans[i] = unpack(trans[i])
-            cantus = ''.join(trans) if all_defined else None
+            cantus = re.sub(r'\smode:.;\n%%\n\(.+?\)', '', ''.join(trans)) if all_defined else None
 
         new_datum = [
             line.replace(

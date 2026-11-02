@@ -124,7 +124,7 @@
   },
 	{
 		"tags":["officium-defunctorum","dominus-vobiscum","post-collectas"],
-		"datum":["V. Réquiem ætérnam dona eis Dómine.", "R. Et lux perpétua lúceat eis."]
+		"datum":["V. Réquiem ætérnam dona eis Dómine.","R. Et lux perpétua lúceat eis."]
 	},
 	{
 		"tags":["officium-defunctorum","benedicamus-domino"],
@@ -272,14 +272,8 @@
 		"datum":"Manus tuæ fecérunt me, et plasmavérunt me totum in circúitu: et sic repénte præcípitas me? Meménto quæso quod sicut lutum féceris me, et in púlverem redúces me. Nonne sicut lac mulsísti me, et sicut cáseum me coagulásti? Pelle et cárnibus vestísti me: óssibus et nervis compegísti me: Vitam et misericórdiam tribuísti mihi, et visitátio tua custodívit spíritum meum."
 	},
 	{
-		"tags":["formula","responsorium","cum-gloria","officium-defunctorum"],
-		"datum":[
-			"R. ",["responsorium","incipit"]," * ",["responsorium","responsum"],
-			"\nV. ",["responsorium","versus"],
-			"\nR. ",["responsorium","responsum"],
-			"\nV. Réquiem ætérnam dona eis Dómine: et lux perpétua lúceat eis.",
-			"\nR. ",["responsorium","responsum"]
-		]
+		"tags":["gloria","officium-defunctorum"],
+		"datum":"Réquiem ætérnam dona eis Dómine: et lux perpétua lúceat eis."
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-iii"],
@@ -411,7 +405,7 @@
 			"\nR. ",["responsum-i"],
 			"\nV. ",["versus-ii"],
 			"\nR. ",["responsum-ii"],
-			"\nV. Réquiem ætérnam dona eis Dómine: et lux perpétua lúceat eis.",
+      "\nV. ",["gloria","officium-defunctorum"],
 			"\nR. ",["incipit"]," ",["responsum-i"]," ",["responsum-ii"]
 		],
 		"incipit":"Líbera me Dómine de morte ætérna in die illa treménda:",

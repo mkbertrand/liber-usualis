@@ -20,20 +20,65 @@
 		"datum":"O Lord, forsake not * the works of thine own hands."
 	},
 	{
-		"tags":[["officium-defunctorum","vesperae","versiculus"],["officium-defunctorum","laudes","versiculus"]],
-		"datum":[
-			"V. I heard a voice from heaven, saying unto me:",
-			"R. Blessed are the dead which die in the Lord."
-		]
+		"tags":[
+      ["officium-defunctorum","vesperae","versiculus"],
+      ["officium-defunctorum","laudes","versiculus"]
+    ],
+		"datum":["V. I heard a voice from heaven, saying unto me:","R. Blessed are the dead which die in the Lord."]
 	},
 	{
 		"tags":["officium-defunctorum","vesperae","antiphona","antiphona-magnificat"],
 		"datum":"All that the Father giveth Me shall come to Me; * and him that cometh to Me I will in no wise cast out."
 	},
+  {
+		"tags":[
+      ["officium-defunctorum","vesperae","preces"],
+      ["officium-defunctorum","laudes","preces"]
+    ],
+    "datum":[
+      null,
+      null,
+      null,
+      "V. From the gates of the grave.",
+      "R. Deliver their souls, O Lord.",
+      "V. May they rest in peace.",
+      "R. Amen.",
+      null
+    ],
+    "fideles-defuncti":[
+      null,
+      null,
+      "V. From the gates of the grave.",
+      "R. Deliver their souls, O Lord.",
+      "V. May they rest in peace.",
+      "R. Amen.",
+      null
+    ]
+  },
 	{
 		"tags":["fideles-defuncti","officium-defunctorum","antiphona","antiphona-invitatorium"],
 		"datum":"Unto the Eternal King all live. * O come, let us worship Him."
 	},
+  {
+		"tags":["fideles-defuncti","officium-defunctorum","matutinum","invitatorium"],
+    "datum":[
+			null,
+			null,
+			"O come, let us sing unto the Lord, let us make a joyful noise to the God of our Salvation: let us come before His presence with thanksgiving, and make a joyful noise unto Him with psalms.",
+			null,
+			"For the Lord is a great God, and a great King above all gods: for the Lord will not cast off His people: for in His hand are all the ends of the earth; and the heights of the hills are His also.",
+			null,
+			"For the sea is His, and He made it: and His hands formed the dry land: O come, let us worship and fall down; let us cry unto the Lord our Maker. For He is the Lord our God; and we are His people, and the sheep of His pasture.",
+			null,
+			"To-day if ye will hear His voice, harden not your heart; as in in the Provocation, and as in the day of Temptation in the wilderness: when your fathers tempted Me, proved Me, and saw My works.",
+			null,
+			"Forty years long was I grieved with that generation and said, It is a people that do alway err in their heart, and they have not known My ways: unto whom I sware in My wrath that they should not enter into My rest.",
+			null,
+			"O Lord, grant them eternal rest. And let the everlasting light shine upon them.",
+			null,
+			null
+    ]
+  },
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","antiphona","antiphona-i"],
 		"datum":"Make my way straight before thy face, O Lord my God."
@@ -48,10 +93,7 @@
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","versiculus"],
-		"datum":[
-			"V. From the gates of hell.",
-			"R. Deliver their souls, O Lord."
-		]
+		"datum":["V. From the gates of hell.","R. Deliver their souls, O Lord."]
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-ii","antiphona","antiphona-i"],
@@ -67,10 +109,7 @@
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-ii","versiculus"],
-		"datum":[
-			"V. May the Lord set them with princes;",
-			"R. Even with the princes of his people."
-		]
+		"datum":["V. May the Lord set them with princes;","R. Even with the princes of his people."]
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-iii","antiphona","antiphona-i"],
@@ -86,10 +125,7 @@
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-iii","versiculus"],
-		"datum":[
-			"V. O deliver not unto beasts the souls of them that praise thee!",
-			"R. And forget not the souls of thy poor for ever."
-		]
+		"datum":["V. O deliver not unto beasts the souls of them that praise thee!","R. And forget not the souls of thy poor for ever."]
 	},
 	{
 		"tags":["officium-defunctorum","laudes","antiphona","antiphona-i"],
@@ -115,21 +151,35 @@
 		"tags":["officium-defunctorum","laudes","antiphona","antiphona-benedictus"],
 		"datum":"I am the resurrection and the life: * he that believeth in me, though he were dead, yet shall he live; and whosoever liveth and believeth in me shall never die."
 	},
+  {
+		"tags":["officium-defunctorum","collecta"],
+    "datum":[
+      "O God, Who in the ranks of the Apostolic Priesthood hast caused some of Thy servants to stand in high places, some as Bishops, and some as Priests, + grant, we beseech Thee, * that they may be joined unto such company in everlasting blessedness.",
+      "O God, Who forgivest iniquity, and wouldest that all men should be saved, + we beseech Thee to grant in the tenderness of Thy mercy that all the members of our congregation, all our kinsfolk, and all who have done us good, who have departed from this world, * and for whom the Blessed Mary and all Thine holy ones do plead with Thee, may be joined unto the company of the same in everlasting blessedness.",
+      "O God, Who art Thyself at once the Maker and the Redeemer of all Thy faithful ones, grant unto the souls of Thy servants and handmaids remission of all their sins, + making of our entreaties unto our Great Father a mean whereby they may have that forgiveness * which they have ever hoped for."
+    ],
+    "terminatio":["Who livest and reignest for ever and ever.", "R. Amen."]
+  },
 	{
 		"tags":["fideles-defuncti","officium-defunctorum","collecta"],
-		"datum":"O God, Creator and Redeemer of all the faithful, grant to the souls of Your servants and handmaids the remission of all their sins, that by loving prayers they may obtain the forgiveness they have ever desired."
+		"datum":"O God, Creator and Redeemer of all the faithful, grant to the souls of Your servants and handmaids the remission of all their sins, + that by loving prayers * they may obtain the forgiveness they have ever desired."
+	},
+	{
+		"tags":["officium-defunctorum","dominus-vobiscum","post-collectas"],
+		"datum":["V. O Lord, grant them eternal rest.", "R. And let the everlasting light shine upon them."]
 	},
 	{
 		"tags":["officium-defunctorum","benedicamus-domino"],
-		"datum":[
-			"May they rest in peace.",
-			"R. Amen."
-		]
+		"datum":["V. May they rest in peace.","R. Amen."]
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","lectio","lectio-i"],
 		"datum":"Spare me, for my days are nothing. What is a man that thou shouldst magnify him? or why dost thou set thy heart upon him? Thou visitest him early in the morning, and thou provest him suddenly. How long wilt thou not spare me, nor suffer me to swallow down my spittle? I have sinned: what shall I do to thee, O keeper of men? why hast thou set me opposite to thee, and I am become burdensome to myself? Why dost thou not remove my sin, and why dost thou not take away my iniquity? Behold now I shall sleep in the dust: and if thou seek me in the morning, I shall not be."
 	},
+  {
+    "tags":["officium-defunctorum","gloria"],
+		"datum":"O Lord, grant them eternal rest. And let the everlasting light shine upon them."
+  },
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-i"],
 		"incipit":"I believe that my Redeemer liveth, and that I shall stand up from the earth at the latter day,",
@@ -142,13 +192,13 @@
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-ii"],
-		"incipit":"Thou Who didst call up Lazarus from the grave after that he had begun to stink",
+		"incipit":"Thou Who didst call up Lazarus from the grave after that he had begun to stink:",
 		"responsum":"Do Thou, O Lord, grant them rest and a place of forgiveness.",
-		"versus":"Thou Who shalt come to judge the quick and dead, and the world by fire"
+		"versus":"Thou Who shalt come to judge the quick and dead, and the world by fire."
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","lectio","lectio-iii"],
-		"datum":"8 thy hands have made me, and fashioned me wholly round about, and dost thou thus cast me down headlong on a sudden? Remember, I beseech thee, that thou hast made me as the clay, and thou wilt bring me into dust again. Hast thou not milked me as milk, and curdled me like cheese? Thou hast clothed me with skin and flesh: thou hast put me together with bones and sinews: Thou hast granted me life and mercy, and thy visitation hath preserved my spirit."
+		"datum":"Thy hands have made me, and fashioned me wholly round about, and dost thou thus cast me down headlong on a sudden? Remember, I beseech thee, that thou hast made me as the clay, and thou wilt bring me into dust again. Hast thou not milked me as milk, and curdled me like cheese? Thou hast clothed me with skin and flesh: thou hast put me together with bones and sinews: Thou hast granted me life and mercy, and thy visitation hath preserved my spirit."
 	},
 	{
 		"tags":["officium-defunctorum","matutinum","nocturna-i","responsorium-iii"],
@@ -215,5 +265,22 @@
 		"incipit":"Deliver me from the ways of hell, O Lord, Who didst break the gates of brass in sunder, and didst descend into hell, and give them light,",
 		"responsum":"That they that sat in affliction and darkness might behold thee.",
 		"versus":"Crying and saying, Thou hast come, O our Redeemer"
-	}
+	},
+  {
+		"tags":["fideles-defuncti","officium-defunctorum","matutinum","nocturna-iii","responsorium-iii","responsorium"],
+		"formula":[
+			"R. ",null," * ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+			"\nV. ",null,
+			"\nR. ",null,
+      "\nV. ",null,
+			"\nR. ",null," ",null," ",null
+		],
+    "incipit":"Deliver me, O Lord, from eternal death in that awful day",
+    "responsum-i":"when the heavens and the earth shall be shaken,",
+    "responsum-ii":"when Thou shalt come to judge the world by fire.",
+    "versus-i":"Quaking and dread take hold upon me, when I look for the coming of the trial and the wrath to come.",
+    "versus-ii":"That day is a day of wrath, of wasteness and desolation, a great day and exceeding bitter."
+  }
 ]

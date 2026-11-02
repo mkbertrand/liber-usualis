@@ -6,6 +6,37 @@
 		"solemnis":[["/etc/7402"]]
   },
   {
+    "tags":["formula","responsorium"],
+    "datum":[
+      "", null, " *(:) ", null,
+      " <v>\\Vbar</v> ", null,
+      " *(:) ", null
+    ]
+  },
+  {
+		"tags":[
+			["formula","responsorium","cum-gloria"],
+			["formula","responsorium","cum-gloria","simplex-responsum"]
+		],
+    "datum":[
+      "", null, " *(:) ", null,
+      " <v>\\Vbar</v> ", null,
+      " *(:) ", null,
+      " <v>\\Vbar</v> ", null,
+      " *(:) ", null
+    ]
+  },
+  {
+		"tags":["formula","responsorium","cum-gloria","duplex-responsum"],
+    "datum":[
+      "", null, " *(:) ", null, " *(:) ", null,
+      " <v>\\Vbar</v> ", null,
+      " *(:) ", null,
+      " <v>\\Vbar</v> ", null,
+      " *(:) ", null
+    ]
+  },
+  {
     "tags":["formula","responsorium-breve"],
     "datum":[
       "mode:6;\n%%\n(c4) ", null, " *(;) ", null,
