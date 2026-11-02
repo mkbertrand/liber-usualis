@@ -168,3 +168,9 @@
     align-self: flex-start;
   }
 }
+
+@media print {
+  #second-bar-container {
+    display: none;
+  }
+}

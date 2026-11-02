@@ -52,3 +52,9 @@
     top: var(--top-bar-title-height);
   }
 }
+
+@media print {
+  #system-banner-container {
+    display: none;
+  }
+}
