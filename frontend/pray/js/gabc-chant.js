@@ -7,7 +7,8 @@ function stringRender(text) {
     .replaceAll('É', 'E').replaceAll('Í', 'I')
     .replaceAll('Ó', 'O').replaceAll('Ú', 'U')
     .replaceAll('Ý', 'Y');
-  text = text.replaceAll(/(?<!<)\//g, '<br>');
+  // A slash is a line break, except in a closing tag (no lookbehind: Safari before 16.4 can't parse one)
+  text = text.replaceAll(/<?\//g, match => match == '/' ? '<br>' : match);
 
   text = text.replaceAll(/([0-9]+)\s/g, '<span class="verse-number">$1 </span>');
   text = text
