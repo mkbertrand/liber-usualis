@@ -220,7 +220,9 @@ in
           RemainAfterExit = true;
           ExecStart = pkgs.writeShellScript "libu-setup" ''
             set -euo pipefail
-            ${pkgs.rsync}/bin/rsync -a --delete ${libu_app.out}/lib/ /var/lib/libu/
+            # Compared by content: every store file has the same mtime, so rsync's default size-and-mtime check
+            # would skip a changed file whose size is unchanged
+            ${pkgs.rsync}/bin/rsync -a --checksum --delete ${libu_app.out}/lib/ /var/lib/libu/
           '';
           User = "root";
           Group = "root";
