@@ -317,7 +317,7 @@ export function bindPrayPage(prayStore, liturgyStore, displayStore) {
   bindBanners(prayStore);
   bindReturnToCurrent(prayStore);
   bindHourPicker(prayStore, displayStore);
-  bindSecondBarAutoHide(displayStore);
+  bindBarsCollapse(displayStore);
   window.addEventListener('popstate', () => prayStore.handlePopstate());
 }
 
@@ -367,10 +367,10 @@ function bindHourPicker(prayStore, displayStore) {
   });
 }
 
-// On narrow screens, where the second bar is fixed at the bottom, it slides out of view while the reader scrolls down
-// and returns on any upward scroll. It stays while a menu anchored to it is open, and near the top of the page. The
-// class has no effect on wide screens, where the bar is in the page's flow and simply scrolls away.
-function bindSecondBarAutoHide(displayStore) {
+// On narrow screens, while the reader scrolls down, the top bar shrinks and the bottom bar slides out of view; any
+// upward scroll restores both. They stay at full size near the top of the page and while a panel or menu is open. The
+// class has no effect on wide screens, where the second bar is in the page's flow and simply scrolls away.
+function bindBarsCollapse(displayStore) {
   let bar = document.getElementById('second-bar-container');
   let lastScrollY = Math.max(0, window.scrollY);
   window.addEventListener('scroll', () => {
@@ -378,15 +378,16 @@ function bindSecondBarAutoHide(displayStore) {
     let maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
     let scrollY = Math.min(Math.max(0, window.scrollY), maxScrollY);
     if (scrollY > lastScrollY && scrollY > bar.offsetHeight) {
-      displayStore.setSecondBarScrolledAway(true);
+      displayStore.setScrollingDown(true);
     } else if (scrollY < lastScrollY) {
-      displayStore.setSecondBarScrolledAway(false);
+      displayStore.setScrollingDown(false);
     }
     lastScrollY = scrollY;
   }, {passive: true});
-  let hidden = computed(() => displayStore.secondBarScrolledAway.value && !displayStore.ritesMenuOpen.value && !displayStore.hourPickerOpen.value);
+  let anyOpen = computed(() => displayStore.ritesMenuOpen.value || displayStore.hourPickerOpen.value || displayStore.optionsPanelOpen.value || displayStore.ordoPanelOpen.value);
+  let collapsed = computed(() => displayStore.scrollingDown.value && !anyOpen.value);
   effect(() => {
-    document.body.classList.toggle('second-bar-hidden', hidden.value);
+    document.body.classList.toggle('bars-collapsed', collapsed.value);
   });
 }
 

@@ -491,10 +491,11 @@
      rites menu (=#rites-menu-wrapper=) and the sheet (=#hour-picker-rites=).
    - On wide screens the second bar sits in the page's flow below the fixed top
      bar, so it is only seen at the top of the page; banners stick below it, then
-     below the top bar. On narrow screens the bottom bar slides out of view while
-     the reader scrolls down and returns on any upward scroll. =pray-view.js= sets the display store's =secondBarScrolledAway= from
-     scroll direction and marks =<body>= with =second-bar-hidden= unless the rites
-     menu or hour picker, which hang from the bar, is open.
+     below the top bar. On narrow screens, while the reader scrolls down, the top
+     bar shrinks and the bottom bar slides out of view; any upward scroll restores
+     both. =pray-view.js= sets the display store's =scrollingDown= from scroll
+     direction and marks =<body>= with =bars-collapsed= unless a panel or menu is
+     open.
 
 ** Chant and Styles
 

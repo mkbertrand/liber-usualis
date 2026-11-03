@@ -58,6 +58,12 @@
     right: 0;
     height: auto;
     padding: 5px;
+    transition: top 0.2s ease;
+  }
+
+  /* Follows the top bar as it shrinks */
+  .bars-collapsed #system-banner-container {
+    top: var(--top-bar-compact-height);
   }
 }
 

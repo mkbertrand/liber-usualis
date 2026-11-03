@@ -1,5 +1,7 @@
 :root {
   --second-bar-height: 66px;
+  /* The top bar's height on narrow screens while the reader scrolls down */
+  --top-bar-compact-height: 52px;
 }
 
 /* In the page's flow directly below the fixed top bar, so it scrolls away with the rite and is only seen at the
@@ -80,7 +82,7 @@
   }
 
   /* Scrolled away: slides down off the bottom of the screen */
-  .second-bar-hidden #second-bar-container {
+  .bars-collapsed #second-bar-container {
     transform: translateY(100%);
   }
 
@@ -88,6 +90,24 @@
   #top-bar-title {
     box-shadow: var(--panel-shadow);
     border-bottom-color: var(--panel-background-color);
+    transition: height 0.2s ease, padding 0.2s ease;
+  }
+
+  /* Shrinks while the bottom bar is away. Only the bar itself: the page's content keeps its offset, so nothing below
+     shifts as it changes. Overrides the top bar's !important height. */
+  .bars-collapsed #top-bar-title {
+    height: var(--top-bar-compact-height) !important;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .bars-collapsed #top-bar-left-aligned-container {
+    top: 6px;
+    bottom: 6px;
+  }
+
+  .bars-collapsed #top-bar-menu-button {
+    padding: 8px;
   }
 
   /* The hour picker on the left, Ordo and options on the right; the row of hours, More Rites and "Return to
