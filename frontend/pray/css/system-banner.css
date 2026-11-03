@@ -1,11 +1,12 @@
+/* Directly below the second bar, sticking below the top bar once the second bar has scrolled away. Of no height, so
+   the banners overlay the rite rather than pushing it down. */
 #system-banner-container {
-  position: fixed;
-	top: calc(var(--top-bar-title-height) + var(--second-bar-height));
+  position: sticky;
+  top: var(--top-bar-title-height);
+  height: 0;
   /* As wide as the rite page and centered over it, like #rite-page-container */
-  left: 0;
-  right: 0;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0 5px;
   max-width: var(--rite-page-max-width);
   box-sizing: border-box;
   display: flex;
@@ -13,15 +14,11 @@
   gap: 3px;
   /* Above the rite, below the panel overlays (2) */
   z-index: 1;
-  transition: top 0.2s ease;
-}
-
-/* Follows the second bar up while it is hidden */
-.second-bar-hidden #system-banner-container {
-  top: var(--top-bar-title-height);
 }
 
 .system-banner {
+  /* Kept at full size although the container has no height */
+  flex-shrink: 0;
   background-color: var(--panel-background-color);
   /* A minimum, so a banner whose text wraps on a narrow screen grows instead of overflowing */
   min-height: 60px;
@@ -55,7 +52,12 @@
 /* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
 @media (max-width: 1139px) {
   #system-banner-container {
+    position: fixed;
     top: var(--top-bar-title-height);
+    left: 0;
+    right: 0;
+    height: auto;
+    padding: 5px;
   }
 }
 

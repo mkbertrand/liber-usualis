@@ -30,7 +30,7 @@ function bindRitesMenu(prayStore, displayStore) {
   toggleButton.addEventListener('click', displayStore.toggleRitesMenu);
   closeOnOutsideClick(menu, displayStore.ritesMenuOpen, displayStore.closeRitesMenu, toggleButton);
   // Fixed rather than inside the button's group, which scrolls sideways and would clip it; so it is placed under
-  // the button on opening and follows it if the window resizes or the group scrolls
+  // the button on opening and follows it if the window resizes or the page or group scrolls
   let hoursGroup = document.getElementById('second-bar-center-aligned-container');
   effect(() => {
     let open = displayStore.ritesMenuOpen.value;
@@ -39,9 +39,11 @@ function bindRitesMenu(prayStore, displayStore) {
     let reposition = () => positionUnderLeftAligned(menu, toggleButton);
     reposition();
     window.addEventListener('resize', reposition);
+    window.addEventListener('scroll', reposition, {passive: true});
     hoursGroup.addEventListener('scroll', reposition);
     return () => {
       window.removeEventListener('resize', reposition);
+      window.removeEventListener('scroll', reposition);
       hoursGroup.removeEventListener('scroll', reposition);
     };
   });
@@ -365,8 +367,9 @@ function bindHourPicker(prayStore, displayStore) {
   });
 }
 
-// The second bar slides out of view while the reader scrolls down and returns on any upward scroll. It stays while
-// a menu anchored to it is open, and near the top of the page, where hiding it would uncover nothing.
+// On narrow screens, where the second bar is fixed at the bottom, it slides out of view while the reader scrolls down
+// and returns on any upward scroll. It stays while a menu anchored to it is open, and near the top of the page. The
+// class has no effect on wide screens, where the bar is in the page's flow and simply scrolls away.
 function bindSecondBarAutoHide(displayStore) {
   let bar = document.getElementById('second-bar-container');
   let lastScrollY = Math.max(0, window.scrollY);

@@ -489,9 +489,10 @@
      current", and the other rites; it reuses the same bindings, which cover every
      copy of these controls. =pray.jinja= writes the rite links twice, into the
      rites menu (=#rites-menu-wrapper=) and the sheet (=#hour-picker-rites=).
-   - The second bar slides out of view while the reader scrolls down and returns
-     on any upward scroll (up behind the top bar, or down off the bottom on narrow
-     screens). =pray-view.js= sets the display store's =secondBarScrolledAway= from
+   - On wide screens the second bar sits in the page's flow below the fixed top
+     bar, so it is only seen at the top of the page; banners stick below it, then
+     below the top bar. On narrow screens the bottom bar slides out of view while
+     the reader scrolls down and returns on any upward scroll. =pray-view.js= sets the display store's =secondBarScrolledAway= from
      scroll direction and marks =<body>= with =second-bar-hidden= unless the rites
      menu or hour picker, which hang from the bar, is open.
 
