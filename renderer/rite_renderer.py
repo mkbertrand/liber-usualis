@@ -264,6 +264,7 @@ class RiteRenderer:
                 not element['quaesitum'].isdisjoint({'antiphona', 'hymnus'})
                 and '"cantus"' in json.dumps(element.get('datum'), ensure_ascii=False, default=_json_default)
             )
+            or 'responsorium' in element['tags'] or 'responsorium-breve' in element['tags']
         ):
             return False
         self.render_gabc(element['datum'], element['quaesitum'], element['cantus'], translation, parent_tags | element['tags'])
