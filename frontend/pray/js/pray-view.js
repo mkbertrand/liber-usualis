@@ -315,6 +315,7 @@ export function bindPrayPage(prayStore, liturgyStore, displayStore) {
   bindBanners(prayStore);
   bindReturnToCurrent(prayStore);
   bindHourPicker(prayStore, displayStore);
+  bindSecondBarAutoHide(displayStore);
   window.addEventListener('popstate', () => prayStore.handlePopstate());
 }
 
@@ -361,6 +362,28 @@ function bindHourPicker(prayStore, displayStore) {
   effect(() => {
     let occasion = prayStore.contentParams.value.occasion;
     current.textContent = RITE_TITLES[occasion] ?? occasion;
+  });
+}
+
+// The second bar slides out of view while the reader scrolls down and returns on any upward scroll. It stays while
+// a menu anchored to it is open, and near the top of the page, where hiding it would uncover nothing.
+function bindSecondBarAutoHide(displayStore) {
+  let bar = document.getElementById('second-bar-container');
+  let lastScrollY = Math.max(0, window.scrollY);
+  window.addEventListener('scroll', () => {
+    // Clamped, so the rubber-band overscroll of touch browsers doesn't read as a change of direction
+    let maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+    let scrollY = Math.min(Math.max(0, window.scrollY), maxScrollY);
+    if (scrollY > lastScrollY && scrollY > bar.offsetHeight) {
+      displayStore.setSecondBarScrolledAway(true);
+    } else if (scrollY < lastScrollY) {
+      displayStore.setSecondBarScrolledAway(false);
+    }
+    lastScrollY = scrollY;
+  }, {passive: true});
+  let hidden = computed(() => displayStore.secondBarScrolledAway.value && !displayStore.ritesMenuOpen.value && !displayStore.hourPickerOpen.value);
+  effect(() => {
+    document.body.classList.toggle('second-bar-hidden', hidden.value);
   });
 }
 

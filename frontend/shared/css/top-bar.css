@@ -47,6 +47,16 @@
     margin-left: auto;
   }
 
+  /* With the links in the dropdown, the logo is centered in the bar */
+  #top-bar-left-aligned-container {
+    position: absolute;
+    top: 9px;
+    bottom: 9px;
+    left: 50%;
+    height: auto;
+    transform: translateX(-50%);
+  }
+
   #top-bar-menu {
     display: none;
     position: absolute;

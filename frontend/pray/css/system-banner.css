@@ -13,6 +13,12 @@
   gap: 3px;
   /* Above the rite, below the panel overlays (2) */
   z-index: 1;
+  transition: top 0.2s ease;
+}
+
+/* Follows the second bar up while it is hidden */
+.second-bar-hidden #system-banner-container {
+  top: var(--top-bar-title-height);
 }
 
 .system-banner {

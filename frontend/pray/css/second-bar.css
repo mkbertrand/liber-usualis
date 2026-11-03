@@ -13,6 +13,13 @@
   background-color: var(--panel-background-color);
   box-shadow: var(--panel-shadow);
   z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+/* Scrolled away: slides up behind the top bar (which is above it), or down off the bottom on narrow screens */
+.second-bar-hidden #second-bar-container {
+  transform: translateY(-100%);
+  box-shadow: none;
 }
 
 /* With the second bar below it, the two bars read as one header: a line between them, and the shadow only beneath
@@ -20,6 +27,12 @@
 #top-bar-title {
   box-shadow: none;
   border-bottom-color: var(--border-color);
+}
+
+/* While the second bar is hidden, the top bar casts its own shadow again */
+.second-bar-hidden #top-bar-title {
+  box-shadow: var(--panel-shadow);
+  border-bottom-color: var(--panel-background-color);
 }
 
 #second-bar {
@@ -74,6 +87,10 @@
     top: auto;
     bottom: 0;
     box-shadow: var(--panel-shadow-upward);
+  }
+
+  .second-bar-hidden #second-bar-container {
+    transform: translateY(100%);
   }
 
   /* With the second bar gone from below it, the top bar casts its own shadow again */

@@ -36,6 +36,8 @@ export function makeDisplayStore() {
   const ordoPanelOpen = signal(false);
   const ritesMenuOpen = signal(false);
   const hourPickerOpen = signal(false);
+  // Set while the reader is scrolling down the rite; any upward scroll clears it
+  const secondBarScrolledAway = signal(false);
 
   return {
     displayParameters: displayParameters,
@@ -43,6 +45,10 @@ export function makeDisplayStore() {
     ordoPanelOpen: ordoPanelOpen,
     ritesMenuOpen: ritesMenuOpen,
     hourPickerOpen: hourPickerOpen,
+    secondBarScrolledAway: secondBarScrolledAway,
+    setSecondBarScrolledAway: (scrolledAway) => {
+      secondBarScrolledAway.value = scrolledAway;
+    },
     setDisplayParameter: (key, value) => {
       displayParameters.value = {...displayParameters.value, [key]: value};
     },
