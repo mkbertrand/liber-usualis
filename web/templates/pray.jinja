@@ -91,8 +91,8 @@
     </div>
     <script type="application/json" id="pray-script-text">{{ script_text|tojson }}</script>
     <div id="rites-menu-wrapper" style="display: none">
-      <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
       <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
+      <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
       {% for rite_occasion, rite_name in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales cum Litaniis'], ['litaniae-sanctorum', 'Litaniæ Sanctorum'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis']] %}
       <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/{{ rite_occasion }}" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="{{ rite_occasion }}">{{ rite_name }}</a>
       {% endfor %}
@@ -114,8 +114,8 @@
         {% endif %}
       </div>
       <div id="hour-picker-rites">
-        <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
         <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
+        <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>
         {% for rite_occasion, rite_name in [['psalmi-graduales', 'Psalmi Graduales'], ['psalmi-poenitentiales', 'Psalmi Pœnitentiales cum Litaniis'], ['litaniae-sanctorum', 'Litaniæ Sanctorum'], ['ordo-commendationis-animae', 'Ordo Commendationis Animæ'], ['formula-indulgentiam-articulo-mortis', 'Formula ad Impertiendam Indulgentiam Plenariam in Articulo Mortis']] %}
         <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/{{ rite_occasion }}" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="{{ rite_occasion }}">{{ rite_name }}</a>
         {% endfor %}
