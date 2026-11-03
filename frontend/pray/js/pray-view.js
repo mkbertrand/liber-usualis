@@ -30,7 +30,7 @@ function bindRitesMenu(prayStore, displayStore) {
   toggleButton.addEventListener('click', displayStore.toggleRitesMenu);
   closeOnOutsideClick(menu, displayStore.ritesMenuOpen, displayStore.closeRitesMenu, toggleButton);
   // Fixed rather than inside the button's group, which scrolls sideways and would clip it; so it is placed under
-  // the button on opening and follows it if the window resizes or the page or group scrolls
+  // the button on opening and follows it if the window resizes or the group scrolls. Scrolling the page closes it.
   let hoursGroup = document.getElementById('second-bar-center-aligned-container');
   effect(() => {
     let open = displayStore.ritesMenuOpen.value;
@@ -39,11 +39,11 @@ function bindRitesMenu(prayStore, displayStore) {
     let reposition = () => positionUnderLeftAligned(menu, toggleButton);
     reposition();
     window.addEventListener('resize', reposition);
-    window.addEventListener('scroll', reposition, {passive: true});
+    window.addEventListener('scroll', displayStore.closeRitesMenu, {passive: true});
     hoursGroup.addEventListener('scroll', reposition);
     return () => {
       window.removeEventListener('resize', reposition);
-      window.removeEventListener('scroll', reposition);
+      window.removeEventListener('scroll', displayStore.closeRitesMenu);
       hoursGroup.removeEventListener('scroll', reposition);
     };
   });

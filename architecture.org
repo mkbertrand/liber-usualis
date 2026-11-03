@@ -495,7 +495,7 @@
      bar shrinks and the bottom bar slides out of view; any upward scroll restores
      both. =pray-view.js= sets the display store's =scrollingDown= from scroll
      direction and marks =<body>= with =bars-collapsed= unless a panel or menu is
-     open.
+     open. Scrolling the page closes the rites menu.
 
 ** Chant and Styles
 
