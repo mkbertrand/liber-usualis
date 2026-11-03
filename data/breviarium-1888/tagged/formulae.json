@@ -181,6 +181,10 @@
 			"\nR. ",["responsorium","responsum"]
 		]
 	},
+  {
+    "tags":["duplicis-responsi-alleluja"],
+    "datum":" allelúja."
+  },
 	{
 		"tags":["formula","responsorium","cum-gloria","duplex-responsum"],
 		"datum":[
@@ -193,7 +197,7 @@
 		"in-tempore-paschali":[
 			"R. ",["matutinum","responsorium","incipit"]," * ",["matutinum","responsorium","responsum-i"]," * ",["matutinum","responsorium","responsum-ii"],
 			"\nV. ",["matutinum","responsorium","versus"],
-			"\nR. ",["matutinum","responsorium","responsum-i"]," allelúja.",
+			"\nR. ",["matutinum","responsorium","responsum-i"],["duplicis-responsi-alleluja"],
       "\nV. ",["gloria"],
 			"\nR. ",["matutinum","responsorium","responsum-ii"]
 		]

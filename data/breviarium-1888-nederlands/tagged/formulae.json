@@ -82,12 +82,23 @@
 			"\nR. ",null
 		]
 	},
+  {
+    "tags":["duplicis-responsi-alleluja"],
+    "datum":" Alleluia."
+  },
 	{
 		"tags":["formula","responsorium","cum-gloria","duplex-responsum"],
 		"datum":[
 			"R. ",null," * ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null,
+			"\nV. Eer aan de Vader en de Zoon en de heilige Geest.",
+			"\nR. ",null
+		],
+		"in-tempore-paschali":[
+			"R. ",null," * ",null," * ",null,
+			"\nV. ",null,
+			"\nR. ",null,null,
 			"\nV. Eer aan de Vader en de Zoon en de heilige Geest.",
 			"\nR. ",null
 		]

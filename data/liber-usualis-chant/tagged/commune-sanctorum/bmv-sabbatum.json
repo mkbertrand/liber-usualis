@@ -16,6 +16,19 @@
     "datum":[["/invitatoria/CSMSI"]]
   },
   {
+		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) Fe(c)lix(d) nam(d!ewf>)que(c) es,(ed/ffod) *(`) sa(d)cra(e_f) Vir(gh>)go(g_h_GF) Ma(e_f/gf/goh_)rí(d!ewfef)a,(ed..) (;) et(d) om(fog>)ni(d!ewfE__DCdc__) lau(ixf!gwh/i>)de(gf) dig(gh~)nís(hv_//ghf)si(deD~C~)ma:(c_e_/ghg_/fgFD__/fsfsdc__/eeofd.)",
+    "responsum-i":"Qui(c)a(c) ex(df) te(fv_fv_ED) or(dc~)tus(f) est(gh) sol(ghg) jus(fg)tí(gj_/kvJI___H/iwj_IH)ti(g!hwihi)æ,(hg__/d_/fv_fv_/gv_FEfv/ddoc.)",
+    "responsum-ii":"Chris(c)tus,(df) De(f_g_FE_0)us(ggoh) nos(d_0/fvEC_0eeod)ter.(d.) (::)",
+    "versus":"O(h)ra(hg/hggof) pro(g) pó(gh)pu(g)lo,(g) (,) in(g)tér(g)ve(hf)ni(gh) pro(gh) cle(ixh_0/iioh)ro,(h.) (;) in(hf~)ter(gh>)cé(ixhiO1)de(h) pro(h) de(h)vó(ixh!iwj)to(h) fe(g)mí(hf)ne(gh)o(gh) se(ixh_0/iioh)xu:(h.) (;) sén(hf~)ti(gh)ant(h) om(h_0//jjok>)nes(g) tu(g)um(hf~) ju(gh)vá(ixhi_ioh)men,(h.) (;) qui(hf)cúm(gh>)que(h) cé(ixhi)le(h)brant(h) tu(h)am(h) sanc(h)tam(h) com(h)me(h)mo(hg/hg)ra(hf)ti(ixf!gwhg/hih)ó(hv_GF_E/fwg_/hv)nem.(gf..)",
+    "gloria":"Gló(h)ri(h)a(hg/hggof) Pa(hf)tri,(gh) et(gh) Fí(h)li(ixh_0/iioh)o,(h.) (;) et(h) Spi(h)rí(hg/hg)tu(hf)i(ixf!gwhg/hih) Sanc(hv_GF_E/fwg_/hv)to.(gf..)"
+  },
+  {
+		"tags":["bmv-sabbatum","matutinum","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum-ii":"Chris(c)tus,(df) De(f_g_FE_0)us(ggoh) nos(d_0/fvEC_0eeod)ter,(d.) (,) al(fg~)le(ed/fh/ghg/EFG/hf/gFE)lú(dewfef)ja.(ed..) (::)",
+    "duplicis-responsi-alleluja":" (,) al(fg~)le(ed/fh/ghg/EFG/hf/gFE)lú(dewfef)ja.(ed..)"
+  },
+  {
 		"tags":["bmv-sabbatum","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["/antiphonae/19326"]]
   }
