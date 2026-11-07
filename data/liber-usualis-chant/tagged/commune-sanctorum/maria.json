@@ -19,7 +19,7 @@
 			["maria","suffragium","vesperae","antiphona","antiphona-magnificat"],
 			["maria","suffragium","laudes","antiphona","antiphona-benedictus"]
 		],
-    "datum":"mode:4 E;%%(c4) SAn(e!fwg)cta(dc) Ma(de)rí(e)a,(e.) *(,) suc(gh)cúr(hg)re(e[ll:1]d) mí(e!fw!gv_[oh:h]FE)se(de)ris,(e.) (;) ju(h)va(g) pu(fe)sil(d)lá(efe)ni(de)mes,(e.) (;) ré(e[ll:1]d)fo(dc)ve(c) flé(e!fw!gv_[oh:h]FE)bi(de)les :(e.) (:) o(d!f'h)ra(g) pro(fe) pó(dc)pu(df)lo,(efED.) (;) in(d)tér(dh)ve(ixhih)ni(g) pro(gh) cle(gf)ro,(e[ll:1]d..) (;) in(d)ter(fh)cé(h)de(g) pro(fe) de(dc)vó(df)to(efE'D) (,) fe(fh)mí(hvGF')ne(g)o(gf) se(e.)xu :(e.) (:) sén(c)ti(df)ant(fd) o(e_[uh:l]f)mnes(g) tu(gh)um(gf) ju(de)vá(dd)men,(c.) *(;) qui(cd)cúm(fe)que(fg) cé(gh)le(g)brant(g'_[oh:h]) N. (::) <i>T. P.</i> Al(g)le(gf)lú(e.){ia}.(e.) (::)"
+    "datum":"mode:4 E;%%(c4) SAn(e!fwg)cta(dc) Ma(de)rí(e)a,(e.) *(,) suc(gh)cúr(hg)re(e[ll:1]d) mí(e!fw!gv_[oh:h]FE)se(de)ris,(e.) (;) ju(h)va(g) pu(fe)sil(d)lá(efe)ni(de)mes,(e.) (;) ré(e[ll:1]d)fo(dc)ve(c) flé(e!fw!gv_[oh:h]FE)bi(de)les :(e.) (:) o(d!f'h)ra(g) pro(fe) pó(dc)pu(df)lo,(efED.) (;) in(d)tér(dh)ve(ixhih)ni(g) pro(gh) cle(gf)ro,(e[ll:1]d..) (;) in(d)ter(fh)cé(h)de(g) pro(fe) de(dc)vó(df)to(efE'D) (,) fe(fh)mí(hvGF')ne(g)o(gf) se(e.)xu:(e.) (:) sén(c)ti(df)ant(fd) o(e_[uh:l]f)mnes(g) tu(gh)um(gf) ju(de)vá(dd)men,(c.) *(;) qui(cd)cúm(fe)que(fg) cé(gh)le(g)brant(g'_[oh:h]) N. (::) <i>T. P.</i> Al(g)le(gf)lú(e.)ja.(e.) (::)"
   },
   {
 		"tags":["maria","i-vesperae","antiphona","antiphona-magnificat","n"],
@@ -52,11 +52,75 @@
 		"antiphona-iii":[["/antiphonae/MUVXN1A2"]]
   },
   {
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:2;\n%%\n(f3) Sanc(f)ta(fhffe__) *(`) et(f) im(ge~)ma(f)cu(h)lá(ghG___FEf_g)ta(f) vir(f!gwh/ihhg>__)gí(f)ni(fg!hv_GFg)tas,(gf..) (;) qui(f)bus(fhg) te(h) láu(hji>)di(ivHG__hv_GFg)bus(gf__) (,) éf(f)fe(fg!hvGFE)ram,(f) (`) né(hg/hih)sci(hv_GFg)o:(ffoe.)",
+    "responsum":"Qui(e)a(e) quem(fh~) cæ(h)li(hg) cá(fg)pe(f)re(fe) non(g>) pó(f_0/gfgoh)te(e)rant,(dxc_d//ceDCdv_CBc_b_) (;) tu(e)o(fg) gré(ghg)mi(e@fog)o(g) con(h_)tu(hg)lís(fgf___)ti.(f.) (::)",
+    "versus":"Be(f)ne(e)díc(e_f!gwhhi)ta(h) tu(ij) in(ig~) mu(hi)li(gh)é(f)ri(f!gwhg)bus,(gf..) (;) et(f) be(ef)ne(f)díc(fg)tus(f) fruc(f)tus(f!gwh_GFE__) ven(f)tris(hg/hih) tu(hv_GFg)i.(ffoe.)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"Qui(e)a(e) quem(fh~) cæ(h)li(hg) cá(fg)pe(f)re(fe) non(g>) pó(f_0/gfgoh)te(e)rant,(dxc_d//ceDCdv_CBc_b_) (;) tu(e)o(fg) gré(ghg)mi(e@fog)o(g) con(h_)tu(hg)lís(fgf___)ti,(f.) (,) al(f_g>)le(e_0/hvGF)lú(h_0//igh>)ja.(f.) (::)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) Con(e)gra(ehg)tu(h)lá(i)mi(h)ni(hg) mi(i)hi,(ij) *() om(jhi)nes(ijHG__hvG__FEfe__) (,) qui(e) di(ei)lí(ihhs)gi(f!gwh)tis(g!hwiHG___F/gwh_GF) Dó(e)mi(ef!gv_FEf)num:(fe..) (:) qui(ef/hgho)a,(g) cum(g) es(g)sem(g@hoi) pár(hg)vu(g)la,(giHG__hvG__FEfe__) (,) plá(i)cu(ih)i(h) Al(h@ioj)tís(ji/jhi)si(iv_//fh!iv_HGh)mo,(hg..)",
+    "responsum":"Et(hg~) de(hi) me(i)is(g) vi(i)scé(h_i)ri(ivHG__hvG__FEf)bus(e_f!gwhe/fv_/eeod) (,) gé(d_f!gwh_hi)nu(h)i(h) De(h)um(f!gwh_) et(g_iHG___F/gwh_GF) hó(e)mi(ef!gv_FEf)nem.(fe..) (::)",
+    "versus":"Be(i)á(i!jwk_JI)tam(h_i/hhog) me(h) di(h)cent(h) om(hi)nes(h) ge(h)ne(ig)ra(hi)ti(hi)ó(i!jwkj)nes,(ji..) (;) qui(h_i/hhog)a(hih) an(i)cíl(i)lam(i) hú(ij)mi(i)lem(i) re(ij_ij_IH)spé(ih)xit(h!iwji/jkj) De(i_h!iwjij)us.(iv_HGhg..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Et(hg~) de(hi) me(i)is(g) vi(i)scé(h_i)ri(ivHG__hvG__FEf)bus(e_f!gwhe/fv_/eeod) (,) gé(d_f!gwh_hi)nu(h)i(h) De(h)um(f!gwh_) et(g_iHG___F/gwh_GF) hó(e)mi(ef!gv_FEf)nem,(fe..) (,) al(d_f!gwh_/iv)le(hv_GFgegf/ge)lú(efe___)ja.(e.) (::)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:1;\n%%\n(c4) Be(d)á(d)ta(dfd___/do_c) es,(f) *(,) Ma(f_g)rí(ixg_hGF___g!hwi_HGhiO1)a,(h.) (;) quæ(f) óm(gh>)ni(gh)um(hg__/goFE) por(fg>)tás(ghf_efd_)ti(d_0/efd_/ev_/ddoc) (,) Cre(e)a(fg)tó(gf__)rem(ev_DC) sæ(d)cu(ecd)ló(d!ewfef)rum:(ed..)",
+    "responsum":"Ge(f)nu(gh)ís(h)ti(ixhg/hih) qui(ge) te(fg) fe(ghf_/efd_)cit,(d_0/efd_/ev_/ddoc) (;) et(d!ewf_fv_EDdo) in(c) æ(d)tér(f_g_F_E/fwg_/hvG~F~)num(fefog) (,) pér(gf/gffs)ma(d_e_DC)nes(doe) Vir(e_0/fgf_/fv_ED_C/dwe/fvE~D~)go.(ed..) (::)",
+    "versus":"A(h)ve,(hg/hggof) Ma(g)rí(gh)a,(g) (,) grá(hf)ti(gh)a(gh) ple(ixh_0/iioh)na:(h.) (;) Dó(hg/hg)mi(hf)nus(ixf!gwhg/hih) te(hv_GF_E/fwg_/hv)cum.(gf..)",
+    "gloria":"Gló(h)ri(h)a(hg/hggof) Pa(hf)tri,(gh) et(gh) Fí(h)li(ixh_0/iioh)o,(h.) (;) et(h) Spi(h)rí(hg/hg)tu(hf)i(ixf!gwhg/hih) Sanc(hv_GF_E/fwg_/hv)to.(gf..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+    "responsum":"Ge(f)nu(gh)ís(h)ti(ixhg/hih) qui(ge) te(fg) fe(ghf_/efd_)cit,(d_0/efd_/ev_/ddoc) (;) et(d!ewf_fv_EDdo) in(c) æ(d)tér(f_g_F_E/fwg_/hvG~F~)num(fefog) (,) pér(gf/gffs)ma(d_e_DC)nes(doe) Vir(e_0/fgf_/fv_ED_C/dwe/fvE~D~)go,(ed..) (,) al(fg~)le(ed__/f_h_/ghg_/ef@gv_/hf/gvFE___)lú(d!ewfef)ja.(ed..) (::)"
+  },
+  {
 		"tags":["maria","matutinum","nocturna-ii","antiphona"],
 		"antiphona-i":[["/antiphonae/MUXXN2A1"]],
 		"in-tempore-paschali":[["/antiphonae/MUXXN2A1"]],
 		"antiphona-ii":[["/antiphonae/MUXXN2A2"]],
 		"antiphona-iii":[["/antiphonae/CBMVN2A3"]]
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:4;\n%%\n(c4) Sic(d)ut(dfd~) ce(e)drus(eg_/fsfs_ded) *(`) ex(fe)al(fg~)tá(g)ta(f) sum(gvFE__fvE__DCdc__) (,) in(d!ewf) Lí(egffs)ba(fv_//df!gv_FEf)no,(eeof.) (;) et(d) sic(ixg_0/hi)ut(h) cy(hg)prés(ixh_0/igh)sus(hggo/efe) (`) in(e_f_) mon(g_h_/jijok>)te(h) Si(ghhg__)on:(g.) (:) qua(g)si(gh) myr(hhgh>)rha(e) e(f!gwh)léc(gv_fhg)ta,(eeof_ED_0ed__)",
+    "responsum":"De(e)di(ge__/g_hGF_0//egF_ED/ewf) su(fd)a(f)vi(gh)tá(hhog)tem(g) o(g_d!ewf)dó(egffs)ris.(fe..) (::)",
+    "versus":"Et(h) sic(h)ut(g_f!gwhg/hv_GEfe__) cin(g)na(g)mó(gh)mum(g_f) et(gh) bál(gf~)sa(e!fwgf)mum(fe..) (;) a(e!fwg_FE_0)ro(g)ma(ghg_h_GF_0)tí(ef/gffs)zans.(ed..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"De(e)di(ge__/g_hGF_0//egF_ED/ewf) su(fd)a(f)vi(gh)tá(hhog)tem(g) o(g_d!ewf)dó(egffs)ris,(fe..) (,) al(fh~)le(hvGF___ECd_0//fvEDfhg___hffoe)lú(egffs)ja.(fe..) (::)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:4;\n%%\n(c4) Quæ(d!ewffvEC__) est(d!ewf) is(egffs)ta(eeof) *(`) quæ(fe) pro(fg)cés(g)sit(gvFE__fv_EDed__) sic(fe)ut(fg~) sol,(ixg_h_/ihhog.) (;) et(c) for(de~)mó(eeof)sa(d!ewfd/efe) (`) tam(c)quam(de~) Je(eeof_)rú(e)sa(egffs)lem?(fe..)",
+    "responsum":"Vi(e)dé(e!fwg)runt(f_g_FD_0) e(d!ewf/gffoe/fv)am(fe__) (,) fí(f)li(fssfd)æ(dfe) Si(fg)on,(ixg_h_/ihhog.) (;) et(g) be(h)á(g_h)tam(e>) di(g)xé(fe__/cfd)runt,(ed..) (;) et(fe~) re(fg)gí(g_0goh)næ(ddoe) (`) lau(e)da(e)vé(eeof)runt(d!ewf) e(egffs)am.(fe..) (::)",
+    "versus":"Et(h) sic(h)ut(g_f!gwhg/hv_GEfe__) di(g)es(g) ver(gh~)ni(g) (`) cir(g)cúm(g)da(g)bant(g) e(gh)am(g) flo(gf)res(gh) ro(gf)sá(e!fwgf)rum(fe..) (;) et(f) lí(f)li(f)a(e!fwg_FE) con(g)vál(ghgh_GF_0)li(e_f/gffs)um.(ed..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Vi(e)dé(e!fwg)runt(f_g_FD_0) e(d!ewf/gffoe/fv)am(fe__) (,) fí(f)li(fssfd)æ(dfe) Si(fg)on,(ixg_h_/ihhog.) (;) et(g) be(h)á(g_h)tam(e>) di(g)xé(fe__/cfd)runt,(ed..) (;) et(fe~) re(fg)gí(g_0goh)næ(ddoe) (`) lau(e)da(e)vé(eeof)runt(d!ewf) e(egffs)am,(fe..) (,) al(fh~)le(hvGF___ECd_0//fvEDfhg___hffoe)lú(egffs)ja.(fe..) (::)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:8;\n%%\n(c4) Or(gd~)ná(f_0/gh)tam(g) *() in(g) mo(gh)ní(h)li(g)bus(ixg_h!iwjg/hvggof) (`) fí(gh)li(g)am(g) Je(g)rú(g_h!iwjI_H/iwj_IH)sa(gh!iv_H_G_h)lem(hg..) (;) Dó(jkj)mi(jh)nus(jkj) con(jk~)cu(kjjs)pí(j_h!iwj_I_HGh)vit:(hg..)",
+    "responsum-i":"Et(g) vi(g)dén(h)tes(ig) e(hi)am(i) (`) fí(j)li(jsjs_2jv_IG_0)æ(g) Si(gjHG__hv_GF_0g_)on,(gf..) (;) be(f)a(ghg)tís(h)si(g)mam(g) præ(g)di(g_h_GE_0)ca(g)vé(fef)runt,(dec_//d!ewfe/fv_ED.) (,) di(d)cén(f_0/gh>)tes:(g.)",
+    "responsum-ii":"Un(gh~)guén(h)tum(ixhg/higgf__) ef(hf)fú(ghg)sum(h) (`) no(hjHG__)men(hf__/g_h!iwjI_H/iwj_IH>) tu(gh!iv_HGh)um.(hg..) (::)",
+    "versus":"A(j)sti(ji)tit(jkj/iji/hhog) re(hi)gí(i)na(i) a(ih) dex(ij)tris(hi) tu(g!hwih)is(hg..) (:) in(g) ves(fg)tí(gh)tu(g) de(g)au(g)rá(gh)to,(g) (,) cir(g)cúm(gh)da(g)ta(g) va(ixhi_HGhih)ri(ghf)e(g_h)tá(iyh!iwji/jkJ_IH)te.(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(iyh!iwji/jkJ_IH)to.(h_i_HGhg..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+    "duplicis-responsi-alleluja":" (,) al(g>)le(g/hfg)lú(ghwihi)ja.(hg..)",
+    "responsum-ii":"Un(gh~)guén(h)tum(ixhg/higgf__) ef(hf)fú(ghg)sum(h) (`) no(hjHG__)men(hf__/g_h!iwjI_H/iwj_IH>) tu(gh!iv_HGh)um,(hg..) (,) al(g)le(g_0//hfg)lú(g!hwihi>)ja.(hg..) (::)"
   },
   {
 		"tags":["maria","matutinum","nocturna-iii","antiphona"],
@@ -68,6 +132,31 @@
   {
 		"tags":["maria","matutinum","nocturna-iii","antiphona","antiphona-iii","in-tempore-adventus"],
 		"datum":[["/antiphonae/CBMVN3A3b"]]
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) Fe(c)lix(d) nam(d!ewf>)que(c) es,(ed/ffod) *(`) sa(d)cra(e_f) Vir(gh>)go(g_h_GF) Ma(e_f/gf/goh_)rí(d!ewfef)a,(ed..) (;) et(d) om(fog>)ni(d!ewfE__DCdc__) lau(ixf!gwh/i>)de(gf) dig(gh~)nís(hv_//ghf)si(deD~C~)ma:(c_e_/ghg_/fgFD__/fsfsdc__/eeofd.)",
+    "responsum":"Qui(c)a(c) ex(df) te(fv_fv_ED) or(dc~)tus(f) est(gh) sol(ghg) jus(fg)tí(gj_/kvJI___H/iwj_IH)ti(g!hwihi)æ,(hg__/d_/fv_fv_/gv_FEfv/ddoc.) Chris(c)tus,(df) De(f_g_FE_0)us(ggoh) nos(d_0/fvEC_0eeod)ter.(d.) (::)",
+    "versus":"O(h)ra(hg/hggof) pro(g) pó(gh)pu(g)lo,(g) (,) in(g)tér(g)ve(hf)ni(gh) pro(gh) cle(ixh_0/iioh)ro,(h.) (;) in(hf~)ter(gh>)cé(ixhiO1)de(h) pro(h) de(h)vó(ixh!iwj)to(h) fe(g)mí(hf)ne(gh)o(gh) se(ixh_0/iioh)xu:(h.) (;) sén(hf~)ti(gh)ant(h) om(h_0//jjok>)nes(g) tu(g)um(hf~) ju(gh)vá(ixhi_ioh)men,(h.) (;) qui(hf)cúm(gh>)que(h) cé(ixhi)le(h)brant(h) N."
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-i","versus","n"],
+    "datum":"tu(h)am(h) sanc(h)tam(h) fes(hg/hg)ti(hf)vi(ixf!gwhg/hih)tá(hv_GF_E/fwg_/hv)tem.(gf..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"Qui(c)a(c) ex(df) te(fv_fv_ED) or(dc~)tus(f) est(gh) sol(ghg) jus(fg)tí(gj_/kvJI___H/iwj_IH)ti(g!hwihi)æ,(hg__/d_/fv_fv_/gv_FEfv/ddoc.) Chris(c)tus,(df) De(f_g_FE_0)us(ggoh) nos(d_0/fvEC_0eeod)ter,(d.) (,) al(fg~)le(ed/fh/ghg/EFG/hf/gFE)lú(dewfef)ja.(ed..) (::)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Be(d)á(f_0/gh)tam(g) *() me(g) di(g)cent(ixg@hoi>) om(h)nes(ixhg__/h!iwjg__/hvggof) ge(gh)ne(g)ra(g)ti(g_h!iwjI_H/iwj_IH)ó(gh!iv_HGh)nes,(ixg_h/ih..)",
+    "responsum":"Qui(f_)a(h) fe(jkj)cit(jh~) mi(jkj)hi(jk) Dó(kijok)mi(h!iwjI__HGh)nus(hg__) (;) mag(ixfg/hih)na(hg) qui(iyi)a(j) po(ji__/jv_I_HG)tens(hg__/hvG~F~) est,(gf..) et(hf~) san(ghg)ctum(h) no(hjHG__)men(hf__/g_h!iwjI_H/iwj_I_H_) e(gh!iv_HGh)jus.(hg..) (::)",
+    "versus":"Et(j) mi(j)se(j)ri(j)cór(j)di(j)a(j) e(ji~)jus(jkj/iji/hhog) (,) a(hi) pro(i)gé(i)ni(i)e(ih) in(ij) pro(hi)gé(g)ni(g!hwih)es(hg..) (;) ti(g)mén(ixhi_HGhih)ti(ghf)bus(g_h) e(iyh!iwji/jkJ_IH)um.(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(iyh!iwji/jkJ_IH)to.(h_i_HGhg..)"
+  },
+  {
+		"tags":["maria","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Qui(f_)a(h) fe(jkj)cit(jh~) mi(jkj)hi(jk) Dó(kijok)mi(h!iwjI__HGh)nus(hg__) (;) mag(ixfg/hih)na(hg) qui(iyi)a(j) po(ji__/jv_I_HG)tens(hg__/hvG~F~) est,(gf..) et(hf~) san(ghg)ctum(h) no(hjHG__)men(hf__/g_h!iwjI_H/iwj_I_H_) e(gh!iv_HGh)jus,(hg..) (,) al(g>)le(g/hfg)lú(ghwihi)ja.(hg..) (::)"
   },
   {
 		"tags":["maria","laudes","antiphona","antiphona-benedictus"],
