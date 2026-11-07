@@ -202,8 +202,13 @@ class ChantElement extends HTMLElement {
 
 export function initChantElement() {
   customElements.define('gabc-chant', ChantElement);
-  const resize = () => {
-    document.querySelectorAll('gabc-chant').forEach(elem => elem.chantLayout());
+  let lastWidth;
+  const resize = (entries) => {
+    const currentWidth = entries[entries.length - 1].contentRect.width;
+    if (lastWidth != currentWidth) {
+      document.querySelectorAll('gabc-chant').forEach(elem => elem.chantLayout());
+    }
+    lastWidth = currentWidth;
   };
 
   const resizeObserver = new ResizeObserver(resize);
