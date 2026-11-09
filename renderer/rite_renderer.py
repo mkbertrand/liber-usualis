@@ -7,7 +7,7 @@ import html
 import re
 from typing import Callable, Any
 
-from renderer.rendering_utils import RiteElement, Tagset, Translation, Chant, Resources, abbreviate_name, date_header, rite_title, rubric_render, string_render, unpack, claw, unpack_superimposed
+from renderer.rendering_utils import RiteElement, Tagset, Translation, Chant, Resources, abbreviate_name, date_header, rite_title, rubric_render, string_render, unpack, claw, unpack_superimposed, align_part_clefs
 from renderer.chomp import chomp
 from renderer.psalmify import format_psalm
 
@@ -233,7 +233,7 @@ class RiteRenderer:
                         break
                 else:
                     trans[i] = unpack(trans[i])
-            cantus = re.sub(r'\smode:.;\n%%\n\(.+?\)', '', ''.join(trans)) if all_defined else None
+            cantus = re.sub(r'\smode:.;\n%%\n\(.+?\)', '', ''.join(align_part_clefs(trans))) if all_defined else None
 
         new_datum = [
             line.replace(

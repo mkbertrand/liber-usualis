@@ -157,3 +157,42 @@ def claw(data: dict) -> dict:
     if isinstance(datum, str) or isinstance(datum, list):
         return data
     return claw(datum)
+
+# A chant part carrying its own GABC header, e.g. a common Gloria Patri tone referenced from untagged resources
+GABC_PART_HEADER = re.compile(r'mode:[^;\n]*;\n%%\n\(([cf]b?\d)\)')
+
+def clef_tonic_position(clef: str) -> int:
+    # Staff position (a=0) of the tonic: a C clef marks it on its line, an F clef marks the fourth above it
+    line = int(clef[-1])
+    return 2 * line + 1 if clef[0] == 'c' else 2 * line - 2
+
+def transpose_gabc_notes(gabc: str, steps: int) -> str:
+    def shift_note_group(match: re.Match) -> str:
+        shifted = []
+        in_attribute = False
+        for ch in match.group(1):
+            if ch == '[':
+                in_attribute = True
+            elif ch == ']':
+                in_attribute = False
+            if not in_attribute and ('a' <= ch <= 'm' or 'A' <= ch <= 'M'):
+                ch = chr(ord(ch) + steps)
+            shifted.append(ch)
+        return '(' + ''.join(shifted) + ')'
+    return re.sub(r'\(([^()]*)\)', shift_note_group, gabc)
+
+def align_part_clefs(parts: list[str]) -> list[str]:
+    # Rewrites parts written in another clef into the clef of the first part, choosing the nearest octave
+    clefs = [match.group(1) for part in parts if (match := GABC_PART_HEADER.search(part))]
+    if not clefs:
+        return parts
+    target = clefs[0]
+
+    def align(part: str) -> str:
+        match = GABC_PART_HEADER.search(part)
+        if match is None or match.group(1)[0] + match.group(1)[-1] == target[0] + target[-1]:
+            return part
+        steps = (clef_tonic_position(target) - clef_tonic_position(match.group(1)) + 3) % 7 - 3
+        return part[:match.start(1)] + target + ')' + transpose_gabc_notes(part[match.end():], steps)
+
+    return [align(part) for part in parts]

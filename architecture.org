@@ -403,7 +403,10 @@
    - =renderer/rendering_utils.py= holds the shared text transformations (rubric
      and text markup, abbreviation, the date header and titles) and the helpers
      for reading a node's datum and its superimposed content (=unpack()=,
-     =unpack_superimposed()=).
+     =unpack_superimposed()=). When a responsory's chant is assembled from parts,
+     =align_part_clefs()= transposes a part written in another clef (such as a
+     common Gloria Patri tone from =nocturnale/untagged/responsoria/=) into the
+     responsory's clef.
    - =renderer/psalmify.py= formats psalm text, pointing it to its psalm tone when
      chant is available.
    - =renderer/chomp.py= prepares a chant's GABC for display. Chanted items are
