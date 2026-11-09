@@ -67,3 +67,19 @@ def test_align_part_clefs_moves_between_c_and_f_clefs_by_the_nearest_octave() ->
     parts = ['mode:2;\n%%\n(c4) A(j)', 'mode:2;\n%%\n(f3) B(e)']
     # Do on the F3 clef (e) becomes do on the C4 clef, a shift of two steps down rather than five up
     assert align_part_clefs(parts)[1] == 'mode:2;\n%%\n(c4) B(c)'
+
+
+def test_immaculate_conception_proper_responsory_renders_as_a_responsory() -> None:
+    # Signum magnum (third responsory of the second nocturn) must carry the responsorium tag, or its chant
+    # formula is rendered as a bare chant and fails
+    assert 'Signum magnum' in matins_html('2026-12-08')
+
+
+def test_translated_responsory_formulae_keep_the_gloria_as_its_own_part() -> None:
+    # Translations are matched to the Latin responsory part by part, so the Gloria must be a separate slot rather
+    # than text written into the formula; SS Philip and James has a fully translated responsory with a Gloria
+    for translation, gloria in (('deutsch', 'Ehre sei dem Vater und dem Sohne'), ('nederlands', 'Eer aan de Vader')):
+        with warnings.catch_warnings():
+            warnings.simplefilter('ignore')
+            html = str(datamanage.rendered_rite_request('2026-05-01', 'matutinum-laudes+officium', '', 'primarium', translation, ''))
+        assert gloria in html

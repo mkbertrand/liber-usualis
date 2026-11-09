@@ -47,6 +47,10 @@
 		"tags":["dg-capituli"],
 		"datum":"Dank sei Gott."
 	},
+  {
+    "tags":["gloria"],
+		"datum":"Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste."
+  },
 	{
 		"tags":["formula","responsorium"],
 		"datum":[
@@ -64,7 +68,7 @@
 			"R. ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null,
-			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"\nV. ",null,
 			"\nR. ",null
 		]
 	},
@@ -92,14 +96,14 @@
 			"R. ",null," * ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null,
-			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"\nV. ",null,
 			"\nR. ",null
 		],
 		"in-tempore-paschali":[
 			"R. ",null," * ",null," * ",null,
 			"\nV. ",null,
 			"\nR. ",null,null,
-			"\nV. Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste.",
+			"\nV. ",null,
 			"\nR. ",null
 		]
 	},
