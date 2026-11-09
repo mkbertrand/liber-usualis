@@ -16,7 +16,8 @@
 		"incipit":"Subveníte Sancti Dei, occúrrite Ángeli Dómini:",
 		"responsum-i":"Suscipiéntes ánimam ejus:",
 		"responsum-ii":"Offeréntes eam in conspéctu Altíssimi.",
-		"versus":"Suscípiat te Christus, qui vocávit te, et in sinum Ábrahæ dedúcant te."
+		"versus":"Suscípiat te Christus, qui vocávit te, et in sinum Ábrahæ dedúcant te.",
+		"gloria":"Réquiem ætérnam dona ei Dómine: et lux perpétua lúceat ei."
 	},
 	{
 		"tags":["ordo-commendationis-animae","ritus"],
@@ -102,7 +103,7 @@
 					"R. ",["matutinum","responsorium","incipit","ordo-commendationis-animae"]," * ",["matutinum","responsorium","responsum-i","ordo-commendationis-animae"]," * ",["matutinum","responsorium","responsum-ii","ordo-commendationis-animae"],
 					"\nV. ",["matutinum","responsorium","versus","ordo-commendationis-animae"],
 					"\nR. ",["matutinum","responsorium","responsum-i","ordo-commendationis-animae"],
-					"\nV. Réquiem ætérnam dona ei Dómine, et lux perpétua lúceat ei.",
+          "\nV. ",["matutinum","responsorium","gloria","ordo-commendationis-animae"],
 					"\nR. ",["matutinum","responsorium","responsum-ii","ordo-commendationis-animae"]
 				]
 			},
