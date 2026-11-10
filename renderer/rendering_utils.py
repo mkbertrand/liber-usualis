@@ -160,6 +160,8 @@ def claw(data: dict) -> dict:
 
 # A chant part carrying its own GABC header, e.g. a common Gloria Patri tone referenced from untagged resources
 GABC_PART_HEADER = re.compile(r'mode:[^;\n]*;\n%%\n\(([cf]b?\d)\)')
+# A part opening with its own clef change already sets the clef that follows
+GABC_LEADING_CLEF = re.compile(r'\s*\(([cf]b?\d)\)')
 
 def clef_tonic_position(clef: str) -> int:
     # Staff position (a=0) of the tonic: a C clef marks it on its line, an F clef marks the fourth above it
@@ -181,18 +183,43 @@ def transpose_gabc_notes(gabc: str, steps: int) -> str:
         return '(' + ''.join(shifted) + ')'
     return re.sub(r'\(([^()]*)\)', shift_note_group, gabc)
 
+def has_gabc_notes(part: str) -> bool:
+    # Separators between responsory parts hold only bars and text, never pitches
+    return re.search(r'\([^()]*[a-mA-M][^()]*\)', part) is not None
+
+def with_clef_change(separator: str, clef: str) -> str:
+    # The clef change follows the separator's bars but precedes text left for the next part's first syllable
+    end_of_groups = separator.rfind(')') + 1
+    return separator[:end_of_groups] + f' ({clef})' + separator[end_of_groups:]
+
 def align_part_clefs(parts: list[str]) -> list[str]:
-    # Rewrites parts written in another clef into the clef of the first part, choosing the nearest octave
+    # Parts written on another line are transposed into the clef of the first part, choosing the nearest octave.
+    # Parts differing only by the flat in the key signature cannot be transposed, so they get a clef change
+    # instead, and the next part restores the first part's clef.
     clefs = [match.group(1) for part in parts if (match := GABC_PART_HEADER.search(part))]
     if not clefs:
         return parts
     target = clefs[0]
-
-    def align(part: str) -> str:
+    aligned = list(parts)
+    current = target
+    for i, part in enumerate(parts):
+        if not has_gabc_notes(part):
+            continue
         match = GABC_PART_HEADER.search(part)
-        if match is None or match.group(1)[0] + match.group(1)[-1] == target[0] + target[-1]:
-            return part
-        steps = (clef_tonic_position(target) - clef_tonic_position(match.group(1)) + 3) % 7 - 3
-        return part[:match.start(1)] + target + ')' + transpose_gabc_notes(part[match.end():], steps)
-
-    return [align(part) for part in parts]
+        clef = match.group(1) if match else target
+        if clef[0] + clef[-1] != target[0] + target[-1]:
+            steps = (clef_tonic_position(target) - clef_tonic_position(clef) + 3) % 7 - 3
+            aligned[i] = part[:match.start(1)] + target + ')' + transpose_gabc_notes(part[match.end():], steps)
+            clef = target
+        elif clef != target:
+            aligned[i] = part[match.end():].lstrip()
+        if (leading := GABC_LEADING_CLEF.match(aligned[i])) is not None:
+            current = leading.group(1)
+            continue
+        if clef != current:
+            if i > 0 and not has_gabc_notes(aligned[i - 1]):
+                aligned[i - 1] = with_clef_change(aligned[i - 1], clef)
+            else:
+                aligned[i] = f'({clef}) ' + aligned[i]
+            current = clef
+    return aligned

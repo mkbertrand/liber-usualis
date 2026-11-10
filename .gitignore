@@ -1,13 +1,11 @@
 typings/
 *.pyc
 __pycache__
-kalendars/**
-kalendars/testdata/**
 kalendar/lunar_chart.json
 *.swp
 *.swo
-testdata/*
-testresults/*
+testdata/
+testresults/
 .direnv/
 web/resources/dist/
 node_modules/

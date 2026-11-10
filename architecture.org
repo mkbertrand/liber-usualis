@@ -406,7 +406,10 @@
      =unpack_superimposed()=). When a responsory's chant is assembled from parts,
      =align_part_clefs()= transposes a part written in another clef (such as a
      common Gloria Patri tone from =nocturnale/untagged/responsoria/=) into the
-     responsory's clef.
+     responsory's clef. A part whose clef differs only by the flat (=c3= against
+     =cb3=) cannot be transposed, so it gets a clef change before its separator's
+     text instead, and the responsory's clef is restored before the next part
+     unless that part opens with its own clef.
    - =renderer/psalmify.py= formats psalm text, pointing it to its psalm tone when
      chant is available.
    - =renderer/chomp.py= prepares a chant's GABC for display. Chanted items are

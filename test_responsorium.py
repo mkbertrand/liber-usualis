@@ -83,3 +83,21 @@ def test_translated_responsory_formulae_keep_the_gloria_as_its_own_part() -> Non
             warnings.simplefilter('ignore')
             html = str(datamanage.rendered_rite_request('2026-05-01', 'matutinum-laudes+officium', '', 'primarium', translation, ''))
         assert gloria in html
+
+
+def test_align_part_clefs_changes_clef_when_only_the_flat_differs() -> None:
+    # A C3 Gloria (B natural) in a cb3 responsory cannot be transposed: the clef changes before the verse mark and
+    # the responsory's clef returns before the repeat
+    parts = ['mode:5;\n%%\n(cb3) Ve(h)', ' *(:) ', 'Et(g)', ' <v>\\Vbar</v> ', 'mode:5;\n%%\n(c3) Gló(h)ri(hg)', ' *(:) ', 'Et(g)']
+    assert ''.join(align_part_clefs(parts)) == (
+        'mode:5;\n%%\n(cb3) Ve(h) *(:) Et(g) (c3) <v>\\Vbar</v> Gló(h)ri(hg) *(:) (cb3) Et(g)')
+
+
+def test_align_part_clefs_keeps_a_clef_change_written_at_the_start_of_a_part() -> None:
+    parts = ['mode:5;\n%%\n(cb3) Ve(h)', ' <v>\\Vbar</v> ', 'mode:5;\n%%\n(c3) Gló(h)', ' *(:) ', '(cb3) Et(g)']
+    assert ''.join(align_part_clefs(parts)).endswith('Gló(h) *(:) (cb3) Et(g)')
+
+
+def test_ember_saturday_of_advent_sings_the_mode_5_gloria_in_its_own_clef() -> None:
+    # Veni Domine (cb3) is the third responsory of Ember Saturday; its Gloria is the common mode 5 tone, in C3
+    assert '(::) (c3) V/. Gló(h)ri(h)a(hi_/hshs_/fgf) Pa(hf)tri,(fi)' in matins_html('2026-12-19')

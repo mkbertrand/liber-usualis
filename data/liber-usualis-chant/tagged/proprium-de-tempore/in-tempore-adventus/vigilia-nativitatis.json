@@ -2,6 +2,25 @@
   {
 		"tags":["vigilia-nativitatis","matutinum","antiphona","antiphona-invitatorium"],
     "datum":[["/invitatoria/1224I"]]
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c2) Sanc(c)ti(cfe)fi(f)cá(g)mi(f)ni(d_f) *()~hó(fefog)di(d!ewfE__DCd_)e,(dc..) (,) et(e) es(e)tó(fe)te(d) pa(fe)rá(cd!ev_DCd)ti,(dc..)",
+    "responsum":"Qui(g)a(hf) di(g)e(gj) crás(j)ti(i)na(ij!kvJIH__iv_HGhg__) (,) vi(g_h!iwj)dé(j)bi(i_g!hwihi)tis(hg__) (;) ma(hg~)jes(fh)tá(hih)tem(ffog) De(g_e!fwg)i(ghGF_0fvED_0/d_gFE___) in(fvE__D/ewf_EDdo) vo(cd!ev_DCd)bis.(dc..) (::)",
+    "versus":"Hó(g!hwi_HG)di(fe)e(f_g/ffoe) sci(f)é(fg)tis(f) qui(f)a(f) vé(ge)ni(fg)et(fg) Dó(g)mi(g!hwih)nus,(hg..) (;) et(f_g/ffoe~) ma(fgf)ne(g) vi(g)dé(gh)bi(g)tis(g) gló(gh_gh_GF)ri(gf)am(f!gwhg/hih>) e(g_f!gwhgh>)jus.(gv_FEfe..)"
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Con(d)stán(f_0//gh>)tes(g) es(gh)tó(h)te:(ixhg/higgf__) *(,) vi(hf)dé(ghg)bi(h)tis(hwj) au(hg~)xí(hv_GFg_h)li(g)um(g>) Dó(gh)mi(g)ni(g_h!iwjI__H/iwj_IH) su(g)per(gh!iv_HGh) vos.(ixg_h/ih..) (:) Ju(f_h)dǽ(jkj)a(j) et(jh~) Je(jkj)rú(jk)sa(ki/jkh_/iv_)lem,(hhog) (,) no(ixfg/hih)lí(hg)te(iyi) ti(ji__/jvI__HG)mé(hg__/hv_GFg)re:(gf..)",
+    "responsum":"Cras(fg/hjg) e(g)gre(g_h_GE)di(g)é(f@goh)mi(fe)ni,(dec_/d!ewfe/fv_ED.) (;) et(d) Dó(f_0//gh)mi(g)nus(ixg_0//hig_/hv_ggof) e(iyf_h!iwj_jk)rit(j) vo(j_kJI___H/iwj_IH)bís(gh!iv_HGh)cum.(hg..) (::)",
+    "versus":"Sanc(j)ti(j)fi(j)cá(j)mi(ji)ni,(jkj/iji/hhog) fí(ih)li(ij)i(hi) Is(g)ra(g!hwih__)ël,(hg..) (;) et(g) es(g)tó(ixhi_HGhih)te(ghf) pa(g_h)rá(iyh!iwji/jkJ_IH)ti.(h_i_HGhg..)"
+	},
+	{
+		"tags":["vigilia-nativitatis","matutinum","responsorium","responsorium-iii"],
+    "incipit":"mode:8;\n%%\n(c4) Sanc(d)ti(d)fi(d)cá(f_0//gh)mi(g)ni,(g) *()~fí(gh)li(g)i(g) Is(gh)ra(h)ël,(ixhg/higgf..) (,) di(jv_jv_IH)<nlba>cit(i!jwkJI___H/iwj_IH)</nlba> Dó(g)mi(gh!iv_HGh)nus:(hg..) (:) in(h) di(jkj)e(jh) e(jkj)nim(jk) crás(kijok)ti(h!iwjI__HGh)na(hg__) (,) de(h)scén(h_0//jvIG)det(jv_jv_) Dó(kvJI__jvI__HG)mi(hg__/hv_GFg)nus,(gf..)",
+    "responsum":"Et(f_h) áu(h_jgh~)fe(g)ret(g_h_GE) a(g) vo(fef)bis(dec/d!ewfe/fv_ED) (;) om(g_h_GFg_0h>)nem(g) lan(g_h!iwjI__H/iwj_IH>)guó(gh!iv_HGh)rem.(hg..) (::)",
+    "versus":"Cras(j)tí(ji)na(jkj/iji/hhog) di(hi)e(i) de(ih)lé(jk)bi(j)tur(j) in(ji)í(ih)qui(ij)tas(hi) ter(g!hwih__)ræ,(hg..) (;) et(g) re(fg)gná(g)bit(g) su(gh)per(g) nos(g) Sal(ixhi_HGhih)vá(ghf)tor(g_h) mun(iyh!iwji/jkJ_IH)di.(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkj/iji/hhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(iyh!iwji/jkJ_IH)to.(h_i_HGhg..)"
   },
   {
 		"tags":["vigilia-nativitatis","antiphona"],
