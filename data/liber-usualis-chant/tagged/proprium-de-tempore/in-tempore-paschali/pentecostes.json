@@ -32,6 +32,22 @@
 		"antiphona-i":[["/antiphonae/P7A1"]],
 		"antiphona-ii":[["/antiphonae/P7A2"]],
 		"antiphona-iii":[["/antiphonae/P7A3"]]
+	},
+	{
+		"tags":["pentecostes","festum","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:3;\n%%\n(c4) Dum(e_0fsfsfs) com(ed~)ple(g)rén(gh~)tur(g_h!iwji__) di(ig/higgoFEf)es(fe__) *(,) Pen(e_f!gwh!i>)te(g_h)cós(fd__)tes,(df!gh_hggo/efe.) (;) e(h_0//jvIG)rant(gh/jij>) om(hgh>)nes(fe__) pá(e_f!gwh_//iv)ri(g)ter(gffd/efe_/fv.) (;) di(d_e)cén(gh_jv_HG__F/gwhiv_H~G~)tes,(hg__) (,) al(g_h>)le(hg__)lú(gf/fv_E~D~)ja;(ed..) (:) et(g) sú(hi_HG/hwi_//jo)bi(i)to(i) fac(ij)tus(i) est(i) so(jsjs_jv_IH)nus(g_h/ggof) de(h!iwj) cæ(jv_IH)lo,(g_h/ggof.) (;) al(h!iwj)le(jv_IH)lú(h>)ja,(hg/hih.)",
+    "responsum":"Tam(fe~)quam(f) spí(gh)ri(ho)tus(g) tor(hgh>)rens,(ffoe) (,) re(d)plé(d!fwghvG__F/gwhgh)vit(hg__) to(g_0//hgh)tam(ffoe) do(d!fwghvG__Fgwhgh)mum,(hg..) (,) al(g_h>)le(hg__)lú(gf/fv_E~D~)ja,(ed..) (,) al(f!gwh>)le(hv_//hfg/g_h!iwjIH__i_g!hwiHG___)lú(egff)ja.(fe..) (::)",
+    "versus":"Dum(i) er(ikjj)go(h!iwji__/hhg) es(i)sent(i) in(i) u(ij)num(h) dis(h)cí(hi)pu(h)li(h) con(h)gre(h)gá(hi)ti(h) (,) prop(h)ter(h) me(h)tum(hg) Ju(h)dæ(j)ó(ikjj)rum,(ji..) (;) so(ig)nus(hi) re(i)pén(ij~)te(i) de(i) cæ(ij)lo(i) ve(i)nit(ikj___jvI__H/iwji__) su(hg)per(g_h!iwj) e(jiiohiv_HGh)os.(hg..)"
+	},
+	{
+		"tags":[
+			["pentecostes","festum","matutinum","responsorium","responsorium-ii"],
+			["pentecostes","sabbatum","matutinum","responsorium","responsorium-i"]
+		],
+    "incipit":"mode:2;\n%%\n(f3) Re(c)plé(e_0//fg)ti(f) sunt(fh_/hv_) *() om(ih_hv_GFgvF~E~)nes(fe__) (,) Spí(f_0//hvGE)ri(hv_hv_)tu(ihhg__) Sanc(fg!hv_GFg)to:(gf..) (;) et(h) cœ(ij)pé(jiig)runt(hi>) lo(hig___/hv_GFg)qui,(gf__) (,) pro(fc)ut(e) Spí(fg)ri(f)tus(f) Sanc(fg~)tus(f) (`) da(fg)bat(f) é(fg)lo(f)qui(f) il(f_e/f!gwh_ivH__G/hwihi)lis:(ih..)",
+    "responsum":"Et(e) con(f<)vé(h)nit(g_f!gwh) mul(fe~)ti(fg)tú(f_0//gef)do(dxe_f/e/eccod) (,) di(b_c)cén(e_f)ti(f!gwhivH__G/hwihi)um,(ih__) (,) al(h!iwj>)le(jv_//ijHF__//e_f!gw!hi_//jhi_HG)lú(f!gwhgh)ja.(gf..) (::)",
+    "versus":"Lo(f)que(e)bán(e_f!gwh_/hi~)tur(h) vá(ij)ri(i)is(h) lin(hg~)guis(hi) A(gh)pós(f)to(f!gwhg__)li(gf..) (;) mag(f)ná(f!gwh_GFE__)li(f)a(hg/hih) De(hv_GFg)i.(ffe.)",
+    "gloria":"Gló(e_f!gwh/hi)ri(h)a(h) Pa(hg)tri,(hi) et(gh) Fí(f)li(f!gwhg__)o,(gf..) (;) et(f) Spi(f)rí(f!gwh_GFE__)tu(f)i(hg/hih) Sanc(hv_GFg>)to.(ffoe.)"
   },
   {
 		"tags":["pentecostes","festum","laudes","antiphona","antiphona-benedictus"],
@@ -58,6 +74,23 @@
   {
 		"tags":["pentecostes","festum","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2249"]]
+	},
+	{
+		"tags":[
+			["pentecostes","feria-ii","matutinum","responsorium","responsorium-i"],
+			["pentecostes","sabbatum","matutinum","responsorium","responsorium-ii"]
+		],
+    "incipit":"mode:8;\n%%\n(c4) Jam(f_0//gh>) non(g) di(gh)cam(g) *() vos(ixg!hoi) ser(h)vos,(ixhg__/h!iwjg__hv_ggof.) (;) sed(h) a(j)mí(jijh)cos(gf!gwhGFg) me(gh!ivHGh)os:(gh/ih..) (;) qui(f)a(h) óm(j)ni(i)a(kjjs) cog(hi>)no(hg)vís(g!hwihi)tis,(hg..) (;) quæ(g) o(f)pe(ghg)rá(h)tus(g) sum(g) (`) in(g>) mé(gh)di(g)o(g) ves(g_d!ewfef)tri,(ed..) (;) al(g)le(g_0//hfg)lú(g!hwihi>)ja.(hg..)",
+    "responsum":"Ac(g)cí(gji/jok)pi(h!iwjI__HGh)te(hg__) (,) Spí(gh)ri(g)tum(g) Sanc(gh~)tum(g) in(g) vo(hg__/h!iwj_IHi)bis(ih__) (,) Pa(h)rá(h_//hgh)cli(fg!hv_GFg)tum:(f_g/ffod.) (;) il(f_0//g!h>)le(g) est,(ixhighv_//ggof) (`) quem(hf~) Pa(ghg)ter(h<) mit(jjoi)tet(g@hoi) vo(ih/hog/hv)bis,(hhog.) (;) al(h>)le(hv_GFgv_//hihig)lú(ghg___)ja.(g.) (::)",
+    "versus":"Vos(g_j) a(j)mí(j)ci(j) me(j)i(j) es(ji)tis,(jkj/iji/hhog) (`) si(ij) fe(hi)cé(g)ri(g!hwih__)tis(hg..) (;) quæ(g) e(fg)go(g) præ(g)cí(ixhi_HGhih)pi(ghf)o(g_h) vo(h!iwji/jkJ_IH)bis.(h_i_HGhg..)",
+    "gloria":"Gló(g_j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(h!iwji/jkJ_IH)to.(h_i_HGhg..)"
+	},
+	{
+		"tags":["pentecostes","feria-ii","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:3;\n%%\n(c4) Spí(ed)ri(g)tus(hih) Sanc(i_0//jg/hghsjsjskjjs)tus(ji__) *(,) pro(i)cé(j)dens(h!iwj_IG) a(h!iwj) thro(ikjjs)no,(ji..) (;) A(g)pos(g)to(h)ló(j)rum(i>) pec(ixhj__h!iwj)tó(g_hG__FEf)ra(fe__) (,) in(fd~)vi(e)si(f)bí(g_h)li(ixg_f!gwhgh_//iv)ter(h) pe(hggof)ne(ixf@goh_/ig/hg__)trá(egffs)vit(fe..) (;) no(e)vo(gffs) sanc(fd~)ti(gh)fi(g)ca(hi_//jo)ti(i)ó(i@jok)nis(kjjv_IH) sig(h!iwjijg~)no.(hg..)",
+    "responsum":"Ut(g) in(h) o(j)re(i) e(h)ó(i)rum(h) óm(ixhj__h!iwj>)ni(g_hG__FEf)um(fe__) (,) gé(e!fwg_//ho)ne(g)ra(g) nas(g)ce(gh)rén(ixh_iH__GFg_h>)tur(g) (`) lin(g_h!iwjIHi____g!hwiHG<)guá(e_f)rum,(ixg_0//ivHG.) (;) al(h>)le(ixg_0//ivHG_0/f_0//gvFD_0/fg!ivHGFghg)lú(egffs)ja.(fe..) (::)",
+    "versus":"Ad(i)vé(ikjjs)nit(h!iwji__hhog) ig(i)nis(i) di(i)ví(i@jo)nus,(h) non(h) com(h)bú(h)rens,(hg) sed(h) il(j)lú(i)mi(ikjjs)nans,(ji..) (;) et(ig) trí(hi)bu(i)it(i) e(i)is(i) cha(i)rís(ikj___jvI__H/iwji__)ma(hg)tum(g_h!iwj) do(jiioh/iv_HGh)na.(hg..)",
+    "gloria":"Gló(ikjjs)ri(h!iwji__)a(hhog) Pa(hg)tri,(h) et(j) Fí(i)li(ikjjs)o,(ji..) (;) et(i) Spi(i)rí(ikjjvI_____H/iwji__)tu(hg)i(g_h!iwj) Sanc(jiioh/iv_HGh)to.(hg..)"
   },
   {
 		"tags":["pentecostes","feria-ii","laudes","antiphona","antiphona-benedictus"],
@@ -66,6 +99,19 @@
   {
 		"tags":["pentecostes","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2899"]]
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Ap(e)pa(e)ru(feg)é(g!ho1)runt(g) *() a(g)pós(hig)to(h_i)lis(i) (,) dis(hg)per(hi~)tí(i)tæ(hgh/fhg) lin(efe___)guæ(e) (,) tam(g)quam(g) ig(f_0//ghf)nis,(f.) (;) al(g>)le(hih___//gih_//fhgh//fhe___)lú(efe___)ja,(e.)",
+    "responsum":"Se(e)dít(fg)que(g) su(hg)pra(h) sín(ijij>)gu(iv_HG_h_i)los(h) e(h)ó(hg/gof/g_h)rum(g) (`) Spí(i)ri(h)tus(g_f!gwh) Sanc(efe___)tus,(e.) (;) al(fh~)le(h)lú(gih>)ja,(f) (`) al(eg~)le(gv_//fhg)lú(efe___)ja.(e.) (::)",
+    "versus":"Et(i) cœ(i)pé(i!jwk_JI)runt(h_i/hhog) lo(hi)qui(h) vá(ig)ri(hi)is(hi) lin(i!jwkj)guis,(ji..) (;) pro(h_i/hhog)ut(hih) Spí(i)ri(i)tus(i) Sanc(ij>)tus(i) (`) da(i)bat(i) é(ijij_IH)lo(ih)qui(h!iwji/jkj) il(i_h!iwjij)lis.(iv_HGhg..)"
+	},
+	{
+		"tags":["pentecostes","feria-iii","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:2;\n%%\n(f3) Lo(c)que(c)bán(e_0//fg>)tur(f) *() vá(f)ri(f)is(h_) lin(hg__/hifg)guis(fe) A(fhGE)pós(fh/ihhog)to(fg!hv_GFg)li(gf__) (;) mag(h)ná(hi!jvIH)li(hg)a(h) De(high_GFg)i,(gf..) (;) al(fgfg)le(ef)lú(f!gwhgh>)ja:(gf)",
+    "responsum":"Pro(fc)ut(e) Spí(fg)ri(f)tus(f) Sanc(fg~)tus(f) da(fg)bat(f) é(fg)lo(f)qui(f) il(fe/f!gwh_/ivH__G/hwihi)lis,(ih..) (;) al(kxh!iwj/jk~)le(jij_HGF/e_f!gwh!iv_//jh/iv_HG)lú(f!gwhgh)ja.(gf..) (::)",
+    "versus":"Re(f)plé(e_f!gwhhi)ti(h) sunt(h) om(ij~)nes(i) Spí(hg)ri(hi)tu(gh) Sanc(f!gwhg__)to,(gf..) (;) et(f) cœ(f!gwh_GFE__)pé(f)runt(hg/hih) lo(hv_GFg)qui.(ffoe.)",
+    "gloria":"Gló(e_f!gwh/hi)ri(h)a(h) Pa(hg)tri,(hi) et(gh) Fí(f)li(f!gwhg__)o,(gf..) (;) et(f) Spi(f)rí(f!gwh_GFE__)tu(f)i(hg/hih) Sanc(hv_GFg>)to.(ffoe.)"
   },
   {
 		"tags":["pentecostes","feria-iii","laudes","antiphona","antiphona-benedictus"],
@@ -74,6 +120,19 @@
   {
 		"tags":["pentecostes","feria-iii","vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2864"]]
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:8;\n%%\n(c4) Dis(d)ci(d)plí(f_0//gh)nam(g) *() et(g) sa(g)pi(gh)én(h)ti(h)am(ixhg/hig/gf__) (,) do(hf)cé(ghg)bat(h) e(hjHG__)os(hf__/g_h_!iwjI__H/iwj_IH) Dó(g)mi(gh@iv_HGh)nus,(hg..) (;) al(g)le(g_0//hfg)lú(g!hwihi>)ja;(hg..) (;) fir(h)má(jkj)vit(jh) in(j_k_) il(ki/jkh_//i>)lis(h_hog) (,) grá(f)ti(ixhih)am(hg~) Spí(iyi)ri(j)tus(ji__jvI_HG) su(hg__hv_GFg)i,(gf..)",
+    "responsum":"Et(f) in(f)tel(ghg~)léc(h)tu(g) a(g)dim(g>)plé(gh)vit(g) cor(gh~)da(g) e(g)ó(g_d!ewfef)rum,(ed..) (;) al(d)le(d)lú(f_g_)ja,(gf__) al(gvF_E/fwg/hf~)le(g)lú(g!hwihi>)ja.(hg..) (::)",
+    "versus":"Re(g_j)pen(j)tí(ji)no(jkj/iji/hho1!g) nam(ij)que(hi) só(g)ni(g!hwih)tu(hg..) (;) Spí(g)ri(fg)tus(g) Sanc(gh~)tus(g) su(g)per(ixhi_HGhih) e(ghf)os(g_h) ve(iyh!iwji/jkJ_IH)nit.(h_i_HGhg..)"
+	},
+	{
+		"tags":["pentecostes","feria-iv","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:6;\n%%\n(cb4) I(f_0//fg)te(f) in(f) or(f!gwhghGF)bem(gf__) *() u(fgf)ni(ghg)vér(hf/gh~)sum,(gf..) (;) præ(f)di(ghg)cá(h)te,(g) di(f)cén(fsfsfs)tes:(d!ewfEC.) (;) al(f/foe~)le(ghgh)lú(hg/gof/gv)ja.(gf..)",
+    "responsum":"Qui(f) cre(ghg)dí(h)de(g)rit(f) (,) et(f) bap(fd)ti(f)zá(f_g)tus(f) fú(fssfe)e(c)rit(dc/ded) (,) sal(ffoe)vus(g_h@jvH___G/hwi_HG) e(fg!hv_GFg)rit,(gf..) (;) al(f)le(fd__/fefd__)lú(d!ewf>)ja(c_) (,) al(dc~)le(f!gwhghv_GF)lú(gh~)ja(h_) (,) al(fg~)le(g_0//ivHG)lú(hg/gofgv)ja.(gf..) (::)",
+    "versus":"In(f) nó(f@goh)mi(h)ne(ih__iv_HGhg__) me(h!iwj_//kv)o(j) dæ(j)mó(j)ni(jh)a(i) e(gh)jí(f)ci(f!gwhg__)ent,(gf..) (;) lin(f)guis(df) lo(f)quén(f)tur(f) no(fg)vis,(f) (,) ser(ghf)pén(gf)tes(f@goh) tol(i_g!hwi_HG)lent.(g_h_GFgf..)",
+    "gloria":"Gló(f@goh)ri(h)a(ih__/iv_HGhg__) Pa(h!iwj_//kv)tri,(j) et(jh~) Fí(ij)li(ih)o,(h_) (,) et(h) Spi(h)rí(hg)tu(i)i(gh) Sanc(f!gwhg__)to.(gf..)"
   },
   {
 		"tags":["pentecostes","feria-iv","laudes","antiphona","antiphona-benedictus"],
@@ -82,6 +141,19 @@
   {
 		"tags":["pentecostes","feria-iv","vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2047"]]
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Ad(e)vé(e_f!gwh_GFg)nit(efe___) *() ig(e)nis(ehg) di(h)ví(ij)nus,(iji) (;) non(hoi) com(hg)bú(e_f!gwhfg)rens(fe__) (,) sed(efef) il(ed~)lú(e)mi(f!gwh/ivH__G/hwihi)nans,(ih..) (;) non(h) con(h<)sú(ihhog)mens(f) sed(h_f!gwh_GF) lu(ef!gv_FEf)cens:(fe..) (;) et(e) in(e)vé(ehg)nit(hi) cor(ijHGhih/i_j>)da(i) dis(i)ci(i)pu(i)ló(jk)rum(j_k>) (,) re(i)cep(hi)tá(h)cu(hv_GF)la(h_) mun(h_0/ij/ki>)da:(gihi/hhog.)",
+    "responsum":"Et(e) trí(e)bu(efef)it(ed) e(e)is(fh) cha(h)rís(h)ma(ig/hoi)tum(fe~) do(e_f!gwhgh)na,(h.) (;) al(hg~)le(h_i)lú(ih/ief>)ja,(e.) (,) al(ge/f!gwh)le(g!hwiHG___Fgwh_GF)lú(ef!gv_FE)ja.(fe..) (::)",
+    "versus":"In(i)vé(i!jwk_JI)nit(h_i/hhog) e(h)os(h) con(h)cór(h)des(ig) ca(hi)ri(hi)tá(i!jwkj__)te,(ji..) (;) et(h_i/hhog~) col(hih)lus(i)trá(i)vit(h) e(ij)os(i) i(i)nún(i)dans(i) grá(i)ti(i)a(iji/jv_IH) De(ih)i(h!iwji/jkj)tá(i_h!iwjij)tis.(iv_HGhg..)"
+	},
+	{
+		"tags":["pentecostes","feria-v","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) Spí(ef)ri(e)tus(e) Sanc(ef>)tus(e) *(,) re(e_f!gw!hi)plé(h_g!hwihi_/jv)vit(i) to(i)tam(i) do(i)mum,(k_i!jwkJI.) (;) u(hi)bi(h) e(h)rant(hv_GF) A(g!hwih)pós(hf/hef)to(e_d!ewfef)li:(fe..) (;) et(e) ap(e)pa(ehg)ru(hi)é(i)runt(i) il(hg/hih/ij)lis(i) dis(i)per(i)tí(i)tæ(jk) lin(i_j>)guæ,(i) (,) tam(ig~)quam(h) ig(h_g!hwif/fe)nis,(e_f!gwhe/f/eeod.) (;) se(ef)dít(ef)que(e) su(e)pra(e_f!gwh) sín(hv_GF)gu(fih/ij)los(i) e(i_g!hwiHG__F/gwh_GF)ó(ef!gv_FEf)rum:(fe..)",
+    "responsum":"Et(e) re(e)plé(e_i)ti(i) sunt(ikijvIHih__) om(i)nes(kj/kl) Spí(l_m)ri(i)tu(k_i!jwkj) Sanc(i)to,(iji/io/ghg.) (;) et(hg) cœ(hi)pé(ij)runt(i) lo(ij)qui(i) vá(ig)ri(i)is(i) lin(h!iwjhhg)guis,(e_f!gwhe/f/eeod.) (,) pro(ef)ut(e) Spí(fd)ri(e)tus(f!gwh) Sanc(h_g!hwihi)tus(ih__) da(hg)bat(hi) é(ivHG___F/gwh)lo(h)qui(g!hwiHG__F/gwh_GF) il(ef!gv_FEf)lis,(fe..) (;) al(e_i)le(ihi)lú(k_i!jwkjk)ja,(ji__) (,) al(e_f)le(efED)lú(efe/f_g)ja,(f_) (,) al(f@ioj)le(ivHG__F/gwh_GFgvFE)lú(e!fwgfg)ja.(fe..) (::)",
+    "versus":"Dum(i) er(i!jwk_JI)go(h_i/hhog) es(h)sent(h) dis(h)cí(hi)pu(h)li(h) in(h) u(h)num(h) con(h)gre(h)gá(hi)ti(h) (`) prop(h)ter(h) me(h)tum(ig) Ju(hi)dæ(hi)ó(i!jwkj__)rum,(ji..) (;) so(h_i/hhog)nus(hih) re(i)pén(ij~)te(i) de(i) cæ(i)lo(i) ve(i)nit(ijijv_IH) su(ih)per(h!iwji/jkj) e(i_h!iwjij)os.(iv_HGhg..)",
+    "gloria":"Gló(i!jwk_JI)ri(hg)a(h_i/hhog) Pa(ig)tri,(hi) et(hi) Fí(i)li(i!jwkj__)o,(ji..) (;) et(i) Spi(i)rí(ijijv_IH)tu(ih)i(h!iwji/jkj) Sanc(i_h!iwjij)to.(iv_HGhg..)"
   },
   {
 		"tags":["pentecostes","feria-v","laudes","antiphona","antiphona-benedictus"],
@@ -90,6 +162,19 @@
   {
 		"tags":["pentecostes","feria-v","vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2574"]]
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Non(e_f) vos(ef) me(e) e(e)le(e_f!gwh)gís(h_g!hwihi_/jv)tis,(i.) *(,) sed(iji) e(h)go(hg) e(hf)lé(g_0//hih)gi(h_f!gwh_GFEf) vos,(fe..) (;) et(efef>) pó(d)su(f)i(f!gwh/ivH__G/hwihi) vos:(ih..)",
+    "responsum":"Ut(hi) e(hg)á(e_f!gwhfg)tis,(fe..) (,) et(ef~) fruc(f)tum(efED) af(fe)fe(de)rá(e!fwgfg)tis,(fe..) (;) et(g/hi~) fruc(i>_)tus(gh!iv) ves(ihhvFE___D/ewfef_/gv)ter(f) (,) má(d!ewfef)ne(fv_EDe)at,(ed..) (;) al(fd~)le(e)lú(f!gwh)ja,(g_h/ffoe) (,) al(e)le(e_0//fde)lú(e!fwgfg)ja.(fe..) (::)",
+    "versus":"Sic(i!jwk_JI)ut(h_i/hhog) mi(ig)sit(hi) me(hi) Pa(i!jwkj__)ter,(ji..) (;) et(i) e(iji/jv_IH)go(ih) mit(h!iwji/jkj)to(i_h!iwjij) vos.(iv_HGhg..)"
+	},
+	{
+		"tags":["pentecostes","feria-vi","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Spí(dg!hv)ri(g)tus(g) *() Dó(g)mi(gff_d!ewf_ED)ni(c_d) re(cd)plé(fg)vit(f!gwh/gj/hhog) (,) or(jsjsjh~)bem(j) ter(i!jwkJI___H/iwj_IH)rá(gh!iv_HGh)rum:(hg..)",
+    "responsum":"Et(ji) hoc(jkj) quod(j>) cón(hjgh)ti(g_f!gwhgh)net(hg__) óm(ixf!gwhgh/i>)ni(h)a,(hg..) (;) sci(fg/hg)én(h>)ti(g)am(ghGE) ha(fe)bet(fg) vo(gffo)cis,(de!fvED) (,_) al(c)le(d)lú(fg)ja,(gfg/ffoe) (,) al(fg/hg)le(fg)lú(g!hwihi)ja.(hg..) (::)",
+    "versus":"O(j)mni(ji)um(jkjijihhog) est(hi) e(i)nim(ih~) ár(jk)ti(j)fex,(j) (,) om(j)nem(j) ha(ih)bens(ij) vir(hi)tú(g!hwih__)tem,(hg..) (;) óm(g)ni(g)a(ixhi_HGhih) pros(ghf)pí(g_h)ci(iyh!iwji/jkJ_IH)ens.(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(h!iwji/jkJ_IH)to.(h_i_HGhg..)"
   },
   {
 		"tags":["pentecostes","feria-vi","laudes","antiphona","antiphona-benedictus"],
