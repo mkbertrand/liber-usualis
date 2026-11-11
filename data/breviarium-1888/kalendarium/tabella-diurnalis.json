@@ -197,6 +197,12 @@
 			]
 		},
 		{
+			"include":["innocentes","festum"],
+			"response":[
+				{"include":["dominica","tempus"],"target":0,"adde":"in-dominica"}
+			]
+		},
+		{
 			"include":["suffragium","commemoratio"],
 			"response":[
 				{"include":["duplex-i-classis"],"response":"dele","target":0},
