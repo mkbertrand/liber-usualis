@@ -25,6 +25,25 @@
 		"antiphona-i":[["/antiphonae/H1N1A1"]],
 		"antiphona-ii":[["/antiphonae/H1N1A2"]],
 		"antiphona-iii":[["/antiphonae/H1N1A3"]]
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) Vi(h)di(f) Dó(g)mi(f)num(fvfe___) se(dc)dén(d!ewfef>)tem(ed..) *(;) su(fe)per(f) só(g_h)li(ge)um(g) ex(fe)cél(fge___fvE~C~)sum(dc__) (,) et(ecd___) e(de@fog_//hv)le(fe__)vá(de@fv_EDe)tum,(ed..) (;) et(h!iwjjvIHho) ple(g)na(h) e(j_k@lv)rat(k) om(k>)nis(k!lwm) ter(j_kj~)ra(h) (,) ma(h>)je(hk)stá(j)te(ij) e(ixhvG__F/gwh/ih__g~)jus:(hg..)",
+    "responsum":"Et(f@goh) e(hv_f@goh)a(hvGF___e_gF__ED/ewf) (`) quæ(fe__) sub(d) i(e)pso(fg) e(g_0//hfg)rant(f_g/f_1fod<) (,_) re(e_cd)plé(de@fog/f@goh)bant(hg/hfgvF__E<) tem(d!ewfef_)plum.(ed..) (::)",
+    "versus":"Sé(h)ra(h)phim(hg/hg/gof~) sta(g)bant(hf~) su(gh)per(gh) il(ixh_1/i_1ioh)lud,(h.) (;) sex(hf) a(gh)læ(h) u(ixhi)ni(h) et(h) sex(h) a(hg/hg)læ(hf) ál(ixf!gwhg/hih)te(hv_GF_E/fwg_//hv)ri.(gf..)"
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:2;\n%%\n(f3) Be(f)ne(f)díc(f)tus(e_fEC___eeof) *(,) Dó(fg)mi(f)nus(ffoe) De(f!gwhiv_GFhhof)us(f) Is(gf)ra(ef)ël,(fhf/fe..) (;) qui(h_i) fa(i_h!iwji)cit(h_) mi(hg)ra(fe)bí(fg)li(f)a(f_0hv_1hv_2hf__foefv_) (,) (h!iwjjoIG_0F_0hv_hv_hvGF) so(f_g@hv)lus:(gf..)",
+    "responsum":"Et(f<) be(fv_EC)ne(ef)díc(hv_hv_)tum(f!gwhG__FEfe__) no(h!iwj_IHi)men(ih__) (,) ma(hg~)jes(hi)tá(ihhog)tis(feg_) e(g_//hig/hv_G~F~)jus(gf..) (;) in(ef) æ(f_//hhoi_/h!iwji)tér(gf__/f_g_!h_i_/hjijHGFe@go@hf~)num.(f.) (::)",
+    "versus":"Re(f)plé(e_f!gwhhi)bi(h)tur(h) ma(h)jes(h)tá(ij)te(i) e(h)jus(hg) om(hi>)nis(gh) ter(f!gwhg)ra:(gf..) (;) fi(fe)at,(f_0hv_hv_2hf__foefv_,h!iwjjoIG_0F_0hvhv__hvGF) fi(f_g@hv)at.(gf..)"
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:1;\n%%\n(c4) Be(d)ne(d)dí(d!ewf/gf)cat(d_0//fvEDCd_) *() nos(f_g) De(ixg_hG__F/gwhgh_//iv)us,(h_) (,) De(hg)us(fv_ECd_) nos(d@eof)ter,(ed..) (;) be(h)ne(hg)dí(h)cat(jijok) nos(jvIGh) De(h!iwjij)us:(ih..)",
+    "responsum":"Et(h_k) mé(k)tu(j)ant(igh) e(hig___/ijh___)um(h_) (;) om(hg__hvGF___gh~)nes(h_) fi(h)nes(g_0//hvGE_0fvED_0dh_2jv_IGhv_GFgoh_) (`) (hv_//ghGE__fvED___) (`) (hv_//hggof_0/ggoh) ter(d@eof)ræ.(ed..) (::)",
+    "versus":"De(h)us(g_h_GF) mi(gh)se(g)re(gh)á(h!iwj_IGh)tur(ggo~) nos(f@goh)tri(g) (,) et(g) be(g)ne(ge)dí(f@goh)cat(fefog) nos(fe) De(d.)us.(d.)",
+    "gloria":"Gló(h)ri(g_h_)a(gf) Pa(g_h!iwj_IGh)tri,(ggo) et(f) Fí(goh)li(g)o,(g.) (;) et(g) Spi(ge)rí(f@goh)tu(fefog)i(fe) Sanc(d.)to.(d.)"
   },
   {
 		"tags":["trinitas","matutinum","nocturna-ii","antiphona"],
@@ -32,12 +51,37 @@
 		"antiphona-ii":[["/antiphonae/H1N2A2"]],
 		"antiphona-iii":[["/antiphonae/H1N2A3"]]
   },
+	{
+		"tags":["trinitas","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:3;\n%%\n(c3) Quis(e!fwg@hv) De(fg)us(e) mag(fgfg_//h>)nus(g_) *(,) si(ef)cut(e) De(fhhffoe)us(fgfg) nos(g_f!gwh/ig__/ivHG___FEfog)ter?(g.)",
+    "responsum":"Tu(g!hoi) es(hv_hv_GF) De(h_f!gwhG__FEf)us(fe__) (,) qui(e_f) fa(fefd/eof)cis(e) mi(e)ra(fgfg_//ghG___F/gwh/ig__ijIH___hof/gv/ghGF___hvGE___fde)bí(ef_EDefe)li(dc)a.(c.) (::)",
+    "versus":"No(g_0//hih_0)tam(ffoe) fe(g)cís(g!ho)ti(f) in(f) pó(fg)pu(f)lis(f) vir(fe~)tú(f)tem(h) tu(gihhs)am:(hg..) (;) re(fe)de(fgf)mís(g!ho)ti(g) in(g) brá(g)chi(g)o(gf) tu(g!ho)o(g) (,) pó(g_0//hffoe!fwgf/g_h)pu(g)lum(g) tu(g_f!gwh/ig__/ivHG___FEfog)um.(g.)"
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) Ti(ef)bi(e) laus,(e) *() ti(e)bi(ef!hv) gló(h_1//gh/ih__/ij)ri(i)a,(i.) (;) ti(ij)bi(i) gra(i)ti(i)á(gxih/hoi_HFg)rum(fe) ác(d_f/hih)ti(fe)o(e.)",
+    "responsum":"In(ei~) sǽ(i)cu(hi)la(i) sem(ikj/kl)pi(kj)tér(isksksis/jg/hi~)na,(i.) (;) o(gxivhshsivHFgvFE) be(d@foh)á(gyhvGFfihi)ta(i_g!hwi_HGF/gwhGF) Trí(e)ni(efe___)tas.(e.) (::)",
+    "versus":"Et(ei~) be(i)ne(kj)díc(hi)tum(i>) no(ij)men(i) gló(i)ri(kj)æ(klKJI_) tu(kj)æ(hi) san(i!jwkj__)ctum:(ji..) (;) et(hi/hhog~) lau(hi)dá(ij)bi(i)le(i_) (,) et(i) su(gxivhshsivHFg)pe(fe)re(ef)xal(d_f/hih>)tá(fe__)tum.(e.)"
+	},
+	{
+		"tags":["trinitas","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:4;\n%%\n(f3) Ma(gvFE___ffo/fg~)gnus(g_) *() Dó(g_h_f_2//gv_//f_g/h_i/ji__)mi(hg)nus,(g) (,) et(g!hw@ij) ma(ij~)gna(jh/iji) vir(hf~)tus(h_) e(ghf___foe/gv_2//hih___/ih/i_j_IHiiog~)jus:(g.)",
+    "responsum":"Et(g) sa(i)pi(j)én(kxjk~)ti(j)æ(j) e(kxj_i!jwk_JIj>)jus(iji___ioHG) (,) non(h_) est(geg//e_f!hv_FEgv_//gi@jvjoijvIHiv_HFg) nú(g!hwih/iji)me(g_i_HG)rus.(g.) (::)",
+    "versus":"Ma(j>)gnus(i_h!iwji__/jv_IHho_g) Dó(fi)mi(i)nus,(i) (,) et(kxjk~) lau(j)dá(ih)bi(ij)lis(ih) ni(g!hwih)mis,(hg..) (;) et(h) ma(fg)gni(g)tú(g)di(h)nis(gf) e(gh~)jus(g) (,) non(ghf___foe/gv_2//hih___/ih/i_j_IH) est(ih) fi(g.)nis.(g.)",
+    "gloria":"Gló(j)ri(ij)a(i_h!iwji/jv_IGh_g_) Pa(ih)tri,(ij) et(ih~) Fí(g)li(g!hwi_h_)o,(hg..) (;) et(g) Spi(g)rí(g_h_f_foe/gv_2//h_i_h_/ih/i_j_IH)tu(i)i(ih) Sanc(g.)to.(g.)"
+  },
   {
 		"tags":["trinitas","matutinum","nocturna-iii","antiphona"],
 		"antiphona-i":[["/antiphonae/H1N3A1"]],
 		"antiphona-ii":[["/antiphonae/H1N3A2"]],
 		"antiphona-iii":[["/antiphonae/H1N3A3"]]
   },
+	{
+		"tags":["trinitas","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:8;\n%%\n(c4) Be(g)ne(gv_fssfog_)di(d_0@e_f@gwhg)cá(fg)mus(g_) *(,) Pa(gj_jk)trem(j) et(j<) Fí(k)li(ji)um(hjg___/hhog) (,) cum(gffoe~) Sanc(d!ewf_//g_h>)to(g) Spí(hg)ri(fg)tu:(g.) (;) lau(fg~)dé(g_h_GFg_h)mus(g) (,) et(g_h) su(gf)pe(g)re(h!iwj)xal(ji/jkJI>)té(h_/jvIGho)mus(g) e(gf__/f_d!ewfe__)um(dc..)",
+    "responsum":"In(cg~) sǽ(g_0//hfg_//gh!jv_joIG__hfg_ , hv_/ghffvED___ , dg_//hfg_ , jvjvI___H/iwjIH___/iv_HGgo)cu(fg)la.(g.) (::)",
+    "versus":"Be(j)ne(ji)díc(hi)tus(i) es,(ih) Dó(jk)mi(j)ne,(j) in(j) fir(ji)ma(ih)mén(ij)to(hi) cæ(g!hwih)li:(hg..) (;) et(g_) lau(fg~)dá(g)bi(g)lis(g) et(g) glo(g)ri(f)ó(f_d!ewfe__)sus(dc..)"
+	},
   {
 		"tags":["trinitas","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["/antiphonae/19972"]]
