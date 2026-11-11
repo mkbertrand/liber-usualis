@@ -210,7 +210,10 @@
     "datum":""
   },
   {
-    "tags":["officium","triduum"],
+    "tags":[
+      ["officium","triduum"],
+      ["officium","sine-ritibus","triduum"]
+    ],
     "matutinum-laudes":[
       ["aperi-domine"],
       ["ritus","matutinum"],
