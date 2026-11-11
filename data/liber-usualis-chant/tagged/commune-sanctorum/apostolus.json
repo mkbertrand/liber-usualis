@@ -126,33 +126,5 @@
 		"antiphona-iv":[["/antiphonae/2337"]],
 		"antiphona-v":[["/antiphonae/2079"]],
 		"antiphona-magnificat":[["/antiphonae/1915"]]
-  },
-  {
-		"tags":[
-			["apostolorum-tempore-paschali","vesperae","hymnus"],
-			["apostolorum-tempore-paschali","matutinum","hymnus"]
-		],
-		"datum":[["/hymni/2295"]]
-  },
-  {
-		"tags":["apostolorum-tempore-paschali","matutinum","antiphona","antiphona-invitatorium"],
-		"datum":[["/invitatoria/APTPI"]]
-  },
-  {
-		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-ii"],
-    "incipit":"mode:3;\n%%\n(c4) Vir(ed~)tú(g)te(hihi) mag(jsjsjg/hghsjsjskjjs)na(ji__) *(,) red(i)dé(i)bant(jijg) A(h!iwj)pós(ikjjs)to(jv_//hj@kv_JIj)li(iio@jv.)",
-    "responsum":"Te(h)sti(hl)mó(l)ni(lk/lmkkvJIj)um(ji__) (,) re(i)sur(i)rec(i_k)ti(j)ó(ivH__G/hwihi)nis(ih__) (,) Je(hi)su(h) Chris(j_h!iwj_IHi)ti(ih__) (`) Dó(he)mi(g)ni(h) nos(j_h!iwjI__HGh)tri,(hg..) (;) al(g<)le(ikj___)lú(hgh_//i>)ja,(h_) (`) al(h>)le(gvF__D/ewf)lú(egffs)ja.(fe..) (::)",
-    "versus":"Re(i)plé(ikjjs)ti(h!iwji/hhg) qui(ij)dem(h) Spí(hg)ri(h)tu(j) Sanc(ikjjs)to,(ji..) (;) lo(ig)que(hi)bán(i)tur(i) cum(i) fi(i)dú(i!jo1)ci(i)a(ikj___jvI__H/iwji__) ver(hg~)bum(g_h!iwj) De(jiioh/iv_HGh)i.(hg..)"
-  },
-  {
-		"tags":["apostolorum-tempore-paschali","matutinum","nocturna-ii","responsorium","responsorium-iii"],
-    "incipit":"mode:7;\n%%\n(c3) Is(ef)ti(e) sunt(e) *() a(ef~)gni(e) no(e!foh)vél(hv_//gh/ihi_//j>)li,(i_) (,) qui(i) an(i)nun(i<)ti(i)a(i)vé(ihhv_GFg@ho)runt,(g_) (,) al(hshshf~)le(g!hwiHG___F/gwh_GF)lú(e!fwgfg>)ja :(fe..) (:) mo(h_0//hi)do(h) ve(h)né(hi)runt(h) ad(g) fon(e_0/fhf_/gvF~E~)tes,(fe..)",
-    "responsum":"Re(g)plé(e!fwg_//ho)ti(g) sunt(g) cla(g)ri(hg)tá(fihi_//j)te,(i.) (;) al(i)le(i)lú(ihhog/hv)ja,(hg__) (,) al(f!gwh/hi~)le(hv_//ghFE__)lú(e!fwgfg>)ja.(fe..) (::)",
-    "versus":"In(i) con(i)spéc(i!jwk_JI)tu(h_i/hhog) A(hi)gni(h_) (,) a(h)míc(hi)ti(h) sunt(ig) sto(hi)lis(hi) al(i!jwkj__)bis,(ji..) (;) et(h_i/hhog) pal(hi~)mæ(i) in(i) má(i)ni(ijij_IH)bus(ih) e(h!iwji/jkj)ó(i_h!iwjij)rum.(iv_HGhg..)",
-    "gloria":"Gló(i!jwk_JI)ri(hg)a(h_i/hhog) Pa(ig)tri,(hi) et(hi) Fí(i)li(i!jwkj__)o,(ji..) (;) et(i) Spi(i)rí(ijij_IH)tu(ih)i(h!iwji/jkj) Sanc(i_h!iwjij)to.(iv_HGhg..)"
-  },
-  {
-		"tags":["apostolorum-tempore-paschali","laudes","hymnus"],
-		"datum":[["/hymni/11809"]]
   }
 ]

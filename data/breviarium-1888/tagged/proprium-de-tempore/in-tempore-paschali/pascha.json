@@ -117,7 +117,7 @@
 			"R. ",["incipit"]," * ",["responsum"],
 			"\nV. ",["versus"],
 			"\nR. ",["responsum"],
-			"\nV. Glória Patri, et Fílio, et Spirítui sancto.",
+			"\nV. ",["gloria"],
 			"\nR. ", ["incipit"]," ",["responsum"]
 		],
 		"incipit":"Ángelus Dómini descéndit de cœlo, et accédens revólvit lápidem, et super eum sedit, et dixit muliéribus:",
@@ -391,9 +391,7 @@
 	},
 	{
 		"tags":["pascha","feria-iv","matutinum","responsorium","responsorium-ii"],
-		"incipit":"Ego sum vitis vera, et vos pálmites:",
-		"responsum":"Qui manet in me, et ego in eo, hic fert fructum multum, allelúja, allelúja.",
-		"versus":"Sicut diléxit me Pater, et ego diléxi vos."
+    "datum":[["martyrum-tempore-paschali","nocturna-iii","responsorium","responsorium-i"]]
 	},
 	{
 		"tags":["pascha","feria-iv","matutinum","lectio","lectio-iii"],
@@ -521,9 +519,7 @@
 	},
 	{
 		"tags":["pascha","sabbatum","matutinum","responsorium","responsorium-ii"],
-		"incipit":"Isti sunt agni novélli, qui annuntiavérunt, allelúja: modo venérunt ad fontes,",
-		"responsum":"Repléti sunt caritáte, allelúja, allelúja.",
-		"versus":"In conspéctu Agni amícti sunt stolis albis, et palmæ in mánibus eórum."
+    "datum":[["apostolorum-tempore-paschali","nocturna-ii","responsorium","responsorium-iii"]]
 	},
 	{
 		"tags":["pascha","sabbatum","matutinum","lectio","lectio-iii"],
