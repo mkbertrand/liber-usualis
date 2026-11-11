@@ -51,3 +51,23 @@ def test_composite_commemoration_name_renders_as_heading() -> None:
     renderer.recurse_rite(element, None, frozenset({'ritus'}))
     renderer.close_paragraph()
     assert 'Dominica VI quæ superfuit post Epiphaniam' in ''.join(renderer.rite)
+
+
+def invitatory_chomp(name: str, extra_tags: frozenset[str]) -> str:
+    from datamanage import render_resources
+    from renderer.chomp import chomp
+    gabc = open(f'data/liber-usualis-chant/nocturnale/untagged/invitatoria/{name}.gabc', encoding='utf-8').read()
+    return chomp(gabc, frozenset({'matutinum', 'antiphona', 'antiphona-invitatorium'}) | extra_tags, render_resources())
+
+
+def test_invitatory_takes_no_psalm_tone_ending() -> None:
+    # Ave Maria (mode 7a) has a psalm tone, but the Invitatory is answered by the Venite rather than a Euouae
+    assert 'E(' not in invitatory_chomp('CSMSI', frozenset())
+
+
+def test_invitatory_pars_begins_after_the_asterisk() -> None:
+    # Sancta Maria: the referenced chant holds the whole antiphon; pars repeats only its second half, under a single clef
+    gabc = invitatory_chomp('CBMVI', frozenset({'pars'}))
+    body = gabc.split('%%\n', 1)[1]
+    assert re.match(r'\(c3\)\s+In\(d_f@gwh\)ter\(i\)', body)
+    assert 'San(' not in body

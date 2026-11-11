@@ -74,6 +74,8 @@ def chomp(gabc: str, tags: frozenset[str], resources: dict[str, Any]) -> str:
             end = max(gabc.find('*'), 0)
             gabc = gabc[:end] + '(::) ' + euouae
         elif 'pars' in tags:
+            # Chant referenced from untagged resources still holds the whole antiphon; text already split has no asterisk left
+            gabc = gabc[gabc.find('*') + 1:]
             gabc = re.sub(r'^(?:\*\s)?\(.?\)', '', gabc.strip(), count=1)
             if clef:
                 gabc = f'({clef}) ' + gabc
@@ -81,7 +83,8 @@ def chomp(gabc: str, tags: frozenset[str], resources: dict[str, Any]) -> str:
         elif 'repetita' in tags:
             gabc = gabc.replace('*', '', 1)
             gabcdata = '%%\n'
-        elif not ('commemoratio' in tags or 'suffragium' in tags):
+        # The Invitatory is answered by the Venite on its own tone, so it takes no psalm-tone ending
+        elif not ('commemoratio' in tags or 'suffragium' in tags or 'antiphona-invitatorium' in tags):
             gabc = gabc + euouae
 
         gabcdata = ('initial-style:0;\n' if ('repetita' in tags or 'pars' in tags) else 'initial-style:1;\n') + gabcdata
