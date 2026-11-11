@@ -2,6 +2,87 @@
   {
 		"tags":["hebdomada-passionis","dominica","i-vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2740"]]
+	},
+	{
+		"tags":["hebdomada-passionis","dominica","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Is(e_i)ti(i) sunt(i_) di(iji)es(hih) *(,) quos(h) ob(h)ser(h)vá(hih)re(hv_GF) de(h)bé(hg/hiffoe)tis(e_f!gwhe__/fv_/eeod) (,) tem(g_0/hi~)pó(i_ihi)ri(f!gwh)bus(g!hwiHG___F/gwh_GF) su(ef!gv_FEf)is:(fe..)",
+    "responsum":"Quar(ehg~)ta(h)dé(i)ci(h)ma(g) di(i)e(ji) ad(hi~) vés(i)pe(ij_ji__)rum(i) (,) Pas(j_k)cha(j_k_JH) Dó(j_k)mi(j_k)ni(ij_ji__) est,(i.) (;) et(e) in(e) quin(ehg~)ta(h)dé(ij)ci(i)ma(hg__/hv_GFgf__) so(f)lem(fhg~)ni(h)tá(i_j)tem(iiog~) ce(ihhs)le(fg)brá(e)bi(ef!gv_FEf)tis(eeod) (,) al(g_0/hi~)tís(i_ihi)si(f!gwh)mo(g!hwiHG___F/gwh_GF) Dó(e)mi(ef!gv_FEf)no.(fe..) (::)",
+    "versus":"Lo(i)cú(i!jwk_JI)tus(hg) est(h_i/hhog) Dó(hi)mi(h)nus(h) ad(h) Mó(ig)y(hi)sen,(hi) di(i!jwkj__)cens:(ji..) (;) Ló(h_i/hhog)que(hih)re(i) fí(ij)li(i)is(i) Is(ij)ra(i)ël,(i) (,) et(i) di(ijij_IH)ces(ih) ad(h!iwji/jkj) e(i_h!iwjij)os:(iv_HGhg..)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-i","responsorium","responsorium-ii"],
+			["hebdomada-passionis","feria-v","matutinum","responsorium","responsorium-ii"]
+		],
+    "incipit":"mode:8;\n%%\n(c4) Mul(d)ti(d)pli(d)cá(f_g)ti(hghFD) sunt(fg!hvGFgh_hg__) (,) *() qui(f) tri(h)bu(ji)lant(g_h>) me,(g) (,) et(f_h) di(h_jHG___F_g_h_!jvHF___g_h)cunt:(g.) (;) Non(h) est(g) sa(h)lus(g) il(h>)li(g) in(f) De(g)o(gh) e(f_gf~)jus.(f.)",
+    "responsum":"Ex(f_h)súr(j_0jk~)ge,(kvJI__jvI__HGhg__) Dó(hi)mi(i)ne,(ji__/jh__//kv_2) (`) sal(h>)vum(g>) me(f@goh) fac,(ggof) De(f_g)us(gh!jvHFg) me(gh!iv_HGh)us.(hg..) (::)",
+    "versus":"Ne(j)quán(ji)do(jkj/iji/hhog) di(hi)cat(i) in(i)i(ih)mí(ij)cus(hi) me(g!hwih__)us:(hg..) (;) Præ(g)vá(fg)lu(g)i(g) ad(ixhi_HG/hih)vér(ghf~)sus(g_h) e(iyh!iwji/jkJ_IH)um.(h_i_HGhg..)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-i","responsorium","responsorium-iii"],
+			["hebdomada-passionis","feria-v","matutinum","responsorium","responsorium-iii"]
+		],
+    "incipit":"mode:4;\n%%\n(c4) Us(f)que(de)quo(e) *() e(e)xal(e)tá(fe__)bi(e)tur(egFE__fv_EDed__) (;) i(e)ni(d)mí(c)cus(cb~) me(dede)us(ec/efd_cscs_aba) (,) su(c_0)per(fd~) me?(e_/fsfsfs.)",
+    "responsum":"Ré(d_g)spi(ixhgh_/iv)ce(h) et(h) ex(g)áu(f@goh>)di(g) me,(ge/ghFE__fv_EDed__) (;) Dó(f)mi(gh)ne,(hhog) De(g)us(g_d!ewf) me(egffs)us.(fe..) (::)",
+    "versus":"Qui(h) trí(h)bu(h)lant(h>) me,(g_f!gwhg__/hv_GEfe__) ex(g)sul(g)tá(gh)bunt(g) si(g) mo(gf)tus(gh) fú(gf)e(e!fwgf__)ro:(fe..) (;) e(f)go(de) au(ef~)tem(e) in(e) mi(e)se(e)ri(e)cór(ef~)di(e)a(e) tu(e!fwg_FE)a(g) spe(ghgh_GF)rá(ef/gffs)vi.(ed..)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-ii","responsorium","responsorium-i"],
+			["hebdomada-passionis","feria-vi","matutinum","responsorium","responsorium-i"]
+		],
+    "incipit":"mode:8;\n%%\n(c4) De(g)us(g) me(jjo)us(hi) es(hg__) tu,(ighsjsskjji..) *(,) ne(ji) dis(jk)cé(k_kj__)das(hj__h!iwj_IH) a(gh!iv_HGh) me:(hg..)",
+    "responsum":"Quón(j_0jk)i(j)am(j) tri(j_)bu(i@jok)lá(j_k)ti(i_jI__HGh)o(hg__) pró(h)xi(j_h!iwjI__HG)ma(hg__/hv_GFg) est,(gf..) (;) et(hf~) non(ghg) est(h) qui(hjHG__hv_//f_g_h!iwjI__H/iwj_IH) ád(g)ju(gh!iv_HGh)vet.(hg..) (::)",
+    "versus":"Tu(j) au(ji~)tem,(jkj/iji/hhog) Dó(hi)mi(i)ne,(i) (,) ne(i) e(i)lon(ih)gá(jk)ve(j)ris(j) au(j)xí(j)li(ji)um(ih) tu(ij)um(hi) a(g!hwih__) me:(hg..) (;) ad(g) de(fg)fen(g)si(g)ó(gh)nem(g) me(ixhi_HGhih)am(ghf) ás(g_h)pi(iyh!iwji/jkJ_IH)ce.(h_i_HGhg..)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+			["hebdomada-passionis","feria-vi","matutinum","responsorium","responsorium-ii"]
+		],
+    "incipit":"mode:2;\n%%\n(f3) In(c) te(ef) jac(h)tá(hgh)tus(fg) sum(ffoe) *() ex(e) ú(f)te(h)ro,(h) (`) de(h) ven(hi~)tre(h) ma(hvG__FEf)tris(f!gwh_/ihhog) meæ(fg!hv_GFggof.) (;) De(h)us(ij) me(jiiog)us(hi) es(hig___hv_GFg) tu;(gf__) (,) ne(f) dis(fg!hvGFE)cé(f)das(hg/hih) a(hv_GFg) me,(ffoe.)",
+    "responsum":"Quó(f_c!dwe_/fg)ni(f)am(f) tri(f)bu(f)lá(fg)ti(f)o(f) pró(fg)xi(f)ma(f_e/f!gwh_/ivH__G/hwihi) est,(ih..) (;) et(h_i>) non(hig___hv_GFg) est(gf__) qui(h_f!gwhg__) ád(f)ju(fg!hv_GFg)vet.(gf..) (::)",
+    "versus":"Sal(e_f!gwh_hi~)va(h) me(h) ex(h) o(hg)re(hi) le(gh)ó(f!gwhg__)nis,(gf..) (;) ef(f) a(ef) cór(fg)ni(f)bus(f) u(f)ni(f)cór(fg~)ni(f)um(f) hu(f)mi(f)li(f!gwh_GFE__)tá(f)tem(hg/hih) me(hv_GFg)am.(ffoe.)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+			["hebdomada-passionis","feria-vi","matutinum","responsorium","responsorium-iii"]
+		],
+    "incipit":"mode:7;\n%%\n(c3) In(g_h) pró(i)xi(h)mo(g) est(g_h!iwj_ji__) *() tri(g)bu(h)lá(ij)ti(ih)o(h) me(hv_GF)a,(h) Dó(f_0//hef)mi(e_d!ewfef)ne,(fe..) (;) et(e) non(fe__/f!gwh_GFg) est(gf__) qui(e_f//df!gv_//h_f!gwh_GF) ád(e)ju(ef!gv_FEf)vet;(fe..) (;) ut(g) fó(e!fwg_/ho)di(g)ant(g) ma(g)nus(g@hoi) me(hg__)as(giHG__hvG__FEfe__) (,) et(i_) pe(ih)des(ij) me(i_jI__HGh)os:(hg..) (;) lí(i)be(h)ra(g) me(g_h!iwj_ji__) de(g) o(g_h!iwj)re(iji) le(hhog)ó(h_f!gwhG__FEf)nis,(fe..)",
+    "responsum":"Ut(g) nar(e!fwg_/ho)rem(g) no(h)men(g@ho) tu(fi__h!iwjij)um(ji__) (,) frá(i_ihi)tri(f!gwh)bus(g!hwiHG___F/gwh_GF) me(ef!gv_FEf)is.(fe..) (::)",
+    "versus":"E(i!!jwk_JI)ru(hg)e(h_i/hhog) a(h) frá(hi)me(h)a,(h) De(hi)us,(h) á(ig)ni(hi)mam(hi) me(i!jwkj__)am,(ji..) (;) et(h_i/hhog) de(hih) ma(i)nu(i) ca(ij)nis(i) ú(ijij_IH)ni(ih)cam(h!iwji/jkj) me(i_h!iwjij)am.(iv_HGhg..)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-iii","responsorium","responsorium-i"],
+			["hebdomada-passionis","feria-iv","matutinum","responsorium","responsorium-i"],
+			["hebdomada-passionis","sabbatum","matutinum","responsorium","responsorium-i"]
+		],
+    "incipit":"mode:4;\n%%\n(c4) To(d)ta(fd) di(e)e(e_0//fgf/eeof) *(,) con(d)stris(g)tá(ixhi)tus(h) in(h)gre(iyiji)di(hg)é(g_h_GF)bar(ixfg!hv_//ig/hg__) Dó(e)mi(egffs)ne,(fe..) (;) quó(h)ni(gf)am(fg) á(gd)ni(fe)ma(fg) me(gffoe/fv)a(fe__) (,) com(d)plé(fgf)ta(fe) est(g) il(h>)lu(g)si(h)ó(g_0//hvGF)ni(ef/gffs)bus,(ed..)",
+    "responsum":"Et(d_0/fh~) vim(h) fa(ixh!iwj)ci(g)é(e_f)bant,(g!hwihho_g) qui(h) quæ(gf)ré(gv_FD)bant(ixe_f_g!hwihho_g) á(hggof)ni(f@goh)mam(ixhiGFghg) me(egffs)am.(fe..) (::)",
+    "versus":"A(h)mí(h)ci(h) me(gh)i(g_f!gwhg__/hv_GEfe__) et(g) pró(g)xi(g)mi(g) me(gh)i(g) (,) ad(g)vér(gh)sum(g) me(g) ap(g)pro(g)pin(g)qua(g)vé(g)runt(gf) et(gh) ste(gf)té(e!fwgf__)runt:(fe..) (;) et(f) qui(de) jux(e)ta(e) me(e) e(e@fo)rant,(e) (,) de(e) lon(e!fwg_FE)ge(g) ste(ghgh_GF)té(ef/gffs)runt.(ed..)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+			["hebdomada-passionis","feria-iv","matutinum","responsorium","responsorium-ii"],
+			["hebdomada-passionis","sabbatum","matutinum","responsorium","responsorium-ii"]
+		],
+    "incipit":"mode:2;\n%%\n(f3) Ne(c) a(c)vér(e_0/fg>)tas(f) *() fá(f)ci(f)em(h) tu(hg/hif_/gv_)am(ffoe) (,) a(f) pú(h)e(hvG__FEf_g)ro(f) tu(f)o,(f!gwh/ih_ho_g) Dó(f)mi(fg!hv_GFg)ne;(gf..)",
+    "responsum":"Quón(h_0hi)i(h)am(h) trí(hg/hoi)bu(g_h_GFg)lor,(gf..) (;) ve(f)ló(fg!hvGFE)ci(f)ter(hv_hv_) ex(ih_ho_g)áu(f)di(fg!hv_GFg) me.(gf..) (::)",
+    "versus":"In(f)tén(e_f!gwhhi~)de(h) á(ij)ni(i)mæ(h) me(hi)æ,(h) (,) et(h) lí(hg)be(hi)ra(gh) e(f!gwhg__)am:(gf..) (;) prop(f)ter(ef) i(f)ni(f)mí(fg)cos(f) me(f)os(f!gwh_GFE__) é(f)ri(hg/hih)pe(hv_GFg) me.(ffoe.)"
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","dominica","matutinum","nocturna-iii","responsorium","responsorium-iii"],
+			["hebdomada-passionis","feria-iv","matutinum","responsorium","responsorium-iii"],
+			["hebdomada-passionis","sabbatum","matutinum","responsorium","responsorium-iii"]
+		],
+    "incipit":"mode:2;\n%%\n(f3) Quis(f_hgh~) da(hggf/gfg)bit(fe__) *() cá(e)pi(f)ti(g!hwi) me(iv_H_G/hwi_)o(iv_HGhg) a(f_e_/f!gwh)quam,(g_h_G_F.) (,) et(f) ó(gh)cu(hv_GF)lis(g!hwi) me(g_0/ifg)is(fe__) (,) fon(ehg~)tem(hi) la(h)cri(g_h_G_FE)má(f!gwh_GF)bi(ef)lem,(f.) (;) et(f) plo(gh)rá(hggf/gfg)bo(fe__) di(f_g!hwi_HG)e(hg) ac(iv_HGhg) noc(f_e_/f!gwh)te?(g_h_G_F.) (:) Qui(c_f!g!hwi_HG)a(hg) fra(i_j_I_H_GF)ter(f) pro(f)pín(g_/hfg)quus(fe) sup(ehg)plan(hi)tá(h)vit(g_f_/g_h) me,(hv_G_F.)",
+    "responsum":"Et(fh!i_5j) om(kxjkj>)nis(ih) a(gi)mí(iv_/hi!jv_IH)cus(hv_G_F_) frau(fe~)du(f)lén(fi_2iv_GFghg)ter(f_g_F_E_) in(ef)cés(fi_2iv_GF)sit(ghg) in(f_e_/f!gwh) me.(g_h_G_F.) (::)",
+    "versus":"Fi(c_f!g!hwi_HG)ant(hg) vi(i_j_I_H_GF)æ(f) e(f)ó(g_/hfg)rum(f_e_) (,) té(ehg)ne(hi)bræ(g_h_G_F_) et(ef) lú(f!gwh_GF)bri(ef)cum:(f.) (;) et(fh!i_5j) An(kxjkj>)ge(ih)lus(g!hwi) Dó(i)mi(iv_/hi!jv_IH)ni(hv_G_F_) pér(fe~) se(f)quens(fi_2iv_GFghg) e(f_e_/f!gwh)os.(gf..)"
   },
   {
 		"tags":["hebdomada-passionis","dominica","laudes","antiphona"],
@@ -20,6 +101,27 @@
   {
 		"tags":["hebdomada-passionis","dominica","ii-vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2718"]]
+	},
+	{
+		"tags":[
+			["hebdomada-passionis","feria-ii","matutinum","responsorium","responsorium-i"],
+			["hebdomada-passionis","feria-v","matutinum","responsorium","responsorium-i"]
+		],
+    "incipit":"mode:8;\n%%\n(c4) De(i)us(ki/jkj) me(j_h!iwjI__HGh)us,(hg__) *(;) é(j_0@kol)ri(ji)pe(jk_kj__) me(j) (,) de(j) ma(j)nu(i_j_IHih) pec(i)ca(jkj)tó(j_h!iwjI__HGh)ris,(hg..) (;) et(gh~) de(g) ma(gh)nu(g) con(g)tra(g) le(gh>)gem(g) a(g)gén(g)tis(ixhi_HGhih) et(ghf) i(g_h)ní(ixh!iwj_h/hwihi)qui:(ih..)",
+    "responsum":"Quón(h)i(g)am(hgh) tu(f_g) es(f_g_/ffod) pa(fe)ti(fg)én(g_hf~)ti(g)a(g) me(g!hwihi)a.(hg..) (::)",
+    "versus":"De(ji)us(jkj/iji/hhog) me(hi)us,(i) (,) ne(i) e(i)lon(ih)gé(ij)ris(hi) a(g!hwih__) me:(hg..) (;) De(g)us(fg) me(gh)us,(g) (,) in(g) au(g)xí(g)li(g)um(g) me(ixhi_HGhih)um(ghf) rés(g_h)pi(iyh!iwji/jkJ_IH)ce.(h_i_HGhg..)"
+	},
+	{
+		"tags":["hebdomada-passionis","feria-ii","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) Qui(d!ewf) cus(f)to(fgf)di(gh)é(hg__)bant(hggo) *() á(f)ni(gh)mam(h>) me(gf__)am,(fg!hvGFE__fvE__DCdc__) (,) con(c)sí(cfe)li(fg)um(goh) fe(d)cé(g)runt(fe) in(d) u(d)num,(df_fv_) (,) di(gffo_e)cén(de!fv_EDe)tes:(ed..) (:) De(c_d!ewf)us(gf/goh) de(c)re(d)lí(f_0@goh)quit(fe__) e(de!fv_EDe)um;(ed..)",
+    "responsum":"Per(h!iwj_jv_IG)se(h)quí(hkjk_/lv)mi(k)ni(k) (,) et(k) com(k)pre(k)hén(lwm>)di(j)te(h) e(h!iwjI__HG)um,(hg/hih) (;) qui(ji)a(j) non(l) est(kol) qui(j) lí(k)be(ji)ret(h) e(ixhi_ih__)um.(h.) (:) De(hg__)us(hggo) me(ixf!gwhgh_/iv)us,(h) (,) ne(f!gwhg) lón(h>)ge(g_h_GF)as(f) a(f) me;(ef!gv_gf..) (;) De(f)us(gh) me(h)us,(g) (,) in(f) ad(f)ju(f)tó(g_h)ri(fv_ED)um(d) me(d!ewfE__DC)um(d) in(dgffv_EC__d!ewf_ED)tén(d!ewfef)de.(ed..) (::)",
+    "versus":"Om(h)nes(hg/hggof) in(g)i(g)mí(g)ci(g) me(gh)i(g) ad(g)vér(gh~)sum(g) me(g) co(g)gi(g)tá(g)bant(hf~) ma(gh)la(gh) mi(ixh_0/iioh)hi;(h) (;) ver(hf~)bum(gh) i(h)ní(ixhi)quum(h) man(h)da(h)vé(ixhi)runt(h) ad(h)vér(h)sum(hg/hg) me,(hf) di(ixf!gwhg/hih)cén(hv_GF_E/fwg_/h>)tes:(gf..)"
+	},
+	{
+		"tags":["hebdomada-passionis","feria-ii","matutinum","responsorium","responsorium-iii"],
+    "incipit":"mode:8;\n%%\n(c4) Pa(d)cí(f_0//gh)fi(g)ce(g) *() lo(g)que(g)bán(g)tur(gh~) mi(h)hi(ixhg/higgf__) (,) in(gh)i(g)mí(g)ci(g_h!iwjI__H/iwj_IH) me(gh!iv_HGh)i,(ixg_h/ih..) (;) et(f) in(h) i(jkj)ra(jh) mo(j_k)lés(ki/jkh_/iv)ti(hhog) e(h_0//jvIGjv_jv_)rant(kvJI__jvI__HG) mi(hg__/hv_GFg)hi.(gf..)",
+    "responsum":"Vi(f)dís(gh)ti,(h) Dó(h)mi(g)ne,(g_h_GE) (`) ne(g) sí(f@goh)le(fe)as,(dec//d!ewfe__/fv_ED.) (;) ne(d) di(dg)scé(g_h_GFg_h)das(g_h!iwjI__H/iwj_IH) a(gh!iv_HGh) me.(hg..) (::)",
+    "versus":"E(ji)go(jkj/iji/hhog) au(hi)tem(i) cum(i) mi(i)hi(i) mo(i)lés(i)ti(ih) es(jk)sent,(j) (,) in(j)du(j)é(ji)bam(ih) me(ij) ci(hi)lí(g)ci(g!hwih__)o,(hg..) (;) et(g) hu(fg)mi(g)li(g)á(g)bam(g) in(g) je(g)jú(gh)ni(g)o(g) á(ixhi_HGhih)ni(ghf)mam(g_h) me(iyh!iwji/jkJ_IH)am.(h_i_HGhg..)"
   },
   {
 		"tags":["hebdomada-passionis","feria-ii","laudes","antiphona","antiphona-benedictus"],
@@ -28,6 +130,24 @@
   {
 		"tags":["hebdomada-passionis","feria-ii","vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2451"]]
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iii","matutinum","responsorium","responsorium-i"],
+    "incipit":"mode:4;\n%%\n(c4) Ad(e_)jú(eeof)tor(fd) *() et(dfe~) su(f)cép(ghg)tor(e>) me(d@foh)us(h) (,) tu(gfg) es,(gh_GFghg) Dó(e)mi(egffs)ne,(eeof.) (;) et(d) in(g) ver(ixhi)bum(h) tu(hggof)um(g) spe(h)rá(g_hG__FEf)vi.(eeof.)",
+    "responsum":"De(d)cli(g)ná(ixhi)te(h) a(h) me,(hggof) ma(gh)líg(g_hG__FEf)ni,(fe..) (;) et(e) scu(g)tá(fv_fv_ED)bor(fd/efe) (,) man(c)dá(de)ta(fv_ED) De(f_g)i(ixgv_//fg!hv_//ig/hg__) me(egffs)i.(fe..) (::)",
+    "versus":"In(h)í(gh)quos(g_f!gwhg__hv_GEfe__) ó(gf)di(gh)o(gf) há(e)bu(e!fwgf__)i:(fe..) (;) et(f) le(de)gem(e) tu(e!fwg_FE)am(g) di(ghgh_GF) lé(ef/gffs)xi.(ed..)"
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iii","matutinum","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Dó(f_0//gh)ce(g)am(g) in(g)í(gh)quos(g) *() vi(g)as(ixg@hoi) tu(h)as,(ixhg__/h!iwjg__/hv_/ggof.) (,) et(g) ím(gh~)pi(g)i(g) ad(gh~) te(g) con(g)ver(g_h!iwjI__H/iwj_IH>)tén(gh!iv_HGh)tur;(ixg_h/ih..)",
+    "responsum":"Lí(f)be(gh)ra(h) me(h) de(hggoe) san(g>)guí(f@goh)ni(fe)bus,(dec//d!ewfe__/fv_ED.) (,) De(d)us(dg) sa(g_h_GFg_h)lú(g)tis(g_h!iwjI__H/iwj_IH) meæ.(gh!iv_HGhhog.) (::)",
+    "versus":"Dó(j)mi(ji)ne,(jkj/iji/hhog) lá(hi)bi(i)a(i) me(ih)a(ij) a(hi)pé(g)ri(g!hwih__)es,(hg..) (;) et(g) os(fg) me(gh)um(g) an(g)nun(g)ti(g)á(g)bit(ixhi_HGhih) lau(ghf~)dem(g_h) tu(iyh!iwji/jkJ_IH)am.(h_i_HGhg..)"
+	},
+	{
+		"tags":["hebdomada-passionis","feria-iii","matutinum","responsorium","responsorium-iii"],
+    "incipit":"mode:2;\n%%\n(f3) Ne(c) per(e_0//fg>)das(f) *() cum(h) im(hgh)pi(fg)is,(ffoe) (,) De(f)us,(h) á(hvG__FEf_g)ni(f)mam(f!gwh/ihhog) me(fg!hv_GFg)am,(gf..) (;) et(h) cum(ij) vi(jiiog)ris(hi) sán(h_i>)gui(g_h_GFg)num(gf__) (,) vi(fg!hvGFE)tam(f!gwhg/hih) me(hv_GFg)am;(ffoe.)",
+    "responsum":"Réd(f_0//hvGE)i(f)me(hv_hv_) me,(ihhog) Dó(f)mi(fg!hv_GFg)ne.(gf..) (::)",
+    "versus":"E(f)rí(e_f!gwhhi)pe(h) me,(h) Dó(ij)mi(i)ne,(h) (`) ab(h) hó(hg)mi(hi)ne(gh) ma(f!gwhg__)lo,(gf..) (;) a(f) vi(ef)ro(f) in(f)í(f)quo(f!gwh_GFE__) lí(f)be(hg/hih)ra(hv_GFg) me.(ffoe.)"
   },
   {
 		"tags":["hebdomada-passionis","feria-iii","laudes","antiphona","antiphona-benedictus"],
