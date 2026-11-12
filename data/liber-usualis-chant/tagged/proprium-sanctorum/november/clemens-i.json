@@ -10,7 +10,26 @@
   {
 		"tags":["clemens-i","i-vesperae","antiphona","antiphona-magnificat"],
 		"datum":[["/antiphonae/2551"]]
-  },
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:8;\n%%\n(c4) O(d)rán(f_0/gh>)te(g) *() san(g)cto(g) Cle(gh)mén(h)te,(ixhg/higgf__) (;) ap(hf)pá(ghg)ru(h)it(h) e(hwj)i(hg) Ag(hv_GFgh>)nus(g_h!iwjI__H/iwj_IH) Dó(g)mi(gh!iv_HGh)ni,(hg..) (:) de(jkj) sub(jh) cu(jkj)jus(jk) pe(ki/jkh_/i)de(hhog) (,) fons(ixf_g/hih) vi(hg)vus(iyi) e(ji__jvI__HG)ma(gh)ná(hg__hv_GFg)bat:(gf..)",
+    "responsum":"Flú(f)mi(g)nis(h) ím(hwj>)pe(h)tus(g) læ(h)tí(jjok_)fi(hg)cat(g_h!iwjg__/h/ggof) (,) ci(h)vi(j)tá(ji__jv_IHi@jo)tem(i!jwkJI__H/iwj_IH<) De(g_h!iv_HGh)i.(hg..) (::)",
+    "versus":"Vi(ji)di(jkj/iji/hhog) su(hi)pra(i) mon(i)tem(ih) Ag(ij)num(hi) stan(g!hwih)tem,(hg..) (;) de(g) sub(fg) cu(g)jus(g) pe(gh)de(g) (,) fons(g) vi(g)vus(ixhi_HGhih) e(ghf)ma(g_h)ná(h!iwji/jkJ_IH)bat.(h_i_HGhg..)"
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c4) Om(c!dwe_/fo)nes(e) *() u(e)na(fg) vo(g_f_)ce(d) di(e)xé(dc)runt:(ddoe.) (:) O(dge_/fv)ra(e_d_) pro(gv_gv_) no(ixhgh_/iv)bis,(h) (,) sanc(h)te(gh_g) Cle(gshsjsjsgs_ixih)mens;(f_foe.)",
+    "responsum":"Ut(gv_gv_) di(ixhgh_/i>)gni(h) ef(h)fi(h)ci(hg)á(h_0/jsjsgsixih)mur(f_e_) pro(g)mis(gh)si(gf)ó(g)ne(gh_GFghg) Chris(egffs)ti.(fe..) (::)",
+    "versus":"Non(h) me(h)is(g_f!gwh_g_/hv_GEf_e_) mé(gh)ri(g)tis(g) ad(gh) vos(g) me(gf) mi(gh)sit(gf) Dó(e)mi(e!fwg_f_)nus(fe..) (;) ves(f)tris(de) co(e)ró(efO1)nis(e) par(e)tí(e)ci(e!fwg_FE)pem(g) fí(gh_g_h_GF)e(ef/gffs)ri.(ed..)"
+	},
+	{
+		"tags":["clemens-i","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:6;\n%%\n(c4) De(d)dís(f_0/gh)ti,(g) Dó(gh)mi(g)ne,(g) *(,) ha(g)bi(ixg@hoi)tá(h)cu(h)lum(hg__/h!iwjg/hv/ggof.) (;) Már(hf~)ty(ghg)ri(h) tu(hwj)o(h) Cle(g)mén(ixh_iH__GFg_h>)ti(g) in(iyg_h!iwj_IH/iwj_IH>) ma(gh!iv_HGh)ri,(hg..) (;) in(jv_jv_) mo(j_0/klk)dum(jkj) tem(hg~)pli(hv_GF) mar(h)mó(h_0//jgh)re(g_f!gwhgh)i(hg..) (,) an(f)gé(gh)li(h)cis(h) má(hgh)ni(gh)bus(ggof) præ(ixh!iwj)pa(j_kJ__IH)rá(ixh_g!hwihi)tum:(ih..)",
+    "responsum":"I(f)ter(gh) præ(h)bens(h) pó(hgh)pu(fg)lo(g_e!fwg) ter(ghFED)ræ,(dfDC__/de__d.) (;) ut(c) e(d!ewf)nár(f_e!fwgfg)rent(gf__) mi(f)ra(ghg)bí(ixhf/hig)li(fv_fv_)a(f) tu(fgf___)a.(f.) (::)",
+    "versus":"De(f)dís(f@goh)ti,(ixih__iv_HGhg__) Dó(ixh!iwj/kv)mi(j)ne,(j) Sanc(j)tis(jh) tu(ixij)is(ih) vi(hg)am(ixi) in(gh~) ma(f!gwhg)ri,(gf__) (;) et(f) in(df~) flu(f)mí(f)ni(ghf)bus(gf) sé(f@goh)mi(ixi_g!hwi_HG)tam.(g_h_GFgf..)",
+    "gloria":"Gló(f@goh)ri(h)a(ixih__/iv_HGhg__) Pa(ixh!iwj_//kv)tri,(j) et(jh~) Fí(ixij)li(ih)o,(h_) (,) et(h) Spi(h)rí(hg)tu(ixi)i(gh) Sanc(f!gwhg)to.(gf..)"
+	},
   {
 		"tags":["clemens-i","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["/antiphonae/12754"]]
