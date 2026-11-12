@@ -25,21 +25,104 @@
     "in-tempore-paschali":[["/antiphonae/1208N1A1"]],
     "antiphona-ii":[["/antiphonae/1208N1A2"]],
     "antiphona-iii":[["/antiphonae/1208N1A3"]]
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) Per(h) u(h)num(g!hwj) hó(jkJIHih)mi(g!hwjh)nem(hggo) *(,) pec(f)cá(gh)tum(hggoe) in(g) hunc(g) mun(gf)dum(g) in(fgf)trá(fd!ewfEDC)vit,(dc/ded) (;) in(c) quo(d) om(fg>)nes(fe/fog) pec(gffvED)ca(cd)vé(d!ewfef)runt.(ed)",
+    "responsum":"Ne(d) tí(dffv)me(deDCd)as(dc) Ma(fg)rí(ixghGF/g!hwiHGhi)a,(hggo) (,) in(f)ve(gh)nís(h)ti(g) grá(h)ti(g)am(f) a(f)pud(e!fgf/gvFE) De(d!ewfef)um.(ed) (::)",
+    "versus":"E(h)rí(h)pu(h)it(hg/hggof) Dó(gh)mi(g)nus(g) (,) á(g)ni(g)mam(g) tu(hf)am(gh) de(gh) mor(ixh/iioh)te,(h) (;) et(hf~) con(gh~)tra(h) in(h)i(h)mí(ixhi)cum(h) fac(h)tus(h) est(h) pro(hg/hg)téc(hf)tor(ixf!gwhg/hih) tu(hvGFE/fwg/hv)us.(gf)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"Ne(d) tí(dffv)me(deDCd)as(dc) Ma(fg)rí(ixghGF/g!hwiHGhi)a,(hggo) (,) in(f)ve(gh)nís(h)ti(g) grá(h)ti(g)am(f) a(f)pud(e!fgf/gvFE) De(d!ewfef)um,(ed..) (,) al(fg~)le(e_d_2/f_h_//ghg_/ef@gv_//hf/gvFE___)lú(d!ewfef){ia}.(ed..) (::)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Trans(d)í(f/gh)te(g) *() ad(g) me(ixg!hoi) om(h>)nes(ixhg/h!iwjg/hv/ggof) (;) qui(gh) con(g)cu(g)pí(gh!iwjIH/iwjIH)sci(g)tis(gh!ivHGh) me,(hg)",
+    "responsum":"Et(jkj) nar(jh)rá(jkj)bo(jk) vo(ki/jkh/iv)bis(hhog) quan(f)ta(g) fe(ixh!iwj)cit(g) De(ge/fvEDe)us(ed) á(dg)ni(g)mæ(gh!iwjIH/iwjIH) me(gh!ivHGh)æ.(hg) (::)",
+    "versus":"Vi(ji)vit(jkj/iji/hihhog) Dó(hi)mi(i)nus,(i) (,) quón(i)i(i)am(i) ad(i)im(ih)plé(ij)vit(hi) in(g!hwih) me(hg) (;) mi(g)se(g)ri(g)cór(ixhiHGhih)di(ghf)am(gh) su(iyh!iwji/jkJIH)am.(hiHGhg)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Et(jkj) nar(jh)rá(jkj)bo(jk) vo(ki/jkh/iv)bis(hhog) quan(f)ta(g) fe(ixh!iwj)cit(g) De(ge/fvEDe)us(ed) á(dg)ni(g)mæ(gh!iwjIH/iwjIH) me(gh!ivHGh)æ,(hg..) (,) al(g)le(g_0/hfg)lú(g!hwihi>){ia}.(hg..) (::)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:6;\n%%\n(c4) E(d)léc(ffg)ta(f) me(fg)a(f) *(,) cán(fg)di(gf!gwhgh)da(hg) si(f)cut(f) nix(dcf/ghggf) (,) in(g) Lí(ixig!hwiHG)ba(fg!hvGFg)no,(gf) (;) sic(f)ut(hj) fa(ixji!jwkJIHi)vus(ih) (,) dis(i)tíl(ixiss//ivH~G~)lans(g) lá(gh)bi(g)a(g) e(ixgih/ivHG)jus.(hg)",
+    "responsum":"Mel(f) et(ghg~) lac(hg/fvfvgvDCded) (,) sub(f) lin(ffoe)gua(g) il(ixg@h@jvHG/hwiHG)lí(fg!hvGFg)us.(gf) (::)",
+    "versus":"Ve(f!goh)ni(ixih/ivHGhg) de(h) Lí(ixh!iwj/kv)ba(j)no,(j) spon(j>)sa(jh) me(i)a,(gh) ve(f!gwhg)ni,(gf) (;) co(f)ro(df)ná(fg)be(f)ris(f) co(f)ró(f)na(ghf) gra(gf)ti(f!goh)á(ixig!hwiHG)rum.(ghGFgf)",
+    "gloria":"Gló(f!goh)ri(h)a(ixih/ivHGhg) Pa(ixh!iwj/kv)tri,(j) et(jh~) Fí(ixij)li(ih)o,(h) (,) et(h) Spi(h)rí(hg)tu(ixi)i(gh) Sanc(f!gwhg)to.(gf)"
   },
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+    "responsum":"Mel(f) et(ghg~) lac(hg/fvfvgvDCded) (,) sub(f) lin(ffoe)gua(g) il(ixg@h@jvHG/hwiHG)lí(fg!hvGFg)us,(gf..) (,) al(fg~)le(ixg_0/ivHG)lú(hg/gofgv){ia}.(gf..) (::)"
+	},
   {
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","antiphona"],
     "antiphona-i":[["/antiphonae/1208N2A1"]],
     "in-tempore-paschali":[["/antiphonae/1208N2A1"]],
     "antiphona-ii":[["/antiphonae/1208N2A2"]],
     "antiphona-iii":[["/antiphonae/1208N2A3"]]
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) E(f)go(fe) ex(d) o(e)re(d) *() Al(dc~)tís(ixf!gwh/iv)si(h)mi(h) pro(ixh!iwj)dí(h)vi,(hg/hiHGgo) (;) pri(f)mo(g)gé(ixhwiHGhi)ni(h)ta(h) (,) an(h)te(gf) om(gh)nem(g) cre(f)a(g)tú(ghf/efd)ram.(d/efd/ev/ddoc) (:) E(c)go(d) fe(f)ci(fe) in(d) cæ(fg)lis(fe/fggf) (;) ut(f) o(gh)ri(h)é(hg/hvGF)tur(gh) lu(g/hfg)men(dfDCded) in(c)de(d)fí(fg)ci(fe!fwgfg)ens.(gf)",
+    "responsum":"Non(h)dum(gf) e(gh)rant(gf) a(g)býs(gvFE/fwgfg)si,(fg/ffod) (;) et(f!gwhg) e(h)go(g) jam(fgFEfvEDed) (,) con(fe~)cép(fg)ta(ghffvED/fgf/gvFE) e(d!ewfef)ram.(ed) (::)",
+    "versus":"De(h)us(hg/hggof) e(gh)nim(g) (,) cre(g)á(g)vit(g) me(hf) in(gh~) jus(gh)tí(h)ti(ixh/iioh)a,(h) (;) et(hf) ap(gh)pre(h)hén(h)dit(h) ma(h)num(h) me(ixhi)am,(h) (,) et(hg/hg) ser(hf)vá(ixf!gwhg/hih)vit(hvGFE/fwg/hv) me.(gf)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"Non(h)dum(gf) e(gh)rant(gf) a(g)býs(gvFE/fwgfg)si,(fg/ffod) (;) et(f!gwhg) e(h)go(g) jam(fgFEfvEDed) (,) con(fe~)cép(fg)ta(ghffvED/fgf/gvFE) e(d!ewfef)ram,(ed..) (,) al(fg~)le(e_d_2/f_h_//ghg_/ef@gv_//hf/gvFE___)lú(d!ewfef){ia}.(ed..) (::)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Ni(f/gh)hil(g) *() in(g)qui(ixg!hoi)ná(h)tum(hg/h!iwjg/hvg/gf) (,) in(g) e(ghGFgh)am(g) in(gh!iwjIH/iwjIH)cúr(gh!ivHGh)rit:(hg)",
+    "responsum":"Can(j>)dor(jk) est(kvJIjvIHGhg) (,) lu(f)cis(gh) æ(h)tér(gf)næ,(fg!hvGFEfvEDed) (;) et(d) spé(f/gh)cu(g)lum(ixg/hig/hvg/gf) si(iyfh!iwjjv)ne(jkJIH/iwjIH) má(g)cu(gh!ivHGh)la(hg) (::)",
+    "versus":"Est(j) e(j)nim(ji) hæc(jkj/iji/hhg) spe(hi)ci(i)ó(ih)si(ij)or(hi) so(g!hwih)le(hg) (;) et(g) lu(fg)ci(g) com(g)pa(g)rá(gh)ta,(g) in(g)ve(g)ní(ixhiHG/hih)tur(ghf) pú(gh)ri(iyh!iwji/jkJIH)or.(hiHGhg)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Can(j>)dor(jk) est(kvJIjvIHGhg) (,) lu(f)cis(gh) æ(h)tér(gf)næ,(fg!hvGFEfvEDed) (;) et(d) spé(f/gh)cu(g)lum(ixg/hig/hvg/gf) si(iyfh!iwjjv)ne(jkJIH/iwjIH) má(g)cu(gh!ivHGh)la,(hg..) (,) al(g)le(g_0/hfg)lú(g!hwihi>){ia}.(hg..) (::)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:7;\n%%\n(c3) Si(ef)gnum(e) ma(ef)gnum(e) *(,) ap(e)pá(ef)ru(e)it(ef!gwh) in(hihhg) cæ(h!iwjij)lo.(ji) (;) Mú(ivHGhvGFghO1)li(g)er(g) a(g)míc(g)ta(g!hwiHGF/gwhGF) so(ef!gvFEf)le,(fe) (;) et(e) lu(ei)na(i) sub(i) pé(ikj)di(hi)bus(i) e(i!jwkjk)jus.(ji)",
+    "responsum":"Et(i) in(jh) cá(il)pi(l)te(li) e(ilKJkvJI/jwkjk)jus(ji) (,) co(jjok)ró(jkj)na(i) stel(h)lá(gihhs)rum(hg) (,) du(hf!gwhGF)ó(e)de(ef!gvFEf)cim.(fe) (::)",
+    "versus":"In(i!jwkJI)du(hg)it(hi/hhog) e(h)am(h) Dó(hi)mi(h)nus(h) ves(h)ti(h)mén(h)tis(h) sa(h)lú(hi)tis,(h) (,) in(h>)du(h)mén(h)to(ig) jus(hi)tí(hi)ti(iiog)æ,(h/ivHG/h) (;) et(e) qua(ehg)si(h) spon(ij)sam(i) or(i)ná(ikj)vit(hi) e(i!jwkj)am(ji) (;) mo(i)ní(ijijIH)li(ih)bus(h!iwji/jkj) su(ih!iwjij)is.(ivHGhg)",
+    "gloria":"Gló(i!jwkJI)ri(hg)a(hi/hhog) Pa(ig)tri,(hi) et(hi) Fí(i)li(i!jwkj)o,(ji) (;) et(i) Spi(i)rí(ijijIH)tu(ih)i(h!iwji/jkj) Sanc(ih!iwjij)to.(ivHGhg)"
   },
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+    "responsum":"Et(i) in(jh) cá(il)pi(l)te(li) e(ilKJkvJI/jwkjk)jus(ji) (,) co(jjok)ró(jkj)na(i) stel(h)lá(gihhs)rum(hg) (,) du(hf!gwhGF)ó(e)de(ef!gvFEf)cim,(fe..) (,) al(d_f!gwh/i>)le(hv_GFg//egf/ge)lú(efe___){ia}.(e.) (::)"
+	},
   {
 		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","antiphona"],
     "antiphona-i":[["/antiphonae/1208N3A1"]],
     "in-tempore-paschali":[["/antiphonae/1208N3A1"]],
     "antiphona-ii":[["/antiphonae/1208N3A2"]],
     "antiphona-iii":[["/antiphonae/1208N3A3"]]
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Hor(ef~)tus(e) con(e!foh)clú(hvg!hihi/jv)sus,(i) *(,) so(h)ror(ij) me(j)a(iji) spon(gihhs)sa,(hg) (;) hor(h)tus(i) con(kvkv)clú(lkki)sus,(jkj) (,) fons(i) si(k)gná(jkJIj)tus.(ji)",
+    "responsum":"E(g)mis(g)si(hi)ó(iiog)nes(i) tu(hig/hvGFEf)æ(fe) (,) pa(g/hsss)ra(hf)dí(fihi/jv)sus,(i) (;) o(hi/kvJI) Ma(ig!hwiHGF/gwhGF)rí(ef!gvFEf)a.(fe) (::)",
+    "versus":"A(i!jwkJI)pe(hg)ri(hi/hhog) mi(h)hi,(ig) so(hi)ror(hi) me(i!jwkj)a,(ji) (;) a(hi/hhog)mí(hih)ca(i) me(ij)a,(i) (,) co(i)lúm(i)ba(i) me(ij)a,(i) (,) im(i)ma(i)cu(ijijIH)lá(ih)ta(h!iwji/jkj) me(ih!iwjij)a.(ivHGhg)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"E(g)mis(g)si(hi)ó(iiog)nes(i) tu(hig/hvGFEf)æ(fe) (,) pa(g/hsss)ra(hf)dí(fihi/jv)sus,(i) (;) o(hi/kvJI) Ma(ig!hwiHGF/gwhGF)rí(ef!gvFEf)a,(fe..) (,) al(d_f!gwh/i>)le(hv_GFg//egf/ge)lú(efe___){ia}.(e.) (::)"
+	},
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:5;\n%%\n(c4) Ma(d)gní(ffg)fi(f)cat(f) *() á(fg)ni(g)ma(g) me(gf!gwhgh)a(hg) Dó(f)mi(f)num.(dcf/ghggf)",
+    "responsum":"Qui(f)a(hg) fe(gj)cit(j) mi(jk!lvKJk)hi(kj) ma(ixjh/hwihi)gna(ih) (,) qui(ixhg!hwiHG) pot(f)ens(fg!hvGF) est,(gf) (;) et(f) sanc(ixghgh/i>)tum(h) no(h)men(hjHG/hwiHG) e(fg!hvGFg)jus.(gf) (::)",
+    "versus":"Ec(j)ce(jk/jss/hih) e(jk)nim(j) ex(j) hoc(j) be(j)á(jh)tam(hk) me(ij) di(ji!jwkjk)cent(kj) (;) om(j)nes(j) ge(j)ne(ji/ji)ra(ih)ti(jk)ó(ixji!jwkJIHi)nes.(ih)",
+    "gloria":"Gló(j)ri(j)a(jk/jsshih) Pa(jh)tri,(hk) et(ij) Fí(j)li(ji!jwkjk)o,(kj) (;) et(j) Spi(j)rí(ji/ji)tu(ih)i(jk) Sanc(ixji!jwkJIHi)to.(ih)"
   },
+	{
+		"tags":["immaculata-conceptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Qui(f)a(hg) fe(gj)cit(j) mi(jk!lvKJk)hi(kj) ma(ixjh/hwihi)gna(ih) (,) qui(ixhg!hwiHG) pot(f)ens(fg!hvGF) est,(gf) (;) et(f) sanc(ixghgh/i>)tum(h) no(h)men(hjHG/hwiHG) e(fg!hvGFg)jus,(gf..) (,) al(f_h>)le(ixg_0//jv_j_h!iwjI__G/hwi_HG)lú(fg!hv_GFg){ia}.(gf..) (::)"
+	},
   {
 		"tags":["immaculata-conceptio-bmv","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["/antiphonae/2152"]]
@@ -51,16 +134,34 @@
     "versus":"Et(h) pó(ixhi)su(h)it(h) im(h)ma(h)cu(h)lá(gh)tam(g'_[oh:h]) (,) vi(g)am(f) me(g_[uh:l]h)am.(hg..)"
   },
   {
+		"tags":["immaculata-conceptio-bmv","tertia","responsorium-breve","in-tempore-paschali"],
+    "incipit":"De(f)us(f) om(f)ní(g)po(f)tens(f'_) (,) præ(f)cín(f)xit(f) me(f) vir(e')tú(g)te.(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Et(f) pó(f)su(f)it(f) im(f)ma(f)cu(f)lá(g)tam(f'_) (,) vi(f)am(e') me(g)am.(h.)"
+  },
+  {
 		"tags":["immaculata-conceptio-bmv","sexta","responsorium-breve"],
     "incipit":"In(f) hoc(g') co(f)gnó(g_[uh:l]h)vi(hg..)",
     "responsum":"Quó(g)ni(f)am(gh) vo(gv_[oh:h]FD)lu(fg)í(g)sti(f) me.(f.) (::)",
     "versus":"Quó(ixhi)ni(h)am(h) non(h) gau(h)dé(gh)bit(g'_[oh:h]) (,) in(g)i(g)mí(h)cus(g') me(g)us(f') su(g)per(gh) me.(hg..)"
   },
   {
+		"tags":["immaculata-conceptio-bmv","sexta","responsorium-breve","in-tempore-paschali"],
+    "incipit":"In(f) hoc(f) co(f)gnó(g)vi,(f'_) (,) quó(f)ni(f)am(f) vo(f)lu(e)í(g')sti(g) me.(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Quó(f)ni(f)am(f) non(f) gau(f)dé(g)bit(f'_) (,) in(f)i(f)mí(f)cus(f) me(f)us(e) su(g')per(g) me.(h.)"
+  },
+  {
 		"tags":["immaculata-conceptio-bmv","nona","responsorium-breve"],
     "incipit":"Ex(f)al(f)tá(g)bo(f) te(f') Dó(g)mi(gh)ne,(hg..)",
     "responsum":"Quó(g)ni(f)am(gh) sus(gv_[oh:h]FD)ce(fg)pí(g)sti(f) me.(f.) (::)",
     "versus":"Nec(ixhi) de(h)le(h)ctá(gh)sti(g'_[oh:h]) (,) in(g)i(g)mí(h)cos(g') me(g)os(f') su(g)per(gh) me.(hg..)"
+  },
+  {
+		"tags":["immaculata-conceptio-bmv","nona","responsorium-breve","in-tempore-paschali"],
+    "incipit":"Ex(f)al(f)tá(f)bo(f) te(f) Dó(g)mi(f)ne,(f'_) (,) quó(f)ni(f)am(f) sus(f)ce(e)pí(g')sti(g) me.(h.)",
+    "responsum":"Al(h)le(h_g)lú(g)ja,(f'_) al(d)le(f_g)lú(gf~)ja.(f.) (::)",
+    "versus":"Nec(f) de(f)le(f)ctá(g)sti(f'_) (,) in(f)i(f)mí(f)cos(f) me(f)os(e) su(g')per(g) me.(h.)"
   },
   {
 		"tags":["immaculata-conceptio-bmv","ii-vesperae","antiphona","antiphona-magnificat"],
