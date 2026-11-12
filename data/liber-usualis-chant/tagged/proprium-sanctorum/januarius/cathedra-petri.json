@@ -13,6 +13,20 @@
   {
 		"tags":["cathedra-petri","matutinum","antiphona","antiphona-invitatorium"],
 		"datum":[["/invitatoria/0118I"]]
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:4;\n%%\n(c4) Pe(e)tre,(ef_!gh_GE__f_gFEC___d_) a(eeof)mas(dg__e!fwg/hv) me?(ge..) *(:) Tu(dg/hhog) scis,(g_h!iwj_IH) Dó(h)mi(g_h_G_FEf)ne,(fe..) (,) qui(e@fo1)a(e) a(eg!hvGFfv_ED)mo(g_e!fwg/hv_) te.(ge..)",
+    "responsum":"Pa(h_hgh_GFge__//fgFEfvE_D/ewfef)sce(ed__) (,) o(dg/hg__)ves(gv_//fhgh) me(egffs)as.(fe..) (::)",
+    "versus":"Si(h)mon(g_f!gwhghv_GEfe__) Jo(g)án(gh~)nis,(g) (,) dí(g)li(gf)gis(gh) me(gf) plus(e!fwgf) his?(fe..) (;) Tu(f) scis,(de) Dó(e@fo1)mi(e)ne,(e) qui(e!fwg_FE)a(g) a(ghgh_GF)mo(ef/gfFs) te.(ed..)",
+    "gloria":"Gló(h)ri(gh)a(g_f!gwhg/hv_GEfe__) Pa(gf)tri,(gh) et(gf~) Fí(e)li(e!fwgf__)o,(fe..) (;) et(e) Spi(e)rí(e!fwg_FE)tu(g)i(ghgh_GF) Sanc(ef/gffs)to.(ed..)"
+	},
+	{
+		"tags":["cathedra-petri","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) E(e_h)lé(hhoi)git(i) te(ikj) Dó(kj/ki)mi(i_g!hwi)nus(ijHG__hvG__FEfe__) *(,) sa(d@foh)cer(hvG~F~)dó(f_i)tem(i_h_h_f_) si(hf/ge)bi,(e.) (;) ad(ef/hg) sa(g)cri(g)fi(hi)cán(i)dum(i) e(ihhog/h)i(hg__)",
+    "responsum":"Hós(ik/kvIHijHFih_/hvFE__eo_d/f@goh)ti(hi)am(ih__hf__) lau(fg~)dis.(e.) (::)",
+    "versus":"Im(i!jwk_JI)mo(hg)la(h_i/hhog) De(hi)o(h) sa(h)cri(h)fí(ig)ci(hi)um(hi) lau(i!jwkj)dis,(ji..) (;) et(h_i/hhog) red(hih)de(i) Al(i)tís(ij)si(i)mo(ijij_IH) vo(ih)ta(h!iwji/jkj) tu(i_h!iwjij)a.(iv_HGhg..)",
+    "gloria":"Gló(i!jwk_JI)ri(hg)a(h_i/hhog) Pa(ig)tri,(hi) et(hi) Fí(i)li(i!jwkj__)o,(ji..) (;) et(i) Spi(i)rí(ijij_IH)tu(ih)i(h!iwji/jkj) Sanc(i_h!iwjij)to.(i_HG/hg..)"
   },
   {
 		"tags":["cathedra-petri","laudes","hymnus"],
