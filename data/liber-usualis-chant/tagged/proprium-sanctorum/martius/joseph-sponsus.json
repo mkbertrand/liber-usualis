@@ -24,6 +24,37 @@
 		"in-tempore-paschali":[["/antiphonae/0319N1A1"]],
 		"antiphona-ii":[["/antiphonae/0319N1A2"]],
 		"antiphona-iii":[["/antiphonae/0319N1A3"]]
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) Fu(h)it(hg) Dó(h)mi(g)nus(gfh) *() cum(fe~) Jo(d)seph,(fd/efe) (,) et(c) de(df)dit(fe) e(ghf)i(f) grá(hj)ti(h)am(ghg) (;) in(h>) con(j)spé(jkjjo~)ctu(g) prín(ixi)ci(g)pis(hih) cár(g)ce(f)ris:(gh/fgfEDewfEDeeO1d)",
+    "responsum":"Qui(df) trá(dc)di(f)dit(gh) in(ixi) ma(ixg!hwi)nu(h) il(hg~)lí(HsJsski/jkh)us(h) (;) u(ixhi)ni(hg)vér(ggO1e/fd~)sos(dc/deDCd) vin(d!ewfef)ctos.(ed) (::)",
+    "versus":"Quid(h)quid(hg/hggO1f) fí(g)e(gh)bat,(g) sub(hf) i(gh)pso(gh) e(ixh/iiO1h)rat:(h) (;) Dó(gf)mi(gh)nus(h) e(h)nim(h) e(h)rat(h) cum(h) il(ixhi~)lo,(h) (,) et(gf~) ó(gh)mni(h)a(h) ó(ixhi)pe(h)ra(h) e(h)jus(hg/hg) di(gf)ri(ixf!gwhg/hih)gé(hvGFEfwg!hv)bat.(gf)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"Qui(df) trá(dc)di(f)dit(gh) in(ixi) ma(ixg!hwi)nu(h) il(hg~)lí(HsJsski/jkh)us(h) (;) u(ixhi)ni(hg)vér(ggO1e/fd~)sos(dc/deDCd) vin(d!ewfef)ctos,(ed) (,) al(fg~)le(ed/fhghgEFgvhfgvFE)lú(d!ewfef)ja.(ed) (::)"
+  },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) E(e)su(hg)ri(hi)én(i>)ter(hih) *() te(g!hi~)ra(hg) Æ(f)gý(fhFEDewfef)pti,(fe) (;) cla(i)má(ij)vit(f) pó(hg)pu(h)lus(i) ad(h) re(i)gem(h) (,) a(ikj)li(kl)men(lm~)ta(ikkj) pe(jlKJkvJIjwkjk)tens.(ji) (:) Qui(i)bus(i) il(h>)le(ig/ho0!iv) re(fe)spón(ef/hf/gfe~)dit:(fe)",
+    "responsum":"I(ihi)te(i) ad(kl) Jo(kvjlKJkvJIjwkjk)seph,(ji) (,) et(i) quid(i!jwkj)quid(iji/g) vo(ij)bis(ih) dí(i)xe(h)rit,(ghGFgf) fá(e)ci(EFgvFEf)te.(fe) (::)",
+    "versus":"Cre(i)scé(i!jwkJI)bat(hihhO1g) quo(h)tí(hi)di(h)e(h) fa(h)mes(h) in(ig~) o(hi~)mni(hi) ter(i!jwkj)ra:(ji) (;) a(hi/hhO1g)pe(hi)ru(i)ít(ij)que(i) Jo(i)seph(i) u(i)ni(i)vér(i)sa(i) hór(ij)re(i)a,(i) (,) et(i) ven(i)dé(i)bat(jijvIH) Æ(hg)gý(h/iji/jkj)pti(ihiwjij)is.(ivHGhg)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"I(ihi)te(i) ad(kl) Jo(kvjlKJkvJIjwkjk)seph,(ji) (,) et(i) quid(i!jwkj)quid(iji/g) vo(ij)bis(ih) dí(i)xe(h)rit,(ghGFgf) fá(e)ci(EFgvFEf)te,(fe) (,) al(df!gwh!i>)le(hvGFg/egf/ge)lú(efe)ja.(e) (::)"
+  },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:3;\n%%\n(c4) Fe(g!hwi)cit(hg) me(jvjv) *() Dó(i!jo1!kv)mi(j)nus(ih!iwj) (,) qua(g)si(h) pa(i)trem(hg) re(ghGFEf)gis,(fe) (;) et(f) dó(EFgh)mi(g)num(g) u(h)ni(gh)vér(gf~)sæ(f) do(hj)mus(jkjJs) e(jh/iwjIH!Gs<)jus:(hg) (:) no(h)lí(j)te(hhO1g) pa(h)vé(jh!iwj)re:(kijvHGjvHGhih)",
+    "responsum":"Pro(g) sa(g)lú(JsssjvHGig/hi)te(h) e(j)nim(ji~) ve(hih)stra(ghg) (,) mi(ffO1efv)sit(de) me(gh) De(gkjjo~)us(iio1!jv) (;) an(h>)te(g) vos(hjg) in(g>) Æ(gf/gfFs)gý(fvDFgvFEf)ptum.(fe) (::)",
+    "versus":"Ve(i)ní(ikjJs)te(h!iwjihhO1g) ad(ij~) me,(h) (,) et(h) e(h)go(h) da(h)bo(h) vo(hi)bis(h) ó(h>)mni(h)a(h) bo(hg)na(h) Æ(j)gý(ikjJs)pti,(ji) (;) et(hg~) co(hj)me(j)dé(i!jo1)tis(i) me(ikjjvIHiwji)dul(hg~)lam(h!iwj) ter(jiiO1hivHGh)ræ.(hg)",
+    "gloria":"Gló(ikjjs)ri(h!iwji)a(hhO1!g) Pa(hg)tri,(h) et(j) Fí(i)li(ikjjs)o,(ji) (;) et(i) Spi(i)rí(ikjjvIHiwji)tu(hg)i(GHiwj) San(jiiO1hivHGh>)cto.(hg)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-i","responsorium","responsorium-iii","in-tempore-paschali"],
+    "responsum":"Pro(g) sa(g)lú(JsssjvHGig/hi)te(h) e(j)nim(ji~) ve(hih)stra(ghg) (,) mi(ffO1efv)sit(de) me(gh) De(gkjjo~)us(iio1!jv) (;) an(h>)te(g) vos(hjg) in(g>) Æ(gf/gfFs)gý(fvDFgvFEf)ptum,(fe) (,) al(fffd~)le(f)lú(FGhvhgh)ja.(e) (::)"
   },
   {
 		"tags":["joseph-sponsus","matutinum","nocturna-ii","antiphona"],
@@ -32,12 +63,64 @@
 		"antiphona-ii":[["/antiphonae/0319N2A2"]],
 		"antiphona-iii":[["/antiphonae/0319N2A3"]]
   },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:2;\n%%\n(f3) A(c)scén(e!fg~)dit(f) Jo(f)seph(f!gwh) *() (,) a(h) Ga(i)li(hg)lǽ(h!iwjij)a(ji) (;) de(hi) ci(hg)vi(fe)tá(f)te(hf/ghg) Ná(f)za(FGhvGFg)reth(gf) (:) in(f>) Ju(h)dǽ(hi)am,(iji) in(h>) ci(j)vi(i)tá(j)tem(hg) Da(f)vid,(fhffO1e) (;) quæ(f) vo(h)cá(hg)tur(i) Bé(ij)thle(ih)hem:(hihho~fgf)",
+    "responsum":"E(e)o(fg) quod(gf) es(g)set(e) de(f) do(fgef)mo(ef/eeO1c) (;) et(f) fa(f)mí(fhGE)li(hvv)a(ihhg) Da(FGhvGFg)vid.(gf) (::)",
+    "versus":"Ut(EFgwhhi~) pro(h)fi(h)te(h)ré(h)tur(hg) cum(hi) Ma(gh)rí(f!gwhg)a(gf) (;) de(f)spon(ef~)sá(fg)ta(f) si(f!gwhGFE)bi(f) u(hg/hih)xó(hvGFg)re.(ffO1e)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"E(e)o(fg) quod(gf) es(g)set(e) de(f) do(fgef)mo(ef/eeO1c) (;) et(f) fa(f)mí(fhGE)li(hvv)a(ihhg) Da(FGhvGFg)vid,(gf) (,) al(fg)le(ehGF)lú(high)ja.(f) (::)"
+  },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) Sur(ei!j>)ge(i) *() et(i) ác(i!jwkj)ci(i)pe(hih) Pú(hi)e(h)rum(hg) (,) et(f>) Ma(GHih)trem(ih) e(hf!gwhGFEf)jus,(e/fhefveeO1d) (;) et(df~) fu(hgh)ge(f) in(i>) Æ(h)gý(hijIHGh)ptum:(hg)",
+    "responsum":"Et(hj~) e(j)sto(ji) i(j)bi(h) us(Hsshf)que(gh) dum(ij~) di(i)cam(ig!hwiHGFgwhG!fs<) ti(EFgvFEf)bi.(fe) (::)",
+    "versus":"Ut(i) ad(i)im(i)ple(i)ré(i!jwkJI)tur(hi/hhO1g) quod(h) di(h)ctum(h) est(h) a(h) Dó(hi)mi(h)no(h) (,) per(h) Pro(h)phé(ig)tam(hi) di(hi)cén(i!jwkj>)tem:(ih) (;) Ex(hi/hhO1g) Æ(hih)gý(i)pto(i) vo(i)cá(i)vi(i) Fí(jijvIH)lli(hg)um(h/iji/jkj) me(ih/iwjij)um.(ivHGhg)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Et(hj~) e(j)sto(ji) i(j)bi(h) us(Hsshf)que(gh) dum(ij~) di(i)cam(ig!hwiHGFgwhG!fs<) ti(EFgvFEf)bi,(fe) (,) al(df!gwh!i>)le(hvGFg/egf/ge)lú(efe)ja.(e) (::)"
+  },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:6;\n%%\n(c4) Cum(c) in(d>)dú(ffg)ce(f)rent(f) *() (,) pú(g)e(f)rum(gh~) Je(hg)sum(hvGFfgDCded) pa(cd)rén(ffo1!g>)tes(fe) e(ghG!Fs<)jus,(gf) (;) ut(hf</[-1.1]g~) fá(hg/jjo1!kv)ce(j)rent(j) (,) se(j)cún(j>)dum(h) con(j)su(i)e(j)tú(k)di(j)nem(ij) le(hjggO1fgv)gis(gf) pro(hg) e(hvGFEfwgfg)o,(gf)",
+    "responsum":"Ac(f)cé(ixhi)pit(hg) e(ixhi)um(hg) Sí(e)me(f)on(dcf/ghggO1f) in(h!iwj) ul(gf~)nas(f) su(fd/ewfEDCd)as,(CDed) (;) et(c) be(d)ne(f)dí(feg)xit(ixghjHGhwiHG) De(FGhvGFg)um.(GF) (::)",
+    "versus":"Et(f) e(ixfgh)rat(ihivHGhg) pa(h)ter(h) e(h)jus(h) et(h) ma(ixhi)ter(h) mi(jh)rán(ixi)tes(gh) su(f)per(f!gwhg>) his,(gf) (;) quæ(f) di(df)ce(f)bán(ghf~)tur(fe) de(f!go1!hv) il(ixig!hwiH!Gs<)lo.(ghGFgf)",
+    "gloria":"Gló(f!go@hv)ri(h)a(ixihivHGhg) Pa(ixh!iwj!kv)tri,(j) et(jh) Fí(gh)li(f!gwhg)o,(gf) (;) et(f) Spi(f)rí(ghf)tu(fez)i(f!go@hv) San(ixig!hwiH!gs<)cto.(ghGFgf)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-ii","responsorium","responsorium-iii","in-tempore-paschali"],
+    "responsum":"Ac(f)cé(ixhi)pit(hg) e(ixhi)um(hg) Sí(e)me(f)on(dcf/ghggO1f) in(h!iwj) ul(gf~)nas(f) su(fd/ewfEDCd)as,(CDed) (;) et(c) be(d)ne(f)dí(feg)xit(ixghjHGhwiHG) De(FGhvGFg)um,(GF) (,) al(fg~)le(ixgiHG)lú(hggO1f/g)ja.(gf) (::)"
+  },
   {
 		"tags":["joseph-sponsus","matutinum","nocturna-iii","antiphona"],
 		"antiphona-i":[["/antiphonae/0319N3A1"]],
 		"in-tempore-paschali":[["/antiphonae/0319N3A1"]],
 		"antiphona-ii":[["/antiphonae/0319N3A2"]],
 		"antiphona-iii":[["/antiphonae/0319N3A3"]]
+  },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:3;\n%%\n(c4) Di(eFsss)cit(ed) *() ma(g)ter(hj~) Je(j)su(ikjjhivhhO1g) ad(hi~) il(ih/ikggfe~)lum:(fe) (;) Fi(ggo1!hv)li,(e) quid(Fsss) fe(ed)cí(DFgh/hgh)sti(hg) no(hj)bis(ikjJs) sic?(iio1!jv)",
+    "responsum":"Ec(h)ce(hg) pa(hi)ter(g) tu(hf!gwhgh)us(hg) et(gh~) e(ge/fgef)go(ed) (;) do(f)lén(FGhwiH!Gs<)tes(gvfgFD) quæ(fe)re(fg)bá(ggO1egvFEDEFgf)mus(egfFs) te.(fe) (::)",
+    "versus":"Et(gj~) a(j)it(j) ad(j) il(ikjJs)los:(h!iwjIHG) quid(ij~) est(h) quod(h) me(hg) quæ(h)re(j)bá(ikjJs)tis?(hi) (;) Ne(hg)sci(hi)e(i)bá(i)tis(i) qui(i)a(i) in(ij) his,(i) (,) quæ(i) Pa(i)tris(i) me(ij)i(i) sunt,(i) o(i)pór(ikjjvIHiwji>)tet(hg) me(GHiwj) es(jiihivHGh)se.(hg)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-i","in-tempore-paschali"],
+    "responsum":"Ec(h)ce(hg) pa(hi)ter(g) tu(hf!gwhgh)us(hg) et(gh~) e(ge/fgef)go(ed) (;) do(f)lén(FGhwiH!Gs<)tes(gvfgFD) quæ(fe)re(fg)bá(ggO1egvFEDEFgf)mus(egfFs) te,(fe) (,) al(Fssfd~)le(d/ghffO1e)lú(egfFs)ja.(fe) (::)"
+  },
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) De(g)scén(gf__fd__!ewf_E~D~)dit(c_d) Je(f_g)sus(fghshsgsjhh_g_) *(,) cum(ji) e(hg)is,(g_h/ggof.) (;) et(fg) ve(gj_j_)nit(jk) Ná(k)za(ji)reth,(hjg___/hhog.)",
+    "responsum":"Et(f) e(gh)rat(h!iwj_IHih__) súb(g_hGFg_h>)di(g)tus(g_h!iwjI__H/iwj_IH) il(gh@iv_HGh)lis.(hg..) (::)",
+    "versus":"Pro(j)fi(j)ci(j)é(ji)bat(jkjijihhog) sa(hi)pi(ih)én(jk~)ti(j)a,(j_) (,) et(j) æ(ji)tá(ih)te(ij) et(hi) grá(g)ti(g!hwih__)a(hg..) (;) a(g)pud(fg) De(g)um(ixhi_HG/hih) et(ghf) hó(g_h)mi(iyh!iwji/jkJ_IH)nes.(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(iyh!iwji/jkJ_IH)to.(h_i_HGhg..)"
+	},
+	{
+		"tags":["joseph-sponsus","matutinum","nocturna-iii","responsorium","responsorium-ii","in-tempore-paschali"],
+    "responsum":"Et(f) e(gh)rat(h!iwj_IHih__) súb(g_hGFg_h>)di(g)tus(g_h!iwjI__H/iwj_IH) il(gh@iv_HGh)lis,(hg..) (,) al(g)le(g_0/hfg)lú(g!hwihi>){ia}.(hg..) (::)"
   },
   {
     "tags":["joseph-sponsus","antiphona"],

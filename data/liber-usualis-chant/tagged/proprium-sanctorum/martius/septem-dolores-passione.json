@@ -25,6 +25,25 @@
 		"tags":["septem-dolores-passione","matutinum","nocturna-i","antiphona","antiphona-iii"],
 		"datum":[["/antiphonae/0915N2A1"]]
 	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:6;\n%%\n(cb4) Di(d)léc(f_0fg)tus(f) me(ghgh)us(h_g_2/fv_fv_2gv_DC__ded___) *(,) cán(c)di(d)dus,(f) et(fe~) ru(g)bi(g_h!jvH__G/hwi_HG)cún(fg!hv_GFg)dus,(gf..) (;) et(f) to(f!gwh_/io)tus(h) de(h)si(hhg)de(gh)rá(hg/hfg)bi(f_e!fwgfg)lis:(gf..)",
+    "responsum":"Om(fg/hih)nis(i) e(ihhoghv)nim(hg__) fi(h)gú(gf)ra(g) e(g!hwi_H~G~)jus(hg__) (,) a(g)mó(gh)rem(g) spi(gh__GFg)rat,(gf..) (;) et(c) ad(d) red(fg)a(f)mán(fg)dum(f) pró(f!goh)vo(i_g!hwihi)cat(ih__) (,) ca(h)put(f) in(hj)cli(j)ná(jhioj)tum,(ih__) (,) ma(h)nus(h) ex(h)pán(hg/hoi>)sæ,(hg__) (,) pec(ghf)tus(f) a(f)pér(f!gwhgh)tum.(gf..) (::)",
+    "versus":"Pi(f!goh)is,(ih__/iv_HGhg__) o(h) Vir(h!iwj_/kv)go,(j) (,) spec(j)tas(jh) e(i)um(gh) ó(f)cu(f!gwhg__)lis,(gf..) (;) con(f)tém(df~)plans(f) in(f) e(fg)o(f) non(f) tam(f) vúl(fg)ne(f)rum(f) li(f)vó(fg)rem,(f) (,) quam(f) mun(ghf)di(gf) sa(f!goh)lú(i_g!hwi_HG)tem.(gh__GFgf..)"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) Ma(ef)nus(e) e(ef)jus(e) *() tor(e_f!gwh)ná(hihhg)ti(h!iwjij)les,(ji..) (;) cla(hi)vó(kvkv__)rum(lkki/jkj) cús(h)pi(i)de(j) te(j)re(k)brá(jk__JIj)tæ,(ji..)",
+    "responsum":"Hu(i)má(ij)næ(jh) sa(ij)lú(jiioHGh)tis(hg__) pré(i)ti(highvG_____FEf)o(fe__) (;) qua(f)si(ed) h{ya}(e)cín(f!gwh)this(h_i!jwkj__/kv_JIji__) re(i_g!hwiHG___F/gwh_GF)fér(ef!gv_FEf)tæ.(fe..) (::)",
+    "versus":"Cór(i!jwk_JI)nu(hg)a(h_i/hhog) in(h) má(hi)ni(h)bus(h) e(hi~)jus:(h) (,) ab(h)scón(hi~)di(h)ta(h) est(h) for(h)ti(ig)tú(hi)do(hi) e(i!jwkj__)jus:(ji..) (;) sunt(i) e(i)nim(ijij_IH) ma(ih)nus(h!iwji/jkj) e(i_h!iwjij)jus.(iv_HGhg..)"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:3;\n%%\n(c4) Di(gh)li(g)gé(g!hwi_/jo)bat(i) Je(ijO1)sus(i) *() Jo(h)án(hjji___)nem,(g_h!iwj_IHijggo/efe.) (;) quó(e!fwg_/ho)ni(g)am(g) spe(g)ci(g)á(ixhgh_/iv)lis(h) (,) præ(h)ro(h)ga(hg)tí(ixhi)va(h) cas(hggof)ti(ixfg!hv_/ig/hg__)tá(egffs)tis(eeof) (;) am(d_g)pli(g)ó(hi_HG/hwi_/jo)ri(i) di(i)lec(i)ti(i)ó(ji__)ne(h_i/hhog) (,) fe(gh)cé(g)rat(g_h!iwj) di(jv_IHiv_H~G~)gnum:(hg..)",
+    "responsum":"Qui(g)a(h) vir(j_0/kjk>)go(ijO1) e(h)léc(h)tus(hg) ab(hi) ip(hg/hg__)so(e_f//egFE__fv_EDed__) (;) vir(fd~)go(e) in(f) æ(g_h)vum(h!iwj_IG) per(g)mán(gf/gffo!g>)sit.(fe..) (::)",
+    "versus":"In(i) cru(ikjjs)ce(h!iwji/hhog) dé(ijO1)ni(h)que(hg) mo(h)ri(j)tú(ikjjs)rus,(ji..) (;) Ma(ig)trem(hi) hu(i)ic(i) su(ij)am(i) vír(ij~)gi(i)nem(i) (,) vír(i)gi(i)ni(ikjjvI_____H/iwji) com(hg~)men(g_h!iwj)dá(jiioh/iv_HGh)vit.(hg..)",
+    "gloria":"Gló(ikjjs)ri(h!iwji__)a(hhog) Pa(ig)tri,(h) et(j) Fí(i)li(ikjjs)o,(ji..) (;) et(i) Spi(i)rí(ikjjvI_____H/iwji__)tu(hg)i(g_h!iwj) Sanc(jiioh/iv_HGh)to.(hg..)"
+	},
   {
 		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-i"],
 		"datum":[["/antiphonae/Q5F6N2A1"]]
@@ -37,6 +56,25 @@
 		"tags":["septem-dolores-passione","matutinum","nocturna-ii","antiphona","antiphona-iii"],
 		"datum":[["/antiphonae/Q5F6N2A3"]]
   },
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Té(e)ne(fd)bræ(ef) *() fac(ef)tæ(e) sunt,(ef!gwhe/fv/eeod) (;) dum(e) cru(f)ci(h)fi(fe)xís(f)sent(ed~) Je(ef)sum(e) Ju(ef!gwhGFgwhGF)dǽ(ef!gvFEf)i:(gxe!fgf) (:) et(df) cir(hih)ca(hf) ho(hih)ram(hi) no(ig/hif/gv)nam(ffoe) (;) ex(f)cla(f/hvGE)má(hvhv)vit(ivHGhvGFE) Je(fefvEDe)sus(ed) (,) vo(df!gwhhv)ce(ivHGhvGFE) ma(fefvE~D~)gna:(ed) (:) De(ihi/li)us(i) me(i!jwkjk)us,(ji) (;) ut(i!jwkj) quid(i) me(hi) de(h)re(hvGF)li(h!ioj)quís(ijIHGh)ti?(hg)",
+    "responsum":"Et(d) in(e)cli(f)ná(h)to(fe) cá(fvEDef)pi(e)te,(e) (;) e(e)mí(ghi)sit(ie/f!gwhGF/gwhGF) spí(e)ri(ef!gvFEf)tum.(fe) (::)",
+    "versus":"Quis(i) ti(i!jwkJI)bi(hi/hhog) nunc(hi) sen(i!jwkj)sus,(ji) (;) dum(i) cer(i)nis(i) tá(ijijIH)li(ih)a,(h!iwji/jkj) Vir(ih!iwjij)go?(ivHGhg)"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) Pás(d)si(d)o(dfddc) *() Dó(fg)mi(ixf!gwhgh/iv)ni,(h) (;) ip(h)sam(g) e(ghghd)jus(dc) Ma(d!ewfef)trem,(ed) (:) car(d)ná(f/gh)li(g) or(g)bi(gf)tá(g/hfg)te(gffo/ded) grá(fgf)vi(fe)ter(f) per(f!goh)cús(hvGFE/fwgfg)sam,(gf)",
+    "responsum":"Ve(h)he(h)men(ge~)tís(fg)si(efEDe)me(ed) (,) con(dsfsss)tris(f!ghffoe)tá(de!fvEDe)vit.(ed) (::)",
+    "versus":"Fer(h)rum(hg/hggof) lán(gh)ce(g)æ(g) mi(g)li(g)tá(gh)ris,(g) (,) la(g)tus(g) qui(g)dem(hf~) Sal(gh~)va(gh)tó(ixh/iioh)ris,(h) (;) á(hf)ni(gh)mam(h) ve(h)ro(h) trans(h)í(ixhi)vit(h) Vír(hghg~)gi(hf)nis(ixf!gwhg/hih) Ma(hvGFE/fwg/hv)tris.(gf)"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:6;\n%%\n(c2) Quis(ffg) mi(f)hi(gh) det(gf) te(f) *() fra(fg)trem(fefvEDCdc) me(f!gwhgh)um(gf) (;) su(fh)gén(jjk~)tem(j) ú(jh/jgh)be(gvFE/fwgfg)ra(gf) (,) ma(fg)tris(f) me(fd!ewfEDCde)æ,(dc) (:) et(f) in(gh)hæ(ghg)rén(f!gwhgh>)do(gf) lá(f)te(f)ri(gh) tu(ig!hwihi)o,(hg) (;) ut(f>) san(gh)guis(f) tu(g)us(fe) sán(g)gui(h)nem(g) me(h)um(g) tan(f)gat(e) et(ghg) ter(ghG~F~)gat:(gf)",
+    "responsum":"Ut(f) fons(gh) a(fe)quæ(dc) tu(ffg)æ(f) de(f) sca(f)tu(f)rí(gh)gi(g)ne(fe) rec(g)ti(ghg) cor(fg!hvGFg)dis,(gf) (;) per(f) ve(f)nas(gh) bo(h)ni(hg) ó(h!iwj)pe(g)ris,(f) (,) in(f) fi(fd!ewfEDCde)nem(dc) æ(f)tér(gh)næ(g) fe(g)li(i)ci(ih)tá(ij)tis(g) ex(ghg)sí(f)li(fg!hvGFg)at.(gf) (::)",
+    "versus":"Fí(f!goh)li(h)i(ih/ivHGhg) tu(h!iwj/kv)i(j) a(jh) lon(i>)ge(gh) vé(f)ni(f!gwhg)ent,(gf) (;) et(f) fí(df)li(f)æ(f) tu(fg)æ(f) de(f) lá(ghf)te(gf)re(f!goh) sur(ig!hwiH!gs<)gunt.(ghGFgf)",
+    "gloria":"Gló(f!goh)ri(h)a(ih/ivHGhg) Pa(h!iwj/kv)tri,(j) et(jh) Fí(ij)li(ih)o,(h) (,) et(h) Spi(h)rí(hg)tu(i)i(gh) Sanc(f!gwhg)to.(gf)"
+	},
   {
 		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-ii"],
 		"datum":[["/antiphonae/Q5F6N3A2"]]
@@ -45,6 +83,19 @@
 		"tags":["septem-dolores-passione","matutinum","nocturna-iii","antiphona","antiphona-iii"],
 		"datum":[["/antiphonae/Q5F6N3A3"]]
   },
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Do(e)le(ehg)o(hho1!iv) su(ig)per(hiHG) te,(h!iwjkvJI) (,) *() fí(g)li(h) mi(ij) Je(i)su,(h) de(f)có(hg)rus(h) ni(fe)mis,(e/fhefveeO1d) (;) et(e) a(e)má(e)bi(ei)lis(i) su(ih)per(ikijvIHih) a(i)mó(i)rem(ihivHF) mu(hi)lí(h)e(gihHs)rum!(hg)",
+    "responsum":"Si(e)cut(fh~) e(hg)nim(f) ma(fihi!jv)ter(i) (,) ú(i)ni(g)cum(ih) dí(i)li(i!jwkJI)git(k) fí(klKJI)li(ig!hwi)um(ijiIsghg) (;) i(hg)ta(ho0!iv) e(hg)go(f) te(fe) di(e)li(ef!gwhGFgwhGF)gé(EFgvFEf)bam.(fe) (::)",
+    "versus":"De(i!jwkJI)fé(hi/hhO1g)cit(h) in(h) do(h)ló(hi)re(ig) vi(hi)ta(hi) me(i!jwkj)a,(ji) (;) et(hi/hhg~) an(hih)ni(i) me(ij)i(i) in(ijijvI!Hs<) ge(hg)mī(h!iwji/jkj)ti(ih!iwjij)bus.(ivHGhg)"
+	},
+	{
+		"tags":["septem-dolores-passione","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) E(d!ewfef>)ja(d) ma(cd)ter(d) *() fons(dh) a(gf)mó(ixghgh!iv)ris,(h) (;) fac(h) nos(j) sen(j>)tí(hgh)re(h) vim(hvGFE!Ds<) do(c)ló(d!ewfef)ris,(ed) (:) ut(dc~) te(fgf)cum(gh~) lu(ixhihGFghfe)ge(c)á(d!ewfef)mus,(ed)",
+    "responsum":"Et(h) Do(hghvGFE)mí(g)ni(gh)cæ(h) pas(h)si(hg)ó(ixhih)nis(h) (,) fru(hg/hf)ctum(ggO1f) sen(fe~)ti(d)á(d!ewfef)mus.(ed) (::)",
+    "versus":"Ut(h) sic(h)ut(hg/hggf~) fí(g)lli(g)us(g) tu(g)us(g) Je(gh)sus(g) (,) pro(g) no(g)bis(g) mór(gh~)tu(g)us(g) est,(g) (,) et(hf~) re(gh)sur(gh)ré(ixh/iiO1h)xit;(h) (;) i(gf)ta(gh) et(h) nos(h) com(h)mór(ixhi~)tu(h)i(h) cum(h) e(h)ó(h)dem(hg/hg~) re(gf)sur(ixf!gwhg/hih)gá(hvGFEfwg!hv)mus.(gf)",
+    "gloria":"Gló(h)ri(h)a(hg/hggO1f) Pa(hf)tri,(gh) et(gh) Fí(h)li(ixh/iiO1!h)o,(h) (;) et(h) Spi(h)rí(hg/hg)tu(gf)i(ixf!gwhg/hih) San(hvGFEfwg!h>)cto.(gf)"
+	},
   {
 		"tags":[
 			["septem-dolores-passione","laudes","antiphona","antiphona-benedictus"],

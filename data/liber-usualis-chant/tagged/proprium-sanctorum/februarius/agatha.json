@@ -8,6 +8,25 @@
 		"antiphona-i":[["/antiphonae/0205N1A1"]],
 		"antiphona-ii":[["/antiphonae/0205N1A2"]],
 		"antiphona-iii":[["/antiphonae/0205N1A3"]]
+	},
+	{
+		"tags":["agatha","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Dum(e) tor(ehg)que(h)ré(i)tur(h) *() be(g)á(i)ta(h) A(g)ga(i)tha(ji) in(hi~) ma(i)míl(i_g!hwi)la,(ijHG__hv_G_FEfe..) (;) di(g_0/hshsfs_//ghO1)xit(g) ad(g!hwiHG___F/gwh_GF) jú(e)di(ef!gv_FEf)cem:(fe..)",
+    "responsum":"Im(i)pi(h)e,(g) cru(h)dé(i)lis(h) et(g) di(i)re(j) ty(h)rán(i_j>)ne,(h_i_/hhog.) (;) non(i) es(h) con(g_h)fú(i)sus(h) am(g)pu(h)tá(i)re(ji) in(hi~) fé(i)mi(i_g!hwi)na(ijHG__hvG__FEfe..) (;) quod(e) ip(e)se(ehg) in(hi~) ma(iv_iv_H_GF/ghO1)tre(g) su(g!hwiHG___F/gwh_GF)xís(ef!gv_FEf)ti?(fe..) (::)",
+    "versus":"E(i!jwk_JI)go(h_i/hhog) au(h)tem(h) há(hi)be(h)o(h) ma(h)míl(hi~)las(h) ín(hi~)te(h)gras(h) in(hi~)tus(h) in(h) á(ig)ni(hi)ma(hi) me(i!jwkj__)a,(ji..) (;) quas(i) Dó(i)mi(i)no(iji/jv_IH) con(ih~)se(h!iwji/jkj)crá(i_h!iwjij)vi.(iv_HGhg..)"
+	},
+	{
+		"tags":["agatha","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) A(e)ga(e)tha(ehg) læ(h)tís(i)si(hg/h_0/iioh/i_j)me(i_) *(,) et(i_) glo(e)ri(ei)án(hi~)ter(i) i(ih_hv_GF/ghO1)bat(g) ad(g!hwiHG___F/gwh_GF) cár(e)ce(ef!gv_FEf)rem,(fe..)",
+    "responsum":"Et(ihi) qua(i_l)si(lkkv_JIjhho_g) ad(h) é(j)pu(k)las(j_k_JIH__) in(j>)vi(k)tá(j_kJ__I/jwkjk)ta,(ji__) (;) a(g)gó(i)nem(ig~) suum(ij_joi) Dó(h_i)mi(fhg___/hiffoe/fv_)no(e_f!gwhe/fv_/eeod) (;) pré(d_f!gwh_hi)ci(h)bus(h_i!jwk_JI) com(i)men(i_g!hwiHG___F/gwh_GF>)dá(ef!gv_FEf)bat.(fe..) (::)",
+    "versus":"No(i)bi(i)lís(i!jwk_JI)si(hg)mis(h_i/hhog) or(ig)ta(hi) na(hi)tá(i)li(i!jwkj)bus,(ji..) (;) ab(h_i/hhog) i(hih)gnó(i)bi(i)li(i) gau(ij)dens(i) tra(i)he(i)bá(i)tur(ijij_IH) ad(ih) cár(h!iwji/jkj)ce(i_h!iwjij)rem.(iv_HGhg..)"
+	},
+	{
+		"tags":["agatha","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:8;\n%%\n(c4) Quis(f_0/gh) es(g) tu,(g) *() qui(g) ve(g)nís(g)ti(gh) ad(h) me(ixhg/higgf..) (,) cu(hf)rá(ghg)re(h) vúl(hjh>)ne(g)ra(hf__/g_h!iwjI__H/iwj_IH) me(gh!iv_HGh)a?(hg..) (:) E(jkj)go(jh) sum(jkj) A(jk)pós(ki/jok)to(h)lus(hfh) Chris(h!iwjI__HGh)ti:(hg..) (;) ni(f)hil(ixhih) in(hg~) me(iyi) dú(j)bi(j)tes,(ji__/jvI__HG) fi(gh)li(hg__/hv_GFg)a:(gf..)",
+    "responsum":"Ip(fg/hjg)se(g) me(g) mi(ge)sit(g) ad(fef) te,(dec/d!ewfe__/fv_ED.) (;) quem(g) di(g)le(g)xís(gh)ti(g) men(gh~)te(g) et(g) pu(g)ro(g_h!iwjI__H/iwj_IH) cor(gh!iv_HGh)de.(hg..) (::)",
+    "versus":"Nam(j) et(j) e(ji)go(jkj/iji/hhog) A(hi)pós(ih)to(ij)lus(hi) e(g)jus(g!hwih__) sum,(hg..) (;) et(g) no(g)vi(ixhi_HG/hih) me(ghf)dí(g_h)ci(iyh!iwji/jkJ_IH)nam.(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(iyh!iwji/jkJ_IH)to.(h_i_HGhg..)"
   },
   {
 		"tags":["agatha","matutinum","nocturna-ii","antiphona"],
@@ -15,12 +34,44 @@
 		"antiphona-ii":[["/antiphonae/0205N2A2"]],
 		"antiphona-iii":[["/antiphonae/0205N2A3"]]
   },
+	{
+		"tags":["agatha","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:4;\n%%\n(c4) E(d)go(fd) au(e)tem(e_0/fgf_/eeof/ded) *(,) ad(dfe~)ju(f)vá(ghd)ta(e) a(ef!hvGF/ghg) Dó(e)mi(egffs)no,(eeof.) (;) per(fd~)se(g)ve(hi)rá(ixjsjsjg/hshs_/gh/igh)bo(g_h_/ggoe) (,) in(e) con(e)fes(efO1)si(e)ó(ixfe__/f!gwh_/iv)ne(ge__) e(ef!gvFE_0//fv_EDe)jus,(ed..)",
+    "responsum":"Qui(d) me(ixdf_!hih___) sal(iyh!iwjI__HGh>)vam(ghg___) fe(e!fwg_f!gwhgh)cit(hg..) (;) et(ixhi~) con(h)so(hg)lá(h_hg__)tus(ghGFghg) est(egffs) me.(fe..) (::)",
+    "versus":"Grá(h)ti(gh)as(g_f!gwhg/hv_GEfe__) ti(g)bi(g) a(g)go,(g) Dó(gh)mi(g)ne(g) Je(g)su(g) Chris(gh)te,(g) (,) qui(g)a(g) me(gf)mor(gh) es(gf) me(e!fwgf)i,(fe..) (;) et(f) mi(de)sís(e)ti(e) ad(ef~) me(e) A(e)pós(efO1)to(e)lum(e) tu(efO1)um(e) (`) cu(e)rá(efO1)re(e) vúl(e!fwg_FE)ne(g)ra(ghg/hv_GF) me(ef/gffs)a.(ed..)"
+	},
+	{
+		"tags":["agatha","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Ip(f_0/gh)se(g) me(g) co(g)ro(gh)ná(h)vit(ixhg/higgf..) *(;) qui(hf) per(ghg) A(h)pós(h!iwj)to(h)lum(g) Pe(h!iwj/kvJ__I/jwkjk)trum(kj__) (,) in(j) cus(jk)tó(kjji__)di(hg)a(hi_/jo) me(i) con(ji__/jv_IH)for(gh)tá(hg__/hv_GFg)vit,(gf..) (;) pro(hf) e(ghg)o(h) quod(h) jus(hwj)sa(h) sum(g) sus(g)pén(ixh_iH__GFg_h>)di(g) in(g) e(iyg_h!iwjI__H/iwj_IH)q<e>u</e>ú(g)le(gh!iv_HGh)o.(hg..)",
+    "responsum":"Prop(gh)ter(g) fi(gh)dem(g) cas(g)ti(gh)tá(h)tis(ixhg/higgf__) (,) ad(g)jú(gh)va(g) me,(g) Dó(gh)mi(g)ne,(g) De(g)us(g_h!iwj) me(j_i!jwkjk)us(kj..) (;) in(j) tor(jk~)tú(kjjv_IHijO1)ra(i) ma(j)mil(j)lá(ji__/jv_IHijO1)rum(i) me(i!jwkJI___H/iwj_IH)á(gh!iv_HGh)rum.(hg..) (::)",
+    "versus":"Ip(ji)se(jkj/iji/hhog) me(hi) di(ih)gná(jk)tus(j) est(j) (,) ab(j) om(j)ni(ji) pla(ih)ga(ij) cu(hi)rá(g!hwih)re,(hg..) (;) et(g) ma(fg)míl(g)lam(g) me(gh)am(g) me(g)o(g) péc(gh)to(g)ri(g) (,) re(ixhi_HGhih)sti(ghf)tú(gh)e(iyh!iwji/jkJ_IH)re.(h_i_HGhg..)"
+	},
+	{
+		"tags":["agatha","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:5;\n%%\n(c3) Vi(f)dís(d)ti,(fh) Dó(hhog)mi(hv_GF)ne,(f!gwh_/ivH__G/hwi_ioh) *(,) et(h) ex(ffoe)spec(ef)tás(fvED___C/dwede)ti(ed__) (,) a(d)gó(efef)nem(gxf_hF__E/fwg_FE>) me(de!fv_EDe)um,(ed..) (;) quó(d)mo(gxefef_/gv)do(f) pug(f)ná(f)vi(gxe_0/fgeed__) in(gyf!gwh_/i>) stá(ivHG___F/gwh_GF)di(e!fwh_GFg)o;(gf..) (:) sed,(f) qui(h)a(i) nó(ij)lu(i)i(i) ob(i)e(ih)dí(i_0/jhi)re(ihho/fgf) (,) man(f)dá(hih)tis(hg) prín(h@ioj)ci(jvIH___G/hwihi)pum,(hoi.)",
+    "responsum":"Jus(f_i_/jv)sa(h) sum(f_h_/hf__/he__/fv_/eeod) in(d) ma(ef)míl(gxgsgsge~)las(f) tor(gxf!gwhGF___E/fwg_FE>)qué(de!fv_EDe)ri.(ed..) (::)",
+    "versus":"Prop(h)ter(hi_/hshs_fgf) ve(h)ri(h)tá(hi)tem(h) et(h) man(hf~)su(fi)e(gh)tú(h)di(h_g!hwihi)nem(ih..) (;) et(hg/hg) jus(gf)tí(h_i)ti(gxh_g!hwiH__GFg)am.(gf..)",
+    "gloria":"Gló(h)ri(h)a(hi_/hshs_/fgf) Pa(hf)tri,(fi) et(gh) Fí(h)li(h_g!hwihi)o,(ih..) (;) et(h) Spi(h)rí(hg/hg)tu(gf)i(h_i) Sanc(gxh_g!hwiH__GFg)to.(gf..)"
+  },
   {
 		"tags":["agatha","matutinum","nocturna-iii","antiphona"],
 		"antiphona-i":[["/antiphonae/0205N3A1"]],
 		"antiphona-ii":[["/antiphonae/0205N3A2"]],
 		"antiphona-iii":[["/antiphonae/0205N3A3"]]
   },
+	{
+		"tags":["agatha","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) Be(de)á(de)ta(d) A(de)ga(d)tha,(d) *(,) in(e)grés(d)sa(e) cár(g_h>)ce(g_h)rem,(h!iwjh__hog) (,) ex(g_h)pán(h!iwji/jkj>)dit(h) ma(hggoe)nus(fg) su(fge___/fv_EDe)as(d_0/efe_/fv.) (;) ad(c_d) De(f_g_FE)um,(f@goh) et(hg/hf/gvFE___) di(d!ewfef)xit:(ed..) (:) Dó(d!ewf_fv_ED)mi(d!ewf_ED)ne,(d!ewf_) (,) qui(c) me(d) fe(f)cís(fe)ti(g) vín(f_g>)ce(fv_ED)re(d!ewf) (,) tor(c_d)mén(ixedh_/i>)ta(h) car(f!gwhg~)ní(h)fi(ixg_f!gwhgh_/iv)cum,(h.)",
+    "responsum":"Ju(f)be(gh) me,(hg) Dó(h)mi(gf)ne,(g) ad(fd~) tu(e_0/fgFE__fv_ED)am(fd/efe_/fv) (`) mi(d)se(fgf)ri(fe)cór(ghgh>)di(gf)am(fe__/fvE__DCdc__) per(fe__/f@goh>)ve(fe__)ní(d_c!dwe_/fv)re.(ed..) (::)",
+    "versus":"Dó(h)mi(h)ne,(hg/hggof) qui(g) me(g) cre(g)ás(gh)ti,(g) (,) et(g) tu(g)lís(g)ti(g) a(gh) me(g) a(hf)mó(gh)rem(gh) sæ(h)cu(ixh_0/iioh)li,(h.) (;) qui(hf) cor(gh)pus(h) me(ixhi)um(h) (,) a(h) pol(h)lu(h)ti(h)ó(h)ne(hg/hg) se(hf)pa(ixf!gwhg/hih)rás(hv_GF_E/fwg_/hv)ti.(gf..)"
+	},
+	{
+		"tags":["agatha","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:8;\n%%\n(c4) Me(d)di(d)cí(f_0/gh)nam(g) *() car(gh~)ná(h)lem(ixhg/hig_gof) (,) cór(hf~)po(ghg)ri(h) me(hjh)o(ghg) (,) num(ixh_0/ivHGFgh)quam(g) ex(g_h!iwj_I_H/iwj_IH)hí(g)bu(gh!iv_HGh)i,(ixg_h/ih..) (:) sed(f) há(gh)be(h)o(h) Dó(h)mi(h)num(h) Je(hggoe)sum(g) Chris(fef)tum,(dec_/d!ewfe/fv_ED.)",
+    "responsum":"Qui(d) so(f_0/gh)lo(g) ser(gh~)mó(h)ne(ixhg/hig_gof) (,) re(hf)stáu(g)rat(hjh) u(g)ni(hf/g_h!iwj_I_H/iwj_IH)vér(g_h!iv_HGh)sa.(hg..) (::)",
+    "versus":"Qui(j) me(j) di(j)gná(j)tus(ji) est(jkj/ijihhog) ab(hi) om(i)ni(i) pla(i)ga(i) cu(ih)rá(jk)re,(j.) (,) et(j) ma(j)míl(j)lam(j) me(jk)am(j) (`) me(j)o(j) péc(j)to(ji)ri(ih) re(ij)sti(hi)tú(g)e(g!hwih__)re,(hg..) (;) ip(g)sum(fg) ín(g)vo(g)co(ixhi_HGhih) De(ghf)um(g_h) vi(iyh!iwji/jkJ_IH)vum(h_i_HGhg..)",
+    "gloria":"Gló(j)ri(ji)a(jkjijihhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih__)o,(hg..) (;) et(g) Spi(g)rí(ixhi_HG/hih)tu(ghf)i(g_h) Sanc(iyh!iwji/jkJ_IH)to.(h_i_HGhg..)"
+	},
   {
 		"tags":["agatha","antiphona"],
 		"antiphona-i":[["/antiphonae/2425"]],
