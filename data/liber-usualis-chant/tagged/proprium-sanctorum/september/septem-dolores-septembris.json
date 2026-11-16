@@ -28,6 +28,26 @@
 		"antiphona-i":[["/antiphonae/0915N1A1"]],
 		"antiphona-ii":[["/antiphonae/0915N1A2"]],
 		"antiphona-iii":[["/antiphonae/0915N1A3"]]
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Si(e)me(ef!gwhGFg)on,(fe) (,) *() vir(hiHG) jus(h!iwjij)tus(ji) (,) et(i) ti(ihhvGF)mo(g!hwiHGF/gwhGF)rá(ef!gvFEf)tus,(fe) (;) di(ei)xit(i) ad(i) Ma(ih)rí(i!jwkjk)am:(ji)",
+    "responsum":"Tu(ihi)am(k) ip(l)sí(mlm)us(kkol) á(lkkj)ni(hi!jv/kvJIj)mam(ji) (,) per(hg)trans(hi)í(ihhvGFghO1)bit(g!hwiHGF/gwhGF) glá(e)di(ef!gvFEf)us.(fe) (::)",
+    "versus":"Ne(i) vo(i)cé(i!jwkJI)tis(hi/hhog) me(h) pul(h)chram,(ig) sed(hi) a(hi)má(i!jwkj)ram,(ji) (;) qui(hi/hhog)a(hih) a(i)ma(i)ri(i)tú(i)di(i)ne(i) val(ij)de(i) (,) re(i)plé(i)vit(i) me(ijijIH) Om(ih)ní(h!iwji/jkj)pot(ih!iwjij)ens.(ivHGhg)"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:7;\n%%\n(c3) Sur(ei~)ge(i) *() et(i) ác(i!jwk)ci(ih)pe(h) Pú(hg)e(f)rum(g!hoi) et(i) Ma(i)trem(h) e(hf!gwhGFEf)jus,(fe) (;) et(e) fu(ei)ge(i) in(i) Æ(h)gýp(i!jwkjk)tum:(ji)",
+    "responsum":"Et(h/ik~) es(kkol)to(k) i(ki!jwkjk)bi(ji) us(ihhvGFghO1)que(g) dum(g) di(g)cam(g!hwiHGF/gwhGF) ti(ef!gvFEf)bi.(fe) (::)",
+    "versus":"Ut(i) ad(i)im(i)ple(i)ré(i!jwkJI)tur(hi/hhog) quod(h) dic(h)tum(h) est(h) a(h) Dó(hi)mi(h)no(h) (,) per(h) Pro(h)phé(ig)tam(hi) di(hi)cén(i!jwkj)tem:(ji) (;) Ex(hi/hhog) Æ(hih)gýp(ij)to(i) vo(i)cá(i)vi(i) Fí(ijijIH)li(ih)um(h!iwji/jkj) me(ih/iwjij)um.(ivHGhg)"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:8;\n%%\n(c4) Fi(gh)li,(g) *() quid(g) fe(g)cís(gh)ti(g) no(gh!iwjIH/iwjIH)bis(gh!ivHGh) sic?(ixg!hih)",
+    "responsum-i":"E(f)go(g) et(h) pa(j)ter(hg) tu(hvGFgh)us(g)",
+    "responsum-ii":"Do(gh)lén(fe/fvE~D~)tes(ed) quæ(fe)re(fg)bá(gh!iwjIH/iwjIH)mus(gh!ivHGh) te.(hg) (::)",
+    "versus":"Quid(ji) est,(jkj/iji/hhog) quod(hi) me(ih) quæ(ij)re(hi)bá(g!hwih)tis?(hg) (;) In(g) his,(fg) quæ(g) Pa(g)tris(g) me(gh)i(g) sunt,(g) o(g)pór(ixhiHGhih)tet(ghf) me(gh) es(iyh!iwji/jkJIH)se.(hiHGhg)",
+    "gloria":"Gló(j)ri(ji)a(jkj/iji/hhog) Pa(ih)tri,(ij) et(hi) Fí(g)li(g!hwih)o,(hg) (;) et(g) Spi(g)rí(ixhiHGhih)tu(ghf)i(gh) Sanc(h!iwji/jkJIH)to.(hiHGhg)"
   },
   {
 		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","antiphona"],
@@ -35,11 +55,44 @@
 		"antiphona-ii":[["/antiphonae/0915N2A2"]],
 		"antiphona-iii":[["/antiphonae/0915N2A3"]]
   },
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Je(ef)sum(e) ba(e)ju(e)lán(ef)tem(e) *() si(e)bi(e!foh) cru(hvGFh!iwj/kvJIj)cem(ji)",
+    "responsum":"Se(hg)que(hi)bá(ihhvGFghO1)tur(g) tur(f)ba(h) mu(g!hwiHGF/gwhGF)lí(e)e(ef!gvFEf)rum,(fe) (;) quæ(ef) plan(f)gé(fd!ewfef)bant(fe) et(ef~) la(e)men(e)ta(e)bá(e!fhf)tur(de) e(gxef!gvFEf)um.(fe) (::)",
+    "versus":"Fí(i!jwkJI)li(hg)æ(hi/hhog) Je(h)rú(hi)sa(h)lem,(h) (,) su(h)per(h) vos(ig) ip(hi)sas(hi) fle(i!jwkj)te(ji) (;) et(i) su(i)per(i) fí(ijijIH)li(ih)os(h!iwji/jkj) ves(ih!iwjij)tros.(ivHGhg)"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:6;\n%%\n(cb4) Post(ffg)quam(f) *() ve(f)né(fe)runt(dc) in(df~) lo(fgf)cum,(f) (,) qui(f) dí(ghgh/iv)ci(h)tur(hjHG/hwiHG) Cal(ghg)vá(f)ri(fg!hvGFg)æ,(gf) (;) i(f)bi(hg) cru(gj)ci(j)fi(jk)xé(jh/hwihi)runt(ih) e(g!hwiHGh)um:(hg)",
+    "responsum":"Sta(g)bat(ghg) au(fd!ewfEDCd)tem(dc) jux(d)ta(f) Cru(f!goh)cem(g) Je(f!gwhgh)su(hg) (,) Ma(g!hwiHG)ter(ghg) e(f!gwhgh)jus.(gf) (::)",
+    "versus":"Tunc(f) be(f)á(f!goh)tam(ih/ivHGhg) il(h)lí(h!iwj/kv)us(j) á(jh)ni(i)mam(gh) do(f)ló(f!gwhg)ris(gf) glá(f)di(f)us(ghf) per(gf)trans(f!goh)í(ig!hwiHG)vit.(ghGFgf)"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:7;\n%%\n(c3) Jo(e/fhf/gv)seph(fe) *() ab(e) A(e)ri(ehg)ma(h)thǽ(ih!iwjij)a(ji)",
+    "responsum-i":"Pé(hg/hvGFghO1)ti(g)it(g) cor(g)pus(g!hwiHGF/gwhGF) Je(ef!gvFEf)su,(eeod) (;) quod,(d) de(f) Cru(hi)ce(h) de(hi)pó(i)si(ih!iwjij)tum,(ji)",
+    "responsum-ii":"Su(i)o(ij) com(ji/jhi)plé(iv/fh!ivHGh)xu(hg) (,) Ma(hg/hvGFghO1)ter(g) ex(g!hwiHGF/gwhGF)cé(ef!gvFEf)pit(fe) (::)",
+    "versus":"Do(i!jwkJI)lens(hi/hhog) Su(h)na(h)mí(hi)tis(h) si(hi)nu(h) et(h) gé(ig)ni(hi)bus(hi) su(i!jwkj)is(ji) (;) sus(hi/hhog)tí(hih)nu(ij)it(i) mór(i)tu(ijijIH)um(ih) Fí(h!iwji/jkj)li(ih!iwjij)um.(ivHGhg)",
+    "gloria":"Gló(i!jwkJI)ri(hg)a(hi/hhog) Pa(ig)tri,(hi) et(hi) Fí(i)li(i!jwkj)o,(ji) (;) et(i) Spi(i)rí(ijijIH)tu(ih)i(h!iwji/jkj) Sanc(ih!iwjij)to.(ivHGhg)"
+  },
   {
 		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","antiphona"],
 		"antiphona-i":[["/antiphonae/0915N3A1"]],
 		"antiphona-ii":[["/antiphonae/0915N3A2"]],
 		"antiphona-iii":[["/antiphonae/0915N3A3"]]
+  },
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:1;\n%%\n(c4) Quis(d) ti(d!ewf/gf)bi(fd) sen(fgf)sus(ghg) fu(ixhvGF/gwhgh/iv)it,(h) (,) o(ixhi) Ma(ixhi)ter(hggoe) do(fg)ló(fge/fvEDe)rum,(ed)",
+    "responsum":"Dum(d) Jo(fgf)seph(fd) sín(f!goh)do(hvGFE/fwgfg)ne(gf) (,) Fí(f)li(gh)um(h) t{uu}m(hggoe) in(fg)vól(ghf/efd)vit,(d/efd/ev/ddoc) (;) et(d) pó(fg)su(fe)it(f!goh) e(hvGFE/fwgfg)um(gf) (,) in(f!goh) mo(h)nu(hg/hf/gvFE)mén(d!ewfef)to?(ed) (::)",
+    "versus":"Con(h)si(h)de(h)rá(h)te(hg/hggof) et(gh) vi(gh)dé(ixh/iioh)te,(h) (;) si(hf) est(gh) do(ixhi)lor,(h) (`) sic(h)ut(hg/hg) do(hf)lor(ixf!gwhg/hih) me(hvGFE/fwg/hv)us.(gf)"
+	},
+	{
+		"tags":["septem-dolores-septembris","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) In(d!ewfefd~) to(cd)to(d) *() cor(dh)de(gfg) tu(ixivHGhi)o(h) (;) gé(hj)mi(j)tus(jijh) Ma(gf)tris(gh) tu(fvED)æ(dfddc) (,) ne(d!ewf/gv) ob(h)li(gf)vis(gh)cá(d!ewfef)ris,(ed)",
+    "responsum":"Ut(h) per(h>)fi(ghGF)ci(g)á(gh)tur(h) pro(g)pi(h)ti(gf)á(g)ti(gh)o(h) (,) et(hvG~F~) be(fgffe)ne(dc)díc(d)ti(d!ewfef)o.(ed) (::)",
+    "versus":"A(h)ve(hg/hggof) prin(g)ceps(hf) ge(gh)ne(gh)ró(ixh/iioh)sa,(h) (;) Mar(hf~)ty(gh)rúm(ixhi)que(h) pri(h)ma(h) ro(ixhi)sa,(h) (,) Vir(h)gi(h)núm(hg/hg~)que(hf) lí(ixf!gwhg/hih)li(hvGFEfwg/hv)um.(gf)",
+    "gloria":"Gló(h)ri(h)a(hg/hggof) Pa(hf)tri,(gh) et(gh) Fí(h)li(ixh/iioh)o,(h) (;) et(h) Spi(h)rí(hg/hg)tu(hf)i(ixf!gwhg/hih) Sanc(hvGFEfwg/hv)to.(gf)"
   },
   {
 		"tags":["septem-dolores-septembris","hymnus"],
