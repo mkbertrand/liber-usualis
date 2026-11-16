@@ -28,18 +28,55 @@
 		"antiphona-i":[["/antiphonae/1007N1A1"]],
 		"antiphona-ii":[["/antiphonae/1007N1A2"]],
 		"antiphona-iii":[["/antiphonae/1007N1A3"]]
+	},
+	{
+		"tags":["rosarium-bmv","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:7;\n%%\n(c3) Sú(ef)mi(e)te(e) psal(e)té(ef)ri(e)um(e) (,) ju(e!foh)cún(hv/g!hihi/j>)dum(i) in(i) in(i)sí(ki!jwk/lv)gni(k) di(jkJIj)e(ji) (,) so(hg)lem(h)ni(ig/hoi)tá(fe)tis(de) ves(e!fwgfg)træ:(fe)",
+    "responsum":"Et(ikj) ex(kl)sul(kj)tá(jlKJkvJI/jwkjk)te(ji) (,) Vír(ij~)gi(ih)ni(i) ad(h)ju(h)trí(hg/hvGFghO1)ci(g!hwiHGF/gwhGF) nos(ef!gvFEf)træ.(fe) (::)",
+    "versus":"Can(i)tá(i!jwkJI)te(hi/hhog) e(hi)i(h) cán(ig)ti(hi)cum(hi) no(i!jwkj)vum:(ji) (;) an(hi/hhog)nun(hih)ti(i)á(ij)te(i) in(i)ter(i) gen(ij)tes(i) gló(ijijIH)ri(ih)am(h!iwji/jkj) e(ih!iwjij)jus.(ivHGhg)"
+	},
+	{
+		"tags":["rosarium-bmv","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:3;\n%%\n(c4) Vi(e)di(eg/fssded) *() spe(ef)ci(g)ó(ixhg/hi)sam(h) (,) sic(h)ut(h) co(hg)lúm(ixh/igh)bam,(hggo/efe) (,) a(f)scen(ghg~)dén(h)tem(g) dé(gh)su(g)per(g) ri(gh)vos(gf) a(de)quá(e/fgffs)rum,(ed) (;) cu(e)jus(eg/fssded) in(dc)æs(gh)ti(g)má(hi/jo)bi(i)lis(i) o(i)dor(ik/jsshih) e(h)rat(j) ni(ikjjs)mis(ji) (;) in(i>) ves(g)ti(h!iwj)mén(jijg~)tis(h!iwj) e(jvIHivH~G~)jus.(hg)",
+    "responsum":"Et(e) sic(ixg/hi)ut(h) di(h)es(hg~) ver(ixh/igh)ni(hggo/efe) (,) cir(f)cum(ghg~)dá(h)bant(g) e(gh)am(g) flo(gh)res(gf) ro(de)sá(e/fgffs)rum(ed) (;) et(g) lí(gsjss)li(ih)a(hoi) con(g>)vál(eeof)li(fv/df!gvFEf)um.(fe) (::)",
+    "versus":"A(ikjjs)sti(h!iwji)tit(hhog) Re(i)gí(ij)na(h) a(h) dex(h)tris(h) tu(hi)is(h) (,) in(h) ves(h)tí(h)tu(hg) de(h)au(j)rá(ikjjs)to,(ji) (;) cir(ig~)cúm(hi~)da(i)ta(i) va(ikjjvIH/iwji)ri(hg)e(gh!iwj)tá(jiiohivHGh)te.(hg)"
   },
   {
 		"tags":["rosarium-bmv","matutinum","nocturna-ii","antiphona"],
 		"antiphona-i":[["/antiphonae/1007N2A1"]],
 		"antiphona-ii":[["/antiphonae/1007N2A2"]],
 		"antiphona-iii":[["/antiphonae/1007N2A3"]]
+	},
+	{
+		"tags":["rosarium-bmv","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:6;\n%%\n(c4) Tu(d) gló(ffg)ri(f)a(f) *() Je(ghgh)rú(h)sa(hg)lem,(fvfvgvDCded) (;) tu(ffog) læ(f)tí(fg)ti(g)a(g) Is(g)ra(gf!gwhgh)ël,(hg) (;) tu(f) ho(fd)no(f)ri(g)fi(h)cén(ixhhoi)ti(g)a(iviv) (,) pó(h)pu(j)li(ixi) nos(ixhjiis)tri,(ih) (;) fe(h)cís(hg)ti(h) vi(ixhih)rí(hg/hfg)li(fe!fwgfg)ter:(gf)",
+    "responsum":"Qui(f)a(fd) cunc(f)tas(g) hǽ(ixh!iwj)re(g)ses(f) so(g)la(f) in(ffoe)ter(ghgh)e(ghg)mís(fg!hvGFg)ti.(gf) (::)",
+    "versus":"Pul(f)chra(f!goh) es(ixih/ivHGhg) et(ixi) de(ghg)có(f!gwhg)ra,(gf) (;) ter(f)rí(df)bi(f)lis(f) ut(f) cas(f)tró(fg)rum(f) á(f)ci(f)es(ghf) or(gf~)di(f!goh)ná(ixig!hwiHG)ta.(ghGFgf)"
+	},
+	{
+		"tags":["rosarium-bmv","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:5;\n%%\n(c3) Déx(f)te(d)ra(f) tu(hhi)a(h) (,) mag(h)ni(i)fi(h)cá(i)ta(h) est(hsss) in(f) for(ffoe)ti(f)tú(gxf!gwh)di(efEDe)ne,(ed) (;) déx(f)te(e)ra(d) tu(f!gwh/ivHG/hwihi)a(ih) con(h)fré(ijh)git(fh) in(h)i(hg)mí(hiHGF)cos:(fhEDeffe)",
+    "responsum":"Sub(f@hoi)mér(ij)si(i) sunt(i) in(ih) a(i/jhi)quis(ihho/fgf) ve(hih)he(hf)mén(h!ioj)ti(jvIHG/hwihi)bus,(hoi) (;) et(fi!jv) o(h)pé(f/hhef)ru(ef)it(eeod) e(gxd!ewfef/go)os(fhFE/fwgFE) ma(de!fvEDe)re.(ed) (::)",
+    "versus":"Be(h)ne(h)dí(h)xit(h) te(hi/hssfgf) Dó(hi)mi(h)nus(h) in(h) vir(hf)tú(fi)te(gh) su(hg/hwihi)a,(ih) (;) qui(d)a(f) per(h) te(h) ad(h) ní(hi)hi(h)lum(h) red(h)é(hi)git(h) in(h)i(hg/hg)mí(gf)cos(hi) nos(gxhg!hwiHGFg)tros.(gf)"
   },
   {
 		"tags":["rosarium-bmv","matutinum","nocturna-iii","antiphona"],
 		"antiphona-i":[["/antiphonae/1007N3A1"]],
 		"antiphona-ii":[["/antiphonae/1007N3A2"]],
 		"antiphona-iii":[["/antiphonae/1007N3A3"]]
+	},
+	{
+		"tags":["rosarium-bmv","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:3;\n%%\n(c4) E(g!hji/jo)go(i) qua(jsjsjs)si(hok) vi(k)tis(kj/kj/ji) (,) fruc(gh)ti(g)fi(gh!iwj)cá(jvIHigh)vi(ggoe) (,) su(e)a(e!fwg/ho)vi(g)tá(gh)tem(g) o(e)dó(egffs)ris,(fe)",
+    "responsum":"Et(fd~) flo(g/hgi)res(i) me(i)i(i/jkHGi) (;) fruc(ighsjsskjjs)tus(ji) ho(g)nó(ijO1)ris(h) et(hg~) ho(fg)nes(gd!ewf)tá(egffs)tis.(fe) (::)",
+    "versus":"E(i)go(i) ma(ikjjs)ter(h!iwji/hhog) pul(i!jo1)chræ(h) di(h)lec(h)ti(h)ó(hi)nis,(hg) et(h) ti(j)mó(ikjjs)ris,(ji) (;) et(ig~) a(hi)gni(i)ti(i)ó(ijO1)nis,(i) et(ikjjvIH!iwji) sanc(hg)tæ(gh!iwj) spe(jiioh/ivHGh)i.(hg)"
+	},
+	{
+		"tags":["rosarium-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) Sur(efED/gvgvFDevDC)ge,(d) (,) *() pró(fg!hvGFgh)pe(g)ra,(g) a(gvFE)mí(d)ca(e) me(fvEDCd)a,(dc) (,) for(g!hoj)mó(ji)sa(hg) me(h)a,(g) et(gd) ve(fvEDC)ni:(d) (:) jam(ixf!gwhg/hih>) e(f)nim(f) hi(gvFEf)ems(d) tráns(ffg)i(fe)it,(f) (;) im(f)ber(f) á(gh)bi(gf)it(g) et(gvFE) re(ixd!ewfED/f!gwhg/hihfgFED)cés(cd)sit:(d)",
+    "responsum":"Vox(dh) túr(gf)tu(gh)ris(h) au(h@jok)dí(j)ta(jvIH) est(h) in(hggof/goh) ter(d)ra(dc) nos(d!ewfef)tra.(ed) (::)",
+    "versus":"In(dh)trá(h)vit(hg/hggof) Ma(g)rí(gh)a(g) in(g) do(g)mum(hf) Za(gh)cha(gh)rí(ixh/iioh)æ(h) (;) et(h) sa(h)lu(h)tá(h)vit(hg/hg) E(hf)lí(ixf!gwhg/hih)sa(hvGFE/fwg/hv)beth.(gf)",
+    "gloria":"Gló(h)ri(h)a(hg/hggof) Pa(hf)tri,(gh) et(gh) Fí(h)li(ixh/iioh)o,(h) (;) et(h) Spi(h)rí(hg/hg)tu(hf)i(ixf!gwhg/hih) Sanc(hvGFE/fwg/hv)to.(gf)"
   },
   {
 		"tags":["rosarium-bmv","antiphona"],
