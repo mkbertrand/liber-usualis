@@ -19,7 +19,32 @@
 		"tags":["assumptio-bmv","matutinum","nocturna-i","antiphona"],
     "antiphona-i":[["/antiphonae/0815N1A1"]],
     "antiphona-ii":[["/antiphonae/0815N1A2"]]
-  },
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:3;\n%%\n(c4) Vi(e)di(eg_fsfs_ded) *() spe(e_f)ci(g)ó(ixhg/h_i)sam(h) (,) sic(h)ut(h) co(hg)lúm(ixh_0/igh)bam,(hggoefe) (,) a(f)scen(ghg~)dén(h)tem(g) dé(g_h)su(g)per(g) ri(gh_)vos(gf) a(de)quá(e_0/fgffs)rum,(ed..) (;) cu(e)jus(eg_fsfsded) in(dc)æs(gh)ti(g)má(hi/jo)bi(i)lis(i) o(i)dor(ikjsjshihhg__) e(h)rat(j) ni(ikjjs)mis(ji..) (;) in(i>_) ves(g)ti(h!iwj)mén(jijg~)tis(h!iwj) e(jv_IH_iv_H~G~)jus.(hg..)",
+    "responsum":"Et(e) sic(ixg_0/hi)ut(h) di(h)es(hg~) ver(ixh_0/igh)ni(hggoefe) (,) cir(f)cum(ghg~)dá(h)bant(g) e(gh)am(g) flo(gh_)res(gf) ro(de)sá(e_0/fgffs)rum(ed..) (;) et(g) lí(gsjss)li(ih)a(hoi_) con(g>_)vál(eeof)li(fv_//df!gv_FEf)um.(fe..) (::)",
+    "versus":"Quæ(i) est(i) is(ikjjs)ta(h!iwjihhog) quæ(i) a(i)scén(ij~)dit(h) per(h) de(h)sér(hi~)tum(h) (,) sic(h)ut(h) vír(hi~)gu(h)la(h) fu(hi)mi,(h) ex(hg) a(h)ro(j)má(i)ti(ikjjs)bus(ji..) (;) myr(ikjjvI_____Hiwji)rhæ(hg) et(g_h!iwj) thu(jiiohiv_HGh)ris.(hg..)"
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:8;\n%%\n(c4) Or(gd~)ná(f_0/gh)tam(g) *() in(g) mo(gh)ní(h)li(g)bus(ixg_h!iwjg/hvggof) (`) fí(gh)li(g)am(g) Je(g)rú(g_h!iwjI_H/iwj_IH)sa(gh!iv_H_G_h)lem(hg..) (;) Dó(jkj)mi(jh)nus(jkj) con(jk~)cu(kjjs)pí(j_h!iwj_I_HGh)vit:(hg..)",
+    "responsum":"Et(g) vi(g)dén(h)tes(ig) e(hi)am(i) (`) fí(j)li(jsjs_2jv_IG_0)æ(g) Si(gjHG__hv_GF_0g_)on,(gf..) (;) be(f)a(ghg)tís(h)si(g)mam(g) præ(g)di(g_h_GE_0)ca(g)vé(fef)runt,(dec_//d!ewfe/fv_ED.) (,) di(d)cén(f_0/gh>)tes:(g.) Un(gh~)guén(h)tum(ixhg/higgf__) ef(hf)fú(ghg)sum(h) (`) no(hjHG__)men(hf__/g_h!iwjI_H/iwj_IH>) tu(gh!iv_HGh)um.(hg..) (::)",
+    "versus":"A(j)sti(ji)tit(jkj/iji/hhog) re(hi)gí(i)na(i) a(ih) dex(ij)tris(hi) tu(g!hwih)is(hg..) (:) in(g) ves(fg)tí(gh)tu(g) de(g)au(g)rá(gh)to,(g) (,) cir(g)cúm(gh)da(g)ta(g) va(ixhi_HGhih)ri(ghf)e(g_h)tá(iyh!iwji/jkJ_IH)te.(h_i_HGhg..)"
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:4;\n%%\n(c4) Dif(f)fú(de)sa(e) est(e) *() grá(fe__)ti(e)a(egFE__fv_ED_0ed) (`) in(e) lá(eeof)bi(dc__)is(d!ewf) tu(egffs)is,(eeof.)",
+    "responsum":"Prop(d_g)tér(h)e(g_f!gwhG__FEf)a(fe__) (`) be(efO1)ne(e)dí(e_g/hg)xit(f) te(ev_DC_0) De(de_DC/dwe/fv_)us(ed/efe.) (;) in(e_f_ED_0) æ(ixf_g//fg!hv_//ig/hg)tér(egffs)num.(fe..) (::)",
+    "versus":"Myr(h)rha,(g_f!gwhg/hv_GEfe) et(g) gut(gh)ta,(g) et(g) cá(gh)si(g)a(g) a(g) ves(g)ti(gf)mén(gh)tis(gf) tu(ef)is,(eeod) (,) a(f) dó(gh)mi(gf)bus(gh) e(gf)búr(e)ne(e!fwgf__)is,(fe..) (;) ex(f) qui(de)bus(e) de(e)lec(e)ta(e)vé(efO1)runt(e) te(e) fí(e)li(e)æ(e) re(e)gum(e) (,) in(e) ho(e!fwg_FE)nó(g)re(ghgh_GF) tu(e_f/gffs)o.(ed..)"
+	},
+	{
+		"tags":["assumptio-bmv","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:5;\n%%\n(c4) Be(d)á(f_0/fg)ta(f) es,(f) *(,) Vir(fg~)go(f) Ma(fg)rí(ghgh)a,(hg__gof) (,) De(f)i(fg) Gé(g)ni(g_f!gwhgh)trix,(hg..) (;) quæ(f) cre(f)di(f)dís(d!ewf_EC)ti(ixeg@hv_2//i_g!hwi_HG) Dó(f)mi(fg!hv_GFg)no:(gf..) (;) per(fjjk~)féc(jk)ta(j) sunt(ixh_i_HG_hg__) in(ixh!iwjhhwihi) te,(ixih..) (,) quæ(j) dic(j)ta(iyij) sunt(h_hghg__) ti(fg@hvGF_0g)bi:(gf..) (;) ec(f)ce(g) ex(ixh!iwj)al(g)tá(f)ta(fd_fsfs_fv_EDe) es(dcded) (,) su(c)per(d) cho(fgf)ros(fe__) An(g_h)ge(ixh_jH_Ghwi_HG)ló(fg!hv_GFg)rum.(gf..)",
+    "responsum":"In(f)ter(g)cé(ixh!iwj)de(g) pro(f) no(f)bis(bxgffdfcdvccob) (;) ad(c) Dó(df)mi(f)num(f>) De(e@goh)um(ixh_jH_Ghwi_HG>) nos(fg!hv_GFg)trum.(gf..) (::)",
+    "versus":"A(j)ve,(jk_/jsjs_/hih) Ma(j)rí(jk)a,(j) (`) grá(jh)ti(hk)a(ij) ple(j_i!jwkjk)na,(kj..) (;) Dó(ji/ji)mi(ih)nus(j_k) te(ixj_i!jwkJ__IHi)cum.(ih..)",
+    "gloria":"Gló(j)ri(j)a(jk_jsjs_hih) Pa(jh)tri,(hk) et(ij) Fí(j)li(j_i!jwkjk)o,(kj..) (;) et(j) Spi(j)rí(ji/ji)tu(ih)i(j_k) Sanc(ixj_i!jwkJ__IHi)to.(ih..)"
+	},
   {
 		"tags":["assumptio-bmv","laudes","antiphona","antiphona-benedictus"],
 		"datum":[["/antiphonae/2730"]]

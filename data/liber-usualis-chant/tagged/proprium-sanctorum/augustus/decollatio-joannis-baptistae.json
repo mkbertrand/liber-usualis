@@ -13,6 +13,26 @@
 			["decollatio-joannis-baptistae","laudes","antiphona","antiphona-benedictus"]
 		],
 		"datum":[["/antiphonae/2304"]]
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:8;\n%%\n(c4) Mi(f_0/gh)sit(g) He(g)ró(gh)des(g) *() rex(ixghOi) ma(h)nus,(ixhg__/h!iwjg/hv/ggof.) (;) ac(hf) té(ghg)nu(h)it(hwj) Jo(hg)án(hv_GFg_h>)nem(g.) (;) et(g) vin(gh~)xit(g) e(gh)um(g) in(g_h!iwjI_H_2iwj_IH>) cár(g)ce(gh!iv_HGh)re,(ixg_h/ih..) (;) qui(f)a(h) me(jkj)tu(jh)é(jkj)bat(jk) e(ki_jkh_iv)um(hho1g.) (,) prop(ixf_g/hih)ter(hg) He(iyi)ro(j)dí(j_i_jv_I_HG)a(h_g_hv_GFg)dem,(gf..)",
+    "responsum":"Quam(hf~) tú(ghg)le(h)rat(h) fra(hwj)tri(hg) su(hv_GFg_h)o(g) Phi(g)líp(gh)po(g) u(g_h!iwj_IHiwj_IH)xó(gh!iv_HGh)rem.(hg..) (::)",
+    "versus":"Ar(j)gu(j)é(ji)bat(jkj/iji/hhog) He(hi)ró(ih)dem(ij) Jo(hi)án(g!hwih)nes(hg..) (;) prop(g)ter(g) He(ixhi_HGhih)ro(ghf)dí(g_h)a(h!iwji/jkJ_IH)dem.(h_i_HGhg..)"
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:4;\n%%\n(c4) Jo(f)án(de~)nes(e) *() Bap(e)tís(fe)ta(egF_E_fv_EDed__) (,) ar(e)gu(e)é(eeof)bat(d_c_) He(d!ewf)ró(egffs)dem(eeof.)",
+    "responsum":"Prop(ixd!ewg/hi)ter(h) He(h)ro(hggof)dí(gh)a(g_h_G_FEf)dem,(fe..) (;) quam(e_g/hg>) tú(f)le(ev_DC/dwe/fv_)rat(ed/efe) (`) fra(c)tri(de) su(e_fE_Ddwgfg/hv)o(g) (,) vi(c)vén(de~)ti(e_f_ED) u(ixf_g//fg!hv_//ig/hg)xó(egffs)rem.(fe..) (::)",
+    "versus":"Mis(h)so(g_f!gwhghv_GEf_e_) He(g)ró(gh)des(g) spi(gf)cu(gh)la(gf)tó(e!fwg_f_)re,(fe..) (;) præ(f)cé(de)pit(e) am(e)pu(e)tá(efO1)ri(e) (`) ca(e)put(e) Jo(e)án(e)nis(e!fwg_FE) in(g) cár(ghgh_GF)ce(e_f/gffs)re.(ed..)"
+	},
+	{
+		"tags":["decollatio-joannis-baptistae","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:2;\n%%\n(f3) Pu(c)él(e@fog)læ(f) *() sal(h)tán(hg/hifg)ti(ffoe) (,) im(f)pe(h)rá(hv_G_FEf)vit(f!gwh/ihhog) ma(fg!hv_GFg)ter:(gf..)",
+    "responsum-i":"Ni(h)hil(ij) á(j)li(jiiog)ud(hi) pe(h_i_g_hv_GFg)tas,(gf__) (,) ni(f_g)si(f) ca(fg)put(f) Jo(f)án(fg!hvGFE)nis(f) Bap(hg/hih)tís(hv_GFg)tæ.(ffoe.)",
+    "responsum-ii":"Et(f_c!dwe/f_g) con(f)tris(f)tá(f_g)tus(f) est(f_e_/f!gwh/iv_H_G/hwihi) rex(ih..) (;) prop(h)ter(ij) jus(jiiog)ju(hi)rán(h_i_g_hv_GFg)dum(gf..) (;) et(e) prop(f)ter(h) si(hv_G_FEfg)mul(f) dis(f)cum(f!gwh/ihhog)bén(fg!hv_GFg)tes.(gf..) (::)",
+    "versus":"A(e_f!gwhhi)it(h) pu(h)él(h)la(hg) ma(hi)tri(gh) su(f!gwhg__)æ:(gf..) (;) Quid(f) pe(ef)tam?(f.) (,) At(f!gwh_GF_E_) il(f)la(hg/hih) a(hv_GFg)it.(ffoe.)",
+    "gloria":"Gló(e_f!gwh/hi)ri(h)a(h) Pa(hg)tri,(hi) et(gh) Fí(f)li(f!gwhg__)o,(gf..) (;) et(f) Spi(f)rí(f!gwh_GFE__)tu(f)i(hg/hih) Sanc(hv_GFg>)to.(ffoe.)"
   },
   {
 		"tags":["decollatio-joannis-baptistae","ii-vesperae","antiphona","antiphona-magnificat"],

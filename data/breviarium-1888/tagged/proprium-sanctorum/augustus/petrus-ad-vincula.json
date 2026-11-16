@@ -51,7 +51,9 @@
 	},
 	{
 		"tags":["petrus-ad-vincula","matutinum","responsorium"],
-		"datum":[["petrus-paulus","matutinum","responsorium"]]
+		"nocturna-i":[["petrus-paulus","matutinum","responsorium"]],
+		"nocturna-ii":[["petrus-paulus","matutinum","responsorium"]],
+		"nocturna-iii":[["petrus-paulus","matutinum","responsorium"]]
 	},
 	{
 		"tags":["petrus-ad-vincula","matutinum","nocturna-i","lectio"],
