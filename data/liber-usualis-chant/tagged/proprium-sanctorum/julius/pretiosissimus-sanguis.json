@@ -28,6 +28,25 @@
 		"antiphona-i":[["/antiphonae/0701N1A1"]],
 		"antiphona-ii":[["/antiphonae/0701N1A2"]],
 		"antiphona-iii":[["/antiphonae/0701N1A3"]]
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","responsorium","responsorium-i"],
+    "incipit":"mode:2;\n%%\n(f3) Je(e_0/fg)sus,(f) *() ut(f) sanc(f)ti(f)fi(h)cá(hg/hif_/gv)ret(ffoe) (,) per(f) su(fg)um(f) sán(h>)gui(hg)nem(f) pó(f)pu(f_e_/f!gwh_/iv_H_G/hwihi)lum,(ih..) (;) ex(h)tra(h) por(h_i)tam(ihh_f_hih_1/iv_H_G_) pas(f)sus(fg!hv_GFg) est:(gf..)",
+    "responsum":"Ex(f)e(f)á(f)mus(fc) í(e_0/fg)gi(f)tur(f_0/ghf_/gv_/ffoe) ad(f) e(fg)um(f) ex(f)tra(f) cas(f_e_/f!gwh_iv_H_G/hwihi)tra,(ih..) (;) im(h)pro(ij)pé(j_i_/jv_IG)ri(hih)um(hv_hv_GF) e(eg~)jus(g_) por(hiHGh)tán(f_g_f_)tes.(f.) (::)",
+    "versus":"Non(e_f!gwh_hi)dum(h) e(ij)nim(i) us(hi)que(h) ad(h) sán(hi~)gui(h)nem(hg) re(hi)sti(gh)tís(f!gwh_g_)tis(gf..) (;) ad(f)vér(ef~)sus(f) pec(f)cá(f)tum(f!gwh_GF_E_) re(f)pu(hg/hih)gnán(hv_GFg>)tes.(ffoe.)"
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","responsorium","responsorium-ii"],
+    "incipit":"mode:4;\n%%\n(c4) Mó(f)y(de)ses(e) *() sump(efO1)tum(e) sán(f_e_)gui(e)nem(egF_E_fv_EDe_d_) (,) re(e)spér(eeof)sit(d_c_) in(d!ewf) pó(e)pu(egffs)lum:(eeof.)",
+    "responsum":"Et(d_g) a(ixhgh_/iv)it:(h.) (:) Hic(ixhih) est(h_g_) san(g_h_GF)guis(ixfg!hv_//ig/h_g_) fœ́(e)de(egffs)ris,(fe..) (;) quod(d@foh) pé(ixhi)pi(h)git(ghg) Dó(e_f)mi(g_f!gwhgh)nus(h_g_) vo(g_d!ewf)bís(egffs)cum.(fe..) (::)",
+    "versus":"Fi(h)de(g_f!gwh_g_/hv_GEf_e_) ce(g)le(g)brá(gh)vit(g) Pas(gh)cha(g) (`) et(g) sán(gh)gui(g)nis(g) ef(gf)fu(gh)si(gf)ó(e!fwg_f_)ne,(fe..) (;) ne(f) qui(de) vas(e)tá(efO1)bat(e) pri(e)mi(e)tí(efO1)va,(e) tán(e!fwg_FE)ge(g)ret(ghgh_GF) e(ef/gffs)os.(ed..)"
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-i","responsorium","responsorium-iii"],
+    "incipit":"mode:3;\n%%\n(c4) Vos(g_i) *() qui(i) a(i)li(i)quán(i)do(ji) e(h)rá(i)tis(hg) lon(hj_j_i_)ge,(g_h!iwj_IHijggo/efe.) (;) fac(e!fwg_/ho)ti(g) es(h)tis(ge) pro(f_g_e_fv_EDe)pe(e_d_) in(g>) sán(hggof)gui(f!goh)ne(ixhiGFghg) Chris(egffs)ti:(fe..)",
+    "responsum":"Ip(e)se(fg) e(g)nim(hg/hg) est(g_f_) pax(h_0/jvIH) nos(g_f!gwhgh)tra,(hg..) (;) qui(g) fe(gh)cit(ixe_f!gwh_/ig_/fsfs_ded) (,) ú(f!gwhg)tra(ixh_0/ifg)que(gh/ig/hg) u(egffs)num.(fe..) (::)",
+    "versus":"Com(i)plá(ikjJs)cu(h!iwj_i_)it(hhog) per(i) e(ijO1)um(h) re(h)con(h)ci(h)li(h)á(hi)re(h) óm(h)ni(hg)a(h) in(j) ip(ikjJs)sum,(ji..) (;) pa(ig)cí(hi)fi(i)cans(i) per(i>) sán(ij~)gui(i)nem(i) cru(i)cis(i) e(ij~)jus,(i) (,) si(i)ve(i) quæ(i) in(i) ter(ij~)ris,(i) (,) si(i)ve(i) quæ(i_k_j_jv_I_H/iwj_i_) in(hg~) cæ(g_h!iwj)lis(jiioh/iv_HGh) sunt.(hg..)",
+    "gloria":"Gló(ikjjs)ri(h!iwj_i_)a(hho!g) Pa(ig)tri,(h) et(j) Fí(i)li(ikjjs)o,(ji..) (;) et(i) Spi(i)rí(i_k_j_jv_I_Hiwj_i_)tu(hg)i(g_h!iwj) Sanc(jiihiv_HGh)to.(hg..)"
   },
   {
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","antiphona"],
@@ -35,11 +54,43 @@
 		"antiphona-ii":[["/antiphonae/0701N2A2"]],
 		"antiphona-iii":[["/antiphonae/0701N2A3"]]
   },
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","responsorium","responsorium-i"],
+    "incipit":"mode:8;\n%%\n(c4) In(d) ti(d)mó(f_0/gh)re(g) *() in(g)co(gh)lá(h)tus(ixhg/higg_f_) (,) ves(hf)tri(ghg) tém(hjh)po(ghg)re(g) con(g)ver(g_h!iwj_I_H/iwj_IH)sá(g)mi(gh!iv_HGh)ni(hg..)",
+    "responsum":"Sci(jkj)én(jh~)tes(jkj) quod(jk) non(ki/jok) cor(h)rup(hfh)tí(h)li(h!iwj_I_HGh)bus(h_g_) (,) au(f!go!h>)ro(g) vel(ge) ar(g)gén(fef)to(dec_/d!ewf_e_/fv_ED.) (;) red(gh)émp(g)ti(g_h!iwj_I_H/iwj_IH) es(gh!iv_HGh)tis.(hg..) (::)",
+    "versus":"Sed(j) pre(j)ti(j)ó(ji)so(jkj/iji/hhog) sán(hi)gui(i)ne(i) (,) qua(i)si(ih) a(jk)gni(j) im(j)ma(ji)cu(ih)lá(ij)ti(hi) Chris(g!hwi_h_)ti.(hg..)"
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","responsorium","responsorium-ii"],
+    "incipit":"mode:1;\n%%\n(c4) Emp(ixdh_/iv)ti(h) *() es(h_g_)tis(g_f_) (`) pré(g)ti(hj)o(jv_IHi_h_) ma(g!hwj_IHi)gno:(ih..)",
+    "responsum":"Glo(f)ri(f)fi(gh)cá(h_g_)te(g_e_) et(g) por(f)tá(fg)te(f) De(e_c_/d!ewf_fg)um(f.) (;) in(f) cór(f_g>)po(g)re(g_f_f_d_/fgf_15gv_F_E_) ves(de!fv_EDe)tro.(ed..) (::)",
+    "versus":"Pré(h)ti(h)o(hg/hggof) emp(gh)ti(gh) es(ixh_0/iioh)tis:(h.) (;) no(hf)lí(gh)te(h) fí(ixhi)e(h)ri(h) ser(hg/hg)vi(hf) hó(ixf!gwhg/hih)mi(hv_GF_E/fwg_/hv)num.(gf..)"
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-ii","responsorium","responsorium-iii"],
+    "incipit":"mode:2;\n%%\n(f3) Com(c)mén(e_0/fg)dat(f) *() ca(f)ri(f)tá(f)tem(h) su(hg/hif_/gv_)am(ffoe) (;) De(f!gwh)us(f) in(ef) nó(f!gwh_/ivH__G/hwihi)bis:(ih..)",
+    "responsum":"Quón(kxh!iwjij/kv)i(j)am(j) cum(j) ad(j)huc(jiiog) pec(i)ca(i)tó(ij)res(ig) es(h_i)sé(gh__GFg)mus,(ffoe.) (;) se(e)cún(f>)dum(h) tem(gh~)pus(f) Chris(ghf/gf)tus(e!fwgf/ghg) (,) pro(f_0/hvGE_0) no(f)bis(hvhv__) mór(h_i_g_h_g_)tu(ef)us(f!gwhgh) est.(gf..) (::)",
+    "versus":"Mul(e_f!gwh_hi>)to(h) í(ij)gi(i)tur(h) ma(hi)gis(h) (,) nunc(h) jus(h)ti(h)fi(h)cá(hi)ti(h) in(h) sán(hi~)gui(hg)ne(hi) ip(gh)sí(f!gwhg__)us,(gf..) (;) sal(f)vi(ef) é(f)ri(f)mus(f) ab(f) i(f!gwh_GFE__)ra(f) per(hg/hih) ip(hv_GFg)sum.(ffoe.)",
+    "gloria":"Gló(e_f!gwh_hi)ri(h)a(h) Pa(hg)tri,(hi) et(gh) Fí(f)li(f!gwhg__)o,(gf..) (;) et(f) Spi(f)rí(f!gwh_GFE__)tu(f)i(hg/hih) Sanc(hv_GFg>)to.(ffoe.)"
+  },
   {
 		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","antiphona"],
 		"antiphona-i":[["/antiphonae/0701N3A1"]],
 		"antiphona-ii":[["/antiphonae/0701N3A2"]],
 		"antiphona-iii":[["/antiphonae/0701N3A3"]]
+  },
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","responsorium","responsorium-i"],
+    "incipit":"mode:5;\n%%\n(c3) Hic(g) est,(gi_/hshs_fgf) *(,) qui(h) ve(g)nit(h) per(ih__) a(hi!jvIHGhv___GFg)quam(gf__) (;) et(hg) sán(h)gui(i)nem(he__) Je(f)sus(gxfhF___E/fwg_FE) Chris(de!fv_EDe)tus:(ed..)",
+    "responsum":"Non(d) in(f) a(h_i)qua(h) so(gxh_ffwgfg)lum,(gf__) (,) sed(d) in(efe) a(gxfgO1)qua(f) et(gxfhF___E/fwg_FE) sán(d)gui(de!fv_EDe)ne.(ed..) (::)",
+    "versus":"In(h) di(h)e(h) il(h)la(hi_/hshs_fgf) e(h)rit(h) fons(h) pa(hi)tens(h) dó(hf)mu(fi)i(gh) Da(h_g!hwihi)vid,(ih..) (;) et(d) ha(f)bi(h)tán(h)ti(h)bus(h) Je(h)rú(hi)sa(h)lem(h) (,) in(h) ab(h)lu(h)ti(h)ó(hg/hg)nem(gf) pec(h_i)ca(gxh_g!hwiH__GFg)tó(gf..)ris."
+	},
+	{
+		"tags":["pretiosissimus-sanguis","matutinum","nocturna-iii","responsorium","responsorium-ii"],
+    "incipit":"mode:4;\n%%\n(c4) Præ(f)des(de)ti(e)ná(efO1)vit(e) nos(e) De(fe__)us(egFEfv___EDed__) (,) in(e) a(e)dop(f)ti(d)ó(ded)nem(dc) fi(d)li(f)ó(egffs)rum(eeof.) (;) per(d) Je(g)sum(h) Chris(h!iwjI__HGh)tum,(ixg_h/ih..)",
+    "responsum":"In(c) quo(de) ha(f)bé(fd)mus(f) red(f)emp(fg!hvhg)ti(e)ó(fg!hv_hg)nem(fe__) (,) per(f) sán(fsfsfd~)gui(f)nem(fg!hv_hg) e(egffs)jus.(fe..) (::)",
+    "versus":"Re(h)mis(h)si(h)ó(h)nem(g_f!gwhg__/hv_GEfe__) pec(g)ca(g)tó(gh)rum(g) (,) se(g)cún(g)dum(g) di(g)ví(gh)ti(g)as(g) grá(gf)ti(gh)æ(gf) e(e!fwgf__)jus,(fe..) (;) quæ(f) su(de)per(e)ab(e)un(e)dá(e!fwg_FE)vit(g) in(ghgh_GF) no(ef/gffs)bis.(ed..)",
+    "gloria":"Gló(h)ri(gh)a(g_f!gwhg__/hv_GEfe__) Pa(gf)tri,(gh) et(gf) Fí(e)li(e!fwgf__)o,(fe..) (;) et(e) Spi(e)rí(e!fwg_FE)tu(g)i(ghgh_GF) Sanc(ef/gffs)to.(ed..)"
   },
   {
 		"tags":["pretiosissimus-sanguis","antiphona"],
