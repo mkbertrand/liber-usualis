@@ -21,7 +21,7 @@ def get_book(title):
 
 DEFAULT_CORPUS = Corpus(get_book('breviarium-1888'), get_book('martyrologium-1902'))
 DEUTSCH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-deutsch')])
-ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-english')])
+ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-english'), get_book('martyrologium-1902-english')])
 NEDERLANDS_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-nederlands')])
 CHANT_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('liber-usualis-chant'), get_book('fcc'), get_book('liber-usualis-chant/nocturnale')])
 HEADER_CORPUS = CaputCorpus(DEFAULT_CORPUS.books)
