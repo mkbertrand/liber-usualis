@@ -64,12 +64,13 @@ GABC_CHANT_CONTEXT.minLyricWordSpacing *= 1;
 GABC_CHANT_CONTEXT.accidentalSpaceMultiplier = 1.5;
 GABC_CHANT_CONTEXT.intraNeumeSpacing = 5;
 
-GABC_CHANT_CONTEXT.specialCharProperties['font-family'] = "'Versiculum'";
+const SPECIAL_CHAR_TEXT = {v: '℣', '℣': '℣', r: '℟', '℟': '℟'};
+
+GABC_CHANT_CONTEXT.specialCharProperties['font-family'] = "'Old Standard TT'";
 GABC_CHANT_CONTEXT.specialCharProperties['font-variant'] = 'normal';
-GABC_CHANT_CONTEXT.specialCharProperties['font-size'] = (GABC_CHANT_CONTEXT.lyricTextSize * 1.2) + 'px';
 GABC_CHANT_CONTEXT.specialCharProperties['font-weight'] = '400';
 GABC_CHANT_CONTEXT.specialCharText = function(char) {
-  return char.toLowerCase();
+  return SPECIAL_CHAR_TEXT[char.toLowerCase()] || char;
 };
 
 renderQueue = []

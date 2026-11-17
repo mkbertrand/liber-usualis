@@ -92,11 +92,3 @@ body {
 .red {
 	color: var(--rubric) !important;
 }
-
-tspan[style="font-family:'Exsurge Characters';fill:#f00;"] {
-	font-family: 'Versiculum'!important;
-	font-variant:normal;
-	font-size: 130%;
-	text-transform: lowercase;
-}
-
