@@ -19,7 +19,7 @@ DATA_ROOT = Path(__file__).parent.joinpath('data').resolve()
 def get_book(title):
     return Book(DATA_ROOT.joinpath(title), title)
 
-DEFAULT_CORPUS = Corpus(get_book('breviarium-1888'), get_book('martyrologium-1846'))
+DEFAULT_CORPUS = Corpus(get_book('breviarium-1888'), get_book('martyrologium-1902'))
 DEUTSCH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-deutsch')])
 ENGLISH_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-english')])
 NEDERLANDS_CORPUS = ContingentCorpus(DEFAULT_CORPUS.books, [get_book('breviarium-1888-nederlands')])
