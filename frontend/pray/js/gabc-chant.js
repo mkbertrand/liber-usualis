@@ -31,6 +31,7 @@ function stringRender(text) {
 
 import {
   attachChantPointerControls,
+  isPlaybackEnabled,
   notifyChantRelayout,
   stopChantPlayback,
 } from './chant-player.js';
@@ -132,6 +133,7 @@ class ChantElement extends HTMLElement {
     const children = [svg];
     if (this.translatedNode) children.push(this.translatedNode);
     chantDiv.replaceChildren(...children);
+    this.tabIndex = isPlaybackEnabled() ? 0 : -1;
 
     if (!this.querySelector('.chantelement-text-content')) {
       const textDiv = document.createElement('div');
@@ -193,16 +195,15 @@ class ChantElement extends HTMLElement {
   onVisible() {
     queueRenderTask(() => this.renderChant());
   }
-
-	constructor() {
-		super();
-
-    attachChantPointerControls(this);
-	}
 }
 
-export function initChantElement() {
-  customElements.define('gabc-chant', ChantElement);
+export function initChantElement(openControls) {
+  customElements.define('gabc-chant', class extends ChantElement {
+    constructor() {
+      super();
+      attachChantPointerControls(this, openControls);
+    }
+  });
   let lastWidth;
   const resize = (entries) => {
     const currentWidth = entries[entries.length - 1].contentRect.width;

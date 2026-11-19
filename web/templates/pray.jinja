@@ -90,6 +90,38 @@
       </template>
     </div>
     <script type="application/json" id="pray-script-text">{{ script_text|tojson }}</script>
+    <dialog id="chant-context" class="chant-context" aria-labelledby="chant-context-title">
+      <div class="chant-context-heading">
+        <h2 id="chant-context-title">{{ text['chant-controls'] }}</h2>
+        <button type="button" class="ui-button ui-button-secondary" data-chant-close autofocus>{{ text['chant-close'] }}</button>
+      </div>
+      <div class="chant-pitch-controls btn-group" role="group" aria-label="{{ text['chant-pitch'] }}">
+        <button type="button" class="ui-button ui-button-secondary" data-pitch-down aria-label="{{ text['chant-pitch-down'] }}">&minus;</button>
+        <button type="button" class="ui-button ui-button-primary" data-pitch-preview>
+          {{ text['chant-pitch'] }}: <span class="this-pitch" data-chant-pitch="first"></span>
+        </button>
+        <button type="button" class="ui-button ui-button-secondary" data-pitch-up aria-label="{{ text['chant-pitch-up'] }}">+</button>
+      </div>
+      <div class="chant-pitch-readout" aria-live="polite">
+        <div>{{ text['chant-range'] }}: <span class="lowest-pitch" data-chant-pitch="low"></span> &ndash; <span class="highest-pitch" data-chant-pitch="high"></span></div>
+        <div><span data-chant-pitch="lowSolfege"></span> &ndash; <span data-chant-pitch="highSolfege"></span> (<span data-chant-pitch="interval"></span>)</div>
+        <div>Do = <span class="do-pitch" data-chant-pitch="doPitch"></span></div>
+      </div>
+    </dialog>
+    <div id="chant-controls-dock">
+      <div id="chant-playback-controls" class="btn-group" role="group" aria-label="{{ text['play-chant-toggle'] }}" hidden>
+        <button type="button" class="ui-button ui-button-secondary" data-chant-settings aria-haspopup="dialog" aria-controls="chant-context">{{ text['chant-controls'] }}</button>
+        <button type="button" class="ui-button ui-button-primary play-pause" data-play="{{ text['chant-play'] }}" data-pause="{{ text['chant-pause'] }}">{{ text['chant-play'] }}</button>
+        <button type="button" class="ui-button ui-button-secondary step-forward" aria-label="{{ text['chant-step'] }}">&#x23ED;&#xFE0E;</button>
+        <div class="chant-tempo-controls btn-group" role="group" aria-label="BPM">
+          <button type="button" class="ui-button ui-button-secondary tempo-minus" aria-label="{{ text['chant-slower'] }}">&minus;</button>
+          <span aria-live="polite"><span class="tempo-number"></span> BPM</span>
+          <button type="button" class="ui-button ui-button-secondary tempo-plus" aria-label="{{ text['chant-faster'] }}">+</button>
+        </div>
+        <button type="button" class="ui-button ui-button-secondary stop">{{ text['chant-stop'] }}</button>
+        <label class="chant-solesmes-option"><input type="checkbox" class="solesmes-lengths" /> {{ text['chant-solesmes'] }}</label>
+      </div>
+    </div>
     <div id="rites-menu-wrapper" style="display: none">
       <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/vesperae" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="vesperae">Officium Defunctorum (Ad Vesperas)</a>
       <a class="rite-link" href="/{{ locale }}/officium/{{ date }}/officium-defunctorum/matutinum-laudes" data-rite-link data-prayer-type="officium" data-select="officium-defunctorum" data-occasion="matutinum-laudes">Officium Defunctorum (Ad Matutinum et Laudes)</a>

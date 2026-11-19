@@ -511,7 +511,12 @@
    and the =play-chant= option are both enabled, tapping a rendered score plays it
    through =frontend/pray/js/chant-player.js=, a Web Audio sequencer over the
    Exsurge note list. Horizontal drag seeks the playhead to the nearest note;
-   vertical swipe still scrolls the page. Playback is presentation-only.
+   vertical swipe still scrolls the page. A two-second press (or Shift+F10 on a
+   focused score) opens the pitch dialog with the starting pitch, range, and
+   movable Do. =frontend/pray/js/chant-controls.js= binds the dialog and shared
+   playback toolbar to the player's signal. Dismissing the dialog leaves the
+   toolbar available for tempo, pause/resume, stepping, and stop. Stop pauses
+   playback and hides the controls. Playback is presentation-only.
 
    The frontend sources are bundled from =frontend/pray/js/pray.js= into
    =web/resources/dist/pray.js=; pray-page styles are bundled from

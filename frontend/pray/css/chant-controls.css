@@ -1,0 +1,106 @@
+.chant-context,
+#chant-playback-controls {
+  background: var(--panel-background-color);
+  color: var(--panel-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--component-border-radius);
+  box-shadow: var(--panel-shadow);
+  color-scheme: var(--native-scheme);
+  font: 1rem "Old Standard TT", Times, serif;
+}
+
+.chant-context {
+  box-sizing: border-box;
+  width: min(26rem, calc(100% - 1rem));
+  max-height: calc(100% - 1rem);
+  padding: 1rem;
+  overflow: auto;
+}
+
+.chant-context::backdrop {
+  background: var(--overlay-background-color);
+}
+
+.chant-context-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+
+.chant-context-heading h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.chant-pitch-controls,
+.chant-tempo-controls,
+#chant-playback-controls:not([hidden]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+}
+
+.chant-context .ui-button,
+#chant-playback-controls .ui-button {
+  padding: .4rem .6rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+}
+
+.chant-pitch-readout {
+  margin: .75rem 0;
+  text-align: center;
+}
+
+#chant-playback-controls {
+  padding: .25rem;
+  flex-wrap: wrap;
+}
+
+.chant-context #chant-playback-controls {
+  box-shadow: none;
+}
+
+#chant-controls-dock {
+  position: fixed;
+  inset-inline: .5rem;
+  bottom: max(.5rem, env(safe-area-inset-bottom));
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+#chant-controls-dock #chant-playback-controls {
+  pointer-events: auto;
+  box-shadow: var(--panel-shadow-upward);
+}
+
+.chant-tempo-controls {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.chant-solesmes-option {
+  padding-inline: .4rem;
+}
+
+@media (max-width: 1139px) {
+  #chant-controls-dock {
+    bottom: calc(var(--second-bar-height) + max(.5rem, env(safe-area-inset-bottom)));
+  }
+
+  .bars-collapsed #chant-controls-dock {
+    bottom: max(.5rem, env(safe-area-inset-bottom));
+  }
+}
+
+@media print {
+  .chant-context,
+  #chant-controls-dock {
+    display: none;
+  }
+}
