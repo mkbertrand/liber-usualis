@@ -1,12 +1,22 @@
 // Copyright 2026 (AGPL-3.0-or-later), Miles K. Bertrand et al.
 // Duration, pitch, and sequencing follow bbloomf/jgabc (Unlicense).
 
+import { signal } from '@preact/signals-core';
+
 export const BPM = 165;
-export const QUARTER_SECONDS = 60 / BPM;
+export const MIN_BPM = 40;
+export const MAX_BPM = 360;
 export const QUILISMA = 3;
+export const LONG_PRESS_MS = 2000;
 const DRAG_THRESHOLD = 8;
 const SINGING_CENTER = 4 * 12 + 7;
 const A4_INT = 4 * 12 + 9;
+const NOTE_NAMES = ['C', 'C\u266f', 'D', 'E\u266d', 'E', 'F', 'F\u266f', 'G', 'A\u266d', 'A', 'B\u266d', 'B'];
+const SOLFEGE_NAMES = ['Do', 'Di', 'Re', 'Me', 'Mi', 'Fa', 'Fi', 'Sol', 'Si', 'La', 'Te', 'Ti'];
+const INTERVALS = ['P1', 'm2', 'M2', 'm3', 'M3', 'P4', 'A4', 'P5', 'm6', 'M6', 'm7', 'M7'];
+
+const playbackState = signal(null);
+export const chantPlayback = { get value() { return playbackState.value; } };
 
 export function isNote(item) {
   return Boolean(item && item.pitch && !item.isDivider);
@@ -40,7 +50,7 @@ function pitchesEqual(...pitches) {
   return pitches.every((pitch) => pitch.step === first.step && pitch.octave === first.octave);
 }
 
-export function isSalicus(notes, noteId) {
+export function isSalicus(notes, noteId, solesmes = true) {
   const note = neighborNote(notes, noteId);
   const nextNote = neighborNote(notes, noteId + 1);
   const prevNote = neighborNote(notes, noteId - 1);
@@ -49,18 +59,18 @@ export function isSalicus(notes, noteId) {
   const riseToNext = nextNote.pitch.toInt() - note.pitch.toInt();
   if (riseFromPrev === 7 && riseToNext === 1) return true;
   const glyph = note.glyphVisualizer?.glyphCode;
-  return note.ictus.glyphCode === 'VerticalEpisemaBelow'
+  return solesmes && note.ictus.glyphCode === 'VerticalEpisemaBelow'
     && (glyph === 'PodatusLower' || glyph === 'BeginningAscLiquescent')
     && riseFromPrev > 0
     && riseToNext > 0;
 }
 
-export function noteDuration(notes, noteId) {
+export function noteDuration(notes, noteId, solesmes = true) {
   const note = notes[noteId];
   const nextNote = neighborNote(notes, noteId + 1);
   const prevNote = neighborNote(notes, noteId - 1);
   if (note.morae.length) return 2;
-  if (nextNote && (nextNote.morae.length > 1 || nextNote.shape === QUILISMA || isSalicus(notes, noteId))) return 1.8;
+  if (nextNote && (nextNote.morae.length > 1 || nextNote.shape === QUILISMA || isSalicus(notes, noteId, solesmes))) return 1.8;
   if (note.episemata.length) {
     let episemataCount = 1;
     if (prevNote?.episemata.length) episemataCount += 1;
@@ -70,9 +80,9 @@ export function noteDuration(notes, noteId) {
   return 1;
 }
 
-export function itemDuration(notes, index) {
+export function itemDuration(notes, index, solesmes = true) {
   const item = notes[index];
-  if (isNote(item)) return noteDuration(notes, index);
+  if (isNote(item)) return noteDuration(notes, index, solesmes);
   if (!item?.isDivider || isSkippedDivider(item)) return 0;
   if (isLongDivider(item)) return 2;
   return 1;
@@ -111,22 +121,22 @@ export function pressusPair(notes, noteId) {
   return null;
 }
 
-export function soundDuration(notes, noteId) {
+export function soundDuration(notes, noteId, solesmes = true) {
   const note = notes[noteId];
   if (!isNote(note)) return 0;
   if (isApostropha(note) && note.neume.notes[0] === note) {
-    return note.neume.notes.reduce((sum, member) => sum + noteDuration(notes, notes.indexOf(member)), 0);
+    return note.neume.notes.reduce((sum, member) => sum + noteDuration(notes, notes.indexOf(member), solesmes), 0);
   }
   const pressus = pressusPair(notes, noteId);
   if (pressus && pressus[0] === note) {
-    return noteDuration(notes, noteId) + noteDuration(notes, noteId + 1);
+    return noteDuration(notes, noteId, solesmes) + noteDuration(notes, noteId + 1, solesmes);
   }
   if (isApostropha(note) || pressus) return 0;
-  return noteDuration(notes, noteId);
+  return noteDuration(notes, noteId, solesmes);
 }
 
-export function durationList(notes) {
-  return notes.map((_, index) => itemDuration(notes, index));
+export function durationList(notes, solesmes = true) {
+  return notes.map((_, index) => itemDuration(notes, index, solesmes));
 }
 
 export function cumulativeStarts(durations) {
@@ -148,15 +158,55 @@ export function indexAtTime(starts, total, time) {
   return index === 0 ? 0 : index - 1;
 }
 
+function pitchRange(notes) {
+  let range = null;
+  for (const note of notes) {
+    if (!isNote(note)) continue;
+    const pitch = note.pitch.toInt();
+    if (!range) range = { first: pitch, low: pitch, high: pitch };
+    range.low = Math.min(range.low, pitch);
+    range.high = Math.max(range.high, pitch);
+  }
+  return range;
+}
+
+function centeredTranspose({low, high}) {
+  return SINGING_CENTER - Math.floor((low + high) / 2);
+}
+
 export function defaultTranspose(notes) {
-  const pitched = notes.filter(isNote);
-  if (pitched.length === 0) return 0;
-  const ints = pitched.map((note) => note.pitch.toInt());
-  return SINGING_CENTER - Math.floor((Math.min(...ints) + Math.max(...ints)) / 2);
+  const range = pitchRange(notes);
+  return range ? centeredTranspose(range) : 0;
+}
+
+function pitchClass(pitch) {
+  return ((pitch % 12) + 12) % 12;
+}
+
+function pitchName(pitch, names = NOTE_NAMES) {
+  return names[pitchClass(pitch)] + Math.floor(pitch / 12);
+}
+
+export function describeChantPitch({first, low, high}, transpose) {
+  const distance = high - low;
+  const [quality, degree] = INTERVALS[distance % 12];
+  return {
+    first: pitchName(first + transpose),
+    low: pitchName(low + transpose),
+    high: pitchName(high + transpose),
+    lowSolfege: pitchName(low, SOLFEGE_NAMES),
+    highSolfege: pitchName(high, SOLFEGE_NAMES),
+    interval: quality + (Number(degree) + 7 * Math.floor(distance / 12)),
+    doPitch: NOTE_NAMES[pitchClass(transpose)],
+  };
 }
 
 export function pitchToHz(pitch, transpose = 0) {
-  return 440 * 2 ** ((pitch.toInt() + transpose - A4_INT) / 12);
+  return pitchIntToHz(pitch.toInt() + transpose);
+}
+
+function pitchIntToHz(pitch) {
+  return 440 * 2 ** ((pitch - A4_INT) / 12);
 }
 
 export function noteFromEvent(event) {
@@ -184,8 +234,12 @@ export function isPlaybackEnabled() {
 
 let audioContext;
 let wave;
-let voices = [];
+const voices = new Set();
 let active = null;
+let bpm = BPM;
+let solesmes = true;
+let playRequest = 0;
+const transpositions = new WeakMap();
 
 function getContext() {
   if (!audioContext) {
@@ -197,10 +251,7 @@ function getContext() {
 }
 
 function silence() {
-  if (!audioContext) {
-    voices = [];
-    return;
-  }
+  if (!audioContext) return;
   const now = audioContext.currentTime;
   for (const {oscillator, envelope} of voices) {
     try {
@@ -210,7 +261,7 @@ function silence() {
     } catch {
     }
   }
-  voices = [];
+  voices.clear();
 }
 
 function playFrequency(hz, durationSec, when) {
@@ -227,7 +278,13 @@ function playFrequency(hz, durationSec, when) {
   envelope.gain.setTargetAtTime(0, startAt + Math.max(durationSec, 0.05), 0.3 / 3);
   oscillator.start(startAt);
   oscillator.stop(startAt + durationSec + 0.8);
-  voices.push({oscillator, envelope});
+  const voice = {oscillator, envelope};
+  voices.add(voice);
+  oscillator.onended = () => {
+    voices.delete(voice);
+    oscillator.disconnect();
+    envelope.disconnect();
+  };
 }
 
 function clearHighlight() {
@@ -267,18 +324,25 @@ function stopTimer() {
 }
 
 function markElement(element, playing) {
-  document.querySelectorAll('gabc-chant.chant-active').forEach((node) => {
-    node.classList.remove('chant-active', 'chant-playing');
-  });
-  if (!element) return;
   element.classList.add('chant-active');
   element.classList.toggle('chant-playing', playing);
+}
+
+function publishPlayback() {
+  playbackState.value = active && {
+    element: active.element,
+    playing: active.playing,
+    pitch: describeChantPitch(active.range, active.transpose),
+    bpm,
+    solesmes,
+  };
 }
 
 function elapsedNow() {
   if (!active) return 0;
   if (!active.playing) return active.elapsed;
-  return active.elapsed + (getContext().currentTime - active.startedAt) / QUARTER_SECONDS;
+  const duration = itemDuration(active.notes, active.index, solesmes);
+  return active.elapsed + Math.min((getContext().currentTime - active.startedAt) * bpm / 60, duration);
 }
 
 function finishPlayback() {
@@ -290,32 +354,36 @@ function finishPlayback() {
   active.index = 0;
   active.elapsed = 0;
   markElement(active.element, false);
+  publishPlayback();
 }
 
 function scheduleFrom(index) {
   const context = getContext();
   active.playing = true;
-  active.startedAt = context.currentTime;
   markElement(active.element, true);
+  publishPlayback();
 
   const step = (from) => {
-    let i = from;
-    while (i < active.notes.length && itemDuration(active.notes, i) === 0) i += 1;
     if (!active?.playing) return;
+    let i = from;
+    while (i < active.notes.length && itemDuration(active.notes, i, solesmes) === 0) i += 1;
     if (i >= active.notes.length) {
       finishPlayback();
       return;
     }
     active.index = i;
-    const duration = itemDuration(active.notes, i);
+    active.elapsed = active.starts[i];
+    active.startedAt = context.currentTime;
+    const duration = itemDuration(active.notes, i, solesmes);
+    const quarterSeconds = 60 / bpm;
     highlightItem(active.notes[i]);
-    const sound = soundDuration(active.notes, i);
+    const sound = soundDuration(active.notes, i, solesmes);
     if (sound > 0) {
-      playFrequency(pitchToHz(active.notes[i].pitch, active.transpose), sound * QUARTER_SECONDS, context.currentTime);
+      playFrequency(pitchToHz(active.notes[i].pitch, active.transpose), sound * quarterSeconds, context.currentTime);
     }
     active.timer = setTimeout(() => {
       step(i + 1);
-    }, duration * QUARTER_SECONDS * 1000);
+    }, duration * quarterSeconds * 1000);
   };
 
   step(index);
@@ -323,7 +391,10 @@ function scheduleFrom(index) {
 
 function bindScore(element, startNote) {
   const notes = flattenNotations(element.score.notations);
-  const durations = durationList(notes);
+  const range = pitchRange(notes);
+  if (!range) return false;
+  stopChantPlayback();
+  const durations = durationList(notes, solesmes);
   const {starts, total} = cumulativeStarts(durations);
   let index = startNote ? notes.indexOf(startNote) : 0;
   if (index < 0) index = 0;
@@ -333,64 +404,128 @@ function bindScore(element, startNote) {
     starts,
     total,
     index,
-    transpose: defaultTranspose(notes),
+    range,
+    transpose: transpositions.get(element) ?? centeredTranspose(range),
     playing: false,
     elapsed: starts[index] ?? 0,
     startedAt: 0,
     timer: null,
     highlighted: [],
   };
+  markElement(element, false);
+  publishPlayback();
+  return true;
 }
 
 export function stopChantPlayback() {
+  playRequest++;
   stopTimer();
   silence();
   clearHighlight();
-  markElement(null, false);
+  active?.element.classList.remove('chant-active', 'chant-playing');
   active = null;
+  publishPlayback();
 }
 
 export function pauseChantPlayback() {
+  playRequest++;
+  silence();
   if (!active?.playing) return;
   active.elapsed = elapsedNow();
   active.playing = false;
   stopTimer();
-  silence();
   markElement(active.element, false);
+  publishPlayback();
 }
 
 export function seekToIndex(index) {
   if (!active) return;
   pauseChantPlayback();
   let i = Math.max(0, Math.min(index, active.notes.length - 1));
-  while (i < active.notes.length && itemDuration(active.notes, i) === 0) i += 1;
+  while (i < active.notes.length && itemDuration(active.notes, i, solesmes) === 0) i += 1;
   if (i >= active.notes.length) i = active.notes.length - 1;
   active.index = i;
   active.elapsed = active.starts[i] ?? 0;
   highlightItem(active.notes[i]);
 }
 
-async function resumeOrStart(element, startNote) {
+export function prepareChantPlayback(element, startNote) {
+  if (!isPlaybackEnabled() || !element.isConnected || !element.score) return false;
+  return active?.element === element || bindScore(element, startNote);
+}
+
+async function resumeAudio() {
   const context = getContext();
-  if (context.state !== 'running') await context.resume();
-  if (!isPlaybackEnabled() || context.state !== 'running') return;
-  if (active?.element === element && active.playing) return;
-  if (active?.element === element && startNote == null) {
-    if (active.total === 0) return;
-    if (active.elapsed >= active.total) {
-      active.index = 0;
-      active.elapsed = 0;
-    } else {
-      active.index = indexAtTime(active.starts, active.total, active.elapsed);
-      active.elapsed = active.starts[active.index] ?? 0;
-    }
+  try {
+    if (context.state !== 'running') await context.resume();
+  } catch {
+    return false;
+  }
+  return context.state === 'running';
+}
+
+export async function playChant(element, startNote) {
+  if (!prepareChantPlayback(element, startNote) || active.playing) return;
+  const request = ++playRequest;
+  if (!await resumeAudio() || playRequest !== request || !isPlaybackEnabled()) return;
+  silence();
+  const index = active.elapsed >= active.total ? 0 : indexAtTime(active.starts, active.total, active.elapsed);
+  scheduleFrom(index);
+}
+
+export function changeChantPitch(delta) {
+  if (!active) return;
+  active.transpose += delta;
+  transpositions.set(active.element, active.transpose);
+  updatePlaybackSettings();
+}
+
+async function auditionPitch(pitch, duration) {
+  const request = ++playRequest;
+  if (!await resumeAudio() || playRequest !== request || !isPlaybackEnabled()) return;
+  playFrequency(pitchIntToHz(pitch), duration, getContext().currentTime);
+}
+
+export function previewChantPitch() {
+  if (!active) return;
+  pauseChantPlayback();
+  return auditionPitch(active.range.first + active.transpose, 0.45);
+}
+
+export function changeChantTempo(delta) {
+  bpm = Math.max(MIN_BPM, Math.min(MAX_BPM, bpm + delta));
+  if (active) updatePlaybackSettings();
+}
+
+export function toggleSolesmesLengths() {
+  if (!active) return;
+  solesmes = !solesmes;
+  const {starts, total} = cumulativeStarts(durationList(active.notes, solesmes));
+  active.starts = starts;
+  active.total = total;
+  updatePlaybackSettings();
+}
+
+function updatePlaybackSettings() {
+  active.elapsed = active.starts[active.index];
+  silence();
+  if (active.playing) {
+    stopTimer();
     scheduleFrom(active.index);
+  } else {
+    publishPlayback();
+  }
+}
+
+export function stepChantForward() {
+  if (!active) return;
+  const index = active.notes.findIndex((item, i) => i > active.index && isNote(item));
+  if (index < 0) {
+    pauseChantPlayback();
     return;
   }
-  stopChantPlayback();
-  bindScore(element, startNote);
-  if (active.total === 0) return;
-  scheduleFrom(active.index);
+  seekToIndex(index);
+  return auditionPitch(active.notes[index].pitch.toInt() + active.transpose, 60 / bpm);
 }
 
 export function handleChantClick(element, event) {
@@ -399,14 +534,7 @@ export function handleChantClick(element, event) {
     pauseChantPlayback();
     return;
   }
-  resumeOrStart(element, active?.element === element ? null : noteFromEvent(event));
-}
-
-function ensureBound(element) {
-  if (active?.element === element) return;
-  stopChantPlayback();
-  bindScore(element, null);
-  markElement(element, false);
+  playChant(element, noteFromEvent(event));
 }
 
 function seekToPointer(element, event) {
@@ -423,14 +551,16 @@ function seekToPointer(element, event) {
   seekToIndex(nearest.index);
 }
 
-export function attachChantPointerControls(element) {
+export function attachChantPointerControls(element, openControls) {
   let pointerId = null;
   let startX = 0;
   let startY = 0;
   let seeking = false;
   let scrolling = false;
+  let pressTimer;
 
   const reset = () => {
+    clearTimeout(pressTimer);
     element.classList.remove('chant-seeking');
     pointerId = null;
     seeking = false;
@@ -438,15 +568,18 @@ export function attachChantPointerControls(element) {
   };
 
   element.addEventListener('pointerdown', (event) => {
-    if (!isPlaybackEnabled() || !element.score) return;
-    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    if (!isPlaybackEnabled() || !element.score || !event.target.closest?.('.chantelement-chant-content > svg')) return;
+    if (pointerId !== null || !event.isPrimary || event.button !== 0) return;
     pointerId = event.pointerId;
     startX = event.clientX;
     startY = event.clientY;
     seeking = false;
     scrolling = false;
     if (event.pointerType === 'mouse') event.preventDefault();
-    getContext().resume();
+    pressTimer = setTimeout(() => {
+      reset();
+      if (element.isConnected && isPlaybackEnabled()) openControls(element, noteFromEvent(event));
+    }, LONG_PRESS_MS);
   });
 
   element.addEventListener('pointermove', (event) => {
@@ -455,6 +588,7 @@ export function attachChantPointerControls(element) {
     const dy = event.clientY - startY;
     if (!seeking && !scrolling) {
       if (Math.abs(dx) < DRAG_THRESHOLD && Math.abs(dy) < DRAG_THRESHOLD) return;
+      clearTimeout(pressTimer);
       if (Math.abs(dy) >= Math.abs(dx)) {
         scrolling = true;
         return;
@@ -463,21 +597,36 @@ export function attachChantPointerControls(element) {
       element.classList.add('chant-seeking');
       window.getSelection?.()?.removeAllRanges();
       element.setPointerCapture?.(event.pointerId);
-      ensureBound(element);
-      pauseChantPlayback();
+      if (prepareChantPlayback(element)) pauseChantPlayback();
     }
     if (seeking) seekToPointer(element, event);
   });
 
   element.addEventListener('pointerup', (event) => {
     if (event.pointerId !== pointerId) return;
-    if (!seeking && !scrolling) handleChantClick(element, event);
+    if (!seeking && !scrolling && event.target.closest?.('.chantelement-chant-content > svg')) handleChantClick(element, event);
     reset();
   });
 
-  element.addEventListener('pointercancel', (event) => {
-    if (event.pointerId !== pointerId) return;
-    reset();
+  for (const type of ['pointercancel', 'lostpointercapture', 'pointerleave']) {
+    element.addEventListener(type, (event) => {
+      if (event.pointerId === pointerId && (type !== 'pointerleave' || !seeking)) reset();
+    });
+  }
+
+  element.addEventListener('contextmenu', (event) => {
+    if (isPlaybackEnabled() && event.target.closest?.('.chantelement-chant-content > svg')) event.preventDefault();
+  });
+
+  element.addEventListener('keydown', (event) => {
+    if (event.target !== element || event.repeat || !isPlaybackEnabled() || !element.score) return;
+    if (event.key === 'ContextMenu' || (event.shiftKey && event.key === 'F10')) {
+      event.preventDefault();
+      openControls(element);
+    } else if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleChantClick(element, event);
+    }
   });
 }
 
@@ -486,7 +635,7 @@ export function notifyChantRelayout(element) {
   const elapsed = active.playing ? elapsedNow() : active.elapsed;
   pauseChantPlayback();
   const notes = flattenNotations(element.score.notations);
-  const durations = durationList(notes);
+  const durations = durationList(notes, solesmes);
   const {starts, total} = cumulativeStarts(durations);
   active.notes = notes;
   active.starts = starts;

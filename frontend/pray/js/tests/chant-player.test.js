@@ -18,8 +18,17 @@ import {
   cumulativeStarts,
   indexAtTime,
   defaultTranspose,
+  describeChantPitch,
   pitchToHz,
   indexNearestPoint,
+  attachChantPointerControls,
+  chantPlayback,
+  prepareChantPlayback,
+  playChant,
+  pauseChantPlayback,
+  stopChantPlayback,
+  changeChantPitch,
+  changeChantTempo,
 } from '../chant-player.js';
 
 function pitch(step, octave = 4) {
@@ -139,4 +148,118 @@ test('defaultTranspose centers the chant near G4 and pitchToHz is A440 equal tem
   assert.equal(defaultTranspose([low, high]), 55 - Math.floor((36 + 60) / 2));
   assert.equal(pitchToHz(pitch(9, 4)), 440);
   assert.ok(Math.abs(pitchToHz(pitch(0, 4)) - 440 * 2 ** ((48 - 57) / 12)) < 1e-9);
+});
+
+test('transposition updates starting pitch, sounding range and Do but not the solfege interval', () => {
+  const range = {first: 50, low: 47, high: 59};
+  assert.deepEqual(describeChantPitch(range, -1), {
+    first: 'C♯4', low: 'B♭3', high: 'B♭4', lowSolfege: 'Ti3', highSolfege: 'Ti4',
+    interval: 'P8', doPitch: 'B',
+  });
+  assert.deepEqual(describeChantPitch(range, 1), {
+    first: 'E♭4', low: 'C4', high: 'C5', lowSolfege: 'Ti3', highSolfege: 'Ti4',
+    interval: 'P8', doPitch: 'C♯',
+  });
+});
+
+test('the Solesmes option controls lengthening for the ascending salicus marking', () => {
+  const notes = [
+    note({pitch: pitch(0)}),
+    note({pitch: pitch(2), ictus: {glyphCode: 'VerticalEpisemaBelow'}, glyphVisualizer: {glyphCode: 'PodatusLower'}}),
+    note({pitch: pitch(4)}),
+  ];
+  assert.equal(noteDuration(notes, 1), 1.8);
+  assert.equal(noteDuration(notes, 1, false), 1);
+});
+
+function testScore(t, notes) {
+  let enabled = true;
+  t.mock.timers.enable({apis: ['setTimeout']});
+  globalThis.document = {getElementById: () => ({classList: {contains: () => enabled}})};
+  globalThis.window = {};
+  const element = Object.assign(new EventTarget(), {
+    classList: {add() {}, remove() {}, toggle() {}},
+    isConnected: true,
+    score: {notations: notes},
+    closest: (selector) => selector.endsWith('> svg') ? element : null,
+  });
+  t.after(() => {
+    stopChantPlayback();
+    delete globalThis.document;
+    delete globalThis.window;
+  });
+  return {element, disable: () => { enabled = false; }};
+}
+
+test('a two-second hold opens controls once; scroll, seek, cancellation and disabling playback suppress it', (t) => {
+  const {element, disable} = testScore(t, [note()]);
+  const opens = [];
+  attachChantPointerControls(element, (score) => opens.push(score));
+  const pointer = (type, clientX = 0, clientY = 0) => element.dispatchEvent(Object.assign(new Event(type), {
+    pointerId: 1, isPrimary: true, button: 0, pointerType: 'touch', clientX, clientY,
+  }));
+
+  pointer('pointerdown');
+  t.mock.timers.tick(1999);
+  assert.equal(opens.length, 0);
+  t.mock.timers.tick(1);
+  pointer('pointerup');
+  assert.deepEqual(opens, [element]);
+  assert.equal(chantPlayback.value, null); // Releasing after a hold didn't play the score.
+
+  for (const [type, x, y] of [['pointermove', 0, 10], ['pointermove', 10, 0], ['pointercancel', 0, 0]]) {
+    pointer('pointerdown');
+    pointer(type, x, y);
+    t.mock.timers.tick(2000);
+    pointer('pointerup');
+    assert.deepEqual(opens, [element]);
+  }
+
+  pointer('pointerdown');
+  disable();
+  t.mock.timers.tick(2000);
+  assert.deepEqual(opens, [element]);
+});
+
+test('tempo and pitch changes affect live audio, and pausing cancels the next note', async (t) => {
+  const {element} = testScore(t, [note({pitch: pitch(7)}), note({pitch: pitch(9)})]);
+  const frequencies = [];
+  globalThis.window = {AudioContext: class {
+    currentTime = 0;
+    state = 'running';
+    destination = {};
+    createPeriodicWave() {}
+    createOscillator() {
+      return {
+        frequency: {setValueAtTime: (hz) => frequencies.push(hz)},
+        setPeriodicWave() {}, connect() {}, start() {}, stop() {},
+      };
+    }
+    createGain() {
+      return {gain: {setValueAtTime() {}, setTargetAtTime() {}, cancelScheduledValues() {}}, connect() {}};
+    }
+  }};
+  assert.equal(prepareChantPlayback(element), true);
+  assert.equal(chantPlayback.value.playing, false);
+  assert.equal(frequencies.length, 0);
+  await playChant(element);
+  assert.equal(chantPlayback.value.playing, true);
+  assert.equal(chantPlayback.value.pitch.first, 'F♯4');
+  changeChantPitch(1);
+  assert.equal(chantPlayback.value.pitch.first, 'G4');
+  assert.equal(frequencies.at(-1), pitchToHz(pitch(7)));
+
+  changeChantTempo(35);
+  assert.equal(chantPlayback.value.bpm, 200);
+  const count = frequencies.length;
+  t.mock.timers.tick(299);
+  assert.equal(frequencies.length, count);
+  t.mock.timers.tick(1);
+  assert.equal(frequencies.at(-1), 440);
+  pauseChantPlayback();
+  assert.equal(chantPlayback.value.playing, false);
+  t.mock.timers.tick(1000);
+  assert.equal(frequencies.length, count + 1);
+  await playChant(element);
+  assert.equal(frequencies.at(-1), 440);
 });

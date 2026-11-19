@@ -5,12 +5,11 @@ import json
 import pathlib
 import pytest
 import random
-import pathlib
 
-from kalendar import kalendar
-import kalendar.datamanage
+from kalendar.datamanage import get_bookshelf
+from kalendar.kalendar import Kalendar, kalendar
 
-bookshelf = kalendar.datamanage.get_bookshelf('breviarium-1888')
+bookshelf = get_bookshelf('breviarium-1888')
 
 @pytest.mark.parametrize("year", random.sample(range(1582, 3000), k=10))
 def test_repeatable(year: int) -> None:
@@ -20,18 +19,18 @@ def test_repeatable(year: int) -> None:
 	TODO: Since we can't really guarantee that this test runs first, we need to do it on a fresh copy of the data files, which should live in their own object.
 	TODO: Randomness seems somewhat ugly, at least as it's done here
 	"""
-	kal = kalendar.kalendar(bookshelf, year)
-	kal3 = kalendar.kalendar(bookshelf, random.choice(range(1582, 3000)))
-	kal2 = kalendar.kalendar(bookshelf, year)
+	kal = kalendar(bookshelf, year)
+	kalendar(bookshelf, random.choice(range(1582, 3000)))
+	kal2 = kalendar(bookshelf, year)
 	for i in kal.kal.keys():
 		assert kal.kal[i] == kal2.kal[i]
 
 class TestKalendar:
 	@pytest.fixture(scope="class", params=range(1900, 2200))
-	def kal(self, request) -> (kalendar.Kalendar, int):
-		return (kalendar.kalendar(bookshelf, request.param), request.param)
+	def kal(self, request: pytest.FixtureRequest) -> tuple[Kalendar, int]:
+		return (kalendar(bookshelf, request.param), request.param)
 
-	def test_structure(self, kal: kalendar.Kalendar) -> None:
+	def test_structure(self, kal: tuple[Kalendar, int]) -> None:
 		"""Make sure the structure is correct"""
 		year = kal[1]
 		kal = kal[0]
@@ -46,7 +45,7 @@ class TestKalendar:
 				for tag in entry:
 					assert type(tag) is str
 
-	def test_alldates(self, kal: kalendar.Kalendar) -> None:
+	def test_alldates(self, kal: tuple[Kalendar, int]) -> None:
 		"""Make sure every day of the year has at least one entry"""
 		year = kal[1]
 		kal = kal[0]
@@ -56,7 +55,7 @@ class TestKalendar:
 
 			date = date + datetime.timedelta(days=1)
 
-	def test_singleprimaryday(self, kal: kalendar.Kalendar) -> None:
+	def test_singleprimaryday(self, kal: tuple[Kalendar, int]) -> None:
 		"""Make sure each day of the year has only one entry which is not either a commemoration, part of the temporale, or a fixed reference"""
 		year = kal[1]
 		kal = kal[0]
@@ -67,7 +66,7 @@ class TestKalendar:
 
 			date = date + datetime.timedelta(days=1)
 
-	def test_transfers(self, kal: kalendar.Kalendar) -> None:
+	def test_transfers(self, kal: tuple[Kalendar, int]) -> None:
 		"""Make sure translations are sane"""
 		year = kal[1]
 		kal = kal[0]
@@ -79,7 +78,7 @@ class TestKalendar:
 			):
 				assert match1.date != match2.date, f"Transfer to self: {match1!s} => {match2!s}"
 
-	def test_compare(self, kal: kalendar.Kalendar) -> None:
+	def test_compare(self, kal: tuple[Kalendar, int]) -> None:
 		"""Compare to known-good output"""
 		year = kal[1]
 		kal = kal[0]

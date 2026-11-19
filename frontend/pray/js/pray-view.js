@@ -141,10 +141,22 @@ function bindRite(prayStore, displayStore) {
     let translated = showTranslation.value;
     main.classList.toggle('chant-shown', parameters.chant);
     main.classList.toggle('chant-hidden', !parameters.chant);
-    main.classList.toggle('chant-playback', parameters.chant && parameters.playChant);
     main.classList.toggle('side-by-side', translated && parameters.sideBySide);
     main.classList.toggle('line-by-line', translated && !parameters.sideBySide);
     main.classList.toggle('no-translation', !translated);
+  });
+
+  let chantPlaybackEnabled = computed(() => {
+    let parameters = displayStore.displayParameters.value;
+    return parameters.chant && parameters.playChant;
+  });
+  effect(() => {
+    let enabled = chantPlaybackEnabled.value;
+    main.classList.toggle('chant-playback', enabled);
+    for (const element of main.querySelectorAll('gabc-chant[tabindex]')) {
+      element.tabIndex = enabled ? 0 : -1;
+    }
+    if (!enabled) stopChantPlayback();
   });
 }
 
@@ -190,12 +202,7 @@ function bindDisplayParameterCheckbox(displayStore, inputId, key, dependsOn) {
   let input = document.getElementById(inputId);
   // Translation toggles are omitted for Latin
   if (!input) return;
-  bindCheckbox(input, () => displayStore.displayParameters.value[key], (checked) => {
-    displayStore.setDisplayParameter(key, checked);
-    if (!checked && (key == 'chant' || key == 'playChant')) {
-      stopChantPlayback();
-    }
-  });
+  bindCheckbox(input, () => displayStore.displayParameters.value[key], (checked) => displayStore.setDisplayParameter(key, checked));
   if (dependsOn) {
     let label = labelFor(input);
     effect(() => {

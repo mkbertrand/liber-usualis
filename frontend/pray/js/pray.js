@@ -5,11 +5,12 @@ import 'temporal-polyfill/global';
 import { effect } from '@preact/signals-core';
 import { makeLiturgyStore } from './../../shared/js/liturgy-store.js';
 import { initChantElement } from './gabc-chant.js';
+import { bindChantControls } from './chant-controls.js';
 import { makePrayStore, canSay, nextCanSayChange } from './pray-store.js';
 import { makeDisplayStore } from './pray-display.js';
 import { bindPrayPage, makeBanner } from './pray-view.js';
 
-initChantElement();
+initChantElement(bindChantControls());
 
 // Runs once the document is parsed (the bundle is loaded with defer)
 const liturgyStore = makeLiturgyStore();
