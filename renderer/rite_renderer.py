@@ -384,22 +384,29 @@ class RiteRenderer:
             return False
         datum = element['datum']
         self.open_paragraph('martyrologium')
-        self.append_text(unpack(datum[0]) + ' ' + unpack(datum[1]))
+        day_translation = unpack(datum[0]['translation']) + ' ' + unpack(datum[1]['translation']) if 'translation' in datum[0] and 'translation' in datum[1] else None
+        self.append_text(unpack(datum[0]) + ' ' + unpack(datum[1]), day_translation)
         prae = unpack(datum[2])
+        prae_translation = unpack(datum[2]['translation']) if 'translation' in datum[2] else None
         if not _is_empty(prae):
             self.open_paragraph('martyrologium')
-            self.append_text(prae)
+            self.append_text(prae, prae_translation)
         martyrology = unpack(datum[3])
+        martyrology_translation = unpack(datum[3]['translation']) if 'translation' in datum[3] else None
         if isinstance(martyrology, str):
             self.open_paragraph('martyrologium')
-            self.append_text(martyrology)
+            self.append_text(martyrology, martyrology_translation if isinstance(martyrology_translation, str) else None)
+        elif isinstance(martyrology_translation, list) and len(martyrology) == len(martyrology_translation):
+            for entry, trans in zip(unpack(datum[3]), martyrology_translation):
+                self.open_paragraph('martyrologium')
+                self.append_text(entry, trans)
         else:
             for i in unpack(datum[3]):
                 self.open_paragraph('martyrologium')
                 self.append_text(i)
         self.open_paragraph('martyrologium')
-        self.append_text(unpack(datum[4]))
-        self.append_text(unpack(datum[5]))
+        self.append_text(unpack(datum[4]), unpack(element['translation'])[4] if 'translation' in element else None)
+        self.append_text(unpack(datum[5]), unpack(element['translation'])[5] if 'translation' in element else None)
         self.close_paragraph()
         return True
 
