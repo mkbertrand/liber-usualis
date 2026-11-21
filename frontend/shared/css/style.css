@@ -7,30 +7,30 @@
 	--border-color: #efe9e9;
 	--site-background-color: #fcf5eb;
 	--panel-text-color: #000000;
-	--panel-text-color-muted: #333333;
+	--panel-disabled-text-color: #333333;
 	--link-color: #0000ee;
 	--panel-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 3px 8px rgba(0, 0, 0, .05);
 	/* The same shadow cast upwards, for bars fixed to the bottom of the screen */
 	--panel-shadow-upward: 0 -1px 2px rgba(0, 0, 0, .06), 0 -3px 8px rgba(0, 0, 0, .05);
 	--overlay-background-color: rgba(0, 0, 0, .6);
-	--overlay-background-color-strong: rgba(249, 249, 249, .8);
+
+	/* Variables used for the actual page content. */
+	--content-background-color: #ffffff;
+	--content-text-color: #000000;
+	--content-secondary-text-color: #222222;
+	--rubric: red;
+	--native-scheme: light;
 
 	--top-bar-title-height: 85px;
 	/* Full width of the page's content column (and of anything aligned with it, like the pray page's banners) */
 	--page-max-width: 85rem;
+	/* Side padding of the content column, which anything aligned with its text (the pray page's second bar) shares */
+	--page-side-padding: 100px;
   --component-border-radius: 5px;
 	--button-color-primary: #25498a;
 	--button-text-color-primary: #efebec;
 	--button-color-primary-hover: #25499a;
   --button-color-secondary-hover: #eee;
-
-	/* Variables used for the actual page content. */
-	--content-background-color: #ffffff;
-	--content-border: #efe9e9;
-	--content-text-color: #000000;
-	--content-text-color-muted: #222222;
-	--rubric: red;
-	--native-scheme: light;
 }
 
 [data-theme="dark"] {
@@ -39,20 +39,18 @@
 	--button-color-primary: #25499a;
 	--button-color-primary-hover: #25498a;
 	--button-color-secondary-hover: #313239;
-	--site-background-color: #1a1a1e;
-	--panel-text-color: #efebec;
-	--panel-text-color-muted: #85816f;
+	--site-background-color: #26282e;
+	--panel-text-color: white;
+	--panel-disabled-text-color: #75716f;
 	--link-color: #8ab4f8;
 	--panel-shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 3px 10px rgba(0, 0, 0, .35);
 	--panel-shadow-upward: 0 -1px 2px rgba(0, 0, 0, .5), 0 -3px 10px rgba(0, 0, 0, .35);
 	--overlay-background-color: rgba(26, 26, 30, .7);
-	--overlay-background-color-strong: rgba(26, 26, 30, .85);
 
 	--content-background-color: #e8e1d0;
-	--content-border: #c9c0a8;
-	--content-text-color: #2a2a26;
-	--content-text-color-muted: #544f42;
-	--rubric: #cc2819;
+	--content-text-color: #191916;
+	--content-secondary-text-color: #242f28;
+	--rubric: #ff1010;
 	--native-scheme: dark;
 }
 
@@ -79,7 +77,7 @@ body {
 	box-sizing: border-box;
 	max-width: var(--page-max-width);
 	margin: calc(var(--top-bar-title-height) + 1px) auto 0 auto;
-	padding: 10px 40px;
+	padding: 10px var(--page-side-padding);
 	background-color: var(--content-background-color);
 }
 

@@ -241,7 +241,7 @@ p.rite-text-translation {
 
 #rite-container.line-by-line .rite-text-translation {
 	font-size: 0.8em;
-	color: var(--content-text-color-muted);
+	color: var(--content-secondary-text-color);
 	margin-top: 0;
 	line-height: 1;
 	padding-left: 10px;
@@ -249,7 +249,7 @@ p.rite-text-translation {
 
 span.rite-text.chant-translation {
 	font-size: 14px;
-	color: var(--content-text-color-muted);
+	color: var(--content-secondary-text-color);
 	margin-top: 0;
 	line-height: 1;
 	padding-left: 10px;

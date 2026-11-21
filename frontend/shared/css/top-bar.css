@@ -166,12 +166,12 @@
 }
 
 #donate-button {
-  background-color: #1a8917;
+  background-color: #1a7917;
 	box-shadow: 0 1px 4px color-mix(in srgb, #1a8917 22%, transparent);
 }
 
 #donate-button:hover {
-  background-color: #1a9917;
+  background-color: #1a8417;
 }
 
 /* Three dots menu at the right end of the bar: feedback, theme, and language */

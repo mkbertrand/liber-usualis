@@ -38,7 +38,7 @@
 }
 
 .option-disabled {
-	color: var(--panel-text-color-muted);
+	color: var(--panel-disabled-text-color);
 }
 
 #coincidences-list-container {
@@ -62,7 +62,7 @@
 }
 
 .non-dicitur {
-	color: var(--panel-text-color-muted);
+	color: var(--panel-disabled-text-color);
 	font-size: 14px;
 	font-style: italic;
 }

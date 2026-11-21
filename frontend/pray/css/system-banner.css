@@ -22,6 +22,7 @@
   background-color: var(--panel-background-color);
   /* A minimum, so a banner whose text wraps on a narrow screen grows instead of overflowing */
   min-height: 60px;
+  margin-top: 3px;
   padding: 9px;
   /* Message on the left, answers on the right, all centered vertically */
   display: flex;

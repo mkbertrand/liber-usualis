@@ -1,5 +1,5 @@
 :root {
-  --second-bar-height: 66px;
+  --second-bar-height: 48px;
 }
 
 /* In the page's flow directly below the fixed top bar, so it scrolls away with the rite and is only seen at the
@@ -22,15 +22,32 @@
   border-bottom-color: var(--border-color);
 }
 
+/* As wide as #content-container, with its side padding, so the bar's contents line up with the rite's text */
 #second-bar {
   width: 100%;
+  max-width: var(--page-max-width);
   height: 100%;
-  padding: 9px;
+  margin: 0 auto;
+  padding: 4px 9px;
   box-sizing: border-box;
-  /* Equal outer columns keep the hours centered in the bar regardless of the controls' width */
+  /* "Return to current" (when shown), then the hours from the left, then the controls at the right end */
   display: grid;
-  grid-template-columns: 1fr minmax(0, max-content) 1fr;
-  gap: var(--menu-element-gap);
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+}
+
+/* Spacing as margins rather than a grid gap, so the usually hidden "Return to current" leaves no gap behind it */
+#second-bar-left-aligned-container > * {
+  margin-right: var(--menu-element-gap);
+}
+
+/* Buttons fit the shorter bar */
+#second-bar .ui-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#second-bar .ui-button.icon-button {
+  padding: 8px;
 }
 
 #second-bar-left-aligned-container, #second-bar-center-aligned-container, #second-bar-right-aligned-container {
@@ -57,6 +74,7 @@
 #second-bar-right-aligned-container {
   grid-column: 3;
   justify-content: flex-end;
+  padding-left: var(--menu-element-gap);
 }
 
 /* Only used when the second bar is at the bottom (below) */
@@ -94,6 +112,12 @@
      current" are in the hour picker instead */
   #second-bar {
     grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: var(--menu-element-gap);
+    padding: 4px 9px;
+  }
+
+  #second-bar-right-aligned-container {
+    padding-left: 0;
   }
 
   #second-bar-left-aligned-container {

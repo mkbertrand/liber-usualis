@@ -38,10 +38,6 @@ body {
 	color: var(--content-text-color);
 }
 
-#home-screen .nav-element-link:hover {
-	background-color: var(--content-hover);
-}
-
 #side-panel-left, #side-panel-right {
 	height: 100%;
 	flex-basis: 0;
@@ -56,7 +52,4 @@ body {
 	font-weight: normal;
 	letter-spacing: .05em;
 	margin-bottom: 12px;
-}
-
-#center-nav {
 }
