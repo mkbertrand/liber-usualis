@@ -1,3 +1,7 @@
+#content-container {
+  padding: 10px 40px !important;
+}
+
 #rite-container {
 	font-size: 18px;
 }

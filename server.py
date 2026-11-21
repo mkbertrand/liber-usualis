@@ -288,7 +288,7 @@ def local_page(preferred_locale: str, page: str, accept_language: str | None = H
         return render('web/templates/pray.jinja', **shell_context(page, locales, f'/{preferred_locale}/{page}'), mobile=is_mobile(user_agent),
                       **pray_context(locales[0], locales, None, None, None, '', 'primarium', 'none', '', True, date.today()))
     template_name, context = page_context(page, locales)
-    return render(template_name, **shell_context(page, locales, f'/{preferred_locale}/{page}'), **context)
+    return render(template_name, mobile=is_mobile(user_agent), **shell_context(page, locales, f'/{preferred_locale}/{page}'), **context)
 
 @app.api_route('/{preferred_locale}/{prayer_type}/{rite_date}/{occasion}', methods=['GET', 'HEAD'])
 def pray(preferred_locale: str, prayer_type: str, rite_date: str, occasion: str, v: str = '', opt: str = Cookie(''), accept_language: str | None = Header(None), user_agent: str = Header('')) -> HTMLResponse:

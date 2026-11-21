@@ -21,6 +21,9 @@
 		<link rel="apple-touch-icon" href="/resources/apple-touch-icon.png">
 		<link rel="preload" href="/resources/fonts/OldStandardTT-Regular.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/dist/style.css') }}>
+		{% if mobile %}
+		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/styles/mobile.css') }}>
+		{% endif %}
 		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/styles/latin-generic.css') }}>
 		<link rel="stylesheet" type="text/css" href={{ versioned_resource('/styles/' ~ page ~ '.css') }}>
 	</head>
