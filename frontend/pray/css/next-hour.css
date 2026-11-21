@@ -5,7 +5,7 @@
 	background-color: var(--content-background-color);
   display: flex;
   justify-content: right;
-  padding: 9px;
+  padding: 10px 0;
 }
 
 .next-hour-button-forbidden {

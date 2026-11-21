@@ -35,6 +35,7 @@
 		<script defer type="text/javascript" src={{ versioned_resource('/dist/pray.js') }}></script>
 	</head>
   <body>
+    {% set page_collapses_top_bar = true %}
     {% include 'web/resources/top-bar.jinja' %}
     {# Icons from Phosphor Icons (https://phosphoricons.com), MIT License #}
     <div id="second-bar-container">
@@ -156,24 +157,22 @@
         <a class="rite-link" href="/{{ locale }}/ritus/{{ date }}/itinerarium" data-rite-link data-prayer-type="ritus" data-select="primarium" data-occasion="itinerarium">Itinerarium Clericorum</a>
       </div>
     </div>
-    <div id="content-container-outer">
-      <div id="rite-page-container">
-        {# Latin pages have no translation (and hide its options), whatever display preferences were saved elsewhere #}
-        <main id="rite-container" data-has-translation="{{ 'false' if locale == 'la' else 'true' }}" data-server-rendered="{{ 'true' if rite else 'false' }}">
-          {{ rite|safe }}
-        </main>
-        <div id="next-hour-button-container">
-          <a
-            id="next-hour-button"
-            class="ui-button ui-button-primary"
-            {% if next_hour_href %}
-            href="{{ next_hour_href }}"
-            {% endif %}
-            data-forbidden-title="{{ text['next-hour-forbidden-tooltip'] }}"
-          >
-            <span>{{ text['next-hour'] }}: <span id="next-hour-occasion">{{ next_hour_occasion_name|safe }}</span> <svg id="next-hour-button-icon" class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></span>
-          </a>
-        </div>
+    <div id="content-container">
+      {# Latin pages have no translation (and hide its options), whatever display preferences were saved elsewhere #}
+      <main id="rite-container" data-has-translation="{{ 'false' if locale == 'la' else 'true' }}" data-server-rendered="{{ 'true' if rite else 'false' }}">
+        {{ rite|safe }}
+      </main>
+      <div id="next-hour-button-container">
+        <a
+          id="next-hour-button"
+          class="ui-button ui-button-primary"
+          {% if next_hour_href %}
+          href="{{ next_hour_href }}"
+          {% endif %}
+          data-forbidden-title="{{ text['next-hour-forbidden-tooltip'] }}"
+        >
+          <span>{{ text['next-hour'] }}: <span id="next-hour-occasion">{{ next_hour_occasion_name|safe }}</span> <svg id="next-hour-button-icon" class="icon small-icon inline-icon" width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></span>
+        </a>
       </div>
     </div>
     {# On mobile the panels are full-screen sheets (see pray-mobile.css), so they neither trap focus nor lock scrolling. #}

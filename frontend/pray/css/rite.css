@@ -9,7 +9,7 @@
 #rite-container {
 	font-family: "Old Standard TT", times;
 	font-size: 20px;
-	padding: 10px 40px 10px 40px;
+	padding: 0;
 	min-height: calc(100vh - 71px - var(--top-bar-title-height) - var(--second-bar-height));
 	background-color: var(--content-background-color);
 	color: var(--content-text-color);
@@ -36,7 +36,8 @@
 	font-variant: small-caps;
 	font-weight: normal;
 	color: var(--rubric);
-	font-size: 26px;
+	font-size: 30px;
+  letter-spacing: .05em;
 	text-align: center;
 	margin-bottom: 0;
   break-after: avoid;
@@ -47,7 +48,7 @@
 	font-variant: small-caps;
 	font-weight: normal;
 	color: var(--content-text-color);
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -264,10 +265,6 @@ span.rite-text.chant-translation {
 
 /* Large Screens */
 @media only screen and (min-width: 2000px) {
-
-	#rite-container {
-		padding: 10px 100px 10px 100px;
-	}
 
 	.collecta, .oratio-dirigere {
 		min-height: 60px;

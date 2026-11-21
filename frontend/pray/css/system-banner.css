@@ -4,10 +4,10 @@
   position: sticky;
   top: var(--top-bar-title-height);
   height: 0;
-  /* As wide as the rite page and centered over it, like #rite-page-container */
+  /* As wide as the content column and centered over it, like #content-container */
   margin: 0 auto;
   padding: 0 5px;
-  max-width: var(--rite-page-max-width);
+  max-width: var(--page-max-width);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

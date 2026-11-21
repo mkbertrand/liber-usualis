@@ -18,6 +18,8 @@
 
 :root {
   --menu-element-gap: 15px;
+  /* The top bar's height on narrow screens while the reader scrolls down */
+  --top-bar-compact-height: 52px;
 }
 
 #top-bar-left-aligned-container, #top-bar-navigation, #top-bar-right-aligned-container {
@@ -38,12 +40,16 @@
 }
 
 /* Below the width the full bar needs in its longest locale (Dutch, about 1120px), the site links and actions move
-   into a dropdown opened by the menu button */
+   into a dropdown opened by the menu button at the left end of the bar */
 @media (max-width: 1139px) {
   #top-bar-menu-button {
     display: inline-flex;
     align-items: center;
     align-self: center;
+  }
+
+  /* The three dots menu stays at the right end */
+  #more-menu-container {
     margin-left: auto;
   }
 
@@ -61,7 +67,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     width: min(320px, 100%);
     box-sizing: border-box;
     flex-direction: column;
@@ -93,6 +99,27 @@
     height: auto;
     padding-top: 9px;
     border-top: 1px solid var(--border-color);
+  }
+
+  #top-bar-title {
+    transition: height 0.2s ease, padding 0.2s ease;
+  }
+
+  /* Shrinks while the reader scrolls down (the body is marked bars-collapsed). Only the bar itself: the page's content
+     keeps its offset, so nothing below shifts as it changes. Overrides the top bar's !important height. */
+  .bars-collapsed #top-bar-title {
+    height: var(--top-bar-compact-height) !important;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .bars-collapsed #top-bar-left-aligned-container {
+    top: 6px;
+    bottom: 6px;
+  }
+
+  .bars-collapsed #top-bar-menu-button, .bars-collapsed #more-menu-button {
+    padding: 8px;
   }
 }
 
@@ -147,18 +174,17 @@
   background-color: #1a9917;
 }
 
-/* Language picker: an icon button like the dark mode toggle, opening a menu of locales */
-#locale-selector {
+/* Three dots menu at the right end of the bar: feedback, theme, and language */
+#more-menu-container {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
-#locale-menu {
+#more-menu, #locale-menu {
   position: absolute;
-  top: calc(100% + 4px);
-  right: 0;
   display: flex;
   flex-direction: column;
-  min-width: 140px;
   padding: 4px;
   background-color: var(--panel-background-color);
   border: 1px solid var(--border-color);
@@ -166,12 +192,32 @@
   box-shadow: var(--panel-shadow);
 }
 
+#more-menu {
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 180px;
+}
+
+/* Opens to the left of the main menu, since that menu is at the right edge of the screen, level with its button */
+#locale-selector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#locale-menu {
+  top: -5px;
+  right: calc(100% + 8px);
+  min-width: 140px;
+}
+
 /* The display rule above would otherwise override the hidden attribute */
-#locale-menu[hidden] {
+#more-menu[hidden], #locale-menu[hidden] {
   display: none;
 }
 
-.locale-menu-option {
+/* Links and buttons alike; pages' own link styles (generic.css sets a size on every link) don't reach the menu */
+.more-menu-item {
   padding: 7px 10px;
   border: none;
   border-radius: var(--component-border-radius);
@@ -180,33 +226,20 @@
   font-family: "Old Standard TT", times;
   font-size: 16px;
   text-align: left;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.locale-menu-option:hover {
+.more-menu-item:hover {
   background-color: var(--button-color-secondary-hover);
 }
 
-/* Only the current locale shows its caret. Scoped to the option so it outranks the shared .inline-icon display. */
-.locale-menu-option .locale-menu-current-icon {
-  display: none;
+.locale-menu-option[aria-current="true"] {
+  font-weight: bold;
 }
 
-.locale-menu-option[aria-current="true"] .locale-menu-current-icon {
-  display: inline-block;
-}
-
-/* Site-wide dark mode toggle. Lives in the top bar alongside the locale
-   selector. */
-/* Fixed size, so the click area doesn't depend on the icon's size */
-#dark-mode-toggle, #locale-selector-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Shows the icon for switching to the other theme. */
-:root[data-theme="dark"] .dark-mode-toggle-moon-icon,
-:root:not([data-theme="dark"]) .dark-mode-toggle-sun-icon {
+/* Shows whether the dark theme is on */
+:root[data-theme="dark"] .dark-mode-toggle-off-label,
+:root:not([data-theme="dark"]) .dark-mode-toggle-on-label {
   display: none;
 }

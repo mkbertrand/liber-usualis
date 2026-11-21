@@ -1,4 +1,7 @@
-{# Icons from Phosphor Icons (https://phosphoricons.com), MIT License #}
+{# Icons from Phosphor Icons (https://phosphoricons.com), MIT License; light weight, except the menu buttons' regular weight #}
+{# Each language in its own language, so it is recognisable whatever the current locale #}
+{% set locale_names = {'de': 'Deutsch', 'en': 'English', 'la': 'Latina', 'nl': 'Nederlands'} %}
+{% set path_without_locale = canonical_path[(locale|length) + 1:] %}
 <div id="top-bar-title">
   <div id="top-bar-left-aligned-container">
     <div id="project-logo">
@@ -20,20 +23,33 @@
       <div class="top-bar-button-container">
         <a id="donate-button" class="ui-button ui-button-primary" href="/{{ locale }}/donate">{{ top_bar_text['donate'] }}</a>
       </div>
-      <div class="top-bar-button-container">
-        {% include 'web/resources/locale-selector.jinja' %}
-      </div>
-      <div class="top-bar-button-container">
-        <button id="dark-mode-toggle" class="ui-button icon-button ui-button-secondary" type="button">
-          <svg class="icon dark-mode-toggle-moon-icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
-          <svg class="icon dark-mode-toggle-sun-icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg>
-        </button>
-      </div>
     </div>
   </div>
   <button id="top-bar-menu-button" class="ui-button icon-button ui-button-secondary" type="button" aria-label="{{ top_bar_text['menu-button'] }}" aria-expanded="false" aria-controls="top-bar-menu">
-    <svg class="icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H40a6,6,0,0,1,0-12H216A6,6,0,0,1,222,128ZM40,70H216a6,6,0,0,0,0-12H40a6,6,0,0,0,0,12ZM216,186H40a6,6,0,0,0,0,12H216a6,6,0,0,0,0-12Z"/></svg>
+    <svg class="icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg>
   </button>
+  {# Secondary actions, kept out of the way: feedback, theme, and language #}
+  <div id="more-menu-container">
+    <button id="more-menu-button" class="ui-button icon-button ui-button-secondary" type="button" aria-label="{{ top_bar_text['more-menu-button'] }}" aria-haspopup="true" aria-expanded="false" aria-controls="more-menu">
+      <svg class="icon" width="24" height="24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM128,72a12,12,0,1,0-12-12A12,12,0,0,0,128,72Zm0,112a12,12,0,1,0,12,12A12,12,0,0,0,128,184Z"/></svg>
+    </button>
+    <div id="more-menu" hidden>
+      <a class="more-menu-item" href="mailto:admin@liberusualis.org">{{ top_bar_text['feedback-link'] }}</a>
+      {# Shows whether the dark theme is on; CSS hides the other state #}
+      <button id="dark-mode-toggle" class="more-menu-item" type="button">
+        {{ top_bar_text['dark-theme-label'] }}: <span class="dark-mode-toggle-on-label">{{ top_bar_text['dark-theme-on'] }}</span><span class="dark-mode-toggle-off-label">{{ top_bar_text['dark-theme-off'] }}</span>
+      </button>
+      {# Opens the languages as a second menu, beside this one #}
+      <div id="locale-selector">
+        <button id="locale-selector-button" class="more-menu-item" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="locale-menu">{{ top_bar_text['locale-selector-label'] }}: {{ locale_names.get(locale, locale.upper()) }}</button>
+        <div id="locale-menu" hidden>
+          {% for loc in DEFINED_LOCALES|sort %}
+          <a class="more-menu-item locale-menu-option" href="/{{ loc }}{{ path_without_locale }}" lang="{{ loc }}" hreflang="{{ loc }}" data-locale="{{ loc }}"{% if loc == locale %} aria-current="true"{% endif %}>{{ locale_names.get(loc, loc.upper()) }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script>
   (function() {
@@ -57,4 +73,69 @@
       }
     });
   })();
+  (function() {
+    const button = document.getElementById('more-menu-button');
+    const menu = document.getElementById('more-menu');
+    const localeButton = document.getElementById('locale-selector-button');
+    const localeMenu = document.getElementById('locale-menu');
+    function setLocaleMenuOpen(open) {
+      localeMenu.hidden = !open;
+      localeButton.setAttribute('aria-expanded', open);
+    }
+    function setOpen(open) {
+      menu.hidden = !open;
+      button.setAttribute('aria-expanded', open);
+      if (!open) setLocaleMenuOpen(false);
+    }
+    button.addEventListener('click', () => setOpen(menu.hidden));
+    localeButton.addEventListener('click', () => setLocaleMenuOpen(localeMenu.hidden));
+    // The pray page changes its path without reloading, so the server-rendered link may be stale; reopen the
+    // current path (which starts with /{locale}/) in the chosen locale instead
+    localeMenu.addEventListener('click', (event) => {
+      const option = event.target.closest('[data-locale]');
+      if (!option || event.ctrlKey || event.metaKey || event.shiftKey || event.button != 0) return;
+      event.preventDefault();
+      window.location.assign('/' + option.dataset.locale + window.location.pathname.slice({{ (locale|length) + 1 }}) + window.location.search);
+    });
+    document.addEventListener('click', (event) => {
+      if (!menu.hidden && !menu.contains(event.target) && !button.contains(event.target)) {
+        setOpen(false);
+      }
+    });
+    // Escape closes the language menu first, then the main one
+    document.addEventListener('keydown', (event) => {
+      if (event.key != 'Escape' || menu.hidden) return;
+      if (!localeMenu.hidden) {
+        setLocaleMenuOpen(false);
+        localeButton.focus();
+      } else {
+        setOpen(false);
+        button.focus();
+      }
+    });
+  })();
 </script>
+{# The pray page sets bars-collapsed itself (pray-view.js), together with its bottom bar and panels #}
+{% if not page_collapses_top_bar %}
+<script>
+  // On narrow screens, while the reader scrolls down, the top bar shrinks (see top-bar.css); any upward scroll restores
+  // it. It stays at full size near the top of the page and while one of its menus is open.
+  (function() {
+    const bar = document.getElementById('top-bar-title');
+    const moreMenu = document.getElementById('more-menu');
+    let lastScrollY = Math.max(0, window.scrollY);
+    window.addEventListener('scroll', () => {
+      // Clamped, so the rubber-band overscroll of touch browsers doesn't read as a change of direction
+      const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollY = Math.min(Math.max(0, window.scrollY), maxScrollY);
+      const menuOpen = bar.classList.contains('top-bar-menu-open') || !moreMenu.hidden;
+      if (menuOpen || scrollY < lastScrollY) {
+        document.body.classList.remove('bars-collapsed');
+      } else if (scrollY > lastScrollY && scrollY > bar.offsetHeight) {
+        document.body.classList.add('bars-collapsed');
+      }
+      lastScrollY = scrollY;
+    }, {passive: true});
+  })();
+</script>
+{% endif %}

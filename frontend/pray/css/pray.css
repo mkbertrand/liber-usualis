@@ -9,32 +9,17 @@
 @import "./rites-menu.css";
 
 :root {
-	/* Width of the rite page, and of anything aligned with it (banners). pray-mobile.css removes the limit. */
-	--rite-page-max-width: 85rem;
 	/* Side-by-side layout: the Latin column's share of the width (the translation takes the rest), from which the
 	   translation's size is also derived. Measured to suit values from 0.5 to 0.65. */
 	--side-by-side-latin-share: 0.56;
 }
 
-/* Containers and overall organization */
-#content-container-outer {
-	max-width: 100% !important;
-	position: relative;
-	max-width: 140em;
+/* The shared content column. The rite and the next hour button pad themselves, and the rite sets its own minimum
+   height (which accounts for the second bar). */
+#content-container {
 	/* The second bar, in the flow above, already clears the top bar */
-	margin: 0 auto;
-	display: flex;
-}
-
-#rite-page-container {
-	position: relative;
-	width: 100%;
-	/* Borders inside the width, so anything sized by the variable lines up with the page's edges */
-	box-sizing: border-box;
-	max-width: var(--rite-page-max-width);
-	margin: 0 auto;
-	border-left: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
+	margin-top: 0;
+	min-height: 0;
 }
 
 #size-change-listener {
@@ -52,7 +37,7 @@
 
 /* Narrow screens (same breakpoint as the compact top bar in top-bar.css): the second bar is at the bottom */
 @media (max-width: 1139px) {
-  #content-container-outer {
+  #content-container {
     margin-top: var(--top-bar-title-height);
     padding-bottom: var(--second-bar-height);
   }

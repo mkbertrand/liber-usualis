@@ -501,7 +501,7 @@
      bar shrinks and the bottom bar slides out of view; any upward scroll restores
      both. =pray-view.js= sets the display store's =scrollingDown= from scroll
      direction and marks =<body>= with =bars-collapsed= unless a panel or menu is
-     open. Scrolling the page closes the rites menu.
+     open; the top bar's shrink is styled in the shared =top-bar.css=. Scrolling the page closes the rites menu.
 
 ** Chant and Styles
 
@@ -530,10 +530,15 @@
 
    =web/resources/themer.jinja=, included in every template's =<head>=, applies the
    stored or system theme as =data-theme= before the page is drawn and handles
-   clicks on the top bar's =#dark-mode-toggle=; CSS shows the matching icon. The
-   shared top bar (=web/resources/top-bar.jinja=) includes the locale selector
-   (=web/resources/locale-selector.jinja=), which reopens the same path in the
-   chosen locale.
+   clicks on =#dark-mode-toggle=; CSS shows whether the dark theme is on. The shared top bar
+   (=web/resources/top-bar.jinja=) holds the site navigation, the donate button,
+   and a three dots menu with a feedback mail link, the theme toggle, and a
+   language button opening a second menu of locale links, which reopen the same
+   path in the chosen locale. On narrow screens the top bar shrinks while the
+   reader scrolls down, through =bars-collapsed= on =<body>= (styled in
+   =top-bar.css=): the top bar's own script sets it on every page but the pray
+   page, which opts out (=page_collapses_top_bar=) because =pray-view.js= sets it
+   together with the bottom bar.
 
    Interface text lives in =web/locales/{locale}/= (=pages/= for each page,
    =resources/= for shared pieces); =version_management.bestlocalized()= falls back

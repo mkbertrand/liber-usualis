@@ -30,6 +30,27 @@ def test_top_level_pages_render_complete_documents() -> None:
         assert response.text.rstrip().endswith('</html>'), path
         assert 'id="top-bar-title"' in response.text, path
 
+def test_more_menu_holds_feedback_theme_and_locales() -> None:
+    response = client.get('/de/about')
+    menu = response.text[response.text.index('<div id="more-menu-container">'):response.text.index('<script>', response.text.index('<div id="more-menu-container">'))]
+    assert 'aria-label="Mehr"' in menu
+    assert 'href="mailto:admin@liberusualis.org">Feedback geben</a>' in menu
+    assert 'id="dark-mode-toggle"' in menu and 'Dunkles Design: ' in menu and '>An</span>' in menu and '>Aus</span>' in menu
+    assert 'href="/en/about"' in menu and 'href="/la/about"' in menu
+    assert 'data-locale="de" aria-current="true">Deutsch</a>' in menu
+    assert 'id="locale-selector-button"' in menu and 'Sprache: Deutsch</button>' in menu
+    rite_text = client.get(f'/en/officium/{date.today()}/prima').text
+    assert f'href="/la/officium/{date.today()}/prima"' in rite_text
+    for path in ['/en/index', f'/en/officium/{date.today()}/prima']:
+        text = client.get(path).text
+        assert text.count('id="dark-mode-toggle"') == 1, path
+        assert 'site-footer' not in text, path
+
+def test_only_the_pray_page_collapses_the_top_bar_itself() -> None:
+    shared_script = "bar.classList.contains('top-bar-menu-open') || !moreMenu.hidden"
+    assert shared_script in client.get('/en/about').text
+    assert shared_script not in client.get(f'/en/officium/{date.today()}/prima').text
+
 def test_rite_near_today_is_server_rendered() -> None:
     response = client.get(f'/en/officium/{date.today()}/prima')
     assert response.status_code == 200
