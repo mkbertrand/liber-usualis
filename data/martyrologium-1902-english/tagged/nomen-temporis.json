@@ -1458,5 +1458,9 @@
 	{
 		"tags":["nomen-temporis","ad-iii-kalendas-januarii"],
 		"datum":"The third of the Kalends of January."
-	}
+	},
+  {
+    "tags":["nomen-temporis","pridie-kalendas-januarii"],
+    "datum":"The day before the Kalends of January."
+  }
 ]
