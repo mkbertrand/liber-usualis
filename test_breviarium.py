@@ -90,3 +90,26 @@ def test_match(day, update_golden) -> None:
 
             assert not change
 
+
+# Unresolved queries are rendered by Corpus._process as the sorted tag list, e.g. "['lectio', 'matutinum']"
+missing_query_pattern = re.compile(r"^\['[^']+'(, '[^']+')*\]$")
+
+def find_missing_queries(obj) -> list[str]:
+    match obj:
+        case dict():
+            return find_missing_queries(obj.get('datum'))
+        case list():
+            return [query for item in obj for query in find_missing_queries(item)]
+        case str() if missing_query_pattern.match(obj):
+            return [obj]
+        case _:
+            return []
+
+@pytest.mark.parametrize('day', [date(year, 1, 1) + timedelta(days=i) for i in range(365)])
+def test_no_missing_queries(day) -> None:
+
+    warnings.filterwarnings('ignore')
+
+    for hours in [['matutinum'], ['laudes', 'prima', 'tertia', 'sexta', 'nona'], ['vesperae', 'completorium']]:
+        missing = find_missing_queries(breviarium.generate(corpus, day, hours).rite)
+        assert not missing, f'{day} {hours} has missing queries:\n' + '\n'.join(missing)
