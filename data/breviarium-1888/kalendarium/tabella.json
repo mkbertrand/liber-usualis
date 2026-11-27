@@ -93,6 +93,14 @@
 			]
 		},
 		{
+			"include":["vigilia"],
+      "exclude":[["semiduplex"],["duplex-minus"]],
+			"recheck":false,
+			"response":[
+				{"include":["dominica","semiduplex","primarium"],"response":"transfer","target":0,"movement":-1}
+			]
+		},
+		{
 			"include":["vigilia","primarium"],
 			"exclude":[["duplex-minus"],["semiduplex"]],
 			"response":[
@@ -312,13 +320,6 @@
 			"response":[
 				{"include":["dominica","primarium"],"response":"omissum","target":1},
 				{"include":["feria"],"response":"combina"}
-			]
-		},
-		{
-			"include":["vigilia"],
-			"recheck":false,
-			"response":[
-				{"include":["dominica","semiduplex","primarium"],"response":"transfer","target":0,"movement":-1}
 			]
 		},
 		{
